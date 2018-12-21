@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 
 To understand the material in this section, you should befamiliar with standard COM interfaces and methods, and specifically the following:
 
-[IWizardExtension COM Interface](http://go.microsoft.com/fwlink/p/?linkid=56607)
+[IWizardExtension COM Interface](https://go.microsoft.com/fwlink/p/?linkid=56607)
 
-[IWizardSite COM Interface](http://go.microsoft.com/fwlink/p/?linkid=56608)
+[IWizardSite COM Interface](https://go.microsoft.com/fwlink/p/?linkid=56608)
 
-[IObjectWithSite COM Interface](http://go.microsoft.com/fwlink/p/?linkid=56609)
+[IObjectWithSite COM Interface](https://go.microsoft.com/fwlink/p/?linkid=56609)
 
-[IPropertyBag COM Interface](http://go.microsoft.com/fwlink/p/?linkid=56610)
+[IPropertyBag COM Interface](https://go.microsoft.com/fwlink/p/?linkid=56610)
 
  
 

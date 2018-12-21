@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 \[The TCP chimney offload feature is deprecated and may be removed from future versions of the operating system.\]
 
-TCP Chimney NICs must follow the security guidelines outlined in the IETF memo of [Improving TCP's Robustness to Blind In-Window Attacks](http://go.microsoft.com/fwlink/p/?linkid=181776), sections 3, 4, and 5. This section describes those guidelines.
+TCP Chimney NICs must follow the security guidelines outlined in the IETF memo of [Improving TCP's Robustness to Blind In-Window Attacks](https://go.microsoft.com/fwlink/p/?linkid=181776), sections 3, 4, and 5. This section describes those guidelines.
 
 **Note**  This Internet-Draft is cited as a work in progress.
 

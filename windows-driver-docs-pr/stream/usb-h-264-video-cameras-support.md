@@ -22,9 +22,9 @@ If you choose to use the UVC class driver Usbvideo.sys and not a proprietary dri
 
 ### Firmware Guidelines
 
-The UVC class driver Usbvideo.sys queries the video camera directly to obtain its capabilities and then drives the device, with no proprietary driver required. For information on the current implementation of the guidelines, you must refer to the Microsoft Specification of Video Class Driver for H.264/MPEG-4. Also refer to the [Microsoft Proposed Extensions to the USB Video Class for H.264](http://go.microsoft.com/fwlink/p/?LinkId=233063).
+The UVC class driver Usbvideo.sys queries the video camera directly to obtain its capabilities and then drives the device, with no proprietary driver required. For information on the current implementation of the guidelines, you must refer to the Microsoft Specification of Video Class Driver for H.264/MPEG-4. Also refer to the [Microsoft Proposed Extensions to the USB Video Class for H.264](https://go.microsoft.com/fwlink/p/?LinkId=233063).
 
-**Note**  The official guidelines will be published in a future standard document to be found at this location: [Universal Serial Bus Device Class Definition for Video Devices Specification](http://go.microsoft.com/fwlink/p/?linkid=516989).
+**Note**  The official guidelines will be published in a future standard document to be found at this location: [Universal Serial Bus Device Class Definition for Video Devices Specification](https://go.microsoft.com/fwlink/p/?linkid=516989).
 
  
 

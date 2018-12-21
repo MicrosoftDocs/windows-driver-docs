@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Unified Extensible Firmware Interface (UEFI) is the required boot firmware for SoC platforms running Windows. This section describes UEFI implementation requirements for running Windows on SoC platforms. Observation and adherence to these requirements will help ensure proper functionality of Windows.
 
-This set of requirements applies to any SoC-based computing system, with some limitations. This guidance assumes a full Windows feature set, with support for both traditional netbook form-factors and wireless, multitouch-only mobile devices. It therefore limits itself to technologies expected to be widely used on such systems. For systems that implement technologies not covered in this document, refer to the UEFI specification at [UEFI specifications](http://go.microsoft.com/fwlink/p/?LinkId=218221).
+This set of requirements applies to any SoC-based computing system, with some limitations. This guidance assumes a full Windows feature set, with support for both traditional netbook form-factors and wireless, multitouch-only mobile devices. It therefore limits itself to technologies expected to be widely used on such systems. For systems that implement technologies not covered in this document, refer to the UEFI specification at [UEFI specifications](https://go.microsoft.com/fwlink/p/?LinkId=218221).
 
 Windows supports firmware revisions based on the Unified Extensible Firmware Interface (UEFI) Version 2.3.1 or later.
 

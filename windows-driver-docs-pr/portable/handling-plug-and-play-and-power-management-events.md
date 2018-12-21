@@ -19,7 +19,7 @@ In the WpdHelloWorldDriver sample, most of the PnP and PM event handlers either 
 
  
 
-For a description of each interface and its methods, see the [UMDF documentation](http://go.microsoft.com/fwlink/p/?linkid=153678)..
+For a description of each interface and its methods, see the [UMDF documentation](https://go.microsoft.com/fwlink/p/?linkid=153678)..
 
 ## <span id="related_topics"></span>Related topics
 

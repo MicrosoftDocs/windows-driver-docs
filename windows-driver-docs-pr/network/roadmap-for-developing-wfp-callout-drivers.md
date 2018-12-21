@@ -31,7 +31,7 @@ To create a Windows Filtering Platform (WFP) callout driver, follow these steps:
 
     Building a driver differs from building a user-mode application. For information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) testing, see [Building, Debugging, and Testing Drivers](https://msdn.microsoft.com/windows-drivers/develop/visual_studio_driver_development_environment). For information about building, testing, verifying, and debugging tools, see [Driver Development Tools](https://msdn.microsoft.com/library/windows/hardware/ff545440).
 
--   Step 6: Review the [Windows Filtering Platform (WFP) driver samples](http://go.microsoft.com/fwlink/p/?LinkId=618680) in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+-   Step 6: Review the [Windows Filtering Platform (WFP) driver samples](https://go.microsoft.com/fwlink/p/?LinkId=618680) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
 -   Step 7: Make design decisions about your WFP callout driver.
 

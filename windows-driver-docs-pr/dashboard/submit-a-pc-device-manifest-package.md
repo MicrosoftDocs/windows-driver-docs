@@ -17,7 +17,7 @@ You can use the same method to submit packages for preview or release.
 
 **To submit a device manifest package**
 
-1.  Sign the devicemanifest-ms package with the [SignTool](http://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
+1.  Sign the devicemanifest-ms package with the [SignTool](https://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
 
 2.  Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account.
 
@@ -84,9 +84,9 @@ GUID1.devicemanifest-ms
 
 To create the LocaleInfo.xml and PcMetadataSubmission.xml, see below.
 
-To learn how to develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226753)
+To learn how to develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753)
 
-You can use the Cabarc tool to create these CAB packages. You can find more information about this tool in [Cabarc Overview](http://go.microsoft.com/fwlink/p/?LinkId=248843)
+You can use the Cabarc tool to create these CAB packages. You can find more information about this tool in [Cabarc Overview](https://go.microsoft.com/fwlink/p/?LinkId=248843)
 
 When you create a \*.devicemanifest-ms file by using the Cabarc tool, you must create a local directory in which the device metadata package (\*.devicemetadata-ms), the LocaleInfo XML document, and the PcMetadataSubmission XML document are at the root of the directory.
 
@@ -96,7 +96,7 @@ When you create a \*.devicemanifest-ms file by using the Cabarc tool, you must c
 
 -   The GUID for each PC device manifest submission and device metadata package must be unique. When you create a new or revised package, you must create a new GUID.
 
--   For more details about how to create cabinet files, see the [Microsoft Cabinet Software Development Kit](http://go.microsoft.com/fwlink/p/?LinkId=248844).
+-   For more details about how to create cabinet files, see the [Microsoft Cabinet Software Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=248844).
 
 **Example**
 
@@ -118,7 +118,7 @@ N .\PCFiles\ GUID.devicemanifest-ms
 .\PcPackages\LocaleInfo.xml
 ```
 
-You can find more information about this tool in the [Cabarc Overview](http://go.microsoft.com/fwlink/p/?LinkId=248843).
+You can find more information about this tool in the [Cabarc Overview](https://go.microsoft.com/fwlink/p/?LinkId=248843).
 
 ## <span id="creating_pcmetadatasubmission.xml"></span><span id="CREATING_PCMETADATASUBMISSION.XML"></span>Creating PcMetadataSubmission.xml
 
@@ -134,7 +134,7 @@ The XML document must be saved by using UTF-8 encoding.
 
  
 
-For more information about ComputerHardwareID, see [How to Create a Device Metadata Package for Devices and Printers](http://go.microsoft.com/fwlink/p/?LinkId=253559).
+For more information about ComputerHardwareID, see [How to Create a Device Metadata Package for Devices and Printers](https://go.microsoft.com/fwlink/p/?LinkId=253559).
 
 **PcMetadataSubmission XML Schema NameSpace**
 
@@ -426,7 +426,7 @@ The value specified by the SystemManufacturer attribute must be identical with t
 
  
 
-For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
+For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](https://go.microsoft.com/fwlink/p/?LinkId=145867).
 
 **SystemFamily Attributes**
 
@@ -483,7 +483,7 @@ The value specified by the SystemFamily attribute must be identical with the val
 
  
 
-For more information about the dmiStrucBuffer array and the SMBIOS fields, refer to [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
+For more information about the dmiStrucBuffer array and the SMBIOS fields, refer to [System Management BIOS (SMBIOS) Specification](https://go.microsoft.com/fwlink/p/?LinkId=145867).
 
 **SystemProductName Attributes**
 
@@ -540,7 +540,7 @@ The value specified by the SystemProductName attribute must be identical with th
 
  
 
-For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
+For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](https://go.microsoft.com/fwlink/p/?LinkId=145867).
 
 **BIOSVendor Attributes**
 
@@ -597,7 +597,7 @@ The value specified by the BIOSVendor attribute must be identical with the value
 
  
 
-For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
+For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](https://go.microsoft.com/fwlink/p/?LinkId=145867).
 
 **BIOSVersion Attributes**
 
@@ -654,7 +654,7 @@ The value specified by the BIOSVersion attribute must be identical with the valu
 
  
 
-For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
+For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](https://go.microsoft.com/fwlink/p/?LinkId=145867).
 
 **SystemBIOSMajorRelease Attributes**
 
@@ -711,7 +711,7 @@ The value specified by the SystemBIOSMajorRelease attribute must be identical wi
 
  
 
-For more information about the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
+For more information about the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](https://go.microsoft.com/fwlink/p/?LinkId=145867).
 
 **SystemBIOSMinorRelease Attributes**
 
@@ -768,7 +768,7 @@ The value specified by the SystemBIOSMinorRelease attribute must be identical wi
 
  
 
-For more information about the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
+For more information about the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](https://go.microsoft.com/fwlink/p/?LinkId=145867).
 
 **Enclosuretype Attribute**
 
@@ -824,7 +824,7 @@ The value specified by the Enclosuretype attribute must be identical with the va
 
  
 
-For more information about the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
+For more information about the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](https://go.microsoft.com/fwlink/p/?LinkId=145867).
 
 **SKUNumber Element**
 
@@ -881,7 +881,7 @@ The value specified by the SKUNumber element must be identical with the value in
 
  
 
-For more information about the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](http://go.microsoft.com/fwlink/p/?LinkId=145867).
+For more information about the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](https://go.microsoft.com/fwlink/p/?LinkId=145867).
 
 ### <span id="PcMetadataSubmission_XML_Example"></span><span id="pcmetadatasubmission_xml_example"></span><span id="PCMETADATASUBMISSION_XML_EXAMPLE"></span>PcMetadataSubmission XML Example
 

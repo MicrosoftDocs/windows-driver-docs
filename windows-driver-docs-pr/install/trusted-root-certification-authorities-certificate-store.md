@@ -33,7 +33,7 @@ The name of the Trusted Root Certification Authorities certificate store is *roo
 
  
 
-For more information about certificate stores, see the [Code Signing Best Practices](http://go.microsoft.com/fwlink/p/?linkid=68250) website.
+For more information about certificate stores, see the [Code Signing Best Practices](https://go.microsoft.com/fwlink/p/?linkid=68250) website.
 
  
 

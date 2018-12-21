@@ -15,7 +15,7 @@ This topic describes how to write a very small [Universal Windows driver](https:
 
 To get started, be sure you have [Microsoft Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=698539), the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk), and the [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p/?LinkId=733614) installed.
 
-[Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
+[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
 
 ## Create and build a driver
 
@@ -315,10 +315,10 @@ Now that you have installed your KmdfHelloWorld driver on the target computer, y
 
 4. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
 
-    -   [lm](http://go.microsoft.com/fwlink/p?linkid=399236)
-    -   [.sympath](http://go.microsoft.com/fwlink/p?linkid=399238)
-    -   [.reload](http://go.microsoft.com/fwlink/p?linkid=399239)
-    -   [x KmdfHelloWorld!\*](http://go.microsoft.com/fwlink/p?linkid=399240)
+    -   [lm](https://go.microsoft.com/fwlink/p?linkid=399236)
+    -   [.sympath](https://go.microsoft.com/fwlink/p?linkid=399238)
+    -   [.reload](https://go.microsoft.com/fwlink/p?linkid=399239)
+    -   [x KmdfHelloWorld!\*](https://go.microsoft.com/fwlink/p?linkid=399240)
 
 5. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
 6. To stop the debugging session, choose **Detach Debuggee** from the **Debug** menu.
@@ -332,9 +332,9 @@ For more information about remote debugging, see [Remote Debugging Using WinDbg]
 
 ## <span id="related_topics"></span>Related topics
 
-[Developing, Testing, and Deploying Drivers](http://go.microsoft.com/fwlink/p?linkid=399234)
+[Developing, Testing, and Deploying Drivers](https://go.microsoft.com/fwlink/p?linkid=399234)
 
-[Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405)
+[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405)
 
 [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)
 

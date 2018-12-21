@@ -22,9 +22,9 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.mi
 
 -   An [**NDIS\_PM\_PACKET\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566756) structure that provides information about the pattern and its mask.
 
--   A mask that indicates which bytes of an incoming packet should be compared with corresponding bytes in the pattern. The mask starts with the first byte of the packet. The mask immediately follows the [**NDIS\_PM\_PACKET\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566756) structure in the *InformationBuffer*. For more information about how this mask works, see the [Network Device Class Power Management Reference specification](http://go.microsoft.com/fwlink/p/?linkid=27255).
+-   A mask that indicates which bytes of an incoming packet should be compared with corresponding bytes in the pattern. The mask starts with the first byte of the packet. The mask immediately follows the [**NDIS\_PM\_PACKET\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566756) structure in the *InformationBuffer*. For more information about how this mask works, see the [Network Device Class Power Management Reference specification](https://go.microsoft.com/fwlink/p/?linkid=27255).
 
--   A wake-up pattern, which begins **PatternOffset** bytes from the beginning of the *InformationBuffer*. For more information about wake-up patterns, see the [Network Device Class Power Management Reference specification](http://go.microsoft.com/fwlink/p/?linkid=27255).
+-   A wake-up pattern, which begins **PatternOffset** bytes from the beginning of the *InformationBuffer*. For more information about wake-up patterns, see the [Network Device Class Power Management Reference specification](https://go.microsoft.com/fwlink/p/?linkid=27255).
 
 The number of wake-up patterns that the miniport driver can accept from a protocol might depend on the availability of resources, such as the host memory that the miniport driver has allocated for such patterns, or the available storage in the network adapter. If a miniport driver cannot add a wake-up pattern due to insufficient resources, the miniport driver returns **NDIS\_STATUS\_RESOURCES** in response to OID\_PNP\_ADD\_WAKE\_UP\_PATTERN.
 

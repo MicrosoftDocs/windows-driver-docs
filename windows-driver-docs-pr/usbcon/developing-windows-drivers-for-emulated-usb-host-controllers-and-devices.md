@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 <p>This section describes USB emulated device (UDE) support in the Windows operating system, for developing an emulated Universal Serial Bus (USB) host controller driver and a connected virtual USB device. Both components are combined into a single KMDF driver that communicates with the Microsoft-provided USB device emulation class extension (UdeCx).</p>
 <p><strong>Development tools and Microsoft-provided binaries</strong></p>
 <p>The Windows Driver Kit (WDK) contains resources that are required for driver development, such as headers, libraries, tools, and samples.</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=617155" data-raw-source="[Download kits and tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=617155)">Download kits and tools for Windows</a></p>
+<p><a href="https://go.microsoft.com/fwlink/p/?linkid=617155" data-raw-source="[Download kits and tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=617155)">Download kits and tools for Windows</a></p>
 <p>To write a function controller driver, you need:</p>
 <ul>
 <li>UdeCx: (udecx.sys) a WDF extension used by the function driver. This extension is included in Windows.</li>

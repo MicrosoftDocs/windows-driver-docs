@@ -46,7 +46,7 @@ The Web Services for Devices (WSD) `List` construct is a string type that compos
 
  
 
-The XPath language, implemented in Windows beginning with Microsoft XML (MSXML) 2.6, provides a convenient way to specify elements in an XML file. See the XML Developer's Guide in the Windows SDK and [XPath Reference](http://go.microsoft.com/fwlink/p/?linkid=33165) for more information.
+The XPath language, implemented in Windows beginning with Microsoft XML (MSXML) 2.6, provides a convenient way to specify elements in an XML file. See the XML Developer's Guide in the Windows SDK and [XPath Reference](https://go.microsoft.com/fwlink/p/?linkid=33165) for more information.
 
 The `List` construct is defined in WsdBidi.xsd.
 

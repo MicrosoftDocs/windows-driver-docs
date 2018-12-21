@@ -13,8 +13,8 @@ This topic describes how to port a User-Mode Driver Framework (UMDF) 1 driver to
 
 The Echo driver sample is an example of a driver that has been ported from UMDF 1 to UMDF 2.
 
--   [Echo Sample (UMDF Version 1)](http://go.microsoft.com/fwlink/p/?LinkId=617707)
--   [Echo Sample (UMDF Version 2)](http://go.microsoft.com/fwlink/p/?LinkId=617708)
+-   [Echo Sample (UMDF Version 1)](https://go.microsoft.com/fwlink/p/?LinkId=617707)
+-   [Echo Sample (UMDF Version 2)](https://go.microsoft.com/fwlink/p/?LinkId=617708)
 
 ## Getting Started
 

@@ -8,9 +8,9 @@ ms.localizationpriority: medium
 
 # PTP References
 
-Picture Transfer Protocol (PTP) standard on the [ISO 15740:2013 Picture transfer protocol](http://go.microsoft.com/fwlink/p/?LinkId=517024) website.
+Picture Transfer Protocol (PTP) standard on the [ISO 15740:2013 Picture transfer protocol](https://go.microsoft.com/fwlink/p/?LinkId=517024) website.
 
-*Universal Serial Bus Still Image Capture Device Definition*, *Revision 1.0*, July 11, 2000 on the [USB.org Documents](http://go.microsoft.com/fwlink/p/?LinkId=517016) website.
+*Universal Serial Bus Still Image Capture Device Definition*, *Revision 1.0*, July 11, 2000 on the [USB.org Documents](https://go.microsoft.com/fwlink/p/?LinkId=517016) website.
 
  
 

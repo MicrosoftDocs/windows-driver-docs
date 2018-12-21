@@ -18,7 +18,7 @@ warning C28101: The Drivers module has inferred that the current function is not
 
 The Code Analysis tool has detected that a function is of a particular type, such as a callback function. This is an informational message only. It does not indicate an error.
 
-This message indicates that the Code Analysis tool is applying rules that are specific to that function type. If this inference is wrong, the Code Analysis tool will generate false-positive warnings, but those warnings can be safely ignored. For more information, see [Using Annotations to Reduce C/C++ Code Defects](http://go.microsoft.com/fwlink/p/?linkid=227826).
+This message indicates that the Code Analysis tool is applying rules that are specific to that function type. If this inference is wrong, the Code Analysis tool will generate false-positive warnings, but those warnings can be safely ignored. For more information, see [Using Annotations to Reduce C/C++ Code Defects](https://go.microsoft.com/fwlink/p/?linkid=227826).
 
 The *function signature* (the arguments and result type) are used to identify the function whenever possible. Some standard driver routines, such as [**Cancel**](https://msdn.microsoft.com/library/windows/hardware/ff540742) and [**StartIo**](https://msdn.microsoft.com/library/windows/hardware/ff563858), have the same signature, so the name is checked to see if it matches the conventional name for that function. Other functions might be checked for conventional names.
 

@@ -61,7 +61,7 @@ ms.localizationpriority: medium
 <p>SDV examines all possible paths through the driver code. It is designed to find serious errors in obscure paths that are unlikely to be encountered even in thorough testing.</p>
 <p><strong>Resources</strong></p>
 <p>For specific information about the drivers that SDV can verify, see <a href="supported-drivers.md" data-raw-source="[Supported Drivers](supported-drivers.md)">Supported Drivers</a>.</p>
-<p>For more information and tips about using Static Driver Verifier, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=154232" data-raw-source="[Static Driver Tools blog](http://go.microsoft.com/fwlink/p/?linkid=154232)">Static Driver Tools blog</a>.</p></td>
+<p>For more information and tips about using Static Driver Verifier, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=154232" data-raw-source="[Static Driver Tools blog](https://go.microsoft.com/fwlink/p/?linkid=154232)">Static Driver Tools blog</a>.</p></td>
 </tr>
 </tbody>
 </table>

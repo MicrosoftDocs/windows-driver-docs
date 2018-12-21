@@ -15,7 +15,7 @@ To prepare your Windows Server 2008 (and below) hardware for certification, you 
 
 # Creating a WQReady.xml file
 
-1.  Download the [Windows Logo Kit (WLK)](http://go.microsoft.com/fwlink/p/?LinkId=219237). Be sure to test your driver or drivers with the appropriate certification kit on each operating system that you want certification for.
+1.  Download the [Windows Logo Kit (WLK)](https://go.microsoft.com/fwlink/p/?LinkId=219237). Be sure to test your driver or drivers with the appropriate certification kit on each operating system that you want certification for.
 
 2.  Open the Winqual Submission Tool (WST) and click **Add**.
 

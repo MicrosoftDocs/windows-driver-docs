@@ -15,7 +15,7 @@ When the capsule is called, the executable code contained in the capsule is resp
 
 After communication is established, the update management code writes the firmware image to the targeted device. After completing the update, an appropriate return status code is written to the device’s Firmware Resource Entry in the ESRT. The update management code then returns control to the UpdateCapsule function.
 
-For details on the UpdateCapsule function, the structure of a capsule, and UEFI boot services drivers and protocols, refer to the [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkId=218221).
+For details on the UpdateCapsule function, the structure of a capsule, and UEFI boot services drivers and protocols, refer to the [UEFI specification](https://go.microsoft.com/fwlink/p/?LinkId=218221).
 
 ## Related topics
 [ESRT table definition](esrt-table-definition.md)  

@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 # Encoder Code Examples
 
 
-The following code examples are based on the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083). They demonstrate the following:
+The following code examples are based on the [AVStream Simulated Hardware Sample Driver (AVSHwS)](https://go.microsoft.com/fwlink/p/?linkid=256083). They demonstrate the following:
 
 -   How to specify the encoder's supported bit rates
 

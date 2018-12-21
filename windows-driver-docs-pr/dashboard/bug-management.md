@@ -9,7 +9,7 @@ ms.date: 10/17/2018
 
 # Bug Management
 
-Bug management on the legacy SysDev dashboard has been depreciated and replaced with Microsoft Collaborate. For more information about Microsoft Collaborate, please visit http://aka.ms/CollaborateDocs.
+Bug management on the legacy SysDev dashboard has been depreciated and replaced with Microsoft Collaborate. For more information about Microsoft Collaborate, please visit https://aka.ms/CollaborateDocs.
 
 
 

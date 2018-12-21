@@ -63,7 +63,7 @@ The driver has both read and write access.
 
 The preceding lists describe only those types that are used in the WIA properties that this section includes. For more information about these and other property types, see [**WIA\_PROPERTY\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff552751).
 
-The Windows SDK contain information about the [WIA\_RAW\_HEADER](http://go.microsoft.com/fwlink/p/?linkid=153316) structure. It also contains information about the WIA\_EVENT\_XXX and WIA\_CMD\_XXX constants, discussed in the [WIA Event Identifiers](http://go.microsoft.com/fwlink/p/?linkid=153318) topic.
+The Windows SDK contain information about the [WIA\_RAW\_HEADER](https://go.microsoft.com/fwlink/p/?linkid=153316) structure. It also contains information about the WIA\_EVENT\_XXX and WIA\_CMD\_XXX constants, discussed in the [WIA Event Identifiers](https://go.microsoft.com/fwlink/p/?linkid=153318) topic.
 
  
 

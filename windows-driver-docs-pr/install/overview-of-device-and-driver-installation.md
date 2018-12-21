@@ -30,7 +30,7 @@ Windows installs devices when the system restarts and at any time after a system
 -   [Device Installation Types](device-installation-types.md)
 -   [How Windows Selects Drivers](how-setup-selects-drivers.md)
 
-For more information about device management and installation, see the [Driver Installation](http://go.microsoft.com/fwlink/p/?linkid=70230) website.
+For more information about device management and installation, see the [Driver Installation](https://go.microsoft.com/fwlink/p/?linkid=70230) website.
 
  
 

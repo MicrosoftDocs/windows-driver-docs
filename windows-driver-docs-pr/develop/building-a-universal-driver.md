@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Building a Universal Windows driver
 
-You can use Microsoft Visual Studio 2015 in conjunction with Windows Driver Kit (WDK) 10 to build drivers for desktop, mobile, or universal. You can download kits and tools from the [Windows Hardware Dev Center](http://go.microsoft.com/fwlink/p/?LinkId=524487).
+You can use Microsoft Visual Studio 2015 in conjunction with Windows Driver Kit (WDK) 10 to build drivers for desktop, mobile, or universal. You can download kits and tools from the [Windows Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=524487).
 
 In many cases, you can recompile a legacy kernel-mode driver as a Universal Windows driver, as long as the driver does not work with any user-mode components. Legacy WDM and KMDF drivers should recompile as Universal Windows drivers targeting Windows 10 with no conversion required.
 

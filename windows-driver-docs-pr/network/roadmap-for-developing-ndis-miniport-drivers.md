@@ -44,7 +44,7 @@ To create a Network Driver Interface Specification (NDIS) miniport driver packag
 
   This section provides an overview of the primary miniport driver interfaces. These interfaces included functions that miniport drivers provide (*MiniportXxx* functions) and NDIS calls to initiate operations. NDIS provides **Ndis*Xxx*** functions that miniport drivers call to perform NDIS operations.
 
-- Step 7: Review the [NDIS miniport driver sample](http://go.microsoft.com/fwlink/p/?LinkId=617918) in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+- Step 7: Review the [NDIS miniport driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617918) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
 - Step 8: (optional reading) Additional considerations for Miniport Drivers.
 

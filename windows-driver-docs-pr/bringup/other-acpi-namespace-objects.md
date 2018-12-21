@@ -176,7 +176,7 @@ If the device connected to a port is a composite USB device, functions within th
 
 
 
-For more information, see [Identifying the Location of Internal Cameras](http://go.microsoft.com/fwlink/p/?linkid=331060).
+For more information, see [Identifying the Location of Internal Cameras](https://go.microsoft.com/fwlink/p/?linkid=331060).
 
 ### ASL code examples
 
@@ -279,7 +279,7 @@ Clamshell designs, and other systems with built-in or connected keyboards, imple
 -   Lists the power button's GPIO interrupt resource in the \_AEI object of the GPIO controller to which it is connected.
 -   Provides the associated event method (Lxx/Exx/EVT) under the GPIO controller device. This event method notifies the Control Method Button driver in the operating system that the button event has occurred.
 
-For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](http://go.microsoft.com/fwlink/p/?linkid=331284).
+For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](https://go.microsoft.com/fwlink/p/?linkid=331284).
 
 ### Windows-compatible button array
 
@@ -310,7 +310,7 @@ For touch-first (keyboard-less) platforms, such as slates, Windows provides a ge
 
         The "Rotation Lock" button must not be wake-capable (must use Exclusive).
 
-For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](http://go.microsoft.com/fwlink/p/?linkid=331284).
+For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](https://go.microsoft.com/fwlink/p/?linkid=331284).
 
 To support evolution of the Windows Button UI, Windows defines a Device-Specific Method (\_DSM) for the Windows Button Array device. For more information, see [Windows Button Array Device-Specific Method (\_DSM)](windows-button-array-device-specific-method---dsm-.md).
 
@@ -324,7 +324,7 @@ Windows supports docks and convertibles (clamshell/tablet combos) by the use of 
 -   The GPIO controller driver must use ActiveBoth emulation provided by the [GPIO framework extension](https://docs.microsoft.com/windows-hardware/drivers/gpio/gpioclx-i-o-and-interrupt-interfaces) (**GpioClx**).
 -   If the asserted state ("Docked" or "Converted") is not asserted logic level low, the GPIO controller \_DSM method is required to override the GPIO driver stack's default behavior. For more information, see the **GPIO controller devices** section in the [General-purpose I/O (GPIO)](general-purpose-i-o--gpio-.md) topic.
 
-For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](http://go.microsoft.com/fwlink/p/?linkid=331284).
+For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](https://go.microsoft.com/fwlink/p/?linkid=331284).
 
 ### Dock-sensing device
 

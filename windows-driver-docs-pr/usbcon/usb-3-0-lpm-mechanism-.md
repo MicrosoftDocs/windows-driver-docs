@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic describes the USB 3.0 LPM mechanism.
 
-There is an addendum to the official [USB 2.0 Specification](http://go.microsoft.com/fwlink/p/?linkid=230961) (USB2\_LinkPowerMangement\_ECN), which defines LPM for newer USB 2.0 hardware. This topic does not cover that USB 2.0 LPM mechanism. The purpose of this topic is to describe USB 3.0 LPM states, specifically U1 and U2.
+There is an addendum to the official [USB 2.0 Specification](https://go.microsoft.com/fwlink/p/?linkid=230961) (USB2\_LinkPowerMangement\_ECN), which defines LPM for newer USB 2.0 hardware. This topic does not cover that USB 2.0 LPM mechanism. The purpose of this topic is to describe USB 3.0 LPM states, specifically U1 and U2.
 
 USB 3.0 devices also support Selective Suspend. To overcome the limitations of Selective Suspend, the official USB 3.0 specification defines finer-grained power management states. Before describing those states and how they can be used to improve power management, let’s first understand the concept of a link.
 

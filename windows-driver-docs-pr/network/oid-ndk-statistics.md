@@ -26,9 +26,9 @@ NDIS issues this OID with the **InformationBuffer** member of the [**NDIS\_OID\_
 
 The NDK-capable miniport driver must provide the **CounterSet** member, which is a [**NDIS\_NDK\_PERFORMANCE\_COUNTERS**](https://msdn.microsoft.com/library/windows/hardware/hh451565) structure.
 
-The counters are published to tools such as [perfmon](http://technet.microsoft.com/library/cc731067.aspx) (see the [NetworkDirect Activity](http://technet.microsoft.com/library/hh997022.aspx) performance counter) and made available programmatically with the Performance Data Helper (PDH) and Performance Library (PERFLIB) programming interfaces. For more information about these interfaces, see [Performance Counters](https://msdn.microsoft.com/library/windows/desktop/aa373083).
+The counters are published to tools such as [perfmon](https://technet.microsoft.com/library/cc731067.aspx) (see the [NetworkDirect Activity](https://technet.microsoft.com/library/hh997022.aspx) performance counter) and made available programmatically with the Performance Data Helper (PDH) and Performance Library (PERFLIB) programming interfaces. For more information about these interfaces, see [Performance Counters](https://msdn.microsoft.com/library/windows/desktop/aa373083).
 
-These counters are also available by calling the [Get-NetAdapterStatistics](http://technet.microsoft.com/library/jj130889) PowerShell cmdlet with the **RdmaStatistics** attribute. For more information about the **RdmaStatistics** attribute, see [**MSFT\_NetAdapterStatisticsSettingData**](https://msdn.microsoft.com/library/hh872390).
+These counters are also available by calling the [Get-NetAdapterStatistics](https://technet.microsoft.com/library/jj130889) PowerShell cmdlet with the **RdmaStatistics** attribute. For more information about the **RdmaStatistics** attribute, see [**MSFT\_NetAdapterStatisticsSettingData**](https://msdn.microsoft.com/library/hh872390).
 
 Requirements
 ------------

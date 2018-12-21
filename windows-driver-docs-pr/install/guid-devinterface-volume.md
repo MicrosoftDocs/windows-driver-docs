@@ -50,7 +50,7 @@ Remarks
 
 The system-supplied [storage class drivers](https://msdn.microsoft.com/library/windows/hardware/ff559215) register instances of GUID_DEVINTERFACE_VOLUME to notify the operating system and applications of the presence of volume devices. The mount manager uses the Plug and Play (PnP) device interface notification mechanism to signal the arrival or removal of a volume interface.
 
-The storage [samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include an [Addfilter Storage Filter Tool](http://go.microsoft.com/fwlink/p/?linkid=256076) that uses the obsolete identifier [**VolumeClassGuid**](volumeclassguid.md) to enumerate instances of the GUID_DEVINTERFACE_VOLUME device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include an [Addfilter Storage Filter Tool](https://go.microsoft.com/fwlink/p/?linkid=256076) that uses the obsolete identifier [**VolumeClassGuid**](volumeclassguid.md) to enumerate instances of the GUID_DEVINTERFACE_VOLUME device interface class.
 
 For more information about storage drivers, see [Storage Drivers](https://msdn.microsoft.com/library/windows/hardware/ff566976) and [Supporting Mount Manager Requests in a Storage Class Driver](https://msdn.microsoft.com/library/windows/hardware/ff567603).
 

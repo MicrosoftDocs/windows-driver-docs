@@ -30,14 +30,14 @@ To access the hardware dashboard, you need to register for hardware program.
 ## Register for the hardware program
 
 
-Your company's administrator must [register](http://go.microsoft.com/fwlink/?LinkID=828002) for the Windows Hardware Dev Center program. See [Register for the Hardware Program](register-for-the-hardware-program.md) for additional information about the registration process.
+Your company's administrator must [register](https://go.microsoft.com/fwlink/?LinkID=828002) for the Windows Hardware Dev Center program. See [Register for the Hardware Program](register-for-the-hardware-program.md) for additional information about the registration process.
 
 ## <span id="Design__create__and_test_your_hardware_and_drivers"></span><span id="design__create__and_test_your_hardware_and_drivers"></span><span id="DESIGN__CREATE__AND_TEST_YOUR_HARDWARE_AND_DRIVERS"></span>Design, create, and test your hardware and drivers
 
 
 You can help your customers identify quality products that run reliably on Windows-based computers by testing your products and participating in the Windows Hardware Compatibility Program (for Windows 10), or the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems).
 
-These programs enable you to design, create, and test your hardware and drivers before you submit the final version through the Windows Hardware Dev Center dashboard. For more information, see the [Windows hardware certification](http://go.microsoft.com/fwlink/p/?LinkId=224782) page.
+These programs enable you to design, create, and test your hardware and drivers before you submit the final version through the Windows Hardware Dev Center dashboard. For more information, see the [Windows hardware certification](https://go.microsoft.com/fwlink/p/?LinkId=224782) page.
 
 ## <span id="Submit_your_hardware_and_drivers_for_the_compatibility_program_or_certification"></span><span id="submit_your_hardware_and_drivers_for_the_compatibility_program_or_certification"></span><span id="SUBMIT_YOUR_HARDWARE_AND_DRIVERS_FOR_THE_COMPATIBILITY_PROGRAM_OR_CERTIFICATION"></span>Submit your hardware and drivers for the compatibility program or certification
 

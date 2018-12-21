@@ -17,7 +17,7 @@ To prepare your hardware for the Windows Hardware Compatibility Program for Wind
 
 For information about creating and digitally signing an **.hlkx** file, see the [Windows HLK Getting Started Guide](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
-For information about creating and digitally signing an **.hckx** file, see the [Windows HCK Getting Started Guide](http://go.microsoft.com/fwlink/p/?LinkId=248436).
+For information about creating and digitally signing an **.hckx** file, see the [Windows HCK Getting Started Guide](https://go.microsoft.com/fwlink/p/?LinkId=248436).
 
 ## <span id="To_submit_a_file"></span><span id="to_submit_a_file"></span><span id="TO_SUBMIT_A_FILE"></span>To submit a file
 

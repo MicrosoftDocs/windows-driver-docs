@@ -71,7 +71,7 @@ Run Driver Verifier throughout the driver development and test process.
 
 -   Use Driver Verifier to find problems early in the development life cycle, when they are easier and less costly to correct.
 
--   Use Driver Verifier when you deploy a driver for testing using the WDK, Visual Studio, and the [Windows Hardware Certification Kit](http://go.microsoft.com/fwlink/p/?linkid=254893) (HCK) tests. See [Testing a Driver](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver).
+-   Use Driver Verifier when you deploy a driver for testing using the WDK, Visual Studio, and the [Windows Hardware Certification Kit](https://go.microsoft.com/fwlink/p/?linkid=254893) (HCK) tests. See [Testing a Driver](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver).
 
 -   Use Driver Verifier for troubleshooting and debugging test failures and computer crashes.
 

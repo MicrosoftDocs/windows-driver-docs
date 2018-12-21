@@ -26,4 +26,4 @@ This section includes:
 - [Editing the Boot.ini File](editing-the-boot-ini-file.md)
 - [Backing Up the Boot.ini File](backing-up-the-boot-ini-file.md)
 
-This document describes aspects of Boot.ini that are of special interest to driver developers and testers. For a complete list of Boot.ini parameters, see [Available Switch Options for the Windows XP and the Windows Server 2003 Boot.ini Files](http://go.microsoft.com/fwlink/p/?linkid=137742) topic on the Microsoft Support website.
+This document describes aspects of Boot.ini that are of special interest to driver developers and testers. For a complete list of Boot.ini parameters, see [Available Switch Options for the Windows XP and the Windows Server 2003 Boot.ini Files](https://go.microsoft.com/fwlink/p/?linkid=137742) topic on the Microsoft Support website.

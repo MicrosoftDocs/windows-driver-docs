@@ -18,7 +18,7 @@ There are two ways to create a [catalog file](catalog-files.md):
 
 -   If the driver package is installed through an INF file, use the [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) tool to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md).
 
--   If the driver package is not installed through an INF file, use the [MakeCat](http://go.microsoft.com/fwlink/p/?linkid=104922) tool to create a catalog file by using a manually-created Catalog Definition File (*.cdf*).
+-   If the driver package is not installed through an INF file, use the [MakeCat](https://go.microsoft.com/fwlink/p/?linkid=104922) tool to create a catalog file by using a manually-created Catalog Definition File (*.cdf*).
 
     For example, if the driver package is installed through an application, you may want to create a catalog file to digitally-sign all kernel-mode binary components of the package, such as the driver and any supporting *.dll* files. For more information about how to use the MakeCat tool, see [Using MakeCat to Create a Catalog File](using-makecat-to-create-a-catalog-file.md).
 

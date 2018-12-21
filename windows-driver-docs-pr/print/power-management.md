@@ -27,7 +27,7 @@ Follow these basic rules to make sure your device is working correctly.
 
 4.  Critical shutdown requests will override any attempts to veto a change in power state.
 
-For more information, see [System Power States](https://msdn.microsoft.com/library/windows/hardware/ff564571) in the WDK documentation and [System Power States](http://go.microsoft.com/fwlink/p/?linkid=51899) in the Microsoft Windows SDK documentation.
+For more information, see [System Power States](https://msdn.microsoft.com/library/windows/hardware/ff564571) in the WDK documentation and [System Power States](https://go.microsoft.com/fwlink/p/?linkid=51899) in the Microsoft Windows SDK documentation.
 
 ### Testing Port-Connected Devices Across Various Power States
 

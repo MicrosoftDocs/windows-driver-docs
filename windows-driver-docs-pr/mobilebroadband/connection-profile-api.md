@@ -24,7 +24,7 @@ This API also includes a status change event that notifies the application whene
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)
 
-[Network Information sample](http://go.microsoft.com/fwlink/p/?linkid=227013)
+[Network Information sample](https://go.microsoft.com/fwlink/p/?linkid=227013)
 
 [**NetworkStatusChangedEventHandler delegate**](https://msdn.microsoft.com/library/windows/apps/br207303)
 

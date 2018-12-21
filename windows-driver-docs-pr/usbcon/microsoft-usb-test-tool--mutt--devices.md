@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 -   Description of MUTT devices
 -   The manufactures listed in this section sell MUTT hardware boards required to run interoperability tests.
--   [![download the mutt software package](images/download.png)](http://go.microsoft.com/fwlink/p/?LinkId=786621) the MUTT software package to get the latest version of the test tools.
+-   [![download the mutt software package](images/download.png)](https://go.microsoft.com/fwlink/p/?LinkId=786621) the MUTT software package to get the latest version of the test tools.
 
 The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack. This section provides a brief overview of the different types of MUTT devices, the tests you can run by using the device, and suggests topologies for controller, hub, device, and BIOS/UEFI testing.
 
@@ -22,26 +22,26 @@ To communicate with MUTT devices, you need the MUTT software package. This packa
 
 
 <a href="" id="mutt"></a>MUTT  
-[JJG Technologies]( http://go.microsoft.com/fwlink/p/?linkid=618287)
+[JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287)
 
 <a href="" id="mutt-pack"></a>MUTT Pack  
-[JJG Technologies]( http://go.microsoft.com/fwlink/p/?linkid=618287)
+[JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287)
 
 <a href="" id="supermutt"></a>SuperMUTT  
-[JJG Technologies]( http://go.microsoft.com/fwlink/p/?linkid=618287)
+[JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287)
 
 [Pactron](http://pactronstore.com/products/supermutt.mdl)
 
 <a href="" id="supermutt-pack"></a>SuperMUTT Pack  
-[VIA Labs](http://go.microsoft.com/fwlink/p/?linkid=618285)
+[VIA Labs](https://go.microsoft.com/fwlink/p/?linkid=618285)
 
 <a href="" id="dr-mutt"></a>DR MUTT  
-[JJG Technologies]( http://go.microsoft.com/fwlink/p/?linkid=618287)
+[JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287)
 
 <a href="" id="mutt-connex-c"></a>USB Type-C ConnEx
-[MCCI](http://go.microsoft.com/fwlink/p/?LinkId=733488)
+[MCCI](https://go.microsoft.com/fwlink/p/?LinkId=733488)
 
-[JJG Technologies]( http://go.microsoft.com/fwlink/p/?linkid=618287)
+[JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287)
 
 ## MUTT
 

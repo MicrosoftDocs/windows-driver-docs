@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 The following INF file, *Sti.inf*, shows how to install a WIA driver. Entries that you need for *WSDScan.sys* are highlighted.
 
-**Note**   The requirements for the device hardware IDs and the **PKEY\_Device\_HardwareIds** property that are referenced in the following INF example are described in the [PNP-X Implementer's Guide](http://go.microsoft.com/fwlink/p/?linkid=242570).
+**Note**   The requirements for the device hardware IDs and the **PKEY\_Device\_HardwareIds** property that are referenced in the following INF example are described in the [PNP-X Implementer's Guide](https://go.microsoft.com/fwlink/p/?linkid=242570).
 
  
 

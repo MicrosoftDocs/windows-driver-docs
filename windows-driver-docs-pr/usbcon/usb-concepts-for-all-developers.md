@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 #  Concepts for all USB developers
 
 
-A Universal Serial Bus (USB) device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints. This topic provides a high-level overview of those concepts. For details, see the USB specifications at [Universal Serial Bus Documents]( http://go.microsoft.com/fwlink/p/?linkid=224892).
+A Universal Serial Bus (USB) device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints. This topic provides a high-level overview of those concepts. For details, see the USB specifications at [Universal Serial Bus Documents]( https://go.microsoft.com/fwlink/p/?linkid=224892).
 
 ## In this section
 

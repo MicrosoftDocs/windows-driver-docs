@@ -47,7 +47,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Download and install the [Windows 10 SDK](https://go.microsoft.com/fwlink/p/?LinkID=822845)
 
-    - Download and install the [3D printing SDK](http://go.microsoft.com/fwlink/p/?LinkId=394375)
+    - Download and install the [3D printing SDK](https://go.microsoft.com/fwlink/p/?LinkId=394375)
 
    > [!NOTE]
    > The 3D printing SDK will be installed in C:\\Program Files (x86)\\Microsoft SDKs\\3D Printing.

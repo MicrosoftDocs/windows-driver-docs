@@ -32,7 +32,7 @@ Specifies the name of the input MOF file.
 
 To learn more about how to use Mofcomp, open a Command Prompt window and type **mofcomp /?**.
 
-For more information about Mofcomp, see [MofComp](http://go.microsoft.com/fwlink/p/?linkid=51316) and other topics in the Windows SDK.
+For more information about Mofcomp, see [MofComp](https://go.microsoft.com/fwlink/p/?linkid=51316) and other topics in the Windows SDK.
 
 To include the compiled MOF file as a resource in the driver's binary image, add the following line to the driver's resource script (RC) file:
 

@@ -17,7 +17,7 @@ You can use the same method to submit packages for preview or release.
 
 **To submit a device manifest package**
 
-1.  Sign the devicemanifest-ms package with the [SignTool](http://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
+1.  Sign the devicemanifest-ms package with the [SignTool](https://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
 
 2.  Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account.
 
@@ -76,9 +76,9 @@ GUID1.devicemanifest-ms
 
 Instructions on creating LocaleInfo.xml are below.
 
-To learn how to develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226753).
+To learn how to develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753).
 
-You can use the Cabarc tool to create these CAB packages. For more information about this tool, see [Cabarc overview](http://go.microsoft.com/fwlink/p/?LinkId=248843).
+You can use the Cabarc tool to create these CAB packages. For more information about this tool, see [Cabarc overview](https://go.microsoft.com/fwlink/p/?LinkId=248843).
 
 When you create a \*.devicemanifest-ms file by using the Cabarc tool, you must create a local directory in which the device metadata package (\*.devicemetadata-ms) and the LocaleInfo XML document are at the root of the directory.
 
@@ -88,7 +88,7 @@ When you create a \*.devicemanifest-ms file by using the Cabarc tool, you must c
 
 -   The GUID for each device manifest submission and device metadata package must be unique. When you create a new or revised package, you must create a new GUID.
 
--   For more details about how to create cabinet files, see the [Microsoft Cabinet Software Development Kit](http://go.microsoft.com/fwlink/p/?LinkId=248844).
+-   For more details about how to create cabinet files, see the [Microsoft Cabinet Software Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=248844).
 
 **Example**
 

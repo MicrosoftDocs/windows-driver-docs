@@ -95,7 +95,7 @@ The following table provides additional information about the MobilePrinter cate
 
  
 
-For more information about how to add the device category to the WS-Discovery metadata exchange, see the [PnP-X specification](http://go.microsoft.com/fwlink/p/?linkid=509797).
+For more information about how to add the device category to the WS-Discovery metadata exchange, see the [PnP-X specification](https://go.microsoft.com/fwlink/p/?linkid=509797).
 
  
 
