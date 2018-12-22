@@ -1,6 +1,6 @@
 ---
 title: NetRingGetPostPackets function
-description: The NetRingGetPostPackets method gets a packet iterator for the post section of a net ring.
+description: The NetRingGetPostPackets method gets a packet iterator for the post section of a packet ring.
 ms.assetid: AFF6B47D-02C4-4038-97DE-99CC5A56DB3F
 keywords:
 - NetAdapterCx NetRingGetPostPackets, NetCx NetRingGetPostPackets
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetRingGetPostPackets** method gets a packet iterator for the post section of a net ring.
+The **NetRingGetPostPackets** method gets a packet iterator for the post section of a packet ring.
 
 ## Syntax
 
@@ -52,4 +52,4 @@ For an animation and code example of posting packets, see [Net rings and net rin
 
 [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)
 
-[**NetRingSetTxPostPacketIterator**](netringsettxpostpacketiterator.md)
+[**NetPacketIteratorSet**](netpacketiteratorset.md)
