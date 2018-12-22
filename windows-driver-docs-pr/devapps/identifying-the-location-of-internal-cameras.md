@@ -16,7 +16,7 @@ This topic provides info about supporting internal cameras on systems in Windows
 
 Systems with built-in cameras with mechanically fixed direction must report the physical location of the cameras. This physical location info indicates which direction the camera is facing, such as front or back, so that apps for using the camera in Windows 8.1 function correctly.
 
-The following two [Windows Hardware Certification Requirements](http://go.microsoft.com/fwlink/p/?LinkId=320504), which allow Windows to recognize a camera’s location, are required:
+The following two [Windows Hardware Certification Requirements](https://go.microsoft.com/fwlink/p/?LinkId=320504), which allow Windows to recognize a camera’s location, are required:
 
 -   **System.Client.PCContainer.PCAppearsAsSingleObject**. The camera must be grouped into the computer’s device container, which contains the device functions located physically inside the computer. A camera must be grouped into the computer’s device container to expose its physical location to apps, because devices external to the computer container aren’t assumed to have a mechanically fixed direction.
 
@@ -35,7 +35,7 @@ Windows needs to know the physical location of internal cameras for the followin
 
 In accordance with certification requirement **System.Client.PCContainer.PCAppearsAsSingleObject**, also known as SYSFUND-0200, the internal camera device nodes must be grouped under the PC device container. In other words, the internal camera should not be displayed in **Devices and Printers** and must be consolidated into the PC container.
 
-The way to implement this requirement depends on the bus type of the internal camera. If the device can expose information on the physical device location in ACPI tables, the correct grouping can be specified in the ACPI layer by including \_PLD information in the tables and modifying the UserVisible flag in the ACPI table, as described in [Multifunction Device Support and Device Container Groupings](http://go.microsoft.com/fwlink/p/?LinkId=320505). Otherwise, override the removable flag by using the DeviceOverrides registry key. For more info, see [DeviceOverrides Registry Key](http://go.microsoft.com/fwlink/p/?LinkId=320506).
+The way to implement this requirement depends on the bus type of the internal camera. If the device can expose information on the physical device location in ACPI tables, the correct grouping can be specified in the ACPI layer by including \_PLD information in the tables and modifying the UserVisible flag in the ACPI table, as described in [Multifunction Device Support and Device Container Groupings](https://go.microsoft.com/fwlink/p/?LinkId=320505). Otherwise, override the removable flag by using the DeviceOverrides registry key. For more info, see [DeviceOverrides Registry Key](https://go.microsoft.com/fwlink/p/?LinkId=320506).
 
 ### <span id="How_to_provide_physical_location_using__PLD_info_in_the_ACPI_table"></span><span id="how_to_provide_physical_location_using__pld_info_in_the_acpi_table"></span><span id="HOW_TO_PROVIDE_PHYSICAL_LOCATION_USING__PLD_INFO_IN_THE_ACPI_TABLE"></span>How to provide physical location using \_PLD info in the ACPI table
 

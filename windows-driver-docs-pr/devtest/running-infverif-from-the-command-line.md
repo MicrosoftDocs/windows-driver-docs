@@ -40,6 +40,7 @@ USAGE: InfVerif.exe [/v] [/u | /universal] [/k] [/info] [/stampinf] [/l <path>]
 /osver <TargetOsVersion>
         Process the INF for a specific target OS.
         Formatting is the same as a Models section, i.e. NTAMD64.6.0
+        Matches the TargetOSVersion you would use in a Models section name (see link below)
 
 /product <ias file>
         Validates all include/needs directives against
@@ -51,6 +52,8 @@ USAGE: InfVerif.exe [/v] [/u | /universal] [/k] [/info] [/stampinf] [/l <path>]
 
 Only one mode option may be passed at a time.
 ```
+
+For examples of *TargetOSVersion* formatting, see Remarks section of [INF Manufacturer Section](../install/inf-manufacturer-section.md).
 
 The verbose option adds a line to the output that specifies if the INF is valid or not.  Certain arguments are tagged as modes, where only one should be passed.
 

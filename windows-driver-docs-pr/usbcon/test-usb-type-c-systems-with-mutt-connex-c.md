@@ -20,8 +20,8 @@ ms.localizationpriority: medium
 
 **Official specifications and procedures**
 
--   [USB 3.1 and USB Type-C specifications]( http://go.microsoft.com/fwlink/p/?LinkId=620208)
--   [xHCI interoperability test procedures](http://go.microsoft.com/fwlink/p/?LinkId=623257)
+-   [USB 3.1 and USB Type-C specifications]( https://go.microsoft.com/fwlink/p/?LinkId=620208)
+-   [xHCI interoperability test procedures](https://go.microsoft.com/fwlink/p/?LinkId=623257)
 
 **Last Updated**
 
@@ -48,17 +48,17 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
 -   **Arduino Mega 2560 R3**
 
-    [Arduino Mega 2560 R3](http://go.microsoft.com/fwlink/p/?LinkId=733526) is used as the microcontroller for the test setup. This board can be purchased from the [Arduino store](http://go.microsoft.com/fwlink/p/?LinkId=733526).
+    [Arduino Mega 2560 R3](https://go.microsoft.com/fwlink/p/?LinkId=733526) is used as the microcontroller for the test setup. This board can be purchased from the [Arduino store](https://go.microsoft.com/fwlink/p/?LinkId=733526).
 
     ![arduino](images/arduino.png)
 
 -   **Power adapter for the microcontroller**.
 
-    For information about compatible adapters for the Arduino Mega 2560 R3 board, [see this site](http://go.microsoft.com/fwlink/p/?LinkID=733660).
+    For information about compatible adapters for the Arduino Mega 2560 R3 board, [see this site](https://go.microsoft.com/fwlink/p/?LinkID=733660).
 
 -   **USB Type-C ConnEx**
 
-    The shield has one male USB Type-C port (labeled **J1**) to which the SUT is connected. The shield also has four other USB ports (labeled **J2**, **J3**, **J4**, **J6**) to which devices can be attached that act as peripherals to the SUT. The shield monitors amperage and voltage being drawn from the SUT. You can buy this board from [MCCI](http://go.microsoft.com/fwlink/p/?LinkId=733488) or [JJG Technologies]( http://go.microsoft.com/fwlink/p/?linkid=618287).
+    The shield has one male USB Type-C port (labeled **J1**) to which the SUT is connected. The shield also has four other USB ports (labeled **J2**, **J3**, **J4**, **J6**) to which devices can be attached that act as peripherals to the SUT. The shield monitors amperage and voltage being drawn from the SUT. You can buy this board from [MCCI](https://go.microsoft.com/fwlink/p/?LinkId=733488) or [JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287).
 
     ![USB Type-C ConnEx](images/connexc-top.png)
 
@@ -72,7 +72,7 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
 -   **USB charger**
 
-    USB Type-C that supports USB Type-C current requirements and optionally [USB Power Delivery](http://go.microsoft.com/fwlink/p/?LinkID=623310). You also need a USB Micro-B charger for **J6**.
+    USB Type-C that supports USB Type-C current requirements and optionally [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310). You also need a USB Micro-B charger for **J6**.
 
 -   **Proxy controller**
 
@@ -102,7 +102,7 @@ Make sure you meet these requirements:
 
 -   Your SUT must have the version of the Windows operating system with which you want to test interoperability.
 -   The proxy controller must be running Windows 10.
--   [![download the mutt software package](images/download.png)](http://go.microsoft.com/fwlink/p/?LinkId=786621) and install the latest MUTT software package on the proxy controller.
+-   [![download the mutt software package](images/download.png)](https://go.microsoft.com/fwlink/p/?LinkId=786621) and install the latest MUTT software package on the proxy controller.
 -   The package is a suite of tools used to run tests with USB Type-C ConnEx .
 
     It includes utilities to update the firmware, switch between the peripheral ports, and send requests to simulate test cases. It also contains test driver packages that test the functionality of the buses, its controller, and devices connected to the bus.
@@ -381,7 +381,7 @@ After capture is complete, this data may be post processed into charts showing p
 ##  About test cases
 
 
-The USB Type-C interoperability test procedures are divided into two sections: functional testing (FT) and stress testing (ST). Each test section describes the test case and identifies the category that applies to the test. The product must be tested against the entire applicable category. Certain test cases contain links to relevant hints and tips for additional information. This section is focused on USB Type-C functionality and experience. A USB Type-C solution may contains other USB components such as a USB hub or USB controller. Detailed testing of USB hubs and controllers is covered in both the USB-IF's [xHCI interoperability test procedures](http://go.microsoft.com/fwlink/p/?LinkId=623257) and the Windows Hardware Certification Kit.
+The USB Type-C interoperability test procedures are divided into two sections: functional testing (FT) and stress testing (ST). Each test section describes the test case and identifies the category that applies to the test. The product must be tested against the entire applicable category. Certain test cases contain links to relevant hints and tips for additional information. This section is focused on USB Type-C functionality and experience. A USB Type-C solution may contains other USB components such as a USB hub or USB controller. Detailed testing of USB hubs and controllers is covered in both the USB-IF's [xHCI interoperability test procedures](https://go.microsoft.com/fwlink/p/?LinkId=623257) and the Windows Hardware Certification Kit.
 
 These test cases are based on the ConnExUtil commands and example scripts [Scripts for controlling the USB Type-C ConnEx board](#scripts). The test cases refer to the scripts. Customize the scripts as required for your test scenario.
 

@@ -24,7 +24,7 @@ When you write a UWP app that interacts with a USB device, the app can send cont
 ## Before you start...
 
 
--   This is the first topic in a series. Before you start this tutorial, you must have created a basic Visual Studio project that you can extend in this tutorial. Read [Getting started with UWP apps](http://go.microsoft.com/fwlink/p/?linkid=617681) for more info.
+-   This is the first topic in a series. Before you start this tutorial, you must have created a basic Visual Studio project that you can extend in this tutorial. Read [Getting started with UWP apps](https://go.microsoft.com/fwlink/p/?linkid=617681) for more info.
 -   Code examples are based on the CustomUsbDeviceAccess sample. You can download the complete sample from this code gallery page.
 -   The USB device used in tutorial is the SuperMUTT device.
 -   In order to use the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace to write a Windows app that interacts with a USB device, the device must have the Winusb.sys driver loaded as its function driver. Winusb.sys is provided by Microsoft and is included with Windows in the **\\Windows\\System32\\drivers** folder.
@@ -50,7 +50,7 @@ A kernel-model driver, during its initialization, register and exposes a GUID ca
 
 However, in the case of Winusb.sys, instead of the driver exposing the device interface GUID, it can be provided in one of two ways:
 
--   In the device's MS OS descriptors. The device manufacturer sets **DeviceInterfaceGUID** as a custom property in the extended properties descriptor in the device. For more details, see the "Extended Properties Descriptors" document in [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=617682).
+-   In the device's MS OS descriptors. The device manufacturer sets **DeviceInterfaceGUID** as a custom property in the extended properties descriptor in the device. For more details, see the "Extended Properties Descriptors" document in [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=617682).
 -   If you installed Winusb.sys manually through a custom INF, the INF registered a GUID in the INF. See [WinUSB (Winusb.sys) Installation](winusb-installation.md).
 
 If a device interface GUID is found for the device, your UWP app can find all devices that match that device interface GUID.

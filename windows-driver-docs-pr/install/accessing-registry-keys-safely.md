@@ -60,7 +60,7 @@ Follow these guidelines to safely access registry keys:
 
     For more information, see [Accessing the Registry by Class Installers and Co-Installers](accessing-the-registry-by-class-installers-and-co-installers.md).
 
-For more information about the access permissions of registry keys, see [Registry Key Security and Access Rights](http://go.microsoft.com/fwlink/p/?linkid=194542).
+For more information about the access permissions of registry keys, see [Registry Key Security and Access Rights](https://go.microsoft.com/fwlink/p/?linkid=194542).
 
  
 

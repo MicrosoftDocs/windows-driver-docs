@@ -38,7 +38,7 @@ At the most basic level, a *UWP device app* is a UWP app that's associated with 
 <td align="left"><strong>Driver</strong></td>
 <td align="left">All UWP device apps use drivers, indirectly, to access devices. For example, the Windows Runtime device protocol APIs, introduced in Windows 8.1, use in-box drivers to let your app communicate over USB, HID, and Bluetooth. For more info about the drivers used by these APIs, see <a href="step-1--create-a-uwp-device-app.md" data-raw-source="[Step 1: Create a UWP device app](step-1--create-a-uwp-device-app.md)">Step 1: Create a UWP device app</a>.
 <div class="alert">
-<strong>Important</strong>  Device access using custom drivers requires approval from Microsoft. For more info, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=306693" data-raw-source="[UWP device app Design Guide for Specialized Devices Internal to the PC](http://go.microsoft.com/fwlink/p/?LinkId=306693)">UWP device app Design Guide for Specialized Devices Internal to the PC</a>.
+<strong>Important</strong>  Device access using custom drivers requires approval from Microsoft. For more info, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=306693" data-raw-source="[UWP device app Design Guide for Specialized Devices Internal to the PC](https://go.microsoft.com/fwlink/p/?LinkId=306693)">UWP device app Design Guide for Specialized Devices Internal to the PC</a>.
 </div>
 <div>
  

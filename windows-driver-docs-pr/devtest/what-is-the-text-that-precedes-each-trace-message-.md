@@ -28,12 +28,3 @@ The prefix, with values replacing the variables, appears in the following line f
 You can add and remove data elements from the prefix by creating or editing the %TRACE\_FORMAT\_PREFIX% environment variable.
 
 For instructions and a list of the data elements that you can include in the value of %TRACE\_FORMAT\_PREFIX%, see [Trace Message Prefix](trace-message-prefix.md).
-
- 
-
- 
-
-
-
-
-

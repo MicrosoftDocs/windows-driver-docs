@@ -117,7 +117,7 @@ After obtaining a *.pfx* file from a CA, or creating a *.pfx* file from a *.pvk*
 
 *Excerpt from* [Importing an SPC into a Certificate Store](importing-an-spc-into-a-certificate-store.md):
 
-Starting with Windows Vista, an alternative way to import the *.pfx* file into the local Personal certificate store is with the [CertUtil](http://go.microsoft.com/fwlink/p/?linkid=168888) command-line utility. The following command-line example uses CertUtil to import the *abc.pfx* file into the Personal certificate store:
+Starting with Windows Vista, an alternative way to import the *.pfx* file into the local Personal certificate store is with the [CertUtil](https://go.microsoft.com/fwlink/p/?linkid=168888) command-line utility. The following command-line example uses CertUtil to import the *abc.pfx* file into the Personal certificate store:
 
 ```cpp
 certutil -user -p pfxpassword -importPFX abc.pfx

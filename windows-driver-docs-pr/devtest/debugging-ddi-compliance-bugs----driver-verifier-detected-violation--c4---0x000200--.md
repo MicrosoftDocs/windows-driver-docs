@@ -49,7 +49,7 @@ Arg4: 00000000, Reserved (unused).
 
 DV_VIOLATED_CONDITION:  ExAllocatePoolWithTagPriority should only be called at IRQL <= DISPATCH_LEVEL.
 
-DV_MSDN_LINK: http://go.microsoft.com/fwlink/p/?linkid=216021
+DV_MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=216021
 
 DV_RULE_INFO: 0x20004
 ```
@@ -89,7 +89,7 @@ executing at DISPATCH_LEVEL must specify a NonPagedXxx value
 for PoolType. A caller executing at IRQL <= APC_LEVEL can
 specify any POOL_TYPE value.
 
-MSDN_LINK: http://go.microsoft.com/fwlink/p/?linkid=216021
+MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=216021
 ```
 
 ### Use the !analyze-v command to identify the location of the violation in source code

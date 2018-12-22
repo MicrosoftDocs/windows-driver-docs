@@ -19,7 +19,7 @@ In addition to sending an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** to a device, the P
 
 The PnP manager calls any **EventCategoryTargetDeviceChange** notification callbacks after the **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request completes. Such callbacks were registered on the device by calling [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526). The PnP manager also calls any user-mode components that registered for such notification by calling **RegisterDeviceNotification**.
 
-An **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request must be handled first by the parent bus driver for a device and then by each higher driver in the device stack. A driver handles remove IRPs in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine.
+An **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request must be handled first by the parent bus driver for a device and then by each higher driver in the device stack. A driver handles remove IRPs in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
 A driver handles an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request with a procedure such as the following in its *DispatchPnP* routine:
 

@@ -303,7 +303,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00010000</p>
 </td>
 <td>
-<p>Indicates that a packet matches authenticated firewall policies. Only connections matching the &quot;Allow the connection if it is secure&quot; firewall rule option will have this flag set. For more information, see <a href="http://technet.microsoft.com/library/cc753463">How to Enable Authenticated Firewall Bypass</a>.</p>
+<p>Indicates that a packet matches authenticated firewall policies. Only connections matching the &quot;Allow the connection if it is secure&quot; firewall rule option will have this flag set. For more information, see <a href="https://technet.microsoft.com/library/cc753463">How to Enable Authenticated Firewall Bypass</a>.</p>
 <p>This flag is also applicable at the following filtering layers in Windows Server 2008, Windows Vista with SP1, and later versions of Windows:<dl>
 <dd>FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4</dd>
 <dd>FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6</dd>

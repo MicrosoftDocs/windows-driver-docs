@@ -1,17 +1,18 @@
 ---
-title: Determining Whether a VidPN is Supported on a Display Adapter
-description: Determining Whether a VidPN is Supported on a Display Adapter
+title: Determining VidPN support on a Display Adapter
+description: This topic describes how the display miniport driver determines whether a particular video present network (VidPN) is supported on a display adapter.
 ms.assetid: ebf001fb-e445-4534-8e89-60e1b06b2d6e
 keywords:
 - video present networks WDK display , determining if supported
 - VidPN WDK display , determining if supported
 - functional VidPN WDK display
 - determining VidPN supported WDK display
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Determining Whether a VidPN is Supported on a Display Adapter
+# Determining VidPN support on a Display Adapter
 
 
 This topic describes how the display miniport driver determines whether a particular video present network (VidPN) is supported on a display adapter. Before reading this material, you should be familiar with the material in the following topics:

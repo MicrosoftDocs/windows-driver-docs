@@ -19,7 +19,7 @@ You can use the same method to submit packages for preview or release.
 
 **To submit a device metadata package**
 
-1.  Sign the metadata package with the [SignTool tool](http://go.microsoft.com/fwlink/p/?LinkId=238330).
+1.  Sign the metadata package with the [SignTool tool](https://go.microsoft.com/fwlink/p/?LinkId=238330).
 
 2.  Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account.
 

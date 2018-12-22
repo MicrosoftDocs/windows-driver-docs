@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 Emergency Management Services (EMS) technology allows you to control the selected components of servers remotely, even when a server is not connected to the network or to other standard remote-administration tools. EMS is supported on all versions of Windows Server 2003 operating systems for x86-, x64-, and Itanium-based computers.
 
-For more information about EMS, search for Emergency Management Services on the [Microsoft TechNet](http://go.microsoft.com/fwlink/p/?linkid=10111) website.
+For more information about EMS, search for Emergency Management Services on the [Microsoft TechNet](https://go.microsoft.com/fwlink/p/?linkid=10111) website.
 
 **Note**   This topic explains how to enable EMS on computers running Windows Server 2003. The boot parameters described in this section are not supported on Windows Vista or later versions of Windows.
 When a boot entry is configured for EMS on a computer with BIOS firmware, the boot loader appends a bracketed phrase, \[ems enabled\], to the friendly name that appears on the boot menu. However, the boot loader omits the bracketed phrase from the boot menu when the friendly name and the bracketed phrase together exceed 70 characters. To restore the bracketed phrase, shorten the friendly name.

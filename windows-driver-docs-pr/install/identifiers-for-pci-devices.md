@@ -60,6 +60,8 @@ The following is the hardware ID for the display adapter in the previous example
 
     PCI\\VEN_102C&DEV_00E0&SUBSYS_00000000
 
+**Note** In Windows 10, some IDs that previously appeared in the Hardware IDs list now appear in the list of Compatible IDs.
+
 ## Reporting compatible IDs
 
 The following is a list of the device identification string formats that the PCI bus driver uses to report compatible IDs. The variety of these formats provides substantial flexibility to specify compatible IDs. The PCI bus driver constructs a list of compatible IDs based on the information that the driver can obtain from the device. When the PnP manager queries the driver for the compatible IDs of a device, the PCI bus driver returns a list of compatible IDs in order of decreasing compatibility.

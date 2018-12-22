@@ -16,7 +16,7 @@ The driver sample in this directory provides a starting point for writing a cust
 
 | Sample Name                     | Solution                                                   | Description                                                                                                                                                                       |
 |---------------------------------|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Simulated Battery Driver Sample | [SimBatt](http://go.microsoft.com/fwlink/p/?LinkId=620188) | Demonstrates a KMDF-based implementation of Windows battery driver interfaces. Use this sample as a starting point to implement a battery miniport driver specific to your needs. |
+| Simulated Battery Driver Sample | [SimBatt](https://go.microsoft.com/fwlink/p/?LinkId=620188) | Demonstrates a KMDF-based implementation of Windows battery driver interfaces. Use this sample as a starting point to implement a battery miniport driver specific to your needs. |
 
  
 

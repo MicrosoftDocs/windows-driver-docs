@@ -149,7 +149,7 @@ The following table describes the firmware update display capsule payload.
 <td>Image</td>
 <td>N/A</td>
 <td>44</td>
-<td>A byte-array that contains the embedded bitmap to display during the firmware udpate process. The bitmap can be either a 24-bit bitmap with the pixel format 0xRRGGBB or a 32-bit bitmap with the pixel format 0xrrRRGGBB, where ‘rr’ is reserved.</td>
+<td>A byte-array that contains the embedded bitmap to display during the firmware update process. The bitmap can be either a 24-bit bitmap with the pixel format 0xRRGGBB or a 32-bit bitmap with the pixel format 0xrrRRGGBB, where ‘rr’ is reserved.</td>
 </tr>
 </tbody>
 </table>

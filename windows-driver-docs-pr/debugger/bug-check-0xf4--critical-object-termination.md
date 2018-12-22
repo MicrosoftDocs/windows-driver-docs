@@ -64,7 +64,10 @@ Cause
 Several processes and threads are necessary for the operation of the system. When they are terminated for any reason, the system can no longer function.
 
  
+Resolution
+----------
 
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
  
 
 

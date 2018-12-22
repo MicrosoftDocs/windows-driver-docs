@@ -49,11 +49,11 @@ Use the Submission tool in Microsoft Visual Studio to create a submission packag
 
 12. When you're ready to submit your package, click **Launch Windows Dev Center - Hardware Dashboard**.
 
-For more information about how to submit your package, see [Submit a Device Metadata Package](http://go.microsoft.com/fwlink/p/?linkid=226302).
+For more information about how to submit your package, see [Submit a Device Metadata Package](https://go.microsoft.com/fwlink/p/?linkid=226302).
 
-For more information about the devicemanifest file, see [Submit a UWP app for Mobile Broadband](http://go.microsoft.com/fwlink/p/?linkid=248426).
+For more information about the devicemanifest file, see [Submit a UWP app for Mobile Broadband](https://go.microsoft.com/fwlink/p/?linkid=248426).
 
-For more information about the bulkmetadata file, see [Submit a Bulk Metadata Package](http://go.microsoft.com/fwlink/p/?linkid=248427).
+For more information about the bulkmetadata file, see [Submit a Bulk Metadata Package](https://go.microsoft.com/fwlink/p/?linkid=248427).
 
  
 

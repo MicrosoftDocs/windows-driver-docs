@@ -20,8 +20,8 @@ ms.localizationpriority: medium
 
 **Official specifications and procedures**
 
--   [USB 3.1 and USB Type-C specifications]( http://go.microsoft.com/fwlink/p/?LinkId=620208)
--   [xHCI interoperability test procedures](http://go.microsoft.com/fwlink/p/?LinkId=623257)
+-   [USB 3.1 and USB Type-C specifications]( https://go.microsoft.com/fwlink/p/?LinkId=620208)
+-   [xHCI interoperability test procedures](https://go.microsoft.com/fwlink/p/?LinkId=623257)
 
 **Last Updated**
 
@@ -37,7 +37,7 @@ The test product can belong to one or more of the following categories:
 -   **Dock**: Any USB Type-C device that exposes more than one port.
 -   **Device**: Any USB device with a Type-C port that can be attached to a system or dock. This category includes traditional USB devices as well as devices that support the accessory and alternate modes as defined in the USB Type-C specification.
 
-The USB Type-C interoperability test procedures are divided into two sections: functional testing (FT) and stress testing (ST). Each test section describes the test case and identifies the category that applies to the test. The product must be tested against the entire applicable category. Certain test cases contain links to relevant hints and tips for additional information. This document is focused on USB Type-C functionality and experience. A USB Type-C solution may contains other USB components such as a USB hub or USB controller. Detailed testing of USB hubs and controllers is covered in both the USB-IF's [xHCI interoperability test procedures](http://go.microsoft.com/fwlink/p/?LinkId=623257) and the Windows Hardware Certification Kit.
+The USB Type-C interoperability test procedures are divided into two sections: functional testing (FT) and stress testing (ST). Each test section describes the test case and identifies the category that applies to the test. The product must be tested against the entire applicable category. Certain test cases contain links to relevant hints and tips for additional information. This document is focused on USB Type-C functionality and experience. A USB Type-C solution may contains other USB components such as a USB hub or USB controller. Detailed testing of USB hubs and controllers is covered in both the USB-IF's [xHCI interoperability test procedures](https://go.microsoft.com/fwlink/p/?LinkId=623257) and the Windows Hardware Certification Kit.
 
 <a href="" id="device-enumeration"></a>[Device Enumeration](#ft1)  
 Confirms that core aspects of device enumeration are functional.
@@ -169,9 +169,9 @@ Applies to: Dock, device
 
 Additional information of selective suspend can be found from the following sources:
 
--   [Enabling selective suspend for HID](http://go.microsoft.com/fwlink/p/?LinkId=623307)
+-   [Enabling selective suspend for HID](https://go.microsoft.com/fwlink/p/?LinkId=623307)
 -   [Selective suspend for HID over USB devices](https://msdn.microsoft.com/library/windows/hardware/jj131716)
--   [Demystifying selective suspend]( http://go.microsoft.com/fwlink/p/?LinkId=623308)
+-   [Demystifying selective suspend]( https://go.microsoft.com/fwlink/p/?LinkId=623308)
 
 ## <a href="" id="ft5"></a>FT Case 5: Dock Identification
 
@@ -182,7 +182,7 @@ Applies to: Dock
 2.  Connect the USB Type-C dock to the system.
 3.  Ensure dock state is properly identified.
 
-**Note**  Additional information on dock identification can be found in the [2015 WinHEC slide presentation](http://go.microsoft.com/fwlink/p/?LinkId=623309) (approximately slide 26 in section entitled: Identifying device as a dock).
+**Note**  Additional information on dock identification can be found in the [2015 WinHEC slide presentation](https://go.microsoft.com/fwlink/p/?LinkId=623309) (approximately slide 26 in section entitled: Identifying device as a dock).
 
  
 
@@ -211,7 +211,7 @@ Applies to: System, dock, device that support USB power delivery protocol
 
 **Confirm charging with USB Type-C**
 
-1.  Perform [USB power deliver testing]( http://go.microsoft.com/fwlink/p/?LinkId=623310) as defined by USB.org.
+1.  Perform [USB power deliver testing]( https://go.microsoft.com/fwlink/p/?LinkId=623310) as defined by USB.org.
 2.  Restart the test system and log on to Windows.
 3.  For a system, perform these steps:
     1.  Connect two systems together with a USB Type-C cable. Confirm that only one system is receiving current.
@@ -248,7 +248,7 @@ Applies to: System, dock, device
 
 1.  Restart the test system.
 2.  Plug a USB SuperMUTT device to exposed USB Type-C port.
-3.  Run the [DF - Sleep with IO During (Certification)]( http://go.microsoft.com/fwlink/p/?LinkId=623311) test:
+3.  Run the [DF - Sleep with IO During (Certification)]( https://go.microsoft.com/fwlink/p/?LinkId=623311) test:
 4.  Repeat step 3 with a USB Type-C test device.
 
 ## <a href="" id="st2"></a>ST Case 2: Transfer Events
@@ -258,7 +258,7 @@ Applies to: System, dock, device
 
 1.  Restart the test system.
 2.  Plug a USB SuperMUTT device to exposed USB Type-C port.
-3.  Run the [DF - Reboot Restart with IO Before and After](http://go.microsoft.com/fwlink/p/?LinkId=623312) test.
+3.  Run the [DF - Reboot Restart with IO Before and After](https://go.microsoft.com/fwlink/p/?LinkId=623312) test.
 4.  Repeat step 3 with a USB Type-C test device.
 
 ## <a href="" id="st3"></a>ST Case 3: Plug and Play
@@ -268,7 +268,7 @@ Applies to: System, dock, device
 
 1.  Restart the test system.
 2.  Plug a USB SuperMUTT device to exposed USB Type-C port.
-3.  Run the [DF - Sleep and PnP with IO Before and After]( http://go.microsoft.com/fwlink/p/?LinkId=623313) test.
+3.  Run the [DF - Sleep and PnP with IO Before and After]( https://go.microsoft.com/fwlink/p/?LinkId=623313) test.
 4.  Repeat step 3 with a USB Type-C test device.
 
 ## <a href="" id="st4"></a>ST Case 4: Device Topology
@@ -282,7 +282,7 @@ Applies to: System, dock, device
     ![usb type-c a/v adapter configuration](images/typec5.png)
 
 3.  If the system under test has additional USB Type-C ports, repeat step 2.
-4.  Run the [DF - Sleep with IO During]( http://go.microsoft.com/fwlink/p/?LinkId=623314) test.
+4.  Run the [DF - Sleep with IO During]( https://go.microsoft.com/fwlink/p/?LinkId=623314) test.
 
 **Note**  During the test, validate there is no glitching from devices connected via the USB Type-C A/V dongle such as video distortion or audio drop off.
 
@@ -417,12 +417,12 @@ To troubleshoot a device that is not able to wake up the system:
 ## Troubleshooting missing power states
 
 
-If your test system is unable to reach a Sleep or Hibernate state, make sure that all devices in the system have the latest device drivers installed. One of the most common causes is an unsupported video card in the system. For more information about resolving system power state issues, see [Why isn't Sleep available?]( http://go.microsoft.com/fwlink/p/?LinkId=623315).
+If your test system is unable to reach a Sleep or Hibernate state, make sure that all devices in the system have the latest device drivers installed. One of the most common causes is an unsupported video card in the system. For more information about resolving system power state issues, see [Why isn't Sleep available?]( https://go.microsoft.com/fwlink/p/?LinkId=623315).
 
 ## Using ETW to log issues
 
 
-To enable ETW for USB 2.0 ports, see [ETW in the Windows 7 USB core stack](http://go.microsoft.com/fwlink/p/?LinkId=623316).
+To enable ETW for USB 2.0 ports, see [ETW in the Windows 7 USB core stack](https://go.microsoft.com/fwlink/p/?LinkId=623316).
 
 To enable USB 3.0 logging, perform the following commands instead (or see [How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md)):
 

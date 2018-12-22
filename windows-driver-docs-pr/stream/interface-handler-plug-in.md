@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 You can write an interface handler plug-in to provide programmatic user-mode access to a driver-specific property set that is exposed by a KS minidriver. First, register your object as described in [Registering KS Proxy Plug-ins](registering-ks-proxy-plug-ins.md).
 
-Your interface plug-in class could derive from [CUnknown](http://go.microsoft.com/fwlink/p/?linkid=106451):
+Your interface plug-in class could derive from [CUnknown](https://go.microsoft.com/fwlink/p/?linkid=106451):
 
 ```cpp
 class CMyPluginInterface : public CUnknown 

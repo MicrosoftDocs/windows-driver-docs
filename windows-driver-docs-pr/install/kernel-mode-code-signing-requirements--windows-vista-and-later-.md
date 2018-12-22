@@ -40,7 +40,7 @@ The kernel-mode code signing policy requires that a kernel-mode driver be signed
 <a href="" id="32-bit-versions-of-windows"></a>**32-bit versions of Windows**  
 Windows Vista and later versions of Windows enforce the kernel-mode driver signing policy only for the following drivers:
 
--   Drivers that stream protected media. For more information about these requirements, see [Code-signing for Protected Media Components (Windows Vista and Later)](http://go.microsoft.com/fwlink/p/?linkid=69258)
+-   Drivers that stream protected media. For more information about these requirements, see [Code-signing for Protected Media Components (Windows Vista and Later)](https://go.microsoft.com/fwlink/p/?linkid=69258)
 
 -   Kernel-mode [*boot-start drivers*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver).
 
@@ -56,7 +56,7 @@ The kernel-mode code signing policy requires that a kernel-mode driver be [test-
 <a href="" id="32-bit-versions-of-windows"></a>**32-bit versions of Windows**  
 Windows Vista and later versions of Windows enforce the kernel-mode driver signing policy only for the following drivers:
 
--   Drivers that stream protected media. For more information about these requirements, see [Code-signing for Protected Media Components (Windows Vista and Later)](http://go.microsoft.com/fwlink/p/?linkid=69258)
+-   Drivers that stream protected media. For more information about these requirements, see [Code-signing for Protected Media Components (Windows Vista and Later)](https://go.microsoft.com/fwlink/p/?linkid=69258)
 
 -   Kernel-mode [*boot-start drivers*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver).
 

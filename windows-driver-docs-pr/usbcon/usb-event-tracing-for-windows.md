@@ -90,7 +90,7 @@ Windows 8 provides a USB driver stack to support USB 3.0 devices. The Microsoft
 </tr>
 <tr class="even">
 <td><p><a href="how-to-capture-a-usb-event-trace.md" data-raw-source="[How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md)">How to capture a USB event trace with Logman</a></p></td>
-<td><p>This topic provides information about using the <a href="http://go.microsoft.com/fwlink/p/?linkid=617153" data-raw-source="[Logman](http://go.microsoft.com/fwlink/p/?linkid=617153)">Logman</a> tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.</p></td>
+<td><p>This topic provides information about using the <a href="https://go.microsoft.com/fwlink/p/?linkid=617153" data-raw-source="[Logman](https://go.microsoft.com/fwlink/p/?linkid=617153)">Logman</a> tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="using-usb-etw.md" data-raw-source="[Using activity ID GUIDs in USB ETW traces](using-usb-etw.md)">Using activity ID GUIDs in USB ETW traces</a></p></td>

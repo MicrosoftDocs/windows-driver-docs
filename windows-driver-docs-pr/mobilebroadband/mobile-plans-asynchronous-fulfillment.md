@@ -25,9 +25,9 @@ The following diagram shows the high level flow for how the *Mobile Plans* progr
 
 ![Mobile Plans delayed connectivity sequence diagram](images/dynamo_async_connectivity_flow.png)
 
-After the user successfully completes a purchase that requires a profile download from the mobile operator's MO Direct portal, the portal informs the Mobile Plans application that it should trigger the delayed connectivity flow using the `DataMart.notifyPurchaseWithProfileDownload` API. 
+After the user successfully completes a purchase that requires a profile download from the mobile operator's MO Direct portal, the portal informs the Mobile Plans application that it should trigger the delayed connectivity flow using the `MobilePlans.notifyPurchaseWithProfileDownload` API. 
 
-### DataMart.notifyPurchaseWithProfileDownload
+### MobilePlans.notifyPurchaseWithProfileDownload
 
 | Parameter name | Type | Description |
 | --- | --- | -- |
@@ -39,13 +39,13 @@ The following Javascript function shows an example of the API to inform the appl
 
  ```Javascript
 function finishPurchaseWithDownload() {
-        var metadata = DataMart.createPurchaseMetaData();
-        metadata.userAccount = DataMartUserAccount.new;
-        metadata.purchaseInstrument = DataMartPurchaseInstrument.new;
-        metadata.moDirectStatus = DataMartMoDirectStatus.complete;
-        metadata.line = DataMartLineType.new;
+        var metadata = MobilePlans.createPurchaseMetaData();
+        metadata.userAccount = MobilePlansUserAccount.new;
+        metadata.purchaseInstrument = MobilePlansPurchaseInstrument.new;
+        metadata.moDirectStatus = MobilePlansMoDirectStatus.complete;
+        metadata.line = MobilePlansLineType.new;
         metadata.planName = "2GB Monthly";
-        DataMart.notifyPurchaseWithProfileDownload(metadata, "1$smdp.address$", 15);
+        MobilePlans.notifyPurchaseWithProfileDownload(metadata, "1$smdp.address$", 15);
 }
 ```
 
@@ -64,9 +64,9 @@ The following diagram shows the high level flow for how the *Mobile Plans* progr
 
 ![Mobile Plans delayed profile download sequence diagram](images/dynamo_async_profile_flow.png)
 
-After the user successfully completes a purchase that requires a profile download from the mobile operator's MO Direct portal, the portal informs the Mobile Plans application that it should trigger the delayed profile download flow using the `DataMart.notifyPurchaseDelayedProfile` API. 
+After the user successfully completes a purchase that requires a profile download from the mobile operator's MO Direct portal, the portal informs the Mobile Plans application that it should trigger the delayed profile download flow using the `MobilePlans.notifyPurchaseDelayedProfile` API. 
 
-### DataMart.notifyPurchaseDelayedProfile
+### MobilePlans.notifyPurchaseDelayedProfile
 
 | Parameter name | Type | Description |
 | --- | --- | -- |
@@ -77,13 +77,13 @@ The following Javascript function shows an example of the API to inform the appl
 
  ```Javascript
 function finishPurchaseWithSMDS() {
-        var metadata = DataMart.createPurchaseMetaData();
-        metadata.userAccount = DataMartUserAccount.new;
-        metadata.purchaseInstrument = DataMartPurchaseInstrument.new;
-        metadata.moDirectStatus = DataMartMoDirectStatus.complete;
-        metadata.line = DataMartLineType.new;
+        var metadata = MobilePlans.createPurchaseMetaData();
+        metadata.userAccount = MobilePlansUserAccount.new;
+        metadata.purchaseInstrument = MobilePlansPurchaseInstrument.new;
+        metadata.moDirectStatus = MobilePlansMoDirectStatus.complete;
+        metadata.line = MobilePlansLineType.new;
         metadata.planName = "2GB Monthly";
-        DataMart.notifyPurchaseDelayedProfile(metadata, 15);
+        MobilePlans.notifyPurchaseDelayedProfile(metadata, 15);
 }
 ```
 
@@ -93,9 +93,9 @@ The following diagram shows the high level flow for how the *Mobile Plans* progr
 
 ![Mobile Plans inline profile download sequence diagram](images/dynamo_inline_profile_flow.png)
 
-When the MO Direct portal is ready for a profile download, install, and activation to occur, the portal should call `DataMartInlineProfile.notifyInlineProfileDownload`.
+When the MO Direct portal is ready for a profile download, install, and activation to occur, the portal should call `MobilePlansInlineProfile.notifyInlineProfileDownload`.
 
-### DataMartInlineProfile.notifyInlineProfileDownload
+### MobilePlansInlineProfile.notifyInlineProfileDownload
 
 | Parameter name | Type | Description |
 | --- | --- | -- |
@@ -105,22 +105,22 @@ When the MO Direct portal is ready for a profile download, install, and activati
 The following Javascript function shows an example of the API to inform the application that an inline profile download should start.
 
 ```Javascript
-function NotifyDataMart() { 
-    var purchaseMetaData = DataMart.createPurchaseMetaData(); 
-    purchaseMetaData.userAccount = DataMartUserAccount.new; 
-    purchaseMetaData.purchaseInstrument = DataMartPurchaseInstrument.new; 
-    purchaseMetaData.lineType = DataMartLineType.new; 
-    purchaseMetaData.modirectStatus = DataMartMoDirectStatus.complete; 
+function NotifyMobilePlans() { 
+    var purchaseMetaData = MobilePlans.createPurchaseMetaData(); 
+    purchaseMetaData.userAccount = MobilePlansUserAccount.new; 
+    purchaseMetaData.purchaseInstrument = MobilePlansPurchaseInstrument.new; 
+    purchaseMetaData.lineType = MobilePlansLineType.new; 
+    purchaseMetaData.modirectStatus = MobilePlansMoDirectStatus.complete; 
     purchaseMetaData.planName = "My Plan"; 
-    DataMartInlineProfile.registrationChangedScript = onRegistrationChanged;
-    DataMartInlineProfile.profileActivationCompleteScript = onActivationComplete;
-    DataMartInlineProfile.notifyInlineProfileDownload(purchaseMetaData , "1$smdp.address$"); 
+    MobilePlansInlineProfileDownload.registrationChangedScript = "onRegistrationChanged";
+    MobilePlansInlineProfileDownload.profileActivationCompleteScript = "onActivationComplete";
+    MobilePlansInlineProfileDownload.notifyInlineProfileDownload(purchaseMetaData , "1$smdp.address$"); 
 }
 ```
 
 ### Listening for network registration changes
 
-To listen for network registration changes, the `DataMartInlineProfile.registrationChangedScript` must be set to the name of a Javascript function that takes a string for the `registrationArgs`.
+To listen for network registration changes, the `MobilePlansInlineProfileDownload.registrationChangedScript` must be set to a string that is the name of a Javascript function that takes a string for the `registrationArgs`.
 
 The registration args are a string that represents a JSON object.
 
@@ -128,10 +128,10 @@ The registration args are a string that represents a JSON object.
 
 | Property name | Type | Description |
 | --- | --- | -- |
-| networkRegistrationState | String | A string representing the current network registration state. The values of this property can be seen in `DataMartNetworkRegistrationState`. |
+| networkRegistrationState | String | A string representing the current network registration state. The values of this property can be seen in `MobilePlansNetworkRegistrationState`. |
 | iccid | String | The ICCID for which the network registration state has changed. |
 
-#### DataMartNetworkRegistrationState
+#### MobilePlansNetworkRegistrationState
 
 | Property name | Type | Description |
 | --- | --- | -- |
@@ -148,9 +148,9 @@ The following Javascript example shows how to implement a listener for network r
 ```Javascript
 function onRegistrationChanged(registrationArgs) {
     var registrationObj = JSON.parse(registrationArgs);
-    if(registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.home ||
-       registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.roaming ||
-       registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.partner)
+    if(registrationObj.networkRegistrationState == MobilePlansNetworkRegistrationState.home ||
+       registrationObj.networkRegistrationState == MobilePlansNetworkRegistrationState.roaming ||
+       registrationObj.networkRegistrationState == MobilePlansNetworkRegistrationState.partner)
     {
         Log('Registration Successful!');
     }
@@ -159,7 +159,7 @@ function onRegistrationChanged(registrationArgs) {
 
 ### Listening for profile activation
 
-To listen for profile activation events, the `DataMartInlineProfile.profileActivationCompleteScript` must be set to the name of a Javascript function that takes a string for the `activationArgs`
+To listen for profile activation events, the `MobilePlansInlineProfileDownload.profileActivationCompleteScript` must be set to a string that is the name of a Javascript function that takes a string for the `activationArgs`
 
 The `activationArgs` is a string that represents a JSON object.
 
@@ -167,10 +167,10 @@ The `activationArgs` is a string that represents a JSON object.
 
 | Property name | Type | Description |
 | --- | --- | -- |
-| activationResult | String | The result of the activation. The values of this property can be seen in `DataMartActivationErrors`. |
+| activationResult | String | The result of the activation. The values of this property can be seen in `MobilePlansActivationError`. |
 | iccid | String | The ICCID of the profile that was activated. |
 
-#### DataMartActivationErrors
+#### MobilePlansActivationError
 
 | Property name | Type | Description |
 | --- | --- | -- |
@@ -211,16 +211,16 @@ The following Javascript example shows how to implement a listener for the profi
 ```Javascript
 function onActivationComplete(activationArgs) {
     var activationObj = JSON.parse(activationArgs);
-    if(activationObj.activationResult == DataMartActivationErrors.success)
+    if(activationObj.activationResult == MobilePlansActivationError.success)
         Log('Activation Success');
 }
 ```
 
 ## Adding balance
 
-When a user completes a purchase in the MO Direct portal by adding more data to their account (no profile download needed because the user used the current profile on the eSIM), the MO portal should invoke the `DataMart.notifyBalanceAddition` API return control back to the Mobile Plans app.
+When a user completes a purchase in the MO Direct portal by adding more data to their account (no profile download needed because the user used the current profile on the eSIM), the MO portal should invoke the `MobilePlans.notifyBalanceAddition` API return control back to the Mobile Plans app.
 
-### DataMart.notifyBalanceAddition
+### MobilePlans.notifyBalanceAddition
 
 | Parameter name | Type | Description |
 | --- | --- | -- |
@@ -231,21 +231,21 @@ The following Javascript function shows an example of the API to inform the appl
 
  ```Javascript
 function finishPurchaseWithBalanceAddition() {
-        var metadata = DataMart.createPurchaseMetaData();
-        metadata.userAccount = DataMartUserAccount.new;
-        metadata.purchaseInstrument = DataMartPurchaseInstrument.none;
-        metadata.moDirectStatus = DataMartMoDirectStatus.complete;
-        metadata.line = DataMartLineType.new;
+        var metadata = MobilePlans.createPurchaseMetaData();
+        metadata.userAccount = MobilePlansUserAccount.new;
+        metadata.purchaseInstrument = MobilePlansPurchaseInstrument.none;
+        metadata.moDirectStatus = MobilePlansMoDirectStatus.complete;
+        metadata.line = MobilePlansLineType.new;
         metadata.planName = "2GB Monthly";
-        DataMart.notifyBalanceAddition(metadata, "89000000000000000000");
+        MobilePlans.notifyBalanceAddition(metadata, "89000000000000000000");
     }
 ```
 
 ## Canceling purchase flow
 
-If a user cancels the purchase flow at the MO portal, then the portal must invoke the `DataMart.notifyCancelledPurchase` API to return control back to the Mobile Plans app.
+If a user cancels the purchase flow at the MO portal, then the portal must invoke the `MobilePlans.notifyCancelledPurchase` API to return control back to the Mobile Plans app.
 
-### DataMart.notifyCancelledPurchase
+### MobilePlans.notifyCancelledPurchase
 
 | Parameter name | Type | Description |
 | --- | --- | -- |
@@ -255,13 +255,13 @@ The following Javascript function shows an example of the API to inform the appl
 
  ```Javascript
 function finishPurchaseWithCancellation() {
-        var metadata = DataMart.createPurchaseMetaData();
-        metadata.userAccount = DataMartUserAccount.new;
-        metadata.purchaseInstrument = DataMartPurchaseInstrument.new;
-        metadata.moDirectStatus = DataMartMoDirectStatus.cancelled;
-        metadata.line = DataMartLineType.bailed;
+        var metadata = MobilePlans.createPurchaseMetaData();
+        metadata.userAccount = MobilePlansUserAccount.new;
+        metadata.purchaseInstrument = MobilePlansPurchaseInstrument.new;
+        metadata.moDirectStatus = MobilePlansMoDirectStatus.cancelled;
+        metadata.line = MobilePlansLineType.bailed;
         metadata.planName = "";
-        DataMart.notifyCancelledPurchase(metadata);
+        MobilePlans.notifyCancelledPurchase(metadata);
     }
 ```
 
@@ -276,15 +276,15 @@ function finishPurchaseWithCancellation() {
 
 2. Which API should be used to transfer control back to *Mobile Plans* when connectivity is available immediately?  
 
-    The `DataMart.notifyPurchaseDelayedProfile` API is supported for this scenario going forward. In this specific case, the *networkRegistrationInterval* parameter should be set to **0**.  
+    The `MobilePlans.notifyPurchaseDelayedProfile` API is supported for this scenario going forward. In this specific case, the *networkRegistrationInterval* parameter should be set to **0**.  
 
-    If you have implemented the `DataMart.notifyPurchaseResult` API as specified in the integration guide, it is still supported.  
+    If you have implemented the `MobilePlans.notifyPurchaseResult` API as specified in the integration guide, it is still supported.  
 
 3. Is ICCID information still required for the eSIM activation callback?  
 
-    ICCID information is only needed for the adding balance scenario, when the `DataMart.notifyBalanceAddition` API callback is used.  
+    ICCID information is only needed for the adding balance scenario, when the `MobilePlans.notifyBalanceAddition` API callback is used.  
 
-    If you have implemented the `DataMart.notifyPurchaseResult` API as specified in the integration guide, it is still supported.  
+    If you have implemented the `MobilePlans.notifyPurchaseResult` API as specified in the integration guide, it is still supported.  
 
 4. What if I still need help?  
 

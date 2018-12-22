@@ -5,9 +5,7 @@ ms.date: 05/15/2018
 ms.localizationpriority: medium
 ---
 
-
 # Target a system using CHID targeting
-
 
 Computer Hardware IDs (CHID)s are created by the OEM/ODM running either a Windows Developer Kit(WDK) tool (ComputerHardwareIDs.exe) or the Audit tool available to OEMs through the [Microsoft OEM download site](https://www.microsoftoem.com) (login required).
 
@@ -19,13 +17,8 @@ Microsoft is now requiring that a Firmware Update Package include Computer Hardw
 
 ## Related resources
 
-[Windows Hardware Dev Center dashboard](https://docs.microsoft.com/windows-hardware/drivers/dashboard)
+[Partner Center](https://docs.microsoft.com/windows-hardware/drivers/dashboard)
 
 [Specifying Hardware IDs for a Computer](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-hardware-ids-for-a-computer)
 
 [Download Driver Publishing Workflow for Windows 10](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)
-
-
-
-
-

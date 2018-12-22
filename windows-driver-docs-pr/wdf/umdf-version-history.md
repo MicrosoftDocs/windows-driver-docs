@@ -194,7 +194,7 @@ Version 1.11 adds the following capabilities to UMDF-based drivers:
 
 -   Enhanced support for [Supporting Idle Power-Down in UMDF-based Drivers](supporting-idle-power-down-in-umdf-drivers.md). The framework can now put the device in the D3cold power state when the idle timeout period expires. The framework can also cause the device to return to its working (D0) state when the system returns to its working (S0) state.
 
--   The following samples are new in UMDF 1.11: [WudfVhidmini](http://go.microsoft.com/fwlink/p/?linkid=256226), [NetNfpProvider](http://go.microsoft.com/fwlink/p/?linkid=256147).
+-   The following samples are new in UMDF 1.11: [WudfVhidmini](https://go.microsoft.com/fwlink/p/?linkid=256226), [NetNfpProvider](https://go.microsoft.com/fwlink/p/?linkid=256147).
 
 ## UMDF Version 1.9
 

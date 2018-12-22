@@ -14,7 +14,6 @@ ms.localizationpriority: medium
 
 # Tracelog Enumguid Display
 
-
 When you submit a **tracelog -enumguid** command, Tracelog displays a list of the trace providers that are running and have [registered](registered-provider.md) with Event Tracing for Windows (ETW). The display is very useful, but it is often misinterpreted.
 
 ### <span id="which_providers_appear_in_the_display_"></span><span id="WHICH_PROVIDERS_APPEAR_IN_THE_DISPLAY_"></span>Which Providers Appear in the Display?
@@ -78,15 +77,14 @@ The table in the Tracelog enumguid display includes the following columns.
 </tbody>
 </table>
 
- 
-
+ 
 If a provider is registered but not enabled, then it appears in the enumguid display but its entry in the **Enabled** column is **FALSE**.
 
 If a provider is enabled but is not currently running and is, therefore, not registered, then it does not appear in the enumguid display.
 
 ### <span id="sample_enumguid_display"></span><span id="SAMPLE_ENUMGUID_DISPLAY"></span>Sample Enumguid Display
 
-The following enumguid display was copied from a computer running Windows Server 2003. The display lists the providers that are registered and running. One provider, the Tracedrv sample driver, is enabled for tracing. [TraceDrv](http://go.microsoft.com/fwlink/p/?LinkId=617726), a sample driver that was designed for software tracing, is available in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+The following enumguid display was copied from a computer running Windows Server 2003. The display lists the providers that are registered and running. One provider, the Tracedrv sample driver, is enabled for tracing. [TraceDrv](https://go.microsoft.com/fwlink/p/?LinkId=617726), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
 ```
 c:\Tracelog>tracelog -enumguid
@@ -123,12 +121,3 @@ d58c126e-b309-11d1-969e-0000f875a5bc     FALSE  0    0    0
 688a5248-f348-4576-86cf-3521c7094614     FALSE  0    0    0
 27246e9d-b4df-4f20-b969-736fa49ff6ff    FALSE  0    0    0
 ```
-
- 
-
- 
-
-
-
-
-

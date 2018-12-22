@@ -46,9 +46,9 @@ The handle returned in ClassIcon can be cast to the WPARAM that is required by t
 
 In addition to an icon that represents the device, a typical device property page includes a description or "friendly name" of the device and shows the current settings of device properties. The Plug and Play (PnP) manager stores the PnP properties of each device in the registry. A property page provider can call [**SetupDiGetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551967) to get the value of any such property. If device- or class-specific configuration information has also been stored in the registry as part of the installation process, a property page provider can use other **SetupDiXxx** functions to extract that information for display. For more information, see [Device Installation Functions](https://msdn.microsoft.com/library/windows/hardware/ff541299).
 
-When certain types of changes occur on the page, the property sheet sends a [WM_NOTIFY](http://go.microsoft.com/fwlink/p/?linkid=181554) message to the dialog box procedure. The dialog box procedure should be prepared to extract the notification code from the message parameters and respond appropriately.
+When certain types of changes occur on the page, the property sheet sends a [WM_NOTIFY](https://go.microsoft.com/fwlink/p/?linkid=181554) message to the dialog box procedure. The dialog box procedure should be prepared to extract the notification code from the message parameters and respond appropriately.
 
-For more information about the notifications that a dialog box procedure might encounter, such as the PSN_APPLY or PSN_HELP notifications, and how the procedure should handle them, see [Notifications](http://go.microsoft.com/fwlink/p/?linkid=181555) in the Windows SDK documentation.
+For more information about the notifications that a dialog box procedure might encounter, such as the PSN_APPLY or PSN_HELP notifications, and how the procedure should handle them, see [Notifications](https://go.microsoft.com/fwlink/p/?linkid=181555) in the Windows SDK documentation.
 
 ### <a href="" id="psn-apply-notifications"></a>PSN_APPLY Notifications
 

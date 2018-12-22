@@ -69,7 +69,7 @@ Remarks
 
 **ClassInstall32.Services** sections should have the same platform and operating system decorations as their related [**ClassInstall32 sections**](inf-classinstall32-section.md). For example, a **ClassInstall32.ntx86** section would have a corresponding **ClassInstall32.ntx86.Services** section.
 
-The case-insensitive **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions can be inserted into a **ClassInstall32.Services** section name in cross-platform INF files, as shown in the formal syntax statement. For more information, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+The case-insensitive **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions can be inserted into a **ClassInstall32.Services** section name in cross-platform INF files, as shown in the formal syntax statement. For more information, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 ## See also
 

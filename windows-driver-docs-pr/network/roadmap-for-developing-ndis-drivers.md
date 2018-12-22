@@ -58,7 +58,7 @@ To create a Network Driver Interface Specification (NDIS) driver package, follow
 
     [Roadmap for Developing Windows Filtering Platform Callout Drivers](roadmap-for-developing-wfp-callout-drivers.md)
 
--   Step 6: Review the [Network driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616034) in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+-   Step 6: Review the [Network driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616034) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
 -   Step 7: Develop (or port), build, test, and debug your NDIS driver.
 

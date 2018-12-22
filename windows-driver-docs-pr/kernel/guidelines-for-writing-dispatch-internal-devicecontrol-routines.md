@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Keep the following points in mind when writing a [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) or [*DispatchInternalDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543326) routine:
+Keep the following points in mind when writing a [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) or [*DispatchInternalDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine:
 
 At a minimum, a higher-level driver must copy the parameters for an [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) or [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766) request from its own I/O stack location in the IRP to the next-lower-level driver's I/O stack location. Then, it must call [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) with a pointer to the next-lower driver's device object and the IRP.
 

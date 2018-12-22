@@ -26,14 +26,17 @@ Signature="signature-name"
 [Class=class-name]
 [ClassGuid={nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}]
 [Provider=%INF-creator%]
+[ExtensionId={xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}]
 [LayoutFile=filename.inf [,filename.inf]... ]  (Windows 2000 and Windows XP)
 [CatalogFile=filename.cat]
 [CatalogFile.nt=unique-filename.cat]
 [CatalogFile.ntx86=unique-filename.cat]
 [CatalogFile.ntia64=unique-filename.cat]  (Windows XP and later versions of Windows)
 [CatalogFile.ntamd64=unique-filename.cat]  (Windows XP and later versions of Windows)
+[CatalogFile.ntarm=unique-filename.cat]  (Windows 8 and later versions of Windows)
+[CatalogFile.ntarm64=unique-filename.cat]  (Windows XP and later versions of Windows)
+
 DriverVer=mm/dd/yyyy,w.x.y.z
-[DontReflectOffline=1] (Windows Vista and later versions of Windows)
 [PnpLockDown=0|1] (Windows Vista and later versions of Windows)
 [DriverPackageDisplayName=%driver-package-description%]
 [DriverPackageType=PackageType]
@@ -82,6 +85,12 @@ For a new [device setup class](device-setup-classes.md), the INF must specify a 
 
 **Note**  This entry is required for device drivers that are installed through the PnP manager.
 
+**ExtensionId**={xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}
+Specifies the extension ID GUID when authoring an extension INF. The GUID value is formatted as shown here, where each *x* is a hexadecimal digit.
+
+When creating the initial version of an extension INF, the INF must specify a newly generated **ExtensionId** value. However, when updating an existing extension INF, the **ExtensionId** must remain the same so that multiple related versions of the extension INF are versioned against each other instead of being treated as independent extension INFs that may be simultaneously installed on the same device instance. For more information about how to author extension INFs, see [Using an Extension INF File](using-an-extension-inf-file.md).
+
+**Note**  This entry is only required when creating an extension INF, as identified by specifying `Class = Extension` and `ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}`.
  
 
 <a href="" id="provider--inf-creator-"></a>**Provider=%**<em>INF-creator</em>**%**  
@@ -92,6 +101,8 @@ For example, INF files supplied with the system typically specify the *INF-creat
 **Note**  This entry is required for device drivers that are installed through the PnP manager.
 
  
+
+
 
 <a href="" id="catalogfile-filename-cat"></a>**CatalogFile=**<em>filename</em>**.cat**  
 Specifies a catalog (.*cat*) file to be included on the distribution media of a device/driver.
@@ -107,13 +118,19 @@ System-supplied INF files never have **CatalogFile=** entries because the operat
 <a href="" id="catalogfile-ntia64-unique-filename-cat--"></a>**CatalogFile.ntia64=**<em>unique-filename</em>**.cat** |  
 
 <a href="" id="catalogfile-ntamd64-unique-filename-cat"></a>**CatalogFile.ntamd64=**<em>unique-filename</em>**.cat**  
+
+<a href="" id="catalogfile-ntarm-unique-filename-cat"></a>**CatalogFile.ntarm=**<em>unique-filename</em>**.cat**  
+
+<a href="" id="catalogfile-ntarm64-unique-filename-cat"></a>**CatalogFile.ntarm64=**<em>unique-filename</em>**.cat**  
+
+
 Specifies another INF-writer-determined, unique file name, with the .*cat* extension, of a catalog file. If these optional entries are omitted, a given **CatalogFile=**<em>filename.cat</em> is used for validating WDM device/driver installations.
 
 If any decorated **CatalogFile.*xxx*=** entry exists in an INF's **Version** section together with an undecorated **CatalogFile=** entry, the undecorated entry is assumed to identify a *filename.cat* for validating device installations, driver installations, or both on those platforms for which a decorated entry is not specified.
 
 Any cross-platform device driver INF file that has **CatalogFile=** and **CatalogFile.**<em>xxx</em>**=** entries must supply a unique IHV/OEM-determined name for each such .cat file.
 
-For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 **Note**  Because the same .cat file can be used across all supported platforms, the use of this entry is not required or recommended. However, you must use this entry if you want to create platform-specific .cat files for your driver package.
 
@@ -124,12 +141,6 @@ This entry specifies version information for drivers that are installed by this 
 
 For information about how to specify this entry, see [**INF DriverVer Directive**](inf-driverver-directive.md).
 
-<a href="" id="dontreflectoffline-1"></a>**DontReflectOffline=1**  
-This directive is for internal use only on Windows Vista and later versions of Windows. This directive must not be used for any reason in a third-party INF file.
-
-**Note**  This directive is present in some of the INF files for inbox drivers. The INF file writer must be careful not to copy this directive along with other INF Version directives that the writer might copy from an inbox INF file.
-
- 
 
 <a href="" id="pnplockdown-0-1"></a>**PnpLockDown=0**|**1**  
 Specifies whether Plug and Play (PnP) prevents applications from directly modifying the files that a [driver package's](driver-packages.md) INF file specifies. If the **PnpLockDown** directive is set to 1, PnP prevents applications from directly modifying the files that are copied by INF **CopyFiles** directives. Otherwise, if the directive is not included in an INF file or the value of the directive is set to zero, an application that has administrator privileges can directly modify these files. Driver files that are protected in this manner are referred to as *third-party protected driver files*.
@@ -143,10 +154,10 @@ Starting with Windows Vista, a driver package should set **PnpLockDown** to 1 to
  
 
 <a href="" id="driverpackagedisplayname--driver-package-description-"></a><strong>DriverPackageDisplayName=%</strong>driver-package-description<strong>%</strong>  
-Specifies a string token that corresponds to a string key entry in an INF [**Strings**](inf-strings-section.md) section. The string key entry supplies the [driver package](driver-packages.md) display name. Driver Install Frameworks (DIFx) uses the driver package display name to describe the purpose of driver package to end-users.
+Deprecated. Was previously used by Driver Install Frameworks (DIFx). For info about the DIFx deprecation, see [DIFx Guidelines](difx-guidelines.md).
 
 <a href="" id="driverpackagetype-packagetype"></a>**DriverPackageType=** *PackageType*  
-Specifies the [driver package](driver-packages.md) type. Driver Install Frameworks (DIFx) uses the driver package type to determine the type of driver package.
+Deprecated. Was previously used by Driver Install Frameworks (DIFx). For info about the DIFx deprecation, see [DIFx Guidelines](difx-guidelines.md).
 
 Remarks
 -------

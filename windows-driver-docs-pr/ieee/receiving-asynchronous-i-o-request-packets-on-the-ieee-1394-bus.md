@@ -401,7 +401,7 @@ kmdf1394_NotificationCallback (
                         {
                             DoTraceLevelMessage(TRACE_LEVEL_ERROR, 
                                                 TRACE_FLAG_ASYNC, 
-                                                "Failed to allocate Reponse Data Memory: %!STATUS!\n",
+                                                "Failed to allocate Response Data Memory: %!STATUS!\n",
                                                 ntStatus);
 
                             WdfObjectDelete (workItem);

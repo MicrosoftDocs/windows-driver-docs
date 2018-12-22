@@ -397,7 +397,7 @@ The System Event Broker manages background events. Apps, including the mobile br
 
 -   **Incoming USSD** – USSD message received that does not match operator-defined parsing rules.
 
-Developers should be aware that a strict limit is placed on the amount of CPU time that an app may consume while it is not active. Although these limits are relaxed for some events, apps must always minimize the resources that they consume while the system is in a low-power state or while another app is running. For more information about background events in Windows 8 and Windows 10, see [Introduction to Background Tasks](http://go.microsoft.com/fwlink/?linkid=227329).
+Developers should be aware that a strict limit is placed on the amount of CPU time that an app may consume while it is not active. Although these limits are relaxed for some events, apps must always minimize the resources that they consume while the system is in a low-power state or while another app is running. For more information about background events in Windows 8 and Windows 10, see [Introduction to Background Tasks](https://go.microsoft.com/fwlink/?linkid=227329).
 
 ### Windows Metadata and Internet Services
 

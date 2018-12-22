@@ -18,10 +18,10 @@ SDV is a static verification tool that systematically analyzes the source code o
 
 | Sample Name             | Solution                                                                   | Description                                                            |
 |-------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------|
-| SDV-FailDriver-KMDF     | [SDV-FailDriver-KMDF](http://go.microsoft.com/fwlink/p/?LinkId=617993)     | This sample demonstrates how SDV can find errors in a KMDF driver.     |
-| SDV-FailDriver-NDIS     | [SDV-FailDriver-NDIS](http://go.microsoft.com/fwlink/p/?LinkId=617995)     | This sample demonstrates how SDV can find errors in a NDIS driver.     |
-| SDV-FailDriver-Storport | [SDV-FailDriver-STORPORT](http://go.microsoft.com/fwlink/p/?LinkId=617997) | This sample demonstrates how SDV can find errors in a Storport driver. |
-| SDV-FailDriver-WDM      | [SDV-FailDriver-WDM](http://go.microsoft.com/fwlink/p/?LinkId=617999)      | This sample demonstrates how SDV can find errors in a WDM driver.      |
+| SDV-FailDriver-KMDF     | [SDV-FailDriver-KMDF](https://go.microsoft.com/fwlink/p/?LinkId=617993)     | This sample demonstrates how SDV can find errors in a KMDF driver.     |
+| SDV-FailDriver-NDIS     | [SDV-FailDriver-NDIS](https://go.microsoft.com/fwlink/p/?LinkId=617995)     | This sample demonstrates how SDV can find errors in a NDIS driver.     |
+| SDV-FailDriver-Storport | [SDV-FailDriver-STORPORT](https://go.microsoft.com/fwlink/p/?LinkId=617997) | This sample demonstrates how SDV can find errors in a Storport driver. |
+| SDV-FailDriver-WDM      | [SDV-FailDriver-WDM](https://go.microsoft.com/fwlink/p/?LinkId=617999)      | This sample demonstrates how SDV can find errors in a WDM driver.      |
 
  
 

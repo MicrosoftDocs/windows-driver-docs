@@ -29,9 +29,9 @@ To hold IRPs while a device is paused, a driver implements a procedure such as t
 
 3.  In its *DispatchPnP* code for **IRP\_MN\_QUERY\_STOP\_DEVICE** (or **IRP\_MN\_STOP\_DEVICE**), finish any outstanding requests and set the HOLD\_NEW\_REQUESTS flag.
 
-4.  In a dispatch routine that accesses the device, such as [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034) or [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376), check whether the HOLD\_NEW\_REQUESTS flag is set. If so, the driver must mark the IRP pending and queue it.
+4.  In a dispatch routine that accesses the device, such as [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) or [*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), check whether the HOLD\_NEW\_REQUESTS flag is set. If so, the driver must mark the IRP pending and queue it.
 
-    The driver's *DispatchPnP* routine must continue to process PnP IRPs rather than hold them and the [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine must continue to process power IRPs.
+    The driver's *DispatchPnP* routine must continue to process PnP IRPs rather than hold them and the [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine must continue to process power IRPs.
 
 5.  In *DispatchPnP*, in response to a start or cancel-stop IRP, clear the HOLD\_NEW\_REQUESTS flag and start the IRPs in the IRP-holding queue.
 

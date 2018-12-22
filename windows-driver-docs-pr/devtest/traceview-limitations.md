@@ -27,7 +27,7 @@ When you submit a TraceView command in a Command Prompt window, TraceView opens 
 
 ## ETW Limitations
 
-TraceView and other tracing tools based on Event Tracing for Windows (ETW) can create only one trace session or display one trace log for each trace provider. If you try to create a trace session or display a trace log with a provider that is already enabled in TraceView, TraceView displays an error message. For more information about this error message, see [Resolving TraceView Errors](resolving-traceview-errors.md).
+TraceView and other tracing tools based on Event Tracing for Windows (ETW) can create only one trace session or display one trace log for each WPP or classic trace provider. If you create a trace session or display a trace log with a WPP provider that is already enabled in another trace session, it will be disabled in the other session.
 
 ## Global Logger Trace Sessions
 
@@ -46,13 +46,3 @@ For more information about TraceView commands, see [TraceView Control Commands](
 TraceView automatically enables the trace providers that you add to the trace session. However, after you create a trace session, you cannot use the TraceView window to enable additional trace providers for the trace session or to selectively disable the trace providers that you added to the trace session.
 
 To enable or disable providers, use a **traceview -enable** command. For more information about this command, see [**TraceView Control Commands**](traceview-control-commands.md).
-
-
- 
-
- 
-
-
-
-
-

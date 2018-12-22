@@ -15,7 +15,7 @@ Device Stage provides a rich platform for developing and distributing device-spe
 
 This document describes device-class specific features for document devices.
 
-For the latest information, see [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/p/?linkid=154165).
+For the latest information, see [Windows Hardware Developer Central](https://go.microsoft.com/fwlink/p/?linkid=154165).
 
 This section includes the following topics:
 

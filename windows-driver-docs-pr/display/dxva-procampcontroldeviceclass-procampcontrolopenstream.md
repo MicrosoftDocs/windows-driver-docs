@@ -1,6 +1,6 @@
 ---
-title: DXVA\_ProcAmpControlDeviceClass ProcAmpControlOpenStream method
-description: The sample ProcAmpControlOpenStream function creates a ProcAmp stream object.
+title: ProcAmpControlOpenStream method
+description: The sample DXVA\_ProcAmpControlDeviceClass::ProcAmpControlOpenStream function creates a ProcAmp stream object.
 ms.assetid: 73011ce3-f643-4fca-bcfd-1467a9b56181
 keywords: ["ProcAmpControlOpenStream method Display Devices", "ProcAmpControlOpenStream method Display Devices , DXVA_ProcAmpControlDeviceClass interface", "DXVA_ProcAmpControlDeviceClass interface Display Devices , ProcAmpControlOpenStream method"]
 topic_type:
@@ -9,8 +9,9 @@ api_name:
 - DXVA_ProcAmpControlDeviceClass.ProcAmpControlOpenStream
 api_type:
 - COM
-ms.date: 01/05/2018
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # DXVA\_ProcAmpControlDeviceClass::ProcAmpControlOpenStream method
@@ -21,7 +22,7 @@ The sample *ProcAmpControlOpenStream* function creates a ProcAmp stream object.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT ProcAmpControlOpenStream(
   [in] LPDXVA_VideoDesc lpVideoDescription
 );

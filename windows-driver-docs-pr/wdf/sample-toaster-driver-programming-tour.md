@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Sample Toaster Driver Programming Tour
 
 
-This topic provides a code walkthrough of the [Toaster](http://go.microsoft.com/fwlink/p/?LinkId=618939) sample, which contains Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers designed for learning purposes.
+This topic provides a code walkthrough of the [Toaster](https://go.microsoft.com/fwlink/p/?LinkId=618939) sample, which contains Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers designed for learning purposes.
 
 ## Class installer and Coinstaller
 

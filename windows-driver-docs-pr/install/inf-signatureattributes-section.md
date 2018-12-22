@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 # INF SignatureAttributes Section
 
 
-This section allows users to request additional signatures as required by certain certification scenarios. Examples of these scenarios are: Protected Environment media playback, Early Launch Antimalware, and third party HAL extensions. These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests.
+This section allows users to request additional signatures as required by certain certification scenarios. For example, the following scenarios require this section: Protected Environment media playback, [Early Launch Antimalware](https://docs.microsoft.com/windows-hardware/drivers/install/elam-driver-submission), and third party HAL extensions. These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests.
 
-```cpp
+```inf
 [SignatureAttributes]
 FileOne = SignatureAttributes.SigType
 
@@ -51,7 +51,7 @@ Each Signature Type has a corresponding attribute and value, as listed below. Us
 Remarks
 -------
 
-These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests. These are additions to the normal behavior of Hardware Certification, and the corresponding Certification Requirements for Elam, HalExt, PETrust, and DRM can be found [here](http://go.microsoft.com/fwlink/p/?linkid=239763).
+These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests. These are additions to the normal behavior of Hardware Certification, and the corresponding Certification Requirements for Elam, HalExt, PETrust, and DRM can be found [here](https://go.microsoft.com/fwlink/p/?linkid=239763).
 
 These INF sections should be used when requesting additional signatures regardless of the target OS.
 
@@ -60,7 +60,7 @@ Examples
 
 The following examples demonstrate how to enumerate and request additional signatures for audio:
 
-```cpp
+```inf
 [SignatureAttributes]
 ExampleFile1.dll=SignatureAttributes.PETrust
 ExampleFile2.dll=SignatureAttributes.DRM
@@ -74,7 +74,7 @@ PETrust=true
 
 The following examples demonstrate how to enumerate and request additional signatures for video:
 
-```cpp
+```inf
 [SignatureAttributes]
 ExampleFile1.dll=SignatureAttributes.PETrust
 
@@ -84,7 +84,7 @@ PETrust=true
 
 The following examples demonstrate how to enumerate and request additional signatures for HAL:
 
-```cpp
+```inf
 [SignatureAttributes]
 HALFILE.dll=SignatureAttributes.HalExt
 
@@ -94,7 +94,7 @@ HalExt=true
 
 The following examples demonstrate how to enumerate and request additional signatures for ELAM:
 
-```cpp
+```inf
 [SignatureAttributes]
 ELAMFILE.dll=SignatureAttributes.Elam
 
@@ -104,7 +104,7 @@ Elam=true
 
 The following examples demonstrate how to enumerate and request additional signatures for Windows Hello:
 
-```cpp
+```inf
 [SignatureAttributes]
 WindowsHelloFile.dll=SignatureAttributes.WindowsHello
 

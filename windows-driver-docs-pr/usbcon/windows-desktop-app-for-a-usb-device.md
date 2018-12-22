@@ -41,7 +41,7 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 <tr class="odd">
 <td><p><strong>Step 1</strong>—Get the tools you need to write a Windows desktop app for devices.</p></td>
 <td><ul>
-<li>Install <a href="http://go.microsoft.com/fwlink/p/?LinkId=623328" data-raw-source="[Microsoft Visual Studio (Ultimate or Professional)]( http://go.microsoft.com/fwlink/p/?LinkId=623328)">Microsoft Visual Studio (Ultimate or Professional)</a>.</li>
+<li>Install <a href="https://go.microsoft.com/fwlink/p/?LinkId=623328" data-raw-source="[Microsoft Visual Studio (Ultimate or Professional)]( https://go.microsoft.com/fwlink/p/?LinkId=623328)">Microsoft Visual Studio (Ultimate or Professional)</a>.</li>
 <li>Install the <a href="http://download.microsoft.com/download/E/C/E/ECE11176-1E40-46E7-A24B-D507D7F6FB65/wdk/wdksetup.exe" data-raw-source="[Windows Driver Kit (WDK) 8.1](http://download.microsoft.com/download/E/C/E/ECE11176-1E40-46E7-A24B-D507D7F6FB65/wdk/wdksetup.exe)">Windows Driver Kit (WDK) 8.1</a>.</li>
 </ul>
 <div class="alert">

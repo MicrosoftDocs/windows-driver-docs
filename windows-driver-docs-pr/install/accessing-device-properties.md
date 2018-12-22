@@ -34,7 +34,7 @@ To safely access device properties, follow these guidelines:
 
         **Note**  Hardware keys persist in the registry until the device is uninstalled. Software keys can be moved or cleared by the [device installation components](https://msdn.microsoft.com/library/windows/hardware/ff541277) during a driver upgrade
 
-        To save the custom settings, use [RegCloseKey](http://go.microsoft.com/fwlink/p/?linkid=194543) after the registry key has been created or opened.
+        To save the custom settings, use [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) after the registry key has been created or opened.
 
 -   For kernel-mode drivers, use [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203) to access device properties.
 

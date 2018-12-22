@@ -71,7 +71,7 @@ When you build, deploy, and test your driver using Visual Studio 2012 and the WD
 
 *Updated: October 22, 2012*
 
-For information about new features that were added in Windows 7, see the white paper [Driver Verifier in Windows 7]( http://go.microsoft.com/fwlink/p/?linkid=309793).
+For information about new features that were added in Windows 7, see the white paper [Driver Verifier in Windows 7]( https://go.microsoft.com/fwlink/p/?linkid=309793).
 
 For Windows 7, Driver Verifier has been enhanced with new tests and features that allow Driver Verifier to expose more classes of typical driver bugs.
 
@@ -125,7 +125,7 @@ In this way, Driver Verifier can capture more of these IRQL transition stack tra
 
 *Updated: February 9, 2009*
 
-For information about new features that were added in Windows Vista, see the white paper [Driver Verifier in Windows Vista]( http://go.microsoft.com/fwlink/p/?linkid=309794).
+For information about new features that were added in Windows Vista, see the white paper [Driver Verifier in Windows Vista]( https://go.microsoft.com/fwlink/p/?linkid=309794).
 
 For Windows Vista, Driver Verifier has been enhanced with new tests and features.
 

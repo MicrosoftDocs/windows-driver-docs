@@ -177,7 +177,7 @@ The following diagram summarizes the sequence described above:
 * [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
 * [Develop UWP apps](https://developer.microsoft.com/windows/apps/develop)
 * [Package an app using the Desktop App Converter (Desktop Bridge)](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter)
-* [Custom Capability Sample App](http://go.microsoft.com/fwlink/p/?LinkId=846904)
+* [Custom Capability Sample App](https://go.microsoft.com/fwlink/p/?LinkId=846904)
 * [Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
 * [Sideload apps in Windows 10](https://technet.microsoft.com/library/mt269549.aspx)
 * [FAQ on Custom Capabilities](FAQ-on-custom-capabilities.md)

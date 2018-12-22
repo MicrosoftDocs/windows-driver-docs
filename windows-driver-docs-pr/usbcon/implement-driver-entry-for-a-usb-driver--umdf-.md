@@ -32,16 +32,16 @@ Before you begin, make sure that you meet the following requirements:
 -   Your host computer has Visual Studio 2012.
 -   Your host computer has the latest Windows Driver Kit (WDK) for Windows 8.
 
-    The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a USB client driver. You can get the latest version of the WDK from [How to Get the WDK](http://go.microsoft.com/fwlink/p/?linkid=617585).
+    The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a USB client driver. You can get the latest version of the WDK from [How to Get the WDK](https://go.microsoft.com/fwlink/p/?linkid=617585).
 
--   Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=617701).
+-   Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=617701).
 -   If you are using two computers, you must configure the host and target computers for user-mode debugging. For more information, see [Setting Up User-Mode Debugging in Visual Studio](https://msdn.microsoft.com/library/windows/hardware/hh439381).
 
 **Hardware requirements**
 
 Get a USB device for which you will be writing the client driver. In most cases, you are provided with a USB device and its hardware specification. The specification describes device capabilities and the supported vendor commands. Use the specification to determine the functionality of the USB driver and the related design decisions.
 
-If you are new to USB driver development, use the OSR USB FX2 learning kit to study USB samples included with the WDK. You can get the learning kit from [OSR Online](http://go.microsoft.com/fwlink/p/?linkid=617553). It contains the USB FX2 device and all the required hardware specifications to implement a client driver.
+If you are new to USB driver development, use the OSR USB FX2 learning kit to study USB samples included with the WDK. You can get the learning kit from [OSR Online](https://go.microsoft.com/fwlink/p/?linkid=617553). It contains the USB FX2 device and all the required hardware specifications to implement a client driver.
 
 **Recommended reading**
 
@@ -49,7 +49,7 @@ If you are new to USB driver development, use the OSR USB FX2 learning kit to st
 -   [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721)
 -   [Getting started with Windows drivers](https://msdn.microsoft.com/library/windows/hardware/ff554690)
 -   [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff560027)
--   *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](http://go.microsoft.com/fwlink/p/?linkid=617702).
+-   *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](https://go.microsoft.com/fwlink/p/?linkid=617702).
 
 Instructions
 ------------
@@ -273,7 +273,7 @@ Whenever an application makes a request for the USB driver stack, the Windows I/
 
 ## Related topics
 [Understanding the UMDF template code for USB client driver](understanding-the-umdf-template-code-for-usb.md)  
-[How to enable USB selective suspend and system wake in the UMDF driver for a USB device](http://go.microsoft.com/fwlink/p/?linkid=617587)  
+[How to enable USB selective suspend and system wake in the UMDF driver for a USB device](https://go.microsoft.com/fwlink/p/?linkid=617587)  
 [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)  
 
 

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # DIFx Guidelines
 
-Starting in Windows 10 Version 1607 (Redstone 1), the Driver Install Frameworks (DIFx) tools are no longer included in the WDK.  Instead, we recommend providing your driver as a standalone package that doesn't require an installer, ideally through Windows Update.  To add your driver to Windows Update, the first step is to submit your driver package to the [Sysdev Driver Portal](http://sysdev.microsoft.com).
+Starting in Windows 10 Version 1607 (Redstone 1), the Driver Install Frameworks (DIFx) tools are no longer included in the WDK.  Instead, we recommend providing your driver as a standalone package that doesn't require an installer, ideally through Windows Update.  To add your driver to Windows Update, the first step is to submit your driver package to the [Windows Hardware Dev Center](https://developer.microsoft.com/windows/hardware/dashboard-sign-in).
 
 If you choose to use DIFx anyway, you must use an older WDK which contains the tools and you should be aware of a couple caveats:
 
@@ -18,3 +18,5 @@ If you choose to use DIFx anyway, you must use an older WDK which contains the t
 * Use DIFx version 2.1, which is available in the Windows 7 WDK through the Windows 10 Version 1511 WDK.  Although a DIFx version of 2.1 was available in earlier versions of the WDK, it was not properly compatible with Windows 7 and later versions of Windows.
 
 Although it's no longer being updated, you can find API reference documentation for DIFx at [Difxapi.h](https://docs.microsoft.com/previous-versions/windows/hardware/difxapi/).
+
+If providing the driver as a standalone package that does not require an installer is not an option, then the command line tool [PnPUtil](https://docs.microsoft.com/windows-hardware/drivers/devtest/pnputil) or a custom installer that uses [driver installation functions](setupapi-functions-that-simplify-driver-installation.md) can be used as part of an installation story.

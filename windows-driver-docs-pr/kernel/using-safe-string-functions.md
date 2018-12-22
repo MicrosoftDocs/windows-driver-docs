@@ -19,7 +19,7 @@ Two new sets of string manipulation functions, called *safe string functions*, p
 
 One set of safe string functions are for use in kernel-mode code. These functions are prototyped in a header file named Ntstrsafe.h. This header file and an associated library are available in the WDK.
 
-The other set of safe string functions are for use in user-mode applications. A corresponding header file, Strsafe.h, contains prototypes for these functions. That file and an associated library are available in the Windows SDK. For more information about Strsafe.h, see [Using the Strsafe.h Functions](http://go.microsoft.com/fwlink/p/?linkid=165522).
+The other set of safe string functions are for use in user-mode applications. A corresponding header file, Strsafe.h, contains prototypes for these functions. That file and an associated library are available in the Windows SDK. For more information about Strsafe.h, see [Using the Strsafe.h Functions](https://go.microsoft.com/fwlink/p/?linkid=165522).
 
 The set of kernel-mode safe string functions consists of the following two subsets:
 

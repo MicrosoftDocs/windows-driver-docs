@@ -22,13 +22,13 @@ ms.localizationpriority: medium
 
 -   In versions of Windows earlier than Windows Vista, list all the applications that were installed by using Microsoft Windows Installer (MSI), and that are available in **Add Or Remove Programs** in Control Panel. You can then uninstall these items if necessary.
 
--   Follow the guidelines for Microsoft Windows applications. See the [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=8714) website for more information.
+-   Follow the guidelines for Microsoft Windows applications. See the [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=8714) website for more information.
 
 Device installation applications *can* do the following:
 
 -   [Install device-specific applications](installing-device-specific-applications.md)
 
-    **Note**  We highly recommend that you submit device-specific applications to the appropriate [Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=227016) for software. See the [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=8714) website for more information.
+    **Note**  We highly recommend that you submit device-specific applications to the appropriate [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) for software. See the [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=8714) website for more information.
 
      
 

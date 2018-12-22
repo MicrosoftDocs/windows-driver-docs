@@ -3,7 +3,9 @@ title: C28727
 description: Warning C28727 Banned API Usage.
 ms.assetid: 90d5a59f-6b0c-43cb-bc17-8a4ce21057af
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: medium 
+f1_keywords: 
+  - "C28727"
 ---
 
 # C28727

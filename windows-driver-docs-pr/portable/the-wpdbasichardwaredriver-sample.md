@@ -30,7 +30,7 @@ The sensors that are supported by the WpdBasicHardwareDriver are described in th
 
  
 
-These nine sensors are sold by the [Parallax Corporation](http://go.microsoft.com/fwlink/p/?linkid=154730) in Rocklin, California. They can be purchased separately, or together in a Sensor Sample kit.
+These nine sensors are sold by the [Parallax Corporation](https://go.microsoft.com/fwlink/p/?linkid=154730) in Rocklin, California. They can be purchased separately, or together in a Sensor Sample kit.
 
 To use these sensors with the WpdBasicHardwareDriver, you must purchase the sensors, a programmable microcontroller (Parallax BS2), a test board (like the Parallax BASIC Stamp Homework Board), an RS232 cable, and miscellaneous parts. All of this hardware is available from Parallax and can be ordered through their Web site.
 

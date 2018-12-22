@@ -1,15 +1,17 @@
 ---
-title: TDR Registry Keys
-description: TDR Registry Keys
+title: Timeout Detection and Recovery (TDR) Registry Keys
+description: The following TDR (timeout detection and recovery)-related registry keys are for display driver development testing or debugging purposes only.
 ms.assetid: 77b8b2aa-0821-4297-a1e4-57894bd4181f
-ms.date: 04/20/2017
+keywords:
+- TDR (timeout detection and recovery)
+- WDK display development
+ms.date: 10/29/2018
 ms.localizationpriority: medium
 ---
 
-# TDR Registry Keys
+# Timeout Detection and Recovery (TDR) Registry Keys
 
-
-You can use the following TDR-related registry keys for testing or debugging purposes only. That is, they should not be manipulated by any applications outside targeted testing or debugging.
+You can use the following TDR (timeout detection and recovery)-related registry keys for testing or debugging purposes only. That is, they should not be manipulated by any applications outside targeted testing or debugging.
 
 -   **TdrLevel**
 

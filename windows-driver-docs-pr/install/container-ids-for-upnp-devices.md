@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Container IDs for UPnP Devices
 
 
-Starting with Windows 7, a device that supports PnP extensions (PnP-X) and Universal PnP (UPnP) can specify a container ID by including the **X_containerId** XML element in the device description document. For more information about UPnP and the UPnP device description document, refer to the [UPnP Device Architecture specification.](http://go.microsoft.com/fwlink/p/?linkid=142402)
+Starting with Windows 7, a device that supports PnP extensions (PnP-X) and Universal PnP (UPnP) can specify a container ID by including the **X_containerId** XML element in the device description document. For more information about UPnP and the UPnP device description document, refer to the [UPnP Device Architecture specification.](https://go.microsoft.com/fwlink/p/?linkid=142402)
 
 The **X_containerId** XML element is declared as follows:
 
@@ -31,7 +31,7 @@ The following is an example of an **X_containerId** XML element.
 
 The **X_containerId** XML element is required to be in the &lt;device&gt; section of the UPnP device description document. The following example shows the correct placement of the **X_containerId** element in a device description document.
 
-**Note**   This is not a complete UPnP device description document. For more information about UPnP, refer to the [UPnP Device Architecture specification.](http://go.microsoft.com/fwlink/p/?linkid=142402)
+**Note**   This is not a complete UPnP device description document. For more information about UPnP, refer to the [UPnP Device Architecture specification.](https://go.microsoft.com/fwlink/p/?linkid=142402)
 
  
 

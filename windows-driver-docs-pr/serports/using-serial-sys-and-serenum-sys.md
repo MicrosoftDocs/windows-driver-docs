@@ -67,11 +67,11 @@ For general information about the high-level operation of a serial device, see t
 
 These samples demonstrates serial drivers.
 
--   The [Serial](http://go.microsoft.com/fwlink/p/?LinkId=617962) sample builds a function driver for serial devices.
--   The [Serenum](http://go.microsoft.com/fwlink/p/?LinkId=617961) sample provides Plug and Play functionality of a bus driver for an RS-232 port.
+-   The [Serial](https://go.microsoft.com/fwlink/p/?LinkId=617962) sample builds a function driver for serial devices.
+-   The [Serenum](https://go.microsoft.com/fwlink/p/?LinkId=617961) sample provides Plug and Play functionality of a bus driver for an RS-232 port.
 -   A simple virtual serial driver (ComPort) and a controller-less modem driver (FakeModem).
-    -   [The Virtual serial driver sample (UMDF 1.0)](http://go.microsoft.com/fwlink/p/?LinkId=617963)
-    -   [The Virtual serial2 driver sample (KMDF)](http://go.microsoft.com/fwlink/p/?LinkId=722209)
+    -   [The Virtual serial driver sample (UMDF 1.0)](https://go.microsoft.com/fwlink/p/?LinkId=617963)
+    -   [The Virtual serial2 driver sample (KMDF)](https://go.microsoft.com/fwlink/p/?LinkId=722209)
 
  
 
