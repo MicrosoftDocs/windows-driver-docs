@@ -70,7 +70,7 @@ The driver can create this object only under the following conditions:</wdcml:p>
 * The driver previously created a custom-receive object.
 
 For more information about PIO-receive objects, see [SERCX2PIORECEIVE Object Handle](#sercx2pioreceive-object-handle). 
-For more information about custom-receive objects, see [SERCX2CUSTOMRECEIVE Object Handle](sercx2customreceive-object-handle).
+For more information about custom-receive objects, see [SERCX2CUSTOMRECEIVE Object Handle](#sercx2customreceive-object-handle).
 
 Despite the similar lifetimes of custom-receive and custom-receive-transaction objects, these are defined as separate object types (and not combined into one type) to support the possible future expansion of the SerCx2 device driver interface.
 
@@ -137,7 +137,7 @@ The serial controller driver must _not_ try to delete the PIO-receive object by 
 A serial controller driver must create one and only one PIO-receive object. 
 The driver must create this object before creating either a system-DMA-receive object or a custom-receive object. 
 For more information about system-DMA-receive objects, see [SERCX2SYSTEMDMARECEIVE Object Handle](#sercx2systemdmareceive-object-handle). 
-For more information about custom-receive objects, see [SERCX2CUSTOMRECEIVE Object Handle](sercx2customreceive-object-handle).
+For more information about custom-receive objects, see [SERCX2CUSTOMRECEIVE Object Handle](#sercx2customreceive-object-handle).
 
 ##  SERCX2PIOTRANSMIT Object Handle
 A SERCX2PIOTRANSMIT object handle is an opaque reference to a PIO-transmit object in version 2 of the serial framework extension (SerCx2).
@@ -178,7 +178,7 @@ The driver can create this object only under the following conditions:
 * The driver has _not_ created a custom-receive object.
 
 For more information about PIO-receive objects, see [SERCX2PIORECEIVE Object Handle](#sercx2pioreceive-object-handle). 
-For more information about custom-receive objects, see [SERCX2CUSTOMRECEIVE Object Handle](sercx2customreceive-object-handle).
+For more information about custom-receive objects, see [SERCX2CUSTOMRECEIVE Object Handle](#sercx2customreceive-object-handle).
 
 ##  SERCX2SYSTEMDMATRANSMIT Object Handle
 A SERCX2SYSTEMDMATRANSMIT object handle is an opaque reference to a system-DMA-transmit object in version 2 of the serial framework extension (SerCx2).
