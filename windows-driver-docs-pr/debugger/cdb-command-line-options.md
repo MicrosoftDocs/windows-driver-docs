@@ -156,7 +156,7 @@ Ignores the initial breakpoint in target application. This option will cause the
 Ignores the final breakpoint at process termination. By default, CDB stops during the image run-down process. This option will cause CDB to exit immediately when the child terminates. This has the same effect as entering the command **sxd epr**. For more information, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
 <span id="_______-hd______"></span><span id="_______-HD______"></span> **-hd**   
-(Microsoft Windows XP and later) Specifies that the debug heap should not be used. See [Debugging a User-Mode Process Using CDB](debugging-a-user-mode-process-using-cdb.md) for details.
+ Specifies that the debug heap should not be used. See [Debugging a User-Mode Process Using CDB](debugging-a-user-mode-process-using-cdb.md) for details.
 
 <span id="_______-i_______ImagePath______"></span><span id="_______-i_______imagepath______"></span><span id="_______-I_______IMAGEPATH______"></span> **-i** *ImagePath*   
 Specifies the location of the executables that generated the fault. If the path contains spaces, it should be enclosed in quotation marks.
@@ -222,19 +222,19 @@ Debugs all processes launched by the target application (child processes). By de
 Specifies the decimal process ID to be debugged. This is used to debug a process that is already running. For details, see [Debugging a User-Mode Process Using CDB](debugging-a-user-mode-process-using-cdb.md).
 
 <span id="_______-pb______"></span><span id="_______-PB______"></span> **-pb**   
-(Windows XP and later) Prevents the debugger from requesting an initial break-in when attaching to a target process. This can be useful if the application is already suspended, or if you wish to avoid creating a break-in thread in the target.
+Prevents the debugger from requesting an initial break-in when attaching to a target process. This can be useful if the application is already suspended, or if you wish to avoid creating a break-in thread in the target.
 
 <span id="_______-pd______"></span><span id="_______-PD______"></span> **-pd**   
-(Windows XP and later) Causes the target application not to be terminated at the end of the debugging session. See [Ending a Debugging Session in CDB](ending-a-debugging-session-in-cdb.md) for details.
+Causes the target application not to be terminated at the end of the debugging session. See [Ending a Debugging Session in CDB](ending-a-debugging-session-in-cdb.md) for details.
 
 <span id="_______-pe______"></span><span id="_______-PE______"></span> **-pe**   
-(Windows XP and later) Indicates that the target application is already being debugged. See [Re-attaching to the Target Application](reattaching-to-the-target-application.md) for details.
+Indicates that the target application is already being debugged. See [Re-attaching to the Target Application](reattaching-to-the-target-application.md) for details.
 
 <span id="_______-pn_______Name______"></span><span id="_______-pn_______name______"></span><span id="_______-PN_______NAME______"></span> **-pn** *Name*   
 Specifies the name of the process to be debugged. (This name must be unique.) This is used to debug a process that is already running.
 
 <span id="_______-pr______"></span><span id="_______-PR______"></span> **-pr**   
-(Windows XP and later) Causes the debugger to start the target process running when it attaches to it. This can be useful if the application is already suspended and you wish it to resume execution.
+Causes the debugger to start the target process running when it attaches to it. This can be useful if the application is already suspended and you wish it to resume execution.
 
 <span id="_______-psn_______ServiceName______"></span><span id="_______-psn_______servicename______"></span><span id="_______-PSN_______SERVICENAME______"></span> **-psn** *ServiceName*   
 Specifies the name of a service contained in the process to be debugged. This is used to debug a process that is already running.

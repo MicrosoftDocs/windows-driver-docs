@@ -37,12 +37,12 @@ The process options only apply to live user-mode debugging.
 <tr class="odd">
 <td align="left"><span id="DEBUG_PROCESS_DETACH_ON_EXIT"></span><span id="debug_process_detach_on_exit"></span>
 <strong>DEBUG_PROCESS_DETACH_ON_EXIT</strong></td>
-<td align="left"><p>(Windows XP and later) The debugger automatically detaches itself from the target process when the debugger exits. This is a global setting.</p></td>
+<td align="left"><p>The debugger automatically detaches itself from the target process when the debugger exits. This is a global setting.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><span id="DEBUG_PROCESS_ONLY_THIS_PROCESS"></span><span id="debug_process_only_this_process"></span>
 <strong>DEBUG_PROCESS_ONLY_THIS_PROCESS</strong></td>
-<td align="left"><p>(Windows XP and later) The debugger will not debug child processes that are created by this process.</p></td>
+<td align="left"><p>The debugger will not debug child processes that are created by this process.</p></td>
 </tr>
 </tbody>
 </table>
