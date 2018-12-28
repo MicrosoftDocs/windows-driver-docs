@@ -344,17 +344,17 @@ An application can use DBG\_COMMAND\_EXCEPTION (**dbce**) to communicate with th
 <td align="left"><p>Break</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>ssessec</strong></p></td>
+<td align="left"><p><strong>sse<br>ssec</strong></p></td>
 <td align="left"><p>Single-step exception</p></td>
 <td align="left"><p>Break</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>bpebpec</strong></p></td>
+<td align="left"><p><strong>bpe<br>bpec</strong></p></td>
 <td align="left"><p>Breakpoint exception</p></td>
 <td align="left"><p>Break</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>ccecc</strong></p></td>
+<td align="left"><p><strong>cce<br>cc</strong></p></td>
 <td align="left"><p>CTRL+C or CTRL+BREAK</p>
 <p>This exception is triggered if the target is a console application and CTRL+C or CTRL+BREAK is passed to it.</p></td>
 <td align="left"><p>Break</p></td>
