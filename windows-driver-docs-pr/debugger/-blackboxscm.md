@@ -3,7 +3,7 @@ title: blackboxscm
 description: The blackboxscmextension displays service control manager (scm) secondary boot data.
 keywords: ["blackboxscm Windows Debugging"]
 ms.author: windowsdriverdev
-ms.date: 12/06/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,10 +60,16 @@ The returned data provides information on two fields.
 In this example, the code 15 (or  0x0000000F) is defined as SERVICE_CONTROL_PRESHUTDOWN.
 
 
+### Multiple Services
+
+When multiple services are listed,  only the first service that is listed is typically of interest for failure analysis.  This is because the SCM (Service Control Manager) waits serially for completion of these requests, so only the first service has actually received a control request.
+
+For more information about SCM, see [Service Control Manager](https://docs.microsoft.com/en-us/windows/desktop/Services/service-control-manager).
+
+
 ### <span id="Additional_Information"></span>Additional Information
 
 dwControl values are defined in winsvc.h and documented as parameters to [LPHANDLER_FUNCTION_EX callback function](https://docs.microsoft.com/windows/desktop/api/winsvc/nc-winsvc-lphandler_function_ex#parameters).
-
 
  
 
