@@ -1,12 +1,12 @@
 ---
-title: Bug Check 0x16A CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP
-description: The CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP bug check has a value of 0x0000016A. This indicates that a Cluster Resource call took longer than configured timeout.
-keywords: ["Bug Check 0x16A CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP", "CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP"]
+title: Bug Check 0x16A CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP
+description: The CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP bug check has a value of 0x0000016A. This indicates that a Cluster Resource call took longer than configured timeout.
+keywords: ["Bug Check 0x16A CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP", "CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP"]
 ms.date: 01/03/2019
 topic_type:
 - apiref
 api_name:
-- CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP
+- CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP
 api_type:
 - NA
 ms.localizationpriority: medium

@@ -1,25 +1,25 @@
 ---
-title: Bug Check 0x168 CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP
-description: The CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP bug check has a value of 0x00000168. This indicates that a Cluster Resource call took longer than configured timeout.
-keywords: ["Bug Check 0x168 CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP", "CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP"]
+title: Bug Check 0x168 CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP
+description: The CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP bug check has a value of 0x00000168. This indicates that a Cluster Resource call took longer than configured timeout.
+keywords: ["Bug Check 0x168 CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP", "CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP"]
 ms.date: 01/03/2019
 topic_type:
 - apiref
 api_name:
-- CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP
+- CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP
 api_type:
 - NA
 ms.localizationpriority: medium
 ---
 
-# Bug Check 0x168: CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP
+# Bug Check 0x168: CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP
 
-The CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP bug check has a value of 0x00000168. This indicates that a Cluster Resource call took longer than configured timeout.
+The CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP bug check has a value of 0x00000168. This indicates that a Cluster Resource call took longer than configured timeout.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 
-## CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP Parameters
+## CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP Parameters
 
 |Parameter|Description|
 |--- |--- |

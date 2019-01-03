@@ -1,12 +1,12 @@
 ---
-title: Bug Check 0x16B CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP
-description: The CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP bug check has a value of 0x0000016B. This indicates that a Cluster Resource call took longer than configured timeout.
-keywords: ["Bug Check 0x16B CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP", "CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP"]
+title: Bug Check 0x16B CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP
+description: The CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP bug check has a value of 0x0000016B. This indicates that a Cluster Resource call took longer than configured timeout.
+keywords: ["Bug Check 0x16B CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP", "CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP"]
 ms.date: 01/03/2019
 topic_type:
 - apiref
 api_name:
-- CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP
+- CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP
 api_type:
 - NA
 ms.localizationpriority: medium
