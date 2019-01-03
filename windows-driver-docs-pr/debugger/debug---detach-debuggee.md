@@ -17,7 +17,7 @@ Click **Detach Debuggee** on the **Debug** menu to detach from the target applic
 
 Detaching from the target is supported under one of the following conditions:
 
--   (Microsoft Windows XP and later versions of Windows) You are debugging a running user-mode target.
+-   You are debugging a running user-mode target.
 
 -   You are noninvasively debugging a user-mode target.
 

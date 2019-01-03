@@ -19,7 +19,7 @@ To debug a Gen 2 Hyper-V Virtual Machine (VM) complete the following steps.
 
 For information on how to create a VM, see [Create a Virtual Machine with Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).
 
-**2. Define an external virtual switch is defined** 
+**2. Define an external virtual switch** 
 
 To communicate with the VM a virtual external network switch can be used. For information on how to create external network switch, see [Create a virtual network](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/connect-to-network).
 

@@ -504,11 +504,8 @@
         href: installing-in-windows.md
     - name: "Installing Windows Multimedia System Support for an Audio Adapter"
       href: installing-windows-multimedia-system-support-for-an-audio-adapter.md
-    - name: "Installing an Audio Adapter Service"
-      href: installing-an-audio-adapter-service.md
-      items: 
-      - name: "Installing an Audio Adapter Service in Windows"
-        href: installing-an-audio-adapter-service-in-windows.md
+    - name: "Installing an Audio Adapter Service in Windows"
+      href: installing-an-audio-adapter-service-in-windows.md
     - name: "Customizing Control Panel"
       href: customizing-control-panel.md
     - name: "Branding Control Panel with Bitmaps or Icons"
