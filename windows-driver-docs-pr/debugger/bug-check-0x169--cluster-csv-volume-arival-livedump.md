@@ -23,27 +23,12 @@ The CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP bug check has a value of 0x00000169.
 
 |Parameter|Description|
 |--- |--- |
-|1|Resource Host Monitor PID.|
-|2|TID of the thread that handles resource call.|
-|3|Resource call type - listed below.|
-|4|Subcode. When parameter 3 equals 8 then this parameter contains cluster resource control code. When parameter 3 equals 9 then this parameter contains cluster resource type control code.|
+|1||
+|2||
+|3||
+|4||
 
-**Resource Call Type**
 
-    1  OPEN
-    2  CLOSE
-    3  ONLINE
-    4  OFFLINE
-    5  TERMINATE
-    6  ARBITRATE
-    7  RELEASE
-    8  RESOURCE CONTROL
-    9  RESOURCE TYPE CONTROL
-    10 LOOKS ALIVE
-    11 IS ALIVE
-    12 FAILURE NOTIFICATION
-    13 SHUTDOWN PROCESS
-    14 CANCEL
 
 
 ## Cause
