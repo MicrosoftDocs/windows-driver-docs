@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 In Windows Vista and later, support is provided for microphone arrays. In most situations, a single microphone embedded in a laptop or monitor does not capture sound very well. An array of microphones performs better to isolate a sound source and reject ambient noise and reverberation. The [**KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY**](https://msdn.microsoft.com/library/windows/hardware/ff537289) property specifies the geometry of a microphone array. The property value, [**KSAUDIO\_MIC\_ARRAY\_GEOMETRY**](https://msdn.microsoft.com/library/windows/hardware/ff537087), describes the array type (linear, planar, and so on), the number of microphones in the array and other features.
 
-This topic describes how external USB microphone arrays can use the microphone array support provided with Windows Vista. An external USB microphone array must provide the parameters required to describe the geometry and other features of its array in response to a [GET\_MEM](https://go.microsoft.com/fwlink/p/?linkid=143724) request.
+This topic describes how external USB microphone arrays can use the microphone array support provided with Windows Vista. An external USB microphone array must provide the parameters required to describe the geometry and other features of its array in response to a **GET\_MEM** request.
 
 The USB microphone array uses a standard format to provide the geometry information. The Windows Vista USB audio class driver must use the same format when it reads the geometry information. For more information about the standard format, see [Microphone Array Geometry Descriptor Format](microphone-array-geometry-descriptor-format.md).
 
