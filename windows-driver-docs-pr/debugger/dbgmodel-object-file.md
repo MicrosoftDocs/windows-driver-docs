@@ -27,4 +27,4 @@ File objects are used to open, edit, and otherwise manipulate files on the file 
 |Size|The size of the file in bytes.|
 
 ## Remarks
-If the files are bieng used from a garbage collected environment such as a JavaScript script, they should be closed when no longer in use rather than waiting for a garbage collection to cause the file to close.
+If the files are being used from a garbage collected environment such as a JavaScript script, they should be closed when no longer in use rather than waiting for a garbage collection to cause the file to close.
