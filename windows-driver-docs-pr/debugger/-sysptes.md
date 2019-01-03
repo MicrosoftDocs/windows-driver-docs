@@ -34,7 +34,7 @@ Displays information about free PTEs.
 <span id="Bit_1__0x2_"></span><span id="bit_1__0x2_"></span><span id="BIT_1__0X2_"></span>Bit 1 (0x2)  
 (Windows 2000 only) Displays unused pages in the page usage statistics.
 
-(Windows XP and later) Displays information about free PTEs in the global special pool.
+Displays information about free PTEs in the global special pool.
 
 <span id="Bit_2__0x4_"></span><span id="bit_2__0x4_"></span><span id="BIT_2__0X4_"></span>Bit 2 (0x4)  
 Displays detailed information about any system PTEs that are allocated to mapping locked pages.

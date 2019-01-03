@@ -62,10 +62,10 @@ If you use the COM protocol, *BaudRate* should match the baud rate that you chos
 If you use the COM protocol, *COMChannel* should match the channel number that you chose when the server was created.
 
 <span id="Protocol"></span><span id="protocol"></span><span id="PROTOCOL"></span>*Protocol*  
-(Windows 2000 and later) If you use the SSL or SPIPE protocol, *Protocol* should match the secure protocol that you used when the server was created.
+If you use the SSL or SPIPE protocol, *Protocol* should match the secure protocol that you used when the server was created.
 
 <span id="Cert"></span><span id="cert"></span><span id="CERT"></span>*Cert*  
-(Windows 2000 and later) If you use the SSL or SPIPE protocol, you should use the identical **certuser=**<em>Cert</em> or **machuser=**<em>Cert</em> parameter that was used when the server was created.
+If you use the SSL or SPIPE protocol, you should use the identical **certuser=**<em>Cert</em> or **machuser=**<em>Cert</em> parameter that was used when the server was created.
 
 <span id="clicon"></span><span id="CLICON"></span>**clicon**  
 Specifies that the debugging server will try to connect to the client through a reverse connection. The client must use **clicon** if and only if the server is using **clicon**. In most cases, the debugging client is started before the debugging server when a reverse connection is used.

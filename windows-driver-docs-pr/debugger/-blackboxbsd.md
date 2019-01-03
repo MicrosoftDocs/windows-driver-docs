@@ -21,7 +21,7 @@ The **!blackboxbsd** extension displays cached Boot Status Data (BSD) informatio
 
 Syntax
 
-```
+```dbgcmd
 !blackboxbsd  
 ```
 
@@ -40,7 +40,7 @@ Driver developers can call the [BugCheckSecondaryDumpDataCallback routine](https
 
 ### Example Command Output
 
-```
+```dbgcmd
 0: kd> !ext.blackboxbsd
 Version: 136
 Product type: 1

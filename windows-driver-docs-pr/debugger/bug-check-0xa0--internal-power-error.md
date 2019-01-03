@@ -3,7 +3,7 @@ title: Bug Check 0xA0 INTERNAL_POWER_ERROR
 description: The INTERNAL_POWER_ERROR bug check has a value of 0x000000A0. This bug check indicates that the power policy manager experienced a fatal error.
 ms.assetid: a763e865-8591-4ed3-b3cd-1cdaecad6e97
 keywords: ["Bug Check 0xA0 INTERNAL_POWER_ERROR", "INTERNAL_POWER_ERROR"]
-ms.date: 05/23/2017
+ms.date: 12/27/2018
 topic_type:
 - apiref
 api_name:
@@ -46,8 +46,8 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <tr class="odd">
 <td align="left"><p>0x1</p></td>
 <td align="left"><p><strong>1:</strong> A device has overrun its maximum number of reference counts.</p>
-<p><strong>2, 3, or 4:</strong> (Windows Server 2003, Windows XP, and Windows 2000 only) Too many inrush power IRPs have been queued.</p>
-<p><strong>5:</strong> (Windows Server 2003, Windows XP, and Windows 2000 only) The power IRP has been sent to a passive level device object.</p>
+<p><strong>2, 3, or 4:</strong>  Too many inrush power IRPs have been queued.</p>
+<p><strong>5:</strong>  The power IRP has been sent to a passive level device object.</p>
 <p><strong>6:</strong> The system has failed to allocate a necessary power IRP.</p></td>
 <td align="left"><p>If Parameter 2 has a value of 1, the maximum number of references allowed.</p>
 <p>If Parameter 2 has a value of 2, 3, or 4, the maximum number of pending IRPs allowed.</p>
@@ -464,7 +464,9 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 </tbody>
 </table>
 
- 
+
+
+
 
 Resolution
 ----------
