@@ -333,16 +333,26 @@ The following table shows the code and name of each bug check.
 | 0x00000159 | [**HAL\_ILLEGAL\_IOMMU\_PAGE\_FAULT**](bug-check-0x159--hal-illegal-iommu-page-fault.md)                                                          |
 | 0x0000015A | [**SDBUS\_INTERNAL\_ERROR**](bug-check-0x15a--sdbus-internal-error.md)                                                                            |
 | 0x0000015B | [**WORKER\_THREAD\_RETURNED\_WITH\_SYSTEM\_PAGE\_PRIORITY\_ACTIVE**](bug-check-0x15b--worker-thread-returned-with-system-page-priority-active.md) |
-| 0x0000015C | [**PDC\_WATCHDOG\_TIMEOUT\_LIVEDUMP**](bug-check-0x15c--pdc-watchdog-timeout-livedump.md)                                                         |
+| 0x0000015C | [**PDC\_WATCHDOG\_TIMEOUT\_LIVEDUMP**](bug-check-0x15c--pdc-watchdog-timeout-livedump.md)              
+| 0x0000015D | [**SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP**](bug-check-0x15d-soc-subsystem-failure-livedump.md)              
+| 0x0000015E | [**BUGCODE\_NDIS\_DRIVER\_LIVE\_DUMP**](bug-check-0x15e-bugcode-ndis-driver-live-dump.md)                                                         |
 | 0x0000015F | [**CONNECTED\_STANDBY\_WATCHDOG\_TIMEOUT\_LIVEDUMP**](bug-check-0x15f--connected-standby-watchdog-timeout-livedump.md)                            |
 | 0x00000160 | [**WIN32K\_ATOMIC\_CHECK\_FAILURE**](bug-check-0x160--win32k-atomic-check-failure.md)                                                             |
 | 0x00000161 | [**LIVE\_SYSTEM\_DUMP**](bug-check-0x161--live-system-dump.md)                                                                                    |
 | 0x00000162 | [**KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE**](bug-check-0x162--kernel-auto-boost-invalid-lock-release.md)                                     |
 | 0x00000163 | [**WORKER\_THREAD\_TEST\_CONDITION**](bug-check-0x162--worker-thread-test-condition.md)                                                           |
-| 0x00000164 | [**WIN32K\_CRITICAL\_FAILURE**](bug-check-0x164--win32k-critical-failure.md)                                                                      |
+| 0x00000164 | [**WIN32K\_CRITICAL\_FAILURE**](bug-check-0x164--win32k-critical-failure.md)
+| 0x00000165 | [**CLUSTER\_CSV\_STATUS\_IO\_TIMEOUT\_LIVEDUMP**](bug-check-0x165--cluster-csv-staus-io-timeout-livedump.md)
+| 0x00000166 | [**CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP**](bug-check-0x166--cluster-resource-call-timeout-livedump.md)
+| 0x00000167| [**CLUSTER\_CVS\_SNAPSHOT\_DEVICE\_INFO\_TIMEOUT\_LIVEDUMP**](bug-check-0x167--cluster-csv-snapshot-device-info-timeout-livedump.md)
+| 0x00000168| [**CLUSTER\_CVS\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP**](bug-check-0x168--cluster-csv-state-transition-timeout-livedump.md)
+| 0x00000169| [**CLUSTER\_CVS\_VOLUME\_ARRIVAL\_LIVEDUMP**](bug-check-0x169--cluster-csv-volume-arival-livedump.md)
+| 0x0000016A | [**CLUSTER\_CVS\_VOLUME\_REMOVAL\_LIVEDUMP**](bug-check-0x16a--cluster-csv-volume-removal-livedump.md)
+| 0x0000016B | [**CLUSTER\_CVS_\CLUSTER\_WATCHDOG_\LIVEDUMP**](bug-check-0x16b--cluster-watchdog-livedump.md)
 | 0x0000016C | [**INVALID\_RUNDOWN\_PROTECTION\_FLAGS**](bug-check-0x16c--invalid-rundown-protection-flags.md)                                                   |
 | 0x0000016D | [**INVALID\_SLOT\_ALLOCATOR\_FLAGS**](bug-check-0x16d--invalid-slot-allocator-flags.md)                                                           |
 | 0x0000016E | [**ERESOURCE\_INVALID\_RELEASE**](bug-check-0x16e--eresource-invalid-release.md)                                                                  |
+| 0x0000016F | [**CLUSTER\_CVS_\STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP**](bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md)
 | 0x00000175 | [**PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR**](bug-check-0x175--previous-fatal-abnormal-reset-error.md)                                            |
 | 0x00000178 | [**ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR**](bug-check-0x175--elam-driver-detected-fatal-error.md)                                                  |
 | 0x0000017B | [**PROFILER\_CONFIGURATION\_ILLEGAL**](bug-check-0x17b--profiler-configuration-illegal.md)                                                          | 

@@ -2363,12 +2363,28 @@
       href: bug-check-0x162--worker-thread-test-condition.md
     - name: "Bug Check 0x164: WIN32K_CRITICAL_FAILURE"
       href: bug-check-0x164--win32k-critical-failure.md
+    - name: "Bug Check 0x165: CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x165--cluster-csv-staus-io-timeout-livedump.md
+    - name: "Bug Check 0x166: CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x166--cluster-resource-call-timeout-livedump.md
+    - name: "Bug Check 0x167: CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x167--cluster-csv-snapshot-device-info-timeout-livedump.md
+    - name: "Bug Check 0x168: CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x168--cluster-csv-state-transition-timeout-livedump.md
+    - name: "Bug Check 0x169: CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP"
+      href: bug-check-0x169--cluster-csv-volume-arival-livedump.md
+    - name: "Bug Check 0x16A: CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP"
+      href: bug-check-0x16a--cluster-csv-volume-removal-livedump.md
+    - name: "Bug Check 0x16B: CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP"
+      href: bug-check-0x16b--cluster-csv-cluster-watchdog-livedump.md
     - name: "Bug Check 0x16C: INVALID_RUNDOWN_PROTECTION_FLAGS"
       href: bug-check-0x16c--invalid-rundown-protection-flags.md
     - name: "Bug Check 0x16D: INVALID_SLOT_ALLOCATOR_FLAGS"
       href: bug-check-0x16d--invalid-slot-allocator-flags.md
     - name: "Bug Check 0x16E: ERESOURCE_INVALID_RELEASE"
       href: bug-check-0x16e--eresource-invalid-release.md
+    - name: "Bug Check 0x16F: CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md
     - name: "Bug Check 0x175: PREVIOUS_FATAL_ABNORMAL_RESET_ERROR"
       href: bug-check-0x175--previous-fatal-abnormal-reset-error.md
     - name: "Bug Check 0x178: ELAM_DRIVER_DETECTED_FATAL_ERROR"

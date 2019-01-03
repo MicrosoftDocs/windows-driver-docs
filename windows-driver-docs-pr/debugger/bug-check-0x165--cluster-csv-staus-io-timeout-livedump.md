@@ -42,7 +42,7 @@ Additional information is available in the dump's secondary data streams.
 ## See Also
 ----------
 
-[Troubleshooting Hangs Using Live Dump](https://blogs.msdn.microsoft.com/clustering/2016/03/02/troubleshooting-hangs-using-live-dump/)
+[Troubleshooting Hangs Using Live Dump (Blog)](https://blogs.msdn.microsoft.com/clustering/2016/03/02/troubleshooting-hangs-using-live-dump/)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

@@ -2,7 +2,7 @@
 title: Bug Check 0x166 CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP
 description: The CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP bug check has a value of 0x00000166. This indicates that a Cluster Resource call took longer than configured timeout.
 keywords: ["Bug Check 0x166 CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP", "CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP"]
-ms.date: 12/27/2018
+ms.date: 01/03/2019
 topic_type:
 - apiref
 api_name:
@@ -60,7 +60,7 @@ A Cluster Resource call took longer than configured timeout. The system generate
 ## See Also
 ----------
 
-[Troubleshooting Hangs Using Live Dump (Blog)](https://blogs.msdn.microsoft.com/clustering/2016/03/02/troubleshooting-hangs-using-live-dump/)
+[Troubleshooting Hangs Using Live Dump](https://blogs.msdn.microsoft.com/clustering/2016/03/02/troubleshooting-hangs-using-live-dump/)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
