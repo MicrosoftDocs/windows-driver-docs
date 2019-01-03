@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This section contains descriptions of common bug check codes, including the parameters displayed with the error code on the blue bug check screen. This section also describes how you can diagnose the fault which led to the bug check, as well as possible ways to deal with the error.
 
-> [!NOTE] >  This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
+[!NOTE] This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
 
 If a specific bug check code does not appear in this reference, use the [**!analyze**](-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode):
 
