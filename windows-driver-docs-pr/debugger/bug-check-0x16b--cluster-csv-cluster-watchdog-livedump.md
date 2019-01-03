@@ -12,14 +12,14 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# Bug Check 0x16B: CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP
+# Bug Check 0x16B: CLUSTER\_CSV\_CLUSTER\_WATCHDOG\_LIVEDUMP
 
-The CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP bug check has a value of 0x0000016B. This indicates that a Cluster Resource call took longer than configured timeout.
+The CLUSTER\_CSV\_CLUSTER\_WATCHDOG\_LIVEDUMP bug check has a value of 0x0000016B. This indicates that 
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 
-## CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP Parameters
+## CLUSTER\_CSV\_CLUSTER\_WATCHDOG\_LIVEDUMP Parameters
 
 |Parameter|Description|
 |--- |--- |

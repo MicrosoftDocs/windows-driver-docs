@@ -12,14 +12,14 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# Bug Check 0x16A: CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP
+# Bug Check 0x16A: CLUSTER\_CSV\_VOLUME\_REMOVAL\_LIVEDUMP
 
-The CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP bug check has a value of 0x0000016A. This indicates that a Cluster Resource call took longer than configured timeout.
+The CLUSTER\_CSV\_VOLUME\_REMOVAL\_LIVEDUMP bug check has a value of 0x0000016A. This indicates that a Cluster Resource call took longer than configured timeout.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 
-## CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP Parameters
+## CLUSTER\_CSV\_VOLUME\_REMOVAL\_LIVEDUMP Parameters
 
 |Parameter|Description|
 |--- |--- |
