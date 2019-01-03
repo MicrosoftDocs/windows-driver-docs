@@ -69,7 +69,7 @@ The following table lists the environment variables that can be used in both use
 </tr>
 <tr class="odd">
 <td align="left"><p>_NO_DEBUG_HEAP</p></td>
-<td align="left"><p>(Windows XP and later) Specifies that the debug heap should not be used for user-mode debugging.</p></td>
+<td align="left"><p>Specifies that the debug heap should not be used for user-mode debugging.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DBGENG_NO_DEBUG_PRIVILEGE</p></td>

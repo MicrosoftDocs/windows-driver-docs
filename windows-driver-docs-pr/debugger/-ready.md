@@ -35,10 +35,10 @@ Causes the display to include the thread's wait states.
 If this is included without Bit 1 (0x2), this has no effect. If this is included along with Bit 1, the thread is displayed with a stack trace.
 
 <span id="Bit_3__0x8_"></span><span id="bit_3__0x8_"></span><span id="BIT_3__0X8_"></span>Bit 3 (0x8)  
-(Windows XP and later) Causes the display of each function to include the return address, the stack pointer, and (on Itanium systems) the **bsp** register value. The display of function arguments is suppressed.
+Causes the display of each function to include the return address, the stack pointer, and (on Itanium systems) the **bsp** register value. The display of function arguments is suppressed.
 
 <span id="Bit_4__0x10_"></span><span id="bit_4__0x10_"></span><span id="BIT_4__0X10_"></span>Bit 4 (0x10)  
-(Windows XP and later) Causes the display of each function to include only the return address; arguments and stack pointers are suppressed.
+Causes the display of each function to include only the return address; arguments and stack pointers are suppressed.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 

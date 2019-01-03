@@ -65,10 +65,10 @@ Displays information about objects.
 Displays free handle entries. If you do not set this bit and you omit *Handle* or set it to zero, the list of handles that are displayed does not include free handles. If *Handle* specifies a single free handle, it is displayed even if you do not set this bit.
 
 <span id="Bit_4__0x10_"></span><span id="bit_4__0x10_"></span><span id="BIT_4__0X10_"></span>Bit 4 (0x10)  
-(Windows XP and later) Displays the handle from the kernel handle table instead of the current process.
+Displays the handle from the kernel handle table instead of the current process.
 
 <span id="Bit_5__0x20_"></span><span id="bit_5__0x20_"></span><span id="BIT_5__0X20_"></span>Bit 5 (0x20)  
-(Windows XP and later) Interprets the handle as a thread ID or process ID and displays information about the corresponding kernel object.
+Interprets the handle as a thread ID or process ID and displays information about the corresponding kernel object.
 
 <span id="_______Process______"></span><span id="_______process______"></span><span id="_______PROCESS______"></span> *Process*   
 (Kernel mode only) Specifies a process. You can use the process ID or the hexadecimal address of the process object. This parameter must refer to a currently running process on the target system. If this parameter is -1 or if you omit it, the current process is used. If this parameter is 0, handle information from all processes is displayed.
