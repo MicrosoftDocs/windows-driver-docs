@@ -341,26 +341,28 @@ The following table shows the code and name of each bug check.
 | 0x00000161 | [**LIVE\_SYSTEM\_DUMP**](bug-check-0x161--live-system-dump.md)                                                                                    |
 | 0x00000162 | [**KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE**](bug-check-0x162--kernel-auto-boost-invalid-lock-release.md)                                     |
 | 0x00000163 | [**WORKER\_THREAD\_TEST\_CONDITION**](bug-check-0x162--worker-thread-test-condition.md)                                                           |
-| 0x00000164 | [**WIN32K\_CRITICAL\_FAILURE**](bug-check-0x164--win32k-critical-failure.md)
-| 0x00000165 | [**CLUSTER\_CSV\_STATUS\_IO\_TIMEOUT\_LIVEDUMP**](bug-check-0x165--cluster-csv-staus-io-timeout-livedump.md)
-| 0x00000166 | [**CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP**](bug-check-0x166--cluster-resource-call-timeout-livedump.md)
-| 0x00000167 | [**CLUSTER\_CSV\_SNAPSHOT\_DEVICE\_INFO\_TIMEOUT\_LIVEDUMP**](bug-check-0x167--cluster-csv-snapshot-device-info-timeout-livedump.md)
-| 0x00000168 | [**CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP**](bug-check-0x168--cluster-csv-state-transition-timeout-livedump.md)
-| 0x00000169 | [**CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP**](bug-check-0x169--cluster-csv-volume-arival-livedump.md)
-| 0x0000016A | [**CLUSTER\_CSV\_VOLUME\_REMOVAL\_LIVEDUMP**](bug-check-0x16a--cluster-csv-volume-removal-livedump.md)
-| 0x0000016B | [**CLUSTER\_CSV_\_CLUSTER\_WATCHDOG_\LIVEDUMP**](bug-check-0x16b--cluster-csv-cluster-watchdog-livedump.md)
+| 0x00000164 | [**WIN32K\_CRITICAL\_FAILURE**](bug-check-0x164--win32k-critical-failure.md)                                                                      |
+| 0x00000165 | [**CLUSTER\_CSV\_STATUS\_IO\_TIMEOUT\_LIVEDUMP**](bug-check-0x165--cluster-csv-staus-io-timeout-livedump.md)                                      | 
+| 0x00000166 | [**CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP**](bug-check-0x166--cluster-resource-call-timeout-livedump.md)                                      |
+| 0x00000167 | [**CLUSTER\_CSV\_SNAPSHOT\_DEVICE\_INFO\_TIMEOUT\_LIVEDUMP**](bug-check-0x167--cluster-csv-snapshot-device-info-timeout-livedump.md)              |    
+| 0x00000168 | [**CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP**](bug-check-0x168--cluster-csv-state-transition-timeout-livedump.md)                       |   
+| 0x00000169 | [**CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP**](bug-check-0x169--cluster-csv-volume-arival-livedump.md)                                             |      
+| 0x0000016A | [**CLUSTER\_CSV\_VOLUME\_REMOVAL\_LIVEDUMP**](bug-check-0x16a--cluster-csv-volume-removal-livedump.md)                                            |    
+| 0x0000016B | [**CLUSTER\_CSV_\_CLUSTER\_WATCHDOG_\LIVEDUMP**](bug-check-0x16b--cluster-csv-cluster-watchdog-livedump.md)                                       |   
 | 0x0000016C | [**INVALID\_RUNDOWN\_PROTECTION\_FLAGS**](bug-check-0x16c--invalid-rundown-protection-flags.md)                                                   |
 | 0x0000016D | [**INVALID\_SLOT\_ALLOCATOR\_FLAGS**](bug-check-0x16d--invalid-slot-allocator-flags.md)                                                           |
 | 0x0000016E | [**ERESOURCE\_INVALID\_RELEASE**](bug-check-0x16e--eresource-invalid-release.md)                                                                  |
-| 0x0000016F | [**CLUSTER\_CSV_\STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP**](bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md)
+| 0x0000016F | [**CLUSTER\_CSV_\STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP**](bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md)           |
+| 0x00000171 | [**CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG**](bug-check-0x171--cluster-csv-clussvc-disconnect-watchdog.md)                                    |
 | 0x00000175 | [**PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR**](bug-check-0x175--previous-fatal-abnormal-reset-error.md)                                            |
 | 0x00000178 | [**ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR**](bug-check-0x175--elam-driver-detected-fatal-error.md)                                                  |
-| 0x0000017B | [**PROFILER\_CONFIGURATION\_ILLEGAL**](bug-check-0x17b--profiler-configuration-illegal.md)                                                          | 
-| 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                               |
+| 0x00000179 | [**CLUSTER\_CLUSPORT\_STATUS\_IO\_TIMEOUT\_LIVEDUMP**](bug-check-0x179--cluster-clusport-status-io-timeout-livedump.md)                           |
+| 0x0000017B | [**PROFILER\_CONFIGURATION\_ILLEGAL**](bug-check-0x17b--profiler-configuration-illegal.md)                                                        | 
+| 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                              |
 | 0x00000188 | [**CLUSTER\_CSVFS\_LIVEDUMP**](bug-check-0x188--cluster-csvfs-livedump.md)                                                                        |
 | 0x00000189 | [**BAD\_OBJECT\_HEADER**](bug-check-0x189--bad-object-header.md)                                                                                  |
 | 0x0000018B | [**SECURE\_KERNEL\_ERROR**](bug-check-0x18b--secure-kernel-error.md)                                                                              |
-| 0x0000018E | [**KERNEL\_PARTITION\_REFERENCE\_VIOLATION**](bug-check-0x18e--kernel-partition-reference-violation.md)                                              |
+| 0x0000018E | [**KERNEL\_PARTITION\_REFERENCE\_VIOLATION**](bug-check-0x18e--kernel-partition-reference-violation.md)                                           |
 | 0x00000190 | [**WIN32K\_CRITICAL\_FAILURE\_LIVEDUMP**](bug-check-0x190--win32k-critical-failure-livedump.md)                                                   |
 | 0x00000191 | [**PF\_DETECTED\_CORRUPTION**](bug-check-0x191--pf-detected-corruption.md)                                                                        |
 | 0x00000192 | [**KERNEL\_AUTO\_BOOST\_LOCK\_ACQUISITION\_WITH\_RAISED\_IRQL**](bug-check-0x192--kernel-auto-boost-lock-acquisition-with-raised-irql.md)         |

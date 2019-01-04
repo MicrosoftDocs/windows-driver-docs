@@ -2385,10 +2385,14 @@
       href: bug-check-0x16e--eresource-invalid-release.md
     - name: "Bug Check 0x16F: CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP"
       href: bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md
+    - name: "Bug Check 0x171: CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG"
+      href: bug-check-0x171--cluster-csv-clussvc-disconnect-watchdog.md
     - name: "Bug Check 0x175: PREVIOUS_FATAL_ABNORMAL_RESET_ERROR"
       href: bug-check-0x175--previous-fatal-abnormal-reset-error.md
     - name: "Bug Check 0x178: ELAM_DRIVER_DETECTED_FATAL_ERROR"
       href: bug-check-0x175--elam-driver-detected-fatal-error.md
+    - name: "Bug Check 0x179: CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x179--cluster-clusport-status-io-timeout-livedump.md
     - name: "Bug Check 0x17B PROFILER_CONFIGURATION_ILLEGAL"
       href: bug-check-0x17b--profiler-configuration-illegal.md
     - name: "Bug Check 0x187: VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD"

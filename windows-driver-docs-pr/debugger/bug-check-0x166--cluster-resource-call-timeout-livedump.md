@@ -28,7 +28,7 @@ The CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP bug check has a value of 0x000001
 |3|Resource call type - listed below.|
 |4|Subcode. When parameter 3 equals 8 then this parameter contains cluster resource control code. When parameter 3 equals 9 then this parameter contains cluster resource type control code.|
 
-**Resource Call Type**
+**Resource call type**
 
     1  OPEN
     2  CLOSE
