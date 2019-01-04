@@ -1575,8 +1575,6 @@
           href: setting-up-exclusion-lists.md
         - name: "Dealing with Unavailable Symbol Stores"
           href: dealing-with-unavailable-symbol-stores.md
-        - name: "Checking and Updating Status"
-          href: checking-and-updating-status.md
         - name: "Handling File Pointers"
           href: handling-file-pointers.md
         - name: "Caching Acquired Symbol Files"
