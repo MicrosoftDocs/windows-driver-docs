@@ -2403,6 +2403,10 @@
       href: bug-check-0x189--bad-object-header.md
     - name: "Bug Check 0x18B: SECURE_KERNEL_ERROR"
       href: bug-check-0x18b--secure-kernel-error.md
+    - name: "Bug Check 0x18C: HYPERGUARD_VIOLATION"
+      href: bug-check-0x18c--hyperguard-violation.md
+    - name: "Bug Check 0x18D: SECURE_FAULT_UNHANDLED"
+      href: bug-check-0x18d--secure-fault-unhandled.md
     - name: "Bug Check 0x18E: KERNEL_PARTITION_REFERENCE_VIOLATION"
       href: bug-check-0x18e--kernel-partition-reference-violation.md
     - name: "Bug Check 0x190: WIN32K_CRITICAL_FAILURE_LIVEDUMP"
