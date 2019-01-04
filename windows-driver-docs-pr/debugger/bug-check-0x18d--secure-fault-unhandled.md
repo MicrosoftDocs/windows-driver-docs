@@ -1,7 +1,7 @@
 ---
-title: Bug Check 0x1B SECURE_FAULT_UNHANDLED
+title: Bug Check 0x18D SECURE_FAULT_UNHANDLED
 description: The SECURE_FAULT_UNHANDLED bug check has a value of 0x0000018D. It indicates that a secure fault originated by the secure kernel could not be handled.
-keywords: ["Bug Check 0x1B SECURE_FAULT_UNHANDLED", "SECURE_FAULT_UNHANDLED"]
+keywords: ["Bug Check 0x18D SECURE_FAULT_UNHANDLED", "SECURE_FAULT_UNHANDLED"]
 ms.date: 01/04/2019
 topic_type:
 - apiref
@@ -12,7 +12,7 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# Bug Check 0x1B: SECURE\_FAULT\_UNHANDLED
+# Bug Check 0x18D: SECURE\_FAULT\_UNHANDLED
 
 The SECURE\_FAULT\_UNHANDLED bug check has a value of 0x0000018D.
 
