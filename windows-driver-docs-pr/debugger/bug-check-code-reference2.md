@@ -354,6 +354,8 @@ The following table shows the code and name of each bug check.
 | 0x0000016E | [**ERESOURCE\_INVALID\_RELEASE**](bug-check-0x16e--eresource-invalid-release.md)                                                                  |
 | 0x0000016F | [**CLUSTER\_CSV_\STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP**](bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md)           |
 | 0x00000171 | [**CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG**](bug-check-0x171--cluster-csv-clussvc-disconnect-watchdog.md)                                    |
+| 0x00000173 | [**COREMSGCALL\_INTERNAL\_ERROR**](bug-check-0x173--coremsgcall-internal-error.md)                                    |
+| 0x00000174 | [**COREMSG\_INTERNAL\_ERROR**](bug-check-0x174--coremsg-internal-error.md)                                    |
 | 0x00000175 | [**PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR**](bug-check-0x175--previous-fatal-abnormal-reset-error.md)                                            |
 | 0x00000178 | [**ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR**](bug-check-0x175--elam-driver-detected-fatal-error.md)                                                  |
 | 0x00000179 | [**CLUSTER\_CLUSPORT\_STATUS\_IO\_TIMEOUT\_LIVEDUMP**](bug-check-0x179--cluster-clusport-status-io-timeout-livedump.md)                           |

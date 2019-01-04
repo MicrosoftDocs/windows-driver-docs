@@ -2387,6 +2387,10 @@
       href: bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md
     - name: "Bug Check 0x171: CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG"
       href: bug-check-0x171--cluster-csv-clussvc-disconnect-watchdog.md
+    - name: "Bug Check 0x173: COREMSGCALL_INTERNAL_ERROR"
+      href: bug-check-0x173--coremsgcall-internal-error.md
+    - name: "Bug Check 0x174: COREMSG_INTERNAL_ERROR"
+      href: bug-check-0x174--coremsg-internal-error.md
     - name: "Bug Check 0x175: PREVIOUS_FATAL_ABNORMAL_RESET_ERROR"
       href: bug-check-0x175--previous-fatal-abnormal-reset-error.md
     - name: "Bug Check 0x178: ELAM_DRIVER_DETECTED_FATAL_ERROR"
