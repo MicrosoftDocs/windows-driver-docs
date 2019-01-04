@@ -2399,6 +2399,10 @@
       href: bug-check-0x179--cluster-clusport-status-io-timeout-livedump.md
     - name: "Bug Check 0x17B PROFILER_CONFIGURATION_ILLEGAL"
       href: bug-check-0x17b--profiler-configuration-illegal.md
+    - name: "Bug Check 0x17C PDC_LOCK_WATCHDOG_LIVEDUMP "
+      href: bug-check-0x17c--pdc-lock-watchdog-livedump.md
+    - name: "Bug Check 0x17D PDC_UNEXPECTED_REVOCATION_LIVEDUMP"
+      href: bug-check-0x17d-unexpected-revocation-livedump.md
     - name: "Bug Check 0x187: VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD"
       href: bug-check-0x187--video-dwminit-timeout-fallback-bdd.md
     - name: "Bug Check 0x188: CLUSTER_CSVFS_LIVEDUMP"
