@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # Bug Check 0x18C: HYPERGUARD\_VIOLATION 
 
-The HYPERGUARD\_VIOLATION bug check has a value of 0x0000018C.It indicates that the kernel has detected that critical kernel code or data have been corrupted.
+The HYPERGUARD\_VIOLATION bug check has a value of 0x0000018C. This indicates that the kernel has detected that critical kernel code or data have been corrupted.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
@@ -22,7 +22,7 @@ The HYPERGUARD\_VIOLATION bug check has a value of 0x0000018C.It indicates that 
 > This bug code is reserved for use by Hyperguard only.  
 > It is  not a general purpose bug code intended for use by other components in data corruption scenarios.  
 > Instead, define a unique bug code for your component.   
-> Do not use this bug code in your component!
+> Do not use this bug code in your component.
 >
 
  ## HYPERGUARD\_VIOLATION Parameters
