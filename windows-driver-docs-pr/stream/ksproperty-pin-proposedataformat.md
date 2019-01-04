@@ -11,7 +11,7 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 12/28/2018
 ms.localizationpriority: medium
 ---
 
@@ -58,17 +58,21 @@ Clients use the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT property to determine if pins
 Remarks
 -------
 
-[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) is only supported in Windows 7 and later versions of Windows. This function allows the audio driver to provide information about the default data format on a pin. In Windows Vista **KSPROPERTY\_TYPE\_GET** is *not supported*.
-
-Specify this property using KSP\_PIN, where the member specifies the relevant pin factory.
+KSPROPERTY_PIN_PROPOSEDATAFORMAT includes a structure of type KSDATAFORMAT, specifying the proposed data format. Specify this property using KSP_PIN, where the member specifies the relevant pin factory.
 
 KSPROPERTY\_PIN\_PROPOSEDATAFORMAT includes a structure of type [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656), specifying the proposed data format.
 
-The KS filter returns STATUS\_SUCCESS if pins can be reset to the proposed data format, or an error code otherwise.
+[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) is supported in Windows 7 and later versions of Windows. In Windows Vista **KSPROPERTY\_TYPE\_GET** is *not supported*. 
 
-Stream minidrivers do not need to handle this property directly; the stream class driver handles this property using stream request blocks to query for more information.
+**KSPROPERTY_TYPE_GET** with this property allows the audio driver to provide information about the default data format on a pin. **KSPROPERTY_TYPE_GET** 
+is optional to implement for this property unless the driver supports [**KSEVENT_PINCAPS_FORMATCHANGE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksevent-pincaps-formatchange). 
+ 
 
-This property does not actually change the data format. Clients use [**KSPROPERTY\_CONNECTION\_DATAFORMAT**](ksproperty-connection-dataformat.md) to change the data format.
+The KS filter returns STATUS\_SUCCESS when using this property with KSPROPERTY_TYPE_SET if pins can be set to or opened with the proposed data format. If the pin cannot be set to the proposed data format, then it returns STATUS_NO_MATCH. For any other failures, an appropriate error is returned. If the driver supports [**KSPROPERTY_AUDIOSIGNALPROCESSING_MODES**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiosignalprocessing-modes), this property should return STATUS_SUCCESS if the format is supported by any of the Audio signal processing modes. 
+
+
+Using KSPROPERTY_TYPE_SET with this property does not actually change the data format. Clients use [**KSPROPERTY\_CONNECTION\_DATAFORMAT**](ksproperty-connection-dataformat.md) to change the data format. **KSPROPERTY_TYPE_SET** is optional to implement for this property.
+
 
 Requirements
 ------------
@@ -92,11 +96,14 @@ Requirements
 [**KSP\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff566722)
 
 [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656)
-
  
+[**KSEVENT_PINCAPS_FORMATCHANGE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksevent-pincaps-formatchange)
 
+[**KS Properites**](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/ks-properties)
+
+[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
  
-
+[**KSPROPERTY_AUDIOSIGNALPROCESSING_MODES**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiosignalprocessing-modes)
 
 
 
