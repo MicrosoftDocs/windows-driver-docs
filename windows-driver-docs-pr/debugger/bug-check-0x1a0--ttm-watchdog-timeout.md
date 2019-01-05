@@ -12,7 +12,7 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# Bug Check 0x1B: TTM\_WATCHDOG\_TIMEOUT
+# Bug Check 0x1A0: TTM\_WATCHDOG\_TIMEOUT
 
 The TTM\_WATCHDOG\_TIMEOUT bug check has a value of 0x000001A0. It indicates that the terminal topology manager detected that for the configured timeouts some device specific operations did not complete.
 
