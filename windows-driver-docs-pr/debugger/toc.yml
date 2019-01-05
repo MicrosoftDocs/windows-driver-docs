@@ -2385,6 +2385,8 @@
       href: bug-check-0x16e--eresource-invalid-release.md
     - name: "Bug Check 0x16F: CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP"
       href: bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md
+    - name: "Bug Check 0x170: CRYPTO_LIBRARY_INTERNAL_ERROR"
+      href: bug-check-0x170--crypto-library-internal-error.md
     - name: "Bug Check 0x171: CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG"
       href: bug-check-0x171--cluster-csv-clussvc-disconnect-watchdog.md
     - name: "Bug Check 0x173: COREMSGCALL_INTERNAL_ERROR"
@@ -2443,6 +2445,8 @@
       href: bug-check-0x19c--win32k-power-watchdog-timeout.md
     - name: "Bug Check 0x19D: CLUSTER_SVHDX_LIVEDUMP"
       href: bug-check-0x19d--cluster-svhdx-livedump.md
+    - name: "Bug Check 0x1A0: TTM_WATCHDOG_TIMEOUT"
+      href: bug-check-0x1a0--ttm-watchdog-timeout.md
     - name: "Bug Check 0x1A3: CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP"
       href: bug-check-0x1a3--call-has-not-returned-watchdog-timeout-livedump.md
     - name: "Bug Check 0x1A4: DRIPS_SW_HW_DIVERGENCE_LIVEDUMP"
