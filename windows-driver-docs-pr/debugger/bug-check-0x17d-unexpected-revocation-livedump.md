@@ -18,26 +18,23 @@ The PDC\_UNEXPECTED\_REVOCATION\_LIVEDUMP bug check has a value of 0x0000017D. I
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
- ## COREMSGCALL\_INTERNAL\_ERROR Parameters
+
+ ## PDC\_UNEXPECTED\_REVOCATION\_LIVEDUMP Parameters
 
 |Parameter|Description|
 |--- |--- |
-|1| .|
-|2| . |
-|3| Reserved |
-|4| Reserved |
+|1| The client ID of the revoked activator.|
+|2| The revoked activator client. |
+|3| The revoked activation instance.|
+|4| pdc!_PDC_CLIENT_PROCESS_INFO |
 
-
-
-PARAMETERS
-    1 - The client ID of the revoked activator.
-    2 - The revoked activator client.
-    3 - The revoked activation instance.
-    4 - pdc!_PDC_CLIENT_PROCESS_INFO
 
 ## Cause
 -----
 
+An activator has been revoked unexpectedly.
+
+A livedump is created to provide information to investigate.
 
 (This code can never be used for a real bugcheck.)
 
