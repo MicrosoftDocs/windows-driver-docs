@@ -100,9 +100,9 @@ if (SUCCEEDED(hr))
 }
 ```
 
-In the preceding code example, variable `pIAsyncCallback` is a pointer to the caller's implementation of the [IPrintAsyncNotifyCallback](http://go.microsoft.com/fwlink/p/?linkid=124755) interface.
+In the preceding code example, variable `pIAsyncCallback` is a pointer to the caller's implementation of the [IPrintAsyncNotifyCallback](https://go.microsoft.com/fwlink/p/?linkid=124755) interface.
 
-In some cases, you must release the bidirectional notification channel when you are done with it. To do this, call the [Release](http://go.microsoft.com/fwlink/p/?linkid=98433) method on [IPrintAsyncNotifyChannel](http://go.microsoft.com/fwlink/p/?linkid=124758). For information about when to release a channel, see [Notification Channel](notification-channel.md).
+In some cases, you must release the bidirectional notification channel when you are done with it. To do this, call the [Release](https://go.microsoft.com/fwlink/p/?linkid=98433) method on [IPrintAsyncNotifyChannel](https://go.microsoft.com/fwlink/p/?linkid=124758). For information about when to release a channel, see [Notification Channel](notification-channel.md).
 
 ### Impersonation and Notification
 

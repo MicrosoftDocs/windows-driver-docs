@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # How to capture a USB event trace with Logman
 
 
-This topic provides information about using the [Logman](http://go.microsoft.com/fwlink/p/?linkid=617153) tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.
+This topic provides information about using the [Logman](https://go.microsoft.com/fwlink/p/?linkid=617153) tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.
 
 ### Prerequisites
 

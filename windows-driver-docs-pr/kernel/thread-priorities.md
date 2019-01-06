@@ -19,7 +19,7 @@ Most standard driver routines are run in an arbitrary thread context, ahead of a
 
 Threads, whatever their respective run-time priorities, are run at IRQL = PASSIVE\_LEVEL. Many standard driver routines are run at an IRQL &gt; PASSIVE\_LEVEL, such as DISPATCH\_LEVEL or DIRQL.
 
-For more information about thread priorities, see the [Scheduling, Thread Context, and IRQL](http://go.microsoft.com/fwlink/p/?linkid=59757) white paper.
+For more information about thread priorities, see the [Scheduling, Thread Context, and IRQL](https://go.microsoft.com/fwlink/p/?linkid=59757) white paper.
 
  
 

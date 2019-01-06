@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Consult the relevant Device Class Power Management Reference Specification to find out which device power states are defined for the class of device with which you are working with and what the operational requirements are for each state. These specifications are available at the [ACPI / Power Management](http://go.microsoft.com/fwlink/p/?linkid=57185) website.
+Consult the relevant Device Class Power Management Reference Specification to find out which device power states are defined for the class of device with which you are working with and what the operational requirements are for each state. These specifications are available at the [ACPI / Power Management](https://go.microsoft.com/fwlink/p/?linkid=57185) website.
 
 Legacy devices and other devices for which no power management specification exists should follow the Default Device Class Power Management Specification. The default specification requires:
 

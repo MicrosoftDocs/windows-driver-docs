@@ -108,7 +108,7 @@ Examples of these restrictions include, but are not limited to the list in the f
 
  
 
-For more information about the driver publishing workflow, see [Windows 10 Driver Publishing Workflow](http://go.microsoft.com/fwlink/p/?LinkId=617374).
+For more information about the driver publishing workflow, see [Windows 10 Driver Publishing Workflow](https://go.microsoft.com/fwlink/p/?LinkId=617374).
 
  
 

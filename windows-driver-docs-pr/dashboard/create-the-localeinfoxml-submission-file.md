@@ -18,7 +18,7 @@ The data in the LocaleInfo.xml document is formatted based on the LocaleInfo XML
 > [!NOTE]
 > The XML document must be saved by using UTF-8 encoding.
 
-For more information about address ranges, see [How to Create a Device Metadata Package for Devices and Printers](http://go.microsoft.com/fwlink/?LinkId=253559).
+For more information about address ranges, see [How to Create a Device Metadata Package for Devices and Printers](https://go.microsoft.com/fwlink/?LinkId=253559).
 
 ### <span id="LocaleInfo_XML_Schema_NameSpace"></span><span id="localeinfo_xml_schema_namespace"></span><span id="LOCALEINFO_XML_SCHEMA_NAMESPACE"></span>LocaleInfo XML Schema NameSpace
 

@@ -14,7 +14,7 @@ How a user-mode application processes WM\_DEVICECHANGE messages depends on wheth
 
 ### Win32 applications
 
-Win32-based applications process the messages that are sent to the application's window(s) by implementing a *Window Procedure*. For more information about window procedures, see the [Window Procedures](http://go.microsoft.com/fwlink/p/?linkid=96748) topic in the Microsoft Windows SDK documentation.
+Win32-based applications process the messages that are sent to the application's window(s) by implementing a *Window Procedure*. For more information about window procedures, see the [Window Procedures](https://go.microsoft.com/fwlink/p/?linkid=96748) topic in the Microsoft Windows SDK documentation.
 
 The following code example shows how to process WM\_DEVICECHANGE messages in a Win32-based application:
 
@@ -155,7 +155,7 @@ OnDeviceChange(
 
 ### MFC applications
 
-The MFC framework processes the messages that are sent to an MFC-based application's window(s). An MFC-based application must implement an [OnDeviceChange](http://go.microsoft.com/fwlink/p/?linkid=97894) member function for the application's window class that receives the WM\_DEVICECHANGE messages.
+The MFC framework processes the messages that are sent to an MFC-based application's window(s). An MFC-based application must implement an [OnDeviceChange](https://go.microsoft.com/fwlink/p/?linkid=97894) member function for the application's window class that receives the WM\_DEVICECHANGE messages.
 
 The following code example shows how to implement an **OnDeviceChange** member function in an MFC-based application:
 

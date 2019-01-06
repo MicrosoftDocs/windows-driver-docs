@@ -3,7 +3,9 @@ title: C28640
 description: Warning C28640 function delayload stub should be a static function.
 ms.assetid: 7e4c675b-5f5c-461a-bf80-cd7ba0d8832c
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: medium 
+f1_keywords: 
+  - "C28640"
 ---
 
 # C28640

@@ -33,7 +33,7 @@ ms.localizationpriority: medium
 
 6.  **Review storage driver samples.**
 
-    To access and review the storport miniport driver samples see the [Windows Driver Kit (WDK) samples](http://go.microsoft.com/fwlink/p/?LinkId=618052).
+    To access and review the storport miniport driver samples see the [Windows Driver Kit (WDK) samples](https://go.microsoft.com/fwlink/p/?LinkId=618052).
 
 7.  **Develop, build, test, and debug your storage driver.**
 

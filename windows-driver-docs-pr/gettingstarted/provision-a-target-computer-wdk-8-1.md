@@ -23,7 +23,7 @@ The host and target computers must be able to ping each other by name. This migh
 
 1.  On the target computer, install the operating system that you'll use to run and test your driver.
 
-2.  If Secure Boot is enabled on an x86 or x64 target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](http://go.microsoft.com/fwlink/p/?LinkID=309386).
+2.  If Secure Boot is enabled on an x86 or x64 target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](https://go.microsoft.com/fwlink/p/?LinkID=309386).
 
     If the target computer uses an ARM processor, install the Windows Debug Policy. This can be done only by Microsoft or the manufacturer of the target computer. You do not need to disable Secure Boot.
 
@@ -33,9 +33,9 @@ The host and target computers must be able to ping each other by name. This migh
 
 4.  If the target computer is running an N or KN version of Windows, install the Media Feature Pack for N and KN versions of Windows:
 
-    -   [Media Feature Pack for N and KN versions of Windows 8.1](http://go.microsoft.com/fwlink/p?linkid=329737)
-    -   [Media Feature Pack for N and KN versions of Windows 8](http://go.microsoft.com/fwlink/p?linkid=329738)
-    -   [Media Feature Pack for N and KN versions of Windows 7](http://go.microsoft.com/fwlink/p?linkid=329739)
+    -   [Media Feature Pack for N and KN versions of Windows 8.1](https://go.microsoft.com/fwlink/p?linkid=329737)
+    -   [Media Feature Pack for N and KN versions of Windows 8](https://go.microsoft.com/fwlink/p?linkid=329738)
+    -   [Media Feature Pack for N and KN versions of Windows 7](https://go.microsoft.com/fwlink/p?linkid=329739)
 
 5.  If your target computer is running Windows Server, find the DriverTest folder that was just created by WDK Test Target Setup MSI. (Example: c:\\DriverTest). Right click the **DriverTest** folder, and choose **Properties**. On the **Security** tab, give **Modify** permission to the **Authenticated Users** group.
 
@@ -65,7 +65,7 @@ Now you're ready to provision the target computer from the host computer in Visu
 
 3.  Select a type of debugging connection, and enter the required parameters.
 
-    For more information about setting up debugging over various types of connections, see [Setting Up Kernel-Mode Debugging Manually](../debugger/setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md) in the CHM or online documentation for [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=223405).
+    For more information about setting up debugging over various types of connections, see [Setting Up Kernel-Mode Debugging Manually](../debugger/setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md) in the CHM or online documentation for [Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=223405).
 
 4.  The provisioning process takes several minutes and might automatically reboot the target computer once or twice. When provisioning is complete, click **Finish**.
 

@@ -140,7 +140,7 @@ Version 1.11 adds the following functionality:
 
 -   Added **DbgWaitForSignalTimeoutInSec** to [Registry Values for Debugging Framework-based Drivers](registry-values-for-debugging-kmdf-drivers.md).
 
--   Added [InstallWdf](http://go.microsoft.com/fwlink/p/?linkid=256122), [MultiComp](http://go.microsoft.com/fwlink/p/?linkid=256158), and [SingleComp](http://go.microsoft.com/fwlink/p/?linkid=256158) samples.
+-   Added [InstallWdf](https://go.microsoft.com/fwlink/p/?linkid=256122), [MultiComp](https://go.microsoft.com/fwlink/p/?linkid=256158), and [SingleComp](https://go.microsoft.com/fwlink/p/?linkid=256158) samples.
 
 ## KMDF Version 1.9
 

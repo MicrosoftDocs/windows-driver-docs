@@ -27,7 +27,7 @@ Device power states are characterized by the following attributes:
 
 -   Wake-up capability: Can the device request wake-up from this state? In general, if a device can request wake-up from a given power state (for example, D2), it can also request wake-up from any higher-powered state (D1).
 
-The exact definitions of the power states are device-specific. Not all devices define all the states; many devices define only the D0 and D3 states. See the Device Class Power Management Reference Specification to find out which device power states are defined for a specific device and what the operational requirements are for each state. (The reference specifications are available at the [ACPI / Power Management](http://go.microsoft.com/fwlink/p/?linkid=57185) website.)
+The exact definitions of the power states are device-specific. Not all devices define all the states; many devices define only the D0 and D3 states. See the Device Class Power Management Reference Specification to find out which device power states are defined for a specific device and what the operational requirements are for each state. (The reference specifications are available at the [ACPI / Power Management](https://go.microsoft.com/fwlink/p/?linkid=57185) website.)
 
 The power state of a device need not match the [system power state](system-power-states.md). For example, some devices can be in the off (D3) state even though the system is in the [system working state (S0)](system-working-state-s0.md).
 

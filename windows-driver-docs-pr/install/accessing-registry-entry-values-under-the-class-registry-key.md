@@ -31,11 +31,11 @@ To retrieve a handle to the class registry key for a device setup class, call th
 
 -   Set *Reserved* to **NULL**.
 
-If this call to [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) succeeds, **SetupDiOpenClassRegKeyEx** returns the requested handle. If the function call fails, **SetupDiOpenClassRegKeyEx** returns INVALID_HANDLE_VALUE and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+If this call to [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) succeeds, **SetupDiOpenClassRegKeyEx** returns the requested handle. If the function call fails, **SetupDiOpenClassRegKeyEx** returns INVALID_HANDLE_VALUE and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
-After you retrieve a handle to the class registry key, supply the handle in a call to [RegQueryValueEx](http://go.microsoft.com/fwlink/p/?linkid=95398) and [RegSetValueEx](http://go.microsoft.com/fwlink/p/?linkid=95399) to retrieve or set the registry entry value that corresponds to the device setup class property.
+After you retrieve a handle to the class registry key, supply the handle in a call to [RegQueryValueEx](https://go.microsoft.com/fwlink/p/?linkid=95398) and [RegSetValueEx](https://go.microsoft.com/fwlink/p/?linkid=95399) to retrieve or set the registry entry value that corresponds to the device setup class property.
 
-Call the [RegCloseKey](http://go.microsoft.com/fwlink/p/?linkid=194543) function to close the class registry key after access to the key is no longer required.
+Call the [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) function to close the class registry key after access to the key is no longer required.
 
  
 

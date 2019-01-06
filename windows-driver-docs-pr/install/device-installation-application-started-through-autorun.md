@@ -15,7 +15,7 @@ In this method, the [*device installation application*](https://msdn.microsoft.c
 
 This method has the following advantages:
 
--   Independent hardware vendors (IHVs) can easily use this method to an existing AutoRun-compatible distribution medium by adding one or more [**INF HardwareId directives**](inf-hardwareid-directive.md) to the Autorun.inf file. For more information about and AutoRun and AutoRun-enabled applications, see [Creating an AutoRun-Enabled Application](http://go.microsoft.com/fwlink/p/?linkid=133162).
+-   Independent hardware vendors (IHVs) can easily use this method to an existing AutoRun-compatible distribution medium by adding one or more [**INF HardwareId directives**](inf-hardwareid-directive.md) to the Autorun.inf file. For more information about and AutoRun and AutoRun-enabled applications, see [Creating an AutoRun-Enabled Application](https://go.microsoft.com/fwlink/p/?linkid=133162).
 
 -   Only the [driver package](driver-packages.md) must be digitally signed. The device installation application and associated installation files do not have to be digitally signed. For more information about digital signatures, see [Driver Signing](driver-signing.md).
 

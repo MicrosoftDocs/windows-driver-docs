@@ -23,7 +23,7 @@ A UI plug-in can modify the printer property sheet by adding, removing, or repla
 
 If you are using Unidrv from Windows Vista, you can implement the [**IPrintOemUI2::HideStandardUI**](https://msdn.microsoft.com/library/windows/hardware/ff554142) method in the plug-in to hide all of the printer configuration property pages that the standard driver provides. You can use this method if you want to provide a completely custom printer configuration user interface for your printer.
 
-**Important**   Windows Help (WinHlp32.exe) is an application that enables users to view .hlp files. Starting with Windows Vista, the Windows Help application is not included as a part of the Windows operating system. Software developers who develop applications that rely on .hlp files,should transition their files to an alternative Help format, such as .chm, .hxs, .html, or .xml files. For more information, see the [Windows Help program (WinHlp32.exe) is no longer included with Windows](http://go.microsoft.com/fwlink/p/?linkid=80917) KB article.
+**Important**   Windows Help (WinHlp32.exe) is an application that enables users to view .hlp files. Starting with Windows Vista, the Windows Help application is not included as a part of the Windows operating system. Software developers who develop applications that rely on .hlp files,should transition their files to an alternative Help format, such as .chm, .hxs, .html, or .xml files. For more information, see the [Windows Help program (WinHlp32.exe) is no longer included with Windows](https://go.microsoft.com/fwlink/p/?linkid=80917) KB article.
 
  
 

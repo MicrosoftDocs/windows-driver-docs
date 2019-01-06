@@ -38,7 +38,7 @@ For background event handling, you should use the following best practices:
 
 -   Consider showing a toast notification and updating tile in response to a background event. Your mobile broadband app can process the background event payload.
 
-For more info on background tasks, see [Introduction to Background Tasks](http://go.microsoft.com/fwlink/p/?linkid=313924).
+For more info on background tasks, see [Introduction to Background Tasks](https://go.microsoft.com/fwlink/p/?linkid=313924).
 
 ## <span id="stepone"></span><span id="STEPONE"></span>Step 1: Background task contract declaration
 

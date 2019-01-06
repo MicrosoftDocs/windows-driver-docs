@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic lists available User-Mode Driver Framework (UMDF) sample drivers that you can download from the [Windows driver samples repository](https://github.com/Microsoft/Windows-driver-samples) on GitHub.
 
-[Windows 8.1 driver samples](https://code.msdn.microsoft.com/windowshardware/Windows-Driver-Kit-WDK-81-cf35e953) can be downloaded from the [Windows Hardware Dev Center](http://go.microsoft.com/fwlink/p/?LinkId=616506).
+[Windows 8.1 driver samples](https://code.msdn.microsoft.com/windowshardware/Windows-Driver-Kit-WDK-81-cf35e953) can be downloaded from the [Windows Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=616506).
 
 ## UMDF 2 Samples
 
@@ -25,7 +25,7 @@ This topic lists available User-Mode Driver Framework (UMDF) sample drivers that
 
 
 -   [GPIO Sample Drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/gpio/samples)
--   The HID client sample driver (Fx2Hid) sample was removed in Windows 8.1. If you are writing a Universal Windows app that communicates with a HID device, you'll use the Windows.Devices.Custom namespace to access the device's HID collections directly. For more information, see the [Custom driver access](http://go.microsoft.com/fwlink/p/?LinkId=618584) sample app and the [HidUsbFx2](https://github.com/Microsoft/Windows-driver-samples/tree/master/hid/hidusbfx2) sample driver. If you are writing a Win32 application that accesses a HID collection, refer to the [HClient sample application](https://github.com/Microsoft/Windows-driver-samples/tree/master/hid/hclient).
+-   The HID client sample driver (Fx2Hid) sample was removed in Windows 8.1. If you are writing a Universal Windows app that communicates with a HID device, you'll use the Windows.Devices.Custom namespace to access the device's HID collections directly. For more information, see the [Custom driver access](https://go.microsoft.com/fwlink/p/?LinkId=618584) sample app and the [HidUsbFx2](https://github.com/Microsoft/Windows-driver-samples/tree/master/hid/hidusbfx2) sample driver. If you are writing a Win32 application that accesses a HID collection, refer to the [HClient sample application](https://github.com/Microsoft/Windows-driver-samples/tree/master/hid/hclient).
 -   [Near-Field Proximity Sample Driver](https://github.com/Microsoft/Windows-driver-samples/tree/master/nfp/net)
 -   [Sample UMDF Filter Driver above KMDF Function Driver for OSR USB-FX2](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/umdf_filter_kmdf)
 -   [Sample UMDF Function Driver for OSR USB-FX2](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/umdf_fx2)

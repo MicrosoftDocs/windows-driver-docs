@@ -89,7 +89,7 @@ When calling driver support routines, be aware of the following.
 
 - Driver code that runs at IRQL &gt; PASSIVE\_LEVEL should execute as quickly as possible. The higher the IRQL at which a routine runs, the more important it is for good overall performance to tune that routine to execute as quickly as possible. For example, any driver that calls **KeRaiseIrql** should make the reciprocal call to **KeLowerIrql** as soon as it can.
 
-For more information about determining priorities, see the [Scheduling, Thread Context, and IRQL](http://go.microsoft.com/fwlink/p/?linkid=59757) white paper.
+For more information about determining priorities, see the [Scheduling, Thread Context, and IRQL](https://go.microsoft.com/fwlink/p/?linkid=59757) white paper.
 
  
 

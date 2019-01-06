@@ -48,7 +48,7 @@ Name: Switch Extensibility Test Extension 1
 ## Related topics
 
 
-[Get-VMSwitch](http://technet.microsoft.com/library/hh848499.aspx)
+[Get-VMSwitch](https://technet.microsoft.com/library/hh848499.aspx)
 
 [**Msvm\_EthernetSwitchExtension**](https://msdn.microsoft.com/library/hh850139)
 

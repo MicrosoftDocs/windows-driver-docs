@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This section provides a glimpse of what's new for UWP device apps. For more info about device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-**Tip**  Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth GATT, Bluetooth RFCOMM, Wi-Fi Direct devices, and more. For more info, see [Integrating devices](http://go.microsoft.com/fwlink/p/?LinkId=533279).
+**Tip**  Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth GATT, Bluetooth RFCOMM, Wi-Fi Direct devices, and more. For more info, see [Integrating devices](https://go.microsoft.com/fwlink/p/?LinkId=533279).
 
  
 
@@ -25,16 +25,16 @@ With Windows 10, there are no changes to the Microsoft Store device app functio
 
 Windows 8.1 introduces a new device metadata wizard. Easily create device metadata packages for UWP device apps without needing to edit raw XML. The new wizard can also validate device metadata against your app locally, before you submit it to the Dashboard. For more info about how this wizard fits into the process, see [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md).
 
-**Note**  To get the Device Metadata Authoring Wizard, you must install the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209) before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
+**Note**  To get the Device Metadata Authoring Wizard, you must install the [standalone SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?linkid=309209) before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
  
 
 ## <span id="_Background_tasks_for_device_sync_and_update"></span><span id="_background_tasks_for_device_sync_and_update"></span><span id="_BACKGROUND_TASKS_FOR_DEVICE_SYNC_AND_UPDATE"></span> Background tasks for device sync and update
 
 
-In Windows 8.1, UWP device apps can perform multi-step device operations in a background task so that they can run to completion even if the app is moved to the background and suspended. This is necessary to allow reliable device servicing (changes to persistent settings or firmware) and content synchronization, without requiring the user to sit and watch a progress bar. Use the [DeviceServicingTrigger](http://go.microsoft.com/fwlink/p/?LinkID=308965) for device servicing and the [DeviceUseTrigger](http://go.microsoft.com/fwlink/p/?LinkID=308967) for content synchronization. Note that these background tasks constrain the amount of time the app can run in the background and are not intended to allow indefinite operation or infinite synchronization. For more info, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
+In Windows 8.1, UWP device apps can perform multi-step device operations in a background task so that they can run to completion even if the app is moved to the background and suspended. This is necessary to allow reliable device servicing (changes to persistent settings or firmware) and content synchronization, without requiring the user to sit and watch a progress bar. Use the [DeviceServicingTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308965) for device servicing and the [DeviceUseTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308967) for content synchronization. Note that these background tasks constrain the amount of time the app can run in the background and are not intended to allow indefinite operation or infinite synchronization. For more info, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
 
-**Note**  The [DeviceUseTrigger](http://go.microsoft.com/fwlink/p/?LinkID=308967), for device sync, doesn't require device metadata.
+**Note**  The [DeviceUseTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308967), for device sync, doesn't require device metadata.
 
  
 
@@ -48,7 +48,7 @@ You can configure your UWP device app to automatically launch when your peripher
 
 In Windows 8.1, UWP device apps can manage print jobs and perform printer maintenance tasks. For more info see [How to manage print jobs](how-to-manage-print-jobs.md) and [How to do printer maintenance](how-to-do-printer-maintenance.md).
 
-You can see these features highlighted in the new sample, [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829). The printer extension library, that's included with the sample, wraps the COM implementation of the COM interface PrinterExtensionLib. This library was designed to make it easy to reuse in your own UWP device app.
+You can see these features highlighted in the new sample, [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829). The printer extension library, that's included with the sample, wraps the COM implementation of the COM interface PrinterExtensionLib. This library was designed to make it easy to reuse in your own UWP device app.
 
 ## <span id="User_experience_changes"></span><span id="user_experience_changes"></span><span id="USER_EXPERIENCE_CHANGES"></span>User experience changes
 

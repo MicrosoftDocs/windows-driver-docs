@@ -22,8 +22,8 @@ The UcmTcpciCx class extension is itself a client driver of UcmCx. The policy de
 
 **Official specifications**
 -   [USB Type-C Port Controller Interface Specification]
--   [USB 3.1 and USB Type-C specifications](http://go.microsoft.com/fwlink/p/?LinkId=699515)
--   [USB Power Delivery](http://go.microsoft.com/fwlink/p/?LinkID=623310)
+-   [USB 3.1 and USB Type-C specifications](https://go.microsoft.com/fwlink/p/?LinkId=699515)
+-   [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310)
 
 Applies to:
 
@@ -50,7 +50,7 @@ Applies to:
 -   Determine the type of driver you need to write depending on whether your hardware or firmware implements PD state machine. For more information, see [Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md).  
 
 -   Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) on your target computer or Windows 10 Mobile with a USB Type-C connector.
--   [Install](http://go.microsoft.com/fwlink/p/?LinkID=845980) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing the client driver, specifically, you'll need:
+-   [Install](https://go.microsoft.com/fwlink/p/?LinkID=845980) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing the client driver, specifically, you'll need:
 
     -   The stub library, (UcmTcpciCxStub.lib). The library translates calls made by the client driver and pass them up to the class extension .
     -   The header file, UcmTcpciCx.h.
@@ -67,7 +67,7 @@ Applies to:
     - [Simple Peripheral Bus (SPB) Driver Design Guide]
     - [SPB driver programming reference] 
 
--   Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation]( http://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
+-   Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation]( https://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
 
 ## Behavior of the UcmTcpci class extension
 

@@ -23,7 +23,7 @@ GUID_CLASS_USB_HOST_CONTROLLER is an obsolete identifier for the [device interfa
 Remarks
 -------
 
-The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](http://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses GUID_CLASS_USB_HOST_CONTROLLER to enumerate instances of the GUID_CLASS_USB_HOST_CONTROLLER device interface class.
+The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](https://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses GUID_CLASS_USB_HOST_CONTROLLER to enumerate instances of the GUID_CLASS_USB_HOST_CONTROLLER device interface class.
 
 Requirements
 ------------

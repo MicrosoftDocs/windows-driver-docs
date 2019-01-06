@@ -72,7 +72,7 @@ The ATA bus driver marks any device that is attached to the eSATA port as remova
 
  
 
-For more information about the SATA and eSATA interface, refer to the [Serial ATA Advanced Host Controller Interface (AHCI) 1.3 specification](http://go.microsoft.com/fwlink/p/?linkid=148284).
+For more information about the SATA and eSATA interface, refer to the [Serial ATA Advanced Host Controller Interface (AHCI) 1.3 specification](https://go.microsoft.com/fwlink/p/?linkid=148284).
 
  
 

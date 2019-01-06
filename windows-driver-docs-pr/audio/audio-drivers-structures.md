@@ -22,7 +22,7 @@ This section describes the structures that are used by WDM audio miniport driver
 
 [**APOInitSystemEffects2**](https://msdn.microsoft.com/library/windows/hardware/dn659347)
 
-[**AudioFXExtensionParams**](https://msdn.microsoft.com/library/windows/hardware/jj151547)
+[**AudioFXExtensionParams**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/ns-audioenginebaseapo-audiofxextensionparams)
 
 [**DMUS\_KERNEL\_EVENT**](https://msdn.microsoft.com/library/windows/hardware/ff536340)
 
@@ -142,7 +142,7 @@ This section describes the structures that are used by WDM audio miniport driver
 
 [**LOOPEDSTREAMING\_POSITION\_EVENT\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff537505)
 
-[**MDEVICECAPSEX**](https://msdn.microsoft.com/library/windows/hardware/ff537512)
+[**MDEVICECAPSEX**](https://docs.microsoft.com/windows/desktop/api/mmddk/ns-mmddk-mdevicecapsex)
 
 [**MIDIOPENDESC**](https://msdn.microsoft.com/library/windows/hardware/ff537518)
 

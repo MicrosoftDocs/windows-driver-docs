@@ -27,7 +27,7 @@ Instructions
     If your system type is 32-bit Operating System, you will use the x86 download. If your system type is 64-bit Operating System and your processor is Itanium, you will use the ia64 download. For other processor types, use the x64 or AMD64 download.
 
 2.  Install Netmon:
-    1.  On the [Windows Network Monitor](http://go.microsoft.com/fwlink/p/?linkid=103158) page in the Microsoft Download Center and read the description of the tool.
+    1.  On the [Windows Network Monitor](https://go.microsoft.com/fwlink/p/?linkid=103158) page in the Microsoft Download Center and read the description of the tool.
     2.  Under **Files in this Download** section toward the bottom of the page, click the **Download** button for your system type.
     3.  Download and run the .exe file to start the Setup Wizard.
     4.  Select **Typical** when you are asked to choose the setup type.

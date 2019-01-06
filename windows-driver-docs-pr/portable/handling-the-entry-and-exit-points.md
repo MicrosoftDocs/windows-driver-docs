@@ -30,7 +30,7 @@ The code for the **OnDeviceAdd** method completes the following steps:
 
 CDriver also implements **IObjectCleanup::OnCleanup**, which contains code to release a reference to the WpdBaseDriver object that is held by the WDF device object during **OnDeviceAdd**.
 
-For more information about each interface and its methods, see the [UMDF](http://go.microsoft.com/fwlink/p/?linkid=153678) documentation.
+For more information about each interface and its methods, see the [UMDF](https://go.microsoft.com/fwlink/p/?linkid=153678) documentation.
 
  
 

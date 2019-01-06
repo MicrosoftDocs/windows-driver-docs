@@ -75,7 +75,7 @@ Many of the [Windows driver support routines](https://msdn.microsoft.com/library
 <tr class="even">
 <td><p><strong>Nt</strong> and <strong>Zw</strong></p></td>
 <td><p>Native system services</p></td>
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=157250" data-raw-source="[NtCreateFile](http://go.microsoft.com/fwlink/p/?linkid=157250)">NtCreateFile</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424" data-raw-source="[&lt;strong&gt;ZwCreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566424)"><strong>ZwCreateFile</strong></a></p></td>
+<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=157250" data-raw-source="[NtCreateFile](https://go.microsoft.com/fwlink/p/?linkid=157250)">NtCreateFile</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424" data-raw-source="[&lt;strong&gt;ZwCreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566424)"><strong>ZwCreateFile</strong></a></p></td>
 </tr>
 </tbody>
 </table>

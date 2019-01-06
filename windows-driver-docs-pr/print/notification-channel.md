@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 
 
-This section contains information about the [CreatePrintAsyncNotifyChannel](http://go.microsoft.com/fwlink/p/?linkid=124750) function and the [IPrintAsyncNotifyChannel](http://go.microsoft.com/fwlink/p/?linkid=124758) interface.
+This section contains information about the [CreatePrintAsyncNotifyChannel](https://go.microsoft.com/fwlink/p/?linkid=124750) function and the [IPrintAsyncNotifyChannel](https://go.microsoft.com/fwlink/p/?linkid=124758) interface.
 
 ```cpp
 HRESULT
@@ -90,13 +90,13 @@ DECLARE_INTERFACE_(IPrintAsyncNotifyChannel, IUnknown)
 };
 ```
 
-To send a notification, the sender calls the [IPrintAsyncNotifyChannel::SendNotification](http://go.microsoft.com/fwlink/p/?linkid=124760) method. The sender can be either the printing component that opens the channel and sends notifications or a listening client when it has to respond to a notification. This method behaves asynchronously. When the method returns a success code, the spooler tries to send the notification to listeners. But there is no guarantee that any listeners receive the notification.
+To send a notification, the sender calls the [IPrintAsyncNotifyChannel::SendNotification](https://go.microsoft.com/fwlink/p/?linkid=124760) method. The sender can be either the printing component that opens the channel and sends notifications or a listening client when it has to respond to a notification. This method behaves asynchronously. When the method returns a success code, the spooler tries to send the notification to listeners. But there is no guarantee that any listeners receive the notification.
 
-To close the channel, the sender or a listener can call the [IPrintAsyncNotifyChannel::CloseChannel](http://go.microsoft.com/fwlink/p/?linkid=124759) method. The caller can pass in a notification that gives the reason for closing the channel or can pass a **NULL** pointer. When the channel is closed, all queued notifications are discarded.
+To close the channel, the sender or a listener can call the [IPrintAsyncNotifyChannel::CloseChannel](https://go.microsoft.com/fwlink/p/?linkid=124759) method. The caller can pass in a notification that gives the reason for closing the channel or can pass a **NULL** pointer. When the channel is closed, all queued notifications are discarded.
 
-You must be careful in calling [Release](http://go.microsoft.com/fwlink/p/?linkid=98433) on a channel object, because it does not follow all the general COM programming invariants. You should call **Release** on **IPrintAsyncNotifyChannel** only if the following conditions occur:
+You must be careful in calling [Release](https://go.microsoft.com/fwlink/p/?linkid=98433) on a channel object, because it does not follow all the general COM programming invariants. You should call **Release** on **IPrintAsyncNotifyChannel** only if the following conditions occur:
 
--   If you called [AddRef](http://go.microsoft.com/fwlink/p/?linkid=98432) explicitly, and you must match it with a call to **Release**.
+-   If you called [AddRef](https://go.microsoft.com/fwlink/p/?linkid=98432) explicitly, and you must match it with a call to **Release**.
 
 -   If you created the channel as unidirectional, and you must call **Release** one time on the pointer that you received as an output parameter. You should call **Release** after you have sent the desired notifications and closed the channel.
 
@@ -105,7 +105,7 @@ You must be careful in calling [Release](http://go.microsoft.com/fwlink/p/?linki
     -   You must not call **Release** while entering the **ChannelClosed** event. To avoid this situation, check for a call to **CloseChannel** that has failed with the error CHANNEL\_ALREADY\_CLOSED. You do not have to call **Release** in this case, because the channel has already been released on your behalf.
     -   You must not call **CloseChannel**, **Release**, or any other member function on the channel if your **ChannelClosed** callback function has finished running. In this case, the channel has already been released, so any further calls might cause undefined behavior. This restriction might require coordination between your foreground thread and callback object.
     -   You must make sure that your foreground thread and callback object coordinate the call to **CloseChannel** and **Release**. Your foreground thread and your callback object cannot begin a call to **CloseChannel** if the other is about to call or has completed calling **Release**. You can implement this restriction by using the [**InterlockedCompareExchange**](https://msdn.microsoft.com/library/windows/hardware/ff547853) routine. If you do not use **InterlockedCompareExchange**, you might cause undefined behavior.
--   If you registered as a listener on the channel, you can call **CloseChannel** and then call **Release** in your [IPrintAsyncNotifyCallback::OnEventNotify](http://go.microsoft.com/fwlink/p/?linkid=124757) callback function to end the bidirectional communication. However, you must not call **CloseChannel** or **Release** in your **ChannelClosed** callback.
+-   If you registered as a listener on the channel, you can call **CloseChannel** and then call **Release** in your [IPrintAsyncNotifyCallback::OnEventNotify](https://go.microsoft.com/fwlink/p/?linkid=124757) callback function to end the bidirectional communication. However, you must not call **CloseChannel** or **Release** in your **ChannelClosed** callback.
 
 If you meet one of these conditions, you must call **Release**. If you do not meet one of these conditions, you must not call **Release**.
 

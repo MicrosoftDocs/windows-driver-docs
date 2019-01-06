@@ -29,13 +29,13 @@ The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 speci
 
 **Official specifications**
 
-[USB 3.1 and USB Type-C specifications](http://go.microsoft.com/fwlink/p/?LinkId=699515)
+[USB 3.1 and USB Type-C specifications](https://go.microsoft.com/fwlink/p/?LinkId=699515)
 
-[USB Power Delivery](http://go.microsoft.com/fwlink/p/?LinkID=623310)
+[USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310)
 
-[Billboard Devices specification](http://go.microsoft.com/fwlink/p/?linkid=620207)
+[Billboard Devices specification](https://go.microsoft.com/fwlink/p/?linkid=620207)
 
-[UCSI Specification](http://go.microsoft.com/fwlink/p/?LinkId=703713)
+[UCSI Specification](https://go.microsoft.com/fwlink/p/?LinkId=703713)
 
 ## Hardware design
 USB Type-C connector is reversible and symmetric.
@@ -89,7 +89,7 @@ Attend Power Delivery and USB Type-C compliance workshops hosted by the standard
 
 
 -   [FAQ: USB Type-C connector on a Windows system](faq--usb-type-c-connector-on-a-windows-system.md)
--   [Troubleshoot messages in UI](http://go.microsoft.com/fwlink/?LinkId=526894) 
+-   [Troubleshoot messages in UI](https://go.microsoft.com/fwlink/?LinkId=526894) 
 
  
 

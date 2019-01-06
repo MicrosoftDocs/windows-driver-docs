@@ -3,7 +3,9 @@ title: C28648
 description: Warning C28648 PulseEvent is an unreliable function.
 ms.assetid: 6132e35c-f1ae-44cc-9a6c-b61d6e7f8c57
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: medium 
+f1_keywords: 
+  - "C28648"
 ---
 
 # C28648

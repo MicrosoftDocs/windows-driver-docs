@@ -26,7 +26,7 @@ Property identifiers on the Extension Unit property set (KSPROPERTY\_EXTENSION\_
 
 The controls on the Extension Unit, known as extension unit control IDs, must be numbered continuously from 1 to some maximum value n. If there are gaps, the USB Video Class driver does not expose the controls that lie beyond the gap. The current implementation of the USB Video Class driver limits the number of controls on an Extension Unit to 31.
 
-Use Property ID=0 (KSPROPERTY\_EXTENSION\_UNIT\_INFO) to get part of the extension unit descriptor, the syntax for which is defined by the Universal Serial Bus Device Class Definition for Video Devices Specification. This specification is available at the [USB Implementers Forum](http://go.microsoft.com/fwlink/p/?linkid=8780) website.
+Use Property ID=0 (KSPROPERTY\_EXTENSION\_UNIT\_INFO) to get part of the extension unit descriptor, the syntax for which is defined by the Universal Serial Bus Device Class Definition for Video Devices Specification. This specification is available at the [USB Implementers Forum](https://go.microsoft.com/fwlink/p/?linkid=8780) website.
 
 Use Property ID=1 and higher to send requests to the corresponding extension unit control.
 

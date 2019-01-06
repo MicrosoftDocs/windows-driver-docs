@@ -21,8 +21,8 @@ You need to write a USB Type-C connector driver in these scenarios:
 
 **Official specifications**
 
--   [USB 3.1 and USB Type-C specifications](http://go.microsoft.com/fwlink/p/?LinkId=699515)
--   [USB Power Delivery](http://go.microsoft.com/fwlink/p/?LinkID=623310)
+-   [USB 3.1 and USB Type-C specifications](https://go.microsoft.com/fwlink/p/?LinkId=699515)
+-   [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310)
 
 **Applies to:**
 
@@ -52,7 +52,7 @@ To enable a USB Type-C connector on a system, you must write the client driver.
 ## Before you begin...
 
 
--   [Install](http://go.microsoft.com/fwlink/p/?LinkID=623310) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing a UCM client driver, specifically, you'll need:
+-   [Install](https://go.microsoft.com/fwlink/p/?LinkID=623310) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing a UCM client driver, specifically, you'll need:
 
     -   The stub library, (UcmCxstub.lib). The library translates calls made by the client driver and pass them up to UcmCx.
     -   The header file, UcmCx.h.
@@ -61,13 +61,13 @@ To enable a USB Type-C connector on a system, you must write the client driver.
 
     ![visual studio configuration for ucm](images/ucm-vs.png)
 
--   Decide whether your client driver will support advanced features of the USB Type-C connector and the [USB Power Delivery](http://go.microsoft.com/fwlink/p/?LinkID=623310).
+-   Decide whether your client driver will support advanced features of the USB Type-C connector and the [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310).
 
     This support enables you to build Windows devices with USB Type-C connectors, USB Type-C docks and accessories, and USB Type-C chargers. The client driver reports connector events that allow the operating system to implement policies around USB and power consumption in the system.
 
 -   Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) on your target computer or Windows 10 Mobile with a USB Type-C connector.
 -   Familiarize yourself with UCM and how it interacts with other Windows drivers. See [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md).
--   Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation]( http://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
+-   Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation]( https://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
 
 ## Summary of the services provided by the UCM class extension
 

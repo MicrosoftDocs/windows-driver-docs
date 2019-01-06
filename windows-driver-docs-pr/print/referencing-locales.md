@@ -84,7 +84,7 @@ You might want to have your driver assign the default paper size, either metric 
 
 The following algorithm retrieves the default system locale and then uses country/region codes to determine whether the system locale represents a country that typically uses metric or non-metric paper sizes. With this information, your driver can set the default paper size appropriately, such as A4 for countries that use the metric system and Letter size for countries that don't.
 
-1.  Use the [GetLocaleInfo](http://go.microsoft.com/fwlink/p/?linkid=52069) function (defined in the Microsoft Windows SDK documentation) to retrieve the default system locale. Use LOCALE\_SYSTEM\_DEFAULT for the first parameter, *Locale*, and LOCALE\_ICOUNTRY for the second parameter, *LCType*.
+1.  Use the [GetLocaleInfo](https://go.microsoft.com/fwlink/p/?linkid=52069) function (defined in the Microsoft Windows SDK documentation) to retrieve the default system locale. Use LOCALE\_SYSTEM\_DEFAULT for the first parameter, *Locale*, and LOCALE\_ICOUNTRY for the second parameter, *LCType*.
 
 2.  Use the default system locale obtained from **GetLocaleInfo** to determine metric or non-metric paper size.
     -   Non-metric if default system locale is:

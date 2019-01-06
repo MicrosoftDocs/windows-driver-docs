@@ -18,7 +18,7 @@ Before you start running the logo tests make sure you meet the following require
 -   To run these tests you will need at least two computers: a test server and a test client.
 -   The test client must have the latest version of Windows.
 -   The test client must have EHCI and xHCI controllers, either integrated or as add-in cards. The controllers must expose user-accessible root ports (no integrated hubs).
--   Download the Windows HLK to the test server from [Windows Hardware Lab Kit Downloads](http://go.microsoft.com/fwlink/p/?linkid=285647).
+-   Download the Windows HLK to the test server from [Windows Hardware Lab Kit Downloads](https://go.microsoft.com/fwlink/p/?linkid=285647).
 
     For detailed information about how to install and use the Windows HLK, see [Windows HLK Getting Started](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
@@ -34,15 +34,15 @@ To run the HLK tests, you need:
     ![usb root port](images/roothubports.png)
 
 -   USB-IF-compliant external SuperSpeed hub to evaluate system compatibility. We have tested HLK tests with these hubs:
-    -   [Texas Instruments SuperSpeed (USB 3.0) Hub reference design board (TUSB8040EVM)](http://go.microsoft.com/fwlink/p/?linkid=248509).
+    -   [Texas Instruments SuperSpeed (USB 3.0) Hub reference design board (TUSB8040EVM)](https://go.microsoft.com/fwlink/p/?linkid=248509).
     -   SuperMUTT Pack. See [MUTT devices](microsoft-usb-test-tool--mutt--devices.md).
 -   [MUTT devices](microsoft-usb-test-tool--mutt--devices.md) as test devices for hub and controller tests.
--   USB-IF certified cables and connectors to avoid signal integrity issues. See [USB-IF list of products](http://go.microsoft.com/fwlink/p/?linkid=617502).
+-   USB-IF certified cables and connectors to avoid signal integrity issues. See [USB-IF list of products](https://go.microsoft.com/fwlink/p/?linkid=617502).
 
 Complete set of requirements are given here:
 
--   [USB Bus Controller Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=617477)
--   [USB Hub.Connectivity Testing Prerequisites](http://go.microsoft.com/fwlink/p/?linkid=617499)
+-   [USB Bus Controller Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=617477)
+-   [USB Hub.Connectivity Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=617499)
 
 ## HLK test selection for USB
 

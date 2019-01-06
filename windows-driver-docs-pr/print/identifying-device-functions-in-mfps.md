@@ -15,7 +15,7 @@ A device may report the ContainerID.If a device does not report a ContainerID, W
 
 For devices that may connect through more than one transport (that is, device connects through USB and WSD), it is recommended that the device reports a ContainerID to make the different device instances show as one device.
 
-For more information about ContainerIDs, see [Windows Device Experience](http://go.microsoft.com/fwlink/p/?linkid=145535).
+For more information about ContainerIDs, see [Windows Device Experience](https://go.microsoft.com/fwlink/p/?linkid=145535).
 
  
 

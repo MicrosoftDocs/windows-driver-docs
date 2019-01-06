@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 The Inf2Cat tool can be used to create catalog files for any [driver package](driver-packages.md) that has an INF file. For more information about Inf2Cat and its command-line arguments, see [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089).
 
-**Note**  Prior to the Windows Server 2008 Windows Driver Kit (WDK), the Inf2Cat tool was not part of the WDK tools. However, the tool is installed with the Winqual Submission Tools. To download the Winqual Submission tools, go to the Microsoft [Inf2Cat FAQ](http://go.microsoft.com/fwlink/p/?linkid=79443) website. When the Winqual Submission Tools package is installed, [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) is put in the Program Files (x86)\\Microsoft Winqual Submission Tool folder on the system drive.
+**Note**  Prior to the Windows Server 2008 Windows Driver Kit (WDK), the Inf2Cat tool was not part of the WDK tools. However, the tool is installed with the Winqual Submission Tools. To download the Winqual Submission tools, go to the Microsoft [Inf2Cat FAQ](https://go.microsoft.com/fwlink/p/?linkid=79443) website. When the Winqual Submission Tools package is installed, [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) is put in the Program Files (x86)\\Microsoft Winqual Submission Tool folder on the system drive.
 
  
 

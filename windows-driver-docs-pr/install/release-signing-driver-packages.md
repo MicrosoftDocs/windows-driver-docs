@@ -45,7 +45,7 @@ Starting with Windows Vista, embedding a signature in a [*boot-start driver*](ht
 
 To comply with the [PnP device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md) of Windows Vista and later versions of Windows, you must obtain a signed [catalog file](catalog-files.md) or sign the catalog file of the [driver package](driver-packages.md). If a driver file will also include an embedded signature, embed the signature in the driver file before signing the driver package's catalog file.
 
-If the [Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=227016) has a test program for the driver, obtain a [WHQL Release Signature](whql-release-signature.md) for the driver package. If the HCK does not have a test program for the driver, [create a catalog file](creating-a-catalog-file-for-a-pnp-driver-package.md) and sign the [catalog file](catalog-files.md) as follows:
+If the [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) has a test program for the driver, obtain a [WHQL Release Signature](whql-release-signature.md) for the driver package. If the HCK does not have a test program for the driver, [create a catalog file](creating-a-catalog-file-for-a-pnp-driver-package.md) and sign the [catalog file](catalog-files.md) as follows:
 
 **Signing a catalog file for 64-bit versions**
 
@@ -81,7 +81,7 @@ The kernel-mode code signing policy on 64-bit versions of Windows Vista and late
 
 To comply with the PnP device installation signing requirements, you must obtain a signed catalog file or sign the catalog file of the driver package.
 
-If the [Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=227016) has a test program for the driver, obtain a [WHQL release signature](whql-release-signature.md) for the driver package. If the HCK does not have a test program for the driver, [create a catalog file](creating-a-catalog-file-for-a-pnp-driver-package.md) and sign the [catalog file](catalog-files.md) in the same manner as described in this section for signing the catalog file of a PnP kernel-mode [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver).
+If the [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) has a test program for the driver, obtain a [WHQL release signature](whql-release-signature.md) for the driver package. If the HCK does not have a test program for the driver, [create a catalog file](creating-a-catalog-file-for-a-pnp-driver-package.md) and sign the [catalog file](catalog-files.md) in the same manner as described in this section for signing the catalog file of a PnP kernel-mode [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver).
 
 ### <a href="" id="non-pnp-kernel-mode-driver-that-is-not-a-boot-start-driver"></a> Non-PnP Kernel-Mode Driver that is not a Boot-Start Driver
 

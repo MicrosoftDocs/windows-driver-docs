@@ -9,19 +9,19 @@ ms.localizationpriority: medium
 # Container IDs for PnP-X Devices
 
 
-PnP extensions (PnP-X) extends Windows Plug and Play (PnP) to support devices that are connected to the computer through an IP-based network. For more information about PnP-X, refer to the [PnP-X: Plug and Play Extensions for Windows specification.](http://go.microsoft.com/fwlink/p/?linkid=142398                  )
+PnP extensions (PnP-X) extends Windows Plug and Play (PnP) to support devices that are connected to the computer through an IP-based network. For more information about PnP-X, refer to the [PnP-X: Plug and Play Extensions for Windows specification.](https://go.microsoft.com/fwlink/p/?linkid=142398                  )
 
 PnP-X devices can specify a container ID as an XML element in their device metadata. Two protocols are supported:
 
 -   Device Profile for Web Services (DPWS).
 
-    For more information about DPWS, refer to the [DPWS specification.](http://go.microsoft.com/fwlink/p/?linkid=142400)
+    For more information about DPWS, refer to the [DPWS specification.](https://go.microsoft.com/fwlink/p/?linkid=142400)
 
     For more information about supporting container IDs through DPWS, see [Container IDs for DPWS Devices](container-ids-for-dpws-devices.md).
 
 -   Universal PnP (UPnP).
 
-    For more information, refer to the [UPnP Device Architecture specification.](http://go.microsoft.com/fwlink/p/?linkid=142402)
+    For more information, refer to the [UPnP Device Architecture specification.](https://go.microsoft.com/fwlink/p/?linkid=142402)
 
     For more information about supporting container IDs through UPnP, see [Container IDs for UPnP Devices](container-ids-for-upnp-devices.md).
 

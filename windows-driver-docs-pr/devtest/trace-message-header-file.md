@@ -25,7 +25,7 @@ When you add the WPP macros to source code, you must also add an **\#include** d
 
 This include statement must appear after the definition of the [WPP\_CONTROL\_GUIDS](https://msdn.microsoft.com/library/windows/hardware/ff556186) macro, but before any calls to the WPP macros.
 
-For more information, see [Adding WPP Macros to a Trace Producer](adding-wpp-macros-to-a-trace-provider.md) and see [TraceDrv](http://go.microsoft.com/fwlink/p/?LinkId=617726), a sample driver that was designed for software tracing. The TraceDrv sample is available in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+For more information, see [Adding WPP Macros to a Trace Producer](adding-wpp-macros-to-a-trace-provider.md) and see [TraceDrv](https://go.microsoft.com/fwlink/p/?LinkId=617726), a sample driver that was designed for software tracing. The TraceDrv sample is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
  
 

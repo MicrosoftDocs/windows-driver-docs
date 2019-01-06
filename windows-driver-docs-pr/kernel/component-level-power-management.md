@@ -50,7 +50,5 @@ The active/idle condition of a component is the only reliable means for a driver
 A component that is in the active condition is always in the F0 state. The component cannot leave F0 until it enters the idle condition. A component that is in the idle condition might be in F0 or in a low-power Fx state. If a component is in a low-power Fx state when a **PoFxActivateComponent** call initiates a transition from the idle condition to the active condition, PoFx must first switch the component to F0 before the component can enter the active condition.
 
 ## Related topics
-[Device Power Management Reference](https://msdn.microsoft.com/library/windows/hardware/hh450958)  
 
-
-
+[Device Power Management Reference](device-power-management-reference.md)  

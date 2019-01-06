@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-This section discusses guidelines for implementing a *Cancel* routine and handling cancelable IRPs. For more information about handling cancelable IRPs, see the [Flow of Control for Cancel-Safe IRP Queuing](http://go.microsoft.com/fwlink/p/?linkid=57844).
+This section discusses guidelines for implementing a *Cancel* routine and handling cancelable IRPs. For more information about handling cancelable IRPs, see the [Flow of Control for Cancel-Safe IRP Queuing](https://go.microsoft.com/fwlink/p/?linkid=57844).
 
 ### General Guidelines for All Cancel Routines
 

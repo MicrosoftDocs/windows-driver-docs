@@ -35,7 +35,7 @@ The {**ID**} is the GUID that is associated with the boot entry. If you do not s
 
 In Windows Vista and later, use [**BCDEdit /emssettings**](bcdedit--emssettings.md) command and its parameters to establish EMS settings for all boot entries. Then, use the **BCDEdit /ems** command to enable EMS for a particular boot entry.
 
-EMS allows users to control particular components of a server remotely, even when the server is not connected to the network or to other standard remote-administration tools. For information about EMS, search for Emergency Management Services on the [Microsoft TechNet](http://go.microsoft.com/fwlink/p/?linkid=10111) website.
+EMS allows users to control particular components of a server remotely, even when the server is not connected to the network or to other standard remote-administration tools. For information about EMS, search for Emergency Management Services on the [Microsoft TechNet](https://go.microsoft.com/fwlink/p/?linkid=10111) website.
 
 ### Example
 

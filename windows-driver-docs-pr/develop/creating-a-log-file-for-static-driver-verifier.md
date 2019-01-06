@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Creating a log file for Static Driver Verifier
 
-The Windows Server 2012 [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016) requires a Driver Verification Log (DVL) for all applicable driver submissions. You must run [Static Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552808) (SDV) prior to creating a DVL for your driver. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The log files do not contain source code information.
+The Windows Server 2012 [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016) requires a Driver Verification Log (DVL) for all applicable driver submissions. You must run [Static Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552808) (SDV) prior to creating a DVL for your driver. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The log files do not contain source code information.
 
 For best results, run the Code Analysis tool before you run Static Driver Verifier.
 
@@ -23,7 +23,7 @@ Static Driver Verifier writes the results to the file SDV.DVL.xml in the SDV sub
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
 
-For the most up-to-date information about Static Driver Verifier and the Driver Verification Log, refer to the WDK Release Notes. The Release Notes are available on the [Windows Driver Kit (WDK) download page](http://go.microsoft.com/fwlink/p/?linkid=254897).
+For the most up-to-date information about Static Driver Verifier and the Driver Verification Log, refer to the WDK Release Notes. The Release Notes are available on the [Windows Driver Kit (WDK) download page](https://go.microsoft.com/fwlink/p/?linkid=254897).
 
 **Important**   Timeouts, spaceouts, and other non-successful results in the DVL file are acceptable for certification submission. This will not cause the Static Tools test in HCK to fail. For HCK 2.0, the Static Tools Test only requires the presence of DVL file to show Code Analysis and SDV had been run, and does not require all rules to pass.
 
@@ -54,7 +54,7 @@ msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /p:Platform=x64 /ta
 * [Creating a driver verification log](creating-a-driver-verification-log.md)
 * [Static Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552808)
 * [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454281)
-* [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016)
+* [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016)
  
 
  

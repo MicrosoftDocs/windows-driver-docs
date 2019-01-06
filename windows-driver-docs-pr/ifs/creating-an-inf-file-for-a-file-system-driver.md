@@ -37,11 +37,11 @@ Starting with 64-bit versions of Windows Vista, all kernel-mode components, incl
 
 -   The [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command-line tool, located in the \\bin\\SelfSign directory of the WDK installation directory, can be used to directly "embed sign" a driver SYS executable file. For performance reasons, boot-start drivers must contain an embedded signature.
 
--   Given an INF file, the [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) command-line tool can be used to create a catalog (.cat) file for a driver package. Only catalog files can receive [WHQL](http://go.microsoft.com/fwlink/p/?linkid=8705) logo signatures.
+-   Given an INF file, the [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) command-line tool can be used to create a catalog (.cat) file for a driver package. Only catalog files can receive [WHQL](https://go.microsoft.com/fwlink/p/?linkid=8705) logo signatures.
 
 -   With Administrator privileges, an unsigned driver can still be installed on x64-based systems starting with Windows Vista. However, the driver will fail to load (and thus execute) because it is unsigned.
 
--   For detailed information about the driving signing process, including the driving signing process for 64-bit versions of Windows Vista, see [Kernel-Mode Code Signing Walkthrough](http://go.microsoft.com/fwlink/p/?linkid=79445).
+-   For detailed information about the driving signing process, including the driving signing process for 64-bit versions of Windows Vista, see [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=79445).
 
 -   All kernel-mode components, including custom kernel-mode development tools, must be signed. For more information, see [Signing Drivers during Development and Test (Windows Vista and Later)](https://msdn.microsoft.com/library/windows/hardware/ff552275).
 
@@ -288,7 +288,7 @@ The **StartType** entry specifies when to start the service. The following table
 
 For detailed descriptions of these start types to determine which one is appropriate for your file system driver, see [What Determines When a Driver Is Loaded](what-determines-when-a-driver-is-loaded.md).
 
-Starting with x64-based Windows Vista systems, the binary image file of a boot-start driver (a driver that has a start type of SERVICE\_BOOT\_START) must contain an embedded signature. This requirement ensures optimal system boot performance. For more information, see [Kernel-Mode Code Signing Walkthrough](http://go.microsoft.com/fwlink/p/?linkid=79445).
+Starting with x64-based Windows Vista systems, the binary image file of a boot-start driver (a driver that has a start type of SERVICE\_BOOT\_START) must contain an embedded signature. This requirement ensures optimal system boot performance. For more information, see [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=79445).
 
 For information about how the **StartType** and **LoadOrderGroup** entries determine when the driver is loaded, see [What Determines When a Driver Is Loaded](what-determines-when-a-driver-is-loaded.md).
 

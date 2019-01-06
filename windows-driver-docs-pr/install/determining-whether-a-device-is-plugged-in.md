@@ -22,9 +22,9 @@ To determine whether a device is plugged in, the application can call the [**Upd
 
 -   The function returns **TRUE**. (This also installs the driver for the device.)
 
--   The function returns **FALSE** and the Win32 [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416)function returns ERROR_NO_MORE_ITEMS. (No installation occurs.)
+-   The function returns **FALSE** and the Win32 [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416)function returns ERROR_NO_MORE_ITEMS. (No installation occurs.)
 
-The device is not plugged in if the function returns **FALSE** and [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) returns NO_SUCH_DEVINST. (No installation occurs.)
+The device is not plugged in if the function returns **FALSE** and [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) returns NO_SUCH_DEVINST. (No installation occurs.)
 
 ### Reinstalling an Unplugged Device
 
@@ -32,9 +32,9 @@ When a device that formerly was attached is now unplugged, the device's [*devnod
 
 **To reinstall an unplugged device:**
 
-1.  Call the [SetupCopyOEMInf](http://go.microsoft.com/fwlink/p/?linkid=98735) function.
+1.  Call the [SetupCopyOEMInf](https://go.microsoft.com/fwlink/p/?linkid=98735) function.
 
-    The [SetupCopyOEMInf](http://go.microsoft.com/fwlink/p/?linkid=194252) function ensures that the correct INF file is present in the *%SystemRoot%\\inf* directory.
+    The [SetupCopyOEMInf](https://go.microsoft.com/fwlink/p/?linkid=194252) function ensures that the correct INF file is present in the *%SystemRoot%\\inf* directory.
 
 2.  Find the unplugged devices.
 

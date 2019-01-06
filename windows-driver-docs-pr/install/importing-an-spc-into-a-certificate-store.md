@@ -19,7 +19,7 @@ To import a *.pfx* file into the local Personal certificate store, do the follow
 
 The certificate and private key are now available for SignTool to use.
 
-Starting with Windows Vista, an alternative way to import the *.pfx* file into the local Personal certificate store is with the [CertUtil](http://go.microsoft.com/fwlink/p/?linkid=168888) command-line utility. The following command-line example uses CertUtil to import the *abc.pfx* file into the Personal certificate store:
+Starting with Windows Vista, an alternative way to import the *.pfx* file into the local Personal certificate store is with the [CertUtil](https://go.microsoft.com/fwlink/p/?linkid=168888) command-line utility. The following command-line example uses CertUtil to import the *abc.pfx* file into the Personal certificate store:
 
 ```cpp
 certutil -user -p pfxpassword -importPFX abc.pfx
