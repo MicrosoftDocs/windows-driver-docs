@@ -13,9 +13,9 @@ This section contains descriptions of common bug check codes, including the para
 > [!NOTE] 
 > This topic is for programmers. If you are a customer whose system has displayed a blue screen with a bug check code, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
 
-If a specific bug check code does not appear in this reference, use the [**!analyze**](-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode):
+If a specific bug check code does not appear in this reference, use the [**!analyze**](-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode), replacing `<code>` with a bug check code:
 
-```!analyze -show <code>```
+`!analyze -show <code>`
 
 Entering this command causes WinDbg to display information about the specified bug check code. If your default number base (radix) is not 16, prefix `<code>` with **0x**.
 
