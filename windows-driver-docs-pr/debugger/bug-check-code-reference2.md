@@ -17,7 +17,7 @@ If a specific bug check code does not appear in this reference, use the [**!anal
 
 ```!analyze -show <code>```
 
-Entering this command causes WinDbg to display information about the specified bug check code. If your default number base (radix) is not 16, prefix <code> with **0x**.
+Entering this command causes WinDbg to display information about the specified bug check code. If your default number base (radix) is not 16, prefix `<code>` with **0x**.
 
 The following table shows the code and name of each bug check code.
 
