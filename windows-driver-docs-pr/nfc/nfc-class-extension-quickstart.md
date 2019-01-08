@@ -37,10 +37,6 @@ The NFC CX driver is responsible for handling I/O requests sent to the driver an
 
 It is up to the client driver to determine how to send the NCI packets to the NFC Controller. This will vary depending on what type of hardware bus is used. Common buses used by NFC Controllers include I<sup>2</sup>C, SPI and USB.
 
-## Complete project code
-
-A complete version of this sample code is available on GitHub: [NFC CX client driver sample](). (**TODO: FIX LINK!**)
-
 ## Project setup
 
 1. In Visual Studio, create a new "User Mode Driver, Empty (UMDF V2)" project.
