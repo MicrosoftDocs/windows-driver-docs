@@ -15,22 +15,12 @@ ms.localizationpriority: medium
 
 # Driver Verifier
 
-
 Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system. Driver Verifier can subject the Windows drivers to a variety of stresses and tests to find improper behavior.
 
 You can run Driver Verifier on multiple drivers simultaneously, or on one driver at a time. You can configure which tests to run, which allows you to put a driver through heavy stress loads or through more streamlined testing.
 
--   [Where can I download Driver Verifier?](#where-can-i-download-driver-verifier)
--   [When to use Driver Verifier](#when-to-use-driver-verifier)
--   [How to start Driver Verifier](#how-to-start-driver-verifier)
--   [How to control Driver Verifier](#how-to-control-driver-verifier)
--   [How to debug Driver Verifier violations](#how-to-debug-driver-verifier-violations)
--   [Related topics](#related-topics)
-
-
 
 ## Where can I download Driver Verifier?
-
 
 <table>
 <colgroup>
@@ -38,7 +28,7 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>You don&#39;t need to download Driver Verifier (Verifier.exe) as it is included in every version of Windows after Windows 2000, except for Windows 10 S. There isn&#39;t a separate Driver Verifier download package, it is located in the %windir%\system32 directory. </p>
+<td align="left"><p>You don't need to download Driver Verifier (Verifier.exe) as it is included in every version of Windows after Windows 2000, except for Windows 10 S. There isn't a separate Driver Verifier download package, it is located in the %windir%\system32 directory. </p>
 <ul>
 <li>Open a <strong>Command Prompt</strong> window (<strong>Run as administrator</strong>).</li>
 <li>Type <strong>verifier</strong> to open the Driver Verifier Manager, or type <strong>verifier /?</strong> to view command line options. See <a href="verifier-command-line.md" data-raw-source="[&lt;strong&gt;Driver Verifier Command Syntax&lt;/strong&gt;](verifier-command-line.md)"><strong>Driver Verifier Command Syntax</strong></a> for more information.</li>
@@ -55,7 +45,7 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 <div>
 
 </div>
-<p>For information about changes in Driver Version for Windows 8.1 and previous versions of Windows, see <a href="driver-verifier--what-s-new.md" data-raw-source="[Driver Verifier: What&#39;s New](driver-verifier--what-s-new.md)">Driver Verifier: What&#39;s New</a>.</p></td>
+<p>For information about changes in Driver Version for Windows 8.1 and previous versions of Windows, see <a href="driver-verifier--what-s-new.md" data-raw-source="[Driver Verifier: What's New](driver-verifier--what-s-new.md)">Driver Verifier: What's New</a>.</p></td>
 </tr>
 </tbody>
 </table>
