@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The INVALID\_AFFINITY\_SET bug check has a value of 0x00000003.
 
-This bug check appears very infrequently.
+This bug check appears very infrequently. It indicates a null of incorrect subset affinity.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
