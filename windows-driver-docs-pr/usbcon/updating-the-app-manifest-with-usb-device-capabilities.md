@@ -30,7 +30,7 @@ Your USB app must include certain device capabilities in its [App package manife
 
  
 
-``` syntax
+```XML
 <DeviceCapability Name="usb">
     <Device Id="vidpid:xxxx xxxx">
       <Function Type="classId:xx xx xx"/>
