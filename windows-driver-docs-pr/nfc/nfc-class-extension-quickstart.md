@@ -1,6 +1,6 @@
 ---
 title: NFC CX quick start guide
-author: windows-driver-content
+author: EliotSeattle
 description: A quick start guide for writing a NFC functional driver using the NFC Class Extension.
 keywords:
 - NFC
@@ -9,7 +9,7 @@ keywords:
 - near field proximity
 - NFP
 - CX
-ms.author: windowsdriverdev
+ms.author: eliotgra
 ms.date: 12/10/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -19,16 +19,17 @@ ms.localizationpriority: low
 
 # NFC CX quick start guide
 
-This guide demonstrates how to write a NFC functional driver using the NFC Class Extension (CX) driver.
+This guide demonstrates how to write a NFC functional driver using the NFC Class Extension (NFC CX) driver.
 
-Note: A driver that uses a class extension driver in its implementation is known as a 'client driver'. That is to say, a client of the class extension driver.
+> [!NOTE]
+> A driver that uses a class extension driver in its implementation is known as a 'client driver'. That is to say, a client of the class extension driver.
 
 ## Prerequisites
 
-1. Your NFC Controller's firmware must implement the NFC Forum's [NFC Controller Interface (NCI)](https://nfc-forum.org/our-work/specifications-and-application-documents/specifications/nfc-controller-interface-nci-specification/) protocol.
-2. Install [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_content=download+vs2017) (or later).
-3. Install the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
-4. Install the [Windows 10 WDK](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+* Your NFC Controller's firmware must implement the NFC Forum's [NFC Controller Interface (NCI)](https://nfc-forum.org/our-work/specifications-and-application-documents/specifications/nfc-controller-interface-nci-specification/) protocol.
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_content=download+vs2017) (or later).
+* The [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+* The [Windows 10 Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
 ## Client driver responsibilities
 
@@ -42,19 +43,17 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
 ## Project setup
 
-1. In Visual Studio, create a new "User Mode Driver, Empty (UMDF V2)" project:
+1. In Visual Studio, create a new "User Mode Driver, Empty (UMDF V2)" project.
 
-    File 🢂 New 🢂 Project 🢂 Visual C++ 🢂 Windows Drivers 🢂 WDF 🢂 User Mode Driver, Empty (UMDF V2)
+    On the **File** menu, point to **New**, and then click **Project**. In the **Visual C++** node, under **Windows Drivers**, click **WDF**, and then click **User Mode Driver, Empty (UMDF V2)**
 
     ![image](images/quick-start-new-project.png)
 
-2. Open the INF file:
+2. Open the INF file.
 
-    Solution Explorer 🢂 \<project-name> 🢂 Driver Files 🢂 \<project-name>.inf
+   In **Solution Explorer**,  under the **\<project-name>** node, in the **Driver Files** folder, double-click **\<project-name>.inf**.
 
-3. In the INF file, remove the custom device class.
-
-    **Steps:**
+3. In the INF file, remove the custom device class, by using the following steps:
 
     1. Remove the following two sections:
 
@@ -67,15 +66,14 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
         HKR,,Icon,,"-10"
         ```
 
-    2. Under the `[Strings]` section, remove the following line:
+    2. Under the `[Strings]` section, remove the following line. 
 
         ```inf
         ClassName="Samples" ; TODO: edit ClassName
         ```
 
-4. In the INF file, set driver's device class to Proximity.
+4. In the INF file, set driver's device class to **Proximity**:
 
-    **Steps:**
     1. Change the value of `Class` to `Proximity`
     2. Change the value of `ClassGuid` to `{5630831C-06C9-4856-B327-F5D32586E060}`
         - This is the GUID of the Proximity device class.
@@ -88,11 +86,8 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
     ...
     ```
 
-5. In the INF file, add a reference to the NFC Class Extension:
-
-    This ensures that Windows Driver Framework (WDF) will load the NFC CX driver when the client driver loads.
-
-    **Steps:**
+5. In the INF file, add a reference to the NFC Class Extension. Doing this ensures that Windows Driver Framework (WDF) will load the NFC CX driver when the client driver loads.
+  
     1. Find the `<project-name>_Install` section.
     2. Add `UmdfExtensions=NfcCx0102`.
 
@@ -102,23 +97,18 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
     UmdfExtensions=NfcCx0102
     ```
 
-6. In the driver build settings, link to the NFC Class Extension.
+6. In the driver build settings, link to the NFC Class Extension. Doing this ensures that the NFC CX API is available during code compilation.
 
-    This ensures that the NFC CX API is available during code compilation.
-
-    **Steps**:
-    1. Solution Explorer 🢂 Right click on the project 🢂 Properties 🢂 Driver Settings 🢂 NFC
-    2. Ensure `Configuration` is set to `All Configurations`.
-    3. Ensure `Platform` is to set to `All Platforms`.
-    4. Set `Link to NFC Class Extension` to `Yes`.
+    1. In **Solution Explorer**, right-click the project, and click **Properties**. In **Configuration Properties**, under **Driver Settings**, click **NFC**.
+    2. Ensure that **Configuration** is set to `All Configurations`.
+    3. Ensure that **Platform** is to set to `All Platforms`.
+    4. Set **Link to NFC Class Extension** to `Yes`.
 
     ![image](images/quick-start-link-to-nfc-cx.png)
 
 7. Add file named `Driver.cpp` to the project.
 
-8. Create a `DriverEntry` routine in `Driver.cpp`.
-
-    This is the entry point for the driver. Its primary purpose is to initialize WDF and to register the [`EvtDriverDeviceAdd`]((https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add)) callback function.
+8. Create a `DriverEntry` routine in `Driver.cpp`. This is the entry point for the driver. Its primary purpose is to initialize WDF and to register the [`EvtDriverDeviceAdd`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
 
     ```cpp
     #include <windows.h>
@@ -221,9 +211,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
     ```
 
-12. Set the NFC CX device configuration.
-
-    This includes providing the [`EvtNfcCxWriteNciPacket`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfccx/nc-nfccx-evt_nfc_cx_write_nci_packet) callback function. This callback receives the NCI packets from the NFC CX driver that the client driver should forward to the NFC Controller.
+12. Set the NFC CX device configuration. The device configuration includes providing the [`EvtNfcCxWriteNciPacket`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfccx/nc-nfccx-evt_nfc_cx_write_nci_packet) callback function. This callback receives the NCI packets from the NFC CX driver that the client driver should forward to the NFC Controller.
 
     ```cpp
         // Create the NfcCx config.
@@ -242,7 +230,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
 13. Register the [PnP power callbacks](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-pnp-and-power-management-in-function-drivers) required by your client driver.
 
-    A typical client driver will likely require the [`EvtDevicePrepareHardware`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware), the [`EvtDeviceReleaseHardware`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware), the [`EvtDeviceD0Entry`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) and the [`EvtDeviceD0Exit`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) functions. But this can vary depending on how your client driver handles power management.
+    A typical client driver will likely require the [`EvtDevicePrepareHardware`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware), the [`EvtDeviceReleaseHardware`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware), the [`EvtDeviceD0Entry`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) and the [`EvtDeviceD0Exit`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) functions. Requirements can vary depending on how your client driver handles power management.
 
     ```cpp
         // Create the PnP power callbacks configuration.
@@ -349,7 +337,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
 19. Call the [`NfcCxHardwareEvent`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfccx/nf-nfccx-nfccxhardwareevent) function with [`HostActionStart`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfccx/ne-nfccx-_nfc_cx_host_action) and [`HostActionStop`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfccx/ne-nfccx-_nfc_cx_host_action) to start and stop the NCI state machine at the appropriate times.
 
-    Some drivers do this during the [`D0Entry`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) and [`D0Exit`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) PnP power callbacks. Though this can vary depending on how your client driver handles power management.
+    Some drivers do this during the [`D0Entry`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry) and [`D0Exit`](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) PnP power callbacks. This can vary depending on how your client driver handles power management, though.
 
     ```cpp
     // Device exiting low power state (or is booting up).
