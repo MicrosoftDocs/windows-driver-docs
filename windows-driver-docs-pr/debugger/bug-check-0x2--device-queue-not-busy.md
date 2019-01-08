@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The DEVICE\_QUEUE\_NOT\_BUSY bug check has a value of 0x00000002.
 
-This bug check appears very infrequently.
+This bug check appears very infrequently.  It indicates that a device queue was expected to be busy, but was not.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
