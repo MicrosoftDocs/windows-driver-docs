@@ -2449,6 +2449,10 @@
       href: bug-check-0x1a3--call-has-not-returned-watchdog-timeout-livedump.md
     - name: "Bug Check 0x1A4: DRIPS_SW_HW_DIVERGENCE_LIVEDUMP"
       href: bug-check-0x1a4--drips-sw-hw-divergence-livedump.md
+    - name: "Bug Check 0x1A8: VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP"
+      href: bug-check-0x1a8--video-dxgkrnl-black-screen-livedump.md
+    - name: "Bug Check 0x1B0: VIDEO_MINIPORT_FAILED_LIVEDUMP"
+      href: bug-check-0x1b0--video-miniport-failed-livedump.md      
     - name: "Bug Check 0x1C4: DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP"
       href: bug-check-0x1c4--driver-verifier-detected-violation-livedump.md
     - name: "Bug Check 0x1C5: IO_THREADPOOL_DEADLOCK_LIVEDUMP"
