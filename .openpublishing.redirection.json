@@ -6199,6 +6199,486 @@
       "source_path": "windows-driver-docs-pr/network/restoring-hyper-v-extensible-switch-run-time-data.md",
       "redirect_URL": "/windows-hardware/drivers/network/managing-hyper-v-extensible-switch-run-time-data",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-ndis-5-x-drivers-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-6-0-backward-compatibility.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-backward-compatibility",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-a-miniport-driver-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-a-miniport-driver-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-changes-required-to-port-a-miniport-driver-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-changes-required-to-port-a-miniport-driver-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-initialization-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-initialization-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-the-driverentry-routine-for-an-ndis-6-0-miniport-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-driverentry-routine-for-an-ndis-6-0-miniport-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-the-ndis-6-0-miniport-driver-characteristics-structure.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-ndis-6-0-miniport-driver-characteristics-structure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/registering-optional-ndis-6-0-entry-points-for-miniport-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/registering-optional-ndis-6-0-entry-points-for-miniport-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-unload-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-unload-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-adapter-initialization-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-adapter-initialization-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-the-miniportinitialize-function-for-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-miniportinitialize-function-for-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/setting-the-ndis-6-0-miniport-adapter-attributes.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/setting-the-ndis-6-0-miniport-adapter-attributes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/reading-the-registry-in-an-ndis-6-0-miniport-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/reading-the-registry-in-an-ndis-6-0-miniport-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/allocating-memory-in-an-ndis-6-0-miniport-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/allocating-memory-in-an-ndis-6-0-miniport-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-bus-specific-configuration-space-access-for-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-bus-specific-configuration-space-access-for-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-adapter-halt-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-adapter-halt-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/supporting-ndis-6-0-miniport-adapter-pause-and-restart-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/supporting-ndis-6-0-miniport-adapter-pause-and-restart-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-send-and-receive-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-send-and-receive-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/allocating-network-data-pools-in-an-ndis-6-0-miniport-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/allocating-network-data-pools-in-an-ndis-6-0-miniport-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-ndis-miniport-driver-send-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-miniport-driver-send-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-ndis-miniport-driver-receive-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-miniport-driver-receive-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-dma-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-dma-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-interrupt-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-interrupt-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-interrupt-registration-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-interrupt-registration-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-interrupt-handling-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-interrupt-handling-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/supporting-message-signaled-interrupts-in-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/supporting-message-signaled-interrupts-in-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-oid-request-handling-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-oid-request-handling-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-status-indications-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-status-indications-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-plug-and-play-event-notification-handling-to-n.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-plug-and-play-event-notification-handling-to-n",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-adapter-check-for-hang-and-reset-operations-to-ndis-6.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-adapter-check-for-hang-and-reset-operations-to-ndis-6",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-adapter-shutdown-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-adapter-shutdown-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-a-protocol-driver-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-a-protocol-driver-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-changes-required-to-port-a-protocol-driver-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-changes-required-to-port-a-protocol-driver-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-initialization-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-initialization-to-ndis-6-0",
+      "redirect_document_id": true
+    }, 
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-the-driverentry-routine-for-an-ndis-6-0-protocol-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-driverentry-routine-for-an-ndis-6-0-protocol-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-the-ndis-6-0-protocol-driver-characteristics-structure.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-ndis-6-0-protocol-driver-characteristics-structure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/registering-optional-ndis-6-0-protocol-driver-entry-points.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/registering-optional-ndis-6-0-protocol-driver-entry-points",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-unload-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-unload-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-binding-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-binding-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-the-protocolbindadapter-function-for-an-ndis-6-0-protocol-dri.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-protocolbindadapter-function-for-an-ndis-6-0-protocol-dri",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/opening-an-adapter-in-an-ndis-6-0-protocol-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/opening-an-adapter-in-an-ndis-6-0-protocol-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/reading-the-registry-in-an-ndis-6-0-protocol-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/reading-the-registry-in-an-ndis-6-0-protocol-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/allocating-memory-in-an-ndis-6-0-protocol-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/allocating-memory-in-an-ndis-6-0-protocol-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-unbinding-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-unbinding-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/supporting-ndis-6-0-protocol-binding-pause-and-restart-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/supporting-ndis-6-0-protocol-binding-pause-and-restart-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-send-and-receive-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-send-and-receive-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/allocating-network-data-pools-in-an-ndis-6-0-protocol-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/allocating-network-data-pools-in-an-ndis-6-0-protocol-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-ndis-protocol-driver-send-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-protocol-driver-send-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-ndis-protocol-driver-receive-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-protocol-driver-receive-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-oid-request-handling-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-oid-request-handling-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-status-indication-handling-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-status-indication-handling-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-plug-and-play-event-notification-handling-to-n.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-plug-and-play-event-notification-handling-to-n",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-an-intermediate-driver-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-an-intermediate-driver-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-intermediate-driver-initialization-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-intermediate-driver-initialization-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-intermediate-driver-unload-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-intermediate-driver-unload-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-virtual-miniport-initialization-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-virtual-miniport-initialization-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-virtual-miniport-halt-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-virtual-miniport-halt-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/supporting-pause-and-restart-operations-in-an-ndis-6-0-intermediate-dr.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/supporting-pause-and-restart-operations-in-an-ndis-6-0-intermediate-dr",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-intermediate-driver-send-and-receive-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-intermediate-driver-send-and-receive-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-intermediate-driver-oid-request-handling-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-intermediate-driver-oid-request-handling-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-intermediate-driver-status-indication-handling-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-intermediate-driver-status-indication-handling-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-intermediate-driver-plug-and-play-event-notification-handling-.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-intermediate-driver-plug-and-play-event-notification-handling-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-a-condis-5-x-driver-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-a-condis-5-x-driver-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-changes-required-to-port-a-condis-driver-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-changes-required-to-port-a-condis-driver-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-driver-registration-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-driver-registration-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-miniport-driver-registration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-miniport-driver-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-client-registration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-client-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-call-manager-registration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-call-manager-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-mcm-registration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-mcm-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-address-family-close-operations-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-address-family-close-operations-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-send-and-receive-operations-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-send-and-receive-operations-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-send-and-receive-operations-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-send-and-receive-operations-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-miniport-driver-send-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-miniport-driver-send-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-miniport-driver-receive-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-miniport-driver-receive-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-send-and-receive-operations-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-send-and-receive-operations-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-protocol-driver-send-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-protocol-driver-send-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-protocol-driver-receive-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-protocol-driver-receive-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-oid-request-operations-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-oid-request-operations-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-oid-requests-for-condis-6-0-miniport-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-oid-requests-for-condis-6-0-miniport-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-oid-request-handling-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-oid-request-handling-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-mcm-oid-request-handling-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-mcm-oid-request-handling-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-status-indication-operations-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-status-indication-operations-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-status-indications-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-status-indications-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-status-indication-handling-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-status-indication-handling-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-task-offload-services-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-task-offload-services-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-6-0-task-offload-porting-issues.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-task-offload-porting-issues",
+      "redirect_document_id": true
+    },  
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-6-0-support-for-task-offload.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-support-for-task-offload",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-6-0-task-offload-backward-compatibility.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-task-offload-backward-compatibility",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-ndis-6-0-task-offload-porting-issues-for-protocol-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-ndis-6-0-task-offload-porting-issues-for-protocol-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-ndis-6-0-task-offload-porting-issues-for-miniport-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-ndis-6-0-task-offload-porting-issues-for-miniport-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-task-offload-support-in-ndis-6-0-filter-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-task-offload-support-in-ndis-6-0-filter-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offloading-checksum-tasks-in-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offloading-checksum-tasks-in-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offloading-the-segmentation-of-large-tcp-packets-in-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offloading-the-segmentation-of-large-tcp-packets-in-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offloading-internet-protocol-security-tasks-in-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offloading-internet-protocol-security-tasks-in-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offloading-tcp-ip-connections-in-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offloading-tcp-ip-connections-in-ndis-6-0",
+      "redirect_document_id": true
     }
   ]
 }
