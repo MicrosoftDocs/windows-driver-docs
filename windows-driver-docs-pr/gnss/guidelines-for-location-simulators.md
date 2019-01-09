@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Guidance for location simulators
 
 
-Microsoft Visual Studio 2012 provides a [location simulator](https://msdn.microsoft.com/library/windows/apps/hh441475.aspx#bkmk-set-the-simulated-geo-location-of-the-device) that works together with a location simulator driver that you create. This section contains guidance for implementing a location simulator driver. Note that starting with Visual Studio 2017, location simulator is removed, and hence simulating sensor driver is no longer supported.
+Microsoft Visual Studio 2012 provides a [location simulator](https://msdn.microsoft.com/library/windows/apps/hh441475.aspx#bkmk-set-the-simulated-geo-location-of-the-device) that works together with a location simulator driver that you create. This section contains guidance for implementing a location simulator driver. Note that starting with Visual Studio 2017, location simulator functionality is no longer present, so simulating a sensor driver is not supported.
 
 ## Configure the simulator
 
