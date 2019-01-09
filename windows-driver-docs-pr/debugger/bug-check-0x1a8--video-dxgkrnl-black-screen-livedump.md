@@ -33,7 +33,7 @@ The VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP bug check has a value of 0x000001A8.
      0x1: Blackscreen hotkey generated DXGKRNL black screen live dump
      0x2: Volume combo key generated DXGKRNL black screen live dump
      0x4: Internal generated DXGKRNL black screen live dump
-     0x8: LPBH generated DXGKRNL black screen live dump
+     0x8: Long Power Button Hold (LPBH) generated DXGKRNL black screen live dump
 
 
 ## Cause
