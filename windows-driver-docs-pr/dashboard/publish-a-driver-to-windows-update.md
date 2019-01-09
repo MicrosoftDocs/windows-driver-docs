@@ -90,7 +90,13 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
 
 
-8. If your driver targets Windows 10 in S mode, you must select both boxes, confirming the following:
+8. If you wish to limit public disclosure of your Shipping Label in the Windows Update Catalog and WSUS Catalog, check the **Limit Public Disclosure of this Shipping Label information.** box.  
+
+   ![screenshot that shows limit public disclosure](/images/limit-public-disclosure.png)
+
+   Your driver will still be published and downloadable from Windows Update but will not show up in either of the public catalog lists.
+
+9. If your driver targets Windows 10 in S mode, you must select both boxes, confirming the following:
 
    * Your driver is compatible with and follows the driver policies outlined in the [Windows 10 in S mode Driver Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/Windows10SDriverRequirements).
    * You verify that your driver follows the additional code integrity policies outlined in the Windows 10 in S mode guidelines.
@@ -98,7 +104,7 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
    ![A screenshot of the two checkboxes you must select when submitting a driver for Windows 10 S](images/win-cloud-checkboxes.png)
 
-9. Select **Publish** to send your request to Windows Update. If you do not want to publish the shipping label right now, you can select **Save**. You can publish the shipping label later by either opening the shipping label and selecting **Publish**, or you can select **Publish all pending** from the hardware submission page. Note that selecting **Publish all pending** will publish all unpublished shipping labels.
+10. Select **Publish** to send your request to Windows Update. If you do not want to publish the shipping label right now, you can select **Save**. You can publish the shipping label later by either opening the shipping label and selecting **Publish**, or you can select **Publish all pending** from the hardware submission page. Note that selecting **Publish all pending** will publish all unpublished shipping labels.
 
  
 

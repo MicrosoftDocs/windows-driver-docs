@@ -1,7 +1,7 @@
 ---
 Description: PurposeThis section describes Universal Serial Bus (USB) support in the Windows operating system, so that you can develop USB device drivers that are interoperable with Windows.
 title: Developing Windows client drivers for USB devices
-ms.date: 04/20/2017
+ms.date: 01/07/2019
 ms.localizationpriority: medium
 ---
 
@@ -50,7 +50,7 @@ Learn how a client driver builds a variable-length data structure called a USB R
 <p><a href="configuring-usb-devices.md" data-raw-source="[Selecting a USB configuration in USB drivers](configuring-usb-devices.md)">Selecting a USB configuration in USB drivers</a></p>
 Device configuration refers to the tasks that the client driver performs to select a USB configuration and an alternate interface in each interface. The section shows the methods calls required to select a USB configuration.
 <p><a href="usb-device-i-o.md" data-raw-source="[Sending USB data transfers in USB client drivers](usb-device-i-o.md)">Sending USB data transfers in USB client drivers</a></p>
-Device configuration refers to the tasks that the client driver performs to select a USB configuration and an alternate interface in each interface. The section shows the methods calls required to select a USB configuration.
+Describes USB pipes, URBs for I/O requests, and how a client driver can use the device driver interfaces (DDIs) to transfer data to and from a USB device.
 <p><a href="usb-power-management.md" data-raw-source="[Implementing power management in USB client drivers](usb-power-management.md)">Implementing power management in USB client drivers</a></p>
 Use the power management abilities of USB devices that comply with the Universal Serial Bus (USB) specification have a rich and complex set of power management features.</td>
 </tr>

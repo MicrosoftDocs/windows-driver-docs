@@ -1,7 +1,7 @@
 ---
 Description: 'Describes the behavior of the USB Type-C Port Controller Interface Class Extension, known as UcmTcpciCx and tasks that a client driver must perform for a USB Type-C port controller.'
 title: Write a USB Type-C port controller driver
-ms.date: 05/20/2017
+ms.date: 01/07/2019
 ms.localizationpriority: medium
 ---
 
@@ -103,7 +103,7 @@ The client driver to the UcmTcpciCx is expected to:
 
 ## 1. Register the client driver with UcmTcpciCx
 
-    Sample reference: See EvtPrepareHardware in Device.cpp
+Sample reference: See `EvtPrepareHardware` in `Device.cpp`.
 
 1.  In your EVT_WDF_DRIVER_DEVICE_ADD implementation, call UcmTcpciDeviceInitInitialize to initialize the WDFDEVICE_INIT opaque structure. The call associates the client driver with the framework.
 
@@ -111,7 +111,7 @@ The client driver to the UcmTcpciCx is expected to:
 
 ## 2. Initialize the I2C communications channel to the port controller hardware.
 
-    Sample reference: See EvtCreateDevice in Device.cpp
+Sample reference: See `EvtCreateDevice` in `Device.cpp`.
 
 In your EVT_WDF_DEVICE_PREPARE_HARDWARE implementation, read the hardware resources to open a communication channel. This is required to retrieve PD capabilities and get notified about alerts. 
 
@@ -124,7 +124,7 @@ Alerts are received as interrupts. Therefore, the driver creates a framework int
 
 ## 3. Initialize the port controller's Type-C and PD capabilities
     
-    Sample reference: See EvtDeviceD0Entry in Device.cpp
+Sample reference: See `EvtDeviceD0Entry` in `Device.cpp`.
 
 
  In your EVT_WDF_DEVICE_D0_EXIT implementation, 
@@ -139,7 +139,7 @@ Alerts are received as interrupts. Therefore, the driver creates a framework int
 
 ## 4. Set up a framework queue object for receiving requests from UcmTcpciCx
 
-    Sample reference: See EvtDeviceD0Entry in Device.cpp and HardwareRequestQueueInitialize in Queue.cpp.
+Sample reference: See `EvtDeviceD0Entry` in `Device.cpp` and `HardwareRequestQueueInitialize` in `Queue.cpp`.
 
  1. In your EVT_WDF_DEVICE_D0_EXIT implementation, create a framework queue object by calling WdfIoQueueCreate. In that call, you will need to register your callback implementation to handle IOCTL requests sent by UcmTpciCx. The client driver may use a power-managed queue. 
 
@@ -171,7 +171,7 @@ hardware request queue.
  
 ## 5. Handlle alerts from the port controller hardware
 
-    Sample reference: See ProcessAndSendAlerts in Alert.cpp.
+Sample reference: See `ProcessAndSendAlerts` in `Alert.cpp`.
 
 The client driver must handle alerts (or events) received from the port controller hardware and send them to UcmTcpciCx with data related to the event. 
 
@@ -194,7 +194,7 @@ Here is an example flow of tasks to report change in CC Status.
 
 ## 6. Process requests received from UcmTcpciCx
 
-    Sample reference: See PortControllerInterface.cpp.
+Sample reference: See `PortControllerInterface.cpp`.
 
 As part of state machine execution, UcmTcpciCx needs to send requests to the port controller. For example, it needs to set the TRANSMIT_BUFFER. This request is handed off to the client driver. The driver sets the transmit buffer with the details provided by UcmTcpciCx. Most of those requests translate into a hardware read or write by the client driver. The commands must be asynchronous because the DPM cannot block waiting for a hardware transfer to complete.
 
