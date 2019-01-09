@@ -6679,6 +6679,161 @@
       "source_path": "windows-driver-docs-pr/network/offloading-tcp-ip-connections-in-ndis-6-0.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offloading-tcp-ip-connections-in-ndis-6-0",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/netdma-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/netdma-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/introduction-to-the-netdma-interface.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/introduction-to-the-netdma-interface",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/writing-a-netdma-provider-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/writing-a-netdma-provider-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/initializing-a-netdma-provider-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/initializing-a-netdma-provider-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/unloading-a-netdma-provider-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/unloading-a-netdma-provider-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/registering-a-netdma-provider.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/registering-a-netdma-provider",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/deregistering-a-netdma-provider.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/deregistering-a-netdma-provider",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/starting-a-netdma-provider.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/starting-a-netdma-provider",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/stopping-a-netdma-provider.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/stopping-a-netdma-provider",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/netdma-provider-services.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/netdma-provider-services",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/allocating-a-netdma-channel.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/allocating-a-netdma-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/freeing-a-netdma-channel.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/freeing-a-netdma-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/starting-a-dma-transfer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/starting-a-dma-transfer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/appending-dma-descriptors-to-a-dma-channel.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/appending-dma-descriptors-to-a-dma-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/completing-a-dma-transfer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/completing-a-dma-transfer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/supporting-null-dma-transfers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/supporting-null-dma-transfers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/suspending-and-resuming-a-dma-transfer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/suspending-and-resuming-a-dma-transfer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/aborting-a-dma-transfer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/aborting-a-dma-transfer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/resetting-a-dma-channel.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/resetting-a-dma-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/managing-netdma-interrupts.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/managing-netdma-interrupts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/setting-the-netdma-interrupt-cpu-affinities.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/setting-the-netdma-interrupt-cpu-affinities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-a-netdma-interrupt.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-a-netdma-interrupt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-a-netdma-interrupt-dpc.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-a-netdma-interrupt-dpc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/installing-a-netdma-provider-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/installing-a-netdma-provider-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/netdma-2-0-extensions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/netdma-2-0-extensions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/netdma-2-0-extensions-for-netdma-1-1-and-later-providers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/netdma-2-0-extensions-for-netdma-1-1-and-later-providers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/netdma-2-0-extensions-for-netdma-2-0-and-later-providers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/netdma-2-0-extensions-for-netdma-2-0-and-later-providers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensions-to-chained-descriptors.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/extensions-to-chained-descriptors",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/source-and-destination-page-break.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/source-and-destination-page-break",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/direct-cache-access--dca-.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/direct-cache-access--dca-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/specifying-a-netdma-provider-friendly-name.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/specifying-a-netdma-provider-friendly-name",
+      "redirect_document_id": true
     }
   ]
 }
