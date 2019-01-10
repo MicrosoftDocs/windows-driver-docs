@@ -92,13 +92,6 @@ The following additional driver models are available to use particular hardware 
 <li>Transmit (Tx) checksum offload</li>
 <li>Receive (Rx) checksum offload</li>
 </ul></li>
-<li><a href="netdma-drivers.md" data-raw-source="[NetDMA](netdma-drivers.md)">NetDMA</a>, an interface for drivers to perform memory-to-memory direct memory access (DMA) transfers.
-<div class="alert">
-<strong>Note</strong>  The <a href="netdma-drivers.md" data-raw-source="[NetDMA](netdma-drivers.md)">NetDMA</a> interface is not supported in Windows 8, Windows Server 2012, and later.
-</div>
-<div>
- 
-</div></li>
 </ul></td>
 </tr>
 <tr class="even">
