@@ -27,7 +27,7 @@ The TCP chimney offloads all TCP processing for one or more TCP connections. The
 
  
 
-For information on TCP chimney offload in NDIS 6.0 and later, see [NDIS TCP Chimney Offload](ndis-tcp-chimney-offload.md).
+For information on TCP chimney offload in NDIS 6.0 and later, see [NDIS TCP Chimney Offload](https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload).
 
  
 
