@@ -15,67 +15,42 @@ ms.localizationpriority: medium
 
 # Driver Verifier
 
-Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system. Driver Verifier can subject the Windows drivers to a variety of stresses and tests to find improper behavior.
+Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system. Driver Verifier can subject the Windows drivers to a variety of stresses and tests to find improper behavior. You can run Driver Verifier on multiple drivers simultaneously, or on one driver at a time. You can configure which tests to run, which allows you to put a driver through heavy stress loads or through more streamlined testing.
 
-You can run Driver Verifier on multiple drivers simultaneously, or on one driver at a time. You can configure which tests to run, which allows you to put a driver through heavy stress loads or through more streamlined testing.
+> [!Caution]
+> <ul><li>Running Driver Verifier could cause the computer to crash.</li>
+> <li>You should only run Driver Verifier on computers that you are using for testing and debugging.</li>
+> <li>You must be in the Administrators group on the computer to use Driver Verifier.</li>
+> <li>Driver Verifier is not included in Windows 10 S, so we recommend testing driver behavior in Windows 10 instead.</li></ul>
 
 
 ## Where can I download Driver Verifier?
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>You don't need to download Driver Verifier (Verifier.exe) as it is included in every version of Windows after Windows 2000, except for Windows 10 S. There isn't a separate Driver Verifier download package, it is located in the %windir%\system32 directory. </p>
-<ul>
-<li>Open a <strong>Command Prompt</strong> window (<strong>Run as administrator</strong>).</li>
-<li>Type <strong>verifier</strong> to open the Driver Verifier Manager, or type <strong>verifier /?</strong> to view command line options. See <a href="verifier-command-line.md" data-raw-source="[&lt;strong&gt;Driver Verifier Command Syntax&lt;/strong&gt;](verifier-command-line.md)"><strong>Driver Verifier Command Syntax</strong></a> for more information.</li>
-</ul>
-<p></p>
-<div class="alert">
-<strong>Caution</strong><br/><ul>
-<li>Running Driver Verifier could cause the computer to crash.</li>
-<li>You should only run Driver Verifier on computers you are using for testing and debugging.</li>
-<li>You must be in the Administrators group on the computer to use Driver Verifier.</li>
-<li>Driver verifier is not included in Windows 10 S. We recommend testing driver behavior in Windows 10 instead.</li>
-</ul>
-</div>
-<div>
+You don't need to download Driver Verifier, because it is included with Windows (except for Windows 10 S) in %windir%\system32\ as Verifier.exe. Driver Verifier is not distributed as a download package.
 
-</div>
-<p>For information about changes in Driver Version for Windows 8.1 and previous versions of Windows, see <a href="driver-verifier--what-s-new.md" data-raw-source="[Driver Verifier: What's New](driver-verifier--what-s-new.md)">Driver Verifier: What's New</a>.</p></td>
-</tr>
-</tbody>
-</table>
-
-
+For information about changes in Driver Version for Windows 8.1 and previous versions of Windows, see <a href="driver-verifier--what-s-new.md" data-raw-source="[Driver Verifier: What's New](driver-verifier--what-s-new.md)">Driver Verifier: What's New</a>.
 
 
 
 ## When to use Driver Verifier
 
+Run Driver Verifier throughout the driver development and testing process. Use Driver Verifier: 
 
-Run Driver Verifier throughout the driver development and test process.
+-   To find problems early in the development life cycle, when they are easier and less costly to correct.
 
--   Use Driver Verifier to find problems early in the development life cycle, when they are easier and less costly to correct.
+-   When you deploy a driver for testing using the WDK, Visual Studio, and the tests from the [Windows Hardware Lab Kit (Windows HLK)](https://go.microsoft.com/fwlink/p/?linkid=254893) or [Windows Hardware Certification Kit](https://msdn.microsoft.com/en-us/library/windows/hardware/jj124227.aspx) (for Windows 8.1). For more information about testing drivers, see [Testing a Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/testing-a-driver).
 
--   Use Driver Verifier when you deploy a driver for testing using the WDK, Visual Studio, and the [Windows Hardware Certification Kit](https://go.microsoft.com/fwlink/p/?linkid=254893) (HCK) tests. See [Testing a Driver](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver).
-
--   Use Driver Verifier for troubleshooting and debugging test failures and computer crashes.
-
+-   For troubleshooting and debugging test failures and computer crashes.
 
 
 ## How to start Driver Verifier
 
-
-You should only run Driver Verifier on test computers, or computers you are testing and debugging. To get the most benefit from Driver Verifier, you should use a kernel debugger and connect to the test computer. See [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063).
+You should only run Driver Verifier on test computers, or on computers that you are testing and debugging. To get the most benefit from Driver Verifier, you should use a kernel debugger and connect to the test computer. For more information about debugging, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/index).
 
 1. Open a **Command Prompt** window (**Run as administrator**) and type **verifier** to open the Driver Verifier Manager.
 2. Select **Create standard settings** (default) and click **Next**.
 
-   You can also choose **Create custom settings** to select from predefined settings, or to select individual options. See [Driver Verifier Options](driver-verifier-options.md) and [Selecting Driver Verifier Options](selecting-driver-verifier-options.md) for more information.
+   You can also choose **Create custom settings** to select from predefined settings, or to select individual options. See [Driver Verifier options and rule classes](driver-verifier-options.md) and [Selecting Driver Verifier Options](selecting-driver-verifier-options.md) for more information.
 
 3. Select a driver or drivers to verify.
 
@@ -114,18 +89,21 @@ You should only run Driver Verifier on test computers, or computers you are test
    </table>
 
 
-
 4. Click **Finish** and reboot the computer.
 
-**Note**  You can also run Driver Verifier in a Command Prompt window. For example, to run Driver Verifier with the standard settings on a driver called myDriver.sys, you would use the following command:
+>[!Note] You can also run Driver Verifier in a Command Prompt window. For example, to run Driver Verifier with the standard settings on a driver called myDriver.sys, you would use the following command:
 
+>[!Note] 
+> You can also run Driver Verifier in a Command Prompt window. For example, to run Driver Verifier with the standard settings on a driver called myDriver.sys, you would use the following command:
+
+>[!Note] > You can also run Driver Verifier in a Command Prompt window. For example, to run Driver Verifier with the standard settings on a driver called myDriver.sys, you would use the following command:
 
 
 ```
 verifier  /standard /driver myDriver.sys
 ```
 
-See [**Driver Verifier Command Syntax**](verifier-command-line.md) for more information.
+For more information, see [**Driver Verifier Command Syntax**](verifier-command-line.md).
 
 
 
@@ -167,9 +145,7 @@ verifier  /query
 ```
 
 
-
 ## How to debug Driver Verifier violations
-
 
 To get the most benefit from Driver Verifier, you should use a kernel debugger and connect to the test computer. See [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) for more information.
 
@@ -184,7 +160,7 @@ All Driver Verifier violations result in bug checks, the most common ones (altho
 -   [**Bug Check 0xD6: DRIVER\_PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff560267)
 -   [**Bug Check 0xE6: DRIVER\_VERIFIER\_DMA\_VIOLATION**](https://msdn.microsoft.com/library/windows/hardware/ff560341)
 
-For more information see [Handling a Bug Check When Driver Verifier is Enabled](https://msdn.microsoft.com/library/windows/hardware/hh450984). For tips about debugging Bug Check 0xC4, see [Debugging Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION](debugging-bug-check-0xc4--driver-verifier-detected-violation.md).
+For more information, see [Handling a Bug Check When Driver Verifier is Enabled](https://msdn.microsoft.com/library/windows/hardware/hh450984). For tips about debugging Bug Check 0xC4, see [Debugging Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION](debugging-bug-check-0xc4--driver-verifier-detected-violation.md).
 
 When you start a new debug session, use the debugger extension command [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112). In kernel mode, the **!analyze** command displays information about the most recent bug check. The **!analyze -v** command displays additional information and attempts to pinpoint the faulting driver.
 
@@ -219,9 +195,7 @@ In addition [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/f
     ```
 
 
-
 ## Related topics
-
 
 [Driver Verifier: What's New](driver-verifier--what-s-new.md)
 
@@ -232,13 +206,3 @@ In addition [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/f
 [Using Driver Verifier](using-driver-verifier.md)
 
 [Controlling Driver Verifier](controlling-driver-verifier.md)
-
-
-
-
-
-
-
-
-
-
