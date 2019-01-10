@@ -2,7 +2,7 @@
 title: Bug Check 0x170 CRYPTO_LIBRARY_INTERNAL_ERROR
 description: The CRYPTO_LIBRARY_INTERNAL_ERROR bug check has a value of 0x00000170. It indicates that an internal error in the crypto libraries occurred.
 keywords: ["Bug Check 0x170 CRYPTO_LIBRARY_INTERNAL_ERROR", "CRYPTO_LIBRARY_INTERNAL_ERROR"]
-ms.date: 01/04/2019
+ms.date: 01/10/2019
 topic_type:
 - apiref
 api_name:
@@ -32,8 +32,7 @@ The CRYPTO\_LIBRARY\_INTERNAL\_ERROR  bug check has a value of 0x00000170. It in
 ## Cause
 -----
 
-This bugcheck will hit if the crypto libraries detect an anomaly that should never occur but which might be the symptom of an
-active attack, and the library has no safe method of signaling the error to the caller.
+This bugcheck indicates the cryptographic library hit an anomaly which should never occur, and the library has no safe method of signaling the error to the caller.  This might be the symptom of an active attack.
 
 
 ## See Also
@@ -41,6 +40,6 @@ active attack, and the library has no safe method of signaling the error to the 
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
-
+[Cryptography API: Next Generation](https://docs.microsoft.com/en-us/windows/desktop/SecCNG/cng-portal) 
 
 
