@@ -30,9 +30,77 @@ The USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP bug check has a value of 0x000001C9. I
 
 **Watchdog Source Values**
 
+```
+        0  : WatchdogSourceDefault
+              Source was not specified
+        1  : WatchdogSourceRhsCleanup
+              Monitors that RHS process goes away when
+              terminating on graceful exit
+        2  : WatchdogSourceRhsResourceDeadlockBugcheckNow
+              RHS was asked to immediately bugcheck machine
+              on resource deadlock
+        3  : WatchdogSourceRhsExceptionFromResource
+              Resource has leaked unhandled exception from an entry point,
+              RHS is terminating and this watchdog monitors that
+              process will go away
+        4  : WatchdogSourceRhsUnhandledException
+              Unhandled exception in RHS.
+              RHS is terminating and this watchdog monitors that
+              process will go away
+        5  : WatchdogSourceRhsResourceDeadlock
+              Monitors that RHS process goes away when
+              terminating on resource deadlock
+        6  : WatchdogSourceRhsResourceTypeDeadlock
+              Monitors that RHS process goes away when
+              terminating on resource type deadlock
+        7  : WatchdogSourceClussvcUnhandledException
+              Unhandled exception in clussvc.
+              clussvc is terminating and this watchdog monitors that
+              process will go away
+        8  : WatchdogSourceClussvcBugcheckMessageRecieved
+              Another cluster node has sent message asking to bugcheck this node.
+        9  : WatchdogSourceClussvcWatchdogBugcheck
+              User mode watchdog has expired and created netft watchdog
+              to bugchecked the node.
+       0xA : WatchdogSourceClussvcIsAlive
+              Cluster service sends heartbeat to netft every 500 millseconds.
+              By default, netft expects at least 1 heartbeat per second.
+              If this watchdog was triggered that means clussvc is not getting
+              CPU to send heartbeats.
+      0x65 : WatchdogSourceRhsResourceDeadlockPhysicalDisk
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0x66 : WatchdogSourceRhsResourceDeadlockStoragePool
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0x67 : WatchdogSourceRhsResourceDeadlockFileServer
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0x68 : WatchdogSourceRhsResourceDeadlockSODAFileServer
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0x69 : WatchdogSourceRhsResourceDeadlockStorageReplica
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0x6A : WatchdogSourceRhsResourceDeadlockStorageQOS
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0x6B : WatchdogSourceRhsResourceDeadlockStorageNFSV2
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0xC9 : WatchdogSourceRhsResourceTypeDeadlockPhysicalDisk
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+      0xCA : WatchdogSourceRhsResourceTypeDeadlockStoragePool
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+      0xCB : WatchdogSourceRhsResourceTypeDeadlockFileServer
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+      0xCC : WatchdogSourceRhsResourceTypeDeadlockSODAFileServer
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+      0xCD : WatchdogSourceRhsResourceTypeDeadlockStorageReplica
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+      0xCE : WatchdogSourceRhsResourceTypeDeadlockStorageQOS
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+      0xCF : WatchdogSourceRhsResourceTypeDeadlockStorageNFSV2
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+```
+
 ## Cause
 -----
-One or more critical user mode components failed to satisfy a health check. 
+One or more critical user mode components failed to satisfy a health check.
+ 
 Hardware mechanisms such as watchdog timers can detect that basic kernel 
 services are not executing. However, resource starvation issues, including 
 memory leaks, lock contention, and scheduling priority misconfiguration, 

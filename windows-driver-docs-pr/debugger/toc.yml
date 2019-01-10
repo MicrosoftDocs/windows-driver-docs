@@ -2455,6 +2455,8 @@
       href: bug-check-0x1a4--drips-sw-hw-divergence-livedump.md
     - name: "Bug Check 0x1A5: USB_DRIPS_BLOCKER_SURPRISE_REMOVAL_LIVEDUMP"
       href: bug-check-0x1a5--usb-drips-blocker-surprise-removal-livedump.md
+    - name: "Bug Check 0x1A6: BLUETOOTH_ERROR_RECOVERY_LIVEDUMP"
+      href: bug-check-0x1a6--bluetooth-error-recovery-livedump.md
     - name: "Bug Check 0x1A8: VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP"
       href: bug-check-0x1a8--video-dxgkrnl-black-screen-livedump.md
     - name: "Bug Check 0x1B0: VIDEO_MINIPORT_FAILED_LIVEDUMP"
