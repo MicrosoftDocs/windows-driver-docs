@@ -397,8 +397,8 @@ The following table shows the code and name of each bug check code.
 | 0x000001C7 | [**STORE\_DATA\_STRUCTURE\_CORRUPTION**](bug-check-0x1c7--store-data-structure-corruption.md)                                                     |
 | 0x000001C8 | [**MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD**](bug-check-0x1c8--manually-initiated-power-button-hold.md)                                          |
 | 0x000001C9 | [**USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP**](bug-check-0x1c9--user-mode-health-monitor-livedump.md)                                                |
-| 0x000001CA | [**SYNTHETIC\_WATCHDOG\_TIMEOUT**](bug-check-0x1ca--synthetic-watchdog-timeout.md)                                                |
-| 0x000001CB | [**INVALID\_SILO\_DETACH**](bug-check-0x1cb--invalid-silo-detach.md)                                                |
+| 0x000001CA | [**SYNTHETIC\_WATCHDOG\_TIMEOUT**](bug-check-0x1ca--synthetic-watchdog-timeout.md)                                                                |
+| 0x000001CB | [**INVALID\_SILO\_DETACH**](bug-check-0x1cb--invalid-silo-detach.md)                                                                              |
 | 0x000001CC | [**EXRESOURCE_TIMEOUT_LIVEDUMP**](bug-check-0x1cc--exresource-timeout-livedump.md)                                                                |
 | 0x000001CD | [**INVALID\_CALLBACK\_STACK_ADDRESS**](bug-check-0x1cd--invalid-callback-stack-address.md)                                                        |
 | 0x000001CE | [**INVALID\_KERNEL\_STACK\_ADDRESS**](bug-check-0x1ce--invalid-kernel-stack-address.md)                                                           |
@@ -408,6 +408,8 @@ The following table shows the code and name of each bug check code.
 | 0x000001D2 | [**WORKER\_THREAD\_INVALID\_STATE**](bug-check-0x1d2--worker-thread-invalid-state.md)                                                             |
 | 0x000001D3 | [**WFP\_INVALID\_OPERATION**](bug-check-0x1d3--wfp-invalid-operation.md)                                                                          |
 | 0x000001D4 | [**UCMUCSI\_LIVEDUMP**](bug-check-0x1d4--ucmusci-livedump.md)                                                                                     |
+| 0x000001D5 | [**DRIVER_PNP_WATCHDOG**](bug-check-0x1d5--driver-pnp-watchdog.md)                                                                                |
+| 0x000001D6 | [**WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLASS**](bug-check-0x1d6--worker-thread-returned-with-non-default-workload-class.md)          |
 | 0x00000356 | [**XBOX\_ERACTRL\_CS\_TIMEOUT**](bug-check-0x356--xbox-eractrl-cs-timeout.md)                                                                     |
 | 0x00000BFE | [**BC\_BLUETOOTH\_VERIFIER\_FAULT**](bug-check-0xbfe--bc-bluetooth-verifier-fault.md)                                                             |
 | 0x00000BFF | [**BC\_BTHMINI\_VERIFIER\_FAULT**](bug-check-0xbff--bc-bthmini-verifier-fault.md)                                                                 |
