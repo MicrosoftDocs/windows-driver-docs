@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Overview of the Driver Selection Process
 
 
-Windows represents a driver as a [*driver node*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-node), which includes all the software support for a device, such as any services, device-specific co-installers, and registry entries. The services for a device include a function driver and any upper-level and lower-level device filter drivers.
+Windows represents a driver as a *driver node*, which includes all the software support for a device, such as any services, device-specific co-installers, and registry entries. The services for a device include a function driver and any upper-level and lower-level device filter drivers.
 
 Some devices require a vendor-supplied driver that is designed specifically for that device or one that is designed to support a family of devices. However, other devices can be driven by a system-supplied driver that supports all the devices of a given [device setup class](device-setup-classes.md). Windows selects the driver that most closely matches the device. If Windows does not find such a driver, it selects from increasingly more general drivers.
 

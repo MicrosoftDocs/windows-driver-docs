@@ -47,7 +47,7 @@ The following notes correspond to the circled numbers in the previous figure:
 
     See the reference page for [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://msdn.microsoft.com/library/windows/hardware/ff551670) for detailed information about handling this IRP.
 
-    In this example, the USB hub driver handles this IRP for the hub [*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo). The hub driver creates a [*PDO*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdo) for the joystick device and includes a referenced pointer to the joystick PDO in its list of child devices returned with the IRP.
+    In this example, the USB hub driver handles this IRP for the hub *FDO*. The hub driver creates a *PDO* for the joystick device and includes a referenced pointer to the joystick PDO in its list of child devices returned with the IRP.
 
     When the USB hub's parent bus driver (the USB host controller class/miniclass driver pair) completes the IRP, the IRP travels back up the device stack by means of any [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routines registered by the hub drivers.
 

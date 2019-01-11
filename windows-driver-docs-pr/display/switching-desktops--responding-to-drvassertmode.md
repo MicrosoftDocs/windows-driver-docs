@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 When switching between desktops on a display, Window Manager ensures that the desktops are properly redrawn and that a mouse pointer is enabled and displayed in the correct position. The display driver receives a call to [**DrvAssertMode**](https://msdn.microsoft.com/library/windows/hardware/ff556178) only when there is a desktop switch.
 
-When this function is called, the driver ensures that the indicated [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev) is either in the mode specified when the PDEV was created, or in text mode. Window Manager then selects the correct pointer shape and moves it to the current position. GDI, not the driver, is responsible for maintaining the mouse pointer state.
+When this function is called, the driver ensures that the indicated *PDEV* is either in the mode specified when the PDEV was created, or in text mode. Window Manager then selects the correct pointer shape and moves it to the current position. GDI, not the driver, is responsible for maintaining the mouse pointer state.
 
 GDI calls *DrvAssertMode* to set the mode of a specified hardware device. This function selects either the mode specified when the display driver-defined PDEV structure was created or the default mode of the hardware. The driver should keep a record of the current mode of the PDEV.
 

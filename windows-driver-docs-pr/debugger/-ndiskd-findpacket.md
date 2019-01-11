@@ -41,11 +41,6 @@ Ndiskd.dll
 
 ## <span id="see_also"></span>See also
 
-
-[Windows 2000 and Windows XP Networking Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff565849)
-
-[Windows 2000 and Windows XP Networking Reference](https://msdn.microsoft.com/library/windows/hardware/ff565850)
-
 [NDIS\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff557086)
 
  

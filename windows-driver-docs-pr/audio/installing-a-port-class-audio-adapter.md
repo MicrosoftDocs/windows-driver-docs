@@ -47,7 +47,7 @@ The following topics present examples of the key sections in the INF file that i
 
 [Installing Windows Multimedia System Support for an Audio Adapter](installing-windows-multimedia-system-support-for-an-audio-adapter.md)
 
-[Installing an Audio Adapter Service](installing-an-audio-adapter-service.md)
+[Installing an Audio Adapter Service in Windows](installing-an-audio-adapter-service-in-windows.md)
 
 [Customizing Control Panel](customizing-control-panel.md)
 

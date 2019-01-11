@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 Every miniport driver must have a [*HwVidResetHw*](https://msdn.microsoft.com/library/windows/hardware/ff567363) function if its adapter cannot be reset to an initialized state without a hard reboot of the machine.
 
-*HwVidResetHw* is called by the [*HAL*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hal) if the machine is about to crash or if the user initiates a soft reboot of the machine. *HwVidResetHw* resets the adapter to a specified character mode, so the HAL can display crash-dump information as it shuts down the system or initialization information during a soft reboot.
+*HwVidResetHw* is called by the *HAL* if the machine is about to crash or if the user initiates a soft reboot of the machine. *HwVidResetHw* resets the adapter to a specified character mode, so the HAL can display crash-dump information as it shuts down the system or initialization information during a soft reboot.
 
 *HwVidResetHw* cannot call the BIOS, cannot call any pageable code, nor may it be made pageable. If possible, it should call only the **VideoPortRead***Xxx* and **VideoPortWrite***Xxx* functions, but it also can call any of the following:
 

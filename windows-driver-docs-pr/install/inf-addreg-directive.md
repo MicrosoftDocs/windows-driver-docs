@@ -80,8 +80,8 @@ Relative root, in which keys that are specified by using this abbreviation are r
 
 | INF Section Containing AddReg Directive                        | Registry Key Referenced by HKR                                                        |
 |----------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| INF [***DDInstall***](inf-ddinstall-section.md) section       | The device's [*software key*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-key) |
-| INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section | The device's [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key) |
+| INF ***DDInstall*** |
+| INF ***DDInstall*.HW** |
 | INF *\[service-install-section\]* section                      | The **Services** key                                                                  |
 | INF *\[event-log-install\]* section                            | The **EventLog** key                                                                  |
 | INF *\[add-interface-section\]* section                        | The device interface's registry key                                                    |
@@ -246,12 +246,12 @@ For more information about device characteristics, see [Specifying Device Charac
 <a href="" id="devicetype"></a>**DeviceType**  
 A **DeviceType** HKR **AddReg** entry specifies a device type for the device. The device-type is the numeric value of a FILE_DEVICE_*XXX* constant defined in *Wdm.h* or *Ntddk.h*. The flag value of 0x10001 specifies that the device-type value is a [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types). For more information, see [Specifying Device Types](https://msdn.microsoft.com/library/windows/hardware/ff563821).
 
-A class-installer INF should specify the device type that applies to all, or almost all, of the devices in the class. For example, if the devices in the class are of type FILE_DEVICE_CD_ROM, specify a *device-type* of 0x02. If a device INF specifies a value for **DeviceType**, it overrides the value set by the class installer, if any. If the class or device INF specifies a **DeviceType** value, the PnP manager applies that type to the [*physical device object (PDO)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-physical-device-object--pdo-) created by the device's bus driver.
+A class-installer INF should specify the device type that applies to all, or almost all, of the devices in the class. For example, if the devices in the class are of type FILE_DEVICE_CD_ROM, specify a *device-type* of 0x02. If a device INF specifies a value for **DeviceType**, it overrides the value set by the class installer, if any. If the class or device INF specifies a **DeviceType** value, the PnP manager applies that type to the *physical device object (PDO)* created by the device's bus driver.
 
 <a href="" id="security"></a>**Security**  
 A **Security** HKR **AddReg** entry specifies a security descriptor for the device. The *security-descriptor-string* is a string with tokens to indicate the DACL (**D:**) security component.
 
-A class-installer INF can specify a security descriptor for a device class. A device INF can specify a security descriptor for an individual device, overriding the security for the class. If the class and/or device INF specifies a *security-descriptor-string*, the PnP manager propagates the descriptor to all the device objects ( [*DOs*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-object)) for a device. This includes the function device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)), optional [*filter DOs*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-filter-device-object), and the PDO.
+A class-installer INF can specify a security descriptor for a device class. A device INF can specify a security descriptor for an individual device, overriding the security for the class. If the class and/or device INF specifies a *security-descriptor-string*, the PnP manager propagates the descriptor to all the device objects ( *DOs*) for a device. This includes the function device object (*FDO*), optional *filter DOs*, and the PDO.
 
 For information about the format of security descriptor strings, see the Microsoft Windows SDK documentation.
 
@@ -264,7 +264,7 @@ An **UpperFilters** HKR **AddReg** entry specifies a PnP upper-filter driver. Th
 A **LowerFilters** HKR **AddReg** entry specifies a PnP lower-filter driver. This entry in a <em>DDInstall</em>**.HW section** defines one or more device-specific lower-filter drivers. In a **ClassInstall32** section, this entry defines one or more class-wide lower-filter drivers.
 
 <a href="" id="exclusive"></a>**Exclusive**  
-An **Exclusive** HKR **AddReg** entry, if it exists and is set to "1", specifies that the device is an [*exclusive device*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-exclusive-device). Otherwise the device is not treated as exclusive. For more information, see [Specifying Exclusive Access to Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563827).
+An **Exclusive** HKR **AddReg** entry, if it exists and is set to "1", specifies that the device is an *exclusive device*. Otherwise the device is not treated as exclusive. For more information, see [Specifying Exclusive Access to Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563827).
 
 <a href="" id="enumproppages32"></a>**EnumPropPages32**  
 An **EnumPropPages32** HKR **AddReg** entry specifies the name of a dynamic-link library (*DLL*) file that is a device-specific property page provider. It also specifies the name of the **ExtensionPropSheetPageProc** callback function as implemented by the DLL. For more information about property pages and functions, see the Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0.

@@ -8,11 +8,12 @@ keywords:
 - renaming boot entries WDK
 - Boot.ini files WDK , friendly names
 - boot options WDK , friendly names
-ms.date: 04/20/2017
+ms.date: 01/02/2019
 ms.localizationpriority: medium
 ---
 
 # Changing the Friendly Name of a Boot Entry
+
 
 In Windows, the items that appear in the Windows Boot Manager are the descriptions of each boot entry.
 
@@ -30,8 +31,8 @@ For example, the following friendly name strings add little value.
 However, more precise strings, such as the ones that follow, make the boot choice much easier.
 
 ```
+"Windows 10 kdnet"
 "Windows 10 NullModem"
-"Windows 10 1394"
 ```
 
 **Note**   When a boot entry is configured for debugging ([/debug /debugport](https://msdn.microsoft.com/library/windows/hardware/ff556253)) or for Emergency Management Services (EMS) ([/redirect](https://msdn.microsoft.com/library/windows/hardware/ff557180)) on an x86- or an x64-based system, the boot loader appends a bracketed phrase (\[debugger enabled\] or \[ems enabled\]) to the friendly name that appears in the boot menu.
@@ -39,7 +40,43 @@ However, the boot loader omits the bracketed phrase from the boot menu when the 
 
 To change the friendly name of a boot entry in a Boot.ini file, you can use Bootcfg or edit the Boot.ini file in Notepad. On systems that store boot options in EFI NVRAM, use Bootcfg.
 
-To change the friendly name of a boot entry for Windows, use BCDEdit.
+To change the friendly name of a boot entry for Windows, use BCDEdit. 
+
+> [!CAUTION]
+> Administrative privileges are required to update the boot configuration. Changing some boot entry options could render your computer inoperable. 
+
+
+## <span id="using_bcdedit"></span><span id="USING_BCDEDIT"></span>Using BCDEdit
+
+To change the description of a boot entry as it appears on the boot menu, you can use the **/set** *IDdescription* option. The command uses the following syntax. The ID is the GUID that is associated with the boot entry (or one of the well-known identifiers, for example, {current}).
+
+> [!NOTE]
+> If you are using [Windows PowerShell](https://go.microsoft.com/fwlink/p/?linkid=108518), you must use quotes around the boot entry identifier, for example: **"{49916baf-0e08-11db-9af4-000bdbd316a0}"** or **"{current}"**.
+
+
+```console
+bcdedit /set ID description "The new description"
+```
+
+For example:
+
+```console
+bcdedit /set {802d5e32-0784-11da-bd33-000476eba25f} description "Windows 10 NullModem"
+```
+
+To change the description of the boot entry that corresponds to the operating system that is currently running, use the following example:
+
+```console
+bcdedit /set {current} description "Windows 10 NullModem"
+```
+
+You can also change the description when you copy an existing boot entry using the **/d** option.
+
+```console
+bcdedit /copy {current} /d "Windows 10 NullModem"
+```
+
+
 
 ## <span id="using_bootcfg"></span><span id="USING_BOOTCFG"></span>Using Bootcfg
 
@@ -47,7 +84,7 @@ With Bootcfg, you can change the friendly name of a boot entry only while copyin
 
 The following Bootcfg command copies the first boot entry to create a new entry. The **/ID** switch specifies the line number of the entry being copied. The **/d** (description) switch specifies the friendly name of the newly-created entry.
 
-```
+```console
 bootcfg /copy /ID 1 /d "Windows 10 Debug"
 ```
 
@@ -59,40 +96,14 @@ In the Boot.ini file, the friendly name of a boot entry appears in the boot entr
 
 For example, the following sample from a Boot.ini file has duplicate boot entries for Microsoft Windows 10 Professional.
 
-```
+```console
 multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Microsoft Windows 10 Professional" /fastdetect
 multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Microsoft Windows 10 Professional" /fastdetect
 ```
 
 To change the friendly name of a boot entry, type over the quoted string in the boot entry. In the following example, because the first entry will be customized for debugging, the name is changed to Windows 10 Debug.
 
-```
+```console
 multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Windows 10 Debug" /fastdetect
 multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Microsoft Windows 10 Professional" /fastdetect
-```
-
-## <span id="using_bcdedit"></span><span id="USING_BCDEDIT"></span>Using BCDEdit
-
-To change the description of a boot entry as it appears on the boot menu, you can use the **/set** *IDdescription* option. The command uses the following syntax. The ID is the GUID that is associated with the boot entry (or one of the well-known identifiers, for example, {current}).
-
-```
-bcdedit /set ID description "The new description"
-```
-
-For example:
-
-```
-bcdedit /set {802d5e32-0784-11da-bd33-000476eba25f} description "Windows 10 NullModem"
-```
-
-To change the description of the boot entry that corresponds to the operating system that is currently running, use the following example:
-
-```
-bcdedit /set {current} description "Windows 10 NullModem"
-```
-
-You can also change the description when you copy an existing boot entry using the **/d** option.
-
-```
-bcdedit /copy {current} /d "Windows 10 NullModem"
 ```

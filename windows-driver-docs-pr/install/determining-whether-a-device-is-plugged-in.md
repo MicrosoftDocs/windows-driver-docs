@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Determining Whether a Device Is Plugged In
 
 
-Be aware that the behavior of an AutoRun-invoked [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) must depend on whether the user plugs in the hardware first or inserts the distribution medium first. Since independent hardware vendors (IHVs) typically provide one distribution disk, and a disk can only have one AutoRun-invoked application, your AutoRun-invoked device installation application must determine whether your device is plugged in.
+Be aware that the behavior of an AutoRun-invoked *device installation application* must depend on whether the user plugs in the hardware first or inserts the distribution medium first. Since independent hardware vendors (IHVs) typically provide one distribution disk, and a disk can only have one AutoRun-invoked application, your AutoRun-invoked device installation application must determine whether your device is plugged in.
 
 To determine whether a device is plugged in, the application can call the [**UpdateDriverForPlugAndPlayDevices**](https://msdn.microsoft.com/library/windows/hardware/ff553534) function, passing the hardware ID of the device. The device is plugged in if one of the following is true:
 
@@ -28,7 +28,7 @@ The device is not plugged in if the function returns **FALSE** and [GetLastError
 
 ### Reinstalling an Unplugged Device
 
-When a device that formerly was attached is now unplugged, the device's [*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode) remains in the system, although it is both inactive and hidden. Before you can reinstall such a device, you must first find this "phantom" devnode, and mark it as needing reinstallation. Then, when the device is plugged back in, Plug and Play will reenumerate the device, find the new driver for it, and install the driver for the device.
+When a device that formerly was attached is now unplugged, the device's *devnode* remains in the system, although it is both inactive and hidden. Before you can reinstall such a device, you must first find this "phantom" devnode, and mark it as needing reinstallation. Then, when the device is plugged back in, Plug and Play will reenumerate the device, find the new driver for it, and install the driver for the device.
 
 **To reinstall an unplugged device:**
 

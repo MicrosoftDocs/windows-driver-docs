@@ -42,23 +42,23 @@ Windows Vista and later versions of Windows enforce the kernel-mode driver sign
 
 -   Drivers that stream protected media. For more information about these requirements, see [Code-signing for Protected Media Components (Windows Vista and Later)](https://go.microsoft.com/fwlink/p/?linkid=69258)
 
--   Kernel-mode [*boot-start drivers*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver).
+-   Kernel-mode *boot-start drivers*.
 
 ### <a href="" id="kernel-mode-code-signing-requirements-during-development-and-test"></a> Kernel-Mode Code Signing Requirements during Development and Test
 
 <a href="" id="--------64-bit-versions-of-windows-starting-with-"></a> **64-bit versions of Windows starting with Windows Vista**  
 The kernel-mode code signing policy requires that a kernel-mode driver be [test-signed](test-signing-driver-packages.md) and that test-signing is [enabled](the-testsigning-boot-configuration-option.md). A test signature can be a [WHQL test signature](whql-test-signature-program.md) or generated in-house by a [test certificate](test-certificates.md). Drivers must be test-signed as follows:
 
--   A kernel-mode [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver) must have an embedded test signature. This applies to any type of PnP or non-PnP kernel-mode driver.
+-   A kernel-mode *boot-start driver* must have an embedded test signature. This applies to any type of PnP or non-PnP kernel-mode driver.
 
--   A kernel-mode driver that is not a [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver) must have either a test-signed [catalog file](catalog-files.md) or the driver file must include an embedded test signature. This applies to any type of PnP or non-PnP kernel-mode driver.
+-   A kernel-mode driver that is not a *boot-start driver* must have either a test-signed [catalog file](catalog-files.md) or the driver file must include an embedded test signature. This applies to any type of PnP or non-PnP kernel-mode driver.
 
 <a href="" id="32-bit-versions-of-windows"></a>**32-bit versions of Windows**  
 Windows Vista and later versions of Windows enforce the kernel-mode driver signing policy only for the following drivers:
 
 -   Drivers that stream protected media. For more information about these requirements, see [Code-signing for Protected Media Components (Windows Vista and Later)](https://go.microsoft.com/fwlink/p/?linkid=69258)
 
--   Kernel-mode [*boot-start drivers*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver).
+-   Kernel-mode *boot-start drivers*.
 
  
 

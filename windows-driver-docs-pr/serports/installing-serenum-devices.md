@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-To install a device that is enumerated by Serenum, use the following [*hardware ID*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-id) format for the device:
+To install a device that is enumerated by Serenum, use the following *hardware ID* format for the device:
 
 Serenum\\*XxxxYyyy*
 

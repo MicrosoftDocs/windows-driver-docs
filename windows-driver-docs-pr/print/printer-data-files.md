@@ -19,15 +19,15 @@ Microsoft-supplied printer drivers make use of data files to describe individual
 
 -   [Microsoft Universal Printer Driver](microsoft-universal-printer-driver.md)
 
-    Describes [*generic printer description (GPD)*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-generic-printer-description--gpd-) files.
+    Describes *generic printer description (GPD)* files.
 
 -   [Microsoft PostScript Printer Driver](microsoft-postscript-printer-driver.md)
 
-    Describes [*PostScript printer description (PPD)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-postscript-printer-description--ppd-) files.
+    Describes *PostScript printer description (PPD)* files.
 
 -   [Microsoft Plotter Driver](microsoft-plotter-driver.md)
 
-    Describes [*plotter characterization data (PCD)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-plotter-characterization-data--pcd-) files.
+    Describes *plotter characterization data (PCD)* files.
 
  
 

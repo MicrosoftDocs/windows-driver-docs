@@ -22,7 +22,7 @@ A DIF_NEWDEVICEWIZARD_PREANALYZE request allows an installer to supply wizard pa
 
 ### When Sent
 
-After the user has selected a driver, but before Windows registers the device that makes the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) "live."
+After the user has selected a driver, but before Windows registers the device that makes the device node (*devnode*) "live."
 
 ### Who Handles
 

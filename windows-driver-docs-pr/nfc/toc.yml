@@ -101,6 +101,8 @@
     items: 
     - name: "Glossary"
       href: glossary.md
+    - name: "NFC CX quick start guide"
+      href: nfc-class-extension-quickstart.md
     - name: "Architecture"
       href: architecture.md
     - name: "NFC stack architecture"

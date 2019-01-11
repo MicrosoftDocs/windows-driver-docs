@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Interfaces on a composite USB device can be grouped in collections or represent one USB function individually. When the interfaces are not grouped in collections, the generic parent driver creates a PDO for each interface and generates a set of hardware IDs for each PDO.
 
-The [*device ID*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-id) for an interface PDO has the following form:
+The *device ID* for an interface PDO has the following form:
 
 `USB\VID_v(4)&PID_p(4)&MI_z(2)`
 

@@ -45,7 +45,7 @@ Remarks
 
 During a [hardware-first installation](hardware-first-installation.md), the user installs a hardware device before installing the drivers for that device. In this case, the Found New Hardware Wizard prompts the user for the distribution medium.
 
-If the distribution medium has an AutoRun-enabled [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application), the wizard parses the *Autorun.inf* file to look for a **HardwareId** directive entry that matches the device that is being installed. If the wizard finds a **HardwareId** directive that matches the device, the wizard invokes the AutoRun-enabled application, which installs the driver and device-specific applications instead of the wizard.
+If the distribution medium has an AutoRun-enabled *device installation application*, the wizard parses the *Autorun.inf* file to look for a **HardwareId** directive entry that matches the device that is being installed. If the wizard finds a **HardwareId** directive that matches the device, the wizard invokes the AutoRun-enabled application, which installs the driver and device-specific applications instead of the wizard.
 
 The Found New Hardware Wizard does not determine whether the application installed a driver for the device. In this case, the application must install a driver for the device. If the *Autorun.inf* file does not include a **HardwareId** directive that identifies the device that is being installed, the wizard does not start the application and continues with device installation.
 

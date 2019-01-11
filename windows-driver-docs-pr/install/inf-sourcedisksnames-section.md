@@ -46,7 +46,7 @@ Specifies a %*strkey*% token or a **"**<em>quoted string</em>**"** that describe
 Every %*strkey*% specification in this section must be defined in the INF's **Strings** section. Any *disk-description* that is not a %*strkey*% token is a user-visible string that must be delimited by double quotation marks characters (**"**) if it has any leading or trailing spaces.
 
 <a href="" id="tag-or-cab-file"></a>*tag-or-cab-file*  
-This optional value specifies the name of a [*tag file*](https://msdn.microsoft.com/library/windows/hardware/ff556341#wdkgloss-tag-file) or [*cabinet (.cab) file*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cabinet-file) supplied on the distribution disk, either in the [*installation root*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-installation-root) or in the subdirectory specified by *path*, if any. The value should specify only the file name and extension, not any directory or subdirectory.
+This optional value specifies the name of a *tag file* or *cabinet (.cab) file* supplied on the distribution disk, either in the *installation root* or in the subdirectory specified by *path*, if any. The value should specify only the file name and extension, not any directory or subdirectory.
 
 Windows uses a tag file to verify that the user inserted the correct installation disk. Tag files are required for removable media, and are optional for fixed media.
 
@@ -60,15 +60,15 @@ For Windows XP and later versions of Windows, also see the *flags* and *tag-file
 This entry is no longer supported for Windows 2000 and later versions of Windows.
 
 <a href="" id="path"></a>*path*  
-This optional value specifies the directory path on the distribution disk that contains source files. The *path* is relative to the [*installation root*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-installation-root) and is expressed as **\\**<em>dirname1</em>**\\**<em>dirname2</em>... and so forth. If this value is omitted from an entry, files are assumed to be in the installation root of the distribution disk.
+This optional value specifies the directory path on the distribution disk that contains source files. The *path* is relative to the *installation root* and is expressed as **\\**<em>dirname1</em>**\\**<em>dirname2</em>... and so forth. If this value is omitted from an entry, files are assumed to be in the installation root of the distribution disk.
 
-You can use an [**INF SourceDisksFiles section**](inf-sourcedisksfiles-section.md) to specify subdirectories, relative to a given path directory, that contain source files. However, tag files and [*cabinet file*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cabinet-file) must reside either in the given path directory or in the installation root.
+You can use an **INF SourceDisksFiles section** must reside either in the given path directory or in the installation root.
 
 <a href="" id="flags"></a>*flags*  
 Starting with Windows XP, setting this to **0x10** forces Windows to use *tag-or-cab-file* as a cabinet file name, and to use *tag-file* as a tag file name. Otherwise, *flags* is for internal use only.
 
 <a href="" id="tag-file"></a>*tag-file*  
-Starting with Windows XP, if *flags* is set to **0x10**, this optional value specifies the name of a [*tag file*](https://msdn.microsoft.com/library/windows/hardware/ff556341#wdkgloss-tag-file) supplied on the distribution medium, either in the [*installation root*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-installation-root) or in the subdirectory specified by *path*. The value should specify the file name and extension without path information. For more information, see the Remarks section.
+Starting with Windows XP, if *flags* is set to **0x10**, this optional value specifies the name of a *tag file* supplied on the distribution medium, either in the *installation root* or in the subdirectory specified by *path*. The value should specify the file name and extension without path information. For more information, see the Remarks section.
 
 Remarks
 -------
@@ -79,7 +79,7 @@ These sections never appear in system-supplied INF files. Instead, system-suppli
 
 Entries in a **SourceDisksNames** section can have either of two formats, one of which is supported only in Windows XP and later versions of Windows.
 
-In the first format, the *tag-or-cab-file* parameter can specify either a [*tag file*](https://msdn.microsoft.com/library/windows/hardware/ff556341#wdkgloss-tag-file) or a [*cabinet file*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cabinet-file). When encountering this format, Windows uses the following algorithm:
+In the first format, the *tag-or-cab-file* parameter can specify either a *tag file* or a *cabinet file*. When encountering this format, Windows uses the following algorithm:
 
 1.  Treat the *tag-or-cab-file* value as a tag file name and look for the file on the installation medium. If the medium is removable and the tag file is not found, prompt the user for the correct medium. If the medium is fixed and neither the tag file nor the first file to be installed can be found, prompt the user for the correct medium.
 2.  Attempt to copy installation files directly from the medium.

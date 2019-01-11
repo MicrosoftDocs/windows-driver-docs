@@ -82,8 +82,6 @@ This section includes:
 
 [Dealing with Unavailable Symbol Stores](dealing-with-unavailable-symbol-stores.md)
 
-[Checking and Updating Status](checking-and-updating-status.md)
-
 [Handling File Pointers](handling-file-pointers.md)
 
 [Caching Acquired Symbol Files](caching-acquired-symbol-files.md)

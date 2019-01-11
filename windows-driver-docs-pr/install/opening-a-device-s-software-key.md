@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Opening a Device's Software Key
 
 
-You must not directly open a device's [*software key*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-key). As with any registry key, the location or format of these keys might change between different versions of Windows.
+You must not directly open a device's *software key*. As with any registry key, the location or format of these keys might change between different versions of Windows.
 
 **Note**  You should open a device's software key only after the corresponding device has been found. For more information about this procedure, see [Enumerating Installed Devices](enumerating-installed-devices.md).
 

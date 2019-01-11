@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-The Plug and Play manager uses the Plug and Play support of the system-supplied function driver for parallel ports to create and start a function device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)) that represents a parallel port.
+The Plug and Play manager uses the Plug and Play support of the system-supplied function driver for parallel ports to create and start a function device object (*FDO*) that represents a parallel port.
 
 The parallel port function driver does the following:
 

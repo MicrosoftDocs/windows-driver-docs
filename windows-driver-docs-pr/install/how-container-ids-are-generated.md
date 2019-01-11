@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # How Container IDs are Generated
 
 
-Starting with Windows 7, the Plug and Play (PnP) manager generates a container ID for a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) through one of three mechanisms:
+Starting with Windows 7, the Plug and Play (PnP) manager generates a container ID for a device node (*devnode*) through one of three mechanisms:
 
 -   A bus driver provides a container ID.
 
