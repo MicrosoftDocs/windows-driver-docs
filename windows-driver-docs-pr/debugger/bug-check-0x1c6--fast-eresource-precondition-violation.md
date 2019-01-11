@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x1C6 FAST_ERESOURCE_PRECONDITION_VIOLATION
 description: The FAST_ERESOURCE_PRECONDITION_VIOLATION bug check has a value of 0x000001C6. It indicates that the current thread is performing an invalid call to a fast resource routine.
-.
 keywords: ["Bug Check 0x1C6 FAST_ERESOURCE_PRECONDITION_VIOLATION", "FAST_ERESOURCE_PRECONDITION_VIOLATION"]
 ms.date: 01/11/2019
 topic_type:
