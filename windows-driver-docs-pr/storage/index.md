@@ -33,7 +33,7 @@ This design guide includes the following sections:
 * [Storage Scenarios](storage-scenarios.md)  
 
 ## Samples
-Studying samples is a practical way to see how working storage drivers are developed. [Sample storage drivers](https://go.microsoft.com/fwlink/p/?LinkId=616047) are available on GitHub.
+Studying samples is a practical way to see how working storage drivers are developed. [Sample storage drivers](https://github.com/Microsoft/Windows-driver-samples) are available on GitHub.
 
 ## <span id="Driver_Verification_for_StorPort"></span><span id="driver_verification_for_storport"></span><span id="DRIVER_VERIFICATION_FOR_STORPORT"></span>Driver Verification for StorPort
 

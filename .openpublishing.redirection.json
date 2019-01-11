@@ -7464,6 +7464,11 @@
       "source_path": "windows-driver-docs-pr/network/ndis-status-upload-all.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-status-upload-all",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/debugger/checking-and-updating-status.md",
+      "redirect_URL": "/windows-hardware/drivers/debugger/symproxy",
+      "redirect_document_id": false
     }
   ]
 }
