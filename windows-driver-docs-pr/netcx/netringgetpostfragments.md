@@ -1,23 +1,23 @@
 ---
-title: NetRingGetRxPostFragmentIterator function
-description: The NetRingGetRxPostFragmentIterator method gets a fragment iterator for the current post section of a receive (Rx) queue's fragment ring.
+title: NetRingGetPostFragments function
+description: The NetRingGetPostFragments method The NetRingGetPostFragments method gets a fragment iterator for the current post subsection of a fragment ring.
 ms.assetid: 81CD9EB1-B1EE-4170-B4DD-89A8C80881A3
 keywords:
-- NetAdapterCx NetRingGetRxPostFragmentIterator, NetCx NetRingGetRxPostFragmentIterator
-ms.date: 10/30/2018
+- NetAdapterCx NetRingGetPostFragments, NetCx NetRingGetPostFragments
+ms.date: 01/10/2019
 ms.localizationpriority: medium
 ---
 
-# NetRingGetRxPostFragmentIterator function
+# NetRingGetPostFragments function
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetRingGetRxPostFragmentIterator** method gets a fragment iterator for the current post section of a receive (Rx) queue's fragment ring.
+The **NetRingGetPostFragments** method The NetRingGetPostFragments method gets a fragment iterator for the current post subsection of a fragment ring.
 
 ## Syntax
 
 ```cpp
-NET_RING_FRAGMENT_ITERATOR NetRingGetRxPostFragmentIterator(
+NET_RING_FRAGMENT_ITERATOR NetRingGetPostFragments(
     NET_RING_COLLECTION const * Rings
 );
 ```
@@ -26,7 +26,7 @@ NET_RING_FRAGMENT_ITERATOR NetRingGetRxPostFragmentIterator(
 
 `Rings`
 
-A pointer to the **NET_RING_COLLECTION** struture that describes the receive queue's net rings.
+A pointer to the **NET_RING_COLLECTION** struture that describes the packet queue's net rings.
 
 ## Return Value
 
@@ -34,7 +34,7 @@ Returns a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) that b
 
 ## Remarks
 
-Client drivers typically call **NetRingGetRxPostFragmentIterator** to begin the process of posting fragments to hardware for Rx. Drivers later complete this process by calling [**NetRingSetRxPostFragmentIterator**](netringsetrxpostfragmentiterator.md).
+Client drivers typically call **NetRingGetPostFragments** to begin the process of posting fragments to hardware for receiving (Rx). Drivers later complete this process by calling [**NetFragmentIteratorSet**](netfragmentiteratorset.md).
 
 For an animation and code example of posting fragments to hardware for Rx, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
@@ -54,4 +54,4 @@ For an animation and code example of posting fragments to hardware for Rx, see [
 
 **NET_RING_COLLECTION**
 
-[**NetRingSetRxPostFragmentIterator**](netringsetrxpostfragmentiterator.md)
+[**NetFragmentIteratorSet**](netfragmentiteratorset.md)

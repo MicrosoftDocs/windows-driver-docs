@@ -1,23 +1,23 @@
 ---
-title: NetRingGetRxDrainFragmentIterator function
-description: The NetRingGetRxDrainFragmentIterator method gets a fragment iterator for the current drain section of a receive (Rx) queue's fragment ring.
+title: NetRingGetDrainFragments function
+description: The NetRingGetDrainFragments method gets a fragment iterator for the current drain subsection of a fragment ring.
 ms.assetid: DBDFD3F8-CA1F-444C-84FB-DE9DBF4FC354
 keywords:
-- NetAdapterCx NetRingGetRxDrainFragmentIterator, NetCx NetRingGetRxDrainFragmentIterator
-ms.date: 11/05/2018
+- NetAdapterCx NetRingGetDrainFragments, NetCx NetRingGetDrainFragments
+ms.date: 01/10/2019
 ms.localizationpriority: medium
 ---
 
-# NetRingGetRxDrainFragmentIterator function
+# NetRingGetDrainFragments function
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetRingGetRxDrainFragmentIterator** method gets a fragment iterator for the current drain section of a receive (Rx) queue's fragment ring.
+The **NetRingGetDrainFragments** method gets a fragment iterator for the current drain subsection of a fragment ring.
 
 ## Syntax
 
 ```cpp
-NET_RING_FRAGMENT_ITERATOR NetRingGetRxDrainFragmentIterator(
+NET_RING_FRAGMENT_ITERATOR NetRingGetDrainFragments(
     NET_RING_COLLECTION const * Rings
 );
 ```
@@ -26,7 +26,7 @@ NET_RING_FRAGMENT_ITERATOR NetRingGetRxDrainFragmentIterator(
 
 `Rings`
 
-A pointer to the **NET_RING_COLLECTION** struture that describes the receive queue's net rings.
+A pointer to the **NET_RING_COLLECTION** struture that describes the packet queue's net rings.
 
 ## Return Value
 
@@ -34,7 +34,7 @@ Returns a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) that b
 
 ## Remarks
 
-Client drivers call **NetRingGetRxDrainFragmentIterator** to begin the process of draining receive fragments from the ring to the OS. 
+Client drivers call **NetRingGetDrainFragments** to begin the process of draining receive (Rx) fragments from the ring to the OS. 
 
 For an animation and code example of draining fragments from the ring back to the OS, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 

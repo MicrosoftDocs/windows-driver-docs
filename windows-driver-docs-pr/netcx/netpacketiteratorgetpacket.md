@@ -4,7 +4,7 @@ description: The NetPacketIteratorGetPacket method gets the NET_PACKET structure
 ms.assetid: 572FC3F5-241B-40ED-A3F1-AE6A21C3EAD7
 keywords:
 - NetAdapterCx NetPacketIteratorGetPacket, NetCx NetPacketIteratorGetPacket
-ms.date: 12/21/2018
+ms.date: 01/10/2019
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetPacketIteratorGetPacket** method gets the [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structure at a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)'s current **Index**.
+The **NetPacketIteratorGetPacket** method gets the [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structure at a packet iterator's **Index**.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ A pointer to a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) struc
 
 ## Return Value
 
-Returns a pointer to the **NET_PACKET** structure at the **NET_RING_PACKET_ITERATOR**'s current **Index**.
+Returns a pointer to the **NET_PACKET** structure at the packet iterator's **Index**.
 
 ## Requirements
 

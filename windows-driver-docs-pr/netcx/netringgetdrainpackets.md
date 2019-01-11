@@ -1,6 +1,6 @@
 ---
 title: NetRingGetDrainPackets function
-description: The NetRingGetDrainPackets method gets a packet iterator for the current drain section of a packet ring.
+description: The NetRingGetDrainPackets method gets a packet iterator for the drain subsection of a packet ring.
 ms.assetid: 121A80A2-7FCC-453E-93C6-D66B7AA70C1F
 keywords:
 - NetAdapterCx NetRingGetDrainPackets, NetCx NetRingGetDrainPackets
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetRingGetDrainPackets** method gets a packet iterator for the current drain section of a packet ring.
+The **NetRingGetDrainPackets** method gets a packet iterator for the drain subsection of a packet ring.
 
 ## Syntax
 

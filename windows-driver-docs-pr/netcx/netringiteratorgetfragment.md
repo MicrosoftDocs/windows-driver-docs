@@ -1,6 +1,6 @@
 ---
 title: NetRingIteratorGetFragment function
-description: The NetRingIteratorGetFragment method gets the NET_FRAGMENT structure pointed to by a NET_RING_FRAGMENT_ITERATOR.
+description: The NetRingIteratorGetFragment method gets the NET_FRAGMENT structure at a fragment iterator's Index.
 ms.assetid: B6F2FEE8-7571-4B00-8D73-352D554F2F45
 keywords:
 - NetAdapterCx NetRingIteratorGetFragment, NetCx NetRingIteratorGetFragment
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetRingIteratorGetFragment** method gets the **NET_FRAGMENT** structure pointed to by a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md).
+The **NetRingIteratorGetFragment** method gets the **NET_FRAGMENT** structure at a fragment iterator's Index.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ A pointer to a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) s
 
 ## Return Value
 
-Returns a pointer to the **NET_FRAGMENT** pointed to by the **NET_RING_FRAGMENT_ITERATOR**.
+Returns a pointer to the **NET_FRAGMENT** structure at the fragment iterator's **Index**.
 
 ## Requirements
 

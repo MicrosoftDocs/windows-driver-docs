@@ -1,23 +1,23 @@
 ---
-title: NetRingAdvancePacketIterator function
-description: The NetRingAdvancePacketIterator method advances the index of a NET_RING_PACKET_ITERATOR by one.
+title: NetPacketIteratorAdvance function
+description: The NetPacketIteratorAdvance method advances the Index of a packet iterator by one.
 ms.assetid: 517C20D6-78BC-4104-B70A-A2CB99813EB3
 keywords:
-- NetAdapterCx NetRingAdvancePacketIterator, NetCx NetRingAdvancePacketIterator
-ms.date: 11/09/2018
+- NetAdapterCx NetPacketIteratorAdvance, NetCx NetPacketIteratorAdvance
+ms.date: 01/10/2019
 ms.localizationpriority: medium
 ---
 
-# NetRingAdvancePacketIterator function
+# NetPacketIteratorAdvance function
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NetRingAdvancePacketIterator method advances the index of a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) by one.
+The NetPacketIteratorAdvance method advances the **Index** of a packet iterator by one.
 
 ## Syntax
 
 ```cpp
-void NetRingAdvancePacketIterator(
+void NetPacketIteratorAdvance(
     NET_RING_PACKET_ITERATOR * Iterator
 );
 ```
@@ -26,7 +26,7 @@ void NetRingAdvancePacketIterator(
 
 `Iterator`
 
-A pointer to a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md).
+A pointer to a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) structure.
 
 ## Return Value
 
