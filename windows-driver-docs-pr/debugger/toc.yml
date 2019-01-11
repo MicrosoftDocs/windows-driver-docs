@@ -2467,6 +2467,8 @@
       href: bug-check-0x1c4--driver-verifier-detected-violation-livedump.md
     - name: "Bug Check 0x1C5: IO_THREADPOOL_DEADLOCK_LIVEDUMP"
       href: bug-check-0x1c5--io-threadpool-deadlock-livedump.md
+    - name: "Bug Check 0x1C6: FAST_ERESOURCE_PRECONDITION_VIOLATION"
+      href: bug-check-0x1c6--fast-eresource-precondition-violation.md
     - name: "Bug Check 0x1C8: MANUALLY_INITIATED_POWER_BUTTON_HOLD"
       href: bug-check-0x1c8--manually-initiated-power-button-hold.md
     - name: "Bug Check 0x1C9: USER_MODE_HEALTH_MONITOR_LIVEDUMP"

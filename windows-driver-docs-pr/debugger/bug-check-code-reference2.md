@@ -388,11 +388,12 @@ The following table shows the code and name of each bug check code.
 | 0x000001A4 | [**DRIPS\_SW\_HW\_DIVERGENCE\_LIVEDUMP**](bug-check-0x1a4--drips-sw-hw-divergence-livedump.md)                                                    |
 | 0x000001A5 | [**USB\_DRIPS\_BLOCKER\_SURPRISE\_REMOVAL\_LIVEDUMP**](bug-check-0x1a5--usb-drips-blocker-surprise-removal-livedump.md)                           |
 | 0x000001A6 | [**BLUETOOTH\_ERROR\_RECOVERY\_LIVEDUMP**](bug-check-0x1a6--bluetooth-error-recovery-livedump.md)                                                 |
-| 0x000001A7 | [**SMB\_REDIRECTOR\_LIVEDUMP**]bug-check-0x1A7--smb-redirector-livedump.md)                                                 |
+| 0x000001A7 | [**SMB\_REDIRECTOR\_LIVEDUMP**]bug-check-0x1A7--smb-redirector-livedump.md)                                                                       |
 | 0x000001A8 | [**VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP**](bug-check-0x1a8--video-dxgkrnl-black-screen-livedump.md)                                            |
 | 0x000001B0 | [**VIDEO_MINIPORT_FAILED_LIVEDUMP**](bug-check-0x1b0--video-miniport-failed-livedump.md)                                                          |
 | 0x000001C4 | [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP**](bug-check-0x1c4--driver-verifier-detected-violation-livedump.md)                            |
 | 0x000001C5 | [**IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP**](bug-check-0x1c5--io-threadpool-deadlock-livedump.md)                                                     |
+| 0x000001C6 | [**FAST\_ERESOURCE\_PRECONDITION\_VIOLATION**](bug-check-0x1c6--fast-eresource-precondition-violation.md)                                                     |
 | 0x000001C8 | [**MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD**](bug-check-0x1c8--manually-initiated-power-button-hold.md)                                          |
 | 0x000001C9 | [**USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP**](bug-check-0x1c9--user-mode-health-monitor-livedump.md)                                                |
 | 0x000001CC | [**EXRESOURCE_TIMEOUT_LIVEDUMP**](bug-check-0x1cc--exresource-timeout-livedump.md)                                                                |
