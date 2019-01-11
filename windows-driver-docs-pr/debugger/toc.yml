@@ -2497,6 +2497,8 @@
       href: bug-check-0x1d3--wfp-invalid-operation.md
     - name: "Bug Check 0x1D4: UCMUCSI_LIVEDUMP"
       href: bug-check-0x1d4--ucmusci-livedump.md
+    - name: "Bug Check 0x1D5: DRIVER_PNP_WATCHDOG"
+      href: bug-check-0x1d5--driver-pnp-watchdog.md
     - name: "Bug Check 0x356: XBOX_ERACTRL_CS_TIMEOUT"
       href: bug-check-0x356--xbox-eractrl-cs-timeout.md
     - name: "Bug Check 0xBFE: BC_BLUETOOTH_VERIFIER_FAULT"
