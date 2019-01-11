@@ -1,21 +1,21 @@
 ---
 Description: The topics in this section provides an USB pipes, URBs for I/O requests, and describes how a client driver can use the device driver interfaces (DDIs) to transfer data to and from a USB device.
 title: Sending USB data transfers in USB client drivers
-ms.date: 04/20/2017
+ms.date: 01/07/2019
 ms.localizationpriority: medium
 ---
 
 # Sending USB data transfers in USB client drivers
 
 
-The topics in this section provides an USB pipes, URBs for I/O requests, and describes how a client driver can use the device driver interfaces (DDIs) to transfer data to and from a USB device.
+The topics in this section provides information about USB pipes and URBs for I/O requests, and describes how a client driver can use the device driver interfaces (DDIs) to transfer data to and from a USB device.
 
 
 
 
 A transfer takes place every time data is moved between the host controller and the USB device. In general, USB transfers can be broadly categorized into control transfers and data transfers. All USB devices must support control transfers and can support endpoints for data transfers. Each type of transfer is associated with the type of *USB endpoint* (a buffer in the device). Control transfer is associated with the default endpoint and data transfers use unidirectional endpoints. The data transfer types use interrupt, bulk, and isochronous endpoints. The USB driver stack creates a communication channel called a *pipe* for each endpoint supported by the device. One end of the pipe is the device's endpoint. The other end of the pipe is always the host controller.
 
-Before sending I/O requests to the device, the client driver must retrieve information about configurations, interfaces, endpoints, the vendor, and class-specific descriptors from a USB device. In addition the driver must also configure the device. Device configuration involves tasks such as selecting a configuration and an alternate setting within each interface. Each alternate setting can specify one or more USB endpoints that are available for data transfers.
+Before sending I/O requests to the device, the client driver must retrieve information about configurations, interfaces, endpoints, the vendor, and class-specific descriptors from a USB device. In addition, the driver must also configure the device. Device configuration involves tasks such as selecting a configuration and an alternate setting within each interface. Each alternate setting can specify one or more USB endpoints that are available for data transfers.
 
 For information about device configuration, see [How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md) and [How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md).
 

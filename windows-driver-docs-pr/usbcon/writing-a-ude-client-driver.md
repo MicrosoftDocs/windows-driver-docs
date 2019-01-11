@@ -1,7 +1,7 @@
 ---
 Description: Describes the behavior of USB Device Emulation(UDE) class extension and tasks that a client driver must perform for an emulated host controller and devices attached to it.
 title: Write a UDE client driver
-ms.date: 04/20/2017
+ms.date: 01/07/2019
 ms.localizationpriority: medium
 ---
 
@@ -240,11 +240,11 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
 
     ...
 
-exit:
+    exit:
 
-    return status;
-}
-```
+        return status;
+    }
+    ```
 
 
 ## Handle user-mode IOCTL requests sent to the host controller

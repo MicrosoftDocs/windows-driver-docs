@@ -1,15 +1,14 @@
 ---
 title: Voice Activation
-description: Cortana, the personal assistant technology introduced on Windows Phone, is supported on Windows 10 devices.
+description: Cortana, the Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation.
 ms.assetid: 0684EF32-AA76-418B-9027-1C067A8140E3
-ms.date: 05/14/2018
+ms.date: 12/21/2018
 ms.localizationpriority: medium
 ---
 
 # Voice Activation
 
-
-Cortana, the personal assistant technology introduced on Windows Phone, is supported on Windows 10 devices. The Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". To create hardware that supports voice activation technology, review the information in this topic.
+Cortana, the personal assistant technology was demonstrated for the first time at the Microsoft BUILD Developer Conference in 2013. The Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". To create hardware that supports voice activation technology, review the information in this topic.
 
 **Note**  
 Implementing voice activation is a significant project and is a task completed by SoC vendors. OEMs can contact their SoC vendor for information on their SoC's implementation of voice activation.
@@ -92,8 +91,7 @@ To implement a hardware keyword spotter (HW KWS) SoC vendors must complete the f
     -   [PKEY\_SFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt244270)
     -   [PKEY\_MFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt244269)
     -   [PKEY\_EFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt244264)
--   Review the hardware recommendations in [Cortana Device Recommendation](https://msdn.microsoft.com/library/windows/hardware/dn957008). This topic provides guidance and recommendations for the design and development of audio input devices intended for use with Microsoft’s Speech Platform.
--   Review the hardware recommendation [Cortana Device Test Setup](https://msdn.microsoft.com/library/windows/hardware/dn957009). This topic provides test guidance of audio input devices intended for use with Microsoft’s Speech Platform.
+-   Review the hardware recommendations and test guidance in [Audio Device Recommendation](https://docs.microsoft.com/windows-hardware/design/component-guidelines/audio). This topic provides guidance and recommendations for the design and development of audio input devices intended for use with Microsoft’s Speech Platform.
 -   Support both staged and chained commands.
 -   Support “Hey Cortana” for each of the supported Cortana locales. 
 -   The APOs (Audio Processing Objects) must provide the following effects: 

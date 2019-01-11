@@ -32,19 +32,18 @@ Specifies a process server to attach to. The options are the same as those for t
 Specifies how the attach is to be done. This can include any of the following options:
 
 <span id="-b"></span><span id="-B"></span>**-b**  
-(Windows XP and later) Prevents the debugger from requesting an initial break-in when attaching to a target process. This can be useful if the application is already suspended, or if you want to avoid creating a break-in thread in the target.
+Prevents the debugger from requesting an initial break-in when attaching to a target process. This can be useful if the application is already suspended, or if you want to avoid creating a break-in thread in the target.
 
 <span id="-e"></span><span id="-E"></span>**-e**  
-(Windows XP and later) Allows the debugger to attach to a process that is already being debugged. See [Re-attaching to the Target Application](reattaching-to-the-target-application.md) for details.
+Allows the debugger to attach to a process that is already being debugged. See [Re-attaching to the Target Application](reattaching-to-the-target-application.md) for details.
 
 <span id="-k"></span><span id="-K"></span>**-k**  
-(Windows XP and later) Begins a local kernel debugging session. See [Performing Local Kernel Debugging](performing-local-kernel-debugging.md) for details.
+Begins a local kernel debugging session. See [Performing Local Kernel Debugging](performing-local-kernel-debugging.md) for details.
 
 <span id="-f"></span><span id="-F"></span>**-f**  
 Freezes all threads in all target applications, except in the new target being attached to. These threads will remain frozen until an exception occurs in the newly-attached process. Note that an initial breakpoint qualifies as an exception. Individual threads can be unfrozen by using the [**~u (Unfreeze Thread)**](-u--unfreeze-thread-.md) command.
 
 <span id="-r"></span><span id="-R"></span>**-r**  
-(Windows XP and later)
 
 Causes the debugger to start the target process running when it attaches to it. This can be useful if the application is already suspended and you want it to resume execution.
 

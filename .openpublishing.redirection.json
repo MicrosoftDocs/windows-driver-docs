@@ -6204,6 +6204,11 @@
       "source_path": "windows-driver-docs-pr/network/restoring-hyper-v-extensible-switch-run-time-data.md",
       "redirect_URL": "/windows-hardware/drivers/network/managing-hyper-v-extensible-switch-run-time-data",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/debugger/checking-and-updating-status.md",
+      "redirect_URL": "/windows-hardware/drivers/debugger/symproxy",
+      "redirect_document_id": false
     }
   ]
 }

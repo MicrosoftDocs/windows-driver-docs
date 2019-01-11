@@ -98,7 +98,7 @@ The **-iu** parameter must not be used with any other parameters. This command w
 Tells the debugger how to connect to the target. For details, see [Debugging Using KD and NTKD](debugging-using-kd-and-ntkd.md).
 
 <span id="_______-kl______"></span><span id="_______-KL______"></span> **-kl**   
-(Windows XP and later) Starts a kernel debugging session on the same machine as the debugger.
+Starts a kernel debugging session on the same machine as the debugger.
 
 <span id="_______-kqm______"></span><span id="_______-KQM______"></span> **-kqm**   
 Starts KD in quiet mode.

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Overview of NDIS Debugging
 
 
-The two primary tools for debugging a network driver are debug tracing and the Network Driver Interface Specification (NDIS) extensions. For more information on debug tracing, see [Enabling NDIS Debug Tracing](enabling-ndis-debug-tracing.md). For more information on the NDIS debugging extensions, see [NDIS Extensions](ndis-extensions--ndiskd-dll-.md), which provides a complete list of the extension commands found in the extension module Ndiskd.dll. The Windows 2000 version of this extension module appears in the w2kfre and w2kchk directories. The Windows XP and later version of this extension module appear in the winxp directory.
+The two primary tools for debugging a network driver are debug tracing and the Network Driver Interface Specification (NDIS) extensions. For more information on debug tracing, see [Enabling NDIS Debug Tracing](enabling-ndis-debug-tracing.md). For more information on the NDIS debugging extensions, see [NDIS Extensions](ndis-extensions--ndiskd-dll-.md), which provides a complete list of the extension commands found in the extension module Ndiskd.dll. The extension module appears in the winxp directory.
 
 An additional tool for debugging a network driver is the collection of regular debugging extensions, which are useful for obtaining debugging information. For example, entering [**!stacks 2 ndis!**](-stacks.md) displays all threads in the stack beginning with **ndis!**. This information can be useful for debugging hangs and stalls.
 

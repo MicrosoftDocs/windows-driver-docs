@@ -2,26 +2,24 @@
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
 ms.assetid: DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB
-ms.date: 09/24/2018
+ms.date: 01/08/2019
 ms.localizationpriority: medium
 ---
 
 # Bug Check Code Reference
 
+This section contains descriptions of common bug check codes, including the parameters displayed with the error code on the blue bug check screen. This section also describes how you can diagnose the fault which led to the bug check, as well as possible ways to deal with the error.
 
-This section contains descriptions of the common bug checks, including the parameters passed to the blue screen. It also describes how you can diagnose the fault which led to the bug check, and possible ways to deal with the error.
+> [!NOTE] 
+> This topic is for programmers. If you are a customer whose system has displayed a blue screen with a bug check code, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
 
-**Note**  This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
+If a specific bug check code does not appear in this reference, use the [**!analyze**](-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode), replacing `<code>` with a bug check code:
 
- 
+`!analyze -show <code>`
 
-If a specific bug check code does not appear in this reference, use the [**!analyze**](-analyze.md) extension command (in kernel mode) with the following syntax:
+Entering this command causes WinDbg to display information about the specified bug check code. If your default number base (radix) is not 16, prefix `<code>` with **0x**.
 
-**!analyze -show** *Code*.
-
-This will display information about the specified bug check. If your default radix is not 16, you should prefix *Code* with "0x".
-
-The following table shows the code and name of each bug check.
+The following table shows the code and name of each bug check code.
 
 | Code       | Name                                                                                                                                               |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -345,12 +343,12 @@ The following table shows the code and name of each bug check.
 | 0x0000016E | [**ERESOURCE\_INVALID\_RELEASE**](bug-check-0x16e--eresource-invalid-release.md)                                                                  |
 | 0x00000175 | [**PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR**](bug-check-0x175--previous-fatal-abnormal-reset-error.md)                                            |
 | 0x00000178 | [**ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR**](bug-check-0x175--elam-driver-detected-fatal-error.md)                                                  |
-| 0x0000017B | [**PROFILER\_CONFIGURATION\_ILLEGAL**](bug-check-0x17b--profiler-configuration-illegal.md)                                                          | 
-| 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                               |
+| 0x0000017B | [**PROFILER\_CONFIGURATION\_ILLEGAL**](bug-check-0x17b--profiler-configuration-illegal.md)                                                        | 
+| 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                              |
 | 0x00000188 | [**CLUSTER\_CSVFS\_LIVEDUMP**](bug-check-0x188--cluster-csvfs-livedump.md)                                                                        |
 | 0x00000189 | [**BAD\_OBJECT\_HEADER**](bug-check-0x189--bad-object-header.md)                                                                                  |
 | 0x0000018B | [**SECURE\_KERNEL\_ERROR**](bug-check-0x18b--secure-kernel-error.md)                                                                              |
-| 0x0000018E | [**KERNEL\_PARTITION\_REFERENCE\_VIOLATION**](bug-check-0x18e--kernel-partition-reference-violation.md)                                              |
+| 0x0000018E | [**KERNEL\_PARTITION\_REFERENCE\_VIOLATION**](bug-check-0x18e--kernel-partition-reference-violation.md)                                           |
 | 0x00000190 | [**WIN32K\_CRITICAL\_FAILURE\_LIVEDUMP**](bug-check-0x190--win32k-critical-failure-livedump.md)                                                   |
 | 0x00000191 | [**PF\_DETECTED\_CORRUPTION**](bug-check-0x191--pf-detected-corruption.md)                                                                        |
 | 0x00000192 | [**KERNEL\_AUTO\_BOOST\_LOCK\_ACQUISITION\_WITH\_RAISED\_IRQL**](bug-check-0x192--kernel-auto-boost-lock-acquisition-with-raised-irql.md)         |

@@ -15,7 +15,7 @@ The **!positions** extension displays all the active threads, including their cu
 
 
 ```dbgcmd
-!postions 
+!positions 
 ```
 
 

@@ -45,7 +45,7 @@ Specifies paged memory pool.
 Specifies the special pool.
 
 <span id="4"></span>4  
-(Windows XP and later) Specifies the session pool.
+Specifies the session pool.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 

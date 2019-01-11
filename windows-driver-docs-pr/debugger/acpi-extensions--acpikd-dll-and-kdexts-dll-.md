@@ -15,9 +15,8 @@ ms.localizationpriority: medium
 
 Extension commands that are useful for debugging ACPI (Advanced Configuration and Power Interface) BIOS code can be found in Acpikd.dll and Kdexts.dll.
 
-The Windows 2000 versions of these extension commands appear in the Acpikd.dll module located in the W2kfre and W2kchk directories. Note that this extension module has an internal build number of 2179, while Windows 2000 has a build number of 2195. You should ignore the resulting version mismatch errors.
 
-For Windows XP and later versions of Windows, some of the ACPI debugging extensions can be found in Winxp\\Acpikd.dll, while others can be found in Winxp\\Kdexts.dll.
+Some of the ACPI debugging extensions can be found in Winxp\\Acpikd.dll, while others can be found in Winxp\\Kdexts.dll.
 
  
 
