@@ -149,7 +149,7 @@ For more information, see [**INF UnregisterDlls Directive**](inf-unregisterdlls-
 Remarks
 -------
 
-**DefaultInstall** sections must not be used for device installations. Use **DefaultInstall** sections only for the installation of class filter drivers, class co-installers, file system filters, and kernel driver services that are not associated with a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)).
+**DefaultInstall** sections must not be used for device installations. Use **DefaultInstall** sections only for the installation of class filter drivers, class co-installers, file system filters, and kernel driver services that are not associated with a device node (*devnode*).
 
 **Note**  The INF file of a [driver package](driver-packages.md) must not contain an INF **DefaultInstall** section if the driver package is to be digitally signed. For more information about signing driver packages, see [Driver Signing](driver-signing.md).
 
@@ -161,7 +161,7 @@ Providing a **DefaultInstall** section is optional. If an INF file does not incl
 
  
 
-To install a **DefaultInstall** section from a [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application), use the following call to **InstallHinfSection**:
+To install a **DefaultInstall** section from a *device installation application*, use the following call to **InstallHinfSection**:
 
 ```cpp
 InstallHinfSection(NULL,NULL,TEXT("DefaultInstall 132 path-to-inf\infname.inf"),0); 

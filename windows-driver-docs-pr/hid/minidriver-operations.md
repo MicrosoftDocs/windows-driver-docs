@@ -29,13 +29,13 @@ The HID class driver does the following:
 
 -   Communicates with a HID minidriver by calling the minidriver's standard driver routines.
 
--   Creates a functional device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)) for HIDClass input devices enumerated by a lower-level bus or port driver.
+-   Creates a functional device object (*FDO*) for HIDClass input devices enumerated by a lower-level bus or port driver.
 
     For example, the HID class driver creates and manages the operations of an FDO that represents a USB HID device enumerated by the system-supplied USB driver stack.
 
 -   Provides the functionality of a bus driver for the child devices (HID collections) supported by an underlying input device.
 
-    The HID class driver creates a physical device object ([*PDO*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdo)) for each HID collection supported by an input device and manages the collection's operation.
+    The HID class driver creates a physical device object (*PDO*) for each HID collection supported by an input device and manages the collection's operation.
 
 ### Binding a minidriver to HIDClass
 
@@ -73,7 +73,7 @@ The HID class driver communicates with a HID minidriver by calling the HID minid
 
 ### Calling the AddDevice Routine
 
-When the HID class driver's **AddDevice** routine is called to create a functional device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)), the HID class driver creates the FDO, initializes it, and calls the HID minidriver **AddDevice** routine. The HID minidriver **AddDevice** routine does internal device-specific initialization and, if successful, returns STATUS\_SUCCESS. If the HID minidriver **AddDevice** routine is not successful, the HID class driver deletes the FDO and returns the status returned by the HID minidriver **AddDevice** routine.
+When the HID class driver's **AddDevice** routine is called to create a functional device object (*FDO*), the HID class driver creates the FDO, initializes it, and calls the HID minidriver **AddDevice** routine. The HID minidriver **AddDevice** routine does internal device-specific initialization and, if successful, returns STATUS\_SUCCESS. If the HID minidriver **AddDevice** routine is not successful, the HID class driver deletes the FDO and returns the status returned by the HID minidriver **AddDevice** routine.
 
 ### Calling the Unload Routine
 
@@ -121,11 +121,11 @@ When the HID minidriver registers with the HID class driver, it uses a [**HID\_M
 
 ### HID minidriver extension
 
-A HID minidriver device extension is device-specific, and is only used by a HID minidriver. The HID class driver allocates the memory for the minidriver device extension when the class driver creates its device extension for a functional device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)). The HID minidriver specifies the size of its device extension when it registers the minidriver with the HID class driver. The size is specified by the **DeviceExtensionSize** member of a [**HID\_MINIDRIVER\_REGISTRATION**](https://msdn.microsoft.com/library/windows/hardware/ff539929) structure.
+A HID minidriver device extension is device-specific, and is only used by a HID minidriver. The HID class driver allocates the memory for the minidriver device extension when the class driver creates its device extension for a functional device object (*FDO*). The HID minidriver specifies the size of its device extension when it registers the minidriver with the HID class driver. The size is specified by the **DeviceExtensionSize** member of a [**HID\_MINIDRIVER\_REGISTRATION**](https://msdn.microsoft.com/library/windows/hardware/ff539929) structure.
 
 ### <a href="" id="using-the-hid-device-extension-structure"></a>Using the HID\_DEVICE\_EXTENSION structure
 
-A HID minidriver must use a [**HID\_DEVICE\_EXTENSION**](https://msdn.microsoft.com/library/windows/hardware/ff539896) structure as the layout for the device extension created by the HID class driver for a functional device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)). The HID class driver sets the members of this structure when it initializes the FDO. A HID minidriver must not change the information in this structure.
+A HID minidriver must use a **HID\_DEVICE\_EXTENSION**). The HID class driver sets the members of this structure when it initializes the FDO. A HID minidriver must not change the information in this structure.
 
 A HID\_DEVICE\_EXTENSION structure contains the following members:
 
@@ -171,7 +171,7 @@ The [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff5441
 
 ### AddDevice routine
 
-The HID class driver handles creating and initializing the functional device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)) for an underlying input device. The HID class driver also operates the FDO from the perspective of the upper-level interface to the underlying device and its child devices (HID collections).
+The HID class driver handles creating and initializing the functional device object (*FDO*) for an underlying input device. The HID class driver also operates the FDO from the perspective of the upper-level interface to the underlying device and its child devices (HID collections).
 
 The HID class driver [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine calls the HID minidriver *AddDevice* routine so that the minidriver can do internal device-specific initialization.
 
@@ -191,7 +191,7 @@ The Unload routine of the HID class driver calls the HID minidriver Unload routi
 
 ### Dispatch routines
 
-A HID minidriver must supply the following dispatch routines: create, close, internal device control, system control, Plug and Play, and power management. Except for internal device control requests, most of these dispatch routines provide minimal function. When the HID class driver calls these dispatch routines, it passes the minidriver driver object and the functional device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)).
+A HID minidriver must supply the following dispatch routines: create, close, internal device control, system control, Plug and Play, and power management. Except for internal device control requests, most of these dispatch routines provide minimal function. When the HID class driver calls these dispatch routines, it passes the minidriver driver object and the functional device object (*FDO*).
 
 ### <a href="" id="irp-mj-create"></a>IRP\_MJ\_CREATE
 

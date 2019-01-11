@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 A container ID is a system-supplied device identification string that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer.
 
-Starting with Windows 7, the Plug and Play (PnP) manager uses the container ID to group one or more device nodes ([*devnodes*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) that originated from and belong to each instance of a particular physical device. This instance is referred to as the *device* *container*.
+Starting with Windows 7, the Plug and Play (PnP) manager uses the container ID to group one or more device nodes (*devnodes*) that originated from and belong to each instance of a particular physical device. This instance is referred to as the *device* *container*.
 
 Grouping all the devnodes that originated from an instance of a single device achieves the following:
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_interaction_between_obmc_and_inter4v_in_h_263_gg"></span><span id="DDK_INTERACTION_BETWEEN_OBMC_AND_INTER4V_IN_H_263_GG"></span>
 
 
-Some details about the interactions between H.263's [*OBMC*](https://msdn.microsoft.com/library/windows/hardware/ff556318#wdkgloss-obmc), *INTER4V*, *B*, *EP*, and B in PB frames may be helpful:
+Some details about the interactions between H.263's *OBMC*, *INTER4V*, *B*, *EP*, and B in PB frames may be helpful:
 
 -   No current configuration of the H.263 standard will exercise the case in which **bPicOBMC** is equal to 1, *Motion4MV* is equal to 1, and *MotionBackward* is equal to 1.
 

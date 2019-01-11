@@ -66,7 +66,7 @@ These breakpoints are associated with a memory location in the address space of 
 
 If the **/m** *Address* parameter is not used, data breakpoints will be applied to the current register context.
 
-This command can only be used if the target is in native machine mode. For example, if the target is running on a 64-bit machine emulating an x86 processor using [*WOW64*](https://msdn.microsoft.com/library/windows/hardware/ff556347#wdkgloss-wow64), this command cannot be used.
+This command can only be used if the target is in native machine mode. For example, if the target is running on a 64-bit machine emulating an x86 processor using *WOW64*, this command cannot be used.
 
 One example of a time this command is useful is when you are in an exception filter. The **.apply\_dbp** command can update the exception filter's stored context. Data breakpoints will then be applied when the exception filter exits and the stored context is resumed. Without such a modification it is possible that data breakpoints would be lost.
 

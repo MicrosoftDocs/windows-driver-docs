@@ -79,8 +79,8 @@ Relative root − that is, keys that are specified by using this abbreviation ar
 
 | INF Section Containing BitReg Directive                                    | Registry Key Referenced by HKR                                                        |
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| INF [***DDInstall***](inf-ddinstall-section.md) section                   | The device's [*software key*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-key) |
-| INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section             | The device's [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key) |
+| INF ***DDInstall*** |
+| INF ***DDInstall*.HW** |
 | INF [***DDInstall*.Service**](inf-ddinstall-services-section.md)s section | The **Services** key                                                                  |
 
  

@@ -307,7 +307,7 @@ The following table lists the currently supported driver features. Each row in t
 
          
 
-When **GetOptions** is called on driver feature keywords, if a requested feature keyword is not recognized, or if the feature keyword is recognized but not supported in the current [*document-sticky*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-document-sticky) or [*printer-sticky*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-printer-sticky) mode (see [Replacing Driver-Supplied Property Sheet Pages](replacing-driver-supplied-property-sheet-pages.md)), the feature will simply be ignored and the output buffer will not contain its feature/option keyword pair.
+When **GetOptions** is called on driver feature keywords, if a requested feature keyword is not recognized, or if the feature keyword is recognized but not supported in the current *document-sticky* or *printer-sticky* mode (see [Replacing Driver-Supplied Property Sheet Pages](replacing-driver-supplied-property-sheet-pages.md)), the feature will simply be ignored and the output buffer will not contain its feature/option keyword pair.
 
 For example, suppose the **GetOptions** method is called, and the *pmszFeaturesRequested* input buffer contains the following string (in MULTI\_SZ format):
 

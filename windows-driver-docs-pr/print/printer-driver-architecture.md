@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-Print jobs are created by applications through calls to Microsoft Win32 GDI or, in Windows Vista, Windows Presentation Foundation (WPF) functions. The Win32 functions spool application data as [EMF](emf-data-type.md) records for later playback by the EMF [*print processor*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-print-processor), or they can immediately render a printable image for each document page. The WPF functions spool application data as an XPS spool file.
+Print jobs are created by applications through calls to Microsoft Win32 GDI or, in Windows Vista, Windows Presentation Foundation (WPF) functions. The Win32 functions spool application data as EMF, or they can immediately render a printable image for each document page. The WPF functions spool application data as an XPS spool file.
 
 Prior to Windows Vista, applications communicated printer settings to the printer by using a [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure. In Windows Vista, the Print Ticket and Print Capabilities technologies communicate printer settings so that printer settings are more compatible across printers and applications.
 

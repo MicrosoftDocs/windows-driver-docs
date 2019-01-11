@@ -45,7 +45,7 @@ Specifies the integer identifying the source disk that contains the file. This v
 <a href="" id="subdir"></a>*subdir*  
 This optional value specifies the subdirectory (relative to the *path* value of the **SourceDisksNames** section, if any) on the source disk where the named file resides.
 
-If this value is omitted from an entry, the named source file is assumed to be in the *path* directory that was specified in the **SourceDisksFiles** section for the given disk or, if no *path* directory was specified, in the [*installation root*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-installation-root).
+If this value is omitted from an entry, the named source file is assumed to be in the *path* directory that was specified in the **SourceDisksFiles** section for the given disk or, if no *path* directory was specified, in the *installation root*.
 
 <a href="" id="size"></a>*size*  
 This optional value specifies the uncompressed size, in bytes, of the given file.

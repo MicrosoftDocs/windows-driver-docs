@@ -27,7 +27,7 @@ A function driver for an ACPI device is a WDM driver that does the following:
 
     For more information, see [Supporting an Operation Region](supporting-an-operation-region.md).
 
--   Optionally, supports a vendor-defined [*device interface*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-interface) and [*IOCTLs*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-ioctl) that other drivers or user-mode applications use to operate a device.
+-   Optionally, supports a vendor-defined *device interface* and *IOCTLs* that other drivers or user-mode applications use to operate a device.
 
     For more information, see [Providing a Vendor-Defined ACPI Device Interface](providing-a-vendor-defined-acpi-device-interface.md).
 

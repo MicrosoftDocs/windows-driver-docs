@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_drawing_text_gg"></span><span id="DDK_DRAWING_TEXT_GG"></span>
 
 
-The text output functions are called only for a [*device-managed surface*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface) (a device bitmap or surface), or for a GDI-managed surface if the driver has hooked the call in the [**EngAssociateSurface**](https://msdn.microsoft.com/library/windows/hardware/ff564183) function. The graphic output primitives for text are the functions:
+The text output functions are called only for a *device-managed surface* (a device bitmap or surface), or for a GDI-managed surface if the driver has hooked the call in the [**EngAssociateSurface**](https://msdn.microsoft.com/library/windows/hardware/ff564183) function. The graphic output primitives for text are the functions:
 
 [**DrvTextOut**](https://msdn.microsoft.com/library/windows/hardware/ff557277)
 
@@ -36,7 +36,7 @@ The input parameters for **DrvTextOut** define two sets of pixels, *foreground* 
 
 2.  The foreground pixels are then rendered with the foreground brush.
 
-Each of these rendering operations is performed in a [*clip region*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-clip-region). The pixels outside the clip region cannot be affected.
+Each of these rendering operations is performed in a *clip region*. The pixels outside the clip region cannot be affected.
 
 The driver must render the surface so opaque pixels are calculated and drawn on the surface first with an opaque brush. Then foreground pixels are calculated and rendered with a foreground brush. Each of these operations is limited by clipping.
 

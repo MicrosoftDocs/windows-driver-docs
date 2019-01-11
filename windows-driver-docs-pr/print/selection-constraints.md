@@ -35,7 +35,7 @@ The \*InvalidCombination entry has the following format:
 
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature.
 
-The options listed in a single \*InvalidCombination entry indicate a set of options that cannot be used in combination. For example, the following entry specifies that [*CMYK*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk) color mode cannot be used with plain paper and 720 DPI.
+The options listed in a single \*InvalidCombination entry indicate a set of options that cannot be used in combination. For example, the following entry specifies that *CMYK* color mode cannot be used with plain paper and 720 DPI.
 
 ```cpp
 *InvalidCombination: LIST(Resolution.720dpi, MediaType.Plain, ColorMode.CMYK)

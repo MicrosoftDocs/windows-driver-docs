@@ -241,7 +241,7 @@ For more information about how to specify security descriptors, see [Creating Se
 The operating system loads drivers according to the *service-install-section*  **StartType** value, as follows:
 
 -   During the system boot start phase, the operating system loads all **0x0** (SERVICE_BOOT_START) drivers.
--   During the system start phase, the operating system first loads all WDM and PnP drivers for which the PnP manager finds device nodes ([*devnodes*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) in the registry **..\\Enum** tree (whether their INF files specify **0x01** for SERVICE_SYSTEM_START or **0x03** for SERVICE_DEMAND_START).Then the operating system loads all remaining SERVICE_SYSTEM_START drivers.
+-   During the system start phase, the operating system first loads all WDM and PnP drivers for which the PnP manager finds device nodes (*devnodes*) in the registry **..\\Enum** tree (whether their INF files specify **0x01** for SERVICE_SYSTEM_START or **0x03** for SERVICE_DEMAND_START).Then the operating system loads all remaining SERVICE_SYSTEM_START drivers.
 -   During the system auto-start phase, the operating system loads all remaining SERVICE_AUTO_START drivers.
 
 For more information about **Dependencies**, see [Specifying Driver Load Order](specifying-driver-load-order.md).

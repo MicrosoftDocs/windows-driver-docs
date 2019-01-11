@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="installing_device_interfaces_for_an_audio_adapter"></span><span id="INSTALLING_DEVICE_INTERFACES_FOR_AN_AUDIO_ADAPTER"></span>
 
 
-A client accesses an audio device through a set of [*device interfaces*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss_device_interface) that a vendor specifies in the adapter's INF file. The device interfaces specified in the INF file have a one-to-one correspondence with the subdevices that the adapter driver creates when it initializes the device (see [Subdevice Creation](subdevice-creation.md)). For each device interface, the INF file specifies a **FriendlyName** entry value, which is accessible in user mode, under the interface's registry key.
+A client accesses an audio device through a set of *device interfaces* that a vendor specifies in the adapter's INF file. The device interfaces specified in the INF file have a one-to-one correspondence with the subdevices that the adapter driver creates when it initializes the device (see [Subdevice Creation](subdevice-creation.md)). For each device interface, the INF file specifies a **FriendlyName** entry value, which is accessible in user mode, under the interface's registry key.
 
 In the kernel-streaming architecture, topology categories (see [**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)) represent device interface classes.
 
