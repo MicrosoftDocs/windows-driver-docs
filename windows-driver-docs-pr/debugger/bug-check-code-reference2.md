@@ -398,6 +398,7 @@ The following table shows the code and name of each bug check code.
 | 0x000001C8 | [**MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD**](bug-check-0x1c8--manually-initiated-power-button-hold.md)                                          |
 | 0x000001C9 | [**USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP**](bug-check-0x1c9--user-mode-health-monitor-livedump.md)                                                |
 | 0x000001CA | [**SYNTHETIC\_WATCHDOG\_TIMEOUT**](bug-check-0x1ca--synthetic-watchdog-timeout.md)                                                |
+| 0x000001CB | [**INVALID\_SILO\_DETACH**](bug-check-0x1cb--invalid-silo-detach.md)                                                |
 | 0x000001CC | [**EXRESOURCE_TIMEOUT_LIVEDUMP**](bug-check-0x1cc--exresource-timeout-livedump.md)                                                                |
 | 0x000001CD | [**INVALID\_CALLBACK\_STACK_ADDRESS**](bug-check-0x1cd--invalid-callback-stack-address.md)                                                        |
 | 0x000001CE | [**INVALID\_KERNEL\_STACK\_ADDRESS**](bug-check-0x1ce--invalid-kernel-stack-address.md)                                                           |

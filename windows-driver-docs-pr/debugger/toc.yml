@@ -2475,8 +2475,10 @@
       href: bug-check-0x1c8--manually-initiated-power-button-hold.md
     - name: "Bug Check 0x1C9: USER_MODE_HEALTH_MONITOR_LIVEDUMP"
       href: bug-check-0x1c9--user-mode-health-monitor-livedump.md
-    - name: "Bug Check 0x1CA: SYNTHETIC_WATCHDOG_TIMEOUTP"
+    - name: "Bug Check 0x1CA: SYNTHETIC_WATCHDOG_TIMEOUT"
       href: bug-check-0x1ca--synthetic-watchdog-timeout.md
+    - name: "Bug Check 0x1CB: INVALID_SILO_DETACH"
+      href: bug-check-0x1cb--invalid-silo-detach.md
     - name: "Bug Check 0x1CC: EXRESOURCE_TIMEOUT_LIVEDUMP"
       href: bug-check-0x1cc--exresource-timeout-livedump.md
     - name: "Bug Check 0x1CD: INVALID_CALLBACK_STACK_ADDRESS"
