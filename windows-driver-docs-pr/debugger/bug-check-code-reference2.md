@@ -393,7 +393,8 @@ The following table shows the code and name of each bug check code.
 | 0x000001B0 | [**VIDEO_MINIPORT_FAILED_LIVEDUMP**](bug-check-0x1b0--video-miniport-failed-livedump.md)                                                          |
 | 0x000001C4 | [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP**](bug-check-0x1c4--driver-verifier-detected-violation-livedump.md)                            |
 | 0x000001C5 | [**IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP**](bug-check-0x1c5--io-threadpool-deadlock-livedump.md)                                                     |
-| 0x000001C6 | [**FAST\_ERESOURCE\_PRECONDITION\_VIOLATION**](bug-check-0x1c6--fast-eresource-precondition-violation.md)                                                     |
+| 0x000001C6 | [**FAST\_ERESOURCE\_PRECONDITION\_VIOLATION**](bug-check-0x1c6--fast-eresource-precondition-violation.md)                                         |
+| 0x000001C7 | [**STORE\_DATA\_STRUCTURE\_CORRUPTION**](bug-check-0x1c7--store-data-structure-corruption.md)                                         |
 | 0x000001C8 | [**MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD**](bug-check-0x1c8--manually-initiated-power-button-hold.md)                                          |
 | 0x000001C9 | [**USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP**](bug-check-0x1c9--user-mode-health-monitor-livedump.md)                                                |
 | 0x000001CC | [**EXRESOURCE_TIMEOUT_LIVEDUMP**](bug-check-0x1cc--exresource-timeout-livedump.md)                                                                |
