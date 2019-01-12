@@ -26,7 +26,7 @@ Here is a typical sequence for a driver that receives data in order, with one fr
 
 1. Call **NetRxQueueGetRingCollection** to retrieve the receive queue's ring collection structure. You can store this in the queue's context space to reduce calls out of the driver. 
 2. Indicate received data to the OS by draining the net rings:
-    1. Use the ring collection to retrieve the drain iterator for the receive queue's fragment ring through a call to [**NetRingGetDrainFragments**](netringgetrxdrainpacketiterator.md).
+    1. Use the ring collection to retrieve the drain iterator for the receive queue's fragment ring through a call to [**NetRingGetDrainFragments**](netringgetdrainfragments.md).
     2. Get a packet iterator for all available packets in the packet ring by calling [**NetRingGetAllPackets**](netringgetallpackets.md).
     3. Do the following in a loop:
         1. Check if the fragment has been received by the hardware. If not, break out of the loop.
