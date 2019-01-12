@@ -411,7 +411,7 @@ The following table shows the code and name of each bug check code.
 | 0x000001D5 | [**DRIVER_PNP_WATCHDOG**](bug-check-0x1d5--driver-pnp-watchdog.md)                                                                                |
 | 0x000001D6 | [**WORKER\_THREAD\_RETURNED\_WITH\_NON\_DEFAULT\_WORKLOAD\_CLASS**](bug-check-0x1d6--worker-thread-returned-with-non-default-workload-class.md)   |
 | 0x000001D7 | [**EFS\_FATAL\_ERROR**](bug-check-0x1d7--efs-fatal-error.md)                                                                                      |
-| 0x000001D8 | [**UCMUCSI\_FAILURE**](bug-check-0x1d8--ucmucsi-failure)                                                                                          |
+| 0x000001D8 | [**UCMUCSI\_FAILURE**](bug-check-0x1d8--ucmucsi-failure.md)                                                                                       |
 | 0x00000356 | [**XBOX\_ERACTRL\_CS\_TIMEOUT**](bug-check-0x356--xbox-eractrl-cs-timeout.md)                                                                     |
 | 0x00000BFE | [**BC\_BLUETOOTH\_VERIFIER\_FAULT**](bug-check-0xbfe--bc-bluetooth-verifier-fault.md)                                                             |
 | 0x00000BFF | [**BC\_BTHMINI\_VERIFIER\_FAULT**](bug-check-0xbff--bc-bthmini-verifier-fault.md)                                                                 |
