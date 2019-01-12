@@ -1,6 +1,6 @@
 ---
 title: NetPacketIteratorGetIndex method
-description: The NetPacketIteratorGetIndex method gets the current Index of a packet iterator.
+description: The NetPacketIteratorGetIndex method gets the current Index of a packet iterator in the packet ring.
 ms.assetid: D9239E11-A366-44B8-B1A4-A58C986FBDFE
 keywords:
 - NetAdapterCx NetPacketIteratorGetIndex, NetCx NetPacketIteratorGetIndex
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetPacketIteratorGetIndex** method gets the current **Index** of a packet iterator.
+The **NetPacketIteratorGetIndex** method gets the current **Index** of a packet iterator in the packet ring.
 
 ## Syntax
 

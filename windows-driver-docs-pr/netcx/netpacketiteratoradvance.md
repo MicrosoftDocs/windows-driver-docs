@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NetPacketIteratorAdvance method advances the **Index** of a packet iterator by one.
+The **NetPacketIteratorAdvance** method advances the **Index** of a packet iterator by one.
 
 ## Syntax
 

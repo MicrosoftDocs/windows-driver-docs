@@ -26,7 +26,7 @@ void NetPacketIteratorSet(
 
 `Iterator`
 
-A pointer to a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) structure..
+A pointer to a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) structure.
 
 ## Return Value
 

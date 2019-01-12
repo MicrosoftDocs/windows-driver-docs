@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetPacketIteratorAdvanceToTheEnd** method advances the current **Index**** of a packet iterator to its **End** index.
+The **NetPacketIteratorAdvanceToTheEnd** method advances the current **Index** of a packet iterator to its **End** index.
 
 ## Syntax
 

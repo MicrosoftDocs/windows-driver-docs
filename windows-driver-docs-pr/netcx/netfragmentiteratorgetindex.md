@@ -1,23 +1,23 @@
 ---
-title: NetRingIteratorGetFragment function
-description: The NetRingIteratorGetFragment method gets the NET_FRAGMENT structure at a fragment iterator's Index.
-ms.assetid: B6F2FEE8-7571-4B00-8D73-352D554F2F45
+title: NetFragmentIteratorGetIndex method
+description: The NetFragmentIteratorGetIndex method gets the current Index of a fragment iterator in the fragment ring.
+ms.assetid: 2BB8D16F-F8C2-4D6E-B092-A307813311C7
 keywords:
-- NetAdapterCx NetRingIteratorGetFragment, NetCx NetRingIteratorGetFragment
-ms.date: 10/30/2018
+- NetAdapterCx NetFragmentIteratorGetIndex, NetCx NetFragmentIteratorGetIndex
+ms.date: 01/11/2019
 ms.localizationpriority: medium
 ---
 
-# NetRingIteratorGetFragment function
+# NetFragmentIteratorGetIndex method
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NetRingIteratorGetFragment** method gets the **NET_FRAGMENT** structure at a fragment iterator's Index.
+The **NetFragmentIteratorGetIndex** method gets the current **Index** of a fragment iterator in the fragment ring.
 
 ## Syntax
 
 ```cpp
-NET_FRAGMENT* NetRingIteratorGetFragment(
+UINT32 NetFragmentIteratorGetIndex(
     NET_RING_FRAGMENT_ITERATOR const * Iterator
 );
 ```
@@ -30,7 +30,7 @@ A pointer to a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) s
 
 ## Return Value
 
-Returns a pointer to the **NET_FRAGMENT** structure at the fragment iterator's **Index**.
+Returns the fragment iterator's current **Index**.
 
 ## Requirements
 
@@ -43,7 +43,5 @@ Returns a pointer to the **NET_FRAGMENT** structure at the fragment iterator's *
 ## See Also
 
 [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
-
-**NET_FRAGMENT**
 
 [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)

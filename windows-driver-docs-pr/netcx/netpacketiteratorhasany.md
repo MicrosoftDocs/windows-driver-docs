@@ -34,7 +34,7 @@ Returns **TRUE** if the iterator's **Index** does not equal its **End** index. I
 
 ## Remarks
 
-Client drivers can call **NetPacketIteratorHasAny** to test if the iterator has any valid elements to process. This method can be used to verify a packet or fragment before processing it, or it can be used as a test condition for a loop when the driver is processing multiple fragments or packets in a batch.
+Client drivers can call **NetPacketIteratorHasAny** to test if the iterator has any valid elements to process. This method can be used to verify a packet before processing it, or it can be used as a test condition for a loop when the driver is processing multiple packets in a batch.
 
 ## Requirements
 
@@ -49,5 +49,3 @@ Client drivers can call **NetPacketIteratorHasAny** to test if the iterator has 
 [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)
-
-[**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)
