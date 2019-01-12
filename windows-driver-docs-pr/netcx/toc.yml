@@ -61,62 +61,48 @@
     - name: "Netringiterator.h"
       href: netringiterator-h.md
       items:
-      - name: "NetRingIteratorGetFragment"
-        href: netringiteratorgetfragment.md
-      - name: "NetRingIteratorGetPacket"
-        href: netringiteratorgetpacket.md
-      - name: "NetRingGetRxPostFragmentIterator"
-        href: netringgetrxpostfragmentiterator.md
-      - name: "NetRingSetRxPostFragmentIterator"
-        href: netringsetrxpostfragmentiterator.md
-      - name: "NetRingGetRxDrainFragmentIterator"
-        href: netringgetrxdrainfragmentiterator.md
-      - name: "NetRingSetRxDrainFragmentIterator"
-        href: netringsetrxdrainfragmentiterator.md
-      - name: "NetRingGetRxDrainPacketIterator"
-        href: netringgetrxdrainpacketiterator.md
-      - name: "NetRingSetRxDrainPacketIterator"
-        href: netringsetrxdrainpacketiterator.md
-      - name: "NetRingGetTxPostPacketIterator"
-        href: netringgettxpostpacketiterator.md
-      - name: "NetRingSetTxPostPacketIterator"
-        href: netringsettxpostpacketiterator.md
-      - name: "NetRingGetTxDrainPacketIterator"
-        href: netringgettxdrainpacketiterator.md
-      - name: "NetRingSetTxDrainPacketIterator"
-        href: netringsettxdrainpacketiterator.md
-      - name: "NetRingGetTxPostPacketFragmentIterator"
-        href: netringgettxpostpacketfragmentiterator.md
-      - name: "NetRingSetTxPostFragmentIterator"
-        href: netringsettxpostfragmentiterator.md
-      - name: "NetRingGetTxDrainPacketFragmentIterator"
-        href: netringgettxdrainpacketfragmentiterator.md
-      - name: "NetRingSetTxDrainFragmentIterator"
-        href: netringsettxdrainfragmentiterator.md
-      - name: "NetRingGetAllFragmentIterator"
-        href: netringgetallfragmentiterator.md
-      - name: "NetRingSetAllFragmentIterator"
-        href: netringsetallfragmentiterator.md
-      - name: "NetRingGetAllPacketIterator"
-        href: netringgetallpacketiterator.md
-      - name: "NetRingSetAllPacketIterator"
-        href: netringsetallpacketiterator.md
-      - name: "NetRingAdvancePacketIterator"
-        href: netringadvancepacketiterator.md
-      - name: "NetRingAdvanceFragmentIterator"
-        href: netringadvancefragmentiterator.md
-      - name: "NetRingAdvanceEndPacketIterator"
-        href: netringadvanceendpacketiterator.md
-      - name: "NetRingAdvanceEndFragmentIterator"
-        href: netringadvanceendfragmentiterator.md
-      - name: "NetRingPacketIteratorGetCount"
-        href: netringpacketiteratorgetcount.md
-      - name: "NetRingFragmentIteratorGetCount"
-        href: netringfragmentiteratorgetcount.md
-      - name: "NetRingIteratorGetIndex"
-        href: netringiteratorgetindex.md
-      - name: "NetRingIteratorAny"
-        href: netringiteratorany.md
+      - name: NetRingGetPostPackets
+        href: netringgetpostpackets.md
+      - name: NetRingGetDrainPackets
+        href: netringgetdrainpackets.md
+      - name: NetRingGetAllPackets
+        href: netringgetallpackets.md
+      - name: NetPacketIteratorGetPacket
+        href: netpacketiteratorgetpacket.md
+      - name: NetPacketIteratorGetIndex
+        href: netpacketiteratorgetindex.md
+      - name: NetPacketIteratorHasAny
+        href: netpacketiteratorhasany.md
+      - name: NetPacketIteratorGetCount
+        href: netpacketiteratorgetcount.md
+      - name: NetPacketIteratorAdvance
+        href: netpacketiteratoradvance.md
+      - name: NetPacketIteratorAdvanceToTheEnd
+        href: netpacketiteratoradvancetotheend.md
+      - name: NetPacketIteratorSet
+        href: netpacketiteratorset.md
+      - name: NetPacketIteratorGetFragments
+        href: netpacketiteratorgetfragments.md
+      - name: NetRingGetPostFragments
+        href: netringgetpostfragments.md
+      - name: NetRingGetDrainFragments
+        href: netringgetdrainfragments.md
+      - name: NetRingGetAllFragments
+        href: netringgetallfragments.md
+      - name: NetFragmentIteratorGetFragment
+        href: netfragmentiteratorgetfragment.md
+      - name: NetFragmentIteratorGetIndex
+        href: netfragmentiteratorgetindex.md
+      - name: NetFragmentIteratorHasAny
+        href: netfragmentiteratorhasany.md
+      - name: NetFragmentIteratorGetCount
+        href: netfragmentiteratorgetcount.md
+      - name: NetFragmentIteratorAdvance
+        href: netfragmentiteratoradvance.md
+      - name: NetFragmentIteratorAdvanceToTheEnd
+        href: netfragmentiteratoradvancetotheend.md
+      - name: NetFragmentIteratorSet
+        href: netfragmentiteratorset.md
       - name: "NET_RING_ITERATOR"
         href: net-ring-iterator.md
       - name: "NET_RING_PACKET_ITERATOR"

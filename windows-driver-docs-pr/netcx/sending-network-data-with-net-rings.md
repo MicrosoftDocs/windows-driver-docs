@@ -4,7 +4,7 @@ description: This topic describes how NetAdapterCx client drivers use net rings 
 ms.assetid: 2F3DA1A5-D0C1-4928-80B2-AF41F949FF14
 keywords:
 - NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
-ms.date: 12/06/2018
+ms.date: 01/11/2019
 ms.localizationpriority: medium
 ---
 
@@ -26,26 +26,27 @@ Here is a typical post and drain sequence for a driver whose device transmits da
 
 1. Call **NetTxQueueGetRingCollection** to retrieve the transmit queue's ring collection structure. You can store this in the queue's context space to reduce calls out of the driver. 
 2. Post data to hardware:    
-    1. Use the ring collection to retrieve the post iterator for the transmit queue's packet ring by calling [**NetRingGetTxPostPacketIterator**](netringgettxpostpacketiterator.md).
+    1. Use the ring collection to retrieve the post iterator for the transmit queue's packet ring by calling [**NetRingGetPostPackets**](netringgetpostpackets.md).
     2. Do the following in a loop:
-        1. Get a packet by calling [**NetRingIteratorGetPacket**](netringiteratorgetpacket.md) with the packet iterator.
-        2. Check if this packet should be ignored. If it should be ignored, skip to step 5 of this loop. If not, continue.
-        3. Get the post iterator for this packet's fragments by calling [**NetRingGetTxPostPacketFragmentIterator**](netringgettxpostpacketfragmentiterator.md).
+        1. Get a packet by calling [**NetPacketIteratorGetPacket**](netpacketiteratorgetpacket.md) with the packet iterator.
+        2. Check if this packet should be ignored. If it should be ignored, skip to step 6 of this loop. If not, continue.
+        3. Get a fragment iterator for this packet's fragments by calling [**NetPacketIteratorGetFragments**](netpacketiteratorgetfragments.md).
         4. Do the doing the following in a loop:
-            1. Call [**NetRingIteratorGetFragment**](netringiteratorgetfragment.md) with the fragment iterator to get a fragment.
+            1. Call [**NetFragmentIteratorGetFragment**](netfragmentiteratorgetfragment.md) with the fragment iterator to get a fragment.
             2. Translate the **NET_FRAGMENT** descriptor into the associated hardware fragment descriptor.
-            3. Call [**NetRingAdvanceFragmentIterator**](netringadvancefragmentiterator.md) to move to the next fragment for this packet.
-            4. Call [**NetRingSetTxPostFragmentIterator**](netringsettxpostfragmentiterator.md) to finalize posting this fragment to hardware.
-        5. Call [**NetRingAdvancePacketIterator**](netringadvancepacketiterator.md) to move to the next packet.
-    3. Call [**NetRingSetTxPostPacketIterator**](netringsettxpostpacketiterator.md) to finalize posting packets to hardware.
+            3. Call [**NetFragmentIteratorAdvance**](netfragmentiteratoradvance.md) to move to the next fragment for this packet.
+        5. Update the fragment ring's **Next** index to match the fragment iterator's current **Index**, which indicates that posting to hardware is complete.
+        6. Call [**NetPacketIteratorAdvance**](netpacketiteratoradvance.md) to move to the next packet.
+    3. Call [**NetPacketIteratorSet**](netpacketiteratorset.md) to finalize posting packets to hardware.
 3. Drain completed transmit packets to the OS:
-    1. Use the ring collection to retrieve the drain iterator for the transmit queue's packet ring by calling [**NetRingGetTxDrainPacketIterator**](netringgettxdrainpacketiterator.md).
+    1. Use the ring collection to retrieve the drain iterator for the transmit queue's packet ring by calling [**NetRingGetDrainPackets**](netringgetdrainpackets.md).
     2. Do the following in a loop:
-        1. Check if the packet has finished transmitting. If it has not, break out of the loop.
-        2. Call [**NetRingAdvancePacketIterator**](netringadvancepacketiterator.md) to move to the next packet.
-    3. Call [**NetRingSetTxDrainPacketIterator**](netringsettxdrainpacketiterator.md) to finalize draining packets to the OS.
+        1. Get a packet by calling [**NetPacketIteratorGetPacket**](netpacketiteratorgetpacket.md).
+        2. Check if the packet has finished transmitting. If it has not, break out of the loop.
+        2. Call [**NetPacketIteratorAdvance**](netpacketiteratoradvance.md) to move to the next packet.
+    3. Call [**NetPacketIteratorSet**](netpacketiteratorset.md) to finalize draining packets to the OS.
 
-These steps might look like this in code. Note the use of the [**NetRingIteratorAny**](netringiteratorany.md) method as a `while` loop testing condition. This method determines whether the iterator has reached its **End** or not. If it has not reached its **End**, the iterator has a valid element to process.
+These steps might look like this in code. Note that hardware-specific details such as how to post descriptors to hardware or flushing a successful post transaction are left out for clarity.
 
 ```cpp
 void
@@ -60,44 +61,52 @@ MyEvtTxQueueAdvance(
     //
     // Post data to hardware
     //
-    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetTxPostPacketIterator(Rings);
-    while(NetRingIteratorAny(packetIterator))
+    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetPostPackets(Rings);
+    while(NetPacketIteratorHasAny(&packetIterator))
     {
-        NET_PACKET* packet = NetRingIteratorGetPacket(&packetIterator);
+        NET_PACKET* packet = NetPacketIteratorGetPacket(&packetIterator);        
         if(!packet->Ignore)
         {
-            NET_FRAGMENT_ITERATOR fragmentIterator = NetRingGetTxPostPacketFragmentIterator(&packetIterator);
-            for(txQueueContext->numTxDescriptors = 0; 
-                NetRingIteratorAny(fragmentIterator); 
-                txQueueContext->numTxDescriptors++)
+            NET_FRAGMENT_ITERATOR fragmentIterator = NetPacketIteratorGetFragments(&packetIterator);
+            UINT32 packetIndex = NetPacketIteratorGetIndex(&packetIterator);
+            
+            for(txQueueContext->PacketTransmitControlBlocks[packetIndex]->numTxDescriptors = 0; 
+                NetFragmentIteratorHasAny(&fragmentIterator); 
+                txQueueContext->PacketTransmitControlBlocks[packetIndex]->numTxDescriptors++)
             {
-                // Translate fragment descriptor to hardware
+                NET_FRAGMENT* fragment = NetFragmentIteratorGetFragment(&fragmentIterator);
+
+                // Post fragment descriptor to hardware
                 ...
                 //
 
-                NetRingAdvanceFragmentIterator(&fragmentIterator);
+                NetFragmentIteratorAdvance(&fragmentIterator);
             }
-            NetRingSetTxPostFragmentIterator(&fragmentIterator);
+
+            //
+            // Update the fragment ring's Next index to indicate that posting is complete and prepare for draining
+            //
+            fragmentIterator.Iterator.Rings->Rings[NET_RING_TYPE_FRAGMENT]->NextIndex = NetFragmentIteratorGetIndex(&fragmentIterator);
         }
-        NetRingAdvancePacketIterator(&packetIterator);
+        NetPacketIteratorAdvance(&packetIterator);
     }
-    NetRingSetTxPostPacketIterator(&packetIterator);
+    NetPacketIteratorSet(&packetIterator);
 
     //
     // Drain packets if completed
     //
-    packetIterator = NetRingGetTxDrainPacketIterator(Rings);
-    while(NetRingIteratorAny(packetIterator))
+    packetIterator = NetRingGetDrainPackets(Rings);
+    while(NetPacketIteratorHasAny(&packetIterator))
     {        
-        NET_PACKET* packet = NetRingIteratorGetPacket(&packetIterator);
+        NET_PACKET* packet = NetPacketIteratorGetPacket(&packetIterator);
         
         // Test packet for transmit completion by checking hardware ownership flags in the packet's last fragment
         ..
         //
         
-        NetRingAdvancePacketIterator(&packetIterator);
+        NetPacketIteratorAdvance(&packetIterator);
     }
-    NetRingSetTxDrainPacketIterator(&packetIterator);
+    NetPacketIteratorSet(&packetIterator);
 }
 ```
 

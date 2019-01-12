@@ -4,7 +4,7 @@ description: This topic describes how NetAdapterCx client drivers use net rings 
 ms.assetid: 78D202E2-4123-4F63-9B86-48400C2CCC38
 keywords:
 - NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
-ms.date: 12/04/2018
+ms.date: 01/11/2019
 ms.localizationpriority: medium
 ---
 
@@ -26,24 +26,25 @@ Here is a typical sequence for a driver that receives data in order, with one fr
 
 1. Call **NetRxQueueGetRingCollection** to retrieve the receive queue's ring collection structure. You can store this in the queue's context space to reduce calls out of the driver. 
 2. Indicate received data to the OS by draining the net rings:
-    1. Use the ring collection to retrieve the drain iterator for the receive queue's net rings: call [**NetRingGetRxDrainPacketIterator**](netringgetrxdrainpacketiterator.md) for the packet ring and call [**NetRingGetRxDrainFragmentIterator**](netringgetrxdrainfragmentiterator.md) for the fragment ring.
-    2. Do the following in a loop:
+    1. Use the ring collection to retrieve the drain iterator for the receive queue's fragment ring through a call to [**NetRingGetDrainFragments**](netringgetrxdrainpacketiterator.md).
+    2. Get a packet iterator for all available packets in the packet ring by calling [**NetRingGetAllPackets**](netringgetallpackets.md).
+    3. Do the following in a loop:
         1. Check if the fragment has been received by the hardware. If not, break out of the loop.
-        2. Get the fragment iterator's current fragment by calling [**NetRingIteratorGetFragment**](netringiteratorgetfragment.md).
+        2. Get the fragment iterator's current fragment by calling [**NetFragmentIteratorGetFragment**](netfragmentiteratorgetfragment.md).
         3. Fill in the fragment's information, such as its **ValidLength**, based on its matching hardware descriptor.
-        4. Get a packet for this fragment by calling [**NetRingIteratorGetPacket**](netringiteratorgetpacket.md).
+        4. Get a packet for this fragment by calling [**NetPacketIteratorGetPacket**](netpacketiteratorgetpacket.md).
         5. Bind the fragment to the packet by setting the packet's **FragmentIndex** to the fragment's current index in the fragment ring and setting the number of fragments appropriately (in this example, it is set to **1**). 
         6. Optionally, fill in any other packet information such as checksum info.
-        7. Call [**NetRingAdvanceFragmentIterator**](netringadvancefragmentiterator.md) to move to the next fragment.
-        7. Call [**NetRingAdvancePacketIterator**](netringadvancepacketiterator.md) to move to the next packet.
-    3. Call [**NetRingSetRxDrainFragmentIterator**](netringsetrxdrainpacketiterator.md) and [**NetRingSetRxDrainPacketIterator**](netringsetrxdrainpacketiterator.md) to finalize indicating received packets and their fragments to the OS.
+        7. Call [**NetFragmentIteratorAdvance**](netfragmentiteratoradvance.md) to move to the next fragment.
+        7. Call [**NetPacketIteratorAdvance**](netpacketiteratoradvance.md) to move to the next packet.
+    4. Call [**NetFragmentIteratorSet**](netfragmentiteratorset.md) and [**NetPacketIteratorSet**](netpacketiteratorset.md) to finalize indicating received packets and their fragments to the OS.
 3. Post fragment buffers to hardware for the next receives:    
-    1. Use the ring collection to retrieve the post iterator for the receive queue's fragment ring by calling [**NetRingGetRxPostFragmentIterator**](netringgetrxpostfragmentiterator.md).
+    1. Use the ring collection to retrieve the post iterator for the receive queue's fragment ring by calling [**NetRingGetPostFragments**](netringgetpostfragments.md).
     2. Do the following in a loop:
-        1. Get the fragment iterator's current index by calling [**NetRingIteratorGetIndex**](netringiteratorgetindex.md).
+        1. Get the fragment iterator's current index by calling [**NetFragmentIteratorGetIndex**](netfragmentiteratorgetindex.md).
         2. Post the fragment's information to the matching hardware descriptor.
-        3. Call [**NetRingAdvanceFragmentIterator**](netringadvancefragmentiterator.md) to move to the next fragment.
-    3. Call [**NetRingSetRxPostFragmentIterator**](netringsetrxpostfragmentiterator.md) to finalize posting fragments to hardware.
+        3. Call [**NetFragmentIteratorAdvance**](netfragmentiteratoradvance.md) to move to the next fragment.
+    3. Call [**NetFragmentIteratorSet**](netfragmentiteratorset.md) to finalize posting fragments to hardware.
 
 These steps might look like this in code:
 
@@ -56,52 +57,54 @@ MyEvtRxQueueAdvance(
     // Get the receive queue's context to retrieve the net ring collection
     PMY_RX_QUEUE_CONTEXT rxQueueContext = MyGetRxQueueContext(RxQueue);
     NET_RING_COLLECTION const * Rings = rxQueueContext->Rings;
-    UINT32 currentFragmentIndex = 0;
 
     //
     // Indicate receives by draining the rings
     //
-    NET_RING_FRAGMENT_ITERATOR fragmentIterator = NetRingGetRxDrainFragmentIterator(Rings);
-    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetRxDrainPacketIterator(Rings);
-    while(NetRingIteratorAny(fragmentIterator))
+    NET_RING_FRAGMENT_ITERATOR fragmentIterator = NetRingGetDrainFragments(Rings);
+    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetAllPackets(Rings);
+    while(NetFragmentIteratorHasAny(&fragmentIterator))
     {
-        currentFragmentIndex = NetRingIteratorGetIndex(fragmentIterator);
+        UINT32 currentFragmentIndex = NetFragmentIteratorGetIndex(&fragmentIterator);
 
         // Test for fragment reception
         ...
         //
 
-        NET_FRAGMENT* fragment = NetRingIteratorGetFragment(&fragmentIterator);
+        NET_FRAGMENT* fragment = NetFragmentIteratorGetFragment(&fragmentIterator);
         fragment->ValidLength = ... ;
-        NET_PACKET* packet = NetRingIteratorGetPacket(&packetIterator);
+        NET_PACKET* packet = NetPacketIteratorGetPacket(&packetIterator);
         packet->FragmentIndex = currentFragmentIndex;
         packet->FragmentCount = 1;
 
-        // Fill in checksum info
-        ...
-        //
+        if(rxQueueContext->IsChecksumExtensionEnabled)
+        {
+            // Fill in checksum info
+            ...
+            //
+        }        
 
-        NetRingAdvanceFragmentIterator(&fragmentIterator);
-        NetRingAdvancePacketIterator(&packetIterator);
+        NetFragmentIteratorAdvance(&fragmentIterator);
+        NetPacketIteratorAdvance(&packetIterator);
     }
-    NetRingSetRxDrainFragmentIterator(&fragmentIterator);
-    NetRingSetRxDrainPacketIterator(&packetIterator);
+    NetFragmentIteratorSet(&fragmentIterator);
+    NetFragmentIteratorSet(&packetIterator);
 
     //
     // Post fragment buffers to hardware
     //
-    fragmentIterator = NetRingGetRxPostFragmentIterator(Rings);
-    while(NetRingIteratorAny(fragmentIterator))
+    fragmentIterator = NetRingGetPostFragments(Rings);
+    while(NetFragmentIteratorHasAny(&fragmentIterator))
     {
-        currentFragmentIndex = NetRingIteratorGetIndex(fragmentIterator);
+        UINT32 currentFragmentIndex = NetFragmentIteratorGetIndex(&fragmentIterator);
 
         // Post fragment information to hardware descriptor
         ...
         //
 
-        NetRingAdvanceFragmentIterator(&fragmentIterator);
+        NetFragmentIteratorAdvance(&fragmentIterator);
     }
-    NetRingSetRxPostFragmentIterator(&fragmentIterator);
+    NetFragmentIteratorSet(&fragmentIterator);
 }
 ```
 
