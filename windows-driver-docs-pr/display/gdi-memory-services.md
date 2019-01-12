@@ -65,7 +65,7 @@ GDI provides several memory-related services to driver writers, including the ab
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567267" data-raw-source="[&lt;strong&gt;HeapVidMemAllocAligned&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567267)"><strong>HeapVidMemAllocAligned</strong></a></p></td>
-<td align="left"><p>Allocates <a href="https://msdn.microsoft.com/library/windows/hardware/ff556318#wdkgloss-off-screen-memory" data-raw-source="&lt;em&gt;off-screen memory&lt;/em&gt;"><em>off-screen memory</em></a> for a display driver by using the DirectDraw video memory heap manager.</p></td>
+<td align="left"><p>Allocates <em>off-screen memory</em> for a display driver by using the DirectDraw video memory heap manager.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570554" data-raw-source="[&lt;strong&gt;VidMemFree&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570554)"><strong>VidMemFree</strong></a></p></td>

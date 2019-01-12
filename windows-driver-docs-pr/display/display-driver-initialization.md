@@ -43,13 +43,15 @@ The basic display driver initialization procedure, in which the desktop is creat
 
 Any existing GDI bitmap handle is a valid surface handle. A driver can call [**EngModifySurface**](https://msdn.microsoft.com/library/windows/hardware/ff564976) to convert the device-managed primary bitmap to an engine-managed bitmap. If the surface is engine-managed, GDI can handle any or all drawing operations. If the surface is device-managed, at a minimum, the driver must handle [**DrvTextOut**](https://msdn.microsoft.com/library/windows/hardware/ff557277), [**DrvStrokePath**](https://msdn.microsoft.com/library/windows/hardware/ff556316), and [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180).
 
-GDI automatically enables DirectDraw after calling **DrvEnableSurface** to perform *off-screen memory* management. See [DirectDraw and GDI](directdraw-and-gdi.md) for details.
+
+GDI automatically enables DirectDraw after calling [**DrvEnableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556214). After DirectDraw is initialized, the driver can use DirectDraw's *heap manager* to perform [*off-screen memory*](video-present-network-terminology.md#off_screen_memory) management. See [DirectDraw and GDI](directdraw-and-gdi.md) for details.
+
 
 A display driver must implement [**DrvNotify**](https://msdn.microsoft.com/library/windows/hardware/ff556252) in order to receive notification events, particularly the DN\_DRAWING\_BEGIN event. GDI sends this event immediately before it begins drawing, so it can be used to determine when caches can be initialized.
 
 See the [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) section for more information about the boot process.
 
- 
+
 
  
 
