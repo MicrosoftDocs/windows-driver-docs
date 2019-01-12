@@ -2501,6 +2501,10 @@
       href: bug-check-0x1d5--driver-pnp-watchdog.md
     - name: "Bug Check 0x1D6: WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLASS"
       href: bug-check-0x1d6--worker-thread-returned-with-non-default-workload-class.md
+    - name: "Bug Check 0x1D7: EFS_FATAL_ERROR"
+      href: bug-check-0x1d7--efs-fatal-error.md
+    - name: "Bug Check 0x1D8: UCMUCSI_FAILURE"
+      href: bug-check-0x1d8--ucmucsi-failure.md
     - name: "Bug Check 0x356: XBOX_ERACTRL_CS_TIMEOUT"
       href: bug-check-0x356--xbox-eractrl-cs-timeout.md
     - name: "Bug Check 0xBFE: BC_BLUETOOTH_VERIFIER_FAULT"
