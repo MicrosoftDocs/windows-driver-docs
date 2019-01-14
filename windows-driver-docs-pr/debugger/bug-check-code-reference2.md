@@ -361,6 +361,7 @@ The following table shows the code and name of each bug check code.
 | 0x0000017B | [**PROFILER\_CONFIGURATION\_ILLEGAL**](bug-check-0x17b--profiler-configuration-illegal.md)                                                        | 
 | 0x0000017C | [**PDC\_LOCK\_WATCHDOG\_LIVEDUMP**](bug-check-0x17c--pdc-lock-watchdog-livedump.md)                                                               | 
 | 0x0000017D | [**PDC\_UNEXPECTED\_REVOCATION\_LIVEDUMP**](bug-check-0x17d-unexpected-revocation-livedump.md)                                                    | 
+| 0x0000017E | [**MICROCODE\_REVISION\_MISMATCH**](bug-check-0x17e--microcode-revision-mismatch.md)                                                    | 
 | 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                              |
 | 0x00000188 | [**CLUSTER\_CSVFS\_LIVEDUMP**](bug-check-0x188--cluster-csvfs-livedump.md)                                                                        |
 | 0x00000189 | [**BAD\_OBJECT\_HEADER**](bug-check-0x189--bad-object-header.md)                                                                                  |
