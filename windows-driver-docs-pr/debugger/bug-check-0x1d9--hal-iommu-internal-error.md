@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # Bug Check 0x1D9: HAL\_IOMMU\_INTERNAL\_ERROR
 
-The HAL\_IOMMU\_INTERNAL\_ERRORbug check has a value of 0x000001D9. It indicates that an internal error was detected in the HAL IOMMU library.
+The HAL\_IOMMU\_INTERNAL\_ERROR bug check has a value of 0x000001D9. It indicates that an internal error was detected in the HAL IOMMU library.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
  
