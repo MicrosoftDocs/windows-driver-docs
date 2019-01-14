@@ -25,7 +25,8 @@ The **DrvSaveScreenBits**. These drivers can hook **DrvSaveScreenBits**, which l
 
  
 
-Drivers that implement device bitmaps in *off-screen memory* can significantly improve system performance. Off-screen device bitmaps improve system performance by:
+
+Drivers that implement device bitmaps in [*off-screen memory*](video-present-network-terminology.md#off_screen_memory) can significantly improve system performance. Off-screen device bitmaps improve system performance by:
 
 -   Using accelerator hardware in place of GDI to draw.
 
@@ -34,6 +35,7 @@ Drivers that implement device bitmaps in *off-screen memory* can significantly i
 -   Reducing demands on main memory (a bitmap stored in off-screen memory isn't taking up space in main memory).
 
 -   Leveraging hardware to perform operations that support OpenGL, such as mask bit-block transfers and double-buffering.
+
 
 Drivers should implement device bitmaps in off-screen memory through [**DrvCreateDeviceBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff556185).
 
