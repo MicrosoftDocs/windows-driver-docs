@@ -6,7 +6,7 @@ keywords:
 - miniport drivers WDK networking , types
 - NDIS miniport drivers WDK , types
 - deserialized NDIS miniport drivers WDK networking
-ms.date: 04/20/2017
+ms.date: 01/09/2019
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +22,7 @@ A *deserialized NDIS miniport driver* serializes the operation of its own *Minip
 
 The deserialized driver model is the default model for NDIS miniport drivers. Connection-oriented miniport drivers, as well as miniport drivers with a WDM lower edge, must be deserialized drivers. When writing a new NDIS miniport driver, you should write a deserialized driver. If possible, you should also port older drivers to NDIS 6.0 or later. For more information about porting drivers, see:
 
--   [Porting NDIS 5.x Drivers to NDIS 6.0](porting-ndis-5-x-drivers-to-ndis-6-0.md)
+-   [Porting NDIS 5.x Drivers to NDIS 6.0](https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0)
 -   [Porting NDIS 6.x Drivers to NDIS 6.20](porting-ndis-6-x-drivers-to-ndis-6-20.md)
 -   [Porting NDIS 6.x Drivers to NDIS 6.30](porting-ndis-6-x-drivers-to-ndis-6-30.md)
 

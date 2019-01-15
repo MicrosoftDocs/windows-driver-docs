@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Best Practices for Supporting Container IDs on USB Devices
 
 
-The heuristic used to generate the container ID for a USB device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)), which was discussed in [How USB Devices are Assigned Container IDs](how-usb-devices-are-assigned-container-ids.md), is complex, and relies on information taken from several sources.
+The heuristic used to generate the container ID for a USB device node (*devnode*), which was discussed in [How USB Devices are Assigned Container IDs](how-usb-devices-are-assigned-container-ids.md), is complex, and relies on information taken from several sources.
 
 Starting with Windows 7, the recommendations that are discussed in this section should be followed to allow the operating system to correctly determine the device container and provide the best user experience for your device.
 

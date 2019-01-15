@@ -70,7 +70,7 @@ To assist vector devices in filling complex areas, their drivers can call the en
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568857" data-raw-source="[&lt;strong&gt;PATHOBJ_vEnumStartClipLines&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568857)"><strong>PATHOBJ_vEnumStartClipLines</strong></a></p></td>
-<td align="left"><p>Allows the driver to ask for lines to be clipped against a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539417" data-raw-source="[&lt;strong&gt;CLIPOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539417)"><strong>CLIPOBJ</strong></a>. This is useful when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-clip-region" data-raw-source="[&lt;em&gt;clip region&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-clip-region)"><em>clip region</em></a> is more complex than a single rectangle.</p></td>
+<td align="left"><p>Allows the driver to ask for lines to be clipped against a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539417" data-raw-source="&lt;strong&gt;CLIPOBJ&lt;/strong&gt;"><em>clip region</em></a> is more complex than a single rectangle.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568858" data-raw-source="[&lt;strong&gt;PATHOBJ_vGetBounds&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568858)"><strong>PATHOBJ_vGetBounds</strong></a></p></td>

@@ -19,7 +19,7 @@ The **X_containerId** XML element is declared as follows:
 </df:X_containerId>
 ```
 
-The **X_containerId** XML element type is a string, for which the value is a globally unique identifier ([*GUID*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-guid)). This string is formatted as *{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}*.
+The **X_containerId** XML element type is a string, for which the value is a globally unique identifier (*GUID*). This string is formatted as *{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}*.
 
 The following is an example of an **X_containerId** XML element.
 

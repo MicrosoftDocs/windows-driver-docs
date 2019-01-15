@@ -12,7 +12,7 @@ ms.custom: seodec18
 
 # Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)
 
-[*Mirror driver*](https://msdn.microsoft.com/library/windows/hardware/ff556308#wdkgloss-mirror-driver) support for video miniport drivers is provided by Windows 2000 and later, so a miniport driver must not have any special code to attempt such support. See [Mirror Drivers](mirror-drivers.md) for more information about display drivers in mirroring systems.
+*Mirror driver* support for video miniport drivers is provided by Windows 2000 and later, so a miniport driver must not have any special code to attempt such support. See [Mirror Drivers](mirror-drivers.md) for more information about display drivers in mirroring systems.
 
 The requirements for a mirror driver miniport driver are minimal. The only functions which must be implemented are [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff556159), which is exported by the miniport driver, and the following:
 

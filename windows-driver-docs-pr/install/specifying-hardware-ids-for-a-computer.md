@@ -30,7 +30,7 @@ The ComputerHardwareIds tool generates a set of hardware IDs for the computer th
 
 For more information about the *dmiStrucBuffer* array and the SMBIOS fields, see the [System Management BIOS (SMBIOS)](https://go.microsoft.com/fwlink/p/?linkid=145867) specification on the Distributed Management Task Force (DMTF) website.
 
-When the ComputerHardwareIds tool runs, it creates unique hardware IDs from the SMBIOS information. Each hardware ID is a [*GUID*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-guid) and is created by concatenating the values from the SMBIOS fields.
+When the ComputerHardwareIds tool runs, it creates unique hardware IDs from the SMBIOS information. Each hardware ID is a *GUID* and is created by concatenating the values from the SMBIOS fields.
 
 The following tables show the SMBIOS fields used to form each hardware ID in Windows 7, Windows 8, Windows 8.1, and Windows 10.
 

@@ -39,11 +39,11 @@ The following user objects are available:
 <tbody>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538261" data-raw-source="[&lt;strong&gt;BRUSHOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538261)"><strong>BRUSHOBJ</strong></a></p></td>
-<td align="left"><p>Defines the brush objects for graphic functions that output lines, text, or fills. Drivers can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-brushobj" data-raw-source="[&lt;em&gt;BRUSHOBJ&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-brushobj)"><em>BRUSHOBJ</em></a> services to realize brushes or to find realizations previously cached by GDI.</p></td>
+<td align="left"><p>Defines the brush objects for graphic functions that output lines, text, or fills. Drivers can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-brushobj" data-raw-source="&lt;em&gt;BRUSHOBJ&lt;/em&gt;"><em>BRUSHOBJ</em></a> services to realize brushes or to find realizations previously cached by GDI.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539417" data-raw-source="[&lt;strong&gt;CLIPOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539417)"><strong>CLIPOBJ</strong></a></p></td>
-<td align="left"><p>Provides the driver with access to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-clip-region" data-raw-source="[&lt;em&gt;clip region&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-clip-region)"><em>clip region</em></a> for drawing or filling. This region can be enumerated as a series of rectangles.</p></td>
+<td align="left"><p>Provides the driver with access to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-clip-region" data-raw-source="&lt;em&gt;clip region&lt;/em&gt;"><em>clip region</em></a> for drawing or filling. This region can be enumerated as a series of rectangles.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565804" data-raw-source="[&lt;strong&gt;FLOATOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565804)"><strong>FLOATOBJ</strong></a></p></td>
@@ -55,11 +55,11 @@ The following user objects are available:
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568844" data-raw-source="[&lt;strong&gt;PALOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568844)"><strong>PALOBJ</strong></a></p></td>
-<td align="left"><p>A structure containing RGB palette colors; accessible via the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568845" data-raw-source="[&lt;strong&gt;PALOBJ_cGetColors&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568845)"><strong>PALOBJ_cGetColors</strong></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556282" data-raw-source="[&lt;strong&gt;DrvSetPalette&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556282)"><strong>DrvSetPalette</strong></a> functions. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-palobj" data-raw-source="[&lt;em&gt;PALOBJ&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-palobj)"><em>PALOBJ</em></a> structure contains no public members.</p></td>
+<td align="left"><p>A structure containing RGB palette colors; accessible via the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568845" data-raw-source="&lt;strong&gt;PALOBJ_cGetColors&lt;/strong&gt;"><em>PALOBJ</em></a> structure contains no public members.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568849" data-raw-source="[&lt;strong&gt;PATHOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568849)"><strong>PATHOBJ</strong></a></p></td>
-<td align="left"><p>Defines a path that specifies what is to be drawn (lines or Bezier curves). A <a href="https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pathobj" data-raw-source="[&lt;em&gt;PATHOBJ&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pathobj)"><em>PATHOBJ</em></a> structure is passed to the driver to describe a set of lines and Bezier curves that are to be stroked or filled.</p></td>
+<td align="left"><p>Defines a path that specifies what is to be drawn (lines or Bezier curves). A <a href="https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pathobj" data-raw-source="&lt;em&gt;PATHOBJ&lt;/em&gt;"><em>PATHOBJ</em></a> structure is passed to the driver to describe a set of lines and Bezier curves that are to be stroked or filled.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569738" data-raw-source="[&lt;strong&gt;STROBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff569738)"><strong>STROBJ</strong></a></p></td>

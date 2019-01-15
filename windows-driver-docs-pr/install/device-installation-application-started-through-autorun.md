@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This method builds upon existing [software-first installation](software-first-installation.md) methods to create a [hardware-first installation](hardware-first-installation.md) scenario. This method relies on the [**INF HardwareId directive**](inf-hardwareid-directive.md), which is supported in Windows Vista and later versions of Windows.
 
-In this method, the [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) on the distribution medium is launched as part of the processing of the Autorun.inf file. When the user plugs in the device, the Found New Hardware Wizard parses this file, and looks for an [**INF HardwareId directive**](inf-hardwareid-directive.md) that matches the device that is being installed. If the wizard finds a match, it invokes the AutoRun-enabled device installation application to install the [driver package](driver-packages.md) and device-specific applications.
+In this method, the *device installation application* on the distribution medium is launched as part of the processing of the Autorun.inf file. When the user plugs in the device, the Found New Hardware Wizard parses this file, and looks for an [**INF HardwareId directive**](inf-hardwareid-directive.md) that matches the device that is being installed. If the wizard finds a match, it invokes the AutoRun-enabled device installation application to install the [driver package](driver-packages.md) and device-specific applications.
 
 This method has the following advantages:
 

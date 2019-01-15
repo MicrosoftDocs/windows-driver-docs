@@ -33,7 +33,7 @@ PJL.GPD
 P6DISP.GPD
 ```
 
-Pclxl.dll contains the PCL XL [*UFMs*](https://msdn.microsoft.com/library/windows/hardware/ff556343#wdkgloss-unidrv-font-metrics--ufm-) and various resource strings. The other GPDs listed in this section are the PCL XL (PCL-6) support files.
+Pclxl.dll contains the PCL XL *UFMs* and various resource strings. The other GPDs listed in this section are the PCL XL (PCL-6) support files.
 
 To install a PCL XL printer minidriver, an OEM should add a section similar to the following in the printer-specific INF. This INF loads before ntprint.inf does.
 

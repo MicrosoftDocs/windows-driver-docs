@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_low_level_idct_processing_elements_gg"></span><span id="DDK_LOW_LEVEL_IDCT_PROCESSING_ELEMENTS_GG"></span>
 
 
-The DirectX VA interface supports various ways of handling low-level inverse discrete-cosine transform ([*IDCT*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-idct)). There are two fundamental types of operation:
+The DirectX VA interface supports various ways of handling low-level inverse discrete-cosine transform (*IDCT*). There are two fundamental types of operation:
 
 1.  Off-host IDCT: Passing macroblocks of transform coefficients to the accelerator for external IDCT, picture reconstruction, and reconstruction clipping.
 

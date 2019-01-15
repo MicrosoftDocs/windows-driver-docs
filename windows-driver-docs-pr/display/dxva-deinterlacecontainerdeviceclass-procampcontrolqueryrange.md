@@ -19,7 +19,7 @@ ms.custom: seodec18
 # DXVA\_DeinterlaceContainerDeviceClass::ProcAmpControlQueryRange method
 
 
-The sample **ProcAmpControlQueryRange** function allows the [*VMR*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-vmr) to query the driver to determine the minimum, maximum, step size, and default value for each ProcAmp property.
+The sample **ProcAmpControlQueryRange** function allows the *VMR* to query the driver to determine the minimum, maximum, step size, and default value for each ProcAmp property.
 
 Syntax
 ------

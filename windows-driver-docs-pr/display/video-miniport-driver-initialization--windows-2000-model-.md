@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_video_miniport_driver_initialization_windows_2000_model__gg"></span><span id="DDK_VIDEO_MINIPORT_DRIVER_INITIALIZATION_WINDOWS_2000_MODEL__GG"></span>
 
 
-Video miniport driver initialization occurs after the NT kernel, [*HAL*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hal), and core drivers, such as the PCI bus driver, are loaded and initialized. The basic system initialization sequence occurs as follows:
+Video miniport driver initialization occurs after the NT kernel, *HAL*, and core drivers, such as the PCI bus driver, are loaded and initialized. The basic system initialization sequence occurs as follows:
 
 1.  The NT kernel and HAL are loaded and initialized.
 

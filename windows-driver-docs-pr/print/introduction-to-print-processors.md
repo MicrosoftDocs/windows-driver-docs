@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-Print processors are user-mode DLLs that are responsible for converting a print job's spooled data into a format that can be sent to a [*print monitor*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-print-monitor). They are also responsible for handling application requests to pause, resume and cancel print jobs.
+Print processors are user-mode DLLs that are responsible for converting a print job's spooled data into a format that can be sent to a *print monitor*. They are also responsible for handling application requests to pause, resume and cancel print jobs.
 
 The print job's spooled data is contained in a spool file. The print processor reads the file, performs conversion operations on the data stream, and writes the converted data to the spooler. The spooler then sends the data stream to the appropriate print monitor.
 

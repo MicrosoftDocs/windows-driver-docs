@@ -19,7 +19,7 @@ ms.custom: seodec18
 # DXVA\_DeinterlaceContainerDeviceClass::ProcAmpControlQueryCaps method
 
 
-The sample *ProcAmpControlQueryCaps* function allows the [*VMR*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-video-mixer-renderer--vmr-) to query the driver to determine input requirements of the ProcAmp control device and additional video processing operations that might be supported. The query can occur at the same time that the ProcAmp adjustments operation is being performed.
+The sample *ProcAmpControlQueryCaps* function allows the *VMR* to query the driver to determine input requirements of the ProcAmp control device and additional video processing operations that might be supported. The query can occur at the same time that the ProcAmp adjustments operation is being performed.
 
 Syntax
 ------
