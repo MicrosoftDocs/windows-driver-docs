@@ -31,7 +31,7 @@ Each NDIS_TASK_OFFLOAD structure has a **Task** member that specifies the partic
 - [NDIS_TASK_TCP_LARGE_SEND](https://msdn.microsoft.com/library/windows/hardware/ff559008)  
     Specifies large TCP packet segmentation capabilities.
 - [NDIS_TASK_TCP_CONNECTION_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/ff567873)  
-    Specifies TCP chimney offload capabilities. For more information on NDIS_TASK_TCP_CONNECTION_OFFLOAD, see [TCP Chimney Offload](ndis-tcp-chimney-offload.md).
+    Specifies TCP chimney offload capabilities. For more information on NDIS_TASK_TCP_CONNECTION_OFFLOAD, see [TCP Chimney Offload](https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload).
 
 > [!NOTE]
 > If an intermediate driver modifies the contents of packets that it forwards to an underlying miniport driver such that TCP offload functions cannot be performed on the packets, the intermediate driver should respond to OID_TCP_TASK_OFFLOAD queries with a status of NDIS_STATUS_NOT_SUPPORTED instead of passing the OID request to the underlying miniport driver or offload target.
