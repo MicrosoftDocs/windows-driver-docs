@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1D8 UCMUCSI_FAILURE
-description: The UCMUCSI_FAILURE bug check has a value of 0x000001D8. It indicates that that the UcmUcsi driver has encountered an error.
+description: The UCMUCSI_FAILURE bug check has a value of 0x000001D8. It indicates that that the UCSI class extension has encountered an error.
 keywords: ["Bug Check 0x1D8 UCMUCSI_FAILURE", "UCMUCSI_FAILURE"]
 ms.date: 01/11/2019
 topic_type:
@@ -14,11 +14,10 @@ ms.localizationpriority: medium
 
 # Bug Check 0x1D8: UCMUCSI\_FAILURE
 
-The UCMUCSI\_FAILURE bug check has a value of 0x000001D8. It indicates that the UcmUcsi driver has encountered an error.
+The UCMUCSI\_FAILURE bug check has a value of 0x000001D8. It indicates that the UCSI class extension has encountered an error.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
  
-
 ## UCMUCSI\_FAILURE Parameters
 
 |Parameter|Description|
@@ -36,9 +35,11 @@ The UcmUcsi driver has encountered an error. The driver has found settings to tr
 ## Resolution
 -----
 
-A UCSI Command typically fails when UCSI firmware is not responsive and UcmUcsiCx times out on a UCSI command.
+A UCSI Command typically fails when UCSI firmware is not responsive and UcmUcsiCx times out on a UCSI command or the UCSI firmware has indicated an error in response to a critical UCSI command sent by UcmUcsiCx.
 
-Run `!rcdrkd.rcdrlogdump UcmUcsiCx` for more information. 
+Run `!rcdrkd.rcdrlogdump UcmUcsiCx` for more information on the cause of this failure. 
+
+For more information on analyzing this bug check, see this blog post - [Debugging UCSI firmware failures]([https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/Debugging-UCSI-firmware-failures/ba-p/283226).
 
 
 ## See Also
