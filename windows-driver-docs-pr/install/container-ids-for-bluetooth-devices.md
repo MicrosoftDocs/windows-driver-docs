@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 For a Bluetooth device that is connected to the computer, the device's media access control (MAC) address is used to generate a container ID for the device.
 
-The Bluetooth bus driver uses the MAC address as a seed value to generate a unique container ID for the device. This container ID is supplied by the Bluetooth bus driver for each Bluetooth device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) that is enumerated for a physical device.
+The Bluetooth bus driver uses the MAC address as a seed value to generate a unique container ID for the device. This container ID is supplied by the Bluetooth bus driver for each Bluetooth device node (*devnode*) that is enumerated for a physical device.
 
 Bluetooth devices frequently implement Bluetooth-specific services. These services are not installed as Windows PnP devices and therefore do not have associated devnodes. However, these services are effectively functional device instances, because they provide specific functionality and enable communication with the Bluetooth device.
 

@@ -14,7 +14,7 @@ Whenever a debugging session is accessible, there is a *last event*. This is the
 
 If the target is a crash dump file, the *last event* is the last event that occurred before the dump file was created. This event is stored in the dump file and the engine generates it for the event callbacks when the dump file is acquired as a debugging target.
 
-If the target is a kernel-mode target and a [*bug check*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-bug-check) occurred, the bug check code and related parameters can be found using [**ReadBugCheckData**](https://msdn.microsoft.com/library/windows/hardware/ff553517).
+If the target is a kernel-mode target and a *bug check* occurred, the bug check code and related parameters can be found using [**ReadBugCheckData**](https://msdn.microsoft.com/library/windows/hardware/ff553517).
 
 If the target is a user-mode Minidump, the dump file generator may store an additional event. Typically, this is the event that provoked the generator to save the dump file. Details of this event are returned by [**GetStoredEventInformation**](https://msdn.microsoft.com/library/windows/hardware/ff548431) and the [**Request**](https://msdn.microsoft.com/library/windows/hardware/ff554564) operations [**DEBUG\_REQUEST\_TARGET\_EXCEPTION\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff541606), [**DEBUG\_REQUEST\_TARGET\_EXCEPTION\_THREAD**](https://msdn.microsoft.com/library/windows/hardware/ff541623), and [**DEBUG\_REQUEST\_TARGET\_EXCEPTION\_RECORD**](https://msdn.microsoft.com/library/windows/hardware/ff541616).
 

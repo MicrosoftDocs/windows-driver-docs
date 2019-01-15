@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 
 
-For Windows 2000 and later, Adobe Font Metrics ([*AFM*](https://msdn.microsoft.com/library/windows/hardware/ff556270#wdkgloss-adobe-font-metrics--afm-)) files must be converted to .ntf files. A command-line tool for performing this conversion, named makentf.exe, was provided with the Windows Driver Development Kit (DDK).
+For Windows 2000 and later, Adobe Font Metrics (*AFM*) files must be converted to .ntf files. A command-line tool for performing this conversion, named makentf.exe, was provided with the Windows Driver Development Kit (DDK).
 
 To convert one or more .afm files, use the following command syntax:
 

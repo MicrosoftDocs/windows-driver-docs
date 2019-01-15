@@ -23,7 +23,7 @@ The **ContainerId** XML element is declared as follows:
 </df:ContainerId>
 ```
 
-The **ContainerId** XML element type is a string, for which the value is a globally unique identifier ([*GUID*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-guid)) formatted. This string is formatted as *{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}*.
+The **ContainerId** XML element type is a string, for which the value is a globally unique identifier (*GUID*) formatted. This string is formatted as *{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}*.
 
 The following is an example of a **ContainerId** XML element.
 

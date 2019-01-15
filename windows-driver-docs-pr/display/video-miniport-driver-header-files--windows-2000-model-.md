@@ -43,7 +43,7 @@ Video miniport drivers in the Windows 2000 display driver model include the foll
 </tr>
 <tr class="even">
 <td align="left"><p><em>ntddvdeo.h</em></p></td>
-<td align="left"><p>Contains the system-defined I/O control codes (IOCTLs) and corresponding structures that are sent in video request packets (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-video-request-packet--vrp-" data-raw-source="[&lt;em&gt;VRPs&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-video-request-packet--vrp-)"><em>VRPs</em></a>) to video miniport drivers.</p></td>
+<td align="left"><p>Contains the system-defined I/O control codes (IOCTLs) and corresponding structures that are sent in video request packets (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-video-request-packet--vrp-" data-raw-source="&lt;em&gt;VRPs&lt;/em&gt;"><em>VRPs</em></a>) to video miniport drivers.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><em>tvout.h</em></p></td>

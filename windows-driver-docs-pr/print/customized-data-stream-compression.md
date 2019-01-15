@@ -22,7 +22,7 @@ Unidrv allows you to perform data compression operations using customized code. 
 
 1.  Provide a rendering plug-in that implements the [**IPrintOemUni::Compression**](https://msdn.microsoft.com/library/windows/hardware/ff554224) method.
 
-2.  Include a CmdEnableOEMComp command entry in the printer's [*GPD*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-generic-printer-description--gpd-) file.
+2.  Include a CmdEnableOEMComp command entry in the printer's *GPD* file.
 
 The IPrintOemUni::Compression method receives scan line data as input. The method must compress the data and then return the result to Unidrv. The **CmdEnableOEMComp** command entry specifies the command that must be sent to the printer so that the printer can accept the compressed data. For each scan line that is to be sent to the printer, Unidrv calls IPrintOemUni::Compression to compress the scan line data. Then, if this is the only compression method available, Unidrv sends to the printer the command specified by the **CmdEnableOEMComp** command entry, followed by the compressed data.
 

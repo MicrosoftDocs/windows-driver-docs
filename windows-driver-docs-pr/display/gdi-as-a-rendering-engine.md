@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 ## <span id="ddk_gdi_as_a_rendering_engine_gg"></span><span id="DDK_GDI_AS_A_RENDERING_ENGINE_GG"></span>
 
 
-For rendering operations, the driver must first enable a [*surface*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-surface) for each [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev) structure that is enabled. A PDEV is a logical representation of a physical device. If the hardware can be set up as a GDI standard-format bitmap, GDI can be used to do some or all of the drawing to the bitmap surface. GDI can also handle advanced [halftoning](gdi-halftoning-capabilities.md).
+For rendering operations, the driver must first enable a *surface* for each *PDEV* structure that is enabled. A PDEV is a logical representation of a physical device. If the hardware can be set up as a GDI standard-format bitmap, GDI can be used to do some or all of the drawing to the bitmap surface. GDI can also handle advanced [halftoning](gdi-halftoning-capabilities.md).
 
-For information about enabling [*PDEVs*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev) and surfaces, refer to the [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) and [**DrvEnableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556214) functions.
+For information about enabling *PDEVs* and surfaces, refer to the [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) and [**DrvEnableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556214) functions.
 
  
 

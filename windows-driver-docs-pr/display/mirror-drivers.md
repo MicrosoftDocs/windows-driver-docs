@@ -38,7 +38,7 @@ A *remote display driver* model that is based on the mirror driver architecture 
 ## <span id="ddk_mirror_drivers_gg"></span><span id="DDK_MIRROR_DRIVERS_GG"></span>Mirror driver description
 
 
-A [*mirror driver*](https://msdn.microsoft.com/library/windows/hardware/ff556308#wdkgloss-mirror-driver) is a display driver for a virtual device that mirrors the drawing operations of one or more additional physical display devices. It is implemented and behaves much like any other display driver; however, its paired video miniport driver is minimal in comparison to a typical miniport driver. See [Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)](mirror-driver-support-in-video-miniport-drivers--windows-2000-model-.md) for more information about miniport drivers in mirroring systems. The Windows Driver Kit (WDK) through the Windows 7 edition (Version 7600) contains a sample mirror driver which includes component source files that are contained in three directories.
+A *mirror driver* is a display driver for a virtual device that mirrors the drawing operations of one or more additional physical display devices. It is implemented and behaves much like any other display driver; however, its paired video miniport driver is minimal in comparison to a typical miniport driver. See [Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)](mirror-driver-support-in-video-miniport-drivers--windows-2000-model-.md) for more information about miniport drivers in mirroring systems. The Windows Driver Kit (WDK) through the Windows 7 edition (Version 7600) contains a sample mirror driver which includes component source files that are contained in three directories.
 
 <table>
 <colgroup>
@@ -71,7 +71,7 @@ A [*mirror driver*](https://msdn.microsoft.com/library/windows/hardware/ff556308
 
 GDI supports a *virtual desktop* and provides the ability to replicate a portion of the virtual desktop on a mirror device. GDI implements the virtual desktop as a graphics layer above the physical display driver layer. All drawing operations start in this virtual desktop space; GDI clips and renders them on the appropriate physical display devices that exist in the virtual desktop.
 
-A mirror device can specify an arbitrary [*clip region*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-clip-region) in the virtual desktop, including one that spans more than one physical display device. GDI then sends the mirror device all drawing operations that intersect that driver's clip region. A mirror device can set a clip region that exactly matches a particular physical device; therefore, it can effectively mirror that device.
+A mirror device can specify an arbitrary *clip region* in the virtual desktop, including one that spans more than one physical display device. GDI then sends the mirror device all drawing operations that intersect that driver's clip region. A mirror device can set a clip region that exactly matches a particular physical device; therefore, it can effectively mirror that device.
 
 **Note**   In Windows 2000 and later, the mirror driver's clip region must include the primary display device.
 
@@ -105,7 +105,7 @@ As mentioned previously, the driver is installed and operates in a drawing layer
 
 -   GDI calls the mirror driver for any 2D graphics DDI drawing operation that intersects the driver's bounding rectangle. Note that GDI does not perform a bounding rectangle check if the surface is a device format bitmap; that is, if the [**SURFOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff569901) has an **iType** of STYPE\_DEVBITMAP.
 
--   As always, the mirror driver must be implemented without the use of global variables. All state must exist in the [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev) for that particular driver. GDI will call [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) for every hardware device extension created by the video miniport driver.
+-   As always, the mirror driver must be implemented without the use of global variables. All state must exist in the *PDEV* for that particular driver. GDI will call [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) for every hardware device extension created by the video miniport driver.
 
 -   The mirror driver should not support DirectDraw.
 

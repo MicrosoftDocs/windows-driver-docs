@@ -17,6 +17,7 @@ ms.custom: seodec18
 | --- | --- | --- |
 | [EDID Extension (VSDB) for HMDs and Specialized Displays](specialized-monitors-edid-extension.md) | 12/03/2018 | Specification for Display Manufacturers |
 | [DirectX Graphics Kernel Subsystem (Dxgkrnl.sys)](directx-graphics-kernel-subsystem.md) | 12/04/2018 | Kernel-mode interfaces that the Windows operating system implements through the Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys). |
+| [WDDM 2.1 Features](wddm-2-1-features.md) | 01/10/2019|Describes new and updated features for WDDM 2.1 |
 
 ### Raytracing
 
@@ -33,12 +34,36 @@ For more info about raytracing, see:
 * [DirectX Raytracing and the Windows 10 October 2018 Update](https://blogs.msdn.microsoft.com/directx/2018/10/02/directx-raytracing-and-the-windows-10-october-2018-update/)
 * [DirectX Forums](https://forums.directxtech.com/index.php?topic=5985.0)
 
+## WDDM 2.1
+
+WDDM 2.1 enables new scenarios and provides significant improvements in the areas of performance, reliability, upgrade resiliency, diagnostic improvements and future system advancements for the Windows graphics sub-system.
+The WDDM 2.0 driver model is a pre-requisite for D3D12. WDDM 2.0 and DirectX12 are available only on Windows 10 and higher.
+
+The following is a list of feature additions and updates for WDDM 2.1.
+
+* Improved graphics performance by reducing overhead time spent in memory management and more efficient usage of scarce graphics memory. The graphics performance improvements are:
+
+    * Offer and reclaim resources - offer and reclaim improvements to reduce memory footprint of applications running in background mode.
+    * Support for 2MB Page Table Entry encoding - In WDDM 2.1, large Page Table Entry (PTE) encoding in VRAM is enabled. This change boosts performance on systems that support it.
+    * Support for 64KB memory pages - Virtual memory allocations using a 64KB granularity is also supported in WDDM 2.1. This change especially benefits APUs and SoCs by reducing overhead for accessing virtual memory pages.
+
+* Hardware-based protected content improvements with *present batching* ([PlayReady 3.0](https://docs.microsoft.com/playready/))
+
+* Driver Store installation for graphics drivers to improve driver upgrade resiliency.
+
+* DXIL, a new shader complier language
+
+* D3D12 performance and optimization improvements
+
+* Improved diagnostic options for developers
+
+For more information, see [WDDM 2.1 Features](wddm-2-1-features.md).
 
 ## WDDM 2.0
 
-### Memory Management
+WDDM 2.0 includes memory management updates.
 
-GPU virtual memory
+### GPU virtual memory
 
 -   All physical memory is abstracted into virtual segments that can be managed by the graphics processing unit (GPU) memory manager.
 -   Each process gets its own GPU virtual address space.
@@ -46,7 +71,7 @@ GPU virtual memory
 
 For more details, see [GPU virtual memory in WDDM 2.0](gpu-virtual-memory-in-wddm-2-0.md).
 
-Driver residency
+### Driver residency
 
 -   The video memory manager makes sure that allocations are resident in memory before submitting command buffers to the driver. To facilitate this functionality, new user mode driver device driver interfaces (DDIs) have been added ([*MakeResident*](https://msdn.microsoft.com/library/windows/hardware/dn906357), [*TrimResidency*](https://msdn.microsoft.com/library/windows/hardware/dn906364), [*Evict*](https://msdn.microsoft.com/library/windows/hardware/dn906355)).
 -   The allocation and patch location list is being phased out because it is not necessary in the new model.

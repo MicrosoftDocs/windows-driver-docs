@@ -19,13 +19,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_asynchronous_rendering_gg"></span><span id="DDK_ASYNCHRONOUS_RENDERING_GG"></span>
 
 
-A display driver that handles one or more graphics DDI drawing operations asynchronously and provides GDI access to its bitmaps through the use of [**EngModifySurface**](https://msdn.microsoft.com/library/windows/hardware/ff564976) must implement a [*synchronization routine*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-synchronization-routine). The driver must also provide a synchronization routine in order to avoid drawing errors if it batches graphics DDI drawing operations.
+A display driver that handles one or more graphics DDI drawing operations asynchronously and provides GDI access to its bitmaps through the use of **EngModifySurface**. The driver must also provide a synchronization routine in order to avoid drawing errors if it batches graphics DDI drawing operations.
 
 Such a driver has the option of implementing one of [**DrvSynchronizeSurface**](https://msdn.microsoft.com/library/windows/hardware/ff557273) or [**DrvSynchronize**](https://msdn.microsoft.com/library/windows/hardware/ff556323) as the synchronization routine. GDI calls one of these routines only when the driver has hooked them in [**EngAssociateSurface**](https://msdn.microsoft.com/library/windows/hardware/ff564183). GDI will call only **DrvSynchronizeSurface** in drivers that hook both of these synchronization routines.
 
 [**DrvSynchronizeSurface**](https://msdn.microsoft.com/library/windows/hardware/ff557273) provides additional information to the driver regarding synchronization events and why they occur. This enables the driver to reduce performance lag due to synchronization. For example, drivers that track which device bitmaps are in the accelerator's queue might be able to return immediately from **DrvSynchronizeSurface** if the specified surface is not currently in the queue.
 
-In addition to providing a synchronization routine, a driver can also activate a *time-based* or *programmatic*[*flush mechanism*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-flush-mechanism) by setting the following flags in the **flGraphicsCaps2** field of the [**DEVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff552835) structure:
+In addition to providing a synchronization routine, a driver can also activate a *time-based* or *programmatic**flush mechanism* by setting the following flags in the **flGraphicsCaps2** field of the [**DEVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff552835) structure:
 
 -   GCAPS2\_SYNCTIMER -- Setting this flag causes the driver's synchronization routine to be called periodically. Drivers that batch graphics DDI calls must specify this flag. By doing so, these drivers avoid problems such as lag in a software cursor's movement or in drawing that is performed in bursts.
 

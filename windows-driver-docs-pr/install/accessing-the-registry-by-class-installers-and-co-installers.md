@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Accessing the Registry by Class Installers and Co-installers
 
 
-This section provides guidelines that [*class installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-class-installer) and [*co-installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer) must follow when they access or modify registry keys and values. These guidelines are discussed in the following topics:
+This section provides guidelines that *class installers* and *co-installers* must follow when they access or modify registry keys and values. These guidelines are discussed in the following topics:
 
 [Modifying Registry Keys by Class Installers and Co-installers](modifying-registry-keys-by-class-installers-and-co-installers.md)
 

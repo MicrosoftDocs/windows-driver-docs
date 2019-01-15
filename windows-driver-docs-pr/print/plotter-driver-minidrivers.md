@@ -22,7 +22,7 @@ Model-specific minidrivers for the Microsoft Plotter Driver are vendor-supplied 
 
 ### <a href="" id="ddk-pcd-files-gg"></a>PCD Files
 
-To generate a .[*pcd*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-plotter-characterization-data--pcd-) file, you must first create a text file using the [PCD source file format](pcd-source-file-format.md). You must then run plotgpc.exe, which is included with the Windows Driver Kit (WDK). This program will convert a text file into a binary .pcd file. Use the following command syntax:
+To generate a .*pcd* file, you must first create a text file using the [PCD source file format](pcd-source-file-format.md). You must then run plotgpc.exe, which is included with the Windows Driver Kit (WDK). This program will convert a text file into a binary .pcd file. Use the following command syntax:
 
 **plotgpc***source-file-path* .txt *target-file-path* .pcd
 

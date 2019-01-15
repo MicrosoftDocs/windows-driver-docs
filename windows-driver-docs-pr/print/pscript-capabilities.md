@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The PostScript Printer Driver (Pscript) provides the following capabilities:
 
--   Support for all PostScript printers, using printer-specific [*PPD*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-postscript-printer-description--ppd-)-based [Pscript minidrivers](pscript-minidrivers.md) that describe each printer's characteristics.
+-   Support for all PostScript printers, using printer-specific *PPD*-based [Pscript minidrivers](pscript-minidrivers.md) that describe each printer's characteristics.
 
 -   A [Pscript user interface](pscript-user-interface.md), based on the TreeView control and property sheets, that is consistent for all printers, but is also modifiable for each printer's unique options.
 

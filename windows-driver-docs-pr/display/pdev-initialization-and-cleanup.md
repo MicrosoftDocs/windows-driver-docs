@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_pdev_initialization_and_cleanup_gg"></span><span id="DDK_PDEV_INITIALIZATION_AND_CLEANUP_GG"></span>
 
 
-Each kernel-mode graphics driver represents a single logical device managed by GDI. In turn, a driver can manage one or more [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev) structures. A PDEV is a logical representation of the physical device. It is characterized by the type of hardware, logical address, and surfaces that can be supported:
+Each kernel-mode graphics driver represents a single logical device managed by GDI. In turn, a driver can manage one or more *PDEV* structures. A PDEV is a logical representation of the physical device. It is characterized by the type of hardware, logical address, and surfaces that can be supported:
 
 -   **Type of Hardware** âˆ’ As an example of a driver supporting a PDEV characterized by the type of hardware, one driver could support the LaserWhiz, LaserWhiz II, and LaserWhiz Super printers. The device name passed by GDI specifies which logical device is requested from the total set of driver-supported devices.
 
