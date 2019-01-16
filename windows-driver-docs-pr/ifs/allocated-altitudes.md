@@ -1282,6 +1282,7 @@ The current altitude allocations are listed for each of the following load order
 | ldsecusb.sys                | 142000   | LANDesk Inc.                          |
 | fencr.sys                   | 141900   | SODATSW spol. s.r.o.                  |
 | RubiFlt.sys                 | 141800   | Hitachi                               |
+| CovertxFilter.sys           | 141700   | Covertix                              |
 | mfild.sys                   | 141660   | Penta Security Systems                |
 | TypeSquare.sys              | 141620   | Morisawa inc.                         |
 | xbdocfilter.sys             | 141610   | Zrxb                                  |
@@ -1298,7 +1299,7 @@ The current altitude allocations are listed for each of the following load order
 | Filecrypt.sys               | 141100   | Microsoft                             |
 | encrypt.sys                 | 141010   | Microsoft                             |
 | swapBuffers.sys             | 141000   | Microsoft                             |
-| CovertxFilter.sys           | 140000   | Micro Focus                           |
+
 
 
 ## <span id="130000_-_139999__FSFilter_Virtualization"></span><span id="130000_-_139999__fsfilter_virtualization"></span><span id="130000_-_139999__FSFILTER_VIRTUALIZATION"></span>130000 - 139999: FSFilter Virtualization
