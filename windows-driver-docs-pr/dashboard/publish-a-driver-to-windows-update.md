@@ -92,7 +92,7 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
 8. If you wish to limit public disclosure of your Shipping Label in the Windows Update Catalog and WSUS Catalog, check the **Limit Public Disclosure of this Shipping Label information.** box.  
 
-   ![screenshot that shows limit public disclosure](/images/limit-public-disclosure.png)
+   ![screenshot that shows limit public disclosure](images/limit-public-disclosure.PNG)
 
    Your driver will still be published and downloadable from Windows Update but will not show up in either of the public catalog lists.
 
