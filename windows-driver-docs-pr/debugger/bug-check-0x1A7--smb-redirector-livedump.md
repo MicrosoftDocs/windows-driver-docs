@@ -45,6 +45,14 @@ The SMB redirector has detected a problem and has captured a kernel dump to coll
 
 The SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
 
+A live dump with this bugcheck code will be generated only if the following registry value is set.
+
+```
+HKLM\System\CurrentControlSet\Services\Lanmanworkstation\Parameters [DWORD] LiveDumpFilter = 1
+```
+
+When this registry key is set and the RDR times out on IO, a livedump will occur.
+
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
 
