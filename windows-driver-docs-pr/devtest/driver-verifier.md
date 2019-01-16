@@ -127,10 +127,9 @@ verifier /reset
 2.  Select **Display existing settings**.
 
 Or type the following command in a Command Prompt window.
-
-```
-verifier /querysettings
-```
+	```
+	verifier /querysettings
+	```
 
 **To view Driver Verifier statistics**
 
