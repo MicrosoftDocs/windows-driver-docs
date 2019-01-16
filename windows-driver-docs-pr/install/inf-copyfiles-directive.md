@@ -92,12 +92,10 @@ Do not replace an existing file in the destination directory with a source file 
 <a href="" id="0x00000020--copyflg-no-version-dialog--"></a>**0x00000020** (COPYFLG_NO_VERSION_DIALOG)   
 Do not write over a file in the destination directory with the source file if the existing file is newer than the source file.
 
-Beginning with Windows Vista and later operating systems, Windows respects this flag for all INF files, including digitally signed INF files.
-
-Prior to Windows Vista this flag is irrelevant to digitally signed INF files. If a [driver package](driver-packages.md) is digitally signed, Windows installs the package as a whole and does not selectively omit files in the package based on other versions already present on the computer.
+The newer check is done using the file version, as extracted from the VS_VERSIONINFO file version resource. For more info, see https://docs.microsoft.com/windows/desktop/menurc/version-information. If the target file is not an executable or resource image, or the file does not contain file version information, then file timestamps are not considered. 
 
 <a href="" id="0x00000040---copyflg-overwrite-older-only-"></a>**0x00000040** (COPYFLG_OVERWRITE_OLDER_ONLY)  
-Copy the source file to the destination directory only if the file on the destination is superseded by a newer version. This flag is irrelevant to digitally signed INF files.
+Copy the source file to the destination directory only if the file on the destination is superseded by a newer version. This flag is irrelevant to digitally signed INF files. The version check uses the same procedure as that described above in COPYFLG_NO_VERSION_DIALOG.
 
 <a href="" id="0x00000400--copyflg-replaceonly--"></a>**0x00000400** (COPYFLG_REPLACEONLY)   
 Copy the source file to the destination directory only if the file is already present in the destination directory.
