@@ -5,7 +5,7 @@ ms.assetid: 95122BBB-0466-4130-9209-7EC6545DFD4D
 keywords:
 - Windows Mobile Plans configuration, Mobile Plans configuration mobile operators
 ms.author: windowsdriverdev
-ms.date: 11/02/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,7 +13,7 @@ ms.technology: windows-devices
 
 # Mobile Plans configuration
 
-This topic describes how to build a foundation on Windows connected devices that support *Mobile Plans*. It details how to configure your eSIM profiles to ensure the best consumer experience, as well as how to provide service configuration information that ensures that the *Mobile Plans* experience is properly rendered on Windows devices.
+This topic describes how to build a foundation on Windows connected devices that support Mobile Plans. It details how to configure your eSIM profiles to ensure the best consumer experience, as well as how to provide service configuration information that ensures that the Mobile Plans experience is properly rendered on Windows devices.
 
 ## eSIM profile configuration requirements
 
@@ -27,32 +27,31 @@ You must prepare eSIM profiles that meet the following requirements:
 - The activation code is available immediately after the MO Direct flow.
 - The device can immediately connect to the network for the end user after the eSIM is downloaded and activated.
 
-Finally, the *Mobile Plans* user experience expects the eSIM profile to be in a warm state, meaning that a data plan can be activated in real-time after downloading the eSIM profile. If the eSIM cannot be activated in real-time, please ensure that you implement the <span style="color:green"> Asynchronous connectivity callback</span> **_TODO: Put a LINK HERE_**
+Finally, the Mobile Plans user experience expects the eSIM profile to be in a warm state, meaning that a data plan can be activated in real time after downloading the eSIM profile. If the eSIM cannot be activated in real time, please ensure that you implement the [Asynchronous connectivity callback](). **_TODO: Put a LINK HERE_**
 
 ## Mobile Plans service configuration
 
-*Mobile Plans* service need to ingest some configuration information to support a mobile operator. To start a configuration process, please send an email to [DYNAMOpartnersup@microsoft.com](mailto:DYNAMOpartnersup@microsoft.com).
+The Mobile Plans service needs to ingest some configuration information to support a mobile operator. To start the configuration process, send an email to [DYNAMOpartnersup@microsoft.com](mailto:DYNAMOpartnersup@microsoft.com).
 
-### Minimum Configuration Information
+### Minimum configuration information
 
 1. The brand name you would like to use for your products.
 2. The branding logo. Required resolution is 300x300 pixels. Image should also be full bleed with no transparency.
 3. The list of countries where your solution is supported. Please use [ISO 3166 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) to create the list (comma separated). 
-4. Your MO Direct portal URI (localization is not supported). This should be a https address. Port numbers are not supported
-5. A notification URI (described in [Implementation](mobile-plans-implementation.md)). This should be a https address. Port numbers are not supported
-6. The ICCID range or ranges that you want to want to associate with *Mobile Plans*.
+4. Your MO Direct portal URI (localization is not supported). This should be an *https* address. Port numbers are not supported
+5. A notification URI (described in [Implementation](mobile-plans-implementation.md)). This should be an *https* address. Port numbers are not supported.
+6. The ICCID range or ranges that you want to want to associate with Mobile Plans.
 <!--
 [//]: # (Removed for Phone Number Lookup.)
 [//]: # (7. MCC/MNC combinations for which you would like phone number lookup to direct to your mobile operator portal.)
 -->
-The following image shows an example for the *standard gateway page*  in the Mobile Plans app. The “A” annotation corresponds to the branding logo you submit, and the “B” annotation corresponds to the brand name.
+The following image shows an example for the *standard gateway page* in the Mobile Plans app. The “A” annotation corresponds to the branding logo you submit, and the “B” annotation corresponds to the brand name.
 
 <img src="images/mobile_plans_configuration_mo_page.png" alt="Mobile Plans mobile operator page - asset usage example" title="Mobile Plans mobile operator page - asset usage example" width="600" />
 
 
-### Enhanced Gateway page
-This is an optional feature supported in Mobile Plans app version <span style="color:green"> XXXXXX</span> **_TODO: Put a find the latest version_**
-The standard landing page could be enhanced to provided a mobile operator branding look and feel to highlight the mobile operator offering.
+### Enhanced gateway page
+This is an optional feature supported in the Mobile Plans app version *XXXXXX*. **_TODO: Put a find the latest version_** The standard landing page can be enhanced to provide a mobile operator-specific look and feel for the branding, to highlight the mobile operator offering.
 
 #### Promotional gateway content
 
@@ -63,10 +62,10 @@ Promotional gateway content is defined using a JSON file with the following elem
   "promotionTemplates": [
     { // PromotionTemplate
       "id": 123,
-      "backgroundColor": "0x000000FF", // Black
-      "bodyFontColor": "0xFFFFFFFF", // White
-      "buttonColor": "0x414243FF", // Grey
-      "buttonFontColor": "0xFFFFFFFF", // White
+      "backgroundColor": "0x000000FF",  // Black
+      "bodyFontColor": "0xFFFFFFFF",    // White
+      "buttonColor": "0x414243FF",      // Gray
+      "buttonFontColor": "0xFFFFFFFF",  // White
       "bodyText": "We’ll help you find a plan so you can get connected when W-Fi isn’t available",
       "buttonText": "Get started",
       "images": [
@@ -85,7 +84,7 @@ The following table describes each JSON object in the previous example.
 
 | JSON object | Field name | Description | Example |
 | --- | --- | --- | --- |
-| Root object | promotionTemplates | A list of promotion templates to be shown on the gateway page. Only one promotion template is supported for each mobile operator. | N/A |
+| Root object | promotionTemplates | A list of promotion templates to show on the gateway page. Only one promotion template is supported for each mobile operator. | N/A |
 | PromotionTemplate | id | A unique string identifier for the template. | 123 |
 |   | backgroundColor | The background color of the gateway page. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, white is used as the default. | 0x000000FF |
 |   | bodyFontColor | The font color for the body text. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined black is used as the default. | 0xFFFFFFFF |

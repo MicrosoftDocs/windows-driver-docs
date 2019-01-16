@@ -5,15 +5,13 @@ ms.assetid: AA432EAE-A89B-4C4C-9539-BC2763091055
 keywords:
 - Windows Mobile Plans mobile operators
 ms.author: windowsdriverdev
-ms.date: 11/02/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
 # Mobile Plans
-
-
 
 ## Introduction
 
@@ -38,13 +36,13 @@ Mobile Plans enables end users to perform the following:
 
 ## Project overview
 
-*Mobile Plans* project integration is composed of four stages, each of which has high-level tasks. Some of these high-level tasks are for mobile operators, while others are joint tasks where Microsoft works in coordination with mobile operators. The following diagram illustrates the four stages of the *Mobile Plans* project.
+Mobile Plans project integration is composed of four stages, each of which has high-level tasks. Some of these high-level tasks are for mobile operators, while others are joint tasks where Microsoft works in coordination with mobile operators. The following diagram illustrates the four stages of the Mobile Plans project.
 
 <img src="images/dynamo_project_overview.png" alt="Mobile Plans project overview" title="Mobile Plans project overview" width="600" />
 
 ## Functional overview
 
-The following diagram shows a high-level view of how a Windows 10 device uses *Mobile Plans* to interact with different services and solutions to successfully activate a subscription and install an eSIM profile.
+The following diagram shows a high-level view of how a Windows 10 device uses Mobile Plans to interact with different services and solutions to successfully activate a subscription and install an eSIM profile.
 
 The following table describes each component of the diagram.
 
@@ -52,7 +50,7 @@ The following table describes each component of the diagram.
 | --- | --- |
 | Windows 10 device | An eSIM-capable “Always Connected PC” running the latest version of Windows 10. |
 | Microsoft Mobile Plans Service | A service endpoint responsible for providing mobile operator information, such as an MO web portal URL and visual assets, to the Windows 10 device. |
-| Mobile Plans Web API & Web Portal | The endpoint in the mobile operator network that is responsible for hosting the web service API and web portal that allow Windows 10 devices to access the *Mobile Plans* experience. |
+| Mobile Plans Web API & Web Portal | The endpoint in the mobile operator network that is responsible for hosting the web service API and web portal that allow Windows 10 devices to access the Mobile Plans experience. |
 | SMDP+ server | Responsible for creating, generating, and managing eSIM profiles that belong to a mobile operator. |
 
 <img src="images/mobile_plans_functional_overview.png" alt="Mobile Plans functional overview" title="Mobile Plans functional overview" width="400" />
@@ -62,7 +60,7 @@ A typical functional flow for the preceding diagram is as follows:
 1. The Mobile Plans app is launched in the Windows 10 device and retrieves basic functionality information from the Mobile Plans Service.
    * The Mobile Plans app reaches out to the Mobile Plans service to retrieve MO-specific information.
 2. The Mobile Plans app launches the MO Web portal and passes relevant parameters to the MO portal.
-3. The mobile operator requests an eSIM profile from the SM-DP+ server. The eSIM activation code is returned to the *Mobile Plans* mobile operator Web Portal.
+3. The mobile operator requests an eSIM profile from the SM-DP+ server. The eSIM activation code is returned to the Mobile Plans mobile operator web portal.
 4. Once control is returned to the Mobile Plans app on the Windows 10 device, the eSIM activation code is provided to the Windows device.
 5. The Windows 10 device uses the activation code and contacts the SM-DP+ server to retrieve the eSIM profile. The eSIM profile is now installed and activated on the Windows 10 device.
 6. The Windows 10 device is connected to the mobile operator network.
