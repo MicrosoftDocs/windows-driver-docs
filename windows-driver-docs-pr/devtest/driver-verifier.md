@@ -49,7 +49,7 @@ You should only run Driver Verifier on test computers, or on computers that you 
 
 1. Start a **Command Prompt** window by selecting **Run as administrator**, and type **verifier** to open **Driver Verifier Manager**.
 
-2. Select **Create standard settings** (default) and click **Next**.
+2. Select **Create standard settings** (the default task), and click **Next**.
 
    You can also choose **Create custom settings** to select from predefined settings, or to select individual options. For more information, see [Driver Verifier options and rule classes](driver-verifier-options.md) and [Selecting Driver Verifier Options](selecting-driver-verifier-options.md).
 
@@ -116,6 +116,7 @@ For more information about command line options, see [**Driver Verifier Command 
 3.  Restart the computer.
 
 Or type the following command in a Command Prompt window, and then restart the computer.
+
 	```
 	verifier /reset
 	```
@@ -127,6 +128,7 @@ Or type the following command in a Command Prompt window, and then restart the c
 2.  Select **Display existing settings**.
 
 Or type the following command in a Command Prompt window.
+
 	```
 	verifier /querysettings
 	```
