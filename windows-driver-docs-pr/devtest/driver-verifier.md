@@ -26,7 +26,7 @@ Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to det
 
 ## Where can I download Driver Verifier?
 
-You don't need to download Driver Verifier, because it is included with Windows (except for Windows 10 S) in %WinDir%\system32\ as Verifier.exe. Driver Verifier is not distributed separately as a download package.
+You don't need to download Driver Verifier, because it is included with most versions of Windows in %WinDir%\system32\ as Verifier.exe. (Driver Verifier is not included with Windows 10 S.) Driver Verifier is not distributed separately as a download package.
 
 For information about changes in Driver Verifier for Windows 8.1 and previous versions of Windows, see <a href="driver-verifier--what-s-new.md" data-raw-source="[Driver Verifier: What's New](driver-verifier--what-s-new.md)">Driver Verifier: What's New</a>.
 
@@ -40,7 +40,7 @@ Run Driver Verifier throughout development and testing of your driver. More spec
 
 -   For troubleshooting and debugging test failures and computer crashes.
 
--   To monitor behavior when you deploy a driver for testing using the WDK, Visual Studio, and the tests from the [Windows Hardware Lab Kit (Windows HLK)](https://go.microsoft.com/fwlink/p/?linkid=254893) or [Windows Hardware Certification Kit](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8.1). For more information about testing drivers, see [Testing a Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/testing-a-driver).
+-   To monitor behavior when you deploy a driver for testing using the WDK, Visual Studio, and the tests from the [Windows Hardware Lab Kit](https://go.microsoft.com/fwlink/p/?linkid=254893) (Windows HLK) or [Windows Hardware Certification Kit](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8.1). For more information about testing drivers, see [Testing a Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/testing-a-driver).
 
 
 ## How to start Driver Verifier
@@ -84,7 +84,7 @@ You should only run Driver Verifier on test computers, or on computers that you 
    <td align="left"><strong>Select driver names from a list</strong></td>
    <td align="left"><p>In most cases, you will want to specify which drivers to test.</p>
    <p>Selecting all drivers in a device stack allows the <a href="enhanced-i-o-verification.md" data-raw-source="[Enhanced I/O Verification](enhanced-i-o-verification.md)">Enhanced I/O Verification</a> option to track objects and check compliance because an I/O request packet (IRP) is passed between each of the drivers in the stack, which allows for a greater level of detail to be provided when an error is detected.</p>
-   <p>Select a single driver if you are running a test scenario that measures system or driver performance metrics, or if you want to allocate the greatest number of resources available for detecting memory corruption or resource tracking issues (such as deadlocks or mutexs). The <a href="special-pool.md" data-raw-source="[Special Pool](special-pool.md)">Special Pool</a> and <a href="i-o-verification.md" data-raw-source="[I/O Verification](i-o-verification.md)">I/O Verification</a> options are more effective when used on one driver at a time.</p></td>
+   <p>Select a single driver if you are running a test scenario that measures system or driver performance metrics, or if you want to allocate the greatest number of resources available for detecting memory corruption or resource tracking issues (such as deadlocks or mutexes). The <a href="special-pool.md" data-raw-source="[Special Pool](special-pool.md)">Special Pool</a> and <a href="i-o-verification.md" data-raw-source="[I/O Verification](i-o-verification.md)">I/O Verification</a> options are more effective when used on one driver at a time.</p></td>
    </tr>
    </tbody>
    </table>
@@ -116,13 +116,13 @@ For more information about command line options, see [**Driver Verifier Command 
 3.  Restart the computer.
 
 Or type the following command in a Command Prompt window, and then restart the computer.
-```
-verifier /reset
-```
+	```
+	verifier /reset
+	```
 
 **To view Driver Verifier settings**
 
-1.  OStart a **Command Prompt** window by selecting **Run as administrator**, and type **verifier** to open **Driver Verifier Manager**.
+1.  Start a **Command Prompt** window by selecting **Run as administrator**, and type **verifier** to open **Driver Verifier Manager**.
 
 2.  Select **Display existing settings**.
 
@@ -139,9 +139,9 @@ Or type the following command in a Command Prompt window.
 
 Or type the following command in a Command Prompt window.
 
-```
-verifier /query
-```
+	```
+	verifier /query
+	```
 
 
 ## How to debug Driver Verifier violations
@@ -150,7 +150,7 @@ To get the most benefit from Driver Verifier, you should use a kernel debugger a
 
 If Driver Verifier detects a violation, it generates a bug check to stop the computer. This is to provide you with the most information possible for debugging the issue. When you have a kernel debugger connected to a test computer that is running Driver Verifier, and Driver Verifier detects a violation, Windows breaks into the debugger and displays a brief description of the error.
 
-All violoations detected by Driver Verifier result in bug checks. Common bug check codes include the following:
+All violations detected by Driver Verifier result in bug checks. Common bug check codes include the following:
 
 -   [**Bug Check 0xC1: SPECIAL\_POOL\_DETECTED\_MEMORY\_CORRUPTION**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-check-0xc1--special-pool-detected-memory-corruption)
 -   [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation)
@@ -163,9 +163,9 @@ For more information, see [Handling a Bug Check When Driver Verifier is Enabled]
 
 When you start a new debugging session, use the debugger extension command, [**!analyze**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-analyze). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display additional information to help identify the faulting driver, add option **-v** to the command:
 
-```
-kd> !analyze -v
-```
+	```
+	kd> !analyze -v
+	```
 
 In addition to **!analyze**, you can use the following debugger extensions to view information that is specific to Driver Verifier:
 
