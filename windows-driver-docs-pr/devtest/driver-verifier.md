@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # Driver Verifier
 
-Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system. Driver Verifier can subject Windows drivers to a variety of stresses and tests to find improper behavior. You can configure which tests to run, which allows you to put a driver through heavy stress loads or through more streamlined testing. You can also run Driver Verifier on multiple drivers simultaneously, or on one driver at a time. 
+Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system. Driver Verifier can subject Windows drivers to a variety of stresses and tests to find improper behavior. You can configure which tests to run, which allows you to put a driver through heavy stress loads or through more streamlined testing. You can also run Driver Verifier on multiple drivers simultaneously, or on one driver at a time.
 
 > [!Caution]
 > <ul><li>Running Driver Verifier could cause the computer to crash.</li>
@@ -34,7 +34,7 @@ For information about changes in Driver Verifier for Windows 8.1 and previous ve
 
 ## When to use Driver Verifier
 
-Run Driver Verifier throughout development and testing of your driver. More specifically, use Driver Verifier for the following purposes: 
+Run Driver Verifier throughout development and testing of your driver. More specifically, use Driver Verifier for the following purposes:
 
 -   To find problems early in the development cycle, when they are easier and less costly to correct.
 
@@ -94,7 +94,7 @@ You should only run Driver Verifier on test computers, or on computers that you 
 
 
 
->[!Note] 
+>[!Note]
 > You can also run Driver Verifier in a Command Prompt window without starting Driver Verifier Manager. For example, to run Driver Verifier with the standard settings on a driver called *myDriver.sys*, you would use the following command:
 > ```
 > verifier /standard /driver myDriver.sys
@@ -105,6 +105,17 @@ For more information about command line options, see [**Driver Verifier Command 
 
 
 ## How to control Driver Verifier
+
+You can use either Driver Verifier Manager or a command line to control Driver Verifier. To start Driver Verifier Manager, see [How to start Driver Verifier](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/driver-verifier#how-to-start-driver-verifier), earlier in this topic.
+
+For each of the following actions, you can use Driver Verifier Manager or enter a command line.
+
+| Action | Driver Verifier Manager | Command line |
+|--------|-------------------------|--------------|
+| Stop or reset Driver Verifier | Select **Delete existing settings**, click **Finish**, and then restart the computer. | Enter ```verifier /reset```, and then restart the computer. |
+| View settings | Select **Display existing settings**. | Enter ```verifier /querysettings```. |
+| View statistics | Select **Display information about the currently verified drivers**. | Enter ```verifier /query```. |
+
 
 
 **To stop or reset Driver Verifier**
@@ -165,7 +176,7 @@ For more information, see [Handling a Bug Check When Driver Verifier is Enabled]
 
 When you start a new debugging session, use the debugger extension command, [**!analyze**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-analyze). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display additional information to help identify the faulting driver, add option **-v** to the command at the **kd>** prompt: ```!analyze -v```
 
-In addition to **!analyze**, you can add the following debugger extensions at the **kd>** prompt to view information that is specific to Driver Verifier:
+In addition to **!analyze**, you can enter the following debugger extensions at the **kd>** prompt to view information that is specific to Driver Verifier:
 
 -   [**!verifier**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-verifier) dumps captured Driver Verifier statistics. Use **!verifier -?** to display all of the available options.
 
