@@ -117,9 +117,9 @@ For more information about command line options, see [**Driver Verifier Command 
 
 Or type the following command in a Command Prompt window, and then restart the computer.
 
-	```
-	verifier /reset
-	```
+```
+verifier /reset
+```
 
 **To view Driver Verifier settings**
 
@@ -129,9 +129,9 @@ Or type the following command in a Command Prompt window, and then restart the c
 
 Or type the following command in a Command Prompt window.
 
-	```
-	verifier /querysettings
-	```
+```
+verifier /querysettings
+```
 
 **To view Driver Verifier statistics**
 
@@ -141,9 +141,9 @@ Or type the following command in a Command Prompt window.
 
 Or type the following command in a Command Prompt window.
 
-	```
-	verifier /query
-	```
+```
+verifier /query
+```
 
 
 ## How to debug Driver Verifier violations
@@ -163,36 +163,32 @@ All violations detected by Driver Verifier result in bug checks. Common bug chec
 
 For more information, see [Handling a Bug Check When Driver Verifier is Enabled](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/handling-a-bug-check-when-driver-verifier-is-enabled). For tips about debugging Bug Check 0xC4, see [Debugging Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION](debugging-bug-check-0xc4--driver-verifier-detected-violation.md).
 
-When you start a new debugging session, use the debugger extension command, [**!analyze**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-analyze). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display additional information to help identify the faulting driver, add option **-v** to the command:
+When you start a new debugging session, use the debugger extension command, [**!analyze**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-analyze). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display additional information to help identify the faulting driver, add option **-v** to the command at the **kd>** prompt: ```!analyze -v```
 
-	```
-	kd> !analyze -v
-	```
-
-In addition to **!analyze**, you can use the following debugger extensions to view information that is specific to Driver Verifier:
+In addition to **!analyze**, you can add the following debugger extensions at the **kd>** prompt to view information that is specific to Driver Verifier:
 
 -   [**!verifier**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-verifier) dumps captured Driver Verifier statistics. Use **!verifier -?** to display all of the available options.
 
     ```
-    kd> !verifier
+    !verifier
     ```
 
 -   [**!deadlock**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-deadlock) displays information related to locks or objects tracked by Driver Verifier's deadlock detection feature. Use **!deadlock -?** to display all of the available options.
 
     ```
-    kd> !deadlock
+    !deadlock
     ```
 
 -   [**!iovirp**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-iovirp) \[*address*\] displays information related to an IRP tracked by I/O Verifier. For example:
 
     ```
-    kd> !iovirp 947cef68
+    !iovirp 947cef68
     ```
 
 -   [**!ruleinfo**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-ruleinfo) \[*RuleID*\] displays information related to the [DDI compliance checking](ddi-compliance-checking.md) rule that was violated (*RuleID* is always the first argument to the bug check. All rule IDs from DDI compliance checking are in the form 0x200*nn*). For example:
 
     ```
-    kd> !ruleinfo 0x20005
+    !ruleinfo 0x20005
     ```
 
 
