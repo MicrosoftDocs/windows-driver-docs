@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 This section applies only to Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later, and Windows XP with Service Pack 2 (SP2) and later.
 
-The Certified Output Protection Protocol (COPP) device driver interface (DDI) extends DirectX Video Acceleration (VA) to support copy protection of video that is output by various connectors of the graphics adapter. The COPP DDI is an interface between the Video Mixing Renderer ([*VMR*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-video-mixer-renderer--vmr-)) and the video miniport driver. The COPP DDI maps to the existing DirectDraw and DirectX VA DDI. The DDI is not accessible via the **IAMVideoAccelerator** interface. The DDI is accessible to applications via the **IAMCertifiedOutputProtection** interface.
+The Certified Output Protection Protocol (COPP) device driver interface (DDI) extends DirectX Video Acceleration (VA) to support copy protection of video that is output by various connectors of the graphics adapter. The COPP DDI is an interface between the Video Mixing Renderer (*VMR*) and the video miniport driver. The COPP DDI maps to the existing DirectDraw and DirectX VA DDI. The DDI is not accessible via the **IAMVideoAccelerator** interface. The DDI is accessible to applications via the **IAMCertifiedOutputProtection** interface.
 
 For more information about the **IAMCertifiedOutputProtection** and **IAMVideoAccelerator** interfaces, see the latest DirectX Software Development Kit (SDK) documentation.
 

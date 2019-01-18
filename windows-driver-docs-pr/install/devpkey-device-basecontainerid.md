@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_BaseContainerId
 
 
-The DEVPKEY_Device_BaseContainerId device property represents the [*GUID*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-guid) value of the base container identifier (*ID*) .The Windows Plug and Play (PnP) manager assigns this value to the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)).
+The DEVPKEY_Device_BaseContainerId device property represents the *GUID* value of the base container identifier (*ID*) .The Windows Plug and Play (PnP) manager assigns this value to the device node (*devnode*).
 
 <table>
 <colgroup>

@@ -70,7 +70,7 @@ A minidriver might also have to communicate with several class drivers. An examp
 
 ### <span id="Bus_Driver__Generic_"></span><span id="bus_driver__generic_"></span><span id="BUS_DRIVER__GENERIC_"></span>Bus Driver (Generic)
 
-The bus driver (generic) gives minidrivers access to a physical bus. The Microsoft Windows [*hardware abstraction layer (HAL)*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss_hardware_abstraction_layer__hal_) is sometimes referred to as the *system bus driver* because it provides access to the system bus. For more information, see [Bus Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540704).
+The bus driver (generic) gives minidrivers access to a physical bus. The Microsoft Windows *hardware abstraction layer (HAL)* is sometimes referred to as the *system bus driver* because it provides access to the system bus. For more information, see [Bus Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540704).
 
 ### <span id="Class_Driver__Generic_"></span><span id="class_driver__generic_"></span><span id="CLASS_DRIVER__GENERIC_"></span>Class Driver (Generic)
 
@@ -110,7 +110,7 @@ The port class driver (WDM audio) serves as a container for a collection of port
 
 An adapter driver manages an adapter card that might contain several different hardware functions. As shown in the preceding figure, the adapter driver contains a miniport driver to manage each type of hardware function. Similarly, the port class driver is designed to provide support to adapter cards with multiple hardware functions. The port class driver provides a port driver for each of the well defined function types that it supports. The adapter driver binds its miniport driver for a particular function to the corresponding port driver for that function type. The port driver for each function handles communication with the WDM audio clients that use the function. The miniport driver contains all of the hardware-specific code for managing that function.
 
-The port class driver (WDM audio) primarily functions as a container for multiple subdevices that are associated with a single device object. Bus drivers create a single [*physical device object (PDO)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss_physical_device_object__pdo_) for each Plug and Play (PnP) node they enumerate.
+The port class driver (WDM audio) primarily functions as a container for multiple subdevices that are associated with a single device object. Bus drivers create a single *physical device object (PDO)* for each Plug and Play (PnP) node they enumerate.
 
 In the case of an audio adapter, a single PnP node frequently contains multiple audio functions. To expose the various functions associated with a node as distinct devices typically requires writing a bus driver for the adapter. The bus driver enumerates the hardware functions and creates corresponding PDOs. In this scenario, one or more function-specific drivers need to bind to the PDOs and negotiate with the bus driver for access to shared resources on the adapter.
 

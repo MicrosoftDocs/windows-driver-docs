@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 A **BitReg** directive references one or more INF-writer-defined sections used to set or clear bits within an existing [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-type value entry in the registry. However, this directive is very rarely used in device/driver INF files.
 
-```cpp
+```ini
 [DDInstall] | 
 [DDInstall.HW] | 
 [DDInstall.CoInstallers] | 
@@ -47,7 +47,7 @@ A **BitReg** directive can be specified under any of the sections shown in the f
 
 Each named section referenced by a **BitReg** directive has the following form:
 
-```cpp
+```ini
 [bit-registry-section]
 reg-root, [subkey], value-entry-name, [flags], byte-mask, byte-to-modify
 reg-root, [subkey], value-entry-name, [flags], byte-mask, byte-to-modify
@@ -79,8 +79,8 @@ Relative root − that is, keys that are specified by using this abbreviation ar
 
 | INF Section Containing BitReg Directive                                    | Registry Key Referenced by HKR                                                        |
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| INF [***DDInstall***](inf-ddinstall-section.md) section                   | The device's [*software key*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-key) |
-| INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section             | The device's [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key) |
+| INF ***DDInstall*** |
+| INF ***DDInstall*.HW** |
 | INF [***DDInstall*.Service**](inf-ddinstall-services-section.md)s section | The **Services** key                                                                  |
 
  
@@ -131,7 +131,7 @@ Examples
 
 The following example shows a bit-registry section for a fictional application.
 
-```cpp
+```ini
 [AppX_BitReg]
 ; set first bit of byte 0 in ProgramData value entry
 HKLM,Software\AppX,ProgramData,1,0x01,0 

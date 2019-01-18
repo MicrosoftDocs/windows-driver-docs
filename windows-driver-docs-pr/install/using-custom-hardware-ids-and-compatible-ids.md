@@ -17,7 +17,7 @@ enumerator\enumerator-specific-device-ID
 
 Where:
 
--   *Enumerator* identifies the [*enumerator*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-enumerator) (bus driver) that detects and reports child devices on a bus to the PnP manager.
+-   *Enumerator* identifies the *enumerator* (bus driver) that detects and reports child devices on a bus to the PnP manager.
 
 -   *enumerator-specific-device-ID* specifies an enumerator-specific device identifier.
 

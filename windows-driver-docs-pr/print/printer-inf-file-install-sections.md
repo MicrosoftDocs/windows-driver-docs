@@ -36,7 +36,7 @@ Microsoft's printer INF file, Ntprint.inf, contains the following [**INF DDInsta
 
 -   \[UNIDRV\_BIDI.OEM\]
 
-    Installs the Microsoft Universal Printer Driver and Pjlmon.dll, the [*language monitor*](https://msdn.microsoft.com/library/windows/hardware/ff556305#wdkgloss-language-monitor) that supports Printer Job Language (PJL) and provides bidirectional communication for PJL printers.
+    Installs the Microsoft Universal Printer Driver and Pjlmon.dll, the *language monitor* that supports Printer Job Language (PJL) and provides bidirectional communication for PJL printers.
 
 -   \[TTFSUB.OEM\]
 

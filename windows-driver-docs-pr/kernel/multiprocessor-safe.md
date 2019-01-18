@@ -37,7 +37,7 @@ These policies prevent a driver routine that usually runs at a lower IRQL but cu
 
 The IRQL that is assigned to a spin lock is generally that of the highest-IRQL routine that can acquire the spin lock.
 
-For example, a lowest-level driver's ISR frequently shares a state area with the driver's DPC routine. The DPC routine calls a driver-supplied [*critical section*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-critical-section) routine to access the shared area. The spin lock that protects the shared area has an IRQL equal to the DIRQL at which the device interrupts. As long as the critical-section routine holds the spin lock and accesses the shared area at DIRQL, the ISR cannot be run in either a uniprocessor or SMP machine.
+For example, a lowest-level driver's ISR frequently shares a state area with the driver's DPC routine. The DPC routine calls a driver-supplied *critical section* routine to access the shared area. The spin lock that protects the shared area has an IRQL equal to the DIRQL at which the device interrupts. As long as the critical-section routine holds the spin lock and accesses the shared area at DIRQL, the ISR cannot be run in either a uniprocessor or SMP machine.
 
 -   The ISR cannot be run in a uniprocessor machine because the device interrupt is masked, as described in [Always Preemptible and Always Interruptible](always-preemptible-and-always-interruptible.md).
 

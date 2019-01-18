@@ -36,9 +36,9 @@ The following diagram provides a (somewhat simplified) view of control flow amon
 
 ![diagram illustrating a view of control flow among the local printer provider's components when an application creates a print job](images/contflow.png)
 
-As the diagram shows, an application creates a print job by calling the Graphics Driver Interface (GDI). Regardless of whether the print job's initial output format is EMF, the local print provider's job creation API creates a spool file. Later, when the job is scheduled, the spool file is read and, if the format is [*enhanced metafile (EMF)*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-enhanced-metafile--emf-), the EMF print processor sends the job back to GDI for conversion to RAW format, with the help of a [printer graphics DLL](printer-graphics-dll.md). The converted data stream can then be sent back through the local print provider to the printer (without being respooled).
+As the diagram shows, an application creates a print job by calling the Graphics Driver Interface (GDI). Regardless of whether the print job's initial output format is EMF, the local print provider's job creation API creates a spool file. Later, when the job is scheduled, the spool file is read and, if the format is *enhanced metafile (EMF)*, the EMF print processor sends the job back to GDI for conversion to RAW format, with the help of a [printer graphics DLL](printer-graphics-dll.md). The converted data stream can then be sent back through the local print provider to the printer (without being respooled).
 
-A vendor can create [*partial print providers*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-partial-print-provider) that work in conjunction with the local print provider to support custom network configurations.
+A vendor can create *partial print providers* that work in conjunction with the local print provider to support custom network configurations.
 
  
 

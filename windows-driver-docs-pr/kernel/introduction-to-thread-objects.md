@@ -23,15 +23,15 @@ A thread object:
 
 -   Has the following properties at any given moment:
 
-    -   [*dispatch state*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-dispatch-state)
+    -   *dispatch state*
 
-    -   [*priority*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-priority)
+    -   *priority*
 
-    -   [*context*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-context)
+    -   *context*
 
     -   Execution mode (kernel or user)
 
-    -   [*affinity*](https://msdn.microsoft.com/library/windows/hardware/ff556270#wdkgloss-affinity)
+    -   *affinity*
 
 -   Is "owned by" a process object but can attach itself to another process's address space.
 

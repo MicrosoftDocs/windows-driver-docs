@@ -28,7 +28,7 @@ ms.localizationpriority: medium
 
 A *pipe* is a set of AVStream filters that share a common [allocator](avstream-allocators.md).
 
-The following illustration shows a pipe composed of three AVStream filters: a source filter, an [*inplace*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-inplace) transform filter, and a renderer filter.
+The following illustration shows a pipe composed of three AVStream filters: a source filter, an *inplace* transform filter, and a renderer filter.
 
 ![diagram illustrating a pipe using all avstream filters](images/pipe1.png)
 
@@ -62,7 +62,7 @@ AVStream now calls [**IoCompleteRequest**](https://msdn.microsoft.com/library/wi
 
 Consider a final example in which the frame source is in user-mode. (Alternatively, the final frame destination could be in user-mode.)
 
-In the illustration below, a kernel-mode [*non-inplace*](https://msdn.microsoft.com/library/windows/hardware/ff556313#wdkgloss-non-inplace) transform filter receives frames from a user-mode DirectShow filter and sends the transformed frame to a kernel-mode AVStream renderer:
+In the illustration below, a kernel-mode *non-inplace* transform filter receives frames from a user-mode DirectShow filter and sends the transformed frame to a kernel-mode AVStream renderer:
 
 ![diagram illustrating frames received from a user-mode source and sent to an avstream renderer](images/pipe3.png)
 

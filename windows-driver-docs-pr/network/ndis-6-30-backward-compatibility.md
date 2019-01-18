@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # NDIS 6.30 Backward Compatibility
 
 
-NDIS 6.30 adds backward compatibility features to those that apply to NDIS 6.20 and NDIS 6.0 drivers. For information about NDIS 6.20 compatibility issues, see [NDIS 6.20 Backward Compatibility](ndis-6-20-backward-compatibility.md). For information about NDIS 6.0 compatibility issues, see [NDIS 6.0 Backward Compatibility](ndis-6-0-backward-compatibility.md).
+NDIS 6.30 adds backward compatibility features to those that apply to NDIS 6.20 and NDIS 6.0 drivers. For information about NDIS 6.20 compatibility issues, see [NDIS 6.20 Backward Compatibility](ndis-6-20-backward-compatibility.md). For information about NDIS 6.0 compatibility issues, see [NDIS 6.0 Backward Compatibility](https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-backward-compatibility).
 
 For more information about NDIS 6.30 features, see [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md).
 

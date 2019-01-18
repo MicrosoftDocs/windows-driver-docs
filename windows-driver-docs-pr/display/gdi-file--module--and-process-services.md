@@ -89,7 +89,7 @@ GDI provides a variety of services for file, module, and process manipulation.
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564971" data-raw-source="[&lt;strong&gt;EngMapFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564971)"><strong>EngMapFile</strong></a></p></td>
-<td align="left"><p>Creates or opens a file and maps it into <a href="https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-system-space" data-raw-source="[&lt;em&gt;system space&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-system-space)"><em>system space</em></a>.</p></td>
+<td align="left"><p>Creates or opens a file and maps it into <a href="https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-system-space" data-raw-source="&lt;em&gt;system space&lt;/em&gt;"><em>system space</em></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564972" data-raw-source="[&lt;strong&gt;EngMapFontFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564972)"><strong>EngMapFontFile</strong></a></p></td>
@@ -113,7 +113,7 @@ GDI provides a variety of services for file, module, and process manipulation.
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565437" data-raw-source="[&lt;strong&gt;EngUnmapFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565437)"><strong>EngUnmapFile</strong></a></p></td>
-<td align="left"><p>Unmaps the view of a file from <a href="https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-system-space" data-raw-source="[&lt;em&gt;system space&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-system-space)"><em>system space</em></a>.</p></td>
+<td align="left"><p>Unmaps the view of a file from <a href="https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-system-space" data-raw-source="&lt;em&gt;system space&lt;/em&gt;"><em>system space</em></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565441" data-raw-source="[&lt;strong&gt;EngUnmapFontFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565441)"><strong>EngUnmapFontFile</strong></a></p></td>

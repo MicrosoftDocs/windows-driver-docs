@@ -69,7 +69,7 @@ If a system-supplied driver handles your device, you do not have to supply a ful
 
 -   Include an [**INF SourceDisksFiles section**](inf-sourcedisksfiles-section.md) that lists the icon files and a corresponding [**INF CopyFiles directive**](inf-copyfiles-directive.md) that copies them to the system.
 
-Windows saves the **Icons** and **NoMediaIcons** value entries under the **Device Parameters** key under the device's [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key). The following example specifies the registry location, value-entry-type, and value of the **Icons** and **NoMediaIcons** value entries for the device whose device instance ID is USB\\Vid_0000&Pid_0000\\059B003112010E93.
+Windows saves the **Icons** and **NoMediaIcons** value entries under the **Device Parameters** key under the device's *hardware key*. The following example specifies the registry location, value-entry-type, and value of the **Icons** and **NoMediaIcons** value entries for the device whose device instance ID is USB\\Vid_0000&Pid_0000\\059B003112010E93.
 
 **HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\**<em>USB\\Vid_0000&Pid_0000\\059B003112010E93</em>\\**Device Parameters**
 

@@ -38,13 +38,13 @@ This event is set whenever the amount of free nonpaged pool falls below a system
 For Windows Vista and later versions of Windows, drivers can also use the following additional standard event objects:
 
 <a href="" id="-kernelobjects-lowcommitcondition"></a>**\\KernelObjects\\LowCommitCondition**  
-This event is set when the operating system's [*commit charge*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-commit-charge) is low, relative to the [*current commit limit*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-current-commit-limit). In other words, memory usage is low and a lot of space is available in physical memory or paging files.
+This event is set when the operating system's *commit charge* is low, relative to the *current commit limit*. In other words, memory usage is low and a lot of space is available in physical memory or paging files.
 
 <a href="" id="-kernelobjects-highcommitcondition"></a>**\\KernelObjects\\HighCommitCondition**  
 This event is set when the operating system's commit charge is high, relative to the current commit limit. In other words, memory usage is high and very little space is available in physical memory or paging files, but the operating system might be able to increase the size of its paging files.
 
 <a href="" id="-kernelobjects-maximumcommitcondition"></a>**\\KernelObjects\\MaximumCommitCondition**  
-This event is set when the operating system's commit charge is near the [*maximum commit limit*](https://msdn.microsoft.com/library/windows/hardware/ff556308#wdkgloss-maximum-commit-limit). In other words, memory usage is very high, very little space is available in physical memory or paging files, and the operating system cannot increase the size of its paging files. (A system administrator can always increase the size or number of paging files, without restarting the computer, if sufficient storage resources exist.)
+This event is set when the operating system's commit charge is near the *maximum commit limit*. In other words, memory usage is very high, very little space is available in physical memory or paging files, and the operating system cannot increase the size of its paging files. (A system administrator can always increase the size or number of paging files, without restarting the computer, if sufficient storage resources exist.)
 
 Each of these events are notification events. They remain set as long as the triggering condition remains true.
 

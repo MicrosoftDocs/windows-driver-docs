@@ -2,7 +2,7 @@
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
 ms.assetid: DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB
-ms.date: 09/24/2018
+ms.date: 01/18/2019
 ms.localizationpriority: medium
 ---
 
@@ -366,7 +366,7 @@ The following table shows the code and name of each bug check code.
 | 0x00000188 | [**CLUSTER\_CSVFS\_LIVEDUMP**](bug-check-0x188--cluster-csvfs-livedump.md)                                                                        |
 | 0x00000189 | [**BAD\_OBJECT\_HEADER**](bug-check-0x189--bad-object-header.md)                                                                                  |
 | 0x0000018B | [**SECURE\_KERNEL\_ERROR**](bug-check-0x18b--secure-kernel-error.md)                                                                              |
-| 0x0000018C | [**HYPERGUARD_VIOLATION**](bug-check-0x18c--hyperguard-violation.md)                                                                              |   
+| 0x0000018C | [**HYPERGUARD\_VIOLATION**](bug-check-0x18c--hyperguard-violation.md)                                                                              |   
 | 0x0000018D | [**SECURE\_FAULT\_UNHANDLED**](bug-check-0x18d--secure-fault-unhandled.md)                                                                        | 
 | 0x0000018E | [**KERNEL\_PARTITION\_REFERENCE\_VIOLATION**](bug-check-0x18e--kernel-partition-reference-violation.md)                                           |
 | 0x00000190 | [**WIN32K\_CRITICAL\_FAILURE\_LIVEDUMP**](bug-check-0x190--win32k-critical-failure-livedump.md)                                                   |

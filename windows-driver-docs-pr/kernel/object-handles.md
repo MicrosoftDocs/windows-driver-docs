@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Drivers and user-mode components access most system-defined objects through *handles*. Handles are represented by the HANDLE opaque data type. (Note that handles are not used to access [device objects](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-object) or [driver objects](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-object).)
+Drivers and user-mode components access most system-defined objects through *handles*. Handles are represented by the HANDLE opaque data type. (Note that handles are not used to access device objects or driver objects.)
 
 For most object types, the kernel-mode routine that creates or opens the object provides a handle to the caller. The caller then uses that handle in subsequent operations on the object.
 

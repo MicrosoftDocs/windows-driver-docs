@@ -56,7 +56,7 @@ LIST (RED, GREEN, BLUE)
 </tr>
 <tr class="odd">
 <td><p></em><strong>DrvBPP</strong></p></td>
-<td><p>Numeric value indicating the number of bits per pixel that Unidrv should use for its bitmap rendering buffer. The bitmap format is a Windows <a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-" data-raw-source="[&lt;em&gt;device-independent bitmap (DIB)&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-)"><em>device-independent bitmap (DIB)</em></a>, and valid values are 1, 4, 8, 16, 24, or 32.</p></td>
+<td><p>Numeric value indicating the number of bits per pixel that Unidrv should use for its bitmap rendering buffer. The bitmap format is a Windows <a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-" data-raw-source="&lt;em&gt;device-independent bitmap (DIB)&lt;/em&gt;"><em>device-independent bitmap (DIB)</em></a>, and valid values are 1, 4, 8, 16, 24, or 32.</p></td>
 <td><p>Optional. If not specified, the default value is 1. (For color printers, a value of 1 is referred to as &quot;planar mode&quot;.)</p>
 <p>Windows DIBs always use one color plane.</p></td>
 </tr>

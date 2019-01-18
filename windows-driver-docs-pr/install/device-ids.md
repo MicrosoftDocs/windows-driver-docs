@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Device ID
 
 
-A device ID is a string reported by a device’s [*enumerator*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-enumerator). A device has only one device ID. A device ID has the same format as a [hardware ID](hardware-ids.md).
+A device ID is a string reported by a device’s *enumerator*. A device has only one device ID. A device ID has the same format as a [hardware ID](hardware-ids.md).
 
 
 

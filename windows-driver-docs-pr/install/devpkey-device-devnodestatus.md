@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_DevNodeStatus
 
 
-The DEVPKEY_Device_DevNodeStatus device property represents the status of a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)).
+The DEVPKEY_Device_DevNodeStatus device property represents the status of a device node (*devnode*).
 
 <table>
 <colgroup>

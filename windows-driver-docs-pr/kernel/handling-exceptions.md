@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-The operating system uses [structured exception handling](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-structured-exception-handling) to signal certain kinds of errors. A routine called by a driver can raise an exception that the driver must handle.
+The operating system uses structured exception handling to signal certain kinds of errors. A routine called by a driver can raise an exception that the driver must handle.
 
 The system traps the following general kinds of exceptions:
 
