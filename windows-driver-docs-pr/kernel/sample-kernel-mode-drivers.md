@@ -14,7 +14,7 @@ The WDK provides various sample kernel-mode drivers. After you have installed th
 [**toaster**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastpkg)  
 Provides sample code for a set of drivers that conform to the [Windows Driver Model](windows-driver-model.md) (WDM). This sample also includes sample installation software.
 
-[KMDF filter driver for a HID device (ioctl sample)](https://github.com/Microsoft/Windows-driver-samples/tree/master/hid/firefly)  
+[**KMDF filter driver for a HID device** (ioctl sample)](https://github.com/Microsoft/Windows-driver-samples/tree/master/hid/firefly)  
 Demonstrates how drivers should support I/O control codes.
 
 [**event**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/event)  
@@ -26,7 +26,7 @@ Demonstrates the use of [cancel-safe IRP queues](cancel-safe-irp-queues.md).
 [**tracedrv**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver)  
 Shows how to use [WPP software tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204).
 
-Other subdirectories of [the \\src directory](https://github.com/Microsoft/Windows-driver-samples) contain sample code for kernel-mode drivers for various types of hardware.
+Other subdirectories of the \\src directory contain sample code for kernel-mode drivers for various types of hardware.
 
 ## See also
 
