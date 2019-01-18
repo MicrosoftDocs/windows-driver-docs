@@ -110,12 +110,54 @@ You can use either Driver Verifier Manager or a command line to control Driver V
 
 For each of the following actions, you can use Driver Verifier Manager or enter a command line.
 
-| Action | Driver Verifier Manager | Command line |
+<!--
+| Action | in Driver Verifier Manager | at a command prompt |
 |--------|-------------------------|--------------|
-| Stop or reset Driver Verifier | Select **Delete existing settings**, click **Finish**, and then restart the computer. | Enter ```verifier /reset```, and then restart the computer. |
-| View settings | Select **Display existing settings**. | Enter ```verifier /querysettings```. |
-| View statistics | Select **Display information about the currently verified drivers**. | Enter ```verifier /query```. |
+| Stop or reset Driver Verifier | Select **Delete existing settings**, click **Finish**, and then restart the computer. | Enter: ```verifier /reset``` <br/>Restart the computer. |
+| View settings | Select **Display existing settings**. | Enter: ```verifier /querysettings``` |
+| View statistics | Select **Display information about the currently verified drivers**. | Enter: ```verifier /query``` |
+-->
 
+
+**To stop or reset Driver Verifier**
+
+1. In **Driver Verifier Manager**, select **Delete existing settings**, and then click **Finish**.
+
+  or
+
+  Enter the following command at a command prompt:
+
+  ```
+  verifier /reset
+  ```
+
+2. Restart the computer.
+
+
+**To view Driver Verifier statistics**
+
+- In **Driver Verifier Manager**, select **Display information about the currently verified drivers**, and then click **Next**. Continuing to click **Next** displays additional information.
+
+  or
+
+  Enter the following command at a command prompt:
+
+  ```
+  verifier /query
+  ```
+
+
+**To view Driver Verifier settings**
+
+- In **Driver Verifier Manager**, select **Display existing settings**, and then click **Next**.
+
+  or
+
+  Enter the following command at a command prompt:
+
+  ```
+  verifier /querysettings
+  ```
 
 
 **To stop or reset Driver Verifier**
@@ -132,6 +174,7 @@ Or type the following command in a Command Prompt window, and then restart the c
 verifier /reset
 ```
 
+
 **To view Driver Verifier settings**
 
 1.  Start a **Command Prompt** window by selecting **Run as administrator**, and type **verifier** to open **Driver Verifier Manager**.
@@ -143,6 +186,7 @@ Or type the following command in a Command Prompt window.
 ```
 verifier /querysettings
 ```
+
 
 **To view Driver Verifier statistics**
 
@@ -174,7 +218,7 @@ All violations detected by Driver Verifier result in bug checks. Common bug chec
 
 For more information, see [Handling a Bug Check When Driver Verifier is Enabled](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/handling-a-bug-check-when-driver-verifier-is-enabled). For tips about debugging Bug Check 0xC4, see [Debugging Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION](debugging-bug-check-0xc4--driver-verifier-detected-violation.md).
 
-When you start a new debugging session, use the debugger extension command, [**!analyze**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-analyze). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display additional information to help identify the faulting driver, add option **-v** to the command at the **kd>** prompt: ```!analyze -v```
+When you start a new debugging session, use the debugger extension command, [**!analyze**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-analyze). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display *additional* information, to help identify the faulting driver, add option **-v** to the command at the **kd>** prompt: ```!analyze -v```
 
 In addition to **!analyze**, you can enter the following debugger extensions at the **kd>** prompt to view information that is specific to Driver Verifier:
 
