@@ -15,7 +15,7 @@ keywords:
 - migration DLL WDK networking
 - vendor-supplied installation files WDK networking
 - files WDK network component installs
-ms.date: 12/03/2018
+ms.date: 01/16/2019
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +47,9 @@ For detailed information about creating INF files for network components, see [C
 
 ## INetCfg
 
-Currently, NDIS protocol and filter drivers are installed by calling into [INetCfg](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547694%28v%3dvs.85%29). Driver writers can either call into this interface programmatically or they can use [netcfg.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/netcfg), which calls `INetCfg` on their behalf.
+Currently, NDIS protocol and filter drivers are installed by calling into the `INetCfg` family of [Network Configuration Interfaces](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559080(v%3dvs.85)). For example, to install or remove network components, a driver writer calls into the [INetCfgClassSetup](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547709%28v%3dvs.85%29) interface. 
+
+Driver writers can either call into this interface programmatically or they can use [netcfg.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/netcfg), which calls `INetCfg` on their behalf.
 
 For more information about protocol driver installation, see [NDIS protocol driver installation](ndis-protocol-driver-installation.md).
 
