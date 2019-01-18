@@ -1,9 +1,9 @@
 ---
 title: Bug Check 0x12B FAULTY_HARDWARE_CORRUPTED_PAGE
-description: The FAULTY_HARDWARE_CORRUPTED_PAGE bug check has a value of 0x0000012B. This bug check indicates either a memory manager or store manager memory error has occurred.
+description: The FAULTY_HARDWARE_CORRUPTED_PAGE bug check has a value of 0x0000012B. This bug check indicates that the Windows memory manager detected corruption, and the corruption could only have been caused by a component accessing memory using physical addressing. 
 ms.assetid: caa57d76-946f-4394-bfcf-1dbf3813a55b
 keywords: ["Bug Check 0x12B FAULTY_HARDWARE_CORRUPTED_PAGE", "FAULTY_HARDWARE_CORRUPTED_PAGE"]
-ms.date: 01/17/2019
+ms.date: 01/18/2019
 topic_type:
 - apiref
 api_name:
@@ -15,17 +15,20 @@ ms.localizationpriority: medium
 
 # Bug Check 0x12B: FAULTY\_HARDWARE\_CORRUPTED\_PAGE
 
-The FAULTY\_HARDWARE\_CORRUPTED\_PAGE bug check has a value of 0x0000012B. This bug check indicates that either a memory manager or store manager memory error has occurred.
+The FAULTY\_HARDWARE\_CORRUPTED\_PAGE bug check has a value of 0x0000012B. This bug check indicates that the Windows memory manager detected corruption, and the corruption could only have been caused by a component accessing memory using physical addressing.  
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## FAULTY\_HARDWARE\_CORRUPTED\_PAGE Parameters
 
-There are two different types of FAULTY\_HARDWARE\_CORRUPTED\_PAGE bug checks with two different sets of parameters. One can happen with memory manager and one is for store manager.
+There are two scenarios where the Memory Manager will raise FAULTY_HARDWARE_CORRUPTED_PAGE bug checks, with two different sets of parameters. 
 
-If parameters 3 and 4 are both zero, this bug check is caused by memory manager. If parameters 3 and 4 are non-zero, the bug check is caused by store manager. 
+If parameters 3 and 4 are both zero, the bug check indicates that Memory Manager detected a single-bit error on a page that was expected to be zeroed.
 
-### Memory Manager Parameters
+If parameters 3 and 4 are non-zero, the bug check is raised by the Compressed Store Manager due to a failure to decompress a page due to physical memory corruption.
+
+
+### Memory Manager Page Not Zero Error Parameters 
 
 This bug check indicates that a single-bit error was found in this page. This is a hardware memory error.
 
@@ -61,7 +64,7 @@ This bug check indicates that a single-bit error was found in this page. This is
 </table>
 
 
-### Store Manager Parameters 
+### Compressed Store Manager Error Parameters 
 
  This bug check indicates that a store manager memory error has occurred. It may be an authentication failure, a CRC failure, or a decompression failure.
 
@@ -95,6 +98,38 @@ This bug check indicates that a single-bit error was found in this page. This is
 </tr>
 </tbody>
 </table>
+
+
+## Cause
+-----
+
+This bugcheck can only occur by memory corruption due to physical memory access. The causes for physical memory corruption include:
+
+1.	Defective RAM hardware
+2.	A driver or device incorrectly modifying physical pages via an incorrect DMA operation or associated MDL.
+3.	Corruption caused by a hardware device or firmware corrupting memory, such as firmware illegally modifying physical pages across a power transition.
+
+NOTE:  Compressed Store Manager can detect if the corruption was caused by a single-bit error, and automatically corrects this condition without raising a bug check. This bugcheck is reported by the Compressed Store Manager if the corruption was not caused by a single bit error.
+
+For more information on Windows memory manager and memory compression, see [Windows Internals 7th Edition Part 1](https://docs.microsoft.com/en-us/sysinternals/learn/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
+
+
+## Resolution
+-----
+
+**Windows Memory Diagnostics Tool**
+
+To investigate if this is defective RAM hardware, run the Windows Memory Diagnostics tool, to try and isolate the physical memory as a cause. In the control panel search box, type Memory, and then click *Diagnose your computer's memory problems*.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
+
+
+## See Also
+----------
+
+[Bug Check Code Reference](bug-check-code-reference2.md)
+
+[Windows Kernel-Mode Memory Manager](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/windows-kernel-mode-memory-manager)
+
+[Channel 9 video on memory compression](https://channel9.msdn.com/Blogs/Seth-Juarez/Memory-Compression-in-Windows-10-RTM)
 
  
 
