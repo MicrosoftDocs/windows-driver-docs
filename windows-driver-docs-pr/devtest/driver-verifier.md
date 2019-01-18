@@ -218,7 +218,11 @@ All violations detected by Driver Verifier result in bug checks. Common bug chec
 
 For more information, see [Handling a Bug Check When Driver Verifier is Enabled](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/handling-a-bug-check-when-driver-verifier-is-enabled). For tips about debugging Bug Check 0xC4, see [Debugging Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION](debugging-bug-check-0xc4--driver-verifier-detected-violation.md).
 
-When you start a new debugging session, use the debugger extension command, [**!analyze**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-analyze). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display *additional* information, to help identify the faulting driver, add option **-v** to the command at the **kd>** prompt: ```!analyze -v```
+When you start a new debugging session, use the debugger extension command, [**!analyze**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-analyze). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display *additional* information, to help identify the faulting driver, add option **-v** to the command at the **kd>** prompt:
+
+```
+!analyze -v
+```
 
 In addition to **!analyze**, you can enter the following debugger extensions at the **kd>** prompt to view information that is specific to Driver Verifier:
 
