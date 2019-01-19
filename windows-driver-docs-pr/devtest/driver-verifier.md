@@ -53,7 +53,7 @@ You should only run Driver Verifier on test computers, or on computers that you 
 
    You can also choose **Create custom settings** to select from predefined settings, or to select individual options. For more information, see [Driver Verifier options and rule classes](driver-verifier-options.md) and [Selecting Driver Verifier Options](selecting-driver-verifier-options.md).
 
-3. Select a driver or drivers to verify.
+3. Under **Select what drivers to verify**, choose one of the selection schemes described in the following table.
 
    <table>
    <colgroup>
@@ -90,7 +90,9 @@ You should only run Driver Verifier on test computers, or on computers that you 
    </table>
 
 
-4. Click **Finish** and reboot the computer.
+4. If you chose **Select driver names from a list**, click **Next** and then select specific drivers.
+
+5. Click **Finish**, and then restart the computer.
 
 
 
@@ -99,8 +101,8 @@ You should only run Driver Verifier on test computers, or on computers that you 
 > ```
 > verifier /standard /driver myDriver.sys
 > ```
-
-For more information about command line options, see [**Driver Verifier Command Syntax**](verifier-command-line.md).
+>
+> For more information about command line options, see [**Driver Verifier Command Syntax**](verifier-command-line.md).
 
 
 
@@ -109,14 +111,6 @@ For more information about command line options, see [**Driver Verifier Command 
 You can use either Driver Verifier Manager or a command line to control Driver Verifier. To start Driver Verifier Manager, see [How to start Driver Verifier](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/driver-verifier#how-to-start-driver-verifier), earlier in this topic.
 
 For each of the following actions, you can use Driver Verifier Manager or enter a command line.
-
-<!--
-| Action | in Driver Verifier Manager | at a command prompt |
-|--------|-------------------------|--------------|
-| Stop or reset Driver Verifier | Select **Delete existing settings**, click **Finish**, and then restart the computer. | Enter: ```verifier /reset``` <br/>Restart the computer. |
-| View settings | Select **Display existing settings**. | Enter: ```verifier /querysettings``` |
-| View statistics | Select **Display information about the currently verified drivers**. | Enter: ```verifier /query``` |
--->
 
 
 **To stop or reset Driver Verifier**
@@ -158,47 +152,6 @@ For each of the following actions, you can use Driver Verifier Manager or enter 
   ```
   verifier /querysettings
   ```
-
-
-**To stop or reset Driver Verifier**
-
-1.  Start a **Command Prompt** window by selecting **Run as administrator**, and type **verifier** to open **Driver Verifier Manager**.
-
-2.  Select **Delete existing settings**, and then click **Finish**.
-
-3.  Restart the computer.
-
-Or type the following command in a Command Prompt window, and then restart the computer.
-
-```
-verifier /reset
-```
-
-
-**To view Driver Verifier settings**
-
-1.  Start a **Command Prompt** window by selecting **Run as administrator**, and type **verifier** to open **Driver Verifier Manager**.
-
-2.  Select **Display existing settings**.
-
-Or type the following command in a Command Prompt window.
-
-```
-verifier /querysettings
-```
-
-
-**To view Driver Verifier statistics**
-
-1.  Start a **Command Prompt** window by selecting **Run as administrator**, and type **verifier** to open **Driver Verifier Manager**.
-
-2.  Select **Display information about the currently verified drivers**.
-
-Or type the following command in a Command Prompt window.
-
-```
-verifier /query
-```
 
 
 ## How to debug Driver Verifier violations
