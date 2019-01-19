@@ -123,13 +123,13 @@ For each of the following actions, you can use Driver Verifier Manager or enter 
 
 1. In **Driver Verifier Manager**, select **Delete existing settings**, and then click **Finish**.
 
-  or
+    or
 
-  Enter the following command at a command prompt:
+    Enter the following command at a command prompt:
 
-  ```
-  verifier /reset
-  ```
+    ```
+    verifier /reset
+    ```
 
 2. Restart the computer.
 
