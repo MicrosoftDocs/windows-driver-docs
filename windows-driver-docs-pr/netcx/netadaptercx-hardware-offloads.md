@@ -77,7 +77,7 @@ MyAdapterSetOffloadCapabilities(
 
 ## Updating hardware offloads
 
-If the TCP/IP stack or an overlying protocol driver requests a change in active capabilities of the network adapter, NetAdapterCx invokes the client driver's *EVT_NET_ADAPTER_OFFLOAD_SET_XxX* callback function that was previously registered during adapter initialization. In this function, the system supplies updated capabilities in the NETOFFLOAD obbject, which the client driver can query and use to update their offload capabilities.
+If the TCP/IP stack or an overlying protocol driver requests a change in active capabilities of the network adapter, NetAdapterCx invokes the client driver's *EVT_NET_ADAPTER_OFFLOAD_SET_XxX* callback function that was previously registered during adapter initialization. In this function, the system supplies updated capabilities in the NETOFFLOAD obbject, which the client driver can query and use to update its offload capabilities.
 
 The following example shows how a client driver might update its checksum offload capabilities:
 
