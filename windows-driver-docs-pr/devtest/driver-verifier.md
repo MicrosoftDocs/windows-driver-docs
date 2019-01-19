@@ -197,7 +197,7 @@ In addition to **!analyze**, you can enter the following debugger extensions at 
     !iovirp 947cef68
     ```
 
--   [**!ruleinfo**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-ruleinfo) \[*RuleID*\] displays information related to the [DDI compliance checking](ddi-compliance-checking.md) rule that was violated. ()*RuleID* is always the first argument to the bug check.) All rule IDs from DDI compliance checking are in the form 0x200*nn*. For example:
+-   [**!ruleinfo**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-ruleinfo) \[*RuleID*\] displays information related to the [DDI compliance checking](ddi-compliance-checking.md) rule that was violated. (*RuleID* is always the first argument to the bug check.) All rule IDs from DDI compliance checking are in the form 0x200*nn*. For example:
 
     ```
     !ruleinfo 0x20005
