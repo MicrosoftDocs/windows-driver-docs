@@ -2213,8 +2213,8 @@
       href: bug-check-0x114---video-shadow-driver-fatal-error.md
     - name: "Bug Check 0x115:  AGP_INTERNAL"
       href: bug-check-0x115---agp-internal.md
-    - name: "Bug Check 0x116:  VIDEO_TDR_ERROR"
-      href: bug-check-0x116---video-tdr-error.md
+    - name: "Bug Check 0x116:  VIDEO_TDR_FAILURE"
+      href: bug-check-0x116---video-tdr-failure.md
     - name: "Bug Check 0x117:  VIDEO_TDR_TIMEOUT_DETECTED"
       href: bug-check-0x117---video-tdr-timeout-detected.md
     - name: "Bug Check 0x119:  VIDEO_SCHEDULER_INTERNAL_ERROR"
