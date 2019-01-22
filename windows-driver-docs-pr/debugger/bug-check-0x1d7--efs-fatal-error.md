@@ -2,7 +2,7 @@
 title: Bug Check 0x1D7 EFS_FATAL_ERROR
 description: The EFS_FATAL_ERROR bug check has a value of 0x000001D7. It indicates that an EFS error condition has occured such that cannot be handled without data loss or data corruption.
 keywords: ["Bug Check 0x1D7 EFS_FATAL_ERROR", "EFS_FATAL_ERROR"]
-ms.date: 01/11/2019
+ms.date: 01/22/2019
 topic_type:
 - apiref
 api_name:
@@ -24,10 +24,10 @@ The EFS\_FATAL\_ERROR bug check has a value of 0x000001D7. It indicates that an 
 
 |Parameter|Description|
 |-------- |---------- |
-|1| Reserved. |
-|2| Reserved. |
-|3| Reserved. |
-|4| Reserved. |
+|1| Bug Check Subclass:  **01** - Pre-offloading Failure|
+|2| NTSTATUS return code of the operation.|
+|3| The current IRP at the time of failure.|
+|4| The Memory Context at the time of failure. |
 
 ## Cause
 -----
