@@ -24,10 +24,10 @@ The EFS\_FATAL\_ERROR bug check has a value of 0x000001D7. It indicates that an 
 
 |Parameter|Description|
 |-------- |---------- |
-|1| Bug Check Subclass:  **01** - Pre-offloading Failure|
+|1| Bug Check Subclass:  **01** - Pre-offloading failure.|
 |2| NTSTATUS return code of the operation.|
 |3| The current IRP at the time of failure.|
-|4| The Memory Context at the time of failure. |
+|4| File encryption context at the time of failure.|
 
 ## Cause
 -----
