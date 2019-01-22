@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## <span id="Windbg_Preview"></span><span id="windbg_preview"></span><span id="WINDBG_PREVIEW"></span>Windbg Preview
 
-For the lastest news on Windows Debugging tools, see [WinDbg Preview - What's New](windbg-what-is-new-preview).
+For the lastest news on Windows Debugging tools, see [WinDbg Preview - What's New](windbg-what-is-new-preview.md).
 
 
 ## <span id="Windows_10__version_1703"></span><span id="windows_10__version_1703"></span><span id="WINDOWS_10__VERSION_1703"></span>Windows 10, version 1703
