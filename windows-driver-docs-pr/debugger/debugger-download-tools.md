@@ -2,7 +2,7 @@
 title: Download Debugging Tools for Windows - WinDbg
 description: This page provides downloads for the Windows Debugging tools, such as WinDbg.
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download"]
-ms.date: 06/12/2018
+ms.date: 01/22/2019
 ms.localizationpriority: medium
 ---
 
@@ -34,6 +34,12 @@ Learn more about WinDbg and other debuggers in [Debugging Tools for Windows (Win
 >
 
 -------------------
+
+
+## Looking for the debugging tools for earlier version of Windows?
+
+To download the debugger tools for previous versions of Windows, download the Windows SDK from the 
+[Windows SDK Archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive).  In the installation wizard, select *Debugging Tools for Windows*, and deselect all other components. 
 
 
 ## Looking for related downloads?
