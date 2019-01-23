@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0xF0 STORAGE_MINIPORT_ERROR
-description: The STORAGE_MINIPORT_ERROR bug check has a value of 0x00000F0. It indicates that an EFS error condition has occured such that cannot be handled without data loss or data corruption.
+description: The STORAGE_MINIPORT_ERROR bug check has a value of 0x00000F0. It indicates that a storage system storport Miniport driver failed to complete a SRB request.
 keywords: ["Bug Check 0xF0 STORAGE_MINIPORT_ERROR", "STORAGE_MINIPORT_ERROR"]
 ms.date: 01/22/2019
 topic_type:
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # Bug Check 0xF0: STORAGE\_MINIPORT\_ERROR
 
-The STORAGE\_MINIPORT\_ERROR bug check has a value of 0x00000F0. It indicates that an EFS error condition has occured such that cannot be handled without data loss or data corruption.
+The STORAGE\_MINIPORT\_ERROR bug check has a value of 0x00000F0. It indicates that a storage system storport Miniport driver failed to complete a SRB request.
 
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
@@ -46,27 +46,31 @@ The STORAGE\_MINIPORT\_ERROR bug check has a value of 0x00000F0. It indicates th
     2 - Driver name unicode string address
     3 - SRB address
     4 - Timeout of the request
+
+4: Miniport failed to complete a request for a crypto operation.
+    2 - Driver name unicode string address
+    3 - The STOR_CRYPTO_OPERATION_TYPE for this failure, typically StorCryptoOperationInsertKey.
+    4 - Reserved    
 ```
 
 
 ## Cause
 -----
 
-TBD.
+A storage system storport Miniport driver failed to complete a SRB request.
 
 ## Resolution
 -----
 
-The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. 
 
-Examine parameter 2 the NTSTATUS field to try and determine why NT_SUCCESS was not returned. This is the expected and only allowed value for file systems that call crypto pre-offloading.
-
-Use the debugger [!IRP](-irp.md) command to investigate parameter 3 for a possible conflicting IRP code or other issues.
-
+The driver name returned in parameter 2 should point to the offending driver.
 
 
 ## See Also
 ----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
+
+[Storport's Interface with Storport Miniport Drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-s-interface-with-storport-miniport-drivers)
 
