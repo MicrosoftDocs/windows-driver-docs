@@ -4,7 +4,7 @@ description: Porting NDIS miniport drivers to NetAdapterCx
 ms.assetid: F5C798C6-B746-43CB-BF63-DBA7DD0975ED
 keywords:
 - Porting miniport drivers to the Network Adapter Class Extension, porting to the Network Adapter WDF Class Extension, porting NDIS 6.x to NetAdapterCx
-ms.date: 06/05/2017
+ms.date: 01/22/2019
 ms.localizationpriority: medium
 ---
 
@@ -166,7 +166,7 @@ Most `NdisXxx` functions can be replaced with a WDF equivalent. In general, you 
 
 For a list of function equivalents, see [NDIS-WDF function equivalents](ndis-wdf-function-equivalents.md).
 
-For functions with no WDF equivalent, the client can call [**NetAdapterWdmGetNdisHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterwdmgetndishandle) to retrieve an NDIS_HANDLE for use with NDIS functions. For example:
+For functions with no WDF equivalent, the client can call **NetAdapterWdmGetNdisHandle** to retrieve an NDIS_HANDLE for use with NDIS functions. For example:
 
 ```C++
 NdisGetRssProcessorInformation(NetAdapterWdmGetNdisHandle(NetAdapter), . . .);
