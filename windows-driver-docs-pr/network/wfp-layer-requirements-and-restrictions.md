@@ -33,7 +33,7 @@ IP packet fragments, which are indicated only for incoming paths, are indicated 
 
 For example, if a single IP packet is divided into four fragments, the indications for this packet occur as follows:
 
-1. One indication for each "original" IP packet (4 classifications, or calls to the driver's classify function)
+1. One indication for each "original" IP packet (4 classifications, or calls to the callout's classify function)
 2. One indication for each "original fragment" (4 classifications)
 3. One indication for the final reassembled IP packet (1 classification)
 
