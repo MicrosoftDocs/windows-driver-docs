@@ -49,7 +49,7 @@ The STORAGE\_MINIPORT\_ERROR bug check has a value of 0x00000F0. It indicates th
 
 4: Miniport failed to complete a request for a crypto operation.
     2 - Driver name unicode string address
-    3 - The STOR_CRYPTO_OPERATION_TYPE for this failure, typically StorCryptoOperationInsertKey.
+    3 - The STOR_CRYPTO_OPERATION_TYPE for this failure, typically StorCryptoOperationInsertKey
     4 - Reserved    
 ```
 
