@@ -2147,6 +2147,8 @@
       href: bug-check-0xed--unmountable-boot-volume.md
     - name: "Bug Check 0xEF: CRITICAL_PROCESS_DIED"
       href: bug-check-0xef--critical-process-died.md
+    - name: "Bug Check 0xF0: STORAGE_MINIPORT_ERROR"
+      href: bug-check-0xf0--storage-miniport-error.md
     - name: "Bug Check 0xF1: SCSI_VERIFIER_DETECTED_VIOLATION"
       href: bug-check-0xf1--scsi-verifier-detected-violation.md
     - name: "Bug Check 0xF2: HARDWARE_INTERRUPT_STORM"

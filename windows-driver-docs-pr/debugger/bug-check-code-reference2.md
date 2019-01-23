@@ -233,6 +233,7 @@ The following table shows the code and name of each bug check code.
 | 0x000000EC | [**SESSION\_HAS\_VALID\_SPECIAL\_POOL\_ON\_EXIT**](bug-check-0xec--session-has-valid-special-pool-on-exit.md)                                     |
 | 0x000000ED | [**UNMOUNTABLE\_BOOT\_VOLUME**](bug-check-0xed--unmountable-boot-volume.md)                                                                       |
 | 0x000000EF | [**CRITICAL\_PROCESS\_DIED**](bug-check-0xef--critical-process-died.md)                                                                           |
+| 0x000000F0 | [**STORAGE\_MINIPORT\_ERROR**](bug-check-0xf0--storage-miniport-error.md)                                                                         |
 | 0x000000F1 | [**SCSI\_VERIFIER\_DETECTED\_VIOLATION**](bug-check-0xf1--scsi-verifier-detected-violation.md)                                                    |
 | 0x000000F2 | [**HARDWARE\_INTERRUPT\_STORM**](bug-check-0xf2--hardware-interrupt-storm.md)                                                                     |
 | 0x000000F3 | [**DISORDERLY\_SHUTDOWN**](bug-check-0xf3--disorderly-shutdown.md)                                                                                |
