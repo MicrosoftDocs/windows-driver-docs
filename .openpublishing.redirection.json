@@ -1028,6 +1028,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/display/enabling-debug-output-for-the-video-memory-manager.md",
+      "redirect_URL": "windows-hardware/drivers/display/video-memory-management-and-gpu-scheduling",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/display/d3dddi-check-multiplane-overlay-support-plane-info.md",
       "redirect_URL": "/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-d3dddi_check_multiplane_overlay_support_plane_info",
       "redirect_document_id": true
