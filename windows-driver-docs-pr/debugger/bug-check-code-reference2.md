@@ -266,7 +266,7 @@ The following table shows the code and name of each bug check code.
 | 0x00000113 | [**VIDEO\_DXGKRNL\_FATAL\_ERROR**](bug-check-0x113---video-dxgkrnl-fatal-error.md)                                                                |
 | 0x00000114 | [**VIDEO\_SHADOW\_DRIVER\_FATAL\_ERROR**](bug-check-0x114---video-shadow-driver-fatal-error.md)                                                   |
 | 0x00000115 | [**AGP\_INTERNAL**](bug-check-0x115---agp-internal.md)                                                                                            |
-| 0x00000116 | [**VIDEO\_TDR\_ERROR**](bug-check-0x116---video-tdr-error.md)                                                                                     |
+| 0x00000116 | [**VIDEO\_TDR\_FAILURE**](bug-check-0x116---video-tdr-failure.md)                                                                                     |
 | 0x00000117 | [**VIDEO\_TDR\_TIMEOUT\_DETECTED**](bug-check-0x117---video-tdr-timeout-detected.md)                                                              |
 | 0x00000119 | [**VIDEO\_SCHEDULER\_INTERNAL\_ERROR**](bug-check-0x119---video-scheduler-internal-error.md)                                                      |
 | 0x0000011A | [**EM\_INITIALIZATION\_FAILURE**](bug-check-0x11a---em-initialization-failure.md)                                                                 |
