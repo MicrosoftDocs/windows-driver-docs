@@ -6,7 +6,7 @@ keywords:
 - processing packets WDK Windows Filtering Platform
 - packet processing WDK Windows Filtering Platform
 - layers for packet processing WDK Windows Filtering Platform
-ms.date: 04/20/2017
+ms.date: 01/22/2019
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +29,21 @@ A forward injected packet will not be presented to any WFP layer. The injected p
 You can use the following command to view the current "Group Forwarded Fragments" setting for the system: **netsh interface {ipv4|ipv6} show global**.
 
 <a href="" id="network-layer-------"></a>**Network Layer**   
-IP packet fragments, which are indicated only for incoming paths, are indicated three times at this layer--first as an IP packet, again as an IP fragment, and a third time as part of a reassembled IP packet. WFP sets the **FWP\_CONDITION\_FLAG\_IS\_FRAGMENT** flag when it indicates fragments to network layer callouts.
+IP packet fragments, which are indicated only for incoming paths, are indicated at three points at this layer: first as an IP packet, again as an IP fragment, and a third time as part of a reassembled IP packet. WFP sets the **FWP\_CONDITION\_FLAG\_IS\_FRAGMENT** flag when it indicates fragments to network layer callouts. 
 
-When adding filtering conditions, **FWP\_MATCH\_FLAGS\_NONE\_SET** can be used together with the **FWP\_CONDITION\_FLAG\_IS\_FRAGMENT** flag to avoid the second indication. If the callout has to inspect only full packets (those that have not been fragmented and reassembled), it has to parse the IP header to avoid processing fragments that are indicated as IP packets. Alternatively, the callout can inspect packets at the transport layer.
+For example, if a single IP packet is divided into four fragments, the indications for this packet occur as follows:
+
+1. One indication for each "original" IP packet (4 classifications, or calls to the driver's classify function)
+2. One indication for each "original fragment" (4 classifications)
+3. One indication for the final reassembled IP packet (1 classification)
+
+When adding filtering conditions, **FWP\_MATCH\_FLAGS\_NONE\_SET** can be used together with the **FWP\_CONDITION\_FLAG\_IS\_FRAGMENT** flag to avoid the second indication(s). These condition flags are meant to prevent classifications the callout driver does not care about. If the callout has to inspect only full packets (those that have not been fragmented and reassembled), it has to parse the IP header to avoid processing fragments that are indicated as IP packets. A callout might do the following steps to achieve this:
+
+1. Skip the first indication(s) by checking if the More Fragments (MF) flag is set and/or the Fragment Offset field is not 0.
+2. Write a filter that allows all classifications where **FWP_CONDITION_FLAG_IS_FRAGMENT** is set.
+3. Perform whatever processing is needed on the reassembled packet.
+
+ Alternatively, the callout can inspect packets at the transport layer.
 
 <a href="" id="transport-layer-and-ale-------"></a>**Transport Layer and ALE**   
 To be able to coexist with IPsec processing, callouts that inspect packets at the incoming transport layer must also register at the ALE receive and accept layer. Such a callout can inspect/modify most of the traffic at the transport layer, but it must also permit packets that are assigned to the ALE receive/accept layer. Such a callout must also inspect or modify the packets from the ALE layer. WFP sets the **FWPS\_METADATA\_FIELD\_ALE\_CLASSIFY\_REQUIRED** metadata flag when it indicates to the transport layer those packets that require ALE inspection. IPsec processing is deferred until those packets that create the initial "connection" and those that are required to re-authorize the connection reach the ALE layer.
