@@ -48,7 +48,7 @@ The following screen shot shows the result of using the BCDEdit command-line too
 When the BCDEdit option for test-signing is enabled, Windows does the following:
 
 -   Displays a watermark with the text "Test Mode" in all four corners of the desktop, to remind users the system has test-signing enabled.
-    **Note**  Starting with Windows 7, Windows displays this watermark only in the lower left-hand corner of the desktop.
+    **Note**  Starting with Windows 7, Windows displays this watermark only in the lower right-hand corner of the desktop.
 
      
 
