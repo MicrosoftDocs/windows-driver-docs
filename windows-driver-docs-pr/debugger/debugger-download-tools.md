@@ -24,14 +24,14 @@ WinDbg Preview is a new version of WinDbg with more modern visuals, faster windo
 
 If you just need the Debugging Tools for Windows 10, and not Windows Driver Kit (WDK) for Windows 10 or Visual Studio 2017, you can install the debugging tools as a standalone component from the Windows SDK. In the installation wizard, select **Debugging Tools for Windows**, and deselect all other components.
 
- - Get Debugging Tools for Windows (WinDbg) from the SDK: [Windows 10 SDK)](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+ - Get Debugging Tools for Windows (WinDbg) from the SDK: [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
  - Learn more about WinDbg and other debuggers in [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://docs.microsoft.com/windows-hardware/drivers/debugger/).
 
 
 > [!TIP]
-> If the Windows SDK is already installed, navigate to **Apps &amp; features** in **Settings**, select **Windows Software Development Kit**, and then click **Modify** to change the installation to add **Debugging Tools for Windows**.
->
+> If the Windows SDK is already installed, open **Settings**, navigate to **Apps &amp; features**, select **Windows Software Development Kit**, and then click **Modify** to change the installation to add **Debugging Tools for Windows**.
+
 
 -------------------
 
