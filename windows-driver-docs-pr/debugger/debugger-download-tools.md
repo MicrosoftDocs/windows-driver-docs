@@ -39,7 +39,7 @@ If you just need the Debugging Tools for Windows 10, and not Windows Driver Kit 
 ## Looking for the debugging tools for earlier version of Windows?
 
 To download the debugger tools for previous versions of Windows, download the Windows SDK from the
-[Windows SDK and emulator archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive).  In the installation wizard, select **Debugging Tools for Windows**, and deselect all other components.
+[Windows SDK and emulator archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive). In the installation wizard, select **Debugging Tools for Windows**, and deselect all other components.
 
 
 ## Looking for related downloads?
