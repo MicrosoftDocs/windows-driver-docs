@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Bug Check 0xB: NO\_EXCEPTION\_HANDLING\_SUPPORT
 
 
-The NO\_EXCEPTION\_HANDLING\_SUPPORT bug check has a value of 0x0000000B.
+The NO\_EXCEPTION\_HANDLING\_SUPPORT bug check has a value of 0x0000000B. It indicates that exception handling was not supported.
 
 This bug check appears very infrequently.
 
