@@ -1,8 +1,8 @@
 ---
 title: Bug Check 0xF0 STORAGE_MINIPORT_ERROR
-description: The STORAGE_MINIPORT_ERROR bug check has a value of 0x00000F0. It indicates that a storage system storport Miniport driver failed to complete a SRB request.
+description: The STORAGE_MINIPORT_ERROR bug check has a value of 0x00000F0. It indicates that a storage Miniport driver failed to complete a SRB request.
 keywords: ["Bug Check 0xF0 STORAGE_MINIPORT_ERROR", "STORAGE_MINIPORT_ERROR"]
-ms.date: 01/22/2019
+ms.date: 01/24/2019
 topic_type:
 - apiref
 api_name:
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # Bug Check 0xF0: STORAGE\_MINIPORT\_ERROR
 
-The STORAGE\_MINIPORT\_ERROR bug check has a value of 0x00000F0. It indicates that a storage system storport Miniport driver failed to complete a SRB request.
+The STORAGE\_MINIPORT\_ERROR bug check has a value of 0x00000F0. It indicates that a storage Miniport driver failed to complete a SRB request.
 
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
@@ -47,7 +47,7 @@ The STORAGE\_MINIPORT\_ERROR bug check has a value of 0x00000F0. It indicates th
     3 - SRB address
     4 - Timeout of the request
 
-4: Miniport failed to complete a request for a crypto operation.
+4: Miniport failed to complete a request for a crypto operation. This can occur if it is trying to enable an encryption key on an ICE (Inline Crypto Engine) enabled UFS host. 
     2 - Driver name unicode string address
     3 - The STOR_CRYPTO_OPERATION_TYPE for this failure, typically StorCryptoOperationInsertKey
     4 - Reserved    
@@ -57,7 +57,8 @@ The STORAGE\_MINIPORT\_ERROR bug check has a value of 0x00000F0. It indicates th
 ## Cause
 -----
 
-A storage system storport Miniport driver failed to complete a SRB request.
+A bug in the storage Miniport driver kept a SRB request from completing. See the error code values listed above for the specific type of failure.
+
 
 ## Resolution
 -----
