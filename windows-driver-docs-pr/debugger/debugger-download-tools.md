@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Download Debugging Tools for Windows
 
-The Windows Debugger (WinDbg) can be used to debug kernel-mode and user-mode code, to analyze crash dumps, and to examine the CPU registers while the system executes code.
+The Windows Debugger (WinDbg) can be used to debug kernel-mode and user-mode code, to analyze crash dumps, and to examine the CPU registers while the code executes.
 
 
 ## ![Small windbg preview logo](images/windbgx-preview-logo.png) Download WinDbg Preview
