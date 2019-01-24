@@ -4,7 +4,7 @@ description: Transmit and receive queues
 ms.assetid: 4BF61CDF-4B62-47EB-936A-7DE81D62678A
 keywords:
 - NetAdapterCx transmit and receive queues, NetCx transmit and receive queues
-ms.date: 01/19/2019
+ms.date: 01/24/2019
 ms.localizationpriority: medium
 ---
 
@@ -233,7 +233,8 @@ For example:
 VOID
 MyEvtRxQueueSetNotificationEnabled(
     _In_ NETRXQUEUE RxQueue,
-    _In_ BOOLEAN NotificationEnabled)
+    _In_ BOOLEAN NotificationEnabled
+    )
 {
     // optional: retrieve queue's WDF Context
     MY_RX_QUEUE_CONTEXT *rxContext = GetRxQueueContext(RxQueue);
@@ -245,7 +246,8 @@ MyEvtRxQueueSetNotificationEnabled(
 VOID
 MyEvtRxInterruptDpc(
     _In_ WDFINTERRUPT Interrupt,
-    _In_ WDFOBJECT AssociatedObject)
+    _In_ WDFOBJECT AssociatedObject
+    )
 {
     MY_INTERRUPT_CONTEXT *interruptContext = GetInterruptContext(Interrupt);
 
@@ -261,7 +263,8 @@ UsbEvtReaderCompletionRoutine(
     _In_ WDFUSBPIPE Pipe,
     _In_ WDFMEMORY Buffer,
     _In_ size_t NumBytesTransferred,
-    _In_ WDFCONTEXT Context)
+    _In_ WDFCONTEXT Context
+    )
 {
     UNREFERENCED_PARAMETER(Pipe);
 
@@ -282,6 +285,5 @@ UsbEvtReaderCompletionRoutine(
     {
         NetRxQueueNotifyMoreReceivedPacketsAvailable(pRcbPool->RxQueue);
     }
-
 }
 ```

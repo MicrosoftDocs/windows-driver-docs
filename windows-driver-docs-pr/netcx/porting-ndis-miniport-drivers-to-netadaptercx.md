@@ -166,12 +166,6 @@ Most `NdisXxx` functions can be replaced with a WDF equivalent. In general, you 
 
 For a list of function equivalents, see [NDIS-WDF function equivalents](ndis-wdf-function-equivalents.md).
 
-For functions with no WDF equivalent, the client can call **NetAdapterWdmGetNdisHandle** to retrieve an NDIS_HANDLE for use with NDIS functions. For example:
-
-```C++
-NdisGetRssProcessorInformation(NetAdapterWdmGetNdisHandle(NetAdapter), . . .);
-```
-
 ## Debugging
 
 See [Debugging a NetAdapterCx client driver](debugging-a-netadaptercx-client-driver.md).
