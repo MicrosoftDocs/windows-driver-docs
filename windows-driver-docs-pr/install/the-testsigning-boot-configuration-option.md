@@ -11,15 +11,15 @@ ms.localizationpriority: medium
 
 TESTSIGNING, a boot configuration option, determines whether Windows Vista and later versions of Windows will load any type of test-signed kernel-mode code. You configure this option by using the boot configuration data editor, BCDEdit.exe. Loading of test-signed code is not enabled by default, and you must have Administrator rights to enable this option.
 
->[!Note]
->For 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing policy requires that all kernel-mode code have a digital signature. However, in most cases, an unsigned driver can be installed and loaded on 32-bit versions of Windows Vista and later versions of Windows. For more information, see [Driver Signing Policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) for Windows Vista and later versions of Windows.
+> [!Note]
+> For 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing policy requires that all kernel-mode code have a digital signature. However, in most cases, an unsigned driver can be installed and loaded on 32-bit versions of Windows Vista and later versions of Windows. For more information, see [Driver Signing Policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) for Windows Vista and later versions of Windows.
 
 
 ## Administrator rights required
 
 To use BCDEdit, you must be a member of the Administrators group on the system and run the command from an elevated command prompt. To open an elevated Command Prompt window, create a desktop shortcut to **Cmd.exe**, right-click the **Cmd.exe** shortcut, and select **Run as administrator**.
 
-> [!Warning] 
+> [!Warning]
 > Administrative rights are required to use BCDEdit to modify boot configuration data. Changing some boot entry options by using **BCDEdit /set** could render your computer inoperable. As an alternative, use System Configuration utility (MSConfig.exe) to change boot settings.
 
 
