@@ -19,14 +19,16 @@ TESTSIGNING, a boot configuration option, determines whether Windows Vista and l
 
 To use BCDEdit, you must be a member of the Administrators group on the system and run the command from an elevated command prompt. To open an elevated Command Prompt window, create a desktop shortcut to **Cmd.exe**, right-click the **Cmd.exe** shortcut, and select **Run as administrator**.
 
->[!Warning] > Administrative rights are required to use BCDEdit to modify boot configuration data. Changing some boot entry options by using **BCDEdit /set** could render your computer inoperable. As an alternative, use System Configuration utility (MSConfig.exe) to change boot settings.
+>[!Warning] 
+> Administrative rights are required to use BCDEdit to modify boot configuration data. Changing some boot entry options by using **BCDEdit /set** could render your computer inoperable. As an alternative, use System Configuration utility (MSConfig.exe) to change boot settings.
 
 
 ## Enable or disable use of test-signed code
 
 The loading of test-signed code is enabled or disabled by using BCDedit.exe. After you change the TESTSIGNING boot configuration option, restart the computer for the change to take effect.
 
->[!Note] > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
+>[!Note]
+> Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
 To enable test-signing, use the following BCDEdit command line:
 
@@ -50,6 +52,7 @@ The following screen shot shows the result of using the BCDEdit command line to 
 When use of test-signed code is enabled, Windows does the following:
 
 -   Displays a watermark with the text "Test Mode" in all four corners of the desktop, to remind users that the system has test-signing enabled.
-  >[!Note] > Starting with Windows 7, Windows displays this watermark only in the lower left-hand corner of the desktop.
+  >[!Note] 
+  > Starting with Windows 7, Windows displays this watermark only in the lower left-hand corner of the desktop.
 
 -   The operating system loader and the kernel load drivers that are signed by any certificate. The certificate validation is not required to chain up to a trusted root certification authority. However, each driver image file must have a digital signature.
