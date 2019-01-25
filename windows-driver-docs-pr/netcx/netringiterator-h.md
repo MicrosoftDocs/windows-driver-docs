@@ -36,7 +36,7 @@ Netringiterator.h contains the following programming interfaces:
 | [NetRingGetPostFragments](netringgetpostfragments.md) | The NetRingGetPostFragments method gets a fragment iterator for the current post subsection of a fragment ring. |
 | [NetRingGetDrainFragments](netringgetdrainfragments.md) | The NetRingGetDrainFragments method gets a fragment iterator for the current drain subsection of a fragment ring. |
 | [NetRingGetAllFragments](netringgetallfragments.md) | The NetRingGetAllFragments method gets a fragment iterator for the entire range in a fragment ring that a client driver owns. |
-| [NetFragmentIteratorGetFragment](netfragmentiteratorgetfragment.md) | The NetRingIteratorGetFragment method gets the NET_FRAGMENT structure at a fragment iterator's current Index in the fragment ring. |
+| [NetFragmentIteratorGetFragment](netfragmentiteratorgetfragment.md) | The NetFragmentIteratorGetFragment method gets the NET_FRAGMENT structure at a fragment iterator's current Index in the fragment ring. |
 | [NetFragmentIteratorGetIndex](netfragmentiteratorgetindex.md) | The NetFragmentIteratorGetIndex method gets the current Index of a fragment iterator in the fragment ring. |
 | [NetFragmentIteratorHasAny](netfragmentiteratorhasany.md) | The NetFragmentIteratorHasAny method determines whether a fragment iterator iterator has any valid elements to process in the fragment ring. |
 | [NetFragmentIteratorGetCount](netfragmentiteratorgetcount.md) | The NetFragmentIteratorGetCount method gets the count of fragments that a client driver owns in the fragment ring. |
