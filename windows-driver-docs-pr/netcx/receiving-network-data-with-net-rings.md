@@ -4,13 +4,15 @@ description: This topic describes how NetAdapterCx client drivers use net rings 
 ms.assetid: 78D202E2-4123-4F63-9B86-48400C2CCC38
 keywords:
 - NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
-ms.date: 01/11/2019
+ms.date: 01/24/2019
 ms.localizationpriority: medium
 ---
 
 # Receiving network data with net rings
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+NetAdapterCx client drivers receive network data when the framework invokes their [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback function for a receive queue. During this callback, client drivers indicate receives by draining received fragments and packets to the OS, then post new buffers to hardware.
 
 ## Receive (Rx) post and drain operation overview
 

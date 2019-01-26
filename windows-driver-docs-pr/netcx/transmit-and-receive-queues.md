@@ -51,7 +51,7 @@ NTSTATUS
 EvtAdapterCreateTxQueue(
     _In_    NETADAPTER          Adapter,
     _Inout_ NETTXQUEUE_INIT *   TxQueueInit
-    )
+)
 {
     NTSTATUS status = STATUS_SUCCESS;
 
@@ -116,7 +116,7 @@ NTSTATUS
 EvtAdapterCreateRxQueue(
     _In_ NETADAPTER NetAdapter,
     _Inout_ PNETRXQUEUE_INIT RxQueueInit
-    )
+)
 {
     NTSTATUS status = STATUS_SUCCESS;
 
@@ -159,6 +159,7 @@ EvtAdapterCreateRxQueue(
     queueContext->ChecksumExtensionOffset = NetRxQueueGetPacketExtensionOffset(rxQueue, &extension);
 
     return status;
+}
 ```
 
 ## Polling model
@@ -175,7 +176,7 @@ The sequence of a polling operation on a packet queue is as follows:
 2. The client driver programs the packets to hardware.
 3. The client driver returns the completed packets to the OS.
 
-Polling operations occur within the client driver's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback function. Each packet queue in a client driver is backed by underlying data structures called *net rings*, which contain or link to the actual network data buffers in system memory. During *EvtPacketQueueAdvance*, client drivers use the *net ring iterator interface* to carry out operations on the net rings, transferring ownership of the buffers between their hardware and the OS as data is transmitted or received.
+Polling operations occur within the client driver's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback function. Each packet queue in a client driver is backed by underlying data structures called *net rings*, which contain or link to the actual network data buffers in system memory. During *EvtPacketQueueAdvance*, client drivers carry out send and receive operations on the net rings by using *net ring iterators*, transferring buffer ownership between hardware and the OS as data is transmitted or received.
 
 For more information about net rings and net ring iterators, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
@@ -202,7 +203,7 @@ VOID
 MyEvtTxQueueSetNotificationEnabled(
     _In_ NETPACKETQUEUE TxQueue,
     _In_ BOOLEAN NotificationEnabled
-    )
+)
 {
     // Optional: retrieve queue's WDF context
     MY_TX_QUEUE_CONTEXT *txContext = GetTxQueueContext(TxQueue);
@@ -234,7 +235,7 @@ VOID
 MyEvtRxQueueSetNotificationEnabled(
     _In_ NETRXQUEUE RxQueue,
     _In_ BOOLEAN NotificationEnabled
-    )
+)
 {
     // optional: retrieve queue's WDF Context
     MY_RX_QUEUE_CONTEXT *rxContext = GetRxQueueContext(RxQueue);
@@ -264,7 +265,7 @@ UsbEvtReaderCompletionRoutine(
     _In_ WDFMEMORY Buffer,
     _In_ size_t NumBytesTransferred,
     _In_ WDFCONTEXT Context
-    )
+)
 {
     UNREFERENCED_PARAMETER(Pipe);
 
@@ -287,3 +288,11 @@ UsbEvtReaderCompletionRoutine(
     }
 }
 ```
+
+## Canceling packet queues
+
+When the OS stops the data path, it begins by invoking the client driver's [*EvtPacketQueueCancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_cancel) callback function. This callback is where client drivers perform any processing needed before the framework deletes the packet queues. Canceling for a transmit queue is optional and depends on whether the hardware supports in-flight transmit cancellation, but canceling for a receive queue is required. 
+
+During *EvtPacketQueueCancel*, drivers use net ring iterators to return packets to the OS as needed. For code examples of transmit queue and receive queue cancellation, see [Canceling network data with net rings](canceling-network-data-with-net-rings.md).
+
+After calling the driver's *EvtPacketQueueCancel* callback, the framework continues to poll the driver's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback until all packets and buffers have been returned to the OS.

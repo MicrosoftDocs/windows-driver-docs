@@ -34,7 +34,7 @@ Returns a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) that b
 
 ## Remarks
 
-Client drivers typically call **NetRingGetAllFragments** to begin performing operations on all fragments that they own in a fragment ring. This might include processing a batch of receives that span all available fragments in the ring, or draining the ring during data path cancelation.
+Client drivers typically call **NetRingGetAllFragments** to begin performing operations on all fragments that they own in a fragment ring. This might include processing a batch of receives that span all available fragments in the ring, or draining the ring during data path cancellation.
 
 For a code example of using this method, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 

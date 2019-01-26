@@ -4,13 +4,15 @@ description: This topic describes how NetAdapterCx client drivers use net rings 
 ms.assetid: 2F3DA1A5-D0C1-4928-80B2-AF41F949FF14
 keywords:
 - NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
-ms.date: 01/11/2019
+ms.date: 01/24/2019
 ms.localizationpriority: medium
 ---
 
 # Sending network data with net rings
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+NetAdapterCx client drivers send network data when the framework invokes their [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback function for a transmit queue. During this callback, client drivers post buffers from the queue's fragment ring to hardware, then drain completed packets and fragments back to the OS.
 
 ## Transmit (Tx) post and drain operation overview
 

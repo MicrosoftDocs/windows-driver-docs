@@ -42,6 +42,8 @@
         href: sending-network-data-with-net-rings.md
       - name: "Receiving network data with net rings"
         href: receiving-network-data-with-net-rings.md
+      - name: "Canceling network data with net rings"
+        href: canceling-network-data-with-net-rings.md
   - name: "NetAdapterCx receive side scaling (RSS)"
     href: netadaptercx-receive-side-scaling-rss-.md
   - name: "Configuring power management"
