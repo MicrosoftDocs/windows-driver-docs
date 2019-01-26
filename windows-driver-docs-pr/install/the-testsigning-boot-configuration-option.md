@@ -17,7 +17,7 @@ TESTSIGNING, a boot configuration option, determines whether Windows Vista and l
 
 ## Administrator rights required
 
-To use BCDEdit, you must be a member of the Administrators group on the system and run the command from an elevated command prompt. To open an elevated Command Prompt window, create a desktop shortcut to **Cmd.exe**, right-click the **Cmd.exe** shortcut, and select **Run as administrator**.
+To use BCDEdit, you must be a member of the Administrators group on the system and run the command from an elevated command prompt. To open an elevated Command Prompt window, type **cmd** into the search box in the Windows taskbar, right-click **Command Prompt** in the search results, and then select **Run as administrator**.
 
 > [!Warning]
 > Administrative rights are required to use BCDEdit to modify boot configuration data. Changing some boot entry options by using **BCDEdit /set** could render your computer inoperable. As an alternative, use System Configuration utility (MSConfig.exe) to change boot settings.
@@ -25,7 +25,7 @@ To use BCDEdit, you must be a member of the Administrators group on the system a
 
 ## Enable or disable use of test-signed code
 
-Use BCDEdit to enable or disable the loading of test-signed code. For a change to take effect, whether enabling or disabling the option, you must restart the computer after changing the configuration.
+Run BCDEdit command lines to enable or disable the loading of test-signed code. For a change to take effect, whether enabling or disabling the option, you must restart the computer after changing the configuration.
 
 > [!Note]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
