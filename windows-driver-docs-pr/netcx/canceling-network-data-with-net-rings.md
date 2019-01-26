@@ -50,7 +50,7 @@ In your *EvtPacketQueueCancel* callback function for a receive queue, you must c
 To return packets, you should first attempt to indicate any receives that might have been indicated while the receive path was being disabled, then set all packets to be ignored and return all fragments to the OS. This might look like the following code example.
 
 > [!NOTE]
-> This example leaves out details for indicating receives. For a code sample of receiving data, see [Receiving network data with net rings](receiving-network-data-with-net-rings.md).
+> This example leaves out details for indicating receives. For a code sample of receiving data, see [Receiving network data with net rings](receiving-network-data-with-net-rings.md). Note that only the first half of the receiving code sample is for indicating recieves, and the second half is for posting buffers to hardware (which is not needed for cancellation).
 
 ```C++
 void
