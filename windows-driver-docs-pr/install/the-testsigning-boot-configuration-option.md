@@ -8,8 +8,7 @@ ms.localizationpriority: medium
 
 # The TESTSIGNING Boot Configuration Option
 
-
-TESTSIGNING, a boot configuration option, determines whether Windows Vista and later versions of Windows will load any type of test-signed kernel-mode code. You configure this option by using the boot configuration data editor, BCDEdit.exe. Loading of test-signed code is not enabled by default, and you must have Administrator rights to enable this option.
+You can configure a system, whether it runs Windows Vista or a later version of Windows, to load test-signed kernel-mode code. You configure this option by using the boot configuration data editor, BCDEdit.exe, to enable or disable TESTSIGNING, a boot configuration option. Loading of test-signed code is not enabled by default, and you must have Administrator rights to enable this option.
 
 > [!Note]
 > For 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing policy requires that all kernel-mode code have a digital signature. However, in most cases, an unsigned driver can be installed and loaded on 32-bit versions of Windows Vista and later versions of Windows. For more information, see [Driver Signing Policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) for Windows Vista and later versions of Windows.
