@@ -2,13 +2,13 @@
 title: Download Debugging Tools for Windows - WinDbg
 description: This page provides downloads for the Windows Debugging tools, such as WinDbg.
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download"]
-ms.date: 01/22/2019
+ms.date: 01/24/2019
 ms.localizationpriority: medium
 ---
 
 # Download Debugging Tools for Windows
 
-The Windows Debugger (WinDbg) can be used to debug kernel-mode and user-mode code, to analyze crash dumps, and to examine the CPU registers while the system executes code.
+The Windows Debugger (WinDbg) can be used to debug kernel-mode and user-mode code, to analyze crash dumps, and to examine the CPU registers while the code executes.
 
 
 ## ![Small windbg preview logo](images/windbgx-preview-logo.png) Download WinDbg Preview
@@ -22,7 +22,7 @@ WinDbg Preview is a new version of WinDbg with more modern visuals, faster windo
 
 ## ![Small classic windbg preview logo](images/windbg-classic-logo.png) Debugging Tools for Windows 10 (WinDbg)
 
-If you just need the Debugging Tools for Windows 10, and not Windows Driver Kit (WDK) for Windows 10 or Visual Studio 2017, you can install the debugging tools as a standalone component from the Windows SDK. In the installation wizard, select **Debugging Tools for Windows**, and deselect all other components.
+If you just need the Debugging Tools for Windows 10, and not Windows Driver Kit (WDK) for Windows 10 or Visual Studio 2017, you can install the debugging tools as a standalone component from the Windows SDK. In the SDK installation wizard, select **Debugging Tools for Windows**, and deselect all other components.
 
  - Get Debugging Tools for Windows (WinDbg) from the SDK: [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
@@ -44,12 +44,12 @@ To download the debugger tools for previous versions of Windows, download the Wi
 
 ## Looking for related downloads?
 
- - [Windows Debugger Symbols](debugger-download-symbols.md)  
-
  - [Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit)
 
- - [Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+ - [Windows Debugger Symbols](debugger-download-symbols.md)  
 
  - [Windows HLK, HCK, or Logo Kit](https://developer.microsoft.com/windows/hardware/windows-hardware-lab-kit)
+
+ - [Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
  - [Windows Insider Preview builds](https://insider.windows.com/)
