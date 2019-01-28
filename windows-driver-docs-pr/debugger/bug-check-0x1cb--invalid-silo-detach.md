@@ -2,7 +2,7 @@
 title: Bug Check 0x1CB INVALID_SILO_DETACH
 description: The INVALID_SILO_DETACH bug check has a value of 0x000001CB. It indicates that a driver failed to detach from a silo before returning.
 keywords: ["Bug Check 0x1CB INVALID_SILO_DETACH", "INVALID_SILO_DETACH"]
-ms.date: 01/11/2019
+ms.date: 01/28/2019
 topic_type:
 - apiref
 api_name:
@@ -31,7 +31,7 @@ The INVALID\_SILO\_DETACH bug check has a value of 0x000001CB. It indicates that
 
 ## Cause
 -----
-A driver failed to detach from a silo before returning. This means that a Hypervisor based watchdog has timed-out has occurred.
+A driver failed to detach from a silo before returning. This means that a Hypervisor based watchdog timed-out has occurred.
 
 
 ## See Also
