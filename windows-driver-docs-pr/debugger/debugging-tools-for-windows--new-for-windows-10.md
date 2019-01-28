@@ -2,17 +2,18 @@
 title: Debugging Tools for Windows New for Windows 10
 description: For Windows 10, Debugging Tools for Windows includes these new features.
 ms.assetid: DCF1222F-6A67-463E-8C31-B7753CAFFC20
-ms.date: 11/28/2017
+ms.date: 01/22/2019
 ms.localizationpriority: medium
 ---
 
 # Debugging Tools for Windows: New for Windows 10
 
+## <span id="Windbg_Preview"></span><span id="windbg_preview"></span><span id="WINDBG_PREVIEW"></span>Windbg Preview
 
-For Windows 10, Debugging Tools for Windows includes these new features.
+For the lastest news on Windows Debugging tools, see [WinDbg Preview - What's New](windbg-what-is-new-preview.md).
+
 
 ## <span id="Windows_10__version_1703"></span><span id="windows_10__version_1703"></span><span id="WINDOWS_10__VERSION_1703"></span>Windows 10, version 1703
-
 
 This section describes new debugging tools in Windows 10, version 1703.
 
@@ -33,8 +34,8 @@ This section describes new debugging tools in Windows 10, version 1607.
 -   New topic about [Debugging a UWP app using WinDbg](debugging-a-uwp-app-using-windbg.md).
 -   Updates to the 30 most-viewed developer bug check topics in [Bug Check Code Reference](bug-check-code-reference2.md).
 
-## <span id="Windows_10"></span><span id="windows_10"></span><span id="WINDOWS_10"></span>Windows 10
 
+## <span id="Windows_10"></span><span id="windows_10"></span><span id="WINDOWS_10"></span>Windows 10
 
 -   [**.settings (Set Debug Settings)**](-settings--set-debug-settings-.md) - New command that allows you to set, modify, display, load and save settings in the Debugger.Settings namespace.
 -   [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) - Describes the new dx debugger command, which displays object information using the NatVis extension model and LINQ support.
@@ -60,10 +61,9 @@ This section describes new debugging tools in Windows 10, version 1607.
 -   [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)- New step by step lab that shows how to use WinDbg to debug the sample KMDF echo driver.
 
  
+## Looking to download the Debugging Tools?
 
- 
-
-
+For information on downloading the debugging tools, see [Download Debugging Tools for Windows](debugger-download-tools.md).
 
 
 

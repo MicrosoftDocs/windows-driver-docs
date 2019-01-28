@@ -612,8 +612,6 @@
     items: 
     - name: "Installing Checked Binaries"
       href: installing-checked-binaries.md
-    - name: "Enabling Debug Output for the Video Memory Manager"
-      href: enabling-debug-output-for-the-video-memory-manager.md
     - name: "Changing the Behavior of the GPU Scheduler for Debugging"
       href: changing-the-behavior-of-the-gpu-scheduler-for-debugging.md
     - name: "Emulating State Blocks"
