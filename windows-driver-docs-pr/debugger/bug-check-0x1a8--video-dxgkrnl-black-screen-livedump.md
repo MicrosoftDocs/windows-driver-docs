@@ -2,7 +2,7 @@
 title: Bug Check 0x1A8 VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP
 description: The VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP bug check has a value of 0x000001A8. It indicates that a user initiated DXGKRNL live dump for black screen scenarios has occurred.
 keywords: ["Bug Check 0x1A8 VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP", "VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP"]
-ms.date: 01/08/2018
+ms.date: 01/28/2018
 topic_type:
 - apiref
 api_name:
@@ -30,7 +30,7 @@ The VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP bug check has a value of 0x000001A8.
 
 **Source Values**
 
-     0x1: Blackscreen hotkey generated DXGKRNL black screen live dump
+     0x1: Black screen hotkey generated DXGKRNL black screen live dump
      0x2: Volume combo key generated DXGKRNL black screen live dump
      0x4: Internal generated DXGKRNL black screen live dump
      0x8: Long Power Button Hold (LPBH) generated DXGKRNL black screen live dump
