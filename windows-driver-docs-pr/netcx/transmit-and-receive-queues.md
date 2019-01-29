@@ -38,9 +38,9 @@ In addition, the client can provide these optional callback functions after init
 NetAdapterCx calls [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_txqueue) at the very end of the [power-up sequence](power-up-sequence-for-a-netadaptercx-client-driver.md). During this callback, client drivers typically do the following:
 
 - Optionally register start and stop callbacks for the queue.
-- Call [**NetTxQueueInitGetQueueId**](../nettxqueue/nf-nettxqueue-nettxqueueinitgetqueueid.md) to retrieve the identifier of the transmit queue to set up.
-- Call [**NetTxQueueCreate**](../nettxqueue/nf-nettxqueue-nettxqueuecreate.md) to allocate a queue. 
-    - If [**NetTxQueueCreate**](../nettxqueue/nf-nettxqueue-nettxqueuecreate.md) fails, the *EvtNetAdapterCreateTxQueue* callback function should return an error code.
+- Call [**NetTxQueueInitGetQueueId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nf-nettxqueue-nettxqueueinitgetqueueid) to retrieve the identifier of the transmit queue to set up.
+- Call [**NetTxQueueCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nf-nettxqueue-nettxqueuecreate) to allocate a queue. 
+    - If [**NetTxQueueCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nettxqueue/nf-nettxqueue-nettxqueuecreate) fails, the *EvtNetAdapterCreateTxQueue* callback function should return an error code.
 - Query for packet extension offsets.
 
 The following example shows how these steps might look in code. Error handling code has been left out of this example for clarity.
