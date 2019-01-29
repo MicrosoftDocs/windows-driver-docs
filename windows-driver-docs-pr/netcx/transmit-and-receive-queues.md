@@ -38,7 +38,6 @@ In addition, the client can provide these optional callback functions after init
 NetAdapterCx calls [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_txqueue) at the very end of the [power-up sequence](power-up-sequence-for-a-netadaptercx-client-driver.md). During this callback, client drivers typically do the following:
 
 - Optionally register start and stop callbacks for the queue.
-- Add packet context attributes to the queue during initialization.
 - Call [**NetTxQueueInitGetQueueId**](../nettxqueue/nf-nettxqueue-nettxqueueinitgetqueueid.md) to retrieve the identifier of the transmit queue to set up.
 - Call [**NetTxQueueCreate**](../nettxqueue/nf-nettxqueue-nettxqueuecreate.md) to allocate a queue. 
     - If [**NetTxQueueCreate**](../nettxqueue/nf-nettxqueue-nettxqueuecreate.md) fails, the *EvtNetAdapterCreateTxQueue* callback function should return an error code.
@@ -224,16 +223,16 @@ MyEvtTxInterruptDpc(
 }
 ```
 
-### Enabling and disabling notification for a transmit queue
+### Enabling and disabling notification for a receive queue
 
-For a PCI NIC, enabling receive queue notification typically means enabling the receive queue's hardware interrupt. When the hardware interrupt fires, the client calls [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nf-netrxqueue-netrxqueuenotifymorereceivedpacketsavailable) from its DPC.
+For a PCI NIC, enabling receive queue notification looks very similar to a Tx queue. This typically means enabling the receive queue's hardware interrupt. When the hardware interrupt fires, the client calls [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netrxqueue/nf-netrxqueue-netrxqueuenotifymorereceivedpacketsavailable) from its DPC.
 
 For example:
 
 ```C++
 VOID
 MyEvtRxQueueSetNotificationEnabled(
-    _In_ NETRXQUEUE RxQueue,
+    _In_ NETPACKETQUEUE RxQueue,
     _In_ BOOLEAN NotificationEnabled
 )
 {
