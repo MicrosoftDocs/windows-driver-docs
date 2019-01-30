@@ -82,13 +82,11 @@ The default class installer for still image devices, *sti\_ci.dll*, recognizes a
 </tbody>
 </table>
 
- 
-
 The default class installer for still image devices supports the standard [**INF CopyFiles directive**](https://msdn.microsoft.com/library/windows/hardware/ff546346). The installer uses an internal reference counter for component files, so files shared by several devices are not removed prematurely during an uninstall operation.
 
 The default INF file for still image devices, *sti.inf*, defines two installation sections for each device type, as follows:
 
--   An [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344), which must be referenced within the *DDInstall* section of the vendor-supplied INF file, as shown in the following table.
+- An [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344), which must be referenced within the *DDInstall* section of the vendor-supplied INF file, as shown in the following table.
 
     <table>
     <colgroup>
@@ -108,18 +106,14 @@ The default INF file for still image devices, *sti.inf*, defines two installatio
     <td><pre space="preserve"><code>Include=sti.inf</code></pre>
     <pre space="preserve"><code>Needs=STI.USBSection</code></pre></td>
     <td><pre space="preserve"><code>Include=sti.inf</code></pre>
-    <p>Needs=STI.SCSISection</p></td>
+    <pre space="preserve"><code>Needs=STI.SCSISection</code></pre></td>
     <td><pre space="preserve"><code>Include=sti.inf</code></pre>
     <pre space="preserve"><code>Needs=STI.SerialSection</code></pre></td>
     </tr>
     </tbody>
     </table>
 
-     
-
-<!-- -->
-
--   An [**INF DDInstall.Services Section**](https://msdn.microsoft.com/library/windows/hardware/ff547349), which must be referenced within the *DDInstall*.**Services** section of the vendor-supplied INF file, as shown in the following table.
+- An [**INF DDInstall.Services Section**](https://msdn.microsoft.com/library/windows/hardware/ff547349), which must be referenced within the *DDInstall*.**Services** section of the vendor-supplied INF file, as shown in the following table.
 
     <table>
     <colgroup>
@@ -146,20 +140,10 @@ The default INF file for still image devices, *sti.inf*, defines two installatio
     </tbody>
     </table>
 
-     
-
 If you are also [creating device-specific components for image acquisition APIs](creating-device-specific-components-for-image-acquisition-apis.md), you will typically include the file names for these components in the INF file.
 
 For additional guidance in creating INF files for still image devices, you can look at any INF file provided with Windows that contains the entry "Subclass=StillImage".
 
-**Remarks**
+## Remarks
 
 When you're developing an INF file for scanners, you can use [Microsoft OS descriptors](https://msdn.microsoft.com/library/windows/hardware/gg463179.aspx) to enable compatibility ID functionality. When you do this, you allow one scanner driver to be compatible with multiple scanner models.
-
- 
-
- 
-
-
-
-

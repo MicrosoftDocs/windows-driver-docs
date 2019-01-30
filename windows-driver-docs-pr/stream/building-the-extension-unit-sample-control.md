@@ -5,12 +5,11 @@ ms.assetid: 57dd0bc3-2aab-42a2-b0c5-7f6ecaefd300
 keywords:
 - Extension Unit controls WDK USB Video Class
 - controls WDK USB Video Class
-ms.date: 04/20/2017
+ms.date: 01/30/2019
 ms.localizationpriority: medium
 ---
 
 # Building the Extension Unit Sample Control
-
 
 You can compile the code in this section to create a UVC Extension Unit Sample Control. When you build this project, you create a Microsoft ActiveX control that you can use with a corresponding application to get and set properties on an extension unit.
 
@@ -18,12 +17,13 @@ To use the control, you need hardware that implements the specific extension uni
 
 Use these steps to build the control:
 
-1.  Install the following packages:
-    -   Microsoft Windows Server 2003 with Service Pack 1 (SP1) Driver Development Kit (DDK)
-    -   Microsoft DirectX 9.0 SDK Update (February 2005)
-    -   Microsoft DirectX 9.0 February 2005 SDK Extras
+1. Install the following packages:
 
-2.  Copy the sample code from the following topics into individual files.
+    - Microsoft Windows Server 2003 with Service Pack 1 (SP1) Driver Development Kit (DDK)
+    - Microsoft DirectX 9.0 SDK Update (February 2005)
+    - Microsoft DirectX 9.0 February 2005 SDK Extras
+
+2. Copy the sample code from the following topics into individual files.
 
     [Sample Interface for UVC Extension Units](sample-interface-for-uvc-extension-units.md)
 
@@ -37,9 +37,9 @@ Use these steps to build the control:
 
     [Providing a UVC INF File](providing-a-uvc-inf-file.md)
 
-3.  Create a *sources* file as follows:
+3. Create a *sources* file as follows:
 
-    ```make
+    ```cpp
     TARGETNAME= uvcxuplgn
     TARGETTYPE= DYNLINK
     TARGETPATH= obj
@@ -51,40 +51,37 @@ Use these steps to build the control:
 
     USE_STATIC_ATL=1
 
+    USER_INCLUDES= $(O)
 
+    INCLUDES=
 
-USER_INCLUDES= $(O)
+    SOURCES= interface.idl \
+     uvcxuplgn.cpp \
+             stdafx.cpp    \
+             interface_i.c \
+             vidcap_i.c    \
+             xuproxy.cpp
 
-INCLUDES=
+    TARGETLIBS= \
+            $(SDK_LIB_PATH)\kernel32.lib          \
+            $(SDK_LIB_PATH)\user32.lib            \
+            $(SDK_LIB_PATH)\gdi32.lib             \
+            $(SDK_LIB_PATH)\advapi32.lib          \
+            $(SDK_LIB_PATH)\comdlg32.lib          \
+            $(SDK_LIB_PATH)\ole32.lib             \
+            $(SDK_LIB_PATH)\oleaut32.lib          \
+            $(SDK_LIB_PATH)\uuid.lib              \
+            $(SDK_LIB_PATH)\comctl32.lib
+    ```
 
-SOURCES= interface.idl \
- uvcxuplgn.cpp \
-         stdafx.cpp    \
-         interface_i.c \
-         vidcap_i.c    \
-         xuproxy.cpp
+4. Create a *makefile* file as follows:
 
-TARGETLIBS= \
-        $(SDK_LIB_PATH)\kernel32.lib          \
-        $(SDK_LIB_PATH)\user32.lib            \
-        $(SDK_LIB_PATH)\gdi32.lib             \
-        $(SDK_LIB_PATH)\advapi32.lib          \
-        $(SDK_LIB_PATH)\comdlg32.lib          \
-        $(SDK_LIB_PATH)\ole32.lib             \
-        $(SDK_LIB_PATH)\oleaut32.lib          \
-        $(SDK_LIB_PATH)\uuid.lib              \
-        $(SDK_LIB_PATH)\comctl32.lib
-```
-
-
-4.  Create a *makefile* file as follows:
-
-    ```make
+    ```cpp
     #############################################################################
     #
     #       Copyright (C) Microsoft Corporation 1995
     #       All Rights Reserved.
-    #                                                                          
+    #
     #       MAKEFILE for WDM device driver kit
     #
     #############################################################################
@@ -100,14 +97,15 @@ TARGETLIBS= \
     !endif
     ```
 
-5.  Use the *Guidgen.exe* tool (which is included in the Microsoft Windows SDK) to create three GUIDs:
-    -   Use the first GUID as the property set ID for your extension unit. Replace the x-based GUID placeholders with the new GUID in *Xuproxy.h, Xusample.rgs,Xuplgin.inf,* and in your extension unit descriptor at the hardware level.
-    -   Use the second GUID as the IID for your extension unit. Replace the y-based GUID placeholders with the new GUID in *Interface.idl* and *Xuplgin.inf*.
-    -   Use the third GUID as the class GUID (clsid) for your extension unit. Replace the z-based GUID placeholder with the new GUID in *Xuplgin.inf, Xuproxy.h*, and *Xusample.rgs.*
+5. Use the *Guidgen.exe* tool (which is included in the Microsoft Windows SDK) to create three GUIDs:
 
-6.  Copy *Extend.def* from the WIA extend sample and edit it. *Uvcxuplugn.def* should contain:
+    - Use the first GUID as the property set ID for your extension unit. Replace the x-based GUID placeholders with the new GUID in *Xuproxy.h, Xusample.rgs,Xuplgin.inf,* and in your extension unit descriptor at the hardware level.
+    - Use the second GUID as the IID for your extension unit. Replace the y-based GUID placeholders with the new GUID in *Interface.idl* and *Xuplgin.inf*.
+    - Use the third GUID as the class GUID (clsid) for your extension unit. Replace the z-based GUID placeholder with the new GUID in *Xuplgin.inf, Xuproxy.h*, and *Xusample.rgs.*
 
-    ```make
+6. Copy *Extend.def* from the WIA extend sample and edit it. *Uvcxuplugn.def* should contain:
+
+    ```cpp
     LIBRARY uvcxuplgn
 
     EXPORTS
@@ -117,7 +115,7 @@ TARGETLIBS= \
         DllUnregisterServer PRIVATE
     ```
 
-7.  Create *Uvcxuplgn.cpp* as follows:
+7. Create *Uvcxuplgn.cpp* as follows:
 
     ```cpp
     #include "stdafx.h"
@@ -173,7 +171,7 @@ TARGETLIBS= \
     }
     ```
 
-8.  Create *Stdafx.h* as follows:
+8. Create *Stdafx.h* as follows:
 
     ```cpp
     // stdafx.h : include file for standard system include files,
@@ -206,7 +204,7 @@ TARGETLIBS= \
     #endif // !defined(AFX_STDAFX_H__722DC775_FE6F_42FB_BED5_E1E299976D17__INCLUDED)
     ```
 
-9.  Create *Stdafx.cpp* as follows:
+9. Create *Stdafx.cpp* as follows:
 
     ```cpp
     // stdafx.cpp : source file that includes just the standard includes
