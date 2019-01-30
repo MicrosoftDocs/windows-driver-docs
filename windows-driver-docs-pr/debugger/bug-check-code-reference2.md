@@ -300,7 +300,7 @@ The following table shows the code and name of each bug check code.
 | 0x00000136 | [**VHD\_BOOT\_HOST\_VOLUME\_NOT\_ENOUGH\_SPACE**](bug-check-0x136--vhd-boot-host-volume-not-enough-space.md)                                      |
 | 0x00000137 | [**WIN32K\_HANDLE\_MANAGER**](bug-check-0x137--win32k-handle-manager.md)                                                                          |
 | 0x00000138 | [**GPIO\_CONTROLLER\_DRIVER\_ERROR**](bug-check-0x138-gpio-controller-driver-error.md)                                                            |
-| 0x00000139 | [**KERNEL\_SECURITY\_CHECK\_FAILURE**](bug-check-0x139-kernel-security-check-failure.md)                                              |
+| 0x00000139 | [**KERNEL\_SECURITY\_CHECK\_FAILURE**](bug-check-0x139--kernel-security-check-failure.md)                                              |
 | 0x0000013A | [**KERNEL\_MODE\_HEAP\_CORRUPTION**](bug-check-0x13a--kernel-mode-heap-corruption.md)                                                             |
 | 0x0000013B | [**PASSIVE\_INTERRUPT\_ERROR**](bug-check-0x13b--passive-interrupt-error.md)                                                                      |
 | 0x0000013C | [**INVALID\_IO\_BOOST\_STATE**](bug-check-0x13c--invalid-io-boost-state.md)                                                                       |

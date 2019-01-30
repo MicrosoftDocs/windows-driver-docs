@@ -2282,7 +2282,7 @@
     - name: "Bug Check 0x138: GPIO_CONTROLLER_DRIVER_ERROR"
       href: bug-check-0x138-gpio-controller-driver-error.md
     - name: "Bug Check 0x139: KERNEL_SECURITY_CHECK_FAILURE"
-      href: bug-check-0x139-kernel-security-check-failure.md
+      href: bug-check-0x139--kernel-security-check-failure.md
     - name: "Bug Check 0x13A: KERNEL_MODE_HEAP_CORRUPTION"
       href: bug-check-0x13a--kernel-mode-heap-corruption.md
     - name: "Bug Check 0x13B: PASSIVE_INTERRUPT_ERROR"
