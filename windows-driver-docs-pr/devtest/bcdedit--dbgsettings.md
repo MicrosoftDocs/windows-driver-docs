@@ -138,8 +138,8 @@ The default values for the global settings are serial communications using COM1,
 
 For information about Windows debugging tools, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063). For information about setting up and configuring a kernel-mode debugging session, see [Setting Up Kernel-Mode Debugging Manually](https://msdn.microsoft.com/library/windows/hardware/hh439378).
 
-Examples
---------
+
+## Examples
 
 The following command configures the target computer to use an Ethernet connection for debugging and specifies the IP address of the host computer. The command also specifies a port number that the host computer can use to connect to the target computer. For more information, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](https://msdn.microsoft.com/library/windows/hardware/hh439346).
 
@@ -147,7 +147,7 @@ The following command configures the target computer to use an Ethernet connecti
 bcdedit /dbgsettings net hostip:10.125.5.10 port:50000
 ```
 
- > [!IMPORTANT]
+> [!IMPORTANT]
 > Setting up a network debugging manually is a complex and error prone process.
 > To set up network debugging automatically, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md). Using the KDNET utility is **strongly** recommended for all debugger users.
 
@@ -155,6 +155,10 @@ The following command configures the target computer to use a serial connection 
 
 ``` console
 bcdedit /dbgsettings serial debugport:2 baudrate:115200
+```
+
+``` console
+bcdedit /dbgsettings LOCAL
 ```
 
 The following command configures the target computer to use USB connection for debugging. The command also specifies a target name that the host computer can use to connect to the target computer. For more information, see [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](https://msdn.microsoft.com/library/windows/hardware/hh439372) and [Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually](https://msdn.microsoft.com/library/windows/hardware/ff556869).
