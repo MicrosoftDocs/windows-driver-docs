@@ -1678,15 +1678,6 @@
           href: device-stage-document-device-development-kit.md
     - name: "Device Experience Scenarios for Document Devices"
       href: device-experience-scenarios-for-document-devices.md
-      items: 
-      - name: "Devices and Printers"
-        href: devices-and-printers.md
-      - name: "Document Devices in Devices and Printers"
-        href: document-devices-in-devices-and-printers.md
-      - name: "Device Experience in Devices and Printers "
-        href: device-experience-in-devices-and-printers.md
-      - name: "Device Stage Custom Experience"
-        href: device-stage-custom-experience.md
     - name: "Identifying Device Functions in MFPs"
       href: identifying-device-functions-in-mfps.md
     - name: "Installing ICC Profiles"
