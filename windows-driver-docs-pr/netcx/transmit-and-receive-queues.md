@@ -90,7 +90,7 @@ EvtAdapterCreateTxQueue(
         NET_PACKET_EXTENSION_CHECKSUM_NAME,
         NET_PACKET_EXTENSION_CHECKSUM_VERSION_1);
 
-    queueContext->ChecksumExtensionOffset = NetTxQueueGetPacketExtensionOffset(txQueue, &extension);
+    NetTxQueueGetExtension(txQueue, &extension, &queueContext->ChecksumExtension);
 
     // Query Large Send Offload packet extension offset and store it in the context
     NET_PACKET_EXTENSION_QUERY_INIT(
@@ -98,7 +98,7 @@ EvtAdapterCreateTxQueue(
         NET_PACKET_EXTENSION_LSO_NAME,
         NET_PACKET_EXTENSION_LSO_VERSION_1);
     
-    queueContext->LsoExtensionOffset = NetTxQueueGetPacketExtensionOffset(txQueue, &extension);
+    NetTxQueueGetExtension(txQueue, &extension, &queueContext->LsoExtension);
 
     return status;
 }
@@ -155,7 +155,7 @@ EvtAdapterCreateRxQueue(
         NET_PACKET_EXTENSION_CHECKSUM_NAME,
         NET_PACKET_EXTENSION_CHECKSUM_VERSION_1); 
           
-    queueContext->ChecksumExtensionOffset = NetRxQueueGetPacketExtensionOffset(rxQueue, &extension);
+    NetRxQueueGetExtension(rxQueue, &extension, &queueContext->ChecksumExtension);
 
     return status;
 }
