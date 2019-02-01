@@ -34,8 +34,6 @@ ms.localizationpriority: medium
 <p></p>
  
 </div>
- 
-</div>
 <p><strong>Visual Studio Integration</strong></p>
 <p>Static Driver Verifier is integrated into Visual Studio. You can run static analysis on your Visual Studio driver project. You can launch, configure, and control Static Driver Verifier from the <strong>Driver</strong> menu in Visual Studio.</p>
 <p><strong>Static Driver Verifier Documentation</strong></p>
