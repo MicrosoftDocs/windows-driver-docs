@@ -10,7 +10,7 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 12/18/2018
+ms.date: 02/01/2019
 ms.localizationpriority: medium
 ---
 
@@ -27,6 +27,9 @@ The **KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION** property provides additio
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
  For the get, **KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION** returns an [INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-interleaved-audio-format-information) structure which contains additional information about the interleaving of loopback audio and capture audio in the audio stream. 
+
+Starting in Windows 10 19H1, setting the KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION property key is a requirment for systems that support the Hardware Keyword Spotter (HW KWS). For more information, see [Voice Activation](voice-activation.md).
+
 
 Remarks
 -------
