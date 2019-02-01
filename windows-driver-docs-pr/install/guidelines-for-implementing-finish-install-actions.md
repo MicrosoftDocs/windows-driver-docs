@@ -31,7 +31,7 @@ Consider the following guidelines when you implement finish-install actions in a
 
 -   An installer should handle the situation where a finish-install action fails, but should be attempted again. For example, the installer can fail the finish-install action in this way if the device that is being installed has been removed from the system.
 
-    Prior to Windows 8, if a finish-install action fails, but should be attempted again, an installer should notify the user of the temporary failure, perform any necessary cleanup, and return a Win32 error code for the DIF_FINISHINSTALL_ACTION request. If an installer returns a Win32 error code for a DIF_FINISHINSTALL_ACTION request, Windows does not clear the device as having been flagged to perform a finish install action for the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)).
+    Prior to Windows 8, if a finish-install action fails, but should be attempted again, an installer should notify the user of the temporary failure, perform any necessary cleanup, and return a Win32 error code for the DIF_FINISHINSTALL_ACTION request. If an installer returns a Win32 error code for a DIF_FINISHINSTALL_ACTION request, Windows does not clear the device as having been flagged to perform a finish install action for the device node (*devnode*).
 
     However, starting with Windows 8, returning an error code will not prevent the flag being cleared. If the finish-install action has an error, it needs to provide the user with the ability to run it again in the future.
 

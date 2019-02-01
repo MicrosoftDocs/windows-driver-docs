@@ -20,7 +20,7 @@ The LPT enumerator is an example of a [bus driver](https://msdn.microsoft.com/li
 
 When a Windows 2000 or later system starts, the configuration manager calls the LPT enumerator to enumerate the IEEE 1284-compatible devices connected to LPT ports. For each device found, the configuration manager calls the printer class installer. The printer class installer calls **SetupDi**-prefixed [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299), which obtain information from [printer INF files](printer-inf-files.md).
 
-For a parallel-connected printer, the parallel enumerator creates a [*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode) with a unique [*hardware ID*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-id) generated from the 1284 string it receives from the printer.
+For a parallel-connected printer, the parallel enumerator creates a *devnode* with a unique *hardware ID* generated from the 1284 string it receives from the printer.
 
 An example 1284 string is:
 
@@ -66,7 +66,7 @@ Company_Name="Company Name"
 
 ![plug and play for parallel port printers](images/pnppar01.png)
 
-For a printer that shares its [*device ID*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-id) with other models, the INF file should be similar to the following:
+For a printer that shares its *device ID* with other models, the INF file should be similar to the following:
 
 ```cpp
 [Manufacturer]

@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_gdi_support_services_gg"></span><span id="DDK_GDI_SUPPORT_SERVICES_GG"></span>
 
 
-[*GDI*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-graphics-device-interface--gdi-) exports many service routines that can simplify driver design. The driver can call these routines directly. The names of routines that are general graphics engine services whose names begin with **Eng**. Service routines related to a particular object always start with the name of the object; for example, [**CLIPOBJ\_cEnumStart**](https://msdn.microsoft.com/library/windows/hardware/ff539421) is a [**CLIPOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff539417) service.
+*GDI* exports many service routines that can simplify driver design. The driver can call these routines directly. The names of routines that are general graphics engine services whose names begin with **Eng**. Service routines related to a particular object always start with the name of the object; for example, [**CLIPOBJ\_cEnumStart**](https://msdn.microsoft.com/library/windows/hardware/ff539421) is a [**CLIPOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff539417) service.
 
 **Note**   The service routines in which the first argument is a pointer to a user object are methods on that user object, and are called using the usual C++ conventions. Therefore, drivers written in C++ can access the service routines as methods.
 

@@ -65,7 +65,7 @@ This command will end the debugging session in any of the following scenarios:
 
 -   When you are debugging a user-mode or kernel-mode dump file.
 
--   (Windows XP and later) When you are debugging a live user-mode target.
+-   When you are debugging a live user-mode target.
 
 -   When you are noninvasively debugging a user-mode target.
 

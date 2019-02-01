@@ -39,7 +39,7 @@ Windows keeps its symbols in files with the extension .pdb.
 
 The compiler and the linker control the symbol format. The Visual C++ linker, places all symbols into .pdb files.
 
-The Windows operating system is built in two versions. The [*free build*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-free-build) (or *retail build*) has relatively small binaries, and the [*checked build*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-checked-build) (or *debug build*) has larger binaries, with more debugging symbols in the code itself. Each of these builds has its own symbol files. When debugging a target on Windows, you must use the symbol files that match the build of Windows on the target.
+The Windows operating system is built in two versions. The *free build* (or *retail build*) has relatively small binaries, and the *checked build* (or *debug build*) has larger binaries, with more debugging symbols in the code itself. Each of these builds has its own symbol files. When debugging a target on Windows, you must use the symbol files that match the build of Windows on the target.
 
 The following table lists several of the directories which exist in a standard Windows symbol tree:
 

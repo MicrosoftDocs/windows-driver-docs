@@ -55,14 +55,14 @@ Each color format that a printer supports is specified as an option to the Color
 </tr>
 <tr class="even">
 <td><p>4</p></td>
-<td><p>1 (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk" data-raw-source="[&lt;em&gt;CMYK&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk)"><em>CMYK</em></a>)</p></td>
+<td><p>1 (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk" data-raw-source="&lt;em&gt;CMYK&lt;/em&gt;"><em>CMYK</em></a>)</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-For these formats, Unidrv can convert [*device-independent bitmap (DIB)*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-) data into the proper format and send it to the printer. (Halftoning operations that can be performed on this data are described in [Halftoning with Unidrv](halftoning-with-unidrv.md).)
+For these formats, Unidrv can convert *device-independent bitmap (DIB)* data into the proper format and send it to the printer. (Halftoning operations that can be performed on this data are described in [Halftoning with Unidrv](halftoning-with-unidrv.md).)
 
 If your printer supports color formats that are not listed in the preceding table, you must do the following:
 
@@ -84,7 +84,7 @@ For more information about providing an [**IPrintOemUni::ImageProcessing**](http
 
 For each color format, you specify both the bits per pixel that the printer hardware accepts and the bits per pixel you want Unidrv to use when creating DIBs. These values are specified with the \*DevBPP and \*DrvBPP attributes, respectively. Sometimes, it is desirable for images to be rendered as bitmaps having a higher number of bits per pixel than the printer can handle (in order, for example, to attempt reproducing high-quality photographs). Therefore, it is allowable to specify a \***DrvBPP** value that is larger than the result of multiplying the \***DevBPP** value by the \*DevNumOfPlanes value.
 
-For example, suppose you want to define a ColorMode option that causes images to be rendered as 24 bits/pixel bitmaps, but then you want the bitmap to be sent to the printer as [*CMYK*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk) data. You might define this mode as follows:
+For example, suppose you want to define a ColorMode option that causes images to be rendered as 24 bits/pixel bitmaps, but then you want the bitmap to be sent to the printer as *CMYK* data. You might define this mode as follows:
 
 ```cpp
 *Feature: ColorMode

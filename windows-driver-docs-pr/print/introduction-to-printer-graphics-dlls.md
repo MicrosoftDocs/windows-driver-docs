@@ -22,7 +22,7 @@ Printer graphics DLLs implement Drv-prefixed graphics DDI functions that are des
 
 -   Deliver a rendered data stream to the spooler.
 
-    Printer graphics DLLs typically produce an output stream in a [RAW data type](raw-data-type.md) (including command sequences) that the spooler can send to printer hardware through [*print monitors*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-print-monitor).
+    Printer graphics DLLs typically produce an output stream in a RAW data type.
 
 The amount of rendering assistance that a printer graphics DLL must provide is printer type-specific, depending on the hardware's drawing capabilities, and includes the following scenarios:
 
@@ -50,7 +50,7 @@ The second diagram depicts a kernel-mode printer graphics DLL.
 
 ![print job data flow, using a kernel-mode printer graphics dll](images/gdiprint.png)
 
-Note in these diagrams that if the output format from GDI is [*enhanced metafile (EMF)*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-enhanced-metafile--emf-), the printer graphics DLL does not receive the job until the EMF print processor plays back EMF records. Note also that the EMF Print Processor changes output format to non-EMF.
+Note in these diagrams that if the output format from GDI is *enhanced metafile (EMF)*, the printer graphics DLL does not receive the job until the EMF print processor plays back EMF records. Note also that the EMF Print Processor changes output format to non-EMF.
 
 The diagrams illustrate an entirely local environment. If the printer is connected to a server, EMF records are typically produced by the client's copy of the GDI rendering engine (GRE) and then spooled to a local file that is sent to the server. The server's copy of the spooler reads the file and sends the records to the server's EMF print processor, and the server's copy of the GRE calls the server's printer graphics DLL.
 

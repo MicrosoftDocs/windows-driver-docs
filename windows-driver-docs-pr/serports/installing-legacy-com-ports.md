@@ -24,7 +24,7 @@ When Serial is loaded it determines which legacy ports were not previously detec
 
 2.  Sets the **LegacyDiscovered** entry value for the port to 0x00000001, which indicates that the port has been reported.
 
-3.  Copies some of the entry values under the COM port subkey to the Plug and Play device key for the physical device object ([*PDO*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdo)) that is returned by **IoReportDetectedDevice**.
+3.  Copies some of the entry values under the COM port subkey to the Plug and Play device key for the physical device object (*PDO*) that is returned by **IoReportDetectedDevice**.
 
 4.  Serial sets the **PortName** entry value under the Plug and Play device key to the value of the **DosDevices** entry value under the legacy COM port subkey. For all other entry values that Serial copies, it retains the same entry value name. For more information about which entry values that Serial copies, see the Serial sample code provided in the Microsoft Windows Driver Kit (WDK).
 

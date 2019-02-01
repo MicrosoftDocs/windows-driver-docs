@@ -40,9 +40,9 @@ A brief description of each component of a driver package follows.
 
 ### Driver Files
 
-The driver is the part of the package that provides the I/O interface for a device. Typically, a driver is a dynamic-link library (DLL) with the .*sys* file name extension. Long file names are allowed, except for [*boot-start drivers*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver). When a device is installed, Windows copies the *.sys* file to the *%SystemRoot%\\system32\\drivers* directory.
+The driver is the part of the package that provides the I/O interface for a device. Typically, a driver is a dynamic-link library (DLL) with the .*sys* file name extension. Long file names are allowed, except for *boot-start drivers*. When a device is installed, Windows copies the *.sys* file to the *%SystemRoot%\\system32\\drivers* directory.
 
-The software that is required to support a particular device depends on the features of the device and the bus or port to which it connects. Microsoft ships drivers for many common devices and nearly all buses with the operating system. If your device can be serviced by one of these drivers, you might have to write only a device-specific [*minidriver*](https://msdn.microsoft.com/library/windows/hardware/ff556308#wdkgloss-minidriver). A minidriver handles device-specific features on behalf of a system-supplied driver. For some types of devices, even a minidriver is not necessary. For example, modems can typically be supported with just installation files.
+The software that is required to support a particular device depends on the features of the device and the bus or port to which it connects. Microsoft ships drivers for many common devices and nearly all buses with the operating system. If your device can be serviced by one of these drivers, you might have to write only a device-specific *minidriver*. A minidriver handles device-specific features on behalf of a system-supplied driver. For some types of devices, even a minidriver is not necessary. For example, modems can typically be supported with just installation files.
 
 ### Installation Files
 

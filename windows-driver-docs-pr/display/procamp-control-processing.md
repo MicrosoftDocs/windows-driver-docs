@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_procamp_control_processing_gg"></span><span id="DDK_PROCAMP_CONTROL_PROCESSING_GG"></span>
 
 
-The ProcAmp control DDI extends DirectX VA to support ProcAmp control and post processing of video content by graphics device drivers. The ProcAmp control DDI is an interface between the video mixing renderer ([*VMR*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-video-mixer-renderer--vmr-)) and the graphics device driver. The DDI maps to the existing DirectDraw and DirectX VA DDI. The DDI is not accessible via the **IAMVideoAccelerator** interface. The ProcAmp control DDI is available in Microsoft DirectX version 9.0.
+The ProcAmp control DDI extends DirectX VA to support ProcAmp control and post processing of video content by graphics device drivers. The ProcAmp control DDI is an interface between the video mixing renderer (*VMR*) and the graphics device driver. The DDI maps to the existing DirectDraw and DirectX VA DDI. The DDI is not accessible via the **IAMVideoAccelerator** interface. The ProcAmp control DDI is available in Microsoft DirectX version 9.0.
 
 If a driver supports accelerated decoding of compressed video, the VMR will call the driver to create two DirectX VA devices, one to perform the actual video decoding work, and the other to be used strictly for ProcAmp adjustments.
 

@@ -71,7 +71,7 @@ On Windows 2000, in addition to setting OANOCACHE equal to 1, you must also inst
 
 ### <span id="find_the_process_id"></span><span id="FIND_THE_PROCESS_ID"></span>Find the Process ID
 
-UMDH identifies the process by its process identifier (PID). You can find the PID of any running process by using Task Manager, Tasklist (Windows XP and later operating systems), or [TList](tlist.md).
+UMDH identifies the process by its process identifier (PID). You can find the PID of any running process by using Task Manager, Tasklist, or [TList](tlist.md).
 
  
 

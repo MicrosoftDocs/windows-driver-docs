@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DIF_NEWDEVICEWIZARD_POSTANALYZE
 
 
-A DIF_NEWDEVICEWIZARD_POSTANALYZE request allows an installer to supply wizard pages that Windows displays to the user after the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) is registered but before Windows installs the drivers for the device. This request is only used during manual installation of non-PnP devices.
+A DIF_NEWDEVICEWIZARD_POSTANALYZE request allows an installer to supply wizard pages that Windows displays to the user after the device node (*devnode*) is registered but before Windows installs the drivers for the device. This request is only used during manual installation of non-PnP devices.
 
 ### When Sent
 

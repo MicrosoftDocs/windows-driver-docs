@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 -   [Device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299)
 
-[*Device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application), [*co-installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer), and [*class installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-class-installer) can use these functions to perform custom operations for device installation. SetupAPI also supports uninstalling the devices and [driver packages](driver-packages.md) that it installs.
+*Device installation applications*, *co-installers*, and *class installers* can use these functions to perform custom operations for device installation. SetupAPI also supports uninstalling the devices and [driver packages](driver-packages.md) that it installs.
 
 This topic describes the procedures that you can follow to uninstall devices and driver packages by using the SetupAPI functions.
 
@@ -23,7 +23,7 @@ For more information about uninstalling driver and driver packages, see [How Dev
 
 ### <a href="" id="uninstalling-the-device"></a> Uninstalling the Device
 
-[SetupAPI](setupapi.md) allows you to uninstall a device and remove the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) from the system by using the following methods:
+SetupAPI) from the system by using the following methods:
 
 -   A device installation application can request that a device be uninstalled by calling the [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) function. When the application calls this function to uninstall a device, it must set the *InstallFunction* parameter to the [**DIF_REMOVE**](https://msdn.microsoft.com/library/windows/hardware/ff543717) code.  For a list of all DIF codes, see [Device Installation Functions](https://msdn.microsoft.com/library/windows/hardware/ff541307).
 

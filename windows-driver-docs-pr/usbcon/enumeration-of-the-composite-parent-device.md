@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 When a new USB device is connected to a host machine, the USB bus driver creates a physical device object (PDO) for the device and generates a PnP event to report the new PDO. The operating system then queries the bus driver for the hardware IDs associated with the PDO.
 
-For all USB devices, the USB bus driver reports a [*device ID*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-id) with the following format:
+For all USB devices, the USB bus driver reports a *device ID* with the following format:
 
 `USB\VID_xxxx&PID_yyyy`
 

@@ -39,7 +39,7 @@ The drivers in the previous figure are the following:
 
 3.  *Lower-level filter drivers* typically modify the behavior of device hardware. They are optional and are typically supplied by IHVs. There can be any number of lower-level filter drivers for a device.
 
-4.  A *function driver* is the main driver for a device. A function driver is typically written by the device vendor and is required (unless the device is being used in [*raw mode*](https://msdn.microsoft.com/library/windows/hardware/ff556331#wdkgloss-raw-mode)).
+4.  A *function driver* is the main driver for a device. A function driver is typically written by the device vendor and is required (unless the device is being used in *raw mode*).
 
 5.  *Upper-level filter drivers* typically provide added-value features for a device. They are optional and are typically provided by IHVs.
 

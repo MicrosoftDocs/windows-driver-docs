@@ -22,7 +22,7 @@ Language monitors are user-mode DLLs that serve two purposes:
 
 -   They add printer control information, such as commands defined by a printer job language, to the data stream.
 
-Microsoft provides a language monitor, Pjlmon.dll, which supports [*printer job language (PJL)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-printer-job-language--pjl-), and provides bidirectional communication for PJL printers. This monitor is included in the Microsoft Windows Driver Kit (WDK) as the [sample language monitor](sample-language-monitor.md).
+Microsoft provides a language monitor, Pjlmon.dll, which supports *printer job language (PJL)*, and provides bidirectional communication for PJL printers. This monitor is included in the Microsoft Windows Driver Kit (WDK) as the [sample language monitor](sample-language-monitor.md).
 
 Customized language monitors can be written to support other job control languages, for unidirectional or bidirectional printers.
 
