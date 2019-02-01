@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 In Windows 10 19H1 and later, the **PKEY\_Devices\_AudioDevice\_Microphone\_IsFarField** property key indicates if the microphone will capture far field audio. 
 
-Starting in Windows 10 19H1, using the PKEY\_Devices\_AudioDevice\_Microphone\_IsFarField property is a requirment for systems that support far field audio for use by a  voice assistant. 
+Starting in Windows 10 19H1, using the PKEY\_Devices\_AudioDevice\_Microphone\_IsFarField property is a requirement for systems that support far field audio for use by a  voice assistant. 
 
 A value of 1 indicates that the microphone will capture far field audio, which will make the microphone a preferred endpoint for a voice assistant. 
 
