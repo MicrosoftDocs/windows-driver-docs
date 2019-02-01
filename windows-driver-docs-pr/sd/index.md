@@ -49,7 +49,7 @@ SD device drivers can manage the host controller's common register set and the s
 
 This is a sample for a functional Secure Digital (SD) IO driver. The driver is written using the Kernel Mode Driver Framework. It is a driver for a generic mars development board that implements the SDIO protocol without additional functionality.
 
-Download the [Storage SDIO driver sample](http://go.microsoft.com/fwlink/p/?LinkId=617953) from GitHub.
+Download the [Storage SDIO driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617953) from GitHub.
 
  
 

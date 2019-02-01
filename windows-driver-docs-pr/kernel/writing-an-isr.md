@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Drivers for physical devices that generate interrupts must have at least one interrupt service routine (ISR). The ISR must do whatever is appropriate to the device to dismiss the interrupt, possibly including stopping the device from interrupting. Then, it should do only what is necessary to save state and queue a DPC to finish the I/O operation at a lower priority (IRQL) than that at which the ISR executes.
 
-A driver's ISR executes in an interrupt context, at some system-assigned [*DIRQL*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-interrupt-request-level--dirql-), as specified by the *SynchronizeIrql* parameter to [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378).
+A driver's ISR executes in an interrupt context, at some system-assigned *DIRQL*, as specified by the *SynchronizeIrql* parameter to [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378).
 
 ISRs are interruptible. Another device with a higher system-assigned DIRQL can interrupt, or a high-IRQL system interrupt can occur, at any time.
 

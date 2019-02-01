@@ -26,7 +26,7 @@ A VGA-compatible miniport driver's [*HwVidFindAdapter*](https://msdn.microsoft.c
 
 -   **EmulatorAccessEntriesContext**, a pointer to storage, such as an area in the miniport driver's device extension, in which the miniport driver's *SvgaHwIoPortXxx* functions can batch a sequence of application-issued instructions that require validation
 
--   **VdmPhysicalVideoMemoryAddress** and **VdmPhysicalVideoMemoryLength**, describing a range of video memory that must be mapped into the [*VDM*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-vdm) address space to support BIOS INT10 calls from full-screen MS-DOS applications
+-   **VdmPhysicalVideoMemoryAddress** and **VdmPhysicalVideoMemoryLength**, describing a range of video memory that must be mapped into the *VDM* address space to support BIOS INT10 calls from full-screen MS-DOS applications
 
     The miniport driver can call the [**VideoPortInt10**](https://msdn.microsoft.com/library/windows/hardware/ff570321) function when such an application changes the video mode to one that the miniport driver's adapter can support.
 

@@ -11,7 +11,7 @@ ms.date: 10/17/2018
 
 This interface is designed to map to the JEDEC Byte Addressable Energy Backed Interface standard in order to minimize BIOS complexity. It provides a common basis of reporting device functions & capabilities, such that OS software can interact with various implementations through the same mechanisms. Further, it allows support for vendor-specific functionality through access to I2C registers.
 
-Platforms that conform to \_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1) can support an NVDIMM-N that implements the *JEDEC Byte Addressable Energy Backed Interface* specification (function class 0x01 and function interface 0x01 per [JEDEC SPD Annex L: Serial Presence Detect for DDR4 SDRAM DDR4 SPD Document Release](http://go.microsoft.com/fwlink/p/?LinkId=627481)). For more info, see the [JEDEC Byte Addressable Energy Backed Interface specification (document JESD245)](https://www.jedec.org/standards-documents/docs/jesd245).
+Platforms that conform to \_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1) can support an NVDIMM-N that implements the *JEDEC Byte Addressable Energy Backed Interface* specification (function class 0x01 and function interface 0x01). For more info, see the [JEDEC Byte Addressable Energy Backed Interface specification (document JESD245)](https://www.jedec.org/document_search?search_api_views_fulltext=jesd245).
 
 ## <span id="DSM_Interface_for_Byte_Addressable_Energy_Backed_Function_Class_Function_Interface_1"></span><span id="dsm_interface_for_byte_addressable_energy_backed_function_class_function_interface_1"></span><span id="DSM_INTERFACE_FOR_BYTE_ADDRESSABLE_ENERGY_BACKED_FUNCTION_CLASS_FUNCTION_INTERFACE_1"></span>\_DSM Interface for Byte Addressable Energy Backed Function Class, Function Interface 1
 
@@ -134,7 +134,7 @@ All reserved bits and bytes shall have a value of 0. Unless specifically stated 
 ## <span id="related_topics"></span>Related topics
 
 
-[Storage driver design guide](http://go.microsoft.com/fwlink/p/?LinkId=798409)
+[Storage driver design guide](https://go.microsoft.com/fwlink/p/?LinkId=798409)
 
 [JEDEC Byte-Addressable Energy-Backed Interface NVDIMM Device-Specific Method (\_DSM)](jedec-byte-addressable-energy-backed-interface-nvdimms-device-specific-method---dsm-.md)
 

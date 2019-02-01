@@ -53,7 +53,7 @@ Kbdclass and Mouclass each feature:
 ## Configuration of device objects
 
 
-The following figure shows the configuration of device objects for a Plug and Play PS/2-style keyboard and mouse device. Each class driver creates an upper-level class [*filter device object*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-filter-device-object) (filter DO) that is attached to a function device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)) through an optional upper-level device filter DO. An upper-level device filter driver creates the upper-level device filter DO. I8042prt creates the function DO and attaches it to a physical device object ([*PDO*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdo)) created by the root bus driver.
+The following figure shows the configuration of device objects for a Plug and Play PS/2-style keyboard and mouse device. Each class driver creates an upper-level class *filter device object* (filter DO) that is attached to a function device object (*FDO*) through an optional upper-level device filter DO. An upper-level device filter driver creates the upper-level device filter DO. I8042prt creates the function DO and attaches it to a physical device object (*PDO*) created by the root bus driver.
 
 ![diagram illustrating the configuration of device objects for a plug and play ps/2-style keyboard and mouse device](images/km-ovr2.png)
 
@@ -113,7 +113,7 @@ After Kbdclass and Mouclass receive a create request they do the following for P
 
 The class drivers must connect their class service to a device before the device can be opened. The class drivers connect their class service after they attach a class DO to a device stack. The function driver uses the class service callback to transfer input data from a device to the class data queue for the device. The function driver's ISR dispatch completion routine for a device calls the class service callback. Kbdclass provides the class service callback [**KeyboardClassServiceCallback**](https://msdn.microsoft.com/library/windows/hardware/ff542324), and Mouclass provides the class service callback [**MouseClassServiceCallback**](https://msdn.microsoft.com/library/windows/hardware/ff542394).
 
-A vendor can modify the operation of a class service callback by installing an upper-level filter driver for a device. The sample filter driver [Kbfiltr](http://go.microsoft.com/fwlink/p/?linkid=256125) defines the [**KbFilter\_ServiceCallback**](https://msdn.microsoft.com/library/windows/hardware/ff542297) callback, and the sample filter driver [Moufiltr](http://go.microsoft.com/fwlink/p/?linkid=256135) defines the [**MouFilter\_ServiceCallback**](https://msdn.microsoft.com/library/windows/hardware/ff542380) callback. The sample filter service callbacks can be configured to modify the input data that is transferred from the port input buffer for a device to the class data queue. For example, the filter service callback can delete, transform, or insert data.
+A vendor can modify the operation of a class service callback by installing an upper-level filter driver for a device. The sample filter driver [Kbfiltr](https://go.microsoft.com/fwlink/p/?linkid=256125) defines the [**KbFilter\_ServiceCallback**](https://msdn.microsoft.com/library/windows/hardware/ff542297) callback, and the sample filter driver [Moufiltr](https://go.microsoft.com/fwlink/p/?linkid=256135) defines the [**MouFilter\_ServiceCallback**](https://msdn.microsoft.com/library/windows/hardware/ff542380) callback. The sample filter service callbacks can be configured to modify the input data that is transferred from the port input buffer for a device to the class data queue. For example, the filter service callback can delete, transform, or insert data.
 
 The class and filter service callbacks are connected in the following way:
 
@@ -266,7 +266,7 @@ The following is a list of registry keys associated with the mouse class driver.
 -   ConnectMultiplePorts – Determines whether there is one or more than one port device object for each class device object. This entry is used primarily by device drivers.
 -   MouseDataQueueSize - Specifies the number of mouse events buffered by the mouse driver. It also is used in calculating the size of the mouse driver's internal buffer in the nonpaged memory pool.
 
-Additional details on each specific registry key are available on http://technet.microsoft.com
+Additional details on each specific registry key are available on https://technet.microsoft.com
 
 ## Absolute pointing devices
 

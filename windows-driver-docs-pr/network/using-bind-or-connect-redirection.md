@@ -13,7 +13,7 @@ The connect/bind redirection feature of the Windows Filtering Platform (WFP) ena
 
 This feature is available in Windows 7 and later.
 
-**Note**  The ClassifyFunctions\_ProxyCallouts.cpp module in the [WFP driver sample](http://go.microsoft.com/fwlink/p/?LinkId=618934) includes code that demonstrates connect/bind redirection.
+**Note**  The ClassifyFunctions\_ProxyCallouts.cpp module in the [WFP driver sample](https://go.microsoft.com/fwlink/p/?LinkId=618934) includes code that demonstrates connect/bind redirection.
 
  
 

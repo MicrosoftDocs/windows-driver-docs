@@ -53,12 +53,12 @@ WinUSB allows you to modify its default behavior by applying policies to an endp
 <tr class="odd">
 <td>0x03</td>
 <td>PIPE_TRANSFER_TIMEOUT</td>
-<td>Waits for a time-out interval before canceling the request.</td>
+<td>Waits for a time-out interval, in milliseconds, before canceling the request.</td>
 <td><p>Bulk (IN)</p>
 <p>Bulk (OUT)</p>
 <p>Interrupt (IN)</p>
 <p>Interrupt (OUT)</p></td>
-<td>5 seconds for control; 0 for others</td>
+<td>5 seconds (5000 milliseconds) for control; 0 for others</td>
 </tr>
 <tr class="even">
 <td>0x04</td>

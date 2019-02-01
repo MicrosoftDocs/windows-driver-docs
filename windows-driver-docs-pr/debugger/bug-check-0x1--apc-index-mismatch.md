@@ -56,12 +56,12 @@ The APC\_INDEX\_MISMATCH bug check has a value of 0x00000001. This indicates tha
 
  
 
-Cause
+## Cause
 -----
 
 The most common cause of this bug check is when a file system or driver has a mismatched sequence of calls to disable and re-enable APCs. The key data item is the *Thread*-&gt;**CombinedApcDisable** field. The **CombinedApcDisable** field consists of two separate 16-bit fields: **SpecialApcDisable** and **KernelApcDisable**. A negative value of either field indicates that a driver has disabled special or normal APCs (respectively) without re-enabling them. A positive value indicates that a driver has enabled special or normal APCs too many times.
 
-Resolution
+## Resolution
 ----------
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
@@ -84,7 +84,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
-Remarks
+## Remarks
 -------
 
 This is a kernel internal error. This error occurs on exit from a system call. A possible cause for this bug check is when a file system or driver has a mismatched sequence of system calls to enter or leave guarded or critical regions. For example, each call to [**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021) must have a matching call to [**KeLeaveCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552964). If you are developing a driver, you can use [Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808), a static analysis tool available in the Windows Driver Kit, to detect problems in your code before you ship your driver. Run Static Driver Verifier with the [CriticalRegions](https://msdn.microsoft.com/library/windows/hardware/ff543603) rule to verify that your source code uses these system calls in correct sequence.

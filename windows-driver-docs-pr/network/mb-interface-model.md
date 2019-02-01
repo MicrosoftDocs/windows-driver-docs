@@ -19,7 +19,7 @@ MBIM functions that are backward compatible should implement Microsoft OS descri
 
 Mobile broadband devices that exhibit identity morphing should also implement Microsoft OS descriptors.
 
-These scenarios are discussed in more detail throughout the MB Interface Model topics. The following table summarizes all of the Microsoft OS compatible IDs mentioned in these subtopics. For more information see [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=308932).
+These scenarios are discussed in more detail throughout the MB Interface Model topics. The following table summarizes all of the Microsoft OS compatible IDs mentioned in these subtopics. For more information see [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=308932).
 
 *Microsoft OS compatible IDs*
 

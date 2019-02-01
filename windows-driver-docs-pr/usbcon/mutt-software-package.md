@@ -29,7 +29,7 @@ File name: muttv2_8.msi
 
 7.0 MB
 
-[![download the mutt software package](images/download.png)](http://go.microsoft.com/fwlink/p/?LinkId=786621)
+[![download the mutt software package](images/download.png)](https://go.microsoft.com/fwlink/p/?LinkId=786621)
 
 ## Version Updates
 

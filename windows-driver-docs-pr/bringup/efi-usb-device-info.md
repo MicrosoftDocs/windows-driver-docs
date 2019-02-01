@@ -34,7 +34,7 @@ A EFI\_USB\_CONFIG\_INFO structure that contains information about the supported
 ## Remarks
 
 
-The **EFI\_USB\_CONFIG\_DESCRIPTOR** and **EFI\_USB\_DEVICE\_DESCRIPTOR** structures are defined in UEFI specification 2.3. For more information, visit the [UEFI.org](http://go.microsoft.com/fwlink/p/?linkid=109526) website.
+The **EFI\_USB\_CONFIG\_DESCRIPTOR** and **EFI\_USB\_DEVICE\_DESCRIPTOR** structures are defined in UEFI specification 2.3. For more information, visit the [UEFI.org](https://go.microsoft.com/fwlink/p/?linkid=109526) website.
 
 ## Requirements
 

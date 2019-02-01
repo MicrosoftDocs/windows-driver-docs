@@ -30,7 +30,7 @@ The instructions in this document are based on the following assumptions:
 
 1.  Connect the test system to a kernel debugger.
 
-    For more information, see [Download and Install Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=236405) and [Windows Debugging](http://go.microsoft.com/fwlink/p/?linkid=242503).
+    For more information, see [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=236405) and [Windows Debugging](https://go.microsoft.com/fwlink/p/?linkid=242503).
 
 2.  Attach MUTT devices into each available port of the host controller or hub to test.
 

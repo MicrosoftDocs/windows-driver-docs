@@ -13,7 +13,7 @@ This section provides information about certain limitations of the Universal Ser
 This section assumes that the reader is familiar with the following:
 
 -   The official [USB 3.0 specification](http://www.usb.org/developers/docs/).
--   The [USB Selective Suspend](http://go.microsoft.com/fwlink/p/?linkid=230964) mechanism. The mechanism is described in the blog post, [Demystifying USB Selective Suspend](http://go.microsoft.com/fwlink/p/?linkid=230962).
+-   The [USB Selective Suspend](https://go.microsoft.com/fwlink/p/?linkid=230964) mechanism. The mechanism is described in the blog post, [Demystifying USB Selective Suspend](https://go.microsoft.com/fwlink/p/?linkid=230962).
 
 ## In this section
 
@@ -37,7 +37,7 @@ This section assumes that the reader is familiar with the following:
 <tr class="even">
 <td><p><a href="usb-3-0-lpm-mechanism-.md" data-raw-source="[USB 3.0 LPM Mechanism](usb-3-0-lpm-mechanism-.md)">USB 3.0 LPM Mechanism</a></p></td>
 <td><p>This topic describes the USB 3.0 LPM mechanism.</p>
-<p>There is an addendum to the official <a href="http://go.microsoft.com/fwlink/p/?linkid=230961" data-raw-source="[USB 2.0 Specification](http://go.microsoft.com/fwlink/p/?linkid=230961)">USB 2.0 Specification</a> (USB2_LinkPowerMangement_ECN), which defines LPM for newer USB 2.0 hardware. This topic does not cover that USB 2.0 LPM mechanism. The purpose of this topic is to describe USB 3.0 LPM states, specifically U1 and U2.</p></td>
+<p>There is an addendum to the official <a href="https://go.microsoft.com/fwlink/p/?linkid=230961" data-raw-source="[USB 2.0 Specification](https://go.microsoft.com/fwlink/p/?linkid=230961)">USB 2.0 Specification</a> (USB2_LinkPowerMangement_ECN), which defines LPM for newer USB 2.0 hardware. This topic does not cover that USB 2.0 LPM mechanism. The purpose of this topic is to describe USB 3.0 LPM states, specifically U1 and U2.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="u1-and-u2-transitions.md" data-raw-source="[U1 and U2 Transitions](u1-and-u2-transitions.md)">U1 and U2 Transitions</a></p></td>

@@ -97,7 +97,7 @@ This section describes the changes in the debugging tools for Windows.
 
 * **New Debugger Data Model API** – A new object oriented debugger data model interface to support debugger automation is now available using the dbgmodel.h header. The debugger data model is an extensible object model that is central to the way in which new debugger extensions (including those in JavaScript, NatVis, and C++) both consume information from the debugger and produce information that can be accessed from the debugger as well as other extensions. Constructs which are written to the data model APIs are available in the debugger's dx expression evaluator as well as from JavaScript extensions or C++ extensions. Documentation will be available at: [Overview of the Debugger Data Model C++ Interface](debugger/data-model-cpp-overview.md)  and the [dbgmodel.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/) header reference topics.
 
-* **IPv6** - We are adding support for IPv6 to KDNET. To make room for the larger headers required for IPv6, we decreased the payload size of packets. As a result, we’re declaring a new version of the KDNET protocol, so that host PCs running the latest version of the debugger can be used to debug target PCs that only support IPv4. There is a version of WinDbg Preview available at http://aka.ms/windbgpreview that supports IPv6. Follow the Debugging Tools for Windows blog for updates on KDNET IPv6 support and see [Setting Up KDNET Network Kernel Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) for more details. 
+* **IPv6** - We are adding support for IPv6 to KDNET. To make room for the larger headers required for IPv6, we decreased the payload size of packets. As a result, we’re declaring a new version of the KDNET protocol, so that host PCs running the latest version of the debugger can be used to debug target PCs that only support IPv4. There is a version of WinDbg Preview available at https://aka.ms/windbgpreview that supports IPv6. Follow the Debugging Tools for Windows blog for updates on KDNET IPv6 support and see [Setting Up KDNET Network Kernel Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) for more details. 
 
 **Debugging in Windows 10, version 1803**
 
@@ -791,7 +791,7 @@ The following is a list of updates to Bluetooth in Windows 10 version 1703:
 
 * Hands-Free Profile (HFP) 1.6 specification with Wideband speech on Windows 10 for desktop editions.
 * Support for [Call Control APIs](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Calls) on Windows 10 for desktop editions.
-* Support for GATT Server, Bluetooth LE Peripheral and non-paired support for Bluetooth LE. See our [developer post](http://aka.ms/bluetoothgatt) for more details.
+* Support for GATT Server, Bluetooth LE Peripheral and non-paired support for Bluetooth LE. See our [developer post](https://aka.ms/bluetoothgatt) for more details.
 
 For more information about what's new for Bluetooth, see [Bluetooth](https://docs.microsoft.com/windows-hardware/design/component-guidelines/bluetooth) and [Bluetooth LE pre-pairing](https://docs.microsoft.com/windows-hardware/design/component-guidelines/bluetooth-prepairing).
 

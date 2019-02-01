@@ -29,7 +29,7 @@ The definition of a driver's custom IO\_ERR\_*XXX* values and matching error mes
 
 A message text file consists of two sections: a header section and a message section. The header section permits the declaration of symbolic names for numerical values, while the message section specifies the IO\_ERR\_*XXX* values and matching error message templates.
 
-For an example of a message text file, see the Serlog.mc file in the [Serial driver sample](http://go.microsoft.com/fwlink/p/?LinkId=617962) available on GitHub.
+For an example of a message text file, see the Serlog.mc file in the [Serial driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617962) available on GitHub.
 
 ### Header Section
 

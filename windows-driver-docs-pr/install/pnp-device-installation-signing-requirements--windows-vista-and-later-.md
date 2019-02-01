@@ -20,7 +20,7 @@ The driver signing requirements for Plug and Play (PnP) device installation depe
 
 ### <a href="" id="pnp-signing-requirements-for-public-release-of-a-driver"></a> PnP Signing Requirements for Public Release of a Driver
 
-The [Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=227016) has [test categories](http://go.microsoft.com/fwlink/p/?linkid=189178) for a variety of device types. If a test category for the device type is included in this list, you should obtain a [WHQL release signature](whql-release-signature.md).
+The [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) has [test categories](https://go.microsoft.com/fwlink/p/?linkid=189178) for a variety of device types. If a test category for the device type is included in this list, you should obtain a [WHQL release signature](whql-release-signature.md).
 
 A valid WHQL release signature verifies that the driver complies with the requirements of the HCK, verifies the identity of the publisher, and verifies that the driver has not been altered.
 

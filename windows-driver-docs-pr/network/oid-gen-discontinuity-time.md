@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # OID\_GEN\_DISCONTINUITY\_TIME
 
 
-As a query, use the OID\_GEN\_DISCONTINUITY\_TIME OID to determine the discontinuity time of a network interface (*ifCounterDiscontinuityTime* from [RFC 2863](http://go.microsoft.com/fwlink/p/?linkid=84054)).
+As a query, use the OID\_GEN\_DISCONTINUITY\_TIME OID to determine the discontinuity time of a network interface (*ifCounterDiscontinuityTime* from [RFC 2863](https://go.microsoft.com/fwlink/p/?linkid=84054)).
 
 **Version Information**
 

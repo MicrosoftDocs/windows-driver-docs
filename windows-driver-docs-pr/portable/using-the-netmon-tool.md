@@ -15,8 +15,8 @@ The Network Monitor tool (*NetMon.exe*) is a Windows-based application that you 
 
 To install and configure the Network Monitor tool, complete the following steps.
 
-1.  Download and install *NetMon.exe* from [here](http://go.microsoft.com/fwlink/p/?linkid=248501).
-2.  Download and install the Windows Driver Kit from [here](http://go.microsoft.com/fwlink/p/?linkid=178709).
+1.  Download and install *NetMon.exe* from [here](https://go.microsoft.com/fwlink/p/?linkid=248501).
+2.  Download and install the Windows Driver Kit from [here](https://go.microsoft.com/fwlink/p/?linkid=178709).
 3.  Install the WPD parsers on your development machine by starting an instance of *Powershell.exe* with *Administrator* permissions and running the following sequence of commands.
     1.  PowerShell -ExecutionPolicy RemoteSigned
     2.  cd “\\Program Files (x86)\\Windows Kits\\8.0\\Tools\\x86\\Network Monitor Parsers\\usb”

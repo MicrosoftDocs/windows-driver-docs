@@ -9,28 +9,22 @@ ms.localizationpriority: medium
 
 # Hardware submissions
 
-
-The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Windows Hardware Dev Center dashboard. For more information, see the [Windows hardware certification](http://go.microsoft.com/fwlink/p/?LinkId=224782) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
+The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Windows Hardware Dev Center dashboard. For more information, see the [Windows hardware certification](https://go.microsoft.com/fwlink/p/?LinkId=224782) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
 
 To develop your device, download the [Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
-To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10. For previous operating systems, download the [Windows Hardware Certification Kit (Windows HCK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) or [Windows Logo Kit (WLK)](http://go.microsoft.com/fwlink/p/?LinkId=219237).
+To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10. For previous operating systems, download the [Windows Hardware Certification Kit (Windows HCK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) or [Windows Logo Kit (WLK)](https://go.microsoft.com/fwlink/p/?LinkId=219237).
 
 After you develop and test your product, you can submit the results with a hardware submission.
 
 > [!NOTE]
-> We strongly encourage you to include public driver symbols as part your HLK package. Including symbols will improve the data returned in your [driver reliability report](driver-failure-reporting.md) and are never shared externally.  See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published. 
+> We strongly encourage you to include public driver symbols as part your HLK package. Including symbols will improve the data returned in your [driver reliability report](driver-failure-reporting.md) and are never shared externally.  See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published.
 
- 
+- To submit an HLK or HCK package, see [Create a new hardware submission](create-a-new-hardware-submission.md).
 
--   To submit an HLK or HCK package, see [Create a new hardware submission](create-a-new-hardware-submission.md).
+- To submit a WLK package, see [Create a new WLK device certification submission](create-a-new-hardware-logo-submission.md) for more information.
 
-<!-- -->
-
--   To submit a WLK package, you must continue to use the Sysdev dashboard. see [Create a new hardware logo submission](https://msdn.microsoft.com/library/windows/hardware/br230808.aspx) for more information.
-
-## <span id="Drivers_summary_page"></span><span id="drivers_summary_page"></span><span id="DRIVERS_SUMMARY_PAGE"></span>Drivers summary page
-
+## Drivers summary page
 
 The Drivers summary page contains a list of all hardware certification submissions that you have created or are shared with you. You can create a new hardware submission by selecting the **Create new driver** button.
 
@@ -96,12 +90,9 @@ The hardware certification submission list displays the following information ab
 </tbody>
 </table>
 
- 
-
 The search box allows you to search for a specific submission or set of submissions. You can search for exact or partial matches for the values in the **ID**, **Name**, **State**, and **Certification type** columns.
 
-## <span id="Hardware_submission_page"></span><span id="hardware_submission_page"></span><span id="HARDWARE_SUBMISSION_PAGE"></span>Hardware submission page
-
+## Hardware submission page
 
 A hardware submission page contains information about a specific hardware submission, including status, packages, certification info, and shipping labels. For information about how to create a hardware submission, see [Create a new hardware submission](create-a-new-hardware-submission.md).
 
@@ -111,9 +102,9 @@ The left side of the page contains a list of the 10 most recently viewed submiss
 
 You can monitor the progress of your submission with the progress tracker at the top of the page. Once all steps show a green check, the submission is complete and your company will receive a notification.
 
-### <span id="Packages_and_signing_properties"></span><span id="packages_and_signing_properties"></span><span id="PACKAGES_AND_SIGNING_PROPERTIES"></span>Packages and signing properties
+### Packages and signing properties
 
-This section allows you to manage your packages.
+This section shows you how to manage your packages.
 
 Select **Upload new** to upload a new package.
 
@@ -123,7 +114,7 @@ The uploaded package list displays your uploaded packages for this submission. S
 
 **Additional certifications** displays any chosen additional certifications.
 
-### <span id="Certification"></span><span id="certification"></span><span id="CERTIFICATION"></span>Certification
+### Certification
 
 This section displays certification information. Select **See more info** to expand this section. You can review the certification information you provided, which includes the following:
 
@@ -159,7 +150,7 @@ This section displays certification information. Select **See more info** to exp
 </tr>
 <tr class="even">
 <td><p>Announcement date</p></td>
-<td><p>The date when you want your product included on the Windows Server Catalog, the Windows Certified Product List, and the Universal Driver List.</p></td>
+<td><p>The date when you want your product included on the Windows Server Catalog, the Windows Certified Product List, and the Universal Driver List. The default setting is **Today**.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Marketing names</p></td>
@@ -168,13 +159,13 @@ This section displays certification information. Select **See more info** to exp
 </tbody>
 </table>
 
-Submissions are automatically assigned Declaritive and Universal attributes based off the entire submission contents.  If you want a submission to be marked as `Declaritive=True` and/or `Universal=True`, all files and INFs within the submission must be compliant with the appropriate attribute(s).  For example, a merged HLK package can contain two driver sets for different OS certifiations. If one set is Declaritive and another set is not, the entire submission would be marked as `Declarative=False`. Each set should be seperated into two submissions to ensure they are marked appropriately. 
+Submissions are automatically assigned Declarative and Universal attributes based off the entire submission contents.  If you want a submission to be marked as `Declarative=True` and/or `Universal=True`, all files and INFs within the submission must be compliant with the appropriate attribute(s).  For example, a merged HLK package can contain two driver sets for different OS certifiations. If one set is Declarative and another set is not, the entire submission would be marked as `Declarative=False`. Each set should be separated into two submissions to ensure they are marked appropriately. 
 
 If you want to add or update your announcement date, use the **Announcement date (UTC)** field and select **Submit**.
 
 You can also add or remove marketing names. To add a name, enter it in the **Marketing name** text box and select **Add**. To remove a name, select the red X button next to the marketing name you want to remove. You can also add multiple names at once by selecting **Add multiple names**. When you are finished, select **Submit**.
 
-### <span id="Distribution"></span><span id="distribution"></span><span id="DISTRIBUTION"></span>Distribution
+### Distribution
 
 This section displays shipping label information for this submission. For information about how to use shipping labels, see the [Manage driver distribution with shipping labels](manage-driver-distribution-by-submission.md) section.
 
@@ -228,21 +219,10 @@ The shipping label list displays the shipping labels for this submission. This l
 </tbody>
 </table>
 
- 
-
 The status graphic displays the publish status for each shipping label. A green check means the label has been published. A yellow circle means the label is not published yet.
 
-## <span id="In_this_section"></span><span id="in_this_section"></span><span id="IN_THIS_SECTION"></span>In this section
+## In this section
 
 - [Create a new hardware submission](create-a-new-hardware-submission.md)
 
 - [Manage hardware submissions](manage-your-hardware-submissions.md)
-
- 
-
- 
-
-
-
-
-

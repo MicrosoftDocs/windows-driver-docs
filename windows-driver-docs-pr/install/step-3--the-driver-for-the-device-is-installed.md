@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 
 After Windows has selected the best driver for the new device, it saves information about the device and driver in the following way:
 
--   Multiple devices of the same model and version can be connected to the computer. Each device connection is known as a [*device instance*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-instance).
+-   Multiple devices of the same model and version can be connected to the computer. Each device connection is known as a *device instance*.
 
-    Windows represents each device instance as a unique device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)). A devnode contains information about the device, such as whether the device was started and which drivers have registered for notification on the device.
+    Windows represents each device instance as a unique device node (*devnode*). A devnode contains information about the device, such as whether the device was started and which drivers have registered for notification on the device.
 
--   Windows represents a driver for the device as a [*driver node*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-node). A driver node is based on the information from a matching device entry within the [**INF *Models* section**](inf-models-section.md) of the [driver package's](driver-packages.md) [INF file](inf-files.md). A driver node includes all the software support for a device, such as any services, device-specific co-installers, and registry entries.
+-   Windows represents a driver for the device as a *driver node*. A driver node is based on the information from a matching device entry within the [**INF *Models* section**](inf-models-section.md) of the [driver package's](driver-packages.md) [INF file](inf-files.md). A driver node includes all the software support for a device, such as any services, device-specific co-installers, and registry entries.
 
 As soon as the device and driver are instantiated, Windows installs the driver by following these steps:
 

@@ -20,7 +20,7 @@ expand Windows6.0-KB123456-x86.MSU [dest directory] -F:*
 expand Windows6.0-KB123456-x86.CAB [dest directory] -F:*
 ```
 
-Following these two commands, the directory will contain a number of manifest files and subdirectories. One of these subdirectories will contain Ntprint.inf and the uncompressed driver components. This directory has a name that begins with the processor architecture for the fix (for example, x86), to which is appended "ntprint.inf", a GUID, and additional tracking information. For more information, see the definition of the **expand** command on the Microsoft [TechNet](http://go.microsoft.com/fwlink/p/?linkid=122164) Web site.
+Following these two commands, the directory will contain a number of manifest files and subdirectories. One of these subdirectories will contain Ntprint.inf and the uncompressed driver components. This directory has a name that begins with the processor architecture for the fix (for example, x86), to which is appended "ntprint.inf", a GUID, and additional tracking information. For more information, see the definition of the **expand** command on the Microsoft [TechNet](https://go.microsoft.com/fwlink/p/?linkid=122164) Web site.
 
  
 

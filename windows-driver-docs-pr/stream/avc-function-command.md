@@ -119,7 +119,7 @@ On request, this member must be set to one of the enumerators from the **AvcComm
 On response, this member is set to a value from the **AvcResponseCode** enumeration.
 
 <span id="SubunitAddr"></span><span id="subunitaddr"></span><span id="SUBUNITADDR"></span>**SubunitAddr**  
-Set this to the address of nonpaged memory containing the desired subunit address encoded according to Section 5.3.3 of the AV/C Digital Interface Command Set General Specification, Rev 3.0. This specification can be found at the [1394 Trade Association](http://go.microsoft.com/fwlink/p/?linkid=8728) website. No length is necessary because the subunit address encoding implies this. This parameter is ignored if **SubunitAddrFlag** is zero.
+Set this to the address of nonpaged memory containing the desired subunit address encoded according to Section 5.3.3 of the AV/C Digital Interface Command Set General Specification, Rev 3.0. This specification can be found at the [1394 Trade Association](https://go.microsoft.com/fwlink/p/?linkid=8728) website. No length is necessary because the subunit address encoding implies this. This parameter is ignored if **SubunitAddrFlag** is zero.
 
 <span id="AlternateOpcodes"></span><span id="alternateopcodes"></span><span id="ALTERNATEOPCODES"></span>**AlternateOpcodes**  
 Set this to the address of nonpaged memory containing the desired alternate opcode list. The first byte of the opcode list is the count of opcodes to follow (equivalent to the number of bytes). The total length of the memory containing the alternate opcode list is AlternateOpcodes\[0\]+1. This parameter is ignored if **AlternateOpcodesFlag** is zero.

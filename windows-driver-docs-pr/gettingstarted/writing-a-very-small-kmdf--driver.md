@@ -15,13 +15,13 @@ This topic describes how to write a very small [Universal Windows driver](https:
 
 To get started, be sure you have [Microsoft Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=698539), the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk), and the [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p/?LinkId=733614) installed.
 
-[Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
+[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
 
-## <span id="Create_and_build_a_driver_package"></span><span id="create_and_build_a_driver_package"></span><span id="CREATE_AND_BUILD_A_DRIVER_PACKAGE"></span>Create and build a driver package
+## Create and build a driver
 
 
 1.  Open Microsoft Visual Studio. On the **File** menu, choose **New &gt; Project**.
-2.  In the **New Project** dialog box, select **WDF**.
+2.  In the New Project dialog box, in the left pane, go to **Visual C++ &gt; Windows Drivers &gt; WDF**.
 3.  In the middle pane, select **Kernel Mode Driver, Empty (KMDF)**.
 4.  In the **Name** field, enter "KmdfHelloWorld" for the project name.
 
@@ -36,11 +36,11 @@ To get started, be sure you have [Microsoft Visual Studio](https://go.microsoft.
 
     Visual Studio creates one project and a solution. You can see them in the **Solution Explorer** window, shown here. (If the Solution Explorer window is not visible, choose **Solution Explorer** from the **View** menu.) The solution has a driver project named KmdfHelloWorld.
 
-    ![screen shot of the solution explorer window, showing the package project (kmdfhelloworld packages) and the empty driver project (kmdfhelloworld)](images/vs2015-kmdf-hello-world-solution-explorer.png)
+    ![screen shot of the solution explorer window, showing the solution and the empty driver project (kmdfhelloworld)](images/vs2015-kmdf-hello-world-solution-explorer.png)
 
-7.  In the **Solution Explorer** window, right-click **KmdfHelloWorld**, and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**
+7.  In the **Solution Explorer** window, right-click the **KmdfHelloWorld** project and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**  Click **Cancel**.
 
-8.  In the **Solution Explorer** window, right-click **KmdfHelloWorld** and choose **Add &gt; New Item**.
+8.  In the **Solution Explorer** window, again right-click the **KmdfHelloWorld** project and choose **Add &gt; New Item**.
 9.  In the **Add New Item** dialog box, select **C++ File**. For **Name**, enter "Driver.c".
 
     > [!NOTE]
@@ -221,19 +221,19 @@ Next, you'll build your driver.
 
 ## Build the driver
 
-1. In the **Solution Explorer** window, right-click **Solution 'KmdfHelloWorld' (1 project)** and choose **Configuration Manager**. Choose a configuration and platform for both the driver project and the package project. For this exercise, we choose Debug and x64.
+1. In the **Solution Explorer** window, right-click **Solution 'KmdfHelloWorld' (1 project)** and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For this exercise, we choose **Debug** and **x64**.
 
 2. In the **Solution Explorer** window, right-click **KmdfHelloWorld** and choose **Properties**. In **Wpp Tracing &gt; All Options**, set **Run Wpp tracing** to **No**. Click **Apply** and then **OK**.
-3. To build your driver and create a driver package, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) When you have verified that the solution built successfully, you can close Visual Studio.
-4. To see the built driver, in File Explorer, go to your **KmdfHelloWorld** folder, and then to **C:\\KmdfHelloWorld\\x64\\Debug**. The folder includes:
+3. To build your driver, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) When you have verified that the solution built successfully, you can close Visual Studio.
+4. To see the built driver, in File Explorer, go to your **KmdfHelloWorld** folder, and then to **C:\\KmdfHelloWorld\\x64\\Debug\KmdfHelloWorld**. The folder includes:
 
     -   KmdfHelloWorld.sys -- the kernel-mode driver file
     -   KmdfHelloWorld.inf -- an information file that Windows uses when you install the driver
-    -   KmdfHelloWorld.cat -- a catalog file that the installer uses to verify the test signature for the driver package
+    -   KmdfHelloWorld.cat -- a catalog file that the installer uses to verify the driver's test signature
 
 
 > [!TIP]
-> If you see `DriverVer set to a date in the future` when building your driver, change your driver package project settings so that Inf2Cat sets `/uselocaltime`. To do so, use **Configuration Properties->Inf2Cat->General->Use Local Time**. Now both [Stampinf](../devtest/stampinf-command-options.md) and Inf2Cat use local time.
+> If you see `DriverVer set to a date in the future` when building your driver, change your driver project settings so that Inf2Cat sets `/uselocaltime`. To do so, use **Configuration Properties->Inf2Cat->General->Use Local Time**. Now both [Stampinf](../devtest/stampinf-command-options.md) and Inf2Cat use local time.
 
 ## <span id="Deploy_the_driver"></span><span id="deploy_the_driver"></span><span id="DEPLOY_THE_DRIVER"></span>Deploy the driver
 
@@ -255,7 +255,7 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
 6.  For **Target Device Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named MyTestComputer.
 7.  Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. For this exercise, the hardware ID is Root\\KmdfHelloWorld. Click **OK**.
 
-    ![screen shot showing the kmdfhelloworld package property pages window with the deployment driver install selected ](images/vs2015-kmdf-hello-world-property-pages.png)
+    ![screen shot showing the kmdfhelloworld property pages window with the deployment driver install selected ](images/vs2015-kmdf-hello-world-property-pages.png)
 
     >[!NOTE]
     > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](device-nodes-and-device-stacks.md) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfHelloWorld &gt; Driver Files**, and double-click KmdfHelloWorld.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
@@ -287,7 +287,7 @@ With your Hello World driver deployed to the target computer, now you'll install
         *devcon install \<INF file\> \<hardware ID\>*
 
         The INF file required for installing this driver is KmdfHelloWorld.inf. The INF file contains the hardware ID for installing the driver binary, *KmdfHelloWorld.sys*. Recall that the hardware ID, located in the INF file, is **Root\\KmdfHelloWorld**.
-    2. Open a Command Prompt window as Administrator. Navigate to your driver package folder, then enter this command:
+    2. Open a Command Prompt window as Administrator. Navigate to your folder containing the built driver .sys file and enter this command:
 
         **devcon install kmdfhelloworld.inf root\\kmdfhelloworld**
 
@@ -315,10 +315,10 @@ Now that you have installed your KmdfHelloWorld driver on the target computer, y
 
 4. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
 
-    -   [lm](http://go.microsoft.com/fwlink/p?linkid=399236)
-    -   [.sympath](http://go.microsoft.com/fwlink/p?linkid=399238)
-    -   [.reload](http://go.microsoft.com/fwlink/p?linkid=399239)
-    -   [x KmdfHelloWorld!\*](http://go.microsoft.com/fwlink/p?linkid=399240)
+    -   [lm](https://go.microsoft.com/fwlink/p?linkid=399236)
+    -   [.sympath](https://go.microsoft.com/fwlink/p?linkid=399238)
+    -   [.reload](https://go.microsoft.com/fwlink/p?linkid=399239)
+    -   [x KmdfHelloWorld!\*](https://go.microsoft.com/fwlink/p?linkid=399240)
 
 5. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
 6. To stop the debugging session, choose **Detach Debuggee** from the **Debug** menu.
@@ -332,9 +332,9 @@ For more information about remote debugging, see [Remote Debugging Using WinDbg]
 
 ## <span id="related_topics"></span>Related topics
 
-[Developing, Testing, and Deploying Drivers](http://go.microsoft.com/fwlink/p?linkid=399234)
+[Developing, Testing, and Deploying Drivers](https://go.microsoft.com/fwlink/p?linkid=399234)
 
-[Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405)
+[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405)
 
 [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)
 

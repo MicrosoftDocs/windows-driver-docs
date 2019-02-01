@@ -125,7 +125,7 @@ A minidriver should implement support for basic *get*-property queries. The topi
 
 When developing an encoder filter, move encoding functionality into a separate filter from a video capture filter. Define your own private mediums so that graph builders can properly connect encoder and capture filters. If your hardware is capable of bus mastering non-encoded content, then you may also expose public mediums. If you implement both public and private mediums, then list the private mediums first because it reduces graph building time; to find the correct filter when building a filter graph.
 
-For more information about the issues and reasons to separate encoding functionality into its own filter, see the [Designing Video Capture Boards for Use with the Microsoft ActiveX Video Control](http://go.microsoft.com/fwlink/p/?linkid=204793) paper on the Microsoft website. For more information about using mediums and multiple instances of a filter (in separate filter graphs) see [Mediums and Categories](mediums-and-categories.md).
+For more information about the issues and reasons to separate encoding functionality into its own filter, see the [Designing Video Capture Boards for Use with the Microsoft ActiveX Video Control](https://go.microsoft.com/fwlink/p/?linkid=204793) paper on the Microsoft website. For more information about using mediums and multiple instances of a filter (in separate filter graphs) see [Mediums and Categories](mediums-and-categories.md).
 
  
 

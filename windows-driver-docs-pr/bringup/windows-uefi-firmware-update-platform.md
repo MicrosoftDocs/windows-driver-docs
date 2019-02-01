@@ -66,7 +66,7 @@ For the purposes of updating device firmware, the device firmware can be assigne
 
 In order for a system to be compatible with the Windows firmware updating mechanism, it must meet the following requirements:
 
--   The system must implement UpdateCapsule and QueryCapsuleCapabilities as defined by section 7.5.3 of the [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkId=218221).
+-   The system must implement UpdateCapsule and QueryCapsuleCapabilities as defined by section 7.5.3 of the [UEFI specification](https://go.microsoft.com/fwlink/p/?LinkId=218221).
 
     UpdateCapsule is used to pass the firmware update payload between Windows and the platform firmware.
 

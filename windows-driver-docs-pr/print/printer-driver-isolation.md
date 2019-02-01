@@ -56,20 +56,20 @@ The following table shows the spooler functions that an administrator can use to
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=135631" data-raw-source="[GetPrinterDataEx](http://go.microsoft.com/fwlink/p/?linkid=135631)">GetPrinterDataEx</a></p></td>
+<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=135631" data-raw-source="[GetPrinterDataEx](https://go.microsoft.com/fwlink/p/?linkid=135631)">GetPrinterDataEx</a></p></td>
 <td><p>Get the driver-isolation settings for a printer.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=135632" data-raw-source="[SetPrinterDataEx](http://go.microsoft.com/fwlink/p/?linkid=135632)">SetPrinterDataEx</a></p></td>
+<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=135632" data-raw-source="[SetPrinterDataEx](https://go.microsoft.com/fwlink/p/?linkid=135632)">SetPrinterDataEx</a></p></td>
 <td><p>Set the driver-isolation settings for a printer.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=135633" data-raw-source="[EnumPrinterDataEx](http://go.microsoft.com/fwlink/p/?linkid=135633)">EnumPrinterDataEx</a></p></td>
+<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=135633" data-raw-source="[EnumPrinterDataEx](https://go.microsoft.com/fwlink/p/?linkid=135633)">EnumPrinterDataEx</a></p></td>
 <td><p>Enumerate driver-isolation settings for a printer.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=135634" data-raw-source="[FindFirstPrinterChangeNotification](http://go.microsoft.com/fwlink/p/?linkid=135634)">FindFirstPrinterChangeNotification</a></p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=135635" data-raw-source="[FindNextPrinterChangeNotification](http://go.microsoft.com/fwlink/p/?linkid=135635)">FindNextPrinterChangeNotification</a></p></td>
+<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=135634" data-raw-source="[FindFirstPrinterChangeNotification](https://go.microsoft.com/fwlink/p/?linkid=135634)">FindFirstPrinterChangeNotification</a></p>
+<p><a href="https://go.microsoft.com/fwlink/p/?linkid=135635" data-raw-source="[FindNextPrinterChangeNotification](https://go.microsoft.com/fwlink/p/?linkid=135635)">FindNextPrinterChangeNotification</a></p></td>
 <td><p>Request notifications of changes to the driver-isolation settings for a printer.</p></td>
 </tr>
 </tbody>

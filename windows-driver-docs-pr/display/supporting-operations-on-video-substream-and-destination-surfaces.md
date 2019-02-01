@@ -31,7 +31,7 @@ In addition to the operations on video substream surfaces that your driver's [**
 <span id="Color_Filling_Substream_Surfaces"></span><span id="color_filling_substream_surfaces"></span><span id="COLOR_FILLING_SUBSTREAM_SURFACES"></span>**Color Filling Substream Surfaces**  
 The VMR and other Microsoft DirectShow components must be able to fill video substream surfaces to a known initial color value, such as transparent black. Therefore, your driver should support calls to its [*DdBlt*](https://msdn.microsoft.com/library/windows/hardware/ff549205) callback function using the DDBLT\_COLORFILL flag where the video substream surface is the target for the bit-block transfer (blt).
 
-For video substream surfaces with the AYUV [*FOURCC*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fourcc) format, the VMR specifies the AYUV color for transparent black in the **dwFillColor** member of the DDBLTFX structure. The driver receives DDBLTFX in the **bltFX** member of the DD\_BLTDATA structure when its *DdBlt* function is called. For information about the DDBLTFX structure, see the Windows SDK documentation.
+For video substream surfaces with the AYUV *FOURCC* format, the VMR specifies the AYUV color for transparent black in the **dwFillColor** member of the DDBLTFX structure. The driver receives DDBLTFX in the **bltFX** member of the DD\_BLTDATA structure when its *DdBlt* function is called. For information about the DDBLTFX structure, see the Windows SDK documentation.
 
 The AYUV color for transparent black is set as follows:
 

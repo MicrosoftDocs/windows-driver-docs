@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-This section summarizes the general Setup functions. [*Device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) can use these functions to do the following:
+This section summarizes the general Setup functions. *Device installation applications* can use these functions to do the following:
 
 -   Read and process INF files.
 

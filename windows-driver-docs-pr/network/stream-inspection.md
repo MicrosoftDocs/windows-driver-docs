@@ -49,7 +49,7 @@ For out-of-band stream inspection callouts, [**FwpsStreamContinue0**](https://ms
 
 Injected stream data will not be re-indicated to the callout, but it will be made available to stream callouts from lower-weight sublayers.
 
-The [Windows Filtering Platform Stream Edit Sample](http://go.microsoft.com/fwlink/p/?LinkId=617933) in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub shows how to perform inline and out-of-band editing at the stream layer.
+The [Windows Filtering Platform Stream Edit Sample](https://go.microsoft.com/fwlink/p/?LinkId=617933) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub shows how to perform inline and out-of-band editing at the stream layer.
 
 **Note**  Windows Server 2008 and later do not support removal of a stream filter during the following processes:
 -   The callout is performing out-of-band packet injection.

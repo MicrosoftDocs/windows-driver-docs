@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 In Windows 7, the KMDF 1394VDEV / 1394DIAG samples were removed from the WDK.
 
-To test 1394 driver functionality, please download the [WDF 1394 Virtual Device Hybrid Sample Driver](http://go.microsoft.com/fwlink/p/?LinkId=618052), or access it starting in the Windows 7 WDK.
+To test 1394 driver functionality, please download the [WDF 1394 Virtual Device Hybrid Sample Driver](https://go.microsoft.com/fwlink/p/?LinkId=618052), or access it starting in the Windows 7 WDK.
 
  
 

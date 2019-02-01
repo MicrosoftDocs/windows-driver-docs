@@ -18,11 +18,11 @@ A driver was loaded but Windows cannot find the device.
 
 41
 
-### Display Message (Windows XP and later versions of Windows)
+### Display Message
 
 "Windows successfully loaded the device driver for this hardware but cannot find the hardware device. (Code 41)"
 
-### Recommended Resolution (Windows XP and later versions of Windows)
+### Recommended Resolution
 
 Reinstall the device.
 

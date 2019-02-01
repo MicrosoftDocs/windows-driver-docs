@@ -13,28 +13,27 @@ Joining the Microsoft 3D print ecosystem enables 3D printer manufacturers to off
 
 A plug-and-play 3D printer on Windows 10 is implemented through a pair of drivers published on Windows Update:
 
-**Upper driver (Render filter)**
+### Upper driver (Render filter)
 
--   Implements the slicer. The driver takes [3MF](http://www.3mf.io) as input and produces G-Code or other similar machine level data.
+- Implements the slicer. The driver takes [3MF](http://www.3mf.io) as input and produces G-Code or other similar machine level data.
 
--   Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing applications](https://developer.microsoft.com/windows/hardware/3d-software-partners).
+- Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing applications](https://developer.microsoft.com/windows/hardware/3d-software-partners).
 
-**Lower driver (USB driver)**
+### Lower driver (USB driver)
 
--   Implements wire protocol (typically USB Serial or native USB)
+- Implements wire protocol (typically USB Serial or native USB)
 
--   Kernel mode driver creates the ENUM\\3DPRINTER device node for the upper driver
+- Kernel mode driver creates the ENUM\\3DPRINTER device node for the upper driver
 
--   User mode component (Partner DLL) sends the G-Code to the device
+- User mode component (Partner DLL) sends the G-Code to the device
 
--   Reports device capabilities, job status and implements job cancel
+- Reports device capabilities, job status and implements job cancel
 
--   Installs 3D print service and the 3D port monitor (3dmon)
+- Installs 3D print service and the 3D port monitor (3dmon)
 
 ## Choosing the right driver model
 
-
-![onboarding driver models](images/onboarding-driver-models.png)
+![A 4x4 grid showing pros and cons of Microsoft and custom 3D driver models for Upper and Lower drivers, as described in the next section](images/onboarding-driver-models.png)
 
 ## 3D print driver with custom slicer
 
@@ -48,10 +47,10 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Download and install the [Windows 10 SDK](https://go.microsoft.com/fwlink/p/?LinkID=822845)
 
-    - Download and install the [3D printing SDK](http://go.microsoft.com/fwlink/p/?LinkId=394375)
+    - Download and install the [3D printing SDK](https://go.microsoft.com/fwlink/p/?LinkId=394375)
 
-> [!NOTE]
-> The 3D printing SDK will be installed in C:\\Program Files (x86)\\Microsoft SDKs\\3D Printing.
+   > [!NOTE]
+   > The 3D printing SDK will be installed in C:\\Program Files (x86)\\Microsoft SDKs\\3D Printing.
 
 3. Implement the USB driver
 
@@ -59,8 +58,8 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - If the printer is using the Microsoft Slicer, the Hardware ID that it creates must be **Enum\\3DPrint\\MS3DPrint**
 
-> [!NOTE]
-> If the printer is using a custom slicer, continue with steps 4-7.
+    > [!NOTE]
+    > If the printer is using a custom slicer, continue with steps 4-7.
 
 4. Build the Fabrikam driver (slicer template only)
 
@@ -70,9 +69,9 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Modify the cpp file to include:
 
-        -   3MF parser (use the Windows 10 version 1607 3MF API)
+      - 3MF parser (use the Windows 10 version 1607 3MF API)
 
-        -   Write G-Code
+      - Write G-Code
 
 6. Adding the printer node
 
@@ -92,8 +91,4 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 7. Publish and distribute the driver
 
-    - Follow the guidance in the [Windows Hardware Dev Center dashboard](https://docs.microsoft.com/windows-hardware/drivers/dashboard) topics to publish your driver.
-
-
-
-
+    - Follow the guidance in the [Windows Partner Center](https://docs.microsoft.com/windows-hardware/drivers/dashboard) topics to publish your driver.

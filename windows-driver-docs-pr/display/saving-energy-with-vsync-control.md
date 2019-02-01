@@ -59,6 +59,9 @@ For Windows Vista with SP1 and later versions of the Windows operating systems,
 <span id="Key_Path_"></span><span id="key_path_"></span><span id="KEY_PATH_"></span>Key Path:  
 **RTL\_REGISTRY\_CONTROL\\GraphicsDrivers\\Scheduler**
 
+Full Path:  
+**[HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers\\Scheduler]**
+
 <span id="Key_Value_"></span><span id="key_value_"></span><span id="KEY_VALUE_"></span>Key Value:  
 **VsyncIdleTimeout**
 
@@ -70,6 +73,8 @@ For Windows Vista with SP1 and later versions of the Windows operating systems,
 
 <span id="Value_"></span><span id="value_"></span><span id="VALUE_"></span>Value:  
 0 = disable VSync control (produces the same behavior same as Windows Vista)
+
+
 
  
 

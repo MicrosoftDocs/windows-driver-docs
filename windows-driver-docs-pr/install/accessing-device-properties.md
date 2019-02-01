@@ -30,11 +30,11 @@ To safely access device properties, follow these guidelines:
 
         For more information about device instance properties on Windows 2000, Windows XP, and Windows Server 2003, see [Accessing Device Instance SPDRP_Xxx Properties](accessing-device-instance-spdrp-xxx-properties.md).
 
-    3.  Use persistent storage within the registry for custom settings of devices that are physically present and for those that are not. In this case, you must create your own set of registry keys and values. To do this, use [**SetupDiCreateDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff550973) (to create a new registry key) or use [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) (to open an existing registry key). In these functions, the *KeyType* parameter is used to specify a [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key) (DIREG_DEV) or [*software key*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-key) (DIREG_DRV) for the device.
+    3.  Use persistent storage within the registry for custom settings of devices that are physically present and for those that are not. In this case, you must create your own set of registry keys and values. To do this, use **SetupDiCreateDevRegKey** (DIREG_DEV) or *software key* (DIREG_DRV) for the device.
 
         **Note**  Hardware keys persist in the registry until the device is uninstalled. Software keys can be moved or cleared by the [device installation components](https://msdn.microsoft.com/library/windows/hardware/ff541277) during a driver upgrade
 
-        To save the custom settings, use [RegCloseKey](http://go.microsoft.com/fwlink/p/?linkid=194543) after the registry key has been created or opened.
+        To save the custom settings, use [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) after the registry key has been created or opened.
 
 -   For kernel-mode drivers, use [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203) to access device properties.
 

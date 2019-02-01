@@ -41,7 +41,7 @@ As shown in the figure, there are three basic types of kernel-mode drivers in a 
 
     Highest-level drivers always depend on support from underlying lower-level drivers, such as intermediate-level function drivers and lowest-level hardware bus drivers.
 
-2.  *Intermediate drivers*, such as a virtual disk, mirror, or device-type-specific [*class driver*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-class-driver). Intermediate drivers depend on support from underlying lower-level drivers. Intermediate drivers are subdivided further as follows:
+2.  *Intermediate drivers*, such as a virtual disk, mirror, or device-type-specific *class driver*. Intermediate drivers depend on support from underlying lower-level drivers. Intermediate drivers are subdivided further as follows:
 
     -   [*Function drivers*](function-drivers.md) control specific peripheral devices on an I/O bus.
 
@@ -59,7 +59,7 @@ As shown in the figure, there are three basic types of kernel-mode drivers in a 
 
         Hardware bus drivers work with the Plug and Play manager to configure and reconfigure system hardware resources, for all child devices that are connected to the I/O buses that the driver controls. These hardware resources include mappings for device memory and interrupt requests (IRQs). (Hardware bus drivers subsume some of the functionality that the HAL component provided in releases of the Windows NT-based operating system earlier than Windows 2000.)
 
-    -   [*Legacy drivers*](https://msdn.microsoft.com/library/windows/hardware/ff556305#wdkgloss-legacy-driver) that directly control a physical device are lowest-level drivers.
+    -   *Legacy drivers* that directly control a physical device are lowest-level drivers.
 
  
 

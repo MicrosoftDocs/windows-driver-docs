@@ -105,17 +105,17 @@ If you don’t have an approved standard or EV code signing certificate, you can
 
 ### Standard code signing certificates
 
-- [Buy a Symantec standard code signing certificate](http://go.microsoft.com/fwlink/?LinkId=393247)
+- [Buy a Symantec standard code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393247)
 
 - [Buy a Certum standard code signing cert](https://go.microsoft.com/fwlink/?linkid=843062) (Supported only in the Partner Center)
 
 - [Buy an Entrust standard code signing cert](https://go.microsoft.com/fwlink/?linkid=843067)
 
-- [Buy a GlobalSign standard code signing cert](http://go.microsoft.com/fwlink/p/?LinkId=620887)
+- [Buy a GlobalSign standard code signing cert](https://go.microsoft.com/fwlink/p/?LinkId=620887)
 
 - [Buy a Comodo standard code signing cert](https://go.microsoft.com/fwlink/?linkid=863206)
 
-- [Buy a DigiCert standard code signing certificate](http://go.microsoft.com/fwlink/?LinkId=393249)
+- [Buy a DigiCert standard code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393249)
 
   1. On the **DigiCert Code Signing Certificates for Sysdevs** page, click **Start**.
 
@@ -127,17 +127,17 @@ If you don’t have an approved standard or EV code signing certificate, you can
 
 ### Extended validation code signing certificates(required for UEFI, kernel-mode drivers, and LSA certifications)
 
-- [Buy a Symantec EV code signing certificate](http://go.microsoft.com/fwlink/?LinkId=393248)
+- [Buy a Symantec EV code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393248)
 
 - [Buy a Certum EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843061)
 
 - [Buy an Entrust EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843068)
 
-- [Buy a GlobalSign EV code signing certificate](http://go.microsoft.com/fwlink/p/?LinkId=620888)
+- [Buy a GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
 
 - [Buy a Comodo EV code signing certificate](https://go.microsoft.com/fwlink/?linkid=863208)
 
-- [Buy a DigiCert EV code signing certificate](http://go.microsoft.com/fwlink/?LinkId=393249)
+- [Buy a DigiCert EV code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393249)
 
   1. On the **DigiCert Code Signing Certificates for Sysdevs** page, click **Start**.
 

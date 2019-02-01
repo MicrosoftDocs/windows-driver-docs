@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Introduction to Windows Filtering Platform Callout Drivers
 
 
-This section introduces Windows Filtering Platform [callout drivers](callout-driver.md). For a more information about the Windows Filtering Platform, see the [Windows Filtering Platform](http://go.microsoft.com/fwlink/p/?linkid=90220) documentation in the Microsoft Windows SDK.
+This section introduces Windows Filtering Platform [callout drivers](callout-driver.md). For a more information about the Windows Filtering Platform, see the [Windows Filtering Platform](https://go.microsoft.com/fwlink/p/?linkid=90220) documentation in the Microsoft Windows SDK.
 
 ### Purpose of Callout Drivers
 

@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 The following terms are used in the discussion of asnychronous spooler notification.
 
 <a href="" id="callback-interface"></a>callback interface  
-When a listening client registers for notifications, it must provide a pointer to an [IPrintAsyncNotifyCallback](http://go.microsoft.com/fwlink/p/?linkid=124755) interface, as described later in this document. The methods of this interface are called back when notifications arrive or when the channel is closed.
+When a listening client registers for notifications, it must provide a pointer to an [IPrintAsyncNotifyCallback](https://go.microsoft.com/fwlink/p/?linkid=124755) interface, as described later in this document. The methods of this interface are called back when notifications arrive or when the channel is closed.
 
 <a href="" id="listening-clients-"></a>listening clients   
 Refers to either applications or spooler internal components registered to receive print notifications. This is different from what was previously referred to as the clients of the spooler notification pipe. A client of the spooler notification pipe is whatever component defines a notification type and schema.

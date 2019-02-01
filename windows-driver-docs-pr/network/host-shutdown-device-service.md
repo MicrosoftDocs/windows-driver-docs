@@ -16,7 +16,7 @@ The information in this topic applies to Windows 8 and later.
 ## Microsoft Host Shutdown
 
 
-The MBIM-compliant device implements and reports the following device service when queried by CID\_MBIM\_DEVICE\_SERVICES. The existing well-known services are defined in section 10.1 of the [USB NCM Mobile Broadband Interface Model (MBIM) V1.0 specification](http://go.microsoft.com/fwlink/p/?linkid=320791). Microsoft extends this to define the following service.
+The MBIM-compliant device implements and reports the following device service when queried by CID\_MBIM\_DEVICE\_SERVICES. The existing well-known services are defined in section 10.1 of the [USB NCM Mobile Broadband Interface Model (MBIM) V1.0 specification](https://go.microsoft.com/fwlink/p/?linkid=320791). Microsoft extends this to define the following service.
 
 Service Name = **Microsoft Host Shutdown**
 

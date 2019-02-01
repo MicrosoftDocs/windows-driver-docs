@@ -70,7 +70,7 @@ The capture driver should:
 
 -   Call [**KsStreamPointerAdvanceOffsets**](https://msdn.microsoft.com/library/windows/hardware/ff567126) to continue processing or delete all clones and complete the request by calling [**KsStreamPointerDelete**](https://msdn.microsoft.com/library/windows/hardware/ff567130).
 
-The **CCapturePin::ProcessD3DSurface** method in *Capture.cpp* of the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083) in the Windows Driver Kit (WDK) samples show one way to implement this callback for VRAM support.
+The **CCapturePin::ProcessD3DSurface** method in *Capture.cpp* of the [AVStream Simulated Hardware Sample Driver (AVSHwS)](https://go.microsoft.com/fwlink/p/?linkid=256083) in the Windows Driver Kit (WDK) samples show one way to implement this callback for VRAM support.
 
  
 

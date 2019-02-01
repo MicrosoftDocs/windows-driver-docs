@@ -3,7 +3,9 @@ title: C28752
 description: Warning C28752 Banned usage of kernel32 or advapi32 API.
 ms.assetid: F887EB9E-FA5A-4139-AF67-7460BB9254B8
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: medium 
+f1_keywords: 
+  - "C28752"
 ---
 
 # C28752

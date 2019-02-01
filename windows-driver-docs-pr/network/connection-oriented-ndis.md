@@ -7,7 +7,7 @@ keywords:
 - CoNDIS WDK networking
 - network drivers WDK , CoNDIS
 - NDIS WDK , CoNDIS
-ms.date: 04/20/2017
+ms.date: 01/09/2019
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-This section describes connection-oriented NDIS (CoNDIS). Most CoNDIS 6.0 and later driver operations have not changed from their CoNDIS 5.*x* versions. For more information about the differences between CoNDIS 5.x and CoNDIS 6.0, see [Porting CoNDIS 5.x Drivers to CoNDIS 6.0](porting-a-condis-5-x-driver-to-condis-6-0.md).
+This section describes connection-oriented NDIS (CoNDIS). Most CoNDIS 6.0 and later driver operations have not changed from their CoNDIS 5.*x* versions. For more information about the differences between CoNDIS 5.x and CoNDIS 6.0, see [Porting CoNDIS 5.x Drivers to CoNDIS 6.0](https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-a-condis-5-x-driver-to-condis-6-0).
 
 Unless noted otherwise, CoNDIS drivers provide the same services as connectionless NDIS drivers. You should be familiar with connectionless NDIS drivers before you attempt to write CoNDIS drivers. For more information about connectionless NDIS drivers, see [Writing NDIS Miniport Drivers](writing-ndis-miniport-drivers.md), [Writing NDIS Protocol Drivers](writing-ndis-protocol-drivers.md), and [Writing NDIS Intermediate Drivers](writing-ndis-intermediate-drivers.md).
 

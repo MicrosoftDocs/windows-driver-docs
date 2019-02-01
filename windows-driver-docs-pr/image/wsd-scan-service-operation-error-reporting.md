@@ -13,7 +13,7 @@ This section describes how a WSD Scan Service generates and sends operation erro
 
 When the WSD Scan Service encounters an error while processing an *Xxx***Request** operation, it returns an error code instead of an *Xxx***Response** element. The Scan Service returns error codes in the **&lt;soap:Fault&gt;** element.
 
-All error messages that are defined within the WSD Scan Service must be sent according to the rules that described in the [Web Services Addressing (WS-Addressing) specification](http://go.microsoft.com/fwlink/p/?linkid=70144). Specifically, the WSD Scan Service should send fault messages, in order, to the following locations:
+All error messages that are defined within the WSD Scan Service must be sent according to the rules that described in the [Web Services Addressing (WS-Addressing) specification](https://go.microsoft.com/fwlink/p/?linkid=70144). Specifically, the WSD Scan Service should send fault messages, in order, to the following locations:
 
 1.  The \[fault endpoint\], if it is present and valid.
 

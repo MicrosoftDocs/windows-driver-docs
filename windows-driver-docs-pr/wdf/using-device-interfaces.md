@@ -133,10 +133,7 @@ The following code example shows how a local UMDF 2 driver registers for notific
 
         return 0;
     }
-
-
-
-```
+    ```
 
 
 4.  From the work item callback function, the local driver calls [**WdfIoTargetCreate**](https://msdn.microsoft.com/library/windows/hardware/ff548591) to create the remote target, and [**WdfIoTargetOpen**](https://msdn.microsoft.com/library/windows/hardware/ff548634) to open a remote I/O target.
@@ -157,24 +154,8 @@ The following code example shows how a local UMDF 2 driver registers for notific
 
         return;
     }
-
-
-
-
-```
-
+    ```
 
 ## Related topics
 
-
 [Registering for Notification of Device Interface Arrival and Device Removal](https://msdn.microsoft.com/library/windows/hardware/dn858592)
-
-
-
-
-
-
-
-
-
-

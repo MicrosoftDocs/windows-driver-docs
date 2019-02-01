@@ -23,7 +23,7 @@ The set of routines for intermediate and highest-level drivers also varies accor
 
 -   The design of the individual higher-level driver
 
-The following figure illustrates the path an IRP might take through the standard routines of an intermediate [*mirror driver*](https://msdn.microsoft.com/library/windows/hardware/ff556308#wdkgloss-mirror-driver) layered somewhere over the lowest-level device driver described in the previous section.
+The following figure illustrates the path an IRP might take through the standard routines of an intermediate *mirror driver* layered somewhere over the lowest-level device driver described in the previous section.
 
 The driver shown in the following figure has the following characteristics:
 

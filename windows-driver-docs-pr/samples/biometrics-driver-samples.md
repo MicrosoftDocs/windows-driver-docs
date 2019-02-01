@@ -16,7 +16,7 @@ The driver sample in this directory provide a starting point for writing a custo
 
 | Sample Name                                       | Solution                                                      | Description                                                                                               |
 |---------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Windows Biometric Driver Samples (UMDF Version 1) | [WBDIsample](http://go.microsoft.com/fwlink/p/?LinkId=620189) | Contains the Windows Biometric Driver Interface sample and the Windows Biometric Service Adapter samples. |
+| Windows Biometric Driver Samples (UMDF Version 1) | [WBDIsample](https://go.microsoft.com/fwlink/p/?LinkId=620189) | Contains the Windows Biometric Driver Interface sample and the Windows Biometric Service Adapter samples. |
 
  
 

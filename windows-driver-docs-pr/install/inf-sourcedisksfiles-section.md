@@ -21,7 +21,7 @@ The **SourceDisksFiles** section names the source files that are used during ins
 
 In order for a driver file or an application file to be included as part of a signed [driver package](driver-packages.md), the file must have a corresponding INF **SourceDisksFiles** section entry and a corresponding [**INF CopyFiles directive**](inf-copyfiles-directive.md).
 
-```cpp
+```ini
 [SourceDisksFiles] | 
 [SourceDisksFiles.x86] | 
 [SourceDisksFiles.arm] | (Windows 8 and later versions of Windows)
@@ -45,7 +45,7 @@ Specifies the integer identifying the source disk that contains the file. This v
 <a href="" id="subdir"></a>*subdir*  
 This optional value specifies the subdirectory (relative to the *path* value of the **SourceDisksNames** section, if any) on the source disk where the named file resides.
 
-If this value is omitted from an entry, the named source file is assumed to be in the *path* directory that was specified in the **SourceDisksFiles** section for the given disk or, if no *path* directory was specified, in the [*installation root*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-installation-root).
+If this value is omitted from an entry, the named source file is assumed to be in the *path* directory that was specified in the **SourceDisksFiles** section for the given disk or, if no *path* directory was specified, in the *installation root*.
 
 <a href="" id="size"></a>*size*  
 This optional value specifies the uncompressed size, in bytes, of the given file.
@@ -72,7 +72,7 @@ Examples
 
 The following example shows a [**SourceDisksNames**](inf-sourcedisksnames-section.md) section and a corresponding SourceDisksFiles section.  Note that this example has only a **SourceDisksFiles.x86** section, specifying the files for the x86 architecture.  An INF that supports another architecture will need a corresponding **SourceDisksFiles** section for that architecture, or the use of an undecorated [**SourceDisksFiles**] section, which supports all architectures.
 
-```cpp
+```ini
 [SourceDisksNames]
 ;
 ; diskid = description[, [tagfile] [, <unused>, subdir]]

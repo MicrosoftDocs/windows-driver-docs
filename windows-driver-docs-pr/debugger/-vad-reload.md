@@ -63,19 +63,9 @@ fffffa80`04fd2e70: VAD maps 00000000`72a50000 - 00000000`72a6cfff, file userenv.
 Requirements
 ------------
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>DLL</p></td>
-<td align="left">Kdextx86.dll (Windows 2000);
-Kdexts.dll (Windows XP and later)</td>
-</tr>
-</tbody>
-</table>
+**DLL**
+
+Kdexts.dll
 
 ## <span id="see_also"></span>See also
 

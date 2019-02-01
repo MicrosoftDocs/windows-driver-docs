@@ -68,7 +68,7 @@ Specifies the type of access that satisfies the breakpoint. This parameter can b
 </tr>
 <tr class="even">
 <td align="left"><p><strong>i</strong> (i/o)</p></td>
-<td align="left"><p>(Microsoft Windows XP and later versions, kernel mode only, x86-based systems only) Breaks into the debugger when the I/O port at the specified <em>Address</em> is accessed.</p></td>
+<td align="left"><p>(Kernel mode only, x86-based systems only) Breaks into the debugger when the I/O port at the specified <em>Address</em> is accessed.</p></td>
 </tr>
 </tbody>
 </table>

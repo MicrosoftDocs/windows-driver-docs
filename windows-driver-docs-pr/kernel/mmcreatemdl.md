@@ -73,7 +73,7 @@ The following obsolete routines are exported to support existing binaries:
 </tr>
 <tr class="odd">
 <td><strong>ExInterlockedExchangeAddLargeInteger</strong></td>
-<td><p>For more information about atomically adding two 64-bit numbers, see <a href="http://go.microsoft.com/fwlink/p/?linkid=71056" data-raw-source="[InterlockedExchangeAdd64](http://go.microsoft.com/fwlink/p/?linkid=71056)">InterlockedExchangeAdd64</a>.</p></td>
+<td><p>For more information about atomically adding two 64-bit numbers, see <a href="https://go.microsoft.com/fwlink/p/?linkid=71056" data-raw-source="[InterlockedExchangeAdd64](https://go.microsoft.com/fwlink/p/?linkid=71056)">InterlockedExchangeAdd64</a>.</p></td>
 </tr>
 <tr class="even">
 <td><strong>ExInterlockedExchangeUlong</strong></td>
@@ -191,7 +191,7 @@ The following obsolete routines are exported to support existing binaries:
 [**FreeAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff546507)  
 [**FreeMapRegisters**](https://msdn.microsoft.com/library/windows/hardware/ff546513)  
 [**GetDmaAlignment**](https://msdn.microsoft.com/library/windows/hardware/ff546530)  
-[InterlockedExchangeAdd64](http://go.microsoft.com/fwlink/p/?linkid=71056)  
+[InterlockedExchangeAdd64](https://go.microsoft.com/fwlink/p/?linkid=71056)  
 [**IoAllocateMdl**](https://msdn.microsoft.com/library/windows/hardware/ff548263)  
 [**IoAllocateWorkItem**](https://msdn.microsoft.com/library/windows/hardware/ff548276)  
 [**IoAttachDeviceToDeviceStack**](https://msdn.microsoft.com/library/windows/hardware/ff548300)  

@@ -31,7 +31,7 @@ Storage Management Providers, SMI-S requirements, and system-supplied WMI classe
 ## <span id="related_topics"></span>Related topics
 
 
-[Storage driver design guide](http://go.microsoft.com/fwlink/p/?LinkId=798409)
+[Storage driver design guide](https://go.microsoft.com/fwlink/p/?LinkId=798409)
 
  
 

@@ -8,14 +8,14 @@ ms.localizationpriority: medium
 
 # Signing a Driver for Public Release
 
-Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Windows Hardware Certification](http://go.microsoft.com/fwlink/p/?LinkID=248337) and [Hardware Dashboard Services](http://go.microsoft.com/fwlink/p/?LinkID=248336). To submit a driver package for certification, you must sign the package with a certificate that you obtain from a trusted certification authority like VeriSign. For more information, see [Get a VeriSign Certificate](http://go.microsoft.com/fwlink/p/?LinkID=248298). You will also need a cross certificate, which is provided by Microsoft.
+Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Windows Hardware Certification](https://go.microsoft.com/fwlink/p/?LinkID=248337) and [Hardware Dashboard Services](https://go.microsoft.com/fwlink/p/?LinkID=248336). To submit a driver package for certification, you must sign the package with a certificate that you obtain from a trusted certification authority like VeriSign. For more information, see [Get a VeriSign Certificate](https://go.microsoft.com/fwlink/p/?LinkID=248298). You will also need a cross certificate, which is provided by Microsoft.
 
 Suppose you have obtained a pair of files from Verisign: a private key file (PVK) and a software publishing certificate (SPC). Also suppose you have a Microsoft Visual Studio solution that contains a driver project named MyDriver and a driver package project named MyDriver Package. To sign your driver package, follow these steps.
 
 1.  Use the [**Pvk2Pfx**](https://msdn.microsoft.com/Library/Windows/Hardware/Ff550672) tool to create a Personal Information Exchange (PFX) certificate. The **Pvk2Pfx** tool takes your PVK and SPC files as input and creates a single PFX file. For this exercise, assume that your PFX file is named MyCert.pfx.
 
     **Note**  Once you have created your PFX file, you can reuse it for other driver projects and on other driver development computers.
-2.  To determine which cross certificate you need, see [Cross-Certificates for Kernel Mode Code Signing](http://go.microsoft.com/fwlink/p/?LinkID=248296). Verify that the required cross certificate is in $(BASEDIR)\\CrossCertificates, where $(BASEDIR) is the base directory of the Windows kits (for example c:\\Program Files (x86)\\Windows Kits\\8.0\\CrossCertificates). If the required cross certificate is not there, download the cross certificate from Microsoft, and copy it to $(BASEDIR)\\CrossCertificates.
+2.  To determine which cross certificate you need, see [Cross-Certificates for Kernel Mode Code Signing](https://go.microsoft.com/fwlink/p/?LinkID=248296). Verify that the required cross certificate is in $(BASEDIR)\\CrossCertificates, where $(BASEDIR) is the base directory of the Windows kits (for example c:\\Program Files (x86)\\Windows Kits\\8.0\\CrossCertificates). If the required cross certificate is not there, download the cross certificate from Microsoft, and copy it to $(BASEDIR)\\CrossCertificates.
 3.  In Visual Studio, open the solution that contains the MyDriver and MyDriver Package projects. If the Solution Explorer window is not already open, choose **Solution Explorer** from the **View** menu. In the Solution Explorer window, right-click the package project, **MyDriver Package**, and choose **Properties**.
 
 4.  In the property pages for the package, navigate to **Configuration Properties &gt; Driver Signing &gt; General**. In the **Sign Mode** drop-down list, select **Production Sign**. For **Production Certificate**, do one of the following:
@@ -75,11 +75,11 @@ When you set the driver package properties for production signing, remember to a
 * [Driver Signing changes in Windows 10](http://blogs.msdn.com/b/windows_hardware_certification/archive/2015/04/01/driver-signing-changes-in-windows-10.aspx)
 * [Availability of SHA-2 Code Signing Support for Windows 7 and Windows Server 2008 R2](https://technet.microsoft.com/library/security/3033929)
 * [Signing a Driver](signing-a-driver.md)
-* [Windows Hardware Certification](http://go.microsoft.com/fwlink/p/?LinkID=248337)
-* [Hardware Dashboard Services](http://go.microsoft.com/fwlink/p/?LinkID=248336)
-* [Driver Signing Requirements for Windows](http://go.microsoft.com/fwlink/p/?linkid=617515)
-* [Cross-Certificates for Kernel Mode Code Signing](http://go.microsoft.com/fwlink/p/?LinkID=248296)
-* [Kernel-Mode Code Signing Walkthrough](http://go.microsoft.com/fwlink/p/?linkid=617516)
+* [Windows Hardware Certification](https://go.microsoft.com/fwlink/p/?LinkID=248337)
+* [Hardware Dashboard Services](https://go.microsoft.com/fwlink/p/?LinkID=248336)
+* [Driver Signing Requirements for Windows](https://go.microsoft.com/fwlink/p/?linkid=617515)
+* [Cross-Certificates for Kernel Mode Code Signing](https://go.microsoft.com/fwlink/p/?LinkID=248296)
+* [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=617516)
 * [Driver Signing](https://msdn.microsoft.com/Library/Windows/Hardware/Ff544865)
 * [Installing a Boot-Start Driver](https://msdn.microsoft.com/Library/Windows/Hardware/Ff547570)
 * [Tools for Signing Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552958)

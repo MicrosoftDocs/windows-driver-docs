@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Troubleshooting the Implementation of Container IDs
 
 
-If more than one instance of a device in the Devices and Printers user interface (UI) appears when you expect only one, the device does not correctly implement the container ID requirements. This incorrect implementation causes the Plug and Play (PnP) manager to group one or more device nodes ([*devnodes*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) into additional device containers for the device.
+If more than one instance of a device in the Devices and Printers user interface (UI) appears when you expect only one, the device does not correctly implement the container ID requirements. This incorrect implementation causes the Plug and Play (PnP) manager to group one or more device nodes (*devnodes*) into additional device containers for the device.
 
 In such a case, you should examine the following:
 

@@ -27,7 +27,7 @@ Remarks
 
 SRB\_NOTIFY\_IDLE\_STATE is sent in Microsoft Windows XP with Service Pack 2 (SP2) and later, but not in Microsoft Windows Server 2003.
 
-SRB\_NOTIFY\_IDLE\_STATE fixes the USB selective suspend problem that exists in the stream class driver (*Stream.sys*) in Windows XP with SP1, described in [Knowledge Base article 813348](http://go.microsoft.com/fwlink/p/?linkid=210855). You can use SRB\_NOTIFY\_IDLE\_STATE to support selective suspend within single instance minidrivers based on [stream class](https://msdn.microsoft.com/library/windows/hardware/ff568277) and [USBCAMD2](https://msdn.microsoft.com/library/windows/hardware/ff568573).
+SRB\_NOTIFY\_IDLE\_STATE fixes the USB selective suspend problem that exists in the stream class driver (*Stream.sys*) in Windows XP with SP1, described in [Knowledge Base article 813348](https://go.microsoft.com/fwlink/p/?linkid=210855). You can use SRB\_NOTIFY\_IDLE\_STATE to support selective suspend within single instance minidrivers based on [stream class](https://msdn.microsoft.com/library/windows/hardware/ff568277) and [USBCAMD2](https://msdn.microsoft.com/library/windows/hardware/ff568573).
 
 In Windows XP and earlier, SRB\_NOTIFY\_IDLE\_STATE does not exist. For Windows XP and earlier, the minidriver receives [**SRB\_GET\_DEVICE\_PROPERTY**](srb-get-device-property.md) to wake from an idle state. The minidriver then calls [**PoRequestPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559734) to change the device state to D0.
 

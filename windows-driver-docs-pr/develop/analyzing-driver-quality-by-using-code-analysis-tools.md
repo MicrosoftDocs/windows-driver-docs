@@ -19,10 +19,10 @@ The Windows 8 release of the WDK provides enhancements to the C/C++ Code Analys
 
 For information about the Code Analysis tool in Visual Studio, see:
 
--   [Analyzing Application Quality using Code Analysis](http://go.microsoft.com/fwlink/p/?linkid=226836)
+-   [Analyzing Application Quality using Code Analysis](https://go.microsoft.com/fwlink/p/?linkid=226836)
 -   [Code Analysis for Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454182)
 -   [How to run Code Analysis for drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454219)
--   [Using SAL Annotations to Reduce C/C++ Code Defects](http://go.microsoft.com/fwlink/p/?linkid=247283)
+-   [Using SAL Annotations to Reduce C/C++ Code Defects](https://go.microsoft.com/fwlink/p/?linkid=247283)
 -   [SAL 2.0 Annotations for Windows Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454237)
 
 **Note**  In previous versions of the WDK, the driver-specific module for code analysis was part of a standalone tool called PREfast for Drivers (PFD). PREfast for Drivers was also integrated into the WDK Build environment, as part of Microsoft Automated Code Review (OACR).

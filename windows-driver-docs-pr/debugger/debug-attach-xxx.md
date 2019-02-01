@@ -60,7 +60,7 @@ The possible values include the following.
 </dl>
 </td>
 <td align="left" width="60%">
-<p>(Windows XP and later)  Do not request an initial break-in when attaching to the target.</p>
+<p>Do not request an initial break-in when attaching to the target.</p>
 <p>If this flag is set, then the flags DEBUG_ATTACH_NONINVASIVE and DEBUG_ATTACH_EXISTING must not be set.</p>
 </td>
 </tr>

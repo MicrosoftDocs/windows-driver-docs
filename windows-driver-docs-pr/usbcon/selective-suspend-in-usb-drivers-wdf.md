@@ -85,12 +85,12 @@ If the driver is not the PPO, the framework takes no further actions because onl
  
 
 ## Related topics
-[Windows Driver Frameworks (WDF)](http://go.microsoft.com/fwlink/p/?linkid=53698)  
-[Plug and Play - Architecture and Driver Support](http://go.microsoft.com/fwlink/p/?linkid=320985)  
-[PnP and Power Management in KMDF Drivers](http://go.microsoft.com/fwlink/p/?linkid=320986)  
-[When WDF Drivers Can Use Power-Managed I/O Queues](http://go.microsoft.com/fwlink/p/?linkid=320987)  
-[Writing USB Drivers with WDF](http://go.microsoft.com/fwlink/p/?linkid=320988)  
-[Implementing power management in USB client drivers](http://go.microsoft.com/fwlink/p/?linkid=320989)  
+[Windows Driver Frameworks (WDF)](https://go.microsoft.com/fwlink/p/?linkid=53698)  
+[Plug and Play - Architecture and Driver Support](https://go.microsoft.com/fwlink/p/?linkid=320985)  
+[PnP and Power Management in KMDF Drivers](https://go.microsoft.com/fwlink/p/?linkid=320986)  
+[When WDF Drivers Can Use Power-Managed I/O Queues](https://go.microsoft.com/fwlink/p/?linkid=320987)  
+[Writing USB Drivers with WDF](https://go.microsoft.com/fwlink/p/?linkid=320988)  
+[Implementing power management in USB client drivers](https://go.microsoft.com/fwlink/p/?linkid=320989)  
 
 
 

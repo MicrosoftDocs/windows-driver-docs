@@ -39,7 +39,7 @@ As described in [Pin Factories](pin-factories.md), a miniport driver provides an
 
 -   **Communications type specifier**
 
-    Indicates the type of IRP communications that the pin supports. A pin that supports IRP communications can be an IRP sink (KSPIN\_COMMUNICATION\_SINK), IRP source (KSPIN\_COMMUNICATION\_SOURCE), or both (KSPIN\_COMMUNICATION\_BOTH). A pin that does not support IRP communications can either lie inside a KS filter graph (KSPIN\_COMMUNICATION\_NONE) or be a [*bridge pin*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss_bridge_pin) at the endpoint of a graph (KSPIN\_COMMUNICATION\_BRIDGE).
+    Indicates the type of IRP communications that the pin supports. A pin that supports IRP communications can be an IRP sink (KSPIN\_COMMUNICATION\_SINK), IRP source (KSPIN\_COMMUNICATION\_SOURCE), or both (KSPIN\_COMMUNICATION\_BOTH). A pin that does not support IRP communications can either lie inside a KS filter graph (KSPIN\_COMMUNICATION\_NONE) or be a *bridge pin* at the endpoint of a graph (KSPIN\_COMMUNICATION\_BRIDGE).
 
 For more information about bridge pins, see [Audio Filter Graphs](audio-filter-graphs.md).
 

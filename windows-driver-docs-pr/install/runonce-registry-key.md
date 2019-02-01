@@ -86,9 +86,9 @@ The following rules apply when you use **RunOnce** registry keys for device inst
 
 -   Starting with Windows Vista, the system will not execute the commands specified by the **RunOnce** keys if a user without administrator privileges is logged on to the system. This could lead to incomplete or corrupted installations following a system restart.
 
-    Before the [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) creates the **RunOnce** entries, it informs the current user that a user who has administrator privileges must log on after a system restart.
+    Before the *device installation application* creates the **RunOnce** entries, it informs the current user that a user who has administrator privileges must log on after a system restart.
 
-    For more information, see [Developing Applications that Run at Logon on Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=133224).
+    For more information, see [Developing Applications that Run at Logon on Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=133224).
 
  
 

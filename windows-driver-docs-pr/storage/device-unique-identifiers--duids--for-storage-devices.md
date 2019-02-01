@@ -73,7 +73,7 @@ DUIDs have the following limitations:
 
 -   DUID consumers must use [**CompareStorageDuids**](https://msdn.microsoft.com/library/windows/hardware/ff552464) to compare DUIDs instead of comparing them byte by byte.
 
--   [*Enumerators*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-enumerator) must not attempt to use DUIDs to identify device objects for Plug and Play (PnP) purposes. Multipath systems can have more than one device that share the same DUID. But for PnP, device IDs must be unique.
+-   *Enumerators* must not attempt to use DUIDs to identify device objects for Plug and Play (PnP) purposes. Multipath systems can have more than one device that share the same DUID. But for PnP, device IDs must be unique.
 
 Initiators can query for the DUID information data using a [**IOCTL\_STORAGE\_QUERY\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff560590) request with a property ID of **StorageDeviceUniqueIdProperty**.
 

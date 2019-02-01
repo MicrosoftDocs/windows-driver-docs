@@ -27,7 +27,7 @@ This topic assumes that you've finished developing your app and the device metad
 ## <span id="Start_app_submission"></span><span id="start_app_submission"></span><span id="START_APP_SUBMISSION"></span>Start app submission
 
 
-Go to the [Microsoft Store dashboard](http://go.microsoft.com/fwlink/p/?LinkId=273050) and click **Submit a new app**.
+Go to the [Microsoft Store dashboard](https://go.microsoft.com/fwlink/p/?LinkId=273050) and click **Submit a new app**.
 
 ## <span id="Add_instructions_for_testers"></span><span id="add_instructions_for_testers"></span><span id="ADD_INSTRUCTIONS_FOR_TESTERS"></span>Add instructions for testers
 
@@ -47,7 +47,7 @@ Check the following before you submit your app:
 
 -   The **package name** should be the same as the one you specified when you created the app in [step 1](step-1--create-a-uwp-device-app.md). Note that the package name expires if the app is not submitted within one year.
 
--   The app must be fully compliant with all the [Microsoft Store Certification Requirements](http://go.microsoft.com/fwlink/p/?LinkId=273052).
+-   The app must be fully compliant with all the [Microsoft Store Certification Requirements](https://go.microsoft.com/fwlink/p/?LinkId=273052).
 
 -   The app must be suitable for all ages.
 

@@ -19,8 +19,6 @@ These topics discuss debugging tips for the Windows Display Driver Model (WDDM):
 
 [Installing Checked Binaries](installing-checked-binaries.md)
 
-[Enabling Debug Output for the Video Memory Manager](enabling-debug-output-for-the-video-memory-manager.md)
-
 [Changing the Behavior of the GPU Scheduler for Debugging](changing-the-behavior-of-the-gpu-scheduler-for-debugging.md)
 
 [Emulating State Blocks](emulating-state-blocks.md)

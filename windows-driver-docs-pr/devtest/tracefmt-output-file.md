@@ -21,7 +21,7 @@ The Tracefmt output file is optional. You can direct Tracefmt to display the tra
 
 Tracefmt output files are often used as input to other programs that analyze and filter trace messages.
 
-The following is an excerpt of the content of a Tracefmt output file of a trace session with Tracedrv, a sample driver instrumented for software tracing. [TraceDrv](http://go.microsoft.com/fwlink/p/?LinkId=617726), a sample driver that was designed for software tracing, is available in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+The following is an excerpt of the content of a Tracefmt output file of a trace session with Tracedrv, a sample driver instrumented for software tracing. [TraceDrv](https://go.microsoft.com/fwlink/p/?LinkId=617726), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
 ```
 EventTrace

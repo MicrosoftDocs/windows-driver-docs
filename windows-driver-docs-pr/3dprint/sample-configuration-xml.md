@@ -238,7 +238,7 @@ You can use the following example configuration XML to develop the configuration
           <psk3dx:filllow>0.15</psk3dx:filllow> <!-- low density sparse infill fraction (between 0 and 1, inclusive) -->
           <psk3dx:fillmedium>0.25</psk3dx:fillmedium> <!-- medium density sparse infill fraction (between 0 and 1, inclusive) -->
           <psk3dx:fillhigh>0.40</psk3dx:fillhigh> <!-- high density sparse infill fraction (between 0 and 1, inclusive) -->
-          <psk3dx:fillangle>45</psk3dx:fillangle> <!-- intial fill angle (degrees) -->
+          <psk3dx:fillangle>45</psk3dx:fillangle> <!-- initial fill angle (degrees) -->
           <psk3dx:filloverlap>0.15</psk3dx:filloverlap> <!-- infill overlap (between 0 and 1 of the path width, inclusive) -->
           <psk3dx:speed>75000</psk3dx:speed> <!-- speed of normal printing movements (micron/s) -->
           <psk3dx:speedouter>45000</psk3dx:speedouter> <!-- speed of outer perimeter (micron/s) -->
@@ -275,7 +275,7 @@ You can use the following example configuration XML to develop the configuration
           <psk3dx:filllow>0.15</psk3dx:filllow> <!-- low density sparse infill fraction (between 0 and 1, inclusive) -->
           <psk3dx:fillmedium>0.30</psk3dx:fillmedium> <!-- medium density sparse infill fraction (between 0 and 1, inclusive) -->
           <psk3dx:fillhigh>0.45</psk3dx:fillhigh> <!-- high density sparse infill fraction (between 0 and 1, inclusive) -->
-          <psk3dx:fillangle>45</psk3dx:fillangle> <!-- intial fill angle (degrees) -->
+          <psk3dx:fillangle>45</psk3dx:fillangle> <!-- initial fill angle (degrees) -->
           <psk3dx:filloverlap>0.15</psk3dx:filloverlap> <!-- infill overlap (between 0 and 1 of the path width, inclusive) -->
           <psk3dx:speed>70000</psk3dx:speed> <!-- speed of normal printing movements (micron/s) -->
           <psk3dx:speedouter>30000</psk3dx:speedouter> <!-- speed of outer perimeter (micron/s) -->
@@ -310,7 +310,7 @@ You can use the following example configuration XML to develop the configuration
           <psk3dx:filllow>0.10</psk3dx:filllow> <!-- low density sparse infill fraction (between 0 and 1, inclusive) -->
           <psk3dx:fillmedium>0.20</psk3dx:fillmedium> <!-- medium density sparse infill fraction (between 0 and 1, inclusive) -->
           <psk3dx:fillhigh>0.35</psk3dx:fillhigh> <!-- high density sparse infill fraction (between 0 and 1, inclusive) -->
-          <psk3dx:fillangle>45</psk3dx:fillangle><!-- intial fill angle (degrees) -->
+          <psk3dx:fillangle>45</psk3dx:fillangle><!-- initial fill angle (degrees) -->
           <psk3dx:filloverlap>0.15</psk3dx:filloverlap><!-- infill overlap (between 0 and 1 of the path width, inclusive) -->
           <psk3dx:speed>100000</psk3dx:speed><!-- speed of normal printing movements (micron/s) -->
           <psk3dx:speedouter>100000</psk3dx:speedouter><!-- speed of outer perimeter (micron/s) -->

@@ -47,9 +47,9 @@ In Windows 10, a new INF, Usbser.inf, has been added to %Systemroot%\\Inf that 
 
 `USB\Class_02&SubClass_02`
 
--   If you want to load Usbser.sys automatically, set the class code to 02 and subclass code to 02 in the [Device Descriptor](usb-device-descriptors.md). For more information, see USB communications device class (or USB CDC) Specification found on the [USB DWG website](http://go.microsoft.com/fwlink/p/?linkid=617741). With this approach, you are not required to distribute INF files for your device because the system uses Usbser.inf.
+-   If you want to load Usbser.sys automatically, set the class code to 02 and subclass code to 02 in the [Device Descriptor](usb-device-descriptors.md). For more information, see USB communications device class (or USB CDC) Specification found on the [USB DWG website](https://go.microsoft.com/fwlink/p/?linkid=617741). With this approach, you are not required to distribute INF files for your device because the system uses Usbser.inf.
 -   If your device specifies class code 02 but a subclass code value other than 02, Usbser.sys does not load automatically. Pnp Manager tries to find a driver. If a suitable driver is not found, the device might not have a driver loaded. In this case, you might have to load your own driver or write an INF that references another in-box driver.
--   If your device specifies class and subclass codes to 02, and you want to load another driver instead of Usbser.sys, you have to write an INF that specifies the hardware ID of the device and the driver to install. For examples, look through the INF files included with [sample drivers](http://go.microsoft.com/fwlink/p/?LinkId=534087) and find devices similar to your device. For information about INF sections, see [Overview of INF Files](https://msdn.microsoft.com/library/windows/hardware/ff549520).
+-   If your device specifies class and subclass codes to 02, and you want to load another driver instead of Usbser.sys, you have to write an INF that specifies the hardware ID of the device and the driver to install. For examples, look through the INF files included with [sample drivers](https://go.microsoft.com/fwlink/p/?LinkId=534087) and find devices similar to your device. For information about INF sections, see [Overview of INF Files](https://msdn.microsoft.com/library/windows/hardware/ff549520).
 
 **Note**  Microsoft encourages you to use in-box drivers whenever possible. On mobile editions of Windows, such as Windows 10 Mobile, only drivers that are part of the operating system are loaded. Unlike desktop editions, it is not possible to load a driver through an external driver package. With the new in-box INF, Usbser.sys is automatically loaded if a USB-to-serial device is detected on the mobile device.
 
@@ -99,7 +99,7 @@ That entry can be added in one of two ways:
 -   Write an INF that references the install INF and add the registry entry in the **HW.AddReg** section.
 -   Describe the registry entry in an extended properties OS feature descriptor. Add a custom property section that sets the **bPropertyName** field to a Unicode string, "IdleUsbSelectiveSuspendPolicy" and **wPropertyNameLength** to 62 bytes. Set the **bPropertyData** field to "0x00000001" or "0x00000000". The property values are stored as little-endian 32-bit integers.
 
-    For more information, see [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=224878).
+    For more information, see [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=224878).
 
 ## Develop Windows applications for a USB CDC device
 

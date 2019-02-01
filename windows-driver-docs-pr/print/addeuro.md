@@ -24,7 +24,7 @@ The Euro symbol, as shown in the following figure, is the currency symbol for th
 
 The AddEuro feature adds this symbol to the printer's device font. When AddEuro is enabled, a Euro symbol that appears on a display device will also be printed on paper when the document is sent to a printer. If this feature is unavailable or disabled, a user who selects an unaliased device font will be able to see a Euro symbol on the screen, but will see a large circular dot on paper. With this feature enabled, a user can print the Euro symbol, whether or not it is available in the printer's device font.
 
-AddEuro uses a private [*PPD*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-postscript-printer-description--ppd-) keyword, \***ADHasEuro**, to allow printer manufacturers to set the best defaults.
+AddEuro uses a private *PPD* keyword, \***ADHasEuro**, to allow printer manufacturers to set the best defaults.
 
 <table>
 <colgroup>

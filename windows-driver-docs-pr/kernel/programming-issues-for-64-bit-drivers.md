@@ -21,7 +21,7 @@ This section discusses issues you need to be concerned about when developing dri
 
 [Driver x64 Restrictions](driver-x64-restrictions.md)
 
-For information about programming with a 64-bit compiler, see [64-Bit Programming with Visual C++](http://go.microsoft.com/fwlink/p/?linkid=165521).
+For information about programming with a 64-bit compiler, see [64-Bit Programming with Visual C++](https://go.microsoft.com/fwlink/p/?linkid=165521).
 
  
 

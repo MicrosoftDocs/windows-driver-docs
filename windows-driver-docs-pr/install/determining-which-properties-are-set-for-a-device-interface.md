@@ -20,13 +20,13 @@ To determine which properties are set for a device interface in Windows Vista an
     -   Set *RequiredPropertyKeyCount* to a pointer to a DWORD-typed variable.
     -   Set Flags to zero.
 
-    In response to this call to [**SetupDiGetDeviceInterfacePropertyKeys**](https://msdn.microsoft.com/library/windows/hardware/ff551959), **SetupDiGetDeviceInterfacePropertyKeys** sets \**RequiredPropertyKeyCount* to the number of properties that are set for the device interface, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
+    In response to this call to [**SetupDiGetDeviceInterfacePropertyKeys**](https://msdn.microsoft.com/library/windows/hardware/ff551959), **SetupDiGetDeviceInterfacePropertyKeys** sets \**RequiredPropertyKeyCount* to the number of properties that are set for the device interface, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
 
 2.  Call **SetupDiGetDeviceInterfacePropertyKeys** again and supply the same parameter values that were supplied in the first call, except for the following changes:
     -   Set *PropertyKeyArray* to a [**DEVPROPKEY**](https://msdn.microsoft.com/library/windows/hardware/ff543544)-typed pointer to the buffer that receives the requested property key array.
     -   Set *PropertyKeyCount* to the size, in DEVPROPKEY-typed values, of the *PropertyKeyArray* buffer. The first call to **SetupDiGetDeviceInterfacePropertyKeys** retrieved the required size of the *PropertyKeyArray* buffer in \**RequiredPropertyKeyCount*.
 
-If the second call to **SetupDiGetDeviceInterfacePropertyKeys** succeeds, **SetupDiGetDeviceInterfacePropertyKeys** returns the requested property key array in the *PropertyKeyArray* buffer, sets \**RequiredPropertyKeyCount* to the number of property keys in the buffer, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceInterfacePropertyKeys** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+If the second call to **SetupDiGetDeviceInterfacePropertyKeys** succeeds, **SetupDiGetDeviceInterfacePropertyKeys** returns the requested property key array in the *PropertyKeyArray* buffer, sets \**RequiredPropertyKeyCount* to the number of property keys in the buffer, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceInterfacePropertyKeys** returns **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
  
 

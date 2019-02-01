@@ -81,7 +81,7 @@ Please see the following topics for related information:
 
 [Overview of Container IDs](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-container-ids)
 [PnP-X: Plug and Play Extensions for Windows Specification](https://msdn.microsoft.com/windows/hardware/gg463082)
-[Wi-Fi Alliance - Wi-Fi Direct Industry Whitepaper](http://go.microsoft.com/fwlink/p/?LinkId=784967)
+[Wi-Fi Alliance - Wi-Fi Direct Industry Whitepaper](https://go.microsoft.com/fwlink/p/?LinkId=784967)
  
 
  

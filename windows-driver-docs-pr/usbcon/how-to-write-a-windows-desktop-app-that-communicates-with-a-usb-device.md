@@ -18,8 +18,8 @@ The easiest way to write a Windows desktop app that communicates with a USB devi
 ## Prerequisites
 
 
--   To set up the integrated development environment, first install Microsoft Visual Studio Ultimate 2012 or Microsoft Visual Studio Professional 2012 and then install the WDK. You can find information about how to get Visual Studio and the WDK [here](http://go.microsoft.com/fwlink/p/?linkid=239721).
--   Debugging Tools for Windows is included when you install the WDK. For more information, see [Download and Install Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=235427).
+-   To set up the integrated development environment, first install Microsoft Visual Studio Ultimate 2012 or Microsoft Visual Studio Professional 2012 and then install the WDK. You can find information about how to get Visual Studio and the WDK [here](https://go.microsoft.com/fwlink/p/?linkid=239721).
+-   Debugging Tools for Windows is included when you install the WDK. For more information, see [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=235427).
 
 ## Creating a WinUSB application
 

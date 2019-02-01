@@ -5,6 +5,7 @@ ms.assetid: A0C9E728-E0E5-47C1-AEB8-E001057FA35A
 ms.date: 06/15/2018
 keywords:
  - WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE

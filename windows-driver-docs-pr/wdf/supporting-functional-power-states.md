@@ -50,14 +50,14 @@ The following table summarizes framework support for different functional power 
 <li>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545903" data-raw-source="[&lt;strong&gt;WdfDeviceAssignS0IdleSettings&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545903)"><strong>WdfDeviceAssignS0IdleSettings</strong></a> with <em>IdleTimeoutType</em> = <strong>SystemManagedIdleTimout</strong>.</li>
 </ul>
 <p>In this case, KMDF handles most interactions with the PoFx.</p>
-<p>For sample code, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=617937" data-raw-source="[PoFx sample drivers](http://go.microsoft.com/fwlink/p/?LinkId=617937)">PoFx sample drivers</a>.</p></td>
+<p>For sample code, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=617937" data-raw-source="[PoFx sample drivers](https://go.microsoft.com/fwlink/p/?LinkId=617937)">PoFx sample drivers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="supporting-multiple-functional-power-states-for-multiple-component-devices.md" data-raw-source="[Multiple components, single or multiple states](supporting-multiple-functional-power-states-for-multiple-component-devices.md)">Multiple components, single or multiple states</a></p></td>
 <td align="left"><p>Supported using WDM interfaces</p></td>
 <td align="left"><p>Not supported</p></td>
 <td align="left"><p>When your driver has multiple components. In this case, you must use the PoFx interfaces directly.</p>
-<p>For sample code, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=617937" data-raw-source="[PoFx sample drivers](http://go.microsoft.com/fwlink/p/?LinkId=617937)">PoFx sample drivers</a>.</p></td>
+<p>For sample code, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=617937" data-raw-source="[PoFx sample drivers](https://go.microsoft.com/fwlink/p/?LinkId=617937)">PoFx sample drivers</a>.</p></td>
 </tr>
 </tbody>
 </table>

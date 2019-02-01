@@ -31,6 +31,8 @@ LoadOrderGroup = “Early-Launch”
 
 Because an AM driver does not own any devices, it is necessary to install the AM driver as a Legacy so the driver is only added as a service into the registry. (If the AM driver is installed as a normal PNP driver, it will be added to the enum section of the registry and therefore will have a PDO reference, which will lead to unwanted behavior when unloading the driver.)
 
+You also need to include a [SignatureAttributes Section](inf-signatureattributes-section.md) in the INF file for the ELAM driver. 
+
 ## Backup Driver Installation
 
 To provide a recovery mechanism in the event that the ELAM driver is inadvertently corrupted, the ELAM installer also installs a copy of the driver in a backup location. This will allow WinRE to retrieve the clean copy and recover the installation.

@@ -35,7 +35,7 @@ Device identifiers should be used for INF matching only, and should never be par
 
 ### Hardware ID (\_HID)
 
-The minimum requirement for identifying a device in ACPI is the Hardware ID (\_HID) object. \_HID returns a string with the format of "ABC\[D\]*xxxx*", where "ABC\[D\]" is a 3- or 4-character string that identifies the manufacturer of the device (the "Vendor ID"), and *xxxx* is a hexadecimal number that identifies the specific device manufactured by that vendor (the "Device ID"). Vendor IDs must be unique across the industry. Microsoft allocates these strings to ensure that they are unique. Vendor IDs can be obtained from [Plug and Play ID - PNPID Request](http://go.microsoft.com/fwlink/p/?linkid=330999).
+The minimum requirement for identifying a device in ACPI is the Hardware ID (\_HID) object. \_HID returns a string with the format of "ABC\[D\]*xxxx*", where "ABC\[D\]" is a 3- or 4-character string that identifies the manufacturer of the device (the "Vendor ID"), and *xxxx* is a hexadecimal number that identifies the specific device manufactured by that vendor (the "Device ID"). Vendor IDs must be unique across the industry. Microsoft allocates these strings to ensure that they are unique. Vendor IDs can be obtained from [Plug and Play ID - PNPID Request](https://go.microsoft.com/fwlink/p/?linkid=330999).
 
 **Note**  ACPI 5.0 also supports the use of PCI-assigned vendor IDs in \_HID and other identification objects, so you might not need to get a vendor ID from Microsoft. For more information about hardware identification requirements, see section 6.1.5, "\_HID (Hardware ID)", of the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 

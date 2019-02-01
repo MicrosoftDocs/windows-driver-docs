@@ -42,9 +42,9 @@ You can use the *usbintel* example camera minidriver as a starting point. This s
 
 Developers should familiarize themselves with the material in [Kernel Streaming](kernel-streaming.md), [Streaming Minidrivers](https://msdn.microsoft.com/library/windows/hardware/ff568275), and [Video Capture Devices](video-capture-devices.md).
 
-For additional developer information, including the USB specifications, see [USB-IF Developers Area](http://go.microsoft.com/fwlink/p/?linkid=8781).
+For additional developer information, including the USB specifications, see [USB-IF Developers Area](https://go.microsoft.com/fwlink/p/?linkid=8781).
 
-For general or consumer information, see [USB Implementers Forum](http://go.microsoft.com/fwlink/p/?linkid=8780).
+For general or consumer information, see [USB Implementers Forum](https://go.microsoft.com/fwlink/p/?linkid=8780).
 
  
 
