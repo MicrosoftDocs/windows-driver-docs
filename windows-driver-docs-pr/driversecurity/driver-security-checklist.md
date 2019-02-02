@@ -2,7 +2,7 @@
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
 ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
-ms.date: 01/26/2018
+ms.date: 02/01/2019
 ms.localizationpriority: medium
 ---
 
@@ -520,7 +520,7 @@ Although the default rules find many common issues, consider running the more ex
 
 Use BinScope to examine application binary files to identify coding and building practices that can potentially render the application vulnerable to attack or to being used as an attack vector.
 
-For more information, see [New Version of BinScope Binary Analyzer](https://blogs.microsoft.com/microsoftsecure/2014/11/20/new-binscope-released/) and the user and getting started guides that are included with the tool download as well as this [BinScope Binary Analyzer TechNet Video](https://technet.microsoft.com/video/binscope-binary-analyzer.aspx).
+For more information, see [New Version of BinScope Binary Analyzer](https://cloudblogs.microsoft.com/microsoftsecure/2014/11/20/new-binscope-released/) and the user and getting started guides that are included with the tool download.
 
 
 Follow these steps to validate that the security compile options are properly configured in the code that you are shipping:
