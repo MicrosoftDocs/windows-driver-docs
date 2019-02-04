@@ -7,15 +7,11 @@ keywords:
 - RSS WDK networking , standardized INF keywords
 - standardized INF keywords WDK RSS
 - INF entries WDK RSS
-ms.date: 04/20/2017
+ms.date: 02/01/2019
 ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for RSS
-
-
-
-
 
 The RSS interface supports [standardized INF keywords](standardized-inf-keywords-for-network-devices.md) that appear in the registry and are specified in INF files.
 
@@ -144,9 +140,8 @@ The maximum number of RSS processors.
 The maximum processor number of the RSS interface.
 If **\*RssMaxProcNumber** is specified, then **\*RssMaxProcGroup** should also be specified.
 
-<a href="" id="---------rssmaxprocnumber"></a> **\*RssMaxProcNumber**  
-The maximum processor number of the RSS interface.
-If **\*RssMaxProcNumber** is specified, then **\*RssMaxProcGroup** should also be specified.
+<a href="" id="---------rssmaxprocnumber"></a> **\*NumRSSQueues**  
+The number of RSS queues.
 
 <a href="" id="---------rssmaxprocgroup"></a> **\*RssMaxProcGroup**
 The maximum processor group of the RSS interface.
