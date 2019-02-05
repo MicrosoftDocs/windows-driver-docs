@@ -35,7 +35,7 @@ You should already be familiar with the [C programming language](https://docs.mi
 
 [Windows Driver Kit (WDK)](https://msdn.microsoft.com/library/windows/hardware/ff557573)
 
-[Driver Security Guidance](https://docs.microsoft.com/en-us/windows-hardware/drivers/driversecurity/)
+[Driver Security Guidance](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/)
 
  
 
