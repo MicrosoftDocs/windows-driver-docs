@@ -25,39 +25,24 @@ Enterprise WDK (EWDK), and additional downloads for support purposes. To
 use these earlier versions, you must *first* install the version of
 Visual Studio that is appropriate for your targeted platform.
 
-Step 1: Install Visual Studio
------------------------------
+
+## Step 1: Install Visual Studio
 
 Development of drivers is supported for specific versions of Visual
 Studio. To develop a driver for a specific version of Windows, you must
 use one of the versions of Visual Studio that are identified (and linked
 for download) in the following table.
 
-+--------------------------+----------------------------------------+
 | Versions of Windows      | Edition(s) of Visual Studio            |
-+==========================+========================================+
-| Windows 10, version 1803 | Visual Studio Community 2017           |
-|                          |                                        |
-| Windows 10, version 1709 | Visual Studio Professional 2017        |
-|                          |                                        |
-|                          | Visual Studio Enterprise 2017          |
-+--------------------------+----------------------------------------+
-| Windows 10, version 1703 | Visual Studio Express 2015 for Desktop |
-|                          |                                        |
-| Windows 10, version 1607 | Visual Studio Community 2015           |
-|                          |                                        |
-|                          | Visual Studio Professional 2015        |
-|                          |                                        |
-|                          | Visual Studio Enterprise 2015          |
-+--------------------------+----------------------------------------+
-| Windows 8.1 Update       | Visual Studio 2013                     |
-|                          |                                        |
-| Windows 8.1              |                                        |
-+--------------------------+----------------------------------------+
-| Windows 8                | Visual Studio Professional 2012        |
-|                          |                                        |
-|                          | Visual Studio Ultimate 2012            |
-+--------------------------+----------------------------------------+
+|--------------------------|----------------------------------------|
+| Windows 10, version 1803 <br/>Windows 10, version 1709 | Visual Studio Community 2017 <br/>Visual Studio Professional 2017 <br/>Visual Studio Enterprise 2017 |
+|--------------------------|----------------------------------------|
+| Windows 10, version 1703 <br/>Windows 10, version 1607 | Visual Studio Express 2015 for Desktop <br/>Visual Studio Community 2015 <br/>Visual Studio Professional 2015 <br/>Visual Studio Enterprise 2015 |
+|--------------------------|----------------------------------------|
+| Windows 8.1 Update <br/>Windows 8.1 | Visual Studio 2013 |
+|--------------------------|----------------------------------------|
+| Windows 8                | Visual Studio Professional 2012 <br/>Visual Studio Ultimate 2012 |
+|--------------------------|----------------------------------------|
 
 ### Configure Visual Studio for Windows 10, versions 1709 and 1803
 
@@ -134,8 +119,8 @@ failures using the kernel debugger.
 
 -   Download the Remote Debugging client (English only)
 
-Standalone tools for debugging Windows XP and Windows Vista
------------------------------------------------------------
+
+## Standalone tools for debugging Windows XP and Windows Vista
 
 If you're debugging Windows XP, Windows Server 2003, Windows Vista, or
 Windows Server 2008 (or using one of these operating systems to run
@@ -155,8 +140,8 @@ To install the Debugging Tools for Windows as a standalone component,
 start the SDK installer, and in the installation wizard, select
 **Debugging Tools for Windows**, and clear all other components.
 
-Optional: Install the EWDK
---------------------------
+
+## Optional: Install the EWDK
 
 The EWDK is a standalone, self-contained, command-line environment for
 building drivers and basic Win32 test applications. It includes the
@@ -166,11 +151,10 @@ the integrated development environment (IDE).
 
 For more information about the EWDK, see Using the Enterprise WDK 10.
 
-+-----------------------------------+-----------------------------------+
 | Versions of Windows               | EWDK                              |
-+===================================+===================================+
+|-----------------------------------|-----------------------------------|
 | Windows 10, version 1803          | EWDK for Windows 10, version 1803 |
-+-----------------------------------+-----------------------------------+
+|-----------------------------------|-----------------------------------|
 | Windows 10, version 1709          | EWDK for Visual Studio Build      |
 |                                   | Tools 15.6 (Recommended)          |
 |                                   |                                   |
@@ -179,12 +163,15 @@ For more information about the EWDK, see Using the Enterprise WDK 10.
 |                                   |                                   |
 |                                   | EWDK for Visual Studio Build      |
 |                                   | Tools 15.2                        |
-+-----------------------------------+-----------------------------------+
+|-----------------------------------|-----------------------------------|
 | Windows 10, version 1703          | EWDK for Windows 10, version 1703 |
-+-----------------------------------+-----------------------------------+
+|-----------------------------------|-----------------------------------|
 
 \[!Note\] Starting in Windows 10 version 1709, the EWDK is ISO-based. To
 get started, download and mount the ISO, then run **LaunchBuildEnv**.
+
+
+<!-- Old content follows...
 
 Downloads for Windows 10, version 1803
 --------------------------------------
@@ -312,7 +299,7 @@ Studio Build Tools 15.6.
 To get started, mount the ISO and run **LaunchBuildEnv**.
 
 
-<!-- Content in its original order follows after this comment. -->
+# OLD CONTENT FOLLOWS (but may also precede)
 
 ## Downloads for Windows 10, version 1803
 
@@ -507,6 +494,9 @@ If you're debugging Windows XP, Windows Server 2003, Windows Vista, or Windows S
 > Newer versions of the Visual C++ 2010 Redistributable can cause issues when you install the SDK for Windows 7. For more information, see [support for the Windows SDK](https://support.microsoft.com/kb/2717426).
 
 * [Get the standalone debugging tools for Windows XP as part of Windows 7 SDK](https://www.microsoft.com/download/confirmation.aspx?id=8279)
+
+
+...old content ends.-->
 
 ### Related downloads
 * [Download the Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
