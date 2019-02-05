@@ -36,13 +36,10 @@ for download) in the following table.
 | Versions of Windows      | Edition(s) of Visual Studio            |
 |--------------------------|----------------------------------------|
 | Windows 10, version 1803 <br/>Windows 10, version 1709 | Visual Studio Community 2017 <br/>Visual Studio Professional 2017 <br/>Visual Studio Enterprise 2017 |
-|--------------------------|----------------------------------------|
 | Windows 10, version 1703 <br/>Windows 10, version 1607 | Visual Studio Express 2015 for Desktop <br/>Visual Studio Community 2015 <br/>Visual Studio Professional 2015 <br/>Visual Studio Enterprise 2015 |
-|--------------------------|----------------------------------------|
 | Windows 8.1 Update <br/>Windows 8.1 | Visual Studio 2013 |
-|--------------------------|----------------------------------------|
 | Windows 8                | Visual Studio Professional 2012 <br/>Visual Studio Ultimate 2012 |
-|--------------------------|----------------------------------------|
+
 
 ### Configure Visual Studio for Windows 10, versions 1709 and 1803
 
@@ -59,44 +56,27 @@ compilers and libraries for ARM/ARM64**.
 
 -   Download the Windows SDK for Windows 10, version 1703
 
-Step 2: Install the WDK
------------------------
+
+## Step 2: Install the WDK
 
 The WDK is integrated with Visual Studio and Debugging Tools for Windows
 (WinDbg). This integrated environment gives you the tools you need to
 develop, build, package, deploy, test, and debug drivers.
 
-\[!Note\] Starting with Windows 10, version 1709, installing the WDK
+[!Note] Starting with Windows 10, version 1709, installing the WDK
 will by default install the WDK extensions for Visual Studio. These
 extensions are required for integration of the WDK with Visual Studio.
 
-+--------------------------+-------------------------------------------------+
 | Versions of Windows      | WDK and related downloads                       |
-+==========================+=================================================+
+|--------------------------|-------------------------------------------------|
 | Windows 10, version 1803 | WDK for Windows 10, version 1803                |
-+--------------------------+-------------------------------------------------+
 | Windows 10, version 1709 | WDK for Windows 10, version 1709                |
-+--------------------------+-------------------------------------------------+
 | Windows 10, version 1703 | WDK for Windows 10, version 1703                |
-+--------------------------+-------------------------------------------------+
 | Windows 10, version 1607 | WDK for Windows 10, version 1607                |
-+--------------------------+-------------------------------------------------+
-| Windows 8.1 Update       | WDK 8.1 Update (English only)                   |
-|                          |                                                 |
-|                          | WDK 8.1 Update Test Pack (English only)         |
-|                          |                                                 |
-|                          | WDK 8.1 Samples                                 |
-+--------------------------+-------------------------------------------------+
-| Windows 8                | WDK 8 (English only)                            |
-|                          |                                                 |
-|                          | WDK 8 redistributable components (English only) |
-|                          |                                                 |
-|                          | WDK 8 Samples                                   |
-+--------------------------+-------------------------------------------------+
-| Windows XP               | WDK 7.1.0                                       |
-|                          |                                                 |
-| Windows Server 2003      |                                                 |
-+--------------------------+-------------------------------------------------+
+| Windows 8.1 Update       | WDK 8.1 Update (English only) <br/>WDK 8.1 Update Test Pack (English only) <br/>WDK 8.1 Samples |
+| Windows 8                | WDK 8 (English only) <br/>WDK 8 redistributable components (English only) <br/>WDK 8 Samples |
+| Windows XP <br/>Windows Server 2003 | WDK 7.1.0 |
+
 
 ### Notes for Windows 8.1 Update
 
@@ -128,7 +108,7 @@ Debugging Tools for Windows), you need to use the Windows 7 release of
 the debugging tools. It's included in the SDK for Windows 7 and .NET
 Framework 4.0.
 
-> \[!IMPORTANT\] Newer versions of the Visual C++ 2010 Redistributable
+> [!IMPORTANT] Newer versions of the Visual C++ 2010 Redistributable
 > can cause issues when you install the SDK for Windows 7. For more
 > information, see support for the Windows SDK.
 
@@ -146,7 +126,7 @@ start the SDK installer, and in the installation wizard, select
 The EWDK is a standalone, self-contained, command-line environment for
 building drivers and basic Win32 test applications. It includes the
 Visual Studio Build Tools, the SDK, and the WDK. This environment
-doesn\'t include all the features available in Visual Studio, such as
+doesn't include all the features available in Visual Studio, such as
 the integrated development environment (IDE).
 
 For more information about the EWDK, see Using the Enterprise WDK 10.
@@ -154,21 +134,11 @@ For more information about the EWDK, see Using the Enterprise WDK 10.
 | Versions of Windows               | EWDK                              |
 |-----------------------------------|-----------------------------------|
 | Windows 10, version 1803          | EWDK for Windows 10, version 1803 |
-|-----------------------------------|-----------------------------------|
-| Windows 10, version 1709          | EWDK for Visual Studio Build      |
-|                                   | Tools 15.6 (Recommended)          |
-|                                   |                                   |
-|                                   | EWDK for Visual Studio Build      |
-|                                   | Tools 15.4                        |
-|                                   |                                   |
-|                                   | EWDK for Visual Studio Build      |
-|                                   | Tools 15.2                        |
-|-----------------------------------|-----------------------------------|
+| Windows 10, version 1709          | EWDK for Visual Studio Build Tools 15.6 (Recommended) <br/>EWDK for Visual Studio Build Tools 15.4 <br/>EWDK for Visual Studio Build Tools 15.2 |
 | Windows 10, version 1703          | EWDK for Windows 10, version 1703 |
-|-----------------------------------|-----------------------------------|
 
-\[!Note\] Starting in Windows 10 version 1709, the EWDK is ISO-based. To
-get started, download and mount the ISO, then run **LaunchBuildEnv**.
+> [!Note]
+> Starting in Windows 10 version 1709, the EWDK is ISO-based. To get started, download and mount the ISO, then run **LaunchBuildEnv**.
 
 
 <!-- Old content follows...
