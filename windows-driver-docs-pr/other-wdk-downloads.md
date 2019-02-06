@@ -35,10 +35,10 @@ for download) in the following table.
 
 | Versions of Windows      | Edition(s) of Visual Studio            |
 |--------------------------|----------------------------------------|
-| Windows 10, version 1803 <br/>Windows 10, version 1709 | Visual Studio Community 2017 <br/>Visual Studio Professional 2017 <br/>Visual Studio Enterprise 2017 |
-| Windows 10, version 1703 <br/>Windows 10, version 1607 | Visual Studio Express 2015 for Desktop <br/>Visual Studio Community 2015 <br/>Visual Studio Professional 2015 <br/>Visual Studio Enterprise 2015 |
-| Windows 8.1 Update <br/>Windows 8.1 | Visual Studio 2013 |
-| Windows 8                | Visual Studio Professional 2012 <br/>Visual Studio Ultimate 2012 |
+| Windows 10, version 1803 <br/>Windows 10, version 1709 | [Visual Studio Community 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15) <br/>[Visual Studio Professional 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) <br/>[Visual Studio Enterprise 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15) |
+| Windows 10, version 1703 <br/>Windows 10, version 1607 | [Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/?linkid=875331) <br/>[Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599) <br/>[Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628) <br/>[Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629) |
+| Windows 8.1 Update <br/>Windows 8.1 | [Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=875331) |
+| Windows 8                | [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) <br/>[Visual Studio Ultimate 2012](https://go.microsoft.com/fwlink/p/?LinkID=255982) |
 
 
 ### Configure Visual Studio for Windows 10, versions 1709 and 1803
@@ -69,13 +69,13 @@ extensions are required for integration of the WDK with Visual Studio.
 
 | Versions of Windows      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
-| Windows 10, version 1803 | WDK for Windows 10, version 1803                |
-| Windows 10, version 1709 | WDK for Windows 10, version 1709                |
-| Windows 10, version 1703 | WDK for Windows 10, version 1703                |
-| Windows 10, version 1607 | WDK for Windows 10, version 1607                |
-| Windows 8.1 Update       | WDK 8.1 Update (English only) <br/>WDK 8.1 Update Test Pack (English only) <br/>WDK 8.1 Samples |
-| Windows 8                | WDK 8 (English only) <br/>WDK 8 redistributable components (English only) <br/>WDK 8 Samples |
-| Windows XP <br/>Windows Server 2003 | WDK 7.1.0 |
+| Windows 10, version 1803 | [WDK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873060) |
+| Windows 10, version 1709 | [WDK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859232) |
+| Windows 10, version 1703 | [WDK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkID=845980) |
+| Windows 10, version 1607 | [WDK for Windows 10, version 1607](https://go.microsoft.com/fwlink/p/?LinkId=526733)                |
+| Windows 8.1 Update       | [WDK 8.1 Update](https://go.microsoft.com/fwlink/p/?LinkId=393659) (English only) <br/>[WDK 8.1 Update Test Pack](https://go.microsoft.com/fwlink/p/?LinkID=393660) (English only) <br/>[WDK 8.1 Samples](https://code.msdn.microsoft.com/windowshardware/Windows-Driver-Kit-WDK-81-cf35e953) |
+| Windows 8                | [WDK 8](https://go.microsoft.com/fwlink/p/?LinkID=324284) (English only) <br/>[WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) (English only) <br/>[WDK 8 Samples](https://code.msdn.microsoft.com/windowshardware/Windows-Driver-Kit-WDK-80-e3161626) |
+| Windows XP <br/>Windows Server 2003 | [WDK 7.1.0](https://www.microsoft.com/download/confirmation.aspx?id=11800) |
 
 
 ### Notes for Windows 8.1 Update
@@ -133,9 +133,9 @@ For more information about the EWDK, see Using the Enterprise WDK 10.
 
 | Versions of Windows               | EWDK                              |
 |-----------------------------------|-----------------------------------|
-| Windows 10, version 1803          | EWDK for Windows 10, version 1803 |
-| Windows 10, version 1709          | EWDK for Visual Studio Build Tools 15.6 (Recommended) <br/>EWDK for Visual Studio Build Tools 15.4 <br/>EWDK for Visual Studio Build Tools 15.2 |
-| Windows 10, version 1703          | EWDK for Windows 10, version 1703 |
+| Windows 10, version 1803          | [EWDK for Windows 10, version 1803](https://developer.microsoft.com/windows/hardware/license-terms-EWDK) |
+| Windows 10, version 1709          | [EWDK for Visual Studio with Build Tools 15.6](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-6) (Recommended) <br/>[EWDK for Visual Studio with Build Tools 15.4](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4) <br/>[EWDK for Visual Studio with Build Tools 15.2](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709) |
+| Windows 10, version 1703          | [EWDK for Windows 10, version 1703](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1703) |
 
 > [!Note]
 > Starting in Windows 10 version 1709, the EWDK is ISO-based. To get started, download and mount the ISO, then run **LaunchBuildEnv**.
