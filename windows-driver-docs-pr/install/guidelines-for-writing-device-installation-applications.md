@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Guidelines for Writing Device Installation Applications
 
 
-[*Device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application)   *must* do the following:
+*Device installation applications*   *must* do the following:
 
 -   Support removal of all device-specific applications that they install. As part of that uninstall process, the device installation application should check whether any associated devices are still present on the system and, if so, warn the user.
 
@@ -44,7 +44,7 @@ Device installation applications *must not* do the following:
 
 -   Force any unnecessary system restarts. Restarts are generally not required for installing PnP devices or software applications. The *bRebootRequired* parameter of the [**UpdateDriverForPlugAndPlayDevices**](https://msdn.microsoft.com/library/windows/hardware/ff553534) function indicates the need for a restart.
 
--   Use [RunOnce registry keys](runonce-registry-key.md) to start [*device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application), because this requires a system restart.
+-   Use RunOnce registry keys, because this requires a system restart.
 
 -   Use a device or class co-installer, or a class installer, to start a device installation application, because the state of the system during device installation cannot be guaranteed to be safe for installing software applications. Specifically, if the device installation application runs during a server-side installation, the system will stop responding.
 
@@ -52,7 +52,7 @@ Device installation applications *must not* do the following:
 
     For more information about co-installers, see [Writing a Co-installer](writing-a-co-installer.md).
 
--   Use the Startup Group to start [*device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application).
+-   Use the Startup Group to start *device installation applications*.
 
 -   Use *win.ini* entries to start device installation applications.
 

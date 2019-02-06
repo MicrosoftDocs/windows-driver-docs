@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # How Container IDs are Generated from the Removable Device Capability
 
 
-If a bus driver cannot provide a container ID for a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) that it is enumerating, the Plug and Play (PnP) manager uses the removable device capability to generate a container ID for all devnodes enumerated for the device. For more information about the removable device capability, see [Overview of the Removable Device Capability](overview-of-the-removable-device-capability.md).
+If a bus driver cannot provide a container ID for a device node (*devnode*) that it is enumerating, the Plug and Play (PnP) manager uses the removable device capability to generate a container ID for all devnodes enumerated for the device. For more information about the removable device capability, see [Overview of the Removable Device Capability](overview-of-the-removable-device-capability.md).
 
 The following heuristic describes how Container IDs are generated from the removable device capability:
 
@@ -17,7 +17,7 @@ The following heuristic describes how Container IDs are generated from the remov
 
 2.  If the devnode has the removable device capability set to **FALSE**, inherit the container ID from its parent devnode.
 
-A devnode cannot enumerate child devnodes until it is initialized and its [*driver stack*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-stack) is started. As soon as its container ID is assigned during initialization, the devnode is ready to propagate its container ID down to any of its nonremovable children as they are enumerated.
+A devnode cannot enumerate child devnodes until it is initialized and its *driver stack* is started. As soon as its container ID is assigned during initialization, the devnode is ready to propagate its container ID down to any of its nonremovable children as they are enumerated.
 
 A devnode with the removable device capability set to **TRUE** is considered the topmost (parent) devnode for the device, and a container ID is generated for this devnode.
 

@@ -31,7 +31,7 @@ Drivers should follow these rules for specifying **StartType**:
 
     If a device is required to start the computer, the drivers for the device should have a start type of SERVICE_BOOT_START (0x0).
 
--   Non-[*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver) that detects device(s) that are not PnP-enumerable
+-   Non-*boot-start driver* that detects device(s) that are not PnP-enumerable
 
     For a device that is not PnP-enumerable, a driver reports the device to the PnP manager by calling [**IoReportDetectedDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549597). Such a driver should have the start type SERVICE_SYSTEM_START (0x01) so Windows will load the driver during system initialization.
 
@@ -63,11 +63,11 @@ To reinforce the importance of setting the correct **StartType** value, the foll
 
 2.  The PnP manager calls the **DriverEntry** routines of the SERVICE_BOOT_START drivers so the drivers can service the boot devices.
 
-    If a boot device has child devices, those devices are enumerated. The child devices are configured and started if their drivers are also boot-start drivers. If a device's drivers are not all boot-start drivers, the PnP manager creates a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) for the device but does not start the device yet.
+    If a boot device has child devices, those devices are enumerated. The child devices are configured and started if their drivers are also boot-start drivers. If a device's drivers are not all boot-start drivers, the PnP manager creates a device node (*devnode*) for the device but does not start the device yet.
 
 3.  After all the boot drivers have loaded and the boot devices are started, the PnP manager configures the rest of the PnP devices and loads their drivers.
 
-    The PnP manager walks the [device tree](https://msdn.microsoft.com/library/windows/hardware/ff543194) and loads the drivers for the [*devnodes*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode) that are not yet started (that is, any nonstarted devnodes from the previous step). As each device starts, the PnP manager enumerates the children of the device, if any.
+    The PnP manager walks the device tree that are not yet started (that is, any nonstarted devnodes from the previous step). As each device starts, the PnP manager enumerates the children of the device, if any.
 
     As it configures these devices, the PnP manager loads the drivers for the devices, *regardless* of the drivers' **StartType** values (except when **StartType** is SERVICE_DISABLED) before proceeding to start the devices. Many of these drivers are SERVICE_DEMAND_START drivers.
 

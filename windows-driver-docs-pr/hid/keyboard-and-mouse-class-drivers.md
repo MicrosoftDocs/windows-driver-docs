@@ -53,7 +53,7 @@ Kbdclass and Mouclass each feature:
 ## Configuration of device objects
 
 
-The following figure shows the configuration of device objects for a Plug and Play PS/2-style keyboard and mouse device. Each class driver creates an upper-level class [*filter device object*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-filter-device-object) (filter DO) that is attached to a function device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)) through an optional upper-level device filter DO. An upper-level device filter driver creates the upper-level device filter DO. I8042prt creates the function DO and attaches it to a physical device object ([*PDO*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdo)) created by the root bus driver.
+The following figure shows the configuration of device objects for a Plug and Play PS/2-style keyboard and mouse device. Each class driver creates an upper-level class *filter device object* (filter DO) that is attached to a function device object (*FDO*) through an optional upper-level device filter DO. An upper-level device filter driver creates the upper-level device filter DO. I8042prt creates the function DO and attaches it to a physical device object (*PDO*) created by the root bus driver.
 
 ![diagram illustrating the configuration of device objects for a plug and play ps/2-style keyboard and mouse device](images/km-ovr2.png)
 

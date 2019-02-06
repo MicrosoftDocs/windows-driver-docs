@@ -42,7 +42,7 @@ Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code. 
 Remarks
 -------
 
-After the [*VMR*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-video-mixer-renderer--vmr-) has determined the capabilities and ranges of the ProcAmp control hardware using the [**ProcAmpControlQueryCaps**](dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps.md) and [**ProcAmpControlQueryRange**](dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange.md) functions, a ProcAmp stream object can be created. Creation of a ProcAmp stream object allows a display driver to reserve hardware resources that are required to perform a ProcAmp adjustment operation.
+After the *VMR* has determined the capabilities and ranges of the ProcAmp control hardware using the [**ProcAmpControlQueryCaps**](dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps.md) and [**ProcAmpControlQueryRange**](dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange.md) functions, a ProcAmp stream object can be created. Creation of a ProcAmp stream object allows a display driver to reserve hardware resources that are required to perform a ProcAmp adjustment operation.
 
 The *ProcAmpControlOpenStream* function maps directly to a call to the CreateMoComp member of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure. The CreateMoComp member points to a driver-supplied function that references the [**DD\_CREATEMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff550529) structure.
 

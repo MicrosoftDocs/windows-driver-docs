@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Modifying Registry Values in a Device's Software Key
 
 
-You must not modify the values of the following registry entries (*device properties*) in a device's [*software key*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-key):
+You must not modify the values of the following registry entries (*device properties*) in a device's *software key*:
 
 -   DriverDate
 

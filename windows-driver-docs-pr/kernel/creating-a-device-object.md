@@ -53,7 +53,7 @@ A WDM bus driver creates a PDO when it is enumerating a new device in response t
 
 The following rules determine if a bus driver calls **IoCreateDevice** or **IoCreateDeviceSecure** to create a device object:
 
--   If a device can be used in [*raw mode*](https://msdn.microsoft.com/library/windows/hardware/ff556331#wdkgloss-raw-mode), then it must call **IoCreateDeviceSecure**.
+-   If a device can be used in *raw mode*, then it must call **IoCreateDeviceSecure**.
 
 -   If the device is not raw-mode capable, then the bus driver can use either **IoCreateDevice** or **IoCreateDeviceSecure**. **IoCreateDevice** can be used when the default system security for devices on the bus is adequate; **IoCreateDeviceSecure** can be used to specify a more stringent security descriptor. For more information, see [Controlling Device Access](controlling-device-access.md).
 

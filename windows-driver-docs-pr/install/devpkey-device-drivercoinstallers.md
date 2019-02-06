@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_DriverCoInstallers
 
 
-The DEVPKEY_Device_DriverCoInstallers device property represents a list of DLL names, and entry points in the DLLs, that are registered as [*co-installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer) for a device instance.
+The DEVPKEY_Device_DriverCoInstallers device property represents a list of DLL names, and entry points in the DLLs, that are registered as *co-installers* for a device instance.
 
 <table>
 <colgroup>

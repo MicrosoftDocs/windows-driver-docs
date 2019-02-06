@@ -17,7 +17,7 @@ A removable-media device driver must ensure that the media is not changed for th
 
 If its physical device indicates that the state of the media might have changed before the driver begins an I/O operation or during an operation, the driver must do the following:
 
-1.  Ensure that the volume is mounted by checking the VPB\_MOUNTED flag in the [*VPB*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-vpb). (If the volume is not mounted, the driver must not set the DO\_VERIFY\_VOLUME bit. The driver should set **IoStatus.Status** to STATUS\_IO\_DEVICE\_ERROR, set **IoStatus.Information** to zero, and call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) with the IRP.)
+1.  Ensure that the volume is mounted by checking the VPB\_MOUNTED flag in the *VPB*. (If the volume is not mounted, the driver must not set the DO\_VERIFY\_VOLUME bit. The driver should set **IoStatus.Status** to STATUS\_IO\_DEVICE\_ERROR, set **IoStatus.Information** to zero, and call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) with the IRP.)
 
 2.  Set the **Flags** in the **DeviceObject** by ORing **Flags** with DO\_VERIFY\_VOLUME.
 

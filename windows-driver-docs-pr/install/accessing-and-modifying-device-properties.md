@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Accessing and Modifying Device Properties
 
 
-[Device properties](device-properties.md) codify the attributes of [*device instances*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-instance), [device setup classes](device-setup-classes.md), [device interface classes](device-interface-classes.md), and [*device interfaces*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-interface).
+Device properties, device setup classes.
 
 This section provides guidelines that [driver package](driver-packages.md) components must follow when they access or modify device properties. These guidelines are discussed in the following topics:
 

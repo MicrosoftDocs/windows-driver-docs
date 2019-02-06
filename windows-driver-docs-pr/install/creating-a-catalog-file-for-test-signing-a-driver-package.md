@@ -24,7 +24,7 @@ There are two ways to create a [catalog file](catalog-files.md):
 
 A catalog file is not needed to install the following types of drivers:
 
--   A [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver).
+-   A *boot-start driver*.
 
 -   A driver that is installed by using an application that does not use a [catalog file](catalog-files.md).
 

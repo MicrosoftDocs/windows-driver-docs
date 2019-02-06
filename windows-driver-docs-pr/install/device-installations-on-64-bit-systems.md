@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 If your device will be installed on both 32-bit platforms and 64-bit platforms, you must follow these steps when you create a [driver package](driver-packages.md):
 
--   Provide both 32-bit and 64-bit compilations of all kernel-mode drivers, [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application), [*class installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-class-installer), and [*co-installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer). For more information, see [Porting Your Driver to 64-Bit Windows](https://msdn.microsoft.com/library/windows/hardware/ff559747).
+-   Provide both 32-bit and 64-bit compilations of all kernel-mode drivers, *device installation application*, *class installers*, and *co-installers*. For more information, see [Porting Your Driver to 64-Bit Windows](https://msdn.microsoft.com/library/windows/hardware/ff559747).
 
--   Provide one or more cross-platform INF files that use [*decorated INF sections*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-decorated-inf-section) to control platform-specific installation behavior.
+-   Provide one or more cross-platform INF files that use *decorated INF sections* to control platform-specific installation behavior.
 
 If you are [writing a device installation application](writing-a-device-installation-application.md), the 32-bit version must be the default version. That is, the 32-bit version should be invoked by Autorun (described in the Microsoft Windows SDK documentation), so that it starts automatically when a user inserts your distribution disk.
 

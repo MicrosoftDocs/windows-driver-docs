@@ -21,7 +21,7 @@ For example, consider a single-function USB printer from the company Contoso, Lt
 </HardwareIDList>
 ```
 
-If the device is a multifunction device, a device container combines all the [hardware IDs](hardware-ids.md) from the device nodes ([*devnodes*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) for each hardware function on the device. For more information about device containers and container IDs, see [Container IDs](container-ids.md).
+If the device is a multifunction device, a device container combines all the hardware IDs) for each hardware function on the device. For more information about device containers and container IDs, see [Container IDs](container-ids.md).
 
 The following figure shows the relationship between a multifunction device's devnodes and device container.
 
@@ -35,7 +35,7 @@ Depending on your multifunction device, you can decide which [hardware ID](hardw
 
 Therefore, make sure that your metadata package does not rely on the order or ranking of [hardware IDs](hardware-ids.md) across the devnodes for a device. You should use all relevant hardware IDs for your multifunction device in the [**HardwareIDList**](https://msdn.microsoft.com/library/windows/hardware/ff546121) element of your device metadata package. This guarantees that the operating system selects your metadata package regardless of the ranking of hardware IDs.
 
-Based on the [*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode) topology shown in the previous figure, consider the following suggestions:
+Based on the *devnode* topology shown in the previous figure, consider the following suggestions:
 
 -   Specify *HardwareID1-1*, *HardwareID2-1,* and *Hardware ID3-1* in a new device metadata package if you have already published another metadata package that specifies only *HardwareID2-1*.
 
