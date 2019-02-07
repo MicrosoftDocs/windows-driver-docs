@@ -7474,6 +7474,26 @@
       "source_path": "windows-driver-docs-pr/debugger/checking-and-updating-status.md",
       "redirect_URL": "/windows-hardware/drivers/debugger/symproxy",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/print/devices-and-printers.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/print/document-devices-in-devices-and-printers.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/print/device-experience-in-devices-and-printers.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/device-stage-custom-experience.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
+      "redirect_document_id": false
     }
   ]
 }
