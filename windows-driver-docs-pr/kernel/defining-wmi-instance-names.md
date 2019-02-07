@@ -19,7 +19,7 @@ A driver can define instance names for a block in either of two ways:
 
 -   The driver passes a list of *static instance names* to WMI when it registers the block.
 
-    After the block is registered, both the driver and WMI specify an instance name by its index into this list. Static instance names can be based on the [*device instance ID*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-instance-id) of a driver's PDO, or a driver-defined base name; or the driver can define a list of instance name strings. Static instance names persist until the driver explicitly changes them by reregistering the block.
+    After the block is registered, both the driver and WMI specify an instance name by its index into this list. Static instance names can be based on the *device instance ID* of a driver's PDO, or a driver-defined base name; or the driver can define a list of instance name strings. Static instance names persist until the driver explicitly changes them by reregistering the block.
 
 -   The driver generates *dynamic instance names* as instances are created.
 

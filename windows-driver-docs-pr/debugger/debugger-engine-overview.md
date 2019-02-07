@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Debugger Engine Overview
 
 
-The *debugger engine* (DbgEng.dll), typically referred to as the *engine*, provides an interface for examining and manipulating debugging targets in [*user mode*](https://msdn.microsoft.com/library/windows/hardware/ff556343#wdkgloss-user-mode) and [*kernel mode*](https://msdn.microsoft.com/library/windows/hardware/ff556299#wdkgloss-kernel-mode) on Microsoft Windows.
+The *debugger engine* (DbgEng.dll), typically referred to as the *engine*, provides an interface for examining and manipulating debugging targets in *user mode* and *kernel mode* on Microsoft Windows.
 
 The debugger engine can acquire targets, set [breakpoints](multiprocessor-syntax.md#breakpoints), monitor [events](events.md#events), query [symbols](symbols.md#symbols), read and write to memory, and control [threads](controlling-threads-and-processes.md#threads) and [processes](controlling-threads-and-processes.md#processes) in a target.
 

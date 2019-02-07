@@ -27,7 +27,7 @@ This section provides the basic steps that you have to follow when you release-s
 
 -   Release-signing the driver package's catalog file.
 
--   Release-signing a driver through an embedded signature. You have to embed a digital signature within the driver if the driver is a [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver).
+-   Release-signing a driver through an embedded signature. You have to embed a digital signature within the driver if the driver is a *boot-start driver*.
 
 Each topic in this section describes a separate procedure in the release-signing process, and provides the general information that you have to understand about the procedure. In addition, each topic points you to other topics that provide detailed information about the procedure.
 

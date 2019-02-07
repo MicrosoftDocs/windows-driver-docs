@@ -49,7 +49,7 @@ The following table lists functions associated with the default queue callback r
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377442" data-raw-source="[&lt;strong&gt;SetupTermDefaultQueueCallback&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377442)"><strong>SetupTermDefaultQueueCallback</strong></a></p></td>
-<td align="left"><p>Notifies the system that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application" data-raw-source="[&lt;em&gt;device installation application&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application)"><em>device installation application</em></a> will not commit any additional file queue operations.</p></td>
+<td align="left"><p>Notifies the system that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application" data-raw-source="&lt;em&gt;device installation application&lt;/em&gt;"><em>device installation application</em></a> will not commit any additional file queue operations.</p></td>
 </tr>
 </tbody>
 </table>

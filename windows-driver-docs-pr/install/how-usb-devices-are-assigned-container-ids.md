@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # How USB Devices are Assigned Container IDs
 
 
-For a device that is connected to the computer through the Universal Serial Bus (USB), the following flowchart shows the heuristic used to assign a container ID to a USB device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)).
+For a device that is connected to the computer through the Universal Serial Bus (USB), the following flowchart shows the heuristic used to assign a container ID to a USB device node (*devnode*).
 
 ![flowchart illustrating the container id heuristic for usb devnodes](images/containerid-6.png)
 

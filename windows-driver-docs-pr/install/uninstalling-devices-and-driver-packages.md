@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 After a device is installed, it might be necessary to uninstall a device or a [driver package](driver-packages.md). For example, an end-user might decide to replace the associated device, or the driver package might have to be uninstalled when a driver is updated.
 
-When you uninstall a device, you must remove the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) that represents the physical instance of the device in the system.
+When you uninstall a device, you must remove the device node (*devnode*) that represents the physical instance of the device in the system.
 
 When you uninstall a [driver package](driver-packages.md), you must complete the following actions:
 

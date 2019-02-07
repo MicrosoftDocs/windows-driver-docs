@@ -30,7 +30,7 @@ CPSUI provides predefined property sheet pages for printers and print documents.
 
 The print spooler, in conjunction with [printer interface DLLs](printer-interface-dll.md), use these predefined pages to create property sheets for printers and documents. For information about how the print spooler, printer interface DLLs, and CPSUI interact, see [Using CPSUI with Printer Drivers](using-cpsui-with-printer-drivers.md).
 
-Customized user interface code created for Microsoft's [*Unidrv*](https://msdn.microsoft.com/library/windows/hardware/ff556343#wdkgloss-unidrv) and [*Pscript*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pscript) drivers can also use CPSUI. For more information, see [User Interface Plug-Ins](user-interface-plug-ins.md).
+Customized user interface code created for Microsoft's *Unidrv* and *Pscript* drivers can also use CPSUI. For more information, see [User Interface Plug-Ins](user-interface-plug-ins.md).
 
  
 

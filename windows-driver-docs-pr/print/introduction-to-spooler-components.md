@@ -23,7 +23,7 @@ The primary components of the Microsoft Windows 2000 and later print spooler are
 The print application creates a print job by calling GDI functions.
 
 <a href="" id="gdi-"></a>**GDI**   
-The Graphics Device Interface ([*GDI*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-graphics-device-interface--gdi-)) includes both user-mode and kernel-mode components. The user-mode component, Microsoft Win32 GDI, is used by Win32 applications that require graphics support. The kernel-mode component, the [*graphics engine*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-graphics-engine) (or graphics rendering engine), exports services and functions that graphics device drivers can use.
+The Graphics Device Interface (*GDI*) includes both user-mode and kernel-mode components. The user-mode component, Microsoft Win32 GDI, is used by Win32 applications that require graphics support. The kernel-mode component, the *graphics engine* (or graphics rendering engine), exports services and functions that graphics device drivers can use.
 
 <a href="" id="winspool-drv-"></a>**Winspool.drv**   
 Winspool.drv is the client interface into the spooler. It exports the functions that make up the spooler's Win32 API, and provides RPC stubs for accessing the server. (GDI is the primary client, but applications also call some of its Win32 functions.)

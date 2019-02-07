@@ -3,7 +3,7 @@ title: Installing SymProxy
 description: Installing SymProxy
 ms.assetid: 63633de7-d254-415d-bf06-c0e81bd03e74
 keywords: ["SymProxy, installation"]
-ms.date: 10/25/2018
+ms.date: 01/03/2019
 ms.localizationpriority: medium
 ---
 
@@ -22,8 +22,6 @@ The following summarizes the tasks to install and configure SymProxy.
 -   The manifest needs to be registered as Performance Counters and ETW events, and the Event Log needs to be configured.
 
 -   IIS needs to be configured. For more information, see [Choosing Network Security Credentials](choosing-network-security-credentials.md) and [Configuring IIS for SymProxy](configuring-iis-for-symproxy.md).
-
--   Confirm that SymProxy is running as expected using the status page. For more information see [Checking and Updating Status](checking-and-updating-status.md).
 
 These steps can be automated using the Install.cmd file. For more information, see [SymProxy Automated Installation](symproxy-automated-installation.md).
 

@@ -22,7 +22,7 @@ A **CopyFiles** directive can do either of the following:
 -   Cause a single file to be copied from the source media to the default destination directory.
 -   Reference one or more INF-writer-defined sections in the INF that each specifies a list of files to be copied from the source media to the destination.
 
-```cpp
+```ini
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -44,7 +44,7 @@ A **CopyFiles** directive can be specified within any of the sections shown in t
 
 Each named section referenced by a **CopyFiles** directive has one or more entries of the following form:
 
-```cpp
+```ini
 [file-list-section]
 destination-file-name[,[source-file-name][,[unused][,flag]]]
 ...
@@ -54,7 +54,7 @@ An INF-writer-defined *file-list-section* can have any number of entries, each o
 
 Each *file-list-section* can have an optional, associated <em>file-list-section</em>**.security** section of the following form:
 
-```cpp
+```ini
 [file-list-section.security]
 "security-descriptor-string"
 ```
@@ -92,12 +92,10 @@ Do not replace an existing file in the destination directory with a source file 
 <a href="" id="0x00000020--copyflg-no-version-dialog--"></a>**0x00000020** (COPYFLG_NO_VERSION_DIALOG)   
 Do not write over a file in the destination directory with the source file if the existing file is newer than the source file.
 
-Beginning with Windows Vista and later operating systems, Windows respects this flag for all INF files, including digitally signed INF files.
-
-Prior to Windows Vista this flag is irrelevant to digitally signed INF files. If a [driver package](driver-packages.md) is digitally signed, Windows installs the package as a whole and does not selectively omit files in the package based on other versions already present on the computer.
+The newer check is done using the file version, as extracted from the VS_VERSIONINFO file version resource. For more info, see https://docs.microsoft.com/windows/desktop/menurc/version-information. If the target file is not an executable or resource image, or the file does not contain file version information, then device install assumes that the target file is older. 
 
 <a href="" id="0x00000040---copyflg-overwrite-older-only-"></a>**0x00000040** (COPYFLG_OVERWRITE_OLDER_ONLY)  
-Copy the source file to the destination directory only if the file on the destination is superseded by a newer version. This flag is irrelevant to digitally signed INF files.
+Copy the source file to the destination directory only if the file on the destination is superseded by a newer version. This flag is irrelevant to digitally signed INF files. The version check uses the same procedure as that described above in COPYFLG_NO_VERSION_DIALOG.
 
 <a href="" id="0x00000400--copyflg-replaceonly--"></a>**0x00000400** (COPYFLG_REPLACEONLY)   
 Copy the source file to the destination directory only if the file is already present in the destination directory.
@@ -163,7 +161,7 @@ Examples
 
 This example shows how the [**SourceDisksNames**](inf-sourcedisksnames-section.md), [**SourceDisksFiles**](inf-sourcedisksfiles-section.md), and [**DestinationDirs**](inf-destinationdirs-section.md) sections specify the paths for copy-file (and delete-file) operations that occur in processing a simple device-driver INF. (The same INF was also used previously as examples of [**Version**](inf-version-section.md), **SourceDisksNames**, and **SourceDisksFiles** sections.)
 
-```cpp
+```ini
 [SourceDisksNames]
 1 = %Floppy_Description%,,,\WinNT
 
@@ -189,7 +187,7 @@ CopyFiles=@AHA154x.SYS
 
 This example shows how a **CopyFiles** directive can be used in a [***DDInstall*.CoInstallers**](inf-ddinstall-coinstallers-section.md) section of an INF for a device driver that provides two device-specific co-installers to supplement the INF processing of the system device-type-specific class installer.
 
-```cpp
+```ini
 [DestinationDirs]
 XxDev_Coinstallers_CopyFiles = 11  ; DIRID_SYSTEM
 ; ... other file-list entries and DefaultDestDirs omitted here

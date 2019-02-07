@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 
 This section specifies the hardware IDs that the HID class driver generates for top-level collections.
 
-Vendors must use the formats that are designated as *vendor hardware ID formats* to identify top-level collections. All other [*device ID*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-id) formats are reserved for internal use only.
+Vendors must use the formats that are designated as *vendor hardware ID formats* to identify top-level collections. All other *device ID* formats are reserved for internal use only.
 
 
 

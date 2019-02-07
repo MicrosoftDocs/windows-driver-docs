@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 All picture buffers are assumed to have frame-organized buffers as described in the MPEG-2 video specification (sample locations are given as frame coordinates).
 
-It is possible to use an implementation-specific translation layer to convert prediction blocks without loss (see [*lossy compression*](https://msdn.microsoft.com/library/windows/hardware/ff556305#wdkgloss-lossy-compression)) that are described in frame coordinates to field coordinates. For example, a single frame motion prediction can be broken into two separate, top and bottom macroblock-portion predictions.
+It is possible to use an implementation-specific translation layer to convert prediction blocks without loss (see *lossy compression*) that are described in frame coordinates to field coordinates. For example, a single frame motion prediction can be broken into two separate, top and bottom macroblock-portion predictions.
 
 Three video component channels (Y, Cb, Cr) are decoded using interfaces defined for DirectX VA. Motion vectors for the two chrominance components (Cb, Cr) are derived from those sent for the luminance component (Y). The accelerator is responsible for converting any of these motion vectors to different coordinate systems that may be used.
 

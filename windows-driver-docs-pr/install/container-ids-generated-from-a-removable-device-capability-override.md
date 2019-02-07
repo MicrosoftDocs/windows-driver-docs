@@ -17,7 +17,7 @@ Windows 7 and later versions of Windows also support a mechanism to override the
 
 Although the override mechanism does not change the value of the removable device capability, it forces the PnP manager to use the override setting and not the value of the removable device capability when generating container IDs for devices.
 
-Through this override mechanism, a container ID can be generated through a registry-based method. As soon as the container ID is generated for the topmost (parent) device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) of a device, the same container ID is inherited by each child devnode of the device through the heuristic described in [Container IDs Generated from the Removable Device Capability](container-ids-generated-from-the-removable-device-capability.md).
+Through this override mechanism, a container ID can be generated through a registry-based method. As soon as the container ID is generated for the topmost (parent) device node (*devnode*) of a device, the same container ID is inherited by each child devnode of the device through the heuristic described in [Container IDs Generated from the Removable Device Capability](container-ids-generated-from-the-removable-device-capability.md).
 
 The override mechanism is a registry-based lookup table that consists of registry keys that map to specific devices. This override table is maintained under the [DeviceOverrides registry key](deviceoverrides-registry-key.md), and consists of the following registry keys and subkeys.
 
@@ -55,7 +55,7 @@ The override mechanism is a registry-based lookup table that consists of registr
 <tr class="even">
 <td align="left"><p>3</p></td>
 <td align="left"><p><a href="locationpaths-registry-subkey.md" data-raw-source="[LocationPaths](locationpaths-registry-subkey.md)">LocationPaths</a></p></td>
-<td align="left"><p>Specifies that only the location path of the device&#39;s parent device node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode" data-raw-source="[&lt;em&gt;devnode&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)"><em>devnode</em></a>) will have the removable device capability override applied.</p></td>
+<td align="left"><p>Specifies that only the location path of the device&#39;s parent device node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode" data-raw-source="&lt;em&gt;devnode&lt;/em&gt;"><em>devnode</em></a>) will have the removable device capability override applied.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>

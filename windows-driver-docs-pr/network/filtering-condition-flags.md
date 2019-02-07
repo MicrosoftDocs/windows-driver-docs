@@ -4,13 +4,16 @@ description: This section describes filtering condition flags.
 ms.assetid: a2493fc5-614f-47df-a818-cdec06dc9f4a
 keywords:
 - Filtering condition flags network drivers
-ms.date: 11/08/2017
+ms.date: 01/07/2019
 ms.localizationpriority: medium
 ---
 
 # Filtering condition flags
 
 The filtering condition flags are each represented by a bit field. These flags are defined as follows:
+
+> [!NOTE]
+> This topic contains filtering condition flags for kernel mode WFP callout drivers. For information about filtering condition flags that are shared between user mode and kernel mode, or if you are looking for information about a flag that isn't listed here, see the [Filtering Condition Flags](https://docs.microsoft.com/windows/desktop/FWP/filtering-condition-flags-) topic in the Windows SDK documentation.
 
 <table>
 <tr>

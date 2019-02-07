@@ -38,7 +38,7 @@ To create a Network Driver Interface Specification (NDIS) protocol driver packag
 - Step 5: Read the protocol driver introduction topics.
   [Introduction to NDIS Protocol Drivers](introduction-to-ndis-protocol-drivers.md)
   [Protocol Driver Design Concepts](protocol-driver-design-concepts.md)
-- Step 6: Read the [writing protocol drivers section](writing-ndis-miniport-drivers.md).
+- Step 6: Read the [writing protocol drivers section](writing-ndis-protocol-drivers.md).
 
   This section provides an overview of the primary protocol driver interfaces. These interfaces included functions that protocol drivers provide (*ProtocolXxx* functions) and NDIS calls to initiate operations. NDIS provides **Ndis*Xxx*** functions that protocol drivers call to perform NDIS operations.
 
@@ -48,7 +48,7 @@ To create a Network Driver Interface Specification (NDIS) protocol driver packag
 
   See the porting guides if you are porting an existing driver:
 
-  -   [Porting NDIS 5.x Drivers to NDIS 6.0](porting-ndis-5-x-drivers-to-ndis-6-0.md)
+  -   [Porting NDIS 5.x Drivers to NDIS 6.0](https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0)
   -   [Porting NDIS 6.x Drivers to NDIS 6.20](porting-ndis-6-x-drivers-to-ndis-6-20.md)
   -   [Porting NDIS 6.x Drivers to NDIS 6.30](porting-ndis-6-x-drivers-to-ndis-6-30.md)
 
