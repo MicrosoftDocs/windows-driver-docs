@@ -68,7 +68,7 @@ typedef enum _EFI_USBFN_PORT_TYPE
 ## Remarks
 
 
-Refer to "Battery Charging Specification, Revision 1.1” on the [USB.org](http://go.microsoft.com/fwlink/p/?linkid=64124) website.
+Refer to "Battery Charging Specification, Revision 1.1” on the [USB.org](https://go.microsoft.com/fwlink/p/?linkid=64124) website.
 
 ## Requirements
 

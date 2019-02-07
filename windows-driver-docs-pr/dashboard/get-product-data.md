@@ -389,7 +389,6 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows_v100_RS3 | Windows 10 RS3 Update |
 | Windows_v100Server_RS3 | Windows Server RS3 |
 | Windows_v100_RS4 | Windows 10 RS4 Update |
-| Windows_v100Server_RS4 | Windows Server RS4 |
 | Windows_v100Server_RS5 | Windows Server 2019 |
 | Windows_v100_RS5 | Windows 10 RS5 x86 |
 | Windows_v100_RS5 | Windows 10 RS5 x64 |
@@ -444,12 +443,9 @@ The following table lists Operating System Codes and their descriptions.
 |WINDOWS_v100_RS3_FULL|Windows 10 RS3 Client|
 |WINDOWS_v100_X64_RS3_FULL|Windows 10 RS3 Client x64|
 |WINDOWS_v100_ARM64_RS3_FULL|Windows 10 RS3 Client ARM64|
-|WINDOWS_v100_SERVER_X64_RS3_FULL|Windows Server RS3 x64|
 |WINDOWS_v100_RS4_FULL|Windows 10 RS4 Client|
 |WINDOWS_v100_X64_RS4_FULL|Windows 10 RS4 Client x64|
 |WINDOWS_v100_ARM64_RS4_FULL|Windows 10 RS4 Client ARM64|
-|WINDOWS_v100_SERVER_X64_RS4_FULL|Windows 10 RS4 Server x64|
-|WINDOWS_v100_SERVER_ARM64_RS4_FULL|Windows 10 RS4 Server ARM64|
 | WINDOWS_v100_SERVER_X64_RS5_FULL | Windows Server 2019 |
 | WINDOWS_v100_RS5_FULL | Windows 10 RS5 x86 |
 | WINDOWS_v100_X64_RS5_FULL | Windows 10 RS5 x64 |

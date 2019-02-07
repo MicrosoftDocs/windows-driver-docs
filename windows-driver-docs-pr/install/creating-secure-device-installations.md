@@ -36,7 +36,7 @@ When you create a [driver package](driver-packages.md), you must make sure that 
 
 -   uses SetupAPI functions correctly
 
-Device installation security is controlled by [*security descriptors*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-security-descriptor). The primary medium for specifying security descriptors is the INF file. The system provides default security descriptors, and under most circumstances you do not have to override these descriptors.
+Device installation security is controlled by *security descriptors*. The primary medium for specifying security descriptors is the INF file. The system provides default security descriptors, and under most circumstances you do not have to override these descriptors.
 
 ### Security Settings for Devices and Interfaces
 

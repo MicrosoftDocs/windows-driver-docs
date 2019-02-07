@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Enabling and Viewing WDTF Traces
 
 
-WDTF *Tracing* refers to reporting events that occur internally within WDTF objects. Because WDTF is heavily instrumented, all WDTF objects provide tracing information as they run. WDTF handles tracing by using [WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204). This type of tracing is a standardized format that you can read by using WDK tools, including [TraceView](https://msdn.microsoft.com/library/windows/hardware/ff556063). This topic covers how to use [Logman](http://go.microsoft.com/fwlink/p/?linkid=136332) and [Tracefmt](https://msdn.microsoft.com/library/windows/hardware/ff552974) to view WDTF run-time traces. This topic also discusses how you can programmatically configure WDTF trace levels.
+WDTF *Tracing* refers to reporting events that occur internally within WDTF objects. Because WDTF is heavily instrumented, all WDTF objects provide tracing information as they run. WDTF handles tracing by using [WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204). This type of tracing is a standardized format that you can read by using WDK tools, including [TraceView](https://msdn.microsoft.com/library/windows/hardware/ff556063). This topic covers how to use [Logman](https://go.microsoft.com/fwlink/p/?linkid=136332) and [Tracefmt](https://msdn.microsoft.com/library/windows/hardware/ff552974) to view WDTF run-time traces. This topic also discusses how you can programmatically configure WDTF trace levels.
 
 -   [How to collect and save WDTF traces](#how-to-collect)
 -   [How to view WDTF traces](#how-to-view)
@@ -34,7 +34,7 @@ WDTF *Tracing* refers to reporting events that occur internally within WDTF obje
 
 2.  Reboot the computer.
 
-See [Logman](http://go.microsoft.com/fwlink/p/?linkid=136332) (Logman.exe) for information about other options. For information about creating a trace season, see [Configuring and Starting an AutoLogger Session](https://msdn.microsoft.com/library/windows/desktop/aa363687).
+See [Logman](https://go.microsoft.com/fwlink/p/?linkid=136332) (Logman.exe) for information about other options. For information about creating a trace season, see [Configuring and Starting an AutoLogger Session](https://msdn.microsoft.com/library/windows/desktop/aa363687).
 
 **To stop collecting WDTF traces and save log files**
 
@@ -134,7 +134,7 @@ For more information about trace levels, see the [**ITracer**](https://msdn.micr
 
 ## Related topics
 [Configuring and Starting an AutoLogger Session](https://msdn.microsoft.com/library/windows/desktop/aa363687)  
-[Logman](http://go.microsoft.com/fwlink/p/?linkid=136332)  
+[Logman](https://go.microsoft.com/fwlink/p/?linkid=136332)  
 [Tracefmt](https://msdn.microsoft.com/library/windows/hardware/ff552974)  
 [TraceView](https://msdn.microsoft.com/library/windows/hardware/ff556063)  
 [WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204)  

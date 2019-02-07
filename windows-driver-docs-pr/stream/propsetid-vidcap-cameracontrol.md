@@ -17,7 +17,7 @@ The PROPSETID\_VIDCAP\_CAMERACONTROL property set controls camera device setting
 
 The KSPROPERTY\_VIDCAP\_CAMERACONTROL enumeration in Ksmedia.h specifies the properties of this set.
 
-Support for this property set is optional and should be implemented only by minidrivers of devices that offer camera control settings. For more information, see the [ITU](http://go.microsoft.com/fwlink/p/?linkid=8741) website.
+Support for this property set is optional and should be implemented only by minidrivers of devices that offer camera control settings. For more information, see the [ITU](https://go.microsoft.com/fwlink/p/?linkid=8741) website.
 
 Prior to USB video class, this enumeration contained the following properties:
 

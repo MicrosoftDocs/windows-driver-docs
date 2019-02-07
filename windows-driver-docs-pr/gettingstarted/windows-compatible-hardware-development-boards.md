@@ -46,7 +46,7 @@ For information on the latest supported development boards, see [IoT Device Opti
 
     Find out what the community is doing. Share your stories and learn from others.
 
-    [Windows Hardware and Driver Developer Community](http://go.microsoft.com/fwlink/p/?linkid=393552)
+    [Windows Hardware and Driver Developer Community](https://go.microsoft.com/fwlink/p/?linkid=393552)
 
  
 

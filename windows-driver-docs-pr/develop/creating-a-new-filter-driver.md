@@ -81,7 +81,7 @@ If your device technology has a specific filter model or a minifilter model, and
     **Note**  When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 4.  Implement the functions required by your filter. Create new .c or .cpp files as needed.
 
-If you are not sure which template to use, consider reading or posting to the [Windows Hardware WDK and Driver Development](http://go.microsoft.com/fwlink/p?LinkID=252169) forum.
+If you are not sure which template to use, consider reading or posting to the [Windows Hardware WDK and Driver Development](https://go.microsoft.com/fwlink/p?LinkID=252169) forum.
 
  
 

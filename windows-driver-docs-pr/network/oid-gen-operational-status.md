@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # OID\_GEN\_OPERATIONAL\_STATUS
 
 
-As a query, use the OID\_GEN\_OPERATIONAL\_STATUS OID to determine the current operational status of a network interface (*ifOperStatus* from [RFC 2863](http://go.microsoft.com/fwlink/p/?linkid=84054)).
+As a query, use the OID\_GEN\_OPERATIONAL\_STATUS OID to determine the current operational status of a network interface (*ifOperStatus* from [RFC 2863](https://go.microsoft.com/fwlink/p/?linkid=84054)).
 
 **Version Information**
 

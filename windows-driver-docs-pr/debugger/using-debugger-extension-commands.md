@@ -41,30 +41,17 @@ The default search order is as follows:
 
     <table>
     <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
+    <col width="50%" />
+    <col width="50%" />
     </colgroup>
     <thead>
     <tr class="header">
-    <th align="left">Windows Build</th>
     <th align="left">User Mode</th>
     <th align="left">Kernel Mode</th>
     </tr>
     </thead>
     <tbody>
-    <tr class="odd">
-    <td align="left"><p>Windows 2000 (free build)</p></td>
-    <td align="left"><p>w2kfre \ ntsdexts.dll</p></td>
-    <td align="left"><p>w2kfre \ kdextx86.dll</p></td>
-    </tr>
     <tr class="even">
-    <td align="left"><p>Windows 2000 (checked build)</p></td>
-    <td align="left"><p>w2kchk \ ntsdexts.dll</p></td>
-    <td align="left"><p>w2kchk \ kdextx86.dll</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Windows XP and later</p></td>
     <td align="left"><p>winxp \ ntsdexts.dll</p></td>
     <td align="left"><p>winxp \ kdexts.dll</p></td>
     </tr>

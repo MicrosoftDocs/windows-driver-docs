@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Plug and Play (PnP) [driver packages](driver-packages.md) can be *preloaded* on a computer as part of a Windows installation or after Windows is installed on a computer. A network administrator can also preload driver packages on a network server that provides the source for driver packages that are installed on network computers. When Windows searches for drivers that match a device, Windows will check whether there are preloaded driver packages that match the device.
 
-How to configure a Windows installation to preload driver packages is outside the scope of this documentation. For information about how to configure a Windows installation to preload driver packages, see [How to Add OEM Plug and Play Drivers to Windows XP](http://go.microsoft.com/fwlink/p/?linkid=3100&ID=314479) and [How to Add OEM Plug and Play Drivers to Windows Installations](http://go.microsoft.com/fwlink/p/?linkid=70235).
+How to configure a Windows installation to preload driver packages is outside the scope of this documentation. For information about how to configure a Windows installation to preload driver packages, see [How to Add OEM Plug and Play Drivers to Windows XP](https://go.microsoft.com/fwlink/p/?linkid=3100&ID=314479) and [How to Add OEM Plug and Play Drivers to Windows Installations](https://go.microsoft.com/fwlink/p/?linkid=70235).
 
 After Windows is installed, a [driver package](driver-packages.md) can be preloaded in one of the following ways:
 

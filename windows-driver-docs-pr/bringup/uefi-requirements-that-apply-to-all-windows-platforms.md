@@ -322,7 +322,7 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <td><p>The following requirements do not imply a need for a TCG TPM implementation; they do however imply a need for equivalent functionality for the affected areas.</p>
 <p>The platform support may be provided by a firmware implementation of a TPM executing in the secure execution environment, layering on top of the cryptographic acceleration engine and leveraging the isolated storage. Microsoft may be able to provide reference software for such a TPM implementation for use by the vendor. This is subject to further discussions.</p>
 <ul>
-<li><p>Requirement 22: MANDATORY. The platform shall conform to the EFI protocol specified in the <a href="http://go.microsoft.com/fwlink/p/?LinkId=528536" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](http://go.microsoft.com/fwlink/p/?LinkId=528536)">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
+<li><p>Requirement 22: MANDATORY. The platform shall conform to the EFI protocol specified in the <a href="https://go.microsoft.com/fwlink/p/?LinkId=528536" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](https://go.microsoft.com/fwlink/p/?LinkId=528536)">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
 <li><p>Requirement 23: MANDATORY. The platform shall adhere to the TCG EFI Platform Specification with the following additions:</p>
 <ul>
 <li><p>On platforms supporting the interface defined in TrEE EFI Protocol, the digest of PK<em><sub>pub</sub></em> shall be extended to TPM PCR[03] as an EV_EFI_VARIABLE_CONFIG event.</p></li>
@@ -330,7 +330,7 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <li><p>It shall be possible for a UEFI client to read and parse the list of certificates using the EFI_IMAGE_SECURITY_DATABASE variable and validate the digest against the extended value.</p></li>
 <li><p>TCG_PCR_EVENT digest values shall be SHA-256, not SHA-1.</p></li>
 </ul></li>
-<li><p>Requirement 24: MANDATORY. The platform must implement the MemoryOverwriteRequestControl defined in the <a href="http://go.microsoft.com/fwlink/p/?LinkId=528539" data-raw-source="[TCG Platform Reset Attack Mitigation Specification](http://go.microsoft.com/fwlink/p/?LinkId=528539)">TCG Platform Reset Attack Mitigation Specification</a>.</p></li>
+<li><p>Requirement 24: MANDATORY. The platform must implement the MemoryOverwriteRequestControl defined in the <a href="https://go.microsoft.com/fwlink/p/?LinkId=528539" data-raw-source="[TCG Platform Reset Attack Mitigation Specification](https://go.microsoft.com/fwlink/p/?LinkId=528539)">TCG Platform Reset Attack Mitigation Specification</a>.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -358,7 +358,7 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <li><p>Microsoft has defined protocol for gathering entropy from a UEFI platform. While not a UEFI requirement, this protocol is required by Windows on SoC platforms. For more information about this protocol, see <a href="uefi-entropy-gathering-protocol.md" data-raw-source="[UEFI entropy gathering protocol](uefi-entropy-gathering-protocol.md)">UEFI entropy gathering protocol</a>.</p></li>
 <li><p>UEFI Signature Database Updates. A new mechanism for updating Authenticated Variables has been adopted in section 27 of UEFI 2.3.1. This mechanism is required by Windows.</p></li>
 <li><p>Trusted Execution Environment. Microsoft has developed an EFI protocol for interacting with a Trusted Execution Environment (TrEE), similar in functionality to a subset of a Trusted Computing Group (TCG) Trusted Platform Module (TPM). The EFI protocol leverages to a large degree, “TCG EFI Protocol,” Version 1.2 Revision 1.00, June 9, 2006, by the Trusted Computing Group.</p>
-<p>For details, refer to <a href="http://go.microsoft.com/fwlink/p/?LinkId=528536" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](http://go.microsoft.com/fwlink/p/?LinkId=528536)">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
+<p>For details, refer to <a href="https://go.microsoft.com/fwlink/p/?LinkId=528536" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](https://go.microsoft.com/fwlink/p/?LinkId=528536)">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -381,7 +381,7 @@ The binding specifies for example how the MMU should be configured, and how phys
 ## UEFI ARM multiprocessor startup requirements
 
 
-Microsoft has developed a protocol for starting multiple ARM cores on a multi-processor UEFI platform. This protocol is required by Windows on ARM platforms that do not support the [Power State Coordination Interface (PSCI)](http://go.microsoft.com/fwlink/p/?LinkId=528534). Platforms that do support PSCI must not use this protocol. For more information about this protocol, see the [Multiprocessor startup on UEFI ARM-based platforms](http://go.microsoft.com/fwlink/p/?LinkId=528533) document on the ACPI Component Architecture (ACPICA) Web site.
+Microsoft has developed a protocol for starting multiple ARM cores on a multi-processor UEFI platform. This protocol is required by Windows on ARM platforms that do not support the [Power State Coordination Interface (PSCI)](https://go.microsoft.com/fwlink/p/?LinkId=528534). Platforms that do support PSCI must not use this protocol. For more information about this protocol, see the [Multiprocessor startup on UEFI ARM-based platforms](https://go.microsoft.com/fwlink/p/?LinkId=528533) document on the ACPI Component Architecture (ACPICA) Web site.
 
 ## Platform setup requirements
 

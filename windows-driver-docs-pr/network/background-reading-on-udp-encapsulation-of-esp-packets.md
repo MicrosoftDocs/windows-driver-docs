@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 To comprehend this section, you must understand the Internet Key Exchange (IKE) and the UDP encapsulation of ESP packets, as specified in the following drafts published by the IP Security Working Group of the Internet Engineering Task Force (IETF):
 
--   [IPsec over NAT Justification for UDP Encapsulation](http://go.microsoft.com/fwlink/p/?linkid=9856)
+-   [IPsec over NAT Justification for UDP Encapsulation](https://go.microsoft.com/fwlink/p/?linkid=9856)
 
--   [Negotiation of NAT-Traversal in the IKE](http://go.microsoft.com/fwlink/p/?linkid=9857)
+-   [Negotiation of NAT-Traversal in the IKE](https://go.microsoft.com/fwlink/p/?linkid=9857)
 
  
 

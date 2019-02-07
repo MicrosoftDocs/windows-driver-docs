@@ -691,7 +691,7 @@ Full page heap block -- allocated:
     ^       ^      ^                                          
     |       |      0-7 suffix bytes (filled with 0xD0)        
     |       User allocation (if zeroing not requested, filled   
-            with E0 in Windows 2000 and C0 in Windows XP)       
+            with C0)       
     Block header (starts with 0xABCDBBBB and ends with 0xDCBABBBB) 
 ```
 

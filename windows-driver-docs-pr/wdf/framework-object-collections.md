@@ -37,7 +37,7 @@ Framework-based drivers can perform the following operations on object collectio
 
 -   Remove an object from a collection.
 
-    To remove an object from a collection and decrement its reference count, drivers can call [**WdfCollectionRemove**](https://msdn.microsoft.com/library/windows/hardware/ff545784) or [**WdfCollectionRemoveItem**](https://msdn.microsoft.com/library/windows/hardware/ff545792).
+    To remove an object from a collection and decrement its reference count, drivers can call [**WdfCollectionRemove**](https://msdn.microsoft.com/library/windows/hardware/ff545784) or [**WdfCollectionRemoveItem**](https://msdn.microsoft.com/library/windows/hardware/ff545792). When an object is removed, all objects after the removed one will have their index automatically decremented.
 
 -   Obtain the number of objects in a collection.
 

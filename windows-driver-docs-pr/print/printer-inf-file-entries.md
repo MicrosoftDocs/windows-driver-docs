@@ -70,7 +70,7 @@ Also note that v4 print drivers use a Manifest file. For more information, see [
 
  
 
-**Note**  **2 (ExcludeFromSelect)**: The [*device ID*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-id) of a device that should not be shown in the **Select Device** dialog or in the Add Printer Wizard. For printers, this includes all PnP entries of devices that have duplicate device descriptions in the INF file; for example, devices that have multiple entries for infrared and parallel enumeration or for another bus. The ExcludeFromSelect entry, unlike all others in this table, must appear in the Control Flags section of the INF file. See [**INF ControlFlags Section**](https://msdn.microsoft.com/library/windows/hardware/ff546342) for more information.
+**Note**  **2 (ExcludeFromSelect)**: The *device ID* of a device that should not be shown in the **Select Device** dialog or in the Add Printer Wizard. For printers, this includes all PnP entries of devices that have duplicate device descriptions in the INF file; for example, devices that have multiple entries for infrared and parallel enumeration or for another bus. The ExcludeFromSelect entry, unlike all others in this table, must appear in the Control Flags section of the INF file. See [**INF ControlFlags Section**](https://msdn.microsoft.com/library/windows/hardware/ff546342) for more information.
 
  
 

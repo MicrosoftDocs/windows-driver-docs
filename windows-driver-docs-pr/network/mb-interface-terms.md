@@ -44,7 +44,7 @@ The following terminology is used throughout the Mobile Broadband (MB)documentat
 <td align="left"><p>A CD-ROM function that does not have a physical CD-ROM drive.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?linkid=308934" data-raw-source="[IAD](http://go.microsoft.com/fwlink/p/?linkid=308934)">IAD</a></p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=308934" data-raw-source="[IAD](https://go.microsoft.com/fwlink/p/?linkid=308934)">IAD</a></p></td>
 <td align="left"><p>Interface association descriptors (IADs) used to group interfaces into functions.</p></td>
 </tr>
 <tr class="odd">

@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 Kernel-mode code can determine the status of kernel debugging by using the following variables and routines:
 
--   (Windows XP and later) The KD\_DEBUGGER\_ENABLED global kernel variable indicates whether kernel debugging is enabled.
+-   The KD\_DEBUGGER\_ENABLED global kernel variable indicates whether kernel debugging is enabled.
 
--   (Windows XP and later) The KD\_DEBUGGER\_NOT\_PRESENT global kernel variable indicates whether a kernel debugger is currently attached.
+-   The KD\_DEBUGGER\_NOT\_PRESENT global kernel variable indicates whether a kernel debugger is currently attached.
 
 -   (Windows Server 2003 and later) The **KdRefreshDebuggerNotPresent** routine refreshes the value of KD\_DEBUGGER\_NOT\_PRESENT.
 

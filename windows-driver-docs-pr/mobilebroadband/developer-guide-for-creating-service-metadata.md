@@ -173,7 +173,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     -   **Enter the name for your network that is to be used in the Windows network selection UI** – The name of you network that will be displayed to customers in Windows Connection Manager.
 
-    -   **Enter your service number** – A GUID that must match the carrier ID field in your provisioning metadata. You can create a GUID by using Visual Studio 2013. For more information on how to create a GUID, see [Create GUID (guidgen.exe)](http://go.microsoft.com/fwlink/p/?linkid=330070).
+    -   **Enter your service number** – A GUID that must match the carrier ID field in your provisioning metadata. You can create a GUID by using Visual Studio 2013. For more information on how to create a GUID, see [Create GUID (guidgen.exe)](https://go.microsoft.com/fwlink/p/?linkid=330070).
 
     -   **Upload your icon that is to be shown in the Windows network selection UI** – Click **Browse**, and then select the icon that is shown to customers in Windows Connection Manager.
 
@@ -273,9 +273,9 @@ This will not work on a Windows RT device. Use the steps in the procedure named 
 
 **To set up the environment for clearing service metadata**
 
-1.  Download psexec.exe (<http://go.microsoft.com/fwlink/p/?linkid=330071>), and then extract it to a folder.
+1.  Download psexec.exe (<https://go.microsoft.com/fwlink/p/?linkid=330071>), and then extract it to a folder.
 
-2.  Download and install the Windows Driver Kit Windows 8.1 (<http://go.microsoft.com/fwlink/?LinkId=330072>).
+2.  Download and install the Windows Driver Kit Windows 8.1 (<https://go.microsoft.com/fwlink/?LinkId=330072>).
 
 3.  Navigate to where the WDK files are installed. The default location is **C:\\Program Files (x86)\\Windows Kits\\8.1\\Tools**. If your test computer is running x86, copy devcon.exe from the x86 folder into the same folder as psexec.exe. If your test computer is running x64, copy devcon.exe from the x64 folder.
 

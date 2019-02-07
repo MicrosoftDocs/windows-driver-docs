@@ -31,7 +31,7 @@ To allocate a common buffer, your driver's [*EvtDriverDeviceAdd*](https://msdn.m
 
 -   Calls [**WdfCommonBufferGetAlignedVirtualAddress**](https://msdn.microsoft.com/library/windows/hardware/ff545820) to obtain the buffer's virtual address, which the driver can access.
 
-The following code example is taken from the *Init.c* file of the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample. This code shows how a KMDF driver allocates common buffer space.
+The following code example is taken from the *Init.c* file of the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample. This code shows how a KMDF driver allocates common buffer space.
 
 ```cpp
 // Allocate common buffer for building writes

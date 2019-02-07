@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 
 
-Print jobs are either rendered as they are created, or they are written to a spool file as EMF records. In the case of EMF records, rendering takes place when the EMF [*print processor*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-print-processor) (localspl.dll) plays back the records. Rendering consists of a series of calls to the user-mode GDI drawing functions, beginning with **CreateDC** (described in the Microsoft Windows SDK documentation). The call to **CreateDC** is the first in a series of application calls that lead to a chain of actions involving the graphics rendering engine (GRE, also known as kernel-mode GDI), and the printer graphics DLL.
+Print jobs are either rendered as they are created, or they are written to a spool file as EMF records. In the case of EMF records, rendering takes place when the EMF *print processor* (localspl.dll) plays back the records. Rendering consists of a series of calls to the user-mode GDI drawing functions, beginning with **CreateDC** (described in the Microsoft Windows SDK documentation). The call to **CreateDC** is the first in a series of application calls that lead to a chain of actions involving the graphics rendering engine (GRE, also known as kernel-mode GDI), and the printer graphics DLL.
 
 The following figure shows the interaction between kernel-mode GDI and the printer graphics DLL after **CreateDC** is called.
 

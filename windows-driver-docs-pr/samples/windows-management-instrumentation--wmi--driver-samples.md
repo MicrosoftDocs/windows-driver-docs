@@ -16,8 +16,8 @@ The driver samples in this directory provide a starting point for writing a cust
 
 | Sample Name       | Solution                                                   | Description                                                                                                                                                                      |
 |-------------------|------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| WMIACPI           | [wmiacpi](http://go.microsoft.com/fwlink/p/?LinkId=618006) | Contains ACPI BIOS and Microsoft Windows Management Instrumentation (WMI) sample code that enables instrumentation of the ACPI BIOS from within ACPI Source Language (ASL) code. |
-| WMI Data Provider | [wmisamp](http://go.microsoft.com/fwlink/p/?LinkId=618007) | Demonstrates how to register WMI providers in KMDF and create provider instances and how to handle the WMI queries sent to a device.                                             |
+| WMIACPI           | [wmiacpi](https://go.microsoft.com/fwlink/p/?LinkId=618006) | Contains ACPI BIOS and Microsoft Windows Management Instrumentation (WMI) sample code that enables instrumentation of the ACPI BIOS from within ACPI Source Language (ASL) code. |
+| WMI Data Provider | [wmisamp](https://go.microsoft.com/fwlink/p/?LinkId=618007) | Demonstrates how to register WMI providers in KMDF and create provider instances and how to handle the WMI queries sent to a device.                                             |
 
  
 

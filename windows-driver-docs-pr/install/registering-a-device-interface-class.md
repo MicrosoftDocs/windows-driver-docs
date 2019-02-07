@@ -20,7 +20,7 @@ There are three ways to register a device interface class:
 
 -   Kernel-mode components, such as most drivers, can call I/O manager routines. This topic describes how to use these routines.
 
--   User-mode [*device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) call **SetupDi***Xxx* functions. For more information about these functions, see [SetupDi Device Interface Functions](using-device-installation-functions.md#ddk-setupdi-device-interface-functions-dg).
+-   User-mode *device installation applications* call **SetupDi***Xxx* functions. For more information about these functions, see [SetupDi Device Interface Functions](using-device-installation-functions.md#ddk-setupdi-device-interface-functions-dg).
 
 -   An INF file can contain [**INF DDInstall.Interfaces sections**](inf-ddinstall-interfaces-section.md).
 

@@ -11,9 +11,9 @@ ms.technology: windows-devices
 # Windows driver samples
 
 
-Starting with Windows 10, the [Windows driver samples repository](http://go.microsoft.com/fwlink/p/?LinkId=616507) is available on GitHub.
+Starting with Windows 10, the [Windows driver samples repository](https://go.microsoft.com/fwlink/p/?LinkId=616507) is available on GitHub.
 
-[Windows 8 driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616509) and [Windows 8.1 driver samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) can be downloaded from the [Windows Hardware Dev Center](http://go.microsoft.com/fwlink/p/?LinkId=616506). For Windows 7 and earlier, samples and documentation were included in the Windows Driver Kit (WDK) or Driver Development Kit (DDK).
+[Windows 8 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616509) and [Windows 8.1 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) can be downloaded from the [Windows Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=616506). For Windows 7 and earlier, samples and documentation were included in the Windows Driver Kit (WDK) or Driver Development Kit (DDK).
 
 ## In this section
 

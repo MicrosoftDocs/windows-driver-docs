@@ -82,7 +82,7 @@ The following additional driver models are available to use particular hardware 
 <ul>
 <li><p><a href="header-data-split.md" data-raw-source="[Header-Data Split](header-data-split.md)">Header-Data Split</a>, a service that splits the header and the data in received Ethernet frames into separate buffers.</p></li>
 <li><p><a href="ndis-receive-side-scaling2.md" data-raw-source="[Receive Side Scaling](ndis-receive-side-scaling2.md)">Receive Side Scaling</a>, a network driver technology that improves network performance on multiprocessor systems.</p></li>
-<li><p><a href="ndis-tcp-chimney-offload.md" data-raw-source="[TCP Chimney Offload](ndis-tcp-chimney-offload.md)">TCP Chimney Offload</a>, an offload of the data-transfer part of the TCP protocol processing to a network adapter that has the appropriate capabilities.</p></li>
+<li><p><a href="ndis-tcp-chimney-offload.md" data-raw-source="[TCP Chimney Offload](https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload)">TCP Chimney Offload</a>, an offload of the data-transfer part of the TCP protocol processing to a network adapter that has the appropriate capabilities.</p></li>
 <li><p><a href="tcp-ip-offload.md" data-raw-source="[TCP/IP Offload](tcp-ip-offload.md)">TCP/IP Offload</a>, an offload of tasks or connections to a network adapter that has the appropriate capabilities.</p></li>
 <li><p><a href="overview-of-network-direct-kernel-provider-interface--ndkpi-.md" data-raw-source="[Network Direct Kernel Provider Interface (NDKPI)](overview-of-network-direct-kernel-provider-interface--ndkpi-.md)">Network Direct Kernel Provider Interface (NDKPI)</a>, which enables kernel-mode Windows components, such as SMB server and client, to use remote direct memory access (RDMA) functionality that is provided by independent hardware vendors (IHVs).</p></li>
 <li><p><a href="network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md" data-raw-source="[Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload](network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md)">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a>, which makes it possible to use Generic Routing Encapsulation (GRE)-encapsulated packets with:</p>
@@ -92,13 +92,6 @@ The following additional driver models are available to use particular hardware 
 <li>Transmit (Tx) checksum offload</li>
 <li>Receive (Rx) checksum offload</li>
 </ul></li>
-<li><a href="netdma-drivers.md" data-raw-source="[NetDMA](netdma-drivers.md)">NetDMA</a>, an interface for drivers to perform memory-to-memory direct memory access (DMA) transfers.
-<div class="alert">
-<strong>Note</strong>  The <a href="netdma-drivers.md" data-raw-source="[NetDMA](netdma-drivers.md)">NetDMA</a> interface is not supported in Windows 8, Windows Server 2012, and later.
-</div>
-<div>
- 
-</div></li>
 </ul></td>
 </tr>
 <tr class="even">

@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 ### <a href="" id="streaming-media-samples"></a>
 
-Starting with Windows 10, the [Windows driver samples repository](http://go.microsoft.com/fwlink/p/?LinkId=616507) is available on GitHub.
+Starting with Windows 10, the [Windows driver samples repository](https://go.microsoft.com/fwlink/p/?LinkId=616507) is available on GitHub.
 
-The [Windows 8 driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616509) and the [Windows 8.1 driver samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) can be downloaded from the [Windows Hardware Dev Center](http://go.microsoft.com/fwlink/p/?LinkId=616506).
+The [Windows 8 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616509) and the [Windows 8.1 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) can be downloaded from the [Windows Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=616506).
 
 In Windows 7, samples are included in the Windows Driver Kit (WDK).
 

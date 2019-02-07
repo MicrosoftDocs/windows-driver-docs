@@ -34,7 +34,7 @@ Specifies the amount of information to be displayed. Any combination of the foll
 Causes the display to include all critical sections, even those that are not currently owned.
 
 <span id="-o"></span><span id="-O"></span>**-o**  
-(Windows XP and later) Causes the display to only include orphaned information (pointers that do not actually point to valid critical sections).
+Causes the display to only include orphaned information (pointers that do not actually point to valid critical sections).
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 

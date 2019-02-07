@@ -34,7 +34,7 @@ A EFI\_USB\_ENDPOINT\_DESCRIPTOR structure that contains information about the s
 ## Remarks
 
 
-The **USB\_INTERFACE\_DESCRIPTOR** and **USB\_ENDPOINT\_DESCRIPTOR** structures are defined in UEFI specification 2.3. For more information, visit the [UEFI.org](http://go.microsoft.com/fwlink/p/?linkid=109526) website.
+The **USB\_INTERFACE\_DESCRIPTOR** and **USB\_ENDPOINT\_DESCRIPTOR** structures are defined in UEFI specification 2.3. For more information, visit the [UEFI.org](https://go.microsoft.com/fwlink/p/?linkid=109526) website.
 
 ## Requirements
 

@@ -15,7 +15,7 @@ To specify the various applications for your service, including the Microsoft St
 
 The UWP device app is downloaded and installed when a user first connects a device. Privileged applications have special access to the device. You can specify only one of each.
 
-For more information about UWP device app and privileged applications, see [Windows 8 Device Experience](http://go.microsoft.com/fwlink/p/?LinkId=227312).
+For more information about UWP device app and privileged applications, see [Windows 8 Device Experience](https://go.microsoft.com/fwlink/p/?LinkId=227312).
 
 ## <span id="To_specify_the_Windows_Store_device_app"></span><span id="to_specify_the_windows_store_device_app"></span><span id="TO_SPECIFY_THE_WINDOWS_STORE_DEVICE_APP"></span>To specify the Microsoft Store device app
 
@@ -69,7 +69,7 @@ For the Microsoft Store device app to access privileged mobile broadband interfa
 
 To specify the Privileged Applications, fill out the following fields under **Privileged Application**:
 
-**Note**  For detailed information about the following fields, see [Windows 8 Device Experience](http://go.microsoft.com/fwlink/p/?LinkId=242009). For information about the Privileged Device Interface Property Key, see [DEVPKEY\_DeviceInterface\_Restricted](http://go.microsoft.com/fwlink/p/?linkid=256362).
+**Note**  For detailed information about the following fields, see [Windows 8 Device Experience](https://go.microsoft.com/fwlink/p/?LinkId=242009). For information about the Privileged Device Interface Property Key, see [DEVPKEY\_DeviceInterface\_Restricted](https://go.microsoft.com/fwlink/p/?linkid=256362).
 
  
 
@@ -99,7 +99,7 @@ The following is an example of the Application Manifest:
 
 The mobile broadband platform provides enhanced functionality for receiving and displaying MNO administrative SMS or USSD notifications, such as approaching data usage cap, international roaming, and low balance. It also provides functionality for responding to data usage and connect, disconnect, or roaming background events in a UWP app for mobile network providers.
 
-Windows provides broker facilities for UWP app to run some code in response to events even if the Microsoft Store app isn't running. For more information about implementing notification handlers, see [Enabling mobile operator notifications and system events](http://go.microsoft.com/fwlink/p/?linkid=242062).
+Windows provides broker facilities for UWP app to run some code in response to events even if the Microsoft Store app isn't running. For more information about implementing notification handlers, see [Enabling mobile operator notifications and system events](https://go.microsoft.com/fwlink/p/?linkid=242062).
 
  
 

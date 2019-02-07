@@ -795,6 +795,42 @@
       href: data-model-cpp-concepts.md
     - name: "Debugger Data Model C++ Scripting"
       href: data-model-cpp-scripting.md
+  - name: "Debugger Data Model - Code Namespace"
+    href: dbgmodel-namespace-code.md
+    items: 
+    - name: "Debugger Data Model - Disassembler Objects"
+      href: dbgmodel-object-disassembler.md
+    - name: "Debugger Data Model - Basic Block Objects"
+      href: dbgmodel-object-basic-block.md
+    - name: "Debugger Data Model - Instruction Objects"
+      href: dbgmodel-object-instruction.md
+    - name: "Debugger Data Model - Instruction Attributes Objects"
+      href: dbgmodel-object-instruction-attributes.md
+    - name: "Debugger Data Model - Operand Objects"
+      href: dbgmodel-object-operand.md
+    - name: "Debugger Data Model - Operand Attributes Objects"
+      href: dbgmodel-object-operand-attributes.md
+    - name: "Debugger Data Model - Register Objects"
+      href: dbgmodel-object-register.md
+    - name: "Debugger Data Model - Live Variable Objects"
+      href: dbgmodel-object-live-variable.md
+    - name: "Debugger Data Model - Source Information Objects"
+      href: dbgmodel-object-source-information.md
+    - name: "Debugger Data Model - Control Flow Objects"
+      href: dbgmodel-object-control-flow.md
+  - name: "Debugger Data Model - Collections Namespace"
+    href: dbgmodel-namespace-collections.md
+  - name: "Debugger Data Model - File System Namespace"
+    href: dbgmodel-namespace-file-system.md
+    items: 
+    - name: "Debugger Data Model - Directory Objects"
+      href: dbgmodel-object-directory.md
+    - name: "Debugger Data Model - File Objects"
+      href: dbgmodel-object-file.md
+    - name: "Debugger Data Model - Text Reader Objects"
+      href: dbgmodel-object-text-reader.md
+    - name: "Debugger Data Model - Text Writer Objects"
+      href: dbgmodel-object-text-writer.md
   - name: "Glossary"
     href: glossary.md
     items: 
@@ -1539,8 +1575,6 @@
           href: setting-up-exclusion-lists.md
         - name: "Dealing with Unavailable Symbol Stores"
           href: dealing-with-unavailable-symbol-stores.md
-        - name: "Checking and Updating Status"
-          href: checking-and-updating-status.md
         - name: "Handling File Pointers"
           href: handling-file-pointers.md
         - name: "Caching Acquired Symbol Files"
@@ -2179,8 +2213,8 @@
       href: bug-check-0x114---video-shadow-driver-fatal-error.md
     - name: "Bug Check 0x115:  AGP_INTERNAL"
       href: bug-check-0x115---agp-internal.md
-    - name: "Bug Check 0x116:  VIDEO_TDR_ERROR"
-      href: bug-check-0x116---video-tdr-error.md
+    - name: "Bug Check 0x116:  VIDEO_TDR_FAILURE"
+      href: bug-check-0x116---video-tdr-failure.md
     - name: "Bug Check 0x117:  VIDEO_TDR_TIMEOUT_DETECTED"
       href: bug-check-0x117---video-tdr-timeout-detected.md
     - name: "Bug Check 0x119:  VIDEO_SCHEDULER_INTERNAL_ERROR"

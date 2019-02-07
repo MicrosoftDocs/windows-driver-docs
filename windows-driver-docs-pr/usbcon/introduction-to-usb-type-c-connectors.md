@@ -48,7 +48,7 @@ In this topic, a USB Type-C system refers to a PC running Windows 10 for desktop
 <li>On Windows 10 for desktop editions systems, open Device Manager and find the device. It&#39;s marked with a yellow exclamation point. Right-click on the node and open device properties. The error code is under <strong>Device status</strong>.</li>
 <li>On Windows 10 Mobile systems, the notification shows the error code.</li>
 </ul></li>
-<li>Follow the troubleshooting steps described in <a href="http://go.microsoft.com/fwlink/p/?LinkId=526896" data-raw-source="[this article](http://go.microsoft.com/fwlink/p/?LinkId=526896)">this article</a>.</li>
+<li>Follow the troubleshooting steps described in <a href="https://go.microsoft.com/fwlink/p/?LinkId=526896" data-raw-source="[this article](https://go.microsoft.com/fwlink/p/?LinkId=526896)">this article</a>.</li>
 </ol>
 <div class="alert">
 <strong>Note</strong>  Applies to all error codes shown in Device Manager except for Code 28.
@@ -93,7 +93,7 @@ In this topic, a USB Type-C system refers to a PC running Windows 10 for desktop
 <li>The charging cable does not meet the power requirement of the charger or the system.</li>
 </ul>
 <div class="alert">
-<strong>Note</strong><br/><p>A system with USB Type-C connectors has higher power limits, it can support up to 5V, 3A, 15W. If the connector supports <a href="http://go.microsoft.com/fwlink/p/?LinkID=623310" data-raw-source="[USB Power Delivery](http://go.microsoft.com/fwlink/p/?LinkID=623310)">USB Power Delivery</a> (industry standard), it can charge faster at higher power levels.</p>
+<strong>Note</strong><br/><p>A system with USB Type-C connectors has higher power limits, it can support up to 5V, 3A, 15W. If the connector supports <a href="https://go.microsoft.com/fwlink/p/?LinkID=623310" data-raw-source="[USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310)">USB Power Delivery</a> (industry standard), it can charge faster at higher power levels.</p>
 <p>In order for you to get the fast charging benefits, your system, charger, and cable must support the industry standards. In addition, your charger and cable must support the power levels required by the system to optimally charge it. For example, if your system requires 12V and 3A for charging, a 5V, 3A charger cannot charge your system optimally.</p>
 </div>
 <div>
@@ -135,7 +135,7 @@ In this topic, a USB Type-C system refers to a PC running Windows 10 for desktop
 
 </div></td>
 <td><ul>
-<li>Make sure that you are running the latest version of Windows so that you have most recent driver packages. For information, see <a href="http://go.microsoft.com/fwlink/p/?LinkID=698739" data-raw-source="[Windows 10 Updates](http://go.microsoft.com/fwlink/p/?LinkID=698739 )">Windows 10 Updates</a>.</li>
+<li>Make sure that you are running the latest version of Windows so that you have most recent driver packages. For information, see <a href="https://go.microsoft.com/fwlink/p/?LinkID=698739" data-raw-source="[Windows 10 Updates](https://go.microsoft.com/fwlink/p/?LinkID=698739 )">Windows 10 Updates</a>.</li>
 <li>If you are already running the latest version, try connecting your device to a PC instead.</li>
 </ul></td>
 </tr>

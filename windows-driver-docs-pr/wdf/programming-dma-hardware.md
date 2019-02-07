@@ -48,7 +48,7 @@ To stop a transaction when the driver detects an error, the [*EvtProgramDma*](ht
 
 4.  Return **FALSE**.
 
-Steps 1 and 4 are illustrated in the following code example, taken from the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample’s [*EvtProgramDma*](https://msdn.microsoft.com/library/windows/hardware/ff541816) callback function for read requests in the *Read.c* file.
+Steps 1 and 4 are illustrated in the following code example, taken from the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample’s [*EvtProgramDma*](https://msdn.microsoft.com/library/windows/hardware/ff541816) callback function for read requests in the *Read.c* file.
 
 ```cpp
     // If errors occur in the EvtProgramDma callback,

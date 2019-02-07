@@ -36,7 +36,7 @@ Describes various tools you can use to test USB devices and drivers.
 <li>Configures the device to send a resume wake signal after a specified time period.</li>
 <li>For the MUTT Pack, it sets the hub to operate at full or high speed; as a single-TT or multi-TT hub.</li>
 </ul>
-<p>MuttUtil is embedded in the installation section of the included test scripts to ensure that the test device is properly upgraded to latest firmware. The tool is included in the <a href="http://go.microsoft.com/fwlink/p/?linkid=617710" data-raw-source="[MUTT Software Package](http://go.microsoft.com/fwlink/p/?linkid=617710)">MUTT Software Package</a>.</p></td>
+<p>MuttUtil is embedded in the installation section of the included test scripts to ensure that the test device is properly upgraded to latest firmware. The tool is included in the <a href="https://go.microsoft.com/fwlink/p/?linkid=617710" data-raw-source="[MUTT Software Package](https://go.microsoft.com/fwlink/p/?linkid=617710)">MUTT Software Package</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="how-to-send-a-usb-device-to-select-suspend.md" data-raw-source="[USB client driver verifier](how-to-send-a-usb-device-to-select-suspend.md)">USB client driver verifier</a></p></td>

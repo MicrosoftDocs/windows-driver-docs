@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 NDIS interface types correspond to the *IfType* object that is defined in the management information base (MIB). These interface types are used in the **IfType** members and *IfType* parameters for many NDIS structures and functions.
 
-NDIS interface types are registered with the Internet Assigned Numbers Authority (IANA), which publishes a list of interface types periodically in the Assigned Numbers RFC, or in a derivative of it that is specific to Internet network management number assignments. For more information about the IANA IfType *definitions*, see [IANA ifType MIB Definitions](http://go.microsoft.com/fwlink/p/?linkid=60066). For more information about the IANA, see the [IANA](http://go.microsoft.com/fwlink/p/?linkid=60068) Web site.
+NDIS interface types are registered with the Internet Assigned Numbers Authority (IANA), which publishes a list of interface types periodically in the Assigned Numbers RFC, or in a derivative of it that is specific to Internet network management number assignments. For more information about the IANA IfType *definitions*, see [IANA ifType MIB Definitions](https://go.microsoft.com/fwlink/p/?linkid=60066). For more information about the IANA, see the [IANA](https://go.microsoft.com/fwlink/p/?linkid=60068) Web site.
 
 The following table describes IfType values.
 

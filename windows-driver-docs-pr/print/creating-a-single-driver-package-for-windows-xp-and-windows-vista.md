@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Creating a Single Driver Package for Windows XP and Windows Vista
 
 
-The Microsoft [Connect](http://go.microsoft.com/fwlink/p/?linkid=133880) Web site provides two groups of core driver updates:
+The Microsoft [Connect](https://go.microsoft.com/fwlink/p/?linkid=133880) Web site provides two groups of core driver updates:
 
 -   For Windows operating systems earlier than Windows Vista (including Windows Server 2003, Windows XP, and Windows 2000), a set of redistributable updates allows hardware manufacturers to incorporate the specific files they need to support these operating systems.
 

@@ -73,19 +73,19 @@ Currently, Microsoft provides built-in drivers for the following other types of 
 <td align="left"><p>HID: Legacy keyboard class driver</p></td>
 <td align="left"><p>Kbdclass.sys</p></td>
 <td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Microsoft provides support for legacy (non-USB, non-Bluetooth, non-I2C) keyboards by means of the Kbdclass.sys driver. For more information, see Keyboard and mouse HID client drivers. To enhance the functionality of a legacy keyboard, the vendor can supply a keyboard filter driver. For more information, see the <a href="http://go.microsoft.com/fwlink/p/?LinkId=618052" data-raw-source="[Kbfiltr sample](http://go.microsoft.com/fwlink/p/?LinkId=618052)">Kbfiltr sample</a>.</p></td>
+<td align="left"><p>Microsoft provides support for legacy (non-USB, non-Bluetooth, non-I2C) keyboards by means of the Kbdclass.sys driver. For more information, see Keyboard and mouse HID client drivers. To enhance the functionality of a legacy keyboard, the vendor can supply a keyboard filter driver. For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=618052" data-raw-source="[Kbfiltr sample](https://go.microsoft.com/fwlink/p/?LinkId=618052)">Kbfiltr sample</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>HID: Legacy mouse class driver</p></td>
 <td align="left"><p>Mouclass.sys</p></td>
 <td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Microsoft provides support for legacy (non-USB, non-Bluetooth, non-I2C) mice by means of the Mouclass.sys driver. Keyboard and mouse HID client drivers. To enhance the functionality of a legacy mouse, the vendor can supply a mouse filter driver. For more information, see the <a href="http://go.microsoft.com/fwlink/p/?LinkId=618052" data-raw-source="[Moufiltr sample](http://go.microsoft.com/fwlink/p/?LinkId=618052)">Moufiltr sample</a>.</p></td>
+<td align="left"><p>Microsoft provides support for legacy (non-USB, non-Bluetooth, non-I2C) mice by means of the Mouclass.sys driver. Keyboard and mouse HID client drivers. To enhance the functionality of a legacy mouse, the vendor can supply a mouse filter driver. For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=618052" data-raw-source="[Moufiltr sample](https://go.microsoft.com/fwlink/p/?LinkId=618052)">Moufiltr sample</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>HID: PS/2 (i8042prt) driver</p></td>
 <td align="left"><p>I8042prt.sys</p></td>
 <td align="left"><p>Windows XP and later</p></td>
-<td align="left"><p>Microsoft provides support for legacy PS/2 keyboards and mice by means of the I8042.sys driver. To enhance the functionality of a PS/2 mouse or keyboard, the vendor can supply a keyboard or mouse filter driver. For more information, see the <a href="http://go.microsoft.com/fwlink/p/?LinkId=618052" data-raw-source="[Kbfiltr sample](http://go.microsoft.com/fwlink/p/?LinkId=618052)">Kbfiltr sample</a> and <a href="http://go.microsoft.com/fwlink/p/?LinkId=618052" data-raw-source="[Moufiltr sample](http://go.microsoft.com/fwlink/p/?LinkId=618052)">Moufiltr sample</a>.</p></td>
+<td align="left"><p>Microsoft provides support for legacy PS/2 keyboards and mice by means of the I8042.sys driver. To enhance the functionality of a PS/2 mouse or keyboard, the vendor can supply a keyboard or mouse filter driver. For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=618052" data-raw-source="[Kbfiltr sample](https://go.microsoft.com/fwlink/p/?LinkId=618052)">Kbfiltr sample</a> and <a href="https://go.microsoft.com/fwlink/p/?LinkId=618052" data-raw-source="[Moufiltr sample](https://go.microsoft.com/fwlink/p/?LinkId=618052)">Moufiltr sample</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Imaging: Web Services for Devices (WSD) scan class driver</p></td>

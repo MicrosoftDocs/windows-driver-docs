@@ -28,6 +28,11 @@ ms.localizationpriority: medium
 <p>Static Driver Verifier (also known as &quot;StaticDV&quot; or &quot;SDV&quot;) is a static verification tool that systematically analyzes the source code of Windows kernel-mode drivers. SDV is a compile time tool that is capable of discovering defects and design issues in a driver. Based on a set of interface rules and a model of the operating system, SDV determines whether the driver correctly interacts with the Windows operating system kernel.</p>
 <p></p>
  
+<p><strong>Installation</strong></p>
+<p>Static Driver Verifier is available as part of the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk">Windows Driver Kit (WDK)</a> in both the full WDK experience and in the standalone Enterprise WDK.  In addition, the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">Visual C++ Redistributable Packages for Visual Studio 2013</a> and <a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">Visual C++ Redistributable Packages for Visual Studio 2017</a> are required for SDV to run.  
+<p></p>For versions of SDV available in the WDK for Windows 10, Version 1809 or earlier, the <a href="https://my.visualstudio.com/Downloads?pid=1452">Visual C++ Redistributable Packages for Visual Studio 2012</a> should be installed instead of the 2017 packages.
+<p></p>
+ 
 </div>
 <p><strong>Visual Studio Integration</strong></p>
 <p>Static Driver Verifier is integrated into Visual Studio. You can run static analysis on your Visual Studio driver project. You can launch, configure, and control Static Driver Verifier from the <strong>Driver</strong> menu in Visual Studio.</p>
@@ -61,7 +66,7 @@ ms.localizationpriority: medium
 <p>SDV examines all possible paths through the driver code. It is designed to find serious errors in obscure paths that are unlikely to be encountered even in thorough testing.</p>
 <p><strong>Resources</strong></p>
 <p>For specific information about the drivers that SDV can verify, see <a href="supported-drivers.md" data-raw-source="[Supported Drivers](supported-drivers.md)">Supported Drivers</a>.</p>
-<p>For more information and tips about using Static Driver Verifier, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=154232" data-raw-source="[Static Driver Tools blog](http://go.microsoft.com/fwlink/p/?linkid=154232)">Static Driver Tools blog</a>.</p></td>
+<p>For more information and tips about using Static Driver Verifier, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=154232" data-raw-source="[Static Driver Tools blog](https://go.microsoft.com/fwlink/p/?linkid=154232)">Static Driver Tools blog</a>.</p></td>
 </tr>
 </tbody>
 </table>

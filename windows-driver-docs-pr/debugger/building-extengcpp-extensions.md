@@ -23,13 +23,13 @@ Each extension should be exported. When you use the [**EXT\_COMMAND**](https://m
 
 The following functions are provided by engextcpp should be exported from the EngExtCpp DLL.
 
--   **DebugExtensionInitialize** -- so that the [**Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff548226) method can be called to initialize the library.
+-   **DebugExtensionInitialize** -- so that the [**Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff550945) method can be called to initialize the library.
 
--   **DebugExtensionUnitialize** -- so that the [**Uninitialize**](https://msdn.microsoft.com/library/windows/hardware/ff548226) method can be called to uninitialize the library.
+-   **DebugExtensionUnitialize** -- so that the [**Uninitialize**](https://msdn.microsoft.com/library/windows/hardware/ff558961) method can be called to uninitialize the library.
 
 -   **KnownStructOutputEx** -- so that the engine can call the [*ExtKnownStructMethod*](https://msdn.microsoft.com/library/windows/hardware/ff543989) methods to format known structures for output.
 
--   **DebugExtensionNotify** -- so that the engine can call the [**OnSessionActive**](https://msdn.microsoft.com/library/windows/hardware/ff548226), **OnSessionInactive**, **OnSessionAccessible**, and **OnSessionInaccessible** methods to notify the extension library of changes to the debugging session's state.
+-   **DebugExtensionNotify** -- so that the engine can call the [**OnSessionActive**](https://msdn.microsoft.com/library/windows/hardware/ff552312), **OnSessionInactive**, **OnSessionAccessible**, and **OnSessionInaccessible** methods to notify the extension library of changes to the debugging session's state.
 
 -   **help** -- so that the EngExtCpp extension framework can automatically provide a **!help** extension.
 

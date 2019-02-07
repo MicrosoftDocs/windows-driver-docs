@@ -84,7 +84,7 @@ Constraints JS
 This template provides the method headers for all supported JavaScript constraint entry points. For more information, see [JavaScript Constraints](javascript-constraints.md).
 Autoconfiguration GDL
 
-This provides a basic auto-configuration file for a v4 print driver. For information about GDL syntax for auto-configuration, and to explore an example file, see the [Print Auto Configuration Sample](http://go.microsoft.com/fwlink/p/?LinkId=617938).
+This provides a basic auto-configuration file for a v4 print driver. For information about GDL syntax for auto-configuration, and to explore an example file, see the [Print Auto Configuration Sample](https://go.microsoft.com/fwlink/p/?LinkId=617938).
 TCPMon Bidi extension XML
 
 This provides a simple TCP/IP Bidi extension file. For more information about Bidi syntax for the standard TCP/IP port monitor, see [TCP/IP Schema Extensions](tcp-ip-schema-extensions.md).

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-The following topics provide information about the types of operations that [*Unidrv*](https://msdn.microsoft.com/library/windows/hardware/ff556343#wdkgloss-unidrv) allows rendering plug-ins to perform:
+The following topics provide information about the types of operations that *Unidrv* allows rendering plug-ins to perform:
 
 [Customized Color Formats](customized-color-formats.md)
 

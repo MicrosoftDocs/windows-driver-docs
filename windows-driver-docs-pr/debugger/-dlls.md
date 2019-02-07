@@ -51,7 +51,7 @@ Sorts the display by load order. This situation is the default.
 Sorts the display by memory order.
 
 <span id="-v"></span><span id="-V"></span>**-v**  
-(Windows XP and later) Displays version information. This information is taken from the resource section of each module.
+Displays version information. This information is taken from the resource section of each module.
 
 <span id="_______LoaderEntryAddress______"></span><span id="_______loaderentryaddress______"></span><span id="_______LOADERENTRYADDRESS______"></span> *LoaderEntryAddress*   
 Specifies the address of the loader entry for a module. If you include this parameter, the debugger displays only this specific module.

@@ -27,7 +27,7 @@ The cancel-safe IRP queue framework is included with Windows XP and later versi
 
 The **IoCsq*Xxx*** routines are declared in the Windows XP and later versions of Wdm.h and Ntddk.h. Drivers that must also work with Windows 2000 and Windows 98/Me must include Csq.h for the declarations.
 
-You can see a complete demonstration of how to use cancel-safe IRP queues in the \\src\\general\\cancel directory of the WDK. For more information about these queues, also see the [Flow of Control for Cancel-Safe IRP Queuing](http://go.microsoft.com/fwlink/p/?linkid=57844) white paper.
+You can see a complete demonstration of how to use cancel-safe IRP queues in the \\src\\general\\cancel directory of the WDK. For more information about these queues, also see the [Flow of Control for Cancel-Safe IRP Queuing](https://go.microsoft.com/fwlink/p/?linkid=57844) white paper.
 
 ### <a href="" id="ddk-implementing-the-cancel-safe-irp-queue-kg"></a>Implementing the Cancel-Safe IRP Queue
 

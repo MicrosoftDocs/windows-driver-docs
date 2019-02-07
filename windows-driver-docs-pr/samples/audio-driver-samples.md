@@ -16,7 +16,7 @@ The audio driver sample in this directory provides a starting point for writing 
 
 | Sample Name                              | Solution                                                  | Description                                                                                                                             |
 |------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Slate Virtual Audio Device Driver Sample | [sysvad](http://go.microsoft.com/fwlink/p/?LinkId=620183) | The Slate Virtual Audio Device Driver (SYSVAD) shows how to develop a WDM audio driver that exposes support for multiple audio devices. |
+| Virtual Audio Device Driver Sample | [sysvad](https://go.microsoft.com/fwlink/p/?LinkId=620183) | The Virtual Audio Device Driver (SYSVAD) shows how to develop a WDM audio driver that exposes support for multiple audio devices. |
 
  
 

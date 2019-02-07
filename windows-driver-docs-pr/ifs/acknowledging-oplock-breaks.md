@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="oplock_break_conditions"></span><span id="OPLOCK_BREAK_CONDITIONS"></span>
 
 
-There are different types of acknowledgments that the owner of an oplock can return. Similar to the [grant requests](granting-oplocks.md), these acknowledgments are sent as file system control codes (that is, [FSCTL](http://go.microsoft.com/fwlink/p/?linkid=124238)s). They are:
+There are different types of acknowledgments that the owner of an oplock can return. Similar to the [grant requests](granting-oplocks.md), these acknowledgments are sent as file system control codes (that is, [FSCTL](https://go.microsoft.com/fwlink/p/?linkid=124238)s). They are:
 
 -   FSCTL\_OPLOCK\_BREAK\_ACKNOWLEDGE
     -   This FSCTL indicates that the oplock owner has completed stream synchronization and they accept the level to which the oplock was broken (either Level 2 or None).
@@ -25,7 +25,7 @@ There are different types of acknowledgments that the owner of an oplock can ret
 
     -   For a Batch or Filter oplock, this FSCTL indicates that the oplock owner intends to close the stream handle on which the oplock was granted. Operations blocked, awaiting acknowledgment of the oplock break, continue to wait until the oplock owner's handle is closed.
 -   FSCTL\_REQUEST\_OPLOCK
-    -   By specifying REQUEST\_OPLOCK\_INPUT\_FLAG\_ACK in the **Flags** member of the REQUEST\_OPLOCK\_INPUT\_BUFFER structure passed as the *lpInBuffer* parameter of [DeviceIoControl](http://go.microsoft.com/fwlink/p/?linkid=124239), this FSCTL is used to acknowledge breaks of Windows 7 oplocks. The acknowledgment is required only if the REQUEST\_OPLOCK\_OUTPUT\_FLAG\_ACK\_REQUIRED flag is set in the **Flags** member of the REQUEST\_OPLOCK\_OUTPUT\_BUFFER structure passed as the *lpOutBuffer* parameter of [DeviceIoControl](http://go.microsoft.com/fwlink/p/?linkid=124239). In a similar manner, [**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) and [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) can be used to acknowledge Windows 7 oplocks from kernel-mode. For more information, see [**FSCTL\_REQUEST\_OPLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff545530).
+    -   By specifying REQUEST\_OPLOCK\_INPUT\_FLAG\_ACK in the **Flags** member of the REQUEST\_OPLOCK\_INPUT\_BUFFER structure passed as the *lpInBuffer* parameter of [DeviceIoControl](https://go.microsoft.com/fwlink/p/?linkid=124239), this FSCTL is used to acknowledge breaks of Windows 7 oplocks. The acknowledgment is required only if the REQUEST\_OPLOCK\_OUTPUT\_FLAG\_ACK\_REQUIRED flag is set in the **Flags** member of the REQUEST\_OPLOCK\_OUTPUT\_BUFFER structure passed as the *lpOutBuffer* parameter of [DeviceIoControl](https://go.microsoft.com/fwlink/p/?linkid=124239). In a similar manner, [**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) and [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) can be used to acknowledge Windows 7 oplocks from kernel-mode. For more information, see [**FSCTL\_REQUEST\_OPLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff545530).
 
 A related FSCTL code is FSCTL\_OPLOCK\_BREAK\_NOTIFY. This code is used when the caller wants to be notified when an oplock break on the given stream completes. This call may block. When the FSCTL\_OPLOCK\_BREAK\_NOTIFY call returns STATUS\_SUCCESS, this signifies one of the following:
 

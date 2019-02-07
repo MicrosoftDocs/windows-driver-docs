@@ -24,14 +24,14 @@ ms.localizationpriority: medium
 
 **Official specifications**
 
--   [UEFI Specifications](http://go.microsoft.com/fwlink/p/?LinkId=717873)
--   [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0](http://go.microsoft.com/fwlink/p/?LinkId=717870)
+-   [UEFI Specifications](https://go.microsoft.com/fwlink/p/?LinkId=717873)
+-   [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0](https://go.microsoft.com/fwlink/p/?LinkId=717870)
 
 **Recommended reading**
 
--   [Blog post: Protecting BitLocker from Cold Attacks (and other threats)]( http://go.microsoft.com/fwlink/p/?LinkId=717871)
--   [Whitepaper: A Tour Beyond BIOS with the UEFI TPM2 Support in EDKII]( http://go.microsoft.com/fwlink/p/?LinkId=717872)
--   [Protect derived domain credentials with Credential Guard]( http://go.microsoft.com/fwlink/p/?LinkId=717899)
+-   [Blog post: Protecting BitLocker from Cold Attacks (and other threats)]( https://go.microsoft.com/fwlink/p/?LinkId=717871)
+-   [Whitepaper: A Tour Beyond BIOS with the UEFI TPM2 Support in EDKII]( https://go.microsoft.com/fwlink/p/?LinkId=717872)
+-   [Protect derived domain credentials with Credential Guard]( https://go.microsoft.com/fwlink/p/?LinkId=717899)
 
 Describes the behavior and usage for the `MemoryOverwriteRequestControlLock` UEFI variable, revision 2.
 
@@ -39,8 +39,8 @@ To prevent advanced memory attacks, the existing system BIOS security mitigation
 
 **Note**   This mitigation, called *MorLock*, must be implemented on all new systems and not only limited to systems with Trusted Platform Modules. Revision 2 adds a new capability, *unlock*, to mitigate boot performance concerns, especially on large memory systems.
 
-**Note 2**      Regarding the ACPI \_DSM control method for setting the MOR bit state (as described in Section 6 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0](http://go.microsoft.com/fwlink/p/?LinkId=717870)):  
-Microsoft recommends removing this \_DSM method from modern BIOS implementations.  However, if a BIOS implements this \_DSM method, it must respect the state of MorLock.  If the MorLock is locked, with or without a key, this \_DSM method must fail to change MOR and return a value of 1 corresponding to “General Failure”.  No ACPI mechanism is defined to unlock MorLock revision 2.  Note that Windows has not directly invoked this \_DSM method since Windows 7 and considers it deprecated.  Some BIOS *indirectly* invokes this \_DSM method when Windows invokes ACPI \_PTS as an implementation of MOR Auto Detection of Clean Shutdown (as described in Section 2.3 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0](http://go.microsoft.com/fwlink/p/?LinkId=717870)).  This ACPI \_PTS implementation of MOR Auto Detection is security deficient and should NOT be used.
+**Note 2**      Regarding the ACPI \_DSM control method for setting the MOR bit state (as described in Section 6 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0](https://go.microsoft.com/fwlink/p/?LinkId=717870)):  
+Microsoft recommends removing this \_DSM method from modern BIOS implementations.  However, if a BIOS implements this \_DSM method, it must respect the state of MorLock.  If the MorLock is locked, with or without a key, this \_DSM method must fail to change MOR and return a value of 1 corresponding to “General Failure”.  No ACPI mechanism is defined to unlock MorLock revision 2.  Note that Windows has not directly invoked this \_DSM method since Windows 7 and considers it deprecated.  Some BIOS *indirectly* invokes this \_DSM method when Windows invokes ACPI \_PTS as an implementation of MOR Auto Detection of Clean Shutdown (as described in Section 2.3 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0](https://go.microsoft.com/fwlink/p/?LinkId=717870)).  This ACPI \_PTS implementation of MOR Auto Detection is security deficient and should NOT be used.
 
 ## MemoryOverwriteRequestControlLock
 
@@ -152,11 +152,11 @@ These flowcharts show the expected behavior of your implementation:
 
 ## Related topics
 [UEFI requirements that apply to all Windows editions on SoC platforms](uefi-requirements-that-apply-to-all-windows-platforms.md#security-requirements)  
-[PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0](http://go.microsoft.com/fwlink/p/?LinkId=717870)  
-[Protecting BitLocker from Cold Attacks (and other threats)]( http://go.microsoft.com/fwlink/p/?LinkId=717871)  
-[A Tour Beyond BIOS with the UEFI TPM2 Support in EDKII]( http://go.microsoft.com/fwlink/p/?LinkId=717872)  
-[Protect derived domain credentials with Credential Guard]( http://go.microsoft.com/fwlink/p/?LinkId=717899)  
-[UEFI Specifications](http://go.microsoft.com/fwlink/p/?LinkId=717873)  
+[PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0](https://go.microsoft.com/fwlink/p/?LinkId=717870)  
+[Protecting BitLocker from Cold Attacks (and other threats)]( https://go.microsoft.com/fwlink/p/?LinkId=717871)  
+[A Tour Beyond BIOS with the UEFI TPM2 Support in EDKII]( https://go.microsoft.com/fwlink/p/?LinkId=717872)  
+[Protect derived domain credentials with Credential Guard]( https://go.microsoft.com/fwlink/p/?LinkId=717899)  
+[UEFI Specifications](https://go.microsoft.com/fwlink/p/?LinkId=717873)  
 
 
 

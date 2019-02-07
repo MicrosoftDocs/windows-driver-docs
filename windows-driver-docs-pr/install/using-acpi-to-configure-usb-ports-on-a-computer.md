@@ -108,7 +108,7 @@ Example _UPC for a USB Type-C connector:
         0x00000000})                // Reserved1 – must be zero
 ```
 
-For more information about the ACPI 6.0 interface, see [Advanced Configuration and Power Interface Specification Revision 6.0](http://go.microsoft.com/fwlink/?LinkId=827852).
+For more information about the ACPI 6.0 interface, see [Advanced Configuration and Power Interface Specification Revision 6.0](https://go.microsoft.com/fwlink/?LinkId=827852).
 
  
 

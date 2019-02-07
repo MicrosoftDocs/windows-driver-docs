@@ -29,7 +29,7 @@ This property initializes the [**WIA\_DPA\_FIRMWARE\_VERSION**](https://msdn.mic
 
  
 
-For a description of these PKEY\_PNPX\_*Xxx* properties, see the [PNP-X Implementer's Guide](http://go.microsoft.com/fwlink/p/?linkid=242570).
+For a description of these PKEY\_PNPX\_*Xxx* properties, see the [PNP-X Implementer's Guide](https://go.microsoft.com/fwlink/p/?linkid=242570).
 
 The following code examples show how to open a Property Store for the current Function Instance object that is obtained as described in the previous section and how to read device properties from the store:
 

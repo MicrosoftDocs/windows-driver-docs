@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic introduces the ways that UWP device apps can access internal devices. *Internal devices* are devices that reside inside or are integrated with the PC enclosure.
 
-**Note**  Some APIs that are mentioned in this topic can be used to access external devices too. This topic focuses specifically on accessing internal devices. For more info about each API, see the [Windows API reference](http://go.microsoft.com/fwlink/p/?LinkId=250938).
+**Note**  Some APIs that are mentioned in this topic can be used to access external devices too. This topic focuses specifically on accessing internal devices. For more info about each API, see the [Windows API reference](https://go.microsoft.com/fwlink/p/?LinkId=250938).
 
  
 
@@ -31,7 +31,7 @@ There are three ways that UWP apps can access internal devices:
 ## <span id="Device_scenario_APIs"></span><span id="device_scenario_apis"></span><span id="DEVICE_SCENARIO_APIS"></span>Device scenario APIs
 
 
-The Windows Runtime provides several APIs for accessing common devices that are built-in or attached to the PC, such as APIs for image capture, scanning, printing, and using motion sensors. Because these APIs are designed with a specific scenario in mind, they are referred to as *device scenario APIs*. Device scenario APIs can be used by all developers and no device metadata is required to use them. For more info about scenario APIs, see [Integrating devices]( http://go.microsoft.com/fwlink/p/?LinkId=306557).
+The Windows Runtime provides several APIs for accessing common devices that are built-in or attached to the PC, such as APIs for image capture, scanning, printing, and using motion sensors. Because these APIs are designed with a specific scenario in mind, they are referred to as *device scenario APIs*. Device scenario APIs can be used by all developers and no device metadata is required to use them. For more info about scenario APIs, see [Integrating devices]( https://go.microsoft.com/fwlink/p/?LinkId=306557).
 
 Any access beyond what the device scenario APIs offer is limited to OEMs (or component suppliers, working in coordination with OEMs), and requires device metadata for the system container.
 
@@ -42,8 +42,8 @@ When an OEM/component supplier needs to access an internal device in a way that 
 
 | Device protocol API | Namespace                                                                               | Access type                      |
 |---------------------|-----------------------------------------------------------------------------------------|----------------------------------|
-| USB                 | [Windows.Devices.Usb](http://go.microsoft.com/fwlink/p/?LinkId=306694)                  | exclusive read & exclusive write |
-| HID                 | [Windows.Devices.HumanInterfaceDevice](http://go.microsoft.com/fwlink/p/?LinkId=306697) | shared read & exclusive write    |
+| USB                 | [Windows.Devices.Usb](https://go.microsoft.com/fwlink/p/?LinkId=306694)                  | exclusive read & exclusive write |
+| HID                 | [Windows.Devices.HumanInterfaceDevice](https://go.microsoft.com/fwlink/p/?LinkId=306697) | shared read & exclusive write    |
 
  
 
@@ -51,9 +51,9 @@ To access peripheral devices that use only Microsoft class drivers - the most co
 
 For more info, see:
 
--   [Writing apps for USB devices](http://go.microsoft.com/fwlink/p/?LinkId=324880)
--   [Supporting human interface devices (HID)](http://go.microsoft.com/fwlink/p/?LinkId=324881)
--   [Supporting Bluetooth devices](http://go.microsoft.com/fwlink/p/?LinkId=324882)
+-   [Writing apps for USB devices](https://go.microsoft.com/fwlink/p/?LinkId=324880)
+-   [Supporting human interface devices (HID)](https://go.microsoft.com/fwlink/p/?LinkId=324881)
+-   [Supporting Bluetooth devices](https://go.microsoft.com/fwlink/p/?LinkId=324882)
 -   [Device driver requirements](step-1--create-a-uwp-device-app.md) (from step 1 of the step-by-step guide)
 -   [Creating device metadata](step-2--create-device-metadata.md) (step 2 of the step-by-step guide)
 
@@ -62,7 +62,7 @@ For more info, see:
 
 When OEMs or IHVs are unable to use the device protocol APIs to access their (internal or peripheral) device, they should first contact Microsoft to discuss their scenario with the Windows Ecosystem team. In some instances - upon Microsoft approval - a UWP device app can directly access a custom driver.
 
-Custom driver access requires device metadata. To access a custom driver, the app must be specified in the device metadata as a privileged app for the peripheral device or system container. For more info about custom driver access, see [UWP device apps design guide for specialized devices internal to the PC](http://go.microsoft.com/fwlink/p/?LinkId=306693).
+Custom driver access requires device metadata. To access a custom driver, the app must be specified in the device metadata as a privileged app for the peripheral device or system container. For more info about custom driver access, see [UWP device apps design guide for specialized devices internal to the PC](https://go.microsoft.com/fwlink/p/?LinkId=306693).
 
 ## <span id="Component_suppliers"></span><span id="component_suppliers"></span><span id="COMPONENT_SUPPLIERS"></span>Component suppliers
 
@@ -73,7 +73,7 @@ Component suppliers can work with OEMs to develop UWP device apps for their inte
 
 -   **OEM develops and distributes the app**: In this case, the OEM develops and distributes the app that accesses one or more internal devices from different component suppliers. The OEM ultimately owns app development, app distribution, and device metadata maintenance. The component supplier owns the driver.
 
-For more info about these workflows, see [UWP device apps design guide for specialized devices internal to the PC](http://go.microsoft.com/fwlink/p/?LinkId=306693).
+For more info about these workflows, see [UWP device apps design guide for specialized devices internal to the PC](https://go.microsoft.com/fwlink/p/?LinkId=306693).
 
 ## <span id="related_topics"></span>Related topics
 

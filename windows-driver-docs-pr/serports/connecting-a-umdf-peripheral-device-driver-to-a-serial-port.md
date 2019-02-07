@@ -18,7 +18,7 @@ After the serially connected peripheral device enters an uninitialized D0 device
 To enable a UMDF peripheral driver to receive connection IDs in its resource list, the INF file that installs the driver must include the following directive in its WDF-specific **DDInstall** section:
 
 **UmdfDirectHardwareAccess = AllowDirectHardwareAccess**
-For more information about this directive, see [Specifying WDF Directives in INF Files](https://msdn.microsoft.com/library/windows/hardware/ff560526). For an example of a INX file (used to build the corresponding INF file) that uses this directive, see the [SpbAccelerometer driver sample](http://go.microsoft.com/fwlink/p/?LinkId=618052).
+For more information about this directive, see [Specifying WDF Directives in INF Files](https://msdn.microsoft.com/library/windows/hardware/ff560526). For an example of a INX file (used to build the corresponding INF file) that uses this directive, see the [SpbAccelerometer driver sample](https://go.microsoft.com/fwlink/p/?LinkId=618052).
 
 The following code example shows how the driver's **OnPrepareHardware** method obtains the connection ID from the *pWdfResourcesTranslated* parameter.
 

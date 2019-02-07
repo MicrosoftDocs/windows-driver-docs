@@ -17,7 +17,7 @@ To send a trace message from your driver binary, use this code:
    TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_DRIVER, &quot;%!FUNC! Entry&quot;);
    ```
        
-You can access the ETW logs either using Tracelog via the [TShell tool](http://go.microsoft.com/fwlink/p/?linkid=617388) on a phone, or by using [!wmitrace](https://msdn.microsoft.com/Library/Windows/Hardware/Ff561362) in a debugger session.
+You can access the ETW logs either using Tracelog via the [TShell tool](https://go.microsoft.com/fwlink/p/?linkid=617388) on a phone, or by using [!wmitrace](https://msdn.microsoft.com/Library/Windows/Hardware/Ff561362) in a debugger session.
 
 To use Tracelog on a phone:
 

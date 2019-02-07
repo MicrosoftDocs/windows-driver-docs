@@ -16,7 +16,7 @@ This section describes the NDIS virtual machine queue (VMQ) interface. The VMQ i
 
 The [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md) documentation describes the high-level concepts of the VMQ architecture. The [Writing VMQ Drivers](writing-vmq-drivers.md) documentation provides the more detailed information about writing NDIS VMQ drivers.
 
-**Note**  Be sure to study the [NDIS Virtual Miniport Driver sample](http://go.microsoft.com/fwlink/p/?LinkId=617918), especially the vmq.c and vmq.h source files.
+**Note**  Be sure to study the [NDIS Virtual Miniport Driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617918), especially the vmq.c and vmq.h source files.
 
  
 

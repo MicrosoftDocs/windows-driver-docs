@@ -41,7 +41,7 @@ If still pin support isn't explicitly added to the minidriver, the WIA Video Sna
 
 Some still pin implementations can only be rendered after the capture pin because they are based on the capture pin data formats.
 
-For more information about WIA driver development, see the [still imaging technologies](http://go.microsoft.com/fwlink/p/?linkid=8768) website.
+For more information about WIA driver development, see the [still imaging technologies](https://go.microsoft.com/fwlink/p/?linkid=8768) website.
 
  
 

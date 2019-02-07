@@ -9,9 +9,9 @@ ms.localizationpriority: medium
 # Enumerating Hyper-V Extensible Switch Extensions
 
 
-The [Get-VMSwitchExtension](http://technet.microsoft.com/library/hh848603.aspx) PowerShell cmdlet enumerates the Hyper-V extensible switch extensions that are currently bound to an instance of an extensible switch. This cmdlet also reports whether the extension is enabled in the extensible switch instance.
+The [Get-VMSwitchExtension](https://technet.microsoft.com/library/hh848603.aspx) PowerShell cmdlet enumerates the Hyper-V extensible switch extensions that are currently bound to an instance of an extensible switch. This cmdlet also reports whether the extension is enabled in the extensible switch instance.
 
-The [Get-VMSwitchExtension](http://technet.microsoft.com/library/hh848603.aspx) cmdlet uses the following syntax:
+The [Get-VMSwitchExtension](https://technet.microsoft.com/library/hh848603.aspx) cmdlet uses the following syntax:
 
 ``` syntax
 Get-VMSwitchExtension [[-VMSwitchName] <string[]>] [[-Name] <string[]>] [-ComputerName <string[]>]
@@ -20,7 +20,7 @@ Get-VMSwitchExtension [[-VMSwitchName] <string[]>] [[-Name] <string[]>] [-Comput
 Get-VMSwitchExtension [[-VMSwitch] <VMSwitch[]>] [-ComputerName <string[]>] [<CommonParameters>]
 ```
 
-The following example shows the output from the [Get-VMSwitchExtension](http://technet.microsoft.com/library/hh848603.aspx) cmdlet.
+The following example shows the output from the [Get-VMSwitchExtension](https://technet.microsoft.com/library/hh848603.aspx) cmdlet.
 
 ``` syntax
 PS C:\Windows\system32> Get-VMSwitchExtension PrivateNetwork | fl -property @("Name","ExtensionType", "SwitchName","Enabled")
@@ -53,7 +53,7 @@ Enabled       : True
 ## Related topics
 
 
-[Get-VMSwitchExtension](http://technet.microsoft.com/library/hh848603.aspx)
+[Get-VMSwitchExtension](https://technet.microsoft.com/library/hh848603.aspx)
 
 [**Msvm\_EthernetSwitchExtension**](https://msdn.microsoft.com/library/hh850139)
 

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 
 
-You can use the approach described in this section to determine the parent of a [*nonpresent device*](https://msdn.microsoft.com/library/windows/hardware/ff556313#wdkgloss-nonpresent-device) only if the relationship between the nonpresent device and its parent is fixed. (If the relationship between a nonpresent device and its parent is not fixed, you cannot use this method because the nonpresent device does not have a specific parent).
+You can use the approach described in this section to determine the parent of a *nonpresent device* only if the relationship between the nonpresent device and its parent is fixed. (If the relationship between a nonpresent device and its parent is not fixed, you cannot use this method because the nonpresent device does not have a specific parent).
 
 For example, this method applies to a USB composite device, such as a multifunction printer, that has one or more interfaces, each of which is represented as a child device. Because all the child interface devices depend on the presence of a specific composite device as their parent, the relationship between the device and its parent is fixed.
 
@@ -36,7 +36,7 @@ The following topics describe this method:
 
 ### <a href="" id="saving-the-parent-child-relationship"></a> Saving the Parent/Child Relationship
 
-To save the parent/child relationship of a device, supply a [*device co-installer*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-co-installer) that saves the device instance ID of the device's parent in a user-created entry value under the hardware registry key of the device. You should use a device instance ID because it remains constant across system restarts and between system processes, whereas a device instance handle does not. When you process a [**DIF_INSTALLDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff543692) request in the co-installer, follow these steps to save the device instance ID.
+To save the parent/child relationship of a device, supply a *device co-installer* that saves the device instance ID of the device's parent in a user-created entry value under the hardware registry key of the device. You should use a device instance ID because it remains constant across system restarts and between system processes, whereas a device instance handle does not. When you process a [**DIF_INSTALLDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff543692) request in the co-installer, follow these steps to save the device instance ID.
 
 ***<em>To save the device instance ID of the immediate parent in the registry</em>***
 

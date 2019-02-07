@@ -64,7 +64,7 @@ You can use this property request to interpret zoom values. The range of zoom sh
 
 For example, if **lObjectiveFocalLengthMax** = 105 and **lOcularFocalLength** = 35, then this camera is capable of a maximum optical zoom ratio of 105/35, or 3.
 
-Also see the *Optical Zoom* section of the USB Video Class Device Class specification. This specification is available at the [USB Implementers Forum](http://go.microsoft.com/fwlink/p/?linkid=8780) website.
+Also see the *Optical Zoom* section of the USB Video Class Device Class specification. This specification is available at the [USB Implementers Forum](https://go.microsoft.com/fwlink/p/?linkid=8780) website.
 
 Requirements
 ------------

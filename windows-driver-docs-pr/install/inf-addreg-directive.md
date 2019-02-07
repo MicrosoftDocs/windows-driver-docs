@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 An **AddReg** directive references one or more INF-writer-defined *add-registry-sections* that are used to modify or create registry information.
 
-```cpp
+```ini
 [DDInstall] | 
 [DDInstall.HW] | 
 [DDInstall.CoInstallers] | 
@@ -46,7 +46,7 @@ Each *add-registry section* can have entries to do the following:
 
 Each named *add-registry section* referenced by an **AddReg** directive has the following format:
 
-```cpp
+```ini
 [add-registry-section]
 reg-root, [subkey],[value-entry-name],[flags],[value][,[value]]
 reg-root, [subkey],[value-entry-name],[flags],[value][,[value]]
@@ -80,8 +80,8 @@ Relative root, in which keys that are specified by using this abbreviation are r
 
 | INF Section Containing AddReg Directive                        | Registry Key Referenced by HKR                                                        |
 |----------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| INF [***DDInstall***](inf-ddinstall-section.md) section       | The device's [*software key*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-key) |
-| INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section | The device's [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key) |
+| INF ***DDInstall*** |
+| INF ***DDInstall*.HW** |
 | INF *\[service-install-section\]* section                      | The **Services** key                                                                  |
 | INF *\[event-log-install\]* section                            | The **EventLog** key                                                                  |
 | INF *\[add-interface-section\]* section                        | The device interface's registry key                                                    |
@@ -197,7 +197,7 @@ Each *add-registry-section* name must be unique to the INF file, but it can be r
 
 To represent a number of a registry type other than one of the predefined REG_*XXX* types, specify a new type number in the high word of the *flag* ORed with FLG_ADDREG_BINVALUETYPE in its low word. The data for such a *value* must be specified in binary format as a sequence of bytes separated by commas. For example, to store 16 bytes of data of a new registry data type, such as 0x38, as a value entry, the add-registry section entry would be something like the following:
 
-```cpp
+```ini
 HKR,,MYValue,0x00380001,1,0,2,3,4,5,6,7,8,9,A,B,C,D,E,F
 ```
 
@@ -207,7 +207,7 @@ This technique can be used to define new registry types for numeric values, but 
 
 Special keywords are defined for use in the HKR **AddReg** entries. The format for the entries that use these keywords is as follows:
 
-```cpp
+```ini
 [HKR,,DeviceCharacteristics,0x10001,characteristics] 
 [HKR,,DeviceType,0x10001,device-type] 
 [HKR,,Security,,security-descriptor-string] 
@@ -227,7 +227,7 @@ A **DeviceCharacteristics** HKR **AddReg** entry specifies characteristics for t
 
 Only the following values can be specified in an INF:
 
-```cpp
+```ini
 #define FILE_REMOVABLE_MEDIA            0x00000001
 #define FILE_READ_ONLY_DEVICE           0x00000002
 #define FILE_FLOPPY_DISKETTE            0x00000004
@@ -246,12 +246,12 @@ For more information about device characteristics, see [Specifying Device Charac
 <a href="" id="devicetype"></a>**DeviceType**  
 A **DeviceType** HKR **AddReg** entry specifies a device type for the device. The device-type is the numeric value of a FILE_DEVICE_*XXX* constant defined in *Wdm.h* or *Ntddk.h*. The flag value of 0x10001 specifies that the device-type value is a [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types). For more information, see [Specifying Device Types](https://msdn.microsoft.com/library/windows/hardware/ff563821).
 
-A class-installer INF should specify the device type that applies to all, or almost all, of the devices in the class. For example, if the devices in the class are of type FILE_DEVICE_CD_ROM, specify a *device-type* of 0x02. If a device INF specifies a value for **DeviceType**, it overrides the value set by the class installer, if any. If the class or device INF specifies a **DeviceType** value, the PnP manager applies that type to the [*physical device object (PDO)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-physical-device-object--pdo-) created by the device's bus driver.
+A class-installer INF should specify the device type that applies to all, or almost all, of the devices in the class. For example, if the devices in the class are of type FILE_DEVICE_CD_ROM, specify a *device-type* of 0x02. If a device INF specifies a value for **DeviceType**, it overrides the value set by the class installer, if any. If the class or device INF specifies a **DeviceType** value, the PnP manager applies that type to the *physical device object (PDO)* created by the device's bus driver.
 
 <a href="" id="security"></a>**Security**  
 A **Security** HKR **AddReg** entry specifies a security descriptor for the device. The *security-descriptor-string* is a string with tokens to indicate the DACL (**D:**) security component.
 
-A class-installer INF can specify a security descriptor for a device class. A device INF can specify a security descriptor for an individual device, overriding the security for the class. If the class and/or device INF specifies a *security-descriptor-string*, the PnP manager propagates the descriptor to all the device objects ( [*DOs*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-object)) for a device. This includes the function device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)), optional [*filter DOs*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-filter-device-object), and the PDO.
+A class-installer INF can specify a security descriptor for a device class. A device INF can specify a security descriptor for an individual device, overriding the security for the class. If the class and/or device INF specifies a *security-descriptor-string*, the PnP manager propagates the descriptor to all the device objects ( *DOs*) for a device. This includes the function device object (*FDO*), optional *filter DOs*, and the PDO.
 
 For information about the format of security descriptor strings, see the Microsoft Windows SDK documentation.
 
@@ -264,7 +264,7 @@ An **UpperFilters** HKR **AddReg** entry specifies a PnP upper-filter driver. Th
 A **LowerFilters** HKR **AddReg** entry specifies a PnP lower-filter driver. This entry in a <em>DDInstall</em>**.HW section** defines one or more device-specific lower-filter drivers. In a **ClassInstall32** section, this entry defines one or more class-wide lower-filter drivers.
 
 <a href="" id="exclusive"></a>**Exclusive**  
-An **Exclusive** HKR **AddReg** entry, if it exists and is set to "1", specifies that the device is an [*exclusive device*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-exclusive-device). Otherwise the device is not treated as exclusive. For more information, see [Specifying Exclusive Access to Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563827).
+An **Exclusive** HKR **AddReg** entry, if it exists and is set to "1", specifies that the device is an *exclusive device*. Otherwise the device is not treated as exclusive. For more information, see [Specifying Exclusive Access to Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563827).
 
 <a href="" id="enumproppages32"></a>**EnumPropPages32**  
 An **EnumPropPages32** HKR **AddReg** entry specifies the name of a dynamic-link library (*DLL*) file that is a device-specific property page provider. It also specifies the name of the **ExtensionPropSheetPageProc** callback function as implemented by the DLL. For more information about property pages and functions, see the Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0.
@@ -287,7 +287,7 @@ Examples
 
 An **AddReg** directive referenced the (SCSI) Miniport_EventLog_AddReg section in this example, under an INF-writer-defined section referenced by the **AddService** directive in a <em>DDInstall</em>**.Services** section of this INF.
 
-```cpp
+```ini
 [Miniport_EventLog_AddReg]
 HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll" 
 ; double quotation marks delimiters in preceding entry prevent truncation 

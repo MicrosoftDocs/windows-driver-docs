@@ -19,7 +19,7 @@ For information about how to call **DeviceProperties_RunDLL**, see the following
 
 [DeviceProperties_RunDLL Function Prototype](deviceproperties-rundll-function-prototype.md)
 
-For more information about invoking **DeviceProperties_RunDLL**, see the [Knowledge Base article 815320](http://go.microsoft.com/fwlink/p/?linkid=3100&ID=815320) on the [Microsoft Help and Support](http://go.microsoft.com/fwlink/p/?linkid=8713) website.
+For more information about invoking **DeviceProperties_RunDLL**, see the [Knowledge Base article 815320](https://go.microsoft.com/fwlink/p/?linkid=3100&ID=815320) on the [Microsoft Help and Support](https://go.microsoft.com/fwlink/p/?linkid=8713) website.
 
  
 

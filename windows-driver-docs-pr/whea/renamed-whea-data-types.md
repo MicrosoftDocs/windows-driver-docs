@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Renamed WHEA Data Types
 
 
-Starting with the Windows 7 Windows Driver Kit (WDK), various WHEA data types have been renamed from earlier versions of the WDK. The majority of these changes were made so that the naming conventions in the WDK are consistent with the naming conventions of the *Common Platform Error Record* format. This format is described in Appendix N of version 2.2 of the [Unified Extensible Firmware Interface (UEFI) Specification](http://go.microsoft.com/fwlink/p/?linkid=69484).
+Starting with the Windows 7 Windows Driver Kit (WDK), various WHEA data types have been renamed from earlier versions of the WDK. The majority of these changes were made so that the naming conventions in the WDK are consistent with the naming conventions of the *Common Platform Error Record* format. This format is described in Appendix N of version 2.2 of the [Unified Extensible Firmware Interface (UEFI) Specification](https://go.microsoft.com/fwlink/p/?linkid=69484).
 
 The data types listed in this section have not been revised for Windows 7. For example, the list and types of members within a renamed structure have not changed, although the members themselves may have been renamed.
 

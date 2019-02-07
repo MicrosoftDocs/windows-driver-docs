@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_sample_ups_minidriver_kg"></span><span id="DDK_SAMPLE_UPS_MINIDRIVER_KG"></span>
 
 
-A sample UPS minidriver is provided in the \\src\\general\\ups subdirectory of versions of the Windows Driver Development Kit (DDK) prior to Windows Vista. The sample contains code and comments to assist you in developing a UPS minidriver DLL. You can download the Windows Server 2003 SP1 DDK, which contains this sample, from the [DDK archive](http://go.microsoft.com/fwlink/p/?linkid=21859).
+A sample UPS minidriver is provided in the \\src\\general\\ups subdirectory of versions of the Windows Driver Development Kit (DDK) prior to Windows Vista. The sample contains code and comments to assist you in developing a UPS minidriver DLL. You can download the Windows Server 2003 SP1 DDK, which contains this sample, from the [DDK archive](https://go.microsoft.com/fwlink/p/?linkid=21859).
 
  
 

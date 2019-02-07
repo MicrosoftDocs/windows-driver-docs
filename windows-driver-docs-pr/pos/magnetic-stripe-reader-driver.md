@@ -23,9 +23,9 @@ The Windows Software Development Kit (SDK) 10 is also required, but this is inst
 
 ## Download and extract the sample
 
-Starting with Windows 10, Windows driver samples are available on GitHub and can be downloaded from the [Windows driver samples repository project page](http://go.microsoft.com/fwlink/p/?LinkId=616507).
+Starting with Windows 10, Windows driver samples are available on GitHub and can be downloaded from the [Windows driver samples repository project page](https://go.microsoft.com/fwlink/p/?LinkId=616507).
 
-1.  Download **Windows-driver-samples-master.zip** from [GitHub](http://go.microsoft.com/fwlink/p/?LinkID=623296). This file contains all of the Windows driver samples.
+1.  Download **Windows-driver-samples-master.zip** from [GitHub](https://go.microsoft.com/fwlink/p/?LinkID=623296). This file contains all of the Windows driver samples.
 2.  Extract **Windows-driver-samples-master.zip** to the location of your choice on your development machine. This location will be referred to as *&lt;sample\_root&gt;* throughout the remainder of this article.
 
 ## Open the driver solution in Visual Studio

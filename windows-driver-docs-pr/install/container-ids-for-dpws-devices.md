@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Container IDs for DPWS Devices
 
 
-Starting with Windows 7, a device that supports PnP extensions (PnP-X) and Device Profile for Web Services (DPWS) can specify a container ID by including the **ContainerId** XML element in the device metadata document. For more information about DPWS and the DPWS device metadata document, refer to the [DPWS specification.](http://go.microsoft.com/fwlink/p/?linkid=142400)
+Starting with Windows 7, a device that supports PnP extensions (PnP-X) and Device Profile for Web Services (DPWS) can specify a container ID by including the **ContainerId** XML element in the device metadata document. For more information about DPWS and the DPWS device metadata document, refer to the [DPWS specification.](https://go.microsoft.com/fwlink/p/?linkid=142400)
 
 **Note**  Starting with Windows 10, the system ignores the container ID provided by a device and instead generates one on its own. It does this either by using the GUID from the device's endpoint reference address (EPR) or a SHA-1 hash of the device's EPR (if not a GUID).
 
@@ -23,7 +23,7 @@ The **ContainerId** XML element is declared as follows:
 </df:ContainerId>
 ```
 
-The **ContainerId** XML element type is a string, for which the value is a globally unique identifier ([*GUID*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-guid)) formatted. This string is formatted as *{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}*.
+The **ContainerId** XML element type is a string, for which the value is a globally unique identifier (*GUID*) formatted. This string is formatted as *{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}*.
 
 The following is an example of a **ContainerId** XML element.
 
@@ -35,7 +35,7 @@ The following is an example of a **ContainerId** XML element.
 
 The &lt;ContainerId&gt; XML element is required to be in the &lt;ThisDevice&gt; section of the device metadata exchange Simple Object Access Protocol (SOAP) message. The following example shows the correct placement of the &lt;ContainerId&gt; element in a metadata exchange message.
 
-**Note**   This is not a complete DPWS metadata exchange document. For more information about DPWS, refer to the [DPWS specification.](http://go.microsoft.com/fwlink/p/?linkid=142400)
+**Note**   This is not a complete DPWS metadata exchange document. For more information about DPWS, refer to the [DPWS specification.](https://go.microsoft.com/fwlink/p/?linkid=142400)
 
  
 

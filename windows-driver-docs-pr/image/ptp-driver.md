@@ -12,7 +12,7 @@ The Picture Transfer Protocol (PTP) driver enables PTP devices to support the WI
 
 This driver is written using the WIA architecture and adheres to Picture Transfer Protocol (PTP) standard. 
 
-Refer to the [ISO 15740:2013 Picture transfer protocol](http://go.microsoft.com/fwlink/p/?LinkId=517024) website for definitions of these structures.
+Refer to the [ISO 15740:2013 Picture transfer protocol](https://go.microsoft.com/fwlink/p/?LinkId=517024) website for definitions of these structures.
 
 This section covers the following topics:
 

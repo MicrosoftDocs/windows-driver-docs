@@ -34,7 +34,7 @@ Interrupts from the peripheral device travel upward through the communication pa
 
 The two blocks shown in gray in the diagram are system-supplied modules. The GPIO framework extension (GpioClx) is available starting with Windows 8. Like SerCx2, GpioClx is an extension to KMDF. GpioClx performs functions that are common to a variety of GPIO controllers. GpioClx works with a GPIO controller driver that manages all hardware-specific operations in the GPIO controller. For more information, see [GPIO Driver Support Overview](https://msdn.microsoft.com/library/windows/hardware/hh439512).
 
-## I/O request path
+## I O request path
 
 
 To transmit data to the peripheral device, the peripheral driver sends a write ([**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff546904)) request to the serial controller. To receive data from the peripheral device, the peripheral driver sends a read ([**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff546883)) request to the serial controller.

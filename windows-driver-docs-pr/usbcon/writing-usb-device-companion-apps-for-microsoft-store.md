@@ -66,9 +66,9 @@ The [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn
 ## USB samples
 
 
--   [Custom USB device access sample](http://go.microsoft.com/fwlink/p/?linkid=309716)
--   [USB CDC Control sample](http://go.microsoft.com/fwlink/p/?linkid=309716)
--   [Firmware Update USB Device sample](http://go.microsoft.com/fwlink/p/?linkid=309716)
+-   [Custom USB device access sample](https://go.microsoft.com/fwlink/p/?linkid=309716)
+-   [USB CDC Control sample](https://go.microsoft.com/fwlink/p/?linkid=309716)
+-   [Firmware Update USB Device sample](https://go.microsoft.com/fwlink/p/?linkid=309716)
 
 ## What are the limitations of the namespace?
 

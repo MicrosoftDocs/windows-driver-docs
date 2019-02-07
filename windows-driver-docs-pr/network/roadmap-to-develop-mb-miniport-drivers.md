@@ -29,7 +29,7 @@ To create an MB miniport driver, follow these steps:
 
 -   **Step 5**: Make design decisions about your MB miniport driver.
 
-    For more information, see [MB Interface Overview](mb-interface-overview.md). You can also learn more about how to develop Mobile Broadband miniport drivers by reviewing the [Mobile Broadband Driver Development](http://go.microsoft.com/fwlink/p/?linkid=144416) whitepaper.
+    For more information, see [MB Interface Overview](mb-interface-overview.md). You can also learn more about how to develop Mobile Broadband miniport drivers by reviewing the [Mobile Broadband Driver Development](https://go.microsoft.com/fwlink/p/?linkid=144416) whitepaper.
 
 -   **Step 6**: Develop, build, test, and debug your MB miniport driver.
 

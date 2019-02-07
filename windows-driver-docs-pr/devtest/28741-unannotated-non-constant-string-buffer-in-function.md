@@ -3,7 +3,9 @@ title: C28741
 description: Warning C28741 Unannotated buffer in the function.
 ms.assetid: 85F071C2-C91B-43D6-8F59-F1D1F955ECC1
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: medium 
+f1_keywords: 
+  - "C28741"
 ---
 
 # C28741

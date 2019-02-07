@@ -72,7 +72,7 @@ Frequently asked questions for OEMs who want to build Windows systems with USB T
 
     A system with USB Type-C connectors has higher power limits, it can support up to 5V, 3A, 15W.
 
-    In addition, the connector can optionally support the *power delivery* feature as defined by the [USB Power Delivery](http://go.microsoft.com/fwlink/p/?LinkID=623310) OEM . If the connector supports power delivery, a USB Type-C system can be a power source provider or a consumer and support up to 100W.
+    In addition, the connector can optionally support the *power delivery* feature as defined by the [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310) OEM . If the connector supports power delivery, a USB Type-C system can be a power source provider or a consumer and support up to 100W.
 
 -   **Supports USB dual roles**
 
@@ -86,14 +86,14 @@ No. The operating system (or any Microsoft-provided software component) plays no
 ## How does pre-OS charging with Type-C and PD work?
 
 
-Enabling pre-OS charging is owned by the OEM. You can choose to not implement [USB Power Delivery](http://go.microsoft.com/fwlink/p/?LinkID=623310), and charge at USB Type-C power levels until you boot into the operating system.
+Enabling pre-OS charging is owned by the OEM. You can choose to not implement [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310), and charge at USB Type-C power levels until you boot into the operating system.
 
 ## How can I charge the phone when it is a USB host, to enable docking scenarios like Continuum?
 
 
 Here are a few things to consider:
 
--   You must to implement [USB Power Delivery](http://go.microsoft.com/fwlink/p/?LinkID=623310), so that power and data roles can be swapped independently.
+-   You must to implement [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310), so that power and data roles can be swapped independently.
 -   Your dock’s upstream port should be implemented as a Charging UFP, defined in the USB Type-C specification. For details, see section 4.8.4, version 1.1.
 -   Your dock should request a DR\_Swap if it resolved to a DFP, or a PR\_Swap if it resolved to a UFP.
 
@@ -102,7 +102,7 @@ Here are a few things to consider:
 ## Does Windows 10 Mobile support USB billboard devices?
 
 
-Yes, if you connect the phone to a device that supports a USB Billboard, as per the [USB Device Class Definition for Billboard Devices specification](http://go.microsoft.com/fwlink/p/?linkid=620207), the user is notified. Your USB connector manager (UCM) client driver is not required to handle the notification. If your system does not recognize the alternate mode, do not enter the mode.
+Yes, if you connect the phone to a device that supports a USB Billboard, as per the [USB Device Class Definition for Billboard Devices specification](https://go.microsoft.com/fwlink/p/?linkid=620207), the user is notified. Your USB connector manager (UCM) client driver is not required to handle the notification. If your system does not recognize the alternate mode, do not enter the mode.
 
 ## Do Windows 8.1, Windows 8, Windows 7 support USB Type-C?
 
@@ -122,12 +122,12 @@ To test your implementation, follow the guidelines given in [USB Type-C manual i
 ## What is the exact condition and UI for the different errors?
 
 
-Windows 10 can show a set of USB Type-C error messages to help educate users about the limitations with different combinations of USB Type-C hardware and software. For example, the user might get "Device is charging slowly" message if the charger connected to the USB Type-C connector is not powerful enough, not compatible with the system, or is connected to a non-charging port. For more information, see [Troubleshoot messages for a USB Type-C Windows system](http://go.microsoft.com/fwlink/?LinkId=526894).
+Windows 10 can show a set of USB Type-C error messages to help educate users about the limitations with different combinations of USB Type-C hardware and software. For example, the user might get "Device is charging slowly" message if the charger connected to the USB Type-C connector is not powerful enough, not compatible with the system, or is connected to a non-charging port. For more information, see [Troubleshoot messages for a USB Type-C Windows system](https://go.microsoft.com/fwlink/?LinkId=526894).
 
 ## What happens when a non-PD port is connected to PD provider? Conversely, what happens when a PD consumer is connected to a system that is not a PD provider?
 
 
-The non-PD port attempts to charge the system by using USB Type-C current levels. For more information, see [USB 3.1 and USB Type-C specifications](http://go.microsoft.com/fwlink/p/?LinkId=699515).
+The non-PD port attempts to charge the system by using USB Type-C current levels. For more information, see [USB 3.1 and USB Type-C specifications](https://go.microsoft.com/fwlink/p/?LinkId=699515).
 
 ## What happens when Thunderbolt, SuperMHL, or PCI express, is connected to a PC that does not support those capabilities?
 
@@ -179,7 +179,7 @@ In Windows HLK for Windows 10, there are no USB Type-C specific tests. We recom
 ## What is UCSI?
 
 
-USB Type-C Connector System Software Interface (UCSI) Specification describes the capabilities of the USB Type-C Connector System software Interface (UCSI), and explains the registers and data structures, for hardware component designers, system builders, and device driver developers. Get the specification from [this site](http://go.microsoft.com/fwlink/p/?LinkId=703713).
+USB Type-C Connector System Software Interface (UCSI) Specification describes the capabilities of the USB Type-C Connector System software Interface (UCSI), and explains the registers and data structures, for hardware component designers, system builders, and device driver developers. Get the specification from [this site](https://go.microsoft.com/fwlink/p/?LinkId=703713).
 
 Microsoft provides an in-box driver with Windows, UcmUcsi.sys, that implements the features defined by the specification. This driver is intended for systems with embedded controllers.
 

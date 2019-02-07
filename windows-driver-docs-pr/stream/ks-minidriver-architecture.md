@@ -22,7 +22,7 @@ A KS filter appears through the proxy as a DirectShow filter in user mode. As su
 
 Data flows into and out of filters at connection points called [pins](ks-pins.md). A pin instance renders or captures a data stream, such as digital audio.
 
-A filter graph is a group of connected filters. A filter graph links multiple processing tasks to be performed on a stream. You can test various [filter graph configurations](filter-graph-examples.md) by using the GraphEdit tool in the Microsoft Windows Driver Kit (WDK). (For more information about GraphEdit, see the [Filter Graph Editor tool](http://go.microsoft.com/fwlink/p/?linkid=9230) website.)
+A filter graph is a group of connected filters. A filter graph links multiple processing tasks to be performed on a stream. You can test various [filter graph configurations](filter-graph-examples.md) by using the GraphEdit tool in the Microsoft Windows Driver Kit (WDK). (For more information about GraphEdit, see the [Filter Graph Editor tool](https://go.microsoft.com/fwlink/p/?linkid=9230) website.)
 
 Drivers that support [on-board clocks](ks-clocks.md) expose the clock as a file object. A minidriver can [query the clock time](https://msdn.microsoft.com/library/windows/hardware/ff566564), or alternatively [**request to be notified**](https://msdn.microsoft.com/library/windows/hardware/ff561764) when the clock reaches a certain time.
 

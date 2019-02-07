@@ -6,7 +6,7 @@ keywords:
 - network drivers WDK , NDIS
 - NDIS WDK , about NDIS
 - Network Driver Interface Specification WDK
-ms.date: 04/20/2017
+ms.date: 01/09/2019
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +28,7 @@ This section includes the following topics:
 
 [Simplified Driver Model](simplified-driver-model.md)
 
-For a description of the differences between NDIS 6.0 and earlier versions, and for detailed information about porting drivers to NDIS 6.0, see [Porting NDIS 5.x Drivers to NDIS 6.0](porting-ndis-5-x-drivers-to-ndis-6-0.md).
+For a description of the differences between NDIS 6.0 and earlier versions, and for detailed information about porting drivers to NDIS 6.0, see [Porting NDIS 5.x Drivers to NDIS 6.0](https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0).
 
 ## Related topics
 

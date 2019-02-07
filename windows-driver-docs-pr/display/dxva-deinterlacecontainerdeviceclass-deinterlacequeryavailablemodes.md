@@ -54,9 +54,9 @@ The *lpVideoDescription* parameter is passed to the driver so that the driver ca
 
 The GUIDs returned by the *pGuidsDeinterlaceModes* parameter should be returned in order of descending quality (that is, the highest quality mode should occupy the first element of the GUID array returned).
 
-All drivers should be able to support the bob mode using the existing [*bit-block transfer*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-bit-block-transfer) (blt) hardware. For more information about modes, see the [Deinterlace Modes](https://msdn.microsoft.com/library/windows/hardware/ff552704) and [Frame-Rate Conversion Modes](https://msdn.microsoft.com/library/windows/hardware/ff566449) topics.
+All drivers should be able to support the bob mode using the existing *bit-block transfer* (blt) hardware. For more information about modes, see the [Deinterlace Modes](https://msdn.microsoft.com/library/windows/hardware/ff552704) and [Frame-Rate Conversion Modes](https://msdn.microsoft.com/library/windows/hardware/ff566449) topics.
 
-The driver returns the GUIDs (modes) that it supports in response to a request from the [*VMR*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-video-mixer-renderer--vmr-). The driver responds to a call to its [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248) callback function. The driver returns the GUIDs through the **lpOutputData** member of the [**DD\_RENDERMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551693) structure to which the *lpRenderData* parameter of *DdMoCompRender* points. The **lpOutputData** member points to the [**DXVA\_DeinterlaceQueryAvailableModes**](https://msdn.microsoft.com/library/windows/hardware/ff563951) structure, which contains the array of GUIDs in the **Guids** member.
+The driver returns the GUIDs (modes) that it supports in response to a request from the *VMR*. The driver responds to a call to its [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248) callback function. The driver returns the GUIDs through the **lpOutputData** member of the [**DD\_RENDERMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551693) structure to which the *lpRenderData* parameter of *DdMoCompRender* points. The **lpOutputData** member points to the [**DXVA\_DeinterlaceQueryAvailableModes**](https://msdn.microsoft.com/library/windows/hardware/ff563951) structure, which contains the array of GUIDs in the **Guids** member.
 
 **Mapping RenderMoComp to** ***DeinterlaceQueryAvailableModes***
 
@@ -103,7 +103,7 @@ The DD\_RENDERMOCOMPDATA structure is filled as follows.
 
  
 
-After the [*VMR*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-video-mixer-renderer--vmr-) has determined the deinterlace or frame conversion modes available for a particular video format, the VMR queries the driver to obtain detailed information about the input requirements of a particular deinterlace mode and any additional video processing that might be supported on that mode. The driver returns this information from a call to its [**DeinterlaceQueryModeCaps**](dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps.md) function.
+After the *VMR* has determined the deinterlace or frame conversion modes available for a particular video format, the VMR queries the driver to obtain detailed information about the input requirements of a particular deinterlace mode and any additional video processing that might be supported on that mode. The driver returns this information from a call to its [**DeinterlaceQueryModeCaps**](dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps.md) function.
 
 ## <span id="see_also"></span>See also
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_pdev_negotiation_gg"></span><span id="DDK_PDEV_NEGOTIATION_GG"></span>
 
 
-One of the primary responsibilities of any graphics driver is to enable a [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev) during driver initialization. A PDEV is a logical representation of the physical device. This representation is defined by the driver and is typically a private data structure. Refer to [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) for more information about enabling PDEVs.
+One of the primary responsibilities of any graphics driver is to enable a *PDEV* during driver initialization. A PDEV is a logical representation of the physical device. This representation is defined by the driver and is typically a private data structure. Refer to [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) for more information about enabling PDEVs.
 
 Through the *DrvEnablePDEV* function, the driver must provide information to GDI that describes the requested device and its capabilities. One piece of important information that the driver gives GDI is the set of graphics capability flags (GCAPS\_Xxx and GCAPS2\_Xxx flags) in the **flGraphicsCaps** and **flGraphicsCaps2** members of the [**DEVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff552835) structure.
 
