@@ -11,7 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 07/31/2018
+ms.date: 01/31/2019
 ms.localizationpriority: medium
 ---
 
@@ -45,11 +45,10 @@ KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION returns stream presentation informat
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537497" data-raw-source="[&lt;strong&gt;KSAUDIO_PRESENTATION_POSITION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537497)"><strong>KSAUDIO_PRESENTATION_POSITION</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_presentation_position"><STRONG>KSAUDIO_PRESENTATION_POSITION</STRONG></a></p></td>
 </tr>
 </tbody>
 </table>
-
  
 
 The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values that describe the current cursor position in audio data stream.
