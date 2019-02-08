@@ -17,6 +17,8 @@ ms.date: 10/17/2018
 
 # DIF_SELECTBESTCOMPATDRV
 
+> [!NOTE]
+> This request was deprecated in Windows 10 version 1703 (Redstone 2). In more recent versions of Windows, this callback is no longer invoked.
 
 A DIF_SELECTBESTCOMPATDRV request allows an installer to select the best driver from the device information element's compatible driver list.
 
