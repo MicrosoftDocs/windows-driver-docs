@@ -57,6 +57,7 @@ The host may decide to abort this operation and continue/retry the Wi-Fi Direct 
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME\_COMPLETE](ndis-status-wdi-indication-p2p-send-response-action-frame-complete.md)
+
 Requirements
 ------------
 

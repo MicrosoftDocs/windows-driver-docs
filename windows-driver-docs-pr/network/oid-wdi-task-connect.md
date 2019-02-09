@@ -64,6 +64,7 @@ The connection parameters must not have MFPEnabled and HostFIPSModeEnabled both 
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_RESULT](ndis-status-wdi-indication-association-result.md)
+
 Requirements
 ------------
 

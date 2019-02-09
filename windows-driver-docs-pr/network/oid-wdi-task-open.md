@@ -29,6 +29,7 @@ None
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_OPEN\_COMPLETE](ndis-status-wdi-indication-open-complete.md)
+
 Requirements
 ------------
 
