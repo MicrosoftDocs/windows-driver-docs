@@ -18,7 +18,7 @@ This topic contains information about earlier versions of the Windows Driver Kit
 The Windows Driver Kit (WDK) is used to develop, test, and deploy
 Windows drivers. To develop drivers, use the latest public versions of
 the Windows Driver Kit (WDK) and tools, available for download on
-Download the Windows Driver Kit (WDK).
+[Download the Windows Driver Kit (WDK)](download-the-wdk.md).
 
 This topic contains information about earlier versions of the WDK, the
 Enterprise WDK (EWDK), and additional downloads for support purposes. To
@@ -52,9 +52,9 @@ To develop drivers for ARM/ARM64, choose **Individual components** and
 under **Compilers, build tools, and runtimes** select **Visual C++
 compilers and libraries for ARM/ARM64**.
 
-#### Install Windows SDK for Windows 10, version 1703
+### Install Windows SDK for Windows 10, version 1703
 
--   Download the Windows SDK for Windows 10, version 1703
+For systems that run Windows 10, version 1703, also download and install the Windows SDK: [Windows SDK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkID=845298).
 
 
 ## Step 2: Install the WDK
@@ -63,9 +63,10 @@ The WDK is integrated with Visual Studio and Debugging Tools for Windows
 (WinDbg). This integrated environment gives you the tools you need to
 develop, build, package, deploy, test, and debug drivers.
 
-[!Note] Starting with Windows 10, version 1709, installing the WDK
-will by default install the WDK extensions for Visual Studio. These
-extensions are required for integration of the WDK with Visual Studio.
+> [!Note]
+> Starting with Windows 10, version 1709, installing the WDK
+> will by default install the WDK extensions for Visual Studio. These
+> extensions are required for integration of the WDK with Visual Studio.
 
 | Versions of Windows      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
@@ -100,6 +101,26 @@ failures using the kernel debugger.
 -   Download the Remote Debugging client (English only)
 
 
+## Optional: Install the EWDK
+
+The EWDK is a standalone, self-contained, command-line environment for
+building drivers and basic Win32 test applications. It includes the
+Visual Studio Build Tools, the SDK, and the WDK. This environment
+doesn't include all the features available in Visual Studio, such as
+the integrated development environment (IDE).
+
+For more information about the EWDK, see [Using the Enterprise WDK 10](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/using-the-enterprise-wdk).
+
+| Versions of Windows               | EWDK                              |
+|-----------------------------------|-----------------------------------|
+| Windows 10, version 1803          | [EWDK for Windows 10, version 1803](https://developer.microsoft.com/windows/hardware/license-terms-EWDK) |
+| Windows 10, version 1709          | [EWDK for Visual Studio with Build Tools 15.6](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-6) (Recommended) <br/>[EWDK for Visual Studio with Build Tools 15.4](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4) <br/>[EWDK for Visual Studio with Build Tools 15.2](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709) |
+| Windows 10, version 1703          | [EWDK for Windows 10, version 1703](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1703) |
+
+> [!Note]
+> Starting in Windows 10 version 1709, the EWDK is ISO-based. To get started, download and mount the ISO, then run **LaunchBuildEnv**.
+
+
 ## Standalone tools for debugging Windows XP and Windows Vista
 
 If you're debugging Windows XP, Windows Server 2003, Windows Vista, or
@@ -108,7 +129,8 @@ Debugging Tools for Windows), you need to use the Windows 7 release of
 the debugging tools. It's included in the SDK for Windows 7 and .NET
 Framework 4.0.
 
-> [!IMPORTANT] Newer versions of the Visual C++ 2010 Redistributable
+> [!IMPORTANT]
+> Newer versions of the Visual C++ 2010 Redistributable
 > can cause issues when you install the SDK for Windows 7. For more
 > information, see support for the Windows SDK.
 
@@ -120,25 +142,6 @@ To install the Debugging Tools for Windows as a standalone component,
 start the SDK installer, and in the installation wizard, select
 **Debugging Tools for Windows**, and clear all other components.
 
-
-## Optional: Install the EWDK
-
-The EWDK is a standalone, self-contained, command-line environment for
-building drivers and basic Win32 test applications. It includes the
-Visual Studio Build Tools, the SDK, and the WDK. This environment
-doesn't include all the features available in Visual Studio, such as
-the integrated development environment (IDE).
-
-For more information about the EWDK, see Using the Enterprise WDK 10.
-
-| Versions of Windows               | EWDK                              |
-|-----------------------------------|-----------------------------------|
-| Windows 10, version 1803          | [EWDK for Windows 10, version 1803](https://developer.microsoft.com/windows/hardware/license-terms-EWDK) |
-| Windows 10, version 1709          | [EWDK for Visual Studio with Build Tools 15.6](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-6) (Recommended) <br/>[EWDK for Visual Studio with Build Tools 15.4](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4) <br/>[EWDK for Visual Studio with Build Tools 15.2](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709) |
-| Windows 10, version 1703          | [EWDK for Windows 10, version 1703](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1703) |
-
-> [!Note]
-> Starting in Windows 10 version 1709, the EWDK is ISO-based. To get started, download and mount the ISO, then run **LaunchBuildEnv**.
 
 
 <!-- Old content follows...
