@@ -58,7 +58,7 @@ compilers and libraries for ARM/ARM64**.
 ### Install Windows SDK for Windows 10, version 1703
 
 For systems that run Windows 10, version 1703, also download and install the Windows SDK:
-[Windows SDK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkID=845298).
+[Windows SDK for Windows 10.0.15063.468](https://go.microsoft.com/fwlink/p/?LinkID=845298).
 
 
 ## Step 2: Install the WDK
@@ -122,7 +122,7 @@ For more information about the EWDK, see
 | Windows 10, version 1703          | [EWDK for Windows 10, version 1703](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1703) |
 
 > [!Note]
-> Starting in Windows 10 version 1709, the EWDK is ISO-based. To get started, download and mount the ISO, then run **LaunchBuildEnv**.
+> Starting in Windows 10 version 1709, the EWDK is ISO-based. To get started, download and mount the ISO, and then run **LaunchBuildEnv**.
 
 
 ## Standalone tools for debugging Windows XP and Windows Vista
@@ -134,9 +134,9 @@ the debugging tools. It's included in the SDK for Windows 7 and .NET
 Framework 4.0.
 
 > [!IMPORTANT]
-> Newer versions of the Visual C++ 2010 Redistributable
-> can cause issues when you install the SDK for Windows 7. For more
-> information, see support for the Windows SDK.
+> Newer versions of the Visual C++ 2010 Redistributable can cause
+> issues when you install the SDK for Windows 7. For more information, see
+> [Windows SDK Fails to Install with Return Code 5100](https://support.microsoft.com/en-us/help/2717426/windows-sdk-fails-to-install-with-return-code-5100) on Microsoft Support.
 
 Get the standalone debugging tools for Windows XP by first downloading
 the Windows 7 SDK:
