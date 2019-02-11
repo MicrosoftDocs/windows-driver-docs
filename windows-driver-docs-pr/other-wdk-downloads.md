@@ -86,19 +86,19 @@ develop, build, package, deploy, test, and debug drivers.
 Debugging Tools for Windows (WinDbg) are included in the WDK 8.1 Update,
 but you can also install them as a standalone component from the Windows
 8.1 SDK. In the installation wizard, select Debugging Tools for Windows,
-and clear all other components.
-
--   Get (WinDbg) as part of Windows 8.1 SDK (English only)
+and clear all other components. Get WinDbg as part of Windows 8.1 SDK,
+which you can download from [Windows SDK and emulator archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive).
+<!--edit:  Preceding link for the Windows 8.1 SDK is a change and update for an old, dead link. -->
 
 #### Remote Debugging client for Windows 8.1
 
 With the Windows Remote Debugging client, you can work remotely with
 developers from Microsoft, over the internet, to debug kernel-mode
-failures using the kernel debugger.
+failures using the kernel debugger. For more information about remote debugging,
+see [Remote Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/remote-debugging).
 
--   Learn more and prepare for remote debugging.
-
--   Download the Remote Debugging client (English only)
+-   [Download the Remote Debugging client](https://go.microsoft.com/fwlink/p/?LinkId=316921) (English only)
+<!--edit: Preceding link for the Remote Debugging client for Windows 8.1 is dead, and I haven't yet found a working replacement, unless one of these applies: https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging?view=vs-2017#download-and-install-the-remote-tools -->
 
 
 ## Optional: Install the EWDK
