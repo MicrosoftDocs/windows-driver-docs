@@ -3642,8 +3642,6 @@
         href: -dreg.md
       - name: "!dt"
         href: -dt.md
-      - name: "!evlog"
-        href: -evlog.md
       - name: "!findstack"
         href: -findstack.md
       - name: "!gatom"
