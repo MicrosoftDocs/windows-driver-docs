@@ -15,47 +15,27 @@ OID_WDI_TASK_REQUEST_FTM is issued to the LE to initiate Fine Time Measurement (
 
 This task should be completed as soon as all the FTM sessions with the targets are completed, the timeout has expired, or the host has aborted the operation.
 
-When this task is completed, the driver should send an [NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE]() status indication that contains a list of FTM responses for each of the targets requested.
+When this task is completed, the driver should send an [NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE](ndis-status-wdi-indication-request-ftm-complete.md) status indication that contains a list of FTM responses for each of the targets requested.
 
 After this task is completed, the port should be in a good state and should be ready to process a new FTM request, because the host might immediately re-attempt the task with a new set of targets.
 
-For each target, it is indicated if an LCI report should be requested. If indicated, the LE should request one from the target.
-
-| Object | Abort capable | Default priority (host driver policy) | Normal execution time (seconds) |
-|--------|---------------|---------------------------------------|---------------------------------|
-| Port   | No            | 2                                     | 1                               |
-
- 
+For each target, it is indicated if an LCI report should be requested. If indicated, the LE should request one from the target. 
 
 ## Task parameters
 
-
+| TLV | Multiple TLV instances allowed | Optional | Description |
+| --- | --- | --- | --- |
+| [WDI_TLV_FTM_REQUEST_TIMEOUT](wdi-tlv-ftm-request-timeout.md) |   |   | The maximum time, in milliseconds, to complete the FTM. The timeout is set to 150 ms multiplied by the number of targets. |
+| [WDI_TLV_TARGET_BSS_ENTRY](wdi-tlv-target-bss-entry.md) | X |   | A list of the BSS targets with which FTM procedures should be completed. |
 
 ## Task completion indication
 
+[NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE](ndis-status-wdi-indication-request-ftm-complete.md)
 
-[NDIS\_STATUS\_WDI\_INDICATION\_STOP\_AP\_COMPLETE](ndis-status-wdi-indication-stop-ap-complete.md)
+## Requirements
 
-Requirements
-------------
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 10, version 1903</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2016</p></td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Dot11wdi.h</td>
-</tr>
-</tbody>
-</table>
+|   |   |
+| --- | --- |
+| Minimum supported client | Windows 19, version 1903 |
+| Minimum supported server | Windows Server 2016 |
+| Header | Dot11wdi.h |
