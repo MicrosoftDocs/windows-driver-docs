@@ -2,7 +2,7 @@
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
 ms.assetid: DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB
-ms.date: 01/18/2019
+ms.date: 01/30/2019
 ms.localizationpriority: medium
 ---
 
@@ -274,15 +274,15 @@ The following table shows the code and name of each bug check code.
 | 0x0000011B | [**DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK**](bug-check-0x11b---driver-returned-holding-cancel-lock.md)                                           |
 | 0x0000011C | [**ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE**](bug-check-0x11c--attempted-write-to-cm-protected-storage.md)                                   |
 | 0x0000011D | [**EVENT\_TRACING\_FATAL\_ERROR**](bug-check-0x11d---event-tracing-fatal-error.md)                                                                |
-| 0x0000011E | [**TOO\_MANY\_RECURSIVE\_FAULTS**](bug-check--0x11e--too-many-recursive-faults.md)                                                                |
-| 0x0000011F | [**INVALID\_DRIVER\_HANDLE**](bug-check--0x11f--invalid-driver-handle.md)                                                                         |
-| 0x00000120 | [**BITLOCKER\_FATAL\_ERROR**](bug-check--0x120--bitlocker-fatal-error-.md)                                                                        |
+| 0x0000011E | [**TOO\_MANY\_RECURSIVE\_FAULTS**](bug-check-0x11e--too-many-recursive-faults.md)                                                                |
+| 0x0000011F | [**INVALID\_DRIVER\_HANDLE**](bug-check-0x11f--invalid-driver-handle.md)                                                                         |
+| 0x00000120 | [**BITLOCKER\_FATAL\_ERROR**](bug-check-0x120--bitlocker-fatal-error-.md)                                                                        |
 | 0x00000121 | [**DRIVER\_VIOLATION**](bug-check-0x121---driver-violation.md)                                                                                    |
 | 0x00000122 | [**WHEA\_INTERNAL\_ERROR**](bug-check-0x122---whea-internal-error.md)                                                                             |
-| 0x00000123 | [**CRYPTO\_SELF\_TEST\_FAILURE**](bug-check--0x123--crypto-self-test-failure-.md)                                                                 |
+| 0x00000123 | [**CRYPTO\_SELF\_TEST\_FAILURE**](bug-check-0x123--crypto-self-test-failure-.md)                                                                 |
 | 0x00000124 | [**WHEA\_UNCORRECTABLE\_ERROR**](bug-check-0x124---whea-uncorrectable-error.md)                                                                   |
-| 0x00000125 | [**NMR\_INVALID\_STATE**](bug-check--0x125--nmr-invalid-state.md)                                                                                 |
-| 0x00000126 | [**NETIO\_INVALID\_POOL\_CALLER**](bug-check--0x126--netio-invalid-pool-caller.md)                                                                |
+| 0x00000125 | [**NMR\_INVALID\_STATE**](bug-check-0x125--nmr-invalid-state.md)                                                                                 |
+| 0x00000126 | [**NETIO\_INVALID\_POOL\_CALLER**](bug-check-0x126--netio-invalid-pool-caller.md)                                                                |
 | 0x00000127 | [**PAGE\_NOT\_ZERO**](bug-check-0x127---page-not-zero.md)                                                                                         |
 | 0x00000128 | [**WORKER\_THREAD\_RETURNED\_WITH\_BAD\_IO\_PRIORITY**](bug-check-0x128--worker-thread-returned-with-bad-io-priority.md)                          |
 | 0x00000129 | [**WORKER\_THREAD\_RETURNED\_WITH\_BAD\_PAGING\_IO\_PRIORITY**](bug-check-0x129--worker-thread-returned-with-bad-paging-io-priority.md)           |
@@ -301,7 +301,7 @@ The following table shows the code and name of each bug check code.
 | 0x00000136 | [**VHD\_BOOT\_HOST\_VOLUME\_NOT\_ENOUGH\_SPACE**](bug-check-0x136--vhd-boot-host-volume-not-enough-space.md)                                      |
 | 0x00000137 | [**WIN32K\_HANDLE\_MANAGER**](bug-check-0x137--win32k-handle-manager.md)                                                                          |
 | 0x00000138 | [**GPIO\_CONTROLLER\_DRIVER\_ERROR**](bug-check-0x138-gpio-controller-driver-error.md)                                                            |
-| 0x00000139 | [**KERNEL\_SECURITY\_CHECK\_FAILURE**](bug-check---bug-check-0x139-kernel-security-check-failure.md)                                              |
+| 0x00000139 | [**KERNEL\_SECURITY\_CHECK\_FAILURE**](bug-check-0x139--kernel-security-check-failure.md)                                              |
 | 0x0000013A | [**KERNEL\_MODE\_HEAP\_CORRUPTION**](bug-check-0x13a--kernel-mode-heap-corruption.md)                                                             |
 | 0x0000013B | [**PASSIVE\_INTERRUPT\_ERROR**](bug-check-0x13b--passive-interrupt-error.md)                                                                      |
 | 0x0000013C | [**INVALID\_IO\_BOOST\_STATE**](bug-check-0x13c--invalid-io-boost-state.md)                                                                       |
@@ -420,7 +420,7 @@ The following table shows the code and name of each bug check code.
 | 0x00000356 | [**XBOX\_ERACTRL\_CS\_TIMEOUT**](bug-check-0x356--xbox-eractrl-cs-timeout.md)                                                                     |
 | 0x00000BFE | [**BC\_BLUETOOTH\_VERIFIER\_FAULT**](bug-check-0xbfe--bc-bluetooth-verifier-fault.md)                                                             |
 | 0x00000BFF | [**BC\_BTHMINI\_VERIFIER\_FAULT**](bug-check-0xbff--bc-bthmini-verifier-fault.md)                                                                 |
-| 0x00020001 | [**HYPERVISOR\_ERROR**](bug-check--0x20001--hypervisor-error.md)                                                                                  |
+| 0x00020001 | [**HYPERVISOR\_ERROR**](bug-check-0x20001--hypervisor-error.md)                                                                                  |
 | 0x1000007E | [**SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED\_M**](bug-check-0x1000007e--system-thread-exception-not-handled-m.md)                                  |
 | 0x1000007F | [**UNEXPECTED\_KERNEL\_MODE\_TRAP\_M**](bug-check-0x1000007f--unexpected-kernel-mode-trap-m.md)                                                   |
 | 0x1000008E | [**KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED\_M**](bug-check-0x1000008e--kernel-mode-exception-not-handled-m.md)                                      |
