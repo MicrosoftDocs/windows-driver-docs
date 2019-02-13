@@ -33,7 +33,7 @@ The USER\_MODE\_HEALTH\_MONITOR bug check has a value of 0x0000009E. This bug ch
 
 **VALUES** 
 
-```
+```text
         0  : WatchdogSourceDefault
               Source was not specified
         1  : WatchdogSourceRhsCleanup
