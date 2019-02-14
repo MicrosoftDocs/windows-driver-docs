@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 As a Hardware Dev Center dashboard administrator, you’re responsible for keeping your digital certificate information up to date. When the original certificate expires, you’ll need to get a new certificate and upload a new file signed with your new digital certificate. 
 
-Hardware Dev Center supports multiple certificates be associated with a single account.  If you want to add additional certificates using this same process.
+Hardware Dev Center supports multiple certificates be associated with a single account.  If you want to add additional certificates use this same process.
 
 If you’re registering your company on dashboard for the first time, see [Establish a new company](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/establish-a-new-company).
 
