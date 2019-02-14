@@ -30,11 +30,10 @@ The media type for a device. For more information about the media type of the mi
 The physical media type for a device. For more information about the physical media type of the miniport adapter, see [OID\_GEN\_PHYSICAL\_MEDIUM](https://msdn.microsoft.com/library/windows/hardware/ff569621).
 
 <a href="" id="-ndisdevicetype-------"></a>**\*NdisDeviceType**   
-The type of the device. The default value is zero, which indicates a standard networking device that connects to a network. Set **\*NdisDeviceType** to NDIS\_DEVICE\_TYPE\_ENDPOINT (1) if this device is an endpoint device and is not a true network interface that connects to a network. For example, you must specify NDIS\_DEVICE\_TYPE\_ENDPOINT for devices such as smart phones that use a networking infrastructure to communicate to the local computer system but do not provide connectivity to an external network.
+The type of the device. The default value is zero, which indicates a standard networking device that connects to a network. Set **\*NdisDeviceType** to NDIS\_DEVICE\_TYPE\_ENDPOINT (1) if this device is an endpoint device and is not a true network interface that connects to a network. For example, you must specify NDIS\_DEVICE\_TYPE\_ENDPOINT for devices such as smart phones that use a networking infrastructure to communicate to the local computer system but do not provide connectivity to an external network; On the other hand, you must **\*not\*** set this keyword for virtual adapter such like VPN interface as they actually provides connectivity to an external network.
 
 **Note**  Windows Vista automatically identifies and monitors the networks a computer connects to. If the NDIS\_DEVICE\_TYPE\_ENDPOINT flag is set, the device is an endpoint device and is not a connection to a true external network. Consequently, Windows ignores the endpoint device when it identifies networks. The Network Awareness APIs indicate that the device does not connect the computer to a network. For end users in this situation, the Network and Sharing Center and the network icon in the notification area do not show the NDIS endpoint device as connected. However, the connection is shown in the Network Connections Folder.
 
-**Note** A VPN adapter should set **\*NdisDeviceType** to 0. If it set **\*NdisDeviceType** to NDIS\_DEVICE\_TYPE\_ENDPOINT (1), a UWP is prevented from sending a packet to the VPN adapter.
 
  
 
