@@ -11,10 +11,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CD-ROM Drivers
-
-
-When the operating system enumerates a CD-ROM device, it loads a native CD-ROM class driver (*Cdrom.sys*). This driver exposes an I/O control request (IOCTL) interface that is described in the [CD-ROM I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff551394) section.
+# CD-ROM drivers
 
 The following topics explain some of the key features of the IOCTL interface:
 
@@ -26,10 +23,6 @@ The following topics explain some of the key features of the IOCTL interface:
 
 [ACLs and the Device Stack](acls-and-the-device-stack.md)
 
- 
+When the operating system enumerates a CD-ROM device, it loads a native CD-ROM class driver (*Cdrom.sys*). This driver exposes an I/O control request (IOCTL) interface. All public I/O control codes for drivers of CD-ROM devices use buffered I/O. Consequently, the input or output data for these requests is at Irp->AssociatedIrp.SystemBuffer. For more info, see [CD-ROM I/O control codes](cd-rom-io-control-codes.md)
 
- 
-
-
-
-
+Class drivers for CD-ROM devices handle additional public I/O control codes, along with those described in this section. For more information about requirements for storage class drivers, see [General Storage I/O Control Codes](general-storage-io-control-codes.md).
