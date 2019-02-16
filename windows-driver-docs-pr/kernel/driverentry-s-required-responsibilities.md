@@ -27,7 +27,7 @@ The required, ordered responsibilities of a [**DriverEntry**](https://msdn.micro
         :
     ```
 
-    Additional standard routines, such as ISRs or [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routines, are specified by calling system support routines. For more information, see the descriptions of individual [standard driver routines](https://msdn.microsoft.com/library/windows/hardware/ff563842).
+    Additional standard routines, such as ISRs or [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routines, are specified by calling system support routines. For more information, see the descriptions of individual [standard driver routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-standard-driver-routines).
 
 2.  Create and/or initialize various driver-wide objects, types, or resources the driver uses. Note that most standard routines use objects on a per-device basis, so drivers should set up such objects in their *AddDevice* routines or after receiving an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request.
 

@@ -2228,23 +2228,23 @@
     - name: "Bug Check 0x11D:  EVENT_TRACING_FATAL_ERROR"
       href: bug-check-0x11d---event-tracing-fatal-error.md
     - name: "Bug Check 0x11E: TOO_MANY_RECURSIVE_FAULTS"
-      href: bug-check--0x11e--too-many-recursive-faults.md
+      href: bug-check-0x11e--too-many-recursive-faults.md
     - name: "Bug Check 0x11F: INVALID_DRIVER_HANDLE"
-      href: bug-check--0x11f--invalid-driver-handle.md
+      href: bug-check-0x11f--invalid-driver-handle.md
     - name: "Bug Check 0x120: BITLOCKER_FATAL_ERROR"
-      href: bug-check--0x120--bitlocker-fatal-error-.md
+      href: bug-check-0x120--bitlocker-fatal-error-.md
     - name: "Bug Check 0x121:  DRIVER_VIOLATION"
       href: bug-check-0x121---driver-violation.md
     - name: "Bug Check 0x122:  WHEA_INTERNAL_ERROR"
       href: bug-check-0x122---whea-internal-error.md
     - name: "Bug Check 0x123: CRYPTO_SELF_TEST_FAILURE"
-      href: bug-check--0x123--crypto-self-test-failure-.md
+      href: bug-check-0x123--crypto-self-test-failure-.md
     - name: "Bug Check 0x124:  WHEA_UNCORRECTABLE_ERROR"
       href: bug-check-0x124---whea-uncorrectable-error.md
     - name: "Bug Check 0x125: NMR_INVALID_STATE"
-      href: bug-check--0x125--nmr-invalid-state.md
+      href: bug-check-0x125--nmr-invalid-state.md
     - name: "Bug Check 0x126: NETIO_INVALID_POOL_CALLER"
-      href: bug-check--0x126--netio-invalid-pool-caller.md
+      href: bug-check-0x126--netio-invalid-pool-caller.md
     - name: "Bug Check 0x127:  PAGE_NOT_ZERO"
       href: bug-check-0x127---page-not-zero.md
     - name: "Bug Check 0x128: WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY"
@@ -2282,7 +2282,7 @@
     - name: "Bug Check 0x138: GPIO_CONTROLLER_DRIVER_ERROR"
       href: bug-check-0x138-gpio-controller-driver-error.md
     - name: "Bug Check 0x139: KERNEL_SECURITY_CHECK_FAILURE"
-      href: bug-check---bug-check-0x139-kernel-security-check-failure.md
+      href: bug-check-0x139--kernel-security-check-failure.md
     - name: "Bug Check 0x13A: KERNEL_MODE_HEAP_CORRUPTION"
       href: bug-check-0x13a--kernel-mode-heap-corruption.md
     - name: "Bug Check 0x13B: PASSIVE_INTERRUPT_ERROR"
@@ -2444,7 +2444,7 @@
     - name: "Bug Check 0xBFF: BC_BTHMINI_VERIFIER_FAULT"
       href: bug-check-0xbff--bc-bthmini-verifier-fault.md
     - name: "Bug Check 0x20001: HYPERVISOR_ERROR"
-      href: bug-check--0x20001--hypervisor-error.md
+      href: bug-check-0x20001--hypervisor-error.md
     - name: "Bug Check 0x1000007E: SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M"
       href: bug-check-0x1000007e--system-thread-exception-not-handled-m.md
     - name: "Bug Check 0x1000007F: UNEXPECTED_KERNEL_MODE_TRAP_M"
@@ -3642,8 +3642,6 @@
         href: -dreg.md
       - name: "!dt"
         href: -dt.md
-      - name: "!evlog"
-        href: -evlog.md
       - name: "!findstack"
         href: -findstack.md
       - name: "!gatom"
