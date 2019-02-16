@@ -14,10 +14,10 @@ Miniport drivers send the **NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE** st
 
 ## Payload data
 
-| Type | Multiple TLV instances allowed | Optional | Description |
-| --- | --- | --- | --- |
-| WDI_STATUS |   |   | A field in the header. The general completion status of the event.
-| [WDI_TLV_FTM_RESPONSE](wdi-tlv-ftm-response.md) | X |   | A list of FTM responses for each target. |
+| Type | TLV | Multiple TLV instances allowed | Optional | Description |
+| --- | --- |--- | --- | --- |
+| WDI_STATUS | A field in the header.  |   | The general completion status of the event. |
+| [WDI_TLV_FTM_RESPONSE](wdi-tlv-ftm-response.md) | Multiple TLV\<WDI_TLV_FTM_RESPONSE> | X |   | A list of FTM responses for each target. |
 
 ## Requirements
 

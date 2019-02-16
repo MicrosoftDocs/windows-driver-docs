@@ -46,6 +46,7 @@ If the adapter has a virtualized port operating on a non-social channel, the por
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 

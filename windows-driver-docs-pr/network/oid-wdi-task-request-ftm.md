@@ -19,14 +19,14 @@ When this task is completed, the driver should send an [NDIS_STATUS_WDI_INDICATI
 
 After this task is completed, the port should be in a good state and should be ready to process a new FTM request, because the host might immediately re-attempt the task with a new set of targets.
 
-For each target, it is indicated if an LCI report should be requested. If indicated, the LE should request one from the target. 
+For each target, it is indicated if a Location Configuration Information (LCI) report should be requested. If indicated, the LE should request one from the target. 
 
 ## Task parameters
 
-| Type | TLV | Multiple TLV instances allowed | Optional | Description |
+| TLV | Type | Multiple TLV instances allowed | Optional | Description |
 | --- | --- | --- | --- | --- |
-| UINT32 | WDI_TLV_FTM_REQUEST_TIMEOUT |   |   | The maximum time, in milliseconds, to complete the FTM. The timeout is set to 150 ms multiplied by the number of targets. |
-| WDI_FTM_TARGET_BSS_ENTRY | [WDI_TLV_TARGET_BSS_ENTRY](wdi-tlv-target-bss-entry.md) | X |   | A list of the BSS targets with which FTM procedures should be completed. |
+| [WDI_TLV_FTM_REQUEST_TIMEOUT](wdi-tlv-ftm-request-timeout.md) | UINT32 |   |   | The maximum time, in milliseconds, to complete the FTM. The timeout is set to 150 ms multiplied by the number of targets. |
+| [WDI_TLV_FTM_TARGET_BSS_ENTRY](wdi-tlv-ftm-target-bss-entry.md) | WDI_FTM_TARGET_BSS_ENTRY | X |   | A list of the BSS targets with which FTM procedures should be completed. |
 
 ## Task completion indication
 

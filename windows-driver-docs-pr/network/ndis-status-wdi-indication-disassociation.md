@@ -26,19 +26,11 @@ Before the disassociation indication is sent, the port must clear the state asso
 ## Payload data
 
 
-Type
-Multiple TLV instances allowed
-Optional
-Description
-[**WDI\_TLV\_DISASSOCIATION\_INDICATION\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926292)
-The disassociation indication parameters.
-[**WDI\_TLV\_DISCONNECT\_DEAUTH\_FRAME**](https://msdn.microsoft.com/library/windows/hardware/dn926296)
-X
-The deauthentication frame that was received. This does not include the 802.11 MAC header.
-[**WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME**](https://msdn.microsoft.com/library/windows/hardware/dn926298)
-X
-The disassociation frame that was received. This does not include the 802.11 MAC header.
- 
+| Type | Multiple TLV instances allowed | Optional | Description |
+| --- | --- | --- | --- |
+| [**WDI\_TLV\_DISASSOCIATION\_INDICATION\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926292) |   |   | The disassociation indication parameters. |
+| [**WDI\_TLV\_DISCONNECT\_DEAUTH\_FRAME**](https://msdn.microsoft.com/library/windows/hardware/dn926296) |   | X | The deauthentication frame that was received. This does not include the 802.11 MAC header. |
+| [**WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME**](https://msdn.microsoft.com/library/windows/hardware/dn926298) |   | X | The disassociation frame that was received. This does not include the 802.11 MAC header. | 
 
 Requirements
 ------------

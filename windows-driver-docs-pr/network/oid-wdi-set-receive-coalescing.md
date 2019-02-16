@@ -34,6 +34,7 @@ When the host receives a request from the OS to set packet coalescing filters, i
 
 
 No additional parameters. The data in the header is sufficient.
+
 Requirements
 ------------
 
