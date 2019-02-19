@@ -22,11 +22,10 @@ For info about the latest **released** versions of the WDK, see [Download the Wi
 
 ### 1. Install Visual Studio
 
-- The WDK now supports Visual Studio 2017.  All editions are supported.  The WDK no longer supports Visual Studio 2015. 
-- Download from [https://www.visualstudio.com/downloads/](https://www.visualstudio.com/downloads/). 
+- The WDK now supports Visual Studio 2019.  All editions are supported.  The WDK no longer supports Visual Studio 2017. 
+- Download from [https://visualstudio.microsoft.com/vs/preview/](https://visualstudio.microsoft.com/vs/preview/). 
 - Select workload: Development with C++. 
-- ARM: To build ARM drivers you must additionally install the component: Individual components -> Compilers, build tools, and runtimes -> Visual C++ compilers and libraries for ARM. 
-- ARM64: Currently not supported. 
+- ARM/ARM64: To build ARM/ARM64 drivers you must additionally install the component: Individual components -> Compilers, build tools, and runtimes -> Visual C++ compilers and libraries for ARM or ARM64
 
 ### 2. Disable strong name validation
 
@@ -51,7 +50,7 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\StrongName\Verificatio
 
 ## Install Enterprise WDK (EWDK) Insider Preview
 
-The EWDK is a standalone self-contained command-line environment for building drivers.  It includes Build Tools for Visual Studio 2017, the SDK, the WDK and support for ARM64 driver development. See more at [Installing the Enterprise WDK](https://docs.microsoft.com/windows-hardware/drivers/develop/installing-the-enterprise-wdk). 
+The EWDK is a standalone self-contained command-line environment for building drivers.  It includes Build Tools for Visual Studio 2019, the SDK, the WDK and support for ARM64 driver development. See more at [Installing the Enterprise WDK](https://docs.microsoft.com/windows-hardware/drivers/develop/installing-the-enterprise-wdk). 
 
 [Get the Enterprise Windows Driver Kit (EWDK) Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
 
@@ -59,15 +58,15 @@ To get started mount the ISO and click LaunchBuildEnv.
 
 ## Run-time requirements for the WDK and the EWDK
 
-The WDK requires Visual Studio. For more info about system requirements for Visual Studio, see [Visual Studio 2017 System Requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
+The WDK requires Visual Studio. For more info about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](https://docs.microsoft.com/en-us/visualstudio/releases/2019/system-requirements).
 
-In addition, the EWDK requires .NET 4.6.1. For more info about what .NET runs on, see [.NET Framework system requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
+In addition, the EWDK requires .NET 4.7.2. For more info about what .NET runs on, see [.NET Framework system requirements](https://docs.microsoft.com/en-us/visualstudio/releases/2019/system-requirements).
 
 You can use the WDK Insider Preview and the EWDK Insider Preview to develop drivers for these operating systems: 
 
 |Client OS|Server OS|
 |---|---|
-|Windows 10|Windows Server 2016|
+|Windows 10|Windows Server 2019 & Windows Server 2016|
 |Windows 8.1|Windows Server 2012 R2|
 |Windows 8|Windows Server 2012|
 |Windows 7|Windows Server 2008 R2 SP1|
