@@ -3073,6 +3073,16 @@
         href: wdi-tlv-ft-rsnie.md
       - name: "WDI_TLV_FT_SNONCE"
         href: wdi-tlv-ft-snonce.md
+      - name: WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS
+        href: wdi-tlv-ftm-number-of-measurements.md
+      - name: WDI_TLV_FTM_REQUEST_TIMEOUT
+        href: wdi-tlv-ftm-request-timeout.md
+      - name: WDI_TLV_FTM_RESPONSE
+        href: wdi-tlv-ftm-response.md
+      - name: WDI_TLV_FTM_RESPONSE_STATUS
+        href: wdi-tlv-ftm-response-status.md
+      - name: WDI_TLV_FTM_TARGET_BSS_ENTRY
+        href: wdi-tlv-ftm-target-bss-entry.md
       - name: "WDI_TLV_GET_AUTO_POWER_SAVE"
         href: wdi-tlv-get-auto-power-save.md
       - name: "WDI_TLV_HESSID"
@@ -3117,6 +3127,10 @@
         href: wdi-tlv-ipv6-checksum-offload.md
       - name: "WDI_TLV_IPV6_LSO_V2"
         href: wdi-tlv-ipv6-lso-v2.md
+      - name: WDI_TLV_LCI_REPORT_BODY
+        href: wdi-tlv-lci-report-body.md
+      - name: WDI_TLV_LCI_REPORT_STATUS
+        href: wdi-tlv-lci-report-status.md
       - name: "WDI_TLV_LINK_QUALITY_BAR_MAP"
         href: wdi-tlv-link-quality-bar-map.md
       - name: "WDI_TLV_LINK_STATE_CHANGE_PARAMETERS"
@@ -3369,10 +3383,46 @@
         href: wdi-tlv-receive-coalescing-config.md
       - name: "WDI_TLV_RECEIVE_FILTER_FIELD"
         href: wdi-tlv-receive-filter-field.md
+      - name: WDI_TLV_REQUEST_LCI_REPORT
+        href: wdi-tlv-request-lci-report.md
+      - name: WDI_TLV_RETRY_AFTER
+        href: wdi-tlv-retry-after.md
       - name: "WDI_TLV_ROAMING_NEEDED_PARAMETERS"
         href: wdi-tlv-roaming-needed-parameters.md
       - name: "WDI_TLV_RSN_KEY_INFO"
         href: wdi-tlv-rsn-key-info.md
+      - name: WDI_TLV_RTT
+        href: wdi-tlv-rtt.md
+      - name: WDI_TLV_RTT_ACCURACY
+        href: wdi-tlv-rtt-accuracy.md
+      - name: WDI_TLV_RTT_VARIANCE
+        href: wdi-tlv-rtt-variance.md
+      - name: WDI_TLV_SAE_ANTI_CLOGGING_TOKEN
+        href: wdi-tlv-sae-anti-clogging-token.md
+      - name: WDI_TLV_SAE_COMMIT_REQUEST
+        href: wdi-tlv-sae-commit-request.md
+      - name: WDI_TLV_SAE_COMMIT_RESPONSE
+        href: wdi-tlv-sae-commit-response.md
+      - name: WDI_TLV_SAE_CONFIRM
+        href: wdi-tlv-sae-confirm.md
+      - name: WDI_TLV_SAE_CONFIRM_REQUEST
+        href: wdi-tlv-sae-confirm-request.md
+      - name: WDI_TLV_SAE_CONFIRM_RESPONSE
+        href: wdi-tlv-sae-confirm-response.md
+      - name: WDI_TLV_SAE_ELEMENT
+        href: wdi-tlv-sae-element.md
+      - name: WDI_TLV_SAE_FINITE_CYCLIC_GROUP
+        href: wdi-tlv-sae-finite-cyclic-group.md
+      - name: WDI_TLV_SAE_INDICATION_TYPE
+        href: wdi-tlv-sae-indication-type.md
+      - name: WDI_TLV_SAE_REQUEST_TYPE
+        href: wdi-tlv-sae-request-type.md
+      - name: WDI_TLV_SAE_SCALAR
+        href: wdi-tlv-sae-scalar.md
+      - name: WDI_TLV_SAE_SEND_CONFIRM
+        href: wdi-tlv-sae-send-confirm.md
+      - name: WDI_TLV_SAE_STATUS
+        href: wdi-tlv-sae-status.md
       - name: "WDI_TLV_SAFE_MODE_PARAMETERS"
         href: wdi-tlv-safe-mode-parameters.md
       - name: "WDI_TLV_SCAN_DWELL_TIME"
@@ -3502,6 +3552,8 @@
         href: oid-wdi-task-p2p-send-request-action-frame.md
       - name: "OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME"
         href: oid-wdi-task-p2p-send-response-action-frame.md
+      - name: OID_WDI_TASK_REQUEST_FTM
+        href: oid-wdi-task-request-ftm.md
       - name: "OID_WDI_TASK_ROAM"
         href: oid-wdi-task-roam.md
       - name: "OID_WDI_TASK_SCAN"
@@ -3593,6 +3645,8 @@
         href: oid-wdi-set-remove-pm-protocol-offload.md
       - name: "OID_WDI_SET_REMOVE_WOL_PATTERN"
         href: oid-wdi-set-remove-wol-pattern.md
+      - name: OID_WDI_SET_SAE_AUTH_PARAMS
+        href: oid-wdi-set-sae-auth-params.md
       - name: "OID_WDI_SET_TCP_OFFLOAD_PARAMETERS"
         href: oid-wdi-set-tcp-offload-parameters.md
       - name: "OID_WDI_TCP_RSC_STATISTICS"
@@ -3662,10 +3716,14 @@
         href: ndis-status-wdi-indication-p2p-send-response-action-frame-complete.md
       - name: "NDIS_STATUS_WDI_INDICATION_RADIO_STATUS"
         href: ndis-status-wdi-indication-radio-status.md
+      - name: NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE
+        href: ndis-status-wdi-indication-request-ftm-complete.md
       - name: "NDIS_STATUS_WDI_INDICATION_ROAM_COMPLETE"
         href: ndis-status-wdi-indication-roam-complete.md
       - name: "NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED"
         href: ndis-status-wdi-indication-roaming-needed.md
+      - name: NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED
+        href: ndis-status-wdi-indication-sae-auth-params-needed.md
       - name: "NDIS_STATUS_WDI_INDICATION_SCAN_COMPLETE"
         href: ndis-status-wdi-indication-scan-complete.md
       - name: "NDIS_STATUS_WDI_INDICATION_SEND_AP_ASSOCIATION_RESPONSE_COMPLETE"
