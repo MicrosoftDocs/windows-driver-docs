@@ -776,6 +776,8 @@
       href: kspropsetid-fmrxtopology.md
     - name: "KSPROPSETID_Hrtf3d"
       href: kspropsetid-hrtf3d.md
+    - name: "KSPROPSETID_INTERLEAVEDAUDIO_FORMATINFORMATION"
+      href: kspropsetid-interleavedaudio.md
     - name: "KSPROPSETID_Itd3d"
       href: kspropsetid-itd3d.md
     - name: "KSPROPSETID_Jack"
@@ -957,6 +959,8 @@
       href: pkey-compositefx-offload-streameffectclsid.md
     - name: "PKEY_CompositeFX_StreamEffectClsid"
       href: pkey-compositefx-streameffectclsid.md
+    - name: "PKEY_Devices_AudioDevice_Microphone_IsFarField"
+      href: pkey-devices-audiodevice-microphone-isfarfield.md
     - name: "PKEY_FX_KeywordDetector_StreamEffectClsid"
       href: pkey-fx-keyworddetector-streameffectclsid.md
     - name: "PKEY_FX_KeywordDetector_ModeEffectClsid"
@@ -1245,6 +1249,8 @@
       href: ksproperty-hrtf3d-initialize.md
     - name: "KSPROPERTY_HRTF3D_PARAMS"
       href: ksproperty-hrtf3d-params.md
+    - name: "KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION"
+      href: ksproperty-interleavedaudio-formatinformation.md
     - name: "KSPROPERTY_ITD3D_PARAMS"
       href: ksproperty-itd3d-params.md
     - name: "KSPROPERTY_JACK"
