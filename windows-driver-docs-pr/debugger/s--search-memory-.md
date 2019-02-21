@@ -115,7 +115,7 @@ Specifies the memory area to search through. This range cannot be more than 256 
 <span id="_______Pattern______"></span><span id="_______pattern______"></span><span id="_______PATTERN______"></span> *Pattern*   
 Specifies one or more values to search for. By default, these values are byte values. You can specify different types of memory in *Type*. If you specify a WORD, DWORD, or QWORD value, depending on the other options selected, you may need to enclose the search pattern in single quotation marks (for example, **'H'**). 
 
-```
+```dbgcmd
 0:000> s -d @rsp L1000000 'H'  
 0000003f`ff07ec00  00000048 00000000 500c0163 00000000  H.......c..P....
 0000003f`ff07ec50  00000048 00000000 00000080 00000000  H...............
@@ -124,7 +124,7 @@ Specifies one or more values to search for. By default, these values are byte va
 
 If you specify a string, using the ascii type, enclose it in double quotation marks (for example, **"B7"**).
 
-```
+```dbgcmd
 0:000> s -a @rsp L10000000 "B7"  
 0000003f`ff07ef0a  42 37 ff 7f 00 00 90 38-4e c2 6c 01 00 00 7d 26  B7.....8N.l...}&
 0000003f`ff0ff322  42 37 ff 7f 00 00 f8 5d-42 37 ff 7f 00 00 20 41  B7.....]B7.... A
