@@ -1,8 +1,8 @@
 ---
 title: Bug Check 0x1CB INVALID_SILO_DETACH
-description: The INVALID_SILO_DETACH bug check has a value of 0x000001CB. It indicates that a driver failed to detach from a silo before returning.
+description: The INVALID_SILO_DETACH bug check has a value of 0x000001CB. It indicates that a thread failed to detach from a silo before exiting.
 keywords: ["Bug Check 0x1CB INVALID_SILO_DETACH", "INVALID_SILO_DETACH"]
-ms.date: 02/13/2019
+ms.date: 02/21/2019
 topic_type:
 - apiref
 api_name:
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # Bug Check 0x1CB: INVALID\_SILO\_DETACH
 
-The INVALID\_SILO\_DETACH bug check has a value of 0x000001CB. It indicates that a thread failed to detach from a silo before returning.
+The INVALID\_SILO\_DETACH bug check has a value of 0x000001CB. It indicates that a thread failed to detach from a silo before exiting.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
  
@@ -31,9 +31,8 @@ The INVALID\_SILO\_DETACH bug check has a value of 0x000001CB. It indicates that
 
 ## Cause
 -----
-A driver failed to detach from a silo before returning. 
+A thread failed to detach from a silo before exiting. 
 
-One possible cause is that a Hypervisor based watchdog timed-out has occurred.
 
 
 ## See Also
