@@ -2,7 +2,7 @@
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
 ms.assetid: DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB
-ms.date: 01/30/2019
+ms.date: 02/21/2019
 ms.localizationpriority: medium
 ---
 
@@ -384,8 +384,6 @@ The following table shows the code and name of each bug check code.
 | 0x0000019C | [**WIN32K\_POWER\_WATCHDOG\_TIMEOUT**](bug-check-0x19c--win32k-power-watchdog-timeout.md)                                                         |
 | 0x0000019D | [**CLUSTER\_SVHDX\_LIVEDUMP**](bug-check-0x19d--cluster-svhdx-livedump.md)                                                                        |
 | 0x000001A0 | [**TTM\_WATCHDOG\_TIMEOUT**](bug-check-0x1a0--ttm-watchdog-timeout.md)                                                                            |
-| 0x000001A1 | [**WIN32K\_CALLOUT\_WATCHDOG\_LIVEDUMP**](bug-check-0x1a1--win32k-callout-watchdog-livedump.md)                                                   |
-| 0x000001A2 | [**WIN32K\_CALLOUT\_WATCHDOG\_BUGCHECK**](bug-check-0x1a2--win32k-callout-watchdog-bugcheck.md)                                                   |
 | 0x000001A3 | [**CALL\_HAS\_NOT\_RETURNED\_WATCHDOG\_TIMEOUT\_LIVEDUMP**](bug-check-0x1a3--call-has-not-returned-watchdog-timeout-livedump.md)                  |
 | 0x000001A4 | [**DRIPS\_SW\_HW\_DIVERGENCE\_LIVEDUMP**](bug-check-0x1a4--drips-sw-hw-divergence-livedump.md)                                                    |
 | 0x000001A5 | [**USB\_DRIPS\_BLOCKER\_SURPRISE\_REMOVAL\_LIVEDUMP**](bug-check-0x1a5--usb-drips-blocker-surprise-removal-livedump.md)                           |
@@ -396,7 +394,6 @@ The following table shows the code and name of each bug check code.
 | 0x000001C4 | [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP**](bug-check-0x1c4--driver-verifier-detected-violation-livedump.md)                            |
 | 0x000001C5 | [**IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP**](bug-check-0x1c5--io-threadpool-deadlock-livedump.md)                                                     |
 | 0x000001C6 | [**FAST\_ERESOURCE\_PRECONDITION\_VIOLATION**](bug-check-0x1c6--fast-eresource-precondition-violation.md)                                         |
-| 0x000001C7 | [**STORE\_DATA\_STRUCTURE\_CORRUPTION**](bug-check-0x1c7--store-data-structure-corruption.md)                                                     |
 | 0x000001C8 | [**MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD**](bug-check-0x1c8--manually-initiated-power-button-hold.md)                                          |
 | 0x000001C9 | [**USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP**](bug-check-0x1c9--user-mode-health-monitor-livedump.md)                                                |
 | 0x000001CA | [**SYNTHETIC\_WATCHDOG\_TIMEOUT**](bug-check-0x1ca--synthetic-watchdog-timeout.md)                                                                |
