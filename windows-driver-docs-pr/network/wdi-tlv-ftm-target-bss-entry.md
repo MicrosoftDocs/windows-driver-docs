@@ -27,13 +27,13 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | TLV | Type | Multiple TLV instances allowed | Optional | Description |
 | --- | --- | --- | --- | --- |
 | [WDI_TLV_BSSID](wdi-tlv-bssid.md) | [**WDI_MAC_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) |   |   | The BSSID of the target BSS. |
-| [WDI_TLV_PROBE_RESPONSE_FRAME](wdi-tlv-probe-response-frame.md) | TLV\<LIST\<UINT8>> |   | X | X | The probe response frame. If no probe response has been received, this field is empty. |
-| [WDI_TLV_BEACON_FRAME](wdi-tlv-beacon-frame.md) | TLV\<LIST\<UINT8>> |   | X | X | The beacon frame. If no beacon has been received, this field is empty. |
-| [WDI_TLV_BSS_ENTRY_SIGNAL_INFO](wdi-tlv-bss-entry-signal-info.md) | INT32 |   |   |   | The received signal strength indicator (RSSI) value of the beacon or probe response from the peer. This is in units of decibels referenced to 1.0 milliwatts (dBm). |
-|  | UINT32 |   |   |   | The link quality value ranging from 0 through 100. A value of 100 specifies the highest link quality. |
-| [WDI_TLV_BSS_ENTRY_CHANNEL_INFO](wdi-tlv-bss-entry-channel-info.md) | UINT32 |   |   |   | The logical channel number of the target BSS. |
-|   | UINT32 |   |   |   | The Band ID of the target BSS. |
-| [WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT](wdi-tlv-bss-entry-device-context.md) | TLV\<LIST\<UINT8>> | X |  | IHV component-provided context data about this peer. This can be usd to store per-BSS entry state that the IHV component wants to maintain. To avoid lifetime management issues, the IHV component must not use pointers in this field. |
+| [WDI_TLV_PROBE_RESPONSE_FRAME](wdi-tlv-probe-response-frame.md) | TLV\<LIST\<UINT8>> |   | X | The probe response frame. If no probe response has been received, this field is empty. |
+| [WDI_TLV_BEACON_FRAME](wdi-tlv-beacon-frame.md) | TLV\<LIST\<UINT8>> |   | X | The beacon frame. If no beacon has been received, this field is empty. |
+| [WDI_TLV_BSS_ENTRY_SIGNAL_INFO](wdi-tlv-bss-entry-signal-info.md) | INT32 |   |   | The received signal strength indicator (RSSI) value of the beacon or probe response from the peer. This is in units of decibels referenced to 1.0 milliwatts (dBm). |
+|  | UINT32 |   |   | The link quality value ranging from 0 through 100. A value of 100 specifies the highest link quality. |
+| [WDI_TLV_BSS_ENTRY_CHANNEL_INFO](wdi-tlv-bss-entry-channel-info.md) | UINT32 |   |   | The logical channel number of the target BSS. |
+|   | UINT32 |   |   | The Band ID of the target BSS. |
+| [WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT](wdi-tlv-bss-entry-device-context.md) | TLV\<LIST\<UINT8>> |  |  | IHV component-provided context data about this peer. This can be usd to store per-BSS entry state that the IHV component wants to maintain. To avoid lifetime management issues, the IHV component must not use pointers in this field. |
 | [WDI_TLV_REQUEST_LCI_REPORT](wdi-tlv-request-lci-report.md) | UINT8 |   |   | Possible values: <ul><li>0: LCI report not needed.</li><li>1: LCI report should be requested.</li></ul> |
 
 ## Requirements
