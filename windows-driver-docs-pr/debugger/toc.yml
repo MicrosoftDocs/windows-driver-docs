@@ -2469,6 +2469,8 @@
       href: bug-check-0x1c5--io-threadpool-deadlock-livedump.md
     - name: "Bug Check 0x1C6: FAST_ERESOURCE_PRECONDITION_VIOLATION"
       href: bug-check-0x1c6--fast-eresource-precondition-violation.md
+    - name: "Bug Check 0x1C7: STORE_DATA_STRUCTURE_CORRUPTION"
+      href: bug-check-0x1c7--store-data-structure-corruption.md      
     - name: "Bug Check 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD"
       href: bug-check-0x1c8--manually-initiated-power-button-hold.md
     - name: "Bug Check 0x1C9: USER_MODE_HEALTH_MONITOR_LIVEDUMP"
