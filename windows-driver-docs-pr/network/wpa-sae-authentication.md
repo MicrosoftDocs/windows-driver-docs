@@ -16,9 +16,9 @@ Miniport drivers indicate SAE support by doing the following:
 
 1. Set SAE supported capability.  
     The driver sets the **SAEAuthenticationSupported** capability in [WDI_TLV_INTERFACE_ATTRIBUTES](wdi-tlv-interface-attributes.md) during the call to [OID_WDI_GET_ADAPTER_CAPABILITIES](oid-wdi-get-adapter-capabilities.md).
-2. Set MFP capability
+2. Set MFP capability  
     The driver sets the **MFPCapable** capability in [WDI_TLV_STATION_ATTRIBUTES](wdi-tlv-station-attributes.md) during the call to [OID_WDI_GET_ADAPTER_CAPABILITIES](oid-wdi-get-adapter-capabilities.md).
-3. Add the **WDI_AUTH_ALGO_WPA3_SAE** cipher
+3. Add the **WDI_AUTH_ALGO_WPA3_SAE** cipher  
     The driver includes **WDI_AUTH_ALGO_WPA3_SAE** in the list of auth-cipher combinations returned in the call to [OID_WDI_GET_ADAPTER_CAPABILITIES](oid-wdi-get-adapter-capabilities.md). This should be added in the following sections:
     - [WDI_TLV_STATION_ATTRIBUTES](wdi-tlv-station-attributes.md) : : [WDI_TLV_UNICAST_ALGORITHM_LIST](wdi-tlv-unicast-algorithm-list.md)
     - [WDI_TLV_STATION_ATTRIBUTES](wdi-tlv-station-attributes.md) : : [WDI_TLV_MULTICAST_DATA_ALGORITHM_LIST](wdi-tlv-multicast-data-algorithm-list.md)
@@ -35,7 +35,7 @@ SAE connections are initiated with [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.m
 
 #### Initial request for SAE parameters
 
-The driver first selects a BSS to which to connect or roam and, if WDI did not provide teh PMKID for that BSS, the driver requests Commit parameters from WDI with [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md). In this initial indication, the driver sets the indication type to **WDI_SAE_INDICATION_TYPE_COMMIT_REQUEST_PARAMS_NEEDED**. In response, WDI sends [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) to the driver with one of the following options.
+The driver first selects a BSS to which to connect or roam and, if WDI did not provide the PMKID for that BSS, the driver requests Commit parameters from WDI with [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md). In this initial indication, the driver sets the indication type to **WDI_SAE_INDICATION_TYPE_COMMIT_REQUEST_PARAMS_NEEDED**. In response, WDI sends [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) to the driver with one of the following options.
 
 - Send Commit request (**WDI_SAE_REQUEST_TYPE_COMMIT_REQUEST**)
 - Fail SAE authentication (**WDI_SAE_REQUEST_TYPE_FAILURE**)
@@ -62,7 +62,7 @@ The device connects to an SAE network using one of the following options.
 
 ### (Re)Association following SAE exchange
 
-This is normally the first association attempt to an SAE network. The driver sets the SAE AKM in the RSN IE in the Association REquest frame.
+This is normally the first association attempt to an SAE network. The driver sets the SAE AKM in the RSN IE in the Association Request frame.
 
 ### (Re)Association using PMKID
 
