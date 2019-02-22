@@ -59,9 +59,9 @@ To get started mount the ISO and click LaunchBuildEnv.
 
 ## Run-time requirements for the WDK and the EWDK
 
-The WDK requires Visual Studio. For more info about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](https://docs.microsoft.com/en-us/visualstudio/releases/2019/system-requirements).
+The WDK requires Visual Studio. For more info about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](https://docs.microsoft.com/visualstudio/releases/2019/system-requirements).
 
-In addition, the EWDK requires .NET 4.7.2. For more info about what .NET runs on, see [.NET Framework system requirements](https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements).
+In addition, the EWDK requires .NET 4.7.2. For more info about what .NET runs on, see [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements).
 
 You can use the WDK Insider Preview and the EWDK Insider Preview to develop drivers for these operating systems: 
 
