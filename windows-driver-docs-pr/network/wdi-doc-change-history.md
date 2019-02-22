@@ -14,10 +14,10 @@ Documentation updated to WDI version 1.1.8.
 
 | Topic | Description |
 | --- | --- |
-| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities) | Added support for the driver to indicate support for FTM. |
+| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities) | Added support for the driver to indicate support for Fine Timing Measurement (FTM). |
 | [OID_WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md) | Newly added task OID that enables WDI to request that the adapter initiate FTM procedures to obtain roundtrip time (RTT) and the Location Configuration Information (LCI) report from BSS targets. |
-| [WDI_TLV_FTM_REQUEST_TIMEOUT](wdi-tlv-ftm-request-timeout.md | Newly added TLV for FTM request. |
-| [WDI_TLV_FTM_TARGET_BSS_ENTRY](wdi-tlv-ftm-target-bss-entry.md | Newly added TLV for FTM request. |
+| [WDI_TLV_FTM_REQUEST_TIMEOUT](wdi-tlv-ftm-request-timeout.md) | Newly added TLV for FTM request. |
+| [WDI_TLV_FTM_TARGET_BSS_ENTRY](wdi-tlv-ftm-target-bss-entry.md) | Newly added TLV for FTM request. |
 | [WDI_TLV_REQUEST_LCI_REPORT](wdi-tlv-request-lci-report.md) | Newly added TLV for FTM request. |
 | [NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE](ndis-status-wdi-indication-request-ftm-complete.md) | Newly added status indication sent by the host as a task completion indication for OID_WDI_TASK_REQUEST_FTM. Contains a list of FTM responses from BSS targets. |
 | [WDI_TLV_FTM_RESPONSE](wdi-tlv-ftm-response.md) | Newly added TLV for FTM response. |
@@ -29,9 +29,9 @@ Documentation updated to WDI version 1.1.8.
 | [WDI_TLV_RTT_VARIANCE](wdi-tlv-rtt-variance.md) | Newly added TLV for FTM response. |
 | [WDI_TLV_LCI_REPORT_STATUS](wdi-tlv-lci-report-status.md) | Newly added TLV for FTM response. |
 | [WDI_TLV_LCI_REPORT_BODY](wdi-tlv-lci-report-body.md) | Newly added TLV for FTM response. |
-| [WDI_TLV_INTERFACE_CAPABILITIES](wdi-tlv-interface-capabilities.md) | Added new capabilities for the driver to indicate support for MBO and beacon report offloading. |
+| [WDI_TLV_INTERFACE_CAPABILITIES](wdi-tlv-interface-capabilities.md) | Added new capabilities for the driver to indicate support for Multiband Operation (MBO) and beacon report offloading. |
 | [**WDI_ASSOC_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_assoc_status) | Added **WDI_ASSOC_STATUS_ASSOCIATION_DISALLOWED** status. |
-| [WPA-SAE authentication](wpa-sae-authentication.md) | Overview of WPA3-SAE authentication. |
+| [WPA-SAE authentication](wpa-sae-authentication.md) | New overview of WPA3-SAE (Secure Authentication of Equals) authentication. |
 | [WDI_TLV_INTERFACE_CAPABILITIES](wdi-tlv-interface-capabilities.md) | Added new capability for the driver to indicate support for SAE authentication. |
 | [**WDI_AUTH_ALGORITHM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_auth_algorithm) | Added definition for **WDI_AUTH_ALGO_WPA3_SAE**. |
 | [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) | Newly added status indication sent by the driver to request SAE authentication parameters from WDI. |
