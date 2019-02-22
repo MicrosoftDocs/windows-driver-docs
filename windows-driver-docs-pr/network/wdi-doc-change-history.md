@@ -2,11 +2,55 @@
 title: WDI doc change history
 description: This section lists documentation change history for WDI documentation pages
 ms.assetid: 29268059-9C33-4768-8F80-195CB28B4663
-ms.date: 04/20/2017
+ms.date: 02/21/2019
 ms.localizationpriority: medium
 ---
 
 # WDI doc change history
+
+## Windows 10, version 1903
+
+Documentation updated to WDI version 1.1.8.
+
+| Topic | Description |
+| --- | --- |
+| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities) | Added support for the driver to indicate support for FTM. |
+| [OID_WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md) | Newly added task OID that enables WDI to request that the adapter initiate FTM procedures to obtain roundtrip time (RTT) and the Location Configuration Information (LCI) report from BSS targets. |
+| [WDI_TLV_FTM_REQUEST_TIMEOUT](wdi-tlv-ftm-request-timeout.md | Newly added TLV for FTM request. |
+| [WDI_TLV_FTM_TARGET_BSS_ENTRY](wdi-tlv-ftm-target-bss-entry.md | Newly added TLV for FTM request. |
+| [WDI_TLV_REQUEST_LCI_REPORT](wdi-tlv-request-lci-report.md) | Newly added TLV for FTM request. |
+| [NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE](ndis-status-wdi-indication-request-ftm-complete.md) | Newly added status indication sent by the host as a task completion indication for OID_WDI_TASK_REQUEST_FTM. Contains a list of FTM responses from BSS targets. |
+| [WDI_TLV_FTM_RESPONSE](wdi-tlv-ftm-response.md) | Newly added TLV for FTM response. |
+| [WDI_TLV_FTM_RESPONSE_STATUS](wdi-tlv-ftm-response-status.md) | Newly added TLV for FTM response. |
+| [WDI_TLV_RETRY_AFTER](wdi-tlv-retry-after.md) | Newly added TLV for FTM response. |
+| [WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS](wdi-tlv-ftm-number-of-measurements.md) | Newly added TLV for FTM response. |
+| [WDI_TLV_RTT](wdi-tlv-rtt.md) | Newly added TLV for FTM response. |
+| [WDI_TLV_RTT_ACCURACY](wdi-tlv-rtt-accuracy.md) | Newly added TLV for FTM response. |
+| [WDI_TLV_RTT_VARIANCE](wdi-tlv-rtt-variance.md) | Newly added TLV for FTM response. |
+| [WDI_TLV_LCI_REPORT_STATUS](wdi-tlv-lci-report-status.md) | Newly added TLV for FTM response. |
+| [WDI_TLV_LCI_REPORT_BODY](wdi-tlv-lci-report-body.md) | Newly added TLV for FTM response. |
+| [WDI_TLV_INTERFACE_CAPABILITIES](wdi-tlv-interface-capabilities.md) | Added new capabilities for the driver to indicate support for MBO and beacon report offloading. |
+| [**WDI_ASSOC_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_assoc_status) | Added **WDI_ASSOC_STATUS_ASSOCIATION_DISALLOWED** status. |
+| [WPA-SAE authentication](wpa-sae-authentication.md) | Overview of WPA3-SAE authentication. |
+| [WDI_TLV_INTERFACE_CAPABILITIES](wdi-tlv-interface-capabilities.md) | Added new capability for the driver to indicate support for SAE authentication. |
+| [**WDI_AUTH_ALGORITHM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_auth_algorithm) | Added definition for **WDI_AUTH_ALGO_WPA3_SAE**. |
+| [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) | Newly added status indication sent by the driver to request SAE authentication parameters from WDI. |
+| [WDI_TLV_SAE_INDICATION_TYPE](wdi-tlv-sae-indication-type.md) | Newly added TLV for SAE authentication parameters requests. |
+| [WDI_TLV_SAE_COMMIT_RESPONSE](wdi-tlv-sae-commit-response.md) | Newly added TLV for SAE authentication parameters requests. |
+| [WDI_TLV_SAE_CONFIRM_RESPONSE](wdi-tlv-sae-confirm-response.md) | Newly added TLV for SAE authentication parameters requests. |
+| [WDI_TLV_SAE_STATUS](wdi-tlv-sae-status.md) | Newly added TLV for SAE authentication parameters requests and for setting SAE authentication parameters. |
+| [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) | Newly added property OID that contains the parameters required to send the SAE Commit or Confirm request, or an error message indicating a failure to perform SAE with the BSSID. |
+| [WDI_TLV_SAE_REQUEST_TYPE](wdi-tlv-sae-request-type.md) | Newly added TLV for setting SAE authentication parameters. |
+| [WDI_TLV_SAE_COMMIT_REQUEST](wdi-tlv-sae-commit-request.md) | Newly added TLV for setting SAE authentication parameters. |
+| [WDI_TLV_SAE_FINITE_CYCLIC_GROUP](wdi-tlv-sae-finite-cyclic-group.md) | Newly added TLV for setting SAE authentication parameters. |
+| [WDI_TLV_SAE_SCALAR](wdi-tlv-sae-scalar.md) | Newly added TLV for setting SAE authentication parameters. |
+| [WDI_TLV_SAE_ELEMENT](wdi-tlv-sae-element.md) | Newly added TLV for setting SAE authentication parameters. |
+| [WDI_TLV_SAE_ANTI_CLOGGING_TOKEN](wdi-tlv-sae-anti-clogging-token.md) | Newly added TLV for setting SAE authentication parameters. |
+| [WDI_TLV_SAE_CONFIRM_REQUEST](wdi-tlv-sae-confirm-request.md) | Newly added TLV for setting SAE authentication parameters. |
+| [WDI_TLV_SAE_SEND_CONFIRM](wdi-tlv-sae-send-confirm.md) | Newly added TLV for setting SAE authentication parameters. |
+| [WDI_TLV_SAE_CONFIRM](wdi-tlv-sae-confirm.md) | Newly added TLV for setting SAE authentication parameters. |
+| [OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME](oid-wdi-task-p2p-send-request-action-frame.md) | Added additional validation of P2P IEs on outgoing action frames. |
+| [OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME](oid-wdi-task-p2p-send-response-action-frame.md) | Added additional validation of P2P IEs on outgoing action frames. || 
 
 ## Windows 10, version 1809
 

@@ -3765,6 +3765,8 @@
         href: tal-txrx-handle.md
     - name: "Features not carried over in WDI"
       href: wdi-features-not-carried-over-in-wdi.md
+    - name: "WPA-SAE authentication"
+      href: wpa-sae-authentication.md
     - name: "WDI doc change history"
       href: wdi-doc-change-history.md
   - name: Native 802.11 IHV Extensions

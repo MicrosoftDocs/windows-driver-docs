@@ -29,6 +29,14 @@ The task is complete either when the local device receives an acknowledgment fro
 
 The host may decide to abort this operation and continue/retry the Wi-Fi Direct action frame exchange, so it is important that the device is able to abort this operation quickly.
 
+## Validation
+
+For miniport drivers that support WDI version 1.1.8 and later, additional validation of the P2P IEs on outgoing P2P Action Frames has been added. This validation addresses a common problem in which the **Configuration Timeout** attribute of the P2P IE has not been converted form units of milliseconds, as provided to the LE in OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME and [OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME](oid-wdi-task-p2p-send-response-action-frame.md), to units of tens of milliseconds, which is the IE format.
+
+The Wi-Fi Direct and Wi-Fi Direct Services HLK tests will fail for drivers supporting WDI version 1.1.8 and later if the **Configuration Timeout** attribute of the P2P IE is not encoded correctly on an outgoing action frame. For WDI versions 1.1.7 and earlier, the tests will print a warning to the test output.
+
+The WDI interface itself is unchanged and continues to use units of milliseconds just as it did in versions 1.1.7 and earlier.
+
 ## Task parameters
 
 
