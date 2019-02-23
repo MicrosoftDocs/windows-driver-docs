@@ -27,7 +27,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | TLV | Type | Multiple TLV instances allowed | Optional | Description |
 | --- | --- | --- | --- | --- |
 | [WDI_TLV_SAE_SEND_CONFIRM](wdi-tlv-sae-send-confirm.md) | UINT16 |   |   | The Send Confirm field, used as an anti-replay counter. |
-| [WDI_TLV_SAE_CONFIRM](wdi-tlv-sae-confirm.md) | TLV\<LIST\<UINT8>> | X |   | The Confirm field. |
+| [WDI_TLV_SAE_CONFIRM](wdi-tlv-sae-confirm.md) | TLV\<LIST\<UINT8>> |  |   | The Confirm field. |
 
 ## Requirements
 

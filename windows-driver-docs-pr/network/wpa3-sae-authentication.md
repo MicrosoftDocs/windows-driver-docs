@@ -16,9 +16,9 @@ Miniport drivers indicate SAE support by doing the following:
 
 1. Set SAE supported capability.  
     The driver sets the **SAEAuthenticationSupported** capability in [WDI_TLV_INTERFACE_ATTRIBUTES](wdi-tlv-interface-attributes.md) during the call to [OID_WDI_GET_ADAPTER_CAPABILITIES](oid-wdi-get-adapter-capabilities.md).
-2. Set MFP capability  
+2. Set MFP capability.  
     The driver sets the **MFPCapable** capability in [WDI_TLV_STATION_ATTRIBUTES](wdi-tlv-station-attributes.md) during the call to [OID_WDI_GET_ADAPTER_CAPABILITIES](oid-wdi-get-adapter-capabilities.md).
-3. Add the **WDI_AUTH_ALGO_WPA3_SAE** cipher  
+3. Add the **WDI_AUTH_ALGO_WPA3_SAE** auth method.  
     The driver includes **WDI_AUTH_ALGO_WPA3_SAE** in the list of auth-cipher combinations returned in the call to [OID_WDI_GET_ADAPTER_CAPABILITIES](oid-wdi-get-adapter-capabilities.md). This should be added in the following sections:
     - [WDI_TLV_STATION_ATTRIBUTES](wdi-tlv-station-attributes.md) : : [WDI_TLV_UNICAST_ALGORITHM_LIST](wdi-tlv-unicast-algorithm-list.md)
     - [WDI_TLV_STATION_ATTRIBUTES](wdi-tlv-station-attributes.md) : : [WDI_TLV_MULTICAST_DATA_ALGORITHM_LIST](wdi-tlv-multicast-data-algorithm-list.md)
@@ -27,7 +27,7 @@ Miniport drivers indicate SAE support by doing the following:
 
 ### Connection initiation
 
-SAE connections are initiated with [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md) or [OID_WDI_TASK_ROAM](oid-wdi-task-roam.md). WDI specifies **WDI_AUTH_ALGO_WPA3_SAE** as the cipher when the driver is required to do SAE authentication. If WDI provides the PMKID in the BSS list in the Connect/Roam task, then the driver skips SAE authentication and performs Open Authentication instead, followed by a reassociation request with the PMKID.
+SAE connections are initiated with [OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md) or [OID_WDI_TASK_ROAM](oid-wdi-task-roam.md). WDI specifies **WDI_AUTH_ALGO_WPA3_SAE** as the auth method when the driver is required to do SAE authentication. If WDI provides the PMKID in the BSS list in the Connect/Roam task, then the driver skips SAE authentication and performs Open Authentication instead, followed by a reassociation request with the PMKID.
 
 ### Authentication flow
 
@@ -50,7 +50,7 @@ On receiving a Commit response, the driver sends [NDIS_STATUS_WDI_INDICATION_SAE
 
 #### Upon receiving a Confirm response
 
-On receiving a Confirm response, the driver sends [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) with the type set to **WDI_SAE_INDICATION_TYPE_CONFIRM_RESPONSE**. WDI then sends [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) with the SAE status field set to success or failure. If SAE authentication fails in the driver due to timeouts or other reasons, the driver sends [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) with the failure reason.
+On receiving a Confirm response, the driver sends [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) with the type set to **WDI_SAE_INDICATION_TYPE_CONFIRM_RESPONSE**. WDI then sends [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md) with the SAE status field set to success or failure. If SAE authentication fails in the driver due to timeouts or other reasons, the driver sends an [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md) indication with the type se to **WDI_SAE_INDICATION_TYPE_ERROR** and the failure reason specified in [WDI_TLV_SAE_STATUS](wdi-tlv-sae-status.md).
 
 ### Timeouts and retransmissions
 
@@ -66,7 +66,7 @@ This is normally the first association attempt to an SAE network. The driver set
 
 ### (Re)Association using PMKID
 
-If WDI provided a PMKID for the BSS entry, then the driver does the following:
+If WDI provided a PMKID for the BSS entry in the connect/roam task, then the driver does the following:
 
 1. The driver performs an Open authentication followed by inclusion of the PMKID in the (Re)association request.
 2. If the device does not receive a response from the AP within a short time, or if the AP returns an association error in the response, the driver skips SE authentication with this AP and either moves to another AP, or falls back to doing full SAE authentication with this AP.
