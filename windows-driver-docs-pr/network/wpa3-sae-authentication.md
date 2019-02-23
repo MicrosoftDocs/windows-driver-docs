@@ -1,12 +1,12 @@
 ---
-title: WPA-SAE authentication
+title: WPA3-SAE authentication
 description: This topic describes WPA3-SAE authentication for WDI version 1.1.8 and later.
 ms.assetid: BE6EF8E4-F4EB-4D39-AC33-B67F8935DCBC
 ms.date: 02/21/2019
 ms.localizationpriority: medium
 ---
 
-# WPA-SAE authentication
+# WPA3-SAE authentication
 
 WPA3-SAE, also known as WPA3-Personal, is supported in Windows with WDI version 1.1.8 and later. Frame content generation and parsing for SAE (Secure Authentication of Equals) authentication is done within Windows, but the OS requires driver support for sending and receiving WPA3-SAE authentication frames.
 
