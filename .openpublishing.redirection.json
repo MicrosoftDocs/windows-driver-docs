@@ -7494,6 +7494,11 @@
       "source_path": "windows-driver-docs-pr/device-stage-custom-experience.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/debugger/-elog-str.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/debugger/-evlog",
+      "redirect_document_id": false
     }
   ]
 }

@@ -74,7 +74,7 @@ Typical CAB file submissions contain the following:
 - The driver itself, for example Echo.sys
 - The driver INF file that is used by the dashboard to facilitate the signing process.
 - The symbol file that is used for debugging information. For example, Echo.pdb.
-- Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
+- Catalog .CAT files are required and used for company verfication only. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
 
   > [!NOTE]
   > All driver folders in your CAB file must support the same set of architectures. For example, they all must support x86, x64, or they all must support both x86 and x64.

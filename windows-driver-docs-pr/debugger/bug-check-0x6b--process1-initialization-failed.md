@@ -66,8 +66,8 @@ Any part of the disk subsystem can cause the PROCESS1\_INITIALIZATION\_FAILED bu
 This bug check can also be caused by a missing file from the boot partition or by a driver that a user accidentally disabled in the **Drivers** tab.
 
  
-
- 
+## Resolution
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause. 
 
 
 
