@@ -4,11 +4,8 @@ description: LowerLogoVersion
 ms.assetid: b11b9190-9e3f-473d-b78f-b472601c60e2
 keywords:
 - LowerLogoVersion
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # LowerLogoVersion
@@ -61,15 +58,15 @@ A **LowerLogoVersion** value is a NULL-terminated string that specifies the Wind
 </tbody>
 </table>
 
- 
+ 
 
 The system default **LowerLogoVersion** value for a system-defined [device setup class](device-setup-classes.md) is "5.1." This means that drivers that have a WHQL signature for Windows Server 2003 and Windows XP have the same signature score as a driver that is signed by Microsoft for Windows Vista and later versions of Windows.
 
 For more information about driver ranking, see [How Windows Ranks Drivers (Windows Vista and Later)](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
- 
+ 
 
- 
+ 
 
 
 

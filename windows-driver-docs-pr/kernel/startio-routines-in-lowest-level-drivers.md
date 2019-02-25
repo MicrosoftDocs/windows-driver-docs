@@ -1,23 +1,19 @@
 ---
 title: StartIo Routines in Lowest-Level Drivers
-author: windows-driver-content
 description: StartIo Routines in Lowest-Level Drivers
 ms.assetid: f79f8929-bcf4-46a2-bf0e-0f8fb0720dd9
 keywords: ["StartIo routines, lowest-level drivers", "I/O control requests WDK kernel", "buffered I/O WDK kernel", "direct I/O WDK kernel", "synchronization WDK IRPs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # StartIo Routines in Lowest-Level Drivers
 
 
-## <a href="" id="ddk-startio-routines-in-lowest-level-drivers-kg"></a>
 
 
-The I/O manager's call to a driver's dispatch routine is the first stage in satisfying a device I/O request. The [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine is the second stage. Every device driver with a *StartIo* routine is likely to call [**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370) from its [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376) and [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034) routines, and usually for a subset of the I/O control codes it supports in its [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine. The **IoStartPacket** routine adds the IRP to the device's system-supplied device queue or, if the queue is empty, immediately calls the driver's *StartIo* routine to process the IRP.
+
+The I/O manager's call to a driver's dispatch routine is the first stage in satisfying a device I/O request. The [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine is the second stage. Every device driver with a *StartIo* routine is likely to call [**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370) from its [*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) and [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routines, and usually for a subset of the I/O control codes it supports in its [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. The **IoStartPacket** routine adds the IRP to the device's system-supplied device queue or, if the queue is empty, immediately calls the driver's *StartIo* routine to process the IRP.
 
 You can assume that when a driver's *StartIo* routine is called, the target device is not busy. This is because the I/O manager calls *StartIo* under two circumstances; either one of the driver's dispatch routines has just called **IoStartPacket** and the device queue was empty, or the driver's [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine is completing another request and has just called [**IoStartNextPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550358) to dequeue the next IRP.
 
@@ -25,7 +21,7 @@ Before the *StartIo* routine in a highest-level device driver is called, that dr
 
 **Note**   Any buffer memory to be accessed by a driver's *StartIo* routine must be locked down or allocated from resident, system-space memory and must be accessible in an arbitrary thread context.
 
- 
+ 
 
 In general, any lower-level device driver's *StartIo* routine is responsible for calling [**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174) with the input IRP and then doing whatever request-specific processing is necessary to start the I/O operation on its device. Request-specific processing can include the following:
 
@@ -73,7 +69,7 @@ Drivers that set up their device objects for buffered I/O can rely on the I/O ma
 
 ### Using Buffered I/O in StartIo Routines
 
-If a driver's [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376), [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034), or [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine determines that a request is valid and calls [**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370), the I/O manager calls the driver's [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine to process the IRP immediately if the device queue is empty. If the queue is not empty, **IoStartPacket** queues the IRP. Eventually, a call to [**IoStartNextPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550358) from the driver's [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) or [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine causes the I/O manager to dequeue the IRP and call the driver's *StartIo* routine.
+If a driver's [*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), or [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine determines that a request is valid and calls [**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370), the I/O manager calls the driver's [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine to process the IRP immediately if the device queue is empty. If the queue is not empty, **IoStartPacket** queues the IRP. Eventually, a call to [**IoStartNextPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550358) from the driver's [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) or [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine causes the I/O manager to dequeue the IRP and call the driver's *StartIo* routine.
 
 The *StartIo* routine calls [**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174) and determines which operation must be performed to satisfy the request. It preprocesses the IRP in any way necessary before programming the physical device to carry out the I/O request.
 
@@ -83,7 +79,7 @@ A physical device driver that uses buffered I/O transfers data either to or from
 
 ### Using Direct I/O in StartIo Routines
 
-If a driver's [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376), [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034), or [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine determines that a request is valid and calls [**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370), the I/O manager calls the driver's *StartIo* routine to process the IRP immediately if the device queue is empty. If the queue is not empty, **IoStartPacket** queues the IRP. Eventually, a call to [**IoStartNextPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550358) from the driver's [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) or [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine causes the I/O manager to dequeue the IRP and call the driver's *StartIo* routine.
+If a driver's [*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), or [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine determines that a request is valid and calls [**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370), the I/O manager calls the driver's *StartIo* routine to process the IRP immediately if the device queue is empty. If the queue is not empty, **IoStartPacket** queues the IRP. Eventually, a call to [**IoStartNextPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550358) from the driver's [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) or [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine causes the I/O manager to dequeue the IRP and call the driver's *StartIo* routine.
 
 The *StartIo* routine calls [**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174) and determines which operation must be performed to satisfy the request. It preprocesses the IRP in any way necessary, such as splitting up a large DMA transfer request into partial-transfer ranges and saving state about the **Length** of an incoming transfer request that must be split. Then it programs the physical device to carry out the I/O request.
 
@@ -103,7 +99,7 @@ See [Adapter Objects and DMA](adapter-objects-and-dma.md) and [Controller Object
 
 ### <a href="" id="ddk-handling-i-o-control-requests-in-startio-routines-kg"></a>Handling I/O Control Requests in StartIo Routines
 
-In general, only a subset of device I/O control requests are passed on from a driver's [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) or [*DispatchInternalDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543326) routine for further processing by the driver's *StartIo* routine. The driver's *StartIo* routine only has to handle valid device control requests that require device state changes or return volatile information about the current device state.
+In general, only a subset of device I/O control requests are passed on from a driver's [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) or [*DispatchInternalDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine for further processing by the driver's *StartIo* routine. The driver's *StartIo* routine only has to handle valid device control requests that require device state changes or return volatile information about the current device state.
 
 Each new driver must support the same set of public I/O control codes as all other drivers for the same kind of device. The system defines public, device-type-specific I/O control codes for [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) requests as buffered requests.
 
@@ -119,12 +115,10 @@ Before calling **KeSynchronizeExecution**, the *StartIo* routine must do any pre
 
 If a device driver uses DMA, its *StartIo* routine usually calls [**AllocateAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff540573) with a driver-supplied [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine. In these circumstances, the *StartIo* routine postpones the responsibility for programming the physical device to the *AdapterControl* routine. It, in turn, can call **KeSynchronizeExecution** to have a driver-supplied *SynchCritSection* routine program the device for a DMA transfer.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20StartIo%20Routines%20in%20Lowest-Level%20Drivers%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

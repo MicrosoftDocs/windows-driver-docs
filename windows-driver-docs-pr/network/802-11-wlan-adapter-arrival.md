@@ -5,17 +5,14 @@ ms.assetid: 4d533f32-0f98-4a65-ac1b-7a470e54ad29
 keywords:
 - adapters WDK 802.11 WLAN , arrivals
 - WLAN adapters WDK , arrivals
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # 802.11 WLAN Adapter Arrival
 
 
-**Important**  The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](wifi-universal-driver-model.md).
+
 
  
 

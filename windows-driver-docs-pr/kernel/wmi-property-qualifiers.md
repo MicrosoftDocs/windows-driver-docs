@@ -1,20 +1,16 @@
 ---
 title: WMI Property Qualifiers
-author: windows-driver-content
 description: WMI Property Qualifiers
 ms.assetid: e2d281b3-913c-43ad-921c-80dc8be09aa0
 keywords: ["MOF property qualifiers WDK WMI", "property qualifiers WDK WMI", "qualifiers WDK WMI", "standard MOF qualifiers WDK WMI"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WMI Property Qualifiers
 
 
-## <a href="" id="ddk-wmi-property-qualifiers-kg"></a>
+
 
 
 The following table lists the required and optional MOF property qualifiers that can be used to define items in a WMI data or event block.
@@ -79,7 +75,7 @@ The following are standard MOF qualifiers: **key**, **read**, **write**, **Value
 </tr>
 <tr class="even">
 <td><p><strong>WmiDataId(</strong><em>data-item-ID</em><strong>)</strong></p></td>
-<td><p>(Required) Identifies a data item within a data block. Data item IDs must be assigned to all items in a block except the required items <strong>InstanceName</strong> and <strong>Active</strong>. Data item IDs must be assigned in a contiguous series, starting with 1. An item's data ID determines the order in which the item appears in an instance of the data block; the order of items in the MOF class definition is irrelevant.</p></td>
+<td><p>(Required) Identifies a data item within a data block. Data item IDs must be assigned to all items in a block except the required items <strong>InstanceName</strong> and <strong>Active</strong>. Data item IDs must be assigned in a contiguous series, starting with 1. An item&#39;s data ID determines the order in which the item appears in an instance of the data block; the order of items in the MOF class definition is irrelevant.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>WmiMethodId(</strong><em>method-item-ID</em><strong>)</strong></p></td>
@@ -116,14 +112,12 @@ The following are standard MOF qualifiers: **key**, **read**, **write**, **Value
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20WMI%20Property%20Qualifiers%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

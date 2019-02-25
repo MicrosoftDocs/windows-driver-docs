@@ -1,13 +1,9 @@
 ---
 title: IWiaMiniDrv COM Interface
-author: windows-driver-content
 ms.assetid: a4bd0dee-fb40-42d4-a235-9dab3bc84017
 description: This topic provides detailed guidance on using the IWiaMiniDrv COM interface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IWiaMiniDrv COM Interface
@@ -30,7 +26,7 @@ Applications make requests to the WIA service through the WIA application progra
 
 The **IWiaMiniDrv** interface provides the entry points shown in the following tables for the WIA service to control the device. A WIA minidriver must implement every **IWiaMiniDrv** method. These entry points are defined through the following **IWiaMiniDrv** methods.
 
-## <a href="" id="ddk-creating-and-initializing-items-si"></a>Creating and Initializing Items
+## Creating and Initializing Items
 
 
 <table>
@@ -46,23 +42,23 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvAnalyzeItem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543958)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543958" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAnalyzeItem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543958)"><strong>IWiaMiniDrv::drvAnalyzeItem</strong></a></p></td>
 <td><p>Inspects an item and, if necessary, creates subitems.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaMiniDrv::drvInitializeWia</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544986)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff544986" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvInitializeWia&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544986)"><strong>IWiaMiniDrv::drvInitializeWia</strong></a></p></td>
 <td><p>Initializes the WIA minidriver.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvInitItemProperties</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544989)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff544989" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvInitItemProperties&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544989)"><strong>IWiaMiniDrv::drvInitItemProperties</strong></a></p></td>
 <td><p>Initializes driver item properties for each item in an application item tree.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-## <a href="" id="ddk-deleting-items-si"></a>Deleting Items
+## Deleting Items
 
 
 <table>
@@ -78,23 +74,23 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvDeleteItem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543961)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543961" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvDeleteItem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543961)"><strong>IWiaMiniDrv::drvDeleteItem</strong></a></p></td>
 <td><p>Deletes a driver item.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaMiniDrv::drvFreeDrvItemContext</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543972)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543972" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvFreeDrvItemContext&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543972)"><strong>IWiaMiniDrv::drvFreeDrvItemContext</strong></a></p></td>
 <td><p>Frees a device-specific context.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvUnInitializeWia</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545010)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545010" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvUnInitializeWia&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545010)"><strong>IWiaMiniDrv::drvUnInitializeWia</strong></a></p></td>
 <td><p>Releases device resources associated with an application item tree.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-## <a href="" id="ddk-enumerating-device-capabilities-si"></a>Enumerating Device Capabilities
+## Enumerating Device Capabilities
 
 
 <table>
@@ -110,15 +106,15 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvGetCapabilities</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543977)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543977" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvGetCapabilities&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543977)"><strong>IWiaMiniDrv::drvGetCapabilities</strong></a></p></td>
 <td><p>Reports the events and commands supported by a WIA minidriver.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-## <a href="" id="ddk-enumerating-image-formats-si"></a>Enumerating Image Formats
+## Enumerating Image Formats
 
 
 <table>
@@ -134,15 +130,15 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvGetWiaFormatInfo</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543986)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543986" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvGetWiaFormatInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543986)"><strong>IWiaMiniDrv::drvGetWiaFormatInfo</strong></a></p></td>
 <td><p>Gets supported device formats and media types.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-## <a href="" id="ddk-issuing-device-commands-si"></a>Issuing Device Commands
+## Issuing Device Commands
 
 
 <table>
@@ -158,15 +154,15 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvDeviceCommand</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543967)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543967" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvDeviceCommand&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543967)"><strong>IWiaMiniDrv::drvDeviceCommand</strong></a></p></td>
 <td><p>Issues a command to an imaging device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-## <a href="" id="ddk-locking-and-unlocking-a-device-si"></a>Locking and Unlocking a Device
+## Locking and Unlocking a Device
 
 
 <table>
@@ -182,19 +178,19 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvLockWiaDevice</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544995)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff544995" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvLockWiaDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544995)"><strong>IWiaMiniDrv::drvLockWiaDevice</strong></a></p></td>
 <td><p>Locks access to an imaging device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaMiniDrv::drvUnLockWiaDevice</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545012)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545012" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvUnLockWiaDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545012)"><strong>IWiaMiniDrv::drvUnLockWiaDevice</strong></a></p></td>
 <td><p>Unlocks access to an imaging device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-## <a href="" id="ddk-notifying-a-device-of-an-event-si"></a>Notifying a Device of an Event
+## Notifying a Device of an Event
 
 
 <table>
@@ -210,15 +206,15 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvNotifyPnPEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544998)</p></td>
-<td><p>Indicates a WIA minidriver's response to a Plug and Play event.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff544998" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvNotifyPnPEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544998)"><strong>IWiaMiniDrv::drvNotifyPnPEvent</strong></a></p></td>
+<td><p>Indicates a WIA minidriver&#39;s response to a Plug and Play event.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-## <a href="" id="ddk-obtaining-device-error-strings-si"></a>Obtaining Device Error Strings
+## Obtaining Device Error Strings
 
 
 <table>
@@ -234,15 +230,15 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvGetDeviceErrorStr</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543982)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543982" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvGetDeviceErrorStr&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543982)"><strong>IWiaMiniDrv::drvGetDeviceErrorStr</strong></a></p></td>
 <td><p>Maps a device error value to a string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-## <a href="" id="ddk-reading-and-storing-item-properties-si"></a>Reading and Storing Item Properties
+## Reading and Storing Item Properties
 
 
 <table>
@@ -258,23 +254,23 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvReadItemProperties</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545005)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545005" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvReadItemProperties&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545005)"><strong>IWiaMiniDrv::drvReadItemProperties</strong></a></p></td>
 <td><p>Reads driver item properties.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaMiniDrv::drvValidateItemProperties</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545017)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545017" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvValidateItemProperties&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545017)"><strong>IWiaMiniDrv::drvValidateItemProperties</strong></a></p></td>
 <td><p>Validates driver item properties.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvWriteItemProperties</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545020)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545020" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvWriteItemProperties&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545020)"><strong>IWiaMiniDrv::drvWriteItemProperties</strong></a></p></td>
 <td><p>Writes driver item properties to the device (if needed).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-## <a href="" id="ddk-transferring-data-si"></a>Transferring Data
+## Transferring Data
 
 
 <table>
@@ -290,20 +286,18 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaMiniDrv::drvAcquireItemData</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543956)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543956" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543956)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a></p></td>
 <td><p>Transfers data from a driver item to the WIA service.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20IWiaMiniDrv%20COM%20Interface%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

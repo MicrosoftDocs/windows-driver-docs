@@ -1,20 +1,16 @@
 ---
 title: Porting Issues Checklist
-author: windows-driver-content
 description: Porting Issues Checklist
 ms.assetid: 6ab26321-85b8-4a5b-8ca5-af6cbf56ccd6
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Issues Checklist
 
 
-## <a href="" id="ddk-porting-issues-checklist-kg"></a>
+
 
 
 ### General
@@ -27,7 +23,7 @@ ms.technology: windows-devices
 
     The following assumption is no longer valid:
 
-    ```
+    ```cpp
     #ifdef _WIN32  // 32-bit Windows code
     ...
     #else          // 16-bit Windows code
@@ -39,7 +35,7 @@ ms.technology: windows-devices
 
     Also, the following assumption is no longer valid:
 
-    ```
+    ```cpp
     #ifdef _WIN16  // 16-bit Windows code
     ...
     #else          // 32-bit Windows code
@@ -55,7 +51,7 @@ ms.technology: windows-devices
 
     **Note**   A future version of Visual C++ will support **%I** to print polymorphic data. It will treat values as 64 bits in 64-bit Windows and 32 bits in 32-bit Windows. Visual C++ will also support **%I64** to print values that are 64 bits.
 
-     
+     
 
 <!-- -->
 
@@ -69,7 +65,7 @@ ms.technology: windows-devices
 
     Consider the following:
 
-    ```
+    ```cpp
     ULONG x;
     LONG y;
     LONG *pVar1;
@@ -84,7 +80,7 @@ ms.technology: windows-devices
 
     The following assertion is not true on 64-bit systems:
 
-    ```
+    ```cpp
     ~((UINT64)(PAGE_SIZE-1)) == (UINT64)~(PAGE_SIZE-1)
     PAGE_SIZE = 0x1000UL  // Unsigned long - 32 bits
     PAGE_SIZE - 1 = 0x00000fff
@@ -92,21 +88,21 @@ ms.technology: windows-devices
 
     LHS expression:
 
-    ```
+    ```cpp
     // Unsigned expansion(UINT64)(PAGE_SIZE -1 ) = 0x0000000000000fff
     ~((UINT64)(PAGE_SIZE -1 )) = 0xfffffffffffff000
     ```
 
     RHS expression:
 
-    ```
+    ```cpp
     ~(PAGE_SIZE-1) = 0xfffff000
     (UINT64)(~(PAGE_SIZE - 1)) = 0x00000000fffff000
     ```
 
     Hence:
 
-    ```
+    ```cpp
     ~((UINT64)(PAGE_SIZE-1)) != (UINT64)(~(PAGE_SIZE-1))
     ```
 
@@ -114,14 +110,14 @@ ms.technology: windows-devices
 
     Consider the following:
 
-    ```
+    ```cpp
     UINT_PTR a; ULONG b;
     a = a & ~(b - 1); 
     ```
 
     The problem is that ~(b−1) produces 0x0000 0000 *xxxx xxxx* and not 0xFFFF FFFF *xxxx xxxx*. The compiler will not detect this. To fix this, change the code as follows:
 
-    ```
+    ```cpp
     a = a & ~((UINT_PTR)b - 1);
     ```
 
@@ -129,7 +125,7 @@ ms.technology: windows-devices
 
     Consider the following:
 
-    ```
+    ```cpp
     len = ptr2 - ptr1 
     /* len could be greater than 2**32 */
     ```
@@ -138,7 +134,7 @@ ms.technology: windows-devices
 
     **Note**   If *len* is declared **INT** or **ULONG**, this will generate a compiler warning. Buffer sizes, even when computed correctly, may still exceed the capacity of **ULONG**.
 
-     
+     
 
 -   Avoid using computed or hard-coded pointer offsets.
 
@@ -152,7 +148,7 @@ ms.technology: windows-devices
 
     For example:
 
-    ```
+    ```cpp
     DWORD index = 0;
     CHAR *p;
 
@@ -161,13 +157,13 @@ ms.technology: windows-devices
 
     On 32-bit machines:
 
-    ```
+    ```cpp
     p[index-1] == p[0xffffffff] == p[-1] 
     ```
 
     On 64-bit machines:
 
-    ```
+    ```cpp
     p[index-1] == p[0x00000000ffffffff] != p[-1]
     ```
 
@@ -175,58 +171,58 @@ ms.technology: windows-devices
 
 ### Polymorphism
 
--   Be careful with polymorphic interfaces.
+- Be careful with polymorphic interfaces.
 
-    Do not create functions that accept parameters of type **DWORD** (or other fixed-precision types) for polymorphic data. If the data can be a pointer or an integral value, the parameter type should be **UINT\_PTR** or **PVOID**, not **DWORD**.
+  Do not create functions that accept parameters of type **DWORD** (or other fixed-precision types) for polymorphic data. If the data can be a pointer or an integral value, the parameter type should be **UINT\_PTR** or **PVOID**, not **DWORD**.
 
-    For example, do not create a function that accepts an array of exception parameters typed as **DWORD** values. The array should be an array of **DWORD\_PTR** values. Therefore, the array elements can hold addresses or 32-bit integral values. The general rule is that if the original type is **DWORD** and it needs to be pointer width, convert it to a **DWORD\_PTR** value. That is why there are corresponding pointer-precision types for the native Win32 types. If you have code that uses **DWORD**, **ULONG**, or other 32-bit types in a polymorphic way (that is, you really want the parameter or structure member to hold an address), use **UINT\_PTR** in place of the current type.
+  For example, do not create a function that accepts an array of exception parameters typed as **DWORD** values. The array should be an array of **DWORD\_PTR** values. Therefore, the array elements can hold addresses or 32-bit integral values. The general rule is that if the original type is **DWORD** and it needs to be pointer width, convert it to a **DWORD\_PTR** value. That is why there are corresponding pointer-precision types for the native Win32 types. If you have code that uses **DWORD**, **ULONG**, or other 32-bit types in a polymorphic way (that is, you really want the parameter or structure member to hold an address), use **UINT\_PTR** in place of the current type.
 
--   Be careful when calling functions that have pointer OUT parameters.
+- Be careful when calling functions that have pointer OUT parameters.
 
-    Do not do this:
+  Do not do this:
 
-    ```
-    void GetBufferAddress(OUT PULONG *ptr);
-    {
-      *ptr=0x1000100010001000;
-    }
-    void foo()
-    {
-      ULONG bufAddress;
-      //
-      // This call causes memory corruption.
-      //
-      GetBufferAddress((PULONG *)&bufAddress);
-    }
-    ```
+  ```cpp
+  void GetBufferAddress(OUT PULONG *ptr);
+  {
+    *ptr=0x1000100010001000;
+  }
+  void foo()
+  {
+    ULONG bufAddress;
+    //
+    // This call causes memory corruption.
+    //
+    GetBufferAddress((PULONG *)&bufAddress);
+  }
+  ```
 
-    Typecasting *bufAddress* to (**PULONG** \*) prevents a compiler error. However, *GetBufferAddress* will write a 64-bit value into the memory location at *&bufAddress*. Because *bufAddress* is only a 32-bit value, the 32 bits immediately following *bufAddress* will get overwritten. This is a very subtle, hard-to-find bug.
+  Typecasting *bufAddress* to (**PULONG** \*) prevents a compiler error. However, *GetBufferAddress* will write a 64-bit value into the memory location at *&bufAddress*. Because *bufAddress* is only a 32-bit value, the 32 bits immediately following *bufAddress* will get overwritten. This is a very subtle, hard-to-find bug.
 
--   Do not cast pointers to **INT**, **LONG**, **ULONG**, or **DWORD**.
+- Do not cast pointers to **INT**, **LONG**, **ULONG**, or **DWORD**.
 
-    If you must cast a pointer to test some bits, set or clear bits, or otherwise manipulate its contents, use the **UINT**\_**PTR** or **INT**\_**PTR** type. These types are integral types that scale to the size of a pointer for both 32-bit and 64-bit Windows (for example, **ULONG** for 32-bit Windows and **\_int64** for 64-bit Windows). For example, assume you are porting the following code:
+  If you must cast a pointer to test some bits, set or clear bits, or otherwise manipulate its contents, use the **UINT**\_**PTR** or **INT**\_**PTR** type. These types are integral types that scale to the size of a pointer for both 32-bit and 64-bit Windows (for example, **ULONG** for 32-bit Windows and **\_int64** for 64-bit Windows). For example, assume you are porting the following code:
 
-    ```
-    ImageBase = (PVOID)((ULONG)ImageBase | 1);
-    ```
+  ```cpp
+  ImageBase = (PVOID)((ULONG)ImageBase | 1);
+  ```
 
-    As a part of the porting process, you would change the code as follows:
+  As a part of the porting process, you would change the code as follows:
 
-    ```
-    ImageBase = (PVOID)((ULONG_PTR)ImageBase | 1);
-    ```
+  ```cpp
+  ImageBase = (PVOID)((ULONG_PTR)ImageBase | 1);
+  ```
 
-    Use **UINT**\_**PTR** and **INT**\_**PTR** where appropriate (and if you are uncertain whether they are required, there is no harm in using them just in case). Do not cast your pointers to the types **ULONG**, **LONG**, **INT**, **UINT**, or **DWORD**.
+  Use **UINT**\_**PTR** and **INT**\_**PTR** where appropriate (and if you are uncertain whether they are required, there is no harm in using them just in case). Do not cast your pointers to the types **ULONG**, **LONG**, **INT**, **UINT**, or **DWORD**.
 
-    **Note**  **HANDLE** is defined as a **void \***, so typecasting a **HANDLE** value to a **ULONG** value to test, set, or clear the low two bits is a programming error.
+  **Note**  **HANDLE** is defined as a **void \\**<em>, so typecasting a **HANDLE</em>* value to a **ULONG** value to test, set, or clear the low two bits is a programming error.
 
-     
+     
 
--   Use **PtrToLong** and **PtrToUlong** to truncate pointers.
+- Use **PtrToLong** and **PtrToUlong** to truncate pointers.
 
-    If you must truncate a pointer to a 32-bit value, use the **PtrToLong** or **PtrToUlong** function (defined in *Basetsd.h*). This function disables the pointer truncation warning for the duration of the call.
+  If you must truncate a pointer to a 32-bit value, use the **PtrToLong** or **PtrToUlong** function (defined in *Basetsd.h*). This function disables the pointer truncation warning for the duration of the call.
 
-    Use these functions carefully. After you truncate a pointer variable using one of these functions, never cast the resulting **LONG** or **ULONG** back to a pointer. These functions truncate the upper 32 bits of an address, which are usually needed to access the memory originally referenced by pointer. Using these functions without careful consideration will result in fragile code.
+  Use these functions carefully. After you truncate a pointer variable using one of these functions, never cast the resulting **LONG** or **ULONG** back to a pointer. These functions truncate the upper 32 bits of an address, which are usually needed to access the memory originally referenced by pointer. Using these functions without careful consideration will result in fragile code.
 
 ### Data Structures and Structure Alignment
 
@@ -244,7 +240,7 @@ ms.technology: windows-devices
 
     For example:
 
-    ```
+    ```cpp
     struct xx {
        DWORD NumberOfPointers;
        PVOID Pointers[1];
@@ -254,14 +250,14 @@ ms.technology: windows-devices
 
     The following allocation is incorrect in 64-bit Windows because the compiler will pad the structure with an additional 4 bytes to make the 8-byte alignment requirement:
 
-    ```
+    ```cpp
     malloc(sizeof(DWORD)+100*sizeof(PVOID)); 
      
     ```
 
     Here is how to do it correctly:
 
-    ```
+    ```cpp
     malloc(FIELD_OFFSET(struct xx, Pointers) +100*sizeof(PVOID));
     ```
 
@@ -269,20 +265,20 @@ ms.technology: windows-devices
 
     The **TYPE\_ALIGNMENT** macro returns the alignment requirement for a given data type on the current platform. For example:
 
-    ```
+    ```cpp
     TYPE_ALIGNMENT(KFLOATING_SAVE) == 4 on x86, 8 on Itanium
     TYPE_ALIGNMENT(UCHAR) == 1 everywhere
     ```
 
     As an example, code such as this:
 
-    ```
+    ```cpp
     ProbeForRead(UserBuffer, UserBufferLength, sizeof(ULONG));
     ```
 
     becomes more portable when changed to:
 
-    ```
+    ```cpp
     ProbeForRead(UserBuffer, UserBufferLength, TYPE_ALIGNMENT(ULONG));
     ```
 
@@ -294,7 +290,7 @@ ms.technology: windows-devices
 
     On 64-bit Windows, if a data structure is misaligned, routines that manipulate the structure, such as [**RtlCopyMemory**](https://msdn.microsoft.com/library/windows/hardware/ff561808) and **memcpy**, will not fault. Instead, they will raise an exception. For example:
 
-    ```
+    ```cpp
     #pragma pack (1)  /* also set by /Zp switch */
     struct Buffer {
         ULONG size;
@@ -310,7 +306,7 @@ ms.technology: windows-devices
 
     You could use the **UNALIGNED** macro to fix this:
 
-    ```
+    ```cpp
     void SetPointer(void *p) {
         struct Buffer s;
         *(UNALIGNED void *)&s.ptr = p;
@@ -321,7 +317,7 @@ ms.technology: windows-devices
 
     **Note**  If possible, avoid using different packing levels in the same header file.
 
-     
+     
 
 ### Additional Information
 
@@ -329,12 +325,10 @@ ms.technology: windows-devices
 
 -   [Getting Ready for 64-bit Windows](https://msdn.microsoft.com/library/windows/desktop/aa384198) (user-mode application porting guide)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Porting%20Issues%20Checklist%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -1,22 +1,22 @@
 ---
 title: INF DDInstall.Components Section
 description: The DDInstall.Components section contains one or more INF AddComponent directives that reference additional INF-writer-defined sections in a driver package INF file.
-ms.author: windowsdriverdev
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # INF DDInstall.Components Section
 
 This optional section contains one or more [**INF AddComponent directives**](inf-addcomponent-directive.md) that reference additional INF-writer-defined sections in a driver package INF file.  This section is supported for Windows 10 Version 1703 and later.
 
-```
+```ini
 [install-section-name.Components] |
 [install-section-name.nt.Components] |
 [install-section-name.ntx86.Components] |
 [install-section-name.ntia64.Components] |
-[install-section-name.ntamd64.Components]
+[install-section-name.ntamd64.Components] |
+[install-section-name.ntarm.Components] |
+[install-section-name.ntarm64.Components] |
  
 AddComponent=ComponentName,[flags],component-install-section
 ```
@@ -35,11 +35,11 @@ This directive references an INF-writer-defined component-install-section elsewh
 
 The specified *DDInstall* section must be referenced in a device/models-specific entry under the per-manufacturer *Models* section of the INF file.  The case-insensitive extensions to the *install-section-name* shown in the formal syntax statement can be inserted into such a *DDInstall*.**Components** section name in cross-platform INF files.
 
-For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 ## Examples
 
-```
+```ini
 [ContosoGrfx.NT.Components]
 AddComponent = ContosoControlPanel,,Component_Inst
 

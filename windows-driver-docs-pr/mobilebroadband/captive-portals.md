@@ -2,11 +2,8 @@
 title: Captive portals
 description: Captive portals
 ms.assetid: 6f710440-3012-4bf4-92cc-3743b0f4fd34
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Captive portals
@@ -41,19 +38,19 @@ To determine Internet connectivity and captive portal status when a client first
 
 To avoid false positive or false negative test results, your captive portal should not do the following:
 
--   Allow access to **www.msftncsi.com** when the user does not have access to the Internet.
+- Allow access to <strong>www.msftncsi.com</strong> when the user does not have access to the Internet.
 
--   Change the captive portal behavior that is displayed to clients. For example, do not redirect some requests and drop other requests; you should continue to redirect all requests until authentication succeeds.
+- Change the captive portal behavior that is displayed to clients. For example, do not redirect some requests and drop other requests; you should continue to redirect all requests until authentication succeeds.
 
-    **Note**  
-    Denial of Service mitigations should be based on the frequency of attempts per client, not the number of attempts per client or the total attempts from all clients.
+  **Note**  
+  Denial of Service mitigations should be based on the frequency of attempts per client, not the number of attempts per client or the total attempts from all clients.
 
-     
+     
 
 ## <span id="touchfr"></span><span id="TOUCHFR"></span>Touch-friendly web pages
 
 
-The Windows 8, Windows 8.1, and Windows 10 experience is designed to be touch-first. This extends to web pages. Consider laying out your web page with larger, easy-to-target controls for a touch user. Use layouts that do not require excessive scrolling to interact with, and break flows into multiple pages if necessary. For more information on touch-friendly web design, see [Designing for Touch Input](https://msdn.microsoft.com/en-us/library/windows/apps/hh465415.aspx).
+The Windows 8, Windows 8.1, and Windows 10 experience is designed to be touch-first. This extends to web pages. Consider laying out your web page with larger, easy-to-target controls for a touch user. Use layouts that do not require excessive scrolling to interact with, and break flows into multiple pages if necessary. For more information on touch-friendly web design, see [Designing for Touch Input](https://msdn.microsoft.com/library/windows/apps/hh465415.aspx).
 
 ## <span id="pap"></span><span id="PAP"></span>Provision after purchase
 
@@ -63,25 +60,24 @@ The same provisioning file that can be applied by an app can also be applied by 
 **Note**  
 This provisioning file must be signed when it is provided by a website or an app that is not the mobile broadband app.
 
- 
+ 
 
 Passing an XML provisioning file enables the operating system to automatically connect to other networks that are included in the user’s service, even if they have different service set identifiers (SSIDs). If you use static Wireless Internet Service Provider roaming (WISPr) credentials, it also enables a smoother connection experience because in the future, Windows can automatically authenticate with those credentials.
 
 ## <span id="appinst"></span><span id="APPINST"></span>Offer app installation
 
 
-The richest experience of Windows 8, Windows 8.1, and Windows 10 is through the use of a mobile broadband app. It is not possible to allow access to only one app in the Windows Store through a captive portal, so the app cannot be installed prior to the user obtaining Internet connectivity. However, after the user has authenticated, consider directing them to the Windows Store to install your mobile broadband app.
+The richest experience of Windows 8, Windows 8.1, and Windows 10 is through the use of a mobile broadband app. It is not possible to allow access to only one app in the Microsoft Store through a captive portal, so the app cannot be installed prior to the user obtaining Internet connectivity. However, after the user has authenticated, consider directing them to the Microsoft Store to install your mobile broadband app.
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Hotspot authentication methods](hotspot-authentication-methods.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Captive%20portals%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

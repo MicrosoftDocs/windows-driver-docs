@@ -2,17 +2,14 @@
 title: Generating OID Requests from an NDIS Protocol Driver
 description: Generating OID Requests from an NDIS Protocol Driver
 ms.assetid: a27d1c9c-fc7e-414f-8cad-595e8d8fe8f8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Generating OID Requests from an NDIS Protocol Driver
 
 
-## <a href="" id="ddk-generating-oid-requests-from-an-ndis-protocol-driver-ng"></a>
+
 
 
 To originate an OID request to underlying drivers, a protocol calls the [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710) function.
@@ -35,9 +32,9 @@ If the underlying driver should associate the OID request with a subsequent stat
 
 A driver can call **NdisOidRequest** when a binding is in the *Restarting*, *Running*, *Pausing*, or *Paused* state.
 
- 
+ 
 
- 
+ 
 
 
 

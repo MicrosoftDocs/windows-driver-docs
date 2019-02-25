@@ -1,19 +1,13 @@
 ---
 title: Time Travel Debugging - Troubleshooting
 description: This section describes how to troubleshoot time travel traces.
-ms.author: windowsdriverdev
-ms.date: 09/24/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/18/2017
+ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
 
-
-# ![Small logo on windbg preview](images/windbgx-preview-logo.png) Time Travel Debugging - Troubleshooting
+# Time Travel Debugging - Troubleshooting
 
 This section describes how to troubleshoot time travel traces.
 
@@ -27,9 +21,9 @@ As the message indicates, running the debugger elevated is a requirement. In ord
 
 Re-install WinDbg Preview using an account that has administrator privileges and use that account when recording in the debugger.
 
-### I can't launch and record a Windows Store application
+### I can't launch and record a UWP application
 
-This is not supported at this time, but you may attach to and record an already-running Windows Store application.
+This is not supported at this time, but you may attach to and record an already-running UWP application.
 
 ### I can't record a <insert name of unusual process type - running in another session, security context, credentials...> process
 
@@ -45,24 +39,29 @@ TTD recording is an invasive technology, which can interfere with other invasive
 
 See "Things to look out for" in [Time Travel Debugging - Overview](time-travel-debugging-overview.md) for information on known TTD incompatibilities.
 
+### I’m tracing an application and running AppVerifer at the same time, and the performance when replaying the trace is slow.
+
+Because of the way AppVerifer uses memory to check the application, the experience later when replaying the trace can be noticeably worse than without AppVerifier. To improve performance, disable AppVerifier when recording the app. If this is not possible, you may need to close the callstack window in WinDbg in order to improve performance.
+
+
 ## Issues with .IDX index files
 
 Debugging a trace file without an index file, or with a corrupted or incomplete index file, is possible, but is not recommended.
 The index file is needed to ensure that memory values read from the debugged process are most accurate, and to increase the efficiency of all other debugging operations.
 
-Use the ```!index -status``` command to examine the state of the .IDX index file associated with the .RUN trace file.
+Use the `!index -status` command to examine the state of the .IDX index file associated with the .RUN trace file.
 
-If it you may try recreating the index file by running ```!index -force```.
+If it you may try recreating the index file by running `!index -force`.
 
 ### Recreating the .IDX index file
 
-If you suspect and issue with the index file, or ```!index -status``` says anything other than "Index file loaded", recreate it.
-To do this you may run ```!index -force```. If that fails:
+If you suspect and issue with the index file, or `!index -status` says anything other than "Index file loaded", recreate it.
+To do this you may run `!index -force`. If that fails:
 
 1. Close the debugger.
 2. Delete the existing IDX file, it will have the same name as the .RUN trace file and be located in the same directory that the .RUN file is.
-3. Open the trace .RUN file in WinDbg Preview. This will run the ```!index``` command to re-create the index.
-4. Use the ```!index -status``` command to confirm that the trace index is functional.
+3. Open the trace .RUN file in WinDbg Preview. This will run the `!index` command to re-create the index.
+4. Use the `!index -status` command to confirm that the trace index is functional.
 
 Ensure that there's enough space for the index file in the same location where the trace file resides.
 Depending on the contents of the recording, the index file may be significantly larger than the trace file, typically on the order of twice as large.
@@ -71,12 +70,13 @@ Depending on the contents of the recording, the index file may be significantly 
 
 When there are issues with the trace .RUN file, you may receive error messages such as these.
 
-```
+```dbgcmd
 Replay and log are out of sync at fallback data. Packet type is incorrect "Packet Type"
 Replay and log are out of sync at opaque data. Log had already reached the end
 Replay exit thread event does not match up with logged event
 Logged debug write values are out of sync with replay
 ```
+
 In most cases all of the failure messages indicate that the .RUN trace file is not usable and must be re-recorded.
 
 
@@ -89,7 +89,7 @@ If there is a specific issue with recording a user mode app, you may want to try
 
 It is possible that you may see messages like this one:
 
-```
+```dbgcmd
 Derailment event MissingDataDerailment(7) on UTID 2, position 2A550B:108 with PC 0x7FFE5EEB4448 Request address: 0x600020, size: 32
 ```
 
@@ -107,7 +107,6 @@ In most cases this failure message indicates that the .RUN trace file will have 
 ---
 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Using%20WinDbg%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

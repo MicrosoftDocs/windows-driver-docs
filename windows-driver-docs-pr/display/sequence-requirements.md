@@ -10,11 +10,8 @@ keywords:
 - compressed buffers WDK DirectX VA
 - buffers WDK DirectX VA
 - succession requirements WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sequence Requirements
@@ -45,13 +42,12 @@ Examples that show the decoding of conventional I, B, and P-structured video fra
 
 **Note**   For compressed buffers, as well as for uncompressed surfaces, it is generally better to cycle through the allocated and available buffers rather than to keep reusing the same buffer, or the same subset of allocated buffers. This can reduce the possibility of added delays caused by waiting on unnecessary dependencies. The allocation of multiple buffers by a driver should be taken as an indication that cycling through these buffers for double or triple buffering is the proper way to operate and to avoid artifacts, such as temporary picture freezes. This applies to alpha-blend data loading in particular.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Sequence%20Requirements%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

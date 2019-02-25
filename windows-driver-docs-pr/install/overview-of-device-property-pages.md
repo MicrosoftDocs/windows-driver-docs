@@ -2,11 +2,8 @@
 title: Overview of Device Property Pages
 description: Overview of Device Property Pages
 ms.assetid: b117721a-db32-4144-b0ae-5a0fca40f9db
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Device Property Pages
@@ -19,7 +16,7 @@ Independent hardware vendors (IHVs) typically provide custom device property pag
 An IHV creates a custom device property page by using a property page provider. A property page provider can be one of the following:
 
 <a href="" id="class-installers-and-co-installers"></a>**Class Installers and Co-installers**  
-A co-installer or class installer can provide one or more custom device property pages by supporting the DIF\_ADDPROPERTYPAGE\_ADVANCED device installation function (DIF) code.
+A co-installer or class installer can provide one or more custom device property pages by supporting the DIF_ADDPROPERTYPAGE_ADVANCED device installation function (DIF) code.
 
 <a href="" id="property-page-extension-dll"></a>**Property Page Extension DLL**  
 A dynamic-link library (DLL) that provides one or more custom device property pages is referred to as a *property page extension DLL*. This type of provider supports custom property pages by implementing the **AddPropSheetPageProc**, **ExtensionPropSheetPageProc**, and other property sheet callback functions.
@@ -30,15 +27,15 @@ An IHV should supply a provider of custom device property pages in its driver pa
 
 **Note**  In versions of Windows earlier than Windows 2000, users set such information in Control Panel. Driver software that is written for Windows 2000 and later versions of Windows should provide property pages instead.
 
- 
+ 
 
 For more information about property page providers, see [Types of Device Property Page Providers](types-of-device-property-page-providers.md).
 
-The Windows SDK for Windows 7 and .NET Framework 4.0 documentation provides comprehensive guidance about property pages and the Microsoft Win32 functions that manipulate them. For more information about property pages and property sheets, see [Property Sheet](http://go.microsoft.com/fwlink/p/?linkid=180781) in the Windows SDK for Windows 7 and .NET Framework 4.0 documentation.
+The Windows SDK for Windows 7 and .NET Framework 4.0 documentation provides comprehensive guidance about property pages and the Microsoft Win32 functions that manipulate them. For more information about property pages and property sheets, see [Property Sheet](https://go.microsoft.com/fwlink/p/?linkid=180781) in the Windows SDK for Windows 7 and .NET Framework 4.0 documentation.
 
- 
+ 
 
- 
+ 
 
 
 

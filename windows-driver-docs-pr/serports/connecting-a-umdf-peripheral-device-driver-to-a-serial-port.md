@@ -1,13 +1,9 @@
 ---
 title: Connecting a UMDF Peripheral Driver to a Serial Port
-author: windows-driver-content
 description: The UMDF driver for a peripheral device on a SerCx2-managed serial port requires certain hardware resources to operate the device. Included in these resources is the information that the driver needs to open a logical connection to the serial port.
 ms.assetid: 75FC5E79-59E9-4C07-9119-A4FE81CC318E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connecting a UMDF Peripheral Driver to a Serial Port
@@ -22,11 +18,11 @@ After the serially connected peripheral device enters an uninitialized D0 device
 To enable a UMDF peripheral driver to receive connection IDs in its resource list, the INF file that installs the driver must include the following directive in its WDF-specific **DDInstall** section:
 
 **UmdfDirectHardwareAccess = AllowDirectHardwareAccess**
-For more information about this directive, see [Specifying WDF Directives in INF Files](https://msdn.microsoft.com/library/windows/hardware/ff560526). For an example of a INX file (used to build the corresponding INF file) that uses this directive, see the [SpbAccelerometer driver sample](http://go.microsoft.com/fwlink/p/?LinkId=618052).
+For more information about this directive, see [Specifying WDF Directives in INF Files](https://msdn.microsoft.com/library/windows/hardware/ff560526). For an example of a INX file (used to build the corresponding INF file) that uses this directive, see the [SpbAccelerometer driver sample](https://go.microsoft.com/fwlink/p/?LinkId=618052).
 
 The following code example shows how the driver's **OnPrepareHardware** method obtains the connection ID from the *pWdfResourcesTranslated* parameter.
 
-```
+```cpp
 BOOLEAN fConnectIdFound = FALSE;
 BOOLEAN fDuplicateFound = FALSE;
 LARGE_INTEGER connectionId = 0;
@@ -98,7 +94,7 @@ for (ULONG ix = 0; ix < resourceCount; ix++)
 
 The preceding code example copies the connection ID for the serially connected peripheral device into a variable named `connectionId`. The following code example shows how to incorporate the connection ID into a device path name that can be used to identify the serial controller that the peripheral device is connected to.
 
-```
+```cpp
 WCHAR szTargetPath[100];
 HRESULT hres;
 
@@ -119,7 +115,7 @@ if (FAILED(hres))
 
 The preceding code example writes the device path name for the serial controller into the `szTargetPath` array. The following code example uses this path name to open a file handle to the serial controller.
 
-```
+```cpp
 UMDF_IO_TARGET_OPEN_PARAMS openParams;
 
 openParams.dwShareMode = 0;
@@ -143,7 +139,7 @@ To send an I/O control request to the serial controller, the driver first calls 
 
 In the following code example, the peripheral driver sends an I/O control request to the serial controller.
 
-```
+```cpp
 HRESULT hres;
 IWDFMemory *pInputMemory = NULL;
 
@@ -227,12 +223,10 @@ The preceding code example does the following:
 5.  The **Send** method sends the formatted write request to the serially connected peripheral device. The `Flags` variable indicates whether the write request is to be sent synchronously or asynchronously.
 6.  If the request is sent synchronously, the [**IWDFIoRequest::DeleteWdfObject**](https://msdn.microsoft.com/library/windows/hardware/ff560210) method deletes both the I/O request object pointed to by `pWdfIoRequest` and the child object pointed to by `pInputMemory`. The **IWDFIoRequest** interface inherits this method from the [**IWDFObject**](https://msdn.microsoft.com/library/windows/hardware/ff560200) interface. If the request is sent asynchronously, the call to the **DeleteWdfObject** method should occur later, in the driver's **OnCompletion** method.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bserports\serports%5D:%20Connecting%20a%20UMDF%20Peripheral%20Driver%20to%20a%20Serial%20Port%20%20RELEASE:%20%288/4/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -8,11 +8,8 @@ keywords:
 - architecture WDK Winsock Kernel
 - network modules WDK Winsock Kernel
 - subsystem WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Winsock Kernel Architecture
@@ -30,9 +27,9 @@ WSK applications discover and attach to the WSK subsystem by using a set of [WSK
 
 Alternately, WSK applications can attach to the WSK subsystem by using the [Network Module Registrar (NMR)](network-module-registrar2.md). For more information, see [Using NMR for WSK Registration and Unregistration](using-nmr-for-wsk-registration-and-unregistration.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,17 +3,14 @@ title: Bug Check 0x2A INCONSISTENT_IRP
 description: The INCONSISTENT_IRP bug check has a value of 0x0000002A. This indicates that an IRP was found to contain inconsistent information.
 ms.assetid: e8dcfba1-94ed-499c-ae00-e0dfaf7f5094
 keywords: ["Bug Check 0x2A INCONSISTENT_IRP", "INCONSISTENT_IRP"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - INCONSISTENT_IRP
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x2A: INCONSISTENT\_IRP
@@ -21,7 +18,7 @@ api_type:
 
 The INCONSISTENT\_IRP bug check has a value of 0x0000002A. This indicates that an IRP was found to contain inconsistent information.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## INCONSISTENT\_IRP Parameters
 
@@ -57,7 +54,7 @@ The INCONSISTENT\_IRP bug check has a value of 0x0000002A. This indicates that a
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -69,9 +66,9 @@ Remarks
 
 This bug check code is not currently being used in the system, but exists for debugging purposes.
 
- 
+ 
 
- 
+ 
 
 
 

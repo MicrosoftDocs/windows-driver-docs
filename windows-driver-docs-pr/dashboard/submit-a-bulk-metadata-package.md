@@ -2,11 +2,9 @@
 title: Submit a Bulk Metadata Package
 description: Submit a Bulk Metadata Package
 ms.assetid: c8e248d4-a419-48e1-839d-1bbb9adda382
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
+ms.localizationpriority: medium
 ---
 
 # Submit a Bulk Metadata Package
@@ -17,7 +15,7 @@ ms.technology: windows-devices
 
 **To submit a bulk metadata package**
 
-1.  Sign the bulk metadata package with the [SignTool](http://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
+1.  Sign the bulk metadata package with the [SignTool](https://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
 
 2.  Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account.
 
@@ -34,7 +32,7 @@ Bulk metadata submission packages should be uploaded to the Dashboard by using t
 
 A maximum of 50 devicemetadata-ms or devicemanifest-ms files can be included in a bulk package.
 
-For info about using the Device Metadata Submission Wizard to create a bulk metadata package, see [Creating a device metadata submission package in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=251705).
+For info about using the Device Metadata Submission Wizard to create a bulk metadata package, see [Creating a device metadata submission package in Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=251705).
 
 ### <span id="Bulk_Metadata_Submission_Package_Contents"></span><span id="bulk_metadata_submission_package_contents"></span><span id="BULK_METADATA_SUBMISSION_PACKAGE_CONTENTS"></span>Bulk Metadata Submission Package Contents
 
@@ -57,7 +55,7 @@ The XML documents must be saved by using UTF-8 encoding.
 
 You must include at least one device metadata or device manifest package in your bulk metadata submission package.
 
- 
+ 
 
 ### <span id="Structure_of_a_Bulk_Metadata_Submission_Package"></span><span id="structure_of_a_bulk_metadata_submission_package"></span><span id="STRUCTURE_OF_A_BULK_METADATA_SUBMISSION_PACKAGE"></span>Structure of a Bulk Metadata Submission Package
 
@@ -80,11 +78,11 @@ Filename1, Filename2, Filename3, Filename4, and so on, must be GUIDs.
 
 To create the BulkMetadataSubmission.xml, see below.
 
-To develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226753).
+To develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753).
 
 To develop the device manifest package, \*.devicemanifest-ms, see [Submit a PC device manifest package](https://msdn.microsoft.com/library/windows/hardware/hh801890.aspx).
 
-You can use the Cabarc tool to create these CAB packages. To learn more about this tool, see [Cabarc Overview](http://go.microsoft.com/fwlink/p/?LinkId=248843).
+You can use the Cabarc tool to create these CAB packages. To learn more about this tool, see [Cabarc Overview](https://go.microsoft.com/fwlink/p/?LinkId=248843).
 
 When you create a \*.bulkmetadata-ms file by using the Cabarc tool, you must create a local directory in which the device metadata packages (\*.devicemetadata-ms), the device manifest packages (\*.devicemanifest-ms), and the BulkMetadataSubmission XML document are at the root of the directory.
 
@@ -94,7 +92,7 @@ When you create a \*.bulkmetadata-ms file by using the Cabarc tool, you must cre
 
 -   The GUID for each device metadata package and device manifest package must be unique. When you create a new or revised package, you must create a new GUID.
 
--   For more details about how to create cabinet files, see [Microsoft Cabinet SDK](http://go.microsoft.com/fwlink/p/?LinkId=248844).
+-   For more details about how to create cabinet files, see [Microsoft Cabinet SDK](https://go.microsoft.com/fwlink/p/?LinkId=248844).
 
 **Example**
 
@@ -122,9 +120,9 @@ N .\BulkFiles\ DDMMYYYY.bulkmetadata-ms
 ```
 
 **Note**  
-You can find more information about this tool in [Cabarc Overview](http://go.microsoft.com/fwlink/p/?LinkId=248843).
+You can find more information about this tool in [Cabarc Overview](https://go.microsoft.com/fwlink/p/?LinkId=248843).
 
- 
+ 
 
 ## <span id="creating_bulkmetadatasubmission.xml"></span><span id="CREATING_BULKMETADATASUBMISSION.XML"></span>Creating BulkMetadataSubmission.xml
 
@@ -138,7 +136,7 @@ The data in the BulkMetadataSubmission.xml document is formatted based on the Bu
 **Note**  
 The XML document must be saved by using UTF-8 encoding.
 
- 
+ 
 
 **BulkMetadataSubmission XML Schema NameSpace**
 
@@ -220,7 +218,7 @@ The following table describes the metadata elements and attributes of the BulkMe
 </tbody>
 </table>
 
- 
+ 
 
 **BulkMetadataSubmission XML Schema Metadata**
 
@@ -331,7 +329,7 @@ The BulkMetadataSubmission XML schema defines the following elements and attribu
 
 **Experience Element**
 
-The Experience element specifies information for a single experience. For more information about experiences, see [Device Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226753).
+The Experience element specifies information for a single experience. For more information about experiences, see [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753).
 
 Based on this information, the Dashboard either creates an experience with the correct information and submits packages to this experience, or updates an existing experience with new packages.
 
@@ -518,7 +516,7 @@ You can select one of two options for each experience. These options and their d
 </tbody>
 </table>
 
- 
+ 
 
 **LogoSubmissionIDList Element**
 
@@ -638,11 +636,10 @@ The following XML document uses the BulkMetadataSubmission XML schema to specify
 </BulkMetadataSubmission>
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Submit%20a%20Bulk%20Metadata%20Package%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

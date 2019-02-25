@@ -1,6 +1,5 @@
 ---
 title: Components of a Remote File System
-author: windows-driver-content
 description: Components of a Remote File System
 ms.assetid: b2cd153a-5bcc-4670-8542-afa55e14727a
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - redirector drivers WDK , remote file systems
 - remote file systems WDK
 - file system drivers WDK , remote file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Components of a Remote File System
@@ -45,11 +41,10 @@ The following sections discuss concepts that are important to developers of remo
 
 [Kernel Network Redirector Driver Components](kernel-network-redirector-driver-components.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

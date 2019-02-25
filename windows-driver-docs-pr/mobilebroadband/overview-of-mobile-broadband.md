@@ -2,11 +2,8 @@
 title: Overview of mobile broadband
 description: Overview of mobile broadband
 ms.assetid: 5193927b-7367-468e-8012-c41f6bd743a3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of mobile broadband
@@ -22,7 +19,7 @@ Windows 8, Windows 8.1, and Windows 10 present an opportunity to reimagine an
 
 -   The need for a custom driver and for custom connection management software meant that USB-based mobile broadband devices need to also perform a USB storage function in order to deliver that custom software to the user’s PC. This dual-mode device concept often requires the user to switch between storage mode and modem mode, adding an extra task before the user can successfully connect to the network.
 
--   Highlight unique services and capabilities that make your customer experience unique. Windows 8, Windows 8.1, and Windows 10 provide the opportunity to focus on the customer connection and to highlight your unique value-add through a Windows Store mobile broadband app, previously known as a mobile operator app.
+-   Highlight unique services and capabilities that make your customer experience unique. Windows 8, Windows 8.1, and Windows 10 provide the opportunity to focus on the customer connection and to highlight your unique value-add through a UWP mobile broadband app, previously known as a mobile operator app.
 
 ## <span id="Key_scenarios"></span><span id="key_scenarios"></span><span id="KEY_SCENARIOS"></span>Key scenarios
 
@@ -64,21 +61,21 @@ In this case, an embedded device, mobile broadband app, and service metadata is 
     **Note**  
     This step is only necessary if the OEM has not inserted the SIM and preloaded the mobile broadband app and service metadata.
 
-     
+     
 
 2.  When the PC is connected to the Internet, the HWIDs are sent to Windows Metadata and Internet Services (WMIS). WMIS identifies the operator and returns the appropriate service metadata package.
 
     **Note**  
     This step is only necessary if the OEM has not inserted the SIM and preloaded the mobile broadband app and service metadata.
 
-     
+     
 
-3.  Windows uses the service metadata to identify and retrieve the mobile broadband app from the Windows Store. The app is installed automatically. In Windows 8.1 and Windows 10, the app is not pinned to the Start screen.
+3.  Windows uses the service metadata to identify and retrieve the mobile broadband app from the Microsoft Store. The app is installed automatically. In Windows 8.1 and Windows 10, the app is not pinned to the Start screen.
 
     **Note**  
     This step is only necessary if the OEM has not inserted the SIM and preloaded the mobile broadband app and service metadata.
 
-     
+     
 
 4.  Your operator logo and name appear in the Networks list in Windows Connection Manager. The user can connect to your network.
 
@@ -99,7 +96,7 @@ In this case, an embedded device, mobile broadband app, and service metadata is 
 **Important**  
 The steps above also apply to an external device that is attached to the PC with an alternate Internet connection.
 
- 
+ 
 
 ### <span id="Mobile_broadband_app_is_not_installed_and_no_alternate_Internet_connection_is_available"></span><span id="mobile_broadband_app_is_not_installed_and_no_alternate_internet_connection_is_available"></span><span id="MOBILE_BROADBAND_APP_IS_NOT_INSTALLED_AND_NO_ALTERNATE_INTERNET_CONNECTION_IS_AVAILABLE"></span>Mobile broadband app is not installed and no alternate Internet connection is available
 
@@ -125,7 +122,7 @@ An external mobile broadband device, such as a hardware dongle, can be inserted 
 
 4.  The HWIDs that are calculated from the SIM or mobile broadband device are sent to WMIS. WMIS identifies the operator and returns the appropriate service metadata package.
 
-5.  Windows uses the service metadata to identify and retrieve the associated mobile broadband app from the Windows Store. The app is installed automatically and registered for background events. In Windows 8.1 and Windows 10, the app is not automatically pinned to the Start screen. Registering for background events allows the app to do things such as reacting to local data usage counters, receiving operator SMS messages, connecting to Wi-Fi hotspots, and handling entitlement checks. More details about background tasks can be found in [Introduction to Background Tasks](http://www.microsoft.com/download/details.aspx?id=27411).
+5.  Windows uses the service metadata to identify and retrieve the associated mobile broadband app from the Microsoft Store. The app is installed automatically and registered for background events. In Windows 8.1 and Windows 10, the app is not automatically pinned to the Start screen. Registering for background events allows the app to do things such as reacting to local data usage counters, receiving operator SMS messages, connecting to Wi-Fi hotspots, and handling entitlement checks. More details about background tasks can be found in [Introduction to Background Tasks](http://www.microsoft.com/download/details.aspx?id=27411).
 
 6.  When a background event occurs, the app generates a more complete provisioning file, if needed, and passes it to the provisioning agent. This configures Windows with information about the plan that the user has purchased.
 
@@ -172,14 +169,14 @@ Some examples of what the operator could include in the mobile broadband app for
 **Note**  
 Windows 8, Windows 8.1, and Windows 10 do not include an SMS app with the operating system so a mobile broadband app or a third-party SMS app to which the operator gives privileged access is needed in order to display SMS messages to the user.
 
- 
+ 
 
 **Note**  
 Building a mobile broadband app with SMS support is necessary to show notification UI to the end user when text messages are received, which may be required to conform to regulatory requirements or best practices in certain markets.
 
- 
+ 
 
-SMS functionality is available to mobile broadband apps, Windows Store apps that are given privileged access to mobile network operators, Windows Store apps that are given privileged access by the PC OEM (if the mobile broadband device is embedded in the PC), or the mobile broadband device IHV (if the mobile broadband device is removable). Mobile network operators and the PC OEM (or the mobile broadband device IHV) specify privileged apps through service metadata. For more information about service metadata, see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
+SMS functionality is available to mobile broadband apps, UWP apps that are given privileged access to mobile network operators, UWP apps that are given privileged access by the PC OEM (if the mobile broadband device is embedded in the PC), or the mobile broadband device IHV (if the mobile broadband device is removable). Mobile network operators and the PC OEM (or the mobile broadband device IHV) specify privileged apps through service metadata. For more information about service metadata, see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
 
 ### Providing accurate usage and plan data
 
@@ -299,9 +296,9 @@ Windows 8.1 and Windows 10 support multiple PDP contexts to be active at the s
 
 ### <span id="Wireline_operators"></span><span id="wireline_operators"></span><span id="WIRELINE_OPERATORS"></span>Wireline operators
 
-You can use PnP-X to expose non-mobile broadband devices as a Windows Store device app.
+You can use PnP-X to expose non-mobile broadband devices as a UWP device app.
 
-Devices such as DVRs, gateway routers, mobile hotspots, and phones can (while connected to the same Wi-Fi or LAN network as the Windows 8, Windows 8.1, or Windows 10 PC) use PnP-X to make Windows 8, Windows 8.1, and Windows 10 aware of their presence. Device metadata is downloaded for those devices based on their device properties and a Windows Store device app developed by you is automatically downloaded. You can reference this app for these devices so that a single mobile broadband app can manage mobile broadband as well as these additional devices.
+Devices such as DVRs, gateway routers, mobile hotspots, and phones can (while connected to the same Wi-Fi or LAN network as the Windows 8, Windows 8.1, or Windows 10 PC) use PnP-X to make Windows 8, Windows 8.1, and Windows 10 aware of their presence. Device metadata is downloaded for those devices based on their device properties and a UWP device app developed by you is automatically downloaded. You can reference this app for these devices so that a single mobile broadband app can manage mobile broadband as well as these additional devices.
 
 ## <span id="How_it_works"></span><span id="how_it_works"></span><span id="HOW_IT_WORKS"></span>How it works
 
@@ -330,7 +327,7 @@ The following components are part of Windows 8, Windows 8.1, and Windows 10:
 
 -   [Windows Metadata and Internet Services](#windows-metadata-and-internet-services)
 
--   [Windows Store](#windows-store)
+-   [Microsoft Store](#microsoft-store)
 
 ### Provisioning Agent
 
@@ -346,7 +343,7 @@ For more details about the format and content of the provisioning file, see [Usi
 
 ### Data Usage and Subscription Manager
 
-The Data Usage and Subscription Manager tracks details about the user’s accounts. The stored cost information about the currently connected network is available to all Windows Store apps. You can update this information by using the Provisioning Agent.
+The Data Usage and Subscription Manager tracks details about the user’s accounts. The stored cost information about the currently connected network is available to all UWP apps. You can update this information by using the Provisioning Agent.
 
 If the carrier requests it, the Data Usage and Subscription Manager uses local data counters to trigger a background event when 5 percent of the data limit has been used. The System Event Broker delivers this background event and the mobile broadband app can use the event as a trigger to update billable usage.
 
@@ -400,22 +397,22 @@ The System Event Broker manages background events. Apps, including the mobile br
 
 -   **Incoming USSD** – USSD message received that does not match operator-defined parsing rules.
 
-Developers should be aware that a strict limit is placed on the amount of CPU time that an app may consume while it is not active. Although these limits are relaxed for some events, apps must always minimize the resources that they consume while the system is in a low-power state or while another app is running. For more information about background events in Windows 8 and Windows 10, see [Introduction to Background Tasks](http://go.microsoft.com/fwlink/?linkid=227329).
+Developers should be aware that a strict limit is placed on the amount of CPU time that an app may consume while it is not active. Although these limits are relaxed for some events, apps must always minimize the resources that they consume while the system is in a low-power state or while another app is running. For more information about background events in Windows 8 and Windows 10, see [Introduction to Background Tasks](https://go.microsoft.com/fwlink/?linkid=227329).
 
 ### Windows Metadata and Internet Services
 
-Windows Metadata and Internet Services (WMIS) is a cloud-based Windows service that delivers customizations to Windows from third parties that participate in the Windows device ecosystem. For a mobile broadband device, WMIS delivers the service metadata package. This provides the basic information that Windows needs in order to retrieve the mobile broadband app from the Windows Store, allow connectivity to the network for the first time, and display appropriate branding elements in Windows Connection Manager.
+Windows Metadata and Internet Services (WMIS) is a cloud-based Windows service that delivers customizations to Windows from third parties that participate in the Windows device ecosystem. For a mobile broadband device, WMIS delivers the service metadata package. This provides the basic information that Windows needs in order to retrieve the mobile broadband app from the Microsoft Store, allow connectivity to the network for the first time, and display appropriate branding elements in Windows Connection Manager.
 
-### Windows Store
+### Microsoft Store
 
-The Windows Store is the primary way that Windows Store apps are delivered to Windows 8, Windows 8.1, and Windows 10 PCs. For a mobile broadband app, the app package is retrieved from the Windows Store whenever Internet connectivity is available after the device is connected. The app package is automatically installed and available to the user at that point. In Windows 8.1 and Windows 10, the app is available in **All Apps** but is not automatically pinned to the Start screen.
+The Microsoft Store is the primary way that UWP apps are delivered to Windows 8, Windows 8.1, and Windows 10 PCs. For a mobile broadband app, the app package is retrieved from the Microsoft Store whenever Internet connectivity is available after the device is connected. The app package is automatically installed and available to the user at that point. In Windows 8.1 and Windows 10, the app is available in **All Apps** but is not automatically pinned to the Start screen.
 
-For more information about Windows Store device apps, see the [Windows Store device apps](https://msdn.microsoft.com/library/windows/hardware/dn265154) topic on MSDN.
+For more information about UWP device apps, see [UWP device apps](https://msdn.microsoft.com/library/windows/hardware/dn265154).
 
 **Note**  
-Although enterprises can side load Windows Store apps under certain conditions, these will not be covered in this document.
+Although enterprises can side load UWP apps under certain conditions, these will not be covered in this document.
 
- 
+ 
 
 ### <span id="Operator_metadata"></span><span id="operator_metadata"></span><span id="OPERATOR_METADATA"></span>Operator metadata
 
@@ -429,13 +426,13 @@ The Windows APN database is present on all Windows 8, Windows 8.1, and Windows
 
 This information is intended to get customers online within seconds of connecting a mobile broadband device. It should enable them to purchase service immediately by using a Web browser or get online immediately if they have already purchased service.
 
-For information on submitting updates to the Windows APN database, see [APN database submission](apn-database-submission.md).
+For information on submitting updates to the Windows APN database, see [COSA/APN database submission](cosa-apn-database-submission.md).
 
 ### <span id="Service_metadata"></span><span id="service_metadata"></span><span id="SERVICE_METADATA"></span>Service metadata
 
 Service metadata is delivered to any user after he or she connects a mobile broadband device. Service metadata is always automatically downloaded as long as the user has any form of Internet connectivity, including metered mobile broadband or roaming networks.
 
-This information enables customers to have a richer experience by allowing you to add branding elements for Windows Connection Manager, referencing a mobile broadband app that is automatically acquired from the Windows Store, and having the most current mobile broadband settings for getting online for purchase or Internet connectivity. Windows will periodically check that it has the latest service metadata package from WMIS.
+This information enables customers to have a richer experience by allowing you to add branding elements for Windows Connection Manager, referencing a mobile broadband app that is automatically acquired from the Microsoft Store, and having the most current mobile broadband settings for getting online for purchase or Internet connectivity. Windows will periodically check that it has the latest service metadata package from WMIS.
 
 The service metadata package is delivered to customers only when a mobile broadband device from the specified operator is detected on the PC. Information in this package overrides the content of the APN database, whenever it’s present. For more information on the service metadata package schema reference, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
 
@@ -447,11 +444,10 @@ Provisioning metadata is delivered to the PC by either the operator’s website 
 
 Provisioning metadata can be specified for each subscriber’s individual requirements. The provisioning metadata may also be updated with much higher frequency by using the mobile broadband app. Information in the provisioning metadata overrides the contents of the APN database and the service metadata. This is because it tends to be the most specific and tailored information about the subscriber.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Overview%20of%20mobile%20broadband%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

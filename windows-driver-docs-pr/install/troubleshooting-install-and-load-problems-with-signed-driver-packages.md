@@ -9,11 +9,8 @@ keywords:
 - signatures WDK , troubleshooting
 - troubleshooting driver signing WDK
 - kernel-mode driver signing WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Troubleshooting Install and Load Problems with Signed Driver Packages
@@ -29,9 +26,9 @@ The main tools for troubleshooting install and load problems with test-signed dr
 
 [SetupAPI Device Installation Log Entries](setupapi-device-installation-log-entries.md)
 
- 
+ 
 
- 
+ 
 
 
 

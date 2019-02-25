@@ -7,17 +7,14 @@ keywords:
 - data WDK networking , sending
 - packets WDK networking , sending
 - sending data WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending Network Data
 
 
-## <a href="" id="ddk-sending-network-data-ng"></a>
+
 
 
 The following figure illustrates a basic send operation, which involves a protocol driver, NDIS, and a miniport driver.
@@ -38,9 +35,9 @@ Protocol drivers set the **SourceHandle** member in the NET\_BUFFER\_LIST struct
 
 Intermediate drivers also set the **SourceHandle** member in the NET\_BUFFER\_LIST structure to the *NdisBindingHandle* value that NDIS provided in a call to **NdisOpenAdapterEx**. If an intermediate driver forwards a send request, the driver must save the **SourceHandle** value that the overlying driver provided before it writes to the **SourceHandle** member. When NDIS returns a forwarded NET\_BUFFER\_LIST structure to the intermediate driver, the intermediate driver must restore the **SourceHandle** that it saved.
 
- 
+ 
 
- 
+ 
 
 
 

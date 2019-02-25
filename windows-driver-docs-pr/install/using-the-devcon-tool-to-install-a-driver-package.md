@@ -2,11 +2,8 @@
 title: Using the DevCon Tool to Install a Driver Package
 description: Using the DevCon Tool to Install a Driver Package
 ms.assetid: d77573e0-7866-46a5-88bc-c911bbd2a165
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the DevCon Tool to Install a Driver Package
@@ -20,15 +17,15 @@ To install the driver package through DevCon, do the following:
 
 2.  From the elevated, Command Prompt window, enter the following:
 
-    ```
+    ```cpp
     devcon.exe install c:\toaster\toastpkg.inf {b85b7c50-6a01-11d2-b841-00c04fad5171}\mstoaster
     ```
 
     This command-line specifies the location of the driver package's INF file (*c:\\toaster\\toastpkg.inf*) and the toaster device's hardware identifier (ID), which is specified within the INF file.
 
- 
+ 
 
- 
+ 
 
 
 

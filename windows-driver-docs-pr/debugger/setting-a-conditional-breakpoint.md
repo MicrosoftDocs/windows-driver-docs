@@ -3,11 +3,8 @@ title: Conditional breakpoints in WinDbg and other Windows debuggers
 description: Conditional breakpoints in WinDbg and other Windows debuggers are useful when you need to break in only if a specific condition is satisfied.
 ms.assetid: 9fa5b417-8904-48bc-ad5c-62ba35d70b73
 keywords: ["breakpoints, conditional", "conditional breakpoints"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Conditional breakpoints in WinDbg and other Windows debuggers
@@ -22,19 +19,19 @@ A conditional breakpoint is created by combining a breakpoint command with eithe
 
 The basic syntax for a conditional breakpoint using the **j** command is as follows:
 
-```
+```dbgcmd
 0:000> bp Address "j (Condition) 'OptionalCommands'; 'gc' "
 ```
 
 The basic syntax for a conditional breakpoint using the **.if** token is as follows:
 
-```
+```dbgcmd
 0:000> bp Address ".if (Condition) {OptionalCommands} .else {gc}"
 ```
 
 Conditional breakpoints are best illustrated with an example. The following command sets a breakpoint at line 143 of the Mysource.cpp source file. When this breakpoint is hit, the variable **MyVar** is tested. If this variable is less than or equal to 20, execution continues; if it is greater than 20, execution stops.
 
-```
+```dbgcmd
 0:000> bp `mysource.cpp:143` "j (poi(MyVar)>0n20) ''; 'gc' " 
 0:000> bp `mysource.cpp:143` ".if (poi(MyVar)>0n20) {} .else {gc}"
 ```
@@ -53,7 +50,7 @@ The preceding command has a fairly complicated syntax that contains the followin
 
 If you want to see a message each time the breakpoint is passed or when it is finally hit, you can use additional commands in the single quotation marks or curly brackets. For example:
 
-```
+```dbgcmd
 0:000> bp `:143` "j (poi(MyVar)>5) '.echo MyVar Too Big'; '.echo MyVar Acceptable; gc' " 
 0:000> bp `:143` ".if (poi(MyVar)>5) {.echo MyVar Too Big} .else {.echo MyVar Acceptable; gc} " 
 ```
@@ -64,13 +61,13 @@ These comments are especially useful if you have several such breakpoints runnin
 
 In some situations you might want to break into the debugger only if a string variable matches a pattern. For example, suppose you want to break at kernel32!CreateEventW only if the *lpName* argument points to a string that matches the pattern "Global\*". The following example shows how to create the conditional breakpoint.
 
-```
+```dbgcmd
 bp kernel32!CreateEventW "$$<c:\\commands.txt"
 ```
 
 The preceding [**bp**](bp--bu--bm--set-breakpoint-.md) command creates a breakpoint based on conditions and optional commands that are in a script file named commands.txt. The script file contains the following statements.
 
-```
+```dbgcmd
 .if (@r9 != 0) { as /mu ${/v:EventName} @r9 } .else { ad /q ${/v:EventName} }
 .if ($spat(@"${EventName}", "Global*") == 0)  { gc } .else { .echo EventName }
 ```
@@ -81,13 +78,9 @@ The *lpName* argument passed to the **CreateEventW** function is the fourth argu
 
 2.  Use [**$spat**](masm-numbers-and-operators.md) to compare the string represented by EventName to the pattern "Global\*". If the string does not match the pattern, use [**gc**](gc--go-from-conditional-breakpoint-.md) to continue without breaking. If the string does match the pattern, break and display the string represented by EventName.
 
-    **Note**  [**$spat**](masm-numbers-and-operators.md) performs a case-insensitive match.
+**Note**  [**$spat**](masm-numbers-and-operators.md) performs a case-insensitive match.
 
-     
-
-    **Note**  The ampersand ( @ ) character in $spat(@"${EventName}" specifies that the string represented by EventName is to be interpreted literally; that is, a backslash ( \\ ) is treated as a backslash rather than an escape character.
-
-     
+**Note**  The ampersand ( @ ) character in $spat(@"${EventName}" specifies that the string represented by EventName is to be interpreted literally; that is, a backslash ( \\ ) is treated as a backslash rather than an escape character.
 
 ### <span id="conditional_breakpoints_and_register_sign_extension"></span><span id="CONDITIONAL_BREAKPOINTS_AND_REGISTER_SIGN_EXTENSION"></span>Conditional Breakpoints and Register Sign Extension
 
@@ -95,14 +88,14 @@ You can set a breakpoint that is conditional on a register value.
 
 The following command will break at the beginning of the **myFunction** function if the **eax** register is equal to 0xA3:
 
-```
+```dbgcmd
 0:000> bp mydriver!myFunction "j @eax = 0xa3  '';'gc'" 
 0:000> bp mydriver!myFunction ".if @eax = 0xa3  {} .else {gc}"
 ```
 
 However, the following similar command will not necessarily break when **eax** equals 0xC0004321:
 
-```
+```dbgcmd
 0:000> bp mydriver!myFunction "j @eax = 0xc0004321  '';'gc'" 
 0:000> bp mydriver!myFunction ".if @eax = 0xc0004321  {} .else {gc}"
 ```
@@ -113,7 +106,7 @@ You should formulate your commands defensively against sign extension in both mo
 
 The following command will work properly in user mode and kernel mode:
 
-```
+```dbgcmd
 0:000> bp mydriver!myFunction "j (@eax & 0x0`ffffffff) = 0x0`c0004321  '';'gc'" 
 0:000> bp mydriver!myFunction ".if (@eax & 0x0`ffffffff) = 0x0`c0004321  {} .else {gc}"
 ```
@@ -126,7 +119,7 @@ In WinDbg, you can create a conditional breakpoint by clicking [Breakpoints](edi
 
 For example, typing **mymod!myFunc+0x3A** into the **Command** box and **myVar &lt; 7** into the **Condition** box is equivalent to issuing the following command:
 
-```
+```dbgcmd
 0:000> bu mymod!myFunc+0x3A "j(myVar<7) '.echo "Breakpoint hit, condition myVar<7"'; 'gc'" 
 0:000> bu mymod!myFunc+0x3A ".if(myVar<7) {.echo "Breakpoint hit, condition myVar<7"} .else {gc}" 
 ```
@@ -135,11 +128,10 @@ For example, typing **mymod!myFunc+0x3A** into the **Command** box and **myVar &
 
 If you are [controlling the user-mode debugger from the kernel debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md), you cannot use conditional breakpoints or any other breakpoint command string that contains the [**gc (Go from Conditional Breakpoint)**](gc--go-from-conditional-breakpoint-.md) or [**g (Go)**](g--go-.md) commands. If you use these commands, the serial interface might not be able to keep up with the number of breakpoint passes, and you will be unable to break back into CDB.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Conditional%20breakpoints%20in%20WinDbg%20and%20other%20Windows%20debuggers%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

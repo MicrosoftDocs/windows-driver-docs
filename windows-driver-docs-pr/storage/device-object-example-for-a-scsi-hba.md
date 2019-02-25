@@ -1,17 +1,13 @@
 ---
 title: Device Object Example for a SCSI HBA
-author: windows-driver-content
 description: Device Object Example for a SCSI HBA
 ms.assetid: 695ccf9a-a18f-4f1f-bfdc-24fefc2846b4
 keywords:
 - storage drivers WDK , device objects
 - device objects WDK storage
 - SCSI HBA device object example WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Object Example for a SCSI HBA
@@ -56,11 +52,10 @@ Starting from the bottom of the figure, the following describes each device obje
 
     This figure shows a filter DO created by a disk-encryption filter driver and attached to the disk PDO for partition 1.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

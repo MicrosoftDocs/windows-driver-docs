@@ -1,16 +1,12 @@
 ---
 title: A User Plugs in a Device
-author: windows-driver-content
 description: A User Plugs in a Device
 ms.assetid: 1968270b-ce57-4a8c-8b7a-bbd4a972435d
 keywords:
 - power management scenarios WDK UMDF , plugging in a device
 - plugging in a device scenario WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # A User Plugs in a Device
@@ -26,9 +22,9 @@ The framework begins by calling the driver’s [**IDriverEntry::OnDeviceAdd**](h
 
 The framework proceeds through this sequence for each UMDF function or filter driver that supports the device, one driver at a time, starting with the driver that is lowest in the driver stack.
 
- 
+ 
 
- 
+ 
 
 
 

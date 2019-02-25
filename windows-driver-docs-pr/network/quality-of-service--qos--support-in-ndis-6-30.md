@@ -2,11 +2,8 @@
 title: Quality of Service (QoS) Support in NDIS 6.30
 description: Quality of Service (QoS) Support in NDIS 6.30
 ms.assetid: B425C05C-0F65-4F94-AECD-0BAD35DA441F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Quality of Service (QoS) Support in NDIS 6.30
@@ -28,9 +25,9 @@ This policy specifies how the network adapter selects egress traffic for deliver
 
 For more information about NDIS QoS support for DCB, see [NDIS QoS for Data Center Bridging](ndis-qos-for-data-center-bridging.md).
 
- 
+ 
 
- 
+ 
 
 
 

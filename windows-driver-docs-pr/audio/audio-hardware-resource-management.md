@@ -2,37 +2,31 @@
 title: Audio Hardware Resource Management
 description: Windows 10 includes the ability to express concurrency constraints using and XML file.
 ms.assetid: 6E94529E-F3F0-4DC5-AF8B-F896A4F991E3
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/29/2017
+ms.localizationpriority: medium
 ---
 
 # Audio Hardware Resource Management
 
-
 Windows 10 includes the ability to express concurrency constraints using and XML file. On resource constrained mobile devices the ability to specify priority for specific audio streams can enhance the customer experience.
 
 **Note**   This mechanism is only available in phones and tablets.
-
- 
-
+ 
 One challenge with creating a good audio experience on a low cost mobile device, is that some devices have various concurrency constraints. For example, it is possible that the device can only play up to 6 audio streams concurrently and supports only 2 offload streams. When there is an active phone call on a mobile device, it is possible that the device supports only 2 audio streams. When the device is capturing audio, the device can only play up to 4 audio streams.
 
 Windows 10 includes a mechanism to express concurrency constraints to insure that high-priority audio streams and cellular phone calls will be able to play. If the system does not have enough resources, then low priority streams are terminated. This mechanism is only available in phones and tablets not on desktops or laptops.
 
 To specify constraints complete these two steps.
 
--   Create a concurrency constraints XML file as described in [Specify Concurrency Constraints](#specify_concurrency_constraints).
--   Configure a registry entry to use the custom concurrency constraints XML file as described in [Registry\_Key\_Configuration](#registry_key_configuration).
+- Create a concurrency constraints XML file as described in [Specify Concurrency Constraints](#specify_concurrency_constraints).
+- Configure a registry entry to use the custom concurrency constraints XML file as described in [Registry\_Key\_Configuration](#registry_key_configuration).
 
 ## <span id="Specify_Concurrency_Constraints"></span><span id="specify_concurrency_constraints"></span><span id="SPECIFY_CONCURRENCY_CONSTRAINTS"></span>Specify Concurrency Resource Constraints
 
 
 The XML constraints file is made up of three sections. The first required section is defined by &lt;Limits&gt; &lt;/Limits&gt;. This section can be used to define up to fifteen resource restraints. For example you could define constraints for the maximum number of rendering stream and the maximum number of streams that can be off loaded.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ConstraintModel>
   
@@ -56,7 +50,7 @@ For example, if the audio hardware has both HandsetSpeaker and WiredHeadsetSpeak
 
 This section can have multiple &lt;ExclusiveEndpoints&gt; nodes. Each ExclusiveEndpoints node contains two or more Endpoint nodes. Each Endpoint node contains HWID, TopologyName, and PinId.
 
-```
+```xml
   <ExclusiveEndpoints>
     <Endpoint>
       <HWID>Root\sysvad_PhoneAudioSample</HWID>
@@ -79,7 +73,7 @@ This section can have multiple &lt;ExclusiveEndpoints&gt; nodes. Each ExclusiveE
 
 The last required section of the XML file defines various resource consumers. This section of the file contains multiple &lt;ResourceConsumer&gt; entries. Each entry identifies information about a resource consumer and their associated resources use. Each resource that is used, must be previously defined in the &lt;Limits&gt; section.
 
-```
+```xml
   <ResourceConsumer>
     <!-- Active Phone call -->
     <ConsumerInfo>
@@ -145,7 +139,7 @@ The following table summarizes the render audio stream priorities, listed from h
 | Other                    | 13  |
 | Alerts                   | 14  |
 
- 
+ 
 
 The following table summarizes the capture audio stream priorities, listed from highest to lowest priority.
 
@@ -173,39 +167,37 @@ The following table summarizes the capture audio stream priorities, listed from 
 | Ringtone                 | 15  |
 | System                   | 15  |
 
- 
+ 
 
 **Examples**
 
--   Example 1: The user is talking over Skype, using Communications Render and Capture streams. They start a game, which attempts to create a Game Effects stream. If there aren’t enough resources available, the Game Effects stream creation will fail.
--   Example 2: The user is playing music. They start an application that creates a Speech stream. If there aren’t enough resources available, the music stream will be terminated and the Speech stream creation will succeed.
+- Example 1: The user is talking over Skype, using Communications Render and Capture streams. They start a game, which attempts to create a Game Effects stream. If there aren’t enough resources available, the Game Effects stream creation will fail.
+
+- Example 2: The user is playing music. They start an application that creates a Speech stream. If there aren’t enough resources available, the music stream will be terminated and the Speech stream creation will succeed.
 
 ## <span id="Registry_Key_Configuration"></span><span id="registry_key_configuration"></span><span id="REGISTRY_KEY_CONFIGURATION"></span>Registry Key Configuration
 
+The full path to the concurrency constraints XML file needs to be specified in the following registry key. 
 
-The full path to the concurrency constraints XML file needs to be specified in the following registry key.
-
-```
-HKLM\System\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig
+```inf
+HKR\SYSTEM\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig
 ```
 
-In this registry key, provide a value containing the path to the XML. It is recommended that the name of the XML file and regkey value name be unique since there is potential for other subsystems/audio devices providing their own set of constraints in XML files. The regkey can be set in the audio driver INF file or preferably through the phone Package schema as shown here.
+The path is relative to the driver install. In the driver INF installation the constraint XML file needs to be copied and the following line would be added to register it with the system:
 
+```inf
+HKR,SYSTEM\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig,<Name of the constraint>,,<Path to the constraint>
 ```
-<RegKeys> 
-        <RegKey KeyName="$(hklm.system)\MultiMedia\DeviceCapability\ResourceSettings\XMLConfig"> 
-        <RegValue Name="AudioResourceConstraintExamplePath" Type="REG_SZ" 
-                        Value="C:\\Windows\\System32\\AudioResourceConstraintsExample.xml" /> 
-        </RegKey> 
-</RegKeys>
-```
+
+In this registry key, provide a value containing the path to the XML. It is recommended that the name of the XML file and regkey value name be unique since there is potential for other subsystems/audio devices providing their own set of constraints in XML files. The regkey can be set in the audio driver INF file.
+
 
 ## <span id="Example_XML_Constraints_File"></span><span id="example_xml_constraints_file"></span><span id="EXAMPLE_XML_CONSTRAINTS_FILE"></span>Example XML Constraints File
 
 
 This is an example XML constraints file from the SYSVAD virtual audio driver sample.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ConstraintModel>
 
@@ -1633,12 +1625,10 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
 </ConstraintModel>
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Hardware%20Resource%20Management%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

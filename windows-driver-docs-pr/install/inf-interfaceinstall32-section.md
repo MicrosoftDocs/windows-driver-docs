@@ -10,11 +10,8 @@ api_name:
 - INF InterfaceInstall32 Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF InterfaceInstall32 Section
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 This section creates one or more new [device interface classes](device-interface-classes.md). After a new class is created, subsequently installed devices/drivers can be registered to support the new device interface class by using [**INF *DDInstall*.Interfaces sections**](inf-ddinstall-interfaces-section.md) in their respective INF files, or by calling [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506).
 
-```
+```ini
 [InterfaceInstall32]
  
 {InterfaceClassGUID}=install-interface-section[,flags]
@@ -48,18 +45,22 @@ If specified, this entry must be zero.
 Remarks
 -------
 
-When a specified *InterfaceClassGUID* is not already installed in the system, that interface class is installed as the corresponding *DDInstall***.Interfaces** section is processed by the [SetupAPI](setupapi.md) functions during device installation or when that device's driver makes the initial call to **IoRegisterDeviceInterface**.
+When a specified *InterfaceClassGUID* is not already installed in the system, that interface class is installed as the corresponding <em>DDInstall</em>**.Interfaces** section is processed by the [SetupAPI](setupapi.md) functions during device installation or when that device's driver makes the initial call to **IoRegisterDeviceInterface**.
 
 Each *install-interface-section* name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
 Any specified *install-interface-section* has the following general form:
 
-```
+```ini
 [interface-install-section] | 
 [interface-install-section.nt] | 
 [interface-install-section.ntx86] | 
 [interface-install-section.ntia64] | (Windows XP and later versions of Windows)
 [interface-install-section.ntamd64] (Windows XP and later versions of Windows)
+[interface-install-section.ntarm] (Windows 8 and later versions of Windows)
+[interface-install-section.ntarm64] (Windows 10 and later versions of Windows)
+
+
  
 AddReg=add-registry-section[, add-registry-section] ...
 [AddProperty=add-property-section[, add-property-section] ...]  (Windows Vista and later versions of Windows)
@@ -79,13 +80,13 @@ For more information about the entries in the *interface-install-section*, see [
 
 Starting with Windows Vista, you can set [device interface class](device-interface-classes.md) properties by including [**INF AddProperty directives**](inf-addproperty-directive.md) in an interface-install section. You can also delete device interface class properties by including [**INF DelProperty directives**](inf-delproperty-directive.md) in an interface-install section. However, you should use an **AddProperty** or **DelProperty** directive only to modify device interface class properties that are new to Windows Vista or later versions of Windows operating systems. For device interface class properties that were introduced on Windows Server 2003, Windows XP, or Windows 2000, and that have corresponding registry value entries, you should continue to use [**INF AddReg directives**](inf-addreg-directive.md) and [**INF DelReg directives**](inf-delreg-directive.md) to set and delete the device interface class properties. These guidelines apply to system-defined properties and custom properties. For more information about how to use the **AddProperty** directive and **DelProperty** directive, see [Using the INF AddProperty Directive and the INF DelProperty Directive](using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md).
 
-An **AddReg** directive references one or more add-registry sections that set device-interface-specific information in the registry during installation of this interface. An **HKR** specified in such an add-registry section designates the **..DeviceClasses\\{***InterfaceClassGUID***}** key.
+An **AddReg** directive references one or more add-registry sections that set device-interface-specific information in the registry during installation of this interface. An **HKR** specified in such an add-registry section designates the **..DeviceClasses\\{**<em>InterfaceClassGUID</em>**}** key.
 
 The registry information about this interface class should include at least a friendly name for the new [device interface class](device-interface-classes.md) and whatever information the higher level components need when they open and use this interface.
 
 In addition, such an *install-interface-section* might use any of the optional directives shown here to specify interface-specific installation operations.
 
-For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 ## See also
 
@@ -120,9 +121,9 @@ For more information about how to use the system-defined **.nt**, **.ntx86**, **
 
 [**UpdateInis**](inf-updateinis-directive.md)
 
- 
+ 
 
- 
+ 
 
 
 

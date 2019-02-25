@@ -1,12 +1,8 @@
 ---
 Description: This section provides links for manufacturers of USB peripheral devices.
 title: Building USB devices for Windows
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Building USB devices for Windows
@@ -21,10 +17,10 @@ This section provides links for manufacturers of USB peripheral devices.
 ## USB device enumeration process
 
 
-[How does USB stack enumerate a device?](http://go.microsoft.com/fwlink/p/?linkid=617517)  
+[How does USB stack enumerate a device?](https://go.microsoft.com/fwlink/p/?linkid=617517)  
 A detailed description of the enumeration process used by the Microsoft USB driver stack - starting from when the stack detects the presence of a device and indicates to the PnP manager that a new device has arrived.
 
-[USB 2.1, 2.0, 1.1 device enumeration changes in Windows 8](http://go.microsoft.com/fwlink/p/?linkid=617518)  
+[USB 2.1, 2.0, 1.1 device enumeration changes in Windows 8](https://go.microsoft.com/fwlink/p/?linkid=617518)  
 In Windows 8, we’ve made modifications in the USB driver stack in how the stack enumerates USB 2.1, 2.0, and 1.1 devices. Those modifications support new USB features and improve device enumeration performance. Read the post is to bring awareness to those subtle changes and enable device/firmware builders to easily determine the root cause of enumeration failures.
 
 ## Microsoft OS descriptors
@@ -34,19 +30,19 @@ USB devices store standard descriptors in firmware for the device and its interf
 
 An IHV can use Microsoft OS descriptors to store the information in firmware instead of providing it separately. Window retrieves that information by reading Microsoft OS descriptors, and uses it to install and configure the device without requiring any user interaction. See [Microsoft OS Descriptors for USB Devices](microsoft-defined-usb-descriptors.md).
 
-[Microsoft OS 1.0 Descriptors Specification](http://go.microsoft.com/fwlink/p/?linkid=617519)  
+[Microsoft OS 1.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=617519)  
 This document introduces Microsoft OS descriptors. It includes a specification for the OS string descriptor, extended properties OS feature descriptor, and OS feature descriptors formats.
 
-[Microsoft OS 2.0 Descriptors Specification](http://go.microsoft.com/fwlink/p/?linkid=306681)  
+[Microsoft OS 2.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=306681)  
 This document defines and describes the implementation of version 2.0 of the Microsoft OS Descriptors. The goal of Microsoft OS 2.0 Descriptors is to address the limitations and reliability problems with version 1.0 of OS descriptors and enable new Windows-specific functionality for USB devices.
 
 [Loading Winusb.sys as the function driver by using Microsoft OS descriptors](automatic-installation-of-winusb.md)  
-The IHV can define certain Microsoft operating system (OS) feature descriptors that report the compatible ID as "WINUSB". Those descriptors allow Windows to load Winusb.sys as the device's function driver without a custom INF file. For examples about how to define the compatible ID, see the example section of the Extended Compat ID OS Feature Descriptor Specification. The specification is included in the download for [Microsoft OS 1.0 Descriptors Specification](http://go.microsoft.com/fwlink/p/?linkid=617519).
+The IHV can define certain Microsoft operating system (OS) feature descriptors that report the compatible ID as "WINUSB". Those descriptors allow Windows to load Winusb.sys as the device's function driver without a custom INF file. For examples about how to define the compatible ID, see the example section of the Extended Compat ID OS Feature Descriptor Specification. The specification is included in the download for [Microsoft OS 1.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=617519).
 
 <a href="" id="setting-a-container-id-for-an-external-device-by-using-microsoft-os-descriptors"></a>Setting a container ID for an external device by using Microsoft OS descriptors  
 See [Setting a container ID](#container).
 
-## <a href="" id="container"></a>Setting a container ID
+## Setting a container ID
 
 
 [Container IDs for USB Devices](https://msdn.microsoft.com/library/windows/hardware/ff540084)  
@@ -55,7 +51,7 @@ Describes how Container IDs for Universal Serial Bus (USB) devices are generated
 [USB ContainerIDs in Windows](usb-containerids-in-windows.md)  
 Guidelines for device manufacturers to program their multifunction USB devices so that they can be correctly detected by Windows.
 
-[How to Generate a Container ID for a USB Device](http://go.microsoft.com/fwlink/p/?linkid=617520)  
+[How to Generate a Container ID for a USB Device](https://go.microsoft.com/fwlink/p/?linkid=617520)  
 The blog post describes how a device must report a container ID such that Windows enumerates and shows the device in **Devices and Printers** properly. For devices that support multiple functions (composite device) or components (compound device), the device must report the same ID for each portion. The device must report the ID in a Microsoft OS ContainerID descriptor.
 
 ## Implementing power management
@@ -85,7 +81,5 @@ These commands display information from data structures maintained by drivers in
 ## Related topics
 [Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Building%20USB%20devices%20for%20Windows%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

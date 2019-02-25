@@ -10,11 +10,8 @@ api_name:
 - INF DelService Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DelService Directive
@@ -22,11 +19,11 @@ ms.technology: windows-devices
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **DelService** directive is used in a [***DDInstall*.Services**](inf-ddinstall-services-section.md) section to remove one or more previously installed device/driver services from the target computer.
 
-```
+```ini
 [DDInstall.Services] 
  
 DelService=ServiceName[,[flags][,[EventLogType][,EventName]]
@@ -44,10 +41,10 @@ For a device, this value is usually a generic name for its driver, such as "serm
 <a href="" id="flags"></a>*flags*  
 This optional value is specifies one or more of the following flags, defined in *Setupapi.h*, that are specified as a hexadecimal value:
 
-<a href="" id="0x00000004--spsvcinst-deleteeventlogentry-"></a>**0x00000004** (SPSVCINST\_DELETEEVENTLOGENTRY)  
+<a href="" id="0x00000004--spsvcinst-deleteeventlogentry-"></a>**0x00000004** (SPSVCINST_DELETEEVENTLOGENTRY)  
 An event-log entry (or entries) associated with the given ServiceName should also be removed from the system.
 
-<a href="" id="0x00000200---spsvcinst-stopservice--"></a>**0x00000200** (SPSVCINST\_STOPSERVICE)   
+<a href="" id="0x00000200---spsvcinst-stopservice--"></a>**0x00000200** (SPSVCINST_STOPSERVICE)   
 Stop the service before deleting it.
 
 <a href="" id="eventlogtype"></a>*EventLogType*  
@@ -74,9 +71,9 @@ However, by default, event-log information supplied by a particular device drive
 
 [**DelReg**](inf-delreg-directive.md)
 
- 
+ 
 
- 
+ 
 
 
 

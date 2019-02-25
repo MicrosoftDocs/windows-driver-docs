@@ -1,15 +1,11 @@
 ---
-title: OID\_RECEIVE\_FILTER\_ENUM\_QUEUES
-author: windows-driver-content
-description: Overlying drivers and user-mode applications issue object identifier (OID) query requests of OID\_RECEIVE\_FILTER\_ENUM\_QUEUES to obtain a list of all the receive queues that are allocated on a network adapter.
+title: OID_RECEIVE_FILTER_ENUM_QUEUES
+description: Overlying drivers and user-mode applications issue object identifier (OID) query requests of OID_RECEIVE_FILTER_ENUM_QUEUES to obtain a list of all the receive queues that are allocated on a network adapter.
 ms.assetid: e8a946a2-9ee9-42a0-8175-fbc592d404d1
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_RECEIVE_FILTER_ENUM_QUEUES Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_RECEIVE\_FILTER\_ENUM\_QUEUES
@@ -46,7 +42,7 @@ NDIS handles the OID query request of OID\_RECEIVE\_FILTER\_ENUM\_QUEUES for min
 <tbody>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_SUCCESS</strong></p></td>
-<td><p>The request completed successfully. The <strong>InformationBuffer</strong> points to an [<strong>NDIS_RECEIVE_QUEUE_INFO_ARRAY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567205) structure.</p></td>
+<td><p>The request completed successfully. The <strong>InformationBuffer</strong> points to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff567205" data-raw-source="[&lt;strong&gt;NDIS_RECEIVE_QUEUE_INFO_ARRAY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567205)"><strong>NDIS_RECEIVE_QUEUE_INFO_ARRAY</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_PENDING</strong></p></td>
@@ -54,7 +50,7 @@ NDIS handles the OID query request of OID\_RECEIVE\_FILTER\_ENUM\_QUEUES for min
 </tr>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_INVALID_LENGTH</strong></p></td>
-<td><p>The information buffer was too short. NDIS set the <strong>DATA</strong>.<strong>METHOD_INFORMATION</strong>.<strong>BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS set the <strong>DATA</strong>.<strong>METHOD_INFORMATION</strong>.<strong>BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_FAILURE</strong></p></td>
@@ -63,7 +59,7 @@ NDIS handles the OID query request of OID\_RECEIVE\_FILTER\_ENUM\_QUEUES for min
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -98,12 +94,10 @@ Requirements
 
 [OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS](oid-receive-filter-queue-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_RECEIVE_FILTER_ENUM_QUEUES%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

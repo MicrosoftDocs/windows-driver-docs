@@ -1,19 +1,15 @@
 ---
 title: Writing WIA Properties by a Driver
-author: windows-driver-content
 description: Writing WIA Properties by a Driver
 ms.assetid: 6d2164ac-0fbc-4ecb-b3bf-a46efbe07f51
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing WIA Properties by a Driver
 
 
-## <a href="" id="ddk-writing-wia-properties-by-a-driver-si"></a>
+
 
 
 A WIA minidriver can update any of the current values of its WIA properties and valid values by using the following WIA service functions:
@@ -62,7 +58,7 @@ If a WIA property is invalid, andthe application is not writing to it, the inval
 
 The following example shows an implementation of the **IWiaMiniDrv::drvValidateItemProperties** method:
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvValidateItemProperties(
   BYTE           *pWiasContext,
   LONG           lFlags,
@@ -95,7 +91,7 @@ HRESULT _stdcall CWIADevice::drvValidateItemProperties(
 
   //
   // create a WIA property context, to gain access to
-  // the WIA application&#39;s intended settings.
+  // the WIA application's intended settings.
   //
 
   hr = wiasCreatePropContext(nPropSpec,
@@ -177,12 +173,10 @@ HRESULT _stdcall CWIADevice::drvValidateItemProperties(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Writing%20WIA%20Properties%20by%20a%20Driver%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

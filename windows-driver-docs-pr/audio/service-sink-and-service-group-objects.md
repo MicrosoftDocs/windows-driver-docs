@@ -14,11 +14,8 @@ keywords:
 - interrupt notifications WDK audio
 - interrupt service routines WDK audio
 - ISRs WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Service Sink and Service Group Objects
@@ -107,12 +104,10 @@ The [IServiceGroup](https://msdn.microsoft.com/library/windows/hardware/ff536994
 
 In addition, the PortCls system driver provides a [**PcNewServiceGroup**](https://msdn.microsoft.com/library/windows/hardware/ff537719) function for creating a new service group object. However, no similar function exists for creating a service sink object. The port driver simply adds an [IServiceSink](https://msdn.microsoft.com/library/windows/hardware/ff537006) interface to the implementation of its main port object--when the object is created, so is the service sink. The port driver can add the port object's IServiceSink interface to the service group that it receives from the miniport driver's **Init** or **NewStream** method. For convenience, header file Portcls.h defines **IMP\_IServiceSink** and **IMP\_IServiceGroup** constants for adding IServiceSink and [IServiceGroup](https://msdn.microsoft.com/library/windows/hardware/ff536994) interfaces to driver objects.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Service%20Sink%20and%20Service%20Group%20Objects%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

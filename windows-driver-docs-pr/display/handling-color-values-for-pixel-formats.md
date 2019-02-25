@@ -5,11 +5,8 @@ ms.assetid: 53ce6be1-14e1-4ee8-ba29-f198dcdacdaa
 keywords:
 - color values for pixel formats WDK DirectX 9.0
 - pixel format color values WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Color Values for Pixel Formats
@@ -26,7 +23,7 @@ The display driver receives color values when it processes the D3DDP2OP\_CLEAR a
 
 The display driver can use the following code to convert color values for the ARGB and YUV class formats:
 
-```
+```cpp
 DWORD Convert2N(DWORD Color, DWORD n)
 {
     return (Color * (1 << n)) / 256;
@@ -158,11 +155,10 @@ DWORD CPixel::ConvertFromARGB(D3DCOLOR  InputColor,
 }
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Handling%20Color%20Values%20for%20Pixel%20Formats%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

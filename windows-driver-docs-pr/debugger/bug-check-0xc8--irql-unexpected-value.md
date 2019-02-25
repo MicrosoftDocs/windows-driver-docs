@@ -3,17 +3,14 @@ title: Bug Check 0xC8 IRQL_UNEXPECTED_VALUE
 description: The IRQL_UNEXPECTED_VALUE bug check has a value of 0x000000C8. This indicates that the processor's IRQL is not what it should be at this time.
 ms.assetid: eff166ab-e245-48ea-ab9e-9bb722814acf
 keywords: ["Bug Check 0xC8 IRQL_UNEXPECTED_VALUE", "IRQL_UNEXPECTED_VALUE"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - IRQL_UNEXPECTED_VALUE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC8: IRQL\_UNEXPECTED\_VALUE
@@ -21,7 +18,7 @@ api_type:
 
 The IRQL\_UNEXPECTED\_VALUE bug check has a value of 0x000000C8. This indicates that the processor's IRQL is not what it should be at this time.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## IRQL\_UNEXPECTED\_VALUE Parameters
 
@@ -58,7 +55,7 @@ The IRQL\_UNEXPECTED\_VALUE bug check has a value of 0x000000C8. This indicates 
 </tbody>
 </table>
 
- 
+ 
 
 You can determine "UniqueValue" by computing (Parameter 1 AND 0xFF). If "UniqueValue" is either zero or one, Parameter 2, Parameter 3, and Parameter 4 will equal the indicated APC pointers. Otherwise, these parameters will equal zero.
 
@@ -67,9 +64,9 @@ Cause
 
 This error is usually caused by a device driver or another lower-level program that changed the IRQL for some period and did not restore the original IRQL at the end of that period. For example, the routine may have acquired a spin lock and failed to release it.
 
- 
+ 
 
- 
+ 
 
 
 

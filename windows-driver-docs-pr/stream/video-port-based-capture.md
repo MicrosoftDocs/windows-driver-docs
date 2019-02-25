@@ -1,6 +1,5 @@
 ---
 title: Video Port-Based Capture
-author: windows-driver-content
 description: Video Port-Based Capture
 ms.assetid: 84cc1ee3-142c-4dae-9f5c-0dde66cc3df9
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - video port pins WDK video capture
 - VPEs WDK video capture
 - video port extensions WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Video Port-Based Capture
@@ -65,12 +61,10 @@ Video port child devices, such as TV tuner and display combination adapters, can
 
 A WHQL waiver is available for devices that meet this criteria, so vendors can still obtain a logo.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Video%20Port-Based%20Capture%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

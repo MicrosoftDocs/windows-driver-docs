@@ -3,11 +3,8 @@ title: Additional DBH Examples
 description: Additional DBH Examples
 ms.assetid: 6db23b6b-e5da-4ea3-9f0a-ab42c0e712d7
 keywords: ["DBH, displaying symbols", "DBH, symbol decorations", "DBH, data types", "DBH, imaginary symbols"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Additional DBH Examples
@@ -21,9 +18,9 @@ If the target is a full symbol file, then each public symbol appears twice in th
 
 DBH can display information about this symbol from the private symbol data, from the public symbol table without decorations, and from the public symbol table with decorations. Here is an example in which all three of these are displayed, using the command **addr 414fe0** each time.
 
-The first time this command appears in this example, DBH uses the default symbol options, so the resulting information comes from the private symbol data. Note that this information includes the address, size, and data type of the function **fgets**. Then, the command symopt +4000 is used, which turns on the SYMOPT\_PUBLICS\_ONLY option. This causes DBH to ignore the private symbol data, and therefore when the **addr 414fe0** command is run the second time, DBH uses the public symbol table, and no size or data type information is shown for the function **fgets**. Finally, the command symopt -2 is used, turning off the SYMOPT\_UNDNAME option and causing DBH to include decorations. When the **addr 414fe0** runs this final time, it shows the decorated version of the function name, **\_fgets**.
+The first time this command appears in this example, DBH uses the default symbol options, so the resulting information comes from the private symbol data. Note that this information includes the address, size, and data type of the function **fgets**. Then, the command symopt +4000 is used, which turns on the SYMOPT\_PUBLICS\_ONLY option. This causes DBH to ignore the private symbol data, and therefore when the **addr 414fe0** command is run the second time, DBH uses the public symbol table, and no size or data type information is shown for the function **fgets**. Finally, the command symopt -2 is used, turning off the SYMOPT\_UNDNAME option and causing DBH to include decorations. When the **addr 414fe0** runs this final time, it shows the decorated version of the function name, **\_fgets**.
 
-```
+```dbgcmd
 pid:4308 mod:TimeTest[400000]: addr 414fe0
 
 fgets
@@ -88,9 +85,9 @@ DBH can determine the decorations on a specific symbol. This can be useful when 
 
 For example, suppose you know that the symbol file mysymbols.pdb contains a symbol whose undecorated name is **MyFunction1**. To find the decorated name, use the following procedure.
 
-First, start DBH without the -d command-line option, and then use the symopt +4000 command so that all information comes from the public symbol table:
+First, start DBH without the -d command-line option, and then use the symopt +4000 command so that all information comes from the public symbol table:
 
-```
+```console
 C:\> dbh c:\mydir\mysymbols.pdb
 
 mysymbols [1000000]: symopt +4000
@@ -101,18 +98,16 @@ Symbol Options: 0x14c13
 
 Next, use the **name** command or the **enum** command to display the address of the desired symbol:
 
-```
+```dbgcmd
 mysymbols [1000000]: enum myfunction1 
 
  index            address     name
    2ab            102cb4e :   MyFunction1
-
- 
 ```
 
-Now use symopt -2 to make symbol decorations visible, and then use the **addr** command with the address of this symbol:
+Now use symopt -2 to make symbol decorations visible, and then use the **addr** command with the address of this symbol:
 
-```
+```dbgcmd
 mysymbols [1000000]: symopt -2
 
 Symbol Options: 0x14c13
@@ -140,7 +135,7 @@ This reveals that the decorated name of the symbol is **\_MyFunction1@4**.
 
 The **undec** command can be used to reveal the meaning of C++ symbol decorations. In the following example, the decorations attached to ??\_C@\_03GGCAPAJC@Sep?$AA@ are decoded to indicate that it is a string:
 
-```
+```dbgcmd
 dbh: undec ??_C@_03GGCAPAJC@Sep?$AA@
 
 ??_C@_03GGCAPAJC@Sep?$AA@ =
@@ -149,7 +144,7 @@ dbh: undec ??_C@_03GGCAPAJC@Sep?$AA@
 
 The following examples decode the decorations attached to three function names, revealing their prototypes:
 
-```
+```dbgcmd
 dbh: undec ?gcontext@@3_KA
 
 ?gcontext@@3_KA =
@@ -168,7 +163,7 @@ dbh: undec ?_set_new_handler@@YAP6AHI@ZP6AHI@Z@Z
 int (__cdecl*__cdecl _set_new_handler(int (__cdecl*)(unsigned int)))(unsigned int) 
 ```
 
-The **undec** command does not display information about initial underscores, the prefix **\_\_imp\_**, or trailing "**@***address*" decorations, which are commonly found attached to function names.
+The **undec** command does not display information about initial underscores, the prefix **\_\_imp\_**, or trailing "**@**<em>address</em>" decorations, which are commonly found attached to function names.
 
 You can use the **undec** command with any string, not just the name of a symbol in the currently loaded module.
 
@@ -176,7 +171,7 @@ You can use the **undec** command with any string, not just the name of a symbol
 
 If you simply want a list of symbols, sorted in address order, you can run DBH in batch mode and pipe the results to a **sort** command. The address values typically begin in the 18th column of each line, so the following command sorts the results by address:
 
-```
+```dbgcmd
 dbh -p:4672 enum mymodule!* | sort /+18
 ```
 
@@ -186,7 +181,7 @@ When you use a full symbol file, DBH can display source line information. This d
 
 Here, the **line** command displays the hexadecimal address of the binary instructions corresponding to the specified source line, and it displays the symbols associated with that line. (In this example, there are no symbols associated with the line.)
 
-```
+```dbgcmd
 dbh [1000000]: line myprogram.cpp#767
 
    file : e:\mydirectory\src\myprogram.cpp
@@ -198,7 +193,7 @@ disp : 0
 
 Here, the **srclines** command displays the object files associated with the specified source line:
 
-```
+```dbgcmd
 dbh [1000000]: srclines myprogram.cpp 767
 
 0x1006191: e:\mydirectory\objchk\amd64\myprogram.obj
@@ -211,7 +206,7 @@ Note that the output of **srclines** is similar to that of the [**ln (List Neare
 
 The **type** command can be used to display information about a data type. Here it displays data about the CMDPROC type:
 
-```
+```dbgcmd
 dbh [1000000]: type CMDPROC
 
    name : CMDPROC
@@ -237,7 +232,7 @@ The **add** command can be useful if you wish to temporarily override which symb
 
 Here is how the module appears before the imaginary symbol is added. Note that the **main** function begins at 0x0042CC56, and has size 0x42B. So when the **addr** command is used with the address 0x0042CD10, it recognizes this address as lying within the boundaries of the **main** function:
 
-```
+```dbgcmd
 pid:6040 mod:MyModule[400000]: enum timetest!ma*
 
  index            address     name
@@ -278,7 +273,7 @@ modbase :   400000
 
 Now the symbol **magic** is added at the address 0x0042CD00, with size 0x10 bytes. When the **enum** command is used, the high bit in the index is set, showing that this is an imaginary symbol:
 
-```
+```dbgcmd
 pid:6040 mod:MyModule[400000]: add magic 42cd00 10
 
 
@@ -293,7 +288,7 @@ pid:6040 mod:MyModule[400000]: enum timetest!ma*
 
 When the **addr** command is used, it looks for any symbols whose ranges include the specified address. Since this search begins with the specified address and runs backward, the address 0x004CD10 is now associated with **magic**. On the other hand, the address 0x004CD40 is still associated with **main**, because it lies outside the range of the **magic** symbol. Note also that the tag **SymTagCustom** indicates an imaginary symbol:
 
-```
+```dbgcmd
 pid:6040 mod:MyModule[400000]: addr 42cd10
 
 magic+10
@@ -327,7 +322,7 @@ modbase :   400000
 
 Finally, the **del** command can delete the symbol **magic**, returning all the symbols to their original ranges:
 
-```
+```dbgcmd
 pid:6040 mod:MyModule[400000]: del magic
 
 
@@ -339,11 +334,10 @@ pid:6040 mod:MyModule[400000]: enum timetest!ma*
      5             415450 :   mainCRTStartup 
 ```
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Additional%20DBH%20Examples%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

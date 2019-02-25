@@ -7,11 +7,8 @@ keywords:
 - WSK WDK networking , sending and receiving data
 - sending data WDK networking
 - receiving data WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending and receiving data over WSK sockets
@@ -24,9 +21,9 @@ This section discusses sending and receiving data over Winsock Kernel (WSK) sock
 -   [Sending Data over a Connection-Oriented Socket](sending-data-over-a-connection-oriented-socket.md)
 -   [Receiving Data over a Connection-Oriented Socket](receiving-data-over-a-connection-oriented-socket.md)
 
- 
+ 
 
- 
+ 
 
 
 

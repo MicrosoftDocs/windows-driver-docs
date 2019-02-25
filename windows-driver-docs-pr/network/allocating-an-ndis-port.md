@@ -12,17 +12,14 @@ keywords:
 - port states WDK NDIS
 - allocated port state WDK NDIS
 - port numbers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Allocating an NDIS Port
 
 
-## <a href="" id="ddk-allocating-ndis-ports-ng"></a>
+
 
 
 To allocate an NDIS port for a miniport adapter, a miniport driver calls the [**NdisMAllocatePort**](https://msdn.microsoft.com/library/windows/hardware/ff562779) function. **NdisMAllocatePort** is synchronous and returns after NDIS has successfully allocated the resources that are required for the port.
@@ -45,9 +42,9 @@ Miniport drivers can use the NDIS\_PORT\_CHAR\_USE\_DEFAULT\_AUTH\_SETTINGS flag
 
 For more information about NDIS port states, see [NDIS Port States](ndis-port-states.md). For more information about activating ports, see [Activating NDIS Ports](activating-an-ndis-port.md).
 
- 
+ 
 
- 
+ 
 
 
 

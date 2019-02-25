@@ -3,11 +3,8 @@ title: Using KDbgCtrl
 description: Using KDbgCtrl
 ms.assetid: 386e8861-dd55-440c-9309-7e8cf6c27690
 keywords: ["KDbgCtrl", "KDbgCtrl, basic use", "DbgPrint buffer, changing buffer size", "DbgPrint buffer, KDbgCtrl utility"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/17/2018
+ms.localizationpriority: medium
 ---
 
 # Using KDbgCtrl
@@ -59,9 +56,13 @@ User-Mode Error Handling is enabled by default. To check the current setting val
 
 In some cases you might want to set up the target computer for kernel debugging, but wait to enable kernel debugging until after the target computer is started. You can do that by blocking kernel debugging.
 
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+
 To block kernel debugging, set up the target computer by using commands similar to the following:
 
-```
+```console
 bcdedit /debug on
 bcdedit /dbgsettings 1394 channel:32 /start DISABLE /noumex
 ```
@@ -70,14 +71,14 @@ When you restart the target computer, it will be prepared for kernel debugging, 
 
 When you are ready, you can enable kernel debugging (without restarting the target computer) by entering the following commands.
 
-```
+```console
 kdbgctrl -db
 kdbgctrl -e
 ```
 
 Later, you can disable kernel debugging by entering the following commands.
 
-```
+```console
 kdbgctrl -d
 kdbgctrl -eb
 ```
@@ -96,39 +97,38 @@ The default size of the DbgPrint buffer is 4 KB on a free build of Windows, and 
 
 To display all the current settings, use the following command:
 
-```
+```console
 kdbgctrl -c -ca -cu -cb -cdb 
 ```
 
 To restore the default settings, use the following command:
 
-```
+```console
 kdbgctrl -e -da -eu -db -sdb 0x1000 
 ```
 
 To lock out the host computer so that it only is contacted on exceptions, use the following command:
 
-```
+```console
 kdbgctrl -d -ea -eu 
 ```
 
 To disable all kernel debugging, use the following command:
 
-```
+```console
 kdbgctrl -d -da 
 ```
 
 If you are disabling all kernel debugging, you may also wish to increase the size of the DbgPrint buffer. This insures that all messages will be saved in case you need to see them later. If you have a megabyte of memory to spare, you might use the following command:
 
-```
+```console
 kdbgctrl -sdb 0x100000 
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20KDbgCtrl%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

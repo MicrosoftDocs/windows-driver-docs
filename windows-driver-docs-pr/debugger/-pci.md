@@ -3,17 +3,14 @@ title: pci
 description: The pci extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses.
 ms.assetid: 37b767db-18c9-4fd3-8910-4be03f41e764
 keywords: ["PCI bus", "PCI device", "PCI configuration space", "pci Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - pci
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !pci
@@ -21,7 +18,7 @@ api_type:
 
 The **!pci** extension displays the current status of the peripheral component interconnect (PCI) buses, as well as any devices attached to those buses.
 
-```
+```dbgcmd
 !pci [Flags [Segment] [Bus [Device [Function [MinAddress MaxAddress]]]]]
 ```
 
@@ -103,7 +100,7 @@ Kdextx86.dll</td>
 </tbody>
 </table>
 
- 
+
 
 This extension command can only be used with an x86-based target computer.
 
@@ -118,7 +115,7 @@ To edit the PCI configuration space, use [**!ecb**](-ecb---ecd---ecw.md), **!ecd
 
 The following example displays a list of all buses and their devices. This command will take a long time to execute. You will see a moving counter at the bottom of the display while the debugger scans the target system for PCI buses:
 
-```
+```dbgcmd
 kd> !pci 2 ff
 PCI Bus 0
 00:0  8086:1237.02  Cmd[0106:.mb..s]  Sts[2280:.....]  Device  Host bridge
@@ -133,7 +130,7 @@ PCI Bus 1
 
 This example displays verbose information about the devices on the primary bus. The two-digit number at the beginning of each line is the device number; the one-digit number following it is the function number:
 
-```
+```dbgcmd
 kd> !pci 1 0
 PCI Bus 0
 00:0  8086:1237.02  Cmd[0106:.mb..s]  Sts[2280:.....]  Device  Host bridge
@@ -157,7 +154,7 @@ PCI Bus 0
 
 This example shows even more detailed information about bus 0 (zero), device 0x0D, and function 0x1, including the raw DWORDS from addresses between 0x00 and 0x3F:
 
-```
+```dbgcmd
 kd> !pci f 0 d 1 0 3f
 PCI Bus 0
 0d:1  8086:7010.00  Cmd[0005:i.b...]  Sts[0280:.....]  Device  IDE controller
@@ -171,9 +168,9 @@ PCI Bus 0
 
 This example displays the configuration space for segment 1, bus 0, device 1:
 
-```
+```dbgcmd
 0: kd> !pci 301 1 0 1
- 
+
 PCI Configuration Space (Segment:0001 Bus:00 Device:01 Function:00)
 Common Header:
     00: VendorID       14e4 Broadcom Corporation
@@ -187,12 +184,11 @@ Common Header:
     5c: MsgAddr        2d4bff00
     60: MsgAddrHi      1ae09097
     64: MsData         9891
- 
 ```
 
 To display all devices and buses on valid segments, issue the command **!pci 602 ffff ff**:
 
-```
+```dbgcmd
 0: kd> !pci 602 ffff ff
 Scanning the following PCI segments: 0 0x1
 PCI Segment 0 Bus 0
@@ -236,11 +232,10 @@ PCI Segment 0x1 Bus 0xe3
 00:0  103c:403b.00  Cmd[0547:imb.ps]  Sts[0010:c....]  HP PCI-PCI Bridge 0xe3->0xe4-0xe4
 ```
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!pci%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

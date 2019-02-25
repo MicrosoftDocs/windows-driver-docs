@@ -1,6 +1,5 @@
 ---
 title: Completing a DMA Transaction
-author: windows-driver-content
 description: Completing a DMA Transaction
 ms.assetid: 90531b72-e51d-451e-ae84-a9bbf0245665
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - DMA operations WDK KMDF , transactions
 - bus-master DMA WDK KMDF , transactions
 - completing DMA transactions WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Completing a DMA Transaction
@@ -20,7 +16,7 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-## <a href="" id="ddk-completing-a-dma-transaction-df"></a>
+
 
 
 Each time that a driver's device [completes a DMA transfer](completing-a-dma-transfer.md), the driver must call [**WdfDmaTransactionDmaCompleted**](https://msdn.microsoft.com/library/windows/hardware/ff547039), [**WdfDmaTransactionDmaCompletedWithLength**](https://msdn.microsoft.com/library/windows/hardware/ff547052), or [**WdfDmaTransactionDmaCompletedFinal**](https://msdn.microsoft.com/library/windows/hardware/ff547049) and then check the return value.
@@ -33,9 +29,9 @@ When the return value is **TRUE**, no more transfers are needed for the DMA tran
 
 If the driver calls [**WdfRequestCompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549948), it typically first calls [**WdfDmaTransactionGetBytesTransferred**](https://msdn.microsoft.com/library/windows/hardware/ff547072) to obtain the total length (number of bytes) of all of the transaction's transfers.
 
-These steps are illustrated in the following code example, taken from the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample’s [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function in the *Isrdpc.c* file:
+These steps are illustrated in the following code example, taken from the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample’s [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function in the *Isrdpc.c* file:
 
-```
+```cpp
 if (readComplete) {
     BOOLEAN              transactionComplete;
     WDFDMATRANSACTION    dmaTransaction;
@@ -59,12 +55,11 @@ if (readComplete) {
         WdfRequestCompleteWithInformation(request, status, bytesTransferred);
     }
 }
-
 ```
 
- 
 
- 
+
+
 
 
 

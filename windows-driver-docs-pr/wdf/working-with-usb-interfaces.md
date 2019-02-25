@@ -1,6 +1,5 @@
 ---
 title: Working with USB Interfaces
-author: windows-driver-content
 description: Working with USB Interfaces
 ms.assetid: 6a1801e4-bd46-4a78-8c30-7dc62e41a37a
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - framework objects WDK KMDF , USB interface objects
 - interface objects WDK KMDF
 - alternate USB interface settings WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Working with USB Interfaces
@@ -68,9 +64,9 @@ The device's alternate settings must be numbered contiguously, starting with zer
 
 For related information, see [How to select an alternate setting in a USB interface](https://msdn.microsoft.com/library/windows/hardware/hh968309).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,17 +3,14 @@ title: fpsearch
 description: The fpsearch extension searches the freed special pool for a specified address.
 ms.assetid: 70375723-7156-47ec-b6e1-b3c51b5caaf9
 keywords: ["special pool", "fpsearch Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - fpsearch
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 #  !fpsearch
@@ -21,7 +18,7 @@ api_type:
 
 The **!fpsearch** extension searches the freed special pool for a specified address.
 
-```
+```dbgcmd
 !fpsearch [Address] [Flag]
 ```
 
@@ -53,7 +50,7 @@ If set, the debugger displays the raw content of each page on the free list as i
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -64,7 +61,7 @@ If *Address* is set to -1, the debugger displays the entire freed special pool.
 
 If the debugger cannot find the specified address in the freed special pool, it does not display anything.Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !fpsearch -1 1
 Searching the free page list (8 entries) for all freed special pool
 
@@ -118,11 +115,10 @@ CEAD000  00000000 00000000 00000000 00000000 ................
 
 You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20%20!fpsearch%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

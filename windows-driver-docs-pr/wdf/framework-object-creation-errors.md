@@ -1,17 +1,13 @@
 ---
 title: Framework Object Creation Errors
-author: windows-driver-content
 description: Framework Object Creation Errors
 ms.assetid: f5345c88-1c3a-4b32-9c93-c252713f7641
 keywords:
 - framework objects WDK KMDF , creation errors
 - errors WDK KMDF
 - errors WDK KMDF , framework object creation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework Object Creation Errors
@@ -53,9 +49,9 @@ If the framework cannot allocate memory for the new object, it can return STATUS
 
 Individual object creation methods might also return additional [NTSTATUS values](https://msdn.microsoft.com/library/windows/hardware/ff557697). For more information about each creation method's additional return values, see the method's reference page.
 
- 
+ 
 
- 
+ 
 
 
 

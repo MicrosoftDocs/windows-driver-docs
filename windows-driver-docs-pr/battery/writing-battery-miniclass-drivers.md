@@ -9,11 +9,8 @@ keywords:
 - device-specific battery support WDK
 - battery class drivers WDK
 - battery class drivers WDK , about battery class drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing Battery Miniclass Drivers
@@ -52,11 +49,10 @@ Information about writing battery miniclass drivers is organized as follows:
 
 [Installing a Battery Driver](installing-a-battery-driver.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -2,17 +2,14 @@
 title: How Container IDs are Generated from Removable Device Capability
 description: How Container IDs are Generated from the Removable Device Capability
 ms.assetid: 493a9473-4989-4557-b2b2-efa0e2a8b24e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How Container IDs are Generated from the Removable Device Capability
 
 
-If a bus driver cannot provide a container ID for a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) that it is enumerating, the Plug and Play (PnP) manager uses the removable device capability to generate a container ID for all devnodes enumerated for the device. For more information about the removable device capability, see [Overview of the Removable Device Capability](overview-of-the-removable-device-capability.md).
+If a bus driver cannot provide a container ID for a device node (*devnode*) that it is enumerating, the Plug and Play (PnP) manager uses the removable device capability to generate a container ID for all devnodes enumerated for the device. For more information about the removable device capability, see [Overview of the Removable Device Capability](overview-of-the-removable-device-capability.md).
 
 The following heuristic describes how Container IDs are generated from the removable device capability:
 
@@ -20,7 +17,7 @@ The following heuristic describes how Container IDs are generated from the remov
 
 2.  If the devnode has the removable device capability set to **FALSE**, inherit the container ID from its parent devnode.
 
-A devnode cannot enumerate child devnodes until it is initialized and its [*driver stack*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-stack) is started. As soon as its container ID is assigned during initialization, the devnode is ready to propagate its container ID down to any of its nonremovable children as they are enumerated.
+A devnode cannot enumerate child devnodes until it is initialized and its *driver stack* is started. As soon as its container ID is assigned during initialization, the devnode is ready to propagate its container ID down to any of its nonremovable children as they are enumerated.
 
 A devnode with the removable device capability set to **TRUE** is considered the topmost (parent) devnode for the device, and a container ID is generated for this devnode.
 
@@ -40,11 +37,11 @@ Through this heuristic, the same container ID is assigned to each devnode that b
 
 **Note**  The success of this heuristic relies on a specific bus driver that correctly reports the removable device capability for each devnode that it enumerates. The bus driver must ensure that the parent devnode of the device should be set as removable, and its child devnodes should not be set as removable.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

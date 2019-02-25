@@ -4,17 +4,14 @@ description: NDIS 6.0 Design Objectives
 ms.assetid: 1b59bc97-be79-47ba-8e39-208a9d38f6b9
 keywords:
 - NDIS WDK , about NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS 6.0 Design Objectives
 
 
-## <a href="" id="ddk-ndis-6-0-design-objectives-ng"></a>
+
 
 
 Two major objectives have guided the design and development of NDIS 6.0:
@@ -41,9 +38,9 @@ Two major objectives have guided the design and development of NDIS 6.0:
     -   A standard interface for obtaining management information
     -   A filter driver model to replace filter intermediate drivers
 
- 
+ 
 
- 
+ 
 
 
 

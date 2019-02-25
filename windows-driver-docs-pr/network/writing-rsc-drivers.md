@@ -2,11 +2,8 @@
 title: Writing RSC Drivers
 description: This following sections describe how to add receive segment coalescing (RSC) capability to an NDIS miniport driver.
 ms.assetid: 2CD61CF5-2CB9-424E-8A68-2B9C634FB438
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing RSC Drivers
@@ -19,9 +16,9 @@ This following sections describe how to add receive segment coalescing (RSC) cap
 -   [Standardized INF Keywords for RSC](standardized-inf-keywords-for-rsc.md)
 -   [Programming Considerations for RSC Drivers](programming-considerations-for-rsc-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,9 @@
 ---
 title: Windows Kernel-Mode Process and Thread Manager
-author: windows-driver-content
 description: Windows Kernel-Mode Process and Thread Manager
 ms.assetid: 4053c73e-190d-4ffe-8db2-f531d120ba81
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Windows Kernel-Mode Process and Thread Manager
@@ -16,7 +17,28 @@ The Windows kernel-mode process and thread manager handles the execution of all 
 
 If threads from different processes attempt to use the same resource at the same time, problems can occur. Windows provides several techniques to avoid this problem. The technique of making sure that threads from different processes do not touch the same resource is called *synchronization*. For more information about synchronization, see [Synchronization Techniques](synchronization-techniques.md).
 
-Routines that provide a direct interface to the process and thread manager are usually prefixed with the letters "**Ps**"; for example, **PsCreateSystemThread**. For a list of process and thread manager routines, see [Process and Thread Manager Routines](https://msdn.microsoft.com/library/windows/hardware/ff559917). For a list of routines that relate to processes, threads, and synchronization, see [Synchronization](https://msdn.microsoft.com/library/windows/hardware/ff564517).
+Routines that provide a direct interface to the process and thread manager are usually prefixed with the letters "**Ps**"; for example, **PsCreateSystemThread**. For a list of kernel DDIs, see [Windows kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_kernel/).
+
+This set of guidelines applies to these callback routines:
+
+[_PCREATE_PROCESS_NOTIFY_ROUTINE_](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pcreate_process_notify_routine)
+
+[_PCREATE_PROCESS_NOTIFY_ROUTINE_EX_](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pcreate_process_notify_routine_ex)
+
+[_PCREATE_THREAD_NOTIFY_ROUTINE_](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pcreate_thread_notify_routine)
+
+[_PLOAD_IMAGE_NOTIFY_ROUTINE_](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pload_image_notify_routine)
+
+-    Keep notify routines short and simple.
+-    Do not make calls into a user mode service to validate the process, thread, or image. 
+-    Do not make registry calls. 
+-    Do not make blocking and/or Interprocess Communication (IPC) function calls. 
+-    Do not synchronize with other threads because it can lead to reentrancy deadlocks. 
+-    Use [System Worker Threads](https://docs.microsoft.com/windows-hardware/drivers/kernel/system-worker-threads) to queue work especially work involving: 
+        -    Slow API’s or API’s that call into other process.
+        -    Any blocking behavior which could interrupt threads in core services. 
+-    Be considerate of best practices for kernel mode stack usage. For examples, see [How do I keep my driver from running out of kernel-mode stack?](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn613940(v=vs.85)) and [Key Driver Concepts and Tips](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn614604(v%3dvs.85)).
+
 
 ## Subsystem Processes
 
@@ -31,12 +53,10 @@ Here are the changes to the [Process and Thread Manager Routines](https://msdn.m
 -   Other kernel mode drivers can get notified about subsystem process creation/deletion by registering their callback routine through the [**PsSetCreateProcessNotifyRoutineEx2**](https://msdn.microsoft.com/library/windows/hardware/mt805891) call. To get notifications about thread creation/deletion, drivers can call [**PsSetCreateThreadNotifyRoutineEx**](https://msdn.microsoft.com/library/windows/hardware/dn957857), and specify **PsCreateThreadNotifySubsystems** as the type of notification.
 -   The [**PS\_CREATE\_NOTIFY\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff559960) structure has been extended to include a **IsSubsystemProcess** member that indicates a subsystem other than Win32. Other members such as **FileObject**, **ImageFileName**, **CommandLine** indicate additional information about the subsystem process. For information about the behavior of those members, see [**SUBSYSTEM\_INFORMATION\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/mt805892).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Windows%20Kernel-Mode%20Process%20and%20Thread%20Manager%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -1,6 +1,5 @@
 ---
 title: Minidriver Synchronization
-author: windows-driver-content
 description: Minidriver Synchronization
 ms.assetid: 2f560e7a-4717-4b3f-9513-e34fcb2b5e6c
 keywords:
@@ -8,17 +7,14 @@ keywords:
 - streaming minidrivers WDK Windows 2000 Kernel , synchronization
 - minidrivers WDK Windows 2000 Kernel Streaming , synchronization
 - synchronization WDK streaming minidriver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Minidriver Synchronization
 
 
-## <a href="" id="ddk-minidriver-synchronization-ksg"></a>
+
 
 
 Streaming minidriver developers have the option of allowing the class driver to handle synchronization. When minidrivers register themselves with the class driver, they can opt for class-driver-provided synchronization by setting the **TurnOffSynchronization** member of [**HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff559682) to **FALSE**.
@@ -33,12 +29,10 @@ When synchronization is off, the minidriver is responsible for performing synchr
 
 Multiple requests can be simultaneously issued to the same or different streams when stream class synchronization is off. The minidriver must queue its own requests and handle any hardware synchronization with other threads and the ISR. Spin locks, mutexes, and [**KeSynchronizeExecution**](https://msdn.microsoft.com/library/windows/hardware/ff553302) are some of the synchronization objects available to stream minidrivers running without stream class synchronization.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Minidriver%20Synchronization%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

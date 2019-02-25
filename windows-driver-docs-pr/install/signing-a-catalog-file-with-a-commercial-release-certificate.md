@@ -2,11 +2,8 @@
 title: Signing a Catalog File with a Commercial Release Certificate
 description: Signing a Catalog File with a Commercial Release Certificate
 ms.assetid: 362b0c79-50b9-4749-80e2-62601d76e9e3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Signing a Catalog File with a Commercial Release Certificate
@@ -16,9 +13,9 @@ Use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hard
 
 **Note**  For 32-bit versions of Windows Vista and later versions of Windows, only a commercial release certificate can be used to sign kernel-mode drivers to be released on these Windows versions.
 
- 
+ 
 
-```
+```cpp
 SignTool sign /v /s CertificateStore /n CertificateName /t http://timestamp.verisign.com/scripts/timstamp.dll CatalogFileName.cat
 ```
 
@@ -36,9 +33,9 @@ Where:
 
 -   *CatalogFileName.cat* is the name of the catalog file.
 
- 
+ 
 
- 
+ 
 
 
 

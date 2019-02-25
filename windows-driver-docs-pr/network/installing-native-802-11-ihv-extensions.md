@@ -6,21 +6,18 @@ keywords:
 - IHV extensions WDK Native 802.11 , installing
 - installing Native 802.11 IHV extensions
 - Native 802.11 IHV Extensions WDK , installing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Native 802.11 IHV Extensions
 
 
-**Important**  The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](wifi-universal-driver-model.md).
+
 
  
 
-To install the [Native 802.11 IHV Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560614) and [Native 802.11 IHV UI Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560635), the independent hardware vendor (IHV) must make the following changes to the DDInstall section within the INF file that is used for the installation of the IHV's wireless LAN (WLAN) adapter.
+To install the [Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-dll4.md) and [Native 802.11 IHV UI Extensions DLL](native-802-11-ihv-ui-extensions-dll2.md), the independent hardware vendor (IHV) must make the following changes to the DDInstall section within the INF file that is used for the installation of the IHV's wireless LAN (WLAN) adapter.
 
 -   Add a CopyFiles directive, with an associated *file-list-section*, to the INF file. The name of each DLL developed by the IHV must be within the *file-list-section*.
 

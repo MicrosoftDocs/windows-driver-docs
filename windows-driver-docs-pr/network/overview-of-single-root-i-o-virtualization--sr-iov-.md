@@ -2,11 +2,8 @@
 title: Overview of Single Root I/O Virtualization (SR-IOV)
 description: Overview of Single Root I/O Virtualization (SR-IOV)
 ms.assetid: B241F468-F568-4500-9356-E576CEBA8F3B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Single Root I/O Virtualization (SR-IOV)
@@ -28,9 +25,9 @@ For more information, see the following topics:
 
 [SR-IOV Data Paths](sr-iov-data-paths.md)
 
- 
+ 
 
- 
+ 
 
 
 

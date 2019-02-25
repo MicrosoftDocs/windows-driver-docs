@@ -3,17 +3,14 @@ title: gn, gN (Go with Exception Not Handled)
 description: The gn and gN commands continue execution of the given thread without marking the exception as having been handled. This allows the application's exception handler to handle the exception.
 ms.assetid: b6f69882-b30a-45b7-b777-1b4857719e7f
 keywords: ["gn, gN (Go with Exception Not Handled) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - gn, gN (Go with Exception Not Handled)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # gn, gN (Go with Exception Not Handled)
@@ -23,14 +20,14 @@ The **gn** and **gN** commands continue execution of the given thread without ma
 
 User-Mode Syntax
 
-```
+```dbgcmd
 [~Thread] gn[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 [~Thread] gN[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 ```
 
 Kernel-Mode Syntax
 
-```
+```dbgcmd
 gn[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 gN[a] [= StartAddress] [BreakAddress ... [; BreakCommands]] 
 ```
@@ -55,7 +52,7 @@ Specifies one or more commands to be automatically executed when the breakpoint 
 
 **Note**   The *BreakCommands* parameter is only available when you are embedding this command within a command string used by another command -- for example, within another breakpoint command or within an except or event setting. On a command line, the semicolon will terminate the command, and any additional commands listed after the semicolon will be executed immediately after the **gn** or **gN** command is done.
 
- 
+ 
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
@@ -80,7 +77,7 @@ Specifies one or more commands to be automatically executed when the breakpoint 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -95,11 +92,10 @@ If you use the *BreakAddress* parameter to set a breakpoint, this new breakpoint
 
 If *Thread* is specified, then the **gn** command is executed with the specified thread unfrozen and all others frozen. For example, if the **~123gn**, **~\#gn**, or **~\*gn** command is specified, the specified threads are unfrozen and all others are frozen.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20gn,%20gN%20%28Go%20with%20Exception%20Not%20Handled%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

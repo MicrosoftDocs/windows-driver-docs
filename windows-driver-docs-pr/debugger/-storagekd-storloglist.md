@@ -3,17 +3,14 @@ title: storagekd.storloglist
 description: The storagekd.storloglist extension displays the Storport adapter’s internal log entries.
 ms.assetid: 6308DDEF-8AB0-4D16-9245-3046114D5173
 keywords: ["storagekd.storloglist Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - storagekd.storloglist
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !storagekd.storloglist
@@ -21,7 +18,7 @@ api_type:
 
 The **!storagekd.storloglist** extension displays the Storport adapter’s internal log entries.
 
-```
+```dbgcmd
 !storagekd.storloglist <Address> [<starting_entry> [<ending_entry>]] [L <count>] 
 ```
 
@@ -55,7 +52,7 @@ Count of entries to be displayed. If not specified, a value of 50 is used.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -64,7 +61,7 @@ Here is an example of **!storagekd.storloglist** display:
 
 **0: kd&gt; !storagekd.storloglist ffffe0010f5e01a0**
 
-```
+```dbgcmd
 Storport RaidLogList
     Circular buffer location:  0xffffe0010f5e1720
     Total logs written: 8
@@ -80,11 +77,10 @@ Storport RaidLogList
     [7]_[23:04:20.646] PauseDevice........... Caller: storport!StorPortPauseDevice+0x2f6 (fffff800`fb4b52d6), P/P/T/L: 0/3/0/0, Pause count: 1
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!storagekd.storloglist%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

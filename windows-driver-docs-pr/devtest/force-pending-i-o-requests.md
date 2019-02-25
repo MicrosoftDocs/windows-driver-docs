@@ -5,11 +5,8 @@ ms.assetid: 0255fc5c-0e75-4108-ba29-f1a61ce9b0dd
 keywords:
 - Force Pending I/O Requests option WDK Driver Verifier
 - STATUS_PENDING WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Force Pending I/O Requests
@@ -21,7 +18,7 @@ This option is supported only on Windows Vista and later versions of the Windows
 
 **Caution**   Do not use this option on a driver unless you have detailed knowledge of the operation of the driver and have verified that the driver is designed to handle STATUS\_PENDING return values from all of its calls to **IoCallDriver**. Running this option on a driver that is not designed to handle STATUS\_PENDING from all calls can result in crashes, memory corruptions, and unusual system behavior that can be difficult to debug or correct.
 
- 
+ 
 
 ### <span id="why_use_force_pending_i_o_requests_"></span><span id="WHY_USE_FORCE_PENDING_I_O_REQUESTS_"></span>Why Use Force Pending I/O Requests?
 
@@ -114,7 +111,7 @@ For example, the following stack trace of Pci.sys shows its response to Force Pe
 
 ```
 kd> !verifier 40
-# Size of the log is is 0x40
+# Size of the log is 0x40
 ========================================================
 IRP: 8f84ef00 - forced pending from stack trace:
 
@@ -153,11 +150,10 @@ IRP: 8f84ef00 - forced pending from stack trace:
 
 The stack trace shows that *Acpi.sys* was trying to complete IRP 8f84ef00. Driver Verifier forced a deferred completion, so *Acpi.sys* returned STATUS\_PENDING to **pci!PciCallDownIrpStack**. If this call had caused a crash, the driver owner would need to review the source code for **pci!PciCallDownIrpStack** and revise it to handle the STATUS\_PENDING properly.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Force%20Pending%20I/O%20Requests%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

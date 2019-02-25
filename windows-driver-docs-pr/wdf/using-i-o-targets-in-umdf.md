@@ -1,6 +1,5 @@
 ---
 title: Using I/O Targets in UMDF
-author: windows-driver-content
 description: Using I/O Targets in UMDF
 ms.assetid: 5633242c-ffab-4af5-9650-7449395deb6b
 keywords:
@@ -10,11 +9,8 @@ keywords:
 - framework-based drivers WDK UMDF , I/O targets
 - I/O targets WDK UMDF
 - targets WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using I/O Targets in UMDF
@@ -34,9 +30,9 @@ The framework supports both general I/O targets and specialized I/O targets:
 
 If the framework provides specialized I/O targets that support your device's data format, your driver should use the specialized I/O targets. Otherwise, the driver should use general I/O targets.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,17 +3,14 @@ title: dtx (Display Type - Extended Debugger Object Model Information)
 description: The dtx command displays extended symbolic type information using the debugger object model. The dtx command is similar to the dt (Display Type) command.
 ms.assetid: 758D752E-65A0-4F1D-BB56-06E4ECEC6D48
 keywords: ["dtx (Display Type - Extended Debugger Object Model Information) Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2017
 topic_type:
 - apiref
 api_name:
 - dtx (Display Type - Extended Debugger Object Model Information)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.dtx__display_type_-_extended_debugger_object_model_information_"></span>dtx (Display Type - Extended Debugger Object Model Information)
@@ -21,7 +18,7 @@ api_type:
 
 The dtx command displays extended symbolic type information using the debugger object model. The dtx command is similar to the [**dt (Display Type)**](dt--display-type-.md) command.
 
-```
+```dbgcmd
 dtx -DisplayOpts [Module!]Name Address
 ```
 
@@ -69,7 +66,7 @@ Memory address containing the type.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -77,7 +74,7 @@ The following examples show how to use the dtx command.
 
 Use the address and the name to display extended symbolic type information.
 
-```
+```dbgcmd
 0: kd> dtx nt!_EPROCESS ffffb607560b56c0
 (*((nt!_EPROCESS *)0xffffb607560b56c0))                 [Type: _EPROCESS]
     [+0x000] Pcb              [Type: _KPROCESS]
@@ -89,7 +86,7 @@ Use the address and the name to display extended symbolic type information.
 
 Display additional information using the -r recursion option.
 
-```
+```dbgcmd
 0: kd> dtx -r2 HdAudio!CAzMixertopoMiniport fffff806`d24992b8
 (*((HdAudio!CAzMixertopoMiniport *)0xfffff806d24992b8))                 [Type: CAzMixertopoMiniport]
     [+0x018] m_lRefCount      : -766760880 [Type: long]
@@ -119,7 +116,7 @@ Display additional information using the -r recursion option.
 
 Tip: Use the [**x (Examine Symbols)**](x--examine-symbols-.md) command to display the address of an item of interest.
 
-```
+```dbgcmd
 0: kd> x /d HdAudio!CazMixertopoMiniport*
 ...
 fffff806`d24992b8 HdAudio!CAzMixertopoMiniport::`vftable' = <no type information>
@@ -131,11 +128,10 @@ fffff806`d24992b8 HdAudio!CAzMixertopoMiniport::`vftable' = <no type information
 
 [**dt (Display Type)**](dt--display-type-.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20dtx%20%28Display%20Type%20-%20Extended%20Debugger%20Object%20Model%20Information%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

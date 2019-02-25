@@ -1,23 +1,19 @@
 ---
 title: Points to Consider When Canceling IRPs
-author: windows-driver-content
 description: Points to Consider When Canceling IRPs
 ms.assetid: 16a47033-7147-43a2-a9f8-a215f7e90ff1
 keywords: ["canceling IRPs, guidelines", "Cancel routines, guidelines", "cancelable IRPs WDK kernel", "current states WDK IRPs"]
-ms.author: windowsdriverdev
-ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/08/2018
+ms.localizationpriority: medium
 ---
 
 # Points to Consider When Canceling IRPs
 
 
-## <a href="" id="ddk-points-to-consider-when-canceling-irps-kg"></a>
 
 
-This section discusses guidelines for implementing a *Cancel* routine and handling cancelable IRPs. For more information about handling cancelable IRPs, see the [Flow of Control for Cancel-Safe IRP Queuing](http://go.microsoft.com/fwlink/p/?linkid=57844) white paper on the Microsoft Windows Hardware Developer Central (WHDC) website.
+
+This section discusses guidelines for implementing a *Cancel* routine and handling cancelable IRPs. For more information about handling cancelable IRPs, see the [Flow of Control for Cancel-Safe IRP Queuing](https://go.microsoft.com/fwlink/p/?linkid=57844).
 
 ### General Guidelines for All Cancel Routines
 
@@ -79,12 +75,10 @@ If a device driver maintains state information about cancelable IRPs that variou
 
 For more information, see [Synchronization Techniques](synchronization-techniques.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Points%20to%20Consider%20When%20Canceling%20IRPs%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

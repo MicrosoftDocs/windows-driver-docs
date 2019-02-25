@@ -2,25 +2,34 @@
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 10
 description: You can do kernel debugging over an Ethernet network cable when the target computer is running Windows. The target computer must have a supported network interface card (NIC) or network adapter.
 ms.assetid: F98A7ACE-DD04-423C-A438-89E21363C693
+ms.date: 12/04/2017
+ms.localizationpriority: medium
 ---
 
 # Supported Ethernet NICs for Network Kernel Debugging in Windows 10
-
 
 You can do kernel debugging over an Ethernet network cable when the target computer is running Windows. The target computer must have a supported network interface card (NIC) or network adapter.
 
 During kernel debugging, the computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. To do [kernel debugging over a network cable](setting-up-a-network-debugging-connection.md), the target computer must have a supported network adapter. When the target computer is running Windows, the network adapters listed here are supported for kernel debugging.
 
-**Note**  
+**Version Information**  
+
 The list of supported adapters is for the following versions of Windows
 
--   Windows 10, version 1703
--   Windows Server 2016
+-   Windows 10, version 1809
+-   Windows Server 2019
 
- 
+
+**Adapter Support for Previous Releases of Windows**  
+
+To determine which set of NICs is supported for any particular release of Windows, examine the `VerifiedNicList.xml` file that is in the debuggers directory installed by the WDK that shipped with that particular release of Windows. For 64 bit Windows, by default, it will be installed in this directory:
+
+`C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\VerifiedNicList.xml`
+
+Checking the VerifiedNicList.xml that ships in the WDK for a particular release, is required because additional hardware support is added to new releases of Windows that is not present in previous releases.  So you must check the VerifiedNicLIst.xml file for that particular release.
+
 
 ## <span id="Finding_the_vendor_ID_and_device_ID"></span><span id="finding_the_vendor_id_and_device_id"></span><span id="FINDING_THE_VENDOR_ID_AND_DEVICE_ID"></span>Finding the vendor ID and device ID
-
 
 First find the vendor ID and device ID of the network adapter on your target computer.
 
@@ -220,6 +229,7 @@ For vendor ID 8086, these device IDs are supported:
 2159
 294C
 8976
+
 ## <span id="vendor_id_10ec__realtek_semiconductor_corp."></span><span id="VENDOR_ID_10EC__REALTEK_SEMICONDUCTOR_CORP."></span>Vendor ID 10EC, Realtek Semiconductor Corp.
 
 
@@ -231,6 +241,7 @@ For vendor ID 10EC, these device IDs are supported:
 8167
 8168
 8169
+
 ## <span id="Vendor_ID_14E4__Broadcom"></span><span id="vendor_id_14e4__broadcom"></span><span id="VENDOR_ID_14E4__BROADCOM"></span>Vendor ID 14E4, Broadcom
 
 
@@ -342,6 +353,7 @@ For vendor ID 14E4, these device IDs are supported:
 170D
 170E
 170F
+
 ## <span id="Vendor_ID_1969__Atheros_Communications"></span><span id="vendor_id_1969__atheros_communications"></span><span id="VENDOR_ID_1969__ATHEROS_COMMUNICATIONS"></span>Vendor ID 1969, Atheros Communications
 
 
@@ -374,6 +386,7 @@ E0C1
 E0D1
 E0E1
 E0F1
+
 ## <span id="Vendor_ID_19A2__ServerEngines__Emulex_"></span><span id="vendor_id_19a2__serverengines__emulex_"></span><span id="VENDOR_ID_19A2__SERVERENGINES__EMULEX_"></span>Vendor ID 19A2, ServerEngines (Emulex)
 
 
@@ -384,6 +397,7 @@ For vendor ID 19A2, these device IDs are supported:
 0221
 0700
 0710
+
 ## <span id="Vendor_ID_10DF__Emulex_Corporation"></span><span id="vendor_id_10df__emulex_corporation"></span><span id="VENDOR_ID_10DF__EMULEX_CORPORATION"></span>Vendor ID 10DF, Emulex Corporation
 
 
@@ -391,6 +405,7 @@ For vendor ID 10DF, these device IDs are supported:
 
 0720
 E220
+
 ## <span id="Vendor_ID_15B3__Mellanox_Technology"></span><span id="vendor_id_15b3__mellanox_technology"></span><span id="VENDOR_ID_15B3__MELLANOX_TECHNOLOGY"></span>Vendor ID 15B3, Mellanox Technology
 
 
@@ -454,22 +469,24 @@ For vendor ID 15B3, these device IDs are supported:
 For vendor ID 1137, these device IDs are supported:
 
 0043
+
 ## <span id="related_topics"></span>Related topics
 
 
 [Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio](setting-up-a-network-debugging-connection-in-visual-studio.md)
 
-[Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md)
+[Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
+
+[Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 8](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md)
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Supported%20Ethernet%20NICs%20for%20Network%20Kernel%20Debugging%20in%20Windows%2010%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

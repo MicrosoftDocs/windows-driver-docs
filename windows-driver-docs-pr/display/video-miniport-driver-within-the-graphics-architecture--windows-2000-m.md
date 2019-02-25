@@ -1,22 +1,16 @@
 ---
-title: Video Miniport Driver Within the Graphics Architecture (Windows 2000 Model)
-description: Video Miniport Driver Within the Graphics Architecture (Windows 2000 Model)
+title: Video Miniport Driver in the Graphics Architecture (XDDM)
+description: Video Miniport Driver in the Graphics Architecture (Windows 2000 Model)
 ms.assetid: 663cbedb-6637-4d7c-86d0-70d962459856
 keywords:
 - video miniport drivers WDK Windows 2000 , graphics
 - architecture WDK video miniport
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 12/06/2018
+ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Video Miniport Driver Within the Graphics Architecture (Windows 2000 Model)
-
-
-## <span id="ddk_video_miniport_driver_within_the_graphics_architecture_windows_200"></span><span id="DDK_VIDEO_MINIPORT_DRIVER_WITHIN_THE_GRAPHICS_ARCHITECTURE_WINDOWS_200"></span>
-
+# Video Miniport Driver in the Graphics Architecture (Windows 2000 Model)
 
 The following figure shows the video miniport driver within the NT-based operating system graphics subsystem.
 
@@ -32,11 +26,10 @@ The video port driver is a system-supplied module provided to support video mini
 
 For more information about NT-based operating system display drivers, see [Introduction to Display (Windows 2000 Model)](introduction-to-display--windows-2000-model-.md) and [Display Drivers (Windows 2000 Model)](display-drivers--windows-2000-model-.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Video%20Miniport%20Driver%20Within%20the%20Graphics%20Architecture%20%28Windows%202000%20Model%29%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

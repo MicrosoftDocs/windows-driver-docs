@@ -2,11 +2,8 @@
 title: Determining SR-IOV Capabilities
 description: Determining SR-IOV Capabilities
 ms.assetid: 61895987-2469-471E-BB29-FF1CDD2869DC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining SR-IOV Capabilities
@@ -18,7 +15,7 @@ This topic describes how NDIS and overlying drivers determine the single root I/
 
 [Querying SR-IOV Capabilities by Overlying Drivers](#query)
 
-## <a href="" id="report"></a>Reporting SR-IOV Capabilities during *MiniportInitializeEx*
+## Reporting SR-IOV Capabilities during *MiniportInitializeEx*
 
 
 When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, the driver provides the following SR-IOV capabilities:
@@ -31,17 +28,17 @@ When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.micr
 
 The miniport driver reports the SR-IOV hardware capabilities of the underlying network adapter through an [**NDIS\_SRIOV\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/hh451677) structure that is initialized in the following way:
 
-1.  The miniport driver initializes the **Header** member. The driver sets the **Type** member of **Header** to NDIS\_OBJECT\_TYPE\_DEFAULT.
+1. The miniport driver initializes the **Header** member. The driver sets the **Type** member of **Header** to NDIS\_OBJECT\_TYPE\_DEFAULT.
 
-    Starting with NDIS 6.30, the miniport driver sets the **Revision** member of **Header** to NDIS\_SRIOV\_CAPABILITIES \_REVISION\_1 and the **Size** member to NDIS\_SIZEOF\_SRIOV\_CAPABILITIES\_REVISION\_1.
+   Starting with NDIS 6.30, the miniport driver sets the **Revision** member of **Header** to NDIS\_SRIOV\_CAPABILITIES \_REVISION\_1 and the **Size** member to NDIS\_SIZEOF\_SRIOV\_CAPABILITIES\_REVISION\_1.
 
-2.  The miniport driver sets the appropriate flags in the **SriovCapabilities** member to report SR-IOV capabilities.
+2. The miniport driver sets the appropriate flags in the **SriovCapabilities** member to report SR-IOV capabilities.
 
-    If the network adapter supports SR-IOV, the miniport driver for the PCI Express (PCIe) Physical Function of the adapter must set the following flags:
+   If the network adapter supports SR-IOV, the miniport driver for the PCI Express (PCIe) Physical Function of the adapter must set the following flags:
 
-    -   NDIS\_SRIOV\_CAPS\_SRIOV\_SUPPORTED
+   -   NDIS\_SRIOV\_CAPS\_SRIOV\_SUPPORTED
 
-    -   NDIS\_SRIOV\_CAPS\_PF\_MINIPORT
+   -   NDIS\_SRIOV\_CAPS\_PF\_MINIPORT
 
    > [!NOTE]
    > The miniport driver for a PCIe Virtual Function (VF) of the network adapter must set both the NDIS\_SRIOV\_CAPS\_VF\_MINIPORT flag and the NDIS\_SRIOV\_CAPS\_SRIOV\_SUPPORTED flag.    
@@ -62,7 +59,7 @@ When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.micr
 
 For more information about the adapter initialization process, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
 
-## <a href="" id="query"></a>Querying SR-IOV Capabilities by Overlying Drivers
+## Querying SR-IOV Capabilities by Overlying Drivers
 
 
 NDIS passes the network adapter's currently enabled SR-IOV capabilities to overlying drivers that bind to the network adapter in the following way:
@@ -73,9 +70,9 @@ NDIS passes the network adapter's currently enabled SR-IOV capabilities to overl
 
 NDIS also returns the [**NDIS\_SRIOV\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/hh451677) structure when it handles object identifier (OID) query requests of [OID\_SRIOV\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/hh451862) and [OID\_SRIOV\_CURRENT\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/hh451859) that are issued by overlying protocol or filter drivers.
 
- 
+ 
 
- 
+ 
 
 
 

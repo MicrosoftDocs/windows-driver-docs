@@ -5,17 +5,14 @@ ms.assetid: 49224987-ed46-4631-a47b-70cd855cfa40
 keywords:
 - SAN sockets WDK , closing
 - closing SAN sockets
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Closing a SAN Socket
 
 
-## <a href="" id="ddk-closing-a-san-socket-ng"></a>
+
 
 
 After the Windows Sockets switch on either side of a connection calls a SAN service provider's [**WSPCloseSocket**](https://msdn.microsoft.com/library/windows/hardware/ff566273) function, the SAN service provider performs the following procedure to close a SAN socket:
@@ -30,9 +27,9 @@ As long as a SAN service provider performs the preceding procedure to close a SA
 
 To prevent race conditions between a SAN service provider and the switch initiating socket closures, the SAN service provider should never release data structures related to a SAN socket until the switch calls **WSPCloseSocket**.
 
- 
+ 
 
- 
+ 
 
 
 

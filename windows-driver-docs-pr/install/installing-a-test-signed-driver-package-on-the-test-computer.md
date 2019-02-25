@@ -2,11 +2,8 @@
 title: Installing a Test-Signed Driver Package on the Test Computer
 description: Installing a Test-Signed Driver Package on the Test Computer
 ms.assetid: d825acb6-d1de-4fc5-bde2-ea27bd706f61
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Test-Signed Driver Package on the Test Computer
@@ -46,9 +43,9 @@ Once the [driver package](driver-packages.md) is installed, you can troubleshoot
 
 For more information about how to install a test-signed driver package, see [Installing Test-Signed Driver Packages](installing-test-signed-driver-packages.md).
 
- 
+ 
 
- 
+ 
 
 
 

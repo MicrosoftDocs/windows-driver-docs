@@ -2,11 +2,8 @@
 title: Residency overview
 description: Residency overview
 ms.assetid: E610C2B8-354C-4DF5-8B25-6472A9313B15
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Residency overview
@@ -30,7 +27,7 @@ Under the new residency model, the per-command buffer allocation and patch locat
 
 **Important**  Residency in the WDDM v2 is controlled exclusively by the device residency requirement list. This is true across all engines of the GPU and for every API.
 
- 
+ 
 
 ## <span id="Phasing_out_allocation_and_patch_location_list"></span><span id="phasing_out_allocation_and_patch_location_list"></span><span id="PHASING_OUT_ALLOCATION_AND_PATCH_LOCATION_LIST"></span>Phasing out allocation and patch location list
 
@@ -39,8 +36,8 @@ The role of the allocation and patch location list will get significantly reduce
 
 Under the packet based scheduling model, the allocation list will continue to exist as follows:
 
--   For engines which donâ€™t support GPU virtual addressing, the allocation list and patch location list will continue to exist, however, they will be used purely for patching purposes and will no longer have any control over residency. The allocation list and patch location list will be provided to both the user mode driver and the kernel mode driver in the various usual DDIs, but any references to allocations that are not resident will cause the GPU scheduler to reject the submission and put the device in error (lost). This mode of operation is considered legacy and we expect all GPU engines to get support for GPU virtual addressing in future hardware releases. It is expected that this mode of operation will be dropped in future versions of the WDDM.
--   For engines which do support GPU virtual addressing, a new context creation flag (**DXGK\_CONTEXTINFO\_NO\_PATCHING\_REQUIRED**) is added to indicate that the particular context doesnâ€™t require any patching. When this flag is specified, no patch location list will be allocated and only a very small allocation list (16 entries) will be allocated. The allocation list will be used to keep track of write references to primary surfaces and for no other purpose. The GPU scheduler needs to know when a particular command buffer is writing to a primary surface such that it may properly synchronize execution of that buffer with respect to flip potentially occurring to the primary surface.
+-   For engines which don't support GPU virtual addressing, the allocation list and patch location list will continue to exist, however, they will be used purely for patching purposes and will no longer have any control over residency. The allocation list and patch location list will be provided to both the user mode driver and the kernel mode driver in the various usual DDIs, but any references to allocations that are not resident will cause the GPU scheduler to reject the submission and put the device in error (lost). This mode of operation is considered legacy and we expect all GPU engines to get support for GPU virtual addressing in future hardware releases. It is expected that this mode of operation will be dropped in future versions of the WDDM.
+-   For engines which do support GPU virtual addressing, a new context creation flag (**DXGK\_CONTEXTINFO\_NO\_PATCHING\_REQUIRED**) is added to indicate that the particular context doesn't require any patching. When this flag is specified, no patch location list will be allocated and only a very small allocation list (16 entries) will be allocated. The allocation list will be used to keep track of write references to primary surfaces and for no other purpose. The GPU scheduler needs to know when a particular command buffer is writing to a primary surface such that it may properly synchronize execution of that buffer with respect to flip potentially occurring to the primary surface.
 
 Similarly, the allocation list is used in the kernel mode driver *Present* path today to pass information to the driver about the source and destination of the *Present* operation. In this context the allocation list will continue to exist to pass parameters around, however, the allocation list will not be used for residency. On GPUs requiring patching the *Present* allocation list will contain pre-patch information like it does today and the *Present* packet will be re-patched before being scheduled if any of the resources move around in memory between the time they are queued to the scheduler and the time they are scheduled for execution on the GPU.
 
@@ -80,13 +77,12 @@ References the primary surface, if any, being written to by the command buffer. 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Residency%20overview%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

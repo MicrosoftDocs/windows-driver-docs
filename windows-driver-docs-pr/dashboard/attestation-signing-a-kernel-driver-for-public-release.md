@@ -2,76 +2,83 @@
 title: Attestation signing a kernel driver for public release
 description: This topic describes how to sign a driver using attestation signing.
 ms.assetid: A292B15D-37FD-407E-998C-728D9423E712
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
+ms.localizationpriority: medium
 ---
 
 # Attestation signing a kernel driver for public release
 
-
 This topic describes how to sign a driver using attestation signing.
- 
 
-> [!Note]  
+> [!Note]
 > Attestation signing has the following properties.
-> -   Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
-> -   Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center (Sysdev) dashboard.
-> -   An attestation signed driver will only work for Windows 10 Desktop. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
-> -   Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
- 
-
-## <span id="Attestation_Signing_a_Kernel_Mode_Driver"></span><span id="attestation_signing_a_kernel_mode_driver"></span><span id="ATTESTATION_SIGNING_A_KERNEL_MODE_DRIVER"></span>Attestation Signing a Kernel Mode Driver
-
+> - Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
+> - Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
+> - Attestation signing requires the use of an EV Certificate to submit the driver to the Partner Center.
+> - **An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows 8.1,  Windows 7, or any Windows Server versions.**
+> - Attestation signing requires driver folder names to contain no special characters, no UNC file share paths, and to be less than 40 characters long.
+ 
+## Attestation signing a kernel mode driver
 
 To attestation sign a kernel mode driver complete the following steps:
 
-1.  Acquire an EV Code Signing Certificate
-2.  Register your company for the Hardware Dev Center (Sysdev)
-3.  Download and install the Windows Driver Kit
-4.  Create a CAB files submission
-5.  Sign the CAB file submission with your EV Cert
-6.  Submit the EV signed Cab file using the Hardware Dev Center (Sysdev) dashboard
-7.  Validate that the driver was properly signed
-8.  Test your driver on Windows 10 for Desktop
+1. Acquire an EV Code Signing Certificate
+2. Register your company for the Partner Center
+3. Download and install the Windows Driver Kit
+4. Create a CAB files submission
+5. Sign the CAB file submission with your EV Cert
+6. Submit the EV signed Cab file using the Partner Center
+7. Validate that the driver was properly signed
+8. Test your driver on Windows 10 for Desktop
 
-## <span id="Acquire_an__EV_Code_Signing_Certificate"></span><span id="acquire_an__ev_code_signing_certificate"></span><span id="ACQUIRE_AN__EV_CODE_SIGNING_CERTIFICATE"></span>Acquire an EV Code Signing Certificate
+## Acquire an EV code signing certificate
 
+Before you can submit binaries to the dashboard for signing, you need to acquire an [extended validation (EV) code signing certificate](get-a-code-signing-certificate.md) to secure your digital information. EV certificates are the accepted standard for establishing ownership of the code you submit.
 
-Before you can submit binaries files using the dashboard to be signed, you need to acquire an extended validation (EV) code signing certificate to secure your digital information. This certificate is the accepted standard for establishing your company's ownership of the code you submit. It allows you to digitally sign PE binaries, such as .exe, .cab, .dll, .ocx, .msi, .xpi and .xap files.
+## Allowable PE signatures and binaries
 
-Follow the process described in [Get a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887.aspx) to acquire the needed EV code signing certificate.
+The following PE levels and binaries can be processed through Attestation:
 
-## <span id="Register_your_company_for_Hardware_Dev_Center__Sysdev__Dashboard_Services"></span><span id="register_your_company_for_hardware_dev_center__sysdev__dashboard_services"></span><span id="REGISTER_YOUR_COMPANY_FOR_HARDWARE_DEV_CENTER__SYSDEV__DASHBOARD_SERVICES"></span>Register your company for Hardware Dev Center (Sysdev) Dashboard Services
+- **PeTrust**
+- **DrmLevel**
+- **HAL**
+- .exe
+- .cab
+- .dll
+- .ocx
+- .msi
+- .xpi
+- .xap
 
+## Register your company for Partner Center Services
 
-You can sign your drivers using the legacy (Sysdev) dashboard. To access the Sysdev dashboard, you'll need to register your company and get a code signing certificate.
+To sign your drivers through the Partner Center you first need to register your organization and get a code signing certificate.
 
-Follow the process described in [Before You Sign In](https://msdn.microsoft.com/library/windows/hardware/br230782) to set up the account you will need on the dashboard.
+Follow the process described in [Register for the hardware program](register-for-the-hardware-program.md) to set up the account you will use for the hardware dashboard.
 
-## <span id="_Download_and_install_the_Windows_Driver_Kit"></span><span id="_download_and_install_the_windows_driver_kit"></span><span id="_DOWNLOAD_AND_INSTALL_THE_WINDOWS_DRIVER_KIT"></span> Download and install the Windows Driver Kit
+## Download and install the Windows Driver Kit
 
-
-You will need to download and install the Windows Driver Kit (WDK) to gain access to tools that are used to sign binary files.
+You will need to download and install the Windows Driver Kit (WDK) to gain access to tools used to sign your driver binary files.
 
 Follow the process described in [Download kits and tools for Windows 10](https://msdn.microsoft.com/windows/hardware/dn913721.aspx) to download and install the WDK.
 
-## <span id="Create_a_CAB_Files_Submission"></span><span id="create_a_cab_files_submission"></span><span id="CREATE_A_CAB_FILES_SUBMISSION"></span>Create a CAB Files Submission
+## Create a CAB Files Submission
 
+To create a CAB file that can be submitted to the dashboard, complete the following steps:
 
-To create a CAB files submission for the dashboard, complete the following steps.
+1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here will reference the [echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync) available from GitHub.
 
-1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here, will reference the echo driver available in GitHub at this location
+Typical CAB file submissions contain the following:
 
-<https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync>
+- The driver itself, for example Echo.sys
+- The driver INF file that is used by the dashboard to facilitate the signing process.
+- The symbol file that is used for debugging information. For example, Echo.pdb.
+- Catalog .CAT files are required and used for company verfication only. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
 
-Typical cab file submissions contain the following.
-
--   The driver itself, for example Echo.sys
--   The driver INF file that is used by the dashboard to facilitate the signing process.
--   Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
+  > [!NOTE]
+  > All driver folders in your CAB file must support the same set of architectures. For example, they all must support x86, x64, or they all must support both x86 and x64.
+  > - Do not use UNC file share paths when referencing your driver locations (\\\server\share).  You must use a mapped drive letter for the CAB to be valid. 
 
 2. Use MakeCab.exe to process the DDF file and create a cab file.
 
@@ -79,7 +86,7 @@ Open a Command Prompt window as Administrator. Then enter the following command 
 
 MakeCab /?
 
-```
+```cpp
 C:\Echo> MakeCab /?
 Cabinet Maker - Lossless Data Compression Tool
 
@@ -99,7 +106,7 @@ MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
 
 3. Prepare a cab file DDF input file. For our Echo driver it might look something like this.
 
-```
+```cpp
 ;*** Echo.ddf example
 ;
 .OPTION EXPLICIT     ; Generate errors
@@ -122,20 +129,17 @@ MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
 C:\Echo\Echo.Inf
 C:\Echo\Echo.Sys
 ```
-
-**Note**  All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64, or all drivers must support both x86 and x64.
-
- 
+ 
 
 4. Call the makecab utility and provide the ddf file as input using the /f option.
 
-```
+```cpp
 C:\Echo> MakeCab /f "C:\Echo\Echo.ddf
 ```
 
 The output of makecab should display the number of files in the created cabinet, in our example 2.
 
-```
+```cpp
 C:\Echo> MakeCab /f Echo.ddf
 Cabinet Maker - Lossless Data Compression Tool
 
@@ -150,55 +154,43 @@ Throughput:              86.77 Kb/second
 
 5. Locate the cab file in the Disk1 subdirectory. You can click the cab file in File Explorer to verify that it contains the expected files.
 
-## <span id="Sign_the_Submission_Cab_File__with_your_EV_Cert"></span><span id="sign_the_submission_cab_file__with_your_ev_cert"></span><span id="SIGN_THE_SUBMISSION_CAB_FILE__WITH_YOUR_EV_CERT"></span>Sign the Submission Cab File with your EV Cert
+## Sign the submission CAB file with your EV certificate
 
+1. Use the process recommended by the EV cert provider to sign the cab file with your EV cert. For example, to sign your .CAB with a SHA256 Certificate/Digest Algorithm/Timestamp  
 
-1. Use the process recommended by the EV cert provider to sign the cab file with your EV cert. For example, you might use the signtool and if you are using Verisign, you might specify their timestamp server.
-
+```cpp
+C:\Echo> SignTool sign /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /fd sha256 /tr http://sha256timestamp.ws.symantec.com/sha256/timestamp /td sha256 /v "C:\Echo\Disk1\Echo.cab"
 ```
-C:\Echo> SignTool sign /v /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /t http://timestamp.verisign.com/scripts/timstamp.dll "C:\Echo\Disk1\Echo.cab"
-```
 
-**Note**  Use industry best practices to manage the security of the EV cert signing process.
+> [!IMPORTANT]
+> Remember to use industry best practices to manage the security of the EV code signing process.
 
- 
+## Submit the EV signed Cab file using the Partner Center
 
-## <span id="Submit_the_EV_signed_Cab_file_using_the__Hardware_Dev_Center__Sysdev__dashboard"></span><span id="submit_the_ev_signed_cab_file_using_the__hardware_dev_center__sysdev__dashboard"></span><span id="SUBMIT_THE_EV_SIGNED_CAB_FILE_USING_THE__HARDWARE_DEV_CENTER__SYSDEV__DASHBOARD"></span>Submit the EV signed Cab file using the Hardware Dev Center (Sysdev) dashboard
+1. Submit the EV signed CAB file using the Partner Center. See [Driver Signing Properties](https://msdn.microsoft.com/windows/hardware/drivers/develop/driver-signing-properties) for more information.
 
+   * As part of the submission process, you must specify whether you are submitting [universal drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).
 
-1. Submit the EV signed Cab file using the Hardware Dev Center (Sysdev) dashboard For more information see [Driver Signing Properties](https://msdn.microsoft.com/windows/hardware/drivers/develop/driver-signing-properties) and [File Signing Services](file-signing-services.md).
+   * The following screen shot shows the options for submitting the echo driver for signing.
+    ![a screenshot showing the options for submitting the echo driver for signing](images/attestation-driver-signing-submission-dashboard.png)
 
-As part of the submission process you will indicate what architectures all of the drivers in the submission support. Three options are available using the check boxes.
+2. When the signing process is complete, download your signed driver from the hardware dashboard.
 
--   x86
--   x64
--   x86 and x64
+## Validate that the driver was properly signed
 
-All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64 or support both x86 and x64. If you have drivers that support different combinations of architectures, create separate submissions.
-
-You will also indicate if you are submitting universal drivers. For more information see, [Getting Started with Universal Windows drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).
-
-The following screen shot shows the options for submitting the echo driver for signing.
-
-![a screenshot showing the options for submitting the echo driver for signing](images/attestation-driver-signing-submission-dashboard.png)
-
-2. When the signing process is complete, download your signed driver from the Sysdev dashboard.
-## <span id="Validate_that_the_driver_was_properly_signed"></span><span id="validate_that_the_driver_was_properly_signed"></span><span id="VALIDATE_THAT_THE_DRIVER_WAS_PROPERLY_SIGNED"></span>Validate that the driver was properly signed
-
-
-Complete the following steps to validate that the driver was properly signed.
+Complete the following steps to ensure that the driver was properly signed.
 
 1. After you have downloaded the submission file, extract the driver file.
 
 2. Open a Command Prompt window as Administrator. Then enter the following command to verify that the driver was signed as expected.
 
-```
+```cpp
 C:\Echo> SignTool verify Echo.Sys
 ```
 
 3.To list additional information and have signtool verify all signatures in a file with multiple signatures, type the following.
 
-```
+```cpp
 C:\Echo> SignTool verify /pa /ph /v /d Echo.Sys
 ```
 
@@ -209,12 +201,11 @@ c. Select the **Details** button, and then select **View Certificate**.
 d. On the **Details** tab, select the **Enhanced Key Usage** field.
 When the driver is resigned by the dashboard the following process is used.
 
--   Appends a Microsoft SHA2 embedded signature.
--   If the driver binaries are embedded signed by the customer with their own certificates, those signatures will not be overwritten.
--   Creates and signs a new catalog file with a SHA2 Microsoft certificate. This catalog replaces any existing catalog provided by the customer.
+- Appends a Microsoft SHA2 embedded signature.
+- If the driver binaries are embedded signed by the customer with their own certificates, those signatures will not be overwritten.
+- Creates and signs a new catalog file with a SHA2 Microsoft certificate. This catalog replaces any existing catalog provided by the customer.
 
-## <span id="Test_your_driver_on_Windows_10_for_Desktop"></span><span id="test_your_driver_on_windows_10_for_desktop"></span><span id="TEST_YOUR_DRIVER_ON_WINDOWS_10_FOR_DESKTOP"></span>Test your driver on Windows 10 for Desktop
-
+## Test your driver on Windows 10
 
 Use the following instructions to install the sample driver.
 
@@ -222,22 +213,21 @@ Use the following instructions to install the sample driver.
 
 2. Alternatively, open a Command Prompt window as Administrator and use devcon to install the driver. Navigate to your driver package folder, and enter the following command.
 
-```
+```cpp
 C:\Echo> devcon install echo.inf root\ECHO
 ```
 
 3. Confirm that the driver install process does not display the "Windows can't verify the publisher of this driver software." Windows security dialog box.
 
-## <span id="Create_a_Multiple_Driver_Submission"></span><span id="create_a_multiple_driver_submission"></span><span id="CREATE_A_MULTIPLE_DRIVER_SUBMISSION"></span>Create a Multiple Driver Submission
-
+## Create a submission with multiple drivers
 
 To submit multiple drivers at the same time create a sub directory for each driver as shown below.
 
-![](images/b-wes-driversigning.png)
+![An image showing an example driver signing directory structure.](images/multiple-driversigning.png)
 
-Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
+Prepare a CAB file DDF input file that references the subdirectories. It might look something like this:
 
-```
+```cpp
 ;*** Submission.ddf multiple driver example
 ;
 .OPTION EXPLICIT     ; Generate errors
@@ -263,10 +253,4 @@ C:\DriverFiles\DriverPackage2\Driver2.sys
 C:\DriverFiles\DriverPackage2\Driver2.inf
 ```
 
-Follow the steps previously described to sign, submit and test the driver files.
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Attestation%20signing%20a%20kernel%20driver%20for%20public%20release%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+You can follow these steps to sign, submit and test the other driver files you wish to submit.

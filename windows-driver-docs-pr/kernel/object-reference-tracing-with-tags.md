@@ -1,14 +1,10 @@
 ---
 title: Object Reference Tracing with Tags
-author: windows-driver-content
 description: Object Reference Tracing with Tags
 ms.assetid: f6c3d7b2-09b1-4055-b066-cce8831efab2
 keywords: ["object referencing with tags WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Object Reference Tracing with Tags
@@ -36,15 +32,15 @@ In Windows 7 and later versions of Windows, object references can be tagged to m
 
 [**ObReferenceObjectWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff558690)
 
-For example, **ObReferenceObjectWithTag** and **ObDereferenceObjectWithTag**, which are available in Windows 7 and later versions of Windows, are enhanced versions of the [**ObReferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff558678) and [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724) routines, which are available in Windows 2000 and later versions of Windows. These enhanced routines enable you to supply a four-byte, custom tag value as an input parameter. The tag value for each call is added to an [object reference trace](http://go.microsoft.com/fwlink/p/?linkid=153590) that can be accessed by the [Windows debugging tools](http://go.microsoft.com/fwlink/p/?linkid=153599). **ObReferenceObject** and **ObDereferenceObject** do not enable the caller to specify custom tags, but, in Windows 7 and later versions of Windows, these routines add default tags (with tag value "Dflt") to the trace. Therefore, a call to **ObReferenceObject** or **ObDereferenceObject** has the same effect as a call to **ObReferenceObjectWithTag** or **ObDereferenceObjectWithTag** that specifies a tag value of "Dflt". (In your program, this tag value is represented as 0x746c6644 or 'tlfD'.)
+For example, **ObReferenceObjectWithTag** and **ObDereferenceObjectWithTag**, which are available in Windows 7 and later versions of Windows, are enhanced versions of the [**ObReferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff558678) and [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724) routines, which are available in Windows 2000 and later versions of Windows. These enhanced routines enable you to supply a four-byte, custom tag value as an input parameter. The tag value for each call is added to an [object reference trace](https://go.microsoft.com/fwlink/p/?linkid=153590) that can be accessed by the [Windows debugging tools](https://go.microsoft.com/fwlink/p/?linkid=153599). **ObReferenceObject** and **ObDereferenceObject** do not enable the caller to specify custom tags, but, in Windows 7 and later versions of Windows, these routines add default tags (with tag value "Dflt") to the trace. Therefore, a call to **ObReferenceObject** or **ObDereferenceObject** has the same effect as a call to **ObReferenceObjectWithTag** or **ObDereferenceObjectWithTag** that specifies a tag value of "Dflt". (In your program, this tag value is represented as 0x746c6644 or 'tlfD'.)
 
 To track down a potential object leak or under-reference, identify a set of associated **ObReferenceObject*Xxx*WithTag** and **ObDereferenceObject*Xxx*WithTag** calls in your driver that increment and decrement the reference count of a particular object. Choose a common tag value (for example, "Lky8") to use for all the calls in this set. After your driver is finished using the object, the number of decrements should match the number of increments exactly. If these numbers do not match, your driver has an object reference bug. The debugger can compare the number of increments and decrements for each tag value and tell you if they do not match. With this capability, you can quickly pinpoint the source of the reference-count mismatch.
 
-To view an object reference trace in the Windows debugging tools, use the [!obtrace](http://go.microsoft.com/fwlink/p/?linkid=153600) kernel-mode debugger extension. In Windows 7 and later versions of Windows, the [!obtrace](http://go.microsoft.com/fwlink/p/?linkid=153600) extension can display object reference tags, if object reference tracing is enabled. By default, object reference tracing is disabled. Use the [Global Flags Editor](http://go.microsoft.com/fwlink/p/?linkid=153601) (Gflags) to enable object reference tracing. For more information about Gflags, see [Configuring Object Reference Tracing](http://go.microsoft.com/fwlink/p/?linkid=153602).
+To view an object reference trace in the Windows debugging tools, use the [!obtrace](https://docs.microsoft.com/windows-hardware/drivers/debugger/-obtrace) kernel-mode debugger extension. In Windows 7 and later versions of Windows, the [!obtrace](https://docs.microsoft.com/windows-hardware/drivers/debugger/-obtrace) extension can display object reference tags, if object reference tracing is enabled. By default, object reference tracing is disabled. Use the [Global Flags Editor](https://go.microsoft.com/fwlink/p/?linkid=153601) (Gflags) to enable object reference tracing. For more information about Gflags, see [Configuring Object Reference Tracing](https://go.microsoft.com/fwlink/p/?linkid=153602).
 
-After object reference tracing is enabled, the output that is produced by the [!obtrace](http://go.microsoft.com/fwlink/p/?linkid=153600) extension includes a "Tag" column, as the following example shows:
+After object reference tracing is enabled, the output that is produced by the [!obtrace](https://docs.microsoft.com/windows-hardware/drivers/debugger/-obtrace) extension includes a "Tag" column, as the following example shows:
 
-```
+```cpp
 0: kd> !obtrace 0x8a226130
 Object: 8a226130
  Image: leakyapp.exe
@@ -85,22 +81,12 @@ Tag: Lky8 References: 1 Dereferences: 0 Over reference by: 1
 
 The last line in this example indicates that the reference and dereference counts that are associated with the "Lky8" tag do not match and that the result of this mismatch is an over-reference by one (that is, a leak).
 
-If the result were instead an under-reference, the last line of the [!obtrace](http://go.microsoft.com/fwlink/p/?linkid=153600) output might be as follows:
+If the result were instead an under-reference, the last line of the [!obtrace](https://docs.microsoft.com/windows-hardware/drivers/debugger/-obtrace) output might be as follows:
 
-```
+```cpp
 Tag: Lky8 References: 1 Dereferences: 2 Under reference by: 1
 ```
 
 By default, the operating system conserves memory by deleting the object reference trace for an object after the object is freed. To track down an under-reference requires that the trace remain stored in memory even after the object is freed. For this purpose, the Gflags tool provides a "Permanent" option, which preserves the trace in memory while the computer shuts down and starts again.
 
-Object reference tracing, without tags, was introduced in Windows XP. Because the trace did not include tags, developers had to use less convenient techniques to identify object reference bugs. The debugger could track the references of groups of objects, which the developer selected by object type. The only way that the developer could identify the various sources of object references and dereferences was to compare their call stacks. Although the previous [!obtrace](http://go.microsoft.com/fwlink/p/?linkid=153600) example contains only five stacks, certain types of object, such as a process ([**EPROCESS**](eprocess.md)) object, might be referenced and dereferenced many thousands of times. With thousands of stacks to inspect, it might be difficult to identify the source of an object leak or under-reference without using tags.
-
- 
-
- 
-
-
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Object%20Reference%20Tracing%20with%20Tags%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
+Object reference tracing, without tags, was introduced in Windows XP. Because the trace did not include tags, developers had to use less convenient techniques to identify object reference bugs. The debugger could track the references of groups of objects, which the developer selected by object type. The only way that the developer could identify the various sources of object references and dereferences was to compare their call stacks. Although the previous [!obtrace](https://docs.microsoft.com/windows-hardware/drivers/debugger/-obtrace) example contains only five stacks, certain types of object, such as a process ([**EPROCESS**](eprocess.md)) object, might be referenced and dereferenced many thousands of times. With thousands of stacks to inspect, it might be difficult to identify the source of an object leak or under-reference without using tags.

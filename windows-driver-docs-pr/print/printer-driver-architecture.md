@@ -1,6 +1,5 @@
 ---
 title: Printer Driver Architecture
-author: windows-driver-content
 description: Printer Driver Architecture
 ms.assetid: 68a61007-8f0d-4fd4-b4a7-c8acbc101236
 keywords:
@@ -9,20 +8,17 @@ keywords:
 - Windows printing architecture WDK
 - printer driver architecture WDK
 - printer drivers WDK , architecture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer Driver Architecture
 
 
-## <a href="" id="ddk-printer-driver-architecture-gg"></a>
 
 
-Print jobs are created by applications through calls to Microsoft Win32 GDI or, in Windows Vista, Windows Presentation Foundation (WPF) functions. The Win32 functions spool application data as [EMF](emf-data-type.md) records for later playback by the EMF [*print processor*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-print-processor), or they can immediately render a printable image for each document page. The WPF functions spool application data as an XPS spool file.
+
+Print jobs are created by applications through calls to Microsoft Win32 GDI or, in Windows Vista, Windows Presentation Foundation (WPF) functions. The Win32 functions spool application data as EMF, or they can immediately render a printable image for each document page. The WPF functions spool application data as an XPS spool file.
 
 Prior to Windows Vista, applications communicated printer settings to the printer by using a [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure. In Windows Vista, the Print Ticket and Print Capabilities technologies communicate printer settings so that printer settings are more compatible across printers and applications.
 
@@ -64,12 +60,10 @@ This section contains the following topics, which describe the Windows printing 
 
 [Writing 64-Bit Printer Drivers](writing-64-bit-printer-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Printer%20Driver%20Architecture%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

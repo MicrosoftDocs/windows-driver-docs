@@ -20,17 +20,14 @@ keywords:
 - Remote NDIS WDK networking , resetting communication channels
 - communication channels WDK networking
 - Remote NDIS WDK networking , message encapsulation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Remote NDIS Concepts and Definitions
 
 
-## <a href="" id="ddk-remote-ndis-concepts-and-definitions-ng"></a>
+
 
 
 This section presents an overview of the Remote NDIS requirements on the communication channel and lower-layer drivers that are used to communicate between the host and the Remote NDIS device. Device state transitions and major operations such as initialization, halt and reset are also described in this section.
@@ -83,9 +80,9 @@ This section presents an overview of the Remote NDIS requirements on the communi
 
     There is no Remote NDIS specification for the way NDIS messages are encapsulated in native bus messages or primitives.
 
- 
+ 
 
- 
+ 
 
 
 

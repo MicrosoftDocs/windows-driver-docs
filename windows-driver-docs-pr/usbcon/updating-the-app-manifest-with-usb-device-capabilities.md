@@ -1,12 +1,8 @@
 ---
-Description: This topic describes the device capabilities that are required for a Windows store app that uses the Windows.Devices.Usb namespace.
+Description: This topic describes the device capabilities that are required for a Windows app that uses the Windows.Devices.Usb namespace.
 title: How to add USB device capabilities to the app manifest
-author: windows-driver-content
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 01/07/2019
+ms.localizationpriority: medium
 ---
 
 # How to add USB device capabilities to the app manifest
@@ -17,7 +13,7 @@ ms.technology: windows-devices
 -   You must update Package.appxmanifest with USB device capabilities.
 -   The device class must be one of the supported classes.
 
-This topic describes the device capabilities that are required for a Windows store app that uses the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace.
+This topic describes the device capabilities that are required for a Windows app that uses the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace.
 
 ## USB device capability usage
 
@@ -32,9 +28,9 @@ Your USB app must include certain device capabilities in its [App package manife
 
 **Note**  You cannot modify the USB device capability in Microsoft Visual Studio 2013. You must right-click the Package.appxmanifest file in **Solution Explorer** and select **Open With...**, and then **XML (Text) Editor**. The file opens in plain XML.
 
- 
+ 
 
-``` syntax
+```XML
 <DeviceCapability Name="usb">
     <Device Id="vidpid:xxxx xxxx">
       <Function Type="classId:xx xx xx"/>
@@ -61,7 +57,7 @@ Your USB app must include certain device capabilities in its [App package manife
 
     **Note**  Devices that belong to the DeviceFirmwareUpdate class can only be accessed by privileged apps that is explicitly declared by the OEM for that PC.
 
-     
+     
 
 -   Because these are unknown interfaces, the app is required to specify the vendor/product id for these class codes.
 
@@ -100,7 +96,7 @@ Here are some examples for defining USB device capabilities:
 </thead>
 <tbody>
 <tr class="odd">
-<td><pre class="syntax" space="preserve"><code>&lt;DeviceCapability Name=&quot;usb&quot;&gt;
+<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name=&quot;usb&quot;&gt;
   &lt;Device Id=&quot;any&quot;&gt;
     &lt;Function Type=&quot;classId:ef 01 01&quot;/&gt;
     &lt;Function Type=&quot;name:stillImage&quot;/&gt;
@@ -109,7 +105,7 @@ Here are some examples for defining USB device capabilities:
 <td><p>Allows the app to access any ActiveSync or StillImage interface on any device. The app is not required to specify the vendor/product identifiers because these are known class types.</p></td>
 </tr>
 <tr class="even">
-<td><pre class="syntax" space="preserve"><code>&lt;DeviceCapability Name=&quot;usb&quot;&gt;
+<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name=&quot;usb&quot;&gt;
   &lt;Device Id=&quot;vidpid:045e 930a&quot;&gt;
     &lt;Function Type=&quot;name:vendorSpecific&quot;/&gt;
   &lt;/Device&gt;
@@ -117,15 +113,15 @@ Here are some examples for defining USB device capabilities:
 <td><p>Allows the app to access a vendor-specific interface on the OSR USB Fx2 device.</p></td>
 </tr>
 <tr class="odd">
-<td><pre class="syntax" space="preserve"><code>&lt;DeviceCapability Name=&quot;usb&quot;&gt;
+<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name=&quot;usb&quot;&gt;
   &lt;Device Id=&quot;vidpid:045e 930a&quot;&gt;
-    &lt;Function Type=&quot;classId:ff * *&quot;/&gt;
+    &lt;Function Type=&quot;classId:ff * <em>&quot;/&gt;
   &lt;/Device&gt;
 &lt;/DeviceCapability&gt;</code></pre></td>
-<td><p>Allows the app to access a vendor-specific interface on a different version of the OSR USB Fx2 device. Note the classId format: &quot;ff * *&quot;. The class code is &quot;ff&quot; followed by a wildcard (*) to include any subclass and protocol code.</p></td>
+<td><p>Allows the app to access a vendor-specific interface on a different version of the OSR USB Fx2 device. Note the classId format: &quot;ff * *&quot;. The class code is &quot;ff&quot; followed by a wildcard (</em>) to include any subclass and protocol code.</p></td>
 </tr>
 <tr class="even">
-<td><pre class="syntax" space="preserve"><code>&lt;DeviceCapability Name=&quot;usb&quot;&gt;
+<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name=&quot;usb&quot;&gt;
   &lt;Device Id=&quot; vidpid:1234 5678&quot;&gt;
     &lt;Function Type=&quot;winUsbId:&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot;/&gt;
   &lt;/Device&gt;
@@ -136,11 +132,11 @@ Here are some examples for defining USB device capabilities:
 </tbody>
 </table>
 
- 
+ 
 
 **App manifest package for the CustomUsbDeviceAccess sample**
 
-``` syntax
+```xml
   <Capabilities>
       <!--When the device's classId is FF * *, there is a predefined name for the class. You can use the name instead of the class id. 
           There are also other predefined names that correspond to a classId.-->
@@ -160,9 +156,7 @@ Here are some examples for defining USB device capabilities:
 ```
 
 ## Related topics
-[Windows Store app for a USB device](writing-usb-device-companion-apps-for-windows-store.md)  
+[UWP app for a USB device](writing-usb-device-companion-apps-for-microsoft-store.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20add%20USB%20device%20capabilities%20to%20the%20app%20manifest%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

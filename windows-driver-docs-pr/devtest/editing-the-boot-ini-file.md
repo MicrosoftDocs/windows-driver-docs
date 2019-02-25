@@ -20,69 +20,60 @@ keywords:
 - Boot.ini files WDK , viewing
 - editors WDK boot options
 - boot options WDK , editing
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/03/2018
+ms.localizationpriority: medium
 ---
 
 # Editing the Boot.ini File
 
 
-\[This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for Windows 8, Windows Server 2012, Windows 7, Windows Server 2008, or Windows Vista, see [Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md).\]
+> [!IMPORTANT] 
+> This topic describes the boot options supported in Windows XP and Windows Server 2003. If you are changing boot options for modern versions of Windows, see [Boot Options in Windows Vista and Later](boot-options-in-windows-vista-and-later.md).
 
-Prior to Windows Vista, BIOS-based computers running Windows store boot options in a Boot.ini text file. You can edit the Boot.ini file by using Bootcfg (bootcfg.exe), a tool included in Windows XP and Windows Server 2003, or by using a text editor such as Notepad. Bootcfg is documented in Windows Help and Support.
+Prior to Windows Vista, BIOS-based computers running Windows store boot options in a Boot.ini text file. You can edit Boot.ini using Bootcfg (`bootcfg.exe`), a tool included in Windows XP and Windows Server 2003, or using a text editor such as Notepad. Bootcfg is documented in Windows Help and Support. You can also view and change some boot options in Control Panel under System. In the System Properties dialog box, on the Advanced tab, click Settings under **Startup and Recovery**. Because this functionality is limited, it is not discussed in this section. For information about the **Startup and Recovery** dialog box, see Help and Support Center.
 
-## <span id="ddk_editing_the_boot_ini_file_tools"></span><span id="DDK_EDITING_THE_BOOT_INI_FILE_TOOLS"></span>
+## Bootcfg
 
-
-You can also view and change some boot options in Control Panel under System. In the System Properties dialog box, on the Advanced tab, click Settings under **Startup and Recovery**. Because this functionality is limited, it is not discussed in this section. For information about the **Startup and Recovery** dialog box, see Help and Support Center.
-
-### <span id="bootcfg"></span><span id="BOOTCFG"></span>Bootcfg
-
-Bootcfg is a command-line tool that edits boot options on local and remote computers. Using the same Bootcfg commands and procedures, you can edit a Boot.ini file or the boot options in Extensible Firmware Interface, Non-Volatile Random Access Memory (EFI NVRAM). Bootcfg is included in the %Systemroot%\\System32 directory in Windows XP and Windows Server 2003. (The Bootcfg display is slightly different on systems that store boot options in EFI NVRAM, but the commands are the same.)
+Bootcfg is a command-line tool that can edit boot options on local and remote computers. Using the same Bootcfg commands and procedures, you can edit Boot.ini, as well as the boot options in Extensible Firmware Interface Non-Volatile Random Access Memory (EFI NVRAM). Bootcfg is included in the `%Systemroot%\\System32` directory in Windows XP and Windows Server 2003. (The Bootcfg display is slightly different on systems that store boot options in EFI NVRAM, but the commands are the same.)
 
 You can use Bootcfg to add, delete, and change all boot entry parameters and boot options; however, you cannot use it to set an indefinite boot time-out value. You can also use Bootcfg commands in a script or batch file to set boot options or to reset them after you replace or upgrade an operating system.
 
-Unlike manual editing, Bootcfg edits boot options without changing the protective attributes on the Boot.ini file. It also helps you avoid typing errors that might prevent the operating system from starting.
+Unlike manual editing, Bootcfg edits boot options without changing the protective attributes on Boot.ini. It also helps you avoid typing errors that might prevent the operating system from starting.
 
 You must be a member of the Administrators group on the computer to use Bootcfg. For detailed instructions about using Bootcfg, see Help and Support Center.
 
-### <span id="editing_in_notepad"></span><span id="EDITING_IN_NOTEPAD"></span>Editing in Notepad
+## Editing in Notepad
 
-You can edit use a text editor, such as Notepad, to edit the Boot.ini file. However, because this method is prone to error, use it only when Bootcfg is not available.
+You can use a text editor, such as Notepad, to edit Boot.ini. However, because this method is prone to error, use it only when Bootcfg is not available.
 
-Before editing the Boot.ini file, you must remove the file attributes that Windows uses to protect the file from inadvertent changes. When the Boot.ini file is on an NTFS drive, you must be a member of the Administrators group on the computer to change its attributes.
+Before editing Boot.ini, you must remove the file attributes that Windows uses to protect the file from inadvertent changes. When Boot.ini is on an NTFS volume, you must be a member of the Administrators group on the computer to change its attributes.
 
-Use the following procedure to prepare the Boot.ini file for manual editing. This procedure removes the system, hidden, and read-only attributes of the file.
+Use the following procedure to prepare Boot.ini for manual editing. This procedure removes the system, hidden, and read-only attributes of the file.
 
-**To configure the Boot.ini file attributes for editing**
+**To configure Boot.ini attributes for editing**
 
-1.  At a command prompt, navigate to the root of the boot directory.
+1.  Open **Windows Command Prompt**. 
 
-2.  Type the following text at the command line:
+2.  Navigate to the root of the system volume.
+
+3.  Type the following text at the command line:
 
     ```
     attrib -s -h -r Boot.ini
     ```
 
     System, hidden, and read-only attributes are removed from the file.
+    
+4.  Open the file in Notepad for editing. Since you are in Windows Command Prompt, the following command should do the trick quickly:
 
-3.  When your editing is complete, you can restore the file attributes to protect the Boot.ini file. However, Ntldr can use the Boot.ini file with any attribute set. At a command prompt, type the following text:
+    ```
+    notepad.exe Boot.ini
+    ```
+
+5.  When your editing is complete, you can restore the file attributes to protect Boot.ini. However, Ntldr can use Boot.ini with any attribute set. To restore attributes, type the following in Windows Command Prompt:
 
     ```
     attrib +s +h +r Boot.ini
     ```
 
     This restores the attributes that protect the Boot.ini file.
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Editing%20the%20Boot.ini%20File%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

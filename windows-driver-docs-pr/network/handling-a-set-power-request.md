@@ -8,22 +8,19 @@ keywords:
 - Working state WDK NDIS intermediate
 - standby flags WDK NDIS intermediate
 - power states WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling a Set Power Request
 
 
-## <a href="" id="ddk-handling-a-set-power-request-ng"></a>
+
 
 
 An intermediate driver must handle requests to set power to the working state (a network device power state of D0) and to sleeping states (a network device power state of D1, D2, or D3). The intermediate driver should also maintain power state variables and a StandBy flag. These issues are discussed further in this topic.
 
-For examples of intermediate driver power management, see the [NDIS MUX Intermediate Driver and Notify Object](http://go.microsoft.com/fwlink/p/?LinkId=617916) driver sample in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+For examples of intermediate driver power management, see the [NDIS MUX Intermediate Driver and Notify Object](https://go.microsoft.com/fwlink/p/?LinkId=617916) driver sample in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
 ### Handling a Set Power Request to a Sleeping State
 
@@ -43,7 +40,7 @@ When the virtual miniport upper edge of the intermediate driver receives a reque
 
     **Note**  No OID requests can be sent to the virtual miniport while it is in a low-power state, with the exception of [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780).
 
-     
+     
 
 3.  NDIS issues an [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request to the virtual miniport of the intermediate driver. The intermediate driver accepts the request by returning NDIS\_STATUS\_SUCCESS. The intermediate driver must not propagate the OID\_PNP\_SET\_POWER request to the underlying miniport driver. After the intermediate driver completes this request, it should not indicate any more received network data or indicate status, even if it keeps receiving network data and status indications from the underlying miniport driver.
 
@@ -55,7 +52,7 @@ When the protocol lower edge of the intermediate driver transitions the underlyi
 
     **Note**  No OID requests can be sent to the underlying miniport adapter while it is in a low-power state, with the exception of [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780).
 
-     
+     
 
 3.  NDIS issues an [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request to the underlying miniport driver. However, if the underlying miniport driver does not support power management, it will be halted. In this case, even though NDIS halts the underlying miniport driver, it does not request the intermediate driver protocol to unbind from the underlying miniport driver and NIC. After the underlying miniport driver has successfully completed processing the OID (or the miniport driver is halted), it will not indicate any more network data or status.
 
@@ -95,7 +92,7 @@ The intermediate driver should maintain a separate power state variable for each
 
 **Note**  For MUX intermediate drivers, there can be multiple virtual miniports that are associated with an underlying miniport driver or multiple underlying miniports that are associated with each virtual miniport. When the power state of any miniport adapter changes, the behavior of all of the associated miniports are also affected. How the behavior is affected is implementation-specific. For example, a driver that implements a Load Balancing Failover (LBFO) solution might not deactivate the virtual miniports when a single underlying miniport driver is deactivated. However, a driver implementation that depends on all underlying miniport drivers would require deactivation of virtual miniports when any underlying miniport driver is deactivated.
 
- 
+ 
 
 The intermediate driver should use the StandingBy flag and power state variables when processing requests as follows:
 
@@ -107,9 +104,9 @@ The intermediate driver should use the StandingBy flag and power state variables
 
 -   The intermediate driver virtual miniport should report status only if both the underlying miniport driver and virtual miniport are in D0.
 
- 
+ 
 
- 
+ 
 
 
 

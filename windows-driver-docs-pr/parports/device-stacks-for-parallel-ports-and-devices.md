@@ -1,23 +1,19 @@
 ---
 title: Device Stacks for Parallel Ports and Devices
-author: windows-driver-content
 description: Device Stacks for Parallel Ports and Devices
 ms.assetid: 80222ed9-f900-4d97-b459-2d8ca780e1d1
 keywords:
 - system-supplied parallel drivers WDK , device stacks
 - device stacks WDK parallel drivers
 - parallel devices WDK , device stacks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Stacks for Parallel Ports and Devices
 
 
-## <a href="" id="ddk-device-stacks-for-parallel-ports-and-devices-kg"></a>
+
 
 
 This section describes the device stacks created by the system-supplied parallel drivers for parallel ports and devices that are attached to parallel ports.
@@ -40,11 +36,10 @@ For more information about how to operate parallel ports and devices that are at
 
 [Client Interfaces to System-Supplied Parallel Drivers](https://msdn.microsoft.com/library/windows/hardware/ff543926)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

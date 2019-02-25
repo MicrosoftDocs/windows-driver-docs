@@ -3,17 +3,14 @@ title: Bug Check 0x190 WIN32K_CRITICAL_FAILURE_LIVEDUMP
 description: The WIN32K_CRITICAL_FAILURE_LIVEDUMP bug check has a value of 0x00000190. This indicates that Win32k has encountered a critical failure. A live dump is captured to collect the debug information.
 ms.assetid: 39C0145D-08FE-4BBC-A729-9E70198CF87F
 keywords: ["Bug Check 0x190 WIN32K_CRITICAL_FAILURE_LIVEDUMP", "WIN32K_CRITICAL_FAILURE_LIVEDUMP"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - WIN32K_CRITICAL_FAILURE_LIVEDUMP
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x190: WIN32K\_CRITICAL\_FAILURE\_LIVEDUMP
@@ -21,7 +18,7 @@ api_type:
 
 The WIN32K\_CRITICAL\_FAILURE\_LIVEDUMP bug check has a value of 0x00000190. This indicates that Win32k has encountered a critical failure. A live dump is captured to collect the debug information.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## WIN32K\_CRITICAL\_FAILURE\_LIVEDUMP Parameters
 
@@ -65,11 +62,11 @@ The WIN32K\_CRITICAL\_FAILURE\_LIVEDUMP bug check has a value of 0x00000190. Thi
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

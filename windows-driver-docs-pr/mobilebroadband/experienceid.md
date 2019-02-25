@@ -2,15 +2,13 @@
 title: ExperienceID
 description: ExperienceID
 ms.assetid: 550527ae-fef9-46c6-816b-d842fe472b68
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ExperienceID
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The ExperienceID element specifies a GUID representing the device experience. This GUID is used to group one or more metadata packages for the same device identifiers independent of the packages’ locale.
 
@@ -56,13 +54,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Relationships](relationships.md)</p></td>
-<td><p>The [Relationships](relationships.md) element specifies data that is used to track a device metadata package within the device metadata cache.</p></td>
+<td><p><a href="relationships.md" data-raw-source="[Relationships](relationships.md)">Relationships</a></p></td>
+<td><p>The <a href="relationships.md" data-raw-source="[Relationships](relationships.md)">Relationships</a> element specifies data that is used to track a device metadata package within the device metadata cache.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -78,11 +76,10 @@ In Windows 8.1 and Windows 10, the ExperienceID is created by the Service Meta
 
 In Windows 8 the ExperienceID can be specified by the service metadata developer, or automatically generated and added to the service metadata using the [Device Metadata Authoring Wizard](https://go.microsoft.com/fwlink/?linkid=620032). If the ExperienceID is not specified in the service metadata package, the Windows Dev Center Dashboard creates a GUID and updates the ExperienceID element within the metadata package when the mobile network operator or mobile virtual network operator submits the service metadata package.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20ExperienceID%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

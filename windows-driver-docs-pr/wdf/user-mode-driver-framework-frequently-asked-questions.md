@@ -1,13 +1,9 @@
 ---
 title: User-Mode Driver Framework Frequently Asked Questions
-author: windows-driver-content
 description: Windows Driver Frameworks (WDF) is a set of libraries that you can use to write device drivers that run on the Windows operating system.
 ms.assetid: 0c07e514-73f9-4d24-86ad-8ac036fdbcf4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # User-Mode Driver Framework Frequently Asked Questions
@@ -35,7 +31,7 @@ UMDF version 2 (both 2.0 and 2.1) is included in Windows 10 and later.
 ## What is the difference between UMDF version 2 and the previous version, 1.11 (one dot eleven)?
 
 
-A driver written in UMDF version 2 is written in the C programming language. This same driver can then be easly compiled for KMDF. Additionally, a UMDF version 1 driver must be written according to the COM programming model. 
+A driver written in UMDF version 2 is written in the C programming language. This same driver can then be easily compiled for KMDF. Additionally, a UMDF version 1 driver must be written according to the COM programming model. 
 
 For more info, see [Getting Started with UMDF](getting-started-with-umdf-version-2.md).
 
@@ -58,7 +54,7 @@ A UMDF driver can receive I/O requests from a kernel-mode driver. For more info 
 
 As a result of increased parity between KMDF and UMDF, however, you will rarely need to split a driver.
 
-## <a href="" id="---which-framework-should-i-start-with-"></a> Which framework should I start with?
+##  Which framework should I start with?
 
 
 If your driver requires any of the less common features listed in [Comparing UMDF 2 Functionality to KMDF](comparing-umdf-2-0-functionality-to-kmdf.md), you must use KMDF. For all other drivers, your first choice should be UMDF.
@@ -74,19 +70,19 @@ A user-mode driver can impersonate its client process only for I/O requests, and
 
 At driver installation, the INF file sets a maximum impersonation level for the driver. Impersonation should be set at the lowest level possible to prevent "elevation-of-privilege" attacks. When a client application calls the **CreateFile** function, it specifies an impersonation level. The driver then requests this level of impersonation for each individual I/O request.
 
-## <a href="" id="will-a-user-mode-driver-be-fast-enough---"></a>Will a user-mode driver be fast enough?
+## Will a user-mode driver be fast enough?
 
 
 Performance is a high priority in developing UMDF. Although latency and CPU usage both increase somewhat, bus capacity is the primary gating factor for the types of devices that UMDF supports.
 
-## <a href="" id="what-is-the-difference-between-a-user-mode-driver-and-an-application----"></a>What is the difference between a user-mode driver and an application?
+## What is the difference between a user-mode driver and an application?
 
 
 A user-mode driver is started by the Driver Manager and runs in a driver host process. A single instance of the driver can service simultaneous requests from multiple applications. To communicate with the driver, applications issue I/O requests to the driver's device through the Win32 API. The primary entry point in a user-mode driver is the [**IDriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff554885) interface (UMDF 1.11 and earlier) or the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff540807) routine (starting in UMDF 2.0), rather than a **main()** function.
 
 A driver also includes additional interfaces or callbacks that are invoked in response to I/O requests and Plug and Play and power notifications. A device that is managed by a UMDF driver is integrated into the system and participates in Plug and Play and power management.
 
-## <a href="" id="how-do-i-debug-a-umdf-driver---"></a>How do I debug a UMDF driver?
+## How do I debug a UMDF driver?
 
 
 You can debug a UMDF driver by using user-mode debuggers or kernel-mode debuggers. For more info, see [Debugging WDF Drivers](debugging-a-wdf-driver.md).
@@ -98,13 +94,13 @@ Starting in UMDF version 2.0, you can use many of the commands in the *Wdfkd.dll
 
 You can find discussion of all aspects of Windows drivers on the following forums:
 
--   Microsoft maintains the [Windows Hardware WDK and Driver Development](http://social.msdn.microsoft.com/Forums/windowsdesktop/en-US/home?forum=wdk) forum.
+-   Microsoft maintains the [Windows Hardware WDK and Driver Development](http://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=wdk) forum.
 
 -   Open Systems Resources (OSR) moderates the [OSR Online NTDEV List](http://www.osronline.com/showlists.cfm?list=ntdev) forum.
 
- 
+ 
 
- 
+ 
 
 
 

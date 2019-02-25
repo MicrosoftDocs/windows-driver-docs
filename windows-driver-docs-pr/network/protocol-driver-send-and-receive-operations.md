@@ -2,17 +2,14 @@
 title: Protocol Driver Send and Receive Operations
 description: Protocol Driver Send and Receive Operations
 ms.assetid: c621d673-167e-41e1-a121-68e0d0bc6f8a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Protocol Driver Send and Receive Operations
 
 
-## <a href="" id="ddk-protocol-driver-send-and-receive-operations-ng"></a>
+
 
 
 Protocol drivers originate send requests and handle the receive indications of underlying drivers. In a single function call, NDIS protocol drivers can send multiple [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures with multiple [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures on each NET\_BUFFER\_LIST structure. In the receive path, protocol drivers can receive a list of NET\_BUFFER\_LIST structures.
@@ -27,9 +24,9 @@ The following topics provide more information about protocol driver buffer manag
 
 [Receiving Data in Protocol Drivers](receiving-data-in-protocol-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

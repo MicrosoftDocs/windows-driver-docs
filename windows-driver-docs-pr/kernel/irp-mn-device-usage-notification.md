@@ -1,15 +1,11 @@
 ---
-title: IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION
-author: windows-driver-content
+title: IRP_MN_DEVICE_USAGE_NOTIFICATION
 description: System components send this IRP to ask the drivers for a device whether the device can support a special file.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: d8287ba2-ac0a-4407-b587-a5aa5b3617a2
 keywords:
  - IRP_MN_DEVICE_USAGE_NOTIFICATION Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION
@@ -102,7 +98,7 @@ When any of a driver's special file counts is nonzero, the driver must support t
 
 For a **DeviceUsageTypePaging** file created on its device, a driver must do the following:
 
--   Lock code in memory for its [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376), [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034), [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287), and [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routines.
+-   Lock code in memory for its [*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), and [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routines.
 
 -   Clear the DO\_POWER\_PAGABLE bit in its device object for the device (on the IRP's way up the device stack).
 
@@ -159,13 +155,13 @@ Requirements
 ## See also
 
 
-[*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287)
+[*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354)
+[*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376)
+[*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034)
+[*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [**IoAdjustPagingPathCount**](https://msdn.microsoft.com/library/windows/hardware/ff548209)
 
@@ -189,12 +185,10 @@ Requirements
 
 [**PoSetPowerState**](https://msdn.microsoft.com/library/windows/hardware/ff559765)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20IRP_MN_DEVICE_USAGE_NOTIFICATION%20%20RELEASE:%20%288/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

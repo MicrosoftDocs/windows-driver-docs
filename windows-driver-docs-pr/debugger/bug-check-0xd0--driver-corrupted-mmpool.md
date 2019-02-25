@@ -3,17 +3,14 @@ title: Bug Check 0xD0 DRIVER_CORRUPTED_MMPOOL
 description: The DRIVER_CORRUPTED_MMPOOL bug check has a value of 0x000000D0. This indicates that the system attempted to access invalid memory at a process IRQL that was too high.
 ms.assetid: fad53a11-d4db-4f2c-b03e-19c5db47975b
 keywords: ["Bug Check 0xD0 DRIVER_CORRUPTED_MMPOOL", "DRIVER_CORRUPTED_MMPOOL"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - DRIVER_CORRUPTED_MMPOOL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD0: DRIVER\_CORRUPTED\_MMPOOL
@@ -21,7 +18,7 @@ api_type:
 
 The DRIVER\_CORRUPTED\_MMPOOL bug check has a value of 0x000000D0. This indicates that the system attempted to access invalid memory at a process IRQL that was too high.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIVER\_CORRUPTED\_MMPOOL Parameters
 
@@ -58,7 +55,7 @@ The DRIVER\_CORRUPTED\_MMPOOL bug check has a value of 0x000000D0. This indicate
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -78,9 +75,9 @@ For information about the special pool, consult the Driver Verifier section of t
 
 An alternate method is to open the **\\\\HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management** registry key. In this key, create or edit the **ProtectNonPagedPool** value, and set it equal to DWORD 1. Then reboot. Then the system will unmap all freed nonpaged pool. This will prevent drivers from corrupting the pool. (This does not protect the pool from DMA hardware, however.)
 
- 
+ 
 
- 
+ 
 
 
 

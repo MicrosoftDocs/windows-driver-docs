@@ -7,11 +7,8 @@ keywords:
 - rotation WDK display
 - clone mode WDK video present network
 - surface rotation WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Rotation in a Display Miniport Driver
@@ -23,7 +20,7 @@ The Microsoft DirectX graphics kernel subsystem uses non-rotated surface dimensi
 
 **Note**   All rotation degrees are defined in the counter-clockwise direction, which is consistent with how GDI defines rotation.
 
- 
+ 
 
 When the DirectX subsystem notifies the display miniport driver to rotate the surface, the driver should rotate the surface data only if the **Rotate** bit-field flag was set in the **Flags** member of the [**DXGKARG\_PRESENT**](https://msdn.microsoft.com/library/windows/hardware/ff557618) structure that the *pPresent* parameter points to in a call to the driver's [**DxgkDdiPresent**](https://msdn.microsoft.com/library/windows/hardware/ff559743) function. Even if the driver determines that the current orientation of the screen is rotated from the presentation data and **Rotate** was not set, the driver should not rotate the data.
 
@@ -91,7 +88,7 @@ The following table shows how a display miniport driver behaves in clone mode fo
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="clone-mode_requirements"></span><span id="CLONE-MODE_REQUIREMENTS"></span>Clone-mode requirements starting with Windows 8.1 Update
 
@@ -122,11 +119,10 @@ If the source display is a portrait-first device and connects to a landscape-fir
 
 For more info, see [Supporting Path-Independent Rotation](supporting-path-independent-rotation.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Supporting%20Rotation%20in%20a%20Display%20Miniport%20Driver%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

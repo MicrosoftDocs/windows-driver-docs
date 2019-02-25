@@ -12,17 +12,14 @@ keywords:
 - removing network components
 - upgrading network components WDK , notify objects
 - installing network components WDK , notify objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing, Upgrading, and Removing the Component
 
 
-## <a href="" id="ddk-installing-upgrading-and-removing-the-component-ng"></a>
+
 
 
 When the network configuration subsystem installs, upgrades, or removes a network component, the subsystem also calls the component's notify object to complete the installation, upgrade, and removal. The component's notify object can be implemented to perform operations that the component might require. For example:
@@ -37,9 +34,9 @@ When the network configuration subsystem installs, upgrades, or removes a networ
 
 -   The component's notify object can be implemented so that when the subsystem upgrades the component, the notify object will change the order of the component's binding path. To change this order, a notify object's [**INetCfgComponentSetup::Upgrade**](https://msdn.microsoft.com/library/windows/hardware/ff547783) method calls either the [**INetCfgComponentBindings::MoveBefore**](https://msdn.microsoft.com/library/windows/hardware/ff547722) or the [**INetCfgComponentBindings::MoveAfter**](https://msdn.microsoft.com/library/windows/hardware/ff547721) methods.
 
- 
+ 
 
- 
+ 
 
 
 

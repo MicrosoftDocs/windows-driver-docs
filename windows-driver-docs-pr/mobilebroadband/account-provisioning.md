@@ -2,11 +2,8 @@
 title: Account provisioning
 description: Account provisioning
 ms.assetid: 3ffcd769-253f-4918-8095-a9206445a201
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Account provisioning
@@ -21,7 +18,6 @@ The following diagram illustrates the contents and hierarchy of the provisioning
 For more info about the provisioning schema, see [CarrierControlSchema schema](https://msdn.microsoft.com/library/windows/apps/hh868312).
 
 ## <span id="Updating_the_provisioning_metadata"></span><span id="updating_the_provisioning_metadata"></span><span id="UPDATING_THE_PROVISIONING_METADATA"></span>Updating the provisioning metadata
-
 
 There are several ways you can update the provisioning metadata on a computer.
 
@@ -39,7 +35,7 @@ A mobile broadband app can use the following triggers to update the provisioning
 
 -   **Incoming SMS** You can send SMS messages that your app understands. This might define a message that initiates a refresh, or automatically checks for updated usage upon receiving a threshold notification.
 
--   **Windows Notification Service** Any Windows Store app can register for push notifications and take actions based on their content. You can use this as a notification channel for provisioning updates.
+-   **Windows Notification Service** Any UWP app can register for push notifications and take actions based on their content. You can use this as a notification channel for provisioning updates.
 
 -   **Large location changes** If different parameters apply to users who are in different locales, a change in location might trigger an app to apply updated settings for the user’s new location.
 
@@ -82,16 +78,13 @@ For more info about these sections, see [CarrierControlSchema schema](https://ms
 
 The global section is required in every provisioning file. Required elements in this section are as follows:
 
--   [**CarrierId**](https://msdn.microsoft.com/library/windows/apps/hh868288) A GUID that uniquely identifies the organization that authored the file. If you are building a mobile broadband app, you must use the GUID that you specified in the [Service Number](https://msdn.microsoft.com/library/windows/hardware/dn236413) field of **ServiceInfo.xml** in the service metadata package. For info about the service metadata package schema, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
+- [**CarrierId**](https://msdn.microsoft.com/library/windows/apps/hh868288) A GUID that uniquely identifies the organization that authored the file. If you are building a mobile broadband app, you must use the GUID that you specified in the [Service Number](https://msdn.microsoft.com/library/windows/hardware/dn236413) field of **ServiceInfo.xml** in the service metadata package. For info about the service metadata package schema, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
 
-    **Note**  
-    This is the same service number that you provided in the **Create a mobile broadband experience wizard** on the Windows Dev Center Dashboard – Hardware.
+  > [!NOTE]
+  > This is the same service number that you provided in the **Create a mobile broadband experience wizard** on the Windows Dev Center Dashboard – Hardware.
+  > If you are not creating a mobile broadband app, you can generate a GUID for your organization’s use. In either case, you should always use the same GUID on all provisioning files that your organization issues.
 
-     
-
-    If you are not creating a mobile broadband app, you can generate a GUID for your organization’s use. In either case, you should always use the same GUID on all provisioning files that your organization issues.
-
--   [**SubscriberId**](https://msdn.microsoft.com/library/windows/apps/hh868305) A string that uniquely identifies the customer in your organization. If you are a mobile operator, this should be the IMSI or ICCID ranges for GSM operators or the provider ID or provider name for CDMA operators. If you are not a mobile operator, you can choose any sufficiently unique string.
+- [**SubscriberId**](https://msdn.microsoft.com/library/windows/apps/hh868305) A string that uniquely identifies the customer in your organization. If you are a mobile operator, this should be the IMSI or ICCID ranges for GSM operators or the provider ID or provider name for CDMA operators. If you are not a mobile operator, you can choose any sufficiently unique string.
 
 ### Activation
 
@@ -115,7 +108,7 @@ Defines subscriber information on the mobile operator network. There are two dif
 
 -   [**DefaultProfile**](https://msdn.microsoft.com/library/windows/apps/hh868290) Every mobile broadband subscription can have one default profile that is used to connect to the home network operator. Windows Connection Manager uses this profile for auto-connecting to the network.
 
-    ``` syntax
+    ```xml
     <MBNProfiles>
         <DefaultProfile xmlns="http://www.microsoft.com/networking/CarrierControl/WWAN/v1">
           <Name>Contoso MBN</Name>
@@ -133,6 +126,13 @@ Defines subscriber information on the mobile operator network. There are two dif
     ```
 
 [**Branding**](https://msdn.microsoft.com/library/windows/apps/hh868446)
+
+> [!IMPORTANT]
+> Starting in Windows 10, version 1709, branding fields provisioned by the ProvisioningAgent API have been replaced by branding fields in the COSA database. **Logo** has been replaced by **Branding Icon** in COSA, and **Name** has been replaced by **Branding Name** in COSA.
+>
+> **Logo** and **Name** will no longer be considered when provisioning in Windows 10, version 1709 and later. The ProvisioningAgent API will not throw an error if they are used, but you should change **Branding Icon** and **Branding Name** in COSA instead.  
+>
+> For more information about **Branding Icon** and **Branding Name**, see [Desktop COSA/APN database settings (Desktop COSA only settings)](desktop-cosa-apn-database-settings.md#desktop-cosa-only-settings).
 
 Branding lets you specify how Windows displays your mobile broadband networks. This information overrides any service metadata, if present. If no information is provided, the contents of the service metadata package are used. The branding elements are as follows:
 
@@ -154,89 +154,89 @@ For more information on SMS notifications, see [Enabling mobile operator notific
 
 Each rule contains the following information:
 
--   **Silent** If this value is true, the message results in a [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event only. If this value is false, the message results in an **SmsMessageReceived** event.
+- **Silent** If this value is true, the message results in a [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event only. If this value is false, the message results in an **SmsMessageReceived** event.
 
--   **Allowed sender** Specifies the reserved sender address from which the notification is permitted to arrive. This number must exactly match the sender number that is received in the SMS message, including the international format.
+- **Allowed sender** Specifies the reserved sender address from which the notification is permitted to arrive. This number must exactly match the sender number that is received in the SMS message, including the international format.
 
--   **Pattern** The regular expression to identify and optionally extract data fields from the text message. This pattern will match all messages from a sender: `[^]*`
+- **Pattern** The regular expression to identify and optionally extract data fields from the text message. This pattern will match all messages from a sender: `[^]*`
 
--   **RuleId** An identifier for this rule, which is passed to the mobile broadband app as part of the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event. This identifier enables the app to know which rule caused the SMS to trigger a MobileOperatorNotification event, and can reduce the app’s need to parse the message again.
+- **RuleId** An identifier for this rule, which is passed to the mobile broadband app as part of the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event. This identifier enables the app to know which rule caused the SMS to trigger a MobileOperatorNotification event, and can reduce the app’s need to parse the message again.
 
--   **Fields and groups** Each capturing group in the regular expression pattern is tied to a named field. This is used to extract and transform the data into a set of usable values. For example, the first match-group can be tied to the **Usage** field and the second match-group can be tied to the **UsageDataLimit** field. This association indicates that the first value is the current usage information, and the second value is the maximum allowed usage.
+- **Fields and groups** Each capturing group in the regular expression pattern is tied to a named field. This is used to extract and transform the data into a set of usable values. For example, the first match-group can be tied to the **Usage** field and the second match-group can be tied to the **UsageDataLimit** field. This association indicates that the first value is the current usage information, and the second value is the maximum allowed usage.
 
-    -   **Usage, UsagePercentage, UsageOverage, UsageOveragePercentage**: Expresses the current usage as an absolute number, as a percentage of the data limit, as a number in excess of the data limit, or as a percentage in excess of the data limit. Absolute values can reference a group that specifies the unit in which the value is expressed.
+  - **Usage, UsagePercentage, UsageOverage, UsageOveragePercentage**: Expresses the current usage as an absolute number, as a percentage of the data limit, as a number in excess of the data limit, or as a percentage in excess of the data limit. Absolute values can reference a group that specifies the unit in which the value is expressed.
 
-    -   **UsageTimestamp**: The date and time at which the usage field is calculated. This information must be included if any **Usage\*** field is included. The format string contains the following identifiers to express how the substring should be interpreted:
+  - **UsageTimestamp**: The date and time at which the usage field is calculated. This information must be included if any **Usage\\*** field is included. The format string contains the following identifiers to express how the substring should be interpreted:
 
-        <table>
-        <colgroup>
-        <col width="50%" />
-        <col width="50%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th>Identifier</th>
-        <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td><p>%d</p></td>
-        <td><p>Day of month as decimal number (01 – 31)</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>%H</p></td>
-        <td><p>Hour in 24-hour format (00 – 23)</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>%I</p></td>
-        <td><p>Hour in 12-hour format (01 – 12)</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>%m</p></td>
-        <td><p>Month as decimal number (01 – 12)</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>%M</p></td>
-        <td><p>Minute as decimal number (00 – 59)</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>%S</p></td>
-        <td><p>Second as decimal number (00 – 59)</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>%y</p></td>
-        <td><p>Year without century, as decimal number (00 – 99)</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>%Y</p></td>
-        <td><p>Year with century, as decimal number (0000-9999)</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>%p</p></td>
-        <td><p>AM/PM indicator</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>%#d, %#H, %#I, %#m, %#M, %#S, %#y, %#Y</p></td>
-        <td><p>Same as above but with no leading zeros</p></td>
-        </tr>
-        </tbody>
-        </table>
+    <table>
+    <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Identifier</th>
+    <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td><p>%d</p></td>
+    <td><p>Day of month as decimal number (01 – 31)</p></td>
+    </tr>
+    <tr class="even">
+    <td><p>%H</p></td>
+    <td><p>Hour in 24-hour format (00 – 23)</p></td>
+    </tr>
+    <tr class="odd">
+    <td><p>%I</p></td>
+    <td><p>Hour in 12-hour format (01 – 12)</p></td>
+    </tr>
+    <tr class="even">
+    <td><p>%m</p></td>
+    <td><p>Month as decimal number (01 – 12)</p></td>
+    </tr>
+    <tr class="odd">
+    <td><p>%M</p></td>
+    <td><p>Minute as decimal number (00 – 59)</p></td>
+    </tr>
+    <tr class="even">
+    <td><p>%S</p></td>
+    <td><p>Second as decimal number (00 – 59)</p></td>
+    </tr>
+    <tr class="odd">
+    <td><p>%y</p></td>
+    <td><p>Year without century, as decimal number (00 – 99)</p></td>
+    </tr>
+    <tr class="even">
+    <td><p>%Y</p></td>
+    <td><p>Year with century, as decimal number (0000-9999)</p></td>
+    </tr>
+    <tr class="odd">
+    <td><p>%p</p></td>
+    <td><p>AM/PM indicator</p></td>
+    </tr>
+    <tr class="even">
+    <td><p>%#d, %#H, %#I, %#m, %#M, %#S, %#y, %#Y</p></td>
+    <td><p>Same as above but with no leading zeros</p></td>
+    </tr>
+    </tbody>
+    </table>
 
-         
+         
 
-    -   **DataLimit**: The absolute number of bytes that the user is allowed to use; this includes a group that specifies the unit in which the value is expressed.
+  - **DataLimit**: The absolute number of bytes that the user is allowed to use; this includes a group that specifies the unit in which the value is expressed.
 
-    -   **OverDataLimit, Congested**: Modifies flags that are reported to apps to indicate that the user has exceeded their data limit or that the network is under heavy load.
+  - **OverDataLimit, Congested**: Modifies flags that are reported to apps to indicate that the user has exceeded their data limit or that the network is under heavy load.
 
-    -   **InboundBandwidth, OutboundBandwidth**: If a maximum bandwidth is being imposed by the network, this specifies the groups that represent the value and the units.
+  - **InboundBandwidth, OutboundBandwidth**: If a maximum bandwidth is being imposed by the network, this specifies the groups that represent the value and the units.
 
-    -   **PlanType**: Specifies how the user is charged for future usage.
+  - **PlanType**: Specifies how the user is charged for future usage.
 
 **Caution**  
 Because SMS messages influence Windows behavior, only trusted SMS messages can be consumed. Security is maintained by restricting the sender address. This security method assumes that your network’s SMS Gateway ensures that messages from restricted senders cannot be spoofed.
 
- 
+ 
 
 ### Wi-Fi information
 
@@ -245,7 +245,7 @@ This section lets you provide any number of Wi-Fi network profiles for Windows t
 **Note**  
 One profile can contain multiple SSIDs, if all other settings are the same. If different networks vary in other ways (authentication method, encryption settings, plan, and so on), you must create additional profiles.
 
- 
+ 
 
 When you specify the WLAN section, you must also specify all profiles that should be configured on the computer. If those profiles reference a data plan, the plans section must also be included. The behavior that occurs when this section is processed is as follows:
 
@@ -345,7 +345,7 @@ This profile configures Windows to connect to an encrypted network by using a SI
       </authEncryption>
       <OneX xmlns="http://www.microsoft.com/networking/OneX/v1">
         <EAcomputeronfig>
-          <!-- The config XML for all EA methods can be found at: http://msdn.microsoft.com/library/cc232996(v=prot.10).aspx -->
+          <!-- The config XML for all EA methods can be found at: https://msdn.microsoft.com/library/cc232996(v=prot.10).aspx -->
           <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
             <EapMethod>
               <Type>18</Type>
@@ -522,7 +522,7 @@ Provisioning requirements:
 </tbody>
 </table>
 
- 
+ 
 
 ### Permitted combinations
 
@@ -563,7 +563,7 @@ XSD schemas are available under **%SYSTEMROOT%\\schemas\\provisioning** on any c
 
 ### Apply provisioning XML to the device
 
-You can apply a provisioning XML file to a device by using a mobile broadband app, a Windows Store app, or from a web site.
+You can apply a provisioning XML file to a device by using a mobile broadband app, a UWP app, or from a web site.
 
 To provision from a mobile broadband app:
 
@@ -573,7 +573,7 @@ To provision from a mobile broadband app:
 
 The asynchronous operation complete and the results of the provisioning operation are returned.
 
-To provision from a Windows Store app other than the mobile broadband app:
+To provision from a UWP app other than the mobile broadband app:
 
 1.  Generate a signed Account Provisioning XML document.
 
@@ -622,7 +622,7 @@ You can define a provisioning XML document by using an **MBNProfile** section.
 **Note**  
 The child elements of **DefaultProfile** are required. See the provisioning XML schema reference for more details.
 
- 
+ 
 
 ### Provision the device to connect automatically to a Wi-Fi network
 
@@ -657,7 +657,7 @@ You can define a provisioning XML document by using a **WlanProfiles** section.
 </CarrierProvisioning>
 ```
 
-The child elements of **MSM** define how to connect to the network. This includes any necessary EAP configuration. All child elements elements of the MSM element in the [WLAN\_profile Schema](https://msdn.microsoft.com/library/windows/desktop/ms707341) are supported. See the provisioning XML schema reference for more details.
+The child elements of **MSM** define how to connect to the network. This includes any necessary EAP configuration. All child elements of the MSM element in the [WLAN\_profile Schema](https://msdn.microsoft.com/library/windows/desktop/ms707341) are supported. See the provisioning XML schema reference for more details.
 
 ### Provision the device to connect automatically to a WISPr-enabled hotspot
 
@@ -770,7 +770,7 @@ Optionally, you can specify these directives by using retry counts/intervals and
 **Note**  
 If the radio is successfully cycled on in a **ReregisterToNetwork** but the automatic connection back to the network using the default profile fails, then subsequent retries do not cycle the radio again.
 
- 
+ 
 
 ``` syntax
 <?xml version="1.0"?>
@@ -897,11 +897,10 @@ After you import this module, the following four PowerShell cmdlets are availabl
     Test-ValidProvisioningXml -InputFile <complete path to the input XML file>
     ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Account%20provisioning%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

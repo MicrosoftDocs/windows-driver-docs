@@ -18,11 +18,8 @@ keywords:
 - driver stacks WDK audio
 - system bus drivers WDK audio
 - subdevices WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDM Audio Terminology
@@ -73,7 +70,7 @@ A minidriver might also have to communicate with several class drivers. An examp
 
 ### <span id="Bus_Driver__Generic_"></span><span id="bus_driver__generic_"></span><span id="BUS_DRIVER__GENERIC_"></span>Bus Driver (Generic)
 
-The bus driver (generic) gives minidrivers access to a physical bus. The Microsoft Windows [*hardware abstraction layer (HAL)*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss_hardware_abstraction_layer__hal_) is sometimes referred to as the *system bus driver* because it provides access to the system bus. For more information, see [Bus Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540704).
+The bus driver (generic) gives minidrivers access to a physical bus. The Microsoft Windows *hardware abstraction layer (HAL)* is sometimes referred to as the *system bus driver* because it provides access to the system bus. For more information, see [Bus Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540704).
 
 ### <span id="Class_Driver__Generic_"></span><span id="class_driver__generic_"></span><span id="CLASS_DRIVER__GENERIC_"></span>Class Driver (Generic)
 
@@ -113,7 +110,7 @@ The port class driver (WDM audio) serves as a container for a collection of port
 
 An adapter driver manages an adapter card that might contain several different hardware functions. As shown in the preceding figure, the adapter driver contains a miniport driver to manage each type of hardware function. Similarly, the port class driver is designed to provide support to adapter cards with multiple hardware functions. The port class driver provides a port driver for each of the well defined function types that it supports. The adapter driver binds its miniport driver for a particular function to the corresponding port driver for that function type. The port driver for each function handles communication with the WDM audio clients that use the function. The miniport driver contains all of the hardware-specific code for managing that function.
 
-The port class driver (WDM audio) primarily functions as a container for multiple subdevices that are associated with a single device object. Bus drivers create a single [*physical device object (PDO)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss_physical_device_object__pdo_) for each Plug and Play (PnP) node they enumerate.
+The port class driver (WDM audio) primarily functions as a container for multiple subdevices that are associated with a single device object. Bus drivers create a single *physical device object (PDO)* for each Plug and Play (PnP) node they enumerate.
 
 In the case of an audio adapter, a single PnP node frequently contains multiple audio functions. To expose the various functions associated with a node as distinct devices typically requires writing a bus driver for the adapter. The bus driver enumerates the hardware functions and creates corresponding PDOs. In this scenario, one or more function-specific drivers need to bind to the PDOs and negotiate with the bus driver for access to shared resources on the adapter.
 
@@ -127,12 +124,10 @@ The port class driver's [**PcRegisterSubdevice**](https://msdn.microsoft.com/lib
 
 For more information about designing drivers for multifunction audio cards, see [Multifunction Audio Devices](multifunction-audio-devices.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20WDM%20Audio%20Terminology%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

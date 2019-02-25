@@ -1,9 +1,7 @@
 ---
 title: Introduction to File System Filters
-author: windows-driver-content
 description: The file systems in Windows are implemented as file system drivers working above the storage system.
 ms.assetid: 62DE75F7-0211-4173-AF45-84B2DDFDC95C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -27,7 +25,7 @@ File system filtering services are available through the [Filter Manager](filter
 ## <span id="File_System_Filter_Driver_Certification"></span><span id="file_system_filter_driver_certification"></span><span id="FILE_SYSTEM_FILTER_DRIVER_CERTIFICATION"></span>File System Filter Driver Certification
 
 
-Certification information for File Systems and File System Filter Drivers is found in the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613). Tests for File Systems and File System Filter Drivers are found in the [Filter.Driver](http://msdn.microsoft.com/library/windows/hardware/jj124779) category of the HCK.
+Certification information for File Systems and File System Filter Drivers is found in the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613). Tests for File Systems and File System Filter Drivers are found in the [Filter.Driver](https://msdn.microsoft.com/library/windows/hardware/jj124779) category of the HCK.
 
 ## <span id="File_System_Filter_Driver_Developer_Resources"></span><span id="file_system_filter_driver_developer_resources"></span><span id="FILE_SYSTEM_FILTER_DRIVER_DEVELOPER_RESOURCES"></span>File System Filter Driver Developer Resources
 
@@ -36,9 +34,9 @@ To request an altitude allocation from Microsoft, send an e-mail asking for an a
 
 To obtain an ID for a filter driver that uses reparse points follow the steps in [Reparse Point Request](reparse-point-tag-request.md).
 
-You can subscribe to the NTFSD newsgroup for details about developing file systems and filter drivers. The group is found at [NT File System Drivers Newsgroup](http://go.microsoft.com/fwlink/p/?LinkId=620898).
+You can subscribe to the NTFSD newsgroup for details about developing file systems and filter drivers. The group is found at [NT File System Drivers Newsgroup](https://go.microsoft.com/fwlink/p/?LinkId=620898).
 
-OSR's "Developing File Systems for Windows" seminar explores developing file systems and File Systems and File System Filter Drivers. See [Training for IFS Developers](http://go.microsoft.com/fwlink/p/?linkid=50692).
+OSR's "Developing File Systems for Windows" seminar explores developing file systems and File Systems and File System Filter Drivers. See [Training for IFS Developers](https://go.microsoft.com/fwlink/p/?linkid=50692).
 
 
 
@@ -54,4 +52,3 @@ This design guide includes the following sections:
 
 
 
---------------------

@@ -4,17 +4,14 @@ description: Intermediate Driver Notify Object
 ms.assetid: 756e02ff-5e30-4511-af4c-b7be9830898c
 keywords:
 - notify objects WDK networking , intermediate drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Intermediate Driver Notify Object
 
 
-## <a href="" id="ddk-intermediate-driver-notify-object-ng"></a>
+
 
 
 An *intermediate driver notify object* is an extension of the network class installer. The network class installer loads and initializes your notify object and sends it notifications of events (such as virtual miniport removal notifications) related to your driver. If you want an overview of notify objects in general or more information about notify objects, see [Notify Objects for Network Components](notify-objects-for-network-components.md).
@@ -29,9 +26,9 @@ Your MUX intermediate driver should use the **UpperRange**/**LowerRange** entrie
 
 Your notify object can optionally provide a user interface that allows the user to change or view your driver's configuration. The MUX intermediate driver sample includes an example user interface for a notify object.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,11 @@
 ---
-title: OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT
-author: windows-driver-content
-description: NDIS issues an OID query request of OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT to obtain the number of packets that were cached, or coalesced, on the network adapter.
+title: OID_PACKET_COALESCING_FILTER_MATCH_COUNT
+description: NDIS issues an OID query request of OID_PACKET_COALESCING_FILTER_MATCH_COUNT to obtain the number of packets that were cached, or coalesced, on the network adapter.
 ms.assetid: 3325865D-A329-4562-8270-CC2F42043D48
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_PACKET_COALESCING_FILTER_MATCH_COUNT Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT
@@ -26,7 +22,7 @@ Starting with NDIS 6.30, drivers that support [NDIS packet coalescing](https://m
 
 **Note**  Drivers that support the [single root I/O virtualization (SR-IOV)](https://msdn.microsoft.com/library/windows/hardware/hh440235) or [virtual machine queue (VMQ)](https://msdn.microsoft.com/library/windows/hardware/ff571035) interfaces are not required to support OID query requests of this OID.
 
- 
+ 
 
 A miniport driver that supports packet coalescing must increment a ULONG64 counter for each received packet that was coalesced on the network adapter. Packets are coalesced if they match a receive filter, which overlying drivers download to the miniport driver through OID method requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](oid-receive-filter-set-filter.md).
 
@@ -84,12 +80,10 @@ Requirements
 
 [OID\_RECEIVE\_FILTER\_SET\_FILTER](oid-receive-filter-set-filter.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_PACKET_COALESCING_FILTER_MATCH_COUNT%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

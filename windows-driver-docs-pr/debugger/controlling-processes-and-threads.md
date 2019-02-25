@@ -3,11 +3,8 @@ title: Controlling Processes and Threads
 description: Controlling Processes and Threads
 ms.assetid: f5a50b54-443e-425e-98cb-cff8d31ac897
 keywords: ["process", "process, choosing", "thread", "thread, choosing", "thread, freezing", "thread, unfreezing (thawing)", "thread, suspending", "suspend count of threads", "freezing threads"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Controlling Processes and Threads
@@ -80,7 +77,7 @@ You can add thread specifiers or process specifiers before many other commands. 
 
 You can add the [**~e (Thread-Specific Command)**](-e--thread-specific-command-.md) qualifier before many commands and extension commands. This qualifier causes the command to be executed with respect to the specified thread. This qualifier is especially useful if you want to apply a command to more than one thread. For example, the following command repeats the [**!gle**](-gle.md) extension command for every thread that is being debugged.
 
-```
+```dbgcmd
 ~*e !gle 
 ```
 
@@ -88,11 +85,10 @@ You can add the [**~e (Thread-Specific Command)**](-e--thread-specific-command-.
 
 The debugger can attach to multiple targets at the same time. When these processes include dump files or include live targets on more than one computer, the debugger references a system, process, and thread for each action. For more information about this kind of debugging, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Controlling%20Processes%20and%20Threads%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

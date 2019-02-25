@@ -2,11 +2,8 @@
 title: Validation Ports
 description: Validation Ports
 ms.assetid: 67556275-EF02-4996-A3A2-E9D5D6FCD1AF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Validation Ports
@@ -16,7 +13,7 @@ Starting with NDIS 6.30 in Windows Server 2012, the extensible switch interface
 
 **Note**  In Hyper-V, a child partition is also known as a VM.
 
- 
+ 
 
 This validation port is created under the following conditions:
 
@@ -50,9 +47,9 @@ When the extensible switch extension validates port and policy settings for a va
 
 For more information on extensible switch operational ports, see [Operational Ports](operational-ports.md).
 
- 
+ 
 
- 
+ 
 
 
 

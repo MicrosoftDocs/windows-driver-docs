@@ -3,11 +3,8 @@ title: Target Information
 description: Target Information
 ms.assetid: e818c0bb-ba91-4752-8baf-00fff759106f
 keywords: ["Debugger Engine API, targets, info"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Target Information
@@ -23,7 +20,7 @@ The page size of the target's computer is returned by [**GetPageSize**](https://
 
 **Note**  Internally, the debugger engine always uses 64-bit addresses for the target. If the target only uses 32-bit addresses, the engine automatically converts them when communicating with the target.
 
- 
+ 
 
 The number of processors in the target's computer is returned by [**GetNumberProcessors**](https://msdn.microsoft.com/library/windows/hardware/ff547950).
 
@@ -49,11 +46,10 @@ The current time on the target's computer is returned by [**GetCurrentTimeDate**
 
 The Windows version running on the target's computer is returned by [**GetSystemVersionValues**](https://msdn.microsoft.com/library/windows/hardware/ff549258) and the [**Request**](https://msdn.microsoft.com/library/windows/hardware/ff554564) operation [**DEBUG\_REQUEST\_GET\_WIN32\_MAJOR\_MINOR\_VERSIONS**](https://msdn.microsoft.com/library/windows/hardware/ff541563), and a description of the Windows version is returned by [**GetSystemVersionString**](https://msdn.microsoft.com/library/windows/hardware/ff549245). Some of this information is also returned by [**GetSystemVersion**](https://msdn.microsoft.com/library/windows/hardware/ff549234).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Target%20Information%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WDF Architecture
-author: windows-driver-content
 description: WDF Architecture
 ms.assetid: e5e2ed4a-5faf-4879-965f-7316fe64edf9
 keywords:
@@ -17,17 +16,14 @@ keywords:
 - objects WDK KMDF
 - framework objects WDK KMDF , architecture
 - framework-based drivers WDK KMDF , architecture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDF Architecture
 
 
-## <a href="" id="ddk-windows-driver-framework-architecture-df"></a>
+
 
 
 WDF provides object-based interfaces for drivers. Framework-defined object interfaces consist of:
@@ -56,9 +52,9 @@ The framework defines several object types that framework-based drivers use:
 
 For a list of all of the objects that the framework defines, see [Summary of Framework Objects](summary-of-framework-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

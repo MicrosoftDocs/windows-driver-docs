@@ -7,22 +7,19 @@ keywords:
 - ID mapping WDK netmap.inf
 - one-to-many ID mapping WDK networking
 - preupgrade IDs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # One-to-Many ID Mapping
 
 
-## <a href="" id="ddk-one-to-many-id-mapping-ng"></a>
+
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 A one-to-many ID mapping maps a single preupgrade ID that represents more than one network adapter. The only way to differentiate the adapters associated with a single preupgrade ID is to inspect the values under the registry key that contains the parameter values for the network adapter instance.
 
@@ -38,7 +35,7 @@ where:
 
 The netmap.inf file section specified by *section-name* contains the following entries:
 
-**ValueName = "***Name***"**
+**ValueName = "**<em>Name</em>**"**
 
 Specifies the value that NetSetup reads under the registry key that contains the parameter values for the network adapter instance. *Name* identifies a particular network adapter.
 
@@ -52,7 +49,7 @@ Specifies the registry value type for *ValueName*. *Type* is an integer that cor
 
 The following example shows a one-to-many device ID mapping:
 
-```
+```cpp
 [OemAdapters]
 DATAFIREU=0, DATAFIREU
 
@@ -93,9 +90,9 @@ The most effective way of handling this situation is as follows:
 
 3.  The user aborts the upgrade and then restarts winnt32.exe. The network migration DLL can now use the unique values to map the single preupgrade device ID to more than one Windows 2000 or later device ID.
 
- 
+ 
 
- 
+ 
 
 
 

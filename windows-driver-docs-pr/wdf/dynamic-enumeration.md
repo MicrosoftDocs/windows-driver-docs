@@ -1,6 +1,5 @@
 ---
 title: Dynamic Enumeration
-author: windows-driver-content
 description: Dynamic Enumeration
 ms.assetid: 6e46b456-7d2d-4c6e-8692-7f310366387d
 keywords:
@@ -10,11 +9,8 @@ keywords:
 - identification descriptions WDK KMDF
 - dynamic child lists WDK KMDF
 - traversing dynamic child lists WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Dynamic Enumeration
@@ -130,9 +126,9 @@ Your driver can call the following methods to access a PDO's identification desc
 
 -   [**WdfPdoUpdateAddressDescription**](https://msdn.microsoft.com/library/windows/hardware/ff548826), which updates the address description that is associated with a PDO.
 
- 
+ 
 
- 
+ 
 
 
 

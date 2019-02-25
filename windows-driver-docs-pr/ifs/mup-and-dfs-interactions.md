@@ -1,6 +1,5 @@
 ---
 title: MUP and DFS Interactions
-author: windows-driver-content
 description: MUP and DFS Interactions
 ms.assetid: 39c1f1e3-fb2d-46e7-b3dc-3d4bfab9608c
 keywords:
@@ -10,11 +9,8 @@ keywords:
 - MUP WDK network redirectors
 - multiple UNC provider WDK network redirectors
 - UNC WDK network redirectors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MUP and DFS Interactions
@@ -24,7 +20,7 @@ When a Universal Naming Convention (UNC) path is used by an application, a reque
 
 The default behavior is that the DFS client is enabled. The DFS client is disabled depending on the value of a registry entry located below the following:
 
-```
+```cpp
 HKLM\System\CurrentControlSet\Services\Mup
 ```
 
@@ -34,11 +30,10 @@ Assuming the prefix of a path specified in a name-based operation is not in the 
 
 When a request to access the IPC$ share is sent to a system where the LAN Manager Server (sometimes called SMB Server), srv.sys, is disabled or not installed (a UNIX system, for example), there may be a delay introduced because several attempts are made to connect to the IPC$ share. This delay is typically 5-7 seconds, but can be longer based on the speed and latency of the connecting network infrastructure and other conditions.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

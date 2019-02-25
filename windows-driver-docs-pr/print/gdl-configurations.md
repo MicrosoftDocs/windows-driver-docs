@@ -1,17 +1,13 @@
 ---
 title: GDL Configurations
-author: windows-driver-content
 description: GDL Configurations
 ms.assetid: ce698737-c9d8-4502-8823-e249820a06fa
 keywords:
 - GDL WDK , configurations
 - configurations WDK GDL
 - configurations WDK GDL , examples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GDL Configurations
@@ -23,7 +19,7 @@ For example, the prices that are charged for a phone call depend on the origin a
 
 For example, a client might compose a configuration that contains the following data.
 
-```
+```cpp
 OriginationPoint: Seattle
 DestinationPoint: SanFrancisco
 LengthOfCall: 10minutes
@@ -33,7 +29,7 @@ CallingPlan: OneRate
 
 And the snapshot that generated will contain one piece of data (out of all of the possible combinations) that might look like the following example.
 
-```
+```cpp
 CostOfCall: $0.49
 ```
 
@@ -43,12 +39,10 @@ In addition, GDL enables selected configurations to be excluded as "not allowed"
 
 For more information about creating data that is configuration-dependent, see [Creating GDL Configuration-Dependent Data](creating-gdl-configuration-dependent-data.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20GDL%20Configurations%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

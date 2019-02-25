@@ -6,17 +6,14 @@ keywords:
 - filter drivers WDK networking , mandatory
 - NDIS filter drivers WDK , mandatory
 - mandatory filter drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mandatory Filter Drivers
 
 
-## <a href="" id="ddk-mandatory-filter-drivers-ng"></a>
+
 
 
 Mandatory filter drivers are filter drivers that must be present for a driver stack to function properly. If the mandatory filter module does not attach, the rest of the driver stack will be torn down. [Modifying or monitoring filter drivers](types-of-filter-drivers.md) can be mandatory. All filter intermediate drivers are optional.
@@ -29,9 +26,9 @@ When a computer restarts, NDIS will not bind any protocol drivers to a miniport 
 
 To install a mandatory filter driver, you must specify a value of 0x00000001 for **FilterRunType** in the INF file. To install an optional filter driver, you must specify a value of 0x00000002 for **FilterRunType** in the INF file.
 
- 
+ 
 
- 
+ 
 
 
 

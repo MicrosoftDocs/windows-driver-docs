@@ -2,11 +2,8 @@
 title: General Requirements for Device Property Page Providers
 description: General Requirements for Device Property Page Providers
 ms.assetid: 91e93679-8c0c-43e7-a7d9-72bd0a464406
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # General Requirements for Device Property Page Providers
@@ -20,7 +17,7 @@ To create device property pages, a provider must follow these general requiremen
 
 -   Create the property page by calling the **CreatePropertySheetPage** function. The provider passes the address of the initialized PROPSHEETPAGE structure in this call.
 
--   Supply a **PropSheetPageProc** callback function that handles PSPCB\_CREATE and PSPCB\_RELEASE messages if additional storage must be allocated and released for a property page.
+-   Supply a **PropSheetPageProc** callback function that handles PSPCB_CREATE and PSPCB_RELEASE messages if additional storage must be allocated and released for a property page.
 
 -   Supply a dialog box procedure that handles Windows messages for each custom property page.
 -   Initialize a PROPSHEETPAGE structure with (among other things) the addresses of the **PropSheetPageProc** callback function and dialog box procedure.
@@ -35,9 +32,9 @@ This section includes the following topics that provide more guidance about cust
 
 [Sample Custom Property Page](sample-custom-property-page.md)
 
- 
+ 
 
- 
+ 
 
 
 

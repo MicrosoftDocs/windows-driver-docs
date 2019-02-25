@@ -6,17 +6,14 @@ keywords:
 - network drivers WDK , asynchronous operations
 - asynchronous I/O WDK networking
 - completion function WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Asynchronous I/O and Completion Functions in Network Drivers
 
 
-## <a href="" id="ddk-asynchronous-i-o-and-completion-functions-ng"></a>
+
 
 
 Latency is inherent in some network operations. Because of this latency, many of the upper-edge functions provided by a miniport driver and the lower-edge functions of a protocol driver are designed to support asynchronous operation. Rather than wasting CPU cycles waiting in a loop for some time-consuming task to finish or a hardware event to signal, network drivers rely on the ability to handle most operations asynchronously.
@@ -41,9 +38,9 @@ Completion functions are also provided to:
 
 -   Transfer received data.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: MB SMS Operations
 description: MB SMS Operations
 ms.assetid: 9a21495c-ec3d-4277-b880-dbf5b081814a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB SMS Operations
@@ -34,9 +31,9 @@ We recommend miniport drivers support SMS configuration, read, send, and delete 
 
 For more information about SMS operations, see [OID\_WWAN\_SMS\_CONFIGURATION](https://msdn.microsoft.com/library/windows/hardware/ff569837), [OID\_WWAN\_SMS\_READ](https://msdn.microsoft.com/library/windows/hardware/ff569839), [OID\_WWAN\_SMS\_SEND](https://msdn.microsoft.com/library/windows/hardware/ff569840), [OID\_WWAN\_SMS\_DELETE](https://msdn.microsoft.com/library/windows/hardware/ff569838), and [OID\_WWAN\_SMS\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff569841).
 
- 
+ 
 
- 
+ 
 
 
 

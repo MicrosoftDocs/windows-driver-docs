@@ -2,11 +2,8 @@
 title: WDI TLV dumpers
 description: The parser generator library has routines to decode TLV byte arrays into trace statements.
 ms.assetid: 4F8B53E5-1F51-4119-AC06-7A710340E4A4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDI TLV dumpers
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 The parser generator library has routines to decode TLV byte arrays into trace statements.
 
-```
+```C++
     typedef _Function_class_( TlvDumperCallback ) void( __stdcall *TlvDumperCallback )(_In_ UINT_PTR Context, _In_z_ _Printf_format_string_ PCSTR Format, ...);
 
     void __stdcall TraceUnknownTlvByteStream(
@@ -52,15 +49,15 @@ Unlike the Parse and Generate APIs, the dumper is very permissive. It attempts t
 
 **Warning**  If the dumper successfully decodes the bytes into a human readable format, it does not mean the bytes are a well-formed TLV.
 
- 
+ 
 
 Like the Parse APIs, the *pBuffer* pointer and *BufferLength* parameters should exclude any headers and point directly at the first TLV.
 
 The Message variants of the APIs include the message ID and the message direction to better disambiguate the TLV. This is helpful because the same TLV ID can be decoded in different ways depending upon context. For example, [**WDI\_TLV\_BSSID**](https://msdn.microsoft.com/library/windows/hardware/dn926153) can directly contain a [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) when part of [OID\_WDI\_TASK\_SCAN](https://msdn.microsoft.com/library/windows/hardware/dn925959), or it can contain a list of **WDI\_MAC\_ADDRESS** when part of [**WDI\_TLV\_P2P\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/dn897863).
 
- 
+ 
 
- 
+ 
 
 
 

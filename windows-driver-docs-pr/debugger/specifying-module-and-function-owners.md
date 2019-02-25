@@ -3,11 +3,8 @@ title: Specifying Module and Function Owners
 description: Specifying Module and Function Owners
 ms.assetid: be227712-7f70-4e74-b090-ca8b3ecd1e13
 keywords: ["executable files and paths, specifying module owner", "function owners", "owners of modules and functions", "triage.ini file", "triage.ini file, syntax", "analyze extension, triage.ini file"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Module and Function Owners
@@ -24,7 +21,7 @@ The Triage.ini file is a text file that resides in the \\triage subdirectory of 
 
 **Warning**   If you install an updated version of Debugging Tools for Windows in the same directory as the current version, it overwrites all of the files in that directory, including Triage.ini. After you modify or replace the sample Triage.ini file, save a copy of it to a different directory. After you reinstall the debuggers, you can copy the saved Triage.ini over the default version.
 
- 
+ 
 
 ### <span id="format_of_the_triage_ini_file"></span><span id="FORMAT_OF_THE_TRIAGE_INI_FILE"></span>Format of the Triage.ini File
 
@@ -32,7 +29,7 @@ Although the Triage.ini file is intended to help you determine the owner of a fu
 
 Each line in this file has the following syntax.
 
-```
+```dbgcmd
 Module[!Function]=Owner 
 ```
 
@@ -44,7 +41,7 @@ For more information about syntax options, see Special Triage.ini Syntax.
 
 The following examples shows a sample Triage.ini file.
 
-```
+```ini
 module1=Person1
 module2!functionA=Person2
 module2!functionB=Person3
@@ -60,12 +57,12 @@ When you pass a module or function name to the [**!owner**](-owner.md) extension
 
 The following example uses the previous sample Triage.ini file.
 
-```
+```dbgcmd
 0:000> !owner module2!functionB
 Followup:  Person3
 ```
 
-According to the file, "Person3" owns **module2!functionB**, and "Person4" owns **module2!funct\***. Both of these strings match the argument that is passed to **!owner**, so the more complete match is used.
+According to the file, "Person3" owns **module2!functionB**, and "Person4" owns **module2!funct\\**<em>. Both of these strings match the argument that is passed to **!owner</em>*, so the more complete match is used.
 
 ### <span id="triage_ini_and__analyze"></span><span id="TRIAGE_INI_AND__ANALYZE"></span> Triage.ini and !analyze
 
@@ -81,11 +78,11 @@ Suppose the first frame on the stack is **MyModule!someFunction**. The debugger 
 
 Suppose the second frame is **module3!anotherFunction**. The debugger does see an entry for **module3**, but there is no match for **anotherFunction** in this module. Next, the debugger continues to the third frame.
 
-Suppose the third frame is **module2!functionC**. The debugger first looks for an exact match, but such a match does not exist. The debugger then trims the function name and discovers **module2!funct\*** in Triage.ini. This match ends the search, because the debugger determines that the owner is "Person4".
+Suppose the third frame is **module2!functionC**. The debugger first looks for an exact match, but such a match does not exist. The debugger then trims the function name and discovers **module2!funct\\*** in Triage.ini. This match ends the search, because the debugger determines that the owner is "Person4".
 
 The debugger then displays output that is similar to the following example.
 
-```
+```dbgcmd
 0:000> !analyze
 *******************************************************************************
 *                                                                             *
@@ -101,13 +98,13 @@ Followup: Person4
 ---------
 ```
 
-A more complete match takes precedence over a shorter match. However, a module name match is always preferred to a function name match. If **module2!funct\*** had not been in this Triage.ini file, the debugger would have selected **module2!\*** as the match. And if both **module2!funct\*** and **module2!\*** were removed, **mod\*!functionC** would have been selected.
+A more complete match takes precedence over a shorter match. However, a module name match is always preferred to a function name match. If **module2!funct\\*** had not been in this Triage.ini file, the debugger would have selected **module2!\\*** as the match. And if both **module2!funct\\*** and **module2!\\*** were removed, **mod\*!functionC** would have been selected.
 
 ### <span id="special_triage_ini_syntax"></span><span id="SPECIAL_TRIAGE_INI_SYNTAX"></span>Special Triage.ini Syntax
 
-If you omit the exclamation point and function name or add **!\*** after a module name, all functions in that module are indicated. If a function within this module is also specified separately, the more precise specification takes precedence.
+If you omit the exclamation point and function name or add **!\\*** after a module name, all functions in that module are indicated. If a function within this module is also specified separately, the more precise specification takes precedence.
 
-If you use "default" as a module name or a function name, it is equivalent to a wildcard character. For example, **nt!\*** is the same as **nt!default**, and **default** is the same as **\*!\***.
+If you use "default" as a module name or a function name, it is equivalent to a wildcard character. For example, **nt!\\*** is the same as **nt!default**, and **default** is the same as **\*!\\***.
 
 If a match is made, but the word **ignore** appears to the right of the equal sign (=), the debugger continues to the next frame in the stack.
 
@@ -117,11 +114,10 @@ You can add **last\_** or **maybe\_** before an owner's name. This prefix gives 
 
 A sample Triage.ini template is included in the Debugging Tools for Windows package. You can add the owners of any modules and functions that you want to this file. If you want to have no global default, delete the **default=MachineOwner** line at the beginning of this file.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Specifying%20Module%20and%20Function%20Owners%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

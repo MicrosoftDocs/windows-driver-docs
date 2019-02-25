@@ -1,11 +1,8 @@
 ---
 Description: Support for capability commands (WpdBasicHardwareDriver sample)
 title: Support for capability commands (WpdBasicHardwareDriver sample)
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Support for capability commands (WpdBasicHardwareDriver sample)
@@ -28,7 +25,7 @@ The information in the following table describes each of the supported property 
 | WPD\_COMMAND\_CAPABILITIES\_GET\_EVENT\_OPTIONS                    | OnGetEventOptions              | Issued when an application attempts to retrieve the options that are associated with a given event.                                             |
 | WPD\_COMMAND\_CAPABILITIES\_GET\_SUPPORTED\_EVENTS                 | OnGetEventOptions              | Issued when an application attempts to retrieve the set of events that are supported by a device.                                               |
 
- 
+ 
 
 For the sample driver, the code remained intact for the handlers that are associated with the following commands:
 
@@ -54,7 +51,7 @@ The driver calls the **WpdObjectCapabilities::OnGetSupportedCommands** handler i
 
 Although it was unnecessary to modify the handler, it was necessary to update the array of supported commands that appears at the beginning of the *WpdCapabilities.cpp* file. These modifications entailed removing the object-resource category of commands, because neither the sensor devices nor the driver support resources:
 
-```
+```cpp
 const PROPERTYKEY g_SupportedCommands[] =
 {
     // WPD_CATEGORY_OBJECT_ENUMERATION
@@ -87,7 +84,7 @@ The driver calls the **WpdObjectCapabilities::OnGetFunctionalCategories** handle
 
 Although it was unnecessary to modify the handler, it was necessary to update the array of supported categories that appears at the beginning of the *WpdCapabilities.cpp* file. These modifications entailed removing the storage category and replacing it with the sensor category:
 
-```
+```cpp
 const GUID g_SupportedFunctionalCategories[] =
 {
     WPD_FUNCTIONAL_CATEGORY_DEVICE,
@@ -104,7 +101,7 @@ The driver calls the **WpdObjectCapabilities::OnGetFunctionalObjects** handler i
 
 The modifications to the **OnGetFunctionalObjects** handler included removing support for the storage object, which is not included in the WpdBasicHardwareDriver, and adding support for the sensor object:
 
-```
+```cpp
 HRESULT WpdCapabilities::OnGetFunctionalObjects(
     IPortableDeviceValues*  pParams,
     IPortableDeviceValues*  pResults)
@@ -189,7 +186,7 @@ The driver calls the **WpdObjectCapabilities::OnGetSupportedContentTypes** handl
 
 The modifications to the **OnGetSupportedContentTypes** handler included removing the code in the WpdHelloWorldSample driver that added the document and folder content types to the returned collection:
 
-```
+```cpp
 HRESULT WpdCapabilities::OnGetSupportedContentTypes(
     IPortableDeviceValues*  pParams,
     IPortableDeviceValues*  pResults)
@@ -244,7 +241,7 @@ The driver calls the **WpdObjectCapabilities::OnGetSupportedFormats** handler in
 
 The modifications to the **OnGetSupportedContentTypes** handler involves removing the code in the WpdHelloWorldSample driver that added the text format to the collection. The text format was supported for the document content type:
 
-```
+```cpp
 HRESULT WpdCapabilities::OnGetSupportedFormats(
     IPortableDeviceValues*  pParams,
     IPortableDeviceValues*  pResults)
@@ -295,7 +292,7 @@ The driver calls the **WpdObjectCapabilities::OnGetSupportedEvents** handler in 
 
 The first modification involved adding a g\_SupportedEvents array that contains the identifier for the one supported event:
 
-```
+```cpp
 const GUID g_SupportedEvents[] =
 {
     EVENT_SENSOR_READING_UPDATED,
@@ -304,7 +301,7 @@ const GUID g_SupportedEvents[] =
 
 The second modification, to the **OnGetSupportedEvents** handler, involved adding code that populated the supported events collection:
 
-```
+```cpp
 HRESULT WpdCapabilities::OnGetSupportedEvents(
     IPortableDeviceValues*  pParams,
     IPortableDeviceValues*  pResults)
@@ -366,7 +363,7 @@ HRESULT WpdCapabilities::OnGetSupportedEvents(
 
 The driver calls the **WpdObjectCapabilities::OnGetEventOptions** handler in response to the WPD\_COMMAND\_CAPABILITIES\_GET\_EVENT\_OPTIONS command. Because the sensor devices support the reading updated event, which is a broadcast event, it was necessary to add a flag indicating that this option (WPD\_EVENT\_OPTION\_IS\_BROADCAST\_EVENT) is **TRUE**:
 
-```
+```cpp
 HRESULT WpdCapabilities::OnGetEventOptions(
     IPortableDeviceValues*  pParams,
     IPortableDeviceValues*  pResults)
@@ -430,11 +427,10 @@ HRESULT WpdCapabilities::OnGetEventOptions(
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wpd_dk\wpddk]:%20Supporting%20the%20Capability%20Commands%20%20RELEASE:%20%281/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,11 +2,8 @@
 title: SR-IOV Synthetic Data Path
 description: SR-IOV Synthetic Data Path
 ms.assetid: FB7E57F6-AA99-421D-8344-B76615BD20ED
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SR-IOV Synthetic Data Path
@@ -34,9 +31,9 @@ The virtualization stack may still enable the synthetic data path for a Hyper-V 
 
 Although the synthetic data path over an SR-IOV network adapter is not as efficient as the VF data path, it can still be hardware optimized. For example, if one or more virtual ports (VPorts) are configured and attached to the PCIe Physical Function (PF), the data path can provide the offload capabilities that resemble the virtual machine queue (VMQ) interface. For more information, see [Nondefault Virtual Ports and VMQ](nondefault-virtual-ports-and-vmq.md).
 
- 
+ 
 
- 
+ 
 
 
 

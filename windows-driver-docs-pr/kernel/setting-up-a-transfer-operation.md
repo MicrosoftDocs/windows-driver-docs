@@ -1,20 +1,16 @@
 ---
 title: Setting Up a Transfer Operation
-author: windows-driver-content
 description: Setting Up a Transfer Operation
 ms.assetid: cabac16d-b946-4b96-af2c-5fd0a0d848da
 keywords: ["bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA", "logical address ranges WDK DMA", "addresses WDK DMA", "transfer operations WDK DMA"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up a Transfer Operation
 
 
-## <a href="" id="ddk-setting-up-a-transfer-operation-kg"></a>
+
 
 
 When [**AllocateAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff540573) transfers control to a driver's [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine, it has allocated a set of map registers. However, the driver must map system physical memory for the current IRP's transfer request to the bus-master adapter's logical address range, as follows:
@@ -75,18 +71,16 @@ Never pass a pointer to the **Length** in the driver's I/O stack location of an 
 
 Doing this could destroy the value in the current IRP, making it impossible to determine whether the driver has transferred all the requested data.
 
- 
+ 
 
 At the end of each DMA operation, the driver must call [**FlushAdapterBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff545917) with a valid adapter object pointer and the *MapRegisterBase* handle to be sure that all the data has been transferred, and to release the physical-to-logical mappings for the current DMA operation. If the driver must set up additional DMA operations to satisfy the current IRP, it must call **FlushAdapterBuffers** after each transfer operation is complete.
 
 When all the requested transfer is complete or the driver must return an error status for the IRP, the driver should call [**FreeMapRegisters**](https://msdn.microsoft.com/library/windows/hardware/ff546513) immediately after its last call to **FlushAdapterBuffers** in order to get the best possible throughput for the bus-master adapter. In its call to **FreeMapRegisters**, the driver must pass the adapter object pointer that it passed in the preceding call to **AllocateAdapterChannel**.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Setting%20Up%20a%20Transfer%20Operation%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

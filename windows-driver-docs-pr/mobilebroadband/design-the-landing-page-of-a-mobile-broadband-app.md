@@ -2,11 +2,8 @@
 title: Design the landing page of a mobile broadband app
 description: Design the landing page of a mobile broadband app
 ms.assetid: 3a42886f-8a32-4576-af31-65443bb718ca
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Design the landing page of a mobile broadband app
@@ -16,7 +13,7 @@ The landing page is the first page that the user sees when they start the mobile
 
 ![landing page postpaid](images/mb-fig1-landing-page-postpaid.png)
 
-The landing page should follow Windows Store app guidelines for app layout. To encourage simplicity and ease of navigation, we recommend that you fit all contents of the landing page into a single page. The landing page is the central hub of your app. Although it is not a primary navigation method or management page, it showcases your app and its major functionality.
+The landing page should follow UWP app guidelines for app layout. To encourage simplicity and ease of navigation, we recommend that you fit all contents of the landing page into a single page. The landing page is the central hub of your app. Although it is not a primary navigation method or management page, it showcases your app and its major functionality.
 
 The following sections describe some of the content that you can include in the landing page:
 
@@ -60,7 +57,7 @@ You can provide links to other key pages on the landing page. For example, you c
 ## <span id="appnav"></span><span id="APPNAV"></span>App navigation
 
 
-When describing the landing page, it is important to consider navigation within the app. Your app will have multiple pages that have various purposes. Windows 8, Windows 8.1, and Windows 10 offer the following tools that can be used for navigation:
+When describing the landing page, it is important to consider navigation within the app. Your app will have multiple pages that have various purposes. Windows 10 offers the following tools that can be used for navigation:
 
 -   **Back button** The Back button can be used to return to the previous page in the app. For more information about the Back button styling, see [Quickstart: styling controls](https://msdn.microsoft.com/library/windows/apps/hh465498).
 
@@ -84,7 +81,7 @@ You can customize your mobile broadband app to suit your individual branding sty
 
 -   Use a simple layout to improve readability.
 
--   Follow Windows Store app guidelines.
+-   Follow UWP app guidelines.
 
 -   Disable the **Back** button if this is the first time that the user is visiting the app.
 
@@ -97,11 +94,11 @@ You can customize your mobile broadband app to suit your individual branding sty
 ## <span id="res"></span><span id="RES"></span>Additional resources
 
 
--   [Index of UX guidelines for Windows Store apps](https://msdn.microsoft.com/library/windows/apps/hh465424)
+-   [Index of UX guidelines for UWP apps](https://msdn.microsoft.com/library/windows/apps/hh465424)
 
 -   [Adding controls and content](https://msdn.microsoft.com/library/windows/apps/hh465393)
 
--   [Make great Windows Store apps](https://msdn.microsoft.com/library/windows/apps/hh464920)
+-   [Make great UWP apps](https://msdn.microsoft.com/library/windows/apps/hh464920)
 
 -   [Laying out your UI](https://msdn.microsoft.com/library/windows/apps/hh465304)
 
@@ -114,11 +111,10 @@ You can customize your mobile broadband app to suit your individual branding sty
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Design%20the%20landing%20page%20of%20a%20mobile%20broadband%20app%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

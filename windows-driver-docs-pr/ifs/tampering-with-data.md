@@ -1,6 +1,5 @@
 ---
 title: Tampering with Data
-author: windows-driver-content
 description: Tampering with Data
 ms.assetid: 277395b9-b770-45b4-8f4c-cad8b684ca44
 keywords:
@@ -10,11 +9,8 @@ keywords:
 - tampering with data WDK file systems
 - buffers WDK file systems
 - IOCTLs WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Tampering with Data
@@ -39,11 +35,10 @@ Developers should also be aware that IOCTL using the **FastIoDeviceControl** dis
 
 Note that validating the data by itself is not enough. For example, a successful call to [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) might indicate that a buffer is valid, but subsequent changes in the application address space could cause that state to change. The application could terminate, for example, prior to the driver actually using the buffer directly. Thus, the driver must protect against any change within the application's address space. Normally this is done using structured exception handling using **\_\_try** and **\_\_except** around any code that accesses a user buffer address directly.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

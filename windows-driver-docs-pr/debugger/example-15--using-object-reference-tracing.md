@@ -2,6 +2,8 @@
 title: Example 15 Using Object Reference Tracing
 description: Example 15 Using Object Reference Tracing
 ms.assetid: 3c6102e6-4dac-4d90-ab8f-162dd6d8adf9
+ms.date: 10/12/2018
+ms.localizationpriority: medium
 ---
 
 # Example 15: Using Object Reference Tracing
@@ -27,7 +29,7 @@ These examples show how to use Gflags to enable and disable object reference tra
 
 The following command enables Object Reference Tracing at the command prompt. The command uses the **/ko** parameter to enable Object Reference Tracing as a kernel flag (run time) setting. The command uses the **/t** parameter to specify the pool tags **Tag1** and **Fred**. As a result, all objects that are created with **Tag1** or **Fred** are traced.
 
-```
+```console
 gflags /ko /t Tag1;Fred
 ```
 
@@ -35,7 +37,7 @@ Because the command changes the kernel flag (run-time) settings, object referenc
 
 Gflags responds by printing the following message:
 
-```
+```console
 Running Kernel Settings :
 Object Ref Tracing Enabled
         Temporary Traces
@@ -51,7 +53,7 @@ The following command adds an Object Reference Tracing configuration to the regi
 
 The command uses the **/ro** parameter to enable Object Reference Tracing as a registry setting. The command uses the **/i** to specify the process for notepad.exe and the **/t** parameter to specify the pool tags **Tag1** and **Fred**. As a result, all objects that are created by the Notepad process with the **Tag1** or **Fred** pool tags are traced. The command also uses the **/p** parameter, which retains the trace data until the tracing is disabled.
 
-```
+```console
 gflags /ro /t Tag1;Fred /i Notepad.exe /p
 ```
 
@@ -59,7 +61,7 @@ When you submit the command, Gflags stores the information in the registry. Howe
 
 Gflags responds by printing the following message:
 
-```
+```console
 Boot Registry Settings :
 Object Ref Tracing Enabled
         Permanent Traces
@@ -77,11 +79,11 @@ In this example, there is one Object Reference Tracing configuration stored in t
 
 The following command displays the run time Object Reference Tracing configuration. It uses the **/ko** parameter with no other parameters.
 
-```
+```console
 gflags /ko
 ```
 
-```
+```console
 Running Kernel Settings :
 Object Ref Tracing Enabled
         Temporary Traces
@@ -93,13 +95,13 @@ If Object Reference Tracing is enabled, as it is in this example, the settings t
 
 The following command displays the Object Reference Tracing configuration data stored in the registry. It uses the **/ro** parameter with no other parameters.
 
-```
+```console
 gflags /ro
 ```
 
 In response, Gflags displays the data stored in the registry:
 
-```
+```console
 Boot Registry Settings :
 Object Ref Tracing Enabled
         Permanent Traces
@@ -115,13 +117,13 @@ When you disable run-time (kernel flag) Object Reference Tracing settings, the t
 
 The following command disables run-time Object Reference Tracing. It uses the **/d** parameter to disable all settings. You cannot disable settings selectively.
 
-```
+```console
 gflags /ko -d
 ```
 
 When the command succeeds, Gflags responds with the following message:
 
-```
+```console
 Running Kernel Settings :
 Object Ref Tracing Disabled
 ```
@@ -130,22 +132,21 @@ The following command disables run-time Object Reference Tracing.
 
 The following command disables Object Reference Tracing settings in the registry. It uses the **/d** parameter to disable all settings. You cannot disable settings selectively. This command is effective when you restart the computer.
 
-```
+```console
 gflags /ro -d
 ```
 
 When the command succeeds, Gflags responds with the following message:
 
-```
+```console
 Boot Registry Settings :
 Object Ref Tracing Disabled
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Example%2015:%20Using%20Object%20Reference%20Tracing%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -10,11 +10,8 @@ keywords:
 - IDCT WDK DirectX VA
 - 16-bit host-based IDCT WDK DirectX VA
 - 8-8 overflow host-based IDCT WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Host-Based IDCT
@@ -43,7 +40,7 @@ No clipping of the residual difference values can be assumed to have been perfor
 
 **Note**   The accelerator must work with at least a 15-bit range of values. Although video-coding standards typically specify clipping of a difference value prior to adding it to a prediction value (that is, 9-bit clipping in 8-bit-per-sample video), this clipping stage is actually unnecessary because it has no effect on the resulting decoded output picture. It is not assumed that this clipping occurs unless necessary for the accelerator hardware as indicated by the **bConfigSpatialHost8or9Clipping** member of the DXVA\_ConfigPictureDecode structure being set to 1.
 
- 
+ 
 
 ### <span id="8-8_Overflow_Host-Based_IDCT_Processing_"></span><span id="8-8_overflow_host-based_idct_processing_"></span><span id="8-8_OVERFLOW_HOST-BASED_IDCT_PROCESSING_"></span>8-8 Overflow Host-Based IDCT Processing
 
@@ -75,13 +72,12 @@ These rules allow the sample to be added to the prediction picture with 8-bit cl
 
 **Note**   Using 8-bit differences with overflow blocks with **bConfigResid8Subtraction** equal to zero (which results in adding two 8-bit differences for each overflow block) cannot represent a residual difference value of +255 if *IntraMacroblock* is zero. (The largest difference value that can be represented this way is 127+127=254.) This makes the 8-8 overflow host-based IDCT method not strictly compliant with video-coding standards when **bConfigResid8Subtraction** is zero. However, this format is supported because it is used in some existing implementations, is more efficient than 16-bit sample use in terms of the amount of data needed to represent a picture, and does not generally result in any meaningful degradation of video quality.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Host-Based%20IDCT%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

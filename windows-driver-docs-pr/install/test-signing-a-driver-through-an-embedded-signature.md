@@ -2,11 +2,8 @@
 title: Test-Signing a Driver through an Embedded Signature
 description: Test-Signing a Driver through an Embedded Signature
 ms.assetid: 862e89e0-f84a-4058-a32f-09ae3043b884
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Test-Signing a Driver through an Embedded Signature
@@ -16,7 +13,7 @@ A signed [catalog file](catalog-files.md) is all that you must have to correctly
 
 Embedded-signing of kernel-mode binaries (for example, drivers and associated .dll files) are required whenever:
 
--   The driver is a boot-start driver. In 64-bit versions of Windows Vista and later versions of Windows, the [kernel-mode code signing requirements](kernel-mode-code-signing-requirements--windows-vista-and-later-.md) state that a [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver) must have an embedded signature. This is required regardless of whether the driver's driver package has a digitally-signed catalog file.
+-   The driver is a boot-start driver. In 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing requirements must have an embedded signature. This is required regardless of whether the driver's driver package has a digitally-signed catalog file.
 
 -   The driver is installed through a driver package that does not include a catalog file.
 
@@ -30,7 +27,7 @@ As with [catalog files](catalog-files.md), [**SignTool**](https://msdn.microsoft
 
 To test-sign the *toaster.sys* file, run the following command line:
 
-```
+```cpp
 Signtool sign /v /s PrivateCertStore /n Contoso.com(Test) /t http://timestamp.verisign.com/scripts/timestamp.dll amd64\toaster.sys
 ```
 
@@ -47,7 +44,7 @@ Where:
 -   The **/t** option specifies URL of the TSA (*http://timestamp.verisign.com/scripts/timestamp.dll*) which will time stamp the digital signature.
     **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
 
-     
+     
 
 -   *amd64\\toaster.sys* specifies the name of the kernel-mode binary file which will be embedded-signed.
 
@@ -55,9 +52,9 @@ For more information about SignTool and its command-line arguments, see [**SignT
 
 For more information about how to test-sign a driver by using an embedded signature, see [Test-Signing a Driver File](test-signing-a-driver-file.md).
 
- 
+ 
 
- 
+ 
 
 
 

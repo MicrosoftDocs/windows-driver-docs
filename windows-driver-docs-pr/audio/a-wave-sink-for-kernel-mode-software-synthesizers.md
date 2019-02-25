@@ -7,11 +7,8 @@ keywords:
 - MIDI transport WDK audio
 - wave sinks WDK audio , MIDI transport
 - synthesizers WDK audio , MIDI transport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # A Wave Sink for Kernel-Mode Software Synthesizers
@@ -36,7 +33,7 @@ On the left side of the figure, a MIDI stream enters the filter through the Dire
 
 On the right side of the figure, a wave stream exits the filter through the wave output pin and flows to the port driver's wave sink. The port driver communicates with the pin through its **ISynthSinkDMus** interface. The port driver obtains this interface by first calling **IMiniportDMus::NewStream** to obtain a stream object with an **IMXF** interface, and then querying the object for its **ISynthSinkDMus** interface. The wave sink pulls wave data from the pin by calling the [**ISynthSinkDMus::Render**](https://msdn.microsoft.com/library/windows/hardware/ff537015) method.
 
-Although a hardware synthesizer could, in principle, rely on the port driver's wave sink for rendering, the call to **ISynthSinkDMus::Render** adds enough latency to the MIDI stream to make it unattractive for many interactive applications. To reduce stream latency, hardware synthesizers are likely to have internal connections to mixing and wave-rendering hardware instead of using the port driver's wave sink. This type of synthesizer replaces the wave output pin on the right side of the preceding figure with a hardwired connection (represented as a [*bridge pin*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss_bridge_pin)) to a hardware mixer.
+Although a hardware synthesizer could, in principle, rely on the port driver's wave sink for rendering, the call to **ISynthSinkDMus::Render** adds enough latency to the MIDI stream to make it unattractive for many interactive applications. To reduce stream latency, hardware synthesizers are likely to have internal connections to mixing and wave-rendering hardware instead of using the port driver's wave sink. This type of synthesizer replaces the wave output pin on the right side of the preceding figure with a hardwired connection (represented as a *bridge pin*) to a hardware mixer.
 
 The **ISynthSinkDMus** interface provides methods to render wave data through a wave sink, convert from reference time to sample time and back, and synchronize to the master clock:
 
@@ -58,12 +55,10 @@ The DMus miniport driver in the preceding figure identifies its DirectMusic inpu
 
 In addition, if the driver were to support a MIDI input pin for the synthesizer, its definition would be similar to that of the DirectMusic input pin, but the pin definition would specify a subformat of type KSDATAFORMAT\_SUBTYPE\_MIDI, and the pin would accept a raw MIDI stream rather than a time-stamped MIDI stream.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20A%20Wave%20Sink%20for%20Kernel-Mode%20Software%20Synthesizers%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

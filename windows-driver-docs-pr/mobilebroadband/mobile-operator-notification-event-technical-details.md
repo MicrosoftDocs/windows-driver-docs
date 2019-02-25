@@ -2,11 +2,8 @@
 title: Mobile operator notification event technical details
 description: Mobile operator notification event technical details
 ms.assetid: 639f238a-4bb4-4ac0-9b59-92a761dbc351
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mobile operator notification event technical details
@@ -60,7 +57,7 @@ The MobileOperatorNotification event payload includes the following fields:
 </tbody>
 </table>
 
- 
+ 
 
 The MobileOperatorNotification event enables each of the scenarios that are described in [Mobile operator notification scenarios](mobile-operator-notification-scenarios.md) by differentiating them by using the **MessageType** field in the event payload. The **MessageType**s are enumerated as follows:
 
@@ -123,7 +120,7 @@ The MobileOperatorNotification event enables each of the scenarios that are desc
 </tbody>
 </table>
 
- 
+ 
 
 The work item that is associated with the MobileOperatorNotification event should start with logic that effectively differentiate the **MessageType**, and runs the appropriate code for each scenario.
 
@@ -179,7 +176,7 @@ The local data counters in Windows 8 are updated every one minute; at most, thi
 **Note**  
 Although this information is a good first-order guide, Windows cannot account for unbilled traffic or for usage on other devices that share the same data limits (such as family plans or SIM-swapping). Mobile operator apps should use local data counters only to approximate usage since the last sync with the operator’s own billing system. For data usage that has already been processed, the billing system should be considered authoritative.
 
- 
+ 
 
 ### <span id="DataPlanReset"></span><span id="dataplanreset"></span><span id="DATAPLANRESET"></span>DataPlanReset
 
@@ -198,7 +195,7 @@ The ProfileConnected MessageType is triggered on L2 connectivity for the mobile 
 **Note**  
 This trigger occurs before network identification is complete. The [**NetworkStatusChanged**](https://msdn.microsoft.com/library/windows/apps/br207299) event (part of the [**NetworkInformation**](https://msdn.microsoft.com/library/windows/apps/br207293) API) is generated when network identification determines the connectivity level of the network. For more information about network identification, see [Quickstart: Retrieving network connection information](https://msdn.microsoft.com/library/windows/apps/hh452990) and the **NetworkInformation** class.
 
- 
+ 
 
 ### <span id="RegisteredRoaming_and_RegisteredHome"></span><span id="registeredroaming_and_registeredhome"></span><span id="REGISTEREDROAMING_AND_REGISTEREDHOME"></span>RegisteredRoaming and RegisteredHome
 
@@ -248,7 +245,7 @@ When the service metadata and app are downloaded, the Device Setup Manager regis
 
 If the background task entry point is changed in an updated version of the mobile broadband app, the [DeviceNotificationHandler](devicenotificationhandler.md) element in the service metadata must also be changed.
 
-Service metadata is updated automatically on computers running Windows 8, Windows 8.1, and Windows 10. Mobile broadband apps are updated in the Windows Store. You should avoid changing the [DeviceNotificationHandler](devicenotificationhandler.md) background task registration in service metadata. If a change is required, the service metadata should contain references to all the different background task entry points used in all your supported versions of the mobile broadband app to preserve functionality for users who haven’t updated the mobile broadband app.
+Service metadata is updated automatically on computers running Windows 8, Windows 8.1, and Windows 10. Mobile broadband apps are updated in the Microsoft Store. You should avoid changing the [DeviceNotificationHandler](devicenotificationhandler.md) background task registration in service metadata. If a change is required, the service metadata should contain references to all the different background task entry points used in all your supported versions of the mobile broadband app to preserve functionality for users who haven’t updated the mobile broadband app.
 
 ## <span id="deffilter"></span><span id="DEFFILTER"></span>Define filtering rules in provisioning XML
 
@@ -259,9 +256,9 @@ Windows accepts an XML-based provisioning file from you. A sample version of the
 <?xml version="1.0" encoding="utf-8"?>
 <CarrierProvisioning xmlns="http://www.microsoft.com/networking/CarrierControl/v1">
     <Global>
-        <!-- Adjust the Carrier ID to fit match the Service Number in service metadata. Refer to the MSDN documentation about CarrierId. -->
+        <!-- Adjust the Carrier ID to fit match the Service Number in service metadata. Refer to the documentation about CarrierId. -->
         <CarrierId>{11111111-1111-1111-1111-111111111111}</CarrierId>
-        <!-- Adjust the Susbscriber ID. Refer to the MSDN documentation about Subscriber ID's. -->
+        <!-- Adjust the Susbscriber ID. Refer to the documentation about Subscriber ID's. -->
         <SubscriberId>1234567890</SubscriberId>
     </Global>
     <MBNProfiles>
@@ -274,7 +271,7 @@ Windows accepts an XML-based provisioning file from you. A sample version of the
             <Context>
                 <!-- Adjust the access string to your APN. -->
                 <AccessString>Contoso.Contoso</AccessString>
-                <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the MSDN documentation about UserLogonCred's. -->
+                <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred's. -->
                 <UserLogonCred>
                     <UserName>user</UserName>
                     <Password>password</Password>
@@ -323,11 +320,10 @@ The rules to identify a text message as an operator message can be defined in th
 
 [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Mobile%20operator%20notification%20event%20technical%20details%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

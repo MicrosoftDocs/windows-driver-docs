@@ -6,11 +6,8 @@ keywords:
 - event categories WDK SetupAPI logging
 - text logs WDK SetupAPI , event categories
 - LogMask
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enabling Event Categories for a Text Log
@@ -107,10 +104,10 @@ The following table lists the event categories that SetupAPI supports, the manif
 </tbody>
 </table>
 
- 
+ 
 
-<a href="" id="to-enable-event-categories-for-the-setupapi-logs--create--or-modify--the-following-reg-dword-registry-value-"></a>To enable event categories for the SetupAPI logs, create (or modify) the following REG\_DWORD registry value:  
-**HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\LogMask**
+<a href="" id="to-enable-event-categories-for-the-setupapi-logs--create--or-modify--the-following-reg-dword-registry-value-"></a>To enable event categories for the SetupAPI logs, create (or modify) the following [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) registry value:  
+**HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\LogMask**
 
 The **LogMask** registry value applies to the device installation text log and the application installation text log.
 
@@ -118,15 +115,15 @@ If the **LogMask** registry value does not exist, SetupAPI enables all event cat
 
 The **LogMask** registry value is formatted as 0X*VVVVVVVV, where VVVVVVVV* is a 32-bitfield. To enable all categories, set **LogMask** to 0XFFFFFFFF. To enable only specific categories, perform a bitwise OR of the corresponding event category constants. For example:
 
--   To enable only log entries that are written by device installation operations, set **LogMask** to the value of TXTLOG\_DEVINST (0X00000001)
+-   To enable only log entries that are written by device installation operations, set **LogMask** to the value of TXTLOG_DEVINST (0X00000001)
 
--   To enable only log entries that are written by device installation operations and driver store operations, set **LogMask** to (TTXTLOG\_DRIVER\_STORE | TEXTLOG\_DEVINST) (0x04000001).
+-   To enable only log entries that are written by device installation operations and driver store operations, set **LogMask** to (TTXTLOG_DRIVER_STORE | TEXTLOG_DEVINST) (0x04000001).
 
--   To enable only log entries that are written by custom installation operations, set **LogMask** to TXTLOG\_VENDOR (0x80000000).
+-   To enable only log entries that are written by custom installation operations, set **LogMask** to TXTLOG_VENDOR (0x80000000).
 
- 
+ 
 
- 
+ 
 
 
 

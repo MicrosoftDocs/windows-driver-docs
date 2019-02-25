@@ -1,13 +1,9 @@
 ---
 title: Web Services on Devices for Printing (WS-Print)
-author: windows-driver-content
 description: Web services on devices for printing (WS-Print) was introduced in Windows Vista, to provide a connection protocol for printing and scanning peripherals.
 ms.assetid: 4A641EF8-FBD3-46CA-9284-28AF1A4B8226
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Web Services on Devices for Printing (WS-Print)
@@ -66,13 +62,13 @@ After the printer confirms that it supports WS-Print v1.2, the client sends a Ge
 
 **WS-Print v1.1**
 
-**Namespace:** http://schemas.microsoft.com/windows/2010/06/wdp/printv11
-**XML Namespace Definition:** xmlns:wprt12="http://schemas.microsoft.com/windows/2012/10/wdp/printV12"
+**Namespace:** <http://schemas.microsoft.com/windows/2010/06/wdp/printv11>
+**XML Namespace Definition:** xmlns:wprt12="<http://schemas.microsoft.com/windows/2012/10/wdp/printV12>"
 
 **WS-Print v1.2**
 
-**Namespace:** http://schemas.microsoft.com/windows/2012/10/wdp/printV12
-**XML Namespace Definition:** xmlns:wprt11="http://schemas.microsoft.com/windows/2010/06/wdp/printv11"
+**Namespace:** <http://schemas.microsoft.com/windows/2012/10/wdp/printV12>
+**XML Namespace Definition:** xmlns:wprt11="<http://schemas.microsoft.com/windows/2010/06/wdp/printv11>"
 ## Specifying WS-Print 1.1 support
 
 
@@ -80,7 +76,7 @@ Printers that support WS-Print 1.1 elements must update their PrinterDescription
 
 Print devices that support WS-Print v1.1 must include the following content in their PrinterDescription in order for Windows to query for any other elements in that namespace.
 
-```XML
+```xml
 <soap:Envelope
 ...
   xmlns:wprt11="http://schemas.microsoft.com/windows/2010/06/wdp/printv11">"
@@ -91,7 +87,7 @@ Print devices that support WS-Print v1.1 must include the following content in t
 
 The following XML snippet is derived from the WSD Print Service Specification v1.0, and it shows the proper usage of the content in the preceding section.
 
-```XML
+```xml
 <soap:Envelope
         xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
         xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
@@ -135,7 +131,7 @@ The following XML snippet is derived from the WSD Print Service Specification v1
 
 The following XML snippet shows the schema for a print device that supports WS-Print v1.1.
 
-```XML
+```xml
 <xs:schema targetNamespace="http://schemas.microsoft.com/windows/2010/06/wdp/printv11"
            xmlns:wprt11="http://schemas.microsoft.com/windows/2010/06/wdp/printv11"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -163,7 +159,7 @@ Printers that support WS-Print 1.2 elements must update their PrinterDescription
 
 Print devices that support WS-Print v1.2 must include the following content in their PrinterDescription in order for Windows to query for any other elements in that namespace.
 
-```XML
+```xml
 <soap:Envelope
 …
     xmlns:wprtV12="http://schemas.microsoft.com/windows/2012/10/wdp/printV12">
@@ -175,7 +171,7 @@ Print devices that support WS-Print v1.2 must include the following content in t
 
 The following XML snippet is derived from the WSD Print Service Specification v1.2, and it shows the proper usage of the content in the preceding section.
 
-```XML
+```xml
 <soap:Envelope
      xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
      xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
@@ -221,7 +217,7 @@ The schema examples in the following three sections, show how to use some of the
 
 This schema provides device-specific GPD or PPD configuration files for this device.
 
-```XML
+```xml
    <xs:annotation>
         <xs:documentation>Driver Configuration File definition</xs:documentation>
     </xs:annotation>
@@ -239,9 +235,9 @@ This schema provides device-specific GPD or PPD configuration files for this dev
 ## Device model ID
 
 
-The following schema describes a ModelID for the device, and is used for device metadata retrieval. For more information on ModelIDs, see [ModelID element](http://msdn.microsoft.com/library/windows/hardware/ff549295.aspx).
+The following schema describes a ModelID for the device, and is used for device metadata retrieval. For more information on ModelIDs, see [ModelID element](https://msdn.microsoft.com/library/windows/hardware/ff549295.aspx).
 
-```XML
+```xml
     <xs:annotation>
         <xs:documentation> Print Device Model Id value for device differentiation</xs:documentation>
         <xs:documentation> Always represented as a GUID</xs:documentation>
@@ -259,7 +255,7 @@ The following schema describes a ModelID for the device, and is used for device 
 
 The following schema retrieves an RGB triple that represents the color for a particular ink or toner type. This value should be specified for any ink or toner consumables to enable a better representation of the color to be shown in app UI.
 
-```XML
+```xml
     <xs:annotation>
         <xs:documentation>
             Ink/Toner Color Representation definition
@@ -313,7 +309,5 @@ For more detailed information about the SetPrinterElements operation, see the su
 ## Related topics
 [V4 Printer Driver Connectivity](v4-printer-driver-connectivity.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Web%20Services%20on%20Devices%20for%20Printing%20%28WS-Print%29%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

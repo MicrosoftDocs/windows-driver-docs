@@ -1,13 +1,9 @@
 ---
 title: EFI_USB_SUPERSPEED_INTERFACE_INFO
-author: windows-driver-content
 description: EFI_USB_SUPERSPEED_INTERFACE_INFO
 ms.assetid: 1B0C04D0-5254-4B9A-A94D-4FF1CEAD4627
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USB\_SUPERSPEED\_INTERFACE\_INFO
@@ -18,7 +14,7 @@ The **EFI\_USB\_SUPERSPEED\_INTERFACE\_INFO** structure is used to define the su
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct
 {
     EFI_USB_INTERFACE_DESCRIPTOR            *InterfaceDescriptor;
@@ -38,18 +34,17 @@ An [EFI\_USB\_SUPERSPEED\_ENDPOINT\_DESCRIPTOR](efi-usb-superspeed-endpoint-desc
 ## Remarks
 
 
-The **EFI\_USB\_INTERFACE\_DESCRIPTOR** structure is defined in the UEFI specification version 2.3 and later. For more information, visit the [UEFI.org](http://go.microsoft.com/fwlink/p/?linkid=109526) website.
+The **EFI\_USB\_INTERFACE\_DESCRIPTOR** structure is defined in the UEFI specification version 2.3 and later. For more information, visit the [UEFI.org](https://go.microsoft.com/fwlink/p/?linkid=109526) website.
 
 ## Requirements
 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

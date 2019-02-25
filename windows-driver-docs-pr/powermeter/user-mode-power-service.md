@@ -6,11 +6,8 @@ keywords:
 - Power Metering and Budgeting WDK , User-Mode Power Service
 - User-Mode Power Service WDK Power Meter
 - UMPS WDK Power Meter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # User-Mode Power Service
@@ -18,7 +15,7 @@ ms.technology: windows-devices
 
 Starting with Windows 7 and Windows Server 2008 R2, the User-Mode Power Service (UMPS) provides an interface for all aspects of power management to user-mode services and applications. This interface includes support for the Power Metering and Budgeting (PMB) infrastructure for power-related information. This information is used by applications, such as the Windows Performance Monitor (PerfMon), for power management and reporting.
 
-UMPS provides access to PMB information by using a set of PMB WMI classes. These WMI classes comply with version 1.1.0 of the Distributed Management Task Force (DMTF) Power Supply Profile. For more information, see the [DMTF Power Supply Profile](http://go.microsoft.com/fwlink/p/?linkid=145048).
+UMPS provides access to PMB information by using a set of PMB WMI classes. These WMI classes comply with version 1.1.0 of the Distributed Management Task Force (DMTF) Power Supply Profile. For more information, see the [DMTF Power Supply Profile](https://go.microsoft.com/fwlink/p/?linkid=145048).
 
 The PMB WMI classes provide support for the following:
 
@@ -30,11 +27,10 @@ When UPMS services PMB WMI requests, it calls into the Power Meter Interface (PM
 
 For more information about the PMB WMI classes, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

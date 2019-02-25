@@ -3,17 +3,14 @@ title: Activating a Smart Client
 description: Once the DbgSrv process server has been activated, you can create a smart client on another computer and begin a debugging session.
 ms.assetid: 7199dc95-e8fc-4f58-ab6e-c0141681113e
 keywords: ["Activating a Smart Client Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - Activating a Smart Client
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Activating a Smart Client
@@ -25,7 +22,7 @@ There are two ways to start a smart client: by starting CDB or WinDbg with the -
 
 The protocol of the smart client must match the protocol of the process server. The general syntax for starting a smart client depends on the protocol used. The following options exist:
 
-```
+```console
 Debugger -premote npipe:server=Server,pipe=PipeName[,password=Password] [Options]
 
 Debugger -premote tcp:server=Server,port=Socket[,password=Password][,ipversion=6] [Options]
@@ -43,7 +40,7 @@ Debugger -premote ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server
 
 To use the graphical interface to connect to a process server, WinDbg must be in dormant mode -- it must either have been started with no command-line parameters, or it must have ended the previous debugging session. Select the **File | Connect to Remote Stub** menu command. When the **Connect to Remote Stub Server** dialog box appears, enter one of the following strings into the **Connection string** text box:
 
-```
+```dbgcmd
 npipe:server=Server,pipe=PipeName[,password=Password] 
 
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
@@ -77,7 +74,7 @@ If NPIPE or SPIPE protocol is used, *PipeName* is the name that was given to the
 
 If you are not logged on to the client computer with an account that has access to the server computer, you must provide a user name and password. On the client computer, in a Command Prompt window, enter the following command.
 
-**net use \\\\***Server***\\ipc$ /user:***UserName*
+**net use \\\\**<em>Server</em>**\\ipc$ /user:**<em>UserName</em>
 
 where *Server* is the name of the server computer, and *UserName* is the name of an account that has access to the server computer.
 
@@ -87,7 +84,7 @@ After this command succeeds, you can activate a smart client by using the **-pre
 
 **Note**  You might need to enable file and printer sharing on the server computer. In Control Panel, navigate to **Network and Internet &gt; Network and Sharing Center&gt; Advanced sharing settings**. Select **Turn on file and printer sharing**.
 
- 
+ 
 
 <span id="________port_________Socket"></span><span id="________port_________socket"></span><span id="________PORT_________SOCKET"></span> **port=** *Socket*  
 If TCP or SSL protocol is used, *Socket* is the same socket port number that was used when the process server was created.
@@ -108,7 +105,7 @@ If COM protocol is used, *COMChannel* should match the channel number chosen whe
 If SSL or SPIPE protocol is used, *Protocol* should match the secure protocol used when the process server was created.
 
 <span id="Cert"></span><span id="cert"></span><span id="CERT"></span>*Cert*  
-If SSL or SPIPE protocol is used, you should use the identical **certuser=***Cert* or **machuser=***Cert* parameter that was used when the process server was created.
+If SSL or SPIPE protocol is used, you should use the identical **certuser=**<em>Cert</em> or **machuser=**<em>Cert</em> parameter that was used when the process server was created.
 
 <span id="________password_________Password"></span><span id="________password_________password"></span><span id="________PASSWORD_________PASSWORD"></span> **password=** *Password*  
 If a password was used when the process server was created, *Password* must be supplied in order to create the smart client. It must match the original password. Passwords are case-sensitive. If the wrong password is supplied, the error message will specify "Error 0x80004005."
@@ -123,11 +120,10 @@ Since the process server simply acts as a gateway for the smart client, the addi
 
 If you are using the **-premote** option with [**.attach (Attach to Process)**](-attach--attach-to-process-.md) or [**.create (Create Process)**](-create--create-process-.md), the parameters are the same as those listed above.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Activating%20a%20Smart%20Client%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

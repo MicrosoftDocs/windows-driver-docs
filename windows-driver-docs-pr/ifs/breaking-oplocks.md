@@ -1,13 +1,9 @@
 ---
 title: Breaking Oplocks
-author: windows-driver-content
 description: Breaking Oplocks
 ms.assetid: 1f3c4a99-5ad2-4597-a1c9-a21f80c40291
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Breaking Oplocks
@@ -24,7 +20,7 @@ When an oplock is granted, the requesting IRP is pended. When an oplock is broke
 
 -   FILE\_OPLOCK\_BROKEN\_TO\_LEVEL\_2 - The current oplock (Level 1 or Batch) was converted to a Level 2 oplock. Note that Filter oplocks never break to Level 2, they always break to None.
 
-For Read-Handle, Read-Write, and Read-Write-Handle oplocks, the level to which the oplock is breaking is described as a combination of zero or more of the flags OPLOCK\_LEVEL\_CACHE\_READ, OPLOCK\_LEVEL\_CACHE\_HANDLE, or OPLOCK\_LEVEL\_CACHE\_WRITE in the **NewOplockLevel** member of the REQUEST\_OPLOCK\_OUTPUT\_BUFFER structure passed as the *lpOutBuffer* parameter of [DeviceIoControl](http://go.microsoft.com/fwlink/p/?linkid=124239). In a similar manner, [**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) and [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) can be used to request Windows 7 oplocks from kernel mode. For more information, see [**FSCTL\_REQUEST\_OPLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff545530).
+For Read-Handle, Read-Write, and Read-Write-Handle oplocks, the level to which the oplock is breaking is described as a combination of zero or more of the flags OPLOCK\_LEVEL\_CACHE\_READ, OPLOCK\_LEVEL\_CACHE\_HANDLE, or OPLOCK\_LEVEL\_CACHE\_WRITE in the **NewOplockLevel** member of the REQUEST\_OPLOCK\_OUTPUT\_BUFFER structure passed as the *lpOutBuffer* parameter of [DeviceIoControl](https://go.microsoft.com/fwlink/p/?linkid=124239). In a similar manner, [**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) and [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) can be used to request Windows 7 oplocks from kernel mode. For more information, see [**FSCTL\_REQUEST\_OPLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff545530).
 
 When breaking a Level 1, Batch, Filter, Read-Write, Read-Write-Handle, or, under certain circumstances (see note), a Read-Handle oplock, the pended oplock request IRP is completed by the oplock package and the operation that caused the oplock break is itself pended (note that if the operation is issued on a synchronous handle, or it is an IRP\_MJ\_CREATE, which is always synchronous, the I/O manager causes the operation to block, rather than return STATUS\_PENDING), waiting for an acknowledgment from the owner of the oplock to tell the oplock package that they have finished their processing and it is safe for the pended operation to proceed. The purpose of this delay is to allow the owner of the oplock to put the stream back into a consistent state before the current operation proceeds. The system waits forever to receive the acknowledgment as there is no timeout. It is therefore incumbent on the owner of the oplock to acknowledge the break in a timely manner. The pended operation's IRP is set into a cancelable state. If the application or driver performing the wait terminates, the oploack package immediately completes the IRP with STATUS\_CANCELLED.
 
@@ -52,17 +48,16 @@ There are certain file system operations which check the current oplock state to
 
 - [IRP_MJ_FILE_SYSTEM_CONTROL](irp-mj-file-system-control2.md)
 
-A break of a Windows 7 oplock requires an acknowledgment if the REQUEST\_OPLOCK\_OUTPUT\_FLAG\_ACK\_REQUIRED flag is set in the **Flags** member of the REQUEST\_OPLOCK\_OUTPUT\_BUFFER structure passed as the output parameter of [DeviceIoControl](http://go.microsoft.com/fwlink/p/?linkid=124239)(*lpOutBuffer*), [**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988)(*OutBuffer*) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)(*OutBuffer*). For more information, see [**FSCTL\_REQUEST\_OPLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff545530).
+A break of a Windows 7 oplock requires an acknowledgment if the REQUEST\_OPLOCK\_OUTPUT\_FLAG\_ACK\_REQUIRED flag is set in the **Flags** member of the REQUEST\_OPLOCK\_OUTPUT\_BUFFER structure passed as the output parameter of [DeviceIoControl](https://go.microsoft.com/fwlink/p/?linkid=124239)(*lpOutBuffer*), [**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988)(*OutBuffer*) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)(*OutBuffer*). For more information, see [**FSCTL\_REQUEST\_OPLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff545530).
 
 **Note**  The above listed per-operation topics describe the details of when a break of a Read-Handle oplock results in the pending of the operation that broke the oplock. For example, the [IRP\_MJ\_CREATE](irp-mj-create2.md) topic contains the associated Read-Handle details.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

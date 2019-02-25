@@ -5,11 +5,8 @@ ms.assetid: dd9030b1-271f-46e4-9139-b49903ca8313
 keywords:
 - Network Module Registrar WDK Winsock Kernel
 - NMR WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unregistering and Unloading the WSK Client
@@ -29,7 +26,7 @@ If a WSK application implements a [*ClientCleanupBindingContext*](https://msdn.m
 
 For example:
 
-```
+```C++
 // ClientDetachProvider callback function
 NTSTATUS
   ClientDetachProvider(
@@ -96,7 +93,7 @@ A WSK application's [**Unload**](https://msdn.microsoft.com/library/windows/hard
 
 For example:
 
-```
+```C++
 // Variable containing the handle for registration with the NMR
 HANDLE RegistrationHandle;
 
@@ -127,9 +124,9 @@ VOID
 
 A WSK application is not required to call **NmrDeregisterClient** from within its *Unload* function. For example, if a WSK application is a subcomponent of a complex driver, the unregistration of the WSK application might occur when the WSK application subcomponent is deactivated. However, in such a situation the driver must still ensure that the WSK application has been completely unregistered from the NMR before returning from its *Unload* function.
 
- 
+ 
 
- 
+ 
 
 
 

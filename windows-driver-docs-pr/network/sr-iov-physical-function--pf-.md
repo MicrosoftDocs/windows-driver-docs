@@ -2,11 +2,8 @@
 title: SR-IOV Physical Function (PF)
 description: SR-IOV Physical Function (PF)
 ms.assetid: 176ABEA4-B6BE-41D6-9171-8E9A537F8CA1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SR-IOV Physical Function (PF)
@@ -16,7 +13,7 @@ The Physical Function (PF) is a PCI Express (PCIe) function of a network adapter
 
 The PF is exposed as a virtual network adapter in the management operating system of the Hyper-V parent partition. The PF miniport driver is an NDIS miniport driver that manages the PF in the management operating system. The configuration and provisioning of the VFs, together with other hardware and software resources for the support of VFs, is performed through the PF miniport driver. The PF miniport driver uses the traditional NDIS miniport driver functionality to provide the access to the networking I/O resources to the management operating system. The PF driver is also used as a way to manage the resources allocated on the adapter for the VFs.
 
-The PF supports the SR-IOV Extended Capability structure in its PCIe configuration space. This structure is defined in the PCI-SIG [Single Root I/O Virtualization and Sharing 1.1](http://go.microsoft.com/fwlink/p/?linkid=221742) specification. This structure includes the following members:
+The PF supports the SR-IOV Extended Capability structure in its PCIe configuration space. This structure is defined in the PCI-SIG [Single Root I/O Virtualization and Sharing 1.1](https://go.microsoft.com/fwlink/p/?linkid=221742) specification. This structure includes the following members:
 
 <a href="" id="totalvfs"></a>**TotalVFs**  
 A read-only field that specifies the maximum number of VFs that can be associated with the PF.
@@ -35,9 +32,9 @@ The PF also provides the mechanism for the management operating system to commun
 
 The PF miniport driver is responsible for managing resources on the network adapter that are used by one or more VFs. Because of this, the PF miniport driver is loaded in the management operating system before any resources are allocated for a VF. The PF miniport driver is halted after all resources that were allocated for VFs are freed.
 
- 
+ 
 
- 
+ 
 
 
 

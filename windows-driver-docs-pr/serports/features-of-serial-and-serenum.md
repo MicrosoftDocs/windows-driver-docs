@@ -1,6 +1,5 @@
 ---
 title: Features of Serial and Serenum
-author: windows-driver-content
 description: Features of Serial and Serenum
 ms.assetid: 47202203-935a-4e1a-9b05-5555f7cbcfa8
 keywords:
@@ -10,17 +9,14 @@ keywords:
 - Serenum driver WDK , about Serenum driver
 - Serial service WDK
 - serial drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Features of Serial and Serenum
 
 
-## <a href="" id="ddk-features-of-serial-and-serenum-kg"></a>
+
 
 
 Starting with Windows 2000, the system-supplied Serial.sys and Serenum.sys drivers are available to manage serial controller devices that have hardware interfaces that are compatible with the 16550 universal asynchronous receiver-transmitter (UART). Serial.sys controls stand-alone serial ports, COM ports, and multiport boards. Serenum.sys enumerates devices that are connected to a serial port that is controlled by Serial.sys or a compatible serial driver.
@@ -33,7 +29,7 @@ Serial is used as:
 
 -   A function driver for legacy and Plug and Play serial devices.
 
--   A lower-level device filter driver for Plug and Play devices that require a 16550 UART-compatible interface. An example of this configuration is a modem on a [PCMCIA bus](http://go.microsoft.com/fwlink/p/?LinkId=799534).
+-   A lower-level device filter driver for Plug and Play devices that require a 16550 UART-compatible interface. An example of this configuration is a modem on a [PCMCIA bus](https://go.microsoft.com/fwlink/p/?LinkId=799534).
 
     Serial's operation as a filter driver is identical to its operation as a function driver.
 
@@ -63,12 +59,10 @@ Serenum does not support the Windows Driver Model, and should only be used with 
 
 Starting with Windows 2000, Serenum supports Serial and other serial port function drivers that need to enumerate a serial port. Hardware vendors do not have to create their own enumerator for serial ports. For example, a device driver can use Serenum to enumerate the devices that are attached to the individual serial ports on a multiport device.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bserports\serports%5D:%20Features%20of%20Serial%20and%20Serenum%20%20RELEASE:%20%288/4/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

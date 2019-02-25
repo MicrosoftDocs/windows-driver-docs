@@ -2,11 +2,8 @@
 title: Setting a Device Class Property Value
 description: Setting a Device Class Property Value
 ms.assetid: a1d6908d-e43a-413d-965b-3af226d5c26f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting a Device Class Property Value
@@ -34,9 +31,9 @@ To set the value of a device class property, call [**SetupDiSetClassProperty**](
 
 -   Set *RequiredSize* to a DWORD-typed variable.
 
--   If the device class is a device setup class, set *Flags* to DICLASSPROP\_INSTALLER. Otherwise, if the device class is a device interface class, set *Flags* to DICLASSPROP\_INTERFACE.
+-   If the device class is a device setup class, set *Flags* to DICLASSPROP_INSTALLER. Otherwise, if the device class is a device interface class, set *Flags* to DICLASSPROP_INTERFACE.
 
-If a call to [**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128) succeeds, **SetupDiSetClassProperty** sets the device class property and returns **TRUE**. If the function call fails, **SetupDiSetClassProperty** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+If a call to [**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128) succeeds, **SetupDiSetClassProperty** sets the device class property and returns **TRUE**. If the function call fails, **SetupDiSetClassProperty** returns **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
 ### <a href="" id="setting-a-device-class-property-value-on-a-remote-computer"></a> Setting a Device Class Property Value on a Remote Computer
 
@@ -46,9 +43,9 @@ To set a device class property value on a remote computer, follow the procedure 
 
 -   In addition to supplying the parameter values that both **SetupDiSetClassPropertyEx** and **SetupDiSetClassProperty** require, supply the *MachineName* parameter, which must be set to a pointer to a NULL-terminated string that contains the UNC name, including the \\\\ prefix, of a computer.
 
- 
+ 
 
- 
+ 
 
 
 

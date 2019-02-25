@@ -12,11 +12,8 @@ keywords:
 - kernel debuggers WDK driver signing
 - kernel-mode driver signing WDK
 - F8 key WDK drvier signing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing an Unsigned Driver during Development and Test
@@ -32,7 +29,7 @@ Windows Vista and later versions of Windows support the F8 Advanced Boot Option
 
 Attaching an active kernel debugger to a development or test computer disables load-time signature enforcement for kernel-mode drivers. To use this debugging configuration, attach a debugging computer to a development or test computer, and enable kernel debugging on the development or test computer by running the following command:
 
-```
+```cpp
 bcdedit -debug on
 ```
 
@@ -44,11 +41,11 @@ However, there are situations in which a developer might need to have a kernel d
 
 In order to facilitate debugging such issues, the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) supports the following registry value:
 
-```
+```cpp
 HKLM\SYSTEM\CurrentControlSet\Control\CI\DebugFlags
 ```
 
-This registry value is of type REG\_DWORD, and can be assigned a value based on a bitwise OR of one or more of the following flags:
+This registry value is of type [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), and can be assigned a value based on a bitwise OR of one or more of the following flags:
 
 <a href="" id="0x00000001"></a>**0x00000001**  
 This flag value configures the kernel to break into the debugger if a driver is unsigned. The developer or tester can then choose to load the unsigned driver by entering **g** at the debugger prompt.
@@ -60,11 +57,11 @@ If this registry value does not exist in the registry or has a value that is not
 
 **Note**  This registry value does not exist in the registry by default. You must create the value in order to debug the kernel-mode signature verification.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

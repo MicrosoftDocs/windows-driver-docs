@@ -3,17 +3,14 @@ title: .quit_lock (Prevent Accidental Quit)
 description: The .quit_lock command sets a password to prevent you from accidentally ending the debugging session.
 ms.assetid: fd40e642-beba-4da0-a072-6493588980de
 keywords: [".quit_lock (Prevent Accidental Quit) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .quit_lock (Prevent Accidental Quit)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .quit\_lock (Prevent Accidental Quit)
@@ -21,7 +18,7 @@ api_type:
 
 The **.quit\_lock** command sets a password to prevent you from accidentally ending the debugging session.
 
-```
+```dbgcmd
 .quit_lock /s NewPassword 
 .quit_lock /q Password 
 .quit_lock 
@@ -59,7 +56,7 @@ Enables the debugging session to end. *Password* must match the password that yo
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,15 +69,14 @@ When you use **.quit\_lock /q**, the lock is removed. This command does not clos
 
 **Note**   The password is not "secret". Any remote user who is attached to the debugging session can use **.quit\_lock** to determine the password. The purpose of this command is to prevent accidental use of the [**q (Quit)**](q--qq--quit-.md) command. This command is especially useful if restarting the debugging session might be difficult (for example, during remote debugging).
 
- 
+ 
 
 You cannot use the **.quit\_lock /s** command in [Secure Mode](activating-secure-mode.md). If you use this command before Secure Mode is activated, the password protection remains, but you cannot change or remove the password.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.quit_lock%20%28Prevent%20Accidental%20Quit%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

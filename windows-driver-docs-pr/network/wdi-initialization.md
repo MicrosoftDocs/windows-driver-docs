@@ -2,11 +2,8 @@
 title: Wi-Fi device initialization
 description: This topic describes the initialization of the Wi-Fi device after power-on.
 ms.assetid: EDF04E40-C278-42CE-8E17-F5AB0C1651EF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Wi-Fi device initialization
@@ -20,9 +17,9 @@ This topic describes the initialization of the Wi-Fi device after power-on. On p
 2.  Once the adapter is initialized, the host queries the adapter for various Wi-Fi properties, set properties, and creates ports (MACs) as part of miniport initialization.
 3.  After the ports are created and initialized, the adapter can receive task and property commands.
 
- 
+ 
 
- 
+ 
 
 
 

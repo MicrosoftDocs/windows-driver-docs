@@ -6,11 +6,8 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , texture format lists
 - texture format lists WDK DirectX 8.0
 - DPIXELFORMAT
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # The Texture Format List
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 ## <span id="ddk_the_texture_format_list_gg"></span><span id="DDK_THE_TEXTURE_FORMAT_LIST_GG"></span>
 
 
-Direct 8.0 introduces a new mechanism for describing pixel formats. In previous versions of DirectDraw and Direct3D pixel formats were described by a data structure ([**DDPIXELFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff550274)) that contained information about the number of bits per color channel and bitmasks for each color channel (along with flags and size field). Pixel formats in DirectX 8.0 are simple DWORDs that identify a particular pixel format and are compatible with [*FOURCCs*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fourcc) (Direct3D pixel formats are simply FOURCCs with all but the least significant bytes being zero).
+Direct 8.0 introduces a new mechanism for describing pixel formats. In previous versions of DirectDraw and Direct3D pixel formats were described by a data structure (**DDPIXELFORMAT** (Direct3D pixel formats are simply FOURCCs with all but the least significant bytes being zero).
 
 The DDPIXELFORMAT data structure is no longer exposed through API level interfaces. However, it is still used at the DDI level. The driver reports its supported texture formats through a texture format array that consists of surface descriptions with their embedded DDPIXELFORMAT data structures. However, the embedded pixel format structures can now be used to report new style pixel formats. To specify a new style pixel format using the DDPIXELFORMAT data structure, set the **dwFlags** field of the structure to the value DDPF\_D3DFORMAT and store the new pixel format identifier in the **dwFourCC** field.
 
@@ -37,11 +34,10 @@ The DirectX 8.0 runtime scans the texture format list reported by the driver exa
 
 All supported surface formats, such as textures, depth or stencil buffers, or render targets, should be reported through the **GetDriverInfo2** mechanism. The runtime ignores the texture and Z/Stencil formats returned through legacy mechanisms (D3DHAL\_GLOBALDRIVERDATA and GUID\_ZPixelFormats). No attempt is made to map these formats to DX8 style formats for DirectX 8.0 drivers. However, legacy formats are mapped to the new style for DirectX 7.0 or earlier drivers. Therefore, a driver must report all supported surface formats through the DirectX 8.0 DDI. Furthermore, because legacy runtimes do not map new style surface formats to old style formats it is essential that the driver continues to report DirectX 7.0 style surface and Z/Stencil formats through the legacy mechanism.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20The%20Texture%20Format%20List%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

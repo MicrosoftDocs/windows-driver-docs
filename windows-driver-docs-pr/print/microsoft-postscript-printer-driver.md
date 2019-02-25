@@ -1,49 +1,28 @@
 ---
 title: Microsoft PostScript Printer Driver
-author: windows-driver-content
 description: Microsoft PostScript Printer Driver
 ms.assetid: 1c67d20c-ada6-42fd-a882-61e12b72611f
 keywords:
 - printer drivers WDK , PostScript Printer Driver
 - PostScript Printer Driver WDK print
 - Pscript WDK print
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 01/30/2019
+ms.localizationpriority: medium
 ---
 
 # Microsoft PostScript Printer Driver
 
+The PostScript Printer Driver (Pscript) is the Microsoft standard printer driver for PostScript printers.
 
-## <a href="" id="ddk-microsoft-postscript-printer-driver-gg"></a>
+The following topics describe Pscript driver:
 
-
-The PostScript Printer Driver (Pscript) is the Microsoft corporation standard printer driver for PostScript printers. The following topics describe Pscript:
-
-[Pscript Capabilities](pscript-capabilities.md)
-
-[Pscript Components](pscript-components.md)
-
-[Pscript Minidrivers](pscript-minidrivers.md)
-
-[Pscript User Interface](pscript-user-interface.md)
-
-[Pscript Renderer](pscript-renderer.md)
-
-[Hostfont Registry Entries](hostfont-registry-entries.md)
-
-[Pscript-Supported Escapes](pscript-supported-escapes.md)
-
-[PPD-Specific Interface](ppd-specific-interface.md)
-
- 
-
- 
-
-
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Microsoft%20PostScript%20Printer%20Driver%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
+| Topic | Description |
+| --- | --- |
+| [Pscript Capabilities](pscript-capabilities.md) | Provides information about capabilities of Pscript drivers. |
+| [Pscript Components](pscript-components.md) | Provides information about the DLLs, text files, and binary data files that comprise Pscript components. |
+| [Pscript Minidrivers](pscript-minidrivers.md)  | Provides information about Pscript minidrivers that are created from .ppd and .ntf files. |
+| [Pscript User Interface](pscript-user-interface.md)  | Provides information about the Pscript user interface that employs CPSUI to create property sheet pages. |
+| [Pscript Renderer](pscript-renderer.md)  | Provides information about the Pscript renderer that is implemented as a printer graphics DLL and exports functions defined by Microsoft DDIs for graphics drivers. |
+| [Hostfont Registry Entries](hostfont-registry-entries.md)  | Provides information about an OEM plug-in that can notify Pscript5 drivers of available fonts. |
+| [Pscript-Supported Escapes](pscript-supported-escapes.md)  | Provides information about Pscript5 printer driver escapes. |
+| [PPD-Specific Interface](ppd-specific-interface.md) | Provides information about PPD-specific behavior of the IPrintCoreUI2 COM Interface. |

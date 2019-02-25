@@ -1,22 +1,18 @@
 ---
 title: Creating the Plug-In
-author: windows-driver-content
 description: Creating the Plug-In
 ms.assetid: 4e52c855-f2c6-49b5-ac79-96dcac785579
 keywords:
 - COM interfaces WDK print , creating plug-ins
 - plug-ins WDK print , creating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating the Plug-In
 
 
-## <a href="" id="ddk-creating-the-plug-in-gg"></a>
+
 
 
 All printer driver plug-ins must define DllMain, DllGetClassObject, and DllCanUnloadNow functions. They must also implement the IClassFactory COM interface and one of the [IPrintOemUI](iprintoemui-com-interface.md), [IPrintOemUI2](iprintoemui2-com-interface.md), [IPrintOemUni](iprintoemuni-com-interface.md), [IPrintOemUni2](iprintoemuni2-com-interface.md), [IPrintOemUni3](iprintoemuni3-com-interface.md), [IPrintOemPS](iprintoemps-com-interface.md), or [IPrintOemPS2](iprintoemps2-com-interface.md) COM interfaces.
@@ -61,12 +57,10 @@ To create either type of plug-in, you must do the following:
 
     If the plug-in DLL must remain loaded (for example, when it creates a thread that uses the plug-in DLL), the thread must load the DLL, using a call to the LoadLibrary function. When the thread is finished with the DLL, it should call the FreeLibraryAndExitThread function to unload it. In a situation in which a thread has called LoadLibrary, the driver's call to FreeLibrary merely decrements the DLL's reference count, thereby preventing it from being unloaded. The LoadLibrary, FreeLibrary, and FreeLibraryAndExitThread functions are described in the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Creating%20the%20Plug-In%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

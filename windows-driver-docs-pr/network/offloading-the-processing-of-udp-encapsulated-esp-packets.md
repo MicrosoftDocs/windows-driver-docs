@@ -5,18 +5,15 @@ ms.assetid: 67821fbb-3a0e-4186-bf31-83942898e4c9
 keywords:
 - IPsecOV1 WDK TCP/IP transport , UDP-encapsulated ESP packets
 - UDP-encapsulated ESP packets WDK IPsec offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Offloading the Processing of UDP-Encapsulated ESP Packets
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-offloading-the-processing-of-udp-encapsulated-esp-packets-ng"></a>
+
 
 
 This section describes the offloaded processing of UDP-encapsulated ESP packets.
@@ -35,9 +32,9 @@ This section includes the following topics:
 
 [Processing UDP-Encapsulated ESP Packets](processing-udp-encapsulated-esp-packets.md)
 
- 
+ 
 
- 
+ 
 
 
 

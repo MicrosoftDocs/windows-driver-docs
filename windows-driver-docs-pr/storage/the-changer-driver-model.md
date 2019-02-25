@@ -1,6 +1,5 @@
 ---
 title: The Changer Driver Model
-author: windows-driver-content
 description: The Changer Driver Model
 ms.assetid: 87a70ecf-e518-4c22-945b-9056b59fed5a
 keywords:
@@ -14,11 +13,8 @@ keywords:
 - doors WDK changer
 - removable storage manager WDK changer
 - RSM WDK changer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # The Changer Driver Model
@@ -63,11 +59,10 @@ A changer might also have either one or both of the following elements:
 
 A changer miniclass driver reports the type and number of a changer's elements in a [**GET\_CHANGER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff554979) structure when requested by the changer class driver. In particular, the miniclass driver must report IEports and doors according to these definitions, regardless of the elements' physical appearance, so that an application can issue appropriate requests to those elements.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

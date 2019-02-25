@@ -3,11 +3,8 @@ title: Controlling Exceptions and Events
 description: Controlling Exceptions and Events
 ms.assetid: cc8067f3-07de-4ee2-b028-94f9ac088891
 keywords: ["exceptions", "exceptions, overview", "exceptions, handling", "events", "events, overview", "events, handling"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Controlling Exceptions and Events
@@ -64,7 +61,7 @@ You can control the break status and handling status by doing one of the followi
 
 -   (WinDbg only) Click [Event Filters](debug---event-filters.md) on the **Debug** menu to open the **Event Filters** dialog box, and then choose the options that you want.
 
-The **SX\*** command, the **-x\*** command-line option, and the **sx\*** Tools.ini keyword typically set the break status of the specified event. You can add the **-h** option to cause the handling status to be set instead.
+The **SX\\*** command, the **-x\\*** command-line option, and the **sx\\*** Tools.ini keyword typically set the break status of the specified event. You can add the **-h** option to cause the handling status to be set instead.
 
 There are four special event codes (**cc**, **hc**, **bpec**, and **ssec**) that always specify handling status instead of break status.
 
@@ -126,7 +123,7 @@ or
 </tbody>
 </table>
 
- 
+ 
 
 If an exception is not anticipated by an **SX**\* setting, the target application breaks into the debugger on the second chance. The default status for events is listed in the following "Event Definitions and Defaults" section of this topic.
 
@@ -136,7 +133,7 @@ To set break status by using the WinDbg graphical interface, [Event Filters](deb
 
 All events are considered unhandled, unless you use the [**gh (Go with Exception Handled)**](gh--go-with-exception-handled-.md) command.
 
-All exceptions are considered unhandled, unless you use the [**sx\***](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command together with the **-h** option.
+All exceptions are considered unhandled, unless you use the [**sx\\***](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command together with the **-h** option.
 
 Additionally, **SX**\* options can configure the handling status for invalid handles, STATUS\_BREAKPOINT break instructions, and single-step exceptions. (This configuration is separate from their break configuration.) When you configure their break status, these events are named **ch**, **bpe**, and **sse**, respectively. When you configure their handling status, these events are named **hc**, **bpec**, and **ssec**, respectively. (For the full listing of events, see the following "Event Definitions and Defaults" section.)
 
@@ -171,13 +168,13 @@ When you use the **SX**\* command on **cc**, **hc**, **bpec**, and **ssec** even
 </tbody>
 </table>
 
- 
+ 
 
 To set handling status by using the WinDbg graphical interface, click [Event Filters](debug---event-filters.md) on the **Debug** menu, click the event that you want from the list in the **Event Filters** dialog box, and then select **Handled** or **Not Handled**.
 
 ### <span id="automatic_commands"></span><span id="AUTOMATIC_COMMANDS"></span>Automatic Commands
 
-The debugger also enables you to set commands that are automatically executed if the event or exception causes a break into the debugger. You can set a command string for the first-chance break and a command string for the second-chance break. You can set these strings with the [**SX\***](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command or the [Debug | Event Filters](debug---event-filters.md) command. Each command string can contain multiple commands that are separated with semicolons.
+The debugger also enables you to set commands that are automatically executed if the event or exception causes a break into the debugger. You can set a command string for the first-chance break and a command string for the second-chance break. You can set these strings with the [**SX\\***](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command or the [Debug | Event Filters](debug---event-filters.md) command. Each command string can contain multiple commands that are separated with semicolons.
 
 These commands are executed regardless of the break status. That is, if the break status is "Ignore," the command is still executed. If the break status is "Second-chance break," the first-chance command is executed when the exception first occurs, before any other exception handlers are involved. The command string can end with an execution command such as [**g (Go)**](g--go-.md), [**gh (Go with Exception Handled)**](gh--go-with-exception-handled-.md), or [**gn (Go with Exception Not Handled)**](gn--gn--go-with-exception-not-handled-.md).
 
@@ -300,11 +297,11 @@ The following exceptions' default handling status is always "Not Handled". Be ca
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   You can override the **asrt** break status for a specific address by using the [**ah (Assertion Handling)**](ah--assertion-handling-.md) command. The **ch** and **hc** event codes refer to the same exception. When you are controlling its break status, use **sx\* ch**. When you are controlling its handling status, use **sx\* hc**.
 
- 
+ 
 
 You can change the break status or handling status of the following exceptions. Their default break status is indicated.
 
@@ -347,17 +344,17 @@ An application can use DBG\_COMMAND\_EXCEPTION (**dbce**) to communicate with th
 <td align="left"><p>Break</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>ssessec</strong></p></td>
+<td align="left"><p><strong>sse<br>ssec</strong></p></td>
 <td align="left"><p>Single-step exception</p></td>
 <td align="left"><p>Break</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>bpebpec</strong></p></td>
+<td align="left"><p><strong>bpe<br>bpec</strong></p></td>
 <td align="left"><p>Breakpoint exception</p></td>
 <td align="left"><p>Break</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>ccecc</strong></p></td>
+<td align="left"><p><strong>cce<br>cc</strong></p></td>
 <td align="left"><p>CTRL+C or CTRL+BREAK</p>
 <p>This exception is triggered if the target is a console application and CTRL+C or CTRL+BREAK is passed to it.</p></td>
 <td align="left"><p>Break</p></td>
@@ -365,11 +362,11 @@ An application can use DBG\_COMMAND\_EXCEPTION (**dbce**) to communicate with th
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   The final three exceptions in the preceding table have two different event codes. When you are controlling their break status, use **sse**, **bpe**, and **cce**. When you are controlling their handling status, use **ssec**, **bpec**, and **cc**.
 
- 
+ 
 
 ### <span id="The_following_exceptions_are_useful_when_you_are_debugging_managed_code."></span><span id="the_following_exceptions_are_useful_when_you_are_debugging_managed_code."></span><span id="THE_FOLLOWING_EXCEPTIONS_ARE_USEFUL_WHEN_YOU_ARE_DEBUGGING_MANAGED_CODE."></span>The following exceptions are useful when you are debugging managed code.
 
@@ -402,7 +399,7 @@ An application can use DBG\_COMMAND\_EXCEPTION (**dbce**) to communicate with th
 </tbody>
 </table>
 
- 
+ 
 
 You can change the break status of the following events. Because these events are not exceptions, their handling status is irrelevant.
 
@@ -429,8 +426,8 @@ You can change the break status of the following events. Because these events ar
 <td align="left"><p><strong>cpr</strong>[<strong>:</strong><em>Process</em>]</p></td>
 <td align="left"><p>Process creation</p>
 <p>Setting the break status of this event applies only to user-mode debugging. This event does not occur in kernel mode.</p>
-<p>You can control this event only if you have activated debugging of child processes in CDB or WinDbg, either through the -o[<strong>command-line option</strong>](cdb-command-line-options.md) or through the [<strong>.childdbg (Debug Child Processes)</strong>](-childdbg--debug-child-processes-.md) command.</p>
-<p>The process name can include an optional file name extension and an asterisk (*) or question mark (?) as wildcard characters. The debugger remembers only the most recent <strong>cpr</strong> setting. Separate settings for separate processes are not supported. Include a colon or a space between <strong>cpr</strong> and <em>Process</em>.</p>
+<p>You can control this event only if you have activated debugging of child processes in CDB or WinDbg, either through the -o<strong><a href="cdb-command-line-options.md" data-raw-source="[command-line option](cdb-command-line-options.md)">command-line option</a></strong> or through the <strong><a href="-childdbg--debug-child-processes-.md" data-raw-source="[.childdbg (Debug Child Processes)](-childdbg--debug-child-processes-.md)">.childdbg (Debug Child Processes)</a></strong> command.</p>
+<p>The process name can include an optional file name extension and an asterisk (<em>) or question mark (?) as wildcard characters. The debugger remembers only the most recent <strong>cpr</strong> setting. Separate settings for separate processes are not supported. Include a colon or a space between <strong>cpr</strong> and <em>Process</em>.</p>
 <p>If <em>Process</em> is omitted, the setting applies to any child process creation.</p></td>
 <td align="left"><p>Ignore</p></td>
 </tr>
@@ -438,8 +435,8 @@ You can change the break status of the following events. Because these events ar
 <td align="left"><p><strong>epr</strong>[<strong>:</strong><em>Process</em>]</p></td>
 <td align="left"><p>Process exit</p>
 <p>Setting the break status of this event applies only to user-mode debugging. This event does not occur in kernel mode.</p>
-<p>You can control this event only if you have activated debugging of child processes in CDB or WinDbg, either through the -o[<strong>command-line option</strong>](cdb-command-line-options.md) or through the [<strong>.childdbg (Debug Child Processes)</strong>](-childdbg--debug-child-processes-.md) command.</p>
-<p>The process name can include an optional file name extension and an asterisk (*) or question mark (?) as wildcard characters. The debugger remembers only the most recent <strong>epr</strong> setting. Separate settings for separate processes are not supported. Include a colon or a space between <strong>epr</strong> and <em>Process</em>.</p>
+<p>You can control this event only if you have activated debugging of child processes in CDB or WinDbg, either through the -o<strong><a href="cdb-command-line-options.md" data-raw-source="[command-line option](cdb-command-line-options.md)">command-line option</a></strong> or through the <strong><a href="-childdbg--debug-child-processes-.md" data-raw-source="[.childdbg (Debug Child Processes)](-childdbg--debug-child-processes-.md)">.childdbg (Debug Child Processes)</a></strong> command.</p>
+<p>The process name can include an optional file name extension and an asterisk (</em>) or question mark (?) as wildcard characters. The debugger remembers only the most recent <strong>epr</strong> setting. Separate settings for separate processes are not supported. Include a colon or a space between <strong>epr</strong> and <em>Process</em>.</p>
 <p>If <em>Process</em> is omitted, the setting applies to any child process exit.</p></td>
 <td align="left"><p>Ignore</p></td>
 </tr>
@@ -456,7 +453,7 @@ You can change the break status of the following events. Because these events ar
 <tr class="even">
 <td align="left"><p><strong>ld</strong>[<strong>:</strong><em>Module</em>]</p></td>
 <td align="left"><p>Load module</p>
-<p>If you specify <em>Module</em>, the break occurs when the module with this name is loaded. <em>Module</em> can specify the name or the address of the module. If the name is used, <em>Module</em> might contain a variety of wildcard characters and specifiers. (For more information about the syntax, see [String Wildcard Syntax](string-wildcard-syntax.md).)</p>
+<p>If you specify <em>Module</em>, the break occurs when the module with this name is loaded. <em>Module</em> can specify the name or the address of the module. If the name is used, <em>Module</em> might contain a variety of wildcard characters and specifiers. (For more information about the syntax, see <a href="string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](string-wildcard-syntax.md)">String Wildcard Syntax</a>.)</p>
 <p>The debugger remembers only the most recent l<strong>d</strong> setting. Separate settings for separate modules are not supported. Include a colon or a space between <strong>ld</strong> and <em>Module</em>.</p>
 <p>If <em>Module</em> is omitted, the event is triggered when any module is loaded.</p></td>
 <td align="left"><p>Output</p></td>
@@ -466,39 +463,38 @@ You can change the break status of the following events. Because these events ar
 <td align="left"><p>Unload module</p>
 <p>If you specify <em>Module</em>, the break occurs when the module with this name, or at this base address, is unloaded. <em>Module</em> can specify the name or the address of the module. If the name is used, <em>Module</em> can be an exact name or include wildcard characters. If <em>Module</em> is an exact name, it is immediately resolved to a base address by using the current debugger module list and it is stored as an address. If <em>Module</em> contains wildcard characters, the pattern string is kept for later matching when unload events occur.</p>
 <p>Rarely, the debugger does not have name information for unload events and matches only by the base address. Therefore, if <em>Module</em> contains wildcard characters, the debugger cannot perform a name match in this particular unload case and breaks when any module is unloaded.</p>
-<p>The debugger remembers only the most recent <strong>ud</strong> setting. Separate settings for separate modules are not supported. Include a colon or a space between <strong>ld</strong> and <em>Module</em>.</p>
+<p>The debugger remembers only the most recent <strong>ud</strong> setting. Separate settings for separate modules are not supported. Include a colon or a space between <strong>ud</strong> and <em>Module</em>.</p>
 <p>If <em>Module</em> is omitted, the event is triggered when any module is loaded.</p></td>
 <td align="left"><p>Output</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>out</strong>[<strong>:</strong><em>Output</em>]</p></td>
 <td align="left"><p>Target application output</p>
-<p>If you specify <em>Output</em>, the break occurs only when output that matches the specified pattern is received. <em>Output</em> can contain a variety of wildcard characters and specifiers. (For more information about the syntax, see [String Wildcard Syntax](string-wildcard-syntax.md).) However, <em>Output</em> cannot contain a colon or spaces. The match is not case sensitive. Include a colon or space between <strong>out</strong> and <em>Output</em>.</p></td>
+<p>If you specify <em>Output</em>, the break occurs only when output that matches the specified pattern is received. <em>Output</em> can contain a variety of wildcard characters and specifiers. (For more information about the syntax, see <a href="string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](string-wildcard-syntax.md)">String Wildcard Syntax</a>.) However, <em>Output</em> cannot contain a colon or spaces. The match is not case sensitive. Include a colon or space between <strong>out</strong> and <em>Output</em>.</p></td>
 <td align="left"><p>Ignore</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>ibp</strong></p></td>
 <td align="left"><p>Initial break point</p>
 <p>(This event occurs at the beginning of the debug session and after you restart the target computer.)</p></td>
-<td align="left"><p><strong>In user mode:</strong> Break. You can change this status to &quot;Ignore&quot; by using the <strong>-g</strong>[command-line option](command-line-options.md).</p>
-<p><strong>In kernel mode:</strong> Ignore. You can change this status to &quot;Enabled&quot; by a variety of methods. For more information about how to change this status, see [Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md).</p></td>
+<td align="left"><p><strong>In user mode:</strong> Break. You can change this status to &quot;Ignore&quot; by using the <strong>-g</strong><a href="command-line-options.md" data-raw-source="[command-line option](command-line-options.md)">command-line option</a>.</p>
+<p><strong>In kernel mode:</strong> Ignore. You can change this status to &quot;Enabled&quot; by a variety of methods. For more information about how to change this status, see <a href="crashing-and-rebooting-the-target-computer.md" data-raw-source="[Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md)">Crashing and Rebooting the Target Computer</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>iml</strong></p></td>
 <td align="left"><p>Initial module load</p>
 <p>(Kernel mode only)</p></td>
-<td align="left"><p>Ignore. You can change this status to &quot;Break&quot; by a variety of methods. For more information about how to change this status, see [Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md).</p></td>
+<td align="left"><p>Ignore. You can change this status to &quot;Break&quot; by a variety of methods. For more information about how to change this status, see <a href="crashing-and-rebooting-the-target-computer.md" data-raw-source="[Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md)">Crashing and Rebooting the Target Computer</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Controlling%20Exceptions%20and%20Events%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

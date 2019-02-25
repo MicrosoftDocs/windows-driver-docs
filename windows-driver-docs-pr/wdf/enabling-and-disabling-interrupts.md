@@ -1,6 +1,5 @@
 ---
 title: Enabling and Disabling Interrupts
-author: windows-driver-content
 description: Enabling and Disabling Interrupts
 ms.assetid: 432907e7-05a3-4a99-a291-33bd1eefa94c
 keywords:
@@ -10,11 +9,8 @@ keywords:
 - interrupts WDK KMDF , disabling
 - status information WDK KMDF , enabling interrupts
 - status information WDK KMDF , disabling interrupts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enabling and Disabling Interrupts
@@ -34,9 +30,9 @@ The driver can call [**WdfInterruptGetInfo**](https://msdn.microsoft.com/library
 
 To enable and disable interrupts directly, the driver can call the interrupt object's [**WdfInterruptEnable**](https://msdn.microsoft.com/library/windows/hardware/ff547354) and [**WdfInterruptDisable**](https://msdn.microsoft.com/library/windows/hardware/ff547351) methods, which call the driver's [*EvtInterruptEnable*](https://msdn.microsoft.com/library/windows/hardware/ff541730) and [*EvtInterruptDisable*](https://msdn.microsoft.com/library/windows/hardware/ff541714) event callback functions. However, most drivers should just allow the framework to call the *EvtInterruptEnable* and *EvtInterruptDisable* callback functions at the proper times.
 
- 
+ 
 
- 
+ 
 
 
 

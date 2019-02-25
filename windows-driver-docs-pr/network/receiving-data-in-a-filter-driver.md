@@ -4,17 +4,14 @@ description: Receiving Data in a Filter Driver
 ms.assetid: 4f6d44e9-c351-452d-aadf-505e6bb30fc2
 keywords:
 - receiving data WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving Data in a Filter Driver
 
 
-## <a href="" id="ddk-receiving-data-in-a-filter-driver-ng"></a>
+
 
 
 Filter drivers can initiate receive indications or filter receive indications from underlying drivers. When a miniport driver calls the [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) function, NDIS submits the specified [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure to the lowest overlying filter module in the driver stack.
@@ -33,7 +30,7 @@ If a filter driver does not set the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in 
 
 **Note**  A filter driver should keep track of receive indications that it initiates and make sure that it does not call the [**NdisFReturnNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff562613) function when the receive operation is complete.
 
- 
+ 
 
 ### Filtering Receive Indications
 
@@ -49,7 +46,7 @@ If the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in the *ReceiveFlags* parameter 
 
 **Note**  If the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag is set, the filter driver must retain the original set of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures in the linked list. For example, when this flag is set, the driver might process the structures and indicate them up the stack one at a time but before the function returns, it must restore the original linked list.
 
- 
+ 
 
 Filter drivers can perform filter operations on received data before indicating the data to overlying drivers. For each buffer submitted to its [*FilterReceiveNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549960) function a filter driver can do the following:
 
@@ -59,7 +56,7 @@ Filter drivers can perform filter operations on received data before indicating 
 
     **Note**  A filter driver can pass on a buffer with [**NdisFIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561820) even if NDIS sets the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in the *ReceiveFlags* parameter of [*FilterReceiveNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549960). In this case, the filter driver must not return from *FilterReceiveNetBufferLists* until it regains ownership of the buffer.
 
-     
+     
 
 -   Discard the buffer. If NDIS cleared the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in the *ReceiveFlags* parameter of [*FilterReceiveNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549960), call the [**NdisFReturnNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff562613) function to discard the buffer. If NDIS set the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in the *ReceiveFlags* parameter of *FilterReceiveNetBufferLists*, take no action and return from *FilterReceiveNetBufferLists* to discard the buffer.
 
@@ -73,9 +70,9 @@ If an overlying driver retained ownership of the buffer, NDIS calls the [*Filter
 
 When the lowest layer filter module indicates that it is done with a buffer, NDIS returns the buffer to the miniport driver. If NDIS cleared the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in the *ReceiveFlags* parameter of [*FilterReceiveNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549960), the filter driver calls [**NdisFReturnNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff562613) to return the buffer. If NDIS set the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in the *ReceiveFlags* parameter of *FilterReceiveNetBufferLists*, returning from *FilterReceiveNetBufferLists* returns the buffer.
 
- 
+ 
 
- 
+ 
 
 
 

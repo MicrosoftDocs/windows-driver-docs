@@ -1,13 +1,9 @@
 ---
 title: Slicer settings
-author: windows-driver-content
 description: The configuration file XML contains a number of settings that need to be adjusted for a specific 3D Printer device to control the print capabilities exposed to the 3D Print Dialog in Windows.
 ms.assetid: 9203AABB-48D9-47A6-A2B1-7A878BF82FD1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Slicer settings
@@ -62,7 +58,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 <td><p>psk3d:Job3DMaterials\ </p>
 <p>psk3ds:extruders\  </p></td>
 <td><p>Optional</p></td>
-<td><p>The number of extruders in the printer. This setting controls how many of the subsequent psk3d:Material&lt;Mat> sections in the XML will be sent to the print dialog as Print Capabilities. If not specified, the drivers will assume a single extruder printer.</p></td>
+<td><p>The number of extruders in the printer. This setting controls how many of the subsequent psk3d:Material&lt;Mat&gt; sections in the XML will be sent to the print dialog as Print Capabilities. If not specified, the drivers will assume a single extruder printer.</p></td>
 </tr>
 
 <tr>
@@ -86,7 +82,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 <p>psk3d:Material&lt;Material&gt;\ </p>
 <p>psk:MaterialType</p></td>
 <td><p>Reserved</p></td>
-<td><p>Type of material, as defined in Print Schema Keywords for 3D Printing (for example, "psk3d:PLA"). This setting is being deprecated in favor of generic materials specified by name and color.</p></td>
+<td><p>Type of material, as defined in Print Schema Keywords for 3D Printing (for example, &quot;psk3d:PLA&quot;). This setting is being deprecated in favor of generic materials specified by name and color.</p></td>
 </tr>
 
 <tr>
@@ -160,7 +156,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 <tr>
 <td><p>psk3dx:customStatus</p></td>
 <td><p>Optional</p></td>
-<td><p>A string representing the initial print job status, typically the slicing phase. If missing, the job status will be set to "Printing". Typically this value should be set to "Slicing" when the slicing happens in the render filter, for example, when using the Microsoft Slicer.</p></td>
+<td><p>A string representing the initial print job status, typically the slicing phase. If missing, the job status will be set to &quot;Printing&quot;. Typically this value should be set to &quot;Slicing&quot; when the slicing happens in the render filter, for example, when using the Microsoft Slicer.</p></td>
 </tr>
 
 <tr>
@@ -249,7 +245,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 <p>psk3dx:postcommands\ </p>
 <p>psk3dx:command</p></td>
 <td><p>Yes</p></td>
-<td><p>The set of G-Code commands to send at the end of each job, generally to bring the 3D printer to a safe state, like cooling down the extruder and moving the part away from the extruder/hot end to where it's easy to remove from the bed. Each device has different required post-commands.</p>
+<td><p>The set of G-Code commands to send at the end of each job, generally to bring the 3D printer to a safe state, like cooling down the extruder and moving the part away from the extruder/hot end to where it&#39;s easy to remove from the bed. Each device has different required post-commands.</p>
 <p>This sequence is also executed when a job is cancelled.</p></td>
 </tr>
 
@@ -589,24 +585,24 @@ The configuration file XML contains a number of settings that need to be adjuste
 
 <tr>
 <td><p>$MaterialSetup<n>$</p></td>
-<td><p>The material setup section <psk3dx:SetupCommands> in materials. For example $MaterialSetup3$ represents the 3rd material in the list, typically the 3rd extruder.</p></td>
+<td><p>The material setup section &lt;psk3dx:SetupCommands&gt; in materials. For example $MaterialSetup3$ represents the 3rd material in the list, typically the 3rd extruder.</p></td>
 </tr>
 
 <tr>
 <td><p>$rampup$</p></td>
 <td><p>This is a variable that can be 0..255 and scales with Z axis and is controlled by the &lt;psk3dx:rampuptarget&gt; in the slicer quality settings.</p>
-<p>For example a command "M106 S$rampup$" turns on the fan gradually as the Z axis increases. If the &lt;psk3dx:rampuptarget&gt; is set to 500 microns, the value of the variable would be  0 on the first layer, and 255 once the layer is at 500 microns or above.</p>
+<p>For example a command &quot;M106 S$rampup$&quot; turns on the fan gradually as the Z axis increases. If the &lt;psk3dx:rampuptarget&gt; is set to 500 microns, the value of the variable would be  0 on the first layer, and 255 once the layer is at 500 microns or above.</p>
 <p>This variable is intended to support for better print adhesion on heated print beds but it can be used in any command.</p></td>
 </tr>
 
 <tr>
 <td><p>;?ack=&lt;pattern&gt;</p></td>
-<td><p>This setting instructs the driver to change the command ACK pattern (the printer response) from the default 'ok' to something temporary, for example ";?ack=Writing to file" would tell the driver to wait for a confirmation the printer is ready to write to the internal storage.</p></td>
+<td><p>This setting instructs the driver to change the command ACK pattern (the printer response) from the default &#39;ok&#39; to something temporary, for example &quot;;?ack=Writing to file&quot; would tell the driver to wait for a confirmation the printer is ready to write to the internal storage.</p></td>
 </tr>
 
 <tr>
 <td><p>;?err=&lt;pattern&gt;</p></td>
-<td><p>This setting instructs the driver to look for an additional error pattern in the printer response, in addition to the default 'error'. For example “;?err=open failed” would tell the driver to fail if such a response is received (in this example the hardware would return this response if the internal SD card storage was not initialized or full).</p></td>
+<td><p>This setting instructs the driver to look for an additional error pattern in the printer response, in addition to the default &#39;error&#39;. For example “;?err=open failed” would tell the driver to fail if such a response is received (in this example the hardware would return this response if the internal SD card storage was not initialized or full).</p></td>
 </tr>
 
 <tr>
@@ -618,7 +614,5 @@ The configuration file XML contains a number of settings that need to be adjuste
 </table>
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Slicer%20settings%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -9,17 +9,14 @@ keywords:
 - installing devices WDK , registry
 - Device setup WDK device installations , registry
 - driver registry RunOnce key WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # RunOnce Registry Key
 
 
-## <a href="" id="ddk-runonce-registry-entries-dg"></a>
+
 
 
 All versions of Windows support a registry key, **RunOnce**, which can be used to specify commands that the system will execute one time and then delete.
@@ -38,11 +35,11 @@ The registry root (*reg-root*) and subkey values for the **RunOnce** registry ke
 
 **HKLM, "Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce"**
 
-The *value-entry-name* string is omitted from a **RunOnce** registry entry. The type of the entry, which is indicated by the *Flags* value, must be either REG\_SZ (*Flags* value of 0x00000000) or REG\_EXPAND\_SZ (*Flags* value of 0x00010000). For an entry of type REG\_SZ (the default), the *Flags* value can be omitted.
+The *value-entry-name* string is omitted from a **RunOnce** registry entry. The type of the entry, which is indicated by the *Flags* value, must be either [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) (*Flags* value of 0x00000000) or [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) (*Flags* value of 0x00010000). For an entry of type [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) (the default), the *Flags* value can be omitted.
 
 The *value* parameter in a **RunOnce** key specifies the command to be executed. This parameter is a quoted string that has the following format:
 
-```
+```cpp
 Rundll32[.exe] DllName,EntryPoint[Arguments]
 ```
 
@@ -64,7 +61,7 @@ Consider the following guidelines when you create a *value* string entry:
 
 The following code example shows the *add-registry-section* entry that stores a command and its arguments under the **RunOnce** key:
 
-```
+```cpp
 ;; WDMAud swenum install
 
 HKLM,%RunOnce%,"WDM_WDMAUD",,\
@@ -89,13 +86,13 @@ The following rules apply when you use **RunOnce** registry keys for device inst
 
 -   Starting with Windows Vista, the system will not execute the commands specified by the **RunOnce** keys if a user without administrator privileges is logged on to the system. This could lead to incomplete or corrupted installations following a system restart.
 
-    Before the [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) creates the **RunOnce** entries, it informs the current user that a user who has administrator privileges must log on after a system restart.
+    Before the *device installation application* creates the **RunOnce** entries, it informs the current user that a user who has administrator privileges must log on after a system restart.
 
-    For more information, see [Developing Applications that Run at Logon on Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=133224).
+    For more information, see [Developing Applications that Run at Logon on Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=133224).
 
- 
+ 
 
- 
+ 
 
 
 

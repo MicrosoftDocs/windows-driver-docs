@@ -3,11 +3,8 @@ title: DumpChk
 description: DumpChk
 ms.assetid: f7431207-562b-451a-843e-1c2be038e306
 keywords: ["DumpChk"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2017
+ms.localizationpriority: medium
 ---
 
 # DumpChk
@@ -23,7 +20,7 @@ DumpChk.exe is included in [Debugging Tools for Windows](index.md).
 ## <span id="DumpChk_command-line_options"></span><span id="dumpchk_command-line_options"></span><span id="DUMPCHK_COMMAND-LINE_OPTIONS"></span>DumpChk command-line options
 
 
-```
+```dbgcmd
 DumpChk [-y SymbolPath] DumpFile
 ```
 
@@ -40,7 +37,7 @@ DumpChk [-y SymbolPath] DumpFile
 
 Here is an example in which the dump file is corrupt. The error shown at the end, `DebugClient cannot open DumpFile`, indicates that some kind of corruption must have occurred:
 
-```
+```console
 C:\Debuggers> dumpchk c:\mydir\dumpfile2.dmp 
 
 Loading dump file c:\mydir\dumpfile2.dmp
@@ -60,13 +57,13 @@ Because this display does not end with the words `Finished dump check`, the dump
 
 Note that other errors may be listed, some of which are actually benign. For example, the following error message does not represent a problem:
 
-```
+```dbgcmd
 error 3 InitTypeRead( nt!_PEB at 7ffd5000) 
 ```
 
 Here is an example of DumpChk run on a healthy user-mode minidump. The display begins with an overall summary of the dump file, and then gives detailed information about what data is contained in the dump file:
 
-```
+```console
 C:\Debuggers> dumpchk c:\mydir\dumpfile1.dmp 
 
 Loading dump file c:\mydir\dumpfile1.dmp
@@ -206,11 +203,10 @@ Because this display ends with the words `Finished dump check`, the dump file is
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20DumpChk%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

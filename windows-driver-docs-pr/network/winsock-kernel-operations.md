@@ -5,11 +5,8 @@ ms.assetid: 5e336c62-8808-418e-8bd4-d54c4c747854
 keywords:
 - Winsock Kernel WDK networking , operations
 - WSK WDK networking , operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Winsock Kernel Operations
@@ -31,12 +28,7 @@ This section discusses Winsock Kernel (WSK) operations and includes the followin
 -   [Registering an Extension Interface](registering-an-extension-interface.md)
 -   [Unregistering a Winsock Kernel Application](unregistering-a-winsock-kernel-application.md)
 -   [Resolving Host Names and IP Addresses](resolving-host-names-and-ip-addresses.md)
-
- 
-
- 
-
-
-
-
-
+-   [WSK Client Control Operations](wsk-client-control-operations.md)
+-   [WSK Socket IOCTL Operations](wsk-socket-ioctl-operations.md)
+-   [WSK Socket Options](wsk-socket-options.md)
+-   [WSK data types](wsk-data-types.md)

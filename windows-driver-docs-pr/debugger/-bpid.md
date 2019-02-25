@@ -3,17 +3,14 @@ title: bpid
 description: The bpid extension requests that a process on the target computer break into the debugger or requests that a user-mode debugger be attached to a process on the target computer.
 ms.assetid: 47091651-3b39-4e3d-86cf-a8e95779a025
 keywords: ["bpid Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - bpid
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !bpid
@@ -21,7 +18,7 @@ api_type:
 
 The **!bpid** extension requests that a process on the target computer break into the debugger or requests that a user-mode debugger be attached to a process on the target computer.
 
-```
+```dbgcmd
     !bpid [Options] PID 
 ```
 
@@ -54,7 +51,7 @@ The valid values for *Option* appear in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______PID______"></span><span id="_______pid______"></span> *PID*   
 Specifies the process ID of the desired process on the target computer. If you are using this to control a user-mode debugger on the target computer, *PID* should be the process ID of the target application, not of the user-mode debugger. (Because process IDs are usually listed in decimal format, you might need to prefix this with **0n** or convert it to hexadecimal format.)
@@ -78,7 +75,7 @@ Specifies the process ID of the desired process on the target computer. If you a
 </tbody>
 </table>
 
- 
+ 
 
 This extension command is supported on x86-based, x64-based, and Itanium-based target computers.
 
@@ -101,11 +98,10 @@ Note that there are ways in which this extension can fail to execute:
 
 -   No access to ntsd.exe. If ntsd.exe is not found in a commonly known path, !bpid will fail to set an appropriate PID. Note that ntsd.exe is not included by default with Windows Vista.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!bpid%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

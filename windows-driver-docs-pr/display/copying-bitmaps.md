@@ -13,11 +13,8 @@ keywords:
 - DrvStretchBlt
 - DrvTransparentBlt
 - stretching WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Copying Bitmaps
@@ -38,7 +35,7 @@ ms.technology: windows-devices
 
 There is also a display-driver-specific BitBlt function named [**DrvSaveScreenBits**](https://msdn.microsoft.com/library/windows/hardware/ff556278).
 
-If the surface being drawn on is a [*device-managed surface*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface) or bitmap, the driver must support a minimum level of bit block transfer functions. If the surface is a GDI-managed standard format bitmap, GDI handles only those operations not hooked by the driver.
+If the surface being drawn on is a *device-managed surface* or bitmap, the driver must support a minimum level of bit block transfer functions. If the surface is a GDI-managed standard format bitmap, GDI handles only those operations not hooked by the driver.
 
 ### <span id="drvbitblt"></span><span id="DRVBITBLT"></span> DrvBitBlt
 
@@ -48,7 +45,7 @@ The [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180
 
 Optionally, a block transfer handled by [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180) can be masked and involve color index translation. A translation vector assists in color index translation for palettes. The transfer might need to be arbitrarily clipped by a display driver, using a series of clip rectangles. The required region and information are furnished by GDI.
 
-Implementing [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180) represents a significant portion of the work involved in writing a driver for a raster display driver that does not have a standard-format [*frame buffer*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-frame-buffer). The Microsoft VGA driver that is furnished with the Windows Driver Kit (WDK) provides sample code that supports the basic function for a planar device. Implementing **DrvBitBlt** for other devices may be less complex.
+Implementing **DrvBitBlt**. The Microsoft VGA driver that is furnished with the Windows Driver Kit (WDK) provides sample code that supports the basic function for a planar device. Implementing **DrvBitBlt** for other devices may be less complex.
 
 ### <span id="drvcopybits"></span><span id="DRVCOPYBITS"></span> DrvCopyBits
 
@@ -60,13 +57,13 @@ If a driver supports a device-managed surface or bitmap, the driver must impleme
 
 -   Perform a block transfer to and from a bitmap, in the device's preferred format, and to the device surface.
 
--   Perform the transfer with the SRCCOPY (0xCCCC) [*raster operation (ROP)*](https://msdn.microsoft.com/library/windows/hardware/ff556331#wdkgloss-raster-operation--rop-).
+-   Perform the transfer with the SRCCOPY (0xCCCC) *raster operation (ROP)*.
 
 -   Allow arbitrary clipping.
 
 The driver can use the GDI [**CLIPOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff539417) enumeration services to reduce the clipping to a series of clip rectangles. GDI passes down a translation vector, the [**XLATEOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff570634) structure, to assist in color index translation between source and destination surfaces.
 
-If the surface of a device is organized as a standard-format [*device-independent bitmap (DIB)*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-), the driver can support only simple transfers. If a call comes in with a complicated ROP, the driver can punt the block transfer request back to GDI with a call to the [**EngCopyBits**](https://msdn.microsoft.com/library/windows/hardware/ff564196) function. This allows GDI to break up the call into simpler functions that the driver can perform.
+If the surface of a device is organized as a standard-format *device-independent bitmap (DIB)*, the driver can support only simple transfers. If a call comes in with a complicated ROP, the driver can punt the block transfer request back to GDI with a call to the [**EngCopyBits**](https://msdn.microsoft.com/library/windows/hardware/ff564196) function. This allows GDI to break up the call into simpler functions that the driver can perform.
 
 [**DrvCopyBits**](https://msdn.microsoft.com/library/windows/hardware/ff556182) also is called with RLE bitmaps (see the Microsoft Windows SDK documentation) and **device-dependent bitmaps (DDBs)**. The bitmaps are provided to this function as a result of application program calls to several Win32 GDI routines. The optional DDB is supported only by a few specialized drivers.
 
@@ -102,11 +99,10 @@ When the blt operation takes place, these four regions are not copied, which cau
 
 This is illustrated in the right-most image: the portions of the letter 'M' in the four corners and the center were overwritten with the colors in the source bitmap. The portions of the letter 'M' under the four regions whose color is the same as that in *iTransColor* remain visible.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Copying%20Bitmaps%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

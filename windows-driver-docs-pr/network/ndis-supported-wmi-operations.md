@@ -10,17 +10,14 @@ keywords:
 - miniport adapters WDK networking , enumerating
 - adapters WDK networking , enumerating
 - QU
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS-Supported WMI Operations
 
 
-## <a href="" id="ddk-ndis-supported-wmi-operations-ng"></a>
+
 
 
 NDIS supports the following WMI operations:
@@ -45,9 +42,9 @@ NDIS supports the following WMI operations:
 
     Through NDIS, a WMI client can run a method that is associated with a data block, which corresponds to a single OID. WMI clients provide the information that NDIS requires to run the method. Method requests can be associated with miniport adapters, NDIS ports, or VCs. NDIS returns the resulting information after the method is successfully run.
 
- 
+ 
 
- 
+ 
 
 
 

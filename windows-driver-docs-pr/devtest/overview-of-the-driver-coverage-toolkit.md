@@ -4,11 +4,8 @@ description: Overview of the Driver Coverage Toolkit
 ms.assetid: eead0c9a-fc26-4777-b19a-e97b898e28a2
 keywords:
 - Driver Coverage Toolkit WDK , about the Driver Coverage Toolkit
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of the Driver Coverage Toolkit
@@ -16,7 +13,7 @@ ms.technology: windows-devices
 
 **Note**  The Driver Coverage Toolkit is no longer needed in Windows 10 and the installer is no longer included in the WDK. To perform tasks described here in Windows 10, instead use [Driver Verifier](driver-verifier.md) and [IRP Logging](irp-logging.md).
 
- 
+ 
 
 The Driver Coverage toolkit monitor and report on the I/O request packets (IRPs) that enter or leave the driver stack for one or more specified devices. The coverage data is collected by the [Driver Coverage filter driver](driver-coverage-filter-driver.md) for these devices. The Driver Coverage tool is used to enable or disable IRP coverage on specified devices, as well as produce reports from the coverage data.
 
@@ -266,11 +263,10 @@ Getting coverage data
 |--------------------------------------------------------|
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Overview%20of%20the%20Driver%20Coverage%20Toolkit%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

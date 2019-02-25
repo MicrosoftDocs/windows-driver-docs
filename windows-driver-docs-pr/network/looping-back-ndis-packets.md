@@ -2,17 +2,14 @@
 title: Looping Back NDIS Packets
 description: Looping Back NDIS Packets
 ms.assetid: 85967cd6-6945-46d1-8872-7b000689b6db
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Looping Back NDIS Packets
 
 
-## <a href="" id="ddk-looping-back-ndis-packets-nr"></a>
+
 
 
 If the NDIS\_NBL\_FLAGS\_IS\_LOOPBACK\_PACKET flag in the **NblFlags** member of the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure is set, the packet is a loopback packet. Protocol drivers and filter drivers can check this flag to determine if a packet is a loopback packet.
@@ -55,9 +52,9 @@ The following figure shows the loopback algorithm logic flow.
 
 ![flowchart illustrating the loopback algorithm logic flow](images/loopback.png)
 
- 
+ 
 
- 
+ 
 
 
 

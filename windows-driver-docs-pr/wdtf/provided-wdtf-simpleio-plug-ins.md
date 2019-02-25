@@ -1,13 +1,9 @@
 ---
 title: Provided WDTF Simple I/O plug-ins
-author: windows-driver-content
 description: Simple I/O plug-ins are extensions to the Windows Driver Test Framework (WDTF) that implement generic device-specific I/O functionality.
 ms.assetid: 948E8CF5-24A1-4A7C-BD18-374F989AD053
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Provided WDTF Simple I/O plug-ins
@@ -15,14 +11,14 @@ ms.technology: windows-devices
 
 Simple I/O plug-ins are extensions to the Windows Driver Test Framework (WDTF) that implement generic device-specific I/O functionality. If a plug-in exists for the type of device being tested, the [Device Fundamental tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests) use the WDTF Simple I/O interfaces to test I/O.
 
-The following table shows the device types that have Simple I/O plug-ins. The table also indicates if there are specific requirements for testing the device. These are the same requirements you need to follow when you use the [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893).
+The following table shows the device types that have Simple I/O plug-ins. The table also indicates if there are specific requirements for testing the device. These are the same requirements you need to follow when you use the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893).
 
 If your device type is not listed, you can create one, see [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](to-customize-i-o-for-your-device-using-the-wdtf-simple-i-o-action-plug-in.md)
 
-## <a href="" id="-provided-io-plugin-list"></a>Provided Simple I/O plugins and device requirements for testing and tips for troubleshooting
+## Provided Simple I/O plugins and device requirements for testing and tips for troubleshooting
 
 
-The following section lists the device types that have Simple I/O plug-ins. The section also indicates if there are specific requirements for testing the device. These are the same requirements you need to follow when you use the [Windows Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=254893). The section also shows tips you can use to troubleshoot and triage test failures.
+The following section lists the device types that have Simple I/O plug-ins. The section also indicates if there are specific requirements for testing the device. These are the same requirements you need to follow when you use the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893). The section also shows tips you can use to troubleshoot and triage test failures.
 
 -   [Audio devices](#-audio)
 -   [Bluetooth devices](#-bluetooth)
@@ -44,10 +40,9 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 ### <a href="" id="-audio"></a>
 
-| Audio    |
-|----------|
-
- 
+| Audio |
+|-------|
+|       |
 
 **Requirements:**
 
@@ -94,10 +89,9 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 ### <a href="" id="-bluetooth"></a>
 
-| Bluetooth    |
-|--------------|
-
- 
+| Bluetooth |
+|-----------|
+|           |
 
 **Requirements:**
 
@@ -111,8 +105,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | CDROM |
 |-------|
-
- 
+|       |
 
 **Requirements:**
 
@@ -134,8 +127,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Disk |
 |------|
-
- 
+|      |
 
 **Requirements:**
 
@@ -149,10 +141,10 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 **Requirements:**
 
+
 | Display Devices |
 |-----------------|
-
- 
+|                 |
 
 -   No special requirements for testing.
 
@@ -168,8 +160,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | GPS devices (and GPS devices in systems) |
 |------------------------------------------|
-
- 
+|                                          |
 
 **Requirements:**
 
@@ -183,8 +174,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | LAN |
 |-----|
-
- 
+|     |
 
 **Requirements:**
 
@@ -210,8 +200,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Mobile Broadband |
 |------------------|
-
- 
+|                  |
 
 **Requirements:**
 
@@ -241,8 +230,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Portable Devices |
 |------------------|
-
- 
+|                  |
 
 **Requirements:**
 
@@ -256,8 +244,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Smart Card Readers |
 |--------------------|
-
- 
+|                    |
 
 **Requirements:**
 
@@ -271,8 +258,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Sensors |
 |---------|
-
- 
+|         |
 
 **Requirements:**
 
@@ -282,8 +268,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Volume |
 |--------|
-
- 
+|        |
 
 **Requirements:**
 
@@ -294,7 +279,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 **Type of I/O plug-in performs:**
 
--   Creates a directory called WDTF\_Volume\_IO and creates a file called SimpleIO.tmp. The I/O is performed by calling [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**WriteFile**](https://msdn.microsoft.com/en-us/library/aa365747) APIs to this file.
+-   Creates a directory called WDTF\_Volume\_IO and creates a file called SimpleIO.tmp. The I/O is performed by calling [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**WriteFile**](https://msdn.microsoft.com/library/aa365747) APIs to this file.
 
 **How to triage test failures:**
 
@@ -306,16 +291,15 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | Webcam |
 |--------|
-
- 
+|        |
 
 **Requirements:**
 
 -   No special requirements for testing.
 
-    **Note**  The Simple I/O plug-in for webcam devices has a dependency on the MFPlat.dll file, which is not available on versions of Windows that do not include Media Player and related technologies, for example Windows 7 N or Windows 7 KN. On these version of Windows, the Media Feature Pack must be installed. You can download the Media Feature Pack from MSDN. For more information, see [KB Article 968211](http://go.microsoft.com/fwlink/p/?linkid=266437).
+    **Note**  The Simple I/O plug-in for webcam devices has a dependency on the MFPlat.dll file, which is not available on versions of Windows that do not include Media Player and related technologies, for example Windows 7 N or Windows 7 KN. On these version of Windows, the Media Feature Pack must be installed. The Media Feature Pack is available for download. For more information, see [KB Article 968211](https://go.microsoft.com/fwlink/p/?linkid=266437).
 
-     
+
 
 **Type of I/O plug-in performs:**
 
@@ -325,27 +309,25 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 | WLAN |
 |------|
-
- 
+|      |
 
 **Requirements:**
 
--   See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](http://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
+-   See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
 
 **Type of I/O plug-in performs:**
 
--   See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](http://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
+-   See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
 
 **How to triage test failures:**
 
--   See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](http://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
+-   See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
 
 ### <a href="" id="-usb-mutt"></a>
 
 | USB Controller and HUB with Mutt |
 |----------------------------------|
-
- 
+|                                  |
 
 **Requirements:**
 
@@ -361,10 +343,10 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 -   Start by examining the messages in the test log files.
 -   Further investigate by enabling Event Tracing for Windows (ETW) on the USB 2.0 and USB 3.0 stacks.
-    -   For USB 2.0, see Microsoft Windows USB Core Team Blog - [ETW in the Windows 7 USB core stack](http://go.microsoft.com/fwlink/p/?linkid=266442)
-    -   For USB 3.0, see the Microsoft Windows USB Core Team Blog - [How to Capture and Read USB ETW Traces in Windows 8]( http://go.microsoft.com/fwlink/p/?linkid=266443)
+    -   For USB 2.0, see Microsoft Windows USB Core Team Blog - [ETW in the Windows 7 USB core stack](https://go.microsoft.com/fwlink/p/?linkid=266442)
+    -   For USB 3.0, see the Microsoft Windows USB Core Team Blog - [How to Capture and Read USB ETW Traces in Windows 8]( https://go.microsoft.com/fwlink/p/?linkid=266443)
 
-## <a href="" id="-devfund-test-req"></a>Device Fundamental tests that have specific device configuration requirements
+## Device Fundamental tests that have specific device configuration requirements
 
 
 Before you run the following [Device Fundamental tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests), the devices on the test computer must be configured according to the requirements described for the specific device types. See the list of [the provided Simple I/O plug-ins and device requirements.](#-provided-io-plugin-list)
@@ -385,7 +367,5 @@ Before you run the following [Device Fundamental tests](https://msdn.microsoft.c
 [How to select and configure the Device Fundamentals tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)  
 [Troubleshooting the Device Fundamentals tests](https://msdn.microsoft.com/windows-drivers/develop/troubleshooting_the_device_fundamental_tests)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdtf\dtf%5D:%20Provided%20WDTF%20Simple%20I/O%20plug-ins%20%20RELEASE:%20%289/13/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

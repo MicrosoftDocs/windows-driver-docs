@@ -2,11 +2,8 @@
 title: Troubleshooting Driver Signing Installation
 description: Installing a release-signed driver is the same as described in Installing, Uninstalling and Loading the Test-Signed Driver Package in Test Signing, except for two additional steps needed when installing using any of the four methods described there.
 ms.assetid: 36624611-1FE6-4B88-B785-44D6A81F61FF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Troubleshooting Driver Signing Installation
@@ -34,7 +31,7 @@ Selecting the check box will not show this dialog box again in the computer if t
 
 **Note**  The system verifies that publisher information is accurate based on the SPC that was used to sign the catalog. If the publisher trust level is unknown—as will be true for Contoso.com—the system displays the dialog box. For the installation to proceed, the user must click Install. For more information on trust and driver installation, see [Code-Signing Best Practices](https://msdn.microsoft.com/library/windows/hardware/dn653556).
 
- 
+ 
 
 An unsigned driver on the other hand will show the following dialog, which allows a user to install an unsigned driver, which may not work in x64 version of Windows.
 
@@ -65,7 +62,7 @@ The first left most column may have a single exclamation mark “!” or multipl
 
 You will see the following single exclamation mark when you install a driver package release signed with a CA vendor provided SPC certificate. These are just warnings to indicate that the cat file has not been verified yet.
 
-```
+```cpp
 !    sig:                Verifying file against specific (valid) catalog failed! (0x800b0109)
 !    sig:                Error 0x800b0109: A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.
      sig:                Success: File is signed in Authenticode(tm) catalog.
@@ -74,7 +71,7 @@ You will see the following single exclamation mark when you install a driver pac
 
 If you now refer to step 10 of driver install and click on the “Install” button, you will see the below log after which in most cases the driver will install and load fine. The Device Manager will not report any errors or a yellow bang for the driver.
 
-```
+```cpp
 !    sto:           Driver package signer is unknown but user trusts the signer.
 ```
 
@@ -82,7 +79,7 @@ Despite getting up to the above point the driver may not be loaded if you also s
 
 The setupapi.dev.log file has also reported the following error:
 
-```
+```cpp
 !!!  dvi:                          Device not started: Device has problem: 0x34: CM_PROB_UNSIGNED_DRIVER.
 ```
 
@@ -94,19 +91,19 @@ Most of the time the log file information is sufficient to resolve the issue. If
 
 The setupapi.dev.log file also helps tracking driver file copy and commit time information in case if it is found that a driver service failed to start as the service binary file copy has not been committed but the OS tries to start the service. But a restart successfully starts the service. See the sequence of operation below in the log file.
 
-```
+```cpp
 >>>  Section start 2014/02/08 14:54:56.463
 ```
 
 Next at a later time:
 
-```
+```cpp
 !    inf:                     Could not start service &#39;toaster&#39;.
 ```
 
 Then we have the file copy operation:
 
-```
+```cpp
 <snip>
 flq:                {FILE_QUEUE_COPY}
      flq:                     CopyStyle      - 0x00000000
@@ -118,7 +115,7 @@ flq:                {FILE_QUEUE_COPY}
 
 The file is committed next. Compare the end time with the start time.
 
-```
+```cpp
 flq:           {_commit_file_queue} 14:54:56.711
 <snip>
      flq:                     {_commit_copyfile}
@@ -145,7 +142,7 @@ If the driver failed to load because it lacked a valid signature, audit failure 
 
 **Note**  The security audit log must be explicitly enabled. For more information, see [Appendix 3: Enable Code Integrity Event Logging and System Auditing](appendix-3--enable-code-integrity-event-logging-and-system-auditing.md).
 
- 
+ 
 
 To examine the security log:
 
@@ -196,9 +193,9 @@ To enable the Code Integrity verbose view:
 
 A few additional known driver signing issues are described in [Appendix 4: Driver Signing Issues](appendix-4--driver-signing-issues.md).
 
- 
+ 
 
- 
+ 
 
 
 

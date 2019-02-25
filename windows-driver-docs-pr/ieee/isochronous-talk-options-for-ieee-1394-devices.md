@@ -1,6 +1,5 @@
 ---
 title: Isochronous Talk Options for IEEE 1394 Devices
-author: windows-driver-content
 description: Isochronous Talk Options for IEEE 1394 Devices
 ms.assetid: b3df5dd5-9903-48b4-9cb2-17b8d3a08f8f
 keywords:
@@ -11,17 +10,14 @@ keywords:
 - variable-size data packets WDK IEEE 1394 bus
 - header elements WDK IEEE 1394 bus
 - buffers WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Isochronous Talk Options for IEEE 1394 Devices
 
 
-## <a href="" id="ddk-isochronous-talk-options-for-ieee-1394-devices-kg"></a>
+
 
 
 There are three ways of organizing output data in isochronous talk operations: packets with no headers, fixed-sized data packets with headers, and variable-size data packets with headers.
@@ -32,7 +28,7 @@ By default, the host controller sends out the data in the attached buffers, indi
 
 For example, the driver for a device that expects to receive its data in 512 byte packets would include the following in its declaration of the buffer's ISOCH\_DESCRIPTOR:
 
-```
+```cpp
 /* elsewhere, the buffer has declared: */
 /*        ISOCH_DESCRIPTOR isoch_descriptor; */
 isoch_descriptor->nMaxBytesPerFrame = 512;
@@ -46,7 +42,7 @@ With fixed-size headers, the driver specifies the header size in the **nMaxBytes
 
 For example, suppose the device expects each 512 byte data buffer to be preceded by an 8 byte header. The driver could declare a pair of ISOCH\_DESCRIPTOR structures as follows:
 
-```
+```cpp
 /* elsewhere, the buffer has declared: */
 /*        ISOCH_DESCRIPTOR isoch_descriptor_1, isoch_descriptor_2; */
 /*        #define NUM_HEADERS to be the number of headers included in  */
@@ -68,7 +64,7 @@ Not all host controllers support the DESCRIPTOR\_HEADER\_SCATTER\_GATHER flag. T
 
 This case is similar to the fixed-size packet case. As with the fixed-size case, the driver must set the DESCRIPTOR\_HEADER\_SCATTER\_GATHER flag in the header buffer's ISOCH\_DESCRIPTOR structure as follows:
 
-```
+```cpp
 isoch_descriptor_1->fulFlags = DESCRIPTOR_HEADER_SCATTER_GATHER;
 ```
 
@@ -78,7 +74,7 @@ Also, in the case of variable-size data packets, the driver must assemble a buff
 
 Header elements are defined by the following structure found in *1394.h*:
 
-```
+```cpp
 typedef struct _IEEE1394_SCATTER_GATHER_HEADER {
   USHORT  HeaderLength;
   USHORT  DataLength;
@@ -88,7 +84,7 @@ typedef struct _IEEE1394_SCATTER_GATHER_HEADER {
 
 The header element indicates both the length of the header and the length of the data. Thus, with variable-size data packets, the **nMaxSizeBytesPerFrame** member of the *data* descriptor no longer indicates the size of an individual data packet. Each data packet can have a different size that is indicated in its corresponding header element. The **nMaxSizeBytesPerFrame** member of the *header* descriptor is defined as follows.
 
-```
+```cpp
 IsochDescriptor->nMaxBytesPerFrame = MAX_HEADER_DATA_SIZE+FIELD_OFFSET(HeaderElement,HeaderData)
 ```
 
@@ -108,13 +104,13 @@ Note that the **u.IsochAllocateResources.nMaxBufferSize** member of [**IRB**](ht
 
 Drivers can now transmit header-only data packets by simply setting the **DataLength** member of a header element to zero:
 
-```
+```cpp
 HeaderElement->DataLength = 0
 ```
 
 The total length of the header descriptor buffer is indicated in the usual way by means of the **ulLength** member of the descriptor. It must be an integer multiple of the number of header scatter/gather elements:
 
-```
+```cpp
 IsochDescriptor->ulLength = IsochDescriptor->nMaxBytesPerFrame * NUMBER_OF_PACKETS;
 ```
 
@@ -132,7 +128,7 @@ If, for example, the driver assembles a header descriptor with 12-byte headers a
 
 If, on the other hand, the driver assembles a header descriptor with 8-byte headers and 4-byte header elements, then each data packet will have 12 bytes of prepended data. Because a 4,096 byte page is not an integer multiple of 12, the header descriptor must be under 4,096 bytes in size to prevent a header from straddling a page boundary. However, the size of the header descriptor buffer can be extended up to two pages by adjusting the base address of the buffer as illustrated in the pseudocode that follows.
 
-```
+```cpp
 // First find the number of headers (together with header elements)
 // that will fit in a page. Use a floor function that rounds down to 
 // the nearest integer
@@ -148,11 +144,10 @@ BufferAddress += r;
 isochDescriptor->mdl = IoAllocateMdl(BufferAddress, ... and so on.)
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

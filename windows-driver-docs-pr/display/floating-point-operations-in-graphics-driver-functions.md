@@ -8,11 +8,8 @@ keywords:
 - drawing WDK GDI , floating-point operations
 - floating-point operations WDK GDI
 - FPU WDK GDI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Floating-Point Operations in Graphics Driver Functions
@@ -25,7 +22,7 @@ If a graphics driver function contains code that uses the floating-point unit (F
 
 If an FPU is available, it will be used by any code that assigns a value to a floating-point variable or performs calculations that involve floating-point numbers. For example, each of the following lines of code uses the FPU.
 
-```
+```cpp
 double myDouble = 5;
 int myInt = 5 * 4.3;
 int myInt = 50 * cos(2);
@@ -33,7 +30,7 @@ int myInt = 50 * cos(2);
 
 Suppose you are writing a [**DrvAlphaBlend**](https://msdn.microsoft.com/library/windows/hardware/ff556176) function that uses the FPU. The following example demonstrates how you should save and restore the floating-point state.
 
-```
+```cpp
 #define DRIVER_TAG // Put your driver tag here, for example &#39;zyxD&#39;
 
 BOOL DrvAlphaBlend(...)
@@ -81,11 +78,10 @@ Most DirectDraw and Direct3D callback functions that perform floating-point oper
 
 For information about floating-point services provided by GDI, see [GDI Floating-Point Services](gdi-floating-point-services.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Floating-Point%20Operations%20in%20Graphics%20Driver%20Functions%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

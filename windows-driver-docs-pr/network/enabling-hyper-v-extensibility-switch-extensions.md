@@ -2,11 +2,8 @@
 title: Enabling Hyper-V Extensible Switch Extensions
 description: Enabling Hyper-V Extensible Switch Extensions
 ms.assetid: 13FD68CB-8F50-4BE3-8822-03464D8C118C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enabling Hyper-V Extensible Switch Extensions
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 When Hyper-V extensible switch extensions are installed, they are bound to each instance of an extensible switch. However, the extensions are disabled by default and must be explicitly enabled on each extensible switch instance.
 
-The [Enable-VMSwitchExtension](http://technet.microsoft.com/library/hh848541.aspx) PowerShell cmdlet enables an extension on a specific instance of an extensible switch. This cmdlet uses the following syntax:
+The [Enable-VMSwitchExtension](https://technet.microsoft.com/library/hh848541.aspx) PowerShell cmdlet enables an extension on a specific instance of an extensible switch. This cmdlet uses the following syntax:
 
 ``` syntax
 Enable-VMSwitchExtension [-Name] <string[]> [-ComputerName <string[]>] [<CommonParameters>]
@@ -43,20 +40,20 @@ Enabled       : True
 
 **Note**  The Windows Filtering Platform (WFP) in-box filtering extension (Wfplwfs.sys ) is enabled by default on each extensible switch instance.
 
- 
+ 
 
 ## Related topics
 
 
-[Enable-VMSwitchExtension](http://technet.microsoft.com/library/hh848541.aspx)
+[Enable-VMSwitchExtension](https://technet.microsoft.com/library/hh848541.aspx)
 
-[Get-VMSwitchExtension](http://technet.microsoft.com/library/hh848603.aspx)
+[Get-VMSwitchExtension](https://technet.microsoft.com/library/hh848603.aspx)
 
 [**Msvm\_EthernetSwitchExtension**](https://msdn.microsoft.com/library/hh850139)
 
- 
+ 
 
- 
+ 
 
 
 

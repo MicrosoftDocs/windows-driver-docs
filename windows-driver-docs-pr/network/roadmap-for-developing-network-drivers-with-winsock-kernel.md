@@ -2,11 +2,8 @@
 title: Roadmap for Developing Network Drivers with Winsock Kernel
 description: Roadmap for Developing Network Drivers with Winsock Kernel
 ms.assetid: f94952c3-02b1-4bd2-bd73-e6d6d42a06fb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Roadmap for Developing Network Drivers with Winsock Kernel
@@ -56,7 +53,7 @@ To create a networking driver package that uses the kernel-mode socket programmi
 
     Building a driver differs from building a user-mode application. For information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) testing, see [Building, Debugging, and Testing Drivers](https://msdn.microsoft.com/windows-drivers/develop/visual_studio_driver_development_environment). For information about tools for building, testing, verifying, and debugging, see [Driver Development Tools](https://msdn.microsoft.com/library/windows/hardware/ff545440).
 
--   **Step 7:** Review the [Winsock Kernel (WSK TCP Echo Server) driver sample](http://go.microsoft.com/fwlink/p/?LinkId=617935) in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+-   **Step 7:** Review the [Winsock Kernel (WSK TCP Echo Server) driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617935) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
 -   **Step 8:** Develop, build, test, and debug your driver.
 
@@ -72,9 +69,9 @@ To create a networking driver package that uses the kernel-mode socket programmi
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
- 
+ 
 
- 
+ 
 
 
 

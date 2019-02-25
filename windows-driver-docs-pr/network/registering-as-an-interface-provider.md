@@ -7,17 +7,14 @@ keywords:
 - network interfaces WDK , interface providers
 - interface providers WDk network interface
 - registering interface providers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering as an Interface Provider
 
 
-## <a href="" id="ddk-registering-as-an-interface-provider-ng"></a>
+
 
 
 An NDIS interface provider is a software component that provides and manages information for NDIS network interfaces. For example, protocol drivers, MUX intermediate drivers, and NDIS are interface providers. (NDIS provides a proxy interface provider for miniport drivers and filter drivers. However, miniport drivers and filter drivers can also be interface providers.) Each interface provider calls the [**NdisIfRegisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff562716) function to register as a network interface provider.
@@ -32,9 +29,9 @@ For more information about interface provider query and set handlers, see [Handl
 
 NDIS drivers can call the [**NdisIfDeregisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff562703) function to deregister as a network interface provider. For example, NDIS drivers should deregister as a interface providers when they are unloaded. An interface provider must ensure that it does not have any interfaces registered before it calls **NdisIfDeregisterProvider**. The provider must not use the provider handle that it passed at the *NdisProviderHandle* parameter of **NdisIfDeregisterProvider** after it calls **NdisIfDeregisterProvider**.
 
- 
+ 
 
- 
+ 
 
 
 

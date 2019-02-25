@@ -10,11 +10,8 @@ api_name:
 - INF DelReg Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DelReg Directive
@@ -22,24 +19,27 @@ ms.technology: windows-devices
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **DelReg** directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
 
-```
+```ini
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
 [ClassInstall32.ntx86] | 
 [ClassInstall32.ntia64] |  (Windows XP and later versions of Windows)
 [ClassInstall32.ntamd64]  (Windows XP and later versions of Windows)
+[ClassInstall32.ntarm]  (Windows 8 and later versions of Windows)
+[ClassInstall32.ntarm64]  (Windows 10 and later versions of Windows)
+
  
 DelReg=del-registry-section[,del-registry-section]...
 ```
 
 Each *del-registry-section* referenced by a **DelReg** directive has the following form:
 
-```
+```ini
 [del-registry-section]
 reg-root-string,subkey[,value-entry-name][,flags][,value]
 reg-root-string,subkey[,value-entry-name][,flags][,value]
@@ -55,36 +55,36 @@ A *del-registry-section* can have any number of entries, each on a separate line
 Identifies the root of the registry tree for other values supplied in this entry. The value can be one of the following:
 
 <a href="" id="hkcr"></a>**HKCR**  
-Abbreviation for **HKEY\_CLASSES\_ROOT**.
+Abbreviation for **HKEY_CLASSES_ROOT**.
 
 <a href="" id="hkcu"></a>**HKCU**  
-Abbreviation for **HKEY\_CURRENT\_USER**.
+Abbreviation for **HKEY_CURRENT_USER**.
 
 <a href="" id="hklm"></a>**HKLM**  
-Abbreviation for **HKEY\_LOCAL\_MACHINE**.
+Abbreviation for **HKEY_LOCAL_MACHINE**.
 
 <a href="" id="hku"></a>**HKU**  
-Abbreviation for **HKEY\_USERS**.
+Abbreviation for **HKEY_USERS**.
 
 <a href="" id="hkr"></a>**HKR**  
 Relative root, in which keys that are specified by using this abbreviation are relative to the registry key associated with the INF section in which this **DelReg** directive appears, as indicated in the following table.
 
 | NF Section Containing AddReg Directive                                     | Registry Key Referenced by HKR                                                        |
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| INF [***DDInstall***](inf-ddinstall-section.md) section                   | The device's [*software key*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-key) |
-| INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section             | The device's [*hardware key*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key) |
+| INF ***DDInstall*** |
+| INF ***DDInstall*.HW** |
 | INF [***DDInstall*.Services**](inf-ddinstall-services-section.md) section | The **Services** key                                                                  |
 
- 
+ 
 
 **Note**  **HKR** cannot be used in an *del-registry-section* referenced from an [**INF DefaultInstall section**](inf-defaultinstall-section.md).
 
- 
+ 
 
-For more information about driver information that is stored under the **HKEY\_LOCAL\_MACHINE** root, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
+For more information about driver information that is stored under the **HKEY_LOCAL_MACHINE** root, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
 
 <a href="" id="subkey"></a>*subkey*  
-This optional value, formed either as a %*strkey*% token defined in a [**Strings**](inf-strings-section.md) section of the INF or as a registry path under the given *reg-root* (*key1***\\***key2***\\***key3*...), specifies one of the following:
+This optional value, formed either as a %*strkey*% token defined in a [**Strings**](inf-strings-section.md) section of the INF or as a registry path under the given *reg-root* (<em>key1</em>**\\**<em>key2</em>**\\**<em>key3</em>...), specifies one of the following:
 
 -   A subkey to be deleted from the registry at the end of the given registry path
 -   An existing subkey from which the given value-entry-name is to be deleted
@@ -97,13 +97,13 @@ This value identifies a named value entry to be removed from the given subkey. T
 
 Bitmask values for each of these flags are as follows:
 
-<a href="" id="0x00002000--flg-delreg-keyonly-common---"></a>**0x00002000** (FLG\_DELREG\_KEYONLY\_COMMON)   
+<a href="" id="0x00002000--flg-delreg-keyonly-common---"></a>**0x00002000** (FLG_DELREG_KEYONLY_COMMON)   
 Delete the entire subkey.
 
-<a href="" id="0x00004000---flg-delreg-32bitkey-"></a>**0x00004000** (FLG\_DELREG\_32BITKEY)  
+<a href="" id="0x00004000---flg-delreg-32bitkey-"></a>**0x00004000** (FLG_DELREG_32BITKEY)  
 Make the specified change in the 32-bit registry. If not specified, the change is made to the native registry.
 
-<a href="" id="0x00018002--flg-delreg-multi-sz-delstring-"></a>**0x00018002** (FLG\_DELREG\_MULTI\_SZ\_DELSTRING)  
+<a href="" id="0x00018002--flg-delreg-multi-sz-delstring-"></a>**0x00018002** (FLG_DELREG_MULTI_SZ_DELSTRING)  
 Within a multistring registry entry, delete all strings matching a string value specified by value. Case is ignored.
 
 <a href="" id="value"></a>*value*  
@@ -124,13 +124,13 @@ Each *del-registry-section* name must be unique to the INF file, but it can be r
 
 With operating system versions prior to Windows XP, the only way to delete a key is by specifying the following:
 
-```
+```ini
 reg-root-string, subkey
 ```
 
 For Windows XP and later versions of Windows, the following is also permitted (to specify the 32-bit registry):
 
-```
+```ini
 reg-root-string, subkey,,0x4000
 ```
 
@@ -139,7 +139,7 @@ Examples
 
 This example shows how the system-supplied COM/LPT ports class installer's INF removes stale NT-specific registry information about COM ports from the registry.
 
-```
+```ini
 [ComPort.NT]
 CopyFiles=ComPort.NT.Copy
 AddReg=ComPort.AddReg, ComPort.NT.AddReg
@@ -184,9 +184,9 @@ HKR,,UpperFilters
 
 [**Strings**](inf-strings-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

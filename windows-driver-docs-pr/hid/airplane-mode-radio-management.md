@@ -1,13 +1,9 @@
 ---
 title: Airplane mode radio management
-author: windows-driver-content
 description: Starting with Windows 8, the Windows operating system provides support via HID, for airplane mode radio management controls.
 ms.assetid: 5B0662B0-CBD3-4F31-B98F-6BC8184574DB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Airplane mode radio management
@@ -29,7 +25,7 @@ Windows provides support for the following HID Usages on the Generic Desktop usa
 | 0x00C7   | Wireless Radio LED           | On/Off Control (OOC)       |
 | 0x00C8   | Wireless Radio Slider Switch | On/Off Control (OOC)       |
 
- 
+ 
 
 The following is an architectural diagram of the HID Client that provides support for Radio Management / Airplane Mode.
 
@@ -157,12 +153,10 @@ Tip \#3: For more information on the Airplane Mode radio management button, see 
 
 Tip \#4: For more information regarding the buttons, and to ensure that you are implementing the correct hardware, please review the Windows 8 System Logo Requirements.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Airplane%20mode%20radio%20management%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

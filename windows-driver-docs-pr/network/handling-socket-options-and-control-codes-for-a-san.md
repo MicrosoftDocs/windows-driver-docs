@@ -7,17 +7,14 @@ keywords:
 - SAN sockets WDK , options
 - retrieving SAN socket options
 - SAN service providers WDK , status information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Socket Options and Control Codes for a SAN
 
 
-## <a href="" id="ddk-handling-socket-options-and-control-codes-for-a-san-ng"></a>
+
 
 
 The Windows Sockets switch, in conjunction with the TCP/IP provider, handles most **WSPGetSockOpt**, **WSPSetSockOpt**, and **WSPIoctl** calls initiated by applications. These requests are generally to set and retrieve options and operating parameters associated with an application's socket. The switch does not generally forward these calls to a SAN service provider except as described in the following sections.
@@ -71,37 +68,37 @@ Retrieves a pointer to an extension function that a SAN service provider must su
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>WSPRegisterMemory</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566311)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566311" data-raw-source="[&lt;strong&gt;WSPRegisterMemory&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566311)"><strong>WSPRegisterMemory</strong></a></p></td>
 <td align="left"><p>{C0B422F5-F58C-11d1-AD6C-00C04FA34A2D}</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>WSPDeregisterMemory</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566279)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566279" data-raw-source="[&lt;strong&gt;WSPDeregisterMemory&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566279)"><strong>WSPDeregisterMemory</strong></a></p></td>
 <td align="left"><p>{C0B422F6-F58C-11d1-AD6C-00C04FA34A2D}</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>WSPRegisterRdmaMemory</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566313)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566313" data-raw-source="[&lt;strong&gt;WSPRegisterRdmaMemory&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566313)"><strong>WSPRegisterRdmaMemory</strong></a></p></td>
 <td align="left"><p>{C0B422F7-F58C-11d1-AD6C-00C04FA34A2D}</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>WSPDeregisterRdmaMemory</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566281)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566281" data-raw-source="[&lt;strong&gt;WSPDeregisterRdmaMemory&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566281)"><strong>WSPDeregisterRdmaMemory</strong></a></p></td>
 <td align="left"><p>{C0B422F8-F58C-11d1-AD6C-00C04FA34A2D}</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>WSPRdmaWrite</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566306)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566306" data-raw-source="[&lt;strong&gt;WSPRdmaWrite&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566306)"><strong>WSPRdmaWrite</strong></a></p></td>
 <td align="left"><p>{C0B422F9-F58C-11d1-AD6C-00C04FA34A2D}</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>WSPRdmaRead</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566304)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566304" data-raw-source="[&lt;strong&gt;WSPRdmaRead&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566304)"><strong>WSPRdmaRead</strong></a></p></td>
 <td align="left"><p>{C0B422FA-F58C-11d1-AD6C-00C04FA34A2D}</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>WSPMemoryRegistrationCacheCallback</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566299)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566299" data-raw-source="[&lt;strong&gt;WSPMemoryRegistrationCacheCallback&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566299)"><strong>WSPMemoryRegistrationCacheCallback</strong></a></p></td>
 <td align="left"><p>{E5DA4AF8-D824-48CD-A799-6337A98ED2AF}</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="sio-get-qos--sio-get-group-qos--sio-set-qos--sio-set-group-qos"></a>SIO\_GET\_QOS, SIO\_GET\_GROUP\_QOS, SIO\_SET\_QOS, SIO\_SET\_GROUP\_QOS  
 A SAN service provider must support these control codes if it supports QoS. Otherwise, the switch forwards these options to the TCP/IP provider, which maintains default values. A provider indicates that it supports QoS by setting the XP1\_QOS\_SUPPORTED bit in the **dwServiceFlags** member of the WSAPROTOCOL\_INFO structure.
@@ -109,7 +106,7 @@ A SAN service provider must support these control codes if it supports QoS. Othe
 <a href="" id="sio-address-list-query"></a>SIO\_ADDRESS\_LIST\_QUERY  
 Retrieves the list of local IP addresses that are assigned to the network interface cards (NICs) that the SAN service provider controls. The SAN service provider uses a SOCKET\_ADDRESS\_LIST structure, defined as follows, to return the list in **WSPIoctl**'s output buffer:
 
-```
+```C++
 typedef struct _SOCKET_ADDRESS_LIST {
     INT             iAddressCount; 
     SOCKET_ADDRESS  Address[1]; 
@@ -126,9 +123,9 @@ Array of IP address structures.
 
 The switch uses this IOCTL code internally to decide whether to use a given SAN service provider to execute an application's requests to make connections or to listen for incoming connections. The switch forwards actual application requests for the list of local IP addresses to the TCP/IP provider. The switch also uses the TCP/IP provider to detect changes in address lists that all SAN service providers service. After TCP/IP reports a change, the switch queries all SAN service providers to refresh their lists.
 
- 
+ 
 
- 
+ 
 
 
 

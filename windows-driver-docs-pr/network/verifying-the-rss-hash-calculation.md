@@ -6,22 +6,19 @@ keywords:
 - receive-side scaling WDK networking , hash
 - RSS WDK networking , hash
 - hash WDK RSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Verifying the RSS Hash Calculation
 
 
-## <a href="" id="ddk-verifying-the-rss-hash-calculation-ng"></a>
+
 
 
 You should verify your implementation of the RSS hash calculation. To verify your calculations for the **NdisHashFunctionToeplitz** hash function, use the following secret key data:
 
-```
+```syntax
 0x6d, 0x5a, 0x56, 0xda, 0x25, 0x5b, 0x0e, 0xc2,
 0x41, 0x67, 0x25, 0x3d, 0x43, 0xa3, 0x8f, 0xb0,
 0xd0, 0xca, 0x2b, 0xcb, 0xae, 0x7b, 0x30, 0xb4,
@@ -80,7 +77,7 @@ The following table provides verification data for the IPv4 versions of the **Nd
 </tbody>
 </table>
 
- 
+ 
 
 The following table contains verification data for the IPv6 versions of the RSS hash algorithm. The destination and source columns contain the input data and the IPv6 columns contain the resulting hash value. Note that the IPv6 addresses are provided for verification of the algorithm only; they might not make sense as actual addresses.
 
@@ -121,11 +118,11 @@ The following table contains verification data for the IPv6 versions of the RSS 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

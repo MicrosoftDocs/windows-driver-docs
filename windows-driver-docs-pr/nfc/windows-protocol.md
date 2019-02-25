@@ -1,6 +1,5 @@
 ---
 title: Windows protocol
-author: windows-driver-content
 description: Windows protocol
 ms.assetid: 9D28589E-FA19-43F2-BE22-438795807657
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows protocol
@@ -35,7 +31,7 @@ The following requirements must be met to ensure the proper encapsulation of Win
 
     The driver MUST return only the PAYLOAD of the matched NDEF messages to subscribers of this type.
 
-## <a href="" id="-windows-writetag---publications"></a>“Windows:WriteTag.” Publications
+## “Windows:WriteTag.” Publications
 
 
 A “Windows:WriteTag.” publication is a means for an app to simply write a Windows-typed payload to a tag.
@@ -45,7 +41,7 @@ A “Windows:WriteTag.” publication is a means for an app to simply write a Wi
 -   The common “\*:WriteTag” requirements described elsewhere apply.
 -   The “Windows.&lt;SomeSubType&gt;” publication requirements also apply to “Windows:WriteTag.&lt;SomeSubType&gt;” publications.
 
-## <a href="" id="-launchapp-writetag--publications"></a>“LaunchApp:WriteTag” Publications
+## “LaunchApp:WriteTag” Publications
 
 
 An “LaunchApp:WriteTag” publication is a means for an app to simply write a “Windows.windows.com/LaunchApp” message to a tag.
@@ -67,9 +63,9 @@ The client will send a tab-delimited (or null-delimited) list of strings as the 
 -   For each platform/AppID tuple the driver MUST add to the payload a byte with the length (in bytes) of the platform string followed by the platform string itself followed by a byte with the length (in bytes) of the AppID string followed by the AppID string itself.
 -   The driver MUST add a USHORT containing the length of the argument string followed by the argument string itself.
 
- 
+ 
 
- 
+ 
 
 
 

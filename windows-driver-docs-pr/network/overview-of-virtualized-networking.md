@@ -2,11 +2,8 @@
 title: Overview of Virtualized Networking
 description: Overview of Virtualized Networking
 ms.assetid: AD8F8EC3-B7BB-4CAC-A9CE-39EA42DA7602
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Virtualized Networking
@@ -20,9 +17,9 @@ To introduce high-level virtualized networking concepts, this section includes t
 
 [Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment](potential-performance-bottlenecks-in-an-ndis-virtualized-networking-environment.md)
 
- 
+ 
 
- 
+ 
 
 
 

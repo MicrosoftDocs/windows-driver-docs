@@ -9,17 +9,14 @@ keywords:
 - voice streaming WDK networing , outgoing calls
 - outgoing calls WDK CoNDIS WAN
 - calls WDK CoNDIS WAN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Parameters for an Outgoing Call
 
 
-## <a href="" id="ddk-specifying-parameters-for-an-outgoing-call-ng"></a>
+
 
 
 When making an outgoing call, a call manager or MCM that supports voice streaming must supply the following values in the [**CO\_CALL\_MANAGER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff545381) structure:
@@ -32,9 +29,9 @@ A call manager or MCM that supports an address family other than CO\_ADDRESS\_FA
 
 A call manager or MCM that supports the CO\_ADDRESS\_FAMILY\_TAPI\_PROXY family writes these values to the CO\_CALL\_MANAGER\_PARAMETERS structure in the context of its [**ProtocolCmMakeCall**](https://msdn.microsoft.com/library/windows/hardware/ff570246) function. Note that the maximum SDU sizes passed to the *ProtocolCmMakeCall* function are incorrect. The *ProtocolCmMakeCall* function must overwrite the incorrect values with correct values.
 
- 
+ 
 
- 
+ 
 
 
 

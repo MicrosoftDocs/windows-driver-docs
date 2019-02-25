@@ -2,11 +2,8 @@
 title: Implementing IPv6 NS Offload
 description: This section describes how to implement IPv6 neighbor solicitation (NS) offload
 ms.assetid: 48AACE46-4D39-49ED-90AD-F73E27D0CDBE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing IPv6 NS Offload
@@ -21,11 +18,11 @@ A miniport driver sets the **NumNSOffloadIPv6Addresses** member of the [**NDIS\_
 
 **Note**  Despite its name, the **NumNSOffloadIPv6Addresses** member contains the number of supported requests, not the number of addresses.
 
- 
+ 
 
-**Note**  Some Windows Hardware Certification requirements, such as **Device.Network.LAN.PM.PowMgmtNDIS** and **Device.Network.WLAN.WoWLAN.ImplementWakeOnWLAN**, specify that the miniport adapter must support at least 2 NS offload requests. (In other words, to meet these requirements, the value of **NumNSOffloadIPv6Addresses** must be at least 2.) For more information, see the [Windows 8 Hardware Certification Requirements](http://go.microsoft.com/fwlink/p/?linkid=268621).
+**Note**  Some Windows Hardware Certification requirements, such as **Device.Network.LAN.PM.PowMgmtNDIS** and **Device.Network.WLAN.WoWLAN.ImplementWakeOnWLAN**, specify that the miniport adapter must support at least 2 NS offload requests. (In other words, to meet these requirements, the value of **NumNSOffloadIPv6Addresses** must be at least 2.) For more information, see the [Windows 8 Hardware Certification Requirements](https://go.microsoft.com/fwlink/p/?linkid=268621).
 
- 
+ 
 
 Each NS offload request can contain 1 or 2 target addresses.
 
@@ -40,7 +37,7 @@ Because the miniport must match both unicast and multicast NS messages for each 
 ## Matching the NS Message
 
 
-The NS message format is specified in [RFC 4861](http://go.microsoft.com/fwlink/p/?linkid=268370) section 4.3, "Neighbor Solicitation Message Format". The miniport should match the fields in the following table.
+The NS message format is specified in [RFC 4861](https://go.microsoft.com/fwlink/p/?linkid=268370) section 4.3, "Neighbor Solicitation Message Format". The miniport should match the fields in the following table.
 
 <table>
 <colgroup>
@@ -107,12 +104,12 @@ The NS message format is specified in [RFC 4861](http://go.microsoft.com/fwlink/
 </tbody>
 </table>
 
- 
+ 
 
 ## Sending the NA Message
 
 
-Upon receiving the NS message, device firmware should perform the validation steps called out in [RFC 4861](http://go.microsoft.com/fwlink/p/?linkid=268370) section 7.1, "Message Validation", including validating checksums. If the incoming NS message passes all validation, then an NA message must be generated and sent as a reply. Its format is specified in [RFC 4861](http://go.microsoft.com/fwlink/p/?linkid=268370) section 4.4, "Neighbor Advertisement Message Format". The miniport should set the fields in the following table.
+Upon receiving the NS message, device firmware should perform the validation steps called out in [RFC 4861](https://go.microsoft.com/fwlink/p/?linkid=268370) section 7.1, "Message Validation", including validating checksums. If the incoming NS message passes all validation, then an NA message must be generated and sent as a reply. Its format is specified in [RFC 4861](https://go.microsoft.com/fwlink/p/?linkid=268370) section 4.4, "Neighbor Advertisement Message Format". The miniport should set the fields in the following table.
 
 <table>
 <colgroup>
@@ -201,11 +198,11 @@ Upon receiving the NS message, device firmware should perform the validation ste
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

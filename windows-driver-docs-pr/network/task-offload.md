@@ -8,17 +8,14 @@ keywords:
 - task offload WDK TCP/IP transport
 - task offload WDK TCP/IP transport , about task offload
 - capabilities WDK TCP/IP offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # TCP/IP Task Offload
 
 
-## <a href="" id="ddk-task-offload-ng"></a>
+
 
 
 To increase its performance, the Microsoft TCP/IP transport can offload tasks to a network interface card (NIC) that has the appropriate task offload capabilities.
@@ -79,9 +76,9 @@ This section includes:
     - \[The IPsec Task Offload feature is deprecated and should not be used.\]
 -   [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md)
 
- 
+ 
 
- 
+ 
 
 
 

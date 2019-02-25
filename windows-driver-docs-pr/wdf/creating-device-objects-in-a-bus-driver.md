@@ -1,6 +1,5 @@
 ---
 title: Creating Device Objects in a Bus Driver
-author: windows-driver-content
 description: Creating Device Objects in a Bus Driver
 ms.assetid: 36b4d24c-9f5e-4853-bf70-c94613e01f2b
 keywords:
@@ -12,11 +11,8 @@ keywords:
 - PDOs WDK KMDF
 - bus enumeration WDK KMDF
 - enumeration WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating Device Objects in a Bus Driver
@@ -62,9 +58,9 @@ After the bus driver has created the device object, it typically calls [**WdfDev
 
 Each bus driver is also the function driver for the bus adapter. Therefore, the driver must also provide an [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function. This callback function creates a functional device object (FDO) for each bus adapter on the system. For more information about creating FDOs, see [Creating Device Objects in a Function Driver](creating-device-objects-in-a-function-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

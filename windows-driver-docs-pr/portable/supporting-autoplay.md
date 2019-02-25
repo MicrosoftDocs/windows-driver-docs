@@ -1,11 +1,8 @@
 ---
 Description: Supporting AutoPlay
 title: Supporting AutoPlay
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting AutoPlay
@@ -26,7 +23,7 @@ The WPD AutoPlay scheme integrates with the Windows Vista AutoPlay feature. It d
 | Sink     | A WPD device can be treated as a destination for content, that is, the content can be transferred to the device.    |
 | Function | A WPD device supports a programmable or controllable capability, for example, it can send and receive SMS messages. |
 
- 
+ 
 
 Devices that support these categories should set the appropriate entries in the Device\_AddReg section of the setup information (.inf) file. The following table lists the two AutoPlay directives that are supported by the WPD Class Installer.
 
@@ -73,7 +70,7 @@ Devices that support these categories should set the appropriate entries in the 
 </tbody>
 </table>
 
- 
+ 
 
 Most devices will specify the EnableDefaultAutoPlaySupport directive in their setup information files. The AutoPlaySourceOnly directive is provided only for legacy devices that do not support bi-directional transfers.
 
@@ -81,11 +78,10 @@ If you do not want your device to participate in AutoPlay, either set the Enable
 
 If you need to create a custom AutoPlay scheme, you can do so by creating a private DeviceHandlers value in the Device\_Parameters section of the setup information (.inf) file.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wpd_dk\wpddk]:%20Supporting%20AutoPlay%20%20RELEASE:%20%281/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

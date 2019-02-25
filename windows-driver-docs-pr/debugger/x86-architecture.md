@@ -3,11 +3,8 @@ title: x86 Architecture
 description: x86 Architecture
 ms.assetid: 42c62647-7c9a-496e-839f-91283db73a29
 keywords: ["x86 processor, architecture", "registers, on an x86 processor", "x86 processor, registers", "x86 processor, calling conventions", "x86 processor, data types"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # x86 Architecture
@@ -16,9 +13,9 @@ ms.technology: windows-devices
 ## <span id="ddk_x86_architecture_dbg"></span><span id="DDK_X86_ARCHITECTURE_DBG"></span>
 
 
-The Intel x86 processor uses complex instruction set computer (CISC) architecture, which means there is a modest number of special-purpose registers instead of large quantities of general-purpose registers. It also means that complicated special-purpose instructions will predominate.
+The Intel x86 processor uses complex instruction set computer (CISC) architecture, which means there is a modest number of special-purpose registers instead of large quantities of general-purpose registers. It also means that complex special-purpose instructions will predominate.
 
-The x86 processor traces its heritage at least as far back as the 8-bit Intel 8080 processor. Many peculiarities in the x86 instruction are due to the backward compatibility with that processor (and with its Zilog Z-80 variant).
+The x86 processor traces its heritage at least as far back as the 8-bit Intel 8080 processor. Many peculiarities in the x86 instruction set are due to the backward compatibility with that processor (and with its Zilog Z-80 variant).
 
 Microsoft Win32 uses the x86 processor in *32-bit flat mode*. This documentation will focus only on the flat mode.
 
@@ -42,11 +39,11 @@ The x86 architecture consists of the following unprivileged integer registers.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>ecx</strong></p></td>
-<td align="left"><p>Count register</p></td>
+<td align="left"><p>Counter register</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>edx</strong></p></td>
-<td align="left"><p>Double-precision register</p></td>
+<td align="left"><p>Data register - can be used for I/O port access and arithmetic functions</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>esi</strong></p></td>
@@ -67,7 +64,7 @@ The x86 architecture consists of the following unprivileged integer registers.
 </tbody>
 </table>
 
- 
+ 
 
 All integer registers are 32 bit. However, many of them have 16-bit or 8-bit subregisters.
 
@@ -144,11 +141,11 @@ All integer registers are 32 bit. However, many of them have 16-bit or 8-bit sub
 </tbody>
 </table>
 
- 
+ 
 
 Operating on a subregister affects only the subregister and none of the parts outside the subregister. For example, storing to the **ax** register leaves the high 16 bits of the **eax** register unchanged.
 
-When using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command, registers should be prefixed with an "at" sign ( **@** ). For example, you should use **? @ax** rather than **? ax**. This ensures that the debugger recognizes **ax** as a register rather than a symbol.
+When using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command, registers should be prefixed with an "at" sign ( **@** ). For example, you should use <strong>? @ax</strong> rather than **? ax**. This ensures that the debugger recognizes **ax** as a register rather than a symbol.
 
 However, the (@) is not required in the [**r (Registers)**](r--registers-.md) command. For instance, **r ax=5** will always be interpreted correctly.
 
@@ -171,7 +168,7 @@ Two other registers are important for the processor's current state.
 </tbody>
 </table>
 
- 
+ 
 
 The instruction pointer is the address of the instruction being executed.
 
@@ -211,7 +208,7 @@ The following is a list of calling conventions used on the x86 architecture:
 
 Here is a sample debugger register display:
 
-```
+```dbgcmd
 eax=00000000 ebx=008b6f00 ecx=01010101 edx=ffffffff esi=00000000 edi=00465000
 eip=77f9d022 esp=05cffc48 ebp=05cffc54 iopl=0         nv up ei ng nz na po nc
 cs=001b  ss=0023  ds=0023  es=0023  fs=0038  gs=0000             efl=00000286
@@ -322,7 +319,7 @@ I/O Privilege Level
 
 This is a two-bit integer, with values between zero and 3. It is used by the operating system to control access to hardware. It should not be used by applications.
 
- 
+ 
 
 When registers are displayed as a result of some command in the Debugger Command window, it is the *flag status* that is displayed. However, if you want to change a flag using the [**r (Registers)**](r--registers-.md) command, you should refer to it by the *flag code*.
 
@@ -330,7 +327,7 @@ In the Registers window of WinDbg, the flag code is used to view or alter flags.
 
 Here is an example. In the preceding register display, the flag status **ng** appears. This means that the sign flag is currently set to 1. To change this, use the following command:
 
-```
+```dbgcmd
 r sf=0
 ```
 
@@ -401,7 +398,7 @@ The assembler uses a one or two letter abbreviation to represent a condition. A 
 </tbody>
 </table>
 
- 
+ 
 
 Conditions can also be used to compare two values. The **cmp** instruction compares its two operands, and then sets flags as if subtracted one operand from the other. The following conditions can be used to check the result of **cmp** *value1*, *value2*.
 
@@ -490,11 +487,11 @@ NAE</td>
 </tbody>
 </table>
 
- 
+ 
 
 Conditions are typically used to act on the result of a **cmp** or **test** instruction. For example,
 
-```
+```asm
 cmp eax, 5
 jz equal
 ```
@@ -570,7 +567,7 @@ The following table indicates the notation used to describe assembly language in
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Addressing_Modes"></span><span id="addressing_modes"></span><span id="ADDRESSING_MODES"></span>Addressing Modes
 
@@ -612,11 +609,10 @@ A memory access is considered aligned if the address is an integer multiple of t
 
 The **lock** prefix should not be used for unaligned memory accesses.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20x86%20Architecture%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

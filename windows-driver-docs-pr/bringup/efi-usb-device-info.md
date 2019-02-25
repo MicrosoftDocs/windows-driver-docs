@@ -1,13 +1,9 @@
 ---
 title: EFI_USB_DEVICE_INFO
-author: windows-driver-content
 description: EFI_USB_DEVICE_INFO
 ms.assetid: b44f77fc-f496-488f-b53a-b54420da9360
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USB\_DEVICE\_INFO
@@ -18,7 +14,7 @@ The **EFI\_USB\_DEVICE\_INFO** structure is used to define the USB function devi
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct 
 {
     EFI_USB_DEVICE_DESCRIPTOR           *DeviceDescriptor;
@@ -38,18 +34,17 @@ A EFI\_USB\_CONFIG\_INFO structure that contains information about the supported
 ## Remarks
 
 
-The **EFI\_USB\_CONFIG\_DESCRIPTOR** and **EFI\_USB\_DEVICE\_DESCRIPTOR** structures are defined in UEFI specification 2.3. For more information, visit the [UEFI.org](http://go.microsoft.com/fwlink/p/?linkid=109526) website.
+The **EFI\_USB\_CONFIG\_DESCRIPTOR** and **EFI\_USB\_DEVICE\_DESCRIPTOR** structures are defined in UEFI specification 2.3. For more information, visit the [UEFI.org](https://go.microsoft.com/fwlink/p/?linkid=109526) website.
 
 ## Requirements
 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -1,25 +1,21 @@
 ---
 title: Writing an ISR
-author: windows-driver-content
 description: Writing an ISR
 ms.assetid: d696d683-e010-4a5c-ba2d-f536ab5f38b2
 keywords: ["interrupt service routines WDK kernel , writing", "ISRs WDK kernel , writing", "writing ISRs", "interrupt objects WDK kernel , writing ISRs", "I/O WDK kernel , interrupts"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing an ISR
 
 
-## <a href="" id="ddk-writing-an-isr-kg"></a>
+
 
 
 Drivers for physical devices that generate interrupts must have at least one interrupt service routine (ISR). The ISR must do whatever is appropriate to the device to dismiss the interrupt, possibly including stopping the device from interrupting. Then, it should do only what is necessary to save state and queue a DPC to finish the I/O operation at a lower priority (IRQL) than that at which the ISR executes.
 
-A driver's ISR executes in an interrupt context, at some system-assigned [*DIRQL*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-interrupt-request-level--dirql-), as specified by the *SynchronizeIrql* parameter to [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378).
+A driver's ISR executes in an interrupt context, at some system-assigned *DIRQL*, as specified by the *SynchronizeIrql* parameter to [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378).
 
 ISRs are interruptible. Another device with a higher system-assigned DIRQL can interrupt, or a high-IRQL system interrupt can occur, at any time.
 
@@ -57,12 +53,10 @@ An ISR must run at DIRQL for the shortest possible interval. Following this guid
 
 The *SynchronizeIrql* of the driver's interrupt objects, specified when the driver called **IoConnectInterrupt**, determines the DIRQL at which the driver's ISR executes. For more information, see [Synchronizing Access to Device Data](synchronizing-access-to-device-data.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Writing%20an%20ISR%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

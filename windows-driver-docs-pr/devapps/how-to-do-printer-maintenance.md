@@ -1,53 +1,50 @@
 ---
-title: How to do printer maintenance in a Windows Store device app
-description: In Windows 8.1, Windows Store device apps can perform printer maintenance, such as aligning print heads and cleaning nozzles.
+title: How to do printer maintenance in a UWP device app
+description: In Windows 8.1, UWP device apps can perform printer maintenance, such as aligning print heads and cleaning nozzles.
 ms.assetid: 52141F66-872A-4381-92C8-B04ABDABA7AD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
-# How to do printer maintenance in a Windows Store device app
+# How to do printer maintenance in a UWP device app
 
 
-In Windows 8.1, Windows Store device apps can perform printer maintenance, such as aligning print heads and cleaning nozzles. This topic uses the C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample to demonstrate how bidirectional communication (Bidi) can be used to perform such device maintenance. To learn more about Windows Store device apps in general, see [Meet Windows Store device apps](meet-windows-store-device-apps.md).
+In Windows 8.1, UWP device apps can perform printer maintenance, such as aligning print heads and cleaning nozzles. This topic uses the C# version of the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample to demonstrate how bidirectional communication (Bidi) can be used to perform such device maintenance. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-The C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample demonstrates printer maintenance with the **DeviceMaintenance.xaml.cs** file in the **DeviceAppForPrinters2** project. To work with Bidi, the sample uses the printer extension library in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
+The C# version of the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample demonstrates printer maintenance with the **DeviceMaintenance.xaml.cs** file in the **DeviceAppForPrinters2** project. To work with Bidi, the sample uses the printer extension library in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
 
-**Note**  The code examples shown in this topic are based on the C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
+**Note**  The code examples shown in this topic are based on the C# version of the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
 
- 
+ 
 
 ## <span id="Printer_maintenance"></span><span id="printer_maintenance"></span><span id="PRINTER_MAINTENANCE"></span>Printer maintenance
 
 
 Windows 8.1 introduces new printer extension interfaces in the v4 printer driver that you can use for implementing device maintenance: [**IPrinterBidiSetRequestCallback**](https://msdn.microsoft.com/library/windows/hardware/dn265385), [**IPrinterExtensionAsyncOperation**](https://msdn.microsoft.com/library/windows/hardware/dn265387) , and [**IPrinterQueue2**](https://msdn.microsoft.com/library/windows/hardware/dn265389). These interfaces make it possible to asynchronously send Bidi requests to the port monitor so that they can be translated into device and protocol-specific commands, and then sent to the printer. For more info, see [Device Maintenance (v4 Printer Driver)](https://msdn.microsoft.com/library/windows/hardware/dn265274).
 
-**Tip**  C# and JavaScript apps can't work with COM APIs directly. If you're writing a C# or JavaScript Windows Store device app, use the printer extension library to access these interfaces (as shown in this topic).
+**Tip**  C# and JavaScript apps can't work with COM APIs directly. If you're writing a C# or JavaScript UWP device app, use the printer extension library to access these interfaces (as shown in this topic).
 
- 
+ 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
 
 Before you get started:
 
-1.  Make sure your printer is installed using a v4 print driver. For more info, see [Developing v4 print drivers](http://go.microsoft.com/fwlink/p/?LinkId=314231).
+1.  Make sure your printer is installed using a v4 print driver. For more info, see [Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231).
 2.  Get your development PC set up. See [Getting started](getting-started.md) for info about downloading the tools and creating a developer account.
-3.  Associate your app with the store. See [Create a Windows Store device app](step-1--create-a-windows-store-device-app.md) for info about that.
+3.  Associate your app with the store. See [Create a UWP device app](step-1--create-a-uwp-device-app.md) for info about that.
 4.  Create device metadata for your printer that associates it with your app. See [Create device metadata](step-2--create-device-metadata.md) for more about that.
-5.  Build the UI for the main page of your app. All Windows Store device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Windows Store design principles](http://go.microsoft.com/fwlink/p/?LinkID=299845).
-6.  If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** project to your Windows Store device app solution. You can find this project in the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample.
+5.  Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](https://go.microsoft.com/fwlink/p/?LinkID=299845).
+6.  If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** project to your UWP device app solution. You can find this project in the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample.
     **Note**  Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
 
-     
+     
 
 ## <span id="Step_1__Prepare_Bidi_request"></span><span id="step_1__prepare_bidi_request"></span><span id="STEP_1__PREPARE_BIDI_REQUEST"></span>Step 1: Prepare Bidi request
 
 
-The device maintenance interfaces require that your Bidi requests are XML data in the form of a string. You can construct your Bidi requests wherever it makes sense in your app. For example, you could save the Bidi requests as string constants or dynamically create them based on user input. The [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample happens to construct a default request in `OnNavigatedTo` method. For more info about Bidi, see [Bidirectional Communications](http://go.microsoft.com/fwlink/p/?LinkId=317192).
+The device maintenance interfaces require that your Bidi requests are XML data in the form of a string. You can construct your Bidi requests wherever it makes sense in your app. For example, you could save the Bidi requests as string constants or dynamically create them based on user input. The [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample happens to construct a default request in `OnNavigatedTo` method. For more info about Bidi, see [Bidirectional Communications](https://go.microsoft.com/fwlink/p/?LinkId=317192).
 
 This example is from the `OnNavigatedTo` method of the **DeviceMaintenance.xaml.cs** file.
 
@@ -63,7 +60,7 @@ string defaultBidiQuery =
 ## <span id="Step_2__Find_printer"></span><span id="step_2__find_printer"></span><span id="STEP_2__FIND_PRINTER"></span>Step 2: Find printer
 
 
-Before your app can send commands to the printer, it must first locate the printer. To do this, the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample includes a handy class named `PrinterEnumeration` (in the **PrinterEnumeration.cs** file). This class finds all the printers that are associated with your app via device metadata, and returns a list of `PrinterInfo` objects, which contains the names and device IDs for each printer.
+Before your app can send commands to the printer, it must first locate the printer. To do this, the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample includes a handy class named `PrinterEnumeration` (in the **PrinterEnumeration.cs** file). This class finds all the printers that are associated with your app via device metadata, and returns a list of `PrinterInfo` objects, which contains the names and device IDs for each printer.
 
 This example is from the `EnumeratePrinters_Click` method of the **DeviceMaintenance.xaml.cs** file. It shows how the sample uses the `PrinterEnumeration` class to get a list of associated printers.
 
@@ -102,7 +99,7 @@ private async void EnumeratePrinters_Click(object sender, RoutedEventArgs e)
 
 **Tip**  For more info about the `PrinterEnumeration` and `PrinterInfo` classes, see the **PrinterEnumeration.cs** file.
 
- 
+ 
 
 ## <span id="Step_3__Send_Bidi_request"></span><span id="step_3__send_bidi_request"></span><span id="STEP_3__SEND_BIDI_REQUEST"></span>Step 3: Send Bidi request
 
@@ -198,13 +195,13 @@ internal async void OnBidiResponseReceived(object sender, string bidiResponse)
 ## <span id="testing"></span><span id="TESTING"></span>Testing
 
 
-Before you can test your Windows Store device app, it must be linked to your printer using device metadata.
+Before you can test your UWP device app, it must be linked to your printer using device metadata.
 
--   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your Windows Store device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
+-   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](https://go.microsoft.com/fwlink/p/?LinkId=313644).
 
-    **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional 2013, Microsoft Visual Studio Ultimate 2013, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express 2013 for Windows installs a version of the SDK that doesn't include the wizard.
+    **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
-     
+     
 
 The following steps build your app and install the device metadata.
 
@@ -217,14 +214,14 @@ The following steps build your app and install the device metadata.
 
 4.  Disconnect and uninstall the printer. This step is required so that Windows will read the updated device metadata the next time the device is detected.
 5.  Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
-    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your Windows Store device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
+    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](https://go.microsoft.com/fwlink/p/?LinkId=313644).
 
-     
+     
 
     1.  If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
     2.  Click **Edit Device Metadata**. This will let you edit your existing device metadata package.
-    3.  In the **Open** dialog box, locate the device metadata package associated with your Windows Store device app. (It has a **devicemetadata-ms** file extension.)
-    4.  On the **Specify Windows Store device app information** page, enter the Windows Store app info in the **Windows Store device app** box. Click on **Import Windows Store App manifest file** to automatically enter the **Package name**, **Publisher name**, and **Windows Store App ID**.
+    3.  In the **Open** dialog box, locate the device metadata package associated with your UWP device app. (It has a **devicemetadata-ms** file extension.)
+    4.  On the **Specify UWP device app information** page, enter the Microsoft Store app info in the **UWP device app** box. Click on **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
     5.  If your app is registering for printer notifications, fill out the **Notification handlers** box. In **Event ID**, enter the name of the print event handler. In **Event Asset**, enter the name of the file where that code resides.
 
     6.  When you're done, click **Next** until you get to the **Finish** page.
@@ -237,21 +234,20 @@ The following steps build your app and install the device metadata.
 
 [Device Maintenance (v4 Printer Driver)](https://msdn.microsoft.com/library/windows/hardware/dn265274)
 
-[Developing v4 print drivers](http://go.microsoft.com/fwlink/p/?LinkId=314231)
+[Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231)
 
-[Bidirectional Communications](http://go.microsoft.com/fwlink/p/?LinkId=317192)
+[Bidirectional Communications](https://go.microsoft.com/fwlink/p/?LinkId=317192)
 
-[Getting started with Windows Store apps](getting-started.md)
+[Getting started with UWP apps](getting-started.md)
 
-[Create a Windows Store device app (step-by-step guide)](step-1--create-a-windows-store-device-app.md)
+[Create a UWP device app (step-by-step guide)](step-1--create-a-uwp-device-app.md)
 
-[Create device metadata for a Windows Store device app (step-by-step guide)](step-2--create-device-metadata.md)
+[Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devapps\devapps]:%20How%20to%20do%20printer%20maintenance%20in%20a%20Windows%20Store%20device%20app%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

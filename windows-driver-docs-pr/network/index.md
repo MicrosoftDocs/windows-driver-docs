@@ -5,7 +5,6 @@ ms.assetid: 200517b2-d0a0-40cc-a5cb-9e2067e01028
 keywords:
 - network drivers WDK
 - networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -15,7 +14,7 @@ ms.technology: windows-devices
 # Network Driver Design Guide
 
 
-## <a href="" id="ddk-network-design-guide-ng"></a>
+
 
 
 This Network Driver Design Guide describes how to design and create network device drivers for Windows operating systems beginning with Windows Vista.
@@ -24,7 +23,7 @@ This guide includes the following sections:
 
 [Introduction to Network Drivers](introduction-to-network-drivers.md)
 
-[Porting NDIS Drivers to Newer NDIS Versions](porting-ndis-drivers-to-newer-ndis-versions.md)
+[NDIS version guide](ndis-version-guide.md)
 
 [NDIS Core Functionality](ndis-core-functionality2.md)
 
@@ -46,11 +45,12 @@ This guide includes the following sections:
 
 [Remote NDIS (RNDIS)](remote-ndis--rndis-2.md)
 
-For information about network device drivers for Windows operating systems prior to Windows Vista, see [Windows 2000 and Windows XP Networking Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff565849).
+[Kernel Mode SDK Topics for Network Drivers](kernel-mode-sdk-topics-for-network-drivers.md)
 
- 
+[Previous Versions of Network Drivers](previous-versions-of-network-drivers.md)
+ 
 
- 
+ 
 
 
 

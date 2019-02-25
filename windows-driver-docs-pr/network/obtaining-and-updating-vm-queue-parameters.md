@@ -2,17 +2,14 @@
 title: Obtaining and Updating VM Queue Parameters
 description: Obtaining and Updating VM Queue Parameters
 ms.assetid: 42beceec-95ae-48e3-985f-b6ee8a84d68b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining and Updating VM Queue Parameters
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 An overlying driver can set the configuration parameters of a VM queue after it is allocated. Also, an overlying driver or application can obtain the current parameters for a queue and parameters for the filters that are set on a queue.
@@ -35,9 +32,9 @@ The overlying driver obtained the filter identifier from an earlier OID\_RECEIVE
 
 An application obtained the filter identifier from the [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787) OID request.
 
- 
+ 
 
- 
+ 
 
 
 

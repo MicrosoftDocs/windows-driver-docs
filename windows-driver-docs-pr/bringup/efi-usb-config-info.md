@@ -1,13 +1,9 @@
 ---
 title: EFI_USB_CONFIG_INFO
-author: windows-driver-content
 description: EFI_USB_CONFIG_INFO
 ms.assetid: 74d5cb02-2648-4bd1-990e-61156b5dc8cd
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USB\_CONFIG\_INFO
@@ -18,7 +14,7 @@ The **EFI\_USB\_CONFIG\_INFO** structure is used to define the supported USB por
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct 
 {
     EFI_USB_CONFIG_DESCRIPTOR           *ConfigDescriptor;
@@ -38,18 +34,17 @@ An [EFI\_USB\_INTERFACE\_INFO](efi-usb-interface-info.md) structure that contain
 ## Remarks
 
 
-The structure **USB\_CONFIG\_DESCRIPTOR** is defined in UEFI specification 2.3. For more information, visit the [UEFI.org](http://go.microsoft.com/fwlink/p/?linkid=109526) website.
+The structure **USB\_CONFIG\_DESCRIPTOR** is defined in UEFI specification 2.3. For more information, visit the [UEFI.org](https://go.microsoft.com/fwlink/p/?linkid=109526) website.
 
 ## Requirements
 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -2,11 +2,8 @@
 title: Debugging Device Metadata Packages By Using Event Viewer
 description: Debugging Device Metadata Packages By Using Event Viewer
 ms.assetid: 168a9dd1-aab2-4497-a59d-b8fe52d8cde2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging Device Metadata Packages By Using Event Viewer
@@ -40,7 +37,7 @@ You use Event Viewer to view events that are logged for device metadata packages
 
     **Note**  You must first enable logging on the DeviceMetadata/Debug ETW channel to receive and view events. To do this, right-click the **DeviceMetadata/Debug** node and select **Properties**. Then, click **Enable Log**.
 
-     
+     
 
 ### Device Metadata/Debug ETW Events
 
@@ -71,11 +68,11 @@ This event log message contains the following information:
 -   The name of the device metadata package.
 
 <a href="" id="event-id--7902-error--device-metadata-package-not-signed--"></a>Event ID: 7902 Error: Device metadata package not signed.   
-An installed device metadata package was not signed by the [Windows Quality Online Services (Winqual)](http://go.microsoft.com/fwlink/p/?linkid=62651).
+An installed device metadata package was not signed by the [Windows Quality Online Services (Winqual)](https://go.microsoft.com/fwlink/p/?linkid=62651).
 
 **Note**  The signature of the device metadata package is verified only when it is downloaded from WMIS.
 
- 
+ 
 
 This event log message contains the following information:
 
@@ -109,14 +106,14 @@ This event log message contains the following information:
 
     **Note**   Only the most specific hardware ID is logged when a list of hardware IDs are passed as a parameter.
 
-     
+     
 
 <a href="" id="event-id--7952-warning--network-related-errors-"></a>Event ID: 7952 Warning: Network-related errors.  
 The DMRC encountered a network error during the download of a device metadata packaged from the WMIS.
 
 **Note**   This warning is not generated when the network is not available.
 
- 
+ 
 
 This event log message contains the following information:
 
@@ -126,9 +123,9 @@ This event log message contains the following information:
 
 -   The HTTP status code at the time of the network error.
 
- 
+ 
 
- 
+ 
 
 
 

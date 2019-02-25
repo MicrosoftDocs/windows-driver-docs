@@ -13,11 +13,8 @@ keywords:
 - IPreFetchOffset
 - synchronization primitives WDK audio
 - IPinCount
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Performance Issues for a WavePci Miniport Driver
@@ -44,7 +41,7 @@ Before discussing performance optimizations, some background is necessary to und
 
 When processing a wave render or capture stream, an audio device requires servicing at regular intervals by the miniport driver. When new mappings are available for a stream, the driver adds those mappings to the stream's DMA queue. The driver also removes from the queue any mappings that have already been processed. For information about mappings, see [WavePci Latency](wavepci-latency.md).
 
-To perform the servicing, the miniport driver provides either a [*deferred procedure call (DPC)*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss_deferred_procedure_call__dpc_) or interrupt service routine (ISR), depending on whether the interval is set by a system timer or by DMA-driven interrupts. In the latter case, the DMA hardware typically triggers an interrupt each time if finishes transferring some amount of stream data.
+To perform the servicing, the miniport driver provides either a *deferred procedure call (DPC)* or interrupt service routine (ISR), depending on whether the interval is set by a system timer or by DMA-driven interrupts. In the latter case, the DMA hardware typically triggers an interrupt each time if finishes transferring some amount of stream data.
 
 Each time the DPC or ISR executes, it determines which streams require servicing. The DPC or ISR services a stream by calling the [**IPortWavePci::Notify**](https://msdn.microsoft.com/library/windows/hardware/ff536918) method. This method takes as a call parameter the stream's service group, which is an object of type [IServiceGroup](https://msdn.microsoft.com/library/windows/hardware/ff536994). The **Notify** method calls the service group's [**RequestService**](https://msdn.microsoft.com/library/windows/hardware/ff537009) method (see **IServiceSink::RequestService**).
 
@@ -68,7 +65,7 @@ In some drivers, ISRs waste time by calling a stream's [**Notify**](https://msdn
 
 However, a driver with this type of ISR needs to make sure that any pending events on a stream are triggered when the stream exits the RUN state. Otherwise, the events might be delayed or lost. This issue arises only during RUN-to-PAUSE transitions in operating systems older than Microsoft Windows XP. In Windows XP and later, the port driver automatically signals any outstanding position events immediately when a stream changes state from RUN to PAUSE. In the older operating systems, however, the miniport driver is responsible for triggering any outstanding events by making a final call to [**Notify**](https://msdn.microsoft.com/library/windows/hardware/ff536918) immediately after the stream is paused. For more information, see PAUSE/ACQUIRE Optimizations below.
 
-A typical WavePci miniport driver manages a single playback stream from the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver). The current implementation of KMixer uses a minimum of three mapping IRPs to buffer a playback stream. Each IRP contains enough buffer storage for about 10 milliseconds of audio. If the miniport driver triggers a hardware interrupt each time the DMA controller finishes with the final mapping in an IRP, interrupts should occur at fairly regular 10-millisecond intervals, which is frequent enough to keep the DMA queue from starving. For more information, see [KMixer Latency](kmixer-latency.md).
+A typical WavePci miniport driver manages a single playback stream from the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver). The current implementation of KMixer uses a minimum of three mapping IRPs to buffer a playback stream. Each IRP contains enough buffer storage for about 10 milliseconds of audio. If the miniport driver triggers a hardware interrupt each time the DMA controller finishes with the final mapping in an IRP, interrupts should occur at fairly regular 10-millisecond intervals, which is frequent enough to keep the DMA queue from starving. 
 
 ### <span id="Timer_DPCs"></span><span id="timer_dpcs"></span><span id="TIMER_DPCS"></span>Timer DPCs
 
@@ -122,12 +119,10 @@ For some audio devices, wave streams with different attributes (3-D, stereo/mono
 
 The process is reversed when a heavyweight stream is closed. The available pin count might increase by more than one in order to reflect the fact that two or more lightweight streams can be created from the newly freed resources.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Performance%20Issues%20for%20a%20WavePci%20Miniport%20Driver%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

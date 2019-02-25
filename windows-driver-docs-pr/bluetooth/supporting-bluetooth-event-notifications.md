@@ -7,11 +7,8 @@ keywords:
 - event notifications WDK Bluetooth
 - notifications WDK Bluetooth
 - profile drivers WDK Bluetooth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Bluetooth Event Notifications
@@ -41,7 +38,7 @@ After the profile driver registers the appropriate callback function, the Blueto
 
 **Note**  A profile driver can register the same callback function to send it change notifications about an open channel and about remote devices attempting to connect to it.
 
- 
+ 
 
 For L2CAP connections, the [*L2CAP callback function*](https://msdn.microsoft.com/library/windows/hardware/ff536755) accepts three parameters:
 
@@ -92,7 +89,7 @@ The value passed in the [*L2CAP callback function's*](https://msdn.microsoft.com
 </tbody>
 </table>
 
- 
+ 
 
 For SCO connections, the [*SCO callback function*](https://msdn.microsoft.com/library/windows/hardware/ff536772) accepts three arguments:
 
@@ -127,7 +124,7 @@ The value passed in the [*SCO callback function's*](https://msdn.microsoft.com/l
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="handling_plug_and_play_removal_irps"></span><span id="HANDLING_PLUG_AND_PLAY_REMOVAL_IRPS"></span>Handling Plug and Play Removal IRPs
 
@@ -137,11 +134,10 @@ After the Bluetooth driver stack receives the surprise removal IRP, it will pass
 
 Profile drivers should unregister all servers when processing [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) IRPs. To unregister a SCO server, a profile driver should [build and send](building-and-sending-a-brb.md) a [**BRB\_SCO\_UNREGISTER\_SERVER**](https://msdn.microsoft.com/library/windows/hardware/ff536630) request. To unregister an L2CAP server, a profile driver should build and send a [**BRB\_L2CA\_UNREGISTER\_SERVER**](https://msdn.microsoft.com/library/windows/hardware/ff536619) request.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[bltooth\bltooth]:%20Supporting%20Bluetooth%20Event%20Notifications%20%20RELEASE:%20%283/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

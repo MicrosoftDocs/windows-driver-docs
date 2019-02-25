@@ -2,11 +2,8 @@
 title: Determining Receive Filtering Capabilities
 description: Determining Receive Filtering Capabilities
 ms.assetid: 11EE5987-A2DE-4388-86D0-77285453E80A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining Receive Filtering Capabilities
@@ -20,9 +17,9 @@ This topic describes how NDIS and overlying drivers determine the receive filter
 
 **Note**  Only the miniport driver for the PCI Express (PCIe) Physical Function (PF) of an SR-IOV network adapter can report receive filtering capabilities. Miniport drivers for PCIe Virtual Functions (VFs) must not report the receive filtering capabilities of the SR-IOV adapter.
 
- 
+ 
 
-## <a href="" id="report"></a>Reporting Receive Filtering Capabilities during *MiniportInitializeEx*
+## Reporting Receive Filtering Capabilities during *MiniportInitializeEx*
 
 
 When NDIS calls the PF miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, the driver provides the following receive filtering capabilities:
@@ -81,7 +78,7 @@ When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.micr
 
 For more information about the adapter initialization process, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
 
-## <a href="" id="query"></a>Querying Receive Filtering Capabilities by Overlying Drivers
+## Querying Receive Filtering Capabilities by Overlying Drivers
 
 
 NDIS passes the network adapter's currently-enabled receive filtering capabilities to overlying drivers that bind to the network adapter in the following way:
@@ -92,9 +89,9 @@ NDIS passes the network adapter's currently-enabled receive filtering capabiliti
 
 NDIS also returns the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566864) structure when it handles object identifier (OID) query requests of [OID\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569786) and [OID\_RECEIVE\_FILTER\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569791) that are issued by overlying protocol or filter drivers.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Issuing OID_NIC_SWITCH_FREE_VF Requests
 description: Issuing OID_NIC_SWITCH_FREE_VF Requests
 ms.assetid: D9A8548C-02D8-4537-9053-6B262004CBC4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Issuing OID\_NIC\_SWITCH\_FREE\_VF Requests
@@ -30,11 +27,11 @@ After an overlying driver requests resource allocation for a VF, that driver is 
 
 **Note**   If an overlying driver issues an OID method request of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](https://msdn.microsoft.com/library/windows/hardware/hh451814) to allocate resources for a VF, that driver is the only component that can request the freeing of the resources for the same VF. The overlying driver must issue an OID set request of [OID\_NIC\_SWITCH\_FREE\_VF](https://msdn.microsoft.com/library/windows/hardware/hh451822) to free the VF resources. Before the overlying driver can be halted, it must free the resources for each VF that was allocated by the driver's OID\_NIC\_SWITCH\_ALLOCATE\_VF request.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

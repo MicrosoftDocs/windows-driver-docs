@@ -1,20 +1,15 @@
 ---
 title: Building the Extension Unit Sample Control
-author: windows-driver-content
 description: Building the Extension Unit Sample Control
 ms.assetid: 57dd0bc3-2aab-42a2-b0c5-7f6ecaefd300
 keywords:
 - Extension Unit controls WDK USB Video Class
 - controls WDK USB Video Class
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 01/30/2019
+ms.localizationpriority: medium
 ---
 
 # Building the Extension Unit Sample Control
-
 
 You can compile the code in this section to create a UVC Extension Unit Sample Control. When you build this project, you create a Microsoft ActiveX control that you can use with a corresponding application to get and set properties on an extension unit.
 
@@ -22,12 +17,13 @@ To use the control, you need hardware that implements the specific extension uni
 
 Use these steps to build the control:
 
-1.  Install the following packages:
-    -   Microsoft Windows Server 2003 with Service Pack 1 (SP1) Driver Development Kit (DDK)
-    -   Microsoft DirectX 9.0 SDK Update (February 2005)
-    -   Microsoft DirectX 9.0 February 2005 SDK Extras
+1. Install the following packages:
 
-2.  Copy the sample code from the following topics into individual files.
+    - Microsoft Windows Server 2003 with Service Pack 1 (SP1) Driver Development Kit (DDK)
+    - Microsoft DirectX 9.0 SDK Update (February 2005)
+    - Microsoft DirectX 9.0 February 2005 SDK Extras
+
+2. Copy the sample code from the following topics into individual files.
 
     [Sample Interface for UVC Extension Units](sample-interface-for-uvc-extension-units.md)
 
@@ -41,8 +37,9 @@ Use these steps to build the control:
 
     [Providing a UVC INF File](providing-a-uvc-inf-file.md)
 
-3.  Create a *sources* file as follows:
-    ```
+3. Create a *sources* file as follows:
+
+    ```cpp
     TARGETNAME= uvcxuplgn
     TARGETTYPE= DYNLINK
     TARGETPATH= obj
@@ -53,7 +50,6 @@ Use these steps to build the control:
     USE_MSVCRT=1
 
     USE_STATIC_ATL=1
-
 
     USER_INCLUDES= $(O)
 
@@ -78,13 +74,14 @@ Use these steps to build the control:
             $(SDK_LIB_PATH)\comctl32.lib
     ```
 
-4.  Create a *makefile* file as follows:
-    ```
+4. Create a *makefile* file as follows:
+
+    ```cpp
     #############################################################################
     #
     #       Copyright (C) Microsoft Corporation 1995
     #       All Rights Reserved.
-    #                                                                          
+    #
     #       MAKEFILE for WDM device driver kit
     #
     #############################################################################
@@ -100,13 +97,15 @@ Use these steps to build the control:
     !endif
     ```
 
-5.  Use the *Guidgen.exe* tool (which is included in the Microsoft Windows SDK) to create three GUIDs:
-    -   Use the first GUID as the property set ID for your extension unit. Replace the x-based GUID placeholders with the new GUID in *Xuproxy.h, Xusample.rgs,Xuplgin.inf,* and in your extension unit descriptor at the hardware level.
-    -   Use the second GUID as the IID for your extension unit. Replace the y-based GUID placeholders with the new GUID in *Interface.idl* and *Xuplgin.inf*.
-    -   Use the third GUID as the class GUID (clsid) for your extension unit. Replace the z-based GUID placeholder with the new GUID in *Xuplgin.inf, Xuproxy.h*, and *Xusample.rgs.*
+5. Use the *Guidgen.exe* tool (which is included in the Microsoft Windows SDK) to create three GUIDs:
 
-6.  Copy *Extend.def* from the WIA extend sample and edit it. *Uvcxuplugn.def* should contain:
-    ```
+    - Use the first GUID as the property set ID for your extension unit. Replace the x-based GUID placeholders with the new GUID in *Xuproxy.h, Xusample.rgs,Xuplgin.inf,* and in your extension unit descriptor at the hardware level.
+    - Use the second GUID as the IID for your extension unit. Replace the y-based GUID placeholders with the new GUID in *Interface.idl* and *Xuplgin.inf*.
+    - Use the third GUID as the class GUID (clsid) for your extension unit. Replace the z-based GUID placeholder with the new GUID in *Xuplgin.inf, Xuproxy.h*, and *Xusample.rgs.*
+
+6. Copy *Extend.def* from the WIA extend sample and edit it. *Uvcxuplugn.def* should contain:
+
+    ```cpp
     LIBRARY uvcxuplgn
 
     EXPORTS
@@ -116,8 +115,9 @@ Use these steps to build the control:
         DllUnregisterServer PRIVATE
     ```
 
-7.  Create *Uvcxuplgn.cpp* as follows:
-    ```
+7. Create *Uvcxuplgn.cpp* as follows:
+
+    ```cpp
     #include "stdafx.h"
     CComModule _Module;
     #include <initguid.h>
@@ -171,8 +171,9 @@ Use these steps to build the control:
     }
     ```
 
-8.  Create *Stdafx.h* as follows:
-    ```
+8. Create *Stdafx.h* as follows:
+
+    ```cpp
     // stdafx.h : include file for standard system include files,
     //      or project specific include files that are used frequently,
     //      but are changed infrequently
@@ -203,8 +204,9 @@ Use these steps to build the control:
     #endif // !defined(AFX_STDAFX_H__722DC775_FE6F_42FB_BED5_E1E299976D17__INCLUDED)
     ```
 
-9.  Create *Stdafx.cpp* as follows:
-    ```
+9. Create *Stdafx.cpp* as follows:
+
+    ```cpp
     // stdafx.cpp : source file that includes just the standard includes
     //  stdafx.pch will be the pre-compiled header
     //  stdafx.obj will contain the pre-compiled type information
@@ -220,13 +222,3 @@ Use these steps to build the control:
     ```
 
 10. Build the sample by invoking Build -cZg in the WDK build environment.
-
- 
-
- 
-
-
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Building%20the%20Extension%20Unit%20Sample%20Control%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-

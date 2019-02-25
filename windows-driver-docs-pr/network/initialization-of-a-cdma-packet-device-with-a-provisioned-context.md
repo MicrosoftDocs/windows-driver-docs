@@ -2,11 +2,8 @@
 title: Initialization of a CDMA Packet Device with a Provisioned Context
 description: Initialization of a CDMA Packet Device with a Provisioned Context
 ms.assetid: 07b4881c-b8df-4831-b0d3-521d187e4232
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initialization of a CDMA Packet Device with a Provisioned Context
@@ -46,9 +43,9 @@ To initialize a CDMA-based packet device with a provisioned context, implement t
 
 14. The miniport driver sends [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391) to the MB Service.
 
- 
+ 
 
- 
+ 
 
 
 

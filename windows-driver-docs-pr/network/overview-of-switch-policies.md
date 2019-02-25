@@ -2,11 +2,8 @@
 title: Overview of Switch Policies
 description: Overview of Switch Policies
 ms.assetid: DB9368CE-96D4-48C9-AE18-601EE4A09001
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Switch Policies
@@ -30,7 +27,7 @@ A custom switch property is specified by the [**NDIS\_SWITCH\_PROPERTY\_TYPE**](
 
 **Note**  The method by which the extension is configured with the property's GUID value is proprietary to the ISV.
 
- 
+ 
 
 Custom switch policies are provisioned through the following OID requests:
 
@@ -44,13 +41,13 @@ A forwarding extension can block the provisioning of the new or updated switch p
 
 **Note**  If the extension does not veto the OID request, it monitors the status when the request is completed. The extension does this to determine whether the OID request was vetoed by underlying extensions in the extensible switch control path or by the extensible switch interface.
 
- 
+ 
 
 For more information on how to manage switch policies and properties, see [Managing Switch Policies](managing-switch-policies.md).
 
- 
+ 
 
- 
+ 
 
 
 

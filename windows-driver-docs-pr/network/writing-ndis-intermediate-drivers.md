@@ -9,17 +9,14 @@ keywords:
 - NDIS intermediate drivers WDK
 - NDIS intermediate drivers WDK , NDIS 6.0
 - intermediate drivers WDK networking , NDIS 6.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing NDIS Intermediate Drivers
 
 
-## <a href="" id="ddk-writing-ndis-intermediate-drivers-ng"></a>
+
 
 
 Unless noted otherwise, NDIS intermediate drivers provide the same services as miniport drivers and protocol drivers. The intermediate driver's miniport edge provides miniport driver services and the protocol edge provides protocol driver services. (For more information, see [Writing NDIS Miniport Drivers](writing-ndis-miniport-drivers.md) and [Writing NDIS Protocol Drivers](writing-ndis-protocol-drivers.md).)The initialization for NDIS 6.0 and later intermediate drivers is different from the initialization for legacy intermediate drivers. Also, NDIS 6.0 and later drivers can register as a combined miniport-intermediate driver.
@@ -32,9 +29,9 @@ The following topics provide more information about intermediate driver initiali
 -   [Initializing a Virtual Miniport](initializing-a-virtual-miniport.md)
 -   [Halting a Virtual Miniport](halting-a-virtual-miniport.md)
 
- 
+ 
 
- 
+ 
 
 
 

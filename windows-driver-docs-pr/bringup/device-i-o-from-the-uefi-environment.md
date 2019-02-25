@@ -1,13 +1,9 @@
 ---
 title: Device I/O from the UEFI environment
-author: windows-driver-content
 description: When the Windows OS loader calls the UpdateCapsule function, each capsule contained in the CapsuleHeaderArray is executed.
 ms.assetid: 843B177F-CD1F-47E6-8F35-0A0FFA8FA192
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device I/O from the UEFI environment
@@ -19,7 +15,7 @@ When the capsule is called, the executable code contained in the capsule is resp
 
 After communication is established, the update management code writes the firmware image to the targeted device. After completing the update, an appropriate return status code is written to the device’s Firmware Resource Entry in the ESRT. The update management code then returns control to the UpdateCapsule function.
 
-For details on the UpdateCapsule function, the structure of a capsule, and UEFI boot services drivers and protocols, refer to the [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkId=218221).
+For details on the UpdateCapsule function, the structure of a capsule, and UEFI boot services drivers and protocols, refer to the [UEFI specification](https://go.microsoft.com/fwlink/p/?LinkId=218221).
 
 ## Related topics
 [ESRT table definition](esrt-table-definition.md)  
@@ -29,6 +25,5 @@ For details on the UpdateCapsule function, the structure of a capsule, and UEFI 
 [Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
 [Firmware update status](firmware-update-status.md)  
 
---------------------
 
 

@@ -3,17 +3,14 @@ title: .shell (Command Shell)
 description: The .shell command launches a shell process and redirects its output to the debugger, or to a specified file.
 ms.assetid: 351cbd54-6e1a-4dc1-b0d8-8e61294b0e86
 keywords: ["Command Shell (.shell) command", "MS-DOS Shell (.shell) command", "DOS Shell (.shell) command", "shell commands, Command Shell (.shell) command", ".shell (Command Shell) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .shell (Command Shell)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .shell (Command Shell)
@@ -21,7 +18,7 @@ api_type:
 
 The **.shell** command launches a shell process and redirects its output to the debugger, or to a specified file.
 
-```
+```dbgcmd
 .shell [Options] [ShellCommand] 
 .shell -i InFile [-o OutFile [-e ErrFile]] [Options] ShellCommand
 ```
@@ -41,7 +38,7 @@ Specifies the path and file name of a file to be used for error output. If -e Er
 <span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
 Can be any number of the following options:
 
-<span id="-ci__Commands_"></span><span id="-ci__commands_"></span><span id="-CI__COMMANDS_"></span>**-ci "***Commands***"**  
+<span id="-ci__Commands_"></span><span id="-ci__commands_"></span><span id="-CI__COMMANDS_"></span>**-ci "**<em>Commands</em>**"**  
 Processes the specified debugger commands, and then passes their output as an input file to the process being launched. *Commands* can be any number of debugger commands, separated by semicolons, and enclosed in quotation marks.
 
 <span id="-x"></span><span id="-X"></span>**-x**  
@@ -73,7 +70,7 @@ Specifies the application command line or Microsoft MS-DOS command to be execute
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -96,15 +93,14 @@ This command cannot be used while debugging CSRSS, because new processes cannot 
 
 You can use the -ci flag to run one or more debugger commands and then pass their output to a shell process. For example, you could pass the output from the [**!process 0 7**](-process.md) command to a Perl script by using the following command:
 
-```
+```dbgcmd
 0:000> .shell -ci "!process 0 7" perl.exe parsemyoutput.pl 
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.shell%20%28Command%20Shell%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

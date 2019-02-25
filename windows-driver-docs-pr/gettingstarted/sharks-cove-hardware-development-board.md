@@ -2,30 +2,29 @@
 title: Sharks Cove hardware development board
 description: Sharks Cove is a hardware development board that you can use to develop hardware and drivers for Windows.
 ms.assetid: D86546BB-B613-4CEE-9A76-3FD269137EE9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sharks Cove hardware development board
 
+> [!WARNING]
+> The Sharks Cove hardware development board is no longer supported for Windows IoT Core.  For a list of currently supported boards, see [SoCs and custom boards](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
-Sharks Cove is a [hardware development board](http://go.microsoft.com/fwlink/p?linkid=506967) that you can use to develop hardware and drivers for Windows.
+Sharks Cove is a [hardware development board](https://go.microsoft.com/fwlink/p?linkid=506967) that you can use to develop hardware and drivers for Windows.
 
 The Intel Sharks Cove board supports driver development for devices that use a variety of interfaces, including GPIO, I2C, I2S, UART, SDIO, and USB. You can also use the Sharks Cove board to develop drivers for cameras and touch screens.
 
-For downloads related to the Sharks Cove board, see [Sharks Cove UEFI Firmware](http://go.microsoft.com/fwlink/p?linkid=403167).
+For downloads related to the Sharks Cove board, see [Sharks Cove UEFI Firmware](https://go.microsoft.com/fwlink/p?linkid=403167).
 
-For detailed specifications, see [Sharks Cove Technical Specifications](http://go.microsoft.com/fwlink/p?linkid=403169).
+For detailed specifications, see [Sharks Cove Technical Specifications](https://go.microsoft.com/fwlink/p?linkid=403169).
 
 ## <span id="Before_you_start"></span><span id="before_you_start"></span><span id="BEFORE_YOU_START"></span>Before you start
 
 
-The instructions given here require that you are running Windows 10, Windows 8.1, or Windows 7. These instructions do not work if you are running Windows 8.
+The instructions given here require that you are running Windows 10, Windows 8.1, or Windows 7. These instructions do not work if you are running Windows 8.
 
-If you are running Windows 7, you need to install [PowerShell 4.0](http://go.microsoft.com/fwlink/p?linkid=507377) and the[Windows Assessment and Deployment Kit (ADK) for Windows 8.1 Update](http://go.microsoft.com/fwlink/p/?linkid=239721). Then on the **Start** menu, go to **All Programs &gt; Windows Kits &gt; Windows ADK &gt; Deployment and Imaging Tools Environment**. Open this Command Prompt window as Administrator. Use this Command Prompt window when you enter the commands given in these instructions.
+If you are running Windows 7, you need to install [PowerShell 4.0](https://go.microsoft.com/fwlink/p?linkid=507377) and the[Windows Assessment and Deployment Kit (ADK) for Windows 8.1 Update](https://go.microsoft.com/fwlink/p/?linkid=239721). Then on the **Start** menu, go to **All Programs &gt; Windows Kits &gt; Windows ADK &gt; Deployment and Imaging Tools Environment**. Open this Command Prompt window as Administrator. Use this Command Prompt window when you enter the commands given in these instructions.
 
 ## <span id="Step_1__Get_the_board_and_related_hardware"></span><span id="step_1__get_the_board_and_related_hardware"></span><span id="STEP_1__GET_THE_BOARD_AND_RELATED_HARDWARE"></span>Step 1: Get the board and related hardware
 
@@ -39,7 +38,7 @@ You will need this hardware:
 -   USB network adapter
 -   Monitor and HDMI cable (and possibly adapters)
 
-You can get a Sharks Cove board at [Mouser Electronics](http://go.microsoft.com/fwlink/p?linkid=403172).
+You can get a Sharks Cove board at [Mouser Electronics](https://go.microsoft.com/fwlink/p?linkid=403172).
 
 ## <span id="Step_2__Download_kits_and_tools"></span><span id="step_2__download_kits_and_tools"></span><span id="STEP_2__DOWNLOAD_KITS_AND_TOOLS"></span>Step 2: Download kits and tools
 
@@ -55,9 +54,9 @@ On the host computer, first download Visual Studio, then download the WDK, and t
 
 ### <span id="Documentation"></span><span id="documentation"></span><span id="DOCUMENTATION"></span>Documentation
 
-The online documentation for the WDK starts [here](http://go.microsoft.com/fwlink/p?linkid=317001).
+The online documentation for the WDK starts [here](https://go.microsoft.com/fwlink/p?linkid=317001).
 
-The online documentation for Debugging Tools for Windows starts [here](http://go.microsoft.com/fwlink/p?linkid=223405).
+The online documentation for Debugging Tools for Windows starts [here](https://go.microsoft.com/fwlink/p?linkid=223405).
 
 The documentation for Debugging Tools for Windows is also available as a CHM file in the installation directory. Example: C:\\Program Files (x86)\\Windows Kits\\8.1\\Debuggers\\x64\\debugger.chm.
 
@@ -84,12 +83,12 @@ You can install one of these versions of Windows on your Sharks Cove board:
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Windows_Embedded_8.1_Industry_Pro_with_Update__x86__-_DVD"></span><span id="windows_embedded_8.1_industry_pro_with_update__x86__-_dvd"></span><span id="WINDOWS_EMBEDDED_8.1_INDUSTRY_PRO_WITH_UPDATE__X86__-_DVD"></span>Windows Embedded 8.1 Industry Pro with Update (x86) - DVD</p></td>
-<td align="left"><p>This requires an MSDN subscription. We will refer to this as the full version.</p></td>
+<td align="left"><p>This requires a subscription. We will refer to this as the full version.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 If you intend to install the evaluation version, read this amendment to the license agreement:
 
@@ -103,7 +102,7 @@ If the use of this software is in support of the Hardware Developer Program the 
     -   All provisions in Section 1.b. that do not directly conflict with the amended section above, shall apply.
 -   **By using the software, you accept these terms.** If you do not accept and comply with these terms, you may not use the software or its features.
 
-Download [Windows Embedded 8.1 Industry (x86) Pro Evaluation](http://go.microsoft.com/fwlink/p?linkid=403173) or Windows Embedded 8.1 Industry Pro with Update (x86) - DVD.
+Download [Windows Embedded 8.1 Industry (x86) Pro Evaluation](https://go.microsoft.com/fwlink/p?linkid=403173) or Windows Embedded 8.1 Industry Pro with Update (x86) - DVD.
 Locate the downloaded file. For example,
 
 9600.17050.WINBLUE\_REFRESH...X86FRE\_EN-US\_DV9.ISO.
@@ -124,20 +123,20 @@ Double click your ISO file, and copy these files to *Root*\\Setup.
 -   Bootmgr.efi
 -   Setup.exe
 
-**Note**  If you are running Windows 7, right-click the ISO file, and choose **Burn disk image** . Burn the image to a recordable DVD. Then copy the files from the DVD to *Root*\\Setup.
+**Note**  If you are running Windows 7, right-click the ISO file, and choose **Burn disk image** . Burn the image to a recordable DVD. Then copy the files from the DVD to *Root*\\Setup.
 
- 
 
-Get the Sharks Cove board support package (BSP) [here](http://go.microsoft.com/fwlink/p?linkid=506954). Copy all the files in the package to *Root*\\SharksCoveBsp.
 
-Get the WDK Development Boards Add-on Kit [here](http://go.microsoft.com/fwlink/p/?linkid=403174). Open the **SourceCode** tab. Click **Download** (not the Downloads tab) to get the kit scripts. Open the Scripts folder, and copy these two items to *Root*.
+Get the Sharks Cove board support package (BSP) [here](https://go.microsoft.com/fwlink/p?linkid=506954). Copy all the files in the package to *Root*\\SharksCoveBsp.
+
+Get the WDK Development Boards Add-on Kit [here](https://go.microsoft.com/fwlink/p/?linkid=403174). Open the **SourceCode** tab. Click **Download** (not the Downloads tab) to get the kit scripts. Open the Scripts folder, and copy these two items to *Root*.
 
 -   Create-DevboardImage.ps1
 -   DevBoard folder
 
-**Note**  The DevBoard folder contains several scripts and modules (DevboardImage.ps1, Devboard.psm1, enable-telnet.ps1, and others).
+**Note**  The DevBoard folder contains several scripts and modules (DevboardImage.ps1, Devboard.psm1, enable-telnet.ps1, and others).
 
- 
+
 
 Open a Command Prompt window as Administrator, and enter **Powershell**. Navigate to *Root*. To add the BSP to your Windows image, enter one of these commands:
 
@@ -153,9 +152,9 @@ If you are using the full version of Windows, enter this command:
 .\Create-DevboardImage -SourcePath Setup\sources\install.wim -Index 1 -BspManifest SharksCoveBsp\SharksCoveBsp.xml
 ```
 
-**Note**  You might need to set your execution policy before you run the **Create-DevboardImage** script. For example:
+**Note**  You might need to set your execution policy before you run the **Create-DevboardImage** script. For example:
 
- 
+
 
 ``` syntax
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
@@ -178,9 +177,9 @@ Set up your Sharks Cove hardware as shown here:
 
 Plug the flash drive into the hub that is connected to the Sharks Cove board. Hold the volume-up button as you start or restart the Sharks Cove board. The volume-up button is the top button in the set of three buttons on the left side of the board as shown in the preceding diagram. (If the board is already started, you can turn it off by holding the Power button for several seconds.) When the board starts, you will see the EFI shell on the screen.
 
-**Note**  You might need to navigate to the EFI Shell. Go to **Boot Manager &gt; EFI Internal Shell**.
+**Note**  You might need to navigate to the EFI Shell. Go to **Boot Manager &gt; EFI Internal Shell**.
 
- 
+
 
 Note the name of the USB flash drive (for example, **fs1**:).
 
@@ -209,11 +208,11 @@ Provisioning the Sharks Cove board is similar to provisioning any other computer
 
 and this topic, which is available on line and in debugger.chm.
 
--   [Setting up Kernel-Mode Debugging using Serial over USB in Visual Studio](http://go.microsoft.com/fwlink/p?linkid=400460)
+-   [Setting up Kernel-Mode Debugging using Serial over USB in Visual Studio](https://go.microsoft.com/fwlink/p?linkid=400460)
 
-**Note**  Before you provision the Sharks Cove board, you need to disable Secure Boot. Restart the Sharks Cove board. As the board restarts, hold the Volume-up button. Go to **Device Manager &gt; System Setup &gt; Boot**. Set **UEFI Security Boot** to **Disabled**.
+**Note**  Before you provision the Sharks Cove board, you need to disable Secure Boot. Restart the Sharks Cove board. As the board restarts, hold the Volume-up button. Go to **Device Manager &gt; System Setup &gt; Boot**. Set **UEFI Security Boot** to **Disabled**.
 
- 
+
 
 ## <span id="Step_5__Write_a_software_driver_for_the_Sharks_Cove_board"></span><span id="step_5__write_a_software_driver_for_the_sharks_cove_board"></span><span id="STEP_5__WRITE_A_SOFTWARE_DRIVER_FOR_THE_SHARKS_COVE_BOARD"></span>Step 5: Write a software driver for the Sharks Cove board
 
@@ -225,13 +224,13 @@ Before you write a device driver for the Sharks Cove board, it is helpful to fam
 ## <span id="Step_6__Alter_the_Secondary_System_Description_Table__SSDT_"></span><span id="step_6__alter_the_secondary_system_description_table__ssdt_"></span><span id="STEP_6__ALTER_THE_SECONDARY_SYSTEM_DESCRIPTION_TABLE__SSDT_"></span>Step 6: Alter the Secondary System Description Table (SSDT)
 
 
-If you are writing a driver for a driver for a device that connects to a simple peripheral bus (SPB) on the Sharks Cove board, you need to update the Secondary System Description Table (SSDT) in the Sharks Cove firmware. An example of this is writing a driver for an accelerometer that transfers data over an I2C bus and generates interrupts through a general-purpose I/O (GPIO) pin. For more information, see [Simple Peripheral Buses](http://go.microsoft.com/fwlink/p?linkid=399232).
+If you are writing a driver for a driver for a device that connects to a simple peripheral bus (SPB) on the Sharks Cove board, you need to update the Secondary System Description Table (SSDT) in the Sharks Cove firmware. An example of this is writing a driver for an accelerometer that transfers data over an I2C bus and generates interrupts through a general-purpose I/O (GPIO) pin. For more information, see [Simple Peripheral Buses](https://go.microsoft.com/fwlink/p?linkid=399232).
 
-Here's an example of altering the SSDT. We will add a table entry for the [ADXL345](http://go.microsoft.com/fwlink/p?linkid=401463) accelerometer.
+Here's an example of altering the SSDT. We will add a table entry for the [ADXL345](https://go.microsoft.com/fwlink/p?linkid=401463) accelerometer.
 
-**Note**  See the [SpbAccelerometer driver cookbook](https://msdn.microsoft.com/library/windows/hardware/dn760712) for a step-by-step guide to the [SpbAccelerometer sample driver](http://go.microsoft.com/fwlink/p?linkid=506965) and the ADXL345 accelerometer.
+**Note**  See the [SpbAccelerometer driver cookbook](https://msdn.microsoft.com/library/windows/hardware/dn760712) for a step-by-step guide to the [SpbAccelerometer sample driver](https://go.microsoft.com/fwlink/p?linkid=506965) and the ADXL345 accelerometer.
 
- 
+
 
 1.  Copy the x86 version of ASL.exe to the Sharks Cove board. ASL.exe is included in the WDK.
 
@@ -292,56 +291,58 @@ Here's an example of altering the SSDT. We will add a table entry for the [ADXL3
             Name(_UID, 1)
 
 
-            Method(_CRS, 0x0, NotSerialized)
+
+        Method(_CRS, 0x0, NotSerialized)
+        {
+            Name(RBUF, ResourceTemplate()
+            {          
+                I2CSerialBus(0x53, ControllerInitiated, 400000, AddressingMode7Bit, "\\_SB.I2C3", 0, ResourceConsumer) 
+                GpioInt(Edge, ActiveHigh, Exclusive, PullDown, 0, "\\_SB.GPO2") {0x17}
+            })
+
+            Return(RBUF)
+        }
+
+
+        Method(_DSM, 0x4, NotSerialized)
+        {
+            If(LEqual(Arg0, Buffer(0x10)
             {
-                Name(RBUF, ResourceTemplate()
-                {          
-                    I2CSerialBus(0x53, ControllerInitiated, 400000, AddressingMode7Bit, "\\_SB.I2C3", 0, ResourceConsumer) 
-                    GpioInt(Edge, ActiveHigh, Exclusive, PullDown, 0, "\\_SB.GPO2") {0x17}
-                })
-
-                Return(RBUF)
-            }
-
-
-            Method(_DSM, 0x4, NotSerialized)
+                0x1e, 0x54, 0x81, 0x76, 0x27, 0x88, 0x39, 0x42, 0x8d, 0x9d, 0x36, 0xbe, 0x7f, 0xe1, 0x25, 0x42
+            }))
             {
-                If(LEqual(Arg0, Buffer(0x10)
-                {
-                    0x1e, 0x54, 0x81, 0x76, 0x27, 0x88, 0x39, 0x42, 0x8d, 0x9d, 0x36, 0xbe, 0x7f, 0xe1, 0x25, 0x42
-                }))
-                {
-                    If(LEqual(Arg2, Zero))
-                    {
-                        Return(Buffer(One)
-                        {
-                            0x03
-                        })
-                    }
-
-                    If(LEqual(Arg2, One))
-                    {
-                        Return(Buffer(0x4)
-                        {
-                            0x00, 0x01, 0x02, 0x03
-                        })
-                    }
-                }
-                Else
+                If(LEqual(Arg2, Zero))
                 {
                     Return(Buffer(One)
                     {
-                        0x00
+                        0x03
                     })
                 }
-            } // Method(_DSM ...)
 
-        } // Device(SPBA)
+                If(LEqual(Arg2, One))
+                {
+                    Return(Buffer(0x4)
+                    {
+                        0x00, 0x01, 0x02, 0x03
+                    })
+                }
+            }
+            Else
+            {
+                Return(Buffer(One)
+                {
+                    0x00
+                })
+            }
+        } // Method(_DSM ...)
 
-    } // Scope(_SB_)
-    ```
+    } // Device(SPBA)
 
-    In this example, the entries under `ResourceTemplate()` specify that the accelerometer needs two hardware resources: a connection ID to a particular I2C bus controller (I2C3) and a GPIO interrupt. The interrupt uses pin 0x17 on the GPIO controller named GPO2.
+} // Scope(_SB_)
+```
+
+In this example, the entries under `ResourceTemplate()` specify that the accelerometer needs two hardware resources: a connection ID to a particular I2C bus controller (I2C3) and a GPIO interrupt. The interrupt uses pin 0x17 on the GPIO controller named GPO2.
+
 
 5.  After you have added your own Device entry to Ssdt.asl, compile Ssdt.asl by entering this command:
 
@@ -351,33 +352,35 @@ Here's an example of altering the SSDT. We will add a table entry for the [ADXL3
 
 6.  Verify that test signing is turned on for the Sharks Cove board.
 
-    **Note**  Test signing is turned on automatically during provisioning.
+    **Note**  Test signing is turned on automatically during provisioning.
 
-     
 
-    On the Sharks Cove board, open a Command Prompt window as Administrator. Enter this command.
 
-    **bcdedit /enum {current}**
 
-    Verify that you see `testsigning Yes` in the output.
+On the Sharks Cove board, open a Command Prompt window as Administrator. Enter this command.
 
-    ``` syntax
-    Windows Boot Loader
-    -------------------
-    identifier              {current}
-    ...
-    testsigning             Yes
-    ...
-    ```
+**bcdedit /enum {current}**
 
-    If you need to turn on test signing manually, here are the steps:
+Verify that you see `testsigning Yes` in the output.
 
-    1.  Open a Command Prompt window as Administrator, and enter this command.
+``` syntax
+Windows Boot Loader
+-------------------
+identifier              {current}
+...
+testsigning             Yes
+...
+```
 
-        **bcdedit /set TESTSIGNING ON**
+If you need to turn on test signing manually, here are the steps:
 
-    2.  Restart the Sharks Cove board. As the board restarts, hold the Volume-up button. Go to **Device Manager &gt; System Setup &gt; Boot**. Set **UEFI Security Boot** to **Disabled**.
-    3.  Save your changes and continue booting to Windows.
+1.  Open a Command Prompt window as Administrator, and enter this command.
+
+    **bcdedit /set TESTSIGNING ON**
+
+2.  Restart the Sharks Cove board. As the board restarts, hold the Volume-up button. Go to **Device Manager &gt; System Setup &gt; Boot**. Set **UEFI Security Boot** to **Disabled**.
+3.  Save your changes and continue booting to Windows.
+
 
 7.  To load your updated SSDT, open a Command Prompt window as Administrator, and enter this command:
 
@@ -388,7 +391,7 @@ Here's an example of altering the SSDT. We will add a table entry for the [ADXL3
 ## <span id="Step_7__Connect_your_device_to_the_Sharks_Cove_board"></span><span id="step_7__connect_your_device_to_the_sharks_cove_board"></span><span id="STEP_7__CONNECT_YOUR_DEVICE_TO_THE_SHARKS_COVE_BOARD"></span>Step 7: Connect your device to the Sharks Cove board
 
 
-Get the specification for the Sharks Cove headers and pins [here](http://go.microsoft.com/fwlink/p?linkid=506966).
+Get the specification for the Sharks Cove headers and pins [here](https://go.microsoft.com/fwlink/p?linkid=506966).
 
 Use the specification to determine which pins to use for your device. For example, suppose you want to connect the ADXL345 accelerometer to an I2C bus. In the specification, you can see that the J1C1 header has the pins you need. Here are some, but not all, of the pins you would use on the J1C1 header.
 
@@ -398,7 +401,7 @@ Use the specification to determine which pins to use for your device. For exampl
 | 13  | SIO\_I2C2\_DATA | I2C Data line for I2C controller 2  | \_SB.I2C3        |
 | 15  | SIO\_I2C2\_CLK  | I2C clock line for I2C controller 2 | \_SB.I2C3        |
 
- 
+
 
 Notice the relationship to the Device entry in the SSDT.
 
@@ -446,7 +449,7 @@ When you are ready to test your driver on the Sharks Cove board, follow these st
 
 As an alternative to using Visual Studio to set up kernel-mode debugging, you can do the setup manually. This topic is available on line and in debugger.chm.
 
--   [Setting up Kernel-Mode Debugging using Serial over USB Manually](http://go.microsoft.com/fwlink/p?linkid=400461)
+-   [Setting up Kernel-Mode Debugging using Serial over USB Manually](https://go.microsoft.com/fwlink/p?linkid=400461)
 
 As an alternative to using Visual Studio for debugging, you can use WinDbg.
 
@@ -458,37 +461,36 @@ Regardless of whether you use Visual Studio or WinDbg, these hands-on guides are
 ## <span id="Sample_driver_code"></span><span id="sample_driver_code"></span><span id="SAMPLE_DRIVER_CODE"></span>Sample driver code
 
 
--   [SpbAccelerometer Sample Driver (UMDF Version 1)](http://go.microsoft.com/fwlink/p?linkid=506965)
+-   [SpbAccelerometer Sample Driver (UMDF Version 1)](https://go.microsoft.com/fwlink/p?linkid=506965)
 
 ## <span id="Understanding_simple_peripheral_buses"></span><span id="understanding_simple_peripheral_buses"></span><span id="UNDERSTANDING_SIMPLE_PERIPHERAL_BUSES"></span>Understanding simple peripheral buses
 
 
-To learn how Windows drivers work with simple peripheral buses, see [Simple Peripheral Buses](http://go.microsoft.com/fwlink/p?linkid=399232).
+To learn how Windows drivers work with simple peripheral buses, see [Simple Peripheral Buses](https://go.microsoft.com/fwlink/p?linkid=399232).
 
 ## <span id="related_topics"></span>Related topics
 
 
-[SharksCove.org](http://go.microsoft.com/fwlink/p?linkid=403167)
+[SharksCove.org](https://go.microsoft.com/fwlink/p?linkid=403167)
 
-[Concepts for all driver developers](http://go.microsoft.com/fwlink/p/?linkid=399233)
+[Concepts for all driver developers](https://go.microsoft.com/fwlink/p/?linkid=399233)
 
-[Developing, Testing, and Deploying Drivers](http://go.microsoft.com/fwlink/p/?linkid=399234)
+[Developing, Testing, and Deploying Drivers](https://go.microsoft.com/fwlink/p/?linkid=399234)
 
-[Windows Driver Frameworks](http://go.microsoft.com/fwlink/p/?linkid=399235)
+[Windows Driver Frameworks](https://go.microsoft.com/fwlink/p/?linkid=399235)
 
-[Windows Hardware Developer Center](http://go.microsoft.com/fwlink/p/?linkid=8703)
+[Windows Hardware Developer Center](https://go.microsoft.com/fwlink/p/?linkid=8703)
 
-[WDK Samples for Windows](http://go.microsoft.com/fwlink/p?linkid=394031)
+[WDK Samples for Windows](https://go.microsoft.com/fwlink/p?linkid=394031)
 
-[Windows Hardware and Driver Developer Community](http://go.microsoft.com/fwlink/p?linkid=393983)
+[Windows Hardware and Driver Developer Community](https://go.microsoft.com/fwlink/p?linkid=393983)
 
-[Technical Support](http://go.microsoft.com/fwlink/p/?linkid=8713)
+[Technical Support](https://go.microsoft.com/fwlink/p/?linkid=8713)
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wdkgetstart\wdkgetstart]:%20Sharks%20Cove%20hardware%20development%20board%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

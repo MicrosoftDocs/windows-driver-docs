@@ -1,14 +1,10 @@
 ---
 title: Understanding TPS Components
-author: windows-driver-content
 description: Understanding TPS Components
 ms.assetid: 4bc962fa-8c05-4b0f-b634-9c0f435907b7
 keywords: ["transaction processing systems WDK KTM , components", "TPS WDK KTM , components", "transaction processing systems WDK KTM , scenarios", "TPS WDK KTM , scenarios", "resource managers WDK KTM , in a TPS"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Understanding TPS Components
@@ -50,7 +46,7 @@ When your resource manager is loaded, it must register itself with KTM by callin
 
 You might want your resource manager to support a set of functions that enable clients to create data objects, read and write data that is associated with the data objects, and close the data objects. The following pseudocode shows an example code sequence from a client.
 
-```
+```cpp
 CreateDataObject (IN TransactionID, OUT DataHandle);
 ReadData (IN DataHandle, OUT Data);
 WriteData (IN DataHandle, IN Data);
@@ -73,7 +69,7 @@ What happens if your resource manager reports an error for one of the client's c
 
 The following pseudocode shows an example of a more detailed sequence of a client's transactional operations.
 
-```
+```cpp
     ZwCreateTransaction (&TransactionHandle, ...);
     ZwQueryInformationTransaction (TransactionHandle, ...);
     CreateDataObject (TransactionID, &DataHandle);
@@ -112,7 +108,7 @@ The following pseudocode shows how a client might create a single transaction th
 
 In this example, the client reads data from the first database and writes it to the second database. Then, the client reads data from the second database and writes it to the first database. (The first resource manager exports functions that begin with **Rm1**, and the second resource manager exports functions that begin with **Rm2**.)
 
-```
+```cpp
     ZwCreateTransaction (&TransactionHandle, ...);
     ZwQueryInformationTransaction (TransactionHandle, ...);
     Rm1CreateDataObject (TransactionID, &Rm1DataHandle);
@@ -152,12 +148,10 @@ KTM supports other TPS scenarios. For example, the following scenarios describe 
 
     In this case, you typically have to modify the existing resource manager so that it becomes a [superior transaction manager](creating-a-superior-transaction-manager.md) that communicates with KTM.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Understanding%20TPS%20Components%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

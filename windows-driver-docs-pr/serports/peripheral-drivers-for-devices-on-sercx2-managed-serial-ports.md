@@ -1,13 +1,9 @@
 ---
 title: Peripheral Drivers for Devices on SerCx2-Managed Serial Ports
-author: windows-driver-content
 description: Typically, a serial port managed by SerCx2 is permanently connected to a peripheral device.
 ms.assetid: 06412F66-3192-4D25-BDBA-FAB2211519DA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Peripheral Drivers for Devices on SerCx2-Managed Serial Ports
@@ -38,7 +34,7 @@ Interrupts from the peripheral device travel upward through the communication pa
 
 The two blocks shown in gray in the diagram are system-supplied modules. The GPIO framework extension (GpioClx) is available starting with Windows 8. Like SerCx2, GpioClx is an extension to KMDF. GpioClx performs functions that are common to a variety of GPIO controllers. GpioClx works with a GPIO controller driver that manages all hardware-specific operations in the GPIO controller. For more information, see [GPIO Driver Support Overview](https://msdn.microsoft.com/library/windows/hardware/hh439512).
 
-## I/O request path
+## I O request path
 
 
 To transmit data to the peripheral device, the peripheral driver sends a write ([**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff546904)) request to the serial controller. To receive data from the peripheral device, the peripheral driver sends a read ([**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff546883)) request to the serial controller.
@@ -64,12 +60,10 @@ GPIO interrupts are only one way for the peripheral driver to receive notificati
 
 However, the serial controller can detect hardware events only when it is in the D0 device power state. If the serial controller is in a low-power state, the peripheral driver cannot rely on notifications from the serial controller to know when, for example, the peripheral device has new data for the driver to read. In this case, the peripheral device must send an interrupt signal (or, perhaps, a wake signal) through a GPIO pin. A GPIO controller consumes very little power and typically remains active after most other devices have entered low-power states.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bserports\serports%5D:%20Peripheral%20Drivers%20for%20Devices%20on%20SerCx2-Managed%20Serial%20Ports%20%20RELEASE:%20%288/4/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -1,11 +1,8 @@
 ---
 Description: Defining the Sensor Properties
 title: Defining the Sensor Properties
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Defining the Sensor Properties
@@ -29,19 +26,19 @@ In WPD, properties are represented by the PROPERTYKEY data structure. This struc
 
 By using the DECLARE\_PROPERTYKEY macro, you can declare a PROPERTYKEY structure for a new property in your driver. The following example shows the declaration of a PROPERTYKEY for the SENSOR\_READING property. This example appears in the *WpdObjectProperties.cpp* file.
 
-```
+```cpp
 DECLARE_PROPERTYKEY(SENSOR_READING, 0xa7ef4367, 0x6550, 0x4055, 0xb6, 0x6f, 0xbe, 0x6f, 0xda, 0xcf, 0x4e, 0x9f, 2);
 ```
 
 In addition to declaring a PROPERTYKEY, you must define the key. The definition of the SENSOR\_READING key appears in the *Stdafx.h* file.
 
-```
+```cpp
 DEFINE_PROPERTYKEY(SENSOR_READING, 0xa7ef4367, 0x6550, 0x4055, 0xb6, 0x6f, 0xbe, 0x6f, 0xda, 0xcf, 0x4e, 0x9f, 2);
 ```
 
 The *WpdObjectProperties.cpp* file contains definitions for three arrays of PROPERTKEY structures. These arrays identify collections of related, supported properties. The first is an array of PROPERTYKEYs that identify properties that are common to both the device and sensor objects.
 
-```
+```cpp
 const PROPERTYKEY g_SupportedCommonProperties[] =
 {
     WPD_OBJECT_ID,
@@ -58,7 +55,7 @@ If you use the *WpdInfo.exe* tool to retrieve the current device and sensor prop
 
 The second array is an array of PROPERTYKEYS that identifies properties that the device object supports.
 
-```
+```cpp
 const PROPERTYKEY g_SupportedDeviceProperties[] =
 {
     WPD_DEVICE_FIRMWARE_VERSION,
@@ -77,7 +74,7 @@ const PROPERTYKEY g_SupportedDeviceProperties[] =
 
 The values that are assigned to the various static properties in this array are defined in *WpdObjectProperties.h*.
 
-```
+```cpp
 #define DEVICE_PROTOCOL_VALUE            L"Sensor Protocol ver 1.00"
 #define DEVICE_FIRMWARE_VERSION_VALUE    L"1.0.0.0"
 #define DEVICE_POWER_LEVEL_VALUE         100
@@ -86,14 +83,13 @@ The values that are assigned to the various static properties in this array are 
 #define DEVICE_MANUFACTURER_VALUE        L"Windows Portable Devices Group"
 #define DEVICE_SERIAL_NUMBER_VALUE       L"01234567890123-45676890123456"
 #define DEVICE_SUPPORTS_NONCONSUMABLE_VALUE    FALSE
-
 ```
 
 These values are assigned in the **WpdObjectProperties::GetPropertyValuesForObject** method.
 
 For example, the following excerpt from this method assigns the device model string (Parallax BS2 Sensor) to the WPD\_DEVICE\_MODEL property.
 
-```
+```cpp
 if (IsEqualPropertyKey(Key, WPD_DEVICE_MODEL))
 {
     hr = pValues->SetStringValue(WPD_DEVICE_MODEL, DEVICE_MODEL_VALUE);
@@ -103,7 +99,7 @@ if (IsEqualPropertyKey(Key, WPD_DEVICE_MODEL))
 
 The third array is an array of PROPERTYKEYS that identifies properties that the sensor object supports, in addition to the common object properties.
 
-```
+```cpp
 const PROPERTYKEY g_SupportedSensorProperties[] =
 {
     SENSOR_READING,
@@ -122,11 +118,10 @@ These values are also assigned in the **WpdObjectProperties::GetPropertyValuesFo
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wpd_dk\wpddk]:%20Defining%20the%20Sensor%20Properties%20%20RELEASE:%20%281/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

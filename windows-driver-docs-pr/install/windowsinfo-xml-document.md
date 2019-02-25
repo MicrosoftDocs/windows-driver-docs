@@ -2,11 +2,8 @@
 title: WindowsInfo XML Document
 description: WindowsInfo XML Document
 ms.assetid: 8004d165-46c5-4bf4-849d-ba83205b9f54
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WindowsInfo XML Document
@@ -24,9 +21,9 @@ Each device metadata package must contain only one WindowsInfo XML document. The
 
 The data in the WindowsInfo XML document is formatted based on the [WindowsInfo XML Schema](https://msdn.microsoft.com/library/windows/hardware/ff553992).
 
- 
+ 
 
- 
+ 
 
 
 

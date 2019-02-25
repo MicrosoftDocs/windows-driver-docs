@@ -4,11 +4,8 @@ description: Stream Inspection
 ms.assetid: 77e152bf-cb6b-4845-9a5e-9c37281f23f1
 keywords:
 - stream inspection WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Stream Inspection
@@ -27,7 +24,7 @@ To replace a pattern found in the middle of an indicated segment (for example, *
 
 3.  The callout's *classifyFn* function is called again with *p* + *m* bytes. WFP will call *classifyFn* again if **countBytesEnforced** is less than the indicated amount.
 
-4.  From the *classifyFn* function, the callout calls the *FwpStreamInjectAsync0* function to inject the replacement pattern *p'*. The callout then returns **FWP\_ACTION\_BLOCK** with **countBytesEnforced** set to *p*.
+4.  From the *classifyFn* function, the callout calls the *FwpsStreamInjectAsync0* function to inject the replacement pattern *p'*. The callout then returns **FWP\_ACTION\_BLOCK** with **countBytesEnforced** set to *p*.
 
 5.  The callout's *classifyFn* function is called again with *m* bytes.
 
@@ -48,11 +45,11 @@ Because stream data can be indicated as a [**NET\_BUFFER\_LIST**](https://msdn.m
 
 WFP also supports stream data throttling for the incoming direction. If a callout cannot keep pace with the incoming data rate, it can return **FWPS\_STREAM\_ACTION\_DEFER** to "pause" the stream. The stream can then be "resumed" by calling the [**FwpsStreamContinue0**](https://msdn.microsoft.com/library/windows/hardware/ff551210) function. Deferring a stream with this function causes the TCP/IP stack to stop ACK-processing incoming data. This causes the TCP sliding window to decrease toward 0.
 
-For out-of-band stream inspection callouts, [**FwpsStreamContinue0**](https://msdn.microsoft.com/library/windows/hardware/ff551210) must not be called while the **FwpStreamInjectAsync0** function is called.
+For out-of-band stream inspection callouts, [**FwpsStreamContinue0**](https://msdn.microsoft.com/library/windows/hardware/ff551210) must not be called while the **FwpsStreamInjectAsync0** function is called.
 
 Injected stream data will not be re-indicated to the callout, but it will be made available to stream callouts from lower-weight sublayers.
 
-The [Windows Filtering Platform Stream Edit Sample](http://go.microsoft.com/fwlink/p/?LinkId=617933) in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub shows how to perform inline and out-of-band editing at the stream layer.
+The [Windows Filtering Platform Stream Edit Sample](https://go.microsoft.com/fwlink/p/?LinkId=617933) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub shows how to perform inline and out-of-band editing at the stream layer.
 
 **Note**  Windows Server 2008 and later do not support removal of a stream filter during the following processes:
 -   The callout is performing out-of-band packet injection.
@@ -61,7 +58,7 @@ The [Windows Filtering Platform Stream Edit Sample](http://go.microsoft.com/fwli
 
 -   The callout is deferring a stream by setting the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](https://msdn.microsoft.com/library/windows/hardware/ff552417) structure to **FWPS\_STREAM\_ACTION\_DEFER**.
 
- 
+ 
 
 ## Dynamic Stream Inspection
 
@@ -82,9 +79,9 @@ Moreover:
 1. Every non-inspect callout at the stream layer must explicitly assign a value to the **actionType** member of the *classifyOut* parameter regardless of what value may have been previously set in that parameter.
 2. The **FWPS\_RIGHT\_ACTION\_WRITE** flag in the **rights** member of the *classifyOut* parameter has no significance in the WFP stream layer. Callouts at this layer should not check for the presence of this flag. Callouts may process the indicated *layerData* parameter regardless of the value of *classifyOut*->**rights**.
 
- 
+ 
 
- 
+ 
 
 
 

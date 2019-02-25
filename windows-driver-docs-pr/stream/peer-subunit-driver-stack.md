@@ -1,6 +1,5 @@
 ---
 title: Peer Subunit Driver Stack
-author: windows-driver-content
 description: Peer Subunit Driver Stack
 ms.assetid: 6ef4b6ae-3802-4ba9-acfa-4b3edba11ba3
 keywords:
@@ -14,11 +13,8 @@ keywords:
 - command extension mechanism WDK AV/C
 - command targets WDK AV/C
 - Avc.sys function driver WDK , driver stacks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Peer Subunit Driver Stack
@@ -28,7 +24,7 @@ The peer driver stack consists of the drivers loaded to represent AV/C subunits 
 
 Peer subunit drivers access and control their subunits through the IOCTL\_AVC\_CLASS interface that is exported by *Avc.sys*. *Avc.sys* handles the AV/C command and response protocol, including all interaction with the IEC 61883 Function Control Protocol (FCP). However, note that a peer subunit driver is not prevented from communicating with and directly accessing certain *61883.sys* functionality when necessary. A subunit driver might need to communicate directly with *61883.sys* when the subunit driver represents an AV/C subunit that uses a stream format that Microsoft does not support. A subunit driver can use the **IOCTL\_61883\_CLASS** interface to communicate directly with *61883.sys* when necessary. Microsoft supplies the lower-filter driver, *Avcstrm.sys*, which can assist with streaming DV and MPEG2 formats. For more information about *Avcstrm.sys*, see [AV/C Streaming Overview](av-c-streaming-overview.md).
 
-A peer subunit driver can register to be notified of and receive AV/C commands from external AV/C devices. To register, a peer subunit driver issues an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766) I/O request packet (IRP) with the **IoControlCode** member of the IOCTL\_AVC\_CLASS I/O control code and the subfunction set to AVC\_FUNCTION\_GET\_REQUEST. This functionality allows a peer subunit driver to receive AV/C requests from its subunit and enables support for specifications, such as the Connection and Compatibility Management (CCM) protocol and Digital Transmission Content Protection (DTCP).. For more information about CCM, see the [IEEE 1394 Trade Association](http://go.microsoft.com/fwlink/p/?LinkId=518448) website. For more information about DTCP, see the [Digital Transmission Licensing Administrator](http://go.microsoft.com/fwlink/p/?linkid=8731) website.
+A peer subunit driver can register to be notified of and receive AV/C commands from external AV/C devices. To register, a peer subunit driver issues an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766) I/O request packet (IRP) with the **IoControlCode** member of the IOCTL\_AVC\_CLASS I/O control code and the subfunction set to AVC\_FUNCTION\_GET\_REQUEST. This functionality allows a peer subunit driver to receive AV/C requests from its subunit and enables support for specifications, such as the Connection and Compatibility Management (CCM) protocol and Digital Transmission Content Protection (DTCP).. For more information about CCM, see the [IEEE 1394 Trade Association](https://go.microsoft.com/fwlink/p/?LinkId=518448) website. For more information about DTCP, see the [Digital Transmission Licensing Administrator](https://go.microsoft.com/fwlink/p/?linkid=8731) website.
 
 Note that this functionality is intended to support a virtual AV/C subunit driver to send AV/C commands to the computer (where the subunit driver is located in the virtual AV/C device stack) and not to permit AV/C subunits on external devices to send AV/C commands to the computer system.
 
@@ -48,12 +44,10 @@ In the context of the peer subunit driver stack, target functionality is limited
 
 To use the built-in extension mechanism, specify the unit address as 0xff in the **SubunitAddress** member of the AVC\_COMMAND\_IRB structure. The **SubunitAddress** member is left alone in for unit commands (the unit address provided by the subunit driver still exists). The virtual subunit driver is always able to key off of the **SubunitAddress** member.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Peer%20Subunit%20Driver%20Stack%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

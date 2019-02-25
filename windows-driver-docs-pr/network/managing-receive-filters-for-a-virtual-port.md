@@ -2,11 +2,8 @@
 title: Managing the Receive Filters for a Virtual Port
 description: Managing the Receive Filters for a Virtual Port
 ms.assetid: 6FDBB159-3094-42F7-95EB-695B64BD4342
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing the Receive Filters for a Virtual Port
@@ -26,9 +23,9 @@ This section includes the following topics:
 
 For information about how to create VPorts, see [Creating a Virtual Port](creating-a-virtual-port.md).
 
- 
+ 
 
- 
+ 
 
 
 

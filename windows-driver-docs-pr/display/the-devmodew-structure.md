@@ -8,11 +8,8 @@ keywords:
 - DEVMODEW structure WDK Windows 2000 display
 - Unicode WDK graphics
 - drawing WDK GDI , DEVMODEW structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # The DEVMODEW Structure
@@ -55,7 +52,7 @@ Applications and drivers are free to ask for a DEVMODEW structure and modify its
 
 In order to modify private DEVMODEW structure members, a driver must first determine the offset of the beginning of the private data. Given a pointer to the beginning of this structure, and the **dmSize** member, which holds the size of the public portion of the structure, the beginning of the private portion can be found. The following example shows how to initialize a pointer to the beginning of the private section. In this example, *pdm* points to the beginning of the DEVMODEW structure.
 
-```
+```cpp
 PVOID pvDriverData = (PVOID)  (((BYTE *) pdm) + (pdm -> dmSize));
 ```
 
@@ -102,7 +99,7 @@ The following table lists several public DEVMODEW members that are used *only* b
 </tbody>
 </table>
 
- 
+ 
 
 The next table lists several public DEVMODEW members that are used *only* by display drivers:
 
@@ -136,12 +133,12 @@ The next table lists several public DEVMODEW members that are used *only* by dis
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>dmDisplayFrequency</strong></p></td>
-<td align="left"><p>Specifies, in hertz, the display's refresh rate.</p></td>
+<td align="left"><p>Specifies, in hertz, the display&#39;s refresh rate.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The third table lists several public DEVMODEW members that are used by both printer and display drivers:
 
@@ -159,9 +156,9 @@ The third table lists several public DEVMODEW members that are used by both prin
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>dmDeviceName</strong></p></td>
-<td align="left"><p>For displays, specifies the display driver's DLL.</p>
+<td align="left"><p>For displays, specifies the display driver&#39;s DLL.</p>
 <div>
- 
+ 
 </div>
 For printers, specifies the &quot;friendly name&quot; of the printer.</td>
 </tr>
@@ -180,13 +177,12 @@ For printers, specifies the &quot;friendly name&quot; of the printer.</td>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20The%20DEVMODEW%20Structure%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

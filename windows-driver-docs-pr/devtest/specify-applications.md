@@ -4,31 +4,28 @@ description: Specify applications in the Device Metadata Authoring Wizard
 ms.assetid: B3ECEBF3-FBC6-45E7-9FF5-439F1CDF351F
 keywords:
 - Specify applications in the Device Metadata Authoring Wizard
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specify applications in the Device Metadata Authoring Wizard
 
 
-You can specify various applications for your device, including the Windows Store device app and privileged applications.
+You can specify various applications for your device, including the Microsoft Store device app and privileged applications.
 
-The Windows Store device app is downloaded and installed when a user first connects a device. Privileged applications have special access to the device. You can specify only one of each.
+The UWP device app is downloaded and installed when a user first connects a device. Privileged applications have special access to the device. You can specify only one of each.
 
-For more information about Windows Store device apps and privileged applications, see [Windows 8 Device Experience](http://go.microsoft.com/fwlink/p/?LinkId=227312).
+For more information about UWP device apps and privileged applications, see [Windows 8 Device Experience](https://go.microsoft.com/fwlink/p/?LinkId=227312).
 
-## <span id="To_specify_the_Windows_Store_device_app"></span><span id="to_specify_the_windows_store_device_app"></span><span id="TO_SPECIFY_THE_WINDOWS_STORE_DEVICE_APP"></span>To specify the Windows Store device app
+## <span id="To_specify_the_Windows_Store_device_app"></span><span id="to_specify_the_windows_store_device_app"></span><span id="TO_SPECIFY_THE_WINDOWS_STORE_DEVICE_APP"></span>To specify the Microsoft Store device app
 
 
 1.  Click the **Applications** tab.
 2.  Fill out the following fields:
-    -   **Package Name**. Enter the value of the Name attribute in the Identity element in the Package element of the Application Manifest. The package name should be obtained after an app submission to the Windows Store is created, because the Package Name is changed by the Windows Store submission process. See [Windows Store Device App lifecycle](http://go.microsoft.com/fwlink/p/?linkid=246571) for more info on how to associate the app with the Windows Store and copy updated values into the app manifest.
+    -   **Package Name**. Enter the value of the Name attribute in the Identity element in the Package element of the Application Manifest. The package name should be obtained after an app submission to the Microsoft Store is created, because the Package Name is changed by the Microsoft Store submission process. See [UWP device app lifecycle](https://go.microsoft.com/fwlink/p/?linkid=246571) for more info on how to associate the app with the Microsoft Store and copy updated values into the app manifest.
     -   **Publisher**. Enter the value of the Publisher attribute in the Identity element in the Package element of the Application Manifest. The Publisher Name should be the same as the one on the developer certificate used to sign the package and the metadata.
     -   **App ID**. Enter the value of the ID attribute in the Application element of the Application Manifest.
-    -   **Notification Handlers**. For information about Notification Handlers, see [Device Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226753).
+    -   **Notification Handlers**. For information about Notification Handlers, see [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753).
 
 The **Package Name**, **Publisher**, and **App ID** must match the information in the app package .appxmanifest.
 
@@ -69,14 +66,14 @@ The following is an example of the Application Manifest:
 ## <span id="Privileged_applications"></span><span id="privileged_applications"></span><span id="PRIVILEGED_APPLICATIONS"></span>Privileged applications
 
 
-For the Windows Store device app to have access to privileged device interfaces, the app must be specified under **Privileged Applications**.
+For the Microsoft Store device app to have access to privileged device interfaces, the app must be specified under **Privileged Applications**.
 
 To specify the privileged applications, fill out the following fields under **Privileged Application**:
 
-**Note**  
-For more information about the Privileged Device Interface Property Key, see [DEVPKEY\_DeviceInterface\_Restricted](http://go.microsoft.com/fwlink/p/?linkid=256362).
+**Note**  
+For more information about the Privileged Device Interface Property Key, see [DEVPKEY\_DeviceInterface\_Restricted](https://go.microsoft.com/fwlink/p/?linkid=256362).
 
- 
+
 
 -   **Package Name**. Enter the value of the Name attribute in the Identity element in the Package element of the Application Manifest.
 -   **Publisher**. Enter the value of the Publisher attribute in the Identity element in the Package element of the Application Manifest.
@@ -121,7 +118,6 @@ The following is an example of an Application Manifest, showing the Identity Nam
     </Application>
   </Applications>
 </Package>
-
 ```
 
 The following is an example of the elements in the XML generated by the Device Metadata Authoring Wizard that correspond to the Application Manifest fields:
@@ -154,19 +150,17 @@ The following is an example of the elements in the XML generated by the Device M
     </Package>
   </PrivilegedApplications>
 </SoftwareInfo>
-
 ```
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Device Metadata Schema Reference](http://msdn.microsoft.com/library/windows/hardware/br259102)
+[Device Metadata Schema Reference](https://msdn.microsoft.com/library/windows/hardware/br259102)
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\dma]:%20Specify%20applications%20in%20the%20Device%20Metadata%20Authoring%20Wizard%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

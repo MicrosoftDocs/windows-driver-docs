@@ -1,13 +1,9 @@
 ---
 title: WDI Task OIDs
-author: windows-driver-content
 description: This section contains WDI task OIDs.
 ms.assetid: CAA92CA5-5CD6-4705-AA4C-54C1AA83ACA3
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
+ms.localizationpriority: medium
 ---
 
 # WDI Task OIDs
@@ -42,121 +38,121 @@ Indicates that support for the object is optional. The miniport driver can eithe
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[OID_WDI_TASK_CHANGE_OPERATION_MODE](oid-wdi-task-change-operation-mode.md)</p></td>
+<td><p><a href="oid-wdi-task-change-operation-mode.md" data-raw-source="[OID_WDI_TASK_CHANGE_OPERATION_MODE](oid-wdi-task-change-operation-mode.md)">OID_WDI_TASK_CHANGE_OPERATION_MODE</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="even">
-<td><p>[OID_WDI_TASK_CLOSE](oid-wdi-task-close.md)</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>R</p></td>
-</tr>
-<tr class="odd">
-<td><p>[OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md)</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>R</p></td>
-</tr>
-<tr class="even">
-<td><p>[OID_WDI_TASK_CREATE_PORT](oid-wdi-task-create-port.md)</p></td>
+<td><p><a href="oid-wdi-task-close.md" data-raw-source="[OID_WDI_TASK_CLOSE](oid-wdi-task-close.md)">OID_WDI_TASK_CLOSE</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="odd">
-<td><p>[OID_WDI_TASK_DELETE_PORT](oid-wdi-task-delete-port.md)</p></td>
+<td><p><a href="oid-wdi-task-connect.md" data-raw-source="[OID_WDI_TASK_CONNECT](oid-wdi-task-connect.md)">OID_WDI_TASK_CONNECT</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="even">
-<td><p>[OID_WDI_TASK_DISCONNECT](oid-wdi-task-disconnect.md)</p></td>
+<td><p><a href="oid-wdi-task-create-port.md" data-raw-source="[OID_WDI_TASK_CREATE_PORT](oid-wdi-task-create-port.md)">OID_WDI_TASK_CREATE_PORT</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="odd">
-<td><p>[OID_WDI_TASK_DOT11_RESET](oid-wdi-task-dot11-reset.md)</p></td>
+<td><p><a href="oid-wdi-task-delete-port.md" data-raw-source="[OID_WDI_TASK_DELETE_PORT](oid-wdi-task-delete-port.md)">OID_WDI_TASK_DELETE_PORT</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="even">
-<td><p>[OID_WDI_TASK_IHV](oid-wdi-task-ihv.md)</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>O</p></td>
-</tr>
-<tr class="odd">
-<td><p>[OID_WDI_TASK_OPEN](oid-wdi-task-open.md)</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>O</p></td>
-</tr>
-<tr class="even">
-<td><p>[OID_WDI_TASK_P2P_DISCOVER](oid-wdi-task-p2p-discover.md)</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>O</p></td>
-</tr>
-<tr class="odd">
-<td><p>[OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME](oid-wdi-task-p2p-send-request-action-frame.md)</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>O</p></td>
-</tr>
-<tr class="even">
-<td><p>[OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME](oid-wdi-task-p2p-send-response-action-frame.md)</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>O</p></td>
-</tr>
-<tr class="odd">
-<td><p>[OID_WDI_TASK_ROAM](oid-wdi-task-roam.md)</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>R</p></td>
-</tr>
-<tr class="even">
-<td><p>[OID_WDI_TASK_SCAN](oid-wdi-task-scan.md)</p></td>
+<td><p><a href="oid-wdi-task-disconnect.md" data-raw-source="[OID_WDI_TASK_DISCONNECT](oid-wdi-task-disconnect.md)">OID_WDI_TASK_DISCONNECT</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="odd">
-<td><p>[OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE](oid-wdi-task-send-ap-association-response.md)</p></td>
+<td><p><a href="oid-wdi-task-dot11-reset.md" data-raw-source="[OID_WDI_TASK_DOT11_RESET](oid-wdi-task-dot11-reset.md)">OID_WDI_TASK_DOT11_RESET</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
-<td><p>O</p></td>
+<td><p>R</p></td>
 </tr>
 <tr class="even">
-<td><p>[OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME](oid-wdi-task-send-request-action-frame.md)</p></td>
+<td><p><a href="oid-wdi-task-ihv.md" data-raw-source="[OID_WDI_TASK_IHV](oid-wdi-task-ihv.md)">OID_WDI_TASK_IHV</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>O</p></td>
 </tr>
 <tr class="odd">
-<td><p>[OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME](oid-wdi-task-send-response-action-frame.md)</p></td>
+<td><p><a href="oid-wdi-task-open.md" data-raw-source="[OID_WDI_TASK_OPEN](oid-wdi-task-open.md)">OID_WDI_TASK_OPEN</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>O</p></td>
 </tr>
 <tr class="even">
-<td><p>[OID_WDI_TASK_SET_RADIO_STATE](oid-wdi-task-set-radio-state.md)</p></td>
+<td><p><a href="oid-wdi-task-p2p-discover.md" data-raw-source="[OID_WDI_TASK_P2P_DISCOVER](oid-wdi-task-p2p-discover.md)">OID_WDI_TASK_P2P_DISCOVER</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>O</p></td>
+</tr>
+<tr class="odd">
+<td><p><a href="oid-wdi-task-p2p-send-request-action-frame.md" data-raw-source="[OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME](oid-wdi-task-p2p-send-request-action-frame.md)">OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>O</p></td>
+</tr>
+<tr class="even">
+<td><p><a href="oid-wdi-task-p2p-send-response-action-frame.md" data-raw-source="[OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME](oid-wdi-task-p2p-send-response-action-frame.md)">OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>O</p></td>
+</tr>
+<tr class="odd">
+<td><p><a href="oid-wdi-task-roam.md" data-raw-source="[OID_WDI_TASK_ROAM](oid-wdi-task-roam.md)">OID_WDI_TASK_ROAM</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>R</p></td>
+</tr>
+<tr class="even">
+<td><p><a href="oid-wdi-task-scan.md" data-raw-source="[OID_WDI_TASK_SCAN](oid-wdi-task-scan.md)">OID_WDI_TASK_SCAN</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>R</p></td>
 </tr>
 <tr class="odd">
-<td><p>[OID_WDI_TASK_START_AP](oid-wdi-task-start-ap.md)</p></td>
+<td><p><a href="oid-wdi-task-send-ap-association-response.md" data-raw-source="[OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE](oid-wdi-task-send-ap-association-response.md)">OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>O</p></td>
 </tr>
 <tr class="even">
-<td><p>[OID_WDI_TASK_STOP_AP](oid-wdi-task-stop-ap.md)</p></td>
+<td><p><a href="oid-wdi-task-send-request-action-frame.md" data-raw-source="[OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME](oid-wdi-task-send-request-action-frame.md)">OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>O</p></td>
+</tr>
+<tr class="odd">
+<td><p><a href="oid-wdi-task-send-response-action-frame.md" data-raw-source="[OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME](oid-wdi-task-send-response-action-frame.md)">OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>O</p></td>
+</tr>
+<tr class="even">
+<td><p><a href="oid-wdi-task-set-radio-state.md" data-raw-source="[OID_WDI_TASK_SET_RADIO_STATE](oid-wdi-task-set-radio-state.md)">OID_WDI_TASK_SET_RADIO_STATE</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>R</p></td>
+</tr>
+<tr class="odd">
+<td><p><a href="oid-wdi-task-start-ap.md" data-raw-source="[OID_WDI_TASK_START_AP](oid-wdi-task-start-ap.md)">OID_WDI_TASK_START_AP</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>O</p></td>
+</tr>
+<tr class="even">
+<td><p><a href="oid-wdi-task-stop-ap.md" data-raw-source="[OID_WDI_TASK_STOP_AP](oid-wdi-task-stop-ap.md)">OID_WDI_TASK_STOP_AP</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>O</p></td>
@@ -164,14 +160,12 @@ Indicates that support for the object is optional. The miniport driver can eithe
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20WDI%20Task%20OIDs%20%20RELEASE:%20%286/30/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

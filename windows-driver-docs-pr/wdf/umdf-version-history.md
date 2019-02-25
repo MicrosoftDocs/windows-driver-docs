@@ -1,6 +1,5 @@
 ---
 title: UMDF Version History
-author: windows-driver-content
 description: This topic lists versions of User-Mode Driver Framework (UMDF), the corresponding versions of the Windows operating system, and the changes made in each release.
 ms.assetid: f3e895c6-6801-4033-adaa-d7d04a46db0a
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - UMDF WDK , version information
 - revision history WDK UMDF
 - version information WDK UMDF
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/02/2018
+ms.localizationpriority: medium
 ---
 
 # UMDF Version History
@@ -20,89 +16,40 @@ ms.technology: windows-devices
 
 This topic lists versions of User-Mode Driver Framework (UMDF), the corresponding versions of the Windows operating system, and the changes made in each release.
 
-## UMDF Versions and Operating Systems
-
-
 The following table shows the release history of the UMDF library:
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">UMDF version</th>
-<th align="left">Release method</th>
-<th align="left">Included in this version of Windows</th>
-<th align="left">Drivers using it can run on</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>2.21</p></td>
-<td align="left"><p>Windows 10, version 1703 WDK</p></td>
-<td align="left"><p>Windows 10, version 1703 (Creators Update, Redstone 2)</p></td>
-<td align="left"><p>Windows 10 version 1703</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>2.19</p></td>
-<td align="left"><p>Windows 10, version 1607 WDK</p></td>
-<td align="left"><p>Windows 10, version 1607 (Anniversary Update, Redstone 1)</p></td>
-<td align="left"><p>Windows 10, version 1607, Windows Server 2016 and later</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>2.17</p></td>
-<td align="left"><p>Windows 10, version 1511 WDK</p></td>
-<td align="left"><p>Windows 10, version 1511 (November Update, Threshold 2)</p></td>
-<td align="left"><p>Windows 10 version 1511, Windows Server 2016 and later</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>2.15</p></td>
-<td align="left"><p>Windows 10 WDK</p></td>
-<td align="left"><p>Windows 10, version 1507 (Threshold 1)</p></td>
-<td align="left"><p>Windows 10, version 1507, Windows Server 2016 and later</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>2.0</p></td>
-<td align="left"><p>Windows Driver Kit (WDK) 8.1</p></td>
-<td align="left"><p>Windows 8.1</p></td>
-<td align="left"><p>Windows 8.1 and later</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1.11</p></td>
-<td align="left"><p>Windows Driver Kit (WDK) 8</p></td>
-<td align="left"><p>Windows 8</p></td>
-<td align="left"><p>Windows Vista and later</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>1.9</p></td>
-<td align="left"><p>Windows 7 WDK</p></td>
-<td align="left"><p>Windows 7</p></td>
-<td align="left"><p>Windows XP and later</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1.7</p></td>
-<td align="left"><p>Windows Server 2008 WDK</p></td>
-<td align="left"><p>Windows Vista with Service Pack 1 (SP1), Windows Server 2008</p></td>
-<td align="left"><p>Windows XP and later</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>1.5</p></td>
-<td align="left"><p>Windows Vista WDK</p></td>
-<td align="left"><p>Windows Vista</p></td>
-<td align="left"><p>Windows XP and later</p></td>
-</tr>
-</tbody>
-</table>
+|UMDF version|Release method|Included in this version of Windows|Drivers using it can run on|
+|--- |--- |--- |--- |
+|2.27|Windows 10, version 1809 WDK|Windows 10, version 1809 (October 2018 Update, Redstone 5)|Windows 10, version 1809 and later|
+|2.25|Windows 10, version 1803 WDK|Windows 10, version 1803 (April 2018 Update, Redstone 4)|Windows 10, version 1803 and later|
+|2.23|Windows 10, version 1709 WDK|Windows 10, version 1709 (Fall Creators Update, Redstone 3)|Windows 10, version 1709 and later|
+|2.21|Windows 10, version 1703 WDK|Windows 10, version 1703 (Creators Update, Redstone 2)|Windows 10, version 1703 and later|
+|2.19|Windows 10, version 1607 WDK|Windows 10, version 1607 (Anniversary Update, Redstone 1)|Windows 10, version 1607, Windows Server 2016 and later|
+|2.17|Windows 10, version 1511 WDK|Windows 10, version 1511 (November Update, Threshold 2)|Windows 10, version 1511, Windows Server 2016 and later|
+|2.15|Windows 10 WDK|Windows 10, version 1507 (Threshold 1)|Windows 10, version 1507, Windows Server 2016 and later|
+|2.0|Windows Driver Kit (WDK) 8.1|Windows 8.1|Windows 8.1 and later|
+|1.11|Windows Driver Kit (WDK) 8|Windows 8|Windows Vista and later|
+|1.9|Windows 7 WDK|Windows 7|Windows XP and later|
+|1.7|Windows Server 2008 WDK|Windows Vista with Service Pack 1 (SP1), Windows Server 2008|Windows XP and later|
+|1.5|Windows Vista WDK|Windows Vista|Windows XP and later|
 
- 
 
-You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2015 to build drivers that run on Windows 7 and later.
+You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2017 to build drivers that run on Windows 7 and later.
 
 For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](index.md).
+
+## UMDF Version 2.27
+
+* Added new API [**WdfDriverRetrieveDriverDataDirectoryString**](/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring)
+
+## UMDF Version 2.25
+
+* [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md)
+* [**WdfDeviceRetrieveDeviceDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
+
+## UMDF Version 2.23
+
+* Companion functionality added for internal use only.  For the new DDIs, see [Summary of WDF Callbacks and Methods](https://msdn.microsoft.com/library/windows/hardware/dn265591).
 
 ## UMDF Version 2.21
 
@@ -247,7 +194,7 @@ Version 1.11 adds the following capabilities to UMDF-based drivers:
 
 -   Enhanced support for [Supporting Idle Power-Down in UMDF-based Drivers](supporting-idle-power-down-in-umdf-drivers.md). The framework can now put the device in the D3cold power state when the idle timeout period expires. The framework can also cause the device to return to its working (D0) state when the system returns to its working (S0) state.
 
--   The following samples are new in UMDF 1.11: [WudfVhidmini](http://go.microsoft.com/fwlink/p/?linkid=256226), [NetNfpProvider](http://go.microsoft.com/fwlink/p/?linkid=256147).
+-   The following samples are new in UMDF 1.11: [WudfVhidmini](https://go.microsoft.com/fwlink/p/?linkid=256226), [NetNfpProvider](https://go.microsoft.com/fwlink/p/?linkid=256147).
 
 ## UMDF Version 1.9
 
@@ -306,9 +253,9 @@ These interfaces add the following capabilities to UMDF-based drivers:
 
 -   Enhanced access to the [registry](https://msdn.microsoft.com/library/windows/hardware/ff561381)
 
- 
+ 
 
- 
+ 
 
 
 

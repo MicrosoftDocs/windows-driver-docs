@@ -4,11 +4,8 @@ description: System-Defined Device Properties
 ms.assetid: 9d823a9f-0802-4e92-bf94-abb5b0e7b9ee
 keywords:
 - device properties WDK device installations , system-defined
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # System-Defined Device Properties
@@ -18,11 +15,11 @@ In Windows Vista and later versions of Windows, the [unified device property mod
 
 The following system-defined device property keys are defined in *Devpkey.h*:
 
--   The DEVPKEY\_NAME property key that represents the name of a component. Use the value of the DEVPKEY\_NAME property to indentify the component to an end-user. Windows supports the DEVPKEY\_NAME property for [**device instances**](https://msdn.microsoft.com/library/windows/hardware/ff543530), [**device setup classes**](https://msdn.microsoft.com/library/windows/hardware/ff543534), and [**device interfaces**](https://msdn.microsoft.com/library/windows/hardware/ff543533).
+-   The DEVPKEY_NAME property key that represents the name of a component. Use the value of the DEVPKEY_NAME property to indentify the component to an end-user. Windows supports the DEVPKEY_NAME property for [**device instances**](https://msdn.microsoft.com/library/windows/hardware/ff543530), [**device setup classes**](https://msdn.microsoft.com/library/windows/hardware/ff543534), and [**device interfaces**](https://msdn.microsoft.com/library/windows/hardware/ff543533).
 
--   Property keys that represent the [device instance properties that correspond to the SPDRP\_Xxx identifiers](https://msdn.microsoft.com/library/windows/hardware/ff541334). (The SPDRP\_*Xxx* identifiers are defined in *Setupapi.h*.)
+-   Property keys that represent the [device instance properties that correspond to the SPDRP_Xxx identifiers](https://msdn.microsoft.com/library/windows/hardware/ff541334). (The SPDRP_*Xxx* identifiers are defined in *Setupapi.h*.)
 
--   Property keys that represent the device instance properties that do not have corresponding SPDRP\_*Xxx* identifiers. This includes the following:
+-   Property keys that represent the device instance properties that do not have corresponding SPDRP_*Xxx* identifiers. This includes the following:
 
     [Device status and problem properties](https://msdn.microsoft.com/library/windows/hardware/ff542254)
 
@@ -34,9 +31,9 @@ The following system-defined device property keys are defined in *Devpkey.h*:
 
     [Miscellaneous other device properties](https://msdn.microsoft.com/library/windows/hardware/ff549289)
 
--   Property keys that represent [device setup class properties](https://msdn.microsoft.com/library/windows/hardware/ff542239) that correspond to the SPCRP\_Xxx identifiers. (The SPCRP\_Xxx identifiers are defined in *Setupapi.h*.)
+-   Property keys that represent [device setup class properties](https://msdn.microsoft.com/library/windows/hardware/ff542239) that correspond to the SPCRP_Xxx identifiers. (The SPCRP_Xxx identifiers are defined in *Setupapi.h*.)
 
--   Property keys that represent device setup class properties that do not have corresponding SPCRP\_Xxx identifiers.
+-   Property keys that represent device setup class properties that do not have corresponding SPCRP_Xxx identifiers.
 
 -   Property keys that represent [device interface class properties](https://msdn.microsoft.com/library/windows/hardware/ff541406).
 
@@ -44,9 +41,9 @@ The following system-defined device property keys are defined in *Devpkey.h*:
 
 For information about how to create custom device properties, see [Creating Custom Device Properties](creating-custom-device-properties.md).
 
- 
+ 
 
- 
+ 
 
 
 

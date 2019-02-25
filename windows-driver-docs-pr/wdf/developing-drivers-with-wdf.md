@@ -1,13 +1,9 @@
 ---
 title: Developing Drivers with WDF - Reference Book
-author: windows-driver-content
 description: The Developing Drivers with Windows Driver Foundation book is also available to help you learn the concepts and fundamentals of Windows Driver Frameworks (WDF).
 ms.assetid: 764A7A8F-3EB4-4652-B85F-C86C0D82F47B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Developing Drivers with the Windows Driver Foundation: Reference Book
@@ -22,14 +18,13 @@ Orwick, Penny and Guy Smith. *Developing Drivers with Windows Driver Foundation*
 ## Where can I find the book?
 
 
-You can purchase the book from O'Reilly using the following links:
+You can purchase the book from O'Reilly using the following link:
 
--   [Electronic or printed format](http://oreilly.com/catalog/9780735623743)
 -   [Preview or read entire content](http://safari.oreilly.com/9780735623743) with a Safari subscription
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,17 +4,14 @@ description: Virtual Station
 ms.assetid: 6228439c-4c01-4fa9-8b45-b46ed90fa661
 keywords:
 - Virtual Station WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Virtual Station
 
 
-**Important**  The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](wifi-universal-driver-model.md).
+
 
  
 
@@ -50,7 +47,7 @@ If your driver implements virtual station functionality but cannot sustain both 
 
 -   Fail the virtual station port connections if the ExtAP port is running in the OP state and one of the following situations occurs:
     -   One or more clients is on the ExtAP port.
-    -   The virtual station attempts to start a connection that duplicates [Wireless Hosted Network](http://go.microsoft.com/fwlink/p/?linkid=152328) settings.
+    -   The virtual station attempts to start a connection that duplicates [Wireless Hosted Network](https://go.microsoft.com/fwlink/p/?linkid=152328) settings.
 
 ### <a href="" id="native-802-11-ihv-extensibility-functions-that-support-a-virtual-stati"></a> Native 802.11 IHV Extensibility Functions That Support a Virtual Station
 

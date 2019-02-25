@@ -6,17 +6,14 @@ keywords:
 - NDIS 6.20 WDK , power management
 - power management WDK networking , NDIS 6.20
 - power management WDK NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Power Management (NDIS 6.20)
 
 
-## <a href="" id="ddk-ndis-6-20-power-management-ng"></a>
+
 
 
 This section describes the power management interface that was introduced with Windows 7 and NDIS 6.20. Starting with NDIS 6.20, power management enhancements are supported that reduce computer power consumption.
@@ -35,15 +32,13 @@ This section includes the following topics:
 -   [Low Power for Wake on LAN](low-power-for-wake-on-lan.md)
 -   [Low Power on Media Disconnect](low-power-on-media-disconnect.md)
 
-Starting with Windows 7, Native 802.11 Wireless LAN network adapters must support the NDIS 6.20 power management interface. For more information, see [Wake-on-Wireless LAN](wake-on-wireless-lan.md).
-
 **Note**  Starting with NDIS 6.30, the NDIS power management interface has been extended. For more information about the NDIS 6.30 extensions for power management, please review the information at [Power Management (NDIS 6.30 and Later)](https://msdn.microsoft.com/library/windows/hardware/hh440160).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

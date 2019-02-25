@@ -1,14 +1,10 @@
 ---
 title: Processing an Application Notification
-author: windows-driver-content
 description: Processing an Application Notification
 ms.assetid: 475d8e37-5d31-4989-92ce-3c4a7c09d292
 keywords: ["dynamic hardware partitioning WDK , application notification", "hardware partitioning WDK dynamic , application notification", "partitions WDK dynamic hardware , application notification", "application notification WDK dynamic hardware partitioning , registering", "notification WDK dynamic hardware partitioning , application", "registering for application notifications WDK dynamic hardware partitioning", "processing application notifications WDK dynamic hardware partitioning"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing an Application Notification
@@ -18,11 +14,11 @@ How a user-mode application processes WM\_DEVICECHANGE messages depends on wheth
 
 ### Win32 applications
 
-Win32-based applications process the messages that are sent to the application's window(s) by implementing a *Window Procedure*. For more information about window procedures, see the [Window Procedures](http://go.microsoft.com/fwlink/p/?linkid=96748) topic in the Microsoft Windows SDK documentation.
+Win32-based applications process the messages that are sent to the application's window(s) by implementing a *Window Procedure*. For more information about window procedures, see the [Window Procedures](https://go.microsoft.com/fwlink/p/?linkid=96748) topic in the Microsoft Windows SDK documentation.
 
 The following code example shows how to process WM\_DEVICECHANGE messages in a Win32-based application:
 
-```
+```cpp
 // Prototype for the function that handles the
 // processing of WM_DEVICECHANGE messages.
 LRESULT
@@ -159,11 +155,11 @@ OnDeviceChange(
 
 ### MFC applications
 
-The MFC framework processes the messages that are sent to an MFC-based application's window(s). An MFC-based application must implement an [OnDeviceChange](http://go.microsoft.com/fwlink/p/?linkid=97894) member function for the application's window class that receives the WM\_DEVICECHANGE messages.
+The MFC framework processes the messages that are sent to an MFC-based application's window(s). An MFC-based application must implement an [OnDeviceChange](https://go.microsoft.com/fwlink/p/?linkid=97894) member function for the application's window class that receives the WM\_DEVICECHANGE messages.
 
 The following code example shows how to implement an **OnDeviceChange** member function in an MFC-based application:
 
-```
+```cpp
 afx_msg BOOL
 CAppWnd::OnDeviceChange(
   UINT nEventType,
@@ -244,12 +240,10 @@ CAppWnd::OnDeviceChange(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Processing%20an%20Application%20Notification%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

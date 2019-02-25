@@ -2,14 +2,16 @@
 title: USB 3.0 Data Structures
 description: This topic describes the data structures used by the USB 3.0 host controller driver.
 ms.assetid: 39BD7413-48A5-4199-BA8E-D2A77E4D23F1
+ms.date: 11/28/2017
+ms.localizationpriority: medium
 ---
 
 # USB 3.0 Data Structures
 
 
-This topic describes the data structures used by the USB 3.0 host controller driver. Understanding these data structures will help you use the [USB 3.0](usb-3-extensions.md) and [RCDRKD](rcdrkd-extensions.md) debugger extension commands effectively. The data structures presented here have names that are consistent with the [USB 3.0 specification](http://go.microsoft.com/fwlink/p?LinkID=224892). Familiarity with the USB 3.0 specification will further enhance your ability to use the extension commands to debug USB 3.0 drivers.
+This topic describes the data structures used by the USB 3.0 host controller driver. Understanding these data structures will help you use the [USB 3.0](usb-3-extensions.md) and [RCDRKD](rcdrkd-extensions.md) debugger extension commands effectively. The data structures presented here have names that are consistent with the [USB 3.0 specification](https://go.microsoft.com/fwlink/p?LinkID=224892). Familiarity with the USB 3.0 specification will further enhance your ability to use the extension commands to debug USB 3.0 drivers.
 
-The USB 3.0 host controller driver is part of the USB 3.0 core driver stack. For more information, see [USB Driver Stack Architecture](http://go.microsoft.com/fwlink/p?LinkID=251983).
+The USB 3.0 host controller driver is part of the USB 3.0 core driver stack. For more information, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkID=251983).
 
 Each USB 3.0 host controller can have up to 255 devices, and each device can have up to 31 endpoints. The following diagram shows some of the data structures that represent one host controller and the connected devices.
 
@@ -61,13 +63,12 @@ An Endpoint Context structure holds context information for a single endpoint. I
 ## <span id="related_topics"></span>Related topics
 
 
-[USB Debugging Innovations in Windows 8](http://go.microsoft.com/fwlink/p/?LinkID=249153)
+[USB Debugging Innovations in Windows 8](https://go.microsoft.com/fwlink/p/?LinkID=249153)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20USB%203.0%20Data%20Structures%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

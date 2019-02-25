@@ -2,11 +2,8 @@
 title: Inspecting Packet and Stream Data
 description: Inspecting Packet and Stream Data
 ms.assetid: 8bc5dc92-98aa-4457-a2a9-1a62a8ba0d9c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Inspecting Packet and Stream Data
@@ -28,9 +25,9 @@ The following topics discuss how to use WFP to inspect packet and stream data:
 
 [Stream Inspection](stream-inspection.md)
 
- 
+ 
 
- 
+ 
 
 
 

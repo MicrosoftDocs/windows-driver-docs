@@ -1,6 +1,5 @@
 ---
 title: A Device Enters a Low-Power State
-author: windows-driver-content
 description: A Device Enters a Low-Power State
 ms.assetid: 07d7c460-4316-40a9-b502-f7c1bd1182c2
 keywords:
@@ -12,11 +11,8 @@ keywords:
 - idle power-down WDK KMDF
 - power management WDK KMDF , idle power-down
 - system sleeping states WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # A Device Enters a Low-Power State
@@ -44,9 +40,9 @@ For each function and filter driver that supports the device, the framework does
 
 The bus driver is the driver in the stack that is called last. When the framework calls the bus driver's [*EvtDeviceD0Exit*](https://msdn.microsoft.com/library/windows/hardware/ff540855) callback function, the callback function sets the power state of the device (a child device of the bus) to a low-power state. The framework specifies the D3 low-power state unless the power policy owner has specified a different low-power state.
 
- 
+ 
 
- 
+ 
 
 
 

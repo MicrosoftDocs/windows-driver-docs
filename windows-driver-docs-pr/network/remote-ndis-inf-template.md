@@ -4,17 +4,14 @@ description: Remote NDIS INF Template
 ms.assetid: bbbd3aef-230f-4286-bea2-bb583789865e
 keywords:
 - Remote NDIS WDK networking , INF template
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Remote NDIS INF Template
 
 
-## <a href="" id="ddk-remote-ndis-device-control-ng"></a>
+
 
 
 Microsoft provides an NDIS miniport driver, Rndismp.sys, which implements the Remote NDIS message set and communicates with generic bus transport drivers, which in turn communicate with the appropriate bus driver. This NDIS miniport driver is implemented and maintained by Microsoft and is distributed as part of all supported Windows versions. You can find it in the %SystemRoot%\\System32\\drivers directory.
@@ -26,7 +23,7 @@ To use the Remote NDIS driver with a USB device, an IHV must provide an INF file
 
 ### RNDIS INF template for NDIS 5.1 (Windows XP and later)
 
-```
+```INF
 ; Remote NDIS template device setup file
 ; Copyright (c) Microsoft Corporation
 ;
@@ -101,7 +98,7 @@ Vista_Property        = "Optional Vista Property"
 
 ### RNDIS INF template for NDIS 6.0 (Windows 7 and later)
 
-```
+```INF
 ; Remote NDIS template device setup file
 ; Copyright (c) Microsoft Corporation
 ;
@@ -181,9 +178,9 @@ Rndis_Property         = "Optional RNDIS Property"
 
 [USB class drivers included in Windows](https://msdn.microsoft.com/library/windows/hardware/ff538820)
 
- 
+ 
 
- 
+ 
 
 
 

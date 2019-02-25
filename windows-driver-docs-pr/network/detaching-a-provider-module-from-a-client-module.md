@@ -9,11 +9,8 @@ keywords:
 - Network Module Registrar WDK , detaching network modules
 - NMR WDK , detaching network modules
 - NmrDeregisterProvider
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Detaching a Provider Module from a Client Module
@@ -33,7 +30,7 @@ If a provider module implements a [*ProviderCleanupBindingContext*](https://msdn
 
 For example:
 
-```
+```C++
 // ProviderDetachClient callback function
 NTSTATUS
   ProviderDetachClient(
@@ -95,9 +92,9 @@ VOID
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

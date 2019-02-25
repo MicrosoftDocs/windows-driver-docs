@@ -2,17 +2,14 @@
 title: HKLM\SYSTEM\CurrentControlSet\Control Registry Tree
 description: HKLM\SYSTEM\CurrentControlSet\Control registry tree contains information for controlling system startup and some aspects of device configuration.
 ms.assetid: 58eacd32-425d-4224-8d37-21e2caf124cf
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # HKLM\\SYSTEM\\CurrentControlSet\\Control Registry Tree
 
 
-## <a href="" id="ddk-the-hklm-system-currentcontrolset-control-tree-dg"></a>
+
 
 
 The **HKLM\\SYSTEM\\CurrentControlSet\\Control** registry tree contains information for controlling system startup and some aspects of device configuration. The following subkeys are of particular interest:
@@ -28,9 +25,9 @@ Contains information about the class-specific co-installers that are registered 
 <a href="" id="deviceclasses"></a>**DeviceClasses**  
 Contains information about the device interfaces on the system. There is a subkey for each [device interface class](device-interface-classes.md) and entries under those subkeys for each instance of an interface that is registered for the device interface class.
 
- 
+ 
 
- 
+ 
 
 
 

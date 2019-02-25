@@ -2,11 +2,8 @@
 title: Using NDIS 6.30 Data Structures
 description: Using NDIS 6.30 Data Structures
 ms.assetid: 0CAD1CCE-5AF6-4EBD-85C9-040FA0D1C141
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using NDIS 6.30 Data Structures
@@ -16,7 +13,7 @@ NDIS can support multiple versions of the same data structure. For the Windows 
 
 **Note**  To determine the correct version and size information see the reference pages for each structure that includes a **Header** member. The reference pages for structures that contain a **Header** member and that were updated for NDIS 6.30 include new information for NDIS 6.30 drivers. If there is no update to the structure for NDIS 6.30, the information that is provided for earlier versions of NDIS also applies to NDIS 6.30 drivers.
 
- 
+ 
 
 The following structures were updated for NDIS 6.30:
 
@@ -39,9 +36,9 @@ The following structures were updated for NDIS 6.30:
 - [**NDIS\_RECEIVE\_SCALE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff567220)
 - [**NDIS\_RSS\_PROCESSOR\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567274)
 - [**NDIS\_SHARED\_MEMORY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567303)
- 
+ 
 
- 
+ 
 
 
 

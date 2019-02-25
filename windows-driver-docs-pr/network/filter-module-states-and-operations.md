@@ -11,17 +11,14 @@ keywords:
 - Paused state WDK networking
 - Restarting state WDK networking
 - Running state WDK ne
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Module States and Operations
 
 
-## <a href="" id="ddk-filter-module-states-and-operations-ng"></a>
+
 
 
 A filter driver must support the following operational states for each filter module (instance of a filter driver) that the driver manages:
@@ -170,7 +167,7 @@ In the following table, the headings are the filter module states. Major events 
 </tbody>
 </table>
 
- 
+ 
 
 The primary filter driver events are defined as follows:
 
@@ -207,9 +204,9 @@ A driver can handle send and receive operations in the *Running* and *Pausing* s
 <a href="" id="oid-requests"></a>OID Requests  
 A driver can handle OID requests in the *Running*, *Restarting*, *Paused*, and *Pausing* states. For more information about OID requests, see [Filter Module OID Requests](filter-module-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,17 +7,14 @@ keywords:
 - architecture WDK Windows Filtering Platform
 - filter engine WDK Windows Filtering Platform
 - callout drivers WDK Windows Filtering Platform , platform architecture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows Filtering Platform Architecture Overview
 
 
-This section provides a brief overview of the Windows Filtering Platform architecture. For a more thorough discussion of the Windows Filtering Platform architecture, see the [Windows Filtering Platform](http://go.microsoft.com/fwlink/p/?linkid=90220) documentation in the Microsoft Windows SDK.
+This section provides a brief overview of the Windows Filtering Platform architecture. For a more thorough discussion of the Windows Filtering Platform architecture, see the [Windows Filtering Platform](https://go.microsoft.com/fwlink/p/?linkid=90220) documentation in the Microsoft Windows SDK.
 
 The following figure shows the basic architecture of the Windows Filtering Platform.
 
@@ -29,9 +26,9 @@ The [filter engine](filter-engine.md) is the core of the Windows Filtering Platf
 
 The Windows Filtering Platform includes several built-in callouts. See [Built-in Callout Identifiers](https://msdn.microsoft.com/library/windows/hardware/ff543857) for a description of each of these callouts.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,9 @@
 ---
 title: Prepare your sensor test board
-author: windows-driver-content
 description: This topic shows you how to prepare your sensor test board for connection to the Sharks Cove board.
 ms.assetid: 121A6B05-9D5D-447C-B7C6-B2B86C24114B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Prepare your sensor test board
@@ -17,7 +13,7 @@ This topic shows you how to prepare your sensor test board for connection to the
 
 **Note**  This topic assumes that you’re using a sensor test board (sometimes referred to as a sensor *breakout* board) that you purchased from an IHV, and that the sensor test board was not developed specifically for use with Sharks Cove.
 
- 
+ 
 
 If you purchased your sensor test board from an IHV, and it was not developed specifically for use with Sharks Cove, it might be necessary to make some modifications to the test board. This topic shows you the kind of information that you must read to find out if you need to make modifications to your sensor test board. If you need to modify the sensor test board, then follow the guidance in this topic to prepare the test board for connection to Sharks Cove.
 
@@ -52,9 +48,9 @@ Here’s a table from the *Sharks Cove Technical Specifications Rev. 1.0*, showi
 | 19         | Not connected          | None                                                                                                |
 | 20         | Not connected          | None                                                                                                |
 
- 
+ 
 
-For more detailed technical information about the Sharks Cove board, see [Sharks Cove Schematic](http://firmware.intel.com/sites/default/files/Sharks_Cove_Schematic.pdf).
+For more detailed technical information about the Sharks Cove board, see [Sharks Cove Schematic](https://firmware.intel.com/sites/default/files/Sharks_Cove_Schematic.pdf).
 
 And if, for example, you had chosen to build a universal sensor driver for the ADXL345 accelerometer, then the following diagram from page 5 of the ADXL345 Digital Accelerometer data sheet (along with Table 4 on the same page) shows you the pins available for connecting the accelerometer board to Sharks Cove.
 
@@ -92,12 +88,10 @@ So preparing your sensor test board for connection to Sharks Cove, could involve
 
 After you’ve made all the necessary modifications to your sensor test board, follow the guidance in the next topic to [connect your sensor to the Sharks Cove board](connect-your-sensor-to-the-sharks-cove-board.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Prepare%20your%20sensor%20test%20board%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -2,11 +2,8 @@
 title: Managing Hyper-V Extensible Switch Destination Port Data
 description: Managing Hyper-V Extensible Switch Destination Port Data
 ms.assetid: 2781E64A-61D6-49A9-AD9B-F6B348560E30
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing Hyper-V Extensible Switch Destination Port Data
@@ -20,9 +17,9 @@ This section describes how a Hyper-V extensible switch extension manages the des
 
 [Excluding Packet Delivery to Extensible Switch Destination Ports](excluding-packet-delivery-to-extensible-switch-destination-ports.md)
 
- 
+ 
 
- 
+ 
 
 
 

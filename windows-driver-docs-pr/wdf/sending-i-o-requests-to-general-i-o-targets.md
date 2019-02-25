@@ -1,22 +1,18 @@
 ---
 title: Sending I/O Requests to General I/O Targets
-author: windows-driver-content
 description: Sending I/O Requests to General I/O Targets
 ms.assetid: 3fa897f5-2de8-484b-becb-c2de23fb5e8c
 keywords:
 - general I/O targets WDK KMDF , sending I/O requests to
 - sending I/O requests WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending I/O Requests to General I/O Targets
 
 
-## <a href="" id="ddk-sending-i-o-requests-to-general-i-o-targets-df"></a>
+
 
 
 Your driver can send I/O requests to general I/O targets either synchronously or asynchronously.
@@ -29,9 +25,9 @@ The framework's I/O target object provides two sets of methods that your driver 
 
 For each of these methods, you must supply a request object and some buffer space. You can use these methods to forward a request that your driver received in one of its I/O queues or to create and send a new request.
 
- 
+ 
 
- 
+ 
 
 
 

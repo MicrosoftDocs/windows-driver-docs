@@ -7,11 +7,8 @@ keywords:
 - Trusted Root Certification Authorities certificate store WDK
 - Trusted Publishers certificate store WDK
 - default domain policies for test certificates
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deploying a Test Certificate by Using the Default Domain Policy
@@ -37,9 +34,9 @@ To configure the default domain policy to deploy a test certificate to the Trust
 
 Use the same type of procedure to configure the default domain policy to deploy a test certificate to the Trusted Publishers certificate store as described above for the Trusted Root Certification Authorities certificate store. In step (3) of the procedure in this section, select Trusted Publishers certificate store instead of the Trusted Root Certification Authorities certificate store.
 
- 
+ 
 
- 
+ 
 
 
 

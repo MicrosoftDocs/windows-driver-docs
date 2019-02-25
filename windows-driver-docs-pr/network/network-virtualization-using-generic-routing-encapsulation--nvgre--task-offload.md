@@ -2,11 +2,8 @@
 title: NVGRE Task Offload
 description: This section describes Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
 ms.assetid: D1BE5659-4491-411B-9D32-9CB7A141A240
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
@@ -26,11 +23,11 @@ NDIS 6.30 (available in Windows Server 2012 and later) introduces NVGRE Task Of
 
 **Note**  It is possible for a protocol driver to offload "mixed mode" packets, which means packets in which the inner and outer IP header versions are different. For example, a packet could have outer IP header as IPv6 and the inner IP header as IPv4.
 
- 
+ 
 
 **Note**  It is also possible for a protocol driver to offload an NVGRE-formatted packet that has no inner TCP or UDP header. For example, an IP packet could have an inner payload that is an Internet Control Message Protocol (ICMP) packet.
 
- 
+ 
 
 For more information about NVGRE, see the following Internet Draft:
 
@@ -61,9 +58,9 @@ This section includes:
 
 [TCP/IP Task Offload](task-offload.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Conditional Metadata
 description: Conditional Metadata
 ms.assetid: A1C223AB-E9BB-480e-B9ED-75989FD34479
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Conditional Metadata
@@ -21,7 +18,7 @@ To make metadata conditional, add a condition surrounded by square brackets afte
 
 For example, suppose a test has the following metadata:
 
-```
+```cpp
 TEST_METHOD_PROPERTY(L"RunAs", L"Elevated")
 TEST_METHOD_PROPERTY(L"Ignore[@NoElevation=true]", L"true")
 ```
@@ -30,7 +27,7 @@ Then when TAEF loads the DLL, it will evaluate the "@NoElevation=true" condition
 
 If multiple conditional metadata appear in one test, each is evaluated independently in the same manner. This can be useful if you want a test to recognize multiple possible values of a runtime parameter.
 
-```
+```cpp
 TEST_METHOD_PROPERTY(L"Data:MyTestData[@TestCaseLevel=&#39;Low&#39;]", L"{ Datum1, Datum2, Datum3 }")
 TEST_METHOD_PROPERTY(L"DataSource[@TestCaseLevel=&#39;High&#39;]", L"Pict:FullDataSet.model?Order=3")
 ```
@@ -42,7 +39,7 @@ If a test has the metadata shown above and the user sets TestCaseLevel to Low, t
 
 When you want to add a metadata only when no other conditions for that particular metadata name have evaluated to true, you can append the metadata name with *\[default\]*.
 
-```
+```cpp
 TEST_METHOD_PROPERTY(L"DataSource", L"Pict:MyTest.model")
 TEST_METHOD_PROPERTY(L"Pict:Order[@TestCaseLevel=&#39;Low&#39;]", L"1")
 TEST_METHOD_PROPERTY(L"Pict:Order[default]", L"2")
@@ -53,7 +50,7 @@ If a test has the above metadata and the user does not set TestCaseLevel to Low 
 
 Be careful not to leave off the \[default\] if it is needed.
 
-```
+```cpp
 TEST_METHOD_PROPERTY(L"DataSource", L"Pict:MyTest.model")
 TEST_METHOD_PROPERTY(L"Pict:Order[@TestCaseLevel=&#39;Low&#39;]", L"1")
 TEST_METHOD_PROPERTY(L"Pict:Order", L"2") // This should have [default]
@@ -62,7 +59,7 @@ TEST_METHOD_PROPERTY(L"Pict:Order[@TestCaseLevel=&#39;High&#39;]", L"3")
 
 If TestCaseLevel is set to Low, the above set of metadata is equivalent to the following set of metadata:
 
-```
+```cpp
 TEST_METHOD_PROPERTY(L"DataSource", L"Pict:MyTest.model")
 TEST_METHOD_PROPERTY(L"Pict:Order", L"1")
 TEST_METHOD_PROPERTY(L"Pict:Order", L"2")
@@ -70,11 +67,10 @@ TEST_METHOD_PROPERTY(L"Pict:Order", L"2")
 
 In this case, it is unspecified whether the PICT data source will use the "1" or the "2" for the PICT order.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20Conditional%20Metadata%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Viewing Hidden Devices
-description: Viewing Hidden Devices
+title: Viewing hidden devices
+description: Viewing hidden devices
 ms.assetid: 5dd02478-9937-4364-bd33-b64ac89c32eb
 keywords:
 - nonpresent devices WDK
@@ -12,44 +12,32 @@ keywords:
 - viewing nonpresent devices
 - showing nonpresent devices
 - displaying nonpresent devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Viewing Hidden Devices
 
-
-## <a href="" id="ddk-viewing-hidden-devices-dg"></a>
-
-
 Device Manager lists the devices that are installed in the computer. By default, certain devices are not shown in the list. These *hidden devices* include:
 
-* Devices that have the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) status bit DN\_NO\_SHOW\_IN\_DM set
+* Devices that have the device node (devnode) status bit DN_NO_SHOW_IN_DM set.
+
+    There is a devnode for each device on a machine and the devnodes are organized into a hierarchical Device Tree. The PnP manager creates a devnode for a device when the device is configured.
+
+    A devnode contains the device stack (the device objects for the device's drivers) and information about the device such as whether the device has been started and which drivers have registered for notification on the device.
+
 * Devices that are part of a setup class that is marked as a **NoDisplayClass** in the registry (for example, printers and non-PnP drivers)
-* Devices that were physically removed from the computer but whose registry entries were not deleted (also known as [*nonpresent devices*](https://msdn.microsoft.com/library/windows/hardware/ff556313#wdkgloss-nonpresent-device)).
 
-**Note**  Starting with Windows 8 and Windows Server 2012, the Plug-and-Play Manager no longer creates device representations for non-PnP (legacy) devices. Thus there are no such devices to view in the Device Manager.
+* Devices that were physically removed from the computer but whose registry entries were not deleted (also known as nonpresent devices).
 
-**Note**  Users should never have to view nonpresent devices because a nonpresent device should not have their attention and should not cause any problems. If a user has to view your device when it is not present, there is likely a problem with your driver design. However, during testing, a developer might have to view such devices. 
+> [!NOTE]
+> Starting with Windows 8 and Windows Server 2012, the Plug-and-Play Manager no longer creates device representations for non-PnP (legacy) devices. Thus there are no such devices to view in the Device Manager.
 
-To include hidden devices in Device Manager display, click **View** and select **Show Hidden Devices**.
+> [!NOTE]
+> Users should never have to view nonpresent devices because a nonpresent device should not have their attention and should not cause any problems. If a user has to view your device when it is not present, there is likely a problem with your driver design. However, during testing, a developer might have to view such devices.
 
-Prior to Windows 8, to view nonpresent devices, you must set the environment variable DEVMGR\_SHOW\_NONPRESENT\_DEVICES to **1** before you open Device Manager, then open Device Manager and select **Show Hidden Devices**.
+To include hidden devices in Device Manager display, click **View** and select **Show hidden devices**.
 
-To permanently set the user environment variable DEVMGR\_SHOW\_NONPRESENT\_DEVICES to **1**, use the **Advanced** tab of the system property sheet. After you set this environment variable, run Device Manager and select **Show Hidden Devices**.
+Prior to Windows 8, to view nonpresent devices, you must set the environment variable DEVMGR_SHOW_NONPRESENT_DEVICES to **1** before you open Device Manager, then open Device Manager, and on the View menu, click **Show hidden devices**.
 
-For information about how to set user environment variables, see "Setting environment variables" in the Help and Support Center.
-
-For more information about hidden devices, see [Hiding Devices from Device Manager](https://msdn.microsoft.com/library/windows/hardware/ff547032).
-
- 
-
- 
-
-
-
-
-
+To permanently set the user environment variable DEVMGR_SHOW_NONPRESENT_DEVICES to **1**, use the **Advanced** tab of the system property sheet. After you set this environment variable, run Device Manager and select **Show hidden devices**.

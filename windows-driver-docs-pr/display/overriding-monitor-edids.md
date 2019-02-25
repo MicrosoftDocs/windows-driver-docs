@@ -2,11 +2,8 @@
 title: Overriding Monitor EDIDs with an INF
 description: With an INF file you can override the Extended Display Identification Data (EDID) of any monitor.
 ms.assetid: AA7DC29B-54D5-461A-8252-600D84F0F581
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overriding Monitor EDIDs with an INF
@@ -47,12 +44,14 @@ To update an EDID by using an INF:
 
 1.  The monitor manufacturer implements an INF that contains the updated EDID info and downloads the file to the user’s computer. This can be done through Windows Update or by shipping a CD with the monitor.
 2.  The monitor class installer extracts the updated EDID info from the INF and stores the info as values under this registry key:
-    ```
+
+    ```registry
     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY
     ```
 
     Each EDID override is stored under a separate key. For example:
-    ```
+
+    ```registry
     HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\DELA007\
           5&1608c50f&0&10000090&01&20\Device Parameters\EDID_Override
     ```
@@ -65,7 +64,7 @@ To update an EDID by using an INF:
 
 To override an EDID, include an [**AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) in the INF for each block that you want to override, in the following format:
 
-```
+```inf
 HKR, EDID_OVERRIDE, BlockNumber, Byte 1, Byte 2, Byte 3, Byte 4,...
 ```
 
@@ -73,7 +72,7 @@ The block number is followed by 128 hexadecimal integers that contain the binary
 
 Manufacturers must update only those EDID blocks that are incorrect. The system obtains the remaining blocks from EEPROM. The following example shows the relevant sections of an INF that updates EDID blocks 0, 4, and 5. The monitor driver obtains blocks 1 - 3 and any extension blocks that follow block 5 from EEPROM:
 
-```
+```inf
 [ABC.DDInstall.HW]
 ABC.AddReg
 ...
@@ -86,7 +85,7 @@ HKR, EDID_OVERRIDE, 5, 1, 24, 5C, ..., 2D
 
 For more info on INFs in general, and **AddReg** and **DDInstall** in particular, see [Creating an INF File](https://msdn.microsoft.com/library/windows/hardware/ff538378).
 
-```
+```inf
 ; monsamp.INF
 ;
 ; Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -189,11 +188,10 @@ MS_EDID_OVERRIDE="MS_EDID_OVERRIDE"
 MS_EDID_OVERRIDE-1="MS EDID Override"
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Overriding%20Monitor%20EDIDs%20with%20an%20INF%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

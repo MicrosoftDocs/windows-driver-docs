@@ -2,11 +2,8 @@
 title: Querying Packet Coalescing Capabilities
 description: Querying Packet Coalescing Capabilities
 ms.assetid: CD1839B5-2279-4E8C-ADD8-7869A3123B86
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Querying Packet Coalescing Capabilities
@@ -24,9 +21,9 @@ NDIS handles these OID query requests for miniport drivers and returns the packe
 
 For more information about how the miniport driver registers its packet coalescing capabilities, see [Determining Receive Filtering Capabilities](determining-receive-filtering-capabilities.md).
 
- 
+ 
 
- 
+ 
 
 
 

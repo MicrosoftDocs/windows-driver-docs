@@ -1,13 +1,9 @@
 ---
 title: EFI_USBFN_ENDPOINT_DIRECTION
-author: windows-driver-content
 description: EFI_USBFN_ENDPOINT_DIRECTION
 ms.assetid: 910f7ab5-b4c0-4385-9306-37d863d19bf7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_ENDPOINT\_DIRECTION
@@ -18,7 +14,7 @@ The **EFI\_USBFN\_ENDPOINT\_DIRECTION** enumeration is used to identify directio
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_USBFN_ENDPOINT_DIRECTION 
 {
     EfiUsbEndpointDirectionHostOut  = 0,
@@ -48,11 +44,10 @@ Indicates USB OUT transfer. Direction is from host to device
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

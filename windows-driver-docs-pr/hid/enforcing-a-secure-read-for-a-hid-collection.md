@@ -1,6 +1,5 @@
 ---
 title: Enforcing a Secure Read For a HID Collection
-author: windows-driver-content
 description: Enforcing a Secure Read For a HID Collection
 ms.assetid: be3c7d1b-195c-4b7f-a404-070b3b265333
 keywords:
@@ -8,17 +7,14 @@ keywords:
 - HID collections WDK , secure reads
 - secure reads WDK HID
 - trusted secure reads WDK HID
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enforcing a Secure Read For a HID Collection
 
 
-## <a href="" id="ddk-enforcing-a-secure-read-for-a-hid-collection-kg"></a>
+
 
 
 This section describes how a user-mode application or kernel-mode driver can enforce a *secure read* for a top-level [HID collection](hid-collections.md).
@@ -42,12 +38,10 @@ Enabling and disabling a secure read for a collection works in the following way
 
 -   A client should use a disable request to cancel a corresponding enable request. However, if the client does not do this, the HID class driver appropriately decrements the secure read count for a collection when it processes an [**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff550720) request for a file. When the driver processes the close request, it decrements the secure read count for the collection by the secure read count for the file being closed.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Enforcing%20a%20Secure%20Read%20For%20a%20HID%20Collection%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

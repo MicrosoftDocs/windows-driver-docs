@@ -10,17 +10,14 @@ keywords:
 - sending data WDK networking
 - receiving data WDK networking
 - allocating MDLs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Retreat Operations
 
 
-## <a href="" id="ddk-retreat-operations-ng"></a>
+
 
 
 Retreat operations can increase the size of the used data space in a [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structure or in all of the NET\_BUFFER structures in a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure.
@@ -41,9 +38,9 @@ For send operations, NDIS allocates memory if there isn't enough *unused data sp
 
 For the receive return case, NDIS simply adjusts the **DataOffset** and **DataLength** accordingly. The retreat operation reverses the advance operation that took place during receive processing. After the retreat operation, the *used data space* contains the header data that underlying drivers used during receive processing.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,8 @@ api_name:
 - INF DestinationDirs Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DestinationDirs Section
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 A **DestinationDirs** section specifies the target destination directory or directories for all copy, delete, and/or rename operations on files referenced by name elsewhere in the INF file.
 
-```
+```ini
 [DestinationDirs]
 
 [DefaultDestDir=dirid[,subdir]] 
@@ -32,10 +29,10 @@ A **DestinationDirs** section specifies the target destination directory or dire
 ## Entries
 
 
-<a href="" id="defaultdestdir-dirid--subdir-"></a>**DefaultDestDir=***dirid*\[**,***subdir*\]  
+<a href="" id="defaultdestdir-dirid--subdir-"></a>**DefaultDestDir=**<em>dirid</em>\[**,**<em>subdir</em>\]  
 Specifies the default destination directory for all copy, delete, and/or rename operations on files that are not explicitly listed in a *file-list-section* referenced by other entries here. To ensure that file operations always occur in the correct directory, an INF file that includes **Include** and **Needs** entries should not specify a default destination directory. For more information, see the following Remarks section.
 
-<a href="" id="file-list-section-dirid--subdir--------------"></a>*file-list-section***=***dirid*\[**,***subdir*\]\] ...   
+<a href="" id="file-list-section-dirid--subdir--------------"></a><em>file-list-section</em>**=**<em>dirid</em>\[**,**<em>subdir</em>\]\] ...   
 Specifies the INF-writer-determined name of a section referenced by a [**CopyFiles**](inf-copyfiles-directive.md), [**RenFiles**](inf-renfiles-directive.md), or [**DelFiles**](inf-delfiles-directive.md) directive elsewhere in the INF file. Such an entry is optional if this section has a **DefaultDestDir** entry and all copy-file operations specified in this INF have the same target destination. However, any *file-list-section* referenced by a **RenFiles** or **DelFiles** directive elsewhere in the INF must be listed here.
 
 <a href="" id="dirid"></a>*dirid*  
@@ -63,14 +60,14 @@ Examples
 
 This example sets the default target directory for all copy-file, delete-file, and rename-file operations. Such a simple **DestinationDirs** section is common to INF files for new peripheral devices, because such an INF usually just copies a set of source files into a single directory on the target computer.
 
-```
+```ini
 [DestinationDirs]
 DefaultDestDir = 12 ; dirid = \Drivers on WinNT platforms
 ```
 
 This example shows a fragment of the **DestinationDirs** section of the INF for display/video drivers.
 
-```
+```ini
 [DestinationDirs]
 DefaultDestDir     = 11 ; dirid = \system32 on WinNT platforms
 
@@ -106,11 +103,13 @@ xga.Display      = 11
 
 [**SourceDisksNames**](inf-sourcedisksnames-section.md)
 
+[**Using Dirids**](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids)
+
 [**Version**](inf-version-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

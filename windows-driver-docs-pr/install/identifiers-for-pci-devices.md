@@ -9,32 +9,30 @@ keywords:
 - PCI device identifiers WDK device installations
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/29/2018
+ms.localizationpriority: medium
 ---
 
 # Identifiers for PCI Devices
 
-
-## <a href="" id="ddk-identifiers-for-pci-devices-dg"></a>
-
+> [!IMPORTANT]
+> You can find a list of known IDs used in PCI devices at [The PCI ID Repository](https://pci-ids.ucw.cz/). To list IDs on Windows, use `devcon hwids *`.
 
 The following is a list of the [device identification string](device-identification-strings.md) formats that the PCI bus driver uses to report hardware IDs. When the Plug and Play (PnP) manager queries the driver for the hardware IDs of a device, the PCI bus driver returns a list of hardware IDs in order of increasing generality.
 
-PCI\\VEN\_v(4)&DEV\_d(4)&SUBSYS\_s(4)n(4)&REV\_r(2)
+```cpp
+PCI\\VEN_v(4)&DEV_d(4)&SUBSYS_s(4)n(4)&REV_r(2)
 
-PCI\\VEN\_v(4)&DEV\_d(4)&SUBSYS\_s(4)n(4)
+PCI\\VEN_v(4)&DEV_d(4)&SUBSYS_s(4)n(4)
 
-PCI\\VEN\_v(4)&DEV\_d(4)&REV\_r(2)
+PCI\\VEN_v(4)&DEV_d(4)&REV_r(2)
 
-PCI\\VEN\_v(4)&DEV\_d(4)
+PCI\\VEN_v(4)&DEV_d(4)
 
-PCI\\VEN\_v(4)&DEV\_d(4)&CC\_c(2)s(2)p(2)
+PCI\\VEN_v(4)&DEV_d(4)&CC_c(2)s(2)p(2)
 
-PCI\\VEN\_v(4)&DEV\_d(4)&CC\_c(2)s(2)
+PCI\\VEN_v(4)&DEV_d(4)&CC_c(2)s(2)
+```
 
 Where:
 
@@ -54,67 +52,74 @@ Where:
 
 -   p(2) is the Programming Interface code.
 
-The following is an example of a hardware ID for a display adapter on a portable computer. The format of this hardware ID is PCI\\VEN\_v(4)&DEV\_d(4)&SUBSYS\_s(4)n(4)&REV\_r(2).
+The following is an example of a hardware ID for a display adapter on a portable computer. The format of this hardware ID is PCI\\VEN_v(4)&DEV_d(4)&SUBSYS_s(4)n(4)&REV_r(2).
 
-PCI\\VEN\_102C&DEV\_00E0&SUBSYS\_00000000&REV\_04
+    PCI\\VEN_102C&DEV_00E0&SUBSYS_00000000&REV_04
 
-The following is the hardware ID for the display adapter in the previous example with the revision information removed. The format of this hardware ID is PCI\\VEN\_*v(4)*&DEV\_*d(4)*&SUBSYS\_*s(4)n(4).*
+The following is the hardware ID for the display adapter in the previous example with the revision information removed. The format of this hardware ID is PCI\\VEN_<em>v(4)</em>&DEV_<em>d(4)</em>&SUBSYS_*s(4)n(4).*
 
-PCI\\VEN\_102C&DEV\_00E0&SUBSYS\_00000000
+    PCI\\VEN_102C&DEV_00E0&SUBSYS_00000000
+
+**Note** In Windows 10, some IDs that previously appeared in the Hardware IDs list now appear in the list of Compatible IDs.
+
+## Reporting compatible IDs
 
 The following is a list of the device identification string formats that the PCI bus driver uses to report compatible IDs. The variety of these formats provides substantial flexibility to specify compatible IDs. The PCI bus driver constructs a list of compatible IDs based on the information that the driver can obtain from the device. When the PnP manager queries the driver for the compatible IDs of a device, the PCI bus driver returns a list of compatible IDs in order of decreasing compatibility.
 
-PCI\\VEN\_v(4)&DEV\_d(4)&REV\_r(2)
+```cpp
+PCI\\VEN_v(4)&DEV_d(4)&REV_r(2)
 
-PCI\\VEN\_v(4)&DEV\_d(4)
+PCI\\VEN_v(4)&DEV_d(4)
 
-PCI\\VEN\_v(4)&CC\_c(2)s(2)p(2)
+PCI\\VEN_v(4)&CC_c(2)s(2)p(2)
 
-PCI\\VEN\_v(4)&CC\_c(2)s(2)
+PCI\\VEN_v(4)&CC_c(2)s(2)
 
-PCI\\VEN\_v(4)
+PCI\\VEN_v(4)
 
-PCI\\CC\_c(2)s(2)p(2)&DT\_d(4) (applies only to a PCI Express device)
+PCI\\CC_c(2)s(2)p(2)&DT_d(4) (applies only to a PCI Express device)
 
-PCI\\CC\_c(2)s(2)p(2)
+PCI\\CC_c(2)s(2)p(2)
 
-PCI\\CC\_c(2)s(2)&DT\_d(4) (applies only to a PCI Express device)
+PCI\\CC_c(2)s(2)&DT_d(4) (applies only to a PCI Express device)
 
-PCI\\CC\_c(2)s(2)\`
+PCI\\CC_c(2)s(2)\`
+```
 
 Where:
 
 -   The definitions of the following fields in a compatible ID are identical to the definitions of the corresponding fields that used in a hardware ID: *v(4)*, *r(2)*, *c(2)*, *s(2)*, and *p(2)*.
 
--   *d(4)* in the DEV\_*d(4)* field is the four-character vendor-defined identifier for the device.
+-   *d(4)* in the DEV_*d(4)* field is the four-character vendor-defined identifier for the device.
 
--   *d(4)* in the DT\_*d(4)* field is the four-character device type, as specified in the PCI Express Base specification.
+-   *d(4)* in the DT_*d(4)* field is the four-character device type, as specified in the PCI Express Base specification.
 
 For the example of a display adapter on a portable computer, any of the following compatible IDs would match the information in an INF file for that adapter:
 
-PCI\\VEN\_102C&DEV\_00E0&REV\_04
+```cpp
+PCI\\VEN_102C&DEV_00E0&REV_04
 
-PCI\\VEN\_102C&DEV\_00E0
+PCI\\VEN_102C&DEV_00E0
 
-PCI\\VEN\_102C&DEV\_00E0&REV\_04&CC\_0300
+PCI\\VEN_102C&DEV_00E0&REV_04&CC_0300
 
-PCI\\VEN\_102C&DEV\_00E0&CC\_030000
+PCI\\VEN_102C&DEV_00E0&CC_030000
 
-PCI\\VEN\_102C&DEV\_00E0&CC\_0300
+PCI\\VEN_102C&DEV_00E0&CC_0300
 
-PCI\\VEN\_102C&CC\_030000
+PCI\\VEN_102C&CC_030000
 
-PCI\\VEN\_102C&CC\_0300
+PCI\\VEN_102C&CC_0300
 
-PCI\\VEN\_102C
+PCI\\VEN_102C
 
-PCI\\CC\_030000
+PCI\\CC_030000
 
-PCI\\CC\_0300
+PCI\\CC_0300
+```
+ 
 
- 
-
- 
+ 
 
 
 

@@ -3,17 +3,14 @@ title: Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL
 description: The DRIVER_IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x000000D1. This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high.
 ms.assetid: 26cfd881-cc6e-4cc3-b464-e67d75700b96
 keywords: ["Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL", "DRIVER_IRQL_NOT_LESS_OR_EQUAL"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - DRIVER_IRQL_NOT_LESS_OR_EQUAL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD1: DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL
@@ -21,7 +18,7 @@ api_type:
 
 The DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x000000D1. This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL Parameters
 
@@ -59,7 +56,7 @@ The DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x000000D1. This
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -97,9 +94,9 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

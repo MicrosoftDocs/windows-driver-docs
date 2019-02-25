@@ -2,11 +2,8 @@
 title: WDI tracing with WDILib
 description: The WDILib component currently supports tracing using WPP. The trace provider's GUID is 21ba7b61-05f8-41f1-9048-c09493dcfe38 . The following instructions can be used to collect and view the traces.
 ms.assetid: 2F4FFF67-F88A-4CB0-9980-E3710D4F04EC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDI tracing with WDILib
@@ -19,13 +16,13 @@ The WDILib component currently supports tracing using WPP. The trace provider's 
 
 To collect traces, run the following command line from an Administrator command prompt.
 
-```
+```PowerShell
 netsh trace start wireless_dbg provider={21ba7b61-05f8-41f1-9048-c09493dcfe38} level=0xff keywords=0xff
 ```
 
 You can create a batch cmd file that contains the netsh trace command line. This allows you to expand the command to include IHV WPP events if desired.
 
-```
+```PowerShell
 @echo off
 Setlocal
 Rem
@@ -53,7 +50,7 @@ Alternatively, the trace provider GUID can be incorporated into the trace comman
 
 Once a repro is obtained, the tracing is stopped and traces saved with the following command.
 
-```
+```PowerShell
 netsh trace stop
 ```
 
@@ -64,7 +61,7 @@ This saves the traces in %TEMP%\\NetTraces\\NetTrace.etl.
 
 Traces are converted to text with any WPP to Text conversion tools. One option is to use Netsh.
 
-```
+```PowerShell
 netsh trace convert NetTrace.etl tmfpath=C:\TMF
 ```
 
@@ -80,7 +77,7 @@ The converted text file (NetTrace.txt) can be viewed using any text viewer. If t
 
 To trace on phones, save the following text as wdiguids.txt, including the trace providers you want to trace.
 
-```
+```Text
 0C5A3172-2248-44FD-B9A6-8389CB1DC56A        wlansvc
 D905AC1D-65E7-4242-99EA-FE66A8355DF8        WlanAPI
 abe47285-c002-46d1-95e4-c4aec3c78f50        WFD WPS Provider
@@ -131,7 +128,7 @@ CC3DF8E3-4111-48d0-9B21-7631021F7CA6        Dhcpv4 Client
 
 Using TShell, connect to the device, copy the files over, and begin tracing.
 
-```
+```PowerShell
 open-device 127.0.0.1
 cmdd "mkdir \data\test\wlan"
 putd wdiguids.txt \data\test\wlan
@@ -141,7 +138,7 @@ cmdd tracelog.exe &#39;-enable wdiwpp -guid \data\test\wlan\wdiguids.txt -level 
 
 Run your scenario. To stop tracing and collect the logs, reconnect to TShell (if needed) and run the following commands.
 
-```
+```PowerShell
 cmdd tracelog.exe &#39;-flush wdiwpp&#39;
 cmdd tracelog.exe &#39;-stop wdiwpp&#39;
 getd \data\test\wlan\wdiwpp.etl
@@ -152,12 +149,3 @@ getd &#39;C:\Data\SystemData\ETW\WiFi.etl.001&#39;
 getd &#39;C:\Data\SystemData\ETW\WiFi.etl.002&#39;
 getd &#39;C:\Data\SystemData\ETW\WiFi.etl.003&#39;
 ```
-
- 
-
- 
-
-
-
-
-

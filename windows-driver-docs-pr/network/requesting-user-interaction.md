@@ -5,23 +5,20 @@ ms.assetid: 888faeb0-1984-4b0f-b955-2772a6bd86f7
 keywords:
 - user interaction WDK Native 802.11 IHV Extensions DLL
 - requesting user interaction WDK Native 802.11 IHV Extensions DLL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Requesting User Interaction
 
 
-**Important**  The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](wifi-universal-driver-model.md).
+
 
  
 
 At any time after the call to [*Dot11ExtIhvInitAdapter*](https://msdn.microsoft.com/library/windows/hardware/ff547469), the IHV Extensions DLL can request interaction with the user by calling the [**Dot11ExtSendUIRequest**](https://msdn.microsoft.com/library/windows/hardware/ff547567) function. The operating system forwards all user interaction requests to the IHV UI Extensions DLL, which will process the request and display the appropriate user interface (UI) pages to the user.
 
-When the request has been completed, the operating system calls the [*Dot11ExtIhvProcessUIResponse*](https://msdn.microsoft.com/library/windows/hardware/ff547504) function to forward the results from the IHV UI Extensions DLL for the user interaction. For more information about the IHV UI Extensions DLL, see [Native 802.11 IHV UI Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560635).
+When the request has been completed, the operating system calls the [*Dot11ExtIhvProcessUIResponse*](https://msdn.microsoft.com/library/windows/hardware/ff547504) function to forward the results from the IHV UI Extensions DLL for the user interaction. For more information about the IHV UI Extensions DLL, see [Native 802.11 IHV UI Extensions DLL](native-802-11-ihv-ui-extensions-dll2.md).
 
 For example, the IHV Extensions DLL can request user interaction for any of the following.
 

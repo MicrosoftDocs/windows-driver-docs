@@ -2,11 +2,8 @@
 title: Debugging DRIVER_VERIFIER_DETECTED_VIOLATION (C4)
 description: Driver Verifier detects that the driver violates one of the NDIS/WiFi time-out rule.
 ms.assetid: 73D4B6DF-E667-4C71-B985-FCDC05837908
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging NDIS/WiFi time-out errors - DRIVER\_VERIFIER\_DETECTED\_VIOLATION (C4)
@@ -52,7 +49,7 @@ In the following section of the **!analyze -v** output, the reason why the rule 
 
 DV_VIOLATED_CONDITION:  Timeout on completing an NDIS OID request.
 
-DV_MSDN_LINK: http://go.microsoft.com/fwlink/p/?linkid=278804
+DV_MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=278804
 
 DRIVER_OBJECT: 98a87980
 
@@ -63,7 +60,6 @@ DEBUG_FLR_IMAGE_TIMESTAMP:  5229c857
 MODULE_NAME: NdisTimedOidComplete
 
 FAULTING_MODULE: 9fee1000 NdisTimedOidComplete
-
 ```
 
 Further down this analysis output, you can click on the link under the DV\_RULE\_INFO section for additional rule descriptions. For time-out type of rules, the current stack might not contain relevant information.
@@ -114,7 +110,7 @@ RULE_DESCRIPTION:
 This rule verifies if an NDIS miniport driver completes an OID in time.
 The OID is tracked (a.k.a., TRACKED_OBJECT). Use !ndiskd.oid .
 
-MSDN_LINK: http://go.microsoft.com/fwlink/p/?linkid=278804
+MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=278804
 
 CONTEXT: Miniport 0x86BD10E8
 
@@ -145,24 +141,23 @@ kd> dps 0x9C1F3480 + 0x10
 
 ### Fixing the cause of the NDIS WIFI timeout violation
 
-When the crash dump has been generated for a timed rule, there is a possibility that the root cause can be found at the time of the crash dump. To debug further, consider starting with the NdisKd debugger extension commands, see [NDIS Extensions (Ndiskd.dll)](https://msdn.microsoft.com/library/windows/hardware/ff552270) and [Getting started with NDISKD](http://go.microsoft.com/fwlink/p/?linkid=327569). You may also need to look at [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) logs, if your driver has implemented ETW. If this rule were not enabled, this error will manifest itself as user application hang at best, or a [**Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE**](https://msdn.microsoft.com/library/windows/hardware/ff559329) at the worst.
+When the crash dump has been generated for a timed rule, there is a possibility that the root cause can be found at the time of the crash dump. To debug further, consider starting with the NdisKd debugger extension commands, see [NDIS Extensions (Ndiskd.dll)](https://msdn.microsoft.com/library/windows/hardware/ff552270) and [Getting started with NDISKD](https://go.microsoft.com/fwlink/p/?linkid=327569). You may also need to look at [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) logs, if your driver has implemented ETW. If this rule were not enabled, this error will manifest itself as user application hang at best, or a [**Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE**](https://msdn.microsoft.com/library/windows/hardware/ff559329) at the worst.
 
 ## <span id="related_topics"></span>Related topics
 
 
 [NDIS Extensions (Ndiskd.dll)](https://msdn.microsoft.com/library/windows/hardware/ff552270)
 
-[Getting started with NDISKD (part 1)](http://go.microsoft.com/fwlink/p/?linkid=327569)
+[Getting started with NDISKD (part 1)](https://go.microsoft.com/fwlink/p/?linkid=327569)
 
-[NDISKD and !miniport (part 2)]( http://go.microsoft.com/fwlink/p/?linkid=327570)
+[NDISKD and !miniport (part 2)]( https://go.microsoft.com/fwlink/p/?linkid=327570)
 
-[Debugging with NDISKD (part 3)](http://go.microsoft.com/fwlink/p/?linkid=327571)
+[Debugging with NDISKD (part 3)](https://go.microsoft.com/fwlink/p/?linkid=327571)
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Debugging%20NDIS/WiFi%20time-out%20errors%20-%20DRIVER_VERIFIER_DETECTED_VIOLATION%20%28C4%29%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

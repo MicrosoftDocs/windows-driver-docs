@@ -1,20 +1,16 @@
 ---
 title: Specifying Device Types
-author: windows-driver-content
 description: Specifying Device Types
 ms.assetid: 32e179f9-ab11-4360-b2fd-4276c6b6b3a0
 keywords: ["device objects WDK kernel , device types", "device types WDK device objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Device Types
 
 
-## <a href="" id="ddk-specifying-device-types-kg"></a>
+
 
 
 Each device object has a *device type*, which is stored in the **DeviceType** member of its [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure. The device type represents the type of underlying hardware for the driver.
@@ -23,7 +19,7 @@ Every kernel-mode driver that creates a device object must specify an appropriat
 
 The system defines the following device type values, listed in alphabetical order:
 
-```
+```cpp
 #define FILE_DEVICE_8042_PORT           0x00000027
 #define FILE_DEVICE_ACPI                0x00000032
 #define FILE_DEVICE_BATTERY             0x00000029
@@ -94,12 +90,10 @@ FILE\_DEVICE\_*XXX* values in the range of 0 through 32767 are reserved for Micr
 
 If a type of hardware does not match any of the defined types, specify a value of either FILE\_DEVICE\_UNKNOWN, or a value within the range of 32768 through 65535.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Specifying%20Device%20Types%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

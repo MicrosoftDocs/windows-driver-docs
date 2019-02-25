@@ -7,11 +7,8 @@ keywords:
 - VGA WDK video miniport , full-screen VDMs in x86-based machines
 - full-screen VDMs in x86-based machines WDK video miniport
 - x86-based machines WDK VGA-compatible video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Full-Screen VDMs in x86-based Machines
@@ -28,13 +25,12 @@ To prevent a full-screen application from issuing a sequence of instructions tha
 
 Direct access to I/O ports for the application is determined by the IOPM (named for the x86 I/O permission map) that the VGA-compatible miniport driver sets by calling **VideoPortSetTrappedEmulatorPorts**. Note that the miniport driver can adjust the IOPM by calling this function to have access ranges, describing I/O ports, released for direct access by the application or retrapped to an *SvgaHwIoPortXxx* function. The current IOPM determines which ports can be accessed directly by the application and which remain hooked by the V86 emulator and trapped to an *SvgaHwIoPortXxx* function for validation.
 
-By default, all I/O ports set up in such a miniport driver's emulator access ranges array are trapped to the corresponding *SvgaHwIoPortXxx* function. However, VGA-compatible miniport drivers usually call **VideoPortSetTrappedEmulatorPorts** on receipt of an IOCTL\_VIDEO\_ENABLE\_VDM request to reset the IOPM for the [*VDM*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-vdm) to allow direct access to some of these I/O ports. Usually, such a driver allows direct access to all video adapter registers except the VGA sequencer registers and the miscellaneous output register, plus any SVGA adapter-specific registers that the driver writer has determined should always be validated by an *SvgaHwIoPortXxx* function.
+By default, all I/O ports set up in such a miniport driver's emulator access ranges array are trapped to the corresponding *SvgaHwIoPortXxx* function. However, VGA-compatible miniport drivers usually call **VideoPortSetTrappedEmulatorPorts** on receipt of an IOCTL\_VIDEO\_ENABLE\_VDM request to reset the IOPM for the *VDM* to allow direct access to some of these I/O ports. Usually, such a driver allows direct access to all video adapter registers except the VGA sequencer registers and the miscellaneous output register, plus any SVGA adapter-specific registers that the driver writer has determined should always be validated by an *SvgaHwIoPortXxx* function.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Full-Screen%20VDMs%20in%20x86-based%20Machines%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

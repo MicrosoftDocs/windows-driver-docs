@@ -7,17 +7,14 @@ keywords:
 - device installations WDK , files
 - installing devices WDK , files
 - files WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Installation Files
 
 
-## <a href="" id="ddk-device-installation-files-dg"></a>
+
 
 
 The software that is required to support a particular device depends on the kind of device and the ways in which the device is used. Typically, a vendor provides the following software in a [driver package](driver-packages.md) to support a device:
@@ -48,9 +45,9 @@ Also, see the device-type-specific documentation in the WDK.
 
 The WDK includes various sample installation files. For more information, see [Sample Device Installation Files](sample-device-installation-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,8 @@ title: Debugging an Interrupt Storm
 description: Debugging an Interrupt Storm
 ms.assetid: b863cb9c-dce0-4572-b0ed-6f7d3a6ba472
 keywords: ["pending IRPs", "I/O Request Packet (IRP), pending"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging an Interrupt Storm
@@ -34,7 +31,7 @@ This example demonstrates one method for detecting and debugging an interrupt st
 
 When the machine hangs, use a kernel debugger to break in. Use the **!irpfind** extension command to look for pending IRPs. Then, use the **!irp** extension to obtain details about any pending IRPs. For example:
 
-```
+```dbgcmd
 kd> !irp 81183468 
 Irp is active with 2 stacks 2 is current (= 0x811834fc)
  No Mdl Thread 00000000:  Irp stack trace.
@@ -51,7 +48,7 @@ This example shows that \\driver\\e100b has not returned the IRP for **ntoskrnl!
 
 To investigate, use the **kb** command to request a stack trace. For example:
 
-```
+```dbgcmd
 kd> kb
 ChildEBP RetAddr  Args to Child
 f714ee68 8046355a 00000001 80068c10 00000030 ntoskrnl!RtlpBreakWithStatusInstruction
@@ -64,7 +61,7 @@ f714ef78 80501cb5 00000000 00000240 8000017c halacpi!HalpDispatchInterrupt2ndEnt
 
 Notice that the section in bold is an interrupt dispatch. If you use the **g** command and break in again, you will very likely see a different stack trace, but you will still see an interrupt dispatch. To determine which interrupt is responsible for the system stall, look at the second parameter passed into **HalBeginSystemInterrupt** (in this case, 0x3B). The standard rule is that the interrupt vector displayed (0x3B) is the IRQ line plus 0x30, so the interrupt is number 0xB. Running another stack trace may provide more information about which device issued the interrupt service request (ISR). In this case, a second stack trace has the following result:
 
-```
+```dbgcmd
 kd> kb
 ChildEBP RetAddr  Args to Child
 f714ee24 8046355a 00000001 00000010 00000030 ntoskrnl!RtlpBreakWithStatusInstruction
@@ -93,7 +90,7 @@ The system is currently running the ISR for the video card. The system will run 
 
 Use the **!arbiter 4** extension to determine which devices are on IRQ 0xB. If there is only one device on IRQ 0xB, you have found the cause of the problem.. If there is more than one device sharing the interrupt (99% of the cases), you will need to isolate the device either by manually programming LNK nodes (which is destructive to the system state), or by removing or disabling hardware.
 
-```
+```dbgcmd
 kd> !arbiter 4 
 DEVNODE 8149a008 (HTREE\ROOT\0)
   Interrupt Arbiter "RootIRQ" at 80472a20
@@ -178,7 +175,7 @@ In this case, the audio, Universal Serial Bus (USB), network interface card (NIC
 
 To find out which ISR claims ownership of the interrupt, examine the return value from the ISR. Simply disassemble the ISR using the **U** command with address given in the **!arbiter** display, and set a breakpoint on the last instruction of the ISR (which will be a 'ret' instruction). Note that using the command **g &lt;address&gt;** is the equivalent of setting a breakpoint on that address:
 
-```
+```dbgcmd
 kd> g bfe33e7b 
 ds1wdm!AdapterIsr+ad:
 bfe33e7b c20800           ret     0x8 
@@ -186,7 +183,7 @@ bfe33e7b c20800           ret     0x8
 
 Use the **r** command to examine the registers. In particular, look at the EAX register. If the portion of the register contents in bold (in the following code example) is anything other then zero, this ISR claimed the interrupt. Otherwise, the interrupt was not claimed, and the operating system will call the next ISR. This example shows that the video card is not claiming the interrupt:
 
-```
+```dbgcmd
 kd> r 
 eax=00000000 ebx=813f4ff0 ecx=00000010 edx=ffdff848 esi=8145d168 edi=813f4fc8
 eip=bfe33e7b esp=f714eec4 ebp=f714eee0 iopl=0         nv up ei pl zr na po nc
@@ -197,7 +194,7 @@ bfe33e7b c20800           ret     0x8
 
 In fact, in this case, the interrupt is not claimed by any of the devices on IRQ 0xb. When you encounter this problem, you should also check to see if each piece of hardware associated with the interrupt is actually enabled. For PCI, this is easy -- look at the CMD register displayed by the **!pci** extension output:
 
-```
+```dbgcmd
 kd> !pci 0 0 
 PCI Bus 0
 00:0  8086:7190.03  Cmd[0006:.mb...]  Sts[2210:c....]  Device  Host bridge
@@ -214,11 +211,10 @@ Note that the audio chip's CMD register is zero. This means the audio chip is ef
 
 In this case, the audio chip needs to be manually re-enabled.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20an%20Interrupt%20Storm%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

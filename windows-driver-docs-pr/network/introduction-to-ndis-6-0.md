@@ -6,17 +6,14 @@ keywords:
 - network drivers WDK , NDIS
 - NDIS WDK , about NDIS
 - Network Driver Interface Specification WDK
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 01/09/2019
+ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS 6.0
 
 
-## <a href="" id="ddk-introduction-to-ndis-6-0-ng"></a>
+
 
 
 NDIS 6.0 is the next major version of the Network Driver Interface Specification (NDIS) library. NDIS specifies a standard interface between kernel-mode network drivers and the operating system. NDIS also specifies a standard interface between layered network drivers, thereby abstracting lower-level drivers that manage hardware from upper-level drivers, such as network transports. NDIS 6.0 is included in the Windows Vista operating system.
@@ -31,7 +28,7 @@ This section includes the following topics:
 
 [Simplified Driver Model](simplified-driver-model.md)
 
-For a description of the differences between NDIS 6.0 and earlier versions, and for detailed information about porting drivers to NDIS 6.0, see [Porting NDIS 5.x Drivers to NDIS 6.0](porting-ndis-5-x-drivers-to-ndis-6-0.md).
+For a description of the differences between NDIS 6.0 and earlier versions, and for detailed information about porting drivers to NDIS 6.0, see [Porting NDIS 5.x Drivers to NDIS 6.0](https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0).
 
 ## Related topics
 
@@ -44,9 +41,9 @@ For a description of the differences between NDIS 6.0 and earlier versions, and 
 
 [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md)
 
- 
+ 
 
- 
+ 
 
 
 

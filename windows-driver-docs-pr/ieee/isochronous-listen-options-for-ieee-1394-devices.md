@@ -1,6 +1,5 @@
 ---
 title: Isochronous Listen Options for IEEE 1394 Devices
-author: windows-driver-content
 description: Isochronous Listen Options for IEEE 1394 Devices
 ms.assetid: a369b7f0-be85-49f0-bb09-d07cbd3d3558
 keywords:
@@ -12,17 +11,14 @@ keywords:
 - packet DMA WDK IEEE 1394 bus
 - stripping packet headers
 - headers WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Isochronous Listen Options for IEEE 1394 Devices
 
 
-## <a href="" id="ddk-isochronous-listen-options-for-ieee-1394-devices-kg"></a>
+
 
 
 This section describes the various isochronous listen options.
@@ -72,13 +68,12 @@ Drivers use the [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](https://msdn.microsoft.com
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -3,17 +3,14 @@ title: rtlavl
 description: The rtlavl extension displays the entries of an RTL_AVL_TABLE structure.
 ms.assetid: b1e19b13-8bb6-4f40-8d51-368fafc38ebc
 keywords: ["avl tables", "rtlavl Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - rtlavl
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !rtlavl
@@ -21,7 +18,7 @@ api_type:
 
 The **!rtlavl** extension displays the entries of an RTL\_AVL\_TABLE structure.
 
-```
+```dbgcmd
 !rtlavl Address [Module!Type]
 !rtlavl -?
 ```
@@ -60,7 +57,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,15 +66,14 @@ Use the [**!gentable**](-gentable.md) extension to display AVL tables.
 Remarks
 -------
 
-Including the *Module***!***Type* option causes each entry in the table to be interpreted as having the given type.
+Including the <em>Module</em>**!**<em>Type</em> option causes each entry in the table to be interpreted as having the given type.
 
 The display can be interrupted at any time by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD or CDB).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!rtlavl%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -9,24 +9,21 @@ keywords:
 - network component notify objects WDK
 - displaying Property pages
 - property pages WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Notify Objects for Network Components
 
 
-## <a href="" id="ddk-notify-objects-for-network-components-ng"></a>
+
 
 
 A *notify object* processes notifications that are sent by the network configuration subsystem to the object on behalf of a specific network component. A notify object is served up by a dynamic-link library (DLL). A notify object is used to display Property pages for a network component and to give that component programmatic control over the network configuration.
 
 **Note**  A network component does not generally require a notify object if both of the following conditions are true:
 
- 
+ 
 
 -   A network component can be installed and removed through its information (INF) file
 
@@ -40,9 +37,9 @@ The following sections describe notify objects and explain how to develop them:
 
 For reference information for the interface methods that support notify objects, see [Notify Objects](https://msdn.microsoft.com/library/windows/hardware/ff559161).
 
- 
+ 
 
- 
+ 
 
 
 

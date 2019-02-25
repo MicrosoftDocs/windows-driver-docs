@@ -3,17 +3,14 @@ title: .context (Set User-Mode Address Context)
 description: The .context command specifies which page directory of a process will be used for the user-mode address context, or displays the current user-mode address context.
 ms.assetid: f859b9bf-c05a-44cd-b6f0-8ff4561ddd4e
 keywords: ["Set User-Mode Address Context (.context) command", "addresses, Set User-Mode Address Context (.context) command", "context, Set User-Mode Address Context (.context) command", ".context (Set User-Mode Address Context) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .context (Set User-Mode Address Context)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .context (Set User-Mode Address Context)
@@ -21,7 +18,7 @@ api_type:
 
 The **.context** command specifies which page directory of a process will be used for the user-mode address context, or displays the current user-mode address context.
 
-```
+```dbgsyntax
 .context [PageDirectoryBase]
 ```
 
@@ -54,7 +51,7 @@ Specifies the base address for a page directory of a desired process. The user-m
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -75,7 +72,7 @@ If you are doing crash dump debugging, the [**.cache**](-cache--set-cache-size-.
 
 Here is an example. Use the [**!process**](-process.md) extension to find the directory base for the desired process:
 
-```
+```dbgcmd
 kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 PROCESS fe5039e0  SessionId: 0  Cid: 0008    Peb: 00000000  ParentCid: 0000
@@ -91,13 +88,13 @@ PROCESS fe3c0d60  SessionId: 0  Cid: 0208    Peb: 7ffdf000  ParentCid: 00d4
 
 Now use the **.context** command with this page directory base.
 
-```
+```dbgcmd
 kd> .context 0011f000
 ```
 
 This enables you to examine the address space in various ways. For example, here is the output of the [**!peb**](-peb.md) extension:
 
-```
+```dbgcmd
 kd> !peb
 PEB at 7FFDF000
     InheritedAddressSpace:    No
@@ -124,11 +121,10 @@ PEB at 7FFDF000
         Environment:  0x10000
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.context%20%28Set%20User-Mode%20Address%20Context%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

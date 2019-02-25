@@ -1,15 +1,11 @@
 ---
 title: WDFVERIFY macro
-author: windows-driver-content
 description: The WDFVERIFY macro tests a logical expression and, if the expression evaluates to FALSE, breaks into the kernel debugger.
 ms.assetid: 9dc19299-7eda-42fb-811e-ba8dc5c1cdb5
 keywords:
  - WDFVERIFY macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDFVERIFY macro
@@ -24,7 +20,7 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID WDFVERIFY(
-    exp
+    exp
 );
 ```
 
@@ -53,7 +49,7 @@ Examples
 
 The following code example breaks into the debugger if an attempt to reuse a request object fails.
 
-```
+```cpp
 status = WdfRequestReuse(Request, &amp;params);
 WDFVERIFY(NT_SUCCESS(status));
 ```
@@ -69,7 +65,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="https://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](https://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -87,9 +83,9 @@ Requirements
 
 [**VERIFY_IS_IRQL_PASSIVE_LEVEL**](verify-is-irql-passive-level.md)
 
- 
+ 
 
- 
+ 
 
 
 

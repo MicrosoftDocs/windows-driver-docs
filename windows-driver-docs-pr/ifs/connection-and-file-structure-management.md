@@ -1,6 +1,5 @@
 ---
 title: Connection and File Structure Management
-author: windows-driver-content
 description: Connection and File Structure Management
 ms.assetid: 3695cab3-6751-48ee-8b11-e70c2bceab29
 keywords:
@@ -11,11 +10,8 @@ keywords:
 - file structures WDK RDBSS
 - structures WDK RDBSS
 - connection information WDK RDBSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connection and File Structure Management
@@ -42,7 +38,7 @@ These six fundamental data structures are as follows:
 
 These data structures are organized in the following hierarchy:
 
-```
+```cpp
                 SRV_CALL 
      FCB   <------> NET_ROOT
         SRV_OPEN  <---> V_NET_ROOT
@@ -93,7 +89,7 @@ All of these data structures are reference counted. The reference counts on a da
 </tbody>
 </table>
 
- 
+ 
 
 In each case, the dynamic value refers to the number of callers that have referenced the structure without dereferencing it. The static part of the reference count is maintained by the routines themselves. For example, [**RxCreateNetRoot**](https://msdn.microsoft.com/library/windows/hardware/ff554366) increments the reference count for the associated SRV\_CALL structure.
 
@@ -127,11 +123,10 @@ This section contains the following topics:
 
 [Connection and File Control Block Management Routines](connection-and-file-control-block-management-routines.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

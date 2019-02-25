@@ -5,11 +5,8 @@ ms.assetid: 464c74ae-5e37-41f1-b305-ef57039b28ba
 keywords:
 - classify callouts WDK Windows Filtering Platform , deep inspection
 - deep inspection WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using a Callout for Deep Inspection
@@ -19,7 +16,7 @@ When a callout is performing deep inspection, its [classifyFn](https://msdn.micr
 
 For example:
 
-```
+```C++
 // classifyFn callout function
 VOID NTAPI
  ClassifyFn(
@@ -118,9 +115,9 @@ At some filtering layers, the *layerData* parameter that is passed by the filter
 
 For information about how to perform deep inspection of stream data, see [Using a Callout for Deep Inspection of Stream Data](using-a-callout-for-deep-inspection-of-stream-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,17 +5,14 @@ ms.assetid: 77efa8f8-0b94-46b7-89d1-ec9c2c180845
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , wireless connection properties
 - wireless connection properties WDK Native 802.11 IHV UI Extensions DLL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Extending Wireless Connection Properties
 
 
-**Important**  The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](wifi-universal-driver-model.md).
+
 
  
 

@@ -3,17 +3,14 @@ title: Activating a Repeater
 description: To activate the repeater connection, you will usually first start the server, then start the repeater, then start the client.It is also possible to start the repeater first and then the server.
 ms.assetid: a2409b3d-48eb-46eb-8a53-7c4d505bb6ea
 keywords: ["Activating a Repeater Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - Activating a Repeater
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Activating a Repeater
@@ -56,7 +53,7 @@ Causes DbEngPrx to continue existing even after all connections to it are droppe
 <span id="ClientTransport"></span><span id="clienttransport"></span><span id="CLIENTTRANSPORT"></span>*ClientTransport*  
 Specifies the protocol settings to be used in connecting to the server. The protocol should match that used when the server was created. The protocol syntaxes are as follows:
 
-```
+```dbgcmd
 npipe:server=Server,pipe=PipeName[,password=Password] 
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
 tcp:clicon=Server,port=Socket[,password=Password][,ipversion=6] 
@@ -95,7 +92,7 @@ If a password was used when the server was created, *Password* must be supplied 
 <span id="ServerTransport"></span><span id="servertransport"></span><span id="SERVERTRANSPORT"></span>ServerTransport  
 Specifies the protocol settings that will be used when the client connects to the repeater. The possible protocol syntaxes are:
 
-```
+```dbgcmd
 npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] 
 tcp:port=Socket[,hidden][,password=Password][,IcfEnable] 
 tcp:port=Socket,clicon=Client[,password=Password] 
@@ -112,7 +109,7 @@ When TCP or SSL protocol is used, *Socket* is the socket port number.
 
 It is also possible to specify a range of ports separated by a colon. DbEngPrx will check each port in this range to see if it is free. If it finds a free port and no error occurs, the repeater will be created. The client will have to specify the actual port being used to connect to the repeater. To determine the actual port, search for the repeater; when this repeater is displayed, the port will be followed by two numbers separated by a colon. The first number will be the actual port used; the second can be ignored. For example, if the port was specified as **port=51:60**, and port 53 was actually used, the search results will show "port=53:60". (If you are using the **clicon** parameter to establish a reverse connection, the client can specify a range of ports in this manner, while the repeater must specify the actual port used.)
 
-<span id="clicon_Client"></span><span id="clicon_client"></span><span id="CLICON_CLIENT"></span>**clicon=***Client*  
+<span id="clicon_Client"></span><span id="clicon_client"></span><span id="CLICON_CLIENT"></span>**clicon=**<em>Client</em>  
 When TCP or SSL protocol is used and the **clicon** parameter is specified, a *reverse connection* will be opened. This means that the repeater will try to connect to the client, instead of letting the client initiate the contact. This can be useful if you have a firewall that is preventing a connection in the usual direction. *Client* specifies the network name or IP address of the computer on which the client exists or will be created. The two initial backslashes (\\\) are optional.
 
 Since the repeater is looking for one specific client, you cannot connect multiple clients to the repeater if you use this method. If the connection is refused or is broken you will have to restart the repeater.
@@ -135,7 +132,7 @@ Prevents the server from appearing when another debugger displays all active ser
 Requires a client to supply the specified password in order to connect to the debugging session. *Password* can be any alphanumeric string.
 
 <span id="IcfEnable"></span><span id="icfenable"></span><span id="ICFENABLE"></span>**IcfEnable**  
-(Windows XP and later versions only) Causes the debugger to enable the necessary port connections for TCP or named pipe communication when the Internet Connection Firewall is active. By default, the Internet Connection Firewall disables the ports used by these protocols. When **IcfEnable** is used with a TCP connection, the debugger causes Windows to open the port specified by the *Socket* parameter. When **IcfEnable** is used with a named pipe connection, the debugger causes Windows to open the ports used for named pipes (ports 139 and 445). The debugger does not close these ports after the connection terminates.
+Causes the debugger to enable the necessary port connections for TCP or named pipe communication when the Internet Connection Firewall is active. By default, the Internet Connection Firewall disables the ports used by these protocols. When **IcfEnable** is used with a TCP connection, the debugger causes Windows to open the port specified by the *Socket* parameter. When **IcfEnable** is used with a named pipe connection, the debugger causes Windows to open the ports used for named pipes (ports 139 and 445). The debugger does not close these ports after the connection terminates.
 
 ### <span id="step_three__starting_the_client"></span><span id="STEP_THREE__STARTING_THE_CLIENT"></span>Step Three: Starting the Client
 
@@ -143,11 +140,10 @@ The client should be a debugging client or a smart client -- whichever correspon
 
 If the server rejects the connection (for example, if you supply an incorrect password), both the repeater and the client will be shut down. You will have to restart both of them to reestablish contact with the server.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Activating%20a%20Repeater%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

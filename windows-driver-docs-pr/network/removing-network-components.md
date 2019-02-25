@@ -8,17 +8,14 @@ keywords:
 - network component removal WDK
 - removing network components
 - notifications WDK networking , removing network components
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Removing Network Components
 
 
-## <a href="" id="ddk-removing-network-components-ng"></a>
+
 
 
 Network components are removed by the network configuration subsystem.
@@ -31,9 +28,9 @@ Network components are removed by the network configuration subsystem.
 
 3.  The subsystem calls the notify object's [**INetCfgComponentControl::ApplyRegistryChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547727) method to remove information about the network component from the registry.
 
- 
+ 
 
- 
+ 
 
 
 

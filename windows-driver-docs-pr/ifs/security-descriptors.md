@@ -1,6 +1,5 @@
 ---
 title: Security Descriptors
-author: windows-driver-content
 description: Security Descriptors
 ms.assetid: 4c3200a8-63f4-4398-aed1-b90150027829
 keywords:
@@ -11,11 +10,8 @@ keywords:
 - descriptors WDK file systems , about security descriptors
 - storage WDK file systems
 - offline security descriptor storage WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Security Descriptors
@@ -60,11 +56,10 @@ This section includes the following topics:
 
 [Access Control List](access-control-list.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

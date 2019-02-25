@@ -1,29 +1,22 @@
 ---
 title: Windows Hello camera driver bring up guide
-author: windows-driver-content
-description: Windows Hello provides you the ability to enable face authentication to log on to a Windows 10 system or device.
+description: This topic discusses how to enable face authentication for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs).
 ms.assetid: 5CE619F4-E136-4F8F-8F90-F7F96DE4642E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
-# Windows Hello camera driver bring up guide
+# Camera driver bring up guide
 
+This topic discusses how to enable face authentication for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs) who want to provide this functionality in their devices.
 
-Windows Hello provides you the ability to enable face authentication to log on to a Windows 10 system or device. This topic discusses how to enable Windows Hello for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs) who want to provide this log on functionality in their devices.
+## FrameServer
 
-## Windows Hello and FrameServer
-
-
-The following diagram shows how Windows Hello works with the new driver stack through FrameServer:
+The following diagram shows how face authentication works with the new driver stack through FrameServer:
 
 ![windows hello and frameserver](images/windows-hello-device-model.png)
 
-## <a href="" id="face-authentication--ddis"></a>Face authentication DDIs
-
+## Face authentication DDIs
 
 There are two new face authentication DDI constructs available in Windows 10, version 1607 to support Windows Hello:
 
@@ -45,12 +38,11 @@ There are two new face authentication DDI constructs available in Windows 10, v
 
 ## USB camera support
 
-
-To enable Windows Hello for an infrared camera on your device, you must provide a correctly configured DeviceMFT component and USB Video Class (UVC) extension unit.
+To enable face authentication for an infrared camera on your device, you must provide a correctly configured DeviceMFT component and USB Video Class (UVC) extension unit.
 
 ### Configure the DeviceMFT component
 
-As a starting point for building a DeviceMFT component that supports Windows Hello on your device, you can use the [sampledevicemft](https://github.com/Microsoft/Windows-driver-samples/tree/master/avstream/sampledevicemft) sample located in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
+As a starting point for building a DeviceMFT component that supports face authentication on your device, you can use the [sampledevicemft](https://github.com/Microsoft/Windows-driver-samples/tree/master/avstream/sampledevicemft) sample located in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 To modify the driver sample, download and extract [Windows-driver-samples-master.zip](https://github.com/Microsoft/Windows-driver-samples/archive/master.zip), or alternatively, use git to clone the Windows driver sample repository to your development computer. Navigate to the **sampledevicemft** sample located in the **avstream** folder and make the following changes to the sample source code:
 
@@ -85,13 +77,13 @@ Refer to the [Extension Unit Plug-In Architecture](extension-unit-plug-in-archit
 
 To register a UVC device under **KSCATEGORY\_SENSOR\_CAMERA**, the sensor camera promotion flag should be specified:
 
-```
+```INF
 HKR,,SensorCameraMode,0x00010001,0x00000001
 ```
 
 To hide this camera from a regular camera app because it has no RGB streams, use the skip enumeration flag as follows:
 
-```
+```INF
 HKR,,SkipCameraEnumeration,0x00010001,0x00000001
 ```
 
@@ -99,7 +91,7 @@ This removes the camera from **KSCATEGORY\_VIDEO**, which will block it from bei
 
 Both the **SkipCameraEnumeration** and **SensorCameraMode** entries should be placed in the **DDInstall.HW** section of the INF file.
 
-## <a href="" id="hlk-tests-for-kscategory-sensor-camera-to-assist-driver-testing"></a>HLK tests for KSCATEGORY\_SENSOR\_CAMERA to assist driver testing
+## HLK tests for KSCATEGORY\_SENSOR\_CAMERA to assist driver testing
 
 
 Hardware Logo Kit (HLK) testing is required for both IR and RGB camera modules. This testing verifies the basic functionality of RGB and IR cameras used for Windows Hello face authentication. The RGB camera requirements are already specified in the HLK test suite.
@@ -155,10 +147,7 @@ These are tests that IR camera modules will need to pass to be enabled:
 If the HLK tests listed above are not passed, Microsoft will not issue a signed driver to the OEM, and Windows Hello will not operate.
 
 ## Related topics
+
 [Capture photos and video with MediaCapture](https://msdn.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-mediacapture)  
+
 [Windows.Media.Capture namespace](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.aspx)  
-
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Windows%20Hello%20camera%20driver%20bring%20up%20guide%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-

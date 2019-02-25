@@ -1,6 +1,5 @@
 ---
 title: Input Streams
-author: windows-driver-content
 description: Input Streams
 ms.assetid: 0aa378d8-e7e2-4555-b541-dd1ed77b4a12
 keywords:
@@ -12,17 +11,14 @@ keywords:
 - LPCM audio input streams WDK DVD decoder
 - AC-3 WDK DVD decoder
 - MPEG2 video input streams WDK DVD decoder
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Input Streams
 
 
-## <a href="" id="ddk-input-streams-ksg"></a>
+
 
 
 DVD input streams are provided to the minidriver as arrays of encrypted DVD PACKs. PACKs are as defined in the DVD specification. Note that the system clock reference (SCR) field of the PACK is set to zero because Microsoft's DVD architecture uses the "master clock" paradigm for audio and video synchronization. Typically, the audio stream of the DVD decoder minidriver provides the master clock. For more information, see [Master Clock](master-clock.md).
@@ -59,14 +55,14 @@ The following table describes the MPEG2 video input stream media types used by D
 <td><p>Format Block Structure</p></td>
 <td><p>MPEG2VIDEOINFO</p>
 <div>
- 
+ 
 </div>
 (Superset of VIDEOINFO2 structure. Also indicates MPEG profile and level.)</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the AC-3 audio input stream media types used by DVD movies:
 
@@ -99,7 +95,7 @@ The following table describes the AC-3 audio input stream media types used by DV
 <td><p>Format Block Structure</p></td>
 <td><p>KSDATAFORMAT_WAVEFORMATEX</p>
 <div>
- 
+ 
 </div>
 Superset of WaveFormatEx
 <p>(More than two channels. Down-mix descriptor.)</p></td>
@@ -107,7 +103,7 @@ Superset of WaveFormatEx
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the LPCM audio input stream media types used by DVD movies:
 
@@ -142,7 +138,7 @@ The following table describes the LPCM audio input stream media types used by DV
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the DTS audio input stream media types used by DVD movies:
 
@@ -175,7 +171,7 @@ The following table describes the DTS audio input stream media types used by DVD
 <td><p>Format Block Structure</p></td>
 <td><p>KSDATAFORMAT_WAVEFORMATEX</p>
 <div>
- 
+ 
 </div>
 Superset of WaveFormatEx
 <p>(More than two channels. Down-mix descriptor.)</p></td>
@@ -183,7 +179,7 @@ Superset of WaveFormatEx
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the SDDS audio input stream media types used by DVD movies:
 
@@ -216,7 +212,7 @@ The following table describes the SDDS audio input stream media types used by DV
 <td><p>Format Block Structure</p></td>
 <td><p>KSDATAFORMAT_WAVEFORMATEX</p>
 <div>
- 
+ 
 </div>
 Superset of WaveFormatEx
 <p>(More than two channels. Down-mix descriptor.)</p></td>
@@ -224,7 +220,7 @@ Superset of WaveFormatEx
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the subpicture stream media types used by DVD movies:
 
@@ -259,7 +255,7 @@ The following table describes the subpicture stream media types used by DVD movi
 </tbody>
 </table>
 
- 
+ 
 
 For subpicture highlighting, palette information and highlight information are passed as properties. The subpicture data stream consists of packets of data, as provided by the DVD specification. Although the PACK header is stripped off, it is still provided.
 
@@ -271,12 +267,10 @@ The highlight information arrives asynchronously to the data stream. The DVD dec
 
 Highlight information contains Start and End time-stamps. These are in the same units as other time stamps, with two exceptions: A Start time-stamp of 0xFFFFFFFF means the highlight property is effective upon receipt, and an End time-stamp of 0xFFFFFFFF means the highlight property is valid until the next highlight is received.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Input%20Streams%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

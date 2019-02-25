@@ -1,6 +1,5 @@
 ---
 title: Using Common Buffers
-author: windows-driver-content
 description: Using Common Buffers
 ms.assetid: 81a56f62-917e-4798-b2cc-6469c802fab8
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - bus-master DMA WDK KMDF , common buffers
 - common buffers WDK KMDF
 - buffers WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Common Buffers
@@ -20,7 +16,7 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-## <a href="" id="ddk-using-common-buffers-df"></a>
+
 
 
 Drivers for DMA devices sometimes must allocate buffer space that both a device and the driver can access. For example, a device might write transfer information, such as byte counts, into this buffer space and the driver can read it to determine the number of bytes that were transferred. This type of buffer space is called a *common buffer*.
@@ -35,9 +31,9 @@ To allocate a common buffer, your driver's [*EvtDriverDeviceAdd*](https://msdn.m
 
 -   Calls [**WdfCommonBufferGetAlignedVirtualAddress**](https://msdn.microsoft.com/library/windows/hardware/ff545820) to obtain the buffer's virtual address, which the driver can access.
 
-The following code example is taken from the *Init.c* file of the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample. This code shows how a KMDF driver allocates common buffer space.
+The following code example is taken from the *Init.c* file of the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample. This code shows how a KMDF driver allocates common buffer space.
 
-```
+```cpp
 // Allocate common buffer for building writes
 DevExt->WriteCommonBufferSize = 
          sizeof( DMA_TRANSFER_ELEMENT) * DevExt->WriteTransferElements;
@@ -55,7 +51,6 @@ DevExt->WriteCommonBufferBaseLA =
              WdfCommonBufferGetAlignedLogicalAddress(
                       DevExt->WriteCommonBuffer);
 RtlZeroMemory( DevExt->WriteCommonBufferBase, DevExt->WriteCommonBufferSize);
-
 ```
 
 If your driver calls [**WdfDeviceSetAlignmentRequirement**](https://msdn.microsoft.com/library/windows/hardware/ff546861) before calling [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983), the buffers that **WdfDmaEnablerCreate** creates are aligned to the memory address boundary that the driver specified to **WdfDeviceSetAlignmentRequirement**. Otherwise, common buffers are aligned to word address boundaries. Alternatively, the driver can call [**WdfCommonBufferCreateWithConfig**](https://msdn.microsoft.com/library/windows/hardware/ff545805) to specify an alignment for a single buffer.
@@ -64,9 +59,9 @@ To obtain the length of a common buffer that your driver has allocated, the driv
 
 When the driver is finished using a common buffer, the driver calls [**WdfObjectDelete**](https://msdn.microsoft.com/library/windows/hardware/ff548734).
 
- 
 
- 
+
+
 
 
 

@@ -5,17 +5,14 @@ ms.assetid: 28400cad-1e77-4bcd-9b9a-103df5f06d10
 keywords:
 - post-association operations WDK Native 802.11 IHV Extensions DLL
 - stopping post-association operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Stopping a Post-Association Operation
 
 
-**Important**  The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](wifi-universal-driver-model.md).
+
 
  
 

@@ -8,11 +8,8 @@ keywords:
 - back buffers WDK Windows 7 display
 - back buffers WDK Windows 7 display , fully typed
 - fully-typed back buffers WDK Windows 7 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Fully-Typed Back Buffers Casting
@@ -24,11 +21,10 @@ Consider resources that are created through a call to the driver's [**CreateReso
 
 This change for Direct3D version 10.1 allows applications to re-view a DXGI\_FORMAT\_R8G8B8A8\_UNORM back buffer as DXGI\_FORMAT\_R8G8B8A8\_UNORM\_SRGB and vice versa. This change also allows applications to cast a DXGI\_FORMAT\_B8G8R8A8\_UNORM\_SRGB back buffer for DXGI\_FORMAT\_B8G8R8A8\_UNORM and to re-view DXGI\_FORMAT\_R10G10B10\_XR\_BIAS\_A2\_UNORM as DXGI\_FORMAT\_R10G10B10A2\_\* for rendering.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Fully-Typed%20Back%20Buffers%20Casting%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

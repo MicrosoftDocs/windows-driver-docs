@@ -1,17 +1,13 @@
 ---
 title: Sample Extension Unit Plug-in DLL
-author: windows-driver-content
 description: Sample Extension Unit Plug-in DLL
 ms.assetid: bd9ea70d-7bd0-494d-8d67-7a36a41d005b
 keywords:
 - plug-in DLL WDK USB Video Class
 - extension units WDK USB Video Class , samples, plug-in DLL
 - sample code WDK USB Video Class , extension unit plug-in DLL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Extension Unit Plug-in DLL
@@ -23,13 +19,13 @@ The sample defines a class called **CExtension**, which derives from **CNodeCont
 
 *Vidcap.ax* uses **IKsNodeControl** to inform the plug-in of the extension node ID and provide it with an instance of **IKsControl**. Specifically, the plug-in receives this information through calls to **CExtension::put\_NodeId** and **CExtension::put\_KsControl**. You can find possible implementations of these methods later in this topic for the parent class **CNodeControl**.
 
-*Vidcap.h* appears in the Summer 2004 DirectX SDK through the February 2005 [DirectX SDK](http://go.microsoft.com/fwlink/p/?linkid=51990). When installing these packages, you must install the Extras to obtain *Vidcap.h*.
+*Vidcap.h* appears in the Summer 2004 DirectX SDK through the February 2005 [DirectX SDK](https://go.microsoft.com/fwlink/p/?linkid=51990). When installing these packages, you must install the Extras to obtain *Vidcap.h*.
 
 In Windows Vista and later releases, *Vidcap.h* is included as part of the Microsoft Windows SDK.
 
 Include the following code in the class header file, arbitrarily named *Xuproxy.h*:
 
-```
+```cpp
 #include <ks.h>
 #include <ksproxy.h>
 #include <C:\Program Files\Microsoft DirectX 9.0 SDK (February 2005)\Extras\DirectShow\Include\vidcap.h>
@@ -107,7 +103,7 @@ Implement the two virtual methods from **IKsNodeControl** in **CNodeControl**. T
 
 The following code is in a source file arbitrarily named *Xuproxy.cpp*:
 
-```
+```cpp
 STDMETHODIMP
 CNodeControl::put_NodeId(
    DWORD dwNodeId)
@@ -136,7 +132,7 @@ CNodeControl::put_KsControl(
 
 Also include implementations of **CExtension**'s methods in the same *Xuproxy.cpp* file:
 
-```
+```cpp
 CExtension::CExtension()
 {
     m_pKsControl = NULL;
@@ -320,12 +316,10 @@ CExtension::FinalConstruct()
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Sample%20Extension%20Unit%20Plug-in%20DLL%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

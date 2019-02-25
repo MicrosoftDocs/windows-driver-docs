@@ -2,11 +2,8 @@
 title: Priority Levels and Flow Control
 description: Priority Levels and Flow Control
 ms.assetid: EC7257D2-F35F-41E1-BD44-A10E250493D9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Priority Levels and Flow Control
@@ -20,9 +17,9 @@ This section includes the following topics:
 
 [Priority-based Flow Control](priority-based-flow-control--pfc.md)
 
- 
+ 
 
- 
+ 
 
 
 

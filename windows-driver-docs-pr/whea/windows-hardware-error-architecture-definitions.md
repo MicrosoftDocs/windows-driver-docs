@@ -1,6 +1,5 @@
 ---
 title: Windows Hardware Error Architecture Definitions
-author: windows-driver-content
 description: Windows Hardware Error Architecture Definitions
 ms.assetid: 4de5ead1-aa17-4c14-9afc-bc0d9689a13e
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - WHEA WDK , terminology
 - hardware errors WDK WHEA , terminology
 - errors WDK WHEA , terminology
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows Hardware Error Architecture Definitions
@@ -21,7 +17,7 @@ ms.technology: windows-devices
 The following are definitions for terms related to the Windows Hardware Error Architecture (WHEA).
 
 <a href="" id="advanced-configuration-and-power-interface--acpi-"></a>Advanced Configuration and Power Interface (ACPI)  
-An industry-standard interface for operating system-directed device configuration and power management. For more information about ACPI, see the [ACPI Specification](http://go.microsoft.com/fwlink/p/?linkid=69483).
+An industry-standard interface for operating system-directed device configuration and power management. For more information about ACPI, see the [ACPI Specification](https://go.microsoft.com/fwlink/p/?linkid=69483).
 
 <a href="" id="baseboard-management-controller--bmc-"></a>Baseboard Management Controller (BMC)  
 A set of hardware components on the motherboard that manages platform-specific functions, such as monitoring and handling certain environmental error conditions.
@@ -39,10 +35,10 @@ A Windows operating system component that tracks events that occur on system com
 ETW provides software developers the ability to start and stop event tracing sessions, instrument an application to provide trace events, and consume trace events. WHEA uses ETW to notify subscribers about the hardware error events and to record hardware error events in the system event log.
 
 <a href="" id="extensible-firmware-interface--efi-"></a>Extensible Firmware Interface (EFI)  
-The next-generation model for the interface between the operating system and the platform firmware. The interface consists of data tables that contain platform-related information, plus boot and runtime service calls that are available to the operating system and its loader. Together, these provide a standard environment for booting an operating system and running pre-boot applications. For more information about EFI, see the [Unified Extensible Firmware Interface (UEFI) Specification](http://go.microsoft.com/fwlink/p/?linkid=69484).
+The next-generation model for the interface between the operating system and the platform firmware. The interface consists of data tables that contain platform-related information, plus boot and runtime service calls that are available to the operating system and its loader. Together, these provide a standard environment for booting an operating system and running pre-boot applications. For more information about EFI, see the [Unified Extensible Firmware Interface (UEFI) Specification](https://go.microsoft.com/fwlink/p/?linkid=69484).
 
 <a href="" id="intelligent-platform-management-interface--ipmi-"></a>Intelligent Platform Management Interface (IPMI)  
-An interface that is used to monitor and manage functionality, and that is built into the hardware platform. IPMI is primarily used to monitor the health of the system hardware and to handle environmental error conditions. For more information about IPMI, see the [IPMI Specification](http://go.microsoft.com/fwlink/p/?linkid=69485).
+An interface that is used to monitor and manage functionality, and that is built into the hardware platform. IPMI is primarily used to monitor the health of the system hardware and to handle environmental error conditions. For more information about IPMI, see the [IPMI Specification](https://go.microsoft.com/fwlink/p/?linkid=69485).
 
 <a href="" id="low-level-hardware-error-handler--llheh-"></a>Low Level Hardware Error Handler (LLHEH)  
 The first operating system code that runs in response to a hardware error condition. An LLHEH can be an interrupt handler, exception handler, polling routine, or a callback routine that is called by the system firmware. All LLHEHs report hardware errors to the operating system through a common hardware error reporting function.
@@ -63,7 +59,7 @@ A processor-specific register that is used by system software to implement certa
 An interrupt that the processor reports to the operating system regardless of the processor's current interrupt priority level. An NMI is usually signaled when the platform detects a fatal hardware error condition.
 
 <a href="" id="pci-express-advanced-error-reporting--pcie-aer-"></a>PCI Express Advanced Error Reporting (PCIe AER)  
-An optional extended capability of PCI Express that provides more robust error reporting than the standard PCI Express error reporting mechanism. For more information about PCIe AER, see the [PCI Express Specification](http://go.microsoft.com/fwlink/p/?linkid=69486).
+An optional extended capability of PCI Express that provides more robust error reporting than the standard PCI Express error reporting mechanism. For more information about PCIe AER, see the [PCI Express Specification](https://go.microsoft.com/fwlink/p/?linkid=69486).
 
 <a href="" id="platform-specific-hardware-error-driver--pshed-"></a>Platform-Specific Hardware Error Driver (PSHED)  
 A WHEA component that provides an abstraction of the hardware error reporting facilities of the underlying platform. Microsoft provides PSHEDs for each processor architecture. Platform vendors can supplement the PSHED functionality by implementing PSHED plug-ins that take advantage of platform-specific capabilities.
@@ -74,12 +70,10 @@ An interrupt handled by the ACPI driver. Upon receipt of an SCI, the ACPI driver
 <a href="" id="service-processor--sp-"></a>Service Processor (SP)  
 A microcontroller, distinct from the main processor(s), which manages platform-specific functions such as monitoring environmental conditions and handling certain error conditions. A service processor is usually a component of the baseboard management controller hardware.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwhea\whea%5D:%20Windows%20Hardware%20Error%20Architecture%20Definitions%20%20RELEASE:%20%289/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

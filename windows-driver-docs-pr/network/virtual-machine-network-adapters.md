@@ -2,11 +2,8 @@
 title: Virtual Machine Network Adapters
 description: Virtual Machine Network Adapters
 ms.assetid: 8A2A708C-AB43-4D9F-A7CB-2AC4438BCD54
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Virtual Machine Network Adapters
@@ -16,7 +13,7 @@ The virtual machine (VM) network adapter is exposed in the guest operating syste
 
 **Note**  In Hyper-V, a child partition is also known as a VM.
 
- 
+ 
 
 The VM network adapter supports the following virtualization types:
 
@@ -50,9 +47,9 @@ The following steps occur when the user stops a Hyper-V VM:
 
 4.  The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598273) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that the VM port has been torn down and deleted.
 
- 
+ 
 
- 
+ 
 
 
 

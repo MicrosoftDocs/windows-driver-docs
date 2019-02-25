@@ -1,14 +1,10 @@
 ---
 title: Changes to the Number of Processors
-author: windows-driver-content
 description: Changes to the Number of Processors
 ms.assetid: 9ced4b42-c83d-49da-8405-b95b0c0144fa
 keywords: ["dynamic hardware partitioning WDK , changing number of processors", "hardware partitioning WDK dynamic , changing number of processors", "partitions WDK dynamic hardware , changing number of processors", "active processors WDK dynamic hardware partitioning", "processor count WDK dynamic hardware partitioning", "processor affinity WDK dynamic hardware paritioning", "per-processor data structures WDK dynamic hardware partitioning"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Changes to the Number of Processors
@@ -40,26 +36,24 @@ To retrieve the current number of active processors in the hardware partition, d
 
 **Note**  If a device driver allocates data structures for each active processor in the hardware partition and the device driver would fail if the memory allocation for the data structures for a new processor failed, the device driver can allocate enough of these data structures during driver initialization to handle the maximum number of processors that the operating system supports. In this situation, the device driver would not have to allocate new data structures when you add new processors to the hardware partition. However, unless the size of these data structures is fairly small, this can be an inefficient use of memory resources. A device driver can query the maximum number of processors that the operating system supports by calling the [**KeQueryMaximumProcessorCount**](https://msdn.microsoft.com/library/windows/hardware/ff553042) function.
 
- 
+ 
 
 **Important**  Device drivers should always update any saved value of the number of active processors and the processor affinity when it is notified that you added a processor to the hardware partition.
 
- 
+ 
 
 **Important**  A device driver should not count the number of set bits in the processor affinity value to determine the number of active processors in the hardware partition. We recommended that device drivers call the **KeQueryActiveProcessorCount** function for this purpose. This function returns both the number of active processors and the associated processor affinity value.
 
- 
+ 
 
 **Important**  Device drivers that are built for Windows Vista, Windows Server 2008 and later versions of Windows must not use the [**KeNumberProcessors**](https://msdn.microsoft.com/library/windows/hardware/ff552975) kernel variable to determine the number of active processors in the hardware partition. The **KeNumberProcessors** kernel variable is obsolete in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Changes%20to%20the%20Number%20of%20Processors%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

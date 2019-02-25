@@ -3,11 +3,8 @@ title: GFlags Details
 description: GFlags Details
 ms.assetid: 97faa63d-b876-4973-812f-f3bdd57c1778
 keywords: ["GFlags, details"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GFlags Details
@@ -66,36 +63,36 @@ GFlags settings that are saved between sessions are stored in the registry. You 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Systemwide settings (&quot;Registry&quot;)</p></td>
-<td align="left"><p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\\<strong>GlobalFlag</strong></p></td>
+<td align="left"><p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager&lt;strong&gt;GlobalFlag</strong></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Program-specific settings (&quot;Image file&quot;) for all users of the computer.</p></td>
-<td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\<em>ImageFileName</em>\\<strong>GlobalFlag</strong></p></td>
+<td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;em&gt;ImageFileName</em>&lt;strong&gt;GlobalFlag</strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Silent exit settings for a specific program (&quot;Silent Process Exit&quot;) for all users of the computer.</p></td>
-<td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit\\<em>ImageFileName</em></p></td>
+<td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit&lt;em&gt;ImageFileName</em></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Page heap options for an image file for all users of the computer</p></td>
-<td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\<em>ImageFileName</em>\\<strong>PageHeapFlags</strong></p></td>
+<td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;em&gt;ImageFileName</em>&lt;strong&gt;PageHeapFlags</strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>User mode stack trace database size (<strong>tracedb</strong>)</p></td>
-<td align="left"><p>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\<em>ImageFileName</em>\\<strong>StackTraceDatabaseSizeInMb</strong></p></td>
+<td align="left"><p>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;em&gt;ImageFileName</em>&lt;strong&gt;StackTraceDatabaseSizeInMb</strong></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Create user mode stack trace database (ust, 0x1000) for an image file</p></td>
-<td align="left"><p>Windows adds the image file name to the value of the USTEnabled registry entry (HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\<strong>USTEnabled</strong>).</p></td>
+<td align="left"><p>Windows adds the image file name to the value of the USTEnabled registry entry (HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;strong&gt;USTEnabled</strong>).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Load image using large pages if possible</p></td>
-<td align="left"><p>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\<em>ImageFileName</em>\\<strong>UseLargePages</strong>.</p></td>
+<td align="left"><p>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;em&gt;ImageFileName</em>&lt;strong&gt;UseLargePages</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Special Pool</p>
 <p>(Kernel Special Pool Tag)</p></td>
-<td align="left"><p>HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\\<strong>PoolTag</strong></p></td>
+<td align="left"><p>HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management&lt;strong&gt;PoolTag</strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Verify Start / Verify End</p></td>
@@ -103,22 +100,21 @@ GFlags settings that are saved between sessions are stored in the registry. You 
 </tr>
 <tr class="even">
 <td align="left"><p>Debugger for an image file</p></td>
-<td align="left"><p>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\\<em>ImageFileName</em>\\<strong>Debugger</strong></p></td>
+<td align="left"><p>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;em&gt;ImageFileName</em>&lt;strong&gt;Debugger</strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Object Reference Tracing</p></td>
-<td align="left"><p>HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel\\<strong>ObTraceProcessName</strong>, <strong>ObTracePermanent</strong> and <strong>ObTracePoolTags</strong></p></td>
+<td align="left"><p>HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel&lt;strong&gt;ObTraceProcessName</strong>, <strong>ObTracePermanent</strong> and <strong>ObTracePoolTags</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20GFlags%20Details%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

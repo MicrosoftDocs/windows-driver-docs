@@ -4,11 +4,8 @@ description: FVF Update
 ms.assetid: 2bbcb1fd-b29f-41f4-93eb-5bd1cde9cb20
 keywords:
 - FVF WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # FVF Update
@@ -35,12 +32,12 @@ The texture coordinate count is a 4-bitfield that can range from zero through ei
 <tr class="header">
 <th align="left">Bit
 <div>
- 
+ 
 </div>
 Pattern</th>
 <th align="left">Decimal
 <div>
- 
+ 
 </div>
 Value</th>
 <th align="left">Meaning</th>
@@ -70,7 +67,7 @@ Value</th>
 </tbody>
 </table>
 
- 
+ 
 
 3D texture coordinate sets can be used for any of three different purposes: projected textures (signaled by D3DTTFF\_PROJECTED - see D3DTEXTURETRANSFORMFLAGS in the DirectX SDK documentation), volume textures, or cube map vector textures, as determined by a set of render states analogous to the D3DRENDERSTATE\_WRAP0 to D3DRENDERSTATE\_WRAP7 modes that are already specified on a texture coordinate set basis.
 
@@ -107,15 +104,14 @@ The flags used with the D3DRENDERSTATE\_WRAP*n* render states for 1D through 4D 
 </tbody>
 </table>
 
- 
+ 
 
 When projected textures are in use, they take the RHW value from the corresponding texture coordinate field, instead of from the position field. However, the position field's RHW is still used for both w-buffering and fog calculations, and therefore must be provided when either of these is in use.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20FVF%20Update%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

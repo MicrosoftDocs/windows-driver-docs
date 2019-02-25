@@ -2,11 +2,8 @@
 title: Calling SetupWriteTextLogInfLine
 description: Calling SetupWriteTextLogInfLine
 ms.assetid: 7b7a08bf-b97a-4dfe-8695-dc947481ad2b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Calling SetupWriteTextLogInfLine
@@ -34,13 +31,13 @@ To call **SetupWriteTextLogInfLine**, an application supplies the following info
 
 **SetupWriteTextLogInfLine** writes a log entry in the following format:
 
-*entry\_prefix time\_stamp* **inf:***indentation inf-line-text* **(***inf-file-name* **line** *line-number***)**
+*entry_prefix time_stamp* **inf:**<em>indentation inf-line-text</em> **(**<em>inf-file-name</em> **line** <em>line-number</em>**)**
 
 Where:
 
--   The *entry\_prefix*, *time-stamp*, and *indentation* fields are the same as those that are described in [Format of a Text Log Section Body](format-of-a-text-log-section-body.md).
+-   The *entry_prefix*, *time-stamp*, and *indentation* fields are the same as those that are described in [Format of a Text Log Section Body](format-of-a-text-log-section-body.md).
 
--   The **inf:** field specifies the TXTLOG\_INF event category. Event categories are described in [Enabling Event Categories for a Text Log](enabling-event-categories-for-a-text-log.md).
+-   The **inf:** field specifies the TXTLOG_INF event category. Event categories are described in [Enabling Event Categories for a Text Log](enabling-event-categories-for-a-text-log.md).
 
 -   The *inf-line-text* field contains the text of the specified INF file line.
 
@@ -54,23 +51,23 @@ The following example shows how an application might typically log the text of a
 
 -   *LogToken* is set to a log token that was returned by [**SetupGetThreadLogToken**](https://msdn.microsoft.com/library/windows/hardware/ff552211) or to a system-defined [log token](log-tokens.md).
 
--   *LogFlags* is set to TXTLOG\_DETAILS. This example does not include a time stamp or change the indentation depth. In the example, the indentation depth is five monospace text spaces.
+-   *LogFlags* is set to TXTLOG_DETAILS. This example does not include a time stamp or change the indentation depth. In the example, the indentation depth is five monospace text spaces.
 
 -   *InfHandle* is set to a handle to the INF file *hidserv.inf.* This handle is obtained by calling the **SetupOpenInfFile** function, which is documented in the Platform SDK.
 
--   *Context* is set to the INF file context of the INF file line that contains the text "AddReg=HidServ\_AddService\_AddReg." An INF file context for the line is obtained by calling the **SetupFind*Xxx*Line** functions, which are documented in the Platform SDK.
+-   *Context* is set to the INF file context of the INF file line that contains the text "AddReg=HidServ_AddService_AddReg." An INF file context for the line is obtained by calling the **SetupFind*Xxx*Line** functions, which are documented in the Platform SDK.
 
-The values of *LogToken* and *LogFlags* affect the operation of [**SetupWriteTextLogInfLine**](https://msdn.microsoft.com/library/windows/hardware/ff552236) in the same manner as that described for [**SetupWriteTextLog**](https://msdn.microsoft.com/library/windows/hardware/ff552218). In addition, **SetupWriteTextLogInfLine** uses the event catalog TXTLOG\_INF.
+The values of *LogToken* and *LogFlags* affect the operation of [**SetupWriteTextLogInfLine**](https://msdn.microsoft.com/library/windows/hardware/ff552236) in the same manner as that described for [**SetupWriteTextLog**](https://msdn.microsoft.com/library/windows/hardware/ff552218). In addition, **SetupWriteTextLogInfLine** uses the event catalog TXTLOG_INF.
 
 For this example, the following shows the type of log entry that **SetupWriteTextLogInfLine** would write to a text log:
 
-```
+```cpp
    inf:      AddReg=HidServ_AddService_AddReg  (hidserv.inf line 98)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

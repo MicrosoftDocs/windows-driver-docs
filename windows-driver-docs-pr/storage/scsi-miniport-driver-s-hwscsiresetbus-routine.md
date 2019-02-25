@@ -1,17 +1,13 @@
 ---
 title: SCSI Miniport Driver's HwScsiResetBus Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiResetBus Routine
 ms.assetid: ca4ab3e6-e23c-443a-bcf6-6fd516569999
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiResetBus
 - HwScsiResetBus
 - bus-reset operations WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SCSI Miniport Driver's HwScsiResetBus Routine
@@ -28,11 +24,10 @@ After completing the bus-reset request and any outstanding requests, the minipor
 
 Note that the operating system - specific port driver manages SCSI bus-reset delays on behalf of miniport drivers.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

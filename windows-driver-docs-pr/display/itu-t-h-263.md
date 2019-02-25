@@ -23,11 +23,8 @@ keywords:
 - scalability WDK DirectX VA
 - reference picture selection WDK DirectX VA
 - prediction blocks WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ITU-T H.263
@@ -84,7 +81,7 @@ The following figure shows how one 8x8 block is placed in the three types of pre
 
 **PB frames (Annex G and M)**: In this mode, macroblocks for a P-frame and a pseudoâˆ’B-frame are multiplexed together into the unique PB-frame picture coding type. The B portion of each macroblock borrows from information encoded for the P portion of the macroblock: the B-frame forward and backward motion vectors are scaled from the P-frame vector, and the reconstructed P-frame macroblock serves as backward reference for the B portion. The PB-frame includes only a pseudoâˆ’B-frame, because the backward prediction for each macroblock can only refer to the reconstructed P macroblock that is contained within the same PB macroblock. However, as with traditional B-frame semantics, a B macroblock within a PB-frame can refer to any location within the forward-reference frame. The limitation of the backward reference creates smaller backward prediction block shapes (as described in H.263 Figure G.2). PB-frames are supported in DirectX VA by representing the P portions of the PB-frame as a P-frame, and the B portions of the PB-frame as a separate B-in-P bidirectionally predicted picture containing a unique B-in-PB type of macroblock that has two motion vectors.
 
-**Deblocking Filter (Annex J)**: Special commands are defined to accelerate deblocking filters, whether used within the [motion-compensated prediction](motion-compensated-prediction.md) loop as with Annex J, or outside the loop as is the case when deblocking H.261 pictures or H.263 baseline pictures. The [*host CPU*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-host-cpu) must create deblocking commands that observe group of blocks (GOB) or slice segment boundaries, if necessary.
+**Deblocking Filter (Annex J)**: Special commands are defined to accelerate deblocking filters, whether used within the motion-compensated prediction must create deblocking commands that observe group of blocks (GOB) or slice segment boundaries, if necessary.
 
 **Reference Picture Selection (Annexes N and U)**: Multiple reference frames are supported by the accelerator using the picture index selection field of each prediction block.
 
@@ -100,11 +97,10 @@ The following figure shows how one 8x8 block is placed in the three types of pre
 
 **Other H.263 Optional Features:** Other optional features of H.263 can be supported without any impact on the DirectX VA design. For example, Annexes I, K, S, and T can be easily handled by altering the software decoder without any impact on the accelerator.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20ITU-T%20H.263%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

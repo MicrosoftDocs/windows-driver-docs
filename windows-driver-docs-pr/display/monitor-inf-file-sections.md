@@ -9,11 +9,8 @@ keywords:
 - DDInstall section WDK Windows 2000 display
 - Models section WDK Windows 2000 display
 - SourceDisksFiles section WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Monitor INF File Sections
@@ -32,7 +29,7 @@ You can also use an INF file to override the monitor Extended Display Identifica
 
 Files that must be copied during monitor installation should be placed in the **\[SourceDisksFiles\]** section. The following example identifies an .*icm* file that is on distribution disk 1.
 
-```
+```inf
 [SourceDisksFiles]
 profile1.icm=1
 ```
@@ -43,7 +40,7 @@ For more general information, see [**INF SourceDisksFiles Section**](https://msd
 
 Information about each model that is supported by a given manufacturer should be placed in the *Models* section. The following example identifies two models manufactured by ACME:
 
-```
+```inf
 [ACME]
 %ACME-1234%=ACME-1234.Install, Monitor\MON12AB
 %ACME-5678%=ACME-5678.Install, Monitor\MON34CD
@@ -55,7 +52,7 @@ Each model is represented by a single line. Each line contains three elements:
 
 -   Link to a subsequent *DDInstall* section -- for example, **ACME-1234.Install** is a link to the subsequent **\[ACME-1234.Install\]** section.
 
--   Hardware identification -- for example, the expression **Monitor\\MON12AB** combines the device class (Monitor) and the device identification (MON12AB) as it appears in the device's [*EDID*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-edid).
+-   Hardware identification -- for example, the expression **Monitor\\MON12AB** combines the device class (Monitor) and the device identification (MON12AB) as it appears in the device's *EDID*.
 
 For more general information, see [**INF Models Section**](https://msdn.microsoft.com/library/windows/hardware/ff547456).
 
@@ -63,7 +60,7 @@ For more general information, see [**INF Models Section**](https://msdn.microsof
 
 The *DDInstall* section provides information to the driver about the operations to be performed when it installs the specified device. Each line in this section provides a link or links to different INF writer-defined sections that appear later in the INF file. The following example shows the *DDInstall* section for the ACME-1234 model:
 
-```
+```inf
 [ACME-1234.Install]
 DelReg=DEL_CURRENT_REG
 AddReg=ACME-1234.AddReg, 1280, DPMS
@@ -83,7 +80,8 @@ For more general information, see [**INF DDInstall Section**](https://msdn.micro
 An INF writer-defined section can have any name, provided it is unique within the INF file. These sections are pointed to by directives in other sections. The following bullet items discuss some of the INF writer-defined sections from *monsamp.inf*:
 
 -   **DEL\_CURRENT\_REG** section -- identifies four registry keys whose values will be deleted: **MODES**, **MaxResolution**, **DPMS**, and **ICMProfile**. These keys will be updated appropriately with new values in subsequent sections.
-    ```
+
+    ```inf
     [DEL_CURRENT_REG]
     HKR,MODES
     HKR,,MaxResolution
@@ -92,22 +90,24 @@ An INF writer-defined section can have any name, provided it is unique within th
     ```
 
 -   **1280** section -- updates the **MaxResolution** registry key to the string value shown.
-    ```
+
+    ```inf
     [1280]
     HKR,,MaxResolution,,"1280, 1024"
     ```
 
 -   **DPMS** section -- updates the **DPMS** registry key to 1 (TRUE). For a monitor that does not support power management, the following line should instead set the **DPMS** key value to 0 (FALSE).
-    ```
+
+    ```inf
     [DPMS]
     HKR,,DPMS,,1
     ```
 
--   [**AddReg**](https://msdn.microsoft.com/library/windows/hardware/ff546320) section -- You can specify entries under a **MODES** key in an add-registry section of a monitor INF to identify the monitor's supported resolutions and timings. If the INF specifies modes in this way, the modes' entries will override the values that are specified in the monitor's Extended Display Information Data ([*EDID*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-edid)). Therefore, **MODES** key INF values should be used only if a problem exists with the EDID or in the interpretation of the EDID.
+-   **AddReg**). Therefore, **MODES** key INF values should be used only if a problem exists with the EDID or in the interpretation of the EDID.
 
     Each subkey to the **MODES** key specifies a resolution and can contain up to nine values that are used to specify specific timings or timing ranges. The resolution for each subkey name must be a combination of two integer values--width and height--separated by a comma. The specific timings are named from **Mode1** to **Mode9**. The naming must be contiguous. The string values allow frequencies for horizontal and vertical sync pulses to be specified, either as single values or as ranges, where a range is given as a minimum value, followed by a dash (-), followed by a maximum value. The frequency values are currently interpreted only as integers with any digits that follow the decimal place ignored. The string allows the polarity of the horizontal and vertical sync pulses to be specified. However, these polarity values are currently ignored. Only the maximum horizontal sync pulse value is required in each string. For example, the following shows that for each subkey string, the information in square brackets is optional:
 
-    ```
+    ```inf
     [{MinHSync}-]{MaxHSync}[,{MinVSync}-{MaxVSynx}] 
     ```
 
@@ -115,7 +115,7 @@ An INF writer-defined section can have any name, provided it is unique within th
 
     The first line of the following sets the **"MODES\\1280,1024"** subkey to the string value that is shown. The same line also identifies a value name for this subkey, **Mode1**. The first pair of numbers in the string following the **Mode1** subkey specifies the range of horizontal synchronization frequencies, in KHz. The next pair of numbers in this string specifies the range of vertical synchronization frequencies, in Hz. In the second line, the **PreferredMode** registry key is set to the values shown in the accompanying string. The values in the string are used to set both the horizontal and the vertical resolution, in pixels, and the screen refresh rate, in hertz (Hz), for the preferred screen mode. Only the horizontal and the vertical resolution values are required in the **PreferredMode** string. For example, the following shows that for the **PreferredMode** string, the information in square brackets is optional:
 
-    ```
+    ```inf
     {Width},{Height}[,{Frequency}]
     ```
 
@@ -123,7 +123,7 @@ An INF writer-defined section can have any name, provided it is unique within th
 
     The third line sets the **ICMProfile** key to the string value **"profile1.icm"**.
 
-    ```
+    ```inf
     [ACME-1234.AddReg]
     HKR,"MODES\1280,1024",Mode1,,"27.0-106.0,55.0-160.0,+,+"
     HKR,,PreferredMode,,"1024,768,70"
@@ -131,13 +131,4 @@ An INF writer-defined section can have any name, provided it is unique within th
     ```
 
     For a monitor that meets the sRGB specification, which is preferred, no monitor profile is needed.
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Monitor%20INF%20File%20Sections%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 

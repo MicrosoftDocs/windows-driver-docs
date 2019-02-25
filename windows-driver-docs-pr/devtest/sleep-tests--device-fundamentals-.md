@@ -2,11 +2,8 @@
 title: Sleep Tests (Device Fundamentals)
 description: The Device Fundamentals Sleep tests run I/O and PnP operations on the specified devices, before and after, or during system sleep state transitions.
 ms.assetid: 38B65078-B436-4C24-B973-032702DB9CBE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sleep Tests (Device Fundamentals)
@@ -34,7 +31,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <td align="left"><p>This test performs critical sleep state transitions on the system and performs I/O on devices before and after each sleep state cycle.</p>
 <p><strong>Test binary:</strong> Devfund_Critical_Sleep_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Critical_Reboot_Restart_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
+<p><strong>Parameters:</strong> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -45,7 +42,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <td align="left"><p>This test performs critical sleep state transitions on the system and performs I/O on devices.</p>
 <p><strong>Test binary:</strong> Devfund_Critical_Sleep_With_IO_During.wsc</p>
 <p><strong>Test method:</strong> Critical_Sleep_With_IO_During</p>
-<p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
+<p><strong>Parameters:</strong> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -54,10 +51,10 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <tr class="odd">
 <td align="left"><p><span id="Sleep_and_PNP__disable_and_enable__with_I_O_Before_and_After"></span><span id="sleep_and_pnp__disable_and_enable__with_i_o_before_and_after"></span><span id="SLEEP_AND_PNP__DISABLE_AND_ENABLE__WITH_I_O_BEFORE_AND_AFTER"></span>Sleep and PNP (disable and enable) with I/O Before and After</p></td>
 <td align="left"><p>This test cycles the system through various sleep states and performs I/O and basic PnP (disable/enable) on devices before and after each sleep state cycle.</p>
-<p>For more information, see [About the Sleep and PNP disable and enable with IO Before and After test](#about-the-sleep-and-pnp-disable-and-enable-with-io-before-and-after-test).</p>
+<p>For more information, see <a href="#about-the-sleep-and-pnp-disable-and-enable-with-io-before-and-after-test" data-raw-source="[About the Sleep and PNP disable and enable with IO Before and After test](#about-the-sleep-and-pnp-disable-and-enable-with-io-before-and-after-test)">About the Sleep and PNP disable and enable with IO Before and After test</a>.</p>
 <p><strong>Test binary:</strong> Devfund_Sleep_PNP_DisableEnable_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Sleep_PNP_DisableEnable_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
+<p><strong>Parameters:</strong> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -66,10 +63,10 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <tr class="even">
 <td align="left"><p><span id="Sleep_with_I_O_Before_and_After"></span><span id="sleep_with_i_o_before_and_after"></span><span id="SLEEP_WITH_I_O_BEFORE_AND_AFTER"></span>Sleep with I/O Before and After</p></td>
 <td align="left"><p>This test cycles the system through various sleep states and performs I/O on devices before and after each sleep state cycle.</p>
-<p>For more information, see [About the Sleep with IO Before And After test](#about-the-sleep-with-io-before-and-after-test).</p>
+<p>For more information, see <a href="#about-the-sleep-with-io-before-and-after-test" data-raw-source="[About the Sleep with IO Before And After test](#about-the-sleep-with-io-before-and-after-test)">About the Sleep with IO Before And After test</a>.</p>
 <p><strong>Test binary:</strong> Devfund_Sleep_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Sleep_With_Io_Before_And_After</p>
-<p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
+<p><strong>Parameters:</strong> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -80,7 +77,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 <td align="left"><p>This test cycles the system through various sleep states and performs I/O on devices.</p>
 <p><strong>Test binary:</strong> Devfund_Sleep_With_IO_During.wsc</p>
 <p><strong>Test method:</strong> Sleep_With_IO_During</p>
-<p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
+<p><strong>Parameters:</strong> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>ResumeDelay</em></p>
@@ -89,7 +86,7 @@ The Device Fundamentals Sleep tests run I/O and PnP operations on the specified 
 </tbody>
 </table>
 
- 
+ 
 
 ## About the Sleep and PNP disable and enable with IO Before and After test
 
@@ -135,11 +132,10 @@ This test does the following:
 
 [How to test a driver at runtime from a Command Prompt](https://msdn.microsoft.com/windows-drivers/develop/how_to_test_a_driver_at_runtime_from_a_command_prompt)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Sleep%20Tests%20%28Device%20Fundamentals%29%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

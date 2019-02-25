@@ -2,11 +2,8 @@
 title: DeviceOverrides Registry Key
 description: DeviceOverrides Registry Key
 ms.assetid: 18f95848-71fe-4884-bcbe-d3cae90fc262
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DeviceOverrides Registry Key
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 Beginning with Windows 7, the **DeviceOverrides** registry key specifies that one or more removable device capability overrides exist in the system. For more information about the removable device capability, see [Overview of the Removable Device Capability](overview-of-the-removable-device-capability.md).
 
-The Plug and Play (PnP) manager uses a new ID ([container IDs](container-ids.md)) to group one or more device nodes ([*devnodes*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) that originated from and belong to each instance of a particular physical device installed in the computer. For legacy devices, the PnP manager generates container IDs through the removable device capability. For more information about how the PnP manager generates container IDs, see [How Container IDs are Generated](how-container-ids-are-generated.md).
+The Plug and Play (PnP) manager uses a new ID (container IDs) that originated from and belong to each instance of a particular physical device installed in the computer. For legacy devices, the PnP manager generates container IDs through the removable device capability. For more information about how the PnP manager generates container IDs, see [How Container IDs are Generated](how-container-ids-are-generated.md).
 
 Removable device capability overrides let the independent hardware vendor (IHV) or original equipment manufacturer (OEM) change the interpreted value of the removable device capability on a devnode or group of devnodes.
 
@@ -47,12 +44,12 @@ The following table defines the **DeviceOverrides** registry key's format and re
 <td align="left"><p>Optional</p></td>
 <td align="left"><p>None</p></td>
 <td align="left"><p>None</p></td>
-<td align="left"><p>[HardwareID](hardwareid-registry-subkey.md) or [CompatibleID](compatibleid-registry-subkey.md)</p></td>
+<td align="left"><p><a href="hardwareid-registry-subkey.md" data-raw-source="[HardwareID](hardwareid-registry-subkey.md)">HardwareID</a> or <a href="compatibleid-registry-subkey.md" data-raw-source="[CompatibleID](compatibleid-registry-subkey.md)">CompatibleID</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Each removable device capability override is specified through either the **HardwareID** or **ContainerID** registry subkeys.
 
@@ -68,11 +65,11 @@ The **DeviceOverrides** registry key must be created for the first removable dev
 
 **Note**  The existence of a removable device capability registry override does not change the global state of the removable device capability on a devnode.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

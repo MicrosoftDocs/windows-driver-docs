@@ -5,17 +5,14 @@ ms.assetid: 72ee00c6-0887-46bd-a329-ee7bf0dd2c06
 keywords:
 - filter drivers WDK networking , services
 - NDIS filter drivers WDK , services
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Driver Services
 
 
-## <a href="" id="ddk-filter-driver-services-ng"></a>
+
 
 
 Filter drivers can provide the following services:
@@ -38,9 +35,9 @@ Filter drivers can provide the following services:
 
 -   Manage configuration parameters in the registry for each miniport adapter with which it interfaces. For more information, see [Accessing Configuration Information for a Filter Driver](accessing-configuration-information-for-a-filter-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

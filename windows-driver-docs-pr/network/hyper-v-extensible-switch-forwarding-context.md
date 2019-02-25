@@ -2,11 +2,8 @@
 title: Hyper-V Extensible Switch Forwarding Context
 description: Hyper-V Extensible Switch Forwarding Context
 ms.assetid: B2BF07B5-FA44-4994-9605-EFF4A0B9179F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Hyper-V Extensible Switch Forwarding Context
@@ -20,9 +17,9 @@ This section includes the following topics about the extensible switch forwardin
 
 [Managing the Hyper-V Extensible Switch Forwarding Context](managing-the-hyper-v-extensible-switch-forwarding-context.md)
 
- 
+ 
 
- 
+ 
 
 
 

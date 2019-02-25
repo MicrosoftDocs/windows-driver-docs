@@ -6,17 +6,14 @@ keywords:
 - header-data split WDK , initializing provider
 - initializing header-data split providers
 - header-data split providers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a Header-Data Split Provider
 
 
-## <a href="" id="ddk-initializing-a-header-data-split-provider-ng"></a>
+
 
 
 To support header-data split, a miniport driver must register as an NDIS 6.1 or later driver. The sources file for the miniport driver must specify DNDIS61\_MINIPORT=1 instead of DNDIS60\_MINIPORT=1. The miniport driver must also specify NDIS 6.1 or a later version in the [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565958) structure.
@@ -39,9 +36,9 @@ The miniport driver should set the **BackfillSize** member of the NDIS\_HD\_SPLI
 
 The miniport driver should set the **MaxHeaderSize** member of the [**NDIS\_HD\_SPLIT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565694) structure to zero before calling **NdisMSetMiniportAttributes**. NDIS sets this member to the maximum size that is allowed for the header buffer of the split frames. After **NdisMSetMiniportAttributes** successfully returns, the miniport driver must use the **MaxHeaderSize** value that NDIS specified. For more information about the maximum header size, see [Allocating the Header Buffer](allocating-the-header-buffer.md).
 
- 
+ 
 
- 
+ 
 
 
 

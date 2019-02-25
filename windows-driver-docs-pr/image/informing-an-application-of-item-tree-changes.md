@@ -1,19 +1,15 @@
 ---
 title: Informing an Application of Item Tree Changes
-author: windows-driver-content
 description: Informing an Application of Item Tree Changes
 ms.assetid: 6b3cb1d0-ab9f-4895-8c3f-f66c398960bb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Informing an Application of Item Tree Changes
 
 
-## <a href="" id="ddk-informing-an-application-of-item-tree-changes-si"></a>
+
 
 
 A minidriver for a WIA device must be able to inform applications associated with WIA devices of any changes to the device's item tree. For example, if an application displays a user interface showing thumbnails of the pictures on a camera, a WIA minidriver should be able to notify an application's user interface to not display thumbnails of pictures that the user has already deleted.
@@ -24,7 +20,7 @@ Note that when the minidriver sends out the event that indicates that the tree h
 
 The following example shows an implementation of the **IWiaMiniDrv::drvDeviceCommand** method.
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvDeviceCommand(
   BYTE        *pWiasContext,
   LONG        lFlags,
@@ -60,12 +56,10 @@ HRESULT _stdcall CWIADevice::drvDeviceCommand(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Informing%20an%20Application%20of%20Item%20Tree%20Changes%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

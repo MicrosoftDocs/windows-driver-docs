@@ -8,18 +8,15 @@ keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , security associations
 - security associations WDK IPsec offload
 - SAs WDK IPsec offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UDP-ESP SAs and Parser Entries
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-udp-esp-sas-and-parser-entries-ng"></a>
+
 
 
 A miniport driver that supports UDP-ESP encapsulation must maintain a list of parser entries. A parser entry contains information that a NIC requires to parse incoming UDP-ESP packets on offloaded security associations (SAs).
@@ -69,9 +66,9 @@ If the miniport driver fails the OID\_TCP\_TASK\_IPSEC\_DELETE\_UDPESP\_SA reque
 
 Note that a transport could request a miniport driver to delete an SA or a parser entry (or both) before the miniport driver completes adding that SA or parser entry (or both). The miniport driver must therefore serialize the deletion operation with the addition operation.
 
- 
+ 
 
- 
+ 
 
 
 

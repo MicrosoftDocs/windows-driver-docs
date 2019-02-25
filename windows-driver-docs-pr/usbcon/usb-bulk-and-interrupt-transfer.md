@@ -1,12 +1,8 @@
 ---
 Description: This topic provides a brief overview about USB bulk transfers. 
 title: How to send USB bulk transfer requests
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to send USB bulk transfer requests
@@ -23,7 +19,7 @@ This topic provides a brief overview about USB bulk transfers. It also provides 
     -   [Step 2: Format and send a framework request object to the USB driver stack.](#step-2--format-and-send-a-framework-request-object-to-the-usb-driver-stack-)
     -   [Step 3: Implement a completion routine for the request.](#step-3--implement-a-completion-routine-for-the-request-)
 
-## <a href="" id="ddk-usb-bulk-and-interrupt-transfer-kg"></a>About bulk endpoints
+## About bulk endpoints
 
 
 A USB bulk endpoint can transfer large amounts of data. Bulk transfers are reliable that allow hardware error detection, and involves limited number of retries in the hardware. For transfers to bulk endpoints, bandwidth is not reserved on the bus. When there are multiple transfer requests that target different types of endpoints, the controller first schedules transfers for time critical data, such as isochronous and interrupt packets. Only if there is unused bandwidth available on the bus, the controller schedules bulk transfers. Where there is no other significant traffic on the bus, bulk transfer can be fast. However, when the bus is busy with other transfers, bulk data can wait indefinitely.
@@ -126,7 +122,7 @@ Before you begin, make sure that you have this information:
 
 -   The client driver must have created the framework USB target device object and obtained the WDFUSBDEVICE handle by calling the [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) method.
 
-    If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
+    If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
 
 -   WDFREQUEST handle to the framework request object that contains details about this request.
 -   The number of bytes to read or write.
@@ -185,7 +181,7 @@ In the completion routine, perform these tasks:
 
 This example code shows how the client driver can submit a bulk transfer request. The driver sets a completion routine. That routine is shown in the next code block.
 
-```
+```cpp
 /*++
 
 Routine Description:
@@ -218,9 +214,9 @@ VOID Fx3EvtIoWrite(
     WDFUSBPIPE  pipe;
     WDFMEMORY  reqMemory;
     PDEVICE_CONTEXT  pDeviceContext;
- 
+
     pDeviceContext = GetDeviceContext(WdfIoQueueGetDevice(Queue));
- 
+
     pipe = pDeviceContext->BulkWritePipe;
 
     status = WdfRequestRetrieveInputMemory(
@@ -267,12 +263,11 @@ Exit:
     }
     return;
 }
-
 ```
 
 This example code shows the completion routine implementation for a bulk transfer. The client driver completes the request in the completion routine and sets this request information: status and the number of bytes transferred.
 
-```
+```cpp
 /*++
 
 Routine Description:
@@ -359,14 +354,11 @@ Exit:
 
     return;
 }
-
 ```
 
 ## Related topics
 [USB I/O Transfers](usb-device-i-o.md)  
 [How to open and close static streams in a USB bulk endpoint](how-to-open-streams-in-a-usb-endpoint.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20send%20USB%20bulk%20transfer%20requests%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

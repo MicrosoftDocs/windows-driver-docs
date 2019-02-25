@@ -1,6 +1,5 @@
 ---
 title: Device Unique Identifiers (DUIDs) for Storage Devices
-author: windows-driver-content
 description: Device Unique Identifiers (DUIDs) for Storage Devices
 ms.assetid: 3846961c-5b75-4a1b-bced-601fc25bf071
 keywords:
@@ -12,11 +11,8 @@ keywords:
 - serial numbers WDK storage
 - device layout signatures WDK storage
 - signatures WDK , storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Unique Identifiers (DUIDs) for Storage Devices
@@ -77,7 +73,7 @@ DUIDs have the following limitations:
 
 -   DUID consumers must use [**CompareStorageDuids**](https://msdn.microsoft.com/library/windows/hardware/ff552464) to compare DUIDs instead of comparing them byte by byte.
 
--   [*Enumerators*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-enumerator) must not attempt to use DUIDs to identify device objects for Plug and Play (PnP) purposes. Multipath systems can have more than one device that share the same DUID. But for PnP, device IDs must be unique.
+-   *Enumerators* must not attempt to use DUIDs to identify device objects for Plug and Play (PnP) purposes. Multipath systems can have more than one device that share the same DUID. But for PnP, device IDs must be unique.
 
 Initiators can query for the DUID information data using a [**IOCTL\_STORAGE\_QUERY\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff560590) request with a property ID of **StorageDeviceUniqueIdProperty**.
 
@@ -106,11 +102,10 @@ The [**CompareStorageDuids**](https://msdn.microsoft.com/library/windows/hardwar
 
 4.  Check the drive layout signature. If the drive layout signatures of the two DUIDs match, the DUIDs match and[**CompareStorageDuids**](https://msdn.microsoft.com/library/windows/hardware/ff552464) returns **DuidSubIdMatch**. If the drive signatures do not match or the system cannot read the device's drive layout signature, the DUIDs do not match and **CompareStorageDuids** returns **DuidNoMatch**.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

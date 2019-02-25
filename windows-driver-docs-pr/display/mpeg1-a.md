@@ -4,11 +4,8 @@ description: MPEG1_A
 ms.assetid: 2c4d79b7-3331-49f9-a561-6e5b609543df
 keywords:
 - MPEG1_A restricted profile WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MPEG1\_A
@@ -42,7 +39,7 @@ The following restriction on the [**DXVA\_ConnectMode**](https://msdn.microsoft.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_DXVA_PictureParameters"></span><span id="restrictions_on_dxva_pictureparameters"></span><span id="RESTRICTIONS_ON_DXVA_PICTUREPARAMETERS"></span>Restrictions on DXVA\_PictureParameters
 
@@ -133,7 +130,7 @@ The following restriction on the [**DXVA\_ConnectMode**](https://msdn.microsoft.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_DXVA_MBctrl_I_HostResidDiff_1__DXVA_MBctrl_I_OffHostIDCT_1__DXVA_MBctrl_P_HostResidDiff_1__and_DXVA_MBctrl_P_OffHostIDCT_1"></span><span id="restrictions_on_dxva_mbctrl_i_hostresiddiff_1__dxva_mbctrl_i_offhostidct_1__dxva_mbctrl_p_hostresiddiff_1__and_dxva_mbctrl_p_offhostidct_1"></span><span id="RESTRICTIONS_ON_DXVA_MBCTRL_I_HOSTRESIDDIFF_1__DXVA_MBCTRL_I_OFFHOSTIDCT_1__DXVA_MBCTRL_P_HOSTRESIDDIFF_1__AND_DXVA_MBCTRL_P_OFFHOSTIDCT_1"></span>Restrictions on DXVA\_MBctrl\_I\_HostResidDiff\_1, DXVA\_MBctrl\_I\_OffHostIDCT\_1, DXVA\_MBctrl\_P\_HostResidDiff\_1, and DXVA\_MBctrl\_P\_OffHostIDCT\_1
 
@@ -168,17 +165,16 @@ The following restriction on the [**DXVA\_ConnectMode**](https://msdn.microsoft.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_Bitstream_Buffers"></span><span id="restrictions_on_bitstream_buffers"></span><span id="RESTRICTIONS_ON_BITSTREAM_BUFFERS"></span>Restrictions on Bitstream Buffers
 
 The contents of any bitstream buffer must contain data in the MPEG-1 main profile video format.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20MPEG1_A%20%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

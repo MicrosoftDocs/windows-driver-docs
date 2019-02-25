@@ -10,17 +10,14 @@ keywords:
 - device IDs WDK device installations
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Identifiers for SCSI Devices
 
 
-## <a href="" id="ddk-identifiers-for-scsi-devices-dg"></a>
+
 
 
 The device ID format for a small computer system interface (SCSI) device is as follows:
@@ -29,13 +26,13 @@ SCSI\\t\*v(8)p(16)r(4)
 
 Where:
 
--   *t\** is a device type code of variable length.
+- *t\** is a device type code of variable length.
 
--   *v(8)* is an 8-character vendor identifier.
+- *v(8)* is an 8-character vendor identifier.
 
--   *p(16)* is a 16-character product identifier.
+- *p(16)* is a 16-character product identifier.
 
--   *r(4)* is a 4-character revision level value.
+- *r(4)* is a 4-character revision level value.
 
 The bus enumerator determines the device type by indexing an internal string table, using a numerically encoded SCSI device type code, obtained by querying the device, as shown in the following table. The remaining components are just strings returned by the device, but with special characters (including space, comma, and any nonprinting graphic) replaced with an underscore.
 
@@ -168,11 +165,11 @@ The SCSI Port driver currently returns the following device type strings, the fi
 </tbody>
 </table>
 
- 
+ 
 
 An example of a device ID for a disk drive would be as follows:
 
-SCSI\\DiskSEAGATE\_ST39102LW\_\_\_\_\_\_\_0004
+SCSI\\DiskSEAGATE_ST39102LW_______0004
 
 There are four hardware IDs in addition to the device ID:
 
@@ -186,13 +183,13 @@ V(8)p(16)r(1)
 
 In the third and fourth of these additional identifiers, *r(1)* represents just the first character of the revision identifier. These hardware IDs are illustrated by the following examples:
 
-SCSI\\DiskSEAGATE\_ST39102LW\_\_\_\_\_\_\_
+SCSI\\DiskSEAGATE_ST39102LW_______
 
-SCSI\\DiskSEAGATE\_
+SCSI\\DiskSEAGATE_
 
-SCSI\\DiskSEAGATE\_ST39102LW\_\_\_\_\_\_\_0
+SCSI\\DiskSEAGATE_ST39102LW_______0
 
-SEAGATE\_ST39102LW\_\_\_\_\_\_\_0
+SEAGATE_ST39102LW_______0
 
 The SCSI Port driver supplies only one compatible ID, one of the variable-sized generic type codes from the previous table.
 
@@ -202,9 +199,9 @@ GenDisk
 
 The generic identifier is used in INF files for SCSI devices more than any other, because SCSI drivers are typically generic. Be aware that the SCSI Port driver returns no generic name at all for sequential access and "processor" devices.
 
- 
+ 
 
- 
+ 
 
 
 

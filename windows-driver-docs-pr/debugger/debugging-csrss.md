@@ -3,11 +3,8 @@ title: Debugging CSRSS
 description: Debugging CSRSS
 ms.assetid: 9c3a8498-d9e4-4070-aee8-c038fa1666a4
 keywords: ["CSRSS debugging", "NTSD, debugging CSRSS", "controlling the user-mode debugger from the kernel debugger, debugging CSRSS"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging CSRSS
@@ -26,19 +23,19 @@ The easiest way to debug CSRSS is to use NTSD and [control it from the kernel de
 
 ### <span id="enabling_csrss_debugging"></span><span id="ENABLING_CSRSS_DEBUGGING"></span>Enabling CSRSS Debugging
 
-CSRSS debugging must be enabled before you can proceed. If the target computer is running a [*checked build*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-checked-build) of Windows, CSRSS debugging is always enabled. If the target computer is running a [*free build*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-free-build) of Windows, you will have to enable CSRSS debugging through the Global Flags Utility (GFlags).
+CSRSS debugging must be enabled before you can proceed. If the target computer is running a *checked build* of Windows, CSRSS debugging is always enabled. If the target computer is running a *free build* of Windows, you will have to enable CSRSS debugging through the Global Flags Utility (GFlags).
 
 To do this, start the GFlags utility, select the **System Registry** radio button, and select **Enable debugging of Win32 subsystem**.
 
 Alternatively, you can use the following GFlags command-line:
 
-```
+```dbgcmd
 gflags /r +20000 
 ```
 
 Or, if you prefer, you can edit the registry key manually instead of using GFlags. Open the following registry key:
 
-```
+```text
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager 
 ```
 
@@ -60,13 +57,12 @@ You will have to set your symbol path to a location on your host computer or to 
 
 Note that you may see an "in page io error" message. This is another manifestation of a hardware failure.
 
-In Windows XP and later versions of Windows, when the debugging session ends, the debugger will detach from CSRSS while the CSRSS process is still running. This avoids termination of the CSRSS process itself.
+When the debugging session ends, the debugger will detach from CSRSS while the CSRSS process is still running. This avoids termination of the CSRSS process itself.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20CSRSS%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

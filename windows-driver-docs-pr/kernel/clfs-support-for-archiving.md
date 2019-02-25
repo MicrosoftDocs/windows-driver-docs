@@ -1,20 +1,16 @@
 ---
 title: CLFS Support for Archiving
-author: windows-driver-content
 description: CLFS Support for Archiving
 ms.assetid: 5a07d7d2-4939-48f8-bd4c-855af61034fb
 keywords: ["Common Log File System WDK kernel , archiving", "CLFS WDK kernel , archiving", "archiving WDK CLFS", "non-ephemeral logs WDK CLFS", "archive tail WDK CLFS"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CLFS Support for Archiving
 
 
-## <a href="" id="ddk-introduction-to-wmi-kg"></a>
+
 
 
 Common Log File System (CLFS) supports archiving for dedicated logs by maintaining an archive tail. When you call [**ClfsCreateLogFile**](https://msdn.microsoft.com/library/windows/hardware/ff540792) to create a dedicated log, you can set the FILE\_ATTRIBUTE\_ARCHIVE flag of the *fFlagsAndAttributes* parameter to specify that CLFS should maintain an archive tail for the log. A log for which CLFS maintains an archive tail is called a *non-ephemeral log*.
@@ -27,12 +23,10 @@ A non-ephemeral log actually has two tails: one marked by the base LSN and one m
 
 The base LSN and the archive tail are important when you call [**ClfsReadNextLogRecord**](https://msdn.microsoft.com/library/windows/hardware/ff541690) repeatedly to read a chain of records linked by previous LSNs, undo-next LSNs, or user LSNs. **ClfsReadNextLogRecord** will not read a record whose LSN is less than both the archive tail and the base LSN. It will, however, read a record whose LSN is between the archive tail and the base LSN. For more information about following record chains, see [Reading Data Records from a CLFS Stream](reading-data-records-from-a-clfs-stream.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20CLFS%20Support%20for%20Archiving%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

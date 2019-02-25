@@ -1,23 +1,19 @@
 ---
 title: DispatchPnP Routines
-author: windows-driver-content
 description: DispatchPnP Routines
 ms.assetid: 909d99ac-5bd3-4b12-bfb4-79713cf2a156
 keywords: ["dispatch routines WDK kernel , DispatchPnP routine", "DispatchPnP routine", "PnP dispatch routines WDK kernel", "IRPs WDK kernel , Plug and Play dispatch routines", "Plug and Play dispatch routines WDK kernel", "IRP_MJ_PNP I/O function code"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DispatchPnP Routines
 
 
-## <a href="" id="ddk-dispatchpnp-routines-kg"></a>
 
 
-A driver's [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine supports [Plug and Play](implementing-plug-and-play.md) by handling IRPs for the [**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff550772) I/O function code. Associated with the **IRP\_MJ\_PNP** function code are several minor I/O function codes (see [Plug and Play Minor IRPs](https://msdn.microsoft.com/library/windows/hardware/ff558807)), some of which all drivers must handle and some of which can be optionally handled. The PnP manager uses these minor function codes to direct drivers to start, stop, and remove devices and to query drivers about their devices.
+
+A driver's [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine supports [Plug and Play](implementing-plug-and-play.md) by handling IRPs for the [**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff550772) I/O function code. Associated with the **IRP\_MJ\_PNP** function code are several minor I/O function codes (see [Plug and Play Minor IRPs](https://msdn.microsoft.com/library/windows/hardware/ff558807)), some of which all drivers must handle and some of which can be optionally handled. The PnP manager uses these minor function codes to direct drivers to start, stop, and remove devices and to query drivers about their devices.
 
 All drivers for a device must have the opportunity to handle PnP IRPs for the device, except in a few cases where a function or filter driver is allowed to fail the IRP.
 
@@ -61,12 +57,10 @@ Each driver's *DispatchPnP* routine must follow these rules:
 
 You should test your drivers with a checked build of the operating system. The checked build of the system verifies whether a driver follows many of the PnP rules listed above.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20DispatchPnP%20Routines%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

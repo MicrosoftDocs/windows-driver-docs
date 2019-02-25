@@ -3,11 +3,8 @@ title: Finding the Process ID
 description: Finding the Process ID
 ms.assetid: 963e9b5b-2b88-41b5-a103-dc4611ff41ea
 keywords: ["process, process ID (PID)", "PID (process ID)", "TList, related techniques", "Task Manager"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 01/18/2019
+ms.localizationpriority: medium
 ---
 
 # Finding the Process ID
@@ -24,13 +21,13 @@ There are several ways to determine the PID for a given application: using the T
 
 The *Task Manager* may be activated in a number of ways, but the simplest is to press CTRL+ALT+DELETE and then click **Task Manager**.
 
-If you select the **Processes** tab, each process and its PID will be listed, along with other useful information.
+From the **Processes** tab, click on the **Details** tab to see the PID, along with other useful information.
 
 Some kernel errors may cause delays in Task Manager's graphical interface.
 
 ### <span id="the_tasklist_command"></span><span id="THE_TASKLIST_COMMAND"></span>The Tasklist Command
 
-In Windows XP and later versions of Windows, you can use the **tasklist** command from a Command Prompt window. This displays all processes, their PIDs, and a variety of other details.
+Use the **tasklist** command from a Command Prompt window to display all processes, their PIDs, and a variety of other details.
 
 ### <span id="tlist"></span><span id="TLIST"></span>TList
 
@@ -48,11 +45,10 @@ If there is already a user-mode debugger running on the system in question, the 
 
 To debug a user-mode driver running on another computer, debug the Client Server Run-Time Subsystem (CSRSS) process. For more information, see [Debugging CSRSS](debugging-csrss.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Finding%20the%20Process%20ID%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

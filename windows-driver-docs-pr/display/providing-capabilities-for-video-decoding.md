@@ -13,11 +13,8 @@ keywords:
 - D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFO
 - D3DDDICAPS_GETDECODECONFIGURATIONCOUNT
 - D3DDDICAPS_GETDECODECONFIGURATIONS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Providing Capabilities for Video Decoding
@@ -28,7 +25,7 @@ When its [**GetCaps**](https://msdn.microsoft.com/library/windows/hardware/ff566
 <span id="D3DDDICAPS_GETDECODEGUIDCOUNT_and_D3DDDICAPS_GETDECODEGUIDS_request_types"></span><span id="d3dddicaps_getdecodeguidcount_and_d3dddicaps_getdecodeguids_request_types"></span><span id="D3DDDICAPS_GETDECODEGUIDCOUNT_AND_D3DDDICAPS_GETDECODEGUIDS_REQUEST_TYPES"></span>D3DDDICAPS\_GETDECODEGUIDCOUNT and D3DDDICAPS\_GETDECODEGUIDS request types  
 The user-mode display driver returns the number and a list of the following GUIDs that it supports for video acceleration (VA) decoding. The Microsoft Direct3D runtime first requests the number of GUIDs followed by a request for the list of supported GUIDs.
 
-```
+```cpp
 DEFINE_GUID(DXVADDI_ModeMPEG2_MoComp, 0xe6a9f44b, 0x61b0, 0x4563,0x9e,0xa4,0x63,0xd2,0xa3,0xc6,0xfe,0x66);
 DEFINE_GUID(DXVADDI_ModeMPEG2_IDCT,   0xbf22ad00, 0x03ea, 0x4690,0x80,0x77,0x47,0x33,0x46,0x20,0x9b,0x7e);
 DEFINE_GUID(DXVADDI_ModeMPEG2_VLD,    0xee27417f, 0x5e28, 0x4e65,0xbe,0xea,0x1d,0x26,0xb5,0x08,0xad,0xc9);
@@ -83,11 +80,10 @@ The user-mode display driver returns the number of and information about the com
 <span id="D3DDDICAPS_GETDECODECONFIGURATIONCOUNT_and_D3DDDICAPS_GETDECODECONFIGURATIONS_request_types"></span><span id="d3dddicaps_getdecodeconfigurationcount_and_d3dddicaps_getdecodeconfigurations_request_types"></span><span id="D3DDDICAPS_GETDECODECONFIGURATIONCOUNT_AND_D3DDDICAPS_GETDECODECONFIGURATIONS_REQUEST_TYPES"></span>D3DDDICAPS\_GETDECODECONFIGURATIONCOUNT and D3DDDICAPS\_GETDECODECONFIGURATIONS request types  
 The user-mode display driver returns the number and a list of accelerated decode configurations that it supports for a particular DirectX VA decode type. The Direct3D runtime specifies a DXVADDI\_DECODEINPUT structure for a particular DirectX VA decode type in a variable that the **pInfo** member of D3DDDIARG\_GETCAPS points to. The user-mode display driver returns accelerated decode configurations in an array of [**DXVADDI\_CONFIGPICTUREDECODE**](https://msdn.microsoft.com/library/windows/hardware/ff562894) structures that the **pData** member of D3DDDIARG\_GETCAPS specifies.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Providing%20Capabilities%20for%20Video%20Decoding%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

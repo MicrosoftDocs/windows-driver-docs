@@ -4,17 +4,14 @@ description: NDIS 6.20 Updates to NDIS 6.1 Features
 ms.assetid: b57af71b-2718-4a52-888b-b378b3e6097f
 keywords:
 - NDIS 6.20 WDK , updates to NDIS 6.1 features
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS 6.20 Updates to NDIS 6.1 Features
 
 
-## <a href="" id="ddk-ndis-6-20-updates-to-ndis-6-1-features-ng"></a>
+
 
 
 NDIS 6.1 added the following interfaces to NDIS 6.0:
@@ -37,9 +34,9 @@ After NDIS 6.20 [IPsec task offload version 1](ipsec-offload-version-1.md) will 
 
 NetDMA 1.1 and 2.0 were introduced with NDIS 6.1. NetDMA 2.1 is introduced with NDIS 6.20 to provide support for more than 64 processors.
 
- 
+ 
 
- 
+ 
 
 
 

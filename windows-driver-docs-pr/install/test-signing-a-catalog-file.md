@@ -6,11 +6,8 @@ keywords:
 - catalog files WDK driver signing , test signing
 - test signing catalog files WDK
 - test signing driver packages WDK , catalog files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Test-Signing a Catalog File
@@ -26,7 +23,7 @@ After you create and verify a [driver package's](driver-packages.md) [catalog f
 
 Use the following SignTool command to sign a [catalog file](catalog-files.md) by using a [MakeCert test certificate](makecert-test-certificate.md) or a [commercial test certificate](commercial-test-certificate.md):
 
-```
+```cpp
 SignTool sign /v /s TestCertStoreName /n TestCertName /t http://timestamp.verisign.com/scripts/timstamp.dll CatalogFileName.cat
 ```
 
@@ -46,7 +43,7 @@ Where:
 
 The following command shows how to use SignTool to test-sign a [driver package's](driver-packages.md) catalog file. This example signs the catalog file *Tstamd64.cat*, which is in the same directory in which the command is run. The test certificate is named "contoso.com(test)," which is installed in the certificate store named "PrivateCertStore."
 
-```
+```cpp
 SignTool sign /v /s PrivateCertStore /n contoso.com(test) /t http://timestamp.verisign.com/scripts/timstamp.dll tstamd64.cat
 ```
 
@@ -56,13 +53,13 @@ The following SignTool command assumes that an Enterprise CA issues the test cer
 
 If you have created or obtained other test certificates in addition to an Enterprise CA test certificate, you must use the SignTool options **/s** and **/n** to specify the name of the test certificate store and the name of the test certificate that is installed in the test certificate store.
 
-```
+```cpp
 SignTool sign /v /a /t http://timestamp.verisign.com/scripts/timstamp.dll CatalogFileName.cat
 ```
 
- 
+ 
 
- 
+ 
 
 
 

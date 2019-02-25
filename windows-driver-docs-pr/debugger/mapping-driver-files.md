@@ -3,11 +3,8 @@ title: Mapping Driver Files
 description: Mapping Driver Files
 ms.assetid: 9a13a6a9-b585-4be1-b7c8-da65fa3ba6c6
 keywords: ["mapping driver files", "driver replacement map", "driver replacement map, overview", "driver replacement map, file format", "driver replacement map, replacing boot drivers", "boot driver replacement"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mapping Driver Files
@@ -26,7 +23,7 @@ To use a driver replacement map to replace driver files, do the following:
 
 1.  Create a *driver replacement map file*. This file is a text file that lists the drivers on the target computer and their replacement drivers on the host computer. You can replace any number of drivers. For example, you might create a file that is named Mymap.ini in the d:\\Map\_Files directory of your host computer that contains the following information.
 
-    ```
+    ```ini
     map
     \Systemroot\system32\drivers\videoprt.sys
     \\myserver\myshare\new_drivers\videoprt.sys
@@ -39,14 +36,14 @@ To use a driver replacement map to replace driver files, do the following:
 3.  Load the driver replacement map file by doing one of the following:
     -   Set the \_NT\_KD\_FILES [environment variable](environment-variables.md) before you start the kernel debugger.
 
-        ```
+        ```console
         D:\Debugging Tools for Windows> set _NT_KD_FILES=d:\Map_Files\mymap.ini
         D:\Debugging Tools for Windows> kd
         ```
 
     -   Use the [**.kdfiles (Set Driver Replacement Map)**](-kdfiles--set-driver-replacement-map-.md) command after you start the kernel debugger.
 
-        ```
+        ```console
         D:\Debugging Tools for Windows> kd
         kd> .kdfiles d:\Map_Files\mymap.ini
         KD file associations loaded from 'd:\Map_Files\mymap.ini'
@@ -92,7 +89,7 @@ The map file can include blank lines and can include comment lines that begin wi
 
 The following example shows a driver replacement map file.
 
-```
+```text
 map
 \Systemroot\system32\drivers\videoprt.sys
 e:\MyNewDriver\binaries\videoprt.sys
@@ -116,7 +113,7 @@ If you use [**CTRL+D**](ctrl-d--toggle-debug-info-.md) (in KD) or CTRL+ALT+D (in
 
 You can enable the bcdedit bootdebug option to view early boot information that is useful for replacing the kernel, the hal, or boot drivers.
 
-```
+```console
 bcdedit -bootdebug on
 ```
 
@@ -142,11 +139,10 @@ This special method applies only to boot drivers (that is, Acpi.sys, Classpnp.sy
 
 You cannot replace boot drivers on a computer that uses EFI firmware instead of the Boot.ini file.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Mapping%20Driver%20Files%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Supporting Power Management for DMA Devices
-author: windows-driver-content
 description: Supporting Power Management for DMA Devices
 ms.assetid: abbb8f60-560f-41c9-85c5-1ec82078b99e
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - power management WDK KMDF , DMA devices
 - DMA enabler objects WDK KMDF
 - enabler objects WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Power Management for DMA Devices
@@ -47,9 +43,9 @@ Deallocates a device's DMA buffers.
 
 For more information about the order in which the framework calls a driver's event callback functions, see [PnP and Power Management Scenarios](pnp-and-power-management-scenarios.md).
 
- 
+ 
 
- 
+ 
 
 
 

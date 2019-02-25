@@ -1,6 +1,5 @@
 ---
 title: Storage Class Drivers
-author: windows-driver-content
 description: Storage Class Drivers
 ms.assetid: 567c561a-3b0d-49cf-8b59-6abe94dbd206
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - storage drivers WDK , class drivers
 - mass storage devices WDK
 - SCSI device driver setup WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Drivers
@@ -46,11 +42,10 @@ This section explains how to write storage class drivers and contains the follow
 
 [Supporting Mount Manager Requests in a Storage Class Driver](supporting-mount-manager-requests-in-a-storage-class-driver.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

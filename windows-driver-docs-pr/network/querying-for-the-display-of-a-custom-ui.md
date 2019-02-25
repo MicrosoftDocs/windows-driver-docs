@@ -5,17 +5,14 @@ ms.assetid: 89f39281-db97-4cbe-8753-43ab30d840c8
 keywords:
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , querying
 - querying custom UI display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Querying for the Display of a Custom UI
 
 
-**Important**  The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](wifi-universal-driver-model.md).
+
 
  
 
@@ -37,7 +34,7 @@ Through the [**DOT11EXT\_IHV\_UI\_REQUEST**](https://msdn.microsoft.com/library/
 
 -   The class ID (CLSID) of **IWizardExtension** COM interface that is implemented within the Native 802.11 IHV UI Extensions DLL. The CLSID is used to request a specific custom UI that is supported by the DLL.
 
-    For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](http://go.microsoft.com/fwlink/p/?linkid=56607).
+    For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](https://go.microsoft.com/fwlink/p/?linkid=56607).
 
 -   A buffer that contains data in a proprietary format that is defined by the independent hardware vendor (IHV) and processed by the specified **IWizardExtension** COM interface. For example, the buffer could contain the default values that are displayed within the custom UI.
 

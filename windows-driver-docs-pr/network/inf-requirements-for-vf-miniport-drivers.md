@@ -2,11 +2,8 @@
 title: INF Requirements for VF Miniport Drivers
 description: INF Requirements for VF Miniport Drivers
 ms.assetid: D15B337F-EC63-4E9A-94DA-E7F0487D5D48
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF Requirements for VF Miniport Drivers
@@ -25,9 +22,9 @@ HKR, Ndi\Interfaces, UpperRange, 0, "ndisvf"
 HKR, Ndi\Interfaces, LowerRange, 0, "iovvf"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

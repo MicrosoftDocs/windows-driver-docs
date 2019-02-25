@@ -3,17 +3,14 @@ title: heap
 description: The heap extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information.
 ms.assetid: 70947b56-1a8c-4e78-85d0-d5df87f3150c
 keywords: ["heap usage", "GFlags, enabling page heap", "heap Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - heap
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !heap
@@ -23,7 +20,7 @@ The **!heap** extension displays heap usage information, controls breakpoints in
 
 This extension supports the segment heap and the NT heap. Use !heap with no parameter to list all heaps and their type.
 
-```
+```dbgcmd
 !heap [HeapOptions] [ValidationOptions] [Heap] 
 !heap -b [{alloc|realloc|free} [Tag]] [Heap | BreakAddress] 
 !heap -B {alloc|realloc|free} [Heap | BreakAddress] 
@@ -85,9 +82,9 @@ Can be any combination of the following options. The *SummaryOptions* are not ca
 </tbody>
 </table>
 
- 
+ 
 
-<span id="_______-triage__Handle___Address___"></span><span id="_______-triage__handle___address___"></span><span id="_______-TRIAGE__HANDLE___ADDRESS___"></span> **-triage \[***Handle* **|** *Address***\]**   
+<span id="_______-triage__Handle___Address___"></span><span id="_______-triage__handle___address___"></span><span id="_______-TRIAGE__HANDLE___ADDRESS___"></span> **-triage \[**<em>Handle</em> **|** <em>Address</em>**\]**   
 Causes the debugger to automatically search for failures in a process's heaps. If a heap handle is specified as an argument, that heap is examined; otherwise, all the heaps are searched for one that contains the given address, and if one is found, it is examined. Using **-triage** is the only way to validate low-fragmentation heap (LFH) corruption.
 
 <span id="_______-x_-v_"></span><span id="_______-X_-V_"></span> **-x** **** \[**-v**\]   
@@ -132,7 +129,7 @@ Can be any combination of the following options. The *HeapOptions* values are ca
 <strong>Note</strong>  This option does not detect low fragmentation heap (LFH) corruption. Use <strong>-triage</strong> instead.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -178,7 +175,7 @@ Can be any combination of the following options. The *HeapOptions* values are ca
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______ValidationOptions______"></span><span id="_______validationoptions______"></span><span id="_______VALIDATIONOPTIONS______"></span> *ValidationOptions*   
 Can be any single one of the following options. The *ValidationOptions* are case-sensitive.
@@ -214,7 +211,7 @@ Can be any single one of the following options. The *ValidationOptions* are case
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______-i________Heap_Address______or_HeapAddress______"></span><span id="_______-i________heap_address______or_heapaddress______"></span><span id="_______-I________HEAP_ADDRESS______OR_HEAPADDRESS______"></span> **-i** **** *Heap* **** *Address* **or** *HeapAddress*   
 Displays information about the specified *Heap*.
@@ -279,7 +276,7 @@ Can be any single one of the following options. The *PageHeapOptions* are case-s
 </tbody>
 </table>
 
- 
+ 
 
 Before you can use any **!heap -p** extension command, the page heap must be enabled for your target process. See details in the following Remarks section.
 
@@ -323,7 +320,7 @@ Can be any single one of the following options. This specifies the size of the p
 </tbody>
 </table>
 
- 
+ 
 
 If none of the above are specified, then the pattern is assumed to be of the same size as the machine pointer.
 
@@ -356,7 +353,7 @@ Can be any single one of the following options. The *FilterOptions* are case-sen
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______-stat______"></span><span id="_______-STAT______"></span> **-stat**   
 Displays usage statistics for the specified heap.
@@ -394,7 +391,7 @@ Reorders the display as specified by *GroupBy*. The options for *GroupBy* can be
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______MaxDisplay______"></span><span id="_______maxdisplay______"></span><span id="_______MAXDISPLAY______"></span> *MaxDisplay*   
 Limits the output to only *MaxDisplay* number of lines.
@@ -416,7 +413,7 @@ Exts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -447,7 +444,7 @@ The **!heap -stat** command displays heap usage statistics.
 
 Here is an example of the standard **!heap** command:
 
-```
+```dbgcmd
 0:000> !ntsdexts.heap -a
 Index   Address  Name      Debugging options enabled
   1:   00250000 
@@ -566,7 +563,7 @@ Address   Size    Size  flags       (Bytes used)    (Tag name)
 
 Here is an example of the **!heap -l** command:
 
-```
+```dbgcmd
 1:0:011> !heap -l
 1:Heap 00170000
 Heap 00280000
@@ -609,7 +606,7 @@ The table in this example contains all 21 leaks found.
 
 Here is an example of the **!heap -x** command:
 
-```
+```dbgcmd
 0:011> !heap 002057b8 -x
 ## Entry     User      Heap      Segment       Size  PrevSize  Flags
 
@@ -618,7 +615,7 @@ Here is an example of the **!heap -x** command:
 
 Here is an example of the **!heap -x -v** command:
 
-```
+```dbgcmd
 1:0:011> !heap 002057b8 -x -v
 ## 1:Entry     User      Heap      Segment       Size  PrevSize  Flags
 
@@ -631,7 +628,7 @@ In this example, there is a pointer to this heap block at address 0x00205990.
 
 Here is an example of the **!heap -flt s** command:
 
-```
+```dbgcmd
 0:001>!heap -flt s 0x50
 ```
 
@@ -639,7 +636,7 @@ This will display all of the allocations of size 0x50.
 
 Here is an example of the **!heap -flt r** command:
 
-```
+```dbgcmd
 0:001>!heap -flt r 0x50 0x80
 ```
 
@@ -647,7 +644,7 @@ This will display each allocation whose size is between 0x50 and 0x7F.
 
 Here is an example of the **!heap -srch** command.
 
-```
+```dbgcmd
 0:001> !heap -srch 77176934
     _HEAP @ 00090000
    in HEAP_ENTRY: Size : Prev Flags - UserPtr UserSize - state
@@ -663,7 +660,7 @@ The following diagrams show the arrangement of heap blocks.
 
 Light page heap block -- allocated:
 
-```
+```dbgcmd
  +-----+---------------+---+                                  
  |     |               |   |                                  
  +-----+---------------+---+                                  
@@ -675,7 +672,7 @@ Light page heap block -- allocated:
 
 Light page heap block -- freed:
 
-```
+```dbgcmd
  +-----+---------------+---+                                  
  |     |               |   |                                  
  +-----+---------------+---+                                  
@@ -687,20 +684,20 @@ Light page heap block -- freed:
 
 Full page heap block -- allocated:
 
-```
+```dbgcmd
  +-----+---------+---+-------                                 
  |     |         |   |  ... N/A page                          
  +-----+---------+---+-------                                 
     ^       ^      ^                                          
     |       |      0-7 suffix bytes (filled with 0xD0)        
     |       User allocation (if zeroing not requested, filled   
-            with E0 in Windows 2000 and C0 in Windows XP)       
+            with C0)       
     Block header (starts with 0xABCDBBBB and ends with 0xDCBABBBB) 
 ```
 
 Full page heap block -- freed:
 
-```
+```dbgcmd
  +-----+---------+---+-------                                 
  |     |         |   |  ... N/A page                          
  +-----+---------+---+-------                                 
@@ -712,11 +709,10 @@ Full page heap block -- freed:
 
 To see the stack trace of the allocation or the freeing of a heap block or full page heap block, use [**dt DPH\_BLOCK\_INFORMATION**](dt--display-type-.md) with the header address, followed by [**dds**](dds--dps--dqs--display-words-and-symbols-.md) with the block's **StackTrace** field.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!heap%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

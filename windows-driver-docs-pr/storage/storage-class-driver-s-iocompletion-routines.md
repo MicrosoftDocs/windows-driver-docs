@@ -1,15 +1,11 @@
 ---
 title: Storage Class Driver's IoCompletion Routines
-author: windows-driver-content
 description: Storage Class Driver's IoCompletion Routines
 ms.assetid: 03cf50be-1b7d-4e5b-8ee5-bbdef860d893
 keywords:
 - IoCompletion
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's IoCompletion Routines
@@ -32,11 +28,10 @@ Storage class drivers are responsible for retrying requests that fail due to tar
 
 For general information about *IoCompletion* routines, see [Completing IRPs](https://msdn.microsoft.com/library/windows/hardware/ff542018).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

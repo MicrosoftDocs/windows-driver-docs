@@ -2,6 +2,8 @@
 title: Monitoring Silent Process Exit
 description: Beginning with Windows 7, you can use the Silent Process Exit tab in GFlags to enter the name of a process that you want to monitor for silent exit.
 ms.assetid: 116B2053-7F48-48B4-AEAC-333B7D9C38C7
+ms.date: 11/28/2017
+ms.localizationpriority: medium
 ---
 
 # Monitoring Silent Process Exit
@@ -53,7 +55,7 @@ The **ReportingMode** registry entry is a bitwise OR of the following flags.
 | LOCAL\_DUMP            | 0x2   | When silent exit is detected, a dump file is created for the monitored process. In the case of cross-process termination, a dump file is also created for the process that caused the termination. |
 | NOTIFICATION           | 0x4   | When silent exit is detected, a pop-up notification is displayed.                                                                                                                                  |
 
- 
+ 
 
 ## <span id="Ignore_Self_Exits"></span><span id="ignore_self_exits"></span><span id="IGNORE_SELF_EXITS"></span>Ignore Self Exits
 
@@ -67,7 +69,7 @@ The **IgnoreSelfExits** registry entry has one of the following values.
 | 0x0   | Detect and respond to both self termination and cross-process termination. |
 | 0x1   | Ignore self termination. Detect and respond to cross-process termination.  |
 
- 
+ 
 
 ## <span id="Monitor_Process"></span><span id="monitor_process"></span><span id="MONITOR_PROCESS"></span>Monitor Process
 
@@ -81,7 +83,7 @@ You can specify a monitor process by entering a process name, along with command
 | %t       | ID of the initiating thread. This is the thread that caused the termination.                                                                                                                                  |
 | %c       | The status code passed to **ExitThread** or **TerminateThread** .                                                                                                                                            |
 
- 
+ 
 
 For example, the following value for **Monitor Process** specifies that on silent exit, WinDbg is launched and attached to the exiting process.
 
@@ -121,7 +123,7 @@ For example, suppose you chose a dump type of **Micro**, and you see that the **
 | MiniDumpFilterModulePaths | 0x00000080 |
 | MiniDumpFilterMemory      | 0x00000008 |
 
- 
+ 
 
 If you choose a dump type of **Custom**, enter your own bitwise OR of **MINIDUMP\_TYPE** enumeration values in the **Custom Dump Type** box. Enter this value as a decimal integer.
 
@@ -139,11 +141,10 @@ When a monitored process exits silently, the monitor creates an entry in Event V
 
 ![event properties dialog box showing general tab displaying the source as process exit monitor](images/gflagssilentprocessexit02.png)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Monitoring%20Silent%20Process%20Exit%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

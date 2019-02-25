@@ -2,11 +2,8 @@
 title: Stampinf task
 description: The Windows Driver Kit (WDK) provides the StampInf task so that you can run the stampinf.exe tool when you build your driver using MSBuild. For information about the stampinf.exe tool, see Stampinf.
 ms.assetid: 4BD937D3-97C7-408D-9372-F01CBB7B0B62
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Stampinf task
@@ -57,7 +54,7 @@ In the example above, MSBuild invokes stampinf.exe on both a.inf and b.inf, but 
 <tr class="odd">
 <td align="left"><strong>Source</strong>
 <p>Required ITaskItem parameter. Specifies a list of source files.</p></td>
-<td align="left">%(Inf.OutputPath)\%(Inf.FileName).inf</td>
+<td align="left">%(Inf.OutputPath)%(Inf.FileName).inf</td>
 <td align="left"><strong>-f</strong><em>[source]</em></td>
 </tr>
 <tr class="even">
@@ -88,7 +85,7 @@ In the example above, MSBuild invokes stampinf.exe on both a.inf and b.inf, but 
 <td align="left"><strong>DriverVerDirectiveDate</strong>
 <p>Optional string</p></td>
 <td align="left">%(Inf.DateStamp)</td>
-<td align="left"><strong>-d</strong><em>[date|*]</em></td>
+<td align="left"><strong>-d</strong><em>[date|<em>]</em></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>DriverVerDirectiveSection</strong>
@@ -106,7 +103,7 @@ In the example above, MSBuild invokes stampinf.exe on both a.inf and b.inf, but 
 <td align="left"><strong>DriverVerDirectiveVersion</strong>
 <p>Optional string parameter. Specifies the version number in the driver directive.</p></td>
 <td align="left">%(Inf.TimeStamp)</td>
-<td align="left"><strong>-v</strong><em>[time|*]</em></td>
+<td align="left"><strong>-v</strong><em>[time|</em>]</em></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>KmdfVersion</strong>
@@ -153,13 +150,12 @@ In the example above, MSBuild invokes stampinf.exe on both a.inf and b.inf, but 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Stampinf%20task%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

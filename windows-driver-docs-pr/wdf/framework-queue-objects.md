@@ -1,6 +1,5 @@
 ---
 title: Framework Queue Objects
-author: windows-driver-content
 description: Framework Queue Objects
 ms.assetid: 42736e2d-2482-46b4-bf52-4efe369db40b
 keywords:
@@ -15,17 +14,14 @@ keywords:
 - callback functions WDK KMDF
 - event callback functions WDK KMDF
 - framework objects WDK KMDF , I/O queue objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework Queue Objects
 
 
-## <a href="" id="ddk-framework-queue-objects-df"></a>
+
 
 
 Framework queue objects represent *I/O queues*, which are containers for the I/O requests that a driver receives. Each driver can create one or more I/O queues for each device. The framework queue object defines a set of [event callback functions](https://msdn.microsoft.com/library/windows/hardware/dn265647) that the driver can provide and a set of object methods that the driver can call.
@@ -48,9 +44,9 @@ This section includes:
 
 [Example Uses of I/O Queues](example-uses-of-i-o-queues.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,7 +2,6 @@
 title: Battery Devices Design Guide
 description: Battery Devices Design Guide
 ms.assetid: d8eecfcb-6c06-40d1-8c78-b8c88eb890f2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,11 +22,10 @@ This design guide focuses on [Writing Battery Miniclass Drivers](writing-battery
 
 In addition this section includes information on [Writing UPS Minidrivers](writing-ups-minidrivers.md) that were used with older versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

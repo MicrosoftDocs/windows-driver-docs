@@ -2,11 +2,8 @@
 title: Uninstalling Devices and Driver Packages
 description: Uninstalling Devices and Driver Packages
 ms.assetid: 4381ee42-778b-402d-b242-892ec921c28f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Uninstalling Devices and Driver Packages
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 After a device is installed, it might be necessary to uninstall a device or a [driver package](driver-packages.md). For example, an end-user might decide to replace the associated device, or the driver package might have to be uninstalled when a driver is updated.
 
-When you uninstall a device, you must remove the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) that represents the physical instance of the device in the system.
+When you uninstall a device, you must remove the device node (*devnode*) that represents the physical instance of the device in the system.
 
 When you uninstall a [driver package](driver-packages.md), you must complete the following actions:
 
@@ -31,14 +28,6 @@ This section includes the following topics:
 [Using Device Manager to Uninstall Devices and Driver Packages](using-device-manager-to-uninstall-devices-and-driver-packages.md)
 
 [Using SetupAPI to Uninstall Devices and Driver Packages](using-setupapi-to-uninstall-devices-and-driver-packages.md)
-
-[Using the DIFx Tools to Uninstall Driver Packages](using-the-difx-tools-to-uninstall-driver-packages.md)
-
- 
-
- 
-
-
 
 
 

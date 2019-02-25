@@ -2,11 +2,8 @@
 title: Indicating Coalesced Segments
 description: This section describes how to indicate coalesced segments
 ms.assetid: 79A37DAB-D9B3-4FA2-8258-05E10BD6E3CB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Indicating Coalesced Segments
@@ -24,7 +21,7 @@ An SCU must:
 
     **Note**  Because segments with IPv6 extension headers cannot be coalesced (see [Exception Conditions that Terminate Coalescing](exception-conditions-that-terminate-coalescing.md)), the size of the SCU for IPv6 datagrams is also limited by the maximum legal datagram length.
 
-     
+     
 
 The NIC or miniport driver should recompute the TCP and IPv4 checksums, if applicable, before indicating the coalesced segment. If the NIC or miniport driver validates the TCP and IPv4 checksums but does not recompute them for the coalesced segment, it must set the **TcpChecksumValueInvalid** and **IpChecksumValueInvalid** flags in the [**NDIS\_TCP\_IP\_CHECKSUM\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567877) structure. Additionally, in this case the NIC or miniport driver may optionally zero out the TCP and IPv4 header checksum values in the segment.
 
@@ -52,9 +49,9 @@ At a high level, the NIC and miniport driver must handle the receipt of a TCP se
 
 -   The NIC and miniport driver may use timers to determine the end of coalescing. However, the handling of latency sensitive workloads must be as effective as the DPC boundary requirement.
 
- 
+ 
 
- 
+ 
 
 
 

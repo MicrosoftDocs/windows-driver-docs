@@ -1,6 +1,5 @@
 ---
 title: Managing I/O Queues
-author: windows-driver-content
 description: Managing I/O Queues
 ms.assetid: 83cc87c8-7e2d-4f79-a580-0519d327e7ba
 keywords:
@@ -24,11 +23,8 @@ keywords:
 - restarting I/O queues WDK KMDF
 - starting I/O queues WDK KMDF
 - dispatching methods WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing I/O Queues
@@ -117,9 +113,9 @@ To obtain properties of a framework queue object, the driver can call the follow
 
 -   [**WdfIoQueueGetState**](https://msdn.microsoft.com/library/windows/hardware/ff548437), to obtain [state information](i-o-queue-states.md) about the queue.
 
- 
+ 
 
- 
+ 
 
 
 

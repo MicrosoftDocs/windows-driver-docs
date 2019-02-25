@@ -1,13 +1,9 @@
 ---
 title: USB H.264 Video Cameras Support
-author: windows-driver-content
 description: Beginning with Windows 8, the H.264 video codec (encoder/decoder) is supported.
 ms.assetid: EB73E2B2-B34E-4DC1-807A-4990A54E6E8D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB H.264 Video Cameras Support
@@ -26,18 +22,16 @@ If you choose to use the UVC class driver Usbvideo.sys and not a proprietary dri
 
 ### Firmware Guidelines
 
-The UVC class driver Usbvideo.sys queries the video camera directly to obtain its capabilities and then drives the device, with no proprietary driver required. For information on the current implementation of the guidelines, you must refer to the Microsoft Specification of Video Class Driver for H.264/MPEG-4. Also refer to the [Microsoft Proposed Extensions to the USB Video Class for H.264](http://go.microsoft.com/fwlink/p/?LinkId=233063).
+The UVC class driver Usbvideo.sys queries the video camera directly to obtain its capabilities and then drives the device, with no proprietary driver required. For information on the current implementation of the guidelines, you must refer to the Microsoft Specification of Video Class Driver for H.264/MPEG-4. Also refer to the [Microsoft Proposed Extensions to the USB Video Class for H.264](https://go.microsoft.com/fwlink/p/?LinkId=233063).
 
-**Note**  The official guidelines will be published in a future standard document to be found at this location: [Universal Serial Bus Device Class Definition for Video Devices Specification](http://go.microsoft.com/fwlink/p/?linkid=516989).
+**Note**  The official guidelines will be published in a future standard document to be found at this location: [Universal Serial Bus Device Class Definition for Video Devices Specification](https://go.microsoft.com/fwlink/p/?linkid=516989).
 
- 
+ 
 
 ## Related topics
 [**KS\_DATAFORMAT\_H264VIDEOINFO**](https://msdn.microsoft.com/library/windows/hardware/hh463996)  
 [**KS\_DATARANGE\_H264\_VIDEO**](https://msdn.microsoft.com/library/windows/hardware/hh464002)  
 [**KS\_H264VIDEOINFO**](https://msdn.microsoft.com/library/windows/hardware/hh464008)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20USB%20H.264%20Video%20Cameras%20Support%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

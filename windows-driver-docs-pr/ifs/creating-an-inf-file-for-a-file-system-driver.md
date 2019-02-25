@@ -1,6 +1,5 @@
 ---
 title: Creating an INF File for a File System Driver
-author: windows-driver-content
 description: Creating an INF File for a File System Driver
 ms.assetid: 4b67159f-a5a5-46da-9500-a9c6b6995da4
 keywords:
@@ -14,11 +13,8 @@ keywords:
 - DestinationDirs section WDK file system
 - Version section WDK file system
 - creating INF files WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating an INF File for a File System Driver
@@ -41,11 +37,11 @@ Starting with 64-bit versions of Windows Vista, all kernel-mode components, incl
 
 -   The [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command-line tool, located in the \\bin\\SelfSign directory of the WDK installation directory, can be used to directly "embed sign" a driver SYS executable file. For performance reasons, boot-start drivers must contain an embedded signature.
 
--   Given an INF file, the [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) command-line tool can be used to create a catalog (.cat) file for a driver package. Only catalog files can receive [WHQL](http://go.microsoft.com/fwlink/p/?linkid=8705) logo signatures.
+-   Given an INF file, the [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) command-line tool can be used to create a catalog (.cat) file for a driver package. Only catalog files can receive [WHQL](https://go.microsoft.com/fwlink/p/?linkid=8705) logo signatures.
 
 -   With Administrator privileges, an unsigned driver can still be installed on x64-based systems starting with Windows Vista. However, the driver will fail to load (and thus execute) because it is unsigned.
 
--   For detailed information about the driving signing process, including the driving signing process for 64-bit versions of Windows Vista, see [Kernel-Mode Code Signing Walkthrough](http://go.microsoft.com/fwlink/p/?linkid=79445).
+-   For detailed information about the driving signing process, including the driving signing process for 64-bit versions of Windows Vista, see [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=79445).
 
 -   All kernel-mode components, including custom kernel-mode development tools, must be signed. For more information, see [Signing Drivers during Development and Test (Windows Vista and Later)](https://msdn.microsoft.com/library/windows/hardware/ff552275).
 
@@ -81,7 +77,7 @@ An INF file for a file system driver generally contains the following sections.
 
 The [**Version**](https://msdn.microsoft.com/library/windows/hardware/ff547502) section specifies the driver version information, as shown in the following code example.
 
-```
+```cpp
 [Version]
 Signature   = "$WINDOWS NT$"
 Provider    = %Msft%
@@ -113,7 +109,7 @@ The following table shows the values that file system filter drivers should spec
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>DriverVer</strong></p></td>
-<td align="left"><p>See [<strong>INF DriverVer directive</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547394).</p></td>
+<td align="left"><p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff547394" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547394)"><strong>INF DriverVer directive</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CatalogFile</strong></p></td>
@@ -122,7 +118,7 @@ The following table shows the values that file system filter drivers should spec
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="DestinationDirs_Section__optional_but_recommended_"></span><span id="destinationdirs_section__optional_but_recommended_"></span><span id="DESTINATIONDIRS_SECTION__OPTIONAL_BUT_RECOMMENDED_"></span>DestinationDirs Section (optional but recommended)
 
@@ -130,7 +126,7 @@ The [**DestinationDirs**](https://msdn.microsoft.com/library/windows/hardware/ff
 
 In this section and in the **ServiceInstall** section, you can specify well-known system directories by using system-defined numeric values. For a list of these values, see [**INF DestinationDirs Section**](https://msdn.microsoft.com/library/windows/hardware/ff547383). In the following code example, the value "12" refers to the Drivers directory (%windir%\\system32\\drivers).
 
-```
+```cpp
 [DestinationDirs]
 DefaultDestDir = 12
 ExampleFileSystem.DriverFiles = 12
@@ -142,7 +138,7 @@ The [**SourceDisksNames**](https://msdn.microsoft.com/library/windows/hardware/f
 
 In the following code example, the [**SourceDisksNames**](https://msdn.microsoft.com/library/windows/hardware/ff547478) section lists a single distribution media for the file system driver. The unique identifier for the media is 1. The name of the media is specified by the %Disk1% token, which is defined in the **Strings** section of the INF file.
 
-```
+```cpp
 [SourceDisksNames]
 1 = %Disk1%
 ```
@@ -153,7 +149,7 @@ The [**SourceDisksFiles**](https://msdn.microsoft.com/library/windows/hardware/f
 
 In the following code example, the [**SourceDisksFiles**](https://msdn.microsoft.com/library/windows/hardware/ff547472) section lists the file to be copied for the file system driver and specifies that the files can be found on the media whose unique identifier is 1 (This identifier is defined in the [**SourceDisksNames**](https://msdn.microsoft.com/library/windows/hardware/ff547478) section of the INF file.)
 
-```
+```cpp
 [SourceDisksFiles]
 examplefilesystem.sys = 1
 ```
@@ -164,13 +160,13 @@ In the [**DefaultInstall**](https://msdn.microsoft.com/library/windows/hardware/
 
 **Note**   The [**CopyFiles**](https://msdn.microsoft.com/library/windows/hardware/ff546346) directive should not refer to the catalog file or the INF file itself; SetupAPI copies these files automatically.
 
- 
+ 
 
 You can create a single INF file to install your driver on multiple versions of the Windows operating system. This type of INF file is created by creating additional [**DefaultInstall**](https://msdn.microsoft.com/library/windows/hardware/ff547356), [**DefaultInstall.Services**](https://msdn.microsoft.com/library/windows/hardware/ff547360), **DefaultUninstall**, and **DefaultUninstall.Services** sections for each operating system version. Each section is labeled with a *decoration* (for example, .ntx86, .ntia64, or .nt) that specifies the operating system version to which it applies. For more information about creating this type of INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](https://msdn.microsoft.com/library/windows/hardware/ff540206).
 
 In the following code example, the [**CopyFiles**](https://msdn.microsoft.com/library/windows/hardware/ff546346) directive copies the files that are listed in the ExampleFileSystem.DriverFiles section of the INF file.
 
-```
+```cpp
 [DefaultInstall]
 OptionDesc = %ServiceDesc%
 CopyFiles = ExampleFileSystem.DriverFiles
@@ -185,7 +181,7 @@ The [**DefaultInstall.Services**](https://msdn.microsoft.com/library/windows/har
 
 In the following code example, the [**AddService**](https://msdn.microsoft.com/library/windows/hardware/ff546326) directive adds the file system service to the operating system. The %ServiceName% token contains the service name string, which is defined in the **Strings** section of the INF file. ExampleFileSystem.Service is the name of the file system driver's **ServiceInstall** section.
 
-```
+```cpp
 [DefaultInstall.Services]
 AddService = %ServiceName%,,ExampleFileSystem.Service
 ```
@@ -196,7 +192,7 @@ The **ServiceInstall** section adds subkeys or value names to the registry and s
 
 The following code example shows the **ServiceInstall** section for the file system driver.
 
-```
+```cpp
 [ExampleFileSystem.Service]
 DisplayName    = %ServiceName%
 Description    = %ServiceDesc%
@@ -247,7 +243,7 @@ The **ServiceType** entry specifies the type of service. The following table lis
 </tbody>
 </table>
 
- 
+ 
 
 The **ServiceType** entry should always be set to SERVICE\_FILE\_SYSTEM\_DRIVER for a file system driver.
 
@@ -288,11 +284,11 @@ The **StartType** entry specifies when to start the service. The following table
 </tbody>
 </table>
 
- 
+ 
 
 For detailed descriptions of these start types to determine which one is appropriate for your file system driver, see [What Determines When a Driver Is Loaded](what-determines-when-a-driver-is-loaded.md).
 
-Starting with x64-based Windows Vista systems, the binary image file of a boot-start driver (a driver that has a start type of SERVICE\_BOOT\_START) must contain an embedded signature. This requirement ensures optimal system boot performance. For more information, see [Kernel-Mode Code Signing Walkthrough](http://go.microsoft.com/fwlink/p/?linkid=79445).
+Starting with x64-based Windows Vista systems, the binary image file of a boot-start driver (a driver that has a start type of SERVICE\_BOOT\_START) must contain an embedded signature. This requirement ensures optimal system boot performance. For more information, see [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=79445).
 
 For information about how the **StartType** and **LoadOrderGroup** entries determine when the driver is loaded, see [What Determines When a Driver Is Loaded](what-determines-when-a-driver-is-loaded.md).
 
@@ -320,16 +316,16 @@ The **ErrorControl** entry specifies the action to be taken if the service fails
 </tr>
 <tr class="odd">
 <td align="left"><p>0x00000002</p></td>
-<td align="left"><p>SERVICE_ERROR_SEVERE (Switch to the registry's LastKnownGood control set and continue system startup.)</p></td>
+<td align="left"><p>SERVICE_ERROR_SEVERE (Switch to the registry&#39;s LastKnownGood control set and continue system startup.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x00000003</p></td>
-<td align="left"><p>SERVICE_ERROR_CRITICAL (If system startup is not using the registry's LastKnownGood control set, switch to LastKnownGood and try again. If startup still fails, run a bug-check routine. Only the drivers that are needed for the system to startup should specify this value in their INF files.)</p></td>
+<td align="left"><p>SERVICE_ERROR_CRITICAL (If system startup is not using the registry&#39;s LastKnownGood control set, switch to LastKnownGood and try again. If startup still fails, run a bug-check routine. Only the drivers that are needed for the system to startup should specify this value in their INF files.)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The **LoadOrderGroup** entry must always be set to "File System" for a file system driver. This is different from what is specified for a file system filter driver or file system minifilter driver where the **LoadOrderGroup** entry is set to one of the file system filter load order groups. For more information about the load order groups that are used for file system filter drivers and file system minifilter drivers, see [Load Order Groups for File System Filter Drivers](load-order-groups-for-file-system-filter-drivers.md) and [Load Order Groups and Altitudes for Minifilter Drivers](load-order-groups-and-altitudes-for-minifilter-drivers.md).
 
@@ -337,9 +333,9 @@ The [**AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/f
 
 **Note**   If the INF file will also be used for upgrading the driver after the initial install, the entries that are contained in the **AddRegistry** section should specify the 0x00000002 (FLG\_ADDREG\_NOCLOBBER) flag. Specifying this flag preserves the registry entries in HKLM\\CurrentControlSet\\Services when subsequent files are installed. For example:
 
- 
+ 
 
-```
+```cpp
 [ExampleFileSystem.AddRegistry]
 HKR,Parameters,ExampleParameter,0x00010003,1
 ```
@@ -350,7 +346,7 @@ The **DefaultUninstall** section is optional but recommended if your driver can 
 
 In the following code example, the [**DelFiles**](https://msdn.microsoft.com/library/windows/hardware/ff547363) directive removes the files that are listed in the ExampleFileSystem.DriverFiles section of the INF file.
 
-```
+```cpp
 [DefaultUninstall]
 DelFiles   = ExampleFileSystem.DriverFiles
 DelReg     = ExampleFileSystem.DelRegistry
@@ -364,18 +360,18 @@ The **DefaultUninstall.Services** section is optional but recommended if your dr
 
 In the following code example, the [**DelService**](https://msdn.microsoft.com/library/windows/hardware/ff547377) directive removes the file system driver's service from the operating system.
 
-```
+```cpp
 [DefaultUninstall.Services]
 DelService = %ServiceName%,0x200
 ```
 
 **Note**   The [**DelService**](https://msdn.microsoft.com/library/windows/hardware/ff547377) directive should always specify the 0x200 (SPSVCINST\_STOPSERVICE) flag to stop the service before it is deleted.
 
- 
+ 
 
 **Note**   There are certain classes of file system products that cannot be completely uninstalled. In this situation, it is acceptable to just uninstall the components of the product that can be uninstalled and leave installed the components of the product that cannot be uninstalled. An example of such a product is the Microsoft Single Instance Store (SIS) feature.
 
- 
+ 
 
 ### <span id="Strings_Section__required_"></span><span id="strings_section__required_"></span><span id="STRINGS_SECTION__REQUIRED_"></span>Strings Section (required)
 
@@ -383,7 +379,7 @@ The [**Strings**](https://msdn.microsoft.com/library/windows/hardware/ff547485) 
 
 For example, the file system driver defines the following strings in its INF file.
 
-```
+```cpp
 [Strings]
 Msft        = "Microsoft Corporation"
 ServiceDesc = "Example File System Driver"
@@ -392,13 +388,12 @@ ParameterPath = "SYSTEM\CurrentControlSet\Services\ExampleFileSystem\Parameters"
 Disk1       = "Example File System Driver CD"
 ```
 
-You can create a single international INF file by creating additional locale-specific **Strings.***LanguageID* sections in the INF file. For more information about international INF files, see [Creating International INF Files](https://msdn.microsoft.com/library/windows/hardware/ff540208).
+You can create a single international INF file by creating additional locale-specific **Strings.**<em>LanguageID</em> sections in the INF file. For more information about international INF files, see [Creating International INF Files](https://msdn.microsoft.com/library/windows/hardware/ff540208).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

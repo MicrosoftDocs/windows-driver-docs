@@ -1,12 +1,8 @@
 ---
 Description: Guidelines for choosing the best driver model for developing a USB client driver that acts as the device's function driver.
 title: Choose a driver model for developing a USB driver
-author: windows-driver-content
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/09/2018
+ms.localizationpriority: medium
 ---
 
 # Choosing a driver model for developing a USB client driver
@@ -29,7 +25,7 @@ Writing a driver that is customized to the device's requirements is the most fle
 -   [Can you use a Microsoft-provided driver?](#can-you-use-a-microsoft-provided-driver)
 -   [If you write a USB client driver, which driver model is best?](#if-you--write-a-usb-client-driver--which-driver-model-is-best-)
 
-## <a href="" id="can-you-use-a-microsoft-provided-driver"></a>Can you use a Microsoft-provided driver?
+## Can you use a Microsoft-provided driver?
 
 
 You might *not* need to write a driver if:
@@ -57,14 +53,14 @@ You might *not* need to write a driver if:
 
     In Windows 8, we've added a new compatible ID to the INF for WinUSB installation. If the device firmware contains that compatible ID, WinUSB is loaded by default as the function driver for the device. This means that hardware manufacturers are not required to distribute INF files for their WinUSB devices. For more information, see [WinUSB Device](automatic-installation-of-winusb.md).
 
-## <a href="" id="if-you--write-a-usb-client-driver--which-driver-model-is-best-"></a>If you write a USB client driver, which driver model is best?
+## If you write a USB client driver, which driver model is best?
 
 
 The answer depends on the design of your device. First, determine whether a particular driver model meets your requirements. Some design considerations are based on whether you want the USB device to be accessed by multiple concurrent applications and support data streaming through isochronous endpoints.
 
 If you choose to write a driver, here are your options:
 
--   [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) (UMDF)
+-   [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) (UMDF)
 
     UMDF provides device driver interfaces (DDIs) that a client driver can use to integrate with Windows components such as the Plug and Play Manager and Power Manager. UMDF also provides specialized target objects for USB devices, which abstract the hardware in user mode and simplify I/O operations for the driver. In addition to the UMDF interfaces, WDF provides enhanced debugger extensions and tracing tools for user-mode drivers. UMDF is based on the component object model (COM) and developing a user-mode driver is easier for a C++ developer.
 
@@ -81,9 +77,9 @@ If you choose to write a driver, here are your options:
 
     **Note**  Windows 8.1 introduces version 2.0 of UMDF. With UMDF version 2.0, you can write a UMDF driver in the C programming language that calls many of the methods that are available to KMDF drivers. You cannot use UMDF version 2.0 to write lower filter drivers for USB.
 
-     
+     
 
--   [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) (KMDF)
+-   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) (KMDF)
 
     KMDF was designed to make the driver models easy to extend to support new types of hardware. KMDF provides DDIs and data structures that make kernel-mode USB drivers easier to implement than the earlier Windows Driver Model (WDM) drivers. In addition, KMDF provides specialized input/output (I/O) targets that you can use to write a fully functional client driver that uses the Microsoft USB driver stack.
 
@@ -97,7 +93,7 @@ Microsoft Visual Studio 2012 includes **USB User-Mode Driver** and **USB Kernel
 -   [Write your first USB client driver (UMDF)](implement-driver-entry-for-a-usb-driver--umdf-.md)
 -   [Write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md)
 
-For information about how to implement UMDF and KMDF drivers, see the Microsoft Press book *Developing Drivers with the Windows Driver Foundation* or the [WHDC Web site](http://www.microsoft.com/whdc/driver/wdf/default.mspx).
+For information about how to implement UMDF and KMDF drivers, see the Microsoft Press book *Developing Drivers with the Windows Driver Foundation*.
 
 ## WinUSB, UMDF, KMDF Feature Comparison
 
@@ -113,7 +109,7 @@ The following table summarizes the capabilities of WinUSB, UMDF-based USB driver
 | Supports the installation of kernel-mode drivers, such as filter drivers, as an overlying layer on the USB stack | No     | No   | Yes  |
 | Supports selective suspend and the wait/wake state                                                               | Yes    | Yes  | Yes  |
 
- 
+ 
 
 The following table summarizes the WDF options that are supported by different versions of Windows.
 
@@ -126,7 +122,7 @@ The following table summarizes the WDF options that are supported by different v
 | Windows XP             | Yes²   | Yes² | Yes  |
 | Microsoft Windows 2000 | No     | No   | Yes³ |
 
- 
+ 
 
 **Note**  
 Yes¹: WinUSB and UMDF are supported only on x86-based and x64-based versions of Windows.
@@ -137,7 +133,7 @@ Yes³: KMDF is supported in Windows 2000 with SP4 or later versions of Windows.
 
 Yes⁴: Isochronous transfers are supported in Windows 8.1 or later versions of Windows.
 
- 
+ 
 
 All client SKUs of the 32-bit versions of Windows XP with SP2support WinUSB. WinUSB is not native to Windows XP; it must be installed with the WinUSB co-installer. All Windows Vista SKUs and later versions of Windows support WinUSB.
 
@@ -147,7 +143,5 @@ All client SKUs of the 32-bit versions of Windows XP with SP2support WinUSB. Wi
 [Write your first USB client driver (UMDF)](implement-driver-entry-for-a-usb-driver--umdf-.md)  
 [Write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Choosing%20a%20driver%20model%20for%20developing%20a%20USB%20client%20driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -8,17 +8,14 @@ keywords:
 - native address translations WDK SANs
 - translating native addresss WDK SANs
 - AF_INET addresses WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Translating to a SAN Native Address
 
 
-## <a href="" id="ddk-translating-to-a-san-native-address-ng"></a>
+
 
 
 The Windows Sockets switch always uses the [WSK address families](https://msdn.microsoft.com/library/windows/hardware/ff571151) to interact with a SAN service provider, not the SAN's native address family. Therefore, a proxy driver for a SAN service provider must translate between WSK address families and native addresses accordingly.
@@ -29,11 +26,11 @@ The proxy driver receives requests from its SAN service provider that contain IP
 
 **Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/hardware/ff571067) or [Winsock Kernel](https://msdn.microsoft.com/library/windows/hardware/ff571083) instead.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

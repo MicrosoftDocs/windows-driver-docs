@@ -10,17 +10,14 @@ keywords:
 - device IDs WDK device installations
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Identifiers for 1394 Devices
 
 
-## <a href="" id="ddk-identifiers-for-1394-devices-dg"></a>
+
 
 
 The 1394 bus driver constructs these identifiers for a device:
@@ -45,7 +42,7 @@ If a device has vendor and model name strings, the 1394 bus driver uses the firs
 
 The device ID for a camera on a IEEE1394 might be:
 
-1394\\SONY&CCM-DS250\_1.08
+1394\\SONY&CCM-DS250_1.08
 
 Multifunction devices have a separate set of identifiers for each unit directory in the device's configuration ROM.
 
@@ -63,9 +60,9 @@ Where:
 
 The device ID for a SBP-2 1394 hard disk might be as follows:
 
-SBP2\\VST\_TECHNOLOGIESINC.&VST\_FULL\_HEIGHT\_FIREWIRE\_DRIVE&LUN0
+SBP2\\VST_TECHNOLOGIESINC.&VST_FULL_HEIGHT_FIREWIRE_DRIVE&LUN0
 
-As with the 1394 bus, the SBP2 port driver does not classify the device ID as a hardware ID. However, whereas the 1394 bus distinguishes between hardware IDs and compatible IDs, the SBP2 port driver does not. For **IRP\_MN\_QUERY\_ID** IRPs of type **BusQueryHardwareIDs** and **IRP\_MN\_QUERY\_ID** IRPs of type **BusQueryCompatibleIDs** SBP2 returns the same set of four identifiers:
+As with the 1394 bus, the SBP2 port driver does not classify the device ID as a hardware ID. However, whereas the 1394 bus distinguishes between hardware IDs and compatible IDs, the SBP2 port driver does not. For **IRP_MN_QUERY_ID** IRPs of type **BusQueryHardwareIDs** and **IRP_MN_QUERY_ID** IRPs of type **BusQueryCompatibleIDs** SBP2 returns the same set of four identifiers:
 
 SBP2\\VendorName&ModelName&CmdSetIdn\*
 
@@ -77,11 +74,11 @@ SBP2\\n\*&d\*
 
 Where:
 
--   *n\** is the Command Set ID number.
+- *n\** is the Command Set ID number.
 
--   *Gen* is one of the generic names that are listed in the Generic Type column of the following table.
+- *Gen* is one of the generic names that are listed in the Generic Type column of the following table.
 
--   *d\** is a number formed by taking the lower five bits of the upper two bytes of the logical unit number. This number is the numeric code for the generic name of the device that corresponds to the *Gen* string identifier.
+- *d\** is a number formed by taking the lower five bits of the upper two bytes of the logical unit number. This number is the numeric code for the generic name of the device that corresponds to the *Gen* string identifier.
 
 The fourth ID, listed in the previous example (SBP2\\*n\*&d\**), is unique among all the SBP2 hardware identifiers in that both *n\**, the Command Set ID number and *d\**, the numeric code of the generic name are in decimal, not hexadecimal.
 
@@ -149,11 +146,11 @@ This table lists the generic device names returned by the SBP2 port driver. Most
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

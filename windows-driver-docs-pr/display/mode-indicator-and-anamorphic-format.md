@@ -19,11 +19,8 @@ keywords:
 - REPEAT_FIELD
 - automatic display changes WDK DirectDraw
 - deinterlacing WDK video port extensions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mode Indicator and Anamorphic Format
@@ -42,11 +39,10 @@ A good way to display a film that has an occasional 3:2 pattern irregularity is 
 
 One can imagine many content scenarios. Some automatic display schemes work better than others depending on the particular content involved. It is likely that only some content providers will see a need to guarantee optimal results on the widest range of playback platforms. DirectShow gives these content authors a method for judging the impact of display mode on their titles and transmits their preferences.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Mode%20Indicator%20and%20Anamorphic%20Format%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

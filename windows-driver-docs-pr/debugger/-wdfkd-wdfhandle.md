@@ -3,17 +3,14 @@ title: wdfkd.wdfhandle
 description: The wdfkd.wdfhandle extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer.
 ms.assetid: 9365218e-2647-4e54-baba-8774d4ab3ae1
 keywords: ["wdfkd.wdfhandle Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - wdfkd.wdfhandle
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfhandle
@@ -21,7 +18,7 @@ api_type:
 
 The **!wdfkd.wdfhandle** extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer.
 
-```
+```dbgcmd
 !wdfkd.wdfhandle Handle [Flags]
 ```
 
@@ -66,7 +63,7 @@ Remarks
 
 The following example shows the output of the **!wdfhandle** extension with bit 4 set in the *Flags* parameter (so the output displays information about the child objects).
 
-```
+```dbgcmd
 kd> !wdfhandle 0x7ca7b1c0 10 
 
 handle 0x7ca7b1c0, type is WDFDEVICE
@@ -88,11 +85,10 @@ Child WDFHANDLEs of 0x7ca7b1c0:
 
 In the preceding example, the input handle refers to a WDFDEVICE object. This particular device object has five child objects--two WDFCMRESLIST objects, two WDFCHILDLIST objects, and one WDFIOTARGET object.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!wdfkd.wdfhandle%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

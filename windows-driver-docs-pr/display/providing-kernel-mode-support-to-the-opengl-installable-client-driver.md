@@ -1,5 +1,5 @@
 ---
-title: Providing Kernel-Mode Support to the OpenGL Installable Client Driver
+title: Kernel-Mode Support to the OpenGL Installable Client Driver
 description: Providing Kernel-Mode Support to the OpenGL Installable Client Driver
 ms.assetid: 1871594a-ca4d-4a3c-bf12-bbf80fecefe9
 keywords:
@@ -7,23 +7,21 @@ keywords:
 - kernel-mode OpenGL ICD WDK display
 - ICD WDK display
 - installable client driver WDK display
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 12/06/2018
+ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Providing Kernel-Mode Support to the OpenGL Installable Client Driver
+# Kernel-Mode Support to the OpenGL Installable Client Driver
 
 
 The OpenGL installable client driver (ICD) can obtain the same level of support for calling kernel-mode services as [the Direct3D user-mode display driver](initializing-communication-with-the-direct3d-user-mode-display-driver.md). However, rather than gaining access to kernel-mode services through callback functions like the Microsoft Direct3D runtime supplies through the **pAdapterCallbacks** member of the [**D3DDDIARG\_OPENADAPTER**](https://msdn.microsoft.com/library/windows/hardware/ff543226) structure and the **pCallbacks** member of the [**D3DDDIARG\_CREATEDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff542931) structure, the OpenGL ICD must load Gdi32.dll and initialize use of the [OpenGL-kernel-mode-accessing functions](https://msdn.microsoft.com/library/windows/hardware/ff568606) as shown in the following example code. This code does not implement [Windows 8 enhancements in OpenGL](supporting-opengl-enhancements.md).
 
 **Note**   To obtain a license for the OpenGL ICD Development Kit, contact the [OpenGL Issues](mailto:opengl@microsoft.com) team.
 
- 
+ 
 
-```
+```cpp
 #include "d3dkmthk.h"
 
 PFND3DKMT_CREATEALLOCATION pfnKTCreateAllocation = NULL;
@@ -315,11 +313,10 @@ HRESULT InitKernelTHunks()
 }
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Providing%20Kernel-Mode%20Support%20to%20the%20OpenGL%20Installable%20Client%20Driver%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

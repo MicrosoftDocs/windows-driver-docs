@@ -3,17 +3,14 @@ title: Bug Check 0x4A IRQL_GT_ZERO_AT_SYSTEM_SERVICE
 description: The IRQL_GT_ZERO_AT_SYSTEM_SERVICE bug check has a value of 0x0000004A. This indicates that a thread is returning to user mode from a system call when its IRQL is still above PASSIVE_LEVEL.
 ms.assetid: 0da64630-d446-426a-a51f-34117fe9daa7
 keywords: ["Bug Check 0x4A IRQL_GT_ZERO_AT_SYSTEM_SERVICE", "IRQL_GT_ZERO_AT_SYSTEM_SERVICE"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - IRQL_GT_ZERO_AT_SYSTEM_SERVICE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x4A: IRQL\_GT\_ZERO\_AT\_SYSTEM\_SERVICE
@@ -21,7 +18,7 @@ api_type:
 
 The IRQL\_GT\_ZERO\_AT\_SYSTEM\_SERVICE bug check has a value of 0x0000004A. This indicates that a thread is returning to user mode from a system call when its IRQL is still above PASSIVE\_LEVEL.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## IRQL\_GT\_ZERO\_AT\_SYSTEM\_SERVICE Parameters
 
@@ -57,11 +54,11 @@ The IRQL\_GT\_ZERO\_AT\_SYSTEM\_SERVICE bug check has a value of 0x0000004A. Thi
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

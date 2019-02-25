@@ -1,6 +1,5 @@
 ---
 title: Device Installation
-author: windows-driver-content
 description: Device Installation
 ms.assetid: 47bbe4cd-bcbc-42d5-9513-9ea659c123dc
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - states WDK printer
 - verifying printer installations
 - installed driver tests WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Installation
@@ -43,14 +39,14 @@ Initial installation of your port-connected device can occur in many ways, and t
 </tr>
 <tr class="odd">
 <td><p>System in Sleep State (S1-S4)</p></td>
-<td><p>See [Power Management](power-management.md).</p></td>
+<td><p>See <a href="power-management.md" data-raw-source="[Power Management](power-management.md)">Power Management</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-For more information, see [System Power States](https://msdn.microsoft.com/library/windows/hardware/ff564571) in the WDK documentation and [System Power States](http://go.microsoft.com/fwlink/p/?linkid=51899) in the Microsoft Windows SDK documentation.
+For more information, see [System Power States](https://msdn.microsoft.com/library/windows/hardware/ff564571) in the WDK documentation and [System Power States](https://go.microsoft.com/fwlink/p/?linkid=51899) in the Microsoft Windows SDK documentation.
 
 The most common system power state at which initial installation of your device will occur is System Working State S0. Most of your device installation testing should initially be focused here, but it is important to verify installation during other system power states as well.
 
@@ -124,12 +120,10 @@ To test a printer on a hub, complete the following:
 
 6.  Disconnect a printer from one port and connect it to another port, and then verify that it uninstalls successfully from the old port and reinstalls successfully to the new port
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Device%20Installation%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

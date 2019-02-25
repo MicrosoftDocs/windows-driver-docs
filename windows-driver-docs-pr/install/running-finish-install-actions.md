@@ -2,11 +2,8 @@
 title: Running Finish-Install Actions
 description: Running Finish-Install Actions
 ms.assetid: 9a5f8e7c-ba11-4a2a-82dd-32cd91c3cc39
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Running Finish-Install Actions
@@ -27,11 +24,11 @@ Prior to Windows 8, if the initial attempt to complete the finish-install actio
 
 -   While the device remains installed, the next time an administrator logs on.
 
--   If an administrator clicks Scan for hardware changes on the **Action** menu of Device Manager or an installation program calls [**CM\_Reenumerate\_DevNode**](https://msdn.microsoft.com/library/windows/hardware/ff539763) in the context of an administrator.
+-   If an administrator clicks Scan for hardware changes on the **Action** menu of Device Manager or an installation program calls [**CM_Reenumerate_DevNode**](https://msdn.microsoft.com/library/windows/hardware/ff539763) in the context of an administrator.
 
-If the device is flagged to perform a finish-install action, the finish-install process calls [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) to send a [**DIF\_FINISHINSTALL\_ACTION**](https://msdn.microsoft.com/library/windows/hardware/ff543684) request to installers for the device.
+If the device is flagged to perform a finish-install action, the finish-install process calls [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) to send a [**DIF_FINISHINSTALL_ACTION**](https://msdn.microsoft.com/library/windows/hardware/ff543684) request to installers for the device.
 
-If an installer has finish-install actions, the installer performs finish-install actions and returns an appropriate error code for the [**DIF\_FINISHINSTALL\_ACTION**](https://msdn.microsoft.com/library/windows/hardware/ff543684) request. An installer returns one of the error codes in the following table.
+If an installer has finish-install actions, the installer performs finish-install actions and returns an appropriate error code for the [**DIF_FINISHINSTALL_ACTION**](https://msdn.microsoft.com/library/windows/hardware/ff543684) request. An installer returns one of the error codes in the following table.
 
 <table>
 <colgroup>
@@ -65,11 +62,11 @@ If an installer has finish-install actions, the installer performs finish-instal
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

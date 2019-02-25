@@ -1,20 +1,16 @@
 ---
 title: Getting an Adapter Object
-author: windows-driver-content
 description: Getting an Adapter Object
 ms.assetid: 2af4ac28-b3c0-4e46-afb1-9c6897c67f03
 keywords: ["adapter objects WDK kernel , getting", "DEVICE_DESCRIPTION", "DMA_OPERATIONS", "DMA transfers WDK kernel , adapter objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Getting an Adapter Object
 
 
-## <a href="" id="ddk-getting-an-adapter-object-kg"></a>
+
 
 
 At device start-up, a driver that uses system or bus-master DMA calls [**IoGetDmaAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff549220) to get a pointer to an adapter object and to determine the maximum number of map registers available for each transfer operation. When a driver calls **IoGetDmaAdapter**, the I/O manager, in turn, calls the HAL to get the necessary platform-specific information.
@@ -63,12 +59,10 @@ The following sections ([Using System DMA](using-system-dma.md) and [Using Bus-M
 
 In other words, these sections describe the simplest possible technique for drivers' DMA operations, but individual drivers do not necessarily use exactly the same techniques. For any driver of a DMA device, which driver routines should split up large DMA transfer requests depends on the driver model (class/port or monolithic), on the device's features, and on any device-specific DMA constraints that driver must handle.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Getting%20an%20Adapter%20Object%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

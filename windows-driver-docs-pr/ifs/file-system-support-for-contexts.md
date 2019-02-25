@@ -1,15 +1,11 @@
 ---
 title: File System Support for Contexts
-author: windows-driver-content
 description: File System Support for Contexts
 ms.assetid: 661ee3ff-3171-4d1e-a8fe-8d1852c5e990
 keywords:
 - contexts WDK file system minifilter , file system support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File System Support for Contexts
@@ -36,11 +32,10 @@ To support file contexts, a file system must:
 
 -   Call **FsRtlTeardownPerFileContexts** to free all file context structures that filter and minifilter drivers have associated with a file when the file system deletes its file context structure for the file.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

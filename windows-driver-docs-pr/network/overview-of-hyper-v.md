@@ -2,11 +2,8 @@
 title: Overview of Hyper-V
 description: Overview of Hyper-V
 ms.assetid: 2D77B1EB-6320-4609-B8EE-236EA75BEADE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Hyper-V
@@ -26,7 +23,7 @@ For network access to child partitions, a Network VSC (NetVSC) runs in a guest o
 
 **Note**  Hyper-V also supports another less-efficient virtualized network adapter that is known as an *emulated network adapter*. An emulated network adapter mimics an Intel network adapter and uses hardware emulation to forward packets to and from the NetVSP.
 
- 
+ 
 
 The following figure shows the networking data paths in Hyper-V over synthetic network adapters.
 
@@ -34,11 +31,11 @@ The following figure shows the networking data paths in Hyper-V over synthetic n
 
 These data paths are extended by using NDIS virtualized networking interfaces, such as the virtual machine queue (VMQ), single root I/O virtualization (SR-IOV), or Hyper-V extensible switch interfaces. For example, the NetVSC could be configured to connect to a Virtual Function (VF) of a physical network adapter that supports the SR-IOV interface. In this case, the NetVSC sends and receives packets directly over the underlying physical adapter and not over the VMBus.
 
-For more information about Hyper-V, see [Hyper-V](http://go.microsoft.com/fwlink/p/?linkid=217079).
+For more information about Hyper-V, see [Hyper-V](https://go.microsoft.com/fwlink/p/?linkid=217079).
 
- 
+ 
 
- 
+ 
 
 
 

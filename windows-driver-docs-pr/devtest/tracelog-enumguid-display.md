@@ -8,15 +8,11 @@ keywords:
 - tracing WDK , providers
 - -enumguid command
 - enumguid command
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Tracelog Enumguid Display
-
 
 When you submit a **tracelog -enumguid** command, Tracelog displays a list of the trace providers that are running and have [registered](registered-provider.md) with Event Tracing for Windows (ETW). The display is very useful, but it is often misinterpreted.
 
@@ -60,7 +56,7 @@ The table in the Tracelog enumguid display includes the following columns.
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Guid</strong></p></td>
-<td align="left"><p>The [control GUID](control-guid.md) of the trace provider</p></td>
+<td align="left"><p>The <a href="control-guid.md" data-raw-source="[control GUID](control-guid.md)">control GUID</a> of the trace provider</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Enabled</strong></p></td>
@@ -82,14 +78,13 @@ The table in the Tracelog enumguid display includes the following columns.
 </table>
 
  
-
 If a provider is registered but not enabled, then it appears in the enumguid display but its entry in the **Enabled** column is **FALSE**.
 
 If a provider is enabled but is not currently running and is, therefore, not registered, then it does not appear in the enumguid display.
 
 ### <span id="sample_enumguid_display"></span><span id="SAMPLE_ENUMGUID_DISPLAY"></span>Sample Enumguid Display
 
-The following enumguid display was copied from a computer running Windows Server 2003. The display lists the providers that are registered and running. One provider, the Tracedrv sample driver, is enabled for tracing. [TraceDrv](http://go.microsoft.com/fwlink/p/?LinkId=617726), a sample driver that was designed for software tracing, is available in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+The following enumguid display was copied from a computer running Windows Server 2003. The display lists the providers that are registered and running. One provider, the Tracedrv sample driver, is enabled for tracing. [TraceDrv](https://go.microsoft.com/fwlink/p/?LinkId=617726), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
 ```
 c:\Tracelog>tracelog -enumguid
@@ -126,13 +121,3 @@ d58c126e-b309-11d1-969e-0000f875a5bc     FALSE  0    0    0
 688a5248-f348-4576-86cf-3521c7094614     FALSE  0    0    0
 27246e9d-b4df-4f20-b969-736fa49ff6ff    FALSE  0    0    0
 ```
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Tracelog%20Enumguid%20Display%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

@@ -2,12 +2,14 @@
 title: Debugging OCA minidump files
 description: Online Crash Analysis (OCA) is the reporting facility for Windows Error Reporting (WER) information. Your company can use OCA crash dumps to analyze customer problems.
 ms.assetid: 56F4202D-6A5F-4177-BBFD-70DA717FF24A
+ms.date: 11/28/2017
+ms.localizationpriority: medium
 ---
 
 # Debugging OCA minidump files
 
 
-Online Crash Analysis (OCA) is the reporting facility for [Windows Error Reporting (WER)](http://msdn.microsoft.com/en-US/library/windows/hardware/gg487440) information. Your company can use OCA crash dumps to analyze customer problems.
+Online Crash Analysis (OCA) is the reporting facility for [Windows Error Reporting (WER)](https://msdn.microsoft.com/library/windows/hardware/gg487440) information. Your company can use OCA crash dumps to analyze customer problems.
 
 ## <span id="Analyze_dump_files"></span><span id="analyze_dump_files"></span><span id="ANALYZE_DUMP_FILES"></span>Analyze dump files
 
@@ -35,7 +37,7 @@ Symbol files can include any or all of the following:
 -   The names, data types, addresses, and scopes of local variables.
 -   The line number in the source code that corresponds to each binary instruction.
 
-The [Windows Driver Kit (WDK)](http://msdn.microsoft.com/en-US/library/windows/hardware/gg487463) includes tools that can be used to reduce the number of symbols in a symbol file. The symbol files that contain all of the source-level information are called full symbol files. The symbol files with reduced information are called stripped symbol files.
+The [Windows Driver Kit (WDK)](https://msdn.microsoft.com/library/windows/hardware/gg487463) includes tools that can be used to reduce the number of symbols in a symbol file. The symbol files that contain all of the source-level information are called full symbol files. The symbol files with reduced information are called stripped symbol files.
 
 Because symbol data is crucial for getting meaningful crash information from Windows Error Report (WER) data, we encourage you to submit your symbols when you submit drivers to be signed. When symbols are submitted, they are stored on a server that synchronizes symbol data with the associated WER processes. With this storage process, you can easily categorize the crashes reported in the minidump files and ultimately receive better data back from Microsoft.
 
@@ -44,32 +46,29 @@ Microsoft provides a symbol server on the Internet that you can use to analyze t
 ## <span id="Integrate_WER_into_applications"></span><span id="integrate_wer_into_applications"></span><span id="INTEGRATE_WER_INTO_APPLICATIONS"></span>Integrate WER into applications
 
 
-Information on integrating WER into applications can be found on MSDN at [Using WER](http://msdn.microsoft.com/library/bb513616.aspx).
+For more information on integrating WER into applications, see [Using WER](https://msdn.microsoft.com/library/bb513616.aspx).
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Advanced Driver Debugging \[336 KB\] \[PPT\]](http://download.microsoft.com/download/f/0/5/f05a42ce-575b-4c60-82d6-208d3754b2d6/adv-drv_debug.ppt)
+[Advanced Driver Debugging \[336 KB\] \[PPT\]](https://download.microsoft.com/download/f/0/5/f05a42ce-575b-4c60-82d6-208d3754b2d6/adv-drv_debug.ppt)
 
 [WDK and WinDbg downloads](https://go.microsoft.com/fwlink/p/?LinkId=733614)
 
-[Driver Debugging Basics \[WinHEC 2007; 633 KB\] \[PPT\]](http://download.microsoft.com/download/a/f/d/afdfd50d-6eb9-425e-84e1-b4085a80e34e/dvr-t410_wh07.pptx)
+[Driver Debugging Basics \[WinHEC 2007; 633 KB\] \[PPT\]](https://download.microsoft.com/download/a/f/d/afdfd50d-6eb9-425e-84e1-b4085a80e34e/dvr-t410_wh07.pptx)
 
-[How to read the small memory dump file that is created by Windows if a crash occurs](http://support.microsoft.com/kb/315263)
+[How to read the small memory dump file that is created by Windows if a crash occurs](https://support.microsoft.com/kb/315263)
 
-[Resource-Definition Statements](http://msdn.microsoft.com/library/aa381043.aspx)
+[Resource-Definition Statements](https://msdn.microsoft.com/library/aa381043.aspx)
 
-[Windows Error Reporting](http://msdn.microsoft.com/library/bb513641(vs.85).aspx)
+[Windows Error Reporting](https://msdn.microsoft.com/library/bb513641(vs.85).aspx)
 
-[MSDN Webcast: Windows Error Reporting (Level 200)](https://msevents.microsoft.com/CUI/EventDetail.aspx?EventId=1032314332)
+[VERSIONINFO resource](https://msdn.microsoft.com/library/aa381058.aspx)
 
-[VERSIONINFO resource](http://msdn.microsoft.com/library/aa381058.aspx)
+ 
 
- 
+ 
 
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20OCA%20minidump%20files%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

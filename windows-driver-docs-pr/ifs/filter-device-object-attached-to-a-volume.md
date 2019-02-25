@@ -1,6 +1,5 @@
 ---
 title: Filter Device Object Attached to a Volume
-author: windows-driver-content
 description: Filter Device Object Attached to a Volume
 ms.assetid: cf152065-fc03-4f5f-b65b-13a76e83d745
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - file system filter drivers WDK , device object I/O requests
 - volumes WDK file system , device object I/O requests
 - device object I/O requests WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Device Object Attached to a Volume
@@ -133,13 +129,12 @@ File system filter device objects, attached to volumes, are required to pass all
 
 For more information, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff547172).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

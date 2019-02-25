@@ -9,11 +9,8 @@ keywords:
 - power states WDK battery
 - failed batteries WDK
 - battery failures WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Responding to Battery Status Queries
@@ -24,7 +21,7 @@ ms.technology: windows-devices
 
 The battery class driver calls the miniclass driver's [*BatteryMiniQueryStatus*](https://msdn.microsoft.com/library/windows/hardware/ff536274) routine to get the power state, capacity, voltage, and discharge rate of a battery. The following is the prototype for this routine:
 
-```
+```cpp
 typedef
 NTSTATUS
 (*BCLASS_QUERY_STATUS)(
@@ -52,11 +49,10 @@ When the miniclass driver reports a critically low, discharging battery, the pow
 
 The class driver's [**BatteryClassStatusNotify**](https://msdn.microsoft.com/library/windows/hardware/ff536269) routine and the miniclass driver's [*BatteryMiniQueryStatus*](https://msdn.microsoft.com/library/windows/hardware/ff536274), [*BatteryMiniSetStatusNotify*](https://msdn.microsoft.com/library/windows/hardware/ff536277), and [*BatteryMiniDisableStatusNotify*](https://msdn.microsoft.com/library/windows/hardware/ff536272) routines are used in sequence by the two drivers to provide timely status information. For details, see [Interaction of Battery Status and Notification Routines](interaction-of-battery-status-and-notification-routines.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

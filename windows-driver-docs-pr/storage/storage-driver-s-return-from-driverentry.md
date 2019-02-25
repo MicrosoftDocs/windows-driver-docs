@@ -1,16 +1,12 @@
 ---
 title: Storage Driver's Return from DriverEntry
-author: windows-driver-content
 description: Storage Driver's Return from DriverEntry
 ms.assetid: a5772e9c-ec7b-4570-aaae-d2879f7e0bc7
 keywords:
 - return values WDK SCSI
 - ScsiPortInitialize
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Driver's Return from DriverEntry
@@ -23,11 +19,10 @@ When [**ScsiPortInitialize**](https://msdn.microsoft.com/library/windows/hardwar
 
 If a miniport driver calls **ScsiPortInitialize** more than once, its **DriverEntry** routine *must propagate thelowest value* returned by **ScsiPortInitialize**. A miniport driver writer cannot make any assumptions about the values returned by **ScsiPortInitialize**.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

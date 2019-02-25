@@ -6,17 +6,14 @@ keywords:
 - CoNDIS WAN drivers WDK networking , receiving data
 - receiving data WDK networking
 - indications WDK CoNDIS WAN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Indicating Received Data from a CoNDIS WAN Miniport Driver
 
 
-## <a href="" id="ddk-indicating-received-data-from-a-condis-wan-miniport-driver-ng"></a>
+
 
 
 The following operations occur when a CoNDIS WAN miniport driver receives a network data packet:
@@ -29,9 +26,9 @@ The following operations occur when a CoNDIS WAN miniport driver receives a netw
 
 4.  To forward the packet, NDIS calls the [**ProtocolReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff570267) function of bound overlying protocol drivers.
 
- 
+ 
 
- 
+ 
 
 
 

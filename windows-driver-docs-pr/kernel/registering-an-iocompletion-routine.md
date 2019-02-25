@@ -1,20 +1,16 @@
 ---
 title: Registering an IoCompletion Routine
-author: windows-driver-content
 description: Registering an IoCompletion Routine
 ms.assetid: 413d8463-b2ce-44b6-846c-f853b5cd580e
 keywords: ["IoCompletion routines", "registering IoCompletion routines"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering an IoCompletion Routine
 
 
-## <a href="" id="ddk-registering-an-iocompletion-routine-kg"></a>
+
 
 
 To register an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine, a dispatch routine calls [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679), supplying the *IoCompletion* routine's address and the IRP that it will subsequently pass on to lower drivers using [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336).
@@ -33,7 +29,7 @@ The purpose of an *IoCompletion* routine is to monitor what lower-level drivers 
 
     Highest-level drivers, such as file systems, are more likely to have *IoCompletion* routines that attempt to retry requests than are intermediate drivers, except possibly class drivers layered above a closely coupled port driver. However, any intermediate driver use *IoCompletion* routines to retry requests.
 
-While a highest-level or intermediate driver's [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine is most likely to process IRPs that require an *IoCompletion* routine, any dispatch routine in any driver that passes IRPs on to lower drivers can register an *IoCompletion* routine.
+While a highest-level or intermediate driver's [*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine is most likely to process IRPs that require an *IoCompletion* routine, any dispatch routine in any driver that passes IRPs on to lower drivers can register an *IoCompletion* routine.
 
 For driver-allocated IRPs and reused IRPs, the dispatch routine must call **IoSetCompletionRoutine** with the following Boolean parameters:
 
@@ -55,7 +51,7 @@ A dispatch routine that reuses IRPs for a sequence of operations, or that retrie
 
 -   The dispatch routine must save the original IRP's state information, for subsequent use by the *IoCompletion* routine.
 
-    For example, a [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine must save the relevant transfer parameters of an input IRP for the *IoCompletion* routine before setting up a partial transfer for the next-lower driver in that IRP. Saving the parameters is particularly important if the *DispatchReadWrite* routine modifies any parameters that the *IoCompletion* routine needs to determine when the original request has been satisfied.
+    For example, a [*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine must save the relevant transfer parameters of an input IRP for the *IoCompletion* routine before setting up a partial transfer for the next-lower driver in that IRP. Saving the parameters is particularly important if the *DispatchReadWrite* routine modifies any parameters that the *IoCompletion* routine needs to determine when the original request has been satisfied.
 
 -   If the *IoCompletion* routine can retry the request, the dispatch routine must set up a driver-determined upper limit for the number of retries its *IoCompletion* routine should attempt before it completes the original IRP with an error.
 
@@ -63,12 +59,10 @@ A dispatch routine that reuses IRPs for a sequence of operations, or that retrie
 
 -   For an asynchronous request, the dispatch routine of any intermediate driver must call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) for the original IRP. It must then return STATUS\_PENDING after it has sent the IRP on to lower drivers.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Registering%20an%20IoCompletion%20Routine%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

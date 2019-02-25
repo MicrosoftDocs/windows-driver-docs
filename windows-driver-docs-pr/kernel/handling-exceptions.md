@@ -1,23 +1,19 @@
 ---
 title: Handling Exceptions
-author: windows-driver-content
 description: Handling Exceptions
 ms.assetid: 20040d86-5088-48ec-a5b9-54760d143871
 keywords: ["structured exception handling WDK kernel", "exceptions WDK kernel", "access violations WDK kernel", "hardware-defined exceptions WDK kernel", "software-defined exceptions WDK kernel", "errors WDK kernel", "guard-page violations WDK kernel", "page-read errors WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Exceptions
 
 
-## <a href="" id="ddk-handling-exceptions-kg"></a>
 
 
-The operating system uses [structured exception handling](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-structured-exception-handling) to signal certain kinds of errors. A routine called by a driver can raise an exception that the driver must handle.
+
+The operating system uses structured exception handling to signal certain kinds of errors. A routine called by a driver can raise an exception that the driver must handle.
 
 The system traps the following general kinds of exceptions:
 
@@ -46,7 +42,7 @@ An *access violation* is an attempt to perform an operation on a page that is no
 
 If an operation might cause an exception, the driver should enclose the operation in a **try/except** block. Accesses of locations in user-mode are typical causes of exceptions. For example, the [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) routine checks that the driver can actually write to a user-mode buffer. If it cannot, the routine raises a STATUS\_ACCESS\_VIOLATION exception. In the following code example, the driver calls **ProbeForWrite** in a **try/except** so that it can handle the resulting exception, if one should occur.
 
-```
+```cpp
 try {
     ...
     ProbeForWrite(Buffer, BufferSize, BufferAlignment);
@@ -81,12 +77,10 @@ Note that structured exception handling is distinct from C++ exceptions. The ker
 
 For more information about structured exception handling, see the Microsoft Windows SDK, and the Visual Studio documentation.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Handling%20Exceptions%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

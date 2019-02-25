@@ -6,11 +6,8 @@ keywords:
 - Power Metering and Budgeting WDK , ACPI IPMI operation region
 - ACPI IPMI operation region WDK Power Meter
 - IPMI WDK Power Meter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ACPI IPMI Operation Region
@@ -22,13 +19,12 @@ Starting with Windows 7 and Windows Server 2008 R2, the operating system provide
 
 The operating system provides an IPMI driver that supports the ACPI IPMI Operation Region. The driver services IPMI requests, which must be made by using the Keyboard Controller Style (KCS) protocol.
 
-For more information, refer to the [IPMI version 2.0 Specification](http://go.microsoft.com/fwlink/p/?linkid=69485).
+For more information, refer to the [IPMI version 2.0 Specification](https://go.microsoft.com/fwlink/p/?linkid=69485).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

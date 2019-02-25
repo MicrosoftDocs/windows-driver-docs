@@ -2,11 +2,8 @@
 title: DeviceInfo XML Document
 description: DeviceInfo XML Document
 ms.assetid: b6b859cf-de30-4df0-bec1-0cd7d8c55ea6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DeviceInfo XML Document
@@ -34,9 +31,9 @@ Each device metadata package must contain only one DeviceInfo XML document. The 
 
 The data in the DeviceInfo XML document is formatted based on the [DeviceInfo XML schema](https://msdn.microsoft.com/library/windows/hardware/ff541135).
 
- 
+ 
 
- 
+ 
 
 
 

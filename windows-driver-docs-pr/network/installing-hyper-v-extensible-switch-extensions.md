@@ -2,11 +2,8 @@
 title: Installing Hyper-V Extensible Switch Extensions
 description: Installing Hyper-V Extensible Switch Extensions
 ms.assetid: 6A240A73-C487-4001-8F60-7C7C2C7031F6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Hyper-V Extensible Switch Extensions
@@ -20,9 +17,9 @@ This section describes the installation of Hyper-V extensible switch extensions 
 
 [Managing Installed Hyper-V Extensible Switch Extensions](managing-installed-hyper-v-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

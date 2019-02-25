@@ -1,15 +1,11 @@
 ---
-title: IRP\_MN\_QUERY\_DEVICE\_RELATIONS
-author: windows-driver-content
+title: IRP_MN_QUERY_DEVICE_RELATIONS
 description: The PnP manager sends this request to determine certain relationships among devices.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 32437c5a-ad92-433c-8255-83775751a44d
 keywords:
  - IRP_MN_QUERY_DEVICE_RELATIONS Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_DEVICE\_RELATIONS
@@ -65,7 +61,7 @@ A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to a failure sta
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to a PDEVICE\_RELATIONS pointer that points to the requested relations information. The **DEVICE\_RELATIONS** structure is defined as follows:
 
-```
+```cpp
 typedef struct _DEVICE_RELATIONS {
   ULONG  Count;
   PDEVICE_OBJECT  Objects[1];  // variable length
@@ -89,9 +85,9 @@ The following subsections describe the specific actions for handling the various
 
 When the PnP manager queries for the bus relations (child devices) of an adapter or controller, the bus driver must return a list of pointers to the PDOs of any devices physically present on the bus. The bus driver reports all devices, regardless of whether they have been started. The bus driver might need to power up its bus device to determine which children are present.
 
-**Warning**   A device object cannot be passed to any routine that takes a PDO as an argument until the PnP manager creates a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) for that object. (If the driver does pass a device object, the system will bug check with [**Bug Check 0xCA: PNP\_DETECTED\_FATAL\_ERROR**](https://msdn.microsoft.com/library/windows/hardware/ff560209).) The PnP manager creates the devnode in response to the **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** request. The driver can safely assume that the PDO's devnode has been created when it receives an [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](irp-mn-query-resource-requirements.md) request.
+**Warning**   A device object cannot be passed to any routine that takes a PDO as an argument until the PnP manager creates a device node (*devnode*) for that object. (If the driver does pass a device object, the system will bug check with [**Bug Check 0xCA: PNP\_DETECTED\_FATAL\_ERROR**](https://msdn.microsoft.com/library/windows/hardware/ff560209).) The PnP manager creates the devnode in response to the **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** request. The driver can safely assume that the PDO's devnode has been created when it receives an [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](irp-mn-query-resource-requirements.md) request.
 
- 
+ 
 
 The bus driver that responds to this IRP is the function driver for the bus adapter or controller, not the parent bus driver for the bus that the adapter or controller is connected to. Function drivers for non-bus devices do not handle this query. Such drivers just pass the IRP to the next lower driver. (See the following figure.) Filter drivers typically do not handle this query.
 
@@ -252,12 +248,10 @@ Requirements
 
 [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20IRP_MN_QUERY_DEVICE_RELATIONS%20%20RELEASE:%20%288/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

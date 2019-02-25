@@ -2,11 +2,8 @@
 title: How Device Property Pages are Displayed
 description: How Device Property Pages are Displayed
 ms.assetid: 14967f38-2f46-475d-a062-afcb7bd3042b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How Device Property Pages are Displayed
@@ -24,9 +21,9 @@ A device property page is displayed in the following ways:
 
     -   On the **Properties** window, click the **Hardware** tab, and then click **Properties**.
 
- 
+ 
 
- 
+ 
 
 
 

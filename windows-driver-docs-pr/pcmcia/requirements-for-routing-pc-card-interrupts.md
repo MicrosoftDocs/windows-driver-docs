@@ -9,17 +9,14 @@ keywords:
 - interrupts WDK PCMCIA bus
 - PCI interrupts WDK PCMCIA bus
 - ISA interrupts WDK PCMCIA bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Requirements for Routing PC Card Interrupts
 
 
-## <a href="" id="ddk-requirements-for-routing-pc-card-interrupts-kg"></a>
+
 
 
 In order to use PCI interrupts instead of ISA interrupts, 16-bit PC Cards must meet the following two basic requirements.
@@ -33,9 +30,9 @@ In order to use PCI interrupts instead of ISA interrupts, 16-bit PC Cards must m
 
 A PC Card that does not fulfill these requirements can cause an interrupt storm that provokes a system crash.
 
- 
+ 
 
- 
+ 
 
 
 

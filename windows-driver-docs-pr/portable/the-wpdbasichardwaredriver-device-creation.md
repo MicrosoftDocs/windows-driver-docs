@@ -1,11 +1,8 @@
 ---
 Description: Creating the Sensor Devices
 title: Creating the Sensor Devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating the Sensor Devices
@@ -21,7 +18,7 @@ In this diagram, Pin 15 on the BS2 receives the sensor data. The firmware for ea
 
 The code found in the PollSensor function varies from sensor to sensor. In the case of the Ultrasonic distance sensor, the PollSensor function issues a pulse with the ultrasonic transducer, listens for a response, and then measures the time that it takes for the response to occur.
 
-```
+```cpp
 PollSensor:
   PULSOUT 15, 5
   PULSIN 15, 1, time
@@ -31,7 +28,7 @@ RETURN
 
 The RetrieveInterval function is identical for every sensor. This function retrieves a new interval packet from the WPD driver (if one was sent), and then updates the interval property accordingly in the firmware. If no interval was received from the driver, the RetrieveInterval function invokes a default Timeout function. This function transmits the sensor data back to the WPD driver.
 
-```
+```cpp
 RetrieveInterval:
     SERIN 16, 16780, Interval, Timeout, [DEC NewInterval]   &#39;Retrieve interval
     IF NewInterval >= 10 AND NewInterval <= 60000 THEN
@@ -42,7 +39,7 @@ RETURN
 
 The Timeout function has the following format:
 
-```
+```cpp
 Timeout:
   SEROUT 16, 16780, [DEC1 SensorID, DEC1 ElementSize, DEC1 ElementCount, DEC5 cmDistance, DEC5 Interval]
 GOTO Main
@@ -50,7 +47,7 @@ GOTO Main
 
 Be aware that the Timeout function returns to the Main routine, which invokes PollSensor.
 
-```
+```cpp
 Main:
   GOSUB PollSensor                   &#39;Determine distance
   GOSUB RetrieveInterval             &#39;Retrieve interval data
@@ -58,7 +55,7 @@ Main:
 
 The following is the complete source code for the ultrasonic distance sensor:
 
-```
+```cpp
 &#39; Smart Sensors and Applications - PingMeasureCmAndIn.bs2
 &#39; Measure distance with Ping))) sensor and display in both in & cm
 &#39; {$STAMP BS2}
@@ -115,11 +112,10 @@ RETURN
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wpd_dk\wpddk]:%20Creating%20the%20Sensor%20Devices%20%20RELEASE:%20%281/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

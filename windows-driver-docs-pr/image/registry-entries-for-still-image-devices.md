@@ -1,19 +1,15 @@
 ---
 title: Registry Entries for Still Image Devices
-author: windows-driver-content
 description: Registry Entries for Still Image Devices
 ms.assetid: cedc8afc-54c4-485e-989c-481fe30d899b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registry Entries for Still Image Devices
 
 
-## <a href="" id="ddk-registry-entries-for-still-image-devices-si"></a>
+
 
 
 Microsoft STI makes use of several registry entries, some of which can be modified by vendor-supplied components.
@@ -44,7 +40,7 @@ The following table lists the predefined registry value names and their meanings
 <tr class="even">
 <td><p>STI_DEVICE_VALUE_ISIS_NAME</p></td>
 <td><p>&quot;ISISDriverName&quot;</p></td>
-<td><p>REG_SZ type containing the device's ISIS driver name, such as &quot;epson.pxn&quot;.</p></td>
+<td><p>REG_SZ type containing the device&#39;s ISIS driver name, such as &quot;epson.pxn&quot;.</p></td>
 </tr>
 <tr class="odd">
 <td><p>STI_DEVICE_VALUE_TIMEOUT</p></td>
@@ -54,12 +50,12 @@ The following table lists the predefined registry value names and their meanings
 <tr class="even">
 <td><p>STI_DEVICE_VALUE_TWAIN_NAME</p></td>
 <td><p>&quot;TwainDS&quot;</p></td>
-<td><p>REG_SZ type containing the displayable name of the device's TWAIN data source, such as &quot;HP PictureScan 3.0&quot;.</p></td>
+<td><p>REG_SZ type containing the displayable name of the device&#39;s TWAIN data source, such as &quot;HP PictureScan 3.0&quot;.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Clients of the **StillImage** COM interface should call [**IStillImage::SetDeviceValue**](https://msdn.microsoft.com/library/windows/hardware/ff543801) and [**IStillImage::GetDeviceValue**](https://msdn.microsoft.com/library/windows/hardware/ff543786) to reference the registry. Still image minidrivers can call the Win32 registry API, specifying the registry key received by the minidriver's [**IStiUSD::Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff543824) method. Values for predefined registry entries can also be set from within [the INF file](inf-files-for-still-image-devices.md).
 
@@ -91,7 +87,7 @@ The following table lists registry entries that should not be modified by vendor
 <p>0x1 - informational messages</p>
 <p>0x2 - warning messages</p>
 <p>0x4 - error messages</p>
-<p>See [<strong>IStillImage::WriteToErrorLog</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543807).</p></td>
+<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff543807" data-raw-source="[&lt;strong&gt;IStillImage::WriteToErrorLog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543807)"><strong>IStillImage::WriteToErrorLog</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>HKLM\SYSTEM\CurrentControlSet\Control\StillImage\Logging\STIMON</strong></p></td>
@@ -101,7 +97,7 @@ The following table lists registry entries that should not be modified by vendor
 <p>0x4 - error messages</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>HKLM\SYSTEM\CurrentControlSet\Control\Class\{6BDD1FC6-810F-11D0-BEC7-08002BE2092F}</strong></p></td>
+<td><p><strong>HKLM\SYSTEM\CurrentControlSet\Control\Class{6BDD1FC6-810F-11D0-BEC7-08002BE2092F}</strong></p></td>
 <td><p>Contains information about installed still image devices.</p></td>
 </tr>
 <tr class="even">
@@ -109,20 +105,18 @@ The following table lists registry entries that should not be modified by vendor
 <td><p>Contains a list of registered imaging applications.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>HKLM\SYSTEM\CurrentControlSet\Control\DeviceClass\{6bdd1fc6-810f-11d0-bec7-08002be2092f}</strong></p></td>
+<td><p><strong>HKLM\SYSTEM\CurrentControlSet\Control\DeviceClass{6bdd1fc6-810f-11d0-bec7-08002be2092f}</strong></p></td>
 <td><p>Contains information about installed still image device interfaces.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Registry%20Entries%20for%20Still%20Image%20Devices%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

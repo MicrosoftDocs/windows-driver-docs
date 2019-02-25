@@ -2,11 +2,8 @@
 title: System-Provided Device Installation Components
 description: System-Provided Device Installation Components
 ms.assetid: faf586b9-ab99-4fee-a0d1-923000000189
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # System-Provided Device Installation Components
@@ -28,7 +25,7 @@ The Setup application programming interface (*SetupAPI*) includes the general se
 For more information, see [SetupAPI](setupapi.md).
 
 <a href="" id="configuration-manager-api"></a>Configuration Manager API  
-The PnP configuration manager API provides basic installation and configuration operations that are not provided by SetupAPI. The PnP configuration manager functions perform low-level tasks such as obtaining the status of a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) and managing resource descriptors. These functions are primarily called by SetupAPI but can also be called by other device installation components.
+The PnP configuration manager API provides basic installation and configuration operations that are not provided by SetupAPI. The PnP configuration manager functions perform low-level tasks such as obtaining the status of a device node (*devnode*) and managing resource descriptors. These functions are primarily called by SetupAPI but can also be called by other device installation components.
 
 <a href="" id="driver-store"></a>Driver Store  
 Starting with Windows Vista, the driver store is a trusted collection of in-box and third-party [driver packages](driver-packages.md). The operating system maintains this collection in a secure location on the local hard disk. Only the driver packages in the driver store can be installed for a device.
@@ -40,9 +37,9 @@ With Device Manager, you can view and manage the devices on a system. For exampl
 
 For more information, see [Using Device Manager](using-device-manager.md). Also, see the Help documentation in Device Manager.
 
- 
+ 
 
- 
+ 
 
 
 

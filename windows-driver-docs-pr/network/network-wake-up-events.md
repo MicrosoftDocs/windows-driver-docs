@@ -11,17 +11,14 @@ keywords:
 - network wake-up events WDK networking
 - power management WDK NDIS miniport , wake-up capabilities
 - wake-up frames WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Wake-Up Events
 
 
-## <a href="" id="ddk-network-wake-up-events-ng"></a>
+
 
 
 A *network wake-up event* is an external event that causes a network adapter to wake the system. A network adapter wakes the system by asserting a bus-specific wake-up signal that eventually results in the system making a transition from a sleeping state to the working state.
@@ -42,7 +39,7 @@ If, during initialization, a miniport driver indicates that a network adapter ca
 
 A protocol driver uses [OID\_PNP\_ADD\_WAKE\_UP\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569773) to specify a wake-up pattern, along with a mask that indicates which bytes of an incoming packet should be compared with the pattern. A protocol driver can remove a wake-up pattern with [OID\_PNP\_REMOVE\_WAKE\_UP\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569779).
 
-For more information about network wake-up frames, see [Power Management for Network Devices](http://go.microsoft.com/fwlink/p/?linkid=9945).
+For more information about network wake-up frames, see [Power Management for Network Devices](https://go.microsoft.com/fwlink/p/?linkid=9945).
 
 ### Magic-Packet Wake-Up
 
@@ -54,9 +51,9 @@ This section includes:
 
 [Handling Wake-Up Events](handling-wake-up-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

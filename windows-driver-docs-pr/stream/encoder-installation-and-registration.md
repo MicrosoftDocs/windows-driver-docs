@@ -1,6 +1,5 @@
 ---
 title: Encoder Installation and Registration
-author: windows-driver-content
 description: Encoder Installation and Registration
 ms.assetid: 6ce0c504-977a-4db5-b5ee-128b69ce8eba
 keywords:
@@ -15,11 +14,8 @@ keywords:
 - metadata WDK encoder
 - KS proxy WDK AVStream
 - Kernel Streaming Proxy WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Encoder Installation and Registration
@@ -39,10 +35,10 @@ The INF file for a driver with an encoder filter must contain entries that defin
 
 The INF file used to install the driver for an encoder device must reference *ks.inf* and *kscaptur.inf* in its \[DefaultInstall\] section as capture drivers because these files add necessary support for encoder components. For example:
 
-```
+```INF
 [DefaultInstall]
 include=ks.inf,kscaptur.inf
-needs=[Your driver&#39;s DDInstall section],KS.Registration,KSCAPTUR.Registration.NT
+needs=[Your driver's DDInstall section],KS.Registration,KSCAPTUR.Registration.NT
 ```
 
 ### **Which COM Interface KsProxy Should Expose**
@@ -81,12 +77,12 @@ In the **AddReg** section of your driver's INF file, specify one of the followin
 </tbody>
 </table>
 
- 
+ 
 
 For example:
 
-```
-[Your driver&#39;s AddReg section]
+```INF
+[Your driver's AddReg section]
 HKR,Interfaces\{B43C4EEC-8C32-4791-9102-508ADA5EE8E7},,,
 ```
 
@@ -100,8 +96,8 @@ You can specify metadata values in the *Device Parameters\\Capabilities* area of
 
 For example:
 
-```
-[Your driver&#39;s AddReg section]
+```INF
+[Your driver's AddReg section]
 HKR,Capabilities,,,
 HKR,Capabilities,"{12345678-1234-1234-1234-12345678abcd}",,guid1
 ```
@@ -143,12 +139,12 @@ Filters indicate their respective categories by specifying one or more of the fo
 </tbody>
 </table>
 
- 
+ 
 
 To register an encoder filter, specify the KSCATEGORY\_ENCODER GUID in your driver's *DDInstall*.**Interface** INF file section. For example:
 
-```
-[Your Driver&#39;s DDInstall.Interface section]
+```INF
+[Your Driver's DDInstall.Interface section]
 AddInterface=%KSCATEGORY_ENCODER%,%KSNAME_Filter%,MyEncoderDevice.AddInterface
 
 [MyEncoderDevice.AddInterface]
@@ -167,12 +163,10 @@ MyEncoderDeviceFriendlyName="My Encoder Device"
 
 **Note:** The GUID specified for *KSNAME\_Filter* must match the **ReferenceGuid** member you specified in the [**KSFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562553) structure that describes your filter.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Encoder%20Installation%20and%20Registration%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

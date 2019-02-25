@@ -1,13 +1,9 @@
 ---
 title: Collecting and decoding WPP logs
-author: windows-driver-content
 description: This topic provides information about collecting and decoding Windows software trace preprocessor (WPP) logs for the sensor class extension (CX) trace provider.
 ms.assetid: 174CDE37-D0D1-44BF-AD50-5A90C989FDE2
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
+ms.localizationpriority: medium
 ---
 
 # Collecting and decoding WPP logs
@@ -21,12 +17,12 @@ WPP provides ways to trace the operation of software components known as trace p
 
 -   SensorsUtilsV2.pdb
 
-The tracelog tool is used to collect WPP logs. For more information, see [Tracelog](http://msdn.microsoft.com/library/windows/hardware/ff552994.aspx). For more information about tracing concepts such as tracing GUIDs, trace flags, trace levels, or PDB files, see [Tracing Tool Concepts](http://msdn.microsoft.com/library/windows/hardware/ff553975.aspx).
+The tracelog tool is used to collect WPP logs. For more information, see [Tracelog](https://msdn.microsoft.com/library/windows/hardware/ff552994.aspx). For more information about tracing concepts such as tracing GUIDs, trace flags, trace levels, or PDB files, see [Tracing Tool Concepts](https://msdn.microsoft.com/library/windows/hardware/ff553975.aspx).
 
 ## Tracing GUID
 
 
-The following GUID identifies the trace provider for the CX driver in the sensor V2 stack. For more information about using this GUID with tracelog, see [Tracelog](http://msdn.microsoft.com/library/windows/hardware/ff552994.aspx).
+The following GUID identifies the trace provider for the CX driver in the sensor V2 stack. For more information about using this GUID with tracelog, see [Tracelog](https://msdn.microsoft.com/library/windows/hardware/ff552994.aspx).
 
 ``` syntax
 c88b592b-6090-480f-a839-ca2434de5844
@@ -65,7 +61,7 @@ TRACE_LEVEL_PERF            6
 ## Tracelog macros
 
 
-The following are WPP macros with their associated trace levels and trace flags. The MSG parameter is a standard format string that is defined for the printf function. Partners can also use the WPP extended format string. For more information about this see the [WPP extended format strings](http://go.microsoft.com/fwlink/p/?linkid=324276) topic on MSD. The newline character is also included in the MSG so “\\n” is not necessary.
+The following are WPP macros with their associated trace levels and trace flags. The MSG parameter is a standard format string that is defined for the printf function. Partners can also use the WPP extended format string. For more information about this see the [WPP extended format strings](https://go.microsoft.com/fwlink/p/?linkid=324276) topic on MSD. The newline character is also included in the MSG so “\\n” is not necessary.
 
 <table>
 <colgroup>
@@ -158,21 +154,19 @@ The following are WPP macros with their associated trace levels and trace flags.
 </tbody>
 </table>
 
- 
+ 
 
 ## Decoding ETL logs
 
 
-The tracefmt tool is used to decode ETL logs. For more information about this tool, see [Tracefmt](http://go.microsoft.com/fwlink/p/?linkid=324212).
+The tracefmt tool is used to decode ETL logs. For more information about this tool, see [Tracefmt](https://go.microsoft.com/fwlink/p/?linkid=324212).
 
-If you want to do more extensive testing of your sensor driver, see [Test your universal sensor driver](test-your-universal-sensor-driver.md).
+If you want to do more extensive testing of your sensor driver, see [Test your universal sensor driver](test-your-universal-sensor-driver.md.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Collecting%20and%20decoding%20WPP%20logs%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

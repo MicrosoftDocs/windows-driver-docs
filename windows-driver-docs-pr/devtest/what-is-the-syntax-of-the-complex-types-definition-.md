@@ -2,11 +2,8 @@
 title: What is the syntax of the complex types definition
 description: What is the syntax of the complex types definition
 ms.assetid: c378839a-3714-4b4e-94a6-d3e1dcf8a610
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # What is the syntax of the complex types definition?
@@ -42,7 +39,7 @@ To format the argument properly, you must use the [**WPP\_LOGPAIR**](https://msd
 
 **Note**  Depending on the tracing logic that you want to implement, you may need to define the macro by using multiple WPP\_LOGPAIR macros.
 
- 
+ 
 
 <span id="Argument_Type"></span><span id="argument_type"></span><span id="ARGUMENT_TYPE"></span>*Argument Type*  
 Indicates the value that arguments of *TypeName* type can accept. For example, **const xwcs\_t&**.
@@ -60,7 +57,7 @@ A string appended to the function name to associate it with the complex type. Th
 This element is reserved and must be set to zero.
 
 <span id="Slots"></span><span id="slots"></span><span id="SLOTS"></span>*Slots*  
-Specifies the maximum number of variable-length parameters that the WPP preprocessor passes to the [TraceMessage](http://go.microsoft.com/fwlink/p/?linkid=179214) function for this complex type. This format element is optional. WPP uses a default value of 1 if this element is not specified.
+Specifies the maximum number of variable-length parameters that the WPP preprocessor passes to the [TraceMessage](https://go.microsoft.com/fwlink/p/?linkid=179214) function for this complex type. This format element is optional. WPP uses a default value of 1 if this element is not specified.
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -119,17 +116,16 @@ where **ItemPWString** is a counted Unicode string type recognized by WPP. The l
 
 When ETW interprets the WPP\_LOGXWCS definition, it puts a 2-byte string into a buffer the first [**WPP\_LOGPAIR**](https://msdn.microsoft.com/library/windows/hardware/ff556197) macro is interpreted. ETW then copies all the bytes of the string into a buffer when ETW interprets the second WPP\_LOGPAIR macro,
 
-Because you specified the length separate from the data, WPP\_LOGXWCS consumes two slots of [TraceMessage](http://go.microsoft.com/fwlink/p/?linkid=179214). Therefore, the number **2** is the eighth argument.
+Because you specified the length separate from the data, WPP\_LOGXWCS consumes two slots of [TraceMessage](https://go.microsoft.com/fwlink/p/?linkid=179214). Therefore, the number **2** is the eighth argument.
 
 When calling the [WPP Preprocessor](wpp-preprocessor.md), use the **Ignore Exclamation Marks** option (**-noshrieks**). This helps WPP to recognize a complex type that has a name that is not enclosed in exclamation marks (!), also known as "shrieks."
 
 For a complete list of the WPP Tracing options and information about how to set them from the project property page, see [WPP Preprocessor](wpp-preprocessor.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20What%20is%20the%20syntax%20of%20the%20complex%20types%20definition?%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

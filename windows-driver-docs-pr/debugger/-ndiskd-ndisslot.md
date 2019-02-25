@@ -3,17 +3,14 @@ title: ndiskd.ndisslot
 description: The **!ndiskd.ndisslot** extension displays the contents of an NDIS per-processor variable.
 ms.assetid: 0EF37FE7-31A1-4A71-9CAC-E2A43F0EEBCF
 keywords: ["ndiskd.ndisslot Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.ndisslot
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.ndisslot
@@ -21,11 +18,11 @@ api_type:
 
 **Note**  Third party network driver developers are not expected to manually use this extension command. You can run it to see the information it displays but you are not able to reuse the details it provides in your driver.
 
- 
+ 
 
 The **!ndiskd.ndisslot** extension displays the contents of an NDIS per-processor variable. If you run this extension with no parameters, !ndiskd will display a list of all NDIS per-processor variables on the system.
 
-```
+```console
 !ndiskd.ndisslot [-handle <x>] [-itemtype <str>] 
 ```
 
@@ -47,7 +44,7 @@ Examples
 
 Run the **!ndiskd.ndisslot** extension with no parameters to see a list of all per-processor slot variables. The following example output has excised the middle portion of the list for brevity.
 
-```
+```console
 1: kd> !ndiskd.ndisslot
     Per-processor slot                     Summary of contents                  
     ffffc804ae060000 - NDrw                All values are zero
@@ -84,7 +81,7 @@ Run the **!ndiskd.ndisslot** extension with no parameters to see a list of all p
 
 Clicking on one of the handles for the per-processor slot variables will show you the details for that variable. The following example uses the handle ffffc804ae060920 for the tsR variable, from the previous example.
 
-```
+```console
 1: kd> !ndiskd.ndisslot ffffc804ae060920
     Processor          Slot value                                               
     00                 00000006
@@ -106,11 +103,10 @@ Clicking on one of the handles for the per-processor slot variables will show yo
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.ndisslot%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

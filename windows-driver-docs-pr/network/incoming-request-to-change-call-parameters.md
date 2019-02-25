@@ -5,17 +5,14 @@ ms.assetid: f7b9483c-070e-4a5d-a1b0-fadb65843a1e
 keywords:
 - call parameter changes WDK CoNDIS
 - incoming call parameter change requests WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Incoming Request to Change Call Parameters
 
 
-## <a href="" id="ddk-incoming-request-to-change-call-parameters-ng"></a>
+
 
 
 A call manager or MCM driver is alerted to an incoming request from a remote party to change the call parameters on an active VC by signaling messages from the network. Whether a call manager or MCM driver supports dynamic QoS changes on active calls depends on the signaling protocol.
@@ -36,9 +33,9 @@ The client accepts the proposed modifications to the call parameters for the VC 
 
 After **ProtocolClIncomingCallQoS** returns, the call manager or MCM driver communicates the client's acceptance or rejection of the proposed change to the remote party that originated the request.
 
- 
+ 
 
- 
+ 
 
 
 

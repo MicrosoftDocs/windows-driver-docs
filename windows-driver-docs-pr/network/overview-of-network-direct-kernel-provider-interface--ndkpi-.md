@@ -2,11 +2,8 @@
 title: Overview of Network Direct Kernel Provider Interface (NDKPI)
 description: This section provides an overview of Network Direct Kernel Provider Interface (NDKPI)
 ms.assetid: D9667238-FD2E-44DE-920F-FA4CF3365D93
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Network Direct Kernel Provider Interface (NDKPI)
@@ -46,7 +43,7 @@ NDK consumers are kernel-mode Windows components, such as SMB server and client.
 
 **Note**  This documentation does not discuss how to implement an NDK consumer. The NDKPI consumer device driver interface (DDI) is a proprietary Windows-internal interface.
 
- 
+ 
 
 An NDK consumer calls the provider's *NdkOpenAdapter* ([*OPEN\_NDK\_ADAPTER\_HANDLER*](https://msdn.microsoft.com/library/windows/hardware/hh440105)) callback function to create an adapter object and *NdkCloseAdapter* ([*NDK\_FN\_CLOSE\_OBJECT*](https://msdn.microsoft.com/library/windows/hardware/hh439863)) to close it. Once the provider has created the adapter object, the consumer calls other provider callback functions to create additional NDK objects.
 
@@ -57,9 +54,9 @@ NDK consumers implement the [NDKPI Consumer Callback Functions](https://msdn.mic
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

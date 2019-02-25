@@ -10,19 +10,16 @@ api_name:
 - Place File Syntax
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Place File Syntax
 
 
-**Note**   Place files are now obsolete and should not be used. .
+**Note**   Place files are now obsolete and should not be used. .
 
- 
+
 
 The place file is a text file that BinPlace reads to determine the class subdirectories that are associated with a file it is placing.
 
@@ -31,10 +28,8 @@ The path and name of this file are specified by the -p PlaceFile command-line pa
 Each line of a place file has the same format.
 
 ```
-    
-     FileName Class[:Class[...]   [ ; Comment ] 
 
-   
+     FileName Class[:Class[...]   [ ; Comment ] 
 ```
 
 Each line in the place file follows these rules:
@@ -103,23 +98,23 @@ On an x64-based computer: <strong>AMD64</strong>.</td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>drivers</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\drivers</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\drivers</strong>.</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>drvetc</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\drivers\\etc</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\drivers\etc</strong>.</p></td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>config</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\config</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\config</strong>.</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 For x86 builds:
 
@@ -144,18 +139,18 @@ For x86 builds:
 </tr>
 <tr class="even">
 <td align="left"><p><strong>printer</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\spool\\drivers\\w32x86</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\spool\drivers\w32x86</strong>.</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>prtprocs</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\spool\\prtprocs\\w32x86</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\spool\prtprocs\w32x86</strong>.</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 For AMD64 builds:
 
@@ -180,18 +175,18 @@ For AMD64 builds:
 </tr>
 <tr class="even">
 <td align="left"><p><strong>printer</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\spool\\drivers\\w32amd64</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\spool\drivers\w32amd64</strong>.</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>prtprocs</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\spool\\prtprocs\\w32amd64</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\spool\prtprocs\w32amd64</strong>.</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 For IA64 builds:
 
@@ -216,18 +211,18 @@ For IA64 builds:
 </tr>
 <tr class="even">
 <td align="left"><p><strong>printer</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\spool\\drivers\\w32ia64</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\spool\drivers\w32ia64</strong>.</p></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>prtprocs</strong></p></td>
-<td align="left"><p>Becomes <strong>system32\\spool\\prtprocs\\w32ia64</strong>.</p></td>
+<td align="left"><p>Becomes <strong>system32\spool\prtprocs\w32ia64</strong>.</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 Unless otherwise noted, the symbol path is truncated to include only the first directory in the path. For example, if you were using BinPlace to move an x86 file called Build.exe that has the target class of **printer**, you might use the following command syntax:
 
@@ -254,11 +249,10 @@ someprogram.exe   dir1\dir2\dir3:otherdir1\otherdir2   ; To two locations
 <span id="_______Comment______"></span><span id="_______comment______"></span><span id="_______COMMENT______"></span> *Comment*   
 Any text after a semicolon will be ignored by BinPlace.
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Place%20File%20Syntax%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

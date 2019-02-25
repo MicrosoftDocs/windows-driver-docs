@@ -3,17 +3,14 @@ title: bd (Breakpoint Disable)
 description: The bd command disables, but does not delete, previously set breakpoints.
 ms.assetid: 9b408f4a-6036-41d7-b89a-3e7841c50a90
 keywords: ["bd (Breakpoint Disable) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - bd (Breakpoint Disable)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # bd (Breakpoint Disable)
@@ -21,7 +18,7 @@ api_type:
 
 The **bd** command disables, but does not delete, previously set breakpoints.
 
-```
+```dbgcmd
 bd Breakpoints
 ```
 
@@ -54,7 +51,7 @@ Specifies the ID numbers of the breakpoints to disable. You can specify any numb
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,11 +68,10 @@ Use the [**bl (Breakpoint List)**](bl--breakpoint-list-.md) command to list all 
 
 Use the [**.bpcmds (Display Breakpoint Commands)**](-bpcmds--display-breakpoint-commands-.md) command to list all existing breakpoints, their ID numbers, and the commands that were used to create them.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20bd%20%28Breakpoint%20Disable%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -15,11 +15,8 @@ keywords:
 - terminal identifiers WDK audio
 - GUIDs WDK audio
 - category GUIDs WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pin Category Property
@@ -75,7 +72,7 @@ A USB audio device has some number of terminals through which digital streams an
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="output_terminal_types"></span><span id="OUTPUT_TERMINAL_TYPES"></span> Output Terminal Types
 
@@ -122,7 +119,7 @@ A USB audio device has some number of terminals through which digital streams an
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="bidirectional_terminal_types"></span><span id="BIDIRECTIONAL_TERMINAL_TYPES"></span> Bidirectional Terminal Types
 
@@ -161,7 +158,7 @@ A USB audio device has some number of terminals through which digital streams an
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="telephony_terminal_types"></span><span id="TELEPHONY_TERMINAL_TYPES"></span> Telephony Terminal Types
 
@@ -192,7 +189,7 @@ A USB audio device has some number of terminals through which digital streams an
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="external_terminal_types"></span><span id="EXTERNAL_TERMINAL_TYPES"></span> External Terminal Types
 
@@ -239,7 +236,7 @@ A USB audio device has some number of terminals through which digital streams an
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="embedded_function_terminal_types"></span><span id="EMBEDDED_FUNCTION_TERMINAL_TYPES"></span> Embedded Function Terminal Types
 
@@ -334,9 +331,9 @@ A USB audio device has some number of terminals through which digital streams an
 </tbody>
 </table>
 
- 
+ 
 
-For more information about USB terminal type identifiers, see the *Universal Serial Bus Device Class Definition for Terminal Types* (release 1.0), which is available at the [USB Implementers Forum](http://go.microsoft.com/fwlink/p/?linkid=8780) website.
+For more information about USB terminal type identifiers, see the *Universal Serial Bus Device Class Definition for Terminal Types* (release 1.0), which is available at the [USB Implementers Forum](https://go.microsoft.com/fwlink/p/?linkid=8780) website.
 
 All pin category GUIDs in the preceding tables have parameter names of the form KSNODETYPE\_*XXX*. Note that KS node type GUIDs also have KSNODETYPE\_*XXX* parameter names. This naming convention creates some potential for confusion between pin category GUIDs and node type GUIDs. Fortunately, nearly every KSNODETYPE\_*XXX* parameter identifies either a pin category or a node type, but not both. The one exception to the rule is [**KSNODETYPE\_SYNTHESIZER**](https://msdn.microsoft.com/library/windows/hardware/ff537203), which can identify either a pin category or a node type, depending on the context. For a list of node type GUIDs, see [Audio Topology Nodes](https://msdn.microsoft.com/library/windows/hardware/ff536219).
 
@@ -350,12 +347,10 @@ In Windows Vista and later, the operating system uses pin categories to associat
 
 In Windows XP, Windows 2000, and Windows Millennium Edition, the operating system makes only limited use of pin categories. The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) acts on behalf of the mixer API to translate pin category GUIDs into MIXERLINE\_COMPONENTTYPE\_*XXX* values for use by client applications. WDMAud recognizes only a subset of the pin category GUIDs that appear in the preceding six tables. In addition, for historical reasons, WDMAud recognizes two pin category GUIDs, KSCATEGORY\_AUDIO and PINNAME\_CAPTURE, that do not appear in the tables. For more information about the translation of pin categories to mixer lines, see [Topology Pins](topology-pins.md). For information about the mixer API, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Pin%20Category%20Property%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

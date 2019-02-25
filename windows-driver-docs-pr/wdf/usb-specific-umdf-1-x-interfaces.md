@@ -1,6 +1,5 @@
 ---
 title: USB-Specific UMDF 1.x Interfaces
-author: windows-driver-content
 description: USB-Specific UMDF 1.x Interfaces
 ms.assetid: b458d96d-e15e-4a9b-a26e-490620cec38e
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - User-Mode Driver Framework WDK , UMDF-USB object model
 - user-mode drivers WDK UMDF , UMDF-USB object model
 - UMDF-USB object model WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB-Specific UMDF 1.x Interfaces
@@ -36,7 +32,7 @@ The following table shows the USB-specific UMDF interface hierarchy:
 | [IWDFUsbInterface](https://msdn.microsoft.com/library/windows/hardware/ff560312)       | [IWDFObject](https://msdn.microsoft.com/library/windows/hardware/ff560200)     |
 | [IWDFUsbTargetPipe](https://msdn.microsoft.com/library/windows/hardware/ff560391)     | [IWDFIoTarget](https://msdn.microsoft.com/library/windows/hardware/ff559170) |
 
- 
+ 
 
 The [IWDFUsbTargetDevice](https://msdn.microsoft.com/library/windows/hardware/ff560362) and [IWDFUsbTargetPipe](https://msdn.microsoft.com/library/windows/hardware/ff560391) interfaces derive from the [IWDFIoTarget](https://msdn.microsoft.com/library/windows/hardware/ff559170) interface and, therefore, expose I/O target objects. The [IWDFUsbInterface](https://msdn.microsoft.com/library/windows/hardware/ff560312) interface does not derive from IWDFIoTarget (IWDFUsbInterface derives from the [IWDFObject](https://msdn.microsoft.com/library/windows/hardware/ff560200) interface) and, therefore, does not expose an I/O target object. Any I/O sent to discover and manipulate interface details is sent to the target device.
 
@@ -44,9 +40,9 @@ For step-by-step directions on writing a simple UMDF-based USB client driver, se
 
 To learn about the source code required for a UMDF-based USB client driver, see [Understanding the USB client driver code structure (UMDF)](https://msdn.microsoft.com/library/windows/hardware/hh770893).
 
- 
+ 
 
- 
+ 
 
 
 

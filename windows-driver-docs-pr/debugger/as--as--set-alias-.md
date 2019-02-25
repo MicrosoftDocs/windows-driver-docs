@@ -3,17 +3,14 @@ title: as, aS (Set Alias)
 description: The as and aS commands define a new alias or redefine an existing one.
 ms.assetid: 6e42122b-5a18-403b-a19a-1346bea8da12
 keywords: ["as, aS (Set Alias) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - as, aS (Set Alias)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # as, aS (Set Alias)
@@ -21,7 +18,7 @@ api_type:
 
 The **as** and **aS** commands define a new alias or redefine an existing one.
 
-```
+```dbgcmd
 as Name EquivalentLine 
 aS Name EquivalentPhrase 
 aS Name "EquivalentPhrase" 
@@ -111,7 +108,7 @@ Specifies the commands whose outputs become the alias equivalent. This string ca
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -124,14 +121,14 @@ If you do not use any switches, the **as** command uses the rest of the line as 
 
 You can end the **aS** command by a semicolon. This technique is useful in a script when you have to put all commands on a single line. Note that if the portion of the line after the semicolon requires expansion of the alias, you must enclose that second portion of the line in a new block. The following example produces the expected output, 0x6.
 
-```
+```dbgcmd
 0:001> aS /x myAlias 5 + 1; .block{.echo myAlias}
 0x6
 ```
 
 If you omit the new block, you do not get the expected output. That is because the expansion of a newly set alias does not happen until a new code block is entered. In the following example, the new block is omitted, and the output is the text "myAlias" instead of the expected value 0x6.
 
-```
+```dbgcmd
 0:001> aS /x myAlias 5 + 1; .echo myAlias
 myAlias
 ```
@@ -146,11 +143,10 @@ You can use the **as** or **aS** command to create or change any user-named alia
 
 You can use the **/ma**, **/mu**, **/msa**, **/msu**, **/f**, and **/c** switches to create an alias that contains carriage returns. However, you cannot use an alias that contains carriage returns to execute multiple commands in sequence. Instead, you must use semicolons.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20as,%20aS%20%28Set%20Alias%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Customized Font Management
-author: windows-driver-content
 description: Customized Font Management
 ms.assetid: 6e643703-ace1-4660-990c-3a9ca735829d
 keywords:
@@ -18,20 +17,17 @@ keywords:
 - downloadable PCL soft fonts WDK Unidrv
 - PCL soft fonts WDK Unidrv
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Customized Font Management
 
 
-## <a href="" id="ddk-customized-font-management-gg"></a>
 
 
-For [*PCL*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pcl) printers, Unidrv supports downloading soft fonts as bitmaps or TrueType outlines. For device fonts, Unidrv supports PCL, CAPSL, and PPDS printer command formats. For other formats, customized font management code must be provided in a rendering plug-in. The following set of IPrintOemUni methods can be implemented:
+
+For *PCL* printers, Unidrv supports downloading soft fonts as bitmaps or TrueType outlines. For device fonts, Unidrv supports PCL, CAPSL, and PPDS printer command formats. For other formats, customized font management code must be provided in a rendering plug-in. The following set of IPrintOemUni methods can be implemented:
 
 <a href="" id="iprintoemuni--downloadfontheader"></a>[**IPrintOemUni::DownloadFontHeader**](https://msdn.microsoft.com/library/windows/hardware/ff554242)  
 Used to obtain a soft font's header information from Unidrv and then download the information to the printer.
@@ -55,7 +51,7 @@ Unidrv provides a callback function, [*UNIFONTOBJ\_GetInfo*](https://msdn.micros
 
 For device fonts, font descriptions must be provided as explained in the **Unidrv font metrics files** section and the **Glyph translation table files** section.
 
-For cartridge fonts, font descriptions can be provided in resource DLLs and specified using [font cartridges](font-cartridges.md) entries in a [*GPD*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-generic-printer-description--gpd-) file. Font descriptions can also be provided in the form of Unidrv font format files.
+For cartridge fonts, font descriptions can be provided in resource DLLs and specified using font cartridges file. Font descriptions can also be provided in the form of Unidrv font format files.
 
 For downloadable PCL soft fonts, font descriptions must be provided as explained in the **Unidrv font format files** section.
 
@@ -81,7 +77,7 @@ Unidrv also supports glyph translation files created for Windows NT 4.0, which u
 
 ### <a href="" id="ddk-unidrv-font-format-files-gg"></a>Unidrv Font Format Files
 
-For cartridge fonts that are not specified using [font cartridges](font-cartridges.md) entries in a GPD file, the fonts must be described in a Unidrv Font Format (.uff) file. Additionally, downloadable [*PCL*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pcl) soft fonts must be specified using .uff files.
+For cartridge fonts that are not specified using font cartridges soft fonts must be specified using .uff files.
 
 A .uff file is a binary file that is constructed using the following sets of structures:
 
@@ -97,7 +93,7 @@ The following figure shows the layout of a Unidrv Font Format file.
 
 A Unidrv Font Format file consists of a [**UFF\_FILEHEADER**](https://msdn.microsoft.com/library/windows/hardware/ff562862) structure, and one or more [**UFF\_FONTDIRECTORY**](https://msdn.microsoft.com/library/windows/hardware/ff562866) and [**DATA\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff547364) structure pairs. Each DATA\_HEADER structure is associated with a block of font data. The UFF\_FILEHEADER structure contains the offset from the beginning of the file to the first UFF\_FONTDIRECTORY structure. Each UFF\_FONTDRECTORY structure contains the offset from the beginning of the file to a DATA\_HEADER structure that contains font data.
 
-Additionally, for downloadable [*PCL*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pcl) soft fonts, the binary data to be downloaded is stored in a .uff file.
+Additionally, for downloadable *PCL* soft fonts, the binary data to be downloaded is stored in a .uff file.
 
 .uff files creation is the responsibility of vendor-supplied font installation software. Unidrv reads a printer's .uff files to obtain font and glyph information. The font installer should modify .uff file contents when fonts are added or deleted. For more information about creating a font installer, see [Customized Font Installers for Unidrv](customized-font-installers-for-unidrv.md).
 
@@ -144,16 +140,14 @@ All .uff files must be stored in the %SystemRoot%\\System32\\Spool\\Drivers\\Uni
 </tbody>
 </table>
 
- 
+ 
 
 After you add a font cartridge to a printer, the system administrator must run the font installer, which is responsible to copy font descriptions from the .uff file specified by "ExtFontCartFile" into the .uff file specified by "ExternalFontFile". Likewise, the font installer must remove font descriptions from the .uff file specified by "ExtFontCartFile" when a cartridge is removed.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Customized%20Font%20Management%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -2,11 +2,8 @@
 title: USB Audio Class System Driver (Usbaudio.sys)
 description: The USB Audio class system driver (Usbaudio.sys) is an AVStream minidriver that provides driver support for audio devices that comply with the Universal Serial Bus (USB) Device Class Definition for Audio Devices.
 ms.assetid: 7ECE8006-3181-451C-B047-A3D767A7B98A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Audio Class System Driver (Usbaudio.sys)
@@ -17,7 +14,7 @@ The USB Audio class system driver (Usbaudio.sys) is an AVStream minidriver that 
 ## <span id="usbaudio_class_system_driver"></span><span id="USBAUDIO_CLASS_SYSTEM_DRIVER"></span>
 
 
-The USB Device Class Definition for Audio Devices specification (release 1.0) is available at the [USB Implementers Forum](http://go.microsoft.com/fwlink/p/?linkid=8780) website. Usbaudio.sys supports a subset of the features that are described in the USB Audio specification. In addition to Usbaudio.sys, there are several other kernel-mode audio components in the Windows Driver Model (WDM). For more information, see [Kernel-Mode WDM Audio Components](kernel-mode-wdm-audio-components.md).
+The USB Device Class Definition for Audio Devices specification (release 1.0) is available at the [USB Implementers Forum](https://go.microsoft.com/fwlink/p/?linkid=8780) website. Usbaudio.sys supports a subset of the features that are described in the USB Audio specification. In addition to Usbaudio.sys, there are several other kernel-mode audio components in the Windows Driver Model (WDM). For more information, see [Kernel-Mode WDM Audio Components](kernel-mode-wdm-audio-components.md).
 
 In Windows 98 Usbaudio.sys introduced support for USB devices such as speakers and microphones. Support for MIDI devices was added in Windows Me.
 
@@ -61,12 +58,10 @@ For more information about the driver components in the figure, see the followin
 
 [System-Supplied USB Drivers](https://msdn.microsoft.com/library/windows/hardware/ff538853)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20USB%20Audio%20Class%20System%20Driver%20%28Usbaudio.sys%29%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using Memory Buffers
-author: windows-driver-content
 description: Using Memory Buffers
 ms.assetid: f5699837-f1ba-4088-82b3-d7e27341fb46
 keywords:
@@ -12,17 +11,14 @@ keywords:
 - memory descriptor lists WDK KMDF
 - MDLs WDK KMDF
 - local buffers WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Memory Buffers
 
 
-## <a href="" id="ddk-referencing-memory-df"></a>
+
 
 
 Drivers typically use memory buffers to pass data to and from the framework and other drivers or to store information locally. This topic describes [framework memory objects](#using-framework-memory-objects), [lookaside lists](#using-lookaside-lists), [MDLs](#using-mdls), and [local buffers](#allocating-local-buffers).
@@ -77,9 +73,9 @@ However, drivers can also use memory objects for local buffers. An advantage to 
 
 Your driver can use the [**WDF\_ALIGN\_SIZE\_UP**](https://msdn.microsoft.com/library/windows/hardware/ff551217) or [**WDF\_ALIGN\_SIZE\_DOWN**](https://msdn.microsoft.com/library/windows/hardware/ff551214) function to calculate a buffer size that is aligned to a specified alignment offset. This calculation is useful if your driver must allocate multiple contiguous buffers, if each buffer must begin at an address alignment boundary.
 
- 
+ 
 
- 
+ 
 
 
 

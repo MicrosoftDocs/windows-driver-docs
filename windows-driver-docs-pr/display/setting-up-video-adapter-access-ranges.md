@@ -7,11 +7,8 @@ keywords:
 - ranges WDK video miniport
 - logical range addresses WDK video miniport
 - adapter access ranges WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting up Video Adapter Access Ranges
@@ -36,7 +33,7 @@ The miniport driver's [*HwVidFindAdapter*](https://msdn.microsoft.com/library/wi
 
 If *HwVidFindAdapter* cannot get bus-relative access ranges information by calling **VideoPortGetBusData** or **VideoPortGetAccessRanges**, or from the registry with **VideoPortGetDeviceData** or **VideoPortGetRegistryParameters**, the miniport driver should have a set of bus-relative default values for access ranges.
 
-Every *HwVidFindAdapter* function must map each claimed bus-relative physical address range to a range in kernel-mode address space with [**VideoPortGetDeviceBase**](https://msdn.microsoft.com/library/windows/hardware/ff570310) before the miniport driver attempts to communicate with an adapter. The HAL can remap bus-relative access range values to [*system space*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-system-space) logical address ranges, particularly in multiple bus machines.
+Every *HwVidFindAdapter* function must map each claimed bus-relative physical address range to a range in kernel-mode address space with **VideoPortGetDeviceBase** logical address ranges, particularly in multiple bus machines.
 
 With mapped logical range addresses, the driver can call the **VideoPortRead***Xxx* and **VideoPortWrite***Xxx* functions to read from or write to an adapter. These kernel-mode addresses also can be passed to [**VideoPortCompareMemory**](https://msdn.microsoft.com/library/windows/hardware/ff570285), [**VideoPortMoveMemory**](https://msdn.microsoft.com/library/windows/hardware/ff570332), [**VideoPortZeroDeviceMemory**](https://msdn.microsoft.com/library/windows/hardware/ff570492), and/or [**VideoPortZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff570493). For a mapped range in I/O space, the miniport driver calls the **VideoPortReadPort***Xxx* and **VideoPortWritePort***Xxx* functions. For a mapped range in memory, the miniport driver calls the **VideoPortReadRegister***Xxx* and **VideoPortWriteRegister***Xxx* functions.
 
@@ -56,11 +53,10 @@ The miniport driver of hardware that decodes legacy resources must claim these r
 
 After a miniport driver is loaded and its [*HwVidInitialize*](https://msdn.microsoft.com/library/windows/hardware/ff567345) function is run, the miniport driver's [*HwVidStartIO*](https://msdn.microsoft.com/library/windows/hardware/ff567367) function is called to map any access range of video memory that the miniport driver makes visible to its corresponding display driver.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Setting%20up%20Video%20Adapter%20Access%20Ranges%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

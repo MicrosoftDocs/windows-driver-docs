@@ -8,11 +8,8 @@ keywords:
 - ETW WDK , providers
 - providers WDK software tracing
 - trace sessions WDK , providers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Trace Provider
@@ -30,13 +27,3 @@ To start a trace session with more than one trace provider, you must specify the
 A kernel-mode driver or user-mode application, can support more than one trace provider component, even within a single source file. This feature is useful for tracing specific operations in a driver or application. To implement multiple trace providers, you must use a different [control GUID](control-guid.md) in the [WPP\_CONTROL\_GUIDS](https://msdn.microsoft.com/library/windows/hardware/ff556186) macro for each provider.
 
 Similarly, multiple drivers or applications can be a part of a single trace provider and share its resources. This feature is useful when tracing related applications and drivers, such as port and miniport drivers. To implement this feature, specify the same control GUID in the WPP\_CONTROL\_GUIDS macro for each provider.
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Trace%20Provider%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

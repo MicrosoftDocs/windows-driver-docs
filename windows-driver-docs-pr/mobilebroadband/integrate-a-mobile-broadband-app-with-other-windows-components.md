@@ -2,23 +2,20 @@
 title: Integrate a mobile broadband app with other Windows components
 description: Integrate a mobile broadband app with other Windows components
 ms.assetid: 70469f6b-70a8-4ebc-b315-08ddeffbdc0f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Integrate a mobile broadband app with other Windows components
 
 
-You can use Windows 8, Windows 8.1, and Windows 10 user interface (UI) surfaces to enhance the overall experience of your mobile broadband app.
+You can use Windows 10 user interface (UI) surfaces to enhance the overall experience of your mobile broadband app.
 
-For additional user experience design guidelines for layout, navigation, commanding, animations, touch interaction, snapping and scaling, contracts and capabilities, tiles and notifications, UI controls, app roaming to the cloud, and fundamentals, see [Index of UX guidelines for Windows Store apps](https://msdn.microsoft.com/library/windows/apps/hh465424).
+For additional user experience design guidelines for layout, navigation, commanding, animations, touch interaction, snapping and scaling, contracts and capabilities, tiles and notifications, UI controls, app roaming to the cloud, and fundamentals, see [Index of UX guidelines for UWP apps](https://msdn.microsoft.com/library/windows/apps/hh465424).
 
 This topic contains the following sections:
 
--   [Settings charm](#setcharm)
+-   [App settings](#app-settings)
 
 -   [Error user experience](#errorux)
 
@@ -34,10 +31,10 @@ This topic contains the following sections:
 
 -   [Additional resources](#resources)
 
-## <span id="setcharm"></span><span id="SETCHARM"></span>Settings charm
+## App settings
 
 
-You can use the [Settings charm](https://msdn.microsoft.com/library/windows/apps/hh770544) to include settings for your apps configuration. Some examples of these are as follows:
+You can use [App settings](https://msdn.microsoft.com/library/windows/apps/hh770544) to include settings for your apps configuration. Some examples of these are as follows:
 
 -   Sign in and sign out
 
@@ -100,7 +97,7 @@ Your app should be adaptive and be able to fit a number of layouts, including:
     **Note**  
     When the touch keyboard is up, make sure that elements such as form fields scroll appropriately.
 
-     
+     
 
 The following examples show how some pages look when side by side with another app.
 
@@ -108,7 +105,7 @@ The following examples show how some pages look when side by side with another a
 
 ![services page side by side with another app](images/mb-fig3-snappedview-servicespage.png)
 
-Make sure that your app is accessible through app views, including high-contrast mode and screen reader readiness. For more information about how to make your app accessible, see [Accessibility in Windows Store apps using JavaScript](https://msdn.microsoft.com/library/windows/apps/hh452681).
+Make sure that your app is accessible through app views, including high-contrast mode and screen reader readiness. For more information about how to make your app accessible, see [Accessibility in UWP apps using JavaScript](https://msdn.microsoft.com/library/windows/apps/hh452681).
 
 ## <span id="launchpts"></span><span id="LAUNCHPTS"></span>Launch points
 
@@ -137,7 +134,7 @@ If your app was suspended or already running, it should show the last page used.
 
 ### <span id="tileandtoast"></span><span id="TILEANDTOAST"></span>Tile and toast notifications
 
-In the **Start** screen, tiles are the primary representation of an app. Users launch their apps through those tiles, which can display new, relevant, and tailored content through notifications. This makes the **Start** screen feel vibrant, and allows the user to see what's new at a glance. An app can also communicate time-critical events to the user through toast notifications, whether the user is in another app, on the **Start** screen, or on the Desktop. The methodology to design and deliver toast closely parallels that of tiles, thereby lowering the learning curve.
+In the **Start** menu, tiles are the primary representation of an app. Users launch their apps through those tiles, which can display new, relevant, and tailored content through notifications. This makes the **Start** menu feel vibrant, and allows the user to see what's new at a glance. An app can also communicate time-critical events to the user through toast notifications, whether the user is in another app, on the **Start** screen, or on the Desktop. The methodology to design and deliver toast closely parallels that of tiles, thereby lowering the learning curve.
 
 ![start screen tile](images/mb-fig7-startscreentile.png)
 
@@ -180,11 +177,10 @@ Inappropriate design for operator notifications:
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Integrate%20a%20mobile%20broadband%20app%20with%20other%20Windows%20components%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

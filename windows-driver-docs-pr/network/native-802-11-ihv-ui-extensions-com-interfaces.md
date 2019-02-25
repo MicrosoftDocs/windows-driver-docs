@@ -5,17 +5,14 @@ ms.assetid: 95487686-17a0-43e2-93bb-99b3adb9dadd
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , COM interfaces
 - COM interfaces WDK Native 802.11 IHV UI Extensions DLL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Native 802.11 IHV UI Extensions COM Interfaces
 
 
-**Important**  The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](wifi-universal-driver-model.md).
+
 
  
 
@@ -46,7 +43,7 @@ The Native 802.11 IHV UI Extensions DLL can provide one or more implementations 
 
 -   An internal request made by a component of the Native 802.11 IHV UI Extensions DLL.
 
-For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](http://go.microsoft.com/fwlink/p/?linkid=56607).
+For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](https://go.microsoft.com/fwlink/p/?linkid=56607).
 
 For more information about the Native 802.11 Network Configuration UI component, see [Native 802.11 Software Architecture](native-802-11-software-architecture.md).
 

@@ -2,11 +2,8 @@
 title: Compiling an NDIS 6.30 driver
 description: This section explains how to compile an NDIS 6.30 driver
 ms.assetid: 6CBAFAA2-7DA3-4184-B82B-AEFF61F7072C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Compiling an NDIS 6.30 Driver
@@ -24,9 +21,9 @@ For information on building a driver with the Windows 8 release of the WDK, see
 
 For information on converting an driver's build files to a Visual Studio project , see [Creating a Driver From Existing Source Files](https://msdn.microsoft.com/windows-drivers/develop/creating_a_driver_from_existing_source_files).
 
- 
+ 
 
- 
+ 
 
 
 

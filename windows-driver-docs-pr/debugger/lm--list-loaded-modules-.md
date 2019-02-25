@@ -3,17 +3,14 @@ title: lm (List Loaded Modules)
 description: The lm command displays the specified loaded modules. The output includes the status and the path of the module.
 ms.assetid: ee2283bd-4d3f-4e30-8b32-e286a415bb3a
 keywords: ["lm (List Loaded Modules) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - lm (List Loaded Modules)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # lm (List Loaded Modules)
@@ -21,7 +18,7 @@ api_type:
 
 The **lm** command displays the specified loaded modules. The output includes the status and the path of the module.
 
-```
+```dbgcmd
 lm Options [a Address] [m Pattern | M Pattern]
 ```
 
@@ -86,7 +83,7 @@ Specifies a pattern that the module name must match. Pattern can contain a varie
 
 **Note**   In most cases, the module name is the file name without the file name extension. For example, if you want to display information about the Flpydisk.sys driver, use the lm mflpydisk command, not lm mflpydisk.sys. In some cases, the module name differs significantly from the file name.
 
- 
+ 
 
 <span id="_______M_______Pattern______"></span><span id="_______m_______pattern______"></span><span id="_______M_______PATTERN______"></span> M *Pattern*   
 Specifies a pattern that the image path must match. Pattern can contain a variety of wildcard characters and specifiers. For more information about the syntax of this information, see [String Wildcard Syntax](string-wildcard-syntax.md).
@@ -114,7 +111,7 @@ Specifies a pattern that the image path must match. Pattern can contain a variet
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -139,7 +136,7 @@ This command shows several columns or fields, each with a different title. Some 
 
 The following code example shows the **lm** command with a Windows Server 2003 target computer. This example includes the m and s\* options, so only modules that begin with "s" are displayed.
 
-```
+```dbgcmd
 kd> lm m s*
 start    end        module name
 f9f73000 f9f7fd80   sysaudio     (deferred)                 
@@ -162,7 +159,7 @@ The following two examples show the **lm** command once without any options and 
 
 Example 1:
 
-```
+```dbgcmd
 0:000> lm
 start    end        module name
 01000000 0100d000   stst       (deferred)
@@ -175,7 +172,7 @@ start    end        module name
 
 Example 2:
 
-```
+```dbgcmd
 0:000> lmsm
 start    end        module name
 77dd0000 77e6b000   ADVAPI32   (deferred)
@@ -186,11 +183,10 @@ start    end        module name
 01000000 0100d000   stst       (deferred)
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20lm%20%28List%20Loaded%20Modules%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

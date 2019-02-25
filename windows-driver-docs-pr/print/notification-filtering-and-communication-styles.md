@@ -1,6 +1,5 @@
 ---
 title: Notification Filtering and Communication Styles
-author: windows-driver-content
 description: Notification Filtering and Communication Styles
 ms.assetid: 66d019c2-0760-440d-acc4-85a7c073929a
 keywords:
@@ -15,26 +14,23 @@ keywords:
 - communication WDK spooler notification
 - all listener notifications WDK print spooler
 - per-user listener filtering WDK spooler notification
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Notification Filtering and Communication Styles
 
 
-## <a href="" id="ddk-notification-filtering-and-communication-styles-gg"></a>
+
 
 
 This section describes the interface between the spooler process and printing components such as the print processor, driver, and monitor.
 
 ### Notification Filtering
 
-The PrintAsyncNotifyUserFilter enumerated type is used for two situations. In the first of these a print component running inside the spooler calls the [CreatePrintAsyncNotifyChannel](http://go.microsoft.com/fwlink/p/?linkid=124750) function to create a notification channel. The caller passes one enumerator of the PrintAsyncNotifyUserFilter enumerated type to specify which listening clients are permitted to receive notifications. In the second situation, a listening client calls the [RegisterForPrintAsyncNotifications](http://go.microsoft.com/fwlink/p/?linkid=124752) function to register for notification. The caller passes one of the PrintAsyncNotifyUserFilter enumerators to indicate which notifications it should receive.
+The PrintAsyncNotifyUserFilter enumerated type is used for two situations. In the first of these a print component running inside the spooler calls the [CreatePrintAsyncNotifyChannel](https://go.microsoft.com/fwlink/p/?linkid=124750) function to create a notification channel. The caller passes one enumerator of the PrintAsyncNotifyUserFilter enumerated type to specify which listening clients are permitted to receive notifications. In the second situation, a listening client calls the [RegisterForPrintAsyncNotifications](https://go.microsoft.com/fwlink/p/?linkid=124752) function to register for notification. The caller passes one of the PrintAsyncNotifyUserFilter enumerators to indicate which notifications it should receive.
 
-```
+```cpp
 typedef enum 
 {
   kPerUser,
@@ -68,7 +64,7 @@ In the following figure, Joe sends a notification on a channel with a **kPerUser
 
 By specifying a communication type, the printing component indicates whether a response is expected from the listener client, as well as the way the spooler handles the case when notifications are sent back from multiple clients.
 
-```
+```cpp
 typedef enum 
 {
   kBidirectional = 1, 
@@ -76,7 +72,7 @@ typedef enum
 } PrintAsyncNotifyConversationStyle
 ```
 
-There are two types of communication -- unidirectional and bidirectional. In unidirectional communication, a listening client does not respond to a spooler notification. In this case, the listening client cannot send notifications back because it receives a **NULL**[IPrintAsyncNotifyChannel](http://go.microsoft.com/fwlink/p/?linkid=124758) interface pointer. In bidirectional communication, the client sends a response when it receives a notification, and carries on a dialog with the printing component. This is the UI notification case.
+There are two types of communication -- unidirectional and bidirectional. In unidirectional communication, a listening client does not respond to a spooler notification. In this case, the listening client cannot send notifications back because it receives a **NULL**[IPrintAsyncNotifyChannel](https://go.microsoft.com/fwlink/p/?linkid=124758) interface pointer. In bidirectional communication, the client sends a response when it receives a notification, and carries on a dialog with the printing component. This is the UI notification case.
 
 The situation in which multiple sessions receive a UI notification deserves comment. In this situation, the spooler opens a channel and notifies all listeners that match the filters, sending them the first notification. When the first listener responds, the spooler closes the other channels and the dialog continues with the first client.
 
@@ -100,11 +96,11 @@ On the listener side of the channel, a listening client can ask to receive one t
 
 The spooler defines a special notification type used to announce to listening clients that the service or the application has died.
 
-```
+```cpp
 const GUID NOTIFICATION_RELEASE;
 ```
 
-The listening client can receive this type of message only when its [IPrintAsyncNotifyCallback::ChannelClosed](http://go.microsoft.com/fwlink/p/?linkid=124756) method is called.
+The listening client can receive this type of message only when its [IPrintAsyncNotifyCallback::ChannelClosed](https://go.microsoft.com/fwlink/p/?linkid=124756) method is called.
 
 ### <a href="" id="notification-registration-handle-"></a>Notification Registration Handle
 
@@ -112,12 +108,10 @@ When a client registers for notifications, the server-side spooler maintains an 
 
 The client can unregister for receiving notifications only by using this handle.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Notification%20Filtering%20and%20Communication%20Styles%20%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

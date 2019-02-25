@@ -13,24 +13,18 @@ keywords:
 - NVRAM boot options WDK , viewing
 - EFI NVRAM boot options WDK , viewing
 - boot options WDK , editing
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/02/2018
+ms.localizationpriority: medium
 ---
 
 # Editing Boot Options in EFI
-
-
-## <span id="ddk_editing_boot_options_in_efi_tools"></span><span id="DDK_EDITING_BOOT_OPTIONS_IN_EFI_TOOLS"></span>
 
 
 To edit boot options on computers with EFI NVRAM that are running Windows Server 2003 or earlier versions of NT-based Windows, use Bootcfg (bootcfg.exe), a tool that runs on Windows, or Nvrboot (nvrboot.efi), a tool that runs in the EFI environment. Both tools are included in the Windows XP 64-Bit Edition and the 64-bit version of Windows Server 2003.
 
 You can also view and change some boot options in Control Panel under System. In the System Properties dialog box, on the Advanced tab, click Settings under **Startup and Recovery**. Because this functionality is limited, it is not discussed in this section. For information about the **Startup and Recovery** dialog box, see Help and Support Center.
 
-### <span id="bootcfg"></span><span id="BOOTCFG"></span>Bootcfg
+## Bootcfg
 
 Bootcfg (bootcfg.exe) is a command-line tool that edits boot options on a local or remote computer Using the same Bootcfg commands and procedures, you can edit a Boot.ini file or the boot options in EFI NVRAM. Bootcfg is included in the %Systemroot%\\System32 directory in Windows XP and Windows Server 2003. (The Bootcfg display is slightly different on systems that store boot options in EFI NVRAM, but the commands are the same.)
 
@@ -40,7 +34,7 @@ On systems that store boot options in EFI NVRAM, Bootcfg can also display the bo
 
 You must be a member of the Administrators group on the computer to use Bootcfg. For detailed instructions about using Bootcfg, see Help and Support Center.
 
-### <span id="nvrboot"></span><span id="NVRBOOT"></span>Nvrboot
+## Nvrboot
 
 Nvrboot (nvrboot.efi) is an EFI-based boot entry editor included in Windows XP 64-Bit Edition and the 64-bit version of Windows Server 2003. Nvrboot runs in the EFI environment. You cannot run Nvrboot while an operating system is running.
 
@@ -65,13 +59,3 @@ The following procedure explains how to start Nvrboot from the EFI shell, a tool
 5.  To start Nvrboot, type **nvrboot**.
 
 To find instructions for Nvrboot, type **h**.
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Editing%20Boot%20Options%20in%20EFI%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

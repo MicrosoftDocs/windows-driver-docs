@@ -1,23 +1,19 @@
 ---
 title: PCL Separator Page Escape Codes
-author: windows-driver-content
 description: PCL Separator Page Escape Codes
 ms.assetid: 8e571fcd-f6ee-4a56-8d8a-20bf3a5c333c
 keywords:
 - PCL separator page escape codes WDK PCL XL
 - PCL XL vector graphics WDK Unidrv , separator page escape codes
 - escape codes WDK PCL XL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PCL Separator Page Escape Codes
 
 
-## <a href="" id="ddk-pcl-separator-page-escape-codes-gg"></a>
+
 
 
 The escape codes shown in the following table can be used when you create a PCL separator page.
@@ -35,11 +31,11 @@ The escape codes shown in the following table can be used when you create a PCL 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>\\</p></td>
+<td><p>&lt;/p&gt;</td>
 <td><p>The first line of the separator file must contain only this character. The separator file interpreter reads the separator file command as a delimiter.</p></td>
 </tr>
 <tr class="even">
-<td><p>\\<em>n</em></p></td>
+<td><p>&lt;em&gt;n</em></p></td>
 <td><p>Skips the number of lines specified by <em>n</em> (from 0 through 9). Skipping 0 lines moves printing to the next line.</p></td>
 </tr>
 <tr class="odd">
@@ -89,16 +85,14 @@ The escape codes shown in the following table can be used when you create a PCL 
 </tbody>
 </table>
 
- 
+ 
 
 After the local print provider passes a job through the print processor and the separator page processor, it sends the job from the spooler to the appropriate port print monitor.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20PCL%20Separator%20Page%20Escape%20Codes%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

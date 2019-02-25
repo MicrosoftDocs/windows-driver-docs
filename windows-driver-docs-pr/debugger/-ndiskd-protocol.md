@@ -3,17 +3,14 @@ title: ndiskd.protocol
 description: The ndiskd.protocol command displays information about an NDIS protocol driver. 
 ms.assetid: c1d349d5-b0ba-4665-a399-1bc5cd55dde6
 keywords: ["ndiskd.protocol Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.protocol
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.protocol
@@ -21,7 +18,7 @@ api_type:
 
 The **!ndiskd.protocol** command displays information about an NDIS protocol driver. If you run this extension with no parameters, !ndiskd will display a list of NDIS protocol drivers that are active on the system.
 
-```
+```console
 !ndiskd.protocol [-handle <x>] [-findname <any>] 
 ```
 
@@ -44,7 +41,7 @@ Examples
 
 Enter the **!ndiskd.protocol** command to see a list of all NDIS protocols, their handles, and open bindings to miniports (if any). In the following example, look for the TCPIP6TUNNEL protocol's handle, ffff8083e1a95c00.
 
-```
+```console
 3: kd> !ndiskd.protocol
 ffff8083e0114730 - NDISUIO
   ffff8083e55f3010 - Microsoft Kernel Debug Network Adapter
@@ -78,7 +75,7 @@ ffff8083e11cec10 - TCPIP
 
 With the protocol's handle, now you can enter either click the handle or enter the **!ndiskd.protocol -handle** command to see information for that protocol, such as the handles for the miniports that are bound to it.
 
-```
+```console
 3: kd> !ndiskd.protocol ffff8083e1a95c00
 
 
@@ -130,11 +127,10 @@ HANDLERS
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.protocol%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

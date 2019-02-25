@@ -4,24 +4,21 @@ description: Setting SetupAPI Logging Levels
 ms.assetid: e6fa4c9c-e210-42c7-8bc7-d36463073c28
 keywords:
 - logging levels WDK SetupAPI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting SetupAPI Logging Levels
 
 
-## <a href="" id="ddk-setting-setupapi-logging-levels-dg"></a>
 
 
-You can control the amount of information that is written to the SetupAPI log, either for all [*device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) or for individual device installation applications.
+
+You can control the amount of information that is written to the SetupAPI log, either for all *device installation applications* or for individual device installation applications.
 
 To change the level of information written to the SetupAPI log for all device installation applications, create (or modify) the following registry value:
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\LogLevel
 ```
 
@@ -29,11 +26,11 @@ By setting this value (using the values listed in the tables below) you can choo
 
 To specify logging levels for individual device installation applications, create a registry entry under the following key:
 
-```
+```cpp
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\AppLogLevels
 ```
 
-Under this key, create a value name representing the application's executable file name, and assign the desired logging level to that name (using the values listed in the tables below), such as **service.exe=***LoggingLevel*.
+Under this key, create a value name representing the application's executable file name, and assign the desired logging level to that name (using the values listed in the tables below), such as **service.exe=**<em>LoggingLevel</em>.
 
 The logging level is a DWORD value. If this value is not specified or is zero, SetupAPI uses a default behavior, as indicated in the tables below.
 
@@ -96,7 +93,7 @@ The following tables contain the general logging levels, device installation log
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -153,7 +150,7 @@ The following tables contain the general logging levels, device installation log
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -173,7 +170,7 @@ The following tables contain the general logging levels, device installation log
 </tr>
 <tr class="even">
 <td align="left"><p>0x20000000</p></td>
-<td align="left"><p>(<em>Windows XP and later</em>) Don't flush logging information to disk after each entry is written. (Logging is faster, but information could be lost if the system crashes.)</p></td>
+<td align="left"><p>(<em>Windows XP and later</em>) Don&#39;t flush logging information to disk after each entry is written. (Logging is faster, but information could be lost if the system crashes.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x40000000</p></td>
@@ -186,7 +183,7 @@ The following tables contain the general logging levels, device installation log
 </tbody>
 </table>
 
- 
+ 
 
 For example, SetupAPI interprets some sample *LoggingFlags* values as follows:
 
@@ -206,16 +203,16 @@ To modify the default SetupAPI logging levels during a clean installation, edit 
 
 4.  Find the registry hives (files) in *D:\\Winnt\\System32\\config*. In this case, you need to modify the registry hive in *Software.sav*.
 
-5.  On Windows 2000, run *Regedt32*, select the "HKEY\_LOCAL\_MACHINE on Local Machine" window, and select the HKEY\_LOCAL\_MACHINE key. Then click the **Registry** menu and select **Load Hive**.
+5.  On Windows 2000, run *Regedt32*, select the "HKEY_LOCAL_MACHINE on Local Machine" window, and select the HKEY_LOCAL_MACHINE key. Then click the **Registry** menu and select **Load Hive**.
 
-    On Windows XP and later, run *RegEdit*. Highlight HKEY\_LOCAL\_MACHINE, click the **File** menu and select **Load Hive**.
+    On Windows XP and later, run *RegEdit*. Highlight HKEY_LOCAL_MACHINE, click the **File** menu and select **Load Hive**.
 
-6.  Browse the files and select *D:\\Winnt\\System32\\config\\software.sav*. When prompted for key name, enter "\_sw.sav "
+6.  Browse the files and select *D:\\Winnt\\System32\\config\\software.sav*. When prompted for key name, enter "_sw.sav "
 
-7.  Open the \_sw.sav key under HKEY\_LOCAL\_MACHINE and highlight the following key:
+7.  Open the _sw.sav key under HKEY_LOCAL_MACHINE and highlight the following key:
 
-    ```
-    HKEY_LOCAL_MACHINE\_sw.sav\Microsoft\Windows\CurrentVersion\Setup
+    ```cpp
+    HKEY_LOCAL_MACHINE_sw.sav\Microsoft\Windows\CurrentVersion\Setup
     ```
 
     On Windows 2000, click the **Security** menu, select **Permissions**, and grant full control to Administrator.
@@ -228,7 +225,7 @@ To modify the default SetupAPI logging levels during a clean installation, edit 
 
     Enter the value. For example, add "0xFFFF" to enable full verbose logging.
 
-9.  Select HKEY\_LOCAL\_MACHINE\\\_sw.sav, and unload the hive (using the **Registry** menu on Windows 2000, or the **File** menu on Windows XP and later)The \_sw.sav key should disappear.
+9.  Select HKEY_LOCAL_MACHINE\\_sw.sav, and unload the hive (using the **Registry** menu on Windows 2000, or the **File** menu on Windows XP and later)The _sw.sav key should disappear.
 
 10. Copy *D:\\Winnt\\System32\\config\\software.sav* to *D:\\Winnt\\System32\\config\\software*.
 
@@ -236,9 +233,9 @@ To modify the default SetupAPI logging levels during a clean installation, edit 
 
 12. To verify this change, press SHIFT+F10 in GUI-mode Setup, then run *regedit.exe* and check the logging level.
 
- 
+ 
 
- 
+ 
 
 
 

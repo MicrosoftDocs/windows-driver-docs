@@ -2,11 +2,8 @@
 title: PwrTest Requests Scenario
 description: The PwrTest Requests Scenario logs power requests from processes and services running in the system as they happen.
 ms.assetid: 4B082680-5C43-45F6-9A0E-0C23E9B1F282
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PwrTest Requests Scenario
@@ -16,7 +13,7 @@ The PwrTest Requests Scenario logs power requests from processes and services ru
 
 You can use the PwrTest Requests Scenario to diagnose why a computer doesn't go to sleep or why the monitor stays on.
 
-You could also use the administrator tool [PowerCfg](http://go.microsoft.com/fwlink/p/?linkid=294568) (powercfg.exe) for this purpose (**powercfg.exe /requests**). PowerCfg is included with Windows (Windows\\System32 directory). However, Powercfg.exe only captures the power requests that are active at the time you run the tool. In contrast, the PwrTest Requests Scenario runs for a specified time and logs power requests as they are created and closed, so the requests don’t need to be active when the tool is run.
+You could also use the administrator tool [PowerCfg](https://go.microsoft.com/fwlink/p/?linkid=294568) (powercfg.exe) for this purpose (**powercfg.exe /requests**). PowerCfg is included with Windows (Windows\\System32 directory). However, Powercfg.exe only captures the power requests that are active at the time you run the tool. In contrast, the PwrTest Requests Scenario runs for a specified time and logs power requests as they are created and closed, so the requests don’t need to be active when the tool is run.
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
@@ -25,7 +22,7 @@ You could also use the administrator tool [PowerCfg](http://go.microsoft.com/fwl
 pwrtest /requests [/t:n] [/?] 
 ```
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
 **Examples**
@@ -135,7 +132,7 @@ The following table describes the XML elements that appear in the log file.
 </tr>
 <tr class="odd">
 <td align="left"><strong>&lt;Legacy&gt;</strong></td>
-<td align="left"><p>Reports True or False if the caller used legacy [<strong>SetThreadExecutionState function (Windows)</strong>](https://msdn.microsoft.com/library/windows/desktop/aa373208) or [<strong>PoSetSystemState</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559768) APIs or the newer [<strong>PowerSetRequest function (Windows)</strong>](https://msdn.microsoft.com/library/windows/desktop/dd405534) or [<strong>PoSetPowerRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559762) APIs.</p></td>
+<td align="left"><p>Reports True or False if the caller used legacy <a href="https://msdn.microsoft.com/library/windows/desktop/aa373208" data-raw-source="[&lt;strong&gt;SetThreadExecutionState function (Windows)&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa373208)"><strong>SetThreadExecutionState function (Windows)</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559768" data-raw-source="[&lt;strong&gt;PoSetSystemState&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559768)"><strong>PoSetSystemState</strong></a> APIs or the newer <a href="https://msdn.microsoft.com/library/windows/desktop/dd405534" data-raw-source="[&lt;strong&gt;PowerSetRequest function (Windows)&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/dd405534)"><strong>PowerSetRequest function (Windows)</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559762" data-raw-source="[&lt;strong&gt;PoSetPowerRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559762)"><strong>PoSetPowerRequest</strong></a> APIs.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;SystemAllowed&gt;</strong></td>
@@ -192,20 +189,19 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
-[PowerCfg](http://go.microsoft.com/fwlink/p/?linkid=294568)
+[PowerCfg](https://go.microsoft.com/fwlink/p/?linkid=294568)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20PwrTest%20Requests%20Scenario%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

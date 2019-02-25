@@ -1,6 +1,5 @@
 ---
 title: Array Template Data Types
-author: windows-driver-content
 description: Array Template Data Types
 ms.assetid: d6be4ec3-1980-4e55-bd52-5249cd93deb8
 keywords:
@@ -13,11 +12,8 @@ keywords:
 - ElementTags directive WDK GDL
 - ArraySize directive WDK GDL
 - ArrayLabel directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Array Template Data Types
@@ -51,7 +47,7 @@ The following directives are used to define the ARRAY data type:
 
 Consider the following template.
 
-```
+```GDL
 *Template:  RECTANGLE
 {
     *Type:  DATATYPE
@@ -71,13 +67,13 @@ This template defines a fixed-size, array of four integers. The array is assigne
 
 Consider the following GDL entry.
 
-```
+```GDL
 *ImageableArea:   rect( - 10, 20 , +30, 0x40  )  
 ```
 
 And consider the IMAGERECT template.
 
-```
+```GDL
 *Template:  IMAGERECT
 {
     *Name:  "*ImageableArea"
@@ -88,7 +84,7 @@ And consider the IMAGERECT template.
 
 If the GDL entry is interpreted by the IMAGERECT template, the resulting XML output will be.
 
-```
+```xml
 <GDL_ATTRIBUTE Name="*ImageableArea"  >
 <left  xsi:type="GDLW_int">-10</left>
    <top  xsi:type="GDLW_int">20</top>
@@ -98,13 +94,3 @@ If the GDL entry is interpreted by the IMAGERECT template, the resulting XML out
 ```
 
 Note that the reference is to the wrapped type **GDLW\_int** rather than the original **int**.
-
- 
-
- 
-
-
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Array%20Template%20Data%20Types%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-

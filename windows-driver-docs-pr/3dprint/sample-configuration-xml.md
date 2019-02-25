@@ -1,19 +1,15 @@
 ---
 title: Sample configuration XML
-author: windows-driver-content
 description: Use the sample configuration XML in this topic to develop configuration files for your device.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample configuration XML
 
 You can use the following example configuration XML to develop the configuration files for your device.
 
-```
+```xml
 <?xml version="1.0"?>
 <PrintDeviceCapabilities
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -153,7 +149,7 @@ You can use the following example configuration XML to develop the configuration
           <psk3dx:log>c:\windows\temp\3DPrint\StandardGCode.log</psk3dx:log>
         </psk3dx:debug>
       -->  
-    
+
       <psk3dx:communication>
         <!-- communication parameters -->
         <psk3dx:connection name="serialport">
@@ -226,7 +222,7 @@ You can use the following example configuration XML to develop the configuration
         <psk3dx:layer>
           <psk3dx:command>M106 S$rampup$</psk3dx:command>
         </psk3dx:layer>
-        
+
       </psk3dx:customcommands>
 
       <psk3dx:print>
@@ -242,7 +238,7 @@ You can use the following example configuration XML to develop the configuration
           <psk3dx:filllow>0.15</psk3dx:filllow> <!-- low density sparse infill fraction (between 0 and 1, inclusive) -->
           <psk3dx:fillmedium>0.25</psk3dx:fillmedium> <!-- medium density sparse infill fraction (between 0 and 1, inclusive) -->
           <psk3dx:fillhigh>0.40</psk3dx:fillhigh> <!-- high density sparse infill fraction (between 0 and 1, inclusive) -->
-          <psk3dx:fillangle>45</psk3dx:fillangle> <!-- intial fill angle (degrees) -->
+          <psk3dx:fillangle>45</psk3dx:fillangle> <!-- initial fill angle (degrees) -->
           <psk3dx:filloverlap>0.15</psk3dx:filloverlap> <!-- infill overlap (between 0 and 1 of the path width, inclusive) -->
           <psk3dx:speed>75000</psk3dx:speed> <!-- speed of normal printing movements (micron/s) -->
           <psk3dx:speedouter>45000</psk3dx:speedouter> <!-- speed of outer perimeter (micron/s) -->
@@ -279,7 +275,7 @@ You can use the following example configuration XML to develop the configuration
           <psk3dx:filllow>0.15</psk3dx:filllow> <!-- low density sparse infill fraction (between 0 and 1, inclusive) -->
           <psk3dx:fillmedium>0.30</psk3dx:fillmedium> <!-- medium density sparse infill fraction (between 0 and 1, inclusive) -->
           <psk3dx:fillhigh>0.45</psk3dx:fillhigh> <!-- high density sparse infill fraction (between 0 and 1, inclusive) -->
-          <psk3dx:fillangle>45</psk3dx:fillangle> <!-- intial fill angle (degrees) -->
+          <psk3dx:fillangle>45</psk3dx:fillangle> <!-- initial fill angle (degrees) -->
           <psk3dx:filloverlap>0.15</psk3dx:filloverlap> <!-- infill overlap (between 0 and 1 of the path width, inclusive) -->
           <psk3dx:speed>70000</psk3dx:speed> <!-- speed of normal printing movements (micron/s) -->
           <psk3dx:speedouter>30000</psk3dx:speedouter> <!-- speed of outer perimeter (micron/s) -->
@@ -314,7 +310,7 @@ You can use the following example configuration XML to develop the configuration
           <psk3dx:filllow>0.10</psk3dx:filllow> <!-- low density sparse infill fraction (between 0 and 1, inclusive) -->
           <psk3dx:fillmedium>0.20</psk3dx:fillmedium> <!-- medium density sparse infill fraction (between 0 and 1, inclusive) -->
           <psk3dx:fillhigh>0.35</psk3dx:fillhigh> <!-- high density sparse infill fraction (between 0 and 1, inclusive) -->
-          <psk3dx:fillangle>45</psk3dx:fillangle><!-- intial fill angle (degrees) -->
+          <psk3dx:fillangle>45</psk3dx:fillangle><!-- initial fill angle (degrees) -->
           <psk3dx:filloverlap>0.15</psk3dx:filloverlap><!-- infill overlap (between 0 and 1 of the path width, inclusive) -->
           <psk3dx:speed>100000</psk3dx:speed><!-- speed of normal printing movements (micron/s) -->
           <psk3dx:speedouter>100000</psk3dx:speedouter><!-- speed of outer perimeter (micron/s) -->
@@ -344,10 +340,7 @@ You can use the following example configuration XML to develop the configuration
   </psk3dx:MS3DPrinter>
 
 </PrintDeviceCapabilities>
-
 ```
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Slicer%20settings%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

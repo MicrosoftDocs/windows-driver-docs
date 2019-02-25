@@ -2,11 +2,8 @@
 title: Handling Multiple Locks
 description: Handling Multiple Locks
 ms.assetid: d62b9577-d78f-431d-a5bf-c06c9be345c0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Multiple Locks
@@ -18,11 +15,10 @@ A user-mode display driver must not fail a call to its [**LockAsync**](https://m
 
 The user-mode display driver cannot fail a call to its [**UnlockAsync**](https://msdn.microsoft.com/library/windows/hardware/ff570105) function unless the resource that the [**D3DDDIARG\_UNLOCKASYNC**](https://msdn.microsoft.com/library/windows/hardware/ff543395) structure describes was not actually locked by a previous call to the driver's *LockAsync* function. Similarly, the driver cannot fail a call to its [**Unlock**](https://msdn.microsoft.com/library/windows/hardware/ff570104) function unless the resource that the [**D3DDDIARG\_UNLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff543394) structure describes was not actually locked by a previous call to the driver's *Lock* function. In situations in which the resources were not previously locked, *UnlockAsync* and *Unlock* return E\_INVALIDARG.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Handling%20Multiple%20Locks%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

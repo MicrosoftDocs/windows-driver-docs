@@ -9,11 +9,8 @@ keywords:
 - digital signatures WDK , callout drivers
 - signatures WDK , callout drivers
 - signing drivers WDK , callout drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Digital Signatures for Callout Drivers
@@ -26,9 +23,9 @@ For more information, see the following topics:
 -   [Driver Signing](https://msdn.microsoft.com/library/windows/hardware/ff544865)
 -   [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613)
 
- 
+ 
 
- 
+ 
 
 
 

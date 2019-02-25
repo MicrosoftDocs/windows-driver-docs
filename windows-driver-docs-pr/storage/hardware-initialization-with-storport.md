@@ -1,13 +1,9 @@
 ---
 title: Hardware Initialization with Storport
-author: windows-driver-content
 description: Hardware Initialization with Storport
 ms.assetid: 98930338-d192-4b25-a558-01614ef9662b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Hardware Initialization with Storport
@@ -22,11 +18,10 @@ For the most part, the Storport version of the HW\_INITIALIZATION\_DATA structur
 
 As indicated in the section [Use of Mapping Buffers in the Storport I/O Model](use-of-mapping-buffers-in-the-storport-i-o-model.md), the **MapBuffers** member of both HW\_INITIALIZATION and PORT\_CONFIGURATION\_INFORMATION has a different meaning in the Storport case from that in the SCSI Port case.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -1,20 +1,18 @@
 ---
-title: Determining Whether a VidPN is Supported on a Display Adapter
-description: Determining Whether a VidPN is Supported on a Display Adapter
+title: Determining VidPN support on a Display Adapter
+description: This topic describes how the display miniport driver determines whether a particular video present network (VidPN) is supported on a display adapter.
 ms.assetid: ebf001fb-e445-4534-8e89-60e1b06b2d6e
 keywords:
 - video present networks WDK display , determining if supported
 - VidPN WDK display , determining if supported
 - functional VidPN WDK display
 - determining VidPN supported WDK display
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 12/06/2018
+ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Determining Whether a VidPN is Supported on a Display Adapter
+# Determining VidPN support on a Display Adapter
 
 
 This topic describes how the display miniport driver determines whether a particular video present network (VidPN) is supported on a display adapter. Before reading this material, you should be familiar with the material in the following topics:
@@ -41,11 +39,10 @@ Part of determining whether a VidPN is supported is determining whether the VidP
 
 From time to time, the VidPN manager calls [**DxgkDdiIsSupportedVidPn**](https://msdn.microsoft.com/library/windows/hardware/ff559684) to ask the display miniport driver whether a certain VidPN is supported on a display adapter. One of the arguments passed to **DxgkDdiIsSupportedVidPn** is a handle to a VidPN object called the desired VidPN. **DxgkDdiIsSupportedVidPn** must inspect the topology of the desired VidPN and must take note of which video present sources and targets in the desired VidPN already have pinned modes. Then it must return a Boolean value that indicates whether the desired VidPN is supported (according to the definition given previously in this topic). For information about inspecting the topology, source mode sets, and target mode sets of a VidPN, see [VidPN Objects and Interfaces](vidpn-objects-and-interfaces.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Determining%20Whether%20a%20VidPN%20is%20Supported%20on%20a%20Display%20Adapter%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

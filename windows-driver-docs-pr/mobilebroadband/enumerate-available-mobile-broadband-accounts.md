@@ -2,11 +2,8 @@
 title: Enumerate available mobile broadband accounts
 description: Enumerate available mobile broadband accounts
 ms.assetid: 6dcf4789-09e8-43d2-9617-a026cbe0dfbb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enumerate available mobile broadband accounts
@@ -33,18 +30,17 @@ Account watcher objects automatically stop when the app is suspended by Windows,
 
 [**MobileBroadbandAccountWatcher**](https://msdn.microsoft.com/library/windows/apps/hh770597) objects are independent of each other. This means that you cannot depend on all watchers reporting the same set of events – as a group, they will report all events. However, any given watcher might not report any given event, because that event has been consumed by another watcher. Unless you have good reason, you should use only one account watcher object per app.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Enumerate%20available%20mobile%20broadband%20accounts%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

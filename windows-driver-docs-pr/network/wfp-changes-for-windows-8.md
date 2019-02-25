@@ -2,11 +2,8 @@
 title: WFP Changes for Windows 8
 description: WFP Changes for Windows 8
 ms.assetid: B83EC5A5-6169-49AB-A7EC-F2078AA0735E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WFP Changes for Windows 8
@@ -59,9 +56,9 @@ Several changes have been made in the available functions and behavior of the Wi
     - [**FWPS\_FIELDS\_INBOUND\_MAC\_FRAME\_ETHERNET**](https://msdn.microsoft.com/library/windows/hardware/ff551291) (was **FWPS\_FIELDS\_INBOUND\_MAC\_FRAME\_802\_3**)
     - [**FWPS\_FIELDS\_OUTBOUND\_MAC\_FRAME\_ETHERNET**](https://msdn.microsoft.com/library/windows/hardware/ff551334) (was **FWPS\_FIELDS\_OUTBOUND\_MAC\_FRAME\_802\_3**)
 
- 
+ 
 
- 
+ 
 
 
 

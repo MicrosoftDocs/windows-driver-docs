@@ -1,16 +1,12 @@
 ---
 title: Using the SCSI Port WMI Library
-author: windows-driver-content
 description: Using the SCSI Port WMI Library
 ms.assetid: cb55bbb3-39bb-491f-a6d2-50dceace4a86
 keywords:
 - WMI SRBs WDK storage , SCSI Port WMI library
 - SCSI Port WMI library WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the SCSI Port WMI Library
@@ -39,7 +35,7 @@ When the miniport driver is initialized, it must fill a [**SCSI\_WMILIB\_CONTEXT
 
 The **GuidList** member of the SCSI\_WMILIB\_CONTEXT structure must point to an array of elements of type [**SCSIWMIGUIDREGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff564941) that contain information about the GUIDs that uniquely identify the supported WMI classes defined in the MOF file. The following code snippet illustrates the definition of an array of such elements:
 
-```
+```cpp
 SCSIWMIGUIDREGINFO GuidList[] = 
 {
   {
@@ -59,11 +55,10 @@ The array contains information about the GUIDs of two WMI classes, **HBAStatisti
 
 The WMI tool suite generates the name of the symbolic constant for the GUID by concatenating a suffix of "GUID" to the name of the WMI class. For instance, for the class **HBAStatistics,** the tool will create a symbolic constant called **HBAStatisticsGUID** that represents the GUID for that class.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -1,15 +1,11 @@
 ---
 title: WDF_DECLARE_CONTEXT_TYPE macro
-author: windows-driver-content
 description: The WDF_DECLARE_CONTEXT_TYPE macro creates a name and an accessor method for a driver's object-specific context space.
 ms.assetid: 5fd9950e-943a-4340-b8f1-125343effdf7
 keywords:
  - WDF_DECLARE_CONTEXT_TYPE macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDF_DECLARE_CONTEXT_TYPE macro
@@ -24,7 +20,7 @@ Syntax
 
 ```ManagedCPlusPlus
 void WDF_DECLARE_CONTEXT_TYPE(
-    _contexttype
+    _contexttype
 );
 ```
 
@@ -49,7 +45,7 @@ Examples
 
 The following code example defines a context structure (MY_REQUEST_CONTEXT) for a request object, registers the structure, and then invokes the WDF_DECLARE_CONTEXT_TYPE macro. The macro creates an accessor method for the context structure and names the method **WdfObjectGet_MY_REQUEST_CONTEXT**.
 
-```
+```cpp
 typedef struct _MY_REQUEST_CONTEXT {
   LIST_ENTRY ListEntry;
   WDFMEMORY Memory;
@@ -60,7 +56,7 @@ WDF_DECLARE_CONTEXT_TYPE(MY_REQUEST_CONTEXT)
 
 The following code example creates a request object, and then it uses the **WdfObjectGet_MY_REQUEST_CONTEXT** accessor method to obtain a pointer to the object's context space.
 
-```
+```cpp
 WDFREQUEST Request;
 WDF_OBJECT_ATTRIBUTES MyRequestObjectAttributes;
 PMY_REQUEST_CONTEXT pMyContext;
@@ -92,7 +88,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="https://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](https://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -116,9 +112,9 @@ Requirements
 
 [**WDF_DECLARE_CONTEXT_TYPE_WITH_NAME**](wdf-declare-context-type-with-name.md)
 
- 
+ 
 
- 
+ 
 
 
 

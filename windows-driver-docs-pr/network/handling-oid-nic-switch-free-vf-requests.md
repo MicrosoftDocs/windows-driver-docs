@@ -2,11 +2,8 @@
 title: Handling OID_NIC_SWITCH_FREE_VF Requests
 description: Handling OID_NIC_SWITCH_FREE_VF Requests
 ms.assetid: 56134421-6D3C-4A40-B7EE-FDB729D46DEB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling OID\_NIC\_SWITCH\_FREE\_VF Requests
@@ -28,11 +25,11 @@ If the PF miniport driver can successfully free the allocated software resources
 
 **Note**  NDIS guarantees that all the VFs allocated on the miniport are freed before NDIS issues an OID set request of [OID\_NIC\_SWITCH\_DELETE\_SWITCH](https://msdn.microsoft.com/library/windows/hardware/hh451817) to the PF miniport driver. When it handles this OID, the driver deletes a NIC switch on the network adapter.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

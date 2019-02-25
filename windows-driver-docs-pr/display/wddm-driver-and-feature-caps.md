@@ -2,11 +2,8 @@
 title: WDDM driver and feature caps
 description: This topic describes Windows Display Driver Model (WDDM) driver feature capabilities (caps).
 ms.assetid: 452ADF64-A5CC-4694-BE31-FBED29B32DC1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDDM driver and feature caps
@@ -24,7 +21,7 @@ This table lists the requirements for a driver to specify to Windows the WDDM dr
 | Display-Only     | Implement all the Display-specific DDIs and return a null pointer for all the Render-specific DDIs                                                                                                                                                         |
 | Render-Only      | Implement all the Render-specific DDIs and return a null pointer for all the Display-specific DDIs, or implement all the DDIs for a full WDDM driver but report DISPLAY\_ADAPTER\_INFO.NumVidPnSources = 0 and DISPLAY\_ADAPTER\_INFO.NumVidPnTargets = 0. |
 
- 
+ 
 
 This table lists all the feature capabilities visible to the Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) that WDDM 1.2 drivers are required to set. "M" indicates a mandatory feature, "O" indicates optional, and "NA" indicates not applicable. To read details about each feature, follow the link in the left column.
 
@@ -44,13 +41,12 @@ This table lists all the feature capabilities visible to the Microsoft DirectX g
 | [GDI Hardware Acceleration](gdi-hardware-acceleration.md): A required feature starting with WDDM 1.1                                            | M                    | M                  | NA                  | [**DXGK\_PRESENTATIONCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff562004).**SupportKernelModeCommandBuffer**                                                                                                                                 |
 | [GPU power management of idle states and active power](gpu-power-management-of-idle-and-active-power.md)                                        | O                    | O                  | O                   | If this feature is supported, the [*DxgkDdiSetPowerComponentFState*](https://msdn.microsoft.com/library/windows/hardware/hh451422) and [*DxgkDdiPowerRuntimeControlRequest*](https://msdn.microsoft.com/library/windows/hardware/hh451396) functions must be supported. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20WDDM%20driver%20and%20feature%20caps%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

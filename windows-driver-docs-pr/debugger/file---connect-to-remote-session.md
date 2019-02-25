@@ -3,11 +3,8 @@ title: File Connect to Remote Session
 description: File Connect to Remote Session
 ms.assetid: 82c4900f-846b-41fb-afdc-3c73b524af9c
 keywords: ["File Connect to Remote Session", "remote debugging through the debugger, File Connect to Remote Session"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # File | Connect to Remote Session
@@ -28,7 +25,7 @@ When you click **Connect to Remote Session**, the **Connect to Remote Debugger S
 
 To manually specify the remote connection parameters, enter one of the following strings in the **Connection string** box:
 
-```
+```text
 npipe:server=Server,pipe=PipeName[,password=Password] 
 
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6]
@@ -65,10 +62,10 @@ If you use the COM protocol, *BaudRate* should match the baud rate that you chos
 If you use the COM protocol, *COMChannel* should match the channel number that you chose when the server was created.
 
 <span id="Protocol"></span><span id="protocol"></span><span id="PROTOCOL"></span>*Protocol*  
-(Windows 2000 and later) If you use the SSL or SPIPE protocol, *Protocol* should match the secure protocol that you used when the server was created.
+If you use the SSL or SPIPE protocol, *Protocol* should match the secure protocol that you used when the server was created.
 
 <span id="Cert"></span><span id="cert"></span><span id="CERT"></span>*Cert*  
-(Windows 2000 and later) If you use the SSL or SPIPE protocol, you should use the identical **certuser=***Cert* or **machuser=***Cert* parameter that was used when the server was created.
+If you use the SSL or SPIPE protocol, you should use the identical **certuser=**<em>Cert</em> or **machuser=**<em>Cert</em> parameter that was used when the server was created.
 
 <span id="clicon"></span><span id="CLICON"></span>**clicon**  
 Specifies that the debugging server will try to connect to the client through a reverse connection. The client must use **clicon** if and only if the server is using **clicon**. In most cases, the debugging client is started before the debugging server when a reverse connection is used.
@@ -87,7 +84,7 @@ In the **Browse Remote Servers** dialog box, in the **Machine** text box, enter 
 
 The **Servers** area lists all of the debugging servers that are running on that computer. Select any of the listed servers and then press ENTER or click **OK**. (You can also double-click one of the listed servers.) The proper connection string for the debugging server that you selected will now appear in the **Connection string** box in the **Connect to Remote Debugger Session** dialog box.
 
-If the server is password-protected, the connection string includes **Password=\***. You must replace the asterisk (**\***) with the actual password.
+If the server is password-protected, the connection string includes **Password=\\**<em>. You must replace the asterisk (</em>*\***) with the actual password.
 
 After you specify the server and password, click **OK** to open the connection.
 
@@ -99,11 +96,10 @@ The list of servers does not include process servers and KD connection servers; 
 
 For more information and for other methods of joining a remote debugging session, see [**Activating a Debugging Client**](activating-a-debugging-client.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20File%20|%20Connect%20to%20Remote%20Session%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

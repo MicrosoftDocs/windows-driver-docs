@@ -2,11 +2,8 @@
 title: Step 1 The New Device is Identified
 description: Step 1 The New Device is Identified
 ms.assetid: e0df70ca-cea3-44a1-b5ff-407f72a216f9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Step 1: The New Device is Identified
@@ -27,11 +24,11 @@ For example, when a user plugs a wireless local area network (WLAN) adapter into
 
 1.  The device is detected by the USB hub driver. Based on information that it queries from the adapter, the hub driver creates a hardware ID for the device.
 
-    For example, the USB hub driver could create a hardware ID of USB\\VID\_1234&PID\_5678&REV\_0001 for the WLAN adapter, where:
+    For example, the USB hub driver could create a hardware ID of USB\\VID_1234&PID_5678&REV_0001 for the WLAN adapter, where:
 
-    -   VID\_1234 is the identifier of the vendor.
-    -   PID\_5678 is the product, or model, identifier of the device.
-    -   REV\_0001 is the revision identifier of the device.
+    -   VID_1234 is the identifier of the vendor.
+    -   PID_5678 is the product, or model, identifier of the device.
+    -   REV_0001 is the revision identifier of the device.
 
     For more information about the format of USB hardware IDs, see [Identifiers for USB Devices](identifiers-for-usb-devices.md).
 
@@ -43,9 +40,9 @@ For example, when a user plugs a wireless local area network (WLAN) adapter into
 
     For more information about this process, see [Step 2: A Driver for the Device is Selected](step-2--a-driver-for-the-device-is-selected.md).
 
- 
+ 
 
- 
+ 
 
 
 

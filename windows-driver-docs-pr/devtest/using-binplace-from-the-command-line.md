@@ -2,11 +2,8 @@
 title: Using BinPlace from the Command Line
 description: Using BinPlace from the Command Line
 ms.assetid: ed92fee5-d45c-437a-8c3f-de51b910c2ae
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using BinPlace from the Command Line
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 **Important**  The examples in this topic discuss the use of the BINPLACE\_PLACEFILE macro and the [BinPlace](binplace.md)[**place file**](place-file-syntax.md). This macro and file are obsolete in the Windows 7 version of the Windows Driver Kit and may not be supported in future versions of the WDK.
 
- 
+ 
 
 This topic provides examples of using BinPlace from the command-line.
 
@@ -54,7 +51,7 @@ When you pass an executable file name to BinPlace, it looks for its symbol files
 
 **Note**   If you specify a symbol file name explicitly, BinPlace will merely move it, not process it.
 
- 
+ 
 
 ```
 binplace -a -x -s d:\stripped -n g:\full g:\builddir\application.exe
@@ -80,11 +77,10 @@ binplace -a -x -s d:\stripped g:\builddir\mydriver.sys
 
 Here the class subdirectory is **\*/drivertree**. For the executable file, the asterisk (\*) is replaced with the processor type. Assuming you are running on an x86 computer, the executable file is placed in d:\\projectroot\\i386\\drivertree\\application.exe. The stripped symbol file is placed in g:\\full\\drivertree\\sys\\application.pdb, because the asterisk is ignored for a symbol file. Because the **-n** switch was omitted, the full symbol file is not placed anywhere.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Using%20BinPlace%20from%20the%20Command%20Line%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Passthrough Template Data Types
-author: windows-driver-content
 description: Passthrough Template Data Types
 ms.assetid: 9e5e6a12-5847-45fe-bee5-68944cd546d7
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - PASSTHROUGH data type WDK GDL
 - schemas WDK GDL , validating PASSTHROUGH data types
 - ArrayLabel directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Passthrough Template Data Types
@@ -31,7 +27,7 @@ If the XML syntax conflicts with the basic GDL syntax rules, the entire value (o
 
 For example, consider the following example template.
 
-```
+```cpp
 *Template:  ELEMENT_CONTENT
 {
     *Type:  DATATYPE
@@ -43,7 +39,7 @@ With the preceding template, the parser filter does not create an XSD schema dat
 
 Consider the following GDL entry.
 
-```
+```cpp
 *InLineXML:  <BeginValue:XML>
  <Cell CellOrdinal="0">
          <Value xsi:type="xsd:double">16890</Value>
@@ -55,7 +51,7 @@ Consider the following GDL entry.
 
 If the preceding entry is interpreted by using the earlier example template, the following XML output would occur.
 
-```
+```cpp
 <GDL_ATTRIBUTE Name="*InLineXML"  >
   <Cell CellOrdinal="0">
     <Value xsi:type="xsd:double">16890</Value>
@@ -67,12 +63,10 @@ If the preceding entry is interpreted by using the earlier example template, the
 
 If you want to validate the PASSTHROUGH instances by using an XML schema, you should use the [XSD\_DEFINED data type](xsd-template-data-types.md) instead of PASSTHROUGH, because the XSD\_DEFINED data type allows the XSD schema to be explicitly defined in the template and is integrated into the schema output by the parser.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Passthrough%20Template%20Data%20Types%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

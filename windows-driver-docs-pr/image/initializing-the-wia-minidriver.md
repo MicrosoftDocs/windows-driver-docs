@@ -1,19 +1,15 @@
 ---
 title: Initializing the WIA Minidriver
-author: windows-driver-content
 description: Initializing the WIA Minidriver
 ms.assetid: 9ccb136b-41f7-438a-9e07-1fd7c8971417
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing the WIA Minidriver
 
 
-## <a href="" id="ddk-initializing-the-wia-minidriver-si"></a>
+
 
 
 The first step in implementing the [IWiaMiniDrv interface](https://msdn.microsoft.com/library/windows/hardware/ff545027) is to initialize the minidriver and create a hierarchical tree of driver items. To do this, the WIA service calls the [**IWiaMiniDrv::drvInitializeWia**](https://msdn.microsoft.com/library/windows/hardware/ff544986) method each time a client application intends to use the device. If two or more applications are simultaneously using the device, the WIA service calls this method for each application. In this method, the minidriver typically does the following:
@@ -32,7 +28,7 @@ The **IWiaMiniDrv::drvInitializeWia** method also can be used to create and init
 
 **Note**   The [**IWiaMiniDrv::drvGetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff543977) method might be called before **IWiaMiniDrv::drvInitializeWia** is called. This can happen when the WIA service needs to query for event information before an application exists to use the device. The **IWiaMiniDrv::drvInitializeWia** method is called only when an application signals its intent to use the device.
 
- 
+ 
 
 ### Keeping Track of Application Connections
 
@@ -42,7 +38,7 @@ Why is this information useful? Often there are resources that drivers might nee
 
 **Note**   The **IWiaMiniDrv::drvInitializeWia** and **IWiaMiniDrv::drvUnInitializeWia** methods are used to inform drivers of application connections only. The WIA service can call other driver methods without first calling **IWiaMiniDrv::drvInitializeWia**, which means that the WIA service does not necessarily call **IWiaMiniDrv::drvUnInitializeWia** when it is done. The methods called are informational methods that do not require WIA items, such as [**IWiaMiniDrv::drvGetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff543977) and [**IWiaMiniDrv::drvGetWiaFormatInfo**](https://msdn.microsoft.com/library/windows/hardware/ff543986).
 
- 
+ 
 
 This section contains the following topics:
 
@@ -54,12 +50,10 @@ This section contains the following topics:
 
 [Reporting WIA Minidriver Status](reporting-wia-minidriver-status.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Initializing%20the%20WIA%20Minidriver%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -1,13 +1,9 @@
 ---
 title: SpbCx Interfaces
-author: windows-driver-content
 description: The SPB framework extension (SpbCx) has two interfaces.
 ms.assetid: 2449BB88-1912-43F9-97E6-B56158D92E55
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SpbCx Interfaces
@@ -62,15 +58,14 @@ In addition to simple read and write operations, the SpbCx I/O request interface
 
 The SpbCx I/O request interface supports the [**IOCTL\_SPB\_LOCK\_CONTROLLER**](https://msdn.microsoft.com/library/windows/hardware/hh450858) and [**IOCTL\_SPB\_UNLOCK\_CONTROLLER**](https://msdn.microsoft.com/library/windows/hardware/hh450859) I/O control codes, which lock and unlock the SPB controller. These lock and unlock requests provide another way for a client to perform an I/O transfer sequence. In this case, each read or write operation in the sequence is specified by a separate read or write request. While a client has the controller locked, other clients cannot access devices on the bus. Only the client that holds the lock can perform I/O operations on the bus. For this reason, clients should lock the controller only for brief periods. A client should never leave the controller locked after a transfer sequence completes. For more information, see [I/O Transfer Sequences](https://msdn.microsoft.com/library/windows/hardware/hh450890).
 
-In addition to the I/O control (IOCTL) codes that are supported by SpbCx, the SPB controller driver can support custom IOCTLs. Clients can send IOCTL requests to file objects that represent target devices on the bus, and these requests arrive in the I/O request queue that is managed by SpbCx. If SpbCx receives a request that that has an IOCTL code that it does not support, SpbCx passes the request directly to the controller driver, which performs all handling of the request.
+In addition to the I/O control (IOCTL) codes that are supported by SpbCx, the SPB controller driver can support custom IOCTLs. Clients can send IOCTL requests to file objects that represent target devices on the bus, and these requests arrive in the I/O request queue that is managed by SpbCx. If SpbCx receives a request that has an IOCTL code that it does not support, SpbCx passes the request directly to the controller driver, which performs all handling of the request.
 
 Kernel-mode clients of the SpbCx I/O request interface can send I/O requests at an interrupt request level (IRQL) of either PASSIVE\_LEVEL or DISPATCH\_LEVEL. User-mode clients can send I/O requests only at PASSIVE\_LEVEL. I/O completion can occur at PASSIVE\_LEVEL or DISPATCH\_LEVEL. All I/O requests can return STATUS\_PENDING.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

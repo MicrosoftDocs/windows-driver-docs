@@ -16,32 +16,16 @@ keywords:
 - filter drivers WDK networking , installation
 - NDIS filter drivers WDK , installation
 - components WDK network installations
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 12/03/2018
+ms.localizationpriority: medium
 ---
 
 # Installing and Upgrading Network Components
 
+This section discusses installing and upgrading network components in the following topics:
 
-## <a href="" id="ddk-installing-and-upgrading-components-ng"></a>
-
-
-This section discusses installing and upgrading network components and it includes the following topics:
-
-[Installing Network Components](installing-network-components2.md)
+[Process for Installing Network Components](installing-network-components2.md)
 
 [Notify Objects for Network Components](notify-objects-for-network-components.md)
 
 [Upgrading Network Components](upgrading-network-components.md)
-
- 
-
- 
-
-
-
-
-

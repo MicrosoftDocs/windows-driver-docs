@@ -6,17 +6,14 @@ keywords:
 - miniport drivers WDK networking , types
 - NDIS miniport drivers WDK , types
 - deserialized NDIS miniport drivers WDK networking
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 01/09/2019
+ms.localizationpriority: medium
 ---
 
 # Deserialized NDIS Miniport Drivers
 
 
-## <a href="" id="ddk-deserialized-ndis-miniport-drivers-ng"></a>
+
 
 
 All NDIS 6.0 and later drivers are *deserialized*.
@@ -25,7 +22,7 @@ A *deserialized NDIS miniport driver* serializes the operation of its own *Minip
 
 The deserialized driver model is the default model for NDIS miniport drivers. Connection-oriented miniport drivers, as well as miniport drivers with a WDM lower edge, must be deserialized drivers. When writing a new NDIS miniport driver, you should write a deserialized driver. If possible, you should also port older drivers to NDIS 6.0 or later. For more information about porting drivers, see:
 
--   [Porting NDIS 5.x Drivers to NDIS 6.0](porting-ndis-5-x-drivers-to-ndis-6-0.md)
+-   [Porting NDIS 5.x Drivers to NDIS 6.0](https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0)
 -   [Porting NDIS 6.x Drivers to NDIS 6.20](porting-ndis-6-x-drivers-to-ndis-6-20.md)
 -   [Porting NDIS 6.x Drivers to NDIS 6.30](porting-ndis-6-x-drivers-to-ndis-6-30.md)
 
@@ -55,9 +52,9 @@ For more information about send and receive requirements for NDIS drivers, see [
 
 Note that a deserialized miniport driver usually completes send requests in protocol-determined order. However, a miniport driver that supports packet priority (for example, IEEE 802.1p) can reorder send requests based on priority information.
 
- 
+ 
 
- 
+ 
 
 
 

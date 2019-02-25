@@ -5,17 +5,14 @@ ms.assetid: B601982E-FCD6-4932-813C-A68B2F15FC5C
 keywords:
 - software keys WDK device installations , opening for all devices in a setup class
 - setup classes WDK device installations , opening software keys for devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Opening Software Keys for All Devices in a Setup Class
 
 
-When a user-mode application opens the [*software keys*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-key) for all devices in a device setup class, it must not directly access the registry to enumerate the subkeys of a device setup class. As with any registry key, the location and name of this key might change between different versions of Windows.
+When a user-mode application opens the *software keys* for all devices in a device setup class, it must not directly access the registry to enumerate the subkeys of a device setup class. As with any registry key, the location and name of this key might change between different versions of Windows.
 
 To safely enumerate and open the subkeys of a device setup class, follow these steps:
 
@@ -23,15 +20,15 @@ To safely enumerate and open the subkeys of a device setup class, follow these s
 
 2.  Use [**SetupDiEnumDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff551010) to enumerate all devices in the set.
 
-3.  Use [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) to open the software key for each device. The *KeyType* parameter must be set to DIREG\_DRV.
+3.  Use [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) to open the software key for each device. The *KeyType* parameter must be set to DIREG_DRV.
 
 **Note**  Some devices might not have software keys, such as when a device is present and enumerated by the [Plug and Play (PnP) manager](pnp-manager.md) but has not been installed.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

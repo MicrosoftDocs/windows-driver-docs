@@ -1,8 +1,9 @@
 ---
 title: Platform Performance Thresholds
-author: windows-driver-content
 description: There are two types of performance thresholds - static thresholds which remain fixed for the platform and dynamic thresholds that change at runtime.
 ms.assetid: 4FB3AFEF-1560-4683-9D57-3029DAA50FE8
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Platform Performance Thresholds
@@ -26,7 +27,7 @@ The absolute lowest performance level of the platform. Selecting a performance l
 
 **Note**  All static performance levels do not need to be distinct. A platform's nominal performance level may also be its highest performance level, for example.
 
- 
+ 
 
 The platform may optionally also express a dynamic performance threshold, the *Guaranteed Performance* threshold. If present, this represents the maximum sustained performance level of a processor, taking into account all known external constraints (power budgeting, thermal constraints, power source, etc.). All processors are expected to be able to sustain their guaranteed performance levels simultaneously for at least one second. The guaranteed performance level is required to fall in the range \[Lowest Performance, Nominal performance\], inclusive.
 
@@ -35,12 +36,10 @@ The platform may optionally also express a dynamic performance threshold, the *G
 
 The PEP must use the same performance scale for all processors in the system. On platforms with heterogeneous processors, the performance characteristics of all processors may not be identical. In this case, the PEP must synthesize a performance scale that adjusts for differences in processors, such that any two processors running the same workload at the same performance level will complete in approximately the same time. The PEP should expose different capabilities for different classes of processors, so as to accurately reflect the performance characteristics of each processor.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Platform%20Performance%20Thresholds%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -6,17 +6,14 @@ keywords:
 - blocking calls WDK SANs
 - Windows Sockets Direct WDK , blocking calls
 - SAN blocking calls WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Blocking Calls for a SAN
 
 
-## <a href="" id="ddk-blocking-calls-for-a-san-ng"></a>
+
 
 
 The Windows Sockets switch handles blocking calls and the cancellation of such calls internally or forwards them to the TCP/IP service provider. The switch never calls a **WSPCancelBlockingCall** function for a SAN service provider to cancel a blocking request that is in progress. Therefore, a SAN service provider is not required to implement a **WSPCancelBlockingCall** function.
@@ -29,11 +26,11 @@ The switch handles the following blocking requests and corresponding cancellatio
 
 **Note**  If an application cancels a blocking call, it cannot rely on a connection being preserved. Only the **WSPCloseSocket** call is guaranteed to succeed on the socket after the cancellation of a blocking request. For more information, see the Windows Sockets SPI documentation in the Microsoft Windows SDK.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

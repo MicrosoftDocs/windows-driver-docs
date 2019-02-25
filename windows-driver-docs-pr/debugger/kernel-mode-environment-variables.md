@@ -3,11 +3,8 @@ title: Kernel-Mode Environment Variables
 description: Kernel-Mode Environment Variables
 ms.assetid: 619ebe55-1b57-4182-ada9-0c99c78056b3
 keywords: ["environment variables, kernel-mode", "_NT_DEBUG_PORT environment variable", "_NT_DEBUG_BAUD_RATE environment variable", "KDQUIET environment variable", "_NT_DEBUG_CACHE_SIZE environment variable", "_NT_DEBUG_BUS environment variable", "_NT_DEBUG_1394_CHANNEL environment variable", "_NT_DEBUG_1394_SYMLINK environment variable", "_NT_DEBUG_OPTIONS environment variable"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Kernel-Mode Environment Variables
@@ -32,7 +29,7 @@ The following table lists the environment variables that are used only in kernel
 <tbody>
 <tr class="odd">
 <td align="left"><p>_NT_DEBUG_PORT = <em>ComPort</em></p></td>
-<td align="left"><p>Specifies the COM port to be used in a kernel connection. For details, see [Getting Set Up for Debugging](getting-set-up-for-debugging.md).</p></td>
+<td align="left"><p>Specifies the COM port to be used in a kernel connection. For details, see <a href="getting-set-up-for-debugging.md" data-raw-source="[Getting Set Up for Debugging](getting-set-up-for-debugging.md)">Getting Set Up for Debugging</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>_NT_DEBUG_BAUD_RATE = <em>BaudRate</em></p></td>
@@ -54,9 +51,9 @@ The following table lists the environment variables that are used only in kernel
 <td align="left"><p>KDQUIET =<em>Anything</em></p></td>
 <td align="left"><p>If KDQUIET is defined, the debugger will run in <em>quiet mode</em>. Quiet mode involves three distinct effects:</p>
 <p>1. The debugger does not display messages each time an extension DLL is loaded or unloaded.</p>
-<p>2. The [<strong>r (Registers)</strong>](r--registers-.md) command no longer requires an equal sign in its syntax.</p>
+<p>2. The <strong><a href="r--registers-.md" data-raw-source="[r (Registers)](r--registers-.md)">r (Registers)</a></strong> command no longer requires an equal sign in its syntax.</p>
 <p>3. The debugger will not display a warning message when breaking into the target computer.</p>
-<p>Quiet mode can also be controlled by using the [<strong>sq (Set Quiet Mode)</strong>](sq--set-quiet-mode-.md) command.</p></td>
+<p>Quiet mode can also be controlled by using the <strong><a href="sq--set-quiet-mode-.md" data-raw-source="[sq (Set Quiet Mode)](sq--set-quiet-mode-.md)">sq (Set Quiet Mode)</a></strong> command.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p>
@@ -70,22 +67,21 @@ _NT_DEBUG_CACHE_SIZE
 <p>NOEXTWARNING tells the debugger not to output a warning when it cannot find an extension command.</p>
 <p>NOVERSIONCHECK tells the debugger not to check the version of debugger extensions.</p>
 <p></p>
-<p>These options can be modified or displayed by using the [<strong>so (Set Kernel Options)</strong>](so--set-kernel-debugging-options-.md) command.</p></td>
+<p>These options can be modified or displayed by using the <strong><a href="so--set-kernel-debugging-options-.md" data-raw-source="[so (Set Kernel Options)](so--set-kernel-debugging-options-.md)">so (Set Kernel Options)</a></strong> command.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>_NT_KD_FILES = <em>MapFile</em></p></td>
-<td align="left"><p>Specifies a driver replacement map file. For details and for other methods of controlling driver replacement, see [Mapping Driver Files](mapping-driver-files.md).</p></td>
+<td align="left"><p>Specifies a driver replacement map file. For details and for other methods of controlling driver replacement, see <a href="mapping-driver-files.md" data-raw-source="[Mapping Driver Files](mapping-driver-files.md)">Mapping Driver Files</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Kernel-Mode%20Environment%20Variables%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

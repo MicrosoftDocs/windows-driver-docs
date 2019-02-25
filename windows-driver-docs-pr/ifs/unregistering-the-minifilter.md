@@ -1,15 +1,11 @@
 ---
 title: Unregistering the Minifilter
-author: windows-driver-content
 description: Unregistering the Minifilter
 ms.assetid: 4af2d4fd-bfbe-4a75-bbfb-2a1c4b5c2032
 keywords:
 - unregistering minifilters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unregistering the Minifilter
@@ -30,11 +26,10 @@ If there are outstanding rundown references on the minifilter driver's opaque fi
 
 Outstanding rundown references can also happen if the minifilter driver has called any routines that add a rundown reference to the minifilter driver's opaque filter pointer, such as [**FltObjectReference**](https://msdn.microsoft.com/library/windows/hardware/ff543382) or [**FltGetFilterFromInstance**](https://msdn.microsoft.com/library/windows/hardware/ff543049), but did not subsequently call [**FltObjectDereference**](https://msdn.microsoft.com/library/windows/hardware/ff543378).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

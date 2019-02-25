@@ -2,11 +2,8 @@
 title: New Information for WFP
 description: New Information for WFP
 ms.assetid: f3629e65-6a73-40d3-96c1-416f9bb82eb7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # New Information for WFP
@@ -22,9 +19,9 @@ This section includes the following topics:
 
 [WFP Changes for Windows Vista SP1 and Windows Server 2008](wfp-changes-for-windows-vista-sp1-and-windows-server-2008.md)
 
- 
+ 
 
- 
+ 
 
 
 

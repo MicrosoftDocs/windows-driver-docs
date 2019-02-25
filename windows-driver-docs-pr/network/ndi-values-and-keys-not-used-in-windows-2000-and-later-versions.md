@@ -1,27 +1,24 @@
 ---
-title: Ndi Values and Keys Not Used in Windows 2000 and Later Versions
-description: Ndi Values and Keys Not Used in Windows 2000 and Later Versions
+title: Deprecated Ndi Values and Keys 
+description: Ndi Values and Keys deprecated in Windows 2000 and Later Versions
 ms.assetid: 932e1c83-feb6-47a8-bed3-847ee4094b9e
 keywords:
 - add-registry-sections WDK networking , Ndi values and keys
 - Ndi key WDK networking
 - Ndi value WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
-# Ndi Values and Keys Not Used in Windows 2000 and Later Versions
+# Deprecated Ndi Values and Keys
 
 
-## <a href="" id="ddk-ndi-values-and-keys-not-used-in-windows-2000-and-later-versions-ng"></a>
 
 
-**Important**  The following **Ndi** registry keys and values are available in Windows 95/98/Me but are not used in Windows 2000 and later versions of the operating system. This information is provided to aid developers who are migrating network drivers from Windows 95/98/Me to Windows 2000 and later versions of the operating system.
 
- 
+**Important**  The following **Ndi** registry keys and values are no longer used in the Windows operating system. If you are migrating network drivers from Windows 95/98/Me to later versions of the operating system, do not use these values.
+
+ 
 
 **DeviceVxD**
 
@@ -39,7 +36,7 @@ ms.technology: windows-devices
 
 **Ndi\\DeviceID**
 
-**Ndi\\***filename*\\...
+**Ndi\\**<em>filename</em>\\...
 
 **Ndi\\Install**
 
@@ -55,11 +52,11 @@ ms.technology: windows-devices
 
 **Ndi\\NdiInstaller**
 
-**Ndi\\***param-key-name***\\resc**
+**Ndi\\**<em>param-key-name</em>**\\resc**
 
-**Ndi\\Params\\***param-key-name***\\flag**
+**Ndi\\Params\\**<em>param-key-name</em>**\\flag**
 
-**Ndi\\Params\\***param-key-name***\\location**
+**Ndi\\Params\\**<em>param-key-name</em>**\\location**
 
 **Ndi\\Remove**
 
@@ -67,11 +64,11 @@ ms.technology: windows-devices
 
 **StaticVxD**
 
-In particular, Windows 2000 does not support **Ndi\\***param-key-name***\\resc** and **Ndi\\Params\\***param-key-name***\\flag** values. This means that a user cannot specify adapter resources through the **Advanced** properties page.
+Because Windows does not support **Ndi\\**<em>param-key-name</em>**\\resc** and **Ndi\\Params\\**<em>param-key-name</em>**\\flag** values, a user cannot specify adapter resources through the **Advanced** properties page.
 
- 
+ 
 
- 
+ 
 
 
 

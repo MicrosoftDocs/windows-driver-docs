@@ -1,8 +1,9 @@
 ---
 title: Basic Calling Pattern for Version-3 DMA Routines
-author: windows-driver-content
 description: To perform a DMA transfer that uses the routines in version 3 of the DMA operations interface, your driver should follow the steps described in the following list.
 ms.assetid: 5D73120F-79F5-4C9A-8AE5-25D5CF9B06F5
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Basic Calling Pattern for Version-3 DMA Routines
@@ -24,7 +25,7 @@ The input parameters to this call describe the memory buffer to use for the tran
 
 The resource requirements obtained from this call include the number of map registers and the size of the scatter/gather list that is needed to describe the data buffer for the transfer. In the subsequent call to the [**AllocateAdapterChannelEx**](https://msdn.microsoft.com/library/windows/hardware/hh406340) routine (see [step 3](#step-3)), the driver supplies the map register count as an input parameter.
 
-## <a href="" id="step-3"></a>Step 3: Request the required DMA resources
+## Step 3: Request the required DMA resources
 
 
 The driver calls the [**AllocateAdapterChannelEx**](https://msdn.microsoft.com/library/windows/hardware/hh406340) routine to allocate resources to assign to the DMA adapter object. These resources include a DMA channel and map registers.
@@ -56,7 +57,7 @@ If **CancelAdapterChannel** returns TRUE, the resource request is successfully c
 
 If **CancelAdapterChannel** returns FALSE, the resource request cannot be canceled because it was already granted. If an execution routine was supplied in the **AllocateAdapterChannelEx** call, this routine will be called.
 
-## <a href="" id="step-5"></a>Step 5: Initialize the DMA resources and start the DMA transfer
+## Step 5: Initialize the DMA resources and start the DMA transfer
 
 
 The driver calls [**MapTransferEx**](https://msdn.microsoft.com/library/windows/hardware/hh406521) to initialize the DMA resources and to start the DMA transfer. This call might occur in the same driver thread that calls **AllocateAdapterChannelEx**, or it might occur in the execution routine that the driver supplies to **AllocateAdapterChannelEx**. If more than one **MapTransferEx** call is required to transfer the entire DMA data buffer, a later **MapTransferEx** call might occur in the completion routine for the previous **MapTransferEx** call.
@@ -83,7 +84,7 @@ When a DMA transfer completes, the driver is notified in one of these two ways:
 -   Execution of the driver-supplied completion routine, for a subordinate device that uses a system DMA controller
 
 For a system DMA transfer, a driver can supply a completion routine to **MapTransferEx** as an input parameter.
-## <a href="" id="step-8"></a>Step 8: Flush any data that remains in the cache
+## Step 8: Flush any data that remains in the cache
 
 
 After the DMA transfer completes, the driver must call the [**FlushAdapterBuffersEx**](https://msdn.microsoft.com/library/windows/hardware/hh451102) routine to flush any data that remains in the cache. The driver must call **FlushAdapterBuffersEx** after every **MapTransferEx** call.
@@ -100,12 +101,10 @@ After the entire DMA data buffer is successfully mapped and the final transfer c
 
 After all DMA transfers are complete and any previously allocated map registers are freed, the driver calls the [**PutDmaAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff559965) routine to release the adapter object.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Basic%20Calling%20Pattern%20for%20Version-3%20DMA%20Routines%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

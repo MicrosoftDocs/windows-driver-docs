@@ -4,11 +4,8 @@ description: Interaction Between OBMC and INTER4V in H.263
 ms.assetid: 096c723d-ec16-49f7-acaa-62ed228338c3
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interaction Between OBMC and INTER4V in H.263
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 ## <span id="ddk_interaction_between_obmc_and_inter4v_in_h_263_gg"></span><span id="DDK_INTERACTION_BETWEEN_OBMC_AND_INTER4V_IN_H_263_GG"></span>
 
 
-Some details about the interactions between H.263's [*OBMC*](https://msdn.microsoft.com/library/windows/hardware/ff556318#wdkgloss-obmc), *INTER4V*, *B*, *EP*, and B in PB frames may be helpful:
+Some details about the interactions between H.263's *OBMC*, *INTER4V*, *B*, *EP*, and B in PB frames may be helpful:
 
 -   No current configuration of the H.263 standard will exercise the case in which **bPicOBMC** is equal to 1, *Motion4MV* is equal to 1, and *MotionBackward* is equal to 1.
 
@@ -49,11 +46,10 @@ Bit (11- *i*) of **wPatternCode** (where bit zero is the least significant bit) 
 
 If the **bConfigSpatialResidInterleaved** member of [**DXVA\_ConfigPictureDecode**](https://msdn.microsoft.com/library/windows/hardware/ff563133) is 1, host-based residual differences are sent in a chroma-interleaved form matching that of the YUV pixel format in use. In this case, each Cb and spatially corresponding Cr pair of blocks is treated as a single residual difference structure unit. This does not alter the value or meaning of **wPatternCode**, but it implies that both members of each pair of Cb and Cr data blocks are sent whenever either of these data blocks has the corresponding bit (bit 7 or bit 6) set in **wPatternCode**. If the bit in **wPatternCode** for a particular data block is zero, the corresponding residual difference data values must be sent as zero whenever the pairing of the Cb and Cr blocks necessitates sending a residual difference data block for a block with a **wPatternCode** bit equal to zero.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Interaction%20Between%20OBMC%20and%20INTER4V%20in%20H.263%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

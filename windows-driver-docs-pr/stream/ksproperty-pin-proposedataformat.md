@@ -1,0 +1,111 @@
+---
+title: KSPROPERTY\_PIN\_PROPOSEDATAFORMAT
+description: Clients use the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT property to determine if pins instantiated by the pin factory support a specific data format.
+ms.assetid: f1657fd1-0988-48b8-95d0-c6026965848b
+keywords: ["KSPROPERTY_PIN_PROPOSEDATAFORMAT Streaming Media Devices"]
+topic_type:
+- apiref
+api_name:
+- KSPROPERTY_PIN_PROPOSEDATAFORMAT
+api_location:
+- ks.h
+api_type:
+- HeaderDef
+ms.date: 12/28/2018
+ms.localizationpriority: medium
+---
+
+# KSPROPERTY\_PIN\_PROPOSEDATAFORMAT
+
+
+Clients use the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT property to determine if pins instantiated by the pin factory support a specific data format.
+
+## <span id="ddk_ksproperty_pin_proposedataformat_ks"></span><span id="DDK_KSPROPERTY_PIN_PROPOSEDATAFORMAT_KS"></span>
+
+
+### Usage Summary Table
+
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Get</th>
+<th>Set</th>
+<th>Target</th>
+<th>Property Descriptor Type</th>
+<th>Property Value Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p>Filter</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561656" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561656)"><strong>KSDATAFORMAT</strong></a></p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+Remarks
+-------
+
+KSPROPERTY_PIN_PROPOSEDATAFORMAT includes a structure of type KSDATAFORMAT, specifying the proposed data format. Specify this property using KSP_PIN, where the member specifies the relevant pin factory.
+
+KSPROPERTY\_PIN\_PROPOSEDATAFORMAT includes a structure of type [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656), specifying the proposed data format.
+
+[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) is supported in Windows 7 and later versions of Windows. In Windows Vista **KSPROPERTY\_TYPE\_GET** is *not supported*. 
+
+**KSPROPERTY_TYPE_GET** with this property allows the audio driver to provide information about the default data format on a pin. **KSPROPERTY_TYPE_GET** 
+is optional to implement for this property unless the driver supports [**KSEVENT_PINCAPS_FORMATCHANGE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksevent-pincaps-formatchange). 
+ 
+
+The KS filter returns STATUS\_SUCCESS when using this property with KSPROPERTY_TYPE_SET if pins can be set to or opened with the proposed data format. If the pin cannot be set to the proposed data format, then it returns STATUS_NO_MATCH. For any other failures, an appropriate error is returned. If the driver supports [**KSPROPERTY_AUDIOSIGNALPROCESSING_MODES**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiosignalprocessing-modes), this property should return STATUS_SUCCESS if the format is supported by any of the Audio signal processing modes. 
+
+
+Using KSPROPERTY_TYPE_SET with this property does not actually change the data format. Clients use [**KSPROPERTY\_CONNECTION\_DATAFORMAT**](ksproperty-connection-dataformat.md) to change the data format. **KSPROPERTY_TYPE_SET** is optional to implement for this property.
+
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>Header</p></td>
+<td>Ks.h (include Ks.h)</td>
+</tr>
+</tbody>
+</table>
+
+## See also
+
+
+[**KSP\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff566722)
+
+[**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656)
+ 
+[**KSEVENT_PINCAPS_FORMATCHANGE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksevent-pincaps-formatchange)
+
+[**KS Properites**](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/ks-properties)
+
+[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+ 
+[**KSPROPERTY_AUDIOSIGNALPROCESSING_MODES**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiosignalprocessing-modes)
+
+
+
+
+

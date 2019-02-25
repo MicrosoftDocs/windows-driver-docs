@@ -2,17 +2,14 @@
 title: Standardized INF Keywords for Network Devices
 description: Standardized INF Keywords for Network Devices
 ms.assetid: F79AFB63-D404-4A5C-9515-82FFEB667048
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for Network Devices
 
 
-## <a href="" id="ddk-standardized-installation-keywords-for-ethernet-devices-ng"></a>
+
 
 
 This section provides information about standardized keywords that appear in the registry and are specified in INF files. NDIS 6.0 and later versions of NDIS support standardized keywords for miniport drivers in network devices.
@@ -43,13 +40,13 @@ Standardized keywords are required for NDIS 6.0 and later miniport drivers if bo
 
 **Note**  Standardized keywords are optional but recommended for NDIS 5.1 and earlier NDIS miniport drivers.
 
- 
+ 
 
 This section specifies the INF keywords that are exposed in the user interface. However, miniport drivers must read the registry settings during initialization to determine the current configuration settings.
 
 Within an INF file, definitions for these keywords are placed with the other definitions for the advanced properties page. For more information about advanced properties, see [Specifying Configuration Parameters for the Advanced Properties Page](specifying-configuration-parameters-for-the-advanced-properties-page.md).
 
-All standardized keyword names start with an asterisk (**\***). This naming convention enables you to easily distinguish standardized names from non-standard names.
+All standardized keyword names start with an asterisk (**\\***). This naming convention enables you to easily distinguish standardized names from non-standard names.
 
 There are three types of standardized keyword data that are exposed in the user interface:
 
@@ -73,8 +70,6 @@ The following topics include descriptions for the standardized keywords that are
 In addition, standardized keywords that are specific to networking technologies are described in the following topics:
 
 [INF File Settings for Filter Drivers](inf-file-settings-for-filter-drivers.md)
-
-[INF File Settings for Virtual WiFi](inf-file-settings-for-virtual-wifi.md)
 
 [INF Requirements for NDKPI](inf-requirements-for-ndkpi.md)
 
@@ -100,9 +95,9 @@ In addition, standardized keywords that are specific to networking technologies 
 
 [Standardized INF Keywords for Virtual Machine Queue (VMQ)](standardized-inf-keywords-for-vmq.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,9 @@
 ---
 title: Device Driver Interface (DDI) Changes in Windows 7
-author: windows-driver-content
 description: This topic summarizes the general DDI changes that support the new 1394 bus driver.
 ms.assetid: 5473C6AC-284C-41B1-AA67-75696BE96C24
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Driver Interface (DDI) Changes in Windows 7
@@ -58,9 +54,9 @@ The following table describes the changes in functional behavior of the DDIs exp
 | [**REQUEST\_GET\_SPEED\_TOPOLOGY\_MAPS**](https://msdn.microsoft.com/library/windows/hardware/ff537646)     | [**REQUEST\_GET\_SPEED\_TOPOLOGY\_MAPS**](https://msdn.microsoft.com/library/windows/hardware/ff537646) has been deprecated in Windows 2000 and later versions of the operating system. Sending this request to 1394ohci.sys returns STATUS\_INVALID\_PARAMETER.                                            |
 | [**REQUEST\_GET\_SPEED\_BETWEEN\_DEVICES**](https://msdn.microsoft.com/library/windows/hardware/ff537645) | Sending the [**REQUEST\_GET\_SPEED\_BETWEEN\_DEVICES**](https://msdn.microsoft.com/library/windows/hardware/ff537645) request to 1394ohci.sys retrieves the speed between the local node and the device. The USE\_LOCAL\_NODE flag must be set in the **u.GetMaxSpeedBetweenDevices.fulFlags** parameter. |
 
- 
+ 
 
-## <a href="" id="speed"></a>New Flags for Speed and Payload Size
+## New Flags for Speed and Payload Size
 
 
 The 1394 header file, 1394.h, in the Windows 7 Windows Driver Kit defines new flags for faster speeds and larger payloads. This section describes these new flags and values.
@@ -73,7 +69,7 @@ The following table describes the maximum asynchronous payload size for each new
 | ASYNC\_PAYLOAD\_1600\_RATE | 4096  | 160 Mb/s    |
 | ASYNC\_PAYLOAD\_3200\_RATE | 4096  | 3200 Mb/s   |
 
- 
+ 
 
 The following table describes the speed flags for each newly supported speed.
 
@@ -83,7 +79,7 @@ The following table describes the speed flags for each newly supported speed.
 | SPEED\_FLAGS\_1600 | 0x10  | 160 Mb/s    |
 | SPEED\_FLAGS\_3200 | 0x20  | 3200 Mb/s   |
 
- 
+ 
 
 The following table describes the speed code values for each newly supported speed.
 
@@ -93,9 +89,9 @@ The following table describes the speed code values for each newly supported spe
 | SCODE\_1600\_RATE | 4     | 160 Mb/s    |
 | SCODE\_3200\_RATE | 5     | 3200 Mb/s   |
 
- 
+ 
 
-## <a href="" id="ioctl"></a>IEEE 1394 IOCTL Changes
+## IEEE 1394 IOCTL Changes
 
 
 This section describes the 1394 I/O requests that use the new speed and payload size values.
@@ -147,7 +143,7 @@ Specifies the connection speed to use to free bandwidth. The possible speed valu
 
 **Note**  The new 1394 bus driver uses the **fulSpeed** member only when the IRB\_FLAG\_ALLOW\_REMOTE\_FREE flag is set and the IRB\_FLAG\_USE\_PRE\_CALCULATE\_VALUE flag is not set in **Flags** of the IRB. In all other cases, the new 1394 bus driver ignores **fulSpeed**.
 
- 
+ 
 
 <a href="" id="request-set-device-xmit-properties"></a>[**REQUEST\_SET\_DEVICE\_XMIT\_PROPERTIES**](https://msdn.microsoft.com/library/windows/hardware/ff537662)  
 You can specify SPEED\_FLAGS\_*XXX* flags in the **fulSpeed** member.
@@ -179,12 +175,11 @@ Specifies the maximum possible transaction speed between the source device and t
 
 **Note**  A client driver can also specify the USE\_SCODE\_SPEED flag in **u.GetMaxSpeedBetweenDevices.fulFlags** to request that an SCODE\_*XXX*\_RATE speed code value be returned in **fulSpeed** instead of a SPEED\_FLAGS\_xxx value.
 
- 
+ 
 
 ## Related topics
 [The IEEE 1394 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff538867)  
 [IEEE 1394 Bus Driver in Windows 7](https://msdn.microsoft.com/library/windows/hardware/gg266402)  
 
---------------------
 
 

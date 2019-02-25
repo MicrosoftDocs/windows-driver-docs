@@ -2,11 +2,8 @@
 title: Using Packet Tagging
 description: Using Packet Tagging
 ms.assetid: a151256b-d69f-4abb-bf68-644f157dfdd7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Packet Tagging
@@ -51,9 +48,9 @@ A callout driver can retrieve the context for a packet outside of the [*FWPS\_NE
 
 [NDIS Filter Drivers](ndis-filter-drivers2.md)
 
- 
+ 
 
- 
+ 
 
 
 

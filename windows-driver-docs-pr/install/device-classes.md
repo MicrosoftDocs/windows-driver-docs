@@ -7,17 +7,14 @@ keywords:
 - device installations WDK , device classes
 - installing devices WDK , device classes
 - classes WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Classes
 
 
-## <a href="" id="ddk-device-classes-dg"></a>
+
 
 
 This section provides information about two device classes used to put devices and drivers into groups whose members have similar characteristics:
@@ -32,9 +29,9 @@ Because of similarities in the way both types of device classes are specified an
 
 [SetupAPI](setupapi.md) functions use [device information sets](device-information-sets.md) to expose the members of a class to user-mode code.
 
- 
+ 
 
- 
+ 
 
 
 

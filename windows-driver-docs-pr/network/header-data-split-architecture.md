@@ -5,17 +5,14 @@ ms.assetid: a2594360-cbac-4f77-840a-2572a2381646
 keywords:
 - header-data split WDK , architecture
 - header-data split providers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Header-Data Split Architecture
 
 
-## <a href="" id="ddk-header-data-split-architecture-ng"></a>
+
 
 
 A header-data split provider improves network performance by splitting the headers and data in received Ethernet frames into separate buffers. A header-data split provider includes a network interface card (NIC) and an NDIS 6.1 or later miniport driver that services the NIC.
@@ -42,11 +39,11 @@ An *upper-layer protocol* is an IP transport protocol such as TCP, UDP, or ICMP.
 
 **Note**  IPsec is not considered an upper-layer protocol for the purposes of defining header-data split requirements. For more information about splitting IPsec frames, see [Splitting IPsec Frames](splitting-ipsec-frames.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

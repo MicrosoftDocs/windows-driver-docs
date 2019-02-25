@@ -10,17 +10,14 @@ api_name:
 - MakeCert
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MakeCert
 
 
-MakeCert (Makecert.exe) is a command-line [CryptoAPI](http://go.microsoft.com/fwlink/p/?linkid=136391) tool that creates an X.509 certificate that is signed by a system test root key or by another specified key. The certificate binds a certificate name to the public part of the key pair. The certificate is saved to a file, a system certificate store, or both.
+MakeCert (Makecert.exe) is a command-line [CryptoAPI](https://go.microsoft.com/fwlink/p/?linkid=136391) tool that creates an X.509 certificate that is signed by a system test root key or by another specified key. The certificate binds a certificate name to the public part of the key pair. The certificate is saved to a file, a system certificate store, or both.
 
 MakeCert supports a large number of switches but this section only describes the basic switches that are relevant to creating a [test certificate](https://msdn.microsoft.com/library/windows/hardware/ff548693) that can be used to test-sign a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) or embed a signature in a driver file.
 
@@ -48,7 +45,7 @@ If the /len switch is not specified, the default key length is 1024 bits.
 <span id="_m_nMonths"></span><span id="_m_nmonths"></span><span id="_M_NMONTHS"></span>**/m** *nMonths*  
 Specifies the number of months starting from the start date during which the certificate will remain valid.
 
-<span id="_n__Name_"></span><span id="_n__name_"></span><span id="_N__NAME_"></span>**/n** "*Name***"**  
+<span id="_n__Name_"></span><span id="_n__name_"></span><span id="_N__NAME_"></span>**/n** "<em>Name</em>**"**  
 Specifies a name for the certificate. This name must conform to the X.500 standard. The simplest method is to use the "CN=*MyName*" format.
 
 If the **/n** switch is not specified, the default name of the certificate is "Joe's Software Emporium".
@@ -89,7 +86,7 @@ The name of the file in which the generated certificate is saved.
 
 MakeCert supports a large number of switches. The switches described in this topic are limited to the ones that you can use to create a [test certificate](https://msdn.microsoft.com/library/windows/hardware/ff548693).
 
-For a complete list of MakeCert parameters, see the [MakeCert](http://go.microsoft.com/fwlink/p/?linkid=62653) website and the [Using MakeCert](http://go.microsoft.com/fwlink/p/?linkid=62655) website.
+For a complete list of MakeCert parameters, see the [MakeCert](https://go.microsoft.com/fwlink/p/?linkid=62653) website and the [Using MakeCert](https://go.microsoft.com/fwlink/p/?linkid=62655) website.
 
 A 32-bit version of the MakeCert tool is located in the bin\\i386 folder of the WDK. A 64-bit version of the tool is located in the bin\\amd64 and bin\\ia64 folders of the WDK.
 
@@ -101,11 +98,10 @@ In the following example, the MakeCert command generates a self-signed test cert
 MakeCert -r -pe -ss PrivateCertStore -n "CN=Contoso.com(Test)" testcert.cer
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20MakeCert%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

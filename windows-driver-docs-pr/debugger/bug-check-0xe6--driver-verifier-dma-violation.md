@@ -3,17 +3,14 @@ title: Bug Check 0xE6 DRIVER_VERIFIER_DMA_VIOLATION
 description: The DRIVER_VERIFIER_DMA_VIOLATION bug check has a value of 0x000000E6. This is the bug check code for all Driver Verifier DMA Verification violations.
 ms.assetid: badf8948-356c-4728-b34e-02f1638630a6
 keywords: ["Bug Check 0xE6 DRIVER_VERIFIER_DMA_VIOLATION", "DRIVER_VERIFIER_DMA_VIOLATION"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - DRIVER_VERIFIER_DMA_VIOLATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE6: DRIVER\_VERIFIER\_DMA\_VIOLATION
@@ -21,7 +18,7 @@ api_type:
 
 The DRIVER\_VERIFIER\_DMA\_VIOLATION bug check has a value of 0x000000E6. This is the bug check code for all Driver Verifier **DMA Verification** violations.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIVER\_VERIFIER\_DMA\_VIOLATION Parameters
 
@@ -156,7 +153,7 @@ Parameter 1 is the only parameter of interest. This parameter identifies the exa
 </tr>
 <tr class="odd">
 <td align="left"><p>0x20</p></td>
-<td align="left"><p>The driver tried to flush a map register that hasn't been mapped. The map register base, flushing address, and MDL are displayed.</p></td>
+<td align="left"><p>The driver tried to flush a map register that hasn&#39;t been mapped. The map register base, flushing address, and MDL are displayed.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x21</p></td>
@@ -165,7 +162,7 @@ Parameter 1 is the only parameter of interest. This parameter identifies the exa
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -181,9 +178,9 @@ If you are the driver writer, use the information obtained through this bug chec
 
 The Driver Verifier **DMA Verification** option is only available in Windows XP and later versions. For full details on Driver Verifier, see the Windows Driver Kit.
 
- 
+ 
 
- 
+ 
 
 
 

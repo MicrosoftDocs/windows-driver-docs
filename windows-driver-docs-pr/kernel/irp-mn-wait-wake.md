@@ -1,15 +1,11 @@
 ---
-title: IRP\_MN\_WAIT\_WAKE
-author: windows-driver-content
+title: IRP_MN_WAIT_WAKE
 description: This IRP enables a driver to awaken a sleeping system or to awaken a sleeping device.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: b79fd057-bf95-457e-882a-42221789e6e6
 keywords:
  - IRP_MN_WAIT_WAKE Kernel-Mode Driver Architecture
+ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_WAIT\_WAKE
@@ -78,7 +74,7 @@ A driver sends **IRP\_MN\_WAIT\_WAKE** for either of two reasons:
 
 2.  To enable its device to awaken from a device sleep state in response to an external wake-up signal.
 
-The IRP must be passed down the device stack to the bus driver for the device, which calls [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) and returns STATUS\_PENDING from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine. The IRP remains pending until a wake-up signal occurs or until the driver that sent the IRP cancels it.
+The IRP must be passed down the device stack to the bus driver for the device, which calls [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) and returns STATUS\_PENDING from its [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. The IRP remains pending until a wake-up signal occurs or until the driver that sent the IRP cancels it.
 
 Only one wait/wake IRP can be held pending for a PDO at any given time. If a driver already holds a wait/wake IRP for a PDO, it must fail any additional such IRPs with STATUS\_DEVICE\_BUSY. A driver that enumerates more than one child PDO can have a wait/wake IRP pending for each such PDO.
 
@@ -115,12 +111,10 @@ Requirements
 
 [**PoRequestPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559734)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20IRP_MN_WAIT_WAKE%20%20RELEASE:%20%288/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

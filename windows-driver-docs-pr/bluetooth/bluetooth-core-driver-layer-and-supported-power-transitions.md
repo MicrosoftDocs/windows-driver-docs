@@ -2,11 +2,8 @@
 title: Bluetooth Core Driver Layer and Supported Power Transitions
 description: The following table summarizes device and system power states that the Bluetooth core driver supports.
 ms.assetid: 25A3598E-51A7-4B16-92F7-9D2F39177946
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth Core Driver Layer and Supported Power Transitions
@@ -14,65 +11,59 @@ ms.technology: windows-devices
 
 The following table summarizes device and system power states that the Bluetooth core driver supports. A "sleep" state is used throughput this section and its subtopics to describe a very low power state in which the Bluetooth radio’s internal settings and configurations are persistent.
 
-Device Power States
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td colspan="3"><b>Device Power States</b></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>D0 (Active)</td>
+        <td>D2 (sleep) – some power is maintained to the Bluetooth chip for persisting its internal state</td>
+        <td>D3 (Off) - Power is removed (*)</td>
+    </tr>
+    <tr>
+        <td rowspan="6"><b>System power states</b></td>
+        <td>S0 (Active)</td>
+        <td>Active</td>
+        <td>Sleep if armed for wake</td>
+        <td>Radio RM off</td>
+    </tr>
+    <tr>
+        <td>S1</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+       <td>S2</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>S3 (Sleep)</td>
+        <td>N/A</td>
+        <td>Sleep if armed for wake</td>
+        <td>Can be powered off</td>
+    </tr>
+    <tr>
+        <td>S4 (Hibernate)</td>
+        <td>N/A</td>
+        <td>Sleep if armed for wake</td>
+        <td>Can be powered off</td>
+    </tr>
+    <tr>
+        <td>S5 (Off)</td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td>Can be powered off</td>
+    </tr>
+</table>
 
-D0 (Active)
 
-D2 (sleep) – some power is maintained to the Bluetooth chip for persisting its internal state
-
-D3 (Off) - Power is removed (\*)
-
-System power states
-
-S0 (Active)
-
-Active
-
-Sleep if armed for wake
-
-Radio RM off
-
-S1
-
-N/A
-
-N/A
-
-N/A
-
-S2
-
-N/A
-
-N/A
-
-N/A
-
-S3 (Sleep)
-
-N/A
-
-Sleep if armed for wake
-
-Can be powered off
-
-S4 (Hibernate)
-
-N/A
-
-Sleep if armed for wake
-
-Can be powered off
-
-S5 (Off)
-
-N/A
-
-N/A
-
-Can be powered off
-
- 
 
 \*Re-initialization by Bluetooth core driver is required since power is lost to the Bluetooth chip
 
@@ -124,11 +115,10 @@ The system is off, and the Bluetooth radio is assumed to be off or in a low powe
 
 Going forward, Radio Management (RM) will be standardized for Bluetooth 4.0 radios. The Bluetooth stack will send down an HCI\_RESET command, which the radio is expected to respond by putting the radio in no transmission mode and the device in D3 power state. The stack will then surprise remove all child devnodes, effectively putting the radio in "airplane" mode. The serial bus driver will stay loaded while in the Radio off state, so it can receive a request from the stack to turn the radio back on. The inbox stack will handle the re-enumeration of devnodes. For more details on implementation of radio management, please refer to the [Bluetooth Software Radio Switch Function Prototypes](https://msdn.microsoft.com/library/windows/hardware/hh450832).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[bltooth\bltooth]:%20Bluetooth%20Core%20Driver%20Layer%20and%20Supported%20Power%20Transitions%20%20RELEASE:%20%283/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

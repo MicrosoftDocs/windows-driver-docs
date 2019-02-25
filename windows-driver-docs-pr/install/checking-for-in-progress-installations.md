@@ -6,24 +6,21 @@ keywords:
 - in-progress installations WDK
 - checking in-progress installations
 - verifying in-progress installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Checking for In-Progress Installations
 
 
-## <a href="" id="ddk-checking-for-in-progress-installations-dg"></a>
 
 
-Your [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) should determine whether other installation activities are in progress before performing its installations. To make this determination, the device installation application should call [**CMP\_WaitNoPendingInstallEvents**](https://msdn.microsoft.com/library/windows/hardware/ff537916), typically with a zero time-out value. If the return value from this function indicates other installation activities are pending (for example, the Found New Hardware Wizard might be active), the device installation application should exit.
 
-To make your [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) compatible with platforms that do not support **CMP\_WaitNoPendingInstallEvents**, the application should include the following code:
+Your *device installation application* should determine whether other installation activities are in progress before performing its installations. To make this determination, the device installation application should call [**CMP_WaitNoPendingInstallEvents**](https://msdn.microsoft.com/library/windows/hardware/ff537916), typically with a zero time-out value. If the return value from this function indicates other installation activities are pending (for example, the Found New Hardware Wizard might be active), the device installation application should exit.
 
-```
+To make your *device installation application* compatible with platforms that do not support **CMP_WaitNoPendingInstallEvents**, the application should include the following code:
+
+```cpp
 BOOL
 IsDeviceInstallInProgress (VOID)
 {
@@ -66,13 +63,13 @@ _tmain(IN int argc, IN PTCHAR argv[])
 }
 ```
 
-Use of this code is based on the premise that if a platform does not support **CMP\_WaitNoPendingInstallEvents**, the platform does not start AutoRun if installation activities are in progress.
+Use of this code is based on the premise that if a platform does not support **CMP_WaitNoPendingInstallEvents**, the platform does not start AutoRun if installation activities are in progress.
 
 For a sample usage of this code, see the toaster installation package under the *src\\general\\toaster* subdirectory of the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

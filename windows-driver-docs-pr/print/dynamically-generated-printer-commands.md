@@ -1,6 +1,5 @@
 ---
 title: Dynamically Generated Printer Commands
-author: windows-driver-content
 description: Dynamically Generated Printer Commands
 ms.assetid: ba395716-6906-4f23-a050-79d808ccd44b
 keywords:
@@ -8,20 +7,17 @@ keywords:
 - dynamically generated print commands WDK Unidrv
 - GPD files WDK Unidrv
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Dynamically Generated Printer Commands
 
 
-## <a href="" id="ddk-dynamically-generated-printer-commands-gg"></a>
 
 
-Each time you specify a [printer command](printer-commands.md) in a [*GPD*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-generic-printer-description--gpd-) file for a Unidrv minidriver, you can use one of the following two methods:
+
+Each time you specify a printer command file for a Unidrv minidriver, you can use one of the following two methods:
 
 -   Place the command string in the GPD file.
 
@@ -41,12 +37,10 @@ To provide code that dynamically generates a command string, you must do the fol
 
 When Unidrv is ready to issue a printer command, it checks the minidriver database to determine if the command has been specified with a \*Cmd attribute or with a \*CallbackID attribute. In the former case, Unidrv sends the command string to the print spooler. In the latter case, Unidrv calls the **IPrintOemUni::CommandCallback** method, passing the \*CallbackID and \*Params values as input arguments.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Dynamically%20Generated%20Printer%20Commands%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

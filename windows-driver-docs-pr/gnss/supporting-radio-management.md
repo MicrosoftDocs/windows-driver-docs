@@ -1,6 +1,5 @@
 ---
 title: Supporting radio management
-author: windows-driver-content
 description: When the user chooses the Wireless option in PC settings on their Windows 8 laptop, notebook, or tablet, they can turn any connected wireless devices on or off.
 ms.assetid: AA7AB429-30C5-4C10-AA85-41ED9EAEE69A
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - radio management, example
 - GPS radio management
 - radio management, GPS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting radio management
@@ -56,12 +52,12 @@ The following table lists the methods in the Radio Management API and the corres
 | IMediaRadioManagerNotifySink::OnInstanceRadioChange | CSampleRadioManager::\_FireEventOnInstanceRadioChange |
 | IMediaRadioManagerNotifySink::OnInstanceRemove      | CSampleRadioManager::\_FireEventOnInstanceRemove      |
 
- 
+ 
 
 ## Communicating with the device driver
 
 
-When the radio-management DLL receives a request to retrieve or set the radio state from the radio-management API, it forwards that request as an IOCTL to the corresponding device driver. The DLL sends IOCTLs by invoking the [DeviceIoControl]( http://go.microsoft.com/fwlink/p/?linkid=256462) function. The specific IOCTLs associated with radio management are:
+When the radio-management DLL receives a request to retrieve or set the radio state from the radio-management API, it forwards that request as an IOCTL to the corresponding device driver. The DLL sends IOCTLs by invoking the [DeviceIoControl]( https://go.microsoft.com/fwlink/p/?linkid=256462) function. The specific IOCTLs associated with radio management are:
 
 -   IOCTL\_GPS\_RADIO\_MANAGEMENT\_GET\_RADIO\_STATE
 -   IOCTL\_GPS\_RADIO\_MANAGEMENT\_GET\_PREVIOUS\_RADIO\_STATE
@@ -89,12 +85,10 @@ You can debug the radio-management DLL in Visual Studio by completing the follow
 
 Note that if multiple instances of dllhost.exe are running, you may need to choose each one in a process of elimination in order to determine the process associated with the radio-management DLL. Once you’ve attached to the correct process, you can set breakpoints in Visual Studio and begin debugging.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Supporting%20radio%20management%20%20RELEASE:%20%281/9/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

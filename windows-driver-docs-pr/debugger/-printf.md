@@ -3,17 +3,14 @@ title: .printf
 description: The .printf token behaves like the printf statement in C.
 ms.assetid: 16ad25c4-7df3-490e-80da-2beaddec3230
 keywords: [".printf Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .printf
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .printf
@@ -21,7 +18,7 @@ api_type:
 
 The **.printf** token behaves like the **printf** statement in C.
 
-```
+```dbgcmd
 .printf [/D] [Option] "FormatString" [, Argument , ...] 
 ```
 
@@ -98,7 +95,7 @@ The following options are available.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______FormatString______"></span><span id="_______formatstring______"></span><span id="_______FORMATSTRING______"></span> *FormatString*   
 Specifies the format string, as in **printf**. In general, conversion characters work exactly as in C. For the floating-point conversion characters, the 64-bit argument is interpreted as a 32-bit floating-point number unless the **l** modifier is used.
@@ -126,55 +123,55 @@ The %p conversion character is supported, but it represents a pointer in the tar
 <tr class="odd">
 <td align="left"><p>%p</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>A pointer in the target's virtual address space.</p></td>
+<td align="left"><p>A pointer in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>The value of the pointer.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%N</p></td>
-<td align="left"><p>DWORD_PTR (32 or 64 bits, depending on the host's architecture)</p></td>
-<td align="left"><p>A pointer in the host's virtual address space.</p></td>
+<td align="left"><p>DWORD_PTR (32 or 64 bits, depending on the host&#39;s architecture)</p></td>
+<td align="left"><p>A pointer in the host&#39;s virtual address space.</p></td>
 <td align="left"><p>The value of the pointer. (This is equivalent to the standard C %p character.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%ma</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a NULL-terminated ASCII string in the target's virtual address space.</p></td>
+<td align="left"><p>The address of a NULL-terminated ASCII string in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%mu</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a NULL-terminated Unicode string in the target's virtual address space.</p></td>
+<td align="left"><p>The address of a NULL-terminated Unicode string in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%msa</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of an ANSI_STRING structure in the target's virtual address space.</p></td>
+<td align="left"><p>The address of an ANSI_STRING structure in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%msu</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a UNICODE_STRING structure in the target's virtual address space.</p></td>
+<td align="left"><p>The address of a UNICODE_STRING structure in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%y</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a debugger symbol in the target's virtual address space.</p></td>
+<td align="left"><p>The address of a debugger symbol in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>A string containing the name of the specified symbol (and displacement, if any).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%ly</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a debugger symbol in the target's virtual address space.</p></td>
+<td align="left"><p>The address of a debugger symbol in the target&#39;s virtual address space.</p></td>
 <td align="left"><p>A string containing the name of the specified symbol (and displacement, if any), as well as any available source line information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______Arguments______"></span><span id="_______arguments______"></span><span id="_______ARGUMENTS______"></span> *Arguments*   
 Specifies arguments for the format string, as in **printf**. The number of arguments that are specified should match the number of conversion characters in *FormatString*. Each argument is an expression that will be evaluated by the default expression evaluator (MASM or C++). For details, see [Numerical Expression Syntax](numerical-expression-syntax.md).
@@ -190,7 +187,7 @@ The color settings that you can choose by using the *Options* parameter are by d
 
 The following example shows how to include a DML tag in the format string.
 
-```
+```dbgcmd
 .printf /D "Click <link cmd=\".chain /D\">here</link> to see extensions DLLs."
 ```
 
@@ -202,11 +199,10 @@ The output shown in the preceding image has a link that you can click to execute
 
 For information about DML tags, see dml.doc in the installation folder for Debugging Tools for Windows.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.printf%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

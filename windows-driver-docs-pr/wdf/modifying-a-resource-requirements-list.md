@@ -1,16 +1,12 @@
 ---
 title: Modifying a Resource Requirements List
-author: windows-driver-content
 description: Modifying a Resource Requirements List
 ms.assetid: 75391dd2-5ae1-4562-97a0-4de21a08b61c
 keywords:
 - hardware resources WDK KMDF , modifying resource requirements lists
 - resource requirements lists WDK KMDF , modifying
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Modifying a Resource Requirements List
@@ -47,9 +43,9 @@ To add items to the hardware requirements list, a driver can do the following:
     -   [**WdfIoResourceListGetDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff548510), to obtain access to a resource descriptor.
     -   [**WdfIoResourceListAppendDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff548498) or [**WdfIoResourceListInsertDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff548513), to add a resource descriptor.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,8 @@ title: Changing Contexts
 description: Changing Contexts
 ms.assetid: 3690903c-4281-4c65-98b0-00ca22206168
 keywords: ["context", "logon session, context", "context, session context", "session, context", "user sessions", "session"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 08/02/2018
+ms.localizationpriority: medium
 ---
 
 # Changing Contexts
@@ -20,7 +17,7 @@ In kernel-mode debugging, there are many processes, threads, and sometimes user 
 
 The debugger has five different contexts that you can set while you are debugging:
 
-1.  The session context indicates the default user session. (This context applies to only Microsoft Windows XP and later versions of Windows. These operating systems allow multiple logon sessions to coexist.)
+1.  The session context indicates the default user session. 
 
 2.  The process context determines how the debugger interprets virtual addresses.
 
@@ -32,7 +29,7 @@ The debugger has five different contexts that you can set while you are debuggin
 
 ### <span id="session-context"></span><span id="SESSION_CONTEXT"></span>Session Context
 
-In Windows XP and later versions of Windows, multiple logon sessions can run at the same time. Each logon session has its own processes.
+Multiple logon sessions can run at the same time. Each logon session has its own processes.
 
 The [**!session**](-session.md) extension displays all logon sessions or changes the current session context.
 
@@ -50,7 +47,7 @@ During kernel-mode debugging, you can set the process context by using the [**.p
 
 You can also set user-mode breakpoints from the kernel debugger by using a process-specific breakpoint on a kernel-space function. Set strategic breakpoints and wait for the appropriate context to come up.
 
-The *user-mode address context* is part of the process context. Typically, you do not have to set the user-mode address context directly. If you set the process context, the user-mode address context automatically changes to the directory base of the relevant page table for the process. However, on an Itanium-based processor, a single process might have more than one page directory. In this situation, you can use the [**.context (Set User-Mode Address Context)**](-context--set-user-mode-address-context-.md) command to change the user-mode address context.
+The *user-mode address context* is part of the process context. Typically, you do not have to set the user-mode address context directly. If you set the process context, the user-mode address context automatically changes to the directory base of the relevant page table for the process. 
 
 When you set the process context during kernel-mode debugging, that process context is retained until another **.process** command changes the context. The user-mode address context is also retained until a **.process** or **.context** command changes it. These contexts are not changed when the target computer executes, and they are not affected by changes to the register context or the local context.
 
@@ -86,7 +83,7 @@ Changing the register context can also change the local context. In this manner,
 
 If any application execution, stepping, or tracing occurs, the register context is immediately reset to match the program counter's position. In user mode, the register context is also reset if the current process or thread is changed.
 
-The register context affects stack traces, because the stack trace begins at the location that the stack pointer register (**esp** on an x86-based processor or **sp** on an Itanium-based processor) points to. If the register context is set to an invalid or inaccessible value, stack traces cannot be obtained.
+The register context affects stack traces, because the stack trace begins at the location that the stack pointer register (**esp** on an x86-based processor) points to. If the register context is set to an invalid or inaccessible value, stack traces cannot be obtained.
 
 You can apply a processor breakpoint (data breakpoint) to a specific register context by using the [**.apply\_dbp (Apply Data Breakpoint to Context)**](-apply-dbp--apply-data-breakpoint-to-context-.md) command.
 
@@ -110,11 +107,10 @@ The local context is reset if any of the following events occur:
 
 The [**!for\_each\_frame**](-for-each-frame.md) extension enables you to execute a single command repeatedly, once for each frame in the stack. This command changes the local context for each frame, executes the specified command, and then returns the local context to its original value.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Changing%20Contexts%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Do Not Depend on Order of SCSI Miniport Initialization
-author: windows-driver-content
 description: Do Not Depend on Order of SCSI Miniport Initialization
 ms.assetid: 762fa062-4eaa-40f2-acdb-99fc6cafe680
 keywords:
@@ -11,11 +10,8 @@ keywords:
 - initializing SCSI miniport drivers
 - SCSI miniport drivers WDK storage , initializing
 - order-dependent code WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Do Not Depend on Order of SCSI Miniport Initialization
@@ -34,11 +30,10 @@ In this case, if the Twiddle HBA had a command that could be used to determine t
 
 If the order-dependent code of a miniport driver cannot be removed it must be run as a legacy driver on Windows 2000 and later platforms.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -6,17 +6,14 @@ keywords:
 - notify objects WDK networking , notify classes
 - network notify objects WDK , notify classes
 - notify classes WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Defining a Notify Class
 
 
-## <a href="" id="ddk-defining-a-notify-class-ng"></a>
+
 
 
 Notify classes must be implemented so that they inherit from the [**INetCfgComponentControl**](https://msdn.microsoft.com/library/windows/hardware/ff547725) interface. However, if notify objects perform certain operations their notify classes must also be implemented to inherit from the following interfaces:
@@ -45,9 +42,9 @@ Define a constructor and a destructor for your notify class. Also consider defin
 
 All the **IUnknown** interface methods should be implemented for a notify class. If a notify class inherits from any of the optional interfaces noted in the preceding list, all the methods of those interfaces must be implemented. Note that E\_NOTIMPL is not a valid return type for any of the methods of the notify object interfaces. If a notify object does not require an implementation for a particular method, simply implement the method to return S\_OK.
 
- 
+ 
 
- 
+ 
 
 
 

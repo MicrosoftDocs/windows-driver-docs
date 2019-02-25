@@ -3,11 +3,8 @@ title: Debugging Optimized Code and Inline Functions
 description: For Windows 8, the debugger and the Windows compiler have been enhanced so that you can debug optimized code and debug inline functions.
 ms.assetid: C7BE6B8E-9CF2-471C-A4F9-931C71CCC0FE
 keywords: ["debug optimized code", "debug inline functions"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging Optimized Code and Inline Functions
@@ -36,7 +33,7 @@ Notice that the Locals window displays the parameters correctly even though they
 
 In addition to tracking variables with primitive types, the location records track data members of local structures and classes. The following debugger output displays local structures.
 
-```
+```dbgcmd
 0:000> dt My1
 Local var Type _LocalStruct
    +0x000 i1               : 0n0 (edi)
@@ -67,7 +64,7 @@ During code optimization, some functions are placed in line. That is, the body o
 
 Suppose you compile an application and force a function named `func1` to be inline.
 
-```
+```cpp
 __forceinline int func1(int p1, int p2, int p3)
 {
    int num1 = 0;
@@ -79,7 +76,7 @@ __forceinline int func1(int p1, int p2, int p3)
 
 You can use the [**bm**](bp--bu--bm--set-breakpoint-.md) command to set a breakpoint at `func1`.
 
-```
+```dbgcmd
 0:000> bm MyApp!func1
   1: 000007f6`8d621088 @!"MyApp!func1" (MyApp!func1 inlined in MyApp!main+0x88)
 0:000> g
@@ -91,7 +88,7 @@ MyApp!main+0x88:
 
 After you take one step into `func1`, you can use the [**k**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to see `func1` on the call stack. You can use the [**dv**](dv--display-local-variables-.md) command to see the local variables for `func1`. Notice that the local variable `num3` is shown as unavailable. A local variable can be unavailable in optimized code for a number of reasons. It might be that the variable doesn't exist in the optimized code. It might be that the variable has not been initialized yet or that the variable is no longer being used.
 
-```
+```dbgcmd
 0:000> p
 MyApp!func1+0x7:
 000007f6`8d62108f 8d3c33          lea     edi,[rbx+rsi]
@@ -112,7 +109,7 @@ MyApp!func1+0x7:
 
 If you look at frame 1 in the stack trace, you can see the local variables for the `main` function. Notice that two of the variables are stored in registers.
 
-```
+```dbgcmd
 0:000> .frame 1
 01 00000000`0050fc90 000007f6`8d6213f3 MyApp!main+0x8f
 
@@ -124,7 +121,7 @@ If you look at frame 1 in the stack trace, you can see the local variables for t
 
 The Windows debugger aggregates data from PDB files to find all the places where a specific function has been placed inline. You can use the [**x**](x--examine-symbols-.md) command to list all the caller sites of the an inline function.
 
-```
+```dbgcmd
 0:000> x simple!MoreCalculate
 00000000`ff6e1455 simple!MoreCalculate =  (inline caller) simple!wmain+8d
 00000000`ff6e1528 simple!MoreCalculate =  (inline caller) simple!wmain+160
@@ -137,7 +134,7 @@ Because the Windows debugger can enumerate all the caller sites of an inline fun
 
 The Windows debugger groups all breakpoints that are set for a specific inline function into a breakpoint container. You can manipulate the breakpoint container as a whole by using commands like [**be**](be--breakpoint-enable-.md), [**bd**](bd--breakpoint-disable-.md), [**bc**](bc--breakpoint-clear-.md). See the following **bd 3** and **bc 3** command examples. You can also manipulate individual breakpoints. See the following **be 2** command example.
 
-```
+```dbgcmd
 0:000> bm simple!MoreCalculate
   2: 00000000`ff6e1455 @!"simple!MoreCalculate" (simple!MoreCalculate inlined in simple!wmain+0x8d)
   4: 00000000`ff6e1528 @!"simple!MoreCalculate" (simple!MoreCalculate inlined in simple!wmain+0x160)
@@ -170,18 +167,17 @@ Because there are no explicit call or return instructions for inline functions, 
 
 **Note**  You can use the **.inline 0** command to disable inline function debugging. The **.inline 1** command enables inline function debugging. [Standard Debugging Techniques](standard-debugging-techniques.md)
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Standard Debugging Techniques](standard-debugging-techniques.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Optimized%20Code%20and%20Inline%20Functions%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

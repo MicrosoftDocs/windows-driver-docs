@@ -2,11 +2,8 @@
 title: WDI NDIS interface restrictions
 description: The WDI IHV miniport driver has access to all of the functionality provided by NDIS and KMDF.
 ms.assetid: 08996045-674B-465D-8880-088320770D2C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDI NDIS interface restrictions
@@ -24,7 +21,7 @@ Function | Restrictions | Alternative
 [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) | Disallowed | The WDI data path receive handler to indicate received packets. 
 [**NdisMSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563668) | Disallowed | The WDI data path send handler to complete sent packets.
 
- 
+ 
 
 
 

@@ -9,11 +9,8 @@ keywords:
 - deferred contexts WDK Windows Server 2008 R2 display , using context-local DDI handles
 - context-local DDI handles WDK Windows 7 display
 - context-local DDI handles WDK Windows Server 2008 R2 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Context-Local DDI Handles
@@ -51,7 +48,7 @@ For objects that have dependencies (for example, views have a dependency relatio
 
 The following example code shows how the Direct3D runtime translates an application's create request and the first use of deferred context to calls to the user-mode display driver to create immediate versus deferred contexts. The application's call to **ID3D11Device::CreateTexture2D** initiates the runtime code in the following "Resource Create" section. The application's call to **ID3D11Device::CopyResource** initiates the runtime code in the following "Deferred Context Resource Usage" section.
 
-```
+```cpp
 // Device Create
  IC::pfnCheckDeferredContextHandleSizes( hIC, &u, NULL );
 pArray = malloc( u * ... );
@@ -74,11 +71,10 @@ None of the create functions return an error code, which would have been ideal f
 
 Deferred contexts can return E\_OUTOFMEMORY through a call to [**pfnSetErrorCb**](https://msdn.microsoft.com/library/windows/hardware/ff568929) from DDI functions that previously only allowed D3DDDIERR\_DEVICEREMOVED (like [**Draw**](https://msdn.microsoft.com/library/windows/hardware/ff556120), [**SetBlendState**](https://msdn.microsoft.com/library/windows/hardware/ff569527), and so on), since deferred context memory demands perpetually grow with each call to a DDI function. The Direct3D API triggers a local context removal, to assist the driver with such a failure case, which effectively tosses out the partially built command list. The application continues to determine that it is recording a command list; however, when the application eventually calls the **FinishCommandList** function, **FinishCommandList** returns a failure code of E\_OUTOFMEMORY.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Using%20Context-Local%20DDI%20Handles%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

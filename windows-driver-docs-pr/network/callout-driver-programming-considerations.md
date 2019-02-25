@@ -8,11 +8,8 @@ keywords:
 - ALE flow established filtering layers WDK Windows Filtering Platform
 - kernel-mode callout drivers WDK Windows Filtering Platform
 - user-mode callout drivers WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Callout Driver Programming Considerations
@@ -22,7 +19,7 @@ Consider the following topics when you program a Windows Filtering Platform call
 
 ### <a href="" id="user-mode-vs--kernel-mode"></a>User Mode vs. Kernel Mode
 
-If the desired filtering can be done by using the standard filtering functionality that is built in to the Windows Filtering Platform, independent software vendors (ISVs) should write user-mode management applications to configure the filter engine instead of writing kernel-mode callout drivers. A kernel-mode callout driver should only be written when you must process the network data in ways that cannot be handled by the standard, built-in filtering functionality. For information about how to write a user-mode Windows Filtering Platform management application, see the [Windows Filtering Platform](http://go.microsoft.com/fwlink/p/?linkid=90220) documentation in the Microsoft Windows SDK.
+If the desired filtering can be done by using the standard filtering functionality that is built in to the Windows Filtering Platform, independent software vendors (ISVs) should write user-mode management applications to configure the filter engine instead of writing kernel-mode callout drivers. A kernel-mode callout driver should only be written when you must process the network data in ways that cannot be handled by the standard, built-in filtering functionality. For information about how to write a user-mode Windows Filtering Platform management application, see the [Windows Filtering Platform](https://go.microsoft.com/fwlink/p/?linkid=90220) documentation in the Microsoft Windows SDK.
 
 ### Choice of Filtering Layer
 
@@ -55,9 +52,9 @@ The MDL that describes the IP header in a net buffer list ([**NET\_BUFFER\_CURRE
 
 [Windows Filtering Platform Callout Drivers](windows-filtering-platform-callout-drivers2.md)
 
- 
+ 
 
- 
+ 
 
 
 

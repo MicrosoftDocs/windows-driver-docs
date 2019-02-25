@@ -6,17 +6,14 @@ keywords:
 - header-data split WDK , configuration
 - standardized keywords WDK header-data split
 - INF entries WDK header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for Header-Data Split
 
 
-## <a href="" id="ddk-standardized-inf-keywords-for-header-data-split-ng"></a>
+
 
 
 A *standardized keyword* is defined to enable or disable support for header-data split for a miniport adapters.
@@ -54,13 +51,13 @@ The following table describes the possible INF entries for the header-data split
 </tbody>
 </table>
 
- 
+ 
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

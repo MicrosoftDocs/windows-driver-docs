@@ -4,11 +4,8 @@ description: Introduction to Test-Signing
 ms.assetid: 63d4627d-b92c-489d-accf-16cfb5ac1410
 keywords:
 - test signing driver packages WDK , about test signing driver packages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Test-Signing
@@ -24,13 +21,13 @@ Drivers should be test-signed with a [digital signature](digital-signatures.md) 
 
     By default, the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) for 64-bit versions of Windows Vista and later versions of Windows require that a kernel-mode driver be signed in order for the driver to be loaded. This requirement can be temporarily overridden to facilitate the development or debugging of a driver.
 
--   To play back certain types of next-generation premium content, all kernel-mode components in Windows Vista and later versions of Windows must be signed. In addition, all the user-mode and kernel-mode components in the Protected Media Path (PMP) must comply with PMP signing policy. For information about PMP signing policy, see the white paper [Code-signing for Protected Media Components in Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=69258).
+-   To play back certain types of next-generation premium content, all kernel-mode components in Windows Vista and later versions of Windows must be signed. In addition, all the user-mode and kernel-mode components in the Protected Media Path (PMP) must comply with PMP signing policy. For information about PMP signing policy, see the white paper [Code-signing for Protected Media Components in Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=69258).
 
 For these reasons, drivers for Windows Vista and later versions of Windows should be test-signed with a digital certificate that is created by using Microsoft Authenticode. Such a digital certificate is referred to as a *test certificate* and a signature generated with a test certificate is referred to as a *test signature*.
 
 **Note**  Windows Vista and later versions of Windows support test-signed drivers only for development and testing purposes. Test signatures must not be used for production purposes or released to customers.
 
- 
+ 
 
 A development and test team can participate in the [WHQL Test Signature program](whql-test-signature-program.md), where the Windows Hardware Quality Labs (WHQL) will sign PnP [driver packages](driver-packages.md) for testing purposes. Alternatively, a development and test team can manage their own in-house signing process and use the following types of [test certificates](test-certificates.md) to test-sign drivers:
 
@@ -50,11 +47,11 @@ For information about the most appropriate tools to use to test-sign driver pack
 
 **Note**  To get a better understanding of the steps that are involved in test-signing driver packages, see [How to Test-Sign a Driver Package](how-to-test-sign-a-driver-package.md). This topic provides a summary of the test-signing process, and steps through many examples of test-signing by using the *ToastPkg* sample [driver package](driver-packages.md) within the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

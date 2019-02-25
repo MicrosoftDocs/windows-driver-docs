@@ -1,16 +1,12 @@
 ---
 title: Storage Class Driver's Standard Driver Routines
-author: windows-driver-content
 description: Storage Class Driver's Standard Driver Routines
 ms.assetid: b149338b-6737-4493-b8e9-0597656ce0d7
 keywords:
 - storage class drivers WDK , standard routines
 - class drivers WDK storage , standard routines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's Standard Driver Routines
@@ -19,7 +15,7 @@ ms.technology: windows-devices
 ## <span id="ddk_storage_class_driver_s_standard_driver_routines_kg"></span><span id="DDK_STORAGE_CLASS_DRIVER_S_STANDARD_DRIVER_ROUTINES_KG"></span>
 
 
-This section describes how to implement [Standard Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff563842) in storage class drivers. It contains the following topics:
+This section describes how to implement [Standard Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-standard-driver-routines) in storage class drivers. It contains the following topics:
 
 [Storage Class Driver's DriverEntry Routine](storage-class-driver-s-driverentry-routine.md)
 
@@ -29,11 +25,10 @@ This section describes how to implement [Standard Driver Routines](https://msdn.
 
 [Storage Class Driver's IoCompletion Routines](storage-class-driver-s-iocompletion-routines.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

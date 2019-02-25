@@ -2,11 +2,8 @@
 title: SIM toolkit
 description: SIM toolkit
 ms.assetid: 39869948-d61c-438c-a90c-05dcb099acad
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SIM toolkit
@@ -91,7 +88,7 @@ When the SIM toolkit UI application is successfully started, a SIM toolkit UI di
 ## Launching the SIM toolkit using another app
 
 
-To make the SIM toolkit more discoverable, partners can use a reserved URI scheme to enable a Windows Store app to launch the SIM applications CPL. For more information about how to do this, see [Reserved URI to launch SIM toolkit](reserved-uri-to-launch-sim-toolkit.md).
+To make the SIM toolkit more discoverable, partners can use a reserved URI scheme to enable a UWP app to launch the SIM applications CPL. For more information about how to do this, see [Reserved URI to launch SIM toolkit](reserved-uri-to-launch-sim-toolkit.md).
 
 ## SIM toolkit UI notifications
 
@@ -114,9 +111,9 @@ The following settings are recommended:
 
 [SIM toolkit commands](sim-toolkit-commands.md)
 
- 
+ 
 
- 
+ 
 
 
 

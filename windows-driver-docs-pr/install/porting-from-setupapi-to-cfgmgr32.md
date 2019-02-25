@@ -2,17 +2,16 @@
 title: Porting code from SetupApi to CfgMgr32
 description: This topic provides code examples that show how to port code that uses Setupapi.dll functionality to use Cfgmgr32.dll instead.
 ms.assetid: 36668A17-EA56-464C-A38B-C75BE2359412
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting code from SetupApi to CfgMgr32
 
 
-This topic provides code examples that show how to port code that uses Setupapi.dll functionality to use Cfgmgr32.dll instead. Porting your code allows you to run your code on the Universal Windows Platform (UWP), which does not support SetupApi. A subset of CfgMgr32 is supported on UWP, specifically functionality exposed through the api-ms-win-devices-config-l1-1-0.dll API set. To see a list of functions in this API set, please refer to [Windows API Sets](https://msdn.microsoft.com/library/windows/desktop/hh802935).
+This topic provides code examples that show how to port code that uses Setupapi.dll functionality to use Cfgmgr32.dll instead. Porting your code allows you to run your code on the Universal Windows Platform (UWP), which does not support SetupApi. A subset of CfgMgr32 is supported on UWP, specifically functionality exposed through the `api-ms-win-devices-config-l1-1-0.dll` API set (Windows 8 and later) or the `api-ms-win-devices-config-l1-1-1.dll` API set (Windows 8.1 and later). In Windows 10 and later, simply link to `onecore.lib`.
+
+To see a list of functions in the above API sets, please refer to [Windows API Sets](https://msdn.microsoft.com/library/windows/desktop/hh802935) or [Onecore.lib: APIs from api-ms-win-devices-config-l1-1-1.dll](https://msdn.microsoft.com/library/windows/desktop/mt654039#_api-ms-win-devices-config-l1-1-1.dll).
 
 The following sections include code examples that applications would typically use.
 
@@ -95,7 +94,7 @@ GetDevicePropertiesSetupapi(
 }
 ```
 
-This example gets a list of all present devices using [**CM\_Get\_Device\_ID\_List**](https://msdn.microsoft.com/library/windows/hardware/ff538415) and iterates through them to retrieve the device description of each device.
+This example gets a list of all present devices using [**CM_Get_Device_ID_List**](https://msdn.microsoft.com/library/windows/hardware/ff538415) and iterates through them to retrieve the device description of each device.
 
 ```ManagedCPlusPlus
 VOID
@@ -194,10 +193,10 @@ GetDevicePropertiesCfgmgr32(
 }
 ```
 
-## <a href="" id="get-a-list-of-interfaces--get-the-device-exposing-each-interface---and-get-a-property-from-the-device"></a>Get a list of interfaces, get the device exposing each interface, and get a property from the device
+## Get a list of interfaces, get the device exposing each interface, and get a property from the device
 
 
-This example gets a list of all interfaces in class GUID\_DEVINTERFACE\_VOLUME using [**SetupDiGetClassDevs**](https://msdn.microsoft.com/library/windows/hardware/ff551069). For each interface, it gets the device exposing the interface and gets a property of that device.
+This example gets a list of all interfaces in class GUID_DEVINTERFACE_VOLUME using [**SetupDiGetClassDevs**](https://msdn.microsoft.com/library/windows/hardware/ff551069). For each interface, it gets the device exposing the interface and gets a property of that device.
 
 ```ManagedCPlusPlus
 VOID
@@ -285,7 +284,7 @@ GetInterfacesAndDevicePropertySetupapi(
 }
 ```
 
-This example gets a list of all interfaces in class GUID\_DEVINTERFACE\_VOLUME using [**CM\_Get\_Device\_Interface\_List**](https://msdn.microsoft.com/library/windows/hardware/ff538463). For each interface, it gets the device exposing the interface and gets a property of that device.
+This example gets a list of all interfaces in class GUID_DEVINTERFACE_VOLUME using [**CM_Get_Device_Interface_List**](https://msdn.microsoft.com/library/windows/hardware/ff538463). For each interface, it gets the device exposing the interface and gets a property of that device.
 
 ```ManagedCPlusPlus
 VOID
@@ -304,30 +303,39 @@ GetInterfacesAndDevicePropertyCfgmgr32(
     ULONG PropertySize;
     DWORD Index = 0;
 
-    cr = CM_Get_Device_Interface_List_Size(&DeviceInterfaceListLength,
-                                           (LPGUID)&GUID_DEVINTERFACE_VOLUME,
-                                           NULL,
-                                           CM_GET_DEVICE_INTERFACE_LIST_ALL_DEVICES);
+    do {
+        cr = CM_Get_Device_Interface_List_Size(&DeviceInterfaceListLength,
+                                               (LPGUID)&GUID_DEVINTERFACE_VOLUME,
+                                               NULL,
+                                               CM_GET_DEVICE_INTERFACE_LIST_ALL_DEVICES);
 
-    if (cr != CR_SUCCESS)
-    {
-        goto Exit;
-    }
+        if (cr != CR_SUCCESS)
+        {
+            break;
+        }
 
-    DeviceInterfaceList = (PWSTR)HeapAlloc(GetProcessHeap(),
-                                           HEAP_ZERO_MEMORY,
-                                           DeviceInterfaceListLength * sizeof(WCHAR));
+        if (DeviceInterfaceList != NULL) {
+            HeapFree(GetProcessHeap(),
+                     0,
+                     DeviceInterfaceList);
+        }
 
-    if (DeviceInterfaceList == NULL)
-    {
-        goto Exit;
-    }
+        DeviceInterfaceList = (PWSTR)HeapAlloc(GetProcessHeap(),
+                                               HEAP_ZERO_MEMORY,
+                                               DeviceInterfaceListLength * sizeof(WCHAR));
 
-    cr = CM_Get_Device_Interface_List((LPGUID)&GUID_DEVINTERFACE_VOLUME,
-                                      NULL,
-                                      DeviceInterfaceList,
-                                      DeviceInterfaceListLength,
-                                      CM_GET_DEVICE_INTERFACE_LIST_ALL_DEVICES);
+        if (DeviceInterfaceList == NULL)
+        {
+            cr = CR_OUT_OF_MEMORY;
+            break;
+        }
+
+        cr = CM_Get_Device_Interface_List((LPGUID)&GUID_DEVINTERFACE_VOLUME,
+                                          NULL,
+                                          DeviceInterfaceList,
+                                          DeviceInterfaceListLength,
+                                          CM_GET_DEVICE_INTERFACE_LIST_ALL_DEVICES);
+    } while (cr == CR_BUFFER_SMALL);
 
     if (cr != CR_SUCCESS)
     {
@@ -469,7 +477,7 @@ GetDevicePropertySpecificDeviceSetupapi(
 }
 ```
 
-This example takes a device instance path for a particular device and retrieves a property from it using [**CM\_Get\_DevNode\_Property**](https://msdn.microsoft.com/library/windows/hardware/hh780220).
+This example takes a device instance path for a particular device and retrieves a property from it using [**CM_Get_DevNode_Property**](https://msdn.microsoft.com/library/windows/hardware/hh780220).
 
 ```ManagedCPlusPlus
 void
@@ -522,23 +530,23 @@ GetDevicePropertySpecificDeviceCfgmgr32(
 ## Disable device
 
 
-This example shows how to disable a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) with *InstallFunction* of **DIF\_PROPERTYCHANGE**, specifying **DICS\_DISABLE**.
+This example shows how to disable a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) with *InstallFunction* of **DIF_PROPERTYCHANGE**, specifying **DICS_DISABLE**.
 
-**Note**   By default, calling [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) results in the device staying disabled across reboots. To disable the device across reboots when calling [**CM\_Disable\_DevNode**](https://msdn.microsoft.com/library/windows/hardware/ff537996), you must specify the **CM\_DISABLE\_PERSIST** flag.
+**Note**   By default, calling [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) results in the device staying disabled across reboots. To disable the device across reboots when calling [**CM_Disable_DevNode**](https://msdn.microsoft.com/library/windows/hardware/ff537996), you must specify the **CM_DISABLE_PERSIST** flag.
 
- 
+
 
 ```ManagedCPlusPlus
     cr = CM_Locate_DevNode(&devinst,
                            (DEVINSTID_W)DeviceInstanceId,
                            CM_LOCATE_DEVNODE_NORMAL);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
+
     cr = CM_Disable_DevNode(devinst, 0);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
@@ -547,19 +555,19 @@ This example shows how to disable a device using CfgMgr32. To do this with Setup
 ## Enable device
 
 
-This example shows how to enable a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) with *InstallFunction* of **DIF\_PROPERTYCHANGE**, specifying **DICS\_ENABLE**.
+This example shows how to enable a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) with *InstallFunction* of **DIF_PROPERTYCHANGE**, specifying **DICS_ENABLE**.
 
 ```ManagedCPlusPlus
     cr = CM_Locate_DevNode(&devinst,
                            (DEVINSTID_W)DeviceInstanceId,
                            CM_LOCATE_DEVNODE_NORMAL);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
+
     cr = CM_Enable_DevNode(devinst, 0);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
@@ -568,39 +576,38 @@ This example shows how to enable a device using CfgMgr32. To do this with SetupA
 ## Restart device
 
 
-This example shows how to restart a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) with *InstallFunction* of **DIF\_PROPERTYCHANGE**, specifying **DICS\_PROPCHANGE**.
+This example shows how to restart a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) with *InstallFunction* of **DIF_PROPERTYCHANGE**, specifying **DICS_PROPCHANGE**.
 
 ```ManagedCPlusPlus
     cr = CM_Locate_DevNode(&devinst,
                            (DEVINSTID_W)DeviceInstanceId,
                            CM_LOCATE_DEVNODE_NORMAL);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
+
     cr = CM_Query_And_Remove_SubTree(devinst,
                                      NULL,
                                      NULL,
                                      0,
                                      CM_REMOVE_NO_RESTART);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
+
     cr = CM_Setup_DevNode(devinst,
                           CM_SETUP_DEVNODE_READY);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
 ```
 
- 
 
- 
+
+
 
 
 

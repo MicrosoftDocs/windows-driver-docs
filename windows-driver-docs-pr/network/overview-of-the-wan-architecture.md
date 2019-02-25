@@ -5,17 +5,14 @@ ms.assetid: 96dff98f-32fa-4996-bc29-9e6c36deff05
 keywords:
 - WAN miniport drivers WDK networking , architecture
 - architecture WDK WAN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of the WAN Architecture
 
 
-## <a href="" id="ddk-overview-of-the-wan-architecture-ng"></a>
+
 
 
 The WAN architecture consists primarily of the components that interface directly to WAN miniport drivers. However, the WAN architecture is best introduced within the broader context of the RAS architecture. The RAS architecture includes some components that are essential for a high-level understanding of the WAN architecture but are otherwise out of the scope of the Microsoft Windows Driver Kit (WDK) and the Windows Driver Development Kit (DDK).
@@ -32,9 +29,9 @@ The following topics describe an overview of the RAS architecture, the major WAN
 
 [NDPROXY Overview](ndproxy-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

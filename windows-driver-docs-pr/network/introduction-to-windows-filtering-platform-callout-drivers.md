@@ -6,17 +6,14 @@ keywords:
 - Windows Filtering Platform callout drivers WDK , about callout drivers
 - callout drivers WDK Windows Filtering Platform , about callout drivers
 - callouts WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to Windows Filtering Platform Callout Drivers
 
 
-This section introduces Windows Filtering Platform [callout drivers](callout-driver.md). For a more information about the Windows Filtering Platform, see the [Windows Filtering Platform](http://go.microsoft.com/fwlink/p/?linkid=90220) documentation in the Microsoft Windows SDK.
+This section introduces Windows Filtering Platform [callout drivers](callout-driver.md). For a more information about the Windows Filtering Platform, see the [Windows Filtering Platform](https://go.microsoft.com/fwlink/p/?linkid=90220) documentation in the Microsoft Windows SDK.
 
 ### Purpose of Callout Drivers
 
@@ -36,9 +33,9 @@ Log of network traffic data. A network monitoring product, for example, could co
 
 In addition to processing network data, callout drivers can perform other Windows Filtering Platform management tasks, such as adding filters to the base filtering engine. For more information about other tasks that a callout driver can perform, see [Calling Other Windows Filtering Platform Functions](calling-other-windows-filtering-platform-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

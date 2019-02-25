@@ -1,20 +1,16 @@
 ---
 title: Security Issues for Section Objects and Views
-author: windows-driver-content
 description: Security Issues for Section Objects and Views
 ms.assetid: a2044ea1-c90c-4487-850b-d07ac55aea6d
 keywords: ["memory sections WDK kernel", "section objects WDK kernel", "views WDK memory section", "security WDK memory section", "protocols WDK memory section"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Security Issues for Section Objects and Views
 
 
-## <a href="" id="ddk-security-issues-for-section-objects-and-views-kg"></a>
+
 
 
 Drivers that create sections and views that are not to be shared with user mode must use the following protocol when they are working with sections and views:
@@ -29,7 +25,7 @@ Drivers that share a view with a user-mode process must use the following protoc
 
 -   As mentioned earlier, the driver must use a kernel handle when it is opening a handle to the section object. Drivers can make sure that a handle is a kernel handle by either creating it in the system process, or specifying the OBJ\_KERNEL\_HANDLE attribute for the handle. For more information, see [Object Handles](object-handles.md).
 
--   The view is mapped in the thread context of the process that shares the view. A highest-level driver can guarantee the view is mapped in the current process context by performing the mapping operation in a dispatch routine, such [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287). Dispatch routines of lower-level drivers run in an arbitrary thread context, and thus cannot safely map a view in a dispatch routine. For more information, see [Driver Thread Context](driver-thread-context.md).
+-   The view is mapped in the thread context of the process that shares the view. A highest-level driver can guarantee the view is mapped in the current process context by performing the mapping operation in a dispatch routine, such [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch). Dispatch routines of lower-level drivers run in an arbitrary thread context, and thus cannot safely map a view in a dispatch routine. For more information, see [Driver Thread Context](driver-thread-context.md).
 
 -   All memory accesses to the view within the driver must be protected by **try**-**except** blocks. A malicious user-mode application could unmap the view or change the protection state of the view. Either would cause a system crash unless protected by a **try**-**except** block. For more information, see [Handling Exceptions](handling-exceptions.md).
 
@@ -45,12 +41,10 @@ A driver that must share a section object with a user-mode application (that mus
 
 On systems that run Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions, only kernel-mode drivers can open \\**Device**\\**PhysicalMemory**. However, drivers can decide to give a handle to a user application. To prevent security issues, only user applications that the driver trusts should be given access to \\**Device**\\**PhysicalMemory**.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Security%20Issues%20for%20Section%20Objects%20and%20Views%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

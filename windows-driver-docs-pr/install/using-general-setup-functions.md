@@ -5,20 +5,17 @@ ms.assetid: 08a7b585-7930-47a3-9fa0-a36625242e5d
 keywords:
 - SetupAPI functions WDK , general Setup functions
 - general Setup functions WDK SetupAPI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using General Setup Functions
 
 
-## <a href="" id="ddk-using-general-setup-functions-dg"></a>
 
 
-This section summarizes the general Setup functions. [*Device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) can use these functions to do the following:
+
+This section summarizes the general Setup functions. *Device installation applications* can use these functions to do the following:
 
 -   Read and process INF files.
 
@@ -56,9 +53,9 @@ This section includes the following topics:
 
 [SetupAPI Logging Functions](setupapi-logging-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Mobile Broadband (MB) Design Guide
 description: Mobile Broadband (MB) Design Guide
 ms.assetid: d5db6b69-c5a9-41d5-88c9-7c4d1e7c9c03
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 08/09/2018
+ms.localizationpriority: medium
 ---
 
 # Mobile Broadband (MB) Design Guide
@@ -62,7 +59,23 @@ This section includes the following topics:
 
 [MB LTE Attach Operations](mb-lte-attach-operations.md)
 
+[MB Protocol Configuration Options (PCO) operations](mb-protocol-configuration-options-pco-operations.md)
+
+[MB low level UICC access](mb-low-level-uicc-access.md)
+
+[MB device-based reset and recovery](mb-device-based-reset-and-recovery.md)
+
+[MB hang detection](mb-hang-detection.md)
+
+[MB modem reset operations](mb-modem-reset-operations.md)
+
 [MB SAR Platform Support](mb-sar-platform-support.md)
+
+[MB base stations information query support](mb-base-stations-information-query-support.md)
+
+[MB eSIM MBIM ready state guidance](mb-esim-mbim-ready-state-guidance.md)
+
+[MB NDIS Status Notifications](mb-ndis-status-notifications.md)
 
 [Supplemental MB Documentation](supplemental-mb-documentation.md)
 
@@ -71,9 +84,9 @@ This section includes the following topics:
 
 [Mobile Broadband Reference](https://msdn.microsoft.com/library/windows/hardware/ff560545)
 
- 
+ 
 
- 
+ 
 
 
 

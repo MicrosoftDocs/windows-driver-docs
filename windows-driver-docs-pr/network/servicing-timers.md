@@ -6,17 +6,14 @@ keywords:
 - timer services WDK NDIS
 - NDIS timer services WDK
 - canceling NDIS timers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Servicing Timers
 
 
-## <a href="" id="ddk-servicing-timers-ng"></a>
+
 
 
 NDIS calls the [**NetTimerCallback**](https://msdn.microsoft.com/library/windows/hardware/ff568351) function when an NDIS 6.0 timer fires. The *FunctionContext* parameter of this function contains a pointer to a driver-supplied context area. The default value for *FunctionContext* is specified in an [**NDIS\_TIMER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff567886) structure. The driver passed the structure to the [**NdisAllocateTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff561618) function to allocate and initialize the associated timer object.
@@ -31,9 +28,9 @@ To stop calls to a *NetTimerCallback* function, call the [**NdisCancelTimerObjec
 
 If a *NetTimerCallback* function shares resources with other driver functions, the driver should synchronize access to those resources with a spin lock.
 
- 
+ 
 
- 
+ 
 
 
 

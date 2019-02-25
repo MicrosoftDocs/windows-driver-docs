@@ -1,6 +1,5 @@
 ---
 title: Completing a DMA Transfer
-author: windows-driver-content
 description: Completing a DMA Transfer
 ms.assetid: 86383b9f-9b82-4afa-81ac-2ab09bd8778b
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - bus-master DMA WDK KMDF , transfers
 - DMA transfers WDK KMDF , completing
 - completing DMA transfers WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Completing a DMA Transfer
@@ -20,20 +16,20 @@ ms.technology: windows-devices
 
 \[Applies to KMDF only\]
 
-## <a href="" id="ddk-completing-a-dma-transfer-df"></a>
+
 
 
 Typically, your driver's [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function completes the processing of each DMA transfer.
 
-First, because multiple DMA transactions can be in progress concurrently, the [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function must determine which DMA transaction the completed transfer is associated with. The callback function can do this by retrieving the transaction handle that the driver stored when it [started the DMA transaction](starting-a-dma-transaction.md). To retrieve the device extension, the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample defines a function called **PLxGetDeviceContext** in its Private.h header file:
+First, because multiple DMA transactions can be in progress concurrently, the [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function must determine which DMA transaction the completed transfer is associated with. The callback function can do this by retrieving the transaction handle that the driver stored when it [started the DMA transaction](starting-a-dma-transaction.md). To retrieve the device extension, the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample defines a function called **PLxGetDeviceContext** in its Private.h header file:
 
-```
+```cpp
 WDF_DECLARE_CONTEXT_TYPE_WITH_NAME(DEVICE_EXTENSION, PLxGetDeviceContext)
 ```
 
 Then, in the driver's [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback, it does the following:
 
-```
+```cpp
 WDFDMATRANSACTION   dmaTransaction;
 PDEVICE_EXTENSION   devExt;
 ...
@@ -68,9 +64,9 @@ If the [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/f
 
 To restart the transaction's current transfer, the driver's [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function can call [**WdfDmaTransactionDmaCompletedWithLength**](https://msdn.microsoft.com/library/windows/hardware/ff547052) with the *TransferredLength* parameter set to zero.
 
- 
+ 
 
- 
+ 
 
 
 

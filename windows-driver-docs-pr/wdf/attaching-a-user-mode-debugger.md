@@ -1,6 +1,5 @@
 ---
 title: Attaching a User-Mode Debugger
-author: windows-driver-content
 description: Attaching a User-Mode Debugger
 ms.assetid: ba8eeabd-946d-46fa-b9ed-b9a674315bd4
 keywords:
@@ -14,11 +13,8 @@ keywords:
 - user-mode drivers WDK UMDF , debugging
 - debugging drivers WDK UMDF , attaching a user-mode debugger
 - driver debugging WDK UMDF , attaching a user-mode debugger
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Attaching a User-Mode Debugger
@@ -28,7 +24,7 @@ After the driver manager starts the driver host process for the device, you can 
 
 -   If a single device is attached, run the following command:
 
-    ```
+    ```cpp
     windbg -pn WUDFHost.exe
     ```
 
@@ -36,15 +32,15 @@ After the driver manager starts the driver host process for the device, you can 
 
 -   If multiple devices are attached, determine the process identifier (PID) of a particular host and run the following command:
 
-    ```
+    ```cpp
     windbg -p PID
     ```
 
     You can use the operating system-supplied Tasklist.exe to determine the PID of a host process. (Tasklist.exe is a command-line application that provides a user with a list of processes that are running on the operating system.)
 
- 
+ 
 
- 
+ 
 
 
 

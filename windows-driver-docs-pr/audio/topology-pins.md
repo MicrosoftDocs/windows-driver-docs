@@ -15,11 +15,8 @@ keywords:
 - translating pins WDK audio
 - pin factories WDK audio
 - PCPIN_DESCRIPTOR structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Topology Pins
@@ -42,7 +39,7 @@ As described in [Pin Factories](pin-factories.md), a miniport driver provides an
 
 -   **Communications type specifier**
 
-    Indicates the type of IRP communications that the pin supports. A pin that supports IRP communications can be an IRP sink (KSPIN\_COMMUNICATION\_SINK), IRP source (KSPIN\_COMMUNICATION\_SOURCE), or both (KSPIN\_COMMUNICATION\_BOTH). A pin that does not support IRP communications can either lie inside a KS filter graph (KSPIN\_COMMUNICATION\_NONE) or be a [*bridge pin*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss_bridge_pin) at the endpoint of a graph (KSPIN\_COMMUNICATION\_BRIDGE).
+    Indicates the type of IRP communications that the pin supports. A pin that supports IRP communications can be an IRP sink (KSPIN\_COMMUNICATION\_SINK), IRP source (KSPIN\_COMMUNICATION\_SOURCE), or both (KSPIN\_COMMUNICATION\_BOTH). A pin that does not support IRP communications can either lie inside a KS filter graph (KSPIN\_COMMUNICATION\_NONE) or be a *bridge pin* at the endpoint of a graph (KSPIN\_COMMUNICATION\_BRIDGE).
 
 For more information about bridge pins, see [Audio Filter Graphs](audio-filter-graphs.md).
 
@@ -135,7 +132,7 @@ No
 
 MIXERLINE\_TARGETTYPE\_WAVEOUT
 
- 
+ 
 
 The following table shows how the input pin **KS pin category GUID**s map to the associated MIXERLINE component types.
 
@@ -203,7 +200,7 @@ The following table shows how the input pin **KS pin category GUID**s map to the
 </tbody>
 </table>
 
- 
+ 
 
 In the preceding tables, the left column specifies the pin category GUID from the pin's PCPIN\_DESCRIPTOR structure, and the right columns specify the corresponding target type and component type for the MIXERLINE structure.
 
@@ -280,7 +277,7 @@ No
 
 MIXERLINE\_TARGETTYPE\_WAVEIN
 
- 
+ 
 
 The following table shows how the output pin **KS pin category GUID**s map to the associated MIXERLINE component types.
 
@@ -342,7 +339,7 @@ The following table shows how the output pin **KS pin category GUID**s map to th
 </tbody>
 </table>
 
- 
+ 
 
 For all pin categories that do not appear in the preceding tables, WDMAud translates the output pins to destination mixer lines with target types of MIXERLINE\_TARGETTYPE\_UNDEFINED and component types of MIXERLINE\_COMPONENTTYPE\_DST\_UNDEFINED.
 
@@ -358,12 +355,10 @@ Note that two streams on the right side of the audio device in the figure are in
 
 The SndVol32 application is a client of the mixer API. The mixer API converts each pin found in the topology to either a source or destination mixer line, but the line might not be shown in SndVol32, which recognizes only a subset of the mixer-line component types that header file Mmsystem.h defines for the mixer API. For more information about SndVol32, see [SysTray and SndVol32](systray-and-sndvol32.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Topology%20Pins%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -2,17 +2,14 @@
 title: Hardware-First Installation of Device-Specific Applications
 description: Hardware-First Installation of Device-Specific Applications
 ms.assetid: aa6a0533-6053-41fb-8599-5fc29e36c039
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Hardware-First Installation of Device-Specific Applications
 
 
-During a [hardware-first installation](hardware-first-installation.md), the user installs the device before inserting the distribution medium. If your distribution medium includes device-specific applications, you can use the following methods to start the [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) which installs those applications:
+During a hardware-first installation which installs those applications:
 
 [Device Installation Application Not Included in the Driver Package](device-installation-application-not-included-in-the-driver-package.md)
 
@@ -22,9 +19,9 @@ During a [hardware-first installation](hardware-first-installation.md), the user
 
 [Guidelines for Starting Device Installation Applications through Co-installers](guidelines-for-starting-device-installation-applications-through-co-in.md)
 
- 
+ 
 
- 
+ 
 
 
 

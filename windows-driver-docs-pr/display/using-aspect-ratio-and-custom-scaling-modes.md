@@ -5,11 +5,8 @@ ms.assetid: cafb6597-64a2-4d0f-bf7b-ab37f9a53bdc
 keywords:
 - aspect ratio scaling WDK display
 - custom scaling WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Aspect Ratio and Custom Scaling Modes
@@ -57,7 +54,7 @@ The correspondence of user-mode API scaling values to the display miniport drive
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">[<strong>SetDisplayConfig</strong>](https://msdn.microsoft.com/library/windows/hardware/ff569533) API Scaling Value</th>
+<th align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff569533" data-raw-source="[&lt;strong&gt;SetDisplayConfig&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff569533)"><strong>SetDisplayConfig</strong></a> API Scaling Value</th>
 <th align="left">DDI Scaling Value</th>
 </tr>
 </thead>
@@ -89,7 +86,7 @@ The correspondence of user-mode API scaling values to the display miniport drive
 </tbody>
 </table>
 
- 
+ 
 
 This mapping can be used with the tables in [Scaling the Desktop Image](scaling-the-desktop-image.md) to understand how user-mode scaling types are translated into DDI scaling types that are sent to the display miniport driver.
 
@@ -120,13 +117,13 @@ The operating system clears the values of the **AspectRatioCenteredMax** and **C
 
 The driver should support the **AspectRatioCenteredMax** member, and the operating system uses it from Control Panel applications. The driver can optionally implement customized functionality by setting the **Custom** member.
 
- 
+ 
 
 DMM will always confirm that the driver interface &gt;= **DXGKDDI\_INTERFACE\_VERSION\_WIN7** before it attempts to check and use the **AspectRatioCenteredMax** or **Custom** members of [**D3DKMDT\_VIDPN\_PRESENT\_PATH\_SCALING\_SUPPORT**](https://msdn.microsoft.com/library/windows/hardware/ff546712).
 
 **Important**   A display miniport driver that supports the **D3DKMDT\_VPPS\_ASPECTRATIOCENTEREDMAX** or **D3DKMDT\_VPPS\_CUSTOM** values should never set a value of **D3DKMDT\_VPPS\_NOTSPECIFIED**.
 
- 
+ 
 
 ### <span id="scaling_with_multiple_adapters"></span><span id="SCALING_WITH_MULTIPLE_ADAPTERS"></span> Scaling With Multiple Adapters
 
@@ -134,11 +131,10 @@ The values of the scaling types **D3DKMDT\_VPPS\_ASPECTRATIOCENTEREDMAX** and **
 
 If both GPUs support the scaling types **D3DKMDT\_VPPS\_ASPECTRATIOCENTEREDMAX** and **D3DKMDT\_VPPS\_CUSTOM**, and the driver for the first GPU implements the **D3DKMDT\_VPPS\_CUSTOM** custom scaling request, then if the user switches the monitor to the second GPU, the driver for the second GPU will probably not know how to interpret the custom scaling request. In this case the second driver should fail a call to the [**DxgkDdiCommitVidPn**](https://msdn.microsoft.com/library/windows/hardware/ff559597) function and should return the **STATUS\_GRAPHICS\_VIDPN\_MODALITY\_NOT\_SUPPORTED** status code; the operating system will map this scaling type to the system default scaling.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Using%20Aspect%20Ratio%20and%20Custom%20Scaling%20Modes%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,26 +2,23 @@
 title: Virtual Machine Queue (VMQ)
 description: Virtual Machine Queue (VMQ)
 ms.assetid: c502c7d6-bdf1-4656-b5a5-339250910f08
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Virtual Machine Queue (VMQ)
 
 
-## <a href="" id="ddk-virtual-machine-queue--vmq--nr"></a>
+
 
 
 This section describes the NDIS virtual machine queue (VMQ) interface. The VMQ interface supports Microsoft Hyper-V network performance improvements in NDIS 6.20 and later in Windows Server 2008 R2 and later versions of Windows Server.
 
 The [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md) documentation describes the high-level concepts of the VMQ architecture. The [Writing VMQ Drivers](writing-vmq-drivers.md) documentation provides the more detailed information about writing NDIS VMQ drivers.
 
-**Note**  Be sure to study the [NDIS Virtual Miniport Driver sample](http://go.microsoft.com/fwlink/p/?LinkId=617918), especially the vmq.c and vmq.h source files.
+**Note**  Be sure to study the [NDIS Virtual Miniport Driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617918), especially the vmq.c and vmq.h source files.
 
- 
+ 
 
 The VMQ interface supports:
 
@@ -36,9 +33,9 @@ This section includes the following topics:
 -   [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md)
 -   [Writing VMQ Drivers](writing-vmq-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Creating an INF File for a Minifilter Driver
-author: windows-driver-content
 description: Creating an INF File for a Minifilter Driver
 ms.assetid: 2ae41287-e3c5-4df5-8dec-8575343d5319
 keywords:
@@ -12,11 +11,8 @@ keywords:
 - ServiceInstall section WDK file system
 - DefaultInstall section WDK file system
 - AddRegistry section WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating an INF File for a Minifilter Driver
@@ -50,23 +46,23 @@ Strings (required)
 
 -   The [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command-line tool, located in the \\bin\\SelfSign directory of the WDK installation directory, can be used to directly "embed sign" a driver SYS executable file. For performance reasons, boot-start drivers must contain an embedded signature.
 
--   Given an INF file, the [Inf2cat](http://go.microsoft.com/fwlink/p/?linkid=79443) command-line tool can be used to create a catalog (.cat) file for a driver package. Only catalog files can receive [WHQL](http://go.microsoft.com/fwlink/p/?linkid=8705) logo signatures.
+-   Given an INF file, the [Inf2cat](https://go.microsoft.com/fwlink/p/?linkid=79443) command-line tool can be used to create a catalog (.cat) file for a driver package. Only catalog files can receive [WHQL](https://go.microsoft.com/fwlink/p/?linkid=8705) logo signatures.
 
 -   With Administrator privileges, an unsigned driver can still be installed on x64-based systems starting with Windows Vista. However, the driver will fail to load (and thus execute) because it is unsigned.
 
 -   For general information about signing drivers, see [Driver Signing](https://msdn.microsoft.com/library/windows/hardware/ff544865).
 
--   For detailed information on the driving signing process, see [Kernel-Mode Code Signing Walkthrough](http://go.microsoft.com/fwlink/p/?linkid=79445).
+-   For detailed information on the driving signing process, see [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=79445).
 
 -   All kernel-mode components, including custom kernel-mode development tools, must be signed. For more information, see [Signing Drivers during Development and Test (Windows Vista and Later)](https://msdn.microsoft.com/library/windows/hardware/ff552275).
 
- 
+ 
 
 ### <span id="Version_Section__required_"></span><span id="version_section__required_"></span><span id="VERSION_SECTION__REQUIRED_"></span>Version Section (required)
 
 The [**Version**](https://msdn.microsoft.com/library/windows/hardware/ff547502) section specifies a class and GUID that are determined by the type of minifilter driver, as shown in the following code example.
 
-```
+```cpp
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = "ActivityMonitor"
@@ -96,11 +92,11 @@ The following table shows the values that file system minifilter drivers should 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Class</strong></p></td>
-<td align="left"><p>See [File System Filter Driver Classes and Class GUIDs](file-system-filter-driver-classes-and-class-guids.md).</p></td>
+<td align="left"><p>See <a href="file-system-filter-driver-classes-and-class-guids.md" data-raw-source="[File System Filter Driver Classes and Class GUIDs](file-system-filter-driver-classes-and-class-guids.md)">File System Filter Driver Classes and Class GUIDs</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>ClassGuid</strong></p></td>
-<td align="left"><p>See [File System Filter Driver Classes and Class GUIDs](file-system-filter-driver-classes-and-class-guids.md).</p></td>
+<td align="left"><p>See <a href="file-system-filter-driver-classes-and-class-guids.md" data-raw-source="[File System Filter Driver Classes and Class GUIDs](file-system-filter-driver-classes-and-class-guids.md)">File System Filter Driver Classes and Class GUIDs</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Provider</strong></p></td>
@@ -108,16 +104,16 @@ The following table shows the values that file system minifilter drivers should 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>DriverVer</strong></p></td>
-<td align="left"><p>See [<strong>INF DriverVer directive</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547394).</p></td>
+<td align="left"><p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff547394" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547394)"><strong>INF DriverVer directive</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CatalogFile</strong></p></td>
-<td align="left"><p>For antivirus minifilter drivers that are signed, this entry contains the name of a WHQL-supplied catalog file. All other minifilter drivers should leave this entry blank. For more information, see the description of the <strong>CatalogFile</strong> entry in [<strong>INF Version Section</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547502).</p></td>
+<td align="left"><p>For antivirus minifilter drivers that are signed, this entry contains the name of a WHQL-supplied catalog file. All other minifilter drivers should leave this entry blank. For more information, see the description of the <strong>CatalogFile</strong> entry in <a href="https://msdn.microsoft.com/library/windows/hardware/ff547502" data-raw-source="[&lt;strong&gt;INF Version Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547502)"><strong>INF Version Section</strong></a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="DestinationDirs_Section__optional_but_recommended_"></span><span id="destinationdirs_section__optional_but_recommended_"></span><span id="DESTINATIONDIRS_SECTION__OPTIONAL_BUT_RECOMMENDED_"></span>DestinationDirs Section (optional but recommended)
 
@@ -125,7 +121,7 @@ The [**DestinationDirs**](https://msdn.microsoft.com/library/windows/hardware/ff
 
 In this section and in the **ServiceInstall** section, you can specify well-known system directories by system-defined numeric values. For a list of these values, see [**INF DestinationDirs Section**](https://msdn.microsoft.com/library/windows/hardware/ff547383). In the following code example, the value 12 refers to the Drivers directory (%windir%\\system32\\drivers), and the value 10 refers to the Windows directory (%windir%).
 
-```
+```cpp
 [DestinationDirs]
 DefaultDestDir = 12
 Minispy.DriverFiles = 12
@@ -138,13 +134,13 @@ In the [**DefaultInstall**](https://msdn.microsoft.com/library/windows/hardware/
 
 **Note**   The [**CopyFiles**](https://msdn.microsoft.com/library/windows/hardware/ff546346) directive should not refer to the catalog file or the INF file itself. SetupAPI copies these files automatically.
 
- 
+ 
 
 You can create a single INF file to install your driver on multiple versions of the Windows operating system. You can create this type of INF file by creating additional [**DefaultInstall**](https://msdn.microsoft.com/library/windows/hardware/ff547356), [**DefaultInstall.Services**](https://msdn.microsoft.com/library/windows/hardware/ff547360), **DefaultUninstall**, and **DefaultUninstall.Services** sections for each operating system version. Each section is labeled with a *decoration* (for example, .ntx86, .ntia64, or .nt) that specifies the operating system version to which it applies. For more information about creating this type of INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](https://msdn.microsoft.com/library/windows/hardware/ff540206).
 
 The following code example shows a typical [**DefaultInstall**](https://msdn.microsoft.com/library/windows/hardware/ff547356) section.
 
-```
+```cpp
 [DefaultInstall]
 OptionDesc = %MinispyServiceDesc%
 CopyFiles = Minispy.DriverFiles, Minispy.UserFiles
@@ -154,7 +150,7 @@ CopyFiles = Minispy.DriverFiles, Minispy.UserFiles
 
 The [**DefaultInstall.Services**](https://msdn.microsoft.com/library/windows/hardware/ff547360) section contains an [**AddService**](https://msdn.microsoft.com/library/windows/hardware/ff546326) directive that controls how and when the services of a particular driver are loaded, as shown in the following code example.
 
-```
+```cpp
 [DefaultInstall.Services]
 AddService = %MinispyServiceName%,,Minispy.Service
 ```
@@ -163,7 +159,7 @@ AddService = %MinispyServiceName%,,Minispy.Service
 
 The **ServiceInstall** section contains information used for loading the driver service. In the MiniSpy sample driver, this section is named "Minispy.Service", as shown in the following code example. The name of the **ServiceInstall** section must appear in an [**AddService**](https://msdn.microsoft.com/library/windows/hardware/ff546326) directive in the [**DefaultInstall.Services**](https://msdn.microsoft.com/library/windows/hardware/ff547360) section.
 
-```
+```cpp
 [Minispy.Service]
 DisplayName    = %MinispyServiceName%
 Description    = %MinispyServiceDesc%
@@ -215,7 +211,7 @@ The **StartType** entry specifies when to start the service. The following table
 </tbody>
 </table>
 
- 
+ 
 
 For more information about these start types, see "Driver Start Types" in [What Determines When a Driver Is Loaded](what-determines-when-a-driver-is-loaded.md).
 
@@ -225,13 +221,13 @@ Note that you must specify a **LoadOrderGroup** value, even if your minifilter d
 
 **Note**   The filter manager's **StartType** value is SERVICE\_BOOT\_START, and its **LoadOrderGroup** value is FSFilter Infrastructure. These values ensure that the filter manager is always loaded before any minifilter drivers are loaded.
 
- 
+ 
 
 For more information about how the **StartType** and **LoadOrderGroup** entries determine when the driver is loaded, see [What Determines When a Driver Is Loaded](what-determines-when-a-driver-is-loaded.md).
 
 **Note**   For minifilter drivers, unlike legacy file system filter drivers, the **StartType** and **LoadOrderGroup** values do not determine where the minifilter driver attaches in the minifilter instance stack. This location is determined by the altitude that is specified for the minifilter instance.
 
- 
+ 
 
 The **ErrorControl** entry specifies the action to be taken if the service fails to start during system startup. Minifilter drivers should specify a value of 1 (SERVICE\_ERROR\_NORMAL). For more information about the **ErrorControl** entry, see [**INF AddService Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546326).
 
@@ -245,7 +241,7 @@ The **AddRegistry** section adds keys and values to the registry. Minifilter dri
 
 In the MiniSpy sample driver, the following **AddRegistry** section, together with the %strkey% token definitions in the [**Strings**](https://msdn.microsoft.com/library/windows/hardware/ff547485) section, defines three instances, one of which is named as the MiniSpy sample driver's default instance.
 
-```
+```cpp
 [Minispy.AddRegistry]
 HKR,%RegInstancesSubkeyName%,%RegDefaultInstanceValueName%,0x00000000,%DefaultInstance%
 HKR,%RegInstancesSubkeyName%"\"%Instance1.Name%,%RegAltitudeValueName%,0x00000000,%Instance1.Altitude%
@@ -260,7 +256,7 @@ HKR,%RegInstancesSubkeyName%"\"%Instance3.Name%,%RegFlagsValueName%,0x00010001,%
 
 The **DefaultUninstall** section is optional but recommended if your driver can be uninstalled. It contains [**DelFiles**](https://msdn.microsoft.com/library/windows/hardware/ff547363) and [**DelReg**](https://msdn.microsoft.com/library/windows/hardware/ff547374) directives to remove files and registry entries, as shown in the following code example.
 
-```
+```cpp
 [DefaultUninstall]
 DelFiles   = Minispy.DriverFiles, Minispy.UserFiles
 DelReg     = Minispy.DelRegistry
@@ -272,9 +268,9 @@ The **DefaultUninstall.Services** section is optional but recommended if your dr
 
 **Note**   The [**DelService**](https://msdn.microsoft.com/library/windows/hardware/ff547377) directive should always specify the SPSVCINST\_STOPSERVICE flag (0x00000200) to stop the service before it is deleted.
 
- 
+ 
 
-```
+```cpp
 [DefaultUninstall.Services]
 DelService = Minispy,0x200
 ```
@@ -283,11 +279,11 @@ DelService = Minispy,0x200
 
 The [**Strings**](https://msdn.microsoft.com/library/windows/hardware/ff547485) section defines each %strkey% token that is used in the INF file.
 
-You can create a single international INF file by creating additional locale-specific **Strings.***LanguageID* sections in the INF file. For more information about international INF files, see [Creating International INF Files](https://msdn.microsoft.com/library/windows/hardware/ff540208).
+You can create a single international INF file by creating additional locale-specific **Strings.**<em>LanguageID</em> sections in the INF file. For more information about international INF files, see [Creating International INF Files](https://msdn.microsoft.com/library/windows/hardware/ff540208).
 
 The following code example shows a typical [**Strings**](https://msdn.microsoft.com/library/windows/hardware/ff547485) section.
 
-```
+```cpp
 [Strings]
 Msft               = "Microsoft Corporation"
 MinispyServiceDesc = "Minispy mini-filter driver"
@@ -309,11 +305,10 @@ Instance3.Altitude = "385000"
 Instance3.Flags    = 0x1 ; Suppress automatic attachments
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

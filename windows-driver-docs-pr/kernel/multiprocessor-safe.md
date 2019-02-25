@@ -1,20 +1,16 @@
 ---
 title: Multiprocessor-Safe
-author: windows-driver-content
 description: Multiprocessor-Safe
 ms.assetid: 58c51f3e-98c4-4aa0-ad4d-cd9225f78141
 keywords: ["multiprocessor safe WDK kernel", "symmetric multiprocessor platforms WDK kernel", "SMP WDK kernel", "spin locks WDK kernel", "synchronization WDK kernel , multiprocessor safe", "symmetric platforms WDK kernel", "locking WDK kernel", "deadlocks WDK kernel", "critical section routines WDK kernel", "shared data protections WDK kernel", "dispatcher objects WDK kernel , multiprocessor safe", "kernel dispatcher objects WDK , multiprocessor safe"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Multiprocessor-Safe
 
 
-## <a href="" id="ddk-multiprocessor-safe-kg"></a>
+
 
 
 The Microsoft Windows NT-based operating system is designed to run uniformly on uniprocessor and symmetric multiprocessor (SMP) platforms, and kernel-mode drivers should be designed to do likewise.
@@ -41,7 +37,7 @@ These policies prevent a driver routine that usually runs at a lower IRQL but cu
 
 The IRQL that is assigned to a spin lock is generally that of the highest-IRQL routine that can acquire the spin lock.
 
-For example, a lowest-level driver's ISR frequently shares a state area with the driver's DPC routine. The DPC routine calls a driver-supplied [*critical section*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-critical-section) routine to access the shared area. The spin lock that protects the shared area has an IRQL equal to the DIRQL at which the device interrupts. As long as the critical-section routine holds the spin lock and accesses the shared area at DIRQL, the ISR cannot be run in either a uniprocessor or SMP machine.
+For example, a lowest-level driver's ISR frequently shares a state area with the driver's DPC routine. The DPC routine calls a driver-supplied *critical section* routine to access the shared area. The spin lock that protects the shared area has an IRQL equal to the DIRQL at which the device interrupts. As long as the critical-section routine holds the spin lock and accesses the shared area at DIRQL, the ISR cannot be run in either a uniprocessor or SMP machine.
 
 -   The ISR cannot be run in a uniprocessor machine because the device interrupt is masked, as described in [Always Preemptible and Always Interruptible](always-preemptible-and-always-interruptible.md).
 
@@ -51,12 +47,10 @@ A set of kernel-mode threads can synchronize access to shared data or resources 
 
 For more information, see [Spin Locks](spin-locks.md), [Managing Hardware Priorities](managing-hardware-priorities.md), and [Kernel Dispatcher Objects](kernel-dispatcher-objects.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Multiprocessor-Safe%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

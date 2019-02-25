@@ -3,17 +3,14 @@ title: CDB Command-Line Options
 description: First-time users of CDB or NTSD should begin with the Debugging Using CDB and NTSD section.
 ms.assetid: 34dbb695-19e4-4efc-83c7-3a94e5fcf269
 keywords: ["CDB Command-Line Options Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 08/01/2018
 topic_type:
 - apiref
 api_name:
 - CDB Command-Line Options
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # CDB Command-Line Options
@@ -23,7 +20,7 @@ First-time users of CDB or NTSD should begin with the [Debugging Using CDB and N
 
 The CDB command line uses the following syntax:
 
-```
+```dbgcmd
 cdb  [ -server ServerTransport | -remote ClientTransport ] 
 [ -premote SmartClientTransport ] [-log{a|au|o|ou} LogFile]
 [-2] [-d] [-ddefer] [-g] [-G] [-hd] [-lines] [-myob] [-bonc] 
@@ -53,7 +50,7 @@ cdb -?
 
 The NTSD command-line syntax is identical to that of CDB:
 
-```
+```dbgcmd
 ntsd  [ -server ServerTransport | -remote ClientTransport ] 
 [ -premote SmartClientTransport ] [-log{a|au|o|ou} LogFile]
 [-2] [-d] [-ddefer] [-g] [-G] [-hd] [-lines] [-myob] [-bonc] 
@@ -83,7 +80,7 @@ ntsd -?
 
 The only difference between NTSD and CDB is that NTSD spawns a new console window while CDB inherits the window from which it was invoked. Since the **start** command can also be used to spawn a new console window, the following two constructions will give the same results:
 
-```
+```dbgcmd
 start cdb [parameters]
 ntsd [parameters]
 ```
@@ -138,7 +135,7 @@ Passes control of this debugger to the kernel debugger. If you are debugging CSR
 
 **Note**  If you use WinDbg as the kernel debugger, many of the familiar features of WinDbg are not available in this scenario. For example, you cannot use the Locals window, the Disassembly window, or the Call Stack window, and you cannot step through source code. This is because WinDbg is only acting as a viewer for the debugger (NTSD or CDB) running on the target computer.
 
- 
+ 
 
 <span id="_______-ddefer______"></span><span id="_______-DDEFER______"></span> **-ddefer**   
 Passes control of this debugger to the kernel debugger, unless a debugging client is connected. (This is a variation of **-d** that can be used from a debugging server.) See [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md) for details. This option cannot be used in conjunction with either the **-d** option or the **-noio** option.
@@ -159,7 +156,7 @@ Ignores the initial breakpoint in target application. This option will cause the
 Ignores the final breakpoint at process termination. By default, CDB stops during the image run-down process. This option will cause CDB to exit immediately when the child terminates. This has the same effect as entering the command **sxd epr**. For more information, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
 <span id="_______-hd______"></span><span id="_______-HD______"></span> **-hd**   
-(Microsoft Windows XP and later) Specifies that the debug heap should not be used. See [Debugging a User-Mode Process Using CDB](debugging-a-user-mode-process-using-cdb.md) for details.
+ Specifies that the debug heap should not be used. See [Debugging a User-Mode Process Using CDB](debugging-a-user-mode-process-using-cdb.md) for details.
 
 <span id="_______-i_______ImagePath______"></span><span id="_______-i_______imagepath______"></span><span id="_______-I_______IMAGEPATH______"></span> **-i** *ImagePath*   
 Specifies the location of the executables that generated the fault. If the path contains spaces, it should be enclosed in quotation marks.
@@ -225,19 +222,19 @@ Debugs all processes launched by the target application (child processes). By de
 Specifies the decimal process ID to be debugged. This is used to debug a process that is already running. For details, see [Debugging a User-Mode Process Using CDB](debugging-a-user-mode-process-using-cdb.md).
 
 <span id="_______-pb______"></span><span id="_______-PB______"></span> **-pb**   
-(Windows XP and later) Prevents the debugger from requesting an initial break-in when attaching to a target process. This can be useful if the application is already suspended, or if you wish to avoid creating a break-in thread in the target.
+Prevents the debugger from requesting an initial break-in when attaching to a target process. This can be useful if the application is already suspended, or if you wish to avoid creating a break-in thread in the target.
 
 <span id="_______-pd______"></span><span id="_______-PD______"></span> **-pd**   
-(Windows XP and later) Causes the target application not to be terminated at the end of the debugging session. See [Ending a Debugging Session in CDB](ending-a-debugging-session-in-cdb.md) for details.
+Causes the target application not to be terminated at the end of the debugging session. See [Ending a Debugging Session in CDB](ending-a-debugging-session-in-cdb.md) for details.
 
 <span id="_______-pe______"></span><span id="_______-PE______"></span> **-pe**   
-(Windows XP and later) Indicates that the target application is already being debugged. See [Re-attaching to the Target Application](reattaching-to-the-target-application.md) for details.
+Indicates that the target application is already being debugged. See [Re-attaching to the Target Application](reattaching-to-the-target-application.md) for details.
 
 <span id="_______-pn_______Name______"></span><span id="_______-pn_______name______"></span><span id="_______-PN_______NAME______"></span> **-pn** *Name*   
 Specifies the name of the process to be debugged. (This name must be unique.) This is used to debug a process that is already running.
 
 <span id="_______-pr______"></span><span id="_______-PR______"></span> **-pr**   
-(Windows XP and later) Causes the debugger to start the target process running when it attaches to it. This can be useful if the application is already suspended and you wish it to resume execution.
+Causes the debugger to start the target process running when it attaches to it. This can be useful if the application is already suspended and you wish it to resume execution.
 
 <span id="_______-psn_______ServiceName______"></span><span id="_______-psn_______servicename______"></span><span id="_______-PSN_______SERVICENAME______"></span> **-psn** *ServiceName*   
 Specifies the name of a service contained in the process to be debugged. This is used to debug a process that is already running.
@@ -296,7 +293,7 @@ Specifies the error level that will cause the target to break into the debugger.
 </tbody>
 </table>
 
- 
+ 
 
 This error level only has meaning in checked builds of Microsoft Windows. The default value is 1.
 
@@ -373,7 +370,7 @@ Specifies the error level that will cause the debugger to display an error messa
 </tbody>
 </table>
 
- 
+ 
 
 This error level only has meaning in checked builds of Microsoft Windows. The default value is 1.
 
@@ -407,7 +404,7 @@ Disables first-chance break on access violation exceptions. The second occurrenc
 Specifies the symbol search path. Separate multiple paths with a semicolon (;). If the path contains spaces, it should be enclosed in quotation marks. For details, and for other ways to change this path, see [Symbol Path](symbol-path.md).
 
 <span id="_______-z_______DumpFile______"></span><span id="_______-z_______dumpfile______"></span><span id="_______-Z_______DUMPFILE______"></span> **-z** *DumpFile*   
-Specifies the name of a crash dump file to debug. If the path and file name contain spaces, this must be surrounded by quotation marks. It is possible to open several dump files at once by including multiple **-z** options, each followed by a different *DumpFile* value. For details, see [Analyzing a User-Mode Dump File with CDB](analyzing-a-user-mode-dump-file-with-cdb.md).
+Specifies the name of a crash dump file to debug. If the path and file name contain spaces, this must be surrounded by quotation marks. It is possible to open several dump files at once by including multiple **-z** options, each followed by a different *DumpFile* value. For details, see [Analyzing a User-Mode Dump File](analyzing-a-user-mode-dump-file.md).
 
 <span id="_______-zp_______PageFile______"></span><span id="_______-zp_______pagefile______"></span><span id="_______-ZP_______PAGEFILE______"></span> **-zp** *PageFile*   
 Specifies the name of a modified page file. This is useful if you are debugging a dump file and want to use the [**.pagein (Page In Memory)**](-pagein--page-in-memory-.md) command. You cannot use **-zp** with a standard Windows page file -- only specially-modified page files can be used.
@@ -420,15 +417,14 @@ Displays command-line help text.
 
 When you are starting the debugger from **Start | Run** or from a Command Prompt window, specify arguments for the target application after the application's file name. For instance:
 
-```
+```dbgcmd
 cdb myexe arg1arg2
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20CDB%20Command-Line%20Options%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,16 +1,12 @@
 ---
 title: Storage Class Driver's RemoveDevice Routine
-author: windows-driver-content
 description: Storage Class Driver's RemoveDevice Routine
 ms.assetid: fbcbfbab-676a-43d3-aa63-0ea5e5f265d2
 keywords:
 - RemoveDevice
 - query-remove requests WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's RemoveDevice Routine
@@ -19,7 +15,7 @@ ms.technology: windows-devices
 ## <span id="ddk_storage_class_drivers_removedevice_routine_kg"></span><span id="DDK_STORAGE_CLASS_DRIVERS_REMOVEDEVICE_ROUTINE_KG"></span>
 
 
-When a device is about to be removed, the PnP manager first calls the class driver's [**DispatchPnP**](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine with a PnP query-remove request (IRP\_MJ\_PNP with [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551705). The storage class driver should fail the query-remove request in any of the following cases:
+When a device is about to be removed, the PnP manager first calls the class driver's [**DispatchPnP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine with a PnP query-remove request (IRP\_MJ\_PNP with [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551705). The storage class driver should fail the query-remove request in any of the following cases:
 
 -   The device contains the system paging file or hibernation file.
 
@@ -47,11 +43,10 @@ Even after a device object has been deleted, if it has a nonzero reference count
 
 For more information about handling a remove request, see [Removing a Device](https://msdn.microsoft.com/library/windows/hardware/ff561046).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

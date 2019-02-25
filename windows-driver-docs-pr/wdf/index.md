@@ -1,6 +1,5 @@
 ---
 title: What's New for WDF Drivers in Windows 10
-author: windows-driver-content
 description: Summarizes new features and improvements for WDF drivers in Windows 10.
 ms.assetid: 61fd9916-38e7-47d0-aec7-d5a489eb21eb
 keywords:
@@ -11,8 +10,7 @@ keywords:
 - framework-based drivers WDK KMDF , about framework-based drivers
 - objects WDK KMDF
 - framework objects WDK KMDF
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,14 +20,27 @@ ms.technology: windows-devices
 
 This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.
 
-Windows 10, version 1703 includes Kernel-Mode Driver Framework (KMDF) version 1.21 and User-Mode Driver Framework (UMDF) version 2.21.
+Windows 10, version 1809 (October 2018 Update, Redstone 5) includes Kernel-Mode Driver Framework (KMDF) version 1.27 and User-Mode Driver Framework (UMDF) version 2.27.
 
 You can use these framework versions to build drivers for:
 
 -   Windows 10 (all SKUs)
--   Windows Server 2016
+-   Windows Server, version 1809
 
 For version history, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md). Except where noted, UMDF references on this page describe version 2 functionality that is not available in UMDF version 1.
+
+## New in WDF for Windows 10, version 1809
+
+* Added new API [**WdfDriverRetrieveDriverDataDirectoryString**](/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring)
+
+## New in WDF for Windows 10, version 1803
+
+* [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md).
+* [**WdfDeviceRetrieveDeviceDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
+
+## New in WDF for Windows 10, version 1709
+
+See [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md).
 
 ## New in WDF for Windows 10, version 1703
 
@@ -42,19 +53,19 @@ In Windows 10, version 1703, WDF includes the following enhancements:
     To start monitoring, add the following registry values under:
     `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\<driver service>\Parameters\wdf`
     
-    1.  Add a DWORD value named **ObjectLeakDetectionLimit** with the threshold value. This is the maximum number of objects of the types described in the **ObjectsForLeakDetection** key.
+  1. Add a DWORD value named **ObjectLeakDetectionLimit** with the threshold value. This is the maximum number of objects of the types described in the **ObjectsForLeakDetection** key.
     
-    2.  Add a new REG_MULTI_SZ value named **ObjectsForLeakDetection** that lists each type name to verify. For example, you could specify `WDFDMATRANSACTION WDFDEVICE`. To specify all handle types, use `*` as the string.
+  2. Add a new REG_MULTI_SZ value named **ObjectsForLeakDetection** that lists each type name to verify. For example, you could specify `WDFDMATRANSACTION WDFDEVICE`. To specify all handle types, use `*` as the string.
 
-    3. To control whether exceeding this threshold should cause a debug break or a bugcheck, set the [DbgBreakOnError](using-kmdf-verifier.md) key.
+  3. To control whether exceeding this threshold should cause a debug break or a bugcheck, set the [DbgBreakOnError](using-kmdf-verifier.md) key.
 
-    By default, if the ObjectsForLeakDetection key is not specified, the framework monitors WDFREQUEST, WDFWORKITEM, WDFKEY, WDFSTRING, WDFOBJECT, and WDFDEVICE.
+     By default, if the ObjectsForLeakDetection key is not specified, the framework monitors WDFREQUEST, WDFWORKITEM, WDFKEY, WDFSTRING, WDFOBJECT, and WDFDEVICE.
     
-    The limit scales with the number of devices installed, so if the driver creates three WDFDEVICE objects, the WDF Verifier limit is three times the value specified in **ObjectLeakDetectionLimit**.
+     The limit scales with the number of devices installed, so if the driver creates three WDFDEVICE objects, the WDF Verifier limit is three times the value specified in **ObjectLeakDetectionLimit**.
     
-    If you specify WDFREQUEST, the verifier only counts WDFREQUEST objects that the driver creates.
+     If you specify WDFREQUEST, the verifier only counts WDFREQUEST objects that the driver creates.
     
-    This feature does not currently support tracking the WDFMEMORY object type. 
+     This feature does not currently support tracking the WDFMEMORY object type. 
 
 * SleepStudy tool provides info on KMDF drivers
 
@@ -74,7 +85,7 @@ The rest of this page describes functionality that was added in Windows 10, vers
 ## Automatic Source Level Debugging of Framework Code
 
 
-When you use WinDbg to debug a WDF driver on Windows 10, WinDbg automatically retrieves the framework source code from Microsoft's public GitHub repository. You can use this feature to step through the WDF source code while debugging, and to learn about framework internals without downloading the source code to a local machine. For more information, see [New support for source-level debugging of WDF code in Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=618534), [Debugging with WDF Source](http://go.microsoft.com/fwlink/p/?LinkId=618535), and [Video: Debugging your driver with WDF source code](video--debugging-your-driver-with-wdf-source-code.md).
+When you use WinDbg to debug a WDF driver on Windows 10, WinDbg automatically retrieves the framework source code from Microsoft's public GitHub repository. You can use this feature to step through the WDF source code while debugging, and to learn about framework internals without downloading the source code to a local machine. For more information, see [New support for source-level debugging of WDF code in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=618534), [Debugging with WDF Source](https://go.microsoft.com/fwlink/p/?LinkId=618535), and [Video: Debugging your driver with WDF source code](video--debugging-your-driver-with-wdf-source-code.md).
 
 ## Universal Driver Compliance
 
@@ -119,7 +130,7 @@ Note that UMDF 1 drivers run only on Windows 10 for desktop editions and earlie
 
 You can use the Windows Performance Toolkit (WPT) to view performance data for a given KMDF or UMDF 2 driver. When tracing is enabled, the framework generates ETW events for I/O, PnP, and Power callback paths. You can then view graphs in the Windows Performance Analyzer (WPA) that show I/O throughput rates, CPU utilization, and callback performance. The WPT is included in the Windows Assessment and Deployment Kit (ADK).
 
-For more information, see [New Performance Tools for WDF Drivers in Windows 10]( http://go.microsoft.com/fwlink/p/?LinkId=618537) and [Using the Windows Performance Toolkit (WPT) with WDF](using-the-windows-performance-toolkit--wpt--with-wdf.md).
+For more information, see [New Performance Tools for WDF Drivers in Windows 10]( https://go.microsoft.com/fwlink/p/?LinkId=618537) and [Using the Windows Performance Toolkit (WPT) with WDF](using-the-windows-performance-toolkit--wpt--with-wdf.md).
 
 ## Additional support for HID drivers in UMDF
 
@@ -152,9 +163,9 @@ New support has been added for USB drivers in UMDF. A UMDF 2 USB driver no longe
 
 -   UMDF provides improved buffer mapping for HID transfers.
 
- 
+ 
 
- 
+ 
 
 
 

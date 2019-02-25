@@ -2,11 +2,8 @@
 title: Retrieving a Device Class Property Value
 description: Retrieving a Device Class Property Value
 ms.assetid: 50b16bd9-7f38-4128-af8f-8b39b099931f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Retrieving a Device Class Property Value
@@ -30,15 +27,15 @@ To retrieve the value of a device class property on a local computer, follow the
     -   Set *PropertyBuffer* to **NULL**.
     -   Set *PropertyBufferSize* to zero.
     -   Set *RequiredSize* to a DWORD-typed variable.
-    -   If the device class is a device setup class, set *Flags* to DICLASSPROP\_INSTALLER. Otherwise, if the device class is a device interface class, set *Flags* to DICLASSPROP\_INTERFACE.
+    -   If the device class is a device setup class, set *Flags* to DICLASSPROP_INSTALLER. Otherwise, if the device class is a device interface class, set *Flags* to DICLASSPROP_INTERFACE.
 
-    In response to this first call to [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086), **SetupDiGetClassProperty** sets \**RequiredSize* to the size, in bytes, of the buffer that is required to retrieve the property value, logs the error code ERROR\_INSUFFICIENT\_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
+    In response to this first call to [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086), **SetupDiGetClassProperty** sets \**RequiredSize* to the size, in bytes, of the buffer that is required to retrieve the property value, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
 
 2.  Call **SetupDiGetClassProperty** again and supply the same parameters that were supplied in the first call, except for the following changes:
     -   Set *PropertyBuffer* to a pointer to the buffer that receives the property value.
     -   Set *PropertyBufferSize* to the required size, in bytes, of the *PropertyBuffer* buffer. The first call to **SetupDiGetClassProperty** retrieved the required size of the *PropertyBuffer* buffer in \**RequiredSize*.
 
-If the second call to **SetupDiGetClassProperty** succeeds, **SetupDiGetClassProperty** sets \**PropertyType* to the property-data-type identifier for the property, sets the *PropertyBuffer* buffer to the property value, sets \**RequiredSize* to the size, in bytes, of the property value that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceProperty** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+If the second call to **SetupDiGetClassProperty** succeeds, **SetupDiGetClassProperty** sets \**PropertyType* to the property-data-type identifier for the property, sets the *PropertyBuffer* buffer to the property value, sets \**RequiredSize* to the size, in bytes, of the property value that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceProperty** returns **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
 ### <a href="" id="retrieving-a-device-class-property-value-on-a-remote-computer"></a> Retrieving a Device Class Property Value on a Remote Computer
 
@@ -48,9 +45,9 @@ To retrieve a device class property value on a remote computer, follow the same 
 
 -   In addition to supplying the parameter values that **SetupDiGetDevicePropertyEx** and **SetupDiGetClassProperty** both require, supply the *MachineName* parameter, which must be set to a pointer to a NULL-terminated string that contains the UNC name, including the \\\\ prefix, of a computer.
 
- 
+ 
 
- 
+ 
 
 
 

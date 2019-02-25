@@ -6,11 +6,8 @@ keywords:
 - UPS minidrivers WDK , registry entries
 - UPS registry entries WDK
 - registry WDK UPS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UPS Registry Entries
@@ -43,11 +40,10 @@ The UPS registry entries are organized under the following four keys:
 
     These entries are for vendor and system use. Vendors should create these entries while [installing UPS minidrivers](installing-ups-minidrivers.md). The system's UPS service copies UPS model-specific values to other, system-controlled registry locations after an administrator has selected the UPS model for use.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -3,17 +3,14 @@ title: .echo (Echo Comment)
 description: The .echo command displays a comment string.
 ms.assetid: 4a291952-695c-4292-8aa5-82d497f0141c
 keywords: [".echo (Echo Comment) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .echo (Echo Comment)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .echo (Echo Comment)
@@ -21,7 +18,7 @@ api_type:
 
 The **.echo** command displays a comment string.
 
-```
+```dbgcmd
 .echo String 
 .echo "String" 
 ```
@@ -55,7 +52,7 @@ Specifies the text to display. You can also enclose *String* in quotation marks 
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -64,7 +61,7 @@ The **.echo** command causes the debugger to display *String* immediately after 
 
 An **.echo** command is ended if the debugger encounters a semicolon (unless the semicolon occurs within a quoted string). This restriction enables you to use **.echo** in complex constructions such as [conditional breakpoints](setting-a-conditional-breakpoint.md), as the following example shows.
 
-```
+```dbgcmd
 0:000> bp `:143` "j (poi(MyVar)>5) '.echo MyVar Too Big'; '.echo MyVar Acceptable; gc' " 
 ```
 
@@ -72,11 +69,10 @@ The **.echo** command also provides an easy way for users of debugging servers a
 
 The **.echo** command differs from the [**$$ (Comment Specifier)**](-----comment-specifier-.md) token and the [**\* (Comment Line Specifier)**](----comment-line-specifier-.md) token, because these tokens cause the debugger to ignore the input text without displaying it.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.echo%20%28Echo%20Comment%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

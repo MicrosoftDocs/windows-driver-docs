@@ -3,17 +3,14 @@ title: Activating a Process Server
 description: To activate a process server, open an elevated Command Prompt window (Run as Administrator), and enter the dbgsrv command.
 ms.assetid: 566a4f64-8a14-469b-b50c-20e3c00aa2f8
 keywords: ["Activating a Process Server Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - Activating a Process Server
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Activating a Process Server
@@ -23,11 +20,11 @@ The process server that is included in Debugging Tools for Windows is called Dbg
 
 **Note**  You can activate a process server without having elevated privileges, and debugging clients will be able to connect to the server. However, clients will not be able to discover a process server unless it was activated with elevated privileges. For information about how to discover debugging servers, see [Searching for Process Servers](searching-for-process-servers.md).
 
- 
+ 
 
 DbgSrv supports several transport protocols: named pipe (NPIPE), TCP, COM port, secure pipe (SPIPE), and secure sockets layer (SSL).
 
-```
+```console
 dbgsrv -t npipe:pipe=PipeName[,hidden][,password=Password][,IcfEnable] [[-sifeo Executable] -c[s] AppCmdLine] [-x | -pc] 
 
 dbgsrv -t tcp:port=Socket[,hidden][,password=Password][,ipversion=6][,IcfEnable] [[-sifeo Executable] -c[s] AppCmdLine] [-x | -pc] 
@@ -53,7 +50,7 @@ When NPIPE or SPIPE protocol is used, *PipeName* is a string that will serve as 
 
 **Note**  You might need to enable file and printer sharing on the computer that is running the process server. In Control Panel, navigate to **Network and Internet &gt; Network and Sharing Center&gt; Advanced sharing settings**. Select **Turn on file and printer sharing**.
 
- 
+ 
 
 <span id="________port_________Socket"></span><span id="________port_________socket"></span><span id="________PORT_________SOCKET"></span> **port=** *Socket*  
 When TCP or SSL protocol is used, *Socket* is the socket port number.
@@ -67,7 +64,7 @@ Since the process server is looking for one specific client, you cannot connect 
 
 **Note**   When **clicon** is used, it is best to start the smart client before the process server is created, although the usual order (server before client) is also permitted.
 
- 
+ 
 
 <span id="port_________COMPort"></span><span id="port_________comport"></span><span id="PORT_________COMPORT"></span>**port=** *COMPort*  
 When COM protocol is used, *COMPort* specifies the COM port to be used. The prefix "COM" is optional -- for example, both "com2" and "2" are acceptable.
@@ -82,7 +79,7 @@ If COM protocol is used, *COMChannel* specifies the COM channel to be used in co
 If SSL or SPIPE protocol is used, *Protocol* specifies the Secure Channel (S-Channel) protocol. This can be any one of the strings tls1, pct1, ssl2, or ssl3.
 
 <span id="Cert"></span><span id="cert"></span><span id="CERT"></span>*Cert*  
-If SSL or SPIPE protocol is used, *Cert* specifies the certificate. This can either be the certificate name or the certificate's thumbprint (the string of hexadecimal digits given by the certificate's snapin). If the syntax **certuser=***Cert* is used, the debugger will look up the certificate in the system store (the default store). If the syntax **machuser=***Cert* is used, the debugger will look up the certificate in the machine store. The specified certificate must support server authentication.
+If SSL or SPIPE protocol is used, *Cert* specifies the certificate. This can either be the certificate name or the certificate's thumbprint (the string of hexadecimal digits given by the certificate's snapin). If the syntax **certuser=**<em>Cert</em> is used, the debugger will look up the certificate in the system store (the default store). If the syntax **machuser=**<em>Cert</em> is used, the debugger will look up the certificate in the machine store. The specified certificate must support server authentication.
 
 <span id="________hidden"></span><span id="________HIDDEN"></span> **hidden**  
 Prevents the process server from appearing when someone uses the **-QR** command-line option to display all active servers.
@@ -92,13 +89,13 @@ Requires a smart client to supply the specified password in order to connect to 
 
 **Warning**   Using a password with TCP, NPIPE, or COM protocol only offers a small amount of protection, because the password is not encrypted. When a password is used with SSL or SPIPE protocol, it is encrypted. If you want to establish a secure remote session, you must use SSL or SPIPE protocol.
 
- 
+ 
 
 <span id="________ipversion_6"></span><span id="________IPVERSION_6"></span> **ipversion=6**  
 (Debugging Tools for Windows 6.6.07 and earlier only) Forces the debugger to use IP version 6 rather than version 4 when using TCP to connect to the Internet. In Windows Vista and later versions, the debugger attempts to auto-default to IP version 6, making this option unnecessary.
 
 <span id="________IcfEnable"></span><span id="________icfenable"></span><span id="________ICFENABLE"></span> **IcfEnable**  
-(Windows XP and later versions only) Causes the debugger to enable the necessary port connections for TCP or named pipe communication when the Internet Connection Firewall is active. By default, the Internet Connection Firewall disables the ports used by these protocols. When **IcfEnable** is used with a TCP connection, the debugger causes Windows to open the port specified by the *Socket* parameter. When **IcfEnable** is used with a named pipe connection, the debugger causes Windows to open the ports used for named pipes (ports 139 and 445). The debugger does not close these ports after the connection terminates.
+Causes the debugger to enable the necessary port connections for TCP or named pipe communication when the Internet Connection Firewall is active. By default, the Internet Connection Firewall disables the ports used by these protocols. When **IcfEnable** is used with a TCP connection, the debugger causes Windows to open the port specified by the *Socket* parameter. When **IcfEnable** is used with a named pipe connection, the debugger causes Windows to open the ports used for named pipes (ports 139 and 445). The debugger does not close these ports after the connection terminates.
 
 <span id="-sifeo__________Executable"></span><span id="-sifeo__________executable"></span><span id="-SIFEO__________EXECUTABLE"></span>**-sifeo** *Executable*  
 Suspends the Image File Execution Option (IFEO) value for the given image. *Executable* should include the file name of the executable image, including the file name extensions. The **-sifeo** option allows DbgSrv to be set as the IFEO debugger for an image created by the **-c** option, without causing recursive invocation due to the IFEO setting. This option can be used only if **-c** is used.
@@ -120,11 +117,10 @@ Causes the remainder of the command line to be ignored. This option is useful if
 
 You can start any number of process servers on one computer. However, this is generally unnecessary, since one process server can be used by any number of smart clients (each engaged in a different debugging session).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Activating%20a%20Process%20Server%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Returning Control from HwScsiFindAdapter
-author: windows-driver-content
 description: Returning Control from HwScsiFindAdapter
 ms.assetid: 689eae76-9b5b-438f-bbdc-5ee11c6fe737
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - SCSI miniport drivers WDK storage , HwScsiFindAdapter
 - return values WDK SCSI
 - status values WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Returning Control from HwScsiFindAdapter
@@ -47,11 +43,10 @@ Any of the immediately preceding "disable" values in the registry overrides what
 
 Note also that the NT-based operating system port driver uses values from the PORT\_CONFIGURATION\_INFORMATION provided by a miniport driver's *HwScsiFindAdapter* routine or from other sources (such as the registry for a legacy miniport driver) to fill in the IO\_SCSI\_CAPABILITIES data for use by storage class drivers, as described in [Storage Class Drivers](storage-class-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -5,17 +5,14 @@ ms.assetid: b7d902db-4918-4e9f-a7e0-3bb6c5ed1dfb
 keywords:
 - network profiles WDK Native 802.11 IHV Extensions DLL , about network profiles
 - XML fragments WDK Native 802.11 IHV Extensions DLL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Profile Overview
 
 
-**Important**  The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](wifi-universal-driver-model.md).
+
 
  
 
@@ -38,7 +35,7 @@ This XML fragment consists of the extensions to network security as defined by t
 
 -   Standard security settings.
 
-    For the WLAN adapter that is managed by the IHV Extensions DLL, the DLL is responsible for the security algorithms, such as the Robust Security Network Association ( [RSNA](rsna.md)) authentication algorithm or the [AES-CCMP](aes-ccmp.md) cipher algorithm. The operating system is no longer responsible. In this situation, the IHV Extensions DLL can either process the algorithms or provide proprietary methods for offloading the processing to the WLAN adapter.
+    For the WLAN adapter that is managed by the IHV Extensions DLL, the DLL is responsible for the security algorithms, such as the Robust Security Network Association ( [RSNA](https://docs.microsoft.com/windows-hardware/drivers/network/rsna-overview)) authentication algorithm or the [AES-CCMP](https://docs.microsoft.com/windows-hardware/drivers/network/aes-ccmp) cipher algorithm. The operating system is no longer responsible. In this situation, the IHV Extensions DLL can either process the algorithms or provide proprietary methods for offloading the processing to the WLAN adapter.
 
 -   Proprietary security settings.
 

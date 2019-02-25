@@ -3,17 +3,14 @@ title: usb3kd.hub_info_from_fdo
 description: The usb3kd.hub_info_from_fdo command displays information about a hub in the USB 3.0 tree.
 ms.assetid: 07A1C3EC-76A9-49A5-8467-53FCE3667203
 keywords: ["usb3kd.hub_info_from_fdo Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - usb3kd.hub_info_from_fdo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usb3kd.hub\_info\_from\_fdo
@@ -21,7 +18,7 @@ api_type:
 
 The **!usb3kd.hub\_info\_from\_fdo** command displays information about a hub in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree).
 
-```
+```dbgcmd
 !usb3kd.hub_info_from_fdo DeviceObject
 ```
 
@@ -41,7 +38,7 @@ Examples
 
 You can get the address of the FDO from the output of [**!usb\_tree**](-usb3kd-usb-tree.md) or from a variety of other debugger commands. For example, the [**!devstack**](-devstack.md) command displays the address of the FDO. In the following example, the address of the FDO is fffffa800597a660.
 
-```
+```dbgcmd
 3: kd> !devnode 0 1 usbhub3
 Dumping IopRootDeviceNode (= 0xfffffa8003609cc0)
 DevNode 0xfffffa8005981730 for PDO 0xfffffa8004ffc550
@@ -55,7 +52,7 @@ DevNode 0xfffffa8005981730 for PDO 0xfffffa8004ffc550
 
 Now you can pass the address of the FDO to the **!usb3kd.hub\_info\_from\_fdo** command.
 
-```
+```dbgcmd
  3: kd> !hub_info_from_fdo fffffa800597a660
 
 ## Dumping HUB Information fffffa800597a660
@@ -101,13 +98,12 @@ Hub Event History:
 
 [**!usb3kd.hub\_info**](-usb3kd-hub-info.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!usb3kd.hub_info_from_fdo%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

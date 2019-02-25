@@ -1,6 +1,5 @@
 ---
 title: Tape Drivers
-author: windows-driver-content
 description: Tape Drivers
 ms.assetid: d6d8ac92-0713-401c-9551-fc8e08e903f4
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - storage drivers WDK , tape drivers
 - tape drivers WDK storage , about tape drivers
 - storage tape drivers WDK , about tape drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Tape Drivers
@@ -40,11 +36,10 @@ An existing tape miniclass driver must be modified to support one new entry poin
 
 This section describes the support provided by the operating system-specific tape class driver and provides guidelines for writing a new tape miniclass driver. See [Tape Class Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff567959) and [Tape Miniclass Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff567970) for details on the routines in the tape class and tape miniclass drivers. See [Device Configurations and Layered Drivers](https://msdn.microsoft.com/library/windows/hardware/ff543100) for a description of the storage device driver layers.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

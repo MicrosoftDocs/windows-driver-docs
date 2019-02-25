@@ -10,11 +10,8 @@ keywords:
 - events WDK Winsock Kernel
 - functions WDK Winsock Kernel
 - event callback functions WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Winsock Kernel Functions vs. Event Callback Functions
@@ -48,11 +45,11 @@ The following lists summarize some key points for each method.
 
 **Note**  The above lists are not necessarily exhaustive. There might be other points to consider when choosing which method is the best choice for a particular WSK application.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

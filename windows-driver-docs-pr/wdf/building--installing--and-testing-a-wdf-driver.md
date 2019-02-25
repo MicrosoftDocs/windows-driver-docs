@@ -1,13 +1,9 @@
 ---
 title: Building, Installing, and Testing
-author: windows-driver-content
 description: This section describes how you build a Windows Driver Frameworks (WDF) driver in Microsoft Visual Studio, whether you need to provide a co-installer, and how you test your driver using the WDF Verifier and built-in event logging.
 ms.assetid: 178E51A0-A6FA-42A7-958C-6D2A5F195B58
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Building, Installing, and Testing
@@ -19,6 +15,7 @@ This section describes how you build a Windows Driver Frameworks (WDF) driver in
 
 
 -   [Building and Loading a WDF Driver](building-and-loading-a-kmdf-driver.md)
+-   [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md)
 -   [Redistributable Framework Components](installation-components-for-kmdf-drivers.md)
 -   [Specifying the KMDF Co-installer in an INF File](installing-the-framework-s-co-installer.md)
 -   [Using the UMDF Co-installer](using-the-umdf-co-installer.md)
@@ -39,9 +36,9 @@ This section describes how you build a Windows Driver Frameworks (WDF) driver in
 -   [How UMDF Handles Application Failures](how-umdf-handles-application-failures.md)
 -   [How UMDF Reports Errors](how-umdf-reports-errors.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Coverage Tests (Device Fundamentals)
 description: The Device Fundamental Coverage tests monitor and report on the various I/O request packets (IRPs) that enter or leave a driver stack for specified devices.
 ms.assetid: 950B124B-8B2D-4A54-AFC3-E90BBDD8D1AF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Coverage Tests (Device Fundamentals)
@@ -41,7 +38,7 @@ The Device Fundamental Coverage tests monitor and report on the various I/O requ
 <p><strong>Test binary:</strong> DriverCoverageDisableSupport.dll</p>
 <p><strong>Test method:</strong> DisableCoverageDataCollection</p>
 <p><strong>Parameters:</strong></p>
-<p><em>DQ</em> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p></td>
+<p><em>DQ</em> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Display_collected_IRP_coverage_data._"></span><span id="display_collected_irp_coverage_data._"></span><span id="DISPLAY_COLLECTED_IRP_COVERAGE_DATA._"></span>Display collected IRP coverage data.</p></td>
@@ -63,12 +60,12 @@ The Device Fundamental Coverage tests monitor and report on the various I/O requ
 <p><strong>Test binary:</strong> DriverCoverageEnableSupport.dll</p>
 <p><strong>Test method:</strong> EnableCoverageDataCollection</p>
 <p><strong>Parameters:</strong> None</p>
-<p><em>DQ</em> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p></td>
+<p><em>DQ</em> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="About_the_Coverage_tests"></span><span id="about_the_coverage_tests"></span><span id="ABOUT_THE_COVERAGE_TESTS"></span>About the Coverage tests
 
@@ -89,11 +86,10 @@ The Device Fundamentals coverage tests are based upon the Driver Coverage Toolki
 
 [How to test a driver at runtime from a Command Prompt](https://msdn.microsoft.com/windows-drivers/develop/how_to_test_a_driver_at_runtime_from_a_command_prompt)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Coverage%20Tests%20%28Device%20Fundamentals%29%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

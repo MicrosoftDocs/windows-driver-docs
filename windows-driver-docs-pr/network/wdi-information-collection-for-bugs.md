@@ -2,11 +2,8 @@
 title: WDI information collection for bugs
 description: Bugs in any non-trivial software are inevitable.
 ms.assetid: 551CA7DD-EB1A-41FB-A3D7-472DA7020B51
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDI information collection for bugs
@@ -68,15 +65,15 @@ If there is no crash but Wi-Fi does not function as expected, collect and analyz
 
 Sometimes, the Wi-Fi NIC does not go to low power (device\_power\_state\_Dx). Other times, the device wakes up frequently. A SleepStudy report is helpful in first level triage. SleepStudy events are always on, but only collected if CS sessions are longer than 10 minutes. The events are also persistent (for example, you can inspect the study postmortem). To generate a SleepStudy, run the following command line in an Administrator command prompt.
 
-```
+```CMD
 Powercfg /SleepStudy
 ```
 
 A report file named SleepStudy-report.html is generated. It should be opened outside %windiir%\\system. The report breaks down what modules are keeping the system out of very low power state (DRIPS). It can also further break down which components are keeping the Wi-Fi NIC up (out of Dx).
 
- 
+ 
 
- 
+ 
 
 
 

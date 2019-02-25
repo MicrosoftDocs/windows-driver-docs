@@ -3,11 +3,8 @@ title: Determining the Status of a Device
 description: Determining the Status of a Device
 ms.assetid: d250643e-13cb-4657-9235-5fdeb1eab89a
 keywords: ["Plug and Play (PnP), device status", "Plug and Play (PnP), device tree", "device status", "device tree"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining the Status of a Device
@@ -18,7 +15,7 @@ ms.technology: windows-devices
 
 To display the entire device tree, starting with the root, use **!devnode 0 1**:
 
-```
+```dbgcmd
 kd> !devnode 0 1 
 ```
 
@@ -30,7 +27,7 @@ In the example for the **!devnode** command in the [Extensions for Debugging Plu
 
 The following example shows a device that was created by the PCI bus. This device does not have the DNF\_MADEUP flag set.
 
-```
+```dbgcmd
 0: kd> !devnode 0xfffffa8004483490
 DevNode 0xfffffa8004483490 for PDO 0xfffffa800448d060
   Parent 0xfffffa80036766d0   Sibling 0xfffffa8004482010   Child 0xfffffa80058ad720
@@ -54,7 +51,7 @@ DevNode 0xfffffa8004483490 for PDO 0xfffffa800448d060
 
 1. A devnode for a device with insufficient resources:
 
-```
+```dbgcmd
 kd> !devnode 0xff0d06e8 6
 
 DevNode 0xff0d06e8 for PDO 0xff0d07d0 at level 0x3
@@ -86,7 +83,7 @@ Note that the devnode has no CM Resource List, because it is not started and is 
 
 2. Note that there are no resources stored in this devnode for a legacy driver.
 
-```
+```dbgcmd
 kd> !devnode 0xff0d1648 6
 
 DevNode 0xff0d1648 for PDO 0xff0d22d0 at level 0x2
@@ -103,7 +100,7 @@ DevNode 0xff0d1648 for PDO 0xff0d22d0 at level 0x2
 
 You can retrieve the device object list for the driver for the following types of devices:
 
-```
+```dbgcmd
 kd> !drvobj mga_mil
 
 Driver object (ff0bbc10) is for:
@@ -116,7 +113,7 @@ ff0bb900
 
 You can then dump the data for this device object:
 
-```
+```dbgcmd
 kd> !devobj ff0bb900
 
 Device object (ff0bb900) is for:
@@ -128,7 +125,7 @@ Device queue is not busy.
 
 Finally, you can dump the devnode referred by the device object. This devnode is not linked in the device tree. It represents a "pseudo-devnode" used to claim resources for the legacy device. Note the DNF\_RESOURCE\_REPORTED flag that indicates the device is a reported detected device.
 
-```
+```dbgcmd
 kd> !devnode ff0bb808 6
 
 DevNode 0xff0bb808 for PDO 0xff0bb900 at level 0xffffffff
@@ -154,11 +151,10 @@ DevNode 0xff0bb808 for PDO 0xff0bb900 at level 0xffffffff
       Range starts at 0x0000000040800000 for 0x800000 bytes
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Determining%20the%20Status%20of%20a%20Device%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

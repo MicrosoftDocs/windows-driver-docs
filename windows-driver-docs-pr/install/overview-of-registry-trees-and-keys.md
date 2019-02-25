@@ -10,20 +10,17 @@ keywords:
 - installing devices WDK , registry
 - Device setup WDK device installations , registry
 - debugging device
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registry Trees for Devices and Drivers
 
 
-## <a href="" id="ddk-driver-information-in-the-registry-dg"></a>
 
 
-The following trees in the registry are of particular interest to driver writers (where **HKLM** represents **HKEY\_LOCAL\_MACHINE**):
+
+The following trees in the registry are of particular interest to driver writers (where **HKLM** represents **HKEY_LOCAL_MACHINE**):
 
 -   [HKLM\\SYSTEM\\CurrentControlSet\\Services Registry Tree](hklm-system-currentcontrolset-services-registry-tree.md)
 
@@ -37,11 +34,11 @@ For information on accessing registry keys from WDF (KMDF or UMDF) drivers, see 
 
 **Note**  The keys under **HKLM\\SYSTEM\\CurrentControlSet** are a safe place to preserve data that is important to your driver because the data is stored in the system hive. The system takes additional precautions to protect the system hive (for example, keeping multiple copies).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

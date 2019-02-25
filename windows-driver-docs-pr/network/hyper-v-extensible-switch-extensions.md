@@ -2,11 +2,8 @@
 title: Hyper-V Extensible Switch Extensions
 description: Hyper-V Extensible Switch Extensions
 ms.assetid: 949BF170-99B3-412F-9DC2-ECE10D480F00
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Hyper-V Extensible Switch Extensions
@@ -24,11 +21,11 @@ This section includes the following topics:
 
 **Note**  If multiple extensions of the same type are bound to an extensible switch instance, the order in which they are layered within the extensible switch driver stack can be modified. For more information, see [Reordering Hyper-V Extensible Switch Extensions](reordering-hyper-v-extensibility-switch-extensions.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

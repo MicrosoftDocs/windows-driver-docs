@@ -13,11 +13,8 @@ keywords:
 - treble property WDK audio
 - bass boost property WDK audio
 - mid-frequency property WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Topology Nodes
@@ -46,66 +43,66 @@ WDMAud translates some but not all topology nodes into corresponding mixer-line 
 <tbody>
 <tr class="odd">
 <td align="left"><p>AGC</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_AGC</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537154)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537154" data-raw-source="[&lt;strong&gt;KSNODETYPE_AGC&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537154)"><strong>KSNODETYPE_AGC</strong></a></p></td>
 <td align="left"><p>MIXERCONTROL_CONTROLTYPE_ONOFF</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Loudness</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_LOUDNESS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537174)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537174" data-raw-source="[&lt;strong&gt;KSNODETYPE_LOUDNESS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537174)"><strong>KSNODETYPE_LOUDNESS</strong></a></p></td>
 <td align="left"><p>MIXERCONTROL_CONTROLTYPE_LOUDNESS</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Mute</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_MUTE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537178)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537178" data-raw-source="[&lt;strong&gt;KSNODETYPE_MUTE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537178)"><strong>KSNODETYPE_MUTE</strong></a></p></td>
 <td align="left"><p>MIXERCONTROL_CONTROLTYPE_MUTE</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Tone (multiple)</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_TONE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537205)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537205" data-raw-source="[&lt;strong&gt;KSNODETYPE_TONE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537205)"><strong>KSNODETYPE_TONE</strong></a></p></td>
 <td align="left"><p>MIXERCONTROL_CONTROLTYPE_ONOFF (if KSPROPERTY_AUDIO_BASS_BOOST is supported)</p>
 <p>MIXERCONTROL_CONTROLTYPE_BASS (if KSPROPERTY_AUDIO_BASS is supported)</p>
 <p>MIXERCONTROL_CONTROLTYPE_TREBLE (if KSPROPERTY_AUDIO_TREBLE is supported)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Volume</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_VOLUME</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537208)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537208" data-raw-source="[&lt;strong&gt;KSNODETYPE_VOLUME&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537208)"><strong>KSNODETYPE_VOLUME</strong></a></p></td>
 <td align="left"><p>MIXERCONTROL_CONTROLTYPE_VOLUME</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Peakmeter</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_PEAKMETER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537183)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537183" data-raw-source="[&lt;strong&gt;KSNODETYPE_PEAKMETER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537183)"><strong>KSNODETYPE_PEAKMETER</strong></a></p></td>
 <td align="left"><p>MIXERCONTROL_CONTROLTYPE_PEAKMETER</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MUX</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_MUX</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537180)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537180" data-raw-source="[&lt;strong&gt;KSNODETYPE_MUX&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537180)"><strong>KSNODETYPE_MUX</strong></a></p></td>
 <td align="left"><p>MIXERCONTROL_CONTROLTYPE_MUX</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Stereo wide</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_STEREO_WIDE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537194)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537194" data-raw-source="[&lt;strong&gt;KSNODETYPE_STEREO_WIDE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537194)"><strong>KSNODETYPE_STEREO_WIDE</strong></a></p></td>
 <td align="left"><p>MIXERCONTROL_CONTROLTYPE_FADER</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Chorus</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_CHORUS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537156)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537156" data-raw-source="[&lt;strong&gt;KSNODETYPE_CHORUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537156)"><strong>KSNODETYPE_CHORUS</strong></a></p></td>
 <td align="left"><p>MIXERCONTROL_CONTROLTYPE_FADER</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Reverb</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_REVERB</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537189)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537189" data-raw-source="[&lt;strong&gt;KSNODETYPE_REVERB&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537189)"><strong>KSNODETYPE_REVERB</strong></a></p></td>
 <td align="left"><p>MIXERCONTROL_CONTROLTYPE_FADER</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Supermix (multiple)</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_SUPERMIX</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537198)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537198" data-raw-source="[&lt;strong&gt;KSNODETYPE_SUPERMIX&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537198)"><strong>KSNODETYPE_SUPERMIX</strong></a></p></td>
 <td align="left"><p>MIXERCONTROL_CONTROLTYPE_MUTE (if KSPROPERTY_AUDIO_MUTE is supported in the supermix node)</p>
 <p>MIXERCONTROL_CONTROLTYPE_VOLUME (see comments in text)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Topology-node types that are missing from the preceding table are not translated into mixer-line controls, and mixer-line controls that are missing from the table are not supported by WDM audio drivers.
 
@@ -133,12 +130,10 @@ To check for stereo or mono support, the left channel is queried, followed by th
 
 The name of the control is returned as a string when the node is queried for its [**KSPROPERTY\_TOPOLOGY\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff565809) property. If a node generates more than one control, all controls share the same name.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Topology%20Nodes%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

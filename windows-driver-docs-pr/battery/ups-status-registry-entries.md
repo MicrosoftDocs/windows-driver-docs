@@ -2,11 +2,8 @@
 title: UPS Status Registry Entries
 description: UPS minidrivers must set certain UPS Status Registry Entries
 ms.assetid: c24ef185-ba8d-4cfd-9d33-b70682905f00
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UPS\\Status Registry Entries
@@ -69,7 +66,7 @@ The current status of the UPS batteries. Values are listed in the following tabl
 </tbody>
 </table>
 
- 
+ 
 
 <span id="Default_Value"></span><span id="default_value"></span><span id="DEFAULT_VALUE"></span>Default Value  
 0
@@ -112,7 +109,7 @@ The status of the communication path to the UPS. Values are listed in the follow
 </tbody>
 </table>
 
- 
+ 
 
 <span id="Default_Value"></span><span id="default_value"></span><span id="DEFAULT_VALUE"></span>Default Value  
 1
@@ -197,16 +194,15 @@ Reports the status of utility-supplied power into the UPS. Values are listed in 
 </tbody>
 </table>
 
- 
+ 
 
 <span id="Default_Value"></span><span id="default_value"></span><span id="DEFAULT_VALUE"></span>Default Value  
 0
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

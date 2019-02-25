@@ -1,15 +1,11 @@
 ---
-title: OID\_GEN\_MEDIA\_SUPPORTED
-author: windows-driver-content
-description: As a query, the OID\_GEN\_MEDIA\_SUPPORTED OID specifies the media types that a NIC can support but not necessarily the media types that the NIC currently uses.
+title: OID_GEN_MEDIA_SUPPORTED
+description: As a query, the OID_GEN_MEDIA_SUPPORTED OID specifies the media types that a NIC can support but not necessarily the media types that the NIC currently uses.
 ms.assetid: e7b8d2b1-4e84-416f-aeb3-75591ed44b22
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_MEDIA_SUPPORTED Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_MEDIA\_SUPPORTED
@@ -58,14 +54,14 @@ Ethernet (802.3).
 
 **Note**  NDIS 5.*x* miniport drivers that conform to the 802.11 interface must use this media type. For more information about the 802.11 interface, see [802.11 Wireless LAN Miniport Drivers](https://msdn.microsoft.com/library/windows/hardware/ff543933).
 
- 
+ 
 
 <a href="" id="ndismedium802-5"></a>**NdisMedium802\_5**  
 Token Ring (802.5). This media type is not supported for NDIS 6.0 and later drivers.
 
 **Note**  Starting with Windows 8, the operating system will not support this media type for any miniport drivers.
 
- 
+ 
 
 <a href="" id="ndismediumfddi"></a>**NdisMediumFddi**  
 FDDI. This media type is not supported on Windows Vista and later versions of Windows.
@@ -153,12 +149,10 @@ Requirements
 
 [OID\_GEN\_PHYSICAL\_MEDIUM](oid-gen-physical-medium.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_GEN_MEDIA_SUPPORTED%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

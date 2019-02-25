@@ -2,11 +2,8 @@
 title: WDI TLV generator/parser XML semantics
 description: The TLV generator/parser XML file is a list of messages, containers (TLVs), and property groups (structs). This topic covers the XML syntax.
 ms.assetid: AD268E68-B969-45D8-A2F2-4025E827D496
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDI TLV generator/parser XML semantics
@@ -48,7 +45,7 @@ The TLV generator/parser XML file is a list of messages, containers (TLVs), and 
     -   [Contents](#contents)
     -   [Example](#example)
 
-## <a href="" id="-message---"></a>`<message />`
+## `<message />`
 
 
 Describes a single top-level WDI message. There are only parser/generator functions for these message entries.
@@ -66,7 +63,7 @@ List of container references (`<containerRef />`). These are the different TLVs 
 
 ### Example
 
-```
+```XML
 <message commandId="WDI_SET_P2P_LISTEN_STATE"
          type="WDI_SET_P2P_LISTEN_STATE_PARAMETERS"
          description="Parameters to set listen state."
@@ -81,7 +78,7 @@ List of container references (`<containerRef />`). These are the different TLVs 
 </message>
 ```
 
-## <a href="" id="-containerref---"></a>`<containerRef />`
+## `<containerRef />`
 
 
 Reference to a `<container />` defined in the `<containers />` section.
@@ -102,19 +99,19 @@ None.
 
 ### Example
 
-```
+```XML
 <containerRef id="WDI_TLV_P2P_CHANNEL_NUMBER"
               name="ListenChannel"
               optional="true"
               type="WFDChannelContainer"/>
 ```
 
-## <a href="" id="-containers---"></a>`<containers />`
+## `<containers />`
 
 
 Describes all containers/TLVs used in WDI messages. Containers can be considered TLV buckets. There are 2 types: `<container />` and `<aggregateContainer />`.
 
-## <a href="" id="-container---"></a>`<container />`
+## `<container />`
 
 
 TLV Container for a single structure reference or named type. It is statically sized, but may be a C-style array as long as it is statically sized.
@@ -133,7 +130,7 @@ One of `<groupRef />` or `<namedType />`.
 
 ### Example
 
-```
+```XML
 <container name="P2PListenStateContainer"
            description="Container for P2P Listen State setting."
            type="WDI_P2P_LISTEN_STATE_CONTAINER">
@@ -143,7 +140,7 @@ One of `<groupRef />` or `<namedType />`.
 </container>
 ```
 
-## <a href="" id="-groupref---"></a>`<groupRef />`
+## `<groupRef />`
 
 
 Reference to a property group (structure) defined in the `<propertyGroups />` section.
@@ -160,7 +157,7 @@ None.
 
 ### Examples
 
-```
+```XML
 <container name="WFDChannelContainer"
            description="Container for a Wi-Fi Direct channel."
            type="WDI_P2P_CHANNEL_CONTAINER">
@@ -170,7 +167,7 @@ None.
 </container>
 ```
 
-## <a href="" id="--namedtype---"></a>` <namedType />`
+## ` <namedType />`
 
 
 Reference to a raw type exposed by wditypes.hpp or dot11wdi.h. Uses default serializer (memcpy), so use at your own risk because of padding issues.
@@ -187,7 +184,7 @@ None.
 
 ### Example
 
-```
+```XML
 <container name="P2PListenStateContainer"
            description="Container for P2P Listen State setting."
            type="WDI_P2P_LISTEN_STATE_CONTAINER">
@@ -197,7 +194,7 @@ None.
 </container>
 ```
 
-## <a href="" id="-aggregatecontainer---"></a>`<aggregateContainer />`
+## `<aggregateContainer />`
 
 
 TLV Container for many different containers. This is used for handling nested TLVs.
@@ -214,7 +211,7 @@ List of `<containerRef />`.
 
 ### Example
 
-```
+```XML
 <aggregateContainer
     name="P2PInvitationRequestInfoContainer"
     type="WDI_P2P_INVITATION_REQUEST_INFO_CONTAINER"
@@ -240,7 +237,7 @@ List of `<containerRef />`.
 </aggregateContainer>
 ```
 
-## <a href="" id="-propertygroups---"></a>`<propertyGroups />`
+## `<propertyGroups />`
 
 
 Describes all structures used in all containers. Structures can either be used by a `<container />`, or referenced by another `<propertyGroup />` (nested structures). They are defined independently of TLVs containers so they can be re-used. They do not have a TLV header.
@@ -249,9 +246,9 @@ These definitions are necessary as they help to solve padding issues with struct
 
 **Note**  Order matters here. All data offsets are implied based on the property group description, and data is written/parsed in the order it is defined here. These structures have to be defined here.
 
- 
+ 
 
-## <a href="" id="primitive-field-types---bool----uint8----uint16----uint32----int8----int16----int32---"></a>Primitive Field Types (`<bool/> <uint8/> <uint16/> <uint32/> <int8/> <int16/> <int32/>`)
+## Primitive Field Types (`<bool/> <uint8/> <uint16/> <uint32/> <int8/> <int16/> <int32/>`)
 
 
 These are the available primitive types, and are converted/marshalled appropriately by the generated code.
@@ -266,7 +263,7 @@ These are the available primitive types, and are converted/marshalled appropriat
 
 None
 
-## <a href="" id="-propertygroup---"></a>`<propertyGroup />`
+## `<propertyGroup />`
 
 
 An individual structure.
@@ -289,7 +286,7 @@ There are several possible property types (struct fields).
 
 ### Example
 
-```
+```XML
 <propertyGroup name="P2PDiscoverModeStruct"
                type="WDI_P2P_DISCOVER_MODE"
                description="Structure definition for P2P Discover Mode Parameters">
@@ -318,9 +315,9 @@ There are several possible property types (struct fields).
 </propertyGroup>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

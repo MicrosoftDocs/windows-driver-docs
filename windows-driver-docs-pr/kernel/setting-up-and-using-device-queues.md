@@ -1,20 +1,16 @@
 ---
 title: Setting Up and Using Device Queues
-author: windows-driver-content
 description: Setting Up and Using Device Queues
 ms.assetid: 5221ffc0-0cb4-498b-9be2-4d240b5f2744
 keywords: ["device queues WDK IRPs , setting up", "device queues WDK IRPs , objects", "inserting IRPs in queue", "storing device queue objects", "supplemental IRP queues WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Up and Using Device Queues
 
 
-## <a href="" id="ddk-setting-up-and-using-device-queues-kg"></a>
+
 
 
 A driver sets up a device queue object by calling [**KeInitializeDeviceQueue**](https://msdn.microsoft.com/library/windows/hardware/ff552126) at driver or device initialization. After starting its device(s), the driver inserts IRPs into this queue by calling [**KeInsertDeviceQueue**](https://msdn.microsoft.com/library/windows/hardware/ff552180) or [**KeInsertByKeyDeviceQueue**](https://msdn.microsoft.com/library/windows/hardware/ff552178). The following figure illustrates these calls.
@@ -50,12 +46,10 @@ Each device queue object is protected by a built-in executive spin lock (not sho
 
 See [Managing Hardware Priorities](managing-hardware-priorities.md) and [Spin Locks](spin-locks.md) for more information. For IRQL requirements for a specific support routine, see the routine's reference page.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Setting%20Up%20and%20Using%20Device%20Queues%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

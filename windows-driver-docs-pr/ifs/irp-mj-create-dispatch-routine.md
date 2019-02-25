@@ -1,17 +1,13 @@
 ---
 title: IRP_MJ_CREATE Dispatch Routine
-author: windows-driver-content
 description: IRP_MJ_CREATE Dispatch Routine
 ms.assetid: 1ff7915a-0949-43fe-9cf4-c0ad9abf6592
 keywords:
 - IRP_MJ_CREATE
 - security WDK file systems , adding security checks
 - security checks WDK file systems , IRP_MJ_CREATE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_CREATE Dispatch Routine
@@ -35,11 +31,10 @@ This section includes the following topics:
 
 [Handling Quotas on IRP\_MJ\_CREATE](handling-quotas-on-irp-mj-create.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

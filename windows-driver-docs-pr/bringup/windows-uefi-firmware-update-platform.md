@@ -1,13 +1,9 @@
 ---
 title: Windows UEFI firmware update platform
-author: windows-driver-content
 description: Windows supports installing system and device firmware updates via driver packages that are processed using the UpdateCapsule function.
 ms.assetid: 9F0D22FB-3C83-4F90-8E24-2205EEF9D5F7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows UEFI firmware update platform
@@ -22,12 +18,12 @@ The UEFI firmware update platform guidance is intended for SoC vendors and OEMs 
 -   Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 -   Windows 10 Mobile
 
-## <a href="" id="uefi-firmware-update-support--in-windows-10"></a>UEFI firmware update support in Windows 10
+## UEFI firmware update support in Windows 10
 
 
 All systems that run Windows 10 for desktop editions should implement UEFI firmware updates by following the UpdateCapsule-based update process described in this section of the documentation.
 
-Devices that runWindows 10 Mobile can follow the UpdateCapsule-based process used for Windows 10 Desktop. These devices can also follow the binary update process, which performs a binary update to the storage partition which contains the UEFI firmware.
+Devices that run Windows 10 Mobile can follow the UpdateCapsule-based process used for Windows 10 Desktop. These devices can also follow the binary update process, which performs a binary update to the storage partition which contains the UEFI firmware.
 
 Microsoft strongly recommends that devices running Windows 10 Mobile should update UEFI firmware by using the binary update process. Devices that run Windows 10 Mobile can use the UpdateCapsule-based process only in scenarios where the binary update process cannot be used. For example, if the partition layout of the device prevents the UEFI firmware from being updated by using a binary update package.
 
@@ -46,7 +42,7 @@ Deploying the update as a driver package allows the firmware update process to a
 
 **Note**  The fact that the firmware update is delivered as a driver package does not mean that the update is written as an actual driver. The driver package will contain an INF file and a binary file containing the system or device firmware image.
 
- 
+ 
 
 ### Device firmware updates
 
@@ -60,7 +56,7 @@ For the purposes of updating device firmware, the device firmware can be assigne
 
     **Note**  UEFI should not be used to update peripheral devices. UEFI requires devices to be present during reboot to apply a firmware update which cannot be guaranteed with (external, removable) peripheral devices.
 
-     
+     
 
 -   Driver-updatable device firmware.
 
@@ -70,7 +66,7 @@ For the purposes of updating device firmware, the device firmware can be assigne
 
 In order for a system to be compatible with the Windows firmware updating mechanism, it must meet the following requirements:
 
--   The system must implement UpdateCapsule and QueryCapsuleCapabilities as defined by section 7.5.3 of the [UEFI specification](http://go.microsoft.com/fwlink/p/?LinkId=218221).
+-   The system must implement UpdateCapsule and QueryCapsuleCapabilities as defined by section 7.5.3 of the [UEFI specification](https://go.microsoft.com/fwlink/p/?LinkId=218221).
 
     UpdateCapsule is used to pass the firmware update payload between Windows and the platform firmware.
 
@@ -93,11 +89,10 @@ In order for a system to be compatible with the Windows firmware updating mechan
 -   [Implementing support for UEFI firmware updates](implementing-support-for-uefi-firmware-updates.md)
 -   [User experience for UEFI firmware updates](user-experience-for-uefi-firmware-updates.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

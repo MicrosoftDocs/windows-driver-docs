@@ -1,17 +1,13 @@
 ---
 title: Handling SRB_FUNCTION_EXECUTE_SCSI
-author: windows-driver-content
 description: Handling SRB_FUNCTION_EXECUTE_SCSI
 ms.assetid: 221e1070-12d8-4870-a23c-426ed4a25b84
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo
 - SRB_FUNCTION_EXECUTE_SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling SRB\_FUNCTION\_EXECUTE\_SCSI
@@ -36,11 +32,10 @@ If the miniport driver uses system DMA, it must call [**ScsiPortIoMapTransfer**]
 
 All system-defined, required device I/O control requests sent to NT-based operating system storage class drivers are mapped to SRBs with the **Function** member set to SRB\_FUNCTION\_EXECUTE\_SCSI.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

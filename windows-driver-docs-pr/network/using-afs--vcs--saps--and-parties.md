@@ -5,17 +5,14 @@ ms.assetid: 4bf736a9-1236-4322-85f0-5d3ab7b8c549
 keywords:
 - connection-oriented NDIS WDK , entities created
 - CoNDIS WDK networking , entities created
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using AFs, VCs, SAPs, and Parties
 
 
-## <a href="" id="ddk-using-afs-vcs-saps-and-parties-ng"></a>
+
 
 
 Connection-oriented drivers create and use entities including address families (AFs), virtual connections (VCs), service access points (SAPs), and parties.
@@ -32,9 +29,9 @@ The following topics describe the entities that connection-oriented drivers crea
 
 [Parties](parties.md)
 
- 
+ 
 
- 
+ 
 
 
 

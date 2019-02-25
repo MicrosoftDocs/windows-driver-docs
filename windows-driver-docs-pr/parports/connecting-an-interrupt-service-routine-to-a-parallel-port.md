@@ -1,30 +1,26 @@
 ---
 title: Connecting an Interrupt Service Routine to a Parallel Port
-author: windows-driver-content
 description: Connecting an Interrupt Service Routine to a Parallel Port
 ms.assetid: 62d3a388-6de6-4019-ab95-56b5e96d0891
 keywords:
 - parallel ports WDK , interrupt service routines
 - interrupt service routines WDK parallel ports
 - deferred port check routines WDK parallel ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connecting an Interrupt Service Routine to a Parallel Port
 
 
-## <a href="" id="ddk-connecting-an-interrupt-service-routine-to-a-parallel-port-kg"></a>
+
 
 
 A kernel-mode client can use a [**IOCTL\_INTERNAL\_PARALLEL\_CONNECT\_INTERRUPT**](https://msdn.microsoft.com/library/windows/hardware/ff544020) request to connect an interrupt service routine and a *deferred port check routine* to the operation of the parallel port function driver.
 
 **Note**   Microsoft does not recommend using a client-supplied interrupt routine. The use of interrupts might cause system instability. By default, the IOCTL\_INTERNAL\_PARALLEL\_CONNECT\_INTERRUPT request is disabled.
 
- 
+ 
 
 To facilitate the porting and development of drivers for parallel devices, the system-supplied function driver for parallel ports supports a registry flag that kernel-mode clients can use to enable and disable a connect interrupt request. The connect interrupt request is enabled by the registry entry value **EnableConnectInterruptIoctl** under the Plug and Play registry key for the parallel port. The entry value has type REG\_DWORD and the default value is 0x0 (disabled). A value that is not equal to 0x0 enables the connect interrupt request.
 
@@ -42,11 +38,10 @@ If a client's interrupt service routine is called when the client does not have 
 
 Because a parallel port is shared by drivers, the parallel port function driver maintains a list of interrupt service routines and deferred port check routines connected to a parallel port. The parallel port function driver calls all connected interrupt routines and deferred port check routines in the order in which they were connected.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

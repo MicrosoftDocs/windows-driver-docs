@@ -8,11 +8,8 @@ keywords:
 - provider modules WDK Network Module Registrar , operations
 - network modules WDK Network Module Registrar , provider module operations
 - provider modules WDK Network Module Registrar
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Provider Module Operations
@@ -30,9 +27,9 @@ This section discusses the operations for a provider module to interact with the
 
 [Unloading a Provider Module](unloading-a-provider-module.md)
 
- 
+ 
 
- 
+ 
 
 
 

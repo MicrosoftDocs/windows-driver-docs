@@ -1,19 +1,14 @@
 ---
-title: OID\_RECEIVE\_FILTER\_SET\_FILTER
-author: windows-driver-content
-description: An overlying driver issues an OID method request of OID\_RECEIVE\_FILTER\_SET\_FILTER to set a filter on a network adapter.
+title: OID_RECEIVE_FILTER_SET_FILTER
+description: An overlying driver issues an OID method request of OID_RECEIVE_FILTER_SET_FILTER to set a filter on a network adapter.
 ms.assetid: ec3e119e-662f-48a6-8c68-20da20590b24
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_RECEIVE_FILTER_SET_FILTER Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_RECEIVE\_FILTER\_SET\_FILTER
-
 
 An overlying driver issues an OID method request of OID\_RECEIVE\_FILTER\_SET\_FILTER to set a filter on a network adapter.
 
@@ -42,9 +37,9 @@ The overlying driver initializes the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](htt
 
 Each filter that is set on a receive queue has a unique filter identifier for a network adapter. That is, the filter identifiers are not duplicated on different queues that the network adapter manages. When NDIS receives an OID request to set a filter on a receive queue, it verifies the filter parameters. After NDIS allocates the necessary resources and the filter identifier, it submits the OID request to the underlying network adapter. If the network adapter can successfully allocate the necessary software and hardware resources for the filter, it completes the OID request with a return status of NDIS\_STATUS\_SUCCESS.
 
-**Note**  Starting with NDIS 6.30, packet coalescing receive filter are only supported on the default receive queue of the network adapter. This receive queue has an identifier of NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.
+**Note**  Starting with NDIS 6.30, packet coalescing receive filter are only supported on the default receive queue of the network adapter. This receive queue has an identifier of NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.
 
- 
+
 
 The miniport driver must retain the filter identifiers for the allocated receive filters. NDIS uses the identifier of a filter in later OID requests to change the receive filter parameters or clear the receive filter.
 
@@ -56,23 +51,17 @@ The following points apply to miniport drivers that support the SR-IOV interface
 
 -   For the SR-IOV interface, a receive queue is created on a default or nondefault virtual port (VPort).
 
-    **Note**  Starting with Windows Server 2012, the SR-IOV interface only supports the default receive queue of a VPort.
-
-     
+    **Note**  Starting with Windows Server 2012, the SR-IOV interface only supports the default receive queue of a VPort.
 
     After an SR-IOV VPort is allocated through an OID set request of [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md), overlying drivers can set filters on the VPort with OID requests of OID\_RECEIVE\_FILTER\_SET\_FILTER.
 
-    **Note**  Only the overlying driver that allocated the VPort can set a filter on that VPort.
-
-     
+    **Note**  Only the overlying driver that allocated the VPort can set a filter on that VPort.
 
 -   Because the default VPort always exists, overlying drivers can always set a filter on the default VPort.
 
 -   When the VPort is created, no receive filters are set on it. In this case, the miniport driver must not indicate any receive packets on that VPort before the miniport driver receives an OID request of OID\_RECEIVE\_FILTER\_SET\_FILTER for the VPort. After this OID request is issued, the miniport driver can indicate packets on that VPort.
 
-    **Note**  If the miniport driver indicates packets on a VPort while it is processing an OID request of OID\_RECEIVE\_FILTER\_SET\_FILTER, it must complete the OID request and return an NDIS\_STATUS\_SUCCESS status code.
-
-     
+    **Note**  If the miniport driver indicates packets on a VPort while it is processing an OID request of OID\_RECEIVE\_FILTER\_SET\_FILTER, it must complete the OID request and return an NDIS\_STATUS\_SUCCESS status code.
 
 ### Additional Guidelines for the VMQ Interface
 
@@ -80,9 +69,7 @@ The following points apply to miniport drivers that support the VMQ interface:
 
 -   After a VMQ receive queue is allocated, overlying drivers can set filters on the receive queue with OID requests of OID\_RECEIVE\_FILTER\_SET\_FILTER.
 
-    **Note**  Only the protocol driver that allocated a receive queue can set a filter on that queue.
-
-     
+    **Note**  Only the protocol driver that allocated a receive queue can set a filter on that queue.
 
 -   Because the default queue always exists, overlying drivers can always set a filter on the default queue. If the network adapter supports a drop queue, overlying drivers can set a filter on the drop queue.
 
@@ -90,9 +77,7 @@ The following points apply to miniport drivers that support the VMQ interface:
 
 -   When the receive queue is created, no receive filters are set on it. In this case, the miniport driver must not indicate any receive packets on that receive queue before the miniport driver receives an OID request of OID\_RECEIVE\_FILTER\_SET\_FILTER for the receive queue. After this OID request is issued, the miniport driver can indicate packets on that receive queue.
 
-    **Note**  If the miniport driver indicates packets on a queue while it is processing an OID request of OID\_RECEIVE\_FILTER\_SET\_FILTER, it must complete the OID request and return an NDIS\_STATUS\_SUCCESS status code.
-
-     
+    **Note**  If the miniport driver indicates packets on a queue while it is processing an OID request of OID\_RECEIVE\_FILTER\_SET\_FILTER, it must complete the OID request and return an NDIS\_STATUS\_SUCCESS status code.
 
 ### Return status codes
 
@@ -154,13 +139,3 @@ Requirements
 [OID\_RECEIVE\_FILTER\_CLEAR\_FILTER](oid-receive-filter-clear-filter.md)
 
 [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](oid-receive-filter-queue-allocation-complete.md)
-
- 
-
- 
-
-
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_RECEIVE_FILTER_SET_FILTER%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-

@@ -3,17 +3,14 @@ title: usbkd.usbhubpd
 description: The usbkd.usbhubpd command displays information about a USB port.
 ms.assetid: 41D5E65D-76C2-45E0-9AC7-C2B50D806935
 keywords: ["usbkd.usbhubpd Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - usbkd.usbhubpd
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhubpd
@@ -21,7 +18,7 @@ api_type:
 
 The **!usbkd.usbhubpd** command displays information about a USB port.
 
-```
+```dbgcmd
 !usbkd.usbhubpd StructAddr
 ```
 
@@ -41,7 +38,7 @@ Examples
 
 Here is one way to find the address of a **usbhub!\_HUB\_PORT\_DATA**. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe00001ca11a0 !devobj ffffe00001ca1050 PCI: VendorId 8086 DeviceId 293c RevisionId 0002 
@@ -51,7 +48,7 @@ Here is one way to find the address of a **usbhub!\_HUB\_PORT\_DATA**. First ent
 
 In the preceding output, you can see the suggested command **!devstack ffffe00002320050**. Enter this command.
 
-```
+```dbgcmd
 0: kd> !kdexts.devstack ffffe00002320050
 
   !DevObj           !DrvObj            !DevExt           ObjectName
@@ -64,7 +61,7 @@ In the preceding output, you can see that the address of the device extension fo
 
 Pass the address of the device extension to the [**!usbhubext**](-usbkd-usbhubext.md) command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhubext ffffe000023201a0
 
 FDO ffffe00002320050 PDO ffffe0000213c050 HubNumber# 3
@@ -84,7 +81,7 @@ PortData 1: !port2_info ffffe000021bf000 Port State = PS_WAIT_CONNECT PortChange
 
 In the preceding output, `ffffe000021bf000` is the address of a **\_HUB\_PORT\_DATA** structure. Pass this address to **!usbhubpd**.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhubpd ffffe000021bf000
 PortNumber: 1
 Parent Hub FDO ffffe00002320050
@@ -120,13 +117,12 @@ PortChangelist: !usblist ffffe000021bf1c8, CL [Empty]
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!usbkd.usbhubpd%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -7,17 +7,14 @@ keywords:
 - network notify objects WDK , instances of
 - instance of notify objects WDK networking
 - initializing notify object instance
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating and Initializing an Instance of a Notify Object
 
 
-## <a href="" id="ddk-creating-and-initializing-an-instance-of-a-notify-object-ng"></a>
+
 
 
 The network configuration subsystem must create an instance of the notify object and initialize the object before the subsystem can inform a notify object about changes to network configuration and display custom property pages for the component that owns the object.
@@ -42,9 +39,9 @@ The **Initialize** method should assign the **INetCfgComponent** and **INetCfg**
 
 No other notify object interface methods are called until **Initialize** returns.
 
- 
+ 
 
- 
+ 
 
 
 

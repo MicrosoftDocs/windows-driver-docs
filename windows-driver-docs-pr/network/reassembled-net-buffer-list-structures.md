@@ -8,17 +8,14 @@ keywords:
 - parent/child NET_BUFFER_LIST relationships WDK networking
 - child/parent NET_BUFFER_LIST relationships WDK networking
 - relationships WDK NET_BUFFER_LIST
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reassembled NET\_BUFFER\_LIST Structures
 
 
-## <a href="" id="ddk-reassembled-net-buffer-structures-ng"></a>
+
 
 
 An NDIS driver can create a reassembled [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure from an existing NET\_BUFFER\_LIST structure. The reassembled structure references the original data from multiple source [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures. Drivers can use this type of structure to efficiently combine many smaller buffers into a single large buffer.
@@ -42,9 +39,9 @@ NDIS drivers call the [**NdisFreeReassembledNetBufferList**](https://msdn.micros
 
 [Derived NET\_BUFFER\_LIST Structures](derived-net-buffer-list-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

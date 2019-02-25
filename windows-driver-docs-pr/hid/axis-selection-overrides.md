@@ -1,15 +1,16 @@
 ---
 title: Axis Selection Overrides
-author: windows-driver-content
 description: Axis Selection Overrides
 ms.assetid: 151c3d19-2f80-4d71-a004-10c16c691fb9
 keywords: ["joysticks WDK HID , axes", "virtual joystick drivers WDK HID , axes", "VJoyD WDK HID , axes", "axes WDK joysticks", "overriding axis selections WDK joysticks", "usage pages WDK HID"]
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Axis Selection Overrides
 
 
-## <a href="" id="ddk-axis-selection-overrides-di"></a>
+
 
 
 The DirectX 8.0 release introduces a new mechanism to provide hardware vendors with limited ability to modify how DirectInput assigns axes for HID-compliant devices. The initial axis selection is made through an association between a HID usage page/usage pair on the device with an axis instance. The axis instance is described in an optional registry subkey under the **Axes** subkey for the device type key. (Note that the **Axes** subkey is also an optional key under the device type-key.) Within the **Axes** subkey, the Attributes value stores a DIOBJECTATTRIBUTES structure. Before DirectX 8.0, the **wUsagePage** and **wUsage** fields in the DIOBJECTATTRIBUTES structure assigned a HID usage page and usage to an object on a non-HID device. These members were ignored for HID-compliant devices.
@@ -18,7 +19,7 @@ With the release of DirectX 8.0, these members became relevant to HID-compliant 
 
 **Note**   Axis mapping is static, so the behavior is undefined if these values are changed while the device is in use. If the suggested match for an axis cannot be made, processing continues as though no mapping had been suggested.
 
- 
+ 
 
 For example, imagine a joystick device designed for use on a platform with a complete implementation of the HID\_USAGE\_PAGE\_GAME controls. Such a device might describe its X and Y axes in HID as:
 
@@ -53,11 +54,11 @@ For example, imagine a joystick device designed for use on a platform with a com
 </tbody>
 </table>
 
- 
+ 
 
 Because these scenarios are not directly recognized by DirectInput (or JoyHID) they are not very useful to games. To get them recognized as the X and Y axes by DirectInput, the following registry entries could be added:
 
-```
+```cpp
 [DIRECT_INPUT_TYPES\ VID_vvvv&PID_pppp)\Axes\0]
      Binary Attributes = 00 00 00 00 05 00 24 00
 
@@ -174,18 +175,16 @@ When the JoyHID/VJoyD path is taken, the following tables match WinMM axes to HI
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  Mappings for the R, U and V axes fall through to the next axis if a mapping is not found, whereas X, Y and Z mappings are completely independent of each other. This is because VJoyD.VxD only supports contiguous sets of axes (for example, X, Y, Z, R is supported, but X, Y, Z, U is not). The only exceptions to this rule are made for joysticks that use the precise combinations of X, Y and R, or X, Y, Z, R and V. This method of mapping helps to avoid the possibility that JoyHID.VxD makes axis assignments that VJoyD.VxD cannot tolerate.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Axis%20Selection%20Overrides%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

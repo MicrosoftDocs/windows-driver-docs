@@ -1,12 +1,8 @@
 ---
 Description: This paper provides information about USB ContainerIDs for the Windows operating system. It includes guidelines for device manufacturers to program their multifunction USB devices so that they can be correctly detected by Windows.
 title: USB ContainerIDs in Windows
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB ContainerIDs in Windows
@@ -33,7 +29,7 @@ The following are two ways to generate a **ContainerID** for a USB device:
 ## USB ContainerID Contents
 
 
-A USB **ContainerID** is presented to the operating system in the form of a universally unique identifier (UUID) string. The **ContainerID** UUID is contained within a **ContainerID** descriptor. A **ContainerID** descriptor is a device-level Microsoft OS feature descriptor. As such, when the operating system requests a USB **ContainerID**, the wValue field of the descriptor request must always be set to zero. For more information about Microsoft OS feature descriptors and descriptor requests, see [Microsoft OS 1.0 Descriptors Specification](http://go.microsoft.com/fwlink/p/?linkid=617519).
+A USB **ContainerID** is presented to the operating system in the form of a universally unique identifier (UUID) string. The **ContainerID** UUID is contained within a **ContainerID** descriptor. A **ContainerID** descriptor is a device-level Microsoft OS feature descriptor. As such, when the operating system requests a USB **ContainerID**, the wValue field of the descriptor request must always be set to zero. For more information about Microsoft OS feature descriptors and descriptor requests, see [Microsoft OS 1.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=617519).
 
 A **ContainerID** descriptor consists of a header section.
 
@@ -43,7 +39,7 @@ A **ContainerID** descriptor consists of a header section.
 | 4      | **bcdVersion** | 2    | BCD            | The version number of the **ContainerID** descriptor, in binary coded decimal (BCD), where each nibble corresponds to a digit. The most-significant byte (MSB) contains the two digits before the decimal point, and the least-significant byte (LSB) contains the two digits after the decimal point. For example, version 1.00 is represented as 0x0100. This field must always be set to 0x0100. |
 | 6      | **wIndex**     | 2    | Word           | This field is always set to 6 for USB **ContainerID** descriptors.                                                                                                                                                                                                                                                                                                                                  |
 
- 
+ 
 
 A **ContainerID** descriptor consists of a ContainerID section.
 
@@ -51,7 +47,7 @@ A **ContainerID** descriptor consists of a ContainerID section.
 |--------|------------------|------|----------------|-----------------------|
 | 0      | **bContainerID** | 16   | Unsigned DWord | **ContainerID** data. |
 
- 
+ 
 
 Device manufacturers are responsible for ensuring that each instance of a device has a universally unique 16-byte value for the **ContainerID**. Also, a device must report the same **ContainerID** value each time it is powered on.
 There are several established algorithms for generating UUIDs with almost zero chance of duplication. Device manufacturers can select the UUID generation algorithm that best suits their needs. It does not matter which UUID generation algorithm is used as long as the result is unique.
@@ -61,7 +57,7 @@ There are several established algorithms for generating UUIDs with almost zero c
 
 A **ContainerID** is reported in the standard UUID string format of {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}. The following is an example representation in firmware for a 0C B4 A7 2C D1 7B 25 4F B5 73 A1 3A 97 5D DC 07 USB **ContainerID**, which is formatted as a {2CA7B40C-7BD1-4F25-B573-A13A975DDC07} UUID string.
 
-```
+```cpp
 UCHAR Example<mark type="member">ContainerID</mark>Descriptor[24] =
 {
     0x18, 0x00, 0x00, 0x00,     // dwLength - 24 bytes
@@ -139,7 +135,7 @@ The current definition of the Microsoft OS string descriptor includes a 1-byte p
 </tbody>
 </table>
 
- 
+ 
 
 Currently shipping USB devices that support the Microsoft OS descriptor but do not support the **ContainerID** descriptor have the **bPad** field set to 0x00. The USB hub driver does not query such devices for the USB **ContainerID** descriptor.
 ## Container View of a USB Multifunction Device
@@ -161,19 +157,17 @@ Device manufacturers must ensure that each instance of a device that they produc
 Recommendations for Implementing a USB **ContainerID** The following are recommendations for device vendors that design, manufacture, and ship USB devices:
 
 -   Learn how Windows 7 improves the support for multifunction and multiple transport USB devices through the use of a **ContainerID**. We recommend that you start by reading “Multifunction Device Support and Device Container Groupings in Windows 7.”
--   Make sure that the serial number on each USB device is unique. A Windows Hardware Certification requirement states that, if your device includes a serial number, the serial number must be unique for each instance of your device. For more information about the WLK test for USB serial numbers, see ”USB Serial Number” on MSDN®.
+-   Make sure that the serial number on each USB device is unique. A Windows Hardware Certification requirement states that, if your device includes a serial number, the serial number must be unique for each instance of your device.
 -   Do not provide a **ContainerID** for a USB device that is embedded in a system. Integrated USB devices should rely on ACPI BIOS settings or the USB hub descriptor **DeviceRemovable** bit for the port.
 -   Ensure that all USB devices that are attached to a system have unique **ContainerID** values. Do not share **ContainerID** values or USB serial numbers across your product lines.
 -   Make sure to set the Removable Device Capability correctly for your device.
     **Note**  Device vendors that add a USB **ContainerID** descriptor to a previously shipping USB device must increment the device release number (**bcdDevice**) in the device’s device descriptor. This is required because the USB hub driver caches the Microsoft OS string descriptor (or the lack of one) based on a device’s vendor ID, product ID, and device release number. If you do not increment the device release number, the hub driver does not query for the USB **ContainerID** of a new device if it previously enumerated an instance of the device with the same vendor ID, product ID, and device release number that did not support the USB **ContainerID** descriptor.
 
-     
+     
 
 ## Related topics
 [Building USB devices for Windows](building-usb-devices-for-windows.md)  
 [Container IDs for USB Devices](https://msdn.microsoft.com/library/windows/hardware/ff540084)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20ContainerIDs%20in%20Windows%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -8,17 +8,14 @@ keywords:
 - receive-side scaling WDK networking , configuration
 - RSS WDK networking , configuration
 - ndirection table example WDK RSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # RSS Configuration
 
 
-## <a href="" id="ddk-rss-configuration-ng"></a>
+
 
 
 To obtain RSS configuration information, an overlying driver can send an OID query of [OID\_GEN\_RECEIVE\_SCALE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569636) to a miniport driver. NDIS also provides the RSS configuration information to overlying protocol drivers in the [**NDIS\_BIND\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff564832) structure during initialization.
@@ -37,7 +34,7 @@ The information buffer for the OID\_GEN\_RECEIVE\_HASH OID contains a pointer to
 
 **Note**  If receive hash calculation is enabled, NDIS disables receive hash calculation before it enables RSS. If RSS is enabled, NDIS disables RSS before it enables receive hash calculation.
 
- 
+ 
 
 All of the miniport adapters that the miniport driver supports must provide the same hash configuration settings to all subsequent protocol bindings. This OID also includes the secret key that the miniport driver or NIC must use for hash calculations. The key is 320 bits long (40 bytes) and can contain any data that the overlying driver chooses, for example, a random stream of bytes.
 
@@ -45,7 +42,7 @@ To rebalance the processing load, the overlying driver can set the RSS parameter
 
 **Note**  The overlying driver can set these parameters at any time. This can cause out of order receive indications. Miniport drivers that support TCP are not required to purge their receive queues in this instance.
 
- 
+ 
 
 The following figure provides example contents for two instances of the indirection table.
 
@@ -57,7 +54,7 @@ In the figure, table A lists the values in the indirection table immediately aft
 
 **Note**  When the indirection table is changed, for a short time (while the current receive descriptor queues are being processed), packets can be processed on the wrong CPU. This is a normal transient condition.
 
- 
+ 
 
 The size of the indirection table is typically two to eight times the number of processors in the system.
 
@@ -65,9 +62,9 @@ When the miniport driver distributes packets to CPUs, if there are far too many 
 
 In some cases, the number of available hardware receive queues might be less than the number of CPUs on the system. The miniport driver must examine the indirection table to determine the CPU numbers to associate with hardware queues. If the total number of different CPU numbers that appear in the indirection table is more than the number of hardware queues that the NIC supports, the miniport driver must pick a subset of the CPU numbers from the indirection table. The subset is equal in number to the number of hardware queues. The miniport driver obtained the **IndirectionTableSize** parameter from [OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569637). The miniport driver specified the **NumberOfReceiveQueues** value in response to OID\_GEN\_RECEIVE\_SCALE\_CAPABILITIES.
 
- 
+ 
 
- 
+ 
 
 
 

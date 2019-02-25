@@ -2,17 +2,14 @@
 title: Security Checklist for NDIS Drivers
 description: Security Checklist for NDIS Drivers
 ms.assetid: a7dee05d-6697-4061-a754-1d3854d7caea
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Security Checklist for NDIS Drivers
 
 
-## <a href="" id="ddk-security-checklist-for-ndis-drivers-ng"></a>
+
 
 
 To make sure that your driver follows good security practices, do the following:
@@ -25,9 +22,9 @@ To make sure that your driver follows good security practices, do the following:
 
 -   Run random packet generation tests to make sure that your drivers can resist bad packet information. In the future, such tests will be mandatory for device logo certification.
 
- 
+ 
 
- 
+ 
 
 
 

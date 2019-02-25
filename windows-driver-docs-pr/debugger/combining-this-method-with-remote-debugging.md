@@ -2,6 +2,8 @@
 title: Combining This Method with Remote Debugging
 description: Combining This Method with Remote Debugging
 ms.assetid: 4f9a60ab-b221-4a60-b3d5-cd907e33ec19
+ms.date: 11/28/2017
+ms.localizationpriority: medium
 ---
 
 # Combining This Method with Remote Debugging
@@ -16,7 +18,7 @@ For example, this configuration is useful when your user-mode symbols are locate
 
 **Note**   In describing this scenario, *target application* refers to the user-mode application that is being debugged, *target computer* refers to the computer that contains the target application and the CDB or NTSD process, and *host computer* refers to the computer that contains the kernel debugger.
 
- 
+ 
 
 To use this technique, you must do the following:
 
@@ -24,19 +26,19 @@ To use this technique, you must do the following:
 
     For example, you can attach to a running process by using the following syntax.
 
-    ```
+    ```console
     ntsd -server ServerTransport -ddefer [-y UserSymbolPath] -p PID 
     ```
 
     Or, you can start a new process as the target by using the following syntax.
 
-    ```
+    ```console
     ntsd -server ServerTransport -ddefer [-y UserSymbolPath] ApplicationName 
     ```
 
     If you are installing this as a postmortem debugger, you would use the following syntax. Note that you must manually edit the registry to install a postmortem debugger that includes the -server parameter; for details, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md).
 
-    ```
+    ```console
     ntsd -server ServerTransport -ddefer [-y UserSymbolPath] 
     ```
 
@@ -44,7 +46,7 @@ To use this technique, you must do the following:
 
 2.  Start WinDbg or KD on the host computer, as if you were going to debug the target computer, but do not actually break in to the target computer. To use WinDbg, use the following syntax.
 
-    ```
+    ```console
     windbg [-y KernelSymbolPath] [-k ConnectionOptions] 
     ```
 
@@ -54,7 +56,7 @@ To use this technique, you must do the following:
 
 3.  Start WinDbg or CDB as a debugging client, with the same transport options used to start the server. This debugging client can be run on either the host computer or on a third computer.
 
-    ```
+    ```console
     cdb -remote ClientTransport 
     ```
 
@@ -78,11 +80,10 @@ The four modes and the methods of switching between them described in the topic 
 
 Internally, a user-mode debugger started with -ddefer gives first priority to input from the debugging client, and second priority to input from the kernel debugger. However, there can never be a conflict between simultaneous inputs, because when the kernel debugger has broken in to the target computer, the remote connection is unavailable.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Combining%20This%20Method%20with%20Remote%20Debugging%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

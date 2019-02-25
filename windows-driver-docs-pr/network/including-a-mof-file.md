@@ -9,17 +9,14 @@ keywords:
 - GUIDs WDK networking
 - Windows Management Instrumentation WDK networking , GUIDs
 - MOF files WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Including a MOF File
 
 
-## <a href="" id="ddk-including-a-mof-file-ng"></a>
+
 
 
 You must include a description of all of the custom GUIDs that map to a miniport driver's custom OIDs in a managed object format (MOF) file that must be compiled and included in the miniport driver's resource (\*.rc) file.
@@ -28,15 +25,15 @@ The MOF source file must be of type MOFDATA and must have an extension of .mof. 
 
 You must insert the following line in the miniport driver's resource file (\*.rc) to include the MOF binary:
 
-```
+```Text
 NdisMofResource MOFDATA filename.bmf
 ```
 
 *FileName* represents the file name of the MOF source file.
 
- 
+ 
 
- 
+ 
 
 
 

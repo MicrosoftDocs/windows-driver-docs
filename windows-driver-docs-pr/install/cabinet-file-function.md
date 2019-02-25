@@ -6,17 +6,14 @@ keywords:
 - SetupAPI functions WDK , cabinet files
 - .cab files
 - CAB files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Cabinet File Function
 
 
-## <a href="" id="ddk-cabinet-file-function-dg"></a>
+
 
 
 A cabinet (CAB) file is a single file, usually with a .*cab* extension, that contains several compressed files as a file library. CAB files are used to organize the installation files that will be copied to the user's system. A compressed file can be spread over several CAB files.
@@ -36,17 +33,17 @@ The following function is used with CAB files. For a detailed function descripti
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>SetupIterateCabinet</strong>](https://msdn.microsoft.com/library/windows/desktop/aa377404)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377404" data-raw-source="[&lt;strong&gt;SetupIterateCabinet&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377404)"><strong>SetupIterateCabinet</strong></a></p></td>
 <td align="left"><p>Sends a notification to a callback function for each file that is stored in a CAB file.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

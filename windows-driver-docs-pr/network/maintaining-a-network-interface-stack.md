@@ -7,17 +7,14 @@ keywords:
 - network interfaces WDK , stack maintenance
 - stacks WDK networking
 - interface stack table WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Maintaining a Network Interface Stack
 
 
-## <a href="" id="ddk-maintaining-network-interface-stacks-ng"></a>
+
 
 
 NDIS provides services to maintain the interface stack table (*ifStackTable* in RFC 2863). NDIS maintains the stack table for NDIS miniport adapters, NDIS 5.*x* filter intermediate drivers, and NDIS filter modules. NDIS also provides services to enable NDIS drivers to add and delete entries in this table. For MUX intermediate drivers, NDIS does not have access to the relationship between the virtual miniport interface and the protocol lower interface. Therefore, NDIS 6.0 MUX intermediate drivers must specify these internal interface relationships.
@@ -30,9 +27,9 @@ To remove a stack table entry, a driver passes *HigherLayerIfIndex* and *LowerLa
 
 For an example of maintaining the interface stack, see the MUX 6.0 sample driver.
 
- 
+ 
 
- 
+ 
 
 
 

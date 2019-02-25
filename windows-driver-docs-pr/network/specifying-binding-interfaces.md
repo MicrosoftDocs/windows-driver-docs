@@ -5,17 +5,14 @@ ms.assetid: 49ef3eae-88e6-4424-8c3b-19e8c3bb734f
 keywords:
 - add-registry-sections WDK networking , binding interfaces
 - binding interfaces WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Binding Interfaces
 
 
-## <a href="" id="ddk-specifying-binding-interfaces-ng"></a>
+
 
 
 For each network component that it installs, a network INF file must specify the upper and lower binding interfaces for the component by adding the **Interfaces** key to the **Ndi** key.
@@ -30,7 +27,7 @@ A REG\_SZ value that defines the interfaces to which the component can bind at i
 
 **Note**  The **DefUpper** and **DefLower** values in Windows 95/98/Me network INF files, however, are not supported for INF files that will be used on Windows 2000 and later versions of the operating system.
 
- 
+ 
 
 The following table lists the Microsoft-supplied **UpperRange** values:
 
@@ -117,7 +114,7 @@ The following table lists the Microsoft-supplied **UpperRange** values:
 </tbody>
 </table>
 
- 
+ 
 
 The following table lists the Microsoft-supplied **LowerRange** values:
 
@@ -208,7 +205,7 @@ The following table lists the Microsoft-supplied **LowerRange** values:
 </tbody>
 </table>
 
- 
+ 
 
 The **UpperRange** and **LowerRange** values specify the types of interfaces -- not the actual components -- to which a component can bind. The binding engine binds a network component to all components that provide the specified interface at the appropriate (upper or lower) edge. For example, a protocol with a **LowerRange** of ndis5 binds to all components that have an **UpperRange** of ndis5, such as physical or virtual adapters.
 
@@ -218,15 +215,15 @@ An INF-file-writer can define and use vendor-specific **UpperRange** and **Lower
 
 The following is an example of an *add-registry-section* that adds **UpperRange** and **LowerRange** values for an ATM adapter:
 
-```
+```INF
 [addreg-section]
 HKR, Ndi\Interfaces, UpperRange, 0, "ndisATM"
 HKR, Ndi\Interfaces, LowerRange, 0, "atm"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,16 +2,13 @@
 ms.assetid: 8BADC31C-6446-41FA-82F3-F46D66954481
 title: How to add test metadata
 description: Create test content for Windows 8, using the Windows Driver Kit (WDK) and the Test Authoring and Execution Framework (TAEF).
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to add test metadata
 
-For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439725) for creating test content. A TAEF test is an object implemented as a dynamic-link library (DLL) that contains multiple methods, where each method maps to a specific test scenario. The TAEF object combines related methods into a group of tests. For each test, there is a set of metadata that describes the test. To improve test portability and encapsulation, TAEF stores test metadata within the test object itself. When you create your own driver tests using the Driver Test templates, you need to add this metadata so that your driver tests are available and can be deployed using Visual Studio.
+For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439725) for creating test content. A TAEF test is an object implemented as a dynamic-link library (DLL) that contains multiple methods, where each method maps to a specific test scenario. The TAEF object combines related methods into a group of tests. For each test, there is a set of metadata that describes the test. To improve test portability and encapsulation, TAEF stores test metadata within the test object itself. When you create your own driver tests using the Driver Test templates, you need to add this metadata so that your driver tests are available and can be deployed using Visual Studio.
 
 ### <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
@@ -39,7 +36,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
         // Required properties for driver tests
         TEST_METHOD_PROPERTY(L&quot;Kits.Drivers&quot;, L&quot;TRUE&quot;)
         TEST_METHOD_PROPERTY(L&quot;Kits.Parameter&quot;, L&quot;DQ&quot;)
-        TEST_METHOD_PROPERTY(L&quot;Kits.Parameter.DQ.Description&quot;, L&quot;A WDTF SDEL query that is used to identify the target device(s) - http://go.microsoft.com/fwlink/p/?linkid=232678&quot;)
+        TEST_METHOD_PROPERTY(L&quot;Kits.Parameter.DQ.Description&quot;, L&quot;A WDTF SDEL query that is used to identify the target device(s) - https://go.microsoft.com/fwlink/p/?linkid=232678&quot;)
         TEST_METHOD_PROPERTY(L&quot;Kits.Parameter.DQ.Default&quot;, L&quot;INF::OriginalInfFileName=&#39;%InfFileName%&#39;&quot;)  
         TEST_METHOD_PROPERTY(L&quot;RebootPossible&quot;, L&quot;true&quot;)
         // TODO: Required properties to be customized to match your test requirements
@@ -75,7 +72,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
         // Required properties (see Windows Driver Kit documentation for more information):
         [TestProperty(&quot;Kits.Drivers&quot;, &quot;TRUE&quot;)]
         [TestProperty(&quot;Kits.Parameter&quot;, &quot;DQ&quot;)]
-        [TestProperty(&quot;Kits.Parameter.DQ.Description&quot;, &quot;A WDTF SDEL query that is used to identify the target device(s) - http://go.microsoft.com/fwlink/p/?linkid=232678&quot;)]
+        [TestProperty(&quot;Kits.Parameter.DQ.Description&quot;, &quot;A WDTF SDEL query that is used to identify the target device(s) - https://go.microsoft.com/fwlink/p/?linkid=232678&quot;)]
         [TestProperty(&quot;Kits.Parameter.DQ.Default&quot;, &quot;INF::OriginalInfFileName=&#39;%InfFileName%&#39;&quot;)]
         // TODO: Required properties to be customized to match your test requirements.
         [TestProperty(&quot;Description&quot;, &quot;Plug and Play Surprise Remove Generated Template&quot;)]
@@ -102,7 +99,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
         &lt;!-- Required properties for ERT--&gt;
         &lt;TestMethodProperty name=&quot;Kits.Drivers&quot; value=&quot;TRUE&quot;/&gt;
         &lt;TestMethodProperty name=&quot;Kits.Parameter&quot; value=&quot;DQ&quot;/&gt;
-        &lt;TestMethodProperty name=&quot;Kits.Parameter.DQ.Description&quot; value=&quot;A WDTF SDEL query that is used to identify the target device(s) - http://go.microsoft.com/fwlink/p/?linkid=232678&quot;/&gt;
+        &lt;TestMethodProperty name=&quot;Kits.Parameter.DQ.Description&quot; value=&quot;A WDTF SDEL query that is used to identify the target device(s) - https://go.microsoft.com/fwlink/p/?linkid=232678&quot;/&gt;
         &lt;TestMethodProperty name=&quot;Kits.Parameter.DQ.Default&quot; value=&quot;INF::OriginalInfFileName=&#39;%InfFileName%&#39;&quot;/&gt;
         &lt;TestMethodProperty name=&quot;RebootPossible&quot; value=&quot;true&quot; /&gt;
         &lt;!-- TODO: Properties to be customized to match your test requirements --&gt;
@@ -373,15 +370,15 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </table>
 
     <span id="Deploymentitem"></span><span id="deploymentitem"></span><span id="DEPLOYMENTITEM"></span>**Deploymentitem**  
-    Identifies files and/or folders as test dependencies. These may contain any resources needed to run the tests. For more information about using this metadata, see [DeploymentItem Metadata](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439604).
+    Identifies files and/or folders as test dependencies. These may contain any resources needed to run the tests. For more information about using this metadata, see [DeploymentItem Metadata](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439604).
 
 ## <span id="related_topics"></span>Related topics
 
 
 * [How to write a driver test using a Driver Test template](how-to-write-a-driver-test-.md)
- 
+ 
 
- 
+ 
 
 
 

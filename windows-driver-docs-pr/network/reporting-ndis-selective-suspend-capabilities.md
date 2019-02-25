@@ -2,11 +2,8 @@
 title: Reporting NDIS Selective Suspend Capabilities
 description: Reporting NDIS Selective Suspend Capabilities
 ms.assetid: 8A738A51-D116-4DDC-96B7-17D046B6890D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reporting NDIS Selective Suspend Capabilities
@@ -29,9 +26,9 @@ The method that is used by miniport drivers to report the support status of NDIS
 
 For more information about the adapter initialization process, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

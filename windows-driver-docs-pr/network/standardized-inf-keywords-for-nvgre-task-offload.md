@@ -2,11 +2,8 @@
 title: Standardized INF keywords for NVGRE Task Offload
 description: This section describes standardized keywords used in INF files for NVGRE-capable drivers
 ms.assetid: C1FB0519-6BB7-46B0-A3FA-B8E982279C44
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for NVGRE Task Offload
@@ -48,13 +45,13 @@ The following table describes the possible INF entries for this keyword.
 </tbody>
 </table>
 
- 
+ 
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

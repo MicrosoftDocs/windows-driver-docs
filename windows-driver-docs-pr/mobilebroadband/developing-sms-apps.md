@@ -2,22 +2,19 @@
 title: Developing SMS apps
 description: Developing SMS apps
 ms.assetid: 052eb3cc-4a39-4667-8678-b18650f3b5c9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Developing SMS apps
 
 
-Windows 8, Windows 8.1, and Windows 10 provide a Short Message Service (SMS) text messaging platform for mobile network operators, mobile broadband adapter IHVs, OEMs, and their partnered software vendor’s app with SMS access into a Windows Store app.
+Windows 8, Windows 8.1, and Windows 10 provide a Short Message Service (SMS) text messaging platform for mobile network operators, mobile broadband adapter IHVs, OEMs, and their partnered software vendor’s app with SMS access into a UWP app.
 
 **Note**  
 A mobile broadband app requires SMS support to show notifications to the end user when text messages are received. SMS might also be required to conform to regulatory requirements or best practices in certain markets.
 
- 
+ 
 
 The Mobile Broadband SMS platform provides the following functionality:
 
@@ -71,7 +68,7 @@ Here’s an overview diagram on how the SMS works with a mobile broadband connec
 ## <span id="SMSAccess"></span><span id="smsaccess"></span><span id="SMSACCESS"></span>Access to mobile broadband SMS
 
 
-### <span id="store"></span><span id="STORE"></span>Windows Store app access to SMS
+### <span id="store"></span><span id="STORE"></span>UWP app access to SMS
 
 Access to mobile broadband SMS functionality is available in the following ways:
 
@@ -81,15 +78,15 @@ Access to mobile broadband SMS functionality is available in the following ways:
 
 -   OEMs who build computers that have embedded mobile broadband adapters can enable a mobile broadband app to access SMS.
 
--   Windows Store apps can be given privileged access to SMS by a mobile operator, mobile broadband adapter IHV, or OEM.
+-   UWP apps can be given privileged access to SMS by a mobile operator, mobile broadband adapter IHV, or OEM.
 
-Access to SMS is specified in service metadata or device metadata. Device metadata package is a set of XML files that create the link between a particular device and its Windows Store device app. The link is based on the HardwareId of IHV mobile broadband adapter, or computer hardware IDs of the computer device container for OEMs who build computers that have embedded mobile broadband adapters.
+Access to SMS is specified in service metadata or device metadata. Device metadata package is a set of XML files that create the link between a particular device and its UWP device app. The link is based on the HardwareId of IHV mobile broadband adapter, or computer hardware IDs of the computer device container for OEMs who build computers that have embedded mobile broadband adapters.
 
 For more information about service metadata, see [Service metadata](service-metadata.md).
 
-For mobile network operators and mobile broadband adapters IHVs, Windows 8, Windows 8.1, and Windows 10 automatically download and install the mobile broadband app from the Windows Store when users connect their device for the first time. In Windows 8.1 and Windows 10 the mobile broadband app is added to the **All Apps** view.
+For mobile network operators and mobile broadband adapters IHVs, Windows 8, Windows 8.1, and Windows 10 automatically download and install the mobile broadband app from the Microsoft Store when users connect their device for the first time. In Windows 8.1 and Windows 10 the mobile broadband app is added to the **All Apps** view.
 
-Mobile broadband apps and IHV apps have simultaneous access SMS for a single mobile broadband device. If both a mobile broadband app and an IHV or OEM Windows Store app are installed and both show a notifications user interface when a new SMS is received, the users see two notification UIs. The user can turn off notifications or uninstall one of the apps.
+Mobile broadband apps and IHV apps have simultaneous access SMS for a single mobile broadband device. If both a mobile broadband app and an IHV or OEM UWP app are installed and both show a notifications user interface when a new SMS is received, the users see two notification UIs. The user can turn off notifications or uninstall one of the apps.
 
 ### <span id="user"></span><span id="USER"></span>User consent to SMS access
 
@@ -100,7 +97,7 @@ Users running Windows 8, Windows 8.1, or Windows 10 can control access to SMS
 **Note**  
 Together with user consent, the app must also have access granted by the device by adding the app name in the device or service metadata.
 
- 
+ 
 
 ## <span id="Filtering"></span><span id="filtering"></span><span id="FILTERING"></span>SMS notifications filtering
 
@@ -119,7 +116,7 @@ You can write JavaScript, C#, or C++ apps that use the [**Windows.Devices.Sms**]
 **Note**  
 The Windows 7 Mobile Broadband SMS API provided only a low-level modem interface for SMS. Windows 8, Windows 8.1, and Windows 10 provide an alternate text-mode interface that is suitable for general app development.
 
- 
+ 
 
 -   [SMS device storage limits](sms-device-storage-limits.md)
 
@@ -137,11 +134,10 @@ The Windows 7 Mobile Broadband SMS API provided only a low-level modem interfac
 
 -   [Set SMS declarations](set-sms-declarations.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Developing%20SMS%20apps%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

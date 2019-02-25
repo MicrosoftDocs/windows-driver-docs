@@ -9,11 +9,8 @@ keywords:
 - halftoning WDK GDI
 - fixed-cell spacing WDK GDI
 - size WDK GDI halftoning
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Halftoning
@@ -34,7 +31,7 @@ The tradeoff between pattern size (spatial resolution) and color resolution is d
 
 Another of the GDIINFO structure members affecting halftoning is **flHTFlags**, which contains flags that describe the device resolution needed for halftoning.
 
-GDI handles color adjustment requests from the application and passes the information down to driver functions through the graphics DDI. If the application selects halftoning and the surface is a standard format [*DIB*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-), GDI processes the bitmap using its halftoning capabilities, after which, the bitmap is sent to the device. In the PostScript driver, the [**EngStretchBlt**](https://msdn.microsoft.com/library/windows/hardware/ff565025) function can send the bitmap to the printer using either the [**DrvCopyBits**](https://msdn.microsoft.com/library/windows/hardware/ff556182) or [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180) (in the SRCCOPY mode) functions.
+GDI handles color adjustment requests from the application and passes the information down to driver functions through the graphics DDI. If the application selects halftoning and the surface is a standard format *DIB*, GDI processes the bitmap using its halftoning capabilities, after which, the bitmap is sent to the device. In the PostScript driver, the [**EngStretchBlt**](https://msdn.microsoft.com/library/windows/hardware/ff565025) function can send the bitmap to the printer using either the [**DrvCopyBits**](https://msdn.microsoft.com/library/windows/hardware/ff556182) or [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180) (in the SRCCOPY mode) functions.
 
 Letting GDI perform the halftoning instead of the PostScript printer, for example, provides a faster output with better WYSIWYG quality. An interface to the PostScript driver allows the user to adjust the halftoning and provides a check box to turn off GDI halftoning if the printer's built-in halftoning capabilities are preferred.
 
@@ -42,13 +39,12 @@ The [**DrvDitherColor**](https://msdn.microsoft.com/library/windows/hardware/ff5
 
 **Note**   Windows 2000 and later do not support halftoning on 24-bit (or higher) devices.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Halftoning%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

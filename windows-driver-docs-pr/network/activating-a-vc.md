@@ -5,17 +5,14 @@ ms.assetid: 93bac975-3c9c-424b-a815-b1589b703fb5
 keywords:
 - virtual connections WDK CoNDIS , activating
 - activating virtual connections
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Activating a VC
 
 
-## <a href="" id="ddk-activating-a-vc-ng"></a>
+
 
 
 After a virtual connection (VC) has been created (see [Creating a VC](creating-a-vc.md)), it must be activated before data can be transmitted or received on it. A call manager initiates the activation of a VC by calling [**NdisCmActivateVc**](https://msdn.microsoft.com/library/windows/hardware/ff561649)(see the following figure).
@@ -38,9 +35,9 @@ An MCM driver's call to **NdisMCmActivateVc** informs NDIS that it has set up ca
 
 An MCM driver calls **NdisMCmActivateVc** to activate only VCs used for transmitting and/or receiving client data, but not to activate VCs used for exchanging signaling messages between the MCM driver and network components such as a switch. An MCM driver activates a signaling VC internally without calling any **Ndis*Xxx*** function. Any VC that an MCM driver sets up for its own signaling purposes is therefore opaque to NDIS.
 
- 
+ 
 
- 
+ 
 
 
 

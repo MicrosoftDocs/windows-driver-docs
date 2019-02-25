@@ -1,12 +1,8 @@
 ---
 Description: This topic lists the headers and libraries required for writing a Windows Driver Model (WDM) USB client driver.
 title: Headers and libraries required by a USB client driver
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Headers and libraries required by a USB client driver
@@ -45,7 +41,7 @@ To find the header and library for a specific device driver interface (DDI), con
 <td>usb.h</td>
 <td>Include\shared</td>
 <td></td>
-<td>Defines [<strong>URB</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538923) structures for USB Request Blocks (URBs) required by a client driver to send requests to the USB driver stack.</td>
+<td>Defines <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538923)"><strong>URB</strong></a> structures for USB Request Blocks (URBs) required by a client driver to send requests to the USB driver stack.</td>
 </tr>
 <tr class="odd">
 <td>usb100.h</td>
@@ -131,19 +127,19 @@ To find the header and library for a specific device driver interface (DDI), con
 <td>Include\um</td>
 <td><p>winapifamily.h</p>
 <p>winusbio.h</p></td>
-<td>Defines [WinUSB functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb) exposed by Winusb.dll, which are used by applications that want to send requests to Winusb.sys that is installed as the function driver for a USB device.</td>
+<td>Defines <a href="https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb" data-raw-source="[WinUSB functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)">WinUSB functions</a> exposed by Winusb.dll, which are used by applications that want to send requests to Winusb.sys that is installed as the function driver for a USB device.</td>
 </tr>
 <tr class="even">
 <td>winusbio.h</td>
 <td>Include\shared</td>
 <td><p>winapifamily.h</p>
 <p>usb.h</p></td>
-<td>Defines flags for [WinUSB functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb).</td>
+<td>Defines flags for <a href="https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb" data-raw-source="[WinUSB functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)">WinUSB functions</a>.</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Libraries
 
@@ -164,39 +160,39 @@ To find the header and library for a specific device driver interface (DDI), con
 <tbody>
 <tr class="odd">
 <td>usbd.lib</td>
-<td><p>\Lib\win8\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\km\\<em>&lt;arch&gt;</em></p></td>
+<td><p>\Lib\win8\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\win7\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\km&lt;em&gt;&lt;arch&gt;</em></p></td>
 <td>Provides helper routines for getting information from the USB driver stack and formatting URBs for requests.</td>
 </tr>
 <tr class="even">
 <td>usbrpm.lib</td>
-<td><p>\Lib\win8\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\km\\<em>&lt;arch&gt;</em></p></td>
+<td><p>\Lib\win8\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\win7\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\km&lt;em&gt;&lt;arch&gt;</em></p></td>
 <td>Provides functions for an application to perform operations for replacing a Microsoft-provided driver with a third-party RPM driver.</td>
 </tr>
 <tr class="odd">
 <td>usbdex.lib</td>
-<td><p>\Lib\win8\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\km\\<em>&lt;arch&gt;</em></p></td>
+<td><p>\Lib\win8\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\win7\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\km&lt;em&gt;&lt;arch&gt;</em></p></td>
 <td>Provides helper routines for client drivers to send requests to the underlying USB driver stack. The library gets loaded and statically linked to the client driver module when it is built. A client driver that calls these routines can run on Windows Vista and later versions of Windows.</td>
 </tr>
 <tr class="even">
 <td>winusb.lib</td>
-<td><p>\Lib\win8\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win8\um\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\win7\um\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\km\\<em>&lt;arch&gt;</em></p>
-<p>\Lib\winv6.3\um\\<em>&lt;arch&gt;</em></p></td>
+<td><p>\Lib\win8\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\win8\um&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\win7\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\win7\um&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\km&lt;em&gt;&lt;arch&gt;</em></p>
+<p>\Lib\winv6.3\um&lt;em&gt;&lt;arch&gt;</em></p></td>
 <td>Provides functions for a user-mode client driver or an application to communicate with a USB device that has Winusb.sys loaded as its function driver.</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Header Changes in Windows 8
 
@@ -210,7 +206,5 @@ The new header file, usbspec.h, provides protocol definitions for the DDIs that 
 [Header files in the Windows Driver Kit](https://msdn.microsoft.com/library/windows/hardware/ff554695)  
 [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Headers%20and%20libraries%20required%20by%20a%20USB%20client%20driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

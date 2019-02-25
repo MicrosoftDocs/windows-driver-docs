@@ -1,6 +1,5 @@
 ---
 title: Printer Minidriver Changes
-author: windows-driver-content
 description: Printer Minidriver Changes
 ms.assetid: 8f427642-a758-48bf-96e1-95a27adbaf23
 keywords:
@@ -9,17 +8,14 @@ keywords:
 - GDL files WDK printer
 - PPD files WDK autoconfiguration
 - plug-ins WDK print , in-box autoconfiguration support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer Minidriver Changes
 
 
-The printer minidriver consists of a printer description file ([*GPD*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-generic-printer-description--gpd-), [*PPD*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-postscript-printer-description--ppd-), or GDL file), together with optional user interface (UI) plug-ins, rendering plug-ins, and rendering filters. For in-box inclusion, only one UI plug-in is permitted, and only one Unidrv or Pscript rendering plug-in is permitted. An IHV port monitor is not permitted to be included as an in-box with a printer minidriver.
+The printer minidriver consists of a printer description file (*GPD*, *PPD*, or GDL file), together with optional user interface (UI) plug-ins, rendering plug-ins, and rendering filters. For in-box inclusion, only one UI plug-in is permitted, and only one Unidrv or Pscript rendering plug-in is permitted. An IHV port monitor is not permitted to be included as an in-box with a printer minidriver.
 
 For the GPD, PPD, or GDL file, there are two cases to consider:
 
@@ -39,12 +35,10 @@ The following topics describe the changes that must be made in the driver UI and
 
 [Naming Conventions in Pscript and Unidrv Minidrivers](naming-conventions-in-pscript-and-unidrv-minidrivers.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Printer%20Minidriver%20Changes%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

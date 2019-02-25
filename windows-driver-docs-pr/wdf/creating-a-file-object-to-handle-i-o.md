@@ -1,6 +1,5 @@
 ---
 title: Creating a File Object to Handle I/O
-author: windows-driver-content
 description: Creating a File Object to Handle I/O
 ms.assetid: 3cd826fc-5c67-4ab4-800a-b5aa4bd5244f
 keywords:
@@ -10,11 +9,8 @@ keywords:
 - User-Mode Driver Framework WDK , file object to handle I/O
 - UMDF WDK , file object to handle I/O
 - user-mode drivers WDK UMDF , file object to handle I/O
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a File Object to Handle I/O
@@ -32,9 +28,9 @@ The following sections describe the differences between driver-created file obje
 -   [Driver-Created Versus Application-Created File Objects](driver-created-versus-application-created-file-objects.md)
 -   [Creating and Using Driver-Created File Objects](creating-and-using-driver-created-file-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,17 +2,14 @@
 title: Overview of the Driver Selection Process
 description: Overview of the Driver Selection Process
 ms.assetid: 120ab9f9-6ac5-4b76-bee1-2e975d0c38f2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of the Driver Selection Process
 
 
-Windows represents a driver as a [*driver node*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-node), which includes all the software support for a device, such as any services, device-specific co-installers, and registry entries. The services for a device include a function driver and any upper-level and lower-level device filter drivers.
+Windows represents a driver as a *driver node*, which includes all the software support for a device, such as any services, device-specific co-installers, and registry entries. The services for a device include a function driver and any upper-level and lower-level device filter drivers.
 
 Some devices require a vendor-supplied driver that is designed specifically for that device or one that is designed to support a family of devices. However, other devices can be driven by a system-supplied driver that supports all the devices of a given [device setup class](device-setup-classes.md). Windows selects the driver that most closely matches the device. If Windows does not find such a driver, it selects from increasingly more general drivers.
 
@@ -42,7 +39,7 @@ Starting with Windows Vista, Windows also ranks drivers based on whether the dri
 
 **Note**  Starting with Windows 7, the [AllSignersEqual Group Policy](allsignersequal-group-policy--windows-vista-and-later-.md) is enabled by default. In Windows Vista and Windows Server 2008, the **AllSignersEqual** Group Policy is disabled by default. IT departments can override the default ranking behavior by enabling or disabling the **AllSignersEqual** Group Policy.
 
- 
+ 
 
 Signatures from a Windows signing authority include the following:
 
@@ -70,9 +67,9 @@ Windows uses the following criteria to select a driver for a device:
 
 -   For drivers that have equal rank, date, and version, Windows can select any driver.
 
- 
+ 
 
- 
+ 
 
 
 

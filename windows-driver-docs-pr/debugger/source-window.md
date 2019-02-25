@@ -3,11 +3,8 @@ title: Source Code Debugging in WinDbg
 description: Source Code Debugging in WinDbg
 ms.assetid: 0f939d29-0d90-442e-96d7-fe756b92a7da
 keywords: ["debugging information windows, Source windows", "Source windows", "source debugging, Source windows"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Source Code Debugging in WinDbg
@@ -20,7 +17,7 @@ The source path specifies the directories where the C and C++ source files are l
 
 **Note**   If you are connected to a corporate network, the most efficient way to access source files is to use a source server. You can use a source server by using the srv\* string within your source path. For more information about source servers, see [Using a Source Server](using-a-source-server.md).
 
- 
+ 
 
 To control the source path in WinDbg, do one of the following:
 
@@ -43,7 +40,7 @@ To open or close a source file directly, do one of the following:
 
     **Note**  When you use the menu or the toolbar button to open a source file, the path of that file is automatically appended to the source path.
 
-     
+     
 
 -   Choose **Close Current Window** from the **File** menu.
 -   Click the **Close** button in the corner of the Source window.
@@ -76,7 +73,7 @@ Each Source window has a shortcut menu with additional commands. To access the m
 
 -   **Edit this file** opens the source file in a text editor. The editor is determined by the WinDiff editor registry information or by the value of the WINDBG\_INVOKE\_EDITOR environment variable. For example, consider the case when the value of WINDBG\_INVOKE\_EDITOR is the following.
 
-    ```
+    ```console
     c:\my\path\myeditor.exe -file %f -line %l
     ```
 
@@ -114,11 +111,10 @@ If you select a Source window and then use the mouse to hover over a symbol in t
 
 For more information about source debugging and related commands, see [Debugging in Source Mode](debugging-in-source-mode.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Source%20Code%20Debugging%20in%20WinDbg%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

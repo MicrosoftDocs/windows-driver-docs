@@ -10,11 +10,8 @@ keywords:
 - status information WDK battery
 - monitoring battery status
 - battery class drivers WDK , notifications
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supplying Battery Device Notification
@@ -27,11 +24,10 @@ The miniclass driver is responsible for monitoring the status of the batteries i
 
 In addition to the [*BatteryMiniQueryStatus*](https://msdn.microsoft.com/library/windows/hardware/ff536274) routine, the miniclass driver also supplies the [*BatteryMiniSetStatusNotify*](https://msdn.microsoft.com/library/windows/hardware/ff536277) and [*BatteryMiniDisableStatusNotify*](https://msdn.microsoft.com/library/windows/hardware/ff536272) routines. The class driver uses the *BatteryMiniSetStatusNotify* and *BatteryMiniDisableStatusNotify* routines to request and cancel notification of specific battery states. These routines interact with the class and miniclass driver status routines as described in the next section. For more information about these two miniclass routines, see [Setting and Canceling Battery Notification](setting-and-canceling-battery-notification.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

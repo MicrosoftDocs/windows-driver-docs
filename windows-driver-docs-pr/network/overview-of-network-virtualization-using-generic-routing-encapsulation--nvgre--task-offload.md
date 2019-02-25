@@ -2,11 +2,8 @@
 title: Overview of NVGRE Task Offload
 description: Describes an overview of Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
 ms.assetid: 5890AF7E-93E1-4E19-B483-C75657D749EB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
@@ -33,9 +30,9 @@ On the receive path, the following task offloads need to account for encapsulati
 
 For receive-side offloads, the NIC must parse the encapsulation protocol headers. For example, for GRE encapsulation, the NIC must parse the GRE header and perform task offloads on the transport (inner) and/or tunnel (outer) IP headers.
 
- 
+ 
 
- 
+ 
 
 
 

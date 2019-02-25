@@ -2,11 +2,8 @@
 title: How do I create custom WPP extended format specification strings
 description: How do I create custom WPP extended format specification strings
 ms.assetid: 6c4c47c6-71b2-48a0-bab3-8498029b8244
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How do I create custom WPP extended format specification strings?
@@ -58,7 +55,7 @@ To create the IPV6ADDR complex data type, add the following statements to the Lo
     </tbody>
     </table>
 
-    This statement defines the helper macro that is used to format the length/address pair of the IPV6 argument when it is passed to the [TraceMessage](http://go.microsoft.com/fwlink/p/?linkid=179214) function.
+    This statement defines the helper macro that is used to format the length/address pair of the IPV6 argument when it is passed to the [TraceMessage](https://go.microsoft.com/fwlink/p/?linkid=179214) function.
 
 In Visual Studio, open the properties page for your project. Under **WPP Tracing**, **File Options**, specify LocalWpp.ini as the **Additional Configuration file**. See [WPP Preprocessor](wpp-preprocessor.md) for more information.
 
@@ -71,7 +68,7 @@ DoTraceMessage(Noise, "IN6_ADDR  = %!IPV6ADDR!", &IPAddressV6);
 
 **Note**  You can create a complex type (MACADDR) for tracing fixed-length media access control (MAC) addresses. This complex type can be specified by following the procedure that was used for the IPV6ADDDR complex type.
 
- 
+ 
 
 ## Trace variable-length strings through custom WPP extended format specification strings
 
@@ -141,7 +138,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
     </tbody>
     </table>
 
-    This statement defines the helper macro that is used to format the length/address pairs of the variable-length buffer argument when it is passed to the [TraceMessage](http://go.microsoft.com/fwlink/p/?linkid=179214) function.
+    This statement defines the helper macro that is used to format the length/address pairs of the variable-length buffer argument when it is passed to the [TraceMessage](https://go.microsoft.com/fwlink/p/?linkid=179214) function.
 
     Variable-length arguments require two length/address pairs. As a result, the WPP\_LOGHEXDUMP macro defines two calls to WPP\_LOGPAIR in the following way:
 
@@ -150,7 +147,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
 
     **Note**  This macro requires that an xstr\_t structure has been initialized for the variable-length buffer by a call to LOG\_LENSTR. As a result, you must pass the variable-length buffer to [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) through the LOG\_LENSTR macro.
 
-     
+     
 
 In Visual Studio, open the properties page for your project. Under **WPP Tracing**, **File Options**, specify LocalWpp.ini as the **Additional Configuration file**. See [WPP Preprocessor](wpp-preprocessor.md) for more information.
 
@@ -163,7 +160,6 @@ DoTraceMessage(Noise, "HEXDUMP: %!HEXDUMP! ", LOG_LENSTR(sizeof(HexDump),(PCHAR)
 
 **Note**  You can create a complex type (HEXBYTES) for tracing variable-length buffers. This complex type can be specified by following the procedure that was used for the HEXDUMP complex type. 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20How%20do%20I%20create%20custom%20WPP%20extended%20format%20specification%20strings?%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

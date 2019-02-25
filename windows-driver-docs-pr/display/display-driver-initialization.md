@@ -5,11 +5,8 @@ ms.assetid: a4cc7780-b6fb-486a-b54b-96c90d4fe1f5
 keywords:
 - display drivers WDK Windows 2000 , initializing
 - initializing display drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Display Driver Initialization
@@ -26,11 +23,11 @@ The basic display driver initialization procedure, in which the desktop is creat
 
 ![diagram illustrating display driver initialization](images/202-01.png)
 
-1.  When GDI is called to create the first device context ([*DC*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-dc)) for the video hardware, GDI calls the display driver function [**DrvEnableDriver**](https://msdn.microsoft.com/library/windows/hardware/ff556210). Upon return, **DrvEnableDriver** provides GDI with a [**DRVENABLEDATA**](https://msdn.microsoft.com/library/windows/hardware/ff556206) structure that holds both the driver's graphics DDI version number and the entry points of all callable graphics DDI functions that are implemented by the driver (other than **DrvEnableDriver**).
+1.  When GDI is called to create the first device context (*DC*) for the video hardware, GDI calls the display driver function [**DrvEnableDriver**](https://msdn.microsoft.com/library/windows/hardware/ff556210). Upon return, **DrvEnableDriver** provides GDI with a [**DRVENABLEDATA**](https://msdn.microsoft.com/library/windows/hardware/ff556206) structure that holds both the driver's graphics DDI version number and the entry points of all callable graphics DDI functions that are implemented by the driver (other than **DrvEnableDriver**).
 
 2.  GDI then calls the driver's [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) function to request a description of the driver's physical device's characteristics. In the call, GDI passes in a [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure, which identifies the mode that GDI wants to set. If GDI requests a mode that the display or underlying miniport driver does not support, then the display driver must fail this call.
 
-3.  The display driver represents a logical device controlled by GDI. As shown in the following figure, a single logical device can manage several physical devices, each characterized by type of hardware, logical address, and surfaces supported. The display driver allocates the memory to support the device it creates. A display driver may be called upon to manage more than one [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev) for the same physical device, although only one PDEV can be enabled at a time for a given physical device. Each PDEV is created in a separate GDI call to [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211), and each call creates another PDEV that is used with a different surface.
+3.  The display driver represents a logical device controlled by GDI. As shown in the following figure, a single logical device can manage several physical devices, each characterized by type of hardware, logical address, and surfaces supported. The display driver allocates the memory to support the device it creates. A display driver may be called upon to manage more than one *PDEV* for the same physical device, although only one PDEV can be enabled at a time for a given physical device. Each PDEV is created in a separate GDI call to [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211), and each call creates another PDEV that is used with a different surface.
 
     Because a driver must support more than one PDEV, it should not use global variables.
 
@@ -41,22 +38,23 @@ The basic display driver initialization procedure, in which the desktop is creat
 4.  When installation of the physical device is complete, GDI calls [**DrvCompletePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556181). This function provides the driver with a GDI-generated physical device handle to use when requesting GDI functions for the device.
 
 5.  In the final stage of initialization, a surface is created for the video hardware by a GDI call to [**DrvEnableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556214), which enables graphics output to the hardware. Depending on the device and the environment, the display driver enables a surface in one of two ways:
-    -   The driver manages its own surface by calling the GDI function [**EngCreateDeviceSurface**](https://msdn.microsoft.com/library/windows/hardware/ff564206) to obtain a handle for the surface. The [*device-managed surface*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface) method is required for hardware that does not support a standard-format bitmap and is optional for hardware that does.
-    -   GDI can manage the surface completely as an [*engine-managed surface*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-engine-managed-surface) if the hardware device has a surface organized as a standard-format bitmap. A driver can call [**EngModifySurface**](https://msdn.microsoft.com/library/windows/hardware/ff564976) to convert the *device-managed* primary bitmap to one that is *engine-managed*. The driver can still hook any drawing operations.
+    -   The driver manages its own surface by calling the GDI function **EngCreateDeviceSurface** method is required for hardware that does not support a standard-format bitmap and is optional for hardware that does.
+    -   GDI can manage the surface completely as an *engine-managed surface* if the hardware device has a surface organized as a standard-format bitmap. A driver can call [**EngModifySurface**](https://msdn.microsoft.com/library/windows/hardware/ff564976) to convert the *device-managed* primary bitmap to one that is *engine-managed*. The driver can still hook any drawing operations.
 
 Any existing GDI bitmap handle is a valid surface handle. A driver can call [**EngModifySurface**](https://msdn.microsoft.com/library/windows/hardware/ff564976) to convert the device-managed primary bitmap to an engine-managed bitmap. If the surface is engine-managed, GDI can handle any or all drawing operations. If the surface is device-managed, at a minimum, the driver must handle [**DrvTextOut**](https://msdn.microsoft.com/library/windows/hardware/ff557277), [**DrvStrokePath**](https://msdn.microsoft.com/library/windows/hardware/ff556316), and [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180).
 
-GDI automatically enables DirectDraw after calling [**DrvEnableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556214). After DirectDraw is initialized, the driver can use DirectDraw's [*heap manager*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-heap-manager) to perform [*off-screen memory*](https://msdn.microsoft.com/library/windows/hardware/ff556318#wdkgloss-off-screen-memory) management. See [DirectDraw and GDI](directdraw-and-gdi.md) for details.
+
+GDI automatically enables DirectDraw after calling [**DrvEnableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556214). After DirectDraw is initialized, the driver can use DirectDraw's *heap manager* to perform [*off-screen memory*](video-present-network-terminology.md#off_screen_memory) management. See [DirectDraw and GDI](directdraw-and-gdi.md) for details.
+
 
 A display driver must implement [**DrvNotify**](https://msdn.microsoft.com/library/windows/hardware/ff556252) in order to receive notification events, particularly the DN\_DRAWING\_BEGIN event. GDI sends this event immediately before it begins drawing, so it can be used to determine when caches can be initialized.
 
 See the [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) section for more information about the boot process.
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Display%20Driver%20Initialization%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+ 
+
 
 
 

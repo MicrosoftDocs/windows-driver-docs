@@ -1,15 +1,11 @@
 ---
 title: Introduction to File Systems Security
-author: windows-driver-content
 description: Introduction to File Systems Security
 ms.assetid: 328568dc-a003-4e00-941a-9ccf15b1c735
 keywords:
 - security WDK file systems , about file system security
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to File Systems Security
@@ -24,11 +20,10 @@ This section focuses on Windows security and file systems. It is not intended to
 
 This section includes a number of code samples. The samples are extracted from real-world code, but are presented here in abbreviated form. Developers should adapt these samples for use in their particular environment.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

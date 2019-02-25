@@ -1,13 +1,9 @@
 ---
 title: Sample Storport Miniport Driver for an LSI_U3 Device
-author: windows-driver-content
 description: Sample Storport Miniport Driver for an LSI_U3 Device
 ms.assetid: 1ac63d07-f85c-492b-9886-f40a19d7c0b2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Storport Miniport Driver for an LSI\_U3 Device
@@ -25,11 +21,10 @@ The LSI\_U3 Storport miniport driver sample code that is included in the WDK is 
 
 Adjustments were made in the LSI\_U3 miniport driver to match Storport advanced functionality to the limited hardware capabilities of the host bus adapters themselves.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

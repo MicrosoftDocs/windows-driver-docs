@@ -2,11 +2,8 @@
 title: WDI TLV generator/parser memory interface
 description: The parser and generator internally use C++ with new/delete.
 ms.assetid: 318519FF-AF1F-4D86-96A9-ED0918D91310
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDI TLV generator/parser memory interface
@@ -18,11 +15,11 @@ All APIs that do any allocations take a parameter *Context* typed as PCTLV\_CONT
 
 **Warning**  Although you may be tempted to skip calling the library’s cleanup routines (such as FreeParsed, CleanupParsed, and FreeGenerated), do not skip calling them! It might work on some code paths, but will lead to hard-to-diagnose memory leaks.
 
- 
+ 
 
 Here is a sample overloaded operator.
 
-```
+```C++
 /*++
 Module Name:
     sample.cpp
@@ -61,9 +58,9 @@ void __cdecl operator delete(void* pData)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

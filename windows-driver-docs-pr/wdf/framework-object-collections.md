@@ -1,6 +1,5 @@
 ---
 title: Framework Object Collections
-author: windows-driver-content
 description: Framework Object Collections
 ms.assetid: e3f29be6-ee4c-487a-8c85-18be8b6a5cdc
 keywords:
@@ -8,17 +7,14 @@ keywords:
 - collections WDK KMDF
 - framework collection objects WDK KMDF
 - object collections WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework Object Collections
 
 
-## <a href="" id="ddk-framework-object-collections-df"></a>
+
 
 
 Drivers can group framework objects into collections that are represented by *framework collection objects*.
@@ -41,7 +37,7 @@ Framework-based drivers can perform the following operations on object collectio
 
 -   Remove an object from a collection.
 
-    To remove an object from a collection and decrement its reference count, drivers can call [**WdfCollectionRemove**](https://msdn.microsoft.com/library/windows/hardware/ff545784) or [**WdfCollectionRemoveItem**](https://msdn.microsoft.com/library/windows/hardware/ff545792).
+    To remove an object from a collection and decrement its reference count, drivers can call [**WdfCollectionRemove**](https://msdn.microsoft.com/library/windows/hardware/ff545784) or [**WdfCollectionRemoveItem**](https://msdn.microsoft.com/library/windows/hardware/ff545792). When an object is removed, all objects after the removed one will have their index automatically decremented.
 
 -   Obtain the number of objects in a collection.
 
@@ -69,7 +65,7 @@ Framework-based drivers can perform the following operations on object collectio
 
 Sometimes a driver must examine all of the objects within a collection. The following code example demonstrates this situation:
 
-```
+```cpp
 WdfWaitLockAcquire(CollectionLockHandle, NULL);
 ItemCount = WdfCollectionGetCount(CollectionHandle);
 for (i=0; i<ItemCount; i++) {
@@ -80,9 +76,9 @@ for (i=0; i<ItemCount; i++) {
 WdfWaitLockRelease(CollectionLockHandle);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,22 +9,19 @@ keywords:
 - migration DLL WDK networking
 - writing network migration DLL
 - DLLs WDK network migration
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing a Network Migration DLL
 
 
-## <a href="" id="ddk-writing-a-network-migration-dll-ng"></a>
+
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 A network migration DLL migrates the parameter values for one or more network components from Microsoft Windows NT 3.51 or Windows NT 4.0 to Windows 2000 or later.
 
@@ -42,9 +39,9 @@ A network migration DLL must:
 
     The DLL must not make any irreversible changes, such as deleting files or modifying registry keys, during this phase because a user can cancel the upgrade of a network component or the operating system. The DLL can, however, modify files in its temporary working directory, which is specified by NetSetup in the call to **PreUpgradeInitialize**.
 
- 
+ 
 
- 
+ 
 
 
 

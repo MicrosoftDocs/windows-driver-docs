@@ -10,11 +10,8 @@ keywords:
 - succession requirements WDK DirectX VA
 - multiple uncompressed surfaces for decoding WDK DirectX VA
 - uncompressed surfaces example for decoding WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Four Uncompressed Surfaces for Decoding
@@ -157,7 +154,7 @@ The following table shows a hypothetical situation in which a video decoder requ
 </tbody>
 </table>
 
- 
+ 
 
 Each B picture in the preceding table requires the decoding of two prior pictures in bitstream order before it can be decoded. As a consequence, the decoder cannot begin displaying pictures with their proper timing until after the second picture has been decoded (that is, until during the third time slice of decoding). Somewhere during this time slice, the display of pictures with their proper timing can begin.
 
@@ -167,11 +164,10 @@ The two rules described in [sequence requirements](sequence-requirements.md) for
 
 A significant obstacle in the decoding process occurs as a result of having more than two B pictures in succession. This occurs in the preceding table upon encountering the tenth decoded picture (B¹₉). When the third or subsequent B picture in a contiguous series is encountered, the time lag tolerance between the display of one B picture and the use of a surface to hold the next decoded B picture is eliminated. The host decoder must check the display status of the B picture that was displayed in the previous period (B¹₇) to ensure that it has been removed from the display (waiting for this to happen if necessary), then it must immediately use the same surface for the next B picture to be decoded (surface 1 used for B¹₉). The decoder cannot decode the new B picture into either of the surfaces being used to hold its reference I or P pictures (in this case, surfaces 0 and 2 used for P⁰₆ and P²₁₀), and cannot decode the new B picture into the surface being displayed during the same interval of time (in this case, surface 3 used for B³₈). Thus, it must use the surface that was displayed in the immediately preceding period (in this case, surface 1).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Using%20Four%20Uncompressed%20Surfaces%20for%20Decoding%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

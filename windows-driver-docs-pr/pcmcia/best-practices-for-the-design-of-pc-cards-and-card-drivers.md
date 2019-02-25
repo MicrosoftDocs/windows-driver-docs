@@ -9,17 +9,14 @@ keywords:
 - interrupts WDK PCMCIA bus
 - PCI interrupts WDK PCMCIA bus
 - ISA interrupts WDK PCMCIA bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Best Practices for the Design of PC Cards and Card Drivers
 
 
-## <a href="" id="ddk-best-practices-for-the-design-of-pc-cards-and-card-drivers-kg"></a>
+
 
 
 Vendors and developers should observe the following cautions in order to avoid problems related with interrupt sharing:
@@ -36,9 +33,9 @@ Vendors and developers should observe the following cautions in order to avoid p
 
 -   Computer manufacturers should ensure that the BIOS code sets CardBus controllers to PCIC mode.
 
- 
+ 
 
- 
+ 
 
 
 

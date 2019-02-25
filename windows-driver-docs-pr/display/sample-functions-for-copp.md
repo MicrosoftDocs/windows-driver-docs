@@ -7,11 +7,8 @@ keywords:
 - video copy protection WDK COPP , sample functions
 - COPP WDK DirectX VA , sample functions
 - protected video WDK COPP , sample functions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sample Functions for COPP
@@ -41,37 +38,37 @@ The sample COPP functions in the following table are called by using the COPP de
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<em>COPPOpenVideoSession</em>](https://msdn.microsoft.com/library/windows/hardware/ff539650)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539650" data-raw-source="[&lt;em&gt;COPPOpenVideoSession&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539650)"><em>COPPOpenVideoSession</em></a></p></td>
 <td align="left"><p>Initializes the COPP device used for the current video session.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>COPPGetCertificateLength</em>](https://msdn.microsoft.com/library/windows/hardware/ff539644)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539644" data-raw-source="[&lt;em&gt;COPPGetCertificateLength&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539644)"><em>COPPGetCertificateLength</em></a></p></td>
 <td align="left"><p>Retrieves the size, in bytes, of the certificate used by the graphics hardware.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>COPPKeyExchange</em>](https://msdn.microsoft.com/library/windows/hardware/ff539646)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539646" data-raw-source="[&lt;em&gt;COPPKeyExchange&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539646)"><em>COPPKeyExchange</em></a></p></td>
 <td align="left"><p>Retrieves the digital certificate used by the graphics hardware.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>COPPSequenceStart</em>](https://msdn.microsoft.com/library/windows/hardware/ff540421)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540421" data-raw-source="[&lt;em&gt;COPPSequenceStart&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540421)"><em>COPPSequenceStart</em></a></p></td>
 <td align="left"><p>Sets the current video session to protected mode.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>COPPCommand</em>](https://msdn.microsoft.com/library/windows/hardware/ff539642)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539642" data-raw-source="[&lt;em&gt;COPPCommand&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539642)"><em>COPPCommand</em></a></p></td>
 <td align="left"><p>Sets the protection level on the physical connector associated with the COPP device.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>COPPQueryStatus</em>](https://msdn.microsoft.com/library/windows/hardware/ff539652)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539652" data-raw-source="[&lt;em&gt;COPPQueryStatus&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539652)"><em>COPPQueryStatus</em></a></p></td>
 <td align="left"><p>Retrieves status on a protected video session that is associated with a COPP device.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>COPPCloseVideoSession</em>](https://msdn.microsoft.com/library/windows/hardware/ff539638)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539638" data-raw-source="[&lt;em&gt;COPPCloseVideoSession&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539638)"><em>COPPCloseVideoSession</em></a></p></td>
 <td align="left"><p>Closes the COPP device object and instructs the driver to release hardware resources associated with the COPP device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Mapping_Sample_Functions_to_DD_MOTIONCOMPCALLBACKS"></span><span id="mapping_sample_functions_to_dd_motioncompcallbacks"></span><span id="MAPPING_SAMPLE_FUNCTIONS_TO_DD_MOTIONCOMPCALLBACKS"></span>Mapping Sample Functions to DD\_MOTIONCOMPCALLBACKS
 
@@ -92,50 +89,49 @@ The sample functions in this section map to the motion compensation callback fun
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<em>COPPOpenVideoSession</em>](https://msdn.microsoft.com/library/windows/hardware/ff539650)</p></td>
-<td align="left"><p>[<strong>IOCTL_COPP_OpenDevice</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567768)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539650" data-raw-source="[&lt;em&gt;COPPOpenVideoSession&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539650)"><em>COPPOpenVideoSession</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567768" data-raw-source="[&lt;strong&gt;IOCTL_COPP_OpenDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567768)"><strong>IOCTL_COPP_OpenDevice</strong></a></p></td>
 <td align="left"><p><strong>CreateMoComp</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>COPPGetCertificateLength</em>](https://msdn.microsoft.com/library/windows/hardware/ff539644)</p></td>
-<td align="left"><p>[<strong>IOCTL_COPP_GetCertificateLength</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567765)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539644" data-raw-source="[&lt;em&gt;COPPGetCertificateLength&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539644)"><em>COPPGetCertificateLength</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567765" data-raw-source="[&lt;strong&gt;IOCTL_COPP_GetCertificateLength&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567765)"><strong>IOCTL_COPP_GetCertificateLength</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>COPPKeyExchange</em>](https://msdn.microsoft.com/library/windows/hardware/ff539646)</p></td>
-<td align="left"><p>[<strong>IOCTL_COPP_KeyExchange</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567766)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539646" data-raw-source="[&lt;em&gt;COPPKeyExchange&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539646)"><em>COPPKeyExchange</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567766" data-raw-source="[&lt;strong&gt;IOCTL_COPP_KeyExchange&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567766)"><strong>IOCTL_COPP_KeyExchange</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>COPPSequenceStart</em>](https://msdn.microsoft.com/library/windows/hardware/ff540421)</p></td>
-<td align="left"><p>[<strong>IOCTL_COPP_StartSequence</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567781)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540421" data-raw-source="[&lt;em&gt;COPPSequenceStart&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540421)"><em>COPPSequenceStart</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567781" data-raw-source="[&lt;strong&gt;IOCTL_COPP_StartSequence&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567781)"><strong>IOCTL_COPP_StartSequence</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>COPPCommand</em>](https://msdn.microsoft.com/library/windows/hardware/ff539642)</p></td>
-<td align="left"><p>[<strong>IOCTL_COPP_Command</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567762)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539642" data-raw-source="[&lt;em&gt;COPPCommand&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539642)"><em>COPPCommand</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567762" data-raw-source="[&lt;strong&gt;IOCTL_COPP_Command&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567762)"><strong>IOCTL_COPP_Command</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>COPPQueryStatus</em>](https://msdn.microsoft.com/library/windows/hardware/ff539652)</p></td>
-<td align="left"><p>[<strong>IOCTL_COPP_Status</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567783)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539652" data-raw-source="[&lt;em&gt;COPPQueryStatus&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539652)"><em>COPPQueryStatus</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567783" data-raw-source="[&lt;strong&gt;IOCTL_COPP_Status&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567783)"><strong>IOCTL_COPP_Status</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>COPPCloseVideoSession</em>](https://msdn.microsoft.com/library/windows/hardware/ff539638)</p></td>
-<td align="left"><p>[<strong>IOCTL_COPP_CloseDevice</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567759)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539638" data-raw-source="[&lt;em&gt;COPPCloseVideoSession&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539638)"><em>COPPCloseVideoSession</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567759" data-raw-source="[&lt;strong&gt;IOCTL_COPP_CloseDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567759)"><strong>IOCTL_COPP_CloseDevice</strong></a></p></td>
 <td align="left"><p><strong>DestroyMoComp</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Sample%20Functions%20for%20COPP%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

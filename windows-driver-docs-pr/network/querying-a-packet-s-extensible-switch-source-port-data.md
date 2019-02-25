@@ -2,11 +2,8 @@
 title: Querying a Packet's Extensible Switch Source Port Data
 description: Querying a Packet's Extensible Switch Source Port Data
 ms.assetid: 082AEF58-3FCF-4ABE-90E1-1AC5DAF32B54
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Querying a Packet's Extensible Switch Source Port Data
@@ -16,7 +13,7 @@ The Hyper-V extensible switch source port is specified by the **SourcePortId** m
 
 The extensible switch extension accesses the [**NDIS\_SWITCH\_FORWARDING\_DETAIL\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh598211) structure by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](https://msdn.microsoft.com/library/windows/hardware/hh598259) macro. The following example shows how the driver can obtain the source port identifier from the packet's **NDIS\_SWITCH\_FORWARDING\_DETAIL\_NET\_BUFFER\_LIST\_INFO** structure.
 
-```
+```C++
 PNDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO fwdDetail;
 NDIS_SWITCH_PORT_ID sourcePortId;
 
@@ -24,9 +21,9 @@ fwdDetail = NET_BUFFER_LIST_SWITCH_FORWARDING_DETAIL(NetBufferList);
 sourcePortId = fwdDetail->SourcePortId;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

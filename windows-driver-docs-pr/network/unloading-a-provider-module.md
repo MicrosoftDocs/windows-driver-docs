@@ -6,11 +6,8 @@ keywords:
 - provider modules WDK Network Module Registrar , unloading
 - unloading network modules
 - NmrDeregisterProvider
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unloading a Provider Module
@@ -22,7 +19,7 @@ A provider module's [**Unload**](https://msdn.microsoft.com/library/windows/hard
 
 For example:
 
-```
+```C++
 // Variable containing the handle for the registration
 HANDLE ProviderHandle;
 
@@ -64,9 +61,9 @@ A network module must wait until all of the deregistrations are complete before 
 
 A provider module is not required to call [**NmrDeregisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff568778) from within its [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886) function. For example, in the situation where a provider module is a subcomponent of a complex driver, the deregistration of the provider module might occur when the provider module subcomponent is deactivated. However, in such a situation the driver must still ensure that the provider module has been completely deregistered from the NMR before returning from its **Unload** function.
 
- 
+ 
 
- 
+ 
 
 
 

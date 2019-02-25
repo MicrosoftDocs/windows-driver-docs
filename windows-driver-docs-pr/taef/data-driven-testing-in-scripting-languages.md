@@ -2,11 +2,8 @@
 title: Data-driven Testing in Scripting Languages
 description: Data-driven Testing in Scripting Languages
 ms.assetid: CF60C594-8877-4f09-AF82-9F4CA27123C7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="taef.data-driven_testing_in_scripting_languages"></span>Data-driven Testing in Scripting Languages
@@ -28,7 +25,7 @@ Data-driven testing in TAEF allows you to specify the **DataSource** at the clas
 
 The following example shows how to specify the **DataSource** property.
 
-```
+```cpp
 1   <?xml version="1.0" ?>
 2   <?component error="true" debug="true"?>
 3   <package>
@@ -218,7 +215,7 @@ In the JScriptSampleTests, you can see an example of a data-driven class. Becaus
 
 The following parameter types are available for scripting languages. These are the types that you can specify in table based data-driven testing. The default parameter type is *String* or *BSTR* (representing *VT\_BSTR*).
 
-The section [Parameter Types in Table based DataSource](parameter-types-in-table-data-sources.md) shows how to view the available parameter types (in Native and Managed code) while authoring tests in a scripting langauge.
+The section [Parameter Types in Table based DataSource](parameter-types-in-table-data-sources.md) shows how to view the available parameter types (in Native and Managed code) while authoring tests in a scripting language.
 
 ## <span id="Executing_data-driven_scripts"></span><span id="executing_data-driven_scripts"></span><span id="EXECUTING_DATA-DRIVEN_SCRIPTS"></span>Executing data-driven scripts
 
@@ -291,11 +288,10 @@ te Examples\DataDrivenTest.wsc /select:"@Name='VBSampleTests::TestOne*' and @Dat
 
 Using PICT based and light weight data-driven tests in a script test is left as an exercise to the reader.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20Data-driven%20Testing%20in%20Scripting%20Languages%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

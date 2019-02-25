@@ -1,15 +1,11 @@
 ---
 title: OID_WDI_TASK_P2P_DISCOVER
-author: windows-driver-content
 description: OID_WDI_TASK_P2P_DISCOVER is issued to the device to perform Wi-Fi Direct discovery.
 ms.assetid: 9425a8d1-af68-488c-8a1e-a9b759f102cc
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_P2P_DISCOVER Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_P2P\_DISCOVER
@@ -21,7 +17,7 @@ OID\_WDI\_TASK\_P2P\_DISCOVER is issued to the device to perform Wi-Fi Direct di
 |--------|---------------------------------------------------------|---------------------------------------|---------------------------------|
 | Port   | Yes. The port must be in a clean state after the abort. | 6                                     | 15                              |
 
- 
+ 
 
 The command contains properties which define either a specific set of Wi-Fi Direct devices to search for, or wildcard discovery.
 
@@ -51,56 +47,56 @@ When the task has been completed (either normally or due to an abort), the port 
 </thead>
 <tbody>
 <tr class="odd">
-<td>[<strong>WDI_TLV_P2P_DISCOVER_MODE</strong>](https://msdn.microsoft.com/library/windows/hardware/dn897878)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn897878" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_DISCOVER_MODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn897878)"><strong>WDI_TLV_P2P_DISCOVER_MODE</strong></a></td>
 <td></td>
 <td></td>
 <td>Discovery mode information, such as scan type, count, and time between scans.</td>
 </tr>
 <tr class="even">
-<td>[<strong>WDI_TLV_SCAN_DWELL_TIME</strong>](https://msdn.microsoft.com/library/windows/hardware/dn898051)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn898051" data-raw-source="[&lt;strong&gt;WDI_TLV_SCAN_DWELL_TIME&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn898051)"><strong>WDI_TLV_SCAN_DWELL_TIME</strong></a></td>
 <td></td>
 <td></td>
 <td>Scanning dwell time settings.</td>
 </tr>
 <tr class="odd">
-<td>[<strong>WDI_TLV_P2P_DISCOVERY _CHANNEL_SETTINGS</strong>](https://msdn.microsoft.com/library/windows/hardware/dn897877)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn897877" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_DISCOVERY _CHANNEL_SETTINGS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn897877)"><strong>WDI_TLV_P2P_DISCOVERY _CHANNEL_SETTINGS</strong></a></td>
 <td>X</td>
 <td>X</td>
 <td>Scan duration and list of channels to scan. When specified, the listen settings override those specified in WDI_TLV_SCAN_DWELL_TIME. If this list is empty, the port must scan on all supported channels and use the listen settings from WDI_TLV_SCAN_DWELL_TIME.</td>
 </tr>
 <tr class="even">
-<td>[<strong>WDI_TLV_SSID</strong>](https://msdn.microsoft.com/library/windows/hardware/dn898064)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn898064" data-raw-source="[&lt;strong&gt;WDI_TLV_SSID&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn898064)"><strong>WDI_TLV_SSID</strong></a></td>
 <td>X</td>
 <td>X</td>
 <td>A list of SSIDs that the port should scan for. There can be multiple SSIDs in this list and one of them can be a wildcard. When doing an active scan on a channel, the port must send a probe request for each SSID in the list. If this list is empty, the port must scan for all SSIDs.</td>
 </tr>
 <tr class="odd">
-<td>[<strong>WDI_TLV_P2P_SERVICE_NAME_HASH</strong>](https://msdn.microsoft.com/library/windows/hardware/dn898009)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn898009" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_SERVICE_NAME_HASH&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn898009)"><strong>WDI_TLV_P2P_SERVICE_NAME_HASH</strong></a></td>
 <td>X</td>
 <td>X</td>
 <td>A list of Service Hash names to be queried. Required if WDI_P2P_SERVICE_DISCOVERY_TYPE_SERVICE_NAME_ONLY or WDI_P2P_SERVICE_DISCOVERY_TYPE_ASP2_SERVICE_NAME_ONLY is specified.</td>
 </tr>
 <tr class="even">
-<td>[<strong>WDI_TLV_VENDOR_SPECIFIC_IE</strong>](https://msdn.microsoft.com/library/windows/hardware/dn898076)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn898076" data-raw-source="[&lt;strong&gt;WDI_TLV_VENDOR_SPECIFIC_IE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn898076)"><strong>WDI_TLV_VENDOR_SPECIFIC_IE</strong></a></td>
 <td></td>
 <td>X</td>
 <td>One or more IEs that must be included in the probe requests sent by the port. These IEs are not used for passive scan.</td>
 </tr>
 <tr class="odd">
-<td>[<strong>WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY</strong>](https://msdn.microsoft.com/library/windows/hardware/mt269140)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/mt269140" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt269140)"><strong>WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY</strong></a></td>
 <td>X</td>
 <td>X</td>
 <td>An optional list of Service Information Discovery Entries to be queried. This is required if WDI_P2P_SERVICE_DISCOVERY_TYPE_SERVICE_INFORMATION is specified. The driver is expected to perform a P2P service discovery over probe request/response using the service name hash. For each service entry that contains service information, the driver is expected to perform an ANQP query request/response to query the service information.</td>
 </tr>
 <tr class="even">
-<td><p>[<strong>WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY</strong>](https://msdn.microsoft.com/library/windows/hardware/mt769912)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/mt769912" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt769912)"><strong>WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY</strong></a></p></td>
 <td>X</td>
 <td><p>X</p></td>
 <td><p>Added in Windows 10, version 1607, WDI version 1.0.21.</p>
 <p>An optional list of ASP2 Service Information Discovery Entries to be queried. This is required if WDI_P2P_SERVICE_DISCOVERY_TYPE_ASP2_SERVICE_INFORMATION is specified. The driver is expected to perform a P2P service discovery over probe request/response using the service name hash. For each service entry that contains service information, the driver is expected to perform an ANQP query request/response to query the service information.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/mt769913)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/mt769913" data-raw-source="[&lt;strong&gt;WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt769913)"><strong>WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL</strong></a></p></td>
 <td></td>
 <td><p>X</p></td>
 <td><p>Added in Windows 10, version 1607, WDI version 1.0.21.</p>
@@ -109,7 +105,7 @@ When the task has been completed (either normally or due to an abort), the port 
 </tbody>
 </table>
 
- 
+ 
 
 ## Task completion indication
 
@@ -143,12 +139,10 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WDI_TASK_P2P_DISCOVER%20%20RELEASE:%20%286/30/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

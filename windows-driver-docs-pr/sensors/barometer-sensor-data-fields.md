@@ -1,0 +1,25 @@
+---
+title: Barometer data fields
+description: This topic provides information about the sensor data fields that are specific to the barometer.
+ms.assetid: 4AF51C94-AD96-4D09-AF8D-3D3D0BC32B3D
+ms.date: 07/20/2018
+ms.localizationpriority: medium
+---
+
+# Barometer data fields
+
+
+This topic provides information about the sensor data fields that are specific to the barometer sensor.
+
+The following table shows the data fields. For more information about the data types shown in the **Type** column, see the [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+
+|Property key|Type|Required/Optional|Description|
+| --- | --- | --- | --- |
+|PKEY_SensorData_AtmosphericPressure_Bars|VT_R4|Required|Atmospheric pressure, measured in bars.|
+
+ 
+
+## Related topics
+
+
+[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)

@@ -1,26 +1,23 @@
 ---
 title: INF AddSoftware Directive
 description: An AddSoftware directive describes the installation of standalone software.
-ms.author: windowsdriverdev
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # INF AddSoftware Directive
 
 Each **AddSoftware** directive describes the installation of standalone software.  Use this directive in an INF file of the **SoftwareComponent** setup class. For more details on software components, see [Using a Component INF File](using-a-component-inf-file.md).  This directive is supported for Windows 10 version 1703 and later.
 
-Valid installation types depend on the [target platform](../develop/windows-10-editions-for-universal-drivers.md). For example, Desktop supports MSI installers and setup EXEs.
+Valid installation types depend on the [target platform](../develop/windows-10-editions-for-universal-drivers.md). For example, Desktop supports MSI installers and setup EXEs.  **Note**:  Type 2 is supported in Universal Drivers, Type 1 is desktop-only.
 
 When a software component INF file specifies **AddSoftware**, the system queues software to be installed after device installation.  There is no guarantee when or if the software will be installed.
 If referenced software fails to install, the system tries again when the referencing software component is updated.
 
 An **AddSoftware** directive is used within an [**INF *DDInstall*.Software**](inf-ddinstall-software-section.md) section.
 
-```
+```ini
 [DDInstall.Software]
-
 AddSoftware=SoftwareName,[flags],software-install-section
 ```
 
@@ -32,7 +29,13 @@ Specifies the name of the software to be installed.  This name uniquely identifi
 
 *flags*
 
-Specifies one or more (ORed) flags.  This value must be zero.
+Specifies one or more (ORed) flags.
+
+**0x00000000**  
+The **AddSoftware** directive is processed only once.
+
+**0x00000001**  
+The **AddSoftware** directive is processed once for each component device that specifies **AddSoftware** with the same unique *SoftwareName*.
 
 *software-install-section*
 
@@ -44,7 +47,7 @@ Each INF-writer-created section name must be unique within the INF file and must
 
 An **AddSoftware** directive must reference a named *software-install-section* elsewhere in the INF file.  Each such section has the following form:
 
-```
+```ini
 [software-install-section]
 
 SoftwareType=type-code
@@ -54,9 +57,14 @@ SoftwareType=type-code
 [SoftwareID=pfn://x.y.z]
 ```
 
-The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but arguments and flags are optional. If **SoftwareType** is set to 2, **SoftwareID** is required, and flags are optional.  For info about this feature, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md).
+The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but arguments and flags are optional. If **SoftwareType** is set to 2, **SoftwareID** is required, and flags are optional.
 
-Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.    
+Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.
+
+Any software installed using **AddSoftware** will **not** be uninstalled if the virtual software component device or its parent devices are uninstalled. If your software is not a UWP app (i.e. you're using **AddSoftware** with a value of 1), please make sure users can easily uninstall it without leaving a trace in the registry. To do so:
+
+* If you're using an MSI installer, set up an [Add/Remove Programs](https://msdn.microsoft.com/library/windows/desktop/aa368032) entry in the application's Windows Installer package.
+* If you're using a custom EXE that installs global registry/file state (instead of supplementing local device settings), use the [Uninstall Registry Key](https://msdn.microsoft.com/library/windows/desktop/aa372105). 
 
 ## Software-Install Section Entries and Values
 
@@ -64,7 +72,18 @@ Any software installed using **AddSoftware** must be installed silently (or quie
 
 Specifies the type of software installation.
 
-A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  Note that a value of 1 is not supported on Windows 10 S.  In current Windows Insiders builds, a value of 2 indicates that the associated software is a Windows Store link.
+A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  A value of 1 is not supported on Windows 10 S.  Starting in Windows 10 version 1709, a value of 2 indicates that the associated software is a Microsoft Store link.  Use a value of 1 only for device-specific software that has no graphical user interface.  If you have a device-specific app with graphical elements, it should come from the Microsoft Store, and the driver should reference it using **SoftwareType** 2.
+
+>[!NOTE]
+>When using Type 2 of the AddSoftware directive, it is not required to utilize a Component INF.  The directive can be used in any INF successfully.  An AddSoftware directive of Type 1, however, must be used from a Component INF.
+
+Do not use AddSoftware to distribute software that is unrelated to a device. For example, an OEM-specific PC utility program should not be installed with AddSoftware.
+Instead, use one of the following options to preinstall an app in an OEM image of Windows 10:
+
+* To preinstall a Win32 app, boot to audit mode and install the app. For details, see [Audit Mode Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/audit-mode-overview).
+* To preinstall a Microsoft Store (UWP) app, see [Preinstallable apps for desktop devices](https://docs.microsoft.com/windows-hardware/customize/preinstall/preinstallable-apps-for-windows-10-desktop).
+
+For info about pairing a driver with a Universal Windows Platform (UWP) app, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).
 
 **SoftwareBinary**=*filename*
 
@@ -74,7 +93,7 @@ Specifies the path to the executable.  The system generates command lines like t
 
 `EXE: <SoftwareBinary> [<SoftwareArguments>]`
 
-If you use this entry, you must add the executable to the DriverStore by specifying the [INF CopyINF Directive](inf-copyfiles-directive.md) with  a **DestinationDirs** value of 13.
+If you use this entry, you must add the executable to the DriverStore by specifying the [INF CopyFiles Directive](inf-copyfiles-directive.md) with  a **DestinationDirs** value of 13.
 
 **SoftwareArguments**=*argument1[, argument2[, … argumentN]]*
 
@@ -86,7 +105,7 @@ The system replaces the string above with the device instance ID of the software
 
 For example:
 
-```
+```ini
 	[DDInstall.Software]
 	AddSoftware=ContosoControlPanel,,Contoso_ControlPanel_Software
 
@@ -103,7 +122,7 @@ The above example results in a command line like this:
 
 If SoftwareArguments contains multiple arguments:
 
-```
+```ini
 	SoftwareArguments=arg1,<<DeviceInstanceID>>,arg2
 ```
 
@@ -117,7 +136,7 @@ Specifies the software version.  Each value should not exceed 65535.  When the s
 
 **SoftwareID**=*x.y.z*
 
-Specifies a Windows Store identifier and identifier type.  Currently, only Package Family Name (PFN) is supported.  Use a PFN to reference a Universal Windows Platform (UWP) app using the form `pfn://<x.y.z>`.
+Specifies a Microsoft Store identifier and identifier type.  Currently, only Package Family Name (PFN) is supported.  Use a PFN to reference a Universal Windows Platform (UWP) app using the form `pfn://<x.y.z>`.
 
 <!--add link to related page in UWP docs once it is available-->
 
@@ -127,4 +146,4 @@ Specifies a Windows Store identifier and identifier type.  Currently, only Packa
 * [INF DDInstall.Software Section](inf-ddinstall-software-section.md)
 * [INF AddComponent Directive](inf-addcomponent-directive.md)
 * [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md)
-* [Creating a custom capability to pair a driver with a Hardware Support App (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md)
+* [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md)

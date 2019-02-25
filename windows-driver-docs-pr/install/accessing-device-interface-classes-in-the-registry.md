@@ -2,11 +2,8 @@
 title: Accessing Device Interfaces in the Registry
 description: Accessing Device Interfaces in the Registry
 ms.assetid: 77179F23-8381-401d-BD45-245F999FCD31
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Device Interfaces in the Registry
@@ -18,9 +15,9 @@ This section provides guidelines that [driver package](driver-packages.md) compo
 
 [Accessing the Properties of Installed Device Interfaces](accessing-the-properties-of-installed-device-interface-classes.md)
 
- 
+ 
 
- 
+ 
 
 
 

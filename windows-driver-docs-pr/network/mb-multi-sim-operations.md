@@ -1,14 +1,11 @@
 ---
 title: MB Multi-SIM Operations
 description: MB Multi-SIM Operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
-# MB Multi-SIM Operations
+# MB Multi-SIM operations
 
 ## Desktop Multi-Modem Multi-Executor Support
 
@@ -171,7 +168,7 @@ The following CIDs are defined for **UUID_MS_BasicConnect**:
 | MBIM_CID_MS_DEVICE_SLOT_MAPPINGS | 7 | Windows 10, version 1703 |
 | MBIM_CID_MS_SLOT_INFO_STATUS | 8 | Windows 10, version 1703 |
 
-All offsets in the CID sections below are calculated from the beginning of the InformationBuffer MBIM_COMMAND_MSG.
+All offsets in the following CID sections are calculated from the beginning of the InformationBuffer MBIM_COMMAND_MSG.
 
 ### MBIM_CID_MS_SYS_CAPS
 
@@ -208,7 +205,7 @@ The InformationBuffer shall be null and InformationBufferLength shall be zero.
 
 Not applicable.
 
-##### Reponse
+##### Response
 
 The following MBIM_SYS_CAPS_INFO structure shall be used in the InformationBuffer.
 
@@ -385,19 +382,21 @@ The following MBIM_MS_SLOT_INFO structure shall be used in the InformationBuffer
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | SlotIndex | UINT32 | The index of the slot. |
-| 4 | 4 | State | MBIM_MS_UICC_SLOT_STATE | THe state of the slot and card (if applicable). |
+| 4 | 4 | State | MBIM_MS_UICC_SLOT_STATE | The state of the slot and card (if applicable). |
 
 The following MBIM_MS_UICCSLOT_STATE structure describes the possible states of the slot.
 
 | States | Value | Description |
 | --- | --- | --- |
-| MBIMMsUICCSlotStateUnknown | 0 | The modem is still in the process of initializing so the SIM slot state is not deterministic. |
-| MBIMMsUICCSlotStateEmpty | 1 | The UICC slot is powered off and no card is present. An implementation that is unable to determine the presence of a card in a slot that is powered off reports its state as MBIMUICCSlotStateOff. |
-| MBIMMsUICCSlotStateOff | 2 | The UICC slot is powered off. |
-| MBIMMsUICCSlotStateEmpty | 3 | The UICC slot is empty (there is no card in it). |
-| MBIMMsUICCSlotStateNotReady | 4 | The UICC slot is occupied and powered on but the card within it is not yet ready. |
-| MBIMMsUICCSlotStateActive | 5 | The UICC slot is occupied and the card within it is ready. |
-| MBIMMsUICCSlotStateError | 6 | The UICC slot is occupied and powered on but the card is in an error state and cannot be used until it is next reset. |
+| UICCSlotStateUnknown | 0 | The modem is still in the process of initializing so the SIM slot state is not deterministic. |
+| UICCSlotStateOffEmpty | 1 | The UICC slot is powered off and no card is present. An implementation that is unable to determine the presence of a card in a slot that is powered off reports its state as UICCSlotStateOff. |
+| UICCSlotStateOff | 2 | The UICC slot is powered off. |
+| UICCSlotStateEmpty | 3 | The UICC slot is empty (there is no card in it). |
+| UICCSlotStateNotReady | 4 | The UICC slot is occupied and powered on but the card within it is not yet ready. |
+| UICCSlotStateActive | 5 | The UICC slot is occupied and the card within it is ready. |
+| UICCSlotStateError | 6 | The UICC slot is occupied and powered on but the card is in an error state and cannot be used until it is next reset. |
+| UICCSlotStateActiveEsim | 7 | The card in the slot is an eSIM with an active profile and is ready to accept commands. |
+| UICCSlotStateActiveEsimNoProfiles | 8 | The card in the slot is an eSIM with no profiles (or no active profiles) and is ready to accept commands. |
 
 #### Status Codes
 
@@ -415,5 +414,3 @@ Most of the MBIM CIDs map or relate to NDIS OIDs, but there are a few commands t
 |  | CID_MBIM_MSNETWORKIDLEHINT |
 |  | CID_MBIM_MULTICARRIER_CURRENT_CID_LIST |
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Slicer%20settings%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

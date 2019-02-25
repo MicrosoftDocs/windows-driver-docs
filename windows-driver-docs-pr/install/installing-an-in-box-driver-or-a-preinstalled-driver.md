@@ -6,11 +6,8 @@ keywords:
 - hardware-first installations WDK device installations
 - inbox driver installations WDK
 - preinstalled drivers WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing an Inbox Driver or a Preinstalled Driver
@@ -22,9 +19,9 @@ For more information about how driver packages are located during a [hardware-fi
 
 For information about how Windows selects the driver that has the best match to a device, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

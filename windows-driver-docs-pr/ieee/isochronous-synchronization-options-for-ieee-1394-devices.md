@@ -1,6 +1,5 @@
 ---
 title: Isochronous Synchronization Options for IEEE 1394 Devices
-author: windows-driver-content
 description: Isochronous Synchronization Options for IEEE 1394 Devices
 ms.assetid: 27137890-09e7-45d5-b268-7e93c943b489
 keywords:
@@ -9,17 +8,14 @@ keywords:
 - filtering WDK IEEE 1394 bus
 - cycle time synchronization WDK IEEE 1394 bus
 - buffers WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Isochronous Synchronization Options for IEEE 1394 Devices
 
 
-## <a href="" id="ddk-isochronous-synchronization-options-for-ieee-1394-devices-kg"></a>
+
 
 
 The IEEE 1394 driver stack supports certain types of synchronization and filtering during [**REQUEST\_ISOCH\_LISTEN**](https://msdn.microsoft.com/library/windows/hardware/ff537655) and [**REQUEST\_ISOCH\_TALK**](https://msdn.microsoft.com/library/windows/hardware/ff537660) operations.
@@ -42,11 +38,10 @@ To synchronize the entire data stream on a certain cycle time, client drivers mu
 
 To determine if the host controller supports synchronization on cycle times, the client driver should send a [**REQUEST\_GET\_LOCAL\_HOST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537644) request to the bus driver, with the **nLevel** member of the IRB set to 2. The bus driver returns a [**GET\_LOCAL\_HOST\_INFO2**](https://msdn.microsoft.com/library/windows/hardware/ff537147) structure in response to this request. If the bus driver sets the HOST\_INFO\_SUPPORTS\_START\_ON\_CYCLE flag in the **HostCapabilities** member of GET\_LOCAL\_HOST\_INFO2, this indicates that the host controller supports the synchronization of isochronous operations using cycle times.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

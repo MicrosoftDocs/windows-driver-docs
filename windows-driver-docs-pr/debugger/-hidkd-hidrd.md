@@ -3,17 +3,14 @@ title: hidkd.hidrd
 description: The hidkd.hidrd command displays a HID report descriptor in both raw and parsed format.
 ms.assetid: 8A9D76F2-7A36-4458-83A4-EDCB153EC45A
 keywords: ["hidkd.hidrd Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - hidkd.hidrd
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !hidkd.hidrd
@@ -21,7 +18,7 @@ api_type:
 
 The **!hidkd.hidrd** command displays a HID report descriptor in both raw and parsed format.
 
-```
+```dbgcmd
 !hidkd.hidrd rd Length
 ```
 
@@ -44,7 +41,7 @@ Examples
 
 This example shows how to use the [**!hidfdo**](-hidkd-hidfdo.md) command followed by the **!hidrd** command. The output of **!hidfdo** shows both the address and length of the raw report descriptor data.
 
-```
+```dbgcmd
 0: kd> !hidfdo 0xffffe00004f466e0
 # FDO 0xffffe00004f466e0  (!devobj/!devstack)
 
@@ -81,11 +78,10 @@ End Collection ()........................................0x0126: C0
 
 [HID Extensions](hid-extensions.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!hidkd.hidrd%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

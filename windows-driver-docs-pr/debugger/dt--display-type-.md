@@ -3,17 +3,14 @@ title: dt (Display Type)
 description: The dt command displays information about a local variable, global variable or data type. This can display information about simple data types, as well as structures and unions.
 ms.assetid: 82aba13e-6604-46ca-b3e5-bb865ecf3f1f
 keywords: ["dt (Display Type) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - dt (Display Type)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # dt (Display Type)
@@ -23,7 +20,7 @@ The **dt** command displays information about a local variable, global variable 
 
 User-Mode Syntax
 
-```
+```dbgcmd
 dt [-DisplayOpts] [-SearchOpts] [module!]Name [[-SearchOpts] Field] [Address] [-l List] 
 dt [-DisplayOpts] Address [-l List] 
 dt -h 
@@ -31,7 +28,7 @@ dt -h
 
 Kernel-Mode Syntax
 
-```
+```dbgcmd
 [Processor] dt [-DisplayOpts] [-SearchOpts] [module!]Name [[-SearchOpts] Field] [Address] [-l List] 
 dt [-DisplayOpts] Address [-l List] 
 dt -h 
@@ -109,7 +106,7 @@ Specifies one or more of the options given in the following table. These options
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______SearchOpts______"></span><span id="_______searchopts______"></span><span id="_______SEARCHOPTS______"></span> *SearchOpts*   
 Specifies one or more of the options given in the following table. These options are preceded by a hyphen.
@@ -137,13 +134,13 @@ Specifies one or more of the options given in the following table. These options
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______module______"></span><span id="_______MODULE______"></span> *module*   
 An optional parameter specifying the module that defines this structure. If there is a local variable or type with the same name as a global variable or type, you should include *module* to specify that you mean the global variable. Otherwise, the **dt** command will display the local variable, even if the local variable is a case-insensitive match and the global variable is a case-sensitive match.
 
 <span id="_______Name______"></span><span id="_______name______"></span><span id="_______NAME______"></span> *Name*   
-Specifies the name of a type or global variable. If *Name* ends with an asterisk (**\***), a list of all matches is displayed. Thus, **dt A\*** will list all data types, globals, and statics beginning with "A", but will not display the actual instances of these types. (If the **-v** display option is used at the same time, all symbols will be displayed -- not just those with associated type information.) You can also replace *Name* with a period (**.**) to signify that you want to repeat the most recently used value of *Name*.
+Specifies the name of a type or global variable. If *Name* ends with an asterisk (**\\***), a list of all matches is displayed. Thus, **dt A\\*** will list all data types, globals, and statics beginning with "A", but will not display the actual instances of these types. (If the **-v** display option is used at the same time, all symbols will be displayed -- not just those with associated type information.) You can also replace *Name* with a period (**.**) to signify that you want to repeat the most recently used value of *Name*.
 
 If *Name* contains a space, it should be enclosed in parentheses.
 
@@ -151,7 +148,7 @@ If *Name* contains a space, it should be enclosed in parentheses.
 Specifies the field(s) to be displayed. If *Field* is omitted, all fields are displayed. If *Field* is followed by a period (**.**), the first-level subfields of this field will be displayed as well. If *Field* is followed with a series of periods, the subfields will be displayed to a depth equal to the number of periods. Any field name followed by a period will be treated as a prefix match, as if the **-y** search option was used. If *Field* is followed by an asterisk (\*), it is treated as only the beginning of the field, not necessarily the entire field, and all matching fields are displayed.
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
-Specifies the address of the structure to be displayed. If *Name* is omitted, *Address* must be included and must specify the address of a global variable. *Address* is taken to be a virtual address unless otherwise specified. Use the **-p** option to specify a physical address. Use an "at" sign ( **@** ) to specify a register (for example, **@eax**).
+Specifies the address of the structure to be displayed. If *Name* is omitted, *Address* must be included and must specify the address of a global variable. *Address* is taken to be a virtual address unless otherwise specified. Use the **-p** option to specify a physical address. Use an "at" sign ( **@** ) to specify a register (for example, <strong>@eax</strong>).
 
 <span id="_______List______"></span><span id="_______list______"></span><span id="_______LIST______"></span> *List*   
 Specifies the field name that links a linked list. The *Address* parameter must be included.
@@ -179,7 +176,7 @@ Specifies the field name that links a linked list. The *Address* parameter must 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -204,7 +201,7 @@ The type information used by **dt** includes all type names created with **typed
 
 All types created by **typedefs** within your own code will be present, as long as they have actually been used in your program. However, types that are defined in your headers but never actually used will not be stored in the .pdb symbol files and will not be accessible to the debugger. To make such a type available to the debugger, use it as the *input* of a **typedef** statement. For example, if the following appears in your code, the structure MY\_DATA will be stored in the .pdb symbol file and can be displayed by the **dt** command:
 
-```
+```dbgcmd
 typedef struct _MY_DATA {
     . . .
     } MY_DATA;
@@ -213,7 +210,7 @@ typedef  MY_DATA *PMY_DATA;
 
 On the other hand, the following code would not suffice because both MY\_DATA and PMY\_DATA are defined by the initial **typedef** and, therefore, MY\_DATA has not itself been used as the input of any **typedef** statement:
 
-```
+```dbgcmd
 typedef struct _MY_DATA {
     . . .
     } MY_DATA, *PMY_DATA; 
@@ -225,7 +222,7 @@ If you want to display unicode strings, you need to use the [**.enable\_unicode 
 
 In the following example, **dt** displays a global variable:
 
-```
+```dbgcmd
 0:000> dt mt1 
    +0x000 a                : 10
    +0x004 b                : 98 'b'
@@ -237,7 +234,7 @@ In the following example, **dt** displays a global variable:
 
 In the following example, **dt** displays the array field **gn**:
 
-```
+```dbgcmd
 0:000> dt mt1 -a gn 
    +0x00c gn : 
     [00] 0x1
@@ -250,7 +247,7 @@ In the following example, **dt** displays the array field **gn**:
 
 The following command displays some subfields of a variable:
 
-```
+```dbgcmd
 0:000> dt mcl1 m_t1 dpo 
    +0x010 dpo  : DEEP_ONE
    +0x070 m_t1 : MYTYPE1 
@@ -258,7 +255,7 @@ The following command displays some subfields of a variable:
 
 The following command displays the subfields of the field **m\_t1**. Because the period automatically causes prefix matching, this will also display subfields of any field that begins with "m\_t1":
 
-```
+```dbgcmd
 0:000> dt mcl1 m_t1. 
    +0x070 m_t1  : 
       +0x000 a     : 0
@@ -273,14 +270,14 @@ You could repeat this to any depth. For example, the command **dt mcl1 a..c.** w
 
 Here is a more detailed example of how subfields can be displayed. First, display the **Ldr** field:
 
-```
+```dbgcmd
 0:000> dt nt!_PEB Ldr 7ffdf000 
    +0x00c Ldr : 0x00191ea0 
 ```
 
 Now expand the pointer type field:
 
-```
+```dbgcmd
 0:000> dt nt!_PEB Ldr Ldr. 7ffdf000 
    +0x00c Ldr  : 0x00191ea0
       +0x000 Length : 0x28
@@ -294,14 +291,14 @@ Now expand the pointer type field:
 
 Now display the **CriticalSectionTimeout** field:
 
-```
+```dbgcmd
 0:000> dt nt!_PEB CriticalSectionTimeout 7ffdf000 
    +0x070 CriticalSectionTimeout : _LARGE_INTEGER 0xffffe86d`079b8000 
 ```
 
 Now expand the **CriticalSectionTimeout** structure subfields one level deep:
 
-```
+```dbgcmd
 0:000> dt nt!_PEB CriticalSectionTimeout. 7ffdf000 
    +0x070 CriticalSectionTimeout  :  0xffffe86d`079b8000
       +0x000 LowPart                 : 0x79b8000
@@ -312,7 +309,7 @@ Now expand the **CriticalSectionTimeout** structure subfields one level deep:
 
 Now expand the **CriticalSectionTimeout** structure subfields two levels deep:
 
-```
+```dbgcmd
 0:000> dt nt!_PEB CriticalSectionTimeout.. 7ffdf000 
    +0x070 CriticalSectionTimeout   :  0xffffe86d`079b8000
       +0x000 LowPart                  : 0x79b8000
@@ -325,7 +322,7 @@ Now expand the **CriticalSectionTimeout** structure subfields two levels deep:
 
 The following command displays an instance of the data type MYTYPE1 that is located at the address 0x0100297C:
 
-```
+```dbgcmd
 0:000> dt 0x0100297c MYTYPE1 
    +0x000 a                : 22
    +0x004 b                : 43 '+'
@@ -337,7 +334,7 @@ The following command displays an instance of the data type MYTYPE1 that is loca
 
 The following command displays an array of 10 ULONGs at the address 0x01002BE0:
 
-```
+```dbgcmd
 0:000> dt -ca10 ULONG 01002be0 
 [0] 0x1001098
 [1] 0x1
@@ -353,7 +350,7 @@ The following command displays an array of 10 ULONGs at the address 0x01002BE0:
 
 The following command continues the previous display at a different address. Note that "ULONG" does not need to be re-entered:
 
-```
+```dbgcmd
 0:000> dt -ca4 . 01002d00 
 Using sym ULONG
 [0] 0x12
@@ -364,7 +361,7 @@ Using sym ULONG
 
 Here are some examples of type display. The following command displays all types and globals beginning with the string "MY" in the module *thismodule*. Those prefixed with an address are actual instances; those without addresses are type definitions:
 
-```
+```dbgcmd
 0:000> dt thismodule!MY* 
 010029b8  thismodule!myglobal1
 01002990  thismodule!myglobal2
@@ -380,7 +377,7 @@ Here are some examples of type display. The following command displays all types
 
 When performing type display, the **-v** option can be used to display the size of each item. The **-s** *size* option can be used to only enumerate items of a specific size. Again, those prefixed with an address are actual instances; those without addresses are type definitions:
 
-```
+```dbgcmd
 0:001> dt -s 2 -v thismodule!* 
 Enumerating symbols matching thismodule!*, Size = 0x2
 Address   Size Symbol
@@ -397,7 +394,7 @@ Address   Size Symbol
 
 Here is an example of the **-b** option. The structure is expanded and the **OwnerThreads** array within the structure is expanded, but the **Flink** and **Blink** list pointers are not followed:
 
-```
+```dbgcmd
 kd> dt nt!_ERESOURCE -b 0x8154f040 
    +0x000 SystemResourcesList :  [ 0x815bb388 - 0x816cd478 ]
       +0x000 Flink            : 0x815bb388
@@ -426,7 +423,7 @@ kd> dt nt!_ERESOURCE -b 0x8154f040
 
 Here is an example of **dt** in kernel mode. The following command produces results similar to [**!process 0 0**](-process.md):
 
-```
+```dbgcmd
 kd> dt nt!_EPROCESS -l ActiveProcessLinks.Flink -y Ima -yoi Uni 814856f0 
 ## ActiveProcessLinks.Flink at 0x814856f0
 
@@ -455,11 +452,10 @@ If you want to execute a command for each element of the list, use the [**!list*
 
 Finally, the **dt -h** command will display a short help text summarizing the **dt** syntax.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20dt%20%28Display%20Type%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

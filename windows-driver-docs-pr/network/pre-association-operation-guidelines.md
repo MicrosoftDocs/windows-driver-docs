@@ -4,17 +4,14 @@ description: Pre-Association Operation Guidelines
 ms.assetid: 35e9b701-6d5d-4c76-80fc-bb146be1ddb1
 keywords:
 - pre-association operations WDK Native 802.11 IHV Extensions DLL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pre-Association Operation Guidelines
 
 
-**Important**  The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](wifi-universal-driver-model.md).
+
 
  
 

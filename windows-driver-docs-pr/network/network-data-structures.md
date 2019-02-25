@@ -9,17 +9,14 @@ keywords:
 - network data WDK , structures
 - data WDK networking , structures
 - packets WDK networking , data structures
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Data Structures
 
 
-## <a href="" id="ddk-network-data-structures-ng"></a>
+
 
 
 Network data consists of packets of data that are sent or received over the network. NDIS provides data structures to describe and organize such data. The primary network data structures for NDIS 6.0 and later are:
@@ -55,9 +52,9 @@ Multiple NET\_BUFFER\_LIST structures can be attached to form a list of NET\_BUF
 
 [NET\_BUFFER\_LIST\_CONTEXT Structure](net-buffer-list-context-structure.md)
 
- 
+ 
 
- 
+ 
 
 
 

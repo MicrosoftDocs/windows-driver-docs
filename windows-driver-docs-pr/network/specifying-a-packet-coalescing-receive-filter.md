@@ -2,11 +2,8 @@
 title: Specifying a Packet Coalescing Receive Filter
 description: Specifying a Packet Coalescing Receive Filter
 ms.assetid: 0369A63D-4CDE-448A-8472-EEEB7B859B8D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying a Packet Coalescing Receive Filter
@@ -16,7 +13,7 @@ An overlying driver can set one or more receive filters on a miniport driver tha
 
 **Note**  The overlying protocol driver obtains the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566864) structure within the [**NDIS\_BIND\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff564832) structure. The overlying filter driver obtains the **NDIS\_RECEIVE\_FILTER\_CAPABILITIES** structure within the [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565481) structure.
 
- 
+ 
 
 The overlying driver downloads receive filters to the miniport driver by issuing OID method requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure for this OID request contains a pointer to a caller-allocated buffer. This buffer is formatted to contain the following:
 
@@ -28,7 +25,7 @@ The overlying driver downloads receive filters to the miniport driver by issuing
 
     For more information about how to initialize these structures, see [Specifying Header Field Tests](#specifying-header-field-test).
 
-## <a href="" id="specifying-receive-filter"></a>Specifying a Receive Filter
+## Specifying a Receive Filter
 
 
 An overlying driver specifies a packet coalescing receive filter by initializing an [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567181) structure with the configuration parameters for the filter. When it initializes the **NDIS\_RECEIVE\_FILTER\_PARAMETERS** structure, the overlying driver must follow these rules:
@@ -39,7 +36,7 @@ An overlying driver specifies a packet coalescing receive filter by initializing
 
     **Note**  Starting with NDIS 6.30, packet coalescing receive filter are only supported on the default receive queue of the network adapter. This receive queue has an identifier of NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.
 
-     
+     
 
 -   If the overlying driver is creating a new receive filter, it must set the **FilterId** member to NDIS\_DEFAULT\_RECEIVE\_FILTER\_ID.
 
@@ -57,7 +54,7 @@ The overlying driver must order the header field tests in the field parameters a
 
 For example, before the overlying driver specifies the filter parameters for an IP version 4 (IPv4) protocol field, it must first specify the filter parameters for a MAC header protocol field (NdisMacHeaderFieldProtocol). In this manner, the driver specifies a header field test that verifies the field is set to the correct EtherType value (0x0800) for IPv4 packets. If the test fails, the adapter does not have to perform the test of the IPV4 protocol field.
 
-## <a href="" id="specifying-header-field-test"></a>Specifying Header Field Tests
+## Specifying Header Field Tests
 
 
 Each receive filter can specify one or more test criteria (*header field tests*). The network adapter performs these tests to determine whether a received packet should be coalesced in a hardware coalescing buffer on the adapter. Also, the overlying driver can specify separate filter tests for various media access control (MAC), IP version 4 (IPv4), and IP version 6 (IPv6) header fields.
@@ -78,9 +75,9 @@ The miniport driver must follow these guidelines when it handles an OID method r
 
 -   If the overlying driver sets a MAC address filter and a VLAN identifier filter in the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567181) structure, it does not set the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag in either of the filter fields. In this case, the miniport driver should indicate packets that match both the specified MAC address and the VLAN identifier. That is, the miniport driver should not indicate packets with a matching MAC address that have a zero VLAN identifier or are untagged packets.
 
- 
+ 
 
- 
+ 
 
 
 

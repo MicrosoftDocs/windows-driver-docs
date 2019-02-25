@@ -2,6 +2,8 @@
 title: Bluetooth Extensions (Bthkd.dll)
 description: The Bluetooth debugger extensions display information about the current Bluetooth environment on the target system.
 ms.assetid: F6C5295D-F1F9-4180-BE57-A7D47AC8690C
+ms.date: 11/28/2017
+ms.localizationpriority: medium
 ---
 
 # Bluetooth Extensions (Bthkd.dll)
@@ -11,7 +13,7 @@ The Bluetooth debugger extensions display information about the current Bluetoot
 
 **Note**  As you work with the Bluetooth debugging extensions, you may come across undocumented behavior or APIs. We strongly recommend against taking dependencies on undocumented behavior or APIs as it's subject to change in future releases.
 
- 
+ 
 
 ## <span id="in_this_section"></span>In this section
 
@@ -29,83 +31,82 @@ The Bluetooth debugger extensions display information about the current Bluetoot
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>!bthkd.bthdevinfo</strong>](-bthkd-bthdevinfo.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.bthdevinfo</strong>](-bthkd-bthdevinfo.md) command displays the information about a given BTHENUM created device PDO.</p></td>
+<td align="left"><p><strong><a href="-bthkd-bthdevinfo.md" data-raw-source="[!bthkd.bthdevinfo](-bthkd-bthdevinfo.md)">!bthkd.bthdevinfo</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-bthdevinfo.md" data-raw-source="[!bthkd.bthdevinfo](-bthkd-bthdevinfo.md)">!bthkd.bthdevinfo</a></strong> command displays the information about a given BTHENUM created device PDO.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!bthkd.bthenuminfo</strong>](-bthkd-bthenuminfo.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.bthenuminfo</strong>](-bthkd-bthenuminfo.md) command displays information about the BTHENUM FDO.</p></td>
+<td align="left"><p><strong><a href="-bthkd-bthenuminfo.md" data-raw-source="[!bthkd.bthenuminfo](-bthkd-bthenuminfo.md)">!bthkd.bthenuminfo</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-bthenuminfo.md" data-raw-source="[!bthkd.bthenuminfo](-bthkd-bthenuminfo.md)">!bthkd.bthenuminfo</a></strong> command displays information about the BTHENUM FDO.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!bthkd.bthinfo</strong>](-bthkd-bthinfo-.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.bthinfo</strong>](-bthkd-bthinfo-.md) command displays details about the BTHPORT FDO. This command is a good starting point for Bluetooth investigations as it displays address information that can be used to access many of the other Bluetooth debug extension commands.</p></td>
+<td align="left"><p><strong><a href="-bthkd-bthinfo-.md" data-raw-source="[!bthkd.bthinfo](-bthkd-bthinfo-.md)">!bthkd.bthinfo</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-bthinfo-.md" data-raw-source="[!bthkd.bthinfo](-bthkd-bthinfo-.md)">!bthkd.bthinfo</a></strong> command displays details about the BTHPORT FDO. This command is a good starting point for Bluetooth investigations as it displays address information that can be used to access many of the other Bluetooth debug extension commands.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!bthkd.bthhelp</strong>](-bthkd-bthhelp.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.bthhelp</strong>](-bthkd-bthhelp.md) command displays help for the Bluetooth debug extension commands.</p></td>
+<td align="left"><p><strong><a href="-bthkd-bthhelp.md" data-raw-source="[!bthkd.bthhelp](-bthkd-bthhelp.md)">!bthkd.bthhelp</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-bthhelp.md" data-raw-source="[!bthkd.bthhelp](-bthkd-bthhelp.md)">!bthkd.bthhelp</a></strong> command displays help for the Bluetooth debug extension commands.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!bthkd.bthtree</strong>](-bthkd-bthtree.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.bthtree</strong>](-bthkd-bthtree.md) command displays the complete Bluetooth device tree.</p></td>
+<td align="left"><p><strong><a href="-bthkd-bthtree.md" data-raw-source="[!bthkd.bthtree](-bthkd-bthtree.md)">!bthkd.bthtree</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-bthtree.md" data-raw-source="[!bthkd.bthtree](-bthkd-bthtree.md)">!bthkd.bthtree</a></strong> command displays the complete Bluetooth device tree.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!bthkd.bthusbtransfer</strong>](-bthkd-bthusbtransfer.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.bthusbtransfer</strong>](-bthkd-bthusbtransfer.md) command displays the Bluetooth usb transfer context including Irp, Bip and transfer buffer information.</p></td>
+<td align="left"><p><strong><a href="-bthkd-bthusbtransfer.md" data-raw-source="[!bthkd.bthusbtransfer](-bthkd-bthusbtransfer.md)">!bthkd.bthusbtransfer</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-bthusbtransfer.md" data-raw-source="[!bthkd.bthusbtransfer](-bthkd-bthusbtransfer.md)">!bthkd.bthusbtransfer</a></strong> command displays the Bluetooth usb transfer context including Irp, Bip and transfer buffer information.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!bthkd.dibflags</strong>](-bthkd-dibflags.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.dibflags</strong>](-bthkd-dibflags.md) command displays DEVICE_INFO_BLOCK.DibFlags dumps flags set in _DEVICE_INFO_BLOCK.DibFlags.</p></td>
+<td align="left"><p><strong><a href="-bthkd-dibflags.md" data-raw-source="[!bthkd.dibflags](-bthkd-dibflags.md)">!bthkd.dibflags</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-dibflags.md" data-raw-source="[!bthkd.dibflags](-bthkd-dibflags.md)">!bthkd.dibflags</a></strong> command displays DEVICE_INFO_BLOCK.DibFlags dumps flags set in _DEVICE_INFO_BLOCK.DibFlags.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!bthkd.hcicmd</strong>](-bthkd-hcicmd.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.hcicmd</strong>](-bthkd-hcicmd.md) command displays a list of the currently pending commands.</p></td>
+<td align="left"><p><strong><a href="-bthkd-hcicmd.md" data-raw-source="[!bthkd.hcicmd](-bthkd-hcicmd.md)">!bthkd.hcicmd</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-hcicmd.md" data-raw-source="[!bthkd.hcicmd](-bthkd-hcicmd.md)">!bthkd.hcicmd</a></strong> command displays a list of the currently pending commands.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!bthkd.hciinterface</strong>](-bthkd-hciinterface.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.hciinterface</strong>](-bthkd-hciinterface.md) command displays the bthport!_HCI_INTERFACE structure.</p></td>
+<td align="left"><p><strong><a href="-bthkd-hciinterface.md" data-raw-source="[!bthkd.hciinterface](-bthkd-hciinterface.md)">!bthkd.hciinterface</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-hciinterface.md" data-raw-source="[!bthkd.hciinterface](-bthkd-hciinterface.md)">!bthkd.hciinterface</a></strong> command displays the bthport!_HCI_INTERFACE structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!bthkd.l2capinterface</strong>](-bthkd-l2capinterface-.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.l2capinterface</strong>](-bthkd-l2capinterface-.md) command displays information about the L2CAP interface.</p></td>
+<td align="left"><p><strong><a href="-bthkd-l2capinterface-.md" data-raw-source="[!bthkd.l2capinterface](-bthkd-l2capinterface-.md)">!bthkd.l2capinterface</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-l2capinterface-.md" data-raw-source="[!bthkd.l2capinterface](-bthkd-l2capinterface-.md)">!bthkd.l2capinterface</a></strong> command displays information about the L2CAP interface.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!bthkd.rfcomminfo</strong>](-bthkd-rfcomminfo.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.rfcomminfo</strong>](-bthkd-rfcomminfo.md) command displays information about the RFCOMM FDO and the TDI Device Object.</p></td>
+<td align="left"><p><strong><a href="-bthkd-rfcomminfo.md" data-raw-source="[!bthkd.rfcomminfo](-bthkd-rfcomminfo.md)">!bthkd.rfcomminfo</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-rfcomminfo.md" data-raw-source="[!bthkd.rfcomminfo](-bthkd-rfcomminfo.md)">!bthkd.rfcomminfo</a></strong> command displays information about the RFCOMM FDO and the TDI Device Object.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!bthkd.rfcommconnection</strong>](-bthkd-rfcommconnection.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.rfcommconnection</strong>](-bthkd-rfcommconnection.md) command displays information about a given RFCOMM connection object.</p></td>
+<td align="left"><p><strong><a href="-bthkd-rfcommconnection.md" data-raw-source="[!bthkd.rfcommconnection](-bthkd-rfcommconnection.md)">!bthkd.rfcommconnection</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-rfcommconnection.md" data-raw-source="[!bthkd.rfcommconnection](-bthkd-rfcommconnection.md)">!bthkd.rfcommconnection</a></strong> command displays information about a given RFCOMM connection object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!bthkd.rfcommchannel</strong>](-bthkd-rfcommchannel.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.rfcommchannel</strong>](-bthkd-rfcommchannel.md) command displays information about a given RFCOMM channel CB.</p></td>
+<td align="left"><p><strong><a href="-bthkd-rfcommchannel.md" data-raw-source="[!bthkd.rfcommchannel](-bthkd-rfcommchannel.md)">!bthkd.rfcommchannel</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-rfcommchannel.md" data-raw-source="[!bthkd.rfcommchannel](-bthkd-rfcommchannel.md)">!bthkd.rfcommchannel</a></strong> command displays information about a given RFCOMM channel CB.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!bthkd.sdpinterface</strong>](-bthkd-sdpinterface.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.sdpinterface</strong>](-bthkd-sdpinterface.md) command displays information about the SDP interface.</p></td>
+<td align="left"><p><strong><a href="-bthkd-sdpinterface.md" data-raw-source="[!bthkd.sdpinterface](-bthkd-sdpinterface.md)">!bthkd.sdpinterface</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-sdpinterface.md" data-raw-source="[!bthkd.sdpinterface](-bthkd-sdpinterface.md)">!bthkd.sdpinterface</a></strong> command displays information about the SDP interface.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!bthkd.scointerface</strong>](-bthkd-scointerface-.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.scointerface</strong>](-bthkd-scointerface-.md) command displays information about the SCO interface.</p></td>
+<td align="left"><p><strong><a href="-bthkd-scointerface-.md" data-raw-source="[!bthkd.scointerface](-bthkd-scointerface-.md)">!bthkd.scointerface</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-scointerface-.md" data-raw-source="[!bthkd.scointerface](-bthkd-scointerface-.md)">!bthkd.scointerface</a></strong> command displays information about the SCO interface.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>!bthkd.sdpnode</strong>](-bthkd-sdpnode.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.sdpnode</strong>](-bthkd-sdpnode.md) command displays information about a node in an sdp tree.</p></td>
+<td align="left"><p><strong><a href="-bthkd-sdpnode.md" data-raw-source="[!bthkd.sdpnode](-bthkd-sdpnode.md)">!bthkd.sdpnode</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-sdpnode.md" data-raw-source="[!bthkd.sdpnode](-bthkd-sdpnode.md)">!bthkd.sdpnode</a></strong> command displays information about a node in an sdp tree.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>!bthkd.sdpstream</strong>](-bthkd-sdpstream.md)</p></td>
-<td align="left"><p>The [<strong>!bthkd.sdpstream</strong>](-bthkd-sdpstream.md) command displays the contents of a SDP stream.</p></td>
+<td align="left"><p><strong><a href="-bthkd-sdpstream.md" data-raw-source="[!bthkd.sdpstream](-bthkd-sdpstream.md)">!bthkd.sdpstream</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-bthkd-sdpstream.md" data-raw-source="[!bthkd.sdpstream](-bthkd-sdpstream.md)">!bthkd.sdpstream</a></strong> command displays the contents of a SDP stream.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Bluetooth%20Extensions%20%28Bthkd.dll%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

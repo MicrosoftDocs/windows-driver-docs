@@ -1,13 +1,9 @@
 ---
 title: Accessing Hardware and Handling Interrupts
-author: windows-driver-content
 description: Accessing Hardware and Handling Interrupts
 ms.assetid: 25D526CF-7C37-4D10-B099-352933F92F98
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Hardware and Handling Interrupts
@@ -24,9 +20,9 @@ Starting in UMDF 1.11, UMDF drivers can retrieve hardware resources that the sys
 -   [Reading and Writing to Device Registers in UMDF 1.x Drivers](reading-and-writing-to-device-registers-in-umdf-1-x-drivers.md)
 -   [Handling Interrupts](handling-interrupts.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,8 @@ keywords:
 - objects WDK Winsock Kernel
 - socket objects WDK Winsock Kernel
 - client objects WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Winsock Kernel Objects
@@ -26,9 +23,9 @@ A *client object* represents the attachment, or binding, between a WSK applicati
 <a href="" id="socket-object-------"></a>**Socket Object**   
 A *socket object* represents a network socket that can be used for network I/O. A socket object is represented by the [**WSK\_SOCKET**](https://msdn.microsoft.com/library/windows/hardware/ff571182) structure. A pointer to a socket object is returned to a WSK application when the application creates a new socket or when the application accepts an incoming connection. A WSK application passes this pointer to all WSK functions that are specific to a particular socket.
 
- 
+ 
 
- 
+ 
 
 
 

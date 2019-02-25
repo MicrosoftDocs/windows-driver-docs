@@ -1,15 +1,16 @@
 ---
 title: Extracting Button Usages That Are Set to ON
-author: windows-driver-content
 description: Extracting Button Usages That Are Set to ON
 ms.assetid: 700cdb18-f570-4189-a33c-f57af56a52fd
 keywords: ["HID reports WDK , extracting control data", "reports WDK HID , extracting control data", "extracting HID control data", "button usages WDK HID"]
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Extracting Button Usages That Are Set to ON
 
 
-## <a href="" id="ddk-extracting-button-usages-that-are-set-to-on-kg"></a>
+
 
 
 To extract the [HID usages](hid-usages.md) of buttons that are set to ON (1), applications and drivers call one of the following HID support routines:
@@ -36,12 +37,10 @@ After an application or driver has used these routines to obtain information abo
 
 [**HidP\_UsageAndPageListDifference**](https://msdn.microsoft.com/library/windows/hardware/ff539824)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Extracting%20Button%20Usages%20That%20Are%20Set%20to%20ON%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

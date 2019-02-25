@@ -2,11 +2,8 @@
 title: Summary of changes to port a miniport driver to NDIS 6.30
 description: To update an NDIS 6.x miniport driver to support NDIS 6.30, you must modify it as outlined in the following sections.
 ms.assetid: 1EA926FE-367E-4A63-A197-60137D679AE6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Summary of Changes Required to Port a Miniport Driver to NDIS 6.30
@@ -28,7 +25,7 @@ For more information about NDIS 6.30 features, see [Introduction to NDIS 6.30](i
 -   Replace the preprocessor definition NDIS60 or NDIS61 or NDIS620, if present, with NDIS630.
     **Note**  This item applies only to NDIS intermediate, protocol, and filter drivers. Most NDIS miniport drivers don't need this preprocessor definition.
 
-     
+     
 
 -   In NDIS 6.30, NDIS can call [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) twice in parallel if there are two adapters plugged into the system at the same time or during system startup. Be sure to test your miniport driver under this "parallel startup" condition.
 
@@ -50,7 +47,7 @@ During [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardw
 
 **Note**  The driver is not required to register with NDIS the NDIS port corresponding to the default MAC entity.
 
- 
+ 
 
 ## USB-Based WWAN (Mobile Broadband) Miniport Drivers
 
@@ -59,9 +56,9 @@ For USB-based Mobile Broadband devices, Windows 8 provides a class driver that 
 
 If your USB-based WWAN miniport driver cannot implement the MB class driver, it must at least implement the [NDIS Selective Suspend](ndis-selective-suspend.md) feature.
 
- 
+ 
 
- 
+ 
 
 
 

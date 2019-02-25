@@ -1,17 +1,13 @@
 ---
 title: KMDF Version History
-author: windows-driver-content
 description: This topic lists versions of Kernel-Mode Driver Framework (KMDF), the corresponding versions of the Windows operating system, and the changes made in each release.
 ms.assetid: b920937c-2e5d-48cc-81b5-1462f5d03d75
 keywords:
 - kernel-mode drivers WDK KMDF , revision history
 - KMDF WDK , revision history
 - Kernel-Mode Driver Framework WDK , revision history
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/02/2018
+ms.localizationpriority: medium
 ---
 
 # KMDF Version History
@@ -21,97 +17,40 @@ This topic lists versions of Kernel-Mode Driver Framework (KMDF), the correspond
 
 The following table shows the release history of the KMDF library:
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">KMDF version</th>
-<th align="left">Release method</th>
-<th align="left">Included in this version of Windows</th>
-<th align="left">Drivers using it run on</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>1.21</p></td>
-<td align="left"><p>Windows 10, version 1703 WDK</p></td>
-<td align="left"><p>Windows 10, version 1703 (Creators Update, Redstone 2)</p></td>
-<td align="left"><p>Windows 10 version 1703</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1.19</p></td>
-<td align="left"><p>Windows 10, version 1607 WDK</p></td>
-<td align="left"><p>Windows 10, version 1607 (Anniversary Update, Redstone 1)</p></td>
-<td align="left"><p>Windows 10 version 1607, Windows Server 2016 and later</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>1.17</p></td>
-<td align="left"><p>Windows 10, version 1511 WDK</p></td>
-<td align="left"><p>Windows 10, version 1511 (November Update, Threshold 2)</p></td>
-<td align="left"><p>Windows 10 version 1511, Windows Server 2016 and later</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1.15</p></td>
-<td align="left"><p>Windows 10 WDK</p></td>
-<td align="left"><p>Windows 10, version 1507 (Threshold 1)</p></td>
-<td align="left"><p>Windows 10, version 1507, Windows Server 2016 and later</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>1.13</p></td>
-<td align="left"><p>Windows 8.1 WDK</p></td>
-<td align="left"><p>Windows 8.1</p></td>
-<td align="left"><p>Windows 8.1 and later</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1.11</p></td>
-<td align="left"><p>Windows 8 WDK</p></td>
-<td align="left"><p>Windows 8</p></td>
-<td align="left"><p>Windows Vista and later</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>1.9</p></td>
-<td align="left"><p>Windows 7 WDK</p></td>
-<td align="left"><p>Windows 7</p></td>
-<td align="left"><p>Windows XP and later</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1.7</p></td>
-<td align="left"><p>Windows Server 2008 WDK</p></td>
-<td align="left"><p>Windows Vista with Service Pack 1 (SP1), Windows Server 2008</p></td>
-<td align="left"><p>Windows 2000 and later</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>1.5</p></td>
-<td align="left"><p>Windows Vista WDK</p></td>
-<td align="left"><p>Windows Vista</p></td>
-<td align="left"><p>Windows 2000 and later</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1.1</p></td>
-<td align="left"><p>Download only</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><p>Windows 2000 and later</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>1.0</p></td>
-<td align="left"><p>Download only</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><p>Windows XP and later</p></td>
-</tr>
-</tbody>
-</table>
+|KMDF version|Release method|Included in this version of Windows|Drivers using it run on|
+|--- |--- |--- |--- |
+|1.27|Windows 10, version 1809 WDK|Windows 10, version 1809 (October 2018 Update, Redstone 5)|Windows 10, version 1809 and later|
+|1.25|Windows 10, version 1803 WDK|Windows 10, version 1803 (April 2018 Update, Redstone 4)|Windows 10, version 1803 and later|
+|1.23|Windows 10, version 1709 WDK|Windows 10, version 1709 (Fall Creators Update, Redstone 3)|Windows 10, version 1709 and later|
+|1.21|Windows 10, version 1703 WDK|Windows 10, version 1703 (Creators Update, Redstone 2)|Windows 10, version 1703 and later|
+|1.19|Windows 10, version 1607 WDK|Windows 10, version 1607 (Anniversary Update, Redstone 1)|Windows 10 version 1607, Windows Server 2016 and later|
+|1.17|Windows 10, version 1511 WDK|Windows 10, version 1511 (November Update, Threshold 2)|Windows 10 version 1511, Windows Server 2016 and later|
+|1.15|Windows 10 WDK|Windows 10, version 1507 (Threshold 1)|Windows 10, version 1507, Windows Server 2016 and later|
+|1.13|Windows 8.1 WDK|Windows 8.1|Windows 8.1 and later|
+|1.11|Windows 8 WDK|Windows 8|Windows Vista and later|
+|1.9|Windows 7 WDK|Windows 7|Windows XP and later|
+|1.7|Windows Server 2008 WDK|Windows Vista with Service Pack 1 (SP1), Windows Server 2008|Windows 2000 and later|
+|1.5|Windows Vista WDK|Windows Vista|Windows 2000 and later|
+|1.1|Download only|None|Windows 2000 and later|
+|1.0|Download only|None|Windows XP and later|
 
-
-You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2015 to build drivers that run on Windows 7 and later.
+You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2017 to build drivers that run on Windows 7 and later.
 
 For a complete list of callbacks and methods, and which frameworks and versions they apply to, see [Summary of WDF Callbacks and Methods](https://msdn.microsoft.com/library/windows/hardware/dn265591).
 
 For information about the new features for KMDF drivers in Windows 10, see [What's New for WDF Drivers](index.md).
+
+## KMDF Version 1.27
+
+Unchanged from version 1.25.
+
+## KMDF Version 1.25
+
+* [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md)
+
+## KMDF Version 1.23
+
+* Companion functionality added for internal use only.  For the new DDIs, see [Summary of WDF Callbacks and Methods](https://msdn.microsoft.com/library/windows/hardware/dn265591).
 
 ## KMDF Version 1.21
 
@@ -122,7 +61,7 @@ For information about the new features for KMDF drivers in Windows 10, see [Wha
 
 ## KMDF Version 1.19
 
-* Added [**WdfDmaTransactionSetSingleTransferRequirement**](https://msdn.microsoft.com/en-us/library/windows/hardware/988c7e70-3b2a-4a0f-91cf-dfab3ea07f05)
+* Added [**WdfDmaTransactionSetSingleTransferRequirement**](https://msdn.microsoft.com/library/windows/hardware/988c7e70-3b2a-4a0f-91cf-dfab3ea07f05)
 * Added **WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER** flag in [**WDF_DMA_ENABLER_CONFIG_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/hh439491)
 * Added **STATUS_WDF_TOO_MANY_TRANSFERS** return value for [**WdfDmaTransactionInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff547099) and [**WdfDmaTransactionDmaCompleted**](https://msdn.microsoft.com/library/windows/hardware/ff547039)
 * Added output messages for single transfer output to [**!wdfkd.wdfdmatransaction**](https://msdn.microsoft.com/library/windows/hardware/ff565721) and [**!wdfkd.wdfdmaenabler**](https://msdn.microsoft.com/library/windows/hardware/ff565717)
@@ -201,7 +140,7 @@ Version 1.11 adds the following functionality:
 
 -   Added **DbgWaitForSignalTimeoutInSec** to [Registry Values for Debugging Framework-based Drivers](registry-values-for-debugging-kmdf-drivers.md).
 
--   Added [InstallWdf](http://go.microsoft.com/fwlink/p/?linkid=256122), [MultiComp](http://go.microsoft.com/fwlink/p/?linkid=256158), and [SingleComp](http://go.microsoft.com/fwlink/p/?linkid=256158) samples.
+-   Added [InstallWdf](https://go.microsoft.com/fwlink/p/?linkid=256122), [MultiComp](https://go.microsoft.com/fwlink/p/?linkid=256158), and [SingleComp](https://go.microsoft.com/fwlink/p/?linkid=256158) samples.
 
 ## KMDF Version 1.9
 
@@ -262,9 +201,9 @@ Version 1.9 adds the following functionality:
 
 Initial release.
 
- 
+ 
 
- 
+ 
 
 
 

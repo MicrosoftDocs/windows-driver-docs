@@ -1,12 +1,8 @@
 ---
 Description: Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver.
 title: USB Type-C Connector System Software Interface (UCSI) driver
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Type-C Connector System Software Interface (UCSI) driver
@@ -18,7 +14,7 @@ ms.technology: windows-devices
 
 **Last Updated**
 
--   December 2016
+-   October 2018
 
 **Windows version**
 
@@ -27,16 +23,16 @@ ms.technology: windows-devices
 
 **Official specifications**
 
--   [Intel BIOS Implementation of UCSI](http://go.microsoft.com/fwlink/p/?LinkId=760658)
--   [USB Type-C Connector System Software Interface Specification](http://go.microsoft.com/fwlink/p/?LinkId=703713)
+-   [Intel BIOS Implementation of UCSI](https://go.microsoft.com/fwlink/p/?LinkId=760658)
+-   [USB Type-C Connector System Software Interface Specification](https://go.microsoft.com/fwlink/p/?LinkId=703713)
 -   [Hardware design: USB Type-C components for systems with embedded controllers](hardware-design-of-a-usb-type-c-system.md#emb)
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
-Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver. If your design includes an embedded controller, implement UCSI in your system's BIOS/EC and load the in-box UCSI driver (UcmUcsi.sys). Otherwise, you need to [write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md).
+Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver for ACPI transport. If your design includes an embedded controller with ACPI transport, implement UCSI in your system's BIOS/EC and load the in-box UCSI driver (UcmUcsiCx.sys and UcmUcsiAcpiClient.sys).
 
-## <a href="" id="drivers"></a>Drivers for supporting USB Type-C components for systems with embedded controllers
+If your UCSI-compliant hardware uses a transport other than ACPI, you need to [write a UCSI client driver](write-a-ucsi-driver.md).
 
+## Drivers for supporting USB Type-C components for systems with embedded controllers
 
 Here is an example of a system with an embedded controller.
 
@@ -58,11 +54,11 @@ In the preceding image,
 
     **Note**  Not [all USB devices classes](supported-usb-classes.md) are supported on Windows 10 Mobile.
 
-     
+     
 
 -   **USB connector manager**
 
-    Microsoft provides a UCSI in-box driver with Windows (UcmUcsi.sys) that implements the features defined by the UCSI specification available [here](http://go.microsoft.com/fwlink/p/?LinkId=703713). The specification describes the capabilities of UCSI and explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
+    Microsoft provides a UCSI in-box driver with Windows (UcmUcsiCx.sys) that implements the features defined by the UCSI specification available [here](https://go.microsoft.com/fwlink/p/?LinkId=703713). The specification describes the capabilities of UCSI and explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
 
     This driver is intended for systems with embedded controllers. This driver is a client to the Microsoft-provided USB connector manager class extension driver (Ucmcx.sys). The driver handles tasks such as initiating a request to the firmware to change the data or power roles and getting information needed to provide troubleshooting messages to the user.
 
@@ -83,7 +79,8 @@ In addition to the commands marked as "Required", Windows requires these command
     -   Supported Provider Capabilities Change
     -   Negotiated Power Level Change
 
-For information about the tasks required to implement UCSI in the BIOS, see [Intel BIOS Implementation of UCSI](http://go.microsoft.com/fwlink/p/?LinkId=760658).
+For information about the tasks required to implement UCSI in the BIOS, see [Intel BIOS Implementation of UCSI](https://go.microsoft.com/fwlink/p/?LinkId=760658).
+
 ## Example flow for UCSI
 
 
@@ -94,28 +91,25 @@ The examples given in this section describe interaction between the USB Type-C h
 1.  USB Type-C hardware/firmware detects a device-attach event and the Windows 10 system DRP system initially becomes the UFP role.
     1.  The firmware sends a notification indicating a change in the connector.
     2.  The UCSI driver sends a ​ GET\_CONNECTOR\_STATUS request.
-    3.  The firmware responds that its Connect Status = 1​ and Connector Partner Type = DFP.
-
-    ​
+    3.  The firmware responds that its Connect Status = 1​ and Connector Partner Type = DFP. ​
 2.  The drivers in the USB function stack responds to the enumeration.
 3.  The USB connector manager class extension recognizes that the USB function stack has loaded and hence the system is in the wrong state. It tells the UCSI driver to send Set USB Operation Role and Set Power Direction Role requests to the firmware.
 4.  USB Type-C hardware/firmware initiates the role-swap operation with the DFP​.
 
-### <a href="" id="detecting-a-charger-mismatch-error--condition"></a>Detecting a charger mismatch error​ condition
+### <a name="detecting-a-charger-mismatch-error--condition"></a>Detecting a charger mismatch error​ condition
 
 1.  USB Type-C hardware/firmware detects that a charger is connected and negotiates a default power contract. It also observes that the charger is not providing sufficient power to the system.
 2.  USB Type-C hardware/firmware sets the slow charging bit.
     1.  The firmware sends a notification indicating a change in the connector.
     2.  The UCSI driver sends a ​ GET\_CONNECTOR\_STATUS request.
     3.  The firmware responds with Connect Status = 1​, Connector Partner Type=DFP, and Battery Charging Status = Slow/Trickle.
-
-    ​
+    
 3.  The USB connector manager class extension sends notification to the UI to display the charger mismatch troubleshoot message.
 
 ## How to test UCSI
 
 
-There are a number of ways to test your UCSI implementation. To test individual commands in your UCSI BIOS/EC implementation, use UCSIControl.exe, which is provided in the[MUTT Software Pack](mutt-software-package.md). To test your complete UCSI implementation, use both the UCSI tests that can be found in the Windows Hardware Lab Kit (HLK) and the steps in the [Type-C Manual Interop Procedures](https://msdn.microsoft.com/library/windows/hardware/mt422725).
+There are a number of ways to test your UCSI implementation. To test individual commands in your UCSI BIOS/EC implementation, use UCSIControl.exe, which is provided in the [MUTT Software Pack](mutt-software-package.md). To test your complete UCSI implementation, use both the UCSI tests that can be found in the Windows Hardware Lab Kit (HLK) and the steps in the [Type-C Manual Interop Procedures](https://msdn.microsoft.com/library/windows/hardware/mt422725).
 
 **UCSIControl.exe**
 
@@ -207,12 +201,10 @@ Here are the common commands:
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20Type-C%20Connector%20System%20Software%20Interface%20%28UCSI%29%20driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

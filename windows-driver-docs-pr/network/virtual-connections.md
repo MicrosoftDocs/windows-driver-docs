@@ -7,17 +7,14 @@ keywords:
 - CoNDIS WDK networking , virtual connections
 - virtual connections WDK CoNDIS
 - virtual connections WDK CoNDIS , about virtual connections
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Virtual Connections
 
 
-## <a href="" id="ddk-virtual-connections-ng"></a>
+
 
 
 On a local computer, a *virtual connection (VC)* is an endpoint (or association) that can host a single call between a client, call manager or MCM driver, and a miniport driver. On the network, a VC refers to a connection between two communicating endpoints, such as two connection-oriented clients.
@@ -40,9 +37,9 @@ When tearing down a call, a call manager or MCM driver [deactivates the VC](deac
 
 After a call is torn down, the creator of the VC (a connection-oriented client, call manager, or MCM driver) can either initiate the [deletion of the VC](deleting-a-vc.md) or use the VC for another call.
 
- 
+ 
 
- 
+ 
 
 
 

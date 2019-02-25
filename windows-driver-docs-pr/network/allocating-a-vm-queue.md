@@ -2,17 +2,14 @@
 title: Allocating a VM Queue
 description: Allocating a VM Queue
 ms.assetid: 2645a6e5-3824-469c-84d5-8e49fa01f494
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Allocating a VM Queue
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 To allocate a queue with an initial set of configuration parameters, an overlying driver issues an [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](https://msdn.microsoft.com/library/windows/hardware/ff569784) method OID request. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure initially contains a pointer to an [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567211) structure. After a successful return from the OID method request, the **InformationBuffer** member of the **NDIS\_OID\_REQUEST** structure contains a pointer to an **NDIS\_RECEIVE\_QUEUE\_PARAMETERS** structure that has a new queue identifier and an MSI-X table entry.
@@ -31,11 +28,11 @@ The overlying driver initializes the [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](http
 
     **Note**  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported.
 
-     
+     
 
 **Note**  The overlying driver can set the NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_PER\_QUEUE\_RECEIVE\_INDICATION and NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_LOOKAHEAD\_SPLIT\_REQUIRED flags in the **Flags** member of the [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567211) structure. The other flags are not used for queue allocation.
 
- 
+ 
 
 When NDIS receives an OID request to allocate a receive queue, it verifies the queue parameters. After NDIS allocates the necessary resources and the queue identifier, it submits the OID request to the underlying miniport driver. The queue identifier is unique to the associated network adapter.
 
@@ -47,13 +44,13 @@ The miniport driver must retain the queue identifiers for the allocated receive 
 
 **Note**  The default queue (queue identifier zero) is always allocated and cannot be freed.
 
- 
+ 
 
 The overlying driver must use the queue identifier that NDIS provides in subsequent OID requests, for example, to modify the queue parameters or free the queue. The queue identifier is also included in the OOB data on all [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures that are associated with the queue. Drivers use the [**NET\_BUFFER\_LIST\_RECEIVE\_QUEUE\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff568407) macro to retrieve the queue identifier in a NET\_BUFFER\_LIST structure.
 
 **Note**  A protocol driver can set VMQ filters at any time after it successfully allocates a queue and before the queue is deleted.
 
- 
+ 
 
 The protocol driver issues an [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](https://msdn.microsoft.com/library/windows/hardware/ff569793) method OID request to complete the queue allocation. The miniport driver can allocate shared memory and other resources when the allocation is complete. For more information about allocating shared memory resources, see [Shared Memory Resource Allocation](shared-memory-resource-allocation.md).
 
@@ -65,9 +62,9 @@ The miniport driver must not retain any packets in a receive queue if there are 
 
 Overlying drivers use the [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](https://msdn.microsoft.com/library/windows/hardware/ff569789) OID to free queues that they allocate. For more information about freeing queues, see [Freeing a VM Queue](freeing-a-vm-queue.md).
 
- 
+ 
 
- 
+ 
 
 
 

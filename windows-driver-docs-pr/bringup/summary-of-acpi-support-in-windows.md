@@ -1,13 +1,9 @@
 ---
 title: Summary of ACPI support in Windows
-author: windows-driver-content
 description: This topic summarizes the subset of ACPI 5.0 features that are required to support Windows on SoC-based platforms.
 ms.assetid: BECFB30B-541B-420E-85F3-773292066A90
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Summary of ACPI support in Windows
@@ -23,7 +19,7 @@ This topic summarizes the subset of Advanced Configuration and Power Interface (
 |                             | 5.2.12                                                                               | Multiple APIC Description Table (MADT)                             |
 |                             | 5.2.24                                                                               | Generic Timer Description Table (GTDT)                             |
 |                             | 5.2.6 (Specification is [here](https://acpica.org/related-documents).)               | Core System Resources Table (CSRT)                                 |
-|                             | 5.2.6 (Specification is [here]( http://go.microsoft.com/fwlink/p/?LinkId=691234).) | Debug Port Table 2 (DBG2)                                          |
+|                             | 5.2.6 (Specification is [here]( https://go.microsoft.com/fwlink/p/?LinkId=691234).) | Debug Port Table 2 (DBG2)                                          |
 |                             | 5.2.11.1                                                                             | Differentiated System Description Table (DSDT)                     |
 |                             | 5.2.11.2                                                                             | Secondary System Description Table (SSDT)                          |
 | Device management           | 6.1                                                                                  | Device Identification Objects                                      |
@@ -52,13 +48,12 @@ This topic summarizes the subset of Advanced Configuration and Power Interface (
 |                             | 3.2.1, 4.8.2.2.1.2, 4.8.2.2.1.3                                                      | Buttons                                                            |
 |                             |                                                                                      | Dock and convertible PC sensors                                    |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

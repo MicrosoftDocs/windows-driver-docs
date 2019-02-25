@@ -9,11 +9,8 @@ keywords:
 - signatures WDK , PnP device installations
 - PnP WDK driver signing
 - Plug and Play WDK driver signing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PnP Device Installation Signing Requirements
@@ -23,7 +20,7 @@ The driver signing requirements for Plug and Play (PnP) device installation depe
 
 ### <a href="" id="pnp-signing-requirements-for-public-release-of-a-driver"></a> PnP Signing Requirements for Public Release of a Driver
 
-The [Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=227016) has [test categories](http://go.microsoft.com/fwlink/p/?linkid=189178) for a variety of device types. If a test category for the device type is included in this list, you should obtain a [WHQL release signature](whql-release-signature.md).
+The [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) has [test categories](https://go.microsoft.com/fwlink/p/?linkid=189178) for a variety of device types. If a test category for the device type is included in this list, you should obtain a [WHQL release signature](whql-release-signature.md).
 
 A valid WHQL release signature verifies that the driver complies with the requirements of the HCK, verifies the identity of the publisher, and verifies that the driver has not been altered.
 
@@ -37,9 +34,9 @@ For more information about release-signing, see [Signing Drivers for Public Rele
 
 In 64-bit versions of Windows Vista and later versions of Windows, a driver must have a [WHQL test signature](whql-test-signature-program.md) or must be signed by a [test certificate](test-certificates.md). For more information about test-signing drivers, see [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md).
 
- 
+ 
 
- 
+ 
 
 
 

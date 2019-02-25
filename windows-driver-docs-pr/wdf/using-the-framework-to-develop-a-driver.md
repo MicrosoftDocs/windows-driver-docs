@@ -1,6 +1,5 @@
 ---
 title: Using WDF to Develop a Driver
-author: windows-driver-content
 description: This topic provides a high-level overview of the framework objects you'll use to develop a Kernel-Mode Driver Framework (KMDF) driver.
 ms.assetid: 421b7eb8-11d3-4a37-8ae8-e2d3d216c9c7
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - KMDF WDK , development steps
 - Kernel-Mode Driver Framework WDK , development steps
 - framework-based drivers WDK KMDF , development steps
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using WDF to Develop a Driver
@@ -20,7 +16,7 @@ ms.technology: windows-devices
 
 This topic provides a high-level overview of the framework objects you'll use to develop a Kernel-Mode Driver Framework (KMDF) driver. Except where indicated, you'll use the same objects to develop a User-Mode Driver Framework (UMDF) driver starting in UMDF version 2.
 
-Windows Driver Frameworks (WDF) drivers consist of a [**DriverEntry routine**](https://msdn.microsoft.com/library/windows/hardware/ff540807) and a set of event callback functions that are defined by the [Windows Driver Framework objects](wdf-objects.md) that framework-based drivers use. The callback functions call object methods that the framework exports. The Windows Driver Kit (WDK) contains sample WDF drivers that demonstrate how to implement a driver's event callback functions. You can download these samples from the [Windows Dev Center - Hardware](http://go.microsoft.com/fwlink/p/?linkid=256387). For information about what samples are available, see [Sample KMDF Drivers](sample-kmdf-drivers.md) and [Sample UMDF Drivers](sample-umdf-drivers.md).
+Windows Driver Frameworks (WDF) drivers consist of a [**DriverEntry routine**](https://msdn.microsoft.com/library/windows/hardware/ff540807) and a set of event callback functions that are defined by the [Windows Driver Framework objects](wdf-objects.md) that framework-based drivers use. The callback functions call object methods that the framework exports. The Windows Driver Kit (WDK) contains sample WDF drivers that demonstrate how to implement a driver's event callback functions. You can download these samples from the [Windows Dev Center - Hardware](https://go.microsoft.com/fwlink/p/?linkid=256387). For information about what samples are available, see [Sample KMDF Drivers](sample-kmdf-drivers.md) and [Sample UMDF Drivers](sample-umdf-drivers.md).
 
 When you create a WDF driver, you will typically do the following:
 
@@ -72,9 +68,9 @@ When you create a WDF driver, you will typically do the following:
 
     The framework provides additional objects that your driver can use. For more information about these objects, see [WDF Support Objects](wdf-support-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

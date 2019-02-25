@@ -2,11 +2,8 @@
 title: Rules for coalescing TCP/IP segments
 description: This section defines the rules for coalescing TCP/IP segments in miniport drivers
 ms.assetid: EC3C72EB-20A6-4D48-8E8C-F70EE4483193
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Rules for Coalescing TCP/IP Segments
@@ -80,7 +77,7 @@ The following terms are used in the flowcharts:
 </tr>
 <tr class="even">
 <td align="left"><p><strong>SEG.Tsval</strong></p></td>
-<td align="left"><p>The <strong>Timestamp</strong> value in the currently received segment. The format for this value is defined in [RFC 1323](http://www.ietf.org/rfc/rfc1323.txt).</p></td>
+<td align="left"><p>The <strong>Timestamp</strong> value in the currently received segment. The format for this value is defined in <a href="http://www.ietf.org/rfc/rfc1323.txt" data-raw-source="[RFC 1323](http://www.ietf.org/rfc/rfc1323.txt)">RFC 1323</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>H.Tsval</strong></p></td>
@@ -97,7 +94,7 @@ The following terms are used in the flowcharts:
 </tbody>
 </table>
 
- 
+ 
 
 ![flowchart describing the rules for coalescing segments and updating tcp headers](images/rsc-rules1.png)
 
@@ -110,7 +107,7 @@ The flowcharts show that the miniport driver may coalesce segments with differen
     -   **H.ACK** == **SEG.ACK**.
     -   The duplicate-ACK count in the coalesced segment that is being tracked is zero. In other words, **H.DupAckCount** == 0.
 
-    In other words, any pure ACK that is not a duplicate ACK or a window update triggers an exception and must not be coalesced. All such pure ACKs must be indicated as individual segments.
+    In other words, any pure ACK that is not a duplicate ACK or a window update triggers an exception and must not be coalesced. All such pure ACKs must be indicated as individual segments. This rule ensures that RSC does not affect the behavior or performance of the Windows TCP congestion control algorithms.
 
 -   An incoming data segment (**SEG.ACK** == **H.ACK**) or an incoming piggy-backed ACK (**SEG.ACK** &gt; **H.ACK**) may be coalesced into the currently tracked SCU if both of the following conditions are met:
 
@@ -165,7 +162,7 @@ The TCP timestamp option is the only option that may be legally coalesced. Coale
 
 **Note**  The check **SEG.TSval** &gt;= **H.TSval** must be performed using modulo-232 arithmetic similar to that used for TCP sequence numbers. See [RFC 793](http://www.ietf.org/rfc/rfc793.txt), section 3.3.
 
- 
+ 
 
 When indicating a coalesced segment, the following out-of-band information must be indicated as follows by setting the **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure that describes the coalesced segment:
 
@@ -194,9 +191,9 @@ Finalizing an SCU involves:
 
 A network card may report both RSC and IPsec task offload capabilities. (See [Determining the RSC Capabilities of a Network Adapter](determining-the-rsc-capabilities-of-a-network-adapter.md).) However, if it supports IPsec task offload, it must not attempt to coalesce segments that are protected by IPsec.
 
- 
+ 
 
- 
+ 
 
 
 

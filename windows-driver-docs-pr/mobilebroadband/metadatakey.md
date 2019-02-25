@@ -2,15 +2,13 @@
 title: MetadataKey
 description: MetadataKey
 ms.assetid: 1915db47-98bb-40f5-be3b-75e9af80f506
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MetadataKey
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The MetadataKey element specifies the attributes of the service metadata package. These include the following:
 
@@ -48,29 +46,29 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[HardwareIDList](hardwareidlist.md)</p></td>
-<td><p>The [HardwareIDList](hardwareidlist.md) element specifies one or more hardware identification strings for the device.</p></td>
+<td><p><a href="hardwareidlist.md" data-raw-source="[HardwareIDList](hardwareidlist.md)">HardwareIDList</a></p></td>
+<td><p>The <a href="hardwareidlist.md" data-raw-source="[HardwareIDList](hardwareidlist.md)">HardwareIDList</a> element specifies one or more hardware identification strings for the device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[LastModifiedDate](lastmodifieddate.md)</p></td>
-<td><p>The [LastModifiedDate](lastmodifieddate.md) element specifies the time stamp on which the service metadata package was last changed.</p></td>
+<td><p><a href="lastmodifieddate.md" data-raw-source="[LastModifiedDate](lastmodifieddate.md)">LastModifiedDate</a></p></td>
+<td><p>The <a href="lastmodifieddate.md" data-raw-source="[LastModifiedDate](lastmodifieddate.md)">LastModifiedDate</a> element specifies the time stamp on which the service metadata package was last changed.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Locale](locale.md)</p></td>
-<td><p>The [Locale](locale.md) element specifies the localized version of the service metadata package.</p></td>
+<td><p><a href="locale.md" data-raw-source="[Locale](locale.md)">Locale</a></p></td>
+<td><p>The <a href="locale.md" data-raw-source="[Locale](locale.md)">Locale</a> element specifies the localized version of the service metadata package.</p></td>
 </tr>
 <tr class="even">
-<td><p>[ModelIDList](modelidlist.md)</p></td>
-<td><p>The [ModelIDList](modelidlist.md) element specifies the GUID of each device type or model that is specified within the service metadata package.</p></td>
+<td><p><a href="modelidlist.md" data-raw-source="[ModelIDList](modelidlist.md)">ModelIDList</a></p></td>
+<td><p>The <a href="modelidlist.md" data-raw-source="[ModelIDList](modelidlist.md)">ModelIDList</a> element specifies the GUID of each device type or model that is specified within the service metadata package.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[MultipleLocale](multiplelocale.md)</p></td>
-<td><p>The [MultipleLocale](multiplelocale.md) element specifies whether the service metadata package supports multiple locales.</p></td>
+<td><p><a href="multiplelocale.md" data-raw-source="[MultipleLocale](multiplelocale.md)">MultipleLocale</a></p></td>
+<td><p>The <a href="multiplelocale.md" data-raw-source="[MultipleLocale](multiplelocale.md)">MultipleLocale</a> element specifies whether the service metadata package supports multiple locales.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -88,13 +86,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[PackageInfo](packageinfo.md)</p></td>
-<td><p>The [PackageInfo](packageinfo.md) element is the parent element of the [PackageInfo XML schema](packageinfo-xml-schema.md). The child elements of the PackageInfo element specify the attributes of the device metadata package.</p></td>
+<td><p><a href="packageinfo.md" data-raw-source="[PackageInfo](packageinfo.md)">PackageInfo</a></p></td>
+<td><p>The <a href="packageinfo.md" data-raw-source="[PackageInfo](packageinfo.md)">PackageInfo</a> element is the parent element of the <a href="packageinfo-xml-schema.md" data-raw-source="[PackageInfo XML schema](packageinfo-xml-schema.md)">PackageInfo XML schema</a>. The child elements of the PackageInfo element specify the attributes of the device metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -152,11 +150,10 @@ The MetadataKey element must contain:
 
 The MetadataKey element is required.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20MetadataKey%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

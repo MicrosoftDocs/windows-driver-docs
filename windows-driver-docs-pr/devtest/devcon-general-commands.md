@@ -10,11 +10,8 @@ api_name:
 - Device Console (DevCon.exe) Commands
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Console (DevCon.exe) Commands
@@ -31,17 +28,17 @@ devcon [/m:\\computer] [/r] command [arguments]
 
 **Note**  To change the status or configuration of a device, you must be a member of the Administrators group on the computer.
 
- 
+ 
 
 The parameters in a DevCon command must appear in the order shown in the syntax. If parameters are not in order, DevCon ignores them, but does not display a syntax error. Instead, it processes the command with the remaining parameters.
 
 For help on command syntax, you can use the following commands in a Command Prompt window: **DevCon help** or **DevCon help** *command*.
 
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\***computer*
+<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
 Runs the command on the specified remote computer. The backslashes are required.
 **Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and later versions of Windows, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access feature is unavailable.
 
- 
+ 
 
 <span id="________r______"></span><span id="________R______"></span> **/r**
 Conditional reboot. Reboots the system after completing an operation only if a reboot is required to make a change effective.
@@ -125,15 +122,15 @@ DevCon identifies devices by their computer name, hardware ID, compatible ID, de
 
 If a command includes more than one ID or ID pattern (an ID that contains wildcard characters (\*)), DevCon returns devices whose IDs match any of the IDs or ID patterns. That is, it assumes an "or" between the ID arguments.
 
-For example, **devcon hwids \*pnp\* \*mou\*** returns devices that include either "pnp" or "mou" in their hardware ID or compatible ID.
+For example, **devcon hwids \*pnp\* \*mou\\*** returns devices that include either "pnp" or "mou" in their hardware ID or compatible ID.
 
 If a command includes a device setup class, DevCon first limits the search to the setup class and then returns devices in the class that match any of the ID patterns, that is, it assumes an "and" between the class and the IDs and an "or" between each of the ID arguments.
 
-For example, **devcon hwids =media \*pnp\* \*microsoft\*** returns devices in the media device setup class that include either "pnp" or "microsoft" in their hardware ID or compatible ID.
+For example, **devcon hwids =media \*pnp\* \*microsoft\\*** returns devices in the media device setup class that include either "pnp" or "microsoft" in their hardware ID or compatible ID.
 
 **Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and later versions of Windows, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access feature is unavailable.
 
- 
+ 
 
 ### <span id="ddk_rebooting_and_restarting_tools"></span><span id="DDK_REBOOTING_AND_RESTARTING_TOOLS"></span><a name="ddk-rebooting-and-restarting-tools"></a>Rebooting and restarting
 
@@ -147,7 +144,7 @@ DevCon provides two methods to reboot the operating system and one method to res
 
 ### <span id="ddk_devcon_return_codes_tools"></span><span id="DDK_DEVCON_RETURN_CODES_TOOLS"></span>DevCon return codes
 
-DevCon returns an integer that can be used in programs and scripts to determine the success of a DevCon command (for example, **return = devcon hwids \***).
+DevCon returns an integer that can be used in programs and scripts to determine the success of a DevCon command (for example, **return = devcon hwids \\***).
 
 The following table lists and describes the return codes.
 
@@ -182,13 +179,12 @@ The following table lists and describes the return codes.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Device%20Console%20%28DevCon.exe%29%20Commands%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

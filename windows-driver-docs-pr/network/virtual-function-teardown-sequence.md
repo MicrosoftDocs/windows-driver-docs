@@ -2,11 +2,8 @@
 title: Virtual Function Teardown Sequence
 description: Virtual Function Teardown Sequence
 ms.assetid: 8C59A4F7-FC5D-4680-8CDD-751422588601
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Virtual Function Teardown Sequence
@@ -42,9 +39,9 @@ NDIS, the virtualization stack, and the PF miniport driver follow these steps du
 
 4.  After the VF has been reset, the virtualization stack requests a deallocation of the VF resources by issuing an OID set request of [OID\_NIC\_SWITCH\_FREE\_VF](https://msdn.microsoft.com/library/windows/hardware/hh451822) to the PF miniport driver. This causes the miniport driver to free the hardware resources associated with the VF.
 
- 
+ 
 
- 
+ 
 
 
 

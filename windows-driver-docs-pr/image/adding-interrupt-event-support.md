@@ -1,19 +1,15 @@
 ---
 title: Adding Interrupt Event Support
-author: windows-driver-content
 description: Adding Interrupt Event Support
 ms.assetid: 74fbaa7c-f058-4b17-b278-3dea0faf4431
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding Interrupt Event Support
 
 
-## <a href="" id="ddk-adding-interrupt-event-support-si"></a>
+
 
 
 To properly set up your WIA driver to report interrupt events, do the following:
@@ -32,7 +28,7 @@ The following two examples show configuring your device for interrupts with impl
 
 **Note**   It is important to use overlapped I/O calls with all activities involving the kernel mode drivers. This allows for proper time-outs and cancellation of device requests.
 
- 
+ 
 
 ### <a href="" id="explanation-of-the-iwiaminidrv-drvgetcapabilities-implementation"></a>Explanation of the IWiaMiniDrv::drvGetCapabilities Implementation
 
@@ -42,11 +38,11 @@ The WIA driver should allocate memory (to be used by the WIA driver and freed by
 
 **Note**   The WIA service will not free this memory. It is important that the WIA driver manages the allocated memory.
 
- 
+ 
 
 The following example shows an implementation of the [**IWiaMiniDrv::drvGetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff543977) method.
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvGetCapabilities(
   BYTE            *pWiasContext,
   LONG            lFlags,
@@ -178,7 +174,7 @@ The [**IStiUSD::SetNotificationHandle**](https://msdn.microsoft.com/library/wind
 
 The following example shows an implementation of the **IStiUSD::SetNotificationHandle** method.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::SetNotificationHandle(HANDLE hEvent)
 {
   HRESULT hr = S_OK;
@@ -280,7 +276,7 @@ The WIA driver is responsible for filling out the [**STINOTIFY**](https://msdn.m
 
 The following example shows an implementation of the **IStiUSD::GetNotificationData** method.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::GetNotificationData( LPSTINOTIFY pBuffer )
 {
   //
@@ -331,7 +327,7 @@ Interrupt events can be stopped at any time by passing **NULL** as the event han
 
 **Note**   The [**IWiaMiniDrv::drvNotifyPnpEvent**](https://msdn.microsoft.com/library/windows/hardware/ff544998) method can receive power management events that affect the event waiting state.
 
- 
+ 
 
 The WIA service calls the **IWiaMiniDrv::drvNotifyPnpEvent** method and sends a WIA\_EVENT\_POWER\_SUSPEND event when the system is about to be placed in a sleep state. If this call occurs, the device might already be out of its wait state. Sleep states automatically trigger kernel-mode drivers to exit any waiting state to allow the system to enter this powered-down state. When the system resumes from its sleep state, the WIA service sends the WIA\_EVENT\_POWER\_RESUME event. At this time the WIA minidriver must reestablish the interrupt event wait state. For more information about sleep states, see [System Power States](https://msdn.microsoft.com/library/windows/hardware/ff564571) and [Device Power States](https://msdn.microsoft.com/library/windows/hardware/ff543162).
 
@@ -353,7 +349,7 @@ The WIA driver should restore any event interrupt wait states after returning fr
 
 The following example shows an implementation of the [**IWiaMiniDrv::drvNotifyPnpEvent**](https://msdn.microsoft.com/library/windows/hardware/ff544998) method.
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvNotifyPnpEvent(
   const GUID *pEventGUID,
   BSTR       bstrDeviceID,
@@ -399,12 +395,10 @@ HRESULT _stdcall CWIADevice::drvNotifyPnpEvent(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Adding%20Interrupt%20Event%20Support%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

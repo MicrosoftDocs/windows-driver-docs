@@ -4,17 +4,14 @@ description: Control Channel Characteristics
 ms.assetid: b289f21c-a53e-424c-be31-b7a869e335c4
 keywords:
 - Control Channel Characteristics
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Control Channel Characteristics
 
 
-## <a href="" id="ddk-control-channel-characteristics-ng"></a>
+
 
 
 The Control channel for the device is its USB Control endpoint. A control message from the host to the device is sent as a SEND\_ENCAPSULATED\_COMMAND transfer. This transfer is defined in the following table.
@@ -50,7 +47,7 @@ The Control channel for the device is its USB Control endpoint. A control messag
 </tbody>
 </table>
 
- 
+ 
 
 The host does not continuously poll the USB Control endpoint for input control messages. Upon placing a control message on its Control endpoint, the device must return a notification on the Communication Class interface's Interrupt IN endpoint, which is polled by the host whenever the device can return control messages. The transfer from the device's interrupt IN endpoint to the host is a standard USB Interrupt IN transfer. The only defined device notification is the RESPONSE\_AVAILABLE notification, defined in the following table.
 
@@ -85,7 +82,7 @@ The host does not continuously poll the USB Control endpoint for input control m
 </tbody>
 </table>
 
- 
+ 
 
 Upon receiving the RESPONSE\_AVAILABLE notification, the host reads the control message from the Control endpoint using a GET\_ENCAPSULATED\_RESPONSE transfer, defined in the following table.
 
@@ -120,13 +117,13 @@ Upon receiving the RESPONSE\_AVAILABLE notification, the host reads the control 
 </tbody>
 </table>
 
- 
+ 
 
 If for some reason the device receives a GET\_ENCAPSULATED\_RESPONSE and is unable to respond with a valid data on the Control endpoint, then it should return a one-byte packet set to 0x00, rather than stalling the Control endpoint.
 
- 
+ 
 
- 
+ 
 
 
 

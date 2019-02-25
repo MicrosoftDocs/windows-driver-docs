@@ -1,16 +1,12 @@
 ---
 title: Windows Storage Driver Architecture
-author: windows-driver-content
 description: Windows Storage Driver Architecture
 ms.assetid: 16636899-fab9-46e8-ab9d-b8d86519b08a
 keywords:
 - storage drivers WDK , architecture
 - storage drivers WDK , types
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows Storage Driver Architecture
@@ -56,11 +52,10 @@ The system-supplied SCSI port driver can also act as an interface between a stor
 
 For more detailed information about SRBs, see the Kernel-Mode Driver Architecture Reference. For device-type-specific information about CDBs, consult appropriate command sets in the INCITS SCSI-3 standards.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

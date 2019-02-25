@@ -7,11 +7,8 @@ keywords:
 - battery miniclass drivers WDK , notifications
 - notifications WDK battery
 - battery class drivers WDK , notifications
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interaction of Battery Status and Notification Routines
@@ -38,11 +35,10 @@ Independent of any notification requests, a miniclass driver must call **Battery
 
 Before reporting a critically low, discharging battery, the miniclass driver should attempt to solve the problem, as described previously in [Responding to Battery Status Queries](responding-to-battery-status-queries.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

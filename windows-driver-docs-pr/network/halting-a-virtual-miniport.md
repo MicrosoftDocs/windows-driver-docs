@@ -8,17 +8,14 @@ keywords:
 - NDIS intermediate drivers WDK , virtual miniports
 - intermediate drivers WDK networking , virtual miniports
 - stopping virtual miniports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Halting a Virtual Miniport
 
 
-## <a href="" id="ddk-halting-a-virtual-miniport-ng"></a>
+
 
 
 If an NDIS intermediate driver calls the [**NdisIMDeinitializeDeviceInstance**](https://msdn.microsoft.com/library/windows/hardware/ff562721) function, NDIS calls the [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function for the affected virtual miniport. An intermediate driver usually calls **NdisIMDeInitializeDeviceInstance** from its [*ProtocolUnbindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570278) function.
@@ -27,9 +24,9 @@ NDIS sets the *HaltAction* parameter to **NdisHaltDeviceInstanceDeInitialized** 
 
 The intermediate driver's [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function must release all driver-allocated resources that are associated with a virtual miniport.
 
- 
+ 
 
- 
+ 
 
 
 

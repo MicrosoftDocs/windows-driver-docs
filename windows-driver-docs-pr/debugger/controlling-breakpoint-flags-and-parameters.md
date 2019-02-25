@@ -3,11 +3,8 @@ title: Controlling Breakpoint Flags and Parameters
 description: Controlling Breakpoint Flags and Parameters
 ms.assetid: ed702f01-2a30-4ffb-a804-167cf3b19936
 keywords: ["breakpoints, flags and parameters", "DEBUG_BREAK_READ", "DEBUG_BREAK_WRITE", "DEBUG_BREAK_EXECUTE", "DEBUG_BREAK_IO"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Controlling Breakpoint Flags and Parameters
@@ -92,21 +89,21 @@ The following access types are available for processor breakpoints:
 <tbody>
 <tr class="odd">
 <td align="left"><p>DEBUG_BREAK_READ</p></td>
-<td align="left"><p>The breakpoint will be triggered when the CPU reads memory in the breakpoint's memory block.</p></td>
+<td align="left"><p>The breakpoint will be triggered when the CPU reads memory in the breakpoint&#39;s memory block.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DEBUG_BREAK_WRITE</p></td>
-<td align="left"><p>The breakpoint will be triggered when the CPU writes memory in the breakpoint's memory block.</p></td>
+<td align="left"><p>The breakpoint will be triggered when the CPU writes memory in the breakpoint&#39;s memory block.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p>
 DEBUG_BREAK_READ
 | DEBUG_BREAK_WRITE</td>
-<td align="left"><p>The breakpoint will be triggered when the CPU reads or writes memory in the breakpoint's memory block.</p></td>
+<td align="left"><p>The breakpoint will be triggered when the CPU reads or writes memory in the breakpoint&#39;s memory block.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DEBUG_BREAK_EXECUTE</p></td>
-<td align="left"><p>The breakpoint will be triggered when the CPU fetches the instruction in the breakpoint's memory block.</p></td>
+<td align="left"><p>The breakpoint will be triggered when the CPU fetches the instruction in the breakpoint&#39;s memory block.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DEBUG_BREAK_IO</p></td>
@@ -115,7 +112,7 @@ DEBUG_BREAK_READ
 </tbody>
 </table>
 
- 
+ 
 
 Not all access types and sizes are supported on all processors. The following access types and sizes are supported:
 
@@ -131,11 +128,10 @@ All access types except DEBUG\_BREAK\_IO are supported. The size must be a power
 <span id="Itanium_running_in_x86_mode"></span><span id="itanium_running_in_x86_mode"></span><span id="ITANIUM_RUNNING_IN_X86_MODE"></span>Itanium running in x86 mode  
 The is the same as for x86, except that DEBUG\_BREAK\_IO is not supported.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Controlling%20Breakpoint%20Flags%20and%20Parameters%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

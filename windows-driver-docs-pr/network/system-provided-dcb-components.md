@@ -2,11 +2,8 @@
 title: System-Provided DCB Components
 description: System-Provided DCB Components
 ms.assetid: 64C9ADEF-5512-41E4-AE7B-DFEF1B94FC5F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # System-Provided DCB Components
@@ -48,15 +45,15 @@ The QIM component also processes networking QoS policies from the policy store i
 
 **Note**  The policies that are created by the QIM component go into the active store and do not persist through a system restart.
 
- 
+ 
 
 **Note**  Starting with Windows Server 2012, the DCB and DCB WMI provider components are not installed by default. These components are installed and enabled through the installation of the Microsoft DCB server feature. This feature is installed by using the Add Roles and Features wizard of the Server Manager.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

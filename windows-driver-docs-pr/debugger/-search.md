@@ -3,17 +3,14 @@ title: search
 description: The search extension searches pages in physical memory for pointer-sized data that matches the specified criteria.
 ms.assetid: 5f9d4e50-c389-4309-8851-0f5069b1b66e
 keywords: ["search Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - search
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !search
@@ -23,7 +20,7 @@ The **!search** extension searches pages in physical memory for pointer-sized da
 
 Syntax
 
-```
+```dbgcmd
 !search [-s] [-p] Data [ Delta [ StartPFN [ EndPFN ]]] 
 !search -?
 ```
@@ -83,13 +80,13 @@ Because the debugger's search engine structures reside in memory on the target c
 
 Here are some examples. The following will search the memory page with PFN 0x237D for values between 0x80001230 and 0x80001238, inclusive:
 
-```
+```dbgcmd
 kd> !search 80001234 4 237d 237d 
 ```
 
 The following will search the memory pages ranging from PFN 0x2370 to 0x237F for values that are within one bit of 0x0F100F0F. The exact matches are indicated in bold; the others are off by one bit:
 
-```
+```dbgcmd
 kd> !search 0f100f0f 0 2370 237f
 Searching PFNs in range 00002370 - 0000237F for [0F100F0F - 0F100F0F]
 
@@ -109,11 +106,10 @@ The columns in the display are as follows: **Pfn** is the page frame number (PFN
 
 To calculate the physical address, shift the PFN left three hexadecimal digits (12 bits) and add the offset. For example, the last line in the table is virtual address 0x0237D000 + 0x428 = 0x02347D428.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!search%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

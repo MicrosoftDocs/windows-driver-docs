@@ -1,6 +1,5 @@
 ---
 title: Types of Device Objects Used by File System Filter Drivers
-author: windows-driver-content
 description: Types of Device Objects Used by File System Filter Drivers
 ms.assetid: e5662c95-71a0-49f8-a9d5-a03e2de1f426
 keywords:
@@ -10,11 +9,8 @@ keywords:
 - control device objects WDK file system
 - CDOs WDK file system
 - FDOs WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Types of Device Objects Used by File System Filter Drivers
@@ -45,11 +41,10 @@ This section includes:
 
 [Filter Device Object Attached to a Volume](filter-device-object-attached-to-a-volume.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

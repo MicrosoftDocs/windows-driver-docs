@@ -1,15 +1,11 @@
 ---
 title: OID_WDI_TASK_SCAN
-author: windows-driver-content
 description: OID_WDI_TASK_SCAN requests a survey of BSS networks. The port performs a scan according to the requirements of the IEEE 802.11 specification.
 ms.assetid: c4131010-20f2-45a4-8fb9-5a1e3e9735e5
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_SCAN Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_SCAN
@@ -43,7 +39,7 @@ OID\_WDI\_TASK\_SCAN requests a survey of BSS networks. The port performs a scan
 </tbody>
 </table>
 
- 
+ 
 
 A task started message containing a [**WDI\_TLV\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/dn898068) is indicated once the port has started the scan and is ready to receive other commands.
 
@@ -73,7 +69,7 @@ The adapter must not violate regulatory restrictions when performing a scan.
 | [**WDI\_TLV\_SCAN\_DWELL\_TIME**](https://msdn.microsoft.com/library/windows/hardware/dn898051)       |                                |          | Dwell time parameters.                                                                                                                                                                                                                                                                        |
 | [**WDI\_TLV\_BAND\_CHANNEL**](https://msdn.microsoft.com/library/windows/hardware/dn926144)              | X                              | X        | A list of recommended channels to scan. The adapter can perform a scan on a subset or superset of the channel list as long as it meets the Maximum Scan Time requirements. If this list is empty, the port must scan on all supported channels.                                               |
 
- 
+ 
 
 ## Task completion indication
 
@@ -109,12 +105,10 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WDI_TASK_SCAN%20%20RELEASE:%20%286/30/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

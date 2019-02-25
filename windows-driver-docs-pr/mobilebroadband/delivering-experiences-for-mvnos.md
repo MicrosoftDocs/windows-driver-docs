@@ -2,15 +2,13 @@
 title: Delivering experiences for MVNOs
 description: Delivering experiences for MVNOs
 ms.assetid: fcb2a3d4-bc19-4fa5-b81d-b0df287404a8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Delivering experiences for MVNOs
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 This topic provides info on how you can match service metadata to a mobile network operator (MNO) or mobile virtual network operator (MVNO) so that a mobile broadband app is automatically downloaded when the mobile broadband device is inserted.
 
@@ -52,7 +50,7 @@ If neither the ICCID nor the IMSI matches the request from the client machine, n
 **Note**  
 IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
 
- 
+ 
 
 *Figure 1 Segmenting IMSI ranges (within an MNO's MCC+MNC)* shows an example of client device that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
@@ -77,7 +75,7 @@ If neither the ICCID nor the IMSI matches the request coming from the client mac
 **Note**  
 IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
 
- 
+ 
 
 *Figure 2 Segmenting ICCID ranges (within an MNO's ICCID issuer identification number)* shows an example of client computers that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
@@ -100,7 +98,7 @@ This option requires the MNO or MVNO to ensure that the ICCID ranges are kept up
 **Note**  
 IMSI ranges must have a granularity of 100. The start range value must end in 00, and the end range value must end in 99.
 
- 
+ 
 
 *Figure 3 Using ICCID to define MVNOs and an all-encompassing IMSI range for the MNO* shows an example of client computers that request service metadata from WMIS and how each matching request from the client is matched to an experience.
 
@@ -123,7 +121,7 @@ You can use a mixture of ICCID ranges and IMSI ranges to describe the MNO and MV
 **Note**  
 ICCID ranges get first priority for matching.
 
- 
+ 
 
 This is the most complex matching model. To ensure proper matching, the MNO and MVNO must frequently update their service metadata packages.
 
@@ -158,7 +156,7 @@ If the Home Provider Name does not match the request coming from the client mach
 **Note**  
 Home Provider Names must be globally unique to ensure that a user gets the correct experience. Service metadata will only allow a single service metadata package that uses a given Home Provider Name.
 
- 
+ 
 
 *Figure 5 Provider Name-based matching for GSM networks* shows an example of devices that request service metadata from the Windows Metadata and Internet Services (WMIS) service, and how each matching request from the device is matched to an experience.
 
@@ -200,7 +198,7 @@ If none of these methods works for the MNO’s network (for example, the MNO can
 
 **Service metadata**
 
-This method creates a service metadata package that covers the entire MNO network. This is usually done by submitting an IMSI range that covers all the MCC+MNC values on the MNO network, and no ICCID ranges. MVNO ranges are not described. The service metadata package features generic branding and a generic network name that displays in the Windows Connection Manager. The service metadata then references a generic app that is automatically downloaded from the Windows Store when the MNO’s SIM is detected.
+This method creates a service metadata package that covers the entire MNO network. This is usually done by submitting an IMSI range that covers all the MCC+MNC values on the MNO network, and no ICCID ranges. MVNO ranges are not described. The service metadata package features generic branding and a generic network name that displays in the Windows Connection Manager. The service metadata then references a generic app that is automatically downloaded from the Microsoft Store when the MNO’s SIM is detected.
 
 **Determining network affiliation**
 
@@ -229,7 +227,7 @@ Because service metadata is not versioned, the app cannot query the local copy o
 
 A delay can occur between the time that the service metadata is uploaded through the Windows Dev Center hardware dashboard, and the time that computers receive the updated metadata.
 
- 
+ 
 
 **Branding in the mobile broadband app**
 
@@ -271,7 +269,7 @@ For a CDMA network (3GPP2), Windows reads the SID and the Provider Name values t
 **Important**  
 The Provider Name value is case sensitive and must be an exact match to the Provider Name that the device reports to Windows. If you want to match by using the Provider Name, you must make sure that you have specified all spelling and capitalization variations of the Provider Name that CDMA devices report to Windows in the service metadata package that you submit through the Windows Dev Center hardware dashboard.
 
- 
+ 
 
 ### <span id="Managing_MVNOs"></span><span id="managing_mvnos"></span><span id="MANAGING_MVNOS"></span>Managing MVNOs
 
@@ -361,11 +359,10 @@ It is important to keep the following metadata package content up-to-date:
 
 For more information about mobile broadband metadata see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Delivering%20experiences%20for%20MVNOs%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

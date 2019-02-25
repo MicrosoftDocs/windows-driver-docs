@@ -24,11 +24,8 @@ keywords:
 - PCM formats WDK audio
 - positions WDK audio
 - data formats WDK audio , channel masks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Channel Mask
@@ -116,7 +113,7 @@ The following table shows the meaning of each mask bit in the preceding figure.
 </tbody>
 </table>
 
- 
+ 
 
 For example, the **7.1 home theater speakers** configuration is described by a channel mask value of 0x63F, which indicates that the eight channels in the stream are assigned to the following speaker positions (and in the following order): FL, FR, FC, LFE, BL, BR, SL, and SR. For another example, the **7.1 wide configuration speakers** configuration is described by a channel mask value of 0xFF, which indicates that the eight channels in the stream are assigned to the following speaker positions: FL, FR, FC, LFE, BL, BR, FLC, and FRC.
 
@@ -128,12 +125,10 @@ The left side of the preceding figure shows the recording of audio content into 
 
 The right side of the preceding figure shows the same 7.1-channel stream being played back through an eight-speaker surround configuration. In this case, each small, black rectangle represents a speaker. Seven of the speakers are mapped to positions on the grid surrounding the listener. The mapping does not assign a grid position to the LFE speaker (subwoofer); this omission is based on the assumption that these speakers typically produce only low-frequency sounds, which are nondirectional.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Channel%20Mask%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

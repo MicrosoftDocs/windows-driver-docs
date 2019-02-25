@@ -2,11 +2,8 @@
 title: LocationPath Registry Subkey
 description: LocationPath Registry Subkey
 ms.assetid: 3b6f3501-5969-453c-a04b-5559761c3222
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # LocationPath Registry Subkey
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 Beginning with Windows 7, the **LocationPath** registry subkey specifies the location path for a removable device capability override of a single device identified through either the [HardwareID](hardwareid-registry-subkey.md) or [CompatibleID](compatibleid-registry-subkey.md) registry subkey. For more information about removable device capability overrides, see [DeviceOverrides Registry Key](deviceoverrides-registry-key.md).
 
-The **LocationPath** registry subkey applies the removable device capability value to only the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) that exists at the specified location path. This lets the removable device capability override be applied to a single instance of a device installed in the system. Other devices with the same **HardwareID** or **CompatibleID** at other location paths are not affected by such a removable device capability override.
+The **LocationPath** registry subkey applies the removable device capability value to only the device node (*devnode*) that exists at the specified location path. This lets the removable device capability override be applied to a single instance of a device installed in the system. Other devices with the same **HardwareID** or **CompatibleID** at other location paths are not affected by such a removable device capability override.
 
 By convention, the location path string takes the form *ServiceName(BusSpecificLocation)*. For example, PCI devices use PCI (*XXYY*), where *XX* is the device number and *YY* is the function number. The string is unique to the device in relation to its bus. The Plug and Play (PnP) manager assembles the location path for each node in the devnode tree. Each devnode in the tree concatenates its service name string to the end of the location path string that its parent devnode supplied. Therefore, the position of any devnode in the tree can be uniquely identified through the location path.
 
@@ -42,13 +39,13 @@ The following table defines the format and requirements of the **LocationPath** 
 <td align="left"><p>Valid &quot;<em>LocationPath</em>&quot; value</p></td>
 <td align="left"><p>Optional (* or a valid location path must be present to indicate the scope of the removable device capability override)</p></td>
 <td align="left"><p>None</p></td>
-<td align="left"><p>[LocationPaths](locationpaths-registry-subkey.md) or [ChildLocationPaths](childlocationpaths-registry-subkey.md)</p></td>
+<td align="left"><p><a href="locationpaths-registry-subkey.md" data-raw-source="[LocationPaths](locationpaths-registry-subkey.md)">LocationPaths</a> or <a href="childlocationpaths-registry-subkey.md" data-raw-source="[ChildLocationPaths](childlocationpaths-registry-subkey.md)">ChildLocationPaths</a></p></td>
 <td align="left"><p>None</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Either the **LocationPath** or [\*](--registry-subkey.md) registry subkeys must be present to indicate the scope of the removable device capability override.
 
@@ -77,7 +74,7 @@ The **LocationPath** subkey must contain a **Removable** DWORD value that specif
 </tbody>
 </table>
 
- 
+ 
 
 The location path string for a given devnode can be displayed through Device Manager through the following steps:
 
@@ -87,9 +84,9 @@ The location path string for a given devnode can be displayed through Device Man
 
 3.  In the **Property** drop-down list, find the **LocationPaths** property. This property contains the location path string for this devnode and is the value that should be used for the **LocationPath** registry subkey.
 
-**Note**  It is possible that the devnode does not have a **LocationPaths** value. This is because the driver for this devnode or one of its parents does not implement the [GUID\_PNP\_LOCATION\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/ff546564) interface. In this case, you must check the parent devnode for a **LocationPaths** property.
+**Note**  It is possible that the devnode does not have a **LocationPaths** value. This is because the driver for this devnode or one of its parents does not implement the [GUID_PNP_LOCATION_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/ff546564) interface. In this case, you must check the parent devnode for a **LocationPaths** property.
 
- 
+ 
 
 The **LocationPaths** registry subkey is intended to be used for overriding the removable device capability of devices that are hardwired to a fixed bus location. This typically occurs in portable computers, and includes the following devices:
 
@@ -107,9 +104,9 @@ For example, a laptop may have an internal USB hub with both internal and extern
 
 To discover the location paths value for a device that is connected to an external USB port, you can plug any device into the port and observe its location paths property. Any other USB devices that are plugged into the same port should receive the same location paths value, because the parent bus and how it internally identifies a port never changes.
 
- 
+ 
 
- 
+ 
 
 
 

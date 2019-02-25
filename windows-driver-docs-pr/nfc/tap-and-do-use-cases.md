@@ -1,6 +1,5 @@
 ---
 title: Tap and Do use cases
-author: windows-driver-content
 description: Tap and Do use cases
 ms.assetid: DCA97F86-3D27-46CD-9D25-A3D156B18B85
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Tap and Do use cases
@@ -21,7 +17,7 @@ ms.technology: windows-devices
 
 Windows provides several use cases to support the *Tap and Do* gesture. Each use case initiates a particular action between devices. The following table lists the use cases available.
 
- 
+ 
 
 | Use case          | Description                                                                 |
 |-------------------|-----------------------------------------------------------------------------|
@@ -33,7 +29,7 @@ Windows provides several use cases to support the *Tap and Do* gesture. Each use
 | Tap and Send      | Tap and send content you have selected to another device.                   |
 | Tap and Receive   | Tap and receive content from another device or poster.                      |
 
- 
+ 
 
 ## Categorization
 
@@ -158,9 +154,9 @@ Use category: personal or interpersonal.
 2.  She is invited to receive the content. If she declines the invitation, nothing happens. If she accepts the invitation, she is presented with the progress of the receive action.
 3.  Once the content is received, she is then invited to launch an app to handle the content. The app is launched and handed the content.
 
- 
+ 
 
- 
+ 
 
 
 

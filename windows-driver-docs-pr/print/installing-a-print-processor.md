@@ -1,6 +1,5 @@
 ---
 title: Installing a Print Processor
-author: windows-driver-content
 description: Installing a Print Processor
 ms.assetid: 4e9e1148-16a3-42f6-a262-1eef014636d0
 keywords:
@@ -10,17 +9,14 @@ keywords:
 - associating print processor with print queue WDK
 - print processors WDK , associating with print queue
 - print queues WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Print Processor
 
 
-## <a href="" id="ddk-installing-a-print-processor-gg"></a>
+
 
 
 To install a print processor, an installation application must call the spooler's **AddPrintProcessor** function. To associate a print processor with a print queue, list its file name in an INF file in a PrintProcessor entry. This entry must be included for every print queue to which the print processor is to be associated. For more information, see [Printer INF Files](printer-inf-files.md).
@@ -35,7 +31,7 @@ To associate the print processor with the print queue for Plug and Play installa
 
 The following code example sets the **pPrintProcessor** member of the PRINTER\_INFO\_2 structure to the name of your print processor, and then calls the **SetPrinter** function (described in the Windows SDK documentation) to update the printer's settings. Note that the name of the print processor in *gszPrintProc* must be the same as that in the PrintProcessor entry in your INF file.
 
-```
+```cpp
 BOOL
 DrvPrinterEvent(
                LPWSTR  pPrinterName,
@@ -103,7 +99,7 @@ DrvPrinterEvent(
 
 When a printer driver is updated, the print processor of the updated print queue is not changed. If the new printer driver requires a particular print processor, the printer interface DLL's [**DrvUpgradePrinter**](https://msdn.microsoft.com/library/windows/hardware/ff548648) function must set the **pPrintProcessor** member of the PRINTER\_INFO\_2 structure to the name of the new print processor. After this occurs, this function calls **SetPrinter** to update the printer's settings. The spooler calls the **DrvUpgradePrinter** function once for each printer, which ensures that all printers using that driver also use the required print processor. The following code example demonstrates these points.
 
-```
+```cpp
 BOOL
 DrvUpgradePrinter(
                  DWORD   Level,
@@ -140,7 +136,7 @@ DrvUpgradePrinter(
       //
       // This function is called for every printer queue that uses a driver
       // for which one or more files were updated. However, we only want to
-      // update the printer queue&#39;s "driver" by a particular driver.
+      // update the printer queue's "driver" by a particular driver.
       //
       if ( !lstrcmpi(pInfo->pDriverName, gszPrintDriver) )
       {
@@ -165,12 +161,10 @@ DrvUpgradePrinter(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Installing%20a%20Print%20Processor%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

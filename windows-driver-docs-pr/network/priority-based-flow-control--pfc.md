@@ -2,11 +2,8 @@
 title: Priority-based Flow Control (PFC)
 description: Priority-based Flow Control (PFC)
 ms.assetid: 9DD8A66F-273F-4E5A-99EF-33C2EDF3240C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Priority-based Flow Control (PFC)
@@ -30,9 +27,9 @@ NDIS Quality of Service (QoS) parameters are specified through the [**NDIS\_QOS\
 
 For more information about priority levels, see [IEEE 802.1p Priority Levels](ieee-802-1p-priority-levels.md).
 
- 
+ 
 
- 
+ 
 
 
 

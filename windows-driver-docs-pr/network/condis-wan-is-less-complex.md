@@ -4,17 +4,14 @@ description: CoNDIS WAN Is Less Complex
 ms.assetid: 750f321a-72c9-4d90-b02e-cbe5177dc2af
 keywords:
 - CoNDIS WAN drivers WDK networking , benefits
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CoNDIS WAN Is Less Complex
 
 
-## <a href="" id="ddk-condis-wan-is-less-complex-ng"></a>
+
 
 
 CoNDIS defines objects that correspond to each of the logical entities that are involved in a connection. These entities include address families (AFs), virtual connections (VCs), service access points (SAPs), and parties.
@@ -29,9 +26,9 @@ In the CoNDIS environment, the system handles many of the complex TAPI requireme
 
 The separation of the call manager and miniport driver functions enables you to implement two simple drivers. The simplified drivers should be easier to maintain and debug than one large and complex driver.
 
- 
+ 
 
- 
+ 
 
 
 

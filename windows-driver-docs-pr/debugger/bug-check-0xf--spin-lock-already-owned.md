@@ -3,17 +3,14 @@ title: Bug Check 0xF SPIN_LOCK_ALREADY_OWNED
 description: The SPIN_LOCK_ALREADY_OWNED bug check has a value of 0x0000000F. This indicates that a request for a spin lock has been initiated when the spin lock was already owned.
 ms.assetid: 8347a78a-528e-4767-a13d-ad2fd8f71818
 keywords: ["Bug Check 0xF SPIN_LOCK_ALREADY_OWNED", "SPIN_LOCK_ALREADY_OWNED"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - SPIN_LOCK_ALREADY_OWNED
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF: SPIN\_LOCK\_ALREADY\_OWNED
@@ -21,7 +18,7 @@ api_type:
 
 The SPIN\_LOCK\_ALREADY\_OWNED bug check has a value of 0x0000000F. This indicates that a request for a spin lock has been initiated when the spin lock was already owned.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## SPIN\_LOCK\_ALREADY\_OWNED Parameters
 
@@ -40,9 +37,9 @@ Resolution
 
 Ensure that you are not recursively acquiring the lock. And, for threads that hold a spin lock, ensure that you are not decreasing the thread IRQL to a level below the IRQL of the spin lock that it is holding.
 
- 
+ 
 
- 
+ 
 
 
 

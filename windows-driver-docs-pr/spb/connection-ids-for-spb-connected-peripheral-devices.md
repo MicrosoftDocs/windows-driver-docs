@@ -1,13 +1,9 @@
 ---
 title: Connection IDs for SPB-Connected Peripheral Devices
-author: windows-driver-content
 description: Before a driver can send I/O requests to a peripheral device on a simple peripheral bus (SPB), the driver must open a logical connection to the device.
 ms.assetid: 234B5858-5930-40AD-BE4C-4A774A809D10
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connection IDs for SPB-Connected Peripheral Devices
@@ -15,7 +11,7 @@ ms.technology: windows-devices
 
 Before a driver can send I/O requests to a peripheral device on a [simple peripheral bus](https://msdn.microsoft.com/library/windows/hardware/hh450903) (SPB), the driver must open a logical connection to the device. Through this connection, the driver can send read and write requests to transfer data to and from the device. Additionally, the driver can send I/O control (IOCTL) requests to the device to perform SPB-specific operations.
 
-## <a href="" id="connection-ids-sbp-peripheral-devices"></a>
+
 
 
 At system startup, the Plug and Play (PnP) manager enumerates both PnP devices and non-PnP devices. For a non-PnP peripheral device that has a fixed connection to an SPB, the PnP manager queries the hardware platform's ACPI firmware to obtain a set of connection parameters that describe how to access the device. These connection parameters identify the SPB controller for the bus to which the device is connected, and include other information, such as the bus address and bus clock frequency, that the controller requires to communicate with the device.
@@ -29,7 +25,7 @@ The driver developer can use either the [User-Mode Driver Framework](https://msd
 To enable a UMDF peripheral driver to receive connection IDs in its resource list, the INF file that installs the driver must include the following directive in its WDF-specific **DDInstall** section:
 
 **UmdfDirectHardwareAccess = AllowDirectHardwareAccess**
-For more information about this directive, see [Specifying WDF Directives in INF Files](https://msdn.microsoft.com/library/windows/hardware/ff560526). For an example of a INX file (used to build the corresponding INF file) that uses this directive, see the [SpbAccelerometer](http://go.microsoft.com/fwlink/p/?LinkId=618052) driver sample.
+For more information about this directive, see [Specifying WDF Directives in INF Files](https://msdn.microsoft.com/library/windows/hardware/ff560526). For an example of a INX file (used to build the corresponding INF file) that uses this directive, see the [SpbAccelerometer](https://go.microsoft.com/fwlink/p/?LinkId=618052) driver sample.
 
 The connection ID that the driver receives as a resource is a 64-bit integer, but the driver must incorporate this ID into a device path name that can be used to retrieve the connection parameters from the resource hub. To create the device path name, the driver calls the **RESOURCE\_HUB\_CREATE\_PATH\_FROM\_ID** function, which is declared in the Reshub.h header file.
 
@@ -43,11 +39,10 @@ User-mode applications cannot open logical connections to SPB-connected peripher
 
 Only one driver can hold an open logical connection to an SPB-connected peripheral device at a time. An attempt by another driver to open a second connection to the same device fails.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

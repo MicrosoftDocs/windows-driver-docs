@@ -1,13 +1,9 @@
 ---
 title: 3rd party filter drivers
-author: windows-driver-content
 ms.assetid: 2EAFE726-2266-4E40-AC51-0025BF6069B6
 description: Sample filter drivers in the Microsoft Windows Driver Kit (WDK).
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # 3rd party filter drivers
@@ -23,7 +19,7 @@ Kbfiltr and Moufiltr demonstrate how to filter I/O requests and add callback rou
 
 **Note**   The design of the Terminal Server for Windows 2000 and later does not support using the sample keyboard and mouse filter drivers to filter input from devices physically installed on a remote client. A filter driver installed on a Terminal Server can only be used to filter the input from the devices physically installed on a Terminal Server. This is a consequence of the way the TermDD.sys driver for the Terminal Server handles input from remote clients.
 
- 
+ 
 
 Kbfiltr and Moufiltr support Plug and Play and power management.
 
@@ -103,7 +99,7 @@ I8042prt supports the following callbacks that an upper-level device filter driv
 A write port callback for a device writes to the i8042 port at the IRQL of the device's ISR.
 
 <a href="" id="pi8042-queue-packet"></a>[**PI8042\_QUEUE\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff543263)  
-A queue packet callback for a device queues an input data packet for processing by the device's ISR [*DPC*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-deferred-procedure-call--dpc-).
+A queue packet callback for a device queues an input data packet for processing by the device's ISR *DPC*.
 
 <a href="" id="pi8042-synch-read-port"></a>[**PI8042\_SYNCH\_READ\_PORT**](https://msdn.microsoft.com/library/windows/hardware/ff543272)  
 This callback can be used in a [**PI8042\_KEYBOARD\_INITIALIZATION\_ROUTINE**](https://msdn.microsoft.com/library/windows/hardware/ff543243) callback. I8042prt specifies the read port callback in the *ReadPort* parameter that I8042prt inputs to a keyboard initialization routine.
@@ -117,12 +113,10 @@ I8042prt passes pointers to the mouse device callbacks in a [**INTERNAL\_I8042\_
 
 After a filter driver receives a hook device request, it saves the I8042prt callback pointers for use in the filter driver's ISR callback.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%203rd%20party%20filter%20drivers%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

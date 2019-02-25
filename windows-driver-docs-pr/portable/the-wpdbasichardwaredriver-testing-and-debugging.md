@@ -1,11 +1,8 @@
 ---
 Description: Testing and Debugging the Sample Driver
 title: Testing and Debugging the Sample Driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Testing and Debugging the Sample Driver
@@ -20,7 +17,7 @@ The WDK includes three tools that you can use to test and debug a WPD driver. Th
 | *WpdDeviceInspector.exe* | Generates an HTML report that describes the device capabilities and content.                                                                                                                                     |
 | *WpdMon.exe*             | Traces messages and commands that are passed between a WPD driver and the operating system or a WPD application.                                                                                                 |
 
- 
+ 
 
 For more information about these tools and their use, see [WPD Driver Development Tools](familiarizing-yourself-with-the-sample-driver.md) in the WDK documentation.
 
@@ -42,7 +39,7 @@ When you start *WpdInfo.exe*, it prompts you to select a portable device from th
 
 When the sensor reading event fired in the previous example, the following information was true:
 
--   The sensor-reading property, SENSOR\_READING, was 2170720417. This value indicates a sensor identifier of 2 (which corresponds to the Sensiron temperature and humidity sensor), a count of 1 element, a size of 7 bytes per element, a temperature of 72.0 degrees farenheit, and a relative humidity of 41.7%.
+-   The sensor-reading property, SENSOR\_READING, was 2170720417. This value indicates a sensor identifier of 2 (which corresponds to the Sensiron temperature and humidity sensor), a count of 1 element, a size of 7 bytes per element, a temperature of 72.0 degrees fahrenheit, and a relative humidity of 41.7%.
 -   Its interval property, SENSOR\_UPDATE\_INTERVAL, was set to 2,000.
 
 ## <span id="updating_the_interval_property_by_using_wpdinfo.exe"></span><span id="UPDATING_THE_INTERVAL_PROPERTY_BY_USING_WPDINFO.EXE"></span>Updating the Interval Property by Using WpdInfo.exe
@@ -67,7 +64,7 @@ After your driver is installed, you can create a debugging project in Visual Stu
 1.  Open Visual Studio 8 with elevated privileges (Run As Administrator) and navigate to the File &lt; New &gt; Project from Existing Code path.
     **Note**  You must open Visual Studio 8 with elevated privileges because the LocalService account requires these privileges. The WUDFHost process runs within the LocalService account. By using Visual Studio 8, you are able to debug the driver project.
 
-     
+     
 
 2.  Follow the steps in the **Welcome to the Create Project from Existing Code Files Wizard**. Make sure to specify the language, the location of your driver source files, a project name, and so on.
 3.  Open your newly created project.
@@ -87,11 +84,10 @@ Initialization code for a WPD driver, for example, the code found in **WpdBaseDr
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wpd_dk\wpddk]:%20Testing%20and%20Debugging%20the%20Sample%20Driver%20%20RELEASE:%20%281/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

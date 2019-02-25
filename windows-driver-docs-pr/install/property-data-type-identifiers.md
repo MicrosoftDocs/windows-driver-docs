@@ -4,11 +4,8 @@ description: Property-Data-Type Identifiers
 ms.assetid: 8deb96d8-c18c-48f2-be5d-1a3fc8ba8508
 keywords:
 - device properties WDK device installations , property-data-type identifiers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Property-Data-Type Identifiers
@@ -20,15 +17,15 @@ The system-supported base-data-type identifiers and property-data-type modifiers
 
 Windows enforces the following requirements on property-data-type identifiers:
 
--   The base-data-type identifier is one of the DEVPROP\_TYPE\_*Xxx* identifiers.
+-   The base-data-type identifier is one of the DEVPROP_TYPE_*Xxx* identifiers.
 
--   If the base-data-type identifier is [**DEVPROP\_TYPE\_EMPTY**](https://msdn.microsoft.com/library/windows/hardware/ff543585) or [**DEVPROP\_TYPE\_NULL**](https://msdn.microsoft.com/library/windows/hardware/ff543602), the property data-type identifier cannot include a property-data-type modifier.
+-   If the base-data-type identifier is [**DEVPROP_TYPE_EMPTY**](https://msdn.microsoft.com/library/windows/hardware/ff543585) or [**DEVPROP_TYPE_NULL**](https://msdn.microsoft.com/library/windows/hardware/ff543602), the property data-type identifier cannot include a property-data-type modifier.
 
--   If the property-data-type identifier includes a property-data-type modifier, the property-data-type modifier is one of the DEVPROP\_TYPEMOD\_*Xxx* identifiers.
+-   If the property-data-type identifier includes a property-data-type modifier, the property-data-type modifier is one of the DEVPROP_TYPEMOD_*Xxx* identifiers.
 
--   The [**DEVPROP\_TYPEMOD\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/ff543556) property-data-type modifier can be combined only with the fixed-length base data types.
+-   The [**DEVPROP_TYPEMOD_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/ff543556) property-data-type modifier can be combined only with the fixed-length base data types.
 
--   The [**DEVPROP\_TYPEMOD\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff543559) property-data-type modifier can be combined only with the variable-length base data types.
+-   The [**DEVPROP_TYPEMOD_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff543559) property-data-type modifier can be combined only with the variable-length base data types.
 
 In addition to enforcing requirements on property data type identifiers, Windows also enforces [property value requirements](property-value-requirements.md) that depend on the property data type.
 
@@ -36,9 +33,9 @@ The SetupAPI property functions that retrieve and set a property value take a *P
 
 For more information, see [Using SetupAPI to Access Device Properties (Windows Vista and Later)](using-setupapi-to-access-device-properties--windows-vista-and-later-.md).
 
- 
+ 
 
- 
+ 
 
 
 

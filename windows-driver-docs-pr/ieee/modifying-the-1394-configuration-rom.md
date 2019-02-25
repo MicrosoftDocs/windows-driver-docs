@@ -1,23 +1,19 @@
 ---
 title: Modifying the 1394 Configuration ROM
-author: windows-driver-content
 description: Modifying the 1394 Configuration ROM
 ms.assetid: 3dc4fe53-a26b-44c7-96ef-e7bb6181c958
 keywords:
 - IEEE 1394 WDK buses , modifying Configuration ROMs
 - 1394 WDK buses , modifying Configuration ROMs
 - Configuration ROMs WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Modifying the 1394 Configuration ROM
 
 
-## <a href="" id="ddk-modifying-the-1394-configuration-rom-kg"></a>
+
 
 
 A Microsoft Windows system connected to the 1394 bus exposes a Configuration ROM that describes the functional units supported by the node. For further information about 1394 Configuration ROMs, see the IEEE 1394-1995 and IEEE-1212-2000 specifications. In Windows XP and later operating systems, the contents of the Configuration ROM can be dynamically defined in two ways:
@@ -33,6 +29,5 @@ A Microsoft Windows system connected to the 1394 bus exposes a Configuration ROM
 ## Related topics
 [Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](https://msdn.microsoft.com/library/windows/hardware/gg266408)  
 
---------------------
 
 

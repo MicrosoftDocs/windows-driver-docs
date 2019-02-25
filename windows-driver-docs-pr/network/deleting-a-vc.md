@@ -5,17 +5,14 @@ ms.assetid: 6e49fb69-0b22-4f52-9b6d-661e818c1758
 keywords:
 - virtual connections WDK CoNDIS , deleting
 - deleting virtual connections
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deleting a VC
 
 
-## <a href="" id="ddk-deleting-a-vc-ng"></a>
+
 
 
 Only the connection-oriented client, call manager, or MCM driver that initiated the creation of a virtual circuit (VC) can initiate the deletion of that VC. A client therefore deletes a VC that it previously created for an outgoing call, a call manager or MCM driver deletes a VC that it previously created for an incoming call over the network, and a call manager deletes a VC that it previously created for exchanging signaling messages over the network. (An MCM driver does not call NDIS to delete a VC that it created for exchanging signaling messages. The MCM driver deletes such a VC with an internal operation that is opaque to NDIS.)
@@ -52,9 +49,9 @@ An MCM driver's call to **NdisMCmDeleteVc** causes NDIS to call the [**ProtocolC
 
 When **NdisCoDeleteVc** or **NdisMCmDeleteVc** returns control, the *NdisVcHandle* is no longer valid.
 
- 
+ 
 
- 
+ 
 
 
 

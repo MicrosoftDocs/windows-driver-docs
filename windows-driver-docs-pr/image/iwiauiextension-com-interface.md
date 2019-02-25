@@ -1,19 +1,15 @@
 ---
 title: IWiaUIExtension COM Interface
-author: windows-driver-content
 description: IWiaUIExtension COM Interface
 ms.assetid: 10a8e981-889a-46f0-8bf5-da75632d4d94
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IWiaUIExtension COM Interface
 
 
-## <a href="" id="ddk-iwiauiextension-com-interface-si"></a>
+
 
 
 If you implement the [IWiaUIExtension interface](https://msdn.microsoft.com/library/windows/hardware/ff545078), you can implement none, some, or all the **IWiaUIExtension** methods. If a particular method returns E\_NOTIMPL, the system-provided alternative, and one is available, it is used instead.
@@ -33,21 +29,21 @@ The **IWiaUIExtension** interface provides the following methods:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaUIExtension::DeviceDialog</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545069)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545069" data-raw-source="[&lt;strong&gt;IWiaUIExtension::DeviceDialog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545069)"><strong>IWiaUIExtension::DeviceDialog</strong></a></p></td>
 <td><p>Provides a custom user interface that replaces the default system user interface.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaUIExtension::GetDeviceBitmapLogo</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545073)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545073" data-raw-source="[&lt;strong&gt;IWiaUIExtension::GetDeviceBitmapLogo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545073)"><strong>IWiaUIExtension::GetDeviceBitmapLogo</strong></a></p></td>
 <td><p>Gets a custom bitmap logo for the device.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IWiaUIExtension::GetDeviceIcon</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545075)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545075" data-raw-source="[&lt;strong&gt;IWiaUIExtension::GetDeviceIcon&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545075)"><strong>IWiaUIExtension::GetDeviceIcon</strong></a></p></td>
 <td><p>Gets a custom device icon.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 [**IWiaUIExtension::DeviceDialog**](https://msdn.microsoft.com/library/windows/hardware/ff545069) accepts a pointer to a [**DEVICEDIALOGDATA**](https://msdn.microsoft.com/library/windows/hardware/ff540560) structure (declared in *wiadevd.h*), which contains all the data needed to implement the device dialog box.
 
@@ -69,12 +65,10 @@ To implement a custom scanning dialog box in a WIA scanner driver, use the **IWi
 
 It is important to remember that the device dialog box itself does not manage the data transfers. The dialog box merely returns a pointer to an array of **IWiaItem** interface pointers (with properties set) from the driver to the application. It is then up to the application to negotiate the transfer mechanism and format.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20IWiaUIExtension%20COM%20Interface%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

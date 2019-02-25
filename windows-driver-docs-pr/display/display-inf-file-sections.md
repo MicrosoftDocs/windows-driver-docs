@@ -9,11 +9,8 @@ keywords:
 - CapabilityOverride
 - INF files WDK Windows 2000 display
 - display INF file sections WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Display INF File Sections
@@ -30,7 +27,7 @@ A *DDInstall*.**SoftwareSettings** section contains an [**AddReg**](https://msdn
 
 For example, the following code shows an **AddReg** directive that points to a writer-defined add-registry section named **ACME-1234\_SoftwareDeviceSettings**. The **DelReg** directive points to a delete-registry section named **ACME-1234\_DeleteSWSettings**.
 
-```
+```inf
 [ACME-1234.SoftwareSettings]
 AddReg=ACME-1234_SoftwareDeviceSettings
 DelReg=ACME-1234_DeleteSWSettings
@@ -38,7 +35,7 @@ DelReg=ACME-1234_DeleteSWSettings
 
 The add-registry section adds four entries to the registry and sets their values, as shown in the following code.
 
-```
+```inf
 [ACME-1234_SoftwareDeviceSettings]
 HKR,, InstalledDisplayDrivers, %REG_MULTI_SZ%, Acme1
 HKR,, OverRideMonitorPower, %REG_DWORD%, 0
@@ -52,7 +49,7 @@ Third, the code sets the value of the **MultiFunctionSupported** entry to 1 (in 
 
 Most video miniport drivers are not VGA-compatible and require no **VgaCompatible** entry in the registry. If your video miniport driver is VGA-compatible, add the **VgaCompatible** entry to the registry and set its value to 1 (**TRUE**) in the add registry section, as shown here:
 
-```
+```registry
 [ACME-1234_SoftwareDeviceSettings]
 HKR,, VgaCompatible, %REG_DWORD%, 1
 ```
@@ -61,7 +58,7 @@ For more information about VGA-compatible video miniport drivers, see [VGA-Compa
 
 The following delete-registry section deletes three registry entries: **GraphicsClocking**, **MemClocking**, and **CapabilityOverride**.
 
-```
+```inf
 [ACME-1234_DeleteSWSettings]
 HKR,, GraphicsClocking
 HKR,, MemClocking
@@ -94,20 +91,20 @@ The value of the **CapabilityOverride** registry entry is a bitwise OR of one or
 </tr>
 <tr class="odd">
 <td align="left"><p>0x4</p></td>
-<td align="left"><p>Disables all support for Direct3D hardware acceleration. Prevents calls to [<strong>DdGetDriverInfo</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549404)<em>,</em> which request Direct3D capability and callback information, from reaching the driver.</p></td>
+<td align="left"><p>Disables all support for Direct3D hardware acceleration. Prevents calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549404" data-raw-source="[&lt;strong&gt;DdGetDriverInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549404)"><strong>DdGetDriverInfo</strong></a><em>,</em> which request Direct3D capability and callback information, from reaching the driver.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x8</p></td>
-<td align="left"><p>Disables all support for the OpenGL installable client driver (ICD) and miniclient driver (MCD). Prevents calls to [<strong>DrvSetPixelFormat</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556285), [<strong>DrvDescribePixelFormat</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556190), and [<strong>DrvSwapBuffers</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556322) from reaching the driver. Also prevents OPENGL_GETINFO, OPENGL_CMD and MCDFUNCS escapes from reaching the driver.</p></td>
+<td align="left"><p>Disables all support for the OpenGL installable client driver (ICD) and miniclient driver (MCD). Prevents calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556285" data-raw-source="[&lt;strong&gt;DrvSetPixelFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556285)"><strong>DrvSetPixelFormat</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556190" data-raw-source="[&lt;strong&gt;DrvDescribePixelFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556190)"><strong>DrvDescribePixelFormat</strong></a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556322" data-raw-source="[&lt;strong&gt;DrvSwapBuffers&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556322)"><strong>DrvSwapBuffers</strong></a> from reaching the driver. Also prevents OPENGL_GETINFO, OPENGL_CMD and MCDFUNCS escapes from reaching the driver.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x10</p></td>
-<td align="left"><p>Disables support for all escapes in the driver. Prevents calls to [<strong>DrvEscape</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556217) and [<strong>DrvDrawEscape</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556203) from reaching the driver.</p></td>
+<td align="left"><p>Disables support for all escapes in the driver. Prevents calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556217" data-raw-source="[&lt;strong&gt;DrvEscape&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556217)"><strong>DrvEscape</strong></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556203" data-raw-source="[&lt;strong&gt;DrvDrawEscape&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556203)"><strong>DrvDrawEscape</strong></a> from reaching the driver.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For display drivers that are shipped with Windows, **CapabilityOverride** is typically set to 0x8, which disables OpenGL. Note that it is not necessary to set the 0x10 flag to disable OpenGL, and you should not set the 0x10 flag unless you intend to disable all escapes.
 
@@ -161,30 +158,30 @@ The *regstr.h* header file, which is shipped with the Windows Driver Kit (WDK), 
 </tbody>
 </table>
 
- 
+ 
 
 Two types of settings exist: global and platform-specific. The registry contains the global entries at the following location:
 
-```
+```registry
 HKLM,"SYSTEM\CurrentControlSet\Control\AGP"
 ```
 
 You can find the platform-specific entries under "Parameters" in the filter-driver service key. For example, these entries exist for the hypothetical AcmeAGP adapter in the following location in the registry:
 
-```
+```registry
 HKLM,"SYSTEM\CurrentControlSet\Services\AcmeAGP\Parameters"
 ```
 
 To disable sideband addressing for a device that has a DeviceID of 0x012A (Nuclear3D) and a VendorID of 0x1AD0 on VIA Technologies platforms, add a **Nuclear3D\_Install.HW** section to your INF file. (For more information about this type of INF Install section, see [**INF DDInstall.HW Section**](https://msdn.microsoft.com/library/windows/hardware/ff547330).) In this section, include an [**AddReg**](https://msdn.microsoft.com/library/windows/hardware/ff546320) directive similar to the following:
 
-```
+```inf
 [Nuclear3D_Install.HW] 
 AddReg = Nuclear3D_Reg 
 ```
 
 Next, create the following section, which the **AddReg** directive points to:
 
-```
+```inf
 [Nuclear3D_Reg] 
 HKLM,"SYSTEM\CurrentControlSet\Services\viaagp\Parameters","1AD0012A",0x00030003,00,01,00,00,00,00,00,00 
 ```
@@ -193,11 +190,11 @@ The preceding entry indicates that the subkey identified by the string following
 
 **Important**   The bytes in the value entry are in the opposite order from those of the AGP\_FLAG\_NO\_SBA\_ENABLE flag's definition in the preceding table.
 
- 
+ 
 
 Suppose you determine that AGP 4X is broken on every chipset for this same device. To indicate this fact, add a second entry to the Nuclear3D\_Reg section:
 
-```
+```inf
 [Nuclear3D_Reg] 
 HKLM,"SYSTEM\CurrentControlSet\Services\viaagp\Parameters","1AD0012A",0x00030003,00,01,00,00,00,00,00,00 
 HKLM,"SYSTEM\CurrentControlSet\Control\AGP","1AD0012A",0x00030003,04,00,00,00,00,00,00,00 
@@ -205,11 +202,10 @@ HKLM,"SYSTEM\CurrentControlSet\Control\AGP","1AD0012A",0x00030003,04,00,00,00,00
 
 The second entry in the preceding code indicates that the subkey identified by the string following HKLM is to be added to the registry, under the HKEY\_LOCAL\_MACHINE root. As in the previous entry, the value name associated with this subkey is a string that is composed of the device's DeviceID and VendorID. The flag value is also the same. The value entry is AGP\_FLAG\_NO\_4X\_RATE, which disables the AGP 4X transfer rate. Notice that, as before, the bytes in this value entry are in the opposite order as those of the flag's value in the preceding table.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Display%20INF%20File%20Sections%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

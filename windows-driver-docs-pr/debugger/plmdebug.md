@@ -3,17 +3,14 @@ title: PLMDebug
 description: PLMDebug.exe is a tool that enables you to use the Windows debugger to debug Windows app, which run under Process Lifecycle Management (PLM). 
 ms.assetid: 68BE8F5D-6425-43E2-B5BC-C1D35614AB32
 keywords: ["PLMDebug Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - PLMDebug
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # PLMDebug
@@ -23,13 +20,13 @@ PLMDebug.exe is a tool that enables you to use the Windows debugger to debug Win
 
 **Tip**  With Windows 10, version 1607 or later, you can use the UWP commands, such as .createpackageapp to debug UWP apps. For more information see [Debugging a UWP app using WinDbg](debugging-a-uwp-app-using-windbg.md).
 
- 
+ 
 
 **Where to get PLMDebug**
 
 PLMDebug.exe is included in [Debugging Tools for Windows](index.md).
 
-```
+```console
 plmdebug /query [Package]
 plmdebug /enableDebug Package [DebuggerCommandLine]
 plmdebug /terminate Package
@@ -90,7 +87,7 @@ Remarks
 
 You must call **plmdebug /enableDebug** before you call any of the suspend, resume, or terminate functions.
 
-The PLMDebug tool calls the methods of the [IPackageDebugSettings interface](http://go.microsoft.com/fwlink/p/?LinkID=267918). This interface enables you to take manual control of the process lifecycle management for your apps. Through this interface (and as a result, through this tool), you can suspend, resume, and terminate your Windows app. Note that the methods of the [IPackageDebugSettings interface](http://go.microsoft.com/fwlink/p/?LinkID=267918) apply to an entire package. Suspend, resume, and terminate affect all currently running apps in the package.
+The PLMDebug tool calls the methods of the [IPackageDebugSettings interface](https://go.microsoft.com/fwlink/p/?LinkID=267918). This interface enables you to take manual control of the process lifecycle management for your apps. Through this interface (and as a result, through this tool), you can suspend, resume, and terminate your Windows app. Note that the methods of the [IPackageDebugSettings interface](https://go.microsoft.com/fwlink/p/?LinkID=267918) apply to an entire package. Suspend, resume, and terminate affect all currently running apps in the package.
 
 Examples
 --------
@@ -103,7 +100,7 @@ Suppose you have an app named MyApp that is in a package named MyApp\_1.0.0.0\_x
 
 **plmdebug /query**
 
-```
+```console
 Package full name: 1daa103b-74e1-426d-8193-b6bc7ed66fed_1.0.0.0_x86__tnq5r49etfg3c
 Package state: Terminated
 
@@ -164,15 +161,14 @@ Finally, decrement the debug reference count for the package.
 ## <span id="see_also"></span>See also
 
 
-[How to trigger suspend, resume, and background events in Windows Apps](http://go.microsoft.com/fwlink/p/?LinkID=267916)
+[How to trigger suspend, resume, and background events in Windows Apps](https://go.microsoft.com/fwlink/p/?LinkID=267916)
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20PLMDebug%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

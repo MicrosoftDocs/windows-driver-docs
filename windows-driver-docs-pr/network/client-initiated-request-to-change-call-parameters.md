@@ -5,17 +5,14 @@ ms.assetid: 1534dbf9-3ee0-490a-9633-55827ffbcb1a
 keywords:
 - call parameter changes WDK CoNDIS
 - client-initiated call parameter changes WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Client-Initiated Request to Change Call Parameters
 
 
-## <a href="" id="ddk-client-initiated-request-to-change-call-parameters-ng"></a>
+
 
 
 A client requests a change in quality of service (QoS) on an active virtual connection (VC) with [**NdisClModifyCallQoS**](https://msdn.microsoft.com/library/windows/hardware/ff561636).
@@ -62,9 +59,9 @@ The call to **Ndis(M)CmModifyCallQoSComplete** causes NDIS to call the client's 
 
 If the CALL\_PARAMETERS\_CHANGED flag is set in the CO\_CALL\_PARAMETERS structure, the client must examine the returned call parameters and determine whether the modifications are acceptable. If the client's call to **NdisClModifyCallQoS** succeeds, *ProtocolClModifyCallQoSComplete* can accept the QoS change by simply returning control. Otherwise, *ProtocolClModifyCallQoSComplete* can engage in further negotiation with the call manager if allowed by the signaling protocol and as long as the client's developer places some reasonable limit on the number of possible renegotiations. Alternatively, *ProtocolClModifyCallQoSComplete* can simply tear down the call with [**NdisClCloseCall**](https://msdn.microsoft.com/library/windows/hardware/ff561627)(see [Client-Initiated Request to Close a Call](client-initiated-request-to-close-a-call.md)) whenever the call manager rejects a request to change the QoS and the previously established QoS has become unacceptable to the client.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using Serial.sys and Serenum.sys
-author: windows-driver-content
 description: Using Serial.sys and Serenum.sys
 ms.assetid: 2dcf22c8-0666-4b58-8fd3-97a4d17eaa2a
 keywords:
@@ -15,17 +14,14 @@ keywords:
 - lower-level device filter drivers WDK serial devices
 - higher-level device filter drivers WDK serial devices
 - filter drivers WDK serial devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Serial.sys and Serenum.sys
 
 
-## <a href="" id="ddk-serial-devices-and-drivers-kg"></a>
+
 
 
 Starting with Windows 2000, the following system components are available for use with serial controller devices that have hardware interfaces that are compatible with the 16550 universal asynchronous receiver-transmitter (UART):
@@ -71,18 +67,16 @@ For general information about the high-level operation of a serial device, see t
 
 These samples demonstrates serial drivers.
 
--   The [Serial](http://go.microsoft.com/fwlink/p/?LinkId=617962) sample builds a function driver for serial devices.
--   The [Serenum](http://go.microsoft.com/fwlink/p/?LinkId=617961) sample provides Plug and Play functionality of a bus driver for an RS-232 port.
+-   The [Serial](https://go.microsoft.com/fwlink/p/?LinkId=617962) sample builds a function driver for serial devices.
+-   The [Serenum](https://go.microsoft.com/fwlink/p/?LinkId=617961) sample provides Plug and Play functionality of a bus driver for an RS-232 port.
 -   A simple virtual serial driver (ComPort) and a controller-less modem driver (FakeModem).
-    -   [The Virtual serial driver sample (UMDF 1.0)](http://go.microsoft.com/fwlink/p/?LinkId=617963)
-    -   [The Virtual serial2 driver sample (KMDF)](http://go.microsoft.com/fwlink/p/?LinkId=722209)
+    -   [The Virtual serial driver sample (UMDF 1.0)](https://go.microsoft.com/fwlink/p/?LinkId=617963)
+    -   [The Virtual serial2 driver sample (KMDF)](https://go.microsoft.com/fwlink/p/?LinkId=722209)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bserports\serports%5D:%20Using%20Serial.sys%20and%20Serenum.sys%20%20RELEASE:%20%288/4/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

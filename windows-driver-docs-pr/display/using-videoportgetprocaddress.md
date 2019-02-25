@@ -5,11 +5,8 @@ ms.assetid: 48dace7e-7ba3-48bf-9788-469ff42f6fe3
 keywords:
 - video miniport drivers WDK Windows 2000 , multiple Windows versions, VideoPortGetProcAddress
 - VideoPortGetProcAddress
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using VideoPortGetProcAddress
@@ -22,7 +19,7 @@ A video miniport driver developed on one NT-based operating system version can b
 
 When the video miniport driver is loaded, the **VideoPortGetProcAddress** member of the [**VIDEO\_PORT\_CONFIG\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff570531) structure contains the address of a callback routine that the video port driver exports, [**VideoPortGetProcAddress**](https://msdn.microsoft.com/library/windows/hardware/ff570315). A miniport driver can use this callback routine to find the address of a video port function exported from *videoprt.sys*. After the miniport driver has the function's address, it can use this address to call the function. This is shown in the following example code.
 
-```
+```cpp
   // Useful typedef for a function pointer type
   //   that points to a function with same argument types
   //   as VideoPortCreateSecondaryDisplay
@@ -54,11 +51,10 @@ else {
 
 After the call through the *VideoPortGetProcAddress* callback routine has executed, *pVPFunction* either is **NULL** or contains the address of the **VideoPortCreateSecondaryDisplay** function. If *pVPFunction* is **NULL**, the video port driver does not export the function you are trying to find, and the miniport driver must not attempt to use it. If *pVPFunction* is not **NULL**, you can use this pointer to call **VideoPortCreateSecondaryDisplay** as shown in the preceding example.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Using%20VideoPortGetProcAddress%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

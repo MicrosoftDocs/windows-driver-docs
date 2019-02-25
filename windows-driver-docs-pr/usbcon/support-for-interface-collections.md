@@ -1,12 +1,8 @@
 ---
 Description: Interfaces on a composite USB device can be grouped in collections. The USB Generic Parent Driver (Usbccgp.sys) can enumerate interface collections in four ways.
 title: Enumeration of Interface Collections on USB Composite Devices
-author: windows-driver-content
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 01/07/2019
+ms.localizationpriority: medium
 ---
 
 # Enumeration of Interface Collections on USB Composite Devices
@@ -75,7 +71,7 @@ WMCDC devices consist of multiple functions that are grouped into *logical hands
 
 The Windows WMCDC architecture uses native Windows drivers to manage the functions of your WMCDC device. For example, you can use the Windows telephony application program interface (TAPI) subsystem to manage the voice and data/fax modem functions of your device and the Windows network driver interface specification (NDIS) subsystem to manage the device's Ethernet LAN function. Furthermore, you can manage some functions, such as an Object Exchange Protocol (OBEX) function, in user-mode software with the assistance of the [WinUSB](winusb.md) (Winusb.sys).
 
-The following figure shows an example driver stack for a WMCDC device.
+This image shows an example driver stack for a WMCDC device.
 
 ![sample device configuration and driver stack](images/wmcdc-architecture.png)
 
@@ -85,7 +81,7 @@ In the preceding figure, the WMCDC device contains a single logical handset: an 
 
 The USB stack does not automatically support WMCDC. You must provide an INF file that loads an instance of Usbccgp.sys. The INF file must contain an **AddReg** section that sets the **EnumeratorClass** registry value in the software key that is associated with Usbccgp.sys to a REG\_BINARY value that is constructed from three numbers: 0x02, 0x00, and 0x 00. The following code example from an example INF file illustrates how to set **EnumeratorClass** to the appropriate value.
 
-```
+```INF
 [CCGPDriverInstall.NT]
 Include=usb.inf
 Needs=Composite.Dev.NT
@@ -145,23 +141,23 @@ There are two control models whose enumeration characteristics are configurable 
 </tbody>
 </table>
 
- 
+ 
 
 For example, to clear both bits (set them to 0), your INF file should have the following line in a **DDInstall.AddReg** section.
 
-```
+```INF
 HKR, , CdcFlags, 0x00010001, 0x00000000
 ```
 
 To set both bits to 1, your INF file should have the following line.
 
-```
+```INF
 HKR, , CdcFlags, 0x00010001, 0x00000011
 ```
 
 To set both bit 0 to 1 and bit 1 to 0, your INF file should have the following line.
 
-```
+```INF
 HKR, , CdcFlags, 0x00010001, 0x00000001
 ```
 
@@ -177,7 +173,7 @@ The Wireless Handset Control Model (WHCM) interface collection in the preceding 
 
 The following figure illustrates the PDO configuration when both bit 0 and bit 1 of **CdcFlags** are set.
 
-![diagram illustrating an interface collection to device object mapping for cdcflags = 0x00010001](images/cdcflags wpd.png)
+![diagram illustrating an interface collection to device object mapping for cdcflags = 0x00010001](images/cdcflags-wpd.png)
 
 Because bit 0 of **CdcFlags** is set to 1, the USB generic parent driver creates a PDO for the WHCM interface collection. Because bit 1 of **CdcFlags** is set to 1, the USB generic parent driver groups the two OBEX collections together and generates a single PDO for both OBEX collections.
 
@@ -185,7 +181,7 @@ You might want to represent OBEX collections with a single PDO at the kernel lev
 
 The following example INF file loads the USB generic parent driver to manage a WMCDC device and instructs the USB generic parent to create PDOs for logical handsets and to create a single PDO for all OBEX collections in the logical handset.
 
-```
+```INF
 [Version]
 signature="$Windows NT$"
 Class=USB
@@ -285,14 +281,14 @@ USB Audio Device class interface collections that occur on CDC and WMCDC devices
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&MI_%02x
-USB\Vid_%04x&Pid_%04x&MI_%02x</code></pre>
-<p>The hardware IDs for audio interface collections do not contain interface class-specific information. For an explanation of the formatting of hardware IDs that are associated with audio interface collections, see [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).</p></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;MI_%02x</code></pre>
+<p>The hardware IDs for audio interface collections do not contain interface class-specific information. For an explanation of the formatting of hardware IDs that are associated with audio interface collections, see <a href="support-for-the-wireless-mobile-communication-device-class--wmcdc-.md" data-raw-source="[Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md)">Support for the Wireless Mobile Communication Device Class</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_01&SubClass_01&Prot_00
-USB\Class_01&SubClass_01
+<td><pre space="preserve"><code class="language-syntax">USB\Class_01&amp;SubClass_01&amp;Prot_00
+USB\Class_01&amp;SubClass_01
 USB\Class_01</code></pre>
 <p>The format of compatible IDs for audio interface collections contains embedded information about the interface class, interface subclass, and the protocol. For audio interface collections on a CDC or WMCDC device, the interface class is 01, the subclass is 01, and the protocol is 00.</p></td>
 </tr>
@@ -346,15 +342,15 @@ Interface collections that comply with the CDC specification have the following 
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_02&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_02
-USB\Vid_%04x&Pid_%04x&Cdc_02&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_02</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_02&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_02
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_02&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_02</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_02&Prot_%02X
-USB\Class_02&SubClass_02
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_02&amp;Prot_%02X
+USB\Class_02&amp;SubClass_02
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
@@ -407,15 +403,15 @@ USB CDC ATM Networking Control Model (ANCM) interface collections have the follo
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_07&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_07
-USB\Vid_%04x&Pid_%04x&Cdc_07&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_07</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_07&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_07
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_07&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_07</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_07&Prot_00
-USB\Class_02&SubClass_07
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_07&amp;Prot_00
+USB\Class_02&amp;SubClass_07
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
@@ -470,13 +466,13 @@ USB CDC Common ISDN API (CAPI) Control Model interface collections have the foll
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_05&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_05</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_05&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_05</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_05&Prot_00
-USB\Class_02&SubClass_05</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_05&amp;Prot_00
+USB\Class_02&amp;SubClass_05</code></pre></td>
 </tr>
 <tr class="odd">
 <td><p>Special handling</p></td>
@@ -528,15 +524,15 @@ USB CDC Direct Line Control Model (DLCM) interface collections have the followin
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_01&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_01
-USB\Vid_%04x&Pid_%04x&Cdc_01&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_01</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_01&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_01
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_01&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_01</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_01&Prot_00
-USB\Class_02&SubClass_01
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_01&amp;Prot_00
+USB\Class_02&amp;SubClass_01
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
@@ -589,15 +585,15 @@ USB CDC Ethernet Networking Control Model (ENCM) interface collections have the 
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_06&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_06
-USB\Vid_%04x&Pid_%04x&Cdc_06&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_06</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_06&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_06
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_06&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_06</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_06&Prot_00
-USB\Class_02&SubClass_06
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_06&amp;Prot_00
+USB\Class_02&amp;SubClass_06
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
@@ -650,15 +646,15 @@ USB CDC Multi-Channel ISDN Control Model (MCCM) interface collections have the f
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_04&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_04
-USB\Vid_%04x&Pid_%04x&Cdc_04&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_04</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_04&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_04
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_04&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_04</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_04&Prot_00
-USB\Class_02&SubClass_04
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_04&amp;Prot_00
+USB\Class_02&amp;SubClass_04
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
@@ -668,7 +664,7 @@ USB\Class_02</code></pre></td>
 </tbody>
 </table>
 
- 
+ 
 #### CDC Telephone Control Model
 
 
@@ -712,15 +708,15 @@ USB CDC Telephone Control Model (TCM) interface collections have the following p
 </tr>
 <tr class="odd">
 <td><p>Hardware ID</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_03&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_03
-USB\Vid_%04x&Pid_%04x&Cdc_03&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_03</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_03&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_03
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_03&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_03</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible ID</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_03&Prot_%02X
-USB\Class_02&SubClass_03
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_03&amp;Prot_%02X
+USB\Class_02&amp;SubClass_03
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
@@ -775,15 +771,15 @@ However, the USB generic parent driver can enumerate MCPC interface collections 
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_88&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_88
-USB\Vid_%04x&Pid_%04x&Cdc_88&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_88</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_88&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_88
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_88&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_88</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_88&Prot_00
-USB\Class_02&SubClass_88
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_88&amp;Prot_00
+USB\Class_02&amp;SubClass_88
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
@@ -836,13 +832,13 @@ USB Video Device Class interface collections that occur on CDC and WMCDC devices
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&MI_%02x
-USB\Vid_%04x&Pid_%04x&MI_%02x</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;MI_%02x</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_0E&SubClass_01&Prot_00
-USB\Class_0E&SubClass_01
+<td><pre space="preserve"><code class="language-syntax">USB\Class_0E&amp;SubClass_01&amp;Prot_00
+USB\Class_0E&amp;SubClass_01
 USB\Class_0E</code></pre></td>
 </tr>
 <tr class="odd">
@@ -899,21 +895,21 @@ Interface collections that comply with the WMCDC specification have the followin
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_Modem&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_Modem
-USB\Vid_%04x&Pid_%04x&Cdc_Modem&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_Modem</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_Modem&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_Modem
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_Modem&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_Modem</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_Modem&Prot_%02X
-USB\Class_02&SubClass_Modem
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_Modem&amp;Prot_%02X
+USB\Class_02&amp;SubClass_Modem
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
 <td><p>Special handling</p></td>
 <td><p>The UFD might reference an audio interface collection that is enumerated independently of the ACM interface collection.</p>
-<p>Interface collections must comply with the special descriptor and endpoint requirements that are specified in section 6.2 of the WMCDC specification. If the interface collection does not comply with the WMCDC requirements but the interface complies with CDC requirements, the USB generic parent driver will enumerate the interface collection and generic hardware IDs with CDC formats, as described in [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).</p>
+<p>Interface collections must comply with the special descriptor and endpoint requirements that are specified in section 6.2 of the WMCDC specification. If the interface collection does not comply with the WMCDC requirements but the interface complies with CDC requirements, the USB generic parent driver will enumerate the interface collection and generic hardware IDs with CDC formats, as described in <a href="support-for-the-wireless-mobile-communication-device-class--wmcdc-.md" data-raw-source="[Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md)">Support for the Wireless Mobile Communication Device Class</a>.</p>
 <p>The compatible IDs of this control model have a match in a Microsoft-supplied INF file. If the operating system does not find a match for one of the hardware IDs in a vendor-supplied INF file, the system automatically loads the native telephony application programming interface (TAPI) modem filter driver to manage the modem function and sets the appropriate TAPI registry settings, unless the protocol code is 0xFE. If the protocol code is 0xFE, the vendor must supply a device or class co-installer to correctly populate the TAPI registry settings.</p></td>
 </tr>
 </tbody>
@@ -962,15 +958,15 @@ USB WMCDC Device Management Model (DMM) interface collections have the following
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_09&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_09
-USB\Vid_%04x&Pid_%04x&Cdc_09&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_09</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_09&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_09
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_09&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_09</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_09&Prot_%02X
-USB\Class_02&SubClass_09
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_09&amp;Prot_%02X
+USB\Class_02&amp;SubClass_09
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
@@ -1023,15 +1019,15 @@ USB WMCDC Mobile Direct Line Model (MDLM) interface collections have the followi
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_0A&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_0A
-USB\Vid_%04x&Pid_%04x&Cdc_0A&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_0A</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_0A&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_0A
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_0A&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_0A</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_0A&Prot_%02X
-USB\Class_02&SubClass_0A
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_0A&amp;Prot_%02X
+USB\Class_02&amp;SubClass_0A
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
@@ -1086,20 +1082,20 @@ When the USB generic parent driver assigns separate PDOs to each OBEX interface,
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_0B&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_0B
-USB\Vid_%04x&Pid_%04x&Cdc_0B&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_0B</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_0B&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_0B
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_0B&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_0B</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_0B&Prot_00
-USB\Class_02&SubClass_0B
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_0B&amp;Prot_00
+USB\Class_02&amp;SubClass_0B
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
 <td><p>Special handling</p></td>
-<td><p>The registry settings that are associated with the instance of the USB generic parent driver that manages the composite device determine whether OBEX interfaces are managed with a single PDO or multiple PDOs. For an explanation of the registry settings that specify how the USB generic parent driver enumerates OBEX interfaces, see [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).</p></td>
+<td><p>The registry settings that are associated with the instance of the USB generic parent driver that manages the composite device determine whether OBEX interfaces are managed with a single PDO or multiple PDOs. For an explanation of the registry settings that specify how the USB generic parent driver enumerates OBEX interfaces, see <a href="support-for-the-wireless-mobile-communication-device-class--wmcdc-.md" data-raw-source="[Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md)">Support for the Wireless Mobile Communication Device Class</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1149,19 +1145,19 @@ When the USB generic parent driver assigns a single PDO to all of the OBEX inter
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&WPD_OBEX&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&WPD_OBEX
-USB\Vid_%04x&Pid_%04x&WPD_OBEX&MI_%02x
-USB\Vid_%04x&Pid_%04x&WPD_OBEX</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;WPD_OBEX&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;WPD_OBEX
+USB\Vid_%04x&amp;Pid_%04x&amp;WPD_OBEX&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;WPD_OBEX</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&WPD_OBEX
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;WPD_OBEX
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
 <td><p>Special handling</p></td>
-<td><p>The registry settings that are associated with the instance of the USB generic parent driver that manages the composite device determine whether OBEX interfaces are managed with a single PDO or multiple PDOs. For an explanation of the registry settings that specify how the USB generic parent driver enumerates OBEX interfaces, see [Enumeration of Interface Collections on USB Composite Devices](support-for-interface-collections.md).</p></td>
+<td><p>The registry settings that are associated with the instance of the USB generic parent driver that manages the composite device determine whether OBEX interfaces are managed with a single PDO or multiple PDOs. For an explanation of the registry settings that specify how the USB generic parent driver enumerates OBEX interfaces, see <a href="support-for-interface-collections.md" data-raw-source="[Enumeration of Interface Collections on USB Composite Devices](support-for-interface-collections.md)">Enumeration of Interface Collections on USB Composite Devices</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1211,15 +1207,15 @@ Enumerated WHCM interface collections have the following properties.
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code>USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_08&MI_%02x
-USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_08
-USB\Vid_%04x&Pid_%04x&Cdc_08&MI_%02x
-USB\Vid_%04x&Pid_%04x&Cdc_08</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_08&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_08
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_08&amp;MI_%02x
+USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_08</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code>USB\Class_02&SubClass_08&Prot_00
-USB\Class_02&SubClass_08
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_08&amp;Prot_00
+USB\Class_02&amp;SubClass_08
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
@@ -1231,19 +1227,19 @@ USB\Class_02</code></pre></td>
 
 The hardware ID formats in the preceding topics describe use the following conventions:
 
--   a C-language **printf** format represents integers. For example, "%04x" means a 4-digit hexadecimal integer, "%02x" means a 2-digit hexadecimal integer, and so on.
+- a C-language **printf** format represents integers. For example, "%04x" means a 4-digit hexadecimal integer, "%02x" means a 2-digit hexadecimal integer, and so on.
 
--   The integer that follows the string "Vid\_" is a 4-digit hexadecimal representation of the vendor code that the USB committee (www.usb.org) assigns to the vendor.
+- The integer that follows the string "Vid\_" is a 4-digit hexadecimal representation of the vendor code that the USB committee (www.usb.org) assigns to the vendor.
 
--   The integer that follows the string "Pid\_" is a 4-digit hexadecimal representation of the product code that the vendor assigns to the device.
+- The integer that follows the string "Pid\_" is a 4-digit hexadecimal representation of the product code that the vendor assigns to the device.
 
--   The integer that follows the string "Rev\_" is a 4-digit hexadecimal representation of the revision number of the device.
+- The integer that follows the string "Rev\_" is a 4-digit hexadecimal representation of the revision number of the device.
 
--   The integer that follows the string "Cdc\_" is the interface subclass.
+- The integer that follows the string "Cdc\_" is the interface subclass.
 
--   The integer that follows the string "Prot\_" is the protocol number.
+- The integer that follows the string "Prot\_" is the protocol number.
 
--   The integer that follows the string "MI\_" is a 2-digit hexadecimal representation of the interface number, which is extracted from the **bInterfaceNumber** field of the interface descriptor.
+- The integer that follows the string "MI\_" is a 2-digit hexadecimal representation of the interface number, which is extracted from the **bInterfaceNumber** field of the interface descriptor.
 
 
 ### Enumeration of Interface Collections on USB Devices with IADs
@@ -1251,7 +1247,7 @@ The hardware ID formats in the preceding topics describe use the following conve
 
 If a USB composite device has an interface association descriptor (IAD) in its firmware, Windows enumerates interface collections as though each collection were a single device and assigns a single physical device object (PDO) to each interface collection and associates hardware and compatible identifiers (IDs) with the PDO. For a detailed description of IADs, see [USB Interface Association Descriptor](usb-interface-association-descriptor.md). This section describes the hardware IDs and compatible identifiers (IDs) assigned to interface collections associated with an IAD.
 
-## <a href="" id="hardware-ids"></a> Hardware IDs
+##  Hardware IDs
 
 
 `USB\VID_v(4)&PID_p(4)&Rev_r(4)&MI_z(2)`
@@ -1323,7 +1319,5 @@ In these compatible IDs, c(2), s(2), and p(2) contain values that are taken, res
 [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md)  
 [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Enumeration%20of%20Interface%20Collections%20on%20USB%20Composite%20Devices%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

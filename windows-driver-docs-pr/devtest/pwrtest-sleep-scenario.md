@@ -2,11 +2,8 @@
 title: PwrTest Sleep Scenario
 description: The PwrTest Sleep Scenario facilitates automated testing of sleep and resume transitions.
 ms.assetid: 2003ff3e-bc29-4741-a0a6-371948982679
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PwrTest Sleep Scenario
@@ -23,13 +20,13 @@ PwrTest is capable of directing the platform into one or more sleep states in an
 pwrtest /sleep [/c:n] [/d:n] [/p:n] [/h:{y|n}] [/s:{1|3|4|all|rnd|hibernate|standby}] [/unattend] [/e:n] [/?] 
 ```
 
-<span id="_c_n"></span><span id="_C_N"></span>**/c:***n*  
+<span id="_c_n"></span><span id="_C_N"></span>**/c:**<em>n</em>  
 Specifies the number of cycles (1 is the default) to run.
 
-<span id="_d_n"></span><span id="_D_N"></span>**/d:***n*  
+<span id="_d_n"></span><span id="_D_N"></span>**/d:**<em>n</em>  
 Specifies the delay time in seconds (90 is the default).
 
-<span id="_p_n"></span><span id="_P_N"></span>**/p:***n*  
+<span id="_p_n"></span><span id="_P_N"></span>**/p:**<em>n</em>  
 Specifies the sleep time in seconds (60 is default). If wake timer isn't supported for hibernate, the system will restart and immediately resume after writing the hibernation file) .
 
 <span id="_h_yn"></span><span id="_H_YN"></span>**/h:**{**y**|**n**}  
@@ -61,7 +58,7 @@ Specifies target state is any available Standby state (S1 or S3).
 <span id="_unattend____"></span><span id="_UNATTEND____"></span>**/unattend**   
 Specifies not to change system execution state after wakeup.
 
-<span id="_e_n"></span><span id="_E_N"></span>**/e:***n*  
+<span id="_e_n"></span><span id="_E_N"></span>**/e:**<em>n</em>  
 Specifies the timeout in seconds to wait for the transition end event (120 seconds is the default) .
 
 **Examples**
@@ -119,7 +116,6 @@ pwrtest pwrtest /sleep /c:4 /s:all
     </SleepTransitions> 
   </SleepScenario> 
 </PwrTestLog> 
-
 ```
 
 The following table describes the XML elements that appear in the log file.
@@ -195,18 +191,17 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20PwrTest%20Sleep%20Scenario%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

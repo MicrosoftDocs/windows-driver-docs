@@ -1,13 +1,9 @@
 ---
 title: GPIO Device Contexts
-author: windows-driver-content
 description: A general-purpose I/O (GPIO) controller device is represented by a framework device object.
 ms.assetid: 4BE99C71-9BA6-44E3-A54F-DE8C3440A474
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GPIO Device Contexts
@@ -19,11 +15,10 @@ When the GPIO framework extension (GpioClx) calls an event callback function tha
 
 GpioClx allocates the storage for a device object. If a GPIO controller driver has more than one device object, the device context for each of these objects is the same size. During the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine, the driver calls the [**GPIO\_CLX\_RegisterClient**](https://msdn.microsoft.com/library/windows/hardware/hh439490) method to register its callback functions and to specify the device context size that it requires. Later, during the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback routine, the driver calls the [**GPIO\_CLX\_ProcessAddDevicePostDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/hh439484) method to pass the new device object to GpioClx, and GpioClx allocates the device context for this object. Thereafter, when GpioClx calls a driver-implemented callback function, this device context is passed to the function as a parameter.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

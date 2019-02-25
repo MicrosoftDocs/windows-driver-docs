@@ -4,11 +4,8 @@ description: Overview of Device Metadata Packages
 ms.assetid: 1b17bdab-44e4-498b-ab80-f28fa94d9821
 keywords:
 - device metadata packages WDK , about
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Device Metadata Packages
@@ -46,11 +43,11 @@ This document contains data that specifies the display actions that the Devices 
 
 This data is formatted based on the [WindowsInfo XML Schema](https://msdn.microsoft.com/library/windows/hardware/ff553992).
 
-Each device metadata package has its components compressed into a single file by using the Cabarc (*Cabarc.exe*) tool. For more information about this tool, see to the [Cabarc Overview](http://go.microsoft.com/fwlink/p/?linkid=145395) website.
+Each device metadata package has its components compressed into a single file by using the Cabarc (*Cabarc.exe*) tool. For more information about this tool, see to the [Cabarc Overview](https://go.microsoft.com/fwlink/p/?linkid=145395) website.
 
 The file name of the device metadata package uses the following naming convention:
 
-```
+```cpp
 <GUID>.devicemetadata-ms
 ```
 
@@ -58,9 +55,9 @@ The *&lt;GUID&gt;* file prefix is a globally unique identifier (GUID) that is cr
 
 For more information, see [Building Device Metadata Packages](building-device-metadata-packages.md).
 
- 
+ 
 
- 
+ 
 
 
 

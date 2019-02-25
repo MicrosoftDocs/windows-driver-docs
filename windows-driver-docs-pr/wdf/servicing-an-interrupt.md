@@ -1,6 +1,5 @@
 ---
 title: Servicing an Interrupt
-author: windows-driver-content
 description: Servicing an Interrupt
 ms.assetid: b6306d2c-a7be-4fc3-8123-4d2b5c60c988
 keywords:
@@ -10,11 +9,8 @@ keywords:
 - interrupt service routines WDK KMDF
 - ISRs WDK KMDF
 - deferred procedure calls WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Servicing an Interrupt
@@ -46,9 +42,9 @@ Sometimes a driver must perform some interrupt-servicing operations at IRQL = PA
 
 For an example of a driver that uses work items while servicing device interrupts, see the [PCIDRV](sample-kmdf-drivers.md) sample driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,9 @@
 ---
 title: Keyboard and mouse class drivers
-author: windows-driver-content
 description: Non-HID keyboards and mice can connect over multiple legacy buses but still use the same class driver. 
 ms.assetid: 0771D802-4F1D-4612-8376-ED3113DCC652
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Keyboard and mouse class drivers
@@ -54,10 +50,10 @@ Kbdclass and Mouclass each feature:
 
 -   Connection of a [class service callback routine](https://msdn.microsoft.com/library/windows/hardware/ff542274) that a function driver uses to transfer data from the input data buffer of the device to the data buffer of the class driver.
 
-## <a href="" id="ddk-configuration-of-device-objects-for-a-single-keyboard-or-a-single-"></a>Configration of device objects
+## Configuration of device objects
 
 
-The following figure shows the configuration of device objects for a Plug and Play PS/2-style keyboard and mouse device. Each class driver creates an upper-level class [*filter device object*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-filter-device-object) (filter DO) that is attached to a function device object ([*FDO*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fdo)) through an optional upper-level device filter DO. An upper-level device filter driver creates the upper-level device filter DO. I8042prt creates the function DO and attaches it to a physical device object ([*PDO*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdo)) created by the root bus driver.
+The following figure shows the configuration of device objects for a Plug and Play PS/2-style keyboard and mouse device. Each class driver creates an upper-level class *filter device object* (filter DO) that is attached to a function device object (*FDO*) through an optional upper-level device filter DO. An upper-level device filter driver creates the upper-level device filter DO. I8042prt creates the function DO and attaches it to a physical device object (*PDO*) created by the root bus driver.
 
 ![diagram illustrating the configuration of device objects for a plug and play ps/2-style keyboard and mouse device](images/km-ovr2.png)
 
@@ -95,7 +91,7 @@ In the *grandmaster mode*, the class driver operates all the devices in the foll
 
 Kbdclass and Mouclass operate in the one-to-one mode if their registry entry value **ConnectMultiplePorts** is set to 0x00 (under the key **HKLM\\Services\\CurrentControlSet\\***&lt;class service&gt;***\\Parameters**, where *class service* is Kbdclass or Mouclass). Otherwise Kbdclass and Mouclass operate in grandmaster mode.
 
-## <a href="" id="ddk-open-and-close-a-keyboard-and-mouse-device-kg"></a>Open and close via the class driver
+## Open and close via the class driver
 
 
 The Microsoft Win32 subsystem opens all keyboard and mouse devices for its exclusive use. For each device class, the Win32 subsystem treats input from all the devices as if the input came from a single input device. An application cannot request to receive input from only one particular device.
@@ -117,7 +113,7 @@ After Kbdclass and Mouclass receive a create request they do the following for P
 
 The class drivers must connect their class service to a device before the device can be opened. The class drivers connect their class service after they attach a class DO to a device stack. The function driver uses the class service callback to transfer input data from a device to the class data queue for the device. The function driver's ISR dispatch completion routine for a device calls the class service callback. Kbdclass provides the class service callback [**KeyboardClassServiceCallback**](https://msdn.microsoft.com/library/windows/hardware/ff542324), and Mouclass provides the class service callback [**MouseClassServiceCallback**](https://msdn.microsoft.com/library/windows/hardware/ff542394).
 
-A vendor can modify the operation of a class service callback by installing an upper-level filter driver for a device. The sample filter driver [Kbfiltr](http://go.microsoft.com/fwlink/p/?linkid=256125) defines the [**KbFilter\_ServiceCallback**](https://msdn.microsoft.com/library/windows/hardware/ff542297) callback, and the sample filter driver [Moufiltr](http://go.microsoft.com/fwlink/p/?linkid=256135) defines the [**MouFilter\_ServiceCallback**](https://msdn.microsoft.com/library/windows/hardware/ff542380) callback. The sample filter service callbacks can be configured to modify the input data that is transferred from the port input buffer for a device to the class data queue. For example, the filter service callback can delete, transform, or insert data.
+A vendor can modify the operation of a class service callback by installing an upper-level filter driver for a device. The sample filter driver [Kbfiltr](https://go.microsoft.com/fwlink/p/?linkid=256125) defines the [**KbFilter\_ServiceCallback**](https://msdn.microsoft.com/library/windows/hardware/ff542297) callback, and the sample filter driver [Moufiltr](https://go.microsoft.com/fwlink/p/?linkid=256135) defines the [**MouFilter\_ServiceCallback**](https://msdn.microsoft.com/library/windows/hardware/ff542380) callback. The sample filter service callbacks can be configured to modify the input data that is transferred from the port input buffer for a device to the class data queue. For example, the filter service callback can delete, transform, or insert data.
 
 The class and filter service callbacks are connected in the following way:
 
@@ -131,7 +127,7 @@ The class and filter service callbacks are called in the following way:
 
 -   After filtering the input data, the filter service callback uses the class connect data that it saved to make a callback to the class service callback.
 
-## <a href="" id="ddk-query-and-set-a-keyboard-device-kg"></a>Query and set a keyboard device
+## Query and set a keyboard device
 
 
 I8042prt supports the following internal device control requests to query information about a keyboard device, and to set parameters on a keyboard device:
@@ -163,7 +159,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout
 
 **Note**  There is also a **Keyboard Layouts** key (notice the plural form) under the Control key, but that key should not be modified.
 
- 
+ 
 
 In the **Keyboard Layout** key, the **Scancode Map** value must be added. This value is of type REG\_BINARY (little Endian format) and has the data format specified in the following table.
 
@@ -177,7 +173,7 @@ In the **Keyboard Layout** key, the **Scancode Map** value must be added. This v
 | ...                     | ...             | ...                          |
 | Last 4 bytes            | 4               | Null Terminator (0x00000000) |
 
- 
+ 
 
 The first and second DWORDS store header information and should be set to all zeroes for the current version of the Scan Code Mapper. The third DWORD entry holds a count of the total number of mappings that follow, including the null terminating mapping. The minimum count would therefore be 1 (no mappings specified). The individual mappings follow the header. Each mapping is one DWORD in length and is divided into two WORD length fields. Each WORD field stores the scan code for a key to be mapped.
 
@@ -205,7 +201,7 @@ The following table contains these entries broken into DWORD fields and the byte
 | 0x003A001D | CAPS LOCK --&gt; Left CTRL key (0x3A --&gt; 0x1D). |
 | 0x00000000 | Null terminator.                                   |
 
- 
+ 
 
 *Example 2*
 
@@ -227,7 +223,7 @@ The following table contains these entries broken into DWORD fields and the byte
 | 0xE038E020 | Right ALT key --&gt; Mute key (0xE038 --&gt; 0xE020). |
 | 0x00000000 | Null terminator.                                      |
 
- 
+ 
 
 After the necessary data is generated, it can be inserted into the registry in several ways.
 
@@ -270,7 +266,7 @@ The following is a list of registry keys associated with the mouse class driver.
 -   ConnectMultiplePorts – Determines whether there is one or more than one port device object for each class device object. This entry is used primarily by device drivers.
 -   MouseDataQueueSize - Specifies the number of mouse events buffered by the mouse driver. It also is used in calculating the size of the mouse driver's internal buffer in the nonpaged memory pool.
 
-Additional details on each specific registry key are available on http://technet.microsoft.com
+Additional details on each specific registry key are available on https://technet.microsoft.com
 
 ## Absolute pointing devices
 
@@ -287,7 +283,7 @@ For an absolute pointing device, the device's function driver must set the **Las
 
 -   In addition to dividing the device input value by the maximum capability of the device, the driver scales the device input value by 0xFFFF:
 
-    ```
+    ```cpp
     LastX = ((device input x value) * 0xFFFF ) / (Maximum x capability of the device)
     LastY = ((device input y value) * 0xFFFF ) / (Maximum y capability of the device)
     ```
@@ -318,12 +314,10 @@ The following specifies, by type of device, how these special requirements for a
 
     A device-specific function driver is required. The function driver creates the required MOUSE\_INPUT\_DATA structures, scales the device input data, and sets the MOUSE\_MOVE\_ABSOLUTE flag before it calls **MouseClassServiceCallback**.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Keyboard%20and%20mouse%20class%20drivers%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

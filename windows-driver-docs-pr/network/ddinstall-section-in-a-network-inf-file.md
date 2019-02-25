@@ -6,17 +6,14 @@ keywords:
 - INF files WDK network , DDInstall section
 - network INF files WDK , DDInstall section
 - DDInstall section WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DDInstall Section in a Network INF File
 
 
-## <a href="" id="ddk-ddinstall-section-ng"></a>
+
 
 
 A *DDInstall* section in a network INF file is based on the generic [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344).
@@ -103,7 +100,7 @@ The **Characteristics** entry can have one or more of the following values (mult
 </tbody>
 </table>
 
- 
+ 
 
 ¹When using Windows Server 2012 R2, at least one network interface on the system must be marked with NCF\_PHYSICAL in order to be eligible for DHCPv6 client.
 
@@ -115,7 +112,7 @@ The following combinations of **Characteristics** values are not allowed:
 
 The following is an example of a **Characteristics** entry for a physical adapter that supports a user interface:
 
-```
+```INF
 Characteristics = 0x84; NCF_PHYSICAL, NCF_HAS_UI
 ```
 
@@ -190,15 +187,15 @@ A *DDInstall* section for a physical network adapter must contain a **BusType** 
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  If an adapter can function on more than one type of bus, the INF file that installs that adapter should contain a *DDInstall* section for each bus type.
 
- 
+ 
 
 For example, if an adapter can function on both the ISA bus and the PnPISA bus, the INF file for that adapter should contain a *DDInstall* section for ISA and a *DDInstall* section for PnPISA. The **BusType** entry in each such *DDInstall* section should specify the appropriate bus type for that section as follows:
 
-```
+```INF
 [a1.isa]
 BusType=1
  
@@ -211,24 +208,24 @@ BusType=14
 The *DDInstall* section of an INF file that installs a multiport network adapter must include either a **Port1DeviceNumber** entry or a **Port1FunctionNumber** entry. Specifying such an entry causes the adapter's port information to be displayed in the **Connection Properties** dialog box (which is accessed through the **Network** and **Dial-Up Connections** folder) when you select the adapter name or icon.
 
 -   If an adapter's port numbers map sequentially to PCI device numbers, use the **Port1DeviceNumber** entry. Set **Port1DeviceNumber** to the first PCI device number in the sequence. For example, if PCI device number 4 maps to port 1, PCI device number 5 maps to port 2, PCI device number 6 maps to port 3, and so forth, use the following entry:
-    ```
+    ```INF
     Port1DeviceNumber = 4
     ```
 
 -   If an adapter's port numbers map sequentially to PCI function numbers, use the **Port1FunctionNumber** entry. Set **Port1FunctionNumber** to the first PCI function number in the sequence. For example, if PCI function number 2 maps to port 1, PCI function number 3 maps to port 2, PCI function number 4 maps to port 3, and so forth, use the following entry:
-    ```
+    ```INF
     Port1FunctionNumber = 2
     ```
 
 **Note**  It is assumed that the mapping of PCI device numbers or PCI functions to port numbers is static. It is also assumed that the adapter's ports are numbered sequentially.
 
- 
+ 
 
 The **Port1DeviceNumber** and **Port1FunctionNumber** entries are mutually exclusive. If both entries are present in a given *DDInstall* Section, only the **Port1DeviceNumber** entry is used.
 
- 
+ 
 
- 
+ 
 
 
 

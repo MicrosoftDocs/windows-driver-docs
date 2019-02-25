@@ -6,11 +6,8 @@ keywords:
 - surface memory WDK display
 - listing surfaces WDK display
 - resource object surface memory WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Requesting and Using Surface Memory
@@ -27,17 +24,16 @@ The user-mode display driver calls the [**pfnAllocateCb**](https://msdn.microsof
 
 **Note**   The user-mode display driver must call the **pfnAllocateCb** function once for each shared surface for each device. For example, if device 1 creates a shared surface that is also used by devices 2, 3, and 4, then devices 2, 3, and 4 must also call **pfnAllocateCb** once for the shared surface in order to retrieve the allocation handle.
 
- 
+ 
 
 The user-mode display driver must track each surface to each allocation handle, typically, by maintaining a surface-to-allocation handle table. The user-mode display driver should store each allocation handle within the driver-defined resource object.
 
 When the Direct3D runtime performs an operation on a previously allocated surface (for example, in a call to the user-mode display driver's [**Blt**](https://msdn.microsoft.com/library/windows/hardware/ff538251) function), the user-mode display driver receives the handle to the resource, possibly with a surface index. The user-mode display driver uses this resource handle to retrieve the driver-defined resource object. The driver obtains the allocation handles that are stored in the resource object and assembles them in the command buffer. The user-mode display driver uses the allocation handles that correspond to the surfaces when calling the [**pfnRenderCb**](https://msdn.microsoft.com/library/windows/hardware/ff568923) function to submit a command buffer to the display miniport driver. The display miniport driver can call the [**DxgkCbGetHandleData**](https://msdn.microsoft.com/library/windows/hardware/ff559515) function to determine to which surface allocations the user-mode display driver refers.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Requesting%20and%20Using%20Surface%20Memory%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

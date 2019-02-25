@@ -3,17 +3,14 @@ title: .step_filter (Set Step Filter)
 description: The .step_filter command creates a list of functions that are skipped (stepped over) when tracing.
 ms.assetid: 9ce2bed4-fac0-4537-a129-7cb9f1e8725e
 keywords: [".step_filter (Set Step Filter) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .step_filter (Set Step Filter)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .step\_filter (Set Step Filter)
@@ -21,7 +18,7 @@ api_type:
 
 The **.step\_filter** command creates a list of functions that are skipped (stepped over) when tracing. This allows you to trace through code and skip only certain functions. It can also be used in source mode to control stepping when there are multiple function calls on one line.
 
-```
+```dbgcmd
 .step_filter "FilterList" 
 .step_filter /c 
 .step_filter 
@@ -30,8 +27,8 @@ The **.step\_filter** command creates a list of functions that are skipped (step
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
 
-<span id="_FilterList_"></span><span id="_filterlist_"></span><span id="_FILTERLIST_"></span>**"***FilterList***"**  
-Specifies the symbols associated with functions to be stepped over. *FilterList* can contain any number of text patterns separated by semicolons. Each of these patterns may contain a variety of wildcards and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details. A function whose symbol matches at least one of these patterns will be stepped over during tracing. Each time **"***FilterList***"** is used, any previous filter list is discarded and completely replaced with the new list.
+<span id="_FilterList_"></span><span id="_filterlist_"></span><span id="_FILTERLIST_"></span>**"**<em>FilterList</em>**"**  
+Specifies the symbols associated with functions to be stepped over. *FilterList* can contain any number of text patterns separated by semicolons. Each of these patterns may contain a variety of wildcards and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details. A function whose symbol matches at least one of these patterns will be stepped over during tracing. Each time **"**<em>FilterList</em>**"** is used, any previous filter list is discarded and completely replaced with the new list.
 
 <span id="________c______"></span><span id="________C______"></span> **/c**   
 Clears the filter list.
@@ -59,7 +56,7 @@ Clears the filter list.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,7 +69,7 @@ If the instruction pointer is located within code that is listed in the filter l
 
 For example, the following command will cause trace commands to skip over all CRT calls:
 
-```
+```dbgcmd
 .step_filter "msvcrt!*" 
 ```
 
@@ -80,7 +77,7 @@ The **.step\_filter** command is most useful when you are debugging in source mo
 
 For example, in the following line, the [**t**](t--trace-.md) command will step into both GetTickCount and printf, while the [**p**](p--step-.md) command will step over both function calls:
 
-```
+```dbgcmd
 printf( "%x\n", GetTickCount() );
 ```
 
@@ -90,11 +87,10 @@ Because the functions are identified by symbol, a single filter can include an e
 
 When debugging in assembly mode, each call is on a different line, so you can choose whether to step or trace line-by-line. So **.step\_filter** is not very useful in assembly mode.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.step_filter%20%28Set%20Step%20Filter%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

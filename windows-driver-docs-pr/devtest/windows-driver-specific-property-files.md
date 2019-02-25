@@ -2,11 +2,8 @@
 title: Windows driver-specific property files
 description: The driver property sheets have default settings for all of the tools that MSBuild uses to build any driver project.
 ms.assetid: 696EE510-266B-457A-B74E-491D7804B833
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # <span id="devtest.windows_driver-specific_property_files"></span>Windows driver-specific property files
@@ -18,10 +15,10 @@ The following table summarizes these property sheets and their use in terms of t
 
 **Note**  In the Windows Driver Kit (WDK) 8, the names of the driver property sheet files included the kit version number (8.0), for example, **WindowsDriver8.0.KernelMode.ExportDriver.props**.
 
- 
+ 
 
 <span id="__WDKContentRoot_"></span><span id="__wdkcontentroot_"></span><span id="__WDKCONTENTROOT_"></span>**$(WDKContentRoot)**  
-By default, WDKContentRoot is defined in the registry as: **$(Registry:HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows Kits\\WDK@WDKContentRoot)** which points to **%programfiles%\\Windows Kits\\*version***.
+By default, WDKContentRoot is defined in the registry as: <strong>$(Registry:HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows Kits\\WDK@WDKContentRoot)</strong> which points to **%programfiles%\\Windows Kits\\*version***.
 
 $(WDKContentRoot)\\build will have all the core build extensions that are needed to build a driver.
 
@@ -70,11 +67,10 @@ These property settings are the common settings that are required to build any u
 <span id="WindowsDriver.UserMode.UMDF"></span><span id="windowsdriver.usermode.umdf"></span><span id="WINDOWSDRIVER.USERMODE.UMDF"></span>**WindowsDriver.UserMode.UMDF**  
 These property settings are the special settings that you must apply when you build a UMDF driver. MSBuild uses the **$(DriverType)** property to specify the driver type as **UMDF**, as in the following example: *&lt;DriverType&gt;UMDF&lt;/DriverType&gt;*.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Windows%20driver-specific%20property%20files%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

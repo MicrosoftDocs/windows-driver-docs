@@ -1,17 +1,13 @@
 ---
 title: GDL Macro Arguments
-author: windows-driver-content
 description: GDL Macro Arguments
 ms.assetid: 2aeaf2fd-39e3-4661-85d1-ccb855a73044
 keywords:
 - GDL WDK , macros
 - macros WDK GDL , arguments
 - macros WDK GDL , examples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GDL Macro Arguments
@@ -23,7 +19,7 @@ If a macro definition omits references to one or more formal arguments, the para
 
 For example, the following macro reference uses only the fifth argument. The first four are omitted.
 
-```
+```cpp
 *Attribute: =Macro(,,,, =PassedInMacroRef)
 ```
 
@@ -33,7 +29,7 @@ For value macros, no whitespace is allowed between the macro reference and its p
 
 For example, consider the following code example.
 
-```
+```cpp
 *Attrib:   =Macro1 (=Macro2)       *%  is 2 separate macro references
     while
 *Attrib:   =Macro1(=Macro2)        *% you are passing Macro2 as a 
@@ -44,7 +40,7 @@ If macro definitions are nested, the formal arguments can be used only by the co
 
 Macro references that occur within a macro definition can contain parameter lists that name macros that themselves require parameters lists. However, a parameter list cannot be supplied for references to formal arguments. For example, the following entry within a block macro definition is acceptable.
 
-```
+```cpp
 *Attrib1: =Macro1(=Macro2(=Macro3(=Arg1, =Arg2)))
 ```
 
@@ -52,7 +48,7 @@ In the preceding example, =MacroN represents a reference to a previously defined
 
 However, the following code example is not an acceptable entry.
 
-```
+```cpp
 *Attrib2: =Arg1(=Arg2, =Arg3(=Macro1, =Macro2))   *%  Not Valid !
 ```
 
@@ -62,7 +58,7 @@ For value macros, if no formal argument list was declared in the \*Macros constr
 
 For example, consider if =Macro1 is defined by the following code example.
 
-```
+```cpp
 *Macros:   NoArgList
 {
 Macro1:  "a Value macro with no argument list"
@@ -73,18 +69,16 @@ Macro3:  "a Value macro with no argument list"
 
 Then, the following macro reference will be interpreted as three separate and unrelated macro references.
 
-```
+```cpp
 *attribute:  =Macro1(=Macro2, =Macro3)
 ```
 
 The parser will not interpret (=Macro2, =Macro3) to be a parameter list for =Macro1. This behavior preserves backward compatibility with current GPDs.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20GDL%20Macro%20Arguments%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

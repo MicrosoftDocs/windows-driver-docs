@@ -6,11 +6,8 @@ keywords:
 - driver selections WDK device installations , where Device setupsearches
 - locating drivers for device installation WDK device installations , where Device setupsearches
 - searching for drivers during device installation WDK device installations , where Device setupsearches
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Where Windows Searches for Drivers
@@ -36,8 +33,8 @@ After a device is attached, Windows attempts to locate a matching [driver packag
 <td align="left">Before a driver is installed</td>
 <td align="left"><p>DevicePath</p>
 <p>Windows Update</p>
-<p>[Driver store](driver-store.md)</p></td>
-<td align="left">[Driver store](driver-store.md)</td>
+<p><a href="driver-store.md" data-raw-source="[Driver store](driver-store.md)">Driver store</a></p></td>
+<td align="left"><a href="driver-store.md" data-raw-source="[Driver store](driver-store.md)">Driver store</a></td>
 </tr>
 <tr class="even">
 <td align="left">After initial driver is selected</td>
@@ -48,7 +45,7 @@ After a device is attached, Windows attempts to locate a matching [driver packag
 </tbody>
 </table>
 
- 
+ 
 
 ### Searching for driver packages
 
@@ -56,25 +53,25 @@ After a device is attached, Windows first attempts to locate and install a drive
 
 -   The best matching driver that already exists in the driver store is first installed onto the device, allowing the device to begin operation quickly. In parallel and in a different process, the following will happen:
 
--   Windows automatically downloads matching [driver packages](driver-packages.md) from Windows Update. If a matching driver package is found, Windows downloads the package and stages it to the [driver store](driver-store.md).
+-   Windows automatically downloads matching [driver packages](driver-packages.md) from Windows Update. If a matching driver package is found, Windows downloads the package and stages it to the [driver store](driver-store.md). In Windows 10 version 1709 and greater, Windows offers the best ranked driver, which is not necessarily the most recent. Driver ranking considers HWID, date/version, and critical/automatic/optional category. Windows ranks critical or automatic drivers highest. If a matching driver is not found, WU looks next for optional drivers. As a result, an older critical driver of otherwise equal rank takes precedence over a newer optional driver. In Windows versions earlier than 1709, Windows offers critical and optional updates with equal precedence.
 
     Windows also searches for driver packages that were preloaded in the locations that are specified by the **DevicePath** registry value. This value is under the following subkey of the registry.
 
-    ```
+    ```cpp
     HKEY_LOCAL_MACHINE
-       Software
-          Microsoft
-             Windows
-                CurrentVersion
+       Software
+          Microsoft
+             Windows
+                CurrentVersion
     ```
 
     By default, the **DevicePath** value specifies the %SystemRoot%\\INF directory.
 
     If a better matching driver package than was initially installed is found either on Windows Update or in a location that is specified by the **DevicePath** value, Windows first stages the driver package to the [driver store](driver-store.md) before the driver is installed. In this way, Windows always installs drivers from the driver store.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,20 +1,69 @@
 ---
-title: What's new for Windows 10 display drivers (WDDM 2.0)
+title: What's new for Windows 10 display drivers (WDDM 2.x)
 description: Describes new features in Windows 10 for display drivers
 ms.assetid: 619175D4-98DA-4B17-8F6F-71B13A31374D
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 12/06/2018
+ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# What's new for Windows 10 display drivers (WDDM 2.0)
+# What's new for Windows 10 display drivers (WDDM 2.0 and later)
 
+## WDDM 2.5
 
-### <span id="Memory_Management"></span><span id="memory_management"></span><span id="MEMORY_MANAGEMENT"></span>Memory Management
+### Content changes
 
-GPU virtual memory
+| Topic | Date | Description |
+| --- | --- | --- |
+| [EDID Extension (VSDB) for HMDs and Specialized Displays](specialized-monitors-edid-extension.md) | 12/03/2018 | Specification for Display Manufacturers |
+| [DirectX Graphics Kernel Subsystem (Dxgkrnl.sys)](directx-graphics-kernel-subsystem.md) | 12/04/2018 | Kernel-mode interfaces that the Windows operating system implements through the Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys). |
+| [WDDM 2.1 Features](wddm-2-1-features.md) | 01/10/2019|Describes new and updated features for WDDM 2.1 |
+
+### Raytracing
+
+New Direct3D DDI's were created in parallel of Direct3D API's, in order to support hardware-accelerated raytracing. Example DDIs include: 
+
+* [PFND3D12DDI_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_build_raytracing_acceleration_structure_0054) 
+* [PFND3D12DDI_COPY_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_copy_raytracing_acceleration_structure_0054)
+* [PFND3D12DDI_EMIT_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_emit_raytracing_acceleration_structure_postbuild_info_0054)
+* [PFND3D12DDI_GET_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_get_raytracing_acceleration_structure_prebuild_info_0054)
+
+For more info about raytracing, see:
+
+* [Announcing Microsoft DirectX Raytracing](https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/)
+* [DirectX Raytracing and the Windows 10 October 2018 Update](https://blogs.msdn.microsoft.com/directx/2018/10/02/directx-raytracing-and-the-windows-10-october-2018-update/)
+* [DirectX Forums](https://forums.directxtech.com/index.php?topic=5985.0)
+
+## WDDM 2.1
+
+WDDM 2.1 enables new scenarios and provides significant improvements in the areas of performance, reliability, upgrade resiliency, diagnostic improvements and future system advancements for the Windows graphics sub-system.
+The WDDM 2.0 driver model is a pre-requisite for D3D12. WDDM 2.0 and DirectX12 are available only on Windows 10 and higher.
+
+The following is a list of feature additions and updates for WDDM 2.1.
+
+* Improved graphics performance by reducing overhead time spent in memory management and more efficient usage of scarce graphics memory. The graphics performance improvements are:
+
+    * Offer and reclaim resources - offer and reclaim improvements to reduce memory footprint of applications running in background mode.
+    * Support for 2MB Page Table Entry encoding - In WDDM 2.1, large Page Table Entry (PTE) encoding in VRAM is enabled. This change boosts performance on systems that support it.
+    * Support for 64KB memory pages - Virtual memory allocations using a 64KB granularity is also supported in WDDM 2.1. This change especially benefits APUs and SoCs by reducing overhead for accessing virtual memory pages.
+
+* Hardware-based protected content improvements with *present batching* ([PlayReady 3.0](https://docs.microsoft.com/playready/))
+
+* Driver Store installation for graphics drivers to improve driver upgrade resiliency.
+
+* DXIL, a new shader complier language
+
+* D3D12 performance and optimization improvements
+
+* Improved diagnostic options for developers
+
+For more information, see [WDDM 2.1 Features](wddm-2-1-features.md).
+
+## WDDM 2.0
+
+WDDM 2.0 includes memory management updates.
+
+### GPU virtual memory
 
 -   All physical memory is abstracted into virtual segments that can be managed by the graphics processing unit (GPU) memory manager.
 -   Each process gets its own GPU virtual address space.
@@ -22,7 +71,7 @@ GPU virtual memory
 
 For more details, see [GPU virtual memory in WDDM 2.0](gpu-virtual-memory-in-wddm-2-0.md).
 
-Driver residency
+### Driver residency
 
 -   The video memory manager makes sure that allocations are resident in memory before submitting command buffers to the driver. To facilitate this functionality, new user mode driver device driver interfaces (DDIs) have been added ([*MakeResident*](https://msdn.microsoft.com/library/windows/hardware/dn906357), [*TrimResidency*](https://msdn.microsoft.com/library/windows/hardware/dn906364), [*Evict*](https://msdn.microsoft.com/library/windows/hardware/dn906355)).
 -   The allocation and patch location list is being phased out because it is not necessary in the new model.
@@ -31,12 +80,3 @@ Driver residency
 -   New DDIs have been added for process synchronization and context monitoring.
 
 For more details, see [Driver residency in WDDM 2.0](driver-residency-in-wddm-2-0.md).
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20What's%20new%20for%20Windows%C2%A010%20display%20drivers%20%28WDDM%202.0%29%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

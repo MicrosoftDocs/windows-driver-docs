@@ -2,11 +2,8 @@
 title: Querying for Information from the GPU
 description: Querying for Information from the GPU
 ms.assetid: 0d3942c2-3ae8-4eaa-9780-f146dd49699c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Querying for Information from the GPU
@@ -20,7 +17,7 @@ Each query object instance exists in one of three states: *building*, *issued*, 
 
 **Note**   All query types support *QueryBegin* except for D3D10DDI\_QUERY\_EVENT and D3D10DDI\_QUERY\_TIMESTAMP. The building concept does not exist for D3D10DDI\_QUERY\_EVENT and D3D10DDI\_QUERY\_TIMESTAMP.
 
- 
+ 
 
 The runtime calls the driver's [**QueryEnd**](https://msdn.microsoft.com/library/windows/hardware/ff569217) function to transition the query object to the issued state. Transitions to the signaled state occur asynchronously some time later. The runtime calls the driver's [**QueryGetData**](https://msdn.microsoft.com/library/windows/hardware/ff569218) function to detect whether the query has transitioned to the signaled state. If the query is in the signaled state, *QueryGetData* can pass back data that applies to the query in the memory region that the *pData* parameter points to.
 
@@ -28,11 +25,10 @@ All query objects of the same type are FIFO (that is, first-in, first-out). For 
 
 When the runtime no longer requires the query object, the runtime frees the memory region that the runtime previously allocated for the object and calls the driver's [**DestroyQuery(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff552785) function to notify the driver that the driver can no longer access this memory region.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Querying%20for%20Information%20from%20the%20GPU%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

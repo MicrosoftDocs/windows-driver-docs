@@ -3,17 +3,14 @@ title: avrf
 description: The avrf extension controls the settings of Application Verifier and displays a variety of output produced by Application Verifier.
 ms.assetid: e9313954-a1fa-45a9-bc1a-78be2451f5aa
 keywords: ["avrf Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
 - avrf
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !avrf
@@ -21,27 +18,27 @@ api_type:
 
 The **!avrf** extension controls the settings of [Application Verifier](application-verifier.md) and displays a variety of output produced by Application Verifier.
 
-```
-!avrf
-!avrf -vs { Length | -a Address }
-!avrf -hp { Length | -a Address }
-!avrf -cs { Length | -a Address }
-!avrf -dlls [ Length ]
-!avrf -trm
-!avrf -ex [ Length ] 
-!avrf -threads [ ThreadID ]
-!avrf -tp [ ThreadID ]
-!avrf -srw  [ Address | Address Length ] [ -stats ]
-!avrf -leak  [ -m ModuleName] [ -r ResourceType] [ -a Address ] [ -t ]
-!avrf -trace TraceIndex 
-!avrf -cnt
-!avrf -brk [BreakEventType]  
-!avrf -flt [EventType Probability] 
-!avrf -flt break EventType 
-!avrf -flt stacks Length 
-!avrf -trg [ Start End | dll Module | all ] 
-!avrf -settings 
-!avrf -skp [ Start End | dll Module | all | Time ] 
+```dbgcmd
+    !avrf
+    !avrf -vs { Length | -a Address }
+    !avrf -hp { Length | -a Address }
+    !avrf -cs { Length | -a Address }
+    !avrf -dlls [ Length ]
+    !avrf -trm
+    !avrf -ex [ Length ] 
+    !avrf -threads [ ThreadID ]
+    !avrf -tp [ ThreadID ]
+    !avrf -srw  [ Address | Address Length ] [ -stats ]
+    !avrf -leak  [ -m ModuleName] [ -r ResourceType] [ -a Address ] [ -t ]
+    !avrf -trace TraceIndex 
+    !avrf -cnt
+    !avrf -brk [BreakEventType]  
+    !avrf -flt [EventType Probability] 
+    !avrf -flt break EventType 
+    !avrf -flt stacks Length 
+    !avrf -trg [ Start End | dll Module | all ] 
+    !avrf -settings 
+    !avrf -skp [ Start End | dll Module | all | Time ] 
 ```
 
 ## <span id="ddk__avrf_dbg"></span><span id="DDK__AVRF_DBG"></span>Parameters
@@ -74,7 +71,7 @@ Displays the threadpool log. This log contains stack traces for various operatio
 <span id="-srw____Address___Address_Length_____-stats___"></span><span id="-srw____address___address_length_____-stats___"></span><span id="-SRW____ADDRESS___ADDRESS_LENGTH_____-STATS___"></span>**-srw \[** *Address* **|** *Address Length* **\] \[ -stats \]**   
 Displays the Slim Reader/Writer (SRW) log. If you specify *Address*, records for the SRW lock at that address are displayed. If you specify *Address* and *Length*, records for SRW locks in that address range are displayed. If you include the **-stats** option, the SRW lock statistics are displayed.
 
-<span id="-leak___-m_ModuleName____-r_ResourceType____-a_Address_____-t___"></span><span id="-leak___-m_modulename____-r_resourcetype____-a_address_____-t___"></span><span id="-LEAK___-M_MODULENAME____-R_RESOURCETYPE____-A_ADDRESS_____-T___"></span>**-leak \[ -m** *ModuleName***\] \[ -r** *ResourceType***\] \[ -a** *Address* **\] \[ -t \]**   
+<span id="-leak___-m_ModuleName____-r_ResourceType____-a_Address_____-t___"></span><span id="-leak___-m_modulename____-r_resourcetype____-a_address_____-t___"></span><span id="-LEAK___-M_MODULENAME____-R_RESOURCETYPE____-A_ADDRESS_____-T___"></span>**-leak \[ -m** <em>ModuleName</em>**\] \[ -r** <em>ResourceType</em>**\] \[ -a** *Address* **\] \[ -t \]**   
 Displays the outstanding resources log. These resources may or may not be leaks at any given point. If you specify *Modulename* (including the extension), all outstanding resources in the specified module are displayed. If you specify *ResourceType*, all outstanding resources of that resource type are displayed. If you specify *Address*, records of outstanding resources with that address are displayed. *ResourceType* can be one of the following:
 
 Heap: Displays heap allocations using Win32 Heap APIs
@@ -134,11 +131,10 @@ If an Application Verifier Stop has occurred, the **!avrf** extension with no pa
 
 If symbols for ntdll.dll and verifier.dll are missing, the **!avrf** extension generates an error message. For information about how to address this problem, see "Setting Up a Debugger for Application Verifier" in the Application Verifier documentation.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!avrf%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

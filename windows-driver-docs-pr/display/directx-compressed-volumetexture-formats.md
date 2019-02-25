@@ -13,11 +13,8 @@ keywords:
 - slicing WDK DirectDraw
 - volume textures WDK DirectDraw
 - volumetric rendering WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DirectX Compressed VolumeTexture Formats
@@ -44,7 +41,7 @@ A DXV*N* surface stored in the 1-deep arrangement contains one set of 4x4 DXT*N*
 
 Given a texel coordinate *(u, v, p)* where *u* {0,1,...,*width*-1}, *v* {0, 1, ..., *height*-1}, and *p* {0, 1, ..., *depth*-1}, the following can be used to compute the corresponding address of the compressed block and subblock in memory containing that texel. As mentioned above, the subblock format matches the existing DXT*N* format:
 
-```
+```cpp
 subblock_size = 8 (for DXT1)
 subblock_size = 16 (for DXT2,...,DXT5)
 block_size = MIN(p, 4) * subblock_size
@@ -55,11 +52,10 @@ block_byte_address = block_size *
 subblock_byte_address = block_byte_address + ((p & 3) * subblock_size)
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20DirectX%20Compressed%20VolumeTexture%20Formats%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

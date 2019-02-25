@@ -7,11 +7,8 @@ keywords:
 - DirectDraw extended surface alignment WDK Windows 2000 display
 - surfaces WDK DirectDraw , extended alignment
 - extended surface alignment WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Extended Surface Alignment
@@ -44,13 +41,12 @@ The driver should fill in the [**DDSCAPS**](https://msdn.microsoft.com/library/w
 
 **Note**   DirectDraw compares a new surface's capabilities against the entries in the [**HEAPALIGNMENT**](https://msdn.microsoft.com/library/windows/hardware/ff567265) structure in the order in which they are specified. For example, a surface with DDSCAPS\_MIPMAP | DDSCAPS\_TEXTURE | DDSCAPS\_FLIP set is aligned according to the **Texture** member of the HEAPALIGNMENT structure, because this is the first applicable capabilities bit for which an alignment is specified (that is, **Texture** appears before **FlipTarget** in the HEAPALIGNMENT structure). The **FlipTarget** member is not considered in this example. Because back buffers in a primary flipping chain are marked with DDSCAPS\_FLIP and no other bit for which an alignment can be specified, such surfaces are aligned according to the **FlipTarget** member. Surfaces that could potentially become members of a primary flipping chain (those with the same pixel format and size as the primary surface) are also aligned according to the **FlipTarget** member.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Using%20Extended%20Surface%20Alignment%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

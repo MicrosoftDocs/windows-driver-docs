@@ -1,22 +1,18 @@
 ---
 title: IEC-61883 Protocol Driver in a Client Driver Stack
-author: windows-driver-content
 description: IEC-61883 Protocol Driver in a Client Driver Stack
 ms.assetid: cee0c0ee-7326-421c-af5a-b483c878b289
 keywords:
 - IEC-61883 client drivers WDK IEEE 1394 bus
 - 61883 WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IEC-61883 Protocol Driver in a Client Driver Stack
 
 
-## <a href="" id="ddk-iec-61883-protocol-driver-in-a-client-driver-stack-kg"></a>
+
 
 
 IEC-61883 client drivers rely on *61883.sys* to communicate with their devices using the IEC-61883 protocol.
@@ -41,15 +37,14 @@ Starting from the top of the diagram:
 
 -   The 1394 bus driver, *1394bus.sys*, enumerates devices on the IEEE 1394 bus and responds to Plug and Play and power management IRPs on their behalf.
 
--   The port driver for the host controller provides a hardware-independent interface to the IEEE 1394 bus. The port driver handles some IRPs and forwards others to the port driver for the motherboard's host controller. Microsoft supplies a standard port driver, *ohci1394.sys*, for host controllers that satisfy the *1394 Open Host Controller Interface Specification*, which is available for download from the [IEEE 1394 technology](http://go.microsoft.com/fwlink/p/?linkid=8729) website.
+-   The port driver for the host controller provides a hardware-independent interface to the IEEE 1394 bus. The port driver handles some IRPs and forwards others to the port driver for the motherboard's host controller. Microsoft supplies a standard port driver, *ohci1394.sys*, for host controllers that satisfy the *1394 Open Host Controller Interface Specification*, which is available for download from the [IEEE 1394 technology](https://go.microsoft.com/fwlink/p/?linkid=8729) website.
 
 AV/C subunit drivers are just one of the possible types of IEC-61883 client drivers. Another example would be a driver that utilizes the HAVi protocol layered above IEC-61883. Although *61883.sys* and the IEC-61883 protocol do not have any AV/C or HAVi dependencies, clients of *61883.sys* can operate under different constraints. For example, AV/C subunit drivers are usually clients of *avc.sys*, which provides FCP-related functions and blocks upper-level drivers from sending FCP-related requests down the stack to be handled by *61883.sys*.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

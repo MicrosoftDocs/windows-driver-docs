@@ -3,17 +3,14 @@ title: Bug Check 0x9E USER_MODE_HEALTH_MONITOR
 description: The USER_MODE_HEALTH_MONITOR bug check has a value of 0x0000009E. This bug check indicates that one or more critical user-mode components failed to satisfy a health check.
 ms.assetid: 5ad56234-5150-4acb-828d-198c2e5fb9b6
 keywords: ["Bug Check 0x9E USER_MODE_HEALTH_MONITOR", "USER_MODE_HEALTH_MONITOR"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 12/26/2018
 topic_type:
 - apiref
 api_name:
 - USER_MODE_HEALTH_MONITOR
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9E: USER\_MODE\_HEALTH\_MONITOR
@@ -21,43 +18,87 @@ api_type:
 
 The USER\_MODE\_HEALTH\_MONITOR bug check has a value of 0x0000009E. This bug check indicates that one or more critical user-mode components failed to satisfy a health check.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## USER\_MODE\_HEALTH\_MONITOR Parameters
 
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>1</p></td>
-<td align="left"><p>The process that failed to satisfy a health check in the configured time-out</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>2</p></td>
-<td align="left"><p>The health monitoring time-out, in seconds</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>3</p></td>
-<td align="left"><p>Reserved</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4</p></td>
-<td align="left"><p>Reserved</p></td>
-</tr>
-</tbody>
-</table>
+|Parameter|Description|
+|--- |--- |
+|1|The process that failed to satisfy a health check in the configured time-out|
+|2|The health monitoring time-out, in seconds|
+|3|Watchdog source. In combination with process address helps to identify what sub-component has created this watchdog. Values listed below.|
+|4|Reserved|
+ 
 
- 
+**VALUES** 
+
+```text
+        0  : WatchdogSourceDefault
+              Source was not specified
+        1  : WatchdogSourceRhsCleanup
+              Monitors that RHS process goes away when
+              terminating on graceful exit
+        2  : WatchdogSourceRhsResourceDeadlockBugcheckNow
+              RHS was asked to immediately bugcheck machine
+              on resource deadlock
+        3  : WatchdogSourceRhsExceptionFromResource
+              Resource has leaked unhandled exception from an entry point,
+              RHS is terminating and this watchdog monitors that
+              process will go away
+        4  : WatchdogSourceRhsUnhandledException
+              Unhandled exception in RHS.
+              RHS is terminating and this watchdog monitors that
+              process will go away
+        5  : WatchdogSourceRhsResourceDeadlock
+              Monitors that RHS process goes away when
+              terminating on resource deadlock
+        6  : WatchdogSourceRhsResourceTypeDeadlock
+              Monitors that RHS process goes away when
+              terminating on resource type deadlock
+        7  : WatchdogSourceClussvcUnhandledException
+              Unhandled exception in clussvc.
+              clussvc is terminating and this watchdog monitors that
+              process will go away
+        8  : WatchdogSourceClussvcBugcheckMessageRecieved
+              Another cluster node has sent message asking to bugcheck this node.
+        9  : WatchdogSourceClussvcWatchdogBugcheck
+              User mode watchdog has expired and created netft watchdog
+              to bugchecked the node.
+       0xA : WatchdogSourceClussvcIsAlive
+              Cluster service sends heartbeat to netft every 500 millseconds.
+              By default, netft expects at least 1 heartbeat per second.
+              If this watchdog was triggered that means clussvc is not getting
+              CPU to send heartbeats.
+      0x65 : WatchdogSourceRhsResourceDeadlockPhysicalDisk
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0x66 : WatchdogSourceRhsResourceDeadlockStoragePool
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0x67 : WatchdogSourceRhsResourceDeadlockFileServer
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0x68 : WatchdogSourceRhsResourceDeadlockSODAFileServer
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0x69 : WatchdogSourceRhsResourceDeadlockStorageReplica
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0x6A : WatchdogSourceRhsResourceDeadlockStorageQOS
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0x6B : WatchdogSourceRhsResourceDeadlockStorageNFSV2
+               A subclass of WatchdogSourceRhsResourceDeadlock.
+      0xC9 : WatchdogSourceRhsResourceTypeDeadlockPhysicalDisk
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+      0xCA : WatchdogSourceRhsResourceTypeDeadlockStoragePool
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+      0xCB : WatchdogSourceRhsResourceTypeDeadlockFileServer
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+      0xCC : WatchdogSourceRhsResourceTypeDeadlockSODAFileServer
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+      0xCD : WatchdogSourceRhsResourceTypeDeadlockStorageReplica
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+      0xCE : WatchdogSourceRhsResourceTypeDeadlockStorageQOS
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+      0xCF : WatchdogSourceRhsResourceTypeDeadlockStorageNFSV2
+               A subclass of WatchdogSourceRhsResourceTypeDeadlock.
+```
 
 Cause
 -----
@@ -66,11 +107,11 @@ Hardware mechanisms, such as watchdog timers, can detect that basic kernel servi
 
 Kernel components can extend watchdog timer functionality to user mode by periodically monitoring critical applications. This bug check indicates that a user-mode health check failed in a way that prevents graceful shutdown. This bug check restores critical services by restarting or enabling application failover to other servers.
 
-On the Microsoft Windows Server 2003, Enterprise Edition, Windows Server 2003, Datacenter Edition, and Windows 2000 with Service Pack 4 (SP4) operating systems, a user-mode hang can also cause this bug check. The bug check occurs in this situation only if the user has set **HangRecoveryAction** to a value of 3.
 
- 
 
- 
+ 
+
+ 
 
 
 

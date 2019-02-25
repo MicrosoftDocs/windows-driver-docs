@@ -1,8 +1,14 @@
 ---
-title: Accessing Configuration Information
+title: Accessing configuration information
+description: Accessing configuration information
+ms.assetid: ABEC75AE-9CE3-4574-B388-BC48D2BC8154
+keywords:
+- NetAdapterCx accessing configuration information, NetCx accessing configuration information
+ms.date: 06/05/2017
+ms.localizationpriority: medium
 ---
 
-# Accessing Configuration Information
+# Accessing configuration information
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
@@ -10,30 +16,57 @@ The NetAdapterCx class extension supports a set of functions that provide access
 
 Typically, the client driver reads configuration info from its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function.
 
-Start by calling [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) to get a handle to a configuration object.  You can then query it:
+For a NetAdapter object, start by calling [**NetAdapterOpenConfiguration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapteropenconfiguration) to get a handle to a configuration object.  You can then query it:
 
-```cpp
+```C++
 NETCONFIGURATION configuration;
 
-status = NetAdapterOpenConfiguration(NetAdapter, WDF_NO_OBJECT_ATTRIBUTES, &configuration);
-if (! NT_SUCCESS(status)) {
+status = NetAdapterOpenConfiguration(NetAdapter, 
+                                     WDF_NO_OBJECT_ATTRIBUTES, 
+                                     &configuration);
+if (!NT_SUCCESS(status)) {
     return status;
 }
 
-status = NetConfigurationQueryUlong(configuration, NET_CONFIGURATION_QUERY_ULONG_NO_FLAGS, &SomeValue, &myvalue);
+status = NetConfigurationQueryUlong(configuration, 
+                                    NET_CONFIGURATION_QUERY_ULONG_NO_FLAGS, 
+                                    &SomeValue, 
+                                    &myvalue);
 
 NetConfigurationClose(configuration);
 ```
+
+Opening and querying a configuration object for a net device is similar:
+
+```C++
+status = NetDeviceOpenConfiguration(Device, 
+                                    WDF_NO_OBJECT_ATTRIBUTES, 
+                                    &configuration);
+if(!NT_SUCCESS(status))
+{
+    return status;
+}
+
+WDFCOLLECTION myStrings;
+
+DECLARE_CONST_UNICODE_STRING(myValueName, L"ExampleValueName");
+
+status = NetConfigurationQueryMultiString(configuration,
+                                          myValueName,
+                                          WDF_NO_OBJECT_ATTRIBUTES,
+                                          myStrings);
+```
+
 There are `NetConfiguration*` functions for querying ULONG data, strings, multi-strings (similar to REG_MULTI_SZ), binary blobs, and software-configurable network addresses:
 
-* [**NetConfigurationAssignBinary**](netconfigurationassignbinary.md)
-* [**NetConfigurationAssignMultiString**](netconfigurationassignmultistring.md)
-* [**NetConfigurationAssignUlong**](netconfigurationassignulong.md)
-* [**NetConfigurationAssignUnicodeString**](netconfigurationassignunicodestring.md)
-* [**NetConfigurationClose**](netconfigurationclose.md)
-* [**NetConfigurationOpenSubConfiguration**](netconfigurationopensubconfiguration.md)
-* [**NetConfigurationQueryBinary**](netconfigurationquerybinary.md)
-* [**NetConfigurationQueryMultiString**](netconfigurationquerymultistring.md)
-* [**NetConfigurationQueryNetworkAddress**](netconfigurationquerynetworkaddress.md)
-* [**NetConfigurationQueryString**](netconfigurationquerystring.md)
-* [**NetConfigurationQueryUlong**](netconfigurationqueryulong.md)
+* [**NetConfigurationAssignBinary**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netconfiguration/nf-netconfiguration-netconfigurationassignbinary)
+* [**NetConfigurationAssignMultiString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netconfiguration/nf-netconfiguration-netconfigurationassignmultistring)
+* [**NetConfigurationAssignUlong**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netconfiguration/nf-netconfiguration-netconfigurationassignulong)
+* [**NetConfigurationAssignUnicodeString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netconfiguration/nf-netconfiguration-netconfigurationassignunicodestring)
+* [**NetConfigurationClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netconfiguration/nf-netconfiguration-netconfigurationclose)
+* [**NetConfigurationOpenSubConfiguration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netconfiguration/nf-netconfiguration-netconfigurationopensubconfiguration)
+* [**NetConfigurationQueryBinary**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netconfiguration/nf-netconfiguration-netconfigurationquerybinary)
+* [**NetConfigurationQueryMultiString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netconfiguration/nf-netconfiguration-netconfigurationquerymultistring)
+* [**NetConfigurationQueryLinkLayerAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netconfiguration/nf-netconfiguration-netconfigurationquerylinklayeraddress)
+* [**NetConfigurationQueryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netconfiguration/nf-netconfiguration-netconfigurationquerystring)
+* [**NetConfigurationQueryUlong**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netconfiguration/nf-netconfiguration-netconfigurationqueryulong)

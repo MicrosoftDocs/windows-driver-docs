@@ -2,11 +2,8 @@
 title: Configuring a Computer to Support Release-Signing
 description: Configuring a Computer to Support Release-Signing
 ms.assetid: 90115bb8-6ca0-4c08-b69c-f3f5388d3ff6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuring a Computer to Support Release-Signing
@@ -20,9 +17,9 @@ Before a release-signed driver package can be installed on a computer, follow th
 
 After the computer is reconfigured to enable release-signing, restart the computer for the changes to take effect.
 
- 
+ 
 
- 
+ 
 
 
 

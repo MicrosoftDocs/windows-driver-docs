@@ -1,15 +1,11 @@
 ---
 title: OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY
-author: windows-driver-content
 description: OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY instructs the adapter to periodically perform Wi-Fi Direct discovery in the background
 ms.assetid: DF58B71D-7D45-4E0D-963F-A70471363DF5
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_P2P\_START\_BACKGROUND\_DISCOVERY
@@ -21,7 +17,7 @@ OID\_WDI\_SET\_P2P\_START\_BACKGROUND\_DISCOVERY instructs the adapter to period
 |-------|--------------------------|---------------------------------|---------------------------------|
 | Port  | No                       | 1                               | Yes                             |
 
- 
+ 
 
 The adapter is required to scan the specified channels at regular intervals and be able to find a device that becomes discoverable within the device visibility timeout (typically 5 minutes). The behavior is similar to the regular Wi-Fi Direct Discovery scan (as defined in [OID\_WDI\_TASK\_P2P\_DISCOVER](oid-wdi-task-p2p-discover.md)), but it is not time-bound, and the adapter may schedule the scans at some later point in time. The adapter must perform at least one scan within each device visibility timeout. If the device visibility timeout is 0, the adapter should continue to scan regularly using its own cycle time. If a DISCOVER or SCAN task request is made during this time, the adapter should suspend the background discovery for the duration of the task and continue when the task is finished. Upon completing a background scan, the device should send the [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_DISCOVERY\_COMPLETE](ndis-status-wdi-indication-p2p-discovery-complete.md) indication (with transaction ID equal to 0) to let the operating system know that it has completed a scan. The adapter must send this indication every time it completes a background scan.
 
@@ -47,7 +43,7 @@ When the NIC is in D2, it suspends background discovery until it goes back to D0
 | [**WDI\_TLV\_P2P\_SERVICE\_NAME\_HASH**](https://msdn.microsoft.com/library/windows/hardware/dn898009)                   | X                              | X        | List of Service Hash names to be queried. This is required if WDI\_P2P\_SERVICE\_DISCOVERY\_TYPE\_SERVICE\_NAME\_ONLY is specified. |
 | [**WDI\_TLV\_VENDOR\_SPECIFIC\_IE**](https://msdn.microsoft.com/library/windows/hardware/dn898076)                          |                                | X        | One or more IEs that must be included in the probe requests sent by the port.                                                       |
 
- 
+ 
 
 ## Set property results
 
@@ -81,12 +77,10 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY%20%20RELEASE:%20%286/30/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

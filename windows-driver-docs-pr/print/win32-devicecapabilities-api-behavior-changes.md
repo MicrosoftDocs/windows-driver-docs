@@ -1,13 +1,9 @@
 ---
 title: Win32 DeviceCapabilities API Behavior Changes
-author: windows-driver-content
 description: Win32 DeviceCapabilities API Behavior Changes
 ms.assetid: 44745e33-2bd8-4200-be29-b3ddb0e30de4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Win32 DeviceCapabilities API Behavior Changes
@@ -35,11 +31,11 @@ When a GPD/PPD feature or option is mapped to a Print Schema keyword by using GP
 <tbody>
 <tr class="odd">
 <td><p>DC_COPIES</p></td>
-<td><p>(Unidrv only) When EMF is enabled, <strong>DeviceCapabilitiesreturns</strong> a hard-coded value that is the maximum value of 9999 or the GPD file's specified *MaxCopies value.</p>
+<td><p>(Unidrv only) When EMF is enabled, <strong>DeviceCapabilitiesreturns</strong> a hard-coded value that is the maximum value of 9999 or the GPD file&#39;s specified *MaxCopies value.</p>
 <p>When EMF is disabled, <strong>DeviceCapabilities</strong> returns the GPD *MaxCopies value.</p>
 <p>(PS only) <strong>DeviceCapabilities</strong> returns a hard-coded value of 9999.</p></td>
 <td><p>(Unidrv only) <strong>DeviceCapabilities</strong> returns the GPD *MaxCopies value.</p>
-<p>(PS only) <strong>DeviceCapabilities</strong> returns the PPD file's *MSXPSMaxCopies value or 1 if the value is not specified in the PPD file.</p></td>
+<p>(PS only) <strong>DeviceCapabilities</strong> returns the PPD file&#39;s *MSXPSMaxCopies value or 1 if the value is not specified in the PPD file.</p></td>
 </tr>
 <tr class="even">
 <td><p>DC_TRUETYPE</p></td>
@@ -56,7 +52,7 @@ When a GPD/PPD feature or option is mapped to a Print Schema keyword by using GP
 </tr>
 <tr class="odd">
 <td><p>DC_ORIENTATION</p></td>
-<td><p>(PS only) <strong>DeviceCapabilities</strong> returns 90 or 270 based on PPD's *LandscapeOrientation value and setting for the hard-coded Rotated Landscape orientation option in the input DEVMODE structure.</p></td>
+<td><p>(PS only) <strong>DeviceCapabilities</strong> returns 90 or 270 based on PPD&#39;s *LandscapeOrientation value and setting for the hard-coded Rotated Landscape orientation option in the input DEVMODE structure.</p></td>
 <td><p>(PS only) The default return value is 0, which means that there is no landscape orientation.</p>
 <p>If PPD supports a feature with the &quot;PageOrientation&quot; Print Schema keyword, the following occur:</p>
 <ul>
@@ -90,7 +86,7 @@ When a GPD/PPD feature or option is mapped to a Print Schema keyword by using GP
 </tr>
 <tr class="even">
 <td><p>DC_STAPLE</p></td>
-<td><p>(PS only) PPD does o't have a single &quot;Stapling&quot; feature. A PScript5 driver checks if any of following PPD features are defined in PPD and are not constrained by device settings to determine if the device can support stapling.</p>
+<td><p>(PS only) PPD does o&#39;t have a single &quot;Stapling&quot; feature. A PScript5 driver checks if any of following PPD features are defined in PPD and are not constrained by device settings to determine if the device can support stapling.</p>
 <ul>
 <li><p>&quot;StapleLocation&quot;</p></li>
 <li><p>&quot;StapleX&quot;, &quot;StapleY&quot;</p></li>
@@ -102,14 +98,12 @@ When a GPD/PPD feature or option is mapped to a Print Schema keyword by using GP
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Win32%20DeviceCapabilities%20API%20Behavior%20Changes%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

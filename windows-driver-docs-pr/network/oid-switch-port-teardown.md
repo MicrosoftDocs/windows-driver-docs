@@ -1,15 +1,11 @@
 ---
-title: OID\_SWITCH\_PORT\_TEARDOWN
-author: windows-driver-content
-description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_PORT\_TEARDOWN to notify underlying extensible switch extensions that an extensible switch port will begin the deletion process.
+title: OID_SWITCH_PORT_TEARDOWN
+description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PORT_TEARDOWN to notify underlying extensible switch extensions that an extensible switch port will begin the deletion process.
 ms.assetid: 94FA23AC-2064-40C8-B99C-D8D3DC10BFF9
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_SWITCH_PORT_TEARDOWN Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_SWITCH\_PORT\_TEARDOWN
@@ -40,7 +36,7 @@ After the extension completes this OID set request and the reference counter for
 
 **Note**  An extension increments the reference counter for an extensible switch port by calling [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295). An extension decrements the reference counter by calling [*DereferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598142).
 
- 
+ 
 
 The extension must follow these guidelines for handling OID set requests of OID\_SWITCH\_PORT\_TEARDOWN:
 
@@ -48,13 +44,13 @@ The extension must follow these guidelines for handling OID set requests of OID\
 
     **Note**  The extension must not modify the [**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598229) structure that is associated with the OID request.
 
-     
+     
 
 -   After the extension forwards this OID request, it cannot forward packets to the deleted port. The extension also cannot issue OID requests nor call the [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295) function for the deleted port.
 
 **Note**  The extension must not issue OID set requests of OID\_SWITCH\_PORT\_TEARDOWN.
 
- 
+ 
 
 For more information about the states of extensible switch ports and network adapter connections, see [Hyper-V Extensible Switch Port and Network Adapter States](https://msdn.microsoft.com/library/windows/hardware/hh598182).
 
@@ -81,7 +77,7 @@ The underlying miniport edge of the extensible switch completes the OID set requ
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -129,12 +125,10 @@ Requirements
 
 [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_SWITCH_PORT_TEARDOWN%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

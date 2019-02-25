@@ -13,17 +13,14 @@ keywords:
 - raw sockets WDK SANs
 - SAN sockets WDK , creating
 - SAN sockets WDK , binding
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating and Binding SAN Sockets
 
 
-## <a href="" id="ddk-creating-and-binding-san-sockets-ng"></a>
+
 
 
 If the Windows Sockets switch determines that it can route data through a SAN connection rather than through the TCP/IP stack, it requests the appropriate SAN service provider to create, bind, and set options for a socket on which the data can be transferred.
@@ -34,7 +31,7 @@ The companion socket also has the same IP address and TCP port as the socket tha
 
 **Note**  The switch always uses the TCP/IP service provider to transfer data over *raw sockets*. The switch therefore never requests a SAN service provider to create a raw socket.
 
- 
+ 
 
 The following figure shows an overview of how the Windows Sockets switch creates a companion socket. The sequence in the sections that follow describe creating a companion socket in more detail.
 
@@ -59,7 +56,7 @@ The following figure shows an overview of how the Windows Sockets switch creates
 
     **HKEY\_LOCAL\_MACHINE\\SYSTEM\\Current Control Set\\Services\\Tcpip\\Parameters\\Interfaces\\*GUID*\\IPAutoconfigurationEnabled**
 
-     
+     
 
 2.  The switch forwards this call to the TCP/IP service provider by calling the TCP/IP provider's **WSPBind** function.
 
@@ -107,9 +104,9 @@ The following figure shows an overview of how the Windows Sockets switch creates
 
 -   After the switch sets up the companion socket, the switch calls either the **WSPListen** or **WSPConnect** function for the SAN service provider to perform the operation that caused the SAN service provider to originally set up the socket. For example, if an application originally requested to listen for incoming connections, the switch calls the SAN service provider's [**WSPListen**](https://msdn.microsoft.com/library/windows/hardware/ff566297) function.
 
- 
+ 
 
- 
+ 
 
 
 

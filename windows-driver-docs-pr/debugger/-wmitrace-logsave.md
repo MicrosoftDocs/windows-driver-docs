@@ -3,17 +3,14 @@ title: wmitrace.logsave
 description: The wmitrace.logsave extension writes the current contents of the trace buffers for a trace session to a file.
 ms.assetid: 713fea09-d405-4142-b2e8-29c813a4c3b6
 keywords: ["wmitrace.logsave Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - wmitrace.logsave
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wmitrace.logsave
@@ -21,7 +18,7 @@ api_type:
 
 The **!wmitrace.logsave** extension writes the current contents of the trace buffers for a trace session to a file.
 
-```
+```dbgcmd
 !wmitrace.logsave {LoggerID|LoggerName} Filename 
 ```
 
@@ -60,11 +57,10 @@ When you use Tracelog to start a trace session with circular buffering (-bufferi
 
 To find the logger ID of a trace session, use the [**!wmitrace.strdump**](-wmitrace-strdump.md) extension. Alternatively, you can use the Tracelog command tracelog -l to list the trace sessions and their basic properties, including the logger ID.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!wmitrace.logsave%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

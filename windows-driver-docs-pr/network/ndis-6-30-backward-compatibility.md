@@ -2,17 +2,14 @@
 title: NDIS 6.30 Backward Compatibility
 description: NDIS 6.30 adds backward compatibility features to those that apply to NDIS 6.20 and NDIS 6.0 drivers.
 ms.assetid: 71C2BBCF-206A-4C2D-BF9C-C4074FB9276D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS 6.30 Backward Compatibility
 
 
-NDIS 6.30 adds backward compatibility features to those that apply to NDIS 6.20 and NDIS 6.0 drivers. For information about NDIS 6.20 compatibility issues, see [NDIS 6.20 Backward Compatibility](ndis-6-20-backward-compatibility.md). For information about NDIS 6.0 compatibility issues, see [NDIS 6.0 Backward Compatibility](ndis-6-0-backward-compatibility.md).
+NDIS 6.30 adds backward compatibility features to those that apply to NDIS 6.20 and NDIS 6.0 drivers. For information about NDIS 6.20 compatibility issues, see [NDIS 6.20 Backward Compatibility](ndis-6-20-backward-compatibility.md). For information about NDIS 6.0 compatibility issues, see [NDIS 6.0 Backward Compatibility](https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-backward-compatibility).
 
 For more information about NDIS 6.30 features, see [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md).
 
@@ -42,9 +39,9 @@ The following features have been removed from Windows 8 and later:
 
 -   The TCP/IP protocol driver that ships with Windows 8 has been updated to NDIS 6.30. However, this change was relatively minor, so it's not worth porting your driver just for this feature. The TCP/IP protocol driver is backward compatible with NDIS 6.20 and earlier drivers in the driver stack.
 
- 
+ 
 
- 
+ 
 
 
 

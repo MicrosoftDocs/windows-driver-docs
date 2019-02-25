@@ -3,17 +3,14 @@ title: .cxr (Display Context Record)
 description: The .cxr command displays the context record saved at the specified address. It also sets the register context.
 ms.assetid: 0e882639-6029-4512-8d46-050228e95cb6
 keywords: ["Display Context Record (.cxr) command", "context record", ".cxr (Display Context Record) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .cxr (Display Context Record)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .cxr (Display Context Record)
@@ -21,7 +18,7 @@ api_type:
 
 The **.cxr** command displays the context record saved at the specified address. It also sets the register context.
 
-```
+```dbgsyntax
 .cxr [Options] [Address]  
 ```
 
@@ -32,7 +29,7 @@ The **.cxr** command displays the context record saved at the specified address.
 Can be any combination of the following options:
 
 <span id="_f_Size"></span><span id="_f_size"></span><span id="_F_SIZE"></span>**/f** **** *Size*  
-Forces the context size to equal the value of *Size*, in bytes. This can be useful when the context does not match the actual target -- for example, when using an x86 context on a 64-bit target during [*WOW64*](https://msdn.microsoft.com/library/windows/hardware/ff556347#wdkgloss-wow64) debugging. If an invalid or inconsistent size is specified, the error "Unable to convert context to canonical form" will be displayed.
+Forces the context size to equal the value of *Size*, in bytes. This can be useful when the context does not match the actual target -- for example, when using an x86 context on a 64-bit target during *WOW64* debugging. If an invalid or inconsistent size is specified, the error "Unable to convert context to canonical form" will be displayed.
 
 <span id="_w"></span><span id="_W"></span>**/w**  
 Writes the current context to memory, and displays the address of the location where it was written.
@@ -65,7 +62,7 @@ Omitting the address does not display any context record information, but it doe
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -82,11 +79,10 @@ The **.cxr** command is often used to debug bug check 0x1E. For more information
 
 The **.cxr /w** command writes the context to memory and displays the address where it has been stored. This address can be passed to [**.apply\_dbp (Apply Data Breakpoint to Context)**](-apply-dbp--apply-data-breakpoint-to-context-.md) if you need to apply data breakpoints to this context.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.cxr%20%28Display%20Context%20Record%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

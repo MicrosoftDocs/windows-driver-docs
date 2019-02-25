@@ -1,13 +1,9 @@
 ---
 title: UEFI simple I/O protocol
-author: windows-driver-content
 description: UEFI simple I/O protocol
 ms.assetid: 0cb55bf5-71e9-4b59-aef1-7d74eb331a18
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UEFI simple I/O protocol
@@ -15,22 +11,22 @@ ms.technology: windows-devices
 
 **Note**  Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
- 
+ 
 
 The simple I/O protocol is used by flashing tools to enable communication between the device and a host computer in the pre-boot environment.
 
 **Note**  Information about flashing tools will be provided in a future release of this documentation.
 
- 
+ 
 
-## <a href="" id="efi-simple-winphone-io-protocol"></a>EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL
+## EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL
 
 
 This section provides a detailed description of **EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL**. This protocol enables simple communication between host and device in a pre-boot environment.
 
 **GUID**
 
-``` syntax
+```cpp
 // {BDE900DD-190A-4c7d-9663-16BA8ED88B55}
 #define EFI_SIMPLE_WINPHONE_IO_PROTOCOL_GUID \
   { 0xbde900dd, 0x190a, 0x4c7d, 0x96, 0x63, 0x16, 0xba, 0x8e, \
@@ -39,13 +35,13 @@ This section provides a detailed description of **EFI\_SIMPLE\_WINPHONE\_IO\_PRO
 
 **Revision number**
 
-``` syntax
+```cpp
 #define EFI_SIMPLE_WINPHONE_IO_PROTOCOL_REVISION   0x00010001
 ```
 
 **Protocol interface structure**
 
-``` syntax
+```cpp
 typedef struct _EFI_SIMPLE_WINPHONE_IO_PROTOCOL {
   UINT32                                        Revision;
   EFI_SIMPLE_WINPHONE_IO_INITIALIZE             Initialize;
@@ -75,12 +71,4 @@ Sends a buffer of bytes to the host computer. See [EFI\_SIMPLE\_WINPHONE\_IO\_PR
 
 <a href="" id="getmaxpacketsize"></a>**GetMaxPacketSize**  
 Returns the maximum packet size supported by this protocol. See [EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.GetMaxPacketSize](efi-simple-winphone-io-protocolgetmaxpacketsize.md).
-
- 
-
- 
-
-
---------------------
-
 

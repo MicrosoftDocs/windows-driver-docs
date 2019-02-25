@@ -2,11 +2,8 @@
 title: Vendor-Provided DCB Components
 description: Vendor-Provided DCB Components
 ms.assetid: 864BB701-352A-4F61-934C-3E4E8EEE02C5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Vendor-Provided DCB Components
@@ -31,9 +28,9 @@ The Windows operating system does not natively support FCoE. To support FCoE, th
 <a href="" id="dcb-capable-miniport-driver-and-network-adapter"></a>DCB-Capable Miniport Driver and Network Adapter  
 To support NDIS QoS for DCB, the miniport driver and network adapter must support the requirements described in [NDIS QoS Requirements for Data Center Bridging](ndis-qos-requirements-for-data-center-bridging.md).
 
- 
+ 
 
- 
+ 
 
 
 

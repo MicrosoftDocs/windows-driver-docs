@@ -6,11 +6,8 @@ keywords:
 - driver signing WDK , Trusted Publishers certificate store
 - Trusted Publishers certificate store WDK
 - certificate stores WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Trusted Publishers Certificate Store
@@ -22,7 +19,7 @@ If a publisher's Authenticode certificate is in the Trusted Publishers certifica
 
 **Important**  This practice of automating the installation of driver packages is only suggested for your internal systems. This practice should never be followed for any driver package that is distributed outside your organization.
 
- 
+ 
 
 The Trusted Publishers certificate store differs from the [Trusted Root Certification Authorities certificate store](trusted-root-certification-authorities-certificate-store.md) in that only *end-entity* certificates can be trusted. For example, if an Authenticode certificate from a CA was used to [test-sign](introduction-to-test-signing.md) a driver package, adding that certificate to the Trusted Publishers certificate store does not configure all certificates that this CA issued as trusted. Each certificate must be added separately to the Trusted Publishers certificate store.
 
@@ -36,17 +33,17 @@ You can manually install the Authenticode certificates into the Trusted Publishe
 
 **Note**  The driver signing verification policy used by Plug and Play requires that the Authenticode certificate of a CA has been previously installed in the local machine version of the Trusted Publishers certificate store. For more information, see [Local Machine and Current User Certificate Stores](local-machine-and-current-user-certificate-stores.md).
 
- 
+ 
 
-For more information about software restriction policies and using Certificate Rules, see the information in the Windows Help and Support Center. In addition, you find more information about these topics on the [Microsoft TechNet](http://go.microsoft.com/fwlink/p/?linkid=10111) website.
+For more information about software restriction policies and using Certificate Rules, see the information in the Windows Help and Support Center. In addition, you find more information about these topics on the [Microsoft TechNet](https://go.microsoft.com/fwlink/p/?linkid=10111) website.
 
-For more information about how to deploy Authenticode certificates in an enterprise by using Group Policy, see the readme file *Selfsign\_readme.htm*, which is located in the *src\\general\\build\\driversigning* directory of the WDK.
+For more information about how to deploy Authenticode certificates in an enterprise by using Group Policy, see the readme file *Selfsign_readme.htm*, which is located in the *src\\general\\build\\driversigning* directory of the WDK.
 
-For more information about certificate stores, see the [Code Signing Best Practices](http://go.microsoft.com/fwlink/p/?linkid=68250) website.
+For more information about certificate stores, see the [Code Signing Best Practices](https://go.microsoft.com/fwlink/p/?linkid=68250) website.
 
- 
+ 
 
- 
+ 
 
 
 

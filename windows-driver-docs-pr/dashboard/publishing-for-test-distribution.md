@@ -2,11 +2,9 @@
 title: Test distribution guidance to self-host desktop drivers
 description: Test distribution guidance to self-host desktop drivers
 ms.assetid: 67E31BC1-6209-4264-B9F4-8CDFE8CE2E65
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
+ms.localizationpriority: medium
 ---
 
 # Test distribution guidance to self-host desktop drivers
@@ -37,7 +35,7 @@ Once a driver has been published for test distribution it can be manually expire
 
 ### <span id="How_long_does_my_driver_published_for_test_distribution_last_"></span><span id="how_long_does_my_driver_published_for_test_distribution_last_"></span><span id="HOW_LONG_DOES_MY_DRIVER_PUBLISHED_FOR_TEST_DISTRIBUTION_LAST_"></span>How long does my driver published for test distribution last?
 
-Once you have published your driver for test distribution, the expiration time is set to 14 days from the time of publication to Windows Update. Once expired, test distributed drivers are removed from the Windows Update server and are no longer available to client machines.
+Drivers do not automatically expire from the test distribution workflow. After you complete testing, manually remove a driver using the procedure described in [Expire a driver from Windows Update](expire-a-driver-from-windows-update.md).
 
 ## <span id="Client_PC_configuration"></span><span id="client_pc_configuration"></span><span id="CLIENT_PC_CONFIGURATION"></span>Client PC configuration
 
@@ -69,7 +67,7 @@ To stop receiving test distribution drivers, remove the **TargetRing** registry 
 
 **Note**  Your system will continue to receive all production drivers from Windows Update.
 
- 
+ 
 
 1.  Open the Windows Registry Editor (regedit.exe)
 2.  Go to HKLM\\Software\\Microsoft\\DriverFlighting\\Partner. If these keys do not exist then you are done, otherwise continue to the next step.
@@ -83,11 +81,10 @@ To stop receiving test distribution drivers, remove the **TargetRing** registry 
     -   Run Windows Update and check for updates
     -   In Device Manager, right click on the target device, and select **Update Device Software**.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Test%20distribution%20guidance%20to%20self-host%20desktop%20drivers%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

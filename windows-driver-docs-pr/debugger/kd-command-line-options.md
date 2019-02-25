@@ -3,17 +3,14 @@ title: KD Command-Line Options
 description: First-time users of KD should begin with the Debugging Using KD and NTKD section.
 ms.assetid: 76c11b45-8469-4f27-840d-06477d8922b8
 keywords: ["KD Command-Line Options Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - KD Command-Line Options
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # KD Command-Line Options
@@ -23,7 +20,7 @@ First-time users of KD should begin with the [Debugging Using KD and NTKD](debug
 
 The KD command line uses the following syntax.
 
-```
+```dbgcmd
 kd [ -server ServerTransport | -remote ClientTransport ] 
    [-b | -x] [-d] [-bonc] [-m] [-myob] [-lines] [-n] [-r] [-s] 
    [-v] [-clines lines] [-failinc] [-noio] [-noshell] 
@@ -66,15 +63,15 @@ This option no longer supported.
 <span id="_______-bonc______"></span><span id="_______-BONC______"></span> **-bonc**   
 If this option is specified, the debugger will break into the target as soon as the session begins. This is especially useful when connecting to a debugging server that might not be currently broken into the target.
 
-<span id="_______-c__command_______"></span><span id="_______-C__COMMAND_______"></span> **-c "***command***"**   
+<span id="_______-c__command_______"></span><span id="_______-C__COMMAND_______"></span> **-c "**<em>command</em>**"**   
 Specifies the initial debugger command to run at start-up. This command must be surrounded with quotation marks. Multiple commands can be separated with semicolons. (If you have a long command list, it may be easier to put them in a script and then use the **-c** option with the [**$&lt;, $&gt;&lt;, $&gt;&lt;, $$&gt;&lt; (Run Script File)**](-----------------------a---run-script-file-.md) command.)
 
 If you are starting a debugging client, this command must be intended for the debugging server. Client-specific commands, such as **.lsrcpath**, are not allowed.
 
-<span id="_______-cf__filename_______"></span><span id="_______-CF__FILENAME_______"></span> **-cf "***filename***"**   
+<span id="_______-cf__filename_______"></span><span id="_______-CF__FILENAME_______"></span> **-cf "**<em>filename</em>**"**   
 Specifies the path and name of a script file. This script file is executed as soon as the debugger is started. If *filename* contains spaces it must be enclosed in quotation marks. If the path is omitted, the current directory is assumed. If the -cf option is not used, the file ntsd.ini in the current directory is used as the script file. If the file does not exist, no error occurs. For details, see [Using Script Files](using-script-files.md).
 
-<span id="_______-cfr__filename_______"></span><span id="_______-CFR__FILENAME_______"></span> **-cfr "***filename***"**   
+<span id="_______-cfr__filename_______"></span><span id="_______-CFR__FILENAME_______"></span> **-cfr "**<em>filename</em>**"**   
 Specifies the path and name of a script file. This script file is executed as soon as the debugger is started, and any time the target is restarted. If *filename* contains spaces it must be enclosed in quotation marks. If the path is omitted, the current directory is assumed. If the file does not exist, no error occurs. For details, see [Using Script Files](using-script-files.md).
 
 <span id="_______-clines________lines______"></span><span id="_______-CLINES________LINES______"></span> **-clines** *lines*   
@@ -101,7 +98,7 @@ The **-iu** parameter must not be used with any other parameters. This command w
 Tells the debugger how to connect to the target. For details, see [Debugging Using KD and NTKD](debugging-using-kd-and-ntkd.md).
 
 <span id="_______-kl______"></span><span id="_______-KL______"></span> **-kl**   
-(Windows XP and later) Starts a kernel debugging session on the same machine as the debugger.
+Starts a kernel debugging session on the same machine as the debugger.
 
 <span id="_______-kqm______"></span><span id="_______-KQM______"></span> **-kqm**   
 Starts KD in quiet mode.
@@ -215,7 +212,7 @@ Specifies the error level that will cause the debugger to display an error messa
 </tbody>
 </table>
 
- 
+ 
 
 This error level only has meaning in checked builds of Microsoft Windows. The default value is 1.
 
@@ -247,11 +244,10 @@ Displays command-line help text.
 
 KD will automatically detect the platform on which the target is running. You do not need to specify the target on the KD command line. The older syntax (using the name *I386KD* or *IA64KD*) is obsolete.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20KD%20Command-Line%20Options%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

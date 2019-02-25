@@ -16,11 +16,8 @@ keywords:
 - notional space coordinate system WDK graphics
 - size WDK fonts
 - metric functions WDK fonts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Font Metric Functions
@@ -50,29 +47,29 @@ Any driver that provides fonts must support the [**DrvQueryFont**](https://msdn.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvDestroyFont</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556192)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556192" data-raw-source="[&lt;strong&gt;DrvDestroyFont&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556192)"><strong>DrvDestroyFont</strong></a></p></td>
 <td align="left"><p>Notifies the driver that a font realization is no longer needed so the driver can free any data structures that it allocated. GDI calls this function once for the font producer and once for the font consumer. Optional--should be supported only if the driver must free allocated resources.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvFree</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556226)</p></td>
-<td align="left"><p>Informs the driver that the indicated data structure is no longer needed. Optional--should be implemented only if the driver's memory management requires this information.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556226" data-raw-source="[&lt;strong&gt;DrvFree&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556226)"><strong>DrvFree</strong></a></p></td>
+<td align="left"><p>Informs the driver that the indicated data structure is no longer needed. Optional--should be implemented only if the driver&#39;s memory management requires this information.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvQueryFont</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556262)</p></td>
-<td align="left"><p>Returns a pointer to the [<strong>IFIMETRICS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567418) structure for a font. Required by all drivers that deal with fonts.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556262" data-raw-source="[&lt;strong&gt;DrvQueryFont&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556262)"><strong>DrvQueryFont</strong></a></p></td>
+<td align="left"><p>Returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567418" data-raw-source="[&lt;strong&gt;IFIMETRICS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567418)"><strong>IFIMETRICS</strong></a> structure for a font. Required by all drivers that deal with fonts.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DrvQueryFontData</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556264)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556264" data-raw-source="[&lt;strong&gt;DrvQueryFontData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556264)"><strong>DrvQueryFontData</strong></a></p></td>
 <td align="left"><p>Returns information about a realized font. Required (for selected <em>iMode</em> values) by all drivers that deal with fonts.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvQueryFontTree</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556266)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556266" data-raw-source="[&lt;strong&gt;DrvQueryFontTree&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556266)"><strong>DrvQueryFontTree</strong></a></p></td>
 <td align="left"><p>Returns pointers to structures that define either the mapping from Unicode to glyph handles or the mapping of kerning pairs to kerning handles. Required by all drivers that deal with fonts.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The function *DrvQueryFontTree* allows GDI to obtain pointers to tree structures that define one of the following:
 
@@ -88,11 +85,10 @@ In particular, the driver returns an identifier in the *pid* parameter. GDI pass
 
 *DrvDestroyFont* notifies the driver that a font realization is no longer needed so the driver can free any data structures it allocated. GDI calls this function once for the font producer and once for the font consumer. It should be implemented only if the driver must free allocated resources when the font instance is destroyed.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Font%20Metric%20Functions%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

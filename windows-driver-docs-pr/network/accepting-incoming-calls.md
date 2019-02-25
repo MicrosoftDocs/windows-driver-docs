@@ -9,17 +9,14 @@ keywords:
 - NDPROXY WDK networking , incoming calls
 - incoming calls WDK CoNDIS WAN
 - calls WDK CoNDIS WAN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accepting Incoming Calls
 
 
-## <a href="" id="ddk-accepting-incoming-calls-ng"></a>
+
 
 
 Before an application can accept an incoming call, it first must have a line open. A line is opened as a result of an application calling the TAPI **lineOpen** function. This TAPI-function call causes underlying drivers to encapsulate TAPI parameters in NDIS structures in order to prepare to receive an incoming call. After the CoNDIS WAN miniport driver receives an incoming call, the miniport driver must first create a virtual connection (VC) with the NDPROXY driver and then notify NDPROXY of the incoming call. NDPROXY in turn notifies the application through TAPI. The following list describes how the incoming call is set up, connected, and made:
@@ -73,9 +70,9 @@ Before an application can accept an incoming call, it first must have a line ope
 
 -   After NDISWAN accepts the incoming call, NDPROXY calls the [**NdisCoGetTapiCallId**](https://msdn.microsoft.com/library/windows/hardware/ff561700) function to retrieve a string that identifies NDISWAN's context for the VC. NDPROXY passes this string back to the TAPI application. The TAPI application uses this VC-context string to complete its call to **lineGetID**.
 
- 
+ 
 
- 
+ 
 
 
 

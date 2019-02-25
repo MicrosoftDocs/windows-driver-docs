@@ -2,11 +2,8 @@
 title: Using ACPI for Device Container Grouping
 description: Using ACPI for Device Container Grouping
 ms.assetid: c49949cd-59e0-4ad2-a067-bc4e048f26c5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using ACPI for Device Container Grouping
@@ -24,11 +21,11 @@ The use of ACPI to indicate the computer configuration has several advantages:
 
     The computer OEM is strongly encouraged to configure the ACPI BIOS settings to accurately reflect the USB port topology of the computer. This ensures that USB devices physically integrated with the computer (for example, an internal Bluetooth radio or an integrated webcam) are grouped into the computer's device container. It also allows the operating system to better determine the boundary between the computer and externally attached devices, because devices attached to connectable/user-visible ports are assumed to be external devices.
 
-For more information about how to use ACPI object settings for device container grouping, see the [Container Groupings in Windows 7](http://go.microsoft.com/fwlink/p/?linkid=158386) white paper on the Microsoft Windows Hardware Developer Central (WHDC) website.
+For more information about how to use ACPI object settings for device container grouping, see the [Container Groupings in Windows 7](https://go.microsoft.com/fwlink/p/?linkid=158386) white paper
 
- 
+ 
 
- 
+ 
 
 
 

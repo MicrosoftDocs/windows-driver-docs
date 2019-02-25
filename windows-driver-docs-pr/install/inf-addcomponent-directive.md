@@ -1,17 +1,15 @@
 ---
 title: INF AddComponent Directive
 description: An AddComponent directive creates a software component device underneath the current device.
-ms.author: windowsdriverdev
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # INF AddComponent Directive
 
 An **AddComponent** directive is used within an [**INF *DDInstall*.Components**](inf-ddinstall-components-section.md) section of an [extension INF file](using-an-extension-inf-file.md).  It creates a virtual child device for the software component under the current device. This directive is supported for Windows 10 version 1703 and later. 
 
-```
+```ini
 [DDInstall.Components]
 
 AddComponent=ComponentName,[flags],component-install-section
@@ -37,7 +35,7 @@ Each INF-writer-created section name must be unique within the INF file and must
 
 An **AddComponent** directive must reference a named *component-install-section* elsewhere in the INF file.  Each such section has the following form:
 
-```
+```ini
 [component-install-section]
 
 ComponentIDs=component-id[,component-id] …

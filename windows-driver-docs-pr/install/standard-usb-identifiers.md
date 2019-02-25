@@ -6,17 +6,14 @@ keywords:
 - USB identifiers WDK device installations
 - single-interface devices WDK USB
 - multiple-interface devices WDK USB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standard USB Identifiers
 
 
-## <a href="" id="ddk-standard-usb-identifiers-dg"></a>
+
 
 
 <a href="" id="the-set-of-identifiers-generated-for-usb-devices-depends-on-whether-the-device-is-a-single-interface-device-or-a-multiple-interface-device-"></a>The set of identifiers generated for USB devices depends on whether the device is a single-interface device or a multiple-interface device.  
@@ -25,7 +22,7 @@ ms.technology: windows-devices
 
 When a new USB device is plugged in, the system-supplied USB hub driver composes the following device ID by using information extracted from the device's device descriptor:
 
-USB\\VID\_v(4)&PID\_d(4)&REV\_r(4)
+USB\\VID_v(4)&PID_d(4)&REV_r(4)
 
 Where:
 
@@ -39,15 +36,15 @@ The hub driver extracts the vendor and product codes from the *idVendor* and *id
 
 An INF model section can also specify the following hardware ID:
 
-USB\\VID\_v(4)&PID\_d(4)
+USB\\VID_v(4)&PID_d(4)
 
 and the following compatible IDs:
 
-USB\\CLASS\_c(2)&SUBCLASS\_s(2)&PROT\_p(2)
+USB\\CLASS_c(2)&SUBCLASS_s(2)&PROT_p(2)
 
-USB\\CLASS\_c(2)&SUBCLASS\_s(2)
+USB\\CLASS_c(2)&SUBCLASS_s(2)
 
-USB\\CLASS\_c(2)
+USB\\CLASS_c(2)
 
 Where:
 
@@ -65,7 +62,7 @@ Devices with multiple interfaces are called *composite* devices. Starting with W
 
 Each interface has a device ID of the following form:
 
-USB\\ VID\_v(4)&PID\_d(4)&MI\_z(2)
+USB\\ VID_v(4)&PID_d(4)&MI_z(2)
 
 Where:
 
@@ -77,11 +74,11 @@ Where:
 
 An INF model section can also specify the following compatible IDs:
 
-USB\\CLASS\_d(2)&SUBCLASS\_s(2)&PROT\_p(2)
+USB\\CLASS_d(2)&SUBCLASS_s(2)&PROT_p(2)
 
-USB\\CLASS\_d(2)&SUBCLASS\_s(2)
+USB\\CLASS_d(2)&SUBCLASS_s(2)
 
-USB\\CLASS\_d(2)
+USB\\CLASS_d(2)
 
 USB\\COMPOSITE
 
@@ -95,9 +92,9 @@ Where:
 
 The device class code, subclass code, and protocol code are determined by the *bInterfaceClass, bInterfaceSubClass, and bInterfaceProtocol* fields of the interface descriptor, respectively. These are 2-digit numbers.
 
- 
+ 
 
- 
+ 
 
 
 

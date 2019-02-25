@@ -2,17 +2,14 @@
 title: Obtaining a PCMCIA_INTERFACE_STANDARD Interface
 description: Obtaining a PCMCIA_INTERFACE_STANDARD Interface
 ms.assetid: 475bf66a-5b6e-4a06-95f7-b7280dd7276d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining a PCMCIA\_INTERFACE\_STANDARD Interface
 
 
-## <a href="" id="ddk-obtaining-a-pcmcia-interface-standard-interface-kg"></a>
+
 
 
 This section describes how a driver can obtain a PCMCIA\_INTERFACE\_STANDARD interface for a PCMCIA memory card from the PCMCIA bus driver.
@@ -32,9 +29,9 @@ If the request is successful, the PCMCIA bus driver fills in the PCMCIA\_INTERFA
 
 A driver must be running at IRQL &lt; DISPATCH\_LEVEL to send this request down the driver stack.
 
- 
+ 
 
- 
+ 
 
 
 

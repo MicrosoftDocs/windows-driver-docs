@@ -3,17 +3,14 @@ title: poolused
 description: The poolused extension displays memory use summaries, based on the tag used for each pool allocation.
 ms.assetid: e801342d-2536-43a3-992b-99942eb3c5ae
 keywords: ["poolused Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - poolused
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !poolused
@@ -21,7 +18,7 @@ api_type:
 
 The **!poolused** extension displays memory use summaries, based on the tag used for each pool allocation.
 
-```
+```dbgcmd
 !poolused [Flags [TagString]] 
 ```
 
@@ -45,7 +42,7 @@ Sorts the display by the amount of paged memory use.
 
 **Note**  You can use the [**!session**](-session.md) command to switch between sessions.
 
- 
+ 
 
 <span id="_______TagString______"></span><span id="_______tagstring______"></span><span id="_______TAGSTRING______"></span> *TagString*   
 Specifies the pool tag. *TagString* is a case-sensitive ASCII string. The asterisk (\*) can be used to represent any number of characters; the question mark (?) can be used to represent exactly one character. Unless an asterisk is used, *TagString* must be exactly four characters in length.
@@ -69,7 +66,7 @@ Specifies the pool tag. *TagString* is a case-sensitive ASCII string. The asteri
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -86,7 +83,7 @@ The display for this command shows the memory use for each tag in paged pool and
 
 Here is a partial example of the output from this extension:
 
-```
+```dbgcmd
 0: kd> !poolused
    Sorting by  Tag
 
@@ -134,11 +131,10 @@ Here is a partial example of the output from this extension:
  TOTAL     3570214 209120008     38769 13066104
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!poolused%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

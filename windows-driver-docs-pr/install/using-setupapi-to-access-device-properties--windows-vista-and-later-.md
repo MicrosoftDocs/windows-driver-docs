@@ -4,11 +4,8 @@ description: Using SetupAPI to Access Device Properties
 ms.assetid: 27dcbff1-e739-4369-aec0-3bc6e8794059
 keywords:
 - device properties WDK device installations , accessing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using SetupAPI to Access Device Properties
@@ -24,9 +21,9 @@ In Windows Vista and later versions of Windows, the SetupAPI property functions
 
 For information about how to access device properties on Windows Server 2003, Windows XP, and Windows 2000, see [Using SetupAPI and Configuration Manager to Access Device Properties](using-setupapi-and-configuration-manager-to-access-device-properties.md).
 
- 
+ 
 
- 
+ 
 
 
 

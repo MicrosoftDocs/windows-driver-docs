@@ -2,11 +2,8 @@
 title: How do I add a prefix and suffix to a trace message
 description: How do I add a prefix and suffix to a trace message
 ms.assetid: d8cd0a90-d020-4b1e-bec1-7d920964169e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How do I add a prefix and suffix to a trace message?
@@ -30,7 +27,7 @@ If you put configuration data in a header file, specify the name of the header f
 
 ### <span id="configuration_block_syntax"></span><span id="CONFIGURATION_BLOCK_SYNTAX"></span>Configuration block syntax
 
-<span id="__USEPREFIX__Function_Name___Format_string___"></span><span id="__useprefix__function_name___format_string___"></span><span id="__USEPREFIX__FUNCTION_NAME___FORMAT_STRING___"></span>**//USEPREFIX (***Function\_Name***, "***Format string***");**  
+<span id="__USEPREFIX__Function_Name___Format_string___"></span><span id="__useprefix__function_name___format_string___"></span><span id="__USEPREFIX__FUNCTION_NAME___FORMAT_STRING___"></span>**//USEPREFIX (**<em>Function\_Name</em>**, "**<em>Format string</em>**");**  
 Defines a format string prefix to use when the event is logged. The first parameter is the name of the function to which this prefix applies. The second parameter is the format string to use. To use the default value, specify %!STDPREFIX!. The default trace message prefix specifies the CPU number, process ID, thread ID, time stamp in Coordinated Universal Time (UTC) format, and the control GUID friendly name.
 
 ```
@@ -44,7 +41,7 @@ Defines the name and the signature of the trace function. The braces **{ }** are
 //FUNC TRACE_RETURN{LEVEL=ERROR}(EXP);
 ```
 
-<span id="__USESUFFIX__Function_Name___Format_string___"></span><span id="__usesuffix__function_name___format_string___"></span><span id="__USESUFFIX__FUNCTION_NAME___FORMAT_STRING___"></span>**//USESUFFIX (***Function\_Name***, "***Format string***");**  
+<span id="__USESUFFIX__Function_Name___Format_string___"></span><span id="__usesuffix__function_name___format_string___"></span><span id="__USESUFFIX__FUNCTION_NAME___FORMAT_STRING___"></span>**//USESUFFIX (**<em>Function\_Name</em>**, "**<em>Format string</em>**");**  
 Defines the format string suffix to use when the event is logged. The first parameter is the name of the function to which this suffix applies. The second parameter is the format string to use. You can use variable names in your code.
 
 ```
@@ -78,11 +75,10 @@ The following example defines a trace macro that uses the format string prefix a
 [0]0F78.0460::06/24/2006-15:54:54.880 [tracedrv]Function Return=0x8000000f(STATUS_DEVICE_POWERED_OFF)
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20How%20do%20I%20add%20a%20prefix%20and%20suffix%20to%20a%20trace%20message?%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

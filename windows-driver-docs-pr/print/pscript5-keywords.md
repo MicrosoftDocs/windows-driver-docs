@@ -1,13 +1,9 @@
 ---
 title: Pscript5 Keywords
-author: windows-driver-content
 description: Pscript5 Keywords
 ms.assetid: a5f4384a-8d78-4dc6-969b-f7a1fa6cb5e7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pscript5 Keywords
@@ -57,7 +53,7 @@ Feature and option names that are passed to the helper interface from a Pscript5
 <tr class="even">
 <td><p>%CustomPageSize</p></td>
 <td><p>Custom page size options have a complex format. See note 2 following this table.</p></td>
-<td><p>Read or specify a custom page size setting. Setting this feature also causes the <strong>dmPaperSize</strong> member of the public [<strong>DEVMODEW</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure to be reset to DMPAPER_CUSTOMSIZE (indicating a PS custom size), and sets the DM_PAPERSIZE bit flag. This feature can be read only if the public DEVMODEW structure indicates that a custom paper size is in use.</p>
+<td><p>Read or specify a custom page size setting. Setting this feature also causes the <strong>dmPaperSize</strong> member of the public <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552837)"><strong>DEVMODEW</strong></a> structure to be reset to DMPAPER_CUSTOMSIZE (indicating a PS custom size), and sets the DM_PAPERSIZE bit flag. This feature can be read only if the public DEVMODEW structure indicates that a custom paper size is in use.</p>
 <p>Document-sticky.</p></td>
 </tr>
 <tr class="odd">
@@ -120,7 +116,7 @@ Feature and option names that are passed to the helper interface from a Pscript5
 &quot;Portrait&quot;
 &quot;Landscape&quot;
 &quot;RotatedLandscape&quot;</td>
-<td><p>Specify the output orientation. Configuring the orientation by using this technique changes both the private and public [<strong>DEVMODEW</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure values, when used with the <strong>IPrintCoreHelperPS</strong> interface. This warning does not apply to the <strong>IPrintCoreUI2</strong> interface.</p>
+<td><p>Specify the output orientation. Configuring the orientation by using this technique changes both the private and public <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552837)"><strong>DEVMODEW</strong></a> structure values, when used with the <strong>IPrintCoreHelperPS</strong> interface. This warning does not apply to the <strong>IPrintCoreUI2</strong> interface.</p>
 <p>Document-sticky.</p></td>
 </tr>
 <tr class="odd">
@@ -213,29 +209,27 @@ Feature and option names that are passed to the helper interface from a Pscript5
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   1
 If the stated requirements are not met for a feature, that feature will not be listed in **EnumFeatures**, and attempts to get or set that feature will cause E\_FAIL to be returned. This note applies to %AddEuro, %Negative, and %OutputPSLevel.
 
- 
+ 
 
 **Note**   2 (%CustomPageSize)
 Custom page size format is identical to that described in **IPrintCoreUI2**. **EnumOptions** returns an empty list of options.
 
- 
+ 
 
 **Note**   3
 Numeric values are represented as ANSI strings that contain only digit characters. Sign symbols are not allowed. For example, "300" is valid, but "-20", "20.5", and "+300" are all invalid. This note applies to %JobTimeout, %MaxFontSizeAsBitmap, %MinFontAsOutline, %PSMemory, and %WaitTimeout.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Pscript5%20Keywords%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

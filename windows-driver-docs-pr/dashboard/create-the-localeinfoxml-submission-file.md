@@ -2,29 +2,23 @@
 title: Create the LocaleInfo.xml Submission File
 description: Create the LocaleInfo.xml Submission File
 ms.assetid: 2b16b045-4d34-418c-8f68-7f688adf8e7e
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
+ms.localizationpriority: medium
 ---
 
 # Create the LocaleInfo.xml Submission File
 
+## LocaleInfo XML Schema
 
-## <span id="LocaleInfo_XML_Schema"></span><span id="localeinfo_xml_schema"></span><span id="LOCALEINFO_XML_SCHEMA"></span>LocaleInfo XML Schema
-
-
-A device manifest submission package must contain one LocaleInfo.xml document, which has information that the Hardware Dev Center Dashboard uses to validate the locale information in the device metadata package.
+A device manifest submission package must contain one LocaleInfo.xml document, which has information that the Partner Center uses to validate the locale information in the device metadata package.
 
 The data in the LocaleInfo.xml document is formatted based on the LocaleInfo XML schema, which is described below.
 
-**Note**  
- The XML document must be saved by using UTF-8 encoding.
+> [!NOTE]
+> The XML document must be saved by using UTF-8 encoding.
 
- 
-
-For more information about address ranges, see [How to Create a Device Metadata Package for Devices and Printers](http://go.microsoft.com/fwlink/?LinkId=253559).
+For more information about address ranges, see [How to Create a Device Metadata Package for Devices and Printers](https://go.microsoft.com/fwlink/?LinkId=253559).
 
 ### <span id="LocaleInfo_XML_Schema_NameSpace"></span><span id="localeinfo_xml_schema_namespace"></span><span id="LOCALEINFO_XML_SCHEMA_NAMESPACE"></span>LocaleInfo XML Schema NameSpace
 
@@ -76,7 +70,7 @@ The following table describes the metadata elements and attributes of the Locale
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="LocaleInfo_XML_Schema_Definition"></span><span id="localeinfo_xml_schema_definition"></span><span id="LOCALEINFO_XML_SCHEMA_DEFINITION"></span>LocaleInfo XML Schema Definition
 
@@ -115,26 +109,25 @@ The following is the LocaleInfo XML schema definition:
 </xs:schema>
 ```
 
-## <span id="LocaleInfo_XML_Schema_Reference"></span><span id="localeinfo_xml_schema_reference"></span><span id="LOCALEINFO_XML_SCHEMA_REFERENCE"></span>LocaleInfo XML Schema Reference
-
+## LocaleInfo XML Schema Reference
 
 The LocaleInfo XML schema defines the following elements and attributes:
 
--   LocaleInfo
+- LocaleInfo
 
-    -   MultipleLocale
+  - MultipleLocale
 
-    -   LocaleDeclaredInPackageInfo
+  - LocaleDeclaredInPackageInfo
 
-        -   default
+      -   default
 
-    -   SupportedLocaleList
+   -   SupportedLocaleList
 
-        -   Locale
+       - Locale
 
-### <span id="MultipleLocale_Element"></span><span id="multiplelocale_element"></span><span id="MULTIPLELOCALE_ELEMENT"></span>MultipleLocale Element
+### MultipleLocale Element
 
-The MultipleLocale element specifies if the device metadata package supports multiple locales. The Hardware Dev Center Dashboard uses this value to properly validate the package.
+The MultipleLocale element specifies if the device metadata package supports multiple locales. The Partner Center uses this value to properly validate the package.
 
 ``` syntax
 <xs:element name="MultipleLocale" type="xs:boolean" />
@@ -146,7 +139,7 @@ The MultipleLocale element must be “true” if more than one locale is support
 
 ### <span id="LocaleDeclaredInPackageInfo_Element"></span><span id="localedeclaredinpackageinfo_element"></span><span id="LOCALEDECLAREDINPACKAGEINFO_ELEMENT"></span>LocaleDeclaredInPackageInfo Element
 
-The LocaleDeclaredInPackageInfo element specifies information about the locale and package attributes declared in the device metadata package. The Hardware Dev Center Dashboard uses this information to properly validate the declared locale metadata in the device metadata package.
+The LocaleDeclaredInPackageInfo element specifies information about the locale and package attributes declared in the device metadata package. The Partner Center uses this information to properly validate the declared locale metadata in the device metadata package.
 
 ``` syntax
 <xs:element name="LocaleDeclaredInPackageInfo" type="tns:LocaleDeclaredInPackageInfoType" />
@@ -178,7 +171,7 @@ The default element must match the default value specified in PackageInfo.xml.
 
 ### <span id="SupportedLocaleList_Element"></span><span id="supportedlocalelist_element"></span><span id="SUPPORTEDLOCALELIST_ELEMENT"></span>SupportedLocaleList Element
 
-The SupportedLocaleList element specifies which other locales are supported in the device metadata package. The Hardware Dev Center Dashboard uses this information to properly validate the additional locale metadata in the device metadata package.
+The SupportedLocaleList element specifies which other locales are supported in the device metadata package. The Partner Center uses this information to properly validate the additional locale metadata in the device metadata package.
 
 ``` syntax
 <xs:element name="SupportedLocaleList" type="tns:SupportedLocaleListType" minOccurs="0" />
@@ -193,7 +186,7 @@ The SupportedLocaleList element specifies which other locales are supported in t
 
 ### <span id="Locale_Element"></span><span id="locale_element"></span><span id="LOCALE_ELEMENT"></span>Locale Element
 
-The Locale element specifies an extra locale that is supported in the device metadata package. See SupportedLocaleList Element for more information about how the Hardware Dev Center Dashboard uses this value.
+The Locale element specifies an extra locale that is supported in the device metadata package. See SupportedLocaleList Element for more information about how the Partner Center uses this value.
 
 ## <span id="LocaleInfo_XML_Example"></span><span id="localeinfo_xml_example"></span><span id="LOCALEINFO_XML_EXAMPLE"></span>LocaleInfo XML Example
 
@@ -223,11 +216,10 @@ This example applies to a device metadata package that supports the en-US, ja-JP
 </LocaleInfo>
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Create%20the%20LocaleInfo.xml%20Submission%20File%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -5,11 +5,8 @@ ms.assetid: d36e041f-efa5-450f-b4de-c84c4880e44d
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Survey of Verification Tools
@@ -19,11 +16,11 @@ The following verification tools are described in the WDK and recommended for us
 
 ### <span id="as_soon_as_the_code_compiles"></span><span id="AS_SOON_AS_THE_CODE_COMPILES"></span>As soon as the code compiles
 
--   [Code Analysis for Drivers](code-analysis-for-drivers.md) is a static verification tool that runs at compile time. The Windows Driver Kit provides a driver-specific extension to the [Code Analysis tool](http://go.microsoft.com/fwlink/p/?linkid=226836) in Microsoft Visual Studio Ultimate 2012.
+-   [Code Analysis for Drivers](code-analysis-for-drivers.md) is a static verification tool that runs at compile time. The Windows Driver Kit provides a driver-specific extension to the [Code Analysis tool](https://go.microsoft.com/fwlink/p/?linkid=226836) in Microsoft Visual Studio Ultimate 2012.
 
     [Code Analysis for Drivers](code-analysis-for-drivers.md) can verify drivers written in C/C++ and managed code. It examines the code in each function of a driver independently, so you can run it as soon as you can build your driver. It runs relatively quickly and uses few resources.
 
-    The basic features of the [Code Analysis tool](http://go.microsoft.com/fwlink/p/?linkid=226836) detect general coding errors, such as not checking return values. The driver-specific features detect more subtle driver coding errors, such as leaving uninitialized fields in a copied IRP and failing to restore a changed IRQL by the end of a routine.
+    The basic features of the [Code Analysis tool](https://go.microsoft.com/fwlink/p/?linkid=226836) detect general coding errors, such as not checking return values. The driver-specific features detect more subtle driver coding errors, such as leaving uninitialized fields in a copied IRP and failing to restore a changed IRQL by the end of a routine.
 
 <!-- -->
 
@@ -45,13 +42,12 @@ Use the following dynamic verification tools as soon as the driver is built and 
     -   **Memory leaks.** Driver Verifier tracks memory allocations made by a driver and makes sure the memory is freed before the driver gets unloaded.
     -   **I/O operations that take too much time to complete or to be canceled.** The Driver Verifier can test the driver's logic for responding to STATUS\_PENDING return values from [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336).
     -   **DDI Compliance Checking.** (Available starting with Windows 8) Driver Verifier applies a set of device driver interface (DDI) rules that check for the proper interaction between a driver and the kernel interface of the operating system. These rules correspond to rules that Static Driver Verifier uses in analyzing driver source code. If Driver Verifier finds an error when DDI Compliance Checking is enabled, run [Static Driver Verifier](static-driver-verifier.md) and select the same rule that caused the error. Static Driver Verifier can help you locate the cause of the defect in the driver source code.
--   [Application Verifier](application-verifier.md) is a dynamic verification tool for user-mode applications and drivers written in C/C++. It does not verify managed code. Application Verifier is not included in the WDK, but you can download and install it from the [Microsoft Download Center website](http://go.microsoft.com/fwlink/p/?linkid=11573).
+-   [Application Verifier](application-verifier.md) is a dynamic verification tool for user-mode applications and drivers written in C/C++. It does not verify managed code. Application Verifier is not included in the WDK, but you can download and install it from the [Microsoft Download Center website](https://go.microsoft.com/fwlink/p/?linkid=11573).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Survey%20of%20Verification%20Tools%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

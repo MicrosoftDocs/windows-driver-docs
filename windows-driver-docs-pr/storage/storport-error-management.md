@@ -1,13 +1,9 @@
 ---
 title: Storport Error Management
-author: windows-driver-content
 description: Storport Error Management
 ms.assetid: f482b362-789a-4cc0-92c9-9d0db5d8561a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storport Error Management
@@ -22,11 +18,10 @@ The following sections describe how Storport manages errors, and, in particular,
 
 [Device Status for High-Performance Buses and Adapters](device-status-for-high-performance-buses-and-adapters.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

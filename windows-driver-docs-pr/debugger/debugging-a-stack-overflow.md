@@ -3,11 +3,8 @@ title: Debugging a Stack Overflow
 description: Debugging a Stack Overflow
 ms.assetid: fc67effa-88c9-4915-a5a8-8c094595c6c5
 keywords: ["stack overflow", "call stack, debugging a stack overflow"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging a Stack Overflow
@@ -32,7 +29,7 @@ Here is an example of how to debug a stack overflow. In this example, NTSD is ru
 
 The first step is see what event caused the debugger to break in:
 
-```
+```dbgcmd
 0:002> .lastevent 
 Last event: Exception C00000FD, second chance 
 ```
@@ -41,7 +38,7 @@ You can look up exception code 0xC00000FD in ntstatus.h, which can be found in t
 
 To double-check that the stack overflowed, you can use the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command:
 
-```
+```dbgcmd
 0:002> k 
 ChildEBP RetAddr
 009fdd0c 71a32520 COMCTL32!_chkstk+0x25
@@ -67,7 +64,7 @@ ChildEBP RetAddr
 
 The target thread has broken into COMCTL32!\_chkstk, which indicates a stack problem. Now you should investigate the stack usage of the target process. The process has multiple threads, but the important one is the one that caused the overflow, so identify this thread first:
 
-```
+```dbgcmd
 0:002> ~*k
 
    0  id: 570.574   Suspend: 1 Teb 7ffde000 Unfrozen
@@ -88,14 +85,14 @@ Now you need to investigate thread 2. The period at the left of this line indica
 
 The stack information is contained in the TEB (Thread Environment Block) at 0x7FFDC000. The easiest way to list it is using [**!teb**](-teb.md). However, this requires you to have the proper symbols. For maximum versatility, assume you have no symbols:
 
-```
+```dbgcmd
 0:002> dd 7ffdc000 L4 
 7ffdc000   009fdef0 00a00000 009fc000 00000000 
 ```
 
-To interpret this, you need to look up the definition of the TEB data structure. If you had complete symbols, you could use [**dt TEB**](dt--display-type-.md) to do this. But in this case, you will need to look at the ntpsapi.h file in the Microsoft Windows SDK. For Windows XP and later versions of Windows, this file contains the following information:
+To interpret this, you need to look up the definition of the TEB data structure. If you had complete symbols, you could use [**dt TEB**](dt--display-type-.md) to do this. But in this case, you will need to look at the ntpsapi.h file in the Microsoft Windows SDK. This file contains the following information:
 
-```
+```cpp
 typedef struct _TEB {
     NT_TIB NtTib;
     PVOID  EnvironmentPointer;
@@ -119,14 +116,14 @@ typedef struct _NT_TIB {
 
 This indicates that the second and third DWORDs in the TEB structure point to the bottom and top of the stack, respectively. In this case, these addresses are 0x00A00000 and 0x009FC000. (The stack grows downward in memory.) You can calculate the stack size using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command:
 
-```
+```dbgcmd
 0:002> ? a00000-9fc000
 Evaluate expression: 16384 = 00004000 
 ```
 
 This shows that the stack size is 16 K. The maximum stack size is stored in the field **DeallocationStack**. After some calculation, you can determine that this field's offset is 0xE0C.
 
-```
+```dbgcmd
 0:002> dd 7ffdc000+e0c L1 
 7ffdce0c   009c0000 
 
@@ -140,7 +137,7 @@ Furthermore, this process looks clean -- it is not in an infinite recursion or e
 
 Now break into KD and look at the overall system memory usage with the [**!vm**](-vm.md) extension command:
 
-```
+```dbgcmd
 0:002> .breakin 
 Break instruction exception - code 80000003 (first chance)
 ntoskrnl!_DbgBreakPointWithStatus+4:
@@ -193,7 +190,7 @@ To do this, disassemble the first few instructions and look for the instruction 
 
 Here is an example:
 
-```
+```dbgcmd
 0:002> k 
 ChildEBP RetAddr
 009fdd0c 71a32520 COMCTL32!_chkstk+0x25
@@ -207,7 +204,6 @@ ChildEBP RetAddr
 009fe074 71a1db30 COMCTL32!Header_Draw+0x63
 009fe0d0 71a1f196 COMCTL32!Header_OnPaint+0x3f
 009fe128 77cf8290 COMCTL32!Header_WndProc+0x4e2
-009fe148 77cfd634 USER32!_InternalCallWinProc+0x18
 
 0:002> u COMCTL32!Header_Draw
  COMCTL32!Header_Draw :
@@ -223,11 +219,10 @@ ChildEBP RetAddr
 
 This shows that **Header\_Draw** allocated 0x58 bytes of stack space.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20a%20Stack%20Overflow%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

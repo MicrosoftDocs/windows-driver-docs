@@ -2,6 +2,8 @@
 title: Setting Symbol and Executable Image Paths in WinDbg
 description: Setting Symbol and Executable Image Paths in WinDbg
 ms.assetid: 8EA2509E-0B47-4D28-B934-F1F58F5CFC45
+ms.date: 11/28/2017
+ms.localizationpriority: medium
 ---
 
 # Setting Symbol and Executable Image Paths in WinDbg
@@ -14,7 +16,7 @@ The symbol path specifies the directories where the symbol files are located. Fo
 
 **Note**   If you are connected to the Internet or a corporate network, the most efficient way to access symbols is to use a symbol server. You can use a symbol server by using the srv\* or symsrv\* string within your symbol path. For more information about symbol servers, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
 
- 
+ 
 
 To control the symbol path in WinDbg, do one of the following:
 
@@ -28,7 +30,7 @@ To control the symbol path in WinDbg, do one of the following:
 
     **Note**  If you use the -**sins** command-line option, the debugger ignores the symbol path environment variable.
 
-     
+     
 
 ## <span id="Executable_Image_Path"></span><span id="executable_image_path"></span><span id="EXECUTABLE_IMAGE_PATH"></span>Executable Image Path
 
@@ -39,7 +41,7 @@ An executable file is a binary file that the processor can run. These files typi
 
 **Note**   These terms are sometimes used imprecisely. For example, some documents might use "image" for the actual file on the disk. Also, the Windows kernel and HAL have special module names. For example, the **nt** module corresponds to the Ntoskrnl.exe file.
 
- 
+ 
 
 The executable image path specifies the directories that the binary executable files are located in.
 
@@ -61,13 +63,12 @@ To control the executable image path in WinDbg, do one of the following:
 
     **Note**  If you use the **-sins** command-line option, the debugger ignores the executable image path environment variable.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Setting%20Symbol%20and%20Executable%20Image%20Paths%20in%20WinDbg%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

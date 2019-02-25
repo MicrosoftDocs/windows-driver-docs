@@ -2,11 +2,8 @@
 title: Obtaining a Software Publisher Certificate (SPC)
 description: Obtaining a Software Publisher Certificate (SPC)
 ms.assetid: 50546234-e98d-40ed-b9c6-7d78cf0419ca
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining a Software Publisher Certificate (SPC)
@@ -24,13 +21,13 @@ Once the SPC and keys are stored in a *.pfx* file, they must be imported into th
 
 Microsoft has issued one cross-certificate for each public key root certificate for CAs, which supports the use of Software Publisher Certificates for kernel-mode code signing. You must use correct cross-certificate when release-signing a driver package. To determine which cross-certificate is needed for release-signing, see [Determining an SPC's Cross-Certificate](determining-an-spc-s-cross-certificate.md).
 
-For a list of certification authorities that provide SPCs and for more information about cross-certificates, see [Microsoft Cross-Certificates for Windows Vista Kernel Mode Code Signing](http://go.microsoft.com/fwlink/p/?linkid=66583). Follow the instructions on the CA's website for obtaining and installing the SPC and corresponding cross-certificate on the signing computer.
+For a list of certification authorities that provide SPCs and for more information about cross-certificates, see [Microsoft Cross-Certificates for Windows Vista Kernel Mode Code Signing](https://go.microsoft.com/fwlink/p/?linkid=66583). Follow the instructions on the CA's website for obtaining and installing the SPC and corresponding cross-certificate on the signing computer.
 
 For more information about SPCs and their management, see [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
 
- 
+ 
 
- 
+ 
 
 
 

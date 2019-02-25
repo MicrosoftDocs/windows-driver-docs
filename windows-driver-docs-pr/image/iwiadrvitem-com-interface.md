@@ -1,19 +1,15 @@
 ---
 title: IWiaDrvItem COM Interface
-author: windows-driver-content
 description: IWiaDrvItem COM Interface
 ms.assetid: 1be2265b-7ae8-4935-9559-588b885526d4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IWiaDrvItem COM Interface
 
 
-## <a href="" id="ddk-iwiadrvitem-com-interface-si"></a>
+
 
 
 The [IWiaDrvItem interface](https://msdn.microsoft.com/library/windows/hardware/ff543896) provides methods that a WIA minidriver uses to manage a tree of **IWiaDrvItem** items. These methods allow a WIA minidriver to manipulate **IWiaDrvItem** objects. The **IWiaDrvItem** interface supplies the following methods.
@@ -31,68 +27,66 @@ The [IWiaDrvItem interface](https://msdn.microsoft.com/library/windows/hardware/
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IWiaDrvItem::AddItemToFolder</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543856)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543856" data-raw-source="[&lt;strong&gt;IWiaDrvItem::AddItemToFolder&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543856)"><strong>IWiaDrvItem::AddItemToFolder</strong></a></p></td>
 <td><p>Adds the <strong>IWiaDrvItem</strong> object to a folder.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaDrvItem::DumpItemData</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543863)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543863" data-raw-source="[&lt;strong&gt;IWiaDrvItem::DumpItemData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543863)"><strong>IWiaDrvItem::DumpItemData</strong></a></p></td>
 <td><p>Dumps private driver item data.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IWiaDrvItem::FindChildItemByName</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543867)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543867" data-raw-source="[&lt;strong&gt;IWiaDrvItem::FindChildItemByName&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543867)"><strong>IWiaDrvItem::FindChildItemByName</strong></a></p></td>
 <td><p>Locates a child item by full item name.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaDrvItem::FindItemByName</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543870)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543870" data-raw-source="[&lt;strong&gt;IWiaDrvItem::FindItemByName&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543870)"><strong>IWiaDrvItem::FindItemByName</strong></a></p></td>
 <td><p>Locates an item by full item name.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IWiaDrvItem::GetDeviceSpecContext</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543873)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543873" data-raw-source="[&lt;strong&gt;IWiaDrvItem::GetDeviceSpecContext&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543873)"><strong>IWiaDrvItem::GetDeviceSpecContext</strong></a></p></td>
 <td><p>Retrieves a pointer to a device-specific context.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaDrvItem::GetFirstChildItem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543878)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543878" data-raw-source="[&lt;strong&gt;IWiaDrvItem::GetFirstChildItem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543878)"><strong>IWiaDrvItem::GetFirstChildItem</strong></a></p></td>
 <td><p>Returns the first child of this folder item.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IWiaDrvItem::GetFullItemName</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543881)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543881" data-raw-source="[&lt;strong&gt;IWiaDrvItem::GetFullItemName&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543881)"><strong>IWiaDrvItem::GetFullItemName</strong></a></p></td>
 <td><p>Retrieves full item name and hierarchy information.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaDrvItem::GetItemFlags</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543883)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543883" data-raw-source="[&lt;strong&gt;IWiaDrvItem::GetItemFlags&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543883)"><strong>IWiaDrvItem::GetItemFlags</strong></a></p></td>
 <td><p>Returns WIA item flags.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IWiaDrvItem::GetItemName</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543885)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543885" data-raw-source="[&lt;strong&gt;IWiaDrvItem::GetItemName&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543885)"><strong>IWiaDrvItem::GetItemName</strong></a></p></td>
 <td><p>Retrieves the item name.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaDrvItem::GetNextSiblingItem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543889)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543889" data-raw-source="[&lt;strong&gt;IWiaDrvItem::GetNextSiblingItem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543889)"><strong>IWiaDrvItem::GetNextSiblingItem</strong></a></p></td>
 <td><p>Finds the next sibling of this item.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IWiaDrvItem::GetParentItem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543892)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543892" data-raw-source="[&lt;strong&gt;IWiaDrvItem::GetParentItem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543892)"><strong>IWiaDrvItem::GetParentItem</strong></a></p></td>
 <td><p>Retrieves the parent item of this item.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IWiaDrvItem::RemoveItemFromFolder</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543899)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543899" data-raw-source="[&lt;strong&gt;IWiaDrvItem::RemoveItemFromFolder&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543899)"><strong>IWiaDrvItem::RemoveItemFromFolder</strong></a></p></td>
 <td><p>Removes an item from parent folder.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IWiaDrvItem::UnlinkItemTree</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543901)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543901" data-raw-source="[&lt;strong&gt;IWiaDrvItem::UnlinkItemTree&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543901)"><strong>IWiaDrvItem::UnlinkItemTree</strong></a></p></td>
 <td><p>Unlinks the driver item tree.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20IWiaDrvItem%20COM%20Interface%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -6,17 +6,14 @@ keywords:
 - NDIS network interfaces WDK , services
 - network interfaces WDK , services
 - services WDK network interface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Network Interface Services
 
 
-## <a href="" id="ddk-ndis-network-interface-services-ng"></a>
+
 
 
 The NDIS network interfaces programming interface provides services to:
@@ -36,9 +33,9 @@ The NDIS network interfaces programming interface provides services to:
 
 -   Query and set interface properties and tables that NDIS drivers manage and that RFCs 2863 and 2864 specify.
 
- 
+ 
 
- 
+ 
 
 
 

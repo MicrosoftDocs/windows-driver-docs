@@ -9,17 +9,14 @@ keywords:
 - power states WDK networking
 - power management WDK NDIS miniport , device power states
 - transitioning power states WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Power States for Network Adapters
 
 
-## <a href="" id="ddk-device-power-states-for-nics-ng"></a>
+
 
 
 A device power state for a network adapter describes a network adapter's level of power consumption and computing activity.
@@ -37,7 +34,7 @@ For a thorough description of device states, see the following topics:
 
 **Note**  NDIS processes power management IRPs, but NDIS drivers do not.
 
- 
+ 
 
 The device power states for network adapters are defined as follows:
 
@@ -115,9 +112,9 @@ Before a network adapter can transition to a sleeping state, its miniport driver
 
 The only transitions allowed between device power states are from the highest-powered state (D0) to a sleeping state (D1, D2, D3), or from a sleeping state to the highest-powered state. NDIS never commands a network adapter to transition directly from one sleeping state to another.
 
- 
+ 
 
- 
+ 
 
 
 

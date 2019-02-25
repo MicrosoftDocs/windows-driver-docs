@@ -3,17 +3,14 @@ title: Bug Check 0x10E VIDEO_MEMORY_MANAGEMENT_INTERNAL
 description: The VIDEO_MEMORY_MANAGEMENT_INTERNAL bug check has a value of 0x0000010E. This indicates that the video memory manager has encountered a condition that it is unable to recover from.
 ms.assetid: 2fb29098-084c-462a-bb06-789e73924d16
 keywords: ["Bug Check 0x10E VIDEO_MEMORY_MANAGEMENT_INTERNAL", "VIDEO_MEMORY_MANAGEMENT_INTERNAL"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - VIDEO_MEMORY_MANAGEMENT_INTERNAL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x10E: VIDEO\_MEMORY\_MANAGEMENT\_INTERNAL
@@ -21,7 +18,7 @@ api_type:
 
 The VIDEO\_MEMORY\_MANAGEMENT\_INTERNAL bug check has a value of 0x0000010E. This indicates that the video memory manager has encountered a condition that it is unable to recover from.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## VIDEO\_MEMORY\_MANAGEMENT\_INTERNAL Parameters
 
@@ -134,7 +131,7 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tr>
 <tr class="even">
 <td align="left"><p>0x18</p></td>
-<td align="left"><p>An attempt to release a pinned allocation's resource failed.</p></td>
+<td align="left"><p>An attempt to release a pinned allocation&#39;s resource failed.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x19</p></td>
@@ -155,7 +152,7 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -167,9 +164,9 @@ Resolution
 
 If the problem persists, check Windows Update for an updated video driver.
 
- 
+ 
 
- 
+ 
 
 
 

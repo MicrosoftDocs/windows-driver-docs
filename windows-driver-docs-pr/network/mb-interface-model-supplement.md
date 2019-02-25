@@ -2,11 +2,8 @@
 title: MB Interface Model supplement
 description: This section provides supplemental information for the MB Interface Model (MBIM)
 ms.assetid: 577BCF39-868B-44F5-A5C0-75E28689C2B6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB Interface Model Supplement
@@ -84,7 +81,7 @@ Here is the structure of the string descriptor:
 </tbody>
 </table>
 
- 
+ 
 
 The structure of the Microsoft OS string descriptor is fixed for version 1.00 and has an overall length of 18 bytes. The version number of the Microsoft OS string descriptor is listed in the **qwSignature** field. The information stored in the **bMS\_VendorCode** field must be a single byte value. It will be used to retrieve Microsoft OS feature descriptors, and this byte value is used in the **bmRequestType** field described as follows:
 
@@ -125,7 +122,7 @@ To retrieve the information stored in the string, a standard GET\_DESCRIPTOR req
 </tbody>
 </table>
 
- 
+ 
 
 The **bmRequestType** field is a bitmap composed of three parts—direction of data transfer, descriptor type, and recipient. According to the USB specification, the value of **bmRequestType** is set to 1000 0000b (0x80).
 
@@ -148,7 +145,7 @@ Because vendors are allowed to use any string ID to store information, the opera
 
 The following constraints apply to Microsoft OS string descriptors and their retrieval:
 
--   To store information in compliance with the Microsoft OS descriptor specification, the device must have one and only Microsoft OS string descriptor that is in compliance with the information outlined in [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=308932).
+-   To store information in compliance with the Microsoft OS descriptor specification, the device must have one and only Microsoft OS string descriptor that is in compliance with the information outlined in [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=308932).
 -   A device vendor is free to use any value in the **bMS\_VendorCode** field in the Microsoft OS string descriptor
 
 **Feature Descriptor**
@@ -192,7 +189,7 @@ To retrieve a Microsoft OS feature descriptor, a special GET\_MS\_DESCRIPTOR req
 </tbody>
 </table>
 
- 
+ 
 
 The **bmRequestType** field is a bitmap composed of three parts—direction of data transfer, descriptor type, and recipient—and is in accordance with the USB specification. The Microsoft OS feature descriptor is a vendor-specific descriptor and the direction of data transfer is from the device to the host. Therefore, the value of **bmRequestType** is set to 1100 0000b (0xC0).
 
@@ -200,7 +197,7 @@ The **bRequest** field is used to indicate the format of the request. To retriev
 
 The **wValue** field is put to special use and is broken up into a high byte and a low byte. The high byte is used to store the interface number. This is essential for storing feature descriptors on a per interface basis, especially for composite devices, or devices with [multiple interfaces](https://msdn.microsoft.com/library/windows/hardware/ff537102). In most cases, interface 0 will be used. The low byte is used to store a page number. This feature prevents descriptors from having a size boundary of 64 KB (a limit set by the size of the **wLength** field). A descriptor will be fetched with the page value initially set to zero. If a full descriptor (size is 64 KB) is received, the page value will be incremented by one and the request for the descriptor will be sent again (this time with the incremented page value). This process will repeat until a descriptor with a size less than 64 KB is received. Note that the maximum number of pages is 255, which places a limit of 16 MB on the descriptor size.
 
-The **wIndex** field stores the feature index number for the Microsoft OS feature descriptor being retrieved. Microsoft will maintain this list of Microsoft OS feature descriptors and indexes. To learn more about Microsoft OS feature descriptors, see [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=308932).
+The **wIndex** field stores the feature index number for the Microsoft OS feature descriptor being retrieved. Microsoft will maintain this list of Microsoft OS feature descriptors and indexes. To learn more about Microsoft OS feature descriptors, see [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=308932).
 
 The **wLength** field specifies the length of the descriptor to be fetched. If the descriptor is longer than the number of bytes stated in the **wLength** field, only the initial bytes of the descriptor are returned. If it is shorter than the value specified in the **wLength** field, a short packet is returned.
 
@@ -281,7 +278,7 @@ The header section stores information about the rest of the extended configurati
 </tbody>
 </table>
 
- 
+ 
 
 **Function section**
 
@@ -347,7 +344,7 @@ Here is the format of the function section, including values that should be used
 </tbody>
 </table>
 
- 
+ 
 
 ¹Offset of the custom property section has been reset to zero. To calculate the offset of a field from the beginning of the extended configuration descriptor, add the length of the sections that precede it.
 
@@ -391,7 +388,7 @@ Here is the format of the function section, including values that should be used
 </tbody>
 </table>
 
- 
+ 
 
 -   **bConfiguration** refers to the **bConfiguration** value within the USB configuration descriptor of the configuration that exposes the MBIM function. **bConfiguration** cannot be 1 because that is the default configuration exposing only the CDROM function. **bConfiguration** cannot be greater than 4; that is, the MBIM function should be exposed within the first four configurations.
 -   compatibleID remains the same for all configurations. The subcompatibleID changes based on the configuration
@@ -451,7 +448,7 @@ This table shows a sample multi-configuration scenario. The table lists the func
 </tbody>
 </table>
 
- 
+ 
 
 The following tables show the values used by the Microsoft OS string descriptor and the Microsoft OS extended configuration feature descriptor for the previous sample’s multi-configuration scenario.
 
@@ -500,7 +497,7 @@ The following tables show the values used by the Microsoft OS string descriptor 
 </tbody>
 </table>
 
- 
+ 
 
 *Example Microsoft OS extended configuration feature descriptor header*
 
@@ -553,7 +550,7 @@ The following tables show the values used by the Microsoft OS string descriptor 
 </tbody>
 </table>
 
- 
+ 
 
 *Example Microsoft OS extended configuration feature descriptor function*
 
@@ -606,13 +603,13 @@ The following tables show the values used by the Microsoft OS string descriptor 
 </tbody>
 </table>
 
- 
+ 
 
 ²Offset of the custom property section has been reset to zero. To calculate the offset of a field from the beginning of the extended configuration descriptor, add the length of the sections that precede it.
 
- 
+ 
 
- 
+ 
 
 
 

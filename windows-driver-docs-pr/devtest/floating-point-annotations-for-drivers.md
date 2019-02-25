@@ -2,11 +2,8 @@
 title: Floating Point Annotations for drivers
 description: Floating point annotations can help the code analysis tool detect the use of floating point in kernel-mode code and can report errors if the floating-point state is not properly protected. Floating-point rules are checked only for kernel-mode code.
 ms.assetid: 86FF1A21-674F-4BDA-AC03-C1E5F06A4439
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Floating Point Annotations for drivers
@@ -31,21 +28,21 @@ Add the following annotations to function parameters to indicate what they do wi
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><span id="_Kernel_float_saved_"></span><span id="_kernel_float_saved_"></span><span id="_KERNEL_FLOAT_SAVED_"></span>_Kernel_float_saved_</p></td>
+<td align="left"><p><span id="_Kernel_float_saved_"></span><span id="_kernel_float_saved_"></span><span id="_KERNEL_FLOAT_SAVED_"></span><em>Kernel_float_saved</em></p></td>
 <td align="left"><p>The annotated function saves the floating-point hardware state, when the function returns successfully.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="_Kernel_float_restored_"></span><span id="_kernel_float_restored_"></span><span id="_KERNEL_FLOAT_RESTORED_"></span>_Kernel_float_restored_</p></td>
+<td align="left"><p><span id="_Kernel_float_restored_"></span><span id="_kernel_float_restored_"></span><span id="_KERNEL_FLOAT_RESTORED_"></span><em>Kernel_float_restored</em></p></td>
 <td align="left"><p>The annotated function restores the floating-point hardware state when the function returns successfully.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span id="_Kernel_float_used_"></span><span id="_kernel_float_used_"></span><span id="_KERNEL_FLOAT_USED_"></span>_Kernel_float_used_</p></td>
-<td align="left"><p>If the function is called safely by a calling function, you can use the _Kernel_float_used_ annotation to suppress the reporting of errors. However, if the calling function is not also annotated with _Kernel_float_used_ or the function call does not occur between functions annotated with _Kernel_float_saved and _Kernel_float_restored_, respectively, the code analysis tools will report an error.</p></td>
+<td align="left"><p><span id="_Kernel_float_used_"></span><span id="_kernel_float_used_"></span><span id="_KERNEL_FLOAT_USED_"></span><em>Kernel_float_used</em></p></td>
+<td align="left"><p>If the function is called safely by a calling function, you can use the <em>Kernel_float_used</em> annotation to suppress the reporting of errors. However, if the calling function is not also annotated with <em>Kernel_float_used</em> or the function call does not occur between functions annotated with <em>Kernel_float_saved and _Kernel_float_restored</em>, respectively, the code analysis tools will report an error.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 These annotations are already applied to KeSaveFloatingPoint state and KeRestoreFloatingPointState system functions, in addition to annotations for acquiring and releasing resources to prevent leaks. The similar EngXxx functions are also annotated in this way. However, functions that wrap these functions should also use these annotations.
 
@@ -72,7 +69,6 @@ In the following example, the \_Kernel\_float\_used\_ annotation suppresses warn
 _Kernel_float_used_
 void
     MyDoesFloatingPoint(arguments);
- 
 ```
 
 ## <span id="related_topics"></span>Related topics
@@ -80,11 +76,10 @@ void
 
 [SAL 2.0 Annotations for Windows Drivers](sal-2-annotations-for-windows-drivers.md)
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Floating%20Point%20Annotations%20for%20drivers%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

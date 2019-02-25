@@ -1,23 +1,19 @@
 ---
 title: Printer Installation and the Plug and Play Manager
-author: windows-driver-content
 description: Printer Installation and the Plug and Play Manager
 ms.assetid: 1edc92f1-fcd9-4af0-957d-cd7ff2e40125
 keywords:
 - Plug and Play manager WDK print
 - duplicate installation detection WDK print
 - detecting duplicate printer installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer Installation and the Plug and Play Manager
 
 
-## <a href="" id="ddk-printer-installation-and-the-plug-and-play-manager-gg"></a>
+
 
 
 The Plug and Play manager handles all Plug and Play events for the machine, and is generic to all devices. The Plug and Play manager is documented in [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125). [Introduction to Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff548102) gives an overview of Plug and Play installation, and of how the various kernel-mode and user-mode components interact.
@@ -36,26 +32,24 @@ If the user must be able to choose which driver to install, you can use an Inter
 
 2.  To install a driver for a device that cannot use the generic class installer or a driver supplied with the operating system.
 
-If hardware IDs or compatible IDs are listed with the InteractiveInstall directive, Setup defers installation of printers matching those IDs to the client side, so the installation is delayed until an administrator logs on. The administrator is prompted to install the correct driver files. This is useful if two printer drivers share the same [*device ID*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-id), but require different drivers.
+If hardware IDs or compatible IDs are listed with the InteractiveInstall directive, Setup defers installation of printers matching those IDs to the client side, so the installation is delayed until an administrator logs on. The administrator is prompted to install the correct driver files. This is useful if two printer drivers share the same *device ID*, but require different drivers.
 
-In contrast to Windows 2000 and later, Windows 95/98/Me Plug and Play installs devices without user intervention only if there is a [*hardware ID*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-id) (rank-0) match. When there is a [*compatible ID*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-compatible-id) (rank-1) match for the driver of a Plug and Play device, but no hardware ID match, the user is prompted to select the correct driver from the installation media. (This means that the user must have the installation media in order to install the driver.)
+In contrast to Windows 2000 and later, Windows 95/98/Me Plug and Play installs devices without user intervention only if there is a *hardware ID* (rank-0) match. When there is a *compatible ID* (rank-1) match for the driver of a Plug and Play device, but no hardware ID match, the user is prompted to select the correct driver from the installation media. (This means that the user must have the installation media in order to install the driver.)
 
 Also on Windows 95/98/Me, when a driver is written for multiple devices (or for similar devices on multiple buses), the user is always prompted for installation if only the compatible ID was listed, unless every possible hardware ID is listed with a duplicate driver entry in the INF file.
 
 ### Duplicate Installation Detection
 
-When Setup calls the printer class installer to install a printer, the class installer determines whether the printer has already been manually installed. It does this by looking for exact matches between the driver and port names of currently installed printers and those listed in the INF file. If the class installer finds an installed print queue whose driver and port names match these two parameters, it does not install a second print queue, but instead associates it with the [*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode) entry. This prevents creating a second print queue for the same device.
+When Setup calls the printer class installer to install a printer, the class installer determines whether the printer has already been manually installed. It does this by looking for exact matches between the driver and port names of currently installed printers and those listed in the INF file. If the class installer finds an installed print queue whose driver and port names match these two parameters, it does not install a second print queue, but instead associates it with the *devnode* entry. This prevents creating a second print queue for the same device.
 
 A number of popular printer models share the same hardware ID (the HP DeskJet series, for example). On Windows 95/98/Me, if a user manually installs a DeskJet model that is subsequently detected by Plug and Play, a second print queue is installed if the user selects the appropriate driver. If the user does not select a driver, then he or she is prompted to do so every time the computer reboots.
 
-Windows 2000 and later avoids this behavior by listing all printers with both a [*hardware ID*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-id) and [*compatible ID*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-compatible-id) match. When multiple matches are found, the class installer checks to see whether there is already a print queue with the same hardware ID match. If there is, the Plug and Play manager does not install a second queue. If not, the hardware ID match is downgraded to a compatible ID match. If these hardware IDs are also listed in the InteractiveInstall entry (see [**INF ControlFlags Section**](https://msdn.microsoft.com/library/windows/hardware/ff546342)) of the INF file, the user is prompted to select a driver.
+Windows 2000 and later avoids this behavior by listing all printers with both a *hardware ID* and *compatible ID* match. When multiple matches are found, the class installer checks to see whether there is already a print queue with the same hardware ID match. If there is, the Plug and Play manager does not install a second queue. If not, the hardware ID match is downgraded to a compatible ID match. If these hardware IDs are also listed in the InteractiveInstall entry (see [**INF ControlFlags Section**](https://msdn.microsoft.com/library/windows/hardware/ff546342)) of the INF file, the user is prompted to select a driver.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Printer%20Installation%20and%20the%20Plug%20and%20Play%20Manager%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -6,17 +6,14 @@ keywords:
 - installation applications WDK , device-specific applications
 - device installation applications WDK , device-specific applications
 - device-specific applications WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Device-Specific Applications
 
 
-## <a href="" id="ddk-installing-device-specific-applications-dg"></a>
+
 
 
 If your distribution medium includes device-specific applications, you can use the following methods to install those applications:
@@ -27,7 +24,7 @@ If your distribution medium includes device-specific applications, you can use t
 
     The co-installer should determine whether the device-specific applications have already been installed. If they have not, the co-installer should do one of the following
 
-    1.  Start a [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) on the distribution medium to install the device-specific applications.
+    1.  Start a *device installation application* on the distribution medium to install the device-specific applications.
     2.  Prompt the user to download a newer version of the device installation application from the Internet.
 
     Independent hardware vendors (IHVs) can use various methods to provide [hardware-first installation](hardware-first-installation.md) solutions for installing device-specific applications. For more information about these methods, see [Hardware-First Installation of Device-Specific Applications](hardware-first-installation-of-device-specific-applications.md).
@@ -38,9 +35,9 @@ If your distribution medium includes device-specific applications, you can use t
 
     If the user inserts the distribution medium before plugging in the device, this is referred to as a [software-first installation](software-first-installation.md). The medium's AutoRun-invoked device installation application should determine whether the device-specific applications have already been installed and if they have not, it should install them by using Windows Installer. For more information, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

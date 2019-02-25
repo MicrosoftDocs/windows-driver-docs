@@ -4,17 +4,14 @@ description: Incoming Request to Close a Call
 ms.assetid: ecdcb74d-6151-4e2b-8fe7-95f455f4deb4
 keywords:
 - incoming close call requests WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Incoming Request to Close a Call
 
 
-## <a href="" id="ddk-incoming-request-to-close-a-call-ng"></a>
+
 
 
 When the remote client closes a call, the local call manager or MCM driver must indicate this incoming request to the local client. To indicate such a request, a call manager calls [**NdisCmDispatchIncomingCloseCall**](https://msdn.microsoft.com/library/windows/hardware/ff561670) with the *CloseStatus* set to NDIS\_STATUS\_SUCCESS (see the following figure).
@@ -39,9 +36,9 @@ If the client originally created this VC for an outgoing call and *CloseStatus* 
 
 If the call manager or MCM driver originally created this VC for an incoming call, the call manager or MCM driver can optionally [delete the VC](deleting-a-vc.md) by respectively calling **NdisCoDeleteVc** or [**NdisMCmDeleteVc**](https://msdn.microsoft.com/library/windows/hardware/ff562819).
 
- 
+ 
 
- 
+ 
 
 
 

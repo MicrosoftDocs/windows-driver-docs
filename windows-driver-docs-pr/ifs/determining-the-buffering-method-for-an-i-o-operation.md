@@ -1,6 +1,5 @@
 ---
 title: Determining the Buffering Method for an I/O Operation
-author: windows-driver-content
 description: Determining the Buffering Method for an I/O Operation
 ms.assetid: 219378d9-a9fa-495a-b016-36595a7efb49
 keywords:
@@ -12,11 +11,8 @@ keywords:
 - neither buffered nor direct I/O WDK file system
 - data buffers WDK file system minifilter
 - I/O WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining the Buffering Method for an I/O Operation
@@ -65,11 +61,10 @@ This section includes:
 
 [IRP-Based I/O Operations That Have No Buffers](irp-based-i-o-operations-that-have-no-buffers.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

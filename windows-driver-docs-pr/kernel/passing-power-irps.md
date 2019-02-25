@@ -1,20 +1,16 @@
 ---
 title: Passing Power IRPs
-author: windows-driver-content
 description: Passing Power IRPs
 ms.assetid: 01473eb0-ae60-4a95-9ae7-97b2b982d3d1
 keywords: ["power IRPs WDK kernel , passing", "passing IRPs down device stack WDK", "DispatchPower routine", "dispatch routines WDK power management", "PoStartNextPowerIrp"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Passing Power IRPs
 
 
-## <a href="" id="ddk-passing-power-irps-kg"></a>
+
 
 
 Power IRPs must be passed all the way down the device stack to the PDO to ensure that power transitions are managed cleanly. Drivers handle an IRP that reduces device power as the IRP travels down the device stack. Drivers handle an IRP that applies device power in [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routines as the IRP travels back up the device stack.
@@ -65,7 +61,7 @@ In addition to the usual rules that govern the processing of IRPs, [**IRP\_MJ\_P
 
 Drivers must not cause long delays while handling power IRPs.
 
-When passing down a power IRP, a driver should return from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine as soon as possible after calling **IoCallDriver** (in Windows 7 and Windows Vista) or **PoCallDriver** (in Windows Server 2003, Windows XP, and Windows 2000). A driver must not wait for a kernel event or otherwise delay before returning. If a driver cannot handle a power IRP in a brief time, it should return STATUS\_PENDING and queue all incoming IRPs until the power IRP completes. (Note that this behavior is different from that of PnP IRPs and [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routines, which are allowed to block.)
+When passing down a power IRP, a driver should return from its [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine as soon as possible after calling **IoCallDriver** (in Windows 7 and Windows Vista) or **PoCallDriver** (in Windows Server 2003, Windows XP, and Windows 2000). A driver must not wait for a kernel event or otherwise delay before returning. If a driver cannot handle a power IRP in a brief time, it should return STATUS\_PENDING and queue all incoming IRPs until the power IRP completes. (Note that this behavior is different from that of PnP IRPs and [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routines, which are allowed to block.)
 
 If the driver must wait for a power action by another driver further down the device stack, it should return STATUS\_PENDING from its *DispatchPower* routine and set an *IoCompletion* routine for the power IRP. The driver can perform whatever tasks it requires in the *IoCompletion* routine, and then call **PoStartNextPowerIrp** (Windows Server 2003, Windows XP, and Windows 2000 only) and [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343).
 
@@ -79,12 +75,10 @@ Finally, the driver passes down the system IRP from the callback routine. The dr
 
 In a similar situation, when the system is going to sleep, a power policy owner might need to complete some pending I/O before it sends the device IRP to power down its device. Instead of signaling an event when the I/O completes and waiting in its *DispatchPower* routine, the driver should queue a work item and return STATUS\_PENDING from the *DispatchPower* routine. In the worker thread, it waits for I/O to complete and then sends the device power IRP. For more information, see [**IoAllocateWorkItem**](https://msdn.microsoft.com/library/windows/hardware/ff548276).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Passing%20Power%20IRPs%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

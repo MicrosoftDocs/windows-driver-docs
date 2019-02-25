@@ -3,11 +3,8 @@ title: Symbol Storage Format
 description: Symbol Storage Format
 ms.assetid: 4aeaa644-9da4-4567-9dc7-86db38b7e93c
 keywords: ["SymStore, storage format"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Symbol Storage Format
@@ -20,7 +17,7 @@ SymStore uses the file system itself as a database. It creates a large tree of d
 
 For example, after several different acpi.dbgs have been added to the server, the directories could look like this:
 
-```
+```console
 Directory of \\mybuilds\symsrv\acpi.dbg
 10/06/1999  05:46p      <DIR>          .
 10/06/1999  05:46p      <DIR>          ..
@@ -48,7 +45,7 @@ Three files may exist inside the lookup directory:
 
 Displaying the directory listing of \\\\mybuilds\\symsrv\\acpi.dbg\\37cdb03962040 gives the following:
 
-```
+```console
 10/04/1999  01:54p                  52 file.ptr
 10/04/1999  01:54p                  67 refs.ptr
 ```
@@ -57,7 +54,7 @@ The file file.ptr contains the text string "\\\\mybuilds\\symbols\\x86\\2128.chk
 
 The contents of refs.ptr are used only by SymStore, not the debugger. This file contains a record of all transactions that have taken place in this directory. A sample line from refs.ptr might be:
 
-```
+```text
 0000000026,ptr,\\mybuilds\symbols\x86\2128.chk\symbols\sys\acpi.dbg
 ```
 
@@ -65,7 +62,7 @@ This shows that a pointer to \\\\mybuilds\\symbols\\x86\\2128.chk\\symbols\\sys\
 
 Some symbol files stay constant through various products or builds or a particular product. One example of this is the Windows 2000 file msvcrt.pdb. A directory listing of \\\\mybuilds\\symsrv\\msvcrt.pdb shows that only two versions of msvcrt.pdb have been added to the symbols server:
 
-```
+```console
 Directory of \\mybuilds\symsrv\msvcrt.pdb
 10/06/1999  05:37p      <DIR>          .
 10/06/1999  05:37p      <DIR>          ..
@@ -75,7 +72,7 @@ Directory of \\mybuilds\symsrv\msvcrt.pdb
 
 However, a directory listing of \\\\mybuilds\\symsrv\\msvcrt.pdb\\37a8f40e2 shows that refs.ptr has several pointers in it.
 
-```
+```console
 Directory of \\mybuilds\symsrv\msvcrt.pdb\37a8f40e2
 10/05/1999  02:50p              54     file.ptr
 10/05/1999  02:50p           2,039     refs.ptr
@@ -83,7 +80,7 @@ Directory of \\mybuilds\symsrv\msvcrt.pdb\37a8f40e2
 
 The contents of \\\\mybuilds\\symsrv\\msvcrt.pdb\\37a8f40e2\\refs.ptr are the following:
 
-```
+```text
 0000000001,ptr,\\mybuilds\symbols\x86\2137\symbols\dll\msvcrt.pdb
 0000000002,ptr,\\mybuilds\symbols\x86\2137.chk\symbols\dll\msvcrt.pdb
 0000000003,ptr,\\mybuilds\symbols\x86\2138\symbols\dll\msvcrt.pdb
@@ -120,7 +117,7 @@ This shows that the same msvcrt.pdb was used for multiple builds of symbols for 
 
 Here is an example of a directory that contains a mixture of file and pointer additions:
 
-```
+```console
 Directory of E:\symsrv\dbghelp.dbg\38039ff439000
 10/12/1999  01:54p         141,232     dbghelp.dbg
 10/13/1999  04:57p              49     file.ptr
@@ -129,7 +126,7 @@ Directory of E:\symsrv\dbghelp.dbg\38039ff439000
 
 In this case, refs.ptr has the following contents:
 
-```
+```text
 0000000043,file,e:\binaries\symbols\retail\dll\dbghelp.dbg
 0000000044,file,f:\binaries\symbols\retail\dll\dbghelp.dbg
 0000000045,file,g:\binaries\symbols\retail\dll\dbghelp.dbg
@@ -139,7 +136,7 @@ In this case, refs.ptr has the following contents:
 
 Thus, transactions 43, 44, and 45 added the same file to the server, and transactions 46 and 47 added pointers. If transactions 43, 44, and 45 are deleted, then the file dbghelp.dbg will be deleted from the directory. The directory will then have the following contents:
 
-```
+```console
 Directory of e:\symsrv\dbghelp.dbg\38039ff439000
 10/13/1999  05:01p                   49 file.ptr
 10/13/1999  05:01p                 130 refs.ptr
@@ -147,18 +144,17 @@ Directory of e:\symsrv\dbghelp.dbg\38039ff439000
 
 Now file.ptr contains "\\\\foo2\\bin\\symbols\\retail\\dll\\dbghelp.dbg", and refs.ptr contains
 
-```
+```text
 0000000046,ptr,\\MyDir\bin\symbols\retail\dll\dbghelp.dbg
 0000000047,ptr,\\foo2\bin\symbols\retail\dll\dbghelp.dbg
 ```
 
 Whenever the final entry in refs.ptr is a pointer, the file file.ptr will exist and contain the path to the associated file. Whenever the final entry in refs.ptr is a file, no file.ptr will exist in this directory. Therefore, any delete operation that removes the final entry in refs.ptr may result in file.ptr being created, deleted, or changed.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Symbol%20Storage%20Format%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

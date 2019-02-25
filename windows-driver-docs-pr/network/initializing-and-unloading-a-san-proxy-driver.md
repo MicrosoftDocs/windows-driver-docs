@@ -9,17 +9,14 @@ keywords:
 - SAN proxy drivers WDK , unloading
 - unloading drivers
 - initializing SAN proxy drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing and Unloading a SAN Proxy Driver
 
 
-## <a href="" id="ddk-initializing-and-unloading-a-san-proxy-driver-ng"></a>
+
 
 
 In addition to creating and initializing a device object for the driver object, the proxy driver's **DriverEntry** routine can register to be notified when NICs under the driver's control are either added or removed. For more information, see [Registering for SAN NIC Notifications](registering-for-san-nic-notifications.md).
@@ -28,9 +25,9 @@ If the proxy driver's SAN service provider sends I/O control requests down to th
 
 The **DriverEntry** routine must specify an entry point for a routine that unloads the proxy driver. This unload routine removes the device that was created in **DriverEntry**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,8 @@ keywords:
 - Low Resources Simulation option WDK Driver Verifier
 - low-memory checks WDK Driver Verifier
 - insufficient memory checks WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Low Resources Simulation
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 ## <span id="ddk_low_resources_simulation_tools"></span><span id="DDK_LOW_RESOURCES_SIMULATION_TOOLS"></span>
 
 
-When the Low Resources Simulation option (called *Randomized low resources simulation* in Windows 8.1) is active, Driver Verifier fails random instances of the driver's memory allocations, as might occur if the driver was running on a computer with insufficient memory. This tests the driver's ability to respond properly to low memory and other low-resource conditions.
+When the Low Resources Simulation option (called *Randomized low resources simulation* in Windows 8.1) is active, Driver Verifier fails random instances of the driver's memory allocations, as might occur if the driver was running on a computer with insufficient memory. This tests the driver's ability to respond properly to low memory and other low-resource conditions.
 
 The Low Resources Simulation test fails allocations requested by calls to several different functions, including [**ExAllocatePoolWithXXX**](https://msdn.microsoft.com/library/windows/hardware/ff544520), [**MmGetSystemAddressForMdlSafe**](https://msdn.microsoft.com/library/windows/hardware/ff554559), [**MmProbeAndLockPages**](https://msdn.microsoft.com/library/windows/hardware/ff554664), [**MmMapLockedPagesSpecifyCache**](https://msdn.microsoft.com/library/windows/hardware/ff554629), and [**MmMapIoSpace**](https://msdn.microsoft.com/library/windows/hardware/ff554618).
 
@@ -37,7 +34,7 @@ In Windows 7 and later versions of the Windows operating system, the Low Resourc
 
 -   [**IoSetCompletionRoutineEx**](https://msdn.microsoft.com/library/windows/hardware/ff549686)
 
-Starting with Windows 8.1, the Low Resources Simulation option also fails allocations requested by calls to MmAllocateNodePagesForMdlEx. In addition, for some functions, Driver Verifier now fills the allocated memory with a random pattern. But only in situations where the function returns uninitialized memory. These functions include:
+Starting with Windows 8.1, the Low Resources Simulation option also fails allocations requested by calls to MmAllocateNodePagesForMdlEx. In addition, for some functions, Driver Verifier now fills the allocated memory with a random pattern. But only in situations where the function returns uninitialized memory. These functions include:
 
 -   [**MmAllocatePagesForMdlEx**](https://msdn.microsoft.com/library/windows/hardware/ff554489)
 -   MmAllocateNodePagesForMdlEx
@@ -123,31 +120,31 @@ At the command line, the syntax for these settings is as follows:
 
 **verifier** \[**/volatile**\] **/faults**\[*Probability*|*PoolTags*|*Applications*|*DelayMins*\]\[**/driver**|*DriverList*\]
 
-**Note**  The custom settings parameters must appear in the order displayed. If you omit a value, type quotation marks to hold its place.
+**Note**  The custom settings parameters must appear in the order displayed. If you omit a value, type quotation marks to hold its place.
 
- 
+
 
 **Subparameters**
 
--   **/faults**
+- **/faults**
 
-    Enables the Low Resources Simulation option in Driver Verifier. (You cannot use /flags 0x4 with the custom setting subparameters.)
+  Enables the Low Resources Simulation option in Driver Verifier. (You cannot use /flags 0x4 with the custom setting subparameters.)
 
--   *Probability*
+- *Probability*
 
-    Specifies the probability that Driver Verifier will fail a given allocation. Type a number (in decimal or hexadecimal format) to represent the number of chances in 10,000 that Driver Verifier will fail the allocation. The default value, 600, means 600/10000, or 6%.
+  Specifies the probability that Driver Verifier will fail a given allocation. Type a number (in decimal or hexadecimal format) to represent the number of chances in 10,000 that Driver Verifier will fail the allocation. The default value, 600, means 600/10000, or 6%.
 
--   *PoolTags*
+- *PoolTags*
 
-    Limits the allocations that Driver Verifier can fail to allocations with the specified pool tags. You can use a wildcard character (**\***) to represent multiple pool tags. To list multiple pool tags, separate the tags with spaces. By default, all allocations can fail.
+  Limits the allocations that Driver Verifier can fail to allocations with the specified pool tags. You can use a wildcard character (**\\***) to represent multiple pool tags. To list multiple pool tags, separate the tags with spaces. By default, all allocations can fail.
 
--   *Applications*
+- *Applications*
 
-    Limits the allocations that Driver Verifier can fail to allocations for the specified program. Type the name of an executable file. To list programs, separate the program names with spaces. By default, all allocations can fail.
+  Limits the allocations that Driver Verifier can fail to allocations for the specified program. Type the name of an executable file. To list programs, separate the program names with spaces. By default, all allocations can fail.
 
--   *DelayMins*
+- *DelayMins*
 
-    Specifies the number of minutes after booting during which Driver Verifier does not intentionally fail any allocations. This delay allows the drivers to load and the system to stabilize before the test begins. Type a number (in decimal or hexadecimal format). The default value is 8 (minutes).
+  Specifies the number of minutes after booting during which Driver Verifier does not intentionally fail any allocations. This delay allows the drivers to load and the system to stabilize before the test begins. Type a number (in decimal or hexadecimal format). The default value is 8 (minutes).
 
 For example, the following command enables Low Resources Simulation with a probability of 10% (1000/10000) and a delay of five minutes for the pool tags, Tag1 and Fred, and the application, Notepad.exe.
 
@@ -235,7 +232,6 @@ Entry @ 8354B230 (index 74)
     816760CB nt!VerifierExAllocatePoolWithTag+0x49
     A462141C win32k!Win32AllocPool+0x13
     A4725F94 win32k!StubGdiAlloc+0x10
- 
 ```
 
 Experience with the Low Resources Simulation test reveals that most driver crashes are caused by the most recently failed allocation. In the example above, the crash was in the path of **win32k!GreEnableEUDC**. Examine the code in the path of the allocation to find the cause of the crash.
@@ -272,11 +268,10 @@ Verified drivers:
 blah.sys
 ```
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Low%20Resources%20Simulation%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

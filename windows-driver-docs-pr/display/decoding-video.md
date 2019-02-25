@@ -5,11 +5,8 @@ ms.assetid: d434469f-1279-47c4-b824-61daeb25b214
 keywords:
 - video decoding WDK DirectX VA , about decoding video
 - decoding video WDK DirectX VA , about decoding video
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Decoding Video
@@ -21,7 +18,7 @@ In protected mode and in the call to [**DecodeBeginFrame**](https://msdn.microso
 
 **Note**   The Direct3D runtime sets the **pPVPSetKey** pointer only to change or set the key. To keep the previously set key in use, the runtime sets the pointer to **NULL** to avoid potentially time consuming reloading of the same key. The driver does not eliminate the redundant settings. A decoder application must avoid redundant settings.
 
- 
+ 
 
 After the render target surface for decode operations is set, the user-mode display driver can receive calls to its [**DecodeExecute**](https://msdn.microsoft.com/library/windows/hardware/ff551808) function to perform video decode operations between the begin-frame and end-frame time period.
 
@@ -29,11 +26,10 @@ In calls to [**DecodeExecute**](https://msdn.microsoft.com/library/windows/hardw
 
 In protected mode, the buffers that were encrypted for a protected transfer with a content key contain a pointer to initial counter values in their buffer descriptors (that is, in variables that the **pCipherCounter** members of the [**DXVADDI\_DECODEBUFFERDESC**](https://msdn.microsoft.com/library/windows/hardware/ff562896) structures point to). Each call to the user-mode display driver's [**DecodeExecute**](https://msdn.microsoft.com/library/windows/hardware/ff551808) function must perform a protected transfer of such buffers to local video memory before **DecodeExecute** uses the buffers' data in the decode operation. However, no plans exist to encrypt DirectX VA compressed buffers of types other than residual-difference (D3DDDIFMT\_RESIDUALDIFFERENCEDATA) and bit-stream (D3DDDIFMT\_BITSTREAMDATA) types.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Decoding%20Video%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

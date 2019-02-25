@@ -6,24 +6,21 @@ keywords:
 - interface classes WDK device installations
 - registering device interface classes
 - device interface classes WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering a Device Interface Class
 
 
-## <a href="" id="ddk-registering-a-device-interface-class-dg"></a>
+
 
 
 There are three ways to register a device interface class:
 
 -   Kernel-mode components, such as most drivers, can call I/O manager routines. This topic describes how to use these routines.
 
--   User-mode [*device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) call **SetupDi***Xxx* functions. For more information about these functions, see [SetupDi Device Interface Functions](using-device-installation-functions.md#ddk-setupdi-device-interface-functions-dg).
+-   User-mode *device installation applications* call **SetupDi***Xxx* functions. For more information about these functions, see [SetupDi Device Interface Functions](using-device-installation-functions.md#ddk-setupdi-device-interface-functions-dg).
 
 -   An INF file can contain [**INF DDInstall.Interfaces sections**](inf-ddinstall-interfaces-section.md).
 
@@ -37,9 +34,9 @@ The driver also uses the symbolic link name to access the registry key, in which
 
 A driver can call [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) as many times as necessary to register instances of additional device interface classes.
 
- 
+ 
 
- 
+ 
 
 
 

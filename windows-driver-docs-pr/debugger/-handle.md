@@ -3,17 +3,14 @@ title: handle
 description: The handle extension displays information about a handle or handles that one or all processes in the target system own.
 ms.assetid: ae3b7e7e-cdc1-4b83-88d7-63fe207044e3
 keywords: ["handle", "handle, handle extension", "handle Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - handle
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !handle
@@ -23,14 +20,14 @@ The **!handle** extension displays information about a handle or handles that on
 
 User-Mode
 
-```
+```dbgcmd
 !handle [Handle [UMFlags [TypeName]]] 
 !handle -?
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
     !handle [Handle [KMFlags [Process [TypeName]]]] 
 ```
 
@@ -68,10 +65,10 @@ Displays information about objects.
 Displays free handle entries. If you do not set this bit and you omit *Handle* or set it to zero, the list of handles that are displayed does not include free handles. If *Handle* specifies a single free handle, it is displayed even if you do not set this bit.
 
 <span id="Bit_4__0x10_"></span><span id="bit_4__0x10_"></span><span id="BIT_4__0X10_"></span>Bit 4 (0x10)  
-(Windows XP and later) Displays the handle from the kernel handle table instead of the current process.
+Displays the handle from the kernel handle table instead of the current process.
 
 <span id="Bit_5__0x20_"></span><span id="bit_5__0x20_"></span><span id="BIT_5__0X20_"></span>Bit 5 (0x20)  
-(Windows XP and later) Interprets the handle as a thread ID or process ID and displays information about the corresponding kernel object.
+Interprets the handle as a thread ID or process ID and displays information about the corresponding kernel object.
 
 <span id="_______Process______"></span><span id="_______process______"></span><span id="_______PROCESS______"></span> *Process*   
 (Kernel mode only) Specifies a process. You can use the process ID or the hexadecimal address of the process object. This parameter must refer to a currently running process on the target system. If this parameter is -1 or if you omit it, the current process is used. If this parameter is 0, handle information from all processes is displayed.
@@ -107,7 +104,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -116,13 +113,13 @@ For more information about handles, see the [**!htrace**](-htrace.md) extension,
 Remarks
 -------
 
-You can use the **!handle** extension during user-mode and kernel-mode live debugging. You can also use this extension on kernel-mode dump files. However, you cannot use this extension on user-mode dump files, unless you specifically created them with handle information. (You can create create such dump files by using the [**.dump /mh (Create Dump File)**](-dump--create-dump-file-.md) command.)
+You can use the **!handle** extension during user-mode and kernel-mode live debugging. You can also use this extension on kernel-mode dump files. However, you cannot use this extension on user-mode dump files, unless you specifically created them with handle information. (You can create such dump files by using the [**.dump /mh (Create Dump File)**](-dump--create-dump-file-.md) command.)
 
 During live user-mode debugging, you can use the [**.closehandle (Close Handle)**](-closehandle--close-handle-.md) command to close one or more handles.
 
 The following examples are user-mode examples of the **!handle** extension. The following command displays a list of all handles.
 
-```
+```dbgcmd
 0:000> !handle
 Handle 4
   Type          Section
@@ -146,7 +143,7 @@ Directory       1
 
 The following command displays detailed information about handle 0x8.
 
-```
+```dbgcmd
 0:000> !handle 8 f
 Handle 8
   Type          Event
@@ -164,7 +161,7 @@ Handle 8
 
 The following examples are kernel-mode examples of **!handle**. The following command lists all handles, including free handles.
 
-```
+```dbgcmd
 kd> !handle 0 4
 processor number 0
 PROCESS 80559800  SessionId: 0  Cid: 0000    Peb: 00000000  ParentCid: 0000
@@ -188,7 +185,7 @@ New version of handle table at e1002000 with 380 Entries in use
 
 The following command show detailed information about handle 0x14 in the kernel handle table.
 
-```
+```dbgcmd
 kd> !handle 14 13
 processor number 0
 PROCESS 80559800  SessionId: 0  Cid: 0000    Peb: 00000000  ParentCid: 0000
@@ -205,7 +202,7 @@ Object: e12751d0  Type: (80ec8db8) Key
 
 The following command shows information about all handles to Section objects in all processes.
 
-```
+```dbgcmd
 !handle 0 3 0 Section
 ...
 PROCESS fffffa8004f48940
@@ -222,11 +219,10 @@ Object: fffff8a000633f00  Type: (fffffa80035fef20) Section
 ...
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!handle%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

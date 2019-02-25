@@ -2,11 +2,8 @@
 ms.assetid: 9F1E79FF-D38E-484A-8AEB-FC9A105BF709
 title: How to create a custom driver installation script
 description: If you need to install more than the driver package on a test computer, you can run custom command scripts at installation.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to create a custom driver installation script
@@ -43,9 +40,9 @@ From the project property pages for your driver package, you can configure wheth
 * [How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)
 * [Building a Driver](building-a-driver.md)
 * [Creating a Driver Package](creating-a-driver-package.md)
- 
+ 
 
- 
+ 
 
 
 

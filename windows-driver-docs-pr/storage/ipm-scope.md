@@ -1,13 +1,9 @@
 ---
 title: IPM Scope
-author: windows-driver-content
 description: IPM Scope
 ms.assetid: fa34f703-ab02-4a0d-96ae-e7cb89756992
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IPM Scope
@@ -31,11 +27,10 @@ Systems that have non-SATA host bus adapters
 
 Systems that have more than one disk attached to a SATA adapter
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -2,6 +2,8 @@
 title: Writing an Analysis Extension Plugin to Extend analyze
 description: You can extend the capabilities of the analyze debugger command by writing an analysis extension plugin.
 ms.assetid: 7648F789-85D5-4247-90DD-2EAA43543483
+ms.date: 11/28/2017
+ms.localizationpriority: medium
 ---
 
 # Writing an Analysis Extension Plugin to Extend !analyze
@@ -19,7 +21,7 @@ To write an analysis extension plugin and make it available to [**!analyze**](-a
 
 When the [**!analyze**](-analyze.md) command runs in the debugger, the analysis engine looks in the extension file path for metadata files that have the .alz extension. The analysis engine reads the metadata files to determine which analysis extension plugins should be loaded. For example, suppose the analysis engine is running in response to Bug Check 0xA IRQL\_NOT\_LESS\_OR\_EQUAL, and it reads a metadata file named MyAnalyzer.alz that contains the following entries.
 
-```
+```text
 PluginId       MyPlugin
 DebuggeeClass  Kernel
 BugCheckCode   0xA
@@ -30,7 +32,7 @@ The entry `BugCheckCode  0x0A` specifies that this plugin wants to participate i
 
 **Note**  The last line of the metadata file must end with a newline character.
 
- 
+ 
 
 ## <span id="Skeleton_Example"></span><span id="skeleton-example"></span><span id="SKELETON_EXAMPLE"></span>Skeleton Example
 
@@ -39,7 +41,7 @@ Here is a skeleton example that you can use as a starting point.
 
 1.  Build a DLL named MyAnalyzer.dll that exports the [**\_EFN\_Analyze**](https://msdn.microsoft.com/library/windows/hardware/jj983432) function shown here.
 
-    ```ManagedCPlusPlus
+    ```cpp
     #include <windows.h>
     #define KDEXT_64BIT
     #include <wdbgexts.h>
@@ -89,7 +91,7 @@ Here is a skeleton example that you can use as a starting point.
 
 2.  Create a metadata file named MyAnalyzer.alz that has the following entries.
 
-    ```
+    ```text
     PluginId      MyPlugin
     DebuggeeClass Kernel
     BugCheckCode  0xE2
@@ -97,7 +99,7 @@ Here is a skeleton example that you can use as a starting point.
 
     **Note**  The last line of the metadata file must end with a newline character.
 
-     
+     
 
 3.  Establish a kernel-mode debugging session between a host and target computer.
 
@@ -113,7 +115,7 @@ Here is a skeleton example that you can use as a starting point.
 
     Verify that you see output similar to the following in the debugger.
 
-    ```
+    ```dbgcmd
     *                        Bugcheck Analysis                                    *
     *                                                                             *
     *******************************************************************************
@@ -136,7 +138,7 @@ The preceding debugger output shows that the analysis engine called the [**\_EFN
 
 The analysis engine creates a [**DebugFailureAnalysis**](https://msdn.microsoft.com/library/windows/hardware/jj983405) object to organize the data related to a particular code failure. A **DebugFailureAnalysis** object has a collection of [failure analysis entries](failure-analysis-entries.md) (FA entries), each of which is represented by an **FA\_ENTRY** structure. An analysis extension plugin uses the **IDebugFailureAnalysis2** interface to get access to this collection of FA entries. Each FA entry has a tag that identifies the kind of information that the entry contains. For example, an FA entry might have the tag **DEBUG\_FLR\_BUGCHECK\_CODE**, which tells us that the entry contains a bug check code. Tags are values in the **DEBUG\_FLR\_PARAM\_TYPE** enumeration (defined in extsfns.h), which is also called the **FA\_TAG** enumeration.
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _DEBUG_FLR_PARAM_TYPE {
     ...
     DEBUG_FLR_BUGCHECK_CODE,
@@ -150,7 +152,7 @@ typedef DEBUG_FLR_PARAM_TYPE FA_TAG;
 
 Most [FA entries](failure-analysis-entries.md) have an associated data block. The **DataSize** member of the **FA\_ENTRY** structure holds the size of the data block. Some FA entries do not have an associated data block; all the information is conveyed by the tag. In those cases, the **DataSize** member has a value of 0.
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _FA_ENTRY
 {
     FA_TAG Tag;
@@ -173,7 +175,7 @@ Each tag has a data type property that you can inspect to determine the data typ
 
 The following line of code gets the data type of the **DEBUG\_FLR\_BUILD\_VERSION\_STRING** tag. In this case, the data type is **DEBUG\_FA\_ENTRY\_ANSI\_STRING**. In the code, `pAnalysis` is a pointer to an [**IDebugFailureAnalysis2**](https://msdn.microsoft.com/library/windows/hardware/jj983405) interface.
 
-```ManagedCPlusPlus
+```cpp
 IDebugFAEntryTags* pTags = pAnalysis->GetDebugFATagControl(&pTags);
 
 if(NULL != pTags)
@@ -186,7 +188,7 @@ If a failure analysis entry has no data block, the data type of the associated t
 
 Recall that a [**DebugFailureAnalysis**](https://msdn.microsoft.com/library/windows/hardware/jj983405) object has a collection of [FA entries](failure-analysis-entries.md). To inspect all the FA entries in the collection, use the **NextEntry** method. The following example shows how to iterate through the entire collection of FA entries. Assume that *pAnalysis* is a pointer to an **IDebugFailureAnalysis2** interface. Notice that we get the first entry by passing **NULL** to **NextEntry**.
 
-```ManagedCPlusPlus
+```cpp
 PFA_ENTRY entry = pAnalysis->NextEntry(NULL);
 
 while(NULL != entry)
@@ -199,7 +201,7 @@ while(NULL != entry)
 
 A tag can have a name and a description. In the following code, *pAnalysis* is a pointer to an [**IDebugFailureAnalysis**](https://msdn.microsoft.com/library/windows/hardware/jj983405) interface, *pControl* is a pointer to an [**IDebugControl**](https://msdn.microsoft.com/library/windows/hardware/ff550508) interface, and `pTags` is a pointer to an [IDebugFAEntryTags](https://msdn.microsoft.com/library/windows/hardware/jj983404) interface. The code shows how to use the **GetProperties** method to get the name and description of the tag associated with an [FA entry](failure-analysis-entries.md).
 
-```ManagedCPlusPlus
+```cpp
 #define MAX_NAME_LENGTH 64
 #define MAX_DESCRIPTION_LENGTH 512
 
@@ -227,11 +229,10 @@ pControl->Output(DEBUG_OUTPUT_NORMAL, "The description is %s\n", desc);
 
 [IDebugFAEntryTags](https://msdn.microsoft.com/library/windows/hardware/jj983404)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Writing%20an%20Analysis%20Extension%20Plugin%20to%20Extend%20!analyze%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

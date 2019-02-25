@@ -1,6 +1,5 @@
 ---
 title: Handling SRB_FUNCTION_FLUSH and SRB_FUNCTION_SHUTDOWN
-author: windows-driver-content
 description: Handling SRB_FUNCTION_FLUSH and SRB_FUNCTION_SHUTDOWN
 ms.assetid: d4b8b3e5-d895-42ca-bd28-9d3cef805654
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - HwScsiStartIo
 - SRB_FUNCTION_FLUSH
 - SRB_FUNCTION_SHUTDOWN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling SRB\_FUNCTION\_FLUSH and SRB\_FUNCTION\_SHUTDOWN
@@ -31,11 +27,10 @@ If the HBA caches data internally, as indicated when [*HwScsiFindAdapter*](https
 
     Note that a miniport driver can be called with more than one shutdown request, possibly for the same logical unit or with several shutdown requests for different logical units, before the system itself is actually shut down.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

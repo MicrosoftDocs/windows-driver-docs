@@ -1,17 +1,13 @@
 ---
 title: Security Checks
-author: windows-driver-content
 description: Security Checks
 ms.assetid: 2883910a-72f3-4be9-b1dd-6fb02abffe73
 keywords:
 - security WDK file systems , security checks
 - security checks WDK file systems
 - security checks WDK file systems , about security checks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Security Checks
@@ -42,11 +38,10 @@ This section includes the following topics:
 
 [Process and Thread Termination Issues](process-and-thread-termination-issues.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

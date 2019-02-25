@@ -1,12 +1,8 @@
 ---
 Description: This topic describes how UMDF function drivers support USB selective suspend.
 title: Selective suspend in USB UMDF drivers
-author: windows-driver-content
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/09/2018
+ms.localizationpriority: medium
 ---
 
 # Selective suspend in USB UMDF drivers
@@ -27,14 +23,12 @@ UMDF function drivers can support USB selective suspend in either of two ways:
 
 Both approaches require only small amounts of code. The IdleWake sample that is provided in the WDK shows how to support selective suspend in a UMDF USB driver. You can find this sample in %WinDDK%\\BuildNumber\\Src\\Usb\\OsrUsbFx2\\ UMDF\\Fx2\_Driver\\IdleWake. The folder contains both PPO and non-PPO versions of the sample.
 
-For more information about UMDF and WinUSB.sys, see “Writing USB Drivers with WDF” on the WHDC Web site.
-
 UMDF drivers that support selective suspend must follow these guidelines:
 
 -   The UMDF driver can claim power policy ownership for its device stack, but is not required to do so. By default, the underlying WinUSB.sys driver owns power policy.
 -   A UMDF driver that supports selective suspend and is the PPO can use power-managed queues or queues that are not power-managed. A UMDF driver that supports selective suspend but is not the PPO must not use power-managed queues.
 
-## <a href="" id="ppo"></a>Power policy ownership in UMDF USB drivers
+## Power policy ownership in UMDF USB drivers
 
 
 By default, WinUSB.sys is the PPO for a device stack that contains a UMDF USB driver. Starting with WDF 1.9, UMDF-based USB drivers can claim power policy ownership. Because only one driver in each device stack can be the PPO, a UMDF USB driver that is the PPO must explicitly disable power policy ownership in WinUSB.sys.
@@ -59,7 +53,7 @@ By default, WinUSB.sys is the PPO for a device stack that contains a UMDF USB dr
 
 UMDF USB drivers that support selective suspend and are built with WDF versions earlier than 1.9 must not claim power policy ownership. With these earlier versions of WDF, USB selective suspend works properly only if WinUSB.sys is the PPO.
 
-## <a href="" id="qs"></a>I/O queues in UMDF USB drivers
+## I/O queues in UMDF USB drivers
 
 
 For a UMDF driver that supports selective suspend, whether the UMDF driver owns power policy for its device determines the type of I/O queues that it can use. UMDF drivers that support selective suspend and are PPOs can use queues that are either power managed or not power managed. UMDF USB drivers that support selective suspend but are not the PPO should not use any power-managed I/O queues.
@@ -78,7 +72,7 @@ To create the queue, the driver calls the driver-defined **CMyQueue::Initialize*
 
 The following code snippet shows the driver’s call to the **CMyQueue::Initialize** method as part of read-write queue creation:
 
-```
+```cpp
 #if defined(_NOT_POWER_POLICY_OWNER_)
     powerManaged = false;
 #else
@@ -88,12 +82,11 @@ hr = __super::Initialize(WdfIoQueueDispatchParallel,
                          true,
                          powerManaged,
                          );
-
 ```
 
 **CMyQueue::Initialize** then calls [**IWDFDevice::CreateIoQueue**](https://msdn.microsoft.com/library/windows/hardware/ff557020) to create the queue as follows:
 
-```
+```cpp
 hr = m_FxDevice->CreateIoQueue(
                                callback,
                                Default,
@@ -106,7 +99,7 @@ hr = m_FxDevice->CreateIoQueue(
 
 This code sequence results in a default queue that dispatches requests in parallel. If the driver is the PPO the queue is power managed, and if the driver is not the PPO, the queue is not power managed.
 
-## <a href="" id="umdfppo"></a>Supporting USB selective suspend in a UMDF PPO
+## Supporting USB selective suspend in a UMDF PPO
 
 
 To support selective suspend, a UMDF USB driver that is the PPO for its device stack must do the following:
@@ -125,7 +118,7 @@ To support selective suspend, a UMDF USB driver that is the PPO for its device s
 
 The following example shows how the IdleWake\_PPO driver calls this method in its internal CMyDevice::SetPowerManagement method:
 
-```
+```cpp
 hr = m_FxDevice->AssignS0IdleSettings( IdleUsbSelectiveSuspend,
                                 PowerDeviceMaximum,
                                 IDLE_TIMEOUT_IN_MSEC,
@@ -162,7 +155,7 @@ For an example of how to implement USB selective suspend in a UMDF USB function 
 
 To notify WinUSB.sys that the device can support USB selective suspend, the device INF must add the DeviceIdleEnabled value to the device’s hardware key and set the value to 1. The following example shows how the Fx2\_Driver sample adds and sets this value in the WUDFOsrUsbFx2\_IdleWakeNon-PPO.Inx file:
 
-```
+```cpp
 [OsrUsb_Device_AddReg]
 ...
 HKR,,"DeviceIdleEnabled",0x00010001,1
@@ -173,7 +166,7 @@ HKR,,"DeviceIdleEnabled",0x00010001,1
 A UMDF USB driver can enable USB selective suspend either at runtime or during installation in the INF.
 
 -   To enable support at runtime, the function driver calls [**IWDFUsbTargetDevice::SetPowerPolicy**](https://msdn.microsoft.com/library/windows/hardware/ff560385) and sets the PolicyType parameter to AUTO\_SUSPEND and the Value parameter to TRUE or 1. The following example shows how the Fx2\_Driver sample enables selective suspend in the DeviceNonPpo.cpp file:
-    ```
+    ```cpp
     BOOL AutoSuspend = TRUE;
     hr = m_pIUsbTargetDevice->SetPowerPolicy( AUTO_SUSPEND,
                                               sizeof(BOOL),
@@ -181,7 +174,7 @@ A UMDF USB driver can enable USB selective suspend either at runtime or during i
     ```
 
 -   To enable support during installation, the INF includes an AddReg directive that adds the DefaultIdleState value to the device’s hardware key and sets the value to 1. For example:
-    ```
+    ```cpp
     HKR,,"DefaultIdleState",0x00010001,1
     ```
 
@@ -190,12 +183,12 @@ A UMDF USB driver can enable USB selective suspend either at runtime or during i
 By default, WinUSB suspends the device after 5 seconds if no transfers are pending or if the only pending transfers are IN transfers on an interrupt or bulk endpoint. A UMDF driver can change this idle time-out value either at installation in the INF or at runtime.
 
 -   To set an idle time-out at installation, the INF includes an AddReg directive that adds the DefaultIdleTimeout value to the device’s hardware key and sets the value to the time-out interval in milliseconds. The following example sets the time-out to 7 seconds:
-    ```
+    ```cpp
     HKR,,"DefaultIdleTimeout",0x00010001,7000
     ```
 
 -   To set an idle time-out at runtime, the driver calls **IWDFUsbTargetDevice::SetPowerPolicy** with PolicyType set to SUSPEND\_DELAY and Value to the idle time-out value, in milliseconds. In the following example from the Device.cpp file, the Fx2\_Driver sample sets the time-out to 10 seconds:
-    ```
+    ```cpp
     HRESULT hr;
     ULONG value;
     value = 10 * 1000;
@@ -208,13 +201,13 @@ By default, WinUSB suspends the device after 5 seconds if no transfers are pendi
 
 UMDF USB drivers that use WinUSB selective suspend support can optionally allow the user to enable or disable selective suspend. To do so, include an AddReg directive in the INF that adds the UserSetDeviceIdleEnabled value to the device’s hardware key and sets the value to 1. The following shows the string to use for the AddReg directive:
 
-```
+```cpp
 HKR,,"UserSetDeviceIdleEnabled",0x00010001,1
 ```
 
 If UserSetDeviceIdleEnabled is set, the device’s Properties dialog box includes a Power Management tab that allows the user to enable or disable USB selective suspend.
 
-## <a href="" id="systemwake"></a>System wake in a UMDF driver
+## System wake in a UMDF driver
 
 
 In a UMDF driver, support for system wake is independent of support for selective suspend. A UMDF USB driver can support both system wake and selective suspend, neither system wake nor selective suspend, or either system wake or selective suspend. A device that supports system wake can wake the system from a sleep state (S1, S2, or S3).
@@ -233,7 +226,7 @@ Call the [**IWDFDevice2::AssignSxWakeSettings**](https://msdn.microsoft.com/libr
 
 The following example shows how the IdleWake\_PPO driver calls this method in its internal **CMyDevice::SetPowerManagement** method:
 
-```
+```cpp
 hr = m_FxDevice->AssignSxWakeSettings( PowerDeviceMaximum,
                                        WakeAllowUserControl,
                                        WdfUseDefault);
@@ -243,7 +236,7 @@ hr = m_FxDevice->AssignSxWakeSettings( PowerDeviceMaximum,
 
 To enable system wake through WinUSB, the driver’s INF adds the registry value SystemWakeEnabled to the device’s hardware key and sets it to 1. The IdleWake\_Non-PPO sample enables system wake as follows:
 
-```
+```cpp
 [OsrUsb_Device_AddReg]
 ...
 HKR,,"SystemWakeEnabled",0x00010001,1
@@ -254,7 +247,5 @@ By setting this value, the driver both enables system wake and allows the user t
 ## Related topics
 [Selective suspend in USB drivers (WDF)](selective-suspend-in-usb-drivers-wdf.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Selective%20suspend%20in%20USB%20UMDF%20drivers%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

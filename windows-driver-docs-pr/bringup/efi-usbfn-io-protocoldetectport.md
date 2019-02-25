@@ -1,13 +1,9 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.DetectPort
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.DetectPort
 ms.assetid: 66f7500e-e075-495b-9ce0-aed2aa11f66a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.DetectPort
@@ -18,7 +14,7 @@ The **DetectPort** function returns the type of device attached to the USB port.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_DETECT_PORT) (
@@ -72,18 +68,17 @@ This function returns the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Requirements
 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

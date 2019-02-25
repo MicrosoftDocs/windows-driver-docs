@@ -2,11 +2,8 @@
 title: Introduction to NDIS 6.70
 description: This section introduces NDIS 6.70 and describes changes from NDIS 6.60. NDIS 6.70 is included in Windows 10, version 1703.
 ms.assetid: D846EE68-2C84-40E0-91DE-2034F75D576F
-ms.author: windowsdriverdev
 ms.date: 06/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS 6.70
@@ -19,7 +16,7 @@ NDIS 6.70 is a minor version update to NDIS 6.60 for miniport, protocol, filter,
 
 ### NetAdapterCx
 
-NDIS 6.70 includes a major new feature for NIC drivers, the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md). NetAdapterCx is preview only in Windows 10, version 1703. The NetAdapterCx model enables NIC driver developers to harness the full functionality and simplified driver model of WDF, meaning NIC drivers are easier to write.
+Alongside NDIS 6.70, Windows 10, version 1703 includes a major new feature for NIC drivers called the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md). NetAdapterCx is preview only in Windows 10, version 1703. The NetAdapterCx model enables NIC driver developers to harness the full functionality and simplified driver model of WDF, meaning NIC drivers are easier to write.
 
 ### Other feature updates
 
@@ -29,7 +26,7 @@ NDIS forms the core foundation for the network driver platform on Windows. For a
 
 The following network driver features have been deprecated along with the release of NDIS 6.70:
 
-- [TCP Chimney Offload](ndis-tcp-chimney-offload.md)
+- [TCP Chimney Offload](https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload)
 - [IPsec Offload Version 2](ipsec-offload-version-2.md)
 
 ## Implementing an NDIS 6.70 driver
@@ -40,7 +37,7 @@ For more information about implementing a NIC driver with the NetAdapterCx, see 
 
 ### Miniport, protocol, filter, and intermediate drivers
 
-An NDIS 6.70 driver must follow the requirements that are defined in [Implementing an NDIS 6.60 driver](introduction-to-ndis-6-60.md#implementing-an-ndis-660-driver).
+An NDIS 6.70 driver must follow the requirements that are defined in [Implementing an NDIS 6.30 driver](implementing-an-ndis-6-30-driver.md).
 
 In addition, an NDIS 6.70 driver must be compliant with the following requirements:
 
@@ -52,7 +49,7 @@ In addition, an NDIS 6.70 driver must be compliant with the following requiremen
 
 ### NIC drivers
 
-For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapter Class Extension (Compilation settings)](../netcx/porting-ndis-to-netadapter-cx.md#compilation-settings).
+For more information about compiling a NIC driver with the NetAdapterCx, see [Porting NDIS miniport drivers to NetAdapterCx (Compilation settings)](../netcx/porting-ndis-miniport-drivers-to-netadaptercx.md#compilation-settings).
 
 ### Miniport, protocol, and filter drivers
 
@@ -79,4 +76,3 @@ The following data structures are new in NDIS 6.70.
 
 - [NDIS_STATUS_WWAN_DEVICE_CAPS_EX](https://msdn.microsoft.com/library/windows/hardware/mt782396)
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

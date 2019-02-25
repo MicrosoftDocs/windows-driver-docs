@@ -2,11 +2,8 @@
 title: PwrTest Execution State Scenario
 description: The PwrTest Execution State Scenario (/es) monitors thread execution state changes of the currently running processes and services.
 ms.assetid: 5470c99b-5780-486f-b36a-922fb821b7f3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PwrTest Execution State Scenario
@@ -17,7 +14,7 @@ The PwrTest Execution State Scenario (**/es**) monitors thread execution state c
 **Note**  
 This PwrTest Execution State Scenario is primarily used for applications that use legacy power request APIs, such as [**SetThreadExecutionState function (Windows)**](https://msdn.microsoft.com/library/windows/desktop/aa373208)). To monitor applications that use newer power request APIs, such as [**PowerSetRequest function (Windows)**](https://msdn.microsoft.com/library/windows/desktop/dd405534) use the [PwrTest Requests Scenario](pwrtest-requests-scenario.md) instead.
 
- 
+ 
 
 Applications and services may temporarily override power management settings such as the monitor and sleep idle timeouts by changing their thread execution state. The PwrTest Execution State Scenario monitors thread execution state and system state changes that applications and services have made using the Win32 [**SetThreadExecutionState function (Windows)**](https://msdn.microsoft.com/library/windows/desktop/aa373208).
 
@@ -29,7 +26,7 @@ You can use the **/es** scenario together with [PwrTest Idle Scenario](pwrtest-i
 pwrtest /es  [/t:n] [/stes:{y|n}] [/rss:{y|n}] [/sss:{y|n}] [/all] [/user] [/kernel] [/idle] [/?] 
 ```
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
 <span id="_stes_yn"></span><span id="_STES_YN"></span>**/stes:**{**y**|**n**}  
@@ -177,18 +174,17 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20PwrTest%20Execution%20State%20Scenario%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,16 +1,12 @@
 ---
 title: Completing an I/O Operation in a Preoperation Callback Routine
-author: windows-driver-content
 description: Completing an I/O Operation in a Preoperation Callback Routine
 ms.assetid: 1f339779-dc88-4673-87d5-36cee0b27fc2
 keywords:
 - preoperation callback routines WDK file system minifilter , completing I/O operations
 - completing I/O requests WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Completing an I/O Operation in a Preoperation Callback Routine
@@ -53,11 +49,10 @@ Completing an I/O operation is often referred to as succeeding or failing the op
 
 NTSTATUS values are defined in ntstatus.h. These values fall into four categories: success, informational, warning, and error. For more information about these values, see [Using NTSTATUS Values](https://msdn.microsoft.com/library/windows/hardware/ff565436).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

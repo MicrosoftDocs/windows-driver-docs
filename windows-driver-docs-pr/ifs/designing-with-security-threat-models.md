@@ -1,6 +1,5 @@
 ---
 title: Designing with Security Threat Models
-author: windows-driver-content
 description: Designing with Security Threat Models
 ms.assetid: a505df1a-82c0-4e0b-88bb-d96654a098fb
 keywords:
@@ -11,11 +10,8 @@ keywords:
 - security threat models WDK file systems , about security threat models
 - attacks WDK security
 - I/O WDK security
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Designing with Security Threat Models
@@ -54,11 +50,10 @@ Microsoft uses the "STRIDE" model when considering security:
 
 The basic principles here identify specific types of system compromise that can occur. Some of these principles have validity to drivers in general, but all have validity to file system and file system filter drivers.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

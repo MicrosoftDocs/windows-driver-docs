@@ -10,17 +10,14 @@ keywords:
 - device IDs WDK device installations
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Identifiers for PCMCIA Devices
 
 
-## <a href="" id="ddk-identifiers-for-pcmcia-devices-dg"></a>
+
 
 
 For Personal Computer Memory Card International Association (PCMCIA) devices, the device ID can take several different forms. For devices that are not multifunctional, the device identifier is formatted as follows:
@@ -45,9 +42,9 @@ The child function number (*d(4)* in this example) is a decimal number without l
 
 If the card does not have a name of the manufacturer, the identifier has one of these three forms:
 
-PCMCIA\\UNKNOWN\_MANUFACTURER-Crc(4)
+PCMCIA\\UNKNOWN_MANUFACTURER-Crc(4)
 
-PCMCIA\\UNKNOWN\_MANUFACTURER-DEVd(4)-Crc(4)
+PCMCIA\\UNKNOWN_MANUFACTURER-DEVd(4)-Crc(4)
 
 PCMCIA\\MTD-MemoryType(4)
 
@@ -72,11 +69,11 @@ PCMCIA-compatible IDs correspond to the generic device IDs mentioned in the [Gen
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>*PNP0600</p></td>
+<td align="left"><p><em>PNP0600</p></td>
 <td align="left"><p>An AT Attachment (ATA) disk driver</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>*PNP0D00</p></td>
+<td align="left"><p></em>PNP0D00</p></td>
 <td align="left"><p>A multifunction 3.0 PC Card</p></td>
 </tr>
 <tr class="odd">
@@ -86,11 +83,11 @@ PCMCIA-compatible IDs correspond to the generic device IDs mentioned in the [Gen
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

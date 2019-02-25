@@ -9,11 +9,8 @@ keywords:
 - mapping on deferred contexts WDK Windows Server 2008 R2 display , excluding DDI functions
 - deferred contexts WDK Windows 7 display , mapping
 - deferred contexts WDK Windows Server 2008 R2 display , mapping
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mapping on Deferred Contexts
@@ -27,11 +24,10 @@ Each resource map can provide the pointers directly to the aliased resource. The
 
 A call to the driver's [**ResourceCopy**](https://msdn.microsoft.com/library/windows/hardware/ff569489) function to copy a resource to a dynamic resource must still be supported both on the deferred context, after map-discard calls, and on the immediate context after a call to the driver's [**CommandListExecute**](https://msdn.microsoft.com/library/windows/hardware/ff539476) function, where the local deferred context resource is ideally swapped into the immediate context version of the "current" resource. A call to the driver's **ResourceCopy** function with dynamic-resource destinations is not frequently used, so you should use a copy-on-write mechanism. If **ResourceCopy** is called that would affect either the dynamic resource on the deferred context after a map-discard call or on the immediate context that holds a command list local resource as current, a new resource should be conceptually allocated to provide the new destination of the copy, and the old resource must be copied to the new resource (if the operation is a [**ResourceCopyRegion**](https://msdn.microsoft.com/library/windows/hardware/ff569490)).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Mapping%20on%20Deferred%20Contexts%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

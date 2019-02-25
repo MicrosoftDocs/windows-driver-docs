@@ -7,11 +7,8 @@ keywords:
 - catalog files WDK driver signing , commercial release certificates
 - public release driver signing WDK , commercial release certificates
 - release signing WDK , commercial release certificates
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Commercial Release Certificate
@@ -23,11 +20,11 @@ For security reasons, you should not use a digital certificate that is used to r
 
 Follow the instructions that are provided by the CA about how to obtain and install the release certificate on a computer that you will be using to sign a driver.
 
-For more information about how to obtain a digital certificate from a CA, see the [Microsoft Root Certificate Program Members](http://go.microsoft.com/fwlink/p/?linkid=74266) website.
+For more information about how to obtain a digital certificate from a CA, see the [Microsoft Root Certificate Program Members](https://go.microsoft.com/fwlink/p/?linkid=74266) website.
 
- 
+ 
 
- 
+ 
 
 
 

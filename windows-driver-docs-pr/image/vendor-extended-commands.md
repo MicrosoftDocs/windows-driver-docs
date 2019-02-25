@@ -1,19 +1,15 @@
 ---
 title: Vendor-Extended Commands
-author: windows-driver-content
 description: Vendor-Extended Commands
 ms.assetid: 3d360a9f-5a65-452b-a8ad-080dc7d8c8f5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Vendor-Extended Commands
 
 
-## <a href="" id="ddk-vendor-extended-commands-si"></a>
+
 
 
 An application can send an arbitrary command to the device through the **IWiaItemExtras::Escape** method, which is described in the Microsoft Windows SDK documentation. By calling **QueryInterface** on the root item, you can retrieve a pointer to the **IWiaItemExtras** interface. The application can then construct a PTP command using any opcode and parameters, and send this command to the device. The application also can send data to or receive data from the device.
@@ -83,15 +79,15 @@ The first parameter to **IWiaItemExtras::Escape** is the combination of one or m
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   When an application calls **IWiaItemExtras::Escape** with the ESCAPE\_PTP\_CLEAR\_STALL flag as the first argument to this method, the driver issues the PTP **Get Device Status** request to determine whether any endpoints are in a STALL condition. If the **Get Device Status** command succeeds, the driver issues the [**IOCTL\_RESET\_PIPE**](https://msdn.microsoft.com/library/windows/hardware/ff542872) USB control code for each such endpoint. If the **Get Device Status** command fails, the driver issues a PTP **Device Reset** request. **Get Device Status** and **Device Reset** are described in the PIMA 15740:2000 standard, First Edition, and Revision 1.0 of the USB Still Image Capture Device Definition (USB SICDD).
 
- 
+ 
 
 The following sample code illustrates how to use the vendor-extended command interface. Be sure that your code includes the *ptpusd.h* header, because it contains the definitions of the escape codes and other constants, and the [**PTP\_VENDOR\_DATA\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff546450) and [**PTP\_VENDOR\_DATA\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff546452) structures. The **IWiaItemExtras** interface is obtained by using a call to **QueryInterface** on the root item. A pointer to this root item, *pIWiaRootItem*, can be obtained, for example, by a call to **IWiaDevMgr::SelectDeviceDlg** (described in the Microsoft Windows SDK documentation).
 
-```
+```cpp
 //
 // Test IWiaItemExtras::Escape method
 //
@@ -154,12 +150,10 @@ if (FAILED(hr)) {
 //
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Vendor-Extended%20Commands%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -2,11 +2,8 @@
 title: ALE Endpoint Lifetime Management
 description: ALE Endpoint Lifetime Management
 ms.assetid: cbf54062-4ced-4cf6-babf-e9e4e1ddf302
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ALE Endpoint Lifetime Management
@@ -32,9 +29,9 @@ Callouts registered for an ALE endpoint closure layer can pend classification. T
 
 When applicable, the engine will indicate a unique handle for the parent endpoint in the FWPS\_METADATA\_FIELD\_PARENT\_ENDPOINT\_HANDLE metadata field. This enables the callout driver to track parent/child relationships, if required.
 
- 
+ 
 
- 
+ 
 
 
 

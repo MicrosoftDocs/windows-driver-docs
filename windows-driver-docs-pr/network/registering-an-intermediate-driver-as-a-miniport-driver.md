@@ -6,17 +6,14 @@ keywords:
 - registering intermediate drivers
 - intermediate drivers WDK networking , registering
 - NDIS intermediate drivers WDK , registering
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering an Intermediate Driver as a Miniport Driver
 
 
-## <a href="" id="ddk-registering-an-intermediate-driver-as-a-miniport-ng"></a>
+
 
 
 An intermediate driver calls [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654) to export its *MiniportXxx* functions. The *NdisMiniportDriverHandle* that is returned by **NdisMRegisterMiniportDriver** must be retained by the intermediate driver and input to NDIS when the driver calls [**NdisIMInitializeDeviceInstanceEx**](https://msdn.microsoft.com/library/windows/hardware/ff562727).
@@ -82,11 +79,11 @@ Certain miniport driver handler functions are never supplied by an intermediate 
 
 **Note**  Intermediate drivers must include pause and restart functionality. Include support for pause and restart of virtual miniports, if needed, when NDIS pauses an underlying driver stack. For more information about pause and restart, see [Driver Stack Management](driver-stack-management.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

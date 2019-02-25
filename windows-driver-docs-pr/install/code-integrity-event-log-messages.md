@@ -2,11 +2,8 @@
 title: Code Integrity Event Log Messages
 description: Code Integrity Event Log Messages
 ms.assetid: 1b47e802-ed1c-4402-86f6-5ef0608b1445
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Code Integrity Event Log Messages
@@ -42,9 +39,9 @@ The following are informational events that are logged to the Code Integrity ver
 
 -   Code Integrity successfully loaded the &lt;*file name*&gt; catalog.
 
- 
+ 
 
- 
+ 
 
 
 

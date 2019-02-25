@@ -3,17 +3,14 @@ title: wt (Trace and Watch Data)
 description: The wt command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call.
 ms.assetid: 2dd62a7f-67d9-4b13-b04e-5cd02e6ef9f0
 keywords: ["wt (Trace and Watch Data) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - wt (Trace and Watch Data)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # wt (Trace and Watch Data)
@@ -21,7 +18,7 @@ api_type:
 
 The **wt** command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call.
 
-```
+```dbgcmd
 wt [WatchOptions] [= StartAddress] [EndAddress] 
 ```
 
@@ -86,7 +83,7 @@ Specifies how to modify the display. You can use any of the following options.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______StartAddress______"></span><span id="_______startaddress______"></span><span id="_______STARTADDRESS______"></span> *StartAddress*   
 Specifies the address where the debugger begins execution. If you do not use *StartAddress*, execution begins at the instruction that the instruction pointer points to. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
@@ -119,7 +116,7 @@ Specifies the address where tracing ends. If you do not use *EndAddress*, a sing
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -140,7 +137,7 @@ Because the output from **wt** can be long, you might want to use a log file to 
 
 The following example shows a typical log file.
 
-```
+```dbgcmd
 0:000> l+                  Source options set to show source lines
 Source options are f:
      1/t - Step/trace by source line
@@ -210,11 +207,10 @@ In the preceding example, note also that **ILT+1440 (\_\_isatty)** is called 21 
 
 If any system calls are made, they appear in the counter and are listed again at the end of the command output.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20wt%20%28Trace%20and%20Watch%20Data%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

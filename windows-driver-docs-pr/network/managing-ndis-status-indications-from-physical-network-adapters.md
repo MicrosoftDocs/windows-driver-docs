@@ -2,11 +2,8 @@
 title: Managing NDIS Status Indications from Physical Network Adapters
 description: Managing NDIS Status Indications from Physical Network Adapters
 ms.assetid: ECA336FD-3E07-47D8-9006-6FE9CC1BEC2F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing NDIS Status Indications from Physical Network Adapters
@@ -22,9 +19,9 @@ This section includes the following topics:
 
 For more information on how to manage NDIS status indications over the Hyper-V extensible switch control path, see [Hyper-V Extensible Switch Control Path for NDIS Status Indications](hyper-v-extensible-switch-control-path-for-ndis-status-indications.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,20 +1,16 @@
 ---
 title: Processing IRPs in an Intermediate-Level Driver
-author: windows-driver-content
 description: Processing IRPs in an Intermediate-Level Driver
 ms.assetid: 7606ab1b-68af-4d27-8668-7662969b85b8
 keywords: ["IRPs WDK kernel , processing examples", "IoCompletion routines", "IoSetCompletionRoutine", "mirror drivers WDK IRPs", "allocating IRPs", "IoCallDriver"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing IRPs in an Intermediate-Level Driver
 
 
-## <a href="" id="ddk-processing-irps-in-an-intermediate-level-driver-kg"></a>
+
 
 
 Higher-level drivers have a different set of standard routines than lowest-level device drivers, with an overlapping subset of standard routines common to both types of drivers.
@@ -27,7 +23,7 @@ The set of routines for intermediate and highest-level drivers also varies accor
 
 -   The design of the individual higher-level driver
 
-The following figure illustrates the path an IRP might take through the standard routines of an intermediate [*mirror driver*](https://msdn.microsoft.com/library/windows/hardware/ff556308#wdkgloss-mirror-driver) layered somewhere over the lowest-level device driver described in the previous section.
+The following figure illustrates the path an IRP might take through the standard routines of an intermediate *mirror driver* layered somewhere over the lowest-level device driver described in the previous section.
 
 The driver shown in the following figure has the following characteristics:
 
@@ -75,12 +71,10 @@ Assuming the I/O status block in DupIRP2 also is set with STATUS\_SUCCESS, the *
 
 If either set of lower-level drivers does not complete the mirror driver's IRPs successfully, the mirror driver's *IoCompletion* routine should log an error and attempt appropriate mirrored-data recovery. For more information, see [Logging Errors](logging-errors.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Processing%20IRPs%20in%20an%20Intermediate-Level%20Driver%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

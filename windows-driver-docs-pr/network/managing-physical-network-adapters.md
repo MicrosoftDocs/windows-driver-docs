@@ -2,11 +2,8 @@
 title: Managing Physical Network Adapters
 description: Managing Physical Network Adapters
 ms.assetid: 564841F2-997C-44F5-8EC9-264FC9128483
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing Physical Network Adapters
@@ -18,7 +15,7 @@ These operations allow an extension to forward or originate object identifier (O
 
 **Note**  Operations of this sort can only be performed by an extensible switch forwarding extension. For more information about this type of extension, see [Forwarding Extensions](forwarding-extensions.md).
 
- 
+ 
 
 This section includes the following topics:
 
@@ -30,9 +27,9 @@ This section includes the following topics:
 
 [Managing NDIS Status Indications from Physical Network Adapters](managing-ndis-status-indications-from-physical-network-adapters.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,8 @@ keywords:
 - registering client modules
 - initializing client modules
 - NmrRegisterClient
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing and Registering a Client Module
@@ -26,7 +23,7 @@ All of these data structures must remain valid and resident in memory as long as
 
 For example, suppose the "EXNPI" NPI defines the following in header file Exnpi.h:
 
-```
+```C++
 // EXNPI NPI identifier
 const NPIID EXNPI_NPIID = { ... };
 
@@ -41,11 +38,11 @@ typedef struct EXNPI_CLIENT_CHARACTERISTICS_
 
 The following shows how a client module that registers itself as a client of the EXNPI NPI can initialize all of these data structures:
 
-```
+```C++
 // Include the NPI specific header file
 #include "exnpi.h"
 
-// Structure for the client module&#39;s NPI-specific characteristics
+// Structure for the client module's NPI-specific characteristics
 const EXNPI_CLIENT_CHARACTERISTICS NpiSpecificCharacteristics =
 {
   .
@@ -53,7 +50,7 @@ const EXNPI_CLIENT_CHARACTERISTICS NpiSpecificCharacteristics =
   .
 };
 
-// Structure for the client module&#39;s identification
+// Structure for the client module's identification
 const NPI_MODULEID ClientModuleId =
 {
   sizeof(NPI_MODULEID),
@@ -61,7 +58,7 @@ const NPI_MODULEID ClientModuleId =
   { ... }  // A GUID that uniquely identifies the client module
 };
 
-// Prototypes for the client module&#39;s callback functions
+// Prototypes for the client module's callback functions
 NTSTATUS
   ClientAttachProvider(
     IN HANDLE NmrBindingHandle,
@@ -79,7 +76,7 @@ VOID
     IN PVOID ClientBindingContext
     );
 
-// Structure for the client module&#39;s characteristics
+// Structure for the client module's characteristics
 const NPI_CLIENT_CHARACTERISTICS ClientCharacteristics =
 {
   0,
@@ -97,14 +94,14 @@ const NPI_CLIENT_CHARACTERISTICS ClientCharacteristics =
   }
 };
 
-// Context structure for the client module&#39;s registration
+// Context structure for the client module's registration
 typedef struct CLIENT_REGISTRATION_CONTEXT_ {
   .
   . // Client-specific members
   .
 } CLIENT_REGISTRATION_CONTEXT, *PCLIENT_REGISTRATION_CONTEXT;
 
-// Structure for the client&#39;s registration context
+// Structure for the client's registration context
 CLIENT_REGISTRATION_CONTEXT ClientRegistrationContext =
 {
   .
@@ -121,8 +118,8 @@ A client module typically initializes itself within its [**DriverEntry**](https:
 
 For example:
 
-```
-// Prototype for the client module&#39;s unload function
+```C++
+// Prototype for the client module's unload function
 VOID
   Unload(
     PDRIVER_OBJECT DriverObject
@@ -165,9 +162,9 @@ A client module is not required to call [**NmrRegisterClient**](https://msdn.mic
 
 For more information about implementing a client module's [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886) function, see [Unloading a Client Module](unloading-a-client-module.md).
 
- 
+ 
 
- 
+ 
 
 
 

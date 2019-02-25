@@ -2,11 +2,9 @@
 title: Submit a Multiple-locale device manifest package
 description: Submit a Multiple-locale device manifest package
 ms.assetid: b6748bff-d730-434e-9316-dc7b7222b727
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
+ms.localizationpriority: medium
 ---
 
 # Submit a Multiple-locale device manifest package
@@ -19,7 +17,7 @@ You can use the same method to submit packages for preview or release.
 
 **To submit a device manifest package**
 
-1.  Sign the devicemanifest-ms package with the [SignTool](http://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
+1.  Sign the devicemanifest-ms package with the [SignTool](https://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
 
 2.  Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account.
 
@@ -78,9 +76,9 @@ GUID1.devicemanifest-ms
 
 Instructions on creating LocaleInfo.xml are below.
 
-To learn how to develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226753).
+To learn how to develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753).
 
-You can use the Cabarc tool to create these CAB packages. For more information about this tool, see [Cabarc overview](http://go.microsoft.com/fwlink/p/?LinkId=248843).
+You can use the Cabarc tool to create these CAB packages. For more information about this tool, see [Cabarc overview](https://go.microsoft.com/fwlink/p/?LinkId=248843).
 
 When you create a \*.devicemanifest-ms file by using the Cabarc tool, you must create a local directory in which the device metadata package (\*.devicemetadata-ms) and the LocaleInfo XML document are at the root of the directory.
 
@@ -90,7 +88,7 @@ When you create a \*.devicemanifest-ms file by using the Cabarc tool, you must c
 
 -   The GUID for each device manifest submission and device metadata package must be unique. When you create a new or revised package, you must create a new GUID.
 
--   For more details about how to create cabinet files, see the [Microsoft Cabinet Software Development Kit](http://go.microsoft.com/fwlink/p/?LinkId=248844).
+-   For more details about how to create cabinet files, see the [Microsoft Cabinet Software Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=248844).
 
 **Example**
 
@@ -116,11 +114,10 @@ N .\ManifestFiles\ GUID.devicemanifest-ms
 
 For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](https://msdn.microsoft.com/library/windows/hardware/hh801885.aspx).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Submit%20a%20Multiple-locale%20device%20manifest%20package%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

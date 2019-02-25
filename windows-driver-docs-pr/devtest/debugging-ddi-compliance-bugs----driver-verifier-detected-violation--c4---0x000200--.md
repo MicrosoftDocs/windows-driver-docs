@@ -2,11 +2,8 @@
 title: Debugging DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0x20002 - 0x20022
 description: When you have the DDI compliance checking option selected, and Driver Verifier detects that the driver violates one of the DDI compliance rules, Driver Verifier generates Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION (with Parameter 1 equal to the identifier of the specific compliance rule).
 ms.assetid: 9817AC4B-2BE8-44AC-8C9B-DED5EF0A7DD8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging DDI Compliance bugs - DRIVER\_VERIFIER\_DETECTED\_VIOLATION (C4): 0x20002 - 0x20022
@@ -52,7 +49,7 @@ Arg4: 00000000, Reserved (unused).
 
 DV_VIOLATED_CONDITION:  ExAllocatePoolWithTagPriority should only be called at IRQL <= DISPATCH_LEVEL.
 
-DV_MSDN_LINK: http://go.microsoft.com/fwlink/p/?linkid=216021
+DV_MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=216021
 
 DV_RULE_INFO: 0x20004
 ```
@@ -92,7 +89,7 @@ executing at DISPATCH_LEVEL must specify a NonPagedXxx value
 for PoolType. A caller executing at IRQL <= APC_LEVEL can
 specify any POOL_TYPE value.
 
-MSDN_LINK: http://go.microsoft.com/fwlink/p/?linkid=216021
+MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=216021
 ```
 
 ### Use the !analyze-v command to identify the location of the violation in source code
@@ -136,7 +133,7 @@ FAULTING_SOURCE_LINE_NUMBER:  206
 
 ### Fixing the cause of the DDI compliance violation
 
-Fixing these bug checks that have Arg1 values in the range 0x00020000 to 0x00020022, generally consists of verifying the driver meets the API and DDI usage conditions described on the corresponding documentation on MSDN.
+Fixing these bug checks that have Arg1 values in the range 0x00020000 to 0x00020022, generally consists of verifying the driver meets the API and DDI usage conditions described in the corresponding documentation.
 
 In the example we've used here (0x20004), a memory allocation of any sort in the ISR is going to violate the IRQL rules set for the [**ExAllocatePoolWithTagPriority**](https://msdn.microsoft.com/library/windows/hardware/ff544523) routine.
 
@@ -155,11 +152,10 @@ Use [Static Driver Verifier](static-driver-verifier.md) to analyze your driver s
 
 [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://msdn.microsoft.com/library/windows/hardware/ff560187)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Debugging%20DDI%20Compliance%20bugs%20%20-%20DRIVER_VERIFIER_DETECTED_VIOLATION%20%28C4%29:%200x20002%20-%200x20022%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

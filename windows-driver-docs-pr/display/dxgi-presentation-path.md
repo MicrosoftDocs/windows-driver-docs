@@ -2,11 +2,8 @@
 title: DXGI Presentation Path
 description: DXGI Presentation Path
 ms.assetid: 3519172d-261c-4b33-b1e7-c4abf33b15f3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DXGI Presentation Path
@@ -48,7 +45,7 @@ If DXGI\_DDI\_PRIMARY\_OPTIONAL is not set for a front buffer or the proxy surfa
 
 **Note**   Failing the create call without setting DXGI\_DDI\_PRIMARY\_DRIVER\_FLAG\_NO\_SCANOUT is reserved for real failure cases, like out of memory.
 
- 
+ 
 
 DXGI exploits this opt-out methodology when it attempts to create a full-screen presentation chain for an MSAA or rotated back buffer. If the driver will not scan-out any or both of these types, the driver will opt out. DXGI will then attempt to create a non-rotated surface, a non-MSAA surface, or both until the driver accepts the resource creation. Therefore, DXGI will fall back progressively until the non-optional surface exactly matches the front buffer format, sample count, rotation, and size.
 
@@ -64,11 +61,10 @@ Also, note that applications can resize their back buffers dynamically while the
 
 Finally, you should be aware of the situation that occurs with respect to MSAA back buffers if the driver does not opt out of MSAA scan-out. In this situation, the driver opts in the scan-out of MSAA. Therefore, DXGI interchanges the MSAA back buffer and MSAA front buffer through flip operations, and performs a resolve operation by what is equivalent to the digital-to-analog converter (DAC). In this situation, the application can resize its back buffers dynamically while in full-screen mode, which forces DXGI to switch to calling the driver's [**BltDXGI**](https://msdn.microsoft.com/library/windows/hardware/ff538252) function. Because the MSAA characteristics of the back buffer and front buffer still match, DXGI will specify that the driver perform a non-resolving, possibly color-converting, stretch bitblt. The driver should then replicate, without resolve, multisamples to the front buffer, which is necessary if a driver chooses to scan-out MSAA.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20DXGI%20Presentation%20Path%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

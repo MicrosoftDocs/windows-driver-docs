@@ -1,20 +1,16 @@
 ---
 title: CLFS Log Sequence Numbers
-author: windows-driver-content
 description: CLFS Log Sequence Numbers
 ms.assetid: 4637fa0c-2f19-4f0c-bf13-f4ccac2e7284
 keywords: ["Common Log File System WDK kernel , log sequence numbers", "CLFS WDK kernel , log sequence numbers", "log sequence numbers WDK CLFS", "LSNs WDK CLFS", "base LSNs WDK CLFS", "last LSNs WDK CLFS", "previous LSNs WDK CLFS", "undo-next LSNs WDK CLFS", "active stream portion WDK CLFS", "stream active portion WDK CLFS", "streams WDK CLFS"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CLFS Log Sequence Numbers
 
 
-## <a href="" id="ddk-introduction-to-wmi-kg"></a>
+
 
 
 In the Common Log File System (CLFS), each log record in a given stream is uniquely identified by a log sequence number (LSN). When you write a record to a stream, you get back an LSN that identifies that record for future reference.
@@ -49,7 +45,7 @@ The *active portion* of a stream is the portion of a stream that begins with the
 
 **Note**   If a stream has an archive tail, the active portion of the stream begins at the record pointed to by the base LSN or the archive tail, whichever is smaller. For more information about archiving, see [CLFS Support for Archiving](clfs-support-for-archiving.md).
 
- 
+ 
 
 ### Previous LSN
 
@@ -73,12 +69,10 @@ The arrows in the following diagram illustrate how the undo-next LSN provides a 
 
 ![diagram illustrating previous lsn and undo-next lsn pointers](images/clfsundonext.gif)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20CLFS%20Log%20Sequence%20Numbers%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

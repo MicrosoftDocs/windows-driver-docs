@@ -1,12 +1,8 @@
 ---
 Description: This section provides guidance concerning the careful management of USB bandwidth.
 title: USB Bandwidth Allocation
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Bandwidth Allocation
@@ -61,7 +57,7 @@ Starting with Windows Vista, users can see how much bandwidth a USB controller h
 
 The Device Manager feature that reports the bandwidth usage of a USB controller does not work properly in Windows XP.
 
- 
+ 
 ## USB Transfer and Packet Sizes
 
 
@@ -138,8 +134,8 @@ USB transfer sizes are subject to the following limits:
 </tr>
 <tr class="even">
 <td>Isochronous</td>
-<td><p>1024*<strong>wBytesPerInterval</strong> (see [<strong>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406269)) for SuperSpeed (xHCI)</p>
-<p>1024* <strong>MaximumPacketSize</strong> for high speed (xHCI, EHCI)</p>
+<td><p>1024<em><strong>wBytesPerInterval</strong> (see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406269" data-raw-source="[&lt;strong&gt;USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh406269)"><strong>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</strong></a>) for SuperSpeed (xHCI)</p>
+<p>1024</em> <strong>MaximumPacketSize</strong> for high speed (xHCI, EHCI)</p>
 <p>256 * <strong>MaximumPacketSize</strong> for full speed (xHCI, EHCI)</p>
 <p>64K for full speed (UHCI, OHCI)</p></td>
 <td><p>1024* <strong>MaximumPacketSize</strong> for high speed (EHCI)</p>
@@ -153,7 +149,7 @@ USB transfer sizes are subject to the following limits:
 </tbody>
 </table>
 
- 
+ 
 
 Restricting the transfer size with **MaximumTransferSize** does not directly affect how much bandwidth a device consumes. The client driver must either change the interface setting or restrict the maximum packet size set in the **MaximumPacketSize** member of [**USBD\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff539114).
 
@@ -193,7 +189,7 @@ The driver must either end the transmission by means of a packet of less than ma
 
 Delimiting the data transmission with zero-length packets, as required by the USB specification, is the responsibility of the client driver. The USB driver stack does not generate these packets automatically.
 
- 
+ 
 ## Delimiting USB Data Transfers With Packets Smaller Than wMaxPacketSize
 
 
@@ -202,10 +198,8 @@ Compliant USB 2.0/1.1 drivers must transmit packets of maximum size (*wMaxPacket
 Delimiting the data transmission with zero-length packets, as required by the USB specification, is the responsibility of the device driver. The system USB stack will not generate these packets automatically.
 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20Bandwidth%20Allocation%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

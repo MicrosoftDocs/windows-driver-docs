@@ -2,17 +2,14 @@
 title: Freeing a VM Queue
 description: Freeing a VM Queue
 ms.assetid: 32679638-eeef-4e11-bf56-c96f047e4de7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Freeing a VM Queue
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 To free a receive queue, an overlying driver issues an [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](https://msdn.microsoft.com/library/windows/hardware/ff569789) set OID request. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_RECEIVE\_QUEUE\_FREE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567201) structure with a queue identifier of type **NDIS\_RECEIVE\_QUEUE\_ID**.
@@ -21,7 +18,7 @@ To free a receive queue, an overlying driver issues an [OID\_RECEIVE\_FILTER\_FR
 
 **Note**  The default queue, which has a queue identifier of **NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID**, is always allocated and cannot be freed.
 
- 
+ 
 
 An overlying driver must free all the filters that it sets on a queue before it frees the queue. Also, an overlying driver must free all the receive queues that it allocated on a network adapter before it calls the [**NdisCloseAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff561640) function to close a binding to the network adapter. NDIS frees all the queues that are allocated on a network adapter before it calls the miniport driver's [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function.
 
@@ -39,9 +36,9 @@ When a miniport driver receives an [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](https://m
 
 After the miniport driver issues the [**NDIS\_STATUS\_RECEIVE\_QUEUE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567417) status indication, it must wait for all the pending receive indications to complete before it can free the associated shared memory. For more information about freeing shared memory, see [Shared Memory Resource Allocation](shared-memory-resource-allocation.md).
 
- 
+ 
 
- 
+ 
 
 
 

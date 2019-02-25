@@ -1,12 +1,8 @@
 ---
 Description: This topic describes the steps for issuing a select-interface request to activate an alternate setting in a USB interface.
 title: How to select an alternate setting in a USB interface
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to select an alternate setting in a USB interface
@@ -24,7 +20,7 @@ For example, an interface exposes two isochronous and two bulk endpoints through
 
 Alternate settings can also be used to set bandwidth requirements. For an example, see the [USB Device Layout](usb-device-layout.md).
 
-Windows Driver Foundation (WDF) provides methods in [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) and [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) that the client driver can call to select a different alternate setting. KMDF client driver can select a setting by specifying the setting index, interface descriptor of the setting, or by submitting an URB that contains the request. UMDF client driver can only select an alternate setting by specifying its setting index.
+Windows Driver Foundation (WDF) provides methods in [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) and [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) that the client driver can call to select a different alternate setting. KMDF client driver can select a setting by specifying the setting index, interface descriptor of the setting, or by submitting an URB that contains the request. UMDF client driver can only select an alternate setting by specifying its setting index.
 
 After a select-configuration request completes successfully, the previously active alternate setting is deactivated.
 
@@ -33,8 +29,8 @@ After a select-configuration request completes successfully, the previously acti
 
 ### Technologies
 
--   [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
--   [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565)
+-   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
+-   [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 
 ### Prerequisites
 
@@ -64,7 +60,7 @@ Instructions
 
     **Note**  During device enumeration, the USB driver stack assigns numbers to the alternate settings. The interface numbers are zero-based and sequential. Those numbers might be different to the device-defined setting index. To obtain the device-defined setting index, call the [**WdfUsbInterfaceGetInterfaceNumber**](https://msdn.microsoft.com/library/windows/hardware/ff550065) method.
 
-     
+     
 
 2.  Initiate a select-interface request by calling the [**WdfUsbInterfaceSelectSetting**](https://msdn.microsoft.com/library/windows/hardware/ff550073) method. In the *Params* parameter of the call, choose one of these options:
 
@@ -84,7 +80,7 @@ Instructions
 
     After selecting an alternate setting, the client driver must always get the pipe handles for endpoints in the new setting. Failure to do so might cause the driver to send data transfer requests by using stale pipe handles. For information about retrieving pipe handles, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 
-```
+```cpp
 NTSTATUS  FX3SelectInterfaceSetting(  
     _In_ WDFDEVICE Device,
     _In_ UCHAR SettingIndex)
@@ -164,7 +160,5 @@ For a KMDF client driver, in its [**WdfUsbInterfaceSelectSetting**](https://msdn
 ## Related topics
 [USB device configuration](configuring-usb-devices.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20select%20an%20alternate%20setting%20in%20a%20USB%20interface%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

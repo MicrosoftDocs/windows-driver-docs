@@ -10,11 +10,8 @@ api_name:
 - INF CopyINF Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF CopyINF Directive
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 A **CopyINF** directive causes specified INF files to be copied to the target system. The **CopyINF** directive is supported in Windows XP and later versions of Windows.
 
-```
+```ini
 [DDInstall]
   
 CopyINF=filename1.inf[,filename2.inf]...
@@ -43,7 +40,7 @@ If you follow these rules, Windows can install drivers for each function without
 
 The following points apply to the **CopyINF** directive:
 
--   Before Windows Vista, Windows copies the specified INF files as part of the default processing for [**DIF\_INSTALLDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff543692) (see [**SetupDiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552039)) after the device is installed successfully.
+-   Before Windows Vista, Windows copies the specified INF files as part of the default processing for [**DIF_INSTALLDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff543692) (see [**SetupDiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552039)) after the device is installed successfully.
 
     Windows copies the specified INF files into a system directory path that it will search during device installations.
 
@@ -54,7 +51,7 @@ Starting with Windows Vista, the following points also apply to the **CopyINF** 
 
 -   The **CopyINF** directive causes the complete [driver package](driver-packages.md) that is referenced by the specified INF file to be copied into the [driver store](driver-store.md). This is required in order to support the deployment of multifunction driver packages, because the original source media might not be available when the device is actually installed. If the driver package that is referenced by the specified INF file already exists in the driver store, the INF file specified in the **CopyINF** directive is ignored.
 
--   The **CopyINF** directive is processed during driver store import instead of during device installation. This means that a call to [SetupCopyOEMInf](http://go.microsoft.com/fwlink/p/?linkid=194252) on Windows Vista and later versions of Windows causes all the **CopyINF** directives in the specified INF file to be processed at that time. This occurs recursively for each **CopyINF** directive that is contained within the specified INF file until all referenced driver packages are copied into the driver store.
+-   The **CopyINF** directive is processed during driver store import instead of during device installation. This means that a call to [SetupCopyOEMInf](https://go.microsoft.com/fwlink/p/?linkid=194252) on Windows Vista and later versions of Windows causes all the **CopyINF** directives in the specified INF file to be processed at that time. This occurs recursively for each **CopyINF** directive that is contained within the specified INF file until all referenced driver packages are copied into the driver store.
 
 Starting with Windows 10, version 1511, under certain circumstances (for example, running Windows Update or some calls to [**DiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff544710)), INFs copied with **CopyINF** will also be installed on applicable devices.
 
@@ -63,14 +60,14 @@ For more information about how to copy INF files, see [Copying INFs](copying-inf
 Examples
 --------
 
-```
+```ini
 [MyMfDevice.NTx86]
 CopyINF = Sound.INF
 ```
 
- 
+ 
 
- 
+ 
 
 
 

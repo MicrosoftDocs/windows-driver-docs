@@ -1,13 +1,9 @@
 ---
 title: EFI_USB_SUPERSPEED_CONFIG_INFO
-author: windows-driver-content
 description: EFI_USB_SUPERSPEED_CONFIG_INFO
 ms.assetid: 9827B0A9-AC69-43FA-922F-384E3AE140F7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USB\_SUPERSPEED\_CONFIG\_INFO
@@ -18,7 +14,7 @@ The **EFI\_USB\_SUPERSPEED\_CONFIG\_INFO** structure is used to define the suppo
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef struct
 {
     EFI_USB_CONFIG_DESCRIPTOR           *ConfigDescriptor;
@@ -38,18 +34,17 @@ An [EFI\_USB\_SUPERSPEED\_INTERFACE\_INFO](efi-usb-superspeed-interface-info.md)
 ## Remarks
 
 
-The **EFI\_USB\_CONFIG\_DESCRIPTOR** structure is defined in the UEFI specification version 2.3 and later. For more information, visit the [UEFI.org](http://go.microsoft.com/fwlink/p/?linkid=109526) website.
+The **EFI\_USB\_CONFIG\_DESCRIPTOR** structure is defined in the UEFI specification version 2.3 and later. For more information, visit the [UEFI.org](https://go.microsoft.com/fwlink/p/?linkid=109526) website.
 
 ## Requirements
 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

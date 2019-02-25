@@ -4,17 +4,14 @@ description: Interpreting a Sample SetupAPI Log File
 ms.assetid: 86bef34e-1ff3-4777-9b7c-0f08645ff89f
 keywords:
 - sample logs WDK SetupAPI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interpreting a Sample SetupAPI Log File
 
 
-## <a href="" id="ddk-interpreting-a-sample-setupapi-log-file-dg"></a>
+
 
 
 The sample logs below illustrate the information that is contained in a SetupAPI log file.
@@ -64,11 +61,11 @@ For Windows XP, each log entry includes a message identifier consisting of a let
 </tbody>
 </table>
 
- 
+ 
 
 The following segments are from a Windows XP error log:
 
-```
+```cpp
 [2001/02/27 20:14:30 1148.173]
 #-198 Command line processed: C:\WINDOWS\system32\mmc.exe "C:\WINDOWS\system32\devmgmt.msc" 
 #-147 Loading class installer module for "Communications Port".
@@ -194,9 +191,9 @@ The following segments are from a Windows XP error log:
 @ 20:15:42.116 #V156 Completed default installer.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

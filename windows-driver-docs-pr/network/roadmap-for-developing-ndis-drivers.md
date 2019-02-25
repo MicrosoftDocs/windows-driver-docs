@@ -7,11 +7,8 @@ keywords:
 - NDIS WDK , drivers, developing
 - developing NDIS drivers WDK
 - Network Driver Interface Specification (NDIS) WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Roadmap for Developing NDIS Drivers
@@ -57,13 +54,11 @@ To create a Network Driver Interface Specification (NDIS) driver package, follow
 
     [Roadmap for Developing NDIS Intermediate Drivers](roadmap-for-developing-ndis-intermediate-drivers.md)
 
-    [Roadmap for Developing Native 802.11 Wireless LAN Drivers](roadmap-for-developing-native-802-11-wireless-lan-drivers.md)
-
     [Roadmap to Develop Mobile Broadband Miniport Drivers](roadmap-to-develop-mb-miniport-drivers.md)
 
     [Roadmap for Developing Windows Filtering Platform Callout Drivers](roadmap-for-developing-wfp-callout-drivers.md)
 
--   Step 6: Review the [Network driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616034) in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+-   Step 6: Review the [Network driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616034) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
 -   Step 7: Develop (or port), build, test, and debug your NDIS driver.
 
@@ -72,7 +67,7 @@ To create a Network Driver Interface Specification (NDIS) driver package, follow
     -   [Porting NDIS 6.x Drivers to NDIS 6.40](porting-ndis-6-x-drivers-to-ndis-6-40.md)
     -   [Porting NDIS 6.x Drivers to NDIS 6.30](porting-ndis-6-x-drivers-to-ndis-6-30.md)
     -   [Porting NDIS 6.x Drivers to NDIS 6.20](porting-ndis-6-x-drivers-to-ndis-6-20.md)
-    -   [Porting NDIS 5.x Drivers to NDIS 6.0](porting-ndis-5-x-drivers-to-ndis-6-0.md)
+    -   [Porting NDIS 5.x Drivers to NDIS 6.0](https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0)
 
     For more information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](https://msdn.microsoft.com/windows-drivers/develop/visual_studio_driver_development_environment). This process will help ensure that you build a driver that works.
 
@@ -86,9 +81,9 @@ To create a Network Driver Interface Specification (NDIS) driver package, follow
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
- 
+ 
 
- 
+ 
 
 
 

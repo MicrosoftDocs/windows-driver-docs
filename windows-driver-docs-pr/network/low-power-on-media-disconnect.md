@@ -2,17 +2,14 @@
 title: Low Power on Media Disconnect
 description: Low Power on Media Disconnect
 ms.assetid: 592f3835-47ec-443a-9ab5-e700fed2f7f4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Low Power on Media Disconnect
 
 
-## <a href="" id="ddk--nr"></a>
+
 
 
 The low power on media disconnect (D3 on disconnect) feature saves power by placing a network adapter in a low-power state (D3) when the media is disconnected. When the media is reconnected, the network adapter is brought back up to the full-power state (D0).
@@ -81,11 +78,11 @@ For more information, see [NDIS Wake Reason Status Indications](ndis-wake-reason
 
 **Note**  If the miniport driver issues an [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/hh439808) status indication, it must do this before it issues the [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391) status indication.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 
