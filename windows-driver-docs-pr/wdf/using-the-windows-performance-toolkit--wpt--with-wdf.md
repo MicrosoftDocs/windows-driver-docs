@@ -55,15 +55,15 @@ To learn how to use the Windows Performance Toolkit to measure the performance o
 3.  Reboot the computer.
 4.  In an elevated command prompt, enter the following command.
 
-    **Wpr.exe** **-Start WdfPerfTraceProviders.wprp**
+    **Wpr.exe** **-Start WdfTraceLoggingProvider -filemode**
 
     This command enables the ETW provider for WDF. The computer starts recording a trace.
 
-    **Note**  As in step 2, Wpr.exe and WdfPerfTraceProviders.wprp should be copied from the location you installed WPT. If you installed WPT on a development machine, copy these files from the WPT installation directory to the target machine.
+    **Note**  As in step 2, Wpr.exe should be copied from the location you installed WPT. If you installed WPT on a development machine, copy these files from the WPT installation directory to the target machine.
 
      
 
-    On Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), you can also start the trace with Wprui.exe, which provides a GUI for recording traces.
+    On Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), you can also start the trace with Wprui.exe, which provides a GUI for recording traces. Under more options, expand **Resource Analysis** and select **WDF Driver Activity**.
 
 5.  Exercise your scenario of interest.
 6.  Stop the ETW trace session: **Wpr.exe -Stop MyPerfTrace.etl**
