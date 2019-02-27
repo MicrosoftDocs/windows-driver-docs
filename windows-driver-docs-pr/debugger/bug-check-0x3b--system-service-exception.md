@@ -63,9 +63,15 @@ The stop code indicates that executing code had an exception and the thread that
 
 The exception information returned in parameter one is listed in [NTSTATUS Values](https://msdn.microsoft.com/library/cc704588.aspx) and is also available in the ntstatus.h file located in the inc directory of the Windows Driver Kit. 
 
-One possible exception value is 0xC0000005: STATUS\_ACCESS\_VIOLATION 
+Common exception codes include:
 
-This means that a memory access violation occurred. 
+-   0x80000003: STATUS\_BREAKPOINT
+
+    A breakpoint or ASSERT was encountered when no kernel debugger was attached to the system.
+
+-   0xC0000005: STATUS\_ACCESS\_VIOLATION
+
+    A memory access violation occurred. (Parameter 4 of the bug check is the address that the driver attempted to access.)
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
