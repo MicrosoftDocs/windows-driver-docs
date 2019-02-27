@@ -194,16 +194,27 @@ To make it easier to update the driver, Fabrikam specifies the [Driver Store](..
 OsrFx2_UserSvcCopyFiles = 13 ; copy to Driver Store
 ```
 
-Using a destination directory value of 13 can result in improved stability during the driver update process. 
-
-When using DIRID13, there are some caveats to keep in mind:
+Using a destination directory value of 13 can result in improved stability during the driver update process. When using DIRID13, there are some caveats to keep in mind:
 
 -   All files in the DriverStore directory are immutable and must not be attempted to be modified and new files should not be created in the DriverStore directory. Since DIRID 13 leaves files in the driverstore instead of copying them out to other locations, some implications are:
 	-   For a file payloaded by an INF, the subdir listed in the SourceDisksFiles entry for the file in the INF must match the subdir listed in the DestinationDirs entry for the file in the INF
 	-   A CopyFiles directive cannot be used to rename a file.
 	-   Since SourceDisksFiles entries cannot have multiple entries with the same filename and CopyFiles cannot be used to rename a file, every file that an INF references must have a unique file name.
 
-###Dynamically finding and loading files from teh Driverstore
+While leveraging DIRID13, Fabrikam leaves the files in the driverstore directory and accesses them from there.  A driver that is running from the driverstore can use IoQueryFullDriverPath to find its path and look for configuration files relative to that path. KMDF drivers can use IoQueryFullDriverPath along with WdfDriverWdmGetDriverObject to get to the WDM driver object. UMDF drivers can use GetModuleHandleExW/GetModuleFileNameW like this: 
+
+```cpp
+bRet = GetModuleHandleExW(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS,
+                         (PCWSTR)&DriverEntry,
+                         &handleModule);
+if (bRet) {
+   winErr = GetModuleFileNameW(handleModule, 
+                               path, 
+                               pathLength);
+     …
+```
+
+###Dynamically finding and loading files from the Driverstore
 
 In some scenarios, a driver package may contain a file that is intended to be loaded by a binary in another driver package or by a user mode component. One such example would be the driver package containing a user mode DLL that provides an interface for communicating with a driver in the driver package. Another example would be an extension driver package providing a configuration file that is intended to be loaded by the driver in the base driver package for the device that the extension driver package installs on. In these situations, for devices that the driver package installs on, the driver package should set some state indicating the path of the file to load on the device or a device interface exposed by the device. See the Accessing PnP device state and Accessing PnP device interface state sections in this document for more information on setting state on devices and device interface. 
 For example, the driver package could use an HKR AddReg to set this state. For this example, it should be assumed that for ExampleFile.dll the driver package has a SourceDisksFiles entry with no subdir, so the file is at the root of the driver package directory, and the DestinationDirs for a CopyFiles directive for the file specifies DIRID 13. 
