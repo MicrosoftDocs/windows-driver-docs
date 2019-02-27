@@ -39,11 +39,9 @@ Do not arbitrarily modify the time stamps of your INF files, as a version contro
 
 ## Best Practices for Naming and Versioning Your INF File
 
--   INF names should be named in a way that reduces the chance of conflicts with INF's from other vendors.  For example, the INF name could invlude in it, either as a prefix or a suffix, an abbreviation of your company name
-
--   If you have two different variants of essentially the same driver package, that differ in things such as branding strings, settings, etc; those two driver packages should have unique names
-
--   Every time you update an INF or any file the INF references, you should update the date and version in the INF
+- INF names should be named in a way that reduces the chance of conflicts with INFs from other vendors.  For example, the INF name could include in it, either as a prefix or a suffix, an abbreviation of your company name.
+- If you have two different variants of essentially the same driver package, that differ in aspects such as branding strings, settings, etc., those two driver packages should have unique names.
+- Every time you update an INF or any file the INF references, you should update the date and version in the INF.
  
 
 

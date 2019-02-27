@@ -194,14 +194,9 @@ To make it easier to update the driver, Fabrikam specifies the [Driver Store](..
 OsrFx2_UserSvcCopyFiles = 13 ; copy to Driver Store
 ```
 
-Using a destination directory value of 13 can result in improved stability during the driver update process. When using DIRID13, there are some caveats to keep in mind:
+A driver that is running from the Driver Store can call [**IoQueryFullDriverPath**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioqueryfulldriverpath) to find its path and configuration files relative to that path.
 
--   All files in the DriverStore directory are immutable and must not be attempted to be modified and new files should not be created in the DriverStore directory. Since DIRID 13 leaves files in the driverstore instead of copying them out to other locations, some implications are:
-	-   For a file payloaded by an INF, the subdir listed in the SourceDisksFiles entry for the file in the INF must match the subdir listed in the DestinationDirs entry for the file in the INF
-	-   A CopyFiles directive cannot be used to rename a file.
-	-   Since SourceDisksFiles entries cannot have multiple entries with the same filename and CopyFiles cannot be used to rename a file, every file that an INF references must have a unique file name.
-
-While leveraging DIRID13, Fabrikam leaves the files in the driverstore directory and accesses them from there.  A driver that is running from the driverstore can use IoQueryFullDriverPath to find its path and look for configuration files relative to that path. KMDF drivers can use IoQueryFullDriverPath along with WdfDriverWdmGetDriverObject to get to the WDM driver object. UMDF drivers can use GetModuleHandleExW/GetModuleFileNameW like this: 
+KMDF drivers can call [**IoQueryFullDriverPath**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioqueryfulldriverpath) and [**WdfDriverWdmGetDriverObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) to retrieve the WDM driver object. UMDF drivers can call [**GetModuleHandleExW**](https://docs.microsoft.com/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandleexw) or [**GetModuleFileNameW**](https://docs.microsoft.com/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamew), for example: 
 
 ```cpp
 bRet = GetModuleHandleExW(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS,
@@ -214,11 +209,20 @@ if (bRet) {
      …
 ```
 
-###Dynamically finding and loading files from the Driverstore
+### Dynamically finding and loading files from the Driver Store
 
-In some scenarios, a driver package may contain a file that is intended to be loaded by a binary in another driver package or by a user mode component. One such example would be the driver package containing a user mode DLL that provides an interface for communicating with a driver in the driver package. Another example would be an extension driver package providing a configuration file that is intended to be loaded by the driver in the base driver package for the device that the extension driver package installs on. In these situations, for devices that the driver package installs on, the driver package should set some state indicating the path of the file to load on the device or a device interface exposed by the device. See the Accessing PnP device state and Accessing PnP device interface state sections in this document for more information on setting state on devices and device interface. 
-For example, the driver package could use an HKR AddReg to set this state. For this example, it should be assumed that for ExampleFile.dll the driver package has a SourceDisksFiles entry with no subdir, so the file is at the root of the driver package directory, and the DestinationDirs for a CopyFiles directive for the file specifies DIRID 13. 
-An INF example for setting this as device state would be: 
+In some scenarios, a driver package may contain a file that is intended to be loaded by a binary in another driver package or by a user mode component.
+
+Here are a couple examples:
+
+* A user mode DLL provides an interface for communicating with a driver in the driver package.
+* An extension driver package contains a configuration file that is loaded by the driver in the base driver package.
+
+In these situations, the driver package should set some state indicating the path of the file or a device interface exposed by the device.
+
+For example, the driver package could use an HKR AddReg to set this state. For this example, it should be assumed that for `ExampleFile.dll` the driver package has a SourceDisksFiles entry with no subdir, so the file is at the root of the driver package directory, and the DestinationDirs for a CopyFiles directive for the file specifies DIRID 13.
+
+Here is an INF example for setting this as device state:
 
 ```cpp
 [ExampleDDInstall.HW]
@@ -240,15 +244,27 @@ AddReg = Example_Add_Interface_Section.AddReg
 [Example_Add_Interface_Section.AddReg]
 HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
-> [!NOTE]
-> The above examples use an empty flags value which defaults to 0 which makes the entry a REG_SZ registry value. This will result in the %13% being turned into a fully qualified user mode file path. In many cases, it is preferable to have the path be relative to an environment variable. If a flags value of 0x20000 is used, the registry value will be of type REG_EXPAND_SZ and the %13% will be turned into a path with appropriate environment variables to abstract the location of the path. Components that retrieve this registry value may need to call ExpandEnvironmentStrings to resolve the environment variables in the path before using the path. 
-> If the value needs to be read by a kernel mode component, the value should be a REG_SZ value so it gets turned into a fully qualified user mode file path. When the kernel mode component reads that value, it should pre-pend a “\??\” to the front of the path before passing it to APIs such as ZwOpenFile. 
-
-To access this setting when it is device state, user mode code can use CM_Get_Device_ID_List_Size and CM_Get_Device_ID_List to get a list of devices, filtered as necessary. That list of devices may still contain multiple devices, so within it you should search for the appropriate device before attempting to read this state from the device. For example, CM_Get_DevNode_Property could be used to retrieve properties on the device, looking for a device that matches certain restrictive criteria. Once the correct device is found, CM_Open_DevNode_Key can be used to get a handle to the registry location where the device state was stored and then the appropriate value can be read to provide the user mode code with the path to the file to load. Kernel mode code will need to get a PDO (physical device object) for the device to get state from and then IoOpenDeviceRegistryKey can be used to get a handle to the registry location where the device state was stored and then the appropriate value can be read. 
-To access this setting when it is device interface state, user mode code can use CM_Get_Device_Interface_List_Size and CM_Get_Device_Interface_List to get a list of device interfaces, filtered by the device interface class of the device interface the state was set on. For more robustness in case the interface has not yet been enabled, additionally CM_Register_Notification can be used to be notified of arrivals and removals of device interfaces so the code gets notified when the interface is enabled and then can retrieve the state. Once the correct device interface is found, CM_Open_Device_Interface_Key can be used to get a handle to the registry location where the device interface state was stored and then the appropriate value can be read to provide the user mode code with the path to the file to load. Kernel mode code will need to get a symbolic link name for the device interface to get state from. This can be done through IoRegisterPlugPlayNotification to register for device interface notifications on the device interface class of the device interface the state was set on or through IoGetDeviceInterfaces to get a list of current device interfaces on the system. Once the appropriate symbolic link name is found, IoOpenDeviceInterfaceRegistryKey can be used to get a handle to the registry location where the device interface state was stored and then the appropriate value can be read. 
 
 > [!NOTE]
-> When using the above methods to find the devices or device interfaces that the state was set on, you should ideally limit yourself to present devices (e.g. the CM_GETIDLIST_FILTER_PRESENT flag to CM_Get_Device_ID_List_Size and CM_Get_Device_ID_List) or present/enabled device interfaces (e.g. the CM_GET_DEVICE_INTERFACE_LIST_PRESENT flag to CM_Get_Device_Interface_List_Size and CM_Get_Device_Interface_List). This ensures that the hardware you likely want to communicate with is present and ready to be communicated with. 
+> The above examples use an empty flags value, which results in a REG_SZ registry value. This will result in the %13% being turned into a fully qualified user mode file path. In many cases, it is preferable to have the path be relative to an environment variable. If a flags value of 0x20000 is used, the registry value is of type REG_EXPAND_SZ and the %13% converts to a path with appropriate environment variables to abstract the location of the path. When retrieving this registry value, call ExpandEnvironmentStrings to resolve the environment variables in the path. 
+> If the value needs to be read by a kernel mode component, the value should be a REG_SZ value. When the kernel mode component reads that value, it should prepend `\??\` before passing it to APIs such as ZwOpenFile. 
+
+To access this setting when it is device state, user mode code can use **CM_Get_Device_ID_List_Size** and **CM_Get_Device_ID_List** to get a list of devices, filtered as necessary. That list of devices might contain multiple devices, so search for the appropriate device before reading state from the device. For example, call CM_Get_DevNode_Property to retrieve properties on the device when looking for a device matching specific criteria.
+
+Once the correct device is found, call **CM_Open_DevNode_Key** to get a handle to the registry location where the device state was stored. Kernel mode code should retrieve a PDO (physical device object) and call [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey). 
+
+To access this setting when it is device interface state, user mode code can call **CM_Get_Device_Interface_List_Size** and **CM_Get_Device_Interface_List**.
+
+Additionally CM_Register_Notification can be used to be notified of arrivals and removals of device interfaces so the code gets notified when the interface is enabled and then can retrieve the state.
+
+Once the correct device interface is found, call **CM_Open_Device_Interface_Key**.
+
+Kernel mode code will need to get a symbolic link name for the device interface to get state from. This can be done through IoRegisterPlugPlayNotification to register for device interface notifications on the device interface class of the device interface the state was set on or through IoGetDeviceInterfaces to get a list of current device interfaces on the system.
+
+Once the appropriate symbolic link name is found, call [**IoOpenDeviceInterfaceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) to retrieve a handle to the registry location where the device interface state was stored. 
+
+> [!NOTE]
+> Use the CM_GETIDLIST_FILTER_PRESENT flag to CM_Get_Device_ID_List_Size and CM_Get_Device_ID_List or the CM_GET_DEVICE_INTERFACE_LIST_PRESENT flag to CM_Get_Device_Interface_List_Size and CM_Get_Device_Interface_List. This ensures that  hardware is present and ready for communication. 
 
 ## Summary
 
