@@ -244,10 +244,7 @@ AddReg = Example_Add_Interface_Section.AddReg
 [Example_Add_Interface_Section.AddReg]
 HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
-
-> [!NOTE]
-> The above examples use an empty flags value, which results in a REG_SZ registry value. This will result in the %13% being turned into a fully qualified user mode file path. In many cases, it is preferable to have the path be relative to an environment variable. If a flags value of 0x20000 is used, the registry value is of type REG_EXPAND_SZ and the %13% converts to a path with appropriate environment variables to abstract the location of the path. When retrieving this registry value, call ExpandEnvironmentStrings to resolve the environment variables in the path. 
-> If the value needs to be read by a kernel mode component, the value should be a REG_SZ value. When the kernel mode component reads that value, it should prepend `\??\` before passing it to APIs such as ZwOpenFile. 
+Please Note: The above examples use an empty flags value, which results in a REG_SZ registry value. This will result in the %13% being turned into a fully qualified user mode file path. In many cases, it is preferable to have the path be relative to an environment variable. If a flags value of 0x20000 is used, the registry value is of type REG_EXPAND_SZ and the %13% converts to a path with appropriate environment variables to abstract the location of the path. When retrieving this registry value, call ExpandEnvironmentStrings to resolve the environment variables in the path. If the value needs to be read by a kernel mode component, the value should be a REG_SZ value. When the kernel mode component reads that value, it should prepend `\??\` before passing it to APIs such as ZwOpenFile. 
 
 To access this setting when it is device state, user mode code can use **CM_Get_Device_ID_List_Size** and **CM_Get_Device_ID_List** to get a list of devices, filtered as necessary. That list of devices might contain multiple devices, so search for the appropriate device before reading state from the device. For example, call CM_Get_DevNode_Property to retrieve properties on the device when looking for a device matching specific criteria.
 
