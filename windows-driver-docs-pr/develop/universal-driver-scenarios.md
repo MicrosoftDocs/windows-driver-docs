@@ -261,7 +261,7 @@ Kernel mode code will need to get a symbolic link name for the device interface 
 Once the appropriate symbolic link name is found, call [**IoOpenDeviceInterfaceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) to retrieve a handle to the registry location where the device interface state was stored. 
 
 > [!NOTE]
-> Use the CM_GETIDLIST_FILTER_PRESENT flag to CM_Get_Device_ID_List_Size and CM_Get_Device_ID_List or the CM_GET_DEVICE_INTERFACE_LIST_PRESENT flag to CM_Get_Device_Interface_List_Size and CM_Get_Device_Interface_List. This ensures that  hardware is present and ready for communication. 
+> Please Use the CM_GETIDLIST_FILTER_PRESENT flag to CM_Get_Device_ID_List_Size and CM_Get_Device_ID_List or the CM_GET_DEVICE_INTERFACE_LIST_PRESENT flag to CM_Get_Device_Interface_List_Size and CM_Get_Device_Interface_List. This ensures that  hardware is present and ready for communication. 
 
 ## Summary
 
