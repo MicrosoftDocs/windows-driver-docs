@@ -122,7 +122,7 @@ If you are using the **-premote** option with [**.attach (Attach to Process)**](
 
 ## Troubleshooting
 
-If you see this message : *The client is not using same version of remoting protocol as the server* this indicates that the version of DbgSrv that you are attempting to connect to is using a different protocol version than the version of WinDbg. 
+If you see this message: *The client is not using same version of remoting protocol as the server* this indicates that the version of DbgSrv that you are attempting to connect to is using a different protocol version than the version of WinDbg. 
 
 It is uncommon that protocol changes are made. When this does happen, be sure you are using the matching versions of the latest available version of DbgSrv and WinDbg or WinDbg Preview. For information on downloading the latest version, see [Download Debugging Tools for Windows](debugger-download-tools.md).
 
