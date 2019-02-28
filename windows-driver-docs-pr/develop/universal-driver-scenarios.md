@@ -219,7 +219,7 @@ Here are a couple examples:
 
 In these situations, the driver package should set some state indicating the path of the file or a device interface exposed by the device.
 
-For example, the driver package could use [**AddReg**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-addreg-directive) to set this state. For this example, it should be assumed that for `ExampleFile.dll`, the driver package has a [**SourceDisksFiles**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-sourcedisksfiles-section) entry with no subdir.  The result of this being that the file is at the root of the driver package directory, and the [**DestinationDirs**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-destinationdirs-section) for a [**CopyFiles**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-copyfiles-directive)  directive specifies DIRID 13.
+For example, the driver package could use an HKR [**AddReg**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-addreg-directive) to set this state. For this example, it should be assumed that for `ExampleFile.dll`, the driver package has a [**SourceDisksFiles**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-sourcedisksfiles-section) entry with no subdir.  The result of this being that the file is at the root of the driver package directory, and the [**DestinationDirs**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-destinationdirs-section) for a [**CopyFiles**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-copyfiles-directive)  directive specifies DIRID 13.
 
 Here is an INF example for setting this as device state:
 
