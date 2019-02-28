@@ -3,7 +3,7 @@ title: Activating a Process Server
 description: To activate a process server, open an elevated Command Prompt window (Run as Administrator), and enter the dbgsrv command.
 ms.assetid: 566a4f64-8a14-469b-b50c-20e3c00aa2f8
 keywords: ["Activating a Process Server Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 02/28/2019
 topic_type:
 - apiref
 api_name:
@@ -118,10 +118,9 @@ Causes the remainder of the command line to be ignored. This option is useful if
 You can start any number of process servers on one computer. However, this is generally unnecessary, since one process server can be used by any number of smart clients (each engaged in a different debugging session).
 
  
+## Troubleshooting
 
- 
+If you see this message : *The client is not using same version of remoting protocol as the server* this indicates that the version of DbgSrv that you are attempting to connect to is using a different protocol version than the version of WinDbg. 
 
-
-
-
+It is uncommon that protocol changes are made. When this does happen, be sure you are using the matching versions of the latest available version of DbgSrv and WinDbg or WinDbg Preview. For information on downloading the latest version, see [Download Debugging Tools for Windows](debugger-download-tools.md).
 
