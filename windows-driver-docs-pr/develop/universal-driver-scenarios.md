@@ -187,13 +187,12 @@ This directive can also be used to coordinate installation of INF files in multi
 
 ## Run from the driver store
 
-To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [DirId 13](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids) where possible.  Here is an example from [`osrfx2_DCHU_base.inx`]:
+To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [DirId 13](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids) where possible.  Using a destination directory value of 13 can result in improved stability during the driver update process.  Here is an example from [`osrfx2_DCHU_base.inx`]:
 
 ```cpp
 [DestinationDirs]
 OsrFx2_UserSvcCopyFiles = 13 ; copy to Driver Store
 ```
-
 A driver that is running from the Driver Store can call [**IoQueryFullDriverPath**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioqueryfulldriverpath) to find its path and configuration files relative to that path.
 
 KMDF drivers can call [**IoQueryFullDriverPath**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioqueryfulldriverpath) and [**WdfDriverWdmGetDriverObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) to retrieve the WDM driver object. UMDF drivers can call [**GetModuleHandleExW**](https://docs.microsoft.com/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandleexw) or [**GetModuleFileNameW**](https://docs.microsoft.com/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamew), for example: 
@@ -220,7 +219,7 @@ Here are a couple examples:
 
 In these situations, the driver package should set some state indicating the path of the file or a device interface exposed by the device.
 
-For example, the driver package could use an HKR AddReg to set this state. For this example, it should be assumed that for `ExampleFile.dll` the driver package has a SourceDisksFiles entry with no subdir, so the file is at the root of the driver package directory, and the DestinationDirs for a CopyFiles directive for the file specifies DIRID 13.
+For example, the driver package could use [AddReg](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-addreg-directive) to set this state. For this example, it should be assumed that for `ExampleFile.dll`, the driver package has a [SourceDisksFiles](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-sourcedisksfiles-section) entry with no subdir.  The result of this being that the file is at the root of the driver package directory, and the [DestinationDirs](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-destinationdirs-section) for a [CopyFiles directive](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-copyfiles-directive) specifies DIRID 13.
 
 Here is an INF example for setting this as device state:
 
@@ -244,24 +243,26 @@ AddReg = Example_Add_Interface_Section.AddReg
 [Example_Add_Interface_Section.AddReg]
 HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
-Please Note: The above examples use an empty flags value, which results in a REG_SZ registry value. This will result in the %13% being turned into a fully qualified user mode file path. In many cases, it is preferable to have the path be relative to an environment variable. If a flags value of 0x20000 is used, the registry value is of type REG_EXPAND_SZ and the %13% converts to a path with appropriate environment variables to abstract the location of the path. When retrieving this registry value, call ExpandEnvironmentStrings to resolve the environment variables in the path. If the value needs to be read by a kernel mode component, the value should be a REG_SZ value. When the kernel mode component reads that value, it should prepend `\??\` before passing it to APIs such as ZwOpenFile. 
+The above examples use an empty flags value, which results in a REG_SZ registry value. This will result in the **%13%** being turned into a fully qualified user mode file path. In many cases, it is preferable to have the path be relative to an environment variable. If a flags value of **0x20000** is used, the registry value is of type REG_EXPAND_SZ and the **%13%** converts to a path with appropriate environment variables to abstract the location of the path. When retrieving this registry value, call [ExpandEnvironmentStrings](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724265(v=vs.85).aspx) to resolve the environment variables in the path. 
 
-To access this setting when it is device state, user mode code can use **CM_Get_Device_ID_List_Size** and **CM_Get_Device_ID_List** to get a list of devices, filtered as necessary. That list of devices might contain multiple devices, so search for the appropriate device before reading state from the device. For example, call CM_Get_DevNode_Property to retrieve properties on the device when looking for a device matching specific criteria.
+If the value needs to be read by a kernel mode component, the value should be a REG_SZ value. When the kernel mode component reads that value, it should prepend `\??\` before passing it to APIs such as [ZwOpenFile](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwopenfile). 
 
-Once the correct device is found, call **CM_Open_DevNode_Key** to get a handle to the registry location where the device state was stored. Kernel mode code should retrieve a PDO (physical device object) and call [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey). 
+To access this setting when it is device state, User Mode code can use [**CM_Get_Device_ID_List_Size**](](https://docs.microsoft.com/en-us/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_list_sizea) and [**CM_Get_Device_ID_List**](https://docs.microsoft.com/en-us/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_lista) to get a list of devices, filtered as necessary. That list of devices might contain multiple devices, so search for the appropriate device before reading state from the device. For example, call [CM_Get_DevNode_Property](https://docs.microsoft.com/en-us/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) to retrieve properties on the device when looking for a device matching specific criteria.
 
-To access this setting when it is device interface state, user mode code can call **CM_Get_Device_Interface_List_Size** and **CM_Get_Device_Interface_List**.
+Once the correct device is found, call [**CM_Open_DevNode_Key**](https://docs.microsoft.com/en-us/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_open_devnode_key) to get a handle to the registry location where the device state was stored. Kernel Mode code should retrieve a PDO (physical device object) and call [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey). 
 
-Additionally CM_Register_Notification can be used to be notified of arrivals and removals of device interfaces so the code gets notified when the interface is enabled and then can retrieve the state.
+To access this setting when it is device interface state, User Mode code can call [**CM_Get_Device_Interface_List_Size**](https://docs.microsoft.com/en-us/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_list_sizea) and [**CM_Get_Device_Interface_List**](https://docs.microsoft.com/en-us/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_lista).
 
-Once the correct device interface is found, call **CM_Open_Device_Interface_Key**.
+Additionally [**CM_Register_Notification**](https://docs.microsoft.com/en-us/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_register_notification) can be used to be notified of arrivals and removals of device interfaces so the code gets notified when the interface is enabled and then can retrieve the state.
 
-Kernel mode code will need to get a symbolic link name for the device interface to get state from. This can be done through IoRegisterPlugPlayNotification to register for device interface notifications on the device interface class of the device interface the state was set on or through IoGetDeviceInterfaces to get a list of current device interfaces on the system.
+Once the correct device interface is found, call [**CM_Open_Device_Interface_Key**](https://msdn.microsoft.com/en-us/library/windows/hardware/hh780223(v=vs.85).aspx).
+
+Kernel Mode code will need to get a symbolic link name for the device interface to get state from. This can be done through [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification) to register for device interface notifications on the device interface class of the device interface the state was set on.  The other option is to use [**IoGetDeviceInterfaces**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceinterfaces) to get a list of current device interfaces on the system.
 
 Once the appropriate symbolic link name is found, call [**IoOpenDeviceInterfaceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) to retrieve a handle to the registry location where the device interface state was stored. 
 
 > [!NOTE]
-> Please Use the CM_GETIDLIST_FILTER_PRESENT flag to CM_Get_Device_ID_List_Size and CM_Get_Device_ID_List or the CM_GET_DEVICE_INTERFACE_LIST_PRESENT flag to CM_Get_Device_Interface_List_Size and CM_Get_Device_Interface_List. This ensures that  hardware is present and ready for communication. 
+> Please Use the **CM_GETIDLIST_FILTER_PRESENT** flag to [CM_Get_Device_ID_List_Size](https://docs.microsoft.com/en-us/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_list_sizea) and [**CM_Get_Device_ID_List**](https://docs.microsoft.com/en-us/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_lista) or the **CM_GET_DEVICE_INTERFACE_LIST_PRESENT** flag to [**CM_Get_Device_Interface_List_Size**](https://docs.microsoft.com/en-us/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_list_sizew) and [**CM_Get_Device_Interface_List**](https://docs.microsoft.com/en-us/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_lista). This ensures that  hardware is present and ready for communication. 
 
 ## Summary
 
