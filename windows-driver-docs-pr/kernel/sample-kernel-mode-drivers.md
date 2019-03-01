@@ -45,10 +45,6 @@ Demonstrates techniques that kernel-mode drivers can use to notify applications 
 
 The FileHistory sample is a console application that starts the file history service, if it is stopped, and schedules regular backups. The application requires, as a command-line parameter, the path name of a storage device to use as the default backup target.
 
-[**installwdf**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/installwdf)
-
-This sample contains example code that demonstrates how to install WDF packages on a system. This code can be used as-is to install the needed WDF components onto a user system.
-
 [**IOCTL sample**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/ioctl)
 
 Demonstrates how drivers should support I/O control codes.

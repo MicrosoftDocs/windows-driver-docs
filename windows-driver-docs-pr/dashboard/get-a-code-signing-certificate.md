@@ -11,121 +11,15 @@ ms.localizationpriority: medium
 
 Before you can establish a Partner Center account, you need to get a code signing certificate to secure your digital information. This certificate is the accepted standard for establishing your company’s ownership of the code you submit. It allows you to digitally sign PE binaries, such as .exe, .cab, .dll, .ocx, .msi, .xpi and .xap files.
 
-## Step 1: Determine which type of code signing certificate you need
+## Step 1: Obtain an EV certificate
 
-- Microsoft accepts standard code signing and extended validation (EV) code signing certificates from partners enrolled and authorized for Kernel Mode Code Signing as part of the Microsoft Trusted Root Certificate Program. If you already have an approved standard or EV certificate from one of these authorities, you can use it to establish a Partner Center account. If you don’t have a certificate, you’ll need to buy a new one.
-
-- The table below provides the details of the Certificate requirements for each of the dashboard services.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Dashboard service/permission</th>
-<th>Code signing certificate requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Bug management</p></td>
-<td><p>Standard or EV</p></td>
-</tr>
-<tr class="even">
-<td><p>DDC – Driver Distribution Center</p></td>
-<td><p>Standard or EV</p></td>
-</tr>
-<tr class="odd">
-<td><p>Device Metadata</p></td>
-<td><p>Standard or EV</p></td>
-</tr>
-<tr class="even">
-<td><p>Report Data</p></td>
-<td><p>Standard or EV</p></td>
-</tr>
-<tr class="odd">
-<td><p>Submissions</p></td>
-<td><p>Standard or EV</p></td>
-</tr>
-<tr class="even">
-<td><p>WRD – Windows Remote Debugging</p></td>
-<td><p>Standard or EV</p></td>
-</tr>
-<tr class="odd">
-<td><p>LSA</p></td>
-<td><p>EV</p></td>
-</tr>
-<tr class="even">
-<td><p>UEFI</p></td>
-<td><p>EV</p></td>
-</tr>
-<tr class="odd">
-<td><p>Windows Reference Design</p></td>
-<td><p>Standard or EV</p></td>
-</tr>
-<tr class="even">
-<td><p>Attestation Driver Signing</p></td>
-<td><p>EV</p></td>
-</tr>
-</tbody>
-</table>
-
-> [!NOTE] 
-> The Partner Center will enforce mandatory EV certificates for submissions later this year.
-
-### Code signing certificates for Partner Center
-
-There are two types of code signing certificates available today:
-
-#### Standard Code Signing
-
-- Provides standard level of identity validation
-
-- Requires shorter processing times and lower cost
-
-- Can be used for all Partner Center services except LSA, and UEFI file signing services.
-
-- In Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), standard code signing cannot be used for kernel-mode drivers. For more info about these changes, see [Code Signing FAQ](#code-signing-faq).
-
-#### Extended Validation (EV) Code Signing
-
-- Provides the highest level of identity validation
-
-- Requires longer processing times and higher cost due to an extensive verification process
-
-- Can be used for all Partner Center services, and is required for LSA and UEFI file signing services
-
-- In Windows 10 for desktop editions, all kernel-mode drivers must be signed by the Partner Center and the Partner Center requires an EV certificate. For more info about these changes, see [Code Signing FAQ](#code-signing-faq).
+- Microsoft requires an extended validation (EV) code signing certificates from partners enrolled and authorized for Kernel Mode Code Signing as part of the Microsoft Trusted Root Certificate Program. If you already have an approved EV certificate from one of these authorities, you can use it to establish a Partner Center account. If you don’t have a certificate, you’ll need to buy a new one.
 
 ## Step 2: Buy a new code signing certificate
 
-If you don’t have an approved standard or EV code signing certificate, you can buy one from one of the certificate authorities below.
+If you don’t have an approved EV code signing certificate, you can buy one from one of the certificate authorities below.
 
-### Standard code signing certificates
-
-- [Buy a Symantec standard code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393247)
-
-- [Buy a Certum standard code signing cert](https://go.microsoft.com/fwlink/?linkid=843062) (Supported only in the Partner Center)
-
-- [Buy an Entrust standard code signing cert](https://go.microsoft.com/fwlink/?linkid=843067)
-
-- [Buy a GlobalSign standard code signing cert](https://go.microsoft.com/fwlink/p/?LinkId=620887)
-
-- [Buy a Comodo standard code signing cert](https://go.microsoft.com/fwlink/?linkid=863206)
-
-- [Buy a DigiCert standard code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393249)
-
-  1. On the **DigiCert Code Signing Certificates for Sysdevs** page, click **Start**.
-
-  2. On the **DigiCert Order Form** page (Step 1), in the **Code Signing** section, click **Code Signing Certificate**.
-
-  3. Still on Step 1, scroll down to the **Platform** section, select **Microsoft Authenticode** from the drop-down list, and then click **Continue**.
-
-  4. Follow the instructions provided by DigiCert to buy a certificate.
-
-### Extended validation code signing certificates(required for UEFI, kernel-mode drivers, and LSA certifications)
+### Extended validation code signing certificates
 
 - [Buy a Symantec EV code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393248)
 
@@ -156,7 +50,7 @@ Once the certificate authority has verified your contact information and your ce
 
 - If you’re setting up a new Partner Center account, follow the steps in [Register for the Hardware Program](register-for-the-hardware-program.md).
 
-- If you’ve already set up a Partner Center account and need to renew a certificate, follow the steps in [Update a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/update-a-code-signing-certificate).
+- If you’ve already set up a Partner Center account and need to renew a certificate, follow the steps in [Add or Update a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/update-a-code-signing-certificate).
 
 ## Code Signing FAQ
 
@@ -172,11 +66,12 @@ This section provides answers to frequently asked questions about code signing f
 ### Windows 10 Desktop Attestation Signing
 
 - A dashboard signed driver using attestation signing will only work on Windows 10 Desktop and later versions of Windows.
-- An attestation signed driver will only work for Windows 10 Desktop; it will not work for other versions of Windows, such as Windows Server 2016, Windows 8.1, or Windows 7.
-- Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
+- An attestation signed driver will only work for Windows 10 Desktop; it will not work for other versions of Windows, such as Windows Windows 7, Windows 8.1, or Windows Server 2016 and greater.
+- Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers.
 
 ### Windows 10 Earlier Certificate Transition Signing
 
+- The below only applies to Windows 10 1803 and lower.  As of Windows 10 1808, these will no longer work. 
 - A driver signed with any certificate issued after July 29th, 2015, with time stamping, is not recommended for Windows 10.
 - A driver signed with any certificate that expires after July 29th, 2015, without time stamping, will work on Windows 10 until the certificate expires.
 
@@ -199,15 +94,14 @@ Cross-signing describes a process where a driver is signed with a certificate is
 
 ### Windows Server
 
-- The dashboard will not accept attested device and filter driver signing submissions for Windows Server 2016.
+- Windows Server 2016 and greater will not accept attested device and filter driver signing submissions.
 - The dashboard will only sign device and filter drivers that have successfully passed the HLK tests.
-- Windows Server 2016 will only load dashboard signed drivers that have successfully passed the HLK tests.
+- Windows Server 2016 and greater will only load dashboard signed drivers that have successfully passed the HLK tests.
 
 ### EV Certs
 
-- As of October 31, 2015, your Sysdev dashboard account must have at least one EV certificate associated with it to submit binaries for attestation signing or to submit binaries for HLK certification.
-- You can sign with either your EV certificate or your existing standard certificates until May 1, 2016. After May 1, 2016, you need to use an EV certificate to sign the cab file that is submitted.
-- The submitted binaries themselves do not need to be signed. Only the submission cab file needs to be signed with an EV certificate.
+- As of October 31, 2015, your Hardware Dev Center dashboard account must have at least one EV certificate associated with it to submit binaries for attestation signing or to submit binaries for HLK certification.
+- The submitted binaries themselves must be signed.
 
 ### OS Support Summary
 
@@ -219,12 +113,12 @@ This table summarizes the driver signing requirements for Windows.
 | Windows Vista                      | No                             | Yes                                | Yes                                                                            |
 | Windows 7                          | No                             | Yes                                | Yes                                                                            |
 | Windows 8 / 8.1                    | No                             | Yes                                | Yes                                                                            |
-| Windows 10                         | Yes                            | Yes                                | Yes                                                                            |
+| Windows 10                         | Yes                            | Yes                                | No (as of Windows 10 1809)                                                                            |
 | Windows 10 - DG Enabled            | \*Configuration Dependent      | \*Configuration Dependent          | \*Configuration Dependent                                                      |
 | Windows Server 2008 R2             | No                             | Yes                                | Yes                                                                            |
 | Windows Server 2012 R2             | No                             | Yes                                | Yes                                                                            |
-| Windows Server 2016                | No                             | Yes                                | Yes                                                                            |
-| Windows Server 2016 – DG Enabled   | \*Configuration Dependent      | \*Configuration Dependent          | \*Configuration Dependent                                                      |
+| Windows Server >= 2016             | No                             | Yes                                | Yes                                                                            |
+| Windows Server >= 2016 – DG Enabled| \*Configuration Dependent      | \*Configuration Dependent          | \*Configuration Dependent                                                      |
 | Windows IoT Enterprise             | Yes                            | Yes                                | Yes                                                                            |
 | Windows IoT Enterprise- DG Enabled | \*Configuration Dependent      | \*Configuration Dependent          | \*Configuration Dependent                                                      |
 | Windows IoT Core(1)                | Yes (Not Required)             | Yes (Not Required)                 | Yes (Cross signing will also work for certificates issued after July 29, 2015) |
