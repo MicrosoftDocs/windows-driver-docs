@@ -1,22 +1,22 @@
 ---
-title: wdfkd_wdfumtriage
-description: The wdfkd_wdfumtriage extension displays information UMDF devices on the system, including device objects, loaded drivers and class extensions, PnP device stack, dispatched IRPs.
+title: wdfkd.wdfumtriage
+description: The wdfkd.wdfumtriage extension displays information UMDF devices on the system, including device objects, loaded drivers and class extensions, PnP device stack, dispatched IRPs.
 ms.assetid: E25DAE56-E42A-4A56-B36F-8B0B1D826524
-keywords: ["wdfkd_wdfumtriage Windows Debugging"]
+keywords: ["wdfkd.wdfumtriage Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
 api_name:
-- wdfkd_wdfumtriage
+- wdfkd.wdfumtriage
 api_type:
 - NA
 ms.localizationpriority: medium
 ---
 
-# !wdfkd\_wdfumtriage
+# !wdfkd.wdfumtriage
 
 
-The **!wdfkd\_wdfumtriage** extension displays information about all UMDF devices on the system, including device objects, corresponding host process, loaded drivers and class extensions, PnP device stack, PnP device nodes, dispatched IRPs, and problem state if relevant.
+The **!wdfkd.wdfumtriage** extension displays information about all UMDF devices on the system, including device objects, corresponding host process, loaded drivers and class extensions, PnP device stack, PnP device nodes, dispatched IRPs, and problem state if relevant.
 
 ```dbgcmd
 !wdfkd.wdfumtriage
@@ -42,7 +42,7 @@ Remarks
 
 You can use this command in a kernel-mode debugging session.
 
-Here is an example of the output of **!wdfkd\_wdfumtriage**.
+Here is an example of the output of **!wdfkd.wdfumtriage**.
 
 ![driver object list output from !wdfkd.wdfumtriage](images/wdfumtriage2.png)
 
