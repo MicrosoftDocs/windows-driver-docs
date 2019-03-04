@@ -118,7 +118,7 @@ None.
 <td align="left"><strong>Supported Backup Triggers</strong></td>
 <td align="left">1</td>
 <td align="left">17</td>
-<td align="left"><p>The module&#39;s supported save triggers.</p>
+<td align="left"><p>The module's supported save triggers.</p>
 <p></em>Byte 0 – <em>CSAVE_TRIGGER_SUPPORT</em> (0, 0x16)</p></td>
 </tr>
 <tr class="even">

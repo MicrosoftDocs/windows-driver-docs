@@ -30,7 +30,7 @@ To make your device work on Windows and Windows Phone releases before Windows 1
 <tr class="odd">
 <td align="left">Audio</td>
 <td align="left">Yes</td>
-<td align="left"><p>Starting in Windows 10, you can write a Kernel-Mode Driver Framework (KMDF) audio driver that calls KMDF interfaces for PnP, power management, and idle management. For I/O handling, a KMDF audio driver should not use the I/O queue functionality in WDF, but should instead use the existing COM interfaces provided by PortClass. However, your driver can use the framework&#39;s support for timers, interrupts, DMA, and remote I/O targets. KMDF audio drivers work on both Windows 10 for desktop editions and Windows 10 Mobile.</p>
+<td align="left"><p>Starting in Windows 10, you can write a Kernel-Mode Driver Framework (KMDF) audio driver that calls KMDF interfaces for PnP, power management, and idle management. For I/O handling, a KMDF audio driver should not use the I/O queue functionality in WDF, but should instead use the existing COM interfaces provided by PortClass. However, your driver can use the framework's support for timers, interrupts, DMA, and remote I/O targets. KMDF audio drivers work on both Windows 10 for desktop editions and Windows 10 Mobile.</p>
 <p>Existing Windows 8.1 drivers that link to PortClass continue to work on Windows 10 for desktop editions and Windows 10 Mobile.</p></td>
 </tr>
 <tr class="even">

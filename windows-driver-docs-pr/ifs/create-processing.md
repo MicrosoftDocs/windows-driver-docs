@@ -41,7 +41,7 @@ The following code example is specific to the FAT semantics. A file system that 
 
         //
         //  Check the desired access for a read-only Dirent
-        // Don&#39;t allow 
+        // Don't allow 
         //  WRITE, FILE_APPEND_DATA, FILE_ADD_FILE,
         //  FILE_ADD_SUBDIRECTORY, and FILE_DELETE_CHILD
         //

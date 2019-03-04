@@ -590,20 +590,20 @@ As mentioned, a JavaScript script can get access to native objects by having the
 <td align="left"><p>getModuleSymbol(moduleName, symbolName, [contextInheritor])</p>
 <p>getModuleSymbol(moduleName, symbolName, [typeName], [contextInheritor])</p></td>
 <td align="left"><p>Returns an object for a global symbol within a particular module. The module name and symbol name are strings.</p>
-<p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger&#39;s current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p>
+<p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p>
 <p>If the optional <em>typeName</em> argument is supplied, the symbol will be assumed to be of the passed type and the type indicated in symbol(s) will be ignored. Note that any caller which expects to operate on public symbols for a module should always supply an explicit type name.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>host.createPointerObject</p></td>
 <td align="left"><p>createPointerObject(address, moduleName, typeName, [contextInheritor])</p></td>
 <td align="left"><p>Creates a pointer object at the specified address or location. The module name and type name are strings.</p>
-<p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger&#39;s current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p></td>
+<p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>host.createTypedObject</p></td>
 <td align="left"><p>createTypedObject(location, moduleName, typeName, [contextInheritor])</p></td>
 <td align="left"><p>Creates a object which represents a native typed object within the address space of a debug target at the specified location. The module name and type name are strings.</p>
-<p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger&#39;s current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p></td>
+<p>If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off test script should always supply an explicit context.</p></td>
 </tr>
 </tbody>
 </table>
@@ -696,7 +696,7 @@ Directly within the host object, the following properties, methods, and construc
 <td align="left">getModuleSymbol</td>
 <td align="left"><p>getModuleSymbol(moduleName, symbolName, [contextInheritor])</p></td>
 <td align="left">2</td>
-<td align="left">Returns an object for a global symbol within a particular module. The module name and symbol name are strings. If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger&#39;s current context. A JavaScript extension which is not a one-off script should always supply an explicit context</td>
+<td align="left">Returns an object for a global symbol within a particular module. The module name and symbol name are strings. If the optional <em>contextInheritor</em> argument is supplied, the module and symbol will be looked up within the same context (address space, debug target) as the passed object. If the argument is not supplied, the module and symbol will be looked up in the debugger's current context. A JavaScript extension which is not a one-off script should always supply an explicit context</td>
 </tr>
 <tr class="odd">
 <td align="left">getNamedModel</td>
@@ -762,13 +762,13 @@ Directly within the host object, the following properties, methods, and construc
 <td align="left">typeSignatureExtension</td>
 <td align="left"><p>new typeSignatureExtension(object, typeSignature, [moduleName], [minVersion], [maxVersion])</p></td>
 <td align="left">1</td>
-<td align="left">A constructor for an object intended to be placed in the array returned from <strong>initializeScript</strong>, this represents an extension of a native type described via a type signature by a JavaScript prototype or ES6 class. Such a registration &quot;adds fields&quot; to the debugger&#39;s visualization of any type which matches the signature rather than taking it over entirely. An optional module name and version can restrict the registration. Versions are specified as &quot;1.2.3.4&quot; style strings.</td>
+<td align="left">A constructor for an object intended to be placed in the array returned from <strong>initializeScript</strong>, this represents an extension of a native type described via a type signature by a JavaScript prototype or ES6 class. Such a registration &quot;adds fields&quot; to the debugger's visualization of any type which matches the signature rather than taking it over entirely. An optional module name and version can restrict the registration. Versions are specified as &quot;1.2.3.4&quot; style strings.</td>
 </tr>
 <tr class="even">
 <td align="left">typeSignatureRegistration</td>
 <td align="left"><p>new typeSignatureRegistration(object, typeSignature, [moduleName], [minVersion], [maxVersion])</p></td>
 <td align="left">1</td>
-<td align="left">A constructor for an object intended to be placed in the array returned from <strong>initializeScript</strong>, this represents a canonical registration of a JavaScript prototype or ES6 class against a native type signature. Such a registration &quot;takes over&quot; the debugger&#39;s visualization of any type which matches the signature rather than merely than extending it. An optional module name and version can restrict the registration. Versions are specified as &quot;1.2.3.4&quot; style strings.</td>
+<td align="left">A constructor for an object intended to be placed in the array returned from <strong>initializeScript</strong>, this represents a canonical registration of a JavaScript prototype or ES6 class against a native type signature. Such a registration &quot;takes over&quot; the debugger's visualization of any type which matches the signature rather than merely than extending it. An optional module name and version can restrict the registration. Versions are specified as &quot;1.2.3.4&quot; style strings.</td>
 </tr>
 <tr class="odd">
 <td align="left">unregisterNamedModel</td>
@@ -827,21 +827,21 @@ The memory sub-namespace of the host object contains the following.
 <td align="left">readMemoryValues</td>
 <td align="left"><p>readMemoryValues(location, numElements, [elementSize], [isSigned], [contextInheritor])</p></td>
 <td align="left">2</td>
-<td align="left">This reads a raw array of values from the address space of the debug target and places a typed array on top of the view of this memory. The supplied location can be an address (a 64-bit value), a location object, or a native pointer. The size of the array is indicated by the <em>numElements</em> argument. The size (and type) of each element of the array is given by the optional <em>elementSize</em> and <em>isSigned</em> arguments. If no such arguments are supplied, the default is byte (unsigned / 1 byte). If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger&#39;s current context. Note that using this method on 8, 16, and 32-bit values results in a fast typed view being placed over the read memory. Using this method on 64-bit values results in an array of 64-bit library types being constructed which is significantly more expensive!</td>
+<td align="left">This reads a raw array of values from the address space of the debug target and places a typed array on top of the view of this memory. The supplied location can be an address (a 64-bit value), a location object, or a native pointer. The size of the array is indicated by the <em>numElements</em> argument. The size (and type) of each element of the array is given by the optional <em>elementSize</em> and <em>isSigned</em> arguments. If no such arguments are supplied, the default is byte (unsigned / 1 byte). If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger's current context. Note that using this method on 8, 16, and 32-bit values results in a fast typed view being placed over the read memory. Using this method on 64-bit values results in an array of 64-bit library types being constructed which is significantly more expensive!</td>
 </tr>
 <tr class="even">
 <td align="left">readString</td>
 <td align="left"><p>readString(location, [contextInheritor])</p>
 <p>readString(location, [length], [contextInheritor])</p></td>
 <td align="left">2</td>
-<td align="left">This reads a narrow (current code page) string from the address space of a debug target, converts it to UTF-16, and returns the result as a JavaScript string. It may throw an exception if the memory could not be read. The supplied location can be an address (a 64-bit value), a location object, or a native char<em>. If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger&#39;s current context. If the optional <em>length</em> argument is supplied, the read string will be of the specified length.</td>
+<td align="left">This reads a narrow (current code page) string from the address space of a debug target, converts it to UTF-16, and returns the result as a JavaScript string. It may throw an exception if the memory could not be read. The supplied location can be an address (a 64-bit value), a location object, or a native char<em>. If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger's current context. If the optional <em>length</em> argument is supplied, the read string will be of the specified length.</td>
 </tr>
 <tr class="odd">
 <td align="left">readWideString</td>
 <td align="left"><p>readWideString(location, [contextInheritor])</p>
 <p>readWideString(location, [length], [contextInheritor])</p></td>
 <td align="left">2</td>
-<td align="left">This reads a wide(UTF-16) string from the address space of a debug target and returns the result as a JavaScript string. It may throw an exception if the memory could not be read. The supplied location can be an address (a 64-bit value), a location object, or a native wchar_t</em>. If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger&#39;s current context. If the optional <em>length</em> argument is supplied, the read string will be of the specified length.</td>
+<td align="left">This reads a wide(UTF-16) string from the address space of a debug target and returns the result as a JavaScript string. It may throw an exception if the memory could not be read. The supplied location can be an address (a 64-bit value), a location object, or a native wchar_t</em>. If the optional <em>contextInheritor</em> argument is supplied, memory will be read in the context (e.g.: address space and debug target) indicated by the argument; otherwise, it will be read from the debugger's current context. If the optional <em>length</em> argument is supplied, the read string will be of the specified length.</td>
 </tr>
 </tbody>
 </table>

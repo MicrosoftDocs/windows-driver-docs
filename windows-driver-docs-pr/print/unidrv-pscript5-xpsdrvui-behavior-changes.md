@@ -35,11 +35,11 @@ A Unidrv/PScript5 driver that is running in XPSDrv mode will create the followin
 <td><p>Copy Count</p>
 <p>(<strong>Advanced</strong> tab)</p></td>
 <td><p>(Unidrv only) The Copy Count UI is always displayed unless the GPD file has a &quot;Collate&quot; feature with &quot;<em>ConcealFromUI?: TRUE&quot;:</p>
-<p>(Unidrv only) When EMF is enabled, the Copy Count UI is hard-coded to have an upper limit that is the maximum value of 9999 or the GPD file&#39;s specified *MaxCopies value.</p>
+<p>(Unidrv only) When EMF is enabled, the Copy Count UI is hard-coded to have an upper limit that is the maximum value of 9999 or the GPD file's specified *MaxCopies value.</p>
 <p>(Unidrv only) When EMF is disabled, Copy Count has an upper limit of the GPD file *MaxCopies value.</p>
 <p>(PS only) The Copy Count UI is always displayed, with an upper limit that is hard-coded to be 9999.</p></td>
 <td><p>(Unidrv only) The Copy Count UI behaves the same as the non-XPSDrv behavior with EMF disabled.</p>
-<p>(PS only) Copy Count is always displayed, with an upper limit that is specified in the PPD file&#39;s *MSXPSMaxCopies value. The upper limit is set to 1 if the PPD file does not specify *MSXPSMaxCopies.</p></td>
+<p>(PS only) Copy Count is always displayed, with an upper limit that is specified in the PPD file's *MSXPSMaxCopies value. The upper limit is set to 1 if the PPD file does not specify *MSXPSMaxCopies.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Collated</p>

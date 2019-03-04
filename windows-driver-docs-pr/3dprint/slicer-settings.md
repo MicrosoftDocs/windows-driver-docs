@@ -245,7 +245,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 <p>psk3dx:postcommands\ </p>
 <p>psk3dx:command</p></td>
 <td><p>Yes</p></td>
-<td><p>The set of G-Code commands to send at the end of each job, generally to bring the 3D printer to a safe state, like cooling down the extruder and moving the part away from the extruder/hot end to where it&#39;s easy to remove from the bed. Each device has different required post-commands.</p>
+<td><p>The set of G-Code commands to send at the end of each job, generally to bring the 3D printer to a safe state, like cooling down the extruder and moving the part away from the extruder/hot end to where it's easy to remove from the bed. Each device has different required post-commands.</p>
 <p>This sequence is also executed when a job is cancelled.</p></td>
 </tr>
 
@@ -597,12 +597,12 @@ The configuration file XML contains a number of settings that need to be adjuste
 
 <tr>
 <td><p>;?ack=&lt;pattern&gt;</p></td>
-<td><p>This setting instructs the driver to change the command ACK pattern (the printer response) from the default &#39;ok&#39; to something temporary, for example &quot;;?ack=Writing to file&quot; would tell the driver to wait for a confirmation the printer is ready to write to the internal storage.</p></td>
+<td><p>This setting instructs the driver to change the command ACK pattern (the printer response) from the default 'ok' to something temporary, for example &quot;;?ack=Writing to file&quot; would tell the driver to wait for a confirmation the printer is ready to write to the internal storage.</p></td>
 </tr>
 
 <tr>
 <td><p>;?err=&lt;pattern&gt;</p></td>
-<td><p>This setting instructs the driver to look for an additional error pattern in the printer response, in addition to the default &#39;error&#39;. For example “;?err=open failed” would tell the driver to fail if such a response is received (in this example the hardware would return this response if the internal SD card storage was not initialized or full).</p></td>
+<td><p>This setting instructs the driver to look for an additional error pattern in the printer response, in addition to the default 'error'. For example “;?err=open failed” would tell the driver to fail if such a response is received (in this example the hardware would return this response if the internal SD card storage was not initialized or full).</p></td>
 </tr>
 
 <tr>

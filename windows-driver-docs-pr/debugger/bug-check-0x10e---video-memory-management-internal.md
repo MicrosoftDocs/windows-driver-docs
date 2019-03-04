@@ -131,7 +131,7 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tr>
 <tr class="even">
 <td align="left"><p>0x18</p></td>
-<td align="left"><p>An attempt to release a pinned allocation&#39;s resource failed.</p></td>
+<td align="left"><p>An attempt to release a pinned allocation's resource failed.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x19</p></td>

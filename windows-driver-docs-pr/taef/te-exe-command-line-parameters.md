@@ -98,7 +98,7 @@ Lists the names of all the [test\_binaries](#testbinaries) and the classes and m
 ```
 
 ```cpp
- te.exe test1.dll test2.dll /select:@name=&#39;*Example2*&#39; /list
+ te.exe test1.dll test2.dll /select:@name='*Example2*' /list
 
  WEX::UnitTests::Test1
   WEX::UnitTests::Test1::Example2
@@ -138,7 +138,7 @@ Lists the names and properties of all the test\_binaries and the classes and met
 ```
 
 ```cpp
- te.exe test1.dll test2.dll /select:@name=&#39;*Example2*&#39; /listProperties
+ te.exe test1.dll test2.dll /select:@name='*Example2*' /listProperties
 
  WEX::UnitTests::Test1
   WEX::UnitTests::Test1::Example2

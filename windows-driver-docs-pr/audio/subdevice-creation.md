@@ -32,11 +32,11 @@ The term *subdevice* is used to describe the binding of the four components that
 <tbody>
 <tr class="odd">
 <td align="left"><p>Miniport object</p></td>
-<td align="left"><p>An object that exposes the miniport driver&#39;s IMiniport<em>Xxx</em> interface</p></td>
+<td align="left"><p>An object that exposes the miniport driver's IMiniport<em>Xxx</em> interface</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Port object</p></td>
-<td align="left"><p>An object that exposes the port driver&#39;s IPort<em>Xxx</em> interface</p></td>
+<td align="left"><p>An object that exposes the port driver's IPort<em>Xxx</em> interface</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Resource list object</p></td>

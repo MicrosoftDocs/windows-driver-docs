@@ -89,21 +89,21 @@ The following access types are available for processor breakpoints:
 <tbody>
 <tr class="odd">
 <td align="left"><p>DEBUG_BREAK_READ</p></td>
-<td align="left"><p>The breakpoint will be triggered when the CPU reads memory in the breakpoint&#39;s memory block.</p></td>
+<td align="left"><p>The breakpoint will be triggered when the CPU reads memory in the breakpoint's memory block.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DEBUG_BREAK_WRITE</p></td>
-<td align="left"><p>The breakpoint will be triggered when the CPU writes memory in the breakpoint&#39;s memory block.</p></td>
+<td align="left"><p>The breakpoint will be triggered when the CPU writes memory in the breakpoint's memory block.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p>
 DEBUG_BREAK_READ
 | DEBUG_BREAK_WRITE</td>
-<td align="left"><p>The breakpoint will be triggered when the CPU reads or writes memory in the breakpoint&#39;s memory block.</p></td>
+<td align="left"><p>The breakpoint will be triggered when the CPU reads or writes memory in the breakpoint's memory block.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DEBUG_BREAK_EXECUTE</p></td>
-<td align="left"><p>The breakpoint will be triggered when the CPU fetches the instruction in the breakpoint&#39;s memory block.</p></td>
+<td align="left"><p>The breakpoint will be triggered when the CPU fetches the instruction in the breakpoint's memory block.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DEBUG_BREAK_IO</p></td>

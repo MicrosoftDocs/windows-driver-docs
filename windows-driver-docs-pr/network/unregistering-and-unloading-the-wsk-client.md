@@ -81,7 +81,7 @@ VOID
   // Clean up the binding context structure
   ...
 
-  // Free the memory for client&#39;s binding context structure
+  // Free the memory for client's binding context structure
   ExFreePoolWithTag(
     BindingContext,
     BINDING_CONTEXT_POOL_TAG

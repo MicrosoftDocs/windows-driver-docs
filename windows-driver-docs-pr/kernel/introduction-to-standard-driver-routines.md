@@ -108,12 +108,12 @@ Following are two tables. The first table lists required standard routines. The 
 </tr>
 <tr class="odd">
 <td><p><em>IoCompletion</em></p></td>
-<td><p>Completes a driver&#39;s processing of an IRP.</p></td>
+<td><p>Completes a driver's processing of an IRP.</p></td>
 <td><p><a href="completing-irps.md" data-raw-source="[Completing IRPs](completing-irps.md)">Completing IRPs</a></p></td>
 </tr>
 <tr class="even">
 <td><p><em>Cancel</em></p></td>
-<td><p>Cancels a driver&#39;s processing of an IRP.</p></td>
+<td><p>Cancels a driver's processing of an IRP.</p></td>
 <td><p><a href="canceling-irps.md" data-raw-source="[Canceling IRPs](canceling-irps.md)">Canceling IRPs</a></p></td>
 </tr>
 <tr class="odd">

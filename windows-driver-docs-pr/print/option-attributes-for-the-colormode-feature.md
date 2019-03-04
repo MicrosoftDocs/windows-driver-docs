@@ -62,7 +62,7 @@ LIST (RED, GREEN, BLUE)
 </tr>
 <tr class="even">
 <td><p><em><strong>IPCallbackID</strong></p></td>
-<td><p>Positive numeric value, passed to the rendering plug-in&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff554261" data-raw-source="[&lt;strong&gt;IPrintOemUni::ImageProcessing&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554261)"><strong>IPrintOemUni::ImageProcessing</strong></a> method as its <strong>IPCallbackID</strong> argument.</p></td>
+<td><p>Positive numeric value, passed to the rendering plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554261" data-raw-source="[&lt;strong&gt;IPrintOemUni::ImageProcessing&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554261)"><strong>IPrintOemUni::ImageProcessing</strong></a> method as its <strong>IPCallbackID</strong> argument.</p></td>
 <td><p>Required if a <a href="rendering-plug-ins.md" data-raw-source="[rendering plug-in](rendering-plug-ins.md)">rendering plug-in</a> is supplied that contains an <strong>IPrintOemUni::ImageProcessing</strong> method.</p></td>
 </tr>
 <tr class="odd">

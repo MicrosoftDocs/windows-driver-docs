@@ -251,7 +251,7 @@ The following SIDs deserve special mention.
 <tr class="odd">
 <td><p>RC</p></td>
 <td><p>Restricted Code</p>
-<p>This SID is used to control access by untrusted code. ACL validation against tokens with RC consists of two checks, one against the token&#39;s normal list of SIDs (containing WD for instance), and one against a second list (typically containing RC and a subset of the original token SIDs). Access is granted only if a token passes both tests. As such, RC actually works in combination with other SIDs.</p>
+<p>This SID is used to control access by untrusted code. ACL validation against tokens with RC consists of two checks, one against the token's normal list of SIDs (containing WD for instance), and one against a second list (typically containing RC and a subset of the original token SIDs). Access is granted only if a token passes both tests. As such, RC actually works in combination with other SIDs.</p>
 <p>Any ACL that specifies RC must also specify WD. When RC is paired with WD in an ACL, a superset of Everyone including untrusted code is described.</p>
 <p>Untrusted code might be code launched using the Run As option in Explorer. By default, World does not cover untrusted code.</p></td>
 </tr>

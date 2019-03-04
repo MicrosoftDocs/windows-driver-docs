@@ -40,7 +40,7 @@ The following table lists the predefined registry value names and their meanings
 <tr class="even">
 <td><p>STI_DEVICE_VALUE_ISIS_NAME</p></td>
 <td><p>&quot;ISISDriverName&quot;</p></td>
-<td><p>REG_SZ type containing the device&#39;s ISIS driver name, such as &quot;epson.pxn&quot;.</p></td>
+<td><p>REG_SZ type containing the device's ISIS driver name, such as &quot;epson.pxn&quot;.</p></td>
 </tr>
 <tr class="odd">
 <td><p>STI_DEVICE_VALUE_TIMEOUT</p></td>
@@ -50,7 +50,7 @@ The following table lists the predefined registry value names and their meanings
 <tr class="even">
 <td><p>STI_DEVICE_VALUE_TWAIN_NAME</p></td>
 <td><p>&quot;TwainDS&quot;</p></td>
-<td><p>REG_SZ type containing the displayable name of the device&#39;s TWAIN data source, such as &quot;HP PictureScan 3.0&quot;.</p></td>
+<td><p>REG_SZ type containing the displayable name of the device's TWAIN data source, such as &quot;HP PictureScan 3.0&quot;.</p></td>
 </tr>
 </tbody>
 </table>

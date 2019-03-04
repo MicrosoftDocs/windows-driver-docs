@@ -81,7 +81,7 @@ The following table lists and describes all of the **IStillImage** interface's m
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543798" data-raw-source="[&lt;strong&gt;IStillImage::RegisterLaunchApplication&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543798)"><strong>IStillImage::RegisterLaunchApplication</strong></a></p></td>
-<td><p>Adds an application to the still image event monitor&#39;s list of push-model aware applications.</p></td>
+<td><p>Adds an application to the still image event monitor's list of push-model aware applications.</p></td>
 <td><p>Push-model aware applications or their installers</p></td>
 </tr>
 <tr class="odd">
@@ -96,7 +96,7 @@ The following table lists and describes all of the **IStillImage** interface's m
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543803" data-raw-source="[&lt;strong&gt;IStillImage::SetupDeviceParameters&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543803)"><strong>IStillImage::SetupDeviceParameters</strong></a></p></td>
-<td><p>Allows clients of the <strong>IStillImage</strong> interface to modify a still image device&#39;s stored characteristics.</p></td>
+<td><p>Allows clients of the <strong>IStillImage</strong> interface to modify a still image device's stored characteristics.</p></td>
 <td><p>Scanners and Cameras Control Panel</p></td>
 </tr>
 <tr class="even">
@@ -106,7 +106,7 @@ The following table lists and describes all of the **IStillImage** interface's m
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543806" data-raw-source="[&lt;strong&gt;IStillImage::UnregisterLaunchApplication&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543806)"><strong>IStillImage::UnregisterLaunchApplication</strong></a></p></td>
-<td><p>Removes an application from the still image event monitor&#39;s list of push-model aware applications.</p></td>
+<td><p>Removes an application from the still image event monitor's list of push-model aware applications.</p></td>
 <td><p>Push-model aware applications or their installers</p></td>
 </tr>
 <tr class="even">

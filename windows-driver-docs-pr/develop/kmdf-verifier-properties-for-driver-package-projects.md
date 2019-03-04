@@ -51,7 +51,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 <td align="left"><p><span id="Forward_Progress_Handler_Testing"></span><span id="forward_progress_handler_testing"></span><span id="FORWARD_PROGRESS_HANDLER_TESTING"></span><strong>Forward Progress Handler Testing</strong></p></td>
 <td align="left"><p>Specifies options for testing forward progress handling of your driver.</p>
 <p><strong>No Allocation Failures</strong> No faults will be simulated to test the forward progress handling of your driver.</p>
-<p><strong>Fail All Allocations</strong> All I/O requests destined for a forward progress queue will appear to fail, relying on your driver&#39;s forward progress handling.</p>
+<p><strong>Fail All Allocations</strong> All I/O requests destined for a forward progress queue will appear to fail, relying on your driver's forward progress handling.</p>
 <p><strong>Randomly Fail Allocations</strong> Randomly fail I/O requests destined for a forward progress queue.</p></td>
 </tr>
 <tr class="even">

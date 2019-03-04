@@ -136,7 +136,7 @@ Here is a sample ACPI definition for a USB dual-role controller.
 
 ```Text
 //
-// You may name the device whatever you want; we don&#39;t depend on it being called &#39;URS0&#39;.
+// You may name the device whatever you want; we don't depend on it being called 'URS0'.
 //
 Device(URS0)
 {
@@ -174,12 +174,12 @@ Device(URS0)
     //
     // This child device represents the USB host controller. This device node is in effect
     // when the controller is in host mode.
-    // You may name the device whatever you want; we don&#39;t depend on it being called &#39;USB0&#39;.
+    // You may name the device whatever you want; we don't depend on it being called 'USB0'.
     //
     Device(USB0)
     {
         //
-        // The host controller device node needs to have an address of &#39;0&#39;
+        // The host controller device node needs to have an address of '0'
         //
         Name(_ADR, 0)
         Name(_CRS, ResourceTemplate() {
@@ -194,12 +194,12 @@ Device(URS0)
     //
     // This child device represents the USB function controller. This device node is in effect
     // when the controller is in device/function/peripheral mode.
-    // You may name the device whatever you want; we don&#39;t depend on it being called &#39;UFN0&#39;.
+    // You may name the device whatever you want; we don't depend on it being called 'UFN0'.
     //
     Device(UFN0)
     {
         //
-        // The function controller device node needs to have an address of &#39;1&#39;
+        // The function controller device node needs to have an address of '1'
         //
         Name(_ADR, 1)
         Name(_CRS, ResourceTemplate() {

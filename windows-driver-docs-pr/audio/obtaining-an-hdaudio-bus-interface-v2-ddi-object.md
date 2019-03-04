@@ -78,11 +78,11 @@ The following table shows the values that the HD Audio bus driver writes into th
 </tr>
 <tr class="even">
 <td align="left"><p>PINTERFACE_REFERENCE <strong>InterfaceReference</strong></p></td>
-<td align="left"><p>A pointer to a routine that increments the context object&#39;s reference count.</p></td>
+<td align="left"><p>A pointer to a routine that increments the context object's reference count.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>PINTERFACE_DEREFERENCE <strong>InterfaceDereference</strong></p></td>
-<td align="left"><p>A pointer to a routine that decrements the context object&#39;s reference count.</p></td>
+<td align="left"><p>A pointer to a routine that decrements the context object's reference count.</p></td>
 </tr>
 </tbody>
 </table>

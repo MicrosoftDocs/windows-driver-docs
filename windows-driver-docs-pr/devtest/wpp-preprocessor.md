@@ -222,7 +222,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <td align="left"><p><strong>-ext:.</strong> <em>ext1</em> <strong>[.</strong><em>ext2</em><strong>]</strong></p></td>
 <td align="left"><p>Specifies the file types that WPP recognizes as source files. WPP ignores files with a different file name extension.</p>
 <p>By default, WPP recognizes only .c, .c++, .cpp, and .cxx files.</p>
-<p>This option allows you to use the default settings for WPP without having to delete or rename resource files that WPP doesn&#39;t use, such as .rc and .mc files.</p>
+<p>This option allows you to use the default settings for WPP without having to delete or rename resource files that WPP doesn't use, such as .rc and .mc files.</p>
 <p>For example, to add tracing to C++ files and header (.h) files, use the following command:</p>
 <p><strong>-ext:.cpp.CPP.h.H</strong></p>
 <p>Also, to give the TMH files for the C++ and header files different names, use the <strong>-preserveext</strong> option.</p></td>

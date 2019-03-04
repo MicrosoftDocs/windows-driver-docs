@@ -25,7 +25,7 @@ status =
  FwpmEngineOpen0(
     NULL,              // The filter engine on the local system
     RPC_C_AUTHN_WINNT, // Use the Windows authentication service
-    NULL,              // Use the calling thread&#39;s credentials
+    NULL,              // Use the calling thread's credentials
     NULL,              // There are no session-specific parameters
     &engineHandle      // Pointer to a variable to receive the handle
     );

@@ -45,7 +45,7 @@ GDI Halftone support includes the services listed in the following table.
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567308" data-raw-source="[&lt;strong&gt;HTUI_DeviceColorAdjustment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567308)"><strong>HTUI_DeviceColorAdjustment</strong></a></p></td>
-<td align="left"><p>Displays a dialog box that allows a user to adjust a device&#39;s halftoning properties.</p></td>
+<td align="left"><p>Displays a dialog box that allows a user to adjust a device's halftoning properties.</p></td>
 </tr>
 </tbody>
 </table>

@@ -71,7 +71,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>One incorrectly-calculated entry</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>The bad entry that caused the miscalculation</p></td>
-<td align="left"><p>The pool block header&#39;s previous size is too large.</p></td>
+<td align="left"><p>The pool block header's previous size is too large.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x7</p></td>

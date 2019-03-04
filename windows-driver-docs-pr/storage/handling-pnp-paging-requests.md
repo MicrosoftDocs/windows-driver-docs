@@ -106,7 +106,7 @@ case DeviceUsageTypePaging: {
             // succeeded the addition of the paging 
             // file, it is illegal to fail the 
             // request. It is also the time to 
-            // clear the Filter DO&#39;s 
+            // clear the Filter DO's 
             //DO_POWER_PAGABLE flag.
  
             DeviceObject->Flags &= ~DO_POWER_PAGABLE; 

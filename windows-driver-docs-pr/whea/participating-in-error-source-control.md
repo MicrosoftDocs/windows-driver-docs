@@ -29,7 +29,7 @@ The following code example shows how to implement these callback functions.
 
 ```cpp
 //
-// The PSHED plug-in&#39;s SetErrorSourceInfo callback function
+// The PSHED plug-in's SetErrorSourceInfo callback function
 //
 NTSTATUS
   SetErrorSourceInfo(
@@ -69,7 +69,7 @@ NTSTATUS
 }
 
 //
-// The PSHED plug-in&#39;s EnableErrorSource callback function
+// The PSHED plug-in's EnableErrorSource callback function
 //
 NTSTATUS
   EnableErrorSource(
@@ -106,7 +106,7 @@ NTSTATUS
 }
 
 //
-// The PSHED plug-in&#39;s DisableErrorSource callback function
+// The PSHED plug-in's DisableErrorSource callback function
 //
 NTSTATUS
   DisableErrorSource(

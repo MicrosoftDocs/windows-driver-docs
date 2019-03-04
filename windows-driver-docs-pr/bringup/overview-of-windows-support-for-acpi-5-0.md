@@ -52,7 +52,7 @@ Windows supports firmware revisions based on the [ACPI 5.0 specification](https:
 </tr>
 <tr class="odd">
 <td><p><a href="acpi-namespace-hierarchy.md" data-raw-source="[ACPI namespace hierarchy](acpi-namespace-hierarchy.md)">ACPI namespace hierarchy</a></p></td>
-<td><p>The ACPI namespace hierarchy must accurately model the platform&#39;s hardware topology, starting with the processor&#39;s system bus (&quot;_SB&quot;). In general, a device that connects to a bus or controller appears as a child of that bus or controller device in the namespace.</p></td>
+<td><p>The ACPI namespace hierarchy must accurately model the platform's hardware topology, starting with the processor's system bus (&quot;_SB&quot;). In general, a device that connects to a bus or controller appears as a child of that bus or controller device in the namespace.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="microsoft-asl-compiler.md" data-raw-source="[Microsoft ASL compiler](microsoft-asl-compiler.md)">Microsoft ASL compiler</a></p></td>

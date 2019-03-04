@@ -74,13 +74,13 @@ END_MODULE()
         END_TEST_METHOD()
 
         BEGIN_TEST_METHOD(OneHDAudioTest)
-            TEST_METHOD_PROPERTY(L"ResourceSelection", L"@Id=&#39;HD*&#39;")
+            TEST_METHOD_PROPERTY(L"ResourceSelection", L"@Id='HD*'")
         END_TEST_METHOD()
 
         ...
 
         BEGIN_TEST_METHOD(HDorPCITest)
-            TEST_METHOD_PROPERTY(L"ResourceSelection", L"@Id=&#39;PCI*&#39; OR @Id=&#39;HD*&#39;")
+            TEST_METHOD_PROPERTY(L"ResourceSelection", L"@Id='PCI*' OR @Id='HD*'")
         END_TEST_METHOD()
         ...
     };
