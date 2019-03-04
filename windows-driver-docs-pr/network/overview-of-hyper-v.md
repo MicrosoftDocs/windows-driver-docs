@@ -31,7 +31,7 @@ The following figure shows the networking data paths in Hyper-V over synthetic n
 
 These data paths are extended by using NDIS virtualized networking interfaces, such as the virtual machine queue (VMQ), single root I/O virtualization (SR-IOV), or Hyper-V extensible switch interfaces. For example, the NetVSC could be configured to connect to a Virtual Function (VF) of a physical network adapter that supports the SR-IOV interface. In this case, the NetVSC sends and receives packets directly over the underlying physical adapter and not over the VMBus.
 
-For more information about Hyper-V, see [Hyper-V](http://go.microsoft.com/fwlink/p/?linkid=217079).
+For more information about Hyper-V, see [Hyper-V](https://go.microsoft.com/fwlink/p/?linkid=217079).
 
  
 

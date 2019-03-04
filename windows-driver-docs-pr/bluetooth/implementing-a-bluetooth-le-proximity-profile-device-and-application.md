@@ -18,7 +18,7 @@ Before you develop this app, you should be familiar with Bluetooth LE functions 
 
 Bluetooth Low Energy introduced a new physical layer that shares the same frequency space as Bluetooth Basic Rate. Low Energy Profiles are organized into what’s called the Generic Attribute Profile (or GATT).
 
-A GATT profile declares one or more services that define a use case or scenario. To develop a compliant service implementation, you must organize *characteristics* so that they conform to the established schema defined on the [Bluetooth Special Interest Group (SIG) developer website](http://go.microsoft.com/fwlink/p/?linkid=320723).
+A GATT profile declares one or more services that define a use case or scenario. To develop a compliant service implementation, you must organize *characteristics* so that they conform to the established schema defined on the [Bluetooth Special Interest Group (SIG) developer website](https://go.microsoft.com/fwlink/p/?linkid=320723).
 
 This diagram shows how *characteristics* are structured inside a typical GATT service.
 

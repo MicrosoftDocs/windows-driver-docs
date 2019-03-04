@@ -9,11 +9,11 @@ ms.localizationpriority: medium
 # How to manage print jobs in a UWP device app
 
 
-In Windows 8.1, UWP device apps for printers can manage print jobs. This topic uses the C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample to demonstrate how to create a view of print jobs, monitor those jobs, and if necessary, cancel a job. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
+In Windows 8.1, UWP device apps for printers can manage print jobs. This topic uses the C# version of the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample to demonstrate how to create a view of print jobs, monitor those jobs, and if necessary, cancel a job. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-The C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample demonstrates printer maintenance with the **DeviceMaintenance.xaml.cs** file in the **DeviceAppForPrinters2** project. To work with Bidi, the sample uses the printer extension library in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
+The C# version of the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample demonstrates printer maintenance with the **DeviceMaintenance.xaml.cs** file in the **DeviceAppForPrinters2** project. To work with Bidi, the sample uses the printer extension library in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
 
-**Note**  The code examples shown in this topic are based on the C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
+**Note**  The code examples shown in this topic are based on the C# version of the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
 
  
 
@@ -31,12 +31,12 @@ Windows 8.1 introduces new printer extension interfaces in the v4 printer drive
 
 Before you get started:
 
-1.  Make sure your printer is installed using a v4 print driver. For more info, see [Developing v4 print drivers](http://go.microsoft.com/fwlink/p/?LinkId=314231).
+1.  Make sure your printer is installed using a v4 print driver. For more info, see [Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231).
 2.  Get your development PC set up. See [Getting started](getting-started.md) for info about downloading the tools and creating a developer account.
 3.  Associate your app with the store. See [Create a UWP device app](step-1--create-a-uwp-device-app.md) for info about that.
 4.  Create device metadata for your printer that associates it with your app. See [Create device metadata](step-2--create-device-metadata.md) for more about that.
-5.  Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](http://go.microsoft.com/fwlink/p/?LinkID=299845).
-6.  If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** project to your UWP device app solution. You can find this project in the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample.
+5.  Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](https://go.microsoft.com/fwlink/p/?LinkID=299845).
+6.  If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** project to your UWP device app solution. You can find this project in the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample.
     **Note**  Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
 
      
@@ -44,7 +44,7 @@ Before you get started:
 ## <span id="Step_1__Find_printer"></span><span id="step_1__find_printer"></span><span id="STEP_1__FIND_PRINTER"></span>Step 1: Find printer
 
 
-Before your app can manage print jobs, it must first locate the printer having the print jobs. To do this, the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample includes a handy class named `PrinterEnumeration` (in the **PrinterEnumeration.cs** file). This class finds all the printers that are associated with your app via device metadata, and returns a list of `PrinterInfo` objects, which contains the names and device IDs for each printer.
+Before your app can manage print jobs, it must first locate the printer having the print jobs. To do this, the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample includes a handy class named `PrinterEnumeration` (in the **PrinterEnumeration.cs** file). This class finds all the printers that are associated with your app via device metadata, and returns a list of `PrinterInfo` objects, which contains the names and device IDs for each printer.
 
 This example shows the `EnumeratePrinters_Click` method in the **PrintJobManagement.xaml.cs** file. It shows how the sample uses the `PrinterEnumeration` class to get a list of associated printers.
 
@@ -88,7 +88,7 @@ private async void EnumeratePrinters_Click(object sender, RoutedEventArgs e)
 ## <span id="Step_2__Get_printer_queue"></span><span id="step_2__get_printer_queue"></span><span id="STEP_2__GET_PRINTER_QUEUE"></span>Step 2: Get printer queue
 
 
-Once you've identified the printer having the print jobs that you want to manage, create a *view* of the print jobs, with object based on the `IPrinterQueueView` interface (defined in the **PrinterExtensionTypes.cs** file of the **PrinterExtensionLibrary** project). In the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample, this object is named `currentPrinterQueueView` and is re-created each time the printer selection changes.
+Once you've identified the printer having the print jobs that you want to manage, create a *view* of the print jobs, with object based on the `IPrinterQueueView` interface (defined in the **PrinterExtensionTypes.cs** file of the **PrinterExtensionLibrary** project). In the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample, this object is named `currentPrinterQueueView` and is re-created each time the printer selection changes.
 
 In the `Printer_SelectionChanged` method, the sample first uses a `PrinterInfo` object to create a printer extension context object named `context`. Then it uses the `GetPrinterQueueView` method on the `context` to create the `currentPrinterQueueView` object. Finally, an event handler is added to handle the `currentPrinterQueueView`'s `OnChanged` event.
 
@@ -151,7 +151,7 @@ private async void OnPrinterQueueViewChanged(object sender, PrinterQueueViewEven
 
 Because the `PrintJobListBox` is bound to a collection of `IPrintJob` objects, displaying the status of a job is fairly straightforward. The selected print job is cast as an `IPrintJob` object, and then the properties of that object are used to fill the `PrintJobDetails` TextBox.
 
-In the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample, the print job status is displayed each time a different print job is selected. This update is taken care of by the `PrintJob_SelectionChanged` method.
+In the [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample, the print job status is displayed each time a different print job is selected. This update is taken care of by the `PrintJob_SelectionChanged` method.
 
 This example shows the `PrintJob_SelectionChanged` method in the **PrintJobManagement.xaml.cs** file. It shows how to display the status of a print job, based on an `IPrintJob` object.
 
@@ -280,9 +280,9 @@ private void CancelPrintJob_Click(object sender, RoutedEventArgs e)
 
 Before you can test your UWP device app, it must be linked to your printer using device metadata.
 
--   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
+-   You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](https://go.microsoft.com/fwlink/p/?LinkId=313644).
 
-    **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
+    **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
      
 
@@ -297,7 +297,7 @@ The following steps build your app and install the device metadata.
 
 4.  Disconnect and uninstall the printer. This step is required so that Windows will read the updated device metadata the next time the device is detected.
 5.  Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
-    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
+    **Note**  If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](https://go.microsoft.com/fwlink/p/?LinkId=313644).
 
      
 
@@ -317,9 +317,9 @@ The following steps build your app and install the device metadata.
 
 [Job Management (v4 Printer Driver)](https://msdn.microsoft.com/library/windows/hardware/dn265419)
 
-[Developing v4 print drivers](http://go.microsoft.com/fwlink/p/?LinkId=314231)
+[Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231)
 
-[Bidirectional Communications](http://go.microsoft.com/fwlink/p/?LinkId=317192)
+[Bidirectional Communications](https://go.microsoft.com/fwlink/p/?LinkId=317192)
 
 [Getting started with UWP apps](getting-started.md)
 

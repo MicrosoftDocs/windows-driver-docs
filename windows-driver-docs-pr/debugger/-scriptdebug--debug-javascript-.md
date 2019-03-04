@@ -18,7 +18,7 @@ api_type:
 
 Use the **.scriptdebug** command to debug JavaScript scripts.
 
-```
+```dbgcmd
 .scriptdebug FileName
 ```
 
@@ -69,19 +69,19 @@ Before you debug a JavaScript completed the following steps.
 
 1. Load the JavaScript scripting provider using the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command. 
 
-    ```
+    ```dbgcmd
     0:000> .load jsprovider.dll
     ```
 
 2. Load the sample script.
 
-    ```
+    ```dbgcmd
     0:000> .scriptload C:\MyScripts\DebuggableSample.js
     ```
 
 To start actively debugging the script use the **.scriptdebug** command.
 
-```
+```dbgcmd
 0:000> .scriptdebug C:\MyScripts\DebuggableSample.js
 >>> ****** DEBUGGER ENTRY DebuggableSample ******
            No active debug event!
@@ -94,7 +94,7 @@ inside the script debugger.
 
 Use the **.help** command or **?** to display a list of commands in the JavaScript debugging environment.
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample <No Position>] >.help
 Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
     ? .................................. Get help
@@ -132,7 +132,7 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
 
 Use the **sx** script debugger command to see the list of events that can be trapped.
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample <No Position>] >sx              
 sx                                                          
     ab  [   inactive] .... Break on script abort            
@@ -143,7 +143,7 @@ sx
 
 Use the **sxe** script debugger command to enable any of the break behaviors. For example to turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes, use this command.
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample <No Position>] >sxe en          
 sxe en                                                      
 Event filter 'en' is now active                             
@@ -151,7 +151,7 @@ Event filter 'en' is now active
 
 Use the **sxd** script debugger command to disable any of the breakpoint behaviors.
 
-```                                                                                                                      
+```dbgcmd                                                                                                                      
 >>> Debug [DebuggableSample 34:5] >sxd en                                                                              
 sxd en                                                                                                                 
 Event filter 'en' is now inactive                                                                                      
@@ -161,7 +161,7 @@ Event filter 'en' is now inactive
 
 Use the **k** command to display a stack trace.
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample 34:5] >k                                                  
 k                                                                                     
     ##  Function                         Pos    Source Snippet                        
@@ -174,7 +174,7 @@ k
 
 Use **??** to enumerate the values of JavaScript variables.
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample 34:5] >??someObj                
 ??someObj                                                   
 someObj          : {...}                                    
@@ -226,7 +226,7 @@ Use the following commands to work with frames.
 
 Use the **.detach** command to detach the JavaScript debugger. 
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample 34:5] >.detach                  
 .detach                                                     
 Debugger has been detached from script!                     
@@ -234,16 +234,8 @@ Debugger has been detached from script!
 
 Use the **q** command to quit the JavaScript debugger. 
 
-```
+```dbgcmd
 >>> Debug [<NONE> ] >q                                      
 q                                                           
 ```
-
-
-
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger/debugger]:%20.crash%20%28Force%20System%20Crash%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 

@@ -33,9 +33,9 @@ When you write a sensor driver, you must consider user privacy. You must make su
 
 Review the following resources to help you develop software that protects user privacy.
 
--   [Privacy Guidelines for Developing Software Products and Services](http://go.microsoft.com/fwlink/p/?linkid=237149)
+-   [Privacy Guidelines for Developing Software Products and Services](https://go.microsoft.com/fwlink/p/?linkid=237149)
 
--   [TechNet Security Developer Center](http://go.microsoft.com/fwlink/p/?linkid=237150)
+-   [TechNet Security Developer Center](https://go.microsoft.com/fwlink/p/?linkid=237150)
 
 ## Related topics
 [Architecture Overview](https://msdn.microsoft.com/library/windows/hardware/ff545400)  

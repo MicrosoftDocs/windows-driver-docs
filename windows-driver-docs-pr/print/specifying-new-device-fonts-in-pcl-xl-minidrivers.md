@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-If you want to support new device fonts in a PCL XL minidriver, you must create [*Unidrv font metrics (UFM)*](https://msdn.microsoft.com/library/windows/hardware/ff556343#wdkgloss-unidrv-font-metrics--ufm-) files for those device fonts.
+If you want to support new device fonts in a PCL XL minidriver, you must create *Unidrv font metrics (UFM)* files for those device fonts.
 
 A UFM file has the following format:
 

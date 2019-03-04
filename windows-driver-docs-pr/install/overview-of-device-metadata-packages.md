@@ -43,7 +43,7 @@ This document contains data that specifies the display actions that the Devices 
 
 This data is formatted based on the [WindowsInfo XML Schema](https://msdn.microsoft.com/library/windows/hardware/ff553992).
 
-Each device metadata package has its components compressed into a single file by using the Cabarc (*Cabarc.exe*) tool. For more information about this tool, see to the [Cabarc Overview](http://go.microsoft.com/fwlink/p/?linkid=145395) website.
+Each device metadata package has its components compressed into a single file by using the Cabarc (*Cabarc.exe*) tool. For more information about this tool, see to the [Cabarc Overview](https://go.microsoft.com/fwlink/p/?linkid=145395) website.
 
 The file name of the device metadata package uses the following naming convention:
 

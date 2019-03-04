@@ -1,15 +1,17 @@
 ---
-title: Update a code signing certificate
-description: Update a code signing certificate
+title: Add or Update a code signing certificate
+description: Add or Update a code signing certificate
 ms.assetid: 120AA970-D981-4E7D-A9BD-68125D90A0EE
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Update a code signing certificate
+# Add or Update a code signing certificate
 
-As a Hardware Dev Center dashboard administrator, you’re responsible for keeping your digital certificate information up to date. When the original certificate expires, you’ll need to get a new certificate and upload a new file signed with your new digital certificate.
+As a Hardware Dev Center dashboard administrator, you’re responsible for keeping your digital certificate information up to date. When the original certificate expires, you’ll need to get a new certificate and upload a new file signed with your new digital certificate. 
+
+Hardware Dev Center supports multiple certificates be associated with a single account.  If you want to add additional certificates use this same process.
 
 If you’re registering your company on dashboard for the first time, see [Establish a new company](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/establish-a-new-company).
 
@@ -19,9 +21,9 @@ If you’re registering your company on dashboard for the first time, see [Estab
 > * All certificates must be SHA2 and signed with the **/fd sha256** signtool command line switch 
 > * (for more information, see this [HLK Blog post](https://blogs.msdn.microsoft.com/windows_hardware_certification/2017/11/13/starting-in-february-2018-packages-signed-using-a-sha-1-digest-algorithm-and-certificate-chain-will-no-longer-be-accepted/)).
 
-## To update a code signing certificate
+## To add or update a code signing certificate
 
-**Step 1: Renew your code signing certificate**
+**Step 1: Renew your code signing certificate if needed**  
 
 1. Determine which type of code signing certificate you need (for more information, see [Get a code signing certificate](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-a-code-signing-certificate)).
 

@@ -532,7 +532,7 @@ The following table lists those **I/O Verification** errors that can appear.
 
  
 
-The following table lists additional **I/O Verification** errors that can appear in Windows XP and later. Some of these errors will only be revealed if **Enhanced I/O Verification** is activated. In Windows Vista and later, the **Enhanced I/O Verification** settings are included as part of **I/O Verification**.
+The following table lists additional **I/O Verification** errors that can appear. Some of these errors will only be revealed if **Enhanced I/O Verification** is activated. In Windows Vista and later, the **Enhanced I/O Verification** settings are included as part of **I/O Verification**.
 
 <table>
 <colgroup>

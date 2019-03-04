@@ -12,18 +12,36 @@ ms.localizationpriority: medium
 # Registry Values for Debugging WDF Drivers (KMDF and UMDF)
 
 
-This topic describes the registry values that a Windows Driver Frameworks (WDF) driver can set. It applies to Kernel-Mode Driver Framework (KMDF) drivers and User-Mode Driver Framework (UMDF) drivers starting with UMDF version 2.
+This article describes the registry values that a Windows Driver Frameworks (WDF) driver can set. It applies to Kernel-Mode Driver Framework (KMDF) drivers and User-Mode Driver Framework (UMDF) drivers starting with UMDF version 2.
 
 The following registry values can exist under a driver's **Parameters\\Wdf** subkey. For a KMDF driver, this subkey is located in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services**, under the driver's service name. For a UMDF driver, this subkey is located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services**, under the driver's service name. The subkey for the driver always uses the driver's service name, even if the driver binary's file name differs from the service name.
 
 <a href="" id="verifieron-----------------reg-dword-"></a>**VerifierOn** (**REG\_DWORD**)  
-Set to a nonzero value to enable [KMDF Verifier](using-kmdf-verifier.md), which extensively validates a driver's state and function parameters. You should set **VerifierOn** and **DbgBreakOnError** when you are developing your driver.
+Set to a nonzero value to enable [KMDF Verifier](using-kmdf-verifier.md), which extensively validates a driver's state and function parameters. You should set **VerifierOn** and **DbgBreakOnError** when you are developing your driver. Use the [AddService directive](../install/inf-addservice-directive.md) and the [AddReg directive](../install/inf-addreg-directive.md) to set these values in the Services section of the INF file, for example:
+
+```
+[xxx_Inst.NT.Services]
+AddService = xxx,%SPSVCINST_ASSOCSERVICE%,xxx_Service_Inst
+
+[xxx_Service_Inst]
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_BOOT_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+LoadOrderGroup = "Base"
+ServiceBinary = %12%\xxx.sys
+AddReg         = KMDFVerifierAddReg
+
+[KMDFVerifierAddReg]
+HKR, Parameters\Wdf,VerifierOn,0x00010001,1
+HKR, Parameters\Wdf,VerboseOn,0x00010001,1
+HKR, Parameters\Wdf,DbgBreakOnError,0x00010001,1
+```
 
 <a href="" id="verifyon-----------------reg-dword-"></a>**VerifyOn** (**REG\_DWORD**)  
 Set to a nonzero value to enable the [**WDFVERIFY**](https://msdn.microsoft.com/library/windows/hardware/ff551167) macro that is defined in Wdfassert.h, or set to zero to disable the macro. If the VerifierOn value is set, VerifyOn is implicitly set to nonzero.
 
 <a href="" id="dbgbreakonerror--reg-dword-"></a>**DbgBreakOnError** (**REG\_DWORD**)  
-If set to a nonzero value, the framework breaks into the debugger when a driver calls [**WdfVerifierDbgBreakPoint**](https://msdn.microsoft.com/library/windows/hardware/ff551164). (If the **VerifierOn** value is set, the framework breaks into the debugger even if the **DbgBreakOnError** value does not exist.)
+If set to a nonzero value, the framework breaks into the debugger when a driver calls [**WdfVerifierDbgBreakPoint**](https://msdn.microsoft.com/library/windows/hardware/ff551164). (If the **VerifierOn** value is set, the framework breaks into the debugger even if the **DbgBreakOnError** value does not exist.) See the code example above.
 
 <a href="" id="dbgwaitforsignaltimeoutinsec--reg-dword-"></a>**DbgWaitForSignalTimeoutInSec** (**REG\_DWORD**)  
 Starting in Windows 8, when **VerifierOn** and **DbgBreakOnError** are set to nonzero values, the driver can change the default timeout period for breaking into the debugger by setting **DbgWaitForSignalTimeoutInSec**.
@@ -39,10 +57,26 @@ Note that the verifier counts both the allocations that your driver requests and
 If set to a list of one or more type names of framework object handles, and if **VerifierOn** is set, the framework tracks references to all object handles that match the specified handle types. For example, if the handle type list consists of the "WDFREQUEST WDFQUEUE" string, the framework tracks references to all request objects and queue objects. If the list contains an asterisk ("\*"), the framework tracks all object handles.
 
 <a href="" id="verboseon-----------------reg-dword-"></a>**VerboseOn** (**REG\_DWORD**)  
-If set to a nonzero value, the framework's [event logger](using-the-framework-s-event-logger.md) records additional information that can help you debug your driver, such as entries into or exits from internal code paths. You should set this value only while you are developing your driver.
+If set to a nonzero value, the framework's [event logger](using-the-framework-s-event-logger.md) records additional information that can help you debug your driver, such as entries into or exits from internal code paths. You should set this value only while you are developing your driver. See the code example above.
 
 <a href="" id="logpages--reg-dword-"></a>**LogPages** (**REG\_DWORD**)  
-Set to the number of memory pages that the framework assigns to its event logger. If the value is undefined, the framework uses a default value of one page. The maximum value that you can set is 16 for computers that have 4-kilobyte-sized memory pages (x86 and amd64 processors) and 8 for computers that have 8-kilobyte-sized memory pages (ia64 processors). (The operating system might not write the log contents to a crash dump file if a large number of pages is specified.)
+Set to the number of memory pages that the framework assigns to its event logger. If the value is undefined, the framework uses a default value of one page. The maximum value that you can set is 16 for computers that have 4-kilobyte-sized memory pages (x86 and amd64 processors) and 8 for computers that have 8-kilobyte-sized memory pages (ia64 processors). (The operating system might not write the log contents to a crash dump file if a large number of pages is specified.) Use the [AddService directive](../install/inf-addservice-directive.md) and the [AddReg directive](../install/inf-addreg-directive.md) to set this value in your INF file, as follows:
+
+```
+[xxx.NT.Services]
+AddService = yyy, 2, zzz.AddService
+
+[zzz.AddService]
+DisplayName   = %aaa\bbb%
+ServiceType   = 1
+StartType     = 3
+ErrorControl  = 1
+ServiceBinary = %12%\ddd.SYS
+AddReg         = eee.AddReg
+
+[eee.AddReg]
+HKR, Parameters\Wdf, LogPages,   0x00010001, 3 ; KMDF IFR size
+```
 
 <a href="" id="forcelogsinminidump--reg-dword-"></a>**ForceLogsInMiniDump** (**REG\_DWORD**)  
 Set to a nonzero value to cause the framework to include information from its event logger in crash dump files.
@@ -87,7 +121,7 @@ If set to a nonzero value, the framework's loader sends a variety of messages to
 
 You can also set the following registry values in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\{193a1820-d9ac-4997-8c55-be817523f6aa}**. These values affect all UMDF drivers on the system.
 
-<a href="" id="hostprocessdbgbreakonstart--reg-dword-"></a>***<em>HostProcessDbgBreakOnStart</em>*** (**REG\_DWORD**)  
+<a href="" id="hostprocessdbgbreakonstart--reg-dword-"></a>**HostProcessDbgBreakOnStart** (**REG\_DWORD**)  
 Contains a delay value in seconds. During the specified delay period, the host process looks for the user-mode debugger once a second and breaks in if one is connected. If a user-mode debugger is not attached within this period and the high bit in **HostProcessDbgBreakOnStart** is set (0x80000000), the framework makes a single attempt to break into the kernel-mode debugger. For example:
 
 |            |                                                                                                                                                                                                                  |
@@ -99,7 +133,7 @@ Contains a delay value in seconds. During the specified delay period, the host p
 
  
 
-<a href="" id="hostprocessdbgbreakondriverload--reg-dword-"></a>***<em>HostProcessDbgBreakOnDriverLoad</em>*** (**REG\_DWORD**)  
+<a href="" id="hostprocessdbgbreakondriverload--reg-dword-"></a>**HostProcessDbgBreakOnDriverLoad** (**REG\_DWORD**)  
 Contains a delay value in seconds. Causes WUDFHost to delay the specified number of seconds after the driver has been loaded. The behavior for **HostProcessDbgBreakOnDriverLoad** is otherwise the same as that described for **HostProcessDbgBreakOnStart**.
 
 Specifying **HostProcessDbgBreakOnStart** or **HostProcessDbgBreakOnDriverLoad** causes the framework to disable other UMDF timeouts (for example, Plug and Play operations). This means that if your driver causes excessive timeouts, using these values might result in your driver causing a fatal crash on the target.

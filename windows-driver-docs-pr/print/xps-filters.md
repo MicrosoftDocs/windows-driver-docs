@@ -18,11 +18,11 @@ ms.localizationpriority: medium
 
 For the XPS print path, filters are the primary way that a driver prepares print data for the printer. In versions of the Microsoft Windows operating system before Windows Vista, print processors and rendering modules did the work of filters.
 
-An XPS filter is a DLL that exports [DllGetClassObject](http://go.microsoft.com/fwlink/p/?linkid=123418) and [DllCanUnloadNow](http://go.microsoft.com/fwlink/p/?linkid=123419) functions. The filter pipeline manager calls these functions when it loads and unloads the XPS filter DLL. After loading the filter DLL, the filter pipeline manager does the following:
+An XPS filter is a DLL that exports [DllGetClassObject](https://go.microsoft.com/fwlink/p/?linkid=123418) and [DllCanUnloadNow](https://go.microsoft.com/fwlink/p/?linkid=123419) functions. The filter pipeline manager calls these functions when it loads and unloads the XPS filter DLL. After loading the filter DLL, the filter pipeline manager does the following:
 
--   Calls **DllGetClassObject** to obtain a reference to the filter object's [IClassFactory](http://go.microsoft.com/fwlink/p/?linkid=123420) interface.
+-   Calls **DllGetClassObject** to obtain a reference to the filter object's [IClassFactory](https://go.microsoft.com/fwlink/p/?linkid=123420) interface.
 
--   Calls the [IClassFactory::CreateInstance](http://go.microsoft.com/fwlink/p/?linkid=123421) method to obtain a reference to the filter object's [IPrintPipelineFilter](https://msdn.microsoft.com/library/windows/hardware/ff554286) interface.
+-   Calls the [IClassFactory::CreateInstance](https://go.microsoft.com/fwlink/p/?linkid=123421) method to obtain a reference to the filter object's [IPrintPipelineFilter](https://msdn.microsoft.com/library/windows/hardware/ff554286) interface.
 
 -   Calls the [**IPrintPipelineFilter::InitializeFilter**](https://msdn.microsoft.com/library/windows/hardware/ff554291) method to initialize the filter object.
 

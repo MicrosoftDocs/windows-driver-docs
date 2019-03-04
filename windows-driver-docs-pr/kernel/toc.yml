@@ -1090,6 +1090,8 @@
       - name: "Overview of the Power Management Framework"
         href: overview-of-the-power-management-framework.md
         items: 
+        - name: "Device power management reference"
+          href: device-power-management-reference.md
         - name: "Component-Level Power Management"
           href: component-level-power-management.md
         - name: "Component-Level Performance State Management"

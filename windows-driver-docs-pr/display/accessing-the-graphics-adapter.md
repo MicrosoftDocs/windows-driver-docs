@@ -21,7 +21,7 @@ To ensure display performance, display drivers can access the graphics card in t
 
 -   Indirectly--by sending IOCTLs to the video miniport driver of the graphics adapter. See [Communicating IOCTLs to the Video Miniport Driver](communicating-ioctls-to-the-video-miniport-driver.md).
 
--   Directly--by reading and writing to video memory (the [*frame buffer*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-frame-buffer)) or hardware registers. See [Accessing the Frame Buffer and Hardware Registers](accessing-the-frame-buffer-and-hardware-registers.md).
+-   Directly--by reading and writing to video memory (the *frame buffer*) or hardware registers. See [Accessing the Frame Buffer and Hardware Registers](accessing-the-frame-buffer-and-hardware-registers.md).
 
  
 

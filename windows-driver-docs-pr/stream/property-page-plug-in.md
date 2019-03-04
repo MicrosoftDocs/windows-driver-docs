@@ -16,7 +16,7 @@ You can provide a user interface to device properties by writing a property page
 
 Next, declare the factory template for your filter. A factory template is a C++ class that contains information for the class factory.
 
-In your DLL, declare a global array of [CFactoryTemplate](http://go.microsoft.com/fwlink/p/?linkid=106450)objects, one for each filter or COM component in your DLL. If you only have one property page, create only one object in the array.
+In your DLL, declare a global array of [CFactoryTemplate](https://go.microsoft.com/fwlink/p/?linkid=106450)objects, one for each filter or COM component in your DLL. If you only have one property page, create only one object in the array.
 
 For each object, generate a GUID for the class identifier (CLSID) and provide an entry in the declaration.
 
@@ -35,7 +35,7 @@ CFactoryTemplate g_Templates[] =
 };
 ```
 
-Your property page should derive from the class [CBasePropertyPage](http://go.microsoft.com/fwlink/p/?linkid=106449) and should override several of the methods of **CBasePropertyPage**:
+Your property page should derive from the class [CBasePropertyPage](https://go.microsoft.com/fwlink/p/?linkid=106449) and should override several of the methods of **CBasePropertyPage**:
 
 ```cpp
 class CMyPropPage: public CBasePropertyPage
@@ -56,7 +56,7 @@ private:
 };
 ```
 
-To initialize the property page, the hosting property sheet calls [IPropertyPage::SetPageSite](http://go.microsoft.com/fwlink/p/?linkid=106442). This call results in a call of the plug-in's **OnConnect** method. At the time of this call, the property page has been connected to the filter, but the property page has not yet been displayed.
+To initialize the property page, the hosting property sheet calls [IPropertyPage::SetPageSite](https://go.microsoft.com/fwlink/p/?linkid=106442). This call results in a call of the plug-in's **OnConnect** method. At the time of this call, the property page has been connected to the filter, but the property page has not yet been displayed.
 
 The parameter provided in the call to **OnConnect** is the interface to KS proxy, which can then be queried for a pointer to **IKsPropertySet**. You can then call [**IKsPropertySet::Get**](https://msdn.microsoft.com/library/windows/hardware/ff560719) and [**IKsPropertySet::Set**](https://msdn.microsoft.com/library/windows/hardware/ff560721) to manipulate the exposed properties of the driver.
 

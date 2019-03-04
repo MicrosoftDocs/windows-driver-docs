@@ -163,12 +163,12 @@ WDK 8.1 Update has tools to build, test, debug, and deploy drivers for Windows 8
 ## ![download icon](images/download-install.png) WinDbg for Windows 8.1
 Debugging Tools for Windows (WinDbg) are included in the WDK 8.1 Update, but you can also install them as a standalone component from the Windows 8.1 SDK. In the installation wizard, select Debugging Tools for Windows, and clear all other components. 
 
-* [Get (WinDbg) as part of Windows 8.1 SDK](https://www.microsoft.com/click/services/Redirect2.ashx?CR_EAC=300135395) (English only)
+* [Get (WinDbg) as part of Windows 8.1 SDK](https://go.microsoft.com/fwlink/p/?LinkId=323507) (English only)
 
 ## ![download icon](images/download-install.png) Remote Debugging client for Windows 8.1
 With the Windows Remote Debugging client, you can work remotely with developers from Microsoft, over the internet, to debug kernel-mode failures using the kernel debugger. 
-* [Learn more and prepare for remote debugging.](https://docs.microsoft.com/windows-hardware/drivers/dashboard/remote-debugging)
-* [Download the Remote Debugging client](http://go.microsoft.com/fwlink/p/?LinkId=316921) (English only)  
+* [Learn more and prepare for remote debugging.](https://docs.microsoft.com/windows-hardware/drivers/debugger/remote-debugging)
+* [Download the Remote Debugging client](https://go.microsoft.com/fwlink/p/?LinkId=316921) (English only)  
 
 ## ![download icon](images/download-install.png) WDK 8
 WDK 8 enables you to migrate earlier drivers to WDK 8.1 Update and Visual Studio 2013. Microsoft does not support WDK 8 and will make no further updates to this kit. You should use the latest versions of the WDK and Visual Studio to build drivers for Windows. 

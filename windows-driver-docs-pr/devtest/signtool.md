@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # SignTool
 
 
-SignTool (Signtool.exe) is a command-line [CryptoAPI](http://go.microsoft.com/fwlink/p/?linkid=136391) tool that digitally-signs files, verifies signatures in files, and time stamps files.
+SignTool (Signtool.exe) is a command-line [CryptoAPI](https://go.microsoft.com/fwlink/p/?linkid=136391) tool that digitally-signs files, verifies signatures in files, and time stamps files.
 
 ```
     SignTool [Operation] [Options] [FileName ...]
@@ -250,9 +250,9 @@ For the **catdb** command, a file must be a catalog file for a [driver package](
 
 SignTool supports a large number of options. The options described in this topic are limited to the ones that you can use to sign or verify a driver package or driver file.
 
-For a complete list of SignTool parameters, see the Microsoft [SignTool](http://go.microsoft.com/fwlink/p/?linkid=62661) website.
+For a complete list of SignTool parameters, see the Microsoft [SignTool](https://go.microsoft.com/fwlink/p/?linkid=62661) website.
 
-For more information about signing files, see the Microsoft [Cryptography Tools](http://go.microsoft.com/fwlink/p/?linkid=10637) website.
+For more information about signing files, see the Microsoft [Cryptography Tools](https://go.microsoft.com/fwlink/p/?linkid=10637) website.
 
 A 32-bit version of SignTool is located in the bin\\i386 folder of the WDK. A 64-bit version of the tool is located in the bin\\amd64 and bin\\ia64 folders of the WDK.
 
@@ -272,7 +272,7 @@ The following is an example of how to embed a signature in a driver file using a
 SignTool sign /ac AbcCrossCertificate.cer /s AbcCertificateStore /n AbcSPCCertificate /t http://timestamp.verisign.com/scripts/timstamp.dll AbcDriverFile.sys
 ```
 
-The following is an example of how to sign a [driver package's](https://msdn.microsoft.com/library/windows/hardware/ff544840) catalog file using a [commercial release certificate](https://msdn.microsoft.com/library/windows/hardware/ff539935) or a [commercial test certificate](https://msdn.microsoft.com/library/windows/hardware/ff539940). This example is valid for signing a driver package for 32-bit versions of Windows Vistaand later versions of Windows, which do not enforce the kernel-mode code signing policy. The example signs the driver package's catalog file CatalogFileName.cat. The example uses the AbcTestCertificate test certificate, located in the TestCertificateStore certificate store, to sign the catalog file.
+The following is an example of how to sign a [driver package's](https://msdn.microsoft.com/library/windows/hardware/ff544840) catalog file using a [commercial release certificate](https://msdn.microsoft.com/library/windows/hardware/ff539935) or a [commercial test certificate](https://msdn.microsoft.com/library/windows/hardware/ff539940). This example is valid for signing a driver package for 32-bit versions of Windows Vista and later versions of Windows, which do not enforce the kernel-mode code signing policy. The example signs the driver package's catalog file CatalogFileName.cat. The example uses the AbcTestCertificate test certificate, located in the TestCertificateStore certificate store, to sign the catalog file.
 
 The example also uses a publicly-available timestamp server to sign the catalog file. The timestamp server is provided by VeriSign and its URL is http://timestamp.verisign.com/scripts/timstamp.dll.
 

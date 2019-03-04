@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 To add VRAM capture support to an existing pin-centric AVStream driver that uses DMA, follow these steps.
 
-1.  Add VRAM capture support to your [*AVStrMiniPinProcess*](https://msdn.microsoft.com/library/windows/hardware/ff556351) callback routine. The **CCapturePin::Process** method in *Capture.cpp* of the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083) shows one way to do this.
+1.  Add VRAM capture support to your [*AVStrMiniPinProcess*](https://msdn.microsoft.com/library/windows/hardware/ff556351) callback routine. The **CCapturePin::Process** method in *Capture.cpp* of the [AVStream Simulated Hardware Sample Driver (AVSHwS)](https://go.microsoft.com/fwlink/p/?linkid=256083) shows one way to do this.
 
 2.  Handle VRAM capture property requests as described earlier in this section.
 

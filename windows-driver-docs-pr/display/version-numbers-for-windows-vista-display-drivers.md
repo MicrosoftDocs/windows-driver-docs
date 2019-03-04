@@ -69,7 +69,7 @@ This table gives the range of version numbers that are appropriate for vendor-su
 
  
 
-For more information about versioning for display drivers, see [Version Numbers for Display Drivers](version-numbers-for-display-drivers.md).
+For more information about versioning for display drivers, see [Version Numbers for Display Drivers](version-numbers-for-display-drivers.md) and [Driver Versioning](wddm-2-1-features.md#driver-versioning).
 
  
 

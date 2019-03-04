@@ -47,7 +47,7 @@ To find all keyboard products for Windows 8.1 x64, follow these steps:
 
 A list of keyboard products for Windows 8.1 x64 is returned. You can sort this list by **Product name**, **Company**, or **Certifications** by clicking the appropriate heading.
 
-You can also filter by feature by using the **Select a feature or AQ** list. The values in this list correspond to the features in the [Windows Hardware Compatibility Program Requirements](http://go.microsoft.com/fwlink/p/?LinkID=219232).
+You can also filter by feature by using the **Select a feature or AQ** list. The values in this list correspond to the features in the [Windows Hardware Compatibility Program Requirements](https://go.microsoft.com/fwlink/p/?LinkID=219232).
 
 ## To sort your results
 

@@ -39,33 +39,33 @@ Windows operating system, Microsoft Windows Driver Kit (WDK), and Driver Develop
 | Windows NT 4.0 SP3 | Windows NT DDK with updated NDIS header and library | 4.1 | X | X | X |
 | Windows 2000 | Windows 2000 DDK | 5.0 | X | X | X |
 |  |  | Added support for: <ul><li>New INF file format compatible with Windows 95/98/Me</li><li>Plug and Play and Power Management</li><li>WMI</li><li>LBFO</li><li>Scatter/gather DMA support for deserialized miniport drivers</li></ul> |
-| Windows XP | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721) | 5.1 | X | X | X |
+| Windows XP | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721) | 5.1 | X | X | X |
 |  |  | Added support for: <ul><li>[**MiniportCancelSendPackets**](https://msdn.microsoft.com/library/windows/hardware/ff549359)</li><li>[**MiniportPnPEventNotify**](https://msdn.microsoft.com/library/windows/hardware/ff550487)</li><li>[**MiniportShutdown**](https://msdn.microsoft.com/library/windows/hardware/ff550533)</li><li>[**NdisCancelSendPackets**](https://msdn.microsoft.com/library/windows/hardware/ff550821)</li><li>[**NdisCopyFromPacketToPacketSafe**](https://msdn.microsoft.com/library/windows/hardware/ff551071)</li><li>[**NdisGeneratePartialCancelId**](https://msdn.microsoft.com/library/windows/hardware/ff562623)</li><li>[**NdisGetFirstBufferFromPacketSafe**](https://msdn.microsoft.com/library/windows/hardware/ff552066)</li><li>[**NdisGetPoolFromPacket**](https://msdn.microsoft.com/library/windows/hardware/ff552090)</li><li>[**NdisGetSharedDataAlignment**](https://msdn.microsoft.com/library/windows/hardware/ff562671)</li><li>[**NdisIMGetCurrentPacketStack**](https://msdn.microsoft.com/library/windows/hardware/ff552155)</li><li>[**NdisIMNotifyPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff552203)</li><li>[**NdisQueryPendingIOCount**](https://msdn.microsoft.com/library/windows/hardware/ff554456)</li><li>[**NDIS\_GET\_PACKET\_CANCEL\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff556988)</li><li>[**NDIS\_SET\_PACKET\_CANCEL\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff557195)</li><li>[OID\_GEN\_MACHINE\_NAME](https://msdn.microsoft.com/library/windows/hardware/ff569596)</li><li>New miniport driver attribute flags</li><li>64-bit statistical counters</li><li>Remote NDIS</li><li>Scatter/gather support for both serialized and deserialized miniport drivers</li><li>Packet stacking for intermediate drivers</li><li>VLAN tagging</li><li>Offloading the Processing of UDP-Encapsulated ESP Packets (Windows Server 2003 only)</li><li>Wi-Fi Protected Access (WPA) in Windows XP SP1</li></ul> |
 |  |  | Dropped support for: <ul><li>Full Mac drivers</li><li>NDIS 3.0 protocols</li><li>**NdisQueryMapRegisterCount**</li><li>EISA bus</li></ul> |
-| Windows Vista | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721) | 6.0 | X | X | X |
+| Windows Vista | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721) | 6.0 | X | X | X |
 |  |  | Major improvements in the following provide significant performance gains for both clients and servers: <ul><li>Network data packaging</li><li>Send and receive paths</li><li>Run-time reconfiguration capabilities</li><li>Scatter/gather DMA</li><li>Filter drivers</li><li>Multiprocessor scaling of received data handling</li><li>Offloading TCP tasks to NICs</li></ul> |
 |  |  | The following improvements simplify driver development: <ul><li>Streamlined driver initialization</li><li>Versioning support for NDIS interfaces</li><li>Simplified reset handling</li><li>A standard interface for obtaining management information</li><li>A filter driver model to replace filter intermediate drivers</li></ul> |
 |  |  | For more information about NDIS 6.0 features, see [Introduction to NDIS 6.0](introduction-to-ndis-6-0.md). |
-|  |  | For information about backward compatibility and obsolete features that are not supported in NDIS 6.0 drivers, see [NDIS 6.0 Backward Compatibility](ndis-6-0-backward-compatibility.md). |
-| Windows Vista with Service Pack 1 (SP1) and Windows Server 2008 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.1 | X | X | X |
+|  |  | For information about backward compatibility and obsolete features that are not supported in NDIS 6.0 drivers, see [NDIS 6.0 Backward Compatibility](https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-backward-compatibility). |
+| Windows Vista with Service Pack 1 (SP1) and Windows Server 2008 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.1 | X | X | X |
 |  |  | For information about NDIS 6.1 features, see [Introduction to NDIS 6.1](introduction-to-ndis-6-1.md). |
-| Windows 7 and Windows Server 2008 R2 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.20 | X | X | X |
+| Windows 7 and Windows Server 2008 R2 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.20 | X | X | X |
 |  |  | For information about NDIS 6.20 features, see [Introduction to NDIS 6.20](introduction-to-ndis-6-20.md). |
 |  |  | For information about backward compatibility and obsolete features that are not supported in NDIS 6.20 drivers, see [NDIS 6.20 Backward Compatibility](ndis-6-20-backward-compatibility.md). |
-| Windows 8 and Windows Server 2012 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.30 | X | X | X |
+| Windows 8 and Windows Server 2012 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.30 | X | X | X |
 |  |  | For information about NDIS 6.30 features, see [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md). |
-| Windows 8.1 and Windows Server 2012 R2 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.40 | X | X | X |
+| Windows 8.1 and Windows Server 2012 R2 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.40 | X | X | X |
 |  |  | For information about NDIS 6.40 features, see [Introduction to NDIS 6.40](introduction-to-ndis-6-40.md). |
-| Windows 10, version 1507 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.50 | X | X | X |
+| Windows 10, version 1507 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.50 | X | X | X |
 |   |   | For more information about NDIS 6.50 features, see [Introduction to NDIS 6.50](introduction-to-ndis-6-50.md). | 
-| Windows 10, version 1511 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.51 | X | X | X |
-| Windows 10, version 1607 and Windows Server 2016 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.60 | X | X | X |
+| Windows 10, version 1511 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.51 | X | X | X |
+| Windows 10, version 1607 and Windows Server 2016 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.60 | X | X | X |
 |   |   | For more information about NDIS 6.60 features, see [Introduction to NDIS 6.60](introduction-to-ndis-6-60.md). | 
-| Windows 10, version 1703 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.70 | X | X | X |
+| Windows 10, version 1703 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.70 | X | X | X |
 |   |   | NDIS 6.70 coincided with a preview release of the Network Adapter WDF Class Extension, a.k.a. [NetAdapterCx](../netcx/index.md).<p>For more information about NDIS 6.70 features, see [Introduction to NDIS 6.70](introduction-to-ndis-6-70.md).</p> |
-| Windows 10, version 1709 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.80 | X | X | X |
+| Windows 10, version 1709 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.80 | X | X | X |
 |   |   | For more information about NDIS 6.80 features, see [Introduction to NDIS 6.80](introduction-to-ndis-6-80.md). | 
-| Windows 10, version 1803 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.81 | X | X | X |
+| Windows 10, version 1803 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.81 | X | X | X |
 |   |   | For more information about NDIS 6.81 features, see [Introduction to NDIS 6.81](introduction-to-ndis-6-81.md). |
-| Windows 10, version 1809 | See [Download kits for Windows hardware development](http://go.microsoft.com/fwlink/p/?linkid=239721). | 6.82 | X | X | X |
+| Windows 10, version 1809 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.82 | X | X | X |
 |   |   | For more information about NDIS 6.82 features, see [Introduction to NDIS 6.82](introduction-to-ndis-6-82.md). |

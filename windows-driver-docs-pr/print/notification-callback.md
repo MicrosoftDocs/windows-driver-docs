@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-Any print component or listening application that is interested in receiving notifications must provide objects that expose the [IPrintAsyncNotifyCallback](http://go.microsoft.com/fwlink/p/?linkid=124755) interface. The interface inherits from **IUnknown** so that the clients of the spooler notification mechanism can implement either a COM or a C++ object.
+Any print component or listening application that is interested in receiving notifications must provide objects that expose the [IPrintAsyncNotifyCallback](https://go.microsoft.com/fwlink/p/?linkid=124755) interface. The interface inherits from **IUnknown** so that the clients of the spooler notification mechanism can implement either a COM or a C++ object.
 
 A listening application must provide a pointer to an **IPrintAsyncNotifyCallback** interface when it registers to receive notifications. The notification sender must provide a pointer to an **IPrintAsyncNotifyCallback** interface if it is interested in a response and it creates a bidirectional channel.
 
@@ -54,9 +54,9 @@ DECLARE_INTERFACE_(IPrintAsyncNotifyCallback, IUnknown)
 };
 ```
 
-When a notification is sent from one end of the channel, the spooler service calls the [IPrintAsyncNotifyCallback::OnEventNotify](http://go.microsoft.com/fwlink/p/?linkid=124757) method at the other end of the channel to deliver the notification.
+When a notification is sent from one end of the channel, the spooler service calls the [IPrintAsyncNotifyCallback::OnEventNotify](https://go.microsoft.com/fwlink/p/?linkid=124757) method at the other end of the channel to deliver the notification.
 
-When the notification channel is closed at one end, the spooler service calls the [IPrintAsyncNotifyCallback::ChannelClosed](http://go.microsoft.com/fwlink/p/?linkid=124756) method at the other end to announce that the channel is closed. The reason for closing the channel is delivered as a notification.
+When the notification channel is closed at one end, the spooler service calls the [IPrintAsyncNotifyCallback::ChannelClosed](https://go.microsoft.com/fwlink/p/?linkid=124756) method at the other end to announce that the channel is closed. The reason for closing the channel is delivered as a notification.
 
 If either the server or the listening application dies, the spooler rundown code detects this condition and the "still alive" end of the channel that is still alive is notified by a **IPrintAsyncNotifyCallback::ChannelClosed** call, in which a NOTIFICATION\_RELEASE message is delivered.
 

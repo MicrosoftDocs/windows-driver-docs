@@ -27,11 +27,11 @@ This section provides the basic steps that you have to follow when you release-s
 
 -   Release-signing the driver package's catalog file.
 
--   Release-signing a driver through an embedded signature. You have to embed a digital signature within the driver if the driver is a [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver).
+-   Release-signing a driver through an embedded signature. You have to embed a digital signature within the driver if the driver is a *boot-start driver*.
 
 Each topic in this section describes a separate procedure in the release-signing process, and provides the general information that you have to understand about the procedure. In addition, each topic points you to other topics that provide detailed information about the procedure.
 
-**Note**  This section discusses the steps involved when a driver publisher has to manually release-sign a driver package. The [Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=227016) has [test categories](http://go.microsoft.com/fwlink/p/?linkid=189178) for a variety of device types. If a test category for the device type is included in this list, the driver publisher should obtain a [WHQL release signature](whql-release-signature.md) for the driver package instead of manually release-signing the driver package.
+**Note**  This section discusses the steps involved when a driver publisher has to manually release-sign a driver package. The [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) has [test categories](https://go.microsoft.com/fwlink/p/?linkid=189178) for a variety of device types. If a test category for the device type is included in this list, the driver publisher should obtain a [WHQL release signature](whql-release-signature.md) for the driver package instead of manually release-signing the driver package.
 
  
 

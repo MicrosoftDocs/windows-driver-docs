@@ -33,7 +33,7 @@ The name of the Trusted Root Certification Authorities certificate store is *roo
 
  
 
-For more information about certificate stores, see the [Code Signing Best Practices](http://go.microsoft.com/fwlink/p/?linkid=68250) website.
+For more information about certificate stores, see [Driver Signing Changes in Windows 10, version 1607](https://blogs.msdn.microsoft.com/windows_hardware_certification/2016/07/26/driver-signing-changes-in-windows-10-version-1607/) and [Driver Signing Policy](https://docs.microsoft.com/windows-hardware/drivers/install/kernel-mode-code-signing-policy--windows-vista-and-later-).
 
  
 

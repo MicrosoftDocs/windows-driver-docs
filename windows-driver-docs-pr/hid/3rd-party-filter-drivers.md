@@ -99,7 +99,7 @@ I8042prt supports the following callbacks that an upper-level device filter driv
 A write port callback for a device writes to the i8042 port at the IRQL of the device's ISR.
 
 <a href="" id="pi8042-queue-packet"></a>[**PI8042\_QUEUE\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff543263)  
-A queue packet callback for a device queues an input data packet for processing by the device's ISR [*DPC*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-deferred-procedure-call--dpc-).
+A queue packet callback for a device queues an input data packet for processing by the device's ISR *DPC*.
 
 <a href="" id="pi8042-synch-read-port"></a>[**PI8042\_SYNCH\_READ\_PORT**](https://msdn.microsoft.com/library/windows/hardware/ff543272)  
 This callback can be used in a [**PI8042\_KEYBOARD\_INITIALIZATION\_ROUTINE**](https://msdn.microsoft.com/library/windows/hardware/ff543243) callback. I8042prt specifies the read port callback in the *ReadPort* parameter that I8042prt inputs to a keyboard initialization routine.

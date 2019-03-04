@@ -33,7 +33,7 @@ Below is a short summary of how devices should behave during the connected stand
 
  
 
-For more information about connected standby please refer to the [Understanding Connected Standby](http://go.microsoft.com/fwlink/p/?linkid=241608) video.
+For more information about connected standby please refer to the [Understanding Connected Standby](https://go.microsoft.com/fwlink/p/?linkid=241608) video.
 
 ### <a href="" id="supporting-connected-standby-in-hid-i2c-devices"></a>Supporting connected standby in HID I²C Devices
 

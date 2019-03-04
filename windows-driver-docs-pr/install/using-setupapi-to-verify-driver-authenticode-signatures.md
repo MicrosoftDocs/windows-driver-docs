@@ -33,7 +33,7 @@ If a driver has a valid Authenticode signature, Windows sets this flag in the **
 
 2.  Check the error code that was returned by the function.
 
-    If the INF file is not system-supplied and does not have a valid WHQL digital signature, but it does have a valid Authenticode signature, **SetupVerifyInfFile** returns **FALSE** and [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) returns one of the following error codes:
+    If the INF file is not system-supplied and does not have a valid WHQL digital signature, but it does have a valid Authenticode signature, **SetupVerifyInfFile** returns **FALSE** and [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) returns one of the following error codes:
 
     <a href="" id="error-authenticode-trusted-publisher"></a>ERROR_AUTHENTICODE_TRUSTED_PUBLISHER  
     Indicates that the publisher is trusted because the publisher's certificate is installed in the [Trusted Publishers certificate store](trusted-publishers-certificate-store.md).

@@ -28,7 +28,7 @@ If your driver creates multiple framework queue objects for each device, you mig
 
 Drivers typically complete I/O requests in their [*OnInterruptWorkItem*](https://msdn.microsoft.com/library/windows/hardware/hh463905) or [*OnWorkItem*](https://msdn.microsoft.com/library/windows/hardware/hh463909) callback functions.
 
-For an example of a UMDF driver that handles interrupts, see the [SpbAccelerometer](http://go.microsoft.com/fwlink/p/?linkid=256189) sample driver, available starting in the Windows 8 WDK.
+For an example of a UMDF driver that handles interrupts, see the [SpbAccelerometer](https://go.microsoft.com/fwlink/p/?linkid=256189) sample driver, available starting in the Windows 8 WDK.
 
  
 

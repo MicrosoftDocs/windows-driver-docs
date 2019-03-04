@@ -13,7 +13,7 @@ After the test certificate is copied to the Trusted Root Certification Authoriti
 
 -   Verify the signature of a specified file in a [driver package's](driver-packages.md) [catalog files](catalog-files.md).
 
--   Verify the embedded signature of a kernel-mode binary file, such as a [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver).
+-   Verify the embedded signature of a kernel-mode binary file, such as a *boot-start driver*.
 
 The following example verifies the signature for one of the files, *toastpkg.inf*, in the Toastpkg sample's signed catalog file, *tstamd64.cat*. For more information about how this catalog file was created, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md):
 

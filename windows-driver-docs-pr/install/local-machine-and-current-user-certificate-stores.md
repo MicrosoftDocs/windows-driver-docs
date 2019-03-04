@@ -21,7 +21,7 @@ Each of the system certificate stores has the following types:
 
 For specific registry locations of certicate stores, see [System Store Locations](https://docs.microsoft.com/windows/desktop/seccrypto/system-store-locations).
 
-Be aware that all current user certificate stores inherit the contents of the local machine certificate stores. For example, if a certificate is added to the local machine [Trusted Root Certification Authorities certificate store](trusted-root-certification-authorities-certificate-store.md), all current user Trusted Root Certification Authorities certificate stores also contain the certificate.
+Be aware that all current user certificate stores *except the Current User/Personal store* inherit the contents of the local machine certificate stores. For example, if a certificate is added to the local machine [Trusted Root Certification Authorities certificate store](trusted-root-certification-authorities-certificate-store.md), all current user Trusted Root Certification Authorities certificate stores (with the above caveat) also contain the certificate.
 
 >[!NOTE]
 >The driver signing verification during Plug and Play (PnP) installation requires that root and Authenticode certificates, including [test certificates](test-certificates.md), are located in a local machine certificate store.

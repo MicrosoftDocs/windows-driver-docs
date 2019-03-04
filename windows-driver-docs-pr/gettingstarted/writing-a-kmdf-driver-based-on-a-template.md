@@ -15,7 +15,7 @@ This topic describes how to write a [Universal Windows driver](https://msdn.micr
 
 To get started, be sure you have [Microsoft Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=698539) and the [Windows Driver Kit (WDK) 10](https://go.microsoft.com/fwlink/p/?LinkId=733614) installed.
 
-[Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
+[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
 
 ## <span id="Create_and_build_a_driver_package"></span><span id="create_and_build_a_driver_package"></span><span id="CREATE_AND_BUILD_A_DRIVER_PACKAGE"></span>Create and build a driver package
 
@@ -51,7 +51,7 @@ To get started, be sure you have [Microsoft Visual Studio 2015](https://go.micr
 ## <span id="Deploy_the_driver"></span><span id="deploy_the_driver"></span><span id="DEPLOY_THE_DRIVER"></span>Deploy the driver
 
 
-Typically when you test and debug a driver, the debugger and driver run on separate computers. The computer that runs the debugger is called the *host computer*, and the computer that runs the driver is called the *target computer*. The target computer is also called the *test computer*. For more information about debugging drivers, see [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405).
+Typically when you test and debug a driver, the debugger and driver run on separate computers. The computer that runs the debugger is called the *host computer*, and the computer that runs the driver is called the *target computer*. The target computer is also called the *test computer*. For more information about debugging drivers, see [Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405).
 
 So far you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. 
 
@@ -74,7 +74,7 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
     ![screen shot of the kmdfdriver package property pages window, showing deployment driver install selected](images/vs2015-kmdfdriver-property-pages.png)
 
     > [!NOTE]
-    > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](http://go.microsoft.com/fwlink/p?linkid=399236) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfDriver &gt; Driver Files** and double-click KmdfDriver.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
+    > In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](https://go.microsoft.com/fwlink/p?linkid=399236) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**. You'll see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **KmdfDriver &gt; Driver Files** and double-click KmdfDriver.inf. The hardware ID is located under \[Standard.NT$ARCH$\].
 
     ```C++
     [Standard.NT$ARCH$]
@@ -130,10 +130,10 @@ Now that you have installed your KMDF driver on the target computer, you'll atta
 
 4. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
 
-    -   [lm](http://go.microsoft.com/fwlink/p?linkid=399236)
-    -   [.sympath](http://go.microsoft.com/fwlink/p?linkid=399238)
-    -   [.reload](http://go.microsoft.com/fwlink/p?linkid=399239)
-    -   [x KmdfHelloWorld!\*](http://go.microsoft.com/fwlink/p?linkid=399240)
+    -   [lm](https://go.microsoft.com/fwlink/p?linkid=399236)
+    -   [.sympath](https://go.microsoft.com/fwlink/p?linkid=399238)
+    -   [.reload](https://go.microsoft.com/fwlink/p?linkid=399239)
+    -   [x KmdfHelloWorld!\*](https://go.microsoft.com/fwlink/p?linkid=399240)
 
 5. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
 6. To stop the debugging session, choose **Detach Debuggee** from the **Debug** menu.
@@ -148,9 +148,9 @@ For more information about remote debugging, see [Remote Debugging Using WinDbg]
 ## <span id="related_topics"></span>Related topics
 
 
-[Developing, Testing, and Deploying Drivers](http://go.microsoft.com/fwlink/p?linkid=399234)
+[Developing, Testing, and Deploying Drivers](https://go.microsoft.com/fwlink/p?linkid=399234)
 
-[Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405)
+[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405)
 
 [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)
 

@@ -20,7 +20,7 @@ The following sequence shows the order in which TMM calls the methods of [IViewH
 
 2.  TMM compares display configuration against the previously recorded display configurations.
 
-3.  If the display configuration has one or two monitors with Extended Display Information Data ([*EDID*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-edid)) that TMM has not encountered before, TMM proceeds to bring up the TMM dialog.
+3.  If the display configuration has one or two monitors with Extended Display Information Data (*EDID*) that TMM has not encountered before, TMM proceeds to bring up the TMM dialog.
 
 4.  For each adapter in the display configuration, TMM makes calls to the [**IViewHelper::GetConnectedIDs**](https://msdn.microsoft.com/library/windows/hardware/ff568171) method to retrieve all of the sources on the adapter whether the sources are mapped or not.
 

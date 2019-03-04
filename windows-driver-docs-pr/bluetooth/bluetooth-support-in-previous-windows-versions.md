@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 
 **Note**  
-Looking for drivers for your Bluetooth audio device? See [Fix connections to Bluetooth audio devices and wireless displays](http://go.microsoft.com/fwlink/p/?LinkID=623629).
+Looking for drivers for your Bluetooth audio device? See [Fix connections to Bluetooth audio devices and wireless displays](https://go.microsoft.com/fwlink/p/?LinkID=623629).
 
  
 
@@ -406,7 +406,7 @@ Windows included in-box support for the following Bluetooth profiles:
 ## <span id="Windows_Phone_8_PICS_report"></span><span id="windows_phone_8_pics_report"></span><span id="WINDOWS_PHONE_8_PICS_REPORT"></span>Windows Phone 8 PICS report
 
 
-The Profile/Protocol Implementation Conformance Statements (PICS) report for Windows Phone 8 is available from the Bluetooth SIG [PICS values](http://go.microsoft.com/fwlink/p/?LinkId=246801) webpage.
+The Profile/Protocol Implementation Conformance Statements (PICS) report for Windows Phone 8 is available from the Bluetooth SIG [PICS values](https://go.microsoft.com/fwlink/p/?LinkId=246801) webpage.
 
 ## <span id="Do_users_have_to_re-pair_their_Bluetooth_devices_after_they_upgrade_a_system_to_Windows_8.1_"></span><span id="do_users_have_to_re-pair_their_bluetooth_devices_after_they_upgrade_a_system_to_windows_8.1_"></span><span id="DO_USERS_HAVE_TO_RE-PAIR_THEIR_BLUETOOTH_DEVICES_AFTER_THEY_UPGRADE_A_SYSTEM_TO_WINDOWS_8.1_"></span>Do users have to re-pair their Bluetooth devices after they upgrade a system to Windows 8.1?
 

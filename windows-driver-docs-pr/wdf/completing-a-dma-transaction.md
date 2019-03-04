@@ -29,7 +29,7 @@ When the return value is **TRUE**, no more transfers are needed for the DMA tran
 
 If the driver calls [**WdfRequestCompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549948), it typically first calls [**WdfDmaTransactionGetBytesTransferred**](https://msdn.microsoft.com/library/windows/hardware/ff547072) to obtain the total length (number of bytes) of all of the transaction's transfers.
 
-These steps are illustrated in the following code example, taken from the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample’s [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function in the *Isrdpc.c* file:
+These steps are illustrated in the following code example, taken from the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample’s [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function in the *Isrdpc.c* file:
 
 ```cpp
 if (readComplete) {

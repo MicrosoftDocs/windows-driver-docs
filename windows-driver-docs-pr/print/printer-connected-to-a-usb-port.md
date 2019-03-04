@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-When a Universal Serial Bus (USB) printer is connected over a USB port, the USB bus driver creates a physical device object (PDO) with a [*hardware ID*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-id) of the form VIDvvPIDpp, and [*compatible ID*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-compatible-id) Class\_7. The [*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode) for this is created under Enum\\USB\\ ...Class\_7 and identifies a printer device connected over a USB port. Plug and Play loads usbprint.sys using a compatible ID match on Class\_7 from usbprint.inf.
+When a Universal Serial Bus (USB) printer is connected over a USB port, the USB bus driver creates a physical device object (PDO) with a *hardware ID* of the form VIDvvPIDpp, and *compatible ID* Class\_7. The *devnode* for this is created under Enum\\USB\\ ...Class\_7 and identifies a printer device connected over a USB port. Plug and Play loads usbprint.sys using a compatible ID match on Class\_7 from usbprint.inf.
 
 The entry from usbprint.inf that is used to load usbprint.sys for any USB printer device is:
 

@@ -19,10 +19,10 @@ The following table shows the release history of the KMDF library:
 
 |KMDF version|Release method|Included in this version of Windows|Drivers using it run on|
 |--- |--- |--- |--- |
-|1.27|Windows 10, version 1809 WDK|Windows 10, version 1809 (October 2018 Update, Redstone 5)|Windows 10, version 1809|
-|1.25|Windows 10, version 1803 WDK|Windows 10, version 1803 (April 2018 Update, Redstone 4)|Windows 10, version 1803|
-|1.23|Windows 10, version 1709 WDK|Windows 10, version 1709 (Fall Creators Update, Redstone 3)|Windows 10, version 1709|
-|1.21|Windows 10, version 1703 WDK|Windows 10, version 1703 (Creators Update, Redstone 2)|Windows 10, version 1703|
+|1.27|Windows 10, version 1809 WDK|Windows 10, version 1809 (October 2018 Update, Redstone 5)|Windows 10, version 1809 and later|
+|1.25|Windows 10, version 1803 WDK|Windows 10, version 1803 (April 2018 Update, Redstone 4)|Windows 10, version 1803 and later|
+|1.23|Windows 10, version 1709 WDK|Windows 10, version 1709 (Fall Creators Update, Redstone 3)|Windows 10, version 1709 and later|
+|1.21|Windows 10, version 1703 WDK|Windows 10, version 1703 (Creators Update, Redstone 2)|Windows 10, version 1703 and later|
 |1.19|Windows 10, version 1607 WDK|Windows 10, version 1607 (Anniversary Update, Redstone 1)|Windows 10 version 1607, Windows Server 2016 and later|
 |1.17|Windows 10, version 1511 WDK|Windows 10, version 1511 (November Update, Threshold 2)|Windows 10 version 1511, Windows Server 2016 and later|
 |1.15|Windows 10 WDK|Windows 10, version 1507 (Threshold 1)|Windows 10, version 1507, Windows Server 2016 and later|
@@ -140,7 +140,7 @@ Version 1.11 adds the following functionality:
 
 -   Added **DbgWaitForSignalTimeoutInSec** to [Registry Values for Debugging Framework-based Drivers](registry-values-for-debugging-kmdf-drivers.md).
 
--   Added [InstallWdf](http://go.microsoft.com/fwlink/p/?linkid=256122), [MultiComp](http://go.microsoft.com/fwlink/p/?linkid=256158), and [SingleComp](http://go.microsoft.com/fwlink/p/?linkid=256158) samples.
+-   Added [InstallWdf](https://go.microsoft.com/fwlink/p/?linkid=256122), [MultiComp](https://go.microsoft.com/fwlink/p/?linkid=256158), and [SingleComp](https://go.microsoft.com/fwlink/p/?linkid=256158) samples.
 
 ## KMDF Version 1.9
 

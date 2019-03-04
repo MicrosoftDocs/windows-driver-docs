@@ -50,7 +50,7 @@ Remarks
 
 The system-supplied class driver for CD-ROM storage devices registers instances of this device interface class to notify the operating system and applications of the presence of a CD-ROM device.
 
-The storage [samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [CDROM class driver](http://go.microsoft.com/fwlink/p/?linkid=256093) sample and the [Addfilter Storage Filter Tool](http://go.microsoft.com/fwlink/p/?linkid=256076). The CD-ROM class driver sample uses the obsolete identifier [**CdRomClassGuid**](cdromclassguid.md) to register instances of the GUID_DEVINTERFACE_CDROM device interface class. The sample Addfilter application uses CdRomClassGuid to enumerate instances of the GUID_DEVINTERFACE_CDROM device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [CDROM class driver](https://go.microsoft.com/fwlink/p/?linkid=256093) sample and the [Addfilter Storage Filter Tool](https://go.microsoft.com/fwlink/p/?linkid=256076). The CD-ROM class driver sample uses the obsolete identifier [**CdRomClassGuid**](cdromclassguid.md) to register instances of the GUID_DEVINTERFACE_CDROM device interface class. The sample Addfilter application uses CdRomClassGuid to enumerate instances of the GUID_DEVINTERFACE_CDROM device interface class.
 
 For information about the device interface class for CD-ROM changer devices, see [**GUID_DEVINTERFACE_CDCHANGER**](guid-devinterface-cdchanger.md).
 

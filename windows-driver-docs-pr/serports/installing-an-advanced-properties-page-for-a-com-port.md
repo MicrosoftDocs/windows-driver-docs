@@ -32,7 +32,7 @@ To install the system-supplied property page and default dialog box for a COM po
 
 To override the default dialog box displayed by **SerialDisplayAdvancedSettings**, do the following:
 
-1.  Implement a custom dialog [*DLL*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-dll). The entry point for the dialog is a [**PPORT\_ADVANCED\_DIALOG**](https://msdn.microsoft.com/library/windows/hardware/ff546956)-typed routine.
+1.  Implement a custom dialog *DLL*. The entry point for the dialog is a [**PPORT\_ADVANCED\_DIALOG**](https://msdn.microsoft.com/library/windows/hardware/ff546956)-typed routine.
 
 2.  Install the custom dialog DLL by setting an **EnumAdvancedDialog** entry value in an *add-registry-section* that is referenced by a device's [**DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344). The type and format of the value entry is the same as that used for a **EnumPropPages32** value entry.
 

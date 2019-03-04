@@ -2,12 +2,14 @@
 title: Understanding and configuring Windows Connection Manager
 description: Understanding and configuring Windows Connection Manager
 ms.assetid: 5ef0034f-5b30-4484-a11c-ed19931484a2
-ms.date: 04/20/2017
+ms.date: 01/07/2019
 ms.localizationpriority: medium
 ---
 
 # Understanding and configuring Windows Connection Manager
 
+> [!IMPORTANT]
+> This topic is intended for Microsoft's mobile operator (MO) partners who can configure how Windows connects to their networks. If you are a customer who is experiencing Windows network connection issues, see [Fix network connection issues in Windows](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues).
 
 Automatic connection management, introduced in Windows 8, makes connection decisions by looking at Ethernet, Wi-Fi, and mobile broadband interfaces. These decisions lead to automatic connect and disconnect actions on Wi-Fi and mobile broadband interfaces.
 

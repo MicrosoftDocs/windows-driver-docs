@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The TrueGray feature checks RGB colors in text and vector graphics, but not in bitmaps. For colors that are gray (that is, colors whose red, green, and blue values are equal), the TrueGray feature translates the colors from the RGB color space to the color printer's gray color space before printing them. This feature is not available for monochrome printers.
 
-The TrueGray feature uses a private [*PPD*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-postscript-printer-description--ppd-) keyword, \***ADTrueGray**, to allow PScript minidriver writers to enable or disable this feature.
+The TrueGray feature uses a private *PPD* keyword, \***ADTrueGray**, to allow PScript minidriver writers to enable or disable this feature.
 
 <table>
 <colgroup>

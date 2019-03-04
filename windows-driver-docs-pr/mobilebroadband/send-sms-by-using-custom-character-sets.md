@@ -13,7 +13,7 @@ If you need access to raw message protocol data units (PDU) to achieve scenarios
 
 You might need to use the PDU-mode SMS interface in the following cases:
 
--   To send or read received SMS by using a National Language Single Shift Table or National Language Locking Shift Table as defined in [3GPP TS 23.038](http://go.microsoft.com/fwlink/?LinkId=329080).
+-   To send or read received SMS by using a National Language Single Shift Table or National Language Locking Shift Table as defined in [3GPP TS 23.038](https://go.microsoft.com/fwlink/?LinkId=329080).
 
 -   To send multi-part SMS using different character sets for each segment.
 

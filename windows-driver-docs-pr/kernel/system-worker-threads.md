@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver that requires delayed processing can use a [*work item*](https://msdn.microsoft.com/library/windows/hardware/ff556347#wdkgloss-work-item), which contains a pointer to a driver callback routine that performs the actual processing. The driver queues the work item, and a *system worker thread* removes the work item from the queue and runs the driver's callback routine. The system maintains a pool of these system worker threads, which are system threads that each process one work item at a time.
+A driver that requires delayed processing can use a *work item*, which contains a pointer to a driver callback routine that performs the actual processing. The driver queues the work item, and a *system worker thread* removes the work item from the queue and runs the driver's callback routine. The system maintains a pool of these system worker threads, which are system threads that each process one work item at a time.
 
 The driver associates a [*WorkItem*](https://msdn.microsoft.com/library/windows/hardware/ff566380) callback routine with the work item. When the system worker thread processes the work item, it calls the associated *WorkItem* routine. In Windows Vista and later versions of Windows, a driver can instead associate a [*WorkItemEx*](https://msdn.microsoft.com/library/windows/hardware/ff566381) routine with a work item. *WorkItemEx* takes parameters that are different from the parameters that *WorkItem* takes.
 

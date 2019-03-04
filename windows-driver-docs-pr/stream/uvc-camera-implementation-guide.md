@@ -183,7 +183,7 @@ HKR,, FSSensorGroupName,0x00000000,%FSSensorGroupName%
 
 UVC specification does provide a mechanism to specify if the video streaming interface supports Method 1/2/3 type still image capture. To make the OS take advantage of the device's Method 2/3 still image capture support, through UVC driver, the device firmware could specify a value in the BOS descriptor.
 
-The value to specify to enable Method 2/3 still image capture is a DWORD named *UVC-EnableDependentStillImageCapture*. Specify its value using the BOS descriptor. The [Example composite device](#example-composite-device) below illustrates enabling still image capture with an example BOS descriptor.
+The value to specify to enable Method 2/3 still image capture is a DWORD named *UVC-EnableDependentStillPinCapture*. Specify its value using the BOS descriptor. The [Example composite device](#example-composite-device) below illustrates enabling still image capture with an example BOS descriptor.
 
 If you cannot update the device firmware as described above, you can use a custom INF to specify that your camera supports Method 2 or Method 3 still capture method.
 
@@ -349,7 +349,7 @@ Configuring UVC devices through custom INF is still supported and that takes pre
 | --- | --- | --- |
 | SensorCameraMode                              | REG\_DWORD | Register the camera under a specific category.  |
 | UVC-FSSensorGroupID<br>UVC-FSSensorGroupName  | REG\_SZ    | Group cameras with the same UVC-FSSensorGroupID |
-| UVC-EnableDependentStillImageCapture          | REG\_DWORD | To enable still capture Method 2/3              |
+| UVC-EnableDependentStillPinCapture            | REG\_DWORD | To enable still capture Method 2/3              |
 | UVC-EnablePlatformDmft                        | REG\_DWORD | To enable Platform DMFT                         |
 
 When UVC driver sees the registry values with prefix "UVC-", it populates the device's category interface instance registry key, with the same values without the prefix. The driver will do this for any variable specified by the firmware, not just the ones listed above.

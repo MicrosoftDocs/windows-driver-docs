@@ -87,5 +87,5 @@ To change boot options programmatically in Windows, use the Windows Management I
 - [BCD Edit Options Reference](bcd-boot-options-reference.md)
 - [Editing Boot Options](editing-boot-options.md)
 - [Using Boot Parameters](using-boot-parameters.md)
-- [Boot Configuration Data](http://go.microsoft.com/fwlink/p/?linkid=74322)
+- [Boot Configuration Data](https://go.microsoft.com/fwlink/p/?linkid=74322)
 

@@ -28,12 +28,12 @@ The general process to get a 3D printer working on Windows 10 includes the foll
 
 In the following sections, we will illustrate each of these steps using a concrete example.
 
-For more information, see [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?LinkId=533944).
+For more information, see [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?LinkId=533944).
 
 ## Compatible ID
 
 
-To specify to the Windows operating system that we are currently using a 3D printer, we have to use the right compatible ID. The list of Microsoft Compatible ID are available at [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?LinkId=533944).
+To specify to the Windows operating system that we are currently using a 3D printer, we have to use the right compatible ID. The list of Microsoft Compatible ID are available at [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?LinkId=533944).
 
 The compatible ID for a 3D printer is shown in the following table:
 
@@ -116,7 +116,7 @@ As stated in the above section, IHVs have access to several base configurations.
 
  
 
-For more information about these parameters, please refer to the *MS3DPrint Standard G-Code Driver.docx* document in the [3D Printing SDK](http://go.microsoft.com/fwlink/p/?LinkId=394375) documentation.
+For more information about these parameters, please refer to the *MS3DPrint Standard G-Code Driver.docx* document in the [3D Printing SDK](https://go.microsoft.com/fwlink/p/?LinkId=394375) documentation.
 
 To specify which base configuration to use and which parameters to override, the developer has to specify it through the Extended Properties OS Feature Descriptor as shown here:
 
@@ -158,7 +158,7 @@ static const uint8_t PROGMEM ms3dprint_properties_descriptor[] = {
 };
 ```
 
-Information regarding the extended properties OS feature descriptor are in the *OS\_Desc\_Ext\_Prop.doc* file. See [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?LinkId=533944) for more information.
+Information regarding the extended properties OS feature descriptor are in the *OS\_Desc\_Ext\_Prop.doc* file. See [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?LinkId=533944) for more information.
 
 ## Verifying the print capabilities
 
@@ -194,15 +194,15 @@ The 3D Print driver properties can be obtained by visiting the registry at **HKE
 
 For more information, see the following documents and resources:
 
-[3D Printing in Windows](http://go.microsoft.com/fwlink/p/?LinkId=534206)
+[3D Printing in Windows](https://go.microsoft.com/fwlink/p/?LinkId=534206)
 
-[3D Printing SDK (MSI download)](http://go.microsoft.com/fwlink/p/?LinkId=394375)
+[3D Printing SDK (MSI download)](https://go.microsoft.com/fwlink/p/?LinkId=394375)
 
-[Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?LinkId=533944)
+[Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?LinkId=533944)
 
-[USB 2.0 Specification](http://go.microsoft.com/fwlink/p/?linkid=533945)
+[USB 2.0 Specification](https://go.microsoft.com/fwlink/p/?linkid=533945)
 
-You can also contact the Microsoft 3D Printing team at [Ask 3D Printing Questions](http://go.microsoft.com/fwlink/p/?LinkId=534751) (ask3dprint@microsoft.com).
+You can also contact the Microsoft 3D Printing team at [Ask 3D Printing Questions](https://go.microsoft.com/fwlink/p/?LinkId=534751) (ask3dprint@microsoft.com).
 
  
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Get started with a hotspot authentication app
 
 
-This topic describes how to use the [Hotspot Authentication Sample](http://go.microsoft.com/fwlink/p/?linkid=313215) to get started developing your own hotspot authentication app.
+This topic describes how to use the [Hotspot Authentication Sample](https://go.microsoft.com/fwlink/p/?linkid=313215) to get started developing your own hotspot authentication app.
 
 The topics in this section include the following:
 

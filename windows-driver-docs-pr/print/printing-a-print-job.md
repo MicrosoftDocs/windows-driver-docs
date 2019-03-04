@@ -28,7 +28,7 @@ Each print job is delimited by spooler calls to a language or port monitor's [**
 
 Each of these functions requires the port handle returned by [**OpenPortEx**](https://msdn.microsoft.com/library/windows/hardware/ff559596) (or [**OpenPort**](https://msdn.microsoft.com/library/windows/hardware/ff559593)) to be specified as in input argument. Typically, a language monitor implements each of the functions by calling the like-named function in its associated port monitor.
 
-When the spooler calls a language monitor's **WritePort** function to send a data stream to the port, the function generally adds language-specific information, such as [*PJL*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pjl) commands, to the received data stream before passing it to the associated port monitor's **WritePort** function.
+When the spooler calls a language monitor's **WritePort** function to send a data stream to the port, the function generally adds language-specific information, such as *PJL* commands, to the received data stream before passing it to the associated port monitor's **WritePort** function.
 
 The **ReadPort** function is used for obtaining status information from bidirectional printer hardware, which a language monitor might send to the spooler by calling **SetPort**, described in the Windows SDK documentation. The spooler does not call the **ReadPort** function.
 

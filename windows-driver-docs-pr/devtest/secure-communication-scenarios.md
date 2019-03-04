@@ -19,7 +19,7 @@ The Secure Communication scenario tests discovery, metadata exchange, and eventi
 
 Before attempting these scenarios, you should have successfully completed the [Device and Service Inspection](device-and-service-inspection-scenarios.md) and [Eventing](eventing-scenarios.md) scenarios.
 
-Before attempting these interoperability test cases, see [Using WSDAPI with a Secure Channel](http://go.microsoft.com/fwlink/p/?linkid=81271) and [Configuring WSDAPI Applications to Use a Secure Channel](http://go.microsoft.com/fwlink/p/?linkid=81272) for more information about secure channel.
+Before attempting these interoperability test cases, see [Using WSDAPI with a Secure Channel](https://go.microsoft.com/fwlink/p/?linkid=81271) and [Configuring WSDAPI Applications to Use a Secure Channel](https://go.microsoft.com/fwlink/p/?linkid=81272) for more information about secure channel.
 
 Case
 Client action

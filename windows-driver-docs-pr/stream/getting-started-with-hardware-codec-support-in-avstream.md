@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Getting Started with Hardware Codec Support in AVStream
 
 
-Starting in Windows 7, [Windows Media Foundation](http://go.microsoft.com/fwlink/p/?linkid=155069) represents AVStream-based media components as user-mode Media Foundation Transforms (MFTs).
+Starting in Windows 7, [Windows Media Foundation](https://go.microsoft.com/fwlink/p/?linkid=155069) represents AVStream-based media components as user-mode Media Foundation Transforms (MFTs).
 
 By using this feature, vendors can present hardware-based decoders, encoders, and video processors as MFTs that can in turn be manipulated at the application level.
 
@@ -53,7 +53,7 @@ The resulting wrapped hardware media processing function is called a Device Prox
     -   [**KSMFT\_CATEGORY\_DEMULTIPLEXER**](https://msdn.microsoft.com/library/windows/hardware/ff548594)
     -   [**KSMFT\_CATEGORY\_AUDIO\_EFFECT**](https://msdn.microsoft.com/library/windows/hardware/ff548578)
     -   [**KSMFT\_CATEGORY\_OTHER**](https://msdn.microsoft.com/library/windows/hardware/ff548601)
--   Media foundation applications can then use the [MFTEnumEx](http://go.microsoft.com/fwlink/p/?linkid=155058) function to enumerate the devices that are registered as MFTs by using the categories mentioned previously.
+-   Media foundation applications can then use the [MFTEnumEx](https://go.microsoft.com/fwlink/p/?linkid=155058) function to enumerate the devices that are registered as MFTs by using the categories mentioned previously.
 
  
 

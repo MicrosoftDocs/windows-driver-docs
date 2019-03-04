@@ -93,7 +93,7 @@ If the installer determines that the device is a duplicate, the installer return
 
 ### Installer Operation
 
-A [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) typically sends this DIF request to register a non-PnP device with the PnP manager. Starting with Microsoft Windows 2000, non-PnP devices must be registered before they can be installed.
+A *device installation application* typically sends this DIF request to register a non-PnP device with the PnP manager. Starting with Microsoft Windows 2000, non-PnP devices must be registered before they can be installed.
 
 An installer typically handles this DIF request to do duplicate detection. Such an installer typically calls the default handler ([**SetupDiRegisterDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff552091)) and specifies its detection routine. If the registration is successful and the installer determines that the device is not a duplicate, the installer returns NO_ERROR.
 

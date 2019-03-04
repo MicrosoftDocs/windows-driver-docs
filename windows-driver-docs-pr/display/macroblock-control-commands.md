@@ -42,7 +42,7 @@ The values for these structure members and flags are shown in the following sect
 
 ### <span id="DXVA_MBctrl_I_HostResidDiff_1"></span><span id="dxva_mbctrl_i_hostresiddiff_1"></span><span id="DXVA_MBCTRL_I_HOSTRESIDDIFF_1"></span>DXVA\_MBctrl\_I\_HostResidDiff\_1
 
-The [**DXVA\_MBctrl\_I\_HostResidDiff\_1**](https://msdn.microsoft.com/library/windows/hardware/ff563983) structure is used for intra pictures with host-based [*residual difference decoding*](https://msdn.microsoft.com/library/windows/hardware/ff556331#wdkgloss-residual-difference-decoding). The following structure members and flags must equal the indicated values:
+The **DXVA\_MBctrl\_I\_HostResidDiff\_1**. The following structure members and flags must equal the indicated values:
 
 -   **bPicIntra** must equal 1 (intra pictures).
 
@@ -70,7 +70,7 @@ The [**DXVA\_MBctrl\_P\_HostResidDiff\_1**](https://msdn.microsoft.com/library/w
 
 The following structure members and flags must equal the indicated values:
 
--   **bPicIntra** must equal zero (decoding for [*P picture*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-predictive-coded-picture--p-picture-) and [*B picture*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-b-picture) or concealment motion vectors in [*I picture*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-i-picture)).
+-   **bPicIntra** must equal zero (decoding for *P picture* and *B picture* or concealment motion vectors in *I picture*).
 
 -   **bChromaFormat** must equal 1 (4:2:0 sampling).
 
@@ -90,7 +90,7 @@ The [**DXVA\_MBctrl\_P\_OffHostIDCT\_1**](https://msdn.microsoft.com/library/win
 
 The following structure members and flags must equal the indicated values:
 
--   **bPicIntra** member of the [**DXVA\_PictureParameters**](https://msdn.microsoft.com/library/windows/hardware/ff564012) structure must equal zero (decoding for P and [*B pictures*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-b-picture) or concealment motion vectors in [*I pictures*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-i-picture)).
+-   **bPicIntra** member of the **DXVA\_PictureParameters** or concealment motion vectors in *I pictures*).
 
 -   **bChromaFormat** must equal 1 (4:2:0 sampling).
 

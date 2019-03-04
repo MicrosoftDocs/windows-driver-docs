@@ -7,6 +7,8 @@ keywords:
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
 ms.localizationpriority: medium
+f1_keywords: 
+  - "C28132"
 ---
 
 # C28132

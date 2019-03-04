@@ -25,7 +25,7 @@ Use the following guidelines to safely query and modify the attributes of device
 
     3.  Use persistent registry storage for the custom settings for a device interface class. To do this, use [**SetupDiCreateDeviceInterfaceRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff550967) (to create a new registry key) or [**SetupDiOpenDeviceInterfaceRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552075) (to open an existing registry key).
 
-        To save the custom settings, use [RegCloseKey](http://go.microsoft.com/fwlink/p/?linkid=194543) after the registry key has been created or opened.
+        To save the custom settings, use [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) after the registry key has been created or opened.
 
 -   Kernel-mode drivers should use [**IoOpenDeviceInterfaceRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff549433) to open the registry key for a device interface class.
 

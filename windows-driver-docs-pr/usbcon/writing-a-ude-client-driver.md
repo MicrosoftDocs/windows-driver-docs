@@ -1,7 +1,7 @@
 ---
 Description: Describes the behavior of USB Device Emulation(UDE) class extension and tasks that a client driver must perform for an emulated host controller and devices attached to it.
 title: Write a UDE client driver
-ms.date: 04/20/2017
+ms.date: 01/07/2019
 ms.localizationpriority: medium
 ---
 
@@ -29,12 +29,12 @@ Describes the behavior of USB Device Emulation(UDE) class extension and tasks th
 
 ## Before you begin
 
-- [Install](http://go.microsoft.com/fwlink/p/?LinkID=733614) the latest Windows Driver Kit (WDK) your development computer. The kit has the required header files and libraries for writing a UDE client driver, specifically, you'll need:
+- [Install](https://go.microsoft.com/fwlink/p/?LinkID=733614) the latest Windows Driver Kit (WDK) your development computer. The kit has the required header files and libraries for writing a UDE client driver, specifically, you'll need:
   - The stub library, (Udecxstub.lib). The library translates calls made by the client driver and pass them up to UdeCx.
   - The header file, Udecx.h.
 - Install Windows 10 on your target computer.
 - Familiarize yourself with UDE. See [Architecture: USB Device Emulation(UDE)](usb-emulated-device--ude--architecture.md).
-- Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation]( http://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
+- Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation]( https://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
 
 ## UDE objects and handles
 
@@ -240,11 +240,11 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
 
     ...
 
-exit:
+    exit:
 
-    return status;
-}
-```
+        return status;
+    }
+    ```
 
 
 ## Handle user-mode IOCTL requests sent to the host controller

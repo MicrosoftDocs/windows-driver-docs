@@ -33,7 +33,7 @@ To set the value of a device class property, call [**SetupDiSetClassProperty**](
 
 -   If the device class is a device setup class, set *Flags* to DICLASSPROP_INSTALLER. Otherwise, if the device class is a device interface class, set *Flags* to DICLASSPROP_INTERFACE.
 
-If a call to [**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128) succeeds, **SetupDiSetClassProperty** sets the device class property and returns **TRUE**. If the function call fails, **SetupDiSetClassProperty** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+If a call to [**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128) succeeds, **SetupDiSetClassProperty** sets the device class property and returns **TRUE**. If the function call fails, **SetupDiSetClassProperty** returns **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
 ### <a href="" id="setting-a-device-class-property-value-on-a-remote-computer"></a> Setting a Device Class Property Value on a Remote Computer
 

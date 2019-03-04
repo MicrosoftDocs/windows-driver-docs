@@ -9,12 +9,12 @@ ms.localizationpriority: medium
 # Printer extension library overview for UWP device apps
 
 
-This topic introduces the printer extension library, a library that helps device manufacturers write UWP device apps for their printer. The printer extension library is included with the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample, and also the [Job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample.
+This topic introduces the printer extension library, a library that helps device manufacturers write UWP device apps for their printer. The printer extension library is included with the [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample, and also the [Job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample.
 
 ## <span id="Overview"></span><span id="overview"></span><span id="OVERVIEW"></span>Overview
 
 
-A high level design goal for the [v4 printer driver](http://go.microsoft.com/fwlink/p/?LinkId=314231) architecture was to provide built-in support for the Microsoft Store app user interface. To provide access to the printer, the v4 print driver exposes COM-based [Printer Extension Interfaces](http://go.microsoft.com/fwlink/p/?LinkID=299887).
+A high level design goal for the [v4 printer driver](https://go.microsoft.com/fwlink/p/?LinkId=314231) architecture was to provide built-in support for the Microsoft Store app user interface. To provide access to the printer, the v4 print driver exposes COM-based [Printer Extension Interfaces](https://go.microsoft.com/fwlink/p/?LinkID=299887).
 
 To access those interfaces from your UWP device app, you can use the printer extension library that is included with the Microsoft Store device app printer samples. The printer extension library wraps the COM implementation of the COM interface `PrinterExtensionLib`. This enables code sharing between printer extensions and your UWP device app.
 
@@ -52,15 +52,15 @@ In order to convert the C# interfaces, classes and methods to something supporte
 ## <span id="related_topics"></span>Related topics
 
 
-[Developing v4 print drivers](http://go.microsoft.com/fwlink/p/?LinkId=314231)
+[Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231)
 
-[Printer Extension Interfaces (v4 Print Driver)](http://go.microsoft.com/fwlink/p/?LinkID=299887)
+[Printer Extension Interfaces (v4 Print Driver)](https://go.microsoft.com/fwlink/p/?LinkID=299887)
 
 [Job Management (v4 Printer Driver)](https://msdn.microsoft.com/library/windows/hardware/dn265419)
 
 [Device Maintenance (v4 Printer Driver)](https://msdn.microsoft.com/library/windows/hardware/dn265274)
 
-[Bidirectional Communications](http://go.microsoft.com/fwlink/p/?LinkId=317192)
+[Bidirectional Communications](https://go.microsoft.com/fwlink/p/?LinkId=317192)
 
 [Getting started with UWP apps](getting-started.md)
 

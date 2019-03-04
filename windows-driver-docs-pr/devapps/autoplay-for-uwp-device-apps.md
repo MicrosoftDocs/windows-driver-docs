@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Device manufacturers can specify their UWP device app as an AutoPlay handler for their device. They can also let other UWP apps act as AutoPlay handlers for their device. This topic describes how to use the Device Metadata Authoring Wizard to enable AutoPlay. It also describes how to handle AutoPlay activations in your app. For more info about device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-**Note**  You don't need to use device metadata for all types of AutoPlay. Without device metadata, AutoPlay lets you provide your app as an option when a user connects a device to a PC. This includes non-volume devices like a camera or media player, or volume devices like a USB thumb drive, SD card, or DVD. AutoPlay also lets you register your app as an option when users share files between two machines by using Proximity (tapping). But your app can't install automatically without device metadata. For more info about using AutoPlay when device metadata isn't required, see [Auto-launching with AutoPlay](http://go.microsoft.com/fwlink/p/?LinkID=254861).
+**Note**  You don't need to use device metadata for all types of AutoPlay. Without device metadata, AutoPlay lets you provide your app as an option when a user connects a device to a PC. This includes non-volume devices like a camera or media player, or volume devices like a USB thumb drive, SD card, or DVD. AutoPlay also lets you register your app as an option when users share files between two machines by using Proximity (tapping). But your app can't install automatically without device metadata. For more info about using AutoPlay when device metadata isn't required, see [Auto-launching with AutoPlay](https://go.microsoft.com/fwlink/p/?LinkID=254861).
 
  
 
@@ -50,7 +50,7 @@ When using device metadata with your app, AutoPlay supports these device types:
 ## <span id="Before_you_begin"></span><span id="before_you_begin"></span><span id="BEFORE_YOU_BEGIN"></span>Before you begin
 
 
--   **Make sure you have the Device Metadata Authoring Wizard**. You'll need it to enable AutoPlay. In this release, this wizard is included with Microsoft Visual Studio Professional and Microsoft Visual Studio Ultimate. But if you have Microsoft Visual Studio Express for Windows, you need to download the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209) to get the wizard.
+-   **Make sure you have the Device Metadata Authoring Wizard**. You'll need it to enable AutoPlay. In this release, this wizard is included with Microsoft Visual Studio Professional and Microsoft Visual Studio Ultimate. But if you have Microsoft Visual Studio Express for Windows, you need to download the [standalone SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?linkid=309209) to get the wizard.
 
 -   **Associate your app with the Microsoft Store**. You'll need your app's package information to enable AutoPlay. For more info, see the *Associate your app with the Microsoft Store* section in [Step 1: Create a UWP device app](step-1--create-a-uwp-device-app.md).
 
@@ -151,9 +151,9 @@ In this example, the activation event parameter (eventObj) carries the device's 
 
 [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md)
 
-[Auto-launching with AutoPlay](http://go.microsoft.com/fwlink/p/?LinkID=254861)
+[Auto-launching with AutoPlay](https://go.microsoft.com/fwlink/p/?LinkID=254861)
 
-[Launching, resuming, and multitasking](http://go.microsoft.com/fwlink/p/?LinkID=309316)
+[Launching, resuming, and multitasking](https://go.microsoft.com/fwlink/p/?LinkID=309316)
 
  
 

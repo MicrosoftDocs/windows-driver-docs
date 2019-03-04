@@ -77,8 +77,8 @@ A child device of the display adapter that supplies a video output signal to an 
 A hardware encoder/decoder on the display adapter that reads from a primary surface in video memory and places a video signal representation of that surface on one or more of the display adapter's video outputs.
 
  
-
- 
+<span id="off_screen_memory"></span><span id="OFF_SCREEN_MEMORY"></span>**off-screen memory**  
+Video memory whose contents do not appear on the video display. Off-screen memory can be used for double buffering, a technique in which a complex graphics image that requires numerous graphics operations can be completely rendered before it is displayed. After each image has been displayed, another image can be constructed in the same way, providing an effective way to achieve animation.
 
 
 

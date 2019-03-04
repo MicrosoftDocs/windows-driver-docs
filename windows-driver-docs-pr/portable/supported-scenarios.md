@@ -20,7 +20,7 @@ For example, the WPD DDI enables applications to sync content between the device
 ## <span id="Browsing_Device_Contents"></span><span id="browsing_device_contents"></span><span id="BROWSING_DEVICE_CONTENTS"></span>Browsing Device Contents
 
 
-By using the WPD namespace, users can apply Windows file management approaches to portable devices of any type. (For more information about how to implement Context Menu and Property Page extensions in a WPD application, see the Windows Portable Devices Programming Guide in the [WPD SDK](http://go.microsoft.com/fwlink/p/?linkid=178695).)
+By using the WPD namespace, users can apply Windows file management approaches to portable devices of any type. (For more information about how to implement Context Menu and Property Page extensions in a WPD application, see the Windows Portable Devices Programming Guide in the [WPD SDK](https://go.microsoft.com/fwlink/p/?linkid=178695).)
 
 ## <span id="Device_Control"></span><span id="device_control"></span><span id="DEVICE_CONTROL"></span>Device Control
 

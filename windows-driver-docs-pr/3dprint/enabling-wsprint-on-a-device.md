@@ -84,7 +84,7 @@ For more information on WSPrint 2.0, see the following resources:
 
 [Implementing Web Services on Devices for Printing](https://go.microsoft.com/fwlink/p/?linkid=867155)
 
-[WSPrint 2.0 specification](http://go.microsoft.com/fwlink/p/?LinkId=534008) 
+[WSPrint 2.0 specification](https://go.microsoft.com/fwlink/p/?LinkId=534008) 
 
 
 

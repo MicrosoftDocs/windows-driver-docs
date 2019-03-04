@@ -1,7 +1,7 @@
 ---
 Description: PurposeThis section describes Universal Serial Bus (USB) support in the Windows operating system, so that you can develop USB device drivers that are interoperable with Windows.
 title: Developing Windows client drivers for USB devices
-ms.date: 04/20/2017
+ms.date: 01/07/2019
 ms.localizationpriority: medium
 ---
 
@@ -24,19 +24,19 @@ ms.localizationpriority: medium
 <p>A client driver for a USB device is a WDF or WDM driver that communicates with the device through DDIs exposed by the USB driver stack. This section is intended for use by C/C++ programmers who are familiar with WDM. Before you use this section, you should understand basic driver development. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554690" data-raw-source="[Getting Started with Windows Drivers](https://msdn.microsoft.com/library/windows/hardware/ff554690)">Getting Started with Windows Drivers</a>. For WDF drivers, the client driver can use <a href="https://msdn.microsoft.com/library/windows/hardware/ff551869" data-raw-source="[Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff551869)">Kernel-Mode Driver Framework</a> (KMDF) or <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/" data-raw-source="[User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)">User-Mode Driver Framework</a> (UMDF) interfaces designed specifically to work with USB targets. For more information about the USB-specific interfaces, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn265671" data-raw-source="[WDF USB Reference](https://msdn.microsoft.com/library/windows/hardware/dn265671)">WDF USB Reference</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561332" data-raw-source="[UMDF USB I/O Target Interfaces](https://msdn.microsoft.com/library/windows/hardware/ff561332)">UMDF USB I/O Target Interfaces</a>.</p>
 <p><strong>Development tools</strong></p>
 <p>The Windows Driver Kit (WDK) contains resources that are required for driver development, such as headers, libraries, tools, and samples.</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=617155" data-raw-source="[Download kits and tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=617155)">Download kits and tools for Windows</a></p>
+<p><a href="https://go.microsoft.com/fwlink/p/?linkid=617155" data-raw-source="[Download kits and tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=617155)">Download kits and tools for Windows</a></p>
 <p><strong>USB programming reference</strong></p>
 <p>Gives specifications for I/O requests, support routines, structures, and interfaces used by USB client drivers. Those routines and related data structures are defined in the WDK headers.</p>
 <p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#common-usb-client-driver-reference" data-raw-source="[Universal Serial Bus (USB) programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#common-usb-client-driver-reference)">Universal Serial Bus (USB) programming reference</a>.</p>
 <p><strong>USB driver samples</strong></p>
 <p>Use these samples to get started with USB client driver programming.</p>
 <ul>
-<li><a href="http://go.microsoft.com/fwlink/p/?linkid=617157" data-raw-source="[Usbsamp Generic USB Driver]( http://go.microsoft.com/fwlink/p/?linkid=617157)">Usbsamp Generic USB Driver</a></li>
-<li><a href="http://go.microsoft.com/fwlink/p/?linkid=617158" data-raw-source="[Sample KMDF Function Driver for OSR USB-FX2](http://go.microsoft.com/fwlink/p/?linkid=617158)">Sample KMDF Function Driver for OSR USB-FX2</a></li>
-<li><a href="http://go.microsoft.com/fwlink/p/?LinkId=618002" data-raw-source="[Sample UMDF Function Driver for OSR USB-FX2](http://go.microsoft.com/fwlink/p/?LinkId=618002)">Sample UMDF Function Driver for OSR USB-FX2</a></li>
+<li><a href="https://go.microsoft.com/fwlink/p/?linkid=617157" data-raw-source="[Usbsamp Generic USB Driver]( https://go.microsoft.com/fwlink/p/?linkid=617157)">Usbsamp Generic USB Driver</a></li>
+<li><a href="https://go.microsoft.com/fwlink/p/?linkid=617158" data-raw-source="[Sample KMDF Function Driver for OSR USB-FX2](https://go.microsoft.com/fwlink/p/?linkid=617158)">Sample KMDF Function Driver for OSR USB-FX2</a></li>
+<li><a href="https://go.microsoft.com/fwlink/p/?LinkId=618002" data-raw-source="[Sample UMDF Function Driver for OSR USB-FX2](https://go.microsoft.com/fwlink/p/?LinkId=618002)">Sample UMDF Function Driver for OSR USB-FX2</a></li>
 </ul>
 <p><strong>Related standards and specifications</strong></p>
-<p>You can download official USB specifications from the <a href="http://go.microsoft.com/fwlink/p/?linkid=224892" data-raw-source="[Universal Serial Bus Documents]( http://go.microsoft.com/fwlink/p/?linkid=224892)">Universal Serial Bus Documents</a> website. This website contains links to the Universal Serial Bus Revision 3.0 Specification and the Universal Serial Bus Revision 2.0 specification.</p></td>
+<p>You can download official USB specifications from the <a href="https://go.microsoft.com/fwlink/p/?linkid=224892" data-raw-source="[Universal Serial Bus Documents]( https://go.microsoft.com/fwlink/p/?linkid=224892)">Universal Serial Bus Documents</a> website. This website contains links to the Universal Serial Bus Revision 3.0 Specification and the Universal Serial Bus Revision 2.0 specification.</p></td>
 <td><p><strong>Documentation sections</strong></p>
 <p><a href="getting-started-with-usb-client-driver-development.md" data-raw-source="[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)">Getting started with USB client driver development</a></p>
 Introduces you to USB driver development. Provides information about choosing the most appropriate model for providing a USB driver for your device.
@@ -50,7 +50,7 @@ Learn how a client driver builds a variable-length data structure called a USB R
 <p><a href="configuring-usb-devices.md" data-raw-source="[Selecting a USB configuration in USB drivers](configuring-usb-devices.md)">Selecting a USB configuration in USB drivers</a></p>
 Device configuration refers to the tasks that the client driver performs to select a USB configuration and an alternate interface in each interface. The section shows the methods calls required to select a USB configuration.
 <p><a href="usb-device-i-o.md" data-raw-source="[Sending USB data transfers in USB client drivers](usb-device-i-o.md)">Sending USB data transfers in USB client drivers</a></p>
-Device configuration refers to the tasks that the client driver performs to select a USB configuration and an alternate interface in each interface. The section shows the methods calls required to select a USB configuration.
+Describes USB pipes, URBs for I/O requests, and how a client driver can use the device driver interfaces (DDIs) to transfer data to and from a USB device.
 <p><a href="usb-power-management.md" data-raw-source="[Implementing power management in USB client drivers](usb-power-management.md)">Implementing power management in USB client drivers</a></p>
 Use the power management abilities of USB devices that comply with the Universal Serial Bus (USB) specification have a rich and complex set of power management features.</td>
 </tr>

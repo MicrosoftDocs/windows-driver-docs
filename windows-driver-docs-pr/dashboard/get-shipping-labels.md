@@ -71,7 +71,7 @@ This resource represents a shipping label created for a submission of your produ
       {
         "bundleId": "amd64",
         "infId": "foo.inf",
-        "operatingSystemCode": "WINDOWS_v100_SERVER_X64_RS4_FULL",
+        "operatingSystemCode": "WINDOWS_v100_SERVER_X64_RS5_FULL",
         "pnpString": "hid\\vid_dummy256f&pid_dummyc62f",
         "distributionState": "pendingAdd"
       }
@@ -230,7 +230,7 @@ This object represents the targeting details of the shipping label which is requ
     {
       "bundleId": "amd64",
       "infId": "foo.inf",
-      "operatingSystemCode": "WINDOWS_v100_SERVER_X64_RS4_FULL",
+      "operatingSystemCode": "WINDOWS_v100_SERVER_X64_RS5_FULL",
       "pnpString": "hid\\vid_dummy256f&pid_dummyc62f",
       "distributionState": "pendingAdd"
     }
@@ -273,7 +273,7 @@ This object represents the details of the hardware ID which needs to be targeted
 {
 	"bundleId": "amd64",
 	"infId": "foo.inf",
-	"operatingSystemCode": "WINDOWS_v100_SERVER_X64_RS4_FULL",
+	"operatingSystemCode": "WINDOWS_v100_SERVER_X64_RS5_FULL",
 	"pnpString": "hid\\vid_dummy256f&pid_dummyc62f",
 	"distributionState": "pendingAdd"
 }

@@ -9,11 +9,11 @@ ms.localizationpriority: medium
 # Installing the Device Metadata Authoring Wizard
 
 
-\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](http://go.microsoft.com/fwlink/p/?LinkId=226411). For more information, see [Windows 8.1 device experience](http://go.microsoft.com/fwlink/p/?linkid=325561). \]
+\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](https://go.microsoft.com/fwlink/p/?LinkId=226411). For more information, see [Windows 8.1 device experience](https://go.microsoft.com/fwlink/p/?linkid=325561). \]
 
 The Device Metadata Authoring Wizard is located in the Windows® Driver Kit (WDK).
 
-To download and install the WDK, see [Windows Driver Kit](http://go.microsoft.com/fwlink/p/?LinkId=226411).
+To download and install the WDK, see [Windows Driver Kit](https://go.microsoft.com/fwlink/p/?LinkId=226411).
 
 **Note**  You must install the entire WDK to use the tool.
 

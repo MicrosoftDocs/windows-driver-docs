@@ -29,7 +29,7 @@ To do this, set KSPIN\_FLAG\_SPLITTER in the **Flags** member of the pin's [**KS
 
 In releases later than DirectX8.0, the KSPIN\_FLAG\_SPLITTER flag works for pins on both [filter-centric](filter-centric-processing.md) and [pin-centric](pin-centric-processing.md) filters. Prior releases support this flag only for pins on filter-centric filters.
 
-The following diagram shows the configuration of a filter in which the input pin splits a stream into two output pins. The downstream filters of this output pin change data [*inplace*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-inplace).
+The following diagram shows the configuration of a filter in which the input pin splits a stream into two output pins. The downstream filters of this output pin change data *inplace*.
 
 ![diagram illustrating an avstream filter with a splitter output pin ](images/split1.png)
 

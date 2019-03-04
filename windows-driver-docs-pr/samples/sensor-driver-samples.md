@@ -16,11 +16,11 @@ The driver samples in this directory provide a starting point for writing a cust
 
 | Sample Name                   | Solution                                                                         | Description                                                                                   |
 |-------------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| Activity                      | [Activity](http://go.microsoft.com/fwlink/p/?LinkId=617956)                      | Demonstrates how to write a UMDF v2 driver to control a virtual activity sensor.              |
-| ADXL345Accelerometer          | [ADXL345Acc](http://go.microsoft.com/fwlink/p/?LinkId=617957)                    | Demonstrates how to write a UMDF v2 driver to control an ADXL345 accelerometer chip.          |
-| CustomSensors                 | [CustomSensors](http://go.microsoft.com/fwlink/p/?LinkId=617958)                 | Demonstrates how to write a UMDF v2 driver to control a virtual CO2 sensor.                   |
-| Pedometer                     | [Pedometer](http://go.microsoft.com/fwlink/p/?LinkId=617959)                     | Demonstrates how to write a UMDF v2 driver to control a virtual pedometer sensor.             |
-| SimpleDeviceOrientationSensor | [SimpleDeviceOrientationSensor](http://go.microsoft.com/fwlink/p/?LinkId=617960) | Demonstrates how to write a UMDF v2 sensor driver to output Simple Device Orientation values. |
+| Activity                      | [Activity](https://go.microsoft.com/fwlink/p/?LinkId=617956)                      | Demonstrates how to write a UMDF v2 driver to control a virtual activity sensor.              |
+| ADXL345Accelerometer          | [ADXL345Acc](https://go.microsoft.com/fwlink/p/?LinkId=617957)                    | Demonstrates how to write a UMDF v2 driver to control an ADXL345 accelerometer chip.          |
+| CustomSensors                 | [CustomSensors](https://go.microsoft.com/fwlink/p/?LinkId=617958)                 | Demonstrates how to write a UMDF v2 driver to control a virtual CO2 sensor.                   |
+| Pedometer                     | [Pedometer](https://go.microsoft.com/fwlink/p/?LinkId=617959)                     | Demonstrates how to write a UMDF v2 driver to control a virtual pedometer sensor.             |
+| SimpleDeviceOrientationSensor | [SimpleDeviceOrientationSensor](https://go.microsoft.com/fwlink/p/?LinkId=617960) | Demonstrates how to write a UMDF v2 sensor driver to output Simple Device Orientation values. |
 
  
 

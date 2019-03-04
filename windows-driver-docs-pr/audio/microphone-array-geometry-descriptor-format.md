@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Microphone Array Geometry Descriptor Format
 
 
-A USB audio microphone array must describe itself to the system to which it is connected. This means that the parameters that are required to describe the array must be embedded in the array device itself. Array geometry information is retrieved from the device by using a [GET\_MEM](https://go.microsoft.com/fwlink/p/?linkid=143724) request.
+A USB audio microphone array must describe itself to the system to which it is connected. This means that the parameters that are required to describe the array must be embedded in the array device itself. Array geometry information is retrieved from the device by using a **GET\_MEM** request.
 
 Information about USB audio device geometry must be provided in a standard format. As such, USB microphone arrays that are intended to work with the Windows Vista USB audio class driver must provide a descriptor that uses the information format that is defined in the following table.
 

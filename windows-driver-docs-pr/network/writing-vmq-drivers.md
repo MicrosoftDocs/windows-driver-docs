@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This section provides information about writing NDIS virtual machine queue (VMQ) drivers. You should already understand the [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md) before you read this section.
 
-**Note**  Be sure to study the [NDIS Virtual Miniport Driver sample](http://go.microsoft.com/fwlink/p/?LinkId=617918), especially the vmq.c and vmq.h source files.
+**Note**  Be sure to study the [NDIS Virtual Miniport Driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617918), especially the vmq.c and vmq.h source files.
 
  
 

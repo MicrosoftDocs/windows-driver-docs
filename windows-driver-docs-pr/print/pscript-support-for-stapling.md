@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-The Microsoft Pscript driver supports the following standard stapling features in [*PPD*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-postscript-printer-description--ppd-) files.
+The Microsoft Pscript driver supports the following standard stapling features in *PPD* files.
 
 -   \*StapleLocation
 

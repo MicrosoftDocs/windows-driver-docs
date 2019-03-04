@@ -81,7 +81,7 @@ If a deinterlace mode that requires multiple reference streams is used with prog
 
 For the reference video samples in the array that is passed in the *pDDSrcSurfaces* parameter, the **rtStart** and **rtEnd** members of the DXVA\_VideoSample2 structure for the samples indicate the temporal location of the samples. For each video substream sample in the array, the **rtStart** and **rtEnd** members of the DXVA\_VideoSample2 structure for each sample are cleared to 0.
 
-Only video substreams with the AI44, IA44, and AYUV [*FOURCC*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fourcc) pixel formats can be supplied to the driver. For more information, see [Supplying Video Substream and Destination Surfaces](https://msdn.microsoft.com/library/windows/hardware/ff569751).
+Only video substreams with the AI44, IA44, and AYUV *FOURCC* pixel formats can be supplied to the driver. For more information, see [Supplying Video Substream and Destination Surfaces](https://msdn.microsoft.com/library/windows/hardware/ff569751).
 
 For palletized video substream pixel formats, the **Palette** member of the [**DXVA\_VideoSample2**](https://msdn.microsoft.com/library/windows/hardware/ff564092) structure for each video substream contains an array of 16 palette entries that the driver should use when compositing the substream sample. For nonpalletized pixel formats, the palette entries are cleared to zero and can be ignored.
 
