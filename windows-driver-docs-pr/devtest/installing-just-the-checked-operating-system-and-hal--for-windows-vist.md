@@ -34,11 +34,11 @@ The following example is from a setupapi.dev.log file. The *SourceFilename* is h
 ```
 {FILE_QUEUE_COPY}
    CopyStyle      - 0x09180000
-   SourceRootPath - &#39;C:\Windows\System32\DriverStore\FileRepository\hal.inf_0c52392f&#39;
-   SourceFilename - &#39;halmacpi.dll&#39;
-   TargetDirectory- &#39;C:\Windows\system32&#39;
-   TargetFilename - &#39;hal.dll&#39;
-   SourceDesc     - &#39;windows cd&#39;
+   SourceRootPath - 'C:\Windows\System32\DriverStore\FileRepository\hal.inf_0c52392f'
+   SourceFilename - 'halmacpi.dll'
+   TargetDirectory- 'C:\Windows\system32'
+   TargetFilename - 'hal.dll'
+   SourceDesc     - 'windows cd'
 {FILE_QUEUE_COPY exit(0x00000000)}
 ```
 

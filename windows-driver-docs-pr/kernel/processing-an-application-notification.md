@@ -27,7 +27,7 @@ OnDeviceChange(
   LPARAM lParam
   ); 
 
-// The application&#39;s message processing function
+// The application's message processing function
 // for the window that receives the WM_DEVICECHANGE
 // messages.
 LRESULT CALLBACK

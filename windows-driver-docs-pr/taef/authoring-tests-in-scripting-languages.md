@@ -78,7 +78,7 @@ For script language tests, TAEF uses a slightly modified [Windows Script Compone
 52          <reference guid="e65ef678-a232-42a7-8a36-63108d719f31" version="1.0"/>
 53
 54          <public>
-55              <!-- Test setup and cleanup methods are declared using corresponding type = &#39;&#39; attributes -->
+55              <!-- Test setup and cleanup methods are declared using corresponding type = '' attributes -->
 56              <method name="ClassSetup" type="TestClassSetup"/>
 57              <method name="ClassCleanup" type="TestClassCleanup"/>
 58              <method name="MethodSetup"  type="TestMethodSetup"/>

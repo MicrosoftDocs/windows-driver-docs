@@ -47,7 +47,7 @@ This bug check appears very infrequently.
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
-<td align="left"><p>The value of the thread&#39;s APC state index.</p></td>
+<td align="left"><p>The value of the thread's APC state index.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>

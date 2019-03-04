@@ -75,7 +75,7 @@ The DDI compliance rules for audio (PortCls) miniport drivers verify the DDI int
 <td align="left"><p><a href="audio-pcunmapallocatedpages.md" data-raw-source="[&lt;strong&gt;PcUnmapAllocatedPages&lt;/strong&gt;](audio-pcunmapallocatedpages.md)"><strong>PcUnmapAllocatedPages</strong></a></p></td>
 <td align="left"><p>The PcUnmapAllocatedPages rule specifies that:</p>
 <ul>
-<li>A PortCls miniport driver doesn&#39;t map an MDL that is currently mapped without first unmapping it.</li>
+<li>A PortCls miniport driver doesn't map an MDL that is currently mapped without first unmapping it.</li>
 <li>A PortCls miniport driver unmaps the memory prior to freeing it using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536738" data-raw-source="[IMiniportWaveRTStream](https://msdn.microsoft.com/library/windows/hardware/ff536738)">IMiniportWaveRTStream</a> interface.</li>
 </ul></td>
 </tr>

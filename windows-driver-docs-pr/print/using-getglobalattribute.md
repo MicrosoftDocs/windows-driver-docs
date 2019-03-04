@@ -90,7 +90,7 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <tr class="odd">
 <td><p><strong>NickName</strong></p></td>
 <td><p><em><em>pdwDataType</em>: kADT_UNICODE</p>
-<p><em>pbData</em>: NULL-terminated Unicode string of the PPD&#39;s *ShortNickName value if *ShortNickName is present, or *NickName value if *ShortNickName is absent.</p>
+<p><em>pbData</em>: NULL-terminated Unicode string of the PPD's *ShortNickName value if *ShortNickName is present, or *NickName value if *ShortNickName is absent.</p>
 <p><em></em>pcbNeeded</em>: byte count of the Unicode string pointed to by <em>pbData</em> (including the last null character)</p></td>
 </tr>
 <tr class="even">

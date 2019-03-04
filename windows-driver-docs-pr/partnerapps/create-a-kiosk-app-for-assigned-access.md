@@ -39,7 +39,7 @@ There are two different experiences that assigned access provides:
 <tbody>
 <tr class="odd">
 <td><p><span id="assigned_access"></span><span id="ASSIGNED_ACCESS"></span>assigned access</p></td>
-<td><p>A feature that allows a system administrator to manage the user’s experience by limiting application entry points exposed to the user of the device. For example, you can restrict customers at your business to using one app so your PC acts like a kiosk. Whenever someone signs in with the specified account, they&#39;ll only be able to use that one app. They won&#39;t be able to switch apps or close the app using touch gestures, a mouse, the keyboard, or hardware buttons. They also won&#39;t see any app notifications.</p></td>
+<td><p>A feature that allows a system administrator to manage the user’s experience by limiting application entry points exposed to the user of the device. For example, you can restrict customers at your business to using one app so your PC acts like a kiosk. Whenever someone signs in with the specified account, they'll only be able to use that one app. They won't be able to switch apps or close the app using touch gestures, a mouse, the keyboard, or hardware buttons. They also won't see any app notifications.</p></td>
 </tr>
 <tr class="even">
 <td><p><span id="lock_screen_app__or_lock_app_"></span><span id="LOCK_SCREEN_APP__OR_LOCK_APP_"></span>lock screen app (or lock app)</p></td>

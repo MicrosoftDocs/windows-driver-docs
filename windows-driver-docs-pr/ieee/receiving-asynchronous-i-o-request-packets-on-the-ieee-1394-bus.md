@@ -88,7 +88,7 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
     PhysMapInfo.PhysAddrMappingRoutine(PhysMapInfo.Context, pIRB);
      
     /* 
-    The bus driver does the allocation asynchronously. When it&#39;s done, it will signal the driver by executing AllocationCompletionRoutine(pIRB->u.AllocateAddressRange.Context);
+    The bus driver does the allocation asynchronously. When it's done, it will signal the driver by executing AllocationCompletionRoutine(pIRB->u.AllocateAddressRange.Context);
     */
      
     ```
@@ -280,7 +280,7 @@ kmdf1394_NotificationCallback (
                 break;
 
             case NOTIFY_FLAGS_AFTER_READ:
-                // Don&#39;t touch ResponseCode if no error
+                // Don't touch ResponseCode if no error
                 // NotifyInfo->ResponseCode = RCODE_RESPONSE_COMPLETE;
                 break;
 
@@ -439,7 +439,7 @@ kmdf1394_NotificationCallback (
                         *NotifyInfo->ResponseLength = sizeof(ULONG);
 
                         // NotifyInfo->ResponseCode
-                        // specifies the result of the driver&#39;s response to the request
+                        // specifies the result of the driver's response to the request
                         NotifyInfo->ResponseCode = RCODE_RESPONSE_COMPLETE;
 
                         // Enqueue the work item to clean up after notification completion

@@ -111,7 +111,7 @@ The following table identifies the required conditions necessary to grant an opl
 <li><p>No Oplock: The request is granted.</p></li>
 <li>Level 2 and/or Read: The request is granted. You can have multiple Level 2/Read oplocks granted on the same stream at the same time. Multiple Level 2 (but not Read) oplocks can even exist on the same handle.
 <ul>
-<li>If a Read oplock is requested on a handle that already has a Read oplock granted to it, the first Read oplock&#39;s IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE before the second Read oplock is granted.</li>
+<li>If a Read oplock is requested on a handle that already has a Read oplock granted to it, the first Read oplock's IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE before the second Read oplock is granted.</li>
 </ul></li>
 <li><p>Level 1, Batch, Filter, Read-Handle, Read-Write, Read-Write-Handle: STATUS_OPLOCK_NOT_GRANTED is returned.</p></li>
 </ul></td>
@@ -207,7 +207,7 @@ The following table identifies the required conditions necessary to grant an opl
 <p>Be aware that if the current oplock state is:</p>
 <ul>
 <li><p>No Oplock: the request is granted.</p></li>
-<li>Read or Read-Write and the existing oplock has the same oplock key as the request: the existing oplock&#39;s IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE, the request is granted.
+<li>Read or Read-Write and the existing oplock has the same oplock key as the request: the existing oplock's IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE, the request is granted.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
@@ -238,7 +238,7 @@ The following table identifies the required conditions necessary to grant an opl
 <p>Be aware that if the current oplock state is:</p>
 <ul>
 <li><p>No Oplock: the request is granted.</p></li>
-<li>Read, Read-Handle, Read-Write, or Read-Write-Handle and the existing oplock has the same oplock key as the request: the existing oplock&#39;s IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE, the request is granted.
+<li>Read, Read-Handle, Read-Write, or Read-Write-Handle and the existing oplock has the same oplock key as the request: the existing oplock's IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE, the request is granted.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>

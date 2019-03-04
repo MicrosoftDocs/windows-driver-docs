@@ -30,7 +30,7 @@ Environment:
 --*/
 #include "precomp.h"
 
-#define TLV_POOL_TAG (ULONG) &#39;_VLT&#39;
+#define TLV_POOL_TAG (ULONG) '_VLT'
 
 void* __cdecl operator new(size_t Size, ULONG_PTR AllocationContext)
 /*++

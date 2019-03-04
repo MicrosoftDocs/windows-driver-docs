@@ -103,13 +103,13 @@ For the **POOL\_TYPE** type you can fix this by changing the request type to the
 The following code generates a warning:
 
 ```
-ExAllocatePoolWithTag(NonPagedPool, numberOfBytes, &#39;xppn&#39;);
+ExAllocatePoolWithTag(NonPagedPool, numberOfBytes, 'xppn');
 ```
 
 The following code avoids the warning:
 
 ```
-ExAllocatePoolWithTag(NonPagedPoolNx, numberOfBytes, &#39;xppn&#39;);
+ExAllocatePoolWithTag(NonPagedPoolNx, numberOfBytes, 'xppn');
 ```
 
 **Other special cases:**

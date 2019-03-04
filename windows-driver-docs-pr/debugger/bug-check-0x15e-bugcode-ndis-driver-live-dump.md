@@ -48,7 +48,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>NDIS_BUGCHECK_MINIPORT_FATAL_ERROR</p>
 <p>A miniport driver has encountered a fatal error and requested re-enumeration.</p></td>
 <td align="left"><p>The address of the miniport block. Run <strong><a href="-ndiskd-minidriver.md" data-raw-source="[!ndiskd.minidriver](-ndiskd-minidriver.md)">!ndiskd.minidriver</a></strong> with this address for more information.</p></td>
-<td align="left"><p>The address of the miniport&#39;s Physical Device Object (PDO)</p></td>
+<td align="left"><p>The address of the miniport's Physical Device Object (PDO)</p></td>
 <td align="left"><p>The fatal error that caused this live dump to be taken. Possible values:</p>
 <ol>
 <li>70: Caused by user mode</li>

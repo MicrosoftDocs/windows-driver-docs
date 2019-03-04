@@ -132,20 +132,20 @@ Using TShell, connect to the device, copy the files over, and begin tracing.
 open-device 127.0.0.1
 cmdd "mkdir \data\test\wlan"
 putd wdiguids.txt \data\test\wlan
-cmdd tracelog.exe &#39;-start wdiwpp -f \data\test\wlan\wdiwpp.etl -cir 256 -rt -ls -ft 1&#39;
-cmdd tracelog.exe &#39;-enable wdiwpp -guid \data\test\wlan\wdiguids.txt -level 0x7fffffff -flag 0x7fffffff&#39;
+cmdd tracelog.exe '-start wdiwpp -f \data\test\wlan\wdiwpp.etl -cir 256 -rt -ls -ft 1'
+cmdd tracelog.exe '-enable wdiwpp -guid \data\test\wlan\wdiguids.txt -level 0x7fffffff -flag 0x7fffffff'
 ```
 
 Run your scenario. To stop tracing and collect the logs, reconnect to TShell (if needed) and run the following commands.
 
 ```PowerShell
-cmdd tracelog.exe &#39;-flush wdiwpp&#39;
-cmdd tracelog.exe &#39;-stop wdiwpp&#39;
+cmdd tracelog.exe '-flush wdiwpp'
+cmdd tracelog.exe '-stop wdiwpp'
 getd \data\test\wlan\wdiwpp.etl
-cmdd &#39;tracelog -flush WiFiDriver -f C:\data\systemdata\etw\wifidriver.etl&#39;
-getd &#39;C:\data\systemdata\etw\wifidriver.etl&#39;
-cmdd &#39;tracelog -flush WiFiSession&#39;
-getd &#39;C:\Data\SystemData\ETW\WiFi.etl.001&#39;
-getd &#39;C:\Data\SystemData\ETW\WiFi.etl.002&#39;
-getd &#39;C:\Data\SystemData\ETW\WiFi.etl.003&#39;
+cmdd 'tracelog -flush WiFiDriver -f C:\data\systemdata\etw\wifidriver.etl'
+getd 'C:\data\systemdata\etw\wifidriver.etl'
+cmdd 'tracelog -flush WiFiSession'
+getd 'C:\Data\SystemData\ETW\WiFi.etl.001'
+getd 'C:\Data\SystemData\ETW\WiFi.etl.002'
+getd 'C:\Data\SystemData\ETW\WiFi.etl.003'
 ```

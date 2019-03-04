@@ -40,7 +40,7 @@ The Multiple Interface Test Tool (MITT) is a test tool for validating hardware a
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/dn919778" data-raw-source="[Capacitive touch tests in MITT](https://msdn.microsoft.com/library/windows/hardware/dn919778)">Capacitive touch tests in MITT</a></p></td>
-<td><p>Capacitive touch tests in the MITT software package require MCATT (Microsoft Capacitive Applications Test Tool). It&#39;s an automation tool for validating capacitive based touch hardware (touchpads and touchscreens). MCATT includes a simple interface for programming the MCATT device and automated tests. You can use the tests to detect ghost points or determine the time table for the first touch input to propagate after system wake.</p></td>
+<td><p>Capacitive touch tests in the MITT software package require MCATT (Microsoft Capacitive Applications Test Tool). It's an automation tool for validating capacitive based touch hardware (touchpads and touchscreens). MCATT includes a simple interface for programming the MCATT device and automated tests. You can use the tests to detect ghost points or determine the time table for the first touch input to propagate after system wake.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/dn919780" data-raw-source="[GPIO tests in MITT](https://msdn.microsoft.com/library/windows/hardware/dn919780)">GPIO tests in MITT</a></p></td>

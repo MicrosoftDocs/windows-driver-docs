@@ -44,7 +44,7 @@ HRESULT hrEventCookie = GetClientEventCookie(pCommandParams, &pszEventCookie);
 if (hrEventCookie == S_OK && pszEventCookie != NULL)
 {    
 // Add it to the event parameters    
-// The application&#39;s OnEvent callback will match this with its cookie    
+// The application's OnEvent callback will match this with its cookie    
 hrEventCookie = pEventParams->SetStringValue(WPD_CLIENT_EVENT_COOKIE, pszEventCookie);
 }
 CoTaskMemFree(pszEventCookie);

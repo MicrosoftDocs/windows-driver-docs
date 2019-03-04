@@ -79,8 +79,8 @@ The hardware certification submission list displays the following information ab
 <td><p>Your permission for the submission. Possible values are:</p>
 <ul>
 <li>Author: Author of the driver. You can complete all tasks and share the driver with partners.</li>
-<li>Publisher: The driver is shared with you. You can download the driver, create Windows Update shipping labels, and create DUA packages. You can&#39;t share the driver with additional companies.</li>
-<li>Read-only: The driver was submitted to Windows Update on your behalf. You can see the driver details, download the driver, and view the shipping label that was submitted on your behalf. You can&#39;t create shipping labels or create DUA packages.</li>
+<li>Publisher: The driver is shared with you. You can download the driver, create Windows Update shipping labels, and create DUA packages. You can't share the driver with additional companies.</li>
+<li>Read-only: The driver was submitted to Windows Update on your behalf. You can see the driver details, download the driver, and view the shipping label that was submitted on your behalf. You can't create shipping labels or create DUA packages.</li>
 </ul></td>
 </tr>
 <tr class="odd">

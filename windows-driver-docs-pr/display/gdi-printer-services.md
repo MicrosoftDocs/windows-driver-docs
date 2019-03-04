@@ -49,7 +49,7 @@ GDI provides a number of services that are of interest to printer driver writers
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564951" data-raw-source="[&lt;strong&gt;EngGetPrinterDataFileName&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564951)"><strong>EngGetPrinterDataFileName</strong></a></p></td>
-<td align="left"><p>Retrieves the string name of the printer&#39;s data file.</p></td>
+<td align="left"><p>Retrieves the string name of the printer's data file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564954" data-raw-source="[&lt;strong&gt;EngGetPrinterDriver&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564954)"><strong>EngGetPrinterDriver</strong></a></p></td>
