@@ -44,7 +44,7 @@ The following table lists the %hostfont% registry entry names, their types, and 
 <td><p>HostFontExceptFonts</p></td>
 <td><p>REG_BINARY</p>
 <p>Can contain multiple, NULL-terminated ASCII strings containing the PostScript font names. The final string is terminated by an extra null character.</p></td>
-<td><p>Fonts that the Pscript5 driver does not &quot;see&quot; as available and identical to those fonts in the %hostfont%-ready PostScript interpreter. The Pscript5 driver downloads only these fonts.</p></td>
+<td><p>Fonts that the Pscript5 driver does not "see" as available and identical to those fonts in the %hostfont%-ready PostScript interpreter. The Pscript5 driver downloads only these fonts.</p></td>
 </tr>
 <tr class="odd">
 <td><p>HostFontHasMostFonts</p></td>
@@ -62,7 +62,7 @@ The following table lists the %hostfont% registry entry names, their types, and 
 <td><p>HostFontIncludesFonts</p></td>
 <td><p>REG_BINARY</p>
 <p>Can contain multiple, NULL-terminated ASCII strings containing the PostScript font names. The final string is terminated by an extra null character.</p></td>
-<td><p>Fonts that the Pscript5 driver &quot;sees&quot; as the only ones that are available and identical in the %hostfont%-ready PostScript interpreter. The Pscript5 driver does not download these fonts.</p></td>
+<td><p>Fonts that the Pscript5 driver "sees" as the only ones that are available and identical in the %hostfont%-ready PostScript interpreter. The Pscript5 driver does not download these fonts.</p></td>
 </tr>
 </tbody>
 </table>

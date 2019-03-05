@@ -287,7 +287,7 @@ The available options are divided into several classes. Each class of options co
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/ee</strong> <em>File</em></p></td>
-<td align="left"><p>Error messages for those programs listed in the specified file are suppressed. &quot;Success&quot; and &quot;ignore&quot; messages will appear as usual, and symbol files will be copied to the downstream store as usual. The format of <em>File</em> and the format of its contents are the same as that for <strong>/ea</strong> <em>File</em>.</p></td>
+<td align="left"><p>Error messages for those programs listed in the specified file are suppressed. "Success" and "ignore" messages will appear as usual, and symbol files will be copied to the downstream store as usual. The format of <em>File</em> and the format of its contents are the same as that for <strong>/ea</strong> <em>File</em>.</p></td>
 </tr>
 </tbody>
 </table>

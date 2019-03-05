@@ -238,7 +238,7 @@ Use the following table to interpret the output and determine what driver code c
 <tr class="odd">
 <td align="left"><p>Execute Page Protection</p></td>
 <td align="left"><p>The caller specified an executable page protection.</p>
-<p>Specify a &quot;no execute&quot; page protection mask.</p>
+<p>Specify a "no execute" page protection mask.</p>
 </td>
 </tr>
 

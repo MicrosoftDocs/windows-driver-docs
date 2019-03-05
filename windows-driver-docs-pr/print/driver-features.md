@@ -32,25 +32,25 @@ The following table lists the currently supported driver features. Each row in t
 <tbody>
 <tr class="odd">
 <td><p><strong>%AddEuro</strong></p></td>
-<td><p>&quot;True&quot;</p>
-<p>&quot;False&quot;</p></td>
+<td><p>"True"</p>
+<p>"False"</p></td>
 <td><p>Yes</p></td>
 <td><p>Add the Euro symbol to device fonts.</p>
-<p>This feature is supported only for Level 2+ printers. For Level 1 printers, <strong>SetOptions</strong> ignores this feature, and <strong>GetOptions</strong> always returns &quot;False&quot;.</p>
+<p>This feature is supported only for Level 2+ printers. For Level 1 printers, <strong>SetOptions</strong> ignores this feature, and <strong>GetOptions</strong> always returns "False".</p>
 <p>Printer-sticky</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>%CtrlDAfter</strong></p></td>
-<td><p>&quot;True&quot;</p>
-<p>&quot;False&quot;</p></td>
+<td><p>"True"</p>
+<p>"False"</p></td>
 <td><p>Yes</p></td>
 <td><p>Send Ctrl-D after each job.</p>
 <p>Printer-sticky</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>%CtrlDBefore</strong></p></td>
-<td><p>&quot;True&quot;</p>
-<p>&quot;False&quot;</p></td>
+<td><p>"True"</p>
+<p>"False"</p></td>
 <td><p>Yes</p></td>
 <td><p>Send Ctrl-D before each job.</p>
 <p>Printer-sticky</p></td>
@@ -64,8 +64,8 @@ The following table lists the currently supported driver features. Each row in t
 </tr>
 <tr class="odd">
 <td><p><strong>%GraphicsTrueGray</strong></p></td>
-<td><p>&quot;True&quot;</p>
-<p>&quot;False&quot;</p></td>
+<td><p>"True"</p>
+<p>"False"</p></td>
 <td><p>Yes</p></td>
 <td><p>Convert gray graphics to PostScript gray.</p>
 <p>Printer-sticky</p></td>
@@ -88,8 +88,8 @@ The following table lists the currently supported driver features. Each row in t
 </tr>
 <tr class="even">
 <td><p><strong>%MetafileSpooling</strong></p></td>
-<td><p>&quot;True&quot;</p>
-<p>&quot;False&quot;</p></td>
+<td><p>"True"</p>
+<p>"False"</p></td>
 <td><p>Yes</p></td>
 <td><p>Enable/disable advanced printing features.</p>
 <p>Document-sticky</p>
@@ -105,30 +105,30 @@ The following table lists the currently supported driver features. Each row in t
 </tr>
 <tr class="even">
 <td><p><strong>%Mirroring</strong></p></td>
-<td><p>&quot;True&quot;</p>
-<p>&quot;False&quot;</p></td>
+<td><p>"True"</p>
+<p>"False"</p></td>
 <td><p>Yes</p></td>
 <td><p>Mirror output by reversing the horizontal coordinates.</p>
 <p>Document-sticky</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>%Negative</strong></p></td>
-<td><p>&quot;True&quot;</p>
-<p>&quot;False&quot;</p></td>
+<td><p>"True"</p>
+<p>"False"</p></td>
 <td><p>Yes</p></td>
-<td><p>Produce negative output by reversing values for black and white. This feature is supported only for black and white printers. For color printers, <strong>SetOptions</strong> ignores this feature, and <strong>GetOptions</strong> always returns &quot;False&quot;.</p>
+<td><p>Produce negative output by reversing values for black and white. This feature is supported only for black and white printers. For color printers, <strong>SetOptions</strong> ignores this feature, and <strong>GetOptions</strong> always returns "False".</p>
 <p>Document-sticky</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>%Orientation</strong></p></td>
-<td><p>&quot;Portrait&quot;, &quot;Landscape&quot;, &quot;RotatedLandscape&quot;</p></td>
+<td><p>"Portrait", "Landscape", "RotatedLandscape"</p></td>
 <td><p>Yes</p></td>
 <td><p>Specify the output orientation.</p>
 <p>Document-sticky</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>%OutputFormat</strong></p></td>
-<td><p>&quot;Speed&quot;, &quot;Portability&quot;, &quot;EPS&quot;, &quot;Archive&quot;</p></td>
+<td><p>"Speed", "Portability", "EPS", "Archive"</p></td>
 <td><p>Yes</p></td>
 <td><p>Specify the PostScript output format.</p>
 <p>Document-sticky</p>
@@ -136,22 +136,22 @@ The following table lists the currently supported driver features. Each row in t
 </tr>
 <tr class="even">
 <td><p><strong>%OutputProtocol</strong></p></td>
-<td><p>&quot;ASCII&quot;, &quot;BCP&quot;, &quot;TBCP&quot;, &quot;Binary&quot;</p></td>
+<td><p>"ASCII", "BCP", "TBCP", "Binary"</p></td>
 <td><p>Yes</p></td>
-<td><p>Specify the protocol the printer will use for print jobs. PostScript printers are assumed to support &quot;ASCII&quot; and &quot;Binary&quot;, so these options are always available. The &quot;BCP&quot; and &quot;TBCP&quot; options are available only if they are supported. (To find this out, check the global attribute &quot;Protocols&quot;.</p>
+<td><p>Specify the protocol the printer will use for print jobs. PostScript printers are assumed to support "ASCII" and "Binary", so these options are always available. The "BCP" and "TBCP" options are available only if they are supported. (To find this out, check the global attribute "Protocols".</p>
 <p>Printer-sticky</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>%OutputPSLevel</strong></p></td>
-<td><p>&quot;1&quot;, &quot;2&quot;, &quot;3&quot;</p></td>
+<td><p>"1", "2", "3"</p></td>
 <td><p>No</p></td>
-<td><p>Specify which PostScript language level to use for the print job. The setting will never be greater than the value specified in the &quot;LanguageLevel&quot; global attribute.</p>
+<td><p>Specify which PostScript language level to use for the print job. The setting will never be greater than the value specified in the "LanguageLevel" global attribute.</p>
 <p>Document-sticky</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>%PageOrder</strong></p></td>
-<td><p>&quot;FrontToBack&quot;</p>
-<p>&quot;BackToFront&quot;</p></td>
+<td><p>"FrontToBack"</p>
+<p>"BackToFront"</p></td>
 <td><p>Yes</p></td>
 <td><p>Specify the order in which pages will be printed.</p>
 <p>Document-sticky</p>
@@ -159,17 +159,17 @@ The following table lists the currently supported driver features. Each row in t
 </tr>
 <tr class="odd">
 <td><p><strong>%PagePerSheet</strong></p></td>
-<td><p>&quot;1&quot;, &quot;2&quot;, &quot;4&quot;, &quot;6&quot;,</p>
-<p>&quot;9&quot;, &quot;16&quot;, &quot;Booklet&quot;</p></td>
+<td><p>"1", "2", "4", "6",</p>
+<p>"9", "16", "Booklet"</p></td>
 <td><p>Yes</p></td>
-<td><p>Specify the number of logical pages per physical sheet. This feature is also known as &quot;N-up&quot; printing.</p>
+<td><p>Specify the number of logical pages per physical sheet. This feature is also known as "N-up" printing.</p>
 <p>Document-sticky</p>
 <p>See Note 4 below for more information.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>%PSErrorHandler</strong></p></td>
-<td><p>&quot;True&quot;</p>
-<p>&quot;False&quot;</p></td>
+<td><p>"True"</p>
+<p>"False"</p></td>
 <td><p>Yes</p></td>
 <td><p>Send PostScript error handler.</p>
 <p>Document-sticky</p></td>
@@ -185,17 +185,17 @@ The following table lists the currently supported driver features. Each row in t
 </tr>
 <tr class="even">
 <td><p><strong>%TextTrueGray</strong></p></td>
-<td><p>&quot;True&quot;</p>
-<p>&quot;False&quot;</p></td>
+<td><p>"True"</p>
+<p>"False"</p></td>
 <td><p>Yes</p></td>
 <td><p>Convert gray text to PostScript gray.</p>
 <p>Printer-sticky</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>%TTDownloadFormat</strong></p></td>
-<td><p>&quot;Automatic&quot;, &quot;Outline&quot;, &quot;Bitmap&quot;, &quot;NativeTrueType&quot;</p></td>
+<td><p>"Automatic", "Outline", "Bitmap", "NativeTrueType"</p></td>
 <td><p>Yes</p></td>
-<td><p>Specify TrueType font downloading format. &quot;NativeTrueType&quot; is supported only when the &quot;TTRasterizer&quot; global attribute indicates support for &quot;Type42&quot;.</p>
+<td><p>Specify TrueType font downloading format. "NativeTrueType" is supported only when the "TTRasterizer" global attribute indicates support for "Type42".</p>
 <p>Document-sticky</p></td>
 </tr>
 <tr class="even">
@@ -321,14 +321,14 @@ The order of feature/option keyword pairs in the buffer pointed to by *pmszFeatu
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>&quot;%MetafileSpooling\0False\0%PagePerSheet\0Booklet\0\0&quot;</p></td>
-<td><p>&quot;Booklet&quot;</p></td>
-<td><p>&quot;True&quot;</p></td>
+<td><p>"%MetafileSpooling\0False\0%PagePerSheet\0Booklet\0\0"</p></td>
+<td><p>"Booklet"</p></td>
+<td><p>"True"</p></td>
 </tr>
 <tr class="even">
-<td><p>&quot;%PagePerSheet\0Booklet\0%MetafileSpooling\0False\0\0&quot;</p></td>
-<td><p>&quot;1&quot;</p></td>
-<td><p>&quot;False&quot;</p></td>
+<td><p>"%PagePerSheet\0Booklet\0%MetafileSpooling\0False\0\0"</p></td>
+<td><p>"1"</p></td>
+<td><p>"False"</p></td>
 </tr>
 </tbody>
 </table>

@@ -179,7 +179,7 @@ CatalogFile=wudf.cat
 [MyAddReg]
 HKR,,DllPath,%SystemRoot%\System32\myDll.sys
 </pre>
-This line causes the INF parser to attempt to locate the token &quot;SystemRoot&quot; from the [Strings] section, rather than the intended behavior of storing the literal &quot;%SystemRoot%&quot; in the registry.  To use the literal value %SystemRoot% rather than perform a string replacement, use the escape sequence %%.
+This line causes the INF parser to attempt to locate the token "SystemRoot" from the [Strings] section, rather than the intended behavior of storing the literal "%SystemRoot%" in the registry.  To use the literal value %SystemRoot% rather than perform a string replacement, use the escape sequence %%.
 <pre>
 [MyAddReg]
 HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys

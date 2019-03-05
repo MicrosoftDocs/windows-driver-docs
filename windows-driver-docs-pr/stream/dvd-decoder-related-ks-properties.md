@@ -148,7 +148,7 @@ The [KSPROPSETID\_TSRateChange](https://msdn.microsoft.com/library/windows/hardw
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567280" data-raw-source="[&lt;strong&gt;KS_AM_RATE_ExactRateChange&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567280)"><strong>KS_AM_RATE_ExactRateChange</strong></a></p></td>
-<td><p>Specifies an &quot;input&quot; time stamp to begin a new time stamp rate. This property is not yet implemented.</p></td>
+<td><p>Specifies an "input" time stamp to begin a new time stamp rate. This property is not yet implemented.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567284" data-raw-source="[&lt;strong&gt;KS_AM_RATE_MaxFullDataRate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567284)"><strong>KS_AM_RATE_MaxFullDataRate</strong></a></p></td>

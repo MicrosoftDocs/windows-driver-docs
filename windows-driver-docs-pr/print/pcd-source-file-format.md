@@ -87,7 +87,7 @@ Keywords are described in the following table.
 <tr class="odd">
 <td><p><strong>DeviceName</strong></p></td>
 <td><p>Quoted string representing a displayable device name (31 characters max.)</p></td>
-<td><p>&quot;HPGL/2 Plotter&quot;</p></td>
+<td><p>"HPGL/2 Plotter"</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DevicePelsDPI</strong></p></td>

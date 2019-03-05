@@ -90,7 +90,7 @@ As a driver developer, you must have coding experience in the C programming lang
 </tr>
 <tr class="odd">
 <td><p><strong>Step 9</strong>—Extend your driver to use WDF USB I/O target objects to perform USB data transfers. <a href="usb-device-i-o.md" data-raw-source="[USB data transfers](usb-device-i-o.md)">USB data transfers</a>.</p></td>
-<td><p>Extend your driver to perform common tasks. This topic lists the &quot;How to&quot; topics in this documentation set that provide step-by-step guidance about those tasks.</p>
+<td><p>Extend your driver to perform common tasks. This topic lists the "How to" topics in this documentation set that provide step-by-step guidance about those tasks.</p>
 <ul>
 <li><a href="wdk-resources-for-usb-driver-development.md" data-raw-source="[Common tasks for USB client drivers](wdk-resources-for-usb-driver-development.md)">Common tasks for USB client drivers</a></li>
 </ul></td>

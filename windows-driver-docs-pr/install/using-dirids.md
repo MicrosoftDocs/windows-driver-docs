@@ -129,7 +129,7 @@ Don't use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-
 <tr class="odd">
 <td align="left"><p><strong>24</strong></p></td>
 <td align="left"><p>Root directory of the system disk.</p>
-<p>This is the root directory of the disk on which Windows files are installed. For example, if <em>dirid</em> 10 is &quot;<em>C:\winnt</em>&quot;, then <em>dirid</em> 24 is &quot;<em>C:\</em>&quot;.</p></td>
+<p>This is the root directory of the disk on which Windows files are installed. For example, if <em>dirid</em> 10 is "<em>C:\winnt</em>", then <em>dirid</em> 24 is "<em>C:\</em>".</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>25</strong></p></td>
@@ -137,7 +137,7 @@ Don't use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>30</strong></p></td>
-<td align="left"><p>Root directory of the boot disk, also known as &quot;ARC system partition&quot;. (This might or might not be the same directory as the one represented by <em>dirid</em> 24.)</p></td>
+<td align="left"><p>Root directory of the boot disk, also known as "ARC system partition". (This might or might not be the same directory as the one represented by <em>dirid</em> 24.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>50</strong></p></td>

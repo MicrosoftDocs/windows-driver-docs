@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Purpose</strong></p>
-<p>Static Driver Verifier (also known as &quot;StaticDV&quot; or &quot;SDV&quot;) is a static verification tool that systematically analyzes the source code of Windows kernel-mode drivers. SDV is a compile time tool that is capable of discovering defects and design issues in a driver. Based on a set of interface rules and a model of the operating system, SDV determines whether the driver correctly interacts with the Windows operating system kernel.</p>
+<p>Static Driver Verifier (also known as "StaticDV" or "SDV") is a static verification tool that systematically analyzes the source code of Windows kernel-mode drivers. SDV is a compile time tool that is capable of discovering defects and design issues in a driver. Based on a set of interface rules and a model of the operating system, SDV determines whether the driver correctly interacts with the Windows operating system kernel.</p>
 <p></p>
  
 <p><strong>Installation</strong></p>

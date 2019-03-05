@@ -18,7 +18,7 @@ Other methods for running the DevFund and SysFund tests include:
 
 - Hardware Lab Kit (HLK): The tests can be run from the command line on an [HLK client test machine](https://docs.microsoft.com/windows-hardware/test/hlk/testref/reproduce-the-test-failure-by-running-the-test-from-the-command-line)
 
-- Test machine &quot;provisioned&quot; through Visual Studio: [Running test via the command-line](https://docs.microsoft.com/windows-hardware/drivers/develop/how-to-test-a-driver-at-runtime-from-a-command-prompt)
+- Test machine "provisioned" through Visual Studio: [Running test via the command-line](https://docs.microsoft.com/windows-hardware/drivers/develop/how-to-test-a-driver-at-runtime-from-a-command-prompt)
 
 - Enterprise Windows Driver Kit (EWDK- does not require Visual Studio): If Visual Studio is not installed and will not be used, [use the EWDK to run tests on the command-line](https://docs.microsoft.com/windows-hardware/drivers/devtest/configure-the-machine-for-testing)
 

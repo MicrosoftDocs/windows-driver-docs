@@ -215,7 +215,7 @@ The following SIDs describe how the user logged into the machine.
 <tr class="odd">
 <td><p>IU</p></td>
 <td><p>Interactive Users</p>
-<p>Users who initially logged onto the machine &quot;interactively&quot;, such as local logons and Remote Desktops logons.</p></td>
+<p>Users who initially logged onto the machine "interactively", such as local logons and Remote Desktops logons.</p></td>
 </tr>
 <tr class="even">
 <td><p>NU</p></td>
@@ -227,7 +227,7 @@ The following SIDs describe how the user logged into the machine.
 <td><p>World</p>
 <p>Before Windows XP, this SID covered every session, whether authenticated users, anonymous users, or the Builtin Guest account.</p>
 <p>Starting with Windows XP, this SID does not cover anonymous logon sessions; it covers only authenticated users and the Builtin Guest account.</p>
-<p>Note that untrusted or &quot;restricted&quot; code is also not covered by the World SID. For more information, see the description of the Restricted Code (RC) SID in the following table.</p></td>
+<p>Note that untrusted or "restricted" code is also not covered by the World SID. For more information, see the description of the Restricted Code (RC) SID in the following table.</p></td>
 </tr>
 </tbody>
 </table>
@@ -259,7 +259,7 @@ The following SIDs deserve special mention.
 <td><p>UD</p></td>
 <td><p>User-Mode Drivers</p>
 <p>This SID grants access to user-mode drivers. Currently, this SID covers only drivers that are written for the User-Mode Driver Framework (UMDF). This SID is available starting with Windows 8.</p>
-<p>In earlier versions of Windows, which do not recognize the &quot;UD&quot; abbreviation, you must specify the fully qualified form of this SID (S-1-5-84-0-0-0-0-0) to grant access to UMDF drivers. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439567" data-raw-source="[Controlling Device Access](https://msdn.microsoft.com/library/windows/hardware/hh439567)">Controlling Device Access</a> in the User-Mode Driver Framework documentation.</p></td>
+<p>In earlier versions of Windows, which do not recognize the "UD" abbreviation, you must specify the fully qualified form of this SID (S-1-5-84-0-0-0-0-0) to grant access to UMDF drivers. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439567" data-raw-source="[Controlling Device Access](https://msdn.microsoft.com/library/windows/hardware/hh439567)">Controlling Device Access</a> in the User-Mode Driver Framework documentation.</p></td>
 </tr>
 </tbody>
 </table>

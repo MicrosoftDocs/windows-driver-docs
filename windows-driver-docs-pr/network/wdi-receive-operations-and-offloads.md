@@ -99,7 +99,7 @@ The following is a list of RX operations and offloads.
 </tr>
 <tr class="odd">
 <td align="left"><p>Chatter offload</p></td>
-<td align="left"><p>Avoid interrupting the host for each deferrable &quot;noise&quot; Rx frame. Instead, group the Rx noise frames and use a single interrupt to deliver all such frames.</p></td>
+<td align="left"><p>Avoid interrupting the host for each deferrable "noise" Rx frame. Instead, group the Rx noise frames and use a single interrupt to deliver all such frames.</p></td>
 <td align="left"><p>Target</p></td>
 <td align="left"></td>
 </tr>

@@ -762,13 +762,13 @@ Directly within the host object, the following properties, methods, and construc
 <td align="left">typeSignatureExtension</td>
 <td align="left"><p>new typeSignatureExtension(object, typeSignature, [moduleName], [minVersion], [maxVersion])</p></td>
 <td align="left">1</td>
-<td align="left">A constructor for an object intended to be placed in the array returned from <strong>initializeScript</strong>, this represents an extension of a native type described via a type signature by a JavaScript prototype or ES6 class. Such a registration &quot;adds fields&quot; to the debugger's visualization of any type which matches the signature rather than taking it over entirely. An optional module name and version can restrict the registration. Versions are specified as &quot;1.2.3.4&quot; style strings.</td>
+<td align="left">A constructor for an object intended to be placed in the array returned from <strong>initializeScript</strong>, this represents an extension of a native type described via a type signature by a JavaScript prototype or ES6 class. Such a registration "adds fields" to the debugger's visualization of any type which matches the signature rather than taking it over entirely. An optional module name and version can restrict the registration. Versions are specified as "1.2.3.4" style strings.</td>
 </tr>
 <tr class="even">
 <td align="left">typeSignatureRegistration</td>
 <td align="left"><p>new typeSignatureRegistration(object, typeSignature, [moduleName], [minVersion], [maxVersion])</p></td>
 <td align="left">1</td>
-<td align="left">A constructor for an object intended to be placed in the array returned from <strong>initializeScript</strong>, this represents a canonical registration of a JavaScript prototype or ES6 class against a native type signature. Such a registration &quot;takes over&quot; the debugger's visualization of any type which matches the signature rather than merely than extending it. An optional module name and version can restrict the registration. Versions are specified as &quot;1.2.3.4&quot; style strings.</td>
+<td align="left">A constructor for an object intended to be placed in the array returned from <strong>initializeScript</strong>, this represents a canonical registration of a JavaScript prototype or ES6 class against a native type signature. Such a registration "takes over" the debugger's visualization of any type which matches the signature rather than merely than extending it. An optional module name and version can restrict the registration. Versions are specified as "1.2.3.4" style strings.</td>
 </tr>
 <tr class="odd">
 <td align="left">unregisterNamedModel</td>
@@ -780,13 +780,13 @@ Directly within the host object, the following properties, methods, and construc
 <td align="left">unregisterExtensionForTypeSignature</td>
 <td align="left"><p>unregisterExtensionForTypeSignature(object, typeSignature, [moduleName], [minVersion], [maxVersion])</p></td>
 <td align="left">2</td>
-<td align="left">This unregisters a JavaScript prototype or ES6 class from being an extension data model for a native type as given by the supplied type signature. It is the logical undo of registerExtensionForTypeSignature. Note that a script should prefer to return a <strong>typeSignatureExtension</strong> object from its <strong>initializeScript</strong> method rather than doing this imperatively. Any script which makes changes imperatively is required to have an <strong>initializeScript</strong> method in order to clean up. An optional module name and version can restrict the registration. Versions are specified as &quot;1.2.3.4&quot; style strings.</td>
+<td align="left">This unregisters a JavaScript prototype or ES6 class from being an extension data model for a native type as given by the supplied type signature. It is the logical undo of registerExtensionForTypeSignature. Note that a script should prefer to return a <strong>typeSignatureExtension</strong> object from its <strong>initializeScript</strong> method rather than doing this imperatively. Any script which makes changes imperatively is required to have an <strong>initializeScript</strong> method in order to clean up. An optional module name and version can restrict the registration. Versions are specified as "1.2.3.4" style strings.</td>
 </tr>
 <tr class="odd">
 <td align="left">unregisterPrototypeForTypeSignature</td>
 <td align="left"><p>unregisterPrototypeForTypeSignature(object, typeSignature, [moduleName], [minVersion], [maxVersion])</p></td>
 <td align="left">2</td>
-<td align="left">This unregisters a JavaScript prototype or ES6 class from being the canonical data model (e.g.: visualizer) for a native type as given by the supplied type signature. It is the logical undo of registerPrototypeForTypeSignature. Note that a script should prefer to return a <strong>typeSignatureRegistration</strong> object from its <strong>initializeScript</strong> method rather than doing this imperatively. Any script which makes changes imperatively is required to have an <strong>uninitializeScript</strong> method in order to clean up. An optional module name and version can restrict the registration. Versions are specified as &quot;1.2.3.4&quot; style strings.</td>
+<td align="left">This unregisters a JavaScript prototype or ES6 class from being the canonical data model (e.g.: visualizer) for a native type as given by the supplied type signature. It is the logical undo of registerPrototypeForTypeSignature. Note that a script should prefer to return a <strong>typeSignatureRegistration</strong> object from its <strong>initializeScript</strong> method rather than doing this imperatively. Any script which makes changes imperatively is required to have an <strong>uninitializeScript</strong> method in order to clean up. An optional module name and version can restrict the registration. Versions are specified as "1.2.3.4" style strings.</td>
 </tr>
 </tbody>
 </table>

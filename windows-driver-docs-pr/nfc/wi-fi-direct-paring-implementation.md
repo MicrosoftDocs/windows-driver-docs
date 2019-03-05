@@ -466,7 +466,7 @@ This first table illustrates the format of the Wi-Fi Direct pairing portion of t
 <td align="left">11</td>
 <td align="left">0x01</td>
 <td align="left">1</td>
-<td align="left">Carrier Flags: CPS=1, &quot;active&quot;</td>
+<td align="left">Carrier Flags: CPS=1, "active"</td>
 </tr>
 <tr class="odd">
 <td align="left">12</td>
@@ -739,7 +739,7 @@ This second table illustrates the format of the network printer pairing portion 
 <p>0x72 0x4e 0x61 0x6d</p>
 <p>0x65</p></td>
 <td align="left">25</td>
-<td align="left">Printer name: “\printServer\printerName&quot;</td>
+<td align="left">Printer name: “\printServer\printerName"</td>
 </tr>
 </tbody>
 </table>

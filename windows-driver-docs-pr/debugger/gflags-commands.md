@@ -176,7 +176,7 @@ The following table lists the subparameters that are valid with **/ro**.
 <tr class="even">
 <td align="left"><p><strong>/i</strong> <em>ImageFile</em></p></td>
 <td align="left"><p>Limits the trace to objects that are created by processes with the specified image file. You can specify only one image file with the <strong>/i</strong> parameter.</p>
-<p>Enter an image file name, such as notepad.exe, with up to 64 characters. &quot;System&quot; and &quot;Idle&quot; are not valid image names.</p>
+<p>Enter an image file name, such as notepad.exe, with up to 64 characters. "System" and "Idle" are not valid image names.</p>
 <p>If you do not specify an image file, Windows traces all objects with the specified pool tags. If you specify both an image file (<strong>/i</strong>) and one or more pool tags (<strong>/t</strong>), Windows traces objects with any of the specified pool tags that are created by the specified image.</p></td>
 </tr>
 <tr class="odd">
