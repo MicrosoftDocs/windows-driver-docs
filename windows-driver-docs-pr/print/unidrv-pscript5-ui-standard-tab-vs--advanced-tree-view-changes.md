@@ -62,7 +62,7 @@ To present a consistent Unidrv/PScript5 driver UI for these standard printing fe
 </tr>
 <tr class="odd">
 <td><p>PageDeviceFont-Substitution</p></td>
-<td><p>If GPD or PPD defines a feature with the &quot;PageDeviceFontSubstitution&quot; Print Schema keyword and the feature has exactly two options with the &quot;On&quot; and &quot;Off&quot; Print Schema keywords that feature is shown in the <strong>TrueType Font</strong> list in the <strong>Advanced</strong> tab&#39;s &quot;Graphic&quot; group. The &quot;On&quot; option is shown as <strong>Substitute with Device Font</strong>, and the &quot;Off&quot; option is shown as <strong>Download as Softfont</strong>.</p>
+<td><p>If GPD or PPD defines a feature with the &quot;PageDeviceFontSubstitution&quot; Print Schema keyword and the feature has exactly two options with the &quot;On&quot; and &quot;Off&quot; Print Schema keywords that feature is shown in the <strong>TrueType Font</strong> list in the <strong>Advanced</strong> tab's &quot;Graphic&quot; group. The &quot;On&quot; option is shown as <strong>Substitute with Device Font</strong>, and the &quot;Off&quot; option is shown as <strong>Download as Softfont</strong>.</p>
 <p>Otherwise, the GPD or PPD feature is shown in the generic &quot;Printer Features&quot; group in the <strong>Advanced tree view</strong> UI.</p>
 <p>The following screen shot of the Advanced Options dialog box shows the Substitute with Device font option selected.</p>
 <img src="images/xpsdrv-printingpreferences4.png" alt="Screen shot of the Advanced Options dialog box with Substitute with Device font selected" /></td>

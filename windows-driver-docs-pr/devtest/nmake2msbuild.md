@@ -77,7 +77,7 @@ The conversion tool is located in the %PROGRAMFILES%\\Windows Kits\\8.0\\tools\\
 </tr>
 <tr class="odd">
 <td align="left"><strong>-SafeMode</strong></td>
-<td align="left">SafeMode does not provide IDE/UI support for NMAKE targets, but could provide a more accurate conversion for NMAKE targets. Only specify -SafeMode if you experience issues during build steps that were previously performed in your project&#39;s NMAKE targets.</td>
+<td align="left">SafeMode does not provide IDE/UI support for NMAKE targets, but could provide a more accurate conversion for NMAKE targets. Only specify -SafeMode if you experience issues during build steps that were previously performed in your project's NMAKE targets.</td>
 </tr>
 </tbody>
 </table>

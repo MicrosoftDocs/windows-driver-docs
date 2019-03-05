@@ -23,7 +23,7 @@ The following code example shows how to implement this callback function.
 
 ```cpp
 //
-// The PSHED plug-in&#39;s AttemptRecovery callback function
+// The PSHED plug-in's AttemptRecovery callback function
 //
 NTSTATUS
   AttemptRecovery(

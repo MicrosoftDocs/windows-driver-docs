@@ -31,7 +31,7 @@ HRESULT CSample::NotifyBindingPath(DWORD dwChangeFlag,
     DWORD dwFlags = EBP_BELOW;
     ULONG celt = 1; // Request one enumeration element. 
     HRESULT hr = S_OK;
-    // Retrieve bindings for the notify object&#39;s component (m_pncc)
+    // Retrieve bindings for the notify object's component (m_pncc)
     hr = m_pncc->QueryInterface(IID_INetCfgComponentBindings, 
                                 (LPVOID*)&pncbind);
     // Determine if notification is about disabling a binding path.

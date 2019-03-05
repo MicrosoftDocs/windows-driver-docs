@@ -80,7 +80,7 @@ for (ULONG ix = 0; ix < resourceCount; ix++)
         break;
 
     default:
-        // Don&#39;t care about other resource descriptors.
+        // Don't care about other resource descriptors.
         break;
     }
 }

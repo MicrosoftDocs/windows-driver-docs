@@ -33,7 +33,7 @@ To support network wake up events, a Remote NDIS device must additionally suppor
 <tr class="odd">
 <td align="left"><p>Optional</p></td>
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569775" data-raw-source="[OID_PNP_ENABLE_WAKE_UP](https://msdn.microsoft.com/library/windows/hardware/ff569775)">OID_PNP_ENABLE_WAKE_UP</a></p></td>
-<td align="left"><p>The Remote NDIS device&#39;s wake-up capabilities that can be enabled</p></td>
+<td align="left"><p>The Remote NDIS device's wake-up capabilities that can be enabled</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Optional</p></td>

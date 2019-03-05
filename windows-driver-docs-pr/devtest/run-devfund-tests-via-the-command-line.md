@@ -35,11 +35,11 @@ To install the TAEF service (Te.service), go to ```%PROGRAMFILES(X86)%\Windows K
 
 1. ```wex.services.exe /install:te.service``` (Verify te.service was installed successfully)
 
-2. ```sc start te.service``` (Verify &#39;STATE&#39; is &#39;START\_PENDING&#39;)
+2. ```sc start te.service``` (Verify 'STATE' is 'START\_PENDING')
 
-3. ```sc query te.service``` (Verify &#39;STATE&#39; is &#39;RUNNING&#39;)
+3. ```sc query te.service``` (Verify 'STATE' is 'RUNNING')
 
-4. ```sc qc te.service``` (Verify &#39;START\_TYPE&#39; is &#39;AUTO\_START&#39;)
+4. ```sc qc te.service``` (Verify 'START\_TYPE' is 'AUTO\_START')
 
 Add this directory to the system PATH environment variable and restart the elevated command prompt.
 

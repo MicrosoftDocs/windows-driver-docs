@@ -43,7 +43,7 @@ The following code example from the **CDevice::OnPrepareHardware** method shows 
                 // device (upon first-connect) by
                 // using CoCreateGUID and setting that value into non-volatile storage
                 // on the device. The same GUID value is then  reported by each
-                // of your device&#39;s transports. To avoid a provisioning race condition,
+                // of your device's transports. To avoid a provisioning race condition,
                 // always read the value from the device after provisioning. Only
                 // provision the GUID one time. Thereafter, always use the value that is provided
                 // by the device.

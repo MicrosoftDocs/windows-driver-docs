@@ -58,7 +58,7 @@ Each port driver is paired with a corresponding miniport driver to form a [KS fi
 </tr>
 <tr class="odd">
 <td align="left"><p>Topology filter</p></td>
-<td align="left"><p>Represents the adapter&#39;s mixer circuitry.</p></td>
+<td align="left"><p>Represents the adapter's mixer circuitry.</p></td>
 </tr>
 </tbody>
 </table>

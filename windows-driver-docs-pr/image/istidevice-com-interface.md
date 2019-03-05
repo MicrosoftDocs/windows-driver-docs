@@ -49,7 +49,7 @@ The following table lists and describes all of the methods supplied by the **ISt
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543745" data-raw-source="[&lt;strong&gt;IStiDevice::GetCapabilities&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543745)"><strong>IStiDevice::GetCapabilities</strong></a></p></td>
-<td><p>Returns a still image device&#39;s capabilities.</p></td>
+<td><p>Returns a still image device's capabilities.</p></td>
 <td><p>Still image event monitor</p></td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ The following table lists and describes all of the methods supplied by the **ISt
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543752" data-raw-source="[&lt;strong&gt;IStiDevice::GetStatus&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543752)"><strong>IStiDevice::GetStatus</strong></a></p></td>
-<td><p>Returns a still image device&#39;s status information.</p></td>
+<td><p>Returns a still image device's status information.</p></td>
 <td><p>Image acquisition APIs and still image event monitor</p></td>
 </tr>
 <tr class="odd">

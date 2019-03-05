@@ -91,7 +91,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tr>
 <tr class="even">
 <td><p>A Hardware ID in this. cab is in use by another company and the .cab cannot be uploaded. Please verify this Hardware ID.</p></td>
-<td><p>The hardware ID you have included in your package is in use by another company. You can&#39;t submit a hardware ID for another company. Make sure that your hardware IDs are not misspelled. If you still receive an error message, email Dashboard Support at sysdev@microsoft.com for a resolution.</p></td>
+<td><p>The hardware ID you have included in your package is in use by another company. You can't submit a hardware ID for another company. Make sure that your hardware IDs are not misspelled. If you still receive an error message, email Dashboard Support at sysdev@microsoft.com for a resolution.</p></td>
 </tr>
 <tr class="odd">
 <td><p>A live submission already exists for this locale in this experience.</p></td>
@@ -104,7 +104,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tr>
 <tr class="odd">
 <td><p>A logo submission for a MultiPurpose device does not match the submission category.</p></td>
-<td><p>The device category listed in your logo submission doesn&#39;t match the primary device category of your device metadata package. To resolve this problem, follow these steps:</p>
+<td><p>The device category listed in your logo submission doesn't match the primary device category of your device metadata package. To resolve this problem, follow these steps:</p>
 <ul>
 <li><p>Correct the device category for your logo submission.</p></li>
 <li><p>Create a new experience and only bind the correct logo submissions.</p></li>
@@ -117,15 +117,15 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tr>
 <tr class="odd">
 <td><p>A Model ID in this cab is in use by another company and the cab cannot be uploaded. Please verify this Model ID.</p></td>
-<td><p>The model ID you have included in your package is in use by another company. You can&#39;t submit a model ID for another company. Make sure that your model IDs are not misspelled. If you still receive an error message, email Dashboard Support at sysdev@microsoft.com for a resolution.</p></td>
+<td><p>The model ID you have included in your package is in use by another company. You can't submit a model ID for another company. Make sure that your model IDs are not misspelled. If you still receive an error message, email Dashboard Support at sysdev@microsoft.com for a resolution.</p></td>
 </tr>
 <tr class="even">
 <td><p>A non-preview live package cannot be promoted to live.</p></td>
-<td><p>You can&#39;t promote a live package to Live status.</p></td>
+<td><p>You can't promote a live package to Live status.</p></td>
 </tr>
 <tr class="odd">
 <td><p>A package with a status of error cannot be promoted to live.</p></td>
-<td><p>You can&#39;t promote a package that contains errors to Live status.</p></td>
+<td><p>You can't promote a package that contains errors to Live status.</p></td>
 </tr>
 <tr class="even">
 <td><p>A preview submission already exists for this locale in this experience.</p></td>
@@ -150,12 +150,12 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
 </tr>
 <tr class="even">
-<td><p>An unexpected file was found:&#39;[ExtraFile]&#39;. Please ensure you follow the architecture or reference all root files in PackageInfo.xml.</p></td>
+<td><p>An unexpected file was found:'[ExtraFile]'. Please ensure you follow the architecture or reference all root files in PackageInfo.xml.</p></td>
 <td><p>There are extra files at the root of your package.</p>
 <p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
 </tr>
 <tr class="odd">
-<td><p>An unexpected folder was found: ‘[ExtraFolder]&#39;. Please ensure you follow the architecture or reference all root folders in PackageInfo.xml.</p></td>
+<td><p>An unexpected folder was found: ‘[ExtraFolder]'. Please ensure you follow the architecture or reference all root folders in PackageInfo.xml.</p></td>
 <td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
 </tr>
 <tr class="even">
@@ -178,7 +178,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tr>
 <tr class="even">
 <td><p>Device Metadata Category for this submission needs to match the existing experience category.</p></td>
-<td><p>The category for the device in this package doesn&#39;t match the category in the other packages in this experience. Revise your device category and resubmit the package.</p></td>
+<td><p>The category for the device in this package doesn't match the category in the other packages in this experience. Revise your device category and resubmit the package.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Device Metadata Submission Type for this submission needs to match the existing experience category.</p></td>
@@ -244,7 +244,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tr>
 <tr class="odd">
 <td><p>File Name PackageInfo.xml is expected in &lt;PackageStructure&gt; element in PackageInfo.xml.</p></td>
-<td><p>Your PackageInfo.xml file isn&#39;t correctly authored for your package. Each root object in the package must be referenced in the PackageInfo.xml file by using a &lt;PackageStructure&gt; node.</p>
+<td><p>Your PackageInfo.xml file isn't correctly authored for your package. Each root object in the package must be referenced in the PackageInfo.xml file by using a &lt;PackageStructure&gt; node.</p>
 <p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
 </tr>
 <tr class="even">
@@ -290,11 +290,11 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tr>
 <tr class="even">
 <td><p>Model IDs are not allowed for [Device Class] submissions.</p></td>
-<td><p>You can&#39;t use model IDs when you submit device metadata for this type of device class. Instead, use only the hardware IDs for your device. To find the hardware IDs for a computer device, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
+<td><p>You can't use model IDs when you submit device metadata for this type of device class. Instead, use only the hardware IDs for your device. To find the hardware IDs for a computer device, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Model Name not found in DeviceInfo.xml</p></td>
-<td><p>Your DeviceInfo.xml file isn&#39;t correctly authored.</p>
+<td><p>Your DeviceInfo.xml file isn't correctly authored.</p>
 <p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
 </tr>
 <tr class="even">
@@ -317,10 +317,10 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tr>
 <tr class="even">
 <td><p>TaskGroupGuid [TaskGroupGuid] should not be used by your device for task [TaskId]</p></td>
-<td><p>You are trying to use a reserved GUID that doesn&#39;t apply to your device.</p>
+<td><p>You are trying to use a reserved GUID that doesn't apply to your device.</p>
 <p>Try one of the following solutions:</p>
 <ul>
-<li><p>Do not use GUIDs for tasks that your device can&#39;t support.</p></li>
+<li><p>Do not use GUIDs for tasks that your device can't support.</p></li>
 <li><p>If you are trying to create a task, generate a new GUID for the task.</p></li>
 </ul>
 <p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
@@ -354,14 +354,14 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
 </tr>
 <tr class="even">
-<td><p>The device category reported in your Device Metadata package and Logo Submission don&#39;t match. If the device category in the package is incorrect, please fix and upload again. If the device category in Logo Submission is incorrect, please fix in Submission Manager and try uploading your package again: [list of links per offending logo submission to SubmissionManager]</p></td>
+<td><p>The device category reported in your Device Metadata package and Logo Submission don't match. If the device category in the package is incorrect, please fix and upload again. If the device category in Logo Submission is incorrect, please fix in Submission Manager and try uploading your package again: [list of links per offending logo submission to SubmissionManager]</p></td>
 <td><p>Device categories between bound logo submissions and device metadata must be identical for a submission to pass. Verify that your logo submissions all have the same device category, and that the device category is the same as the device category for your package.</p>
 <p>The links provided point to the Submission Manager, which will allow you to change the device category in the logo submission, if the category is incorrect.</p>
 <p>After all issues are resolved, resubmit your package.</p></td>
 </tr>
 <tr class="odd">
 <td><p>The Device Metadata Category for this submission does not exist.</p></td>
-<td><p>The device metadata category that you have used isn&#39;t valid. You must choose from the pre-defined device metadata categories outlined in the Windows Hardware Certification Kit (HCK).</p></td>
+<td><p>The device metadata category that you have used isn't valid. You must choose from the pre-defined device metadata categories outlined in the Windows Hardware Certification Kit (HCK).</p></td>
 </tr>
 <tr class="even">
 <td><p>The Experience name already exists for this organization.</p></td>
@@ -378,7 +378,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tr>
 <tr class="odd">
 <td><p>The reference in PackageInfo.xml, DeviceStage, was not found in the package.</p></td>
-<td><p>The reference in the &lt;PackageStructure&gt; element in the PackageInfo.xml file is either misspelled or isn&#39;t located in the root in the package. Remove the reference, or add the correct file or directory.</p>
+<td><p>The reference in the &lt;PackageStructure&gt; element in the PackageInfo.xml file is either misspelled or isn't located in the root in the package. Remove the reference, or add the correct file or directory.</p>
 <p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
 </tr>
 <tr class="even">
@@ -388,7 +388,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tr>
 <tr class="odd">
 <td><p>The submission contains [list of Hardware ID(s) and/or Model ID(s)] that are not covered via a logo submission.</p></td>
-<td><p>Your package contains hardware IDs or model IDs that your logo submissions don&#39;t cover.</p>
+<td><p>Your package contains hardware IDs or model IDs that your logo submissions don't cover.</p>
 <p>Try one of the following solutions:</p>
 <ul>
 <li><p>Correct the hardware IDs or model IDs in your device metadata package.</p></li>
@@ -397,11 +397,11 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tr>
 <tr class="even">
 <td><p>The system manufacturer for this computer submission does not match the organization of the submitting user.</p></td>
-<td><p>The system manufacturer in the SMBIOSFields.xml file you submitted doesn&#39;t match the manufacturer in our records.</p>
+<td><p>The system manufacturer in the SMBIOSFields.xml file you submitted doesn't match the manufacturer in our records.</p>
 <p>Try one of the following solutions:</p>
 <ul>
 <li><p>Correct the name of the system manufacturer, and then resubmit the package.</p></li>
-<li><p>If the system manufacturer field is correct and your file doesn&#39;t pass, email board Support at sysdev@microsoft.com.</p></li>
+<li><p>If the system manufacturer field is correct and your file doesn't pass, email board Support at sysdev@microsoft.com.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -411,7 +411,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tr>
 <tr class="even">
 <td><p>This preview key has been rejected. Please choose another value.</p></td>
-<td><p>The PreviewKey you set by using the Dashboard isn&#39;t accepted. Submit a new PreviewKey.</p></td>
+<td><p>The PreviewKey you set by using the Dashboard isn't accepted. Submit a new PreviewKey.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Unexpected file found in [FolderName] folder- [ExtraFile]</p></td>
@@ -432,7 +432,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <td><p>Unexpected folder found in [FolderName] folder- [ExtraFolder]</p></td>
 <td><p>There is an issue with your package structure.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>This error may occur if the device category in the DeviceInfo.xml file isn&#39;t set correctly.</p>
+<strong>Note</strong><br/><p>This error may occur if the device category in the DeviceInfo.xml file isn't set correctly.</p>
 </div>
 <div>
 
@@ -464,7 +464,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tr>
 <tr class="even">
 <td><p>You do not have access to this experience.</p></td>
-<td><p>You are trying to gain access to an experience that doesn&#39;t belong to your company.</p></td>
+<td><p>You are trying to gain access to an experience that doesn't belong to your company.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Your device cannot have the command value set to HostedSiteWithDevice for task [TaskID] in Tasks.xml.</p></td>

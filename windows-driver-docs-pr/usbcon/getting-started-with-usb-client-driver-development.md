@@ -29,7 +29,7 @@ As a driver developer, you must have coding experience in the C programming lang
 <tbody>
 <tr class="odd">
 <td><p><strong>Step 1</strong>—Read the <a href="https://go.microsoft.com/fwlink/p/?linkid=617552" data-raw-source="[Official USB specification version 2.0 and 3.0](https://go.microsoft.com/fwlink/p/?linkid=617552)">Official USB specification version 2.0 and 3.0</a>.</p></td>
-<td>Learn about the industry specification and different components (device, host controller, and hub) of the architecture. It&#39;s important to understand the data flow model, how the host and device communicate with each other, and the format of the requests that the device expects.</td>
+<td>Learn about the industry specification and different components (device, host controller, and hub) of the architecture. It's important to understand the data flow model, how the host and device communicate with each other, and the format of the requests that the device expects.</td>
 </tr>
 <tr class="even">
 <td><p><strong>Step 2</strong>—Obtain a test USB device.</p></td>

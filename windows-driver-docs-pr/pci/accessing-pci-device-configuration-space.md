@@ -130,7 +130,7 @@ while (CapabilityOffset != 0) {
 }
 
 if (CapabilityOffset == 0) {
-    // We didn&#39;t find a power management
+    // We didn't find a power management
     // capability. Return an error.
     return(STATUS_NOT_IMPLEMENTED);
 }

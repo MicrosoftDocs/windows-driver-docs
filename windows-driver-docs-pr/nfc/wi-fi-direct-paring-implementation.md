@@ -338,7 +338,7 @@ The Windows Device Pairing Record follows the NDEF specification. It provides ad
 </tr>
 <tr class="even">
 <td align="left">Type</td>
-<td align="left">&#39;application/vnd.ms-windows.devicepairing&#39;</td>
+<td align="left">'application/vnd.ms-windows.devicepairing'</td>
 <td align="left">0x28 bytes</td>
 <td align="left">New type string we define for this scenario.</td>
 </tr>
@@ -523,7 +523,7 @@ This first table illustrates the format of the Wi-Fi Direct pairing portion of t
 <p>0x66 0x64 0x2E 0x6F</p>
 <p>0x6F 0x62</p></td>
 <td align="left">34</td>
-<td align="left">Record Type Name: &#39;application/vnd.ms-windows.wfd.oob&#39;</td>
+<td align="left">Record Type Name: 'application/vnd.ms-windows.wfd.oob'</td>
 </tr>
 <tr class="odd">
 <td align="left">53</td>

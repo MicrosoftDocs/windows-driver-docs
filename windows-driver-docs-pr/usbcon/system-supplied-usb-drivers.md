@@ -81,7 +81,7 @@ Microsoft provides these set of drivers:
 <p>Windows 7</p>
 <p>Windows Vista</p>
 <p>Windows XP with Service Pack 2 (SP2)</p></td>
-<td>Winusb.sys can be used as the USB device&#39;s function driver instead of implementing a driver. See <a href="how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md" data-raw-source="[WinUSB](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md)">WinUSB</a>.</td>
+<td>Winusb.sys can be used as the USB device's function driver instead of implementing a driver. See <a href="how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md" data-raw-source="[WinUSB](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md)">WinUSB</a>.</td>
 </tr>
 </tbody>
 </table>

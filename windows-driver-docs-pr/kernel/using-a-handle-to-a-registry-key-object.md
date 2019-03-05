@@ -28,19 +28,19 @@ The following table lists the operations that drivers can perform on an open key
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Examine the key&#39;s properties, such as its name or the number of its subkeys.</p></td>
+<td><p>Examine the key's properties, such as its name or the number of its subkeys.</p></td>
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567060" data-raw-source="[&lt;strong&gt;ZwQueryKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567060)"><strong>ZwQueryKey</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>Iterate through the key&#39;s subkeys, examining the properties of each one.</p></td>
+<td><p>Iterate through the key's subkeys, examining the properties of each one.</p></td>
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566447" data-raw-source="[&lt;strong&gt;ZwEnumerateKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566447)"><strong>ZwEnumerateKey</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>Examine the properties of a key value, including the value&#39;s data.</p></td>
+<td><p>Examine the properties of a key value, including the value's data.</p></td>
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567069" data-raw-source="[&lt;strong&gt;ZwQueryValueKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567069)"><strong>ZwQueryValueKey</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>Iterate through a key&#39;s values, examining the properties of each one.</p></td>
+<td><p>Iterate through a key's values, examining the properties of each one.</p></td>
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566453" data-raw-source="[&lt;strong&gt;ZwEnumerateValueKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566453)"><strong>ZwEnumerateValueKey</strong></a></p></td>
 </tr>
 <tr class="odd">

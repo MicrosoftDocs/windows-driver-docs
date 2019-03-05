@@ -63,7 +63,7 @@ In addition to channels, you can associate events with levels and keywords. Keyw
 When you create a template for the event payload (event message, and data), you must specify the input and output types. The supported types are described in the Remarks section of [**InputType Complex Type (Windows)**](https://docs.microsoft.com/windows/desktop/WES/eventmanifestschema-inputtype-complextype).
 
 ```XML
-<?xml version=&#39;1.0&#39; encoding=&#39;utf-8&#39; standalone=&#39;yes&#39;?>
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <instrumentationManifest
     xmlns="http://schemas.microsoft.com/win/2004/08/events"
     xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
@@ -418,7 +418,7 @@ In the instrumentation manifest, you defined the names of the event provider and
                   DeviceName.Buffer,
                   LengthToCopy);
 
-    DeviceNameString[LengthToCopy/sizeof(WCHAR)] = L&#39;\0&#39;;
+    DeviceNameString[LengthToCopy/sizeof(WCHAR)] = L'\0';
 
     EventWriteStartEvent(NULL, DeviceName.Length, DeviceNameString, Status);
 

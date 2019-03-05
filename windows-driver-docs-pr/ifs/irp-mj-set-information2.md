@@ -113,7 +113,7 @@ This information applies when the following operations are being performed on a 
   <p> A hard link is being created for the file. This affects oplock state if the new hard link is superseding an existing link to a different file, and the oplock exists on the link being superseded.</p>
   </li>
   <li>
-  <p> An ancestor directory of the stream on which the oplock exists is being renamed, or the ancestor directory&#39;s short name is being set.</p>
+  <p> An ancestor directory of the stream on which the oplock exists is being renamed, or the ancestor directory's short name is being set.</p>
   </li>
   </ul>
   <table>

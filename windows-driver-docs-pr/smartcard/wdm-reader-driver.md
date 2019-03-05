@@ -80,7 +80,7 @@ DriverDeviceControl(
         Irp
         );
 }</code></pre>
-<p>If it is unable to handle the particular IOCTL that is indicated in the call, <strong>SmartcardDeviceControl</strong> will call the driver&#39;s callback for unknown IOCTL requests.</p></td>
+<p>If it is unable to handle the particular IOCTL that is indicated in the call, <strong>SmartcardDeviceControl</strong> will call the driver's callback for unknown IOCTL requests.</p></td>
 </tr>
 </tbody>
 </table>

@@ -75,7 +75,7 @@ EvtIoInCallerContext(
 
     //
     // If the capture fails, the driver must complete the request instead
-    // of placing it in the SPB controller&#39;s request queue.
+    // of placing it in the SPB controller's request queue.
     //
 
     if (!NT_SUCCESS(status))
