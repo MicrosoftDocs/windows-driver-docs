@@ -160,7 +160,7 @@ The third table lists several public DEVMODEW members that are used by both prin
 <div>
  
 </div>
-For printers, specifies the &quot;friendly name&quot; of the printer.</td>
+For printers, specifies the "friendly name" of the printer.</td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>dmFields</strong></p></td>

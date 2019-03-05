@@ -125,11 +125,11 @@ The hotspot plug-in host exposes the following functions through the [HOTSPOT\_H
 </tr>
 <tr class="even">
 <td><p><a href="hs-host-send-keep-alive-completion.md" data-raw-source="[HS_HOST_SEND_KEEP_ALIVE_COMPLETION](hs-host-send-keep-alive-completion.md)">HS_HOST_SEND_KEEP_ALIVE_COMPLETION</a></p></td>
-<td><p>This function indicates the success or failure of a &quot;Send keep-alive&quot; request.</p></td>
+<td><p>This function indicates the success or failure of a "Send keep-alive" request.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="hs-host-update-configuration-completion.md" data-raw-source="[HS_HOST_UPDATE_CONFIGURATION_COMPLETION](hs-host-update-configuration-completion.md)">HS_HOST_UPDATE_CONFIGURATION_COMPLETION</a></p></td>
-<td><p>This function indicates the success or failure of a &quot;Check for updates&quot; request.</p></td>
+<td><p>This function indicates the success or failure of a "Check for updates" request.</p></td>
 </tr>
 </tbody>
 </table>

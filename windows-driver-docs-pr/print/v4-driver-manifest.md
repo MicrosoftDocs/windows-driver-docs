@@ -58,7 +58,7 @@ The following table shows the directives that are used in the DriverConfig secti
 <p>Although files with similar names won't overwrite each other, it may be difficult during troubleshooting, to distinguish between the class driver package file and the file from the v4 printer driver.</p></td>
 <td><p>Example:</p>
 <p>RequiredClass=</p>
-<p>&quot;Fabrikam PCL5e Class Driver&quot;,{9343720D-B67E-4451-B93F-6F721C439771}</p></td>
+<p>"Fabrikam PCL5e Class Driver",{9343720D-B67E-4451-B93F-6F721C439771}</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DriverFile</strong></p>
@@ -82,7 +82,7 @@ The following table shows the directives that are used in the DriverConfig secti
 <td><p>Required for PrintDeviceCapabilities file.</p></td>
 <td><p>Example:</p>
 <p>DataFileType=</p>
-<p>&quot;application/vnd.ms-PrintDeviceCapabilities+xml&quot;</p></td>
+<p>"application/vnd.ms-PrintDeviceCapabilities+xml"</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Flags</strong></p>
@@ -151,7 +151,7 @@ PrintFax.Printer.Virtual</td>
 <p>Specifies a URL for the user to obtain a copy of the Printer extension app. Used in printer sharing.</p></td>
 <td><p>None.</p></td>
 <td><p>PrinterExtensionUrl=</p>
-<p>&quot;<a href="http://www.fabrikam.com/files/setup.exe&amp;quot" data-raw-source="http://www.fabrikam.com/files/setup.exe&amp;quot">http://www.fabrikam.com/files/setup.exe&quot</a>;</p></td>
+<p>"<a href="http://www.fabrikam.com/files/setup.exe&amp;quot" data-raw-source="http://www.fabrikam.com/files/setup.exe&amp;quot">http://www.fabrikam.com/files/setup.exe&quot</a>;</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DevModeMap</strong></p>
@@ -196,7 +196,7 @@ All queues which use the same Manufacturer string in the INF use the same user p
 </tr>
 <tr class="even">
 <td><p><strong>RetrievePrintDeviceCapabilitiesFromDevice</strong></p>
-<p>v4 drivers may specify that they must retrieve a PrintDeviceCapabilities file from WS-Print v2.0 printers, as long as they set a PrintDeviceCapabilities file as the driver's DataFile and the DataFileType also indicates that the DataFile is of MIME type &quot;application/vnd.ms-PrintDeviceCapabilities+xml&quot;. Valid options:</p>
+<p>v4 drivers may specify that they must retrieve a PrintDeviceCapabilities file from WS-Print v2.0 printers, as long as they set a PrintDeviceCapabilities file as the driver's DataFile and the DataFileType also indicates that the DataFile is of MIME type "application/vnd.ms-PrintDeviceCapabilities+xml". Valid options:</p>
 <p>Valid options:</p>
 <p>True: Allows the driver's local DataFile to be replaced with the PrintDeviceCapabilities file from the device.</p>
 <p>False: The driver's local DataFile will not be replaced with the PrintDeviceCapabilities file from the device.</p>
@@ -307,13 +307,13 @@ The following table shows the directives that are used in the DriverRender secti
 <td><p>None.</p></td>
 <td><p>Valid usage types include:</p>
 <p>OutputFormat=</p>
-<p>&quot;application/oxps&quot;</p>
+<p>"application/oxps"</p>
 <p>OutputFormat=</p>
-<p>&quot;application/vnd.ms-xpsdocument&quot;</p>
+<p>"application/vnd.ms-xpsdocument"</p>
 <p>OutputFormat=</p>
-<p>&quot;image/pwg-raster&quot;</p>
+<p>"image/pwg-raster"</p>
 <p>OutputFormat=</p>
-<p>&quot;application/vnd.ms-3mfdocument&quot;</p>
+<p>"application/vnd.ms-3mfdocument"</p>
 <p>Any other valid defined MIME type may also be specified here.</p></td>
 </tr>
 </tbody>

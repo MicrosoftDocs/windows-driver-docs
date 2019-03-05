@@ -124,8 +124,8 @@ For the best results, make sure that the alternate mode device or adapter’s re
 <td><strong>Audio Accessories​</strong>
 <p>USB Type-C connector can be used as an audio jack.</p></td>
 <td>Windows 10 is capable of detecting a USB Type-C analog input as 3.5 mm audio jack, if the hardware supports the feature.
-<p>The USB Type-C specification connector allows a USB Type-C connector to be used similar to a 3.5&quot; analog audio jack by using the audio accessory mode. Windows 10 supports systems that implement USB Type-C support for audio accessories by detecting the accessory as a regular 3.5&quot; analog audio device.</p></td>
-<td>To use this feature, your hardware or firmware must detect if audio accessory is connected and switch to that mode, as per the Audio Type-C specification. This is done by mapping the pins on the 3.5&quot; analog audio connector to pins on the USB Type-C connector.</td>
+<p>The USB Type-C specification connector allows a USB Type-C connector to be used similar to a 3.5" analog audio jack by using the audio accessory mode. Windows 10 supports systems that implement USB Type-C support for audio accessories by detecting the accessory as a regular 3.5" analog audio device.</p></td>
+<td>To use this feature, your hardware or firmware must detect if audio accessory is connected and switch to that mode, as per the Audio Type-C specification. This is done by mapping the pins on the 3.5" analog audio connector to pins on the USB Type-C connector.</td>
 </tr>
 </tbody>
 </table>

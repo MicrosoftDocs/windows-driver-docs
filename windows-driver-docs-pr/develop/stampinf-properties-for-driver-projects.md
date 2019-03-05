@@ -33,7 +33,7 @@ If you want to add this property page to your project, so that you can run the S
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Enable_Architecture"></span><span id="enable_architecture"></span><span id="ENABLE_ARCHITECTURE"></span><strong>Enable Architecture</strong></p></td>
-<td align="left"><p>Enables the replacement of the $ARCH$ variable used in INX files. If enabled, the value specified for <strong>Architecture</strong> is used. If <strong>No</strong> is specified, the $ARCH$ variable is removed. For example, &quot;Standard.NT$ARCH$&quot; becomes &quot;Standard.NT&quot;.</p></td>
+<td align="left"><p>Enables the replacement of the $ARCH$ variable used in INX files. If enabled, the value specified for <strong>Architecture</strong> is used. If <strong>No</strong> is specified, the $ARCH$ variable is removed. For example, "Standard.NT$ARCH$" becomes "Standard.NT".</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Architecture"></span><span id="architecture"></span><span id="ARCHITECTURE"></span><strong>Architecture</strong></p></td>

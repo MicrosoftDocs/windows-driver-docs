@@ -197,7 +197,7 @@ The shipping label list displays the shipping labels for this submission. This l
 </tr>
 <tr class="odd">
 <td><p>Destination</p></td>
-<td><p>For a Windows Update shipping label, the destination is &quot;Windows Update&quot;.</p>
+<td><p>For a Windows Update shipping label, the destination is "Windows Update".</p>
 <p>For a shared driver, the destination is the <strong>Publisher display name</strong> of the company you selected for <strong>Who is publishing?</strong> when you created the shipping label. This allows you to easily see all companies that you have shared your driver with.</p></td>
 </tr>
 <tr class="even">

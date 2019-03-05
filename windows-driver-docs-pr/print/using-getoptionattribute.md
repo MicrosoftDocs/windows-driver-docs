@@ -56,7 +56,7 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <tr class="even">
 <td><p><strong>OrderDependencySection</strong></p></td>
 <td><p><em></em>pdwDataType</em>: kADT_ASCII</p>
-<p><em>pbData</em>: null-terminated ASCII string containing one of following section names: &quot;ExitServer&quot; &quot;Prolog&quot; &quot;DocumentSetup&quot; &quot;PageSetup&quot; &quot;JCLSetup&quot; &quot;AnySetup&quot;.</p>
+<p><em>pbData</em>: null-terminated ASCII string containing one of following section names: "ExitServer" "Prolog" "DocumentSetup" "PageSetup" "JCLSetup" "AnySetup".</p>
 <p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the null terminator)</p>
 <p>This option attribute is available only for an option that has an *OrderDependency or *NonUIOrderDependency entry in the PPD, and the entry does not omit optionKeyword.</p></td>
 </tr>

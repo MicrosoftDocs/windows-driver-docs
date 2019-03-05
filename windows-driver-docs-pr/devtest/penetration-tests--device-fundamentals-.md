@@ -192,7 +192,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <td align="left"><p><span id="Fuzz_Sub-opens_with_Streams_test"></span><span id="fuzz_sub-opens_with_streams_test"></span><span id="FUZZ_SUB-OPENS_WITH_STREAMS_TEST"></span>Fuzz Sub-opens with Streams test</p></td>
 <td align="left"><p>This test tries to open a variety of named data streams on the device. The test uses a series of arbitrary stream names with content and characters that might be valid for other uses on some devices.</p>
 <p>During the <em>Streams Test</em>, the Fuzz test tries to open a variety of named data streams on the device. The tests use a series of arbitrary stream names with content and characters that might be valid for other uses on some devices. This test determines whether the driver can properly handle data stream requests, especially if the driver exports a device that does not support or anticipate data streams.</p>
-<p>A <em>named data stream</em> is an attribute of a file object. You specify a named data stream by writing the name of the file, a colon, and the name of the data stream, for example, &quot;File01.txt:AccessDate&quot; where <em>AccessDate</em> is a named data stream, that is, an attribute of the File01.txt file.</p>
+<p>A <em>named data stream</em> is an attribute of a file object. You specify a named data stream by writing the name of the file, a colon, and the name of the data stream, for example, "File01.txt:AccessDate" where <em>AccessDate</em> is a named data stream, that is, an attribute of the File01.txt file.</p>
 <p>The Fuzz test records the stream names used in the test.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoSubOpensWithStreamsTest</p>

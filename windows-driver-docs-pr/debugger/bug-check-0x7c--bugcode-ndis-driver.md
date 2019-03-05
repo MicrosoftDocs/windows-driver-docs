@@ -363,7 +363,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>0x25</p></td>
 <td align="left"><p>NDIS_BUGCHECK_WATCHDOG</p>
 <p>An attempt to manage the network stack has taken too long. When NDIS calls out into other drivers, NDIS starts a watchdog timer to ensure the call completes promptly. If the call takes too long, NDIS injects a bugcheck.</p>
-<p>This can be caused by a simple deadlock. Look with &quot;!stacks 2 ndis&quot; or similar to see if any threads look suspicious. Pay special attention to the PrimaryThread from the NDIS_WATCHDOG_TRIAGE_BLOCK.</p>
+<p>This can be caused by a simple deadlock. Look with "!stacks 2 ndis" or similar to see if any threads look suspicious. Pay special attention to the PrimaryThread from the NDIS_WATCHDOG_TRIAGE_BLOCK.</p>
 <p>This can be caused by lost NBLs, in which case <strong><a href="-ndiskd-pendingnbls.md" data-raw-source="[!ndiskd.pendingnbls](-ndiskd-pendingnbls.md)">!ndiskd.pendingnbls</a></strong> may help. Check for OIDs that are stuck using <strong><a href="-ndiskd-oid.md" data-raw-source="[!ndiskd.oid](-ndiskd-oid.md)">!ndiskd.oid</a></strong>.</p></td>
 <td align="left"><p>The operation that took too long. Possible values:</p>
 <ul>

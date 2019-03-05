@@ -54,14 +54,14 @@ The following table lists the root-level-only attributes.
 </tr>
 <tr class="even">
 <td><p></em><strong>GPDFileVersion</strong></p></td>
-<td><p>Quoted text string representing the current GPD file version. Recommended format is <em>MajorVersion</em>.<em>MinorVersion</em>, such as &quot;1.0&quot;.</p></td>
+<td><p>Quoted text string representing the current GPD file version. Recommended format is <em>MajorVersion</em>.<em>MinorVersion</em>, such as "1.0".</p></td>
 <td><p>Optional. If specified, this string is displayed in Unidrv's About dialog box.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em><strong>GPDSpecVersion</strong></p></td>
-<td><p>Quoted text string representing the current GPD specification version. Required format is <em>MajorVersion</em>.<em>MinorVersion</em>, such as &quot;1.0&quot;.</p></td>
+<td><p>Quoted text string representing the current GPD specification version. Required format is <em>MajorVersion</em>.<em>MinorVersion</em>, such as "1.0".</p></td>
 <td><p>Required. Must be first entry in GPD file, before any comments.</p>
-<p>This value must be &quot;1.0&quot; for Windows 2000.</p></td>
+<p>This value must be "1.0" for Windows 2000.</p></td>
 </tr>
 <tr class="even">
 <td><p></em><strong>HelpFile</strong></p></td>
@@ -75,7 +75,7 @@ The following table lists the root-level-only attributes.
 </tr>
 <tr class="even">
 <td><p><em><strong>InstalledOptionName</strong></p></td>
-<td><p>Quoted string that is displayed to indicate an installable feature or option is installed. Typically, this string is &quot;Installed&quot;, but any appropriate string can be specified.</p></td>
+<td><p>Quoted string that is displayed to indicate an installable feature or option is installed. Typically, this string is "Installed", but any appropriate string can be specified.</p></td>
 <td><p>Required if <em>Installable? is <strong>TRUE</strong> for any features or options (see <a href="feature-attributes.md" data-raw-source="[Feature Attributes](feature-attributes.md)">Feature Attributes</a>), and if *<strong>rcInstalledOptionNameID</strong> is not specified.</p></td>
 </tr>
 <tr class="odd">
@@ -95,7 +95,7 @@ The following table lists the root-level-only attributes.
 </tr>
 <tr class="even">
 <td><p></em><strong>NotInstalledOptionName</strong></p></td>
-<td><p>Quoted string that is displayed to indicate an installable feature or option is not installed. Typically, this string is &quot;Not installed&quot;, but any appropriate string can be specified.</p></td>
+<td><p>Quoted string that is displayed to indicate an installable feature or option is not installed. Typically, this string is "Not installed", but any appropriate string can be specified.</p></td>
 <td><p>Required if <em><strong>Installable?</strong> is <strong>TRUE</strong> for any features or options (see <a href="feature-attributes.md" data-raw-source="[Feature Attributes](feature-attributes.md)">Feature Attributes</a>), and if *<strong>rcNotInstalledOptionNameID</strong> is not specified.</p></td>
 </tr>
 <tr class="odd">
@@ -129,12 +129,12 @@ IPM - Inches/min. (IPM is for plotters)</td>
 </tr>
 <tr class="even">
 <td><p></em><strong>rcInstalledOptionNameID</strong></p></td>
-<td><p>Resource ID of a string resource that is displayed to indicate an installable feature or option is installed. Typically, this string is &quot;Installed&quot;, but any appropriate string can be specified.</p></td>
+<td><p>Resource ID of a string resource that is displayed to indicate an installable feature or option is installed. Typically, this string is "Installed", but any appropriate string can be specified.</p></td>
 <td><p>Required if <em>Installable? is <strong>TRUE</strong> for any features or options (see <a href="feature-attributes.md" data-raw-source="[Feature Attributes](feature-attributes.md)">Feature Attributes</a>), and if *<strong>InstalledOptionName</strong> is not specified.</p></td>
 </tr>
 <tr class="odd">
 <td><p></em><strong>rcNotInstalledOptionNameID</strong></p></td>
-<td><p>Resource ID of a string resource that is displayed to indicate an installable feature or option is not installed. Typically, this string is &quot;Not installed&quot;, but any appropriate string can be specified.</p></td>
+<td><p>Resource ID of a string resource that is displayed to indicate an installable feature or option is not installed. Typically, this string is "Not installed", but any appropriate string can be specified.</p></td>
 <td><p>Required if <em><strong>Installable?</strong> is <strong>TRUE</strong> for any features or options (see <a href="feature-attributes.md" data-raw-source="[Feature Attributes](feature-attributes.md)">Feature Attributes</a>), and if *<strong>NotInstalledOptionName</strong> is not specified.</p></td>
 </tr>
 <tr class="even">

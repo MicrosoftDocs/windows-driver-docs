@@ -47,14 +47,14 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <tr class="odd">
 <td><p><strong>OpenUIType</strong></p></td>
 <td><p><em><em>pdwDataType</em>: kADT_ASCII</p>
-<p><em>pbData</em>: null-terminated ASCII string containing one of following types: &quot;PickOne&quot;, &quot;PickMany&quot;, &quot;Boolean&quot;.</p>
+<p><em>pbData</em>: null-terminated ASCII string containing one of following types: "PickOne", "PickMany", "Boolean".</p>
 <p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the null terminator)</p>
 <p>This feature attribute is available to any PPD feature <strong>EnumFeatures</strong> can return.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>OpenGroupType</strong></p></td>
 <td><p><em><em>pdwDataType</em>: kADT_ASCII</p>
-<p><em>pbData</em>: For features defined within the PPD's &quot;</em>OpenGroup: InstallableOptions ... <em>CloseGroup: InstallableOptions&quot; pair, a null-terminated ASCII string of &quot;InstallableOptions&quot; will be returned. For other features, an empty ASCII string (which has only the null terminator) will be returned.</p>
+<p><em>pbData</em>: For features defined within the PPD's "</em>OpenGroup: InstallableOptions ... <em>CloseGroup: InstallableOptions" pair, a null-terminated ASCII string of "InstallableOptions" will be returned. For other features, an empty ASCII string (which has only the null terminator) will be returned.</p>
 <p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the null terminator)</p>
 <p>This feature attribute is available to any PPD feature that <strong>EnumFeatures</strong> can return.</p></td>
 </tr>
@@ -68,7 +68,7 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <tr class="even">
 <td><p><strong>OrderDependencySection</strong></p></td>
 <td><p><em></em>pdwDataType</em>: kADT_ASCII</p>
-<p><em>pbData</em>: null-terminated ASCII string containing one of following section names: &quot;ExitServer&quot;, &quot;Prolog&quot;, &quot;DocumentSetup&quot;, &quot;PageSetup&quot;, &quot;JCLSetup&quot;, or &quot;AnySetup&quot;.</p>
+<p><em>pbData</em>: null-terminated ASCII string containing one of following section names: "ExitServer", "Prolog", "DocumentSetup", "PageSetup", "JCLSetup", or "AnySetup".</p>
 <p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the null terminator)</p>
 <p>This attribute is available only for a PPD feature that has an *OrderDependency or *NonUIOrderDependency entry in the PPD, and the entry omits optionKeyword.</p></td>
 </tr>

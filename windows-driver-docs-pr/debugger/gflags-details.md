@@ -62,15 +62,15 @@ GFlags settings that are saved between sessions are stored in the registry. You 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Systemwide settings (&quot;Registry&quot;)</p></td>
+<td align="left"><p>Systemwide settings ("Registry")</p></td>
 <td align="left"><p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager&lt;strong&gt;GlobalFlag</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Program-specific settings (&quot;Image file&quot;) for all users of the computer.</p></td>
+<td align="left"><p>Program-specific settings ("Image file") for all users of the computer.</p></td>
 <td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options&lt;em&gt;ImageFileName</em>&lt;strong&gt;GlobalFlag</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Silent exit settings for a specific program (&quot;Silent Process Exit&quot;) for all users of the computer.</p></td>
+<td align="left"><p>Silent exit settings for a specific program ("Silent Process Exit") for all users of the computer.</p></td>
 <td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit&lt;em&gt;ImageFileName</em></p></td>
 </tr>
 <tr class="even">

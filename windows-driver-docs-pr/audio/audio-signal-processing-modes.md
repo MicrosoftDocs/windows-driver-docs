@@ -241,7 +241,7 @@ The following audio effects are available for use in Windows 10.
 </tr>
 <tr class="even">
 <td align="left">Virtual Headphones</td>
-<td align="left"><p>Virtualized surround sound allows users who are wearing headphones to distinguish sound from front to back as well as from side to side. This is done by transmitting spatial cues that help the brain localize the sounds and integrate them into a sound field. This has the effect of making the sound feel like it transcends the headphones, creating an &quot;outside-the-head&quot; listening experience. This effect is achieved by using an advanced technology called Head Related Transfer Functions (HRTF). HRTF generates acoustic cues that are based on the shape of the human head. These cues not only help listeners to locate the direction and source of sound but it also enhances the type of acoustic environment that is surrounding the listener.</p></td>
+<td align="left"><p>Virtualized surround sound allows users who are wearing headphones to distinguish sound from front to back as well as from side to side. This is done by transmitting spatial cues that help the brain localize the sounds and integrate them into a sound field. This has the effect of making the sound feel like it transcends the headphones, creating an "outside-the-head" listening experience. This effect is achieved by using an advanced technology called Head Related Transfer Functions (HRTF). HRTF generates acoustic cues that are based on the shape of the human head. These cues not only help listeners to locate the direction and source of sound but it also enhances the type of acoustic environment that is surrounding the listener.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Speaker Fill</td>
@@ -261,7 +261,7 @@ The following audio effects are available for use in Windows 10.
 </tr>
 <tr class="even">
 <td align="left">Environmental Effects</td>
-<td align="left"><p>Environmental effects work to increase the reality of audio playback by more accurately simulating real-world audio environments. There are a number of different environments that you can select, for example &quot;stadium&quot; simulates the acoustics of a sports stadium.</p></td>
+<td align="left"><p>Environmental effects work to increase the reality of audio playback by more accurately simulating real-world audio environments. There are a number of different environments that you can select, for example "stadium" simulates the acoustics of a sports stadium.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Speaker Protection</td>
@@ -273,7 +273,7 @@ The following audio effects are available for use in Windows 10.
 </tr>
 <tr class="odd">
 <td align="left">Dynamic Range Compression</td>
-<td align="left"><p>Dynamic range compression amplifies quiet sounds by narrowing or &quot;compressing&quot; an audio signal's dynamic range. Audio compression amplifies quiet sounds which are below a certain threshold while loud sounds remain unaffected.</p></td>
+<td align="left"><p>Dynamic range compression amplifies quiet sounds by narrowing or "compressing" an audio signal's dynamic range. Audio compression amplifies quiet sounds which are below a certain threshold while loud sounds remain unaffected.</p></td>
 </tr>
 </tbody>
 </table>

@@ -147,13 +147,13 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <tr class="odd">
 <td align="left"><p>Ignore Exclamation Marks</p></td>
 <td align="left"><p><strong>-noshrieks</strong></p></td>
-<td align="left"><p>Directs WPP to ignore exclamation marks, also known as &quot;shrieks.&quot;</p>
+<td align="left"><p>Directs WPP to ignore exclamation marks, also known as "shrieks."</p>
 <p>Used in complex formatting, such as %!timestamp!%. By default, exclamation marks are required and WPP tries to interpret them.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Numeric base for numbering of format strings</p></td>
 <td align="left"><p><strong>-argbase:</strong> <em>Number</em></p></td>
-<td align="left"><p>Establishes a numeric base for numbering of format strings, such as &quot;%1!d!, %2!s!.&quot; The default is 1.</p></td>
+<td align="left"><p>Establishes a numeric base for numbering of format strings, such as "%1!d!, %2!s!." The default is 1.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Function To Generate Trace Messages</p></td>
@@ -167,7 +167,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <tr class="even">
 <td align="left"><p>Specify String To Search For</p></td>
 <td align="left"><p><strong>-lookfor:</strong><em>String</em></p></td>
-<td align="left"><p>Directs WPP to search the source files for the specified string to initiate tracing. By default, WPP searches for the string &quot;WPP_INIT_TRACING.&quot;</p>
+<td align="left"><p>Directs WPP to search the source files for the specified string to initiate tracing. By default, WPP searches for the string "WPP_INIT_TRACING."</p>
 <p>This is an advanced option for users who are writing their own templates.</p>
 <p>For example, in default.tpl:</p>
 <pre space="preserve"><code><code>IF FOUND WPP_INIT_TRACING</code>
