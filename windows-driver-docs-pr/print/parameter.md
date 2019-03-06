@@ -68,7 +68,7 @@ Attributes
 <td><p>xs:string</p></td>
 <td><p>No</p></td>
 <td><p></p>
-<p>An optional attribute that specifies the name of the printer or document. This attribute can take one of the following values:DocumentThe name of the document being printed.PrinterNameThe name of the printer, as listed in the Printers and Faxes folder in Control Panel, for example, &quot;Fabrikam 5000 on \printserver&quot; or &quot;Printer in upstairs bedroom.&quot;</p></td>
+<p>An optional attribute that specifies the name of the printer or document. This attribute can take one of the following values:DocumentThe name of the document being printed.PrinterNameThe name of the printer, as listed in the Printers and Faxes folder in Control Panel, for example, "Fabrikam 5000 on \printserver" or "Printer in upstairs bedroom."</p></td>
 </tr>
 </tbody>
 </table>

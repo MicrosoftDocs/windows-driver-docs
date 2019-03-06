@@ -214,28 +214,28 @@ The Symbol Server Proxy registry key supports the following global settings (all
 </tr>
 <tr class="even">
 <td align="left">LogLevel</td>
-<td align="left"><p>By default, SymProxy doesn’t log an extensive amount of information about its use of SymSrv.dll. Creating REG_DWORD:&quot;LogLevel &quot; with a value of 5 (Analytic) or 6 (Debug), enables the additional logging.</p></td>
+<td align="left"><p>By default, SymProxy doesn’t log an extensive amount of information about its use of SymSrv.dll. Creating REG_DWORD:"LogLevel " with a value of 5 (Analytic) or 6 (Debug), enables the additional logging.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">NoInternetProxy</td>
 <td align="left"><p>When running as a service, SymSrv.dll uses WinHTTP instead of WinInet to make HTTP requests. Consequently, you may need to set up HTTP proxy settings so that the service can access outside network resources. You can do this using the netsh program. Type “netsh.exe winhttp -?” for instructions.</p>
 <p>By default, SymProxy uses the designated HTTP proxy. If no HTTP proxy is configured, SymProxy will use a dummy proxy. This allows secure access to HTTP sites within your intranet. As a side effect, this prevents SymProxy from directly connecting to non-secure sites.</p>
-<p>Creating the REG_DWORD:&quot;NoInternetProxy&quot; value configures SymProxy to operate without a proxy, allowing a direct connection.</p></td>
+<p>Creating the REG_DWORD:"NoInternetProxy" value configures SymProxy to operate without a proxy, allowing a direct connection.</p></td>
 </tr>
 <tr class="even">
 <td align="left">NoFilePointers</td>
 <td align="left"><p>By default, for symbols that don’t exist, SymProxy will look for a file.ptr file next to the requested file (in the local cache). If found, it will return the location specified by the file.ptr file. This ability is only required when the local cache is being populated by SymStore.exe.</p>
-<p>Create the REG_DWORD:&quot;NoFilePointers&quot; value to skip the lookup.</p></td>
+<p>Create the REG_DWORD:"NoFilePointers" value to skip the lookup.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">NoUncompress</td>
 <td align="left"><p>By default, SymProxy will decompress downloaded symbols before returning the file to the caller. This reduces CPU at the client, but increases I/O.</p>
-<p>Create the REG_DWORD:&quot;NoUncompress&quot; value to skip the decompression.</p></td>
+<p>Create the REG_DWORD:"NoUncompress" value to skip the decompression.</p></td>
 </tr>
 <tr class="even">
 <td align="left">NoCache</td>
 <td align="left"><p>By default, SymProxy will cache downloaded symbols to the local file system, defined by the virtual directory’s path.</p>
-<p>Create the REG_DWORD:&quot;NoCache&quot; value to skip the download and to provide the remote path of the file to the client instead.</p></td>
+<p>Create the REG_DWORD:"NoCache" value to skip the download and to provide the remote path of the file to the client instead.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">MissTimeout</td>
@@ -259,7 +259,7 @@ The Symbol Server Proxy registry key supports the following global settings (all
 </tr>
 <tr class="odd">
 <td align="left">MissFileCache</td>
-<td align="left"><p>By default, SymProxy does not save miss information to disk. Create the REG_DWORD:&quot;MissFileCache&quot; value to cache miss information in the symbol folder tree. Create the REG_DWORD:&quot;MissFileCache&quot; value to cache miss information in the symbol folder tree.</p>
+<td align="left"><p>By default, SymProxy does not save miss information to disk. Create the REG_DWORD:"MissFileCache" value to cache miss information in the symbol folder tree. Create the REG_DWORD:"MissFileCache" value to cache miss information in the symbol folder tree.</p>
 <p>Enable MissFileCache when miss informarion needs to be shared across an IIS farm. Enabling MissFileCache also makes worker process recycling more efficient.</p>
 <p>MissFileCache causes an I/O operation on the first request for a missing symbol (Miss File Read), the download of a symbol (Miss File Delete), and a failed symbol lookup (Miss File Write).</p>
 <p>Use the “Miss File XXX/sec” counters to monitor the operations.</p>
@@ -268,7 +268,7 @@ The Symbol Server Proxy registry key supports the following global settings (all
 </tr>
 <tr class="even">
 <td align="left">MissFileThreads</td>
-<td align="left"><p>By default, SymProxy performs up to 16 concurrent asynchronous file I/O operations for the Miss File feature. Creating the REG_DWORD:&quot; MissFileThreads&quot; value overrides the default limit. Values can be between 1 and 64.</p>
+<td align="left"><p>By default, SymProxy performs up to 16 concurrent asynchronous file I/O operations for the Miss File feature. Creating the REG_DWORD:" MissFileThreads" value overrides the default limit. Values can be between 1 and 64.</p>
 <p>Use the “Miss File Queue Depth” counter to monitor the load.</p></td>
 </tr>
 <tr class="odd">

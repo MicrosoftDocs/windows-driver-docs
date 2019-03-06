@@ -102,7 +102,7 @@ The following table shows the values that file system filter drivers should spec
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Signature</strong></p></td>
-<td align="left"><p>&quot;$WINDOWS NT$&quot;</p></td>
+<td align="left"><p>"$WINDOWS NT$"</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Class</strong></p></td>

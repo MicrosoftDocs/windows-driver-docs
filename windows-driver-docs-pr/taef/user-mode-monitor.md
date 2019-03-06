@@ -139,8 +139,8 @@ namespace UserModeMonitorExample
         [TestProperty("Description", "Shows how a test can be failed if the UI is closed from underneath the test.")]
         public void SimpleInteraction()
         {
-            Log.Comment("If the 'user mode monitor' is enabled and mspaint.exe is closed,&quot;);
-            Log.Comment(&quot;then this test will be failed.&quot;);
+            Log.Comment("If the 'user mode monitor' is enabled and mspaint.exe is closed,");
+            Log.Comment("then this test will be failed.");
             Log.Comment("Sleeping for 5 seconds");
 
             Thread.Sleep(TimeSpan.FromSeconds(5));

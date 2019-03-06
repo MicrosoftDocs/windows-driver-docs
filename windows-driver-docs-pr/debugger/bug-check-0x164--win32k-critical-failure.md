@@ -42,7 +42,7 @@ The WIN32K\_CRITICAL\_FAILURE bug check has a value of 0x00000164. This indicate
 <p>2 - Pointer to DC</p>
 <p>3 - Pointer to SURFACE</p>
 <p>4 - Pointer to REGION</p>
-0x2 : OPERATOR_NEW_USED - Operator &quot;new&quot; is used to allocate memory.
+0x2 : OPERATOR_NEW_USED - Operator "new" is used to allocate memory.
 <p>2 - Reserved</p>
 <p>3 - Reserved</p>
 <p>4 - Reserved</p>

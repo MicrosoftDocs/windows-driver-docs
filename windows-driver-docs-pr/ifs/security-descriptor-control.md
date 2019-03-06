@@ -96,7 +96,7 @@ The control value can include a combination of the following **SECURITY\_DESCRIP
 </tr>
 <tr class="odd">
 <td align="left"><p>SE_SELF_RELATIVE</p></td>
-<td align="left"><p>Indicates a security descriptor in self-relative format with all the security information in a contiguous block of memory. If this flag is not set, the security descriptor is in absolute format. For more information, see &quot;Absolute and Self-Relative Security Descriptors&quot; in the Windows SDK documentation.</p></td>
+<td align="left"><p>Indicates a security descriptor in self-relative format with all the security information in a contiguous block of memory. If this flag is not set, the security descriptor is in absolute format. For more information, see "Absolute and Self-Relative Security Descriptors" in the Windows SDK documentation.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SE_SERVER_SECURITY</p></td>

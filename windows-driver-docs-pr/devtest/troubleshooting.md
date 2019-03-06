@@ -79,19 +79,19 @@ If you receive any of the following error messages, refer to the Resolution colu
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Association</td>
-<td align="left">Invalid format : &quot;Value&quot; - don't add { } in the beginning and end.</td>
+<td align="left">Invalid format : "Value" - don't add { } in the beginning and end.</td>
 <td align="left">Remove the {} and try again.</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
 <td align="left">Association</td>
-<td align="left">Invalid GUID format: &quot;Value&quot;</td>
+<td align="left">Invalid GUID format: "Value"</td>
 <td align="left">Type the correct GUID and try again.</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Icon</td>
-<td align="left">There were problems with the icon file: &quot;Error Message&quot; Icon Validation Error</td>
+<td align="left">There were problems with the icon file: "Error Message" Icon Validation Error</td>
 <td align="left">The icon can't be found or doesn't meet the requirement to be displayed in Devices and Printers in Control Panel. Find or fix the icon and try again.
 <p>Error examples:</p>
 <ul>

@@ -78,13 +78,13 @@ The default class installer for still image devices, *sti\_ci.dll*, recognizes a
 <tr class="even">
 <td><p><strong>Events</strong></p></td>
 <td><p>Identifies a vendor-supplied data section listing still image device events. Each entry in this section must have the following format:</p>
-<p><em>EventName</em><strong>=&quot;</strong><em>String</em><strong>&quot;,{</strong><em>GUID</em><strong>},</strong>App</p>
+<p><em>EventName</em><strong>="</strong><em>String</em><strong>",{</strong><em>GUID</em><strong>},</strong>App</p>
 <p><em>EventName</em> is the event's internal name, <em>String</em> is the event's display string, <em>GUID</em> is the event's GUID, and <em>App</em> specifies the imaging application to be launched when the event occurs. To launch the currently registered application, use an asterisk (<strong>*</strong>) for <em>App</em>.</p></td>
 <td><p>Required</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PortSelect</strong></p></td>
-<td><p>If the device installation does not require a port selection page, a value of &quot;no&quot; causes that page to be skipped. This value also causes the <strong>CreateFileName</strong> entry value (see the <strong>Note</strong> on <strong>CreateFileName</strong> and <strong>PortSelect</strong> following this table) to be automatically set to AUTO.</p>
+<td><p>If the device installation does not require a port selection page, a value of "no" causes that page to be skipped. This value also causes the <strong>CreateFileName</strong> entry value (see the <strong>Note</strong> on <strong>CreateFileName</strong> and <strong>PortSelect</strong> following this table) to be automatically set to AUTO.</p>
 <p>A value of Message1 causes a system-supplied message to be displayed, and sets the <strong>CreateFileName</strong> entry value to AUTO.</p>
 <p>Applies to both scanners and cameras that require manual installation.</p></td>
 <td><p>Optional</p>

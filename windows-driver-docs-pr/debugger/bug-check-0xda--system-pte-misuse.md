@@ -108,8 +108,8 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 </tr>
 <tr class="even">
 <td align="left"><p>0x0A</p></td>
-<td align="left"><p><strong>1:</strong> The driver requested &quot;bug check on failure&quot; in the MDL.</p>
-<p><strong>0:</strong> The driver did not request &quot;bug check on failure&quot; in the MDL.</p></td>
+<td align="left"><p><strong>1:</strong> The driver requested "bug check on failure" in the MDL.</p>
+<p><strong>0:</strong> The driver did not request "bug check on failure" in the MDL.</p></td>
 <td align="left"><p>The number of mappings that the caller is allocating</p></td>
 <td align="left"><p>The type of mapping pool requested</p></td>
 <td align="left"><p>(Windows 2000 only) The caller is asking to allocate zero mappings.</p></td>

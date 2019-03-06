@@ -52,7 +52,7 @@ The compatible ID for a 3D printer is shown in the following table:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>&quot;3DPRINT&quot;</p>
+<td><p>"3DPRINT"</p>
 <p>(0x33 0x44 0x50 0x52 0x49 0x4E 0x54 0x00)</p></td>
 <td><p>Varies</p></td>
 <td><p>MS3DPRINT G-Code Printer</p></td>

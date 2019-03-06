@@ -48,7 +48,7 @@ Note that the load order groups are listed as they appear on the stack, which is
 <tbody>
 <tr class="odd">
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>This group is the same as the &quot;filter&quot; load order group that was available on Windows 2000 and earlier. This group loads last and thus attaches furthest from the file system.</p></td>
+<td align="left"><p>This group is the same as the "filter" load order group that was available on Windows 2000 and earlier. This group loads last and thus attaches furthest from the file system.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>FSFilter Top</p></td>

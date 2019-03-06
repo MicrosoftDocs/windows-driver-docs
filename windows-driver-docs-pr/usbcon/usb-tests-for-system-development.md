@@ -58,7 +58,7 @@ If you are building a new system, here are the recommended USB HCK tests:
 <li>In Windows HCK Studio, on the <strong>Selection</strong> tab, click <strong>Device manager</strong>.</li>
 <li>Select the xHCI controller and its root hub.
 <div class="alert">
-<strong>Note</strong>  To quickly find the controller, type &quot;xhci&quot; in search.
+<strong>Note</strong>  To quickly find the controller, type "xhci" in search.
 </div>
 <div>
  
@@ -114,7 +114,7 @@ If you are building a new system, here are the recommended USB HCK tests:
 <li>On the <strong>Selection</strong> tab, click <strong>Device manager</strong>.</li>
 <li>Select the xHCI controller and its root hub.
 <div class="alert">
-<strong>Note</strong>  To quickly find the controller, type &quot;xhci&quot; in search.
+<strong>Note</strong>  To quickly find the controller, type "xhci" in search.
 </div>
 <div>
  
@@ -180,7 +180,7 @@ System 3 (if dock supported)
 <li>On the <strong>Selection</strong> tab, click <strong>Device manager</strong>.</li>
 <li>Select the xHCI controller and its root hub.
 <div class="alert">
-<strong>Note</strong>  To quickly find the controller, type &quot;xhci&quot; in search.
+<strong>Note</strong>  To quickly find the controller, type "xhci" in search.
 </div>
 <div>
  
@@ -193,7 +193,7 @@ System 3 (if dock supported)
 <li>On the <strong>Selection</strong> tab, click <strong>Device manager</strong>.</li>
 <li>Select all MUTT devices in the topology, shown in the list.
 <div class="alert">
-<strong>Note</strong>  To quickly find the controller, type &quot;MUTT&quot; in search.
+<strong>Note</strong>  To quickly find the controller, type "MUTT" in search.
 </div>
 <div>
  

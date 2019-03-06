@@ -144,7 +144,7 @@ If the BIOS incompatibility is related to Plug and Play (PnP) or power managemen
 <td align="left"><p>The NS <strong>PowerResource</strong> that ACPI needs the object for</p></td>
 <td align="left"><p>The (ULONG) name of the method that ACPI looked for</p></td>
 <td align="left"><p>0: Base case</p></td>
-<td align="left"><p>ACPI could not find a required method or object in the namespace for a power resource (or entity other than a &quot;device&quot;). This bug check code is used if there is no _ON, _OFF, or _STA present for a power resource.</p></td>
+<td align="left"><p>ACPI could not find a required method or object in the namespace for a power resource (or entity other than a "device"). This bug check code is used if there is no _ON, _OFF, or _STA present for a power resource.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x0F</p></td>
@@ -423,7 +423,7 @@ If Parameter 1 equals **0x10**, the ACPI BIOS could not determine the system-to-
 <tr class="odd">
 <td align="left"><p>The ACPI extension whose mapping is needed</p></td>
 <td align="left"><p>0x0</p></td>
-<td align="left"><p>The DEVICE_POWER_STATE (this is &quot;x+1&quot;)</p></td>
+<td align="left"><p>The DEVICE_POWER_STATE (this is "x+1")</p></td>
 <td align="left"><p>_PRx was mapped back to a non-supported S-state.</p></td>
 </tr>
 <tr class="even">

@@ -198,7 +198,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <td align="left"><p>Pool type</p></td>
 <td align="left"><p>Number of bytes requested</p></td>
 <td align="left"><p>Caller's address</p></td>
-<td align="left"><p>The current thread attempted to allocate a pool with a tag of &quot;BIG&quot;.</p>
+<td align="left"><p>The current thread attempted to allocate a pool with a tag of "BIG".</p>
 <p>(This would be untrackable and could possibly corrupt the existing tag tables.)</p></td>
 </tr>
 <tr class="even">

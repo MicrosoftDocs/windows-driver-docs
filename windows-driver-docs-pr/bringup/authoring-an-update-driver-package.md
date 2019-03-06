@@ -247,7 +247,7 @@ The following table describes the various driver package INF sections and fields
 </tr>
 <tr class="odd">
 <td>Provider</td>
-<td>&quot;Contoso Ltd.&quot;</td>
+<td>"Contoso Ltd."</td>
 <td>An example of a string token key/value mapping.</td>
 </tr>
 </tbody>

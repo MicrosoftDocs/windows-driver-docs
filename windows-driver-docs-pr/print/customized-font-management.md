@@ -114,25 +114,25 @@ All .uff files must be stored in the %SystemRoot%\\System32\\Spool\\Drivers\\Uni
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>&quot;ExternalFontFile&quot;</p>
+<td><p>"ExternalFontFile"</p>
 <p>REG_SZ</p></td>
 <td><p>Filename of a .uff file that specifies the current installed fonts. Fonts can be downloadable or contained in a cartridge.</p></td>
 <td><p>Font Installer</p></td>
 </tr>
 <tr class="even">
-<td><p>&quot;ExtFontCartFile&quot;</p>
+<td><p>"ExtFontCartFile"</p>
 <p>REG_SZ</p></td>
-<td><p>Filename of a .uff file that specifies all the fonts contained in all the font cartridges listed for &quot;ExtFontCartNames&quot;.</p></td>
+<td><p>Filename of a .uff file that specifies all the fonts contained in all the font cartridges listed for "ExtFontCartNames".</p></td>
 <td><p>Font Installer</p></td>
 </tr>
 <tr class="odd">
-<td><p>&quot;ExtFontCartNames&quot;</p>
+<td><p>"ExtFontCartNames"</p>
 <p>REG_MULTI_SZ</p></td>
 <td><p>Names of all the font cartridges that could possibly be installed on the printer.</p></td>
 <td><p>Font Installer</p></td>
 </tr>
 <tr class="even">
-<td><p>&quot;FontCart&quot;</p>
+<td><p>"FontCart"</p>
 <p>REG_MULTI_SZ</p></td>
 <td><p>Names of all the font cartridges currently installed for the printer.</p></td>
 <td><p>Unidrv user interface</p></td>

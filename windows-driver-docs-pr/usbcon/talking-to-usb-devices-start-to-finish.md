@@ -82,7 +82,7 @@ Follow the steps in this section or, skip directly to the [Custom USB device acc
 <td><p>You can obtain that information from the device manufacturer.</p>
 <ul>
 <li><p><strong>Vendor and product identifiers</strong></p>
-<p>In Device Manager, view the device properties. On the <strong>Details</strong> tab, view the <strong>Hardware Id</strong> property value. That value is a combination of those two identifiers. For example, for the SuperMUTT device, the <strong>Hardware Id</strong> is &quot;USB\VID_045E&amp;PID_F001&quot;; vendor ID is &quot;0x045E&quot; and product ID is &quot;0xF001&quot;.</p></li>
+<p>In Device Manager, view the device properties. On the <strong>Details</strong> tab, view the <strong>Hardware Id</strong> property value. That value is a combination of those two identifiers. For example, for the SuperMUTT device, the <strong>Hardware Id</strong> is "USB\VID_045E&amp;PID_F001"; vendor ID is "0x045E" and product ID is "0xF001".</p></li>
 <li><strong>Device class, subclass, and protocol codes</strong></li>
 <li><strong>Device interface GUID</strong></li>
 </ul>
@@ -113,7 +113,7 @@ Alternatively, you can view information the registry. For more information, see 
 <td><a href="" id="step5"></a>
 <p><strong>Step 5</strong>—Add USB device capabilities to the app manifest.</p></td>
 <td><p><strong>QuickStart:</strong> <a href="updating-the-app-manifest-with-usb-device-capabilities.md" data-raw-source="[How to add USB device capabilities to the app manifest](updating-the-app-manifest-with-usb-device-capabilities.md)">How to add USB device capabilities to the app manifest</a></p>
-<p>Open your Package.appxmanifest file in a text editor and add the <a href="https://msdn.microsoft.com/library/windows/apps/br211430" data-raw-source="[&lt;strong&gt;DeviceCapability&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/br211430)"><strong>DeviceCapability</strong></a> element with <strong>Name</strong> attribute set to &quot;usb&quot; as shown in this example.</p>
+<p>Open your Package.appxmanifest file in a text editor and add the <a href="https://msdn.microsoft.com/library/windows/apps/br211430" data-raw-source="[&lt;strong&gt;DeviceCapability&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/br211430)"><strong>DeviceCapability</strong></a> element with <strong>Name</strong> attribute set to "usb" as shown in this example.</p>
 <div class="alert">
 <strong>Note</strong>  You cannot modify the USB device capability in Visual Studio 2013. You must right-click the Package.appxmanifest file in <strong>Solution Explorer</strong> and select <strong>Open With...</strong>, and then <strong>XML (Text) Editor</strong>. The file opens in plain XML.
 </div>
@@ -124,11 +124,11 @@ Alternatively, you can view information the registry. For more information, see 
       &lt;!--When the device's classId is FF * *, there is a predefined name for the class. 
           You can use the name instead of the class id. 
           There are also other predefined names that correspond to a classId.--&gt;
-      &lt;m2:DeviceCapability Name=&quot;usb&quot;&gt;
+      &lt;m2:DeviceCapability Name="usb"&gt;
           &lt;!--SuperMutt Device--&gt;
-          &lt;m2:Device Id=&quot;vidpid:045E 0611&quot;&gt;
-              &lt;!--&lt;wb:Function Type=&quot;classId:ff * *&quot;/&gt;--&gt;
-              &lt;m2:Function Type=&quot;name:vendorSpecific&quot;/&gt;
+          &lt;m2:Device Id="vidpid:045E 0611"&gt;
+              &lt;!--&lt;wb:Function Type="classId:ff * *"/&gt;--&gt;
+              &lt;m2:Function Type="name:vendorSpecific"/&gt;
           &lt;/m2:Device&gt;
       &lt;/m2:DeviceCapability&gt;
   &lt;/Capabilities&gt;</code></pre>

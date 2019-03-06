@@ -131,7 +131,7 @@ The client driver cancels the idle IRP by calling [**IoCancelIrp**](https://msdn
 </thead>
 <tbody>
 <tr class="odd">
-<td>The client driver has canceled the idle IRP and the USB driver stack has not called the &quot;USB Idle Notification Callback Routine&quot;.</td>
+<td>The client driver has canceled the idle IRP and the USB driver stack has not called the "USB Idle Notification Callback Routine".</td>
 <td><p>The USB driver stack completes the idle IRP. Because the device never left the <strong>D0</strong>, the driver does not change the device state.</p></td>
 </tr>
 <tr class="even">

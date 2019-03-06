@@ -42,7 +42,7 @@ The WIN32K\_CRITICAL\_FAILURE\_LIVEDUMP bug check has a value of 0x00000190. Thi
 2- Pointer to DC
 3- Pointer to SURFACE
 4- Pointer to REGION
-<p>0x2 : OPERATOR_NEW_USED - Operator &quot;new&quot; is used to allocate memory.</p>
+<p>0x2 : OPERATOR_NEW_USED - Operator "new" is used to allocate memory.</p>
 2 - Reserved
 3 - Reserved
 4 - Reserved</td>

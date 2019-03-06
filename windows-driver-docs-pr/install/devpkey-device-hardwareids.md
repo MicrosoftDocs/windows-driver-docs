@@ -36,7 +36,7 @@ The DEVPKEY_DEVICE_HardwareIds device property represents the list of hardware i
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Data format</strong></p></td>
-<td align="left">&quot;<em>hw-id1</em>\0<em>hw-id</em>2\0...<em>hw-idn</em>\0\0&quot;</td>
+<td align="left">"<em>hw-id1</em>\0<em>hw-id</em>2\0...<em>hw-idn</em>\0\0"</td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property access</strong></p></td>
