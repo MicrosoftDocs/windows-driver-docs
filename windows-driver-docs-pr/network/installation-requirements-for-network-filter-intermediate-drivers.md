@@ -167,7 +167,7 @@ Two INF files are required to install a network filter intermediate driver:
 <tr class="even">
 <td align="left"><p><a href="ddinstall-services-section-in-a-network-inf-file.md" data-raw-source="[DDInstall.Services Section](ddinstall-services-section-in-a-network-inf-file.md)">DDInstall.Services Section</a></p></td>
 <td align="left"><p>Required</p></td>
-<td align="left"><p>The <em>ServiceName</em> value of the <strong>AddService</strong> directive must match the filter component&#39;s Service value under the <strong>Ndi</strong> key.</p></td>
+<td align="left"><p>The <em>ServiceName</em> value of the <strong>AddService</strong> directive must match the filter component's Service value under the <strong>Ndi</strong> key.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="add-registry-sections-in-a-network-inf-file.md" data-raw-source="[Add-registry-sections](add-registry-sections-in-a-network-inf-file.md)">Add-registry-sections</a></p></td>

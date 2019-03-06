@@ -121,7 +121,7 @@ Alternatively, you can view information the registry. For more information, see 
  
 </div>
 <pre class="syntax" space="preserve"><code>&lt;Capabilities&gt;
-      &lt;!--When the device&#39;s classId is FF * *, there is a predefined name for the class. 
+      &lt;!--When the device's classId is FF * *, there is a predefined name for the class. 
           You can use the name instead of the class id. 
           There are also other predefined names that correspond to a classId.--&gt;
       &lt;m2:DeviceCapability Name=&quot;usb&quot;&gt;
@@ -276,7 +276,7 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ap
 <div>
  
 </div></li>
-<li>Open the <strong>Finish</strong> tab. Select the <strong>Copy packages to your system&#39;s local metadata store</strong> check box.</li>
+<li>Open the <strong>Finish</strong> tab. Select the <strong>Copy packages to your system's local metadata store</strong> check box.</li>
 <li>Connect the device, in Control Panel, open <strong>View devices and printers</strong> and verify that the icon of the device is correct.</li>
 </ol>
 <p><strong>Find it in the sample:</strong> See the DeviceMetadata folder.</p></td>
@@ -367,7 +367,7 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ap
 <td><a href="" id="step17"></a>
 <p><strong>Step 17</strong>—Run Windows App Certification Kit.</p></td>
 <td><p><a href="https://msdn.microsoft.com/library/windows/apps/hh694081" data-raw-source="[Using the Windows App Certification Kit](https://msdn.microsoft.com/library/windows/apps/hh694081)">Using the Windows App Certification Kit</a></p>
-<p>Recommended. Running Windows App Certification Kit helps you make sure your app fulfills Microsoft Store requirements, so you should do this when you&#39;ve added major functionality to your app.</p></td>
+<p>Recommended. Running Windows App Certification Kit helps you make sure your app fulfills Microsoft Store requirements, so you should do this when you've added major functionality to your app.</p></td>
 </tr>
 </tbody>
 </table>

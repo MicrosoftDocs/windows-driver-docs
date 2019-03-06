@@ -159,9 +159,9 @@ Assume that you have to print a four-page document with n-up = 1, and you want t
 
 -   Format 2: (3,4),(1,2)
 
-Before Windows Vista, a print processor would print the pages in format 2 \[(3,4),(1,2)\]. But in Windows Vistaand later, the default format is format 1 \[(4,3),(2,1)\]. This change occurred because many printers have incorrect output with format 2; that is, the pages that are printed are not ordered in the proper order.
+Before Windows Vista, a print processor would print the pages in format 2 \[(3,4),(1,2)\]. But in Windows Vista and later, the default format is format 1 \[(4,3),(2,1)\]. This change occurred because many printers have incorrect output with format 2; that is, the pages that are printed are not ordered in the proper order.
 
-If your printer works correctly with format 1, you will not need to change anything for Windows Vistaand later. However, if your printer works incorrectly with format 1 and you want to revert to format 2, add the **MSPrintProcDuplexOptions** attribute with value 1.
+If your printer works correctly with format 1, you will not need to change anything for Windows Vista and later. However, if your printer works incorrectly with format 1 and you want to revert to format 2, add the **MSPrintProcDuplexOptions** attribute with value 1.
 
 ```cpp
 *MSPrintProcDuplexOptions: "1"

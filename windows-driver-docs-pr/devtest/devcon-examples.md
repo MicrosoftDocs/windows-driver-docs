@@ -200,9 +200,9 @@ In response, DevCon displays the device instance ID, hardware ID, and compatible
 ```
 FDC\GENERIC_FLOPPY_DRIVE\5&39194F6D&0&0
     Name: Floppy disk drive
-    Hardware ID&#39;s:
+    Hardware ID's:
         FDC\GENERIC_FLOPPY_DRIVE
-    Compatible ID&#39;s:
+    Compatible ID's:
         GenFloppyDisk
 1 matching device(s) found.
 ```
@@ -222,17 +222,17 @@ In response, DevCon displays the hardware IDs and compatible IDs of the three de
 ```
 ACPI\PNP0401\4&B4063F4&0
     Name: ECP Printer Port (LPT1)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ACPI\PNP0401
         *PNP0401
 ACPI\PNP0501\1
     Name: Communications Port (COM1)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ACPI\PNP0501
         *PNP0501
 ACPI\PNP0501\2
     Name: Communications Port (COM2)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ACPI\PNP0501
         *PNP0501
 3 matching device(s) found.
@@ -303,12 +303,12 @@ The resulting display lists the devices in the Net class and includes the device
 ```
 PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028&REV_78\4&BB7B4AE&0&60F0
     Name: 3Com 3C920 Integrated Fast Ethernet Controller (3C905C-TX Compatible)
-    Hardware ID&#39;s:
+    Hardware ID's:
         PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028&REV_78
         PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028
         PCI\VEN_10B7&DEV_9200&CC_020000
         PCI\VEN_10B7&DEV_9200&CC_0200
-    Compatible ID&#39;s:
+    Compatible ID's:
         PCI\VEN_10B7&DEV_9200&REV_78
         PCI\VEN_10B7&DEV_9200
         PCI\VEN_10B7&CC_020000
@@ -318,23 +318,23 @@ PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028&REV_78\4&BB7B4AE&0&60F0
  PCI\CC_0200
 ROOT\MS_L2TPMINIPORT\0000
     Name: WAN Miniport (L2TP)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ms_l2tpminiport
 ROOT\MS_NDISWANIP\0000
     Name: WAN Miniport (IP)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ms_ndiswanip
 ROOT\MS_PPPOEMINIPORT\0000
     Name: WAN Miniport (PPPOE)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ms_pppoeminiport
 ROOT\MS_PPTPMINIPORT\0000
     Name: WAN Miniport (PPTP)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ms_pptpminiport
 ROOT\MS_PTIMINIPORT\0000
     Name: Direct Parallel
-    Hardware ID&#39;s:
+    Hardware ID's:
         ms_ptiminiport
 6 matching device(s) found.
 ```
@@ -620,7 +620,7 @@ In response, DevCon returns the device instance ID (displayed in bold text) and 
 ```
 LPTENUM\MICROSOFTRAWPORT\5&CA97D7E&0&LPT1
     Name: Printer Port Logical Interface
-    Hardware ID&#39;s:
+    Hardware ID's:
         LPTENUM\MicrosoftRawPort958A
         MicrosoftRawPort958A
 1 matching device(s) found.
@@ -1070,7 +1070,7 @@ Class filters changed. Class devices must be restarted for changes to take effec
 The following command uses the [**DevCon Enable**](devcon-enable.md) operation to enable a programmable interrupt controller that had been disabled to correct a system problem. Because the controller hardware ID \*PNP0000 includes an asterisk, the command uses the single quote character (**'**) to direct DevCon to find the hardware ID precisely as it is specified in the command. Otherwise, the asterisk would be interpreted as a wildcard character.
 
 ```
-devcon enable &#39;*PNP0000
+devcon enable '*PNP0000
 ```
 
 In response, DevCon displays the device instance ID of the device and explains that you must reboot the system to enable the device.
@@ -1085,7 +1085,7 @@ You can respond by rebooting the system, either manually, or by using the [**Dev
 The following command adds the **/r** parameter to the previous command. The **/r** parameter reboots the system only if rebooting is required to complete an operation.
 
 ```
-devcon /r enable &#39;*PNP0000
+devcon /r enable '*PNP0000
 ```
 
 In response, DevCon enables the device and then reboots the system to make the enabling effective.
@@ -1093,7 +1093,7 @@ In response, DevCon enables the device and then reboots the system to make the e
 When the system starts, use a DevCon status command to confirm that the device is enabled.
 
 ```
-devcon status &#39;*PNP0000
+devcon status '*PNP0000
 
 ACPI\PNP0000\4&B4063F4&0
     Name: Programmable interrupt controller
@@ -1220,7 +1220,7 @@ To install this device during an unattended setup, begin by adding the following
 Then, to the **\[GUIRunOnce\]** section of the unattended setup file, add the following DevCon command:
 
 ```
-a:\devcon /r install a:\Netloop.inf &#39;*MSLOOP
+a:\devcon /r install a:\Netloop.inf '*MSLOOP
 ```
 
 This command identifies the loopback adapter by using its hardware ID, \*MSLOOP. The single quote character preceding "\*MSLOOP" tells DevCon to interpret the string literally, that is, to interpret the asterisk as part of the hardware ID, not as a wildcard character.
@@ -1294,7 +1294,7 @@ devcon /m:\\server01 rescan
 The following command uses the [**DevCon Restart**](devcon-restart.md) operation to restart the loopback adapter on the local computer. The command limits the search to the Net setup class and, within that class, specifies the device instance ID of the loopback adapter, **ROOT\\\*MSLOOP\\0000**. The at character (**@**) identifies the string as an device instance ID. The single quote character (**'**), which requests a literal search, prevents DevCon from interpreting the asterisk in the ID as a wildcard character.
 
 ```
-devcon restart =net @&#39;ROOT\*MSLOOP\0000
+devcon restart =net @'ROOT\*MSLOOP\0000
 ```
 
 In response, DevCon displays the device instance ID of the device and reports the result.

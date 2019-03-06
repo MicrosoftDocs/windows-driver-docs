@@ -116,7 +116,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>NDIS_BUGCHECK_HALT_WITHOUT_CANCEL_TIMER</p>
 <p>A miniport driver stopped without successfully canceling all its timers.</p></td>
 <td align="left"><p>The address of the specific miniport adapter block. Run <strong><a href="-ndiskd-netadapter.md" data-raw-source="[!ndiskd.netadapter](-ndiskd-netadapter.md)">!ndiskd.netadapter</a></strong> with this address for more information.</p></td>
-<td align="left"><p>The address of the miniport driver&#39;s timer queue (NDIS_MINIPORT_TIMER)</p></td>
+<td align="left"><p>The address of the miniport driver's timer queue (NDIS_MINIPORT_TIMER)</p></td>
 <td align="left"><p>0</p></td>
 </tr>
 <tr class="even">
@@ -140,7 +140,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>NDIS_BUGCHECK_INIT_FAILED_WITHOUT_CANCEL_TIMER</p>
 <p>A miniport driver failed its initialization without successfully canceling all its timers.</p></td>
 <td align="left"><p>The address of the specific miniport adapter block. Run <strong><a href="-ndiskd-netadapter.md" data-raw-source="[!ndiskd.netadapter](-ndiskd-netadapter.md)">!ndiskd.netadapter</a></strong> with this address for more information.</p></td>
-<td align="left"><p>The address of the miniport driver&#39;s timer queue (NDIS_MINIPORT_TIMER)</p></td>
+<td align="left"><p>The address of the miniport driver's timer queue (NDIS_MINIPORT_TIMER)</p></td>
 <td align="left"><p>0</p></td>
 </tr>
 <tr class="odd">
@@ -158,7 +158,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <p>A miniport driver stopped without successfully canceling all its timers.</p>
 <p>The halt was called from the initialize routine after the miniport driver returned success from its initialize handler.</p></td>
 <td align="left"><p>The address of the specific miniport adapter block. Run <strong><a href="-ndiskd-netadapter.md" data-raw-source="[!ndiskd.netadapter](-ndiskd-netadapter.md)">!ndiskd.netadapter</a></strong> with this address for more information.</p></td>
-<td align="left"><p>The address of the miniport driver&#39;s timer queue (NDIS_MINIPORT_TIMER)</p></td>
+<td align="left"><p>The address of the miniport driver's timer queue (NDIS_MINIPORT_TIMER)</p></td>
 <td align="left"><p>0</p></td>
 </tr>
 <tr class="odd">
@@ -182,7 +182,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>NDIS_BUGCHECK_PM_INIT_FAILED_NO_CANCEL_TIMER</p>
 <p>After resuming from a low-power state, a miniport driver failed its initialization without successfully canceling all its timers.</p></td>
 <td align="left"><p>The address of the specific miniport adapter block. Run <strong><a href="-ndiskd-netadapter.md" data-raw-source="[!ndiskd.netadapter](-ndiskd-netadapter.md)">!ndiskd.netadapter</a></strong> with this address for more information.</p></td>
-<td align="left"><p>The address of the miniport driver&#39;s timer queue (NDIS_MINIPORT_TIMER)</p></td>
+<td align="left"><p>The address of the miniport driver's timer queue (NDIS_MINIPORT_TIMER)</p></td>
 <td align="left"><p>0</p></td>
 </tr>
 <tr class="even">

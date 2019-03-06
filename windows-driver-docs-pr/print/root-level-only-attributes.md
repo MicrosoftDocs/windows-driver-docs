@@ -55,7 +55,7 @@ The following table lists the root-level-only attributes.
 <tr class="even">
 <td><p></em><strong>GPDFileVersion</strong></p></td>
 <td><p>Quoted text string representing the current GPD file version. Recommended format is <em>MajorVersion</em>.<em>MinorVersion</em>, such as &quot;1.0&quot;.</p></td>
-<td><p>Optional. If specified, this string is displayed in Unidrv&#39;s About dialog box.</p></td>
+<td><p>Optional. If specified, this string is displayed in Unidrv's About dialog box.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em><strong>GPDSpecVersion</strong></p></td>
@@ -66,7 +66,7 @@ The following table lists the root-level-only attributes.
 <tr class="even">
 <td><p></em><strong>HelpFile</strong></p></td>
 <td><p>Quoted string containing the name of a customized help file, with a .hlp extension.</p></td>
-<td><p>Optional. If included, it can add topics or overwrite existing topics in Unidrv&#39;s help file. Help file indexes are specified by <em>HelpIndex attributes for features and options.</p></td>
+<td><p>Optional. If included, it can add topics or overwrite existing topics in Unidrv's help file. Help file indexes are specified by <em>HelpIndex attributes for features and options.</p></td>
 </tr>
 <tr class="odd">
 <td><p></em><strong>Include</strong></p></td>
@@ -80,7 +80,7 @@ The following table lists the root-level-only attributes.
 </tr>
 <tr class="odd">
 <td><p></em><strong>MasterUnits</strong></p></td>
-<td><p>PAIR representing the printer&#39;s <a href="master-units.md" data-raw-source="[master units](master-units.md)">master units</a>.</p></td>
+<td><p>PAIR representing the printer's <a href="master-units.md" data-raw-source="[master units](master-units.md)">master units</a>.</p></td>
 <td><p>Required. To reduce potential round-off errors, use the same values for resolution units in font metrics data that you specify for <em><strong>MasterUnits</strong>. (See Unidrv Font Metrics in <a href="customized-font-management.md" data-raw-source="[Customized Font Management](customized-font-management.md)">Customized Font Management</a>.)</p></td>
 </tr>
 <tr class="even">

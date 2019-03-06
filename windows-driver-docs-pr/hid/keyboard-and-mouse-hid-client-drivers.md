@@ -233,7 +233,7 @@ For more information about Kbfiltr operation, see the following:
 <p>After Kbfiltr received the keyboard connect request, Kbfiltr filters the connect request in the following way:</p>
 <ul>
 <li>
-<p>Saves a copy of Kbdclass&#39;s &lt;MSHelp:link tabindex=&quot;0&quot; keywords=&quot;hid.connect_data__kbdclass_&quot;&gt;<b>CONNECT_DATA (Kbdclass)</b>&lt;/MSHelp:link&gt; structure that is passed to the filter driver by Kbdclass</p>
+<p>Saves a copy of Kbdclass's &lt;MSHelp:link tabindex=&quot;0&quot; keywords=&quot;hid.connect_data__kbdclass_&quot;&gt;<b>CONNECT_DATA (Kbdclass)</b>&lt;/MSHelp:link&gt; structure that is passed to the filter driver by Kbdclass</p>
 </li>
 <li>
 <p>Substitutes its own connect information for the class driver connect information</p>
@@ -270,7 +270,7 @@ For more information about Kbfiltr operation, see the following:
 <li><b>KbFilter_InitializationRoutine</b>
       
      (see &lt;MSHelp:link tabindex=&quot;0&quot; keywords=&quot;hid.pi8042_keyboard_initialization_routine&quot;&gt;<b>PI8042_KEYBOARD_INITIALIZATION_ROUTINE</b>&lt;/MSHelp:link&gt;)<p><b>
-          KbFilter_InitializationRoutine</b> is not needed if I8042prt&#39;s default initialization of a keyboard is sufficient.</p>
+          KbFilter_InitializationRoutine</b> is not needed if I8042prt's default initialization of a keyboard is sufficient.</p>
 <p>I8042prt calls <b>
           KbFilter_InitializationRoutine</b> when it initializes the keyboard. Default keyboard initialization includes the following operations: reset the keyboard, set the typematic rate and delay, and set the light-emitting diodes (LED).<pre class="syntax" xml:space="preserve"><code>
 /*
@@ -356,7 +356,7 @@ KbFilter_IsrHook KbFilter_IsrHook(
 );
 </code></pre>
 </li>
-<li><b>KbFilter_ServiceCallback</b> (see &lt;MSHelp:link tabindex=&quot;0&quot; keywords=&quot;hid.kbdclass_class_service_callback_routine&quot;&gt;<i>PSERVICE_CALLBACK_ROUTINE</i>&lt;/MSHelp:link&gt;)<p>The ISR dispatch completion routine of the function driver calls <b>KbFilter_ServiceCallback</b>, which then calls the keyboard class driver&#39;s implementation of &lt;MSHelp:link tabindex=&quot;0&quot; keywords=&quot;hid.kbdclass_class_service_callback_routine&quot;&gt;<i>PSERVICE_CALLBACK_ROUTINE</i>&lt;/MSHelp:link&gt;. A vendor can implement a filter service callback to modify the input data that is transferred from the device&#39;s input buffer to the class data queue. For example, the callback can delete, transform, or insert data. <pre class="syntax" xml:space="preserve"><code>
+<li><b>KbFilter_ServiceCallback</b> (see &lt;MSHelp:link tabindex=&quot;0&quot; keywords=&quot;hid.kbdclass_class_service_callback_routine&quot;&gt;<i>PSERVICE_CALLBACK_ROUTINE</i>&lt;/MSHelp:link&gt;)<p>The ISR dispatch completion routine of the function driver calls <b>KbFilter_ServiceCallback</b>, which then calls the keyboard class driver's implementation of &lt;MSHelp:link tabindex=&quot;0&quot; keywords=&quot;hid.kbdclass_class_service_callback_routine&quot;&gt;<i>PSERVICE_CALLBACK_ROUTINE</i>&lt;/MSHelp:link&gt;. A vendor can implement a filter service callback to modify the input data that is transferred from the device's input buffer to the class data queue. For example, the callback can delete, transform, or insert data. <pre class="syntax" xml:space="preserve"><code>
 /</em>
 Parameters
 DeviceObject [in] 
@@ -551,7 +551,7 @@ VOID MouFilter_ServiceCallback(
 
 </code></pre>
 </p>
-<p>The ISR DPC of I8042prt calls MouFilter_ServiceCallback, which then calls MouseClassServiceCallback. A filter service callback can be configured to modify the input data that is transferred from the device&#39;s input buffer to the class data queue. For example, the callback can delete, transform, or insert data. 
+<p>The ISR DPC of I8042prt calls MouFilter_ServiceCallback, which then calls MouseClassServiceCallback. A filter service callback can be configured to modify the input data that is transferred from the device's input buffer to the class data queue. For example, the callback can delete, transform, or insert data. 
 
 </p>
 

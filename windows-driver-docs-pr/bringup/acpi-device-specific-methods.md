@@ -34,7 +34,7 @@ The [ACPI 5.0 specification](https://www.uefi.org/specifications) introduces sev
 </tr>
 <tr class="even">
 <td><p><a href="battery-device-specific-method.md" data-raw-source="[Battery Device-Specific Method](battery-device-specific-method.md)">Battery Device-Specific Method</a></p></td>
-<td><p>To support the passive thermal management of the battery by the platform, Microsoft defines a _DSM method to communicate to the platform firmware the thermal throttling limit set by the battery&#39;s thermal zone.</p></td>
+<td><p>To support the passive thermal management of the battery by the platform, Microsoft defines a _DSM method to communicate to the platform firmware the thermal throttling limit set by the battery's thermal zone.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="device-specific-method-for-microsoft-thermal-extensions.md" data-raw-source="[Device-Specific Method for Microsoft thermal extensions](device-specific-method-for-microsoft-thermal-extensions.md)">Device-Specific Method for Microsoft thermal extensions</a></p></td>

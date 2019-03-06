@@ -97,7 +97,7 @@ The basics on retrieving this information are very similar to retrieving values 
 11    public class CSharpWmiDataSourceExample
 12    {
 13        [TestMethod]
-14        [DataSource("WMI:SELECT Description, DesktopInteract, ProcessId FROM Win32_Service WHERE Name=&#39;Themes&#39;")]
+14        [DataSource("WMI:SELECT Description, DesktopInteract, ProcessId FROM Win32_Service WHERE Name='Themes'")]
 15        public void ThemesTest()
 16        {
 17            String description = (String)m_testContext.DataRow["Description"];
@@ -184,7 +184,7 @@ In managed test code for example, TestContext will store the null values as an o
 19            Log.Comment("DriveType is " + driveType.ToString());
 20
 21            object nullCheckCompressed = m_testContext.DataRow["Compressed"];
-22            Log.Comment("Compressed&#39;s type is: " + nullCheckCompressed.GetType().ToString());
+22            Log.Comment("Compressed's type is: " + nullCheckCompressed.GetType().ToString());
 23            if (nullCheckCompressed.GetType() == typeof(DBNull))
 24            {
 25                Log.Comment("Compressed is NULL");

@@ -249,7 +249,7 @@ The **HostAddress** command gets the printer's host name.
 </tr>
 <tr class="even">
 <td><p><em>pOutputData</em></p></td>
-<td><p>Address of a buffer that receives a string containing the printer&#39;s host name</p></td>
+<td><p>Address of a buffer that receives a string containing the printer's host name</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbOutputData</em></p></td>
@@ -296,7 +296,7 @@ The **IPAddress** command gets the printer's IP address.
 </tr>
 <tr class="even">
 <td><p><em>pOutputData</em></p></td>
-<td><p>Address of a buffer that receives a string containing the printer&#39;s IP address</p></td>
+<td><p>Address of a buffer that receives a string containing the printer's IP address</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbOutputData</em></p></td>
@@ -390,7 +390,7 @@ The **SNMPCommunity** command gets the Simple Network Management Protocol (SNMP)
 </tr>
 <tr class="even">
 <td><p><em>pOutputData</em></p></td>
-<td><p>Address of a buffer that receives a string containing the printer&#39;s SNMP community</p></td>
+<td><p>Address of a buffer that receives a string containing the printer's SNMP community</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbOutputData</em></p></td>

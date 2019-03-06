@@ -68,14 +68,15 @@ The minimum OS level is determined by the Products Certified OS level, or the At
 
 > [!IMPORTANT]
 > Note the following when expanding your driver's distribution:
-> * You can only expand drivers that you submit. The receivers of a shared submission cannot expand drivers.
+> * Shared submission cannot be expanded. You can only expand drivers that you submit.
 > * Expansion can only be performed once per submission, and cannot be undone. Only expand your driver's distribution only when absolutely necessary.
+> * Expansion can only be be done to drivers where your [**INF Manufacturer section**](../install/inf-manufacturer-section.md) does use the [BuildNumber] *TargetOSVersion* decoration.
 > * All shipping labels associated with expanded submission will list new PNP HWIDs that can be used to target **Windows 10 Client versions 1506 and 1511 (TH1)**. 
 > * Your Certified level for these newly created items will show as “Extended”.
 > * Only Windows 8.1 drivers can be expanded upward to target Windows 10 systems.  
 > * Expansion does not re-sign your driver or change your driver's certification level.
 
-The Expansion process on a driver submission enables the ability to target operating systems below the products certification level or Attested OS level. It also enables a Windows 8.1 driver to be offered to Windows 10 systems. 
+The Expansion process on a driver submission enables the ability to target operating systems below the products certification level or Attested OS level. It also enables a Windows 8.1 driver to be offered to Windows 10 systems.  For Windows 10, **Expansion** will not occur if your [**INF Manufacturer section**](../install/inf-manufacturer-section.md) uses the [BuildNumber] *TargetOSVersion* decoration such as NTamd64.10.0...**14393**.
 
 For example, If you want to enable your Windows 10 RS3 (1709) driver to be offered to Windows 10 RS1 (1607), you would click **Expand**. This will create a new baseline Operating System choice for every HWID listed in all your INFs.  This baseline is displayed as **Windows 10 Client versions 1506 and 1511 (TH1)** and shows **Extended** in the Certified section.  The baseline OS will always be Windows 10 1506 (TH1) and is our starting OS target point.
 
@@ -99,4 +100,8 @@ To bring the lower OS limit up to RS1, use the Floor feature called out above.  
 
 **How can I target a Windows version that is older than my driver’s certification?**
 
-*See the above example.*
+*See the above example in the Driver Expansion section.*
+
+**Why can't I expand my entire submission?**
+
+*Each INF in your submission is evaluated for expansion separately.  If one or all of your INFs' [**INF Manufacturer section**] uses the [BuildNumber] TargetOSVersion decoration then we will fail to process that INF for expansion.  If you need to expand your submission then you must first edit your INF and remove the [BuildNumber].  INFs that do not contain the [BuildNumber] will process successfully.*

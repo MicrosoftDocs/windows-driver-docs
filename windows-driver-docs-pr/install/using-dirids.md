@@ -96,14 +96,14 @@ The following table shows several commonly used *dirids*, and the directories th
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>13</strong></p></td>
-<td align="left"><p>Driver package&#39;s <a href="https://msdn.microsoft.com/windows/hardware/drivers/install/driver-store">Driver Store</a> directory.</p>
+<td align="left"><p>Driver package's <a href="https://msdn.microsoft.com/windows/hardware/drivers/install/driver-store">Driver Store</a> directory.</p>
 <p>For Windows 8.1 and later versions of Windows, specifies the path to the Driver Store directory where the driver package was imported.
 
-Don&#39;t use <a href="inf-delfiles-directive.md" data-raw-source="[DelFiles](inf-delfiles-directive.md)">DelFiles</a> on a file for which <strong>DestinationDirs</strong> includes <em>dirid</em> 13.
+Don't use <a href="inf-delfiles-directive.md" data-raw-source="[DelFiles](inf-delfiles-directive.md)">DelFiles</a> on a file for which <strong>DestinationDirs</strong> includes <em>dirid</em> 13.
 
 The optional subdirectory in the <strong>SourceDiskFiles</strong> section for a file must match the subdirectory in the <strong>DestinationDirs</strong> section for the entry that applies to this file.
 
-Don&#39;t use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-copyfiles-directive.md)">CopyFiles</a> to rename a file for which <strong>DestinationDirs</strong> includes <em>dirid</em> 13.
+Don't use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-copyfiles-directive.md)">CopyFiles</a> to rename a file for which <strong>DestinationDirs</strong> includes <em>dirid</em> 13.
 </p></td>
 </tr>
 <tr class="even">

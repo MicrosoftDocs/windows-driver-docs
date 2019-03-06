@@ -101,7 +101,7 @@ In order to support Direct3D, a driver must minimally support Microsoft DirectDr
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549404" data-raw-source="[&lt;strong&gt;DdGetDriverInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549404)"><strong>DdGetDriverInfo</strong></a></p></td>
-<td align="left"><p>The runtime queries this callback function with GUIDs for additional information about the driver. Several GUIDs pertain specifically to the driver&#39;s Direct3D support.</p></td>
+<td align="left"><p>The runtime queries this callback function with GUIDs for additional information about the driver. Several GUIDs pertain specifically to the driver's Direct3D support.</p></td>
 </tr>
 </tbody>
 </table>

@@ -48,7 +48,7 @@ class MPIO_EventEntry : WMIEvent
         ] uint32 Severity;
 
         //
-        // Multi-path disk&#39;s name that this event is being logged for.
+        // Multi-path disk's name that this event is being logged for.
         //
         [WmiDataId(3),
         read,

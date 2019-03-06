@@ -62,7 +62,7 @@ Parameter 1 indicates the specific error code of the bug check. Parameter 4 is r
 <tr class="even">
 <td align="left"><p>0x4</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The caller&#39;s address</p></td>
+<td align="left"><p>The caller's address</p></td>
 <td align="left"><p>A <strong>NULL</strong> parameter was passed to a function that required a non-<strong>NULL</strong> value.</p></td>
 </tr>
 <tr class="odd">
@@ -117,7 +117,7 @@ Parameter 1 indicates the specific error code of the bug check. Parameter 4 is r
 <td align="left"><p>0xD</p></td>
 <td align="left"><p>WDFDEVICE handle</p></td>
 <td align="left"><p>Pointer to power IRP</p></td>
-<td align="left"><p>A device&#39;s power policy owner received a power IRP that it did not request. There might be multiple power policy owners, but only one is allowed. A KMDF driver can change power policy ownership by calling <strong>WdfDeviceInitSetPowerPolicyOwnership</strong>.</p></td>
+<td align="left"><p>A device's power policy owner received a power IRP that it did not request. There might be multiple power policy owners, but only one is allowed. A KMDF driver can change power policy ownership by calling <strong>WdfDeviceInitSetPowerPolicyOwnership</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0xE</p></td>

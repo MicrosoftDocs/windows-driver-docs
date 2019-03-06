@@ -155,7 +155,7 @@ AddReg = AddRegB
 <p>When you use <strong>HKR</strong>, the registry value will not be present until the device is installed.</p></td>
 </tr>
 <tr>
-<td><strong>1230: Missing file &#39;xxxx&#39; under [SourceDisksFiles] section.</strong></td>
+<td><strong>1230: Missing file 'xxxx' under [SourceDisksFiles] section.</strong></td>
 <td>This indicates that a file was specified as part of the driver package, but the source location of the file relative to the INF was not specified in a [SourceDisksFiles] section.
 <pre>
 [SourceDisksFiles]

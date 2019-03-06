@@ -35,21 +35,21 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <tr class="odd">
 <td><p><strong>DisplayName</strong></p></td>
 <td><p><em><em>pdwDataType</em>: kADT_UNICODE</p>
-<p><em>pbData</em>: null-terminated Unicode string of the option keyword name&#39;s translation string</p>
+<p><em>pbData</em>: null-terminated Unicode string of the option keyword name's translation string</p>
 <p><em></em>pcbNeeded</em>: byte count of the Unicode string pointed to by <em>pbData</em> (including the null terminator)</p>
 <p>This option attribute is available to any option that <strong>EnumOptions</strong> can return on a PPD feature.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Invocation</strong></p></td>
 <td><p><em><em>pdwDataType</em>: kADT_BINARY</p>
-<p><em>pbData</em>: byte array for the option&#39;s InvocationValue.</p>
+<p><em>pbData</em>: byte array for the option's InvocationValue.</p>
 <p><em></em>pcbNeeded</em>: byte count of the binary data pointed to by <em>pbData</em></p>
-<p>This option attribute is available to any option that <strong>EnumOptions</strong> can return on a PPD feature. If the option&#39;s InvocationValue is empty, the function will set <em>pdwDataType</em> as above, set <em><em>pcbNeeded</em> = 0, and then return S_OK.</p></td>
+<p>This option attribute is available to any option that <strong>EnumOptions</strong> can return on a PPD feature. If the option's InvocationValue is empty, the function will set <em>pdwDataType</em> as above, set <em><em>pcbNeeded</em> = 0, and then return S_OK.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>OrderDependencyValue</strong></p></td>
 <td><p></em>pdwDataType: kADT_LONG</p>
-<p><em><em>pbData</em>: the relative order specified by the PPD&#39;s <em>OrderDependency or *NonUIOrderDependency keyword for this option. Notice that the first parameter of these keywords is a real number that is converted to a LONG and returned.</p>
+<p><em><em>pbData</em>: the relative order specified by the PPD's <em>OrderDependency or *NonUIOrderDependency keyword for this option. Notice that the first parameter of these keywords is a real number that is converted to a LONG and returned.</p>
 <p><em></em>pcbNeeded</em>: <strong>sizeof</strong>(LONG)</p>
 <p>This option attribute is available only for an option that has an <em>OrderDependency or *NonUIOrderDependency entry in the PPD, and the entry does not omit optionKeyword.</p></td>
 </tr>

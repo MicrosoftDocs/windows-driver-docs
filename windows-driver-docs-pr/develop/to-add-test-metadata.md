@@ -37,7 +37,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
         TEST_METHOD_PROPERTY(L&quot;Kits.Drivers&quot;, L&quot;TRUE&quot;)
         TEST_METHOD_PROPERTY(L&quot;Kits.Parameter&quot;, L&quot;DQ&quot;)
         TEST_METHOD_PROPERTY(L&quot;Kits.Parameter.DQ.Description&quot;, L&quot;A WDTF SDEL query that is used to identify the target device(s) - https://go.microsoft.com/fwlink/p/?linkid=232678&quot;)
-        TEST_METHOD_PROPERTY(L&quot;Kits.Parameter.DQ.Default&quot;, L&quot;INF::OriginalInfFileName=&#39;%InfFileName%&#39;&quot;)  
+        TEST_METHOD_PROPERTY(L&quot;Kits.Parameter.DQ.Default&quot;, L&quot;INF::OriginalInfFileName='%InfFileName%'&quot;)  
         TEST_METHOD_PROPERTY(L&quot;RebootPossible&quot;, L&quot;true&quot;)
         // TODO: Required properties to be customized to match your test requirements
         TEST_METHOD_PROPERTY(L&quot;Description&quot;, L&quot;Plug and Play Surprise Remove Generated Template&quot;)
@@ -73,7 +73,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
         [TestProperty(&quot;Kits.Drivers&quot;, &quot;TRUE&quot;)]
         [TestProperty(&quot;Kits.Parameter&quot;, &quot;DQ&quot;)]
         [TestProperty(&quot;Kits.Parameter.DQ.Description&quot;, &quot;A WDTF SDEL query that is used to identify the target device(s) - https://go.microsoft.com/fwlink/p/?linkid=232678&quot;)]
-        [TestProperty(&quot;Kits.Parameter.DQ.Default&quot;, &quot;INF::OriginalInfFileName=&#39;%InfFileName%&#39;&quot;)]
+        [TestProperty(&quot;Kits.Parameter.DQ.Default&quot;, &quot;INF::OriginalInfFileName='%InfFileName%'&quot;)]
         // TODO: Required properties to be customized to match your test requirements.
         [TestProperty(&quot;Description&quot;, &quot;Plug and Play Surprise Remove Generated Template&quot;)]
         [TestProperty(&quot;Kits.DisplayName&quot;, &quot;My Plug and Play Surprise Remove Test&quot;)]
@@ -100,7 +100,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
         &lt;TestMethodProperty name=&quot;Kits.Drivers&quot; value=&quot;TRUE&quot;/&gt;
         &lt;TestMethodProperty name=&quot;Kits.Parameter&quot; value=&quot;DQ&quot;/&gt;
         &lt;TestMethodProperty name=&quot;Kits.Parameter.DQ.Description&quot; value=&quot;A WDTF SDEL query that is used to identify the target device(s) - https://go.microsoft.com/fwlink/p/?linkid=232678&quot;/&gt;
-        &lt;TestMethodProperty name=&quot;Kits.Parameter.DQ.Default&quot; value=&quot;INF::OriginalInfFileName=&#39;%InfFileName%&#39;&quot;/&gt;
+        &lt;TestMethodProperty name=&quot;Kits.Parameter.DQ.Default&quot; value=&quot;INF::OriginalInfFileName='%InfFileName%'&quot;/&gt;
         &lt;TestMethodProperty name=&quot;RebootPossible&quot; value=&quot;true&quot; /&gt;
         &lt;!-- TODO: Properties to be customized to match your test requirements --&gt;
         &lt;TestMethodProperty name=&quot;Description&quot; value=&quot;Plug and Play Surprise Remove Generated Template&quot;/&gt;
@@ -292,7 +292,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     <tr class="odd">
     <td align="left"><pre><code>[C++]
 
-     TEST_METHOD_PROPERTY(L&quot;Kits.Parameter.DQ.Default&quot;, L&quot;INF::OriginalInfFileName=&#39;%InfFileName%&#39;&quot;)  </code></pre></td>
+     TEST_METHOD_PROPERTY(L&quot;Kits.Parameter.DQ.Default&quot;, L&quot;INF::OriginalInfFileName='%InfFileName%'&quot;)  </code></pre></td>
     </tr>
     </tbody>
     </table>

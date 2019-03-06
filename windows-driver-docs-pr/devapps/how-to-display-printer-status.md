@@ -89,7 +89,7 @@ async void FindAssociation(DeviceInformation deviceInfo, string containerId)
     PnpObject containerInfo = await PnpObject.CreateFromIdAsync(PnpObjectType.DeviceContainer, containerIdwithBraces, containerPropertiesToGet);
 
     // Printers could be associated with other device apps, only the ones with package family name
-    // matching this app&#39;s is associated with this app. The packageFamilyName for this app will be found in this app&#39;s packagemanifest
+    // matching this app's is associated with this app. The packageFamilyName for this app will be found in this app's packagemanifest
     string appPackageFamilyName = "Microsoft.SDKSamples.DeviceAppForPrinters.CS_8wekyb3d8bbwe";
     var prop = containerInfo.Properties;
 

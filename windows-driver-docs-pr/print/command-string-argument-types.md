@@ -74,7 +74,7 @@ The following table lists all the argument type specifiers.
 </tr>
 <tr class="odd">
 <td><p>%v</p></td>
-<td><p>NEC VFU (Vertical Format Unit) encoding. The specified variable&#39;s value is divided by 1/6 inch. The result is the number of times VFU data is sent to the printer.</p></td>
+<td><p>NEC VFU (Vertical Format Unit) encoding. The specified variable's value is divided by 1/6 inch. The result is the number of times VFU data is sent to the printer.</p></td>
 </tr>
 </tbody>
 </table>
