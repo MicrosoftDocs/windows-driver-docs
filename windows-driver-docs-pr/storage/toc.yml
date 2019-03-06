@@ -462,7 +462,7 @@
     - name: "ACLs and the Device Stack"
       href: acls-and-the-device-stack.md
     - name: "CD-ROM I/O control codes"
-      href: cd-rom-io-control-codes
+      href: cd-rom-io-control-codes.md
   - name: "Tape Drivers"
     href: tape-drivers.md
     items: 
