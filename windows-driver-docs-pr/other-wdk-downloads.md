@@ -55,11 +55,13 @@ To develop drivers for ARM/ARM64, choose **Individual components** and
 under **Compilers, build tools, and runtimes** select **Visual C++
 compilers and libraries for ARM/ARM64**.
 
-### Install Windows SDK for Windows 10, version 1703
+### Install Windows SDK for Windows 10, version 1703 and Windows 10, version 1607
 
-For systems that run Windows 10, version 1703, also download and install the Windows SDK:
+For systems that run Windows 10, version 1703 or Windows 10, version 1607, also download and install the Windows SDK:
 [Windows SDK for Windows 10.0.15063.468](https://go.microsoft.com/fwlink/p/?LinkID=845298).
 
+> [!Note]
+> The Windows SDK was not included in Visual Studio 2015, so you must install the SDK separately. Later versions of Visual Studio include the Windows SDK.
 
 ## Step 2: Install the WDK
 
@@ -93,6 +95,8 @@ but you can also install them as a standalone component from the Windows
 Start the installer, and then in the installation wizard, select **Debugging Tools for Windows**,
 and clear all other components.
 
+<!-- On 2/21/2019, Don Marshall suggested cutting this section: "As the former "Remote Debugging Client for Windows 8.1" in no longer available for remote across the internet partner debugging, I would probably just remove this entire block of text."
+
 #### Remote Debugging client for Windows 8.1
 
 With the Windows Remote Debugging client, you can work remotely with
@@ -100,7 +104,7 @@ developers from Microsoft, over the internet, to debug kernel-mode
 failures by using the kernel debugger. For more information about remote debugging,
 see [Remote Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/remote-debugging).
 
--   [Download the Remote Debugging client](https://go.microsoft.com/fwlink/p/?LinkId=316921) (English only)
+-   [Download the Remote Debugging client](https://go.microsoft.com/fwlink/p/?LinkId=316921) (English only) -->
 <!--edit: Preceding link for the Remote Debugging client for Windows 8.1 is dead, and I haven't yet found a working replacement, unless one of these applies: https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging?view=vs-2017#download-and-install-the-remote-tools -->
 
 
