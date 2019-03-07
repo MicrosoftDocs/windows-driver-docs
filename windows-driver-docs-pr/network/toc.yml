@@ -2618,8 +2618,12 @@
       href: mb-lte-attach-operations.md
     - name: "MB Protocol Configuration Options (PCO) Operations"
       href: mb-protocol-configuration-options-pco-operations.md
-    - name: "MB low level UICC access"
-      href: mb-low-level-uicc-access.md
+    - name: "MB UICC operations"
+      items:
+      - name: "MB low level UICC access"
+        href: mb-low-level-uicc-access.md
+      - name: "MB UICC application and file system access"
+        href: mb-uicc-application-and-file-system-access.md
     - name: "MB reset and recovery"
       items:
       - name: "MB Device-based Reset and Recovery"
