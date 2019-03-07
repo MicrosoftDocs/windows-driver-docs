@@ -55,13 +55,13 @@ To develop drivers for ARM/ARM64, choose **Individual components** and
 under **Compilers, build tools, and runtimes** select **Visual C++
 compilers and libraries for ARM/ARM64**.
 
-### Install Windows SDK for Windows 10, version 1703 and Windows 10, version 1607
+### Install Windows SDK for Windows 10, versions 1607 and 1703
 
-For systems that run Windows 10, version 1703 or Windows 10, version 1607, also download and install the Windows SDK:
+For systems that run Windows 10, version 1607 or Windows 10, version 1703, also download and install the Windows SDK:
 [Windows SDK for Windows 10.0.15063.468](https://go.microsoft.com/fwlink/p/?LinkID=845298).
 
-> [!Note]
-> The Windows SDK was not included in Visual Studio 2015, so you must install the SDK separately. Later versions of Visual Studio include the Windows SDK.
+The Windows SDK was not included in Visual Studio 2015, so you must install the SDK separately. Later versions of Visual Studio include the Windows SDK.
+
 
 ## Step 2: Install the WDK
 
@@ -84,10 +84,13 @@ develop, build, package, deploy, test, and debug drivers.
 | Windows 8                | [WDK 8](https://go.microsoft.com/fwlink/p/?LinkID=324284) (English only) <br/>[WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) (English only) <br/>[WDK 8 Samples](https://code.msdn.microsoft.com/windowshardware/Windows-Driver-Kit-WDK-80-e3161626) |
 | Windows XP <br/>Windows Server 2003 | [WDK 7.1.0](https://www.microsoft.com/download/confirmation.aspx?id=11800) |
 
-
+<!--
 ### Notes for Windows 8.1 Update
 
 #### WinDbg for Windows 8.1
+-->
+
+### WinDbg for Windows 8.1
 
 Debugging Tools for Windows (WinDbg) are included in the WDK 8.1 Update,
 but you can also install them as a standalone component from the Windows
