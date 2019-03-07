@@ -98,7 +98,7 @@ but you can also install them as a standalone component from the Windows
 Start the installer, and then in the installation wizard, select **Debugging Tools for Windows**,
 and clear all other components.
 
-<!-- On 2/21/2019, Don Marshall suggested cutting this section: "As the former "Remote Debugging Client for Windows 8.1" in no longer available for remote across the internet partner debugging, I would probably just remove this entire block of text."
+<!-- On 2/21/2019, Don Marshall suggested cutting this section: "As the former 'Remote Debugging Client for Windows 8.1' in no longer available for remote across the internet partner debugging, I would probably just remove this entire block of text."
 
 #### Remote Debugging client for Windows 8.1
 
