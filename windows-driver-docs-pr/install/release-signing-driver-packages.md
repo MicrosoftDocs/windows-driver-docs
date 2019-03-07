@@ -91,7 +91,7 @@ Starting with Windows Vista, embedding a signature in a driver file is optional 
 
 The PnP device installation signing requirements do not apply to non-PnP drivers.
 
-**Note**   Using embedded signatures is generally simpler and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](https://msdn.microsoft.com/windows-drivers/develop/signing_a_driver).
+**Note**   Using embedded signatures is generally simpler and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/signing-a-driver).
 
  
 
