@@ -145,7 +145,7 @@ The following example code shows how to update an INF that uses old syntax.
 <tr><td><pre>[DestinationDirs]
 CopyFiles.A = 12
 CopyFiles.B = 12
-</br>
+
 [DDInstallSection_A]
 CopyFiles  = CopyFiles.A
 
@@ -159,7 +159,7 @@ CopyFiles = CopyFiles.B
 <td><pre>[CopyFiles.A]
 DesiredFileName1,SourceFile1A ; HW Version A
 DesiredFileName2,SourceFile2A ; HW Version A
-</br>
+
 [CopyFiles.B]
 DesiredFileName1,SourceFile1B ; HW Version B
 DesiredFileName2,SourceFile2B ; HW Version B
@@ -185,8 +185,8 @@ This doesn’t work in the case that all files for all DDInstall Sections get co
 <tbody>
 <tr>
 <td><pre>[DestinationDirs]
-CopyFiles.A         = 13
-CopyFiles.B         = 13
+CopyFiles.A = 13
+CopyFiles.B = 13
 </td>
 </pre>
 <td></br>Best practice is to leave everything in the driver store directory (Dirid 13)</td>
@@ -194,7 +194,7 @@ CopyFiles.B         = 13
 <tr>
 <td><pre>[DDInstallSection_A]
 CopyFiles = CopyFiles.A
-</br>
+
 [DDInstallSection_A.HW]
 AddReg = A.AddReg  
 
@@ -215,7 +215,7 @@ AddReg = B.AddReg
 <td><pre>[A.AddReg]
 HKR,, FileName1Path, "%13%\SourceFile1A"
 HKR,, FileName2Path, "%13%\SourceFile2A"
-</br>
+
 [B.AddReg]
 HKR,, FileName1Path, "%13%\SourceFile1A"
 HKR,, FileName2Path, "%13%\SourceFile2A"
@@ -229,7 +229,7 @@ HKR,, FileName2Path, "%13%\SourceFile2A"
 <td><pre>[CopyFiles.A]
 SourceFile1A ; HW Version A
 SourceFile2A ; HW Version A
-</br>
+
 [CopyFiles.B]
 SourceFile1B ; HW Version B
 SourceFile2B ; HW Version B
