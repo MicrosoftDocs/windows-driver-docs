@@ -43,7 +43,7 @@ CopyFiles = CopyFiles.B
 ServiceBinaryFile, ServiceBinaryA
 
 [CopyFiles.B]
-ServiceBinaryFil, ServiceBinaryB
+ServiceBinaryFile, ServiceBinaryB
 
 [DDInstallSection_A.Services]
 AddService = ServiceName, 0x00000002, ServiceName_Install
@@ -94,7 +94,7 @@ ServiceBinary  = %12%\ServiceBinaryB
 
 ### Different **DDInstall sections** rename a source file to get copied over to a destination file location accessed by the driver or a User Mode application
 
-In this case, the driver is accessing a fixed file location that is being used as a dynamic file location. To have one dynamic variable that keeps track of multiple source files, you can use an [AddReg](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-addreg-directive) HKR entry to store the path which can be retrieved at runtime. This works because **AddReg** HKR entries are stored relative to a device .
+In this case, the driver is accessing a fixed file location that is being used as a dynamic file location. To have one dynamic variable that keeps track of multiple source files, you can use an [AddReg](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-addreg-directive) HKR entry to store the path which can be retrieved at runtime. This works because **AddReg** HKR entries are stored relative to a device.
 
 The **AddReg** HKR entry specifies the file locations for source files instead of choosing a single destination file to copy the source files to:
 
@@ -111,7 +111,7 @@ location is stored in a registry value by the INF and retrieved through API call
 
 To provision the values through an INF, use the [INF AddReg directive](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-addreg-directive) using HKR *reg-root* entries in an *add-registry-section* referenced from an [INF DDInstall section](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-ddinstall-section) or [INF DDInstall.HW section](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-ddinstall-hw-section).
 
-Because registry values keep track of the target file instead of a single destination file location, the drive will have to access those
+Because registry values keep track of the target file instead of a single destination file location, the driver will have to access those
 files differently. To access the target file, the driver now needs to call into one of the following APIs to open the registry value and have it return the location of that source file:
 
 #### WDM
@@ -129,78 +129,11 @@ files differently. To access the target file, the driver now needs to call into 
 * [**CM_Open_DevNode_Key**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_open_devnode_key)
 
 > [!NOTE]
-> The location in which you store the files does not affect the error but, to use best practices, the example uses Dirid 13 since it
-provides faster installs through fewer file copies. For Dirid 13, PnP picks an arbitrary directory to store your source files and you can store that location in your INF. Your driver can then access that location without moving files from that directory.
+> In this example, the destination location of the files the INF payloads does not affect the solution.  However, to use best practices, the example uses [DIRID](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-dirids) 13 since it provides faster installs through fewer file copies.  Please see “[Using DIRIDs](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-dirids)” and “[Run from the driver store](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/universal-driver-scenarios#run-from-the-driver-store)” for more information.
 
 The following example code shows how to update an INF that uses old syntax.
 
-### Updating different source files mapped to one destination file
-
-```command
-[DestinationDirs]
-CopyFiles.A        = 12
-CopyFiles.B        = 12
-
-
-[DDInstallSection_A]
-CopyFiles  = CopyFiles.A
-
-[DDInstallSection_B]
-CopyFiles = CopyFiles.B
-
-
-[CopyFiles.A]
-DesiredFileName1,SourceFile1A ; HW Version A
-DesiredFileName2,SourceFile2A ; HW Version A
-
-[CopyFiles.B]
-DesiredFileName1,SourceFile1B ; HW Version B
-DesiredFileName2,SourceFile2B ; HW Version B
-```
-
-### Updating by using AddReg HKR entries
-
-```command
-[DestinationDirs]
-CopyFiles.A             = 13
-CopyFiles.B             = 13
-
-
-[DDInstallSection_A]
-CopyFiles  = CopyFiles.A
-
-[DDInstallSection_A.HW]
-AddReg = A.AddReg  
-
-[DDInstallSection_B]
-CopyFiles = CopyFiles.B
-
-[DDInstallSection_B.HW]
-AddReg = B.AddReg  
-
-
-
-[A.AddReg]
-HKR,, FileName1Path, "%13%\SourceFile1A"
-HKR,, FileName2Path, "%13%\SourceFile2A"
-
-[B.AddReg]
-HKR,, FileName1Path, "%13%\SourceFile1A"
-HKR,, FileName2Path, "%13%\SourceFile2A"
-
-
-
-[CopyFiles.A]
-SourceFile1A ; HW Version A
-SourceFile2A ; HW Version A
-
-[CopyFiles.B]
-SourceFile1B ; HW Version B
-SourceFile2B ; HW Version B
-```
-
 ### Details for different source files mapped to one destination file
-
 <table>
 <thead>
 <tr>
@@ -210,8 +143,8 @@ SourceFile2B ; HW Version B
 </thead>
 <tbody>
 <tr><td><pre>[DestinationDirs]
-CopyFiles.A     = 12
-CopyFiles.B     = 12
+CopyFiles.A = 12
+CopyFiles.B = 12
 </br>
 [DDInstallSection_A]
 CopyFiles  = CopyFiles.A
@@ -220,7 +153,7 @@ CopyFiles  = CopyFiles.A
 CopyFiles = CopyFiles.B
 </td>
 </pre>
-<td><strong></br>Pick where files go manually</strong></td>
+<td></br>Pick where files go manually</td>
 </tr>
 <tr>
 <td><pre>[CopyFiles.A]
@@ -231,10 +164,10 @@ DesiredFileName2,SourceFile2A ; HW Version A
 DesiredFileName1,SourceFile1B ; HW Version B
 DesiredFileName2,SourceFile2B ; HW Version B
 </pre></td>
-<td><strong></br><u>File copy technique</u>:
+<td></br><u>File copy technique</u>:
 Renaming files so the DDInstall Section being installed picks the source file to get copied over to the destination file path that the driver is linked to.
 
-This doesn’t work in the case that all files for all DDInstall Sections get copied over before install.</strong>
+This doesn’t work in the case that all files for all DDInstall Sections get copied over before install.
 </td>
 </tr>
 </tbody>
@@ -256,12 +189,12 @@ CopyFiles.A         = 13
 CopyFiles.B         = 13
 </td>
 </pre>
-<td><strong></br>Best practice to leave everything in the driver store directory (Dirid 13)</strong></td>
+<td></br>Best practice is to leave everything in the driver store directory (Dirid 13)</td>
 </tr>
 <tr>
 <td><pre>[DDInstallSection_A]
-CopyFiles  = CopyFiles.A
-
+CopyFiles = CopyFiles.A
+</br>
 [DDInstallSection_A.HW]
 AddReg = A.AddReg  
 
@@ -273,8 +206,8 @@ AddReg = B.AddReg
 
 </pre></td>
 
-<td><strong></br>Add an AddReg section for each DDInstall Section.HW to keep track of the files needed for that install.
-</strong>
+<td></br>Add an AddReg section for each DDInstall Section.HW to keep track of the files needed for that install.
+
 </td>
 </tr>
 
@@ -282,14 +215,13 @@ AddReg = B.AddReg
 <td><pre>[A.AddReg]
 HKR,, FileName1Path, "%13%\SourceFile1A"
 HKR,, FileName2Path, "%13%\SourceFile2A"
-
-
+</br>
 [B.AddReg]
 HKR,, FileName1Path, "%13%\SourceFile1A"
 HKR,, FileName2Path, "%13%\SourceFile2A"
 
 </pre></td>
-<td><strong></br>Multiple source file locations mapped to one registry value. This works because HKRs are stored relative to the device, so they are not written over.</strong>
+<td></br>Multiple source file locations mapped to one registry value. This works because HKR AddReg from a DDInstall or DDInstall.HW section are stored in device settings.  When a device is installed with this driver package, it will only be using one of the DDInstall sections so only one of the HKR AddReg will be used and there will not be a conflict.
 </td>
 </tr>
 
@@ -302,10 +234,10 @@ SourceFile2A ; HW Version A
 SourceFile1B ; HW Version B
 SourceFile2B ; HW Version B
 </pre></td>
-<td><strong></br>All files map to their own location so no functionality errors and INF passes InfVerif.
+<td></br>All files map to their own location so no functionality errors and INF passes InfVerif.
 </br>
 Don’t use CopyFiles to rename a file for which DestinationDirs includes Dirid 13.
-</strong>
+
 </td>
 </tr>
 </tbody>
@@ -325,6 +257,6 @@ After (Dynamic Filename):
 
 ### Accessing the file location from User Mode
 
-When accessing the target file from User Mode you won't have the device context that a driver has. In this case you need to add an additional step. Before opening the key handle, find the device that set the registry value for the target file.
+When accessing the target file from User Mode, you won't have the device context that a driver has. In this case you need to add an additional step. Before opening the key handle, find the device that contains the registry value indicating what file to load.
 
-This link shows you how to filter a device list to find your device and open the handle to the registry location in user mode, using Dirid 13 for best practices.
+This [link](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/develop/universal-driver-scenarios?branch=pr-en-us-55#run-from-the-driver-store) shows you how to filter a device list to find your device and open the handle to the registry location in user mode, using Dirid 13 for best practices.
