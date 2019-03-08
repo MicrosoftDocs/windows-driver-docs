@@ -84,21 +84,19 @@ develop, build, package, deploy, test, and debug drivers.
 | Windows 8                | [WDK 8](https://go.microsoft.com/fwlink/p/?LinkID=324284) (English only) <br/>[WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) (English only) <br/>[WDK 8 Samples](https://code.msdn.microsoft.com/windowshardware/Windows-Driver-Kit-WDK-80-e3161626) |
 | Windows XP <br/>Windows Server 2003 | [WDK 7.1.0](https://www.microsoft.com/download/confirmation.aspx?id=11800) |
 
-<!--
+<!-- On 02/21/2019, Andy luhrs suggested cutting all of this stuff for Windows 8.1.  I'm leaving this note here for now. [v-gmoor, 2019-03-07]
+
 ### Notes for Windows 8.1 Update
 
 #### WinDbg for Windows 8.1
--->
-
-### WinDbg for Windows 8.1
 
 Debugging Tools for Windows (WinDbg) are included in the WDK 8.1 Update,
 but you can also install them as a standalone component from the Windows
 8.1 SDK. First, download the installer: [sdksetup.exe](https://go.microsoft.com/fwlink/p/?LinkId=323507).
 Start the installer, and then in the installation wizard, select **Debugging Tools for Windows**,
 and clear all other components.
-
-<!-- On 2/21/2019, Don Marshall suggested cutting this section: "As the former 'Remote Debugging Client for Windows 8.1' in no longer available for remote across the internet partner debugging, I would probably just remove this entire block of text." I'm leaving this note here for now. [v-gmoor, 2019-03-07]
+-->
+<!-- On 02/21/2019, Don Marshall suggested cutting this section: "As the former 'Remote Debugging Client for Windows 8.1' in no longer available for remote across the internet partner debugging, I would probably just remove this entire block of text." I'm leaving this note here for now. [v-gmoor, 2019-03-07]
 
 #### Remote Debugging client for Windows 8.1
 
@@ -130,6 +128,13 @@ For more information about the EWDK, see
 
 > [!Note]
 > Starting in Windows 10 version 1709, the EWDK is ISO-based. To get started, download and mount the ISO, and then run **LaunchBuildEnv**.
+
+
+## Optional: Install WinDbg Preview
+
+WinDbg Preview is a new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview supports debugging every version of Windows 10.
+
+For download links and more information about WinDbg Preview, see [Download WinDbg Preview](/debugger/debugger-download-tools#small-windbg-preview-logo-download-windbg-preview).
 
 
 ## Standalone tools for debugging Windows XP and Windows Vista
