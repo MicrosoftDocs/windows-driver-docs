@@ -134,7 +134,7 @@ For more information about the EWDK, see
 
 WinDbg Preview is a new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview supports debugging every version of Windows 10.
 
-For download links and more information about WinDbg Preview, see [Download WinDbg Preview](/debugger/debugger-download-tools#small-windbg-preview-logo-download-windbg-preview).
+For download links and more information about WinDbg Preview, see [Download WinDbg Preview](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools#small-windbg-preview-logo-download-windbg-preview).
 
 
 ## Standalone tools for debugging Windows XP and Windows Vista
