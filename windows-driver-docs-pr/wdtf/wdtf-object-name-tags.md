@@ -37,10 +37,10 @@ The WDTF OBJECT\_NAME tags are used in WDTF object logging.
 <td><p>WDTF_TARGETS</p></td>
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439458" data-raw-source="[&lt;strong&gt;IWDTFTargets2&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439458)"><strong>IWDTFTargets2</strong></a></p></td>
 <td><pre class="syntax" space="preserve"><code>Device query 
-WDTF_TARGETS              : INFO  :  - Query(&quot;IsDevice AND Volume::BOOT&quot;)
+WDTF_TARGETS              : INFO  :  - Query("IsDevice AND Volume::BOOT")
 WDTF_TARGETS              : INFO  :          Target: Generic volume (C:) STORAGE\VOLUME{F1309F19-F052-11DF-BC7C-B1A2109AB6D2}
 Get interface 
-WDTF_TARGETS              : INFO  :  - GetInterfacesIfExist(&quot;SimpleIOEx&quot;)
+WDTF_TARGETS              : INFO  :  - GetInterfacesIfExist("SimpleIOEx")
 WDTF_TARGETS              : INFO  :          Target: Generic volume (C:) STORAGE\VOLUME{F1309F19-F052-11DF-BC7C-B1A2109AB6D2}</code></pre></td>
 </tr>
 <tr class="odd">
@@ -108,9 +108,9 @@ WDTF_SYSTEM               : INFO  : Attempt Hibernate State: 4 , At (hh:mm:ss): 
 WDTF_SYSTEM               : INFO  : Returning from Hibernate. Elapsed time (hh:mm:ss): 0:1:55
 
 // Note: 
-// &quot;At (hh:mm:ss)&quot; - Time sleep was initiated 
-// &quot;Wake Time In Seconds&quot; - Relative time to wake from sleep 
-// &quot;Elapsed time (hh:mm:ss)&quot; - Elapsed time after we returned from sleep 
+// "At (hh:mm:ss)" - Time sleep was initiated 
+// "Wake Time In Seconds" - Relative time to wake from sleep 
+// "Elapsed time (hh:mm:ss)" - Elapsed time after we returned from sleep 
 </code></pre></td>
 </tr>
 <tr class="odd">

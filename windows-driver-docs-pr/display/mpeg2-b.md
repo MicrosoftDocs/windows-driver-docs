@@ -65,7 +65,7 @@ These values of the *bDXVA\_Func* variable must be supported: 1 (picture decodin
 </tr>
 <tr class="even">
 <td align="left"><p><strong>bConfigDataType</strong> (DXVA_ConfigAlphaLoad)</p></td>
-<td align="left"><p>Zero, 1, or 3 (at the accelerator&#39;s discretion)</p></td>
+<td align="left"><p>Zero, 1, or 3 (at the accelerator's discretion)</p></td>
 </tr>
 </tbody>
 </table>

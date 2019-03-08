@@ -57,7 +57,7 @@ This section covers WDI data transfer. The following terminology is used in this
 </tr>
 <tr class="odd">
 <td align="left"><p>Target Abstraction Layer (TAL)</p></td>
-<td align="left"><p>The &quot;lower-edge&quot; that has a standardized API to the WDI compliant driver, but has a target-specific internal implementation. The TAL is a container layer for individual target-specific host software components such as TxEngine and RxEngine.</p></td>
+<td align="left"><p>The "lower-edge" that has a standardized API to the WDI compliant driver, but has a target-specific internal implementation. The TAL is a container layer for individual target-specific host software components such as TxEngine and RxEngine.</p></td>
 </tr>
 </tbody>
 </table>

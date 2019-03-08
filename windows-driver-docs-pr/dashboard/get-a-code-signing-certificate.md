@@ -71,7 +71,7 @@ This section provides answers to frequently asked questions about code signing f
 
 ### Windows 10 Earlier Certificate Transition Signing
 
-- The below only applies to Windows 10 1803 and lower.  As of Windows 10 1808, these will no longer work. 
+- The below only applies to Windows 10 1803 and lower.  As of Windows 10 1809, these will no longer work. 
 - A driver signed with any certificate issued after July 29th, 2015, with time stamping, is not recommended for Windows 10.
 - A driver signed with any certificate that expires after July 29th, 2015, without time stamping, will work on Windows 10 until the certificate expires.
 

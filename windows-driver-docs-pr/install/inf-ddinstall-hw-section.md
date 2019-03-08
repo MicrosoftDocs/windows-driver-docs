@@ -104,7 +104,7 @@ CopyFiles=changer_copyfiles,cdrom_copyfiles
 [changer_install.HW]
 AddReg=changer_addreg
 
-; ... changer_install.Services section similar to cdaudio&#39;s
+; ... changer_install.Services section similar to cdaudio's
 
 ; ... some similar cdrom_install(.HW)/addreg sections omitted 
 
@@ -140,7 +140,7 @@ StartType      = 1
 ErrorControl   = 1
 ServiceBinary  = %12%\cdaudio.sys
 
-; ... changer_ServiceInstallSection similar to cdaudio&#39;s
+; ... changer_ServiceInstallSection similar to cdaudio's
 ```
 
 ## See also

@@ -126,7 +126,7 @@ Values for properties designated as read/write can be specified by the client ap
 <strong>SENSOR_PROPERTY_LIGHT_RESPONSE_CURVE</strong>
 (PID = 16)</td>
 <td><p><strong>VT_VECTOR|VT_UI1</strong></p>
-<p>Read only. A counted array that contains pairs of values that provide a mapping between ambient light levels and offsets. These values are expressed as percentages. The adaptive brightness feature in Windows applies these values to the user&#39;s current display brightness preference.</p>
+<p>Read only. A counted array that contains pairs of values that provide a mapping between ambient light levels and offsets. These values are expressed as percentages. The adaptive brightness feature in Windows applies these values to the user's current display brightness preference.</p>
 <p>Data for vector types is always serialized as <strong>VT_UI1</strong> (an array of unsigned, 1-byte characters). This property actually contains each value as a 4-byte unsigned integer (<strong>VT_UI4)</strong>. For information about working with arrays, see <a href="https://msdn.microsoft.com/library/windows/desktop/ee264327" data-raw-source="[Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327)">Retrieving Vector Types</a>.</p></td>
 </tr>
 <tr class="odd">
@@ -143,7 +143,7 @@ Values for properties designated as read/write can be specified by the client ap
 <strong>SENSOR_PROPERTY_MANUFACTURER</strong>
 (PID = 6)</td>
 <td><p><strong>VT_LPWSTR</strong></p>
-<p>Read only. Required, static. The manufacturer&#39;s name.</p></td>
+<p>Read only. Required, static. The manufacturer's name.</p></td>
 </tr>
 <tr class="odd">
 <td><span id="SENSOR_PROPERTY_MIN_REPORT_INTERVAL"></span><span id="sensor_property_min_report_interval"></span>

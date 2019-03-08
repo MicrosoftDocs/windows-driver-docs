@@ -40,7 +40,7 @@ NTSTATUS
   ULONG SocketOptionState;
   NTSTATUS Status;
 
-  // Get pointer to the socket&#39;s provider dispatch structure
+  // Get pointer to the socket's provider dispatch structure
   Dispatch =
     (PWSK_PROVIDER_DATAGRAM_DISPATCH)(Socket->Dispatch);
 
@@ -153,7 +153,7 @@ NTSTATUS
   PIRP Irp;
   NTSTATUS Status;
 
-  // Get pointer to the socket&#39;s provider dispatch structure
+  // Get pointer to the socket's provider dispatch structure
   Dispatch =
     (PWSK_PROVIDER_DATAGRAM_DISPATCH)(Socket->Dispatch);
 

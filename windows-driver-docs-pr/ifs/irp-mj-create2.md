@@ -150,7 +150,7 @@ The following only applies when an existing stream of a file is being opened (th
 </li>
 <li><b>AND:</b><ul>
 <li>
-<p>A &quot;writable&quot; desired access was requested on the stream which was not opened for FILE_SHARE_READ access.  Note that &quot;writeable&quot; access is defined as any attribute other than:</p>
+<p>A "writable" desired access was requested on the stream which was not opened for FILE_SHARE_READ access.  Note that "writeable" access is defined as any attribute other than:</p>
 <ul>
 <li>FILE_READ_ATTRIBUTES</li>
 <li>FILE_WRITE_ATTRIBUTES</li>

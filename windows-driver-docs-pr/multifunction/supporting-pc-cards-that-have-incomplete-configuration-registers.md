@@ -78,7 +78,7 @@ Class      = MultiFunction              ; system-defined class
 ClassGUID  = {4d36e971-e325-11ce-bfc1-08002be10318}
 
 [ControlFlags]
-ExcludeFromSelect=*SUP2440  ; don&#39;t include PnP devices in lists of
+ExcludeFromSelect=*SUP2440  ; don't include PnP devices in lists of
                             ; devices to be manually installed
 
 [Manufacturer]

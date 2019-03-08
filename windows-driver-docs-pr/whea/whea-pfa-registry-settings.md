@@ -75,7 +75,7 @@ The following table describes the various registry values that are used for PFA 
 <tr class="odd">
 <td><p></p>
 <p><strong>MemPfaDisable</strong></p></td>
-<td><p>A Boolean value that specifies whether WHEA&#39;s PFA for ECC memory pages is disabled.</p>
+<td><p>A Boolean value that specifies whether WHEA's PFA for ECC memory pages is disabled.</p>
 <p>A value of 0 enables PFA for ECC memory pages. Any other value disables PFA for ECC memory pages.</p>
 <p>The default value for this setting is 0.</p></td>
 </tr>

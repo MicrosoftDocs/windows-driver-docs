@@ -209,7 +209,7 @@ The driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff
 </tr>
 <tr class="even">
 <td align="left"><p><a href="wdm-irqlreturn.md" data-raw-source="[&lt;strong&gt;IrqlReturn&lt;/strong&gt;](wdm-irqlreturn.md)"><strong>IrqlReturn</strong></a></p></td>
-<td align="left"><p>The <a href="wdm-irqlreturn.md" data-raw-source="[&lt;strong&gt;IrqlReturn&lt;/strong&gt;](wdm-irqlreturn.md)"><strong>IrqlReturn</strong></a> rule specifies that the driver&#39;s dispatch routines return at the same IRQL at which they were called.</p></td>
+<td align="left"><p>The <a href="wdm-irqlreturn.md" data-raw-source="[&lt;strong&gt;IrqlReturn&lt;/strong&gt;](wdm-irqlreturn.md)"><strong>IrqlReturn</strong></a> rule specifies that the driver's dispatch routines return at the same IRQL at which they were called.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="wdm-irqlrtlpassive.md" data-raw-source="[&lt;strong&gt;IrqlRtlPassive&lt;/strong&gt;](wdm-irqlrtlpassive.md)"><strong>IrqlRtlPassive</strong></a></p></td>

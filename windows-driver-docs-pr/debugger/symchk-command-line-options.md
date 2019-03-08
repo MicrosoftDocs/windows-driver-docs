@@ -139,7 +139,7 @@ The available options are divided into several classes. Each class of options co
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>/oe</strong></p></td>
-<td align="left"><p>Output will include individual errors. This option is only useful if <strong>/q</strong> is used, because individual errors are automatically displayed if quiet mode hasn&#39;t been activated.</p></td>
+<td align="left"><p>Output will include individual errors. This option is only useful if <strong>/q</strong> is used, because individual errors are automatically displayed if quiet mode hasn't been activated.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/op</strong></p></td>
@@ -155,7 +155,7 @@ The available options are divided into several classes. Each class of options co
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/ot</strong></p></td>
-<td align="left"><p>Output will include result totals. This option is only useful if <strong>/q</strong> is used, because these totals are automatically displayed if quiet mode hasn&#39;t been activated.</p></td>
+<td align="left"><p>Output will include result totals. This option is only useful if <strong>/q</strong> is used, because these totals are automatically displayed if quiet mode hasn't been activated.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/ob</strong></p></td>
@@ -275,7 +275,7 @@ The available options are divided into several classes. Each class of options co
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>/cs</strong></p></td>
-<td align="left"><p>SymChk won&#39;t verify that CodeView data is present. (By default, the presence of CodeView data is verified.)</p></td>
+<td align="left"><p>SymChk won't verify that CodeView data is present. (By default, the presence of CodeView data is verified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/cc</strong></p></td>
@@ -283,11 +283,11 @@ The available options are divided into several classes. Each class of options co
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>/ea</strong> <em>File</em></p></td>
-<td align="left"><p>SymChk won&#39;t verify symbols for the programs listed in the specified file. This allows you to veto certain programs that would otherwise be verified. <em>File</em> must specify exactly one file (by relative, absolute, or UNC path, but without wildcards); if it contains spaces it should be enclosed in quotation marks. Within <em>File</em>, each line indicates a program file (by relative, absolute, or UNC paths); no wildcards are permitted. If a line in this file contains spaces it should be enclosed in quotation marks. A semicolon within this file is a comment character -- everything between a semicolon and the end of the line will be ignored. If a symbol server is being used, symbols for these programs will not be copied to the downstream store.</p></td>
+<td align="left"><p>SymChk won't verify symbols for the programs listed in the specified file. This allows you to veto certain programs that would otherwise be verified. <em>File</em> must specify exactly one file (by relative, absolute, or UNC path, but without wildcards); if it contains spaces it should be enclosed in quotation marks. Within <em>File</em>, each line indicates a program file (by relative, absolute, or UNC paths); no wildcards are permitted. If a line in this file contains spaces it should be enclosed in quotation marks. A semicolon within this file is a comment character -- everything between a semicolon and the end of the line will be ignored. If a symbol server is being used, symbols for these programs will not be copied to the downstream store.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/ee</strong> <em>File</em></p></td>
-<td align="left"><p>Error messages for those programs listed in the specified file are suppressed. &quot;Success&quot; and &quot;ignore&quot; messages will appear as usual, and symbol files will be copied to the downstream store as usual. The format of <em>File</em> and the format of its contents are the same as that for <strong>/ea</strong> <em>File</em>.</p></td>
+<td align="left"><p>Error messages for those programs listed in the specified file are suppressed. "Success" and "ignore" messages will appear as usual, and symbol files will be copied to the downstream store as usual. The format of <em>File</em> and the format of its contents are the same as that for <strong>/ea</strong> <em>File</em>.</p></td>
 </tr>
 </tbody>
 </table>

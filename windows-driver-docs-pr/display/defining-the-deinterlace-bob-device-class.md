@@ -22,7 +22,7 @@ Use the following example code to define the deinterlace bob device class:
 struct DXVA_DeinterlaceBobDeviceClass : public DXVA_DeviceBaseClass
 {
     DXVA_VideoDesc  m_VideoDesc;
-    // Uses the base class&#39;s constructor.
+    // Uses the base class's constructor.
     DXVA_DeinterlaceBobDeviceClass(const GUID& guid, DXVA_DeviceType Type) :
         DXVA_DeviceBaseClass(guid, Type)
     {}

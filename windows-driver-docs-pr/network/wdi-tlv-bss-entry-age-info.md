@@ -44,7 +44,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tr>
 <tr class="even">
 <td>UINT8</td>
-<td>Specifies whether this information is live (found during a currently running scan) or is coming from the IHV component&#39;s BSS list cache.
+<td>Specifies whether this information is live (found during a currently running scan) or is coming from the IHV component's BSS list cache.
 <p>Valid values are 0 (live) or 1 (cached).</p></td>
 </tr>
 </tbody>

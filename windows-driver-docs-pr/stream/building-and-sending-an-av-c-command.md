@@ -116,7 +116,7 @@ Repeat Steps 1 through 5 as necessary.
 <tbody>
 <tr class="odd">
 <td><p>STATUS_SUCCESS</p></td>
-<td><p>The request was made, and a final response was received within the bounds of the AV/C specification&#39;s time-out and retry parameters. The subunit&#39;s response code (the <strong>ResponseCode</strong> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554140" data-raw-source="[&lt;strong&gt;AVC_COMMAND_IRB&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554140)"><strong>AVC_COMMAND_IRB</strong></a> structure) must still be examined to determine the true result of the operation. STATUS_SUCCESS simply means that a round-trip request and response cycle was completed in less than 100 ms (assuming the default timeout was not changed from 100 ms).</p></td>
+<td><p>The request was made, and a final response was received within the bounds of the AV/C specification's time-out and retry parameters. The subunit's response code (the <strong>ResponseCode</strong> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554140" data-raw-source="[&lt;strong&gt;AVC_COMMAND_IRB&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554140)"><strong>AVC_COMMAND_IRB</strong></a> structure) must still be examined to determine the true result of the operation. STATUS_SUCCESS simply means that a round-trip request and response cycle was completed in less than 100 ms (assuming the default timeout was not changed from 100 ms).</p></td>
 </tr>
 <tr class="even">
 <td><p>STATUS_TIMEOUT</p></td>
@@ -124,7 +124,7 @@ Repeat Steps 1 through 5 as necessary.
 </tr>
 <tr class="odd">
 <td><p>STATUS_PENDING</p></td>
-<td><p>The request was made, and an interim response was received. It is the responsibility of the subunit driver&#39;s I/O completion routine to handle the final response and then free the IRP and IRB resources.</p></td>
+<td><p>The request was made, and an interim response was received. It is the responsibility of the subunit driver's I/O completion routine to handle the final response and then free the IRP and IRB resources.</p></td>
 </tr>
 <tr class="even">
 <td><p>STATUS_REQUEST_ABORTED</p></td>

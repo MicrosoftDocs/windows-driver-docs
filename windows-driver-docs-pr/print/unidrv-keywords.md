@@ -28,15 +28,15 @@ Unidrv plug-ins should use strings as they appear in the GPD view (not the GDL v
 <tr class="odd">
 <td>%MetafileSpooling</td>
 <td><p></p>
-&quot;True&quot;
-&quot;False&quot;</td>
+"True"
+"False"</td>
 <td><p>Enable EMF spooling.</p>
 <p>Document-sticky.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>%PageOrder</strong></p></td>
-<td><p>&quot;FrontToBack&quot;</p>
-<p>&quot;BackToFront&quot;</p></td>
+<td><p>"FrontToBack"</p>
+<p>"BackToFront"</p></td>
 <td><p>Specify the order in which pages are printed.</p>
 <p>This feature is available only if the print processor is able to perform EMF spooling.</p>
 <p>Document-sticky.</p></td>
@@ -44,17 +44,17 @@ Unidrv plug-ins should use strings as they appear in the GPD view (not the GDL v
 <tr class="odd">
 <td><p><strong>%PagePerSheet</strong></p></td>
 <td><p></p>
-&quot;1&quot;, &quot;2&quot;, &quot;4&quot;, 6&quot;,
-&quot;9&quot;, &quot;16&quot;, &quot;Booklet&quot;</td>
-<td><p>Specify the number of logical pages that are printed on a physical page. The &quot;Booklet&quot; option is available only if the duplex feature is defined.</p>
+"1", "2", "4", 6",
+"9", "16", "Booklet"</td>
+<td><p>Specify the number of logical pages that are printed on a physical page. The "Booklet" option is available only if the duplex feature is defined.</p>
 <p>This feature is available only if the print processor is able to perform EMF spooling.</p>
 <p>Document-sticky.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>%TextAsGraphics</strong></p></td>
 <td><p></p>
-&quot;True&quot;
-&quot;False&quot;</td>
+"True"
+"False"</td>
 <td><p>Print text as graphics.</p>
 <p>Document-sticky.</p></td>
 </tr>

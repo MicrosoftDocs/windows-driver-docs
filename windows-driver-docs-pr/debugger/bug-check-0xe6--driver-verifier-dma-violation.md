@@ -153,7 +153,7 @@ Parameter 1 is the only parameter of interest. This parameter identifies the exa
 </tr>
 <tr class="odd">
 <td align="left"><p>0x20</p></td>
-<td align="left"><p>The driver tried to flush a map register that hasn&#39;t been mapped. The map register base, flushing address, and MDL are displayed.</p></td>
+<td align="left"><p>The driver tried to flush a map register that hasn't been mapped. The map register base, flushing address, and MDL are displayed.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x21</p></td>

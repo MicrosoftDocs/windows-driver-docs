@@ -97,7 +97,7 @@ Starting with WDDM 1.3, the following functions are required or optional for use
 </ul>
 <p>These scenarios apply when <a href="https://msdn.microsoft.com/library/windows/hardware/ff566762" data-raw-source="[&lt;em&gt;GetCaps&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566762)"><em>GetCaps</em></a> is called:</p>
 <ul>
-<li>If <strong>D3DDDICAPS_GETD3DQUERYDATA</strong> is set, the driver can optionally report support for time stamps, meaning that the Direct3D runtime won&#39;t mask support.</li>
+<li>If <strong>D3DDDICAPS_GETD3DQUERYDATA</strong> is set, the driver can optionally report support for time stamps, meaning that the Direct3D runtime won't mask support.</li>
 <li>If <strong>D3DDDICAPS_GET_SIMPLE_INSTANCING_SUPPORT</strong> is set, the driver can report optional hardware support for instancing.</li>
 </ul></td>
 </tr>
@@ -211,11 +211,11 @@ These input parameters to [*ResourceMap*](https://msdn.microsoft.com/library/win
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Flags"></span><span id="flags"></span><span id="FLAGS"></span><em>Flags</em></p></td>
-<td align="left"><p>Although the input value from the runtime isn&#39;t restricted, the driver must be able to support the <strong>D3D10_DDI_MAP_FLAG_DONOTWAIT</strong> value.</p></td>
+<td align="left"><p>Although the input value from the runtime isn't restricted, the driver must be able to support the <strong>D3D10_DDI_MAP_FLAG_DONOTWAIT</strong> value.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="pMappedSubResource"></span><span id="pmappedsubresource"></span><span id="PMAPPEDSUBRESOURCE"></span>pMappedSubResource</p></td>
-<td align="left"><p>Although the input value from the runtime isn&#39;t restricted, the driver must assign a valid CPU-cacheable pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541839" data-raw-source="[&lt;strong&gt;D3D10DDI_MAPPED_SUBRESOURCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff541839)"><strong>D3D10DDI_MAPPED_SUBRESOURCE</strong></a>.<strong>pData</strong> member and must set the <strong>RowPitch</strong> and <strong>DepthPitch</strong> to match the size of the buffer and the data provided in <strong>pData</strong>.</p></td>
+<td align="left"><p>Although the input value from the runtime isn't restricted, the driver must assign a valid CPU-cacheable pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541839" data-raw-source="[&lt;strong&gt;D3D10DDI_MAPPED_SUBRESOURCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff541839)"><strong>D3D10DDI_MAPPED_SUBRESOURCE</strong></a>.<strong>pData</strong> member and must set the <strong>RowPitch</strong> and <strong>DepthPitch</strong> to match the size of the buffer and the data provided in <strong>pData</strong>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -240,7 +240,7 @@ These input parameters to [*ResourceUnmap*](https://msdn.microsoft.com/library/w
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="hDevice"></span><span id="hdevice"></span><span id="HDEVICE"></span><em>hDevice</em></p></td>
-<td align="left"><p>Although the input value from the Direct3D runtime isn&#39;t restricted, the value which match the <em>hDevice</em> value from the original <a href="https://msdn.microsoft.com/library/windows/hardware/ff569492" data-raw-source="[&lt;em&gt;ResourceMap&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff569492)"><em>ResourceMap</em></a> call.</p></td>
+<td align="left"><p>Although the input value from the Direct3D runtime isn't restricted, the value which match the <em>hDevice</em> value from the original <a href="https://msdn.microsoft.com/library/windows/hardware/ff569492" data-raw-source="[&lt;em&gt;ResourceMap&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff569492)"><em>ResourceMap</em></a> call.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="hResource"></span><span id="hresource"></span><span id="HRESOURCE"></span><em>hResource</em></p></td>

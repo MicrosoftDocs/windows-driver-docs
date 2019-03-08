@@ -30,7 +30,7 @@ PnPUtil (PnPUtil.exe) is a command line tool that lets an administrator perform 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>PnPUtil (PnPUtil.exe) is included in every version of Windows, starting with Windows Vista (in the %windir%\system32 directory). There isn&#39;t a separate PnPUtil download package.</p>
+<td align="left"><p>PnPUtil (PnPUtil.exe) is included in every version of Windows, starting with Windows Vista (in the %windir%\system32 directory). There isn't a separate PnPUtil download package.</p>
 <ul>
 <li>Open a <strong>Command Prompt</strong> window (<strong>Run as administrator</strong>).</li>
 <li>Type <strong>pnputil /?</strong> to view command options. See <a href="pnputil-command-syntax.md" data-raw-source="[&lt;strong&gt;PnPUtil Command Syntax&lt;/strong&gt;](pnputil-command-syntax.md)"><strong>PnPUtil Command Syntax</strong></a> for more information.</li>

@@ -46,7 +46,7 @@ HRESULT WpdCapabilities::OnGetSupportedContentTypes(
     {
         PROPVARIANT pv = {0};
         PropVariantInit(&pv);
-        // Don&#39;t call PropVariantClear, since we did not allocate the memory for these GUIDs
+        // Don't call PropVariantClear, since we did not allocate the memory for these GUIDs
 
         // Add supported content types for known functional categories
         if (guidFunctionalCategory  == WPD_FUNCTIONAL_CATEGORY_STORAGE)

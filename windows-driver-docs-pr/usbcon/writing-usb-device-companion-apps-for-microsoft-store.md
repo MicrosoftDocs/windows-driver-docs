@@ -40,7 +40,7 @@ The [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn
 </tr>
 <tr class="even">
 <td><p><a href="how-to-send-a-usb-control-transfer--uwp-app-.md" data-raw-source="[How to send a USB control transfer (UWP app)](how-to-send-a-usb-control-transfer--uwp-app-.md)">How to send a USB control transfer (UWP app)</a></p></td>
-<td><p>An app that communicates with a USB device usually sends several control transfers requests. Those requests get information about the device and send control commands defined by the hardware vendor. In this topic you&#39;ll learn about control transfers and how to format and send them in your UWP app.</p></td>
+<td><p>An app that communicates with a USB device usually sends several control transfers requests. Those requests get information about the device and send control commands defined by the hardware vendor. In this topic you'll learn about control transfers and how to format and send them in your UWP app.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="how-to-send-a-usb-interrupt-transfer--uwp-app-.md" data-raw-source="[How to send a USB interrupt transfer request (UWP app)](how-to-send-a-usb-interrupt-transfer--uwp-app-.md)">How to send a USB interrupt transfer request (UWP app)</a></p></td>
@@ -48,7 +48,7 @@ The [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn
 </tr>
 <tr class="even">
 <td><p><a href="how-to-send-a-usb-bulk-transfer--uwp-app-.md" data-raw-source="[How to send a USB bulk transfer request (UWP app)](how-to-send-a-usb-bulk-transfer--uwp-app-.md)">How to send a USB bulk transfer request (UWP app)</a></p></td>
-<td><p>In this topic, you&#39;ll learn about a USB bulk transfer and how to initiate a transfer request from your UWP app that communicates with a USB device.</p></td>
+<td><p>In this topic, you'll learn about a USB bulk transfer and how to initiate a transfer request from your UWP app that communicates with a USB device.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="how-to-get-usb-descriptors--uwp-app-.md" data-raw-source="[How to get USB descriptors (UWP app)](how-to-get-usb-descriptors--uwp-app-.md)">How to get USB descriptors (UWP app)</a></p></td>
@@ -56,7 +56,7 @@ The [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn
 </tr>
 <tr class="even">
 <td><p><a href="how-to-select-a-usb-interface-setting--uwp-app-.md" data-raw-source="[How to select a USB interface setting (UWP app)](how-to-select-a-usb-interface-setting--uwp-app-.md)">How to select a USB interface setting (UWP app)</a></p></td>
-<td><p>In this topic, you&#39;ll learn about changing a setting within a USB interface. You&#39;ll use the <a href="https://msdn.microsoft.com/library/windows/apps/dn264278" data-raw-source="[&lt;strong&gt;UsbInterfaceSetting&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn264278)"><strong>UsbInterfaceSetting</strong></a> object to get the current setting and set a setting in the interface.</p></td>
+<td><p>In this topic, you'll learn about changing a setting within a USB interface. You'll use the <a href="https://msdn.microsoft.com/library/windows/apps/dn264278" data-raw-source="[&lt;strong&gt;UsbInterfaceSetting&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn264278)"><strong>UsbInterfaceSetting</strong></a> object to get the current setting and set a setting in the interface.</p></td>
 </tr>
 </tbody>
 </table>

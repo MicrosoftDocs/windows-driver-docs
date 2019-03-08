@@ -38,22 +38,22 @@ These scenarios are discussed in more detail throughout the MB Interface Model t
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>&quot;CDC_WMC&quot;</p></td>
+<td align="left"><p>"CDC_WMC"</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Loading USBCCGP on composite devices that use WMC UFD for grouping interfaces into functions</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>&quot;MBIM&quot;</p></td>
+<td align="left"><p>"MBIM"</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Loading MBCD on MBIM backward-compatible function</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>&quot;ALTRCFG&quot;</p></td>
+<td align="left"><p>"ALTRCFG"</p></td>
 <td align="left"><p>Configuration number in ASCII</p></td>
 <td align="left"><p>Identity morphing with IADs</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>&quot;WMCALTR&quot;</p></td>
+<td align="left"><p>"WMCALTR"</p></td>
 <td align="left"><p>Configuration number in ASCII</p></td>
 <td align="left"><p>Identity morphing with WMC UFD</p></td>
 </tr>

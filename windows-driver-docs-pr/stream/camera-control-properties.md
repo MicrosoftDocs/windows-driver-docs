@@ -29,35 +29,35 @@ The [PROPSETID\_VIDCAP\_CAMERACONTROL](https://msdn.microsoft.com/library/window
 <tbody>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564401" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_EXPOSURE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564401)"><strong>KSPROPERTY_CAMERACONTROL_EXPOSURE</strong></a></p></td>
-<td><p>Controls a camera&#39;s digital exposure time.</p></td>
+<td><p>Controls a camera's digital exposure time.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564410" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_FOCUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564410)"><strong>KSPROPERTY_CAMERACONTROL_FOCUS</strong></a></p></td>
-<td><p>Controls a camera&#39;s focus setting.</p></td>
+<td><p>Controls a camera's focus setting.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564415" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_IRIS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564415)"><strong>KSPROPERTY_CAMERACONTROL_IRIS</strong></a></p></td>
-<td><p>Controls a camera&#39;s aperture setting.</p></td>
+<td><p>Controls a camera's aperture setting.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564459" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_ZOOM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564459)"><strong>KSPROPERTY_CAMERACONTROL_ZOOM</strong></a></p></td>
-<td><p>Controls a camera&#39;s zoom setting.</p></td>
+<td><p>Controls a camera's zoom setting.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564424" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_PAN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564424)"><strong>KSPROPERTY_CAMERACONTROL_PAN</strong></a></p></td>
-<td><p>Controls a camera&#39;s pan setting.</p></td>
+<td><p>Controls a camera's pan setting.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564432" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_ROLL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564432)"><strong>KSPROPERTY_CAMERACONTROL_ROLL</strong></a></p></td>
-<td><p>Controls a camera&#39;s roll setting.</p></td>
+<td><p>Controls a camera's roll setting.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564454" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_TILT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564454)"><strong>KSPROPERTY_CAMERACONTROL_TILT</strong></a></p></td>
-<td><p>Controls a camera&#39;s tilt setting.</p></td>
+<td><p>Controls a camera's tilt setting.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564452" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_SCANMODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564452)"><strong>KSPROPERTY_CAMERACONTROL_SCANMODE</strong></a></p></td>
-<td><p>Controls the scanning mode of a camera&#39;s sensor, such as interleaved, or non-interleaved.</p></td>
+<td><p>Controls the scanning mode of a camera's sensor, such as interleaved, or non-interleaved.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564430" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_PRIVACY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564430)"><strong>KSPROPERTY_CAMERACONTROL_PRIVACY</strong></a></p></td>
@@ -65,43 +65,43 @@ The [PROPSETID\_VIDCAP\_CAMERACONTROL](https://msdn.microsoft.com/library/window
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564425" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_PANTILT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564425)"><strong>KSPROPERTY_CAMERACONTROL_PANTILT</strong></a></p></td>
-<td><p>Controls a camera&#39;s absolute pan and tilt setting.</p></td>
+<td><p>Controls a camera's absolute pan and tilt setting.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564429" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_PAN_RELATIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564429)"><strong>KSPROPERTY_CAMERACONTROL_PAN_RELATIVE</strong></a></p></td>
-<td><p>Controls a camera&#39;s relative rotation about the vertical axis from its current value.</p></td>
+<td><p>Controls a camera's relative rotation about the vertical axis from its current value.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564456" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_TILT_RELATIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564456)"><strong>KSPROPERTY_CAMERACONTROL_TILT_RELATIVE</strong></a></p></td>
-<td><p>Controls a camera&#39;s relative rotation about the horizontal axis from its current position.</p></td>
+<td><p>Controls a camera's relative rotation about the horizontal axis from its current position.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564435" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_ROLL_RELATIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564435)"><strong>KSPROPERTY_CAMERACONTROL_ROLL_RELATIVE</strong></a></p></td>
-<td><p>Controls a camera&#39;s relative rotation about the image viewing axis from its current value.</p></td>
+<td><p>Controls a camera's relative rotation about the image viewing axis from its current value.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564460" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_ZOOM_RELATIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564460)"><strong>KSPROPERTY_CAMERACONTROL_ZOOM_RELATIVE</strong></a></p></td>
-<td><p>Controls a camera&#39;s relative zoom setting from its current value.</p></td>
+<td><p>Controls a camera's relative zoom setting from its current value.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564404" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_EXPOSURE_RELATIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564404)"><strong>KSPROPERTY_CAMERACONTROL_EXPOSURE_RELATIVE</strong></a></p></td>
-<td><p>Controls a camera&#39;s relative shutter speed from its current value.</p></td>
+<td><p>Controls a camera's relative shutter speed from its current value.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564417" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_IRIS_RELATIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564417)"><strong>KSPROPERTY_CAMERACONTROL_IRIS_RELATIVE</strong></a></p></td>
-<td><p>Specifies a camera&#39;s relative aperture setting from its current value.</p></td>
+<td><p>Specifies a camera's relative aperture setting from its current value.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564413" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_FOCUS_RELATIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564413)"><strong>KSPROPERTY_CAMERACONTROL_FOCUS_RELATIVE</strong></a></p></td>
-<td><p>Controls a camera&#39;s relative focus setting from its current value.</p></td>
+<td><p>Controls a camera's relative focus setting from its current value.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564427" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_PANTILT_RELATIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564427)"><strong>KSPROPERTY_CAMERACONTROL_PANTILT_RELATIVE</strong></a></p></td>
-<td><p>Controls a camera&#39;s relative pan and tilt setting from their current values.</p></td>
+<td><p>Controls a camera's relative pan and tilt setting from their current values.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564406" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564406)"><strong>KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH</strong></a></p></td>
-<td><p>Specifies a camera&#39;s focal length.</p></td>
+<td><p>Specifies a camera's focal length.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564399" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564399)"><strong>KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY</strong></a></p></td>

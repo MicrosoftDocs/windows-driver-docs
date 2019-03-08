@@ -229,7 +229,7 @@ DWORD WINAPI CSampleEvents::_EventThreadProc(__in LPVOID pvData)
                 CComPtr<IWDFFile> spTemp;
 
                 // Get the data fields.
-                // Note that we&#39;re using a DDI call as a helper function, here.
+                // Note that we're using a DDI call as a helper function, here.
                 // Setting the first parameter to NULL will be problematic if you
                 // choose to track or use IWDFFile pointers in OnGetDataFields.
                 // This sample does not do so, therefore this is a safe thing to do

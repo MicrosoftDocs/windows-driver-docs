@@ -84,7 +84,7 @@ The following table describes the possible INF entries for the RSS enumeration k
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>2</p></td>
-<td align="left"><p><strong>ClosestProcessorStatic</strong>: No dynamic load-balancing - Distribute but don&#39;t load-balance at runtime.</p></td>
+<td align="left"><p><strong>ClosestProcessorStatic</strong>: No dynamic load-balancing - Distribute but don't load-balance at runtime.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
