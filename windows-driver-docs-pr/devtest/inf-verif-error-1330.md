@@ -144,11 +144,9 @@ The following example code shows how to update an INF that uses old syntax.
 <tbody>
 <tr><td><pre>[DestinationDirs]
 CopyFiles.A = 12
-CopyFiles.B = 12
-
+CopyFiles.B = 12</br>
 [DDInstallSection_A]
-CopyFiles  = CopyFiles.A
-
+CopyFiles  = CopyFiles.A</br>
 [DDInstallSection_B]
 CopyFiles = CopyFiles.B
 </td>
@@ -158,8 +156,7 @@ CopyFiles = CopyFiles.B
 <tr>
 <td><pre>[CopyFiles.A]
 DesiredFileName1,SourceFile1A ; HW Version A
-DesiredFileName2,SourceFile2A ; HW Version A
-
+DesiredFileName2,SourceFile2A ; HW Version A</br>
 [CopyFiles.B]
 DesiredFileName1,SourceFile1B ; HW Version B
 DesiredFileName2,SourceFile2B ; HW Version B
@@ -193,14 +190,11 @@ CopyFiles.B = 13
 </tr>
 <tr>
 <td><pre>[DDInstallSection_A]
-CopyFiles = CopyFiles.A
-
+CopyFiles = CopyFiles.A</br>
 [DDInstallSection_A.HW]
-AddReg = A.AddReg  
-
+AddReg = A.AddReg</br>
 [DDInstallSection_B]
-CopyFiles = CopyFiles.B
-
+CopyFiles = CopyFiles.B</br>
 [DDInstallSection_B.HW]
 AddReg = B.AddReg  
 
@@ -214,8 +208,7 @@ AddReg = B.AddReg
 <tr>
 <td><pre>[A.AddReg]
 HKR,, FileName1Path, "%13%\SourceFile1A"
-HKR,, FileName2Path, "%13%\SourceFile2A"
-
+HKR,, FileName2Path, "%13%\SourceFile2A"</br>
 [B.AddReg]
 HKR,, FileName1Path, "%13%\SourceFile1A"
 HKR,, FileName2Path, "%13%\SourceFile2A"
@@ -228,8 +221,7 @@ HKR,, FileName2Path, "%13%\SourceFile2A"
 <tr>
 <td><pre>[CopyFiles.A]
 SourceFile1A ; HW Version A
-SourceFile2A ; HW Version A
-
+SourceFile2A ; HW Version A</br>
 [CopyFiles.B]
 SourceFile1B ; HW Version B
 SourceFile2B ; HW Version B
