@@ -35,7 +35,7 @@ When you write a universal driver package, there are four design principles to c
 
 In the documentation, we use the acronym **DCHU** to refer to the above principles.
 Below, you'll find guidance on how to make your driver package DCHU-compliant.
-Also check out [Universal Driver Scenarios](universal-driver-scenarios.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles.
+Also check out [Universal Driver Scenarios](universal-driver-scenarios.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles. This guidance is for in-box driver. If your driver is for add-on device, you do not need the guidance.
 
 ## Requirements
 
