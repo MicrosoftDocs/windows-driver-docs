@@ -146,62 +146,253 @@ The following status codes are applicable:
 | MBIM_STATUS_BAD_SIM | Unable to perform the UICC operation because the UICC is in an error state. |
 | MBIM_STATUS_NOT_INITIALIZED | Unable to perform the UICC operation because the UICC is not yet fully initialized. |
 
-## 
+## MBIM_CID_MS_UICC_FILE_STATUS
+
+This CID retrieves information about a specified UICC file.
 
 ### Parameters
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | Not applicable | Not applicable | Not applicable |
-| Response | Not applicable | Not applicable | Not applicable |
+| Command | Not applicable | MBIM_UICC_FILE_PATH | Not applicable |
+| Response | Not applicable | MBIM_UICC_FILE_STATUS | Not applicable |
 
 ### Query
 
+The InformationBuffer of MBIM_COMMAND_MSG contains the target EF as an MBIM_UICC_FILE_PATH structure.
+
+#### MBIM_UICC_FILE_PATH (version 1)
+
+| Offset | Size | Field | Type | Description |
+| --- | --- | --- | --- | --- |
+| 0 | 4 | Version | UINT32 | The version number of the structure that follows. This field must be **1** for version 1 of this structure. |
+| 4 | 4 | AppIdOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the application ID. |
+| 8 | 4 | AppIdSize | SIZE(0..16) | The size of the application ID, in bytes, as defined in section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
+| 12 | 4 | FilePathOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the file path. The file path is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application desginated by **AppId**. Otherwise, it is an absolute path starting from the MF. |
+| 16 | 4 | FilePathSize | SIZE(0..8) | The size of the file path, in bytes. |
+| 20 |   | DataBuffer | DATABUFFER | The data buffer containing AppId and FilePath. |
+
 ### Set
+
+Not applicable.
 
 ### Response
 
+The following MBIM_UICC_FILE_STATUS structure is used in the InformationBuffer.
+
+#### MBIM_UICC_FILE_STATUS (version 1)
+
+| Offset | Size | Field | Type | Description |
+| --- | --- | --- | --- | --- |
+| 0 | 4 | Version | UINT32 | The version number of the structure that follows. This field must be **1** for version 1 of this structure. |
+| 4 | 4 | StatusWord1 | UINT32(0..256) | A return parameter specific to the UICC command. |
+| 8 | 4 | StatusWord2 | UINT32(0..256) | A return parameter specific to the UICC command. |
+| 12 | 4 | FileAccessibility | MBIM_UICC_FILE_ACCESSIBILITY | The UICC file accessibility. |
+| 16 | 4 | FileType | MBIM_UICC_FILE_TYPE | The UICC file type. |
+| 20 | 4 | FileStructure | MBIM_UICC_FILE_STRUCTURE | The UICC file structure. |
+| 24 | 4 | ItemCount | UINT32 | The number of items in the UICC file. For transparent and TLV files, this is set to **1**. |
+| 28 | 4 | Size | UINT32 | The size of each item, in bytes. For transparent or TLV files, this is the size of the entire EF. For record-based files, this represents the total number of records. |
+| 32 | 16 | FileLockStatus | MBIM_PIN_TYPE_EX\[4\] | An array of type MBIM_PIN_TYPE_EX that describes the access condition for each operation (READ, UPDATE, ACTIVATE, and DEACTIVATE in that order) on that file. |
+
+#### MBIM_UICC_FILE_ACCESSIBILITY
+
+The MBIM_UICC_FILE_ACCESSIBILITY enumeration is used in the preceding MBIM_UICC_FILE_STATUS structure.
+
+| Type | Value | Description |
+| --- | --- | --- |
+| MBIMUiccFileAccessibilityUnknown | 0 | File shareability unknown. |
+| MBIMUiccFileAccessibilityNotShareable | 1 | Not shareable file. |
+| MBIMUiccFileAccessibilityShareable | 2 | Shareable file. |
+
+#### MBIM_UICC_FILE_TYPE
+
+The MBIM_UICC_FILE_TYPE enumeration is used in the preceding MBIM_UICC_FILE_STATUS structure.
+
+| Type | Value | Description |
+| --- | --- | --- |
+| MBIMUiccFileTypeUnknown | 0 | File type unknown. |
+| MBIMUiccFileTypeWorkingEf | 1 | Working EF. |
+| MBIMUiccFileTypeInternalEf | 2 | Internal EF. |
+| MBIMUiccFileTypeDfOrAdf | 3 | Dedicated file, a directory that is the parent of other nodes. This may be a DF or ADF. |
+
+#### MBIM_UICC_FILE_STRUCTURE
+
+The MBIM_UICC_FILE_STRUCTURE enumeration is used in the preceding MBIM_UICC_FILE_STATUS structure.
+
+| Type | Value | Description |
+| --- | --- | --- |
+| MBIMUiccFileStructureUnknown | 0 | An unknown file structure. |
+| MBIMUiccFileStructureTransparent | 1 | A single record of variable length. |
+| MBIMUiccFileStructureCyclic | 2 | A cyclic set of records, each of the same length. |
+| MBIMUiccFileStructureLinear | 3 | A linear set of records, each of the same length. |
+| MBIMUiccFileStructureBerTLV | 4 | A set of data values accessible by tag. |
+
+#### MBIM_PIN_TYPE_EX
+
+The MBIM_PIN_TYPE_EX enumeration is used in the preceding MBIM_UICC_FILE_STATUS structure.
+
+| Type | Value | Description |
+| --- | --- | --- |
+| MBIMPinTypeNone | 0 | No PIN is pending to be entered. |
+| MBIMPinTypeCustom | 1 | The PIN type is a custom type and is none of the other PIN types listed in this enumeration. |
+| MBIMPinTypePin1 | 2 | The PIN1 key. |
+| MBIMPinTypePin2 | 3 | The PIN2 key. |
+| MBIMPinTypeDeviceSimPin | 4 | The device to SIM key. |
+| MBIMPinTypeDeviceFirstSimPin | 5 | The device to very first SIM key. |
+| MBIMPinTypeNetworkPin | 6 | The network personalization key. |
+| MBIMPinTypeNetworkSubsetPin | 7 | The network subset personalization key. |
+| MBIMPinTypeServiceProviderPin | 8 | The service provider (SP) personalization key. |
+| MBIMPinTypeCorporatePin | 9 | The corporate personalization key. |
+| MBIMPinTypeSubsidyLock | 10 | The subsidy unlock key. | 
+| MBIMPinTypePuk1 | 11 | The Personal Identification Number1 Unlock Key (PUK1). |
+| MBIMPinTypePuk2 | 12 | The Personal Identification Number2 Unlock Key (PUK2). |
+| MBIMPinTypeDeviceFirstSimPuk | 13 | The device to very first SIM PIN unlock key. |
+| MBIMPinTypeNetworkPuk | 14 | The network personalization unlock key. |
+| MBIMPinTypeNetworkSubsetPuk | 15 | The network subset personalization unlock key. |
+| MBIMPinTypeServiceProviderPuk | 16 | The service provider (SP) personalization unlock key. |
+| MBIMPinTypeCorporatePuk | 17 | The corporate personalization unlock key. |
+| MBIMPinTypeNev | 18 | The NEV key. |
+| MBIMPinTypeAdm | 19 | The administrative key. |
+
 ### Unsolicited Events
+
+Not applicable.
 
 ### Status Codes
 
-## 
+The following status codes are applicable:
+
+| Status code | Description |
+| --- | --- |
+| MBIM_STATUS_BUSY | Basic MBIM status as defined for all commands. |
+| MBIM_STATUS_FAILURE | Basic MBIM status as defined for all commands. |
+| MBIM_STATUS_SIM_NOT_INSERTED | Unable to perform the UICC operation because the UICC is missing. |
+| MBIM_STATUS_BAD_SIM | Unable to perform the UICC operation because the UICC is in an error state. |
+| MBIM_STATUS_SHAREABILITY_CONDITION_ERROR | The file cannot be selected because it is not shareable and is currently being accessed by another application. The status word returned by the SIM is 6985. |
+
+## MBIM_CID_MS_UICC_ACCESS_BINARY
+
+This CID sends a specific command to access a UICC binary file, with structure type **MBIMUiccFileStructureTransparent** or **MBIMUiccFileStructureBerTLV**.
 
 ### Parameters
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | Not applicable | Not applicable | Not applicable |
-| Response | Not applicable | Not applicable | Not applicable |
+| Command | MBIM_UICC_ACCESS_BINARY | MBIM_UICC_ACCESS_BINARY | Not applicable |
+| Response | MBIM_UICC_RESPONSE | MBIM_UICC_RESPONSE | Not applicable |
 
 ### Query
 
+Reads a binary file. The InformationBuffer for MBIM_COMMAND_MSG contains an MBIM_UICC_ACCESS_BINARY structure. An MBIM_UICC_RESPONSE structure is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+
+#### MBIM_UICC_ACCESS_BINARY (version 1)
+
+| Offset | Size | Field | Type | Description |
+| --- | --- | --- | --- | --- |
+| 0 | 4 | Version | UINT32 | The version number of the structure that follows. This filed must be set to **1** for version 1 of this structure. |
+| 4 | 4 | AppIdOffset | OFFSET | The offset, in bytes, from the beginning of this structure to the buffer containing the application ID. |
+| 8 | 4 | AppIdSize | SIZE(0..16) | The size of the application ID, in bytes, as defined in section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
+| 12 | 4 | FilePathOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the file path. The file path is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application desginated by **AppId**. Otherwise, it is an absolute path starting from the MF. |
+| 16 | 4 | FilePathSize | SIZE | The size of the file path, in bytes. |
+| 20 | 4 | FileOffset | UINT32 | The offset to be used when reading from the file. This field can be bigger than 256, and it combines both offset high and offset low as defined in the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). |
+| 24 | 4 | NumberOfBytes | UINT32 | The number of bytes to be read. For example, a client driver could use this function to read a transparent (binary) file that is larger than 256 bytes, although the maximum amount that can be read or written in a single UICC operation is 256 bytes per the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). It is the function's responsibility to split this into multiple APDUs and send back the result in a single response. |
+| 28 | 4 | LocalPinOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the password. This is the local PIN (PIN2) and is used in case the operation requires local PIN validation. |
+| 32 | 4 | LocalPinSize | SIZE(0..16) | The size of the password, in bytes. |
+| 36 | 4 | BinaryDataOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the command-specific data. Binary data is only used for SET operations. |
+| 40 | 4 | BinaryDataSize | SIZE(0..32768) | The size of the data, in bytes. |
+| 44 |   | DataBuffer | DATABUFFER | The data buffer containing AppId, FilePath, LocalPin, and BinaryData. |
+
 ### Set
+
+Updates a transparent file. The InformationBuffer for MBIM_COMMAND_MSG contains an MBIM_UICC_ACCESS_BINARY structure. An MBIM_UICC_RESPONSE structure is returned in the InformationBuffer of MBIM_COMMAND_DONE.
 
 ### Response
 
+The following MBIM_UICC_RESPONSE structure is used in the InformationBuffer.
+
+#### MBIM_UICC_RESPONSE (version 1)
+
+| Offset | Size | Field | Type | Description |
+| --- | --- | --- | --- | --- |
+| 0 | 4 | Version | UINT32 | The version number of the structurethat follows. This field must be **1** for version 1 of this structure. |
+| 4 | 4 | StatusWord1 | UINT32(0..256) | A return parameter specific to the UICC command. |
+| 8 | 4 | StatusWord2 | UINT32(0..256) | A return parameter specific to the UICC command. |
+| 12 | 4 | ResponseDataOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the response data. The response data is only used for QUERY operations. |
+| 16 | 4 | ResponseDataSize | SIZE(0..32768) | The size of the data, in bytes. |
+| 20 |   | DataBuffer | DATABUFFER | The data buffer containing ResponseData. |
+
 ### Unsolicited Events
+
+Not applicable.
 
 ### Status Codes
 
-## 
+The following status codes are applicable:
+
+| Status code | Description |
+| --- | --- |
+| MBIM_STATUS_BUSY | Basic MBIM status as defined for all commands. |
+| MBIM_STATUS_FAILURE | Basic MBIM status as defined for all commands. |
+| MBIM_STATUS_SIM_NOT_INSERTED | Unable to perform the UICC operation because the UICC is missing. |
+| MBIM_STATUS_BAD_SIM | Unable to perform the UICC operation because the UICC is in an error state. |
+| MBIM_STATUS_SHAREABILITY_CONDITION_ERROR | The file cannot be selected because it is not shareable and is currently being accessed by another application. The status word returned by the SIM is 6985. |
+| MBIM_STATUS_PIN_FAILURE | The operation failed due to a PIN error. |
+
+## MBIM_CID_MS_UICC_ACCESS_RECORD
+
+This CID sends a specific command to access a UICC linear fixed or cyclic file, with structure type of **MBIMUiccFileStructureCyclic** or **MBIMUIccFileStructureLinear**.
 
 ### Parameters
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | Not applicable | Not applicable | Not applicable |
-| Response | Not applicable | Not applicable | Not applicable |
+| Command | MBIM_UICC_ACCESS_RECORD | MBIM_UICC_ACCESS_RECORD | Not applicable |
+| Response | MBIM_UICC_RESPONSE | MBIM_UICC_RESPONSE | Not applicable |
 
 ### Query
 
+Reads contents of a record. The InformationBuffer for MBIM_COMMAND_MSG contains the following MBIM_UICC_ACCESS_RECORD structure. MBIM_UICC_RESPONSE is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+
+#### MBIM_UICC_ACCESS_RECORD (version 1)
+
+| Offset | Size | Field | Type | Description |
+| --- | --- | --- | --- | --- |
+| 0 | 4 | Version | UINT32 | The version number of the structure that follows. This filed must be set to **1** for version 1 of this structure. |
+| 4 | 4 | AppIdOffset | OFFSET | The offset, in bytes, from the beginning of this structure to the buffer containing the application ID. |
+| 8 | 4 | AppIdSize | SIZE(0..16) | The size of the application ID, in bytes, as defined in section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
+| 12 | 4 | FilePathOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the file path. The file path is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application desginated by **AppId**. Otherwise, it is an absolute path starting from the MF. |
+| 16 | 4 | FilePathSize | SIZE | The size of the file path, in bytes. |
+| 20 | 4 | RecordNumber | UINT32(0..256) | The record number. This represents the absolute record index at all times. Relative record access is not supported because the modem can perform multiple accesses on a file (NEXT, PREVIOUS). |
+| 24 | 4 | LocalPinOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the password. The lock password is a null-terminated UTF-8 string of decimal digits. | 
+| 28 | 4 | LocalPinSize | SIZE(0..16) | The size of the password, in bytes. |
+| 32 | 4 | RecordDataOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the command-specific data. Record data is only used for SET operations. |
+| 36 | 4 | RecordDataSize | SIZE(0..256) | The size of the data, in bytes. |
+| 40 |   | DataBuffer | DATABUFFER | The data buffer containing AppId, FilePath, LocalPin, and RecordData. |
+
 ### Set
+
+Updates a linear fixed or cyclic file. The InformationBuffer for MBIM_COMMAND_MSG contains the following MBIM_UICC_ACCESS_RECORD structure. MBIM_UICC_RESPONSE is returned in the InformationBuffer of MBIM_COMMAND_DONE.
 
 ### Response
 
+An MBIM_UICC_RESPONSE structure is used in the InformationBuffer.
+
 ### Unsolicited Events
 
+Not applicable.
+
 ### Status Codes
+
+The following status codes are applicable:
+
+| Status code | Description |
+| --- | --- |
+| MBIM_STATUS_BUSY | Basic MBIM status as defined for all commands. |
+| MBIM_STATUS_FAILURE | Basic MBIM status as defined for all commands. |
+| MBIM_STATUS_SIM_NOT_INSERTED | Unable to perform the UICC operation because the UICC is missing. |
+| MBIM_STATUS_BAD_SIM | Unable to perform the UICC operation because the UICC is in an error state. |
+| MBIM_STATUS_SHAREABILITY_CONDITION_ERROR | The file cannot be selected because it is not shareable and is currently being accessed by another application. The status word returned by the SIM is 6985. |
+| MBIM_STATUS_PIN_FAILURE | The operation failed due to a PIN error. |
 
 ## 
 
