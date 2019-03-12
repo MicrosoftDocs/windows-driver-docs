@@ -9,12 +9,12 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Partner Center
+# Partner Center for Windows Hardware
 
-The Partner Center enables you to create and manage your system and driver submissions quickly and easily. It replaces the legacy (Sysdev) dashboard for hardware tasks including: hardware certification, collaborative driver development, and driver distribution through Windows Update. To get started, watch our introductory [video series](https://go.microsoft.com/fwlink/?LinkID=828003), and see [Get started with the hardware program](get-started-with-the-hardware-dashboard.md) for registration details.
+The Partner Center for Windows Hardware enables you to create and manage your system and driver submissions quickly and easily. It replaces the legacy (Sysdev) dashboard for hardware tasks including: hardware certification, collaborative driver development, and driver distribution through Windows Update. To get started, watch our introductory [video series](https://go.microsoft.com/fwlink/?LinkID=828003), and see [Get started with the hardware program](get-started-with-the-hardware-dashboard.md) for registration details.
 
 > [!NOTE]
-> The legacy (Sysdev) dashboard has been retired. Use the Partner Center for your hardware tasks.
+> The legacy (Sysdev) dashboard has been retired. Use the Partner Center Hardware dashboard for your hardware tasks.
 
 <ul class="cardsFTitle panelContent">
     <li><br/>        <div class="cardSize">
