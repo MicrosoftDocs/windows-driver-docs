@@ -36,7 +36,7 @@ Studio. To develop a driver for a specific version of Windows, you must
 use one of the versions of Visual Studio that are identified (and linked
 for download) in the following table.
 
-| Versions of Windows      | Edition(s) of Visual Studio            |
+| Targeted versions of Windows      | Edition(s) of Visual Studio            |
 |--------------------------|----------------------------------------|
 | Windows 10, version 1803 <br/>Windows 10, version 1709 | [Visual Studio Community 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15) <br/>[Visual Studio Professional 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) <br/>[Visual Studio Enterprise 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15) |
 | Windows 10, version 1703 <br/>Windows 10, version 1607 | [Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/?linkid=875331) <br/>[Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599) <br/>[Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628) <br/>[Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629) |
@@ -56,10 +56,17 @@ under **Compilers, build tools, and runtimes** select **Visual C++
 compilers and libraries for ARM/ARM64**.
 
 
-### Install the Windows SDK for Windows 10, versions 1607 and 1703
+### Install the Windows SDK to target Windows 10, versions 1607 and 1703
 
-For systems that run Windows 10, version 1607 or Windows 10, version 1703, also download and install the Windows SDK:
-[Windows SDK for Windows 10.0.15063.468](https://go.microsoft.com/fwlink/p/?LinkID=845298).
+If your development targets systems that run Windows 10, version 1607 or Windows 10, version 1703, you should install Visual Studio 2015, and then also download and install the version of the Windows SDK for the targeted version of Windows 10, as identified in the following table.
+
+| Targeted versions of Windows      | Version of Windows SDK            |
+|--------------------------|----------------------------------------|
+| Windows 10, version 1607 | [Windows SDK for Windows 10.0.14393.795](https://go.microsoft.com/fwlink/p/?LinkId=838916) |
+| Windows 10, version 1703 | [Windows SDK for Windows 10.0.15063.468](https://go.microsoft.com/fwlink/p/?LinkID=845298) |
+| Windows 8.1              | [Windows SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?LinkId=323507) |
+| Windows 8                | [Windows SDK for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226658) |
+
 
 The Windows SDK was not included in Visual Studio 2015, so you must install the SDK separately. Later versions of Visual Studio include the Windows SDK.
 
