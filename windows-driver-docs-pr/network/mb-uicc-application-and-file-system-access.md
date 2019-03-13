@@ -18,7 +18,7 @@ This topic specifies an extension to the Mobile Broadband Interface Model (MBIM)
 
 The UICC provides a file system and supports a set of applications that can run concurrently. These include the USIM for UMTS, CSIM for CDMA, and ISIM for IMS. The SIM is a legacy portion of the UICC that can be modeled as one of these applications (for GSM).
 
-The following diagram from section 8.1 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594) shows an example card application structure.
+The following diagram from Section 8.1 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594) shows an example card application structure.
 
 ![An example UICC application structure](images/mb-uicc-application-structure.png "An example UICC application structure.")
 
@@ -52,7 +52,7 @@ With this extension, Windows provides the following benefits for MBIM functions:
 | Microsoft Low-Level UICC Access | UUID_MS_UICC_LOW_LEVEL | C2F6588E-F037-4BC9-8665-F4D44BD09367 |
 | Microsoft Basic IP Connectivity Extensions | UUID_BASIC_CONNECT_EXTENSIONS | 3D01DCC5-FEF5-4D05-9D3A-BEF7058E9AAF |
 
-The following table specifies the UUID and command code for each CID, as well as whether the CID supports Set, Query, or Event (notification) requests. See each CID’s individual section within this topic for more info about its parameters, data structures, and notifications. 
+The following table specifies the UUID and command code for each CID, as well as whether the CID supports Set, Query, or Event (notification) requests. See each CID’s individual Section within this topic for more info about its parameters, data structures, and notifications. 
 
 | CID | UUID | Command code | Set | Query | Notify |
 | --- | --- | --- | --- | --- | --- |
@@ -93,7 +93,7 @@ The InformationBuffer in MBIM_COMMAND_DONE contains the following MBIM_UICC_APP_
 | 4 | 4 | AppCount | UINT32 | The number of UICC application **MBIM_UICC_APP_INFO** structures being returned in this response. |
 | 8 | 4 | ActiveAppIndex | UINT32(0..NumApp - 1) | The index of the application selected by the modem for registration with the mobile network. This field must be between **0** and the **AppCount - 1**. It indexes to the array of applications returned by this response. If no application is selected for registration, this field contains **0xFFFFFFFF**. |
 | 12 | 4 | AppListOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the app list. |
-| 16 | 4 | AppListSize | SIZE(0..AppCount * 312) | The size of the app list data, in bytes. |
+| 16 | 4 | AppListSize | SIZE (0..AppCount * 312) | The size of the app list data, in bytes. |
 | 20 | AppListSize | DataBuffer | DATABUFFER | An array of **AppCount** * **MBIM_UICC_APP_INFO** structures. |
 
 #### MBIM_UICC_APP_INFO
@@ -101,12 +101,12 @@ The InformationBuffer in MBIM_COMMAND_DONE contains the following MBIM_UICC_APP_
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | AppType | MBIM_UICC_APP_TYPE | The type of the UICC application. |
-| 4 | 4 | AppIdSize | SIZE(0..16) | The size of the application ID, in bytes, as defined in section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). This field is set to zero for the **MBIMUiccAppTypeMf**, **MBIMUiccAppTypeMfSIM**, or **MBIMUiccAppTypeMfRUIM** app types. |
+| 4 | 4 | AppIdSize | SIZE (0..16) | The size of the application ID, in bytes, as defined in Section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). This field is set to zero for the **MBIMUiccAppTypeMf**, **MBIMUiccAppTypeMfSIM**, or **MBIMUiccAppTypeMfRUIM** app types. |
 | 8 | 16 | AppId | Byte array | The application ID. Only the first **AppIdSize** bytes are meaningful. If the application ID is longer than **MBIM_MAXLENGTH_APPID** bytes, then AppIdSize specifies the actual length but only the first **MBIM_MAXLENGTH_APPID** bytes are in this field. This field is valid only when **AppType** is not **MBIMUiccAppTypeMf**, **MBIMUiccAppTypeMfSIM**, or **MBIMUiccAppTypeMfRUIM**. |
-| 24 | 4 | AppNameLength | SIZE(0..256) | The length, in characters, of the application name. |
+| 24 | 4 | AppNameLength | SIZE (0..256) | The length, in characters, of the application name. |
 | 28 | 256 | AppName | ASCII character array | A UTF-8 string specifying the name of the application. The length of this field is specified by **AppNameLength**. If the length is greater than or equal to **MBIM_MAXLENGTH_APPNAME** bytes, this field contains the first **MBIM_MAXLENGTH_APPNAME - 1** bytes of the name. The string is always null-terminated. |
-| 284 | 4 | NumPins | SIZE(0..8) | The number of application PIN references. In other words, the numbef of elements of **PinRef** that are valid. Applications on a virtual R-UIM have no PIN references. |
-| 288 | 8 | PinRef | Byte array | A byte array specifying the application PIN references for this application (keys for PIN1 and possibly UPIN), as defined in section 9.4.2 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). In the case of a single-verification card, or an MBB driver and/or modem that does not support different application keys for different applications, this field must be **0x01**. |
+| 284 | 4 | NumPins | SIZE (0..8) | The number of application PIN references. In other words, the numbef of elements of **PinRef** that are valid. Applications on a virtual R-UIM have no PIN references. |
+| 288 | 8 | PinRef | Byte array | A byte array specifying the application PIN references for this application (keys for PIN1 and possibly UPIN), as defined in Section 9.4.2 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). In the case of a single-verification card, or an MBB driver and/or modem that does not support different application keys for different applications, this field must be **0x01**. |
 
 #### MBIM_UICC_APP_TYPE
 
@@ -167,9 +167,9 @@ The InformationBuffer of MBIM_COMMAND_MSG contains the target EF as an MBIM_UICC
 | --- | --- | --- | --- | --- |
 | 0 | 4 | Version | UINT32 | The version number of the structure that follows. This field must be **1** for version 1 of this structure. |
 | 4 | 4 | AppIdOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the application ID. |
-| 8 | 4 | AppIdSize | SIZE(0..16) | The size of the application ID, in bytes, as defined in section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
+| 8 | 4 | AppIdSize | SIZE (0..16) | The size of the application ID, in bytes, as defined in Section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
 | 12 | 4 | FilePathOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the file path. The file path is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application desginated by **AppId**. Otherwise, it is an absolute path starting from the MF. |
-| 16 | 4 | FilePathSize | SIZE(0..8) | The size of the file path, in bytes. |
+| 16 | 4 | FilePathSize | SIZE (0..8) | The size of the file path, in bytes. |
 | 20 |   | DataBuffer | DATABUFFER | The data buffer containing AppId and FilePath. |
 
 ### Set
@@ -291,15 +291,15 @@ Reads a binary file. The InformationBuffer for MBIM_COMMAND_MSG contains an MBIM
 | --- | --- | --- | --- | --- |
 | 0 | 4 | Version | UINT32 | The version number of the structure that follows. This filed must be set to **1** for version 1 of this structure. |
 | 4 | 4 | AppIdOffset | OFFSET | The offset, in bytes, from the beginning of this structure to the buffer containing the application ID. |
-| 8 | 4 | AppIdSize | SIZE(0..16) | The size of the application ID, in bytes, as defined in section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
+| 8 | 4 | AppIdSize | SIZE (0..16) | The size of the application ID, in bytes, as defined in Section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
 | 12 | 4 | FilePathOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the file path. The file path is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application desginated by **AppId**. Otherwise, it is an absolute path starting from the MF. |
 | 16 | 4 | FilePathSize | SIZE | The size of the file path, in bytes. |
 | 20 | 4 | FileOffset | UINT32 | The offset to be used when reading from the file. This field can be bigger than 256, and it combines both offset high and offset low as defined in the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). |
 | 24 | 4 | NumberOfBytes | UINT32 | The number of bytes to be read. For example, a client driver could use this function to read a transparent (binary) file that is larger than 256 bytes, although the maximum amount that can be read or written in a single UICC operation is 256 bytes per the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). It is the function's responsibility to split this into multiple APDUs and send back the result in a single response. |
 | 28 | 4 | LocalPinOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the password. This is the local PIN (PIN2) and is used in case the operation requires local PIN validation. |
-| 32 | 4 | LocalPinSize | SIZE(0..16) | The size of the password, in bytes. |
+| 32 | 4 | LocalPinSize | SIZE (0..16) | The size of the password, in bytes. |
 | 36 | 4 | BinaryDataOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the command-specific data. Binary data is only used for SET operations. |
-| 40 | 4 | BinaryDataSize | SIZE(0..32768) | The size of the data, in bytes. |
+| 40 | 4 | BinaryDataSize | SIZE (0..32768) | The size of the data, in bytes. |
 | 44 |   | DataBuffer | DATABUFFER | The data buffer containing AppId, FilePath, LocalPin, and BinaryData. |
 
 ### Set
@@ -318,7 +318,7 @@ The following MBIM_UICC_RESPONSE structure is used in the InformationBuffer.
 | 4 | 4 | StatusWord1 | UINT32(0..256) | A return parameter specific to the UICC command. |
 | 8 | 4 | StatusWord2 | UINT32(0..256) | A return parameter specific to the UICC command. |
 | 12 | 4 | ResponseDataOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the response data. The response data is only used for QUERY operations. |
-| 16 | 4 | ResponseDataSize | SIZE(0..32768) | The size of the data, in bytes. |
+| 16 | 4 | ResponseDataSize | SIZE (0..32768) | The size of the data, in bytes. |
 | 20 |   | DataBuffer | DATABUFFER | The data buffer containing ResponseData. |
 
 ### Unsolicited Events
@@ -359,14 +359,14 @@ Reads contents of a record. The InformationBuffer for MBIM_COMMAND_MSG contains 
 | --- | --- | --- | --- | --- |
 | 0 | 4 | Version | UINT32 | The version number of the structure that follows. This filed must be set to **1** for version 1 of this structure. |
 | 4 | 4 | AppIdOffset | OFFSET | The offset, in bytes, from the beginning of this structure to the buffer containing the application ID. |
-| 8 | 4 | AppIdSize | SIZE(0..16) | The size of the application ID, in bytes, as defined in section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
+| 8 | 4 | AppIdSize | SIZE (0..16) | The size of the application ID, in bytes, as defined in Section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
 | 12 | 4 | FilePathOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the file path. The file path is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application desginated by **AppId**. Otherwise, it is an absolute path starting from the MF. |
 | 16 | 4 | FilePathSize | SIZE | The size of the file path, in bytes. |
 | 20 | 4 | RecordNumber | UINT32(0..256) | The record number. This represents the absolute record index at all times. Relative record access is not supported because the modem can perform multiple accesses on a file (NEXT, PREVIOUS). |
 | 24 | 4 | LocalPinOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the password. The lock password is a null-terminated UTF-8 string of decimal digits. | 
-| 28 | 4 | LocalPinSize | SIZE(0..16) | The size of the password, in bytes. |
+| 28 | 4 | LocalPinSize | SIZE (0..16) | The size of the password, in bytes. |
 | 32 | 4 | RecordDataOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the command-specific data. Record data is only used for SET operations. |
-| 36 | 4 | RecordDataSize | SIZE(0..256) | The size of the data, in bytes. |
+| 36 | 4 | RecordDataSize | SIZE (0..256) | The size of the data, in bytes. |
 | 40 |   | DataBuffer | DATABUFFER | The data buffer containing AppId, FilePath, LocalPin, and RecordData. |
 
 ### Set
@@ -394,21 +394,74 @@ The following status codes are applicable:
 | MBIM_STATUS_SHAREABILITY_CONDITION_ERROR | The file cannot be selected because it is not shareable and is currently being accessed by another application. The status word returned by the SIM is 6985. |
 | MBIM_STATUS_PIN_FAILURE | The operation failed due to a PIN error. |
 
-## 
+## MBIM_CID_MS_PIN_EX
+
+This CID is used to perform all PIN security operations as defined in Section 9 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). The CID is similar to MBIM_CID_MS_PIN, but extends it to support multi-app UICC cards. Only single-verification-capable UICCs are supported. Multi-verification-capable UICCs that support more than one application PIN are not supported. One application PIN (PIN1) is assigned to all ADFs/DFs and files on the UICC. However, each application can specify a local PIN (PIN2) as a level 2 user verification requirement, resulting in the need for additional validation for every access command. This scenario is what MBIM_CID_MS_PIN_EX supports.
+
+Just like MBIM_CID_MS_PIN, with MBIM_CID_MS_PIN_EX the device only reports one PIN at a time. If multiple PINs are enabled and reporting multiple PINs is also enabled, then functions must report PIN1 first. For example, if Subsidy lock reporting is enabled and the SIM's PIN1 is enabled, then the Subsidy lock PIN should be reported in a subsequent query request only after PIN1 has been successfully verified. An empty PIN is permitted together with MBIMPinOperationEnter. An empty PIN is specified by setting the PinSize to zero. In this case, a SET command is similar to a QUERY and returns the state of the PIN referenced. This is fully aligned to the behavior of the VERIFY command as specified in Section 11.1.9 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594).
 
 ### Parameters
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | Not applicable | Not applicable | Not applicable |
-| Response | Not applicable | Not applicable | Not applicable |
+| Command | NBIM_SET_PIN_EX | MBIM_PIN_APP | Not applicable |
+| Response | MBIM_PIN_INFO_EX | MBIM_PIN_INFO_EX | Not applicable |
 
 ### Query
 
+The following MBIM_PIN_APP structure is used in the InformationBuffer.
+
+#### MBIM_PIN_APP (version 1)
+
+| Offset | Size | Field | Type | Description |
+| --- | --- | --- | --- | --- |
+| 0 | 4 | Version | UINT32 | The version number of the structure that follows. This filed must be set to **1** for version 1 of this structure. |
+| 4 | 4 | AppIdOffset | OFFSET | The offset, in bytes, from the beginning of this structure to the buffer containing the application ID. |
+| 8 | 4 | AppIdSize | SIZE (0..16) | The size of the application ID, in bytes, as defined in Section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
+| 12 |   | DataBuffer | DATABUFFER | The AppId as defined in the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). |
+
 ### Set
+
+The following MBIM_SET_PIN_EX structure is used in the InformationBuffer.
+
+#### MBIM_SET_PIN_EX
+
+| Offset | Size | Field | Type | Description |
+| --- | --- | --- | --- | --- |
+| 0 | 4 | PinType | MBIM_PIN_TYPE_EX | The PIN type. See the MBIM_PIN_TYPE_EX table in this topic. |
+| 4 | 4 | PinOperation | MBIM_PIN_OPERATION | The PIN operation. See MBIM 1.0. |
+| 8 | 4 | PinOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to a string PIN that represents the PIN value with which to perform the action, or the PIN value required to enable or disable PIN settings. This field applies for all values of **PinOperation**. |
+| 12 | 4 | PinSize | SIZE (0..32) | The size, in bytes, used for the PIN. |
+| 16 | 4 | NewPinOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the **NewPin** string that represents the new PIN value to set when **PinOperation** is MBIMPinOperationChange or MBIMPinOperationEnter, for PinTypeMBIMPinTypePuk1 or PinTypeMBIMPinTypePuk2. |
+| 20 | 4 | NewPinSize | SIZE (0..32) | The size, in bytes, used for the NewPin. |
+| 24 | 4 | AppIdOffset | OFFSET | The offset, in bytes, calculated from the beginning of this structure to the buffer containing the application ID. |
+| 28 | 4 | AppIdSize | SIZE (0..16) | The size of the application ID, in bytes, as defined in Section 8.3 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). For 2G cards, this field must be set to zero (0). |
+| 32 |   | DataBuffer | DATABUFFER | The data buffer containing the Pin, NewPin, and AppId. |
 
 ### Response
 
+The following MBIM_PIN_INFO_EX structure is used in the InformationBuffer.
+
+| Offset | Size | Field | Type | Description |
+| --- | --- | --- | --- | --- |
+| 0 | 4 | PinType | MBIM_PIN_TYPE_EX | The PIN type. See the MBIM_PIN_TYPE_EX table in this topic. |
+| 4 | 4 | PinState | MBIM_PIN_STATE | The PIN state. See MBIM 1.0. |
+| 8 | 4 | RemainingAttempts | UINT32 | The number of remaining attempts for any PIN-related operations such as enter, enable, or disable. Devices that do not support this information must set this member to 0xFFFFFFFF. |
+
 ### Unsolicited Events
 
+Not applicable.
+
 ### Status Codes
+
+The following status codes are applicable:
+
+| Status code | Description |
+| --- | --- |
+| MBIM_STATUS_BUSY | Basic MBIM status as defined for all commands. |
+| MBIM_STATUS_FAILURE | Basic MBIM status as defined for all commands. |
+| MBIM_STATUS_SIM_NOT_INSERTED | Unable to perform the UICC operation because the UICC is missing. |
+| MBIM_STATUS_BAD_SIM | Unable to perform the UICC operation because the UICC is in an error state. |
+| MBIM_STATUS_PIN_DISABLED | The operation failed because the PIN is disabled. |
+| MBIM_STATUS_PIN_REQUIRED | The operation failed because a PIN must be entered to proceed. |
+| MBIM_STATUS_NO_DEVICE_SUPPORT | The operation failed because a SET on a corresponding PIN type is not supported by the device. |
