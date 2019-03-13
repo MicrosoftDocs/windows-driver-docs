@@ -85,29 +85,13 @@ develop, build, package, deploy, test, and debug drivers.
 | Windows 8                | [WDK 8](https://go.microsoft.com/fwlink/p/?LinkID=324284) (English only) <br/>[WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) (English only) <br/>[WDK 8 Samples](https://code.msdn.microsoft.com/windowshardware/Windows-Driver-Kit-WDK-80-e3161626) |
 | Windows XP <br/>Windows Server 2003 | [WDK 7.1.0](https://www.microsoft.com/download/confirmation.aspx?id=11800) |
 
-<!-- On 02/21/2019, Andy luhrs suggested cutting all of this stuff for Windows 8.1.  I'm leaving this note here for now. [v-gmoor, 2019-03-07]
 
-### Notes for Windows 8.1 Update
-
-#### WinDbg for Windows 8.1
-
-Debugging Tools for Windows (WinDbg) are included in the WDK 8.1 Update,
-but you can also install them as a standalone component from the Windows
-8.1 SDK. First, download the installer: [sdksetup.exe](https://go.microsoft.com/fwlink/p/?LinkId=323507).
-Start the installer, and then in the installation wizard, select **Debugging Tools for Windows**,
-and clear all other components.
--->
-<!-- On 02/21/2019, Don Marshall suggested cutting this section: "As the former 'Remote Debugging Client for Windows 8.1' in no longer available for remote across the internet partner debugging, I would probably just remove this entire block of text." I'm leaving this note here for now. [v-gmoor, 2019-03-07]
-
-#### Remote Debugging client for Windows 8.1
-
-With the Windows Remote Debugging client, you can work remotely with
-developers from Microsoft, over the internet, to debug kernel-mode
-failures by using the kernel debugger. For more information about remote debugging,
-see [Remote Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/remote-debugging).
-
--   [Download the Remote Debugging client](https://go.microsoft.com/fwlink/p/?LinkId=316921) (English only) -->
-<!--edit: Preceding link for the Remote Debugging client for Windows 8.1 is dead, and I haven't yet found a working replacement, unless one of these applies: https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging?view=vs-2017#download-and-install-the-remote-tools -->
+> [!IMPORTANT]
+> If you have installed the WDK for Windows 10, version 1703 on a system that had the WDK for Windows 10, version 1607 installed, some files from the earlier version of the WDK might have been removed. To restore these files:
+> 1. On the Start menu, enter **Apps & features** in the search box, and select **Apps & features** from the results.
+> 2. Find **Windows Driver Kit - Windows 10.0.15063.0** in the list of **Apps & Features**, and then select the program.
+> 3. Select **Modify**, select **Repair**, and then follow the directions on the screen.
+> 4. The files will be restored.
 
 
 ## Optional: Install the EWDK
