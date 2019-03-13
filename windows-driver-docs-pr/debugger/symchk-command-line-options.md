@@ -3,7 +3,7 @@ title: SymChk Command-Line Options
 description: SymChk uses the following syntax
 ms.assetid: e17dd001-2830-49bd-b727-fcd772ee23b4
 keywords: ["SymChk Command-Line Options Windows Debugging"]
-ms.date: 06/28/2017
+ms.date: 03/13/2019
 topic_type:
 - apiref
 api_name:
@@ -168,6 +168,14 @@ The available options are divided into several classes. Each class of options co
 <tr class="even">
 <td align="left"><p><strong>/oc</strong> <em>Dir</em></p></td>
 <td align="left"><p>SymChk will create a traditional symbol tree in the directory <em>Dir</em> that contains a list of all the symbol files checked.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>/ov</strong></p></td>
+<td align="left"><p>SymChk will print version information for checked binaries as well.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>/ol</strong><em><File></em></p></td>
+<td align="left"><p>In addition to the messages sent to standard out, write a file that contains a comma separated list of all the binaries and their symbols that pass symbol checking.</p></td>
 </tr>
 </tbody>
 </table>
