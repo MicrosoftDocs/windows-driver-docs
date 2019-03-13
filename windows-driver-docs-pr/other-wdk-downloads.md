@@ -55,7 +55,8 @@ To develop drivers for ARM/ARM64, choose **Individual components** and
 under **Compilers, build tools, and runtimes** select **Visual C++
 compilers and libraries for ARM/ARM64**.
 
-### Install Windows SDK for Windows 10, versions 1607 and 1703
+
+### Install the Windows SDK for Windows 10, versions 1607 and 1703
 
 For systems that run Windows 10, version 1607 or Windows 10, version 1703, also download and install the Windows SDK:
 [Windows SDK for Windows 10.0.15063.468](https://go.microsoft.com/fwlink/p/?LinkID=845298).
@@ -111,11 +112,13 @@ see [Remote Debugging](https://docs.microsoft.com/windows-hardware/drivers/debug
 
 ## Optional: Install the EWDK
 
-The EWDK is a standalone, self-contained, command-line environment for
+The Enterprise WDK (EWDK) is a standalone, self-contained, command-line environment for
 building drivers and basic Win32 test applications. It includes the
 Visual Studio Build Tools, the SDK, and the WDK. This environment
 doesn't include all the features available in Visual Studio, such as
 the integrated development environment (IDE).
+
+Using the EWDK requires .NET Framework 4.6.1. For more information about which systems run this version of the framework, see [.NET Framework system requirements](https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements). For links to download the .NET Framework, see [Install the .NET Framework for developers](https://docs.microsoft.com/en-us/dotnet/framework/install/guide-for-developers).
 
 For more information about the EWDK, see
 [Using the Enterprise WDK 10](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/using-the-enterprise-wdk).
@@ -128,6 +131,14 @@ For more information about the EWDK, see
 
 > [!Note]
 > Starting in Windows 10 version 1709, the EWDK is ISO-based. To get started, download and mount the ISO, and then run **LaunchBuildEnv**.
+
+
+## Optional: Install updated test certificates for HAL extensions
+
+To work with HAL Extensions, prepare your development system, running Windows 10, version 1709 or a later version of Windows 10. Also install the WDK or the EWDK, and then install the updated version of the **Windows OEM HAL Extension Test Cert 2017 (TEST ONLY)**, available for download as a ZIP file: [HAL_Extension_Test_Cert_2017.zip](https://go.microsoft.com/fwlink/?linkid=872294).
+
+For more information about using this updated certificate, see [Update for "Windows OEM HAL Extension Test Cert 2017 (TEST ONLY)" test certificate](https://support.microsoft.com/help/4131991) on Windows Support.
+
 
 
 ## Optional: Install WinDbg Preview
