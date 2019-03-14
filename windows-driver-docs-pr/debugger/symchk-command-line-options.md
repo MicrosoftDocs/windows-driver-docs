@@ -174,7 +174,7 @@ The available options are divided into several classes. Each class of options co
 <td align="left"><p>SymChk will print version information for checked binaries as well.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>/ol</strong><em><File></em></p></td>
+<td align="left"><p><strong>/ol</strong><em> File</em></p></td>
 <td align="left"><p>In addition to the messages sent to standard out, write a file that contains a comma separated list of all the binaries and their symbols that pass symbol checking.</p></td>
 </tr>
 </tbody>
