@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This topic specifies an extension to the Mobile Broadband Interface Model (MBIM) interface to permit accessing UICC smart card application and file systems. This extension to MBIM exposes logical access to the UICC's [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594)-compliant applications and filesystems, and is supported in Windows 10, version 1903 and later.
 
-## Detailed design - UICC access and security
+## UICC access and security
 
 The UICC provides a file system and supports a set of applications that can run concurrently. These include the USIM for UMTS, CSIM for CDMA, and ISIM for IMS. The SIM is a legacy portion of the UICC that can be modeled as one of these applications (for GSM).
 
@@ -23,27 +23,6 @@ The following diagram from Section 8.1 of the [ETSI TS 102 221 technical specifi
 ![An example UICC application structure](images/mb-uicc-application-structure.png "An example UICC application structure.")
 
 The UICC file system can be regarded as a forest of directory trees. The legacy SIM tree is rooted at a Master File (MF) and contains up to two levels of subdirectories (Dedicated Files, or DFs) containing Elemental Files (EFs) that hold various types of information. The SIM defines DFs under the MF, one of which - DFTelecom - contains information common to multiple access types such as the common phone book. Additional applications are effectively implemented as separate trees, each rooted in its own Application Directory File (ADF). Each ADF is identified by an application identifier that can be up to 128 bits long. A file under the card root (EFDir under the MF in the diagram) contains the application names and corresponding identifiers. Within a tree (the MF or an ADF), DFs and EFs might be identified by a path of file IDs, where a file ID is a 16-bit integer.
-
-## Benefits for MBIM functions
-
-With this extension, Windows provides the following benefits for MBIM functions:
-
-- A new set of application and file system CIDs that are part of the same low-level UICC access service previously available with [low-level UICC access](mb-low-level-uicc-access.md), but with no dependencies on existing APDU-based access CIDs.
-    - The new set of application and file system CIDs do not rely on any of the existing low-level UICC access CIDs such as MBIM_CID_MS_UICC_ATR or MBIM_CID_UICC_OPEN_CHANNEL. The two sets of CIDs are considered as two different communication channels between the ME and UICC, and can work in parallel.
-- The ability to get a list of all applications on the UICC.
-    - Each application is associated with a full application ID, application name, and PIN info.
-    - MBIM functions can get the currently selected application.
-- GET STATUS on a file.
-    - The file is specified with an application ID and a file path relative to the application ID.
-    - If no application ID is specified, file paths that begin with *3F00* are assumed to be legacy pseudo applications under the root master file, and file paths that begin with *7FFF* are assumed to be the currently selected application.
-    - Key properties include the file type (EF/DF/ADF), file structure (transparent, cyclic, linear, and BER-TLV), accessibility, and PIN info.
-- READ or WRITE to a file.
-    - The file is specified with an application ID and a file path relative to the application ID.
-    - If no application ID is specified, file paths that begin with *3F00* are assumed to be legacy pseudo applications under the root master file, and file paths that begin with *7FFF* are assumed to be the currently selected application.
-    - All valid UICC file structures (transparent, cyclic, linear, and BER-TLV) are supported.
-- Extending PIN operations to a per-application basis. Additional PIN types beyond PIN1 are supported.
-- Implementing the retrieval of GID1 and PNN through new APIs.
-- HLK tests for testing the generic UICC APIs and GID1/PNN support.
 
 ## MBIM service and CID values
 

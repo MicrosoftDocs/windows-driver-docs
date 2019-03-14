@@ -2637,6 +2637,8 @@
       href: mb-sar-platform-support.md
     - name: "MB base stations information query support"
       href: mb-base-stations-information-query-support.md
+    - name: "MB NITZ support"
+      href: mb-nitz-support.md
     - name: "MB eSIM MBIM ready state guidance"
       href: mb-esim-mbim-ready-state-guidance.md
     - name: "MB NDIS Status Notifications"
