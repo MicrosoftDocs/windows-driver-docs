@@ -229,11 +229,9 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 2.  On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to C:\\MyApp\\x64\\Debug. For **File name**, enter MyApp.exe. Click **Open**.
 3.  Enter these commands:
 
-    [.sympath srv\*](https://go.microsoft.com/fwlink/p?linkid=399238)
+    .symfix
 
     .sympath+ C:\\MyApp\\x64\\Debug
-
-    [.srcpath C:\\MyApp\\MyApp](https://go.microsoft.com/fwlink/p?linkid=399395)
 
     Now WinDbg knows where to find symbols and source code for your application.
 
