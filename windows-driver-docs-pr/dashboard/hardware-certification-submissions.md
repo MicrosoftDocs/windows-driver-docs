@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Hardware submissions
 
-The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Windows Hardware Dev Center dashboard. For more information, see the [Windows hardware certification](https://go.microsoft.com/fwlink/p/?LinkId=224782) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
+The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Partner Center. For more information, see the [Windows hardware certification](https://go.microsoft.com/fwlink/p/?LinkId=224782) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
 
 To develop your device, download the [Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
@@ -79,8 +79,8 @@ The hardware certification submission list displays the following information ab
 <td><p>Your permission for the submission. Possible values are:</p>
 <ul>
 <li>Author: Author of the driver. You can complete all tasks and share the driver with partners.</li>
-<li>Publisher: The driver is shared with you. You can download the driver, create Windows Update shipping labels, and create DUA packages. You can&#39;t share the driver with additional companies.</li>
-<li>Read-only: The driver was submitted to Windows Update on your behalf. You can see the driver details, download the driver, and view the shipping label that was submitted on your behalf. You can&#39;t create shipping labels or create DUA packages.</li>
+<li>Publisher: The driver is shared with you. You can download the driver, create Windows Update shipping labels, and create DUA packages. You can't share the driver with additional companies.</li>
+<li>Read-only: The driver was submitted to Windows Update on your behalf. You can see the driver details, download the driver, and view the shipping label that was submitted on your behalf. You can't create shipping labels or create DUA packages.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -150,7 +150,7 @@ This section displays certification information. Select **See more info** to exp
 </tr>
 <tr class="even">
 <td><p>Announcement date</p></td>
-<td><p>The date when you want your product included on the Windows Server Catalog, the Windows Certified Product List, and the Universal Driver List. The default setting is **Today**.</p></td>
+<td><p>The date when you want your product included on the Windows Server Catalog, the Windows Certified Product List, and the Universal Driver List. The default setting is <strong>Today</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Marketing names</p></td>
@@ -197,7 +197,7 @@ The shipping label list displays the shipping labels for this submission. This l
 </tr>
 <tr class="odd">
 <td><p>Destination</p></td>
-<td><p>For a Windows Update shipping label, the destination is &quot;Windows Update&quot;.</p>
+<td><p>For a Windows Update shipping label, the destination is "Windows Update".</p>
 <p>For a shared driver, the destination is the <strong>Publisher display name</strong> of the company you selected for <strong>Who is publishing?</strong> when you created the shipping label. This allows you to easily see all companies that you have shared your driver with.</p></td>
 </tr>
 <tr class="even">

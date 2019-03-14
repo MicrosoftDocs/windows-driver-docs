@@ -72,7 +72,7 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tr>
 <tr class="even">
 <td align="left"><p>0x1000</p></td>
-<td align="left"><p>A caller of <strong>MmGetSystemAddressForMdl*</strong> tried to map a fully-cached physical page as non-cached. This action would cause a conflicting hardware translation buffer entry, and so it was refused by the operating system. Since the caller specified &quot;bug check on failure&quot; in the requesting MDL, the system had no choice but to issue a bug check in this instance.</p></td>
+<td align="left"><p>A caller of <strong>MmGetSystemAddressForMdl*</strong> tried to map a fully-cached physical page as non-cached. This action would cause a conflicting hardware translation buffer entry, and so it was refused by the operating system. Since the caller specified "bug check on failure" in the requesting MDL, the system had no choice but to issue a bug check in this instance.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x1010</p></td>

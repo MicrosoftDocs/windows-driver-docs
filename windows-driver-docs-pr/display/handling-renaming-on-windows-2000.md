@@ -37,7 +37,7 @@ Your driver is notified of the conceptual base address of AGP heaps through the 
 The following code fragment demonstrates computing a new **fpVidMem** for an AGP surface in a lock call.
 
 ```cpp
-// Get the vertex buffer&#39;s surface local and global from the
+// Get the vertex buffer's surface local and global from the
 // lock data
 LPDDRAWI_DDRAWSURFACE_LCL*pLcl = pLockData->lpDDSurface;
 LPDDRAWI_DDRAWSURFACE_GBL*pGbl = pLcl->lpGbl;

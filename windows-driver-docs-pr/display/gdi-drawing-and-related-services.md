@@ -36,11 +36,11 @@ To support the [**CLIPOBJ**](https://msdn.microsoft.com/library/windows/hardware
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538263" data-raw-source="[&lt;strong&gt;BRUSHOBJ_pvAllocRbrush&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538263)"><strong>BRUSHOBJ_pvAllocRbrush</strong></a></p></td>
-<td align="left"><p>Allocates memory for the driver&#39;s realization of a brush.</p></td>
+<td align="left"><p>Allocates memory for the driver's realization of a brush.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538264" data-raw-source="[&lt;strong&gt;BRUSHOBJ_pvGetRbrush&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538264)"><strong>BRUSHOBJ_pvGetRbrush</strong></a></p></td>
-<td align="left"><p>Returns a pointer to the driver&#39;s realization of the brush. Realizes the brush if it has not yet been realized.</p></td>
+<td align="left"><p>Returns a pointer to the driver's realization of the brush. Realizes the brush if it has not yet been realized.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538265" data-raw-source="[&lt;strong&gt;BRUSHOBJ_ulGetBrushColor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538265)"><strong>BRUSHOBJ_ulGetBrushColor</strong></a></p></td>
@@ -52,7 +52,7 @@ To support the [**CLIPOBJ**](https://msdn.microsoft.com/library/windows/hardware
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539421" data-raw-source="[&lt;strong&gt;CLIPOBJ_cEnumStart&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539421)"><strong>CLIPOBJ_cEnumStart</strong></a></p></td>
-<td align="left"><p>Sets parameters for enumeration of the rectangles in all or part of the clipped region. (The region can be enumerated once without calling this function, but subsequent enumerations require this function&#39;s use).</p></td>
+<td align="left"><p>Sets parameters for enumeration of the rectangles in all or part of the clipped region. (The region can be enumerated once without calling this function, but subsequent enumerations require this function's use).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff539423" data-raw-source="[&lt;strong&gt;CLIPOBJ_ppoGetPath&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539423)"><strong>CLIPOBJ_ppoGetPath</strong></a></p></td>
@@ -76,7 +76,7 @@ To support the [**CLIPOBJ**](https://msdn.microsoft.com/library/windows/hardware
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564202" data-raw-source="[&lt;strong&gt;EngCreateClip&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564202)"><strong>EngCreateClip</strong></a></p></td>
-<td align="left"><p>Allocates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539417" data-raw-source="[&lt;strong&gt;CLIPOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539417)"><strong>CLIPOBJ</strong></a> for the driver&#39;s temporary use. The driver should call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564786" data-raw-source="[&lt;strong&gt;EngDeleteClip&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564786)"><strong>EngDeleteClip</strong></a> function to delete it when it is no longer needed.</p></td>
+<td align="left"><p>Allocates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539417" data-raw-source="[&lt;strong&gt;CLIPOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539417)"><strong>CLIPOBJ</strong></a> for the driver's temporary use. The driver should call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564786" data-raw-source="[&lt;strong&gt;EngDeleteClip&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564786)"><strong>EngDeleteClip</strong></a> function to delete it when it is no longer needed.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564786" data-raw-source="[&lt;strong&gt;EngDeleteClip&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564786)"><strong>EngDeleteClip</strong></a></p></td>
@@ -116,7 +116,7 @@ To support the [**CLIPOBJ**](https://msdn.microsoft.com/library/windows/hardware
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565018" data-raw-source="[&lt;strong&gt;EngSetPointerTag&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565018)"><strong>EngSetPointerTag</strong></a></p></td>
-<td align="left"><p>Creates a shape that is ORed with the application&#39;s pointer shape on <a href="https://msdn.microsoft.com/library/windows/hardware/ff556289" data-raw-source="[&lt;strong&gt;DrvSetPointerShape&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556289)"><strong>DrvSetPointerShape</strong></a> calls to other associated drivers in a mirrored system.</p>
+<td align="left"><p>Creates a shape that is ORed with the application's pointer shape on <a href="https://msdn.microsoft.com/library/windows/hardware/ff556289" data-raw-source="[&lt;strong&gt;DrvSetPointerShape&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556289)"><strong>DrvSetPointerShape</strong></a> calls to other associated drivers in a mirrored system.</p>
 <div>
  
 </div>

@@ -37,7 +37,7 @@ The following is a list of RX operations and offloads.
 <td align="left"><p>Decryption</p></td>
 <td align="left"><p>Decrypt the frame contents using the security type and security key specified for the sender.</p></td>
 <td align="left"><p>Target</p></td>
-<td align="left"><p>In host-implemented FIPS mode, the decryption is done within the host software. The target&#39;s decryption is bypassed.</p></td>
+<td align="left"><p>In host-implemented FIPS mode, the decryption is done within the host software. The target's decryption is bypassed.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>A-MPDU deaggregation</p></td>
@@ -80,11 +80,11 @@ The following is a list of RX operations and offloads.
 <li>The packet payload fails to decrypt successfully.</li>
 <li>The packet payload fails the MIC verification.</li>
 <li>The packet fails the replay mechanism defined for the cipher algorithm (see Rx PN/replay check).</li>
-<li>A privacy exemption is defined for the packet&#39;s ether type that specifies an <strong>WDI_EXEMPT_ ALWAYS</strong> action.</li>
+<li>A privacy exemption is defined for the packet's ether type that specifies an <strong>WDI_EXEMPT_ ALWAYS</strong> action.</li>
 </ul></li>
 <li>If the frame is unencrypted, discard if:
 <ul>
-<li>A cipher key is available to decrypt the packet and a privacy exemption is defined for the packet&#39;s Ethertype that specifies a <strong>WDI_EXEMPT_ON_ KEY_UNAVAILABLE</strong> action.</li>
+<li>A cipher key is available to decrypt the packet and a privacy exemption is defined for the packet's Ethertype that specifies a <strong>WDI_EXEMPT_ON_ KEY_UNAVAILABLE</strong> action.</li>
 <li>The dot11ExcludeUnencrypted MIB is set to true.</li>
 </ul></li>
 </ol></td>
@@ -99,7 +99,7 @@ The following is a list of RX operations and offloads.
 </tr>
 <tr class="odd">
 <td align="left"><p>Chatter offload</p></td>
-<td align="left"><p>Avoid interrupting the host for each deferrable &quot;noise&quot; Rx frame. Instead, group the Rx noise frames and use a single interrupt to deliver all such frames.</p></td>
+<td align="left"><p>Avoid interrupting the host for each deferrable "noise" Rx frame. Instead, group the Rx noise frames and use a single interrupt to deliver all such frames.</p></td>
 <td align="left"><p>Target</p></td>
 <td align="left"></td>
 </tr>

@@ -35,7 +35,7 @@ When testing your driver, you should:
 
 To thoroughly test your driver, you must use both the framework's driver verification features and the driver verification tools.
 
-For general information about testing your driver using Microsoft Visual Studio and the Windows Driver Kit (WDK), see [Testing a Driver](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver).
+For general information about testing your driver using Microsoft Visual Studio and the Windows Driver Kit (WDK), see [Testing a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/testing-a-driver) and [Testing a WDF Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/testing-a-kmdf-driver).
 
  
 

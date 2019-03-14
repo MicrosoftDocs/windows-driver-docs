@@ -78,32 +78,32 @@ If the **-Certificate** parameter is specified, the tool will automatically appe
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>&quot;ASCm&quot;</p></td>
+<td align="left"><p>"ASCm"</p></td>
 <td align="left"><p>The authentication silo certificate (ASC) manufacturer.</p></td>
 <td align="left"><p>0</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>&quot;ASCh&quot;</p></td>
+<td align="left"><p>"ASCh"</p></td>
 <td align="left"><p>The ASC host certificate that is used to authenticate the certificate authentication silo to the host.</p></td>
 <td align="left"><p>Any index greater than 1.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>&quot;HCh&quot;</p></td>
+<td align="left"><p>"HCh"</p></td>
 <td align="left"><p>The host certificate that is used to authenticate the host to the certificate authentication silo.</p></td>
 <td align="left"><p>Any index greater than 1.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>&quot;PCp&quot;</p></td>
+<td align="left"><p>"PCp"</p></td>
 <td align="left"><p>The provisioning certificate that is used in administrative command sequences to provision and administer the certificate authentication silos.</p></td>
 <td align="left"><p>1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>&quot;SCh&quot;</p></td>
+<td align="left"><p>"SCh"</p></td>
 <td align="left"><p>The signer certificate that is used to define a certificate that is trusted by the host. This trusted certificate is a chain of the ASCh certificate and zero or more SCh certificates.</p></td>
 <td align="left"><p>Any index greater than 1.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>&quot;Invalid&quot;</p></td>
+<td align="left"><p>"Invalid"</p></td>
 <td align="left"><p>An unknown certificate type was located at the specified index.</p></td>
 <td align="left"><p>Not applicable</p></td>
 </tr>

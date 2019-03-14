@@ -36,7 +36,7 @@ static const GUID s_TraceLoggingSampleProviderId = {
 /*
 Invoke this macro to allocate storage for a provider and declare a
 corresponding TraceLoggingHProvider handle variable. The provider name must be a
-string literal (not a variable) and must not contain any &#39;\0&#39; characters. The
+string literal (not a variable) and must not contain any '\0' characters. The
 handle and copies of the handle are valid as long as the original handle is in
 scope.
 
@@ -150,7 +150,7 @@ void TraceLoggingSample::BasicDataTypes()
         TraceLoggingValue((BYTE)200, "UINT8"),
         TraceLoggingValue(-2000000000, "INT32"),
         TraceLoggingValue(4000000000, "UINT32"),
-        TraceLoggingValue(4000000000, "UINT32"),    // This one won&#39;t show up as hex. 
+        TraceLoggingValue(4000000000, "UINT32"),    // This one won't show up as hex. 
                                                     // TraceLoggingValue will use default out types
         TraceLoggingValue(9000000000000000000, "INT64"),
         TraceLoggingValue(3.14f, "float"),
@@ -170,8 +170,8 @@ void TraceLoggingSample::BasicDataTypes()
         "Strings and Chars",
         TraceLoggingString("She loves me ...", "String (char)"), 
         TraceLoggingWideString(L"She loves me not ...", "String (wide char)"), 
-        TraceLoggingChar(&#39;A&#39;, "Single char"),
-        TraceLoggingWchar(L&#39;z&#39;, "Single wide char")
+        TraceLoggingChar('A', "Single char"),
+        TraceLoggingWchar(L'z', "Single wide char")
         );
 
 
@@ -233,7 +233,7 @@ void TraceLoggingSample::NamingData()
 
 
     /*
-    Let&#39;s use a different symbol for the value of the event&#39;s "Cat" field.  
+    Let's use a different symbol for the value of the event's "Cat" field.  
     */
     
     UINT32 Tiger = Cat;

@@ -272,7 +272,7 @@ DriverEntry(
         // Cleanup tracing here because DriverContextCleanup will not be called
         // as we have failed to create WDFDRIVER object itself.
         // Please note that if you return failure from DriverEntry after the
-        // WDFDRIVER object is created successfully, you don&#39;t have to
+        // WDFDRIVER object is created successfully, you don't have to
         // call WPP cleanup because in those cases DriverContextCleanup
         // will be executed when the framework deletes the DriverObject.
         //

@@ -49,7 +49,7 @@ The following shows how a WSK application can register for this extension interf
 // Client dispatch structure for the extension interface
 const EXAMPLE_EXTIF_CLIENT_DISPATCH ExtIfClientDispatch = {
   .
-  . // The WSK application&#39;s callback functions
+  . // The WSK application's callback functions
   . // for the extension interface
   .
 };
@@ -76,7 +76,7 @@ NTSTATUS
   WSK_EXTENSION_CONTROL_OUT ExtensionControlOut;
   NTSTATUS Status;
 
-  // Get pointer to the socket&#39;s provider dispatch structure
+  // Get pointer to the socket's provider dispatch structure
   Dispatch =
     (PWSK_PROVIDER_CONNECTION_DISPATCH)(Socket->Dispatch);
 

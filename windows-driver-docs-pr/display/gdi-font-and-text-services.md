@@ -53,7 +53,7 @@ GDI provides support for font management and text output. The [**FONTOBJ**](http
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564917" data-raw-source="[&lt;strong&gt;EngGetCurrentCodePage&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564917)"><strong>EngGetCurrentCodePage</strong></a></p></td>
-<td align="left"><p>Returns the system&#39;s default OEM and ANSI code pages.</p></td>
+<td align="left"><p>Returns the system's default OEM and ANSI code pages.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564956" data-raw-source="[&lt;strong&gt;EngGetType1FontList&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564956)"><strong>EngGetType1FontList</strong></a></p></td>
@@ -85,7 +85,7 @@ GDI provides support for font management and text output. The [**FONTOBJ**](http
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565996" data-raw-source="[&lt;strong&gt;FONTOBJ_pQueryGlyphAttrs&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565996)"><strong>FONTOBJ_pQueryGlyphAttrs</strong></a></p></td>
-<td align="left"><p>Returns information about a font&#39;s glyphs.</p></td>
+<td align="left"><p>Returns information about a font's glyphs.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566001" data-raw-source="[&lt;strong&gt;FONTOBJ_pvTrueTypeFontFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566001)"><strong>FONTOBJ_pvTrueTypeFontFile</strong></a></p></td>

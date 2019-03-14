@@ -33,7 +33,7 @@ To get started, be sure you have the most recent version of Microsoft Visual Stu
 
     ![screen shot of the new project dialog box, showing wdf and user mode driver selected ](images/vs2015-umdf2-template.png)
 
-    Visual Studio creates one project and a solution. You can see them in the **Solution Explorer** window. (If the **Solution Explorer** window is not visible, choose **Solution Explorer** from the **View** menu.) The solution has a driver project named UmdfDriver. To see the driver source code, open any of the files under **Source Files**. Driver.cpp and Device.cpp are good places to start.
+    Visual Studio creates one project and a solution. You can see them in the **Solution Explorer** window. (If the **Solution Explorer** window is not visible, choose **Solution Explorer** from the **View** menu.) The solution has a driver project named UmdfDriver. To see the driver source code, open any of the files under **Source Files**. Driver.c and Device.c are good places to start.
 
     ![screen shot of solution explorer showing the files in the driver project](images/vs2015-umdf2-solution-explorer.png)
 

@@ -24,7 +24,7 @@ typedef struct FLOW_CONTEXT_ {
   ...
 } FLOW_CONTEXT, *PFLOW_CONTEXT;
 
-#define FLOW_CONTEXT_POOL_TAG &#39;fcpt&#39;
+#define FLOW_CONTEXT_POOL_TAG 'fcpt'
 
 // flowDeleteFn callout function
 VOID NTAPI

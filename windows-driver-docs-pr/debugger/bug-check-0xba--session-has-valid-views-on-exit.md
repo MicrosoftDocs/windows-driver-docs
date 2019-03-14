@@ -45,11 +45,11 @@ The SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT bug check has a value of 0x000000BA. Th
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
-<td align="left"><p>The address of this session&#39;s mapped views table</p></td>
+<td align="left"><p>The address of this session's mapped views table</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
-<td align="left"><p>The size of this session&#39;s mapped views table</p></td>
+<td align="left"><p>The size of this session's mapped views table</p></td>
 </tr>
 </tbody>
 </table>

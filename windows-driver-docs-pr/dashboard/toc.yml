@@ -1,4 +1,4 @@
-- name: "Windows Hardware Dev Center dashboard"
+- name: "Partner Center for Windows Hardware"
   href: index.md
   items: 
   - name: "Hardware Program dashboard FAQ"
@@ -155,7 +155,7 @@
       href: managing-user-roles.md
     - name: "Get a code signing certificate"
       href: get-a-code-signing-certificate.md
-    - name: "Update a code signing certificate"
+    - name: "Add or Update a code signing certificate"
       href: update-a-code-signing-certificate.md
   - name: "Device Metadata"
     href: device-metadata.md

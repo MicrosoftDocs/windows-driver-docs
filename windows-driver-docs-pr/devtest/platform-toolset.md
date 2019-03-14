@@ -48,7 +48,7 @@ The Windows Driver Kit (WDK) 8 provided the following platform toolsets for dri
 The following example shows how the **PlatformToolset** property is set in the project file.
 
 ```XML
-<PropertyGroup Condition="&#39;$(Configuration)|$(Platform)&#39;==&#39;Debug|Win32&#39;"
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"
       Label="Configuration">
   <ConfigurationType>Driver</ConfigurationType>
   <DriverType>KMDF</DriverType>

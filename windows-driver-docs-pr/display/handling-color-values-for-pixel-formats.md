@@ -141,13 +141,13 @@ DWORD CPixel::ConvertFromARGB(D3DCOLOR  InputColor,
                     (Red);
         break;
 
-    case MAKEFOURCC(&#39;A&#39;, &#39;Y&#39;, &#39;U&#39;, &#39;V&#39;):
-    case MAKEFOURCC(&#39;N&#39;, &#39;V&#39;, &#39;1&#39;, &#39;2&#39;):
-    case MAKEFOURCC(&#39;Y&#39;, &#39;V&#39;, &#39;1&#39;, &#39;2&#39;):
-    case MAKEFOURCC(&#39;I&#39;, &#39;C&#39;, &#39;M&#39;, &#39;1&#39;):
-    case MAKEFOURCC(&#39;I&#39;, &#39;C&#39;, &#39;M&#39;, &#39;2&#39;):
-    case MAKEFOURCC(&#39;I&#39;, &#39;C&#39;, &#39;M&#39;, &#39;3&#39;):
-    case MAKEFOURCC(&#39;I&#39;, &#39;C&#39;, &#39;M&#39;, &#39;4&#39;):
+    case MAKEFOURCC('A', 'Y', 'U', 'V'):
+    case MAKEFOURCC('N', 'V', '1', '2'):
+    case MAKEFOURCC('Y', 'V', '1', '2'):
+    case MAKEFOURCC('I', 'C', 'M', '1'):
+    case MAKEFOURCC('I', 'C', 'M', '2'):
+    case MAKEFOURCC('I', 'C', 'M', '3'):
+    case MAKEFOURCC('I', 'C', 'M', '4'):
         Output = InputColor;
         break;
     }

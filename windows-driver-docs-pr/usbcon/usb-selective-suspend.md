@@ -131,12 +131,12 @@ The client driver cancels the idle IRP by calling [**IoCancelIrp**](https://msdn
 </thead>
 <tbody>
 <tr class="odd">
-<td>The client driver has canceled the idle IRP and the USB driver stack has not called the &quot;USB Idle Notification Callback Routine&quot;.</td>
+<td>The client driver has canceled the idle IRP and the USB driver stack has not called the "USB Idle Notification Callback Routine".</td>
 <td><p>The USB driver stack completes the idle IRP. Because the device never left the <strong>D0</strong>, the driver does not change the device state.</p></td>
 </tr>
 <tr class="even">
 <td>The client driver has canceled the idle IRP, the USB driver stack has called the USB idle notification callback routine, and it has not yet returned.</td>
-<td><p>It is possible that the USB idle notification callback routine is invoked even though the client driver has invoked cancellation on the IRP. In this case, the client driver&#39;s callback routine must still power down the device by sending the device to a lower power state synchronously.</p>
+<td><p>It is possible that the USB idle notification callback routine is invoked even though the client driver has invoked cancellation on the IRP. In this case, the client driver's callback routine must still power down the device by sending the device to a lower power state synchronously.</p>
 <p>When the device is in the lower power state, the client driver can then send a <strong>D0</strong> request.</p>
 <p>Alternatively, the driver can wait for the USB driver stack to complete the idle IRP and then send the <strong>D0</strong> IRP.</p>
 <p>If the callback routine is unable to put the device into a low power state due to insufficient memory to allocate a power IRP, it should cancel the idle IRP and exit immediately. The idle IRP will not be completed until the callback routine has returned; therefore, the callback routine should not block waiting for the canceled idle IRP to complete.</p></td>

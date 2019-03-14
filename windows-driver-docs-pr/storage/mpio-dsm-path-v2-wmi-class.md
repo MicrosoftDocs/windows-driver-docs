@@ -52,7 +52,7 @@ class MPIO_DSM_Path_V2
     //
     // Flag to indicate if this is an optimized path.
     // ActiveOptimized and StandBy paths must set this to TRUE.
-    // Even though a StandBy path doesn&#39;t actually provide optimal access to the
+    // Even though a StandBy path doesn't actually provide optimal access to the
     // device, it must set this flag to TRUE. This is due to the fact that this
     // flag is used in conjunction with the PrimaryPath flag to form a two bit
     // boolean representation of the access states (AO, AU, SB, UA).
@@ -82,10 +82,10 @@ class MPIO_DSM_Path_V2
     uint32 FailedPath;
 
     //
-    // TargetPortGroup&#39;s asymmetric access state
+    // TargetPortGroup's asymmetric access state
     //
     [WmiDataId(8),
-     Description("Target Port Group&#39;s Asymmetric Access State") : amended,
+     Description("Target Port Group's Asymmetric Access State") : amended,
      Values{"Active/Optimized",
             "Active/Unoptimized",
             "Standby",
@@ -102,10 +102,10 @@ class MPIO_DSM_Path_V2
     uint32 TargetPortGroup_State;
 
     //
-    // Indicates the device&#39;s ALUA transition support
+    // Indicates the device's ALUA transition support
     //
     [WmiDataId(9),
-     Description("Device&#39;s Asymmetric Logical Unit Access state transition support") : amended,
+     Description("Device's Asymmetric Logical Unit Access state transition support") : amended,
      Values{"ALUA Not Supported",
             "ALUA Implicit Only",
             "ALUA Explicit Only",

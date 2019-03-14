@@ -88,7 +88,7 @@ The following examples show correctly formed ACPI Source Language (ASL) that dem
     ```cpp
     Name(_UPC, Package(){
         0xFF,         // Port is connectable
-        0x00,         // Connector type, Type &#39;A&#39; in this case
+        0x00,         // Connector type, Type 'A' in this case
         0x00000000,   // Reserved 0, must be zero
         0x00000000})  // Reserved 1, must be zero
 
