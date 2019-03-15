@@ -36,7 +36,7 @@ class MPIO_PATH_INFORMATION
     ] uint32 Pad;
 
     //
-    // Array containing each path&#39;s information.
+    // Array containing each path's information.
     // Note that each of these are ULONGLONG aligned.
     //
     [WmiDataId(3),

@@ -46,7 +46,7 @@ The `IPrintCoreUI2` COM interface extends the [IPrintOemDriverUI COM interface](
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553050" data-raw-source="[&lt;strong&gt;IPrintCoreUI2::EnumFeatures&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553050)"><strong>IPrintCoreUI2::EnumFeatures</strong></a></p></td>
-<td><p>Enumerates a printer&#39;s available features.</p></td>
+<td><p>Enumerates a printer's available features.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553052" data-raw-source="[&lt;strong&gt;IPrintCoreUI2::EnumOptions&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553052)"><strong>IPrintCoreUI2::EnumOptions</strong></a></p></td>
@@ -66,7 +66,7 @@ The `IPrintCoreUI2` COM interface extends the [IPrintOemDriverUI COM interface](
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553069" data-raw-source="[&lt;strong&gt;IPrintCoreUI2::GetOptions&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553069)"><strong>IPrintCoreUI2::GetOptions</strong></a></p></td>
-<td><p>Retrieves the driver&#39;s current feature settings in the format of a list of feature/option keyword pairs.</p></td>
+<td><p>Retrieves the driver's current feature settings in the format of a list of feature/option keyword pairs.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553074" data-raw-source="[&lt;strong&gt;IPrintCoreUI2::QuerySimulationSupport&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553074)"><strong>IPrintCoreUI2::QuerySimulationSupport</strong></a></p></td>
@@ -74,7 +74,7 @@ The `IPrintCoreUI2` COM interface extends the [IPrintOemDriverUI COM interface](
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553081" data-raw-source="[&lt;strong&gt;IPrintCoreUI2::SetOptions&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553081)"><strong>IPrintCoreUI2::SetOptions</strong></a></p></td>
-<td><p>Sets the driver&#39;s feature settings.</p></td>
+<td><p>Sets the driver's feature settings.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553087" data-raw-source="[&lt;strong&gt;IPrintCoreUI2::WhyConstrained&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553087)"><strong>IPrintCoreUI2::WhyConstrained</strong></a></p></td>

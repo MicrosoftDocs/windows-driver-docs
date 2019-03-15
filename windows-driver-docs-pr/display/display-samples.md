@@ -103,7 +103,7 @@ Windows Server 2008
 Windows Vista</td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>No</p></td>
-<td align="left"><p>Demonstrates how monitor manufacturers can avoid reflashing the monitor&#39;s EEPROM by implementing a monitor INF that overrides part of, or the entire, EDID information in software.</p></td>
+<td align="left"><p>Demonstrates how monitor manufacturers can avoid reflashing the monitor's EEPROM by implementing a monitor INF that overrides part of, or the entire, EDID information in software.</p></td>
 </tr>
 </tbody>
 </table>

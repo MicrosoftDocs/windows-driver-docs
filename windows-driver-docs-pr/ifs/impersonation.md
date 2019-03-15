@@ -94,7 +94,7 @@ NTSTATUS PerformSpecialTask(IN PFSD_CONTEXT Context)
 
     if (!NT_SUCCESS(Status)) {
       //
-      // This is bad - we can&#39;t restore, we can&#39;t leave it this way 
+      // This is bad - we can't restore, we can't leave it this way 
       //
       PsRevertToSelf();
     }

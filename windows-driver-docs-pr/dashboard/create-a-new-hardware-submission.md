@@ -61,7 +61,7 @@ For information about creating and digitally signing an **.hckx** file, see the 
    </tr>
    <tr class="odd">
    <td><p>Device metadata category</p></td>
-   <td><p>Select an icon for your device from a list of default icons based on your device category. This determines which icon appears in Devices and Printers. If your device should not appear, select &quot;Internal device&quot;.</p>
+   <td><p>Select an icon for your device from a list of default icons based on your device category. This determines which icon appears in Devices and Printers. If your device should not appear, select "Internal device".</p>
    <p>For information about delivering a rich experience with Windows Device Stage, see <a href="https://msdn.microsoft.com/library/windows/hardware/br230800.aspx" data-raw-source="[Device Metadata](https://msdn.microsoft.com/library/windows/hardware/br230800.aspx)">Device Metadata</a>.</p></td>
    </tr>
    <tr class="even">

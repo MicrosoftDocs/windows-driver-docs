@@ -39,7 +39,7 @@ The following example shows the output that the debugger displays when an assert
 ***   Source File: D:\nt\private\ntos\io\iosubs.c, line 3305
 
 0:Break, Ignore, Terminate Process or Terminate Thread (bipt)? b
-0:Execute &#39;!cxr BD94B918&#39; to dump context
+0:Execute '!cxr BD94B918' to dump context
 Break instruction exception - code 80000003 (first chance)
 ntkrnlmp!DbgBreakPoint:
 804a3ce4 cc               int     3

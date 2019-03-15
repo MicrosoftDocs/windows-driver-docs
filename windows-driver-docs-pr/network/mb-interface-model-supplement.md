@@ -63,7 +63,7 @@ Here is the structure of the string descriptor:
 <tr class="odd">
 <td align="left"><p>qwSignature</p></td>
 <td align="left"><p>14</p></td>
-<td align="left"><p>&quot;MSFT100&quot;</p></td>
+<td align="left"><p>"MSFT100"</p></td>
 <td align="left"><p>Signature field (4D00530046005400310030003000)</p></td>
 </tr>
 <tr class="even">

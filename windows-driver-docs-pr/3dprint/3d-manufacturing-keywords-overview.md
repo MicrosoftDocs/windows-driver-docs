@@ -127,7 +127,7 @@ Parameters in the Print Schema 3D manufacturing keyword set follows the same req
 <tr class="even">
 <td>Property psf:Mandatory</td>
 <td>xsd:QName</td>
-<td>Specifies when the Parameter MUST be initialized. See §2.1.3.1.1, &quot;Parameter psf:Mandatory Property&quot; for description and requirements for this Property.</td>
+<td>Specifies when the Parameter MUST be initialized. See §2.1.3.1.1, "Parameter psf:Mandatory Property" for description and requirements for this Property.</td>
 </tr>
 <tr class="odd">
 <td>Property psf:UnitType</td>

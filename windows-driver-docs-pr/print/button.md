@@ -56,9 +56,9 @@ Attributes
 <td><p></p>
 <p>A required attribute that specifies the string that will be returned to the printer driver when the user clicks the button. This attribute can take one of the following values:</p>
 IDOK
-A button with the name &quot;OK&quot; will be displayed in the message box. When the user clicks the button, the message box returns the string &quot;IDOK&quot;.
+A button with the name "OK" will be displayed in the message box. When the user clicks the button, the message box returns the string "IDOK".
 IDCANCEL
-A button with the name &quot;CANCEL&quot; will be displayed in the message box. When the user clicks the button, the message box returns the string &quot;IDCANCEL&quot;.</td>
+A button with the name "CANCEL" will be displayed in the message box. When the user clicks the button, the message box returns the string "IDCANCEL".</td>
 </tr>
 <tr class="even">
 <td><p><strong>resourceDll</strong></p></td>

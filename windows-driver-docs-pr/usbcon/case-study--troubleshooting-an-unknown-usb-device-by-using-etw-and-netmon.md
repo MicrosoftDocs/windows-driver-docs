@@ -108,7 +108,7 @@ Expand the payload data for the USB Hub Wait Wake IRP Completed event, and you w
 </tr>
 <tr class="odd">
 <td><p><strong>The rest of the string</strong></p></td>
-<td><p>The name of the object that the structure&#39;s data describes. For this event, it is a Hub object.</p></td>
+<td><p>The name of the object that the structure's data describes. For this event, it is a Hub object.</p></td>
 </tr>
 </tbody>
 </table>

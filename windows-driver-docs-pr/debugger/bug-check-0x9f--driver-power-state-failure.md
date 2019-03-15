@@ -51,7 +51,7 @@ Parameter 1 indicates the type of violation.
 </tr>
 <tr class="even">
 <td align="left"><p>0x2</p></td>
-<td align="left"><p>The target device&#39;s device object, if it is available</p></td>
+<td align="left"><p>The target device's device object, if it is available</p></td>
 <td align="left"><p>The device object</p></td>
 <td align="left"><p>The driver object, if it is available</p></td>
 <td align="left"><p>The device object completed the I/O request packet (IRP) for the system power state request, but it did not call <strong>PoStartNextPowerIrp</strong>.</p></td>
@@ -73,7 +73,7 @@ Parameter 1 indicates the type of violation.
 <tr class="odd">
 <td align="left"><p>0x500</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The target device&#39;s device object, if available</p></td>
+<td align="left"><p>The target device's device object, if available</p></td>
 <td align="left"><p>Device object</p></td>
 <td align="left"><p>The device object completed the IRP for the system power state request, but it did not call <strong>PoStartNextPowerIrp</strong>.</p></td>
 </tr>

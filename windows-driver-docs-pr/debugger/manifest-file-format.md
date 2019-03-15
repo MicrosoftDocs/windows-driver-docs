@@ -159,12 +159,12 @@ There are 13 basic types supported by the manifest. They are listed in the follo
 <tr class="odd">
 <td align="left"><p>LPSTR</p></td>
 <td align="left"><p>Length byte plus any number of characters</p></td>
-<td align="left"><p>&quot;Quick brown fox&quot;</p></td>
+<td align="left"><p>"Quick brown fox"</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>LPWSTR</p></td>
 <td align="left"><p>Length byte plus any number of Unicode characters</p></td>
-<td align="left"><p>&quot;Jumped over the lazy dog&quot;</p></td>
+<td align="left"><p>"Jumped over the lazy dog"</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>GUID</p></td>

@@ -123,7 +123,7 @@ PIRP DequeueIrp(DEVICE_CONTEXT *deviceContext)
       // Get the next IRP off the queue.
       nextIrp = CONTAINING_RECORD(listEntry, IRP, Tail.Overlay.ListEntry);
 
-      // Clear the IRP&#39;s cancel routine.
+      // Clear the IRP's cancel routine.
       oldCancelRoutine = IoSetCancelRoutine(nextIrp, NULL);
 
       // IoCancelIrp() could have just been called on this IRP. What interests us
@@ -138,7 +138,7 @@ PIRP DequeueIrp(DEVICE_CONTEXT *deviceContext)
          // called. The Cancel routine will complete this IRP as soon as we
          // drop the spin lock, so do not do anything with the IRP.
          // Also, the Cancel routine will try to dequeue the IRP, so make 
-         // the IRP&#39;s ListEntry point to itself.
+         // the IRP's ListEntry point to itself.
          ASSERT(nextIrp->Cancel);
          InitializeListHead(&nextIrp->Tail.Overlay.ListEntry);
          nextIrp = NULL;

@@ -41,7 +41,7 @@ The KERNEL\_APC\_PENDING\_DURING\_EXIT bug check has a value of 0x00000020. This
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
-<td align="left"><p>The thread&#39;s APC disable count</p></td>
+<td align="left"><p>The thread's APC disable count</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
