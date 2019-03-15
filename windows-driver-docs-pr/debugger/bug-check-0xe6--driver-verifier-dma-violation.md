@@ -3,7 +3,7 @@ title: Bug Check 0xE6 DRIVER_VERIFIER_DMA_VIOLATION
 description: The DRIVER_VERIFIER_DMA_VIOLATION bug check has a value of 0x000000E6. This is the bug check code for all Driver Verifier DMA Verification violations.
 ms.assetid: badf8948-356c-4728-b34e-02f1638630a6
 keywords: ["Bug Check 0xE6 DRIVER_VERIFIER_DMA_VIOLATION", "DRIVER_VERIFIER_DMA_VIOLATION"]
-ms.date: 05/23/2017
+ms.date: 03/14/2019
 topic_type:
 - apiref
 api_name:
@@ -158,6 +158,35 @@ Parameter 1 is the only parameter of interest. This parameter identifies the exa
 <tr class="even">
 <td align="left"><p>0x21</p></td>
 <td align="left"><p>The driver tried to map a zero-length buffer for transfer.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x22</p></td>
+<td align="left"><p>DMA buffer not mapped in system VA.</p>
+<p>Parameter 2 - MDL</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x23</p></td>
+<td align="left"><p>Cannot flush a channel that hasn't been completed or cancelled. </p>
+<p>Parameter 2 - Violation code. </p>
+<p>Value: 0x00 : Illegal channel flush </p>
+<p>   Parameter 3 - Controller Id.</p>
+<p>   Parameter 4 - Channel Number.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x24</p></td>
+<td align="left"><p>Insufficient buffer for requested length.
+<p>Parameter 2 - Unaccounted length.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x25</p></td>
+<td align="left"><p>Unknown device description version.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x26</p></td>
+<td align="left"><p>IOMMU detected DMA violation. </p>
+<p>Parameter 2 - Device Object of faulting device.</p>
+<p>Parameter 3 - Faulting information (usually faulting physical address).</p>
+<p>Parameter 4 - Fault type (hardware specific).</p></td>
 </tr>
 </tbody>
 </table>
