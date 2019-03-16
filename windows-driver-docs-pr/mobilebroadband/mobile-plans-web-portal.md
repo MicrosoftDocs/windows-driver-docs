@@ -1,20 +1,19 @@
 ---
-title: Mobile Plans implementation
+title: Mobile Plans - Mobile Operator Web Portal
 description: This topic describes the implementation step for the Mobile Plans program.
 ms.assetid: 283E45EF-D421-429B-A9AF-BED64BB670B0
 keywords:
-- Windows Mobile Plans implementation, Mobile Plans implementation mobile operators
-ms.date: 03/04/2018
+- Windows Mobile Plans Web Portal, Mobile Plans implementation mobile operators
+ms.date: 03/15/2018
 ms.localizationpriority: medium
 ---
 
-# Mobile Plans implementation
-<!-- To be replaced as with a meaningful title
--->
-[!include[Mobile Plans Beta Prerelease](../mobile-plans-beta-prerelease.md)]
+# Mobile Plans - Mobile Operator Web Portal
 
 ## Overview
+
 This topic describes the work needed to implement a mobile operator web service API/portal that will host your experience in the Mobile Plans app, the implementation needed to install an eSIM profile in a Windows device, how to handle eSIM installation errors. In addition, this topic will also describe how to optionally provide account management experience for physical SIMs in your mobile operator web portal. 
+
 <!--
 This topic describes MO Direct portal design policies and guidance to work with Mobile Plans, as well as the work needed to implement the Web service API that will host your experiences in the Mobile Plans app.
 -->
@@ -25,20 +24,80 @@ The mobile operator web portal enables mobile operators to provide connectivity 
 
 For more info about Web portal flow and reference design, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design).
 
-## Mobile Plans eSIM Scenario
+### Web Service API hosting MO Direct web portal for eSIM
 
-### eSIM scenario Flow diagram
-The following flow diagram, illustrates a scenario where the user doesn’t have an eSIM profile installed or active in the eUICC and is purchasing a plan from the Mobile Operator portal.
+The Mobile Plans app uses the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host the MO Direct experience. The app only trusts content returned by the *Mobile Plans* service.
 
-<img src="images/dynamo_implementation_mo_direct_flow_no_profile.png" alt="MO Direct flow where user has no MO profile" title="MO Direct flow where user has no MO profile" width="800" />
-
-### How the mobile operator portal is invoked
+When starting the WebView, the *eid*, *market*, *location*, *imei*, and *transactionId* parameters are passed to the MO web portal. If there is at least an eSIM profile matching the Mobile Operator, which Mobile Plans is reaching, the *iccids* are passed to the portal as well.
 
 
+The following example shows these launch parameters for eSIM, embedded in the call to `MyWebView.Navigate()`.
+
+```c#
+MyWebView.ScriptNotify += MyWebView_ScriptNotify;
+
+List<Uri> allowedUris = new List<Uri>();
+
+allowedUris.AddRange(AllowedNotifyUris);
+
+MyWebView.AllowedScriptNotifyUris = allowedUris;
+
+MyWebView.Navigate(“https://moportal.com?market=US&location=US&transactionId=%2F7RBTuSJt02OZbX8.4&eid=89033023422130000000000199055797&imei=001102000315468&iccids=8988247000101867183,8988247000103824828”);
+```
+
+The Web Service API must disregard any additional parameters it might receive from the Mobile Plans app. This provides flexibility for introducing new features without breaking the *Mobile Plans* experience. Please check the documentation frequently to learn about new features.
+
+The following table describes the launch parameters available for eSIM.
+
+| Parameter name | Description                                                                                                                                                                              | Example                                          |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| eid            | The eSIM Identifier. This is sent only if an eSIM is present.                                                                                                                            | `eid= 89033024010400000100000000009136`          |
+| iccids         | Optional parameter. Specifies the list of ICCIDs from the available profile on an eSIM only. If there are no ICCID’s matching the MO available on the eSIM, this parameter is not sent. | `iccids=8988247000100003319, 988247000100003555` |
+| imei           | The device's IMEI number.                                                                                                                                                                | `imei=001201234567890`                           |
+| location       | The user’s current physical location with country-level granularity.                                                                                                                    | `location=us`                                    |
+| transactionId  | The Transaction ID used for debugging the session. Providers should log this and send it in the notification payload. Maximum size is 64 characters.                                     | `transactionId=waoigFfX00yGH3Vb.1`               |
+| market         | The two-letter ISO code of the region settings in the PC.                                                                                                                                | `market=us`                                      |
+
+The user’s language preference is sent using the Accept-Language header, described in the following table.
+
+| Header name     | Description                                                                                                                                                                                                                                     | Example                  |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| Accept-Language | The user’s current language settings. The MO portal should render the contents in the specified language if possible. For more information, see [RFC 7231, section 5.3.5: Accept-Language](https://tools.ietf.org/html/rfc7231#section-5.3.5). | `Accept-Language: en-us` |
+
+
+### Web Service API hosting MO Direct web portal for Physical SIM
+
+The mobile operator portal for physical and eSIM is the same, the difference is which parameters are passed to the portal, the parameters passed are : *market*, *location*, *imei*, *iccid*, and *transactionId*.
+
+```c#
+
+MyWebView.Navigate(“https://moportal.com?iccid=8988247000100003319&imei=001102000311608&market=us&transactionId=waoigFfX00yGH3Vb.1&location=us”);
+```
+
+The Web Service API must disregard any additional parameters it might receive from the Mobile Plans app. This provides flexibility for introducing new features without breaking the *Mobile Plans* experience. Please check the documentation frequently to learn about new features.
+
+The following table describes the launch parameters available for Physical SIM.
+
+| Parameter name | Description                                                                                                                                                                              | Example                                          |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| iccid          | Required parameter for a physical SIM. Specifies the ICCID on the physical sim.                                                                                                          | `iccid=8988247000100003319`                      |
+| imei           | The device's IMEI number.                                                                                                                                                                | `imei=001201234567890`                           |
+| location       | The user’s current physical location with country-level granularity.                                                                                                                    | `location=us`                                    |
+| transactionId  | The Transaction ID used for debugging the session. Providers should log this and send it in the notification payload. Maximum size is 64 characters.                                     | `transactionId=waoigFfX00yGH3Vb.1`               |
+| market         | The two-letter ISO code of the region settings in the PC.                                                                                                                                | `market=us`                                      |
+
+The user’s language preference is sent using the Accept-Language header, described in the following table.
+
+| Header name     | Description                                                                                                                                                                                                                                     | Example                  |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| Accept-Language | The user’s current language settings. The MO portal should render the contents in the specified language if possible. For more information, see [RFC 7231, section 5.3.5: Accept-Language](https://tools.ietf.org/html/rfc7231#section-5.3.5). | `Accept-Language: en-us` |
 
 
 
+===========================================================
 
+
+# __*De aqui para bajo no aplica*__
 
 
 ======================================================
@@ -64,6 +123,10 @@ MyWebView.AllowedScriptNotifyUris = allowedUris;
 MyWebView.Navigate(“https://moportal.com?market=US&location=US&transactionId=%2F7RBTuSJt02OZbX8.4&eid=89033023422130000000000199055797&imei=001102000315468&iccids=8988247000101867183,8988247000103824828”);
 ```
 
+
+
+
+
 The next example shows the launch parameters for a physical SIM: *market*, *location*, *imei*, *iccid*, and *transactionId*. Previous lines of code have been left out for brevity.
 
 ```c#
@@ -71,6 +134,9 @@ The next example shows the launch parameters for a physical SIM: *market*, *loca
 
 MyWebView.Navigate(“https://moportal.com?iccid=8988247000100003319&imei=001102000311608&market=us&transactionId=waoigFfX00yGH3Vb.1&location=us”);
 ```
+
+
+
 
 The Web Service API must disregard any additional parameters it might receive from the Mobile Plans app. This provides flexibility for introducing new features without breaking the *Mobile Plans* experience. Please check the documentation frequently to learn about new features.
 
@@ -254,6 +320,8 @@ To ensure the best user experience on Windows, you should adhere to the policies
 | Policy                                                                                                                                                                                                                    | Required or Recommended |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | The MO Direct portal should provide accessibility to disabled users and adhere to the accessibility guidelines applicable in the jurisdictions where the mobile operator implements and enables the MO Direct experience. | Recommended             |
+
+
 
 ## Handling eSIM download errors
 

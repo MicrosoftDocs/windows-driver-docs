@@ -21,11 +21,11 @@ You must prepare eSIM profiles that meet the following requirements:
 - The eSIM profile must not have the “Do not delete” or “Do not deactivate” policies set.
 - The activation code must not include any prefixes such as “LPA:”.
 - The activation code is available immediately after the MO Direct flow.
+
 <!-- #Removed due to support to Async Connectivity
+
 - The device can immediately connect to the network for the end user after the eSIM is downloaded and activated.
 - The eSIM profile can be downloaded immediately from the SMDP+ server after MO Direct flow.
-
-
 Finally, the *Mobile Plans* user experience expects the eSIM profile to be in a warm state, meaning that a data plan can be activated in real-time after downloading the eSIM profile. If the eSIM cannot be activated in real-time, please ensure that you implement the <span style="color:green"> Asynchronous connectivity callback</span> **_TODO: Put a LINK HERE_**
 -->
 
@@ -39,8 +39,9 @@ Finally, the *Mobile Plans* user experience expects the eSIM profile to be in a 
 2. The branding logo. Required resolution is 300x300 pixels. Image should also be full bleed with no transparency.
 3. The list of countries where your solution is supported. Please use [ISO 3166 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) to create the list (comma separated). 
 4. Your MO Direct portal URI (localization is not supported). This should be a https address. Port numbers are not supported
-5. A notification URI (described in [Implementation](mobile-plans-implementation.md)). This should be a https address. Port numbers are not supported
+5. A notification URI. This should be a https address. Port numbers are not supported
 6. The ICCID range or ranges that you want to want to associate with *Mobile Plans*.
+
 <!--
 [//]: # (Removed for Phone Number Lookup.)
 [//]: # (7. MCC/MNC combinations for which you would like phone number lookup to direct to your mobile operator portal.)

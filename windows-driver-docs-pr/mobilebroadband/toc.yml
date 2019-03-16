@@ -329,8 +329,6 @@
     items:
     - name: "Configuration"
       href: mobile-plans-configuration.md
-    - name: "Implementation"
-      href: mobile-plans-implementation.md
     - name: "Integration"
       href: mobile-plans-integration.md
     - name: "Launch"
