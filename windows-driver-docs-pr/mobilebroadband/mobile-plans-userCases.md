@@ -20,10 +20,10 @@ This section describes what a mobile operator should implement to activate, down
 
 Please follow these steps:
 
-1. Implement the [Mobile Operator web portal](mobile-plans-web-portal.md#Web-Service-API-used-for-eSIM)
+1. Implement the [Mobile Operator web portal](mobile-plans-web-portal.md#web-service-api-used-for-esim)
 2. Implement the adequate control back to Mobile Plans
-   1. [**Inline profile Delivery**](mobile-plans-callbacks.md#Inline-profile-delivery), implement this callback if the eSIM profile is immediatelly available in the SMDP+ server and the device will be able to attach to the cellular network immediatelly.
-   2. [**Asynchronous Connectivity**](mobile-plans-callbacks.md#Asynchronous-connectivity), implement this callback if the eSIM profile is immediatelly available in the SMDP+ server but the device will need to wait some time before attach to the cellular network.
+   1. [**Inline profile Delivery**](mobile-plans-callbacks.md#inline-profile-delivery), implement this callback if the eSIM profile is immediatelly available in the SMDP+ server and the device will be able to attach to the cellular network immediatelly.
+   2. [**Asynchronous Connectivity**](mobile-plans-callbacks.md#asynchronous-connectivity), implement this callback if the eSIM profile is immediatelly available in the SMDP+ server but the device will need to wait some time before attach to the cellular network.
    3. **Asynchronous Profile Donwload**, implement this callback if the eSIM profile will be available in your SMDP+ server after a period of time and the device wiil be able to attahc to the cellular network immediatelly.
 3. Handling eSIM download errors
 
