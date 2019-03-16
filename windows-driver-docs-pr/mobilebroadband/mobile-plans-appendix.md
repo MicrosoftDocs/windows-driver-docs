@@ -99,12 +99,6 @@ When there are any unhandled errors or exceptions on the MO Direct portal that c
 
 <img src="images/dynamo_appendix_mo_direct_10_error.png" alt="MO Direct walkthrough: error example" title="MO Direct walkthrough: error example" width="600" />
 
-## Mobile Plans user journey
-
-The following diagram shows the journey when a user is attaching an eSIM-capable Windows Connected device to a mobile operator that participates in the Mobile Plans program.
-
-<img src="images/dynamo_appendix_user_journey.png" alt="Mobile Plans user journey" title="Mobile Plans user journey" width="400" />
-
 ## High-level integration schedule
 
 The following table provides a high-level overview of the *Mobile Plans* project integration schedule.

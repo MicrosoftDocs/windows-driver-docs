@@ -12,19 +12,11 @@ ms.localizationpriority: medium
 
 ## Overview
 
-This topic describes the work needed to implement a mobile operator web service API/portal that will host your experience in the Mobile Plans app, the implementation needed to install an eSIM profile in a Windows device, how to handle eSIM installation errors. In addition, this topic will also describe how to optionally provide account management experience for physical SIMs in your mobile operator web portal. 
-
-<!--
-This topic describes MO Direct portal design policies and guidance to work with Mobile Plans, as well as the work needed to implement the Web service API that will host your experiences in the Mobile Plans app.
--->
-
-## Mobile Operator web portal
-
-The mobile operator web portal enables mobile operators to provide connectivity solutions directly to Windows users through a curated web experience hosted in the Mobile Plans app. You need to create your web experiences following design policies and implement the web service API to make it reachable. This portal will be used for all scenarios supported in the Mobile Plans solution.
+This topic describes the mobile mobile operator web service API/portal that enables mobile operators to provide connectivity solutions directly to Windows users through a curated web experience hosted in the Mobile Plans app. You need to create your web experiences following design policies and implement the web service API to make it reachable. This portal will be used for all scenarios supported in the Mobile Plans solution.
 
 For more info about Web portal flow and reference design, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design).
 
-### Web Service API hosting MO Direct web portal for eSIM
+## Web Service API used for eSIM
 
 The Mobile Plans app uses the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host the MO Direct experience. The app only trusts content returned by the *Mobile Plans* service.
 
@@ -64,8 +56,7 @@ The user’s language preference is sent using the Accept-Language header, descr
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
 | Accept-Language | The user’s current language settings. The MO portal should render the contents in the specified language if possible. For more information, see [RFC 7231, section 5.3.5: Accept-Language](https://tools.ietf.org/html/rfc7231#section-5.3.5). | `Accept-Language: en-us` |
 
-
-### Web Service API hosting MO Direct web portal for Physical SIM
+## Web Service API used for Physical SIM
 
 The mobile operator portal for physical and eSIM is the same, the difference is which parameters are passed to the portal, the parameters passed are : *market*, *location*, *imei*, *iccid*, and *transactionId*.
 
@@ -91,163 +82,6 @@ The user’s language preference is sent using the Accept-Language header, descr
 | Header name     | Description                                                                                                                                                                                                                                     | Example                  |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
 | Accept-Language | The user’s current language settings. The MO portal should render the contents in the specified language if possible. For more information, see [RFC 7231, section 5.3.5: Accept-Language](https://tools.ietf.org/html/rfc7231#section-5.3.5). | `Accept-Language: en-us` |
-
-
-
-===========================================================
-
-
-# __*De aqui para bajo no aplica*__
-
-
-======================================================
-
-### Web Service API hosting MO Direct web portal
-
-The Mobile Plans app uses the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host the MO Direct experience. The app only trusts content returned by the *Mobile Plans* service.
-
-When starting the WebView, the *eid*, *market*, *location*, *imei*, and *transactionId* parameters are passed to the MO web portal. If there is at least an eSIM profile matching the Mobile Operator, which Mobile Plans is reaching, the *iccids* are passed to the portal as well.
-
-
-The following example shows these launch parameters for eSIM, embedded in the call to `MyWebView.Navigate()`.
-
-```c#
-MyWebView.ScriptNotify += MyWebView_ScriptNotify;
-
-List<Uri> allowedUris = new List<Uri>();
-
-allowedUris.AddRange(AllowedNotifyUris);
-
-MyWebView.AllowedScriptNotifyUris = allowedUris;
-
-MyWebView.Navigate(“https://moportal.com?market=US&location=US&transactionId=%2F7RBTuSJt02OZbX8.4&eid=89033023422130000000000199055797&imei=001102000315468&iccids=8988247000101867183,8988247000103824828”);
-```
-
-
-
-
-
-The next example shows the launch parameters for a physical SIM: *market*, *location*, *imei*, *iccid*, and *transactionId*. Previous lines of code have been left out for brevity.
-
-```c#
-...
-
-MyWebView.Navigate(“https://moportal.com?iccid=8988247000100003319&imei=001102000311608&market=us&transactionId=waoigFfX00yGH3Vb.1&location=us”);
-```
-
-
-
-
-The Web Service API must disregard any additional parameters it might receive from the Mobile Plans app. This provides flexibility for introducing new features without breaking the *Mobile Plans* experience. Please check the documentation frequently to learn about new features.
-
-The following table describes the launch parameters available for eSIM and physical SIMs.
-
-| Parameter name | Description                                                                                                                                                                              | Example                                          |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| eid            | The eSIM Identifier. This is sent only if an eSIM is present.                                                                                                                            | `eid= 89033024010400000100000000009136`          |
-| iccid          | Required parameter for a physical SIM. Specifies the ICCID on the physical sim.                                                                                                          | `iccid=8988247000100003319`                      |
-| iccids         | Optional parameter. Specifies the list of ICCIDs from the available profile on an eSIM only. If there are no ICCID’s matching the MO available on the eSIM, this parameter is not sent. | `iccids=8988247000100003319, 988247000100003555` |
-| imei           | The device's IMEI number.                                                                                                                                                                | `imei=001201234567890`                           |
-| location       | The user’s current physical location with country-level granularity.                                                                                                                    | `location=us`                                    |
-| transactionId  | The Transaction ID used for debugging the session. Providers should log this and send it in the notification payload. Maximum size is 64 characters.                                     | `transactionId=waoigFfX00yGH3Vb.1`               |
-| market         | The two-letter ISO code of the region settings in the PC.                                                                                                                                | `market=us`                                      |
-
-The user’s language preference is sent using the Accept-Language header, described in the following table.
-
-| Header name     | Description                                                                                                                                                                                                                                     | Example                  |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| Accept-Language | The user’s current language settings. The MO portal should render the contents in the specified language if possible. For more information, see [RFC 7231, section 5.3.5: Accept-Language](https://tools.ietf.org/html/rfc7231#section-5.3.5). | `Accept-Language: en-us` |
-
-## Mobile Plans flow diagrams
-
-
-The following diagram shows the flow when the user has a eSIM profile active or is using a physical SIM in their device.
-
-<img src="images/dynamo_implementation_mo_direct_flow_with_sim.png" alt="MO Direct flow where user has an eSIM or physical SIM" title="MO Direct flow where user has an eSIM or physical SIM" width="400" />
-
-## Control handoff to the Mobile Plans app
-
-> **_TODO check if I should link this to a page with all the current supported callbacks_**
-
-After the user completes the MO portal flow, the MO portal must return control to the Mobile Plans app. This is done by issuing a notification to the app with the result of the user interaction with the MO portal. 
-
-Transactions that the MO portal supports include, but are not limited to, the following:
-
-- Selling a new eSIM profile (issuing an activation code).
-- Activating a subscription.
-- Purchasing a new data plan (either postpaid or prepaid).
-- Canceling a subscription.
-- A failed transaction.
-- The customer abandoning the MO portal in the middle of the flow.
-
-The notification to the Mobile Plans app should be sent using JavaScript with the following syntax:
-
-> [!IMPORTANT]
-> Ensure that the notification payload is passed as a string.
-
-```javascript
-DataMart.notifyPurchaseResult(notificationPayload);
-```
-
-An example of the notification payload for an eSIM is as follows:
-
-```javascript
-let notificationPayload = new Object();
-notificationPayload.ver = '1';
-notificationPayload.purchaseResult = "{\"userAccount\":\"New\",\"purchaseInstrument\":\"New\",\"line\":\"New\",\"moDirectStatus\":\"Complete\",\"planName\":\"MyPlan\"}";
-notificationPayload.success = true;
-notificationPayload.transactionId = 'MSFT_ecf5a4d6-024c-46c3-8fcd-2c1f0deed572';
-notificationPayload.activationCode = '1$trl.prod.ondemandconnectivity.com$JO46UQDI07IKQDGG';
-notificationPayload.iccid = '8988247000101997790';
-
-DataMart.notifyPurchaseResult(JSON.stringify(notificationPayload));
-```
-
-An example of the notification payload for a physical SIM is as follows:
-
-```javascript
-let notificationPayload = new Object();
-notificationPayload.ver = '1';
-notificationPayload.purchaseResult = "{\"userAccount\":\"New\",\"purchaseInstrument\":\"New\",\"line\":\"New\",\"moDirectStatus\":\"Complete\",\"planName\":\"MyPlan\"}";
-notificationPayload.success = true;
-notificationPayload.transactionId = 'MSFT_ecf5a4d6-024c-46c3-8fcd-2c1f0deed572';
-notificationPayload.iccid = '8988247000101997790';
-
-DataMart.notifyPurchaseResult(JSON.stringify(notificationPayload));
-```
-
-An example of the notification payload for an eSIM where the user abandoned the MO portal without a successful transaction is as follows. To implement all cases that apply to your specific implementation, see the table that follows the example.
-
-```javascript
-let notificationPayload = new Object();
-notificationPayload.ver = '1';
-notificationPayload.purchaseResult = "{\"userAccount\":\"Bailed\",\"purchaseInstrument\":\"None\",\"line\":\"None\",\"moDirectStatus\":\"None\",\"planName\":\"\"}";
-notificationPayload.success = false;
-notificationPayload.transactionId = 'MSFT_ecf5a4d6-024c-46c3-8fcd-2c1f0deed572';
-notificationPayload.activationCode = '';
-notificationPayload.iccid = '';
-
-DataMart.notifyPurchaseResult(JSON.stringify(notificationPayload));
-```
-
-The MO Portal URI from which the notification is sent must be in the secure *https* protocol. You might specify the host but not necessarily the full path, which leaves some flexibility for the future. 
-
-The following table describes each field in the JSON payload of the notification:
-
-| JSON field         | Type    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Example                                |
-| ------------------ | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| success            | Boolean | **True** if the user purchased an MO Direct plan.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | `“success”:true`                     |
-| iccid              | String  | For an eSIM, this indicates the ICCID that the client must use for consuming the MO Direct plan purchased.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | `iccid:”8988247000100297655”`        |
-| activationCode     | String  | The activation code to retrieve the eSIM profile.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | `“ActivationCode”`                   |
-| transactionId      | String  | The Transaction ID that the MO portal received as a query parameter when the portal was launched.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | `transctionId= rRi8OzhI3EiR02nm.2.0.1` |
-| purchaseResult     | String  | Contains the details of the user interaction with the MO portal.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                        |
-| userAccount        | Enum    | This field is required. <p>Possible values:</p><ul><li>New: Indicates that a new user account was created by the user.</li><li>Existing: Indicates that the user logged on with an existing user account.</li><li>Bailed: Indicates that the user ended the purchase flow at this step.</li><li>None: Indicates that the user didn’t reach this step.</li></ul>                                                                                                                                                                                                                                                                                                                 | `“userAccount”:”New”`              |
-| purchaseInstrument | Enum    | This field is required. <p>Possible values:</p><ul><li>New: Indicates that the user used a new method of payment.</li><li>Existing: Indicates that the user used an existing payment method that was on file.</li><li>Bailed: Indicates that the user ended the purchase flow at this step.</li><li>None: Indicates that the user didn’t reach this step.</li></ul>                                                                                                                                                                                                                                                                                                             | `“purchaseInstrument”:”New”`       |
-| line               | Enum    | This field is required. <p>Possible values:</p><ul><li>New: Indicates that a SIM card was added by the user account.</li><li>Existing: Indicates that the transferred an existing line to the device.</li><li>Bailed: Indicates that the user ended the purchase flow at this step.</li><li>None: Indicates that the user didn’t reach this step.</li></ul>                                                                                                                                                                                                                                                                                                                     | `“line”:”New”`                     |
-| moDirectStatus     | Enum    | This field is required. <p>Possible values:</p><ul><li>Complete: Indicates that the user completed the purchase successfully.</li><li>ServiceError: Indicates that the user was unable to complete the purchase due to an MO service error.</li><li>InvalidSIM: Indicates that the ICCID passed to the portal was incorrect.</li><li>LogOnFailed: Indicates that the user failed to log in to the MO portal.</li><li>PurchaseFailed: Indicates that the purchase failed due to a billing error.</li><li>ClientError: Indicates that invalid arguments were passed to the portal.</li><li>None: Indicates that the user ended the transaction without a specific error.</li></ul> | `“moDirectStatus”:”Complete”`      |
-| planName           | String  | For a successful transaction, this field must not be empty and must provide a descriptive plan name. For an unsuccessful transaction, this field must be an empty string.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | `“planName”:”prepaid_3GperMonth”`  |
-
-> **_END of TODO_**
 
 ## Web portal design policies
 
@@ -320,6 +154,22 @@ To ensure the best user experience on Windows, you should adhere to the policies
 | Policy                                                                                                                                                                                                                    | Required or Recommended |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | The MO Direct portal should provide accessibility to disabled users and adhere to the accessibility guidelines applicable in the jurisdictions where the mobile operator implements and enables the MO Direct experience. | Recommended             |
+
+========
+
+**Below this should go to a different page**
+
+=====
+
+## Mobile Plans flow diagrams
+
+
+The following diagram shows the flow when the user has a eSIM profile active or is using a physical SIM in their device.
+
+<img src="images/dynamo_implementation_mo_direct_flow_with_sim.png" alt="MO Direct flow where user has an eSIM or physical SIM" title="MO Direct flow where user has an eSIM or physical SIM" width="400" />
+
+
+
 
 
 

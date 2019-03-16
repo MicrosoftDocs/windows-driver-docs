@@ -327,6 +327,8 @@
   - name: "Mobile Plans"
     href: mobile-plans.md
     items:
+    - name: "Mobile operator use case"
+      href: mobile-plans-userCases.md
     - name: "Configuration"
       href: mobile-plans-configuration.md
     - name: "Integration"
