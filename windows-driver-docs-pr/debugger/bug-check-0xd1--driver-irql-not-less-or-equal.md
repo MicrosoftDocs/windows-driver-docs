@@ -76,7 +76,7 @@ If the first parameter has the same value as the fourth parameter, and the third
 Resolution
 ----------
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
 

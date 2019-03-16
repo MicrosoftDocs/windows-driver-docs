@@ -74,7 +74,7 @@ For a complete list of exception codes, see the Ntstatus.h file that is located 
 Resolution
 ----------
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
 If you are not equipped to debug this problem, you should use some basic troubleshooting techniques:
 
 -   Make sure you have enough disk space.

@@ -85,7 +85,7 @@ The GPU is taking more time than permitted to display graphics to your monitor. 
     -   Defective parts (memory modules, motherboards, etc.)
 -   Visual effects, or too many programs running in the background may be slowing your PC down so that the video card can not respond as necessary.
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ```dbgcmd
 1: kd> !analyze -v

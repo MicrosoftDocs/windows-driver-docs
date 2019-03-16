@@ -220,7 +220,7 @@ See the description of each code in the Parameters section for an explanation of
 Resolution
 ----------
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in gathering information, such as the faulting code module.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in gathering information, such as the faulting code module.
 
 Typically, the WDF dump file will yield further information on the driver that caused this bug check. Use this command to look at the log file.
 

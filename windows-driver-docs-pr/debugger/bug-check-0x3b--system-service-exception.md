@@ -67,7 +67,7 @@ One possible exception value is 0xC0000005: STATUS\_ACCESS\_VIOLATION
 
 This means that a memory access violation occurred. 
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 For more information see the following topics:
 
