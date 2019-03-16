@@ -83,10 +83,14 @@ Parameter 1 indicates the type of violation.
 </table>
 
 
-Cause
+## Cause
 -----
 
 For a description of the possible causes, see the description of each code in the Parameters section.
+
+## Resolution
+----------
+
 
 **Debugging bug check 0x9F when Parameter 1 equals 0x3**
 
@@ -286,7 +290,7 @@ To help you determine the cause of the error, consider the following questions:
 
 -   Refer to the additional techniques described above under parameter 0x3.
 
-## Resolution
+## Remarks
 ----------
 
 If you are not equipped to debug this problem using the techniques described above, you can use some basic troubleshooting techniques.
