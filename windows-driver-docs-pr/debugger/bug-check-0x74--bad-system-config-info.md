@@ -79,6 +79,8 @@ Try booting into safe mode and then restart the OS normally. If the restart does
 
 For more information, see [Recovery options in Windows 10](https://windows.microsoft.com/windows-10/windows-10-recovery-options#).
 
+This support article discusses this bug check code: [Error 0x74: Bad_system_config_info](https://support.microsoft.com/en-us/help/4028653/windows-error-0x74-badsystemconfiginfo)
+
  
 
  
