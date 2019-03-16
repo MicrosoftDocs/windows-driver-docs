@@ -16,7 +16,9 @@ ms.localizationpriority: medium
 
 The STORE\_DATA\_STRUCTURE\_CORRUPTION bug check has a value of 0x000001C7. It indicates that the store component detected a corruption in its data structures.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
  
 
 ## STORE\_DATA\_STRUCTURE\_CORRUPTION Parameters

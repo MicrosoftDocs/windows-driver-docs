@@ -16,7 +16,9 @@ ms.localizationpriority: medium
 
 The TTM\_WATCHDOG\_TIMEOUT bug check has a value of 0x000001A0. It indicates that the terminal topology manager detected that for the configured timeouts some device specific operations did not complete.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
  
 
 ## TTM\_WATCHDOG\_TIMEOUT Parameters

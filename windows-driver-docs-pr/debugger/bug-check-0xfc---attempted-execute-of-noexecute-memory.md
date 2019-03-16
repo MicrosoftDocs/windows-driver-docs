@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The ATTEMPTED\_EXECUTE\_OF\_NOEXECUTE\_MEMORY bug check has a value of 0x000000FC. This indicates that an attempt was made to execute non-executable memory.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## ATTEMPTED\_EXECUTE\_OF\_NOEXECUTE\_MEMORY Parameters
 
