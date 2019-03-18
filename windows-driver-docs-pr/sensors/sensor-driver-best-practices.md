@@ -15,7 +15,7 @@ This section describes best practices for sensor drivers.
 
 The Windows Hardware Certification Program enables hardware manufacturers to receive certification that their devices meet the required standards for working with Windows. The program provides the requirements for all sensors, and specific requirements for location sensors and ambient-light sensors. You should make your sensor driver comply with all the Windows Hardware Certification Program requirements.
 
-Generally, the recommendations in this WDK documentation match the program requirements. However, you must review the official Windows Hardware Certification Program documentation when you create sensor drivers that you intend to submit for certification. For more information about the Windows Hardware Certification Program, see the [Windows Hardware Developer Central](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj125187) website.
+Generally, the recommendations in this WDK documentation match the program requirements. However, you must review the official Windows Hardware Certification Program documentation when you create sensor drivers that you intend to submit for certification. For more information about the Windows Hardware Certification Program, see the [Windows Hardware Developer Central](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) website.
 
 ## Performance
 
