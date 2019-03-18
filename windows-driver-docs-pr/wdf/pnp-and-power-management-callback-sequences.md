@@ -16,6 +16,7 @@ The following topics show the sequence in which the framework calls a KMDF drive
 -   [Power-Down and Removal Sequence for a Function or Filter Driver](power-down-and-removal-sequence-for-a-function-or-filter-driver.md)
 -   [Power-Down and Removal Sequence for a Bus Driver](power-down-and-removal-sequence-for-a-bus-driver.md)
 -   [Surprise-Removal Sequence](surprise-removal-sequence.md)
+-   [WDM IRPs and corresponding WDF event callbacks](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdm-irps-and-kmdf-event-callback-functions)
 
 For information about UMDF callback sequences, see [PnP and Power Management Scenarios in UMDF](pnp-and-power-management-scenarios-in-umdf.md).
 
