@@ -234,7 +234,7 @@ Miscellaneous Functions
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557273" data-raw-source="[&lt;strong&gt;DrvSynchronizeSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557273)"><strong>DrvSynchronizeSurface</strong></a></p></td>
-<td align="left"><p>Allows drawing operations performed by a device&#39;s coprocessor to be coordinated with GDI.</p></td>
+<td align="left"><p>Allows drawing operations performed by a device's coprocessor to be coordinated with GDI.</p></td>
 </tr>
 </tbody>
 </table>

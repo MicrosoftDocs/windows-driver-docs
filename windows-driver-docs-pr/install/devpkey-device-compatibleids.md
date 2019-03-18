@@ -36,7 +36,7 @@ The DEVPKEY_DEVICE_CompatibleIds device property represents the list of compatib
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Internal data format</strong></p></td>
-<td align="left">&quot;<em>compatible-id1</em>\0<em>compatible-id</em>2\0...<em>compatible-idn</em>\0\0&quot;</td>
+<td align="left">"<em>compatible-id1</em>\0<em>compatible-id</em>2\0...<em>compatible-idn</em>\0\0"</td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property access</strong></p></td>

@@ -135,7 +135,7 @@ Other Functions
 </tr>
 <tr class="even">
 <td><p><strong>ResetPrinter</strong></p></td>
-<td><p>Modifies a print queue&#39;s data type or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552837)"><strong>DEVMODEW</strong></a> structure.</p></td>
+<td><p>Modifies a print queue's data type or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552837)"><strong>DEVMODEW</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SetPrinter</strong> (Required)</p></td>
@@ -166,7 +166,7 @@ Other Functions
 <tbody>
 <tr class="odd">
 <td><p><strong>AddPrinterDriver</strong></p></td>
-<td><p>Adds a specified printer&#39;s driver files to a specified server.</p></td>
+<td><p>Adds a specified printer's driver files to a specified server.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>AddPrinterDriverEx</strong></p></td>
@@ -174,7 +174,7 @@ Other Functions
 </tr>
 <tr class="odd">
 <td><p><strong>DeletePrinterDriver</strong></p></td>
-<td><p>Deletes access to a specified printer&#39;s driver files, on a specified server.</p></td>
+<td><p>Deletes access to a specified printer's driver files, on a specified server.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DeletePrinterDriverEx</strong></p></td>
@@ -194,7 +194,7 @@ Other Functions
 </tr>
 <tr class="even">
 <td><p><strong>GetPrinterDriverDirectory</strong></p></td>
-<td><p>Returns the name of the server&#39;s printer driver directory.</p></td>
+<td><p>Returns the name of the server's printer driver directory.</p></td>
 </tr>
 </tbody>
 </table>
@@ -261,7 +261,7 @@ Other Functions
 <td><p></p>
 <strong>WritePrinter</strong>
 (Required)</td>
-<td><p>Receives a portion of the print job&#39;s data stream.</p></td>
+<td><p>Receives a portion of the print job's data stream.</p></td>
 </tr>
 </tbody>
 </table>
@@ -421,7 +421,7 @@ Returns the directory path in which print processor files must be stored.
 <tbody>
 <tr class="odd">
 <td><p><strong>AddPort</strong></p></td>
-<td><p>Adds a printer port to the list of those available, typically by calling the specified port monitor&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff545026" data-raw-source="[&lt;strong&gt;AddPortUI&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545026)"><strong>AddPortUI</strong></a> function.</p></td>
+<td><p>Adds a printer port to the list of those available, typically by calling the specified port monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff545026" data-raw-source="[&lt;strong&gt;AddPortUI&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545026)"><strong>AddPortUI</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>AddPortEx</strong></p></td>
@@ -431,13 +431,13 @@ Returns the directory path in which print processor files must be stored.
 <td><p></p>
 <strong>ConfigurePort</strong>
 (Required)</td>
-<td><p>Configures a printer port, typically by calling the specified port monitor&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff546290" data-raw-source="[&lt;strong&gt;ConfigurePortUI&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546290)"><strong>ConfigurePortUI</strong></a> function.</p></td>
+<td><p>Configures a printer port, typically by calling the specified port monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546290" data-raw-source="[&lt;strong&gt;ConfigurePortUI&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546290)"><strong>ConfigurePortUI</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p></p>
 <strong>DeletePort</strong>
 (Required)</td>
-<td><p>Deletes a printer port from the list of those available, typically by calling the specified port monitor&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff547432" data-raw-source="[&lt;strong&gt;DeletePortUI&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547432)"><strong>DeletePortUI</strong></a> function.</p></td>
+<td><p>Deletes a printer port from the list of those available, typically by calling the specified port monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff547432" data-raw-source="[&lt;strong&gt;DeletePortUI&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547432)"><strong>DeletePortUI</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td><p></p>
@@ -470,7 +470,7 @@ Returns the directory path in which print processor files must be stored.
 <tbody>
 <tr class="odd">
 <td><p><strong>DeletePrinterData</strong></p></td>
-<td><p>Deletes the value currently assigned to a specified value name, under the specified printer&#39;s <strong>PrinterDriverData</strong> key.</p></td>
+<td><p>Deletes the value currently assigned to a specified value name, under the specified printer's <strong>PrinterDriverData</strong> key.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DeletePrinterDataEx</strong></p></td>
@@ -478,11 +478,11 @@ Returns the directory path in which print processor files must be stored.
 </tr>
 <tr class="odd">
 <td><p><strong>DeletePrinterKey</strong></p></td>
-<td><p>Deletes a specified key and its subkeys, if they are currently stored in the registry under the specified printer&#39;s <strong>PrinterDriverData</strong> key.</p></td>
+<td><p>Deletes a specified key and its subkeys, if they are currently stored in the registry under the specified printer's <strong>PrinterDriverData</strong> key.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>EnumPrinterData</strong></p></td>
-<td><p>Returns each of the value names and currently assigned values that are stored in the registry under the specified printer&#39;s <strong>PrinterDriverData</strong> key.</p></td>
+<td><p>Returns each of the value names and currently assigned values that are stored in the registry under the specified printer's <strong>PrinterDriverData</strong> key.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>EnumPrinterDataEx</strong></p></td>
@@ -494,7 +494,7 @@ Returns the directory path in which print processor files must be stored.
 </tr>
 <tr class="odd">
 <td><p><strong>GetPrinterData</strong></p></td>
-<td><p>Returns the value currently assigned to a specified value name, which is stored in the registry under the specified printer&#39;s <strong>PrinterDriverData</strong> key.</p></td>
+<td><p>Returns the value currently assigned to a specified value name, which is stored in the registry under the specified printer's <strong>PrinterDriverData</strong> key.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>GetPrinterDataEx</strong></p></td>
@@ -502,7 +502,7 @@ Returns the directory path in which print processor files must be stored.
 </tr>
 <tr class="odd">
 <td><p><strong>SetPrinterData</strong></p></td>
-<td><p>Stores a specified value name and value in the registry, under the specified printer&#39;s <strong>PrinterDriverData</strong> key.</p></td>
+<td><p>Stores a specified value name and value in the registry, under the specified printer's <strong>PrinterDriverData</strong> key.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SetPrinterDataEx</strong></p></td>

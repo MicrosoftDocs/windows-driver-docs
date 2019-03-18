@@ -35,10 +35,10 @@ The following steps are required for all Windows XP and later drivers that use W
 2.  Set *pPaletteEntry*\[0\] as follows prior to a call to **HT\_Get8BPPMaskPalette**:
 
     ```cpp
-    pPaletteEntry[0].peRed   = &#39;R&#39;;
-    pPaletteEntry[0].peGreen = &#39;G&#39;;
-    pPaletteEntry[0].peBlue  = &#39;B&#39;;
-    pPaletteEntry[0].peFlags = &#39;0&#39;;
+    pPaletteEntry[0].peRed   = 'R';
+    pPaletteEntry[0].peGreen = 'G';
+    pPaletteEntry[0].peBlue  = 'B';
+    pPaletteEntry[0].peFlags = '0';
     ```
 
     To do this, a caller should use the **HT\_SET\_BITMASKPAL2RGB** macro (defined in *winddi.h*). Here is an example showing the use of this macro:
@@ -78,12 +78,12 @@ Value</th>
 <div>
  
 </div>
-(pPaletteEntry[0] != &#39;RGB0&#39;)</th>
+(pPaletteEntry[0] != 'RGB0')</th>
 <th align="left">CMY_INVERTED Mode Indexes
 <div>
  
 </div>
-(pPaletteEntry[0] == &#39;RGB0&#39;)</th>
+(pPaletteEntry[0] == 'RGB0')</th>
 </tr>
 </thead>
 <tbody>

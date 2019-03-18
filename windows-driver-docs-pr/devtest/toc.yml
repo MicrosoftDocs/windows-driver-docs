@@ -2386,6 +2386,9 @@
         href: running-infverif-from-the-command-line.md
       - name: "INF Validation Errors and Warnings"
         href: inf-validation-errors-and-warnings.md
+        items: 
+        - name: "InfVerif Error 1330" 
+          href: inf-verif-error-1330.md
     - name: "Reg2inf"
       href: reg2inf.md
   - name: "Tools for Changing Boot Options for Driver Testing and Debugging"

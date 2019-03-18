@@ -306,7 +306,7 @@ There are several possible property types (struct fields).
                description="Structure definition for P2P Device Information Parameters.">
   <uint8 count="6"
          name="DeviceAddress"
-         description="Peer&#39;s device address." />
+         description="Peer's device address." />
   <uint16 name="ConfigurationMethods"
           description="Configuration Methods supported by this device." />
   <groupRef name="DeviceType"

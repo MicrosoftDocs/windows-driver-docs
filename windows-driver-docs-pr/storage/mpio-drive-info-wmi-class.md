@@ -25,7 +25,7 @@ class MPIO_DRIVE_INFO
     [WmiDataId(2), MaxLen(63)] string Name;
 
     //
-    // The real device&#39;s serial number.
+    // The real device's serial number.
     //
     [WmiDataId(3), MaxLen(63)] string SerialNumber;
 

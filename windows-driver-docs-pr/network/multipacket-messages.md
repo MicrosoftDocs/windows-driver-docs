@@ -112,7 +112,7 @@ The following table is an example of a multipacket message that is made up of tw
 <td align="left"><p>70</p></td>
 <td align="left"><p>2</p></td>
 <td align="left"><p>Padding</p></td>
-<td align="left"><p>Doesn&#39;t matter - unused</p></td>
+<td align="left"><p>Doesn't matter - unused</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>72</p></td>

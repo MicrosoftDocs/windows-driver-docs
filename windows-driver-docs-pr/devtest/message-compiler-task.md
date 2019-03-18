@@ -151,7 +151,7 @@ In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s swi
 </tr>
 <tr class="even">
 <td align="left"><strong>GenerateMOFFile</strong>
-<p>Generates down-level support for all functions and macros that are generated. The MOF file is generated from the manifest. The MOF file is placed in the location specified by the &quot;-h&quot; switch.</p></td>
+<p>Generates down-level support for all functions and macros that are generated. The MOF file is generated from the manifest. The MOF file is placed in the location specified by the "-h" switch.</p></td>
 <td align="left">%(MessageCompile.GenerateMOFFile)</td>
 <td align="left"><strong>-mof</strong></td>
 </tr>
@@ -181,7 +181,7 @@ In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s swi
 </tr>
 <tr class="odd">
 <td align="left"><strong>PrefixMacroName</strong>
-<p>Defines the macro name prefix that is applied to each generated logging macro. The default is &quot;EventWrite&quot;.</p></td>
+<p>Defines the macro name prefix that is applied to each generated logging macro. The default is "EventWrite".</p></td>
 <td align="left">%(MessageCompile PrefixMacroName)</td>
 <td align="left"><strong>-p</strong><em>&lt;prefix&gt;</em></td>
 </tr>

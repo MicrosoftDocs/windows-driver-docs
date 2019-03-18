@@ -101,7 +101,7 @@ The following table shows the values that file system filter drivers should spec
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Signature</strong></p></td>
-<td align="left"><p>&quot;$WINDOWS NT$&quot;</p></td>
+<td align="left"><p>"$WINDOWS NT$"</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Provider</strong></p></td>
@@ -316,11 +316,11 @@ The **ErrorControl** entry specifies the action to be taken if the service fails
 </tr>
 <tr class="odd">
 <td align="left"><p>0x00000002</p></td>
-<td align="left"><p>SERVICE_ERROR_SEVERE (Switch to the registry&#39;s LastKnownGood control set and continue system startup.)</p></td>
+<td align="left"><p>SERVICE_ERROR_SEVERE (Switch to the registry's LastKnownGood control set and continue system startup.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x00000003</p></td>
-<td align="left"><p>SERVICE_ERROR_CRITICAL (If system startup is not using the registry&#39;s LastKnownGood control set, switch to LastKnownGood and try again. If startup still fails, run a bug-check routine. Only the drivers that are needed for the system to startup should specify this value in their INF files.)</p></td>
+<td align="left"><p>SERVICE_ERROR_CRITICAL (If system startup is not using the registry's LastKnownGood control set, switch to LastKnownGood and try again. If startup still fails, run a bug-check routine. Only the drivers that are needed for the system to startup should specify this value in their INF files.)</p></td>
 </tr>
 </tbody>
 </table>

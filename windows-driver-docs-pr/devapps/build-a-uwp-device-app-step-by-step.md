@@ -38,7 +38,7 @@ A UWP device app is a special kind of UWP app that device manufacturers create t
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="step-3--add-an-experience-id-to-the-app.md" data-raw-source="[Step 3: Add an experience ID to the app](step-3--add-an-experience-id-to-the-app.md)">Step 3: Add an experience ID to the app</a></p></td>
-<td align="left"><p>This topic describes how to add the experience ID to your UWP device app. The <em>experience ID</em> is a GUID that uniquely identifies a device metadata package; it&#39;s required if your app is configured for automatic installation, as is the case with <a href="uwp-device-apps-for-printers.md" data-raw-source="[UWP device apps for printers](uwp-device-apps-for-printers.md)">UWP device apps for printers</a> and <a href="uwp-device-apps-for-webcams.md" data-raw-source="[cameras](uwp-device-apps-for-webcams.md)">cameras</a>.</p></td>
+<td align="left"><p>This topic describes how to add the experience ID to your UWP device app. The <em>experience ID</em> is a GUID that uniquely identifies a device metadata package; it's required if your app is configured for automatic installation, as is the case with <a href="uwp-device-apps-for-printers.md" data-raw-source="[UWP device apps for printers](uwp-device-apps-for-printers.md)">UWP device apps for printers</a> and <a href="uwp-device-apps-for-webcams.md" data-raw-source="[cameras](uwp-device-apps-for-webcams.md)">cameras</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="step-4--test-device-metadata.md" data-raw-source="[Step 4: Test device metadata](step-4--test-device-metadata.md)">Step 4: Test device metadata</a></p></td>

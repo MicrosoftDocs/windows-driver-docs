@@ -489,7 +489,7 @@ Use this table to determine the best way to send control requests to the USB dri
 <p>URB_FUNCTION_SELECT_INTERFACE</p></td>
 </tr>
 <tr class="odd">
-<td>SYNC_FRAME: Set and get and endpoint&#39;s synchronization frame number. See section 9.4.10 in the USB specification.</td>
+<td>SYNC_FRAME: Set and get and endpoint's synchronization frame number. See section 9.4.10 in the USB specification.</td>
 <td>This request is handled by the USB driver stack; the client driver cannot perform this operation.</td>
 <td>This request is handled by the USB driver stack; the client driver cannot perform this operation.</td>
 <td>This request is handled by the USB driver stack; the client driver cannot perform this operation.</td>

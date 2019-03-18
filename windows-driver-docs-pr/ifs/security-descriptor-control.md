@@ -43,7 +43,7 @@ The control value can include a combination of the following **SECURITY\_DESCRIP
 </tr>
 <tr class="odd">
 <td align="left"><p>SE_DACL_DEFAULTED</p></td>
-<td align="left"><p>Indicates a security descriptor with a default DACL. For example, if an object&#39;s creator does not specify a DACL, the object receives the default DACL from the creator&#39;s access token. This flag can affect how the system treats the DACL, with respect to ACE inheritance. The system ignores this flag if the SE_DACL_PRESENT flag is not set.</p>
+<td align="left"><p>Indicates a security descriptor with a default DACL. For example, if an object's creator does not specify a DACL, the object receives the default DACL from the creator's access token. This flag can affect how the system treats the DACL, with respect to ACE inheritance. The system ignores this flag if the SE_DACL_PRESENT flag is not set.</p>
 <p>This flag is used to determine how the final DACL on the object is to be computed and is not stored physically in the security descriptor control of the securable object.</p>
 <p>To set this flag, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562781" data-raw-source="[&lt;strong&gt;RtlSetDaclSecurityDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562781)"><strong>RtlSetDaclSecurityDescriptor</strong></a>.</p></td>
 </tr>
@@ -63,11 +63,11 @@ The control value can include a combination of the following **SECURITY\_DESCRIP
 </tr>
 <tr class="odd">
 <td align="left"><p>SE_GROUP_DEFAULTED</p></td>
-<td align="left"><p>A default mechanism, rather than the original provider of the security descriptor, provided the security descriptor&#39;s group SID.</p></td>
+<td align="left"><p>A default mechanism, rather than the original provider of the security descriptor, provided the security descriptor's group SID.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SE_OWNER_DEFAULTED</p></td>
-<td align="left"><p>A default mechanism, rather than the original provider of the security descriptor, provided the security descriptor&#39;s owner security identifier (SID). To set this flag, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553220" data-raw-source="[&lt;strong&gt;RtlSetOwnerSecurityDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553220)"><strong>RtlSetOwnerSecurityDescriptor</strong></a>.</p></td>
+<td align="left"><p>A default mechanism, rather than the original provider of the security descriptor, provided the security descriptor's owner security identifier (SID). To set this flag, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553220" data-raw-source="[&lt;strong&gt;RtlSetOwnerSecurityDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553220)"><strong>RtlSetOwnerSecurityDescriptor</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SE_RM_CONTROL_VALID</p></td>
@@ -96,7 +96,7 @@ The control value can include a combination of the following **SECURITY\_DESCRIP
 </tr>
 <tr class="odd">
 <td align="left"><p>SE_SELF_RELATIVE</p></td>
-<td align="left"><p>Indicates a security descriptor in self-relative format with all the security information in a contiguous block of memory. If this flag is not set, the security descriptor is in absolute format. For more information, see &quot;Absolute and Self-Relative Security Descriptors&quot; in the Windows SDK documentation.</p></td>
+<td align="left"><p>Indicates a security descriptor in self-relative format with all the security information in a contiguous block of memory. If this flag is not set, the security descriptor is in absolute format. For more information, see "Absolute and Self-Relative Security Descriptors" in the Windows SDK documentation.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SE_SERVER_SECURITY</p></td>

@@ -94,7 +94,7 @@ The routine listed in the "Routine Called" column is the most common routine tha
 <tr class="even">
 <td align="left"><p><strong>IoFreeIrp</strong></p></td>
 <td align="left"><p>ASSERT(IsListEmpty(&amp;(Irp)-&gt;ThreadListEntry))</p></td>
-<td align="left"><p>The IRP being freed is still on a thread&#39;s IRP list, and therefore still in use.</p></td>
+<td align="left"><p>The IRP being freed is still on a thread's IRP list, and therefore still in use.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>IoFreeIrp</strong></p></td>
@@ -109,12 +109,12 @@ The routine listed in the "Routine Called" column is the most common routine tha
 <tr class="odd">
 <td align="left"><p><strong>IoReuseIrp</strong></p></td>
 <td align="left"><p>ASSERT(IsListEmpty(&amp;Irp-&gt;ThreadListEntry))</p></td>
-<td align="left"><p>The IRP being reused is still on a thread&#39;s IRP list, and therefore still in use.</p></td>
+<td align="left"><p>The IRP being reused is still on a thread's IRP list, and therefore still in use.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549707" data-raw-source="[&lt;strong&gt;IoSetHardErrorOrVerifyDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549707)"><strong>IoSetHardErrorOrVerifyDevice</strong></a></p></td>
 <td align="left"><p>ASSERT( Irp-&gt;Tail.Overlay.Thread != <strong>NULL</strong> )</p></td>
-<td align="left"><p>The IRP is not on any thread&#39;s IRP list.</p></td>
+<td align="left"><p>The IRP is not on any thread's IRP list.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>IopLoadDriver</strong></p></td>

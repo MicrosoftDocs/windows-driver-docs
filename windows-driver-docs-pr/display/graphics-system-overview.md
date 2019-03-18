@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_graphics_system_overview_gg"></span><span id="DDK_GRAPHICS_SYSTEM_OVERVIEW_GG"></span>
 
 
-Microsoft Windows NTâˆ’based operating systems provide a robust graphics architecture in which third-party graphics hardware companies can easily integrate their video displays and printing devices. These sections provide design guidelines for writing effective graphics drivers:
+Microsoft Windows NT(TM) based operating systems provide a robust graphics architecture in which third-party graphics hardware companies can easily integrate their video displays and printing devices. These sections provide design guidelines for writing effective graphics drivers:
 
 -   [**Graphics DDI**](using-the-graphics-ddi.md)
 

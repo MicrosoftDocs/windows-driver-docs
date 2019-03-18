@@ -78,7 +78,7 @@ A peakmeter node should also support the properties in the following table.
 </tr>
 <tr class="even">
 <td align="left"><p><a href="ksproperty-audio-cpu-resources.md" data-raw-source="[&lt;strong&gt;KSPROPERTY_AUDIO_CPU_RESOURCES&lt;/strong&gt;](ksproperty-audio-cpu-resources.md)"><strong>KSPROPERTY_AUDIO_CPU_RESOURCES</strong></a></p></td>
-<td align="left"><p>Indicates whether the specified node&#39;s functionality makes use of the host CPU.</p></td>
+<td align="left"><p>Indicates whether the specified node's functionality makes use of the host CPU.</p></td>
 </tr>
 </tbody>
 </table>

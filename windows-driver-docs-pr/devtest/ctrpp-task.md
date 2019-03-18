@@ -112,7 +112,7 @@ In the example above, MSBuild invokes ctrpp.exe on the file a.manifest, with the
 <td align="left">GenerateNotificationCallback</td>
 <td align="left">%(Ctrpp.GenerateNotificationCallback)</td>
 <td align="left"><strong>-NotificationCallback</strong></td>
-<td align="left">Optional Boolean parameter. Generates customized notification callback template. Similar to the &quot;callback&quot; attribute in the &lt;provider&gt; element.</td>
+<td align="left">Optional Boolean parameter. Generates customized notification callback template. Similar to the "callback" attribute in the &lt;provider&gt; element.</td>
 </tr>
 <tr class="even">
 <td align="left">GenerateResourceSourceFile</td>
