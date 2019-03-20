@@ -214,7 +214,7 @@ function finishPurchaseWithBalanceAddition() {
 
 See [purchase metadata properties](#Purchase-Metadata-Properties-details) for details about the puchaseMetadata object.
 
-## Canceling purchase flow
+## Cancelling purchase flow
 
 If a user cancels the purchase flow at the MO portal, then the portal must invoke the `MobilePlans.notifyCancelledPurchase` API to return control back to the Mobile Plans app.
 
@@ -254,12 +254,10 @@ The table below describes the details used in the purchase metadata
 
 ## Legacy control back notifications
 
-This notification is supported in Mobile Plans app, but the recommendation is not to use it for new implementations due there are 
+> [!Note]
+> This section is here as reference only. This notification is supported in Mobile Plans app, but the recommendation is not to implement them in new Mobile Plans implementations.
 
 The notification to the Mobile Plans app should be sent using JavaScript with the following syntax:
-
-> [!IMPORTANT]
-> Ensure that the notification payload is passed as a string.
 
 ```javascript
 DataMart.notifyPurchaseResult(notificationPayload);

@@ -22,7 +22,6 @@ The Mobile Plans app uses the [WebView](https://docs.microsoft.com/uwp/api/Windo
 
 When starting the WebView, the *eid*, *market*, *location*, *imei*, and *transactionId* parameters are passed to the MO web portal. If there is at least an eSIM profile matching the Mobile Operator, which Mobile Plans is reaching, the *iccids* are passed to the portal as well.
 
-
 The following example shows these launch parameters for eSIM, embedded in the call to `MyWebView.Navigate()`.
 
 ```c#
@@ -61,7 +60,6 @@ The user’s language preference is sent using the Accept-Language header, descr
 The mobile operator portal for physical and eSIM is the same, the difference is which parameters are passed to the portal, the parameters passed are : *market*, *location*, *imei*, *iccid*, and *transactionId*.
 
 ```c#
-
 MyWebView.Navigate(“https://moportal.com?iccid=8988247000100003319&imei=001102000311608&market=us&transactionId=waoigFfX00yGH3Vb.1&location=us”);
 ```
 
@@ -168,39 +166,6 @@ The following diagram shows the flow when the user has a eSIM profile active or 
 
 <img src="images/dynamo_implementation_mo_direct_flow_with_sim.png" alt="MO Direct flow where user has an eSIM or physical SIM" title="MO Direct flow where user has an eSIM or physical SIM" width="400" />
 
-
-
-
-
-
-## Handling eSIM download errors
-
-This section applies to version 1807 of the Mobile Plans app and later.
-
-The Mobile Plans app is responsible for downloading, installing, and activating the eSIM profile on the device after the MO portal flow finalizes, but these actions can fail. The Mobile Plans app has a built-in retry solution that attempts to repair situations where the eSIM profile download does not complete successfully. However, in some scenarios intervention from the mobile operator is necessary to ensure that the eSIM is installed on the device.
-
-The Mobile Plans app has a feature that passes error codes to the MO portal once the user re-enters the portal. The following example shows how the app passes relevant paremeters.
-
-```HTTP
-GET https://moportal.com/?market=US&location=US&transactionId=HADRdRhKI0S5bN4n.1&eid=89033023422130000000000199272786&imei=001102000224082 HTTP/1.1
-X-MP-LPAError-Codes: ServerFailure,ServerNotReachable
-X-MP-LPAError-TimeStamps: 5/18/2018 11:17:23 PM,5/18/2018 11:27:33 PM
-X-MP-LPAError-ICCIDs: 8988247000101997790
-```
-
-The Mobile Plans app adds three headers, described in the following table.
-
-| Header name              | Description                                                                                                                                                                                                                                                                                                                          | Example                                                               |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------- |
-| X-MP-LPAError-Codes      | This field provides the error code that has been captured in the LPA. If there are multiple errors, the error codes are passed in a comma-separated list. <p>For a list of possible error codes, see the [ESimOperationStatus enum](https://docs.microsoft.com/uwp/api/windows.networking.networkoperators.esimoperationstatus).</p> | X-MP-LPAError-Codes: ServerFailure,ServerNotReachable                 |
-| X-MP-LPAError-TimeStamps | This field provides the timestamp when the error occurred. The format of the timestamp is *Date Time UTC offset*. If there are multiple errors, the timestamps are passed as a comma-separated list.                                                                                                                                 | X-MP-LPAError-TimeStamps: 5/18/2018 11:17:23 PM,5/18/2018 11:27:33 PM |
-| X-MP-LPAError-ICCIDs     | This field provides the ICCID of the eSIM profile that the user attempted to download and install. This ICCID was passed back to the Mobile Plans app when control handoff occurred. Only one ICCID is passed.                                                                                                                       | X-MP-LPAError-ICCIDs: 8988247000101997790                             |
-
-Mobile operators might choose not to support handling errors passed by the Mobile Plans app, but we recommend doing so because it enhances the user experience.
-
-The following image shows an example of the error message that is displayed to the user:
-
-<img src="images/mobile_plans_implementation_error_message.png" alt="Example of Mobile Plans app eSIM download error" title="Example of Mobile Plans app eSIM download error" width="600" />
 
 ## COSA requirement for postpaid (PayG)
 
