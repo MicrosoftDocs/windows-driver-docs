@@ -51,13 +51,13 @@ The following image shows an example for the *standard gateway page*  in the Mob
 <img src="images/mobile_plans_configuration_mo_page.png" alt="Mobile Plans mobile operator page - asset usage example" title="Mobile Plans mobile operator page - asset usage example" width="600" />
 
 
-### Enhanced Gateway page
+### Enhanced gateway page
 This is an optional feature supported in Mobile Plans app version **5.1902.331.0** or above.
 The standard landing page could be enhanced to provided a mobile operator branding look and feel to highlight the mobile operator offering.
 
-#### Promotional gateway content
+#### Enhanced gateway content
 
-Promotional gateway content is defined using a JSON file with the following elements:
+Enhanced gateway content is defined using a JSON file with the following elements:
 
 ```JSON
 { // Root object
@@ -98,6 +98,6 @@ The following table describes each JSON object in the previous example.
 |   | hyperlinkColor | The hyperlinks in the gateway page are going to be using this color . This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, default hyperlink color will be used. | 0xBB8CF9FF |
 |   | images | Images to use for the template. Different sizes are supported. If multiple sizes are included, the Mobile Plans app uses the optimum size for the screen resolution. Maximum image size is 1200 x 600 pixels, file format *png*.| ![Mobile plans Surface landing page example, 780x480](images/mobile_plans_surface_landing_780x480.png) |
 
-#### Example promotional gateway landing page
+#### Example enhanced gateway landing page
 
-![Example promotional gateway landing page in the Mobile Plans app](images/mobile_plans_sample_landing_page.png)
+![Example enhanced gateway landing page in the Mobile Plans app](images/mobile_plans_sample_landing_page.png)
