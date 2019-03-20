@@ -72,9 +72,12 @@ Windows uses the Mobile Plans app as a client to consume the overall Mobile Plan
 To get started with the postpaid Mobile Plans experience, follow these steps:
 
 1. [Mobile operator use cases](mobile-plans-userCases.md)
+   1. Mobile Operator Web Portal
+   2. Control back notifications
+   3. eSIM download error handling
+   4. Define your device experience
 2. [Configuration](mobile-plans-configuration.md)
-3. [Integration](mobile-plans-integration.md)
-4. [Launch](mobile-plans-launch.md)
+3. [Launch](mobile-plans-launch.md)
 
 See these topics for additional information about Mobile Plans:
 

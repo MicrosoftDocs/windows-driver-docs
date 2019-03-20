@@ -25,15 +25,15 @@ Please follow these steps:
    2. [Asynchronous Connectivity](mobile-plans-callbacks.md#asynchronous-connectivity), implement this callback if the eSIM profile is immediatelly available in the SMDP+ server but the device will need to wait some time before attach to the cellular network.
    3. **Asynchronous Profile Donwload**, implement this callback if the eSIM profile will be available in your SMDP+ server after a period of time and the device wiil be able to attahc to the cellular network immediatelly.
 3. [Handling eSIM download errors](mobile-plans-eSIM-error-handling.md)
-4. Define your user experience once the device is active.
+4. Define the [basic network flyout experience](mobile-plans-device-experience.md#basic-windows-experiences).
 
 ## Activate a warm SIM in a Windows device
 
 This section describes what a mobile operator should implement to activate a warm SIM profile in a Windows device.
 Please follow these steps:
 
-1. Support the Walled Garden
-2. Implement the Get Balance API, this will ensure that you are able to control the behavior of network flyout depending in the status of the subscription
+1. Implement the Walled Garden
+2. Implement the Balance API, network flyout depending in the status of the subscription
 3. Implement the [Mobile Operator web portal](mobile-plans-web-portal.md#web-service-api-used-for-physical-sim)
 4. Implement the [adding balance](mobile-plans-callbacks.md#adding-balance) control back to Mobile Plans.
 5. Define your user experience once the device is active. This needs to be consistent with the eSIM experience (bullet 4)
@@ -43,7 +43,7 @@ Please follow these steps:
 This section describes which work is needed to add balance to your current subscription, this is useful if you are selling prepaid plans or if you sell data packages once a postpaid subscription runs out of Internet data.
 
 1. Implement the Walled Garden
-2. Implement the Get Balance API, this will ensure that you are able to control the behavior of network flyout depending in the status of the subscription
+2. Implement the Balance API, this will ensure that you are able to control the behavior of network flyout depending in the status of the subscription
 3. Implement the Mobile Operator web portal
 4. Implement the [adding balance](mobile-plans-callbacks.md#adding-balance) control back to Mobile Plans.
 

@@ -336,6 +336,8 @@
         href: mobile-plans-callbacks.md
       - name: "eSIM download error handling"
         href: mobile-plans-eSIM-error-handling.md
+      - name: "Device experience"
+        href: mobile-plans-device-experience.md
     - name: "Configuration"
       href: mobile-plans-configuration.md
     - name: "Launch"
