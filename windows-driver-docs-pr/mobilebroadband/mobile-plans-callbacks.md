@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans Callbak Notifications
+title: Mobile Plans Control Back Notifications
 description: This topic describes the Callback notifications support by Mobile Plans app
 ms.assetid: A3CE0B7D-80C5-4A98-8615-250A3C760B85
 keywords:

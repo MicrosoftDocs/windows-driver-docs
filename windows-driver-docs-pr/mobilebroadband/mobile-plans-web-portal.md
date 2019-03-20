@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans - Mobile Operator Web Portal
+title: Mobile Plans Web Portal
 description: This topic describes the implementation step for the Mobile Plans program.
 ms.assetid: 283E45EF-D421-429B-A9AF-BED64BB670B0
 keywords:
@@ -8,7 +8,7 @@ ms.date: 03/15/2018
 ms.localizationpriority: medium
 ---
 
-# Mobile Plans - Mobile Operator Web Portal
+# Mobile Plans Mobile Operator Web Portal
 
 ## Overview
 

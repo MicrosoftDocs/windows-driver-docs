@@ -329,10 +329,15 @@
     items:
     - name: "Mobile operator use case"
       href: mobile-plans-userCases.md
+      items:
+      - name: "Mobile operator web portal"
+        href: mobile-plans-web-portal.md
+      - name: "Control back notifications"
+        href: mobile-plans-callbacks.md
+      - name: "eSIM download error handling"
+        href: mobile-plans-eSIM-error-handling.md
     - name: "Configuration"
       href: mobile-plans-configuration.md
-    - name: "Integration"
-      href: mobile-plans-integration.md
     - name: "Launch"
       href: mobile-plans-launch.md
     - name: "Prepaid experience"

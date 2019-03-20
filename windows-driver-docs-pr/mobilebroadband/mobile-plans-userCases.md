@@ -44,7 +44,7 @@ This section describes which work is needed to add balance to your current subsc
 
 1. Implement the Walled Garden
 2. Implement the Get Balance API, this will ensure that you are able to control the behavior of network flyout depending in the status of the subscription
-3. Implement the Mobile Operator web portal 
+3. Implement the Mobile Operator web portal
 4. Implement the [adding balance](mobile-plans-callbacks.md#adding-balance) control back to Mobile Plans.
 
 ## Cancelling a transaction
