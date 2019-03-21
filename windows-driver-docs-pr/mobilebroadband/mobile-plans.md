@@ -58,7 +58,7 @@ The following table describes each component of the diagram.
 A typical functional flow for the preceding diagram is as follows:
 
 1. The Mobile Plans app is launched in the Windows 10 device and retrieves basic functionality information from the Mobile Plans Service.
-   * The Mobile Plans app reaches out to the Mobile Plans service to retrieve MO-specific information.
+   - The Mobile Plans app reaches out to the Mobile Plans service to retrieve MO-specific information.
 2. The Mobile Plans app launches the MO Web portal and passes relevant parameters to the MO portal.
 3. The mobile operator requests an eSIM profile from the SM-DP+ server. The eSIM activation code is returned to the Mobile Plans mobile operator web portal.
 4. Once control is returned to the Mobile Plans app on the Windows 10 device, the eSIM activation code is provided to the Windows device.

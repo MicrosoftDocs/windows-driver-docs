@@ -4,7 +4,7 @@ description: This topic describes the eSIM download error handling in Mobile Pla
 ms.assetid: ADBE885A-76E9-4C1E-A729-40ABE58B77E1
 keywords:
 - Windows Mobile Plans eSIM error handling, Mobile Plans implementation mobile operators
-ms.date: 03/19/2018
+ms.date: 03/19/2019
 ms.localizationpriority: medium
 ---
 # Mobile Plans eSIM download error handling

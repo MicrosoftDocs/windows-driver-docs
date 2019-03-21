@@ -4,7 +4,7 @@ description: This topic describes the basic user cases that Mobile Operators cou
 ms.assetid: 24050B13-4A1A-466F-974B-40B34EDB16DC
 keywords:
 - Windows Mobile Plans User cases, Mobile Plans implementation mobile operators
-ms.date: 03/15/2018
+ms.date: 03/15/2019
 ms.localizationpriority: medium
 ---
 
@@ -52,23 +52,3 @@ This section describes which work is needed to add balance to your current subsc
 This section describes which control back should be used to notify the Mobile Plans app, when a transactions is cancelled when the user is in the mobile operator web portal. This applies to all the above scenarios
 
 - Implement the [Cancelling purchase flow](mobile-plans-callbacks.md#cancelling-purchase-flow) control
-
-========
-
-**Below this should go to a different page**
-
-=====
-
-### Experience after instalation
-
-Unlimited data with out GetBalance Implementation
-
-Mobile operator has to decide which will be the user experience after a the esIM profile is installed in the device. The network flyout is the place where the user will interact after a profile is downloaded
-
-<<Add an image of netowork flyout>>
-
-
-
-
-
-if you are planning to show balance date information in the network flyout, please ensure that you implement Get Balance API (link to getbalance)

@@ -4,7 +4,7 @@ description: This topic describes the Windows device experience after Mobile Pla
 ms.assetid: E97AD441-86F7-439C-9800-7DD93AAC0545
 keywords:
 - Windows Mobile Plans device experience, Mobile Plans mobile operators
-ms.date: 03/15/2018
+ms.date: 03/15/2019
 ms.localizationpriority: medium
 ---
 

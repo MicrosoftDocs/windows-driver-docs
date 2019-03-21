@@ -4,7 +4,7 @@ description: This topic describes the Callback notifications support by Mobile P
 ms.assetid: A3CE0B7D-80C5-4A98-8615-250A3C760B85
 keywords:
 - Windows Mobile Plans Callback notifications, Mobile Plans implementation mobile operators
-ms.date: 03/15/2018
+ms.date: 03/15/2019
 ms.localizationpriority: medium
 ---
 
