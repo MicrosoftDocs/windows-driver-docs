@@ -226,15 +226,15 @@ You can also use the following additional operators in MASM expressions.
 <p>You can use this function for both modules that are already in the module list and to set <a href="unresolved-breakpoints---bu-breakpoints-.md" data-raw-source="[unresolved breakpoints](unresolved-breakpoints---bu-breakpoints-.md)">unresolved breakpoints</a> by using the <strong><a href="bp--bu--bm--set-breakpoint-.md" data-raw-source="[bu](bp--bu--bm--set-breakpoint-.md)">bu</a></strong> command.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>$scmp(&quot;</strong><em>String1</em><strong>&quot;, &quot;</strong><em>String2</em><strong>&quot;)</strong></p></td>
+<td align="left"><p><strong>$scmp("</strong><em>String1</em><strong>", "</strong><em>String2</em><strong>")</strong></p></td>
 <td align="left"><p>Evaluates to -1, 0, or 1, like the <strong>strcmp</strong> C function.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>$sicmp(&quot;</strong><em>String1</em><strong>&quot;, &quot;</strong><em>String2</em><strong>&quot;)</strong></p></td>
+<td align="left"><p><strong>$sicmp("</strong><em>String1</em><strong>", "</strong><em>String2</em><strong>")</strong></p></td>
 <td align="left"><p>Evaluates to -1, 0, or 1, like the <strong>stricmp</strong> Microsoft Win32 function .</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>$spat(&quot;</strong><em>String</em><strong>&quot;, &quot;</strong><em>Pattern</em><strong>&quot;)</strong></p></td>
+<td align="left"><p><strong>$spat("</strong><em>String</em><strong>", "</strong><em>Pattern</em><strong>")</strong></p></td>
 <td align="left"><p>Evaluates to <strong>TRUE</strong> or <strong>FALSE</strong> depending on whether <em>String</em> matches <em>Pattern</em>. The matching is case-insensitive. <em>Pattern</em> can contain a variety of wildcard characters and specifiers. For more information about the syntax, see <a href="string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](string-wildcard-syntax.md)">String Wildcard Syntax</a>.</p></td>
 </tr>
 <tr class="even">

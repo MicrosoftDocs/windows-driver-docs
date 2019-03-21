@@ -91,15 +91,15 @@ Specifies which operation to perform. **Request** can be one of the values in th
 </tr>
 <tr class="even">
 <td align="left"><p><a href="debug-request-set-local-implicit-command-line.md" data-raw-source="[&lt;strong&gt;DEBUG_REQUEST_SET_LOCAL_IMPLICIT_COMMAND_LINE&lt;/strong&gt;](debug-request-set-local-implicit-command-line.md)"><strong>DEBUG_REQUEST_SET_LOCAL_IMPLICIT_COMMAND_LINE</strong></a></p></td>
-<td align="left"><p>Set the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551059#debugger-engine" data-raw-source="[debugger engine](https://msdn.microsoft.com/library/windows/hardware/ff551059#debugger-engine)">debugger engine</a>&#39;s implicit command line.</p></td>
+<td align="left"><p>Set the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551059#debugger-engine" data-raw-source="[debugger engine](https://msdn.microsoft.com/library/windows/hardware/ff551059#debugger-engine)">debugger engine</a>'s implicit command line.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="debug-request-get-captured-event-code-offset.md" data-raw-source="[&lt;strong&gt;DEBUG_REQUEST_GET_CAPTURED_EVENT_CODE_OFFSET&lt;/strong&gt;](debug-request-get-captured-event-code-offset.md)"><strong>DEBUG_REQUEST_GET_CAPTURED_EVENT_CODE_OFFSET</strong></a></p></td>
-<td align="left"><p>Return the current event&#39;s instruction pointer.</p></td>
+<td align="left"><p>Return the current event's instruction pointer.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="debug-request-read-captured-event-code-stream.md" data-raw-source="[&lt;strong&gt;DEBUG_REQUEST_READ_CAPTURED_EVENT_CODE_STREAM&lt;/strong&gt;](debug-request-read-captured-event-code-stream.md)"><strong>DEBUG_REQUEST_READ_CAPTURED_EVENT_CODE_STREAM</strong></a></p></td>
-<td align="left"><p>Return up to 64 bytes of memory at the current event&#39;s instruction pointer.</p></td>
+<td align="left"><p>Return up to 64 bytes of memory at the current event's instruction pointer.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="debug-request-ext-typed-data-ansi.md" data-raw-source="[&lt;strong&gt;DEBUG_REQUEST_EXT_TYPED_DATA_ANSI&lt;/strong&gt;](debug-request-ext-typed-data-ansi.md)"><strong>DEBUG_REQUEST_EXT_TYPED_DATA_ANSI</strong></a></p></td>

@@ -38,7 +38,7 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>You don&#39;t need to download Driver Verifier (Verifier.exe) as it is included in every version of Windows after Windows 2000, except for Windows 10 S. There isn&#39;t a separate Driver Verifier download package, it is located in the %windir%\system32 directory. </p>
+<td align="left"><p>You don't need to download Driver Verifier (Verifier.exe) as it is included in every version of Windows after Windows 2000, except for Windows 10 S. There isn't a separate Driver Verifier download package, it is located in the %windir%\system32 directory. </p>
 <ul>
 <li>Open a <strong>Command Prompt</strong> window (<strong>Run as administrator</strong>).</li>
 <li>Type <strong>verifier</strong> to open the Driver Verifier Manager, or type <strong>verifier /?</strong> to view command line options. See <a href="verifier-command-line.md" data-raw-source="[&lt;strong&gt;Driver Verifier Command Syntax&lt;/strong&gt;](verifier-command-line.md)"><strong>Driver Verifier Command Syntax</strong></a> for more information.</li>
@@ -55,7 +55,7 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 <div>
 
 </div>
-<p>For information about changes in Driver Version for Windows 8.1 and previous versions of Windows, see <a href="driver-verifier--what-s-new.md" data-raw-source="[Driver Verifier: What&#39;s New](driver-verifier--what-s-new.md)">Driver Verifier: What&#39;s New</a>.</p></td>
+<p>For information about changes in Driver Version for Windows 8.1 and previous versions of Windows, see <a href="driver-verifier--what-s-new.md" data-raw-source="[Driver Verifier: What's New](driver-verifier--what-s-new.md)">Driver Verifier: What's New</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -103,7 +103,7 @@ You should only run Driver Verifier on test computers, or computers you are test
    <tbody>
    <tr class="odd">
    <td align="left"><strong>Automatically select unsigned drivers</strong></td>
-   <td align="left"><p>Useful option for testing on computers running versions of Windows that don&#39;t require signed drivers.</p></td>
+   <td align="left"><p>Useful option for testing on computers running versions of Windows that don't require signed drivers.</p></td>
    </tr>
    <tr class="even">
    <td align="left"><strong>Automatically select drivers built for older versions of Windows</strong></td>

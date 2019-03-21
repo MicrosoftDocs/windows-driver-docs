@@ -85,7 +85,7 @@ The following is a definition of the SoftwareInfo schema.
 
   <xs:simpleType name="DistinguishedNameType">
     <xs:restriction base="tns:NonEmptyStringType">
-      <xs:pattern value="(CN|L|O|OU|E|C|S|STREET|T|G|I|SN|DC|SERIALNUMBER|(OID\.(0|[1-9][0-9]*)(\.(0|[1-9][0-9]*))+))=(([^,+=&quot;&lt;&gt;#;])+|&quot;.*&quot;)(, ((CN|L|O|OU|E|C|S|STREET|T|G|I|SN|DC|SERIALNUMBER|(OID\.(0|[1-9][0-9]*)(\.(0|[1-9][0-9]*))+))=(([^,+=&quot;&lt;&gt;#;])+|&quot;.*&quot;)))*"/>
+      <xs:pattern value="(CN|L|O|OU|E|C|S|STREET|T|G|I|SN|DC|SERIALNUMBER|(OID\.(0|[1-9][0-9]*)(\.(0|[1-9][0-9]*))+))=(([^,+="&lt;&gt;#;])+|".*")(, ((CN|L|O|OU|E|C|S|STREET|T|G|I|SN|DC|SERIALNUMBER|(OID\.(0|[1-9][0-9]*)(\.(0|[1-9][0-9]*))+))=(([^,+="&lt;&gt;#;])+|".*")))*"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -181,7 +181,7 @@ The following is a definition of the SoftwareInfo schema.
 
   <xs:simpleType name="AllowedUnicodeCharSetType">
     <xs:restriction base="tns:UnicodeNoPrivateUseOrNonCharacterCodePointsType">
-      <xs:pattern value="[^&quot;&&lt;&gt;\u0000-\u0020\u007F\u0080-\u009F\u00A0\u00AD\u0340-\u0341\u034F\u06DD\u070F\u1680\u1806\u180B-\u180E\u2000-\u200F\u2028-\u202F\u205F\u2060-\u2063\u206A-\u206F\u2FF0-\u2FFB\u3000\uD800-\uDFFF\uFEFF\p{IsVariationSelectors}]+"/>
+      <xs:pattern value="[^"&&lt;&gt;\u0000-\u0020\u007F\u0080-\u009F\u00A0\u00AD\u0340-\u0341\u034F\u06DD\u070F\u1680\u1806\u180B-\u180E\u2000-\u200F\u2028-\u202F\u205F\u2060-\u2063\u206A-\u206F\u2FF0-\u2FFB\u3000\uD800-\uDFFF\uFEFF\p{IsVariationSelectors}]+"/>
     </xs:restriction>
   </xs:simpleType>
 

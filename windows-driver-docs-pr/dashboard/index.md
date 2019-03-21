@@ -1,6 +1,6 @@
 ---
-title: Windows Hardware Dev Center dashboard
-description: The Windows Hardware Dev Center Dashboard replaces the legacy (Sysdev) dashboard for most hardware tasks including hardware certification, collaborative driver development, and driver distribution through Windows Update.
+title: Partner Center for Windows Hardware
+description: The Partner Center replaces the legacy (Sysdev) dashboard for most hardware tasks including hardware certification, collaborative driver development, and driver distribution through Windows Update.
 layout: LandingPage
 ms.assetid: da6fe9f5-7495-4aec-b6c2-c53402cb8ea0
 ms.date: 05/17/2018
@@ -9,12 +9,12 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Windows Hardware Dev Center dashboard
+# Partner Center for Windows Hardware
 
-The Windows Hardware Dev Center Dashboard enables you to create and manage your system and driver submissions quickly and easily. It replaces the legacy (Sysdev) dashboard for hardware tasks including: hardware certification, collaborative driver development, and driver distribution through Windows Update. To get started, watch our introductory [video series](https://go.microsoft.com/fwlink/?LinkID=828003), and see [Get started with the hardware program](get-started-with-the-hardware-dashboard.md) for registration details.
+The Partner Center for Windows Hardware enables you to create and manage your system and driver submissions quickly and easily. It replaces the legacy (Sysdev) dashboard for hardware tasks including: hardware certification, collaborative driver development, and driver distribution through Windows Update. To get started, watch our introductory [video series](https://go.microsoft.com/fwlink/?LinkID=828003), and see [Get started with the hardware program](get-started-with-the-hardware-dashboard.md) for registration details.
 
 > [!NOTE]
-> The legacy (Sysdev) dashboard has been retired. Use the Windows Hardware Dev Center Dashboard for your hardware tasks.
+> The legacy (Sysdev) dashboard has been retired. Use the Partner Center Hardware dashboard for your hardware tasks.
 
 <ul class="cardsFTitle panelContent">
     <li><br/>        <div class="cardSize">

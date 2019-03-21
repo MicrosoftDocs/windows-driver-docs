@@ -34,7 +34,7 @@ This section documents macros that support WDF device objects.
 <div>
  
 </div>
-<p>The <a href="wdfdeviceresumeidlewithtag.md" data-raw-source="[&lt;strong&gt;WdfDeviceResumeIdleWithTag&lt;/strong&gt;](wdfdeviceresumeidlewithtag.md)"><strong>WdfDeviceResumeIdleWithTag</strong></a> macro decrements the power reference count for a specified framework device object and assigns the driver&#39;s current file name and line number to the reference. The macro also assigns a tag value to the reference.</p></td>
+<p>The <a href="wdfdeviceresumeidlewithtag.md" data-raw-source="[&lt;strong&gt;WdfDeviceResumeIdleWithTag&lt;/strong&gt;](wdfdeviceresumeidlewithtag.md)"><strong>WdfDeviceResumeIdleWithTag</strong></a> macro decrements the power reference count for a specified framework device object and assigns the driver's current file name and line number to the reference. The macro also assigns a tag value to the reference.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="wdfdevicestopidlewithtag.md" data-raw-source="[&lt;strong&gt;WdfDeviceStopIdleWithTag method&lt;/strong&gt;](wdfdevicestopidlewithtag.md)"><strong>WdfDeviceStopIdleWithTag method</strong></a></p></td>
@@ -44,7 +44,7 @@ This section documents macros that support WDF device objects.
 <div>
  
 </div>
-<p>The <a href="wdfdevicestopidlewithtag.md" data-raw-source="[&lt;strong&gt;WdfDeviceStopIdleWithTag&lt;/strong&gt;](wdfdevicestopidlewithtag.md)"><strong>WdfDeviceStopIdleWithTag</strong></a> macro increments the power reference count for a specified framework device object and assigns the driver&#39;s current file name and line number to the reference. The macro also assigns a tag value to the reference.</p></td>
+<p>The <a href="wdfdevicestopidlewithtag.md" data-raw-source="[&lt;strong&gt;WdfDeviceStopIdleWithTag&lt;/strong&gt;](wdfdevicestopidlewithtag.md)"><strong>WdfDeviceStopIdleWithTag</strong></a> macro increments the power reference count for a specified framework device object and assigns the driver's current file name and line number to the reference. The macro also assigns a tag value to the reference.</p></td>
 </tr>
 </tbody>
 </table>

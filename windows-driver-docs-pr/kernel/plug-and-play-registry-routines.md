@@ -38,7 +38,7 @@ The following code sample demonstrates using **IoOpenDeviceRegistryKey** and **Z
 PDEVICE_OBJECT pDeviceObject; // A pointer to the PDO for the device.
 HANDLE handle;
 UNICODE_STRING ValueName;
-ULONG Value = 109; // This is the value we&#39;re setting the key to.
+ULONG Value = 109; // This is the value we're setting the key to.
 NTSTATUS status;
 
 RtlInitUnicodeString(&ValueName, L"Value");

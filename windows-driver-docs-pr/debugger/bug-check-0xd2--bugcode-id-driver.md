@@ -67,7 +67,7 @@ The BUGCODE\_ID\_DRIVER bug check has a value of 0x000000D2. This indicates that
 <td align="left"><p>Address of the packet that is incorrectly included in the packet array</p></td>
 <td align="left"><p>Address of the packet array</p></td>
 <td align="left"><p>Number of packets in the array</p></td>
-<td align="left"><p><strong>Indicating packet not owned by it.</strong> The miniport&#39;s packet array is corrupt.</p></td>
+<td align="left"><p><strong>Indicating packet not owned by it.</strong> The miniport's packet array is corrupt.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Address of the MiniBlock</p></td>
@@ -78,7 +78,7 @@ The BUGCODE\_ID\_DRIVER bug check has a value of 0x000000D2. This indicates that
 </tr>
 <tr class="even">
 <td align="left"><p>Address of the MiniBlock</p></td>
-<td align="left"><p>The MiniBlock&#39;s reference count</p></td>
+<td align="left"><p>The MiniBlock's reference count</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p><strong>NdisMUnload: MiniBlock</strong> is getting unloaded but it is still on <strong>NdisMiniDriverList</strong>.</p></td>

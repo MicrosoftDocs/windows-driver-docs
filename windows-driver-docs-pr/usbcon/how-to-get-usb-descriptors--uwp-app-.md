@@ -271,7 +271,7 @@ private String GetCustomDescriptorsAsString(UsbDevice device)
 
     // Print first 2 bytes of all descriptors within the configuration descriptor    
     // because the first 2 bytes are always length and descriptor type
-    // the UsbDescriptor&#39;s DescriptorType and Length properties, but we will not use these properties
+    // the UsbDescriptor's DescriptorType and Length properties, but we will not use these properties
     // in order to demonstrate ReadDescriptorBuffer() and how to parse it.
 
     foreach (UsbDescriptor descriptor in allRawDescriptors)

@@ -36,7 +36,7 @@ The **eula** XML element is an empty XML element that includes two attributes th
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Type</strong></p></td>
-<td align="left"><p>The type of vendor-supplied EULA. The value of this attribute must be set to the string &quot;txt&quot;, which indicates a plain-text file.</p></td>
+<td align="left"><p>The type of vendor-supplied EULA. The value of this attribute must be set to the string "txt", which indicates a plain-text file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Path</strong></p></td>

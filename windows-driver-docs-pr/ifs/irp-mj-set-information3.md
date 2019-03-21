@@ -36,7 +36,7 @@ NTSTATUS FsdCheckDeleteFileAccess(POW_IRP_CONTEXT IrpContext,
 
     SeLockSubjectContext( &SubjectContext );
 
-    Granted = SeAccessCheck(targetSD,           // Target&#39;s SD.
+    Granted = SeAccessCheck(targetSD,           // Target's SD.
                             &SubjectContext,    // Captured security context.
                             TRUE,               // Tokens are locked.
                             DELETE,             // we only care about delete 

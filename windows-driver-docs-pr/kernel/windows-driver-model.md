@@ -40,7 +40,7 @@ This section describes the *Windows Driver Model* (WDM), and discusses types of 
 </tr>
 <tr class="odd">
 <td><p><a href="device-configurations-and-layered-drivers.md" data-raw-source="[Device Configurations and Layered Drivers](device-configurations-and-layered-drivers.md)">Device Configurations and Layered Drivers</a></p></td>
-<td><p>For the most common kinds of devices, the Windows Driver Kit (WDK) supplies a sample set of fully functional system drivers. Individual sample drivers can be used as models when developing new drivers for similar kinds of devices. However, the system&#39;s drivers had an additional design requirement: to make it easy to develop new device drivers. Consequently, many of the system&#39;s drivers have a layered architecture so that certain drivers can be reused to support new drivers for similar devices.</p></td>
+<td><p>For the most common kinds of devices, the Windows Driver Kit (WDK) supplies a sample set of fully functional system drivers. Individual sample drivers can be used as models when developing new drivers for similar kinds of devices. However, the system's drivers had an additional design requirement: to make it easy to develop new device drivers. Consequently, many of the system's drivers have a layered architecture so that certain drivers can be reused to support new drivers for similar devices.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="wdm-versions.md" data-raw-source="[WDM Versions](wdm-versions.md)">WDM Versions</a></p></td>

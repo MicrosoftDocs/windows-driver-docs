@@ -46,7 +46,7 @@ The following table lists and describes all of the methods defined by the **ISti
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543817" data-raw-source="[&lt;strong&gt;IStiUSD::GetCapabilities&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543817)"><strong>IStiUSD::GetCapabilities</strong></a></p></td>
-<td><p>Returns a still image device&#39;s capabilities.</p></td>
+<td><p>Returns a still image device's capabilities.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543820" data-raw-source="[&lt;strong&gt;IStiUSD::GetLastErrorInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543820)"><strong>IStiUSD::GetLastErrorInfo</strong></a></p></td>

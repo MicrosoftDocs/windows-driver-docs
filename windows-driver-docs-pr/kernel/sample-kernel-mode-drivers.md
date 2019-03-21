@@ -11,57 +11,70 @@ ms.localizationpriority: medium
 
 The WDK provides various sample kernel-mode drivers. After you have installed the WDK, the `src\general` subdirectory contains sample driver code that is applicable to all kernel-mode drivers. The samples are also maintained online. These samples include the following:
 
-[DCHU](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU)
+[**DCHU**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU)
+
 Applies the DCHU [design principles](../develop/getting-started-with-universal-drivers.md) (Declarative, Componentized, Hardware Support Apps [HSA], and Universal API compliance).  You can use it as a model for your own universal driver package.
 
-[PLX9x5x](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/PLX9x5x)
+[**PLX9x5x**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/PLX9x5x)
+
 This sample demonstrates how to write driver for a generic PCI device using Windows Driver Framework.
 
-[SimpleMediaSource](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/SimpleMediaSource)
+[**SimpleMediaSource**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/SimpleMediaSource)
+
 This sample demonstrates how to create a custom media source and driver package that can be installed as a Camera and produce frames.
 
-[SystemDma/wdm](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/SystemDma/wdm)
+[**SystemDma/wdm**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/SystemDma/wdm)
+
 This sample demonstrates the usage of V3 System DMA. It shows how a driver could use a system DMA controller supported by Windows to write data to a hardware location using DMA.
 
-[WinHEC 2017 Lab](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/WinHEC%202017%20Lab)
-[WinHEC 2017/Optimizing Windows Performance](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/WinHEC%202017/Optimizing%20Windows%20Performance)
+[**WinHEC 2017 Lab**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/WinHEC%202017%20Lab)
+
+[**WinHEC 2017/Optimizing Windows Performance**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/WinHEC%202017/Optimizing%20Windows%20Performance)
 
 [**cancel**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/cancel)  
+
 Demonstrates the use of [cancel-safe IRP queues](cancel-safe-irp-queues.md).
 
-[echo](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo)
+[**echo**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo)
 
 [**event**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/event)  
+
 Demonstrates techniques that kernel-mode drivers can use to notify applications of hardware events, if the application requests notification. One technique uses [event objects](event-objects.md) and the other relies on [queuing](queuing-and-dequeuing-irps.md) the notification request until an event occurs.
 
-[filehistory](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/filehistory)
+[**filehistory**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/filehistory)
+
 The FileHistory sample is a console application that starts the file history service, if it is stopped, and schedules regular backups. The application requires, as a command-line parameter, the path name of a storage device to use as the default backup target.
 
-[installwdf](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/installwdf)
-This sample contains example code that demonstrates how to install WDF packages on a system. This code can be used as-is to install the needed WDF components onto a user system.
+[**IOCTL sample**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/ioctl)
 
-[IOCTL sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/ioctl)
 Demonstrates how drivers should support I/O control codes.
 
-[obcallback](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/obcallback)
+[**obcallback**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/obcallback)
+
 The ObCallback sample driver demonstrates the use of registered callbacks for process protection. The driver registers control callbacks which are called at process creation.
 
-[pcidrv](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/pcidrv)
+[**pcidrv**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/pcidrv)
+
 This sample demonstrates how to write a KMDF driver for a PCI device. The sample works with the Intel 82557/82558 based PCI Ethernet Adapter (10/100) and Intel compatibles.
 
-[perfcounters/kcs](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/perfcounters/kcs)
+[**perfcounters/kcs**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/perfcounters/kcs)
+
 The Kcs sample driver demonstrates the use of the kernel-mode performance library.
 
-[registry/regfltr](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/registry/regfltr)
+[**registry/regfltr**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/registry/regfltr)
+
 The RegFltr sample shows how to write a registry filter driver.
 
 [**toaster**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster)  
+
 Provides sample code for a set of drivers that conform to the [Windows Driver Model](windows-driver-model.md) (WDM). This sample also includes sample installation software.
 
 [**tracedrv**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver)  
+
 Shows how to use [WPP software tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204).
 
-[UMDF Driver Skeleton Sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/umdfSkeleton)
+[**UMDF Driver Skeleton Sample**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/umdfSkeleton)
+
 This sample demonstrates how to use version 1 of the User-Mode Driver Framework to write a minimal driver.
 
 [**Firefly KMDF filter driver for a HID device**](https://github.com/Microsoft/Windows-driver-samples/tree/master/hid/firefly)

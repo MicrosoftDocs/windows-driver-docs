@@ -124,7 +124,7 @@ As an alternative to calling the [**WskReceive**](https://msdn.microsoft.com/lib
 The following code example shows how a WSK application can receive data by the WSK subsystem calling a connection-oriented socket's *WskReceiveEvent* event callback function.
 
 ```C++
-// A connection-oriented socket&#39;s WskReceiveEvent
+// A connection-oriented socket's WskReceiveEvent
 // event callback function
 NTSTATUS WSKAPI
   WskReceiveEvent(

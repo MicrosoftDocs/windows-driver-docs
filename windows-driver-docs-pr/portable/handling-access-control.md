@@ -107,7 +107,7 @@ CQueue::OnDeviceIoControl(
     else
     {
         hr = E_UNEXPECTED;
-        CHECK_HR(hr, "Received invalid/unsupported IOCTL code &#39;0x%lx&#39;",ControlCode);
+        CHECK_HR(hr, "Received invalid/unsupported IOCTL code '0x%lx'",ControlCode);
     }
 
     // Complete the request

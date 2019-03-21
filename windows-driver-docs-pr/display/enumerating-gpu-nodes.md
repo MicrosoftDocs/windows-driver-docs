@@ -75,8 +75,8 @@ IHVGetNodeDescription(
 
     switch(pAdapter->GetEngineType(NodeOrdinal))
     {
-        //This is the adapter&#39;s 3-D engine. This engine handles a large number
-        //of different workloads, but it also handles the adapter&#39;s 3-D 
+        //This is the adapter's 3-D engine. This engine handles a large number
+        //of different workloads, but it also handles the adapter's 3-D 
         //workloads. Therefore the 3-D capability is what must be exposed.
         case GPU_ENGINE_3D:
         {
@@ -84,7 +84,7 @@ IHVGetNodeDescription(
             break;
         }
 
-        //This is the adapter&#39;s video decoding engine
+        //This is the adapter's video decoding engine
         case GPU_ENGINE_VIDEO_DECODE:
         {
             pGetNodeMetadata->EngineType = DXGK_ENGINE_TYPE_VIDEO_DECODE;

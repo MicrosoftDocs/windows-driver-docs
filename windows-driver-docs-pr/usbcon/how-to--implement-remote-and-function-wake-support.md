@@ -114,7 +114,7 @@ SendRequestForRemoteWakeNotification(
 
         nextStack->Parameters.Others.Argument1 = &remoteWake;
         
-        // Caller&#39;s completion routine will free the IRP when it completes.
+        // Caller's completion routine will free the IRP when it completes.
  
         SetCompletionRoutine(functionPdoExt->debugLog,
                              parentFdoExt->fdo,
@@ -210,7 +210,7 @@ VOID
     //  Attach the URB to the IRP.
     USBD_AssignUrbToIoStackLocation(nextStack, (PURB)urb);
 
-    // Caller&#39;s completion routine will free the IRP when it completes.
+    // Caller's completion routine will free the IRP when it completes.
     SetCompletionRoutine(functionPdoExt->debugLog,
         parentFdoExt->fdo,
         irp, 

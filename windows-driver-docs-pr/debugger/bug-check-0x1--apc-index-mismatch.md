@@ -41,11 +41,11 @@ The APC\_INDEX\_MISMATCH bug check has a value of 0x00000001. This indicates tha
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
-<td align="left">The value of the current thread&#39;s <strong>ApcStateIndex</strong> field.</td>
+<td align="left">The value of the current thread's <strong>ApcStateIndex</strong> field.</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
-<td align="left"><p>The value of current thread&#39;s CombinedApcDisable field. This field consists of two separate 16-bit fields: (<em>Thread</em>-&gt;<strong>SpecialApcDisable</strong> &lt;&lt; 16) | <em>Thread</em>-&gt;<strong>KernelApcDisable</strong>.</p></td>
+<td align="left"><p>The value of current thread's CombinedApcDisable field. This field consists of two separate 16-bit fields: (<em>Thread</em>-&gt;<strong>SpecialApcDisable</strong> &lt;&lt; 16) | <em>Thread</em>-&gt;<strong>KernelApcDisable</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
