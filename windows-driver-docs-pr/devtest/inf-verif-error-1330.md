@@ -134,6 +134,7 @@ files differently. To access the target file, the driver now needs to call into 
 The following example code shows how to update an INF that uses old syntax.
 
 ### Details for different source files mapped to one destination file
+
 <table>
 <thead>
 <tr>
