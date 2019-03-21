@@ -199,7 +199,7 @@ You must connect your sensor to the Sharks Cove before you install the sensor dr
 
 2. Attach a flash drive with the sensor driver to the powered USB hub connected to the Sharks Cove. For example, this can be the flash drive onto which you saved the driver that you built by following the steps in [Build the sensor driver](build-the-sensor-driver.md).
 
-3. Open **Device Manager**, and look for an "Unknown device" in the **Other devices** node with a yellow bang symbol against it (see the following screen shot).<br/>![device manager screenshot, showing an unknown device with a yellow bang. ](images/dev-manager.png)
+3. Open **Device Manager**, and look for an "Unknown device" in the **Other devices** node with a yellow bang symbol against it (see the following screen shot).<br/>![device manager screenshot, showing an unknown device with a yellow bang.](images/dev-manager.png)
 
 4. Right-click the device with the yellow bang (listed as Unknown device), and select **Update Driver Software**, and click **Browse my computer for driver software**.
 
