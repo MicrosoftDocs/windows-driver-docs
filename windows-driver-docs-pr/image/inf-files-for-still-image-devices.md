@@ -41,7 +41,7 @@ The default class installer for still image devices, *sti\_ci.dll*, recognizes a
 </tr>
 <tr class="even">
 <td><p><strong>Connection</strong></p></td>
-<td><p>For non-PnP devices connected to serial or parallel ports, this can be <strong>Serial</strong> or <strong>Parallel</strong> to limit the user&#39;s choice of ports during installation.</p></td>
+<td><p>For non-PnP devices connected to serial or parallel ports, this can be <strong>Serial</strong> or <strong>Parallel</strong> to limit the user's choice of ports during installation.</p></td>
 <td><p>Optional. If not specified, the user can select any serial or parallel port.</p></td>
 </tr>
 <tr class="odd">
@@ -68,8 +68,8 @@ The default class installer for still image devices, *sti\_ci.dll*, recognizes a
 <tr class="even">
 <td><p><strong>Events</strong></p></td>
 <td><p>Identifies a vendor-supplied data section listing still image device events. Each entry in this section must have the following format:</p>
-<p><em>EventName</em><strong>=&quot;</strong><em>String</em><strong>&quot;,{</strong><em>GUID</em><strong>},</strong>App</p>
-<p><em>EventName</em> is the event&#39;s internal name, <em>String</em> is the event&#39;s display string, <em>GUID</em> is the event&#39;s GUID (see <a href="still-image-device-events.md" data-raw-source="[Still Image Device Events](still-image-device-events.md)">Still Image Device Events</a>), and <em>App</em> specifies the imaging application to be launched when the event occurs. To launch the currently registered application, use an asterisk (<strong>*</strong>) for <em>App</em>.</p></td>
+<p><em>EventName</em><strong>="</strong><em>String</em><strong>",{</strong><em>GUID</em><strong>},</strong>App</p>
+<p><em>EventName</em> is the event's internal name, <em>String</em> is the event's display string, <em>GUID</em> is the event's GUID (see <a href="still-image-device-events.md" data-raw-source="[Still Image Device Events](still-image-device-events.md)">Still Image Device Events</a>), and <em>App</em> specifies the imaging application to be launched when the event occurs. To launch the currently registered application, use an asterisk (<strong>*</strong>) for <em>App</em>.</p></td>
 <td><p>Optional. This entry is required for <a href="creating-push-model-aware-applications.md" data-raw-source="[Creating Push-Model Aware Applications](creating-push-model-aware-applications.md)">Creating Push-Model Aware Applications</a>, however.</p></td>
 </tr>
 <tr class="odd">

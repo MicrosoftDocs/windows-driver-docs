@@ -207,7 +207,7 @@ The **IWiaMiniDrv** interface provides the entry points shown in the following t
 <tbody>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff544998" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvNotifyPnPEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544998)"><strong>IWiaMiniDrv::drvNotifyPnPEvent</strong></a></p></td>
-<td><p>Indicates a WIA minidriver&#39;s response to a Plug and Play event.</p></td>
+<td><p>Indicates a WIA minidriver's response to a Plug and Play event.</p></td>
 </tr>
 </tbody>
 </table>

@@ -67,7 +67,7 @@ The following code example from the **OnGetSupportedProperties** handler functio
     {
         ACCESS_SCOPE Scope = m_pDevice->GetAccessScope(pParams);
         hr = m_pDevice->GetSupportedProperties(Scope, wszObjectID, pKeys);
-        CHECK_HR(hr, "Failed to add supported property keys for object &#39;%ws&#39;", wszObjectID);
+        CHECK_HR(hr, "Failed to add supported property keys for object '%ws'", wszObjectID);
     }
 ```
 
@@ -91,12 +91,12 @@ HRESULT FakeDevice::GetSupportedProperties(
     }
 
     hr = GetContent(Scope, wszObjectID, &pContent);
-    CHECK_HR(hr, "Failed to get content &#39;%ws&#39;", wszObjectID);
+    CHECK_HR(hr, "Failed to get content '%ws'", wszObjectID);
 
     if (hr == S_OK)
     {
         hr = pContent->GetSupportedProperties(pKeys);
-        CHECK_HR(hr, "Failed to get supported properties for &#39;%ws&#39;", wszObjectID);
+        CHECK_HR(hr, "Failed to get supported properties for '%ws'", wszObjectID);
     }
 
     return hr;
@@ -120,7 +120,7 @@ HRESULT FakeContent::GetContent(
     else
     {
         hr = E_ACCESSDENIED;
-        CHECK_HR(hr, "GetContent: &#39;%ws&#39; was found but falls outside scope", wszObjectID);
+        CHECK_HR(hr, "GetContent: '%ws' was found but falls outside scope", wszObjectID);
     }
 
     return hr;

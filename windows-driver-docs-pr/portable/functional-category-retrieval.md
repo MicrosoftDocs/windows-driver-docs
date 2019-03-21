@@ -38,7 +38,7 @@ HRESULT WpdCapabilities::OnGetFunctionalCategories(
         {
             PROPVARIANT pv = {0};
             PropVariantInit(&pv);
-            // Don&#39;t call PropVariantClear, since we did not allocate the memory for these GUIDs
+            // Don't call PropVariantClear, since we did not allocate the memory for these GUIDs
 
             pv.vt    = VT_CLSID;
             pv.puuid = (GUID*) &g_SupportedFunctionalCategories[dwIndex];

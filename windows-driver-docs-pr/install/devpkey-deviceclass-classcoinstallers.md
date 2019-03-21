@@ -36,7 +36,7 @@ The DEVPKEY_DeviceClass_ClassCoInstallers device property represents a list of t
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Data format</strong></p></td>
-<td align="left"><p>&quot;<em>coinstaller1.dll</em>,<em>coinstaller1-entry-point</em>\0…<em>coinstallerN.dll</em>,<em>coinstallerN-entry-point</em>\0\0&quot;</p></td>
+<td align="left"><p>"<em>coinstaller1.dll</em>,<em>coinstaller1-entry-point</em>\0…<em>coinstallerN.dll</em>,<em>coinstallerN-entry-point</em>\0\0"</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property access</strong></p></td>

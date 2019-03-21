@@ -41,7 +41,7 @@ If an INF is configured as illustrated by the toaster sample, you can then retri
 
 ```cpp
 // Since the INF is already in %SystemRoot%\Inf, we need to find out where it
-// originally came from.  There is no direct way to ascertain an INF&#39;s
+// originally came from.  There is no direct way to ascertain an INF's
 // path of origin, but we can indirectly determine it by retrieving a field
 // from our INF that uses a string substitution of %1% (DIRID_SRCPATH).
 //
@@ -60,7 +60,7 @@ After opening the installed INF file, call **SetupFindFirstLine** to retrieve th
 //
 //     OriginalInfSourcePath = %1%
 //
-// If we retrieve the value (i.e., field 1) of this line, we&#39;ll get the
+// If we retrieve the value (i.e., field 1) of this line, we'll get the
 // full path where the INF originally came from.
 //
 if(!SetupFindFirstLine(hInf, L"ToastCoInfo", L"OriginalInfSourcePath", &InfContext)) {

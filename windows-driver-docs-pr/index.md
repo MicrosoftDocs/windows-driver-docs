@@ -62,7 +62,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>What&#39;s new</h3>
+                        <h3>What's new</h3>
                         <p><a href="/windows-hardware/drivers/what-s-new-in-driver-development">New APIs and features</a></p>
                     </div>
                 </div>

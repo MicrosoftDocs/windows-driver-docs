@@ -36,7 +36,7 @@ The DEVPKEY_DeviceClass_PropPageProvider device property represents the property
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Data format</strong></p></td>
-<td align="left"><p>&quot;<em>prop-provider</em>.dll,<em>provider-entry-point</em>&quot;</p></td>
+<td align="left"><p>"<em>prop-provider</em>.dll,<em>provider-entry-point</em>"</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property access</strong></p></td>

@@ -123,7 +123,7 @@ Depends on the Style member, as follows.
 </tr>
 <tr class="even">
 <td><p>PUSHBUTTON_TYPE_DLGPROC</p></td>
-<td><p>Resource identifier for a DIALOG resource, or handle to a DLGTEMPLATE structure (see the Windows SDK documentation). Depends on the DPF_USE_HDLGTEMPLATE flag in the OPTPARAM structure&#39;s <strong>Flags</strong> member.</p></td>
+<td><p>Resource identifier for a DIALOG resource, or handle to a DLGTEMPLATE structure (see the Windows SDK documentation). Depends on the DPF_USE_HDLGTEMPLATE flag in the OPTPARAM structure's <strong>Flags</strong> member.</p></td>
 </tr>
 <tr class="odd">
 <td><p>PUSHBUTTON_TYPE_HTCLRADJ</p></td>
@@ -156,11 +156,11 @@ Depends on the Style member, as follows.
 </tr>
 <tr class="even">
 <td><p><span id="PUSHBUTTON_TYPE_CALLBACK"></span><span id="pushbutton_type_callback"></span>PUSHBUTTON_TYPE_CALLBACK</p></td>
-<td><p>CPSUI calls the application&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff564313" data-raw-source="[&lt;strong&gt;_CPSUICALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564313)"><strong>_CPSUICALLBACK</strong></a>-typed callback function to handle button events, with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547088" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547088)"><strong>CPSUICBPARAM</strong></a> structure&#39;s <strong>Reason</strong> member set to CPSUICB_REASON_PUSHBUTTON. (CPSUI ignores the callback function&#39;s return value.)</p></td>
+<td><p>CPSUI calls the application's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564313" data-raw-source="[&lt;strong&gt;_CPSUICALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564313)"><strong>_CPSUICALLBACK</strong></a>-typed callback function to handle button events, with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547088" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547088)"><strong>CPSUICBPARAM</strong></a> structure's <strong>Reason</strong> member set to CPSUICB_REASON_PUSHBUTTON. (CPSUI ignores the callback function's return value.)</p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="PUSHBUTTON_TYPE_DLGPROC"></span><span id="pushbutton_type_dlgproc"></span>PUSHBUTTON_TYPE_DLGPROC</p></td>
-<td><p>The application&#39;s dialog box procedure handles button events. (For more information, see the <strong>Remarks</strong> section for <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607" data-raw-source="[&lt;strong&gt;DLGPAGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547607)"><strong>DLGPAGE</strong></a>.)</p>
+<td><p>The application's dialog box procedure handles button events. (For more information, see the <strong>Remarks</strong> section for <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607" data-raw-source="[&lt;strong&gt;DLGPAGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547607)"><strong>DLGPAGE</strong></a>.)</p>
 <p>When the function receives a WM_INITDIALOG message, its <em>lParam</em> argument points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547088" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547088)"><strong>CPSUICBPARAM</strong></a> structure with the <strong>Reason</strong> member set to CPSUICB_REASON_DLGPROC.</p></td>
 </tr>
 <tr class="even">

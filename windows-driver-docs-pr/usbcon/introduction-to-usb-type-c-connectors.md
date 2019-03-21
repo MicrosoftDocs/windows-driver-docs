@@ -45,7 +45,7 @@ In this topic, a USB Type-C system refers to a PC running Windows 10 for desktop
 <td><ol>
 <li>Note the error code.
 <ul>
-<li>On Windows 10 for desktop editions systems, open Device Manager and find the device. It&#39;s marked with a yellow exclamation point. Right-click on the node and open device properties. The error code is under <strong>Device status</strong>.</li>
+<li>On Windows 10 for desktop editions systems, open Device Manager and find the device. It's marked with a yellow exclamation point. Right-click on the node and open device properties. The error code is under <strong>Device status</strong>.</li>
 <li>On Windows 10 Mobile systems, the notification shows the error code.</li>
 </ul></li>
 <li>Follow the troubleshooting steps described in <a href="https://go.microsoft.com/fwlink/p/?LinkId=526896" data-raw-source="[this article](https://go.microsoft.com/fwlink/p/?LinkId=526896)">this article</a>.</li>
@@ -101,7 +101,7 @@ In this topic, a USB Type-C system refers to a PC running Windows 10 for desktop
 </div></td>
 <td><ul>
 <li>Use the charger and cable that came with your device.</li>
-<li>Make sure that you&#39;re connecting your charger to the charging USB Type-C port on your system.</li>
+<li>Make sure that you're connecting your charger to the charging USB Type-C port on your system.</li>
 </ul></td>
 </tr>
 </tbody>

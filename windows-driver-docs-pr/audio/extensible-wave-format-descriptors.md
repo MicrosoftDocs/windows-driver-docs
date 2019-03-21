@@ -127,7 +127,7 @@ The subset of WAVEFORMATEX PCM formats that KMixer supports differs between Wind
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows 98 &quot;Gold&quot;</p></td>
+<td align="left"><p>Windows 98 "Gold"</p></td>
 <td align="left"><p>8, 16, 24, and 32 bits</p></td>
 <td align="left"><p>Multichannel</p></td>
 </tr>

@@ -306,7 +306,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00010000</p>
 </td>
 <td>
-<p>Indicates that a packet matches authenticated firewall policies. Only connections matching the &quot;Allow the connection if it is secure&quot; firewall rule option will have this flag set. For more information, see <a href="https://technet.microsoft.com/library/cc753463">How to Enable Authenticated Firewall Bypass</a>.</p>
+<p>Indicates that a packet matches authenticated firewall policies. Only connections matching the "Allow the connection if it is secure" firewall rule option will have this flag set. For more information, see <a href="https://technet.microsoft.com/library/cc753463">How to Enable Authenticated Firewall Bypass</a>.</p>
 <p>This flag is also applicable at the following filtering layers in Windows Server 2008, Windows Vista with SP1, and later versions of Windows:<dl>
 <dd>FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4</dd>
 <dd>FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6</dd>
@@ -349,7 +349,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00040000</p>
 </td>
 <td>
-<p>Indicates that the packet is weak-host sent, which means that it isn&#39;t leaving this network interface and therefore must be forwarded to another interface.</p>
+<p>Indicates that the packet is weak-host sent, which means that it isn't leaving this network interface and therefore must be forwarded to another interface.</p>
 <p>This flag is applicable at the following filtering layers in Windows Server 2008 R2, Windows 7, and later versions of Windows:<dl>
 <dd>FWPM_LAYER_IPFORWARD_V4</dd>
 <dd>FWPM_LAYER_IPFORWARD_V6</dd>
@@ -365,7 +365,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00080000</p>
 </td>
 <td>
-<p>Indicates that the packet is weak-host received, which means that it isn&#39;t destined for the receiving network interface and therefore must be forwarded to another interface.</p>
+<p>Indicates that the packet is weak-host received, which means that it isn't destined for the receiving network interface and therefore must be forwarded to another interface.</p>
 <p>This flag is applicable at the following filtering layers in Windows Server 2008 R2, Windows 7, and later versions of Windows:<dl>
 <dd>FWPM_LAYER_IPFORWARD_V4</dd>
 <dd>FWPM_LAYER_IPFORWARD_V6</dd>

@@ -43,7 +43,7 @@ When creating **PINNAME\_VIDEO\_TIMECODE** pins, use the information listed in t
 </tr>
 <tr class="odd">
 <td><p><strong>Major Format GUID</strong></p></td>
-<td><p>None defined. Define GUID using Direct Show&#39;s MEDIATYPE_Timecode.</p></td>
+<td><p>None defined. Define GUID using Direct Show's MEDIATYPE_Timecode.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Sub-Format GUID</strong></p></td>

@@ -37,7 +37,7 @@ The RDR\_FILE\_SYSTEM bug check has a value of 0x00000027. This indicates that a
 <tbody>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>The high 16 bits (the first four hexadecimal digits after the &quot;0x&quot;) identify the type of problem. Possible values include:</p>
+<td align="left"><p>The high 16 bits (the first four hexadecimal digits after the "0x") identify the type of problem. Possible values include:</p>
 <p>0xCA550000 RDBSS_BUG_CHECK_CACHESUP</p>
 <p>0xC1EE0000 RDBSS_BUG_CHECK_CLEANUP</p>
 <p>0xC10E0000 RDBSS_BUG_CHECK_CLOSE</p>

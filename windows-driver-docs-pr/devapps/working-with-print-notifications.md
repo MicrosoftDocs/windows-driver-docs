@@ -298,7 +298,7 @@ protected override async void OnLaunched(LaunchActivatedEventArgs args)
     }
     if (rootFrame.Content == null || !String.IsNullOrEmpty(args.Arguments))
     {
-        // When the navigation stack isn&#39;t restored or there are launch arguments
+        // When the navigation stack isn't restored or there are launch arguments
         // indicating an alternate launch (e.g.: via toast or secondary tile), 
         // navigate to the appropriate page, configuring the new page by passing required 
         // information as a navigation parameter

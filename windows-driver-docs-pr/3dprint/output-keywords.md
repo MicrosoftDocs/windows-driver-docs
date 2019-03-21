@@ -170,7 +170,7 @@ Job3DSliceHeight keyword profile
 </tr>
 <tr class="even">
 <td>Contents</td>
-<td><p>psk3d:Job3DSliceHeight is an IntegerParamType, as described in §2.1.3.1, &quot;&lt;psf:ParameterDef&gt;&quot; in the Print Schema Specification.</p>
+<td><p>psk3d:Job3DSliceHeight is an IntegerParamType, as described in §2.1.3.1, "&lt;psf:ParameterDef&gt;" in the Print Schema Specification.</p>
 <p><strong>Child:</strong> IntegerParamType</p>
 <p><strong>Description:</strong></p>
 <p>The psf:MinValue Property Value MUST be greater than 0.</p>
