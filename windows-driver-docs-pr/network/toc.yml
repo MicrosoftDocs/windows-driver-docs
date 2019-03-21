@@ -2639,6 +2639,8 @@
       href: mb-base-stations-information-query-support.md
     - name: "MB NITZ support"
       href: mb-nitz-support.md
+    - name: "MB modem logging with DSS"
+      href: mb-modem-logging-with-dss.md
     - name: "MB eSIM MBIM ready state guidance"
       href: mb-esim-mbim-ready-state-guidance.md
     - name: "MB NDIS Status Notifications"

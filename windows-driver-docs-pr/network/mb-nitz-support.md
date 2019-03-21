@@ -69,4 +69,4 @@ This unsolicited event provides the current network time and time zone informati
 
 ### Status Codes
 
-This CID only uses generic status codes defined in Section 9.4.5 of the MBIM specification revision 1.0.
+This CID only uses generic status codes defined in Section 9.4.5 of the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip).
