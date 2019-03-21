@@ -4,7 +4,7 @@ description: This topic describes net rings and net ring iterators.
 ms.assetid: 8A56AA21-264C-4C1A-887E-92C9071E8AB8
 keywords:
 - NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
-ms.date: 12/07/2018
+ms.date: 03/21/2019
 ms.localizationpriority: medium
 ---
 
@@ -58,7 +58,7 @@ To make it easy for client drivers to control each iterator for each ring, the N
 
 By getting, advancing, and setting net ring iterators, client drivers send and receive network data in their packet queues. Client drivers also call methods on net ring iterators to access the ring's elements.
 
-For a complete list of net ring iterator data structures and methods, see [Netringiterator.h](netringiterator-h.md).
+For a complete list of net ring iterator data structures and methods, see [Netringiterator.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/).
 
 ## Sending and receiving network data with net rings and net ring iterators
 

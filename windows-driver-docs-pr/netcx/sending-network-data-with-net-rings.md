@@ -4,7 +4,7 @@ description: This topic describes how NetAdapterCx client drivers use net rings 
 ms.assetid: 2F3DA1A5-D0C1-4928-80B2-AF41F949FF14
 keywords:
 - NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
-ms.date: 01/24/2019
+ms.date: 03/21/2019
 ms.localizationpriority: medium
 ---
 
@@ -28,25 +28,25 @@ Here is a typical post and drain sequence for a driver whose device transmits da
 
 1. Call **NetTxQueueGetRingCollection** to retrieve the transmit queue's ring collection structure. You can store this in the queue's context space to reduce calls out of the driver. 
 2. Post data to hardware:    
-    1. Use the ring collection to retrieve the post iterator for the transmit queue's packet ring by calling [**NetRingGetPostPackets**](netringgetpostpackets.md).
+    1. Use the ring collection to retrieve the post iterator for the transmit queue's packet ring by calling [**NetRingGetPostPackets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netringgetpostpackets).
     2. Do the following in a loop:
-        1. Get a packet by calling [**NetPacketIteratorGetPacket**](netpacketiteratorgetpacket.md) with the packet iterator.
+        1. Get a packet by calling [**NetPacketIteratorGetPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netpacketiteratorgetpacket) with the packet iterator.
         2. Check if this packet should be ignored. If it should be ignored, skip to step 6 of this loop. If not, continue.
-        3. Get a fragment iterator for this packet's fragments by calling [**NetPacketIteratorGetFragments**](netpacketiteratorgetfragments.md).
+        3. Get a fragment iterator for this packet's fragments by calling [**NetPacketIteratorGetFragments**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netpacketiteratorgetfragments).
         4. Do the doing the following in a loop:
-            1. Call [**NetFragmentIteratorGetFragment**](netfragmentiteratorgetfragment.md) with the fragment iterator to get a fragment.
+            1. Call [**NetFragmentIteratorGetFragment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netfragmentiteratorgetfragment) with the fragment iterator to get a fragment.
             2. Translate the **NET_FRAGMENT** descriptor into the associated hardware fragment descriptor.
-            3. Call [**NetFragmentIteratorAdvance**](netfragmentiteratoradvance.md) to move to the next fragment for this packet.
+            3. Call [**NetFragmentIteratorAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netfragmentiteratoradvance) to move to the next fragment for this packet.
         5. Update the fragment ring's **Next** index to match the fragment iterator's current **Index**, which indicates that posting to hardware is complete.
-        6. Call [**NetPacketIteratorAdvance**](netpacketiteratoradvance.md) to move to the next packet.
-    3. Call [**NetPacketIteratorSet**](netpacketiteratorset.md) to finalize posting packets to hardware.
+        6. Call [**NetPacketIteratorAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netpacketiteratoradvance) to move to the next packet.
+    3. Call [**NetPacketIteratorSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netpacketiteratorset) to finalize posting packets to hardware.
 3. Drain completed transmit packets to the OS:
-    1. Use the ring collection to retrieve the drain iterator for the transmit queue's packet ring by calling [**NetRingGetDrainPackets**](netringgetdrainpackets.md).
+    1. Use the ring collection to retrieve the drain iterator for the transmit queue's packet ring by calling [**NetRingGetDrainPackets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netringgetdrainpackets).
     2. Do the following in a loop:
-        1. Get a packet by calling [**NetPacketIteratorGetPacket**](netpacketiteratorgetpacket.md).
+        1. Get a packet by calling [**NetPacketIteratorGetPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netpacketiteratorgetpacket).
         2. Check if the packet has finished transmitting. If it has not, break out of the loop.
-        2. Call [**NetPacketIteratorAdvance**](netpacketiteratoradvance.md) to move to the next packet.
-    3. Call [**NetPacketIteratorSet**](netpacketiteratorset.md) to finalize draining packets to the OS.
+        2. Call [**NetPacketIteratorAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netpacketiteratoradvance) to move to the next packet.
+    3. Call [**NetPacketIteratorSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netpacketiteratorset) to finalize draining packets to the OS.
 
 These steps might look like this in code. Note that hardware-specific details such as how to post descriptors to hardware or flushing a successful post transaction are left out for clarity.
 
@@ -64,7 +64,7 @@ MyEvtTxQueueAdvance(
     // Post data to hardware
     //
     NET_RING_PACKET_ITERATOR packetIterator = NetRingGetPostPackets(Rings);
-    while(NetPacketIteratorHasAny(&packetIterator))
+    while(https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-NetPacketIteratorHasAny(&packetIterator))
     {
         NET_PACKET* packet = NetPacketIteratorGetPacket(&packetIterator);        
         if(!packet->Ignore)
@@ -98,7 +98,7 @@ MyEvtTxQueueAdvance(
     // Drain packets if completed
     //
     packetIterator = NetRingGetDrainPackets(Rings);
-    while(NetPacketIteratorHasAny(&packetIterator))
+    while(https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-NetPacketIteratorHasAny(&packetIterator))
     {        
         NET_PACKET* packet = NetPacketIteratorGetPacket(&packetIterator);
         

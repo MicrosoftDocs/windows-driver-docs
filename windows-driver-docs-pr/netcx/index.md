@@ -4,7 +4,7 @@ description: Network Adapter WDF Class Extension (NetAdapterCx)
 ms.assetid: 74719A80-AE66-410F-85B7-31B6F455A818
 keywords:
 - Network Adapter Class Extension, Network Adapter WDF Class Extension, NetAdapterCx, NetCx
-ms.date: 06/05/2017
+ms.date: 03/21/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,4 +55,3 @@ This section contains the following topics:
 * [NDIS-WDF function equivalents](ndis-wdf-function-equivalents.md)
 * [NetAdapterCx limitations](netadaptercx-limitations.md)
 * [Mobile Broadband (MBB) WDF class extension (MBBCx)](mobile-broadband-mbb-wdf-class-extension-mbbcx.md)
-* [NetAdapterCx prerelease API reference](netadaptercx-prerelease-api-reference.md)
