@@ -14,7 +14,7 @@ Documentation updated to WDI version 1.1.8.
 
 | Topic | Description |
 | --- | --- |
-| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities) | Added support for the driver to indicate support for Fine Timing Measurement (FTM). |
+| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities.md) | Added support for the driver to indicate support for Fine Timing Measurement (FTM). |
 | [OID_WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md) | Newly added task OID that enables WDI to request that the adapter initiate FTM procedures to obtain roundtrip time (RTT) and the Location Configuration Information (LCI) report from BSS targets. |
 | [WDI_TLV_FTM_REQUEST_TIMEOUT](wdi-tlv-ftm-request-timeout.md) | Newly added TLV for FTM request. |
 | [WDI_TLV_FTM_TARGET_BSS_ENTRY](wdi-tlv-ftm-target-bss-entry.md) | Newly added TLV for FTM request. |

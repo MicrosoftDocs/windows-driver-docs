@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This command is sent as a Direct OID request to the driver.
 
-For more information about SAE authentication, see [WPA SAE authentication](wpa-sae-authentication.md).
+For more information about SAE authentication, see [WPA3 SAE authentication](wpa3-sae-authentication.md).
 
 ## Command parameters
 
