@@ -17,7 +17,6 @@ Enterprise WDK (EWDK), and additional downloads for support purposes. To develop
 use the latest public versions of the Windows Driver Kit (WDK) and tools, available for
 download on [Download the Windows Driver Kit (WDK)](download-the-wdk.md).
 
-
 The Windows Driver Kit (WDK) is used to develop, test, and deploy
 Windows drivers. To develop drivers, use the latest public versions of
 the Windows Driver Kit (WDK) and tools, available for download on
@@ -27,7 +26,6 @@ This topic contains information about earlier versions of the WDK, the
 Enterprise WDK (EWDK), and additional downloads for support purposes. To
 use these earlier versions, you must *first* install the version of
 Visual Studio that is appropriate for your targeted platform.
-
 
 ## Step 1: Install Visual Studio
 
@@ -43,7 +41,6 @@ for download) in the following table.
 | Windows 8.1 Update <br/>Windows 8.1 | [Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=875331) |
 | Windows 8                | [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) <br/>[Visual Studio Ultimate 2012](https://go.microsoft.com/fwlink/p/?LinkID=255982) |
 
-
 ### Configure Visual Studio for Windows 10, versions 1709 and 1803
 
 When you install Visual Studio, select the **Desktop development with
@@ -54,7 +51,6 @@ pane.
 To develop drivers for ARM/ARM64, choose **Individual components** and
 under **Compilers, build tools, and runtimes** select **Visual C++
 compilers and libraries for ARM/ARM64**.
-
 
 ### Install the Windows SDK to target Windows 10, versions 1607 and 1703
 
@@ -67,9 +63,7 @@ If your development targets systems that run Windows 10, version 1607 or Windows
 | Windows 8.1              | [Windows SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?LinkId=323507) |
 | Windows 8                | [Windows SDK for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226658) |
 
-
 The Windows SDK was not included in Visual Studio 2015, so you must install the SDK separately. Later versions of Visual Studio include the Windows SDK.
-
 
 ## Step 2: Install the WDK
 
@@ -100,7 +94,6 @@ develop, build, package, deploy, test, and debug drivers.
 > 3. Select **Modify**, select **Repair**, and then follow the directions on the screen.
 > 4. The files will be restored.
 
-
 ## Optional: Install the EWDK
 
 The Enterprise WDK (EWDK) is a standalone, self-contained, command-line environment for
@@ -123,21 +116,17 @@ For more information about the EWDK, see
 > [!Note]
 > Starting in Windows 10 version 1709, the EWDK is ISO-based. To get started, download and mount the ISO, and then run **LaunchBuildEnv**.
 
-
 ## Optional: Install updated test certificates for HAL extensions
 
 To work with HAL Extensions, prepare your development system, running Windows 10, version 1709 or a later version of Windows 10. Also install the WDK or the EWDK, and then install the updated version of the **Windows OEM HAL Extension Test Cert 2017 (TEST ONLY)**, available for download as a ZIP file: [HAL_Extension_Test_Cert_2017.zip](https://go.microsoft.com/fwlink/?linkid=872294).
 
 For more information about using this updated certificate, see [Update for "Windows OEM HAL Extension Test Cert 2017 (TEST ONLY)" test certificate](https://support.microsoft.com/help/4131991) on Windows Support.
 
-
-
 ## Optional: Install WinDbg Preview
 
 WinDbg Preview is a new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview supports debugging every version of Windows 10.
 
-For download links and more information about WinDbg Preview, see [Download WinDbg Preview](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools#small-windbg-preview-logo-download-windbg-preview).
-
+For download links and more information about WinDbg Preview, see [Download WinDbg Preview](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools#small-windbg-preview-logo-download-windbg-preview).
 
 ## Standalone tools for debugging Windows XP and Windows Vista
 
@@ -159,7 +148,6 @@ the Windows 7 SDK:
 To install the Debugging Tools for Windows as a standalone component,
 start the SDK installer, and in the installation wizard, select
 **Debugging Tools for Windows**, and clear all other components.
-
 
 ### Related downloads
 * [Download the Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)

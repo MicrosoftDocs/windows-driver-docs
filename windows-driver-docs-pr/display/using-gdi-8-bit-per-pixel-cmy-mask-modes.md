@@ -254,10 +254,7 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
     <tbody>
     <tr class="odd">
     <td align="left"><p>0 to 113</p>
-    <div>
-     
-    </div>
-    Black</td>
+    <p>Black</p></td>
     <td align="left"><p>2</p></td>
     <td align="left"><p>2</p></td>
     <td align="left"><p>2</p></td>
