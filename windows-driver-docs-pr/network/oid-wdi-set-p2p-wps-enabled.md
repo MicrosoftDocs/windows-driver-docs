@@ -32,6 +32,7 @@ OID\_WDI\_SET\_P2P\_WPS\_ENABLED requests that the adapter enables or disables W
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 

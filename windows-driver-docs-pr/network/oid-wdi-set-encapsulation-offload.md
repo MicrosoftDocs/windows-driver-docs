@@ -35,6 +35,7 @@ When this message is received, the LE should indicate its current encapsulation 
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 

@@ -16,10 +16,6 @@ This indication is sent only while the driver has not offload the RSN GTK rekey 
 
 For example, the driver would send this notification if it or the firmware receives a new GTK/iGTK in the WNM-Sleep mode response.
 
-| Object |
-| --- |
-| Port |
-
 ## Payload data
 
 | Type | Multiple TLV instances allowed | Optional | Description |

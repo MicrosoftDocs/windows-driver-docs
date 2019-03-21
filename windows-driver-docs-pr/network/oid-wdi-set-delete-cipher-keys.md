@@ -32,6 +32,7 @@ OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS deletes cipher keys from the device's cipher
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 

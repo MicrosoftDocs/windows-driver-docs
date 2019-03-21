@@ -32,6 +32,7 @@ OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING is used by the host to remove a packet
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 
