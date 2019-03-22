@@ -26,6 +26,7 @@ Please follow these steps:
    3. **Asynchronous Profile Donwload**, implement this callback if the eSIM profile will be available in your SMDP+ server after a period of time and the device wiil be able to attahc to the cellular network immediatelly.
 3. [Handling eSIM download errors](mobile-plans-eSIM-error-handling.md)
 4. Define the [basic device experience](mobile-plans-device-experience.md#basic-device-experience).
+5. Perform the validation
 
 ## Activate a warm SIM in a Windows device
 
@@ -37,6 +38,7 @@ Please follow these steps:
 3. Implement the enhanced device experience This needs to be consistent with the eSIM experience (bullet 4)
    1. Implement the Walled Garden
    2. Implement the Balance API, network flyout depending in the status of the subscription
+4. Perform the validation
 
 ## Add balance to a current subscription
 
@@ -46,6 +48,7 @@ This section describes which work is needed to add balance to your current subsc
 2. Implement the Balance API, this will ensure that you are able to control the behavior of network flyout depending in the status of the subscription
 3. Implement the Mobile Operator web portal
 4. Implement the [adding balance](mobile-plans-callbacks.md#adding-balance) control back to Mobile Plans.
+5. Perform the validation
 
 ## Cancelling a transaction
 

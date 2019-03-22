@@ -42,6 +42,9 @@ By implementing the enhanced device experience, you can offer these benefits to 
 
 These experiences build on top of the [basic device experience](#basic-device-experience); this will be the default experience in the device network flyout.
 
+**8<=================================**
+
+_**THIS IS SHOULD BE REMOVED**_
 
 To implement prepaid, follow these steps:
 
@@ -52,13 +55,12 @@ To implement prepaid, follow these steps:
 3. Validate the `GetBalance` API and Walled Garden.
 4. Comply with API load requirements.
 
-
-
-
+**8<=================================**
 
 ### Network flyout user experience
 
-Depending on how you configure the Windows COSA database and the information that is received from `GetBalance` API calls, the network flyout behaves differently, which enhances the user experience. The network flyout contains the following elements:
+Depending on the information that is received from `GetBalance` API calls, the network flyout behaves differently, which enhances the user experience. 
+The network flyout has the following elements:
 
 1. Connect with a data plan  
   This launches the Mobile Plans app.
@@ -73,21 +75,20 @@ The following image shows these network flyout elements. Connect with a data pla
 
 To provide the right information in the network flyout, MOs provide *Type* and *Balance* (dataRemainingMB and timeRemaining) information as defined in the [GetBalance API](#getbalance-api) section.
 
-The network flyout experience changes depending on the `GetBalance` response:
+The table below provide a reference between the GetBalance response type and what it is displayed in the network flyout.
 
-| `GetBalance` response type | Network flyout shows... |
+| GetBalance response type | Network flyout shows... |
 | --- | --- |
 | MODIRECT | "View my account" only with no balance information |
 | MODIRECTPAYG | "View my account" and balance information |
 | NONE | "Connect with a data plan" |
 | NOTSUPPORTED | "View my account" only |
 
-
 ## GetBalance API
 
 The `GetBalance` API queries current subscription status, controls whether the *Mobile Plans* experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the `GetBalance` API. 
 
-<img src="images/dynamo_prepaid_get_balance_api_flow.png" alt="GetBalance API flow" title="GetBalance API flow" width="600" />
+<img src="images/mobile_plans_get_balance_api_flow.png" alt="GetBalance API flow" title="GetBalance API flow" width="600" />
 
 ### Resource model
 
