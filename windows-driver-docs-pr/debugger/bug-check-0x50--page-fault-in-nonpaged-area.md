@@ -73,7 +73,7 @@ Antivirus software can also trigger this error, as can a corrupted NTFS volume.
 Remarks
 ----------
 
-**Gather Information**
+**Event Log**
 
 Examine the name of the driver if that was listed on the blue screen.
 
@@ -172,7 +172,7 @@ fffff802`40d3230c c3              ret
 
 Use `ub` to dissassemble backwards from the a given address.
 
-Use the [r (Registers)](r--registers-) command to examine what was being executed as the system bug checked. 
+Use the [r (Registers)](r--registers-.md) command to examine what was being executed as the system bug checked. 
 
 ```dbgcmd
 2: kd> r
