@@ -151,28 +151,3 @@ To ensure the best user experience on Windows, you should adhere to the policies
 | Policy                                                                                                                                                                                                                    | Required or Recommended |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | The MO Direct portal should provide accessibility to disabled users and adhere to the accessibility guidelines applicable in the jurisdictions where the mobile operator implements and enables the MO Direct experience. | Recommended             |
-
-========
-
-**Below this should go to a different page**
-
-=====
-
-## Mobile Plans flow diagrams
-
-
-The following diagram shows the flow when the user has a eSIM profile active or is using a physical SIM in their device.
-
-<img src="images/dynamo_implementation_mo_direct_flow_with_sim.png" alt="MO Direct flow where user has an eSIM or physical SIM" title="MO Direct flow where user has an eSIM or physical SIM" width="400" />
-
-
-## COSA requirement for postpaid (PayG)
-
-The balance status experience for the Network Flyout and Settings page can be enabled for limited postpaid data plans, just like for prepaid data plans. MOs can do this by updating the COSA database. However, checking balance is typically a prepaid feature. For more information, see [Prepaid experience](mobile-plans-prepaid-experience.md).
-
-## Walled Garden for postpaid (PayG)
-
-Like the balance status experience, Walled Garden is supported for limited postpaid data plans but is also typically a prepaid feature. Walled Garden is detailed on the [Prepaid experience](mobile-plans-prepaid-experience.md) topic. 
-
-> [!NOTE]
-> The *Mobile Plans* architecture does not support IP ranges for Walled Garden endpoints. Host names must be used for whitelisting.

@@ -35,20 +35,20 @@ Please follow these steps:
 
 1. Implement the [Mobile Operator web portal](mobile-plans-web-portal.md#web-service-api-used-for-physical-sim)
 2. Implement the [adding balance](mobile-plans-callbacks.md#adding-balance) control back to Mobile Plans.
-3. Implement the enhanced device experience This needs to be consistent with the eSIM experience (bullet 4)
-   1. Implement the Walled Garden
-   2. Implement the Balance API, network flyout depending in the status of the subscription
+3. Implement the [enhanced device experience](mobile-plans-device-experience.md#enhanced-device-experience)
+   1. Implement the [Get Balance API](mobile-plans-device-experience.md#getbalance-api)
+   2. Implement the [Walled Garden](mobile-plans-device-experience.md#walled-garden)
 4. Perform the validation
 
 ## Add balance to a current subscription
 
 This section describes which work is needed to add balance to your current subscription, this is useful if you are selling prepaid plans or if you sell data packages once a postpaid subscription runs out of Internet data.
 
-1. Implement the Walled Garden
-2. Implement the Balance API, this will ensure that you are able to control the behavior of network flyout depending in the status of the subscription
-3. Implement the Mobile Operator web portal
-4. Implement the [adding balance](mobile-plans-callbacks.md#adding-balance) control back to Mobile Plans.
-5. Perform the validation
+1. Implement the [Mobile Operator web portal](mobile-plans-web-portal.md)
+2. Implement the [adding balance](mobile-plans-callbacks.md#adding-balance) control back to Mobile Plans.
+3. Implement the [enhanced device experience](mobile-plans-device-experience.md#enhanced-device-experience)
+   1. Implement the [Get Balance API](mobile-plans-device-experience.md#getbalance-api)
+   2. Implement the [Walled Garden](mobile-plans-device-experience.md#walled-garden)
 
 ## Cancelling a transaction
 
