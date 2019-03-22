@@ -312,4 +312,4 @@ If you are not equipped to debug this problem using the techniques described abo
 
 - You can try running the hardware diagnostics supplied by the system manufacturer.
 
-- Check with the manufacturer to see if an updated system BIOS or firmware is available.
+- Check with the manufacturer to see if an updated system ACPI/BIOS or other firmware is available.

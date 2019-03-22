@@ -58,32 +58,24 @@ The PAGE\_FAULT\_IN\_NONPAGED\_AREA bug check has a value of 0x00000050. This in
 </table>
 
  
-
-If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
+If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use the debugger dx command to display this - `dx KiBugCheckDriver`.
 
 Cause
 -----
 
-Bug check 0x50 can occur after the installation of faulty hardware or in the event of failure of installed hardware (usually related to defective RAM, be it main memory, L2 RAM cache, or video RAM).
+Bug check 0x50 can be caused by the installation of a faulty system service or faulty driver code. Antivirus software can also trigger this error, as can a corrupted NTFS volume.
 
-Another possible cause is the installation of a faulty system service or faulty driver code.
+It could also occur after the installation of faulty hardware or in the event of failure of installed hardware (usually related to defective RAM, be it main memory, L2 RAM cache, or video RAM).
 
-Antivirus software can also trigger this error, as can a corrupted NTFS volume.
 
 Remarks
 ----------
 
-**Event Log**
-
-Examine the name of the driver if that was listed on the blue screen.
-
+**Event Log:**
 Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
-**Windows Memory Diagnostics**
-
-Run the Windows Memory Diagnostics tool, to test the memory. Click the Start button, and then clicking Control Panel. In the search box, type Memory, and then click **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
-
-**Resolving a faulty hardware problem:** If hardware has been added to the system recently, remove it to see if the error recurs. If existing hardware has failed, remove or replace the faulty component. You should run hardware diagnostics supplied by the system manufacturer. For details on these procedures, see the owner's manual for your computer.
+**Resolving a faulty driver:** 
+Examine the name of the driver if that was listed on the blue screen or is present in the event log. Contact the driver vendor to see if an updated driver is available. 
 
 **Resolving a faulty system service problem:** Disable the service and confirm that this resolves the error. If so, contact the manufacturer of the system service about a possible update. If the error occurs during system startup, investigate the Windows repair options. For more information, see [Recovery options in Windows 10](https://windows.microsoft.com/windows-10/windows-10-recovery-options).
 
@@ -91,15 +83,17 @@ Run the Windows Memory Diagnostics tool, to test the memory. Click the Start but
 
 **Resolving a corrupted NTFS volume problem:** Run **Chkdsk /f /r** to detect and repair disk errors. You must restart the system before the disk scan begins on a system partition. Contact the manufacture of the hard driver system to locate any diagnostic tools that they provide for the hard drive sub system.
 
+**Windows Memory Diagnostics:**
+Run the Windows Memory Diagnostics tool, to test the physical memory. Click the Start button, and then clicking Control Panel. In the search box, type Memory, and then click *Diagnose your computer's memory problems*.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
+
+**Resolving a faulty hardware problem:** If hardware has been added to the system recently, remove it to see if the error recurs. If existing hardware has failed, remove or replace the faulty component. You should run hardware diagnostics supplied by the system manufacturer. For details on these procedures, see the owner's manual for your computer.
+
 For general blue screen troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
 Resolution
 -------
 
-Typically, this address is in freed memory or is simply invalid.
-
-This cannot be protected by a **try - except** handler -- it can only be protected by a probe or similar techniques.
-
+Typically, the referenced address is in freed memory or is simply invalid. This cannot be protected by a **try - except** handler -- it can only be protected by a probe or similar programming techniques.
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
@@ -122,10 +116,13 @@ Arg3: fffff80240d322f9, If non-zero, the instruction address which referenced th
 Arg4: 000000000000000c, (reserved)
 ```
 
-Look at all of the output to gain information about what was going on when the bug check occurred. Examine MODULE_NAME: the FAULTING_MODULE:
+In this example Parameter 2 indicates that the bug check occurred when an area of memory was being read. 
 
-Parameter 2 indicates that the bug check occurred when an area of memory was being read. 
+Look at all of the !analyze output to gain information about what was going on when the bug check occurred. Examine MODULE_NAME: and the FAULTING_MODULE: to see which code is involved in referencing the invalid system memory.
 
+Look at the STACK TEXT for clues on what was running when the failure occurred. If multiple dump files are available, compare information to look for common code that is in the stack. Use debugger commands such as use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
+
+Use the `lm t n` to list modules that are loaded in the memory. 
 
 Use the [d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command to investigate the areas of memory referenced by parameter 1 and parameter 3.
 
@@ -142,7 +139,7 @@ ffffffff`00000100  ?? ?? ?? ?? ?? ?? ?? ??-?? ?? ?? ?? ?? ?? ?? ??  ????????????
 ```
 In this case doesn't look like there is data in this area of memory in parameter 1, which is the area of memory that was attempting to be read.
 
-Use the [!address](-address.md) command to look at parameter 3 which is the address of the the instruction  which referenced the bad memory.
+Use the [!address](-address.md) command to look at parameter 3 which is the address of the the instruction which referenced the bad memory.
 
 ```dbgcmd
 2: kd> !address fffff80240d322f9
@@ -191,12 +188,9 @@ fffff802`40d322f9 488b4810        mov     rcx,qword ptr [rax+10h] ds:ffffffff`00
 
 In this case `fffff80240d322f9` is in the instruction pointer register, rip.
 
-Look at the STACK TEXT for clues on what was running when the failure occurred. If multiple dump files are available, compare information to look for common code that is in the stack. Use debugger commands such as use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
+The `!pte` and `!pool` command may also be used to examine memory.
 
-
-Use `!memusage` and to examine the general state of the system memory.
-
-Use the `lm t n` to look at what was loaded in the memory. 
+Use `!memusage` and to examine the general state of the system memory. 
 
 
 **Time Travel Trace**
