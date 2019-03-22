@@ -3,7 +3,7 @@ title: Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION
 description: The SYSTEM_SERVICE_EXCEPTION bug check has a value of 0x0000003B. This indicates that an exception happened while executing a routine that transitions from non-privileged code to privileged code.
 ms.assetid: 0e2c230e-d942-4f32-ae8e-7a54aceb4c19
 keywords: ["Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION", "SYSTEM_SERVICE_EXCEPTION"]
-ms.date: 09/12/2018
+ms.date: 03/20/2019
 topic_type:
 - apiref
 api_name:
@@ -63,7 +63,7 @@ Cause
 
 The stop code indicates that executing code had an exception and the thread that was below it, is a system thread.
 
-The exception information returned in parameter one is listed in [NTSTATUS Values](https://msdn.microsoft.com/library/cc704588.aspx) and is also available in the ntstatus.h file located in the inc directory of the Windows Driver Kit. 
+The exception information returned in parameter one is listed in [NTSTATUS Values](https://docs.microsoft.com/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) and is also available in the ntstatus.h file located in the inc directory of the Windows Driver Kit. 
 
 One possible exception value is 0xC0000005: STATUS\_ACCESS\_VIOLATION 
 
@@ -87,6 +87,15 @@ Resolution
 
 **To debug this problem:** Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md). You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code.
 
+
+**Time Travel Trace**
+
+If the bug check can be reproduced on demand, investigate the possibility of taking a time travel trace using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
+
+
+Remarks
+----------
+
 For general troubleshooting of Windows bug check codes, follow these suggestions:
 
 -   If you recently added hardware to the system, try removing or replacing it. Or check with the manufacturer to see if any patches are available.
@@ -98,6 +107,7 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 -   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
+
 
  
 

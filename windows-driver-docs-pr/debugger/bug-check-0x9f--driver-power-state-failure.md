@@ -290,6 +290,11 @@ To help you determine the cause of the error, consider the following questions:
 
 -   Refer to the additional techniques described above under parameter 0x3.
 
+**Time Travel Trace**
+
+If the bug check can be reproduced on demand, investigate the possibility of taking a time travel trace using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
+
+
 ## Remarks
 ----------
 

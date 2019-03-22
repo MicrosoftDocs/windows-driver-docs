@@ -80,11 +80,14 @@ If you plan to debug this problem, Parameter 2 (the exception address) should id
 
 If a driver is listed by name within the bug check message, disable or remove that driver. If the issue is narrowed down to a single driver, set breakpoints and single step in code to work to locate the failure and gain insight into events leading up to the crash.
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. Additional analysis can be done using the [**!thread**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-thread) extension, as well as the [**dds,dps,dqs**](https://docs.microsoft.com/windows-hardware/drivers/debugger/dds--dps--dqs--display-words-and-symbols-) commands. This can be a reasonable technique when WinDbg reports "Probably caused by : ntkrnlmp.exe" 
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. 
+
+Additional analysis can be done using the [**!thread**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-thread) extension, as well as the [**dds,dps,dqs**](https://docs.microsoft.com/windows-hardware/drivers/debugger/dds--dps--dqs--display-words-and-symbols-) commands. This can be a reasonable technique when WinDbg reports "Probably caused by : ntkrnlmp.exe" 
 
 If exception code 0x80000003 occurs, a hard-coded breakpoint or assertion was hit, but the system was started with the **/NODEBUG** switch. This problem should not occur frequently. If it occurs repeatedly, make sure that a kernel debugger is connected and the system is started with the **/DEBUG** switch.
 
 If exception code 0x80000002 occurs, the trap frame supplies additional information.
+
 
 For more information see the following topics:
 
@@ -94,7 +97,12 @@ For more information see the following topics:
 
 [Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
 
- 
+
+**Time Travel Trace**
+
+If the bug check can be reproduced on demand, investigate the possibility of taking a time travel trace using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
+
+
 Remarks
 ----------
 
@@ -106,7 +114,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   Check with your hardware vendor for any ACPI or other firmware updates. Hardware issues, such as system incompatibilities, memory conflicts, and IRQ conflicts can also generate this error.
 
--   You can also disable memory caching/shadowing of the BIOS might to try to resolve the error. You should also run hardware diagnostics, that the system manufacturer supplies.
+-   You can also disable memory caching/shadowing of the BIOS to try to resolve the error. You should also run hardware diagnostics, that the system manufacturer supplies.
 
 -   Confirm that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).
 

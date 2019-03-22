@@ -70,6 +70,13 @@ Looking up the NT status value returned in parameter 4 can provide additional in
 Resolution
 ----------
 
+Use the NTS
+
+Remarks
+----------
+
+
+
 Try booting into safe mode and then restart the OS normally. If the restart does not fix the problem, the registry damage is too extensive. Try the following steps.
 
 -   If you have a system restore point, try restoring to an earlier restore point.
