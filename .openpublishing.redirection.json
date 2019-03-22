@@ -7500,5 +7500,15 @@
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/debugger/-evlog",
       "redirect_document_id": false
     }
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/mobile-plans-promotional-content.md",
+      "redirect_URL": "windows-driver-docs-pr/mobilebroadband/mobile-plans-configuration.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/mobile-plans-prepaid-experience.md",
+      "redirect_URL": "windows-driver-docs-pr/mobilebroadband/mobile-plans-device-experience.md",
+      "redirect_document_id": false
+    },
   ]
 }
