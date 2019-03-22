@@ -98,7 +98,6 @@ To ensure the best user experience on Windows, you should adhere to the policies
 | The account management experience provided by an MO, which can be within the MO Direct experience, a separate and dedicated account management portal, or a dedicated MO app, should enable users to take actions on their current data plans, such as canceling a subscription. | Required                |
 | Users will receive an order confirmation after purchasing a data plan from the MO Direct experience successfully.                                                                                                                                                                | Recommended             |
 
-
 ### Security
 
 | Policy                                                                                                                               | Required or Recommended |
