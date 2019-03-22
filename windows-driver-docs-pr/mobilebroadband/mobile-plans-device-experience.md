@@ -86,7 +86,11 @@ The table below provide a reference between the GetBalance response type and wha
 
 ## GetBalance API
 
+> [!Important]
+> Please request a [Windows COSA update to enable Get Balance](#how-to-enable-get-balance-in-windows-cosa) in Windows.
+
 The `GetBalance` API queries current subscription status, controls whether the *Mobile Plans* experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the `GetBalance` API.
+
 
 <img src="images/mobile_plans_get_balance_api_flow.png" alt="GetBalance API flow" title="GetBalance API flow" width="600" />
 
@@ -227,9 +231,23 @@ Communication between Mobile Plans service and mobile operator service must be a
 
 Microsoft will provide the certificate during onboarding process.
 
+### How to enable Get Balance in Windows COSA
+
+It is required to configure the following settings in Windows COSA to enable the Get Balance support in Windows devices.
+
+The following COSA settings are required:
+
+- SupportDataMarketplace (must be set to “Yes”)
+- DataMarketplaceRoamingUIEnabled
+- SIM ICCID range (ICCID Range – Start and ICCID Range – End)
+
+For more info about all supported fields, see the Desktop COSA-only settings on [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
+
+To download the COSA/APN update spreadsheet, click [here](https://go.microsoft.com/fwlink/p/?linkid=851213).
+
 ## Walled Garden
 
-Walled Garden is key to supporting your prepaid customers when they run out of data. It enables them to reach the MO Direct portal even when there is no alternative internet connection such as Wi-Fi. This will enable consumers to purchase additional data plans and manage their subscriptions.
+Walled Garden is key to supporting your customers when they run out of data. It enables them to reach the MO Direct portal even when there is no alternative internet connection such as Wi-Fi. This will enable consumers to purchase additional data plans and manage their subscriptions.
 
 > [!NOTE]
 > The *Mobile Plans* architecture does not support IP ranges for Walled Garden endpoints. Host names must be used for whitelisting.

@@ -31,12 +31,20 @@ Mobile Plans enables end users to perform the following:
 | COSA database | Country and Operator Settings Asset. This is a database that contains mobile operator connectivity settings to be used in Windows devices. For more info about COSA, see [COSA Overview](cosa-overview.md). |
 | Mobile Plans | The name of this project. |
 | Mobile Plans app | The Microsoft app to enable Mobile Plans, formerly known as the Paid Wi-Fi and Cellular (PWC) app. |
-| PAYG | Pay As You Go |
 | RPS | Requests Per Second |
 
 ## Project overview
 
-Mobile Plans project integration is composed of four stages, each of which has high-level tasks. Some of these high-level tasks are for mobile operators, while others are joint tasks where Microsoft works in coordination with mobile operators. The following diagram illustrates the four stages of the Mobile Plans project.
+Mobile Plans project integration is composed of four stages, each of which has high-level tasks. Some of these high-level tasks are for mobile operators, while others are joint tasks where Microsoft works in coordination with mobile operators. 
+
+1. Implementation phase
+   The mobile operator perform the development of their solution according to their user cases and request Mobile Plans configurations and Windows configurations as needed.
+2. Integration
+   1. 
+3. Launch
+
+
+The following diagram illustrates the four stages of the Mobile Plans project.
 
 <img src="images/dynamo_project_overview.png" alt="Mobile Plans project overview" title="Mobile Plans project overview" width="600" />
 
@@ -81,7 +89,6 @@ To get started with the postpaid Mobile Plans experience, follow these steps:
 
 See these topics for additional information about Mobile Plans:
 
-- [Prepaid experience](mobile-plans-prepaid-experience.md)
 - [Promotional content](mobile-plans-promotional-content.md)
 - [Asynchronous fulfillment](mobile-plans-asynchronous-fulfillment.md)
 - [Appendix](mobile-plans-appendix.md)

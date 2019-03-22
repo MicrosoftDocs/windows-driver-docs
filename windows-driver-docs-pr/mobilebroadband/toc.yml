@@ -327,7 +327,7 @@
   - name: "Mobile Plans"
     href: mobile-plans.md
     items:
-    - name: "Mobile operator use case"
+    - name: "Use cases"
       href: mobile-plans-userCases.md
       items:
       - name: "Mobile operator web portal"
@@ -342,10 +342,6 @@
       href: mobile-plans-configuration.md
     - name: "Launch"
       href: mobile-plans-launch.md
-    - name: "Prepaid experience"
-      href: mobile-plans-prepaid-experience.md
-    - name: "Promotional content"
-      href: mobile-plans-promotional-content.md
     - name: "Asynchronous fulfillment"
       href: mobile-plans-asynchronous-fulfillment.md
     - name: "Appendix"
