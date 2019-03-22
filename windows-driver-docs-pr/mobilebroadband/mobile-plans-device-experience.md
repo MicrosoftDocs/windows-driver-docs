@@ -86,7 +86,7 @@ The table below provide a reference between the GetBalance response type and wha
 
 ## GetBalance API
 
-The `GetBalance` API queries current subscription status, controls whether the *Mobile Plans* experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the `GetBalance` API. 
+The `GetBalance` API queries current subscription status, controls whether the *Mobile Plans* experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the `GetBalance` API.
 
 <img src="images/mobile_plans_get_balance_api_flow.png" alt="GetBalance API flow" title="GetBalance API flow" width="600" />
 
@@ -94,7 +94,7 @@ The `GetBalance` API queries current subscription status, controls whether the *
 
 Communication between the *Mobile Plans* service and the MO service involves manipulating the resources in the following diagram. Explanations for each resource are in the tables following the diagram.
 
-<img src="images/dynamo_prepaid_get_balance_api_resource_model.png" alt="GetBalance API resource model diagram" title="GetBalance API resource model diagram" width="600" />
+<img src="images/mobile_plans_get_balance_resource.png" alt="GetBalance API resource model diagram" title="GetBalance API resource model diagram" width="600" />
 
 #### SIM resource
 
@@ -109,7 +109,8 @@ Communication between the *Mobile Plans* service and the MO service involves man
 
 | JSON property | Type | Description |
 | --- | --- | --- |
-| Type | Enum | Possible values: <ul><li>MODIRECT: Indicates if the user balance is MO Direct.</li><li>MODIRECTPAYG: Indicates if the user balance is MO Direct PAYG.</li><li>NONE: Indicates the user has no balance. When the remaining balance is 0 but the plan has not expired, we expect to receive "NONE" so that the user can purchase data plans.</li><li>NOTSUPPORTED: Indicates the SIM is not supported by the *Mobile Plans* experience. "NOTSUPPORTED" is used when the SIM should not be in the *Mobile Plans* supported range. We will turn off the *Mobile Plans* experience in the network flyout and return a generic error message in the Mobile Plans app when we receive this type.</li></ul> |
+|id |String| Mobile operator internal id, to track the transaction | 
+Type | Enum | Possible values: <ul><li>MODIRECT: Indicates if the user balance is MO Direct.</li><li>MODIRECTPAYG: Indicates if the user balance is MO Direct PAYG.</li><li>NONE: Indicates the user has no balance. When the remaining balance is 0 but the plan has not expired, we expect to receive "NONE" so that the user can purchase data plans.</li><li>NOTSUPPORTED: Indicates the SIM is not supported by the *Mobile Plans* experience. "NOTSUPPORTED" is used when the SIM should not be in the *Mobile Plans* supported range. We will turn off the *Mobile Plans* experience in the network flyout and return a generic error message in the Mobile Plans app when we receive this type.</li></ul> |
 | dataRemainingInMB | Double | The data remaining in the current user plan, in MB. |
 | timeRemaining | String | The time duration specified in [ISO 8601](https://go.microsoft.com/fwlink/p/?linkid=866182). |
 
@@ -123,6 +124,8 @@ The following headers may be included in every request from the *Mobile Plans* s
 | Authorization (optional) | String | A basic authentication string optionally provided by the MO. |
 
 ### Error codes
+
+The table below defines the error codes that should be used in the HTTP response.
 
 | Error code | Description |
 | --- | --- |
@@ -138,13 +141,7 @@ The following headers may be included in every request from the *Mobile Plans* s
 
 ### GetBalance API specification
 
-*Mobile Plans* must understand the status of the subscription for several reasons, the most important of which is that Mobile Plans decides where a user should be allowed to purchase a new plan based on their current balance. Users must also be able to check their current remaining balance at any time within the experience.
-
-The `GetBalance` API is called when network flyout is displayed or when Mobile Plans app is launched.
-
-The following series of examples show the call flow for the `GetBalance` API.
-
-#### Example 1: Checking balance any time within the experience
+The `GetBalance` API is called when network flyout is displayed in the Windows device, the Mobile Plans service is a proxy for this communication
 
 HTTP request, where *moBaseUrl* is the endpoint of the MO-hosted service and *sim id* is the ICCID:
 
@@ -160,7 +157,9 @@ Query parameters:
 | limit | Integer |Optional. The maximum count of balances to be returned. If not specified, all balances should be returned. |
 | fieldsTemplate | Enum |Specifies the list of fields that must be returned in the resource. <p>Possible values:</p><ul><li>Basic: *type*, *dataRemainingInMB*, and *timeRemaining* in the Balance resource must be returned.</li><li>Full: All properties in the Balance resource must be returned.</li></ul> |
 
-#### Example 2: Returning the first balance that is available for the user in US
+The following series of examples show the call flow for the `GetBalance` API.
+
+#### Example 1: Returning the first balance that is available for the user in US
 
 ```HTTP
 GET https://moendpoint.com/v1/sims/iccid: 8988247000100003319/balances?fieldsTemplate=basic&limit=1&location=us HTTP/1.1
@@ -194,7 +193,7 @@ Response JSON:
 | --- | --- | --- |
 | Balances | Collection | A collection of Balances. |
 
-#### Example 3: The expected response for a SIM that is in the COSA ICCID range but should not be supported by Mobile Plans
+#### Example 2: The expected response for a SIM that is in the COSA ICCID range but should not be supported by Mobile Plans
 
 HTTP request:
 
@@ -224,7 +223,9 @@ X-MS-DM-TransactionId: “12345”
 
 ### Authentication
 
-Communication between Mobile Plans service and your service must be authenticated using the Mutual Transport Layer Security (MTLS). Microsoft will provide a certificate that you will use to validate the identity of the requester to **moBaseUrl**.
+Communication between Mobile Plans service and mobile operator service must be authenticated using the Mutual Transport Layer Security (MTLS). Microsoft will provide a certificate that you will use to validate the identity of the requester to **moBaseUrl**.
+
+Microsoft will provide the certificate during onboarding process.
 
 ## Walled Garden
 
