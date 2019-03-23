@@ -61,7 +61,7 @@ The KMODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000001E. This ind
 Cause
 -----
 
-This is a common bug check. To interpret it, you must identify which exception was generated.
+To interpret this bug check, you must identify which exception was generated.
 
 Common exception codes include:
 

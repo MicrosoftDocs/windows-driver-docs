@@ -300,8 +300,6 @@ If the bug check can be reproduced on demand, investigate the possibility of tak
 
 If you are not equipped to debug this problem using the techniques described above, you can use some basic troubleshooting techniques.
 
-- If you recently added hardware to the system, try removing or replacing it. Or check with the manufacturer to see if any patches are available.
-
 - If new device drivers or system services have been added recently, try removing or updating them. Try to determine what changed in the system that caused the new bug check code to appear.
 
 - Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
@@ -309,6 +307,8 @@ If you are not equipped to debug this problem using the techniques described abo
 - Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 - To try and isolate the cause, temporally disable power save using control panel, power options. Some driver issues are related to the various states of system hibernation and the suspending and resumption of power.
+
+- If you recently added hardware to the system, try removing or replacing it. Or check with the manufacturer to see if any patches are available.
 
 - You can try running the hardware diagnostics supplied by the system manufacturer.
 
