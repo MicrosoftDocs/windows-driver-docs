@@ -44,7 +44,6 @@ Mobile Plans project integration is composed of four stages, each of which has [
 | **Integration** | The mobile operator is enable in Mobile Plans to run end-to-end validation. |
 | **Launch** | The mobile operator is commercially launched to the market. |
 
-
 ## Functional overview
 
 The following diagram shows a high-level view of how a Windows 10 device uses Mobile Plans to interact with different services and solutions to successfully activate a subscription and install an eSIM profile.

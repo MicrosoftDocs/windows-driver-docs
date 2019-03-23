@@ -16,14 +16,13 @@ This topic describes what steps are needed to integrate and validate the mobile 
 
 ## Mobile Plans service environments
 
-There are two Mobile Plans service environments, *Staging* and *Production*. The integration, validation will be performed in the *staging* environment, the *production* environment is only used for commercial launch. 
+There are two Mobile Plans service environments, *Staging* and *Production*. The integration, validation will be performed in the *staging* environment, the *production* environment is only used for commercial launch.
 
 ## Validation
 
 This section describes testing and validation that you must do to ensure that you are ready to move into the Integration phase.
 
-
-### Mobile Operator Web portal 
+### Mobile Operator Web portal
 
 Validate that you could run 50 end-to-end user cases that you defined, for instance:
 

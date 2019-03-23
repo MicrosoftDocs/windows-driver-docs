@@ -44,7 +44,7 @@ These experiences build on top of the [basic device experience](#basic-device-ex
 
 ### Network flyout user experience
 
-Depending on the information that is received from *GetBalance* API calls, the network flyout behaves differently, which enhances the user experience. 
+Depending on the information that is received from *GetBalance* API calls, the network flyout behaves differently, which enhances the user experience.
 The network flyout has the following elements:
 
 1. Connect with a data plan  
@@ -76,7 +76,6 @@ The table below provide a reference between the GetBalance response type and wha
 
 The GetBalance API queries current subscription status, controls whether the *Mobile Plans* experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the *GetBalance* API.
 
-
 <img src="images/mobile_plans_get_balance_api_flow.png" alt="GetBalance API flow" title="GetBalance API flow" width="600" />
 
 ### Resource model
@@ -98,7 +97,7 @@ Communication between the *Mobile Plans* service and the MO service involves man
 
 | JSON property | Type | Description |
 | --- | --- | --- |
-|id |String| Mobile operator internal id, to track the transaction | 
+|id |String| Mobile operator internal id, to track the transaction |
 Type | Enum | Possible values: <ul><li>MODIRECT: Indicates if the user balance is MO Direct.</li><li>MODIRECTPAYG: Indicates if the user balance is MO Direct PAYG.</li><li>NONE: Indicates the user has no balance. When the remaining balance is 0 but the plan has not expired, we expect to receive "NONE" so that the user can purchase data plans.</li><li>NOTSUPPORTED: Indicates the SIM is not supported by the *Mobile Plans* experience. "NOTSUPPORTED" is used when the SIM should not be in the *Mobile Plans* supported range. We will turn off the *Mobile Plans* experience in the network flyout and return a generic error message in the Mobile Plans app when we receive this type.</li></ul> |
 | dataRemainingInMB | Double | The data remaining in the current user plan, in MB. |
 | timeRemaining | String | The time duration specified in [ISO 8601](https://go.microsoft.com/fwlink/p/?linkid=866182). |
@@ -187,7 +186,7 @@ Response JSON:
 HTTP request:
 
 ```html
-GET https://{moBaseUrl}/sims/{sim id}/balances?fieldsTemplate=basic&limit=1&location=US 
+GET https://{moBaseUrl}/sims/{sim id}/balances?fieldsTemplate=basic&limit=1&location=US
 HTTP/1.1
 ```
 
@@ -241,7 +240,7 @@ The MO Direct web portal and *GetBalance* API endpoint must also be part of this
 
 ### Walled Garden endpoints
 
-There are only a small number of required endpoints that are always accessible to end users. The following table defines the endpoints required for Walled Garden. 
+There are only a small number of required endpoints that are always accessible to end users. The following table defines the endpoints required for Walled Garden.
 
 | URL | HTTP/HTTPS |
 | --- | --- |
