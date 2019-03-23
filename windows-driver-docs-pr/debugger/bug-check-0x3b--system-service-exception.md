@@ -98,13 +98,13 @@ Remarks
 
 For general troubleshooting of Windows bug check codes, follow these suggestions:
 
--   If you recently added hardware to the system, try removing or replacing it. Or check with the manufacturer to see if any patches are available.
-
 -   If new device drivers or system services have been added recently, try removing or updating them. Try to determine what changed in the system that caused the new bug check code to appear.
 
 -   Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
 
 -   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+
+-   If you recently added hardware to the system, try removing or replacing it. Or check with the manufacturer to see if any patches are available.
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
