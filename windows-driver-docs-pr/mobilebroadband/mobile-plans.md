@@ -35,20 +35,14 @@ Mobile Plans enables end users to perform the following:
 
 ## Project overview
 
-Mobile Plans project integration is composed of four stages, each of which has [high-level tasks](mobile-plans-appendix.md#high-level-integration-schedule). Some of these high-level tasks are for mobile operators, while others are joint tasks where Microsoft works in coordination with mobile operators. 
+Mobile Plans project integration is composed of four stages, each of which has [high-level tasks](mobile-plans-appendix.md#high-level-integration-schedule). Some of these high-level tasks are for mobile operators, while others are joint tasks where Microsoft works in coordination with mobile operators.
 
-1. Implementation phase
-   The mobile operator perform the development of their solution according to their user cases and request Mobile Plans configurations and Windows configurations as needed.
-2. Integration phase
-   dfdfdf
-   fdf
-   df
-3. Launch phase
-   dfdfd
-   fdf
-   fd
-   fd
-   ffdfd
+| Stage | Description |
+| --- | --- |
+| **Feasiblity** | The mobile operator assess the Mobile Plans solution, digest this documentation and reach out the Microsoft representative with questions as needed. |
+| **Implementation** | The mobile operator perform the development of their solution according to their user cases and request Mobile Plans configurations and Windows configurations as needed. |
+| **Integration** | The mobile operator is enable in Mobile Plans to run end-to-end validation. |
+| **Launch** | The mobile operator is commercially launched to the market. |
 
 
 ## Functional overview
@@ -83,14 +77,10 @@ Windows uses the Mobile Plans app as a client to consume the overall Mobile Plan
 To get started with the postpaid Mobile Plans experience, follow these steps:
 
 1. [Mobile operator use cases](mobile-plans-userCases.md)
-   1. Mobile Operator Web Portal
-   2. Control back notifications
-   3. eSIM download error handling
-   4. Define your device experience
-2. [Configuration](mobile-plans-configuration.md)
+2. [Integration](mobile-plans-integration.md)
 3. [Launch](mobile-plans-launch.md)
 
 See these topics for additional information about Mobile Plans:
 
-- [Asynchronous fulfillment](mobile-plans-asynchronous-fulfillment.md)
 - [Appendix](mobile-plans-appendix.md)
+- [Asynchronous fulfillment](mobile-plans-asynchronous-fulfillment.md)
