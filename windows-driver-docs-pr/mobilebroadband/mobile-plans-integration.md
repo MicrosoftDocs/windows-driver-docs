@@ -1,7 +1,7 @@
 ---
 title: Mobile Plans Integration
 description: This topic describes the Integration step for the Mobile Plans program.
-ms.assetid: 283E45EF-D421-429B-A9AF-BED64BB670B0
+ms.assetid: F818B69D-DFA3-4296-B420-43F59D370E3C
 keywords:
 - Windows Mobile Plans Integration, Mobile Plans integration mobile operators
 ms.date: 03/22/2019
