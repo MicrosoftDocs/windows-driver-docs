@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 
 # Handling Data Type Negotiation in AVStream Codecs
 
-
 When a device is initialized, the system-supplied Device Proxy (Devproxy) module parses the filter descriptors that are provided by the driver. Additionally, Devproxy exposes the driver-supported data ranges on the input and output pins of the corresponding MFT (Media Foundation Transform).
 
 When streaming begins, the MF pipeline and user-mode applications use these ranges to perform data type negotiation with the driver.
@@ -66,7 +65,7 @@ To enable successful data type negotiation, the minidriver must follow these ste
 
 7.  If the input media type is set, Video Processors should report their output types based on the specified input media type.
 
-8.  The driver should support the [ICodecAPI](https://go.microsoft.com/fwlink/p/?linkid=146348) interface. User-mode components can then obtain codec configuration information by using this user-mode interface.
+8.  The driver should support the [ICodecAPI](https://docs.microsoft.com/en-us/previous-versions/ms784893(v%3Dvs.85)) interface. User-mode components can then obtain codec configuration information by using this user-mode interface.
 
 9.  During setup of an encoder, first the ICodecAPI properties are set, followed by the output media type. Following this, the encoder should only provide input types that it can support with the current configuration.
 
@@ -81,11 +80,3 @@ To enable successful data type negotiation, the minidriver must follow these ste
 14. Pins on an AVStream driver should have states that are independent of one another. This means an input pin can transition from the **KSSTATE\_STOP** up to the **KSSTATE\_RUN** while the output pin remains at the **KSSTATE\_STOP** state.
 
 15. When the minidriver receives property GET requests with variable data buffer sizes, the minidriver should interpret a **NULL** buffer as a query for size of the buffer required. In this case, the driver should specify the required length in the Irp-&gt;IoStatus.Information field and return STATUS\_BUFFER\_OVERFLOW. In addition, the minidriver should set the return code to be a warning and not an error. For example, follow this guidance with data intersection handlers.
-
- 
-
- 
-
-
-
-

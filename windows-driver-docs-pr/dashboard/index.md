@@ -22,7 +22,7 @@ The Partner Center for Windows Hardware enables you to create and manage your sy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_upgrade.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_upgrade.svg" alt="icon for Hardware submissions: a circle, filled white over blue, with an arrow pointing up" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -43,7 +43,7 @@ The Partner Center for Windows Hardware enables you to create and manage your sy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="Icon for driver distribution: a rocket, ready to blast off" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -63,7 +63,7 @@ The Partner Center for Windows Hardware enables you to create and manage your sy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="Icon for Dashboard API: intermeshing gears within a wheel" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -83,7 +83,7 @@ The Partner Center for Windows Hardware enables you to create and manage your sy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_account-management.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_account-management.svg" alt="Dashboard administration icon: a line drawing of an anonymous user" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -103,7 +103,7 @@ The Partner Center for Windows Hardware enables you to create and manage your sy
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_portal.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/common/i_portal.svg" alt="Dashboard information icon, an abstract web page with the top nav and side TOC highlighted" />
                         </div>
                     </div>
                     <div class="cardText">
