@@ -42,24 +42,9 @@ By implementing the enhanced device experience, you can offer these benefits to 
 
 These experiences build on top of the [basic device experience](#basic-device-experience); this will be the default experience in the device network flyout.
 
-**8<=================================**
-
-_**THIS IS SHOULD BE REMOVED**_
-
-To implement prepaid, follow these steps:
-
-1. Implement the `GetBalance` API.
-   1. Update the Windows COSA database, to enable device to request a balance status
-2. Implement a Walled Garden.
-
-3. Validate the `GetBalance` API and Walled Garden.
-4. Comply with API load requirements.
-
-**8<=================================**
-
 ### Network flyout user experience
 
-Depending on the information that is received from `GetBalance` API calls, the network flyout behaves differently, which enhances the user experience. 
+Depending on the information that is received from *GetBalance* API calls, the network flyout behaves differently, which enhances the user experience. 
 The network flyout has the following elements:
 
 1. Connect with a data plan  
@@ -67,7 +52,7 @@ The network flyout has the following elements:
 2. View my account  
   Behaves based on the [basic device experience](#basic-device-experience)
 3. Balance information  
-  Shows the balance available, which is provided in your `GetBalance` response.
+  Shows the balance available, which is provided in your *GetBalance* response.
 
 The following image shows these network flyout elements. Connect with a data plan corresponds with A, View my account corresponds with B, and Balance information corresponds with C.
 
@@ -89,7 +74,7 @@ The table below provide a reference between the GetBalance response type and wha
 > [!Important]
 > Please request a [Windows COSA update to enable Get Balance](#how-to-enable-get-balance-in-windows-cosa) in Windows.
 
-The `GetBalance` API queries current subscription status, controls whether the *Mobile Plans* experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the `GetBalance` API.
+The GetBalance API queries current subscription status, controls whether the *Mobile Plans* experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the *GetBalance* API.
 
 
 <img src="images/mobile_plans_get_balance_api_flow.png" alt="GetBalance API flow" title="GetBalance API flow" width="600" />
@@ -145,7 +130,7 @@ The table below defines the error codes that should be used in the HTTP response
 
 ### GetBalance API specification
 
-The `GetBalance` API is called when network flyout is displayed in the Windows device, the Mobile Plans service is a proxy for this communication
+The *GetBalance* API is called when network flyout is displayed in the Windows device, the Mobile Plans service is a proxy for this communication
 
 HTTP request, where *moBaseUrl* is the endpoint of the MO-hosted service and *sim id* is the ICCID:
 
@@ -161,7 +146,7 @@ Query parameters:
 | limit | Integer |Optional. The maximum count of balances to be returned. If not specified, all balances should be returned. |
 | fieldsTemplate | Enum |Specifies the list of fields that must be returned in the resource. <p>Possible values:</p><ul><li>Basic: *type*, *dataRemainingInMB*, and *timeRemaining* in the Balance resource must be returned.</li><li>Full: All properties in the Balance resource must be returned.</li></ul> |
 
-The following series of examples show the call flow for the `GetBalance` API.
+The following series of examples show the call flow for the *GetBalance* API.
 
 #### Example 1: Returning the first balance that is available for the user in US
 
@@ -252,7 +237,7 @@ Walled Garden is key to supporting your customers when they run out of data. It 
 > [!NOTE]
 > The *Mobile Plans* architecture does not support IP ranges for Walled Garden endpoints. Host names must be used for whitelisting.
 
-The MO Direct web portal and `GetBalance` API endpoint must also be part of this Walled Garden.
+The MO Direct web portal and *GetBalance* API endpoint must also be part of this Walled Garden.
 
 ### Walled Garden endpoints
 

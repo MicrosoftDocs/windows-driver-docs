@@ -327,7 +327,7 @@
   - name: "Mobile Plans"
     href: mobile-plans.md
     items:
-    - name: "Use cases"
+    - name: "Implementation"
       href: mobile-plans-userCases.md
       items:
       - name: "Mobile operator web portal"
@@ -338,14 +338,16 @@
         href: mobile-plans-eSIM-error-handling.md
       - name: "Device experience"
         href: mobile-plans-device-experience.md
-    - name: "Configuration"
-      href: mobile-plans-configuration.md
+      - name: "Configuration"
+        href: mobile-plans-configuration.md
+    - name: "Integration"
+      href: mobile-plans-integration.md
     - name: "Launch"
       href: mobile-plans-launch.md
-    - name: "Asynchronous fulfillment"
-      href: mobile-plans-asynchronous-fulfillment.md
     - name: "Appendix"
       href: mobile-plans-appendix.md
+    - name: "Asynchronous fulfillment"
+      href: mobile-plans-asynchronous-fulfillment.md
   - name: "Creating and configuring Internet Sharing experiences"
     href: creating-and-configuring-internet-sharing-experiences.md
   - name: "Developing apps using multiple PDP contexts"

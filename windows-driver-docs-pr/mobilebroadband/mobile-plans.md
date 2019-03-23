@@ -35,18 +35,21 @@ Mobile Plans enables end users to perform the following:
 
 ## Project overview
 
-Mobile Plans project integration is composed of four stages, each of which has high-level tasks. Some of these high-level tasks are for mobile operators, while others are joint tasks where Microsoft works in coordination with mobile operators. 
+Mobile Plans project integration is composed of four stages, each of which has [high-level tasks](mobile-plans-appendix.md#high-level-integration-schedule). Some of these high-level tasks are for mobile operators, while others are joint tasks where Microsoft works in coordination with mobile operators. 
 
 1. Implementation phase
    The mobile operator perform the development of their solution according to their user cases and request Mobile Plans configurations and Windows configurations as needed.
-2. Integration
-   1. 
-3. Launch
+2. Integration phase
+   dfdfdf
+   fdf
+   df
+3. Launch phase
+   dfdfd
+   fdf
+   fd
+   fd
+   ffdfd
 
-
-The following diagram illustrates the four stages of the Mobile Plans project.
-
-<img src="images/dynamo_project_overview.png" alt="Mobile Plans project overview" title="Mobile Plans project overview" width="600" />
 
 ## Functional overview
 
@@ -89,6 +92,5 @@ To get started with the postpaid Mobile Plans experience, follow these steps:
 
 See these topics for additional information about Mobile Plans:
 
-- [Promotional content](mobile-plans-promotional-content.md)
 - [Asynchronous fulfillment](mobile-plans-asynchronous-fulfillment.md)
 - [Appendix](mobile-plans-appendix.md)

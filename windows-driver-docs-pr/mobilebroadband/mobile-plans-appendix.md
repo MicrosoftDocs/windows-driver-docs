@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 # Mobile Plans appendix
 
-[!include[Mobile Plans Beta Prerelease](../mobile-plans-beta-prerelease.md)]
-
 ## Web portal flow and reference design
 
 This reference design is a template that you can alter to best represent your brand and products. This reference design shows the recommended UX design with navigation elements, branding locations, and website functionalities.
@@ -99,7 +97,7 @@ When there are any unhandled errors or exceptions on the MO Direct portal that c
 
 <img src="images/dynamo_appendix_mo_direct_10_error.png" alt="MO Direct walkthrough: error example" title="MO Direct walkthrough: error example" width="600" />
 
-## High-level integration schedule
+## High level integration schedule
 
 The following table provides a high-level overview of the *Mobile Plans* project integration schedule.
 
