@@ -21,7 +21,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
+                                <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="A button that links to the topic: Getting Started with the Windows Driver Kit. The button has a picture of a rocket taking off." />
                             </div>
                         </div>
                             <div class="cardText">
@@ -38,7 +38,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage"> 
-                                <img src="https://docs.microsoft.com/media/common/i_api-reference.svg" alt="" />
+                                <img src="https://docs.microsoft.com/media/common/i_api-reference.svg" alt="Icon for WDK DDI reference topics: a circle with a monitor and a power button" />
                             </div>
                         </div>
                         <div class="cardText">
@@ -58,7 +58,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="Icon for What's New in Driver Kit docs: a bullhorn">
                         </div>
                     </div>
                     <div class="cardText">
@@ -75,7 +75,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="Icon for Download and Install: a monitor showing a blue gear near a downward pointing arrow">
                         </div>
                     </div>
                     <div class="cardText">
@@ -97,7 +97,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_code-samples.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_code-samples.svg" alt="Icon for Code Samples: curly brackets around three blue rectangles, stacked on each other">
                         </div>
                     </div>
                     <div class="cardText">
@@ -116,7 +116,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_guidelines.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_guidelines.svg" alt="Icon for Programming Guides: A book, Two pages with unnumbered lists. Above one page, a check mark; above the other, an X">
                         </div>
                     </div>
                     <div class="cardText">
@@ -144,7 +144,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_build.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_build.svg" alt="Icon for Testing and Deploying Drivers: a crane, lifting a package">
                         </div>
                     </div>
                     <div class="cardText">
@@ -171,7 +171,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_upgrade.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_upgrade.svg" alt="Icon for Submission: a circle filled white over blue, with an arrow pointing upward">
                         </div>
                     </div>
                     <div class="cardText">
@@ -193,7 +193,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_architecture.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_architecture.svg" alt="Icon for Driver Models and Technologies: a flow chart with a blue diamond linking to two white rectangles and one white circle">
                         </div>
                     </div>
                     <div class="cardText">
@@ -218,7 +218,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_link.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_link.svg" alt="Icon for Related Links: two links from a chain">
                         </div>
                     </div>
                     <div class="cardText">
