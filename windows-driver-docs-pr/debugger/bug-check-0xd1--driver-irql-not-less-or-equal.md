@@ -3,7 +3,7 @@ title: Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL
 description: The DRIVER_IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x000000D1. This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high.
 ms.assetid: 26cfd881-cc6e-4cc3-b464-e67d75700b96
 keywords: ["Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL", "DRIVER_IRQL_NOT_LESS_OR_EQUAL"]
-ms.date: 05/23/2017
+ms.date: 03/24/2019
 topic_type:
 - apiref
 api_name:
@@ -65,7 +65,9 @@ Cause
 
 A driver tried to access an address that is pageable (or that is completely invalid) while the IRQL was too high.
 
-This bug check is usually caused by drivers that have used improper addresses.
+If a driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use the debugger dx command to display this - `dx KiBugCheckDriver`.
+
+This bug check is usually caused by drivers that have used improper memory addresses.
 
 If the first parameter has the same value as the fourth parameter, and the third parameter indicates an execute operation, this bug check was likely caused by a driver that was trying to execute code when the code itself was paged out. Possible causes for the page fault include the following:
 
@@ -78,13 +80,50 @@ If the first parameter has the same value as the fourth parameter, and the third
 Resolution
 ----------
 
+If the problem is caused by the driver that you are developing, make sure that the function that was executing at the time of the bug check is not marked as pageable or does not call any other inline functions that could be paged out.
+
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
-For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
+```
+DRIVER_IRQL_NOT_LESS_OR_EQUAL (d1)
+An attempt was made to access a pageable (or completely invalid) address at an
+interrupt request level (IRQL) that is too high.  This is usually
+caused by drivers using improper addresses.
+If kernel debugger is available get stack backtrace.
+Arguments:
+Arg1: fffff808add27150, memory referenced
+Arg2: 0000000000000002, IRQL
+Arg3: 0000000000000000, value 0 = read operation, 1 = write operation
+Arg4: fffff808adc386a6, address which referenced memory
+```
+
+Use the `!IRQL` command to display information about the interrupt request level (IRQL) of a processor on the target computer before the debugger break.
+
+```
+0: kd> !irql
+Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
+```
+
+If a trap frame is available in the dump file use the `.trap` command to set your context to the provided address.
 
 To start, examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
 
-If the problem is caused by the driver that you are developing, make sure that the function that was executing at the time of the bug check is not marked as pageable or does not call any other inline functions that could be paged out.
+Because this bug check is usually caused by drivers that have used improper memory addresses, use parameters 1 and 3 to invesitgate further.
+
+Use the [Unassemble](u--unassemble-.md) command to look at the code in the address which referenced the memory in parameter 4.
+
+Use the [display memory](-db---dc---dd---dp---dq---du---dw.md) commands to examine the memory referenced in command in parameter 1.
+
+Use the `lm t n` to list modules that are loaded in the memory. Use `!memusage` and to examine the general state of the system memory. The `!pte` and `!pool` command may also be used to examine specific areas of memory. 
+
+
+**Driver Verifier**
+
+Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it sees errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifer* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
+
+
+Remarks
+-------
 
 If you are not equipped to use the Windows debugger to work on this problem, you can use some basic troubleshooting techniques.
 

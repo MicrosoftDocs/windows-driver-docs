@@ -91,7 +91,7 @@ Run the Windows Memory Diagnostics tool, to test the physical memory. Click the 
 For general blue screen troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
 Resolution
--------
+----------
 
 Typically, the referenced address is in freed memory or is simply invalid. This cannot be protected by a **try - except** handler -- it can only be protected by a probe or similar programming techniques.
 
@@ -191,6 +191,10 @@ In this case `fffff80240d322f9` is in the instruction pointer register, rip.
 The `!pte` and `!pool` command may also be used to examine memory.
 
 Use `!memusage` and to examine the general state of the system memory. 
+
+**Driver Verifier**
+
+Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it sees errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifer* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
 
 
 **Time Travel Trace**
