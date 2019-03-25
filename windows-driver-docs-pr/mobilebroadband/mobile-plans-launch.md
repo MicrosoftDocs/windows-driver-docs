@@ -5,7 +5,7 @@ ms.assetid: 85671090-C577-4EE7-9113-974E56FF65EB
 keywords:
 - Windows Mobile Plans launch, Mobile Plans launch mobile operators
 ms.author: windowsdriverdev
-ms.date: 11/02/2018
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
