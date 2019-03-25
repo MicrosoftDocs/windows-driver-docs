@@ -155,14 +155,14 @@ The device setup classes are different from USB device classes discussed earlier
      <tr>
       <td rowspan="3">Smart Card (0Bh)</td>
       <td rowspan="3"><strong>SmartCardReader</strong><p>{50dd5230-ba8a-11d1-bf5d-0000f805f530}</td>
-      <tr><td>Usbccid.sys (Obsolete)</td>
-      <td>Windows 10 for desktop editions</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
-      <td>Microsoft provides the Usbccid.sys mini-class driver to manage USB smart card readers. For more information about smart card drivers in Windows, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549003">Smart Card Design Guide</a>.
-       <p>Note that for Windows Server 2003, Windows XP, and Windows 2000, special instructions are required for loading this driver because it might have been released later than the operating system.<p>
-       <strong>Note</strong>   Usbccid.sys driver has been replaced by UMDF driver, WUDFUsbccidDriver.dll.</td>
-         </tr>
+        <tr>
+          <td>Usbccid.sys (Obsolete)</td>
+          <td>Windows 10 for desktop editions</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
+          <td>Microsoft provides the Usbccid.sys mini-class driver to manage USB smart card readers. For more information about smart card drivers in Windows, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549003">Smart Card Design Guide</a>.
+          <p>Note that for Windows Server 2003, Windows XP, and Windows 2000, special instructions are required for loading this driver because it might have been released later than the operating system.<p>
+          <strong>Note</strong>   Usbccid.sys driver has been replaced by UMDF driver, WUDFUsbccidDriver.dll.</td>
+          </tr>
          <tr>
-           <td>-</td>
            <td>WUDFUsbccidDriver.dll</br>WUDFUsbccidDriver.inf</td>
            <td>Windows 8.1</br>Windows 8</td>
            <td>WUDFUsbccidDriver.dll is a user-mode driver for USB CCID Smart Card Reader devices.</td>
@@ -190,7 +190,7 @@ The device setup classes are different from USB device classes discussed earlier
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>Recommended driver: <a href="Winusb.sys">WinUSB</a></td>
+      <td>Recommended driver: <a href="winusb.md">WinUSB (Winusb.sys)</a></td>
      </tr>
      <tr>
       <td>Audio/Video Devices (10h)</td>
