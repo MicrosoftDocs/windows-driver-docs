@@ -8,15 +8,13 @@ ms.localizationpriority: medium
 
 # Get Request and Response Schemas
 
-
 The Get request schema and corresponding response schema definition, and an example of each, are below.
 
 ## The Get Request Schema
 
-
 A Get request and response is used to query the printer for one or more of its current values.
 
-In this example, there are three queries. The first query points to a particular Bidirectional Communications Schema value and the second to a Bidirectional Communications Schema property that defines a subtree. The third is a deliberate error: there is no &lt;Foo&gt; property in the Bidirectional Communications Schema. (The response to this request is in the following section [The Get Response Schema](#get-response-schema).)
+In this example, there are three queries. The first query points to a particular Bidirectional Communications Schema value and the second to a Bidirectional Communications Schema property that defines a subtree. The third is a deliberate error: there is no &lt;Foo&gt; property in the Bidirectional Communications Schema. (The response to this request is in the following section [The Get Response Schema](#the-get-response-schema).)
 
 ```xml
 <bidi:Get xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
@@ -55,7 +53,6 @@ Formal Definition of the Get Request Schema
 ```
 
 ## The Get Response Schema
-
 
 This example is the response to the Get request above. For the queries that succeded, the result is the value of the particular schema. The third query failed, so the result is an error code. Note that since the second query requested a property that has children, the response provides the name and value of all of the children.
 
