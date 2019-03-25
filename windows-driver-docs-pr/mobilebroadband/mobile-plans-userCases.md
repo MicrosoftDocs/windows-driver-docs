@@ -26,7 +26,28 @@ Please follow these steps:
    3. **Asynchronous Profile Donwload**, implement this callback if the eSIM profile will be available in your SMDP+ server after a period of time and the device wiil be able to attahc to the cellular network immediatelly.
 3. [Handling eSIM download errors](mobile-plans-eSIM-error-handling.md)
 4. Define the [basic device experience](mobile-plans-device-experience.md#basic-device-experience).
-5. Perform the validation
+5. Provide [Mobile Plans configuration](mobile-plans-configuration.md) information
+6. [Validate](mobile-plans-integration.md) the implementation.
+7. Commercial [launch](mobile-plans-launch.md)
+
+## Add balance to a current subscription
+
+This section describes which work is needed to add balance to your current subscription, this is useful if you are selling prepaid plans or if you sell data packages once a postpaid subscription runs out of Internet data.
+
+1. Implement the [Mobile Operator web portal](mobile-plans-web-portal.md)
+2. Implement the [adding balance](mobile-plans-callbacks.md#adding-balance) control back to Mobile Plans.
+3. Implement the [enhanced device experience](mobile-plans-device-experience.md#enhanced-device-experience)
+   1. Implement the [Get Balance API](mobile-plans-device-experience.md#getbalance-api)
+   2. Implement the [Walled Garden](mobile-plans-device-experience.md#walled-garden)
+4. Provide [Mobile Plans configuration](mobile-plans-configuration.md) information
+5. [Validate](mobile-plans-integration.md) the implementation.
+6. Commercial [launch](mobile-plans-launch.md)
+
+## Cancelling a transaction
+
+This section describes which control back should be used to notify the Mobile Plans app, when a transactions is cancelled when the user is in the mobile operator web portal. This applies to all the above scenarios
+
+- Implement the [Cancelling purchase flow](mobile-plans-callbacks.md#cancelling-purchase-flow) control
 
 ## Activate a warm SIM in a Windows device
 
@@ -38,20 +59,6 @@ Please follow these steps:
 3. Implement the [enhanced device experience](mobile-plans-device-experience.md#enhanced-device-experience)
    1. Implement the [Get Balance API](mobile-plans-device-experience.md#getbalance-api)
    2. Implement the [Walled Garden](mobile-plans-device-experience.md#walled-garden)
-4. Perform the validation
-
-## Add balance to a current subscription
-
-This section describes which work is needed to add balance to your current subscription, this is useful if you are selling prepaid plans or if you sell data packages once a postpaid subscription runs out of Internet data.
-
-1. Implement the [Mobile Operator web portal](mobile-plans-web-portal.md)
-2. Implement the [adding balance](mobile-plans-callbacks.md#adding-balance) control back to Mobile Plans.
-3. Implement the [enhanced device experience](mobile-plans-device-experience.md#enhanced-device-experience)
-   1. Implement the [Get Balance API](mobile-plans-device-experience.md#getbalance-api)
-   2. Implement the [Walled Garden](mobile-plans-device-experience.md#walled-garden)
-
-## Cancelling a transaction
-
-This section describes which control back should be used to notify the Mobile Plans app, when a transactions is cancelled when the user is in the mobile operator web portal. This applies to all the above scenarios
-
-- Implement the [Cancelling purchase flow](mobile-plans-callbacks.md#cancelling-purchase-flow) control
+4. Provide [Mobile Plans configuration](mobile-plans-configuration.md) information
+5. [Validate](mobile-plans-integration.md) the implementation.
+6. Commercial [launch](mobile-plans-launch.md)
