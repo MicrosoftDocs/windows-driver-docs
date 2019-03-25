@@ -327,19 +327,19 @@
   - name: "Mobile Plans"
     href: mobile-plans.md
     items:
-    - name: "Implementation"
+    - name: "Mobile Plans Use cases"
       href: mobile-plans-userCases.md
       items:
       - name: "Mobile operator web portal"
         href: mobile-plans-web-portal.md
       - name: "Control back notifications"
         href: mobile-plans-callbacks.md
+      - name: "Service configuration"
+        href: mobile-plans-configuration.md
       - name: "eSIM download error handling"
         href: mobile-plans-eSIM-error-handling.md
-      - name: "Device experience"
+      - name: "Windows 10 device experience"
         href: mobile-plans-device-experience.md
-      - name: "Configuration"
-        href: mobile-plans-configuration.md
     - name: "Integration"
       href: mobile-plans-integration.md
     - name: "Launch"

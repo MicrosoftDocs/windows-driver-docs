@@ -8,7 +8,7 @@ ms.date: 03/22/2019
 ms.localizationpriority: medium
 ---
 
-# Mobile Plans Integration Stage
+# Mobile Plans Integration
 
 ## Overview
 

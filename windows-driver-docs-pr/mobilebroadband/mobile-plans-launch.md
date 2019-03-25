@@ -82,7 +82,7 @@ Microsoft will inform mobile operators of any Microsoft network, *Mobile Plans* 
 
 #### Mobile operator communication of services outage to Microsoft
 
-You must inform Microsoft of any Core Network Services outages via email no more than 30 minutes after you first become aware of such outages. [Mobile Plans Operations support](mailto:DYNAMOPARTNERSUP@microsoft.com) 
+You must inform Microsoft of any Core Network Services outages via email no more than 30 minutes after you first become aware of such outages. [Mobile Plans Operations support](mailto:DYNAMOPARTNERSUP@microsoft.com)
 
 ##### Planned maintenance
 

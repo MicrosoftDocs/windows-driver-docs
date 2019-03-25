@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans Device Experience
+title: Mobile Plans Windows 10 device experience
 description: This topic describes the Windows device experience after Mobile Plans activates.
 ms.assetid: E97AD441-86F7-439C-9800-7DD93AAC0545
 keywords:
@@ -8,7 +8,7 @@ ms.date: 03/15/2019
 ms.localizationpriority: medium
 ---
 
-# Mobile Plans Windows device experience
+# Mobile Plans Windows 10 device experience
 
 This topic describes, which are the capabilities that Mobile Plans program offers to ensure that mobile operator customers have experiences according to the mobile operator offerings.
 

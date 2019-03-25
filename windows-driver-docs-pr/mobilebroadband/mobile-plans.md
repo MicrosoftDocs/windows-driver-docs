@@ -21,7 +21,7 @@ Mobile Plans enables end users to perform the following:
 
 - Install and activate an eSIM profile.
 - Activate a device on a mobile operator subscription with either prepaid (PAYG) or postpaid plans.
-- Top up prepaid subscriptions when out of data and the only connectivity available is mobile connectivity.
+- Top up subscriptions when out of data and the only connectivity available is mobile connectivity.
 
 ## Definition of terms
 
@@ -30,7 +30,8 @@ Mobile Plans enables end users to perform the following:
 | Contoso Cellular | A fictional mobile operator used for explanatory purposes in these topics. |
 | COSA database | Country and Operator Settings Asset. This is a database that contains mobile operator connectivity settings to be used in Windows devices. For more info about COSA, see [COSA Overview](cosa-overview.md). |
 | Mobile Plans | The name of this project. |
-| Mobile Plans app | The Microsoft app to enable Mobile Plans, formerly known as the Paid Wi-Fi and Cellular (PWC) app. |
+| Mobile Plans app | The Microsoft app to enable Mobile Plans in Windows 10 devices. |
+| Mobile Plans service | The Microsoft service ti enable Mobile Plans solution in the cloud. |
 | RPS | Requests Per Second |
 
 ## Project overview
