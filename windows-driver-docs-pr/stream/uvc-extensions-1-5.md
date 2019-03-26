@@ -227,6 +227,44 @@ GET_RES, GET_MIN, GET_MAX, GET_CUR requests shall report field **bNumEntries** s
 
 GET_DEF request shall list all endpoints that have the intrinsics information available.
 
+##### 2.2.2.10 Metadata Control
+
+This control allows the host software to query and control metadata produced by the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface. This control gets mapped to [**KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA**](ksproperty-cameracontrol-extended-metadata.md) by the camera driver.
+
+![Metadata Control](images/uvc-1-15-metadata-control.png)
+
+If SET_CUR request is supported by the firmware, the following applies:
+- GET_MIN, GET_DEF requests shall report field dwValue set to 0.
+- GET_RES request shall report field dwValue to be the same value as reported by GET_MAX request.
+- When a SET_CUR request is received with dwValue set to 0, the camera shall not produce any metadata. When a SET_CUR request is received with dwValue set to be the same value as reported by GET_MAX request, the camera can produce metadata and the size of such metadata cannot exceed dwValue for any frame.
+
+If SET_CUR request is not supported by the firmware, the following applies:
+- GET_MIN, GET_DEF requests shall report field dwValue to be the same value as reported by GET_MAX request.
+- GET_RES request shall report field dwValue set to 0.
+- The camera can produce metadata and the total size of such metadata cannot exceed the dwValue - as reported by GET_MAX request – times 1024 bytes less the size of a UsbVideoHeader metadata payload, for any frame.  
+- A UsbVideoHeader metadata payload is the sizeof(KSCAMERA_METADATA_ITEMHEADER) + sizeof(KSTREAM_UVC_METADATA) or 24 bytes.
+The metadata produced shall conform to the Microsoft standard-format metadata described in section 2.2.3.
+
+##### 2.2.2.11 IR Torch Control
+
+This control provides a flexible means for the IR LED hardware to report the extent to which it can be controlled and provides the ability to control it.  This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface by adjusting the power to an IR lamp connected to the camera. This control gets mapped to [**KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCHMODE**](ksproperty-cameracontrol-extended-irtorchmode.md) by the camera driver.
+
+![IR Torch Control](images/uvc-1-15-irtorch-control.png)
+
+The following applies:
+- GET_LEN request shall report a value of 8.
+- GET_INFO request shall report a 3.  This value indicates a synchronous control that supports GET_CUR and SET_CUR.
+- GET_MIN request shall report field dwMode set to 0 and dwValue set to a value indicating minimum power.  A power level of 0 may indicate OFF, but the minimum operational power level need not be 0.
+- GET_RES request shall report field dwMode set to 0 and dwValue set a to a number less than or equal to GET_MAX(dwValue) – GET_MIN(dwValue) and such that GET_MAX(dwValue) – GET_MIN(dwValue) is evenly divisible by that value.  dwValue may not be zero (0).
+- GET_MAX request shall report field dwMode set with bits D[0-2] set to identify the capabilities of this control.  dwMode must have bit D0 set, indicating that OFF is supported, and it must have at least one other bit set, supporting an active state.  dwValue must be set to a value indicating normal power.
+- GET_DEF request shall report field dwMode set to the default mode the system should be in before streaming begins.  dwMode must be set to 2 (ON) or 4 (ALTERNATING).  dwValue should be set to the power level normally used for the FaceAuth control.  dwValue is defined by the manufacturer.
+- GET_CUR request shall report field dwMode set to the current operating mode and dwValue set to the current illumination.
+- When a SET_CUR request is received, the IR Torch will set the illumination to a prorate intensity using the requested operating mode.
+
+The IR Torch must emit the [**MF_CAPTURE_METADATA_FRAME_ILLUMINATION**](standardized-extended-controls-.md) attribute for every frame.  It can provide this through a Device MFT or by including a **MetadataId_FrameIllumination** attribute in the metadata payload from the camera.  See section 2.2.3.4.4.  
+
+This metadata’s sole purpose is to indicate whether a frame is illuminated or not.  This is the same metadata required by the [**KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE**](ksproperty-cameracontrol-extended-faceauth-mode.md) DDI and  the **MSXU_FACE_AUTHENTICATION_CONTROL** defined in section 2.2.2.7.  
+
 #### 2.2.3 Metadata
 
 The design for standard-format frame-metadata builds on the UVC custom metadata design from Windows 10. In Windows 10, custom metadata is supported for UVC by using a custom INF for the camera driver (note: the camera driver can be based on the Windows USBVIDEO.SYS, but a custom INF is required for the given hardware for metadata to come through). If MetadataBufferSizeInKB<PinIndex> registry entry is present and non-zero, then custom metadata is supported for that pin and the value indicates the buffer size used for the metadata. The <PinIndex> field indicates a 0 based index of the video pin index.
