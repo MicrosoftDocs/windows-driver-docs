@@ -41,7 +41,7 @@ For more information about this protocol, see [UEFI battery charging protocol](u
 
 ### UEFI display power state protocol (EFI\_DISPLAY\_POWER\_PROTOCOL)
 
-During the UEFI battery charging process, the UEFI battery charging application displays an alternating low power UI. After 10 seconds without the power button being pressed, the application calls [EFI\_DISPLAY\_POWER\_PROTOCOL.SetDisplayPowerState](efi-display-power-protocolsetdisplaypowerstate.md) to turn off the display and backlight. This helps the device consume less power during UEFI battery charging, which helps the device charge and proceed to the main OS more quickly. If the user presses the power button while the display is turned off, the application calls EFI\_DISPLAY\_POWER\_PROTOCOL.SetDisplayPowerState again to turn the display back on. For more details, see [User experience](#ux) later in this topic.
+During the UEFI battery charging process, the UEFI battery charging application displays an alternating low power UI. After 10 seconds without the power button being pressed, the application calls [EFI\_DISPLAY\_POWER\_PROTOCOL.SetDisplayPowerState](efi-display-power-protocolsetdisplaypowerstate.md) to turn off the display and backlight. This helps the device consume less power during UEFI battery charging, which helps the device charge and proceed to the main OS more quickly. If the user presses the power button while the display is turned off, the application calls EFI\_DISPLAY\_POWER\_PROTOCOL.SetDisplayPowerState again to turn the display back on. For more details, see [User experience](#user-experience) later in this topic.
 
 For more information about this protocol, see [UEFI display power state protocol](uefi-display-power-state-protocol.md).
 

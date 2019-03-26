@@ -10,16 +10,16 @@ ms.localizationpriority: medium
 
 Imaging applications make requests to the WIA service, which in turn communicates with the device minidriver through the minidriver writer-implemented [IWiaMiniDrv interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv). Applications typically make requests for:
 
-- [Creating and Initializing Items](#creating-and-initializing-items-si)
-- [Deleting Items](#deleting-items-si)
-- [Enumerating Device Capabilities](#enumerating-device-capabilities-si)
-- [Enumerating Image Formats](#enumerating-image-formats-si)
-- [Issuing Device Commands](#issuing-device-commands-si)
-- [Locking and Unlocking a Device](#locking-and-unlocking-a-device-si)
-- [Notifying a Device of an Event](#notifying-a-device-of-an-event-si)
-- [Obtaining Device Error Strings](#obtaining-device-error-strings-si)
-- [Reading and Storing Item Properties](#reading-and-storing-item-properties-si)
-- [Transferring Data](#transferring-data-si)
+- [Creating and Initializing Items](#creating-and-initializing-items)
+- [Deleting Items](#deleting-items)
+- [Enumerating Device Capabilities](#enumerating-device-capabilities)
+- [Enumerating Image Formats](#enumerating-image-formats)
+- [Issuing Device Commands](#issuing-device-commands)
+- [Locking and Unlocking a Device](#locking-and-unlocking-a-device)
+- [Notifying a Device of an Event](#notifying-a-device-of-an-event)
+- [Obtaining Device Error Strings](#obtaining-device-error-strings)
+- [Reading and Storing Item Properties](#reading-and-storing-item-properties)
+- [Transferring Data](#transferring-data)
 
 Applications make requests to the WIA service through the WIA application programming interface (API). For more information about this interface, see the Microsoft Windows SDK documentation.
 

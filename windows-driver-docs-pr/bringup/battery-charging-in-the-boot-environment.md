@@ -36,7 +36,7 @@ The following steps describe the charging process during the boot flow for devic
 
     - If the device does not detect a connected power source and the battery is too low to boot into the main OS, the device shuts down.
 
-4. Depending on the value of an OEM-customizable registry value, the battery charging application either continues the boot process after the device reaches a threshold, or waits for the user to hold the power button before doing so. For more information, see [Battery charging application flow](#batterychargingapp).
+4. Depending on the value of an OEM-customizable registry value, the battery charging application either continues the boot process after the device reaches a threshold, or waits for the user to hold the power button before doing so.
 
 The following diagram illustrates this components involved with the boot battery charging process. This diagram intentionally omits many UEFI components to focus on the battery charging process; for a more comprehensive view of the UEFI boot process, see [Boot and UEFI](boot-and-uefi.md).
 
@@ -48,7 +48,7 @@ When the boot battery charging process reaches the UEFI battery charging applica
 
 ### Threshold charging
 
-The following diagram shows the default boot battery charging process. In this process, the device boots to the main OS as soon as the battery reaches a certain threshold, called the *Boot to Main OS threshold*. For more information about this and other thresholds that are defined as part of the battery charging process, see [Battery charging thresholds](#thresholds).
+The following diagram shows the default boot battery charging process. In this process, the device boots to the main OS as soon as the battery reaches a certain threshold, called the *Boot to Main OS threshold*. For more information about this and other thresholds that are defined as part of the battery charging process, see [Battery charging thresholds](#battery-charging-thresholds).
 
 ![preboot battery flow for threshold charging](images/oem-preboot-battery-flow-threshold-charging.png)
 
@@ -140,7 +140,7 @@ The left side of the diagram shows all thresholds that affect the user experienc
 </tr>
 <tr class="odd">
 <td><p>Boot to Main OS threshold</p></td>
-<td><p>This is the threshold at which the device boots from UEFI-based charging to the Main OS in <em>Threshold charging mode</em>. It is necessary to hold the device in the UEFI charging phase to charge the battery when it is too low to boot into the Main OS. For more information about threshold charging mode, see <a href="#thresholdmode" data-raw-source="[Threshold charging](#thresholdmode)">Threshold charging</a>.</p></td>
+<td><p>This is the threshold at which the device boots from UEFI-based charging to the Main OS in <em>Threshold charging mode</em>. It is necessary to hold the device in the UEFI charging phase to charge the battery when it is too low to boot into the Main OS.</p></td>
 <td><p>OEMs must set this threshold to be higher than the <em>Boot to UEFI threshold</em> and the <em>Main OS shut down threshold</em>. This threshold is defined in percentage of the battery’s full capacity. By default, this value is set to 7%. Information about how to set this threshold will be provided in a future release of this documentation.</p></td>
 </tr>
 <tr class="even">
