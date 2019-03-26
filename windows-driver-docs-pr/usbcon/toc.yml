@@ -106,7 +106,7 @@
       items: 
       - name: "Understanding the  USB client driver code structure (UMDF)"
         href: understanding-the-umdf-template-code-for-usb.md
-    - name: "About USB Block Requests (URBs)"
+    - name: "About USB Requests Block (URBs)"
       href: communicating-with-a-usb-device.md
       items: 
       - name: "Allocating and Building URBs"
