@@ -2284,8 +2284,8 @@
     },
     {
       "source_path": "windows-driver-docs-pr/netcx/netadaptersetcurrentlinkstate.md",
-      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetcurrentlinkstate",
-      "redirect_document_id": true
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetlinkstate",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/netcx/netadaptersetdatapathcapabilities.md",
@@ -6040,6 +6040,11 @@
     {
       "source_path": "windows-driver-docs-pr/stream/ksproperty-cameracontrol-extended-focusmode2.md",
       "redirect_URL": "/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-focusmode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/netcx/using-the-ring-buffer.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/net-rings-and-net-ring-iterators",
       "redirect_document_id": true
     },
     {

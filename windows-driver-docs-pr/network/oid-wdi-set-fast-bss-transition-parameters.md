@@ -35,6 +35,7 @@ OID\_WDI\_SET\_FAST\_BSS\_TRANSITION\_PARAMETERS is sent in response to [NDIS\_S
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 

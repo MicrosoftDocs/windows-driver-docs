@@ -4,7 +4,7 @@ description: Device and adapter initialization
 ms.assetid: EBBEF0FB-6CDB-4899-AAE9-71812EE20AFB
 keywords:
 - NetAdapterCx device initialization, NetCx device initialization, NetAdapterCx adapter initialization, NetCx adapter initialization
-ms.date: 08/02/2018
+ms.date: 01/18/2019
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +35,9 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/dri
     > [!TIP]
     > If your device supports more than one NETADAPTER, we recommend storing pointers to each adapter in your device context.
 
-3. Create the NETADAPTER object. To do so, the client calls either [**NetDefaultAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netdefaultadapterinitallocate) or [**NetAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterinitallocate), followed by optional **NetAdapterInitSetXxx** methods to initailize the adapter's attributes. Finally, the client calls [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate). 
+3. Create the NETADAPTER object. To do so, the client calls [**NetAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterinitallocate), followed by optional **NetAdapterInitSetXxx** methods to initailize the adapter's attributes. Finally, the client calls [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate). 
 
-    The following example shows how a client driver might initialize a default NETADAPTER object. Note that error handling is simplified in this example.
+    The following example shows how a client driver might initialize a NETADAPTER object. Note that error handling is simplified in this example.
 
     ```C++
     WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attribs, MY_ADAPTER_CONTEXT);
@@ -45,7 +45,7 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/dri
     //
     // Allocate the initialization structure
     //
-    PNETADAPTER_INIT adapterInit = NetDefaultAdapterInitAllocate(device);
+    PNETADAPTER_INIT adapterInit = NetAdapterInitAllocate(device);
     if(adapterInit == NULL)
     {
         return status;
@@ -61,7 +61,7 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/dri
                                         MyEvtAdapterCreateTxQueue,
                                         MyEvtAdapterCreateRxQueue);
     NetAdapterInitSetDatapathCallbacks(adapterInit,
-                                        datapathCallbacks);
+                                       datapathCallbacks);
 
     // Power settings attributes
     NetAdapterInitSetNetPowerSettingsAttributes(adapterInit,
@@ -159,17 +159,15 @@ NetAdapterSetPowerCapabilities(netAdapter,
 // Receive scaling capabilities
 ...
 NetAdapterSetReceiveScalingCapabilities(netAdapter,
-                                        receiveScalingCapabilities);
+                                        &receiveScalingCapabilities);
 
 // Hardware offload capabilities
 ...
 NetAdapterOffloadSetChecksumCapabilities(netAdapter,
-                                         &checksumCapabilities,
-                                         EvtAdapterOffloadSetChecksum);
+                                         &checksumCapabilities);
 ...
 NetAdapterOffloadSetLsoCapabilities(netAdapter,
-                                    &lsoCapabilities,
-                                    EvtAdapterOffloadSetLso);
+                                    &lsoCapabilities);
 
 //
 // Required: start the adapter

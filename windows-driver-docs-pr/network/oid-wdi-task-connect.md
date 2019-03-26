@@ -60,10 +60,13 @@ The connection parameters must not have MFPEnabled and HostFIPSModeEnabled both 
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_CONNECT\_COMPLETE](ndis-status-wdi-indication-connect-complete.md)
+
 ## Unsolicited indication
 
-
 [NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_RESULT](ndis-status-wdi-indication-association-result.md)
+
+[NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md)
+
 Requirements
 ------------
 

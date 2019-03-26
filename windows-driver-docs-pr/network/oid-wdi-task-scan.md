@@ -75,10 +75,11 @@ The adapter must not violate regulatory restrictions when performing a scan.
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_SCAN\_COMPLETE](ndis-status-wdi-indication-scan-complete.md)
+
 ## Unsolicited indication
 
-
 [NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST](ndis-status-wdi-indication-bss-entry-list.md)
+
 This notification is used by the device to tell the host about updates to the BSS entries. It can be sent at any time.
 
 Requirements

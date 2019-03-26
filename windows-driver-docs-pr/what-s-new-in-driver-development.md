@@ -29,35 +29,35 @@ The following is a list of new feature highlights for driver development in Wind
 The following table shows the feature updates in Windows 10, by driver technology and version.
 
 
-|              Driver               | [1809](#whats-new-in-windows-10-version-1809-latest) |   [1803](#whats-new-in-windows-10-version-1803)    |       [1709](#whats-new-in-windows-10-version-1709)       |   [1703](#whats-new-in-windows-10-version-1703)    | [1607](#whats-new-in-windows-10-version-1607) |          [1507](#whats-new-in-windows-10-version-1507)          |
-|-----------------------------------|:----------------------------------------------------:|:--------------------------------------------------:|:---------------------------------------------------------:|:--------------------------------------------------:|:---------------------------------------------:|:---------------------------------------------------------------:|
-|               Audio               |       [![details](checkmark.png)](#audio-1809)       |      [![details](checkmark.png)](#audio-1803)      |         [![details](checkmark.png)](#audio-1709)          |      [![details](checkmark.png)](#audio-1703)      |      [![details](checkmark.png)](#audio)      |                   ![not available](minus.png)                   |
-|               ACPI                |             ![not available](minus.png)              |      [![details](checkmark.png)](#acpi-1803)       |          [![details](checkmark.png)](#acpi-1709)          |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|             Biometric             |             ![not available](minus.png)              |            ![not available](minus.png)             |       [![details](checkmark.png)](#biometric-1709)        |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|             Bluetooth             |     [![details](checkmark.png)](#bluetooth-1809)     |    [![details](checkmark.png)](#bluetooth-1803)    |                ![not available](minus.png)                |    [![details](checkmark.png)](#bluetooth-1703)    |          ![not available](minus.png)          |             [![details](checkmark.png)](#bluetooth)             |
-|          Buses and Ports          |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |          [![details](checkmark.png)](#buses-and-ports)          |
-|              Camera               |             ![not available](minus.png)              |     [![details](checkmark.png)](#camera-1803)      |                ![not available](minus.png)                |     [![details](checkmark.png)](#camera-1703)      |   [![details](checkmark.png)](#camera-1607)   |            [![details](checkmark.png)](#camera-1507)            |
-|             Cellular              |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |             [![details](checkmark.png)](#cellular)              |
-|              Display              |      [![details](checkmark.png)](#display-1809)      |     [![details](checkmark.png)](#display-1803)     |        [![details](checkmark.png)](#display-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display)              |
-|          Driver security          |             ![not available](minus.png)              |    [![details](checkmark.png)](#security-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display)              |
-|      Hardware notifications       |             ![not available](minus.png)              |            ![not available](minus.png)             | [![details](checkmark.png)](#hardware-notifications-1709) |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|   Human Interface Device (HID)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |      [![details](checkmark.png)](#human-interface-device)       |
-|              Kernel               |      [![details](checkmark.png)](#kernel-1809)       |     [![details](checkmark.png)](#kernel-1803)      |         [![details](checkmark.png)](#kernel-1709)         |     [![details](checkmark.png)](#kernel-1703)      |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|             Location              |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |  [![details](checkmark.png)](#location-1607)  |           [![details](checkmark.png)](#location-1507)           |
-|         Mobile broadband          |  [![details](checkmark.png)](#mobilebroadband-1809)  | [![details](checkmark.png)](#mobilebroadband-1803) |    [![details](checkmark.png)](#mobilebroadband-1709)     | [![details](checkmark.png)](#mobilebroadband-1703) |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|     Near Field Communication      |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |     [![details](checkmark.png)](#near-field-communication)      |
-|            Networking             |    [![details](checkmark.png)](#networking-1809)     |   [![details](checkmark.png)](#networking-1803)    |       [![details](checkmark.png)](#networking-1709)       |   [![details](checkmark.png)](#networking-1703)    |          ![not available](minus.png)          |          [![details](checkmark.png)](#networking-1507)          |
-|                POS                |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |       [![details](checkmark.png)](#pos-1703)       |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|                PCI                |             ![not available](minus.png)              |       [![details](checkmark.png)](#pci-1803)       |          [![details](checkmark.png)](#pci-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|               Print               |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |   [![details](checkmark.png)](#print-1607)    |            [![details](checkmark.png)](#print-1507)             |
-|      Pulse Width Modulation       |             ![not available](minus.png)              |            ![not available](minus.png)             |          [![details](checkmark.png)](#pwm-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|              Sensors              |      [![details](checkmark.png)](#sensors-1809)      |     [![details](checkmark.png)](#sensors-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|            Smart Card             |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |            [![details](checkmark.png)](#smart-card)             |
-|              Storage              |             ![not available](minus.png)              |            ![not available](minus.png)             |        [![details](checkmark.png)](#storage-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#storage)              |
-| System-Supplied Driver Interfaces |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          | [![details](checkmark.png)](#system-supplied-driver-interfaces) |
-|                USB                |        [![details](checkmark.png)](#usb-1809)        |       [![details](checkmark.png)](#usb-1803)       |          [![details](checkmark.png)](#usb-1709)           |       [![details](checkmark.png)](#usb-1703)       |          ![not available](minus.png)          |                [![details](checkmark.png)](#usb)                |
-|               WI-FI               |       [![details](checkmark.png)](#wifi-1809)        |      [![details](checkmark.png)](#wifi-1803)       |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|               WLAN                |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |    [![details](checkmark.png)](#wlan-1607)    |             [![details](checkmark.png)](#wlan-1507)             |
+| Driver  |[1903](#whats-new-in-windows-10-version-1903-latest)| [1809](#whats-new-in-windows-10-version-1809) |   [1803](#whats-new-in-windows-10-version-1803)    | [1709](#whats-new-in-windows-10-version-1709) |  [1703](#whats-new-in-windows-10-version-1703)  | [1607](#whats-new-in-windows-10-version-1607) |  [1507](#whats-new-in-windows-10-version-1507)  |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Audio  |  [![details](checkmark.png)](#audio-1903) |      [![details](checkmark.png)](#audio-1809)       |      [![details](checkmark.png)](#audio-1803)      |         [![details](checkmark.png)](#audio-1709)          |      [![details](checkmark.png)](#audio-1703)      |      [![details](checkmark.png)](#audio)      |                   ![not available](minus.png)                   |
+|               ACPI         |   ![not available](minus.png)    |             ![not available](minus.png)              |      [![details](checkmark.png)](#acpi-1803)       |          [![details](checkmark.png)](#acpi-1709)          |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|             Biometric    |     ![not available](minus.png)   |             ![not available](minus.png)              |            ![not available](minus.png)             |       [![details](checkmark.png)](#biometric-1709)        |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|             Bluetooth     |   ![not available](minus.png)     |     [![details](checkmark.png)](#bluetooth-1809)     |    [![details](checkmark.png)](#bluetooth-1803)    |                ![not available](minus.png)                |    [![details](checkmark.png)](#bluetooth-1703)    |          ![not available](minus.png)          |             [![details](checkmark.png)](#bluetooth)             |
+|          Buses and Ports          |   ![not available](minus.png)   |       ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |          [![details](checkmark.png)](#buses-and-ports)          |
+|              Camera       |    ![not available](minus.png)    |             ![not available](minus.png)              |     [![details](checkmark.png)](#camera-1803)      |                ![not available](minus.png)                |     [![details](checkmark.png)](#camera-1703)      |   [![details](checkmark.png)](#camera-1607)   |            [![details](checkmark.png)](#camera-1507)            |
+|             Cellular              |   ![not available](minus.png)   |       ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |             [![details](checkmark.png)](#cellular)              |
+|              Display          |  [![details](checkmark.png)](#display-1903) |      [![details](checkmark.png)](#display-1809)      |     [![details](checkmark.png)](#display-1803)     |        [![details](checkmark.png)](#display-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display)              |
+|          Driver security      |  ![not available](minus.png)  |             ![not available](minus.png)              |    [![details](checkmark.png)](#security-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display)              |
+|      Hardware notifications    | ![not available](minus.png)  |             ![not available](minus.png)              |            ![not available](minus.png)             | [![details](checkmark.png)](#hardware-notifications-1709) |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|   Human Interface Device (HID)    |    ![not available](minus.png)    |     ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |      [![details](checkmark.png)](#human-interface-device)       |
+|              Kernel          |   ![not available](minus.png)  |      [![details](checkmark.png)](#kernel-1809)       |     [![details](checkmark.png)](#kernel-1803)      |         [![details](checkmark.png)](#kernel-1709)         |     [![details](checkmark.png)](#kernel-1703)      |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|             Location       |   ![not available](minus.png)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |  [![details](checkmark.png)](#location-1607)  |           [![details](checkmark.png)](#location-1507)           |
+|         Mobile broadband    |    [![details](checkmark.png)](#mobilebroadband-1903)  |  [![details](checkmark.png)](#mobilebroadband-1809)  | [![details](checkmark.png)](#mobilebroadband-1803) |    [![details](checkmark.png)](#mobilebroadband-1709)     | [![details](checkmark.png)](#mobilebroadband-1703) |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|     Near Field Communication      |    ![not available](minus.png)     |    ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |     [![details](checkmark.png)](#near-field-communication)      |
+|            Networking     |    [![details](checkmark.png)](#networking-1903)    |    [![details](checkmark.png)](#networking-1809)     |   [![details](checkmark.png)](#networking-1803)    |       [![details](checkmark.png)](#networking-1709)       |   [![details](checkmark.png)](#networking-1703)    |          ![not available](minus.png)          |          [![details](checkmark.png)](#networking-1507)          |
+|                POS          |   ![not available](minus.png)   |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |       [![details](checkmark.png)](#pos-1703)       |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|                PCI        |    ![not available](minus.png)    |             ![not available](minus.png)              |       [![details](checkmark.png)](#pci-1803)       |          [![details](checkmark.png)](#pci-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|               Print     |      ![not available](minus.png)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |   [![details](checkmark.png)](#print-1607)    |            [![details](checkmark.png)](#print-1507)             |
+|      Pulse Width Modulation       |   ![not available](minus.png)  |        ![not available](minus.png)              |            ![not available](minus.png)             |          [![details](checkmark.png)](#pwm-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|              Sensors        |  [![details](checkmark.png)](#sensors-1903)    |      [![details](checkmark.png)](#sensors-1809)      |     [![details](checkmark.png)](#sensors-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|            Smart Card     |    ![not available](minus.png)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |            [![details](checkmark.png)](#smart-card)             |
+|              Storage         |    [![details](checkmark.png)](#storage-1903)  |             ![not available](minus.png)              |            ![not available](minus.png)             |        [![details](checkmark.png)](#storage-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#storage)              |
+| System-Supplied Driver Interfaces |   ![not available](minus.png)   |      ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          | [![details](checkmark.png)](#system-supplied-driver-interfaces) |
+|                USB                |  ![not available](minus.png) |     [![details](checkmark.png)](#usb-1809)        |       [![details](checkmark.png)](#usb-1803)       |          [![details](checkmark.png)](#usb-1709)           |       [![details](checkmark.png)](#usb-1703)       |          ![not available](minus.png)          |                [![details](checkmark.png)](#usb)                |
+|               WI-FI           |  [![details](checkmark.png)](#wifi-1903)  |       [![details](checkmark.png)](#wifi-1809)        |      [![details](checkmark.png)](#wifi-1803)       |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|               WLAN         |    ![not available](minus.png)   |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |    [![details](checkmark.png)](#wlan-1607)    |             [![details](checkmark.png)](#wlan-1507)             |
 
 ## What's new in driver development for Windows 10
 
@@ -92,6 +92,16 @@ For more details, see [CONTRIBUTING.md](https://github.com/MicrosoftDocs/windows
 ### Debugging Tools for Windows
 
 This section describes the changes in the debugging tools for Windows.
+
+**Debugging in Windows 10, version 1903**
+
+* New stop codes were added to allow better tracking on unique failure types in the Windows operating system. In addition a number of existing bug check topics were expanded and updated. For more information, see [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2).
+
+* Updates to KDNET topics to improve ease of use, for example in new [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically)
+
+* Updates to IP V6 KDNET support.
+
+* New [JavaScript Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/javascript-debugger-scripting) topic
 
 **Debugging in Windows 10, version 1809**
 
@@ -179,6 +189,8 @@ The following topics are new for WDF:
 
 This section describes new and updated features for Universal Windows drivers in Windows 10.
 
+[Back to Top](#top)
+
 **Universal Drivers in Windows 10, version 1809**
 
 Starting in Windows 10, version 1809, Windows supports flexible linking, which enables you to use a single binary to target OneCore and Desktop SKUs.
@@ -244,7 +256,125 @@ The power management framework (PoFx) enables a driver to define one or more set
 -   [WppRecorderLogCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) (KMDF only)
 -   [WppRecorderDumpLiveDriverData](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderdumplivedriverdata)
 
-## What's new in Windows 10, version 1809 (latest)
+## What's new in Windows 10, version 1903 (latest)
+
+This section describes new features and updates for driver development in Windows 10, version 1903 (Windows 10 April 2019 Update).
+
+[Back to Top](#top)
+
+### <a name="audio-1903"></a>Audio
+
+The following is a list of new and updated Audio features in Windows 10, version 1903:
+
+* New reference topics on the Audio OEM Adapter used for Voice Activation for the new eventdetectoroemadapter header
+* New Far Field Audio information
+* New jack description information in [USB Audio 2.0 Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/usb-2-0-audio-drivers)
+
+### <a name="display-1903"></a>Display
+
+Updates to Display driver development in Windows 10, version 1903 include the following:
+
+* **Super Wet Ink** New DDIs were added to enable front buffer rendering. See [D3DWDDM2_6DDI_SCANOUT_FLAGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ne-d3d10umddi-d3dwddm2_6ddi_scanout_flags) and [PFND3DWDDM2_6DDI_PREPARE_SCANOUT_TRANSFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_6ddi_prepare_scanout_transformation).
+
+* **Variable Rate Shading** Enables allocation of rendering performance/power at varying rates across rendered images. See [PFND3D12DDI_RS_SET_SHADING_RATE_0062](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_rs_set_shading_rate_0062) and [D3D12DDI_SHADING_RATE_0062](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/ne-d3d12umddi-d3d12ddi_shading_rate_0062).
+
+* **Collect Diagnostic Info** Allows the OS to collect a private data from drivers for graphics adapters which consist of both rendering and display functions. See [DXGKDDI_COLLECTDIAGNOSTICINFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_collectdiagnosticinfo).
+
+* **Background Processing** Allows user mode drivers to express desired threading behavior, and the runtime to control/monitor it. User mode drivers would spin up background threads and assign the threads as low a priority as possible, and rely on the NT scheduler to ensure these threads don’t disrupt the critical-path threads, generally with success. See [PFND3D12DDI_QUEUEPROCESSINGWORK_CB_0062](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_queueprocessingwork_cb_0062).
+
+* **Driver Hot Update** Reduce server downtime as much as possible when an OS component needs to be updated. See [DXGKDDI_SAVEMEMORYFORHOTUPDATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkcb_savememoryforhotupdate) and [DXGKDDI_RESTOREMEMORYFORHOTUPDATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_restorememoryforhotupdate).
+
+### <a name="networking-1903"></a>Networking
+
+**NetAdapterCx**
+
+In the NetAdapter WDF class extension (NetAdapterCx), Net ring buffers have been replaced by Net rings, which have a new interface for sending and receiving network data using net ring iterators. The following is a list of new topics:
+
+* [Net rings and net ring iterators](https://docs.microsoft.com/windows-hardware/drivers/netcx/net-rings-and-net-ring-iterators)
+* [Sending network data with net rings](https://docs.microsoft.com/windows-hardware/drivers/netcx/sending-network-data-with-net-rings) with a new animation that illustrates how to send data
+* [Receiving network data with net rings](https://docs.microsoft.com/windows-hardware/drivers/netcx/receiving-network-data-with-net-rings) with a new animation that illustrates how to receive data
+* [Canceling network data with net rings](https://docs.microsoft.com/windows-hardware/drivers/netcx/canceling-network-data-with-net-rings)
+
+New headers that support this feature include the following:
+
+* [Ring.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ring/index)
+* [Ringcollection.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ringcollection/index)
+* [Netringiterator.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/index)
+
+The following is a list of NetAdapterCx content updates:
+
+* Default adapter objects have been removed in favor of a single adapter object type. The following topics have been updated accordingly:
+
+    * [Summary of NetAdapterCx objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-netadaptercx-objects)
+    * [Device and adapter initialization](https://docs.microsoft.com/windows-hardware/drivers/netcx/device-and-adapter-initialization)
+
+* Hardware offload and packet extension DDIs have been reorganized into new headers:
+
+    * [Checksum.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/checksum/index)
+    * [Checksumtypes.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/checksumtypes/index)
+    * [Extension.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extension/index)
+    * [Lso.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/lso/index)
+    * [Lsotypes.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/lsotypes/index)
+    * [Rsc.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rsc/index)
+    * [Rsctypes.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rsctypes/index)
+
+* Fundamental networking data structures, packets and fragments, have been updated and put into new headers:
+
+    * [Packet.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/packet/index)
+    * [Fragment.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fragment/index)
+
+* Overhauled [Transmit and receive queues](https://docs.microsoft.com/windows-hardware/drivers/netcx/transmit-and-receive-queues) topic to include callback samples and major operations for packet queues.
+
+**NDIS**
+
+Updates to NDIS includes a new timestamp API.
+
+### <a name="mobilebroadband-1903"></a>Mobile broadband
+
+The following features were added to Mobile broadband in Windows 10, version 1903:
+
+* New SIM card (UICC) file/application system access feature
+* New Cellular Time Information (NITZ) feature. 
+* New modem diagnostics feature.
+* New 5G data class support feature.
+
+**Mobile operator scenarios**
+
+New Mobile Plans content for mobile operators to sell plans to customers directly on Windows 10 devices, through the Mobile Plans app:
+
+* [Mobile Plans promotional content](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-promotional-content)
+* [Mobile Plans asynchronous fulfillment](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-asynchronous-fulfillment)
+
+### <a name="sensors-1903"></a>Sensors
+
+New features in sensor driver development in Windows 10, version 1903 include a [MALT (Microsoft Ambient Light Tool) tool](https://docs.microsoft.com/windows-hardware/drivers/sensors/testing-malt-building-a-light-testing-tool) for testing and calibrating screen brightness.
+
+There were also updates to the Ambient Color OEM whitepaper.
+
+### <a name="storage-1903"></a>Storage
+
+The following Storage features were added in Windows 10, version 1903:
+
+* New IOCTL and associated structures to report a device's endurance information
+* New IOCTL to set the properties of a storage device or adapter
+* New IOCTLs and associated structures to set the properties of a storage device or adapter, including the ability to set protocol-specific information
+* For file systems, new DDIs were added to support retrieving extended attributes (EA) information upon create completion, allowing mini-filters to alter the ECP payload to change what higher filters see
+
+### <a name="wifi-1903"></a>Wi-fi
+
+New Wi-fi driver development documentation and features include:
+
+* New Fine Timing Measurement (FTM) feature
+* New [WPA3-SAE Authentication](https://docs.microsoft.com/windows-hardware/drivers/network/wpa3-sae-authentication) feature
+* New Multiband Operation (MBO) support to improve roaming performance in enterprise scenarios
+* New beacon report offloading support - For OID commands, NDIS status indications, and TLVs for these new features, see [WDI doc change history](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-doc-change-history)
+
+The following topics were updated for Windows 10, version 1903:
+
+* [WDI_AUTH_ALGORITHM](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_auth_algorithm) - added support for WPA3-SAE authentication
+* [OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-p2p-send-request-action-frame) and [OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-p2p-send-response-action-frame) - add additional validation of outgoing Point to Point (P2P) action frames
+
+## What's new in Windows 10, version 1809
 
 This section describes new features and updates for driver development in Windows 10, version 1809 (Windows 10 October 2018 Update).
 
@@ -405,6 +535,8 @@ The WLAN device driver interface (WDI) spec has been updated to version 1.1.7.
 ## What's new in Windows 10, version 1803
 
 This section describes new features and updates for driver development in Windows 10, version 1803 (Windows 10 April 2018 Update).
+
+[Back to Top](#top)
 
 ### <a name="acpi-1803"></a>ACPI
 
