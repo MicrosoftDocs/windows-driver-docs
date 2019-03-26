@@ -22,10 +22,8 @@ The CTRL+F key cancels commands or breaks into the debugger. (This control key i
 CTRL+F  ENTER 
 ```
 
-## <span id="ddk_meta_ctrl_f_dbg"></span><span id="DDK_META_CTRL_F_DBG"></span>
 
-
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+## <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
 <table>
 <colgroup>
