@@ -74,7 +74,7 @@ Windows uses the Mobile Plans app as a client to consume the overall Mobile Plan
 
 ## Get started
 
-To get started with the postpaid Mobile Plans experience, follow these steps:
+To get started with the Mobile Plans experience, please reach your Microsoft representative to discuss the project to discuss a details go live. If you are looking to understand the solution in detail, please follow these steps:
 
 1. [Mobile operator use cases](mobile-plans-userCases.md)
 2. [Integration](mobile-plans-integration.md)

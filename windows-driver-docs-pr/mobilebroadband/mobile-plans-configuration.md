@@ -21,6 +21,12 @@ You must prepare eSIM profiles that meet the following requirements:
 - The eSIM profile must not have the “Do not delete” or “Do not deactivate” policies set.
 - The activation code must not include any prefixes such as “LPA:”.
 - The activation code is available immediately after the MO Direct flow.
+- The activation code must not require a "Confirmation Code".
+
+
+### eSIM profile testing
+
+It is expected that the Mobile Operator perform a validation to ensure that their eSIM profiles are able to be installed in different Windows devices. For this it is recommended to source some eSIM capable devices and use the *Settings app* to download, install and activate profiles.
 
 <!-- #Removed due to support to Async Connectivity
 
