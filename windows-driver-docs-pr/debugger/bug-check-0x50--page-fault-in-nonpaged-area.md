@@ -3,7 +3,7 @@ title: Bug Check 0x50 PAGE_FAULT_IN_NONPAGED_AREA
 description: The PAGE_FAULT_IN_NONPAGED_AREA bug check has a value of 0x00000050. This indicates that invalid system memory has been referenced. 
 ms.assetid: 63b4ab82-f7a9-4e14-bf7c-707a22d7e251
 keywords: ["Bug Check 0x50 PAGE_FAULT_IN_NONPAGED_AREA", "PAGE_FAULT_IN_NONPAGED_AREA"]
-ms.date: 05/23/2017
+ms.date: 03/26/2017
 topic_type:
 - apiref
 api_name:
@@ -44,7 +44,10 @@ The PAGE\_FAULT\_IN\_NONPAGED\_AREA bug check has a value of 0x00000050. This in
 <tr class="even">
 <td align="left"><p>2</p></td>
 <td align="left"><p><strong>0:</strong> Read operation</p>
-<p><strong>1:</strong> Write operation</p></td>
+<p><strong>1:</strong> Write operation</p>
+<p><strong>2:</strong> Execute operation</p>
+<p><strong>8:</strong> Execute operation</p>
+</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
@@ -52,7 +55,10 @@ The PAGE\_FAULT\_IN\_NONPAGED\_AREA bug check has a value of 0x00000050. This in
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
-<td align="left"><p>Reserved</p></td>
+<td align="left"><p>Type of page fault</p>
+<p>0x03 - NONPAGED_BUGCHECK_WRONG_SESSION</p>
+<p>0x04 - NONPAGED_BUGCHECK_VA_NOT_CANONICAL</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -200,12 +206,4 @@ Driver Verifier is a tool that runs in real time to examine the behavior of driv
 **Time Travel Trace**
 
 If the bug check can be reproduced on demand, investigate the possibility of taking a time travel trace using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
-
-
- 
-
- 
-
-
-
 

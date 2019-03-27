@@ -3,7 +3,7 @@ title: Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL
 description: The DRIVER_IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x000000D1. This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high.
 ms.assetid: 26cfd881-cc6e-4cc3-b464-e67d75700b96
 keywords: ["Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL", "DRIVER_IRQL_NOT_LESS_OR_EQUAL"]
-ms.date: 03/24/2019
+ms.date: 03/26/2019
 topic_type:
 - apiref
 api_name:
@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Bug Check 0xD1: DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL
 
 
-The DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x000000D1. This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high.
+The DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x000000D1. This indicates that a kernel-mode driver attempted to access pageable memory while the process IRQL that was too high. 
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
@@ -39,21 +39,23 @@ The DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x000000D1. This
 <tbody>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>Memory referenced</p></td>
+<td align="left"><p>Memory referenced.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
-<td align="left"><p>IRQL at time of reference</p></td>
+<td align="left"><p>IRQL at time of reference.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
 <td align="left"><p><strong>0:</strong> Read</p>
 <p><strong>1:</strong> Write</p>
-<p><strong>8:</strong> Execute</p></td>
+<p><strong>2:</strong> Execute</p>
+<p><strong>8:</strong> Execute</p>
+</td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
-<td align="left"><p>Address that referenced memory</p></td>
+<td align="left"><p>Address that referenced memory. Use `ln' on this address to see the name of the function.</p></td>
 </tr>
 </tbody>
 </table>
@@ -63,19 +65,33 @@ The DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x000000D1. This
 Cause
 -----
 
-A driver tried to access an address that is pageable (or that is completely invalid) while the IRQL was too high.
+Typically, a driver tried to access an address that is pageable (or that is completely invalid) while the IRQL was too high.
+
+This can be caused by:
+
+1. Dereferencing a bad pointer (such as a NULL or freed pointer) while executing at or above DISPATCH_LEVEL.
+2. Accessing pageable data at or above DISPATCH_LEVEL.
+3. Executing pageable code at or above DISPATCH_LEVEL
 
 If a driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use the debugger dx command to display this - `dx KiBugCheckDriver`.
 
 This bug check is usually caused by drivers that have used improper memory addresses.
 
-If the first parameter has the same value as the fourth parameter, and the third parameter indicates an execute operation, this bug check was likely caused by a driver that was trying to execute code when the code itself was paged out. Possible causes for the page fault include the following:
+Possible causes for the page fault include the following:
 
--   The function was marked as pageable and was running at an elevated IRQL (which includes obtaining a lock).
+- The function was marked as pageable and was running at an elevated IRQL (which includes obtaining a lock).
 
--   The function call was made to a function in another driver, and that driver was unloaded.
+- The function call was made to a function in another driver, and that driver was unloaded.
 
--   The function was called by using a function pointer that was an invalid pointer.
+- The function was called by using a function pointer that was an invalid pointer.
+
+- Marking code as pageable when it must be non-pageable (e.g., because the code acquires a spinlock, or is called in a DPC).
+
+- Calling a function that cannot be called at DISPATCH_LEVEL while at DISPATCH_LEVEL;
+
+- Forgetting to release a spinlock
+
+
 
 Resolution
 ----------
@@ -97,6 +113,10 @@ Arg3: 0000000000000000, value 0 = read operation, 1 = write operation
 Arg4: fffff808adc386a6, address which referenced memory
 ```
 
+If a trap frame is available in the dump file use the `.trap` command to set your context to the provided address.
+
+To start, examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
+
 Use the `!IRQL` command to display information about the interrupt request level (IRQL) of a processor on the target computer before the debugger break.
 
 ```
@@ -104,17 +124,31 @@ Use the `!IRQL` command to display information about the interrupt request level
 Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 ```
 
-If a trap frame is available in the dump file use the `.trap` command to set your context to the provided address.
+The majority of the time the issue is not the IRQL level, but rather the memory that is being accessed.
 
-To start, examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
+Because this bug check is usually caused by drivers that have used improper memory addresses, use parameters 1,3  and 4 to invesitgate further.
 
-Because this bug check is usually caused by drivers that have used improper memory addresses, use parameters 1 and 3 to invesitgate further.
+Use [ln (List Nearest Symbols)](ln--list-nearest-symbols-.md) with parameter 4 to see the name of the function that was called. Also examine the !analyze output to see if faulting code is identified.
 
-Use the [Unassemble](u--unassemble-.md) command to look at the code in the address which referenced the memory in parameter 4.
+Use [!pool](-pool.md) on the parameter 1 address to see whether it's paged pool. Use [!address](-address.md) and the advanced [!pte](-pte.md) command to learn more about this area of memory.
 
 Use the [display memory](-db---dc---dd---dp---dq---du---dw.md) commands to examine the memory referenced in command in parameter 1.
 
-Use the `lm t n` to list modules that are loaded in the memory. Use `!memusage` and to examine the general state of the system memory. The `!pte` and `!pool` command may also be used to examine specific areas of memory. 
+Use the [Unassemble](u--unassemble-.md) command to look at the code in the address which referenced the memory in parameter 4.
+
+Use the `lm t n` to list modules that are loaded in the memory. Use [!memusage](-memusage.md) and to examine the general state of the system memory. 
+
+Here are some general guidelines that can be used to catergorize the type of coding error tha caused the bug check.
+
+* If parameter 1 is less than 0x1000, then this is likely a NULL pointer dereference.
+
+* If parameter 1 looks like a typical pool address, this may be a use-after-free memory error.
+
+* If parameter 1 contains a pointer to paged pool (or other types of pageable memory), then the problem is that the IRQL is too high to access this data.
+
+* If parameter 3 indicates that this was an attempt to execute pageable code, then the problem is that the IRQL is too high to call this function.
+
+* If parameter 1 has the same value as parameter 4, and parameter 3 indicates an execute operation, this bug check was likely caused by a driver that was trying to execute code when the code itself was paged out. 
 
 
 **Driver Verifier**
