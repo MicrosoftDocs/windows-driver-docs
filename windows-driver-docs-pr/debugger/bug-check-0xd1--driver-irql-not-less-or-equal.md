@@ -3,7 +3,7 @@ title: Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL
 description: The DRIVER_IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x000000D1. This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high.
 ms.assetid: 26cfd881-cc6e-4cc3-b464-e67d75700b96
 keywords: ["Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL", "DRIVER_IRQL_NOT_LESS_OR_EQUAL"]
-ms.date: 03/26/2019
+ms.date: 03/28/2019
 topic_type:
 - apiref
 api_name:
@@ -71,7 +71,7 @@ This can be caused by:
 
 1. Dereferencing a bad pointer (such as a NULL or freed pointer) while executing at or above DISPATCH_LEVEL.
 2. Accessing pageable data at or above DISPATCH_LEVEL.
-3. Executing pageable code at or above DISPATCH_LEVEL
+3. Executing pageable code at or above DISPATCH_LEVEL.
 
 If a driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use the debugger dx command to display this - `dx KiBugCheckDriver`.
 
@@ -87,10 +87,11 @@ Possible causes for the page fault include the following:
 
 - Marking code as pageable when it must be non-pageable (e.g., because the code acquires a spinlock, or is called in a DPC).
 
-- Calling a function that cannot be called at DISPATCH_LEVEL while at DISPATCH_LEVEL;
+- Calling a function that cannot be called at DISPATCH_LEVEL while at DISPATCH_LEVEL.
 
-- Forgetting to release a spinlock
+- Forgetting to release a spinlock.
 
+- If the first parameter has the same value as the fourth parameter, and the third parameter indicates an execute operation, this bug check was likely caused by a driver that was trying to execute code when the code itself was paged out.
 
 
 Resolution
@@ -138,41 +139,19 @@ Use the [Unassemble](u--unassemble-.md) command to look at the code in the addre
 
 Use the `lm t n` to list modules that are loaded in the memory. Use [!memusage](-memusage.md) and to examine the general state of the system memory. 
 
-Here are some general guidelines that can be used to catergorize the type of coding error tha caused the bug check.
-
-* If parameter 1 is less than 0x1000, then this is likely a NULL pointer dereference.
-
-* If parameter 1 looks like a typical pool address, this may be a use-after-free memory error.
-
-* If parameter 1 contains a pointer to paged pool (or other types of pageable memory), then the problem is that the IRQL is too high to access this data.
-
-* If parameter 3 indicates that this was an attempt to execute pageable code, then the problem is that the IRQL is too high to call this function.
-
-* If parameter 1 has the same value as parameter 4, and parameter 3 indicates an execute operation, this bug check was likely caused by a driver that was trying to execute code when the code itself was paged out. 
-
-
 **Driver Verifier**
 
 Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it sees errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifer* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
-
 
 Remarks
 -------
 
 If you are not equipped to use the Windows debugger to work on this problem, you can use some basic troubleshooting techniques.
 
--   Check the System Log in Event Viewer for additional error messages that might help identify the device or driver that is causing this bug check.
+- Check the System Log in Event Viewer for additional error messages that might help identify the device or driver that is causing this bug check.
 
--   If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
+- If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
 
--   Confirm that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).
+- Confirm that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).
 
--   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
-
- 
-
- 
-
-
-
-
+- For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
