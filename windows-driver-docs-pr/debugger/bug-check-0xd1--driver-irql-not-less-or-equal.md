@@ -85,15 +85,6 @@ Possible causes for the page fault include the following:
 
 - The function was called by using a function pointer that was an invalid pointer.
 
-- Marking code as pageable when it must be non-pageable (e.g., because the code acquires a spinlock, or is called in a DPC).
-
-- Calling a function that cannot be called at DISPATCH_LEVEL while at DISPATCH_LEVEL.
-
-- Forgetting to release a spinlock.
-
-- If the first parameter has the same value as the fourth parameter, and the third parameter indicates an execute operation, this bug check was likely caused by a driver that was trying to execute code when the code itself was paged out.
-
-
 Resolution
 ----------
 
