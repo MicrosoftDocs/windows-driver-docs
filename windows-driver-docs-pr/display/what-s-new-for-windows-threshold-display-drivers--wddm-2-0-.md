@@ -34,6 +34,12 @@ For more info about raytracing, see:
 * [DirectX Raytracing and the Windows 10 October 2018 Update](https://blogs.msdn.microsoft.com/directx/2018/10/02/directx-raytracing-and-the-windows-10-october-2018-update/)
 * [DirectX Forums](https://forums.directxtech.com/index.php?topic=5985.0)
 
+### Display Synchronization
+
+The OS will check for capabilities for display synchronization when the display is exposed by the driver to the OS, so prior to enabling the display. For TypeIntegratedDisplay child devices, this is reported via a call to [DxgkDdiQueryAdapterInfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) with *Type* [DXGKQAITYPE_INTEGRATED_DISPLAY_DESCRIPTOR2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype) during adapter initialization. For TypeVideoOutput child devices, which are supported starting with WDDM 2.5, the capabilities are reported as part of the hot plug processing via [DxgkDdiUpdateMonitorLinkInfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_updatemonitorlinkinfo) so that the capabilities may change based on the target or connected monitor.
+
+The OS specifies the display synchronization in the [DxgkDdiSetTimingsFromVidPn](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_settimingsfromvidpn) call in the Input field in the per path [DXGK_SET_TIMING_PATH_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_set_timing_path_info#input) structure.
+
 ## WDDM 2.1
 
 WDDM 2.1 enables new scenarios and provides significant improvements in the areas of performance, reliability, upgrade resiliency, diagnostic improvements and future system advancements for the Windows graphics sub-system.

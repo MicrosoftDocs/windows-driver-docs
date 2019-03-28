@@ -13,7 +13,7 @@ Use these links to get acquainted with UVC:
 
 - Access the [USB class](http://www.usb.org/developers/docs/devclass_docs/) documentation (non-UVC specific) at USB.org
 
-- Download the [USB Video Class 1.5](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) documentation from USB.org
+- Download the [USB Video Class 1.5](https://go.microsoft.com/fwlink/p/?linkid=2085170) documentation from USB.org
 
 - Review the [USB Video Class driver overview](https://docs.microsoft.com/windows-hardware/drivers/stream/usb-video-class-driver-overview) topic
 
@@ -58,7 +58,3 @@ Use these links to get acquainted with UVC:
 - Run camera-specific [Device.Streaming HLK tests](https://msdn.microsoft.com/library/windows/hardware/dn941930)
 
 - Ensure the camera meets any requirements and passes HLK tests for other products that the camera must also be compliant with (for example, Skype, Windows Hello, and so on).
-
-
-
-

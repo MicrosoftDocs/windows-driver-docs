@@ -187,7 +187,7 @@ This directive can also be used to coordinate installation of INF files in multi
 
 ## Run from the driver store
 
-To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [**dirid** 13](https://docs.microsoft.com/windows-hardware/drivers/install/using-*dirid*s) where possible.  Using a destination directory value of 13 can result in improved stability during the driver update process.  Here is an example from [`osrfx2_DCHU_base.inx`]:
+To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [**dirid** 13](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids) where possible.  Using a destination directory value of 13 can result in improved stability during the driver update process.  Here is an example from [`osrfx2_DCHU_base.inx`]:
 
 ```cpp
 [DestinationDirs]
