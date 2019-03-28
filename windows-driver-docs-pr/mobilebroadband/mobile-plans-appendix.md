@@ -103,9 +103,9 @@ The following table provides a high-level overview of the *Mobile Plans* project
 
 | Phase | Activities | Owner | Time estimate |
 | --- | --- | --- | --- |
-| Implementation | eSIM profile installable on a Windows device. Test using SMDP+ used for PPE and PROD. | MO |  |
-|                | Provide the onboarding checklist document, including PPE service configuration | MO |  |
-|                | Enable the mobile operator PPE in the *Mobile Plans* PPE | MSFT | Configuration updates occur on the 1st and 3rd Friday of every month |
+| Implementation | eSIM profile installable on a Windows device. Test using SMDP+ used for Staging Environment and Production Environment. | MO |  |
+|                | Provide the onboarding checklist document, including Staging Environment service configuration | MO |  |
+|                | Enable the mobile operator Staging Environment in the *Mobile Plans* Staging Environment | MSFT | Configuration updates occur on the 1st and 3rd Friday of every month |
 |                | Submit COSA database update | MO | About 3 months |
 |                | MO Direct portal development start |  |
 |                | `GetBalance` API development start |  |
@@ -115,11 +115,11 @@ The following table provides a high-level overview of the *Mobile Plans* project
 |             | `GetBalance` API development complete | MO |  |
 |             | MO development complete - code complete (checkpoint) | MO |  |
 |             | Validate `GetBalance` API functionality | MO |  |
-|             | End-to-end experience is functional in MO PPE (checkpoint) | MO |  |
-|             | Update Service Configuration document to reflect PROD settings (if not provided previously) | MO |  |
+|             | End-to-end experience is functional in MO Staging Environment (checkpoint) | MO |  |
+|             | Update Service Configuration document to reflect Production Environment settings (if not provided previously) | MO |  |
 |             | Provide ICCIDs to be used for `GetBalance` load test | MO |  |
-|             | Enable mobile operator PROD environment in *Mobile Plans* PPE | MSFT | Configuration updates occur on the 1st and 3rd Friday of every month |
-|             | End-to-end experience is functional in MO PROD (checkpoint) | MO |  |
+|             | Enable mobile operator Production Environment environment in *Mobile Plans* Staging Environment | MSFT | Configuration updates occur on the 1st and 3rd Friday of every month |
+|             | End-to-end experience is functional in MO Production Environment (checkpoint) | MO |  |
 | Validaton | Exit criteria test cases complete | MO |  |
 |           | Verify test case results | MSFT |  |
 |           | Test sign-off (checkpoint) | MSFT |  |
@@ -129,5 +129,5 @@ The following table provides a high-level overview of the *Mobile Plans* project
 |         | Commercial agreement completed | MO |  |
 |         | COSA update available in Windows | MSFT |  |
 |         | Go/No-Go (final checkpoint) | MSFT and MO |  |
-|         | Configure MO PROD environment in *Mobile Plans* PROD | MSFT |  |
+|         | Configure MO Production Environment environment in *Mobile Plans* Production Environment | MSFT |  |
 |         | Launch | MSFT and MO | Launch date and time must be agreed upon to ensure that local validation happens |

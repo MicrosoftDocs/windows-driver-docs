@@ -169,7 +169,7 @@ After the user successfully completes a purchase that requires a profile downloa
 | --- | --- | -- |
 | purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
 | activationCode | String | The activation code for downloading the eSIM profile. The ICCID for the profile is inferred from the profile metadata. |
-| networkRegistrationInterval | Unsigned integer | The time needed for the mobile operator to provision connectivity to the user. The Mobile Plans app attempts to register to the network within the specified time interval, in minutes. **Note** This time is rounded to the nearest 15 minute interval. For example, if this is set as 5 minutes, the application tries to re-register to the network after approximately 15 minutes (but it might take longer). if set to "0" the device will attempt to register immediatelly. |
+| networkRegistrationInterval | Unsigned integer | The time needed for the mobile operator to provision connectivity to the user. The Mobile Plans app attempts to register to the network within the specified time interval, in minutes. **Note** This time is rounded to the nearest 15 minute interval. For example, if this is set as 5 minutes, the application tries to re-register to the network after approximately 15 minutes (but it might take longer). if set to "0" the device will attempt to register immediately. |
 
 The following Javascript function shows an example of the API to inform the application that the user purchase requires a delayed provisioning of connectivity.
 
@@ -198,7 +198,7 @@ When a user completes a purchase in the MO Direct portal by adding more data to 
 | purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
 | iccid | String | The ICCID to which data is assigned. If this ICCID is not active, the Mobile Plans app activates the corresponding profile.|
 
-The following Javascript function shows an example of the API to inform the application that the user has completed a purchase using a profile already available, but not neccessarily active, on the eSIM.
+The following Javascript function shows an example of the API to inform the application that the user has completed a purchase using a profile already available, but not necessarily active, on the eSIM.
 
  ```Javascript
 function finishPurchaseWithBalanceAddition() {

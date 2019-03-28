@@ -21,7 +21,7 @@ The *View my account* link could be configured to:
 - Launch a web browser and open a defined web page
 - Launch the Mobile Plans app and open the Mobile Plans Web Portal
 
- Once an option has been choose, please request a COSA database update to implement the righ behavior, please see [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
+ Once an option has been choose, please request a COSA database update to implement the right behavior, please see [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
 The following settings apply for the above options:
 
@@ -119,7 +119,7 @@ The table below defines the error codes that should be used in the HTTP response
 | --- | --- |
 | HTTP 200 (OK) | The operation completed successfully. This code should also be used to indicate if the user has 0 balance in the specified location, which should be done using dataRemainingInMB=0 and timeRemaining=”PT0S” with HTTP 200. |
   HTTP 201 (Created) | Indicates that the operation completed successfully and the resource was created successfully. |
-| HTTP 400 (Bad Request) | Used for invalid an invalid query parameter, invalid header, or invalid payload. In the response body, the parameter that is incorrect should be indicated. For example, if an invalid fieldsTemplate is specified, this error code must be returned with details in the response body. |
+| HTTP 400 (Bad Request) | Used for an invalid query parameter, invalid header, or invalid payload. In the response body, the parameter that is incorrect should be indicated. For example, if an invalid fieldsTemplate is specified, this error code must be returned with details in the response body. |
 | HTTP 401 (Unauthorized) | Authentication credentials were incorrect or invalid. This can occur when the basic auth credentials passed are incorrect. |
 | HTTP 403 (Forbidden) | The client certificate is untrusted or invalid. If the client certificate included as a part of MTLS is invalid, HTTP 403 should be returned. |
 | HTTP 404 (Not Found) | The MO service should return this error when the resource doesn’t exist. This can occur when an incorrect ICCID is sent. This should not be used to indicate that the user doesn’t have a balance in the specified location, which is indicated with HTTP 200 (OK). |

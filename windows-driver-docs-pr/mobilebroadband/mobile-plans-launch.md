@@ -17,11 +17,11 @@ This section describes the work needed to successfully launch *Mobile Plans* wit
 
 ## Before launch
 
-You (the mobile operator) and Microsoft will review that all outstanding issues are properly addressed before moving to go live. This is important to fully migrate to a production environment. If you decide to use a staging endpoint during integration, this migration will take up to a week.
+You (the mobile operator) and Microsoft will review that all outstanding issues are properly addressed before moving to go live. This is important to fully migrate to a production environment.
 
 ## Launch validation
 
-In the launch agreed date, Microsoft will move to production the mobile operator portal. The mobile operator is responsible to perform end-to-end validation immediatelly and report back any potential issues to Microsoft, this will allow to provide support to address them accordingly.
+In the launch agreed date, Microsoft will move to production the mobile operator portal. The mobile operator is responsible to perform end-to-end validation immediately and report back any potential issues to Microsoft, this will allow to provide support to address them accordingly.
 
 Mobile operator will be the ultimate responsible to accept the service is live in production.
 

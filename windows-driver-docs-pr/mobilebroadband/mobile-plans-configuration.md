@@ -23,7 +23,6 @@ You must prepare eSIM profiles that meet the following requirements:
 - The activation code is available immediately after the MO Direct flow.
 - The activation code must not require a "Confirmation Code".
 
-
 ### eSIM profile testing
 
 It is expected that the Mobile Operator perform a validation to ensure that their eSIM profiles are able to be installed in different Windows devices. For this it is recommended to source some eSIM capable devices and use the *Settings app* to download, install and activate profiles.
@@ -45,7 +44,7 @@ Finally, the *Mobile Plans* user experience expects the eSIM profile to be in a 
 2. The branding logo. Required resolution is 300x300 pixels. Image should also be full bleed with no transparency.
 3. The list of countries where your solution is supported. Please use [ISO 3166 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) to create the list (comma separated).
 4. Your MO Direct portal URI (localization is not supported). This should be a https address. Port numbers are not supported
-5. A notification URI. This should be a https address. Port numbers are not supported
+5. A notification URI. This is the host address from where the javascript callbacks ([control back notifications]((mobile-plans-callbacks.md)) are going to be run. This should be a https address. Port numbers are not supported.
 6. The ICCID range or ranges that you want to want to associate with *Mobile Plans*.
 
 <!--
@@ -59,7 +58,7 @@ The following image shows an example for the *standard gateway page*  in the Mob
 ### Enhanced gateway page
 
 This is an optional feature supported in Mobile Plans app version **5.1902.331.0** or above.
-The standard landing page could be enhanced to provided a mobile operator branding look and feel to highlight the mobile operator offering.
+The standard landing page could be enhanced with the mobile operator branding look and feel to highlight their offering.
 
 #### Enhanced gateway content
 
@@ -101,7 +100,7 @@ The following table describes each JSON object in the previous example.
 |   | buttonFontColor | The font color for the text on the "Continue" button. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, white is used as the default. | 0xFFFFFFFF |
 |   | bodyText | The localized body text for the client's language. | We'll help you find a plan so you can get connected when Wi-Fi isn't available. |
 |   | buttonText | The localized text for the "Continue" button. | Get started |
-|   | hyperlinkColor | The hyperlinks in the gateway page are going to be using this color . This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, default hyperlink color will be used. | 0xBB8CF9FF |
+|   | hyperlinkColor | The hyperlinks in the gateway page are going to be using this color. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, default hyperlink color will be used. | 0xBB8CF9FF |
 |   | images | Images to use for the template. Different sizes are supported. If multiple sizes are included, the Mobile Plans app uses the optimum size for the screen resolution. Maximum image size is 1200 x 600 pixels, file format *png*.| ![Mobile plans Surface landing page example, 780x480](images/mobile_plans_surface_landing_780x480.png) |
 
 #### Example enhanced gateway landing page

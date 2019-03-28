@@ -31,7 +31,7 @@ Mobile Plans enables end users to perform the following:
 | COSA database | Country and Operator Settings Asset. This is a database that contains mobile operator connectivity settings to be used in Windows devices. For more info about COSA, see [COSA Overview](cosa-overview.md). |
 | Mobile Plans | The name of this project. |
 | Mobile Plans app | The Microsoft app to enable Mobile Plans in Windows 10 devices. |
-| Mobile Plans service | The Microsoft service ti enable Mobile Plans solution in the cloud. |
+| Mobile Plans service | The cloud service which enables the Mobile Plans solution. |
 | RPS | Requests Per Second |
 
 ## Project overview
@@ -40,9 +40,9 @@ Mobile Plans project integration is composed of four stages, each of which has [
 
 | Stage | Description |
 | --- | --- |
-| **Feasiblity** | The mobile operator assess the Mobile Plans solution, digest this documentation and reach out the Microsoft representative with questions as needed. |
-| **Implementation** | The mobile operator perform the development of their solution according to their user cases and request Mobile Plans configurations and Windows configurations as needed. |
-| **Integration** | The mobile operator is enable in Mobile Plans to run end-to-end validation. |
+| **Feasiblity** | The mobile operator assesses the Mobile Plans solution, digest this documentation and reach out the Microsoft representative with questions as needed. |
+| **Implementation** | The mobile operator performs the development of their solution according to their user cases and request Mobile Plans configurations and Windows configurations as needed. |
+| **Integration** | The mobile operator is enabled in Mobile Plans to run end-to-end validation. |
 | **Launch** | The mobile operator is commercially launched to the market. |
 
 ## Functional overview
@@ -74,7 +74,7 @@ Windows uses the Mobile Plans app as a client to consume the overall Mobile Plan
 
 ## Get started
 
-To get started with the Mobile Plans experience, please reach your Microsoft representative to discuss the project implementation.Below there is a guide to understand the solution in technical detail, please follow these steps:
+To get started with the Mobile Plans experience, please reach your Microsoft representative to discuss the project implementation. Below there is a guide to understand the solution in technical detail, please follow these steps:
 
 1. [Mobile operator use cases](mobile-plans-userCases.md)
 2. [Integration](mobile-plans-integration.md)

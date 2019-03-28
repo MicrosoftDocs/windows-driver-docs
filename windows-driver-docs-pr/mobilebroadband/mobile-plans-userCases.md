@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-This topic provides insights about most common use cases that mobile operators are planning to enable, this is not an exhaustive list of supported cases. It is probable that your specific user case could be achivied via a combination of solutions. Please reach your Microsoft contact to discuss further your scenario.
+This topic provides insights about most common use cases that mobile operators are planning to enable, this is not an exhaustive list of supported cases. It is probable that your specific user case could be achieved via a combination of solutions. Please reach your Microsoft contact to discuss further your scenario.
 
 ## Install an eSIM profile in a Windows device
 
@@ -21,10 +21,10 @@ Please follow these steps:
 
 1. Implement the [Mobile Operator web portal](mobile-plans-web-portal.md#web-service-api-used-for-esim)
 2. Implement the adequate control back to Mobile Plans
-   1. [Inline profile Delivery](mobile-plans-callbacks.md#inline-profile-delivery), implement this callback if the eSIM profile is immediatelly available in the SMDP+ server and the device will be able to attach to the cellular network immediatelly.
-   2. [Asynchronous Connectivity](mobile-plans-callbacks.md#asynchronous-connectivity), implement this callback if the eSIM profile is immediatelly available in the SMDP+ server but the device will need to wait some time before attach to the cellular network.
-   3. **Asynchronous Profile Donwload**, implement this callback if the eSIM profile will be available in your SMDP+ server after a period of time and the device wiil be able to attahc to the cellular network immediatelly.
-3. [Handling eSIM download errors](mobile-plans-eSIM-error-handling.md)
+   1. [Inline profile Delivery](mobile-plans-callbacks.md#inline-profile-delivery), implement this callback if the eSIM profile is immediately available in the SMDP+ server and the device will be able to attach to the cellular network immediately.
+   2. [Asynchronous Connectivity](mobile-plans-callbacks.md#asynchronous-connectivity), implement this callback if the eSIM profile is immediately available in the SMDP+ server but the device will need to wait some time before attach to the cellular network.
+   3. **Asynchronous Profile Download**, implement this callback if the eSIM profile will be available in your SMDP+ server after a period of time and the device will be able to attach to the cellular network immediately.
+3. [Handling eSIM download errors](mobile-plans-eSIM-error-handling.md) (Optional)
 4. Define the [basic device experience](mobile-plans-device-experience.md#basic-device-experience).
 5. Provide [Mobile Plans configuration](mobile-plans-configuration.md) information
 6. [Validate](mobile-plans-integration.md) the implementation.
@@ -45,7 +45,7 @@ This section describes which work is needed to add balance to your current subsc
 
 ## Cancelling a transaction
 
-This section describes which control back should be used to notify the Mobile Plans app, when a transactions is cancelled when the user is in the mobile operator web portal. This applies to all the above scenarios
+This section describes which control back should be used to notify the Mobile Plans app, when a transaction is cancelled while the user is in the mobile operator web portal. This applies to all the above scenarios.
 
 - Implement the [Cancelling purchase flow](mobile-plans-callbacks.md#cancelling-purchase-flow) control
 

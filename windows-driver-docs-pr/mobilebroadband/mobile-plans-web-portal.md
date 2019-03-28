@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-This topic describes the mobile mobile operator web service API/portal that enables mobile operators to provide connectivity solutions directly to Windows users through a curated web experience hosted in the Mobile Plans app. You need to create your web experiences following design policies and implement the web service API to make it reachable. This portal will be used for all scenarios supported in the Mobile Plans solution.
+This topic describes the mobile operator web service API/portal that enables mobile operators to provide connectivity solutions directly to Windows users through a curated web experience hosted in the Mobile Plans app. You need to create your web experiences following design policies and implement the web service API to make it reachable. This portal will be used for all scenarios supported in the Mobile Plans solution.
 
 For more info about Web portal flow and reference design, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design).
 
@@ -91,7 +91,6 @@ To ensure the best user experience on Windows, you should adhere to the policies
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | The MO Direct experience must meet all applicable legal and regulatory requirements in the countries offered. Any content displayed in the MO Direct portal must comply with all applicable laws.                                                                                | Required                |
 | Products offered through the MO Direct experience must be an offer for network connectivity.                                                                                                                                                                                     | Required                |
-| Network connectivity products offered through the MO Direct experience must be immediately activated after user completes the purchase flow.                                                                                                                                     | Required                |
 | Network connectivity products offered through the MO Direct experience must have clear information on service details. Any specific terms of service must be available for users to review before purchase in the MO Direct experience.                                          | Required                |
 | Customer support contact information must be accessible to users in the MO Direct experience.                                                                                                                                                                                    | Required                |
 | The privacy policy must be available for users to review in the MO Direct experience.                                                                                                                                                                                            | Required                |
