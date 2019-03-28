@@ -101,7 +101,7 @@ Resolution
 
 Typically, the referenced address is in freed memory or is simply invalid. This cannot be protected by a **try - except** handler -- it can only be protected by a probe or similar programming techniques.
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+Use the [**!analyze**](-analyze.md) debug extension with teh -v verbose option to display information about the bug check to work to determine the root cause.
 
 ```dbgcmd
 2: kd> !analyze -v
@@ -122,13 +122,21 @@ Arg3: fffff80240d322f9, If non-zero, the instruction address which referenced th
 Arg4: 000000000000000c, (reserved)
 ```
 
-In this example Parameter 2 indicates that the bug check occurred when an area of memory was being read. 
+In this example Parameter 2 indicates that the bug check occurred when an area of memory was being read.
 
 Look at all of the !analyze output to gain information about what was going on when the bug check occurred. Examine MODULE_NAME: and the FAULTING_MODULE: to see which code is involved in referencing the invalid system memory.
 
-Look at the STACK TEXT for clues on what was running when the failure occurred. If multiple dump files are available, compare information to look for common code that is in the stack. Use debugger commands such as use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
+Look at the STACK TEXT for clues on what was running when the failure occurred. If multiple dump files are available, compare information to look for common code that is in the stack.
 
-Use the `lm t n` to list modules that are loaded in the memory. 
+Use the .trap command provided in the !analyze output to set the context.
+
+```dbgcmd
+TRAP_FRAME:  fffff98112e8b3d0 -- (.trap 0xfffff98112e8b3d0)
+```
+
+ Use debugger commands such as use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
+
+Use the `lm t n` to list modules that are loaded in the memory.
 
 Use the [d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command to investigate the areas of memory referenced by parameter 1 and parameter 3.
 
