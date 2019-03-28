@@ -60,7 +60,7 @@ You can also run Apivalidator.exe from the command prompt. In your WDK installat
 
 Use the following syntax:
 
-**Apivalidator.exe** **-DriverPackagePath:**_&lt;driver folder path&gt;_
+**Apivalidator.exe** **-DriverPackagePath:**_&lt;driver folder path&gt;_  
  **-SupportedApiXmlFiles:**_&lt;path to XML files containing supported APIs for universal drivers&gt;_
 
 For example, to verify the APIs called by the Activity sample in the WDK, first build the sample in Visual Studio. Then open a command prompt and navigate to the directory containing the tool, for example C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64. Enter the following command:
