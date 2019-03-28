@@ -1,8 +1,9 @@
 ---
 title: Microsoft extensions to USB Video Class 1.5 specification
 description: Describes Microsoft extensions to the USB Video Class 1.5 Specification that enables new controls as well as the capability to carry well-defined frame-metadata in a standard format.
-ms.date: 01/30/2018
+ms.date: 03/27/2019
 ms.localizationpriority: medium
+ms.custom 19H1
 ---
 
 # Microsoft extensions to USB Video Class 1.5 specification
@@ -145,9 +146,9 @@ GET_DEF requirement: The default for **bmControlFlags** shall be D0 set to 1 and
 
 For GET_CUR/SET_CUR requests, the following restrictions apply for field **bmControlFlags**:
 
--   Among D0, D1 and D2 bits, at least one bit shall be set.
+- Among D0, D1 and D2 bits, at least one bit shall be set.
 
--   D1 is incompatible with D0 and D2.
+- D1 is incompatible with D0 and D2.
 
 ##### 2.2.2.4 EV Compensation Control
 
@@ -234,11 +235,13 @@ This control allows the host software to query and control metadata produced by 
 ![Metadata Control](images/uvc-1-15-metadata-control.png)
 
 If SET_CUR request is supported by the firmware, the following applies:
+
 - GET_MIN, GET_DEF requests shall report field dwValue set to 0.
 - GET_RES request shall report field dwValue to be the same value as reported by GET_MAX request.
 - When a SET_CUR request is received with dwValue set to 0, the camera shall not produce any metadata. When a SET_CUR request is received with dwValue set to be the same value as reported by GET_MAX request, the camera can produce metadata and the size of such metadata cannot exceed dwValue for any frame.
 
 If SET_CUR request is not supported by the firmware, the following applies:
+
 - GET_MIN, GET_DEF requests shall report field dwValue to be the same value as reported by GET_MAX request.
 - GET_RES request shall report field dwValue set to 0.
 - The camera can produce metadata and the total size of such metadata cannot exceed the dwValue - as reported by GET_MAX request – times 1024 bytes less the size of a UsbVideoHeader metadata payload, for any frame.  
@@ -252,6 +255,7 @@ This control provides a flexible means for the IR LED hardware to report the ext
 ![IR Torch Control](images/uvc-1-15-irtorch-control.png)
 
 The following applies:
+
 - GET_LEN request shall report a value of 8.
 - GET_INFO request shall report a 3.  This value indicates a synchronous control that supports GET_CUR and SET_CUR.
 - GET_MIN request shall report field dwMode set to 0 and dwValue set to a value indicating minimum power.  A power level of 0 may indicate OFF, but the minimum operational power level need not be 0.
@@ -267,11 +271,11 @@ This metadata’s sole purpose is to indicate whether a frame is illuminated or 
 
 #### 2.2.3 Metadata
 
-The design for standard-format frame-metadata builds on the UVC custom metadata design from Windows 10. In Windows 10, custom metadata is supported for UVC by using a custom INF for the camera driver (note: the camera driver can be based on the Windows USBVIDEO.SYS, but a custom INF is required for the given hardware for metadata to come through). If MetadataBufferSizeInKB<PinIndex> registry entry is present and non-zero, then custom metadata is supported for that pin and the value indicates the buffer size used for the metadata. The <PinIndex> field indicates a 0 based index of the video pin index.
+The design for standard-format frame-metadata builds on the UVC custom metadata design from Windows 10. In Windows 10, custom metadata is supported for UVC by using a custom INF for the camera driver (note: the camera driver can be based on the Windows USBVIDEO.SYS, but a custom INF is required for the given hardware for metadata to come through). If `MetadataBufferSizeInKB<PinIndex>` registry entry is present and non-zero, then custom metadata is supported for that pin and the value indicates the buffer size used for the metadata. The `<PinIndex>` field indicates a 0 based index of the video pin index.
 
 In Windows 10, version 1703, a camera driver can signal support for Microsoft standard-format metadata by including the following AddReg entry:
 
-**StandardFormatMetadata<PinIndex>**: REG_DWORD: 0x0 (NotSupported) to 0x1 (Supported)
+`StandardFormatMetadata<PinIndex>`: REG_DWORD: 0x0 (NotSupported) to 0x1 (Supported)
 
 This registry key will be read by DevProxy and informs the UVC driver that the metadata is in standard format by setting the flag KSSTREAM_METADATA_INFO_FLAG_STANDARDFORMAT in the Flags field for KSSTREAM_METADATA_INFO structure.
 
@@ -362,7 +366,7 @@ The header length field specifies the length of the header, in bytes.
 
 - The SCR field is present when the SCR bit is set in the BFH[0] field. See Section 2.4.3.3 *Video and Still Image Payload Headers* in the *USB Device Class Definition for Video Devices* specification.
 
-The HLE field in the existing UVC driver is fixed to either 2 bytes (no PTS/SCR present) or upto 12 bytes (PTS/SCR present). However, the HLE field, being a byte sized field, can potentially specify up to 255 bytes of header data. If both PTS/SCR are present, and the HLE isgreater than 12 bytes, any additional data following the first 12 bytes of the payload header is picked up as standard metadata specific to the video frame when INF entry *StandardFormatMetadata<PinIndex>* is set.
+The HLE field in the existing UVC driver is fixed to either 2 bytes (no PTS/SCR present) or upto 12 bytes (PTS/SCR present). However, the HLE field, being a byte sized field, can potentially specify up to 255 bytes of header data. If both PTS/SCR are present, and the HLE isgreater than 12 bytes, any additional data following the first 12 bytes of the payload header is picked up as standard metadata specific to the video frame when INF entry `StandardFormatMetadata<PinIndex>` is set.
 
 The standard-format metadata (generated by firmware) for a frame is obtained by concatenating the partial blobs found in the video frame packets representing that frame.
 
@@ -461,6 +465,7 @@ typedef struct tagKSCAMERA_METADATA_FRAMEILLUMINATION {
     ULONG Reserved;
 } KSCAMERA_METADATA_FRAMEILLUMINATION, *PKSCAMERA_METADATA_FRAMEILLUMINATION;
 ```
+
 The **Flags** field indicates information about the captured frame. Currently, the following flags are defined:
 
 ```cpp
@@ -470,6 +475,3 @@ The **Flags** field indicates information about the captured frame. Currently, t
 If a frame was captured when illumination was on, the flag KSCAMERA_METADATA_FRAMEILLUMINATION_FLAG_ON shall be set. Otherwise, this flag shall not be set.
 
 The **Reserved** field is reserved for future use and shall be set to 0.
-
-
-

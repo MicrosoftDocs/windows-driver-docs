@@ -8,63 +8,39 @@ topic_type:
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCHMODE
 api_location:
-- Ksmedia.h
+- ksmedia.h
 api_type:
 - HeaderDef
-ms.author: jocorley
-ms.date: 11/11/2018
+ms.date: 03/27/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.custom 19H1
 ---
 
 # KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCHMODE
 
-This extended property control is used by the client to control an IR camera's infrared torch's power level and duty cycle. It is sent to the driver along with a standard [**KSCAMERA_EXTENDEDPROP_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure followed by a [**KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_videoprocsetting) structure.
+This extended property control is used by the client to control an IR camera's infrared torch's power level and duty cycle. It is sent to the driver along with a standard [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure followed by a [KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_videoprocsetting) structure.
 
-## <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+## Usage Summary Table
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td><p>[<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>](https://msdn.microsoft.com/library/windows/hardware/dn567563)</p></td>
-</tr>
-</tbody>
-</table>
+| Get | Set | Target | Property descriptor type | Property value type |
+| --- | --- | --- | --- | --- |
+| Yes | Yes | Filter | [KSPROPERTY](https://docs.microsoft.com/previous-versions//ff564262(v=vs.85)) | [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)|
 
 ## Remarks
 
-The property request contains a [**KSCAMERA_EXTENDEDPROP_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) structure and a [**KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING**](https://msdn.microsoft.com/library/windows/hardware/dn567564) structure.
+The property request contains a [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure and a [KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_videoprocsetting) structure.
 
-The total property data size is **sizeof**(KSCAMERA_EXTENDEDPROP_HEADER) + **sizeof**(KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING). The **Size** member of [**KSCAMERA_EXTENDEDPROP_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) is set to this total property data size.
+The total property data size is sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING). The **Size** member of [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) is set to this total property data size.
 
 The following are flags that can be placed in the **KSCAMERA_EXTENDEDPROP_HEADER.Flags** and **KSCAMERA_EXTENDEDPROP_HEADER.Capability** fields.  They define the IR torch's operating mode(s).
 
 | Torch mode                                                       | Description                        |
 |------------------------------------------------------------------|------------------------------------|
-| KSCAMERA_EXTENDEDPROP_IRTORCHMODE_OFF                            | Off.                               |
-| KSCAMERA_EXTENDEDPROP_IRTORCHMODE_ALWAYS_ON                      | Always on.                         |
-| KSCAMERA_EXTENDEDPROP_IRTORCHMODE_ALTERNATING_FRAME_ILLUMINATION | On for every other frame.          |
+| KSCAMERA_EXTENDEDPROP_IRTORCHMODE_OFF                            | Off                                |
+| KSCAMERA_EXTENDEDPROP_IRTORCHMODE_ALWAYS_ON                      | Always on                          |
+| KSCAMERA_EXTENDEDPROP_IRTORCHMODE_ALTERNATING_FRAME_ILLUMINATION | On for every other frame           |
 
 KSCAMERA_EXTENDEDPROP_IRTORCHMODE is always a synchronous control.  The control has no defined behavior when the camera is not streaming.
 
@@ -83,7 +59,7 @@ For a SET request, a driver uses the following fields:
 - **KSCAMERA_EXTENDEDPROP_HEADER.Flags** to set an operating mode.
 - **KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING.VideoProc.ul** to set a power level.  This value has no effect on KSCAMERA_EXTENDEDPROP_IRTORCHMODE_OFF.
 
-The table below contains the descriptions and requirements for the [**KSCAMERA_EXTENDEDPROP_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the metadata control.
+The table below contains the descriptions and requirements for the [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the metadata control.
 
 <table>
 <colgroup>
@@ -107,7 +83,7 @@ The table below contains the descriptions and requirements for the [**KSCAMERA_E
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof([<strong>KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING</strong>](https://msdn.microsoft.com/library/windows/hardware/dn925144)),</p></td>
+<td><p>This must be sizeof(KSCAMERA_EXTENDEDPROP_HEADER)+sizeof([KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_videoprocsetting)),</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>
@@ -116,7 +92,7 @@ The table below contains the descriptions and requirements for the [**KSCAMERA_E
 <tr class="odd">
 <td><p>Capability</p></td>
 <td><p>May be any combination of <strong>KSCAMERA_EXTENDEDPROP_IRTORCHMODE_OFF</strong>, <strong>KSCAMERA_EXTENDEDPROP_IRTORCHMODE_ALWAYS_ON</strong> or <strong>KSCAMERA_EXTENDEDPROP_IRTORCHMODE_ALTERNATIVE_FRAME_ILLUMINATION</strong>.  
-This field must report at least one capability.  The field must report either  <strong>KSCAMERA_EXTENDEDPROP_IRTORCHMODE_ALWAYS_ON</strong> or <strong>KSCAMERA_EXTENDEDPROP_IRTORCHMODE_ALTERNATIVE_FRAME_ILLUMINATION</strong> or both. The value <strong>KSCAMERA_EXTENDEDPROP_IRTORCHMODE_OFF</strong> is optional.
+This field must report at least one capability.  The field must report either <strong>KSCAMERA_EXTENDEDPROP_IRTORCHMODE_ALWAYS_ON</strong> or <strong>KSCAMERA_EXTENDEDPROP_IRTORCHMODE_ALTERNATIVE_FRAME_ILLUMINATION</strong> or both. The value <strong>KSCAMERA_EXTENDEDPROP_IRTORCHMODE_OFF</strong> is optional.
 </p></td>
 </tr>
 <tr class="even">
@@ -126,7 +102,7 @@ This field must report at least one capability.  The field must report either  <
 </tbody>
 </table>
 
-The table below contains the descriptions and requirements for the [**KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING**](https://msdn.microsoft.com/library/windows/hardware/dn567564) structure fields when using the IR torch mode control.
+The table below contains the descriptions and requirements for the [KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_videoprocsetting) structure fields when using the IR torch mode control.
 
 <table>
 <colgroup>
