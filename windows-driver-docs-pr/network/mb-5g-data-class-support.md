@@ -111,9 +111,28 @@ To make the signal more scalable, the new MBIM_CID_MS_SIGNAL_STATE_V2 message ha
 
 The signal strength reported by the modem is based on the current data class. If the modem is connected to both LTE and 5G (DC), then the 5G RSSI is reported. If the 5G icon is displayed, then the signal strength indicator reported by the modem is based on a 5G carrier.
 
-## MBIM Extensions release 2.0
+## MBIM Extensions Release 2.0
 
+The [MBIM 1.0 errata specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) has a mechanism to add and advertise optional CIDs, but it lacks a mechanism to change existing CIDs with new payloads or modified payloads, or introduce any changes that cannot be accommodated by optional CIDs. Each payload in the MBIM 1.0 errata specification might consist of fixed size members or dynamically sized offset/size pair members. If a dynamically-sized member exists, then the last member is a variable-sized buffer. The MBIM 1.0 errata specification defines a fixed location for this buffer, so new members cannot be added before it. To introduce new members for existing CID payloads would mean a breaking change.
 
+The MBIM 1.0 errata specification defines the MBIM Release 1.0 and the MBIM Extensions Release 1.0 in Section 6.4, MBIM EXTENDED FUNCTIONAL DESCRIPTOR and in Section 6.5, MBIM EXTENDED FUNCTIONAL DESCRIPTOR. For USB-based MBIM devices, the devices use the USB descriptors to advertise their MBIM release number and MBIM Extensions release number to which they conform. For MBIM devices based on other bus types that use [MBBCx](../netcx/writing-an-mbbcx-client-driver.md) APIs, an API is provided for the device to advertise its MBIM release number and MBIM Extensions release number.
+
+> [!NOTE]
+> The MBIM 1.0 errata specification does not define a way for the host to advertise its MBIM release number and MBIM Extensions release number.
+
+This topic introduces a new release for MBIM Extensions, MBIM Extensions Release 2.0. It also introduces a new optional CID to enable the host to advertise its MBIM release number and MBIM Extensions release number to MBIM devices. Like MBIM Extensions Release 1.0, Extensions Release 2.0 is under MBIM Release 1.0. Unless expicitly mentioned and modified, all unmentioned payloads, CIDs, and procedures in MBIM Extensions Release 1.0 carry over and stay unchanged in MBIM Extensions Release 2.0.
+
+### Versioning scheme
+
+> [!NOTE]
+> In this section, the term *MBIMEx version* refers to the MBIM Extensions release number.
+
+The host learns a device's MBIMEx version through two ways:
+
+1. The MBIM EXTENDED FUNCTIONAL DESCRIPTOR.
+2. The optional MBM_CID_VERSION message, if the device supports it and declares support for it.
+
+If these two are different, the higher version dictates the MBIMEx version for the duration that the device stays enumerated to the host. The higher MBIMEx version is referred to as the device's *announced MBIMEx version*. A device's announced MBIMEx version can be lower than its native MBIMEx version, which is the highest MBIMEx version that the device supports.
 
 ## MBIM service and CID values
 
