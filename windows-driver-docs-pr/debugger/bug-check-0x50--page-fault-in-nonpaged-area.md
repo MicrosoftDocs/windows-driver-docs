@@ -56,8 +56,8 @@ The PAGE\_FAULT\_IN\_NONPAGED\_AREA bug check has a value of 0x00000050. This in
 <tr class="even">
 <td align="left"><p>4</p></td>
 <td align="left"><p>Type of page fault</p>
-<p>0x03 - NONPAGED_BUGCHECK_WRONG_SESSION</p>
-<p>0x04 - NONPAGED_BUGCHECK_VA_NOT_CANONICAL</p>
+<p>0x03 - NONPAGED_BUGCHECK_WRONG_SESSION - An attempted reference to a session space address was made in the context of a process that has no session.  Typically this means the caller is improperly trying to access a session address without correctly obtaining an object reference to the correct process and attaching to it first. This bugcheck & subtype was last used in Windows 10 RS3.  In Windows 10 RS4 and above, this error is instead surfaced as 0x02 (NONPAGED_BUGCHECK_NOT_PRESENT_PAGE_TABLE).</p>
+<p>0x04 - NONPAGED_BUGCHECK_VA_NOT_CANONICAL - An attempted reference to a non-canonical (illegal) virtual address (Parameter 1) was attempted.  The caller should not ever be trying to access this address.</p>
 </td>
 </tr>
 </tbody>
