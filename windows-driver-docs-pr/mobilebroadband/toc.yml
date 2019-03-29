@@ -346,8 +346,6 @@
       href: mobile-plans-launch.md
     - name: "Appendix"
       href: mobile-plans-appendix.md
-    - name: "Asynchronous fulfillment"
-      href: mobile-plans-asynchronous-fulfillment.md
   - name: "Creating and configuring Internet Sharing experiences"
     href: creating-and-configuring-internet-sharing-experiences.md
   - name: "Developing apps using multiple PDP contexts"

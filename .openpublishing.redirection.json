@@ -7506,6 +7506,12 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/mobile-plans-asynchronous-fulfillment.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/mobile-plans-callbacks",
+      "redirect_document_id": false
+    },
+  
+    {
       "source_path": "windows-driver-docs-pr/mobilebroadband/mobile-plans-prepaid-experience.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-device-experience",
       "redirect_document_id": false
