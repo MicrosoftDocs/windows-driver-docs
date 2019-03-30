@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # (Developer Content) Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE
 
 
-This bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
+The DRIVER_POWER_STATE_FAILURE bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
