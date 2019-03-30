@@ -145,8 +145,8 @@ The following is a list of new commands for the Windows Debugger in Windows 10, 
 
 In Windows 10, version 1809, the following content was added:
 
-• [INF AddEventProvider Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addeventprovider-directive)
-• [INF DDInstall.Events Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-events-section)
+* [INF AddEventProvider Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addeventprovider-directive)
+* [INF DDInstall.Events Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-events-section)
 
 The following was updated:
 
@@ -165,25 +165,13 @@ Driver verifier includes new driver validation rules for the following technolog
 
 ### Windows Driver Frameworks (WDF)
 
-**WDF in Windows 10, version 1809**
+**WDF in Windows 10, version 1903**
 
-In Windows 10, version 1809, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.27 and User-Mode Driver Framework version 2.27. For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](https://docs.microsoft.com/windows-hardware/drivers/wdf/).
+In Windows 10, version 1903, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.29 and User-Mode Driver Framework (UMDF) version 2.29.
+
+For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](https://docs.microsoft.com/windows-hardware/drivers/wdf/).
 To see what was added in previous versions of WDF, see [KMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/kmdf-version-history) and [UMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/umdf-version-history).
 The following topic is new for WDF:
-
-* [WdfDriverRetrieveDriverDataDirectoryString](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring)
-
-
-**WDF in Windows 10, version 1803**
-
-In Windows 10, version 1803, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.25 and User-Mode Driver Framework version 2.25. For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](wdf/index.md).
-
-To see what was added in previous versions of WDF, see [KMDF Version History](wdf/kmdf-version-history.md) and [UMDF Version History](wdf/umdf-version-history.md).
-
-The following topics are new for WDF:
-
-* [Building a WDF driver for multiple versions of Windows](wdf/building-a-wdf-driver-for-multiple-versions-of-windows.md)
-* [**WdfDeviceRetrieveDeviceDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
 
 ### Universal Windows drivers
 
@@ -246,6 +234,8 @@ Windows is now supported on more affordable boards such as the Raspberry Pi 2. B
 ### <a name="power-management-framework"></a>Power Management Framework (PoFx)
 
 The power management framework (PoFx) enables a driver to define one or more sets of individually adjustable performance states for individual components within a device. The driver can use performance states to throttle a component's workload to provide just enough performance for its current needs. For more information, see [Component-Level Performance State Management](https://docs.microsoft.com/windows-hardware/drivers/kernel/component-level-performance-management).
+
+Windows 10, version 1903 includes support for the [Directed Power Management Framework](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework).
 
 ### WPP Software Tracing
 
