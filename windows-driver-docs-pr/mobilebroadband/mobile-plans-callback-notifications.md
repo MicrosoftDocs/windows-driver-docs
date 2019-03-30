@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans Control Back Notifications
+title: Mobile Plans callback notifications
 description: This topic describes the Callback notifications support by Mobile Plans app
 ms.assetid: A3CE0B7D-80C5-4A98-8615-250A3C760B85
 keywords:
@@ -8,7 +8,7 @@ ms.date: 03/25/2019
 ms.localizationpriority: medium
 ---
 
-# Mobile Plans control back notifications
+# Mobile Plans callback notifications
 
 ## Overview
 
@@ -21,12 +21,12 @@ Transactions that the MO portal supports include, but are not limited to, the fo
 - Purchasing a new data plan (either postpaid or prepaid).
 - Canceling a subscription.
 
-> [!Note]
-> Make a note about that this control back should be returned from the host defined in Configuration.
+> [!NOTE]
+> This callback should be returned from the host defined in [Service configuration](mobile-plans-service-configuration.md).
 
 ## Inline profile delivery
 
-The following diagram shows the high level flow for how the *Mobile Plans* program supports downloading a profile without control leaving the MODirect portal.
+The following diagram shows the high level flow for how the Mobile Plans program supports downloading a profile without control leaving the MODirect portal.
 
 ![Mobile Plans inline profile download sequence diagram](images/dynamo_inline_profile_flow.png)
 
@@ -98,7 +98,7 @@ function onRegistrationChanged(registrationArgs) {
 
 ### Listening for profile activation
 
-To listen for profile activation events, the `MobilePlansInlineProfileDownload.profileActivationCompleteScript` must be set to a string that is the name of a Javascript function that takes a string for the `activationArgs`
+To listen for profile activation events, the `MobilePlansInlineProfileDownload.profileActivationCompleteScript` must be set to a string that is the name of a Javascript function that takes a string for the `activationArgs`.
 
 The `activationArgs` is a string that represents a JSON object.
 
@@ -157,7 +157,7 @@ function onActivationComplete(activationArgs) {
 
 ## Asynchronous connectivity
 
-The following diagram shows the high level flow for how the *Mobile Plans* program supports delayed connectivity.
+The following diagram shows the high level flow for how the Mobile Plans program supports delayed connectivity.
 
 ![Mobile Plans delayed connectivity sequence diagram](images/dynamo_async_connectivity_flow.png)
 
@@ -212,9 +212,9 @@ function finishPurchaseWithBalanceAddition() {
     }
 ```
 
-See [purchase metadata properties](#Purchase-Metadata-Properties-details) for details about the puchaseMetadata object.
+See [purchase metadata properties](#Purchase-Metadata-Properties-details) for details about the `puchaseMetadata` object.
 
-## Cancelling purchase flow
+## Canceling purchase flow
 
 If a user cancels the purchase flow at the MO portal, then the portal must invoke the `MobilePlans.notifyCancelledPurchase` API to return control back to the Mobile Plans app.
 
@@ -238,11 +238,11 @@ function finishPurchaseWithCancellation() {
     }
 ```
 
-See [purchase metadata properties](#Purchase-Metadata-Properties-details) for details about the puchaseMetadata object.
+See [purchase metadata properties](#Purchase-Metadata-Properties-details) for details about the `puchaseMetadata` object.
 
 ## Purchase Metadata Properties details
 
-The table below describes the details used in the purchase metadata
+The following table describes the details used in the purchase metadata.
 
 | Property name | Type | Description | Example |
 | --- | --- | --- | --- |
@@ -252,10 +252,10 @@ The table below describes the details used in the purchase metadata
 | moDirectStatus | String | Possible values: <ul><li>Complete: Indicates that the user completed the purchase successfully.</li><li>ServiceError: Indicates that the user was unable to complete the purchase due to an MO service error.</li><li>InvalidSIM: Indicates that the ICCID passed to the portal was incorrect.</li><li>LogOnFailed: indicates that the user failed to log in to the MO portal.</li><li>PurchaseFailed: Indicates that the purchase failed due to a billing error.</li><li>ClientError: Indicates that invalid arguments were passed to the portal.</li>BillingError: Indicates that there was an error with the user billing.</li></ul> | "moDirectStatus":"Complete" |
 | planName | String | For a successful transaction, this field must not be empty and must provide a descriptive plan name. For an unsuccessful transaction, this field must be an empty string. | "planName":"2GB Monthly"|
 
-## Legacy control back notifications
+## Legacy callback notifications
 
-> [!Note]
-> This section is here as reference only. This notification is supported in Mobile Plans app, but the recommendation is not to implement them in new Mobile Plans implementations.
+> [!NOTE]
+> This section serves as reference only. While this notification is supported in Mobile Plans app, the recommendation is not to implement it in new Mobile Plans implementations.
 
 The notification to the Mobile Plans app should be sent using JavaScript with the following syntax:
 
@@ -304,7 +304,7 @@ notificationPayload.iccid = '';
 DataMart.notifyPurchaseResult(JSON.stringify(notificationPayload));
 ```
 
-The MO Portal URI from which the notification is sent must be in the secure *https* protocol. You might specify the host but not necessarily the full path, which leaves some flexibility for the future. 
+The MO Portal URI from which the notification is sent must be in the secure *https* protocol. You can specify the host but not necessarily the full path, which leaves some flexibility for the future. 
 
 The following table describes each field in the JSON payload of the notification:
 

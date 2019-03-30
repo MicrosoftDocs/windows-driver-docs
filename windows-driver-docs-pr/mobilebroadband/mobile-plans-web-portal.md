@@ -8,23 +8,23 @@ ms.date: 03/25/2019
 ms.localizationpriority: medium
 ---
 
-# Mobile Plans Mobile Operator Web Portal
+# Mobile Plans Mobile Operator web portal
 
 ## Overview
 
-This topic describes the mobile operator web service API/portal that enables mobile operators to provide connectivity solutions directly to Windows users through a curated web experience hosted in the Mobile Plans app. You need to create your web experiences following design policies and implement the web service API to make it reachable. This portal will be used for all scenarios supported in the Mobile Plans solution.
+This topic describes the mobile operator web service API for a web portal that enables mobile operators to provide connectivity solutions directly to Windows users through a curated web experience hosted in the Mobile Plans app. You need to create your web experiences following these design policies and implement the web service API to make it reachable. This portal is used for all scenarios supported in the Mobile Plans solution.
 
 For more info about Web portal flow and reference design, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design).
 
 ## Web Service API used for eSIM
 
-The Mobile Plans app uses the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host the MO Direct experience. The app only trusts content returned by the *Mobile Plans* service.
+The Mobile Plans app uses the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host the MO Direct experience. The app only trusts content returned by the Mobile Plans service.
 
-When starting the WebView, the *eid*, *market*, *location*, *imei*, and *transactionId* parameters are passed to the MO web portal. If there is at least an eSIM profile matching the Mobile Operator, which Mobile Plans is reaching, the *iccids* are passed to the portal as well.
+When starting the `WebView`, the *eid*, *market*, *location*, *imei*, and *transactionId* parameters are passed to the MO web portal. If there is at least one eSIM profile matching the Mobile Operator that Mobile Plans is reaching, the *iccids* are passed to the portal as well.
 
 The following example shows these launch parameters for eSIM, embedded in the call to `MyWebView.Navigate()`.
 
-```c#
+```C#
 MyWebView.ScriptNotify += MyWebView_ScriptNotify;
 
 List<Uri> allowedUris = new List<Uri>();
@@ -36,14 +36,14 @@ MyWebView.AllowedScriptNotifyUris = allowedUris;
 MyWebView.Navigate(“https://moportal.com?market=US&location=US&transactionId=%2F7RBTuSJt02OZbX8.4&eid=89033023422130000000000199055797&imei=001102000315468&iccids=8988247000101867183,8988247000103824828”);
 ```
 
-The Web Service API must disregard any additional parameters it might receive from the Mobile Plans app. This provides flexibility for introducing new features without breaking the *Mobile Plans* experience. Please check the documentation frequently to learn about new features.
+The Web Service API must disregard any additional parameters it might receive from the Mobile Plans app. This provides flexibility for introducing new features without breaking the Mobile Plans experience. Please check the documentation frequently to learn about new features.
 
 The following table describes the launch parameters available for eSIM.
 
-| Parameter name | Description                                                                                                                                                                              | Example                                          |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| Parameter name | Description | Example  |
+| --- | --- | --- |
 | eid            | The eSIM Identifier. This is sent only if an eSIM is present.                                                                                                                            | `eid= 89033024010400000100000000009136`          |
-| iccids         | Optional parameter. Specifies the list of ICCIDs from the available profile on an eSIM only. If there are no ICCID’s matching the MO available on the eSIM, this parameter is not sent. | `iccids=8988247000100003319, 988247000100003555` |
+| iccids         | Optional parameter. Specifies the list of ICCIDs from the available profile on an eSIM only. If there are no ICCIDs matching the MO available on the eSIM, this parameter is not sent. | `iccids=8988247000100003319, 988247000100003555` |
 | imei           | The device's IMEI number.                                                                                                                                                                | `imei=001201234567890`                           |
 | location       | The user’s current physical location with country-level granularity.                                                                                                                    | `location=us`                                    |
 | transactionId  | The Transaction ID used for debugging the session. Providers should log this and send it in the notification payload. Maximum size is 64 characters.                                     | `transactionId=waoigFfX00yGH3Vb.1`               |
@@ -51,21 +51,18 @@ The following table describes the launch parameters available for eSIM.
 
 The user’s language preference is sent using the Accept-Language header, described in the following table.
 
-| Header name     | Description                                                                                                                                                                                                                                     | Example                  |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| Header name     | Description  | Example |
+| --- | --- | --- |
 | Accept-Language | The user’s current language settings. The MO portal should render the contents in the specified language if possible. For more information, see [RFC 7231, section 5.3.5: Accept-Language](https://tools.ietf.org/html/rfc7231#section-5.3.5). | `Accept-Language: en-us` |
 
-## Web Service API used for Physical SIM
+## Web Service API used for a physical SIM
 
-The mobile operator portal for physical and eSIM is the same, the difference is which parameters are passed to the portal, the parameters passed are : *market*, *location*, *imei*, *iccid*, and *transactionId*.
+The mobile operator portal for a physical SIM is the same as for eSIM. However, there is a difference in which parameters are passed to the portal. The parameters passed are: *market*, *location*, *imei*, *iccid*, and *transactionId*.
 
-```c#
+```C#
 MyWebView.Navigate(“https://moportal.com?iccid=8988247000100003319&imei=001102000311608&market=us&transactionId=waoigFfX00yGH3Vb.1&location=us”);
 ```
-
-The Web Service API must disregard any additional parameters it might receive from the Mobile Plans app. This provides flexibility for introducing new features without breaking the *Mobile Plans* experience. Please check the documentation frequently to learn about new features.
-
-The following table describes the launch parameters available for Physical SIM.
+The following table describes the launch parameters available for a physical SIM.
 
 | Parameter name | Description                                                                                                                                                                              | Example                                          |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |

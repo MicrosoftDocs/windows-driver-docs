@@ -10,23 +10,23 @@ ms.localizationpriority: medium
 
 # Mobile Plans Windows 10 device experience
 
-This topic describes, which are the capabilities that Mobile Plans program offers to ensure that mobile operator customers have experiences according to the mobile operator offerings.
+This topic describes the capabilities that the Mobile Plans program offers to ensure that mobile operator customers' experiences align with the mobile operator offerings.
 
 ## Basic device experience
 
-This section describes which are the options to configure what the *View my account* link in the Windows Connection Manager, also known as also known as the network flyout.
+This section describes the options to configure what the *View my account* link shows in the Windows Connection Manager, also known as also known as the network flyout.
 
 The *View my account* link could be configured to:
 
-- Launch a web browser and open a defined web page
-- Launch the Mobile Plans app and open the Mobile Plans Web Portal
+- Launch a web browser and open a defined web page.
+- Launch the Mobile Plans app and open the Mobile Plans Web Portal.
 
- Once an option has been choose, please request a COSA database update to implement the right behavior, please see [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
+ Once you have decided on one of these options, please request a COSA database update to implement the right behavior. For more info, please see [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
 The following settings apply for the above options:
 
-- *AccountExperienceURL* parameter defines the web page.
-- *AppID* parameter defined which app launched, to use Mobile Plans app configure _Microsoft.OneConnect_8wekyb3d8bbwe!App_
+- *AccountExperienceURL*. This parameter defines the web page.
+- *AppID*. This parameter defines which app is launched. To use the Mobile Plans app, configure _Microsoft.OneConnect_8wekyb3d8bbwe!App_.
 
 The following image shows an example of the network flyout:
 
@@ -34,25 +34,23 @@ The following image shows an example of the network flyout:
 
 ## Enhanced device experience
 
-By implementing the enhanced device experience, you can offer these benefits to your consumers:
+By implementing the enhanced device experience, you can offer these benefits to your customers:
 
-- Consumers can see how much data is available, and the amount of time left until their subscriptions expire, in the network flyout.
-- Consumers can top up their prepaid subscriptions over mobile connectivity, even when they run out of prepaid balance or their subscriptions has expired.
-- You can manage your network flyout offering based on consumers’ subscription status.
+- Customers can see how much data is available, and the amount of time left until their subscriptions expire, in the network flyout.
+- Customers can top up their prepaid subscriptions over mobile connectivity, even when they run out of prepaid balance or their subscriptions has expired.
+- You can manage your network flyout offering based on customer's subscription status.
 
-These experiences build on top of the [basic device experience](#basic-device-experience); this will be the default experience in the device network flyout.
+These experiences build on top of the [basic device experience](#basic-device-experience), which is the default experience in the device network flyout.
 
 ### Network flyout user experience
 
-Depending on the information that is received from *GetBalance* API calls, the network flyout behaves differently, which enhances the user experience.
+Depending on the information that is received from `GetBalance` API calls, the network flyout behaves differently, which enhances the user experience.
+
 The network flyout has the following elements:
 
-1. Connect with a data plan  
-  This launches the Mobile Plans app.
-2. View my account  
-  Behaves based on the [basic device experience](#basic-device-experience)
-3. Balance information  
-  Shows the balance available, which is provided in your *GetBalance* response.
+1. Connect with a data plan. This launches the Mobile Plans app.
+2. View my account. Behaves based on the [basic device experience](#basic-device-experience).
+3. Balance information. Shows the balance available, which is provided in your `GetBalance` response.
 
 The following image shows these network flyout elements. Connect with a data plan corresponds with A, View my account corresponds with B, and Balance information corresponds with C.
 
@@ -60,7 +58,7 @@ The following image shows these network flyout elements. Connect with a data pla
 
 To provide the right information in the network flyout, MOs provide *Type* and *Balance* (dataRemainingMB and timeRemaining) information as defined in the [GetBalance API](#getbalance-api) section.
 
-The table below provide a reference between the GetBalance response type and what it is displayed in the network flyout.
+The following table provides a reference between the `GetBalance` response type and what is displayed in the network flyout.
 
 | GetBalance response type | Network flyout shows... |
 | --- | --- |
@@ -71,16 +69,16 @@ The table below provide a reference between the GetBalance response type and wha
 
 ## GetBalance API
 
-> [!Important]
+> [!IMPORTANT]
 > Please request a [Windows COSA update to enable Get Balance](#how-to-enable-get-balance-in-windows-cosa) in Windows.
 
-The GetBalance API queries current subscription status, controls whether the *Mobile Plans* experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the *GetBalance* API.
+The `GetBalance` API queries current subscription status, controls whether the Mobile Plans experience is available on the device, and shows remaining data and time in the network flyout for prepaid subscriptions. The following diagram shows the high-level flow for the `GetBalance` API.
 
 <img src="images/mobile_plans_get_balance_api_flow.png" alt="GetBalance API flow" title="GetBalance API flow" width="600" />
 
 ### Resource model
 
-Communication between the *Mobile Plans* service and the MO service involves manipulating the resources in the following diagram. Explanations for each resource are in the tables following the diagram.
+Communication between the Mobile Plans service and the MO service involves manipulating the resources in the following diagram. Explanations for each resource are in the tables following the diagram.
 
 <img src="images/mobile_plans_get_balance_resource.png" alt="GetBalance API resource model diagram" title="GetBalance API resource model diagram" width="600" />
 
@@ -98,17 +96,17 @@ Communication between the *Mobile Plans* service and the MO service involves man
 | JSON property | Type | Description |
 | --- | --- | --- |
 |id |String| Mobile operator internal id, to track the transaction |
-Type | Enum | Possible values: <ul><li>MODIRECT: Indicates if the user balance is MO Direct.</li><li>MODIRECTPAYG: Indicates if the user balance is MO Direct PAYG.</li><li>NONE: Indicates the user has no balance. When the remaining balance is 0 but the plan has not expired, we expect to receive "NONE" so that the user can purchase data plans.</li><li>NOTSUPPORTED: Indicates the SIM is not supported by the *Mobile Plans* experience. "NOTSUPPORTED" is used when the SIM should not be in the *Mobile Plans* supported range. We will turn off the *Mobile Plans* experience in the network flyout and return a generic error message in the Mobile Plans app when we receive this type.</li></ul> |
+Type | Enum | Possible values: <ul><li>MODIRECT: Indicates if the user balance is MO Direct.</li><li>MODIRECTPAYG: Indicates if the user balance is MO Direct PAYG.</li><li>NONE: Indicates the user has no balance. When the remaining balance is 0 but the plan has not expired, we expect to receive "NONE" so that the user can purchase data plans.</li><li>NOTSUPPORTED: Indicates the SIM is not supported by the Mobile Plans experience. "NOTSUPPORTED" is used when the SIM should not be in the*Mobile Plans supported range. We will turn off the Mobile Plans experience in the network flyout and return a generic error message in the Mobile Plans app when we receive this type.</li></ul> |
 | dataRemainingInMB | Double | The data remaining in the current user plan, in MB. |
 | timeRemaining | String | The time duration specified in [ISO 8601](https://go.microsoft.com/fwlink/p/?linkid=866182). |
 
 ### Headers
 
-The following headers may be included in every request from the *Mobile Plans* service to the Mobile Provider’s endpoint.
+The following headers may be included in every request from the Mobile Plans service to the mobile provider’s endpoint.
 
 | Header name | Value | Description |
 | --- | --- | --- |
-| X-MS-DM-TransactionId | String | The TransactionId to uniquely identify this request/response interaction between the *Mobile Plans* service and the MO service. |
+| X-MS-DM-TransactionId | String | The TransactionId to uniquely identify this request/response interaction between the Mobile Plans service and the MO service. |
 | Authorization (optional) | String | A basic authentication string optionally provided by the MO. |
 
 ### Error codes
@@ -124,14 +122,14 @@ The table below defines the error codes that should be used in the HTTP response
 | HTTP 403 (Forbidden) | The client certificate is untrusted or invalid. If the client certificate included as a part of MTLS is invalid, HTTP 403 should be returned. |
 | HTTP 404 (Not Found) | The MO service should return this error when the resource doesn’t exist. This can occur when an incorrect ICCID is sent. This should not be used to indicate that the user doesn’t have a balance in the specified location, which is indicated with HTTP 200 (OK). |
 | HTTP 409 (Conflict) | Used if a TransactionId is repeated. |
-| HTTP 429 (Too many requests) | Used by the MO service to indicate that the Mobile Plans service is sending too many requests within the specified amount of time. In the response, the MO service must use the Retry-After header to indicate the time after which the *Mobile Plans* service should retry for the resource. In the response body, optional details can be provided. |
+| HTTP 429 (Too many requests) | Used by the MO service to indicate that the Mobile Plans service is sending too many requests within the specified amount of time. In the response, the MO service must use the Retry-After header to indicate the time after which the Mobile Plans service should retry for the resource. In the response body, optional details can be provided. |
 | HTTP 500 (Internal Error) | Something unexpected happened on the MO service. The MO service should include the cause of error whenever possible so that it can be used for further debugging as needed. |
 
 ### GetBalance API specification
 
-The *GetBalance* API is called when network flyout is displayed in the Windows device, the Mobile Plans service is a proxy for this communication
+The `GetBalance` API is called when network flyout is displayed in the Windows device. The Mobile Plans service is a proxy for this communication.
 
-HTTP request, where *moBaseUrl* is the endpoint of the MO-hosted service and *sim id* is the ICCID:
+This call is done with an HTTP request, where *moBaseUrl* is the endpoint of the MO-hosted service and *sim id* is the ICCID:
 
 ```HTTP
 GET https://{moBaseUrl}/sims/{sim id}/balances?fieldsTemplate=basic&limit=1&location=US HTTP/1.1
@@ -145,7 +143,7 @@ Query parameters:
 | limit | Integer |Optional. The maximum count of balances to be returned. If not specified, all balances should be returned. |
 | fieldsTemplate | Enum |Specifies the list of fields that must be returned in the resource. <p>Possible values:</p><ul><li>Basic: *type*, *dataRemainingInMB*, and *timeRemaining* in the Balance resource must be returned.</li><li>Full: All properties in the Balance resource must be returned.</li></ul> |
 
-The following series of examples show the call flow for the *GetBalance* API.
+The following series of examples show the call flow for the `GetBalance` API.
 
 #### Example 1: Returning the first balance that is available for the user in US
 
@@ -211,13 +209,13 @@ X-MS-DM-TransactionId: “12345”
 
 ### Authentication
 
-Communication between Mobile Plans service and mobile operator service must be authenticated using the Mutual Transport Layer Security (MTLS). Microsoft will provide a certificate that you will use to validate the identity of the requester to **moBaseUrl**.
+Communication between the Mobile Plans service and the mobile operator service must be authenticated using the Mutual Transport Layer Security (MTLS). Microsoft provides a certificate for you to use to validate the identity of the requester to **moBaseUrl**.
 
-Microsoft will provide the certificate during onboarding process.
+Microsoft provides the certificate during the onboarding process.
 
 ### How to enable Get Balance in Windows COSA
 
-It is required to configure the following settings in Windows COSA to enable the Get Balance support in Windows devices.
+It is required to configure the following settings in the Windows COSA database to enable the Get Balance support on Windows devices.
 
 The following COSA settings are required:
 
@@ -231,12 +229,12 @@ To download the COSA/APN update spreadsheet, click [here](https://go.microsoft.c
 
 ## Walled Garden
 
-Walled Garden is key to supporting your customers when they run out of data. It enables them to reach the MO Direct portal even when there is no alternative internet connection such as Wi-Fi. This will enable consumers to purchase additional data plans and manage their subscriptions.
+*Walled Garden* is key to supporting your customers when they run out of data. It enables them to reach the MO Direct portal even when there is no alternative internet connection such as Wi-Fi. This will enable consumers to purchase additional data plans and manage their subscriptions.
 
 > [!NOTE]
-> The *Mobile Plans* architecture does not support IP ranges for Walled Garden endpoints. Host names must be used for whitelisting.
+> The Mobile Plans architecture does not support IP ranges for Walled Garden endpoints. Host names must be used for whitelisting.
 
-The MO Direct web portal and *GetBalance* API endpoint must also be part of this Walled Garden.
+The MO Direct web portal and `GetBalance` API endpoint must also be part of this Walled Garden.
 
 ### Walled Garden endpoints
 

@@ -328,14 +328,14 @@
     href: mobile-plans.md
     items:
     - name: "Mobile Plans Use cases"
-      href: mobile-plans-userCases.md
+      href: mobile-plans-use-cases.md
       items:
       - name: "Mobile operator web portal"
         href: mobile-plans-web-portal.md
-      - name: "Control back notifications"
-        href: mobile-plans-callbacks.md
+      - name: "Callback notifications"
+        href: mobile-plans-callback-notifications.md
       - name: "Service configuration"
-        href: mobile-plans-configuration.md
+        href: mobile-plans-service-configuration.md
       - name: "eSIM download error handling"
         href: mobile-plans-eSIM-error-handling.md
       - name: "Windows 10 device experience"
@@ -346,6 +346,8 @@
       href: mobile-plans-launch.md
     - name: "Appendix"
       href: mobile-plans-appendix.md
+    - name: "Mobile Plans callbacks"
+      href: mobile-plans-callbacks.md
   - name: "Creating and configuring Internet Sharing experiences"
     href: creating-and-configuring-internet-sharing-experiences.md
   - name: "Developing apps using multiple PDP contexts"

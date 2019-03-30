@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Mobile Plans service configuration
 
-This topic describes how to build a foundation on Windows connected devices that support *Mobile Plans*. It details how to configure your eSIM profiles to ensure the best consumer experience, as well as how to provide service configuration information that ensures that the *Mobile Plans* experience is properly rendered on Windows devices.
+This topic describes how to build a foundation on Windows connected devices that support Mobile Plans. It details how to configure your eSIM profiles to ensure the best consumer experience, as well as how to provide service configuration information that ensures that the Mobile Plans experience is properly rendered on Windows devices.
 
 ## eSIM profile configuration requirements
 
@@ -25,40 +25,30 @@ You must prepare eSIM profiles that meet the following requirements:
 
 ### eSIM profile testing
 
-It is expected that the Mobile Operator perform a validation to ensure that their eSIM profiles are able to be installed in different Windows devices. For this it is recommended to source some eSIM capable devices and use the *Settings app* to download, install and activate profiles.
-
-<!-- #Removed due to support to Async Connectivity
-
-- The device can immediately connect to the network for the end user after the eSIM is downloaded and activated.
-- The eSIM profile can be downloaded immediately from the SMDP+ server after MO Direct flow.
-Finally, the *Mobile Plans* user experience expects the eSIM profile to be in a warm state, meaning that a data plan can be activated in real-time after downloading the eSIM profile. If the eSIM cannot be activated in real-time, please ensure that you implement the <span style="color:green"> Asynchronous connectivity callback</span> **_TODO: Put a LINK HERE_**
--->
+It is expected that the mobile operator perform a validation to ensure that their eSIM profiles can be installed on different Windows devices. For this, it is recommended to source some eSIM-capable devices and use the Windows Settings app to download, install, and activate profiles.
 
 ## Service configuration
 
-*Mobile Plans* service need to ingest some configuration information to support a mobile operator. To start a configuration process, please send an email to [Mobile Plans Implementation Support](mailto:mpimplementation@microsoft.com).
+The Mobile Plans service must ingest some configuration information to support a mobile operator. To start the configuration process, please send an email to [Mobile Plans Implementation Support](mailto:mpimplementation@microsoft.com).
 
-### Minimum Configuration Information
+### Minimum configuration information
 
 1. The brand name you would like to use for your products.
 2. The branding logo. Required resolution is 300x300 pixels. Image should also be full bleed with no transparency.
 3. The list of countries where your solution is supported. Please use [ISO 3166 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) to create the list (comma separated).
-4. Your MO Direct portal URI (localization is not supported). This should be a https address. Port numbers are not supported
-5. A notification URI. This is the host address from where the javascript callbacks ([control back notifications]((mobile-plans-callbacks.md)) are going to be run. This should be a https address. Port numbers are not supported.
+4. Your MO Direct portal URI (localization is not supported). This should be an *https* address. Port numbers are not supported.
+5. A notification URI. This is the host address from where the Javascript callbacks ([callback notifications]((mobile-plans-callback-notifications.md)) are going to be run. This should be an *https* address. Port numbers are not supported.
 6. The ICCID range or ranges that you want to want to associate with *Mobile Plans*.
 
-<!--
-[//]: # (Removed for Phone Number Lookup.)
-[//]: # (7. MCC/MNC combinations for which you would like phone number lookup to direct to your mobile operator portal.)
--->
-The following image shows an example for the *standard gateway page*  in the Mobile Plans app. The “A” annotation corresponds to the branding logo you submit, and the “B” annotation corresponds to the brand name.
+The following image shows an example for the *standard gateway page* in the Mobile Plans app. The “A” annotation corresponds to the branding logo you submit, and the “B” annotation corresponds to the brand name.
 
 <img src="images/mobile_plans_configuration_mo_page.png" alt="Mobile Plans mobile operator page - asset usage example" title="Mobile Plans mobile operator page - asset usage example" width="600" />
 
 ### Enhanced gateway page
 
 This is an optional feature supported in Mobile Plans app version **5.1902.331.0** or above.
-The standard landing page could be enhanced with the mobile operator branding look and feel to highlight their offering.
+
+The standard landing page can be enhanced with mobile operator branding look and feel to highlight their offerings.
 
 #### Enhanced gateway content
 
