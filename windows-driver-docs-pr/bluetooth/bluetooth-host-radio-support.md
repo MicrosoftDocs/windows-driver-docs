@@ -25,7 +25,7 @@ The following list provides a Bluetooth Radio Support Q&A:
 
 ## Bluetooth host controllers supported in Windows
 
-With Windows, a Bluetooth radio can be packaged as an external dongle or embedded inside a computer but it must be connected to one of the computer’s USB ports. The Bluetooth stack that is included with Windows 7 and Windows Vista does not support Bluetooth radio connections over PCI, I2C, serial, Secure Digital I/O (SDIO), CompactFlash, or PC Card interfaces. In Windows 8 and Windows 8.1, radios connected over alternate transports can be added via a third-party bus driver. Refer to the Extensible Transport sections of the [Bluetooth Devices Reference](https://msdn.microsoft.com/library/windows/hardware/ff536585) for more information.
+With Windows, a Bluetooth radio can be packaged as an external dongle or embedded inside a computer but it must be connected to one of the computer’s USB ports. The Bluetooth stack that is included with Windows 7 and Windows Vista does not support Bluetooth radio connections over PCI, I2C, serial, Secure Digital I/O (SDIO), CompactFlash, or PC Card interfaces. In Windows 8 and Windows 8.1, radios connected over alternate transports can be added via a third-party bus driver. Refer to the Extensible Transport sections of the [Bluetooth Devices Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_bltooth/) for more information.
 
 ## Forcing the Bluetooth stack to load if Windows cannot match the device ID (Windows Vista)
 
@@ -94,148 +94,38 @@ he Bluetooth stack that is included with Windows provides in-box support for onl
 
 The following table lists the profiles in Bth.inf that Windows supports.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Service ID</p></td>
-<td align="left"><p>Description</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>{00001101-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>SPP</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>{00001103-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>DUN</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>{00001124-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>HID</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>{00001126-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>HCRP</p></td>
-</tr>
-</tbody>
-</table>
+|Service ID|Description|
+|----|----|
+|{00001101-0000-1000-8000-00805f9b34fb}|SPP|
+|{00001103-0000-1000-8000-00805f9b34fb}|DUN
+|{00001124-0000-1000-8000-00805f9b34fb}|HID|
+|{00001126-0000-1000-8000-00805f9b34fb}|HCRP|
 
 ### Windows XP Bluetooth Profiles
 
 The following table lists the unsupported Bluetooth profiles and protocols. Note that, in this context, “unsupported” means that Windows does not automatically generate a PDO or devnode or display the Add New Hardware Wizard. Therefore, some in-box profiles and protocols are handled as if they are unsupported. For example, SDP is an in-box protocol that has a Bluetooth service ID but does not require a PDO. The SDP protocol is therefore marked as unsupported in Bth.inf to prevent the creation of a PDO
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Service ID</p></td>
-<td align="left"><p>In-box</p></td>
-<td align="left"><p>Description</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>{0000110a-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Audio Source</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>{0000110c-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>AV Remote Target</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>{00001001-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Browse Group Service</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>{00001111-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Fax Service</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>{0000111f-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Handsfree Audio Gateway</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>{00001112-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Headset Audio Gateway</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>{00001104-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Infrared Mobile Communication (IRMC) Sync Service</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>{00001107-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>IRMC Sync Commands</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>{00001106-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Obex File Transfer</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>{00001105-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Object Push</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>{00001117-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>PAN group ad hoc network (GN)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>{00001116-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>PAN network access point (NAP)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>{00001115-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>PAN U</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>{0000112e-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Phone book client equipment (PCE) service</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>{0000112f-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Phone book server equipment (PSE) service</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>{00001200-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>PnP service</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>{00001002-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Public Browse Group Service</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>{00001000-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>SDP</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>{0000112d-0000-1000-8000-00805f9b34fb}</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Sim Access</p></td>
-</tr>
-</tbody>
-</table>
+|Service ID|In-box|Description|
+|----|----|----|
+|{0000110a-0000-1000-8000-00805f9b34fb}|No|Audio Source|
+|{0000110c-0000-1000-8000-00805f9b34fb}|No|AV Remote Target|
+|{00001001-0000-1000-8000-00805f9b34fb}|No|Browse Group Service|
+|{00001111-0000-1000-8000-00805f9b34fb}|No|Fax Service|
+|{0000111f-0000-1000-8000-00805f9b34fb}|No|Handsfree Audio Gateway|
+|{00001112-0000-1000-8000-00805f9b34fb}|No|Headset Audio Gateway|
+|{00001104-0000-1000-8000-00805f9b34fb}|No|Infrared Mobile Communication (IRMC) Sync Service|
+|{00001107-0000-1000-8000-00805f9b34fb}|No|IRMC Sync Commands|
+|{00001106-0000-1000-8000-00805f9b34fb}|Yes|Obex File Transfer|
+|{00001105-0000-1000-8000-00805f9b34fb}|Yes|Object Push|
+|{00001117-0000-1000-8000-00805f9b34fb}|No|PAN group ad hoc network (GN)|
+|{00001116-0000-1000-8000-00805f9b34fb}|No|PAN network access point (NAP)|
+|{00001115-0000-1000-8000-00805f9b34fb}|Yes|PAN U|
+|{0000112e-0000-1000-8000-00805f9b34fb}|No|Phone book client equipment (PCE) service|
+|{0000112f-0000-1000-8000-00805f9b34fb}|No|Phone book server equipment (PSE) service|
+|{00001200-0000-1000-8000-00805f9b34fb}|Yes|PnP service|
+|{00001002-0000-1000-8000-00805f9b34fb}|No|Public Browse Group Service|
+|{00001000-0000-1000-8000-00805f9b34fb}|Yes|SDP|
+|{0000112d-0000-1000-8000-00805f9b34fb}|No|Sim Access|
 
 If IHVs do not want Windows to automatically generate a PDO for their device, they can add the service GUID to the list of unsupported services. For examples, see Bth.inf.
 
@@ -264,13 +154,15 @@ Beginning with Windows 8, Windows will also publish a local Device ID record to 
 <col width="25%" />
 <col width="25%" />
 </colgroup>
-<tbody>
+<thead>
 <tr class="odd">
-<td align="left"><p>ValueName</p></td>
-<td align="left"><p>Type</p></td>
-<td align="left"><p>Description</p></td>
-<td align="left"><p>Default Value</p></td>
+<th align="left"><p>ValueName</p></th>
+<th align="left"><p>Type</p></th>
+<th align="left"><p>Description</p></th>
+<th align="left"><p>Default Value</p></th>
 </tr>
+</thead>
+<tbody>
 <tr class="even">
 <td align="left"><p>DIDVendorIDSource</p></td>
 <td align="left"><p>DWORD</p></td>
