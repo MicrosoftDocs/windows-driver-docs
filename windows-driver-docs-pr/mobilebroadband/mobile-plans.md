@@ -83,4 +83,3 @@ To get started with the Mobile Plans experience, please reach your Microsoft rep
 See these topics for additional information about Mobile Plans:
 
 - [Appendix](mobile-plans-appendix.md)
-- [Callback notifications](mobile-plans-callback-notifications.md)
