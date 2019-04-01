@@ -1,12 +1,12 @@
 ---
-title: \ TrayName\
-description: \ TrayName\
+title: \ TrayName\ (InputBins)
+description: \ TrayName\ (InputBins)
 ms.assetid: 7fa03413-5b95-443f-9b0f-75d82d0e41cf
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# \[TrayName\]
+# \[TrayName\] (InputBins)
 
 
 Schema Path:\\Printer.Layout.InputBins.\[TrayName\]

@@ -18,7 +18,6 @@ The HAL\_IOMMU\_INTERNAL\_ERROR bug check has a value of 0x000001D9. It indicate
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
  
-
 ## HAL\_IOMMU\_INTERNAL\_ERROR Parameters
 
 |Parameter|Description|
@@ -30,7 +29,7 @@ The HAL\_IOMMU\_INTERNAL\_ERROR bug check has a value of 0x000001D9. It indicate
 
 **Failed Operation Values**
 
-```
+```text
 0x00 : Failed to delete IOMMU domain
      Parameter 2 - Status
      Parameter 3 - Pointer to the IOMMU domain object
@@ -50,10 +49,7 @@ The HAL\_IOMMU\_INTERNAL\_ERROR bug check has a value of 0x000001D9. It indicate
 
 An internal error was detected in the HAL IOMMU library.
 
-
-
 ## See Also
 ----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
-

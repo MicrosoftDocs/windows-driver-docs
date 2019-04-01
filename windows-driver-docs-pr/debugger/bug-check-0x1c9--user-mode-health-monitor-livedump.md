@@ -30,7 +30,7 @@ The USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP bug check has a value of 0x000001C9. I
 
 **Watchdog Source Values**
 
-```
+```text
         0  : WatchdogSourceDefault
               Source was not specified
         1  : WatchdogSourceRhsCleanup

@@ -20,19 +20,19 @@ This bug check indidates that a secure fault originated by the secure kernel cou
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
-
  ## SECURE\_FAULT\_UNHANDLED Parameters
 
 | Parameter | Description |
 |-----------|-------------|
-| 1         | Secure fault code bitmask - values below. |
-| 2         | Secure fault VA (only applicable to certain secure fault types). |
-| 3         | Exception Record. |
-| 4         | Context Record. |
+| 1 | Secure fault code bitmask - values below. |
+| 2 | Secure fault VA (only applicable to certain secure fault types). |
+| 3 | Exception Record. |
+| 4 | Context Record. |
 
 
 **Secure fault code bitmask**
 
+```text
      0x1 : KSECURE_FAULT_SLAT_NX
          A no-execute fault occured due to SLAT page protections.
      0x2 : KSECURE_FALT_SLAT_READ
@@ -41,6 +41,7 @@ This bug check indidates that a secure fault originated by the secure kernel cou
          A write fault occured due to SLAT page protections.
      0x8 : KSECURE_FAULT_DOUBLE_FAULT
          A secure fault occurred before the prior secure fault had been dismissed by the kernel.
+```
 
 ## Cause
 -----
@@ -52,12 +53,3 @@ A secure fault originated by the secure kernel could not be handled.
 ----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
-
-
- 
-
- 
-
-
-
-
