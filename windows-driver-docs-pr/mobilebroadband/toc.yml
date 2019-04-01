@@ -327,7 +327,7 @@
   - name: "Mobile Plans"
     href: mobile-plans.md
     items:
-    - name: "Mobile Plans Use cases"
+    - name: "Mobile Plans use cases"
       href: mobile-plans-use-cases.md
       items:
       - name: "Mobile operator web portal"
@@ -346,8 +346,8 @@
       href: mobile-plans-launch.md
     - name: "Appendix"
       href: mobile-plans-appendix.md
-    - name: "Mobile Plans callbacks"
-      href: mobile-plans-callbacks.md
+    - name: "Mobile Plans callback notifications"
+      href: mobile-plans-callback-notifications.md
   - name: "Creating and configuring Internet Sharing experiences"
     href: creating-and-configuring-internet-sharing-experiences.md
   - name: "Developing apps using multiple PDP contexts"

@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans Use Cases
+title: Mobile Plans use cases
 description: This topic describes the basic user cases that Mobile Operators could implement.
 ms.assetid: 24050B13-4A1A-466F-974B-40B34EDB16DC
 keywords:
@@ -8,7 +8,7 @@ ms.date: 03/25/2019
 ms.localizationpriority: medium
 ---
 
-# Mobile Plans Use Cases
+# Mobile Plans use cases
 
 ## Overview
 
