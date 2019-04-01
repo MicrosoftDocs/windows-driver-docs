@@ -132,7 +132,23 @@ The host learns a device's MBIMEx version through two ways:
 1. The MBIM EXTENDED FUNCTIONAL DESCRIPTOR.
 2. The optional MBM_CID_VERSION message, if the device supports it and declares support for it.
 
-If these two are different, the higher version dictates the MBIMEx version for the duration that the device stays enumerated to the host. The higher MBIMEx version is referred to as the device's *announced MBIMEx version*. A device's announced MBIMEx version can be lower than its native MBIMEx version, which is the highest MBIMEx version that the device supports.
+If these two are different, the higher version dictates the MBIMEx version for the duration that the device stays enumerated to the host. The higher MBIMEx version is referred to as the device's *announced MBIMEx version*. A device's announced MBIMEx version can be lower than its native MBIMEx version, which is the highest MBIMEx version that the device supports. Devices can learn the host's MBIMEx version explicitly only via the MBIM_CID_VERSION message.
+
+In any release, the host always queries the device for supported services and CIDs using MBIM_CID_DEVICE_SERVICES at the beginning of the device initialization sequence. If a device supports MBIM_CID_VERSION and advertises its support in the MBIM_CID_DEVICE_SERVICE query response, then a host that does not understand MBIM_CID_VERSION or has an MBIMEx version lower than 2.0 ignores it. Meanwhile, a host that does understand MBIM_CID_VERSION and has a native MBIMEx version of 2.0 or higher sends a MBIM_CID_VERSION message to the device with the host's native MBIMEx version, and the CID is the first CID that is sent to the device after receiving the MBIM_CID_DEVICE_SERVICES response.
+
+If the device receives MBIM_CID_VERSION from the host as the first received CID after responding to the MBIM_CID_DEVICE_SERVICES query, the device knows the host's MBIMEx version. If the device receives any other CID from the host as the first received CID after responding to the MBIM_CID_DEVICE_SERVICES query, then the device assumes that the host's native MBIMEx version is 1.0.
+
+Feature-wise, a higher MBIMEx version is a superset of all lower MBIMEx versions. A host supports all devices with an announced MBIMEx version at or below the host's native MBIMEx version. If a device's announced MBIMEx version is higher than a host's native MBIMEx version, the host is not expected to support the device and the exact behavior of the host in this situation is undefined.
+
+A device that intends to work with older hosts should initially advertise MBIMEx version 1.0, or the lowest host MBIMEx version with which the device is intended to work, in an MBIM extended functional descriptor. If the host sends MBIM_CID_VERSION and the host has a higher MBIMEx version than the device initially advertises, then the device should, in the MBIM_CID_VERSION response, indicate a higher MBIMEx version up to the smaller of the host's native MBIMEx version and the device's native MBIMEx version.
+
+The following table lists all existing CIDs that are modified in MBIMEx version 2.0, and their modified payloads. All unmentioned payloads in these CIDs and all other CIDs not mentioned in the table carry over from MBIMEx version 1.0 and remain unchanged. 
+
+| CID | Payload |
+| --- | --- |
+| MBIM_CID_REGISTER_STATE | MBIM_REGISTRATION_STATE_INFO_V2 |
+| MBIM_CID_PACKET_SERVICE | MBIM_PACKET_SERVICE_INFO_V2 |
+| MBIM_CID_SIGNAL_STATE | MBIM_SIGNAL_STATE_INFO_V2 |
 
 ## MBIM service and CID values
 
