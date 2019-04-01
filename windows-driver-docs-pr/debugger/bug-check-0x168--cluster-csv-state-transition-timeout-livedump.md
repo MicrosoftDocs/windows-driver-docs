@@ -32,11 +32,15 @@ The CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP bug check has a value of 
 
 **CSV target state Id**
 
-     0  Waiting for volume to transition to the Init state. 
-     1  Waiting for volume to transition to the Paused state. 
-     2  Waiting for volume to transition to the Draining state. 
-     3  Waiting for volume to transition to the Set-Down-Level state. 
-     4  Waiting for volume to transition to the Active state.
+0  Waiting for volume to transition to the Init state. 
+
+1  Waiting for volume to transition to the Paused state. 
+
+2  Waiting for volume to transition to the Draining state. 
+
+3  Waiting for volume to transition to the Set-Down-Level state. 
+
+4  Waiting for volume to transition to the Active state.
 
 
 ## Cause
