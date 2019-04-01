@@ -98,11 +98,11 @@ On SoC platforms, the SD host controller can be enumerated by ACPI. Windows uses
   - Slot resources are listed together, in order of slot number (slot 0's resources are first, slot 1's resources are second, and so on).
   - For each slot, resources are listed in the following order:
 
-        -   The base address of the SD standard register set for the slot.
-        -   The SD standard interrupt for the slot.
-        -   A GPIO interrupt resource for the slot, for signaling card insertions and removals (if the standard SD card-detect interface is not supported during all power states).
-        -   A GPIO input resource for the slot for reading whether a card is currently in the slot (if the standard SD card-detect interface is not supported during all power states). Uses the same pin as the insertion/removal interrupt.
-        -   A second GPIO input resource for reading whether the card in the slot is write-protected (if the standard SD write-protect interface is not supported during all power states).
+    - The base address of the SD standard register set for the slot.
+    - The SD standard interrupt for the slot.
+    - A GPIO interrupt resource for the slot, for signaling card insertions and removals (if the standard SD card-detect interface is not supported during all power states).
+    - A GPIO input resource for the slot for reading whether a card is currently in the slot (if the standard SD card-detect interface is not supported during all power states). Uses the same pin as the insertion/removal interrupt.
+    - A second GPIO input resource for reading whether the card in the slot is write-protected (if the standard SD write-protect interface is not supported during all power states).
 
 The interrupts must be wake-capable (described as "SharedAndWake" or "ExclusiveAndWake").
 
@@ -291,7 +291,7 @@ For touch-first (keyboard-less) platforms, such as slates, Windows provides a ge
 
         The "Volume Down" button must not be wake-capable (must use Exclusive).
 
-Interrupt corresponding to the "Rotation Lock" button, if supported
+    5. Interrupt corresponding to the "Rotation Lock" button, if supported
 
         The "Rotation Lock" button must not be wake-capable (must use Exclusive).
 
