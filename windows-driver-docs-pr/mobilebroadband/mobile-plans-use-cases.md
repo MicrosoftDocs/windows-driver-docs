@@ -56,7 +56,7 @@ This section describes what a mobile operator should implement to activate a war
 
 Follow these steps:
 
-1. Implement the [Mobile Operator web portal](mobile-plans-web-portal.md#web-service-api-used-for-physical-sim).
+1. Implement the [Mobile Operator web portal](mobile-plans-web-portal.md#web-service-api-used-for-a-physical-sim).
 2. Implement the [adding balance](mobile-plans-callback-notifications.md#adding-balance) to hand control back to Mobile Plans.
 3. Implement the [enhanced device experience](mobile-plans-device-experience.md#enhanced-device-experience).
    1. Implement the [Get Balance API](mobile-plans-device-experience.md#getbalance-api).
