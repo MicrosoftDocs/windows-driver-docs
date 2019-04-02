@@ -31,7 +31,7 @@ CTRL+ALT+W
 ```
 
 
-## <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+## Environment
 
 <table>
 <colgroup>
