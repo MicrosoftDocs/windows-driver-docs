@@ -20,7 +20,7 @@ OS and Hardware requirements for testing HVCI driver Device Guard compatibility:
 
 To use the readiness tool to evaluate the additional requirements, such as secure boot, refer to the readme.txt file included in the readiness tool download.
 
-For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
+For more information about the related device fundamentals test, see [Device.DevFund tests](https://docs.microsoft.com/windows-hardware/test/hlk/testref/device-devfund-tests).
 
 ## Implement Device Guard compatible code
 
