@@ -36,7 +36,7 @@ Te.exe [/name:<Test Method>] [<Test Name>.dll | <Test Name.wsc> ]  [/rebootState
 Remarks
 -------
 
-You must specify the test binary (.dll) or script (.wsc) file. The test method (**/name:***&lt;test method&gt;*) is optional. For the test names and test methods, see the [Device Fundamentals Tests](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673011). For information about specifying test parameters, see [Device Fundamentals Test Parameters](how-to-select-and-configure-the-device-fundamental-tests.md) and [Te.exe Command Options](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439743) .
+You must specify the test binary (.dll) or script (.wsc) file. The test method (**/name:**_&lt;test method&gt;_) is optional. For the test names and test methods, see the [Device Fundamentals Tests](https://msdn.microsoft.com/Library/Windows/Hardware/JJ673011). For information about specifying test parameters, see [Device Fundamentals Test Parameters](how-to-select-and-configure-the-device-fundamental-tests.md) and [Te.exe Command Options](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439743) .
 
 For example, to run all PnP tests in the Devfund\_PnPDTest.dll on a device with a specific device ID.
 
