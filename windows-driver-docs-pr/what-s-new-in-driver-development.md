@@ -36,7 +36,7 @@ The following table shows the feature updates in Windows 10, by driver technolog
 |             Biometric    |     ![not available](minus.png)   |             ![not available](minus.png)              |            ![not available](minus.png)             |       [![details](checkmark.png)](#biometric-1709)        |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
 |             Bluetooth     |   ![not available](minus.png)     |     [![details](checkmark.png)](#bluetooth-1809)     |    [![details](checkmark.png)](#bluetooth-1803)    |                ![not available](minus.png)                |    [![details](checkmark.png)](#bluetooth-1703)    |          ![not available](minus.png)          |             [![details](checkmark.png)](#bluetooth)             |
 |          Buses and Ports          |   ![not available](minus.png)   |       ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |          [![details](checkmark.png)](#buses-and-ports)          |
-|              Camera       |    ![not available](minus.png)    |             ![not available](minus.png)              |     [![details](checkmark.png)](#camera-1803)      |                ![not available](minus.png)                |     [![details](checkmark.png)](#camera-1703)      |   [![details](checkmark.png)](#camera-1607)   |            [![details](checkmark.png)](#camera-1507)            |
+|              Camera       |    [![details](checkmark.png)](#camera-1903)    |             ![not available](minus.png)              |     [![details](checkmark.png)](#camera-1803)      |                ![not available](minus.png)                |     [![details](checkmark.png)](#camera-1703)      |   [![details](checkmark.png)](#camera-1607)   |            [![details](checkmark.png)](#camera-1507)            |
 |             Cellular              |   ![not available](minus.png)   |       ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |             [![details](checkmark.png)](#cellular)              |
 |              Display          |  [![details](checkmark.png)](#display-1903) |      [![details](checkmark.png)](#display-1809)      |     [![details](checkmark.png)](#display-1803)     |        [![details](checkmark.png)](#display-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display)              |
 |          Driver security      |  ![not available](minus.png)  |             ![not available](minus.png)              |    [![details](checkmark.png)](#security-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display)              |
@@ -49,7 +49,7 @@ The following table shows the feature updates in Windows 10, by driver technolog
 |            Networking     |    [![details](checkmark.png)](#networking-1903)    |    [![details](checkmark.png)](#networking-1809)     |   [![details](checkmark.png)](#networking-1803)    |       [![details](checkmark.png)](#networking-1709)       |   [![details](checkmark.png)](#networking-1703)    |          ![not available](minus.png)          |          [![details](checkmark.png)](#networking-1507)          |
 |                POS          |   ![not available](minus.png)   |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |       [![details](checkmark.png)](#pos-1703)       |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
 |                PCI        |    ![not available](minus.png)    |             ![not available](minus.png)              |       [![details](checkmark.png)](#pci-1803)       |          [![details](checkmark.png)](#pci-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|               Print     |      ![not available](minus.png)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |   [![details](checkmark.png)](#print-1607)    |            [![details](checkmark.png)](#print-1507)             |
+|               Print     |      [![details](checkmark.png)](#print-1903)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |   [![details](checkmark.png)](#print-1607)    |            [![details](checkmark.png)](#print-1507)             |
 |      Pulse Width Modulation       |   ![not available](minus.png)  |        ![not available](minus.png)              |            ![not available](minus.png)             |          [![details](checkmark.png)](#pwm-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
 |              Sensors        |  [![details](checkmark.png)](#sensors-1903)    |      [![details](checkmark.png)](#sensors-1809)      |     [![details](checkmark.png)](#sensors-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
 |            Smart Card     |    ![not available](minus.png)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |            [![details](checkmark.png)](#smart-card)             |
@@ -260,6 +260,17 @@ The following is a list of new and updated Audio features in Windows 10, version
 * New Far Field Audio information
 * New jack description information in [USB Audio 2.0 Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/usb-2-0-audio-drivers)
 
+### <a name="camera-1903"></a>Camera
+
+New Camera driver documentation and features added in Windows 10, version 1903 include:
+
+* New [IR Torch](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-irtorchmode) extended property control to set an IR camera's infrared torch power level and duty cycle.
+* New [KSCATEGORY_NETWORK_CAMERA](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-network-camera) device.
+* New and updated [USB Video Class (UVC) 1.5 extension](https://docs.microsoft.com/windows-hardware/drivers/stream/uvc-extensions-1-5) documentation for the following control selectors:
+  * MSXU_CONTROL_FACE_AUTHENTICATION
+  * MSXU_CONTROL_METADATA
+  * MSUX_CONTROL_IR_TORCH
+
 ### <a name="display-1903"></a>Display
 
 Updates to Display driver development in Windows 10, version 1903 include the following:
@@ -334,6 +345,18 @@ New Mobile Plans content for mobile operators to sell plans to customers directl
 
 * [Mobile Plans promotional content](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-promotional-content)
 * [Mobile Plans asynchronous fulfillment](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-asynchronous-fulfillment)
+
+### <a name="print-1903"></a>Print
+
+New Print driver documentation and features added in Windows 10, version 1903 include:
+
+* New USB print IOCTLs:
+
+  * [IOCTL_USBPRINT_GET_INTERFACE_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbprint/ni-usbprint-ioctl_usbprint_get_interface_type)
+  * [IOCTL_USBPRINT_GET_PROTOCOL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbprint/ni-usbprint-ioctl_usbprint_get_protocol)
+  * [IOCTL_USBPRINT_SET_PROTOCOL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbprint/ni-usbprint-ioctl_usbprint_set_protocol)
+
+* New **fpRegeneratePrintDeviceCapabilities** [PRINTPROVIDER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/ns-winsplp-_printprovidor) structure member and updated documentation.
 
 ### <a name="sensors-1903"></a>Sensors
 
