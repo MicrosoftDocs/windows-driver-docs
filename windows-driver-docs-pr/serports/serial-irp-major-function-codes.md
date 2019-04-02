@@ -384,7 +384,6 @@ Request specific
 ### I/O Status Block
 For WMI requests, Serial sets the Status field to one of the following values:
 
-
 STATUS_SUCCESS 
 
 The request completed successfully.
@@ -426,9 +425,7 @@ Serial WMI GUID Associated data structure
 | SERIAL_PORT_WMI_PERF_GUID | SERIAL_WMI_PERF_DATA |
 | SERIAL_PORT_WMI_PROPERTIES_GUID | WMI_SERIAL_PORT_PROPERTIES |
 
-
 The WMI name of a serial device is the value of the entry value **PortName** under the Plug and Play registry key for the device.
-
 
 ##  IRP_MJ_WRITE
 An [IRP_MJ_WRITE](https://msdn.microsoft.com/library/windows/hardware/ff550819) request transfers data from a client to a serial device.
@@ -479,5 +476,4 @@ A client can use time-out events to terminate a write request. Note, however, th
 
 [Rules for Handling Power IRPs](https://msdn.microsoft.com/library/windows/hardware/ff563629)
 
-[Serial Controller Driver Design Guide](https://msdn.microsoft.com/windows/hardware/drivers/serports/index.md)
-
+[Serial Controller Driver Design Guide](https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/)
