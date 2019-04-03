@@ -363,9 +363,8 @@ There were also updates to the Ambient Color OEM whitepaper.
 
 The following Storage features were added in Windows 10, version 1903:
 
-* New IOCTL and associated structures to report a device's endurance information
-* New IOCTL to set the properties of a storage device or adapter
-* New IOCTLs and associated structures to set the properties of a storage device or adapter, including the ability to set protocol-specific information
+* New Storport APIs for logging device failure and hardware protocol errors in ETW events and to query for platform D3 desired behavior
+* New API to set the properties of a storage device or adapter
 * For file systems, new DDIs were added to support retrieving extended attributes (EA) information upon create completion, allowing mini-filters to alter the ECP payload to change what higher filters see
 
 ### <a name="wifi-1903"></a>Wi-fi
