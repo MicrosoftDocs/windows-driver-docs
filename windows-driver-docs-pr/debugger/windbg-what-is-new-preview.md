@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
-ms.date: 05/23/2018
+ms.date: 04/03/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
