@@ -6,8 +6,7 @@ ms.date: 10/02/2018
 ms.localizationpriority: medium
 ---
 
-# <a name="top"></a>What's new in driver development 
-
+# <a name="top"></a>What's new in driver development
 
 This section provides information about the new features and updates to Windows driver development in Windows 10.
 
@@ -25,20 +24,18 @@ The following is a list of new feature highlights for driver development in Wind
 * [System-Supplied Driver Interfaces](#system-supplied-driver-interfaces)
 * [WPP Software Tracing](#wpp-software-tracing)
 
-
 The following table shows the feature updates in Windows 10, by driver technology and version.
-
 
 | Driver  |[1903](#whats-new-in-windows-10-version-1903-latest)| [1809](#whats-new-in-windows-10-version-1809) |   [1803](#whats-new-in-windows-10-version-1803)    | [1709](#whats-new-in-windows-10-version-1709) |  [1703](#whats-new-in-windows-10-version-1703)  | [1607](#whats-new-in-windows-10-version-1607) |  [1507](#whats-new-in-windows-10-version-1507)  |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Audio  |  [![details](checkmark.png)](#audio-1903) |      [![details](checkmark.png)](#audio-1809)       |      [![details](checkmark.png)](#audio-1803)      |         [![details](checkmark.png)](#audio-1709)          |      [![details](checkmark.png)](#audio-1703)      |      [![details](checkmark.png)](#audio)      |                   ![not available](minus.png)                   |
+| Audio  |  [![details](checkmark.png)](#audio-1903) |      [![details](checkmark.png)](#audio-1809)       |      [![details](checkmark.png)](#audio-1803)      |         [![details](checkmark.png)](#audio-1709)          |      [![details](checkmark.png)](#audio-1703)      |      [![details](checkmark.png)](#audio-1607)      |                   ![not available](minus.png)                   |
 |               ACPI         |   ![not available](minus.png)    |             ![not available](minus.png)              |      [![details](checkmark.png)](#acpi-1803)       |          [![details](checkmark.png)](#acpi-1709)          |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
 |             Biometric    |     ![not available](minus.png)   |             ![not available](minus.png)              |            ![not available](minus.png)             |       [![details](checkmark.png)](#biometric-1709)        |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|             Bluetooth     |   ![not available](minus.png)     |     [![details](checkmark.png)](#bluetooth-1809)     |    [![details](checkmark.png)](#bluetooth-1803)    |                ![not available](minus.png)                |    [![details](checkmark.png)](#bluetooth-1703)    |          ![not available](minus.png)          |             [![details](checkmark.png)](#bluetooth)             |
+|             Bluetooth     |   ![not available](minus.png)     |     [![details](checkmark.png)](#bluetooth-1809)     |    [![details](checkmark.png)](#bluetooth-1803)    |                ![not available](minus.png)                |    [![details](checkmark.png)](#bluetooth-1703)    |          ![not available](minus.png)          |             [![details](checkmark.png)](#bluetooth-1507)             |
 |          Buses and Ports          |   ![not available](minus.png)   |       ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |          [![details](checkmark.png)](#buses-and-ports)          |
 |              Camera       |    [![details](checkmark.png)](#camera-1903)    |             ![not available](minus.png)              |     [![details](checkmark.png)](#camera-1803)      |                ![not available](minus.png)                |     [![details](checkmark.png)](#camera-1703)      |   [![details](checkmark.png)](#camera-1607)   |            [![details](checkmark.png)](#camera-1507)            |
 |             Cellular              |   ![not available](minus.png)   |       ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |             [![details](checkmark.png)](#cellular)              |
-|              Display          |  [![details](checkmark.png)](#display-1903) |      [![details](checkmark.png)](#display-1809)      |     [![details](checkmark.png)](#display-1803)     |        [![details](checkmark.png)](#display-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display)              |
+|              Display          |  [![details](checkmark.png)](#display-1903) |      [![details](checkmark.png)](#display-1809)      |     [![details](checkmark.png)](#display-1803)     |        [![details](checkmark.png)](#display-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display-1507)              |
 |          Driver security      |  ![not available](minus.png)  |             ![not available](minus.png)              |    [![details](checkmark.png)](#security-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display)              |
 |      Hardware notifications    | ![not available](minus.png)  |             ![not available](minus.png)              |            ![not available](minus.png)             | [![details](checkmark.png)](#hardware-notifications-1709) |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
 |   Human Interface Device (HID)    |    ![not available](minus.png)    |     ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |      [![details](checkmark.png)](#human-interface-device)       |
@@ -53,9 +50,9 @@ The following table shows the feature updates in Windows 10, by driver technolog
 |      Pulse Width Modulation       |   ![not available](minus.png)  |        ![not available](minus.png)              |            ![not available](minus.png)             |          [![details](checkmark.png)](#pwm-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
 |              Sensors        |  [![details](checkmark.png)](#sensors-1903)    |      [![details](checkmark.png)](#sensors-1809)      |     [![details](checkmark.png)](#sensors-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
 |            Smart Card     |    ![not available](minus.png)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |            [![details](checkmark.png)](#smart-card)             |
-|              Storage         |    [![details](checkmark.png)](#storage-1903)  |             ![not available](minus.png)              |            ![not available](minus.png)             |        [![details](checkmark.png)](#storage-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#storage)              |
+|              Storage         |    [![details](checkmark.png)](#storage-1903)  |             ![not available](minus.png)              |            ![not available](minus.png)             |        [![details](checkmark.png)](#storage-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#storage-1507)              |
 | System-Supplied Driver Interfaces |   ![not available](minus.png)   |      ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          | [![details](checkmark.png)](#system-supplied-driver-interfaces) |
-|                USB                |  ![not available](minus.png) |     [![details](checkmark.png)](#usb-1809)        |       [![details](checkmark.png)](#usb-1803)       |          [![details](checkmark.png)](#usb-1709)           |       [![details](checkmark.png)](#usb-1703)       |          ![not available](minus.png)          |                [![details](checkmark.png)](#usb)                |
+|                USB                |  ![not available](minus.png) |     [![details](checkmark.png)](#usb-1809)        |       [![details](checkmark.png)](#usb-1803)       |          [![details](checkmark.png)](#usb-1709)           |       [![details](checkmark.png)](#usb-1703)       |          ![not available](minus.png)          |                [![details](checkmark.png)](#usb-1507)                |
 |               WI-FI           |  [![details](checkmark.png)](#wifi-1903)  |       [![details](checkmark.png)](#wifi-1809)        |      [![details](checkmark.png)](#wifi-1803)       |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
 |               WLAN         |    ![not available](minus.png)   |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |    [![details](checkmark.png)](#wlan-1607)    |             [![details](checkmark.png)](#wlan-1507)             |
 
@@ -993,7 +990,7 @@ Windows 10 version 1703 provides a new class extension (UcmTcpciCx.sys) that sup
 
 This section describes new features and improvements for driver development in Windows 10, version 1607.
 
-### Audio
+### <a name="audio-1607"></a>Audio
 
 The following is a list of new topics for Audio driver development in Windows 10, version 1607.
 
@@ -1041,7 +1038,7 @@ In Windows 10, version 1607, there are new and updated topics for WLAN Device Dr
 
 This section describes new and updated features for driver development in Windows 10.
 
-### Bluetooth
+### <a name="bluetooth-1507"></a>Bluetooth
 
 In Windows 10, new [Microsoft-defined Bluetooth HCI extensions](https://docs.microsoft.com/windows-hardware/drivers/bluetooth/microsoft-defined-bluetooth-hci-commands-and-events) have been added.
 
@@ -1068,7 +1065,7 @@ The camera driver DDIs have converged into a Universal Windows driver model, inc
 
 [Cellular architecture and implementation](https://docs.microsoft.com/windows-hardware/drivers/network/cellular-architecture-and-driver-model) for Windows 10 has been updated.
 
-### Display
+### <a name="display-1507"></a>Display
 
 The [display driver model](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_display/) from Windows 8.1 and Windows Phone have converged into a unified model for Windows 10.
 
@@ -1113,7 +1110,7 @@ In Windows 10, there is a new class extension module, Wudfsmcclassext.dll, which
 * [Smart card client driver event callback functions](https://msdn.microsoft.com/library/windows/hardware/dn946583)
 * [Smart card client driver support methods](https://msdn.microsoft.com/library/windows/hardware/dn946584)
 
-### Storage
+### <a name="storage-1507"></a>Storage
 
 In Windows 10, new storage firmware updates (IOCTL interface) allow partners to update their storage device firmware. These updates include:
 
@@ -1124,7 +1121,7 @@ In Windows 10, new storage firmware updates (IOCTL interface) allow partners to 
 
 The [GUID\_DEVICE\_RESET\_INTERFACE\_STANDARD](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_reset_interface_standard) interface defines a standard way for function drivers to attempt to reset and recover a malfunctioning device.
 
-### USB
+### <a name="usb-1507"></a>USB
 
 Here are the new features for USB in Windows 10. For more information, see [Windows 10: What's new for USB](https://docs.microsoft.com/windows-hardware/drivers/usbcon/windows-10--what-s-new-for-usb).
 
