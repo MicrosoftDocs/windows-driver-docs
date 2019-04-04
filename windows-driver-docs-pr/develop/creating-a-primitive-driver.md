@@ -49,7 +49,7 @@ Drivers should also use Dirid 13 to properly specify the Driver Store as the des
 While \[DefaultUninstall\] is prohibited in Primitive Drivers, an exception is made for the sake of down-level OS compatibility. An INF directive has been introduced that will cause an OS version supporting Primitive Drivers to ignore the \[DefaultUninstall\] section. If your driver package needs to support down-level OS versions, include the following syntax to ensure that the platform will appropriately handle such cases:
 
 ```
-\[DefaultUninstall.NTamd64\]
+[DefaultUninstall.NTamd64]
 LegacyUninstall=1
 ```
 
