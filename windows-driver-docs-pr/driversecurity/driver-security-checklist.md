@@ -2,17 +2,15 @@
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
 ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
-ms.date: 02/06/2019
+ms.date: 04/02/2019
 ms.localizationpriority: medium
 ---
 
 # Driver security checklist
 
-
 This article provides a driver security checklist for driver developers to help reduce the risk of drivers being compromised.
 
 ## <span id="Driver_Security_Overview"></span><span id="driver_security_overview"></span><span id="DRIVER_SECURITY_OVERVIEW"></span>Driver security overview
-
 
 A security flaw is any flaw that allows an attacker to cause a driver to malfunction in such a way that it causes the system to crash or become unusable. In addition, vulnerabilities in driver code can allow an attacker to gain access to the kernel, creating a possibility of compromising the entire OS. When most developers are working on their driver, their focus is on getting the driver to work properly, and not on whether a malicious attacker will attempt to exploit vulnerabilities within their code.
 
@@ -72,7 +70,6 @@ For more information about using the built in Windows drivers, see [Do you need 
 For information on using background tasks, see  [Support your app with background tasks](https://docs.microsoft.com/windows/uwp/launch-resume/support-your-app-with-background-tasks).
 
 For information on using Windows Services, see [Services](https://msdn.microsoft.com/library/windows/desktop/ms685141.aspx).
-
 
 ## <span id="confirmkernel"></span>Use the driver frameworks 
 
@@ -698,6 +695,10 @@ SAFECode - [https://www.safecode.org/](https://www.safecode.org/)
 [Locking Down Drivers - A Survey of Techniques](https://www.osronline.com/article.cfm?article=357) 
 
 [Meltdown and Spectre: What about drivers?](https://www.osr.com/blog/2018/01/23/meltdown-spectre-drivers/) 
+
+**Case Study**
+
+[From alert to driver vulnerability: Microsoft Defender ATP investigation unearths privilege escalation flaw](https://www.microsoft.com/security/blog/2019/03/25/from-alert-to-driver-vulnerability-microsoft-defender-atp-investigation-unearths-privilege-escalation-flaw/)
 
 
 **Books**
