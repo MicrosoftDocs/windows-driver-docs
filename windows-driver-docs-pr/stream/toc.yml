@@ -1314,6 +1314,8 @@
       href: ksproperty-cameracontrol-extended-focusstate.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM"
       href: ksproperty-cameracontrol-extended-histogram.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCHMODE"
+      href: ksproperty-cameracontrol-extended-irtorchmode.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ISO_ADVANCED"
       href: ksproperty-cameracontrol-extended-iso-advanced.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA"
@@ -1340,6 +1342,8 @@
       href: ksproperty-cameracontrol-extended-videohdr.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOSTABILIZATION"
       href: ksproperty-cameracontrol-extended-videostabilization.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOTEMPORALDENOISING"
+      href: ksproperty-cameracontrol-extended-videotemporaldenoising.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM"
       href: ksproperty-cameracontrol-extended-zoom.md
     - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY"
