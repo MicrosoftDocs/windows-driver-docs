@@ -8,7 +8,7 @@ Because these pieces of software were not tied to a hardware device, they would 
 
 To improve reliability and guarantee proper behavior of these types of software, especially during OS upgrade and reset scenarios, Windows 10 Version 1903's Plug and Play platform can now handle and manage this type of software package as a top-level entity. 
 
-The types of software that leverage this new platform support are called **Primitive Drivers.** Primitive drivers continue to use INF-based installation and the underlying platform will leverage the [Driver Store](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/driver-store)to keep track of all relevant files. 
+The types of software that leverage this new platform support are called **Primitive Drivers.** Primitive drivers continue to use INF-based installation and the underlying platform will leverage the [Driver Store](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/driver-store) to keep track of all relevant files. 
 
 This allows the underlying Plug and Play platform to gracefully install, uninstall, and maintain driver state on OS upgrade.
 
@@ -18,7 +18,7 @@ Undoing the changes (to perform an uninstallation) requires specifying an INF se
 
 Primitive drivers leverage the same installation and uninstallation APIs as device drivers, where the uninstallation API will perform the inverse set of operations as the install operation, and the act of installing or uninstalling the driver package will process those sections.
 
-## INF Requirements to leverage Primitive Driver functionality:
+## INF Requirements to Leverage Primitive Driver Functionality:
 
 1.  Version section must be complete, like PnP drivers
 
@@ -38,7 +38,7 @@ Primitive drivers leverage the same installation and uninstallation APIs as devi
 
 5.  \[DefaultUninstall\] may not be present in the INF (see legacy compatibility section for an exception)
 
-## Primitive drivers targeting only Windows 10 Version 1903+:
+## Primitive Drivers Targeting Only Windows 10 Version 1903+:
 
 Primitive drivers targeted only for Windows 10 Version 1903 and forward should utilize [DiInstallDriver](https://docs.microsoft.com/en-us/windows/desktop/api/newdev/nf-newdev-diinstalldriverw) and [DiUninstallDriver](https://docs.microsoft.com/en-us/windows/desktop/api/newdev/nf-newdev-diuninstalldriverw) to properly install and uninstall their software in/from the driver store. 
 
@@ -50,7 +50,7 @@ While \[DefaultUninstall\] is prohibited in Primitive Drivers, an exception is m
 
 ```
 \[DefaultUninstall.NTamd64\]
-**LegacyUninstall=1**
+LegacyUninstall=1
 ```
 
 The \[DefaultInstall\] and \[DefaultUninstall\] sections **must still be architecture decorated**; however, by including the LegacyUninstall=1 line, the \[DefaultUninstall\] section is ignored on Windows 10 Version 1903 and later which allows you to include that section in your INF to be used down-level with a legacy install/uninstall application in order to uninstall the Primitive Driver package.
