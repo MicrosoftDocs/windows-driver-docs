@@ -252,7 +252,7 @@ There are only a small number of required endpoints that are always accessible t
 | vassg142.crl.omniroot<span></span>.com | http |
 | mscrl.microsoft<span></span>.com | http |
 | crl.microsoft<span></span>.com | http |
-| msftconnecttest<span></span>.com | http |
+| www.msftconnecttest<span></span>.com | http |
 | crl3.digicert<span></span>.com | http |
 | Ocsp.digicert<span></span>.com | http |
 | login.live<span></span>.com | http + https |
