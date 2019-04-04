@@ -108,6 +108,23 @@ Minor changes and bug fixes:
 - TTD data model queries can now be displayed progressively, so if you interrupt it you’ll still see some results. This feature is still experimental and optional. Run `dx @$cursession.TTD.AsyncQueryEnabled = 1` to enable it.
 - The ‘dps’ command now has links to the source files it refers to.
 
+## 1.1801.19001.0
+
+This version includes these updates.
+
+**Text Highlighting** - You can now highlight all instances of selected text directly in the debugger. To use this feature, just select some text in the command window and then click “Highlight” in the command ribbon or hit CTRL+ALT+H. Using one of those on already highlighted text will remove the highlighting.
+
+If you prefer using commands, you can use the “$hl” command:
+
+`$hl ["someValueHere"]` - Highlight give text (or un-highlight if already highlighted)
+
+`$hl clearAll` – Clear all highlighted entries
+
+`$hl caseSensitive [1|0]` - Set highlight matching to case sensitive or case insensitive (default is case insensitive)
+
+This release also includes some minor bug fixes.
+
+
 ## 1.1712.15003.0
 
 This version includes these updates.
