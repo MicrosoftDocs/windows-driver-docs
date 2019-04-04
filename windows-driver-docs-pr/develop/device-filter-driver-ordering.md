@@ -91,8 +91,9 @@ Due to the default filter level being set to B, any additional filter without po
 ### To Register Filters:
 
 ```
-[DDInstall.Filters\]
+[DDInstall.Filters]
 AddFilter = <FilterName>, [Flags], FilterSection 
+```
 
 FilterLevel OR FilterPosition may be specified as seen below:
 
