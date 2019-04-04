@@ -1,7 +1,7 @@
 ---
 title: Microsoft extensions to USB Video Class 1.5 specification
 description: Describes Microsoft extensions to the USB Video Class 1.5 Specification that enables new controls as well as the capability to carry well-defined frame-metadata in a standard format.
-ms.date: 03/27/2019
+ms.date: 04/03/2019
 ms.localizationpriority: medium
 ms.custom: rs5, 19H1
 ---

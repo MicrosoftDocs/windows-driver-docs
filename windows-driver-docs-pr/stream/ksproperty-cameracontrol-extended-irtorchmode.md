@@ -10,7 +10,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 03/27/2019
+ms.date: 04/03/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
