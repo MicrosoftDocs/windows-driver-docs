@@ -28,7 +28,8 @@ These upper and lower filter lists are created by sorting all filter drivers by 
 
 Consider the following device driver example:
 
-![](images/device_filter_ordering_1.png)
+![](images/device_filter_ordering_1.png){width="8.459835958005248in"
+height="2.4906791338582677in"}
 
 The device driver's base INF declares two upper filter levels, A and B (in that order). In the base INF's associated Extension INF, two filters are added into each of the two levels. 
 
@@ -52,7 +53,8 @@ level.
 
 Consider an I/O device driver that wants to encrypt the data that is coming through the stack. A typical implementation may utilize a lower filter driver immediately underneath the function driver to accomplish this. In order to ensure that the encryption filter is placed at the exact position the driver author desires, they may use declarative filters as shown below:
 
-![](images/device_filter_ordering_2.png)
+![](images/device_filter_ordering_2.png){width="8.459835958005248in"
+height="2.4906791338582677in"}
 
 The Base INF establishes two levels of lower filters, \"Encryption\" and "Monitoring" (Default). "Monitoring" (Default) in this example are the rest of the lower filters that might exist for this particular device. By explicitly placing the "Encrypt" filter driver in the "Encryption" level, the driver ensures that the resulting device stack order will put the "Encrypt" filter driver before any other lower filters and immediately following the function driver.
 
@@ -60,7 +62,8 @@ Let's take the example one step further. Imagine a newer version of the driver c
 
 If a filter declares itself to be in an explicit level that does not exist, the filter does not end up in the device stack. In the example, the Base INF has been updated and even though the Extension INF remains the same, the resulting device stack excludes the "Encrypt" filter as it was not included in the Base INF's declaration of levels.
 
-![](images/device_filter_ordering_1.png)
+![](images/device_filter_ordering_1.png){width="8.459835958005248in"
+height="2.4906791338582677in"}
 
 ## Default Filter Level:
 
@@ -91,9 +94,8 @@ Due to the default filter level being set to B, any additional filter without po
 ### To Register Filters:
 
 ```
-[DDInstall.Filters]
+[DDInstall.Filters\]
 AddFilter = <FilterName>, [Flags], FilterSection 
-```
 
 FilterLevel OR FilterPosition may be specified as seen below:
 
@@ -145,6 +147,7 @@ HKR,,UpperFilterDefaultLevel,,"LevelC"
 
 HKR,,LowerFilterLevels,%REG_MULTI_SZ%,"LevelD","LevelE","LevelF" 
 HKR,,LowerFilterDefaultLevel,,"LevelE"
+```
 
 This can only be done by a **base** driver.
 
