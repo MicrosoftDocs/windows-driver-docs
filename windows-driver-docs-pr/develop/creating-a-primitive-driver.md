@@ -1,6 +1,6 @@
 # Creating a New Primitive Driver
 
-## Motivation and Description
+## Motivation and Description:
 
 Prior to Windows 10 Version 1903, certain types of software that used INF-based installation but were not necessarily tied to a particular hardware device were not fully supported by the OS. While these pieces of software leveraged INF files as a manifest for installation, the OS was not directly aware of this scenario and did not have support to handle it natively. 
 
