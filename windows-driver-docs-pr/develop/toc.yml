@@ -21,8 +21,13 @@
   href: creating-a-new-driver.md
 - name: "Creating a New Filter Driver"
   href: creating-a-new-filter-driver.md
+  items:
+  - name: "Device Filter Driver Ordering"
+    href: device-filter-driver-ordering.md
 - name: "Creating a New Software Driver"
   href: creating-a-new-software-driver.md
+- name: "Creating a New Primitive Driver"
+  href: creating-a-primitive-driver.md
 - name: "Creating a Driver From Existing Source Files"
   href: creating-a-driver-from-existing-source-files.md
 - name: "Building a Driver with the WDK"
