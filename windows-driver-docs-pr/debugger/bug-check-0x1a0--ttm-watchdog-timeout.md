@@ -32,12 +32,17 @@ The TTM\_WATCHDOG\_TIMEOUT bug check has a value of 0x000001A0. It indicates tha
 
 **Failure type**
 
-     0x1 : A device assignment to a terminal is not making progress.
-     0x2 : Device's close callback is not making progress.
-     0x3 : Device's set-input-mode callback is not making progress.
-     0x4 : Device's set-display-state callback is not making progress.
-     0x5 : Setting device's built-in panel state is not making progress.
-     0x6 : Updating device's primary display visible state is not making progress.
+0x1 : A device assignment to a terminal is not making progress.
+
+0x2 : Device's close callback is not making progress.
+
+0x3 : Device's set-input-mode callback is not making progress.
+
+0x4 : Device's set-display-state callback is not making progress.
+
+0x5 : Setting device's built-in panel state is not making progress.
+
+0x6 : Updating device's primary display visible state is not making progress.
 
 ## Cause
 -----

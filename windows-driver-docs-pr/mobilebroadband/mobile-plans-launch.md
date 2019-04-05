@@ -4,7 +4,8 @@ description: This topic describes the launch step for the Mobile Plans program.
 ms.assetid: 85671090-C577-4EE7-9113-974E56FF65EB
 keywords:
 - Windows Mobile Plans launch, Mobile Plans launch mobile operators
-ms.date: 01/04/2018
+ms.author: windowsdriverdev
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,46 +13,27 @@ ms.technology: windows-devices
 
 # Mobile Plans launch
 
-[!include[Mobile Plans Beta Prerelease](../mobile-plans-beta-prerelease.md)]
-
 This section describes the work needed to successfully launch Mobile Plans with your mobile operator, including Web service API monitoring, running an end-to-end scenario, and the review escalation process.
 
 ## Before launch
-You (the mobile operator) and Microsoft will review that all outstanding issues are properly addressed before moving to go live. This is important to fully migrate to a production environment. If you decide to use a staging endpoint during integration, this migration will take up to a week.
 
-## Web Service API monitoring
-The Mobile Plans service will monitor the availability of the Web service API by using *Xping* test to ping the MO Direct portal twice per minute, making sure it is accessible.
+You (the mobile operator) and Microsoft will review that all outstanding issues are properly addressed before moving to go live. This is important to fully migrate to a production environment.
 
-If we fail to receive the expected response for more than 30 minutes, we will start the escalation process and engage you for investigation. 
+## Launch validation
 
-## Run end-to-end validation
-Microsoft must configure the eSIM and/or SIM ICCID range in the Mobile Plans production environment before starting end-to-end testing and validation. This configuration will take up to a week to be implemented. 
+On the agreed-upon launch date, Microsoft will move the mobile operator portal to production. The mobile operator is responsible for performing end-to-end validation immediately and reporting back any potential issues to Microsoft. This will enable providing support to address the issues accordingly.
 
-It is up to you to decide if the eSIM/SIM range to be configurated is a test range (a subset of the full production range) or the full production range.
+Mobile operatosr are ultimately responsible for accepting the live, in-production service.
 
-End-to-end validation is your responsibility, although Microsoft will support issues and help to address them accordingly.
-The following are recommended minimum scenarios. It is expected that you thoughtfully validate your MO Direct web portal behavior.
+## After Launch
 
-### First run experience with eSIM
+### API monitoring
 
-Initial conditions: The Windows 10 device does not have an eSIM profile but it is connected to the internet.
+The Mobile Plans service monitors the availability of the Web service API (mobile operator portal) by using *Xping* to ping the portal twice per minute, making sure it is accessible.
 
-Steps in scenario:
-1. Phone number lookup verification.
-2. Launch MO Direct web portal.
-3. Complete a transaction in the portal.
-4. eSIM profile is installed and activated.
-5. Device is connected.
+The Mobile Plans service monitors the availability of the `GetBalance` API using the defined protocol, twice per minute, making sure it is accessible. For this monitoring the mobile operator should provide an ICCID that will be continually used.
 
-### First run experience with SIM
-
-Initial conditions: The Windows 10 device has a SIM.
-
-1. Launch MO direct web portal.
-2. Complete a transaction in portal.
-3. Device is connected.
-
-## Escalation process
+### Escalation process
 
 Microsoft has established a two-way live site escalation process for mobile operators and Microsoft to work together on any customer-facing production incidents. A live site issue is any event that is not part of the standard operation of the either your service or Microsoft’s service, and causes (or might cause) an interruption or a reduction in quality of the Mobile Plans experience. Key scenarios in the Mobile Plans experience are:
 
@@ -60,62 +42,64 @@ Microsoft has established a two-way live site escalation process for mobile oper
 
 The goal of this process is that both mobile operators and Microsoft agree to the following:
 
-1. Monitor and escalate live site incidents following the process set forth within this topic.
-2. Prior to escalation of an incident, assign the correct priority using the guidelines set forth within this topic.
-3. Provide responses on all incidents in accordance with the maximum allowed response times associated to the incident priority as set forth within this topic.
+1. Monitor and escalate live site incidents following the process described in this topic.
+2. Prior to escalation of an incident, assign the correct priority using the guidelines described in this topic.
+3. Provide responses on all incidents in accordance with the maximum allowed response times associated to the incident priority as described in this topic.
 
-### Live site performance SLAs
+#### Live site performance SLAs
 
 The following table provides detailed descriptions for live site performance SLAs, including service availability and expected API response times for key APIs integrated with the Mobile Plans service.
 
 | Service name | Description | Impact in case of incident | Included in Mobile Plans MO API monitoring? | Availability | Latency |
 | --- | --- | --- | --- | --- | --- |
-| Core Network Services <p>(PGW, Online Charging System, internet access, GRX access, etc.)</p> | Services that provide the capability to: <ul><li>Access the internet for a user with data allowance.</li><li>Access walled garden even with no data allowance.</li></ul> | Users will not be able to connect to the internet using their cellular data plan.</li></ul> | No. <p>Mobile operators are responsible for monitoring their own Core Network Services.</p> | 99.90% | N/A |
+| Core Network Services <p>(PGW, Online Charging System, internet access, GRX access, etc.)</p> | Services that provide the capability to: <ul><li>Access the internet for a user with data allowance.</li><li>Access Walled Garden even with no data allowance.</li></ul> | Users will not be able to connect to the internet using their cellular data plan.</li></ul> | No. <p>Mobile operators are responsible for monitoring their own Core Network Services.</p> | 99.90% | N/A |
 | MO Direct portal | A web portal that users can access for the MO Direct scenario. | Users will not be able to engage with the MO Direct experience to sign up data plans. | Yes | 99.90% | 400ms |
-| xDR <p>(CDR, SDR, TDR)</p> | <ul><li>CDR: Call details record</li><li>SDR: Subscription details record</li><li>TDR: Transaction details record	</li></ul> | Impacts Microsoft internal business intelligence reporting and sharing insights with mobile operators | No. <p>Mobile operators are responsible for monitoring their own xDR services.</p> | N/A | N/A |
+| xDR <p>(CDR, SDR, TDR)</p> | <ul><li>CDR: Call details record</li><li>SDR: Subscription details record</li><li>TDR: Transaction details record</li></ul> | Impacts Microsoft internal business intelligence reporting and sharing insights with mobile operators | No. <p>Mobile operators are responsible for monitoring their own xDR services.</p> | N/A | N/A |
 
 ### Incident escalation
 
 #### Escalation to mobile operators
 
-If a service interruption is detected by Microsoft, the incident will be triaged and processed based on the following severity table. For high severity incidents, Microsoft’s One Store Operations Center (OSOC) will contact mobile operators. For low severity incidents, Microsoft’s Mobile Plans team will contact mobile operators.
+If a service interruption is detected by Microsoft, the incident is triaged and processed based on the following severity.
 
-| Severity | Definition | Communication SLAs |
-| --- | --- | --- |
-| **High** user or business impact.	| Loss of core business scenario(s): <ul><li>Service complete loss for more than 30 minutes (for example, if the API monitoring test fails for more than 30 minutes).</li></ul> | Escalation via phone by the Microsoft OSOC. <ul><li>Initial response from mobile operators is expected within 1 hour.</li><li>Ongoing updates are expected every business day until resolution.</li></ul> |
-| **Low** user or business impact. | Impact on non-critical business scenario(s): <ul><li>Reporting failures.</li><li>Information requests.</li></ul> | Escalation via email by the Mobile Plans team. <ul><li>Initial response from mobile operators is expected within 1 business day.</li><li>Ongoing updates are expected every week until resolution.</li></ul> |
+| Severity | Business Impact | Threshold | Expected Resolution Time | Update Cadence |
+| --- | --- | --- | --- | --- |
+| **1** | **Outage/Disaster:** Issue with high impact, affecting all traffic to a single partner, or a moderate or greater amount of overall global traffic. | Partner Failure Percentage = 100% OR Global Failure Percentage > 5% | 8 hours | Once partner contact is made, email updates should be provided every 2 hours |
+| **2** | **Service Disruption:** Issue with medium impact, affecting a high amount of user traffic for a single partner, but still a low amount of overall global traffic. | Partner Failure Percentage = 75% OR Global Failure Percentage = 1% to 5% | 24 hours | Once partner contact is made, email updates should be provided every 6 hours |
+| **3** | **Standard Escalation:** Issue with low-to-medium impact, affecting moderate amount of user traffic for a single partner, but a very low amount of overall global traffic. | Partner Failure Percentage = 25% - 75% OR Global Failure Percentage < 1% OR 12 consecutive xPing tests to MO’s Get Balance endpoints fail (MPS makes one xPing call per 5 minutes) | Best effort | Once partner contact is made, emails updates should be provided as needed |
 
 #### Escalation to Microsoft
 
-If you detect a service interruption, you can escalate through the Microsoft Operations Center and identify as a partner to the Mobile Plans Services team and that you would like to report a problem. Service interruptions include, but are not limited to, core Mobile Plans scenarios being down for more than 30 minutes, or mobile operators’ services receiving an abnormally high number of calls from Mobile Plans services. You will be asked to provide details around the incident in a form of a template that will be supplied by the Operation Center to ensure we can engage the correct teams.
+If you detect a service interruption, you can escalate to the Mobile Plans Services team. Service interruptions include, but are not limited to, core Mobile Plans scenarios being down for more than 30 minutes, or mobile operators’ services receiving an abnormally high number of calls from Mobile Plans services.
 
-- For high severity incidents, escalation to Microsoft will occur via a call to the Microsoft Operations Center at **+1 425-538-9336** and an email to [osoc@microsoft.com](mailto:osoc@microsoft.com).
-- For low severity incidents, escalation to Microsoft will occur via an email to [dmcellpd@microsoft.com](mailto:dmcellpd@microsoft.com).
+For incidents during staging / onboarding, escalate to [Mobile Plans Implementation Support](mailto:mpimplementation@microsoft.com). For incidents post onboarding, escalate to [Mobile Plans Operations support](mailto:DYNAMOPARTNERSUP@microsoft.com).
 
 ### Services outage
 
 #### Microsoft communication of services outage to mobile operators
-Microsoft will inform mobile operators of any Microsoft network, Mobile Plans or Microsoft Store service outages via telephone and email no more than 30 minutes after we first become aware of such an outage.
+
+Microsoft will inform mobile operators of any Microsoft network Mobile Plans service outages via email no more than 30 minutes after we first become aware of such an outage.
 
 #### Mobile operator communication of services outage to Microsoft
-You must inform Microsoft of any Core Network Services outages via telephone and email no more than 30 minutes after you first become aware of such outages. All such communications should be directed by phone to Microsoft Operations center at **+1 425-538-9336** and an email to [osoc@microsoft.com](mailto:osoc@microsoft.com).
 
-#### Planned maintenance
+You must inform Microsoft of any Core Network Services outages via email no more than 30 minutes after you first become aware of such outages. [Mobile Plans Operations support](mailto:DYNAMOPARTNERSUP@microsoft.com)
+
+##### Planned maintenance
+
 Regularly scheduled or routine maintenance of the services operated by mobile operators or the Microsoft Mobile Plans team that have or may have end user impact must be communicated beforehand through the channels defined in this section.  
 
-#### Communication of planned maintenance to mobile operators
-The Microsoft Mobile Plans team will communicate planned maintenance to mobile operators no later than five business days prior to the event. Once the maintenance is completed, a notification will be sent to mobile operators.
+##### Communication of planned maintenance to mobile operators
 
-#### Communication of planned maintenance to Microsoft
-Regularly scheduled or routine maintenance of the mobile operator’s Core Network Services must be communicated via email to [osoc@microsoft.com](mailto:osoc@microsoft.com) no later than five business days prior to the event. Once the maintenance is completed a notification will be sent to [osoc@microsoft.com](mailto:osoc@microsoft.com).
+The Microsoft Mobile Plans team will communicate planned maintenance to mobile operators no later than five business days prior to the event. Once the maintenance is completed, a notification is sent to mobile operators.
 
-#### Requesting bug fixes
-**Reporting a bug** – Each team can report a bug via email to [DYNAMOpartnersup@microsoft.com](mailto:swifipartnersup@microsoft.com), and work with their counterparts to get a bug logged.
+##### Communication of planned maintenance to Microsoft
 
-**Getting the bug fixed** – The Mobile Plans team must triage the bug and provide business justification/impact.
+Regularly scheduled or routine maintenance of the mobile operator’s Core Network Services must be communicated via email to Microsoft no later than five business days prior to the event to [Mobile Plans Operations support](mailto:DYNAMOPARTNERSUP@microsoft.com).
 
-**Deploying the fix for the bug** – Once the bug has been approved to be fixed, a tentative deployment schedule will be shared and network providers will be notified via email once the fix is deployed.
+##### Requesting bug fixes
 
-## Customer Support
+**Reporting a bug** – Each team can report a bug via email to [Mobile Plans Operations support](mailto:DYNAMOPARTNERSUP@microsoft.com), and work with their counterparts to get a bug logged.
 
-Mobile operators are solely responsible for any customer support issues. 
+### Customer Support
+
+Mobile operators are solely responsible for any customer support issues.

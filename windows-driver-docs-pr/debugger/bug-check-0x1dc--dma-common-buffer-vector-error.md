@@ -32,7 +32,7 @@ The DMA\_COMMON\_BUFFER\_VECTOR\_ERROR bug check has a value of 0x000001DC. It i
 
 **Type of Failure**
 
-```
+```text
 0x01 : Wrong IRQL
     2 - Current IRQL.
 

@@ -35,7 +35,7 @@ The SMB redirector has detected a problem and has captured a kernel dump to coll
 
 **Reason Code**
 
-```
+```text
 0x1 : An I/O failed to complete in a reasonable amount of time.
     2 - Pointer to the connection object.
     3 - Reserved.
@@ -57,9 +57,7 @@ When this registry key is set and the RDR times out on IO, a livedump will occur
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
-
 ## See Also
 ----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
-
