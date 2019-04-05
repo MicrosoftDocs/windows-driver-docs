@@ -149,7 +149,7 @@ By running **!ndiskd.netadapter** with no parameters, you can get a list of all 
     ffffdf801418d650   ffffdf80140c71a0    Microsoft Kernel Debug Network Adapter
 ```
 
-By clicking on the handle for the miniport driver or entering the **!ndiskd.netadapter -handle**, you can now see all of NDIS's state on that device. This can be very helpful as a starting place for troubleshooting a network driver or for figuring out where an issue is in the network stack. For example, you can see the Datapath state for the driver and see whether it is connected or not.
+By clicking on the handle for the miniport driver or entering the **!ndiskd.netadapter -handle**, you can now see all of NDIS's state on that device. This can be helpful very as a starting place for troubleshooting a network driver or for figuring out where an issue is in the network stack. For example, you can see the Datapath state for the driver and see whether it is connected or not.
 
 At the bottom of the report for this net adapter, there are many other links you can click on to explore further information, such as any pending OIDs and the state of task offloads. These links correspond to many of the parameters for **!ndiskd.netadapter**.
 
