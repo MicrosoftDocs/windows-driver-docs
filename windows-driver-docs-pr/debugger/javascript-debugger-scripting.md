@@ -44,8 +44,13 @@ These two topics provide additional information about working with JavaScript in
 
 [Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
 
-## <span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>The Debugger JavaScript Provider
 
+## JavaScript Scripting Video
+
+[Defrag Tools #170](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-170-Debugger-JavaScript-Scripting) - Andy and Bill demonstrate JavaScript extensibility and scripting abilities in the debugger.
+
+
+## <span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>The Debugger JavaScript Provider
 
 The JavaScript provider included with the debugger takes full advantage of the latest ECMAScript6 object and class enhancements. For more information, see [ECMAScript 6 — New Features: Overview & Comparison](https://es6-features.org/).
 

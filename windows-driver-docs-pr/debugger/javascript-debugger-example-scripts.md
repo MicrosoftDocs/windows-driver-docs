@@ -2,19 +2,26 @@
 title: JavaScript Debugger Example Scripts
 description: This topic provides the information on user and kernel mode JavaScript code samples, such as the Data Filtering Plug and Play Device Tree sample.
 ms.assetid: F477430B-10C7-4039-9C5F-25556C306643
-ms.date: 11/27/2018
+ms.date: 04/05/2019
 ms.localizationpriority: medium
 ---
 
 # JavaScript Debugger Example Scripts
 
-
 This topic provides the following user and kernel mode JavaScript code samples.
 
--   [Data Filtering: Plug and Play Device Tree in KD (Kernel Mode)](#filter)
--   [Extend Devices Specific To Multimedia (Kernel Mode)](#multimedia)
--   [Adding Bus Information to \_DEVICE\_OBJECT (Kernel Mode)](#bus)
--   [Find an Application Title (User Mode)](#title)
+- [Data Filtering: Plug and Play Device Tree in KD (Kernel Mode)](#filter)
+- [Extend Devices Specific To Multimedia (Kernel Mode)](#multimedia)
+- [Adding Bus Information to \_DEVICE\_OBJECT (Kernel Mode)](#bus)
+- [Find an Application Title (User Mode)](#title)
+
+## Microsoft GitHub Repo Example Scripts
+
+The debugger team hosts a GitHub repo that contains example JavaScript scripts and extensions.
+
+You can find it at - https://github.com/Microsoft/WinDbg-Samples
+
+The readme file describes the current example code that is available.
 
 ## <span id="Working_with_Samples"></span><span id="working_with_samples"></span><span id="WORKING_WITH_SAMPLES"></span>Working with Samples
 
