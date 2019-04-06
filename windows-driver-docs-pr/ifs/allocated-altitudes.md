@@ -282,11 +282,11 @@ The current altitude allocations are listed below for each of the following load
 | ScAuthIoDrv.sys | 386700 | Security Code LLC |
 | mfeaskm.sys | 386610 | McAfee Inc. |
 | mfencfilter.sys | 386600 | McAfee |
-| WinFLAHdrv.sys | 386540 | NewSoftwares`.`net, Inc. |
-| WinFLAdrv.sys | 386530 | NewSoftwares`.`net, Inc. |
-| WinDBdrv.sys | 386520 | NewSoftwares`.`net, Inc. |
-| WinFLdrv.sys | 386510 | NewSoftwares`.`net, Inc. |
-| WinFPdrv.sys | 386500 | NewSoftwares`.`net, Inc. |
+| WinFLAHdrv.sys | 386540 | NewSoftwares&#x2024;net, Inc. |
+| WinFLAdrv.sys | 386530 | NewSoftwares&#x2024;net, Inc. |
+| WinDBdrv.sys | 386520 | NewSoftwares&#x2024;net, Inc. |
+| WinFLdrv.sys | 386510 | NewSoftwares&#x2024;net, Inc. |
+| WinFPdrv.sys | 386500 | NewSoftwares&#x2024;net, Inc. |
 | SkyWPDrv.sys | 386435 | Sky Co.,Ltd. |
 | SkyRGDrv.sys | 386431 | Sky Co., LTD. |
 | SkyAMDrv.sys | 386430 | Sky Co., LTD. |
@@ -428,7 +428,7 @@ The current altitude allocations are listed below for each of the following load
 | SQLsafeFilterDriver.sys | 380901 | Idera Software |
 | IderaFilterDriver.sys | 380900 | Idera |
 | cbfsfilter2017.sys | 380850 | SN Systems Ltd |
-| xhunter1.sys | 380800 | Wellbia`.`com |
+| xhunter1.sys | 380800 | Wellbia&#x2024;com |
 | iGuard.sys | 380720 | i-Guard SAS |
 | cbfltfs4.sys | 380715 | Nomadesk |
 | cbfltfs4.sys | 380710 | Backup Systems Ltd |
@@ -609,11 +609,11 @@ The current altitude allocations are listed below for each of the following load
 | Santa.sys | 363510 | Safend |
 | vfdrv.sys | 363500 | Viewfinity |
 | topdogfsfilt.sys | 363450 | ManTech |
-| xhunter64.sys | 363400 | Wellbia`.`com |
-| uncheater.sys | 363390 | Wellbia`.`com |
+| xhunter64.sys | 363400 | Wellbia&#x2024;com |
+| uncheater.sys | 363390 | Wellbia&#x2024;com |
 | AuditFlt.sys | 363313 | Ionx Solutions LLP |
 | SPIMiniFilter.sys | 363300 | Software Pursuits Inc. |
-| mracdrv.sys | 363230 | Mail`.`Ru |
+| mracdrv.sys | 363230 | Mail&#x2024;Ru |
 | BEDaisy.sys | 363220 | BattlEye Innovations |
 | NetAccCtrl.sys | 363200 | LINK co. |
 | NetAccCtrl64.sys | 363200 | LINK co. |
@@ -1626,7 +1626,7 @@ The current altitude allocations are listed below for each of the following load
 | HHRRPH.sys | 87010 | H+H Software GmbH |
 | HHVolFltr.sys | 87000 | H+H Software GmbH |
 | SbieDrv.sys | 86900 | Sandboxie L.T.D |
-| assetpro.sys | 86800 | pyaprotect`.`com |
+| assetpro.sys | 86800 | pyaprotect&#x2024;com |
 | dlp.sys | 86700 | Tellus Software AS |
 | eps.sys | 86600 | Lumension Security |
 | RapportPG64.sys | 86500 | Trusteer |
@@ -1731,7 +1731,7 @@ The current altitude allocations are listed below for each of the following load
 | sds.sys | 62000 | Egress Software |
 | TotalSystemAuditor.sys | 61600 | ANRC LLC |
 | MBAMApiary.sys | 61500 | Malwarebytes Corp. |
-| WA_FSW.sys | 61400 | Programas Administraci�n y Mejoramiento |
+| WA_FSW.sys | 61400 | Programas Administraci&#243;n y Mejoramiento |
 | ViewIntus_RTAS | 61300 | Pentego Technologies |
 | tffac.sys | 61200 | Toshiba Corporation |
 | tccp.sys | 61100 | TrusCont Ltd |
