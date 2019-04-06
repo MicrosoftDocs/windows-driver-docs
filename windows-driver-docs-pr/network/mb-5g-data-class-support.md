@@ -111,6 +111,17 @@ To make the signal more scalable, the new MBIM_CID_MS_SIGNAL_STATE_V2 message ha
 
 The signal strength reported by the modem is based on the current data class. If the modem is connected to both LTE and 5G (DC), then the 5G RSSI is reported. If the 5G icon is displayed, then the signal strength indicator reported by the modem is based on a 5G carrier.
 
+## NDIS interface extensions
+
+The following NDIS OIDs and their data structures have been updated for 5G data class support.
+
+- [OID_WWAN_DEVICE_CAPS_EX](oid-wwan-device-caps-ex.md)
+- [OID_WWAN_REGISTER_STATE](oid-wwan-register-state.md)
+- [OID_WWAN_PACKET_SERVICE](oid-wwan-packet-service.md)
+- [OID_WWAN_SIGNAL_STATE](oid-wwan-signal-state.md)
+
+The equivalent MBIM CID messages for these OIDs are described in the following sections of this topic.
+
 ## MBIM Extensions Release 2.0
 
 The [MBIM 1.0 errata specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) has a mechanism to add and advertise optional CIDs, but it lacks a mechanism to change existing CIDs with new payloads or modified payloads, or introduce any changes that cannot be accommodated by optional CIDs. Each payload in the MBIM 1.0 errata specification might consist of fixed size members or dynamically sized offset/size pair members. If a dynamically-sized member exists, then the last member is a variable-sized buffer. The MBIM 1.0 errata specification defines a fixed location for this buffer, so new members cannot be added before it. To introduce new members for existing CID payloads would mean a breaking change.
