@@ -42,7 +42,7 @@ Starting in Windows 10, version 1903, OID_WWAN_DEVICE_CAPS_EX has been upgraded 
 
 When the host queries capabilities using this OID, the miniport driver must check if the underlying hardware supports 5G cellular capabilities. If it does, the miniport driver sets the bitmask in the **WwanDataClass** field of the [**WWAN_DEVICE_CAPS_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_device_caps_ex) structure according to hardware capabilties.
 
-Additionally, in the **WwanOptionalServiceCaps** field of the **WWAN_DEVICE_CAPS_EX** structure, a new bit is optional service bit is defined that covers support of all new 5G-related extensions.
+Additionally, in the **WwanOptionalServiceCaps** field of the **WWAN_DEVICE_CAPS_EX** structure, a new optional service bit is defined that covers support of all new 5G-related extensions.
 
 For more info about 5G data class support, see [MB 5G data class support](mb-5g-data-class-support.md).
 
