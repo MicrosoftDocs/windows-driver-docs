@@ -118,7 +118,7 @@ When portcls receives the close stream handle, portcls will invoke the functions
 
 [IMiniportWaveRTStream::FreeAudioBuffer](https://msdn.microsoft.com/library/windows/hardware/ff536745) or [IMiniportWaveRTStreamNotification::FreeBufferWithNotification](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification)
 
-Note that portcls miniport drivers should succeed the state transitions from higher value to lower values (RUN == 3, PAUSE==2, ACQUIRE==1, STOP==0) when the stream has been already stopped by a SR/STOP operation (i.e., when SR/STOP arrives before the close handle request).
+Note that portcls miniport drivers should succeed the state transitions from higher value to lower values (RUN == 3, PAUSE==2, ACQUIRE==1, STOP==0) when the stream has been already stopped by a Surprise Removal(SR)/STOP operation (i.e., when SR/STOP arrives before the close handle request).
 
 **Suggested Buffer Handling**
 
@@ -168,7 +168,7 @@ If (DMA engine is allocated)
 {
 \\Free DMA engine
 FreeDmaEngine (context, dma);
-\\Set DMA engine is now freed, that is bool freeDma=false
+\\Set DMA engine is now freed - bool freeDma=false
 }
 ```
 
