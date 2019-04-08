@@ -3,7 +3,7 @@ title: Bug Check 0xC000021A STATUS_SYSTEM_PROCESS_TERMINATED
 description: The STATUS_SYSTEM_PROCESS_TERMINATED bug check has a value of 0xC000021A. This means that an error has occurred in a crucial user-mode subsystem.
 ms.assetid: d46e2948-ff18-49e0-a738-7b90ab54d333
 keywords: ["Bug Check 0xC000021A STATUS_SYSTEM_PROCESS_TERMINATED", "STATUS_SYSTEM_PROCESS_TERMINATED"]
-ms.date: 05/23/2017
+ms.date: 03/15/2019
 topic_type:
 - apiref
 api_name:
@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The STATUS\_SYSTEM\_PROCESS\_TERMINATED bug check has a value of 0xC000021A. This means that an error has occurred in a crucial user-mode subsystem.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## STATUS\_SYSTEM\_PROCESS\_TERMINATED Parameters
 
@@ -66,7 +68,7 @@ Mismatched system files can also cause this error. This can occur if you have re
 Resolution
 ----------
 
-Running the kernel debugger is not useful in this situation because the actual error occurred in a user-mode process.
+Running the kernel debugger may not be useful in this situation because the actual error occurred in a user-mode process.
 
 **Resolving an error in a user-mode device driver, system service, or third-party application:** Because bug check 0xC000021A occurs in a user-mode process, the most common culprits are third-party applications. If the error occurred after the installation of a new or updated device driver, system service, or third-party application, the new software should be removed or disabled to isolate the cause. Contact the manufacturer of the software about a possible update.
 
@@ -77,6 +79,9 @@ These steps may be helpful in gathering additional information.
 -   Look at the most recently installed applications. To do this navigate to "Uninstall or change a program" in control panel and sort the installed applications by install date.
 
 -   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+
+Remarks
+----------
 
 These steps may be helpful in resolving this issue.
 
