@@ -110,11 +110,11 @@ If the allocation and deallocation of the supporting memory buffers is not done 
 
 When portcls receives the close stream handle, portcls will invoke the functions below to set the stream state to stop and to free the buffer:
 
->> set stream state 
+*set stream state*
 
 [IMiniportWaveRTStream::SetState](https://msdn.microsoft.com/en-us/library/windows/hardware/ff536756(v=vs.85).aspx)
 
->> release buffer  
+*release buffer*  
 
 [IMiniportWaveRTStream::FreeAudioBuffer](https://msdn.microsoft.com/library/windows/hardware/ff536745) or [IMiniportWaveRTStreamNotification::FreeBufferWithNotification](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification)
 
@@ -168,8 +168,7 @@ If (DMA engine is allocated)
 {
 \\Free DMA engine
 FreeDmaEngine (context, dma);
-\\Set DMA engine is freed
-SetDmaEngineState(context, WHAT STATE To SET HERE???, 1, &dma)
+\\Set DMA engine is now freed, that is bool freeDma=false
 }
 ```
 
