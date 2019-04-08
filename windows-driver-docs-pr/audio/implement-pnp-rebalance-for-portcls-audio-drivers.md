@@ -2,7 +2,7 @@
 title: Implement PnP Rebalance for PortCls Audio Drivers
 description: PnP rebalancing is used in certain PCI scenarios where memory resources need to be reallocated.
 ms.assetid: FCAD7F8B-AA9B-430A-BCAF-04E13FA15382
-ms.date: 04/20/2017
+ms.date: 04/08/2019
 ms.localizationpriority: medium
 ---
 
@@ -98,12 +98,6 @@ IMiniportPnpNotify interface available is on both WaveRT and Topology.
 
 **Note**  Because Portcls acquires the device global lock before making this call, the miniport must execute this call as fast as possible. The miniport must not wait on other activity while processing this call to prevent deadlock when other threads/work-items are waiting for the device global lock. If needed, the miniport can wait in the [**IAdapterPnpManagement::PnpStop**](https://msdn.microsoft.com/library/windows/hardware/mt604854) call.
 
- 
+## <span id="Buff"></span><span id="buff"></span><span id="BUFF"></span> Managing Memory Buffers
 
- 
-
- 
-
-
-
-
+This section describes how to manage memory buffers and the sequence of operations for memory clean up.
