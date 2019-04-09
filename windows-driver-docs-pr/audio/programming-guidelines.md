@@ -1,12 +1,12 @@
 ---
-title: Programming Guidelines
-description: Programming Guidelines
+title: HD Audio DDI Programming Guidelines
+description: HD Audio DDI Programming Guidelines
 ms.assetid: 289bdf85-9138-4920-a61f-050c51077d3e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Programming Guidelines
+# HD Audio DDI Programming Guidelines
 
 
 This section presents programming guidelines for using the HD Audio DDI versions (as defined by the [**HDAUDIO\_BUS\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff536413), [**HDAUDIO\_BUS\_INTERFACE\_V2**](https://msdn.microsoft.com/library/windows/hardware/ff536418) and [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://msdn.microsoft.com/library/windows/hardware/ff536416) structures) to control audio and modem codecs that are connected to an HD Audio bus interface controller.

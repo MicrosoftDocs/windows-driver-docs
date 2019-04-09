@@ -51,7 +51,7 @@ This section includes:
 
 [HD Audio and UAA](hd-audio-and-uaa.md)
 
-[Programming Guidelines](programming-guidelines.md)
+[HD Audio DDI Programming Guidelines](programming-guidelines.md)
 
  
 
