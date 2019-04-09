@@ -16,7 +16,9 @@ ms.localizationpriority: medium
 
 The DMA\_COMMON\_BUFFER\_VECTOR\_ERROR bug check has a value of 0x000001DC. It indicates that a driver has misused the DMA vectored common buffer APIs.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
  
 
 ## DMA\_COMMON\_BUFFER\_VECTOR\_ERROR Parameters

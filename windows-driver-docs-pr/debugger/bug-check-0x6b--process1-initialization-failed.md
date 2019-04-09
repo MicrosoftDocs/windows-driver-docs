@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The PROCESS1\_INITIALIZATION\_FAILED bug check has a value of 0x0000006B. This bug check indicates that the initialization of the Microsoft Windows operating system failed.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## PROCESS1\_INITIALIZATION\_FAILED Parameters
 
@@ -67,7 +69,7 @@ This bug check can also be caused by a missing file from the boot partition or b
 
  
 ## Resolution
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause. 
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause. 
 
 
 
