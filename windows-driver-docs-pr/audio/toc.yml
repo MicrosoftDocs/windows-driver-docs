@@ -241,6 +241,8 @@
       items: 
       - name: "Differences Between the HD Audio DDI Versions"
         href: differences-between-the-hd-audio-ddi-versions.md
+      - name: "Managing Memory Buffers During Audio Resource Rebalance and Surprise Removal Operations"
+        href: managing-memory-buffers-rebalance.md
       - name: "Synchronous and Asynchronous Codec Commands"
         href: synchronous-and-asynchronous-codec-commands.md
       - name: "Wall Clock and Link Position Registers"
