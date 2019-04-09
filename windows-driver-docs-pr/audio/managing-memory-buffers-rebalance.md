@@ -13,11 +13,11 @@ PnP rebalancing is used in certain PCI scenarios where memory resources need to 
 
 ## PnP Surprise Removal Overview
 
-PnP "surprise removal" occurs when a device been unexpectedly removed from the machine and is no longer available for I/O operations. For additional information, see [State Transitions for PnP Devices](https://docs.microsoft.com/windows-hardware/drivers/kernel/state-transitions-for-pnp-devices) and [Handling an IRP_MN_SURPRISE_REMOVAL Request](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-an-irp-mn-surprise-removal-request).
+PnP "Surprise Removal" (SR) occurs when a device been unexpectedly removed from the machine and is no longer available for I/O operations. For additional information, see [State Transitions for PnP Devices](https://docs.microsoft.com/windows-hardware/drivers/kernel/state-transitions-for-pnp-devices) and [Handling an IRP_MN_SURPRISE_REMOVAL Request](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-an-irp-mn-surprise-removal-request).
 
 ## Managing Memory Buffers During Audio Resource Rebalance and Surprise Removal Operations
 
-This section describes how to manage memory buffers and the sequence of operations for memory buffer clean up during audio resource rebalance and PnP surprise removal operations
+This section describes how to manage memory buffers and the sequence of operations for memory buffer clean up during audio resource rebalance and PnP SR operations.
 
 If the allocation and deallocation of the supporting memory buffers is not done properly it can lead to memory corruption, soft hangs and failures, such as [Bug Check 0x9F: DRIVER_POWER_STATE_FAILURE](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x9f--driver-power-state-failure).
 
@@ -34,7 +34,7 @@ When portcls receives the close stream handle, portcls will invoke the functions
 
 [IMiniportWaveRTStream::FreeAudioBuffer](https://msdn.microsoft.com/library/windows/hardware/ff536745) or [IMiniportWaveRTStreamNotification::FreeBufferWithNotification](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification)
 
-Note that portcls miniport drivers should succeed the state transitions from higher value to lower values (RUN == 3, PAUSE==2, ACQUIRE==1, STOP==0) when the stream has been already stopped by a Surprise Removal(SR)/STOP operation (i.e., when SR/STOP arrives before the close handle request).
+Note that portcls miniport drivers should succeed the state transitions from higher value to lower values (RUN == 3, PAUSE==2, ACQUIRE==1, STOP==0) when the stream has been already stopped by a SR/STOP operation (i.e., when SR/STOP arrives before the close handle request).
 
 **Suggested Buffer Handling**
 
