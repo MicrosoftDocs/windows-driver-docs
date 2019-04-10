@@ -1201,15 +1201,15 @@ Test
 
 ## <span id="Vscode"></span><span id="vscode"></span><span id="VSCODE"></span>JavaScript in VSCode - Adding IntelliSense
 
-If you would like to work with the debugger data model objects in VSCode, you can use a defintion file that is available in the Windows development kits. The IntelliSense definition file provides support for all of the host.* debugger object APIs. If you installed the kit in the default directory on a 64 bit PC, it is located here:
+If you would like to work with the debugger data model objects in VSCode, you can use a definition file that is available in the Windows development kits. The IntelliSense definition file provides support for all of the host.* debugger object APIs. If you installed the kit in the default directory on a 64 bit PC, it is located here:
 
 `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\winext\JsProvider.d.ts`
 
 To use the IntelliSense definition file in VSCode:
 
-1. Locate the definition file - JSProvider.d.ts.zip
+1. Locate the definition file - JSProvider.d.ts
 
-2. Copy the defintion file to same folder as your script.
+2. Copy the definition file to same folder as your script.
 
 3. Add `/// <reference path="JSProvider.d.ts" />` to the top of your JavaScript script file.
 
