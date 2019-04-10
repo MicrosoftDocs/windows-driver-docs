@@ -1,7 +1,7 @@
 ---
 title: Managing Memory Buffers During Audio Resource Rebalance and Surprise Removal Operations
 description: PnP rebalancing is used in certain PCI scenarios where memory resources need to be reallocated. Memory Buffers need to be managed properly to avoid issues.
-ms.date: 04/09/2019
+ms.date: 04/10/2019
 ms.localizationpriority: medium
 ---
 
@@ -17,16 +17,16 @@ PnP "Surprise Removal" (SR) occurs when a device been unexpectedly removed from 
 
 ## Managing Memory Buffers During Audio Resource Rebalance and Surprise Removal Operations
 
-This section describes how to manage memory buffers and the sequence of operations for memory buffer clean up during audio resource rebalance and PnP SR operations.
+This section describes how to manage memory buffers and the sequence of operations for memory buffer clean up during audio resource rebalance and PnP SR operations for HD Audio codec drivers.
 
 If the allocation and deallocation of the supporting memory buffers is not done properly it can lead to memory corruption, soft hangs and failures, such as [Bug Check 0x9F: DRIVER_POWER_STATE_FAILURE](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x9f--driver-power-state-failure).
 
 
 **Close Stream Handle Behavior**
 
-When portcls receives the close stream handle, portcls will invoke the functions below to set the stream state to stop and to free the buffer:
+When portcls receives the close stream handle, portcls invokes the functions below to set the stream state to stop and to free the buffer:
 
-*set stream state*
+*set stream state* (If the stream is not already in the stop state.)
 
 [IMiniportWaveRTStream::SetState](https://msdn.microsoft.com/en-us/library/windows/hardware/ff536756(v=vs.85).aspx)
 
@@ -34,11 +34,27 @@ When portcls receives the close stream handle, portcls will invoke the functions
 
 [IMiniportWaveRTStream::FreeAudioBuffer](https://msdn.microsoft.com/library/windows/hardware/ff536745) or [IMiniportWaveRTStreamNotification::FreeBufferWithNotification](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification)
 
-Note that portcls miniport drivers should succeed the state transitions from higher value to lower values (RUN == 3, PAUSE==2, ACQUIRE==1, STOP==0) when the stream has been already stopped by a SR/STOP operation (i.e., when SR/STOP arrives before the close handle request).
+Note that portcls miniport drivers should succeed the state transitions from higher value to lower values (RUN == 3, PAUSE==2, ACQUIRE==1, STOP==0) when the stream has been already stopped by the driver during a SR/STOP operation (i.e., when SR/STOP arrives before the close handle request).
 
-**Suggested Buffer Handling**
+**Buffer Handling**
 
-Assuming that the right serialization code exists between the SR/STOP and Close threads the flow will be similar to the following:
+
+When a stream is closed during normal operations, portcls invokes the Wave RT’s callbacks to let the driver stop its DMA operations and release its associated buffers:
+
+[IMiniportWaveRTStream::SetState](https://msdn.microsoft.com/en-us/library/windows/hardware/ff536756(v=vs.85).aspx) -> SetDmaEngineState (HD Audio Bus DDI). Takes action to start/pause DMA.
+
+[IMiniportWaveRTStream::FreeAudioBuffer](https://msdn.microsoft.com/library/windows/hardware/ff536745) or [IMiniportWaveRTStreamNotification::FreeBufferWithNotification](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification)-> FreeDmaBuffer (HD Audio Bus DDI).
+
+IMiniportWaveRTStream[Notification]’s destructor-> FreeDmaEngine (HD Audio Bus DDI). 
+
+When a device is surprise removed, the miniport must release all its h/w resources without waiting for the open stream handles to close. This means that the miniport must stop, reset and free all its allocated DMA engines before forwarding the PnP request to PortCls with [PcDisptachIrp](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcdispatchirp) DDI. On the other hand, the miniport must not free the audio Wave RT buffers until the stream handles are closed and PortCls notifies the miniport with the FreeAudioBuffer/FreeBufferWithNotification callback.
+
+When a device is stopped because it elected to support rebalance, the miniport must release all its hardware resources without waiting for the open stream handles to close. This means that the miniport must stop, reset and free all its allocated DMA engines in the PnP callback invoked by portcls. On the other hand, the miniport must not free the audio Wave RT buffers until the stream handles are closed and PortCls notifies the miniport with the FreeAudioBuffer/FreeBufferWithNotification callback.
+
+Note that normal close stream operation can happen at the same time as SR/Stop operation, this means that the miniport must implement the proper synchronization between these threads.
+
+Examples of operations assuming that the right serialization code exists between the SR/STOP and Close threads:
+
 
 On Close:
 
@@ -90,10 +106,16 @@ FreeDmaEngine (context, dma);
 
 For more information, see:
 
- [PSET_DMA_ENGINE_STATE callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/nc-hdaudio-pset_dma_engine_state)
+[PSET_DMA_ENGINE_STATE callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/nc-hdaudio-pset_dma_engine_state)
 
 [HDAUDIO_STREAM_STATE Enumeration](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/hdaudio/ne-hdaudio-_hdaudio_stream_state)
 
 [PFREE_DMA_ENGINE callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/nc-hdaudio-pfree_dma_engine)
 
 [PSET_DMA_ENGINE_STATE callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/nc-hdaudio-pset_dma_engine_state)
+
+[IMiniportWaveRTStreamNotification interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavertstreamnotification) 
+
+[IMiniportWaveRTStreamNotification::FreeBufferWithNotification method](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification)
+
+[PcDisptachIrp](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcdispatchirp)
