@@ -22,7 +22,9 @@ Built in Windows critical system services include csrss.exe, wininit.exe, logonu
 A developer can also create a service and set its recovery option to Restart the Computer for more information see [Set up Recovery Actions to Take Place When a Service Fails](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753662(v=ws.11)).
 
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## CRITICAL\_PROCESS\_DIED Parameters
 
