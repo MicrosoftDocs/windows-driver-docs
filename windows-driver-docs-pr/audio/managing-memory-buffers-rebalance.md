@@ -19,6 +19,8 @@ PnP "Surprise Removal" (SR) occurs when a device been unexpectedly removed from 
 
 This section describes how to manage memory buffers and the sequence of operations for memory buffer clean up during audio resource rebalance and PnP SR operations for HD Audio codec drivers.
 
+Note that the operating system support for the buffer management approach described in this topic will be available in the next major feature release of Windows after the May 2019 Update.
+
 If the allocation and deallocation of the supporting memory buffers is not done properly it can lead to memory corruption, soft hangs and failures, such as [Bug Check 0x9F: DRIVER_POWER_STATE_FAILURE](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x9f--driver-power-state-failure).
 
 
