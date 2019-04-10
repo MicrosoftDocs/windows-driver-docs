@@ -97,7 +97,7 @@ FreeDmaEBuffer(context, dma);
 
 ```
 FREE_DMA_ENGINE:
-if (DMAEngineAllocated=true)
+if (DMAEngineAllocated==true)
 {
 \\Free DMA engine
 FreeDmaEngine (context, dma);
