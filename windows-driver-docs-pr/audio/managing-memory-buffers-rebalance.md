@@ -78,7 +78,7 @@ This is the definition for these operations in pseudocode.
 
 ```
 STOP_DMA:
-If (DmaEngineSate != ResetState)
+if (DmaEngineState != ResetState)
 {
 \\Set DMA Engine state to not running
 SetDmaEngineState(context, StopState, 1, &dma);
@@ -97,7 +97,7 @@ FreeDmaEBuffer(context, dma);
 
 ```
 FREE_DMA_ENGINE:
-If (DMA engine is allocated)
+if (DMAEngineAllocated=true)
 {
 \\Free DMA engine
 FreeDmaEngine (context, dma);
