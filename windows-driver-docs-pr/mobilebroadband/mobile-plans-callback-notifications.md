@@ -31,7 +31,6 @@ The following diagram shows the high level flow for how the Mobile Plans program
 ![Mobile Plans inline profile download sequence diagram](images/dynamo_inline_profile_flow.png)
 
 When the MO Direct portal is ready for a profile download, install, and activation to occur, the portal should call `MobilePlansInlineProfile.notifyInlineProfileDownload`.
-
 ### MobilePlansInlineProfile.notifyInlineProfileDownload
 
 | Parameter name | Type | Description |
@@ -56,6 +55,52 @@ function NotifyMobilePlans() { 
 ```
 
 See [purchase metadata properties](#Purchase-Metadata-Properties-details) for details about the puchaseMetadata object.
+
+## Inline profile operations
+When the MO Direct portal wants to do operations without returning control to the Mobile Plans app, inline operations should be used.
+
+### MobilePlansInlineOperations.notifyBalanceAddition(purchaseMetaData)
+| Parameter name | Type | Description |
+| --- | --- | -- |
+| purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
+
+When the MO would like to add balance to a given account, the MO should call the `MobilePlansInlineOperations.notifyBalanceAddition` API.
+
+The following Javascript function shows an example of the API to inform the application that a balance addition has been made.
+
+```Javascript
+function NotifyMobilePlans() { 
+    var purchaseMetaData = MobilePlans.createPurchaseMetaData(); 
+    purchaseMetaData.userAccount = MobilePlansUserAccount.new; 
+    purchaseMetaData.purchaseInstrument = MobilePlansPurchaseInstrument.new; 
+    purchaseMetaData.lineType = MobilePlansLineType.new; 
+    purchaseMetaData.modirectStatus = MobilePlansMoDirectStatus.complete; 
+    purchaseMetaData.planName = "My Plan"; 
+    MobilePlansInlineOperations.notifyBalanceAddition(purchaseMetaData); 
+}
+```
+
+### MobilePlansInlineOperations.notifyBalanceAddition(purchaseMetaData, iccid)
+| Parameter name | Type | Description |
+| --- | --- | -- |
+| purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
+| iccid | String | The ICCID which should be made active after the balance addition
+
+Balance addition can also be made to a non active profile if the ICCID of the profile is known. Using the `MobilePlansInlineOperations.notifyBalanceAddition` with an ICCID will inform Mobile Plans of the balance addition as well as make Mobile Plans switch the active profile to the profile corresponding to the provided ICCID.
+
+The following Javascript function shows an example of the API to inform the application that a balance addition has been made.
+
+```Javascript
+function NotifyMobilePlans() { 
+    var purchaseMetaData = MobilePlans.createPurchaseMetaData(); 
+    purchaseMetaData.userAccount = MobilePlansUserAccount.new; 
+    purchaseMetaData.purchaseInstrument = MobilePlansPurchaseInstrument.new; 
+    purchaseMetaData.lineType = MobilePlansLineType.new; 
+    purchaseMetaData.modirectStatus = MobilePlansMoDirectStatus.complete; 
+    purchaseMetaData.planName = "My Plan"; 
+    MobilePlansInlineOperations.notifyBalanceAddition(purchaseMetaData, "8900000000000000001"); 
+}
+```
 
 ### Listening for network registration changes
 
