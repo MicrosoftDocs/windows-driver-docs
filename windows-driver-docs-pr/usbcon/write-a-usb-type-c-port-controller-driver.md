@@ -200,7 +200,7 @@ As part of state machine execution, UcmTcpciCx needs to send requests to the por
 
 UcmTcpciCx sends the commands as I/O Control Code describing the get/set operation that is required from the client driver. In the client driver's queue setup, the driver registered its queue with UcmTcpciCx.  UcmTcpciCx starts placing framework request objects in the queue it requires operation from the driver. The I/O Control codes are listed in the table in step 4.
 
-It is the client driver’s responsibility to complete requests in a timely fashion.TBD,
+It is the client driver's responsibility to complete requests in a timely fashion.
 
 The client driver calls WdfRequestComplete on the framework request object with a completion status when it has finished the requested operation. 
 
