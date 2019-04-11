@@ -379,7 +379,7 @@ The following Storage features were added in Windows 10, version 1903:
 
 ### Windows Hardware Error Architecture (WHEA)
 
-The following WHEA functionality was added in Windows 10, version 1903:
+Windows 10, version 1903 includes a simplified interface to WHEA.  For more info, see the following pages:
 
 - [**WheaAddErrorSourceDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-wheaadderrorsourcedevicedriver)
 - [**WheaReportHwErrorDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-wheareporthwerrordevicedriver)
