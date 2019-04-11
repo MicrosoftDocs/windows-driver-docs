@@ -14,6 +14,7 @@ PwrTest functionality is separated into scenarios. Currently, PwrTest supports t
 -   [PwrTest Battery Scenario](pwrtest-battery-scenario.md)
 -   [PwrTest Connected Standby Scenario](pwrtest-connected-standby--cs--scenario.md)
 -   [PwrTest Device Scenario](pwrtest-device-scenario.md)
+-   [PwrTest DirectedFx Scenario](pwrtest-directedfx-scenario.md)
 -   [PwrTest Disk Scenario](pwrtest-disk-scenario.md)
 -   [PwrTest Execution State Scenario](pwrtest-execution-state-scenario.md)
 -   [PwrTest Idle Scenario](pwrtest-idle-scenario.md)
@@ -26,12 +27,5 @@ PwrTest functionality is separated into scenarios. Currently, PwrTest supports t
 -   [PwrTest Sleep Scenario](pwrtest-sleep-scenario.md)
 -   [PwrTest Thermal Scenario](pwrtest-thermal-scenario.md)
 -   [PwrTest Timer Scenario](pwrtest-timer-scenario.md)
-
- 
-
- 
-
-
-
 
 

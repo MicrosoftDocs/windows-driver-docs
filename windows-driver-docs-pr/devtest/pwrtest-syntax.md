@@ -36,7 +36,8 @@ pwrtest /scenario [/scenario_options] [/common_options]
 | processidle | Forces background maintenance tasks to execute (now rather than at their scheduled time) and monitors their progress. (Windows 7 and later)                        |
 | cs          | Cycles the computer through connected standby transitions if they are supported by the system. (Windows 8 and later)                                               |
 | platidle    | Monitors and attempts to log platform idle transition counts if they are supported by the system. (Windows 8 and later)                                            |
- 
+| directedfx  | Monitors low-power idle state switches related to [Directed Power Management Framework (DFx)](../kernel/introduction-to-the-directed-power-management-framework.md). (Windows 10, version 1903 and later)|
+
 
  
 
