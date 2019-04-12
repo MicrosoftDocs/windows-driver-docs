@@ -124,7 +124,7 @@ dx -r2 @$cursession.Processes.Select(p => new {Name = p.Name, Threads = p.Thread
         Threads       
 ```
 
-At this point we are displaying the name of the process and a list of threads. To display the ThreadCount, use the .Count() method.
+At this point we are displaying the name of the process and a list of threads. To display the ThreadCount, use the *.Count()* method.
 
 
 ```dbgcmd
@@ -142,7 +142,7 @@ At this point we are displaying the name of the process and a list of threads. T
 ...
 ```
 
-To see which processes have a large number of threads, order the list by thread count using OrderByDescending.
+To see which processes have a large number of threads, order the list by thread count using *OrderByDescending*.
 
 ```dbgcmd
 0: kd> dx -r2 @$cursession.Processes.Select(p => new {Name = p.Name, ThreadCount = p.Threads.Count()}).OrderByDescending(p => p.ThreadCount)
