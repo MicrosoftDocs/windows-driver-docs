@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!vad** extension displays details of a virtual address descriptor (VAD) or a tree of VADs.
 
--   Displays details of one virtual addres descriptor (VAD)
+-   Displays details of one virtual address descriptor (VAD)
 -   Displays details of a tree of VADs.
 -   Displays information about the VADs for a particular user-mode module and provides a string that you can use to load the symbols for that module.
 
