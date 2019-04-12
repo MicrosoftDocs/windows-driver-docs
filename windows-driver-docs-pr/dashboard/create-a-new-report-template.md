@@ -175,13 +175,13 @@ The response payload is structured as follows in JSON format.
         <td>Response code</td>
         <td>201/500/400</td>
       </tr>
-    	<tr>
+      <tr>
       <td>Response Payload</td>
           <td><pre>{
-    &quot;data&quot;: {
-        &quot;templateId&quot;: templateId
+    "data": {
+        "templateId": templateId
   },
-  &quot;errors&quot;: null  }`</td>
+  "errors": null  }</pre></td>
       </tr>
      </tbody>
 </table>

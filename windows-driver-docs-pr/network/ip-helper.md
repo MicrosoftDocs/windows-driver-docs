@@ -172,7 +172,7 @@ Your driver can use the following kernel-mode functions, MIB structures, and MIB
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546219" data-raw-source="[&lt;strong&gt;CreateSortedAddressPairs&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546219)"><strong>CreateSortedAddressPairs</strong></a></p></td>
-<td align="left"><p>Pairs a supplied list of destination addresses together with the host machine&#39;s local IP addresses and sorts the pairs according to the preferred order of communication.</p></td>
+<td align="left"><p>Pairs a supplied list of destination addresses together with the host machine's local IP addresses and sorts the pairs according to the preferred order of communication.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546227" data-raw-source="[&lt;strong&gt;CreateUnicastIpAddressEntry&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546227)"><strong>CreateUnicastIpAddressEntry</strong></a></p></td>

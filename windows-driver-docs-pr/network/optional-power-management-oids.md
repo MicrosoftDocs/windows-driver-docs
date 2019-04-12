@@ -31,7 +31,7 @@ For NDIS to consider a device power-management -- aware, it must respond to the 
 <tr class="odd">
 <td align="left"><p>Optional</p></td>
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569774" data-raw-source="[OID_PNP_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569774)">OID_PNP_CAPABILITIES</a></p></td>
-<td align="left"><p>The NIC&#39;s Power Management abilities</p></td>
+<td align="left"><p>The NIC's Power Management abilities</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Optional</p></td>

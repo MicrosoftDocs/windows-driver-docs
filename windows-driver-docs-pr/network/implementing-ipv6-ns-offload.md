@@ -79,7 +79,7 @@ The NS message format is specified in [RFC 4861](https://go.microsoft.com/fwlink
 <td align="left"><p>The miniport must match both options for this field: <strong>OID.TargetIPv6Addresses[x]</strong> and <strong>OID.SolicitedNodeIPv6Address</strong>.</p>
 <p>If this field is <strong>OID.TargetIPv6Addresses[x]</strong>, the NS message is a unicast message.</p>
 <p>If this field is <strong>OID.SolicitedNodeIPv6Address</strong>, the NS message is a multicast message.</p>
-<p><strong>OID.TargetIPv6Addresses</strong> is an array that can contain 1 or 2 addresses. If it contains 2 addresses, the miniport must match both of them. If the second address is &quot;0::0&quot;, it must be ignored, and a second match pattern must not be created.</p></td>
+<p><strong>OID.TargetIPv6Addresses</strong> is an array that can contain 1 or 2 addresses. If it contains 2 addresses, the miniport must match both of them. If the second address is "0::0", it must be ignored, and a second match pattern must not be created.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>IPv6.ICMPv6.Type</strong></td>
@@ -99,7 +99,7 @@ The NS message format is specified in [RFC 4861](https://go.microsoft.com/fwlink
 <tr class="odd">
 <td align="left"><strong>IPv6.Source</strong></td>
 <td align="left"><p><strong>OID.RemoteIPv6Address</strong></p></td>
-<td align="left"><p>If <strong>OID.RemoteIPv6Address</strong> is &quot;0::0&quot;, this field should be ignored.</p></td>
+<td align="left"><p>If <strong>OID.RemoteIPv6Address</strong> is "0::0", this field should be ignored.</p></td>
 </tr>
 </tbody>
 </table>
@@ -148,7 +148,7 @@ Upon receiving the NS message, device firmware should perform the validation ste
 <tr class="odd">
 <td align="left"><strong>IPv6.Destination</strong></td>
 <td align="left"><strong>IPv6.Source</strong></td>
-<td align="left"><p>Copy this value from the NS frame, unless the value of <strong>IPv6.Source</strong> was &quot;0::0&quot;. If the value of <strong>IPv6.Source</strong> was &quot;0::0&quot; set this field to &quot;FF02::1&quot;.</p></td>
+<td align="left"><p>Copy this value from the NS frame, unless the value of <strong>IPv6.Source</strong> was "0::0". If the value of <strong>IPv6.Source</strong> was "0::0" set this field to "FF02::1".</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>IPv6.ICMPv6.Type</strong></td>
@@ -168,7 +168,7 @@ Upon receiving the NS message, device firmware should perform the validation ste
 <tr class="odd">
 <td align="left"><strong>IPv6.ICMPv6.SolicitedFlag</strong></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>If the value of <strong>IPv6.Source</strong> in the NS frame was &quot;0::0&quot;, set this field to 1.</p></td>
+<td align="left"><p>If the value of <strong>IPv6.Source</strong> in the NS frame was "0::0", set this field to 1.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>IPv6.ICMPv6.OverrideFlag</strong></td>

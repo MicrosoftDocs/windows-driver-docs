@@ -112,7 +112,7 @@ This command exists in the following forms. The second characters of the **ed** 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>ep</strong></p></td>
-<td align="left"><p>Pointer-sized values. This command is equivalent to <strong>ed</strong> or <strong>eq</strong>, depending on whether the target computer&#39;s processor architecture is 32-bit or 64-bit, respectively.</p></td>
+<td align="left"><p>Pointer-sized values. This command is equivalent to <strong>ed</strong> or <strong>eq</strong>, depending on whether the target computer's processor architecture is 32-bit or 64-bit, respectively.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>eq</strong></p></td>

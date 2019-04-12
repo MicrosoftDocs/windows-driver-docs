@@ -49,7 +49,7 @@ In general, when converting from a color channel with more bits to one with fewe
 <tr class="odd">
 <td align="left"><p>5:5:5</p></td>
 <td align="left"><p>5:6:5</p></td>
-<td align="left"><p>The most-significant bit (MSB) of the source&#39;s green channel is appended to the low-order end of the target&#39;s green channel.</p></td>
+<td align="left"><p>The most-significant bit (MSB) of the source's green channel is appended to the low-order end of the target's green channel.</p></td>
 <td align="left"><p>(0x15, <strong>0x19</strong>, 0x1D) becomes</p>
 <div>
  
@@ -77,7 +77,7 @@ In the red channel, 1 0101 becomes 1010 1101. Similar changes occur in the green
 <tr class="odd">
 <td align="left"><p>5:6:5</p></td>
 <td align="left"><p>5:5:5</p></td>
-<td align="left"><p>Discard the least-significant bit (LSB) of the source&#39;s green channel.</p></td>
+<td align="left"><p>Discard the least-significant bit (LSB) of the source's green channel.</p></td>
 <td align="left"><p>(0x15, <strong>0x33</strong>, 0x1D) becomes</p>
 <div>
  

@@ -123,13 +123,6 @@
     href: creating-device-objects-in-a-filter-driver.md
   - name: "Creating Device Objects in a Bus Driver"
     href: creating-device-objects-in-a-bus-driver.md
-  - name: "WDF Device Object Macros"
-    href: wdf-device-object-macros.md
-    items: 
-    - name: "WdfDeviceResumeIdleWithTag method"
-      href: wdfdeviceresumeidlewithtag.md
-    - name: "WdfDeviceStopIdleWithTag method"
-      href: wdfdevicestopidlewithtag.md
 - name: "Power Policy Ownership"
   href: power-policy-ownership.md
   items: 

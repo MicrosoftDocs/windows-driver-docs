@@ -152,7 +152,7 @@ ms.localizationpriority: medium
     DWORD index = 0;
     CHAR *p;
 
-    // if (p[index-1] == &#39;0&#39;) causes access violation on 64-bit Windows!
+    // if (p[index-1] == '0') causes access violation on 64-bit Windows!
     ```
 
     On 32-bit machines:

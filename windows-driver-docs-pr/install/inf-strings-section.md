@@ -128,7 +128,7 @@ A = "This certificate is used to sign untested drivers that have not passed the 
 B = "This certificate and drivers signed with this certificate are intended for use in test environments only, and are not intended for use in any other context."
 C = "Vendors who distribute this certificate or drivers signed with this certificate outside a test environment may be in violation of their driver signing agreement."
 D = "Vendors who have their drivers signed with this certificate do so at their own risk." 
-E = "In particular, Microsoft assumes no liability for any damages that may result from the distribution of this certificate or drivers signed with this certificate outside the test environment described in a vendor&#39;s driver signing agreement."
+E = "In particular, Microsoft assumes no liability for any damages that may result from the distribution of this certificate or drivers signed with this certificate outside the test environment described in a vendor's driver signing agreement."
 ```
 
 ## See also

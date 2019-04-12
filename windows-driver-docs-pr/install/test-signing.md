@@ -394,7 +394,7 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
      ISAPNP\PNP0501 - Hardware ID
      *PNP*          - Hardware ID with wildcards  (* matches anything)
      @ISAPNP\*\*    - Instance ID with wildcards  (@ prefixes instance ID)
-     &#39;*PNP0501      - Hardware ID with apostrophe (&#39; prefixes literal match - matches exactly as typed, including the asterisk.)
+     '*PNP0501      - Hardware ID with apostrophe (' prefixes literal match - matches exactly as typed, including the asterisk.)
     ```
 
     After a device has been removed, to remove the driver, two commands are necessary. Use the first command with “dp_enum” switch to find the driver inf file name corresponding to the driver package installed in the computer.

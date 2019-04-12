@@ -140,7 +140,7 @@ Code Analysis for Drivers reports the following types of warnings:
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="28147-improper-use-of-default-pool-tag.md" data-raw-source="[C28147](28147-improper-use-of-default-pool-tag.md)">C28147</a></p></td>
-<td align="left"><p>warning C28147: The use of a default pool tag (&#39; kdD&#39; or &#39; mdW&#39;) for calls to this function defeats the purpose of pool tagging</p></td>
+<td align="left"><p>warning C28147: The use of a default pool tag (' kdD' or ' mdW') for calls to this function defeats the purpose of pool tagging</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="28150-function-causes-irq-level-to-be-set-above-max.md" data-raw-source="[C28150](28150-function-causes-irq-level-to-be-set-above-max.md)">C28150</a></p></td>
@@ -252,7 +252,7 @@ Code Analysis for Drivers reports the following types of warnings:
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="28615-must-call-resetstkoflw-in-except-block.md" data-raw-source="[C28615](28615-must-call-resetstkoflw-in-except-block.md)">C28615</a></p></td>
-<td align="left"><p>warning C28615: Must call _resetstkoflw in the __except() block when calling _alloca in the __try block. Don&#39;t call _resetstkoflw from inside a catch() block</p></td>
+<td align="left"><p>warning C28615: Must call _resetstkoflw in the __except() block when calling _alloca in the __try block. Don't call _resetstkoflw from inside a catch() block</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="28616-multithreaded-av-condition.md" data-raw-source="[C28616](28616-multithreaded-av-condition.md)">C28616</a></p></td>
@@ -381,7 +381,7 @@ Code Analysis for Drivers reports the following types of warnings:
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="28730-possible-null-character-assignment.md" data-raw-source="[C28730](28730-possible-null-character-assignment.md)">C28730</a></p></td>
-<td align="left"><p>warning C28730: Possible assignment of &#39;\0&#39; directly to a pointer.</p></td>
+<td align="left"><p>warning C28730: Possible assignment of '\0' directly to a pointer.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="28735-banned-crimson-api-usage.md" data-raw-source="[C28735](28735-banned-crimson-api-usage.md)">C28735</a></p></td>

@@ -190,7 +190,7 @@ Arguments:
 
     DevicePath - On successful return, the path of the device (use with CreateFile).
 
-    BufLen - The size of DevicePath&#39;s buffer, in bytes
+    BufLen - The size of DevicePath's buffer, in bytes
 
     FailureDeviceNotFound - TRUE when failure is returned due to no devices
         found with the correct device interface (device not connected, driver
@@ -292,7 +292,7 @@ Return value:
     length = requiredLength;
 
     //
-    // Get the interface&#39;s path string
+    // Get the interface's path string
     //
     bResult = SetupDiGetDeviceInterfaceDetail(deviceInfo,
                                               &interfaceData,

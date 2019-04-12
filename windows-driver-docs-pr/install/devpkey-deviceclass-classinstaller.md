@@ -36,7 +36,7 @@ The DEVPKEY_DeviceClass_ClassInstaller device property represents the class inst
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Data format</strong></p></td>
-<td align="left"><p>&quot;<em>class-installer</em>.dll,<em>class-entry-point</em>&quot;</p></td>
+<td align="left"><p>"<em>class-installer</em>.dll,<em>class-entry-point</em>"</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property access</strong></p></td>

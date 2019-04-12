@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION bug check has a value of 0x000000C9. This is the bug check code for all Driver Verifier **I/O Verification** violations.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION Parameters
 
@@ -265,7 +267,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="even">
 <td align="left"><p>0x207</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>The caller has manually copied the stack and has inadvertently copied the upper layer&#39;s completion routine. The driver should use <strong>IoCopyCurrentIrpStackLocationToNext</strong>. (IRP specified.)</p></td>
+<td align="left"><p>The caller has manually copied the stack and has inadvertently copied the upper layer's completion routine. The driver should use <strong>IoCopyCurrentIrpStackLocationToNext</strong>. (IRP specified.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x208</p></td>
@@ -320,7 +322,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x212</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>The caller has trashed or has not properly copied the IRP&#39;s stack. (IRP specified.)</p></td>
+<td align="left"><p>The caller has trashed or has not properly copied the IRP's stack. (IRP specified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x213</p></td>
@@ -400,7 +402,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x222</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A Bus Filter&#39;s IRP dispatch handler has detached upon receiving a remove IRP when the PDO is still alive. Bus Filters must clean up in <strong>FastIoDetach</strong> callbacks. (Device object, dispatch routine, and IRP specified.)</p></td>
+<td align="left"><p>A Bus Filter's IRP dispatch handler has detached upon receiving a remove IRP when the PDO is still alive. Bus Filters must clean up in <strong>FastIoDetach</strong> callbacks. (Device object, dispatch routine, and IRP specified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x223</p></td>
@@ -410,7 +412,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x224</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>An IRP dispatch handler has returned a status that is inconsistent with the IRP&#39;s <strong>IoStatus.Status</strong> field. (Dispatch handler routine, IRP, IRP&#39;s IoStatus.Status, and returned Status specified.)</p></td>
+<td align="left"><p>An IRP dispatch handler has returned a status that is inconsistent with the IRP's <strong>IoStatus.Status</strong> field. (Dispatch handler routine, IRP, IRP's IoStatus.Status, and returned Status specified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x225</p></td>
@@ -430,7 +432,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x228</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>A driver&#39;s completion routine has not marked the IRP pending if the <strong>PendingReturned</strong> field was set in the IRP passed to it. This may cause Windows to hang, especially if an error is returned by the stack. (Routine and IRP specified.)</p></td>
+<td align="left"><p>A driver's completion routine has not marked the IRP pending if the <strong>PendingReturned</strong> field was set in the IRP passed to it. This may cause Windows to hang, especially if an error is returned by the stack. (Routine and IRP specified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x229</p></td>
@@ -455,7 +457,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="even">
 <td align="left"><p>0x22D</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>The caller has completed a IRP_MJ_PNP it didn&#39;t understand instead of passing it down. (IRP specified.)</p></td>
+<td align="left"><p>The caller has completed a IRP_MJ_PNP it didn't understand instead of passing it down. (IRP specified.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x22E</p></td>
@@ -470,7 +472,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x230</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>The caller has completed an IRP_MJ_POWER it didn&#39;t understand instead of passing it down. (IRP specified.)</p></td>
+<td align="left"><p>The caller has completed an IRP_MJ_POWER it didn't understand instead of passing it down. (IRP specified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x231</p></td>
@@ -561,7 +563,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="odd">
 <td align="left"><p>0x23E</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>A driver has marked an IRP pending but didn&#39;t return STATUS_PENDING. (IRP specified.)</p></td>
+<td align="left"><p>A driver has marked an IRP pending but didn't return STATUS_PENDING. (IRP specified.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x23F</p></td>

@@ -31,7 +31,7 @@ int myInt = 50 * cos(2);
 Suppose you are writing a [**DrvAlphaBlend**](https://msdn.microsoft.com/library/windows/hardware/ff556176) function that uses the FPU. The following example demonstrates how you should save and restore the floating-point state.
 
 ```cpp
-#define DRIVER_TAG // Put your driver tag here, for example &#39;zyxD&#39;
+#define DRIVER_TAG // Put your driver tag here, for example 'zyxD'
 
 BOOL DrvAlphaBlend(...)
 {

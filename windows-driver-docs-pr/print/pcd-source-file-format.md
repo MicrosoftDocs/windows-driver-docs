@@ -87,11 +87,11 @@ Keywords are described in the following table.
 <tr class="odd">
 <td><p><strong>DeviceName</strong></p></td>
 <td><p>Quoted string representing a displayable device name (31 characters max.)</p></td>
-<td><p>&quot;HPGL/2 Plotter&quot;</p></td>
+<td><p>"HPGL/2 Plotter"</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DevicePelsDPI</strong></p></td>
-<td><p>One DWORD-sized value representing the device&#39;s effective DPI. For more information see the <strong>upDevicePelsDPI</strong> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff566484" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566484)"><strong>GDIINFO</strong></a>.</p></td>
+<td><p>One DWORD-sized value representing the device's effective DPI. For more information see the <strong>upDevicePelsDPI</strong> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff566484" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566484)"><strong>GDIINFO</strong></a>.</p></td>
 <td><p>The default is zero, causing GDI to calculate a value.</p></td>
 </tr>
 <tr class="odd">
@@ -114,7 +114,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="even">
 <td><p><strong>InitString</strong></p></td>
-<td><p>Quoted C-language string representing commands sent to the printer by the driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff556298" data-raw-source="[&lt;strong&gt;DrvStartPage&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556298)"><strong>DrvStartPage</strong></a> function.</p></td>
+<td><p>Quoted C-language string representing commands sent to the printer by the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556298" data-raw-source="[&lt;strong&gt;DrvStartPage&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556298)"><strong>DrvStartPage</strong></a> function.</p></td>
 <td><p>NULL string.</p></td>
 </tr>
 <tr class="odd">
@@ -163,7 +163,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="odd">
 <td><p><strong>PlotDPI</strong></p></td>
-<td><p>Two DWORD-sized values representing a pen plotter&#39;s <em>x</em> and <em>y</em> resolution, in dots per inch.</p></td>
+<td><p>Two DWORD-sized values representing a pen plotter's <em>x</em> and <em>y</em> resolution, in dots per inch.</p></td>
 <td><p></p>
 {1016,
 1016}</td>

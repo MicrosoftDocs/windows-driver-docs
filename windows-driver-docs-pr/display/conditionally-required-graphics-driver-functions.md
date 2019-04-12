@@ -46,7 +46,7 @@ It is more common for a printer driver than a display driver to define or draw f
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556190" data-raw-source="[&lt;strong&gt;DrvDescribePixelFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556190)"><strong>DrvDescribePixelFormat</strong></a></p></td>
 <td align="left"><p>Displays that support windows with different pixel formats on a single surface</p></td>
-<td align="left"><p>Describes a PDEV&#39;s pixel format.</p></td>
+<td align="left"><p>Describes a PDEV's pixel format.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556235" data-raw-source="[&lt;strong&gt;DrvGetTrueTypeFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556235)"><strong>DrvGetTrueTypeFile</strong></a></p></td>
@@ -106,7 +106,7 @@ It is more common for a printer driver than a display driver to define or draw f
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556285" data-raw-source="[&lt;strong&gt;DrvSetPixelFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556285)"><strong>DrvSetPixelFormat</strong></a></p></td>
 <td align="left"><p>Displays that support windows with different pixel formats on a single surface</p></td>
-<td align="left"><p>Sets a window&#39;s pixel format.</p></td>
+<td align="left"><p>Sets a window's pixel format.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556316" data-raw-source="[&lt;strong&gt;DrvStrokePath&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556316)"><strong>DrvStrokePath</strong></a></p></td>
@@ -116,7 +116,7 @@ It is more common for a printer driver than a display driver to define or draw f
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556322" data-raw-source="[&lt;strong&gt;DrvSwapBuffers&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556322)"><strong>DrvSwapBuffers</strong></a></p></td>
 <td align="left"><p>Drivers that support a pixel format with double buffering</p></td>
-<td align="left"><p>Displays contents of a surface&#39;s hidden buffer.</p></td>
+<td align="left"><p>Displays contents of a surface's hidden buffer.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557277" data-raw-source="[&lt;strong&gt;DrvTextOut&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557277)"><strong>DrvTextOut</strong></a></p></td>

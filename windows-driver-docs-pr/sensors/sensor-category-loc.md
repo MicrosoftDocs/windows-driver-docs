@@ -100,7 +100,7 @@ This category includes the following platform-defined sensor types.
 <td><span id="SENSOR_TYPE_LOCATION_LOOKUP"></span><span id="sensor_type_location_lookup"></span>
 <strong>SENSOR_TYPE_LOCATION_LOOKUP</strong>
 {3B2EAE4A-72CE-436D-96D2-3C5B8570E987}</td>
-<td><p>Lookup sensors, such as those that provide information based on the user&#39;s IP address.</p></td>
+<td><p>Lookup sensors, such as those that provide information based on the user's IP address.</p></td>
 </tr>
 <tr class="odd">
 <td><span id="SENSOR_TYPE_LOCATION_OTHER"></span><span id="sensor_type_location_other"></span>
