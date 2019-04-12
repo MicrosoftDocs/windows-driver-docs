@@ -7514,6 +7514,20 @@
       "source_path": "windows-driver-docs-pr/mobilebroadband/mobile-plans-prepaid-experience.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-device-experience",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-device-object-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/",
+      "redirect_document_id": false
+    },{
+      "source_path": "windows-driver-docs-pr/wdf/wdfdeviceresumeidlewithtag.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceresumeidlewithtag",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdfdevicestopidlewithtag.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidlewithtag",
+      "redirect_document_id": false
     }
   ]
 }
