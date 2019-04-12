@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
-ms.date: 09/18/2017
+ms.date: 04/12/2019
 ms.localizationpriority: medium
 ---
 
@@ -40,7 +40,17 @@ This table summarizes the pros and cons of the different debugging solutions ava
 
 ## TTD Availability 
 
-TTD is available on Windows 10 after installing the WinDbg Preview app from the Store.  WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, with built in support for the extensible debugger data model. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
+TTD is available on Windows 10 after installing the WinDbg Preview app from the Store.  WinDbg Preview is a modern version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, with built in support for the extensible debugger data model. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
+
+## Video Training
+
+To learn more about TTD see these videos.
+
+[Defrag Tools 185](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-185-Time-Travel-Debugging-Introduction) - Ivette and JamesP go over the basics of TTD and demo some features in WinDbg Preview
+
+[Defrag Tools 186](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-186-Time-Travel-Debugging-Advanced) - Jordi and JCAB demo more great features of TTD in WinDbg Preview
+
+[CppCon (YouTube)](https://www.youtube.com/watch?v=l1YJTg_A914) - Jordi, Ken and JamesM presented TTD in WinDbg Preview at CppCon 2017
 
 
 ## Trace file basics 
