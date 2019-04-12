@@ -216,9 +216,9 @@ If Parameter 1 has a value of 8 and Parameter 2 has a value of 6, then Parameter
 </table>
 
 ## Resolution
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
- 
 
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+ 
  
 
  
