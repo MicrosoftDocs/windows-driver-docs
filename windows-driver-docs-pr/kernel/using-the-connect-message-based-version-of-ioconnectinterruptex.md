@@ -27,12 +27,12 @@ The following code example demonstrates how to register an *InterruptMessageServ
 ```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
-// deviceExtension is a pointer to the driver&#39;s device extension. 
+// deviceExtension is a pointer to the driver's device extension. 
 //     deviceExtension->IntInfo is a PVOID.
 //     deviceExtension->IntType is a ULONG.
-// deviceInterruptService is a pointer to the driver&#39;s InterruptService routine.
-// deviceInterruptMessageService is a pointer to the driver&#39;s InterruptMessageService routine.
-// PhysicalDeviceObject is a pointer to the device&#39;s PDO. 
+// deviceInterruptService is a pointer to the driver's InterruptService routine.
+// deviceInterruptMessageService is a pointer to the driver's InterruptMessageService routine.
+// PhysicalDeviceObject is a pointer to the device's PDO. 
 // ServiceContext is a pointer to driver-specified context for the ISR.
 
 RtlZeroMemory( &params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );

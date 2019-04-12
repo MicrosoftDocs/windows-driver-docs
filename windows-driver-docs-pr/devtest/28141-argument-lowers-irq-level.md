@@ -24,7 +24,7 @@ warning C28141: The argument causes the IRQ Level to be set below the current IR
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Additional information</strong></p></td>
-<td align="left"><p>IRQL was last set to &lt;<em>IRQL</em>&gt; at line &lt;<em>line-number</em>&gt;&quot;</p></td>
+<td align="left"><p>IRQL was last set to &lt;<em>IRQL</em>&gt; at line &lt;<em>line-number</em>&gt;"</p></td>
 </tr>
 </tbody>
 </table>

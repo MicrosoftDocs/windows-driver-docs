@@ -177,7 +177,7 @@ Sender
 <td><p>0x14</p></td>
 <td><p>Bidirectional and Unidirectional</p></td>
 <td><p>Sender</p></td>
-<td><p><strong>SendNotification</strong> returns this value when the notification&#39;s type is different than the channel&#39;s type.</p></td>
+<td><p><strong>SendNotification</strong> returns this value when the notification's type is different than the channel's type.</p></td>
 </tr>
 <tr class="odd">
 <td><p>MAX_REGISTRATION_COUNT_EXCEEDED</p></td>

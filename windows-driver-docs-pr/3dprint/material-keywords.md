@@ -134,15 +134,15 @@ Each Material SHOULD specify the following child Properties.
 <td><p>Devices MAY define this Property to specify the color of the material. If specified, the Value MUST be an sRGB color conforming to the description below:</p>
 <div class="code">
 <code>cpp
-sRGBColorText = &quot;#&quot; hR hG hB hA
+sRGBColorText = "#" hR hG hB hA
 hR = hG = hB = hA = hexpair
 hexpair = hexdigit hexdigit
-hexdigit = &quot;0&quot; / &quot;1&quot; / &quot;2&quot; / &quot;3&quot; /
-           &quot;4&quot; / &quot;5&quot; / &quot;6&quot; / &quot;7&quot; /
-           &quot;8&quot; / &quot;9&quot; / &quot;A&quot; / &quot;B&quot; /
-           &quot;C&quot; / &quot;D&quot; / &quot;E&quot; / &quot;F&quot; /
-           &quot;a&quot; / &quot;b&quot; / &quot;c&quot; / &quot;d&quot; /
-           &quot;e&quot; / &quot;f&quot;</code>
+hexdigit = "0" / "1" / "2" / "3" /
+           "4" / "5" / "6" / "7" /
+           "8" / "9" / "A" / "B" /
+           "C" / "D" / "E" / "F" /
+           "a" / "b" / "c" / "d" /
+           "e" / "f"</code>
 </div>
 <p>hR, hG, hB, and hA specify the hexadecimal single-byte values of the red, green, blue, and alpha components respectively, ranging from 00 to FF. Devices MAY omit alpha (i.e. #hRhGhB), in which case alpha takes on the default value of FF (completely opaque).</p></td>
 </tr>
@@ -265,7 +265,7 @@ Job3DSupportsMaterial keyword profile
 </tr>
 <tr class="even">
 <td>Contents</td>
-<td><p>psk3d:Job3DSupportsMaterial is a QNameParamType, as described in §2.1.3.1, &quot;&lt;psf:ParameterDef&gt;&quot; in the Print Schema Specification:</p>
+<td><p>psk3d:Job3DSupportsMaterial is a QNameParamType, as described in §2.1.3.1, "&lt;psf:ParameterDef&gt;" in the Print Schema Specification:</p>
 <p><strong>Child:</strong> QNameParamType</p>
 <p><strong>Description:</strong></p>
 <p>The psf:MinLength Property Value MUST be an integer greater than or equal to 1.</p>
@@ -443,7 +443,7 @@ Job3DRaftMaterial keyword profile
 </tr>
 <tr class="even">
 <td>Contents</td>
-<td><p>psk3d:Job3DRaftMaterial is a QNameParamType, as described in §2.1.3.1, &quot;&lt;psf:ParameterDef&gt;&quot; in the Print Schema Specification:</p>
+<td><p>psk3d:Job3DRaftMaterial is a QNameParamType, as described in §2.1.3.1, "&lt;psf:ParameterDef&gt;" in the Print Schema Specification:</p>
 <p><strong>Child:</strong> QNameParamType</p>
 <p><strong>Description:</strong></p>
 <p>The psf:MinLength Property Value MUST be an integer greater than or equal to 1.</p>

@@ -32,12 +32,12 @@ The following table lists the attributes associated with the Memory feature. For
 <tbody>
 <tr class="odd">
 <td><p><em><strong>MemConfigKB</strong></p></td>
-<td><p>PAIR of numeric values indicating the total and available printer-resident memory, in kilobytes. For example, PAIR (1024, 450) indicates 1024 kilobytes total, 450 kilobytes available, with a GPD-generated option name of &quot;1024KB&quot;.</p></td>
+<td><p>PAIR of numeric values indicating the total and available printer-resident memory, in kilobytes. For example, PAIR (1024, 450) indicates 1024 kilobytes total, 450 kilobytes available, with a GPD-generated option name of "1024KB".</p></td>
 <td><p>Optional. See <a href="describing-printer-memory-configurations.md" data-raw-source="[Describing Printer Memory Configurations](describing-printer-memory-configurations.md)">Describing Printer Memory Configurations</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p></em><strong>MemConfigMB</strong></p></td>
-<td><p>PAIR of numeric values indicating the total and available printer-resident memory, in megabytes. For example, PAIR (2, 1) indicates 2 megabytes total, 1 megabyte available, with a GPD-generated option name of &quot;2MB&quot;.</p></td>
+<td><p>PAIR of numeric values indicating the total and available printer-resident memory, in megabytes. For example, PAIR (2, 1) indicates 2 megabytes total, 1 megabyte available, with a GPD-generated option name of "2MB".</p></td>
 <td><p>Optional. See <a href="describing-printer-memory-configurations.md" data-raw-source="[Describing Printer Memory Configurations](describing-printer-memory-configurations.md)">Describing Printer Memory Configurations</a>.</p></td>
 </tr>
 <tr class="odd">

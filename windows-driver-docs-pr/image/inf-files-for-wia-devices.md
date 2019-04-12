@@ -44,7 +44,7 @@ The default class installer for still image devices, *sti\_ci.dll*, recognizes a
 </tr>
 <tr class="even">
 <td><p><strong>Connection</strong></p></td>
-<td><p>For non-Plug and Play devices connected to serial or parallel ports, this can be Serial or Parallel to limit the user&#39;s choice of ports during installation.</p></td>
+<td><p>For non-Plug and Play devices connected to serial or parallel ports, this can be Serial or Parallel to limit the user's choice of ports during installation.</p></td>
 <td><p>Optional</p>
 <p>If not specified, the user can select any serial or parallel port.</p></td>
 </tr>
@@ -78,17 +78,17 @@ The default class installer for still image devices, *sti\_ci.dll*, recognizes a
 <tr class="even">
 <td><p><strong>Events</strong></p></td>
 <td><p>Identifies a vendor-supplied data section listing still image device events. Each entry in this section must have the following format:</p>
-<p><em>EventName</em><strong>=&quot;</strong><em>String</em><strong>&quot;,{</strong><em>GUID</em><strong>},</strong>App</p>
-<p><em>EventName</em> is the event&#39;s internal name, <em>String</em> is the event&#39;s display string, <em>GUID</em> is the event&#39;s GUID, and <em>App</em> specifies the imaging application to be launched when the event occurs. To launch the currently registered application, use an asterisk (<strong>*</strong>) for <em>App</em>.</p></td>
+<p><em>EventName</em><strong>="</strong><em>String</em><strong>",{</strong><em>GUID</em><strong>},</strong>App</p>
+<p><em>EventName</em> is the event's internal name, <em>String</em> is the event's display string, <em>GUID</em> is the event's GUID, and <em>App</em> specifies the imaging application to be launched when the event occurs. To launch the currently registered application, use an asterisk (<strong>*</strong>) for <em>App</em>.</p></td>
 <td><p>Required</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PortSelect</strong></p></td>
-<td><p>If the device installation does not require a port selection page, a value of &quot;no&quot; causes that page to be skipped. This value also causes the <strong>CreateFileName</strong> entry value (see the <strong>Note</strong> on <strong>CreateFileName</strong> and <strong>PortSelect</strong> following this table) to be automatically set to AUTO.</p>
+<td><p>If the device installation does not require a port selection page, a value of "no" causes that page to be skipped. This value also causes the <strong>CreateFileName</strong> entry value (see the <strong>Note</strong> on <strong>CreateFileName</strong> and <strong>PortSelect</strong> following this table) to be automatically set to AUTO.</p>
 <p>A value of Message1 causes a system-supplied message to be displayed, and sets the <strong>CreateFileName</strong> entry value to AUTO.</p>
 <p>Applies to both scanners and cameras that require manual installation.</p></td>
 <td><p>Optional</p>
-<p>Note that for Plug and Play devices, <strong>PortSelect</strong> is ignored, but the device still must have the <strong>CreateFileName</strong> entry value set to AUTO in order for WIA to load the device. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546320" data-raw-source="[&lt;strong&gt;INF AddReg Directive&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546320)"><strong>INF AddReg Directive</strong></a> to add this entry to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547344" data-raw-source="[&lt;strong&gt;INF DDInstall Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547344)"><strong>INF DDInstall Section</strong></a> of the device&#39;s INF file.</p></td>
+<p>Note that for Plug and Play devices, <strong>PortSelect</strong> is ignored, but the device still must have the <strong>CreateFileName</strong> entry value set to AUTO in order for WIA to load the device. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546320" data-raw-source="[&lt;strong&gt;INF AddReg Directive&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546320)"><strong>INF AddReg Directive</strong></a> to add this entry to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547344" data-raw-source="[&lt;strong&gt;INF DDInstall Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547344)"><strong>INF DDInstall Section</strong></a> of the device's INF file.</p></td>
 </tr>
 </tbody>
 </table>

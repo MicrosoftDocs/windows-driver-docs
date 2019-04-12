@@ -45,7 +45,7 @@ HRESULT WpdCapabilities::OnGetSupportedFormats(
     {
         PROPVARIANT pv = {0};
         PropVariantInit(&pv);
-        // Don&#39;t call PropVariantClear, since we did not allocate the memory for these GUIDs
+        // Don't call PropVariantClear, since we did not allocate the memory for these GUIDs
 
         if ((guidContentType   == WPD_CONTENT_TYPE_DOCUMENT) ||
             ((guidContentType  == WPD_CONTENT_TYPE_ALL)))

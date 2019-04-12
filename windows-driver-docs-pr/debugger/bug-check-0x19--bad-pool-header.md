@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The BAD\_POOL\_HEADER bug check has a value of 0x00000019. This indicates that a pool header is corrupt.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## BAD\_POOL\_HEADER Parameters
 
@@ -71,7 +73,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>One incorrectly-calculated entry</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>The bad entry that caused the miscalculation</p></td>
-<td align="left"><p>The pool block header&#39;s previous size is too large.</p></td>
+<td align="left"><p>The pool block header's previous size is too large.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x7</p></td>
@@ -152,7 +154,7 @@ Use the steps described in [**Blue Screen Data**](blue-screen-data.md) to gather
 
 **Driver Verifier**
 
-Driver Verifier is a tool that runs in real time to examine the behavior of drivers. If it see errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifer* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448).
+Driver Verifier is a tool that runs in real time to examine the behavior of drivers. If it see errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifier* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448).
 
 **Windows Memory Diagnostics**
 

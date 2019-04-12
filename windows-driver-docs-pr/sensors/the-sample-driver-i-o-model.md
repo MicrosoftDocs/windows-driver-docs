@@ -136,7 +136,7 @@ Name(RBUF, ResourceTemplate()
 {
    //
     // Sample I2C and GPIO resources. Modify to match your
-    // platform&#39;s underlying controllers and connections.
+    // platform's underlying controllers and connections.
     // \_SB.I2C and \_SB.GPIO are paths to predefined I2C
     // and GPIO controller instances.
     //

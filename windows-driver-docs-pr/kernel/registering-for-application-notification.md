@@ -66,7 +66,7 @@ MemoryFilter.dbcc_devicetype =
 MemoryFilter.dbcc_classguid =
   GUID_DEVICE_MEMORY;
 
-// Register the application&#39;s window to receive
+// Register the application's window to receive
 // WM_DEVICECHANGE messages for memory events.
 MemoryNotifyHandle =
   RegisterDeviceNotification(

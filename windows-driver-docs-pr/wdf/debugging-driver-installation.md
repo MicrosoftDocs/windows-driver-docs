@@ -45,7 +45,7 @@ WdfCoInstaller: DIF_INSTALLDEVICE: Coinstaller version: 1.9.7100
 WdfCoInstaller: DIF_INSTALLDEVICE: KMDF in-memory version: 1.7.6000
 WdfCoInstaller: DIF_INSTALLDEVICE: KMDF on-disk version: 1.7.6000
 WdfCoInstaller: Service Wdf01000 is running
-WdfCoInstaller: DIF_INSTALLDEVICE: Reboot is required, because the in-memory KMDF version is older than the coinstaller&#39;s version.
+WdfCoInstaller: DIF_INSTALLDEVICE: Reboot is required, because the in-memory KMDF version is older than the coinstaller's version.
 WdfCoInstaller: DIF_INSTALLDEVICE: Update is required, because the on-disk KMDF version is older than the coinstaller
 WdfCoInstaller: VerifyMSRoot: exit: error(0) The operation completed successfully.
 WdfCoInstaller: Invoking "D:\Windows\system32\wusa.exe "D:\Windows\Temp\WdfTemp\Microsoft Kernel-Mode Driver Framework Install-v1.9-Vista.msu" /quiet /norestart".

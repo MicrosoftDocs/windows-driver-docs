@@ -10,6 +10,12 @@ ms.localizationpriority: medium
 # Microsoft public symbol server
 
 
+**Server Status:** No known issues :white_check_mark: <br> 
+The Microsoft public symbol server is fully operational. <br>
+Please report any known issues to [windbgfb@microsoft.com](mailto:windbgfb@microsoft.com). 
+
+---
+
 The Microsoft symbol server makes Windows debugger symbols publicly available.
 
 You can refer directly to the public symbol server in your symbol path in the following manner:

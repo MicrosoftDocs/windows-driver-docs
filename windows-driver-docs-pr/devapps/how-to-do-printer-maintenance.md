@@ -51,7 +51,7 @@ This example is from the `OnNavigatedTo` method of the **DeviceMaintenance.xaml.
 ```CSharp
 string defaultBidiQuery =
     "<bidi:Set xmlns:bidi=\"http://schemas.microsoft.com/windows/2005/03/printing/bidi\">\r\n" +
-    "    <Query schema=&#39;\\Printer.Maintenance:CleanHead&#39;>\r\n" +
+    "    <Query schema='\\Printer.Maintenance:CleanHead'>\r\n" +
     "        <BIDI_BOOL>false</BIDI_BOOL>\r\n" +
     "    </Query>\r\n" +
     "</bidi:Set>";
@@ -71,7 +71,7 @@ private async void EnumeratePrinters_Click(object sender, RoutedEventArgs e)
     {
         rootPage.NotifyUser("Enumerating printers. Please wait", NotifyType.StatusMessage);
 
-        // Retrieve the running app&#39;s package family name, and enumerate associated printers.
+        // Retrieve the running app's package family name, and enumerate associated printers.
         string currentPackageFamilyName = Windows.ApplicationModel.Package.Current.Id.FamilyName;
 
         // Enumerate associated printers.
@@ -120,10 +120,10 @@ private void SendBidiRequest_Click(object sender, RoutedEventArgs e)
         Object comComtext = Windows.Devices.Printers.Extensions.PrintExtensionContext.FromDeviceId(queue.DeviceId);
         PrinterExtensionContext context = new PrinterExtensionContext(comComtext);
 
-        // Create an instance of the callback object, and perform an asynchronous &#39;bidi set&#39; operation.
+        // Create an instance of the callback object, and perform an asynchronous 'bidi set' operation.
         PrinterBidiSetRequestCallback callback = new PrinterBidiSetRequestCallback();
 
-        // Add an event handler to the callback object&#39;s OnBidiResponseReceived event.
+        // Add an event handler to the callback object's OnBidiResponseReceived event.
         // The event handler will be invoked once the Bidi response is received.
         callback.OnBidiResponseReceived += OnBidiResponseReceived;
 
@@ -131,7 +131,7 @@ private void SendBidiRequest_Click(object sender, RoutedEventArgs e)
         IPrinterExtensionAsyncOperation operationContext
             = context.Queue.SendBidiSetRequestAsync(BidiQueryInput.Text, callback);
 
-        // Note: The &#39;operationContext&#39; object can be used to cancel the operation if required.
+        // Note: The 'operationContext' object can be used to cancel the operation if required.
     }
     catch (Exception exception)
     {
@@ -172,7 +172,7 @@ internal class PrinterBidiSetRequestCallback : IPrinterBidiSetRequestCallback
     }
 
     /// <summary>
-    /// This event will be invoked when the Bidi &#39;set&#39; response is received.
+    /// This event will be invoked when the Bidi 'set' response is received.
     /// </summary>
     public event EventHandler<string> OnBidiResponseReceived;
 }

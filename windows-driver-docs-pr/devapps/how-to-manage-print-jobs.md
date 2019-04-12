@@ -55,7 +55,7 @@ private async void EnumeratePrinters_Click(object sender, RoutedEventArgs e)
     {
         rootPage.NotifyUser("Enumerating printers. Please wait", NotifyType.StatusMessage);
 
-        // Retrieve the running app&#39;s package family name, and enumerate associated printers.
+        // Retrieve the running app's package family name, and enumerate associated printers.
         string currentPackageFamilyName = Windows.ApplicationModel.Package.Current.Id.FamilyName;
 
         // Enumerate associated printers.

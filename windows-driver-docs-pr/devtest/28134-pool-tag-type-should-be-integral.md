@@ -24,7 +24,7 @@ warning C28134: The type of a pool tag should be integral, not a string or strin
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Additional information</strong></p></td>
-<td align="left"><p>A pool tag name should be a character literal using single quotation marks (&#39;gaT_&#39;), not a string in double quotation marks. It is normally in reverse byte order.</p></td>
+<td align="left"><p>A pool tag name should be a character literal using single quotation marks ('gaT_'), not a string in double quotation marks. It is normally in reverse byte order.</p></td>
 </tr>
 </tbody>
 </table>
@@ -44,7 +44,7 @@ p = ExAllocatePoolWithTag(NonPagedPool, 30, "_Tag");
 The following code example avoids this warning.
 
 ```
-p = ExAllocatePoolWithTag(NonPagedPool, 30, &#39;gaT_&#39;);
+p = ExAllocatePoolWithTag(NonPagedPool, 30, 'gaT_');
 ```
 
  

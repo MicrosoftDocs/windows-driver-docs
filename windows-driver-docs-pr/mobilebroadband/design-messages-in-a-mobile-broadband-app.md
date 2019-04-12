@@ -31,7 +31,7 @@ The following table shows some example operator messages and alerts.
 <tbody>
 <tr class="odd">
 <td><p>International roaming</p></td>
-<td><p>Welcome to the UK. For $5 per day you have 25 MB of data, and then it&#39;s $1 per 1 MB. SMS is $0.49 per msg. Learn more at www.contoso.com/rates/uk.</p></td>
+<td><p>Welcome to the UK. For $5 per day you have 25 MB of data, and then it's $1 per 1 MB. SMS is $0.49 per msg. Learn more at www.contoso.com/rates/uk.</p></td>
 </tr>
 <tr class="even">
 <td><p>Data usage overage</p></td>

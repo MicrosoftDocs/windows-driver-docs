@@ -948,7 +948,7 @@ If the Custom Media Source does not implement the **IMFActivate** and **IMFAttri
 
 ## Encoded Camera Stream
 
-A Custom Media Source may expose compressed media types (HEVC or H264 elementary streams) and the OS pipeline fully supports the source and configuration of the encoding parameters on the Custom Media Source (the encoding parameters are communicated through the [ICodecAPI](https://docs.microsoft.com/windows/desktop/api/strmif/nn-strmif-icodecapi), which is routed as an [IKsControl::KsProperty](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nf-ksproxy-ikscontrol-ksproperty) call):
+A Custom Media Source may expose compressed media types (HEVC or H264 elementary streams) and the OS pipeline fully supports the source and configuration of the encoding parameters on the Custom Media Source (the encoding parameters are communicated through the [ICodecAPI](https://docs.microsoft.com/previous-versions/windows/desktop/api/strmif/nn-strmif-icodecapi), which is routed as an [IKsControl::KsProperty](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nf-ksproxy-ikscontrol-ksproperty) call):
 
 ```cpp
 // IKsControl methods

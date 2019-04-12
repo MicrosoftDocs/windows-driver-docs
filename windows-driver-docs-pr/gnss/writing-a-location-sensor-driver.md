@@ -8,12 +8,11 @@ ms.localizationpriority: medium
 
 # Writing a location sensor driver for Windows 8.1
 
-
 This section provides specific guidance for writing drivers for devices that provide location data. In addition to the information that is contained in this section, location driver authors must also understand and apply the information that is provided in [Writing a Sensor Device Driver](https://msdn.microsoft.com/library/windows/hardware/ff545927).
 
 The Sensor and Location Platform provides the Windows Location API to enable software developers to add location features to their programs easily. If you are writing a driver for a location sensor, you must understand how to make the driver compatible with the Location API and follow the guidelines in [Location Driver Guidelines for Power and Performance](location-driver-guidelines-for-power-and-performance.md).
 
-### <a href="" id="windows-logo-program-requirements"></a>Windows Hardware Certification Program requirements
+## Windows Hardware Certification Program requirements
 
 The Windows Hardware Certification Program enables hardware manufacturers to receive certification that their devices meet the required standards for working with Windows. The certification program describes the requirements for location sensors and other types of sensors. You should make your location sensor driver comply with all the certification program requirements. These requirements include the following:
 
@@ -21,9 +20,9 @@ The Windows Hardware Certification Program enables hardware manufacturers to rec
 
 -   Location sensors must support the required data fields for at least one built-in data report type.
 
-Generally, the recommendations in this WDK documentation match the Certification Program requirements. However, you must review the official Certification Program documentation when you create sensor drivers that you intend to submit for approval. For more information about the Windows Hardware Certification Program, see the [Windows Hardware Developer Central](https://go.microsoft.com/fwlink/p/?linkid=8772) website.
+Generally, the recommendations in this WDK documentation match the Certification Program requirements. However, you must review the official Certification Program documentation when you create sensor drivers that you intend to submit for approval. For more information about the Windows Hardware Certification Program, see the [Windows Hardware Developer Central](https://developer.microsoft.com/en-us/windows/hardware) website.
 
-### Location API requirements
+## Location API requirements
 
 You create drivers for location sensors by using the same driver model and class extension as for any other category of sensor. At a minimum, to work as a location sensor, the driver must:
 
@@ -43,7 +42,7 @@ You create drivers for location sensors by using the same driver model and class
 
 The rest of this section describes these minimum requirements
 
-### Identifying the category
+## Identifying the category
 
 When it is called through [**ISensorDriver::OnGetProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545610), set the **WPD\_FUNCTIONAL\_OBJECT\_CATEGORY** property value to **SENSOR\_CATEGORY\_LOCATION**. The following code example shows how to set this constant through a pointer to [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) named pValues.
 
@@ -51,7 +50,7 @@ When it is called through [**ISensorDriver::OnGetProperties**](https://msdn.micr
 hr = pValues->SetGuidValue(WPD_FUNCTIONAL_OBJECT_CATEGORY, SENSOR_CATEGORY_LOCATION);
 ```
 
-### Setting the location sensor type
+## Setting the location sensor type
 
 When it is called through [**ISensorDriver::OnGetProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545610), set the **SENSOR\_PROPERTY\_TYPE** property value to the correct value. The following code example shows how to set the sensor type by using the **SENSOR\_TYPE\_LOCATION\_GPS** constant through a pointer to [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) named pValues.
 
@@ -59,7 +58,7 @@ When it is called through [**ISensorDriver::OnGetProperties**](https://msdn.micr
 hr = pValues->SetGuidValue(SENSOR_PROPERTY_TYPE, SENSOR_TYPE_LOCATION_GPS);
 ```
 
-### Identifying the supported data fields
+## Identifying the supported data fields
 
 The Location API defines two kinds of location reports. These are objects that organize location data. LatLong reports contain latitude, longitude, and altitude data fields, together with data fields that contain error range information. Civic address reports contain street address data fields, such as city and postal code. Your location driver must support the required data fields for at least one of these two data report types.
 
@@ -81,7 +80,7 @@ When they are called through [**ISensorDriver::OnGetSupportedDataFields**](https
 pKeyCollection->Add(SENSOR_DATA_TYPE_POSTALCODE);
 ```
 
-### Support the required properties
+## Support the required properties
 
 Like other sensor drivers, location drivers provide information about the sensor itself through a set of properties. The Windows Hardware Certification Program specifies the minimum required set of properties that a location sensor must support. For more information about sensor properties, their meanings, and which properties are required for sensor drivers, see [**Sensor Properties**](https://msdn.microsoft.com/library/windows/hardware/ff545859). The following list contains the required properties:
 
@@ -107,7 +106,7 @@ Like other sensor drivers, location drivers provide information about the sensor
 
 -   SENSOR\_PROPERTY\_LOCATION\_DESIRED\_ACCURACY
 
-### Providing data
+## Providing data
 
 Location drivers provide data through the same mechanisms as other sensor drivers. That is, the sensor class extension calls the driver through [**ISensorDriver::OnGetDataFields**](https://msdn.microsoft.com/library/windows/hardware/ff545607) and the driver returns the values through the *ppDataValues* parameter.
 
@@ -198,9 +197,7 @@ The following table describes the [sensor data fields](https://msdn.microsoft.co
 </tbody>
 </table>
 
- 
-
-### Managing state transitions
+## Managing state transitions
 
 At any time, a sensor driver can be in one of a number of states. Sensor states are defined by the [**SensorState**](https://msdn.microsoft.com/library/windows/hardware/ff545708) enumeration. To work correctly with the Location API, location sensors must follow these rules for handling state transitions.
 
@@ -268,7 +265,7 @@ The various sensor states for location sensor drivers are described in the follo
 
 The following diagram shows how state transitions may occur in a location sensor.![state transitions](images/gps-state-transitions.png)
 
-### Raising data-updated and state-changed events
+## Raising data-updated and state-changed events
 
 The Location API, requires location sensors, such as GPS sensors, to raise events that provide data and state-change information. For more information about raising sensor events, see [About Sensor Driver Events](https://msdn.microsoft.com/library/windows/hardware/ff545385).
 
@@ -292,7 +289,5 @@ When raising these events, location drivers must follow these rules:
 -   You might not have current data for the required data fields, such as when a GPS sensor has lost its fix. In this case, you might still want to provide notifications about updates to extended data fields, such as SENSOR\_DATA\_TYPE\_NMEA\_SENTENCE. To provide such notifications, you must use a custom event type and raise only the custom event until data for the required data fields becomes available. For information about how to define custom types, see [Defining Custom Values for Constants](https://msdn.microsoft.com/library/windows/hardware/ff545437).
 
 ## Related topics
+
 [Location Driver Guidelines for Power and Performance](location-driver-guidelines-for-power-and-performance.md)  
-
-
-

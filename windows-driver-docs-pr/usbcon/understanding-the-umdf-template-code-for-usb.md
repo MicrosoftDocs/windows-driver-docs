@@ -804,7 +804,7 @@ CMyIoQueue::OnDeviceIoControl(
     TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_QUEUE, "%!FUNC! Entry");
 
     if (m_Device == NULL) {
-        // We don&#39;t have pointer to device object
+        // We don't have pointer to device object
         TraceEvents(TRACE_LEVEL_ERROR, 
                    TRACE_QUEUE, 
                    "%!FUNC!NULL pointer to device object.");

@@ -68,6 +68,8 @@ The following sections describe the Windows Display Driver Model (WDDM):
 
 [Display Samples](display-samples.md)
 
+[Container Support for non-DX APIs](container-non-dx.md)
+
 **Note**  WDDM drivers do not directly use services of the Windows Graphics Device Interface (GDI) engine; therefore, the [GDI](gdi.md) section is not relevant to writing display drivers for the WDDM driver model.
 
  

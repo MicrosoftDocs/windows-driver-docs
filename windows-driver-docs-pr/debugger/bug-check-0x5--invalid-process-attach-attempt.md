@@ -20,7 +20,9 @@ The INVALID\_PROCESS\_ATTACH\_ATTEMPT bug check has a value of 0x00000005. This 
 
 This bug check appears very infrequently.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## INVALID\_PROCESS\_ATTACH\_ATTEMPT Parameters
 
@@ -47,7 +49,7 @@ This bug check appears very infrequently.
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
-<td align="left"><p>The value of the thread&#39;s APC state index.</p></td>
+<td align="left"><p>The value of the thread's APC state index.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>

@@ -30,7 +30,7 @@ The user-mode display driver should only examine the most significant 16 bits of
 #define D3D10_1_DDI_MINOR_VERSION 2
 #define D3D10_1_DDI_INTERFACE_VERSION ((D3D10_DDI_MAJOR_VERSION << 16) | D3D10_1_DDI_MINOR_VERSION)
 #define D3D10_1_DDI_BUILD_VERSION 1
-// Note: d3d10_1 doesn&#39;t currently ship on vista gold. // This definition is included for completeness in the 
+// Note: d3d10_1 doesn't currently ship on vista gold. // This definition is included for completeness in the 
 // event that it does at some point in the future:
 #define D3D10_1_DDI_VERSION_VISTA_GOLD                          ( ( 1 << 16 ) | 6000 )
 #define D3D10_1_DDI_VERSION_VISTA_SP1                           ( ( 1 << 16 ) | 6008 )
