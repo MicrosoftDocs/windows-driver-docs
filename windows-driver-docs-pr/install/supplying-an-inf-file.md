@@ -32,7 +32,7 @@ Starting with Windows 2000, you can use a single INF file for installation on al
 
 A good way to create an INF file for your driver is to modify one of the samples that the WDK provides. Most of the WDK sample drivers include INF files in the same directory as the sample driver.
 
-For more information about INF files, see [Creating an INF File](overview-of-inf-files.md), the documentation for [ChkINF](https://msdn.microsoft.com/library/windows/hardware/ff543461), the device-specific documentation in the WDK, and the INF files that are supplied with sample drivers for devices similar to yours.
+For more information about INF files, see [Creating an INF File](overview-of-inf-files.md), the documentation for [InfVerif](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/infverif), the device-specific documentation in the WDK, and the INF files that are supplied with sample drivers for devices similar to yours.
 
  
 
