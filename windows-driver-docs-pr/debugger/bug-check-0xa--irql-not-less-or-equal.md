@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicates that Microsoft Windows or a kernel-mode driver accessed paged memory at an invalid address while at a raised interrupt request level (IRQL). This is typically either a bad pointer or a pageability problem.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## IRQL\_NOT\_LESS\_OR\_EQUAL Parameters
 
@@ -44,7 +46,7 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 <td align="left"><p>2</p></td>
 <td align="left"><p>IRQL at time of the fault.</p>
 <p>VALUES:</p>
-<p>2 : The IRQL was DISPATCH_LEVEL at the time of the fault. END_VALUES</p></td>
+<p>2 : The IRQL was DISPATCH_LEVEL at the time of the fault.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
@@ -76,8 +78,6 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 </tbody>
 </table>
 
- 
-
 Cause
 -----
 
@@ -85,15 +85,21 @@ Bug check 0xA is usually caused by kernel mode device drivers using improper add
 
 This bug check indicates that an attempt was made to access an invalid address while at a raised interrupt request level (IRQL). This is either a bad memory pointer or a pageability problem with the device driver code.
 
-1. If parameter 1 is less than 0x1000, then this is likely a NULL pointer dereference.
-2. If !pool reports that parameter 1 is Paged pool, then the IRQL is too high to access this data. Run at a lower IRQL or allocate the data in NonPagedPool.
-3. If parameter 3 indicates that this was an attempt to execute pageable code, then the IRQL is too high to call this function. Run at a lower IRQL or do not mark the code as pageable.
-4. Otherwise, this may be a bad pointer, possibly caused by use-after-free or bit-flipping. Investigate the validity of parameter 1 with [**!pte**](-pte.md), [**!address**](-address.md), and [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md).
+Here are some general guidelines that can be used to catergorize the type of coding error tha caused the bug check.
+
+- If parameter 1 is less than 0x1000, then this is likely a NULL pointer dereference.
+
+- If [!pool](-pool.md) reports that parameter 1 is Paged pool (or other types of pageable memory), then the IRQL is too high to access this data. Run at a lower IRQL or allocate the data in NonPagedPool.
+
+- If parameter 3 indicates that this was an attempt to execute pageable code, then the IRQL is too high to call this function. Run at a lower IRQL or do not mark the code as pageable.
+
+- Otherwise, this may be a bad pointer, possibly caused by use-after-free or bit-flipping. Investigate the validity of parameter 1 with [**!pte**](-pte.md), [**!address**](-address.md), and [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md).
+
 
 Resolution
 ----------
 
-If a kernel debugger is available, obtain a stack trace: the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) commands to view the call stack.
+If a kernel debugger is available, obtain a stack trace: the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) commands to view the call stack.
 
 **Gather Information**
 
@@ -157,11 +163,3 @@ If you encounter bug check 0xA while upgrading to a later version of Windows, th
 **Resolving an antivirus software problem:** Disable the program and confirm that this resolves the error. If it does, contact the manufacturer of the program about a possible update.
 
 For general blue screen troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
-
- 
-
- 
-
-
-
-
