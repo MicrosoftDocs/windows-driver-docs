@@ -13,7 +13,6 @@ ms.localizationpriority: medium
 
 
 
-
 INF files have many common parts and follow a single set of syntax rules. However, they are also as different as the variety of devices that are supported by Microsoft Windows. When you write an INF file, refer to the following sources of information:
 
 -   This section and the [INF File Sections and Directives](inf-file-sections-and-directives.md) reference material.
@@ -38,8 +37,11 @@ Beginning with Windows 8, INF file names are not limited to eight characters, r
 
 Do not arbitrarily modify the time stamps of your INF files, as a version control mechanism. Version control of INF files should be based on a date and version number that is specified in an [**INF Version section**](inf-version-section.md).
 
- 
+## Best Practices for Naming and Versioning Your INF File
 
+- INF names should be named in a way that reduces the chance of conflicts with INFs from other vendors.  For example, the INF name could include in it, either as a prefix or a suffix, an abbreviation of your company name.
+- If you have two different variants of the same driver package differing in aspects such as branding strings, settings, etc., those two driver packages should have unique names.
+- Each time you update an INF or any file the INF references, you should update the date and version in the INF.
  
 
 

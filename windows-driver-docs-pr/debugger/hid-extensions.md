@@ -47,7 +47,7 @@ To start debugging a HID issue, enter the [**!hidtree**](-hidkd-hidtree.md) comm
 </tr>
 <tr class="even">
 <td align="left"><p><strong><a href="-hidkd-hidtree.md" data-raw-source="[!hidkd.hidtree](-hidkd-hidtree.md)">!hidkd.hidtree</a></strong></p></td>
-<td align="left"><p>The <strong><a href="-hidkd-hidtree.md" data-raw-source="[!hidkd.hidtree](-hidkd-hidtree.md)">!hidkd.hidtree</a></strong> command displays a list of all device nodes that have a HID function driver along with their child nodes. The child nodes have a physical device object (PDO) that was created by the parent node&#39;s HID function driver.</p></td>
+<td align="left"><p>The <strong><a href="-hidkd-hidtree.md" data-raw-source="[!hidkd.hidtree](-hidkd-hidtree.md)">!hidkd.hidtree</a></strong> command displays a list of all device nodes that have a HID function driver along with their child nodes. The child nodes have a physical device object (PDO) that was created by the parent node's HID function driver.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong><a href="-hidkd-hidppd.md" data-raw-source="[!hidkd.hidppd](-hidkd-hidppd.md)">!hidkd.hidppd</a></strong></p></td>

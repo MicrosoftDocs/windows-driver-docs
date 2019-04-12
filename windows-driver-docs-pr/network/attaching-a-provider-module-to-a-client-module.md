@@ -56,7 +56,7 @@ typedef struct EXNPI_CLIENT_CHARACTERISTICS_
 typedef struct EXNPI_CLIENT_DISPATCH_ {
   .
   . // NPI-specific dispatch table of function pointers that
-  . // point to a client module&#39;s NPI callback functions.
+  . // point to a client module's NPI callback functions.
   .
 } EXNPI_CLIENT_DISPATCH, *PEXNPI_CLIENT_DISPATCH;
 
@@ -64,7 +64,7 @@ typedef struct EXNPI_CLIENT_DISPATCH_ {
 typedef struct EXNPI_PROVIDER_DISPATCH_ {
   .
   . // NPI-specific dispatch table of function pointers that
-  . // point to a provider module&#39;s NPI functions.
+  . // point to a provider module's NPI functions.
   .
 } EXNPI_PROVIDER_DISPATCH, *PEXNPI_PROVIDER_DISPATCH;
 ```
@@ -73,7 +73,7 @@ The following code example shows how a provider module that is registered as a p
 
 ```C++
 // Context structure for the provider
-// module&#39;s binding to a client module
+// module's binding to a client module
 typedef struct PROVIDER_BINDING_CONTEXT_ {
   HANDLE NmrBindingHandle;
   PVOID ClientBindingContext;
@@ -84,13 +84,13 @@ typedef struct PROVIDER_BINDING_CONTEXT_ {
 } PROVIDER_BINDING_CONTEXT, *PPROVIDER_BINDING_CONTEXT;
 
 // Pool tag used for allocating the binding context
-#define BINDING_CONTEXT_POOL_TAG &#39;tpcb&#39;
+#define BINDING_CONTEXT_POOL_TAG 'tpcb'
 
-// Structure for the provider&#39;s dispatch table
+// Structure for the provider's dispatch table
 const EXNPI_PROVIDER_DISPATCH Dispatch = {
   .
   . // Function pointers to the provider
-  . // module&#39;s NPI functions
+  . // module's NPI functions
   .
 };
 
@@ -120,8 +120,8 @@ NTSTATUS
     return STATUS_INVALID_PARAMETER;
   }
 
-  // Get pointers to the client module&#39;s identification structure
-  // and the client module&#39;s NPI-specific characteristics structure
+  // Get pointers to the client module's identification structure
+  // and the client module's NPI-specific characteristics structure
   ClientModuleId = ClientRegistrationInstance->ModuleId;
   ClientNpiSpecificCharacteristics =
     (PEXNPI_CLIENT_CHARACTERISTICS)
@@ -143,7 +143,7 @@ NTSTATUS
     return STATUS_NOINTERFACE;
   }
 
-  // Allocate memory for the provider module&#39;s
+  // Allocate memory for the provider module's
   // binding context structure
   BindingContext =
     (PPROVIDER_BINDING_CONTEXT)

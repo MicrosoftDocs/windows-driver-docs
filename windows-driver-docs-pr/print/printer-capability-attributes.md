@@ -88,7 +88,7 @@ AFTER_FF - After the CmdFF command.</td>
 </tr>
 <tr class="odd">
 <td><p></em><strong>TextCaps</strong></p></td>
-<td><p>LIST of constants indicating the printer&#39;s text capabilities. Can consist of one or more of the TC_<em>xxx</em> flags described in the Microosft Windows SDK documentation&#39;s description of <strong>GetDeviceCaps</strong>.</p></td>
+<td><p>LIST of constants indicating the printer's text capabilities. Can consist of one or more of the TC_<em>xxx</em> flags described in the Microosft Windows SDK documentation's description of <strong>GetDeviceCaps</strong>.</p></td>
 <td><p>Optional. If not specified, Unidrv assumes no text capabilities are supported.</p></td>
 </tr>
 </tbody>

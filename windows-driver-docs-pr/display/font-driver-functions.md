@@ -50,7 +50,7 @@ In addition to the functions described in the previous topics, the following tab
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556267" data-raw-source="[&lt;strong&gt;DrvQueryGlyphAttrs&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556267)"><strong>DrvQueryGlyphAttrs</strong></a></p></td>
-<td align="left"><p>Returns information about a font&#39;s glyphs.</p></td>
+<td align="left"><p>Returns information about a font's glyphs.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557287" data-raw-source="[&lt;strong&gt;DrvUnloadFontFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557287)"><strong>DrvUnloadFontFile</strong></a></p></td>

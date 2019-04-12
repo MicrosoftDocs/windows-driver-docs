@@ -35,7 +35,7 @@ The following table lists the color attributes.
 <tbody>
 <tr class="odd">
 <td><p><strong><em>ChangeColorModeOnDoc?</strong></p></td>
-<td><p><strong>TRUE</strong> or <strong>FALSE</strong>. Indicates whether a printer&#39;s color mode can be changed between pages of a document without side effects.</p></td>
+<td><p><strong>TRUE</strong> or <strong>FALSE</strong>. Indicates whether a printer's color mode can be changed between pages of a document without side effects.</p></td>
 <td><p>Optional. If not specified, the default value is <strong>TRUE</strong>. Unidrv uses this value to optimize printing speed. For additional information, see Note following this table.</p></td>
 </tr>
 <tr class="even">

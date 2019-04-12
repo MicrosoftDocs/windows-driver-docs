@@ -23,7 +23,7 @@ The following code example illustrates the technique:
 ```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
-// deviceExtension is a pointer to the driver&#39;s device extension. 
+// deviceExtension is a pointer to the driver's device extension. 
 //     deviceExtension->MessageUsed is a BOOLEAN.
 
 RtlZeroMemory( &params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );
@@ -39,7 +39,7 @@ if ( NT_SUCCESS(status) ) {
 } else {
     // Check to see if we are running on an operating system prior to Windows Vista.
     if (params.Version == CONNECT_FULLY_SPECIFIED) {
-        devExt->MessageUsed = FALSE;  // We&#39;re not using message-signaled interrupts.
+        devExt->MessageUsed = FALSE;  // We're not using message-signaled interrupts.
  
         // Set members of params.FullySpecified here.
  

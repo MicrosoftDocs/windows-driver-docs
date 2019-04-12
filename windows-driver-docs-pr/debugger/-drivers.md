@@ -96,11 +96,11 @@ An explanation of this command's display is given in the following table:
 </tr>
 <tr class="odd">
 <td align="left"><p>Resident</p></td>
-<td align="left"><p>(Only when Flag 0x1 or 0x2 is used) The amount of the driver&#39;s memory that actually resides in physical memory.</p></td>
+<td align="left"><p>(Only when Flag 0x1 or 0x2 is used) The amount of the driver's memory that actually resides in physical memory.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Standby</p></td>
-<td align="left"><p>(Only when Flag 0x1 or 0x2 is used) The amount of the driver&#39;s memory that is on standby.</p></td>
+<td align="left"><p>(Only when Flag 0x1 or 0x2 is used) The amount of the driver's memory that is on standby.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Loader Entry</p></td>

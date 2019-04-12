@@ -97,7 +97,7 @@ The following is a list of TX operations and offloads.
 <td align="left"><p>Encryption</p></td>
 <td align="left"><p>Encrypt the frame contents using the security type and security key specified for the recipient (or sender, for multicast frames). Add security encapsulation where applicable.</p></td>
 <td align="left"><p>Target</p></td>
-<td align="left"><p>For systems supporting FIPS, the encryption is done within the host software. The target&#39;s encryption is bypassed.</p></td>
+<td align="left"><p>For systems supporting FIPS, the encryption is done within the host software. The target's encryption is bypassed.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>A-MPDU aggregation</p></td>

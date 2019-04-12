@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000008E. This bug check indicates that a kernel-mode application generated an exception that the error handler did not catch.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED Parameters
 
@@ -74,7 +76,7 @@ For a complete list of exception codes, see the Ntstatus.h file that is located 
 Resolution
 ----------
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
 If you are not equipped to debug this problem, you should use some basic troubleshooting techniques:
 
 -   Make sure you have enough disk space.

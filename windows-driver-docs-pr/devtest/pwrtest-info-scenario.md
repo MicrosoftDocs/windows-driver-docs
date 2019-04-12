@@ -243,11 +243,11 @@ The following table describes the XML elements that appear in the log file.
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;DefaultAlert1&gt;</strong></td>
-<td align="left"><p>Indicates the battery manufacturer&#39;s suggested capacity when a low battery alert should occur.</p></td>
+<td align="left"><p>Indicates the battery manufacturer's suggested capacity when a low battery alert should occur.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>&lt;DefaultAlert2&gt;</strong></td>
-<td align="left"><p>Indicates the battery manufacturer&#39;s suggested capacity when a warning battery alert should occur.</p></td>
+<td align="left"><p>Indicates the battery manufacturer's suggested capacity when a warning battery alert should occur.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;PROCESSOR_POWER_INFORMATION&gt;</strong></td>

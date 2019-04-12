@@ -18,7 +18,7 @@ Other methods for running the DevFund and SysFund tests include:
 
 - Hardware Lab Kit (HLK): The tests can be run from the command line on an [HLK client test machine](https://docs.microsoft.com/windows-hardware/test/hlk/testref/reproduce-the-test-failure-by-running-the-test-from-the-command-line)
 
-- Test machine &quot;provisioned&quot; through Visual Studio: [Running test via the command-line](https://docs.microsoft.com/windows-hardware/drivers/develop/how-to-test-a-driver-at-runtime-from-a-command-prompt)
+- Test machine "provisioned" through Visual Studio: [Running test via the command-line](https://docs.microsoft.com/windows-hardware/drivers/develop/how-to-test-a-driver-at-runtime-from-a-command-prompt)
 
 - Enterprise Windows Driver Kit (EWDK- does not require Visual Studio): If Visual Studio is not installed and will not be used, [use the EWDK to run tests on the command-line](https://docs.microsoft.com/windows-hardware/drivers/devtest/configure-the-machine-for-testing)
 
@@ -35,11 +35,11 @@ To install the TAEF service (Te.service), go to ```%PROGRAMFILES(X86)%\Windows K
 
 1. ```wex.services.exe /install:te.service``` (Verify te.service was installed successfully)
 
-2. ```sc start te.service``` (Verify &#39;STATE&#39; is &#39;START\_PENDING&#39;)
+2. ```sc start te.service``` (Verify 'STATE' is 'START\_PENDING')
 
-3. ```sc query te.service``` (Verify &#39;STATE&#39; is &#39;RUNNING&#39;)
+3. ```sc query te.service``` (Verify 'STATE' is 'RUNNING')
 
-4. ```sc qc te.service``` (Verify &#39;START\_TYPE&#39; is &#39;AUTO\_START&#39;)
+4. ```sc qc te.service``` (Verify 'START\_TYPE' is 'AUTO\_START')
 
 Add this directory to the system PATH environment variable and restart the elevated command prompt.
 

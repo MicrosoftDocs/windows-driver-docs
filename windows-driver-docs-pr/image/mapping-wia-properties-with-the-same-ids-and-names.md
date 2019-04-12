@@ -38,7 +38,7 @@ There are Windows XP properties that have the same property IDs and property nam
 </tr>
 <tr class="odd">
 <td><p>WIA_IPA_ITEM_NAME</p>
-<p>or Generic: &quot;FLATBED&quot;</p>
+<p>or Generic: "FLATBED"</p>
 <p>Read-only access See notes: d and e</p></td>
 <td><p>Child / FLATBED</p>
 <p>See note: b</p></td>
@@ -49,7 +49,7 @@ There are Windows XP properties that have the same property IDs and property nam
 </tr>
 <tr class="even">
 <td><p>WIA_IPA_ITEM_NAME</p>
-<p>or Generic: &quot;FEEDER&quot;</p>
+<p>or Generic: "FEEDER"</p>
 <p>Read-only access See notes: d and e</p></td>
 <td><p>Child / FEEDER</p>
 <p>See note: a</p></td>
@@ -70,7 +70,7 @@ There are Windows XP properties that have the same property IDs and property nam
 </tr>
 <tr class="even">
 <td><p>WIA_IPA_FULL_ITEM_NAME</p>
-<p>or Generic: &quot;\Root\FLATBED&quot;</p>
+<p>or Generic: "\Root\FLATBED"</p>
 <p>Read-only access See notes: d and e</p></td>
 <td><p>Child / FLATBED</p>
 <p>See note: b</p></td>
@@ -81,7 +81,7 @@ There are Windows XP properties that have the same property IDs and property nam
 </tr>
 <tr class="odd">
 <td><p>WIA_IPA_FULL_ITEM_NAME</p>
-<p>or Generic: &quot;\Root\FEEDER&quot;</p>
+<p>or Generic: "\Root\FEEDER"</p>
 <p>Read-only access</p></td>
 <td><p>Child / FEEDER</p>
 <p>See note: a</p></td>

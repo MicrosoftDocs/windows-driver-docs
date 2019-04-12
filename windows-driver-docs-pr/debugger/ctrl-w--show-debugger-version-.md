@@ -30,10 +30,8 @@ WinDbg Syntax
 CTRL+ALT+W 
 ```
 
-## <span id="ddk_meta_ctrl_w_dbg"></span><span id="DDK_META_CTRL_W_DBG"></span>
 
-
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+## Environment
 
 <table>
 <colgroup>

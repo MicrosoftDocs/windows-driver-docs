@@ -143,8 +143,8 @@ DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryRange(
     )
 {
     // only the YUY2 and YV12 formats can be operated on
-    if (lpVideoDesc->d3dFormat != &#39;2YUY&#39; &amp;&amp;
-        lpVideoDesc->d3dFormat != &#39;21VY&#39;) {
+    if (lpVideoDesc->d3dFormat != '2YUY' &amp;&amp;
+        lpVideoDesc->d3dFormat != '21VY') {
         return E_INVALIDARG;
     }
     // the following are the recommended settings for each property

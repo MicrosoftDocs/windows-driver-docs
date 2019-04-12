@@ -57,10 +57,10 @@ PrinterQueue.GetProperties()– refers to the queue property bag</td>
 </tr>
 <tr class="odd">
 <td>XPS rendering filter</td>
-<td><p>XPS filters can access the driver property bag from within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561066" data-raw-source="[&lt;strong&gt;Print Filter Pipeline Property Bag&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561066)"><strong>Print Filter Pipeline Property Bag</strong></a> using the property name &quot;DriverPropertyBag&quot;, or the defined value XPS_FP_PROPERTY_BAG from <em>filterpipeline.h</em>. Here is information about DriverPropertyBag:</p>
+<td><p>XPS filters can access the driver property bag from within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561066" data-raw-source="[&lt;strong&gt;Print Filter Pipeline Property Bag&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561066)"><strong>Print Filter Pipeline Property Bag</strong></a> using the property name "DriverPropertyBag", or the defined value XPS_FP_PROPERTY_BAG from <em>filterpipeline.h</em>. Here is information about DriverPropertyBag:</p>
 <strong>Property type:</strong> VT_UNKNOWN
 <strong>Description:</strong> A pointer to an IUnknown interface. Call QueryInterface to obtain a pointer to the IPrinterPropertyBag interface to the driver property bag.
-<p>And XPS filters can access the queue property bag from within the Print Filter Pipeline Property Bag using the property name &quot;QueuePropertyBag&quot;, or the defined value XPS_FP_QUEUE_PROPERTY_BAG from <em>filterpipeline.h</em>. Here is information about QueuePropertyBag:</p>
+<p>And XPS filters can access the queue property bag from within the Print Filter Pipeline Property Bag using the property name "QueuePropertyBag", or the defined value XPS_FP_QUEUE_PROPERTY_BAG from <em>filterpipeline.h</em>. Here is information about QueuePropertyBag:</p>
 <strong>Property type:</strong> VT_UNKNOWN
 <strong>Description:</strong> A pointer to an IUnknown interface. Call QueryInterface to obtain a pointer to the IPrinterPropertyBag interface to the queue property bag.</td>
 </tr>

@@ -2,17 +2,15 @@
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
 ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
-ms.date: 02/01/2019
+ms.date: 04/02/2019
 ms.localizationpriority: medium
 ---
 
 # Driver security checklist
 
-
 This article provides a driver security checklist for driver developers to help reduce the risk of drivers being compromised.
 
 ## <span id="Driver_Security_Overview"></span><span id="driver_security_overview"></span><span id="DRIVER_SECURITY_OVERVIEW"></span>Driver security overview
-
 
 A security flaw is any flaw that allows an attacker to cause a driver to malfunction in such a way that it causes the system to crash or become unusable. In addition, vulnerabilities in driver code can allow an attacker to gain access to the kernel, creating a possibility of compromising the entire OS. When most developers are working on their driver, their focus is on getting the driver to work properly, and not on whether a malicious attacker will attempt to exploit vulnerabilities within their code.
 
@@ -72,7 +70,6 @@ For more information about using the built in Windows drivers, see [Do you need 
 For information on using background tasks, see  [Support your app with background tasks](https://docs.microsoft.com/windows/uwp/launch-resume/support-your-app-with-background-tasks).
 
 For information on using Windows Services, see [Services](https://msdn.microsoft.com/library/windows/desktop/ms685141.aspx).
-
 
 ## <span id="confirmkernel"></span>Use the driver frameworks 
 
@@ -185,9 +182,9 @@ To manage this risk, copy any parameters that need to be validated from the user
 
 **Driver code must make correct use of memory**
 
-- All driver pool allocations must be in non-executable (NX) pool. Using NX memory pools is inherently more secure than using executable non-paged (NP) pools, and provides better protection against overflow attacks. For more information about the related device fundamentals test, see [Device.DevFund.Memory.NXPool](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundmemory).
+- All driver pool allocations must be in non-executable (NX) pool. Using NX memory pools is inherently more secure than using executable non-paged (NP) pools, and provides better protection against overflow attacks. 
 
-- Device drivers must properly handle various user-mode, as well as kernel to kernel I/O, requests. For more information about the related device fundamentals test, see [Device.DevFund.Reliability.BasicSecurity](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundreliability).
+- Device drivers must properly handle various user-mode, as well as kernel to kernel I/O, requests. 
 
 To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [Device Guard Compatibility](#dgc) later in this article.
 
@@ -258,9 +255,9 @@ For more information about handling IRPs correctly, see [Additional Errors in Ha
 
 - Use a lock or an interlocked sequence to prevent race conditions. For more information, see [Errors in a Multiprocessor Environment](https://msdn.microsoft.com/library/windows/hardware/ff544288).
 
-- Ensure that device drivers properly handle various user-mode as well as kernel to kernel I/O requests. For more information, see [Device.DevFund.Reliability.BasicSecurity](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundreliability).
+- Ensure that device drivers properly handle various user-mode as well as kernel to kernel I/O requests.
 
-- Ensure that no TDI filters or LSPs are installed by the driver or associated software packages during installation or usage. For more information about the related driver fundamentals test, see [Device.DevFund.Security](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundsecurity).
+- Ensure that no TDI filters or LSPs are installed by the driver or associated software packages during installation or usage. 
 
 **Use safe functions**
 
@@ -365,11 +362,9 @@ To implement Device Guard compatible code, make sure your driver code does the f
 
 For more information about using the tool and a list of incompatible memory calls, see [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md).
 
-For general information about Device Guard, see [Windows 10 Device Guard and Credential Guard Demystified](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
-and [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+For general information about Device Guard, see [Driver compatibility with Device Guard in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/).
 
-For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
-
+For more information about the related system fundamentals security test, see [Device Guard - Compliance Test](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc) and [Driver Compatibility with Device Guard](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
 
 
 
@@ -700,6 +695,10 @@ SAFECode - [https://www.safecode.org/](https://www.safecode.org/)
 [Locking Down Drivers - A Survey of Techniques](https://www.osronline.com/article.cfm?article=357) 
 
 [Meltdown and Spectre: What about drivers?](https://www.osr.com/blog/2018/01/23/meltdown-spectre-drivers/) 
+
+**Case Study**
+
+[From alert to driver vulnerability: Microsoft Defender ATP investigation unearths privilege escalation flaw](https://www.microsoft.com/security/blog/2019/03/25/from-alert-to-driver-vulnerability-microsoft-defender-atp-investigation-unearths-privilege-escalation-flaw/)
 
 
 **Books**

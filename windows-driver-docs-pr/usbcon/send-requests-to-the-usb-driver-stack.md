@@ -42,7 +42,7 @@ The following example shows how to submit an URB synchronously.
 // The SubmitUrbSync routine submits an URB synchronously.
 //
 // Parameters:
-//      DeviceExtension: Pointer to the caller&#39;s device extension. The
+//      DeviceExtension: Pointer to the caller's device extension. The
 //                       device extension must have a pointer to 
 //                       the next lower device object in the device stacks.  
 //
@@ -172,7 +172,7 @@ The following example shows how to submit an URB asynchronously.
 // Parameters:
 //
 // Parameters:
-//      DeviceExtension: Pointer to the caller&#39;s device extension. The
+//      DeviceExtension: Pointer to the caller's device extension. The
 //                       device extension must have a pointer to 
 //                       the next lower device object in the device stacks.  
 //
@@ -198,7 +198,7 @@ NTSTATUS SubmitUrbASync ( PDEVICE_EXTENSION DeviceExtension,
                          PVOID CompletionContext)  
 {
     // Completion routine is required if the URB is submitted asynchronously.
-    // The caller&#39;s completion routine releases the IRP when it completes.
+    // The caller's completion routine releases the IRP when it completes.
 
 
     NTSTATUS ntStatus = -1;  
@@ -214,7 +214,7 @@ NTSTATUS SubmitUrbASync ( PDEVICE_EXTENSION DeviceExtension,
     // Attach the URB to this IRP.
     (void) USBD_AssignUrbToIoStackLocation (DeviceExtension->UsbdHandle, nextStack, Urb);  
 
-    // Caller&#39;s completion routine will free the irp when it completes.
+    // Caller's completion routine will free the irp when it completes.
     ntStatus = IoSetCompletionRoutineEx ( DeviceExtension->NextDeviceObject,
         Irp,  
         CompletionRoutine,  

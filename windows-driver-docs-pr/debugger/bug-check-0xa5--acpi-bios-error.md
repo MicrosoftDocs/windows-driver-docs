@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The ACPI\_BIOS\_ERROR bug check has a value of 0x000000A5. This bug check indicates that the Advanced Configuration and Power Interface (ACPI) BIOS of the computer is not fully compliant with the ACPI specification.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## ACPI\_BIOS\_ERROR Parameters
 
@@ -47,8 +49,8 @@ If the BIOS incompatibility is related to Plug and Play (PnP) or power managemen
 <tbody>
 <tr class="odd">
 <td align="left"><p>0x01</p></td>
-<td align="left"><p>ACPI&#39;s <strong>deviceExtension</strong></p></td>
-<td align="left"><p>ACPI&#39;s <strong>ResourceList</strong></p></td>
+<td align="left"><p>ACPI's <strong>deviceExtension</strong></p></td>
+<td align="left"><p>ACPI's <strong>ResourceList</strong></p></td>
 <td align="left"><p><strong>0:</strong> No resource list is found</p>
 <p><strong>1:</strong> No IRQ resource is found in list</p></td>
 <td align="left"><p>ACPI cannot find the System Control Interrupt (SCI) vector in the resources that are handed to it when ACPI is started.</p></td>
@@ -144,12 +146,12 @@ If the BIOS incompatibility is related to Plug and Play (PnP) or power managemen
 <td align="left"><p>The NS <strong>PowerResource</strong> that ACPI needs the object for</p></td>
 <td align="left"><p>The (ULONG) name of the method that ACPI looked for</p></td>
 <td align="left"><p>0: Base case</p></td>
-<td align="left"><p>ACPI could not find a required method or object in the namespace for a power resource (or entity other than a &quot;device&quot;). This bug check code is used if there is no _ON, _OFF, or _STA present for a power resource.</p></td>
+<td align="left"><p>ACPI could not find a required method or object in the namespace for a power resource (or entity other than a "device"). This bug check code is used if there is no _ON, _OFF, or _STA present for a power resource.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x0F</p></td>
 <td align="left"><p>The current buffer that ACPI was parsing</p></td>
-<td align="left"><p>The buffer&#39;s tag</p></td>
+<td align="left"><p>The buffer's tag</p></td>
 <td align="left"><p>The specified length of the buffer</p></td>
 <td align="left"><p>ACPI could not parse the resource descriptor.</p></td>
 </tr>
@@ -170,7 +172,7 @@ If the BIOS incompatibility is related to Plug and Play (PnP) or power managemen
 <tr class="even">
 <td align="left"><p>0x14</p></td>
 <td align="left"><p>The current buffer that ACPI was parsing</p></td>
-<td align="left"><p>The buffer&#39;s tag</p></td>
+<td align="left"><p>The buffer's tag</p></td>
 <td align="left"><p>A pointer to a variable that contains the ULONGLONG length of the buffer</p></td>
 <td align="left"><p>ACPI could not parse the resource descriptor. The length exceeds MAXULONG.</p></td>
 </tr>
@@ -256,7 +258,7 @@ If an interrupt routing failure or incompatibility has occurred, the following p
 <p>(This pointer is an index into the _PRT.)</p></td>
 <td align="left"><p>The device ID or function number.</p>
 <p>This DWORD is encoded as follows: bits 15:0 are the PCI function number, and bits 31:16 are the PCI device number</p></td>
-<td align="left"><p>ACPI found an entry in the _PRT that the function ID is not all F&#39;s for.</p>
+<td align="left"><p>ACPI found an entry in the _PRT that the function ID is not all F's for.</p>
 <p>(The generic format for a _PRT entry is that the device number is specified, but the function number is not.)</p></td>
 </tr>
 <tr class="even">
@@ -273,7 +275,7 @@ If an interrupt routing failure or incompatibility has occurred, the following p
 <td align="left"><p>The vector that could not be found</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The _PRT contained a reference to a vector that is not described in the I/O APIC entry&#39;s MAPIC table.</p></td>
+<td align="left"><p>The _PRT contained a reference to a vector that is not described in the I/O APIC entry's MAPIC table.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x10008</p></td>
@@ -310,7 +312,7 @@ If an interrupt routing failure or incompatibility has occurred, the following p
 <td align="left"><p>The I/O port in the Fixed Table</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The PM_TMR_BLK entry in the Fixed ACPI Description Table doesn&#39;t point to a working ACPI timer block.</p></td>
+<td align="left"><p>The PM_TMR_BLK entry in the Fixed ACPI Description Table doesn't point to a working ACPI timer block.</p></td>
 </tr>
 </tbody>
 </table>
@@ -371,13 +373,13 @@ If Parameter 1 equals **0x02**, the ACPI BIOS could not process the resource lis
 <td align="left"><p>The ACPI extension for the PCI bus</p></td>
 <td align="left"><p>0x0</p></td>
 <td align="left"><p>A pointer to the QUERY_RESOURCES IRP</p></td>
-<td align="left"><p>ACPI cannot convert the BIOS&#39; resource list into the proper format. This probably represents an error in the BIOS&#39; list encoding procedure.</p></td>
+<td align="left"><p>ACPI cannot convert the BIOS' resource list into the proper format. This probably represents an error in the BIOS' list encoding procedure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>The ACPI extension for the PCI bus</p></td>
 <td align="left"><p>0x1</p></td>
 <td align="left"><p>A pointer to the QUERY_RESOURCE_REQUIREMENTS IRP</p></td>
-<td align="left"><p>ACPI cannot convert the BIOS&#39; resource list into the proper format. This probably represents an error in the BIOS&#39; list encoding procedure.</p></td>
+<td align="left"><p>ACPI cannot convert the BIOS' resource list into the proper format. This probably represents an error in the BIOS' list encoding procedure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>The ACPI extension for the PCI bus</p></td>
@@ -423,7 +425,7 @@ If Parameter 1 equals **0x10**, the ACPI BIOS could not determine the system-to-
 <tr class="odd">
 <td align="left"><p>The ACPI extension whose mapping is needed</p></td>
 <td align="left"><p>0x0</p></td>
-<td align="left"><p>The DEVICE_POWER_STATE (this is &quot;x+1&quot;)</p></td>
+<td align="left"><p>The DEVICE_POWER_STATE (this is "x+1")</p></td>
 <td align="left"><p>_PRx was mapped back to a non-supported S-state.</p></td>
 </tr>
 <tr class="even">

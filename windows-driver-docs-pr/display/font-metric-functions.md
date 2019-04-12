@@ -52,7 +52,7 @@ Any driver that provides fonts must support the [**DrvQueryFont**](https://msdn.
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556226" data-raw-source="[&lt;strong&gt;DrvFree&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556226)"><strong>DrvFree</strong></a></p></td>
-<td align="left"><p>Informs the driver that the indicated data structure is no longer needed. Optional--should be implemented only if the driver&#39;s memory management requires this information.</p></td>
+<td align="left"><p>Informs the driver that the indicated data structure is no longer needed. Optional--should be implemented only if the driver's memory management requires this information.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556262" data-raw-source="[&lt;strong&gt;DrvQueryFont&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556262)"><strong>DrvQueryFont</strong></a></p></td>

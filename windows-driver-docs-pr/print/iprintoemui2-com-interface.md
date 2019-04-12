@@ -34,7 +34,7 @@ The `IPrintOemUI2` COM interface extends the [IPrintOemUI COM interface](iprinto
 <tbody>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554141" data-raw-source="[&lt;strong&gt;IPrintOemUI2::DocumentEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554141)"><strong>IPrintOemUI2::DocumentEvent</strong></a></p></td>
-<td><p>Enables a UI plug-in to replace the core driver UI module&#39;s default implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548544" data-raw-source="[&lt;strong&gt;DrvDocumentEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548544)"><strong>DrvDocumentEvent</strong></a> DDI.</p></td>
+<td><p>Enables a UI plug-in to replace the core driver UI module's default implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548544" data-raw-source="[&lt;strong&gt;DrvDocumentEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548544)"><strong>DrvDocumentEvent</strong></a> DDI.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554142" data-raw-source="[&lt;strong&gt;IPrintOemUI2::HideStandardUI&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554142)"><strong>IPrintOemUI2::HideStandardUI</strong></a></p></td>
@@ -42,7 +42,7 @@ The `IPrintOemUI2` COM interface extends the [IPrintOemUI COM interface](iprinto
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554146" data-raw-source="[&lt;strong&gt;IPrintOemUI2::QueryJobAttributes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554146)"><strong>IPrintOemUI2::QueryJobAttributes</strong></a></p></td>
-<td><p>Enables a UI plug-in to post-process the core driver&#39;s results after a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548581" data-raw-source="[&lt;strong&gt;DrvQueryJobAttributes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548581)"><strong>DrvQueryJobAttributes</strong></a> DDI.</p></td>
+<td><p>Enables a UI plug-in to post-process the core driver's results after a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548581" data-raw-source="[&lt;strong&gt;DrvQueryJobAttributes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548581)"><strong>DrvQueryJobAttributes</strong></a> DDI.</p></td>
 </tr>
 </tbody>
 </table>

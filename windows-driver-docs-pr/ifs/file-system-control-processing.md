@@ -75,13 +75,13 @@ As previously noted, the handle used to issue the FSCTL\_MOVE\_FILE is an "open"
     //
     //    - extract and decode the file object and check for type of open.
     //
-    //    - if this is a directory, verify that it&#39;s not the root and that
+    //    - if this is a directory, verify that it's not the root and that
     //      you are not trying to move the first cluster.  You cannot move the
     //      first cluster because sub-directories have this cluster number
     //      in them and there is no safe way to simultaneously update them
     //      all.
     //
-    //  Allow movefile on the root directory if it&#39;s FAT32, since the root dir
+    //  Allow movefile on the root directory if it's FAT32, since the root dir
     //  is a real chained file.
     //    //
 ```

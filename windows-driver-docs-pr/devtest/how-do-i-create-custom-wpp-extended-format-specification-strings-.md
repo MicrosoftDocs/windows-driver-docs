@@ -34,7 +34,7 @@ To create the IPV6ADDR complex data type, add the following statements to the Lo
     </colgroup>
     <tbody>
     <tr class="odd">
-    <td align="left"><pre><code>DEFINE_CPLX_TYPE(IPV6ADDR, WPP_LOGIPV6, in6_addr *, ItemIPV6Addr, &quot;s&quot;, _IPV6_, 0, 1);</code></pre></td>
+    <td align="left"><pre><code>DEFINE_CPLX_TYPE(IPV6ADDR, WPP_LOGIPV6, in6_addr *, ItemIPV6Addr, "s", _IPV6_, 0, 1);</code></pre></td>
     </tr>
     </tbody>
     </table>
@@ -85,7 +85,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
     </colgroup>
     <tbody>
     <tr class="odd">
-    <td align="left"><pre><code>DEFINE_CPLX_TYPE(HEXDUMP, WPP_LOGHEXDUMP, const xstr_t&, ItemHEXDump,&quot;s&quot;, _HEX_, 0, 2);</code></pre></td>
+    <td align="left"><pre><code>DEFINE_CPLX_TYPE(HEXDUMP, WPP_LOGHEXDUMP, const xstr_t&, ItemHEXDump,"s", _HEX_, 0, 2);</code></pre></td>
     </tr>
     </tbody>
     </table>

@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # HID drivers
 
 
-This section introduces Human Interface Devices (or HID). For more information about HID concepts, see the official [HID specification](http://www.usb.org/developers/hidpage/HID1_11.pdf). 
+This section introduces Human Interface Devices (or HID). For more information about HID concepts, see the official [HID specification](https://www.usb.org/hid). 
 
 ## In this section
 
@@ -34,7 +34,7 @@ This section introduces Human Interface Devices (or HID). For more information a
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="what-s-new-in-hid.md" data-raw-source="[What&#39;s New in HID](what-s-new-in-hid.md)">What&#39;s New in HID</a></p></td>
+<td><p><a href="what-s-new-in-hid.md" data-raw-source="[What's New in HID](what-s-new-in-hid.md)">What's New in HID</a></p></td>
 <td></td>
 </tr>
 <tr class="even">

@@ -40,11 +40,11 @@ The following table lists and describes all of the methods provided by the `IPri
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554230" data-raw-source="[&lt;strong&gt;IPrintOemUni::DevMode&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554230)"><strong>IPrintOemUni::DevMode</strong></a></p></td>
-<td><p>Performs operations on a rendering plug-in&#39;s private DEVMODE members.</p></td>
+<td><p>Performs operations on a rendering plug-in's private DEVMODE members.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554232" data-raw-source="[&lt;strong&gt;IPrintOemUni::DisableDriver&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554232)"><strong>IPrintOemUni::DisableDriver</strong></a></p></td>
-<td><p>Frees resources that were allocated by a rendering plug-in&#39;s <strong>IPrintOemUni::EnableDriver</strong> method.</p></td>
+<td><p>Frees resources that were allocated by a rendering plug-in's <strong>IPrintOemUni::EnableDriver</strong> method.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554238" data-raw-source="[&lt;strong&gt;IPrintOemUni::DisablePDEV&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554238)"><strong>IPrintOemUni::DisablePDEV</strong></a></p></td>
@@ -56,7 +56,7 @@ The following table lists and describes all of the methods provided by the `IPri
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554242" data-raw-source="[&lt;strong&gt;IPrintOemUni::DownloadFontHeader&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554242)"><strong>IPrintOemUni::DownloadFontHeader</strong></a></p></td>
-<td><p>Allows a rendering plug-in to download a font&#39;s header information to a printer.</p></td>
+<td><p>Allows a rendering plug-in to download a font's header information to a printer.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554245" data-raw-source="[&lt;strong&gt;IPrintOemUni::DriverDMS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554245)"><strong>IPrintOemUni::DriverDMS</strong></a></p></td>
@@ -80,7 +80,7 @@ The following table lists and describes all of the methods provided by the `IPri
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554256" data-raw-source="[&lt;strong&gt;IPrintOemUni::GetInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554256)"><strong>IPrintOemUni::GetInfo</strong></a></p></td>
-<td><p>(Implementation required.) Returns a rendering plug-in&#39;s identification information.</p></td>
+<td><p>(Implementation required.) Returns a rendering plug-in's identification information.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554258" data-raw-source="[&lt;strong&gt;IPrintOemUni::HalftonePattern&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554258)"><strong>IPrintOemUni::HalftonePattern</strong></a></p></td>
@@ -100,7 +100,7 @@ The following table lists and describes all of the methods provided by the `IPri
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554269" data-raw-source="[&lt;strong&gt;IPrintOemUni::PublishDriverInterface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554269)"><strong>IPrintOemUni::PublishDriverInterface</strong></a></p></td>
-<td><p>(Implementation required.) Supplies a pointer to the Unidrv driver&#39;s <a href="iprintoemdriveruni-com-interface.md" data-raw-source="[IPrintOemDriverUni COM interface](iprintoemdriveruni-com-interface.md)">IPrintOemDriverUni COM interface</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552940" data-raw-source="[IPrintCoreHelperUni interface](https://msdn.microsoft.com/library/windows/hardware/ff552940)">IPrintCoreHelperUni interface</a>.</p></td>
+<td><p>(Implementation required.) Supplies a pointer to the Unidrv driver's <a href="iprintoemdriveruni-com-interface.md" data-raw-source="[IPrintOemDriverUni COM interface](iprintoemdriveruni-com-interface.md)">IPrintOemDriverUni COM interface</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552940" data-raw-source="[IPrintCoreHelperUni interface](https://msdn.microsoft.com/library/windows/hardware/ff552940)">IPrintCoreHelperUni interface</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554270" data-raw-source="[&lt;strong&gt;IPrintOemUni::ResetPDEV&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554270)"><strong>IPrintOemUni::ResetPDEV</strong></a></p></td>
@@ -108,7 +108,7 @@ The following table lists and describes all of the methods provided by the `IPri
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554274" data-raw-source="[&lt;strong&gt;IPrintOemUni::SendFontCmd&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554274)"><strong>IPrintOemUni::SendFontCmd</strong></a></p></td>
-<td><p>Allows a rendering plug-in to modify a printer&#39;s font selection command and then send it to the printer.</p></td>
+<td><p>Allows a rendering plug-in to modify a printer's font selection command and then send it to the printer.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554277" data-raw-source="[&lt;strong&gt;IPrintOemUni::TextOutAsBitmap&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554277)"><strong>IPrintOemUni::TextOutAsBitmap</strong></a></p></td>

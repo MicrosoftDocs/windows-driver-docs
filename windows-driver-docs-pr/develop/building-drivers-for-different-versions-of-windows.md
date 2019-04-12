@@ -71,7 +71,7 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
     </thead>
     <tbody>
     <tr class="odd">
-    <td align="left"><pre><code>  &lt;PropertyGroup Condition=&quot;&#39;$(Configuration)|$(Platform)&#39;==&#39;Win8.1 Debug|Win32&#39;&quot; Label=&quot;Configuration&quot;&gt;
+    <td align="left"><pre><code>  &lt;PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1 Debug|Win32'" Label="Configuration"&gt;
         &lt;TargetVersion&gt;WindowsV6.3&lt;/TargetVersion&gt;
         &lt;UseDebugLibraries&gt;true&lt;/UseDebugLibraries&gt;
         &lt;KernelBufferOverflowLib&gt;$(DDK_LIB_PATH)\BufferOverflowK.lib&lt;/KernelBufferOverflowLib&gt;
@@ -79,7 +79,7 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
         &lt;ConfigurationType&gt;Driver&lt;/ConfigurationType&gt;
         &lt;DriverType&gt;KMDF&lt;/DriverType&gt;
       &lt;/PropertyGroup&gt;
-      &lt;PropertyGroup Condition=&quot;&#39;$(Configuration)|$(Platform)&#39;==&#39;Win8.1 Release|Win32&#39;&quot; Label=&quot;Configuration&quot;&gt;
+      &lt;PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1 Release|Win32'" Label="Configuration"&gt;
         &lt;TargetVersion&gt;WindowsV6.3&lt;/TargetVersion&gt;
         &lt;UseDebugLibraries&gt;false&lt;/UseDebugLibraries&gt;
         &lt;KernelBufferOverflowLib&gt;$(DDK_LIB_PATH)\BufferOverflowK.lib&lt;/KernelBufferOverflowLib&gt;
@@ -87,7 +87,7 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
         &lt;ConfigurationType&gt;Driver&lt;/ConfigurationType&gt;
         &lt;DriverType&gt;KMDF&lt;/DriverType&gt;
       &lt;/PropertyGroup&gt;
-      &lt;PropertyGroup Condition=&quot;&#39;$(Configuration)|$(Platform)&#39;==&#39;Win8 Debug|Win32&#39;&quot; Label=&quot;Configuration&quot;&gt;
+      &lt;PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Debug|Win32'" Label="Configuration"&gt;
         &lt;TargetVersion&gt;Windows8&lt;/TargetVersion&gt;
         &lt;UseDebugLibraries&gt;true&lt;/UseDebugLibraries&gt;
         &lt;KernelBufferOverflowLib&gt;$(DDK_LIB_PATH)\BufferOverflowK.lib&lt;/KernelBufferOverflowLib&gt;
@@ -95,7 +95,7 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
         &lt;ConfigurationType&gt;Driver&lt;/ConfigurationType&gt;
         &lt;DriverType&gt;KMDF&lt;/DriverType&gt;
       &lt;/PropertyGroup&gt;
-      &lt;PropertyGroup Condition=&quot;&#39;$(Configuration)|$(Platform)&#39;==&#39;Win8 Release|Win32&#39;&quot; Label=&quot;Configuration&quot;&gt;
+      &lt;PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Release|Win32'" Label="Configuration"&gt;
         &lt;TargetVersion&gt;Windows8&lt;/TargetVersion&gt;
         &lt;UseDebugLibraries&gt;false&lt;/UseDebugLibraries&gt;
         &lt;KernelBufferOverflowLib&gt;$(DDK_LIB_PATH)\BufferOverflowK.lib&lt;/KernelBufferOverflowLib&gt;

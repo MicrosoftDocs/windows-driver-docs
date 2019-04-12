@@ -190,7 +190,7 @@ Parameters
 </tr>
 <tr class="odd">
 <td>2</td>
-<td><p>Retry - Process any Bidi Schema updates (including Bidi Events) in <em>printerBidiSchemaResponses</em>, and then call the JavaScript function again to allow the manufacturer&#39;s code to continue processing the data.</p>
+<td><p>Retry - Process any Bidi Schema updates (including Bidi Events) in <em>printerBidiSchemaResponses</em>, and then call the JavaScript function again to allow the manufacturer's code to continue processing the data.</p>
 <p>The number of bytes processed from the print data stream (<em>printData</em>) is returned via <em>writePrintDataProgress</em>.</p></td>
 </tr>
 <tr class="even">

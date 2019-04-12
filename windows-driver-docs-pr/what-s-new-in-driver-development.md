@@ -684,7 +684,7 @@ There are new programming interfaces for writing a Physical Function driver for 
 
 In Windows 10, version 1709, to provide access to a Pulse width modulation (PWM) controller that is part of the SoC and memory-mapped to the SoC address space, you need to write a kernel-mode driver. For more information, see [PWM driver for an on-SoC PWM module](https://docs.microsoft.com/windows-hardware/drivers/spb/pulse-width-controller%20driver?branch=spb).
 
-To parse and validate pin paths and extract the pin number, kernel model drivers should use [PwmParsePinPath](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pwmutil/nf-pwmutil-pwmparsepinpath).
+To parse and validate pin paths and extract the pin number, kernel mode drivers should use [PwmParsePinPath](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pwmutil/nf-pwmutil-pwmparsepinpath).
 
 An app can send requests to the controller driver by sending [PWM IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/spb/pulse-width-controller%20driver#pwm-ioctl-requests) requests.
 

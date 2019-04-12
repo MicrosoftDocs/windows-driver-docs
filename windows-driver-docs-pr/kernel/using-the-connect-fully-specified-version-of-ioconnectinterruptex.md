@@ -79,11 +79,11 @@ The following code example demonstrates how to register an *InterruptService* ro
 ```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
-// deviceExtension is a pointer to the driver&#39;s device extension. 
+// deviceExtension is a pointer to the driver's device extension. 
 //     deviceExtension->IntObj is a PKINTERRUPT.
-// deviceInterruptService is a pointer to the driver&#39;s InterruptService routine.
+// deviceInterruptService is a pointer to the driver's InterruptService routine.
 // IntResource is a CM_PARTIAL_RESOURCE_DESCRIPTOR structure of either type CmResourceTypeInterrupt or CmResourceTypeMessageInterrupt.
-// PhysicalDeviceObject is a pointer to the device&#39;s PDO. 
+// PhysicalDeviceObject is a pointer to the device's PDO. 
 // ServiceContext is a pointer to driver-specified context for the ISR.
 
 RtlZeroMemory( &params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );

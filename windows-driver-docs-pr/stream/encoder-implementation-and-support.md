@@ -19,7 +19,6 @@ ms.localizationpriority: medium
 
 # Encoder Implementation and Support
 
-
 In Windows XP Service Pack 1, Microsoft defined three kernel streaming property sets and one enumeration in *ksmedia.h* to support video-only encoder devices. Each property set contains a single property. In other words, each property receives its own property set. If your driver makes *get*-property or *Set*-property calls, then specify the property set's GUID (as defined in *ksmedia.h*) in the **Set** member of the [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) structure and zero in the **Id** member when you set up the call:
 
 <table>
@@ -49,8 +48,6 @@ In Windows XP Service Pack 1, Microsoft defined three kernel streaming property 
 </tbody>
 </table>
 
- 
-
 Clients access these properties by deriving the **IVideoEncoder** COM interface from the **IEncoderAPI** COM interface (described in the Windows Software Development Kit (SDK) documentation).
 
 A minidriver must specify default values for each of the ENCAPIPARAM\_*Xxx* properties. The topic [Encoder Code Examples](encoder-code-examples.md) demonstrates how to specify default property values. During the development and debugging of an encoder filter, the current property page can be triggered from a minidriver supporting the ENCAPIPARAM\_BITRATE property set.
@@ -79,7 +76,7 @@ In DirectX 9.0, six additional property sets and one event set were defined in *
 </tr>
 <tr class="odd">
 <td><a href="https://msdn.microsoft.com/library/windows/hardware/ff557702" data-raw-source="[CODECAPI_SETALLDEFAULTS](https://msdn.microsoft.com/library/windows/hardware/ff557702)">CODECAPI_SETALLDEFAULTS</a></td>
-<td><p>Implement this property set to reset all the encoder device&#39;s internal settings, such as encoding bit rate and encoding mode to their default values.</p></td>
+<td><p>Implement this property set to reset all the encoder device's internal settings, such as encoding bit rate and encoding mode to their default values.</p></td>
 </tr>
 <tr class="even">
 <td><a href="https://msdn.microsoft.com/library/windows/hardware/ff557691" data-raw-source="[CODECAPI_ALLSETTINGS](https://msdn.microsoft.com/library/windows/hardware/ff557691)">CODECAPI_ALLSETTINGS</a></td>
@@ -96,8 +93,6 @@ In DirectX 9.0, six additional property sets and one event set were defined in *
 </tbody>
 </table>
 
- 
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -112,12 +107,10 @@ In DirectX 9.0, six additional property sets and one event set were defined in *
 <tbody>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557696" data-raw-source="[CODECAPI_CHANGELISTS](https://msdn.microsoft.com/library/windows/hardware/ff557696)">CODECAPI_CHANGELISTS</a></p></td>
-<td><p>If the device supports responding to user-mode events through the CODECAPI_SUPPORTSEVENTS property set, then implement this event set to return a list of encoder settings that have changed as the result of a client&#39;s prior <em>Set</em>-property call to either CODECAPI_SETALLDEFAULTS or CODECAPI_ALLSETTINGS.</p></td>
+<td><p>If the device supports responding to user-mode events through the CODECAPI_SUPPORTSEVENTS property set, then implement this event set to return a list of encoder settings that have changed as the result of a client's prior <em>Set</em>-property call to either CODECAPI_SETALLDEFAULTS or CODECAPI_ALLSETTINGS.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 Clients access these properties through the **ICodecAPI** COM interface (described in the Windows SDK documentation). See [Encoder Installation and Registration](encoder-installation-and-registration.md) for more information about the COM interfaces, including how to specify which interface KsProxy should expose.
 
@@ -125,12 +118,4 @@ A minidriver should implement support for basic *get*-property queries. The topi
 
 When developing an encoder filter, move encoding functionality into a separate filter from a video capture filter. Define your own private mediums so that graph builders can properly connect encoder and capture filters. If your hardware is capable of bus mastering non-encoded content, then you may also expose public mediums. If you implement both public and private mediums, then list the private mediums first because it reduces graph building time; to find the correct filter when building a filter graph.
 
-For more information about the issues and reasons to separate encoding functionality into its own filter, see the [Designing Video Capture Boards for Use with the Microsoft ActiveX Video Control](https://go.microsoft.com/fwlink/p/?linkid=204793) paper on the Microsoft website. For more information about using mediums and multiple instances of a filter (in separate filter graphs) see [Mediums and Categories](mediums-and-categories.md).
-
- 
-
- 
-
-
-
-
+For more information about using mediums and multiple instances of a filter (in separate filter graphs) see [Mediums and Categories](mediums-and-categories.md).
