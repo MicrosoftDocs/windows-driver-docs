@@ -26,7 +26,7 @@ The UICC file system can be regarded as a forest of directory trees. The legacy 
 
 ## NDIS interface extensions
 
-The following OIDs has been defined to support UICC application and file system access.
+The following OIDs have been defined to support UICC application and file system access.
 
 - [OID_WWAN_UICC_APP_LIST](oid-wwan-uicc-app-list.md)
 - [OID_WWAN_UICC_FILE_STATUS](oid-wwan-uicc-file-status.md)
