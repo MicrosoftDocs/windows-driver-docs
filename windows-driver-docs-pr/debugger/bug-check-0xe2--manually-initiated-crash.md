@@ -30,7 +30,7 @@ None
 Remarks
 -------
 
-For more information about manually-initiated crash dumps, see Forcing a System Crash. .
+For more information about manually-initiated crash dumps, see [Forcing a System Crash.](https://docs.microsoft.com/windows-hardware/drivers/debugger/forcing-a-system-crash) .
 
  
 

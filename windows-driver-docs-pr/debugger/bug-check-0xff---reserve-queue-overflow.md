@@ -56,8 +56,8 @@ The RESERVE\_QUEUE\_OVERFLOW bug check has a value of 0x000000FF. This indicates
 </tbody>
 </table>
 
- 
-
+## Resolution 
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
  
 
  
