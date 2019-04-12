@@ -24,6 +24,16 @@ The following diagram from Section 8.1 of the [ETSI TS 102 221 technical specifi
 
 The UICC file system can be regarded as a forest of directory trees. The legacy SIM tree is rooted at a Master File (MF) and contains up to two levels of subdirectories (Dedicated Files, or DFs) containing Elemental Files (EFs) that hold various types of information. The SIM defines DFs under the MF, one of which, DFTelecom, contains information common to multiple access types such as the common phone book. Additional applications are effectively implemented as separate trees, each rooted in its own Application Directory File (ADF). Each ADF is identified by an application identifier that can be up to 128 bits long. A file under the card root (EFDir under the MF in the diagram) contains the application names and corresponding identifiers. Within a tree (the MF or an ADF), DFs and EFs might be identified by a path of file IDs, where a file ID is a 16-bit integer.
 
+## NDIS interface extensions
+
+The following OIDs has been defined to support UICC application and file system access.
+
+- [OID_WWAN_UICC_APP_LIST](oid-wwan-uicc-app-list.md)
+- [OID_WWAN_UICC_FILE_STATUS](oid-wwan-uicc-file-status.md)
+- [OID_WWAN_UICC_ACCESS_BINARY](oid-wwan-uicc-access-binary.md)
+- [OID_WWAN_UICC_ACCESS_RECORD](oid-wwan-uicc-access-record.md)
+- [OID_WWAN_PIN_EX2](oid-wwan-pin-ex2.md)
+
 ## MBIM service and CID values
 
 | Service name | UUID | UUID value |
@@ -84,7 +94,7 @@ The InformationBuffer in MBIM_COMMAND_DONE contains the following MBIM_UICC_APP_
 | 8 | 16 | AppId | Byte array | The application ID. Only the first **AppIdSize** bytes are meaningful. If the application ID is longer than **MBIM_MAXLENGTH_APPID** bytes, then AppIdSize specifies the actual length but only the first **MBIM_MAXLENGTH_APPID** bytes are in this field. This field is valid only when **AppType** is not **MBIMUiccAppTypeMf**, **MBIMUiccAppTypeMfSIM**, or **MBIMUiccAppTypeMfRUIM**. |
 | 24 | 4 | AppNameLength | SIZE (0..256) | The length, in characters, of the application name. |
 | 28 | 256 | AppName | ASCII character array | A UTF-8 string specifying the name of the application. The length of this field is specified by **AppNameLength**. If the length is greater than or equal to **MBIM_MAXLENGTH_APPNAME** bytes, this field contains the first **MBIM_MAXLENGTH_APPNAME - 1** bytes of the name. The string is always null-terminated. |
-| 284 | 4 | NumPins | SIZE (0..8) | The number of application PIN references. In other words, the numbef of elements of **PinRef** that are valid. Applications on a virtual R-UIM have no PIN references. |
+| 284 | 4 | NumPins | SIZE (0..8) | The number of application PIN references. In other words, the number of elements of **PinRef** that are valid. Applications on a virtual R-UIM have no PIN references. |
 | 288 | 8 | PinRef | Byte array | A byte array specifying the application PIN references for this application (keys for PIN1 and possibly UPIN), as defined in Section 9.4.2 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). In the case of a single-verification card, or an MBB driver and/or modem that does not support different application keys for different applications, this field must be **0x01**. |
 
 #### MBIM_UICC_APP_TYPE
@@ -101,7 +111,7 @@ The InformationBuffer in MBIM_COMMAND_DONE contains the following MBIM_UICC_APP_
 
 #### Constants
 
-The following constants are defined for MBIM_CID_MS_UICC_APP_LIST.
+The following constants are defined for MBIM_CID_MS_UICC_APP_INFO.
 
 `const int MBIM_MAXLENGTH_APPID = 16`  
 `const int MBIM_MAXLENGTH_APPNAME = 256`  
@@ -223,8 +233,8 @@ The MBIM_PIN_TYPE_EX enumeration is used in the preceding MBIM_UICC_FILE_STATUS 
 | MBIMPinTypeServiceProviderPin | 8 | The service provider (SP) personalization key. |
 | MBIMPinTypeCorporatePin | 9 | The corporate personalization key. |
 | MBIMPinTypeSubsidyLock | 10 | The subsidy unlock key. | 
-| MBIMPinTypePuk1 | 11 | The Personal Identification Number1 Unlock Key (PUK1). |
-| MBIMPinTypePuk2 | 12 | The Personal Identification Number2 Unlock Key (PUK2). |
+| MBIMPinTypePuk1 | 11 | The Personal Identification Number 1 Unlock Key (PUK1). |
+| MBIMPinTypePuk2 | 12 | The Personal Identification Number 2 Unlock Key (PUK2). |
 | MBIMPinTypeDeviceFirstSimPuk | 13 | The device to very first SIM PIN unlock key. |
 | MBIMPinTypeNetworkPuk | 14 | The network personalization unlock key. |
 | MBIMPinTypeNetworkSubsetPuk | 15 | The network subset personalization unlock key. |
@@ -377,13 +387,13 @@ The following status codes are applicable:
 
 This CID is used to perform all PIN security operations as defined in Section 9 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594). The CID is similar to MBIM_CID_MS_PIN, but extends it to support multi-app UICC cards. Only single-verification-capable UICCs are supported. Multi-verification-capable UICCs that support more than one application PIN are not supported. One application PIN (PIN1) is assigned to all ADFs/DFs and files on the UICC. However, each application can specify a local PIN (PIN2) as a level 2 user verification requirement, resulting in the need for additional validation for every access command. This scenario is what MBIM_CID_MS_PIN_EX supports.
 
-Just like MBIM_CID_MS_PIN, with MBIM_CID_MS_PIN_EX the device only reports one PIN at a time. If multiple PINs are enabled and reporting multiple PINs is also enabled, then functions must report PIN1 first. For example, if Subsidy lock reporting is enabled and the SIM's PIN1 is enabled, then the Subsidy lock PIN should be reported in a subsequent query request only after PIN1 has been successfully verified. An empty PIN is permitted together with MBIMPinOperationEnter. An empty PIN is specified by setting the PinSize to zero. In this case, a SET command is similar to a QUERY and returns the state of the PIN referenced. This is fully aligned to the behavior of the VERIFY command as specified in Section 11.1.9 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594).
+Just like MBIM_CID_MS_PIN, with MBIM_CID_MS_PIN_EX the device only reports one PIN at a time. If multiple PINs are enabled and reporting multiple PINs is also enabled, then functions must report PIN1 first. For example, if subsidy lock reporting is enabled and the SIM's PIN1 is enabled, then the subsidy lock PIN should be reported in a subsequent query request only after PIN1 has been successfully verified. An empty PIN is permitted together with MBIMPinOperationEnter. An empty PIN is specified by setting the PinSize to zero. In this case, a SET command is similar to a QUERY and returns the state of the PIN referenced. This is fully aligned to the behavior of the VERIFY command as specified in Section 11.1.9 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594).
 
 ### Parameters
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | NBIM_SET_PIN_EX | MBIM_PIN_APP | Not applicable |
+| Command | MBIM_SET_PIN_EX | MBIM_PIN_APP | Not applicable |
 | Response | MBIM_PIN_INFO_EX | MBIM_PIN_INFO_EX | Not applicable |
 
 ### Query

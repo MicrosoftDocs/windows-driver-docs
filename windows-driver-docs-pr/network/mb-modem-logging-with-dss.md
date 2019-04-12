@@ -24,7 +24,7 @@ OS abstraction of MBB config levels is mapped to the appropriate internal modem 
 
 For modems that support MBB logging, all MBB logging config levels except for MBIMLoggingLevelOem must be present on all BSP variants. In other words, the IHV or OEM must support PROD or LAB levels of MBB logging in both production and R&D versions of the BSP. LAB levels of MBB logging can only be disabled from the OS.
 
-This new logging interface's design uses the control channel to set the logging parameters, and uses the data channel to receive modem logs because the data channel is designed to transfer bulk modem data such as modem logs. The advantage of this design is that bulk data does not need to be transferred over the control channel, thus keeping device performance consistent. It also scales well for higher throughput. The data channel is operated by DSS commands. An example flow for a modem might look like this:
+This new logging interface's design uses the control channel to set the logging parameters, and uses the data channel to receive modem logs because the data channel is designed to transfer bulk modem data. The advantage of this design is that bulk data does not need to be transferred over the control channel, thus keeping device performance consistent. It also scales well for higher throughput. The data channel is operated by DSS commands. An example flow for a modem might look like this:
 
 1. The OS sends the MBIM_CID_MODEM_LOGGING_CONFIG CID to the modem to configure logging parameters such as MaxSegmentSize, MaxFlushTime, and the LoggingLevel.
 2. Once the OS receives a successful response from the modem, it sends the MBIM_CID_DSS_CONNECT DSS command to the modem with a specific GUID for modem logging, the MBIMDssLinkActivate state, and a unique DSS session ID.
@@ -45,6 +45,12 @@ The following flow diagram illustrates the DSS setup and tear down process.
 
 ![DSS modem logging setup and tear down flow diagram](images/mb-modem-logging-dss-flow.png "DSS modem logging setup and tear down flow diagram.")
 
+## NDIS interface extension
+
+The following OID has been defined in Windows 10, version 1903, to support modem logging.
+
+- [OID_WWAN_MODEM_LOGGING_CONFIG](oid-wwan-modem-logging-config.md)
+
 ## MBIM service and CID values
 
 | Service name | UUID | UUID value |
@@ -57,7 +63,7 @@ The following table specifies the UUID and command code for each CID, as well as
 | --- | --- | --- | --- | --- | --- |
 | MBIM_CID_MODEM_LOGGING_CONFIG | UUID_BASIC_CONNECT_EXTENSIONS | TBD | Y | Y | Y |
 
-## Modem logging control path (MBIM_CID_MODEM_LOGGING_CONFIG)
+## MBIM_CID_MODEM_LOGGING_CONFIG
 
 This CID is used to configure the logs that are collected by the modem and how often they will be sent from the modem to the host over DSS. Logging must be configured before a logging session is started. Because this CID is part of connect extensions, it is optional for IHVs to support this CID. If an IHV supports modem logging via the DSS data channel, it must specify this as a capability. The capability can be advertised using the MBIM_BASIC_CID_DEVICE_SERVICES CID.
 
@@ -72,7 +78,7 @@ This CID is used to configure the logs that are collected by the modem and how o
 
 Queries the current modem logging configuration. The InformationBuffer of MBIM_COMMAND_MSG is not used. The following MBIM_MODEM_LOGGING_CONFIG structure is used in the InformationBuffer of MBIM_COMMAND_DONE.
 
-#### MBIM_MODDEM_LOGGING_CONFIG
+#### MBIM_MODEM_LOGGING_CONFIG
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
@@ -100,7 +106,7 @@ A set command is used to set to configure the level, segment size, and maximum f
 
 ### Response
 
-The InformationBuffer in MBIM_COMMAND_DONE contains an MBIM_NITZ_INFO structure.
+The InformationBuffer in MBIM_COMMAND_DONE contains an MBIM_MODEM_LOGGING_CONFIG structure.
 
 ### Unsolicited Events
 
