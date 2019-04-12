@@ -29,7 +29,7 @@ If you don’t have an approved EV code signing certificate, you can buy one fro
 
 - [Buy a GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
 
-- [Buy a Comodo EV code signing certificate](https://go.microsoft.com/fwlink/?linkid=863208)
+- [Buy a Sectigo (formerly Comodo) EV code signing certificate](https://go.microsoft.com/fwlink/?linkid=863208)
 
 - [Buy a DigiCert EV code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393249)
 

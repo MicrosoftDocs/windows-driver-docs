@@ -16,7 +16,8 @@ ms.localizationpriority: medium
 
 The VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP bug check has a value of 0x000001A8. It indicates that a user initiated DXGKRNL live dump for black screen scenarios has occurred.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 
 ## VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP Parameters
@@ -30,11 +31,14 @@ The VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP bug check has a value of 0x000001A8.
 
 **Source Values**
 
-     0x1: Black screen hotkey generated DXGKRNL black screen live dump
-     0x2: Volume combo key generated DXGKRNL black screen live dump
-     0x4: Internal generated DXGKRNL black screen live dump
-     0x8: Long Power Button Hold (LPBH) generated DXGKRNL black screen live dump
 
+0x1: Black screen hotkey generated DXGKRNL black screen live dump
+
+0x2: Volume combo key generated DXGKRNL black screen live dump
+
+0x4: Internal generated DXGKRNL black screen live dump
+
+0x8: Long Power Button Hold (LPBH) generated DXGKRNL black screen live dump
 
 ## Cause
 -----
@@ -43,20 +47,7 @@ User initiated DXGKRNL live dump for black screen scenarios. See the values for 
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
-
 ## See Also
 ----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
-
-
-
-
-
-
-
- 
-
-
-
-

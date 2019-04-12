@@ -19,7 +19,6 @@ ms.localizationpriority: medium
 
 # Encoder Implementation and Support
 
-
 In Windows XP Service Pack 1, Microsoft defined three kernel streaming property sets and one enumeration in *ksmedia.h* to support video-only encoder devices. Each property set contains a single property. In other words, each property receives its own property set. If your driver makes *get*-property or *Set*-property calls, then specify the property set's GUID (as defined in *ksmedia.h*) in the **Set** member of the [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) structure and zero in the **Id** member when you set up the call:
 
 <table>
@@ -48,8 +47,6 @@ In Windows XP Service Pack 1, Microsoft defined three kernel streaming property 
 </tr>
 </tbody>
 </table>
-
- 
 
 Clients access these properties by deriving the **IVideoEncoder** COM interface from the **IEncoderAPI** COM interface (described in the Windows Software Development Kit (SDK) documentation).
 
@@ -96,8 +93,6 @@ In DirectX 9.0, six additional property sets and one event set were defined in *
 </tbody>
 </table>
 
- 
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -117,20 +112,10 @@ In DirectX 9.0, six additional property sets and one event set were defined in *
 </tbody>
 </table>
 
- 
-
 Clients access these properties through the **ICodecAPI** COM interface (described in the Windows SDK documentation). See [Encoder Installation and Registration](encoder-installation-and-registration.md) for more information about the COM interfaces, including how to specify which interface KsProxy should expose.
 
 A minidriver should implement support for basic *get*-property queries. The topic [Encoder Code Examples](encoder-code-examples.md) demonstrates how to support *get*-property queries.
 
 When developing an encoder filter, move encoding functionality into a separate filter from a video capture filter. Define your own private mediums so that graph builders can properly connect encoder and capture filters. If your hardware is capable of bus mastering non-encoded content, then you may also expose public mediums. If you implement both public and private mediums, then list the private mediums first because it reduces graph building time; to find the correct filter when building a filter graph.
 
-For more information about the issues and reasons to separate encoding functionality into its own filter, see the [Designing Video Capture Boards for Use with the Microsoft ActiveX Video Control](https://go.microsoft.com/fwlink/p/?linkid=204793) paper on the Microsoft website. For more information about using mediums and multiple instances of a filter (in separate filter graphs) see [Mediums and Categories](mediums-and-categories.md).
-
- 
-
- 
-
-
-
-
+For more information about using mediums and multiple instances of a filter (in separate filter graphs) see [Mediums and Categories](mediums-and-categories.md).

@@ -90,7 +90,7 @@ If a debugger is attached, a bug check will cause the target computer to break i
 
 Kernel debugging is especially useful when other troubleshooting techniques fail, or for a recurring problem. Remember to capture the exact text in the bug check information section of the error message. To isolate a complex problem and develop a viable workaround, it is useful to record the exact actions that lead to the failure.
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code.
 
