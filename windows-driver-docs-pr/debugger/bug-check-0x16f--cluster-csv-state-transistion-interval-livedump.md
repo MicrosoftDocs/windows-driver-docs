@@ -16,7 +16,9 @@ ms.localizationpriority: medium
 
 The CLUSTER\_CSV\_STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP bug check has a value of 0x0000016F. This indicates that a Cluster Shared Volume next state transition request has not arrived.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 
 ## CLUSTER\_CSV\_STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP Parameters
@@ -32,12 +34,15 @@ The CLUSTER\_CSV\_STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP bug check has a
 
 **CSV target state Id**
 
-     0  Waiting for volume to transition to the Init state. 
-     1  Waiting for volume to transition to the Paused state. 
-     2  Waiting for volume to transition to the Draining state. 
-     3  Waiting for volume to transition to the Set-Down-Level state. 
-     4  Waiting for volume to transition to the Active state.
+0  Waiting for volume to transition to the Init state. 
 
+1  Waiting for volume to transition to the Paused state. 
+
+2  Waiting for volume to transition to the Draining state. 
+
+3  Waiting for volume to transition to the Set-Down-Level state. 
+
+4  Waiting for volume to transition to the Active state.
 
 ## Cause
 -----
@@ -59,7 +64,3 @@ The system generated a live dump for analysis of the delay.
 [Troubleshooting Hangs Using Live Dump (Blog)](https://blogs.msdn.microsoft.com/clustering/2016/03/02/troubleshooting-hangs-using-live-dump/)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
-
-
-
-

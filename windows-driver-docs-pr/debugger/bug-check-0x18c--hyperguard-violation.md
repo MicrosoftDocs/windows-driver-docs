@@ -16,7 +16,9 @@ ms.localizationpriority: medium
 
 The HYPERGUARD\_VIOLATION bug check has a value of 0x0000018C. This indicates that the kernel has detected that critical kernel code or data have been corrupted.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 > [!NOTE] 
 > This bug code is reserved for use by Hyperguard only.  
@@ -29,38 +31,57 @@ The HYPERGUARD\_VIOLATION bug check has a value of 0x0000018C. This indicates th
 
 | Parameter | Description |
 |-----------|-------------|
-| 1         | Type of corrupted region - values listed below. |
-| 2         | Failure type dependent information. |
-| 3         | Reserved.  |
-| 4         | Reserved.  |
+| 1    | Type of corrupted region - values listed below. |
+| 2    | Failure type dependent information. |
+| 3    | Reserved.  |
+| 4    | Reserved.  |
 
 
 **Type of corrupted region**
 
-     1001 : A generic data region
-     1002 : A page hash mismatch
-     1004 : A processor IDT
-     1005 : A processor GDT
-     1007 : Debug routine modification
-     1008 : A dynamic code region
-     1009 : A generic shareable data region
-     100a : A hypervisor overlay region
-     100b : A processor mode misconfiguration
-     100c : An extended processor control register
-     100d : A secure memory region
-     100e : A loaded module
-     100f : A processor state region
-     1010 : The kernel CFG bitmap
-     1011 : The virtual address 0 page
-     1012 : The alternate inverted function table
-     1013 : An on-demand page verification failed
-     1016 : A secure image region
-     1017 : Kernel virtual address protection inconsistency
-     1101 : Internal context corruption
-     1102 : IDTR modification
-     1103 : GDTR modification
+1001 : A generic data region
 
+1002 : A page hash mismatch
 
+1004 : A processor IDT
+
+1005 : A processor GDT
+
+1007 : Debug routine modification
+
+1008 : A dynamic code region
+
+1009 : A generic shareable data region
+
+100a : A hypervisor overlay region
+
+100b : A processor mode misconfiguration
+
+100c : An extended processor control register
+
+100d : A secure memory region
+
+100e : A loaded module
+
+100f : A processor state region
+
+1010 : The kernel CFG bitmap
+
+1011 : The virtual address 0 page
+
+1012 : The alternate inverted function table
+
+1013 : An on-demand page verification failed
+
+1016 : A secure image region
+
+1017 : Kernel virtual address protection inconsistency
+
+1101 : Internal context corruption
+
+1102 : IDTR modification
+
+1103 : GDTR modification
 
 ## Cause
 -----

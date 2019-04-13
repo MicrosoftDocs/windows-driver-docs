@@ -16,7 +16,9 @@ ms.localizationpriority: medium
 
 The CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP bug check has a value of 0x00000166. This indicates that a Cluster Resource call took longer than configured timeout.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 
 ## CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP Parameters
@@ -30,20 +32,33 @@ The CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP bug check has a value of 0x000001
 
 **Resource call type**
 
-    1  OPEN
-    2  CLOSE
-    3  ONLINE
-    4  OFFLINE
-    5  TERMINATE
-    6  ARBITRATE
-    7  RELEASE
-    8  RESOURCE CONTROL
-    9  RESOURCE TYPE CONTROL
-    10 LOOKS ALIVE
-    11 IS ALIVE
-    12 FAILURE NOTIFICATION
-    13 SHUTDOWN PROCESS
-    14 CANCEL
+1  OPEN
+
+2  CLOSE
+
+3  ONLINE
+
+4  OFFLINE
+
+5  TERMINATE
+
+6  ARBITRATE
+
+7  RELEASE
+
+8  RESOURCE CONTROL
+
+9  RESOURCE TYPE CONTROL
+
+10 LOOKS ALIVE
+
+11 IS ALIVE
+
+12 FAILURE NOTIFICATION
+
+13 SHUTDOWN PROCESS
+
+14 CANCEL
 
 
 ## Cause

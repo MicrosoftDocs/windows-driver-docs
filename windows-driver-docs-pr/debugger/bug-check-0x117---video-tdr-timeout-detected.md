@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The VIDEO\_TDR\_TIMEOUT\_DETECTED bug check has a value of 0x00000117. This indicates that the display driver failed to respond in a timely fashion.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## VIDEO\_TDR\_TIMEOUT\_DETECTED Parameters
 
@@ -81,7 +83,7 @@ The GPU is taking more time than permitted to display graphics to your monitor. 
     -   Defective parts (memory modules, motherboards, etc.)
 -   Visual effects, or too many programs running in the background may be slowing your PC down so that the video card can not respond as necessary.
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ```dbgcmd
 3: kd> !analyze -v

@@ -16,7 +16,9 @@ ms.localizationpriority: medium
 
 The CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG bug check has a value of 0x00000171. This indicates that Cluster disconnect is not making forward progress.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 
 ## CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG Parameters

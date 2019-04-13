@@ -5,9 +5,7 @@ ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---
 
-
 # Switch from Legacy MBR disk to GPT disk with Windows 10
-
 
 To facilitate upgrading from downlevel operating systems, such as Windows 7, or transitioning from BIOS Boot to UEFI Boot for the enhanced security features. Microsoft has provided the following information. The steps in the following sections will enable a more seamless upgrade to Windows 10 and enable the user the ability to leverage the new and improved security features of Windows 10. For purposes of the below steps, we will refer to the GUID Partition Table as GPT, and Legacy Master Boot Record as Legacy MBR boot disks.
 
@@ -20,13 +18,13 @@ These four configurations will be used:
 
 ## Upgrade paths
 
-| Existing OS+Config | Target OS+Config | Results | Security options | Coverage |
-|---|---|---|---|---|
-| Windows 7 **x64** installed to system with UEFI firmware, CSM enabled on GPT HDD (Config \# 2) | Windows 10 **x64** installed to UEFI firmware CSM enabled on GPT HDD (Config \# 2)        | Will bootup and run Windows 10 OS               | OS is able to make use of MS security features supported in firmware once CSM is disabled | Not covered in this document                                                                  |
+| Existing OS+Config | Target OS+Config | Results | Security options |
+| ---  |--- | --- | --- |
+| Windows 7 **x64** installed to system with UEFI firmware, CSM enabled on GPT HDD (Config \# 2) | Windows 10 **x64** installed to UEFI firmware CSM enabled on GPT HDD (Config \# 2)        | Will bootup and run Windows 10 OS               | OS is able to make use of MS security features supported in firmware once CSM is disabled |
 | Windows 7 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3)               | Windows 10 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3)         | Will bootup and run Windows 10 OS               | Only able to leverage Bitlocker                                                           | Not covered in this document                                                                  |
 | Windows 7 **x86** installed to BIOS with active partition NTFS HDD (Config \# 3)               | Windows 10 **x86** installed to BIOS with active partition NTFS HDD = works (Config \# 3) | Will bootup and run Windows 10 OS               | Only able to leverage Bitlocker                                                           | Not covered in this document                                                                  |
-| Windows 7 **x86** installed to BIOS with active partition NTFS (Config \# 3)                   | Windows 10 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3)         | Will need installation media and clean install. | Only able to leverage Bitlocker (other security features require UEFI boot)               | Not covered in this document                                                                  |
-| Windows 7 **x64** installed to BIOS with active partition NTFS (Config \# 3)                   | Windows 10 **x64** installed to UEFI firmware CSM disabled on GPT HDD (Config \# 1)        | Special instructions below                      | OS is able to make use of MS security features supported in firmware                      | See [General overview for switching Legacy BIOS boot+CSM to UEFI+GPT](#_General_overview_for) |
+| Windows 7 **x86** installed to BIOS with active partition NTFS (Config \# 3)                   | Windows 10 **x64** installed to BIOS with active partition NTFS HDD (Config \# 3)         | Will need installation media and clean install. | Only able to leverage Bitlocker (other security features require UEFI boot)               |
+| Windows 7 **x64** installed to BIOS with active partition NTFS (Config \# 3)                   | Windows 10 **x64** installed to UEFI firmware CSM disabled on GPT HDD (Config \# 1)        | Special instructions below                      | OS is able to make use of MS security features supported in firmware
 
 ## Definition of terms
 
@@ -35,9 +33,7 @@ These four configurations will be used:
 
 **Legacy MBR boot** is not able to recognize GUID Partition Table (GPT) disks. It requires an active partition and supporting BIOS to facilitate access to disk. OLD and limited on HDD size and number of partitions. On UEFI firmware systems, it requires CSM enabled and loaded into memory to facilitate active partition booting.
 
-
 ## In this section
-
 
 [New method - Windows 10, version 1703 and later](new-method--windows-10--version-1703-and-later.md)
 
@@ -47,12 +43,6 @@ These four configurations will be used:
 
 [How to convert an installed x64 Windows 7 system](how-to-convert-an-installed-x64-windows-7.md)
 
-
-
 ## Related resources
 
-
 [Windows 10 Specification](https://www.microsoft.com/windows/Windows-10-specifications)
-
-
-

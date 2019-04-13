@@ -16,7 +16,9 @@ ms.localizationpriority: medium
 
 The USB\_DRIPS\_BLOCKER\_SURPRISE\_REMOVAL\_LIVEDUMP bug check has a value of 0x000001A5. It indicates that a USB device will be surprise removed because it is blocking DRIPS.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## USB\_DRIPS\_BLOCKER\_SURPRISE\_REMOVAL\_LIVEDUMP Parameters
 
