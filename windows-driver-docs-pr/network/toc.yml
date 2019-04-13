@@ -2618,8 +2618,12 @@
       href: mb-lte-attach-operations.md
     - name: "MB Protocol Configuration Options (PCO) Operations"
       href: mb-protocol-configuration-options-pco-operations.md
-    - name: "MB low level UICC access"
-      href: mb-low-level-uicc-access.md
+    - name: "MB UICC operations"
+      items:
+      - name: "MB low level UICC access"
+        href: mb-low-level-uicc-access.md
+      - name: "MB UICC application and file system access"
+        href: mb-uicc-application-and-file-system-access.md
     - name: "MB reset and recovery"
       items:
       - name: "MB Device-based Reset and Recovery"
@@ -2633,6 +2637,14 @@
       href: mb-sar-platform-support.md
     - name: "MB base stations information query support"
       href: mb-base-stations-information-query-support.md
+    - name: "MB NITZ support"
+      href: mb-nitz-support.md
+    - name: "MB modem logging with DSS"
+      href: mb-modem-logging-with-dss.md
+    - name: "MB 5G operations"
+      items:
+      - name: "MB 5G data class support"
+        href: mb-5g-data-class-support.md
     - name: "MB eSIM MBIM ready state guidance"
       href: mb-esim-mbim-ready-state-guidance.md
     - name: "MB NDIS Status Notifications"
@@ -2676,12 +2688,16 @@
         href: ndis-status-wwan-lte-attach-status.md
       - name: "NDIS_STATUS_WWAN_MODEM_CONFIG_INFO"
         href: ndis-status-wwan-modem-config-info.md
+      - name: "NDIS_STATUS_WWAN_MODEM_LOGGING_CONFIG"
+        href: ndis-status-wwan-modem-logging-config.md
       - name: "NDIS_STATUS_WWAN_MPDP_LIST"
         href: ndis-status-wwan-mpdp-list.md
       - name: "NDIS_STATUS_WWAN_MPDP_STATE"
         href: ndis-status-wwan-mpdp-state.md
       - name: "NDIS_STATUS_WWAN_NETWORK_BLACKLIST"
         href: ndis-status-wwan-network-blacklist.md
+      - name: "NDIS_STATUS_WWAN_NITZ_INFO"
+        href: ndis-status-wwan-nitz-info.md
       - name: "NDIS_STATUS_WWAN_PACKET_SERVICE"
         href: ndis-status-wwan-packet-service.md
       - name: "NDIS_STATUS_WWAN_PCO_STATUS"
@@ -2730,6 +2746,14 @@
         href: ndis-status-wwan-supported-device-services.md
       - name: "NDIS_STATUS_WWAN_SYS_CAPS"
         href: ndis-status-wwan-sys-caps.md
+      - name: "NDIS_STATUS_WWAN_UICC_APP_LIST"
+        href: ndis-status-wwan-uicc-app-list.md
+      - name: "NDIS_STATUS_WWAN_UICC_BINARY_RESPONSE"
+        href: ndis-status-wwan-uicc-binary-response.md
+      - name: "NDIS_STATUS_WWAN_UICC_FILE_STATUS"
+        href: ndis-status-wwan-uicc-file-status.md
+      - name: "NDIS_STATUS_WWAN_UICC_RECORD_RESPONSE"
+        href: ndis-status-wwan-uicc-record-response.md
       - name: "NDIS_STATUS_WWAN_UICC_RESET_INFO"
         href: ndis-status-wwan-uicc-reset-info.md
       - name: "NDIS_STATUS_WWAN_USSD"
@@ -5206,12 +5230,16 @@
       href: oid-wwan-lte-attach-status.md
     - name: "OID_WWAN_MODEM_CONFIG_INFO"
       href: oid-wwan-modem-config-info.md
+    - name: "OID_WWAN_MODEM_LOGGING_CONFIG"
+      href: oid-wwan-modem-logging-config.md
     - name: "OID_WWAN_MPDP"
       href: oid-wwan-mpdp.md
     - name: "OID_WWAN_NETWORK_BLACKLIST"
       href: oid-wwan-network-blacklist.md
     - name: "OID_WWAN_NETWORK_IDLE_HINT"
       href: oid-wwan-network-idle-hint.md
+    - name: "OID_WWAN_NITZ"
+      href: oid-wwan-nitz.md
     - name: "OID_WWAN_PACKET_SERVICE"
       href: oid-wwan-packet-service.md
     - name: "OID_WWAN_PCO"
@@ -5220,6 +5248,8 @@
       href: oid-wwan-pin.md
     - name: "OID_WWAN_PIN_EX"
       href: oid-wwan-pin-ex.md
+    - name: "OID_WWAN_PIN_EX2"
+      href: oid-wwan-pin-ex2.md
     - name: "OID_WWAN_PIN_LIST"
       href: oid-wwan-pin-list.md
     - name: "OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS"
@@ -5260,6 +5290,14 @@
       href: oid-wwan-subscribe-device-service-events.md
     - name: "OID_WWAN_SYS_CAPS_INFO"
       href: oid-wwan-sys-caps.md
+    - name: "OID_WWAN_UICC_ACCESS_BINARY"
+      href: oid-wwan-uicc-access-binary.md
+    - name: "OID_WWAN_UICC_ACCESS_RECORD"
+      href: oid-wwan-uicc-access-record.md
+    - name: "OID_WWAN_UICC_APP_LIST"
+      href: oid-wwan-uicc-app-list.md
+    - name: "OID_WWAN_UICC_FILE_STATUS"
+      href: oid-wwan-uicc-file-status.md
     - name: "OID_WWAN_UICC_RESET"
       href: oid-wwan-uicc-reset.md
     - name: "OID_WWAN_USSD"
