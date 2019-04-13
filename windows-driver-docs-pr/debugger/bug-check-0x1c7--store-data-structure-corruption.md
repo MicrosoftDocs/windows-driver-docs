@@ -16,7 +16,9 @@ ms.localizationpriority: medium
 
 The STORE\_DATA\_STRUCTURE\_CORRUPTION bug check has a value of 0x000001C7. It indicates that the store component detected a corruption in its data structures.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
  
 
 ## STORE\_DATA\_STRUCTURE\_CORRUPTION Parameters
@@ -31,7 +33,7 @@ The STORE\_DATA\_STRUCTURE\_CORRUPTION bug check has a value of 0x000001C7. It i
 
 **Corruption ID**
 
-```
+```text
  0x0 : A chunk heap buffer's hash doesn't match.
     2 - Chunk heap buffer whose hash didn't match.
     3 - Expected buffer hash.
@@ -53,7 +55,6 @@ The STORE\_DATA\_STRUCTURE\_CORRUPTION bug check has a value of 0x000001C7. It i
     4 - Reserved.
 ```
 
-
 ## Cause
 -----
 
@@ -67,7 +68,6 @@ This bugcheck can occur by memory corruption due to physical memory access. The 
 
 For more information on Windows memory manager, see [Windows Internals 7th Edition Part 1](https://docs.microsoft.com/en-us/sysinternals/learn/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
-
 ## Resolution
 -----
 
@@ -75,11 +75,9 @@ For more information on Windows memory manager, see [Windows Internals 7th Editi
 
 To investigate if this bug check is caused by defective RAM hardware, run the Windows Memory Diagnostics tool. In the control panel search box, type Memory, and then click *Diagnose your computer's memory problems*.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
-
 ## See Also
 ----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
 [Windows Kernel-Mode Memory Manager](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/windows-kernel-mode-memory-manager)
-

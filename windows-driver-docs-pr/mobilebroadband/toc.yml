@@ -324,12 +324,28 @@
 - name: "Mobile operator scenarios"
   href: mobile-operator-scenarios-b-mb.md
   items: 
-  - name: Mobile Plans
+  - name: "Mobile Plans"
+    href: mobile-plans.md
     items:
-    - name: "Promotional content"
-      href: mobile-plans-promotional-content.md
-    - name: "Asynchronous fulfillment"
-      href: mobile-plans-asynchronous-fulfillment.md
+    - name: "Mobile Plans use cases"
+      href: mobile-plans-use-cases.md
+      items:
+      - name: "Mobile operator web portal"
+        href: mobile-plans-web-portal.md
+      - name: "Callback notifications"
+        href: mobile-plans-callback-notifications.md
+      - name: "Service configuration"
+        href: mobile-plans-service-configuration.md
+      - name: "eSIM download error handling"
+        href: mobile-plans-eSIM-error-handling.md
+      - name: "Windows 10 device experience"
+        href: mobile-plans-device-experience.md
+    - name: "Integration"
+      href: mobile-plans-integration.md
+    - name: "Launch"
+      href: mobile-plans-launch.md
+    - name: "Appendix"
+      href: mobile-plans-appendix.md
   - name: "Creating and configuring Internet Sharing experiences"
     href: creating-and-configuring-internet-sharing-experiences.md
   - name: "Developing apps using multiple PDP contexts"

@@ -17,7 +17,9 @@ ms.localizationpriority: medium
 The SMB\_REDIRECTOR\_LIVEDUMP bug check has a value of 0x000001A7. It indicates that the SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
 
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
  
 
 ## SMB\_REDIRECTOR\_LIVEDUMP Parameters
@@ -33,7 +35,7 @@ The SMB redirector has detected a problem and has captured a kernel dump to coll
 
 **Reason Code**
 
-```
+```text
 0x1 : An I/O failed to complete in a reasonable amount of time.
     2 - Pointer to the connection object.
     3 - Reserved.
@@ -55,9 +57,7 @@ When this registry key is set and the RDR times out on IO, a livedump will occur
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
-
 ## See Also
 ----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
-

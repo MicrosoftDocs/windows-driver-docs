@@ -8,11 +8,9 @@ ms.localizationpriority: medium
 
 # WDTF Object Name tags
 
-
 The WDTF OBJECT\_NAME tags are used in WDTF object logging.
 
 ## WDTF Core
-
 
 <table>
 <colgroup>

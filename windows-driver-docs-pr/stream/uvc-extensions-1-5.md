@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 ### 1.1 Summary
 
-Microsoft extensions to the [USB Video Class specification](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) enable new controls as well as the capability to carry well-defined frame-metadata in a standard format.
+Microsoft extensions to the [USB Video Class specification](https://go.microsoft.com/fwlink/p/?linkid=2085170) enable new controls as well as the capability to carry well-defined frame-metadata in a standard format.
 
 ### 1.2 Architecture Decisions
 
@@ -33,7 +33,7 @@ UVC metadata will only support system allocated memory. VRAM or DX surfaces will
 
 ##### 2.2.1.1 Still Image Capture – Method 2
 
-Some existing UVC devices may not support Method 2 described in section 2.4.2.4 (Still Image Capture) of the *UVC 1.5 Class specification.pdf* that can be downloaded at the [USB Video Class specification](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) web site. 
+Some existing UVC devices may not support Method 2 described in section 2.4.2.4 (Still Image Capture) of the *UVC 1.5 Class specification.pdf* that can be downloaded at the [USB Video Class specification](https://go.microsoft.com/fwlink/p/?linkid=2085170) web site.
 
 In Windows 10, version 1607 and earlier, the capture pipeline did not leverage Method 2, even if a device advertised support for it per the UVC 1.5 spec.
 

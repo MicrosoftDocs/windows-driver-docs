@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The WDF\_VIOLATION bug check has a value of 0x0000010D. This indicates that Kernel-Mode Driver Framework (KMDF) detected that Windows found an error in a framework-based driver.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## WDF\_VIOLATION Parameters
 
@@ -220,7 +222,7 @@ See the description of each code in the Parameters section for an explanation of
 Resolution
 ----------
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in gathering information, such as the faulting code module.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in gathering information, such as the faulting code module.
 
 Typically, the WDF dump file will yield further information on the driver that caused this bug check. Use this command to look at the log file.
 
