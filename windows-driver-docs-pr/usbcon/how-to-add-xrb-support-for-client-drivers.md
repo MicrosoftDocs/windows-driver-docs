@@ -12,7 +12,7 @@ This topic describes how a USB client driver can use Windows Driver Model (WDM) 
 
 The client driver uses an URB to package all information required by the lower drivers in the USB driver stack to process the request. In the Windows operating system, an URB is described in a [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure.
 
-Microsoft provides a library of [Routines for USB Client Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540134#client). By using those routines, USB client drivers can build URB requests for certain specified operations and forward them down the USB stack. If you prefer, you can design your client driver to call the library routines for the supported operations rather than building your own URB requests.
+Microsoft provides a library of [Routines for USB Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#client). By using those routines, USB client drivers can build URB requests for certain specified operations and forward them down the USB stack. If you prefer, you can design your client driver to call the library routines for the supported operations rather than building your own URB requests.
 
 This topic contains the following sections:
 
