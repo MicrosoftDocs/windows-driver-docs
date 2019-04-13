@@ -50,7 +50,7 @@ The enumeration callback routine must return a pointer to an array of *function 
 
 The generic parent driver creates a physical device object (PDO) for each function descriptor.
 
-The USB device configuration interface and the enumeration callback routine is summarized in [Generic Parent Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff540134#usbccgp).
+The USB device configuration interface and the enumeration callback routine is summarized in [Generic Parent Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#usbccgp).
 
 ### USB Generic Parent Driver Loading Mechanism
 

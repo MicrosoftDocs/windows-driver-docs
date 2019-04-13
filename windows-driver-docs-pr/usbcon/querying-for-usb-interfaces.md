@@ -53,7 +53,7 @@ To get a bus driver interface, the client driver must send an [**IRP\_MN\_QUERY\
     ntStatus = IoCallDriver(PDO that the client passes URBs to, irp);
     ```
 
-For further information about USB interfaces see [Bus Driver Interface Routines for USB Client Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540134#usbdi).
+For further information about USB interfaces see [Bus Driver Interface Routines for USB Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#usbdi).
 
 ## Related topics
 [Developing Windows client drivers for USB devices](usb-driver-development-guide.md)  
