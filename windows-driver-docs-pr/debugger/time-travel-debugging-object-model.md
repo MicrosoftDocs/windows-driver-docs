@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Introduction to Time Travel Debugging objects
 description: This section describes how to use the data model to query time travel traces. 
-ms.date: 12/19/2017
+ms.date: 04/15/2019
 ms.localizationpriority: medium
 ---
 
@@ -189,9 +189,13 @@ Use this LINQ query to display in grid format, the approximate longest running t
 =========================================================
 ```
 
+## Troubleshooting TTD Queries for calls to a DLL
 
+There can be a several reasons that a query does not return anything for calls to a DLL. 
 
-
+- The syntax for the call isn't quite right.  Try verifying the call syntax by using the x command: "x <call>". If the module name returned by x is in uppercase, use that.
+- The DLL is not loaded yet and is loaded later in the trace. To work around this travel to a point in time after the DLL is loaded and redo the query.
+- The call is inlined which the query engine is unable to track.
 
 ## See Also
 
@@ -200,8 +204,3 @@ Use this LINQ query to display in grid format, the approximate longest running t
 [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
 
 ---
-
-
-
-
-

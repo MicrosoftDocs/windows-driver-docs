@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
-ms.date: 04/12/2019
+ms.date: 04/15/2019
 ms.localizationpriority: medium
 ---
 
