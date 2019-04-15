@@ -57,12 +57,15 @@ Successfully created the index in 49ms.
 
 ## Sharing TTD Trace .RUN files
 
-TTD trace files can be shared with others by copying the .RUN file. This can be handy for having a coworker help you figure out the problem. They don't need to install the crashing app or do any other related setup to attempt to reproduce the issue. They can just load the trace file and debug the app as if it was installed on their PC. 
+TTD is local only and does not work remotely connected to another machine.
+
+TTD trace files can be shared with others by copying the .RUN file. This can be handy for having a coworker help you figure out the problem. They don't need to install the crashing app or do any other related setup to attempt to reproduce the issue. They can just load the trace file and debug the app as if it was installed on their PC.
+
+The machine where you replay the TTD trace must support all instructions from the record machine, for example AVX instructions. 
 
 You can rename the file to include any additional information, such as the date or a bug number.
 
 The .IDX file does not need to be copied as it can be re-created using the !index command as described above.
-
 
 > [!TIP]
 > When collaborating with others, pass on any relevant trace positions related to the problem at hand. The collaborator can use the `!tt x:y` command to move to that exact point in time in the execution of the code. Time position ranges can be included in bug descriptions to track where the possible issue may be occurring.
@@ -86,6 +89,8 @@ Error: Trace of C:\Windows\Foo.exe PID:0 did not complete successfully: status:2
 Error: Could not open 'Foo.exe'; file not found.
 Error: Corrupted trace dumped to C:\Users\User1\Documents\Foo01.run.err.
 ```
+
+
 
 ## Trace file size
 

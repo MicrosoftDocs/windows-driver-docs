@@ -63,6 +63,10 @@ This command uses a standard data model that is discoverable, extensible and com
 
 Logically name spacing things and extending on specific objects allows for the discovery of debugger extension functionality.  
 
+> [!TIP]
+> Because the Data Model C++ Object interfaces can be very verbose to implement a full C++ helper library for the data model which uses a full C++ exception and template programming paradigm is recommended. For more information, see [Using the DbgModelClientEx Library](#dbgmodelclientex) later in this topic.
+>
+
 The data model is the way that the new [WinDbg Preview](debugging-using-windbg-preview.md) debugger, shows most things. Many elements in the new UI can be queried, extended, or scripted, because they are powered by the data model. For more information, see [WinDbg Preview - Data Model](windbg-data-model-preview.md).
 
 ![Data model explore window showing process and threads](images/windbgx-data-model-process-threads.png)
