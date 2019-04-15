@@ -36,12 +36,12 @@ for download) in the following table.
 
 | Targeted versions of Windows      | Edition(s) of Visual Studio            |
 |--------------------------|----------------------------------------|
-| Windows 10, version 1803 <br/>Windows 10, version 1709 | [Visual Studio Community 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15) <br/>[Visual Studio Professional 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) <br/>[Visual Studio Enterprise 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15) |
+| Windows 10, version 1809, <br/>Windows 10, version 1803 <br/>Windows 10, version 1709 | [Visual Studio Community 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15) <br/>[Visual Studio Professional 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) <br/>[Visual Studio Enterprise 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15) |
 | Windows 10, version 1703 <br/>Windows 10, version 1607 | [Visual Studio Express 2015 for Desktop](https://go.microsoft.com/fwlink/?linkid=875331) <br/>[Visual Studio Community 2015](https://go.microsoft.com/fwlink/p/?LinkId=534599) <br/>[Visual Studio Professional 2015](https://go.microsoft.com/fwlink/p/?LinkId=619628) <br/>[Visual Studio Enterprise 2015](https://go.microsoft.com/fwlink/p/?LinkId=619629) |
 | Windows 8.1 Update <br/>Windows 8.1 | [Visual Studio 2013](https://go.microsoft.com/fwlink/?linkid=875331) |
 | Windows 8                | [Visual Studio Professional 2012](https://go.microsoft.com/fwlink/p/?LinkID=255976) <br/>[Visual Studio Ultimate 2012](https://go.microsoft.com/fwlink/p/?LinkID=255982) |
 
-### Configure Visual Studio for Windows 10, versions 1709 and 1803
+### Configure Visual Studio for Windows 10, versions 1709, 1803, and 1809
 
 When you install Visual Studio, select the **Desktop development with
 C++** workload. The Windows 10 Software Development Kit (SDK) is
@@ -78,6 +78,7 @@ develop, build, package, deploy, test, and debug drivers.
 
 | Versions of Windows      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
+| Windows 10, version 1809 | [WDK for Windows 10, version 1809](https://go.microsoft.com/fwlink/?linkid=2026156) |
 | Windows 10, version 1803 | [WDK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873060) |
 | Windows 10, version 1709 | [WDK for Windows 10, version 1709](https://go.microsoft.com/fwlink/p/?linkid=859232) |
 | Windows 10, version 1703 | [WDK for Windows 10, version 1703](https://go.microsoft.com/fwlink/p/?LinkID=845980) |
@@ -109,6 +110,7 @@ For more information about the EWDK, see
 
 | Versions of Windows               | EWDK                              |
 |-----------------------------------|-----------------------------------|
+| Windows 10, version 1809          | [EWDK for Windows 10, version 1809](https://developer.microsoft.com/windows/hardware/license-terms-EWDK) |
 | Windows 10, version 1803          | [EWDK for Windows 10, version 1803](https://developer.microsoft.com/windows/hardware/license-terms-EWDK) |
 | Windows 10, version 1709          | [EWDK for Visual Studio with Build Tools 15.6](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-6) (Recommended) <br/>[EWDK for Visual Studio with Build Tools 15.4](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709-VS15-4) <br/>[EWDK for Visual Studio with Build Tools 15.2](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1709) |
 | Windows 10, version 1703          | [EWDK for Windows 10, version 1703](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1703) |
