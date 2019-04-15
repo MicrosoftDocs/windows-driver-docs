@@ -2,7 +2,7 @@
 title: Container Support for non-DX APIs
 description: Non-DX APIs must interact with drivers and kernel more directly, so they are exposed to more complications
 ms.assetid: 6c4a6974-c67b-4710-80c6-48a5b378e088
-ms.date: 04/20/2017
+ms.date: 04/03/2019
 ms.localizationpriority: medium
 ---
 

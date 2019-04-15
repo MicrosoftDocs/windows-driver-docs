@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic lists the headers and libraries required for writing a Windows Driver Model (WDM) USB client driver.
 
-To find the header and library for a specific device driver interface (DDI), consult the reference pages in the [USB Reference](https://msdn.microsoft.com/library/windows/hardware/ff540134).
+To find the header and library for a specific device driver interface (DDI), consult the reference pages in the [USB Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/).
 
 ## Headers
 

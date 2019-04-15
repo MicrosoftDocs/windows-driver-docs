@@ -74,7 +74,7 @@ The source window has been updated to be much more in line with modern editors.
 ![Screen shot of scripting menu in debugger](images/windbgx-source-window.png)
 
 
-### Highlightighting
+### Highlighting
 
 The command window has two new highlighting features. Selecting any text will give a subtle highlight to any other instances of that text. You can then hit "Highlight/Un-highlight" or Ctrl+Alt+H to persist the highlighting. 
 
