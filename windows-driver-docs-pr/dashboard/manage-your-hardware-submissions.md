@@ -15,9 +15,13 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
 See [Find hardware submission](find-hardware-submission.md).
 
-## Update an HCK hardware submission using the Driver Update Acceptable (DUA) process
+## Update an HCK or HLK hardware submission using the Driver Update Acceptable (DUA) process
 
-See [Create a driver only update package](https://docs.microsoft.com/windows-hardware/test/hlk/user/create-a-driver-only-update-package).
+> [!Note]
+> DUA submissions can only be created off of an Initial Submission.
+> - DUA submissions shared with another company will not see the download DUA Shell button as you cannot do a DUA on a DUA submission.
+
+For instructions on how to create a DUA submission from a DUA Shell, see [Create a driver only update package](https://docs.microsoft.com/windows-hardware/test/hlk/user/create-a-driver-only-update-package).
 
 ## Registering an ExtensionId
 
