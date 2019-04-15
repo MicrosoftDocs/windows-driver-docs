@@ -189,13 +189,24 @@ Use this LINQ query to display in grid format, the approximate longest running t
 =========================================================
 ```
 
-## Troubleshooting TTD Queries for calls to a DLL
+## Troubleshooting TTD Queries
 
-There can be a several reasons that a query does not return anything for calls to a DLL. 
+### "UnknownOrMissingSymbols" as the function names
+
+The data model extension needs full symbol information in order to provide function names, parameter values, etc. When full symbol information is not available the debugger uses "UnknownOrMissingSymbols" as the function name.
+
+- If you have private symbols you will get the function name and the correct list of parameters.
+- If you have public symbols you will get the function name and a default set of parameters - four unsigned 64-bit ints.
+- If you have no symbol information for the module you are querying then “UnknownOrMissingSymbols” is used as the name.
+
+### TTD Queries for calls
+
+There can be a several reasons that a query does not return anything for calls to a DLL.
 
 - The syntax for the call isn't quite right.  Try verifying the call syntax by using the x command: "x <call>". If the module name returned by x is in uppercase, use that.
 - The DLL is not loaded yet and is loaded later in the trace. To work around this travel to a point in time after the DLL is loaded and redo the query.
 - The call is inlined which the query engine is unable to track.
+- The query pattern uses wildcards which returns too many functions.  Try to make the query pattern more specific so that the number of matched functions is small enough.
 
 ## See Also
 
