@@ -6,6 +6,7 @@ ms.date: 02/08/2019
 keywords:
  - OID_WDI_TASK_REQUEST_FTM Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID_WDI_TASK_REQUEST_FTM

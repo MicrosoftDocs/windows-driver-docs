@@ -4,6 +4,7 @@ title: Creating a New Software Driver
 description: In this topic we explain how to use Visual Studio to start writing a new software driver.
 ms.date: 04/20/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Creating a New Software Driver

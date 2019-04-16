@@ -9,6 +9,7 @@ keywords:
 - version information WDK UMDF
 ms.date: 10/02/2018
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # UMDF Version History

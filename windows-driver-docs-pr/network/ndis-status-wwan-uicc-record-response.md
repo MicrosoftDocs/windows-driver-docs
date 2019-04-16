@@ -6,6 +6,7 @@ ms.date: 04/10/2019
 keywords: 
  -NDIS_STATUS_WWAN_UICC_RECORD_RESPONSE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # NDIS_STATUS_WWAN_UICC_RECORD_RESPONSE

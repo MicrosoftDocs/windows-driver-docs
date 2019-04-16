@@ -8,6 +8,7 @@ keywords:
 - WDK
 ms.date: 05/07/2018
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Other WDK downloads
