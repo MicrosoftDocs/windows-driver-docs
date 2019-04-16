@@ -12,7 +12,7 @@ This section provides information about the new features and updates to Windows 
 
 The following is a list of new feature highlights for driver development in Windows 10.
 
-* [Windows 10, version 1903 WDK supports Visual Studio 2019](#WDK-supports-Visual-Studio-2019)
+* [Windows 10, version 1903 WDK supports Visual Studio 2019](#wdk-supports-visual-studio-2019)
 * [Windows Hardware Dev Center dashboard](#windows-hardware-dev-center-dashboard)
 * [Open publishing](#open-publishing)
 * [Debugging Tools for Windows](#debugging-tools-for-windows)
