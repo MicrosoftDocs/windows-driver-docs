@@ -6,6 +6,7 @@ keywords:
 - MB low level UICC access, Mobile Broadband low level UICC access, Mobile Broadband miniport driver low level UICC, MB UICC ATR, MB UICC Answer to Reset, MB UICC open channel, MB UICC close channel, MB UICC APDU, MB UICC terminal capability, MB UICC reset
 ms.date: 12/05/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # MB low level UICC access

@@ -6,6 +6,7 @@ keywords:
 - WDF Network Adapter Class Extension Packet descriptors and extensions, NetAdapterCx datapath descriptors, multi-ring buffers, NetAdapterCx packet descriptors, NetAdapterCx packet extensions
 ms.date: 01/30/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Packet descriptors and extensions

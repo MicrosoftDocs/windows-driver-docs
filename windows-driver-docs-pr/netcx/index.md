@@ -8,6 +8,7 @@ ms.date: 03/21/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.custom: 19H1
 ---
 
 # Network Adapter WDF Class Extension (NetAdapterCx)

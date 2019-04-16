@@ -6,6 +6,7 @@ ms.date: 04/10/2019
 keywords: 
  -OID_WWAN_UICC_ACCESS_BINARY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID_WWAN_UICC_ACCESS_BINARY

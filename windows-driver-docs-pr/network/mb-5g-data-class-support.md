@@ -6,6 +6,7 @@ keywords:
 - MB 5G data class support, Mobile Broadband 5G data class support
 ms.date: 03/22/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # MB 5G data class support

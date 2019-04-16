@@ -6,6 +6,7 @@ ms.date: 02/15/2019
 keywords:
  - OID_WDI_SET_SAE_AUTH_PARAMS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID_WDI_SET_SAE_AUTH_PARAMS

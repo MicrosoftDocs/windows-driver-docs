@@ -6,6 +6,7 @@ ms.date: 04/05/2019
 keywords: 
  -OID_WWAN_SIGNAL_STATE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WWAN\_SIGNAL\_STATE

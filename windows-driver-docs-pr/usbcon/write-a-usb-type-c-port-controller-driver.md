@@ -3,6 +3,7 @@ Description: 'Describes the behavior of the USB Type-C Port Controller Interface
 title: Write a USB Type-C port controller driver
 ms.date: 01/07/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Write a USB Type-C port controller driver

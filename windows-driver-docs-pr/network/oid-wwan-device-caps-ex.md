@@ -6,6 +6,7 @@ keywords:
 - OID_WWAN_DEVICE_CAPS_EX, OID per executor, device capability ex
 ms.date: 04/04/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WWAN\_DEVICE\_CAPS\_EX

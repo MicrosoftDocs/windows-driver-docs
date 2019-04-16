@@ -6,6 +6,7 @@ keywords:
 - NetAdapterCx Net rings and net ring iterators cancel, NetAdapterCx cancel packet queue
 ms.date: 01/24/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Canceling network data with net rings

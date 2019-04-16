@@ -6,6 +6,7 @@ keywords:
 - MB modem logging with DSS, Mobile Broadband modem logging with DSS
 ms.date: 03/21/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # MB modem logging with DSS

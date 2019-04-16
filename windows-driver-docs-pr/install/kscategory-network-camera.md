@@ -13,6 +13,7 @@ api_type:
 - HeaderDef
 ms.localizationpriority: medium
 ms.date: 10/17/2018
+ms.custom: 19H1
 ---
 
 # KSCATEGORY_NETWORK_CAMERA

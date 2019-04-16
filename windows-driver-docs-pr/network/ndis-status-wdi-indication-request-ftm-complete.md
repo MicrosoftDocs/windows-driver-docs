@@ -6,6 +6,7 @@ ms.date: 02/11/2019
 keywords:
  - NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE
