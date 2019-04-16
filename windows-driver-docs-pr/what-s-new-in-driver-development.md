@@ -331,25 +331,27 @@ The following is a list of NetAdapterCx content updates:
 
 * Overhauled [Transmit and receive queues](https://docs.microsoft.com/windows-hardware/drivers/netcx/transmit-and-receive-queues) topic to include callback samples and major operations for packet queues.
 
-**NDIS**
+**Mobile operator scenarios**
 
-Updates to NDIS includes a new timestamp API.
+New Mobile Plans content for mobile operators to sell plans to customers directly on Windows 10 devices, through the Mobile Plans app:
+
+* [Mobile Plans](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans)
+
 
 ### <a name="mobilebroadband-1903"></a>Mobile broadband
 
 The following features were added to Mobile broadband in Windows 10, version 1903:
 
-* New SIM card (UICC) file/application system access feature
-* New Cellular Time Information (NITZ) feature. 
-* New modem diagnostics feature.
-* New 5G data class support feature.
+* New [SIM card (UICC) file/application system access](https://docs.microsoft.com/windows-hardware/drivers/network/mb-uicc-application-and-file-system-access) feature
+* New [Cellular Time Information (NITZ)](https://docs.microsoft.com/windows-hardware/drivers/network/mb-nitz-support) feature. 
+* New [modem logging with DSS](https://docs.microsoft.com/windows-hardware/drivers/network/mb-modem-logging-with-dss) feature.
+* New [5G data class support](https://docs.microsoft.com/windows-hardware/drivers/network/mb-5g-data-class-support) feature.
 
 **Mobile operator scenarios**
 
 New Mobile Plans content for mobile operators to sell plans to customers directly on Windows 10 devices, through the Mobile Plans app:
 
-* [Mobile Plans promotional content](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-promotional-content)
-* [Mobile Plans asynchronous fulfillment](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-asynchronous-fulfillment)
+* [Mobile Plans](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans)
 
 ### <a name="print-1903"></a>Print
 
@@ -396,12 +398,13 @@ New Wi-fi driver development documentation and features include:
 * New Fine Timing Measurement (FTM) feature
 * New [WPA3-SAE Authentication](https://docs.microsoft.com/windows-hardware/drivers/network/wpa3-sae-authentication) feature
 * New Multiband Operation (MBO) support to improve roaming performance in enterprise scenarios
-* New beacon report offloading support - For OID commands, NDIS status indications, and TLVs for these new features, see [WDI doc change history](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-doc-change-history)
+* New beacon report offloading support
+* For OID commands, NDIS status indications, and TLVs for these new features, see [WDI doc change history](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-doc-change-history)
 
 The following topics were updated for Windows 10, version 1903:
 
 * [WDI_AUTH_ALGORITHM](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_auth_algorithm) - added support for WPA3-SAE authentication
-* [OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-p2p-send-request-action-frame) and [OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-p2p-send-response-action-frame) - add additional validation of outgoing Point to Point (P2P) action frames
+* [OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-p2p-send-request-action-frame) and [OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-p2p-send-response-action-frame) - added additional validation of outgoing Point to Point (P2P) action frames
 
 ## What's new in Windows 10, version 1809
 
