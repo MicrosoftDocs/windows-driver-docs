@@ -250,7 +250,7 @@ For more info, see [Target platform on driver reference pages](https://docs.micr
 
 Windows is now supported on more affordable boards such as the Raspberry Pi 2. Become a part of our early adopter community and load Windows on that board. For more information, see [Windows compatible hardware development boards](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/windows-compatible-hardware-development-boards).
 
-### Power Management Framework (PoFx)
+### Power Management Framework
 
 The power management framework (PoFx) enables a driver to define one or more sets of individually adjustable performance states for individual components within a device. The driver can use performance states to throttle a component's workload to provide just enough performance for its current needs. For more information, see [Component-Level Performance State Management](https://docs.microsoft.com/windows-hardware/drivers/kernel/component-level-performance-management).
 
@@ -282,7 +282,7 @@ This section describes new features and updates for driver development in Window
 
 [Back to Top](#top)
 
-### Audio
+### <a name="audio-1903"></a>Audio
 
 The following is a list of new and updated Audio features in Windows 10, version 1903:
 
