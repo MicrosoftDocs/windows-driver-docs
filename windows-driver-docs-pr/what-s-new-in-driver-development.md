@@ -89,7 +89,7 @@ For more details, see [CONTRIBUTING.md](https://github.com/MicrosoftDocs/windows
 
 This section describes the changes in the debugging tools for Windows.
 
-**Debugging in Windows 10, version 1903**
+#### Debugging in Windows 10, version 1903
 
 * New stop codes were added to allow better tracking on unique failure types in the Windows operating system. In addition a number of existing bug check topics were expanded and updated. For more information, see [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2).
 
@@ -99,24 +99,24 @@ This section describes the changes in the debugging tools for Windows.
 
 * New [JavaScript Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/javascript-debugger-scripting) topic
 
-**Debugging in Windows 10, version 1809**
+#### Debugging in Windows 10, version 1809
 
 * **New Debugger Data Model API** – A new object oriented debugger data model interface to support debugger automation is now available using the dbgmodel.h header. The debugger data model is an extensible object model that is central to the way in which new debugger extensions (including those in JavaScript, NatVis, and C++) both consume information from the debugger and produce information that can be accessed from the debugger as well as other extensions. Constructs which are written to the data model APIs are available in the debugger's dx expression evaluator as well as from JavaScript extensions or C++ extensions. Documentation will be available at: [Overview of the Debugger Data Model C++ Interface](debugger/data-model-cpp-overview.md)  and the [dbgmodel.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/) header reference topics.
 
-* **IPv6** - We are adding support for IPv6 to KDNET. To make room for the larger headers required for IPv6, we decreased the payload size of packets. As a result, we’re declaring a new version of the KDNET protocol, so that host PCs running the latest version of the debugger can be used to debug target PCs that only support IPv4. There is a version of WinDbg Preview available at https://aka.ms/windbgpreview that supports IPv6. Follow the Debugging Tools for Windows blog for updates on KDNET IPv6 support and see [Setting Up KDNET Network Kernel Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) for more details. 
+* **IPv6** - We are adding support for IPv6 to KDNET. To make room for the larger headers required for IPv6, we decreased the payload size of packets. As a result, we’re declaring a new version of the KDNET protocol, so that host PCs running the latest version of the debugger can be used to debug target PCs that only support IPv4. There is a version of WinDbg Preview available at [https://aka.ms/windbgpreview](https://aka.ms/windbgpreview) that supports IPv6. Follow the Debugging Tools for Windows blog for updates on KDNET IPv6 support and see [Setting Up KDNET Network Kernel Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) for more details.
 
-**Debugging in Windows 10, version 1803**
+#### Debugging in Windows 10, version 1803
 
 [WinDbg Preview Time Travel Debugging (TTD) hands on lab](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-walkthrough) - This lab introduces Time Travel Debugging (TTD), using a small sample program with a code flaw. TTD is used to debug, identify and root cause the issue.
 
-**Debugging in Windows 10, version 1709**
+#### Debugging in Windows 10, version 1709
 
 The following is a list of new content sets for the Debugger in Windows 10, version 1709:
 
 * [Debugging Using WinDbg Preview](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-using-windbg-preview) - A preview into the next generation debugger.
 * [Time Travel Debugging - Overview](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-overview) - Record and replay an execution of your process.
 
-**Debugging in Windows 10, version 1703**
+#### Debugging in Windows 10, version 1703
 
 The following table shows changes for the Debugger in Windows 10, version 1703:
 
@@ -126,11 +126,11 @@ The following table shows changes for the Debugger in Windows 10, version 1703:
 | 40 undocumented stop codes in the [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2) | Updates to the [Configuring tools.ini](https://docs.microsoft.com/windows-hardware/drivers/debugger/configuring-tools-ini) topic with additional options in the tools.ini file for the command line debuggers |
 | [!ioctldecode command](https://docs.microsoft.com/windows-hardware/drivers/debugger/-ioctldecode) | New command capabilities in the [dx (Display Debugger Object Model Extension)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) command |
 
-**Debugging in Windows 10, version 1607**
+#### Debugging in Windows 10, version 1607
 
 In Windows 10, version 1607, changes to the Debugger include a new topic about [Debugging a UWP app using WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-a-uwp-app-using-windbg), and updates to the 30 most-viewed developer bug check topics in [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2).
 
-**Debugging in Windows 10, version 1507**
+#### Debugging in Windows 10, version 1507
 
 The following is a list of new commands for the Windows Debugger in Windows 10, version 1507:
 
@@ -161,7 +161,7 @@ Driver verifier includes new driver validation rules for the following technolog
 
 ### Windows Driver Frameworks (WDF)
 
-**WDF in Windows 10, version 1903**
+#### WDF in Windows 10, version 1903
 
 In Windows 10, version 1903, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.29 and User-Mode Driver Framework (UMDF) version 2.29.
 
@@ -174,7 +174,7 @@ This section describes new and updated features for Universal Windows drivers in
 
 [Back to Top](#top)
 
-**Universal Drivers in Windows 10, version 1809**
+#### Universal Drivers in Windows 10, version 1809
 
 Starting in Windows 10, version 1809, Windows supports flexible linking, which enables you to use a single binary to target OneCore and Desktop SKUs.
 To enable flexible linking, use the following new SDK API:
@@ -185,11 +185,11 @@ This existing topic has been enhanced to describe how to use flexible linking to
 
 * [Building for OneCore](https://docs.microsoft.com/windows-hardware/drivers/develop/building-for-onecore)
 
-**Universal Drivers in Windows 10, version 1803**
+#### Universal Drivers in Windows 10, version 1803
 
 See the latest recommendations for universal drivers in [Getting started with universal drivers](develop/getting-started-with-universal-drivers.md).
 
-**Universal Drivers in Windows 10, version 1709**
+#### Universal Drivers in Windows 10, version 1709
 
 The following is a list of new features to Universal Drivers in Windows 10, version 1709:
 
@@ -203,7 +203,7 @@ The following is a list of updates to Universal Drivers in Windows 10, version 1
 * [Using an Extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file)
 * [Using a Component INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-component-inf-file)
 
-**Universal Drivers in Windows 10**
+#### Universal Drivers in Windows 10
 
 Starting in Windows 10, you can write a single driver that works on OneCoreUAP-based editions of Windows, such as Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, and Windows 10 IoT Core (IoT Core). Such a driver is called a Universal Windows driver. A Universal Windows driver calls a subset of the interfaces that are available to a Windows driver. For information about how to build, install, deploy, and debug a Universal Windows driver for Windows 10, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers).
 
@@ -231,16 +231,16 @@ The power management framework (PoFx) enables a driver to define one or more set
 
 Windows 10, version 1903 includes support for the [Directed Power Management Framework (DFx)](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework).  Related reference documentation includes the following:
 
-- [PO_FX_DEVICE_V3](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-po_fx_device_v3)
-- [PO_FX_DIRECTED_POWER_DOWN_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_directed_power_down_callback)
-- [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_directed_power_up_callback)
-- [PoFxCompleteDirectedPowerDown](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxcompletedirectedpowerdown) function
+* [PO_FX_DEVICE_V3](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-po_fx_device_v3)
+* [PO_FX_DIRECTED_POWER_DOWN_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_directed_power_down_callback)
+* [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_directed_power_up_callback)
+* [PoFxCompleteDirectedPowerDown](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxcompletedirectedpowerdown) function
 
 For information about testing for DFx, please see the following pages:
 
-- [Directed FX Single Device Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
-- [Directed FX System Verification Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
-- [PwrTest DirectedFx Scenario](../devtest/pwrtest-directedfx-scenario.md)
+* [Directed FX Single Device Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
+* [Directed FX System Verification Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
+* [PwrTest DirectedFx Scenario](../devtest/pwrtest-directedfx-scenario.md)
 
 ### WPP Software Tracing
 
@@ -292,7 +292,7 @@ Updates to Display driver development in Windows 10, version 1903 include the fo
 
 ### <a name="networking-1903"></a>Networking
 
-**NetAdapterCx**
+#### NetAdapterCx
 
 In the NetAdapter WDF class extension (NetAdapterCx), Net ring buffers have been replaced by Net rings, which have a new interface for sending and receiving network data using net ring iterators. The following is a list of new topics:
 
@@ -331,27 +331,20 @@ The following is a list of NetAdapterCx content updates:
 
 * Overhauled [Transmit and receive queues](https://docs.microsoft.com/windows-hardware/drivers/netcx/transmit-and-receive-queues) topic to include callback samples and major operations for packet queues.
 
-**Mobile operator scenarios**
+#### Mobile operator scenarios
 
 New Mobile Plans content for mobile operators to sell plans to customers directly on Windows 10 devices, through the Mobile Plans app:
 
 * [Mobile Plans](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans)
-
 
 ### <a name="mobilebroadband-1903"></a>Mobile broadband
 
 The following features were added to Mobile broadband in Windows 10, version 1903:
 
 * New [SIM card (UICC) file/application system access](https://docs.microsoft.com/windows-hardware/drivers/network/mb-uicc-application-and-file-system-access) feature
-* New [Cellular Time Information (NITZ)](https://docs.microsoft.com/windows-hardware/drivers/network/mb-nitz-support) feature. 
+* New [Cellular Time Information (NITZ)](https://docs.microsoft.com/windows-hardware/drivers/network/mb-nitz-support) feature.
 * New [modem logging with DSS](https://docs.microsoft.com/windows-hardware/drivers/network/mb-modem-logging-with-dss) feature.
 * New [5G data class support](https://docs.microsoft.com/windows-hardware/drivers/network/mb-5g-data-class-support) feature.
-
-**Mobile operator scenarios**
-
-New Mobile Plans content for mobile operators to sell plans to customers directly on Windows 10 devices, through the Mobile Plans app:
-
-* [Mobile Plans](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans)
 
 ### <a name="print-1903"></a>Print
 
@@ -383,13 +376,13 @@ The following Storage features were added in Windows 10, version 1903:
 
 Windows 10, version 1903 includes a simplified interface to WHEA.  For more info, see the following pages:
 
-- [**WheaAddErrorSourceDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-wheaadderrorsourcedevicedriver)
-- [**WheaReportHwErrorDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-wheareporthwerrordevicedriver)
-- [**WheaRemoveErrorSourceDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver)
-- [**WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-whea_error_source_configuration_device_driver)
-- [*WHEA_ERROR_SOURCE_READY_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-_whea_error_source_ready_device_driver)
-- [*WHEA_ERROR_SOURCE_UNINITIALIZE_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-_whea_error_source_uninitialize_device_driver)
-- [*WHEA_ERROR_SOURCE_INITIALIZE_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-_whea_error_source_initialize_device_driver)
+* [**WheaAddErrorSourceDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-wheaadderrorsourcedevicedriver)
+* [**WheaReportHwErrorDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-wheareporthwerrordevicedriver)
+* [**WheaRemoveErrorSourceDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver)
+* [**WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-whea_error_source_configuration_device_driver)
+* [*WHEA_ERROR_SOURCE_READY_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-_whea_error_source_ready_device_driver)
+* [*WHEA_ERROR_SOURCE_UNINITIALIZE_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-_whea_error_source_uninitialize_device_driver)
+* [*WHEA_ERROR_SOURCE_INITIALIZE_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-_whea_error_source_initialize_device_driver)
 
 ### <a name="wifi-1903"></a>Wi-fi
 
@@ -431,7 +424,8 @@ Updates to Display driver development in Windows 10, version 1809 include the fo
 * **Universal Driver Requirements** WDDM 2.5 drivers will need to ensure their DirectX11 UMD, DirectX12 UMD, KMDs, and any other DLL loaded by these components, adhere to the Universal API.
 
 * **SRV-Only Tiled Resource Tier 3** In Windows 10, version 1809, Tiled Resource Tier 3 capabilities can be supported less-orthogonally by GPUs. Direct3D12 now supports sparse volume textures without requiring unordered-access and render-target operations. SRV-Only Tiled Resource Tier 3 is a conceptual tier that fits between Tier 2 and Tier 3. Hardware support is optional, just like orthogonal Tiled Resource Tier 3 support currently is. But, supporting SRV-Only Tiled Resource Tier 3 is a super-set tier that requires support for Tiled Resource Tier 2.
-  <br/>Drivers that already advertise support for orthogonal Tiled Resource Tier 3 merely have to update their drivers to support the latest “options caps” DDI structure version. The runtime will advertise SRV-Only Tiled Resource Tier 3 support to applications for any hardware that already supports orthogonal Tiled Resource Tier 3.
+
+   Drivers that already advertise support for orthogonal Tiled Resource Tier 3 merely have to update their drivers to support the latest “options caps” DDI structure version. The runtime will advertise SRV-Only Tiled Resource Tier 3 support to applications for any hardware that already supports orthogonal Tiled Resource Tier 3.
 
 * **Render Pass** The Render Pass feature was added to:
 
@@ -441,7 +435,7 @@ Updates to Display driver development in Windows 10, version 1809 include the fo
 * **Meta-commands** A Meta-command is Direct3D12 object that represents an IHV-accelerated algorithm. It’s an opaque reference to a command generator implemented by the driver. Meta-command updates include Descriptor Table Binding and Texture binding. See [D3D12DDI_META_COMMAND_PARAMETER_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/ne-d3d12umddi-d3d12ddi_meta_command_parameter_type) and [D3D12DDIARG_META_COMMAND_PARAMETER_DESC](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/ns-d3d12umddi-d3d12ddiarg_meta_command_parameter_desc).
 
   Enable Compute Algorithms to use Texture Resources (swizzled memory)
-    * Enable Graphics Pipeline Algorithms
+  * Enable Graphics Pipeline Algorithms
 
 * **HDR Brightness Compensation** A new SDR brightness boost was introduced to raise the reference white of SDR content to the user-desired value, allowing SDR content to be reproduced to a typical 200-240 nits, which is equivalent to what users have expected for SDR displays. SDR brightness boost affects overall Brightness3 behavior in two ways:
 
@@ -450,7 +444,11 @@ Updates to Display driver development in Windows 10, version 1809 include the fo
 
      The driver must then apply a compensation to the desired nits value coming from Brightness3 DDIs for HDR. Since Graphics drivers (and downstream TCON etc.) will be modifying the pixel values of the content to get desired nits value, there should also be a compensation applied to the HDR content metadata as provided by the applications via [D3DDDI_HDR_METADATA_HDR10](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ns-d3dukmdt-_d3dddi_hdr_metadata_hdr10) or OS defaults via [DxgkDdiSetTargetAdjustedColorimetry](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_settargetadjustedcolorimetry). Since Graphics driver (TCONs) are responsible for modifying the pixel data, it is the driver’s responsibility to compensate the HDR content metadata.
 
-* **HDR Pixel Format Support** This kernel mode device driver interface (DDI) change is part of WDDM 2.5 to expose new capabilities to be reported by driver/device, providing information regarding the HDR functionality supported by the driver/device. <br/>Currently, OS determines if the driver/device supports HDR based on the *HighColorSpace* bit of the [DXGK_MONITORLINKINFO_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_dxgk_monitorlinkinfo_capabilities) structure as read from [DdiUpdateMonitorLinkInfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_updatemonitorlinkinfo). The *HighColorSpace* bit gives a combination of driver/link/monitor capability to run in HDR mode. <br/>The HDR capabilities reporting by the driver now includes a Driver/Device level capabilities, which will let OS know if the Driver/Device supports true HDR (i.e. FP16HDR), or only supports a limited form of HDR (i.e. ARGB10HDR), as defined below:
+* **HDR Pixel Format Support** This kernel mode device driver interface (DDI) change is part of WDDM 2.5 to expose new capabilities to be reported by driver/device, providing information regarding the HDR functionality supported by the driver/device.
+
+   Currently, OS determines if the driver/device supports HDR based on the *HighColorSpace* bit of the [DXGK_MONITORLINKINFO_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_dxgk_monitorlinkinfo_capabilities) structure as read from [DdiUpdateMonitorLinkInfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_updatemonitorlinkinfo). The *HighColorSpace* bit gives a combination of driver/link/monitor capability to run in HDR mode.
+
+    The HDR capabilities reporting by the driver now includes a Driver/Device level capabilities, which will let OS know if the Driver/Device supports true HDR (i.e. FP16HDR), or only supports a limited form of HDR (i.e. ARGB10HDR), as defined below:
 
   * FP16HDR: Driver/device can take FP16 pixel format surfaces with scRGB/CCCS colorspace and apply PQ/2084 encoding and BT.2020 primaries during scanout pipeline to convert output signal to HDR10.
   * ARGB10HDR: Driver/device can take ARGB10 pixel format surfaces which are already PQ/2084 encoded and scan out HDR10 signal. Driver/device can’t handle FP16HDR as defined above or cannot handle the extended numeric range of scRGB FP16.
@@ -463,15 +461,15 @@ Updates to Display driver development in Windows 10, version 1809 include the fo
 
 Several new APIs have been added in the core kernel:
 
-* [RtlQueryRegistryValueWithFallback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlqueryregistryvaluewithfallback): Querying the registry value entry by using a fallback handle in absence of a primary handle. 
+* [RtlQueryRegistryValueWithFallback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlqueryregistryvaluewithfallback): Querying the registry value entry by using a fallback handle in absence of a primary handle.
 * [PsGetSiloContainerId function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetsilocontainerid) and [PsGetThreadServerSilo function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetthreadserversilo)
 * New information classes added to: [_FILE_INFORMATION_CLASS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_file_information_class)
   * FileLinkInformationExBypassAccessCheck
   * FileCaseSensitiveInformationForceAccessCheck
   * FileStorageReserveIdInformation
     * FileLinkInformationEx
-* Extended version of NtCreateSection added [NtCreateSectionEx function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatesectionex) to indicate that this is actually an AWE section. 
-* New Ex macros grant direct access to actual push lock APIs exported by Ntoskernel. 
+* Extended version of NtCreateSection added [NtCreateSectionEx function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatesectionex) to indicate that this is actually an AWE section.
+* New Ex macros grant direct access to actual push lock APIs exported by Ntoskernel.
   * [ExAcquirePushLockExclusive macro](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exacquirepushlockexclusive)
   * [ExAcquirePushLockShared macro](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exacquirepushlockshared)
   * [ExInitializePushLock function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializepushlock)
@@ -482,12 +480,14 @@ Several new APIs have been added in the core kernel:
 
 ### <a name="networking-1809"></a>Networking
 
-**NetAdapterCx**
+#### NetAdapterCx
 
 * New [INF files for NetAdapterCx client drivers](https://docs.microsoft.com/windows-hardware/drivers/netcx/inf-files-for-netadaptercx-client-drivers) topic.
 * Transmit and receive queues have been consolidated into one object type called a packet queue, to simplify the API surface. A new section called [Polling model](https://docs.microsoft.com/windows-hardware/drivers/netcx/transmit-and-receive-queues#polling-model) has been added to the [Transmit and receive queues](https://docs.microsoft.com/windows-hardware/drivers/netcx/transmit-and-receive-queues) topic.
 * [Hardware offloads](https://docs.microsoft.com/windows-hardware/drivers/netcx/netadaptercx-hardware-offloads) have been added to NetAdapterCx, which also automates the registration of associated packet extensions for client drivers.
-* Network interfaces are now decoupled from the driver's WDF device object. The *EvtNetAdapterSetCapabilities* callback function was removed to support this. NetAdapterCx client drivers can now have multiple network interfaces, including a default one. <br/><br/>Topics updated to support network interface/device object decoupling include the following:
+* Network interfaces are now decoupled from the driver's WDF device object. The *EvtNetAdapterSetCapabilities* callback function was removed to support this. NetAdapterCx client drivers can now have multiple network interfaces, including a default one.
+
+   Topics updated to support network interface/device object decoupling include the following:
 
   * [Summary of NetAdapterCx objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-netadaptercx-objects)
   * [Device and adapter initialization](https://docs.microsoft.com/windows-hardware/drivers/netcx/device-and-adapter-initialization)
@@ -497,7 +497,7 @@ Several new APIs have been added in the core kernel:
 * DDIs supporting [NetAdapterCx Receive side scaling (RSS)](https://docs.microsoft.com/windows-hardware/drivers/netcx/netadaptercx-receive-side-scaling-rss-) have been simplified.
 * Packet context token helper macros have been removed.
 
-**NDIS**
+#### NDIS
 
 [Receive side scaling version 2 (RSSv2)](https://docs.microsoft.com/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-) has been updated to version 1.01.
 
@@ -506,13 +506,13 @@ Several new APIs have been added in the core kernel:
 * New [OID](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-mpdp) and DDIs to support multiple packet data protocol (MPDP) interfaces for MBB devices.
 * New [Device-based Reset and Recovery](https://docs.microsoft.com/windows-hardware/drivers/network/mb-device-based-reset-and-recovery) feature for more robust reset recovery for MBB devices and drivers.
 
-**Mobile Broadband WDF class extension (MBBCx)**
+#### Mobile Broadband WDF class extension (MBBCx)
 
 MBBCx power management methods have been simplified.
 
 Though preview content for MBBCx was available in Windows 10, version 1803, MBBCx now ships in the Windows 10, version 1809 version of the WDK.
 
-**Mobile operators**
+#### Mobile operators
 
 The [AutoConnectOrder setting](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings#apn-database-and-desktop-cosa-settings) is now supported in desktop COSA.
 
@@ -534,9 +534,9 @@ If  your hardware is UCSI compliant and requires communication over a non-ACPI t
 * [UcmUcsiCx class extensions reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
 * [UcmUcsiCx client driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmUcsiAcpiSample)
 
-**New feature for USB Type-C driver developers that allows you to monitor the activities of USB Type-C connectors and/or get involved in policy decisions on USB Type-C connectors.** 
+**New feature for USB Type-C driver developers that allows you to monitor the activities of USB Type-C connectors and/or get involved in policy decisions on USB Type-C connectors.**
 
-For example, control their device’s charging based on thermal conditions, so that the device won’t be overheated. 
+For example, control their device’s charging based on thermal conditions, so that the device won’t be overheated.
 
 * [Write a USB Type-C Policy Manager client driver](https://microsoft.com/windows-hardware/drivers/usbcon/policy-manager-client)
 * New APIs are available in [Usbpmapi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbpmapi/)
@@ -547,7 +547,7 @@ Emulated devices now support better reset recovery through function (FLDR) and p
 
 * [UdecxWdfDeviceNeedsReset function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceneedsreset)
 
-The host controller can also opt for FLDR and PLDR resets through: 
+The host controller can also opt for FLDR and PLDR resets through:
 
 * [EVT_UCX_USBDEVICE_DISABLE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_disable)
 
@@ -664,7 +664,7 @@ You can now register for active session change notification and get a callback w
 
 This section outlines new features and improvements for Windows Networking driver development in Windows 10, version 1803.
 
-**NDIS and NetAdapterCx**
+#### NDIS and NetAdapterCx
 
 Updates to NDIS include:
 
@@ -681,14 +681,14 @@ The following topics are new for the Network Adapter WDF class extension (NetAda
 Additionally, new topics are available for a preview-only feature, the Mobile Broadband class extension (MBBCx), which uses the NetAdapterCx model for mobile broadband connectivity.
 
 * [Mobile Broadband Class Extension (MBBCx)](https://docs.microsoft.com/windows-hardware/drivers/netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx-)
-    * [Writing an MBBCx client driver](https://docs.microsoft.com/windows-hardware/drivers/netcx/writing-an-mbbcx-client-driver)
-    * [MBBCx API reference](https://docs.microsoft.com/windows-hardware/drivers/netcx/mbbcx-api-reference)
+  * [Writing an MBBCx client driver](https://docs.microsoft.com/windows-hardware/drivers/netcx/writing-an-mbbcx-client-driver)
+  * [MBBCx API reference](https://docs.microsoft.com/windows-hardware/drivers/netcx/mbbcx-api-reference)
 
 ### <a name="mobilebroadband-1803"></a>Mobile broadband
 
 In mobile broadband, a new topic detailing [MB low level UICC access](https://docs.microsoft.com/windows-hardware/drivers/network/mb-low-level-uicc-access) is available.
 
-**Mobile operators**
+#### Mobile operators
 
 New Hotspot and AppID settings are now a part of [desktop COSA](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings#desktop-cosa-only-settings). Mobile operators are strongly encouraged to transition from broadband app experience apps with [Sysdev metadata packages](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/service-metadata) to [MO UWP Apps](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/uwp-mobile-broadband-apps) and the [COSA database](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings).
 
@@ -779,7 +779,6 @@ In Windows 10, version 1709, there is support for hardware-agnostic support of n
 * [Hardware notifications support](https://docs.microsoft.com/windows-hardware/drivers/gpiobtn/hardware-notifications-support)
 * [Hardware notifications reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_gpiobtn/)
 
-
 ### <a name="kernel-1709"></a>Windows kernel
 
 In Windows 10, version 1709, several new routines to the Windows Kernel for drivers have been added.
@@ -787,20 +786,20 @@ In Windows 10, version 1709, several new routines to the Windows Kernel for driv
 * ExGetFirmwareType and ExIsSoftBoot &ndash; Executive library support routines.
 * [PsSetLoadImageNotifyRoutineEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-pssetloadimagenotifyroutineex) &ndash; An extended image notify routine for all executable images, including images that have a different architecture from the native architecture of the operating system.
 * [MmMapMdl](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmmapmdl) &ndash; A [memory manager](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-kernel-mode-memory-manager) routine for mapping physical pages described by a memory descriptor list (MDL) into the system virtual address space.
-* [PoFxSetTargetDripsDevicePowerState ](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxsettargetdripsdevicepowerstate) &ndash; A PoFx routine to notify the power manager of the device's target device power state for DRIPS.
+* [PoFxSetTargetDripsDevicePowerState](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxsettargetdripsdevicepowerstate) &ndash; A PoFx routine to notify the power manager of the device's target device power state for DRIPS.
 * The following is a list of new options for the [ZwSetInformationThread](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-zwsetinformationthread) routine, that are related to process policies:
 
-    * [PROCESS_MITIGATION_CHILD_PROCESS_POLICY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_process_mitigation_child_process_policy)
-    * [PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_process_mitigation_payload_restriction_policy)
-    * PROCESS_READWRITEVM_LOGGING_INFORMATION
+  * [PROCESS_MITIGATION_CHILD_PROCESS_POLICY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_process_mitigation_child_process_policy)
+  * [PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_process_mitigation_payload_restriction_policy)
+  * PROCESS_READWRITEVM_LOGGING_INFORMATION
 
 * [PsGetServerSiloActiveConsoleId](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetserversiloactiveconsoleid) and [PsGetParentSilo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetparentsilo) &ndash; New Silo APIs to get information about server silos that are created and destroyed on a machine.
 * The following is a list of new RTL functions for using correlation vector to reference events and the generated logs for diagnostic purposes.
-    * [CORRELATION_VECTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-correlation_vector)
-    * [RtlExtendCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlextendcorrelationvector)
-    * [RtlIncrementCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlincrementcorrelationvector)
-    * [RtlInitializeCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlinitializecorrelationvector)
-    * [RtlValidateCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlvalidatecorrelationvector)
+  * [CORRELATION_VECTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-correlation_vector)
+  * [RtlExtendCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlextendcorrelationvector)
+  * [RtlIncrementCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlincrementcorrelationvector)
+  * [RtlInitializeCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlinitializecorrelationvector)
+  * [RtlValidateCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlvalidatecorrelationvector)
 
 ### <a name="mobilebroadband-1709"></a>Mobile broadband
 
@@ -821,10 +820,10 @@ This section outlines new features and improvements for Windows Networking drive
 The following is a list of new and updated features for NDIS:
 
 * Introduction to NetAdapterCx 1.1, which includes new NewAdapterCx features:
-    * More packet context options
-    * Finer link state control
-    * Improved receive buffer management and performance
-    * General performance improvements
+  * More packet context options
+  * Finer link state control
+  * Improved receive buffer management and performance
+  * General performance improvements
 * New [Synchronous OID request interface](https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80) in NDIS 6.80
 * New [Receive Side Scaling Version 2 (RSSv2)](https://docs.microsoft.com/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-in-ndis-6-80) in NDIS 6.80
 * [Introduction to NDIS 6.80](https://docs.microsoft.com/windows-hardware/drivers/network/introduction-to-ndis-6-80)
@@ -911,7 +910,7 @@ Here are the supporting structures for synchronized system OPC with USB frame an
 * [USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_stop_tracking_for_time_sync_information)
 * [USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_frame_number_and_qpc_for_time_sync_information)
 
-**IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED**
+#### IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED
 
 The [IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmtcpciportcontrollerrequests/ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_displayport_display_out_status_changed) request is a new request in USB Type-C Port Controller Interface framework extension. This request notifies the client driver that the display out status of the DisplayPort connection has changed.
 
@@ -932,9 +931,9 @@ The following is a list of new topics for Audio driver development in Windows 10
 
 * [Implementing Audio Module Communication](https://docs.microsoft.com/windows-hardware/drivers/audio/implementing-audio-module-communication) - Describes the support for communication from Universal Windows Platform (UWP) apps to kernel mode audio device drivers.
 * New DDIs and properties reference topics to support APO Module Communications discovery:
-    - [KSPROPSETID_AudioModule](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audiomodule) - A new KS Property Set that defines three properties specific to audio modules.
-    - [KSPROPERTY_AUDIOMODULE_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-command) property - Allows Audio Module clients to send custom commands to query and set parameters on Audio Modules.
-    - [IPortClsNotifications](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportclsnotifications) - New Port Class Notifications that provide notification helpers to miniports, to support audio module communication.
+  * [KSPROPSETID_AudioModule](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audiomodule) - A new KS Property Set that defines three properties specific to audio modules.
+  * [KSPROPERTY_AUDIOMODULE_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-command) property - Allows Audio Module clients to send custom commands to query and set parameters on Audio Modules.
+  * [IPortClsNotifications](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportclsnotifications) - New Port Class Notifications that provide notification helpers to miniports, to support audio module communication.
 
 ### <a name="bluetooth-1703"></a>Bluetooth
 
