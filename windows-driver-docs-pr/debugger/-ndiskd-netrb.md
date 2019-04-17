@@ -11,6 +11,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # !ndiskd.netrb

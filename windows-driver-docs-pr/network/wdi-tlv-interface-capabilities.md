@@ -6,6 +6,7 @@ ms.date: 02/14/2019
 keywords:
  - WDI_TLV_INTERFACE_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # WDI\_TLV\_INTERFACE\_CAPABILITIES

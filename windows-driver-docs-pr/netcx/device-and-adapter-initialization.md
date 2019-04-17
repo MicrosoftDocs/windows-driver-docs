@@ -6,6 +6,7 @@ keywords:
 - NetAdapterCx device initialization, NetCx device initialization, NetAdapterCx adapter initialization, NetCx adapter initialization
 ms.date: 01/18/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Device and adapter initialization

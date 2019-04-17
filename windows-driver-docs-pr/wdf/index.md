@@ -14,6 +14,7 @@ ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.custom: 19H1
 ---
 
 # What's New for WDF Drivers in Windows 10

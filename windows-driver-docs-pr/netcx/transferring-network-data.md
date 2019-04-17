@@ -6,6 +6,7 @@ keywords:
 - NetAdapterCx transferring network data, NetCx transferring network data
 ms.date: 06/05/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Transferring network data

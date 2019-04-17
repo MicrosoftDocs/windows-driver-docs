@@ -6,6 +6,7 @@ ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_REGISTER_STATE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WWAN\_REGISTER\_STATE

@@ -4,6 +4,7 @@ description: MB NDIS Status Notifications
 ms.assetid: 97538f74-f602-4d38-a5a8-e52eb3194fb9
 ms.date: 07/18/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # MB NDIS Status Notifications

@@ -5,6 +5,7 @@ ms.assetid: 85A819E2-6352-4DE9-9689-3DCEB9B0AAD8
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads
 ms.date: 01/18/2019
+ms.custom: 19H1
 ---
 
 # NetAdapterCx hardware offloads

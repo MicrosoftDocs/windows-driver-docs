@@ -4,6 +4,7 @@ description: You run PwrTest from a Command Prompt window. You can select and co
 ms.assetid: bcae1bb6-ce5b-4ece-a5ba-bae6fefd6408
 ms.date: 04/20/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # PwrTest Syntax

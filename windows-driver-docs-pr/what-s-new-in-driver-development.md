@@ -4,6 +4,7 @@ description: This section describes new features for driver development in Windo
 ms.assetid: 5502AAF9-2400-4338-A646-C746B29F9A44
 ms.date: 04/10/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # <a name="top"></a>What's new in driver development

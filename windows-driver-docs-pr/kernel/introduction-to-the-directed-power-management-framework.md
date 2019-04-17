@@ -3,6 +3,7 @@ title: Introduction to the Directed Power Management Framework
 description: Describes the Directed Power Management Framework, or DFx, which is equivalent to Power Framework, or PoFx, version 3.
 ms.assetid: 58550c57-3439-4212-b0c6-6a2fbfd38414
 ms.date: 03/27/2019
+ms.custom: 19H1
 ---
 
 # Introduction to the Directed Power Management Framework

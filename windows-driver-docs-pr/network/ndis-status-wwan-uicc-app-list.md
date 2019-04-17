@@ -6,6 +6,7 @@ ms.date: 04/08/2019
 keywords: 
  -NDIS_STATUS_WWAN_UICC_APP_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # NDIS_STATUS_WWAN_UICC_APP_LIST
