@@ -72,7 +72,7 @@ The following are a few items of notable changes in Visual Studio 2019 that Wind
 WDK GUI Driver Menu moved</br>
 The WDK Driver menu in Visual Studio 2017 is located in the top menu options as seen below.
 
-![screenshot of Visual Studio 2017 menu](VS2017Menu.png)
+![screenshot of Visual Studio 2017 menu](vs-2017-menu.png)
 
 In Visual Studio 2019 the WDK Driver menu has been moved to live under the Extension menu as seen below.
 
