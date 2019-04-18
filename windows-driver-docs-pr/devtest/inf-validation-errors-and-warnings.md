@@ -193,7 +193,23 @@ HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 </tr>
 <tr>
 <td><strong>1296: Specified service not associated with hardware</strong></td>
-<td>This warning appears starting in Windows 10, version 1809, and indicates that the hardware does not have an associated service using the specified install section.
+<td>Starting in Windows 10, version 1809, this has changed from a Warning to an Error.  The .Services sections are required for each defined target OS.  This is good practice and applies to all INFs and not just 1809.  
+
+If you were previously not including this section because you had no services, and were relying on Inbox driver services, then you may need to create a .Services section that references the Inbox INF’s service using a NEEDS and INCLUDES statement.  
+
+For example:  An INF file would have the following .Services section for each OS target to resolve this error.
+
+<pre>
+[XXXXXXXX.Install.NTx86.Services]
+Include=filename.inf
+Needs=inf-section-name.Services
+</pre>
+
+For devices that do not require a function driver, the NULL driver can be specified as follows:
+<pre>
+AddService = ,2.
+</pre>
+<b>Only use this in the case where the INF is installing a non-functional device to specify it does not need a driver.</b>
 </td>
 </tr>
 </tbody>

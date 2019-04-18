@@ -1096,6 +1096,8 @@
           href: component-level-power-management.md
         - name: "Component-Level Performance State Management"
           href: component-level-performance-management.md
+        - name: "Introduction to the Directed Power Management Framework"
+          href: introduction-to-the-directed-power-management-framework.md
       - name: "Platform Extension Plug-ins (PEPs)"
         href: platform-extension-plug-ins--peps-.md
         items: 

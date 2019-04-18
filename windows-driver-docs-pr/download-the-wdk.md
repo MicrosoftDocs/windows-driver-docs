@@ -9,6 +9,7 @@ keywords:
 - drivers
 ms.date: 08/06/2018
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Download the Windows Driver Kit (WDK)
@@ -20,42 +21,42 @@ Join the Windows Insider Program to get [WDK Insider Preview builds](https://www
 * [Learn what's new in driver development](what-s-new-in-driver-development.md) 
 * [Review known issues](https://go.microsoft.com/fwlink/?linkid=872986)
 
-## WDK for Windows 10, version 1809
+## WDK for Windows 10, version 1903
 
-### ![download icon](images/download-install.png) Step 1: Install Visual Studio 2017 
-The following editions of Visual Studio 2017 support driver development: 
+### ![download icon](images/download-install.png) Step 1: Install Visual Studio 2019 
+The following editions of Visual Studio 2019 support driver development: 
 
-* [Download Visual Studio Community 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)
-* [Download Visual Studio Professional 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15) 
-* [Download Visual Studio Enterprise 2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15)
+* [Download Visual Studio Community 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16)
+* [Download Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16) 
+* [Download Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16)
 
 When you install Visual Studio, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. 
 
 For ARM/ARM64 driver development, choose **Individual components** and under **Compilers, build tools, and runtimes** select **Visual C++ compilers and libraries for ARM/ARM64**.
 
 
-### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 1809
+### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 1903
 
-* [Download WDK for Windows 10, version 1809](https://go.microsoft.com/fwlink/?linkid=2026156) 
+* [Download WDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/?linkid=2085659) 
 
 New as of 1709 release: The WDK installation will by default install the WDK Visual Studio extension. This must be done in order for WDK VS integration to work. 
 
-## Enterprise WDK for Windows 10, version 1809 (EWDK) 
+## Enterprise WDK for Windows 10, version 1903 (EWDK) 
 
-The EWDK is a standalone self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio Build Tools 15.8.9.  To get started, mount the ISO and run **LaunchBuildEnv**. 
+The EWDK is a standalone self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.0.0.  To get started, mount the ISO and run **LaunchBuildEnv**. 
 
 ### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools
 
-* [Download EWDK for Windows 10, version 1809](https://developer.microsoft.com/windows/hardware/license-terms-EWDK)
+* [Download EWDK for Windows 10, version 1903](https://developer.microsoft.com/windows/hardware/license-terms-EWDK-2)
 
 
 ## Additional information
 
 ### Release notes and run-time requirements
 
-WDK requires Visual Studio, for more information more info on system requirements for Visual Studio please review [Visual Studio 2017 System Requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs). 
+WDK requires Visual Studio, for more information more info on system requirements for Visual Studio please review [Visual Studio 2019 System Requirements](https://docs.microsoft.com/en-us/visualstudio/releases/2019/system-requirements). 
 
-EWDK will additionally need .NET 4.6.1, for more information on what .NET runs on please review [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements). 
+EWDK will additionally need .NET 4.7.2, for more information on what .NET runs on please review [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements). 
 
 You can use the WDK to develop drivers for these operating systems: 
 

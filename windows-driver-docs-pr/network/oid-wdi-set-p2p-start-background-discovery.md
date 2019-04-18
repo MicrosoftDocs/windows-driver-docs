@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_P2P\_START\_BACKGROUND\_DISCOVERY
@@ -53,6 +54,7 @@ No additional data. The data in the header is sufficient.
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST](ndis-status-wdi-indication-bss-entry-list.md)
+
 Requirements
 ------------
 

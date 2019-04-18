@@ -2000,6 +2000,8 @@
       href: kscategory-multiplexer.md
     - name: "KSCATEGORY_NETWORK"
       href: kscategory-network.md
+    - name: "KSCATEGORY_NETWORK_CAMERA"
+      href: kscategory-network-camera.md
     - name: "KSCATEGORY_PREFERRED_MIDIOUT_DEVICE"
       href: kscategory-preferred-midiout-device.md
     - name: "KSCATEGORY_PREFERRED_WAVEIN_DEVICE"
