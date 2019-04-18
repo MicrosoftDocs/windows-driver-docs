@@ -2399,15 +2399,6 @@
     - name: "Introduction to Boot Options"
       href: introduction-to-boot-options.md
       items: 
-      - name: "Boot Options in a Boot.ini File"
-        href: boot-options-in-a-boot-ini-file.md
-        items: 
-        - name: "Overview of the Boot.ini File"
-          href: overview-of-the-boot-ini-file.md
-        - name: "Editing the Boot.ini File"
-          href: editing-the-boot-ini-file.md
-        - name: "Backing Up the Boot.ini File"
-          href: backing-up-the-boot-ini-file.md
       - name: "Boot Options in EFI NVRAM"
         href: boot-options-in-efi-nvram.md
         items: 
@@ -2452,9 +2443,6 @@
         href: boot-parameters-to-manipulate-memory.md
       - name: "Boot Parameters to Load a Partial Checked Build"
         href: boot-parameters-to-load-a-partial-checked-build.md
-      - name: "Boot Parameters to Enable EMS Redirection"
-        href: boot-parameters-to-enable-ems-redirection.md
-      - name: "Boot Parameters to Configure DEP and PAE"
         href: boot-parameters-to-configure-dep-and-pae.md
       - name: "Boot Parameters to Test Drivers for Multiple Processor Group Support"
         href: boot-parameters-to-test-drivers-for-multiple-processor-group-support.md
@@ -2475,6 +2463,21 @@
         href: bcdedit--emssettings.md
       - name: "BCDEdit /set"
         href: bcdedit--set.md
+    - name: "BCDEdit Previous Versions of Windows"
+      href: bcd-boot-previous-versions.md
+      items: 
+      - name: "Boot Parameters to Enable EMS Redirection"
+        href: boot-parameters-to-enable-ems-redirection.md
+      - name: "Boot Parameters to Configure DEP and PAE"
+      - name: "Boot Options in a Boot.ini File"
+        href: boot-options-in-a-boot-ini-file.md
+        items: 
+        - name: "Overview of the Boot.ini File"
+          href: overview-of-the-boot-ini-file.md
+        - name: "Editing the Boot.ini File"
+          href: editing-the-boot-ini-file.md
+        - name: "Backing Up the Boot.ini File"
+          href: backing-up-the-boot-ini-file.md
   - name: "Tools for Debugging Drivers"
     href: tools-for-debugging-drivers.md
     items: 
