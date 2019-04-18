@@ -43,7 +43,7 @@ New as of 1709 release: The WDK installation will by default install the WDK Vis
 
 ## Enterprise WDK for Windows 10, version 1903 (EWDK) 
 
-The EWDK is a standalone self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio Build Tools 16.0.0.  To get started, mount the ISO and run **LaunchBuildEnv**. 
+The EWDK is a standalone self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.0.0.  To get started, mount the ISO and run **LaunchBuildEnv**. 
 
 ### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools
 
