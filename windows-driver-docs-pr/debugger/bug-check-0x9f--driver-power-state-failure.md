@@ -20,6 +20,10 @@ The DRIVER\_POWER\_STATE\_FAILURE bug check has a value of 0x0000009F. This bug 
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
 
 ## DRIVER\_POWER\_STATE\_FAILURE Parameters
 

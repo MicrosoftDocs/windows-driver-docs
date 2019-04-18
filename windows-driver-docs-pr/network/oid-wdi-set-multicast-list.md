@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_MULTICAST_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_MULTICAST\_LIST
@@ -36,6 +37,7 @@ After the host enables multicast packet filtering on the port using [OID\_WDI\_S
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 

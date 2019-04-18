@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_CREATE_PORT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_CREATE\_PORT
@@ -64,6 +65,7 @@ If the MAC is to function as a Wi-Fi Direct device port, **uOpmodeMask** contain
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_CREATE\_PORT\_COMPLETE](ndis-status-wdi-indication-create-port-complete.md)
+
 Requirements
 ------------
 

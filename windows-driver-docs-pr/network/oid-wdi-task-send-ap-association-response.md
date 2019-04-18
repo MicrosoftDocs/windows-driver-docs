@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE
@@ -37,6 +38,7 @@ If the send fails for any reason, an empty [NDIS\_STATUS\_WDI\_INDICATION\_SEND\
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_SEND\_AP\_ASSOCIATION\_RESPONSE\_COMPLETE](ndis-status-wdi-indication-send-ap-association-response-complete.md)
+
 Requirements
 ------------
 

@@ -6,6 +6,7 @@ keywords:
 - Ntddndis.h network drivers
 ms.date: 08/08/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Ntddndis.h
@@ -323,13 +324,17 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WWAN_LTE_ATTACH_CONFIG](oid-wwan-lte-attach-config.md)
 * [OID_WWAN_LTE_ATTACH_STATUS](oid-wwan-lte-attach-status.md)
 * [OID_WWAN_HOME_PROVIDER](oid-wwan-home-provider.md)
+* [OID_WWAN_MODEM_CONFIG_INFO](oid-wwan-modem-config-info.md)
+* [OID_WWAN_MODEM_LOGGING_CONFIG](oid-wwan-modem-logging-config.md)
 * [OID_WWAN_MPDP](oid-wwan-mpdp.md)
 * [OID_WWAN_NETWORK_BLACKLIST](oid-wwan-network-blacklist.md)
 * [OID_WWAN_NETWORK_IDLE_HINT](oid-wwan-network-idle-hint.md)
+* [OID_WWAN_NITZ](oid-wwan-nitz.md)
 * [OID_WWAN_PACKET_SERVICE](oid-wwan-packet-service.md)
 * [OID_WWAN_PCO](oid-wwan-pco.md)
 * [OID_WWAN_PIN](oid-wwan-pin.md)
 * [OID_WWAN_PIN_EX](oid-wwan-pin-ex.md)
+* [OID_WWAN_PIN_EX2](oid-wwan-pin-ex2.md)
 * [OID_WWAN_PIN_LIST](oid-wwan-pin-list.md)
 * [OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS](oid-wwan-preferred-multicarrier-providers.md)
 * [OID_WWAN_PREFERRED_PROVIDERS](oid-wwan-preferred-providers.md)
@@ -350,6 +355,10 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_WWAN_SMS_STATUS](oid-wwan-sms-status.md)
 * [OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS](oid-wwan-subscribe-device-service-events.md)
 * [OID_WWAN_SYS_CAPS_INFO](oid-wwan-sys-caps.md)
+* [OID_WWAN_UICC_ACCESS_BINARY](oid-wwan-uicc-access-binary.md)
+* [OID_WWAN_UICC_ACCESS_RECORD](oid-wwan-uicc-access-record.md)
+* [OID_WWAN_UICC_APP_LIST](oid-wwan-uicc-app-list.md)
+* [OID_WWAN_UICC_FILE_STATUS](oid-wwan-uicc-file-status.md)
 * [OID_WWAN_UICC_RESET](oid-wwan-uicc-reset.md)
 * [OID_WWAN_USSD](oid-wwan-ussd.md)
 * [OID_WWAN_VENDOR_SPECIFIC](oid-wwan-vendor-specific.md)

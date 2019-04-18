@@ -140,6 +140,8 @@
           href: pwrtest-connected-standby--cs--scenario.md
         - name: "PwrTest Device Scenario"
           href: pwrtest-device-scenario.md
+        - name: "PwrTest DirectedFx Scenario"
+          href: pwrtest-directedfx-scenario.md
         - name: "PwrTest Disk Scenario"
           href: pwrtest-disk-scenario.md
         - name: "PwrTest Execution State Scenario"
