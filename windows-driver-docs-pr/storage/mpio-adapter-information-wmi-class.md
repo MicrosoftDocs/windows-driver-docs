@@ -16,7 +16,7 @@ class MPIO_ADAPTER_INFORMATION
 {
     //
     // Path ID. The PDO_INFORMATION class includes
-    // it&#39;s pathId. These values can be used to find
+    // it's pathId. These values can be used to find
     // which devices are on which path.
     //
     [WmiDataId(1)] uint64 PathId;

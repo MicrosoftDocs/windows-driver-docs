@@ -6,6 +6,7 @@ keywords:
 - debugging NetAdapterCx client drivers, debugging NetAdapterCx client drivers
 ms.date: 06/05/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Debugging a NetAdapterCx client driver
@@ -14,7 +15,7 @@ ms.localizationpriority: medium
 
 You can use [Windows Driver Framework Extensions (Wdfkd.dll)](https://msdn.microsoft.com/library/windows/hardware/ff551876) commands to debug your client driver.  In addition, [!ndiskd.netadapter](https://msdn.microsoft.com/library/windows/hardware/mt799821) will show networking-specific properties of your adapter.
 
-Also, you can use the `!ndiskd.netrb` debugger extension with the address of a [**NET_RING_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/ns-netringbuffer-_net_ring_buffer) structure to examine packets and fragments in a ring buffer.  This command gives you additional information, such as the number of elements in the ring buffer, along with the number of packets owned by the OS and the number of packets owned by the client.
+Also, you can use the `!ndiskd.netrb` debugger extension with the address of a [**NET_RING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/ns-netringbuffer-_NET_RING) structure to examine packets and fragments in a ring buffer.  This command gives you additional information, such as the number of elements in the ring buffer, along with the number of packets owned by the OS and the number of packets owned by the client.
 
 You can use the following !ndiskd commands with a NetAdapterCx client driver:
 
@@ -23,7 +24,7 @@ You can use the following !ndiskd commands with a NetAdapterCx client driver:
 *  [**!ndiskd.netqueue**](https://msdn.microsoft.com/library/windows/hardware/mt808789)
     *  Given a NETTXQUEUE or NETRXQUEUE handle, show information about a data path queue.
 *  [**!ndiskd.netrb**](https://msdn.microsoft.com/library/windows/hardware/mt808790)
-    *  Shows [**NET_RING_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/ns-netringbuffer-_net_ring_buffer) information.
+    *  Shows [**NET_RING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/ns-netringbuffer-_NET_RING) information.
 *  [**!ndiskd.netpacket**](https://msdn.microsoft.com/library/windows/hardware/mt808787)
     *  Shows information about a [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet).
 *  [**!ndiskd.netpacketfragment**](https://msdn.microsoft.com/library/windows/hardware/mt808788)

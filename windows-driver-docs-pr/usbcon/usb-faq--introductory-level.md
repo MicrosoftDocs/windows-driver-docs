@@ -634,7 +634,7 @@ The major restrictions imposed on hardware devices and drivers by **Usbccgp.sys*
 ## How do I enable debug tracing for USB core binaries?
 
 
-See the blog post about [How to include and view WPP trace messages in a driver’s public PDB files](http://blogs.msdn.com/b/usbcoreblog/archive/2013/06/29/wpp-blog-post.aspx).
+See the blog post about [How to include and view WPP trace messages in a driver’s public PDB files](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog/archive/2013/06/29/wpp-blog-post.aspx).
 
 For additional information about USB core stack debugging, see [How to enable verbose debug tracing in various drivers and subsystems](https://support.microsoft.com/kb/314743).
 

@@ -36,7 +36,7 @@ The DEVPKEY_Device_DriverCoInstallers device property represents a list of DLL n
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Data format</strong></p></td>
-<td align="left"><p>&quot;AbcCoInstall.dll,AbcCoInstallEntryPoint\0...AbcCoInstall.dll, AbcCoInstallEntryPoin\0\0&quot;</p></td>
+<td align="left"><p>"AbcCoInstall.dll,AbcCoInstallEntryPoint\0...AbcCoInstall.dll, AbcCoInstallEntryPoin\0\0"</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property access</strong></p></td>

@@ -58,15 +58,15 @@ LPVOID pmem;
  */
 switch ((int)pDDPF->dwFourCC)
 {
-  case MAKEFOURCC(&#39;D&#39;,&#39;X&#39;,&#39;T&#39;,&#39;1&#39;):
+  case MAKEFOURCC('D','X','T','1'):
     blksize = 8; // The size of a DXT1 4x4 pixel block. 
     break;
-  case MAKEFOURCC(&#39;D&#39;,&#39;X&#39;,&#39;T&#39;,&#39;2&#39;):    // premultiplied alpha
-  case MAKEFOURCC(&#39;D&#39;,&#39;X&#39;,&#39;T&#39;,&#39;3&#39;):    // non-premultiplied alpha
+  case MAKEFOURCC('D','X','T','2'):    // premultiplied alpha
+  case MAKEFOURCC('D','X','T','3'):    // non-premultiplied alpha
     blksize = 16; //The size of a DXT2,3 4x4 pixel block 
     break;
-  case MAKEFOURCC(&#39;D&#39;,&#39;X&#39;,&#39;T&#39;,&#39;4&#39;):    // premultiplied alpha
-  case MAKEFOURCC(&#39;D&#39;,&#39;X&#39;,&#39;T&#39;,&#39;5&#39;):    // non-premultiplied alpha
+  case MAKEFOURCC('D','X','T','4'):    // premultiplied alpha
+  case MAKEFOURCC('D','X','T','5'):    // non-premultiplied alpha
     blksize = 16; //The size of a DXT4,5 4x4 pixel block.
   break;
 

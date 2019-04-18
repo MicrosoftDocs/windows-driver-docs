@@ -130,7 +130,7 @@ namespace UserModeMonitorExample
         [TestCleanup]
         public void TestCleanup()
         {
-            // Close the &#39;mspaint under test&#39; - if it&#39;s already gone, this will throw, but that&#39;s no big deal.
+            // Close the 'mspaint under test' - if it's already gone, this will throw, but that's no big deal.
             this.mspaintUnderTest.CloseMainWindow();
         }
 
@@ -139,8 +139,8 @@ namespace UserModeMonitorExample
         [TestProperty("Description", "Shows how a test can be failed if the UI is closed from underneath the test.")]
         public void SimpleInteraction()
         {
-            Log.Comment("If the &#39;user mode monitor&#39; is enabled and mspaint.exe is closed,&quot;);
-            Log.Comment(&quot;then this test will be failed.&quot;);
+            Log.Comment("If the 'user mode monitor' is enabled and mspaint.exe is closed,");
+            Log.Comment("then this test will be failed.");
             Log.Comment("Sleeping for 5 seconds");
 
             Thread.Sleep(TimeSpan.FromSeconds(5));

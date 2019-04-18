@@ -408,7 +408,7 @@ This example shows how the system HDC class INF file sets up several *log-config
 %*PNP0600.DeviceDesc% = atapi_Inst, *PNP0600 ; generic ESDI HDCs
 %PCI\CC_0101.DeviceDesc% = pciide_Inst,,PCI\CC_0101
 
-; ... other manufacturers&#39; Models sections omitted
+; ... other manufacturers' Models sections omitted
 
 [atapi_Inst]
 CopyFiles = @atapi.sys

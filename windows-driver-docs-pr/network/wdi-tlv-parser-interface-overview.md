@@ -84,7 +84,7 @@ The TLV parser generator can return several different NDIS\_STATUS codes. For mo
 <tr class="even">
 <td align="left"><p>NDIS_STATUS_BUFFER_OVERFLOW</p></td>
 <td align="left"><p>When generating, this indicates that due to the number of elements in an array (list), it overflows the 2 byte <strong>Length</strong> field within the TLV header. You should reduce the number of elements. This can also occur when an outer TLV has too many (or too large of) inner TLVs, again overflowing the 2 byte <strong>Length</strong> field of the header.</p>
-<p>When parsing, this indicates a TLV header&#39;s <strong>Length</strong> field is larger than the outer TLV or the byte stream.</p></td>
+<p>When parsing, this indicates a TLV header's <strong>Length</strong> field is larger than the outer TLV or the byte stream.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>NDIS_STATUS_FILE_NOT_FOUND</p></td>

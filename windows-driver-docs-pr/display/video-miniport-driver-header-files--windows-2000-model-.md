@@ -31,7 +31,7 @@ Video miniport drivers in the Windows 2000 display driver model include the foll
 <tbody>
 <tr class="odd">
 <td align="left"><p><em>dderror.h</em></p></td>
-<td align="left"><p>Contains the Win32 status constants that miniport drivers return to the video port driver, which are also returned to the miniport driver&#39;s corresponding kernel-mode display driver.</p></td>
+<td align="left"><p>Contains the Win32 status constants that miniport drivers return to the video port driver, which are also returned to the miniport driver's corresponding kernel-mode display driver.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><em>devioctl.h</em></p></td>

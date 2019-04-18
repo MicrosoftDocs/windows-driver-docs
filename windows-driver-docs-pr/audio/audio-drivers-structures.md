@@ -8,9 +8,7 @@ ms.localizationpriority: medium
 
 # Audio Drivers Structures
 
-
 ## <span id="ddk_audio_drivers_structures_ks"></span><span id="DDK_AUDIO_DRIVERS_STRUCTURES_KS"></span>
-
 
 This section describes the structures that are used by WDM audio miniport drivers. The list of structures is as follows:
 
@@ -172,17 +170,8 @@ This section describes the structures that are used by WDM audio miniport driver
 
 [**SYSAUDIO\_SELECT\_GRAPH**](https://msdn.microsoft.com/library/windows/hardware/ff538500)
 
-[**UNCOMPRESSEDAUDIOFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff538640)
+[**UNCOMPRESSEDAUDIOFORMAT**](https://docs.microsoft.com/windows/desktop/api/audiomediatype/ns-audiomediatype-uncompressedaudioformat)
 
 [**WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff538799)
 
 [**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802)
-
- 
-
- 
-
-
-
-
-

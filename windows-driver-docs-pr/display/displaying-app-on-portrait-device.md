@@ -83,7 +83,7 @@ ORIENTATION GetOrientationFromCurrentMode(_In_ PCWSTR pszDeviceName)
 // Overloaded function accepts an HMONITOR and converts to DeviceName
 ORIENTATION GetOrientationFromCurrentMode(HMONITOR hMonitor)
 {
-    // Get the name of the &#39;monitor&#39; being requested
+    // Get the name of the 'monitor' being requested
     MONITORINFOEXW ViewInfo;
     RtlZeroMemory(&ViewInfo, sizeof(ViewInfo));
     ViewInfo.cbSize = sizeof(ViewInfo);
@@ -145,7 +145,7 @@ HRESULT GetPathInfo(_In_ PCWSTR pszDeviceName, _Out_ DISPLAYCONFIG_PATH_INFO* pP
 
     do
     {
-        // In case this isn&#39;t the first time through the loop, delete the buffers allocated
+        // In case this isn't the first time through the loop, delete the buffers allocated
         delete[] PathInfoArray;
         PathInfoArray = nullptr;
 
@@ -179,7 +179,7 @@ HRESULT GetPathInfo(_In_ PCWSTR pszDeviceName, _Out_ DISPLAYCONFIG_PATH_INFO* pP
 
     if (SUCCEEDED(hr))
     {
-        // Loop through all sources until the one which matches the &#39;monitor&#39; is found.
+        // Loop through all sources until the one which matches the 'monitor' is found.
         for (UINT PathIdx = 0; PathIdx < NumPathArrayElements; ++PathIdx)
         {
             DISPLAYCONFIG_SOURCE_DEVICE_NAME SourceName = {};
@@ -227,7 +227,7 @@ HRESULT GetPathInfo(HMONITOR hMonitor, _Out_ DISPLAYCONFIG_PATH_INFO* pPathInfo)
 {
     HRESULT hr = S_OK;
 
-    // Get the name of the &#39;monitor&#39; being requested
+    // Get the name of the 'monitor' being requested
     MONITORINFOEXW ViewInfo;
     RtlZeroMemory(&ViewInfo, sizeof(ViewInfo));
     ViewInfo.cbSize = sizeof(ViewInfo);
@@ -257,7 +257,7 @@ HRESULT GetPathInfoForInternal(_Out_ DISPLAYCONFIG_PATH_INFO* pPathInfo)
 
     do
     {
-        // In case this isn&#39;t the first time through the loop, delete the buffers allocated
+        // In case this isn't the first time through the loop, delete the buffers allocated
         delete[] PathInfoArray;
         PathInfoArray = nullptr;
 
@@ -296,7 +296,7 @@ HRESULT GetPathInfoForInternal(_Out_ DISPLAYCONFIG_PATH_INFO* pPathInfo)
         {
             if (IsInternalVideoOutput(PathInfoArray[PathIdx].targetInfo.outputTechnology))
             {
-                // There&#39;s only one internal target on the system and we found it.
+                // There's only one internal target on the system and we found it.
                 *pPathInfo = PathInfoArray[PathIdx];
 
                 hr = S_OK;
@@ -393,7 +393,7 @@ int __cdecl main(int argc, const char* argv[])
     HRESULT hr = E_FAIL;
 
     // Note: This MonitorFromWindow call should be modified if the orientation is needed for 
-    // the monitor the application&#39;s window is currently on. It is also unnecessary if only
+    // the monitor the application's window is currently on. It is also unnecessary if only
     // the internal monitor is desired.
     HMONITOR hPrimaryMon = MonitorFromWindow(NULL, MONITOR_DEFAULTTOPRIMARY);
 

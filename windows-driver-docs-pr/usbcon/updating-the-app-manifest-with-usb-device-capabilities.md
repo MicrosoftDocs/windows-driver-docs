@@ -96,38 +96,38 @@ Here are some examples for defining USB device capabilities:
 </thead>
 <tbody>
 <tr class="odd">
-<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name=&quot;usb&quot;&gt;
-  &lt;Device Id=&quot;any&quot;&gt;
-    &lt;Function Type=&quot;classId:ef 01 01&quot;/&gt;
-    &lt;Function Type=&quot;name:stillImage&quot;/&gt;
+<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
+  &lt;Device Id="any"&gt;
+    &lt;Function Type="classId:ef 01 01"/&gt;
+    &lt;Function Type="name:stillImage"/&gt;
   &lt;/Device&gt;
 &lt;/DeviceCapability&gt;</code></pre></td>
 <td><p>Allows the app to access any ActiveSync or StillImage interface on any device. The app is not required to specify the vendor/product identifiers because these are known class types.</p></td>
 </tr>
 <tr class="even">
-<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name=&quot;usb&quot;&gt;
-  &lt;Device Id=&quot;vidpid:045e 930a&quot;&gt;
-    &lt;Function Type=&quot;name:vendorSpecific&quot;/&gt;
+<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
+  &lt;Device Id="vidpid:045e 930a"&gt;
+    &lt;Function Type="name:vendorSpecific"/&gt;
   &lt;/Device&gt;
 &lt;/DeviceCapability&gt;</code></pre></td>
 <td><p>Allows the app to access a vendor-specific interface on the OSR USB Fx2 device.</p></td>
 </tr>
 <tr class="odd">
-<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name=&quot;usb&quot;&gt;
-  &lt;Device Id=&quot;vidpid:045e 930a&quot;&gt;
-    &lt;Function Type=&quot;classId:ff * <em>&quot;/&gt;
+<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
+  &lt;Device Id="vidpid:045e 930a"&gt;
+    &lt;Function Type="classId:ff * <em>"/&gt;
   &lt;/Device&gt;
 &lt;/DeviceCapability&gt;</code></pre></td>
-<td><p>Allows the app to access a vendor-specific interface on a different version of the OSR USB Fx2 device. Note the classId format: &quot;ff * *&quot;. The class code is &quot;ff&quot; followed by a wildcard (</em>) to include any subclass and protocol code.</p></td>
+<td><p>Allows the app to access a vendor-specific interface on a different version of the OSR USB Fx2 device. Note the classId format: "ff * *". The class code is "ff" followed by a wildcard (</em>) to include any subclass and protocol code.</p></td>
 </tr>
 <tr class="even">
-<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name=&quot;usb&quot;&gt;
-  &lt;Device Id=&quot; vidpid:1234 5678&quot;&gt;
-    &lt;Function Type=&quot;winUsbId:&quot;xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&quot;/&gt;
+<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
+  &lt;Device Id=" vidpid:1234 5678"&gt;
+    &lt;Function Type="winUsbId:"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"/&gt;
   &lt;/Device&gt;
 &lt;/DeviceCapability&gt;</code></pre></td>
 <td><p>Allows the app to access the device with a device interface GUID defined either in the MS OS Descriptor or in the device INF.</p>
-<p>In this case, the Device Id value must not equal &quot;any&quot;.</p></td>
+<p>In this case, the Device Id value must not equal "any".</p></td>
 </tr>
 </tbody>
 </table>

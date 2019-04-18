@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_START_AP Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_START\_AP
@@ -105,6 +106,7 @@ If **MustUseSpecifiedChannel** in [**WDI\_TLV\_START\_AP\_PARAMETERS**](https://
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_START\_AP\_COMPLETE](ndis-status-wdi-indication-start-ap-complete.md)
+
 Requirements
 ------------
 

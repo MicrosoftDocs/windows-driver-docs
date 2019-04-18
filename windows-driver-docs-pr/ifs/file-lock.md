@@ -66,7 +66,7 @@ Reserved for system use.
 Remarks
 -------
 
-File system legacy filter drivers and minifilters can use a variety of routines to create and use FILE\_LOCK objects, as well as to test for read/write access to files.
+File system drivers, legacy filesystem filter drivers and minifilters can use a variety of routines to create and use FILE\_LOCK objects, as well as to test for read/write access to files.
 
 -   To allocate a FILE\_LOCK object, call [**FsRtlAllocateFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff545640) or [**FltAllocateFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff541743).
 

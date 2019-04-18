@@ -6,6 +6,7 @@ ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_REGISTER_STATE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WWAN\_REGISTER\_STATE
@@ -39,6 +40,16 @@ The semantics of RegisterAction values are defined as follows:
 -   Changing between the different RegisterAction values are allowed even if the device is currently registered to a provider. If the device need to deregister before switching between the Automatic and Manual registration modes, the miniport driver must ensure that the device is set to deregistration before setting to the new registration mode.
 
 -   The *Manual* and *Automatic* registration mode only affects the network selection mode. The MB device should try to register to selected network whenever the radio is turned on.
+
+### Windows 10, version 1903
+
+A new revision 3 for this OID is supported starting in Windows 10, version 1903. This extension enables the host to query the preferred radio access technologies (RATs) from the miniport driver. 
+
+To control the preferred RAT, the host sets a bitmask representing WWAN_DATA_CLASS values in the **WwanDataClass** member of the [**WWAN_SET_REGISTER_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_set_register_state) structure. This member represents the data access technologies that are preferred for a connection. If this field is set to **WWAN_DATA_CLASS_NONE**, then the modem should take no action for this parameter.
+
+The host can also query the currently preferred data classes from the miniport driver. The miniport driver uses the **PreferredDataClasses** field of the [**WWAN_REGISTRATION_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_registration_state) structure to report the preferred data access technologies that are currently set in the modem.
+
+For more info about 5G data class support, see [MB 5G data class support](mb-5g-data-class-support.md).
 
 Requirements
 ------------

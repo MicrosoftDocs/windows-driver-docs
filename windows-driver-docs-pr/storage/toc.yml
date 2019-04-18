@@ -29,6 +29,8 @@
       href: querying-for-the-write-cache-property.md
     - name: "Device Unique Identifiers (DUIDs) for Storage Devices"
       href: device-unique-identifiers--duids--for-storage-devices.md
+    - name: "General Sorage I/O Control Codes"
+      href: general-storage-io-control-codes.md
     - name: "Sample Storport Miniport Driver for an LSI_U3 Device"
       href: sample-storport-miniport-driver-for-an-lsi-u3-device.md
       items: 
@@ -459,6 +461,8 @@
       href: cd-rom-real-time-streaming-.md
     - name: "ACLs and the Device Stack"
       href: acls-and-the-device-stack.md
+    - name: "CD-ROM I/O control codes"
+      href: cd-rom-io-control-codes.md
   - name: "Tape Drivers"
     href: tape-drivers.md
     items: 

@@ -49,9 +49,9 @@ The "USBDevice" setup class is available for those devices for which Microsoft d
 
 ### About using the USBDevice class:
 
-Do not use the &quot;USB&quot; setup class for unclassified devices. That class is reserved for installing controllers, hubs, and composite devices. Misusing the &quot;USB&quot; class can lead to significant reliability and performance issues. For unclassified devices, use &quot;USBDevice&quot;.
+Do not use the "USB" setup class for unclassified devices. That class is reserved for installing controllers, hubs, and composite devices. Misusing the "USB" class can lead to significant reliability and performance issues. For unclassified devices, use "USBDevice".
 
-In Windows 8, to use &quot;USBDevice&quot; device class, simply add this to your INF:
+In Windows 8, to use "USBDevice" device class, simply add this to your INF:
 
 ```cpp
   …

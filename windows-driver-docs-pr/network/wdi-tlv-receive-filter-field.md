@@ -42,7 +42,7 @@ The sum (in bytes) of the sizes of all contained elements.
 <td>UINT32</td>
 <td>Specifies a bitwise OR of flags. The possible flag value is WDI_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO. If this flag is set, the network adapter must only indicate received packets that pass the following criteria:
 <ul>
-<li>The packet&#39;s MAC address matches the specified MAC header field test.</li>
+<li>The packet's MAC address matches the specified MAC header field test.</li>
 <li>The packet either does not contain a VLAN tag or has a VLAN tag with an ID of zero.</li>
 </ul></td>
 </tr>

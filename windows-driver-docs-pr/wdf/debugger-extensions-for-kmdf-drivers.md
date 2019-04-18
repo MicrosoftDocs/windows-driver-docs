@@ -44,7 +44,7 @@ The extension commands that the *Wdfkd.dll* extension library provides include:
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565672" data-raw-source="[&lt;strong&gt;!wdfkd.wdfchildlist&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565672)"><strong>!wdfkd.wdfchildlist</strong></a></p></td>
-<td align="left"><p>Displays a child list&#39;s state and information about all of the device identification descriptions that are in the child list.</p></td>
+<td align="left"><p>Displays a child list's state and information about all of the device identification descriptions that are in the child list.</p></td>
 <td align="left">KMDF</td>
 </tr>
 <tr class="odd">
@@ -61,7 +61,7 @@ The extension commands that the *Wdfkd.dll* extension library provides include:
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565682" data-raw-source="[&lt;strong&gt;!wdfkd.wdfcrashdump&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565682)"><strong>!wdfkd.wdfcrashdump</strong></a></p></td>
-<td align="left"><p>Displays the framework&#39;s event log records, if available, from a small memory dump. The framework&#39;s event log records are available if <a href="registry-values-for-debugging-kmdf-drivers.md" data-raw-source="[ForceLogsInMiniDump](registry-values-for-debugging-kmdf-drivers.md)">ForceLogsInMiniDump</a> is set in the registry, or if the framework can determine that your driver caused the bug check.</p></td>
+<td align="left"><p>Displays the framework's event log records, if available, from a small memory dump. The framework's event log records are available if <a href="registry-values-for-debugging-kmdf-drivers.md" data-raw-source="[ForceLogsInMiniDump](registry-values-for-debugging-kmdf-drivers.md)">ForceLogsInMiniDump</a> is set in the registry, or if the framework can determine that your driver caused the bug check.</p></td>
 <td align="left">KMDF</td>
 </tr>
 <tr class="even">
@@ -112,7 +112,7 @@ The extension commands that the *Wdfkd.dll* extension library provides include:
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565731" data-raw-source="[&lt;strong&gt;!wdfkd.wdfextendwatchdog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565731)"><strong>!wdfkd.wdfextendwatchdog</strong></a></p></td>
-<td align="left"><p>Extends the time-out period (from 10 minutes to 24 hours) of the framework&#39;s watchdog timer during power transitions.</p></td>
+<td align="left"><p>Extends the time-out period (from 10 minutes to 24 hours) of the framework's watchdog timer during power transitions.</p></td>
 <td align="left">KMDF</td>
 </tr>
 <tr class="odd">
@@ -159,19 +159,19 @@ The extension commands that the *Wdfkd.dll* extension library provides include:
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565805" data-raw-source="[&lt;strong&gt;!wdfkd.wdflogdump&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565805)"><strong>!wdfkd.wdflogdump</strong></a></p></td>
-<td align="left"><p>Displays the framework&#39;s event log records, if available, from a complete memory dump, a kernel memory dump, or a live kernel-mode target.</p></td>
+<td align="left"><p>Displays the framework's event log records, if available, from a complete memory dump, a kernel memory dump, or a live kernel-mode target.</p></td>
 <td align="left"><p>KMDF</p>
 <p>UMDF 2</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566102" data-raw-source="[&lt;strong&gt;!wdfkd.wdflogsave&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566102)"><strong>!wdfkd.wdflogsave</strong></a></p></td>
-<td align="left"><p>Saves the framework&#39;s event log records in an event trace log (.<em>etl</em>) file that you can view by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff553872" data-raw-source="[TraceView](https://msdn.microsoft.com/library/windows/hardware/ff553872)">TraceView</a>.</p></td>
+<td align="left"><p>Saves the framework's event log records in an event trace log (.<em>etl</em>) file that you can view by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff553872" data-raw-source="[TraceView](https://msdn.microsoft.com/library/windows/hardware/ff553872)">TraceView</a>.</p></td>
 <td align="left"><p>KMDF</p>
 <p>UMDF 2</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566103" data-raw-source="[&lt;strong&gt;!wdfkd.wdfmemory&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566103)"><strong>!wdfkd.wdfmemory</strong></a></p></td>
-<td align="left"><p>Displays a memory object&#39;s buffer address and size.</p></td>
+<td align="left"><p>Displays a memory object's buffer address and size.</p></td>
 <td align="left"><p>KMDF</p>
 <p>UMDF 2</p></td>
 </tr>
@@ -189,7 +189,7 @@ The extension commands that the *Wdfkd.dll* extension library provides include:
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566115" data-raw-source="[&lt;strong&gt;!wdfkd.wdfpoolusage&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566115)"><strong>!wdfkd.wdfpoolusage</strong></a></p></td>
-<td align="left"><p>Displays a driver&#39;s memory pool usage.</p></td>
+<td align="left"><p>Displays a driver's memory pool usage.</p></td>
 <td align="left"><p>KMDF</p>
 <p>UMDF 2</p></td>
 </tr>
@@ -207,13 +207,13 @@ The extension commands that the *Wdfkd.dll* extension library provides include:
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566120" data-raw-source="[&lt;strong&gt;!wdfkd.wdfsearchpath&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566120)"><strong>!wdfkd.wdfsearchpath</strong></a></p></td>
-<td align="left"><p>Sets the search path for locating the framework log&#39;s format files.</p></td>
+<td align="left"><p>Sets the search path for locating the framework log's format files.</p></td>
 <td align="left"><p>KMDF</p>
 <p>UMDF 2</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566123" data-raw-source="[&lt;strong&gt;!wdfkd.wdfsettraceprefix&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566123)"><strong>!wdfkd.wdfsettraceprefix</strong></a></p></td>
-<td align="left"><p>Sets a prefix string for tracing messages in the framework&#39;s event log.</p></td>
+<td align="left"><p>Sets a prefix string for tracing messages in the framework's event log.</p></td>
 <td align="left"><p>KMDF</p>
 <p>UMDF 2</p></td>
 </tr>
@@ -225,7 +225,7 @@ The extension commands that the *Wdfkd.dll* extension library provides include:
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566125" data-raw-source="[&lt;strong&gt;!wdfkd.wdfspinlock&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566125)"><strong>!wdfkd.wdfspinlock</strong></a></p></td>
-<td align="left"><p>Displays information about a framework spin-lock object. This information includes the spin lock&#39;s acquisition history and the length of time that the lock was held.</p></td>
+<td align="left"><p>Displays information about a framework spin-lock object. This information includes the spin lock's acquisition history and the length of time that the lock was held.</p></td>
 <td align="left"><p>KMDF</p>
 <p>UMDF 2</p></td>
 </tr>
@@ -297,7 +297,7 @@ The extension commands that the *Wdfkd.dll* extension library provides include:
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566137" data-raw-source="[&lt;strong&gt;!wdfkd.wdfwmi&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566137)"><strong>!wdfkd.wdfwmi</strong></a></p></td>
-<td align="left"><p>Displays a device&#39;s Windows Management Instrumentation (WMI) information.</p></td>
+<td align="left"><p>Displays a device's Windows Management Instrumentation (WMI) information.</p></td>
 <td align="left">KMDF</td>
 </tr>
 </tbody>

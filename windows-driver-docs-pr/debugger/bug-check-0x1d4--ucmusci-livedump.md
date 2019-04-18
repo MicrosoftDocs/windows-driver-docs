@@ -2,7 +2,7 @@
 title: Bug Check 0x1D4 UCMUCSI_LIVEDUMP 
 description: The UCMUCSI_LIVEDUMP live dump has a value of 0x000001D4.
 keywords: ["Bug Check 0x1D4 UCMUCSI_LIVEDUMP",  "UCMUCSI_LIVEDUMP"]
-ms.date: 05/23/2018
+ms.date: 02/22/2019
 topic_type:
 - apiref
 api_name:
@@ -14,7 +14,9 @@ ms.localizationpriority: medium
 
 # Bug Check Bug Check 0x1D4: UCMUCSI\_LIVEDUMP  
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 The UCMUCSI_LIVEDUMP live dump has a value of 0x000001D4. 
 
@@ -25,13 +27,16 @@ The UcmUcsi.sys driver has encountered an error. UcmUcsi.sys is an-in box USB Co
 
 Parameter | Description 
 |---------|--------------|
-1 | A UCSI command has timed out.
-2 | The command that timed out.
-3 | Reserved
-4 | Reserved
+1 | Type of failure - see values below
+2 | The UCSI command value.
+3 | If non-zero, the pointer to additional information (dt UcmUcsiCx!UCMUCSICX_TRIAGE).
+4 | Reserved.
  
+**Type of Failure**
 
- 
+0x0 : A UCSI command has timed out because the firmware did not respond to the command in time.
+
+0x1 : A UCSI command execution failed either because the client driver returned failure or because the firmware returned an error code.
 
 
 

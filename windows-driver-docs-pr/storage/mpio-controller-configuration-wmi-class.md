@@ -28,7 +28,7 @@ class MPIO_CONTROLLER_CONFIGURATION
     ] uint32 NumberControllers;
 
     //
-    // Array of each controller&#39;s information.
+    // Array of each controller's information.
     // Note that these are ULONGLONG aligned.
     //
     [WmiDataId(2),

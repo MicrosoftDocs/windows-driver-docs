@@ -136,13 +136,13 @@ Two specific TLV types are defined for Rally Vertical Pairing. These TLV types a
 <td><p>Vertical Pairing Identifier (Communicates the internal topology of the device)</p></td>
 <td><p>0x1001</p></td>
 <td><p>0x0002</p></td>
-<td><p>See &quot;VERTICAL PAIRING IDENTIFIER TLV&quot; below.</p></td>
+<td><p>See "VERTICAL PAIRING IDENTIFIER TLV" below.</p></td>
 </tr>
 <tr class="even">
 <td><p>Transport UUID (The device’s transport UUID value)</p></td>
 <td><p>0x1002</p></td>
 <td><p>0x0010</p></td>
-<td><p>See &quot;TLV definition for Container UUID&quot; above.</p></td>
+<td><p>See "TLV definition for Container UUID" above.</p></td>
 </tr>
 </tbody>
 </table>

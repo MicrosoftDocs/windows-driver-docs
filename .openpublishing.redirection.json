@@ -2284,8 +2284,8 @@
     },
     {
       "source_path": "windows-driver-docs-pr/netcx/netadaptersetcurrentlinkstate.md",
-      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetcurrentlinkstate",
-      "redirect_document_id": true
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetlinkstate",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/netcx/netadaptersetdatapathcapabilities.md",
@@ -6043,6 +6043,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/netcx/using-the-ring-buffer.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/net-rings-and-net-ring-iterators",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/audio/drm-requirements-for-gfx-drivers.md",
       "redirect_URL": "/windows-hardware/drivers/audio/index",
       "redirect_document_id": false
@@ -7493,6 +7498,40 @@
     {
       "source_path": "windows-driver-docs-pr/device-stage-custom-experience.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/debugger/-elog-str.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/debugger/-evlog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/mobile-plans-promotional-content.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-service-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/mobile-plans-asynchronous-fulfillment.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/mobile-plans-callback-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/mobile-plans-prepaid-experience.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-device-experience",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-device-object-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/",
+      "redirect_document_id": false
+    },{
+      "source_path": "windows-driver-docs-pr/wdf/wdfdeviceresumeidlewithtag.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceresumeidlewithtag",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdfdevicestopidlewithtag.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidlewithtag",
       "redirect_document_id": false
     }
   ]

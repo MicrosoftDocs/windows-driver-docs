@@ -57,7 +57,7 @@ GPD files can contain preprocessor directives, which can be used to control cond
 <td><p>Indicates the end of a block of GPD file entries.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em><strong>Include</strong> : &quot;<em>FileName</em>&quot;</p></td>
+<td><p><em><strong>Include</strong> : "<em>FileName</em>"</p></td>
 <td><p>Specifies the name of an additional GPD file. See <a href="using-multiple-gpd-files-in-a-minidriver.md" data-raw-source="[Using Multiple GPD Files in a Minidriver](using-multiple-gpd-files-in-a-minidriver.md)">Using Multiple GPD Files in a Minidriver</a>.</p></td>
 </tr>
 <tr class="even">

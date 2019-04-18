@@ -68,7 +68,7 @@ class DSM_Load_Balance_Policy_V2
     uint32 Reserved;
 
     //
-    // Paths&#39; array.
+    // Paths' array.
     //
     [WmiDataId(5),
      WmiSizeIs("DSMPathCount"),

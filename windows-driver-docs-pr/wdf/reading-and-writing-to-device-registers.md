@@ -68,7 +68,7 @@ NTSTATUS
             case CmResourceTypeMemory:
                 MyKdPrint(("EvtPrepareHardware: found CmResourceTypeMemory resources \n"));
                 //
-                // see if this is the memory resource we&#39;re looking for
+                // see if this is the memory resource we're looking for
                 // 
                 if (desc->u.Memory.Length == 0x200) {
                     regBasePA = desc->u.Memory.Start;

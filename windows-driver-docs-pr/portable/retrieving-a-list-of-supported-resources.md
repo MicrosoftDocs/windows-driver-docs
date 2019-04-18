@@ -43,7 +43,7 @@ HRESULT WpdObjectResources::OnGetSupportedResources(
     if (hr == S_OK)
     {
         hr = GetSupportedResourcesForObject(wszObjectID, pKeys);
-        CHECK_HR(hr, "Failed to get supported resources for object &#39;%ws&#39;", wszObjectID);
+        CHECK_HR(hr, "Failed to get supported resources for object '%ws'", wszObjectID);
     }
 
     if (hr == S_OK)

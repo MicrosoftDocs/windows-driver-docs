@@ -36,8 +36,8 @@ If you're looking for info about UWP mobile broadband apps, see [Mobile Broadban
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="what-s-new.md" data-raw-source="[What&#39;s new](what-s-new.md)">What&#39;s new</a></p></td>
-<td align="left"><p>This section provides a glimpse of what&#39;s new for UWP device apps.</p></td>
+<td align="left"><p><a href="what-s-new.md" data-raw-source="[What's new](what-s-new.md)">What's new</a></p></td>
+<td align="left"><p>This section provides a glimpse of what's new for UWP device apps.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="getting-started.md" data-raw-source="[Getting started](getting-started.md)">Getting started</a></p></td>

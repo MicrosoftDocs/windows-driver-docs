@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Software Publisher Certificate
 
 
-To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) of 64-bit versions of Windows Vista and later versions of Windows, you can sign a kernel-mode driver by using a Software Publisher Certificate (SPC). The SPC is obtained from a third-party certificate authority (CA) that is authorized by Microsoft to issue such certificates. Signatures generated with this type of SPC also comply with the [PnP driver signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md) for 64-bit and 32-bit versions of Windows Vista and later versions of Windows.
+To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) of 64-bit versions of Windows, you can sign a kernel-mode driver by using a Software Publisher Certificate (SPC). The SPC is obtained from a third-party certificate authority (CA) that is authorized by Microsoft to issue such certificates. Signatures generated with this type of SPC also comply with the [PnP driver signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md) for 64-bit and 32-bit versions of Windows.
 
 **Note**  Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 kernel-mode drivers must be signed by the Windows Hardware Dev Center Dashboard and the Windows Hardware Dev Center Dashboard requires an EV certificate. For more info about these changes, see [Driver Signing Changes in Windows 10](http://blogs.msdn.com/b/windows_hardware_certification/archive/2015/04/01/driver-signing-changes-in-windows-10.aspx).
 
@@ -28,7 +28,7 @@ In addition to obtaining an SPC, you must obtain a cross-certificate that is iss
 
 Publishers do not have to distribute a cross-certificate with a [driver package](driver-packages.md). The cross-certificate is included with the digital signature for a driver package's [catalog file](catalog-files.md) or the signature that is embedded in a driver file. Users who install the driver package do not have to perform any additional configuration steps caused by the use of cross-certificates.
 
-For a list of certification authorities that provide SPCs and for more information about cross-certificates, see [Microsoft Cross-Certificates for Windows Vista Kernel Mode Code Signing](https://go.microsoft.com/fwlink/p/?linkid=66583). Follow the instructions on the certification authority's website on how to obtain and install the SPC and corresponding cross-certificate on the computer with which you will sign a driver. In addition, you must add the SPC information to the Personal certificate store of the local computer that signs drivers. For information about this requirement, see the [Installing SPC Information in the Personal Certificate Store](#installing-spc-information-in-the-personal-certificate-store).
+For a list of certification authorities that provide SPCs and for more information about cross-certificates, see [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing). Follow the instructions on the certification authority's website on how to obtain and install the SPC and corresponding cross-certificate on the computer with which you will sign a driver. In addition, you must add the SPC information to the Personal certificate store of the local computer that signs drivers. For information about this requirement, see the [Installing SPC Information in the Personal Certificate Store](#installing-spc-information-in-the-personal-certificate-store).
 
 ### Installing SPC Information in the Personal Certificate Store
 
@@ -72,7 +72,7 @@ The following describes the parameters that are used in the [**Pvk2Pfx**](https:
 
 -   The **-f** option configures Pvk2Pfx to replace a existing *.pfx* file if one exists.
 
-### <a href="" id="installing-a--pfx-file-in-the-personal-certificate-store"></a> Installing a .pfx File in the Personal Certificate Store
+### Installing a .pfx File in the Personal Certificate Store
 
 After obtaining a *.pfx* file from a CA, or creating a *.pfx* file from a *.pvk* and either an .*spc* or a *.cer* file, add the information in the *.pfx* file to the Personal certificate store of the local computer that signs the driver. You can use the Certificate Import Wizard to import the information in the *.pfx* file to the Personal certificate store, as follows:
 
@@ -80,7 +80,6 @@ After obtaining a *.pfx* file from a CA, or creating a *.pfx* file from a *.pvk*
 
 2.  Follow the procedure in the Certificate Import Wizard to import the code-signing certificate into the Personal certificate store.
 
- 
 
  
 

@@ -67,7 +67,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <dl>
 <dt><span id="To_test_all_devices_that_were_installed_with_a_specific_INF_File_"></span><span id="to_test_all_devices_that_were_installed_with_a_specific_inf_file_"></span><span id="TO_TEST_ALL_DEVICES_THAT_WERE_INSTALLED_WITH_A_SPECIFIC_INF_FILE_"></span>To test all devices that were installed with a specific INF File:</dt>
 <dd><p><strong>INF::FileName=</strong><em>INF_File_Name</em></p>
-<p>For example, <strong>INF::OriginalInfFileName=&#39;%InfFileName%&#39;</strong></p>
+<p>For example, <strong>INF::OriginalInfFileName='%InfFileName%'</strong></p>
 <p>This is the default value.</p>
 </dd>
 <dt><span id="To_test_a_device_with_a_specific_Device_Id__"></span><span id="to_test_a_device_with_a_specific_device_id__"></span><span id="TO_TEST_A_DEVICE_WITH_A_SPECIFIC_DEVICE_ID__"></span>To test a device with a specific Device Id: </dt>
@@ -92,7 +92,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 </tr>
 <tr class="even">
 <td align="left"><p><span id="DoPoolCheck"></span><span id="dopoolcheck"></span><span id="DOPOOLCHECK"></span><em>DoPoolCheck</em></p></td>
-<td align="left"><p>True or False. Monitors the driver&#39;s use of the paged and nonpaged system memory pools by using pool tags and lookaside lists. This option also monitors changes in the number of exceptions handled which might indicate errors in exception handling.</p></td>
+<td align="left"><p>True or False. Monitors the driver's use of the paged and nonpaged system memory pools by using pool tags and lookaside lists. This option also monitors changes in the number of exceptions handled which might indicate errors in exception handling.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="ChangeBufferProtectionFlags"></span><span id="changebufferprotectionflags"></span><span id="CHANGEBUFFERPROTECTIONFLAGS"></span><em>ChangeBufferProtectionFlags</em></p></td>

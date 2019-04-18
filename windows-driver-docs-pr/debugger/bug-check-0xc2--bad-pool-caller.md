@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that the current thread is making a bad pool request.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## BAD\_POOL\_CALLER Parameters
 
@@ -90,7 +92,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <tr class="odd">
 <td align="left"><p>0x0A</p></td>
 <td align="left"><p>Address of pool</p></td>
-<td align="left"><p>Allocator&#39;s tag</p></td>
+<td align="left"><p>Allocator's tag</p></td>
 <td align="left"><p>Tag being used in the attempted free</p></td>
 <td align="left"><p>The current thread attempted to free pool memory by using the wrong tag.</p>
 <p>(The memory might belong to another component.)</p></td>
@@ -100,7 +102,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <p>0x0C,</p>
 <p>or 0x0D</p></td>
 <td align="left"><p>Address of pool</p></td>
-<td align="left"><p>Pool allocation&#39;s tag</p></td>
+<td align="left"><p>Pool allocation's tag</p></td>
 <td align="left"><p>Bad quota process pointer</p></td>
 <td align="left"><p>The current thread attempted to release a quota on a corrupted pool allocation.</p></td>
 </tr>
@@ -189,7 +191,7 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <td align="left"><p>0x9B</p></td>
 <td align="left"><p>Pool type</p></td>
 <td align="left"><p>Number of bytes requested</p></td>
-<td align="left"><p>Caller&#39;s address</p></td>
+<td align="left"><p>Caller's address</p></td>
 <td align="left"><p>The current thread attempted to allocate a pool with a tag of 0</p>
 <p>(This would be untrackable, and possibly corrupt the existing tag tables.)</p></td>
 </tr>
@@ -197,15 +199,15 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 <td align="left"><p>0x9C</p></td>
 <td align="left"><p>Pool type</p></td>
 <td align="left"><p>Number of bytes requested</p></td>
-<td align="left"><p>Caller&#39;s address</p></td>
-<td align="left"><p>The current thread attempted to allocate a pool with a tag of &quot;BIG&quot;.</p>
+<td align="left"><p>Caller's address</p></td>
+<td align="left"><p>The current thread attempted to allocate a pool with a tag of "BIG".</p>
 <p>(This would be untrackable and could possibly corrupt the existing tag tables.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x9D</p></td>
 <td align="left"><p>Incorrect pool tag used</p></td>
 <td align="left"><p>Pool type</p></td>
-<td align="left"><p>Caller&#39;s address</p></td>
+<td align="left"><p>Caller's address</p></td>
 <td align="left"><p>The current thread attempted to allocate a pool with a tag that does not contain any letters or digits. Using such tags makes tracking pool issues difficult.</p></td>
 </tr>
 <tr class="odd">

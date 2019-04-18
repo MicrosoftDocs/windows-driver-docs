@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_DEFAULT_KEY_ID Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_DEFAULT\_KEY\_ID
@@ -32,6 +33,7 @@ OID\_WDI\_SET\_DEFAULT\_KEY\_ID sets the default key ID for packet transmission 
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 

@@ -95,7 +95,7 @@ The information in the following tables describes the tools that are useful for 
 <div>
  
 </div></td>
-<td align="left"><p>This tool can construct a graphical representation of a filter graph that shows the pin-to-pin connections between filters and the filters&#39; internal nodes.</p>
+<td align="left"><p>This tool can construct a graphical representation of a filter graph that shows the pin-to-pin connections between filters and the filters' internal nodes.</p>
 <p>%WindowsSdkDir%\tools\x86\KsStudio.chm</p>
 <p>%WindowsSdkDir%\tools\x64\KsStudio.chm</p>
 <p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff554257" data-raw-source="[AVStream Testing and Debugging](https://msdn.microsoft.com/library/windows/hardware/ff554257)">AVStream Testing and Debugging</a> for more information.</p></td>
@@ -134,7 +134,7 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WDK tool:</strong> Yes</p></td>
 <td align="left"><p>%WindowsSdkDir%\tools\x86\Sdpverifiy.exe</p>
 <p>%WindowsSdkDir%\tools\x64\Sdpverifiy.exe</p></td>
-<td align="left"><p>Displays a Bluetooth device&#39;s Inquiry Record as Windows interprets it.</p>
+<td align="left"><p>Displays a Bluetooth device's Inquiry Record as Windows interprets it.</p>
 <p>WDK documentation:</p>
 <p><a href="bluetooth-inquiry-record-verifier.md" data-raw-source="[Bluetooth Inquiry Record Verifier](bluetooth-inquiry-record-verifier.md)">Bluetooth Inquiry Record Verifier</a></p></td>
 </tr>
@@ -188,7 +188,7 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WDK tool:</strong> Yes</p></td>
 <td align="left"><p>%WindowsSdkDir%\tools\x64\wiapreview.exe</p>
 <p>%WindowsSdkDir%\tools\x86\wiapreview.exe</p></td>
-<td align="left"><p>Shows how to use the WIA Preview component and the driver&#39;s segmentation filter.</p>
+<td align="left"><p>Shows how to use the WIA Preview component and the driver's segmentation filter.</p>
 <p>%WindowsSdkDir%\tools\x64\wiapreview.htm</p>
 <p>%WindowsSdkDir%\tools\x86\wiapreview.htm</p></td>
 </tr>
@@ -539,7 +539,7 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WDK tool:</strong> Yes</p></td>
 <td align="left"><p>%WindowsSdkDir%\bin\x64\inf2cat.exe</p>
 <p>%WindowsSdkDir%\bin\x86\inf2cat.exe</p></td>
-<td align="left"><p>Determines whether a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544840" data-raw-source="[driver package&#39;s](https://msdn.microsoft.com/library/windows/hardware/ff544840)">driver package&#39;s</a> INF file can be digitally-signed for a specified list of Windows versions, and, if so, generates the unsigned <a href="https://msdn.microsoft.com/library/windows/hardware/ff537872" data-raw-source="[catalog files](https://msdn.microsoft.com/library/windows/hardware/ff537872)">catalog files</a> that apply to the specified Windows versions.</p>
+<td align="left"><p>Determines whether a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544840" data-raw-source="[driver package's](https://msdn.microsoft.com/library/windows/hardware/ff544840)">driver package's</a> INF file can be digitally-signed for a specified list of Windows versions, and, if so, generates the unsigned <a href="https://msdn.microsoft.com/library/windows/hardware/ff537872" data-raw-source="[catalog files](https://msdn.microsoft.com/library/windows/hardware/ff537872)">catalog files</a> that apply to the specified Windows versions.</p>
 <p>WDK Documentation:</p>
 <p><a href="inf2cat.md" data-raw-source="[&lt;strong&gt;Inf2Cat&lt;/strong&gt;](inf2cat.md)"><strong>Inf2Cat</strong></a></p></td>
 </tr>
@@ -604,7 +604,7 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WDK tool:</strong> Yes</p></td>
 <td align="left"><p>%WindowsSdkDir%\tools\x64\poolmon.exe</p>
 <p>%WindowsSdkDir%\tools\x86\poolmon.exe</p></td>
-<td align="left"><p>Displays data that the operating system collects about memory allocations from the system&#39;s paged and nonpaged kernel pools, and the memory pools used for Terminal Services sessions. The data is grouped by pool allocation tag.</p>
+<td align="left"><p>Displays data that the operating system collects about memory allocations from the system's paged and nonpaged kernel pools, and the memory pools used for Terminal Services sessions. The data is grouped by pool allocation tag.</p>
 <p>WDK Documentation:</p>
 <p><a href="poolmon.md" data-raw-source="[PoolMon](poolmon.md)">PoolMon</a></p></td>
 </tr>
@@ -736,7 +736,7 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WDK tool:</strong> Yes</p></td>
 <td align="left"><p>%WindowsSdkDir%\tools\x64\wdfverifier.exe</p>
 <p>%WindowsSdkDir%\tools\x86\wdfverifier.exe</p></td>
-<td align="left"><p>Provides an easy-to-use interface to the framework&#39;s verifier for KMDF and UMDF drivers.</p>
+<td align="left"><p>Provides an easy-to-use interface to the framework's verifier for KMDF and UMDF drivers.</p>
 <p>WDK Documentation:</p>
 <p><a href="wdf-verifier-control-application.md" data-raw-source="[WDF Verifier Control Application](wdf-verifier-control-application.md)">WDF Verifier Control Application</a></p></td>
 </tr>

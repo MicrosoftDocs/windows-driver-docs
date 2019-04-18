@@ -31,12 +31,12 @@ NTSTATUS FsdAssignInitialSecurity( PIRP_CONTEXT IrpContext,
     PSECURITY_DESCRIPTOR SecurityDescriptor = NULL;
 
     //
-    // Make sure the parent directory&#39;s security descriptor is loaded.
+    // Make sure the parent directory's security descriptor is loaded.
     //
     (void) FsdLoadSecurityDescriptor(IrpContext, Directory);
 
     //
-    // don&#39;t care about the return code here, as it is handled later
+    // don't care about the return code here, as it is handled later
     //
     if (Directory->SecurityDescriptor == NULL) {
 
@@ -79,7 +79,7 @@ NTSTATUS FsdAssignInitialSecurity( PIRP_CONTEXT IrpContext,
         RtlLengthSecurityDescriptor( SecurityDescriptor );
  
     Fcb->SecurityDescriptor = ExAllocatePoolWithTag(PagedPool, 
-        Fcb->SecurityDescriptorLength, &#39;DSyM&#39;);
+        Fcb->SecurityDescriptorLength, 'DSyM');
 
     if (!Fcb->SecurityDescriptor) {
         //
