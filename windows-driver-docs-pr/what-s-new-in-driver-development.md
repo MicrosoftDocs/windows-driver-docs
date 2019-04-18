@@ -268,7 +268,7 @@ For information about testing for DFx, please see the following pages:
 
 * [Directed FX Single Device Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
 * [Directed FX System Verification Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
-* [PwrTest DirectedFx Scenario](../devtest/pwrtest-directedfx-scenario.md)
+* [PwrTest DirectedFx Scenario](devtest/pwrtest-directedfx-scenario.md)
 
 ### WPP Software Tracing
 
