@@ -60,7 +60,7 @@
         "**/acpi/*.md": "barrygolden",
         "**/audio/*.md": "DOMARS",
         "**/battery/*.md": "DOMARS",
-        "**/biometric/*.md": "eliotgra",
+        "**/biometric/*.md": "EliotSeattle",
         "**/bluetooth/*.md": "wilattim",
         "**/bringup/*.md": "barrygolden",
         "**/dashboard/*.md": "EliotSeattle",
