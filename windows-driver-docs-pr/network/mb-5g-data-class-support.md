@@ -24,6 +24,7 @@ This topic uses the following terms:
 | SA | Standalone 5G. Refers to any NGC-based NR networks, the most common of which is Option 2, standalone NR. |
 | NSA | Non-standalone 5G. Refers to any EPC-based NR networks, the most common of which is Option 3, non-standalone NR. |
 | gNB | An NR radio base station that supports the NR air interface as well as connectivity to NGC. |
+| RAT | Radio Access Technology. |
 
 ## Overview
 
