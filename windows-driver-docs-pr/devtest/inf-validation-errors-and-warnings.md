@@ -46,9 +46,9 @@ Issues related to the Universal setting appear as warnings if:
 
 Error codes come in the following classifications:
 
-- [Syntax in the INF file (1100-1299)](#syntax-in-the-inf-file-(1100-1299))
-- [Universal INF (1300-1319)](#universal-inf-(1300-1319))
-- [Installation (2000-2999)](#installation-(2000-2999))
+- [Syntax in the INF file (1100-1299)](#syntax-in-the-inf-file-1100-1299)
+- [Universal INF (1300-1319)](#universal-inf-1300-1319)
+- [Installation (2000-2999)](#installation-2000-2999)
 
 Not all error codes are listed below, as many have self-evident meanings. Errors in the 1000-1099 range are considered self-evident, as they are basic syntax errors.
 
