@@ -72,23 +72,23 @@ The following are a few items of notable changes in Visual Studio 2019 that Wind
 
 #### WDK GUI Driver Menu moved
 
-The WDK Driver menu in Visual Studio 2017 is located in the top menu options as seen below.
-
-![screenshot of Visual Studio 2017 menu](images/vs-2017-menu.png)
-
 In Visual Studio 2019 the WDK Driver menu has been moved to live under the Extension menu as seen below.
 
 ![screenshot of Visual Studio 2019 menu](images/vs-2019-driver-menu.png)
 
+The WDK Driver menu in Visual Studio 2017 is located in the top menu options as seen below.
+
+![screenshot of Visual Studio 2017 menu](images/vs-2017-menu.png)
+
 #### Driver Templates discoverability
-
-The WDK Driver templates were previously found in Visual Studio 2017 under New Projects> Visual C++> Windows Driver as seen below.
-
-![screenshot of Visual Studio 2017 driver templates](images/vs-2017-driver-template.png)
 
 In Visual Studio 2019 the WDK Driver templates will be discoverable under Project Type, Drivers. The Driver Project Type will appear in the first official update release of Visual Studio 2019. Until then the Driver templates can be discovered by searching for them in the search menu.
 
 ![screenshot of Visual Studio 2019 driver templates](images/vs-2019-driver-template.png)
+
+The WDK Driver templates were previously found in Visual Studio 2017 under New Projects> Visual C++> Windows Driver as seen below.
+
+![screenshot of Visual Studio 2017 driver templates](images/vs-2017-driver-template.png)
 
 ### Windows Hardware Dev Center dashboard
 
