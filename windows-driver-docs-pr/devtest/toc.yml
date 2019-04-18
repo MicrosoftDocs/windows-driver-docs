@@ -2398,27 +2398,10 @@
     items: 
     - name: "Introduction to Boot Options"
       href: introduction-to-boot-options.md
-      items: 
-      - name: "Boot Options in EFI NVRAM"
-        href: boot-options-in-efi-nvram.md
-        items: 
-        - name: "Overview of Boot Options in EFI"
-          href: overview-of-boot-options-in-efi.md
-        - name: "Editing Boot Options in EFI"
-          href: editing-boot-options-in-efi.md
-        - name: "Backing up Boot Options in EFI"
-          href: backing-up-boot-options-in-efi.md
-          items: 
-          - name: "Exporting and Importing Boot Entries in EFI"
-            href: exporting-and-importing-boot-entries-in-efi.md
-          - name: "Identifying Backup Files for Existing Boot Entries"
-            href: identifying-backup-files-for-existing-boot-entries.md
-          - name: "Identifying Backup Files for Deleted Boot Entries"
-            href: identifying-backup-files-for-deleted-boot-entries.md
-          - name: "Recognizing Unusable Boot Entry Backup Files"
-            href: recognizing-unusable-boot-entry-backup-files.md
-      - name: "Overview of Boot Options in Windows Vista and Later"
-        href: boot-options-in-windows.md
+    - name: "Overview of Boot Options in Windows"
+      href: boot-options-in-windows.md
+    - name: "Boot Identifiers"
+      href: boot-identifiers.md
     - name: "Bypassing Boot Options"
       href: bypassing-boot-options.md
     - name: "Editing Boot Options"
@@ -2443,7 +2426,6 @@
         href: boot-parameters-to-manipulate-memory.md
       - name: "Boot Parameters to Load a Partial Checked Build"
         href: boot-parameters-to-load-a-partial-checked-build.md
-        href: boot-parameters-to-configure-dep-and-pae.md
       - name: "Boot Parameters to Test Drivers for Multiple Processor Group Support"
         href: boot-parameters-to-test-drivers-for-multiple-processor-group-support.md
     - name: "BCDEdit Options Reference"
@@ -2463,12 +2445,9 @@
         href: bcdedit--emssettings.md
       - name: "BCDEdit /set"
         href: bcdedit--set.md
-    - name: "BCDEdit Previous Versions of Windows"
-      href: bcd-boot-previous-versions.md
+    - name: "BCDEdit in Previous Versions of Windows"
+      href: bcd-boot--in-previous-versions-of-windows.md
       items: 
-      - name: "Boot Parameters to Enable EMS Redirection"
-        href: boot-parameters-to-enable-ems-redirection.md
-      - name: "Boot Parameters to Configure DEP and PAE"
       - name: "Boot Options in a Boot.ini File"
         href: boot-options-in-a-boot-ini-file.md
         items: 
@@ -2478,6 +2457,28 @@
           href: editing-the-boot-ini-file.md
         - name: "Backing Up the Boot.ini File"
           href: backing-up-the-boot-ini-file.md
+      - name: "Boot Options in EFI NVRAM"
+        href: boot-options-in-efi-nvram.md
+        items: 
+        - name: "Overview of Boot Options in EFI"
+          href: overview-of-boot-options-in-efi.md
+        - name: "Editing Boot Options in EFI"
+          href: editing-boot-options-in-efi.md
+        - name: "Backing up Boot Options in EFI"
+          href: backing-up-boot-options-in-efi.md
+          items: 
+          - name: "Exporting and Importing Boot Entries in EFI"
+            href: exporting-and-importing-boot-entries-in-efi.md
+          - name: "Identifying Backup Files for Existing Boot Entries"
+            href: identifying-backup-files-for-existing-boot-entries.md
+          - name: "Identifying Backup Files for Deleted Boot Entries"
+            href: identifying-backup-files-for-deleted-boot-entries.md
+          - name: "Recognizing Unusable Boot Entry Backup Files"
+            href: recognizing-unusable-boot-entry-backup-files.md
+      - name: "Boot Parameters to Enable EMS Redirection"
+        href: boot-parameters-to-enable-ems-redirection.md
+      - name: "Boot Parameters to Configure DEP and PAE"
+        href: boot-parameters-to-configure-dep-and-pae.md
   - name: "Tools for Debugging Drivers"
     href: tools-for-debugging-drivers.md
     items: 
