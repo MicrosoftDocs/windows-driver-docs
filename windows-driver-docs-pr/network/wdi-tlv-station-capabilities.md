@@ -2,10 +2,11 @@
 title: WDI_TLV_STATION_CAPABILITIES
 description: WDI_TLV_STATION_CAPABILITIES is a TLV that contains the capabilities of a station.
 ms.assetid: 567445F1-EEDC-4302-B709-ED76D044A971
-ms.date: 07/18/2017
+ms.date: 02/08/2019
 keywords:
  - WDI_TLV_STATION_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # WDI\_TLV\_STATION\_CAPABILITIES
@@ -119,6 +120,15 @@ The sum (in bytes) of the sizes of all contained elements.
 <td>UINT8</td>
 <td>Specifies whether disconnected standby is supported.
 <p>Valid values are 0 (not supported) and 1 (supported).</p></td>
+</tr>
+<tr class="odd">
+<td>UINT8</td>
+<td>Specifies whether the driver supports the Fine Time Measurement (FTM) protocol as an initiator.
+<p>Valid values are 0 (not supported) and 1 (supported).</p></td>
+</tr>
+<tr class="even">
+<td>UINT8</td>
+<td>The maximum number of target STAs that can be queried per FTM request task.</td>
 </tr>
 </tbody>
 </table>

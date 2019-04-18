@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_FAST_BSS_TRANSITION_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_FAST\_BSS\_TRANSITION\_PARAMETERS
@@ -35,6 +36,7 @@ OID\_WDI\_SET\_FAST\_BSS\_TRANSITION\_PARAMETERS is sent in response to [NDIS\_S
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 

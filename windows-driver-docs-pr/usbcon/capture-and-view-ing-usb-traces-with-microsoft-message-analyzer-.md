@@ -44,7 +44,7 @@ This video demonstrates how you can determine the root cause of a device enumera
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/29cb1d44-a38a-4105-9513-256e69e9f6a0]
 
 ## Related topics
-[Blog: Capturing USB ETW traces with Microsoft Message Analyzer (MMA)](http://blogs.msdn.com/b/usbcoreblog/archive/2013/11/09/capturing-usb-etw-traces-with-microsoft-message-analyzer-mma.aspx)  
+[Blog: Capturing USB ETW traces with Microsoft Message Analyzer (MMA)](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog/archive/2013/11/09/capturing-usb-etw-traces-with-microsoft-message-analyzer-mma.aspx)  
 [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
 
 

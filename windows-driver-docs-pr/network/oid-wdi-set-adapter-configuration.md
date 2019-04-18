@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ADAPTER_CONFIGURATION Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_ADAPTER\_CONFIGURATION
@@ -90,6 +91,7 @@ OID\_WDI\_SET\_ADAPTER\_CONFIGURATION configures the adapter. It is an optional 
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 
