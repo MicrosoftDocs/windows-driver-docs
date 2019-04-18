@@ -435,6 +435,13 @@ ModLoad: 76320000 7645d000   C:\WINDOWS\System32\MSCTF.dll
 ModLoad: 76cc0000 76cce000   C:\WINDOWS\System32\MSASN1.dll
 ```
 
+## GitHub TTD Query Lab
+
+For a tutorial on how to debug C++ code using a Time Travel Debugging recording using queries to find information about the execution of the problematic code in question, see https://github.com/Microsoft/WinDbg-Samples/blob/master/TTDQueries/tutorial-instructions.md.
+
+All of the code used in the lab is available here: https://github.com/Microsoft/WinDbg-Samples/tree/master/TTDQueries/app-sample.
+
+
 ## Troubleshooting TTD Queries
 
 ### "UnknownOrMissingSymbols" as the function names
