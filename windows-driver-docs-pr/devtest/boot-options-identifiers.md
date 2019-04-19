@@ -7,12 +7,11 @@ keywords:
 - identifiers
 - default
 - WDK boot options
-ms.date: 04/18/2019
+ms.date: 04/19/2019
 ms.localizationpriority: medium
 ---
 
 # Boot Options Identifiers
-
 
 Many of the Bcdedit commands require identifiers. An identifier uniquely identifies entries contained in the store. An identifier takes the form of a globally unique identifier, or GUID. A GUID has the following format,
 where each "x" represents a hexadecimal digit.
@@ -61,7 +60,7 @@ These common well-known identifiers can be inherited by any boot application ent
 |-----------------------|----------------------------------------------------------------------|
 |    {dbgsettings}       |    Contains the global debugger settings that can be inherited by any boot application entry. |
 |    {globalsettings}    |    Contains the collection of global settings that should be inherited by all boot application entries. |
-|   {bootloadersettings} |   Contains the collection of global settings that should be inherited by all Windows boot loader application entries. |
+|   {bootloadersettings} |   Contains the collection of global settings that should be inherited by all boot loader application entries. |
 
 These well-known identifiers are also available for use:
 

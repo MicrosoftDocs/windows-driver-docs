@@ -2407,16 +2407,16 @@
     - name: "Editing Boot Options"
       href: editing-boot-options.md
       items: 
-      - name: "Adding Boot Entries"
-        href: adding-boot-entries.md
-      - name: "Changing the Friendly Name of a Boot Entry"
-        href: changing-the-friendly-name-of-a-boot-entry.md
       - name: "Changing Boot Parameters"
         href: changing-boot-parameters.md
+      - name: "Adding Boot Entries"
+        href: adding-boot-entries.md
       - name: "Changing the Default Boot Entry"
         href: changing-the-default-boot-entry.md
       - name: "Changing the Boot Menu Time-out"
         href: changing-the-boot-menu-time-out.md
+      - name: "Changing the Friendly Name of a Boot Entry"
+        href: changing-the-friendly-name-of-a-boot-entry.md
     - name: "Using Boot Parameters"
       href: using-boot-parameters.md
       items: 
