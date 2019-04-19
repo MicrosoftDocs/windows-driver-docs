@@ -293,7 +293,7 @@ The following is a list of new and updated Audio features in Windows 10, version
 * New Far Field Audio information
 * New jack description information in [USB Audio 2.0 Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/usb-2-0-audio-drivers)
 
-### Camera
+### <a name="camera-1903"></a>Camera
 
 New Camera driver documentation and features added in Windows 10, version 1903 include:
 
