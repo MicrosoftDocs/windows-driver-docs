@@ -65,7 +65,7 @@ MyEvtTxQueueAdvance(
     // Post data to hardware
     //
     NET_RING_PACKET_ITERATOR packetIterator = NetRingGetPostPackets(Rings);
-    while(https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-NetPacketIteratorHasAny(&packetIterator))
+    while(NetPacketIteratorHasAny(&packetIterator))
     {
         NET_PACKET* packet = NetPacketIteratorGetPacket(&packetIterator);        
         if(!packet->Ignore)
@@ -99,7 +99,7 @@ MyEvtTxQueueAdvance(
     // Drain packets if completed
     //
     packetIterator = NetRingGetDrainPackets(Rings);
-    while(https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-NetPacketIteratorHasAny(&packetIterator))
+    while(NetPacketIteratorHasAny(&packetIterator))
     {        
         NET_PACKET* packet = NetPacketIteratorGetPacket(&packetIterator);
         

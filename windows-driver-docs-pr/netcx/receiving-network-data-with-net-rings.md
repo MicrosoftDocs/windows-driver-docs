@@ -66,7 +66,7 @@ MyEvtRxQueueAdvance(
     //
     NET_RING_FRAGMENT_ITERATOR fragmentIterator = NetRingGetDrainFragments(Rings);
     NET_RING_PACKET_ITERATOR packetIterator = NetRingGetAllPackets(Rings);
-    while(https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-NetFragmentIteratorHasAny(&fragmentIterator))
+    while(NetFragmentIteratorHasAny(&fragmentIterator))
     {
         UINT32 currentFragmentIndex = NetFragmentIteratorGetIndex(&fragmentIterator);
 
@@ -97,7 +97,7 @@ MyEvtRxQueueAdvance(
     // Post fragment buffers to hardware
     //
     fragmentIterator = NetRingGetPostFragments(Rings);
-    while(https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-NetFragmentIteratorHasAny(&fragmentIterator))
+    while(NetFragmentIteratorHasAny(&fragmentIterator))
     {
         UINT32 currentFragmentIndex = NetFragmentIteratorGetIndex(&fragmentIterator);
 

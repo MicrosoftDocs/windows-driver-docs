@@ -181,11 +181,11 @@ The following was updated:
 
 Driver verifier includes new driver validation rules for the following technologies:
 
-    - New [Rules for Audio Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-audio-drivers)
-    - New [Rules for AVStream Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-avstream-drivers)
-    - Four new [Rules for KMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-kmdf-drivers)
-    - Three new [Rules for NDIS Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-ndis-drivers)
-    - New [Nullcheck rules](https://docs.microsoft.com/windows-hardware/drivers/devtest/nullcheck) *Added in version 1703*
+* New [Rules for Audio Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-audio-drivers)
+* New [Rules for AVStream Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-avstream-drivers)
+* Four new [Rules for KMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-kmdf-drivers)
+* Three new [Rules for NDIS Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-ndis-drivers)
+* New [Nullcheck rules](https://docs.microsoft.com/windows-hardware/drivers/devtest/nullcheck) *Added in version 1703*
 
 ### Windows Driver Frameworks (WDF)
 
@@ -268,16 +268,16 @@ For information about testing for DFx, please see the following pages:
 
 * [Directed FX Single Device Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
 * [Directed FX System Verification Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
-* [PwrTest DirectedFx Scenario](../devtest/pwrtest-directedfx-scenario.md)
+* [PwrTest DirectedFx Scenario](devtest/pwrtest-directedfx-scenario.md)
 
 ### WPP Software Tracing
 
 [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing) introduces a new feature: *Inflight Trace Recorder*. If the driver enables WPP tracing and WPP Recorder, trace logging is turned on automatically and you can easily view messages without starting or stopping trace sessions. For more fine tuned control over the log, WPP Recorder allows a KMDF driver to create and manage custom buffers.
 
-    - [WPP Recorder for logging traces](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-wpp-recorder)
-    - [WppRecorderLogGetDefault](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-imp_wpprecorderloggetdefault)
-    - [WppRecorderLogCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) (KMDF only)
-    - [WppRecorderDumpLiveDriverData](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderdumplivedriverdata)
+* [WPP Recorder for logging traces](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-wpp-recorder)
+* [WppRecorderLogGetDefault](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-imp_wpprecorderloggetdefault)
+* [WppRecorderLogCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) (KMDF only)
+* [WppRecorderDumpLiveDriverData](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderdumplivedriverdata)
 
 ## What's new in Windows 10, version 1903 (latest)
 
@@ -293,7 +293,7 @@ The following is a list of new and updated Audio features in Windows 10, version
 * New Far Field Audio information
 * New jack description information in [USB Audio 2.0 Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/usb-2-0-audio-drivers)
 
-### Camera
+### <a name="camera-1903"></a>Camera
 
 New Camera driver documentation and features added in Windows 10, version 1903 include:
 
