@@ -17,15 +17,15 @@ The framework intercepts I/O requests, takes default actions where appropriate, 
 
 This section describes important differences between WDM and WDF in the following areas:
 
--   [Driver Structure](#drv-struct)
--   [Device Objects and Driver Roles](#roles)
--   [Object Model](#obj-model)
--   [Object Creation](#creation)
--   [Object Context Area](#context)
--   [Supported IRP Types](#irp)
--   [I/O Queues](#queue)
--   [Synchronization and Concurrency](#sync)
--   [Driver Installation](#install)
+-   [Driver Structure](#driver-structure)
+-   [Device Objects and Driver Roles](#device-objects-and-driver-roles)
+-   [Object Model](#object-model)
+-   [Object Creation](#object-creation)
+-   [Object Context Area](#object-context-area)
+-   [Supported IRP Types](#supported-irp-types)
+-   [I/O Queues](#io-queues)
+-   [Synchronization and Concurrency](#synchronization-and-concurrency)
+-   [Driver Installation](#driver-installation)
 
 ## Driver Structure
 

@@ -37,8 +37,8 @@ Although a WDF driver accesses buffers in the same way for both buffered and dir
 -   [Create Requests](#create-requests)
 -   [Read Requests](#read-requests)
 -   [Write Requests](#write-requests)
--   [Device I/O Control Requests](#device-i-o-requests)
--   [Internal Device I/O Control Requests](#int-dev-i-o)
+-   [Device I/O Control Requests](#device-io-control-requests)
+-   [Internal Device I/O Control Requests](#internal-device-io-control-requests)
 
 ## Create Requests
 

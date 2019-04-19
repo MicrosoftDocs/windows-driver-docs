@@ -13,7 +13,7 @@ The framework provides built-in verification functionality that you can use to t
 
 If KMDF Verifier is enabled, the framework checks lock acquisition and hierarchies, ensures that calls to the framework occur at the correct IRQL, verifies correct I/O cancellation and queue usage, and ensures that the driver and framework follow the documented contracts. It can also simulate out-of-memory conditions so that the driver developer can test whether the driver responds properly without crashing, hanging, or failing to unload.
 
-When KMDF Verifier is enabled, the framework breaks into the debugger if a default time-out period of 60 seconds expires before some of the events described previously have completed. At this point, you can debug the issue, or type "g" in the debugger to restart the time-out period. You can change the default time-out period by using the **DbgWaitForSignalTimeoutInSec** registry value described in [Controlling the Verifier's Behavior](#verifier-reg-values).
+When KMDF Verifier is enabled, the framework breaks into the debugger if a default time-out period of 60 seconds expires before some of the events described previously have completed. At this point, you can debug the issue, or type "g" in the debugger to restart the time-out period. You can change the default time-out period by using the **DbgWaitForSignalTimeoutInSec** registry value described in [Controlling the Verifier's Behavior](#controlling-the-verifiers-behavior).
 
 We recommend running Driver Verifier (Verifier.exe) during testing, and adding your own driver and wdf01000.sys to the verify list.
 
