@@ -13,71 +13,76 @@ ms.localizationpriority: medium
 
 # Boot Options Identifiers
 
-IDENTIFIERS
 
-Many of the Bcdedit commands require identifiers. An identifier
-uniquely identifies entries contained in the store. An identifier takes the
-form of a globally unique identifier, or GUID. A GUID has the following format,
+Many of the Bcdedit commands require identifiers. An identifier uniquely identifies entries contained in the store. An identifier takes the form of a globally unique identifier, or GUID. A GUID has the following format,
 where each "x" represents a hexadecimal digit.
 
-    {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}
-
+```guid
+{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}
+```
 For example:
 
-    {d2b69192-8f14-11da-a31f-ea816ab185e9}
+```guid
+{d2b69192-8f14-11da-a31f-ea816ab185e9}
+```
 
-The position of the dashes (-) and the braces at the beginning and end of the
-GUID are required.
+Use bcdedit /enum to display the identifers.
 
-Several entries can be identified by well-known identifiers. If an entry has a
-well-known identifier, BCDedit displays it in output unless the /v command-line
-switch is used. For more information, run "bcdedit /? /v".
+```console
+C:\>bcdedit /enum
 
-The well-known identifiers are as follows:
+Windows Boot Manager
+--------------------
+identifier              {bootmgr}
 
-    {bootmgr}               Specifies the Windows boot manager entry.
+...
 
-    {fwbootmgr}             Specifies the firmware boot manager entry,
-                            specifically on systems that implement the
-                            Extensible Firmware Interface (EFI) specification.
+Windows Boot Loader
+-------------------
+identifier              {current}
 
-    {memdiag}               Specifies the memory diagnostic application entry.
+```
 
-    {ntldr}                 Specifies a OS loader (Ntldr) that can be used
-                            to start operating systems earlier than Windows
-                            Vista.
+The position of the dashes (-) and the braces at the beginning and end of the GUID are required.
 
-    {current}               Specifies a virtual identifier that corresponds to
-                            the operating system boot entry for the operating
-                            system that is currently running.
+Several entries can be identified by well-known identifiers. If an entry has a well-known identifier, BCDedit displays it in output unless the /v command-line switch is used. For more information, run "bcdedit /? /v".
 
-    {default}               Specifies a virtual identifier that corresponds to
-                            the boot manager default application entry.
+The common well-known identifiers are often used:
 
-    {ramdiskoptions}        Contains the additional options required by the
-                            boot manager for RAM disk devices.
+| Indentifier           | Description
+|-----------------------|----------------------------------------------------------------------|
+|    {default}          |     Specifies a virtual identifier that corresponds to the boot manager default application entry. | 
+|    {current}          |     Specifies a virtual identifier that corresponds to the operating system boot entry for the operating system that is currently running. |
+|    {bootmgr}          |     Specifies the Windows boot manager entry. |
 
-    {dbgsettings}           Contains the global debugger settings that can be
-                            inherited by any boot application entry.
+These common well-known identifiers can be inherited by any boot application entry:
 
-    {emssettings}           Contains the global Emergency Management Services
-                            settings that can be inherited by any boot
-                            application entry.
+| Indentifier           | Description
+|-----------------------|----------------------------------------------------------------------|
+|    {dbgsettings}       |    Contains the global debugger settings that can be inherited by any boot application entry. |
+|    {globalsettings}    |    Contains the collection of global settings that should be inherited by all boot application entries. |
+|   {bootloadersettings} |   Contains the collection of global settings that should be inherited by all Windows boot loader application entries. |
 
-    {badmemory}             Contains the global RAM defect list that can be
-                            inherited by any boot application entry.
+These well-known identifiers are also available for use:
 
-    {globalsettings}        Contains the collection of global settings that
-                            should be inherited by all boot application
-                            entries.
+| Indentifier           | Description
+|-----------------------|----------------------------------------------------------------------|
+|    {hypervisorsettings} |   Contains the hypervisor settings that can be inherited by any OS loader entry. |
+|    {emssettings}       |  Contains the global Emergency Management Services settings that can be inherited by any boot application entry. |
+|    {resumeloadersettings} | Contains the collection of global settings that should be inherited by all Windows resume from hibernation application entries. |
+|    {badmemory}         |    Contains the global RAM defect list that can be inherited by any boot application entry. |
+|   {memdiag}           |    Specifies the memory diagnostic application entry. |
+|    {ramdiskoptions}    |   Contains the additional options required by the boot manager for RAM disk devices. |
 
-    {bootloadersettings}    Contains the collection of global settings that
-                            should be inherited by all Windows boot loader
-                            application entries.
+These well-known identifiers are used with eariler versions of Windows:
 
-    {resumeloadersettings}  Contains the collection of global settings that
-                            should be inherited by all Windows resume from
-                            hibernation application entries.
+| Indentifier           | Description
+|-----------------------|----------------------------------------------------------------------|
+|    {ntldr}            |     Specifies a OS loader (Ntldr) that can be used to start operating systems earlier than Windows Vista.|
+|    {fwbootmgr}        |     Specifies the firmware boot manager entry, specifically on systems that implement the Extensible Firmware Interface (EFI) specification.|
 
-    {hypervisorsettings}    Contains the hypervisor settings that can
-                            be inherited by any OS loader entry.
+
+## Boot Identifier Setting Inheritance
+
+
+
