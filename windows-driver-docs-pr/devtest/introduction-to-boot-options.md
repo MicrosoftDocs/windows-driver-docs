@@ -6,7 +6,7 @@ keywords:
 - boot options WDK , about boot options
 - storing boot options
 - boot loaders WDK
-ms.date: 07/02/2018
+ms.date: 04/19/2019
 ms.localizationpriority: medium
 ---
 
