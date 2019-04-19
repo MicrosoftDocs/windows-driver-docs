@@ -2400,7 +2400,7 @@
       href: introduction-to-boot-options.md
     - name: "Overview of Boot Options in Windows"
       href: boot-options-in-windows.md
-    - name: "Boot Identifiers"
+    - name: "Boot Options Identifiers"
       href: boot-options-identifiers.md
     - name: "Bypassing Boot Options"
       href: bypassing-boot-options.md

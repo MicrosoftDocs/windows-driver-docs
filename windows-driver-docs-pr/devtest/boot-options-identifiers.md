@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Boot Options Identifiers
 
-Many of the Bcdedit commands require identifiers. An identifier uniquely identifies entries contained in the boot setting store. 
+Many of the bcdedit commands require identifiers. An identifier uniquely identifies entries contained in the boot setting store. 
 
 Use bcdedit /enum to display the identifers.
 
@@ -32,11 +32,11 @@ identifier              {current}
 
 ```
 
-Several entries can be identified by well-known identifiers. If an entry has a well-known identifier, BCDedit displays it in output unless the /v command-line switch is used. For more information, run "bcdedit /? /v".
+Several entries can be identified by well-known identifiers. If an entry has a well-known identifier, bcdedit displays it in output unless the /v command-line switch is used. For more information, run "bcdedit /? /v".
 
 The common well-known identifiers are often used:
 
-| Indentifier           | Description
+| Identifier           | Description
 |-----------------------|----------------------------------------------------------------------|
 |    {default}          |     Specifies a virtual identifier that corresponds to the boot manager default application entry. | 
 |    {current}          |     Specifies a virtual identifier that corresponds to the operating system boot application entry for the operating system that is currently running. |
@@ -44,14 +44,14 @@ The common well-known identifiers are often used:
 
 These common well-known identifiers can be inherited by any boot application entry:
 
-| Indentifier           | Description
+| Identifier           | Description
 |-----------------------|----------------------------------------------------------------------|
 |    {globalsettings}    |    Contains the collection of global settings that should be inherited by all boot application entries. |
 |   {bootloadersettings} |   Contains the collection of global settings that should be inherited by all boot loader application entries. |
 
 These well-known identifiers are also available for use:
 
-| Indentifier           | Description
+| Identifier           | Description
 |-----------------------|----------------------------------------------------------------------|
 |    {dbgsettings}       |    Contains the global debugger settings that can be inherited by any boot application entry. |
 |    {hypervisorsettings} |   Contains the hypervisor settings that can be inherited by any OS loader entry. |
@@ -61,9 +61,9 @@ These well-known identifiers are also available for use:
 |   {memdiag}           |    Specifies the memory diagnostic application entry. |
 |    {ramdiskoptions}    |   Contains the additional options required by the boot manager for RAM disk devices. |
 
-These well-known identifiers are used with eariler versions of Windows:
+These well-known identifiers are used with earlier versions of Windows:
 
-| Indentifier           | Description
+| Identifier           | Description
 |-----------------------|----------------------------------------------------------------------|
 |    {ntldr}            |     Specifies a OS loader (Ntldr) that can be used to start operating systems earlier than Windows Vista.|
 |    {fwbootmgr}        |     Specifies the firmware boot manager entry, specifically on systems that implement the Extensible Firmware Interface (EFI) specification.|
@@ -72,7 +72,7 @@ These well-known identifiers are used with eariler versions of Windows:
 
 Some boot settings can be inherited. This allows for groups of settings to be used in different boot scenarios, for example when resuming from hibernation.
 
-Use the BCDEdit command /enum option to display information about any identifier.
+Use the bcdedit command /enum option to display information about any identifier.
 
 In the example below, displaying information on the {current} identifier shows that it inherits the {bootloadersettings}
 
@@ -90,7 +90,7 @@ inherit                 {bootloadersettings}
 ...
 ```
 
-Use the the bcdedit /enum command to see which settings are inherited.
+Use the bcdedit /enum command to see which settings are inherited.
 
 In the example below, {globalsettings}, inherits whatever is set in {dbgsettings}, {emssettings} and {badmemory}.
 
@@ -145,7 +145,7 @@ For example:
 ```
 The position of the dashes (-) and the braces at the beginning and end of the GUID are required.
 
-Use bcdedit /enum /v to display GUIDs associated with identifers.
+Use bcdedit /enum /v to display GUIDs associated with identifiers.
 
 ```console
 C:\>bcdedit /enum /v
