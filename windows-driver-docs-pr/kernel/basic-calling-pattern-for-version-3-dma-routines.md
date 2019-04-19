@@ -23,7 +23,7 @@ The driver calls the [**GetDmaTransferInfo**](https://msdn.microsoft.com/library
 
 The input parameters to this call describe the memory buffer to use for the transfer, and the direction (read or write) of the transfer.
 
-The resource requirements obtained from this call include the number of map registers and the size of the scatter/gather list that is needed to describe the data buffer for the transfer. In the subsequent call to the [**AllocateAdapterChannelEx**](https://msdn.microsoft.com/library/windows/hardware/hh406340) routine (see [step 3](#step-3)), the driver supplies the map register count as an input parameter.
+The resource requirements obtained from this call include the number of map registers and the size of the scatter/gather list that is needed to describe the data buffer for the transfer. In the subsequent call to the [**AllocateAdapterChannelEx**](https://msdn.microsoft.com/library/windows/hardware/hh406340) routine (see [step 3](#step-3-request-the-required-dma-resources)), the driver supplies the map register count as an input parameter.
 
 ## Step 3: Request the required DMA resources
 
@@ -44,7 +44,7 @@ For synchronous calls that return STATUS\_SUCCESS, if the *MapRegisterBase* para
 
 For asynchronous **AllocateAdapterChannelEx** calls, *ExecutionRoutine* must be non-NULL, and the execution routine receives the map register base address as an input parameter.
 
-In subsequent calls to the [**MapTransferEx**](https://msdn.microsoft.com/library/windows/hardware/hh406521) routine (see [step 5](#step-5)), the driver supplies the map register base address as an input parameter.
+In subsequent calls to the [**MapTransferEx**](https://msdn.microsoft.com/library/windows/hardware/hh406521) routine (see [step 5](#step-5-initialize-the-dma-resources-and-start-the-dma-transfer)), the driver supplies the map register base address as an input parameter.
 
 If *ExecutionRoutine* is non-NULL, the execution routine returns a status value to indicate the disposition of the allocated resources. For system DMA transfers, this return value must be **KeepObject**. This value informs the operating system that the adapter object (and all of its allocated resources) is in use and should not be freed. If no execution routine is supplied, the driver must instead call the [**FreeAdapterObject**](https://msdn.microsoft.com/library/windows/hardware/hh451107) routine and supply **KeepObject** as the *AllocationOption* parameter.
 
@@ -73,7 +73,7 @@ If **MapTransferEx** is unable to map the entire requested transfer size, it wil
 
 **MapTransferEx** returns STATUS\_SUCCESS to indicate that the DMA transfer is successfully initiated. On some platforms, the driver might have to take some additional action, outside of the **MapTransferEx** call, to start the transfer, but this type of delayed start is not required for all platforms. Drivers must not depend on such delays for decisions about using and freeing allocated resources.
 
-The routines in the DMA operations interface maintain cache coherency for DMA transfers in a way that is transparent to the drivers that use these routines. On platforms that do not enforce cache coherency in hardware, **MapTransferEx** ensures that processor data caches are flushed before write (memory-to-device) transfers. For read (device-to-memory) transfers, the caches are invalidated during the call to the [**FlushAdapterBuffersEx**](https://msdn.microsoft.com/library/windows/hardware/hh451102) routine (see [step 8](#step-8)) that follows every **MapTransferEx** call.
+The routines in the DMA operations interface maintain cache coherency for DMA transfers in a way that is transparent to the drivers that use these routines. On platforms that do not enforce cache coherency in hardware, **MapTransferEx** ensures that processor data caches are flushed before write (memory-to-device) transfers. For read (device-to-memory) transfers, the caches are invalidated during the call to the [**FlushAdapterBuffersEx**](https://msdn.microsoft.com/library/windows/hardware/hh451102) routine (see [step 8](#step-8-flush-any-data-that-remains-in-the-cache)) that follows every **MapTransferEx** call.
 
 ## Step 7: Receive notification when the DMA transfer finishes
 
