@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 A USBCAMD2 camera minidriver generally operates as follows:
 
-- The camera minidriver calls [**USBCAMD\_DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nf-usbcamdi-usbcamd_driverentry) from its [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine. When the minidriver calls **USBCAMD\_DriverEntry**, it passes to USBCAMD2 the minidriver's [*AdapterReceivePacket*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nc-usbcamdi-padapter_receive_packet_routine) callback function. USBCAMD2 then registers the minidriver with the *stream.sys* class driver.
+- The camera minidriver calls [**USBCAMD\_DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nf-usbcamdi-usbcamd_driverentry) from its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine. When the minidriver calls **USBCAMD\_DriverEntry**, it passes to USBCAMD2 the minidriver's [**AdapterReceivePacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nc-usbcamdi-padapter_receive_packet_routine) callback function. USBCAMD2 then registers the minidriver with the *stream.sys* class driver.
 
 - The camera minidriver can then receive various stream request blocks (SRBs) in its *AdapterReceivePacket* callback function to handle, including:
   - [**SRB\_INITIALIZE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/stream/srb-initialize-device)
@@ -37,7 +37,7 @@ For example, to specify the camera minidriver's other callback functions with US
 
 The minidriver must call [**USBCAMD\_AdapterReceivePacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nf-usbcamdi-usbcamd_adapterreceivepacket) to send any SRBs it does not handle to USBCAMD2 to process.
 
-[USBCAMD Library Callback Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/index#callback-functions) describe the callback functions that the minidriver implements and whether they are optional or required.
+[**USBCAMD Library Callback Functions**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/index#callback-functions) describe the callback functions that the minidriver implements and whether they are optional or required.
 
 The following list of procedures illustrates the general flow of processing for SRBs sent to the camera minidriver:
 
@@ -77,13 +77,13 @@ The following list of procedures illustrates the general flow of processing for 
 
 | Component | Action |
 | --- | --- |
-| Camera minidriver | Get the properties that the camera minidriver handles, such as [PROPSETID_VIDCAP_VIDEOPROCAMP](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-videoprocamp), [PROPSETID_VIDCAP_CAMERACONTROL](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-cameracontrol), and [PROPSETID_VIDCAP_VIDEOCONTROL](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-videocontrol), as well as any other custom property sets. |
+| Camera minidriver | Get the properties that the camera minidriver handles, such as [**PROPSETID_VIDCAP_VIDEOPROCAMP**](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-videoprocamp), [**PROPSETID_VIDCAP_CAMERACONTROL**](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-cameracontrol), and [**PROPSETID_VIDCAP_VIDEOCONTROL**](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-videocontrol), as well as any other custom property sets. |
 
 ## Minidriver's SRB\_SET\_DEVICE\_PROPERTY handler
 
 | Component | Action |
 | --- | --- |
-| Camera minidriver | Set the properties the camera minidriver handles by acquiring the parameters of [PROPSETID_VIDCAP_VIDEOPROCAMP](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-videoprocamp), [PROPSETID_VIDCAP_CAMERACONTROL](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-cameracontrol), and [PROPSETID_VIDCAP_VIDEOCONTROL](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-videocontrol), and any other custom property sets. |
+| Camera minidriver | Set the properties the camera minidriver handles by acquiring the parameters of [**PROPSETID_VIDCAP_VIDEOPROCAMP**](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-videoprocamp), [**PROPSETID_VIDCAP_CAMERACONTROL**](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-cameracontrol), and [**PROPSETID_VIDCAP_VIDEOCONTROL**](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-videocontrol), and any other custom property sets. |
 
 ## Minidriver's SRB\_GET\_DATA\_INTERSECTION handler
 
