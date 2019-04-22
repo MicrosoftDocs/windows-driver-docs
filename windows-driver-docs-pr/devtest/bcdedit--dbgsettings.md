@@ -191,12 +191,6 @@ The default values for the global settings are serial communications using COM1,
 |BAUDRATE:rate|115200|
 
 
-> [!IMPORTANT]
-> Setting up a network debugging manually is a complex and error prone process.
-> To set up network debugging automatically, see [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically). Using the KDNET utility is **strongly** recommended for all debugger users.
-
-
-
 See also
 --------
 

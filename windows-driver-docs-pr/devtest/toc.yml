@@ -2396,14 +2396,10 @@
   - name: "Tools for Changing Boot Options for Driver Testing and Debugging"
     href: boot-options-for-driver-testing-and-debugging.md
     items: 
-    - name: "Introduction to Boot Options"
-      href: introduction-to-boot-options.md
     - name: "Overview of Boot Options in Windows"
       href: boot-options-in-windows.md
     - name: "Boot Options Identifiers"
       href: boot-options-identifiers.md
-    - name: "Bypassing Boot Options"
-      href: bypassing-boot-options.md
     - name: "Editing Boot Options"
       href: editing-boot-options.md
       items: 

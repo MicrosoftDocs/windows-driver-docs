@@ -74,14 +74,7 @@ The **/bootdebug** boot option enables boot debugging for a specific boot entry.
 </tbody>
 </table>
 
- 
-
-For information about Windows debugging tools, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063).
-
-> [!IMPORTANT]
-> Setting up a network debugging manually is a complex and error prone process.
-> To set up network debugging automatically, see [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically). Using the KDNET utility is **strongly** recommended for all debugger users.
-
+For information about Windows debugging tools, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
 
 The following command disables boot debugging of Windows Boot Manager (Bootmgr.exe). Windows Boot Manager selects which operating system will start, and then loads the Windows boot loader.
 
@@ -102,12 +95,3 @@ bcdedit /bootdebug {bootmgr} on
 bcdedit /bootdebug on 
 bcdedit /debug on 
 ```
-
- 
-
- 
-
-
-
-
-

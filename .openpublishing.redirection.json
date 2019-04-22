@@ -7533,6 +7533,16 @@
       "source_path": "windows-driver-docs-pr/wdf/wdfdevicestopidlewithtag.md",
       "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidlewithtag",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/bypassing-boot-options.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-for-driver-testing-and-debugging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/introduction-to-boot-options.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-for-driver-testing-and-debugging",
+      "redirect_document_id": true
     }
   ]
 }
