@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Drivers that perform DMA use three different address spaces, as shown in the following figure.
 
-![diagram illustrating logical, physical, and virtual address mappings](images/3addrspc.png)
+![physical, logical, and virtual address mappings](images/3addrspc.png)
 
 On any Windows platform, a driver has access to the full virtual address space supported by the processor. On a 32-bit processor, the virtual address space represents four gigabytes. The CPU translates addresses in the virtual address space to addresses in the system's physical address space by using a page table. Each page table entry (PTE) maps one page of virtual memory to a page of physical memory, resulting in a paging operation when necessary. An MDL (memory descriptor list) provides a similar mapping for a buffer associated with driver DMA operations.
 

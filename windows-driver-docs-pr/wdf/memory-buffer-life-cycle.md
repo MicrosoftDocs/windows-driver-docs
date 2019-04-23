@@ -23,19 +23,19 @@ Understanding the lifetimes of the request object, the memory object, and the un
 
 Consider the following usage scenarios:
 
--   Scenario 1: [Driver receives an I/O request from KMDF, handles it, and completes it](#drv-rec-complete).
--   Scenario 2: [Driver receives an I/O request from KMDF and forwards it to an I/O target](#drv-rec-fwd).
--   Scenario 3: [Driver issues an I/O request that uses an existing memory object](#drv-create-reuse).
--   Scenario 4: [Driver issues an I/O request that uses a new memory object.](#drv-create-new)
--   Scenario 5: [Driver reuses a request object that it created.](#drv-reuse)
+-   Scenario 1: [Driver receives an I/O request from KMDF, handles it, and completes it](#scenario-1-driver-receives-an-i-o-request-from-kmdf-handles-it-and-completes-it).
+-   Scenario 2: [Driver receives an I/O request from KMDF and forwards it to an I/O target](#scenario-2-driver-receives-an-i-o-request-from-kmdf-and-forwards-it-to-an-i-o-target).
+-   Scenario 3: [Driver issues an I/O request that uses an existing memory object](#scenario-3-driver-issues-an-io-request-that-uses-an-existing-memory-object).
+-   Scenario 4: [Driver issues an I/O request that uses a new memory object.](#scenario-4-driver-issues-an-io-request-that-uses-a-new-memory-object)
+-   Scenario 5: [Driver reuses a request object that it created.](#scenario-5-driver-reuses-a-request-object-that-it-created)
 
-### <a href="" id="drv-rec-complete"></a>Scenario 1: Driver receives an I/O request from KMDF, handles it, and completes it.
+## Scenario 1: Driver receives an I/O request from KMDF, handles it, and completes it.
 
 In the simplest scenario, KMDF dispatches a request to the driver, which performs I/O and completes the request. In this case, the underlying buffer might have been created by a user-mode application, by another driver, or by the operating system itself. For information about how to access buffers, see [Accessing Data Buffers in Framework-Based Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540701).
 
 When the driver [completes the request](completing-i-o-requests.md), the framework deletes the memory object. The buffer pointer is then invalid.
 
-### <a href="" id="drv-rec-fwd"></a>Scenario 2: Driver receives an I/O request from KMDF and forwards it to an I/O target.
+## Scenario 2: Driver receives an I/O request from KMDF and forwards it to an I/O target.
 
 In this scenario, the driver [forwards the request](forwarding-i-o-requests.md) to an I/O target. The following sample code shows how a driver retrieves a handle to the memory object from an incoming request object, formats the request to send to the I/O target, and sends the request:
 
