@@ -2400,6 +2400,23 @@
       href: boot-options-in-windows.md
     - name: "Boot Options Identifiers"
       href: boot-options-identifiers.md
+    - name: "BCDEdit Options Reference"
+      href: bcd-boot-options-reference.md
+      items: 
+      - name: "BCDEdit /bootdebug"
+        href: bcdedit--bootdebug.md
+      - name: "BCDEdit /dbgsettings"
+        href: bcdedit--dbgsettings.md
+      - name: "BCDEdit /debug"
+        href: bcdedit--debug.md
+      - name: "BCDEdit /deletevalue"
+        href: bcdedit--deletevalue.md
+      - name: "BCDEdit /ems"
+        href: bcdedit--ems.md
+      - name: "BCDEdit /emssettings"
+        href: bcdedit--emssettings.md
+      - name: "BCDEdit /set"
+        href: bcdedit--set.md
     - name: "Editing Boot Options"
       href: editing-boot-options.md
       items: 
@@ -2428,23 +2445,6 @@
         href: boot-parameters-to-configure-dep-and-pae.md
       - name: "Boot Parameters to Enable EMS Redirection"
         href: boot-parameters-to-enable-ems-redirection.md
-    - name: "BCDEdit Options Reference"
-      href: bcd-boot-options-reference.md
-      items: 
-      - name: "BCDEdit /bootdebug"
-        href: bcdedit--bootdebug.md
-      - name: "BCDEdit /dbgsettings"
-        href: bcdedit--dbgsettings.md
-      - name: "BCDEdit /debug"
-        href: bcdedit--debug.md
-      - name: "BCDEdit /deletevalue"
-        href: bcdedit--deletevalue.md
-      - name: "BCDEdit /ems"
-        href: bcdedit--ems.md
-      - name: "BCDEdit /emssettings"
-        href: bcdedit--emssettings.md
-      - name: "BCDEdit /set"
-        href: bcdedit--set.md
     - name: "Boot Options in Previous Versions of Windows"
       href: boot-options-in-previous-versions-of-windows.md
       items: 

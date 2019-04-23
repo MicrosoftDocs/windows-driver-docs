@@ -13,7 +13,7 @@ keywords:
 - 1394 connection WDK boot parameters
 - USB 2.0 debugging connection WDK boot parameters
 - null-modem cable WDK boot parameters
-ms.date: 04/20/2017
+ms.date: 04/23/2019
 ms.localizationpriority: medium
 ---
 
@@ -27,13 +27,13 @@ When a kernel debugging connection is established, the system gives a kernel deb
 
 There are four basic debugging methods that you can configure by using boot parameters:
 
--   Single-computer (local) debugging
+- Single-computer (local) debugging
 
--   Debugging with a null-modem cable
+- Debugging with a null-modem cable
 
--   Debugging with an IEEE 1394 cable (only if the target computer and the host computer are both running Microsoft Windows 7 or a later version of Windows)
+- Debugging with an IEEE 1394 cable (only if the target computer and the host computer are both running Microsoft Windows 7 or a later version of Windows)
 
--   Debugging with a USB 2.0 debug cable (only if the target computer and the host computer are both running Microsoft Windows 7 or a later version of Windows)
+- Debugging with a USB 2.0 debug cable (only if the target computer and the host computer are both running Microsoft Windows 7 or a later version of Windows)
 
 ### <span id="boot_option_for_local_debugging_in_windows_vista_and_later"></span><span id="BOOT_OPTION_FOR_LOCAL_DEBUGGING_IN_WINDOWS_VISTA_AND_LATER"></span>Boot Option for Local Debugging in Windows
 
@@ -43,23 +43,19 @@ To use BCDEdit, open a Command Prompt window with elevated privileges (right-cli
 
 The **/debug** option has the following syntax:
 
-```
+```console
 bcdedit /debug [{ID}] { on | off }
 ```
 
-The **{**<em>ID</em>**}** is the GUID associated with a boot entry. If an **{**<em>ID</em>**}** is not specified, the settings apply to the current boot entry. The following command enables kernel debugging for the current Windows operating system boot entry:
+The **{**<em>ID</em>**}** is the ID that is associated with the boot entry, such as {DEFAULT} for the default OS boot entry. If you do not specify an **{**<em>ID</em>**}**, the command modifies the operating system that is currently active. For more information about working with boot entry identifiers, see [Boot Options Identifiers](boot-options-identifiers.md).
 
-```
+The following command enables kernel debugging for the current Windows operating system boot entry:
+
+```console
 bcdedit /debug on
 ```
 
-The following command enables kernel debugging for the specified Windows operating system boot entry:
-
-```
-bcdedit /debug  {18b123cd-2bf6-11db-bfae-00e018e2b8db} on
-```
-
-You can use the **bcdedit /enum** command to view the current boot entries and their settings, and to identify the GUID associated with each entry.
+You can use the **bcdedit /enum** command to view the current boot entries and their settings.
 
 For more details, see [**BCDEdit /debug**](https://msdn.microsoft.com/library/windows/hardware/ff542191).
 
@@ -71,7 +67,7 @@ If BCDEdit has not been used, the default global debug settings are for serial c
 
 To display the current settings, use the following command:
 
-```
+```console
 bcdedit /dbgsettings
 
 debugtype               Serial
@@ -87,7 +83,7 @@ To set the global debug settings to serial communications, use the following syn
 
 The following example shows how to specify serial communications as the global debug setting.
 
-```
+```console
 bcdedit /dbgsettings serial debugport:1 baudrate:115200
 ```
 
@@ -101,22 +97,22 @@ To set the debug settings to serial for a specific boot entry, or for the curren
 
 If no **{**<em>ID</em>**}** is specified, the settings apply to the currently active boot entry.
 
-The following example shows how to specify the serial debug settings for a specific boot entry. To enable the debug settings, you must reboot your computer and select that boot entry you have configured for debugging.
+The following example shows how to specify the serial debug settings for a the default boot entry. To enable the debug settings, you must reboot your computer and select that boot entry you have configured for debugging.
 
-```
-bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} debugtype serial
-```
-
-```
-bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} debugport 1
+```console
+bcdedit /set debugtype serial
 ```
 
-```
-bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} baudrate 115200
+```console
+bcdedit /set debugport 1
 ```
 
+```console
+bcdedit /set baudrate 115200
 ```
-bcdedit /debug {18b123cd-2bf6-11db-bfae-00e018e2b8db} on
+
+```console
+bcdedit /debug on
 ```
 
 You can use the **bcdedit /enum** command to view the current boot entries and their settings.
@@ -135,7 +131,7 @@ To set the debug settings for 1394 globally, use the following syntax:
 
 The following example shows how to specify 1394 as the global debug setting.
 
-```
+```console
 bcdedit /dbgsettings 1394 channel:32 
 ```
 
@@ -147,18 +143,18 @@ To set the debug settings to 1394 for a specific boot entry, or for the current 
 
 If an **{**<em>ID</em>**}** is not specified, the settings apply to the current boot entry.
 
-The following example shows how to specify the 1394 debug settings for a specific boot entry, and how to use the **/debug** option to enable kernel debugging for that boot entry. Note that to enable the debug settings, you must reboot your computer and select the boot entry you have configured for debugging.
+The following example shows how to specify the 1394 debug settings for a specific boot entry, and how to use the **/debug** option to enable kernel debugging for the default boot entry. Note that to enable the debug settings, you must reboot your computer and select the boot entry you have configured for debugging.
 
-```
-bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} debugtype 1394
-```
-
-```
-bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} channel 32
+```console
+bcdedit /set debugtype 1394
 ```
 
+```console
+bcdedit /set channel 32
 ```
-bcdedit /debug {18b123cd-2bf6-11db-bfae-00e018e2b8db} on
+
+```console
+bcdedit /debug on
 ```
 
 You can use the **bcdedit /enum** command to view the current boot entries and their settings.
@@ -177,7 +173,7 @@ To set the debug settings for USB globally, use the following syntax:
 
 The following example shows how to specify USB as the global debug setting.
 
-```
+```console
 bcdedit /dbgsettings usb targetname:U1
 ```
 
@@ -189,18 +185,18 @@ To set the debug settings to USB for a specific boot entry, or for the current e
 
 If no **{**<em>ID</em>**}** is specified, the settings apply to the current boot entry.
 
-The following example shows how to specify the USB debug settings for a specific boot entry, and how to use the **/debug** command to enable kernel debugging for that boot entry. Note that to enable the debug settings, you must reboot your computer and select the boot entry you have configured for debugging.
+The following example shows how to specify the USB debug settings for a specific boot entry, and how to use the **/debug** command to enable kernel debugging for the default boot entry. Note that to enable the debug settings, you must reboot your computer and select the boot entry you have configured for debugging.
 
-```
-bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} debugtype usb
-```
-
-```
-bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} targetname u2
+```console
+bcdedit /set debugtype usb
 ```
 
+```console
+bcdedit /set targetname u2
 ```
-bcdedit /debug {18b123cd-2bf6-11db-bfae-00e018e2b8db} on
+
+```console
+bcdedit /debug on
 ```
 
 You can use the **bcdedit /enum** command to view the current boot entries and their settings.
@@ -211,15 +207,6 @@ For more details, see [**BCDEdit /debug**](https://msdn.microsoft.com/library/wi
 
 To enable boot debugging, use the [**BCDEdit /bootdebug**](https://msdn.microsoft.com/library/windows/hardware/ff542183) command and specify the appropriate boot component. If you wish to perform kernel debugging after Windows starts, use the [**BCDEdit /debug**](https://msdn.microsoft.com/library/windows/hardware/ff542191) command as well.
 
-You must also select a debugging connection (serial, 1394, or USB 2.0). This can be done with either the [**BCDEdit /dbgsettings**](https://msdn.microsoft.com/library/windows/hardware/ff542187) or [**BCDEdit /set**](https://msdn.microsoft.com/library/windows/hardware/ff542202) command, just as in normal kernel debugging.
+You must also select a debugging connection (serial, 1394, or USB). This can be done with either the [**BCDEdit /dbgsettings**](https://msdn.microsoft.com/library/windows/hardware/ff542187) or [**BCDEdit /set**](https://msdn.microsoft.com/library/windows/hardware/ff542202) command, just as in normal kernel debugging.
 
 For more details, see [**BCDEdit /bootdebug**](https://msdn.microsoft.com/library/windows/hardware/ff542183).
-
- 
-
- 
-
-
-
-
-

@@ -66,7 +66,7 @@ To specify the bus parameters, Open Device Manager, and locate the network adapt
 bcdedit /set "{dbgsettings}" busparams b.d.f
 ```
 
-If you are manually configuring a debugger connection, you must specify the bus parameters. For more information, see [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md) and [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](setting-up-a-usb-3-0-debug-cable-connection.md).
+If you are manually configuring a debugger connection, you must specify the bus parameters. For more information, see [Setting Up KDNET Network Kernel Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) and [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-usb-3-0-debug-cable-connection).
 
 ### Examples
 

@@ -25,18 +25,18 @@ ms.localizationpriority: medium
 
 The Windows boot loader architecture includes a firmware-independent boot configuration and storage system called *Boot Configuration Data* (BCD) and a boot option editing tool, BCDEdit (BCDEdit.exe). During development, you can use BCDEdit to configure boot options for debugging, testing, and troubleshooting your driver on computers running Windows 10, Windows 8, Windows Server 2012, Windows 7, and Windows Server 2008.
 
-> [!IMPORTANT] 
+> [!CAUTION]
 > Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using BCDEdit could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
 
 ## Boot Loading Architecture
 
 Windows includes boot loader components that are designed to load Windows quickly and securely. The previous Windows NT boot loader, *ntldr*, is replaced by three components:
 
--   Windows Boot Manager (Bootmgr.exe)
+- Windows Boot Manager (Bootmgr.exe)
 
--   Windows operating system loader (Winload.exe)
+- Windows operating system loader (Winload.exe)
 
--   Windows resume loader (Winresume.exe)
+- Windows resume loader (Winresume.exe)
 
 In this configuration, the Windows Boot Manager is generic and unaware of the specific requirements for each operating system while the system-specific boot loaders are optimized for the system that they load.
 
@@ -64,11 +64,11 @@ If multiple Windows operating systems are installed on the computer, the Windows
 
 When a multiboot computer is started, the following scenario occurs:
 
--   The Windows Boot Manager displays a menu with the boot entries for Windows and a **Legacy** option.
+- The Windows Boot Manager displays a menu with the boot entries for Windows and a **Legacy** option.
 
--   If you select a boot entry for a specific version of Windows, the Windows Boot Manager loads the system-specific boot loader for that operating system and passes the parameters for that boot entry to the system-specific boot loader. The system-specific boot loader loads the operating system in accordance with the boot parameters.
+- If you select a boot entry for a specific version of Windows, the Windows Boot Manager loads the system-specific boot loader for that operating system and passes the parameters for that boot entry to the system-specific boot loader. The system-specific boot loader loads the operating system in accordance with the boot parameters.
 
--   If you select **Legacy**, the Windows Boot Manager starts Ntldr, the boot manager for NT-based Windows operating systems prior to Windows Vista. From this point forward, the boot process proceeds as it did prior to Windows Vista.
+- If you select **Legacy**, the Windows Boot Manager starts Ntldr, the boot manager for NT-based Windows operating systems prior to Windows Vista. From this point forward, the boot process proceeds as it did prior to Windows Vista.
 
     If the computer includes multiple installations of pre-Windows Vista Windows, Ntldr displays a boot menu consisting of the entries for these operating systems. This boot menu is generated from the entries in the Boot.ini file on BIOS-based systems and the boot entries stored in EFI-NVRAM on EFI-based systems. When you select a boot entry, Ntldr loads the operating system in accordance with the boot parameters.
 
