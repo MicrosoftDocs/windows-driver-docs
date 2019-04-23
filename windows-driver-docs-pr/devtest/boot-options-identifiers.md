@@ -7,7 +7,7 @@ keywords:
 - identifiers
 - default
 - WDK boot options
-ms.date: 04/19/2019
+ms.date: 04/22/2019
 ms.localizationpriority: medium
 ---
 
@@ -125,6 +125,21 @@ Resume Loader Settings
 ----------------------
 identifier              {resumeloadersettings}
 inherit                 {globalsettings}
+
+...
+
+```
+
+Use the bcdedit /all command to see all of the settings.  
+
+```console
+C:\>bcdedit /enum all
+
+Windows Boot Manager
+--------------------
+identifier              {bootmgr}
+device                  partition=\Device\HarddiskVolume1
+description             Windows Boot Manager
 
 ...
 

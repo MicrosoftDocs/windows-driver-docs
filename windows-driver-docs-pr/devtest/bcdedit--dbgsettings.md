@@ -2,7 +2,7 @@
 title: BCDEdit /dbgsettings
 description: The /dbgsettings option sets or displays the current global debugger settings for the computer.
 ms.assetid: df2fe55c-2752-4e0c-a4c0-004235b85e22
-ms.date: 02/07/2019
+ms.date: 04/23/2019
 keywords: ["BCDEdit /dbgsettings Driver Development Tools"]
 topic_type:
 - apiref
@@ -21,20 +21,17 @@ The **/dbgsettings** option sets or displays the current global debugger setting
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
- > [!IMPORTANT]
-> Setting up a network debugging manually is a complex and error prone process.
-> To set up network debugging automatically, see [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically). Using the KDNET utility is **strongly** recommended for all debugger users.
 
 ``` syntax
 bcdedit /dbgsettings NET HOSTIP:ip PORT:port [KEY:key] [nodhcp] [newkey] [/start startpolicy] [/noumex] 
 
-bcdedit /dbgsettings SERIAL [DEBUGPORT:port] [BAUDRATE:baud] [/start startpolicy] [/noumex] 
-
 bcdedit /dbgsettings LOCAL [/start startpolicy] [/noumex] 
+
+bcdedit /dbgsettings SERIAL [DEBUGPORT:port] [BAUDRATE:baud] [/start startpolicy] [/noumex] 
 
 bcdedit /dbgsettings USB [TARGETNAME:targetname] [/start startpolicy] [/noumex] 
 
-bcdedit /dbgsettings 1394 [CHANNEL:channel] [/start startpolicy] [/noumex] 
+bcdedit /dbgsettings 1394 [CHANNEL:channel] [/start startpolicy] [/noumex] NOTE: The 1394 TRANSPORT IS DEPRECATED
 ```
 
 Parameters
@@ -45,7 +42,7 @@ Parameters
 Specifies that the target machine and the host machine will use an Ethernet network connection for debugging. When this option is used, the **HOSTIP** and **PORT** parameters must be included as well. The target computer must have a network adapter that is supported by Debugging Tools for Windows. 
 
 **HOSTIP:**<em>ip</em>   
-For network debugging, specifies the IPv4 address of the host debugger.
+For network debugging, specifies the IP address of the host debugger.
 
 **KEY:**<em>key</em>   
 For network debugging, specifies the key with which to encrypt the connection. \[0-9\] and \[a-z\] allowed only. Do not specify this parameter if you have specified the **newkey** parameter.
@@ -56,8 +53,20 @@ For network debugging, specifies the port to communicate with on the host debugg
 **newkey**   
 For network debugging specifies that a new encryption key should be generated for the connection. Do not specify this parameter if you have specified a **KEY** parameter.
 
-**nodhcp**   
-For network debugging prevents use of DHCP to obtain the target IP address.
+**nodhcp**
+
+Setting *nodhcp* prevents use of DHCP to obtain the target IP address. This option is rarely required as even small routers provide support for DHCP. The *nodhcp* option should only be used if you know that there are no DHCP servers on the network.  In most situations, the KDNET transport works best when this option is not set, and DHCP is enabled.
+
+**busparams**=*Bus.Device.Function*
+Specifies the target controller when multiple controllers exist. *Bus* specifies the bus number, *Device* specifies the device number, and *Function* specifies the function number.  
+
+To specify the bus parameters, Open Device Manager, and locate the network adapter that you want to use for debugging. Open the property page for the network adapter, and make a note of the bus number, device number, and function number. In an elevated Command Prompt Window, enter the following command, where b, d, and f are the bus, device and function numbers in decimal format:
+
+```console
+bcdedit /set "{dbgsettings}" busparams b.d.f
+```
+
+If you are manually configuring a debugger connection, you must specify the bus parameters. For more information, see [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md) and [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](setting-up-a-usb-3-0-debug-cable-connection.md).
 
 ### Examples
 
@@ -75,17 +84,32 @@ communicating on port 50000:
 bcdedit /dbgsettings NET HOSTIPV6:2001:48:d8:2f:5e:c0:42:28:4f5b PORT:50000
 ```
 
-For more information, see:
+ > [!IMPORTANT]
+> Setting up a network debugging manually is a complex and error prone process.
+> To set up network debugging automatically, see [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically). Using the KDNET utility is **strongly** recommended for all debugger users.
 
-- [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically) 
-
-- [Setting Up Kernel-Mode Debugging over a Network Cable Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection)
+For more information on manual setup, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection).
 
 
+## LOCAL
 
-## SERIAL   
+The **LOCAL** option sets the global debugging option to local debugging. This is kernel-mode debugging on a single computer. In other words, the debugger runs on the same computer that is being debugged. With local debugging you can examine state, but not break into kernel mode processes that would cause the OS to stop running.
 
-Specifies that the target machine and the host machine will use a serial connection for debugging. When this option is used, the **DEBUGPORT** and **BAUDRATE** parameters can be included as well.
+### Example
+
+The following command sets the global debugger settings to local debugging.
+
+``` console
+bcdedit /dbgsettings LOCAL
+```
+
+The LOCAL option is available in Windows 8.0 and Windows Server 2012 and later.
+
+For information on setting up local kernel mode debugging manually, see [Setting Up Local Kernel Debugging of a Single Computer Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-local-kernel-debugging-of-a-single-computer-manually).
+
+## SERIAL
+
+Specifies that the target machine and the host machine will use a serial connection for debugging. When this option is used, the **DEBUGPORT** and **BAUDRATE** parameters should be specified.
 
 **BAUDRATE:**<em>baud</em>   
 Specifies the baud rate to use. This parameter is optional. Valid values for *baud* are 9600, 19200, 38400, 57600, and 115200. The default baud rate is 115200 bps.
@@ -98,27 +122,9 @@ Specifies the baud rate to use. This parameter is optional. Valid values for *ba
 The following command configures the target computer to use a serial connection for debugging. The command also specifies that the debugging connection will use COM2 and a baud rate of 115,200. 
 
 ``` console
-bcdedit /dbgsettings serial debugport:2 baudrate:115200
+bcdedit /dbgsettings serial debugport:1 baudrate:115200
 ```
 For more information, see [Setting Up Kernel-Mode Debugging over a Serial Cable Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-null-modem-cable-connection).
-
-
-## LOCAL  
-The **LOCAL** option sets the global debugging option to local debugging. This is kernel-mode debugging on a single computer. In other words, the debugger runs on the same computer that is being debugged. With local debugging you can examine state, but not break into kernel mode processes that would cause the OS to stop running.
-
-The LOCAL option is available in Windows 8.0 and Windows Server 2012 and later.
-
-
-### Example
-
-The following command sets the global debugger settings to local debugging.
-
-``` console
-bcdedit /dbgsettings LOCAL
-```
-
-For information on setting up local kernel mode debugging manually, see [Setting Up Local Kernel Debugging of a Single Computer Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-local-kernel-debugging-of-a-single-computer-manually).
-
 
 ## USB   
 Specifies that the target machine and the host machine will use a USB 2.0 or USB 3.0 connection for debugging. When this option is used, the **TARGETNAME** parameter must be included as well. 
@@ -180,15 +186,15 @@ Specifies that the kernel debugger ignores user-mode exceptions. By default, the
 
 ### Comments
 
-The **/dbgsettings** option configures the global debugging settings, but does not enable debugging. You must use the **/debug** option to enable debugging for a specific boot entry. If there are no debugging settings specified for a particular boot entry, the global debug settings are used. To override the global settings, you must use the [**BCDEdit /set**](bcdedit--set.md) command and specify the ID of the boot entry along with the debug parameter and value pair.
+The **/dbgsettings** option configures the debugging settings, but does not enable debugging. You must use the **/debug** option to enable debugging for a specific boot entry. If there are no debugging settings specified for a particular boot entry, the default debug settings are used. 
 
-The default values for the global settings are serial communications using COM1, at a baud rate of 115,200.
+The default values for the dbgsettings are shown in the following table.
 
-|/dbgsetting parameter|Default value|
+|dbgsetting parameter|Default value|
 |--- |--- |
-|Connection type|Serial|
-|DEBUGPORT:port|1|
-|BAUDRATE:rate|115200|
+|debugtype|Local|
+|debugstart|Active|
+|noumex|Yes|
 
 
 See also
