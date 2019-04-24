@@ -2396,8 +2396,57 @@
   - name: "Tools for Changing Boot Options for Driver Testing and Debugging"
     href: boot-options-for-driver-testing-and-debugging.md
     items: 
-    - name: "Introduction to Boot Options"
-      href: introduction-to-boot-options.md
+    - name: "Overview of Boot Options in Windows"
+      href: boot-options-in-windows.md
+    - name: "Boot Options Identifiers"
+      href: boot-options-identifiers.md
+    - name: "BCDEdit Options Reference"
+      href: bcd-boot-options-reference.md
+      items: 
+      - name: "BCDEdit /bootdebug"
+        href: bcdedit--bootdebug.md
+      - name: "BCDEdit /dbgsettings"
+        href: bcdedit--dbgsettings.md
+      - name: "BCDEdit /debug"
+        href: bcdedit--debug.md
+      - name: "BCDEdit /deletevalue"
+        href: bcdedit--deletevalue.md
+      - name: "BCDEdit /ems"
+        href: bcdedit--ems.md
+      - name: "BCDEdit /emssettings"
+        href: bcdedit--emssettings.md
+      - name: "BCDEdit /set"
+        href: bcdedit--set.md
+    - name: "Editing Boot Options"
+      href: editing-boot-options.md
+      items: 
+      - name: "Changing Boot Parameters"
+        href: changing-boot-parameters.md
+      - name: "Adding Boot Entries"
+        href: adding-boot-entries.md
+      - name: "Changing the Default Boot Entry"
+        href: changing-the-default-boot-entry.md
+      - name: "Changing the Boot Menu Time-out"
+        href: changing-the-boot-menu-time-out.md
+      - name: "Changing the Friendly Name of a Boot Entry"
+        href: changing-the-friendly-name-of-a-boot-entry.md
+    - name: "Using Boot Parameters"
+      href: using-boot-parameters.md
+      items: 
+      - name: "Boot Parameters to Enable Debugging"
+        href: boot-parameters-to-enable-debugging.md
+      - name: "Boot Parameters to Manipulate Memory"
+        href: boot-parameters-to-manipulate-memory.md
+      - name: "Boot Parameters to Load a Partial Checked Build"
+        href: boot-parameters-to-load-a-partial-checked-build.md
+      - name: "Boot Parameters to Test Drivers for Multiple Processor Group Support"
+        href: boot-parameters-to-test-drivers-for-multiple-processor-group-support.md
+      - name: "Boot Parameters to Configure DEP and PAE"
+        href: boot-parameters-to-configure-dep-and-pae.md
+      - name: "Boot Parameters to Enable EMS Redirection"
+        href: boot-parameters-to-enable-ems-redirection.md
+    - name: "Boot Options in Previous Versions of Windows"
+      href: boot-options-in-previous-versions-of-windows.md
       items: 
       - name: "Boot Options in a Boot.ini File"
         href: boot-options-in-a-boot-ini-file.md
@@ -2426,55 +2475,6 @@
             href: identifying-backup-files-for-deleted-boot-entries.md
           - name: "Recognizing Unusable Boot Entry Backup Files"
             href: recognizing-unusable-boot-entry-backup-files.md
-      - name: "Overview of Boot Options in Windows Vista and Later"
-        href: boot-options-in-windows.md
-    - name: "Bypassing Boot Options"
-      href: bypassing-boot-options.md
-    - name: "Editing Boot Options"
-      href: editing-boot-options.md
-      items: 
-      - name: "Adding Boot Entries"
-        href: adding-boot-entries.md
-      - name: "Changing the Friendly Name of a Boot Entry"
-        href: changing-the-friendly-name-of-a-boot-entry.md
-      - name: "Changing Boot Parameters"
-        href: changing-boot-parameters.md
-      - name: "Changing the Default Boot Entry"
-        href: changing-the-default-boot-entry.md
-      - name: "Changing the Boot Menu Time-out"
-        href: changing-the-boot-menu-time-out.md
-    - name: "Using Boot Parameters"
-      href: using-boot-parameters.md
-      items: 
-      - name: "Boot Parameters to Enable Debugging"
-        href: boot-parameters-to-enable-debugging.md
-      - name: "Boot Parameters to Manipulate Memory"
-        href: boot-parameters-to-manipulate-memory.md
-      - name: "Boot Parameters to Load a Partial Checked Build"
-        href: boot-parameters-to-load-a-partial-checked-build.md
-      - name: "Boot Parameters to Enable EMS Redirection"
-        href: boot-parameters-to-enable-ems-redirection.md
-      - name: "Boot Parameters to Configure DEP and PAE"
-        href: boot-parameters-to-configure-dep-and-pae.md
-      - name: "Boot Parameters to Test Drivers for Multiple Processor Group Support"
-        href: boot-parameters-to-test-drivers-for-multiple-processor-group-support.md
-    - name: "BCDEdit Options Reference"
-      href: bcd-boot-options-reference.md
-      items: 
-      - name: "BCDEdit /bootdebug"
-        href: bcdedit--bootdebug.md
-      - name: "BCDEdit /dbgsettings"
-        href: bcdedit--dbgsettings.md
-      - name: "BCDEdit /debug"
-        href: bcdedit--debug.md
-      - name: "BCDEdit /deletevalue"
-        href: bcdedit--deletevalue.md
-      - name: "BCDEdit /ems"
-        href: bcdedit--ems.md
-      - name: "BCDEdit /emssettings"
-        href: bcdedit--emssettings.md
-      - name: "BCDEdit /set"
-        href: bcdedit--set.md
   - name: "Tools for Debugging Drivers"
     href: tools-for-debugging-drivers.md
     items: 

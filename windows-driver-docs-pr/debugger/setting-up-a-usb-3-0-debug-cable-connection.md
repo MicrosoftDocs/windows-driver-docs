@@ -2,7 +2,7 @@
 title: Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a USB 3.0 cable. This topic describes how to set up USB 3.0 debugging manually.
 ms.assetid: 9A9F5DA0-B98A-4C19-A723-67D06B2409B5
-ms.date: 07/11/2018
+ms.date: 02/06/2019
 ms.localizationpriority: medium
 ---
 
@@ -65,8 +65,10 @@ Debugging over a USB 3.0 cable requires the following hardware:
 
    where *TargetName* is a name that you create for the target computer. Note that *TargetName* does not have to be the official name of the target computer; it can be any string that you create as long as it meets these restrictions:
 
-   -   The maximum length of the string is 24 characters.
+   -   The string must not contain “debug” anywhere in the *TargetName* in any combination of upper or lower case. For example if you use “DeBuG” or "DEBUG" anywhere in your targetname, debugging will not work correctly.  
    -   The only characters in the string are the hyphen (-), the underscore(\_), the digits 0 through 9, and the letters A through Z (upper or lower case).
+   -   The maximum length of the string is 24 characters.
+   
 
 7. If you have more than one USB host controller on the target computer, enter this command:
 
