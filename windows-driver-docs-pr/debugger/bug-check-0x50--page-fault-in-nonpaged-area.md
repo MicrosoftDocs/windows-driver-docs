@@ -3,7 +3,7 @@ title: Bug Check 0x50 PAGE_FAULT_IN_NONPAGED_AREA
 description: The PAGE_FAULT_IN_NONPAGED_AREA bug check has a value of 0x00000050. This indicates that invalid system memory has been referenced. 
 ms.assetid: 63b4ab82-f7a9-4e14-bf7c-707a22d7e251
 keywords: ["Bug Check 0x50 PAGE_FAULT_IN_NONPAGED_AREA", "PAGE_FAULT_IN_NONPAGED_AREA"]
-ms.date: 03/28/2017
+ms.date: 04/18/2019
 topic_type:
 - apiref
 api_name:
@@ -43,10 +43,25 @@ The PAGE\_FAULT\_IN\_NONPAGED\_AREA bug check has a value of 0x00000050. This in
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
-<td align="left"><p><strong>0:</strong> Read operation</p>
+<td align="left">
+<p><i>After Windows 1507 (TH1) Version - x64 </i> </p>
+<p><strong>0:</strong> Read operation</p>
+<p><strong>2:</strong> Write operation</p>
+<p><strong>10:</strong> Execute operation</p>
+
+<p><i> After Windows 1507 (TH1) Version - x86 </i></p>
+<p><strong>0:</strong> Read operation</p>
+<p><strong>2:</strong> Write operation</p>
+<p><strong>10:</strong> Execute operation</p>
+
+<p><i> After Windows 1507 (TH1) Version - ARM </i></p>
+<p><strong>0:</strong> Read operation</p>
 <p><strong>1:</strong> Write operation</p>
-<p><strong>2:</strong> Execute operation</p>
 <p><strong>8:</strong> Execute operation</p>
+
+<p><i> Before Windows 1507 (TH1) Version x64 / x86 </i></p>
+<p><strong>0:</strong> Read operation</p>
+<p><strong>1:</strong> Write operation</p>
 </td>
 </tr>
 <tr class="odd">
