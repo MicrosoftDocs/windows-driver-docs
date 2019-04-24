@@ -252,7 +252,7 @@ After (Dynamic Filename):
 
 When accessing the target file from User Mode, you won't have the device context that a driver has. In this case you need to add an additional step. Before opening the key handle, find the device that contains the registry value indicating what file to load.
 
-This [link](https://review.docs.microsoft.com/windows-hardware/drivers/develop/universal-driver-scenarios?branch=pr-en-us-55#run-from-the-driver-store) shows you how to filter a device list to find your device and open the handle to the registry location in user mode, using Dirid 13 for best practices.
+See [Run from the driver store](https://docs.microsoft.com/windows-hardware/drivers/develop/universal-driver-scenarios#run-from-the-driver-store) to learn how to filter a device list to find your device and open the handle to the registry location in user mode, using Dirid 13 for best practices.
 
 ## Errors 1331 - 1333
 
