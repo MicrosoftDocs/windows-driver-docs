@@ -3,15 +3,11 @@ title: Writing a Bug Check Callback Routine
 description: Writing a Bug Check Callback Routine
 ms.assetid: 62aefe67-e197-4c45-b994-19bd7369dbc1
 keywords: ["bug check callback routines WDK kernel", "callback routines WDK bug checks", "registering callback routines", "KeRegisterBugCheckCallback", "BugCheckCallback"]
-ms.date: 06/16/2017
+ms.date: 04/24/2019
 ms.localizationpriority: medium
 ---
 
 # Writing a Bug Check Callback Routine
-
-
-
-
 
 Drivers can register callback routines that the system executes when it issues a bug check.
 
@@ -29,24 +25,23 @@ A bug check callback routine executes at IRQL = HIGH\_LEVEL, which imposes stron
 
 A bug check callback routine cannot:
 
--   Allocate memory
+- Allocate memory
 
--   Access pageable memory
+- Access pageable memory
 
--   Use any synchronization mechanisms
+- Use any synchronization mechanisms
 
--   Call any routine that must execute at IRQL = DISPATCH\_LEVEL or below
+- Call any routine that must execute at IRQL = DISPATCH\_LEVEL or below
 
 Bug check callback routines are guaranteed to run without interruption, so no synchronization is required. (If the bug check routine does use any synchronization mechanisms, the system will deadlock.)
 
 A driver's bug check callback routine can safely use the <strong>READ\_PORT\_*XXX</strong><em>, **READ\_REGISTER\_</em>XXX<strong><em>, *</em>WRITE\_PORT\_*XXX</strong><em>, and **WRITE\_REGISTER\_</em>XXX*** routines to communicate with the driver's device. (For information about these routines, see [Hardware Abstraction Layer Routines](https://msdn.microsoft.com/library/windows/hardware/ff546644).)
 
-For more information about bug check callbacks, see [*BugCheckCallback*](https://msdn.microsoft.com/library/windows/hardware/ff540674), [*BugCheckAddPagesCallback*](https://msdn.microsoft.com/library/windows/hardware/ff540669), [*BugCheckDumpIoCallback*](https://msdn.microsoft.com/library/windows/hardware/ff540677), [*BugCheckSecondaryDumpDataCallback*](https://msdn.microsoft.com/library/windows/hardware/ff540679), and [Reading Bug Check Callback Data](https://msdn.microsoft.com/library/windows/hardware/ff553558).
+For more information about bug check callbacks, see:
+- [*BugCheckCallback*](https://msdn.microsoft.com/library/windows/hardware/ff540674) 
+- [*BugCheckAddPagesCallback*](https://msdn.microsoft.com/library/windows/hardware/ff540669)
+- [*BugCheckDumpIoCallback*](https://msdn.microsoft.com/library/windows/hardware/ff540677)
+- [*BugCheckSecondaryDumpDataCallback*](https://msdn.microsoft.com/library/windows/hardware/ff540679)
+- [Reading Bug Check Callback Data](https://msdn.microsoft.com/library/windows/hardware/ff553558).
 
  
-
- 
-
-
-
-
