@@ -116,7 +116,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 #### Type of I/O plug-in performs
 
-* Uses the Simple I/O plug-in for [Volumes](#-volume).
+* Uses the Simple I/O plug-in for [Volumes](#volume).
 
 ### Display
 
@@ -140,7 +140,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 #### Type of I/O plug-in performs
 
-* Uses the I/O plug-in for [Sensors](#-sensors).
+* Uses the I/O plug-in for [Sensors](#sensors).
 
 ### LAN
 
