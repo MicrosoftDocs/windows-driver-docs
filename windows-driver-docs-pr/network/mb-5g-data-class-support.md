@@ -22,8 +22,8 @@ This topic uses the following terms:
 | EPC | Enhanced Packet Core. The term used in 3GPP when referring to the LTE core network. |
 | NGC | Next Generation Core. The term used in 3GPP when referring to the 5G core network. The NR-equivalent of EPC. |
 | DC | Dual Connectivity. The network can support both LTE and 5G NR, including dual connectivity with which devices have simultaneous connections to LTE and NR. |
-| SA | Standalone 5G. Refers to any NGC-based NR networks, the most common of which is Option 2, standalone NR. |
-| NSA | Non-standalone 5G. Refers to any EPC-based NR networks, the most common of which is Option 3, non-standalone NR. |
+| SA | Standalone 5G. Refers to any NGC-based NR networks. |
+| NSA | Non-standalone 5G. Refers to any EPC-based NR networks. |
 | gNB | An NR radio base station that supports the NR air interface as well as connectivity to NGC. |
 | RAT | Radio Access Technology. |
 
@@ -31,27 +31,27 @@ This topic uses the following terms:
 
 Windows 10, version 1903 is the first Windows release to support 5G mobile broadband drivers for IHV partners. The name *5G* is friendly name for New Radio (NR), which was introduced in the [3GPP Release 15 specification](http://www.3gpp.org/release-15). NR is a comprehensive set of standards that is envisioned to provide true long-term evolution to existing 4th generation LTE technologies, potentially covering all cellular communication needs from narrowband to ultra-broadband, and from nominal to mission-critical latency requirements. As a technology, 5G is expected to develop over a decade-long time frame. 
 
-This topic describes the first steps for Windows support of 5G in Windows 10, version 1903, starting with 5G enhanced mobile broadband (eMBB) over 5G nonstandalone EPC-based networks.
+This topic describes the MBIM extensions first released  in Windows 10, version 1903, to enable hardware partners development of MBB driver with data-class support for enhanced mobile broadband (eMBB) over 5G “non-standalone” EPC-based NR networks. The data-plane support and enablement for 5G throughput and commercialization requirements are not part of this Windows release and not described in this topic. 
 
 ## Windows 5G MBIM interface extension
 
 ### MBIM interface
 
-As of Windows 10, version 1903, 5G on the whole is still developing. The following table summarizes the different stages at which 5G networks will be deployed, characterized by different network architecture options (1-7). Option 1 represents existing LTE mobile broadband, which is well supported on the Windows platform.
+As of Windows 10, version 1903, 5G on the whole is still developing. From a network deployment perspective, 5G is expected to be deployed in two major phases. 
 
-![Mobile broadband 5G deployment options](images/mb-5g-deployment-options.png "Mobile broadband 5G deployment options")
+In Phase 1, most mobile network operators are expected to deploy 5G with the addition of 5G radio to the existing LTE radio and EPC core deployments, commonly known “nonstandalone 5G” networks.  
 
-Option 3, or "nonstandalone" (NSA) 5G networks are expected to deployed by major mobile operators (MOs) around the world starting in 2019. NGC-based, or "standalone" (SA) Option 2/4/5/7 networks are expected to be deployed more widely starting in 2020 at the earliest.
+In Phase 2, mobile network operators are expected to replace EPCs and NGCs and densify the 5G radio deployment in parallel to enable true “standalone”, or NR-NGC-based 5G networks. Phase 2 interface extensions are not in scope in this topic or Windows release. 
 
-Support for Option 3 (NSA) EPC-based 5G networks has been introduced in Windows 10, version 1903. However, NGC-based (SA) networks are still under development. Therefore, 5G support in Windows is easily extensible and, in parallel, is fully backward compatible with legacy modems. 
+Interface extensions to support basic Phase 1 network requirements, or ”nonstandalone”EPC-based5G networks, was introduced in Windows 10, version 1903. In order to be extensible and fully backward compatible with legacy modems, a new Microsoft MBIM extension version (2.0) is introduced. 
 
-The [MBIM 1.0 errata specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) has a mechanism to add and advertise optional CIDs, but it lacks a mechanism to change existing CIDs with new payloads or modified payloads, or introduce any changes that cannot be accommodated by optional CIDs. Each payload in the MBIM 1.0 errata specification might consist of fixed size members or dynamically sized offset/size pair members. If a dynamically-sized member exists, then the last member is a variable-sized buffer. Although breaking changes are avoided as much as possible, they are inevitable to support all 5G network requirements.
+The new Microsoft MBIM extesnion version is required because the [MBIM 1.0 errata specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) has a mechanism to add and advertise optional CIDs, but it lacks a mechanism to change the existing CIDs (new payloads or modified payload) or to introduce changes in any aspect that cannot be accommodated by optional CIDs. Each payload may consist of fixed sized members or dynamic sized (offset/size pairs) members. If one or more  dynamically sized members exist, then the last member has a variable size buffer.  
 
-Windows 10, version 1903 has updated the MBIM 1.0 specification by adding support for Option 3 (NSA) 5G networks, including breaking changes to existing CIDs. The new MBIM Extensions Release 2.0 has also been added in Windows 10, version 1903, along with a new CID to enable the host to advertise its MBIM release number and MBIM Extensions release number to MBIM devices.
+This spec also adds anew CID for the host to advertise its MBIM Release version and Extensions Release version to MBIM devices. For legacy drivers that are already in the field, this CID is optional so backward compatibility is fully maintained.  See MBIM Extensions Release 2.0 section below for details. 
 
 ### NDIS interface
 
-NDIS supports a revision number in the NDIS_HEADER. This permits adding new members to an OID message, although not all miniport drivers respect version numbering and cannot tolerate new revisions. In this case, the miniport driver version can be used to determine if the driver supports the newer version of the OID or not. However, because this adds a dependency to the IHV driver, instead NDIS uses the optional service caps table in [OID_WWAN_DEVICE_CAPS_EX](oid-wwan-device-caps-ex.md).
+NDIS supports a revision number in the NDIS_HEADER. This permits adding new members to an OID message, which NDIS uses the optional service caps table in [OID_WWAN_DEVICE_CAPS_EX](oid-wwan-device-caps-ex.md).
 
 The following NDIS OIDs and their data structures have been updated for 5G data class support.
 
@@ -91,7 +91,7 @@ A device that intends to work with older hosts should initially advertise MBIMEx
 
 The following table shows a compatibility matrix with three hypothetical hosts and three hypothetical devices, each with its native MBIMEx version stated. The devices advertise MBIMEx version 1.0 initially in the USB descriptor. The matrix shows how each of the devices behaves with each of the hosts.
 
-| Modem (below) / OS (right) | Windows 10, version 1809 or earlier (native MBIMEx version 1.0) | Windows 10, version 1903 and later (MBIMEx version 2.0) |
+| Device (below) / Host (right) | Windows 10, version 1809 or earlier (native MBIMEx version 1.0) | Windows 10, version 1903 and later (MBIMEx version 2.0) |
 | --- | --- | --- |
 | 4G device <p>Native MBIMEx version 1.0</p> | Device initially advertises MBIMEx 1.0. No MBIM_CID_VERSION exchange. Compatible device and host. Works by default with MBIMEx version 1.0. | Device initially advertises MBIMEx 1.0. No MBIM_CID_VERSION exchange. The host works with the device using MBIMEx 1.0. |
 | 5G NSA device <p>Native MBIMEx version 2.0</p> | Device initially advertises MBIMEx 1.0. No MBIM_CID_VERSION exchange. Device knows that the host has MBIMEx 1.0 and proceeds with MBIMEx 1.0. | Device initially advertises MBIMEx 1.0. Host sends MBIM_CID_VERSION to inform the device that the host supports MBIMEx 2.0. Device responds with MBIMEx 2.0. Both sides proceed with MBIMEx 2.0. |
@@ -112,7 +112,7 @@ The following table lists all existing CIDs that are modified in MBIMEx version 
 
 ## MBIM_CID_VERSION
 
-MBIM_CID_VERSION is an optional command for exchanging MBIM version information between the host and the device. If the device requires backward compatibility with older MBIM versions, it must support this command.
+For MBB drivers that support MBIM Microsoft extension 2.0 or above, MBIM_CID_VERSION is a mandatory command for exchanging MBIM version information between the host and the device. For in-market devices with drivers that do not understand this CID, host will assume and provide backward compatibility.
 
 The host sends this command as a query if it is supported by the device. The query contains the MBIM release number and MBIM Extensions release number that the host currently supports.
 
