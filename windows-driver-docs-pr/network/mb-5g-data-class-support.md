@@ -31,23 +31,23 @@ This topic uses the following terms:
 
 Windows 10, version 1903 is the first Windows release to support 5G mobile broadband drivers for IHV partners. The name *5G* is friendly name for New Radio (NR), which was introduced in the [3GPP Release 15 specification](http://www.3gpp.org/release-15). NR is a comprehensive set of standards that is envisioned to provide true long-term evolution to existing 4th generation LTE technologies, potentially covering all cellular communication needs from narrowband to ultra-broadband, and from nominal to mission-critical latency requirements. As a technology, 5G is expected to develop over a decade-long time frame. 
 
-This topic describes the MBIM extensions first released  in Windows 10, version 1903, to enable hardware partners development of MBB driver with data-class support for enhanced mobile broadband (eMBB) over 5G “non-standalone” EPC-based NR networks. The data-plane support and enablement for 5G throughput and commercialization requirements are not part of this Windows release and not described in this topic. 
+This topic describes the MBIM extensions first released  in Windows 10 version 1903, which enable hardware partner to develop an MBB driver with data-class support for enhanced mobile broadband (eMBB) over 5G “non-standalone” EPC-based NR networks. The data-plane support and enablement for 5G throughput and commercialization requirements are not part of this Windows release and not described in this topic. 
 
 ## Windows 5G MBIM interface extension
 
 ### MBIM interface
 
-As of Windows 10, version 1903, 5G on the whole is still developing. From a network deployment perspective, 5G is expected to be deployed in two major phases. 
+As of Windows 10, version 1903, 5G on the whole is still developing. From a network deployment perspective, 5G is expected to be deployed in two major phases: 
 
-In Phase 1, most mobile network operators are expected to deploy 5G with the addition of 5G radio to the existing LTE radio and EPC core deployments, commonly known “nonstandalone 5G” networks.  
+* In Phase 1, most mobile network operators are expected to deploy 5G with the addition of 5G radio to the existing LTE radio and EPC core deployments, commonly known “nonstandalone 5G” networks.  
 
-In Phase 2, mobile network operators are expected to replace EPCs and NGCs and densify the 5G radio deployment in parallel to enable true “standalone”, or NR-NGC-based 5G networks. Phase 2 interface extensions are not in scope in this topic or Windows release. 
+* In Phase 2, mobile network operators are expected to replace EPCs and NGCs and densify the 5G radio deployment in parallel to enable true “standalone”, or NR-NGC-based 5G networks. Phase 2 interface extensions are not in scope in this topic or Windows release. 
 
 Interface extensions to support basic Phase 1 network requirements, or ”nonstandalone”EPC-based5G networks, was introduced in Windows 10, version 1903. In order to be extensible and fully backward compatible with legacy modems, a new Microsoft MBIM extension version (2.0) is introduced. 
 
 The new Microsoft MBIM extesnion version is required because the [MBIM 1.0 errata specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) has a mechanism to add and advertise optional CIDs, but it lacks a mechanism to change the existing CIDs (new payloads or modified payload) or to introduce changes in any aspect that cannot be accommodated by optional CIDs. Each payload may consist of fixed sized members or dynamic sized (offset/size pairs) members. If one or more  dynamically sized members exist, then the last member has a variable size buffer.  
 
-This spec also adds anew CID for the host to advertise its MBIM Release version and Extensions Release version to MBIM devices. For legacy drivers that are already in the field, this CID is optional so backward compatibility is fully maintained.  See MBIM Extensions Release 2.0 section below for details. 
+This spec also adds anew CID for the host to advertise its MBIM Release version and Extensions Release version to MBIM devices. For legacy drivers that are already in the field, this CID is optional so backward compatibility is fully maintained.  For more detail, see [MBIM Extensions Release 2.0](#mbim-extensions-release-20---5g-nonstandalone-epc-based-option-3-network-support) network support). 
 
 ### NDIS interface
 
@@ -112,7 +112,7 @@ The following table lists all existing CIDs that are modified in MBIMEx version 
 
 ## MBIM_CID_VERSION
 
-For MBB drivers that support MBIM Microsoft extension 2.0 or above, MBIM_CID_VERSION is a mandatory command for exchanging MBIM version information between the host and the device. For in-market devices with drivers that do not understand this CID, host will assume and provide backward compatibility.
+For MBB drivers that support MBIM Microsoft extension 2.0 or above, MBIM_CID_VERSION is a mandatory command for exchanging MBIM version information between the host and the device. For in-market devices with drivers that do not recognize this CID, the host will assume and provide backward compatibility.
 
 The host sends this command as a query if it is supported by the device. The query contains the MBIM release number and MBIM Extensions release number that the host currently supports.
 
