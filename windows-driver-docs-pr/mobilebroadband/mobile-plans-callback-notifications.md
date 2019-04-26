@@ -64,6 +64,10 @@ When the MO Direct portal wants to do operations without returning control to th
 | --- | --- | -- |
 | purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
 
+| Return value type | Description |
+| --- | --- |
+| MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
+
 When the MO would like to add balance to a given account, the MO should call the `MobilePlansInlineOperations.notifyBalanceAddition` API.
 
 The following Javascript function shows an example of the API to inform the application that a balance addition has been made.
@@ -86,6 +90,10 @@ function NotifyMobilePlans() {
 | purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
 | iccid | String | The ICCID which should be made active after the balance addition
 
+| Return value type | Description |
+| --- | --- |
+| MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
+
 Balance addition can also be made to a non active profile if the ICCID of the profile is known. Using the `MobilePlansInlineOperations.notifyBalanceAddition` with an ICCID will inform Mobile Plans of the balance addition as well as make Mobile Plans switch the active profile to the profile corresponding to the provided ICCID.
 
 The following Javascript function shows an example of the API to inform the application that a balance addition has been made.
@@ -100,6 +108,78 @@ function NotifyMobilePlans() {
     purchaseMetaData.planName = "My Plan"; 
     MobilePlansInlineOperations.notifyBalanceAddition(purchaseMetaData, "8900000000000000001"); 
 }
+```
+### MobilePlansInlineOperations.notifyProfileDownload(purchaseMetaData, activationCode)
+| Parameter name | Type | Description |
+| --- | --- | -- |
+| purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
+| activationCode | String | The activation code to be used to download an eSIM profile
+
+| Return value type | Description |
+| --- | --- |
+| MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
+
+Begins the process of downloading an eSIM profile. Control is returned to the MO Portal immediately after the call. UI will be displayed to show the progress of the profile download over top of the MO Portal in the form of a notification. The MO Portal can continue to be navigated during this process
+
+The following Javascript function shows an example of the API to inform the application that a profile download should begin
+
+```Javascript
+var purchaseMetaData = MobilePlans.createPurchaseMetaData(); 
+    purchaseMetaData.userAccount = MobilePlansUserAccount.new; 
+    purchaseMetaData.purchaseInstrument = MobilePlansPurchaseInstrument.new; 
+    purchaseMetaData.lineType = MobilePlansLineType.new; 
+    purchaseMetaData.modirectStatus = MobilePlansMoDirectStatus.complete; 
+    purchaseMetaData.planName = "My Plan"; 
+    MobilePlansInlineOperations.registrationChangedScript = "onRegistrationChanged";
+    MobilePlansInlineOperations.profileActivationCompleteScript = "onActivationComplete";
+    MobilePlansInlineOperations.notifyProfileDownload(purchaseMetaData , "1$smdp.address$matchingID"); 
+```
+### MobilePlansInlineOperations.notifyProfileDownload(purchaseMetaData, string, uint)
+| Parameter name | Type | Description |
+| --- | --- | -- |
+| purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
+| activationCode | String | The activation code or SM-DP+ address where the profile is located
+| downloadDelay | uint | The number of minutes to wait before attempting to download the eSIM profile
+
+| Return value type | Description |
+| --- | --- |
+| MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
+
+Begins the process of downloading an eSIM profile. Control is returned to the MO Portal immediately after the call. UI will be displayed to inform the user that a profile will be installed. After the `downloadDelay` minutes has occurred, a notification will be shown to the user allowing them to begin the process of downloading the profile.
+
+The following Javascript function shows an example of the API to inform the application that a profile download with delay should begin
+
+```Javascript
+var purchaseMetaData = MobilePlans.createPurchaseMetaData(); 
+    purchaseMetaData.userAccount = MobilePlansUserAccount.new; 
+    purchaseMetaData.purchaseInstrument = MobilePlansPurchaseInstrument.new; 
+    purchaseMetaData.lineType = MobilePlansLineType.new; 
+    purchaseMetaData.modirectStatus = MobilePlansMoDirectStatus.complete; 
+    purchaseMetaData.planName = "My Plan"; 
+    MobilePlansInlineOperations.registrationChangedScript = "onRegistrationChanged";
+    MobilePlansInlineOperations.profileActivationCompleteScript = "onActivationComplete";
+    MobilePlansInlineOperations.notifyProfileDownload(purchaseMetaData , "1$smdp.address$matchingID", 15); 
+```
+### MobilePlansInlineOperations.notifyOperationCancel(MobilePlansOperationContext)
+| Parameter name | Type | Description |
+| --- | --- | -- |
+| operationContext | Object | This object contains information that uniquely identifies a previous operation |
+
+Cancels an in progress asynchronous action. The only operation currently supported for cancel is after a call to `MobilePlansInlineOperations.notifyProfileDownload(purchaseMetaData, string, uint)`. This operation can be canceled before the user sees a toast notification informing them that download is ready to begin.
+
+The following Javascript function shows an example of the API to cancel an asynchronous action.
+
+```Javascript
+var purchaseMetaData = MobilePlans.createPurchaseMetaData(); 
+    purchaseMetaData.userAccount = MobilePlansUserAccount.new; 
+    purchaseMetaData.purchaseInstrument = MobilePlansPurchaseInstrument.new; 
+    purchaseMetaData.lineType = MobilePlansLineType.new; 
+    purchaseMetaData.modirectStatus = MobilePlansMoDirectStatus.complete; 
+    purchaseMetaData.planName = "My Plan"; 
+    MobilePlansInlineOperations.registrationChangedScript = "onRegistrationChanged";
+    MobilePlansInlineOperations.profileActivationCompleteScript = "onActivationComplete";
+    var op = MobilePlansInlineOperations.notifyProfileDownload(purchaseMetaData , "1$smdp.address$matchingID", 15); 
+    MobilePlansInlineOperations.notifyOperationCancel(op);
 ```
 
 ### Listening for network registration changes
