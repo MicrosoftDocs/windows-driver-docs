@@ -1143,7 +1143,7 @@ In Windows 10, there is a new class extension module, Wudfsmcclassext.dll, which
 
 ### <a name="storage-1507"></a>Storage
 
-In Windows 10, new storage firmware updates (IOCTL interface) allow partners to update their storage device firmware. These updates include:
+In Windows 10, new protocol-specific interfaces have been added to allow apps to talk with storage devices using their native device protocol. These updates include:
 
 * Storage protocol pass through &ndash; The updated storage pass through IOCTL interface supports newer protocols including non-volatile memory express (NVMe).
 * Expanded storage query interfaces &ndash; The expanded storage query interface allows applications to query protocol-dependent information.
