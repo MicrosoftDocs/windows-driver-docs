@@ -443,7 +443,7 @@ Completely overrides the WttDeviceString used by WexLogger when it initializes W
 
 ### /wttDeviceStringSuffix:\<value>
 
-Appends the specified value to the default WttDeviceString used by WexLogger when it initializes WttLogger. Ignored if [wttDeviceString](#wttdevicestringsuffix) is also specified.
+Appends the specified value to the default WttDeviceString used by WexLogger when it initializes WttLogger. Ignored if [wttDeviceString](#wttdevicestringvalue) is also specified.
 
 `te.exe test1.dll /wttDeviceStringSuffix:$Console`
 
