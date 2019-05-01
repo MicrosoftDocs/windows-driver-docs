@@ -222,7 +222,7 @@ OsrFx2.ExtensionDesc = "OsrFx2 DCHU Device Extension"
 REG_EXPAND_SZ = 0x00020000
 FLG_ADDREG_KEYONLY = 0x00000010
 ```
-To use an Extension INF to install a filter driver, please see [this page](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/device-filter-driver-ordering) that details how to properly register a filter driver using Extension INF's.
+To use an Extension INF to install a filter driver, please see [this page](https://docs.microsoft.com/windows-hardware/drivers/develop/device-filter-driver-ordering) that details how to properly register a filter driver using Extension INF's.
 
 ##  Submitting an extension INF for certification
 
