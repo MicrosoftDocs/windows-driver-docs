@@ -28,7 +28,7 @@ The following command line shows how to run SignTool to do the following:
 To release-sign the *tstamd64.cat* catalog file, run the following command line:
 
 ```cpp
-Signtool sign /v /ac MSCV-VSClass3.cer /s MyPersonalStore /n contoso.com /t http://timestamp.verisign.com/scripts/timstamp.dll tstamd64.cat
+Signtool sign /v /fd sha256 /ac MSCV-VSClass3.cer /s MyPersonalStore /n contoso.com /t http://timestamp.verisign.com/scripts/timstamp.dll tstamd64.cat
 ```
 
 Where:
@@ -36,6 +36,8 @@ Where:
 -   The **sign** command configures SignTool to sign the specified catalog file, *tstamd64.cat*.
 
 -   The **/v** option enables verbose operations, in which SignTool displays successful execution and warning messages.
+
+-   The **/fd** option specifies the file digest algorithm to use for creating file signatures. The default is SHA1.
 
 -   The **/ac** option specifies the name of the file which contains the cross-certificate (*MSCV-VSClass3.cer*) obtained from the CA. Use the full path name if the cross-certificate is not in the current directory.
 
