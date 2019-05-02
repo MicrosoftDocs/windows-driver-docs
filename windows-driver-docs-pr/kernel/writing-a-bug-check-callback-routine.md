@@ -66,7 +66,7 @@ Your <i>KbCallbackAddPages</i> routine can supply driver-specific data to add to
 
 When a bug check occurs, the operating system calls all the registered <i>KbCallbackAddPages</i> routines to poll drivers for data to add to the crash dump file. Each call adds one or more pages of contiguous data to the crash dump file. A <i>KbCallbackAddPages</i> routine can supply either a virtual address or a physical address for the starting page. If more than one page is supplied during a call, the pages are contiguous in either virtual or physical memory, depending on whether the starting address is virtual or physical. To supply noncontiguous pages, the <i>KbCallbackAddPages</i> routine can set a flag in the <b>KBUGCHECK_ADD_PAGES</b> structure to indicate that it has additional data and has to be called again. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff551839">KBUGCHECK_ADD_PAGES</a>.
 
-Unlike a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a> routine, which appends data to the secondary crash dump region, a <i>KbCallbackAddPages</i> routine adds pages of data to the primary crash dump region. During debugging, primary crash dump data is easier to access than secondary crash dump data.
+Unlike a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">KbCallbackSecondaryDumpData</a> routine, which appends data to the secondary crash dump region, a <i>KbCallbackAddPages</i> routine adds pages of data to the primary crash dump region. During debugging, primary crash dump data is easier to access than secondary crash dump data.
 
 Before the operating system calls a <i>KbCallbackAddPages</i> routine, it fills in the <b>BugCheckCode</b> member of the <b>KBUGCHECK_ADD_PAGES</b> structure that <i>ReasonSpecificData</i> points to. During the call, the <i>KbCallbackAddPages</i> routine must set the values of the <b>Flags</b>, <b>Address</b>, and <b>Count</b> members of this structure. If the <i>KbCallbackAddPages</i> routine is called more than one time, the operating system preserves the value that the callback routine wrote to the <b>Context</b> member in the previous call. Before the first call, the operating system initializes <b>Context</b> to <b>NULL</b>.
 
@@ -86,9 +86,9 @@ Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553110">KeReg
 
 A <i>KbCallbackDumpIo</i> routine is strongly restricted in the actions it can take. For more information, see "Bug Check Callback Routine Restrictions" in this topic.
 
-## Implementing BugCheckSecondaryDumpDataCallback
+## Implementing KbCallbackSecondaryDumpData
 
-The system uses <i>BugCheckSecondaryDumpDataCallback</i> routines to poll drivers for crash dump data.
+The system uses <i>KbCallbackSecondaryDumpData</i> routines to poll drivers for crash dump data.
 
 The system sets the <b>InBuffer</b>, <b>InBufferLength</b>, <b>OutBuffer</b>, and <b>MaximumAllowed</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551879">KBUGCHECK_SECONDARY_DUMP_DATA</a> structure that <i>ReasonSpecificData</i> points to. The <b>MaximumAllowed</b> member specifies the maximum amount of dump data the routine can provide.
 
@@ -96,11 +96,11 @@ The value of the <b>OutBuffer</b> member determines whether the system is reques
 
 <ul>
 <li>
-If the <b>OutBuffer</b> member of KBUGCHECK_SECONDARY_DUMP_DATA is <b>NULL</b>, the system is only requesting size information. The <i>BugCheckSecondaryDumpDataCallback</i> routine fills in the <b>OutBuffer</b> and <b>OutBufferLength</b> members. 
+If the <b>OutBuffer</b> member of KBUGCHECK_SECONDARY_DUMP_DATA is <b>NULL</b>, the system is only requesting size information. The <i>KbCallbackSecondaryDumpData</i> routine fills in the <b>OutBuffer</b> and <b>OutBufferLength</b> members. 
 </li>
 
 <li>
-If the <b>OutBuffer</b> member of KBUGCHECK_SECONDARY_DUMP_DATA equals the <b>InBuffer</b> member, the system is requesting the driver's secondary dump data. The <i>BugCheckSecondaryDumpDataCallback</i> routine fills in the <b>OutBuffer</b> and <b>OutBufferLength</b> members, and writes the data to the buffer specified by <b>OutBuffer</b>.
+If the <b>OutBuffer</b> member of KBUGCHECK_SECONDARY_DUMP_DATA equals the <b>InBuffer</b> member, the system is requesting the driver's secondary dump data. The <i>KbCallbackSecondaryDumpData</i> routine fills in the <b>OutBuffer</b> and <b>OutBufferLength</b> members, and writes the data to the buffer specified by <b>OutBuffer</b>.
 </li>
 </ul>
 
@@ -112,11 +112,11 @@ In Windows XP and Windows Server 2003, if <b>OutBuffer</b> is set to point to a 
 
 Each block of data to be written to the crash dump file is tagged with the value of the <b>Guid</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff551879">KBUGCHECK_SECONDARY_DUMP_DATA</a>. The GUID used must be unique to the driver. To display the secondary dump data corresponding to this GUID, you can use the <b>.enumtag</b> command or the <b>IDebugDataSpaces3::ReadTagged</b> method in a debugger extension. For information about debuggers and debugger extensions, see <a href="https://msdn.microsoft.com/938ef180-84de-442f-9b6c-1138c2fc8d5a">Windows Debugging</a>.
 
-A driver can write multiple blocks with the same GUID to the crash dump file, but this is very poor practice, because only the first block will be accessible to the debugger. Drivers that register multiple <i>BugCheckSecondaryDumpDataCallback</i> routines should allocate a unique GUID for each callback.
+A driver can write multiple blocks with the same GUID to the crash dump file, but this is very poor practice, because only the first block will be accessible to the debugger. Drivers that register multiple <i>KbCallbackSecondaryDumpData</i> routines should allocate a unique GUID for each callback.
 
-Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553110">KeRegisterBugCheckReasonCallback</a> to register a <i>BugCheckSecondaryDumpDataCallback</i> routine. A driver can subsequently remove the callback routine by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552003">KeDeregisterBugCheckReasonCallback</a> routine. If the driver can be unloaded, then it must remove any registered callback routines in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine.
+Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553110">KeRegisterBugCheckReasonCallback</a> to register a <i>KbCallbackSecondaryDumpData</i> routine. A driver can subsequently remove the callback routine by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552003">KeDeregisterBugCheckReasonCallback</a> routine. If the driver can be unloaded, then it must remove any registered callback routines in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine.
 
-A <i>BugCheckSecondaryDumpDataCallback</i> is very restricted in the actions it can take. For more information, see "Bug Check Callback Routine Restrictions" in this topic.
+A <i>KbCallbackSecondaryDumpData</i> routine is very restricted in the actions it can take. For more information, see "Bug Check Callback Routine Restrictions" in this topic.
 
 
 #### Callback Routine Examples
