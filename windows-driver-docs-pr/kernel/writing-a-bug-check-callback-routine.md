@@ -84,7 +84,7 @@ The main purpose of a <i>KbCallbackDumpIo</i> routine is to allow system crash d
 
 Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553110">KeRegisterBugCheckReasonCallback</a> to register a <i>KbCallbackDumpIo</i> routine. A driver can subsequently remove the callback by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552003">KeDeregisterBugCheckReasonCallback</a> routine. If the driver can be unloaded, it must remove any registered callbacks in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine.
 
-A <i>KbCallbackDumpIo</i> routine is strongly restricted in the actions it can take. For more information, see [Callback Routine Restrictions](#callback-routine-restrictions) in this topic.
+A <i>KbCallbackDumpIo</i> routine is strongly restricted in the actions it can take. For more information, see "Bug Check Callback Routine Restrictions" in this topic.
 
 ## Implementing BugCheckSecondaryDumpDataCallback
 
@@ -116,7 +116,7 @@ A driver can write multiple blocks with the same GUID to the crash dump file, bu
 
 Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553110">KeRegisterBugCheckReasonCallback</a> to register a <i>BugCheckSecondaryDumpDataCallback</i> routine. A driver can subsequently remove the callback routine by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552003">KeDeregisterBugCheckReasonCallback</a> routine. If the driver can be unloaded, then it must remove any registered callback routines in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine.
 
-A <i>BugCheckSecondaryDumpDataCallback</i> is very restricted in the actions it can take. For more information, see Bug Check Callback Routine Restrictions in this topic.
+A <i>BugCheckSecondaryDumpDataCallback</i> is very restricted in the actions it can take. For more information, see "Bug Check Callback Routine Restrictions" in this topic.
 
 
 #### Callback Routine Examples
