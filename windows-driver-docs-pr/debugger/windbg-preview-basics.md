@@ -1,15 +1,12 @@
 ---
 title: WinDbg Preview Basics 
 description: This section describes the basic capabilities of WinDbg preview debugger.
-ms.date: 05/01/2019
+ms.date: 05/02/2019
 ms.localizationpriority: medium
 ---
 
 ![Small logo on windbg preview](images/windbgx-preview-logo.png) 
 
-# WinDbg Preview Basics 
-
-WinDbg Preview is a new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg supports low levels of kernel debugging not currently possible using Visual Studio.
 
 ## What's new with WinDbg Preview 
 
@@ -31,7 +28,7 @@ You can use the built in data model support in WinDbg Preview, see [WinDbg Previ
 
 ## Extending the data model
 
-WinDbg Preview has a scripting window to make developing JavaScript scripts easier, with error highlighting and IntelliSense.
+WinDbg Preview has a scripting window for developing JavaScript, with error highlighting and IntelliSense.
 
 For more information, see:
 
@@ -44,7 +41,7 @@ The debugger team GitHub site -  https://github.com/Microsoft/WinDbg-Samples whe
 
 ## Time Travel Debugging (TTD) Basics
 
-Time Travel Debugging, allows you to record an execution of your process running, then replay it later both forwards and backwards. Time Travel Debugging (TTD) can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug.
+Time Travel Debugging, allows you to record an execution of your process running, then replay it later both forwards and backwards. 
 
 For more information, see [Time Travel Debugging - Overview](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-overview).
 
@@ -54,47 +51,13 @@ To give time travel a try checkout the [Time Travel Debugging - Sample App Walkt
 
 ## TTD queries
 
-Using the data model to query time travel traces is a powerful tool to answer questions like these.
-- At what point in time in the trace did a specific code module load?
-- When were threads created/terminated in the trace?
-- What are the longest running threads in the trace?
-
-For more information, see [Introduction to Time Travel Debugging objects](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/time-travel-debugging-object-model).
+You can use the data model to query time travel traces.  For more information, see [Introduction to Time Travel Debugging objects](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/time-travel-debugging-object-model).
 
 For a tutorial on how to debug C++ code using TTD queries to find the problematic code, see:
 
  https://github.com/Microsoft/WinDbg-Samples/blob/master/TTDQueries/tutorial-instructions.md
 
 All of the code used in the lab is available here: https://github.com/Microsoft/WinDbg-Samples/tree/master/TTDQueries/app-sample
-
-
-
-## WinDbg Preview Quick Tips
-
-### Dark theme 
-
-Use **File** > **Settings** to enable the dark theme.
-
-![Screen shot showing dark theme](images/windbgx-dark-theme.png)
-
-### Highlighting
-
-The command window has two new highlighting features. Selecting any text will give a subtle highlight to any other instances of that text. You can then hit "Highlight/Un-highlight" or Ctrl+Alt+H to persist the highlighting. 
-
-![Screen shot showing columns highlighted in yellow](images/windbgx-highlighting.gif)
-
-### Ribbon Quick Access
-
-Just pin the buttons you use the most and you can collapse the ribbon to save screen real estate. 
- 
-![Screen shot showing a ribon with pinned items](images/windbgx-quick-access.png)
-
-
-### Disassembly Window Scrolling
-
-Highlights the current instruction and it remains where it is when you scroll.
-
-![Disassembly windows in Debugger](images/windbgx-disassembly.png)
 
 ## Videos
 
@@ -113,4 +76,3 @@ To install, see [WinDbg Preview – Installation](windbg-install-preview.md)
 To get connected to the environment that you want to debug see [WinDbg Preview – Start a user-mode session](windbg-user-mode-preview.md) and [WinDbg Preview – Start a kernel mode session](windbg-kernel-mode-preview.md).
 
 ![Main screen in debugger](images/windbgx-main-menu.png)
-
