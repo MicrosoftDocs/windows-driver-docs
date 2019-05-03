@@ -148,6 +148,8 @@
   - name: "Introductions to NDIS 6.0 and later"
     href: introductions-to-ndis-6-0-and-later.md
     items: 
+    - name: "Introduction to NDIS 6.83"
+      href: introduction-to-ndis-6-83.md
     - name: "Introduction to NDIS 6.82"
       href: introduction-to-ndis-6-82.md
     - name: "Introduction to NDIS 6.81"
@@ -285,6 +287,8 @@
   - name: "Porting NDIS Drivers to Newer NDIS Versions"
     href: porting-ndis-drivers-to-newer-ndis-versions.md
     items: 
+    - name: "Porting NDIS 6.x drivers to NDIS 6.83"
+      href: porting-ndis-6-x-drivers-to-ndis-6-83.md
     - name: "Porting NDIS 6.x drivers to NDIS 6.82"
       href: porting-ndis-6-x-drivers-to-ndis-6-82.md
     - name: "Porting NDIS 6.x drivers to NDIS 6.81"
