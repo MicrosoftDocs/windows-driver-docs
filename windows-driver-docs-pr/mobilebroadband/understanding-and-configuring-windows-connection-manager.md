@@ -32,7 +32,7 @@ This policy is configured using the **fMinimizeConnections** Group Policy. It is
 
 #### Versions of Windows before Windows 10, version 1809, build 17763.404
 
-Before Windows 10, version 1809, build 17763.404, this policy was a boolean value that can be modified using either Group Policy or the [WcmSetProperty](https://msdn.microsoft.com/library/windows/desktop/hh437602.aspx) API.
+In Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1809, build 17763.404, this policy is a boolean value that can be modified using either Group Policy or the [WcmSetProperty](https://msdn.microsoft.com/library/windows/desktop/hh437602.aspx) API.
 
 If this policy is disabled, the behavior is similar to that for Windows 7 in which each interface connects to the most preferred network in range, regardless of the connectivity state of other interfaces.
 
