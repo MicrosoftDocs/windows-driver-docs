@@ -61,8 +61,6 @@
   items: 
   - name: "WinDbg Preview - What's New"
     href: windbg-what-is-new-preview.md
-  - name: "WinDbg Preview - Basics"
-    href: windbg-preview-basics.md
   - name: "WinDbg Preview - Installation"
     href: windbg-install-preview.md
   - name: "WinDbg Preview - Command line startup options"
