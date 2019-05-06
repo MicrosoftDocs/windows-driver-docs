@@ -3,7 +3,7 @@ title: Bug Check 0xC9 DRIVER_VERIFIER_IOMANAGER_VIOLATION
 description: The DRIVER_VERIFIER_IOMANAGER_VIOLATION bug check has a value of 0x000000C9. This is the bug check code for all Driver Verifier I/O Verification violations.
 ms.assetid: dcafb0df-cbc1-44f4-8ec4-976df0842f0c
 keywords: ["Bug Check 0xC9 DRIVER_VERIFIER_IOMANAGER_VIOLATION", "DRIVER_VERIFIER_IOMANAGER_VIOLATION"]
-ms.date: 05/23/2017
+ms.date: 05/06/2019
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,12 @@ ms.localizationpriority: medium
 
 # Bug Check 0xC9: DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION
 
-
 The DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION bug check has a value of 0x000000C9. This is the bug check code for all Driver Verifier **I/O Verification** violations.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
-
 ## DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION Parameters
-
 
 When Driver Verifier is active and **I/O Verification** is selected, various I/O violations will cause this bug check to be issued. Parameter 1 identifies the type of violation.
 
