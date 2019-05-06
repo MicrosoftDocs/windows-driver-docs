@@ -30,7 +30,7 @@ As with [catalog files](catalog-files.md), the [**SignTool**](https://msdn.micro
 To test-sign the *toaster.sys* file, run the following command line:
 
 ```cpp
-Signtool sign /v /ac MSCV-VSClass3.cer /s MyPersonalStore /n contoso.com /t http://timestamp.verisign.com/scripts/timstamp.dll amd64\toaster.sys
+Signtool sign /v /fd sha256 /ac MSCV-VSClass3.cer /s MyPersonalStore /n contoso.com /t http://timestamp.verisign.com/scripts/timstamp.dll amd64\toaster.sys
 ```
 
 Where:
@@ -38,6 +38,8 @@ Where:
 -   The **sign** command configures SignTool to sign the specified kernel-mode binary file, *amd64\\toaster.sys*.
 
 -   The **/v** option enables verbose operations, in which SignTool displays successful execution and warning messages.
+
+-   The **/fd** option specifies the file digest algorithm to use for creating file signatures. The default is SHA1.
 
 -   The **/ac** option specifies the name of the file which contains the cross-certificate (*MSCV-VSClass3.cer*) obtained from the CA. Use the full path name if the cross-certificate is not in the current directory.
 
