@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 [Driver Verifier](driver-verifier.md) is available in all versions of Windows starting with Windows 2000. Each version introduces new features and checks for finding bugs in Windows drivers. This section summarizes the changes and provides links to related documentation.
 
-* [Driver Verifier in Windows 10](#driver-verifier-in-windows-10-updated-may-8-2018)
+* [Driver Verifier in Windows 10](#driver-verifier-in-windows10-updated-may-8-2018)
 * [Driver Verifier in Windows 8.1](#driver-verifier-in-windows-8-1-updated-june-17-2013)
 * [Driver Verifier in Windows 8](#driver-verifier-in-windows-8-updated-october-20-2012)
 * [Driver Verifier in Windows 7](#driver-verifier-in-windows-7-updated-october-22-2012)
@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 * You can still enable WDF verification as part of Driver Verifier's `/standard` flags. See [Driver Verifier Command Syntax](https://docs.microsoft.com/windows-hardware/drivers/devtest/verifier-command-line) for more information.
 * This change will impact you if you are enabling DV with syntax `/flags 0x209BB` as WDF verification will no longer be automatically enabled.
 
-Starting with Windows 10, driver verifier includes new driver validation rules for the following technologies:
+Starting with Windows 10, driver verifier includes new driver validation rules for the following technologies:
 
 * New [Rules for Audio Drivers](https://msdn.microsoft.com/library/windows/hardware/dn906757)
 * New [Rules for AVStream Drivers](https://msdn.microsoft.com/library/windows/hardware/dn906758)
