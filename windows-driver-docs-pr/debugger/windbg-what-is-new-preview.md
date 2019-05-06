@@ -12,11 +12,29 @@ ms.localizationpriority: medium
 
 This topic provides information on what's new in the WinDbg Preview debugger.
 
+## 1.0.1904.18001
+
+**Fix for SymSetDiaSession error** - We've had reports for a while of an error that prevents WinDbg Preview from being launched in some situations. There are a few external applications that attempt to inject a version of DbgHelp into our process before we load it. Some of them are using a version of DbgHelp with missing functionality, which causes this error when we attempt to use those features. We've added a fix for this and will be tracking if there are still scenarios in which it occurs.
+
+**Font control** - We've added settings for controlling font and font size. There are two different settings, one for text windows (mono-spaced windows like disassembly, source, command, etc.) and one for tool windows (locals, stack, etc.). There's still a few areas that aren't affected by these options that we'll be updating in the future.
+
+**Highlighting improvements** - Persistent highlighting of text in the command window will now also highlight text in the source and notes windows.
+
+**Source loading improvements** - We've changed how loading source files works. Previously when opening a source file, engine operations like running additional commands weren't possible or were unpredictable. We've changed where the loading occurs to enable better parallelism and more reliable cancellation of source opening operations.
+
+Other changes and bug fixes:
+* Added "Go to disassembly" to the context menu of the source window.
+* Added a checkbox to "Follow current instruction" in disassembly window.
+* Fixed a bug that caused the command window to perform slowly when outputting lots of text.
+* Changed page up and page down keys to perform similar to Visual Studio.
+* When an ASM file is opened in the source window it will now have basic comment, string, and directive highlighting
+
+
 ## 1.0.1812.12001
 
 This version includes these updates.
 
-**Debugger data model C++ header** - There is a new C++ header, DbgModel.h, included as part of the Windows SDK for extending the debugger data model via C++. You can find more information in [Debugger Data Model C++ Overview](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/data-model-cpp-overview). This release includes a new extension that adds some more "API style" features to the debugger data model that can be accessed through the 'dx' command, JavaScript, and the new DbgModel.h header. This extension extensions the data model to include knowledge about assembly and code execution through the [Debugger.Utility.Code](https://docs.microsoft.com/windows-hardware/drivers/debugger/dbgmodel-namespace-code) namespace, and the local file system through the [Debugger.Utility.FileSystem namespace](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/dbgmodel-namespace-file-system).
+**Debugger data model C++ header** - There is a new C++ header, DbgModel.h, included as part of the Windows SDK for extending the debugger data model via C++. You can find more information in [Debugger Data Model C++ Overview](https://docs.microsoft.com/windows-hardware/drivers/debugger/data-model-cpp-overview). This release includes a new extension that adds some more "API style" features to the debugger data model that can be accessed through the 'dx' command, JavaScript, and the new DbgModel.h header. This extension extensions the data model to include knowledge about assembly and code execution through the [Debugger.Utility.Code](https://docs.microsoft.com/windows-hardware/drivers/debugger/dbgmodel-namespace-code) namespace, and the local file system through the [Debugger.Utility.FileSystem namespace](https://docs.microsoft.com/windows-hardware/drivers/debugger/dbgmodel-namespace-file-system).
 
 **Synthetic types extension** With this new API extension, we have a new sample up on our GitHub repo here - https://github.com/Microsoft/WinDbg-Samples/tree/master/SyntheticTypes. This JavaScript extension reads basic C header files and defines synthetic type information for the structures and unions defined in the header. Through the dx command, memory can then be viewed structured as if you had a PDB with type information for those types.
 
