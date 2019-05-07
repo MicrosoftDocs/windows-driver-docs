@@ -26,7 +26,7 @@ In the installation INF, the driver can define multiple values in the following 
 - CopyToVmWhenNewerWow64
 
 The former sub-keys modify the system32 directory, while the latter sub-keys modify the syswow64 directory.
-__Newer__ is defined by comparing the file's [ChangeTime](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_basic_information).
+__Newer__ is defined by comparing the file's [ChangeTime](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_basic_information).
 Each value type under a subkey must be REG_MULTI_SZ or REG_SZ. 
 If the value type is REG_MULTI_SZ, there must be maximum 2 strings in the value. 
 This implies that each value defines a pair of stings, where the second string could be empty.
@@ -84,7 +84,7 @@ Adapter identities can be matched up by correlating the LUID between both enumer
 DXGI returns its LUID through [IDXGIAdapter::GetDesc](https://docs.microsoft.com/windows/desktop/api/dxgi/nf-dxgi-idxgiadapter-getdesc).
 
 ## DCHU Design Modifications
-Honor as many [universal driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/getting-started-with-universal-drivers) design principals as possible,
+Honor as many [universal driver](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers) design principals as possible,
 which may vary based on the exact device being supported.
 
 ## WDK Dependency
