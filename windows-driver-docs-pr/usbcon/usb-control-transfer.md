@@ -19,7 +19,7 @@ In this topic:
 -   [Prerequisites](#prerequisites)
 -   [Microsoft-defined methods for sending control transfer requests](#microsoft-defined-methods-for-sending-control-transfer-requests)
 -   [How to send a control transfer for vendor commands - KMDF](#how-to-send-a-control-transfer-for-vendor-commands---kmdf)
--   [How to send a control transfer for GET\_STATUS - UMDF](#how-to-send-a-control-transfer-for-get-status---umdf)
+-   [How to send a control transfer for GET\_STATUS - UMDF](#how-to-send-a-control-transfer-for-get_status---umdf)
 
 ## About the default endpoint
 

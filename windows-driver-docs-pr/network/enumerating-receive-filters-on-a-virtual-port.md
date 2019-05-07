@@ -16,11 +16,11 @@ After a virtual port (VPort) is created on the NIC switch of the network adapter
 
 -   Enumerate the parameters for receive filters on a VPort.
 
-    For more information, see [Enumerating Receive Filters](#enumerate).
+    For more information, see [Enumerating Receive Filters](#enumerating-receive-filters).
 
 -   Query the parameters for a specific receive filter.
 
-    For more information, see [Querying a Specific Receive Filter](#query).
+    For more information, see [Querying a Specific Receive Filter](#querying-a-specific-receive-filter).
 
 For more information on how to create a VPort, see [Creating a Virtual Port](creating-a-virtual-port.md).
 

@@ -19,11 +19,11 @@ The overlying driver downloads receive filters to the miniport driver by issuing
 
 -   An [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567181) structure that specifies the parameters for an NDIS receive filter.
 
-    For more information about how to initialize this structure, see [Specifying a Receive Filter](#specifying-receive-filter).
+    For more information about how to initialize this structure, see [Specifying a Receive Filter](#specifying-a-receive-filter).
 
 -   An array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567169) structures that specifies the filter test criterion for a field in a network packet header.
 
-    For more information about how to initialize these structures, see [Specifying Header Field Tests](#specifying-header-field-test).
+    For more information about how to initialize these structures, see [Specifying Header Field Tests](#specifying-header-field-tests).
 
 ## Specifying a Receive Filter
 
