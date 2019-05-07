@@ -178,7 +178,7 @@ On the blue screen, the following data will be displayed:
 
 - The name of the driver which caused the error.
 
-- The address in the driver's code where the error was detected (Parameter 2).
+- Typically, the address in the driver's code where the error was detected (Parameter 2).
 
 If a kernel-mode crash dump has been enabled, the following information will appear in the crash dump file:
 
@@ -186,7 +186,7 @@ If a kernel-mode crash dump has been enabled, the following information will app
 
 - The hexadecimal I/O error code. (See the table below for a list of the I/O error codes and their meanings.)
 
-- The address in the driver's code where the error was detected.
+- Typically, the address in the driver's code where the error was detected (Parameter 2).
 
 If a kernel debugger is attached to the system which has caused this violation, the following information will be sent to the debugger:
 
