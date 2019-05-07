@@ -15,7 +15,7 @@ For instructions about generating the UMDF template code, see [How to write your
 -   [Driver callback source code](#driver-callback-source-code)
 -   [Device callback source code](#device-callback-source-code)
 -   [Queue source code](#queue-source-code)
--   [Driver Entry source code](#driver-driver-entry-source-code)
+-   [Driver Entry source code](#driver-entry-source-code)
 
 Before discussing the details of the template code, let's look at some declarations in the header file (Internal.h) that are relevant to UMDF driver development.
 
