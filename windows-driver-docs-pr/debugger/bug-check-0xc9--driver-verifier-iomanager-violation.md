@@ -3,7 +3,7 @@ title: Bug Check 0xC9 DRIVER_VERIFIER_IOMANAGER_VIOLATION
 description: The DRIVER_VERIFIER_IOMANAGER_VIOLATION bug check has a value of 0x000000C9. This is the bug check code for all Driver Verifier I/O Verification violations.
 ms.assetid: dcafb0df-cbc1-44f4-8ec4-976df0842f0c
 keywords: ["Bug Check 0xC9 DRIVER_VERIFIER_IOMANAGER_VIOLATION", "DRIVER_VERIFIER_IOMANAGER_VIOLATION"]
-ms.date: 05/06/2019
+ms.date: 05/07/2019
 topic_type:
 - apiref
 api_name:
@@ -172,43 +172,33 @@ These errors cause messages to be displayed on the blue screen, in a crash dump 
 
 On the blue screen, the following data will be displayed:
 
--   The message **IO SYSTEM VERIFICATION ERROR**.
+- The message **IO SYSTEM VERIFICATION ERROR**.
 
--   The message **WDM DRIVER ERROR** *XXX*, where *XXX* is a hexadecimal code representing the specific error. (See the table below for a list of the I/O error codes and their meanings.)
+- The message **WDM DRIVER ERROR** *XXX*, where *XXX* is a hexadecimal code representing the specific error. (See the table below for a list of the I/O error codes and their meanings.)
 
--   The name of the driver which caused the error.
+- The name of the driver which caused the error.
 
--   The address in the driver's code where the error was detected (Parameter 2).
-
--   A pointer to the IRP (Parameter 3).
-
--   A pointer to the device object (Parameter 4).
+- The address in the driver's code where the error was detected (Parameter 2).
 
 If a kernel-mode crash dump has been enabled, the following information will appear in the crash dump file:
 
--   The message **BugCheck 0xC9 (DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION)**.
+- The message **BugCheck 0xC9 (DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION)**.
 
--   The hexadecimal I/O error code. (See the table below for a list of the I/O error codes and their meanings.)
+- The hexadecimal I/O error code. (See the table below for a list of the I/O error codes and their meanings.)
 
--   The address in the driver's code where the error was detected.
-
--   A pointer to the IRP.
-
--   A pointer to the device object.
+- The address in the driver's code where the error was detected.
 
 If a kernel debugger is attached to the system which has caused this violation, the following information will be sent to the debugger:
 
--   The message **WDM DRIVER ERROR**, along with an assessment of the severity of the error.
+- The message **WDM DRIVER ERROR**, along with an assessment of the severity of the error.
 
--   The name of the driver which caused the error.
+- The name of the driver which caused the error.
 
--   A descriptive string which explains the cause of this error. Often additional information is passed along, such as a pointer to the IRP. (See the table below for a list of these descriptive strings and what additional information is specified.)
+- A descriptive string which explains the cause of this error. Often additional information is passed along, such as a pointer to the IRP or a pointer to the device object or IRQL information. (See the table below for a list of these descriptive strings and what additional information is specified.)
 
--   A query for further action. Possible responses are **b** (break), **i** (ignore), **z** (zap), **r** (remove), or **d** (disable). Instructing the operating system to continue allows you to see what would happen "down the line" if this error had not occurred. Of course, this often will lead to additional bug checks. The "zap" option will actually remove the breakpoint that caused this error to be discovered.
+- A query for further action. Possible responses are **b** (break), **i** (ignore), **z** (zap), **r** (remove), or **d** (disable). Instructing the operating system to continue allows you to see what would happen "down the line" if this error had not occurred. Of course, this often will lead to additional bug checks. The "zap" option will actually remove the breakpoint that caused this error to be discovered.
 
 **Note**   No other bug checks can be ignored in this manner. Only this kind of **I/O Verification** errors can be ignored, and even these errors can only be ignored if a kernel debugger is attached.
-
- 
 
 The following table lists those **I/O Verification** errors that can appear.
 
@@ -456,7 +446,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="even">
 <td align="left"><p>0x21D</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>An IRP dispatch handler has not properly detached from the stack below it upon receiving a remove IRP. (Device object, dispatch routine, and IRP specified.)</p>
+<td align="left"><p>An IRP dispatch handler has not properly detached from the stack below it upon receiving a remove IRP. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 <p>Param 4 - Device object address.</p>
@@ -465,7 +455,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x21E</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>An IRP dispatch handler has not properly deleted its device object upon receiving a remove IRP. (Device object, dispatch routine, and IRP specified.)</p>
+<td align="left"><p>An IRP dispatch handler has not properly deleted its device object upon receiving a remove IRP. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 <p>Param 4 - Device object address.</p>
@@ -482,7 +472,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x220</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>IRP_MJ_SYSTEM_CONTROL has been completed by someone other than the ProviderId. This IRP should either have been completed earlier or should have been passed down. (IRP specified, along with the device object where it was targeted.)</p>
+<td align="left"><p>IRP_MJ_SYSTEM_CONTROL has been completed by someone other than the ProviderId. This IRP should either have been completed earlier or should have been passed down. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 <p>Param 4 - ProviderId.</p>
@@ -491,7 +481,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="even">
 <td align="left"><p>0x221</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>An IRP dispatch handler for a PDO has deleted its device object, but the hardware has not been reported as missing in a bus relations query. (Device object, dispatch routine, and IRP specified.)</p>
+<td align="left"><p>An IRP dispatch handler for a PDO has deleted its device object, but the hardware has not been reported as missing in a bus relations query. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 <p>Param 4 - Device object address.</p>
@@ -500,7 +490,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x222</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A Bus Filter's IRP dispatch handler has detached upon receiving a remove IRP when the PDO is still alive. Bus Filters must clean up in <strong>FastIoDetach</strong> callbacks. (Device object, dispatch routine, and IRP specified.)</p>
+<td align="left"><p>A Bus Filter's IRP dispatch handler has detached upon receiving a remove IRP when the PDO is still alive. Bus Filters must clean up in <strong>FastIoDetach</strong> callbacks. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 <p>Param 4 - Device object address.</p>
@@ -509,7 +499,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="even">
 <td align="left"><p>0x223</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>An IRP dispatch handler for a bus filter has deleted its device object, but the PDO is still present. Bus filters must clean up in <strong>FastIoDetach</strong> callbacks. (Device object, dispatch routine, and IRP specified.)</p>
+<td align="left"><p>An IRP dispatch handler for a bus filter has deleted its device object, but the PDO is still present. Bus filters must clean up in <strong>FastIoDetach</strong> callbacks. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 <p>Param 4 - Device object address.</p>
@@ -518,7 +508,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x224</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>An IRP dispatch handler has returned a status that is inconsistent with the IRP's <strong>IoStatus.Status</strong> field. (Dispatch handler routine, IRP, IRP's IoStatus.Status, and returned Status specified.)</p>
+<td align="left"><p>An IRP dispatch handler has returned a status that is inconsistent with the IRP's <strong>IoStatus.Status</strong> field. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 <p>Param 4 - Expected status code.</p>
@@ -544,7 +534,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="even">
 <td align="left"><p>0x227</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>An IRP completion routine is in pageable code. (This is never permitted.) (Routine and IRP specified.)</p>
+<td align="left"><p>An IRP completion routine is in pageable code. (This is never permitted.)</p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 </td>
@@ -552,7 +542,7 @@ The following table lists those **I/O Verification** errors that can appear.
 <tr class="odd">
 <td align="left"><p>0x228</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>A driver's completion routine has not marked the IRP pending if the <strong>PendingReturned</strong> field was set in the IRP passed to it. This may cause Windows to hang, especially if an error is returned by the stack. (Routine and IRP specified.)</p>
+<td align="left"><p>A driver's completion routine has not marked the IRP pending if the <strong>PendingReturned</strong> field was set in the IRP passed to it. This may cause Windows to hang, especially if an error is returned by the stack. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 </td>
@@ -712,7 +702,7 @@ The following table lists those **I/O Verification** errors that can appear.
 </tbody>
 </table>
 
-The following table lists additional **I/O Verification** errors that can appear. Some of these errors will only be revealed if **Enhanced I/O Verification** is activated. In Windows Vista and later, the **Enhanced I/O Verification** settings are included as part of **I/O Verification**.
+The following table lists additional **I/O Verification** errors that can appear. These errors appear when **Enhanced I/O Verification** is activated. For more information, see [Enhanced I/O Verification](https://docs.microsoft.com/windows-hardware/drivers/devtest/enhanced-i-o-verification).
 
 <table>
 <colgroup>
@@ -757,7 +747,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="even">
 <td align="left"><p>0x23F</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A driver has not inherited the DO_POWER_PAGABLE bit from the stack it has attached to. (Device object specified.)</p>
+<td align="left"><p>A driver has not inherited the DO_POWER_PAGABLE bit from the stack it has attached to. </p>
 <p>Param 2 - Reserved.</p>
 <p>Param 3 - Reserved.</p>
 </td>
@@ -774,7 +764,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="even">
 <td align="left"><p>0x241</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A driver has detached its device object during a surprise remove IRP. (IRP and device object specified.)</p>
+<td align="left"><p>A driver has detached its device object during a surprise remove IRP. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 <p>Param 4 - Device object address.</p>
@@ -783,7 +773,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="odd">
 <td align="left"><p>0x242</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A driver has deleted its device object during a surprise remove IRP. (IRP and device object specified.)</p>
+<td align="left"><p>A driver has deleted its device object during a surprise remove IRP. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 <p>Param 4 - Device object address.</p>
@@ -792,7 +782,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="even">
 <td align="left"><p>0x243</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A driver has failed to clear the DO_DEVICE_INITIALIZING flag at the end of <strong>AddDevice</strong>. (Device object specified.)</p>
+<td align="left"><p>A driver has failed to clear the DO_DEVICE_INITIALIZING flag at the end of <strong>AddDevice</strong>.</p>
 <p>Param 2 - Reserved.</p>
 <p>Param 3 - Reserved.</p>
 <p>Param 4 - </p>
@@ -801,7 +791,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="odd">
 <td align="left"><p>0x244</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A driver has not copied either the DO_BUFFERED_IO or the DO_DIRECT_IO flag from the device object it is attaching to. (Device object specified.)</p>
+<td align="left"><p>A driver has not copied either the DO_BUFFERED_IO or the DO_DIRECT_IO flag from the device object it is attaching to. </p>
 <p>Param 2 - Reserved.</p>
 <p>Param 3 - Reserved.</p>
 </td>
@@ -809,7 +799,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="even">
 <td align="left"><p>0x245</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A driver has set both the DO_BUFFERED_IO and the DO_DIRECT_IO flags. These flags are mutually exclusive. (Device object specified.)</p>
+<td align="left"><p>A driver has set both the DO_BUFFERED_IO and the DO_DIRECT_IO flags. These flags are mutually exclusive. </p>
 <p>Param 2 - Reserved.</p>
 <p>Param 3 - Reserved.</p>
 </td>
@@ -817,7 +807,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="odd">
 <td align="left"><p>0x246</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A driver has failed to copy the <strong>DeviceType</strong> field from the device object it is attaching to. (Device object specified.)</p>
+<td align="left"><p>A driver has failed to copy the <strong>DeviceType</strong> field from the device object it is attaching to. </p>
 <p>Param 2 - Reserved.</p>
 <p>Param 3 - Reserved.</p>
 </td>
@@ -833,7 +823,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="odd">
 <td align="left"><p>0x248</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A driver has added a device object that is not a PDO to a device relations query. (IRP and device object specified.)</p>
+<td align="left"><p>A driver has added a device object that is not a PDO to a device relations query. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 <p>Param 4 - Device object address.</p>
@@ -842,7 +832,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="even">
 <td align="left"><p>0x249</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>A driver has enumerated two child PDOs that returned identical Device IDs. (Both device objects specified.)</p>
+<td align="left"><p>A driver has enumerated two child PDOs that returned identical Device IDs. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - First device object address.</p>
 <p>Param 4 - Second device object address.</p>
@@ -860,7 +850,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="even">
 <td align="left"><p>0x24B</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A driver has completed an IRP_MN_QUERY_DEVICE_RELATIONS request of type <strong>TargetDeviceRelation</strong> as successful, but did not properly fill out the request or forward the IRP to the underlying hardware stack. (Device object specified.)</p>
+<td align="left"><p>A driver has completed an IRP_MN_QUERY_DEVICE_RELATIONS request of type <strong>TargetDeviceRelation</strong> as successful, but did not properly fill out the request or forward the IRP to the underlying hardware stack.</p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - Device object address.</p>
 </td>
@@ -877,7 +867,7 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="even">
 <td align="left"><p>0x24D</p></td>
 <td align="left"><p>Fatal error</p></td>
-<td align="left"><p>A driver has passed an invalid device object to a function that requires a PDO. (Device object specified.)</p>
+<td align="left"><p>A driver has passed an invalid device object to a function that requires a PDO.</p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
 <p>Param 4 - Device object address.</p>
@@ -895,20 +885,20 @@ The following table lists additional **I/O Verification** errors that can appear
 <tr class="even">
 <td align="left"><p>0x301</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>A driver has forwarded an IRP at IRQL &gt; DISPATCH_LEVEL. (IRQL value specified)</p>
+<td align="left"><p>A driver has forwarded an IRP at IRQL > DISPATCH_LEVEL. </p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
-<p>Param 4 - </p>
+<p>Param 4 - Incorrect IRQL value</p>
 </td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x302</p></td>
 <td align="left"><p>Non-fatal error</p></td>
-<td align="left"><p>A driver has forwarded an IRP at IRQL &gt;= APC_LEVEL.</p>
-<p>The I/O Manager will need to queue an APC to complete this request. The APC will not be able to run because the caller is already at APC level, so the caller is likely to deadlock. (IRQL value specified)</p>
+<td align="left"><p>A driver has forwarded an IRP at IRQL > = APC_LEVEL.</p>
+<p>The I/O Manager will need to queue an APC to complete this request. The APC will not be able to run because the caller is already at APC level, so the caller is likely to deadlock.</p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
-<p>Param 4 - </p>
+<p>Param 4 - Incorrect IRQL value.</p>
 </td>
 </tr>
 <tr class="even">
@@ -917,7 +907,6 @@ The following table lists additional **I/O Verification** errors that can appear
 <td align="left"><p>The driver is completing an IRP_MJ_PNP (major) and IRP_MN_REMOVE_DEVICE (minor) request with a failure status code.</p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
-<p>Param 4 - </p>
 </td>
 </tr>
 <tr class="odd">
@@ -926,7 +915,6 @@ The following table lists additional **I/O Verification** errors that can appear
 <td align="left"><p>The driver issued an I/O request with an event that was already signaled and received a STATUS_PENDING response. This can result in unwinding before the I/O is complete.</p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
-<p>Param 4 - </p>
 </td>
 </tr>
 <tr class="even">
@@ -935,7 +923,6 @@ The following table lists additional **I/O Verification** errors that can appear
 <td align="left"><p>The driver is reinitializing an IRP that is still in use.</p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
-<p>Param 4 - </p>
 </td>
 </tr>
 <tr class="odd">
@@ -944,7 +931,6 @@ The following table lists additional **I/O Verification** errors that can appear
 <td align="left"><p>The driver is reinitializing an IRP that was created with IoMakeAssociatedIrp, IoBuildAsynchronousFsdRequest, IoBuildSynchronousFsdRequest, IoBuildDeviceIoControlRequest.</p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
-<p>Param 4 - </p>
 </td>
 </tr>
 <tr class="even">
@@ -953,7 +939,6 @@ The following table lists additional **I/O Verification** errors that can appear
 <td align="left"><p>The caller provided the IRP Status Information field with a value that is greater than the output section of the system buffer.</p>
 <p>Param 2 - The address in the driver's code where the error was detected.</p>
 <p>Param 3 - IRP address.</p>
-<p>Param 4 - </p>
 </td>
 </tr>
 </tbody>
