@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 This topic describes how NDIS and overlying drivers determine the single root I/O virtualization (SR-IOV) capabilities of a network adapter. This topic contains the following information:
 
-[Reporting SR-IOV Capabilities during *MiniportInitializeEx*](#report)
+[Reporting SR-IOV Capabilities during *MiniportInitializeEx*](#reporting-sr-iov-capabilities-during-miniportinitializeex)
 
-[Querying SR-IOV Capabilities by Overlying Drivers](#query)
+[Querying SR-IOV Capabilities by Overlying Drivers](#querying-sr-iov-capabilities-by-overlying-drivers)
 
 ## Reporting SR-IOV Capabilities during *MiniportInitializeEx*
 

@@ -12,10 +12,10 @@ In this topic you'll learn about the source code for a UMDF-based USB client dri
 
 For instructions about generating the UMDF template code, see [How to write your first USB client driver (UMDF)](implement-driver-entry-for-a-usb-driver--umdf-.md). The template code is discussed in these sections:
 
--   [Driver callback source code](#driver)
--   [Device callback source code](#device)
--   [Queue source code](#queue)
--   [Driver Entry source code](#driver-entry)
+-   [Driver callback source code](#driver-callback-source-code)
+-   [Device callback source code](#device-callback-source-code)
+-   [Queue source code](#queue-source-code)
+-   [Driver Entry source code](#driver-driver-entry-source-code)
 
 Before discussing the details of the template code, let's look at some declarations in the header file (Internal.h) that are relevant to UMDF driver development.
 
@@ -172,7 +172,7 @@ OBJECT_ENTRY_AUTO(CLSID_Driver, CMyDriver)
 
 The driver callback must be a COM class, meaning it must implement [**IUnknown**](https://msdn.microsoft.com/library/windows/desktop/ms680509) and the related methods. In the template code, ATL classes CComObjectRootEx and CComCoClass contain the **IUnknown** methods.
 
-After Windows instantiates the host process, the framework creates the driver object. To do so, the framework creates an instance of the driver callback class and calls drivers implementation of [**DllGetClassObject**](https://msdn.microsoft.com/library/windows/desktop/ms680760) (discussed in the [Driver entry source code](#driver-entry) section) and to obtain the client driver’s [**IDriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff554885) interface pointer. That call registers the driver callback object with the framework driver object. Upon successful registration, the framework invokes the client driver's implementation when certain driver-specific events occur. The first method that the framework invokes is the [**IDriverEntry::OnInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff554885_oninitialize) method. In the client driver's implementation of **IDriverEntry::OnInitialize**, the client driver can allocate global driver resources. Those resources must be released in [**IDriverEntry::OnDeinitialize**](https://msdn.microsoft.com/library/windows/hardware/ff554885_ondeinitialize) that is invoked by the framework just before it is preparing to unload the client driver. The template code provides minimal implementation for the **OnInitialize** and **OnDeinitialize** methods.
+After Windows instantiates the host process, the framework creates the driver object. To do so, the framework creates an instance of the driver callback class and calls drivers implementation of [**DllGetClassObject**](https://msdn.microsoft.com/library/windows/desktop/ms680760) (discussed in the [Driver entry source code](#driver-entry-source-code) section) and to obtain the client driver’s [**IDriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff554885) interface pointer. That call registers the driver callback object with the framework driver object. Upon successful registration, the framework invokes the client driver's implementation when certain driver-specific events occur. The first method that the framework invokes is the [**IDriverEntry::OnInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff554885_oninitialize) method. In the client driver's implementation of **IDriverEntry::OnInitialize**, the client driver can allocate global driver resources. Those resources must be released in [**IDriverEntry::OnDeinitialize**](https://msdn.microsoft.com/library/windows/hardware/ff554885_ondeinitialize) that is invoked by the framework just before it is preparing to unload the client driver. The template code provides minimal implementation for the **OnInitialize** and **OnDeinitialize** methods.
 
 The most important method of [**IDriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff554885) is [**IDriverEntry::OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554885_ondeviceadd). Before the framework creates the framework device object (discussed in the next section), it calls the driver's **IDriverEntry::OnDeviceAdd** implementation. When calling the method, the framework passes an [**IWDFDriver**](https://msdn.microsoft.com/library/windows/hardware/ff558893) pointer to the driver object and an [**IWDFDeviceInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff556965) pointer. The client driver can call **IWDFDeviceInitialize** methods to specify certain configuration options.
 

@@ -104,7 +104,7 @@ Use the following steps to create a service metadata package on the Windows Dev 
 
 -   [2-Create the service metadata package](#2-create-the-service-metadata-package)
 
--   [3-Insert the store manifest file into the Microsoft Store device app](#3-insert-the-store-manifest-file-into-the-uwp-device-app)
+-   [3-Insert the store manifest file into the Microsoft Store device app](#3-insert-the-store-manifest-file-into-the-microsoft-store-device-app)
 
 -   [4-Test the service metadata package](#4-test-the-service-metadata-package)
 

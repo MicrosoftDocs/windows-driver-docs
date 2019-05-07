@@ -10,12 +10,12 @@ ms.localizationpriority: medium
 
 Here are the new features and improvements for Universal Serial Bus (USB) in Windows 8.1.
 
--   [Windows Runtime USB API for developing UWP apps](#usb-sdk)
--   [Microsoft OS 2.0 descriptors for improved device enumeration](#microsoft-os-2-0-descriptors-for-improved-device-enumeration)
--   [Isochronous support for WinUSB](#usb-wdk)
+-   [Windows Runtime USB API for developing UWP apps](#windows-runtime-usb-api-for-developing-uwp-apps)
+-   [Microsoft OS 2.0 descriptors for improved device enumeration](microsoft-os-20-descriptors-for-improved-device-enumerations)
+-   [Isochronous support for WinUSB](#isochronous-support-for-winusb)
 -   [USB driver stack improvements](#usb-driver-stack-improvements)
 -   [USB tests in the Hardware Certification Kit (HCK)](#usb-tests-in-the-hardware-certification-kit-hck)
--   [Improved USB diagnostic tools and debugger extensions](#improved-usb-diagnostic-tools-and-debugger-extensions-)
+-   [Improved USB diagnostic tools and debugger extensions](#improved-usb-diagnostic-tools-and-debugger-extensions)
 -   [Related topics](#related-topics)
 
 ## Windows Runtime USB API for developing UWP apps

@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 This topic describes how NDIS and overlying drivers determine the NIC switch capabilities of a network adapter that supports single root I/O virtualization (SR-IOV). This topic contains the following information:
 
-[Reporting NIC Switch Capabilities during *MiniportInitializeEx*](#report)
+[Reporting NIC Switch Capabilities during *MiniportInitializeEx*](#reporting-nic-switch-capabilities-during-miniportinitializeex)
 
-[Querying NIC Switch Capabilities by Overlying Drivers](#query)
+[Querying NIC Switch Capabilities by Overlying Drivers](#querying-nic-switch-capabilities-by-overlying-drivers)
 
 **Note**  Only the miniport driver for the PCI Express (PCIe) Physical Function (PF) of an SR-IOV network adapter can report NIC switch capabilities. Miniport drivers for PCIe Virtual Functions (VFs) must not report the NIC switch capabilities of the SR-IOV adapter.
 
