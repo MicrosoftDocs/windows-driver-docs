@@ -19,7 +19,7 @@ This section includes the following topics:
 
 [Driver Packages](driver-packages.md)
 
-[INF Files](inf-files.md)
+[INF Files](overview-of-inf-files.md)
 
 [Driver Signing](driver-signing.md)
 
