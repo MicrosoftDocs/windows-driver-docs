@@ -1,6 +1,36 @@
 {
   "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-objects.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/introduction-to-framework-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-general-object-macros.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/wdf-declare-context-type",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/synchronization-techniques-for-wdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/using-automatic-synchronization",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-support-objects.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/using-memory-buffers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/using-the-registry-in-wdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/introduction-to-registry-keys-for-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/security-issues-for-kmdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/dashboard/administration.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
       "redirect_document_id": true
