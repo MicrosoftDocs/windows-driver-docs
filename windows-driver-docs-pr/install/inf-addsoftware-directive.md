@@ -57,7 +57,9 @@ SoftwareType=type-code
 [SoftwareID=pfn://x.y.z]
 ```
 
-The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but arguments and flags are optional. If **SoftwareType** is set to 2, **SoftwareID** is required, and flags are optional.
+The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but arguments and flags are optional. 
+
+If **SoftwareType** is set to 2, **SoftwareID** is required, and flags are optional. If **SoftwareType** is set to 2, **SoftwareBinary** and **SoftwareVersion** are not used.
 
 Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.
 
@@ -95,6 +97,8 @@ Specifies the path to the executable.  The system generates command lines like t
 
 If you use this entry, you must add the executable to the DriverStore by specifying the [INF CopyFiles Directive](inf-copyfiles-directive.md) with  a **DestinationDirs** value of 13.
 
+If **SoftwareType** is set to 1, **SoftwareBinary** is required.  If **SoftwareType** is set to 2, **SoftwareBinary** is unused.
+
 **SoftwareArguments**=*argument1[, argument2[, … argumentN]]*
 
 Specifies extension-specific arguments to append to the command line.  You can specify command line arguments that the system simply passes through into the generated command line.  You can also specify special strings called *runtime context variables*.  When you specify a runtime context variable, the system converts it into a device-specific value before appending it to the generated command line.  You can mix and match literal string arguments with runtime context variables.  Supported runtime context variables are:
@@ -130,13 +134,19 @@ The above results in:
 
 `<DriverStorePath>\ContosoControlPanel.exe arg1 PCI\VEN_0000&DEV_0001&SUBSYS_00000000&REV_00\0123 arg2`
 
+If **SoftwareType** is set to either 1 or 2, **SoftwareArguments** is optional. 
+
 **SoftwareVersion**=*w.x.y.z*
 
 Specifies the software version.  Each value should not exceed 65535.  When the system encounters a duplicate **SoftwareName**, it checks the **SoftwareVersion** against the previous **SoftwareVersion**.  If it is greater, Windows runs the software.
 
+If **SoftwareType** is set to 1, **SoftwareVersion** is required.  If **SoftwareType** is set to 2, **SoftwareVersion** is unused.
+
 **SoftwareID**=*x.y.z*
 
 Specifies a Microsoft Store identifier and identifier type.  Currently, only Package Family Name (PFN) is supported.  Use a PFN to reference a Universal Windows Platform (UWP) app using the form `pfn://<x.y.z>`.
+
+If **SoftwareType** is set to 1, **SoftwareID** is unused.  If **SoftwareType** is set to 2, **SoftwareID** is required.
 
 <!--add link to related page in UWP docs once it is available-->
 
