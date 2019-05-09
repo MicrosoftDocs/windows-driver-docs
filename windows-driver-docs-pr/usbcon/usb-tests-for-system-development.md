@@ -143,7 +143,7 @@ System 2
 
 System 3 (if dock supported)
 
--   Run the tests listed for the [system integration stage](#stage2) on the docked system.
+-   Run the tests listed for the [system integration stage](#stage-2system-integration) on the docked system.
 
 <table>
 <colgroup>
@@ -159,7 +159,7 @@ System 3 (if dock supported)
 <tbody>
 <tr class="odd">
 <td><p>System 1</p>
-<p>See <a href="#stage1" data-raw-source="[system bring-up topology](#stage1)">system bring-up topology</a>.</p>
+<p>See <a href="#stage-1system-bring-up" data-raw-source="[system bring-up topology](#stage-1system-bring-up)">system bring-up topology</a>.</p>
 <p><strong>Device driver:  </strong>The SuperMUTT device must have Usbtcd.sys as the device driver. Run this command:</p>
 <p><code>muttutil -updatedriver usbtcd.inf</code></p>
 <p>System 2</p>
@@ -174,7 +174,7 @@ System 3 (if dock supported)
 </ol>
 <img src="images/xhci-superspeedhub-hub-daisy.png" alt="System tuning topology" />
 <p>System 3 (if dock supported)</p>
-<p>See <a href="#stage2" data-raw-source="[system integration stage](#stage2)">system integration stage</a>.</p></td>
+<p>See <a href="#stage-2system-integration" data-raw-source="[system integration stage](#stage-2system-integration)">system integration stage</a>.</p></td>
 <td><p>System 1</p>
 <ol>
 <li>On the <strong>Selection</strong> tab, click <strong>Device manager</strong>.</li>
@@ -204,7 +204,7 @@ System 3 (if dock supported)
 </ol>
 <p>System 3</p>
 <ul>
-<li><p>Same as <a href="#stage2" data-raw-source="[system integration topology](#stage2)">system integration topology</a>.</p></li>
+<li><p>Same as <a href="#stage-2system-integration" data-raw-source="[system integration topology](#stage-2system-integration)">system integration topology</a>.</p></li>
 </ul></td>
 </tr>
 </tbody>
