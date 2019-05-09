@@ -162,7 +162,7 @@ This CID is the same as defined on [MB Multi-SIM operations](mb-multi-sim-operat
 
 If the device supports both new data classes, then both bits shall be set.
 
-### MBIM_DATA_CLASS
+## MBIM_DATA_CLASS
 
 | Types | Mask |
 | --- | --- |

@@ -394,7 +394,7 @@ Here is the summary of the sequence in which the client driver creates a UDECXUS
      However, requests for the interface, class-specific, or vendor-defined descriptor, the UDE class extension forwards them to the client driver. The driver must handle those GET\_DESCRIPTOR requests.
 
 6. Call [**UdecxUsbDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/mt595959) to create the UDE device object and retrieve the UDECXUSBDEVICE handle.
-7. Create static endpoints by calling [**UdecxUsbEndpointCreate**](https://msdn.microsoft.com/library/windows/hardware/mt627983). See [Create static endpoints](#static).
+7. Create static endpoints by calling [**UdecxUsbEndpointCreate**](https://msdn.microsoft.com/library/windows/hardware/mt627983). See [Create simple endpoints](#create-simple-endpoints).
 8. Call [**UdecxUsbDevicePlugIn**](https://msdn.microsoft.com/library/windows/hardware/mt627975) to indicate to the UDE class extension that the device is attached and can receive I/O requests on endpoints. After this call, the class extension can also invoke callback functions on endpoints and the USB device.
     **Note**  If the USB device needs to be removed at runtime, the client driver can call [**UdecxUsbDevicePlugOutAndDelete**](https://msdn.microsoft.com/library/windows/hardware/mt627977). If the driver wants to use the device, it must create it by calling [**UdecxUsbDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/mt595959).
 
