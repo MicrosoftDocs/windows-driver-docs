@@ -1,13 +1,17 @@
 - name: "3D printer driver design guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "3D printer driver design guide"
+    href: index.md
   - name: "3D print partner onboarding guide"
     href: 3d-partner-onboarding-guide.md
   - name: "Microsoft Standard Driver for 3D Printers"
     href: microsoft-standard-driver-for-3d-printers-.md
   - name: "MS3DPrint Standard G-Code driver"
-    href: ms3dprint-standard-g-code-driver.md
+# Auto-expanded node
     items: 
+    - name: "MS3DPrint Standard G-Code driver"
+      href: ms3dprint-standard-g-code-driver.md
     - name: "Driver installation"
       href: driver-installation.md
     - name: "Configuring the device"
@@ -19,8 +23,10 @@
   - name: "3D printer custom USB interface support"
     href: 3d-printer-custom-usb-interface.md
   - name: "3D printing sample WSD app"
-    href: 3d-printing-sample-wsd-app.md
+# Auto-expanded node
     items: 
+    - name: "3D printing sample WSD app"
+      href: 3d-printing-sample-wsd-app.md
     - name: "Install the driver and sample app"
       href: install-the-driver-and-sample-app.md
     - name: "Print files to the WSD sample"
@@ -30,8 +36,10 @@
   - name: "Enable WSPrint 2.0 on a device"
     href: enabling-wsprint-on-a-device.md
   - name: "Print Schema keywords for 3D manufacturing"
-    href: print-schema-keywords-for-3d-manufacturing.md
+# Auto-expanded node
     items: 
+    - name: "Print Schema keywords for 3D manufacturing"
+      href: print-schema-keywords-for-3d-manufacturing.md
     - name: "3D manufacturing keywords overview"
       href: 3d-manufacturing-keywords-overview.md
     - name: "Device control keywords"

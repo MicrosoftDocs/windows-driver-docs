@@ -1,11 +1,15 @@
 - name: "Bluetooth Design Guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "Bluetooth Design Guide"
+    href: index.md
   - name: "Bluetooth Universal Windows driver model for Windows 10"
     href: universal-bluetooth-driver-model-for-windows-10.md
   - name: "Bluetooth Profile Drivers Overview"
-    href: bluetooth-profile-drivers-overview.md
+# Auto-expanded node
     items: 
+    - name: "Bluetooth Profile Drivers Overview"
+      href: bluetooth-profile-drivers-overview.md
     - name: "Bluetooth Driver Stack"
       href: bluetooth-driver-stack.md
     - name: "Installing a Bluetooth Device"
@@ -15,8 +19,10 @@
   - name: "Bluetooth Low Energy Overview"
     href: bluetooth-low-energy-overview.md
   - name: "Using the Bluetooth Driver Stack"
-    href: using-the-bluetooth-driver-stack.md
+# Auto-expanded node
     items: 
+    - name: "Using the Bluetooth Driver Stack"
+      href: using-the-bluetooth-driver-stack.md
     - name: "Bluetooth IOCTLs"
       href: bluetooth-ioctls2.md
     - name: "Querying for Bluetooth Interfaces"
@@ -32,8 +38,10 @@
     - name: "Accepting L2CAP Connections in a Bluetooth Profile Driver"
       href: accepting-l2cap-connections-in-a-bluetooth-profile-driver.md
     - name: "Communicating with SDP Servers"
-      href: communicating-with-sdp-servers.md
+# Auto-expanded node
       items: 
+      - name: "Communicating with SDP Servers"
+        href: communicating-with-sdp-servers.md
       - name: "Accessing SDP Service Information"
         href: accessing-sdp-service-information.md
       - name: "Converting SDP Records to a Tree Structure"
@@ -47,8 +55,10 @@
   - name: "Microsoft-defined Bluetooth HCI commands and events"
     href: microsoft-defined-bluetooth-hci-commands-and-events.md
   - name: "Bluetooth FAQ"
-    href: bluetooth-faq.md
+# Auto-expanded node
     items: 
+    - name: "Bluetooth FAQ"
+      href: bluetooth-faq.md
     - name: "Bluetooth Version and Profile Support in Windows 10"
       href: general-bluetooth-support-in-windows.md
     - name: "Bluetooth Version and Profile Support in Previous Windows Versions"
@@ -68,8 +78,10 @@
     - name: "Bluetooth Appendix"
       href: bluetooth-faq--appendix-c.md
   - name: "Transport Bus Driver for Bluetooth Power Control Handling Guidelines"
-    href: transport-bus-driver-for-bluetooth-power-control-handling-guidelines.md
+# Auto-expanded node
     items: 
+    - name: "Transport Bus Driver for Bluetooth Power Control Handling Guidelines"
+      href: transport-bus-driver-for-bluetooth-power-control-handling-guidelines.md
     - name: "Transport Bus Driver for Bluetooth"
       href: transport-bus-driver-for-bluetooth.md
     - name: "Bluetooth Core Driver Layer and Supported Power Transitions"
@@ -79,8 +91,10 @@
     - name: "Transport Bus Driver FAQ"
       href: transport-bus-driver-faq.md
   - name: "Bluetooth LE Proximity Profile Device and App"
-    href: implementing-a-bluetooth-le-proximity-profile-device-and-application.md
+# Auto-expanded node
     items: 
+    - name: "Bluetooth LE Proximity Profile Device and App"
+      href: implementing-a-bluetooth-le-proximity-profile-device-and-application.md
     - name: "Bluetooth Proximity Profile"
       href: bluetooth-proximity-profile.md
     - name: "Proximity Profile Implementation Details"

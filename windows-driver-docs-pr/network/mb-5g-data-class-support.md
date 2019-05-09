@@ -162,7 +162,7 @@ This CID is the same as defined on [MB Multi-SIM operations](mb-multi-sim-operat
 
 If the device supports both new data classes, then both bits shall be set.
 
-### MBIM_DATA_CLASS
+## MBIM_DATA_CLASS
 
 | Types | Mask |
 | --- | --- |
@@ -479,7 +479,7 @@ An array of the following MBIM_RSRP_SNR_INFO structures is used in the **DataBuf
         <td>4</td>
         <td>SystemType</td>
         <td>MBIM_DATA_CLASS</td>
-        <td>Indicates the system type for which signal state information is valid. This member is a bitmask of one type as defined in <a href="#mbimdataclass">MBIM_DATA_CLASS</a>.</td>
+        <td>Indicates the system type for which signal state information is valid. This member is a bitmask of one type as defined in <a href="#mbim_data_class">MBIM_DATA_CLASS</a>.</td>
     </tr>
 </table>
 
