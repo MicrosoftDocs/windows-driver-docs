@@ -57,9 +57,8 @@ SoftwareType=type-code
 [SoftwareID=pfn://x.y.z]
 ```
 
-The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but arguments and flags are optional. 
-
-If **SoftwareType** is set to 2, **SoftwareID** is required, and flags are optional. If **SoftwareType** is set to 2, **SoftwareBinary** and **SoftwareVersion** are not used.
+>[!NOTE]
+>See [**SoftwareType**](#software-type) for information about constraints on section entries and values.
 
 Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.
 
@@ -70,11 +69,18 @@ Any software installed using **AddSoftware** will **not** be uninstalled if the 
 
 ## Software-Install Section Entries and Values
 
-**SoftwareType**=*type-code*
+<a name="software-type"></a>
+`SoftwareType={type-code}`
 
-Specifies the type of software installation.
+**SoftwareType** specifies the type of software installation and is a required entry.
 
-A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  A value of 1 is not supported on Windows 10 S.  Starting in Windows 10 version 1709, a value of 2 indicates that the associated software is a Microsoft Store link.  Use a value of 1 only for device-specific software that has no graphical user interface.  If you have a device-specific app with graphical elements, it should come from the Microsoft Store, and the driver should reference it using **SoftwareType** 2.
+A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  A value of 1 is not supported on Windows 10 S.  
+
+If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but **SoftwareArguments** and flags (in the **AddSoftware** directive) are optional. 
+
+Starting in Windows 10 version 1709, a value of 2 indicates that the associated software is a Microsoft Store link.  Use a value of 1 only for device-specific software that has no graphical user interface.  If you have a device-specific app with graphical elements, it should come from the Microsoft Store, and the driver should reference it using **SoftwareType** 2.
+
+If **SoftwareType** is set to 2, **SoftwareID** is required, and flags (in the **AddSoftware** directive) are optional. If **SoftwareType** is set to 2, **SoftwareBinary** and **SoftwareVersion** are not used.
 
 >[!NOTE]
 >When using Type 2 of the AddSoftware directive, it is not required to utilize a Component INF.  The directive can be used in any INF successfully.  An AddSoftware directive of Type 1, however, must be used from a Component INF.
@@ -87,7 +93,7 @@ Instead, use one of the following options to preinstall an app in an OEM image o
 
 For info about pairing a driver with a Universal Windows Platform (UWP) app, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).
 
-**SoftwareBinary**=*filename*
+`SoftwareBinary={filename}`
 
 Specifies the path to the executable.  The system generates command lines like the following:
 
@@ -97,9 +103,10 @@ Specifies the path to the executable.  The system generates command lines like t
 
 If you use this entry, you must add the executable to the DriverStore by specifying the [INF CopyFiles Directive](inf-copyfiles-directive.md) with  a **DestinationDirs** value of 13.
 
-If **SoftwareType** is set to 1, **SoftwareBinary** is required.  If **SoftwareType** is set to 2, **SoftwareBinary** is unused.
+>[!NOTE]
+>See [**SoftwareType**](#software-type) for information about constraints on section entries and values.
 
-**SoftwareArguments**=*argument1[, argument2[, … argumentN]]*
+`SoftwareArguments={argument1[, argument2[, … argumentN]]}`
 
 Specifies extension-specific arguments to append to the command line.  You can specify command line arguments that the system simply passes through into the generated command line.  You can also specify special strings called *runtime context variables*.  When you specify a runtime context variable, the system converts it into a device-specific value before appending it to the generated command line.  You can mix and match literal string arguments with runtime context variables.  Supported runtime context variables are:
 
@@ -134,20 +141,22 @@ The above results in:
 
 `<DriverStorePath>\ContosoControlPanel.exe arg1 PCI\VEN_0000&DEV_0001&SUBSYS_00000000&REV_00\0123 arg2`
 
-If **SoftwareType** is set to either 1 or 2, **SoftwareArguments** is optional. 
+>[!NOTE]
+>See [**SoftwareType**](#software-type) for information about constraints on section entries and values.
 
-**SoftwareVersion**=*w.x.y.z*
+`SoftwareVersion={w.x.y.z}`
 
 Specifies the software version.  Each value should not exceed 65535.  When the system encounters a duplicate **SoftwareName**, it checks the **SoftwareVersion** against the previous **SoftwareVersion**.  If it is greater, Windows runs the software.
 
-If **SoftwareType** is set to 1, **SoftwareVersion** is required.  If **SoftwareType** is set to 2, **SoftwareVersion** is unused.
+>[!NOTE]
+>See [**SoftwareType**](#software-type) for information about constraints on section entries and values.
 
-**SoftwareID**=*x.y.z*
+`SoftwareID={x.y.z}`
 
 Specifies a Microsoft Store identifier and identifier type.  Currently, only Package Family Name (PFN) is supported.  Use a PFN to reference a Universal Windows Platform (UWP) app using the form `pfn://<x.y.z>`.
 
-If **SoftwareType** is set to 1, **SoftwareID** is unused.  If **SoftwareType** is set to 2, **SoftwareID** is required.
-
+>[!NOTE]
+>See [**SoftwareType**](#software-type) for information about constraints on section entries and values.
 <!--add link to related page in UWP docs once it is available-->
 
 ## See Also
