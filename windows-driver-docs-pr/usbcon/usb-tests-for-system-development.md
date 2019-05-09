@@ -143,7 +143,7 @@ System 2
 
 System 3 (if dock supported)
 
--   Run the tests listed for the [system integration stage](#stage2) on the docked system.
+-   Run the tests listed for the [system integration stage](#stage-2system-integration) on the docked system.
 
 <table>
 <colgroup>
