@@ -58,7 +58,7 @@ SoftwareType=type-code
 ```
 
 >[!NOTE]
->See [**SoftwareType**](#software-type) for information about constraints on section entries and values.
+>See [**SoftwareType**](#software-install-section-softwaretype) for information about constraints on section entries and values.
 
 Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.
 
@@ -67,9 +67,8 @@ Any software installed using **AddSoftware** will **not** be uninstalled if the 
 * If you're using an MSI installer, set up an [Add/Remove Programs](https://msdn.microsoft.com/library/windows/desktop/aa368032) entry in the application's Windows Installer package.
 * If you're using a custom EXE that installs global registry/file state (instead of supplementing local device settings), use the [Uninstall Registry Key](https://msdn.microsoft.com/library/windows/desktop/aa372105). 
 
-## Software-Install Section Entries and Values
+## [software-install-section]: SoftwareType
 
-<a name="software-type"></a>
 `SoftwareType={type-code}`
 
 **SoftwareType** specifies the type of software installation and is a required entry.
@@ -89,9 +88,11 @@ Do not use AddSoftware to distribute software that is unrelated to a device. For
 Instead, use one of the following options to preinstall an app in an OEM image of Windows 10:
 
 * To preinstall a Win32 app, boot to audit mode and install the app. For details, see [Audit Mode Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/audit-mode-overview).
-* To preinstall a Microsoft Store (UWP) app, see [Preinstallable apps for desktop devices](https://docs.microsoft.com/windows-hardware/customize/preinstall/preinstallable-apps-for-windows-10-desktop).
+* To preinstall a Microsoft Store (UWP) app, see [Preinstallable apps for desktop devices](https://docs.microsoft.com/windows-hardware/customize/preinstall/preinstallable-apps-for-windows-10-desktop)
 
 For info about pairing a driver with a Universal Windows Platform (UWP) app, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).
+
+## [software-install-section]: SoftwareBinary
 
 `SoftwareBinary={filename}`
 
@@ -104,7 +105,9 @@ Specifies the path to the executable.  The system generates command lines like t
 If you use this entry, you must add the executable to the DriverStore by specifying the [INF CopyFiles Directive](inf-copyfiles-directive.md) with  a **DestinationDirs** value of 13.
 
 >[!NOTE]
->See [**SoftwareType**](#software-type) for information about constraints on section entries and values.
+>See [**SoftwareType**](#software-install-section-softwaretype) for information about constraints on **SoftwareBinary** entries and values.
+
+## [software-install-section]: SoftwareArguments
 
 `SoftwareArguments={argument1[, argument2[, … argumentN]]}`
 
@@ -142,22 +145,25 @@ The above results in:
 `<DriverStorePath>\ContosoControlPanel.exe arg1 PCI\VEN_0000&DEV_0001&SUBSYS_00000000&REV_00\0123 arg2`
 
 >[!NOTE]
->See [**SoftwareType**](#software-type) for information about constraints on section entries and values.
+>See [**SoftwareType**](#software-install-section-softwaretype) for information about constraints on **SoftwareArguments** entries and values.
+
+## [software-install-section]: SoftwareVersion
 
 `SoftwareVersion={w.x.y.z}`
 
 Specifies the software version.  Each value should not exceed 65535.  When the system encounters a duplicate **SoftwareName**, it checks the **SoftwareVersion** against the previous **SoftwareVersion**.  If it is greater, Windows runs the software.
 
 >[!NOTE]
->See [**SoftwareType**](#software-type) for information about constraints on section entries and values.
+>See [**SoftwareType**](#software-install-section-softwaretype) for information about constraints on **SoftwareVersion** entries and values.
+
+## [software-install-section]: SoftwareID
 
 `SoftwareID={x.y.z}`
 
 Specifies a Microsoft Store identifier and identifier type.  Currently, only Package Family Name (PFN) is supported.  Use a PFN to reference a Universal Windows Platform (UWP) app using the form `pfn://<x.y.z>`.
 
 >[!NOTE]
->See [**SoftwareType**](#software-type) for information about constraints on section entries and values.
-<!--add link to related page in UWP docs once it is available-->
+>See [**SoftwareType**](#software-install-section-softwaretype) for information about constraints on **SoftwareID** entries and values.
 
 ## See Also
 
