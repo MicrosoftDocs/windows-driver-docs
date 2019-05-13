@@ -12,9 +12,9 @@ In this topic, you'll learn about the source code for aKMDF-based USB client dri
 
 These sections provide information about the template code.
 
--   [Driver source code](#driver)
--   [Device source code](#device)
--   [Queue source code](#queue)
+-   [Driver source code](#driver-source-code)
+-   [Device source code](#device-source-code)
+-   [Queue source code](#queue-source-code)
 -   [Related topics](#related-topics)
 
 For instructions on generating the KMDF template code, see [How to write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md).
@@ -286,7 +286,7 @@ In the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardwar
         After the [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) call completes, the client driver receives a handle to the new framework device object, which stores a pointer to the block of memory allocated by the framework for the device context. The client driver can now get a pointer to the device context by calling the **WdfObjectGet\_DEVICE\_CONTEXT** macro.
 
 -   Register a device interface GUID for the client driver by calling the [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) method. Applications can communicate with the driver by using this GUID. The GUID constant is declared in the header, public.h.
--   Set up queues for I/O transfers to the device. The template code defines MyUSBDriver\_QueueInitialize, a helper routine for setting up queues, which is discussed in the [Queue source code](#queue) section.
+-   Set up queues for I/O transfers to the device. The template code defines MyUSBDriver\_QueueInitialize, a helper routine for setting up queues, which is discussed in the [Queue source code](#queue-source-code) section.
 
 ## Device source code
 

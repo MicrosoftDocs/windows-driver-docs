@@ -31,7 +31,7 @@ The following are exceptions to this rule:
 
 -   Class installers and co-installers can modify the value of the [RunOnce registry key](runonce-registry-key.md). However, this value must consist of only calls to *Rundll32.exe*.
 
-    Class installers and co-installers must follow the restrictions about how to use the [RunOnce registry key](runonce-registry-key.md) in [INF files](inf-files.md). In particular, this registry key must be used only for the installation of software-only devices that are enumerated by using the software device enumerator (SWENUM).
+    Class installers and co-installers must follow the restrictions about how to use the [RunOnce registry key](runonce-registry-key.md) in [INF files](overview-of-inf-files.md). In particular, this registry key must be used only for the installation of software-only devices that are enumerated by using the software device enumerator (SWENUM).
 
 -   Class installers and co-installers can modify the **CoInstallers32** and **EnumPropPages32** registry values in the device's *software key* when the installer handles [**DIF_REGISTER_COINSTALLERS**](https://msdn.microsoft.com/library/windows/hardware/ff543715) requests.
 

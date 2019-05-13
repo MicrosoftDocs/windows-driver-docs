@@ -223,7 +223,7 @@ The following filter values specify memory regions by the protection applied to 
 </tr>
 <tr class="odd">
 <td align="left"><p>PAGE_GUARD</p></td>
-<td align="left"><p>Memroy that acts as a guard page.</p></td>
+<td align="left"><p>Memory that acts as a guard page.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>PAGE_NOCACHE</p></td>

@@ -16,8 +16,8 @@ Before a client driver can use the new capabilities of the USB driver stack for 
 
 For a USBD\_CLIENT\_CONTRACT\_VERSION\_602 version client driver, the USB driver stack assumes that the client driver conforms to the following set of rules:
 
--   [Do not send I/O requests by using stale or invalid pipe handles](#do-not-send-i-o-requests-by-using-stale-or-invalid-pipe-handles)
--   [Allocate URBs by calling allocation routines in Windows 8](#allocate-urbs-by-calling-allocation-routines-in-windows-8)
+-   [Do not send I/O requests by using stale or invalid pipe handles](#do-not-send-io-requests-by-using-stale-or-invalid-pipe-handles)
+-   [Allocate URBs by calling allocation routines in Windows 8](#allocate-urbs-by-calling-allocation-routines-in-windows8)
 -   [Do not reuse active URBs associated with pending requests](#do-not-reuse-active-urbs-associated-with-pending-requests)
 -   [Do not use polling period greater than 8 for high speed and SuperSpeed isochronous transfers](#do-not-use-polling-period-greater-than-8-for-high-speed-and-superspeed-isochronous-transfers)
 -   [Make sure that the number of isochronous packets that is a multiple of number of packets per frame](#make-sure-that-the-number-of-isochronous-packets-that-is-a-multiple-of-number-of-packets-per-frame)

@@ -55,8 +55,6 @@ Typically when you test and debug a driver, the debugger and driver run on separ
 
 So far you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. 
 
-So far you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. 
-
 1. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md).
 
     > [!TIP]

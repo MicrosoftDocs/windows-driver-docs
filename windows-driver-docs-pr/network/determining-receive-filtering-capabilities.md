@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 This topic describes how NDIS and overlying drivers determine the receive filtering capabilities of a network adapter that supports single root I/O virtualization (SR-IOV). This topic contains the following information:
 
-[Reporting Receive Filtering Capabilities during *MiniportInitializeEx*](#report)
+[Reporting Receive Filtering Capabilities during *MiniportInitializeEx*](#reporting-receive-filtering-capabilities-during-miniportinitializeex)
 
-[Querying Receive Filtering Capabilities by Overlying Drivers](#query)
+[Querying Receive Filtering Capabilities by Overlying Drivers](#querying-receive-filtering-capabilities-by-overlying-drivers)
 
 **Note**  Only the miniport driver for the PCI Express (PCIe) Physical Function (PF) of an SR-IOV network adapter can report receive filtering capabilities. Miniport drivers for PCIe Virtual Functions (VFs) must not report the receive filtering capabilities of the SR-IOV adapter.
 

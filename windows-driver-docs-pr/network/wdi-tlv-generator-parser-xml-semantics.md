@@ -11,36 +11,36 @@ ms.localizationpriority: medium
 
 The TLV generator/parser XML file is a list of messages, containers (TLVs), and property groups (structs). This topic covers the XML syntax.
 
--   [`<message />`](#-message---)
+-   [`<message />`](#message-)
     -   [Attributes](#attributes)
     -   [Content](#content)
     -   [Example](#example)
--   [`<containerRef />`](#-containerref---)
+-   [`<containerRef />`](#containerref-)
     -   [Attributes](#attributes)
     -   [Content](#content)
     -   [Example](#example)
--   [`<containers />`](#-containers---)
--   [`<container />`](#-container---)
+-   [`<containers />`](#containers-)
+-   [`<container />`](#container-)
     -   [Attributes](#attributes)
     -   [Contents](#contents)
     -   [Example](#example)
--   [`<groupRef />`](#-groupref---)
+-   [`<groupRef />`](#groupref-)
     -   [Attributes](#attributes)
     -   [Content](#content)
     -   [Examples](#examples)
--   [`    <namedType />`](#--namedtype---)
+-   [`    <namedType />`](#namedtype-)
     -   [Attributes](#attributes)
     -   [Content](#content)
     -   [Example](#example)
--   [`<aggregateContainer />`](#-aggregatecontainer---)
+-   [`<aggregateContainer />`](#aggregatecontainer-)
     -   [Attributes](#attributes)
     -   [Content](#content)
     -   [Example](#example)
--   [`<propertyGroups />`](#-propertygroups---)
--   [Primitive Field Types (`<bool/> <uint8/> <uint16/> <uint32/> <int8/> <int16/> <int32/>`)](#primitive-field-types---bool----uint8----uint16----uint32----int8----int16----int32---)
+-   [`<propertyGroups />`](#propertygroups-)
+-   [Primitive Field Types (`<bool/> <uint8/> <uint16/> <uint32/> <int8/> <int16/> <int32/>`)](#primitive-field-types-bool-uint8-uint16-uint32-int8-int16-int32)
     -   [Attributes](#attributes)
     -   [Contents](#contents)
--   [`<propertyGroup />`](#-propertygroup---)
+-   [`<propertyGroup />`](#propertygroup-)
     -   [Attributes](#attributes)
     -   [Contents](#contents)
     -   [Example](#example)
@@ -306,7 +306,7 @@ There are several possible property types (struct fields).
                description="Structure definition for P2P Device Information Parameters.">
   <uint8 count="6"
          name="DeviceAddress"
-         description="Peer&#39;s device address." />
+         description="Peer's device address." />
   <uint16 name="ConfigurationMethods"
           description="Configuration Methods supported by this device." />
   <groupRef name="DeviceType"

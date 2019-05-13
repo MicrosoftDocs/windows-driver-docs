@@ -1,7 +1,7 @@
 ---
 title: Debugger Data Model C++ Interfaces Overview
 description: This topic provides an overview of the Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
-ms.date: 10/05/2018
+ms.date: 04/09/2019
 ---
 
 # Debugger Data Model C++ Overview
@@ -33,6 +33,9 @@ This topic includes the following sections.
 
 [Summary of Debugger Data Model Interfaces](#summary)
 
+[Using the DbgModelClientEx Library](#dbgmodelclientex)
+
+
 ---
 
 ## <span id="overview"> Overview of the Debugger Data Model C++ Interface
@@ -59,6 +62,10 @@ dx @$cursession.Processes.Where(p => p.Threads.Count() > 5)
 This command uses a standard data model that is discoverable, extensible and composable in uniform ways.
 
 Logically name spacing things and extending on specific objects allows for the discovery of debugger extension functionality.  
+
+> [!TIP]
+> Because the Data Model C++ Object interfaces can be very verbose to implement a full C++ helper library for the data model which uses a full C++ exception and template programming paradigm is recommended. For more information, see [Using the DbgModelClientEx Library](#dbgmodelclientex) later in this topic.
+>
 
 The data model is the way that the new [WinDbg Preview](debugging-using-windbg-preview.md) debugger, shows most things. Many elements in the new UI can be queried, extended, or scripted, because they are powered by the data model. For more information, see [WinDbg Preview - Data Model](windbg-data-model-preview.md).
 
@@ -121,7 +128,6 @@ This diagram shows the central role that the data model manager plays in the man
 - The right side of the diagram shows two providers, one for NatVis on the top, and a C/C++ extension on the bottom.
 
 ![Data model architectural view](images/data-model-manager.png)
-
 
 
 ## <span id="summary"> Summary of Debugger Data Model Interfaces
@@ -279,11 +285,49 @@ The following interfaces are defined for this category:
 [IDataModelScriptDebugBreakpointEnumerator](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nn-dbgmodel-idatamodelscriptdebugbreakpointenumerator) 
 
 
+## <span id="dbgmodelclientex"> Using the DbgModelClientEx Library
+
+**Overview**
+
+The Data Model C++ Object Interfaces to the data model can be very verbose to implement. While they allow for full manipulation of the data model, they require implementation of a number of small interfaces to extend the data model (e.g.: an IModelPropertyAccessor implementation for each dynamic fetchable property which is added). In addition to this, the HRESULT based programming model adds a significant amount of boiler plate code that is used for error checking.
+
+In order to minimize some of this work, there is a full C++ helper library for the data model which uses a full C++ exception and template programming paradigm. Use of this library allows for more concise code when consuming or extending the data model and is recommended.
+
+There are two important namespaces in the helper library:
+
+Debugger::DataModel::ClientEx - helpers for consumption of the data model
+
+Debugger::DataModel::ProviderEx - helpers for extension of the data model
+
+For additional information on using the DbgModelClientEx library, see the readme file at this github site:
+
+https://github.com/Microsoft/WinDbg-Libraries/tree/master/DbgModelCppLib
 
 
+**HelloWorld C++ Sample**
+
+To see how the DbgModelClientEx library can be used, review the Data Model HelloWorld C++ sample here.
+
+https://github.com/Microsoft/WinDbg-Samples/tree/master/DataModelHelloWorld
+
+The sample includes:
+
+- HelloProvider.cpp - This is an implementation of a provider class which adds a new example property "Hello" to the debugger's notion of a process.
+
+- SimpleIntroExtension.cpp - This is a simple debugger extension which adds a new example property "Hello" to the debugger's notion of a process. This extension is written against the Data Model C++17 Helper Library.  It is far preferable to write extensions against this library rather than the raw COM ABI due to the volume (and complexity) of glue code which is required.
 
 
+**JavaScript and COM Samples**
 
+In order to better understand the varying ways to write a debugger extension with the data model, there are three versions of the data model HelloWorld extension available here:
+
+https://github.com/Microsoft/WinDbg-Samples/tree/master/DataModelHelloWorld
+
+- JavaScript - A version written in JavaScript
+
+- C++17 - A version written against the Data Model C++17 Client Library
+
+- COM - A version written against the raw COM ABI (only using WRL for COM helpers)
 
 ---
 

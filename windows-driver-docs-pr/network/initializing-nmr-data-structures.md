@@ -29,7 +29,7 @@ The following code example shows how a WSK application can initialize all of the
 // Include the WSK header file
 #include "wsk.h"
 
-// Structure for the WSK application&#39;s network module identification
+// Structure for the WSK application's network module identification
 const NPI_MODULEID ModuleId =
 {
   sizeof(NPI_MODULEID),
@@ -37,7 +37,7 @@ const NPI_MODULEID ModuleId =
   { ... }  // A GUID that uniquely identifies the WSK application
 };
 
-// Prototypes for the WSK application&#39;s NMR API callback functions
+// Prototypes for the WSK application's NMR API callback functions
 NTSTATUS
   ClientAttachProvider(
     IN HANDLE NmrBindingHandle,
@@ -55,7 +55,7 @@ VOID
     IN PVOID ClientBindingContext
     );
 
-// Structure for the WSK application&#39;s characteristics
+// Structure for the WSK application's characteristics
 const NPI_CLIENT_CHARACTERISTICS Characteristics =
 {
   0,

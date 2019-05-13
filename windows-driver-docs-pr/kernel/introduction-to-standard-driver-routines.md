@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Each kernel-mode driver is constructed around a set of system-defined, [standard driver routines](https://msdn.microsoft.com/library/windows/hardware/ff563842). Kernel-mode drivers process *I/O request packets* (IRPs) within these standard routines by calling system-supplied driver support routines.
+Each kernel-mode driver is constructed around a set of system-defined, standard driver routines. Kernel-mode drivers process *I/O request packets* (IRPs) within these standard routines by calling system-supplied driver support routines.
 
 All drivers, regardless of their level in a chain of attached drivers, must have a basic set of standard routines in order to process IRPs. Whether a driver must implement additional standard routines depends on whether the driver controls a physical device or is layered over a physical device driver, as well as on the nature of the underlying physical device. Lowest-level drivers that control physical devices have more required routines than higher-level drivers, which typically pass IRPs to a lower driver for processing.
 
@@ -38,17 +38,17 @@ Following are two tables. The first table lists required standard routines. The 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>DriverEntry</strong></p></td>
+<td><p><strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize">DriverEntry</a></strong></p></td>
 <td><p>Initializes the driver and its driver object.</p></td>
 <td><p><a href="writing-a-driverentry-routine.md" data-raw-source="[Writing a DriverEntry Routine](writing-a-driverentry-routine.md)">Writing a DriverEntry Routine</a></p></td>
 </tr>
 <tr class="even">
-<td><p><em>AddDevice</em></p></td>
+<td><p><em><a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a></em></p></td>
 <td><p>Initializes devices and creates device objects.</p></td>
 <td><p><a href="writing-an-adddevice-routine.md" data-raw-source="[Writing an AddDevice Routine](writing-an-adddevice-routine.md)">Writing an AddDevice Routine</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>Dispatch Routines</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/dispatchcreate--dispatchclose--and-dispatchcreateclose-routines">Dispatch Routines</a></p></td>
 <td><p>Receive and process IRPs.</p></td>
 <td><p><a href="writing-dispatch-routines.md" data-raw-source="[Writing Dispatch Routines](writing-dispatch-routines.md)">Writing Dispatch Routines</a></p></td>
 </tr>
@@ -108,12 +108,12 @@ Following are two tables. The first table lists required standard routines. The 
 </tr>
 <tr class="odd">
 <td><p><em>IoCompletion</em></p></td>
-<td><p>Completes a driver&#39;s processing of an IRP.</p></td>
+<td><p>Completes a driver's processing of an IRP.</p></td>
 <td><p><a href="completing-irps.md" data-raw-source="[Completing IRPs](completing-irps.md)">Completing IRPs</a></p></td>
 </tr>
 <tr class="even">
 <td><p><em>Cancel</em></p></td>
-<td><p>Cancels a driver&#39;s processing of an IRP.</p></td>
+<td><p>Cancels a driver's processing of an IRP.</p></td>
 <td><p><a href="canceling-irps.md" data-raw-source="[Canceling IRPs](canceling-irps.md)">Canceling IRPs</a></p></td>
 </tr>
 <tr class="odd">

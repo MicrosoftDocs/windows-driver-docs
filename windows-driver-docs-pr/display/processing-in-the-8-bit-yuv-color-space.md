@@ -27,7 +27,7 @@ To perform ProcAmp adjustment for the Y component, subtract 16 from the Y value 
 The following equation summarizes the steps described in the previous paragraph. C is the contrast value and B is the brightness value.
 
 ```cpp
-Y&#39; = ((Y - 16) x C) + B + 16
+Y' = ((Y - 16) x C) + B + 16
 ```
 
 ### <span id="UV_Processing"></span><span id="uv_processing"></span><span id="UV_PROCESSING"></span>UV Processing
@@ -35,15 +35,15 @@ Y&#39; = ((Y - 16) x C) + B + 16
 To perform ProcAmp adjustment for the U and V components, subtract 128 from both U and V values to position the range around zero. The hue property is implemented by mixing the U and V values together as shown in the following equations. H is the desired hue angle:
 
 ```cpp
-U&#39; = (U-128) x Cos(H) + (V-128) x Sin(H)
-V&#39; = (V-128) x Cos(H) - (U-128) x Sin(H)
+U' = (U-128) x Cos(H) + (V-128) x Sin(H)
+V' = (V-128) x Cos(H) - (U-128) x Sin(H)
 ```
 
 Saturation is adjusted by multiplying U' and V' by a pair of constants, and then by adding 128 to each. The combined processing of hue and saturation on the UV data is shown in the following equations. H is the desired hue angle, C is the contrast value, and S is the saturation value:
 
 ```cpp
-U&#39;&#39; = (((U-128) x Cos(H) + (V-128) x Sin(H)) x C x S) + 128
-V&#39;&#39; = (((V-128) x Cos(H) - (U-128) x Sin(H)) x C x S) + 128
+U'' = (((U-128) x Cos(H) + (V-128) x Sin(H)) x C x S) + 128
+V'' = (((V-128) x Cos(H) - (U-128) x Sin(H)) x C x S) + 128
 ```
 
  

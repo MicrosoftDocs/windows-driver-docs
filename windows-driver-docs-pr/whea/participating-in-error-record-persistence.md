@@ -29,7 +29,7 @@ The following code example shows how to implement these callback functions.
 
 ```cpp
 //
-// The PSHED plug-in&#39;s WriteErrorRecord callback function
+// The PSHED plug-in's WriteErrorRecord callback function
 //
 NTSTATUS
   WriteErrorRecord(
@@ -62,7 +62,7 @@ NTSTATUS
 }
 
 //
-// The PSHED plug-in&#39;s ReadErrorRecord callback function
+// The PSHED plug-in's ReadErrorRecord callback function
 //
 NTSTATUS
   ReadErrorRecord(
@@ -148,7 +148,7 @@ NTSTATUS
 }
 
 //
-// The PSHED plug-in&#39;s ClearErrorRecord callback function
+// The PSHED plug-in's ClearErrorRecord callback function
 //
 NTSTATUS
   ClearErrorRecord(

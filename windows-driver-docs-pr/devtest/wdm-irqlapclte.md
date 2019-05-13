@@ -1,6 +1,6 @@
 ---
 title: IrqlApcLte rule (wdm)
-description: The IrqlApcLte rule specifies that the driver calls ObGetObjectSecurity and ObReleaseObjectSecurity only when it is executing at IRQL�  APC\_LEVEL.
+description: The IrqlApcLte rule specifies that the driver calls ObGetObjectSecurity and ObReleaseObjectSecurity only when it is executing at IRQL APC_LEVEL.
 ms.assetid: 83f18eb3-aee1-403e-90a2-c03b81109ebb
 ms.date: 05/21/2018
 keywords: ["IrqlApcLte rule (wdm)"]

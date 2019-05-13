@@ -1,8 +1,9 @@
-- name: "Developing, Testing, and Deploying Drivers"
+- name: "Developing Drivers"
   href: index.md
-- name: "Getting Started with Universal Drivers"
-  href: getting-started-with-universal-drivers.md
-  items: 
+- name: "Universal Drivers"
+  items:
+  - name: "Getting Started with Universal Drivers"
+    href: getting-started-with-universal-drivers.md
   - name: "Building a Universal Windows driver"
     href: building-a-universal-driver.md
   - name: "Validating Universal Drivers"
@@ -17,17 +18,22 @@
     href: windows-10-editions-for-universal-drivers.md
   - name: "Driver convergence model for Windows 10"
     href: driver-model-convergence.md
-- name: "Creating a New Device Function Driver"
-  href: creating-a-new-driver.md
-- name: "Creating a New Filter Driver"
-  href: creating-a-new-filter-driver.md
-- name: "Creating a New Software Driver"
-  href: creating-a-new-software-driver.md
-- name: "Creating a Driver From Existing Source Files"
-  href: creating-a-driver-from-existing-source-files.md
-- name: "Building a Driver with the WDK"
-  href: building-a-driver.md
+- name: "Building Drivers"
   items: 
+  - name: "Creating a New Device Function Driver"
+    href: creating-a-new-driver.md
+  - name: "Creating a New Filter Driver"
+    href: creating-a-new-filter-driver.md
+  - name: "Device Filter Driver Ordering"
+    href: device-filter-driver-ordering.md
+  - name: "Creating a New Software Driver"
+    href: creating-a-new-software-driver.md
+  - name: "Creating a New Primitive Driver"
+    href: creating-a-primitive-driver.md
+  - name: "Creating a Driver From Existing Source Files"
+    href: creating-a-driver-from-existing-source-files.md
+  - name: "Building a Driver with the WDK"
+    href: building-a-driver.md
   - name: "Building Drivers for Different Versions of Windows"
     href: building-drivers-for-different-versions-of-windows.md
   - name: "Building ARM64 Drivers with the WDK"
@@ -50,25 +56,26 @@
     href: mof-compiler-properties-for-driver-projects.md
   - name: "Stampinf Properties for Driver Projects"
     href: stampinf-properties-for-driver-projects.md
-- name: "Converting WDK 8.1 Projects to WDK 10"
-  href: converting-wdk-8-1-projects-to-wdk-10.md
-- name: "Analyzing a Driver Using Code Analysis and Verification Tools"
-  href: analyzing-driver-quality-by-using-code-analysis-tools.md
-- name: "Preparing a Computer for Manual Driver Deployment"
-  href: preparing-a-computer-for-manual-driver-deployment.md
-- name: "What happens when you provision a computer (WDK 8.1)"
-  href: what-happens-when-you-provision-a-computer--wdk-8-1-.md
-- name: "What happens when you provision a computer (WDK 8.0)"
-  href: what-happens-when-you-provision-a-computer--wdk-8-0-.md
-- name: "Troubleshooting Configuration of Driver Deployment, Testing and Debugging"
-  href: troubleshooting-configuration-of-driver-deployment--testing-and-debugging.md
-- name: "Creating a Driver Package"
-  href: creating-a-driver-package.md
-- name: "Creating a Device Metadata Package"
-  href: creating-a-device-metadata-package.md
-- name: "Signing a Driver"
-  href: signing-a-driver.md
+  - name: "Converting WDK 8.1 Projects to WDK 10"
+    href: converting-wdk-8-1-projects-to-wdk-10.md
+  - name: "Analyzing a Driver Using Code Analysis and Verification Tools"
+    href: analyzing-driver-quality-by-using-code-analysis-tools.md
+  - name: "Preparing a Computer for Manual Driver Deployment"
+    href: preparing-a-computer-for-manual-driver-deployment.md
+  - name: "What happens when you provision a computer (WDK 8.1)"
+    href: what-happens-when-you-provision-a-computer--wdk-8-1-.md
+  - name: "What happens when you provision a computer (WDK 8.0)"
+    href: what-happens-when-you-provision-a-computer--wdk-8-0-.md
+  - name: "Troubleshooting Configuration of Driver Deployment, Testing and Debugging"
+    href: troubleshooting-configuration-of-driver-deployment--testing-and-debugging.md
+  - name: "Creating a Driver Package"
+    href: creating-a-driver-package.md
+  - name: "Creating a Device Metadata Package"
+    href: creating-a-device-metadata-package.md
+- name: "Signing Drivers"
   items: 
+  - name: "Signing a Driver"
+    href: signing-a-driver.md
   - name: "Attestation Signing a Kernel Driver for Public Release"
     href: attestation-signing-a-kernel-driver-for-public-release.md
   - name: "Signing a Driver During Development and Testing"
@@ -77,9 +84,10 @@
     href: signing-a-driver-for-public-release.md
   - name: "Driver Signing Properties"
     href: driver-signing-properties.md
-- name: "Deploying a Driver to a Test Computer"
-  href: deploying-a-driver-to-a-test-computer.md
+- name: "Deploying Drivers"
   items: 
+  - name: "Deploying a Driver to a Test Computer"
+    href: deploying-a-driver-to-a-test-computer.md
   - name: "Deployment Properties for Driver Package Projects"
     href: deployment-properties-for-driver-projects.md
   - name: "Driver Verifier Properties for  Driver Package Projects"
@@ -96,39 +104,39 @@
     href: using-pkggen.md
 - name: "Debugging a Driver"
   href: debugging-a-driver.md
-- name: "Testing a Driver"
-  href: testing-a-driver.md
+- name: "Testing Drivers"
   items: 
+  - name: "Testing a Driver"
+    href: testing-a-driver.md
   - name: "Tips for testing drivers during development"
     href: strategies-for-testing-drivers-during-development.md
   - name: "How to test a driver at runtime using Visual Studio"
     href: testing-a-driver-at-runtime.md
-    items: 
-    - name: "How to run the HCK Test Suites in WDK 8.1"
-      href: run-the-hck-test-suites-in-the-wdk.md
-    - name: "How to select and configure the Device Fundamentals tests"
-      href: how-to-select-and-configure-the-device-fundamental-tests.md
-    - name: "How to test a driver package"
-      href: test-a-driver-package.md
-    - name: "How to read the driver test results log"
-      href: read-the-driver-test-results-log.md
-    - name: "How to test a driver at runtime from a Command Prompt"
-      href: how-to-test-a-driver-at-runtime-from-a-command-prompt.md
-    - name: "Troubleshooting the Device Fundamentals tests using the WDK"
-      href: troubleshooting-the-device-fundamental-tests.md
+  - name: "How to run the HCK Test Suites in WDK 8.1"
+    href: run-the-hck-test-suites-in-the-wdk.md
+  - name: "How to select and configure the Device Fundamentals tests"
+    href: how-to-select-and-configure-the-device-fundamental-tests.md
+  - name: "How to test a driver package"
+    href: test-a-driver-package.md
+  - name: "How to read the driver test results log"
+    href: read-the-driver-test-results-log.md
+  - name: "How to test a driver at runtime from a Command Prompt"
+    href: how-to-test-a-driver-at-runtime-from-a-command-prompt.md
+  - name: "Troubleshooting the Device Fundamentals tests using the WDK"
+    href: troubleshooting-the-device-fundamental-tests.md
   - name: "How to write a driver test using a Driver Test template"
     href: how-to-write-a-driver-test-.md
-    items: 
-    - name: "How to add test metadata"
-      href: to-add-test-metadata.md
-- name: "Creating a Driver Verification Log"
-  href: creating-a-driver-verification-log.md
+  - name: "How to add test metadata"
+    href: to-add-test-metadata.md
+  - name: "Static Driver Verifier Known Issues - Windows 10 October 2018 Update (version 1809)"
+    href: static-driver-verifier-known-issues.md
+- name: "Logging"
   items: 
+  - name: "Creating a Driver Verification Log"
+    href: creating-a-driver-verification-log.md
   - name: "Creating a log file for the code analysis tool"
     href: creating-a-log-file-for-the-code-analysis-tool.md
   - name: "Creating a log file for Static Driver Verifier"
     href: creating-a-log-file-for-static-driver-verifier.md
-  - name: "Static Driver Verifier Known Issues - Windows 10 October 2018 Update (version 1809)"
-    href: static-driver-verifier-known-issues.md
 - name: "Distributing a driver package"
   href: distributing-a-driver-package-win8.md

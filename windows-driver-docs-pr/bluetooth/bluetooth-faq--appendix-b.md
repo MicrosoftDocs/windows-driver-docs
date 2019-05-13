@@ -8,18 +8,16 @@ ms.localizationpriority: medium
 
 # Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista
 
-
 This appendix includes an example of how to implement a vendor-provided INF file that references Bth.inf. This particular example is implemented to install a radio that is compatible with version 2.0 plus EDR of the Bluetooth specification in Windows XP or Windows Vista. The INF files for other types of Bluetooth devices are similar.
 
 This INF file can be used to install the device on the following versions of Windows:
 
--   All SKUs of the 32-bit version of Windows XP SP2 and later service packs.
--   All SKUs of the 64-bit version of Windows XP
--   All SKUs of Windows Vista
+- All SKUs of the 32-bit version of Windows XP SP2 and later service packs.
+- All SKUs of the 64-bit version of Windows XP
+- All SKUs of Windows Vista
 
-**Note**  : This INF file cannot be used with Windows 2000, Windows Server 2003, or any versions of Windows XP that have not been upgraded to at least SP2. Also, a vendor-provided INF file is not necessary for Windows 7 because any USB device that has a USB\\Class\_E0&SubClass\_01&Prot\_01 hardware ID will install as a **Generic Bluetooth Adapter** in Windows 7.
-
- 
+> [!NOTE]
+> This INF file cannot be used with Windows 2000, Windows Server 2003, or any versions of Windows XP that have not been upgraded to at least SP2. Also, a vendor-provided INF file is not necessary for Windows 7 because any USB device that has a USB\\Class\_E0&SubClass\_01&Prot\_01 hardware ID will install as a **Generic Bluetooth Adapter** in Windows 7.
 
 For an explanation of the highlighted sections and directives, see the numbered notes after the following sample:
 
@@ -89,21 +87,12 @@ SourceDisk       = "Windows Vista CD"
 
 **Notes:**
 
-1.  The **Version** section should have the **CLASSGUID** and **DriverVer** directives set as follows:
-    -   **CLASSGUID**: Use the Microsoft class GUID for Bluetooth devices ({e0cbf06c cd8b-4647-bb8a-263b43f0f974}), not a third-party GUID.
-    -   **DriverVer**: If you want to supersede the default in-box driver, the driver version must be set to provide a higher ranking match than what is in Bth.inf. For more information about configuring a driver to supersede the default in box driver, see [Installing Private Builds of Inbox Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/installing-private-builds-of-in-box-drivers--windows-vista-and-later-).
+1. The **Version** section should have the **CLASSGUID** and **DriverVer** directives set as follows:
+    - **CLASSGUID**: Use the Microsoft class GUID for Bluetooth devices ({e0cbf06c cd8b-4647-bb8a-263b43f0f974}), not a third-party GUID.
+    - **DriverVer**: If you want to supersede the default in-box driver, the driver version must be set to provide a higher ranking match than what is in Bth.inf. For more information about configuring a driver to supersede the default in box driver, see [Installing Private Builds of Inbox Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/installing-private-builds-of-in-box-drivers--windows-vista-and-later-).
 
-2.  Hardware IDs. The combination of the VID and the PID must be unique to the manufacturer and device. This ensures that the same hardware ID does not correspond to multiple devices.
-3.  **Include** and **Needs** directives. The **Include** directives in these three sections reference Bth.inf. The **Needs** directives indicate which sections from Bth.inf should be processed during device installation.
-4.  The **DelReg** directive, which references the **DeleteRegKeys** section, deletes registry keys or values that prevent Windows from creating a PDO or devnode for a device. For example, the fax service profile is currently on the Windows Vista list of unsupported services, so it is a value of the **UnsupportedServices** registry key. This example deletes the fax services profile from the **UnsupportedServices** key, which lets Windows create a devnode for the device.
+2. Hardware IDs. The combination of the VID and the PID must be unique to the manufacturer and device. This ensures that the same hardware ID does not correspond to multiple devices.
+3. **Include** and **Needs** directives. The **Include** directives in these three sections reference Bth.inf. The **Needs** directives indicate which sections from Bth.inf should be processed during device installation.
+4. The **DelReg** directive, which references the **DeleteRegKeys** section, deletes registry keys or values that prevent Windows from creating a PDO or devnode for a device. For example, the fax service profile is currently on the Windows Vista list of unsupported services, so it is a value of the **UnsupportedServices** registry key. This example deletes the fax services profile from the **UnsupportedServices** key, which lets Windows create a devnode for the device.
 
 We strongly recommend that you run the latest WHQL tests on the device and INF file and publish the INF file package on Windows Update. This ensures that customers can automatically download the INF file from the Internet when they connect their new Bluetooth radio to their computer.
-
- 
-
- 
-
-
-
-
-

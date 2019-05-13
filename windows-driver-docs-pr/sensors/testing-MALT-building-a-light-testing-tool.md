@@ -29,7 +29,7 @@ You will need the following components.
 * [Digital to analog converter (DAC)](https://www.microchip.com/wwwproducts/en/MCP4821)
 * 2 [Ambient light sensors (ex TI OPT3001 or better)](https://www.ti.com/product/OPT3001)
 * 2 [Color sensors](https://www.digikey.com/product-detail/en/ams/TCS34727FN/TCS34727FNCT-ND/3737677)
-* [Light enclosure](#light-enclosure)
+* [Light enclosure](#step-1---assemble-light-enclosure)
 
 ## Instructions
 

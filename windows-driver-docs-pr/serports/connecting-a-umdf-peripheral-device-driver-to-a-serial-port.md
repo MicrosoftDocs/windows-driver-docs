@@ -58,7 +58,7 @@ for (ULONG ix = 0; ix < resourceCount; ix++)
                     {
                         if (fConnIdFound == FALSE)
                         {
-                            // Save the serial controller&#39;s connection ID.
+                            // Save the serial controller's connection ID.
                             connectionId.LowPart = pDescriptor->u.Connection.IdLowPart;
                             connectionId.HighPart = pDescriptor->u.Connection.IdHighPart;
                             fConnectIdFound = TRUE;

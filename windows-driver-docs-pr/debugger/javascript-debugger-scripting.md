@@ -2,7 +2,7 @@
 title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
-ms.date: 11/27/2018
+ms.date: 04/09/2019
 ms.localizationpriority: medium
 ---
 
@@ -36,6 +36,8 @@ This topic describes some of what you can do with JavaScript debugger scripting.
 
 [JavaScript Debugging](#debugging)
 
+[JavaScript in VSCode - Adding IntelliSense](#vscode)
+
 [JavaScript Resources](#resources)
 
 These two topics provide additional information about working with JavaScript in the debugger.
@@ -44,8 +46,13 @@ These two topics provide additional information about working with JavaScript in
 
 [Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
 
-## <span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>The Debugger JavaScript Provider
 
+## JavaScript Scripting Video
+
+[Defrag Tools #170](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-170-Debugger-JavaScript-Scripting) - Andy and Bill demonstrate JavaScript extensibility and scripting abilities in the debugger.
+
+
+## <span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>The Debugger JavaScript Provider
 
 The JavaScript provider included with the debugger takes full advantage of the latest ECMAScript6 object and class enhancements. For more information, see [ECMAScript 6 — New Features: Overview & Comparison](https://es6-features.org/).
 
@@ -1192,6 +1199,21 @@ Caught and returned!
 Test
 ```
 
+## <span id="Vscode"></span><span id="vscode"></span><span id="VSCODE"></span>JavaScript in VSCode - Adding IntelliSense
+
+If you would like to work with the debugger data model objects in VSCode, you can use a definition file that is available in the Windows development kits. The IntelliSense definition file provides support for all of the host.* debugger object APIs. If you installed the kit in the default directory on a 64 bit PC, it is located here:
+
+`C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\winext\JsProvider.d.ts`
+
+To use the IntelliSense definition file in VSCode:
+
+1. Locate the definition file - JSProvider.d.ts
+
+2. Copy the definition file to same folder as your script.
+
+3. Add `/// <reference path="JSProvider.d.ts" />` to the top of your JavaScript script file.
+
+With that reference in your JavaScript file, VS Code will automatically give you IntelliSense on the host APIs provided by JSProvider in addition to the structures in your script. For example, type “host.” and you’ll see IntelliSense for all the available debugger model APIs.
 
 
 ## <span id="Resources"></span><span id="resources"></span><span id="RESOURCES"></span>JavaScript Resources

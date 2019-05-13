@@ -227,7 +227,7 @@ public sealed partial class Preferences : SDKTemplate.Common.LayoutAwarePage
     Object printerExtensionContext;
     PrintHelperClass printHelper;
 
-    // The features in this sample were chosen because they&#39;re available on a wide range of printer drivers.
+    // The features in this sample were chosen because they're available on a wide range of printer drivers.
     private string[] features = { "PageOrientation", "PageOutputColor", "PageMediaSize", "PageMediaType" };
     private string[] selections = { null, null, null, null };
 
@@ -277,7 +277,7 @@ private void DisplaySettings(bool constraints=false)
 
         string feature = features[i];
 
-        // Check whether the currently selected printer&#39;s capabilities include this feature.
+        // Check whether the currently selected printer's capabilities include this feature.
         if (!printHelper.FeatureExists(feature))
         {
             continue;
@@ -416,7 +416,7 @@ async private void OnSaveRequested(object sender, PrintTaskConfigurationSaveRequ
     // for each feature
     for (var i = 0; i < features.Length; i++)
     {
-        // Set the feature&#39;s selected option in the context&#39;s print ticket.
+        // Set the feature's selected option in the context's print ticket.
         // The printerExtensionContext object is updated with each iteration of this loop
         printHelper.SetFeatureOption(features[i], selections[i]);
     }
@@ -451,7 +451,7 @@ async private void OnSaveRequested(object sender, PrintTaskConfigurationSaveRequ
         }
     }
 
-    // If ticket isn&#39;t saved, refresh UI and notify user
+    // If ticket isn't saved, refresh UI and notify user
     if (!ticketSaved)
     {
         await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>

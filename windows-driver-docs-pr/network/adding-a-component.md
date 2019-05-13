@@ -25,7 +25,7 @@ HRESULT CSample::SysNotifyComponent(DWORD dwChangeFlag,
 {
     HRESULT hr = S_OK;
     INetCfgComponentBindings *pncfgcompbind;
-    // Retrieve bindings for the notify object&#39;s component (m_pncc)
+    // Retrieve bindings for the notify object's component (m_pncc)
     hr = m_pncc->QueryInterface(IID_INetCfgComponentBindings, 
                                 (LPVOID*)&pncfgcompbind);
     // Determine if notification is about adding a component
@@ -35,11 +35,11 @@ HRESULT CSample::SysNotifyComponent(DWORD dwChangeFlag,
         hr = pnccItem->GetCharacteristics(&dwcc);
         // Determine if the added component is a physical adapter
         if (SUCCEEDED(hr) && (dwcc & NCF_PHYSICAL)) {
-            // Determine the component&#39;s ID
+            // Determine the component's ID
             LPWSTR pszwInfId;
             hr = pnccItem->GetId(&pszwInfId);
             if (SUCCEEDED(hr)) {
-                // Compare the component&#39;s ID to the required ID
+                // Compare the component's ID to the required ID
                 // and if they are the same perform the binding.
                 static const TCHAR c_szCompId[] = TEXT("BINDTO_NIC");
                 if (!_tcsicmp(pszwInfId, c_szCompId)) {

@@ -101,7 +101,7 @@ If none of the last three flags are specified, all three types of control area a
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about control areas, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (This book may not be available in some languages and countries.)
+For information about control areas, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
 Remarks
 -------

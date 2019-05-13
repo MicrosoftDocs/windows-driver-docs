@@ -34,7 +34,7 @@ NTSTATUS
   WSK_EVENT_CALLBACK_CONTROL EventCallbackControl;
   NTSTATUS Status;
 
-  // Get pointer to the socket&#39;s provider dispatch structure
+  // Get pointer to the socket's provider dispatch structure
   Dispatch =
     (PWSK_PROVIDER_CONNECTION_DISPATCH)(Socket->Dispatch);
 
@@ -89,7 +89,7 @@ NTSTATUS
   WSK_EVENT_CALLBACK_CONTROL EventCallbackControl;
   NTSTATUS Status;
 
-  // Get pointer to the socket&#39;s provider dispatch structure
+  // Get pointer to the socket's provider dispatch structure
   Dispatch =
     (PWSK_PROVIDER_CONNECTION_DISPATCH)(Socket->Dispatch);
 

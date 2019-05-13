@@ -273,7 +273,7 @@ CMyDevice::OnPrepareHardware(IWDFDevice* pDevice)
 
 /**
  * This function tells the OS that firmware update is in progress.
- * It should be called from the firmware update UMDF driver&#39;s 
+ * It should be called from the firmware update UMDF driver's 
  * IPnpCallbackHardware*:OnPrepareHardware handler after it has
  * successfully queued a workitem to perform the firmware update
  */

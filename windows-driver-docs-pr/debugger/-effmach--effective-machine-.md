@@ -42,7 +42,7 @@ You can enter one of the following machine types.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>.</strong></p></td>
-<td align="left"><p>Use the processor mode of the target computer&#39;s native processor mode.</p></td>
+<td align="left"><p>Use the processor mode of the target computer's native processor mode.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>#</strong></p></td>

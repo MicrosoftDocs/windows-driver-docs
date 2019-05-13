@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_storage_class_driver_s_standard_driver_routines_kg"></span><span id="DDK_STORAGE_CLASS_DRIVER_S_STANDARD_DRIVER_ROUTINES_KG"></span>
 
 
-This section describes how to implement [Standard Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff563842) in storage class drivers. It contains the following topics:
+This section describes how to implement [Standard Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-standard-driver-routines) in storage class drivers. It contains the following topics:
 
 [Storage Class Driver's DriverEntry Routine](storage-class-driver-s-driverentry-routine.md)
 

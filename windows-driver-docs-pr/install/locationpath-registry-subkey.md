@@ -36,7 +36,7 @@ The following table defines the format and requirements of the **LocationPath** 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Valid &quot;<em>LocationPath</em>&quot; value</p></td>
+<td align="left"><p>Valid "<em>LocationPath</em>" value</p></td>
 <td align="left"><p>Optional (* or a valid location path must be present to indicate the scope of the removable device capability override)</p></td>
 <td align="left"><p>None</p></td>
 <td align="left"><p><a href="locationpaths-registry-subkey.md" data-raw-source="[LocationPaths](locationpaths-registry-subkey.md)">LocationPaths</a> or <a href="childlocationpaths-registry-subkey.md" data-raw-source="[ChildLocationPaths](childlocationpaths-registry-subkey.md)">ChildLocationPaths</a></p></td>

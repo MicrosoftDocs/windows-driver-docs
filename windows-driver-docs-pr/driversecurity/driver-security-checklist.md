@@ -2,17 +2,15 @@
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
 ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
-ms.date: 01/26/2018
+ms.date: 04/02/2019
 ms.localizationpriority: medium
 ---
 
 # Driver security checklist
 
-
 This article provides a driver security checklist for driver developers to help reduce the risk of drivers being compromised.
 
 ## <span id="Driver_Security_Overview"></span><span id="driver_security_overview"></span><span id="DRIVER_SECURITY_OVERVIEW"></span>Driver security overview
-
 
 A security flaw is any flaw that allows an attacker to cause a driver to malfunction in such a way that it causes the system to crash or become unusable. In addition, vulnerabilities in driver code can allow an attacker to gain access to the kernel, creating a possibility of compromising the entire OS. When most developers are working on their driver, their focus is on getting the driver to work properly, and not on whether a malicious attacker will attempt to exploit vulnerabilities within their code.
 
@@ -73,7 +71,6 @@ For information on using background tasks, see  [Support your app with backgroun
 
 For information on using Windows Services, see [Services](https://msdn.microsoft.com/library/windows/desktop/ms685141.aspx).
 
-
 ## <span id="confirmkernel"></span>Use the driver frameworks 
 
 **Security checklist item \#2:** *Use the driver frameworks to reduce the size of your code and increase it's reliability and security.*
@@ -123,7 +120,7 @@ This article provides driver specific guidance for creating a lightweight threat
 
 ![Sample data flow diagram for hypothetical kernel-mode driver](images/sampledataflowdiagramkernelmodedriver.gif)
 
-Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information see [SDL recommendations for OEMs](https://msdn.microsoft.com/windows/hardware/drivers/bringup/security-overview#sdl).
+Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information see [SDL recommendations for OEMs](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/security-overview#sdl-recommendations-for-oems).
 
 
 ## <span id="DriverSecurityCodePractices"></span><span id="driversecuritycodepractices"></span><span id="DRIVERSECURITYCODEPRACTICES"></span>Follow driver secure coding guidelines
@@ -185,9 +182,9 @@ To manage this risk, copy any parameters that need to be validated from the user
 
 **Driver code must make correct use of memory**
 
-- All driver pool allocations must be in non-executable (NX) pool. Using NX memory pools is inherently more secure than using executable non-paged (NP) pools, and provides better protection against overflow attacks. For more information about the related device fundamentals test, see [Device.DevFund.Memory.NXPool](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundmemory).
+- All driver pool allocations must be in non-executable (NX) pool. Using NX memory pools is inherently more secure than using executable non-paged (NP) pools, and provides better protection against overflow attacks. 
 
-- Device drivers must properly handle various user-mode, as well as kernel to kernel I/O, requests. For more information about the related device fundamentals test, see [Device.DevFund.Reliability.BasicSecurity](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundreliability).
+- Device drivers must properly handle various user-mode, as well as kernel to kernel I/O, requests. 
 
 To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [Device Guard Compatibility](#dgc) later in this article.
 
@@ -258,9 +255,9 @@ For more information about handling IRPs correctly, see [Additional Errors in Ha
 
 - Use a lock or an interlocked sequence to prevent race conditions. For more information, see [Errors in a Multiprocessor Environment](https://msdn.microsoft.com/library/windows/hardware/ff544288).
 
-- Ensure that device drivers properly handle various user-mode as well as kernel to kernel I/O requests. For more information, see [Device.DevFund.Reliability.BasicSecurity](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundreliability).
+- Ensure that device drivers properly handle various user-mode as well as kernel to kernel I/O requests.
 
-- Ensure that no TDI filters or LSPs are installed by the driver or associated software packages during installation or usage. For more information about the related driver fundamentals test, see [Device.DevFund.Security](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundsecurity).
+- Ensure that no TDI filters or LSPs are installed by the driver or associated software packages during installation or usage. 
 
 **Use safe functions**
 
@@ -365,11 +362,9 @@ To implement Device Guard compatible code, make sure your driver code does the f
 
 For more information about using the tool and a list of incompatible memory calls, see [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md).
 
-For general information about Device Guard, see [Windows 10 Device Guard and Credential Guard Demystified](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
-and [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+For general information about Device Guard, see [Driver compatibility with Device Guard in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/).
 
-For more information about the related device fundamentals test, see [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfunddeviceguard).
-
+For more information about the related system fundamentals security test, see [Device Guard - Compliance Test](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc) and [Driver Compatibility with Device Guard](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
 
 
 
@@ -520,7 +515,7 @@ Although the default rules find many common issues, consider running the more ex
 
 Use BinScope to examine application binary files to identify coding and building practices that can potentially render the application vulnerable to attack or to being used as an attack vector.
 
-For more information, see [New Version of BinScope Binary Analyzer](https://blogs.microsoft.com/microsoftsecure/2014/11/20/new-binscope-released/) and the user and getting started guides that are included with the tool download as well as this [BinScope Binary Analyzer TechNet Video](https://technet.microsoft.com/video/binscope-binary-analyzer.aspx).
+For more information, see [New Version of BinScope Binary Analyzer](https://cloudblogs.microsoft.com/microsoftsecure/2014/11/20/new-binscope-released/) and the user and getting started guides that are included with the tool download.
 
 
 Follow these steps to validate that the security compile options are properly configured in the code that you are shipping:
@@ -608,21 +603,28 @@ Driver Verifier allows for live testing of the driver. Driver Verifier monitors 
 
 **Hardware compatibility program tests**
 
-The hardware compatibility program includes security related tests can be used to look for code vulnerabilities. The Windows Hardware Compatibility Program leverages the tests in the Windows Hardware Lab Kit (HLK). The HLK Device Fundamentals tests can be used on the command line to exercise driver code and probe for weakness. For general information about the device fundamentals tests and the hardware compatibility program, see [Hardware Compatibility Specifications for Windows 10, version 1607](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/index).
+The hardware compatibility program includes security related tests can be used to look for code vulnerabilities. The Windows Hardware Compatibility Program leverages the tests in the Windows Hardware Lab Kit (HLK). The HLK Device Fundamentals tests can be used on the command line to exercise driver code and probe for weakness. For general information about the device fundamentals tests and the hardware compatibility program, see [Windows Hardware Lab Kit](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/windows-hardware-lab-kit).
 
 The following tests are examples of tests that may be useful to check driver code for some behaviors associated with code vulnerabilities:
 
-- Device driver must properly handle various user-mode, as well as kernel to kernel I/O, requests. For more information, see [Device.DevFund.Reliability.BasicSecurity](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#devicedevfundreliability)
+ [DF - Fuzz random IOCTL test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/236b8ad5-0ba1-4075-80a6-ae9dafb71c94)
 
-- The Device Fundamentals Penetration tests perform various forms of input attacks, which are a critical component of security testing. Attack and Penetration testing can help identify vulnerabilities in software interfaces. Some basic fuzz testing, as well as the IoSpy and IoAttack utilities, are included. For more information, see [Penetration Tests (Device Fundamentals)](https://msdn.microsoft.com/windows/hardware/drivers/devtest/penetration-tests--device-fundamentals-) and [How to Perform Fuzz Tests with IoSpy and IoAttack](https://msdn.microsoft.com/windows/hardware/drivers/devtest/how-to-perform-fuzz-tests-with-iospy-and-ioattack).
+ [DF - Fuzz sub-opens test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/92bf534e-aa48-4aeb-b3cd-e46fb7cc7d80)
 
-- The CHAOS (Concurrent Hardware and Operating System) tests run various PnP driver tests, device driver fuzz tests, and power system tests concurrently. For more information, see [CHAOS Tests (Device Fundamentals)](https://msdn.microsoft.com/windows/hardware/drivers/devtest/chaos-tests--device-fundamentals-).
+ [DF - Fuzz zero length buffer FSCTL test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/5f5f6c7e-d5db-4ff1-8cee-da47203ab070)
 
-- Device Path Exerciser runs as part of Device.DevFund.Reliability.BasicSecurity. For more information see [Device.DevFund.Reliability](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund).
+ [DF - Fuzz random FSCTL test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/e529e34e-076a-4978-926f-7eca333e8f4d)
 
-- All driver pool allocations must be in NX pool. Using non-executable memory pools is inherently more secure than executable non-paged (NP) pools, and provides better protection against overflow attacks. For more information, see [DevFund.Memory.NXPool](https://msdn.microsoft.com/ie/dn932575#device-devfund-memory-nxpool).
+ [DF - Fuzz Misc API test (Reliability)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/fb305d04-6e8c-4dfc-9984-9692df82fbd8)
 
-- Use the [Device.DevFund.DeviceGuard](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/device-devfund#device-devfund-deviceguard) test, along with the other tools described in this article, to confirm that your driver is Device Guard compatible.
+ You can also use the [Kernel synchronization delay fuzzing](https://docs.microsoft.com/windows-hardware/drivers/devtest/kernel-synchronization-delay-fuzzing) that is included with Driver Verifier.
+
+The CHAOS (Concurrent Hardware and Operating System) tests run various PnP driver tests, device driver fuzz tests, and power system tests concurrently. For more information, see [CHAOS Tests (Device Fundamentals)](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/chaos-tests--device-fundamentals-).
+
+The Device Fundamentals Penetration tests perform various forms of input attacks, which are a critical component of security testing. Attack and Penetration testing can help identify vulnerabilities in software interfaces. For more information, see [Penetration Tests (Device Fundamentals)](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/penetration-tests--device-fundamentals-).
+
+Use the [Device Guard - Compliance Test](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc), along with the other tools described in this article, to confirm that your driver is Device Guard compatible.
+
 
 **Custom and domain-specific test tools**
 
@@ -693,6 +695,10 @@ SAFECode - [https://www.safecode.org/](https://www.safecode.org/)
 [Locking Down Drivers - A Survey of Techniques](https://www.osronline.com/article.cfm?article=357) 
 
 [Meltdown and Spectre: What about drivers?](https://www.osr.com/blog/2018/01/23/meltdown-spectre-drivers/) 
+
+**Case Study**
+
+[From alert to driver vulnerability: Microsoft Defender ATP investigation unearths privilege escalation flaw](https://www.microsoft.com/security/blog/2019/03/25/from-alert-to-driver-vulnerability-microsoft-defender-atp-investigation-unearths-privilege-escalation-flaw/)
 
 
 **Books**

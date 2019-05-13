@@ -21,7 +21,7 @@ As the figure shows, the Windows operating system includes both user-mode and ke
 
 Drivers call routines that are exported by various kernel components. For example, to create a device object, you would call the [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) routine which is exported by the I/O manager. For a list of kernel-mode routines that drivers can call, see [Driver Support Routines](https://msdn.microsoft.com/library/windows/hardware/ff544200).
 
-In addition, drivers must respond to specific calls from the operating system and can respond to other system calls. For a list of kernel mode routines that drivers may need to support, see [Standard Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff563842).
+In addition, drivers must respond to specific calls from the operating system and can respond to other system calls. For a list of kernel mode routines that drivers may need to support, see [Standard Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-standard-driver-routines).
 
 Not all kernel-mode components are pictured in the figure above. For a list of kernel mode components, see [Kernel-Mode Managers and Libraries](kernel-mode-managers-and-libraries.md).
 

@@ -1,23 +1,31 @@
 - name: "WHEA design guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "WHEA design guide"
+    href: index.md
   - name: "Introduction to the Windows Hardware Error Architecture"
     href: introduction-to-the-windows-hardware-error-architecture.md
   - name: "New Information for Windows Hardware Error Architecture"
-    href: new-information-for-windows-hardware-error-architecture.md
+# Auto-expanded node
     items: 
+    - name: "New Information for Windows Hardware Error Architecture"
+      href: new-information-for-windows-hardware-error-architecture.md
     - name: "WHEA Changes for Windows Server 2008 and Windows Vista SP1"
       href: whea-changes-for-windows-server-2008-and-windows-vista-sp1.md
     - name: "WHEA Changes for Windows 7"
-      href: whea-changes-for-windows-7.md
+# Auto-expanded node
       items: 
+      - name: "WHEA Changes for Windows 7"
+        href: whea-changes-for-windows-7.md
       - name: "Renamed WHEA Data Types"
         href: renamed-whea-data-types.md
   - name: "Windows Hardware Error Architecture Definitions"
     href: windows-hardware-error-architecture-definitions.md
   - name: "Windows Hardware Error Architecture Overview"
-    href: windows-hardware-error-architecture-overview.md
+# Auto-expanded node
     items: 
+    - name: "Windows Hardware Error Architecture Overview"
+      href: windows-hardware-error-architecture-overview.md
     - name: "Hardware Errors and Error Sources"
       href: hardware-errors-and-error-sources.md
     - name: "Relationship between Microsoft Windows and the System Firmware"
@@ -31,34 +39,44 @@
     - name: "Error Record Persistence Mechanism"
       href: error-record-persistence-mechanism.md
     - name: "Predictive Failure Analysis (PFA)"
-      href: predictive-failure-analysis--pfa-.md
+# Auto-expanded node
       items: 
+      - name: "Predictive Failure Analysis (PFA)"
+        href: predictive-failure-analysis--pfa-.md
       - name: "WHEA Policy Settings"
         href: whea-pfa-registry-settings.md
       - name: "PFA Performed by WHEA"
-        href: pfa-performed-by-whea.md
+# Auto-expanded node
         items: 
+        - name: "PFA Performed by WHEA"
+          href: pfa-performed-by-whea.md
         - name: "How WHEA Performs PFA on ECC Memory"
           href: how-whea-performs-pfa-on-ecc-memory.md
       - name: "PFA Performed by a PSHED Plug-In"
         href: pfa-performed-by-a-pshed-plug-in.md
       - name: "Persistence of PFA Results"
-        href: persistence-of-pfa-results.md
+# Auto-expanded node
         items: 
+        - name: "Persistence of PFA Results"
+          href: persistence-of-pfa-results.md
         - name: "How to Manage the PFA Memory List"
           href: how-to-manage-the-pfa-memory-list.md
     - name: "Differences from Previous Versions of Microsoft Windows"
       href: differences-from-previous-versions-of-microsoft-windows.md
   - name: "Platform-Specific Hardware Error Driver Plug-Ins"
-    href: platform-specific-hardware-error-driver-plug-ins2.md
+# Auto-expanded node
     items: 
+    - name: "Platform-Specific Hardware Error Driver Plug-Ins"
+      href: platform-specific-hardware-error-driver-plug-ins2.md
     - name: "Roadmap for Developing PSHED Plug-Ins"
       href: roadmap-for-developing-pshed-plug-ins.md
     - name: "Introduction to PSHED Plug-Ins"
       href: introduction-to-pshed-plug-ins.md
     - name: "Functional Areas"
-      href: functional-areas.md
+# Auto-expanded node
       items: 
+      - name: "Functional Areas"
+        href: functional-areas.md
       - name: "Error Source Discovery"
         href: error-source-discovery.md
       - name: "Error Source Control"
@@ -72,8 +90,10 @@
       - name: "Error Injection"
         href: error-injection.md
     - name: "PSHED Plug-In Operations"
-      href: pshed-plug-in-operations.md
+# Auto-expanded node
       items: 
+      - name: "PSHED Plug-In Operations"
+        href: pshed-plug-in-operations.md
       - name: "Registering a PSHED Plug-In"
         href: registering-a-pshed-plug-in.md
       - name: "Participating in Error Source Discovery"
@@ -93,8 +113,10 @@
     - name: "Building a PSHED Plug-In"
       href: building-a-pshed-plug-in.md
     - name: "PSHED Plug-In Installation"
-      href: pshed-plug-in-installation.md
+# Auto-expanded node
       items: 
+      - name: "PSHED Plug-In Installation"
+        href: pshed-plug-in-installation.md
       - name: "INF Files for PSHED Plug-Ins"
         href: inf-files-for-pshed-plug-ins.md
       - name: "Installing PSHED Plug-Ins"
@@ -102,13 +124,17 @@
       - name: "Qualifying and Distributing PSHED Plug-Ins"
         href: qualifying-and-distributing-pshed-plug-ins.md
   - name: "Windows Hardware Error Architecture-Aware User-Mode Applications"
-    href: windows-hardware-error-architecture-aware-user-mode-applications.md
+# Auto-expanded node
     items: 
+    - name: "Windows Hardware Error Architecture-Aware User-Mode Applications"
+      href: windows-hardware-error-architecture-aware-user-mode-applications.md
     - name: "Introduction to WHEA-Aware User-Mode Applications"
       href: introduction-to-whea-aware-user-mode-applications.md
     - name: "WHEA Hardware Error Event Processing Applications"
-      href: whea-hardware-error-event-processing-applications.md
+# Auto-expanded node
       items: 
+      - name: "WHEA Hardware Error Event Processing Applications"
+        href: whea-hardware-error-event-processing-applications.md
       - name: "WHEA Hardware Error Events"
         href: whea-hardware-error-events.md
       - name: "Querying the System Event Log for Hardware Error Events"
@@ -116,13 +142,17 @@
       - name: "Registering for Notification of Hardware Error Events"
         href: registering-for-notification-of-hardware-error-events.md
     - name: "WHEA Management Applications"
-      href: whea-management-applications.md
+# Auto-expanded node
       items: 
+      - name: "WHEA Management Applications"
+        href: whea-management-applications.md
       - name: "Introduction to WHEA Management Applications"
         href: introduction-to-whea-management-applications.md
       - name: "WHEA Management Operations"
-        href: whea-management-operations.md
+# Auto-expanded node
         items: 
+        - name: "WHEA Management Operations"
+          href: whea-management-operations.md
         - name: "Getting Error Source Information for All Error Sources"
           href: getting-error-source-information-for-all-error-sources.md
         - name: "Getting Error Source Information for a Specific Error Source"

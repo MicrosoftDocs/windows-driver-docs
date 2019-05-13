@@ -47,7 +47,7 @@ This uninstall action does not undo all the actions that were performed during t
 
 ### <a href="" id="deleting-a-driver-package-from-the-driver-store"></a> Deleting a Driver Package from the Driver Store
 
-This uninstall action deletes the files that are associated with the [driver package](driver-packages.md) from the [driver store](driver-store.md) and removes the associated metadata from the PnP manager's internal database. This action also deletes the [INF files](inf-files.md), which are associated with the driver package, from the system INF directory.
+This uninstall action deletes the files that are associated with the [driver package](driver-packages.md) from the [driver store](driver-store.md) and removes the associated metadata from the PnP manager's internal database. This action also deletes the [INF files](overview-of-inf-files.md), which are associated with the driver package, from the system INF directory.
 
 After the driver package has been removed from the driver store, it is no longer available to be installed on a device. The driver package must be restaged and installed to the [driver store](driver-store.md) from the original source, such as optical media, a network share, or Windows Update.
 

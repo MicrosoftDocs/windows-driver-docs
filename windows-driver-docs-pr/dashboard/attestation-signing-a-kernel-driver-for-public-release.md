@@ -16,8 +16,8 @@ This topic describes how to sign a driver using attestation signing.
 > - Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
 > - Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
 > - Attestation signing requires the use of an EV Certificate to submit the driver to the Partner Center.
-> - An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
-> - Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
+> - **An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows 8.1,  Windows 7, or any Windows Server versions.**
+> - Attestation signing requires driver folder names to contain no special characters, no UNC file share paths, and to be less than 40 characters long.
  
 ## Attestation signing a kernel mode driver
 
@@ -74,10 +74,11 @@ Typical CAB file submissions contain the following:
 - The driver itself, for example Echo.sys
 - The driver INF file that is used by the dashboard to facilitate the signing process.
 - The symbol file that is used for debugging information. For example, Echo.pdb.
-- Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
+- Catalog .CAT files are required and used for company verfication only. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
 
   > [!NOTE]
   > All driver folders in your CAB file must support the same set of architectures. For example, they all must support x86, x64, or they all must support both x86 and x64.
+  > - Do not use UNC file share paths when referencing your driver locations (\\\server\share).  You must use a mapped drive letter for the CAB to be valid. 
 
 2. Use MakeCab.exe to process the DDF file and create a cab file.
 
@@ -155,10 +156,10 @@ Throughput:              86.77 Kb/second
 
 ## Sign the submission CAB file with your EV certificate
 
-1. Use the process recommended by the EV cert provider to sign the cab file with your EV cert. For example, you might use the signtool and if you are using Verisign, you might specify their timestamp server.
+1. Use the process recommended by the EV cert provider to sign the cab file with your EV cert. For example, to sign your .CAB with a SHA256 Certificate/Digest Algorithm/Timestamp  
 
 ```cpp
-C:\Echo> SignTool sign /v /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /t http://timestamp.verisign.com/scripts/timstamp.dll "C:\Echo\Disk1\Echo.cab"
+C:\Echo> SignTool sign /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /fd sha256 /tr http://sha256timestamp.ws.symantec.com/sha256/timestamp /td sha256 /v "C:\Echo\Disk1\Echo.cab"
 ```
 
 > [!IMPORTANT]

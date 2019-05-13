@@ -210,7 +210,7 @@ Note that certificates and keys are logically grouped by the Base CSP/KSP into s
 <td align="left">File</td>
 <td align="left">E(R) U(R) A(RW)</td>
 <td align="left"><p>Directory index by application name.</p>
-<p>For more information, see &#39;Application Directory&#39;.</p></td>
+<p>For more information, see 'Application Directory'.</p></td>
 </tr>
 <tr class="even">
 <td align="left">mscp</td>

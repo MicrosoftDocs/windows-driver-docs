@@ -87,7 +87,7 @@ The following flags can be present.
 </tr>
 <tr class="odd">
 <td align="left"><p>DBG_DUMP_READ_PHYSICAL</p></td>
-<td align="left"><p>The symbol&#39;s value will be read directly from the target&#39;s physical memory.</p></td>
+<td align="left"><p>The symbol's value will be read directly from the target's physical memory.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DBG_DUMP_FUNCTION_FORMAT</p></td>

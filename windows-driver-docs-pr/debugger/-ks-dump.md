@@ -128,7 +128,7 @@ Some important parts of this display are included in the following table.
 </tr>
 <tr class="odd">
 <td align="left"><p>State</p></td>
-<td align="left"><p>The internal state of the pin&#39;s transport to non-AVStream filters.</p></td>
+<td align="left"><p>The internal state of the pin's transport to non-AVStream filters.</p></td>
 </tr>
 </tbody>
 </table>

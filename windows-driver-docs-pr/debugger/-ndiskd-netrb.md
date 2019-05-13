@@ -1,6 +1,6 @@
 ---
 title: ndiskd.netrb
-description: The ndiskd.netrb extension displays information about a NET_RING_BUFFER structure.
+description: The ndiskd.netrb extension displays information about a NET_RING structure.
 ms.assetid: 2D749E7E-00A5-422B-B785-B8DB3393A74F
 keywords: ["ndiskd.netrb Windows Debugging"]
 ms.date: 05/23/2017
@@ -11,6 +11,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # !ndiskd.netrb
@@ -80,7 +81,7 @@ By clicking on the handle for the ring buffer or by entering the **!ndiskd.netrb
 ```console
 0: kd> !ndiskd.netrb ffffd1022d000000
 
-    NET_RING_BUFFER    ffffd1022d000000
+    NET_RING    ffffd1022d000000
 
     Number of elements 0x080
     Owned by OS        0x080

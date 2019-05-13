@@ -38,7 +38,7 @@ In addition, an NDIS 6.80 driver must be compliant with the following requiremen
 
 - An NDIS 6.80 driver must report the correct NDIS version when it registers with NDIS.
 
-   You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.80. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 80. This requirement applies to miniport, protocol and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.80 driver](#compiling-an-ndis-670-driver)).
+   You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.80. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 80. This requirement applies to miniport, protocol and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.80 driver](#compiling-an-ndis-680-driver)).
 
 ## Compiling an NDIS 6.80 driver
 

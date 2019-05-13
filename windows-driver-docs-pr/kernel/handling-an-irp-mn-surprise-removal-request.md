@@ -147,7 +147,7 @@ The flag bits in a PNP\_DEVICE\_STATE value are defined as follows.
 <td>PNP_DEVICE_NOT_DISABLEABLE</td>
 <td><p>The device is required when the computer starts. Such a device must not be disabled.</p>
 <p>A driver sets this bit for a device that is required for proper system operation. For example, if a driver receives notification that a device is in the paging path (<a href="irp-mn-device-usage-notification.md" data-raw-source="[&lt;strong&gt;IRP_MN_DEVICE_USAGE_NOTIFICATION&lt;/strong&gt;](irp-mn-device-usage-notification.md)"><strong>IRP_MN_DEVICE_USAGE_NOTIFICATION</strong></a> for <strong>DeviceUsageTypePaging</strong>), the driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff549361" data-raw-source="[&lt;strong&gt;IoInvalidateDeviceState&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549361)"><strong>IoInvalidateDeviceState</strong></a> and sets this flag in the resulting <strong>IRP_MN_QUERY_PNP_DEVICE_STATE</strong> request.</p>
-<p>If this bit is set for a device, the PnP manager propagates this setting to the device&#39;s parent device, its parent&#39;s parent device, and so forth.</p>
+<p>If this bit is set for a device, the PnP manager propagates this setting to the device's parent device, its parent's parent device, and so forth.</p>
 <p>If this bit is set for a root-enumerated device, the device cannot be disabled or uninstalled.</p></td>
 </tr>
 <tr class="odd">

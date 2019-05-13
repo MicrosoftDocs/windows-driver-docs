@@ -1,11 +1,15 @@
-- name: "Windows Hardware Dev Center dashboard"
-  href: index.md
+- name: "Partner Center for Windows Hardware"
+# Auto-expanded node
   items: 
+  - name: "Partner Center for Windows Hardware"
+    href: index.md
   - name: "Hardware Program dashboard FAQ"
     href: hardware-dashboard-faq.md
   - name: "Hardware submissions"
-    href: hardware-certification-submissions.md
+# Auto-expanded node
     items: 
+    - name: "Hardware submissions"
+      href: hardware-certification-submissions.md
     - name: "Create a new hardware submission"
       href: create-a-new-hardware-submission.md
     - name: "Manage hardware submissions"
@@ -13,8 +17,10 @@
     - name: "Find a hardware submission"
       href: find-hardware-submission.md
     - name: "Create a new WLK device certification submission"
-      href: create-a-new-hardware-logo-submission.md
+# Auto-expanded node
       items: 
+      - name: "Create a new WLK device certification submission"
+        href: create-a-new-hardware-logo-submission.md
       - name: "Winqual Submission Tool (winqual.exe)"
         href: winqual-submission-tool--winqualexe-.md
     - name: "ID definitions"
@@ -30,8 +36,10 @@
     - name: "Bug Management"
       href: bug-management.md
   - name: "Manage driver distribution with shipping labels"
-    href: manage-driver-distribution-by-submission.md
+# Auto-expanded node
     items: 
+    - name: "Manage driver distribution with shipping labels"
+      href: manage-driver-distribution-by-submission.md
     - name: "Publishing restrictions"
       href: publishing-restrictions.md
     - name: "Publish a driver to Windows Update"
@@ -53,11 +61,15 @@
     - name: "Publishing for test distribution"
       href: publishing-for-test-distribution.md
   - name: "Hardware dashboard API"
-    href: dashboard-api.md
+# Auto-expanded node
     items: 
+    - name: "Hardware dashboard API"
+      href: dashboard-api.md
     - name: "Get product data"
-      href: get-product-data.md
+# Auto-expanded node
       items: 
+      - name: "Get product data"
+        href: get-product-data.md
       - name: "Get all products"
         href: get-all-products.md
       - name: "Get a product"
@@ -67,8 +79,10 @@
       - name: "Get a submission"
         href: get-a-submission.md
     - name: "Manage product submissions"
-      href: manage-product-submissions.md
+# Auto-expanded node
       items: 
+      - name: "Manage product submissions"
+        href: manage-product-submissions.md
       - name: "Create a new product"
         href: create-a-new-product.md
       - name: "Create a new submission for a product"
@@ -80,15 +94,19 @@
       - name: "Update product data"
         href: update-product-data.md
     - name: "Get shipping label data"
-      href: get-shipping-labels.md
+# Auto-expanded node
       items: 
+      - name: "Get shipping label data"
+        href: get-shipping-labels.md
       - name: "Get all shipping labels"
         href: get-all-shipping-labels.md
       - name: "Get a shipping label"
         href: get-a-shipping-label.md
     - name: "Manage shipping labels"
-      href: manage-shipping-labels.md
+# Auto-expanded node
       items:
+      - name: "Manage shipping labels"
+        href: manage-shipping-labels.md
       - name: "Create a new shipping label"
         href: create-a-new-shipping-label.md
       - name: "Update a shipping label"
@@ -98,8 +116,10 @@
     - name: "Driver package metadata"
       href: driver-package-metadata.md
     - name: "Schedule custom reports for your driver failure details"
-      href: schedule-custom-reports-for-driver-failure-details.md
+# Auto-expanded node
       items:
+      - name: "Schedule custom reports for your driver failure details"
+        href: schedule-custom-reports-for-driver-failure-details.md
       - name: "Enable Secure Data Sharing"
         href: enable-secure-data-sharing.md
       - name: "Create a new report template"
@@ -115,25 +135,33 @@
     - name: "Sample report templates"
       href: sample-report-templates.md
     - name: "Legacy error reporting data process"
-      href: legacy-error-reporting-data-process.md
+# Auto-expanded node
       items:
+      - name: "Legacy error reporting data process"
+        href: legacy-error-reporting-data-process.md
       - name: "Get error reporting data for Windows 10 drivers"
-        href: get-error-reporting-data-for-windows-10-drivers.md
+# Auto-expanded node
         items:
+        - name: "Get error reporting data for Windows 10 drivers"
+          href: get-error-reporting-data-for-windows-10-drivers.md
         - name: "Get details for a Windows 10 driver error"    
           href: get-details-for-a-windows-10-driver-error.md
         - name: "Download the CAB file for a Windows 10 driver error"
           href: download-the-cab-file-for-a-windows-10-driver-error.md
       - name: "Get error reporting data for Windows 7 and Windows 8.x drivers"
-        href: get-error-reporting-data-for-windows-7-and-windows-8.x-drivers.md
+# Auto-expanded node
         items:
+        - name: "Get error reporting data for Windows 7 and Windows 8.x drivers"
+          href: get-error-reporting-data-for-windows-7-and-windows-8.x-drivers.md
         - name: "Get details for a Windows 7 or Windows 8.x driver error"
           href: get-details-for-a-windows-7-or-windows-8.x-driver-error.md
         - name: "Download the CAB file for a Windows 7 or Windows 8.x driver error"
           href: download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md
       - name: "Get OEM hardware error reporting data"
-        href: get-oem-hardware-error-reporting-data.md
+# Auto-expanded node
         items: 
+        - name: "Get OEM hardware error reporting data"
+          href: get-oem-hardware-error-reporting-data.md
         - name: "Get details for an OEM hardware error"
           href: get-details-for-an-oem-hardware-error.md
         - name: "Download the CAB file for an OEM hardware error"
@@ -141,8 +169,10 @@
   - name: "File signing LSA plugins and UEFI firmware"
     href: lsa-and-uefi-file-signing.md
   - name: "Dashboard Administration"
-    href: dashboard-administration.md
+# Auto-expanded node
     items: 
+    - name: "Dashboard Administration"
+      href: dashboard-administration.md
     - name: "Get started with the Hardware Program"
       href: get-started-with-the-hardware-dashboard.md
     - name: "Register for the Hardware Program"
@@ -155,21 +185,27 @@
       href: managing-user-roles.md
     - name: "Get a code signing certificate"
       href: get-a-code-signing-certificate.md
-    - name: "Update a code signing certificate"
+    - name: "Add or Update a code signing certificate"
       href: update-a-code-signing-certificate.md
   - name: "Device Metadata"
-    href: device-metadata.md
+# Auto-expanded node
     items: 
+    - name: "Device Metadata"
+      href: device-metadata.md
     - name: "Create a Device Metadata Experience"
-      href: create-a-device-metadata-experience.md
+# Auto-expanded node
       items: 
+      - name: "Create a Device Metadata Experience"
+        href: create-a-device-metadata-experience.md
       - name: "Creating a Preview Package"
         href: creating-a-preview-package.md
     - name: "Manage Device Metadata Experiences"
       href: manage-device-metadata-experiences.md
     - name: "Submit a Device Metadata Package (Dashboard help)"
-      href: submit-a-device-metadata-package--dashboard-help-.md
+# Auto-expanded node
       items: 
+      - name: "Submit a Device Metadata Package (Dashboard help)"
+        href: submit-a-device-metadata-package--dashboard-help-.md
       - name: "Create the LocaleInfo.xml Submission File"
         href: create-the-localeinfoxml-submission-file.md
       - name: "Submit a PC device manifest package"
@@ -185,8 +221,10 @@
     - name: "Device Metadata Business Rules"
       href: device-metadata-business-rules.md
     - name: "Create a mobile broadband experience"
-      href: create-a-mobile-broadband-experience.md
+# Auto-expanded node
       items: 
+      - name: "Create a mobile broadband experience"
+        href: create-a-mobile-broadband-experience.md
       - name: "Developer and preview mode"
         href: developer-and-preview-mode.md
       - name: "Service icon requirements"
