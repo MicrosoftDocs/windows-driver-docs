@@ -10,10 +10,10 @@ ms.date: 10/17/2018
 The Hdpi.h header file contains several macros. 
 This topic documents the following macros:
 
-* [**HidP\_GetButtons**](#HidPGetButtons)
-* [**HidP\_GetButtonsEx**](#HidPGetButtonsEx)
-* [**HidP\_SetButtons**](#HidPSetButtons)
-* [**HidP\_UnsetButtons**](#HidPUnsetButtons)
+* [**HidP\_GetButtons**](#hidp_getbuttons)
+* [**HidP\_GetButtonsEx**](#hidp_getbuttonsex)
+* [**HidP\_SetButtons**](#hidp_setbuttons)
+* [**HidP\_UnsetButtons**](#hidp_unsetbuttons)
 
 
 ##  HidP\_GetButtons

@@ -10,16 +10,16 @@ ms.localizationpriority: medium
 
 This topic summarizes the new features and improvements for Universal Serial Bus (USB) client drivers in Windows 8.
 
--   [New Driver Stack for USB 3.0 Devices](#new-driver-stack-for-usb-3-0-devices)
+-   [New Driver Stack for USB 3.0 Devices](#new-driver-stack-for-usb-30-devices)
 -   [Features Supported by the New Stack](#features-supported-by-the-new-stack)
 -   [Client contract version for USB client drivers](#client-contract-version-for-usb-client-drivers)
 -   [New Routines for Allocating and Building URBs](#new-routines-for-allocating-and-building-urbs)
--   [New User Mode I/O Control Requests for USB 3.0 Hubs](#new-user-mode-i-o-control-requests-for-usb-3-0-hubs)
+-   [New User Mode I/O Control Requests for USB 3.0 Hubs](#new-user-mode-io-control-requests-for-usb-30-hubs)
 -   [New Compatible ID for WinUSB](#new-compatible-id-for-winusb)
--   [New Visual Studio templates for USB client drivers *(\*New for Beta)*](#new-visual-studio-templates-for-usb-client-drivers---new-for-beta-)
+-   [New Visual Studio templates for USB client drivers *(\*New for Beta)*](#new-visual-studio-templates-for-usb-client-drivers-new-for-beta)
 -   [UASP driver](#uasp-driver)
 -   [Boot support](#boot-support)
--   [Enhanced debugging and diagnostic capabilities](#enhanced-debugging-and-diagnostic-capabilities-----)
+-   [Enhanced debugging and diagnostic capabilities](#enhanced-debugging-and-diagnostic-capabilities)
 -   [New USB-specific failure messages in Device Manager](#new-usb-specific-failure-messages-in-device-manager)
 
 For information about new features in USB in general, see [New for USB Drivers](https://msdn.microsoft.com/library/windows/hardware/hh451212).

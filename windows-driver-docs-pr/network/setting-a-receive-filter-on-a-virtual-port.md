@@ -13,13 +13,13 @@ After a virtual port (VPort) is created on the NIC switch of the network adapter
 
 This topic contains the following information:
 
-[Setting a Receive Filter on a VPort](#set)
+[Setting a Receive Filter on a VPort](#setting-a-receive-filter-on-a-vport)
 
-[Using the NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO Flag](#flag)
+[Using the NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO Flag](#using-the-ndis_receive_filter_field_mac_header_vlan_untagged_or_zero-flag)
 
-[Using the Filter Identifier](#filter-id)
+[Using the Filter Identifier](#using-the-filter-identifier)
 
-[Handling Receive Filters on a VPort](#handle)
+[Handling Receive Filters on a VPort](#handling-receive-filters-on-a-vport)
 
 For more information on how to create a VPort, see [Creating a Virtual Port](creating-a-virtual-port.md).
 

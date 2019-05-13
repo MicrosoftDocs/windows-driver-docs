@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
  
 
-Except under certain conditions, *class installers* and *co-installers* should not use the standard registry functions to create, change, or delete registry keys. In most cases, registry keys should only be modified by using directives that are put in [INF files](inf-files.md). For more information about these directives, see [Summary of INF Directives](summary-of-inf-directives.md).
+Except under certain conditions, *class installers* and *co-installers* should not use the standard registry functions to create, change, or delete registry keys. In most cases, registry keys should only be modified by using directives that are put in [INF files](overview-of-inf-files.md). For more information about these directives, see [Summary of INF Directives](summary-of-inf-directives.md).
 
 The following are exceptions to this rule:
 

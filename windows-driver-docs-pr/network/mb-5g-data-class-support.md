@@ -162,7 +162,7 @@ This CID is the same as defined on [MB Multi-SIM operations](mb-multi-sim-operat
 
 If the device supports both new data classes, then both bits shall be set.
 
-### MBIM_DATA_CLASS
+## MBIM_DATA_CLASS
 
 | Types | Mask |
 | --- | --- |
@@ -216,7 +216,7 @@ The InformationBuffer in MBIM_COMMAND_DONE contains the following MBIM_REGISTRAT
 | 0 | 4 | NwError | UINT32 | A network-specific error. Table 10-44 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) documents the cause codes for NwError. |
 | 4 | 4 | RegisterState | MBIM_REGISTER_STATE | See Table 10-46 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip). |
 | 8 | 4 | RegisterMode | MBIM_REGISTER_MODE | See Table 10-47 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip). |
-| 12 | 4 | AvailableDataClass | UINT32 | A bitmap of the values in [MBIM_DATA_CLASS](#mbimdataclass) that represents the supported data classes on the registered network, for the cell in which the device is registered. <p>This value is set to MBIMDataClassNone if the **RegisterState** is not **MBIMRegisterStateHome**, **MBIMRegisterStateRoaming**, or **MBIMRegisterStatePartner**. </p> |
+| 12 | 4 | AvailableDataClass | UINT32 | A bitmap of the values in [MBIM_DATA_CLASS](#mbim_data_class) that represents the supported data classes on the registered network, for the cell in which the device is registered. <p>This value is set to MBIMDataClassNone if the **RegisterState** is not **MBIMRegisterStateHome**, **MBIMRegisterStateRoaming**, or **MBIMRegisterStatePartner**. </p> |
 | 16 | 4 | CurrentCellularClass | MBIM_CELLULAR_CLASS | Indicates the current cellular class in use for a multi-mode function. See Table 10-8 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) for more information. <p>For a single-mode function, this is the same as the cellular class reported in MBIM_CID_DEVICE_CAPS. For multi-mode functions, a transition from CDMA to GSM or vice versa is indicated with an updated **CurrentCellularClass**. </p> |
 | 20 | 4 | ProviderIdOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called **ProviderId** that represents the network provider identity. <p>For GSM-based networks, this string is a concatenation of a three-digit Mobile Country Code (MCC) and a two- or three-digit Mobile Network Code (MNC). GSM-based carriers might have more than one MNC, and hence more than one **ProviderId**.</p><p>For CDMA-based networks, this string is a five-digit System ID (SID). Generally, a CDMA-based carrier has more than one SID. Typically, a carrier has one SID for each market that is usually divided geographically within a nation by regulations, such as Metropolitan Statistical Areas (MSA) in the United States. CDMA-based devices must specify MBIM_CDMA_DEFAULT_PROVIDER_ID if this information is not available.</p><p>When processing a query request and the registration state is in automatic register mode, this member contains the provider ID with which the device is currently associated (if applicable). When the registration state is in manual register mode, this member contains the provider ID to which the device is requested to register (even if the provider is unavailable).</p><p>When processing a set request and the registration state is in manual mode, this contains the provider ID selected by the host with which to register the device. When the registration state is in automatic register mode, this parameter is ignored.</p><p>CDMA 1xRTT providers must be set to MBIM_CDMA_DEFAULT_PROVIDER_ID if the provider ID is not available.</p> |
 | 24 | 4 | ProviderIdSize | SIZE(0..12) | The size, in bytes, for **ProviderId**. |
@@ -225,7 +225,7 @@ The InformationBuffer in MBIM_COMMAND_DONE contains the following MBIM_REGISTRAT
 | 36 | 4 | RoamingTextOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a string called **RoamingText** to inform a user that the device is roaming. This member is limited to, at most, 63 characters. This text should provide additional information to the user when the registration state is either MBIMRegisterStatePartner or MBIMRegisterStateRoaming. This member is optional. |
 | 40 | 4 | RoamingTextSize | SIZE(0..126) | The size, in bytes, for **RoamingText**. |
 | 44 | 4 | RegistrationFlag | MBIM_REGISTRATION_FLAGS | Flags set per Table 10-48 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip). |
-| 48 | 4 | PreferredDataClass | UINT32 | A bitmap of the values in [MBIM_DATA_CLASS](#mbimdataclass) that represent the enabled data classes on the device. The device can only operate using the data classes that are enabled. |
+| 48 | 4 | PreferredDataClass | UINT32 | A bitmap of the values in [MBIM_DATA_CLASS](#mbim_data_class) that represent the enabled data classes on the device. The device can only operate using the data classes that are enabled. |
 | Dynamic | 4 | DataBuffer | DATABUFFER | The data buffer that contains **ProviderId**, **ProviderName**, and **RoamingText**. |
 
 ### Unsolicited Events
@@ -242,7 +242,7 @@ This command is an extension for the existing MBIM_CID_PACKET_SERVICE defined in
 
 This extension adds a new member called **FrequencyRange** for the response structure and renamed the **HighestAvailableDataClass** member to **CurrentDataClass** to clarify its purpose.
 
-The **CurrentDataClass** indicates the Radio Access Technology (RAT) with which the device is currently registered. It contains a single value from [MBIM_DATA_CLASS](#mbimdataclass).
+The **CurrentDataClass** indicates the Radio Access Technology (RAT) with which the device is currently registered. It contains a single value from [MBIM_DATA_CLASS](#mbim_data_class).
 
 The **FrequencyRange** indicates the frequency range that the device is currently using. This is valid only if the **CurrentDataClass** field indicates that the MBIMDataClass5G_NSA or MBIMDataClass5G_SA bit is set.
 
@@ -271,10 +271,10 @@ The InformationBuffer in MBIM_COMMAND_DONE contains an MBIM_PACKET_SERVICE_INFO_
 | --- | --- | --- | --- | --- |
 | 0 | 4 | NwError | UINT32 | A network-specific error. Table 10-44 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) documents the cause codes for NwError. |
 | 4 | 4 | PacketServiceState | MBIM_PACKET_SERVICE_STATE | See Table 10-53 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip). | 
-| 8 | 4 | CurrentDataClass | MBIM_DATA_CLASS | The current data class in the current cell, specified according to [MBIM_DATA_CLASS](#mbimdataclass). Functions must set this member to MBIMDataClassNone if the function is not in the attached packet service state. Except for HSPA (in other words, HSUPA and HSDPA) and 5G DC, the function sets this member to a single MBIM_DATA_CLASS value. For HSPA data services, functions specify a bitwise OR of MBIMDataClass HSDPA and MBIMDataClassHSUPA. For cells that support HSDPA but not HSUPA, only HSDPA is indicated (implying UMTS data class for uplink data). Whenever the current data class changes, functions send a notification indicating the new value of **CurrentDataClass**. |
+| 8 | 4 | CurrentDataClass | MBIM_DATA_CLASS | The current data class in the current cell, specified according to [MBIM_DATA_CLASS](#mbim_data_class). Functions must set this member to MBIMDataClassNone if the function is not in the attached packet service state. Except for HSPA (in other words, HSUPA and HSDPA) and 5G DC, the function sets this member to a single MBIM_DATA_CLASS value. For HSPA data services, functions specify a bitwise OR of MBIMDataClass HSDPA and MBIMDataClassHSUPA. For cells that support HSDPA but not HSUPA, only HSDPA is indicated (implying UMTS data class for uplink data). Whenever the current data class changes, functions send a notification indicating the new value of **CurrentDataClass**. |
 | 12 | 8 | UplinkSpeed | UINT64 | Contains the uplink bit rate, in bits per second. |
 | 20 | 8 | DownlinkSpeed | UINT64 | Contains the downlink bit rate, in bits per second. |
-| 38 | 4 | FrequencyRange | MBIM_FREQUENCY_RANGE | A bitmask of values in [MBIM_FREQUENCY_RANGE](#mbimfrequencyrange) that represents the frequency ranges that the device is currently using. This is only valid if the **CurrentDataClass** is either MBIMDataClass5G_NSA or MBIMDataClass5G_SA. |
+| 38 | 4 | FrequencyRange | MBIM_FREQUENCY_RANGE | A bitmask of values in [MBIM_FREQUENCY_RANGE](#mbim_frequency_range) that represents the frequency ranges that the device is currently using. This is only valid if the **CurrentDataClass** is either MBIMDataClass5G_NSA or MBIMDataClass5G_SA. |
 
 #### MBIM_FREQUENCY_RANGE
 
@@ -479,7 +479,7 @@ An array of the following MBIM_RSRP_SNR_INFO structures is used in the **DataBuf
         <td>4</td>
         <td>SystemType</td>
         <td>MBIM_DATA_CLASS</td>
-        <td>Indicates the system type for which signal state information is valid. This member is a bitmask of one type as defined in <a href="#mbimdataclass">MBIM_DATA_CLASS</a>.</td>
+        <td>Indicates the system type for which signal state information is valid. This member is a bitmask of one type as defined in <a href="#mbim_data_class">MBIM_DATA_CLASS</a>.</td>
     </tr>
 </table>
 

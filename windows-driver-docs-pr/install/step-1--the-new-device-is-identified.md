@@ -16,9 +16,9 @@ The format of the hardware ID typically consists of the following:
 -   A bus-specific prefix, such as PCI\\ or USB\\.
 -   Vendor-specific identifiers for the device, such as a vendor, model, and revision identifier. The format of these identifiers within the hardware ID is also specific to the bus driver.
 
-An independent hardware vendor (IHV) can also define one or more [compatible IDs](compatible-ids.md) for the device. Compatible IDs have the same format as hardware IDs; however, they are typically more generic than hardware IDs and do not require specific manufacturer or model information. Windows uses these identifiers to select a [driver package](driver-packages.md) for a device if the operating system cannot find a matching driver package for the device's hardware ID. IHVs specify one or more compatible IDs for the device within the driver package's [INF file](inf-files.md).
+An independent hardware vendor (IHV) can also define one or more [compatible IDs](compatible-ids.md) for the device. Compatible IDs have the same format as hardware IDs; however, they are typically more generic than hardware IDs and do not require specific manufacturer or model information. Windows uses these identifiers to select a [driver package](driver-packages.md) for a device if the operating system cannot find a matching driver package for the device's hardware ID. IHVs specify one or more compatible IDs for the device within the driver package's [INF file](overview-of-inf-files.md).
 
-Windows uses hardware IDs and compatible IDs to search for a [driver package](driver-packages.md) for the device. It finds a matching driver package for the device by comparing the device's hardware IDs and compatible IDs against those IDs that are specified within the package's [INF file](inf-files.md).
+Windows uses hardware IDs and compatible IDs to search for a [driver package](driver-packages.md) for the device. It finds a matching driver package for the device by comparing the device's hardware IDs and compatible IDs against those IDs that are specified within the package's [INF file](overview-of-inf-files.md).
 
 For example, when a user plugs a wireless local area network (WLAN) adapter into the port of a USB hub that is attached to the computer, the following steps occur:
 

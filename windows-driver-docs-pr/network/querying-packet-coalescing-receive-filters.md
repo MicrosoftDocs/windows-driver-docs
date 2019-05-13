@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 Overlying drivers and applications can query packet coalescing receive filters that have been downloaded to a miniport driver by doing the following:
 
--   Request an enumerated list of the receive filters on the miniport driver by issuing an OID method request of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787). For more information, see [Enumerating the Receive Filters on a Miniport Driver](#enumerating).
+-   Request an enumerated list of the receive filters on the miniport driver by issuing an OID method request of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787). For more information, see [Enumerating the Receive Filters on a Miniport Driver](#enumerating-the-receive-filters-on-a-miniport-driver).
 
--   Request the test criterion parameters for a receive filter on the miniport driver by issuing an OID method request of [OID\_RECEIVE\_FILTER\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569792). For more information, see [Querying the Receive Filters on a Miniport Driver](#querying)
+-   Request the test criterion parameters for a receive filter on the miniport driver by issuing an OID method request of [OID\_RECEIVE\_FILTER\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569792). For more information, see [Querying the Receive Filters on a Miniport Driver](#querying-the-parameters-of-a-receive-filters-on-a-miniport-driver)
 
 NDIS handles the [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787) and [OID\_RECEIVE\_FILTER\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569792) method OID requests for miniport drivers. NDIS obtained the information from an internal cache of the data that it received from the [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) OID request.
 

@@ -49,7 +49,7 @@ Note the correspondence between a map register and a virtual-to-physical entry i
 
 -   Each map register and each virtual entry in an MDL maps at most a full physical page of data for a DMA transfer operation.
 
--   Each map register and each virtual entry in an MDL might map less than a full page of data. For example, the initial virtual entry in an MDL can map to an offset from the physical page boundary, as shown earlier in the [Physical, Logical, and Virtual Address Mappings](#physical-logical-and-virtual-address-mappings) figure.
+-   Each map register and each virtual entry in an MDL might map less than a full page of data. For example, the initial virtual entry in an MDL can map to an offset from the physical page boundary, as shown earlier in the **Physical, Logical, and Virtual Address Mappings** figure.
 
 -   Each map register and each virtual entry in an MDL maps, at a minimum, one byte.
 
