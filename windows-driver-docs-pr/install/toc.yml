@@ -192,7 +192,7 @@
       href: test-signing-a-driver-through-an-embedded-signature.md
     - name: "Configuring the Test Computer to Support Test-Signing"
       href: configuring-the-test-computer-to-support-test-signing.md
-    - name: "The TESTSIGNING Boot Configuration Option"
+    - name: "Enable Loading of Test Signed Drivers"
       href: the-testsigning-boot-configuration-option.md
     - name: "Enabling Code Integrity Event Logging and System Auditing"
       href: enabling-code-integrity-event-logging-and-system-auditing.md
