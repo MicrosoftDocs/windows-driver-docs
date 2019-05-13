@@ -1,17 +1,17 @@
 ---
-title: The TESTSIGNING Boot Configuration Option
-description: The TESTSIGNING Boot Configuration Option
+title: Loading Test Signed Code
+description: Describes how to enable loading of test signed drivers using the TESTSIGNING option with BCDEdit tool
 ms.assetid: 4898595e-20c9-4607-aad7-792f7d1074e4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# The TESTSIGNING Boot Configuration Option
+# Enable Loading of Test Signed Drivers
 
-You can configure a system to load test-signed kernel-mode code, whether it runs Windows Vista or a later version of Windows. You configure this option by using the boot configuration data editor, BCDEdit.exe, to enable or disable TESTSIGNING, a boot configuration option. Loading of test-signed code is not enabled by default, and you must have Administrator rights to enable this option.
+By default, Windows does not load test-signed kernel-mode drivers. To change this behavior and enable test-signed drivers to load, use the boot configuration data editor, BCDEdit.exe, to enable or disable TESTSIGNING, a boot configuration option. You must have Administrator rights to enable this option.
 
 > [!Note]
-> For 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing policy requires that all kernel-mode code have a digital signature. However, in most cases, an unsigned driver can be installed and loaded on 32-bit versions of Windows Vista and later versions of Windows. For more information, see [Driver Signing Policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) for Windows Vista and later versions of Windows.
+> For 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing policy requires that all kernel-mode code have a digital signature. However, in most cases, an unsigned driver can be installed and loaded on 32-bit versions of Windows Vista and later versions of Windows. For more information, see [Driver Signing Policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md).
 
 
 ## Administrator rights required
@@ -46,9 +46,9 @@ The following figure shows the result of using the BCDEdit command line to enabl
 ![Screen shot of the results of using testsigning, a boot configuration option](images/driver-signing-enable-vista-test-signing.png)
 
 
-## Behavior of Windows when use of test-signed code is enabled
+## Behavior of Windows when loading test-signed code is enabled
 
-When use of test-signed code is enabled, Windows does the following:
+When loading test-signed code is enabled, Windows does the following:
 
 -   Displays a watermark with the text "Test Mode" in the lower-left corner of the desktop to remind users that the system has test-signing enabled.
 
