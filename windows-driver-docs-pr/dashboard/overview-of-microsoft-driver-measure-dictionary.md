@@ -1,0 +1,51 @@
+---
+title: Overview of Microsoft Driver Measure Dictionary
+description: Publishers and authors use the Microsoft Measure Dictionary to better understand the criteria Microsoft uses in evaluating driver quality during the Driver Flighting Process
+ms.topic: article
+ms.date: 05/20/2019
+ms.author: paslote
+author: 
+ms.localizationpriority: medium
+---
+
+# Overview of Microsoft Driver Measure Dictionary
+
+Microsoft distributes thousands of drivers via the Windows Update service, servicing millions of machines and users each month. Safely delivering the right driver at scale requires evaluating driver quality through real-world verification during distribution.
+
+The goal of this document is to serve as a reference to publishers and authors Windows device drivers.  Publishers and authors can better understand the criteria Microsoft uses in evaluating driver quality during the [driver flighting process](https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-flighting). Becoming familiar with the driver quality criteria will help driver publishers understand how Microsoft reached a decision about releasing their driver.
+
+Keywords in **bold** have corresponding definitions in the glossary.
+
+This content contains three sections:
+
+* Measures Usage: defines what measure are, the types of measures, and how measures evaluate quality.
+* Measure Attributes: defines the various attributes that each measure has.
+* Measures Dictionary: provides a definition for each driver measure, with a description, attribute values, and calculation logic.
+
+## Using measures
+
+Microsoft defines a **measure** as a quantifiable metric to gauge the quality of products delivered by the company. Driver measures aggregate **telemetry** produced by customer machines, processing any events that are related to a driver. Each measure is scoped to a use case of the driver’s functions, ensuring that the end user can experience the component’s capabilities.
+
+## Types of measures
+
+To evaluate the quality of drivers, Microsoft has two distinct types of measures: **systemic measures** and **device-class measures**.
+
+Systemic Measures ensure that a driver installs without error and the machine continues to be reliable; Microsoft applies these measures to every driver submitted. Device-Class measures monitor specific capabilities of the driver to ensure the hardware component behaves as intended; each Device-Class has a set of distinct measures applied or only uses Systemic Measures for evaluation.
+
+## How measures assess driver quality
+
+Each measure has its own calculation logic, which is an algorithm that parses telemetry for driver-related events and aggregates the results into a percent, ratio, or histogram of failures & successes. This result is the measure’s **current value**; the current value is evaluated against a minimum bar of quality, known as the measure’s **passing criteria**.
+
+A measure is failing when its Current Value does not meet its Passing Criteria, triggering an investigation that may result in remediation, such as a flight rejection or an in-market expiration.
+
+## Data sources for measures
+
+To evaluate driver quality, measures incorporate data from machines running in two distinct customer groups: **Windows Insider Program (WIP)** and **Retail**.
+
+WIP data is vital to flighting scenarios, as users have opted-in to providing Microsoft with increased levels of telemetry for use in real-world verification. Retail data is collected from the general Windows Ecosystem and allows Microsoft to monitor quality issues on released drivers.
+
+## Count differences between measures
+
+Microsoft constructs each measure differently, with a unique calculation logic, set of attributes, sampling percentages, and evaluation criteria. As a result, a set of measures applied to a distinct driver can have inconsistent **counts** reported; Microsoft expects these discrepancies.
+
+
