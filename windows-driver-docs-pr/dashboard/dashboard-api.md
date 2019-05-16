@@ -94,3 +94,7 @@ The following sample provides detailed code that demonstrate how to use the Micr
 ## Additional help
 
 If you have questions about the Microsoft Store submission API or need assistance managing your submissions with this API, visit the [support page](https://developer.microsoft.com/dashboard/account/help?returnUri=https://developer.microsoft.com/dashboard/hardware) and request help.
+
+## Related topics
+
+[What is Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
