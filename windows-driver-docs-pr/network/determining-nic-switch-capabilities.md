@@ -64,7 +64,7 @@ For more information about the adapter initialization process, see [Initializing
 
 ## Creating a NIC switch without SR-IOV
 
-Miniport drivers in NDIS 6.60 and later must follow the following requirements for the coexistence of a NIC switch and VMQ capabilities when SR-IOV is not enabled. When SR-IOV is enabled, the miniport driver should adhere to the existing requirements in the previous section.
+Miniport drivers in NDIS 6.60 and later must adhere to the following requirements for the coexistence of a NIC switch and VMQ capabilities when SR-IOV is not enabled. When SR-IOV is enabled, the miniport driver should adhere to the existing requirements in the previous section.
 
 - The miniport driver advertises both NIC switch and VMQ capabilities.
 - The NIC can toggle between NIC switch and VMQ mode without a NIC restart.
