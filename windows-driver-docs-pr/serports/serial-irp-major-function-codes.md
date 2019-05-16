@@ -82,8 +82,8 @@ A client uses device control requests to do the following:
 * Get and set registers
 * Get and set operating modes
 
-For a description of the device control requests supported by Serial, see [Serial Device Control Requests](https://msdn.microsoft.com/library/windows/hardware/ff547466).
-
+For a description of the device control requests supported by Serial, see the [ntddser.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddser/) header.
+ 
 ### Input Parameters
 Request specific
 
@@ -143,7 +143,7 @@ A client uses internal device control requests to do the following:
 * Get and reset basic settings
 * Control wait/wake operation
 
-For a description of the internal device control requests, see [Serial Internal Device Control Requests](https://msdn.microsoft.com/library/windows/hardware/ff547480).
+For a description of the internal device control requests, see the [ntddser.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/) header.
 
 ### Input Parameters
 Request specific
