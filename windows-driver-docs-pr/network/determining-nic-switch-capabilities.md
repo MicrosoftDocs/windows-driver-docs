@@ -73,7 +73,7 @@ Miniport drivers in NDIS 6.60 and later must adhere to the following requirement
         - If a VMQ queue is created first, the miniport driver succeeds the VMQ queue allocation and fails any NIC switch allocation calls.
     - When the NIC switch is deleted or all VMQ queues are deleted, the miniport driver returns to the initial state and is ready to go into either of these modes again.
 
-To advertise that a NIC switch can be created without the use of SR-IOV, the miniport driver sets the **NDIS_NIC_SWITCH_CAPS_NIC_SWITCH_WITHOUT_IOV_SUPPORTED** flag in the **NicSwitchCapabilities** member of the [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities).
+To advertise that a NIC switch can be created without the use of SR-IOV, the miniport driver sets the **NDIS_NIC_SWITCH_CAPS_NIC_SWITCH_WITHOUT_IOV_SUPPORTED** flag in the **NicSwitchCapabilities** member of the [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure.
 
 ## Querying NIC Switch Capabilities by Overlying Drivers
 
