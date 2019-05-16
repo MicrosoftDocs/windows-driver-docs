@@ -7,20 +7,18 @@ ms.localizationpriority: medium
 
 # FAQ: USB Type-C connector on a Windows system
 
-**Last Updated**  -   December 2016
-
-**Windows version**:
+**Windows versions**:
 
 * Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 * Windows 10 Mobile
 
-Frequently asked questions for OEMs who want to build Windows systems with USB Type-C connectors.
+Common points of discussion for OEMs who want to build Windows systems with USB Type-C connectors.
 
 * [USB Type-C connector features](#usb-type-c-connector-features)
 * [Operating system input into which alternate mode needs to be negotiated, such as DP 2-lane vs. DP 4-lane](#operating-system-input-into-which-alternate-mode-needs-to-be-negotiated-such-as-dp-2-lane-vs-dp-4-lane)
 * [Pre-OS charging with Type-C and PD](#pre-os-charging-with-type-c-and-pd)
 * [Charging the phone when it is a USB host to enable docking scenarios like Continuum](#charging-the-phone-when-it-is-a-usb-host-to-enable-docking-scenarios-like-continuum)
-* [Windows 10 Mobile support of USB billboard devices](#windows-10-mobile-support-of-usb-billboard-devices)
+* [Windows 10 Mobile support of USB billboard devices](#windows10-mobile-support-of-usb-billboard-devices)
 * [Support for USB Type-C on earlier versions of Windows](#support-for-usb-type-c-on-earlier-versions-of-windows)
 * [UCSI support on earlier versions of Windows](#ucsi-support-on-earlier-versions-of-windows)
 * [How to test an implementation of UCSI](#how-to-test-an-implementation-of-ucsi)
@@ -28,9 +26,9 @@ Frequently asked questions for OEMs who want to build Windows systems with USB T
 * [Connecting a non-PD port to a PD provider and a PD consumer to a system that is not a PD provider](#connecting-a-non-pd-port-to-a-pd-provider-and-a-pd-consumer-to-a-system-that-is-not-a-pd-provider)
 * [Connecting Thunderbolt, SuperMHL, or PCI express to a PC that does not support those capabilities](#connecting-thunderbolt-supermhl-or-pci-express-to-a-pc-that-does-not-support-those-capabilities)
 * [Support and limitations for MTP over USB Type-C in Windows](#support-and-limitations-for-mtp-over-usb-type-c-in-windows)
-* [How downstream devices and hubs connect and communicate with USB Connector Manager (UCM)](#how-downstream-devices-and-hubs-connect-and-communicate-with-usb-connector-manager-ucm-)
+* [How downstream devices and hubs connect and communicate with USB Connector Manager (UCM)](#how-downstream-devices-and-hubs-connect-and-communicate-with-usb-connector-manager-ucm)
 * [USB Type-C MUTT requirements for HLK tests](#usb-type-c-mutt-requirements-for-hlk-tests)
-* [Microsoft support for P2P data transfer between the same Windows 10 SKU](#microsoft-support-for-P2P-data-transfer-between-the-same-windows-10-sku)
+* [Microsoft support for P2P data transfer between the same Windows 10 SKU](#microsoft-support-for-p2p-data-transfer-between-the-same-windows-10-sku)
 * [UCM class extension (UcmCx) communication with PMIC or battery driver to get/set charging status](#ucm-class-extension-ucmcx-communication-with-pmic-or-battery-driver-to-getset-charging-status)
 * [HLK support for USB Type-C](#hlk-support-for-usb-type-c)
 * [UCSI](#ucsi)
@@ -163,11 +161,11 @@ USB Type-C Connector System Software Interface (UCSI) Specification describes th
 
 Microsoft provides an in-box driver with Windows, UcmUcsi.sys, that implements the features defined by the specification. This driver is intended for systems with embedded controllers.
 
-## Test a UCSI implementation running on Windows 10
+## Test a UCSI implementation running on Windows 10
 
 We recommend running USB tests in Windows HLK for Windows 10. These tests are listed in [Windows Hardware Certification Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md).
 
-## Test a UCMCx client driver on Windows 10
+## Test a UCMCx client driver on Windows 10
 
 We recommend running USB tests in Windows HLK for Windows 10. These tests are listed in [Windows Hardware Certification Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md).
 

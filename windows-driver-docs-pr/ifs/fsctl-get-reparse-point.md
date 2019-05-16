@@ -45,7 +45,7 @@ Not used with this operation; set to zero.
 Pointer to a caller-allocated [**REPARSE\_GUID\_DATA\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552014) or [**REPARSE\_DATA\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552012) structure that receives the reparse point data.
 
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
-Size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter. For a REPARSE\_GUID\_DATA\_BUFFER structure, this value must be at least **sizeof**(REPARSE\_GUID\_DATA\_BUFFER\_HEADER\_SIZE), plus the size of the expected user-defined data, and it must be less than or equal to MAXIMUM\_REPARSE\_DATA\_BUFFER\_SIZE. For a REPARSE\_DATA\_BUFFER structure, this value must be at least **sizeof**(REPARSE\_DATA\_BUFFER\_HEADER\_SIZE), plus the size of the expected user-defined data, and it must be less than or equal to MAXIMUM\_REPARSE\_DATA\_BUFFER\_SIZE.
+Size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter. For a REPARSE\_GUID\_DATA\_BUFFER structure, this value must be at least REPARSE\_GUID\_DATA\_BUFFER\_HEADER\_SIZE, plus the size of the expected user-defined data, and it must be less than or equal to MAXIMUM\_REPARSE\_DATA\_BUFFER\_SIZE. For a REPARSE\_DATA\_BUFFER structure, this value must be at least REPARSE\_DATA\_BUFFER\_HEADER\_SIZE, plus the size of the expected user-defined data, and it must be less than or equal to MAXIMUM\_REPARSE\_DATA\_BUFFER\_SIZE.
 
 Status block
 ------------
