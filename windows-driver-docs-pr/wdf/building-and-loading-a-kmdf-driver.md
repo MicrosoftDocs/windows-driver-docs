@@ -14,23 +14,32 @@ keywords:
 - Build utility WDK , KMDF
 - KMDF drivers WDK KMDF , building
 - KMDF drivers WDK KMDF , loading
-ms.date: 04/20/2017
+ms.date: 05/16/2019
 ms.localizationpriority: medium
 ---
 
 # Building and Loading a WDF Driver
 
 
-This topic describes how to select a target operating system and framework version for a driver project in Visual Studio. It also describes the co-installer and how to determine if you should include this component in your driver package.
+This topic describes how to select a target operating system and framework version for a driver project in Visual Studio.
+
+To determine if you need to include redistributable framework components in your driver package, see [Redistributable Framework Components](installation-components-for-kmdf-drivers.md).
+
 
 ## Which framework version should I use?
 
 
-If your driver needs to run only on Windows 8.1, use Kernel-Mode Driver Framework (KMDF) version 1.13 or User-Mode Driver Framework (UMDF) version 2.0.
+If your driver needs to run on Windows 10 and later, use KMDF 1.15/UMDF 2.15 or more recent, but choose the earliest framework version that has the functionality you need.  Doing so will maximize the number of Windows versions your driver can target.
 
-If your driver must work on operating systems earlier than Windows 8.1, we recommend that you use KMDF or UMDF version 1.11.
+For example, if you use KMDF 1.21, your driver only works on Windows 10 version 1703 and later.  If you don't need functionality in KMDF 1.21, you could instead use KMDF 1.15, enabling your driver
+to run on all versions of Windows 10.
 
-You can use the Windows Driver Kit (WDK) that ships with Windows 8.1 to build KMDF 1.9, 1.11, and 1.13 drivers, as well as UMDF 1.9, 1.11, and 2.0 drivers.
+You can use the Windows Driver Kit (WDK) that ships with Windows 10 to build KMDF 1.15-1.29 drivers, as well as UMDF 2.15-2.29 drivers.
+
+For info on framework versions, see:
+
+* [KMDF Version History](kmdf-version-history.md)
+* [UMDF Version History](umdf-version-history.md)
 
 ## How do I set the versions in Visual Studio?
 
@@ -44,14 +53,7 @@ Otherwise, follow these steps:
 
 For detailed information about KMDF and UMDF versions, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md).
 
-## When do I need to include a co-installer or .msu in my driver package?
 
-
-If you build a driver for Windows 8.1 using KMDF 1.13 or UMDF 2.0, you do not need to include a co-installer, custom installer, or reference in the INF file.
-
-If your driver must work on operating systems earlier than Windows 8.1, we recommend that you use KMDF or UMDF version 1.11, and that you include Microsoft-supplied framework updates in your driver package.
-
-The framework updates make it possible to run a driver built with a later framework version than the one included in an operating system. For example, KMDF 1.11 is included in Windows 8. But you can run a KMDF 1.11 driver on Windows Vista or Windows 7. Before you can do so, however, you must ensure that the KMDF 1.11 framework library replaces the framework library included in the earlier operating system (in this case, KMDF 1.7 and KMDF 1.9 respectively). You do this by redistributing a Microsoft-supplied co-installer or .msu file with your driver package.
 
 ## Linking and loading
 
@@ -61,12 +63,4 @@ When you build a Windows Driver Frameworks (WDF) project in Microsoft Visual Stu
 The stub file contains a special entry point routine: **FxDriverEntry**. MSBuild sets the stub's **FxDriverEntry** routine as the initial entry point for framework-based drivers.
 
 When the operating system loads a framework-based driver, it also loads the stub file and the library's loader. Next, the system calls the stub file's **FxDriverEntry** routine. This routine then calls the loader. The loader determines the version of the framework library that the driver requires and then loads the correct [version of the library](framework-library-versioning.md) as a kernel-mode service (if it is not already loaded). Finally, the library calls the driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff540807) routine.
-
- 
-
- 
-
-
-
-
 
