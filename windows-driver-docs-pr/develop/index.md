@@ -35,5 +35,16 @@ In the Visual Studio environment, you can configure the build process so that it
 
 The topics in this section show you how to use Visual Studio to perform several of the tasks involved in driver development, deployment, and testing.
 
+## Additional Videos
+
+In addition to the video above, you'll find videos on the following pages in the Windows driver docs:
+
+* [Debugging a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/debugging-a-driver)
+* [What's New in HID](https://docs.microsoft.com/windows-hardware/drivers/hid/what-s-new-in-hid)
+* [Capture and view USB traces with Microsoft Message Analyzer](https://docs.microsoft.com/windows-hardware/drivers/usbcon/capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-)
+* [Using the Windows Performance Toolkit (WPT) with WDF](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-the-windows-performance-toolkit--wpt--with-wdf)
+* [Video: Accessing driver IFR logs without a debugger](https://docs.microsoft.com/windows-hardware/drivers/wdf/video--accessing-driver-ifr-logs-without-a-debugger)
+* [Video: Debugging your driver with WDF source code](https://docs.microsoft.com/windows-hardware/drivers/wdf/video--debugging-your-driver-with-wdf-source-code)
+* [Videos: Debugging UMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/videos--debugging-umdf-drivers)
 
 
