@@ -1,0 +1,37 @@
+---
+title: User mode crashes in Microsoft Edge normalized, by usage, in a year-long scale
+description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in Microsoft Edge, caused by the graphics drivers, over total runtime in years 
+ms.topic: article
+ms.date: 05/20/2019
+ms.author: paslote
+author: parkeratmicrosoft
+ms.localizationpriority: medium
+---
+
+# User mode crashes in Microsoft Edge normalized, by usage, in a year-long scale
+
+## Description
+
+When users are browsing the internet with Microsoft Edge, their graphics components will process visual data from the Web and display the rendered view on the user’s screen. This measure is monitoring how often Microsoft Edge crashes, in relation to the Microsoft Edge runtime on all devices with the driver. If Microsoft Edge crashes, the user must wait for the application to recover before being able to use it again.
+
+## Measure attributes
+
+|Attribute|Value|
+|----|----|
+|**Audience**|Ecosystem|
+|**Time period**|7-day sliding window|
+|**Measurement criteria**|Aggregation of instances|
+|**Minimum population**|50,000 hours of Microsoft Edge runtime|
+|**Passing criteria**|<= 1 crash per year|
+|**Measure ID**|17377831|
+
+## Calculation
+
+1. The measure aggregates telemetry from a 7-day sliding window into a **ratio of crashes in Microsoft Edge, caused by the graphics drivers, over total runtime in years**
+2. *Total Microsoft Edge crashes = count(Microsoft Edge crashes on machines that have the driver)*
+3. *Total Microsoft Edge runtime = sum(Microsoft Edge runtime for each machine that has the driver)*
+4. *Runtime in years = total Microsoft Edge runtime \* 60 (minute) \* 60 (hour) \* 24 (day) \* 365 (year)*
+
+### Final calculation
+
+*Crashes in Microsoft Edge normalized by usage = total Microsoft Edge crashes / runtime in years*
