@@ -28,7 +28,7 @@ Common points of discussion for OEMs who want to build Windows systems with USB 
 * [Support and limitations for MTP over USB Type-C in Windows](#support-and-limitations-for-mtp-over-usb-type-c-in-windows)
 * [How downstream devices and hubs connect and communicate with USB Connector Manager (UCM)](#how-downstream-devices-and-hubs-connect-and-communicate-with-usb-connector-manager-ucm)
 * [USB Type-C MUTT requirements for HLK tests](#usb-type-c-mutt-requirements-for-hlk-tests)
-* [Microsoft support for P2P data transfer between the same Windows 10 SKU](#microsoft-support-for-p2p-data-transfer-between-the-same-windows-10-sku)
+* [Microsoft support for P2P data transfer between the same Windows 10 SKU](#microsoft-support-for-p2p-data-transfer-between-the-same-windows10-sku)
 * [UCM class extension (UcmCx) communication with PMIC or battery driver to get/set charging status](#ucm-class-extension-ucmcx-communication-with-pmic-or-battery-driver-to-getset-charging-status)
 * [HLK support for USB Type-C](#hlk-support-for-usb-type-c)
 * [UCSI](#ucsi)
