@@ -34,9 +34,7 @@ If your driver needs to run on Windows 10 and later, use KMDF 1.15/UMDF 2.15 or 
 For example, if you use KMDF 1.21, your driver only works on Windows 10 version 1703 and later.  If you don't need functionality in KMDF 1.21, you could instead use KMDF 1.15, enabling your driver
 to run on all versions of Windows 10.
 
-You can use the Windows Driver Kit (WDK) that ships with Windows 10 to build KMDF 1.15-1.29 drivers, as well as UMDF 2.15-2.29 drivers.
-
-For info on framework versions, see:
+For detailed information about KMDF and UMDF versions, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md).
 
 * [KMDF Version History](kmdf-version-history.md)
 * [UMDF Version History](umdf-version-history.md)
@@ -48,12 +46,15 @@ If you're building your driver project for the latest version of Windows and the
 
 Otherwise, follow these steps:
 
--   Change the **Project Configuration** setting in the **Configuration Manager** to an appropriate value (such as **Win7 Debug**).
--   Change the KMDF\_VERSION\_MINOR or UMDF\_VERSION\_MINOR value in the [Driver Model Settings](https://msdn.microsoft.com/windows-drivers/develop/driver_model_settings_properties_for_driver_projects) to an appropriate value (such as 11).
+-   Right-click the solution and select **Configuration Manager**.  Set **Project Configuration** to the desired value (for example **Debug**).
+-   Right-click the driver project and select **Properties**.  Open **Configuration Properties->Driver Settings->Driver Model**.  Change the **KMDF Version Minor (Target Version)** or **UMDF Version Minor (Target Version)** value in the [Driver Model Settings](../develop/driver-model-settings-properties-for-driver-projects.md) to the desired value.  For info about **KMDF Version Minor (Minimum Required)** and **UMDF Version Minor (Minimum Required)**, see [Specifying Minimum Required](https://docs.microsoft.com/windows-hardware/drivers/wdf/building-a-wdf-driver-for-multiple-versions-of-windows#specifying-minimum-required).
+
+You can use the Windows Driver Kit (WDK) that ships with Windows 10 to build KMDF 1.9-1.29 drivers, as well as UMDF 1.9-2.29 drivers.
 
 For detailed information about KMDF and UMDF versions, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md).
 
-
+* [KMDF Version History](kmdf-version-history.md)
+* [UMDF Version History](umdf-version-history.md)
 
 ## Linking and loading
 
