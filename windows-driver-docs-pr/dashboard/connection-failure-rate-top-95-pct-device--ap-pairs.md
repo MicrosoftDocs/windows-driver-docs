@@ -1,5 +1,5 @@
 ---
-title: Connection failure rate of top 95% of device / AP pairs – All
+title: Connection failure rate of top 95 percent of device / AP pairs – All
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a device fails to connect to an access point
 ms.topic: article
 ms.date: 05/20/2019

@@ -1,5 +1,5 @@
 ---
-title: Graphics display health: Percent of devices with display issues when resume from low power state
+title: Percent of devices with display issues when resume from low power state
 description: The measure aggregates telemetry from a 7-day sliding window into a percent of machines that encountered display issues when resuming from a low power state
 ms.topic: article
 ms.date: 05/20/2019

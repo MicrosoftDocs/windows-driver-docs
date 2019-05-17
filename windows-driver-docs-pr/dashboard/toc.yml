@@ -29,8 +29,127 @@
       href: attestation-signing-a-kernel-driver-for-public-release.md
     - name: "How to get a driver signed by Microsoft for multiple versions of Windows"
       href: get-drivers-signed-by-microsoft-for-multiple-windows-versions.md
-    - name: "Driver flighting"
-      href: driver-flighting.md
+# Eliot 
+    - name: "Driver Flighting"
+      items:
+      - name: "Overview"
+        href: driver-flighting.md
+      - name: "Microsoft driver measures"
+        href: overview-of-microsoft-driver-measure-dictionary.md
+      - name: "Driver measure attributes"
+        href: measure-attributes.md
+      - name: "Systemic measures"
+        items:
+        - name: "Driver installation measures"
+          items:
+          - name: "Percent of machines where the driver install process completes successfully"
+            href: pct-machines-where-driver-install-completes-successfully.md
+          - name: Percent of machines that installed a driver update and reported a PnP error code within two days of install
+            href: "pct-machines-installed-driver-update-and-reported-pnp-error-within-2-days.md"
+          - name: "Percentage of machines without a kernel mode crash"
+            href: pct-machines-without-kernel-mode-crash.md
+          -name: "Percentage of machines without a live kernel dump"
+          href: pct-machines-without-live-kernel-dump.md
+      - name: "Device class measures"
+        items:
+        - name: "Audio"
+          items:
+          - name: "Audio measures"
+            href: audio-measures.md
+          - name: "Percentage of machines with at least one audio stream initialization failure"
+            href: pct-machines-with-at-least-one-audio-stream-initialization-failure.md
+          - name: "Percent of machines with subpar stream initialization success rate"
+            href: pct-machines-with-subpar-stream-initialization-success-rate.md
+          - name: "Percent of machines with at least one audio crash"
+            href: percent-machines-with-at-least-one-audio-crash.md
+          - name: "Percent of machines with at least one audio hang"
+            href: pct-machines-with-at-least-one-audio-hang.md
+        - name: "Bluetooth" 
+          items:
+          - name: "Bluetooth measures"
+            href: bluetooth-measures.md
+          - name: "Bluetooth pairing failure rate per machine"
+            href: bluetooth-pairing-failure-rate-per-machine.md
+          - name: "Bluetooth connect failure rate for machines with the driver"
+            href: bluetooth-connect-failure-rate-for-machines-with-the-driver.md
+        - name: "Camera"
+          items:
+          - name: "Camera measures"
+            href: camera-measures.md
+          - name: "Camera initialization failure rate"
+            href: camera-initialization-failure-rate.md
+          - name: "Camera preview failure rate"
+            href: camera-preview-failure-rate.md
+          - name: "Camera photo failure rate"
+            href: camera-photo-failure-rate.md
+          - name: "Camera video and stream failure rate"
+            href: camera-video-and-stream-failure-rate.md
+        - name: "Firmware"
+          items:
+          - name: "Firmware measures"
+            href: firmware-measures.md 
+          - name: "Percent of machines that successfully installed firmware within the last 14 days and rebooted"
+            href: pct-machines-that-successfully-installed-firmware-within-the-last-14-days-and-rebooted.md
+          - name: "Percent of machines hitting an abnormal shutdown with a reported firmware error"
+            href: pct-machines-hitting-an-abnormal-shutdown-with-a-reported-firmware-error.md
+          - name: "Percent of abnormal shutdowns not related to a bug-check"
+            href: pct-abnormal-shutdowns-not-related-to-a-bug-check.md
+          - name: "Percent of machines that potentially fail to install the firmware"
+            href: pct-machines-that-potentially-fail-to-install-the-firmware.md
+        - name: "Graphics"
+          items:
+          - name: "Graphics measures"
+            href: graphics-measures.md
+          - name: "Standard audience measures"
+            items:
+            - name: "Percent of machines with a blue screen caused by a crash in the graphics driver binary"
+              href: pct-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-standard.md
+            - name: "Percent of machines that had a blue screen caused by a crash in the graphics kernel"
+              href: pct-machines-that-had-blue-screen-caused-by-crash-in-graphics-kernel.md
+            - name: "Percent of machines that had a TDR caused by a crash in the graphics driver binary"
+              href: pct-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary.md
+            - name: "Percent of machines with video HWDRM failures"
+              href: pct-machines-with-video-hwdrm-failures.md
+            - name: "YouTube video playback failure rate in Microsoft Edge and Internet Explorer"
+              href: youtube-video-playback-failure-rate-in-microsoft-edge-and-internet-explorer.md
+          - name: "Ecosystem audience measures"
+            items:
+            - name: "Percent of machines with a blue screen caused by a crash in graphics driver binary" 
+              href: pct-machines-with-bluescreen-caused-by-crash-in-graphics-driver-binary-ecosystem.md
+            - name: "Percent of machines that had an LKE caused by a crash in the graphics driver binary"
+              href: pct-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary.md
+            - name: "User mode crashes in Microsoft Edge normalized, by usage, in a year-long scale"
+              href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
+            - name: "Number of user mode crashes in top Microsoft apps, normalized by usage, in a year-long scale"
+              href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale.md
+            - name: "User mode reliability for crashes in creative applications"
+              href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps.md
+            - name: "User mode reliability for crashes in Microsoft Photos app"
+              href: user-mode-reliability-for-crashes-in-microsoft-photos-app.md
+            - name: "Number of crashes and hangs in UWP games, normalized by usage, in a year-long scale"
+              href: number-crashes-and-hangs-in-uwp-games.md
+            - name: "Number of crashes and hangs in Win32 games, normalized by usage, in a year-long scale"
+              href: number-crashes-and-hangs-in-win32-games.md
+            - name: "Percent of HWDRM playback failures on Netflix"
+              href: pct-hwdrm-playback-failures-on-netflix.md
+            - name: "Percent of SWDRM playback failures on Netflix"
+              href: pct-swdrm-playback-failures-on-netflix.md
+            - name: "Percent of devices with display issues when resume from low power state"
+              href: graphics-display-health-percent-devices-with-display-issues-resume-from-low-power.md
+          - name: "Wi-Fi"
+            items:
+            - name: "Wi-Fi Measures"
+              href: wi-fi-measures.md
+            - name: "Connection failure rate of top 95 percent of device / AP pairs – All"
+              href: connection-failure-rate-top-95-pct-device--ap-pairs.md
+            - name: "Internet connection failure rate of top 95 percent of device / AP pairs with greater than 50 percent signal quality"
+              href: internet-connection-failure-rate-top-95-pct-device--a-pairs-with-greater-than-50-pct-signal.md
+            - name: "Percent of Wi-Fi sessions ending in an unexpected disconnect"
+              href: pct-wi-fi-sessions-ending-in-unexpected-disconnect .md
+      - name: "Appendix"
+        href: mreasures-appendix.md
+      - name: "Glossary"
+        href: measures-glossary.md
     - name: "Working with extension INF files"
       href: submit-dashboard-extension-inf-files.md
     - name: "Bug Management"
