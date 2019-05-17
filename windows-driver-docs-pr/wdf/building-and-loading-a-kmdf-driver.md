@@ -28,11 +28,10 @@ To determine if you need to include redistributable framework components in your
 
 ## Which framework version should I use?
 
-
-If your driver needs to run on Windows 10 and later, use KMDF 1.15/UMDF 2.15 or more recent, but choose the earliest framework version that has the functionality you need.  Doing so will maximize the number of Windows versions your driver can target.
-
-For example, if you use KMDF 1.21, your driver only works on Windows 10 version 1703 and later.  If you don't need functionality in KMDF 1.21, you could instead use KMDF 1.15, enabling your driver
-to run on all versions of Windows 10.
+*   To target Windows XP, use WDF 1.9 or earlier.
+*   To target Windows Vista, Windows 7, or Windows 8, use WDF 1.11 or earlier.
+*   To target Windows 8.1, use KMDF 1.13 or earlier, or UMDF 1.x, or UMDF 2.0.
+*   To target Windows 10 version 1507, use KMDF 1.15 or earlier, or UMDF 1.x, or UMDF 2.15 or earlier.
 
 For detailed information about KMDF and UMDF versions, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md).
 

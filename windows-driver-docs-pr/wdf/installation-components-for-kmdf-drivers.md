@@ -14,15 +14,15 @@ ms.localizationpriority: medium
 
 This topic describes the Microsoft-supplied redistributable framework updates that are included as part of the Windows Driver Kit (WDK), and how to determine which ones to add to your driver package.
 
+The redistributable framework updates make it possible to run a driver built with a later framework version than the one included in an operating system. For example, KMDF 1.11 is included in Windows 8. But you can run a KMDF 1.11 driver on Windows Vista or Windows 7. Before you can do so, however, you must ensure that the KMDF 1.11 framework library replaces the framework library included in the earlier operating system (in this case, KMDF 1.7 and KMDF 1.9 respectively). You do this by redistributing a Microsoft-supplied co-installer or .msu file with your driver package.
+
 ## When do I need to include a co-installer or .msu in my driver package?
 
-* If your driver must work on Windows XP and later versions of Windows, use KMDF or UMDF version 1.9, and include Microsoft-supplied framework updates in your driver package.
+First, decide which versions of Windows your driver will support.  Based on that, determine [which framework version to use](building-and-loading-a-kmdf-driver.md#which-framework-version-should-i-use).
 
-* If your driver must work on Windows Vista and later versions of Windows, use KMDF or UMDF version 1.11, and include Microsoft-supplied framework updates in your driver package.
+If the chosen WDF version is more recent than the version that shipped with the target OS, include the co-installer or .msu file in your driver package.
 
-* If your driver must work on Windows 8.1 and later versions of Windows, you do not need to include a co-installer, custom installer, or reference in the INF file.
-
-The framework updates make it possible to run a driver built with a later framework version than the one included in an operating system. For example, KMDF 1.11 is included in Windows 8. But you can run a KMDF 1.11 driver on Windows Vista or Windows 7. Before you can do so, however, you must ensure that the KMDF 1.11 framework library replaces the framework library included in the earlier operating system (in this case, KMDF 1.7 and KMDF 1.9 respectively). You do this by redistributing a Microsoft-supplied co-installer or .msu file with your driver package.
+For example, you want your driver to run on Windows 7.  You can choose to build your driver using either WDF 1.11 or WDF 1.9. If you choose 1.9, which is provided with Windows 7, there is no need to update the system. On the other hand, if you choose 1.11, you would need to include a WDF 1.11 update package with your driver.
 
 ## Should I include the co-installer or the .msu file?
 
@@ -36,7 +36,7 @@ You never need both the co-installer and the .msu file.
 
 ## Where can I find these files, and what's included?
 
-The full set of redistributable framework update files is located in `%program files%\Windows Kits\8.0\redist\wdf`.
+The co-installers are located in `%program files%\Windows Kits\<version>\redist\wdf`.
 
 This directory contains the following files, for x86 and x64:
 
@@ -44,10 +44,8 @@ This directory contains the following files, for x86 and x64:
 -   *WUDFUpdate\_01007.dll*, *WUDFUpdate\_01009.dll*, *WUDFUpdate\_01011.dll* (co-installers for UMDF).
 -   *winusbcoinstaller.dll*, *winusbcoinstaller2.dll* (co-installers for WinUSB 1.5/1.9).
 
-When you install the WDK for Windows 8 (KMDF/UMDF 1.11), the installer offers an option to **Download WDF co-installers**.  Select this option and the installer opens the browser to download an MSI package that installs co-installer DLL and MSU files under `%program files%\Windows Kits\8.0\redist\wdf`.
-
-If you install the WDK for Windows 8.1 or later, the installer automatically places the co-installer DLLs in `%program files%\Windows Kits\8.0\redist\wdf`.
-You must download the MSU file separately from [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170).
+If you would like the MSU file, please download and install the package (in MSI format) from [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170).
+After installation, the MSU and co-installers can be found in `%program files%\Windows Kits\<version>\redist\wdf`.
 
 ## Co-installer Naming and Versioning
 
