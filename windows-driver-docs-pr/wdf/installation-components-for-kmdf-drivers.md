@@ -45,7 +45,7 @@ This directory contains the following files, for x86 and x64:
 -   *winusbcoinstaller.dll*, *winusbcoinstaller2.dll* (co-installers for WinUSB 1.5/1.9).
 
 If you would like the MSU file, please download and install the package (in MSI format) from [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170).
-After installation, the MSU and co-installers can be found in `%program files%\Windows Kits\<version>\redist\wdf`.
+After installation, the MSU and co-installers can be found in `%program files%\Windows Kits\8.0\redist\wdf`.
 
 ## Co-installer Naming and Versioning
 
