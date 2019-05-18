@@ -8,11 +8,9 @@ ms.localizationpriority: medium
 
 # SerCx2 I/O Transactions
 
-
 SerCx2 simplifies the handling of read ([**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff546883)) and write ([**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff546904)) requests for your serial controller driver. In response to a read or write request, SerCx2 issues one or more I/O transactions to the serial controller driver. From the driver's point of view, each transaction is a simple and complete I/O operation.
 
 ## In this section
-
 
 <table>
 <colgroup>
@@ -56,13 +54,3 @@ SerCx2 simplifies the handling of read ([**IRP\_MJ\_READ**](https://msdn.microso
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-

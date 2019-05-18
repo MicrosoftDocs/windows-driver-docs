@@ -38,6 +38,8 @@ The following table shows the release history of the KMDF library:
 
 You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2017 to build drivers that run on Windows 7 and later.
 
+For help determining what version of WDF to use, see [Which framework version should I use?](building-and-loading-a-kmdf-driver.md#which-framework-version-should-i-use).
+
 For a complete list of callbacks and methods, and which frameworks and versions they apply to, see [Summary of WDF Callbacks and Methods](https://msdn.microsoft.com/library/windows/hardware/dn265591).
 
 For information about the new features for KMDF drivers in Windows 10, see [What's New for WDF Drivers](index.md).

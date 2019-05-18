@@ -3,10 +3,10 @@
   items: 
   - name: "Serial Controller Driver Design Guide"
     href: index.md
-  - name: "Serial Controller Drivers Overview"
+  - name: "Serial Controller Drivers"
 # Auto-expanded node
     items: 
-    - name: "Serial Controller Drivers Overview"
+    - name: "Serial Controller Drivers"
       href: serial-drivers-overview.md
     - name: "Serial I/O Request Interface"
 # Auto-expanded node

@@ -24,16 +24,23 @@ The system-supplied COM port database arbitrates the use of COM port numbers by 
 For information about routines that support the COM port database, see the COMPort database support routines:
 
 [ComDBClaimNextFreePort](https://docs.microsoft.com/windows/desktop/api/msports/nf-msports-comdbclaimnextfreeport)
+
 [ComDBClaimPort](https://docs.microsoft.com/windows/desktop/api/msports/nf-msports-comdbclaimport)
+
 [ComDBClose](https://docs.microsoft.com/windows/desktop/api/msports/nf-msports-comdbclose)
+
 [ComDBGetCurrentPortUsage](https://docs.microsoft.com/windows/desktop/api/msports/nf-msports-comdbgetcurrentportusage)
+
 [ComDBOpen](https://docs.microsoft.com/windows/desktop/api/msports/nf-msports-comdbopen)
+
 [ComDBReleasePort](https://docs.microsoft.com/windows/desktop/api/msports/nf-msports-comdbreleaseport)
+
 [ComDBResizeDatabase](https://docs.microsoft.com/windows/desktop/api/msports/nf-msports-comdbresizedatabase)
 
 Also, see the following routines:
 
 [SerialDisplayAdvancedSettings](https://docs.microsoft.com/windows/desktop/api/msports/nf-msports-serialdisplayadvancedsettings), which is a system-supplied routine for installing an advanced properties page for a COM port
+
 [PPORT_ADVANCED_DIALOG](https://msdn.microsoft.com/library/windows/hardware/ff546956(v=vs.85).aspx)-typed routine, which supplies an optional vendor-supplied dialog box that is called by **SerialDisplayAdvancedSettings**
 
 To call these routines in an installer, link the installer to *msports.lib*, which is provided with the Windows Driver Kit (WDK).
@@ -66,7 +73,7 @@ A client can obtain a COM port number by calling one of the following routines:
 
 - [**ComDBClaimPort**](https://msdn.microsoft.com/library/windows/hardware/ff546472), which attempts to claim a specific port number.
 
-C*laiming* a COM port number in the COM port database logs the port number as "in use".
+*Claiming* a COM port number in the COM port database logs the port number as "in use".
 
 A client releases a port number by calling the [**ComDBReleasePort**](https://msdn.microsoft.com/library/windows/hardware/ff546477) routine.
 
