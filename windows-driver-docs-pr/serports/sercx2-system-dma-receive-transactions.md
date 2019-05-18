@@ -8,7 +8,6 @@ ms.localizationpriority: medium
 
 # SerCx2 System-DMA-Receive Transactions
 
-
 Some serial controller drivers implement support for receive transactions that use the system DMA controller. Such support is optional but can improve performance by relieving the main processor of the need to use programmed I/O (PIO) for long data transfers. SerCx2 performs a system-DMA-receive transaction by setting up the system DMA controller and initiating the necessary DMA transfers on behalf of the serial controller driver.
 
 When the serial controller driver creates a system-DMA-receive object, the driver supplies the parameters that SerCx2 will use to set up the system DMA adapter for system-DMA-receive transactions.
@@ -17,31 +16,29 @@ Before the start of a system-DMA-receive transaction, the serial controller driv
 
 ## Creating the system-DMA-receive object
 
-
 Before SerCx2 can call any of the serial controller driver's *EvtSerCx2SystemDmaReceive*Xxx** functions, the driver must call the [**SerCx2SystemDmaReceiveCreate**](https://msdn.microsoft.com/library/windows/hardware/dn265279) method to register these functions with SerCx2. This method accepts, as an input parameter, a pointer to a [**SERCX2\_SYSTEM\_DMA\_RECEIVE\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/dn265339) structure that contains pointers to the driver's *EvtSerCx2SystemDmaReceive*Xxx** functions.
 
 As an option, the driver can implement any or all of the following functions:
 
--   [*EvtSerCx2SystemDmaReceiveInitializeTransaction*](https://msdn.microsoft.com/library/windows/hardware/dn265232)
--   [*EvtSerCx2SystemDmaReceiveCleanupTransaction*](https://msdn.microsoft.com/library/windows/hardware/dn265229)
--   [*EvtSerCx2SystemDmaReceiveConfigureDmaChannel*](https://msdn.microsoft.com/library/windows/hardware/dn265230)
+- [*EvtSerCx2SystemDmaReceiveInitializeTransaction*](https://msdn.microsoft.com/library/windows/hardware/dn265232)
+- [*EvtSerCx2SystemDmaReceiveCleanupTransaction*](https://msdn.microsoft.com/library/windows/hardware/dn265229)
+- [*EvtSerCx2SystemDmaReceiveConfigureDmaChannel*](https://msdn.microsoft.com/library/windows/hardware/dn265230)
 
 As an option, the driver can implement the following two functions:
 
--   [*EvtSerCx2SystemDmaReceiveEnableNewDataNotification*](https://msdn.microsoft.com/library/windows/hardware/dn265231)
--   [*EvtSerCx2SystemDmaReceiveCancelNewDataNotification*](https://msdn.microsoft.com/library/windows/hardware/dn265228)
+- [*EvtSerCx2SystemDmaReceiveEnableNewDataNotification*](https://msdn.microsoft.com/library/windows/hardware/dn265231)
+- [*EvtSerCx2SystemDmaReceiveCancelNewDataNotification*](https://msdn.microsoft.com/library/windows/hardware/dn265228)
 
 A driver that implements one of the two functions in the preceding list must implement both.
 
 The **SerCx2SystemDmaReceiveCreate** method creates a system-DMA-receive object and supplies the calling driver with a [**SERCX2SYSTEMDMARECEIVE**](https://msdn.microsoft.com/library/windows/hardware/dn265284) handle to this object. The driver's *EvtSerCx2SystemDmaReceive*Xxx** functions all take this handle as their first parameter. The following SerCx2 methods take this handle as their first parameter:
 
--   [**SerCx2SystemDmaReceiveNewDataNotification**](https://msdn.microsoft.com/library/windows/hardware/dn265283)
--   [**SerCx2SystemDmaReceiveInitializeTransactionComplete**](https://msdn.microsoft.com/library/windows/hardware/dn265281)
--   [**SerCx2SystemDmaReceiveCleanupTransactionComplete**](https://msdn.microsoft.com/library/windows/hardware/dn265278)
--   [**SerCx2SystemDmaReceiveGetDmaEnabler**](https://msdn.microsoft.com/library/windows/hardware/dn265280)
+- [**SerCx2SystemDmaReceiveNewDataNotification**](https://msdn.microsoft.com/library/windows/hardware/dn265283)
+- [**SerCx2SystemDmaReceiveInitializeTransactionComplete**](https://msdn.microsoft.com/library/windows/hardware/dn265281)
+- [**SerCx2SystemDmaReceiveCleanupTransactionComplete**](https://msdn.microsoft.com/library/windows/hardware/dn265278)
+- [**SerCx2SystemDmaReceiveGetDmaEnabler**](https://msdn.microsoft.com/library/windows/hardware/dn265280)
 
 ## Hardware initialization and clean-up
-
 
 Some serial controller drivers might need to initialize the serial controller hardware at the start of a system-DMA-receive transaction, or to clean up the hardware state of the serial controller at the end of the transaction.
 
@@ -53,7 +50,6 @@ A serial controller driver that needs to do any special configuration of the sys
 
 ## New-data notifications
 
-
 As an option, the serial controller driver can implement an [*EvtSerCx2SystemDmaReceiveEnableNewDataNotification*](https://msdn.microsoft.com/library/windows/hardware/dn265231) event callback function. If implemented, SerCx2 uses this function to efficiently manage interval time-outs during the handling of read requests that are processed as system-DMA-receive transactions.
 
 An interval time-out occurs if the interval between two successive bytes received by the serial controller exceeds a client-specified maximum time. After a peripheral driver sends a read request to SerCx2, an interval time-out cannot occur until after at least one byte of data is received from the serially connected peripheral device. The time between the arrival of a read request and the receipt of the first byte of data from the peripheral device might be significantly longer than the time required to receive the rest of the data for the read request after the first byte is received. For more information, see [**SERIAL\_TIMEOUTS**](https://msdn.microsoft.com/library/windows/hardware/hh439614).
@@ -64,14 +60,4 @@ To detect a possible interval time-out, SerCx2 periodically calls the [**ReadDma
 
 **Note**  SerCx2 relies on the **ReadDmaCounter** routine of the system DMA adapter to monitor time-outs during system-DMA-receive transactions and system-DMA-transmit transactions. The hardware abstraction layer (HAL) must implement a fully functional **ReadDmaCounter** routine for the system DMA controller used to transfer data to and from the serial controller.
 
- 
-
 A serial controller driver that supports new-data notifications for system-DMA-receive transactions must implement an [*EvtSerCx2SystemDmaReceiveCancelNewDataNotification*](https://msdn.microsoft.com/library/windows/hardware/dn265228) event callback function so that SerCx2 can cancel a enabled new-data notification before it occurs. If a new-data notification is enabled when the pending read request is canceled, or when a total time-out occurs, SerCx2 calls the *EvtSerCx2SystemDmaReceiveCancelNewDataNotification* function to cancel the notification. If this function successfully cancels the pending notification, it returns **TRUE**. A return value of **TRUE** guarantees that the serial controller driver will not call **SerCx2SystemDmaReceiveNewDataNotification**. A return value of **FALSE** indicates that the driver has called or will soon call **SerCx2SystemDmaReceiveNewDataNotification**. For more information about total time-outs, see [**SERIAL\_TIMEOUTS**](https://msdn.microsoft.com/library/windows/hardware/hh439614).
-
- 
-
- 
-
-
-
-
