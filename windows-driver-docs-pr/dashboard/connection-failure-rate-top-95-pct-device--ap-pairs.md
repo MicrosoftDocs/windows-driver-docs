@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Connection failure rate of top 95% of device / AP pairs – All
+# Connection failure rate of top 95 percent of device / AP pairs – All
 
 ## Description
 

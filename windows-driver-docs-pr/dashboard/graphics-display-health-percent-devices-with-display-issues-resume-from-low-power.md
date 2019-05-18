@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-When a machine is booting from a low power state, an error in the graphics component can cause display issues that impact the users’ experience. This measure is calculating the percent of devices that experienced display issues when resuming in a low power state. For a list of display issues, see [Appendix for the Microsoft driver measure dictionary](measure-appendix.md#display-issues).
+When a machine is booting from a low power state, an error in the graphics component can cause display issues that impact the users’ experience. This measure is calculating the percent of devices that experienced display issues when resuming in a low power state. For a list of display issues, see the [Appendix](measure-appendix.md#display-issues).
 
 ## Measure attributes
 

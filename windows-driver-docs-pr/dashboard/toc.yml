@@ -144,9 +144,9 @@
             - name: "Internet connection failure rate of top 95 percent of device / AP pairs with greater than 50 percent signal quality"
               href: internet-connection-failure-rate-top-95-pct-device--a-pairs-with-greater-than-50-pct-signal.md
             - name: "Percent of Wi-Fi sessions ending in an unexpected disconnect"
-              href: pct-wi-fi-sessions-ending-in-unexpected-disconnect .md
+              href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
       - name: "Appendix"
-        href: measures-appendix.md
+        href: measure-appendix.md
       - name: "Glossary"
         href: measures-glossary.md
     - name: "Working with extension INF files"
