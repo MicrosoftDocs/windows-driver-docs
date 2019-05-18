@@ -29,7 +29,6 @@
       href: attestation-signing-a-kernel-driver-for-public-release.md
     - name: "How to get a driver signed by Microsoft for multiple versions of Windows"
       href: get-drivers-signed-by-microsoft-for-multiple-windows-versions.md
-# Eliot 
     - name: "Driver Flighting"
       items:
       - name: "Overview"
@@ -147,7 +146,7 @@
             - name: "Percent of Wi-Fi sessions ending in an unexpected disconnect"
               href: pct-wi-fi-sessions-ending-in-unexpected-disconnect .md
       - name: "Appendix"
-        href: mreasures-appendix.md
+        href: measures-appendix.md
       - name: "Glossary"
         href: measures-glossary.md
     - name: "Working with extension INF files"
