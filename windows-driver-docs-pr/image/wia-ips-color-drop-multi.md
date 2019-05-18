@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_COLOR\_DROP\_MULTI
-description: The WIA\_IPS\_COLOR\_DROP\_MULTI property configures TBD.
+title: WIA_IPS_COLOR_DROP_MULTI
+description: The WIA_IPS_COLOR_DROP_MULTI property is used to report when more than one single color can be dropped out at the same time.
 keywords: ["WIA_IPS_COLOR_DROP_MULTI Imaging Devices"]
 topic_type:
 - apiref
@@ -10,31 +10,25 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 04/25/2019
+ms.date: 05/17/2019
 ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_COLOR\_DROP\_MULTI
 
-The **WIA\_IPS\_COLOR\_DROP\_MULTI** property configures TBD. This property is initialized and maintained by the WIA mini-driver, and is available with Windows 8 and later versions of Windows.
+The **WIA\_IPS\_COLOR\_DROP\_MULTI** property is used to report when more than one single color can be dropped out at the same time. For example, if the value of this property is 2, then the application can set the **WIA\_IPS\_COLOR\_DROP\_RED**, **WIA\_IPS\_COLOR\_DROP\_GREEN**, and **WIA\_IPS\_COLOR\_ BLUE** properties to enumerations containing each two values, describing the two colors to be dropped out.
 
-Property Type: VT\_I4
+This property is initialized and maintained by the WIA mini-driver.
 
-Valid Values: WIA\_PROP\_LIST
+Property Type: VT\_UI4
 
-Access Rights: Read-Write
+Valid Values: WIA\_PROP\_NONE
+
+Access Rights: Read-only
 
 ## Remarks
 
-The valid values for this property are shown in the following table.
-
-| Value | Description |
-| --- | --- |
-| TBD | TBD |
-| TBD | TBD |
-| TBD | TBD |
-
-The **WIA\_IPS\_COLOR\_DROP\_MULTI** property is TBD.
+This property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) only when the [**WIA\_IPS\_COLOR\_DROP**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-color-drop) property is supported.
 
 ## Requirements
 
