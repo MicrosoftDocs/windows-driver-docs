@@ -97,7 +97,7 @@ You should only run Driver Verifier on test computers, or on computers that you 
 
 >[!Note]
 > You can also run Driver Verifier in a Command Prompt window without starting Driver Verifier Manager. For example, to run Driver Verifier with the standard settings on a driver called *myDriver.sys*, you would use the following command:
-> ```
+> ```console
 > verifier /standard /driver myDriver.sys
 > ```
 >
@@ -120,7 +120,7 @@ For each of the following actions, you can use Driver Verifier Manager or enter 
 
     Enter the following command at a command prompt:
 
-    ```
+    ```console
     verifier /reset
     ```
 
@@ -135,7 +135,7 @@ For each of the following actions, you can use Driver Verifier Manager or enter 
 
   Enter the following command at a command prompt:
 
-  ```
+  ```console
   verifier /query
   ```
 
@@ -148,7 +148,7 @@ For each of the following actions, you can use Driver Verifier Manager or enter 
 
   Enter the following command at a command prompt:
 
-  ```
+  ```console
   verifier /querysettings
   ```
 
@@ -172,34 +172,34 @@ For more information, see [Handling a Bug Check When Driver Verifier is Enabled]
 
 When you start a new debugging session, use the debugger extension command, [**!analyze**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-analyze). In kernel mode, the **!analyze** command displays information about the most recent bug check. To display *additional* information, to help identify the faulting driver, add option **-v** to the command at the **kd>** prompt:
 
-```
-!analyze -v
+```dbgcmd
+kd> !analyze -v
 ```
 
 In addition to **!analyze**, you can enter the following debugger extensions at the **kd>** prompt to view information that is specific to Driver Verifier:
 
 -   [**!verifier**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-verifier) dumps captured Driver Verifier statistics. Use **!verifier -?** to display all of the available options.
 
-    ```
-    !verifier
+    ```dbgcmd
+    kd> !verifier
     ```
 
 -   [**!deadlock**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-deadlock) displays information related to locks or objects tracked by Driver Verifier's deadlock detection feature. Use **!deadlock -?** to display all of the available options.
 
-    ```
-    !deadlock
+    ```dbgcmd
+    kd> !deadlock
     ```
 
 -   [**!iovirp**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-iovirp) \[*address*\] displays information related to an IRP tracked by I/O Verifier. For example:
 
-    ```
-    !iovirp 947cef68
+    ```dbgcmd
+    kd> !iovirp 947cef68
     ```
 
 -   [**!ruleinfo**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-ruleinfo) \[*RuleID*\] displays information related to the [DDI compliance checking](ddi-compliance-checking.md) rule that was violated. (*RuleID* is always the first argument to the bug check.) All rule IDs from DDI compliance checking are in the form 0x200*nn*. For example:
 
-    ```
-    !ruleinfo 0x20005
+    ```dbgcmd
+    kd> !ruleinfo 0x20005
     ```
 
 
