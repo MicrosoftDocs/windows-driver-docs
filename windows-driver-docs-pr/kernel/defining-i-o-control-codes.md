@@ -86,7 +86,7 @@ The I/O manager sends the IRP only for a caller with write access rights, allowi
 
 FILE\_READ\_DATA and FILE\_WRITE\_DATA can be ORed together if the caller must have both read and write access rights.
 
-Some system-defined I/O control codes have a *RequiredAccess* value of FILE\_ANY\_ACCESS, which allows the caller to send the particular IOCTL regardless of the access granted to the device. Examples include I/O control codes that are sent to drivers of [*exclusive devices*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-exclusive-device).
+Some system-defined I/O control codes have a *RequiredAccess* value of FILE\_ANY\_ACCESS, which allows the caller to send the particular IOCTL regardless of the access granted to the device. Examples include I/O control codes that are sent to drivers of *exclusive devices*.
 
 Other system-defined I/O control codes require the caller to have read access rights, write access rights, or both. For example, the following definition of the public I/O control code IOCTL\_DISK\_SET\_PARTITION\_INFO shows that this I/O request can be sent to a driver only if the caller has both read and write access rights:
 

@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 In user mode, devices that belong to either [device setup classes](device-setup-classes.md) or [device interface classes](device-interface-classes.md) are managed by using *device information elements* and *device information sets.* A device information set consists of device information elements for all the devices that belong to some device setup class or device interface class.
 
-Each device information element contains a handle to the device's [*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode), and a pointer to a linked list of all the device interfaces associated with the device described by that element. If a device information set describes members of a setup class, the element might not point to any device interfaces, since setup class members are not necessarily associated with an interface.
+Each device information element contains a handle to the device's *devnode*, and a pointer to a linked list of all the device interfaces associated with the device described by that element. If a device information set describes members of a setup class, the element might not point to any device interfaces, since setup class members are not necessarily associated with an interface.
 
 The following diagram shows the internal structure of a device information set.
 

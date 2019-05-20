@@ -98,7 +98,7 @@ The setupapi.dev.log file also helps tracking driver file copy and commit time i
 Next at a later time:
 
 ```cpp
-!    inf:                     Could not start service &#39;toaster&#39;.
+!    inf:                     Could not start service 'toaster'.
 ```
 
 Then we have the file copy operation:
@@ -107,10 +107,10 @@ Then we have the file copy operation:
 <snip>
 flq:                {FILE_QUEUE_COPY}
      flq:                     CopyStyle      - 0x00000000
-     flq:                     SourceRootPath - &#39;C:\Windows\System32\DriverStore\FileRepository\Toaster.inf_amd64_d9b35403a0fe4391\&#39;
-     flq:                     SourceFilename - &#39;toaster.exe&#39;
-     flq:                     TargetDirectory- &#39;C:\Windows\System32\drivers&#39;
-     flq:                     TargetFilename - &#39;toaster.exe&#39;
+     flq:                     SourceRootPath - 'C:\Windows\System32\DriverStore\FileRepository\Toaster.inf_amd64_d9b35403a0fe4391\'
+     flq:                     SourceFilename - 'toaster.exe'
+     flq:                     TargetDirectory- 'C:\Windows\System32\drivers'
+     flq:                     TargetFilename - 'toaster.exe'
 ```
 
 The file is committed next. Compare the end time with the start time.
@@ -119,11 +119,11 @@ The file is committed next. Compare the end time with the start time.
 flq:           {_commit_file_queue} 14:54:56.711
 <snip>
      flq:                     {_commit_copyfile}
-     flq:                          Copying &#39;C:\Windows\System32\DriverStore\FileRepository\Toaster.inf_amd64_d9b35403a0fe4391\o2flash.exe&#39; to &#39;C:\Windows\System32\drivers\o2flash.exe&#39;.
-     flq:                          CopyFile: &#39;C:\Windows\System32\DriverStore\FileRepository\Toaster.inf_amd64_d9b35403a0fe4391\o2flash.exe&#39; to &#39;C:\Windows\System32\drivers\SETDA81.tmp&#39;
-     flq:                          MoveFile: &#39;C:\Windows\System32\drivers\SETDA81.tmp&#39; to &#39;C:\Windows\System32\drivers\toaster.exe&#39;
-     cpy:                          Applied &#39;OEM Legacy&#39; protection on file &#39;C:\Windows\System32\drivers\toaster.exe&#39;.
-     flq:                          Caller applied security to file &#39;C:\Windows\System32\drivers\toaster.exe&#39;.
+     flq:                          Copying 'C:\Windows\System32\DriverStore\FileRepository\Toaster.inf_amd64_d9b35403a0fe4391\o2flash.exe' to 'C:\Windows\System32\drivers\o2flash.exe'.
+     flq:                          CopyFile: 'C:\Windows\System32\DriverStore\FileRepository\Toaster.inf_amd64_d9b35403a0fe4391\o2flash.exe' to 'C:\Windows\System32\drivers\SETDA81.tmp'
+     flq:                          MoveFile: 'C:\Windows\System32\drivers\SETDA81.tmp' to 'C:\Windows\System32\drivers\toaster.exe'
+     cpy:                          Applied 'OEM Legacy' protection on file 'C:\Windows\System32\drivers\toaster.exe'.
+     flq:                          Caller applied security to file 'C:\Windows\System32\drivers\toaster.exe'.
      flq:                     {_commit_copyfile exit OK}
 <snip>
      sto:      {Configure Driver Package: exit(0x00000bc3)}

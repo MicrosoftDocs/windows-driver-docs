@@ -1,6 +1,36 @@
 {
   "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-objects.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/introduction-to-framework-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-general-object-macros.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/wdf-declare-context-type",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/synchronization-techniques-for-wdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/using-automatic-synchronization",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-support-objects.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/using-memory-buffers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/using-the-registry-in-wdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/introduction-to-registry-keys-for-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/security-issues-for-kmdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/dashboard/administration.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
       "redirect_document_id": true
@@ -1025,6 +1055,11 @@
     {
       "source_path": "windows-driver-docs-pr/sensors/architecture-overview.md",
       "redirect_URL": "/windows-hardware/drivers/sensors/architecture-overview-for-sensor-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/enabling-debug-output-for-the-video-memory-manager.md",
+      "redirect_URL": "windows-hardware/drivers/display/video-memory-management-and-gpu-scheduling",
       "redirect_document_id": true
     },
     {
@@ -2279,8 +2314,8 @@
     },
     {
       "source_path": "windows-driver-docs-pr/netcx/netadaptersetcurrentlinkstate.md",
-      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetcurrentlinkstate",
-      "redirect_document_id": true
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetlinkstate",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/netcx/netadaptersetdatapathcapabilities.md",
@@ -6038,6 +6073,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/netcx/using-the-ring-buffer.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/net-rings-and-net-ring-iterators",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/audio/drm-requirements-for-gfx-drivers.md",
       "redirect_URL": "/windows-hardware/drivers/audio/index",
       "redirect_document_id": false
@@ -6199,6 +6239,1340 @@
       "source_path": "windows-driver-docs-pr/network/restoring-hyper-v-extensible-switch-run-time-data.md",
       "redirect_URL": "/windows-hardware/drivers/network/managing-hyper-v-extensible-switch-run-time-data",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-ndis-5-x-drivers-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-6-0-backward-compatibility.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-backward-compatibility",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-a-miniport-driver-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-a-miniport-driver-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-changes-required-to-port-a-miniport-driver-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-changes-required-to-port-a-miniport-driver-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-initialization-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-initialization-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-the-driverentry-routine-for-an-ndis-6-0-miniport-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-driverentry-routine-for-an-ndis-6-0-miniport-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-the-ndis-6-0-miniport-driver-characteristics-structure.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-ndis-6-0-miniport-driver-characteristics-structure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/registering-optional-ndis-6-0-entry-points-for-miniport-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/registering-optional-ndis-6-0-entry-points-for-miniport-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-unload-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-unload-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-adapter-initialization-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-adapter-initialization-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-the-miniportinitialize-function-for-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-miniportinitialize-function-for-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/setting-the-ndis-6-0-miniport-adapter-attributes.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/setting-the-ndis-6-0-miniport-adapter-attributes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/reading-the-registry-in-an-ndis-6-0-miniport-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/reading-the-registry-in-an-ndis-6-0-miniport-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/allocating-memory-in-an-ndis-6-0-miniport-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/allocating-memory-in-an-ndis-6-0-miniport-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-bus-specific-configuration-space-access-for-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-bus-specific-configuration-space-access-for-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-adapter-halt-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-adapter-halt-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/supporting-ndis-6-0-miniport-adapter-pause-and-restart-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/supporting-ndis-6-0-miniport-adapter-pause-and-restart-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-send-and-receive-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-send-and-receive-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/allocating-network-data-pools-in-an-ndis-6-0-miniport-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/allocating-network-data-pools-in-an-ndis-6-0-miniport-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-ndis-miniport-driver-send-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-miniport-driver-send-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-ndis-miniport-driver-receive-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-miniport-driver-receive-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-dma-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-dma-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-interrupt-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-interrupt-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-interrupt-registration-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-interrupt-registration-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-interrupt-handling-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-interrupt-handling-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/supporting-message-signaled-interrupts-in-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/supporting-message-signaled-interrupts-in-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-oid-request-handling-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-oid-request-handling-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-status-indications-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-status-indications-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-plug-and-play-event-notification-handling-to-n.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-plug-and-play-event-notification-handling-to-n",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-adapter-check-for-hang-and-reset-operations-to-ndis-6.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-adapter-check-for-hang-and-reset-operations-to-ndis-6",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-adapter-shutdown-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-adapter-shutdown-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-a-protocol-driver-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-a-protocol-driver-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-changes-required-to-port-a-protocol-driver-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-changes-required-to-port-a-protocol-driver-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-initialization-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-initialization-to-ndis-6-0",
+      "redirect_document_id": true
+    }, 
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-the-driverentry-routine-for-an-ndis-6-0-protocol-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-driverentry-routine-for-an-ndis-6-0-protocol-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-the-ndis-6-0-protocol-driver-characteristics-structure.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-ndis-6-0-protocol-driver-characteristics-structure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/registering-optional-ndis-6-0-protocol-driver-entry-points.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/registering-optional-ndis-6-0-protocol-driver-entry-points",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-unload-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-unload-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-binding-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-binding-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-the-protocolbindadapter-function-for-an-ndis-6-0-protocol-dri.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-protocolbindadapter-function-for-an-ndis-6-0-protocol-dri",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/opening-an-adapter-in-an-ndis-6-0-protocol-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/opening-an-adapter-in-an-ndis-6-0-protocol-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/reading-the-registry-in-an-ndis-6-0-protocol-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/reading-the-registry-in-an-ndis-6-0-protocol-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/allocating-memory-in-an-ndis-6-0-protocol-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/allocating-memory-in-an-ndis-6-0-protocol-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-unbinding-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-unbinding-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/supporting-ndis-6-0-protocol-binding-pause-and-restart-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/supporting-ndis-6-0-protocol-binding-pause-and-restart-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-send-and-receive-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-send-and-receive-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/allocating-network-data-pools-in-an-ndis-6-0-protocol-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/allocating-network-data-pools-in-an-ndis-6-0-protocol-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-ndis-protocol-driver-send-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-protocol-driver-send-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-ndis-protocol-driver-receive-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-protocol-driver-receive-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-oid-request-handling-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-oid-request-handling-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-status-indication-handling-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-status-indication-handling-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-plug-and-play-event-notification-handling-to-n.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-plug-and-play-event-notification-handling-to-n",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-an-intermediate-driver-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-an-intermediate-driver-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-intermediate-driver-initialization-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-intermediate-driver-initialization-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-intermediate-driver-unload-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-intermediate-driver-unload-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-virtual-miniport-initialization-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-virtual-miniport-initialization-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-virtual-miniport-halt-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-virtual-miniport-halt-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/supporting-pause-and-restart-operations-in-an-ndis-6-0-intermediate-dr.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/supporting-pause-and-restart-operations-in-an-ndis-6-0-intermediate-dr",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-intermediate-driver-send-and-receive-operations-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-intermediate-driver-send-and-receive-operations-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-intermediate-driver-oid-request-handling-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-intermediate-driver-oid-request-handling-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-intermediate-driver-status-indication-handling-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-intermediate-driver-status-indication-handling-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-intermediate-driver-plug-and-play-event-notification-handling-.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-intermediate-driver-plug-and-play-event-notification-handling-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-a-condis-5-x-driver-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-a-condis-5-x-driver-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-changes-required-to-port-a-condis-driver-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-changes-required-to-port-a-condis-driver-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-driver-registration-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-driver-registration-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-miniport-driver-registration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-miniport-driver-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-client-registration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-client-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-call-manager-registration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-call-manager-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-mcm-registration.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-mcm-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-address-family-close-operations-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-address-family-close-operations-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-send-and-receive-operations-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-send-and-receive-operations-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-send-and-receive-operations-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-send-and-receive-operations-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-miniport-driver-send-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-miniport-driver-send-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-miniport-driver-receive-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-miniport-driver-receive-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-send-and-receive-operations-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-send-and-receive-operations-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-protocol-driver-send-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-protocol-driver-send-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-condis-protocol-driver-receive-data-handling.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-condis-protocol-driver-receive-data-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-oid-request-operations-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-oid-request-operations-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-oid-requests-for-condis-6-0-miniport-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-oid-requests-for-condis-6-0-miniport-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-oid-request-handling-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-oid-request-handling-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-mcm-oid-request-handling-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-mcm-oid-request-handling-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-status-indication-operations-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-status-indication-operations-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-miniport-driver-status-indications-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-miniport-driver-status-indications-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-status-indication-handling-to-condis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-status-indication-handling-to-condis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/porting-task-offload-services-to-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-task-offload-services-to-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-6-0-task-offload-porting-issues.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-task-offload-porting-issues",
+      "redirect_document_id": true
+    },  
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-6-0-support-for-task-offload.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-support-for-task-offload",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-6-0-task-offload-backward-compatibility.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-task-offload-backward-compatibility",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-ndis-6-0-task-offload-porting-issues-for-protocol-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-ndis-6-0-task-offload-porting-issues-for-protocol-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-ndis-6-0-task-offload-porting-issues-for-miniport-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-ndis-6-0-task-offload-porting-issues-for-miniport-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/summary-of-task-offload-support-in-ndis-6-0-filter-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/summary-of-task-offload-support-in-ndis-6-0-filter-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offloading-checksum-tasks-in-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offloading-checksum-tasks-in-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offloading-the-segmentation-of-large-tcp-packets-in-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offloading-the-segmentation-of-large-tcp-packets-in-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offloading-internet-protocol-security-tasks-in-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offloading-internet-protocol-security-tasks-in-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offloading-tcp-ip-connections-in-ndis-6-0.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offloading-tcp-ip-connections-in-ndis-6-0",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/netdma-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/netdma-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/introduction-to-the-netdma-interface.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/introduction-to-the-netdma-interface",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/writing-a-netdma-provider-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/writing-a-netdma-provider-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/initializing-a-netdma-provider-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/initializing-a-netdma-provider-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/unloading-a-netdma-provider-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/unloading-a-netdma-provider-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/registering-a-netdma-provider.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/registering-a-netdma-provider",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/deregistering-a-netdma-provider.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/deregistering-a-netdma-provider",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/starting-a-netdma-provider.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/starting-a-netdma-provider",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/stopping-a-netdma-provider.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/stopping-a-netdma-provider",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/netdma-provider-services.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/netdma-provider-services",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/allocating-a-netdma-channel.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/allocating-a-netdma-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/freeing-a-netdma-channel.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/freeing-a-netdma-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/starting-a-dma-transfer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/starting-a-dma-transfer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/appending-dma-descriptors-to-a-dma-channel.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/appending-dma-descriptors-to-a-dma-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/completing-a-dma-transfer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/completing-a-dma-transfer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/supporting-null-dma-transfers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/supporting-null-dma-transfers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/suspending-and-resuming-a-dma-transfer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/suspending-and-resuming-a-dma-transfer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/aborting-a-dma-transfer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/aborting-a-dma-transfer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/resetting-a-dma-channel.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/resetting-a-dma-channel",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/managing-netdma-interrupts.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/managing-netdma-interrupts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/setting-the-netdma-interrupt-cpu-affinities.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/setting-the-netdma-interrupt-cpu-affinities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-a-netdma-interrupt.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-a-netdma-interrupt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-a-netdma-interrupt-dpc.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-a-netdma-interrupt-dpc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/installing-a-netdma-provider-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/installing-a-netdma-provider-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/netdma-2-0-extensions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/netdma-2-0-extensions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/netdma-2-0-extensions-for-netdma-1-1-and-later-providers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/netdma-2-0-extensions-for-netdma-1-1-and-later-providers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/netdma-2-0-extensions-for-netdma-2-0-and-later-providers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/netdma-2-0-extensions-for-netdma-2-0-and-later-providers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/extensions-to-chained-descriptors.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/extensions-to-chained-descriptors",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/source-and-destination-page-break.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/source-and-destination-page-break",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/direct-cache-access--dca-.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/direct-cache-access--dca-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/specifying-a-netdma-provider-friendly-name.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/specifying-a-netdma-provider-friendly-name",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-tcp-chimney-offload.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload",
+      "redirect_document_id": true
+    },     
+    {
+      "source_path": "windows-driver-docs-pr/network/overview-of-tcp-chimney-offload.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/overview-of-tcp-chimney-offload",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/tcp-chimney-architecture.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-chimney-architecture",
+      "redirect_document_id": true
+    },  
+    {
+      "source_path": "windows-driver-docs-pr/network/compliance-with-ietf-rfcs.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/compliance-with-ietf-rfcs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/required-and-suggested-tcp-ip-protocol-support.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/required-and-suggested-tcp-ip-protocol-support",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/possible-future-requirements-for-tcp-chimney-capable-nics.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/possible-future-requirements-for-tcp-chimney-capable-nics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/rfcs-of-interest-that-are-not-required-for-tcp-chimney-capable-nics.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/rfcs-of-interest-that-are-not-required-for-tcp-chimney-capable-nics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/obsolete-rfcs-that-should-not-be-used.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/obsolete-rfcs-that-should-not-be-used",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/requirements-for-tcp-chimney-nics-for-blind-reset-attacks.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/requirements-for-tcp-chimney-nics-for-blind-reset-attacks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/initializing-an-offload-target.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/initializing-an-offload-target",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/registering-chimney-offload-functions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/registering-chimney-offload-functions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/querying-and-setting-an-offload-target-s-tcp-chimney-offload-capabilit.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/querying-and-setting-an-offload-target-s-tcp-chimney-offload-capabilit",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/allocating-buffer-pools.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/allocating-buffer-pools",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/tcp-chimney-offload-state.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-chimney-offload-state",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/layers-of-offload-state.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/layers-of-offload-state",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/classes-of-offload-state-variables.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/classes-of-offload-state-variables",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offload-state-objects.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offload-state-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offload-state-structures.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offload-state-structures",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offload-block-lists.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offload-block-lists",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offload-state-tree.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offload-state-tree",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/storing-and-referencing-offloaded-state.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/storing-and-referencing-offloaded-state",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offload-target-s-internal-state-trees.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offload-target-s-internal-state-trees",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/placeholders--linkers--and-new-offloads.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/placeholders--linkers--and-new-offloads",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/offloading-tcp-chimney-state.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offloading-tcp-chimney-state",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/initiate-offload-call-sequence.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/initiate-offload-call-sequence",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/traversing-a-state-tree.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/traversing-a-state-tree",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/creating-an-offload-context-area.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/creating-an-offload-context-area",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/returning-completion-status-of-an-initiate-offload-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/returning-completion-status-of-an-initiate-offload-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/partial-offloads-and-offload-failures.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/partial-offloads-and-offload-failures",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/processing-events-that-occur-during-an-offload.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/processing-events-that-occur-during-an-offload",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-buffered-receive-data-during-and-after-an-offload-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-buffered-receive-data-during-and-after-an-offload-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-outstanding-send-data-during-and-after-an-offload-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-outstanding-send-data-during-and-after-an-offload-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/send-data-that-contains-data-to-be-retransmitted.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/send-data-that-contains-data-to-be-retransmitted",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/send-data-that-does-not-contain-data-to-be-retransmitted.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/send-data-that-does-not-contain-data-to-be-retransmitted",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/mapping-snduna--sndnxt--and-sndmax-to-the-mdls.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/mapping-snduna--sndnxt--and-sndmax-to-the-mdls",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/completing-the-transmission-of-send-data.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/completing-the-transmission-of-send-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/terminating-the-offload-of-a-connection-because-of-resource-constraint.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/terminating-the-offload-of-a-connection-because-of-resource-constraint",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/querying-offloaded-state.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/querying-offloaded-state",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/query-offload-sequence.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/query-offload-sequence",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/filling-in-the-queried-state.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/filling-in-the-queried-state",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/returning-the-completion-status-of-a-query-offload-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/returning-the-completion-status-of-a-query-offload-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-offloaded-state.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-offloaded-state",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/reasons-for-updating-offloaded-state-objects.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/reasons-for-updating-offloaded-state-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/updating-cached-variables.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-cached-variables",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/linking-path-state-objects-to-a-new-neighbor-state-object.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/linking-path-state-objects-to-a-new-neighbor-state-object",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/update-offload-sequence.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/update-offload-sequence",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/synchronizing-update-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/synchronizing-update-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/returning-the-completion-status-of-an-update-offload-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/returning-the-completion-status-of-an-update-offload-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/invalidating-offloaded-state.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/invalidating-offloaded-state",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/reasons-for-invalidating-offloaded-state-objects.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/reasons-for-invalidating-offloaded-state-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/invalidate-offload-sequence.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/invalidate-offload-sequence",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-invalidated-state-objects.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-invalidated-state-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/returning-the-completion-status-of-an-invalidate-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/returning-the-completion-status-of-an-invalidate-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/terminating-offload-state.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/terminating-offload-state",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/terminate-offload-requested-by-an-offload-target.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/terminate-offload-requested-by-an-offload-target",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/terminate-offload-initiated-by-the-host-stack.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/terminate-offload-initiated-by-the-host-stack",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/terminate-offload-sequence.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/terminate-offload-sequence",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-segments-received-during-a-terminate-offload-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-segments-received-during-a-terminate-offload-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-buffered-receive-data-during-a-terminate-offload-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-buffered-receive-data-during-a-terminate-offload-operation",
+      "redirect_document_id": true
+    },  
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-send-requests-during-a-terminate-offload-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-send-requests-during-a-terminate-offload-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-outstanding-send-data-during-a-terminate-offload-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-outstanding-send-data-during-a-terminate-offload-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/returning-the-completion-status-of-a-terminate-offload-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/returning-the-completion-status-of-a-terminate-offload-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/tcp-chimney-data-i-o-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-chimney-data-i-o-operations",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/sending-data-from-an-offload-target.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/sending-data-from-an-offload-target",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/forwarding-data-to-an-offload-target.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/forwarding-data-to-an-offload-target",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/processing-received-data-in-an-offload-target.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/processing-received-data-in-an-offload-target",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/delivering-received-data-from-an-offload-target.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/delivering-received-data-from-an-offload-target",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/posting-and-completing-receive-requests.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/posting-and-completing-receive-requests",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/indicating-received-data-from-an-offload-target.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/indicating-received-data-from-an-offload-target",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/using-the-specified-receive-indication-size.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/using-the-specified-receive-indication-size",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/delivery-algorithm.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/delivery-algorithm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-the-reception-of-non-standard-packets-and-messages.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-the-reception-of-non-standard-packets-and-messages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-the-reception-of-syn-segments.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-the-reception-of-syn-segments",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-the-reception-of-network-management-messages.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-the-reception-of-network-management-messages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-the-reception-of-packets-in-which-ip-options-are-specified.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-the-reception-of-packets-in-which-ip-options-are-specified",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-the-reception-of-urgent-data.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-the-reception-of-urgent-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-the-reception-of-ip-fragments.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-the-reception-of-ip-fragment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/receive-side-scaling-on-an-offloaded-tcp-connection.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/receive-side-scaling-on-an-offloaded-tcp-connection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-1q-and-802-1p-processing-on-an-offloaded-tcp-connection.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/802-1q-and-802-1p-processing-on-an-offloaded-tcp-connection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/802-1q-and-802-1p-information-supplied-to-an-offload-target.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/802-1q-and-802-1p-information-supplied-to-an-offload-target",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/determining-whether-to-fail-an-offload-request-because-of-802-1q-infor.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/determining-whether-to-fail-an-offload-request-because-of-802-1q-infor",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/sending-802-1q-marked-and-802-1p-marked-packets-on-an-offloaded-tcp-co.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/sending-802-1q-marked-and-802-1p-marked-packets-on-an-offloaded-tcp-co",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/receiving-802-1q-marked-and-802-1p-marked-packets-on-an-offloaded-tcp-.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/receiving-802-1q-marked-and-802-1p-marked-packets-on-an-offloaded-tcp-",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/indicating-chimney-related-events.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/indicating-chimney-related-events",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/making-a-neighborreachabilityquery-indication.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/making-a-neighborreachabilityquery-indication",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/indicating-tcp-chimney-specific-events.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/indicating-tcp-chimney-specific-events",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/maintaining-and-reporting-chimney-specific-statistics.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/maintaining-and-reporting-chimney-specific-statistics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/closing-an-offloaded-tcp-connection.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/closing-an-offloaded-tcp-connection",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/responding-to-a-disconnect-request.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/responding-to-a-disconnect-request",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/responding-to-the-reception-of-a-fin-or-rst-segment.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/responding-to-the-reception-of-a-fin-or-rst-segment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/tcp-timers-maintained-by-an-offload-target.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-timers-maintained-by-an-offload-target",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/overview-of-tcp-timers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/overview-of-tcp-timers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/delayed-acknowledgement-timer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/delayed-acknowledgement-timer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/fin-wait-2-timer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/fin-wait-2-timer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/keepalive-timer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/keepalive-timer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/persist-timer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/persist-timer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/push-timer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/push-timer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/retransmit-timer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/retransmit-timer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/silly-window-syndrome-prevention-timer.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/silly-window-syndrome-prevention-timer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/generating-and-using-timestamps.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/generating-and-using-timestamps",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/calculating-the-timestamp-delta.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/calculating-the-timestamp-delta",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/generating-a-timestamp.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/generating-a-timestamp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/calculating-the-merged-round-trip-time.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/calculating-the-merged-round-trip-time",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/examples-of-timestamp-processing.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/examples-of-timestamp-processing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/power-management-for-offload-targets.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/power-management-for-offload-targets",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/tcp-chimney-offload-for-intermediate-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-chimney-offload-for-intermediate-drivers",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/initializing-a-tcp-chimney-capable-intermediate-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/initializing-a-tcp-chimney-capable-intermediate-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/registering-an-intermediate-driver-s-miniportxxx-chimney-functions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/registering-an-intermediate-driver-s-miniportxxx-chimney-functions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/registering-an-intermediate-driver-s-protocolxxx-chimney-functions.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/registering-an-intermediate-driver-s-protocolxxx-chimney-functions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/querying-and-setting-an-intermediate-driver-s-tcp-chimney-offload-capa.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/querying-and-setting-an-intermediate-driver-s-tcp-chimney-offload-capa",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/referencing-offloaded-state-through-an-intermediate-driver.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/referencing-offloaded-state-through-an-intermediate-driver",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/propagating-state-manipulation-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/propagating-state-manipulation-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/propagating-a-state-manipulation-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/propagating-a-state-manipulation-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/propagating-the-completion-of-a-state-manipulation-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/propagating-the-completion-of-a-state-manipulation-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/comparison-of-offload-block-list-types.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/comparison-of-offload-block-list-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/reusing-an-ndis-miniport-offload-block-list-structure.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/reusing-an-ndis-miniport-offload-block-list-structure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/reusing-an-ndis-protocol-offload-block-list-structure.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/reusing-an-ndis-protocol-offload-block-list-structure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/propagating-i-o-operations.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/propagating-i-o-operations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/propagating-an-i-o-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/propagating-an-i-o-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/propagating-the-completion-of-an-i-o-operation.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/propagating-the-completion-of-an-i-o-operation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/propagating-an-indication.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/propagating-an-indication",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/tcp-chimney-offload-oids.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-chimney-offload-oids",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/tcp-chimney-offload-status-indications.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-chimney-offload-status-indications",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-offload-pause.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-status-offload-pause",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-offload-resume.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-status-offload-resume",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/ndis-status-upload-all.md",
+      "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-status-upload-all",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/debugger/checking-and-updating-status.md",
+      "redirect_URL": "/windows-hardware/drivers/debugger/symproxy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/print/devices-and-printers.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/print/document-devices-in-devices-and-printers.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/print/device-experience-in-devices-and-printers.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/device-stage-custom-experience.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/debugger/-elog-str.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/debugger/-evlog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/mobile-plans-promotional-content.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-service-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/mobile-plans-asynchronous-fulfillment.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/mobilebroadband/mobile-plans-callback-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/mobilebroadband/mobile-plans-prepaid-experience.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-device-experience",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-device-object-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/",
+      "redirect_document_id": false
+    },{
+      "source_path": "windows-driver-docs-pr/wdf/wdfdeviceresumeidlewithtag.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceresumeidlewithtag",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdfdevicestopidlewithtag.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidlewithtag",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/bypassing-boot-options.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-for-driver-testing-and-debugging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/introduction-to-boot-options.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-for-driver-testing-and-debugging",
+      "redirect_document_id": true
     }
   ]
 }

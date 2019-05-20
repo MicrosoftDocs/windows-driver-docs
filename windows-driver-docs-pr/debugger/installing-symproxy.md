@@ -3,7 +3,7 @@ title: Installing SymProxy
 description: Installing SymProxy
 ms.assetid: 63633de7-d254-415d-bf06-c0e81bd03e74
 keywords: ["SymProxy, installation"]
-ms.date: 10/25/2018
+ms.date: 03/12/2019
 ms.localizationpriority: medium
 ---
 
@@ -23,8 +23,6 @@ The following summarizes the tasks to install and configure SymProxy.
 
 -   IIS needs to be configured. For more information, see [Choosing Network Security Credentials](choosing-network-security-credentials.md) and [Configuring IIS for SymProxy](configuring-iis-for-symproxy.md).
 
--   Confirm that SymProxy is running as expected using the status page. For more information see [Checking and Updating Status](checking-and-updating-status.md).
-
 These steps can be automated using the Install.cmd file. For more information, see [SymProxy Automated Installation](symproxy-automated-installation.md).
 
 ## <span id="Copy_the_SymProxy_files_to_IIS"></span><span id="copy_the_symproxy_files_to_iis"></span><span id="COPY_THE_SYMPROXY_FILES_TO_IIS"></span>Copy the SymProxy files to IIS
@@ -35,6 +33,8 @@ The SymProxy files are included in the Debuggers directory of the Windows Driver
 To install SymProxy on the server, copy symproxy.dll, symsrv.dll and symproxy.man to %WINDIR%\\system32\\inetsrv.
 
 In order to prevent problems that could occur in accessing the Microsoft Symbol Store, create a blank file called %WINDIR%\\system32\\inetsrv\\symsrv.yes. The contents of this file are not important. When symsrv.yes file is present, it automatically accepts the EULA for the Microsoft Public Symbol Store.
+
+Note that the certificates that are normally installed with IIS and Windows server such as the "Baltimore CyberTrust Root" are used for HTTPS/TLS communication to the upstream provider, and they need to be in the Trusted Root store on the machine where SymProxy is running. For general information on troubleshooting SSL issues, see [Troubleshooting SSL related issues (Server Certificate)](https://docs.microsoft.com/iis/troubleshoot/security-issues/troubleshooting-ssl-related-issues-server-certificate).
 
  
 

@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 An INF file's **DefaultInstall** section is accessed if a user selects the "Install" menu item after right-clicking on the INF file name.
 
-```cpp
+```ini
 [DefaultInstall] | 
 [DefaultInstall.nt] | 
 [DefaultInstall.ntx86] | 
@@ -74,7 +74,7 @@ This optional entry specifies one or more additional system-supplied INF files t
 
 For example, the system INF files for device drivers that depend on the system's kernel-streaming support specify this entry as follows:
 
-```cpp
+```ini
 Include= ks.inf[,[kscaptur.inf,][ksfilter.inf]]
 ```
 
@@ -85,7 +85,7 @@ This optional entry specifies sections within system-supplied INF files that mus
 
 For example, the INF files for device drivers that have the preceding **Include** entry specify this entry as follows:
 
-```cpp
+```ini
 Needs= KS.Registration[,KSCAPTUR.Registration | 
                         KSCAPTUR.Registration.NT,MSPCLOCK.Installation]
 ```
@@ -149,7 +149,7 @@ For more information, see [**INF UnregisterDlls Directive**](inf-unregisterdlls-
 Remarks
 -------
 
-**DefaultInstall** sections must not be used for device installations. Use **DefaultInstall** sections only for the installation of class filter drivers, class co-installers, file system filters, and kernel driver services that are not associated with a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)).
+**DefaultInstall** sections must not be used for device installations. Use **DefaultInstall** sections only for the installation of class filter drivers, class co-installers, file system filters, and kernel driver services that are not associated with a device node (*devnode*).
 
 **Note**  The INF file of a [driver package](driver-packages.md) must not contain an INF **DefaultInstall** section if the driver package is to be digitally signed. For more information about signing driver packages, see [Driver Signing](driver-signing.md).
 
@@ -161,9 +161,9 @@ Providing a **DefaultInstall** section is optional. If an INF file does not incl
 
  
 
-To install a **DefaultInstall** section from a [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application), use the following call to **InstallHinfSection**:
+To install a **DefaultInstall** section from a *device installation application*, use the following call to **InstallHinfSection**:
 
-```cpp
+```ini
 InstallHinfSection(NULL,NULL,TEXT("DefaultInstall 132 path-to-inf\infname.inf"),0); 
 ```
 
@@ -176,7 +176,7 @@ Examples
 
 The following example shows a typical **DefaultInstall** section:
 
-```cpp
+```ini
 [DefaultInstall]
 CopyFiles=MyAppWinFiles, MyAppSysFiles, @SRSutil.exe
 AddReg=MyAppRegEntries

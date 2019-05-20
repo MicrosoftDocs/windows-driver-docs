@@ -27,7 +27,7 @@ ms.localizationpriority: medium
 
 
 
-For [*PCL*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pcl) printers, Unidrv supports downloading soft fonts as bitmaps or TrueType outlines. For device fonts, Unidrv supports PCL, CAPSL, and PPDS printer command formats. For other formats, customized font management code must be provided in a rendering plug-in. The following set of IPrintOemUni methods can be implemented:
+For *PCL* printers, Unidrv supports downloading soft fonts as bitmaps or TrueType outlines. For device fonts, Unidrv supports PCL, CAPSL, and PPDS printer command formats. For other formats, customized font management code must be provided in a rendering plug-in. The following set of IPrintOemUni methods can be implemented:
 
 <a href="" id="iprintoemuni--downloadfontheader"></a>[**IPrintOemUni::DownloadFontHeader**](https://msdn.microsoft.com/library/windows/hardware/ff554242)  
 Used to obtain a soft font's header information from Unidrv and then download the information to the printer.
@@ -51,7 +51,7 @@ Unidrv provides a callback function, [*UNIFONTOBJ\_GetInfo*](https://msdn.micros
 
 For device fonts, font descriptions must be provided as explained in the **Unidrv font metrics files** section and the **Glyph translation table files** section.
 
-For cartridge fonts, font descriptions can be provided in resource DLLs and specified using [font cartridges](font-cartridges.md) entries in a [*GPD*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-generic-printer-description--gpd-) file. Font descriptions can also be provided in the form of Unidrv font format files.
+For cartridge fonts, font descriptions can be provided in resource DLLs and specified using font cartridges file. Font descriptions can also be provided in the form of Unidrv font format files.
 
 For downloadable PCL soft fonts, font descriptions must be provided as explained in the **Unidrv font format files** section.
 
@@ -77,7 +77,7 @@ Unidrv also supports glyph translation files created for Windows NT 4.0, which u
 
 ### <a href="" id="ddk-unidrv-font-format-files-gg"></a>Unidrv Font Format Files
 
-For cartridge fonts that are not specified using [font cartridges](font-cartridges.md) entries in a GPD file, the fonts must be described in a Unidrv Font Format (.uff) file. Additionally, downloadable [*PCL*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pcl) soft fonts must be specified using .uff files.
+For cartridge fonts that are not specified using font cartridges soft fonts must be specified using .uff files.
 
 A .uff file is a binary file that is constructed using the following sets of structures:
 
@@ -93,7 +93,7 @@ The following figure shows the layout of a Unidrv Font Format file.
 
 A Unidrv Font Format file consists of a [**UFF\_FILEHEADER**](https://msdn.microsoft.com/library/windows/hardware/ff562862) structure, and one or more [**UFF\_FONTDIRECTORY**](https://msdn.microsoft.com/library/windows/hardware/ff562866) and [**DATA\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff547364) structure pairs. Each DATA\_HEADER structure is associated with a block of font data. The UFF\_FILEHEADER structure contains the offset from the beginning of the file to the first UFF\_FONTDIRECTORY structure. Each UFF\_FONTDRECTORY structure contains the offset from the beginning of the file to a DATA\_HEADER structure that contains font data.
 
-Additionally, for downloadable [*PCL*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pcl) soft fonts, the binary data to be downloaded is stored in a .uff file.
+Additionally, for downloadable *PCL* soft fonts, the binary data to be downloaded is stored in a .uff file.
 
 .uff files creation is the responsibility of vendor-supplied font installation software. Unidrv reads a printer's .uff files to obtain font and glyph information. The font installer should modify .uff file contents when fonts are added or deleted. For more information about creating a font installer, see [Customized Font Installers for Unidrv](customized-font-installers-for-unidrv.md).
 
@@ -114,25 +114,25 @@ All .uff files must be stored in the %SystemRoot%\\System32\\Spool\\Drivers\\Uni
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>&quot;ExternalFontFile&quot;</p>
+<td><p>"ExternalFontFile"</p>
 <p>REG_SZ</p></td>
 <td><p>Filename of a .uff file that specifies the current installed fonts. Fonts can be downloadable or contained in a cartridge.</p></td>
 <td><p>Font Installer</p></td>
 </tr>
 <tr class="even">
-<td><p>&quot;ExtFontCartFile&quot;</p>
+<td><p>"ExtFontCartFile"</p>
 <p>REG_SZ</p></td>
-<td><p>Filename of a .uff file that specifies all the fonts contained in all the font cartridges listed for &quot;ExtFontCartNames&quot;.</p></td>
+<td><p>Filename of a .uff file that specifies all the fonts contained in all the font cartridges listed for "ExtFontCartNames".</p></td>
 <td><p>Font Installer</p></td>
 </tr>
 <tr class="odd">
-<td><p>&quot;ExtFontCartNames&quot;</p>
+<td><p>"ExtFontCartNames"</p>
 <p>REG_MULTI_SZ</p></td>
 <td><p>Names of all the font cartridges that could possibly be installed on the printer.</p></td>
 <td><p>Font Installer</p></td>
 </tr>
 <tr class="even">
-<td><p>&quot;FontCart&quot;</p>
+<td><p>"FontCart"</p>
 <p>REG_MULTI_SZ</p></td>
 <td><p>Names of all the font cartridges currently installed for the printer.</p></td>
 <td><p>Unidrv user interface</p></td>

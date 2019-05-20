@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 
 # Overview of Device Metadata Packages
 
+Starting with Windows 7, device metadata packages contain XML documents that represent the properties of the device and its hardware functions. The Devices and Printers user interface displays device-specific information to the user based on the XML documents from the device's metadata package.
 
 A device metadata package consists of multiple XML documents, and each document specifies various components of the device's attributes.
 

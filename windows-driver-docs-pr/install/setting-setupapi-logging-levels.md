@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-You can control the amount of information that is written to the SetupAPI log, either for all [*device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) or for individual device installation applications.
+You can control the amount of information that is written to the SetupAPI log, either for all *device installation applications* or for individual device installation applications.
 
 To change the level of information written to the SetupAPI log for all device installation applications, create (or modify) the following registry value:
 
@@ -170,7 +170,7 @@ The following tables contain the general logging levels, device installation log
 </tr>
 <tr class="even">
 <td align="left"><p>0x20000000</p></td>
-<td align="left"><p>(<em>Windows XP and later</em>) Don&#39;t flush logging information to disk after each entry is written. (Logging is faster, but information could be lost if the system crashes.)</p></td>
+<td align="left"><p>(<em>Windows XP and later</em>) Don't flush logging information to disk after each entry is written. (Logging is faster, but information could be lost if the system crashes.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x40000000</p></td>

@@ -49,7 +49,7 @@ Depending on how a driver is implemented and on the features of the underlying a
 
  
 
-Drivers that write to standard-format [*DIBs*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-) usually allow GDI to manage most or all of these operations. Displays that support *settable palettes* must support the [**DrvSetPalette**](https://msdn.microsoft.com/library/windows/hardware/ff556282) function.
+Drivers that write to standard-format *DIBs* usually allow GDI to manage most or all of these operations. Displays that support *settable palettes* must support the [**DrvSetPalette**](https://msdn.microsoft.com/library/windows/hardware/ff556282) function.
 
 <table>
 <colgroup>

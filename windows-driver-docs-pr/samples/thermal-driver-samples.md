@@ -8,23 +8,11 @@ ms.localizationpriority: medium
 
 # Thermal driver samples
 
-
 The driver samples in this directory provide a starting point for writing a custom driver for your device.
 
 ## Thermal
 
-
-| Sample Name                            | Solution                                                         | Description                                                                                                                                                                             |
-|----------------------------------------|------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SimSensor                              | [simsensor](https://go.microsoft.com/fwlink/p/?LinkId=617991)     | A simulated temperature sensor device.                                                                                                                                                  |
-| Simulated Thermal Client Sample Driver | [thermalclient](https://go.microsoft.com/fwlink/p/?LinkId=617992) | Simulates a device that is a client of Windows thermal management. This driver publishes a [GUID\_THERMAL\_COOLING\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh698265) driver interface. |
-
- 
-
- 
-
- 
-
-
-
-
+| Sample Name | Solution | Description |
+| --- | --- | --- |
+| SimSensor | [simsensor](https://go.microsoft.com/fwlink/p/?LinkId=617991) | A simulated temperature sensor device. |
+| Simulated Thermal Client Sample Driver | [thermalclient](https://go.microsoft.com/fwlink/p/?LinkId=617992) | Simulates a device that is a client of Windows thermal management. This driver publishes a [THERMAL\_COOLING\_INTERFACE](https://msdn.microsoft.com/en-us/library/windows/hardware/hh698275) driver interface. |

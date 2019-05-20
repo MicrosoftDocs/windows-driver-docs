@@ -36,11 +36,11 @@ The following table lists and describes all of the methods defined by the **IPri
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553128" data-raw-source="[&lt;strong&gt;IPrintOemDriverUni::DrvGetGPDData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553128)"><strong>IPrintOemDriverUni::DrvGetGPDData</strong></a></p></td>
-<td><p>Enables rendering plug-ins to obtain data defined in a printer&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-generic-printer-description--gpd-" data-raw-source="[&lt;em&gt;generic printer description (GPD)&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-generic-printer-description--gpd-)"><em>generic printer description (GPD)</em></a> file.</p></td>
+<td><p>Enables rendering plug-ins to obtain data defined in a printer's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-generic-printer-description--gpd-" data-raw-source="&lt;em&gt;generic printer description (GPD)&lt;/em&gt;"><em>generic printer description (GPD)</em></a> file.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553129" data-raw-source="[&lt;strong&gt;IPrintOemDriverUni::DrvGetStandardVariable&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553129)"><strong>IPrintOemDriverUni::DrvGetStandardVariable</strong></a></p></td>
-<td><p>Enables rendering plug-ins to obtain the current value of Unidrv&#39;s <a href="standard-variables.md" data-raw-source="[standard variables](standard-variables.md)">standard variables</a>.</p></td>
+<td><p>Enables rendering plug-ins to obtain the current value of Unidrv's <a href="standard-variables.md" data-raw-source="[standard variables](standard-variables.md)">standard variables</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553132" data-raw-source="[&lt;strong&gt;IPrintOemDriverUni::DrvUniTextOut&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553132)"><strong>IPrintOemDriverUni::DrvUniTextOut</strong></a></p></td>

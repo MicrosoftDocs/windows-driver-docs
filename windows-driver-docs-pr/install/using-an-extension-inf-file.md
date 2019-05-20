@@ -222,65 +222,7 @@ OsrFx2.ExtensionDesc = "OsrFx2 DCHU Device Extension"
 REG_EXPAND_SZ = 0x00020000
 FLG_ADDREG_KEYONLY = 0x00000010
 ```
-
-## Example 3: Using an extension INF to install a filter driver
-
-You can also use an extension INF to install a filter driver for a device that uses system-supplied device drivers. The extension INF specifies the hardware ID of the device, and provides the service and filter driver settings.
-
-The following code snippet shows how to use an extension INF to install a filter driver.
-
-```cpp
-[Version]
-Signature   = "$WINDOWS NT$"
-Class       = Extension
-ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
-Provider    = %CONTOSO%
-ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUID
-DriverVer   = 05/28/2013,1.0.0.0
-CatalogFile = delta.cat
-
-[Manufacturer]
-%CONTOSO% = DeviceExtensions,NTx86
-
-[DeviceExtensions.NTx86]
-%Device.ExtensionDesc% = DeviceExtension_Install,PCI\VEN_XXXX&DEV_XXXX&SUBSYS_XXXXXXXX&REV_XXXX
-
-[DeviceExtension_Install]
-CopyFiles = Filter_CopyFiles
-
-[DeviceExtension_Install.HW]
-AddReg = DeviceExtensionFilter_AddReg
-
-[DeviceExtensionFilter_AddReg]
-HKR,,"UpperFilters",0x00010008,"fltsample" 
-
-[DeviceExtension_Install.Services]
-AddService = fltsample,,FilterService_Install
-
-[FilterService_Install]
-DisplayName   = %FilterSample.ServiceDesc%
-ServiceType   = 1   ; SERVICE_KERNEL_DRIVER
-StartType     = 3   ; SERVICE_DEMAND_START
-ErrorControl  = 1   ; SERVICE_ERROR_NORMAL
-ServiceBinary = %12%\fltsample.sys
-
-[Filter_CopyFiles]
-fltsample.sys
-
-[SourceDisksFiles]
-fltsample.sys = 1
-
-[SourceDisksNames]
-1 = Disk
-
-[DestinationDirs]
-Filter_CopyFiles = 12
-
-[Strings]
-CONTOSO                  = "Contoso"
-Device.ExtensionDesc     = "Sample Extension Device"
-FilterSample.ServiceDesc = "Sample Upper Filter"
-```
+To use an Extension INF to install a filter driver, please see [this page](https://docs.microsoft.com/windows-hardware/drivers/develop/device-filter-driver-ordering) that details how to properly register a filter driver using Extension INF's.
 
 ##  Submitting an extension INF for certification
 

@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_required_graphics_driver_functions_gg"></span><span id="DDK_REQUIRED_GRAPHICS_DRIVER_FUNCTIONS_GG"></span>
 
 
-All graphics drivers must support the entry points that GDI calls to enable and disable the driver, the [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev) structure, and the surface associated with each PDEV. The following table lists the needed functions in the order in which they are typically called.
+All graphics drivers must support the entry points that GDI calls to enable and disable the driver, the *PDEV* structure, and the surface associated with each PDEV. The following table lists the needed functions in the order in which they are typically called.
 
 <table>
 <colgroup>

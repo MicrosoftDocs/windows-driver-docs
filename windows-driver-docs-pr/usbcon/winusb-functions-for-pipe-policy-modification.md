@@ -53,12 +53,12 @@ WinUSB allows you to modify its default behavior by applying policies to an endp
 <tr class="odd">
 <td>0x03</td>
 <td>PIPE_TRANSFER_TIMEOUT</td>
-<td>Waits for a time-out interval before canceling the request.</td>
+<td>Waits for a time-out interval, in milliseconds, before canceling the request.</td>
 <td><p>Bulk (IN)</p>
 <p>Bulk (OUT)</p>
 <p>Interrupt (IN)</p>
 <p>Interrupt (OUT)</p></td>
-<td>5 seconds for control; 0 for others</td>
+<td>5 seconds (5000 milliseconds) for control; 0 for others</td>
 </tr>
 <tr class="even">
 <td>0x04</td>
@@ -105,7 +105,7 @@ WinUSB allows you to modify its default behavior by applying policies to an endp
 <tr class="odd">
 <td>0x09</td>
 <td>RESET_PIPE_ON_RESUME</td>
-<td>Resets the endpoint&#39;s pipe after resuming from suspend before accepting new requests.</td>
+<td>Resets the endpoint's pipe after resuming from suspend before accepting new requests.</td>
 <td><p>Bulk (IN)</p>
 <p>Bulk (OUT)</p>
 <p>Interrupt (IN)</p>
@@ -146,7 +146,7 @@ The following table identifies best practices for how to use each of the pipe po
 <li><p>If enabled (policy parameter value is <strong>TRUE</strong> or nonzero), a stall condition is cleared automatically. This policy parameter does not affect control pipes.</p>
 <p>When a read request fails and the host controller returns a status other than STATUS_CANCELLED or STATUS_DEVICE_NOT_CONNECTED, WinUSB resets the pipe before completing the failed request. Resetting the pipe clears the stall condition without interrupting the data flow. Data continues to flow in the endpoints as long as new transfers keep arriving from the device. A new transfer can include one that was in the queue when the stall occurred.</p>
 <p>Enabling this policy does not significantly impact performance.</p></li>
-<li>If disabled (policy parameter value is <strong>FALSE</strong> or zero), all transfers that arrive to the endpoint after the stalled transfer fail until the caller manually resets the endpoint&#39;s pipe by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff540300" data-raw-source="[&lt;strong&gt;WinUsb_ResetPipe&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540300)"><strong>WinUsb_ResetPipe</strong></a>.</li>
+<li>If disabled (policy parameter value is <strong>FALSE</strong> or zero), all transfers that arrive to the endpoint after the stalled transfer fail until the caller manually resets the endpoint's pipe by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff540300" data-raw-source="[&lt;strong&gt;WinUsb_ResetPipe&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540300)"><strong>WinUsb_ResetPipe</strong></a>.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -193,11 +193,11 @@ The following table identifies best practices for how to use each of the pipe po
 <td>AUTO_FLUSH</td>
 <td>ALLOW_PARTIAL _READS policy is enabled.
 <p>The device can send more data than was requested, and your application does not require any additional data. This is possible if the size of your request buffer is a multiple of the maximum endpoint packet size.</p></td>
-<td><p>AUTO_FLUSH defines WinUSB&#39;s behavior when ALLOW_PARTIAL_READS is enabled. If ALLOW_PARTIAL_READS is disabled, the AUTO_FLUSH value is ignored by WinUSB.</p>
-<p>WinUSB can either discard the remaining data or send it with the caller&#39;s next read request.</p>
+<td><p>AUTO_FLUSH defines WinUSB's behavior when ALLOW_PARTIAL_READS is enabled. If ALLOW_PARTIAL_READS is disabled, the AUTO_FLUSH value is ignored by WinUSB.</p>
+<p>WinUSB can either discard the remaining data or send it with the caller's next read request.</p>
 <ul>
 <li>If enabled (policy parameter value is <strong>TRUE</strong> or nonzero), WinUSB discards the extra bytes without any error code.</li>
-<li>If disabled (policy parameter value is <strong>FALSE</strong> or zero), WinUSB saves the extra bytes, adds them to the beginning of the caller&#39;s next read request, and then sends the data to the caller in the next read operation.</li>
+<li>If disabled (policy parameter value is <strong>FALSE</strong> or zero), WinUSB saves the extra bytes, adds them to the beginning of the caller's next read request, and then sends the data to the caller in the next read operation.</li>
 </ul></td>
 </tr>
 <tr class="odd">

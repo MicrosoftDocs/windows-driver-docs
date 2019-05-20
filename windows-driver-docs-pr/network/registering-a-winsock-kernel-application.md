@@ -119,7 +119,7 @@ NTSTATUS
   {
     // The WSK Provider NPI could not be captured.
     if( Status == STATUS_NOINTERFACE ) {
-      // WSK application&#39;s requested version is not supported
+      // WSK application's requested version is not supported
     }
     else if( status == STATUS_DEVICE_NOT_READY ) {
       // WskDeregister was invoked in another thread thereby causing

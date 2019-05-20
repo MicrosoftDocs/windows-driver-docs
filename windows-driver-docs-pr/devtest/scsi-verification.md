@@ -82,7 +82,7 @@ The effects of each bit are as follows:
 <tr class="odd">
 <td align="left"><p>0</p></td>
 <td align="left"><p>0x1</p></td>
-<td align="left"><p>Driver Verifier will monitor the miniport driver&#39;s memory access and check for improper use of memory buffers.</p></td>
+<td align="left"><p>Driver Verifier will monitor the miniport driver's memory access and check for improper use of memory buffers.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>28</p></td>

@@ -34,7 +34,7 @@ To set injection mode, the minidriver calls [**KsPinRegisterFrameReturnCallback*
 
 To inject frames into the circuit, call [**KsPinSubmitFrame**](https://msdn.microsoft.com/library/windows/hardware/ff563529) or [**KsPinSubmitFrameMdl**](https://msdn.microsoft.com/library/windows/hardware/ff563530).
 
-The diagram below shows an AVStream filter set composed of a source filter, an [*inplace*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-inplace) transform filter, and a rendering filter with the source injecting frames.
+The diagram below shows an AVStream filter set composed of a source filter, an *inplace* transform filter, and a rendering filter with the source injecting frames.
 
 ![diagram illustrating an avstream filter set](images/inject1.png)
 

@@ -25,7 +25,7 @@ This section includes topics that describe these steps and provide examples, suc
 
 -   Test-signing a driver through an embedded signature by using the *Contoso.com(Test)* certificate.
 
-    **Note**  You have to embed a digital signature within the driver if the driver is a [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver).
+    **Note**  You have to embed a digital signature within the driver if the driver is a *boot-start driver*.
 
      
 

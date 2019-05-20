@@ -114,7 +114,7 @@ VHF invokes HID source driver-implemented event callback functions for these IOC
 
 -   [**IOCTL\_HID\_READ\_REPORT**](https://msdn.microsoft.com/library/windows/hardware/ff541172)
 
-    If the driver wants to handle the buffering policy while submitting a buffer to obtain HID Input Report, it must implement the [*EvtVhfReadyForNextReadReport*](https://msdn.microsoft.com/library/windows/hardware/dn897135) and specify a pointer in the **EvtVhfAsyncOperationGetInputReport** member. For more information, see [Submit the HID Input Report](#submit).
+    If the driver wants to handle the buffering policy while submitting a buffer to obtain HID Input Report, it must implement the [*EvtVhfReadyForNextReadReport*](https://msdn.microsoft.com/library/windows/hardware/dn897135) and specify a pointer in the **EvtVhfAsyncOperationGetInputReport** member. For more information, see [Submit the HID Input Report](#submit-the-hid-input-report).
 
 -   [**IOCTL\_HID\_GET\_FEATURE**](https://msdn.microsoft.com/library/windows/hardware/ff541103) or [**IOCTL\_HID\_SET\_FEATURE**](https://msdn.microsoft.com/library/windows/hardware/ff541184)
 

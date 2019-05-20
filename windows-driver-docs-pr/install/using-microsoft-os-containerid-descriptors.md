@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Using Microsoft OS ContainerID Descriptors
 
 
-The Microsoft operating system (OS) **ContainerID** descriptor can be used in devices that support simultaneous connections of the device through multiple system buses. An explicitly defined Microsoft OS **ContainerID** descriptor ensures that all the device nodes ([*devnodes*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) enumerated for the device on the USB bus are grouped into the same device container.
+The Microsoft operating system (OS) **ContainerID** descriptor can be used in devices that support simultaneous connections of the device through multiple system buses. An explicitly defined Microsoft OS **ContainerID** descriptor ensures that all the device nodes (*devnodes*) enumerated for the device on the USB bus are grouped into the same device container.
 
 **Note**  If you decide to implement an Microsoft OS **ContainerID** descriptor, the descriptor value must be unique on every device to avoid container ID conflicts.
 

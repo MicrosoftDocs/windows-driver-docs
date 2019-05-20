@@ -2,7 +2,7 @@
 title: BCDEdit /set
 description: The BCDEdit /set command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows 7, Windows Server 2008, Windows 8, Windows 8.1,Windows 10, Windows Server 2012, and Windows Server 2012 R2.
 ms.assetid: e66d9c55-9a44-4de2-a1a4-634c7d550735
-ms.date: 07/09/2018
+ms.date: 02/07/2018
 keywords: ["BCDEdit /set Driver Development Tools"]
 topic_type:
 - apiref
@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # BCDEdit /set
 
-The **BCDEdit /set** command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows 7, Windows Server 2008, Windows 8, Windows 8.1,Windows 10, Windows Server 2012, and Windows Server 2012 R2. Use the **BCDEdit /set** command to configure specific boot entry elements, such as kernel debugger settings, memory options, or options that enable test-signed kernel-mode code or load alternate hardware abstraction layer (HAL) and kernel files. To remove a boot entry option, use the [**BCDEdit /deletevalue**](bcdedit--deletevalue.md) command.
+The **BCDEdit /set** command sets a boot entry option value in the Windows boot configuration data store (BCD). Use the **BCDEdit /set** command to configure specific boot entry elements, such as kernel debugger settings, memory options, or options that enable test-signed kernel-mode code or load alternate hardware abstraction layer (HAL) and kernel files. To remove a boot entry option, use the [**BCDEdit /deletevalue**](bcdedit--deletevalue.md) command.
 
 > [!CAUTION]
 > Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
@@ -75,7 +75,7 @@ Controls the boot screen animation. The possible values are disabled, basic, and
 > Not supported in Windows 8 and Windows Server 2012.
 
 **disabledynamictick** \[ **yes** | **no** \]  
-Enables and disables dynamic timer tick feature. The option is available starting with Windows 8 and Windows Server 2012.
+Enables and disables dynamic timer tick feature. 
 
 > [!NOTE]
 > This option should only be used for debugging.
@@ -84,13 +84,13 @@ Enables and disables dynamic timer tick feature. The option is available startin
 Controls the loading of Early Launch Antimalware (ELAM) drivers. The OS loader removes this entry for security reasons. This option can only be triggered by using the F8 menu. Someone must be physically present (at the computer) to trigger this option.
 
 > [!NOTE]
-> This option should only be used for debugging. The option is available starting with Windows 8 and Windows Server 2012.
+> This option should only be used for debugging. 
 
 **forcelegacyplatform** \[ **yes** | **no** \]  
 Forces the OS to assume the presence of legacy PC devices like CMOS and keyboard controllers.
 
 > [!NOTE]
-> This option should only be used for debugging. The option is available starting with Windows 8 and Windows Server 2012.
+> This option should only be used for debugging. 
 
 **groupsize** *maxsize*
 Sets the maximum number of logical processors in a single processor group, where *maxsize* is any power of 2 between 1 and 64 inclusive. By default, processor groups have a maximum size of 64 logical processors. You can use this boot configuration setting to override the size and makeup of a computer's processor groups for testing purposes. [Processor groups](https://go.microsoft.com/fwlink/p/?linkid=155063) provide support for computers with greater than 64 logical processors. This boot option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7.
@@ -127,32 +127,26 @@ bcdedit /set hypervisorlaunchtype auto
 **1394**  
 Specifies an IEEE 1394 (FireWire) connection for debugging. When this option is used, the **hypervisorchannel** option should also be set.
 
+> [!IMPORTANT]
+> The 1394 transport is available for use in Windows 10, version 1607 and earlier. 
+> It is not available in later versions of Windows. You should transition your projects to other transports, such as KDNET using Ethernet. 
+> For more information about that transport, see [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically).
+
+
 **Net**  
 Specifies an Ethernet network connection for debugging. When this option is used, the **hypervisorhostip** option must be also be set.
 
 **hypervisorhostip** *IP address*
 (Only used when the **hypervisordebugtype** is **Net**.) For debugging hypervisor over a network connection, specifies the IPv4 address of the host debugger. For information about debugging Hyper-V, see [Create a Virtual Machine with Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).
 
-> [!NOTE]
-> The option is available starting in Windows 8 and Windows Server 2012.
-
 **hypervisorhostport** \[ *port* \]  
 (Only used when the **hypervisordebugtype** is **Net**.) For network debugging, specifies the port to communicate with on the host debugger. Should be 49152 or higher.
-
-> [!NOTE]
-> The option is available starting in Windows 8 and Windows Server 2012.
 
 **hypervisordhcp** \[ **yes** | **no** \]  
 Controls use of DHCP by the network debugger used with the hypervisor. Setting this to **no** forces the use of Automatic Private IP Addressing (APIPA) to obtain a local link IP address.
 
-> [!NOTE]
-> The option is available starting in Windows 8 and Windows Server 2012.
-
 **hypervisoriommupolicy** \[ **default** | **enable** | **disable**\]  
 Controls whether the hypervisor uses an Input Output Memory Management Unit (IOMMU).
-
-> [!NOTE]
-> The option is available starting in Windows 8 and Windows Server 2012.
 
 **hypervisorlaunchtype** \[ **Off** | **Auto** \]  
 Controls the hypervisor launch options. If you are setting up a debugger to debug Hyper-V on a target computer, set this option to **Auto** on the target computer. For more information, see [Create a Virtual Machine with Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).
@@ -163,32 +157,17 @@ Specifies whether the hypervisor should enforce snoop control on system IOMMUs.
 **hypervisornumproc** *number*  
 Specifies the total number of logical processors that can be started in the hypervisor.
 
-> [!NOTE]
-> The option is available starting in Windows 8 and Windows Server 2012.
-
 **hypervisorrootproc** *number*  
 Specifies the maximum number of virtual processors in the root partition and limits the number of post-split Non-Uniform Memory Architecture (NUMA) nodes which can have logical processors started in the hypervisor.
-
-> [!NOTE]
-> The option is available starting in Windows 8 and Windows Server 2012.
 
 **hypervisorrootprocpernode** *number*  
 Specifies the total number of virtual processors in the root partition that can be started within a pre-split Non-Uniform Memory Architecture (NUMA) node.
 
-> [!NOTE]
-> The option is available starting in Windows 8 and Windows Server 2012.
-
 **hypervisorusekey** \[ *key* \]  
 (Only used when the **hypervisordebugtype** is **Net**.) For network debugging specifies the key with which to encrypt the connection. \[0-9\] and \[a-z\] allowed only.
 
-> [!NOTE]
-> The option is available starting in Windows 8 and Windows Server 2012.
-
 **hypervisoruselargevtlb** \[ **yes** | **no**
 Increases virtual Translation Lookaside Buffer (TLB) size.
-
-> [!NOTE]
-> The option is available starting in Windows 8 and Windows Server 2012.
 
 **increaseuserva** *Megabytes*
 Specifies the amount of memory, in megabytes, for user-mode virtual address space.

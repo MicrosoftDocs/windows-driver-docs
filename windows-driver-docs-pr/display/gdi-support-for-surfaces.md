@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_gdi_support_for_surfaces_gg"></span><span id="DDK_GDI_SUPPORT_FOR_SURFACES_GG"></span>
 
 
-For each [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev), a driver must support the [**DrvEnableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556214) function. *DrvEnableSurface* sets up the surface to be drawn on and associates it with the PDEV. The driver must also support the [**DrvDisableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556200) function to disable created surfaces. Because GDI creates and maintains the surface, the driver relies on several GDI service functions, listed in the following table, to implement the enabling and disabling of surfaces.
+For each *PDEV*, a driver must support the [**DrvEnableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556214) function. *DrvEnableSurface* sets up the surface to be drawn on and associates it with the PDEV. The driver must also support the [**DrvDisableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556200) function to disable created surfaces. Because GDI creates and maintains the surface, the driver relies on several GDI service functions, listed in the following table, to implement the enabling and disabling of surfaces.
 
 <table>
 <colgroup>
@@ -35,7 +35,7 @@ For each [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#w
 <tbody>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564183" data-raw-source="[&lt;strong&gt;EngAssociateSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564183)"><strong>EngAssociateSurface</strong></a></p></td>
-<td align="left"><p>Associates a surface with a PDEV and defines the drawing operations the driver writer wants to hook out for that surface. It uses the PDEV&#39;s default palette and style steps. The driver must make this call for the primary surface during the execution of <a href="https://msdn.microsoft.com/library/windows/hardware/ff556214" data-raw-source="[&lt;strong&gt;DrvEnableSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556214)"><strong>DrvEnableSurface</strong></a>. The driver must also make this call when it enables a secondary surface before locking the surface to write on it.</p></td>
+<td align="left"><p>Associates a surface with a PDEV and defines the drawing operations the driver writer wants to hook out for that surface. It uses the PDEV's default palette and style steps. The driver must make this call for the primary surface during the execution of <a href="https://msdn.microsoft.com/library/windows/hardware/ff556214" data-raw-source="[&lt;strong&gt;DrvEnableSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556214)"><strong>DrvEnableSurface</strong></a>. The driver must also make this call when it enables a secondary surface before locking the surface to write on it.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564189" data-raw-source="[&lt;strong&gt;EngCheckAbort&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564189)"><strong>EngCheckAbort</strong></a></p></td>
@@ -43,7 +43,7 @@ For each [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#w
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564199" data-raw-source="[&lt;strong&gt;EngCreateBitmap&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564199)"><strong>EngCreateBitmap</strong></a></p></td>
-<td align="left"><p>Creates a standard format <a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-" data-raw-source="[&lt;em&gt;DIB&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-)"><em>DIB</em></a> bitmap. GDI can perform all drawing operations on this type of surface.</p></td>
+<td align="left"><p>Creates a standard format <a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-" data-raw-source="&lt;em&gt;DIB&lt;/em&gt;"><em>DIB</em></a> bitmap. GDI can perform all drawing operations on this type of surface.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564204" data-raw-source="[&lt;strong&gt;EngCreateDeviceBitmap&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564204)"><strong>EngCreateDeviceBitmap</strong></a></p></td>
@@ -51,7 +51,7 @@ For each [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#w
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564206" data-raw-source="[&lt;strong&gt;EngCreateDeviceSurface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564206)"><strong>EngCreateDeviceSurface</strong></a></p></td>
-<td align="left"><p>Creates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface" data-raw-source="[&lt;em&gt;device-managed surface&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface)"><em>device-managed surface</em></a>. The driver is responsible for managing certain drawing operations for this surface. The function returns a handle that the driver manages.</p></td>
+<td align="left"><p>Creates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface" data-raw-source="&lt;em&gt;device-managed surface&lt;/em&gt;"><em>device-managed surface</em></a>. The driver is responsible for managing certain drawing operations for this surface. The function returns a handle that the driver manages.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564769" data-raw-source="[&lt;strong&gt;EngCreateWnd&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564769)"><strong>EngCreateWnd</strong></a></p></td>

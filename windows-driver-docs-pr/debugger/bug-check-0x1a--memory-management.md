@@ -3,7 +3,7 @@ title: Bug Check 0x1A MEMORY_MANAGEMENT
 description: The MEMORY_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
 ms.assetid: 7d3ff54e-e61a-43fa-a378-fb8d32565586
 keywords: ["Bug Check 0x1A MEMORY_MANAGEMENT", "MEMORY_MANAGEMENT"]
-ms.date: 09/12/2018
+ms.date: 03/29/2019
 topic_type:
 - apiref
 api_name:
@@ -18,12 +18,13 @@ ms.localizationpriority: medium
 
 The MEMORY\_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## MEMORY\_MANAGEMENT Parameters
 
-
-Parameter 1 is the only parameter of interest; this identifies the exact violation.
+Parameter 1 identifies the exact violation.
 
 <table>
 <colgroup>
@@ -72,7 +73,7 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tr>
 <tr class="even">
 <td align="left"><p>0x1000</p></td>
-<td align="left"><p>A caller of <strong>MmGetSystemAddressForMdl*</strong> tried to map a fully-cached physical page as non-cached. This action would cause a conflicting hardware translation buffer entry, and so it was refused by the operating system. Since the caller specified &quot;bug check on failure&quot; in the requesting MDL, the system had no choice but to issue a bug check in this instance.</p></td>
+<td align="left"><p>A caller of <strong>MmGetSystemAddressForMdl*</strong> tried to map a fully-cached physical page as non-cached. This action would cause a conflicting hardware translation buffer entry, and so it was refused by the operating system. Since the caller specified "bug check on failure" in the requesting MDL, the system had no choice but to issue a bug check in this instance.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x1010</p></td>
@@ -97,6 +98,10 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <tr class="odd">
 <td align="left"><p>0x3451</p></td>
 <td align="left"><p>The PTEs of a kernel thread stack that has been swapped out are corrupted.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x3453</p></td>
+<td align="left"><p>All the page table pages of an exited process could not be deleted due to outstanding references.  This typically indicates corruption in the process’ page table structures.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x4477</p></td>
@@ -126,6 +131,14 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <tr class="even">
 <td align="left"><p>0x888A</p></td>
 <td align="left"><p>Internal memory management structures (likely the PTE or PFN) are corrupted.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x9696</p></td>
+<td align="left"><p>A PFN (parameter 2) was encountered with a corrupted linkage no longer connected to its top level process.  This indicates corruption in the PFN structures.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x15001</p></td>
+<td align="left"><p>An error occurred In the process of un-securing memory that was previously secured.  This can happen when the caller mistakenly invoked  MmUnsecureVirtualMemory in the wrong process context.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x41283</p></td>
@@ -176,10 +189,14 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <td align="left"><p>The IoPageFrameNode is null. Parameter 2 is PageFrameIndex.</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p>0x6194A</p></td>
+<td align="left"><p>An error occurred when decrementing the reference counts on I/O space physical pages which are being unmapped. An entry which is not currently referenced is being dereferenced.  Parameter 2 and 3 describe the caller’s I/O space range being unmapped, and parameter 4 is the I/O space physical page which is expected to be referenced but is not. </p></td>
+</tr>
+<tr class="even">
 <td align="left"><p>0x03030303</p></td>
 <td align="left"><p>The boot loader is broken. (This value applies only to Intel Itanium machines.)</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>0x03030308</p></td>
 <td align="left"><p>The range to remove (or truncate) is in use by the loader so it cannot be safely removed, so the system must issue a stop code.  Parameter 2 is HighestPhysicalPage.</p></td>
 </tr>
@@ -190,13 +207,6 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 Resolution
 ----------
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
- 
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause. 
 
- 
-
- 
-
-
-
-
+Running the [**Windows Memory Diagnostic**](https://social.technet.microsoft.com/wiki/contents/articles/29343.windows-10-technical-preview-running-windows-memory-diagnostics-tool.aspx) tool could be useful as well to exclude any kind of problem affecting the physical memory modules.

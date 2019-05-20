@@ -22,7 +22,7 @@ Many of the problems seen with external components are caused by using the KEY_A
 
 Follow these guidelines to safely access registry keys:
 
--   Use the [SetupAPI](setupapi.md) functions only to open registry keys, especially the [*hardware keys*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-key) and [*software keys*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-key) for a device.
+-   Use the SetupAPI and *software keys* for a device.
 
     These functions address common problems that result from restrictions on access permissions.
 
@@ -56,7 +56,7 @@ Follow these guidelines to safely access registry keys:
 
 -   Use only INF directives to modify registry keys that are reserved for use by the operating system. For more information, see [Summary of INF Directives](summary-of-inf-directives.md).
 
--   [*Class installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-class-installer) and [*co-installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer) cannot call registry functions to create, change, or delete registry values that are reserved for use by the operating system.
+-   *Class installers* and *co-installers* cannot call registry functions to create, change, or delete registry values that are reserved for use by the operating system.
 
     For more information, see [Accessing the Registry by Class Installers and Co-Installers](accessing-the-registry-by-class-installers-and-co-installers.md).
 

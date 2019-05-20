@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_generating_skipped_macroblocks_gg"></span><span id="DDK_GENERATING_SKIPPED_MACROBLOCKS_GG"></span>
 
 
-The generation of a skipped macroblock in DirectX VA differs somewhat from that in MPEG-2 Video Section 7.6.6. In DirectX VA skipped macroblocks are generated in a separate macroblock control command, rather than being inferred from the type of the preceding nonskipped macroblock and the type of picture displayed (for example, in MPEG-2, the method of generating skipped macroblocks depends on whether the picture is a [*P picture*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-predictive-coded-picture--p-picture-) or [*B picture*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-b-picture).)
+The generation of a skipped macroblock in DirectX VA differs somewhat from that in MPEG-2 Video Section 7.6.6. In DirectX VA skipped macroblocks are generated in a separate macroblock control command, rather than being inferred from the type of the preceding nonskipped macroblock and the type of picture displayed (for example, in MPEG-2, the method of generating skipped macroblocks depends on whether the picture is a *P picture* or *B picture*.)
 
 The following conditions are required when generating and using skipped macroblocks:
 
@@ -37,7 +37,7 @@ The **bMacroblockWidthMinus1** member is contained in [**DXVA\_PictureParameters
 
 ### <span id="Skipped_Macroblocks_in_H.263__Annex_F_"></span><span id="skipped_macroblocks_in_h.263__annex_f_"></span><span id="SKIPPED_MACROBLOCKS_IN_H.263__ANNEX_F_"></span>Skipped Macroblocks in H.263 (Annex F)
 
-The generation of skipped macroblocks in H.263 with advanced prediction mode active (Annex F), requires representing some skipped macroblocks as nonskipped macroblocks in DirectX VA macroblock control commands. This is done in order to generate the [*OBMC*](https://msdn.microsoft.com/library/windows/hardware/ff556318#wdkgloss-obmc) effect within these macroblocks.
+The generation of skipped macroblocks in H.263 with advanced prediction mode active (Annex F), requires representing some skipped macroblocks as nonskipped macroblocks in DirectX VA macroblock control commands. This is done in order to generate the *OBMC* effect within these macroblocks.
 
 ### <span id="Generating_Skipped_Macroblocks_in_MPEG-2_Example"></span><span id="generating_skipped_macroblocks_in_mpeg-2_example"></span><span id="GENERATING_SKIPPED_MACROBLOCKS_IN_MPEG-2_EXAMPLE"></span>Generating Skipped Macroblocks in MPEG-2 Example
 

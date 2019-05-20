@@ -34,7 +34,7 @@ To assist vector devices in filling complex areas, their drivers can call the en
 <tbody>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564755" data-raw-source="[&lt;strong&gt;EngCreatePath&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564755)"><strong>EngCreatePath</strong></a></p></td>
-<td align="left"><p>Allocates a path for the driver&#39;s temporary use. The driver should delete this path before returning to GDI from its current drawing call.</p></td>
+<td align="left"><p>Allocates a path for the driver's temporary use. The driver should delete this path before returning to GDI from its current drawing call.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564811" data-raw-source="[&lt;strong&gt;EngDeletePath&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564811)"><strong>EngDeletePath</strong></a></p></td>
@@ -70,7 +70,7 @@ To assist vector devices in filling complex areas, their drivers can call the en
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568857" data-raw-source="[&lt;strong&gt;PATHOBJ_vEnumStartClipLines&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568857)"><strong>PATHOBJ_vEnumStartClipLines</strong></a></p></td>
-<td align="left"><p>Allows the driver to ask for lines to be clipped against a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539417" data-raw-source="[&lt;strong&gt;CLIPOBJ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539417)"><strong>CLIPOBJ</strong></a>. This is useful when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-clip-region" data-raw-source="[&lt;em&gt;clip region&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-clip-region)"><em>clip region</em></a> is more complex than a single rectangle.</p></td>
+<td align="left"><p>Allows the driver to ask for lines to be clipped against a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539417" data-raw-source="&lt;strong&gt;CLIPOBJ&lt;/strong&gt;"><em>clip region</em></a> is more complex than a single rectangle.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568858" data-raw-source="[&lt;strong&gt;PATHOBJ_vGetBounds&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568858)"><strong>PATHOBJ_vGetBounds</strong></a></p></td>

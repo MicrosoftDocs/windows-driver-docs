@@ -24,7 +24,7 @@ If your distribution medium includes device-specific applications, you can use t
 
     The co-installer should determine whether the device-specific applications have already been installed. If they have not, the co-installer should do one of the following
 
-    1.  Start a [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) on the distribution medium to install the device-specific applications.
+    1.  Start a *device installation application* on the distribution medium to install the device-specific applications.
     2.  Prompt the user to download a newer version of the device installation application from the Internet.
 
     Independent hardware vendors (IHVs) can use various methods to provide [hardware-first installation](hardware-first-installation.md) solutions for installing device-specific applications. For more information about these methods, see [Hardware-First Installation of Device-Specific Applications](hardware-first-installation-of-device-specific-applications.md).

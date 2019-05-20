@@ -20,7 +20,7 @@ ms.localizationpriority: medium
   <tr>
     <td>0x2000:
         <ul>
-            <li>2 - The address in the driver&#39;s code where the error was detected.</li>
+            <li>2 - The address in the driver's code where the error was detected.</li>
             <li>3 - Pool Type.</li>
             <li>4 - Pool Tag (if provided).</li>
         </ul><br/>    </td>
@@ -28,15 +28,15 @@ ms.localizationpriority: medium
   </tr>
   <tr>
     <td>0x2001:
-        <ul><li>2 - The address in the driver&#39;s code where the error was detected.</li>
+        <ul><li>2 - The address in the driver's code where the error was detected.</li>
         <li>3 - Page Protection (WIN32_PROTECTION_MASK).
     </td>
     <td>The caller specified an executable page protection. (Expected: cleared PAGE_EXECUTE* bits)</td>
   </tr>
   <tr>
     <td>0x2002:
-        <ul><li>2 - The address in the driver&#39;s code where the error was detected.</li>
-            <li>3 - Page Priority (MM_PAGE_PRIORITY logically OR&#39;d with MdlMapping*).</li></ul>
+        <ul><li>2 - The address in the driver's code where the error was detected.</li>
+            <li>3 - Page Priority (MM_PAGE_PRIORITY logically OR'd with MdlMapping*).</li></ul>
     </td>
     <td>The caller specified an executable MDL mapping. (Expected: MdlMappingNoExecute).</td>
   </tr>

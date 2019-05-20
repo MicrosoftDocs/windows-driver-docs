@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # Printer Minidriver Changes
 
 
-The printer minidriver consists of a printer description file ([*GPD*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-generic-printer-description--gpd-), [*PPD*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-postscript-printer-description--ppd-), or GDL file), together with optional user interface (UI) plug-ins, rendering plug-ins, and rendering filters. For in-box inclusion, only one UI plug-in is permitted, and only one Unidrv or Pscript rendering plug-in is permitted. An IHV port monitor is not permitted to be included as an in-box with a printer minidriver.
+The printer minidriver consists of a printer description file (*GPD*, *PPD*, or GDL file), together with optional user interface (UI) plug-ins, rendering plug-ins, and rendering filters. For in-box inclusion, only one UI plug-in is permitted, and only one Unidrv or Pscript rendering plug-in is permitted. An IHV port monitor is not permitted to be included as an in-box with a printer minidriver.
 
 For the GPD, PPD, or GDL file, there are two cases to consider:
 

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-To preinstall driver files, your [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) should follow these steps:
+To preinstall driver files, your *device installation application* should follow these steps:
 
 1.  On the target system, create a directory for the driver files. If your device installation application installs an application, the driver files should be stored in a subdirectory of the application directory.
 

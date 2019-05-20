@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-Before a [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) can access the information in an INF file, it must open the file by calling [**SetupOpenInfFile**](https://msdn.microsoft.com/library/windows/desktop/aa377409). This function returns a handle to the INF file.
+Before a *device installation application* can access the information in an INF file, it must open the file by calling [**SetupOpenInfFile**](https://msdn.microsoft.com/library/windows/desktop/aa377409). This function returns a handle to the INF file.
 
 If you do not know the name of the INF file that you have to open, use [**SetupGetInfFileList**](https://msdn.microsoft.com/library/windows/desktop/aa377381) to obtain a list of all the INF files in a directory.
 

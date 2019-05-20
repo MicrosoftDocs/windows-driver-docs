@@ -16,7 +16,7 @@ The WTTLog file format is common to all Microsoft Windows Driver Kit (WDK) tools
 The PwrTest .xml log file (pwrtestlog.xml) provides information about the specific scenario that is run. All PwrTest .xml log files have the following root element and header:
 
 ```XML
-<PwrTestLog date="today&#39;s date" time="beginning time" filename = "logfile path">
+<PwrTestLog date="today's date" time="beginning time" filename = "logfile path">
   <SystemInformation>
     <ComputerName></ComputerName>
     <OSBuildNumber></OSBuildNumber>

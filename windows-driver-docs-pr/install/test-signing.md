@@ -227,7 +227,7 @@ tstamd64.cat specifies the name of the catalog file, which will be digitally-sig
 
 7.  *Modified excerpt from* [Test-Signing a Driver through an Embedded Signature](test-signing-a-driver-through-an-embedded-signature.md):
 
-    -   In 64-bit versions of Windows Vista and later versions of Windows, the [kernel-mode code signing requirements](kernel-mode-code-signing-requirements--windows-vista-and-later-.md) state that a [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver) must have an embedded signature. This is required regardless of whether the driver's driver package has a digitally-signed catalog file.
+    -   In 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing requirements must have an embedded signature. This is required regardless of whether the driver's driver package has a digitally-signed catalog file.
 
     Below is the command to embed sign a kernel mode driver binary file.
 
@@ -394,7 +394,7 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
      ISAPNP\PNP0501 - Hardware ID
      *PNP*          - Hardware ID with wildcards  (* matches anything)
      @ISAPNP\*\*    - Instance ID with wildcards  (@ prefixes instance ID)
-     &#39;*PNP0501      - Hardware ID with apostrophe (&#39; prefixes literal match - matches exactly as typed, including the asterisk.)
+     '*PNP0501      - Hardware ID with apostrophe (' prefixes literal match - matches exactly as typed, including the asterisk.)
     ```
 
     After a device has been removed, to remove the driver, two commands are necessary. Use the first command with “dp_enum” switch to find the driver inf file name corresponding to the driver package installed in the computer.

@@ -49,7 +49,7 @@ The **AddPort** command adds a standard TCP/IP port, which can be either an LPR 
 <tbody>
 <tr class="odd">
 <td><p><em>pszDataName</em></p></td>
-<td><p>L&quot;AddPort&quot;</p></td>
+<td><p>L"AddPort"</p></td>
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
@@ -96,7 +96,7 @@ The **ConfigPort** command configures an existing standard TCP/IP port monitor p
 <tbody>
 <tr class="odd">
 <td><p><em>pszDataName</em></p></td>
-<td><p>L&quot;ConfigPort&quot;</p></td>
+<td><p>L"ConfigPort"</p></td>
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
@@ -143,7 +143,7 @@ The **DeletePort** command deletes a port from the standard TCP/IP port monitor.
 <tbody>
 <tr class="odd">
 <td><p><em>pszDataName</em></p></td>
-<td><p>L&quot;DeletePort&quot;</p></td>
+<td><p>L"DeletePort"</p></td>
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
@@ -190,7 +190,7 @@ The **GetConfigInfo** command obtains the configuration information of a particu
 <tbody>
 <tr class="odd">
 <td><p><em>pszDataName</em></p></td>
-<td><p>L&quot;GetConfigInfo&quot;</p></td>
+<td><p>L"GetConfigInfo"</p></td>
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
@@ -237,7 +237,7 @@ The **HostAddress** command gets the printer's host name.
 <tbody>
 <tr class="odd">
 <td><p><em>pszDataName</em></p></td>
-<td><p>L&quot;HostAddress&quot;</p></td>
+<td><p>L"HostAddress"</p></td>
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
@@ -249,7 +249,7 @@ The **HostAddress** command gets the printer's host name.
 </tr>
 <tr class="even">
 <td><p><em>pOutputData</em></p></td>
-<td><p>Address of a buffer that receives a string containing the printer&#39;s host name</p></td>
+<td><p>Address of a buffer that receives a string containing the printer's host name</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbOutputData</em></p></td>
@@ -284,7 +284,7 @@ The **IPAddress** command gets the printer's IP address.
 <tbody>
 <tr class="odd">
 <td><p><em>pszDataName</em></p></td>
-<td><p>L&quot;IPAddress&quot;</p></td>
+<td><p>L"IPAddress"</p></td>
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
@@ -296,7 +296,7 @@ The **IPAddress** command gets the printer's IP address.
 </tr>
 <tr class="even">
 <td><p><em>pOutputData</em></p></td>
-<td><p>Address of a buffer that receives a string containing the printer&#39;s IP address</p></td>
+<td><p>Address of a buffer that receives a string containing the printer's IP address</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbOutputData</em></p></td>
@@ -331,7 +331,7 @@ The **MonitorUI** command gets the name of the port monitor UI DLL that provides
 <tbody>
 <tr class="odd">
 <td><p><em>pszDataName</em></p></td>
-<td><p>L&quot;MonitorUI&quot;</p></td>
+<td><p>L"MonitorUI"</p></td>
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
@@ -378,7 +378,7 @@ The **SNMPCommunity** command gets the Simple Network Management Protocol (SNMP)
 <tbody>
 <tr class="odd">
 <td><p><em>pszDataName</em></p></td>
-<td><p>L&quot;SNMPCommunity&quot;</p></td>
+<td><p>L"SNMPCommunity"</p></td>
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
@@ -390,7 +390,7 @@ The **SNMPCommunity** command gets the Simple Network Management Protocol (SNMP)
 </tr>
 <tr class="even">
 <td><p><em>pOutputData</em></p></td>
-<td><p>Address of a buffer that receives a string containing the printer&#39;s SNMP community</p></td>
+<td><p>Address of a buffer that receives a string containing the printer's SNMP community</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbOutputData</em></p></td>
@@ -425,7 +425,7 @@ The **SNMPDeviceIndex** command gets the Simple Network Management Protocol (SNM
 <tbody>
 <tr class="odd">
 <td><p><em>pszDataName</em></p></td>
-<td><p>L&quot;SNMPDeviceIndex&quot;</p></td>
+<td><p>L"SNMPDeviceIndex"</p></td>
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
@@ -472,7 +472,7 @@ The **SNMPEnabled** command determines whether the Simple Network Management Pro
 <tbody>
 <tr class="odd">
 <td><p><em>pszDataName</em></p></td>
-<td><p>L&quot;SNMPEnabled&quot;</p></td>
+<td><p>L"SNMPEnabled"</p></td>
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>

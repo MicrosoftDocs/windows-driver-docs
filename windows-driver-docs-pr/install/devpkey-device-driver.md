@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_Driver
 
 
-The DEVPKEY_Device_Driver device property represents the registry entry name of the [*driver key*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-key) for a [*device instance*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-instance).
+The DEVPKEY_Device_Driver device property represents the registry entry name of the *driver key* for a *device instance*.
 
 <table>
 <colgroup>

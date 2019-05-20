@@ -74,7 +74,7 @@ The WIA service is a system-supplied component that communicates with imaging ap
 </tr>
 <tr class="even">
 <td><p><strong>IWiaPropertyStorage</strong></p></td>
-<td><p>Provides access to information about an <strong>IWiaItem</strong> object&#39;s properties.</p></td>
+<td><p>Provides access to information about an <strong>IWiaItem</strong> object's properties.</p></td>
 </tr>
 </tbody>
 </table>

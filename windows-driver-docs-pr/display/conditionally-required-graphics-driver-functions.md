@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_conditionally_required_graphics_driver_functions_gg"></span><span id="DDK_CONDITIONALLY_REQUIRED_GRAPHICS_DRIVER_FUNCTIONS_GG"></span>
 
 
-Besides the functions that are always required, certain other functions may be required, depending on how a driver is implemented. The conditionally-required functions are listed in the following table. If the driver manages its own primary surface (using the [**EngCreateDeviceSurface**](https://msdn.microsoft.com/library/windows/hardware/ff564206) function to get a handle to the surface), or its own offscreen bitmaps, the driver must also support several [drawing functions](optional-display-driver-functions.md). Drivers writing to standard format [*DIBs*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-) usually allow GDI to manage most or all of these operations. Displays that support settable palettes must also support the [**DrvSetPalette**](https://msdn.microsoft.com/library/windows/hardware/ff556282) function.
+Besides the functions that are always required, certain other functions may be required, depending on how a driver is implemented. The conditionally-required functions are listed in the following table. If the driver manages its own primary surface (using the **EngCreateDeviceSurface** usually allow GDI to manage most or all of these operations. Displays that support settable palettes must also support the [**DrvSetPalette**](https://msdn.microsoft.com/library/windows/hardware/ff556282) function.
 
 It is more common for a printer driver than a display driver to define or draw fonts. A display driver is not required to handle fonts. If the hardware has a resident font, the driver must supply information to GDI about this font. This information includes font metrics, mappings from Unicode to individual glyph identities, individual glyph attributes, and kerning tables.
 
@@ -40,13 +40,13 @@ It is more common for a printer driver than a display driver to define or draw f
 <tbody>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556182" data-raw-source="[&lt;strong&gt;DrvCopyBits&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556182)"><strong>DrvCopyBits</strong></a></p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface" data-raw-source="[&lt;em&gt;Device-managed surfaces&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface)"><em>Device-managed surfaces</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface" data-raw-source="&lt;em&gt;Device-managed surfaces&lt;/em&gt;"><em>Device-managed surfaces</em></a></p></td>
 <td align="left"><p>Translates between device-managed raster surfaces and GDI standard-format bitmaps.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556190" data-raw-source="[&lt;strong&gt;DrvDescribePixelFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556190)"><strong>DrvDescribePixelFormat</strong></a></p></td>
 <td align="left"><p>Displays that support windows with different pixel formats on a single surface</p></td>
-<td align="left"><p>Describes a PDEV&#39;s pixel format.</p></td>
+<td align="left"><p>Describes a PDEV's pixel format.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556235" data-raw-source="[&lt;strong&gt;DrvGetTrueTypeFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556235)"><strong>DrvGetTrueTypeFile</strong></a></p></td>
@@ -106,7 +106,7 @@ It is more common for a printer driver than a display driver to define or draw f
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556285" data-raw-source="[&lt;strong&gt;DrvSetPixelFormat&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556285)"><strong>DrvSetPixelFormat</strong></a></p></td>
 <td align="left"><p>Displays that support windows with different pixel formats on a single surface</p></td>
-<td align="left"><p>Sets a window&#39;s pixel format.</p></td>
+<td align="left"><p>Sets a window's pixel format.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556316" data-raw-source="[&lt;strong&gt;DrvStrokePath&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556316)"><strong>DrvStrokePath</strong></a></p></td>
@@ -116,7 +116,7 @@ It is more common for a printer driver than a display driver to define or draw f
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556322" data-raw-source="[&lt;strong&gt;DrvSwapBuffers&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556322)"><strong>DrvSwapBuffers</strong></a></p></td>
 <td align="left"><p>Drivers that support a pixel format with double buffering</p></td>
-<td align="left"><p>Displays contents of a surface&#39;s hidden buffer.</p></td>
+<td align="left"><p>Displays contents of a surface's hidden buffer.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557277" data-raw-source="[&lt;strong&gt;DrvTextOut&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557277)"><strong>DrvTextOut</strong></a></p></td>

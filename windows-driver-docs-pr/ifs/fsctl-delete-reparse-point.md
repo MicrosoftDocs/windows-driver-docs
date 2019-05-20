@@ -38,7 +38,7 @@ Control code for the operation. Use FSCTL\_DELETE\_REPARSE\_POINT for this opera
 Pointer to a [**REPARSE\_GUID\_DATA\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552014) or [**REPARSE\_DATA\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552012) structure. The tag specified in the **ReparseTag** member of this structure must match the tag of the reparse point to be deleted, and the **ReparseDataLength** member must be zero. In addition, if the reparse point is a third-party (non-Microsoft) reparse point, the GUID specified in the **ReparseGuid** member of the REPARSE\_GUID\_DATA\_BUFFER structure must match the GUID of the reparse point to be deleted.
 
 <a href="" id="inputbufferlength"></a>*InputBufferLength*  
-Size, in bytes, of the buffer pointed to by the **InputBuffer** parameter. For a REPARSE\_GUID\_DATA\_BUFFER structure, this value must be exactly **sizeof**(REPARSE\_GUID\_DATA\_BUFFER\_HEADER\_SIZE). For a REPARSE\_DATA\_BUFFER structure, this value must be exactly **sizeof**(REPARSE\_DATA\_BUFFER\_HEADER\_SIZE).
+Size, in bytes, of the buffer pointed to by the **InputBuffer** parameter. For a REPARSE\_GUID\_DATA\_BUFFER structure, this value must be exactly REPARSE\_GUID\_DATA\_BUFFER\_HEADER\_SIZE. For a REPARSE\_DATA\_BUFFER structure, this value must be exactly REPARSE\_DATA\_BUFFER\_HEADER\_SIZE.
 
 <a href="" id="outputbuffer"></a>*OutputBuffer*  
 Not used with this operation; set to **NULL**.

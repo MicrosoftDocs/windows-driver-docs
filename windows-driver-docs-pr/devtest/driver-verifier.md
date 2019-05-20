@@ -31,7 +31,6 @@ You don't need to download Driver Verifier, because it is included with most ver
 For information about changes in Driver Verifier for Windows 8.1 and previous versions of Windows, see <a href="driver-verifier--what-s-new.md" data-raw-source="[Driver Verifier: What's New](driver-verifier--what-s-new.md)">Driver Verifier: What's New</a>.
 
 
-
 ## When to use Driver Verifier
 
 Run Driver Verifier throughout development and testing of your driver. More specifically, use Driver Verifier for the following purposes:

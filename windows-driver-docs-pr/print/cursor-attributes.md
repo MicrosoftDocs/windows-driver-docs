@@ -53,7 +53,7 @@ Y_LANDSCAPE</td>
 <td><p></p>
 One of: AT_PRINTABLE_X_ORIGIN
 AT_CURSOR_X_ORIGIN
-<p>Indicates cursor&#39;s x-position after a carriage return.</p></td>
+<p>Indicates cursor's x-position after a carriage return.</p></td>
 <td><p>Optional. If not specified, the default value is AT_CURSOR_X_ORIGIN, which is the physical zero position.</p></td>
 </tr>
 <tr class="even">

@@ -1,11 +1,15 @@
 - name: "IEEE 1394 Bus Drivers"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "IEEE 1394 Bus Drivers"
+    href: index.md
   - name: "The IEEE 1394 Driver Stack"
     href: the-ieee-1394-driver-stack.md
   - name: "IEEE 1394 Bus Driver in Windows 7"
-    href: ieee-1394-bus-driver-in-windows-7.md
+# Auto-expanded node
     items: 
+    - name: "IEEE 1394 Bus Driver in Windows 7"
+      href: ieee-1394-bus-driver-in-windows-7.md
     - name: "Device Driver Interface (DDI) Changes in Windows 7"
       href: device-driver-interface--ddi--changes-in-windows-7.md
     - name: "Modifying the Default Behavior of the IEEE 1394 Bus Driver"
@@ -19,15 +23,19 @@
   - name: "1394 Bridges"
     href: 1394-bridges.md
   - name: "Asynchronous I/O for IEEE 1394 Devices"
-    href: asynchronous-i-o-for-ieee-1394-devices.md
+# Auto-expanded node
     items: 
+    - name: "Asynchronous I/O for IEEE 1394 Devices"
+      href: asynchronous-i-o-for-ieee-1394-devices.md
     - name: "Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus"
       href: sending-asynchronous-i-o-request-packets-on-the-ieee-1394-bus.md
     - name: "Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus"
       href: receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus.md
   - name: "Isochronous I/O for IEEE 1394 Devices"
-    href: isochronous-i-o-for-ieee-1394-devices.md
+# Auto-expanded node
     items: 
+    - name: "Isochronous I/O for IEEE 1394 Devices"
+      href: isochronous-i-o-for-ieee-1394-devices.md
     - name: "Setting Up Isochronous Transfer for IEEE 1394 Devices"
       href: setting-up-isochronous-transfer-for-ieee-1394-devices.md
     - name: "Buffering Isochronous DMA Transfers for IEEE 1394 Devices"
@@ -41,8 +49,10 @@
     - name: "Completing an Isochronous Data Transfer"
       href: completing-an-isochronous-data-transfer.md
   - name: "IEEE 1394 Hardware Emulation Drivers"
-    href: ieee-1394-hardware-emulation-drivers.md
+# Auto-expanded node
     items: 
+    - name: "IEEE 1394 Hardware Emulation Drivers"
+      href: ieee-1394-hardware-emulation-drivers.md
     - name: "Creating IEEE 1394 Virtual Devices"
       href: creating-ieee-1394-virtual-devices.md
     - name: "Removing IEEE 1394 Virtual Devices"
@@ -52,8 +62,10 @@
   - name: "1394 Samples and Diagnostic Tools"
     href: 1394-samples-and-diagnostic-tools.md
   - name: "IEC-61883 Client Drivers"
-    href: iec-61883-client-drivers.md
+# Auto-expanded node
     items: 
+    - name: "IEC-61883 Client Drivers"
+      href: iec-61883-client-drivers.md
     - name: "IEC-61883 Protocol Driver"
       href: iec-61883-protocol-driver.md
     - name: "IEC-61883 Protocol Driver in a Client Driver Stack"

@@ -19,7 +19,7 @@ ms.custom: seodec18
 # DXVA\_DeinterlaceContainerDeviceClass::ProcAmpControlQueryRange method
 
 
-The sample **ProcAmpControlQueryRange** function allows the [*VMR*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-vmr) to query the driver to determine the minimum, maximum, step size, and default value for each ProcAmp property.
+The sample **ProcAmpControlQueryRange** function allows the *VMR* to query the driver to determine the minimum, maximum, step size, and default value for each ProcAmp property.
 
 Syntax
 ------
@@ -143,8 +143,8 @@ DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryRange(
     )
 {
     // only the YUY2 and YV12 formats can be operated on
-    if (lpVideoDesc->d3dFormat != &#39;2YUY&#39; &amp;&amp;
-        lpVideoDesc->d3dFormat != &#39;21VY&#39;) {
+    if (lpVideoDesc->d3dFormat != '2YUY' &amp;&amp;
+        lpVideoDesc->d3dFormat != '21VY') {
         return E_INVALIDARG;
     }
     // the following are the recommended settings for each property

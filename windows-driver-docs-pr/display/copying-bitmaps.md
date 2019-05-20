@@ -35,7 +35,7 @@ ms.localizationpriority: medium
 
 There is also a display-driver-specific BitBlt function named [**DrvSaveScreenBits**](https://msdn.microsoft.com/library/windows/hardware/ff556278).
 
-If the surface being drawn on is a [*device-managed surface*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-managed-surface) or bitmap, the driver must support a minimum level of bit block transfer functions. If the surface is a GDI-managed standard format bitmap, GDI handles only those operations not hooked by the driver.
+If the surface being drawn on is a *device-managed surface* or bitmap, the driver must support a minimum level of bit block transfer functions. If the surface is a GDI-managed standard format bitmap, GDI handles only those operations not hooked by the driver.
 
 ### <span id="drvbitblt"></span><span id="DRVBITBLT"></span> DrvBitBlt
 
@@ -45,7 +45,7 @@ The [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180
 
 Optionally, a block transfer handled by [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180) can be masked and involve color index translation. A translation vector assists in color index translation for palettes. The transfer might need to be arbitrarily clipped by a display driver, using a series of clip rectangles. The required region and information are furnished by GDI.
 
-Implementing [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180) represents a significant portion of the work involved in writing a driver for a raster display driver that does not have a standard-format [*frame buffer*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-frame-buffer). The Microsoft VGA driver that is furnished with the Windows Driver Kit (WDK) provides sample code that supports the basic function for a planar device. Implementing **DrvBitBlt** for other devices may be less complex.
+Implementing **DrvBitBlt**. The Microsoft VGA driver that is furnished with the Windows Driver Kit (WDK) provides sample code that supports the basic function for a planar device. Implementing **DrvBitBlt** for other devices may be less complex.
 
 ### <span id="drvcopybits"></span><span id="DRVCOPYBITS"></span> DrvCopyBits
 
@@ -57,13 +57,13 @@ If a driver supports a device-managed surface or bitmap, the driver must impleme
 
 -   Perform a block transfer to and from a bitmap, in the device's preferred format, and to the device surface.
 
--   Perform the transfer with the SRCCOPY (0xCCCC) [*raster operation (ROP)*](https://msdn.microsoft.com/library/windows/hardware/ff556331#wdkgloss-raster-operation--rop-).
+-   Perform the transfer with the SRCCOPY (0xCCCC) *raster operation (ROP)*.
 
 -   Allow arbitrary clipping.
 
 The driver can use the GDI [**CLIPOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff539417) enumeration services to reduce the clipping to a series of clip rectangles. GDI passes down a translation vector, the [**XLATEOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff570634) structure, to assist in color index translation between source and destination surfaces.
 
-If the surface of a device is organized as a standard-format [*device-independent bitmap (DIB)*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-), the driver can support only simple transfers. If a call comes in with a complicated ROP, the driver can punt the block transfer request back to GDI with a call to the [**EngCopyBits**](https://msdn.microsoft.com/library/windows/hardware/ff564196) function. This allows GDI to break up the call into simpler functions that the driver can perform.
+If the surface of a device is organized as a standard-format *device-independent bitmap (DIB)*, the driver can support only simple transfers. If a call comes in with a complicated ROP, the driver can punt the block transfer request back to GDI with a call to the [**EngCopyBits**](https://msdn.microsoft.com/library/windows/hardware/ff564196) function. This allows GDI to break up the call into simpler functions that the driver can perform.
 
 [**DrvCopyBits**](https://msdn.microsoft.com/library/windows/hardware/ff556182) also is called with RLE bitmaps (see the Microsoft Windows SDK documentation) and **device-dependent bitmaps (DDBs)**. The bitmaps are provided to this function as a result of application program calls to several Win32 GDI routines. The optional DDB is supported only by a few specialized drivers.
 

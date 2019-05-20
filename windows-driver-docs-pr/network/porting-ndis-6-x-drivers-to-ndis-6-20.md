@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 This section describes the requirements to port NDIS 6.0 and 6.1 drivers to NDIS 6.20.
 
-For information about porting NDIS 5.x or earlier drivers to NDIS 6.x, see [Porting NDIS 5.x Drivers to NDIS 6.0](porting-ndis-5-x-drivers-to-ndis-6-0.md).
+For information about porting NDIS 5.x or earlier drivers to NDIS 6.x, see [Porting NDIS 5.x Drivers to NDIS 6.0](https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-ndis-5-x-drivers-to-ndis-6-0).
 
 For more information about NDIS 6.20 features, see [Introduction to NDIS 6.20](introduction-to-ndis-6-20.md).
 

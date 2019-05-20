@@ -38,7 +38,7 @@ Kernel global variables.
 <p>Declared in Wdm.h</p></td>
 <td><p>A pointer to a memory location that is guaranteed to be invalid.</p>
 <div class="alert">
-<strong>Note</strong>  Starting with Windows 8.1, <strong>MmBadPointer</strong> is deprecated. Drivers should use the <a href="mm-bad-pointer.md" data-raw-source="[&lt;strong&gt;MM_BAD_POINTER&lt;/strong&gt;](mm-bad-pointer.md)"><strong>MM_BAD_POINTER</strong></a> macro instead.
+<strong>Note</strong>  Starting with Windows 8.1, <strong>MmBadPointer</strong> is deprecated. Drivers should use the <a href="mm-bad-pointer.md#mm_bad_pointer" data-raw-source="[&lt;strong&gt;MM_BAD_POINTER&lt;/strong&gt;](mm-bad-pointer.md#mm_bad_pointer)"><strong>MM_BAD_POINTER</strong></a> macro instead.
 </div>
 <div>
  
@@ -69,7 +69,7 @@ Kernel global variables.
 ## Related topics
 [**EPROCESS**](eprocess.md)  
 [GetCPInfoEx](https://go.microsoft.com/fwlink/p/?linkid=121902)  
-[**MM\_BAD\_POINTER**](mm-bad-pointer.md)  
+[**MM\_BAD\_POINTER**](mm-bad-pointer.md#mm_bad_pointer)  
 [Performing DMA in 64-Bit Windows](performing-dma-in-64-bit-windows.md)  
 
 

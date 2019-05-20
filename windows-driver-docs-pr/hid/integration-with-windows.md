@@ -50,12 +50,12 @@ Your device must also be properly registered as a gaming device. This may be don
     <tr class="odd">
     <td><p>ConfigCLSID</p></td>
     <td><p>String Value</p></td>
-    <td><p>&quot;{your property sheet CLSID}&quot;</p></td>
+    <td><p>"{your property sheet CLSID}"</p></td>
     </tr>
     <tr class="even">
     <td><p>OEMName</p></td>
     <td><p>String Value</p></td>
-    <td><p>&quot;Product name of your device&quot;</p></td>
+    <td><p>"Product name of your device"</p></td>
     </tr>
     </tbody>
     </table>

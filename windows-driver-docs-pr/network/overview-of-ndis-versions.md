@@ -7,7 +7,7 @@ keywords:
 - NDIS WDK , versions in network drivers
 - backward compatibility WDK networking
 - compatibility WDK networking
-ms.date: 04/20/2017
+ms.date: 05/03/2019
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +46,7 @@ Windows operating system, Microsoft Windows Driver Kit (WDK), and Driver Develop
 |  |  | Major improvements in the following provide significant performance gains for both clients and servers: <ul><li>Network data packaging</li><li>Send and receive paths</li><li>Run-time reconfiguration capabilities</li><li>Scatter/gather DMA</li><li>Filter drivers</li><li>Multiprocessor scaling of received data handling</li><li>Offloading TCP tasks to NICs</li></ul> |
 |  |  | The following improvements simplify driver development: <ul><li>Streamlined driver initialization</li><li>Versioning support for NDIS interfaces</li><li>Simplified reset handling</li><li>A standard interface for obtaining management information</li><li>A filter driver model to replace filter intermediate drivers</li></ul> |
 |  |  | For more information about NDIS 6.0 features, see [Introduction to NDIS 6.0](introduction-to-ndis-6-0.md). |
-|  |  | For information about backward compatibility and obsolete features that are not supported in NDIS 6.0 drivers, see [NDIS 6.0 Backward Compatibility](ndis-6-0-backward-compatibility.md). |
+|  |  | For information about backward compatibility and obsolete features that are not supported in NDIS 6.0 drivers, see [NDIS 6.0 Backward Compatibility](https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-backward-compatibility). |
 | Windows Vista with Service Pack 1 (SP1) and Windows Server 2008 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.1 | X | X | X |
 |  |  | For information about NDIS 6.1 features, see [Introduction to NDIS 6.1](introduction-to-ndis-6-1.md). |
 | Windows 7 and Windows Server 2008 R2 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.20 | X | X | X |
@@ -69,3 +69,5 @@ Windows operating system, Microsoft Windows Driver Kit (WDK), and Driver Develop
 |   |   | For more information about NDIS 6.81 features, see [Introduction to NDIS 6.81](introduction-to-ndis-6-81.md). |
 | Windows 10, version 1809 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.82 | X | X | X |
 |   |   | For more information about NDIS 6.82 features, see [Introduction to NDIS 6.82](introduction-to-ndis-6-82.md). |
+| Windows 10, version 1903 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.83 | X | X | X |
+|   |   | For more information about NDIS 6.83 features, see [Introduction to NDIS 6.83](introduction-to-ndis-6-83.md). |

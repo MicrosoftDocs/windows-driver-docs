@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_monitor_profiles_gg"></span><span id="DDK_MONITOR_PROFILES_GG"></span>
 
 
-A [*monitor profile*](https://msdn.microsoft.com/library/windows/hardware/ff556308#wdkgloss-monitor-profile) is a type of device profile used for color management. This profile contains information about how to convert colors in a monitor's *color space* and *color gamut* into colors in a device-independent color space. Any user-mode application, such as a setup program or a word processor with graphics capabilities, can use a monitor profile, provided that [*ICM*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-icm) has been enabled, and that the application has knowledge of the profile's format.
+A *monitor profile* is a type of device profile used for color management. This profile contains information about how to convert colors in a monitor's *color space* and *color gamut* into colors in a device-independent color space. Any user-mode application, such as a setup program or a word processor with graphics capabilities, can use a monitor profile, provided that *ICM* has been enabled, and that the application has knowledge of the profile's format.
 
 Although you can create custom monitor profiles using third-party tools, you may be able to use one of the monitor profiles shipped with Windows 2000 and later operating system versions. These profiles are described in the following table.
 

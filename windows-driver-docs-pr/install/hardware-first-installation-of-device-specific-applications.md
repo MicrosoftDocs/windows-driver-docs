@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Hardware-First Installation of Device-Specific Applications
 
 
-During a [hardware-first installation](hardware-first-installation.md), the user installs the device before inserting the distribution medium. If your distribution medium includes device-specific applications, you can use the following methods to start the [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) which installs those applications:
+During a hardware-first installation which installs those applications:
 
 [Device Installation Application Not Included in the Driver Package](device-installation-application-not-included-in-the-driver-package.md)
 

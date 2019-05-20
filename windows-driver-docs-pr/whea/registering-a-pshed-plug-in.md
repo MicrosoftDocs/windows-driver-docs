@@ -103,7 +103,7 @@ WHEA_PSHED_PLUGIN_REGISTRATION_PACKET RegPacket =
 }
 
 //
-// The PSHED plug-in&#39;s DriverEntry function
+// The PSHED plug-in's DriverEntry function
 //
 NTSTATUS
   DriverEntry(

@@ -27,7 +27,7 @@ The Microsoft Windows 2000 and later print spooler is made up of a set of Micros
 
 -   Selecting the first available physical printer in a logical printer queue.
 
--   Converting a data stream from a spooled format (such as [*enhanced metafile (EMF)*](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-enhanced-metafile--emf-)) to a format that can be sent to printer hardware (such as [*printer control language (PCL)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-printer-control-language--pcl-)).
+-   Converting a data stream from a spooled format (such as *enhanced metafile (EMF)*) to a format that can be sent to printer hardware (such as *printer control language (PCL)*).
 
 -   Sending a data stream to printer hardware.
 

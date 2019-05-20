@@ -46,7 +46,7 @@ typedef struct EXNPI_PROVIDER_CHARACTERISTICS_
 typedef struct EXNPI_CLIENT_DISPATCH_ {
   .
   . // NPI-specific dispatch table of function pointers that
-  . // point to a client module&#39;s NPI callback functions.
+  . // point to a client module's NPI callback functions.
   .
 } EXNPI_CLIENT_DISPATCH, *PEXNPI_CLIENT_DISPATCH;
 
@@ -54,7 +54,7 @@ typedef struct EXNPI_CLIENT_DISPATCH_ {
 typedef struct EXNPI_PROVIDER_DISPATCH_ {
   .
   . // NPI-specific dispatch table of function pointers that
-  . // point to a provider module&#39;s NPI functions.
+  . // point to a provider module's NPI functions.
   .
 } EXNPI_PROVIDER_DISPATCH, *PEXNPI_PROVIDER_DISPATCH;
 ```
@@ -63,7 +63,7 @@ The following code example shows how a client module that is registered as a cli
 
 ```C++
 // Context structure for the client
-// module&#39;s binding to a provider module
+// module's binding to a provider module
 typedef struct CLIENT_BINDING_CONTEXT_ {
   HANDLE NmrBindingHandle;
   PVOID ProviderBindingContext;
@@ -74,12 +74,12 @@ typedef struct CLIENT_BINDING_CONTEXT_ {
 } CLIENT_BINDING_CONTEXT, *PCLIENT_BINDING_CONTEXT;
 
 // Pool tag used for allocating the binding context
-#define BINDING_CONTEXT_POOL_TAG &#39;tpcb&#39;
+#define BINDING_CONTEXT_POOL_TAG 'tpcb'
 
-// Structure for the client&#39;s dispatch table
+// Structure for the client's dispatch table
 const EXNPI_CLIENT_DISPATCH Dispatch = {
   .
-  . // Function pointers to the client module&#39;s
+  . // Function pointers to the client module's
   . // NPI callback functions
   .
 };
@@ -99,8 +99,8 @@ NTSTATUS
   PEXNPI_PROVIDER_DISPATCH ProviderDispatch;
   NTSTATUS Status;
 
-  // Get pointers to the provider module&#39;s identification structure
-  // and the provider module&#39;s NPI-specific characteristics structure
+  // Get pointers to the provider module's identification structure
+  // and the provider module's NPI-specific characteristics structure
   ProviderModuleId = ProviderRegistrationInstance->ModuleId;
   ProviderNpiSpecificCharacteristics =
     (PEXNPI_PROVIDER_CHARACTERISTICS)
@@ -122,7 +122,7 @@ NTSTATUS
     return STATUS_NOINTERFACE;
   }
 
-  // Allocate memory for the client module&#39;s
+  // Allocate memory for the client module's
   // binding context structure
   BindingContext =
     (PCLIENT_BINDING_CONTEXT)
@@ -167,7 +167,7 @@ NTSTATUS
   // Attachment did not succeed
   else
   {
-    // Free memory for client&#39;s binding context structure
+    // Free memory for client's binding context structure
     ExFreePoolWithTag(
       BindingContext,
       BINDING_CONTEXT_POOL_TAG

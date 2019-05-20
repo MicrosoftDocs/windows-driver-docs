@@ -43,7 +43,7 @@ The PnP manager determines the registry setting for device characteristics as fo
 
 -   Otherwise, the PnP manager uses a value of zero as the registry setting.
 
-If a device characteristic that applies to the entire device stack is set in the registry, or if it is set for any FDO or filter DO in the stack, then the PnP manager sets it for every device object in the stack. (If the device is [*raw mode*](https://msdn.microsoft.com/library/windows/hardware/ff556331#wdkgloss-raw-mode) capable, and thus does not have an FDO, then the PnP manager uses the PDO instead.)
+If a device characteristic that applies to the entire device stack is set in the registry, or if it is set for any FDO or filter DO in the stack, then the PnP manager sets it for every device object in the stack. (If the device is *raw mode* capable, and thus does not have an FDO, then the PnP manager uses the PDO instead.)
 
  
 

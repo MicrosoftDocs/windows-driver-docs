@@ -18,13 +18,15 @@ DriverEntry(
     IN PUNICODE_STRING RegistryPath
     )
 {
+    WDF_DRIVER_CONFIG config;
+
     WDF_DRIVER_CONFIG_INIT( &config,
                               ToasterEvtDeviceAdd );
     status = WdfDriverCreate(
-                 DriverObject
-                 RegistryPath
-                 WDF_NO_OBJECT_ATTRIBUTES
-                 &config
+                 DriverObject,
+                 RegistryPath,
+                 WDF_NO_OBJECT_ATTRIBUTES,
+                 &config,
                  WDF_NO_HANDLE
              );
 

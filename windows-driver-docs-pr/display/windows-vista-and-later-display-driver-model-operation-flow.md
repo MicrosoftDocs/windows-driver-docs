@@ -34,7 +34,7 @@ The following diagram shows the flow of Windows Display Driver Model (WDDM) oper
 </tr>
 <tr class="even">
 <td align="left"><p>2.</p></td>
-<td align="left"><p>If the call to the display miniport driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff559615" data-raw-source="[&lt;strong&gt;DxgkDdiCreateDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559615)"><strong>DxgkDdiCreateDevice</strong></a> succeeds, the Microsoft Direct3D runtime calls the user-mode display driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff540634" data-raw-source="[&lt;strong&gt;CreateDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540634)"><strong>CreateDevice</strong></a> function.</p></td>
+<td align="left"><p>If the call to the display miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559615" data-raw-source="[&lt;strong&gt;DxgkDdiCreateDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559615)"><strong>DxgkDdiCreateDevice</strong></a> succeeds, the Microsoft Direct3D runtime calls the user-mode display driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540634" data-raw-source="[&lt;strong&gt;CreateDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540634)"><strong>CreateDevice</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3.</p></td>
@@ -55,11 +55,11 @@ The following diagram shows the flow of Windows Display Driver Model (WDDM) oper
 <tbody>
 <tr class="odd">
 <td align="left"><p>4.</p></td>
-<td align="left"><p>After an application requests to create surfaces for the rendering device, the Direct3D runtime calls the user-mode display driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff540688" data-raw-source="[&lt;strong&gt;CreateResource&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540688)"><strong>CreateResource</strong></a> function.</p></td>
+<td align="left"><p>After an application requests to create surfaces for the rendering device, the Direct3D runtime calls the user-mode display driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540688" data-raw-source="[&lt;strong&gt;CreateResource&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540688)"><strong>CreateResource</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>5.</p></td>
-<td align="left"><p>The user-mode display driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff540688" data-raw-source="[&lt;strong&gt;CreateResource&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540688)"><strong>CreateResource</strong></a> calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568893" data-raw-source="[&lt;strong&gt;pfnAllocateCb&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568893)"><strong>pfnAllocateCb</strong></a> runtime-supplied function.</p></td>
+<td align="left"><p>The user-mode display driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540688" data-raw-source="[&lt;strong&gt;CreateResource&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540688)"><strong>CreateResource</strong></a> calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568893" data-raw-source="[&lt;strong&gt;pfnAllocateCb&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568893)"><strong>pfnAllocateCb</strong></a> runtime-supplied function.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>6.</p></td>
@@ -84,7 +84,7 @@ The following diagram shows the flow of Windows Display Driver Model (WDDM) oper
 </tr>
 <tr class="even">
 <td align="left"><p>8.</p></td>
-<td align="left"><p>To submit the command buffer to kernel-mode, the Direct3D runtime calls either the user-mode display driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff569176" data-raw-source="[&lt;strong&gt;Present&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff569176)"><strong>Present</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff565957" data-raw-source="[&lt;strong&gt;Flush&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565957)"><strong>Flush</strong></a> function. Also, the user-mode display driver submits the command buffer if the command buffer is full.</p></td>
+<td align="left"><p>To submit the command buffer to kernel-mode, the Direct3D runtime calls either the user-mode display driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569176" data-raw-source="[&lt;strong&gt;Present&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff569176)"><strong>Present</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff565957" data-raw-source="[&lt;strong&gt;Flush&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565957)"><strong>Flush</strong></a> function. Also, the user-mode display driver submits the command buffer if the command buffer is full.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>9.</p></td>
@@ -92,7 +92,7 @@ The following diagram shows the flow of Windows Display Driver Model (WDDM) oper
 </tr>
 <tr class="even">
 <td align="left"><p>10.</p></td>
-<td align="left"><p>The display miniport driver receives a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559743" data-raw-source="[&lt;strong&gt;DxgkDdiPresent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559743)"><strong>DxgkDdiPresent</strong></a> function if <a href="https://msdn.microsoft.com/library/windows/hardware/ff568916" data-raw-source="[&lt;strong&gt;pfnPresentCb&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568916)"><strong>pfnPresentCb</strong></a> was called, or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559793" data-raw-source="[&lt;strong&gt;DxgkDdiRender&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559793)"><strong>DxgkDdiRender</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559800" data-raw-source="[&lt;strong&gt;DxgkDdiRenderKm&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559800)"><strong>DxgkDdiRenderKm</strong></a> function if <a href="https://msdn.microsoft.com/library/windows/hardware/ff568923" data-raw-source="[&lt;strong&gt;pfnRenderCb&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568923)"><strong>pfnRenderCb</strong></a> was called. The display miniport driver validates the command buffer, writes to the DMA buffer in the hardware&#39;s format, and produces an allocation list that describes the surfaces used.</p></td>
+<td align="left"><p>The display miniport driver receives a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559743" data-raw-source="[&lt;strong&gt;DxgkDdiPresent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559743)"><strong>DxgkDdiPresent</strong></a> function if <a href="https://msdn.microsoft.com/library/windows/hardware/ff568916" data-raw-source="[&lt;strong&gt;pfnPresentCb&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568916)"><strong>pfnPresentCb</strong></a> was called, or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559793" data-raw-source="[&lt;strong&gt;DxgkDdiRender&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559793)"><strong>DxgkDdiRender</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559800" data-raw-source="[&lt;strong&gt;DxgkDdiRenderKm&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559800)"><strong>DxgkDdiRenderKm</strong></a> function if <a href="https://msdn.microsoft.com/library/windows/hardware/ff568923" data-raw-source="[&lt;strong&gt;pfnRenderCb&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568923)"><strong>pfnRenderCb</strong></a> was called. The display miniport driver validates the command buffer, writes to the DMA buffer in the hardware's format, and produces an allocation list that describes the surfaces used.</p></td>
 </tr>
 </tbody>
 </table>
@@ -109,7 +109,7 @@ The following diagram shows the flow of Windows Display Driver Model (WDDM) oper
 <tbody>
 <tr class="odd">
 <td align="left"><p>11.</p></td>
-<td align="left"><p>The Microsoft DirectX graphics kernel subsystem calls the display miniport driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff559587" data-raw-source="[&lt;strong&gt;DxgkDdiBuildPagingBuffer&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559587)"><strong>DxgkDdiBuildPagingBuffer</strong></a> function to create special purpose DMA buffers, known as paging buffers, that move the allocations specified in the allocation list to and from GPU-accessible memory.</p>
+<td align="left"><p>The Microsoft DirectX graphics kernel subsystem calls the display miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559587" data-raw-source="[&lt;strong&gt;DxgkDdiBuildPagingBuffer&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559587)"><strong>DxgkDdiBuildPagingBuffer</strong></a> function to create special purpose DMA buffers, known as paging buffers, that move the allocations specified in the allocation list to and from GPU-accessible memory.</p>
 <div class="alert">
 <strong>Note</strong>  <a href="https://msdn.microsoft.com/library/windows/hardware/ff559587" data-raw-source="[&lt;strong&gt;DxgkDdiBuildPagingBuffer&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559587)"><strong>DxgkDdiBuildPagingBuffer</strong></a> is not called for every frame.
 </div>
@@ -119,15 +119,15 @@ The following diagram shows the flow of Windows Display Driver Model (WDDM) oper
 </tr>
 <tr class="even">
 <td align="left"><p>12.</p></td>
-<td align="left"><p>The DirectX graphics kernel subsystem calls the display miniport driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff560790" data-raw-source="[&lt;strong&gt;DxgkDdiSubmitCommand&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560790)"><strong>DxgkDdiSubmitCommand</strong></a> function to queue the paging buffers to the GPU execution unit.</p></td>
+<td align="left"><p>The DirectX graphics kernel subsystem calls the display miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560790" data-raw-source="[&lt;strong&gt;DxgkDdiSubmitCommand&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560790)"><strong>DxgkDdiSubmitCommand</strong></a> function to queue the paging buffers to the GPU execution unit.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>13.</p></td>
-<td align="left"><p>The DirectX graphics kernel subsystem calls the display miniport driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff559737" data-raw-source="[&lt;strong&gt;DxgkDdiPatch&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559737)"><strong>DxgkDdiPatch</strong></a> function to assign physical addresses to the resources in the DMA buffer.</p></td>
+<td align="left"><p>The DirectX graphics kernel subsystem calls the display miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559737" data-raw-source="[&lt;strong&gt;DxgkDdiPatch&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559737)"><strong>DxgkDdiPatch</strong></a> function to assign physical addresses to the resources in the DMA buffer.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>14.</p></td>
-<td align="left"><p>The DirectX graphics kernel subsystem calls the display miniport driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff560790" data-raw-source="[&lt;strong&gt;DxgkDdiSubmitCommand&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560790)"><strong>DxgkDdiSubmitCommand</strong></a> function to queue the DMA buffer to the GPU execution unit. Each DMA buffer submitted to the GPU contains a fence identifier, which is a number. After the GPU finishes processing the DMA buffer, the GPU generates an interrupt.</p></td>
+<td align="left"><p>The DirectX graphics kernel subsystem calls the display miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560790" data-raw-source="[&lt;strong&gt;DxgkDdiSubmitCommand&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560790)"><strong>DxgkDdiSubmitCommand</strong></a> function to queue the DMA buffer to the GPU execution unit. Each DMA buffer submitted to the GPU contains a fence identifier, which is a number. After the GPU finishes processing the DMA buffer, the GPU generates an interrupt.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>15.</p></td>

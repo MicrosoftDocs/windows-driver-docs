@@ -32,7 +32,7 @@ The following table lists the attributes associated with the Resolution feature.
 <tbody>
 <tr class="odd">
 <td><p><em><strong>DPI</strong></p></td>
-<td><p>PAIR of numeric values representing the x and y values for the printer&#39;s resolution, in dots per inch.</p></td>
+<td><p>PAIR of numeric values representing the x and y values for the printer's resolution, in dots per inch.</p></td>
 <td><p>Required. The x and y values must equal *<strong>TextDPI</strong> x and y values, or they must be equal to *<strong>TextDPI</strong> x and y values divided by a power of two. For example, if *<strong>TextDPI</strong> is PAIR(300, 300), then *<strong>DPI</strong> values might be PAIR(300, 300), PAIR(150, 150), or PAIR(75, 75), but not PAIR(100, 100).</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ The following table lists the attributes associated with the Resolution feature.
 </tr>
 <tr class="odd">
 <td><p></em><strong>TextDPI</strong></p></td>
-<td><p>PAIR or numeric values representing the x and y values for the printer&#39;s text resolution, in dots per inch.</p></td>
+<td><p>PAIR or numeric values representing the x and y values for the printer's text resolution, in dots per inch.</p></td>
 <td><p>Required. See *<strong>DPI</strong> comments. This resolution is used for drawing fonts and vector graphics.</p></td>
 </tr>
 </tbody>

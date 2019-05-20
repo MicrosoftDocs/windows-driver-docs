@@ -23,7 +23,7 @@ The following code example shows how to implement these callback functions.
 
 ```cpp
 //
-// The PSHED plug-in&#39;s GetAllErrorSources callback function
+// The PSHED plug-in's GetAllErrorSources callback function
 //
 NTSTATUS
   GetAllErrorSources(
@@ -72,7 +72,7 @@ NTSTATUS
 }
 
 //
-// The PSHED plug-in&#39;s GetErrorSourceInfo callback function
+// The PSHED plug-in's GetErrorSourceInfo callback function
 //
 NTSTATUS
   GetErrorSourceInfo(

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Opening Software Keys for All Devices in a Setup Class
 
 
-When a user-mode application opens the [*software keys*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-key) for all devices in a device setup class, it must not directly access the registry to enumerate the subkeys of a device setup class. As with any registry key, the location and name of this key might change between different versions of Windows.
+When a user-mode application opens the *software keys* for all devices in a device setup class, it must not directly access the registry to enumerate the subkeys of a device setup class. As with any registry key, the location and name of this key might change between different versions of Windows.
 
 To safely enumerate and open the subkeys of a device setup class, follow these steps:
 

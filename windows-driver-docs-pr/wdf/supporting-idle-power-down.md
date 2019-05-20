@@ -41,7 +41,7 @@ If your device or component can be powered down when it is idle, the [*EvtDriver
     -   [*EvtDeviceWakeFromS0Triggered*](https://msdn.microsoft.com/library/windows/hardware/ff540919), which informs the driver that the bus detected a wake signal.
 
 
-
+## Idle Conditions
 
 The framework considers the device to be idle, and starts counting idle time, when all of the following conditions are met:
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 An INF file must have at least one **Strings** section to define every %*strkey*% token specified elsewhere in that INF.
 
-```cpp
+```ini
 [Strings] | 
 [Strings.LanguageID] ...
  
@@ -109,7 +109,7 @@ Examples
 
 The following example shows a fragment of a **Strings** section from a system-supplied locale-specific *dvd.inf* for installations in English-speaking countries/regions.
 
-```cpp
+```ini
 [Strings]
 Msft="Microsoft"
 MfgToshiba="Toshiba"
@@ -119,7 +119,7 @@ Tosh404.DeviceDesc="Toshiba DVD decoder card"
 
 The following example shows string concatenation.
 
-```cpp
+```ini
 [OEM Windows System Component Verification]
 OID = 1.3.6.1.4.1.311.10.3.7    ; WHQL OEM OID 
 Notice = "%A% %B% %C% %D% %E%" 
@@ -128,7 +128,7 @@ A = "This certificate is used to sign untested drivers that have not passed the 
 B = "This certificate and drivers signed with this certificate are intended for use in test environments only, and are not intended for use in any other context."
 C = "Vendors who distribute this certificate or drivers signed with this certificate outside a test environment may be in violation of their driver signing agreement."
 D = "Vendors who have their drivers signed with this certificate do so at their own risk." 
-E = "In particular, Microsoft assumes no liability for any damages that may result from the distribution of this certificate or drivers signed with this certificate outside the test environment described in a vendor&#39;s driver signing agreement."
+E = "In particular, Microsoft assumes no liability for any damages that may result from the distribution of this certificate or drivers signed with this certificate outside the test environment described in a vendor's driver signing agreement."
 ```
 
 ## See also

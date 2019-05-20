@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_RECEIVE_COALESCING Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_RECEIVE\_COALESCING
@@ -34,6 +35,7 @@ When the host receives a request from the OS to set packet coalescing filters, i
 
 
 No additional parameters. The data in the header is sufficient.
+
 Requirements
 ------------
 

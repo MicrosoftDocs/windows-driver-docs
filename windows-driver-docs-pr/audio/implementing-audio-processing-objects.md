@@ -474,7 +474,7 @@ This sample INF file shows the \[MsApoFxProxy.Registration\] and \[MsApoFxProxy.
 ```inf
 ; wdmaudio.inf – this is where WmaLfxGfxDsp.dll is registered
 ...
-;; MsApoFxProxy.Registration section can be called by OEM&#39;s to install the discover-effects APO
+;; MsApoFxProxy.Registration section can be called by OEM's to install the discover-effects APO
 [MsApoFxProxy.Registration]
 AddReg = MsApoFxProxy.AddReg
 CopyFiles = MsApoFxProxy.CopyList

@@ -1,14 +1,20 @@
 - name: "Battery Devices Design Guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "Battery Devices Design Guide"
+    href: index.md
   - name: "Writing Battery Miniclass Drivers"
-    href: writing-battery-miniclass-drivers.md
+# Auto-expanded node
     items: 
+    - name: "Writing Battery Miniclass Drivers"
+      href: writing-battery-miniclass-drivers.md
     - name: "Overview of System Battery Management"
       href: overview-of-system-battery-management.md
     - name: "Interaction of Battery Class and Miniclass Drivers"
-      href: interaction-of-battery-class-and-miniclass-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Interaction of Battery Class and Miniclass Drivers"
+        href: interaction-of-battery-class-and-miniclass-drivers.md
       - name: "Battery Class Driver Functionality"
         href: battery-class-driver-functionality.md
       - name: "Battery Miniclass Driver Functionality"
@@ -18,8 +24,10 @@
     - name: "DriverEntry Routine of a Battery Miniclass Driver"
       href: driverentry-routine-of-a-battery-miniclass-driver.md
     - name: "AddDevice Routine of a Battery Miniclass Driver"
-      href: adddevice-routine-of-a-battery-miniclass-driver.md
+# Auto-expanded node
       items: 
+      - name: "AddDevice Routine of a Battery Miniclass Driver"
+        href: adddevice-routine-of-a-battery-miniclass-driver.md
       - name: "Creating an FDO in the Battery Miniclass Driver"
         href: creating-an-fdo-in-the-battery-miniclass-driver.md
       - name: "Initializing the Battery Class Device"
@@ -29,8 +37,10 @@
     - name: "DispatchSystemControl Routine of a Battery Miniclass Driver"
       href: dispatchsystemcontrol-routine-of-a-battery-miniclass-driver.md
     - name: "Responding to Battery Class Driver Queries"
-      href: responding-to-battery-class-driver-queries.md
+# Auto-expanded node
       items: 
+      - name: "Responding to Battery Class Driver Queries"
+        href: responding-to-battery-class-driver-queries.md
       - name: "Responding to Battery Tag Queries"
         href: responding-to-battery-tag-queries.md
       - name: "Responding to Battery Information Queries"
@@ -38,8 +48,10 @@
       - name: "Responding to Battery Status Queries"
         href: responding-to-battery-status-queries.md
     - name: "Supplying Battery Device Notification"
-      href: supplying-battery-device-notification.md
+# Auto-expanded node
       items: 
+      - name: "Supplying Battery Device Notification"
+        href: supplying-battery-device-notification.md
       - name: "Interaction of Battery Status and Notification Routines"
         href: interaction-of-battery-status-and-notification-routines.md
       - name: "Setting and Canceling Battery Notification"
@@ -49,13 +61,17 @@
     - name: "Installing a Battery Driver"
       href: installing-a-battery-driver.md
   - name: "Writing UPS Minidrivers"
-    href: writing-ups-minidrivers.md
+# Auto-expanded node
     items: 
+    - name: "Writing UPS Minidrivers"
+      href: writing-ups-minidrivers.md
     - name: "UPS Minidriver Functionality"
       href: ups-minidriver-functionality.md
     - name: "UPS Registry Entries"
-      href: ups-registry-entries.md
+# Auto-expanded node
       items: 
+      - name: "UPS Registry Entries"
+        href: ups-registry-entries.md
       - name: "UPS\\Status Registry Entries"
         href: ups-status-registry-entries.md
       - name: "UPS\\ServiceProviders Registry Entries"

@@ -23,7 +23,7 @@ WDM drivers do not name their device objects directly. Instead, the system impos
 
 -   FDOs and filter DOs are not named. Function and filter drivers do not request a name when creating the device object.
 
-Any I/O request to a named device object automatically goes to the top object in that device object's stack. Thus, only the PDO is required to be named. User-mode applications do not refer to WDM device objects by name; instead, applications access the device object through its [*device interface*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-interface). For more information, see [Device Interface Classes](https://msdn.microsoft.com/library/windows/hardware/ff541339).
+Any I/O request to a named device object automatically goes to the top object in that device object's stack. Thus, only the PDO is required to be named. User-mode applications do not refer to WDM device objects by name; instead, applications access the device object through its *device interface*. For more information, see [Device Interface Classes](https://msdn.microsoft.com/library/windows/hardware/ff541339).
 
 Driver writers must not name more than one object in a device stack. The operating system checks security settings based on the named object. If two different objects are named and have different security descriptors, the I/O requests that are sent to the object with the weaker security descriptor can reach the device object with the stronger security descriptor.
 

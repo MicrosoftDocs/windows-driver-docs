@@ -83,7 +83,7 @@ The following tables provide summaries of the following types of functions:
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff544754" data-raw-source="[&lt;strong&gt;DiUninstallDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544754)"><strong>DiUninstallDevice</strong></a></p></td>
-<td align="left"><p>Uninstalls a device and removes its device node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode" data-raw-source="[&lt;em&gt;devnode&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)"><em>devnode</em></a>) ) from the system. (Windows 7 and later versions of Windows)</p></td>
+<td align="left"><p>Uninstalls a device and removes its device node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode" data-raw-source="&lt;em&gt;devnode&lt;/em&gt;"><em>devnode</em></a>) ) from the system. (Windows 7 and later versions of Windows)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547654" data-raw-source="[&lt;strong&gt;InstallSelectedDriver&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547654)"><strong>InstallSelectedDriver</strong></a></p></td>
@@ -185,7 +185,7 @@ The following tables provide summaries of the following types of functions:
 <tbody>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550917" data-raw-source="[&lt;strong&gt;SetupDiBuildDriverInfoList&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550917)"><strong>SetupDiBuildDriverInfoList</strong></a></p></td>
-<td align="left"><p>Builds a list of drivers associated with a specified device instance or with the device information set&#39;s global class driver list.</p></td>
+<td align="left"><p>Builds a list of drivers associated with a specified device instance or with the device information set's global class driver list.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551018" data-raw-source="[&lt;strong&gt;SetupDiEnumDriverInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551018)"><strong>SetupDiEnumDriverInfo</strong></a></p></td>

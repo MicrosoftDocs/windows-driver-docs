@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Overview of the Driver Selection Process
 
 
-Windows represents a driver as a [*driver node*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-node), which includes all the software support for a device, such as any services, device-specific co-installers, and registry entries. The services for a device include a function driver and any upper-level and lower-level device filter drivers.
+Windows represents a driver as a *driver node*, which includes all the software support for a device, such as any services, device-specific co-installers, and registry entries. The services for a device include a function driver and any upper-level and lower-level device filter drivers.
 
 Some devices require a vendor-supplied driver that is designed specifically for that device or one that is designed to support a family of devices. However, other devices can be driven by a system-supplied driver that supports all the devices of a given [device setup class](device-setup-classes.md). Windows selects the driver that most closely matches the device. If Windows does not find such a driver, it selects from increasingly more general drivers.
 
@@ -17,7 +17,7 @@ Some devices require a vendor-supplied driver that is designed specifically for 
 
 Windows searches in specific locations for drivers that match a device. A driver matches a device if the following are true:
 
--   One of the Plug and Play (PnP) [device identification strings](device-identification-strings.md) that is reported by the bus driver for the device matches a device identification string in an [**INF *Models* section**](inf-models-section.md) entry of the driver's [INF file](inf-files.md).
+-   One of the Plug and Play (PnP) [device identification strings](device-identification-strings.md) that is reported by the bus driver for the device matches a device identification string in an [**INF *Models* section**](inf-models-section.md) entry of the driver's [INF file](overview-of-inf-files.md).
 
 -   If the matching device identification string in an [**INF *Models* section**](inf-models-section.md) entry specifies a *TargetOSVersion* decoration, the decoration matches the operating system version on which the device is to be installed.
 
@@ -55,7 +55,7 @@ Signatures from a Windows signing authority include the following:
 
 Windows selects the driver with the lowest rank value as the best match for the device.
 
-However, if there are multiple equally ranked drivers that are a best match for a device, Windows uses the driver's date and version to select a driver. The driver's date and version are specified by the [**INF DriverVer directive**](inf-driverver-directive.md) that is contained in the driver's [INF file](inf-files.md).
+However, if there are multiple equally ranked drivers that are a best match for a device, Windows uses the driver's date and version to select a driver. The driver's date and version are specified by the [**INF DriverVer directive**](inf-driverver-directive.md) that is contained in the driver's [INF file](overview-of-inf-files.md).
 
 Windows uses the following criteria to select a driver for a device:
 

@@ -131,7 +131,7 @@ This class includes memory devices, such as flash memory cards.
 <a href="" id="modem-"></a>**Modem**  
 Class = Modem  
 ClassGuid = {4d36e96d-e325-11ce-bfc1-08002be10318}  
-This class includes [modem devices](https://msdn.microsoft.com/library/windows/hardware/ff542476). An INF file for a device of this class specifies the features and configuration of the device and stores this information in the registry. An INF file for a device of this class can also be used to install device drivers for a [*controllerless modem*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-controllerless-modem) or a [*software modem*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-modem). These devices split the functionality between the modem device and the device driver. For more information about modem INF files and Microsoft Windows Driver Model (WDM) modem devices, see [Overview of Modem INF Files](https://msdn.microsoft.com/library/windows/hardware/ff542559) and [Adding WDM Modem Support](https://msdn.microsoft.com/library/windows/hardware/ff541218).  
+This class includes modem devices or a *software modem*. These devices split the functionality between the modem device and the device driver. For more information about modem INF files and Microsoft Windows Driver Model (WDM) modem devices, see [Overview of Modem INF Files](https://msdn.microsoft.com/library/windows/hardware/ff542559) and [Adding WDM Modem Support](https://msdn.microsoft.com/library/windows/hardware/ff541218).  
   
 <a href="" id="monitor-"></a>**Monitor**  
 Class = Monitor  
@@ -161,7 +161,7 @@ This class includes intelligent multiport serial cards, but not peripheral devic
 <a href="" id="network-adapter-"></a>**Network Adapter**  
 Class = Net  
 ClassGuid = {4d36e972-e325-11ce-bfc1-08002be10318}  
-This class includes NDIS miniport drivers excluding Fast-IR miniport drivers, NDIS intermediate drivers (of virtual adapters), and CoNDIS MCM miniport drivers.  
+This class consists of network adapter drivers.  These drivers must either call [**NdisMRegisterMiniportDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterminiportdriver) or [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate).  Drivers that do not use NDIS or NetAdapter should use a different setup class.
   
 <a href="" id="network-client-"></a>**Network Client**  
 Class = NetClient  

@@ -32,7 +32,7 @@ The minidriver is responsible for advancing the leading edge in all but the two 
 <thead>
 <tr class="header">
 <th>Situation</th>
-<th>AVStream&#39;s Behavior</th>
+<th>AVStream's Behavior</th>
 </tr>
 </thead>
 <tbody>

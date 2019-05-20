@@ -33,9 +33,9 @@ Client code typically interacts with the EMI using the following process:
 
 3. Allocate a buffer of the required EMI metadata size and call [IOCTL_EMI_GET_METADATA](https://msdn.microsoft.com/library/windows/hardware/dn957436.aspx). Verify that the returned EMI_MEASUREMENT_UNIT is EmiMeasurementUnitPicowattHours. Releases after Windows 10 may define additional unit types. 
 
-4. To measure total energy consumption, call [IOCTL_EMI_GET_MEASUREMENT](https://msdn.microsoft.com/library/windows/hardware/dn957434.aspx). The AbsoluteEnergy value in the returned [EMI_MEASUREMENT_DATA](https://msdn.microsoft.com/library/windows/hardware/dn957426.aspx) is the total accumulated energy in picowatt-hours with some arbitrary zero-point. In general, you need to compare samples at two different times and subtract the energy values for energy consumption over that interval. 
+4. To measure total energy consumption, call [IOCTL_EMI_GET_MEASUREMENT](https://msdn.microsoft.com/library/windows/hardware/dn957434.aspx). The AbsoluteEnergy value in the returned [EMI_CHANNEL_MEASUREMENT_DATA structure](https://docs.microsoft.com/windows/desktop/api/emi/ns-emi-emi_channel_measurement_data) is the total accumulated energy in picowatt-hours with some arbitrary zero-point. In general, you need to compare samples at two different times and subtract the energy values for energy consumption over that interval. 
 
-5. To measure average power consumption, call [IOCTL_EMI_GET_MEASUREMENT](https://msdn.microsoft.com/library/windows/hardware/dn957434.aspx) at the beginning and end of the desired interval. Subtract the AbsoluteEnergy and AbsoluteTime values of the [EMI_MEASUREMENT_DATA](https://msdn.microsoft.com/library/windows/hardware/dn957426.aspx) returned by the latter sample from those of the earlier sample. 
+5. To measure average power consumption, call [IOCTL_EMI_GET_MEASUREMENT](https://msdn.microsoft.com/library/windows/hardware/dn957434.aspx) at the beginning and end of the desired interval. Subtract the AbsoluteEnergy and AbsoluteTime values of the [EMI_CHANNEL_MEASUREMENT_DATA structure](https://docs.microsoft.com/windows/desktop/api/emi/ns-emi-emi_channel_measurement_data) returned by the latter sample from those of the earlier sample.
 
 For more information see these topics.
 

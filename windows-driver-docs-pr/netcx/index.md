@@ -4,10 +4,11 @@ description: Network Adapter WDF Class Extension (NetAdapterCx)
 ms.assetid: 74719A80-AE66-410F-85B7-31B6F455A818
 keywords:
 - Network Adapter Class Extension, Network Adapter WDF Class Extension, NetAdapterCx, NetCx
-ms.date: 06/05/2017
+ms.date: 03/21/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.custom: 19H1
 ---
 
 # Network Adapter WDF Class Extension (NetAdapterCx)

@@ -14,10 +14,6 @@ ms.localizationpriority: medium
 
 # AV/C Streaming Overview
 
-
-
-
-
 This section describes the AV/C Streaming filter driver, *Avcstrm.sys*, that Microsoft provides to assist with streaming media data from an AV/C subunit if that data is in either SDDV or MPEG2TS formats. These formats are the two most common methods for storing the digital data in the media signal.
 
 *Avcstrm.sys* is a lower-level subunit filter driver that is located immediately above *Avc.sys* and *61883.sys* in the driver stack and below any subunit drivers. The AV/C Stream filter driver provides additional support for the AV/C protocol driver. It is optional for a vendor to use this support.
@@ -26,13 +22,13 @@ The tape subunit specifications (located at the [1394 Trade Association](https:/
 
 Controlling an AV/C subunit driver on the 61883 and AV/C subunit driver stacks requires driver functions to receive or transmit data streams using device driver interfaces (DDIs) provided by the 61883 protocol driver. These driver functions perform the following operations:
 
--   Allocate isochronous resources and make an isochronous connection
+- Allocate isochronous resources and make an isochronous connection
 
--   Queue data buffers
+- Queue data buffers
 
--   Attach and complete receiving or transmitting data buffers
+- Attach and complete receiving or transmitting data buffers
 
--   Synchronize stream state across threads
+- Synchronize stream state across threads
 
 The AV/C Stream filter driver relies on the *61883.sys* protocol driver. *Avcstrm.sys* uses DDIs provided by *61883.sys* to perform isochronous connection and isochronous data streaming, and it uses *Avc.sys* to issue AV/C commands for external device control.
 
@@ -40,18 +36,8 @@ For more information about the AV/C protocol upon which the AV/C Streaming filte
 
 For more information and resources see the following links:
 
-[Windows Driver Model technology](https://go.microsoft.com/fwlink/p/?linkid=8771) website
+[Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model)
 
-[IEEE 1394 technology](https://go.microsoft.com/fwlink/p/?linkid=8728) website
+[1394 Trade Association specifications](https://go.microsoft.com/fwlink/p/?linkid=518448)
 
-[1394 Trade Association specifications](https://go.microsoft.com/fwlink/p/?linkid=518448) website
-
-[IEC](https://go.microsoft.com/fwlink/p/?linkid=8732) website
-
- 
-
- 
-
-
-
-
+[International Electrotechnical Commission](https://go.microsoft.com/fwlink/p/?linkid=8732)

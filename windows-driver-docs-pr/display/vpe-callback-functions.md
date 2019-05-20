@@ -56,7 +56,7 @@ The following table lists the video port extensions (VPE) callback functions tha
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550413" data-raw-source="[&lt;em&gt;DdVideoPortGetBandwidth&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550413)"><em>DdVideoPortGetBandwidth</em></a></p></td>
-<td align="left"><p>Reports the bandwidth limitations of the device&#39;s frame buffer memory based on the specified VPE object output format.</p></td>
+<td align="left"><p>Reports the bandwidth limitations of the device's frame buffer memory based on the specified VPE object output format.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550415" data-raw-source="[&lt;em&gt;DdVideoPortGetConnectInfo&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550415)"><em>DdVideoPortGetConnectInfo</em></a></p></td>

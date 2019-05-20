@@ -477,14 +477,14 @@ You can change the break status of the following events. Because these events ar
 <td align="left"><p><strong>ibp</strong></p></td>
 <td align="left"><p>Initial break point</p>
 <p>(This event occurs at the beginning of the debug session and after you restart the target computer.)</p></td>
-<td align="left"><p><strong>In user mode:</strong> Break. You can change this status to &quot;Ignore&quot; by using the <strong>-g</strong><a href="command-line-options.md" data-raw-source="[command-line option](command-line-options.md)">command-line option</a>.</p>
-<p><strong>In kernel mode:</strong> Ignore. You can change this status to &quot;Enabled&quot; by a variety of methods. For more information about how to change this status, see <a href="crashing-and-rebooting-the-target-computer.md" data-raw-source="[Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md)">Crashing and Rebooting the Target Computer</a>.</p></td>
+<td align="left"><p><strong>In user mode:</strong> Break. You can change this status to "Ignore" by using the <strong>-g</strong><a href="command-line-options.md" data-raw-source="[command-line option](command-line-options.md)">command-line option</a>.</p>
+<p><strong>In kernel mode:</strong> Ignore. You can change this status to "Enabled" by a variety of methods. For more information about how to change this status, see <a href="crashing-and-rebooting-the-target-computer.md" data-raw-source="[Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md)">Crashing and Rebooting the Target Computer</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>iml</strong></p></td>
 <td align="left"><p>Initial module load</p>
 <p>(Kernel mode only)</p></td>
-<td align="left"><p>Ignore. You can change this status to &quot;Break&quot; by a variety of methods. For more information about how to change this status, see <a href="crashing-and-rebooting-the-target-computer.md" data-raw-source="[Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md)">Crashing and Rebooting the Target Computer</a>.</p></td>
+<td align="left"><p>Ignore. You can change this status to "Break" by a variety of methods. For more information about how to change this status, see <a href="crashing-and-rebooting-the-target-computer.md" data-raw-source="[Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md)">Crashing and Rebooting the Target Computer</a>.</p></td>
 </tr>
 </tbody>
 </table>
