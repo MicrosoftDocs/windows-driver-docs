@@ -6,9 +6,8 @@
   - name: "Hardware Program dashboard FAQ"
     href: hardware-dashboard-faq.md
   - name: "Hardware submissions"
-# Auto-expanded node
     items: 
-    - name: "Hardware submissions"
+    - name: "Hardware submissions overview"
       href: hardware-certification-submissions.md
     - name: "Create a new hardware submission"
       href: create-a-new-hardware-submission.md
@@ -16,12 +15,11 @@
       href: manage-your-hardware-submissions.md
     - name: "Find a hardware submission"
       href: find-hardware-submission.md
-    - name: "Create a new WLK device certification submission"
-# Auto-expanded node
+    - name: "Submitting a WLK device certification"
       items: 
-      - name: "Create a new WLK device certification submission"
+      - name: "Creating a new WLK device certification submission"
         href: create-a-new-hardware-logo-submission.md
-      - name: "Winqual Submission Tool (winqual.exe)"
+      - name: "Using the Winqual Submission Tool (winqual.exe)"
         href: winqual-submission-tool--winqualexe-.md
     - name: "ID definitions"
       href: id-definitions.md
@@ -49,8 +47,8 @@
           items:
           - name: "Percentage of machines without a kernel mode crash"
             href: pct-machines-without-kernel-mode-crash.md
-          -name: "Percentage of machines without a live kernel dump"
-          href: pct-machines-without-live-kernel-dump.md
+          - name: "Percentage of machines without a live kernel dump"
+            href: pct-machines-without-live-kernel-dump.md
       - name: "Device class measures"
         items:
         - name: "Audio"
@@ -137,16 +135,16 @@
               href: pct-swdrm-playback-failures-on-netflix.md
             - name: "Percent of devices with display issues when resume from low power state"
               href: graphics-display-health-percent-devices-with-display-issues-resume-from-low-power.md
-          - name: "Wi-Fi"
-            items:
-            - name: "Wi-Fi Measures"
-              href: wi-fi-measures.md
-            - name: "Connection failure rate of top 95 percent of device / AP pairs – All"
-              href: connection-failure-rate-top-95-pct-device--ap-pairs.md
-            - name: "Internet connection failure rate of top 95 percent of device / AP pairs with greater than 50 percent signal quality"
-              href: internet-connection-failure-rate-top-95-pct-device--a-pairs-with-greater-than-50-pct-signal.md
-            - name: "Percent of Wi-Fi sessions ending in an unexpected disconnect"
-              href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
+        - name: "Wi-Fi"
+          items:
+          - name: "Wi-Fi Measures"
+            href: wi-fi-measures.md
+          - name: "Connection failure rate of top 95 percent of device / AP pairs – All"
+            href: connection-failure-rate-top-95-pct-device--ap-pairs.md
+          - name: "Internet connection failure rate of top 95 percent of device / AP pairs with greater than 50 percent signal quality"
+            href: internet-connection-failure-rate-top-95-pct-device--a-pairs-with-greater-than-50-pct-signal.md
+          - name: "Percent of Wi-Fi sessions ending in an unexpected disconnect"
+            href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
       - name: "Appendix"
         href: measure-appendix.md
       - name: "Glossary"
@@ -155,8 +153,7 @@
       href: submit-dashboard-extension-inf-files.md
     - name: "Bug Management"
       href: bug-management.md
-  - name: "Manage driver distribution with shipping labels"
-# Auto-expanded node
+  - name: "Shipping labels"
     items: 
     - name: "Manage driver distribution with shipping labels"
       href: manage-driver-distribution-by-submission.md
@@ -181,12 +178,10 @@
     - name: "Publishing for test distribution"
       href: publishing-for-test-distribution.md
   - name: "Hardware dashboard API"
-# Auto-expanded node
     items: 
-    - name: "Hardware dashboard API"
+    - name: "Getting started with the Hardware dashboard API"
       href: dashboard-api.md
-    - name: "Get product data"
-# Auto-expanded node
+    - name: "Product data API"
       items: 
       - name: "Get product data"
         href: get-product-data.md
@@ -198,8 +193,7 @@
         href: get-all-submissions.md
       - name: "Get a submission"
         href: get-a-submission.md
-    - name: "Manage product submissions"
-# Auto-expanded node
+    - name: "Product submission APIs"
       items: 
       - name: "Manage product submissions"
         href: manage-product-submissions.md
@@ -213,8 +207,7 @@
         href: update-submission-data.md
       - name: "Update product data"
         href: update-product-data.md
-    - name: "Get shipping label data"
-# Auto-expanded node
+    - name: "APIs to get shipping label data"
       items: 
       - name: "Get shipping label data"
         href: get-shipping-labels.md
@@ -222,8 +215,7 @@
         href: get-all-shipping-labels.md
       - name: "Get a shipping label"
         href: get-a-shipping-label.md
-    - name: "Manage shipping labels"
-# Auto-expanded node
+    - name: "APIs to manage shipping labels"
       items:
       - name: "Manage shipping labels"
         href: manage-shipping-labels.md
@@ -235,8 +227,7 @@
       href: get-audience-data.md
     - name: "Driver package metadata"
       href: driver-package-metadata.md
-    - name: "Schedule custom reports for your driver failure details"
-# Auto-expanded node
+    - name: "Custom reports for driver failures"
       items:
       - name: "Schedule custom reports for your driver failure details"
         href: schedule-custom-reports-for-driver-failure-details.md
@@ -255,21 +246,18 @@
     - name: "Sample report templates"
       href: sample-report-templates.md
     - name: "Legacy error reporting data process"
-# Auto-expanded node
       items:
-      - name: "Legacy error reporting data process"
+      - name: "Driver error reporting data for earlier versions of Windows"
         href: legacy-error-reporting-data-process.md
-      - name: "Get error reporting data for Windows 10 drivers"
-# Auto-expanded node
+      - name: "Get error reporting data"
         items:
-        - name: "Get error reporting data for Windows 10 drivers"
+        - name: "Get error reporting data for Windows 10"
           href: get-error-reporting-data-for-windows-10-drivers.md
         - name: "Get details for a Windows 10 driver error"    
           href: get-details-for-a-windows-10-driver-error.md
         - name: "Download the CAB file for a Windows 10 driver error"
           href: download-the-cab-file-for-a-windows-10-driver-error.md
-      - name: "Get error reporting data for Windows 7 and Windows 8.x drivers"
-# Auto-expanded node
+      - name: "Windows 7 and Windows 8.x drivers"
         items:
         - name: "Get error reporting data for Windows 7 and Windows 8.x drivers"
           href: get-error-reporting-data-for-windows-7-and-windows-8.x-drivers.md
@@ -277,8 +265,7 @@
           href: get-details-for-a-windows-7-or-windows-8.x-driver-error.md
         - name: "Download the CAB file for a Windows 7 or Windows 8.x driver error"
           href: download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md
-      - name: "Get OEM hardware error reporting data"
-# Auto-expanded node
+      - name: "OEM hardware"
         items: 
         - name: "Get OEM hardware error reporting data"
           href: get-oem-hardware-error-reporting-data.md
@@ -289,10 +276,7 @@
   - name: "File signing LSA plugins and UEFI firmware"
     href: lsa-and-uefi-file-signing.md
   - name: "Dashboard Administration"
-# Auto-expanded node
-    items: 
-    - name: "Dashboard Administration"
-      href: dashboard-administration.md
+    items:
     - name: "Get started with the Hardware Program"
       href: get-started-with-the-hardware-dashboard.md
     - name: "Register for the Hardware Program"
@@ -308,23 +292,18 @@
     - name: "Add or Update a code signing certificate"
       href: update-a-code-signing-certificate.md
   - name: "Device Metadata"
-# Auto-expanded node
-    items: 
-    - name: "Device Metadata"
-      href: device-metadata.md
-    - name: "Create a Device Metadata Experience"
-# Auto-expanded node
+    items:
+    - name: "The Device Metadata Experience"
       items: 
-      - name: "Create a Device Metadata Experience"
+      - name: "Creating a Device Metadata Experience"
         href: create-a-device-metadata-experience.md
       - name: "Creating a Preview Package"
         href: creating-a-preview-package.md
-    - name: "Manage Device Metadata Experiences"
+    - name: "Managing Device Metadata Experiences"
       href: manage-device-metadata-experiences.md
-    - name: "Submit a Device Metadata Package (Dashboard help)"
-# Auto-expanded node
+    - name: "Submitting a Device Metadata Package"
       items: 
-      - name: "Submit a Device Metadata Package (Dashboard help)"
+      - name: "Submission and validation"
         href: submit-a-device-metadata-package--dashboard-help-.md
       - name: "Create the LocaleInfo.xml Submission File"
         href: create-the-localeinfoxml-submission-file.md
@@ -340,8 +319,7 @@
         href: errors-and-solutions-when-submitting-device-metadata-experiences.md
     - name: "Device Metadata Business Rules"
       href: device-metadata-business-rules.md
-    - name: "Create a mobile broadband experience"
-# Auto-expanded node
+    - name: "Mobile broadband experience"
       items: 
       - name: "Create a mobile broadband experience"
         href: create-a-mobile-broadband-experience.md
