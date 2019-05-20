@@ -455,7 +455,7 @@ f. Reboot the target computer.
 
 Navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
 
-*C:\\Program Files (x86)\\Windows Kits\\10.0\\Tools\\x64\\devcon.exe*
+*C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\devcon.exe*
 Create a folder on the target for the built driver package (for example, *C:\\EchoDriver*). Copy all the files from the built driver described earlier on the host computer and save them to the folder that you created on the target computer.
 
 Locate the .cer certificate on the host system, it is in the same folder on the host computer in the folder that contains the built driver files. On the target computer, right-click the certificate file, and click **Install**, then follow the prompts to install the test certificate.
