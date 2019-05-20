@@ -18,9 +18,9 @@ Keywords in **bold** have corresponding definitions in the glossary.
 
 This content contains three sections:
 
-* Measures Usage: defines what measure are, the types of measures, and how measures evaluate quality.
-* Measure Attributes: defines the various attributes that each measure has.
-* Measures Dictionary: provides a definition for each driver measure, with a description, attribute values, and calculation logic.
+* Using measures: defines what measure are, the types of measures, and how measures evaluate quality.
+* [Driver measure attributes](measure-attributes.md): defines the various attributes that each measure has.
+* Driver measures dictionary: provides a definition for each driver measure, whether **systemic** or **device class**, with a description, attribute values, and calculation logic.
 
 ## Using measures
 
@@ -54,17 +54,16 @@ Microsoft constructs each measure differently, with a unique calculation logic, 
 
 ## Related topics
 
-[Audio measures]()
+[Audio measures](audio-measures.md)
 
-[Bluetooth measures]()
+[Bluetooth measures](bluetooth-measures.md)
 
-[Camera measures]()
+[Camera measures](camera-measures.md)
 
-[Firmware measures]()
+[Firmware measures](firmware-measures.md)
 
-[Graphics measures]()
+[Graphics measures](graphics-measures.md)
 
-[Wi-Fi measures]()
+[Wi-Fi measures](wi-fi-measures.md)
 
-[Driver measures dictionary glossay]()
-
+[Glossary](measures-glossary.md)

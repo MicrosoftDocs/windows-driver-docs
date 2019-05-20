@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 # Driver measure attributes
 
 Microsoft’s set of measures often share attributes in their construction and calculation logic. These attributes are present throughout the measure workflow: from collecting telemetry to the aggregation process to how Microsoft evaluates the measure.
-Each measure definition has a section, Measure Attributes, listing the values of its attributes.
+Each measure definition has a section, *Measure attributes*, listing the values of its attributes.
 
 ## Audience types
 
-There are two types of flighting audiences: the standard audience and the ecosystem audience.
+There are two types of flighting audiences: the **standard audience** and the **ecosystem audience**.
 
 ### Standard audience
 
@@ -35,9 +35,9 @@ Furthermore, when viewing multiple measures, Microsoft knows the failures occurr
 
 Measures either determine the percentage of distinct machines experiencing an error or aggregate instances of all errors observed – where a single machine can have multiple instances counted over the flight.
 
-Measures that calculate a percentage of machines are often monitoring for a binary result. For example, the measure *% of Machines where the Driver Install Process completed successfully* is determining whether a driver installed without error and calculates the percentage of machines that successfully installed the driver.
+Measures that calculate a percentage of machines are often monitoring for a binary result. For example, the measure *% of Machines where the Driver Install Process completed successfully* determines whether a driver installed without error and calculates the percentage of machines that successfully installed the driver.
 
-In contrast, measures that evaluate instances can monitor several returned results for a use case. For example, the measure *Camera Preview Failure Rate* is monitoring several camera events related to using the preview feature. The measure is determining how often and at what stage in the preview process machines encounter an error, calculating the average rate of failure for the feature.
+In contrast, measures that evaluate instances can monitor several returned results for a use case. For example, the measure *Camera Preview Failure Rate* monitors several camera events related to using the preview feature. The measure determines how often and at what stage in the preview process machines encounter an error, calculating the average rate of failure for the feature.
 
 ## Minimum population and minimum instances
 
