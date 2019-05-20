@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-When users watch YouTube videos with Microsoft Edge or Internet Explorer (IE), their graphics components process video stream from the Web and display the rendered video on the screen. This measure monitors how often YouTube videos fail to playback in Microsoft Edge; if the user encounters a playback failure, they will be unable to load and watch the video.
+When users watch YouTube videos with Microsoft Edge or Internet Explorer, their graphics components process video stream from the Web and display the rendered video on the screen. This measure monitors how often YouTube videos fail to playback in Microsoft Edge; if the user encounters a playback failure, they will be unable to load and watch the video.
 
 ## Measure attributes
 

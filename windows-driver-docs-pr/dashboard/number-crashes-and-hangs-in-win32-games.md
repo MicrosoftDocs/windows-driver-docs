@@ -1,5 +1,5 @@
 ---
-title: Number of crashes and hangs in Win32 games, normalized by usage, in a year-long scale
+title: Number of crashes and hangs in Win32 games
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes and hangs over runtime in Win32 games.
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,11 +8,13 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Number of crashes and hangs in Win32 games, normalized by usage, in a year-long scale
+# Number of crashes and hangs in Win32 games
 
 ## Description
 
 When users play Win32 games, their graphics components process visual data and then display the rendered view on the screen. This measure monitors how often Win32 games crash and hang due to the graphics component, in relation to the runtime of those applications on all devices with the driver. If an application crashes, the user can lose their progress and must wait for it to recover before being able to use it again.
+
+This measure is normalized by usage, in a year-long scale.
 
 ## Measure attributes
 

@@ -1,5 +1,5 @@
 ---
-title: Percentage of machines with at least one audio stream initialization failure
+title: Percent of machines with at least one audio stream initialization failure
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have at least one unexpected initialization failure
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Percentage of machines with at least one audio stream initialization failure
+# Percent of machines with at least one audio stream initialization failure
 
 ## Description
 

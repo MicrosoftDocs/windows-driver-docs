@@ -1,5 +1,5 @@
 ---
-title: Number of user mode crashes in top Microsoft apps, normalized by usage, in a year-long scale
+title: Number of user mode crashes in top Microsoft apps
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in top Microsoft apps, caused by the graphics drivers, over total runtime in years 
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,11 +8,13 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Number of user mode crashes in top Microsoft apps, normalized by usage, in a year-long scale
+# Number of user mode crashes in top Microsoft apps
 
 ## Description
 
 When users open and use applications, their graphics components will process the apps’ visual information and display the rendered view on the user’s screen. This measure is monitoring how often top Microsoft apps are crashing, in relation to the runtime of those applications on all devices with the driver. If an application crashes, the user must wait for it to recover before being able to use it again.
+
+This measure is normalized by usage, in a year-long scale.
 
 ## Measure attributes
 

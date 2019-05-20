@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Graphics display health: Percent of devices with display issues when resume from low power state
+# Percent of devices with display issues when resume from low power state
 
 ## Description
 

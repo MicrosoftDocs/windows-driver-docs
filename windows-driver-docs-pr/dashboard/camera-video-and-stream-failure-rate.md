@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Camera video & stream failure rate
+# Camera video and stream failure rate
 
 ## Description
 

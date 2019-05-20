@@ -1,5 +1,5 @@
 ---
-title: Measure attributes
+title: Driver measure attributes
 description: The measures used for driver flighting often share attributes that measure telemetry to the aggregation process to how Microsoft evaluates the measure.
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Measure attributes
+# Driver measure attributes
 
 Microsoft’s set of measures often share attributes in their construction and calculation logic. These attributes are present throughout the measure workflow: from collecting telemetry to the aggregation process to how Microsoft evaluates the measure.
 Each measure definition has a section, Measure Attributes, listing the values of its attributes.

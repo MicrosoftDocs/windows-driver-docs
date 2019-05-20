@@ -1,6 +1,6 @@
 ---
-title: Overview of Microsoft Driver Measure Dictionary
-description: Publishers and authors use the Microsoft Measure Dictionary to better understand the criteria Microsoft uses in evaluating driver quality during the Driver Flighting Process
+title: Microsoft driver measure
+description: Publishers and authors use the descriptions of the Microsoft driver measures to better understand the criteria Microsoft uses in evaluating driver quality during driver flighting
 ms.topic: article
 ms.date: 05/20/2019
 ms.author: paslote
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Overview of the Microsoft driver measure dictionary
+# Overview of the Microsoft driver measures
 
 Microsoft distributes thousands of drivers via the Windows Update service, servicing millions of machines and users each month. Safely delivering the right driver at scale requires evaluating driver quality through real-world verification during distribution.
 

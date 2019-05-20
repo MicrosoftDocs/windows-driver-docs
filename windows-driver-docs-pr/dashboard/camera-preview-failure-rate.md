@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-When attempting to capture an image, the device will preview the image that is about to be captured. If the preview feature fails, the user will be unable to see the camera’s perspective and might not be able to capture an image to save as a photo.
+When attempting to capture an image, the device previews the image that is about to be captured. If the preview feature fails, the user will be unable to see the camera’s perspective and might not be able to capture an image to save as a photo.
 
 ## Measure attributes
 

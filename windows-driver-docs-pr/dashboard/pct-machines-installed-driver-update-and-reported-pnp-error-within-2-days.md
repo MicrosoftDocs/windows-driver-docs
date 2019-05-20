@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Percent of machines that installed a driver update & reported a PnP error code within 2 days of install
+# Percent of machines that installed a driver update and reported a PnP error code within two days of install
 
 ## Description
 

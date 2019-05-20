@@ -1,5 +1,5 @@
 ---
-title: User mode crashes in Microsoft Edge normalized, by usage, in a year-long scale
+title: User mode crashes in Microsoft Edge
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in Microsoft Edge, caused by the graphics drivers, over total runtime in years 
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,11 +8,13 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# User mode crashes in Microsoft Edge normalized, by usage, in a year-long scale
+# User mode crashes in Microsoft Edge
 
 ## Description
 
 When users are browsing the internet with Microsoft Edge, their graphics components will process visual data from the Web and display the rendered view on the user’s screen. This measure is monitoring how often Microsoft Edge crashes, in relation to the Microsoft Edge runtime on all devices with the driver. If Microsoft Edge crashes, the user must wait for the application to recover before being able to use it again.
+
+This measure is normalized, by usage, in a year-long scale.
 
 ## Measure attributes
 

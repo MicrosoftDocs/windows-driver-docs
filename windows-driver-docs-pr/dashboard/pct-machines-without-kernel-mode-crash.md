@@ -1,5 +1,5 @@
 ---
-title: Percentage of machines without a kernel mode crash
+title: Percent of machines without a kernel mode crash
 description: The measure aggregates telemetry from a 14-day sliding window into a percentage of machines that haven’t experienced a kernel mode crash 
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Percentage of machines without a kernel mode crash
+# Percent of machines without a kernel mode crash
 
 ## Description
 

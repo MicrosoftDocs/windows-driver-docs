@@ -1,5 +1,5 @@
 ---
-title: Percentage of machines without a live kernel dump
+title: Percent of machines without a live kernel dump
 description: The measure aggregates telemetry from a 14-day sliding window into a percentage of machines that haven’t experienced a live kernel dump
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Percentage of machines without a live kernel dump
+# Percent of machines without a live kernel dump
 
 ## Description
 
