@@ -8,12 +8,11 @@ ms.localizationpriority: medium
 
 # Serial I/O Request Interface
 
-
-To control a peripheral device that is connected to a port on a serial controller, a client application or peripheral device driver sends I/O requests to the port. A client uses [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff546904) and [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff546883) requests to transmit data to and receive data from a serial port. In addition, Windows defines a set of [serial I/O control](https://msdn.microsoft.com/library/windows/hardware/ff547466) requests (IOCTLs) that a client can use to configure a serial port.
+To control a peripheral device that is connected to a port on a serial controller, a client application or peripheral device driver sends I/O requests to the port. A client uses [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff546904) and [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff546883) requests to transmit data to and receive data from a serial port. In addition, Windows defines a set of serial I/O control requests (IOCTLs) that a client can use to configure a serial port.
 
 The serial **IRP\_MJ\_*XXX*** requests and serial IOCTLs together form a serial I/O request interface that is supported across a range of serial controller devices. This interface is supported by the Serial.sys driver, and by the combination of SerCx2 or SerCx and an extension-based serial controller driver.
 
-SerCx2, SerCx, and Serial.sys support many of the same serial IOCTLs. However, SerCx2, SerCx, and Serial.sys support different subsets of the IOCTLs specified in [Serial Device Control Requests](https://msdn.microsoft.com/library/windows/hardware/ff547466). The following table summarizes the subsets of IOCTLs that are supported by SerCx2, SerCx, and Serial.sys. A **Yes** entry in the table indicates that the serial framework extension or driver supports the corresponding IOCTL, and a **No** entry indicates that it does not.
+SerCx2, SerCx, and Serial.sys support many of the same serial IOCTLs. However, SerCx2, SerCx, and Serial.sys support different subsets of the IOCTLs specified in *Serial Device Control Requests*. The following table summarizes the subsets of IOCTLs that are supported by SerCx2, SerCx, and Serial.sys. A **Yes** entry in the table indicates that the serial framework extension or driver supports the corresponding IOCTL, and a **No** entry indicates that it does not.
 
 <table>
 <colgroup>
@@ -262,26 +261,17 @@ SerCx2, SerCx, and Serial.sys support many of the same serial IOCTLs. However, S
 </tbody>
 </table>
 
- 
 
 **Notes**
 
-1.  SerCx2 may or may not support this IOCTL depending on the implementation of the serial controller driver and the capabilities of the serial controller hardware.
+1. SerCx2 may or may not support this IOCTL depending on the implementation of the serial controller driver and the capabilities of the serial controller hardware.
 
-2.  SerCx2 does not support special characters. SerCx2 always completes an **IOCTL\_SERIAL\_SET\_CHARS** request with a STATUS\_SUCCESS status code, but does not set any special characters or perform any other operation in response to this request. For an **IOCTL\_SERIAL\_GET\_CHARS** request, SerCx2 sets all the character values in the [**SERIAL\_CHARS**](https://msdn.microsoft.com/library/windows/hardware/jj673020) structure to null, and completes the request with a STATUS\_SUCCESS status code.
+2. SerCx2 does not support special characters. SerCx2 always completes an **IOCTL\_SERIAL\_SET\_CHARS** request with a STATUS\_SUCCESS status code, but does not set any special characters or perform any other operation in response to this request. For an **IOCTL\_SERIAL\_GET\_CHARS** request, SerCx2 sets all the character values in the [**SERIAL\_CHARS**](https://msdn.microsoft.com/library/windows/hardware/jj673020) structure to null, and completes the request with a STATUS\_SUCCESS status code.
 
-3.  SerCx2 and SerCx support only subsets of the flags defined for the **FlowReplace** and **ControlHandShake** members of the **SERIAL\_HANDFLOW** structure. Serial.sys supports all of these flags. For more information, see [**SERIAL\_HANDFLOW**](https://msdn.microsoft.com/library/windows/hardware/jj680685).
+3. SerCx2 and SerCx support only subsets of the flags defined for the **FlowReplace** and **ControlHandShake** members of the **SERIAL\_HANDFLOW** structure. Serial.sys supports all of these flags. For more information, see [**SERIAL\_HANDFLOW**](https://msdn.microsoft.com/library/windows/hardware/jj680685).
 
-4.  The **IOCTL\_SERIAL\_GET\_MODEM\_CONTROL** and **IOCTL\_SERIAL\_SET\_MODEM\_CONTROL** requests are used primarily for hardware testing. No standard register layout is defined for the modem control operations. Peripheral drivers that use modem control IOCTLs risk making themselves dependent on the hardware features of a particular serial controller.
+4. The **IOCTL\_SERIAL\_GET\_MODEM\_CONTROL** and **IOCTL\_SERIAL\_SET\_MODEM\_CONTROL** requests are used primarily for hardware testing. No standard register layout is defined for the modem control operations. Peripheral drivers that use modem control IOCTLs risk making themselves dependent on the hardware features of a particular serial controller.
 
-5.  The Serial.sys driver always completes an **IOCTL\_SERIAL\_RESET\_DEVICE** request with STATUS\_SUCCESS, but performs no operation in response to this request. SerCx2 and SerCx do not support **IOCTL\_SERIAL\_RESET\_DEVICE** requests and always complete these requests with STATUS\_NOT\_IMPLEMENTED.
+5. The Serial.sys driver always completes an **IOCTL\_SERIAL\_RESET\_DEVICE** request with STATUS\_SUCCESS, but performs no operation in response to this request. SerCx2 and SerCx do not support **IOCTL\_SERIAL\_RESET\_DEVICE** requests and always complete these requests with STATUS\_NOT\_IMPLEMENTED.
 
-For more information about **IOCTL\_SERIAL\_*XXX*** requests, see [Serial Device Control Requests](https://msdn.microsoft.com/library/windows/hardware/ff547466). For more information about read and write requests for serial controllers, see [Serial Major I/O Requests](https://msdn.microsoft.com/library/windows/hardware/ff547484).
-
- 
-
- 
-
-
-
-
+For more information about **IOCTL\_SERIAL\_*XXX*** requests and read and write requests for serial controllers, see the [ntddser.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddser/) header.
