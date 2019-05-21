@@ -1310,12 +1310,6 @@
       href: wia-ips-alarm.md
     - name: "WIA_IPS_AUTO_CROP"
       href: wia-ips-auto-crop.md
-    - name: "WIA_IPS_PATCH_CODE_SEARCH_TIMEOUT"
-      href: wia-ips-patch-code-search-timeout.md
-    - name: "WIA_IPS_SUPPORTED_PATCH_CODE_TYPES"
-      href: wia-ips-supported-patch-code-types.md
-    - name: "WIA_IPS_ENABLED_PATCH_CODE_TYPES"
-      href: wia-ips-enabled-patch-code-types.md
     - name: "WIA_IPS_AUTO_DESKEW"
       href: wia-ips-auto-deskew.md
     - name: "WIA_IPS_BARCODE_READER"
@@ -1326,6 +1320,8 @@
       href: wia-ips-barcode-search-timeout.md
     - name: "WIA_IPS_BLANK_PAGES"
       href: wia-ips-blank-pages.md
+    - name: "WIA_IPS_BLANK_PAGES_SENSITIVITY"
+      href: wia-ips-blank-pages-sensitivity.md
     - name: "WIA_IPS_BRIGHTNESS"
       href: wia-ips-brightness.md
     - name: "WIA_IPS_COLOR_DROP"
@@ -1334,6 +1330,8 @@
       href: wia-ips-color-drop-blue.md
     - name: "WIA_IPS_COLOR_DROP_GREEN"
       href: wia-ips-color-drop-green.md
+    - name: "WIA_IPS_COLOR_DROP_MULTI"
+      href: wia-ips-color-drop-multi.md
     - name: "WIA_IPS_COLOR_DROP_RED"
       href: wia-ips-color-drop-red.md
     - name: "WIA_IPS_CONTRAST"
@@ -1350,6 +1348,8 @@
       href: wia-ips-document-handling-select.md
     - name: "WIA_IPS_ENABLED_BARCODE_TYPES"
       href: wia-ips-enabled-barcode-types.md
+    - name: "WIA_IPS_ENABLED_PATCH_CODE_TYPES"
+      href: wia-ips-enabled-patch-code-types.md
     - name: "WIA_IPS_FEEDER_CONTROL"
       href: wia-ips-feeder-control.md
     - name: "WIA_IPS_FILM_SCAN_MODE"
@@ -1386,6 +1386,8 @@
       href: wia-ips-mirror.md
     - name: "WIA_IPS_MULTI_FEED"
       href: wia-ips-multi-feed.md
+    - name: "WIA_IPS_MULTI_FEED_DETECT_METHOD"
+      href: wia-ips-multi-feed-detect-method.md
     - name: "WIA_IPS_MULTI_FEED_SENSITIVITY"
       href: wia-ips-multi-feed-sensitivity.md
     - name: "WIA_IPS_OPTICAL_XRES"
@@ -1416,6 +1418,8 @@
       href: wia-ips-patch-code-reader.md
     - name: "WIA_IPS_PATCH_CODE_SEARCH_DIRECTION"
       href: wia-ips-patch-code-search-direction.md
+    - name: "WIA_IPS_PATCH_CODE_SEARCH_TIMEOUT"
+      href: wia-ips-patch-code-search-timeout.md
     - name: "WIA_IPS_PHOTOMETRIC_INTERP"
       href: wia-ips-photometric-interp.md
     - name: "WIA_IPS_PREVIEW"
@@ -1428,6 +1432,8 @@
       href: wia-ips-printer-endorser-character-rotation.md
     - name: "WIA_IPS_PRINTER_ENDORSER_COUNTER"
       href: wia-ips-printer-endorser-counter.md
+    - name: "WIA_IPS_PRINTER_ENDORSER_COUNTER_DIGITS"
+      href: wia-ips-printer-endorser-counter-digits.md
     - name: "WIA_IPS_PRINTER_ENDORSER_FONT_TYPE"
       href: wia-ips-printer-endorser-font-type.md
     - name: "WIA_IPS_PRINTER_ENDORSER_GRAPHICS"
@@ -1488,6 +1494,8 @@
       href: wia-ips-show-preview-control.md
     - name: "WIA_IPS_SUPPORTED_BARCODE_TYPES"
       href: wia-ips-supported-barcode-types.md
+    - name: "WIA_IPS_SUPPORTED_PATCH_CODE_TYPES"
+      href: wia-ips-supported-patch-code-types.md
     - name: "WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION"
       href: wia-ips-supports-child-item-creation.md
     - name: "WIA_IPS_THRESHOLD"
