@@ -643,7 +643,7 @@ VOID  GetFirmwareVersion(
 }  
 ```
 
-## How to send a control transfer for GET\_STATUS - UMDF
+##<a name="how-to-send-a-control-transfer-for-get_status---umdf"></a>How to send a control transfer for GET\_STATUS - UMDF
 
 
 This procedure shows how a client driver can send a control transfer for a GET\_STATUS command. The recipient of the request is the device and the request obtains information in bits D1-D0. For more information, see Figure 9-4 in the USB specification.
