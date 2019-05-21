@@ -98,7 +98,7 @@ Unsolicited events contain an MBIM_PCO_VALUE and are sent when a new PCO value h
 | MBIMPcoTypeComplete | 0 | Specifies that the complete PCO structure will be passed up as received from the network and the header realistically reflects the protocol in octet 3 of the PCO structure, defined in the 3GPP TS24.008 spec. |
 | MBIMPcoTypePartial | 1 | Specifies that the modem will only be passing up a subset of PCO structures that it received from the network. The header matches the PCO structure defined in the 3GPP TS24.008 spec, but the “Configuration protocol” of octet 3 may not be valid. |
 
-##### MBIM_PCO_VALUE
+##### <a name="MBIM_PCO_TYPE"></a>MBIM-PCO-TYPE
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
