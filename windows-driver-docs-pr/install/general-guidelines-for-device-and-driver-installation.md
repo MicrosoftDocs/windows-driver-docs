@@ -18,7 +18,7 @@ To provide the best possible user experience, use the following guidelines to de
 
 -   Do not automatically restart the system or require the user to do so, unless it is absolutely necessary.
 
--   Always use [INF files](inf-files.md) for device installation. Make sure that all INF files are well formed and use correct syntax.
+-   Always use [INF files](overview-of-inf-files.md) for device installation. Make sure that all INF files are well formed and use correct syntax.
 
 -   Leave your INF files on the system after installation; do not delete them. The INF file is used not only when the device or driver is first installed, but also when the user requests a driver update through Device Manager.
 

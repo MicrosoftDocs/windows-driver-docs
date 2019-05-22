@@ -13,9 +13,9 @@ This topic describes the standardized INF keywords for the single root I/O virtu
 
 The SR-IOV INF keywords are described in the following sections:
 
-[Standardized INF Keywords for the Enabling or Disabling SR-IOV Support](#sr-iov)
+[Standardized INF Keywords for the Enabling or Disabling SR-IOV Support](#standardized-inf-keywords-for-enabling-or-disabling-sr-iov-support)
 
-[Standardized INF Keywords for Configuration of the Default NIC Switch](#nic-switch)
+[Standardized INF Keywords for Configuration of the Default NIC Switch](#standardized-inf-keywords-for-configuration-of-the-default-nic-switch)
 
 ## Standardized INF Keywords for Enabling or Disabling SR-IOV Support
 

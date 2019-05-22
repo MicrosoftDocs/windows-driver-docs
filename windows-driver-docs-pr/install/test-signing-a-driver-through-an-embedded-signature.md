@@ -28,7 +28,7 @@ As with [catalog files](catalog-files.md), [**SignTool**](https://msdn.microsoft
 To test-sign the *toaster.sys* file, run the following command line:
 
 ```cpp
-Signtool sign /v /s PrivateCertStore /n Contoso.com(Test) /t http://timestamp.verisign.com/scripts/timestamp.dll amd64\toaster.sys
+Signtool sign /v /fd sha256 /s PrivateCertStore /n Contoso.com(Test) /t http://timestamp.verisign.com/scripts/timestamp.dll amd64\toaster.sys
 ```
 
 Where:
@@ -36,6 +36,8 @@ Where:
 -   The **sign** command configures SignTool to sign the specified catalog file, tstamd64.cat.
 
 -   The **/v** option enables verbose operations, in which SignTool displays successful execution and warning messages.
+
+-   The **/fd** option specifies the file digest algorithm to use for creating file signatures. The default is SHA1.
 
 -   The **/s** option specifies the name of the certificate store (*PrivateCertStore)* that contains the test certificate.
 

@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 
-The WFP_INVALID_OPERATION bug check has a value of 0x000001D3. 
-
-A Windows Filtering Platform callout performed an invalid operation.
+The WFP_INVALID_OPERATION bug check has a value of 0x000001D3. This indicates that a Windows Filtering Platform callout performed an invalid operation.
 
 ## WFP\_INVALID\_OPERATION Parameters
 
@@ -42,7 +40,9 @@ Parameter | Description
 
   4 - Reserved.
 
- 
+
+## Resolution
+The [**!analyze**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
  
 

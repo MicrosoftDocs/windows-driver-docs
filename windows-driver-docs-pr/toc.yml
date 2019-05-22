@@ -3,8 +3,10 @@
 - name: "What's new in driver development"
   href: what-s-new-in-driver-development.md
 - name: "Download the Windows Driver Kit (WDK)"
-  href: download-the-wdk.md
+# Auto-expanded node
   items: 
+  - name: "Download the Windows Driver Kit (WDK)"
+    href: download-the-wdk.md
   - name: "Installing preview versions of the WDK"
     href: installing-preview-versions-wdk.md
   - name: "Other WDK downloads"
@@ -28,8 +30,10 @@
 - name: "Windows Store Device Apps"
   href: devapps/index.md
 - name: "Device and Driver Technologies"
-  href: device-and-driver-technologies.md
+# Auto-expanded node
   items: 
+  - name: "Device and Driver Technologies"
+    href: device-and-driver-technologies.md
   - name: "3D print devices"
     href: 3dprint/index.md
   - name: "ACPI"

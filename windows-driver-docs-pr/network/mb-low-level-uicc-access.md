@@ -430,9 +430,9 @@ The MBIM_SET_MS_UICC_RESET structure contains the passthrough action specified b
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
-| 0 | 4 | PassThroughAction | MBIM_MS_UICC_PASSTHROUGH_ACTION | For more info, see [MBIM_MS_UICC_PASSTHROUGH_ACTION](#mbimmsuiccpassthroughaction). |
+| 0 | 4 | PassThroughAction | MBIM_MS_UICC_PASSTHROUGH_ACTION | For more info, see [MBIM_MS_UICC_PASSTHROUGH_ACTION](#mbim_ms_uicc_passthrough_action). |
 
-#### MBIM_MS_UICC_PASSTHROUGH_ACTION
+#### <a name=>"MBIM_MS_UICC_PASSTHROUGH_ACTION"</a> MBIM_MS_UICC_PASSTHROUGH_ACTION
 
 The MBIM_MS_UICC_PASSTHROUGH_ACTION enumeration defines the types of passthrough actions the host can specify to the MBIM function.
 
@@ -449,9 +449,9 @@ The MBIM_MS_UICC_RESET_INFO structure contains the passthrough status of the MBI
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
-| 0 | 4 | PassThroughStatus | MBIM_MS_UICC_PASSTHROUGH_STATUS | For more info, see [MBIM_MS_UICC_PASSTHROUGH_STATUS](#mbimmsuiccpassthroughstatus). |
+| 0 | 4 | PassThroughStatus | MBIM_MS_UICC_PASSTHROUGH_STATUS | For more info, see [MBIM_MS_UICC_PASSTHROUGH_STATUS](#mbim_ms_uicc_passthrough_status). |
 
-#### MBIM_MS_UICC_PASSTHROUGH_STATUS
+#### <a name=>"MBIM_MS_UICC_PASSTHROUGH_STATUS"</a> MBIM_MS_UICC_PASSTHROUGH_STATUS
 
 The MBIM_MS_UICC_PASSTHROUGH_STATUS enumeration defines the types of passthrough status the MBIM function specifies to the host.
 

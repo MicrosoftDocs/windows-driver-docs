@@ -60,7 +60,7 @@ The miniport driver follows these steps when it issues the [**NDIS\_STATUS\_QOS\
 
     **Note**   Setting the **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags is optional. NDIS always assumes that the members of the [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) are current even if they have not changed from the previous [**NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE**](https://msdn.microsoft.com/library/windows/hardware/hh439810) status indication.
 
-    For more information on how to set the **Flags** member, see [Guidelines for Setting the **Flags** Member](#flags).
+    For more information on how to set the **Flags** member, see [Guidelines for Setting the **Flags** Member](#guidelines-for-setting-the-flags-member).
 
 3.  The miniport driver initializes an [**NDIS\_QOS\_CLASSIFICATION\_ELEMENT**](https://msdn.microsoft.com/library/windows/hardware/hh451631) structure for each traffic classification from the operational NDIS QoS parameters. The driver adds these elements at the end of the [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure in the buffer.
 

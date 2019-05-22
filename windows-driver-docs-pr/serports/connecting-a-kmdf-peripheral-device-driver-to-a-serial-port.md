@@ -106,7 +106,7 @@ if (!NT_SUCCESS(status))
 }
 ```
 
-In the preceding code example, the **DECLARE\_UNICODE\_STRING\_SIZE** macro creates the declaration of an initialized [**UNICODE\_STRING**](https://msdn.microsoft.com/library/windows/hardware/ff564879) variable named `szDeviceName` that has a buffer large enough to contain a device path name in the format used by the resource hub. This macro is defined in the Ntdef.h header file. The **RESOURCE\_HUB\_PATH\_SIZE** constant specifies the number of bytes in the device path name. The **RESOURCE\_HUB\_CREATE\_PATH\_FROM\_ID** macro generates the device path name from the connection ID. **RESOURCE\_HUB\_PATH\_SIZE** and **RESOURCE\_HUB\_CREATE\_PATH\_FROM\_ID** are defined in the Reshub.h header file.
+In the preceding code example, the **DECLARE\_UNICODE\_STRING\_SIZE** macro creates the declaration of an initialized **UNICODE\_STRING** variable named `szDeviceName` that has a buffer large enough to contain a device path name in the format used by the resource hub. This macro is defined in the Ntdef.h header file. The **RESOURCE\_HUB\_PATH\_SIZE** constant specifies the number of bytes in the device path name. The **RESOURCE\_HUB\_CREATE\_PATH\_FROM\_ID** macro generates the device path name from the connection ID. **RESOURCE\_HUB\_PATH\_SIZE** and **RESOURCE\_HUB\_CREATE\_PATH\_FROM\_ID** are defined in the Reshub.h header file.
 
 The following code example uses the device path name to open a file handle (named `SerialIoTarget`) to the serially connected peripheral device.
 

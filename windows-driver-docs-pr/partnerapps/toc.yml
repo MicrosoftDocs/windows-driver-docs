@@ -1,6 +1,8 @@
 - name: "Partner app development"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "Partner app development"
+    href: index.md
   - name: "Background tasks and custom triggers"
     href: background-tasks-and-oem-triggers.md
   - name: "Kiosk apps for assigned access: Best practices"

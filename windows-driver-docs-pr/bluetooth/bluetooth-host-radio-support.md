@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 The following list provides a Bluetooth Radio Support Q&A:
 
 - [Bluetooth host controllers supported in Windows](#bluetooth-host-controllers-supported-in-windows)
-- [Forcing the Bluetooth stack to load if Windows cannot match the device ID (Windows Vista)](#forcing-the-bluetooth-stack-to-load-if-windows-cannot-match-the-device-id-(windows-vista))
+- [Forcing the Bluetooth stack to load if Windows cannot match the device ID (Windows Vista)](#forcing-the-bluetooth-stack-to-load-if-windows-cannot-match-the-device-id-windows-vista)
 - [How to ensure in-box support for Bluetooth radios in Windows Vista](#how-to-ensure-in-box-support-for-bluetooth-radios-in-windows-vista)
 - [Whether third-party INF files should use the Microsoft-defined class GUID](#whether-third-party-inf-files-should-use-the-microsoft-defined-class-guid)
 - [Why the Control Panel Bluetooth application is missing in Windows 7](#why-the-control-panel-bluetooth-application-is-missing-in-windows-7)
@@ -21,7 +21,7 @@ The following list provides a Bluetooth Radio Support Q&A:
 - [Windows support for vendor-supplied profiles](#windows-support-for-vendor-supplied-profiles)
 - [Bluetooth profiles and protocols that are enabled by default](#bluetooth-profiles-and-protocols-that-are-enabled-by-default)
 - [How Group Policy can block Bluetooth radio installation](#how-group-policy-can-block-bluetooth-radio-installation)
-- [How to change the Device ID Profile record published by Windows 8 and Windows 8.1](#how-to-change-the-device-id-profile-record-published-by-windows-8-and-windows-8.1)
+- [How to change the Device ID Profile record published by Windows 8 and Windows 8.1](#how-to-change-the-device-id-profile-record-published-by-windows-8-and-windows-81)
 
 ## Bluetooth host controllers supported in Windows
 

@@ -33,10 +33,6 @@ You need to write a USB Type-C connector driver in these scenarios:
 * KMDF version 1.15
 * UMDF version 2.15
 
-### Last updated
-
-* November 2015
-
 ## Important APIs
 
 * [USB Type-C connector driver programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
@@ -62,7 +58,7 @@ To enable a USB Type-C connector on a system, you must write the client driver.
 
 * Decide whether your client driver will support advanced features of the USB Type-C connector and the [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310).
 
-    This support enables you to build Windows devices with USB Type-C connectors, USB Type-C docks and accessories, and USB Type-C chargers. The client driver reports connector events that allow the operating system to implement policies around USB and power consumption in the system.
+  This support enables you to build Windows devices with USB Type-C connectors, USB Type-C docks and accessories, and USB Type-C chargers. The client driver reports connector events that allow the operating system to implement policies around USB and power consumption in the system.
 
 * Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) on your target computer or Windows 10 Mobile with a USB Type-C connector.
 * Familiarize yourself with UCM and how it interacts with other Windows drivers. See [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md).
@@ -72,25 +68,25 @@ To enable a USB Type-C connector on a system, you must write the client driver.
 
 The UCM class extension keeps the operating system informed about the changes in data and power role, charging levels, and the negotiated PD contract. While the client driver interacts with the hardware, it must notify the class extension when those changes occur. The class extension provides a set of methods that the client driver can use to send the notifications (discussed in this topic). Here are the services provided:
 
-### **Data role configuration**
+### Data role configuration
 
 On USB Type-C systems, the data role (host or function) depends on the status of the CC pins of the connector. Your client driver reads the CC line (see [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md)) status from your port controller to determine whether the port has resolved to an Upstream Facing Port (UFP) or Downstream Facing Port (UFP). It reports that information to the class extension so that it can report the current role to USB role-switch drivers.
 
-> [!NOTE]
+>[!NOTE]
 > USB role-switch drivers are used on Windows 10 Mobile systems. On Windows 10 for desktop editions systems, communication between the class extension and the role-switch drivers is optional. Such systems might not use a dual-role controller, in which case, the role-switch drivers are not used.
 
-### **Power role and charging**
+### Power role and charging
 
 Your client driver reads the USB Type-C current advertisement, or negotiates a PD power contract with the partner connector.
 
 * On a Windows 10 Mobile system, the decision to choose the appropriate charger is software-assisted. The client driver reports the contract information to the class extension so that it can send the charging levels to the charging arbitration driver (CAD.sys). CAD selects the current level to use and forwards the charging level information to the battery subsystem.
 * On a Windows 10 for desktop editions system, the appropriate charger is selected by the hardware. The client driver may choose to get that information and forward it to the class extension. Alternately, that logic may be implemented by a different driver.
 
-### **Data and power role changes**
+### Data and power role changes
 
 After a PD contract has been negotiated, data roles and power roles might change. That change might be initiated by your client driver or the partner connector. The client driver reports that information to the class extension, so that it may re-configure things accordingly.
 
-### **Data and/or power role update**
+### Data and/or power role update
 
 The operating system might decide that the current data role is not correct. In that case the class extension calls your driver's callback function to perform necessary role swap operations.
 
@@ -353,7 +349,7 @@ The client driver performs role swap operations by using hardware interfaces.
     }  
     ```
 
-> [!NOTE]
+>[!NOTE]
 >The client driver can call [**UcmConnectorDataDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187910) and [**UcmConnectorPowerDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187914) asynchronously, that is not from the callback thread. In a typical implementation, the class extension invokes the callback functions causing the client driver to initiate a hardware transaction to send the message. When the transaction completes, the hardware notifies the driver. The driver calls those methods to notify the class extension.
 
 ## 8. Report the partner connector detach event

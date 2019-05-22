@@ -23,8 +23,8 @@ Understanding the lifetimes of the request object, the memory object, and the un
 
 Consider the following usage scenarios:
 
--   Scenario 1: [Driver receives an I/O request from KMDF, handles it, and completes it](#scenario-1-driver-receives-an-i-o-request-from-kmdf-handles-it-and-completes-it).
--   Scenario 2: [Driver receives an I/O request from KMDF and forwards it to an I/O target](#scenario-2-driver-receives-an-i-o-request-from-kmdf-and-forwards-it-to-an-i-o-target).
+-   Scenario 1: [Driver receives an I/O request from KMDF, handles it, and completes it](#scenario-1-driver-receives-an-io-request-from-kmdf-handles-it-and-completes-it).
+-   Scenario 2: [Driver receives an I/O request from KMDF and forwards it to an I/O target](#scenario-2-driver-receives-an-io-request-from-kmdf-and-forwards-it-to-an-io-target).
 -   Scenario 3: [Driver issues an I/O request that uses an existing memory object](#scenario-3-driver-issues-an-io-request-that-uses-an-existing-memory-object).
 -   Scenario 4: [Driver issues an I/O request that uses a new memory object.](#scenario-4-driver-issues-an-io-request-that-uses-a-new-memory-object)
 -   Scenario 5: [Driver reuses a request object that it created.](#scenario-5-driver-reuses-a-request-object-that-it-created)

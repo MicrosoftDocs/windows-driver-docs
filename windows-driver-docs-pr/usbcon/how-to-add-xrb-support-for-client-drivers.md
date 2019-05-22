@@ -7,22 +7,13 @@ ms.localizationpriority: medium
 
 # Allocating and Building URBs
 
-
-This topic describes how a USB client driver can use Windows Driver Model (WDM) driver routines to allocate and format an URB before sending the request to the Microsoft-provided USB driver stack.
+A USB client driver can use Windows Driver Model (WDM) driver routines to allocate and format an URB before sending the request to the Microsoft-provided USB driver stack.
 
 The client driver uses an URB to package all information required by the lower drivers in the USB driver stack to process the request. In the Windows operating system, an URB is described in a [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure.
 
 Microsoft provides a library of [Routines for USB Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#client). By using those routines, USB client drivers can build URB requests for certain specified operations and forward them down the USB stack. If you prefer, you can design your client driver to call the library routines for the supported operations rather than building your own URB requests.
 
-This topic contains the following sections:
-
--   [URB Allocation in Windows 7 and Earlier](#urb-allocation-in-windows-7-and-earlier)
--   [URB Allocation in Windows 8](#urb-allocation-in-windows-8)
--   [URB Routine Migration](#urb-routine-migration)
--   [Related topics](#related-topics)
-
 ## URB Allocation in Windows 7 and Earlier
-
 
 To send a USB request by using routines included in Windows Driver Kit (WDK) for Windows 7 and earlier versions of Windows, a client driver typically allocates and fills a [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure, associates the **URB** structure with a new IRP, and sends the IRP to the USB driver stack.
 
@@ -36,7 +27,6 @@ When a USB request is complete, the client driver must release the [**URB**](htt
 
 ## URB Allocation in Windows 8
 
-
 WDK for Windows 8 provides a new static library, Usbdex.lib, that exports routines for allocating, formatting, and releasing URBs. In addition, there is a new way of associating an URB with an IRP. The new routines can be called by a client driver targeting Windows Vista and later versions of Windows.
 
 A client driver running on Windows Vista and later must use the new routines so that the underlying USB driver stack can utilize certain performance and reliability improvements. Those improvements apply to the new USB driver stack introduced in Windows 8 to support USB 3.0 devices and host controllers. For USB 2.0 host controllers, Windows loads an earlier version of the driver stack that does not support the improvements. Regardless of the version of the underlying driver stack or the protocol version supported by the host controller, you must always call the new URB routines.
@@ -45,12 +35,12 @@ Before you call any of the new routines, make sure that you have a USBD handle f
 
 The following routines are available with the WDK for Windows 8. These routines are defined in Usbdlib.h.
 
--   [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250)
--   [**USBD\_IsochUrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406231)
--   [**USBD\_SelectConfigUrbAllocateAndBuild**](https://msdn.microsoft.com/library/windows/hardware/hh406243)
--   [**USBD\_SelectInterfaceUrbAllocateAndBuild**](https://msdn.microsoft.com/library/windows/hardware/hh406245)
--   [**USBD\_UrbFree**](https://msdn.microsoft.com/library/windows/hardware/hh406252)
--   [**USBD\_AssignUrbToIoStackLocation**](https://msdn.microsoft.com/library/windows/hardware/hh406228)
+* [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250)
+* [**USBD\_IsochUrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406231)
+* [**USBD\_SelectConfigUrbAllocateAndBuild**](https://msdn.microsoft.com/library/windows/hardware/hh406243)
+* [**USBD\_SelectInterfaceUrbAllocateAndBuild**](https://msdn.microsoft.com/library/windows/hardware/hh406245)
+* [**USBD\_UrbFree**](https://msdn.microsoft.com/library/windows/hardware/hh406252)
+* [**USBD\_AssignUrbToIoStackLocation**](https://msdn.microsoft.com/library/windows/hardware/hh406228)
 
 The allocation routines in the preceding list return a pointer to a new [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure, which is allocated by the USB driver stack. Depending on the version of the USB driver stack loaded by Windows, the **URB** structure can be paired with an opaque *URB context*. An URB context is a block of information about the URB. You cannot view the contents of the URB header; the information is intended to be used internally by the USB driver stack to improve URB tracking and processing. The URB context is *only* used by the USB driver stack for Windows 8.
 If URB context is available, the USB driver stack uses it to make URB processing safer and more efficient. For example, the USB driver stack must make sure that the client driver does not submit an URB and then attempt to reuse that same URB before the first request has completed. To detect that kind of error, the USB driver stack stores state information in the URB context. Without the state information, the USB driver stack would have to compare the incoming URB with all URBs currently in progress. The state information is also used by the USB driver stack when the client driver attempts to release the URB. Before releasing the URB, the USB driver stack verifies the state to make sure that the URB is not pending.
@@ -58,7 +48,6 @@ If URB context is available, the USB driver stack uses it to make URB processing
 URB context provides an official mechanism for storing extra URB information. Using URB context is preferable to allocating extra memory as needed or storing extra information in reserved members of the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure. The USB driver stack allocates URBs and their associated URB context in nonpaged pool, so that in the future if larger URB context are needed, the only required adjustment will be the size of a pool allocation.
 
 ## URB Routine Migration
-
 
 The following table summarizes the changes in URB routines.
 
@@ -111,10 +100,6 @@ The following table summarizes the changes in URB routines.
 </tbody>
 </table>
 
- 
-
 ## Related topics
+
 [Sending Requests to a USB Device](communicating-with-a-usb-device.md)  
-
-
-

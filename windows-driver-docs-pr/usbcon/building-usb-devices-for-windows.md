@@ -36,10 +36,6 @@ This document defines and describes the implementation of version 2.0 of the Mic
 [Loading Winusb.sys as the function driver by using Microsoft OS descriptors](automatic-installation-of-winusb.md)  
 The IHV can define certain Microsoft operating system (OS) feature descriptors that report the compatible ID as "WINUSB". Those descriptors allow Windows to load Winusb.sys as the device's function driver without a custom INF file. For examples about how to define the compatible ID, see the example section of the Extended Compat ID OS Feature Descriptor Specification. The specification is included in the download for [Microsoft OS 1.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=617519).
 
-## Setting a container ID for an external device by using Microsoft OS descriptors  
-
-See [Setting a container ID](#setting-a-container-id).
-
 ## Setting a container ID
 
 [Container IDs for USB Devices](https://msdn.microsoft.com/library/windows/hardware/ff540084)  

@@ -7,7 +7,7 @@ keywords:
 - NDIS WDK , versions in network drivers
 - backward compatibility WDK networking
 - compatibility WDK networking
-ms.date: 04/20/2017
+ms.date: 05/03/2019
 ms.localizationpriority: medium
 ---
 
@@ -69,3 +69,5 @@ Windows operating system, Microsoft Windows Driver Kit (WDK), and Driver Develop
 |   |   | For more information about NDIS 6.81 features, see [Introduction to NDIS 6.81](introduction-to-ndis-6-81.md). |
 | Windows 10, version 1809 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.82 | X | X | X |
 |   |   | For more information about NDIS 6.82 features, see [Introduction to NDIS 6.82](introduction-to-ndis-6-82.md). |
+| Windows 10, version 1903 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.83 | X | X | X |
+|   |   | For more information about NDIS 6.83 features, see [Introduction to NDIS 6.83](introduction-to-ndis-6-83.md). |

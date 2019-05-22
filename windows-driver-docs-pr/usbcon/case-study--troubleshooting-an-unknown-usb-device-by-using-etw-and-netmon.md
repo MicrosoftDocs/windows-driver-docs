@@ -11,15 +11,6 @@ This topic provides an example of how to use USB ETW and Netmon to troubleshoot 
 
 For this example, we plugged in a device and it appeared as an unknown device in Device Manager and other parts of the user interface (UI). The Hardware ID was USB\\UNKNOWN. To diagnose further, we unplugged the device, began an ETW trace, and plugged in the device again. After the device appeared as an unknown device, we stopped the trace.
 
-* [About the Unknown Device Problem](#about-the-unknown-device-problem)
-* [Starting the Event Trace Analysis](#starting-the-event-trace-analysis)  
-* [USB Device Summary Events](#usb-device-summary-events)
-* [Event Description and Data Payload](#event-description-and-data-payload)
-* [USB Netmon Filters](#usb-netmon-filters)
-* [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes)
-* [Reading Backwards from Problem Events](#reading-backwards-from-problem-events)
-* [Related topics](#related-topics)
-
 ## About the Unknown Device Problem
 
 To debug an unknown USB device problem, it helps to understand what the USB driver stack does to enumerate a device when a user plugs it into the system. For information on USB enumeration, see the blog post titled [How does USB stack enumerate a device?](https://go.microsoft.com/fwlink/p/?linkid=617517)
@@ -93,20 +84,19 @@ The USB hub driver uses the **fid\_USBHUB\_Hub** structure to describe a USB hub
 
 The hub structure is very similar to two other structures that commonly appear in USB ETW events:**fid\_USBHUB\_Device** and **fid\_USBPORT\_Device**. The following important fields are common to all three structures:
 
-**fid\_idVendor**  
-The USB Vendor ID (VID) of the device.
+|Field|Description|
+|----|----|
+|**fid_idVendor**|The USB Vendor ID (VID) of the device|
+|**fid_idProduct**|The USB Product ID (PID) of the device|
+|**fid_PortPath**|The list of one-based hub port numbers through which a USB device is attached. The number of port numbers in the list is contained in the **PortPathDepth** field. For the root hub devices, this list is all zeros. For a USB device that is connected directly to a root hub port, the value in PortPath\[0\] is the root hub port number of the port to which the device is attached.|
 
-**fid\_idProduct**  
-The USB Product ID (PID) of the device.
+For a USB device that is connected through one or more additional USB hubs, the list of hub port numbers starts with the root hub port and continues with the additional hubs (in the order of distance from the root hub). Ignore any zeros. For example:
 
-**fid\_PortPath**  
-The list of one-based hub port numbers through which a USB device is attached. The number of port numbers in the list is contained in the **PortPathDepth** field. For the root hub devices, this list is all zeros. For a USB device that is connected directly to a root hub port, the value in PortPath\[0\] is the root hub port number of the port to which the device is attached. For a USB device that is connected through one or more additional USB hubs, the list of hub port numbers starts with the root hub port and continues with the additional hubs (in the order of distance from the root hub). Ignore any zeros. For example:
-
-| Sample Value         | Description                                                                                                                       |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| \[0, 0, 0, 0, 0, 0\] | The event refers to a root hub (a port on the PC, directly controlled by a USB host controller).                                  |
-| \[3, 0, 0, 0, 0, 0\] | The event refers to a hub or a device that is plugged into a root hub's port number 3.                                            |
-| \[3, 1, 0, 0, 0, 0\] | A hub is plugged into a root hub's port 3. The event refers to a hub or a device that is plugged into this external hub's port 1. |
+| Sample Value|Description|
+|----|----|
+|[0, 0, 0, 0, 0, 0]|The event refers to a root hub (a port on the PC, directly controlled by a USB host controller).|
+|[3, 0, 0, 0, 0, 0]|The event refers to a hub or a device that is plugged into a root hub's port number 3.|
+|[3, 1, 0, 0, 0, 0]|A hub is plugged into a root hub's port 3. The event refers to a hub or a device that is plugged into this external hub's port 1.|
 
 You should monitor the port paths of any devices of interest. When a device is being enumerated, the VID and PID are unknown and logged as 0. The VID and PID do not appear during some low-level device requests such as reset and suspend. These requests are sent to the hub that the device is plugged into.
 
@@ -118,16 +108,16 @@ You can examine each event in a log in chronological order, if you have the time
 
 ### The USB Error Filter
 
-To activate the USB error filter in Netmon, click **Filter -&gt; Display Filter -&gt; Load Filter -&gt; Standard Filters -&gt; USB -&gt; USB Hub Errors**, and then click **Apply** in the **Display Filter** pane.
+To activate the USB error filter in Netmon, click **Filter -> Display Filter -> Load Filter -> Standard Filters -> USB -> USB Hub Errors**, and then click **Apply** in the **Display Filter** pane.
 
 The USB error filter narrows the list of events to only those that meet the criteria shown in the following table.
 
-| Filter text                                                                       | Description                                                                                                                                               |
-|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| (USBPort\_MicrosoftWindowsUSBUSBPORT AND NetEvent.Header.Descriptor.Opcode == 34) | USB port events that have opcode 34 are port errors.                                                                                                      |
-| (USBHub\_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Opcode == 11)   | USB hub events that have opcode 11 are hub errors.                                                                                                        |
-| (NetEvent.Header.Descriptor.Level == 0x2)                                         | Events that have level 0x2 are usually errors.                                                                                                            |
-| (USBHub\_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Id == 210)      | USB hub events with ID 210 are ”USB Hub Exception Logged” events. For more information, see [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes). |
+|Filter text|Description|
+|-----|----|
+|(USBPort_MicrosoftWindowsUSBUSBPORT AND NetEvent.Header.Descriptor.Opcode == 34)|USB port events that have opcode 34 are port errors.|
+|(USBHub_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Opcode == 11)|USB hub events that have opcode 11 are hub errors.|
+|(NetEvent.Header.Descriptor.Level == 0x2)|Events that have level 0x2 are usually errors.|
+|(USBHub_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Id == 210)| USB hub events with ID 210 are ”USB Hub Exception Logged” events. For more information, see [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes).|
 
 This image shows the smaller set of events that appear in the **Frame Summary** pane after we applied the USB error filter to our sample trace log.
 
@@ -140,34 +130,34 @@ To see an overview of the sequence of errors, you can briefly view each error ev
 You can create custom filters in Netmon. The easiest method is to create a filter from data on the screen in one of the following ways:
 
 * Right-click a field in the **Frame Details** pane and select **Add Selected Value to Display Filter**.
-* Right-click a field in the **Frame Summary** pane and select **Add \[field name\] to Display Filter**.
+* Right-click a field in the **Frame Summary** pane and select **Add [field name] to Display Filter**.
 
 You can change the operators (such as OR, AND, and ==) and the filter values to build the appropriate filter expressions.
 
 ## Understanding Error Events and Status Codes
 
-In our unknown device example, most of the USB hub exceptions have a **fid\_DebugText** data of CreateDeviceFailure. It is not clear how serious the exception is, but the debug text gives a hint as to the cause: an operation related to the new device failed. For now, assume that the adjacent Create Device Failed events are redundant. The last two exceptions are CreateDeviceFailure\_Popup and GenErr\_UserIoctlFailed. The popup exception sounds like an error that was exposed to the user, but any and all of these errors could be related to the unknown device problem.
+In our unknown device example, most of the USB hub exceptions have a **fid_DebugText** data of CreateDeviceFailure. It is not clear how serious the exception is, but the debug text gives a hint as to the cause: an operation related to the new device failed. For now, assume that the adjacent Create Device Failed events are redundant. The last two exceptions are CreateDeviceFailure_Popup and GenErr_UserIoctlFailed. The popup exception sounds like an error that was exposed to the user, but any and all of these errors could be related to the unknown device problem.
 
 USB error events, and other events, have status values in their data that provide valuable information about the problem. You can find information on status values by using the resources in the following table.
 
-| Status type                                                          | Resource                                                                                                                                                                                                                         |
-|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **fid\_NtStatus**                                                    | See [NTSTATUS values](https://go.microsoft.com/fwlink/p/?linkid=617532).                                                                                                                                                          |
-| The status field of a USB request block (URB) or **fid\_UsbdStatus** | Look up the value as a USBD\_STATUS in inc\\api\\usb.h in the Windows Driver Kit (WDK). You can also use the [USBD\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff539136). This topic lists the symbolic names and the meanings of the USBD\_STATUS values. |
+|Status type|Resource|
+|----|----|
+|**fid_NtStatus**|See [NTSTATUS values](https://go.microsoft.com/fwlink/p/?linkid=617532).|
+|The status field of a USB request block (URB) or **fid_UsbdStatus**|Look up the value as a USBD_STATUS in inc\api\usb.h in the Windows Driver Kit (WDK). You can also use the [USBD\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff539136). This topic lists the symbolic names and the meanings of the USBD\_STATUS values.|
 
 ## Reading Backwards from Problem Events
 
-The events that are logged before the error events might provide important clues as to the cause of the error. You should look at the events that are logged before the errors to try to determine the root cause of the unknown device. In this example, start looking backward from the CreateDeviceFailure\_Popup event, the second-to-last exception. Select this event while the USB error filter is enabled, and then click **Remove** in the **Display Filter** pane. The USB error filter still appears in the **Display Filter** pane, and you can re-apply it later. But now the filter is disabled and the **Frame Summary** pane displays all events as shown in this image.
+The events that are logged before the error events might provide important clues as to the cause of the error. You should look at the events that are logged before the errors to try to determine the root cause of the unknown device. In this example, start looking backward from the CreateDeviceFailure_Popup event, the second-to-last exception. Select this event while the USB error filter is enabled, and then click **Remove** in the **Display Filter** pane. The USB error filter still appears in the **Display Filter** pane, and you can re-apply it later. But now the filter is disabled and the **Frame Summary** pane displays all events as shown in this image.
 
 ![microsoft network monitor](images/devicefailure-etl3.png)
 
-The two events that are logged just before the CreateDeviceFailure\_Popup event are a Dispatch and a Complete of a USB control transfer. The **fid\_USBPORT\_Device** port path field is zero for both events, which indicates that the transfer's target is the root hub. In the fid\_USBPORT\_URB\_CONTROL\_TRANSFER structure of the completion event, the status is zero (USBD\_STATUS\_SUCCESS), which indicates that the transfer was successful. Continue examining the previous events.
+The two events that are logged just before the CreateDeviceFailure_Popup event are a Dispatch and a Complete of a USB control transfer. The **fid_USBPORT_Device** port path field is zero for both events, which indicates that the transfer's target is the root hub. In the fid_USBPORT_URB_CONTROL_TRANSFER structure of the completion event, the status is zero (USBD_STATUS_SUCCESS), which indicates that the transfer was successful. Continue examining the previous events.
 
 The next two previous events are the fourth (final) Create Device Failed event and fourth (final) CreateDeviceFailure exception, which we examined earlier.
 
-The next previous event is Endpoint Close. This event means that an endpoint is no longer usable. The event data describes both the device and the endpoint on that device. The device port path is \[1, 0, 0, 0, 0, 0\]. The system on which we ran the trace has only host controllers (root hubs) plus the device that we were connecting, so this port path does not describe a hub. The closed endpoint must be on the single device that we plugged in, and now we know that the device's path is 1. It is likely that the drivers made the device's endpoint inaccessible due to a problem that was encountered earlier. Continue examining the previous events.
+The next previous event is Endpoint Close. This event means that an endpoint is no longer usable. The event data describes both the device and the endpoint on that device. The device port path is [1, 0, 0, 0, 0, 0]. The system on which we ran the trace has only host controllers (root hubs) plus the device that we were connecting, so this port path does not describe a hub. The closed endpoint must be on the single device that we plugged in, and now we know that the device's path is 1. It is likely that the drivers made the device's endpoint inaccessible due to a problem that was encountered earlier. Continue examining the previous events.
 
-The next previous event is a completed USB control transfer. The event data shows that the target of the transfer is the device (the port path is 1). The fid\_USBPORT\_Endpoint\_Descriptor structure indicates that the endpoint's address is 0, so this is the USB-defined default control endpoint. The URB status is 0xC0000004. Because the status is not zero, the transfer was probably not successful. For more details about this USBD\_STATUS value, see usb.h and [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes).
+The next previous event is a completed USB control transfer. The event data shows that the target of the transfer is the device (the port path is 1). The fid_USBPORT_Endpoint_Descriptor structure indicates that the endpoint's address is 0, so this is the USB-defined default control endpoint. The URB status is 0xC0000004. Because the status is not zero, the transfer was probably not successful. For more details about this USBD_STATUS value, see usb.h and [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes).
 
 ```cpp
 #define USBD_STATUS_STALL_PID ((USBD_STATUS)0xC0000004L)
