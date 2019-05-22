@@ -125,7 +125,7 @@ The Device ID Profile defines an SDP record that can be used to provide identity
 
 Beginning with Windows 8, Windows will also publish a local Device ID record to identify the Windows 8 device to remote Bluetooth devices. The default values can be adjusted by OEMs to better identify their specific Windows 8 device. These values are defined as in the following table under the HKLM\\System\\CCS\\services\\BTHPORT\\Parameters registry key:
 
-|<table>
+<table>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
