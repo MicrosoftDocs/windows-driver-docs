@@ -61,7 +61,7 @@ If this flag alone is set, the NIC should compute the hash value over the follow
 >[!NOTE]
 > If a NIC receives a packet that has both IP and TCP headers, NDIS_HASH_TCP_IPV4 should not always be used. In the case of a fragmented IP packet, NDIS_HASH_IPV4 must be used. This includes the first fragment which contains both IP and TCP headers.
 
-### <a name="ndis_hash_tcp_ipv4"</a> NDIS_HASH_TCP_IPV4
+### <a name="ndis_hash_tcp_ipv4"></a> NDIS_HASH_TCP_IPV4
 
 If this flag alone is set, the NIC should parse the received data to identify an IPv4 packet that contains a TCP segment.
 
@@ -74,7 +74,7 @@ The NIC should compute the hash value over the following fields:
 - Source TCP Port
 - Destination TCP Port
 
-### <a name= "ndis_hash_udp_ipv4"</a> NDIS_HASH_UDP_IPV4
+### <a name= "ndis_hash_udp_ipv4"></a> NDIS_HASH_UDP_IPV4
 
 If this flag alone is set, the NIC should parse the received data to identify an IPv4 packet that contains a UDP datagram.
 
@@ -87,15 +87,15 @@ The NIC should compute the hash value over the following fields:
 - Source UDP Port
 - Destination UDP Port
 
-### <a name="ndis_hash_tcp_ipv4"></a> NDIS_HASH_TCP_IPV4 | <a name="ndis_hash_ipv4"></a> NDIS_HASH_IPV4
+### <a name="ndis_hash_tcp_ipv4--ndis_hash_ipv4"></a> NDIS_HASH_TCP_IPV4 | NDIS_HASH_IPV4
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_TCP_IPV4 case. However, if the packet does not contain a TCP header, the NIC should compute the hash value as specified for the NDIS_HASH_IPV4 case.
 
-### <a name="ndis_hash_udp_ipv4"></a> NDIS_HASH_UDP_IPV4 | <a name="ndis_hash_ipv4"></a> NDIS_HASH_IPV4
+### <a name="ndis_hash_udp_ipv4--ndis_hash_ipv4"></a> NDIS_HASH_UDP_IPV4 | NDIS_HASH_IPV4
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_UDP_IPV4 case. However, if the packet does not contain a UDP header, the NIC should compute the hash value as specified for the NDIS_HASH_IPV4 case.
 
-### <a name="ndis_hash_tcp_ipv4"></a> NDIS_HASH_TCP_IPV4 | <a name="ndis_hash_udp_ipv4"></a> NDIS_HASH_UDP_IPV4 | <a name="ndis_hash_ipv4"></a> NDIS_HASH_IPV4
+### <a name="ndis_hash_tcp_ipv4--ndis_hash_udp_ipv4--ndis_hash_ipv4"></a> NDIS_HASH_TCP_IPV4 | NDIS_HASH_UDP_IPV4 | NDIS_HASH_IPV4
 
 If this flag combination is set, the NIC should perform the hash calculation as specified by the transport in the packet. However, if the packet does not contain a TCP or UDP header, the NIC should compute the hash value as specified for the NDIS_HASH_IPV4 case.
 
@@ -103,14 +103,14 @@ If this flag combination is set, the NIC should perform the hash calculation as 
 
 The valid hash type combinations in the IPv6 set are:
 
-- [NDIS_HASH_IPV6](#ndis_hash_ipv6)
+- [NDIS_HASH_IPV6](#ndis-hash-ipv6)
 - [NDIS_HASH_TCP_IPV6](#ndis_hash_tcp_ipv6)
 - [NDIS_HASH_UDP_IPV6](#ndis_hash_udp_ipv6)
 - [NDIS_HASH_TCP_IPV6 | NDIS_HASH_IPV6](#ndis_hash_tcp_ipv6--ndis_hash_ipv6)
 - [NDIS_HASH_UDP_IPV6 | NDIS_HASH_IPV6](#ndis_hash_udp_ipv6--ndis_hash_ipv6)
 - [NDIS_HASH_TCP_IPV6 | NDIS_HASH_UDP_IPV6 | NDIS_HASH_IPV6](#ndis_hash_tcp_ipv6--ndis_hash_udp_ipv6--ndis_hash_ipv6)
 
-### <a name="ndis_hash_ipv6"></a> NDIS_HASH_IPV6
+### <a name="ndis-hash-ipv6"></a> NDIS\_HASH\_IPV6
 
 If this flag alone is set, the NIC should compute the hash over the following fields:
 
@@ -139,15 +139,15 @@ The NIC should compute the hash value over the following fields:
 - Source UDP Port
 - Destination UDP Port
 
-### <a name="ndis_hash_tcp_ipv6"></a> NDIS_HASH_TCP_IPV6 | <a name="ndis_hash_ipv6"></a> NDIS_HASH_IPV6
+### <a name="ndis_hash_tcp_ipv6--ndis_hash_ipv6"></a>NDIS_HASH_TCP_IPV6 | NDIS_HASH_IPV6
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_TCP_IPV6 case. However, if the packet does not contain a TCP header, the NIC should compute the hash as specified for the NDIS_HASH_IPV6 case.
 
-### <a name="ndis_hash_udp_ipv6"></a> NDIS_HASH_UDP_IPV6 | <a name="ndis_hash_ipv6"></a> NDIS_HASH_IPV6
+### <a name="ndis_hash_udp_ipv6--ndis_hash_ipv6"></a> NDIS_HASH_UDP_IPV6 | NDIS_HASH_IPV6
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_UDP_IPV6 case. However, if the packet does not contain a UDP header, the NIC should compute the hash as specified for the NDIS_HASH_IPV6 case.
 
-### <a name="ndis_hash_tcp_ipv6"></a> NDIS_HASH_TCP_IPV6 | <a name="ndis_hash_udp_ipv6"></a> NDIS_HASH_UDP_IPV6 | <a name="ndis_hash_ipv6"></a>NDIS_HASH_IPV6
+### <a name="ndis_hash_tcp_ipv6--ndis_hash_udp_ipv6--ndis_hash_ipv6"></a> NDIS_HASH_TCP_IPV6 | NDIS_HASH_UDP_IPV6 | NDIS_HASH_IPV6
 
 If this flag combination is set, the NIC should perform the hash calculation as specified by the transport in the packet. However, if the packet does not contain a TCP or UDP header, the NIC should compute the hash value as specified in the NDIS_HASH_IPV6 case.
 
@@ -187,28 +187,19 @@ If this flag alone is set, the NIC should compute the hash over the following fi
 - Source UDP Port
 - Destination UDP Port
 
-### <a name="ndis_hash_tcp_ipv6_ex"></a> NDIS_HASH_TCP_IPV6_EX | <a name="ndis_hash_ipv6_ex"></a> NDIS_HASH_IPV6_EX
+### <a name="ndis_hash_tcp_ipv6_ex--ndis_hash_ipv6_ex"></a> NDIS_HASH_TCP_IPV6_EX | NDIS_HASH_IPV6_EX
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_TCP_IPV6_EX case. However, if the packet does not contain a TCP header, the NIC should compute the hash as specified for the NDIS_HASH_IPV6_EX case.
 
-### <a name="ndis_hash_udp_ipv6_ex"></a> NDIS_HASH_UDP_IPV6_EX | <a name="ndis_hash_ipv6_ex"></a> NDIS_HASH_IPV6_EX
+### <a name="ndis_hash_udp_ipv6_ex--ndis_hash_ipv6_ex"></a> NDIS_HASH_UDP_IPV6_EX | NDIS_HASH_IPV6_EX
 
 If this flag combination is set, the NIC should perform the hash calculations as specified for the NDIS_HASH_UDP_IPV6_EX case. However, if the packet does not contain a UDP header, the NIC should compute the hash as specified for the NDIS_HASH_IPV6_EX case.
 
-### <a name="ndis_hash_tcp_ipv6_ex"></a> NDIS_HASH_TCP_IPV6_EX | <a name="ndis_hash_udp_ipv6_ex"></a> NDIS_HASH_UDP_IPV6_EX | <a name="ndis_hash_ipv6_ex"></a> NDIS_HASH_IPV6_EX
+### <a name="ndis_hash_tcp_ipv6_ex--ndis_hash_udp_ipv6_ex--ndis_hash_ipv6_ex"></a> NDIS_HASH_TCP_IPV6_EX | NDIS_HASH_UDP_IPV6_EX | NDIS_HASH_IPV6_EX
 
 If this flag combination is set, the NIC should perform the hash calculations as specified by the packet transport. However, if the packet does not contain a TCP or UDP header, the NIC should compute the hash as specified for the NDIS_HASH_IPV6_EX case.
 
 > [!NOTE]
-> If a miniport driver reports NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6_EX and/or NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6_EX capability for a NIC, the NIC must calculate hash values (over fields in the IPv6 extension headers) in accordance with the IPv6 extension hash types that the protocol driver set. The NIC can store either the extension hash type or the regular hash type in the NET_BUFFER_LIST structure of the IPv6 packet for which a hash value is computed. 
+> If a miniport driver reports NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6_EX and/or NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6_EX capability for a NIC, the NIC must calculate hash values (over fields in the IPv6 extension headers) in accordance with the IPv6 extension hash types that the protocol driver set. The NIC can store either the extension hash type or the regular hash type in the NET_BUFFER_LIST structure of the IPv6 packet for which a hash value is computed.
 
 A miniport driver sets the hash type in a [**NET_BUFFER_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure before indicating the received data. For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).
-
- 
-
- 
-
-
-
-
-
