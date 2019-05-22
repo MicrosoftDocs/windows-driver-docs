@@ -61,7 +61,7 @@ Rule classes are marked with (\*) require I/O Verification (5) that will be auto
 | DDI compliance checking (additional) | 20 |
 | Kernel synchronization delay fuzzing | 24 |
 | VM switch verification | 25 |
-| Code integrity checks | 22 |
+| Code integrity checks | 26 |
 
 ## Optional feature and rule class descriptions 
 
