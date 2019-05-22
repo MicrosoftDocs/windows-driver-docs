@@ -69,7 +69,7 @@ Status block
 </tr>
 <tr class="even">
 <td align="left"><p><strong>STATUS_EAS_NOT_SUPPORTED</strong></p></td>
-<td align="left"><p>A reparse point cannot be set on a file that contains extended attributes. This is an error code.</p></td>
+<td align="left"><p>A reparse point cannot be set on a file if this request is in a transaction. This is an error code.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_IO_REPARSE_DATA_INVALID</strong></p></td>
