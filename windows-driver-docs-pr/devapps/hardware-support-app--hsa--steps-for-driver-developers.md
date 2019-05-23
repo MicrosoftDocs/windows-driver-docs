@@ -32,7 +32,11 @@ First, reserve a custom capability:
     * Name of the capability (must be unique and reference the owner)
     * What resources does capability need to access?
     * Any security or privacy concerns
+    * What data events will be processed to the partner?
+      * Would the events include personal identifiers such as  precise user locations, passwords, IP address, PUID, device ID , CID, username and contact data)?
+      * Do the data events stay on the users device, or is it sent  to partner?
     * What data does your capability provide access to?
+    * What is the benefit to the end user of this capability?
     * Include the Microsoft Store App Publisher ID.  To get one, create a skeleton app entry on the Microsoft Store page. For more info on reserving your App PFN, see [Create your app by reserving a name](https://msdn.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name).
 
 2.  If the request is approved, Microsoft emails back a unique custom capability string name in the format **CompanyName.capabilityName\_PublisherID**.
