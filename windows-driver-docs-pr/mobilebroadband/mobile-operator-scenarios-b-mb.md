@@ -13,7 +13,7 @@ Use the docs in this section to help you learn about the different mobile operat
 
 -   [Mobile Plans](mobile-plans.md)
 
--   [eSIM management on Windows for mobile operators](esim-management-on-windows-for-mobile-operators.md)
+-   [eSIM management on Windows for mobile operators](esim-management-on-windows-for-mobile-operators-and-oems.md)
 
 -   [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
 
