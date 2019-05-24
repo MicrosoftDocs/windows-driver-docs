@@ -13,6 +13,8 @@ Use the docs in this section to help you learn about the different mobile operat
 
 -   [Mobile Plans](mobile-plans.md)
 
+-   [eSIM management on Windows for mobile operators](esim-management-on-windows-for-mobile-operators.md)
+
 -   [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
 
 -   [Developing apps using multiple PDP contexts](developing-apps-using-multiple-pdp-contexts.md)
