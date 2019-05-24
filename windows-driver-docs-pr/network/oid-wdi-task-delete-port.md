@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_DELETE_PORT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_DELETE\_PORT
@@ -32,6 +33,7 @@ OID\_WDI\_TASK\_DELETE\_PORT requests that the IHV component releases all resour
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_DELETE\_PORT\_COMPLETE](ndis-status-wdi-indication-delete-port-complete.md)
+
 Requirements
 ------------
 

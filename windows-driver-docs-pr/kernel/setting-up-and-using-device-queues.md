@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 A driver sets up a device queue object by calling [**KeInitializeDeviceQueue**](https://msdn.microsoft.com/library/windows/hardware/ff552126) at driver or device initialization. After starting its device(s), the driver inserts IRPs into this queue by calling [**KeInsertDeviceQueue**](https://msdn.microsoft.com/library/windows/hardware/ff552180) or [**KeInsertByKeyDeviceQueue**](https://msdn.microsoft.com/library/windows/hardware/ff552178). The following figure illustrates these calls.
 
-![diagram illustrating using a device queue object](images/3devqobj.png)
+![setting up and using device queues](images/3devqobj.png)
 
 As this figure shows, the driver must provide the storage for a device queue object, which must be resident. Drivers that set up a device queue object usually provide the necessary storage in the [device extension](device-extensions.md) of a driver-created device object, but the storage can be in a controller extension if the driver uses a [controller object](using-controller-objects.md) or in nonpaged pool allocated by the driver.
 
@@ -42,7 +42,7 @@ When the device queue object's state is set to Busy, the driver can dequeue an I
 
 Calling any of these routines to remove an entry from a device queue that is empty but Busy changes the queue state to Not-Busy.
 
-Each device queue object is protected by a built-in executive spin lock (not shown in the [Using a Device Queue Object](#ddk-setting-up-and-using-device-queues-kg) figure). As a result, a driver can insert IRPs into the queue and remove them in a multiprocessor-safe manner from any driver routine running at less than or equal to IRQL = DISPATCH\_LEVEL. Because of this IRQL restriction, a driver cannot call any **Ke*Xxx*DeviceQueue** routine from its ISR or [*SynchCritSection*](https://msdn.microsoft.com/library/windows/hardware/ff563928) routines, which run at DIRQL.
+Each device queue object is protected by a built-in executive spin lock (not shown in the [Using a Device Queue Object](#setting-up-and-using-device-queues) figure). As a result, a driver can insert IRPs into the queue and remove them in a multiprocessor-safe manner from any driver routine running at less than or equal to IRQL = DISPATCH\_LEVEL. Because of this IRQL restriction, a driver cannot call any **Ke*Xxx*DeviceQueue** routine from its ISR or [*SynchCritSection*](https://msdn.microsoft.com/library/windows/hardware/ff563928) routines, which run at DIRQL.
 
 See [Managing Hardware Priorities](managing-hardware-priorities.md) and [Spin Locks](spin-locks.md) for more information. For IRQL requirements for a specific support routine, see the routine's reference page.
 

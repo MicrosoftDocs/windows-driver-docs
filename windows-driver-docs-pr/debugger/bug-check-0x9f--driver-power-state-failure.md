@@ -16,9 +16,14 @@ ms.localizationpriority: medium
 # (Developer Content) Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE
 
 
-The DRIVER_POWER_STATE_FAILURE bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
+The DRIVER\_POWER\_STATE\_FAILURE bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
 
 ## DRIVER\_POWER\_STATE\_FAILURE Parameters
 
@@ -81,10 +86,14 @@ Parameter 1 indicates the type of violation.
 </table>
 
 
-Cause
+## Cause
 -----
 
 For a description of the possible causes, see the description of each code in the Parameters section.
+
+## Resolution
+----------
+
 
 **Debugging bug check 0x9F when Parameter 1 equals 0x3**
 
@@ -284,12 +293,15 @@ To help you determine the cause of the error, consider the following questions:
 
 -   Refer to the additional techniques described above under parameter 0x3.
 
-## Resolution
+**Time Travel Trace**
+
+If the bug check can be reproduced on demand, investigate the possibility of taking a time travel trace using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
+
+
+## Remarks
 ----------
 
 If you are not equipped to debug this problem using the techniques described above, you can use some basic troubleshooting techniques.
-
-- If you recently added hardware to the system, try removing or replacing it. Or check with the manufacturer to see if any patches are available.
 
 - If new device drivers or system services have been added recently, try removing or updating them. Try to determine what changed in the system that caused the new bug check code to appear.
 
@@ -299,6 +311,8 @@ If you are not equipped to debug this problem using the techniques described abo
 
 - To try and isolate the cause, temporally disable power save using control panel, power options. Some driver issues are related to the various states of system hibernation and the suspending and resumption of power.
 
+- If you recently added hardware to the system, try removing or replacing it. Or check with the manufacturer to see if any patches are available.
+
 - You can try running the hardware diagnostics supplied by the system manufacturer.
 
-- Check with the manufacturer to see if an updated system BIOS or firmware is available.
+- Check with the manufacturer to see if an updated system ACPI/BIOS or other firmware is available.

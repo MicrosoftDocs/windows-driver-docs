@@ -8,7 +8,6 @@ ms.localizationpriority: medium
 
 # Reading Data from a SerCx2-Managed Serial Port
 
-
 A serial controller (or UART) typically includes a receive FIFO. This FIFO provides hardware-controlled buffering of data received from the peripheral device that is connected to the serial port. To read data from the receive FIFO, the peripheral driver for this device sends read ([**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff546883)) requests to the serial port.
 
 If the serial port continues to receive data faster than the peripheral driver can read the data, the receive FIFO can overflow. To prevent data loss due to overflow, the peripheral driver should typically configure the serial port to use hardware flow control. With flow control, the serial controller hardware automatically signals the peripheral device to stop sending data when the receive FIFO is nearly full. As a rule, serial ports that are managed by SerCx2 should use hardware flow control. For more information, see [Flow control details](#flow-control-details).
@@ -17,12 +16,11 @@ However, flow control should not be used to stop the peripheral device from send
 
 **On this page**
 
--   [Using asynchronous read requests](#using-asynchronous-read-requests)
--   [Interval time-out details](#interval-time-out-details)
--   [Flow control details](#flow-control-details)
+- [Using asynchronous read requests](#using-asynchronous-read-requests)
+- [Interval time-out details](#interval-time-out-details)
+- [Flow control details](#flow-control-details)
 
 ## Using asynchronous read requests
-
 
 To avoid incorrect operation and possible data loss, the peripheral driver is responsible for reading the data from the serial controller's receive FIFO in a timely way. Typically, before data is received, the peripheral driver sends an asynchronous read request to the serial port in anticipation of the future arrival of data from the peripheral device. This read request stays pending in the SerCx2 I/O queue until data is available to be read from the receive FIFO.
 
@@ -52,13 +50,5 @@ To enable hardware flow control, a peripheral driver might send an [**IOCTL\_SER
 
 If the peripheral driver uses an **IOCTL\_SERIAL\_SET\_HANDFLOW** request to enable hardware flow control, the driver should set the following flags in the **SERIAL\_HANDFLOW** structure in this request:
 
--   The SERIAL\_CTS\_HANDSHAKE flag in the **ControlHandShake** member of the structure. This flag enables the serial port to use flow control for receive operations.
--   The SERIAL\_RTS\_CONTROL and SERIAL\_RTS\_HANDSHAKE flags in the **FlowReplace** member. These flags enable the serial port to use flow control for transmit operations.
-
- 
-
- 
-
-
-
-
+- The SERIAL\_CTS\_HANDSHAKE flag in the **ControlHandShake** member of the structure. This flag enables the serial port to use flow control for receive operations.
+- The SERIAL\_RTS\_CONTROL and SERIAL\_RTS\_HANDSHAKE flags in the **FlowReplace** member. These flags enable the serial port to use flow control for transmit operations.

@@ -16,7 +16,9 @@ ms.localizationpriority: medium
 
 The CLUSTER\_CSV\_CLUSTER\_WATCHDOG\_LIVEDUMP bug check has a value of 0x0000016B. This indicates that the Cluster service user mode watchdog detected that a thread is not making forward progress for a long time.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 
 ## CLUSTER\_CSV\_CLUSTER\_WATCHDOG\_LIVEDUMP Parameters

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic provides a brief overview about USB bulk transfers. It also provides step-by-step instructions about how a client driver can send and receive bulk data from the device.
 
--   [About bulk endpoints](#ddk-usb-bulk-and-interrupt-transfer-kg)
+-   [About bulk endpoints](#about-bulk-endpoints)
 -   [Bulk transactions](#bulk-transactions)
 -   [USB client driver tasks for a bulk transfer](#usb-client-driver-tasks-for-a-bulk-transfer)
 -   [Bulk transfer request example](#bulk-transfer-request-example)

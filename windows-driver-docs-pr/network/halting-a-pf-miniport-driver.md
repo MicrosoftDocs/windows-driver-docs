@@ -15,9 +15,9 @@ This topic discusses the steps that are involved with halting the miniport drive
 
 This topic contains the following information:
 
--   [Actions Performed by NDIS and Overlying Drivers Before *MiniportHaltEx* is Called](#overlying-drivers)
+-   [Actions Performed by NDIS and Overlying Drivers Before *MiniportHaltEx* is Called](#actions-performed-by-ndis-and-overlying-drivers-before-miniporthaltex-is-called)
 
--   [Actions Performed by the PF Miniport Driver When *MiniportHaltEx* is Called](#miniport-driver)
+-   [Actions Performed by the PF Miniport Driver When *MiniportHaltEx* is Called](#actions-performed-by-the-pf-miniport-driver-when-miniporthaltex-is-called)
 
 ## Actions Performed by NDIS and Overlying Drivers Before *MiniportHaltEx* is Called
 

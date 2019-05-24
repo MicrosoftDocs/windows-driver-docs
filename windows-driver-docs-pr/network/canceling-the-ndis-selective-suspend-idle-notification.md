@@ -71,7 +71,7 @@ NDIS and the miniport driver follow these steps when NDIS cancels an idle notifi
 
 1.  The bus driver completes the [**IRP\_MN\_WAIT\_WAKE**](https://msdn.microsoft.com/library/windows/hardware/ff551766) that was issued by NDIS before transitioning the adapter to a low-power state. By completing the IRP, the bus driver notifies NDIS that the network adapter has generated a wake-up signal.
 
-2.  NDIS calls the [*MiniportCancelIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464088) handler function to start the operation of canceling the idle notification. The steps that are involved in this operation are the same as described in [Canceling the Idle Notification because of Overlying Driver Activity](#cancel-due-to-driver-activity).
+2.  NDIS calls the [*MiniportCancelIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464088) handler function to start the operation of canceling the idle notification. The steps that are involved in this operation are the same as described in [Canceling the Idle Notification because of Overlying Driver Activity](#canceling-the-idle-notification-because-of-overlying-driver-activity).
 
 For example, the following figure shows the steps that are involved when NDIS cancels an idle notification because of a wake-up event signaled by a USB network adapter.
 

@@ -1,17 +1,25 @@
 - name: "ACPI design guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "ACPI design guide"
+    href: index.md
   - name: "Supporting ACPI Devices"
-    href: supporting-acpi-devices.md
+# Auto-expanded node
     items: 
+    - name: "Supporting ACPI Devices"
+      href: supporting-acpi-devices.md
     - name: "Device Stacks for an ACPI Device"
       href: device-stacks-for-an-acpi-device.md
     - name: "Operation of an ACPI Device Function Driver"
-      href: operation-of-an-acpi-device-function-driver.md
+# Auto-expanded node
       items: 
+      - name: "Operation of an ACPI Device Function Driver"
+        href: operation-of-an-acpi-device-function-driver.md
       - name: "Supporting an Operation Region"
-        href: supporting-an-operation-region.md
+# Auto-expanded node
         items: 
+        - name: "Supporting an Operation Region"
+          href: supporting-an-operation-region.md
         - name: "Maintaining an Operation Region Memory Buffer"
           href: maintaining-an-operation-region-memory-buffer.md
         - name: "Registering and Deregistering an Operation Region Handler"
@@ -23,11 +31,15 @@
       - name: "Providing a Vendor-Defined ACPI Device Interface"
         href: providing-a-vendor-defined-acpi-device-interface.md
   - name: "Evaluating ACPI Control Methods"
-    href: evaluating-acpi-control-methods.md
+# Auto-expanded node
     items: 
+    - name: "Evaluating ACPI Control Methods"
+      href: evaluating-acpi-control-methods.md
     - name: "Evaluating ACPI Control Methods Synchronously"
-      href: evaluating-acpi-control-methods-synchronously.md
+# Auto-expanded node
       items: 
+      - name: "Evaluating ACPI Control Methods Synchronously"
+        href: evaluating-acpi-control-methods-synchronously.md
       - name: "Control Method Input Buffer Structures"
         href: control-method-input-buffer-structures.md
       - name: "Evaluating a Control Method Without Input Arguments"
@@ -37,13 +49,17 @@
       - name: "SendDownStreamIrp Function"
         href: senddownstreamirp-function.md
     - name: "Enumerating Child Devices and Control Methods"
-      href: enumerating-child-devices-and-control-methods.md
+# Auto-expanded node
       items: 
+      - name: "Enumerating Child Devices and Control Methods"
+        href: enumerating-child-devices-and-control-methods.md
       - name: "Sending an IOCTL_ACPI_ENUM_CHILDREN Request"
         href: sending-an-ioctl-acpi-enum-children-request.md
     - name: "Control Method Macros"
-      href: control-method-macros.md
+# Auto-expanded node
       items: 
+      - name: "Control Method Macros"
+        href: control-method-macros.md
       - name: "ACPI_METHOD_SET_ARGUMENT_INTEGER"
         href: acpi-method-set-argument-integer.md
       - name: "ACPI_METHOD_SET_ARGUMENT_STRING"

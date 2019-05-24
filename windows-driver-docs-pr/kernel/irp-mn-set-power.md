@@ -45,6 +45,22 @@ The **Parameters.Power.ShutdownType** member specifies additional information ab
 
 Starting with Windows Vista, the **Parameters.Power.SystemPowerStateContext** member is a read-only, partially opaque [**SYSTEM\_POWER\_STATE\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/jj835780) structure that contains information about the previous system power states of a computer. If **Parameters.Power.Type** is **SystemPowerState** and **Parameters.Power.State** is **PowerSystemWorking**, two flag bits in this structure indicate whether a fast startup or a wake-from-hibernation caused the computer to enter the S0 (working) system state. For more information, see [Distinguishing Fast Startup from Wake-from-Hibernation](https://msdn.microsoft.com/library/windows/hardware/jj835779).
 
+The following table shows the contents of **IRP_MN_SET_POWER.Parameters.Power.{State|ShutdownType}** and the **CurrentSystemState**, **TargetSystemState**, and **EffectiveSystemState** bit fields in the [**SYSTEM_POWER_STATE_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_system_power_state_context) structure for each system power transition.  Each row represents one **IRP_MN_SET_POWER**.
+
+|Transition|State|Shutdown Type|Current SystemState|Target SystemState|Effective SystemState|Comments|
+|--- |--- |--- |--- |--- |--- |--- |
+|Sleep to...|S3|Sleep|S0|S3|S3||
+|...Wake|S0|Sleep|S3|S0|S0||
+|Hybrid Sleep to...|S4|Hibernate|S0|S3|S4|Sleep with hibernation file (Fast S4)|
+|...Wake|S0|Sleep|S3|S0|S0||
+|...Wake/PwrLost|S0|Sleep|S4|S0|S0||
+|Hibernate to...|S4|Hibernate|S0|S4|S4|||
+|...Wake|S0|Sleep|S4|S0|S0||
+|Hybrid Shutdown to...|S4|Hibernate|S0|S5|S4|Apps closed, user logged off as if shutdown (Hiber Boot)|
+|...Fast Startup|S0|Sleep|S4|S0|S0||
+|Shutdown to...|S5|Shutdown/Reset/Off|S0|S5|S5||
+|...System Boot||||||No S-IRP for boot up|
+
 ## Output Parameters
 
 
@@ -67,6 +83,8 @@ The power manager or a driver can request an **IRP\_MN\_SET\_POWER** IRP. The po
 -   To notify drivers of a change to the system power state
 
 -   To change the power state of a device for which the power manager is performing idle detection
+
+-   To reaffirm the current system state after a driver fails an **IRP\_MN\_QUERY\_POWER** request for a system power state.  For more information, see [**IRP_MN_QUERY_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-power#operation).
 
 A driver that owns device power policy sends **IRP\_MN\_SET\_POWER** to change the power state of its device.
 

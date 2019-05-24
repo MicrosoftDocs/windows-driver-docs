@@ -18,7 +18,9 @@ The SECURE\_FAULT\_UNHANDLED bug check has a value of 0x0000018D.
 
 This bug check indidates that a secure fault originated by the secure kernel could not be handled.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
  ## SECURE\_FAULT\_UNHANDLED Parameters
 

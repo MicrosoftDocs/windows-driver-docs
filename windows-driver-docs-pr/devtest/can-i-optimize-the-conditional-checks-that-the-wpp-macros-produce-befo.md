@@ -13,7 +13,6 @@ You can remove the conditional check for WPP\_INIT\_TRACING so that it is not ca
 
 **Important**  You should not remove this check if tracing is made in your object constructors or macros. Otherwise, access violations could occur in your trace provider.
 
- 
 
 Before you include the [trace message header (.tmh) file](trace-message-header-file.md) in your source code, add the following definition to disable the conditional check for WPP\_INIT\_TRACING:
 

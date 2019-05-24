@@ -11,10 +11,7 @@ ms.localizationpriority: medium
 
 Use the docs in this section to help you learn about the different mobile operator scenarios.
 
--   Mobile Plans
-
-    - [Promotional content](mobile-plans-promotional-content.md)
-    - [Asynchronous fulfillment](mobile-plans-asynchronous-fulfillment.md)
+-   [Mobile Plans](mobile-plans.md)
 
 -   [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
 

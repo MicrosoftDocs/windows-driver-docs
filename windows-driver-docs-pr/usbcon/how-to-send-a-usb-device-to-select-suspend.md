@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 
 This topic describes the USB client driver verifier feature of the USB 3.0 driver stack that enables the client driver to test certain failure cases.
 
--   [What is the USB client driver verifier](#what-is--the-usb-client-driver-verifier)
+-   [What is the USB client driver verifier](#what-is-the-usb-client-driver-verifier)
 -   [How to enable the USB client driver verifier](#how-to-enable-the-usb-client-driver-verifier)
--   [Configuration settings for the USB client driver verifier](#configuration--settings-for-the-usb-client-driver-verifier)
+-   [Configuration settings for the USB client driver verifier](#configuration-settings-for-the-usb-client-driver-verifier)
 
 ## What is the USB client driver verifier
 
@@ -53,7 +53,7 @@ The **UsbVerifierEnabled** registry entry takes a DWORD value. When **UsbVerifie
 ## Configuration settings for the USB client driver verifier
 
 
-When the verifier is enabled, the USB driver stack keeps track of URBs that the client driver allocates by calling **USBD\_xxxUrbAllocate** routines (see [USB Routines](https://msdn.microsoft.com/library/windows/hardware/ff540134#client)). If the client driver leaks any URB, the USB driver stack uses that information to cause a bugcheck through the [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448). In that case, use the **!usbanalyze -v** command to determine the cause of the leak.
+When the verifier is enabled, the USB driver stack keeps track of URBs that the client driver allocates by calling **USBD\_xxxUrbAllocate** routines (see [USB Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#client)). If the client driver leaks any URB, the USB driver stack uses that information to cause a bugcheck through the [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448). In that case, use the **!usbanalyze -v** command to determine the cause of the leak.
 
 Additionally and optionally, you can configure the USB client driver verifier to modify or fail specific routines and specify how often the routine must fail. To configure the verifier, set the registry entries as shown here:
 

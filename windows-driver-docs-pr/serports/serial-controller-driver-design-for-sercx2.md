@@ -8,11 +8,9 @@ ms.localizationpriority: medium
 
 # Serial Controller Driver Design for SerCx2
 
-
 To manage your serial controller, you write a serial controller driver that performs hardware-specific tasks and communicates with SerCx2. Starting with Windows 8.1, SerCx2 is a system-supplied component that handles many of the processing tasks that are common to serial controllers. These tasks include managing time-outs and handling read and write requests sent by clients of the serial controller.
 
 ## In this section
-
 
 <table>
 <colgroup>
@@ -36,13 +34,3 @@ To manage your serial controller, you write a serial controller driver that perf
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-

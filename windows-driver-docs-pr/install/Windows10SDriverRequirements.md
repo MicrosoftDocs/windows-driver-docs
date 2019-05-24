@@ -28,6 +28,12 @@ Finally, we recommend using a Universal Windows driver where possible.  For more
 -   [Getting Started with Universal Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
 -   [Validating Universal Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-drivers)
 
+## Installation
+
+* Drivers that target Windows 10 in S mode are also installed on desktop versions of Windows 10.
+* If you check the S compliance checkboxes when submitting a driver in the dashboard, the driver is delivered to both Windows 10 in S mode as well as desktop versions of Windows 10 that have the same HW ID. For more info about these dashboard options, see [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
+* If a different driver packages are required for Windows 10 in S mode and desktop versions of Windows 10 that target the same HWID, set a greater **DriverVer** entry in the [INF Version Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) for desktop versions of Windows 10.
+
 ## Blocked inbox components
 
 The following components are blocked from executing on Windows 10 S:

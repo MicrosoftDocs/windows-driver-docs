@@ -16,7 +16,7 @@ To see a list of functions in the above API sets, please refer to [Windows API S
 The following sections include code examples that applications would typically use.
 
 -   [Get a list of present devices and retrieve a property for each device](#get-a-list-of-present-devices-and-retrieve-a-property-for-each-device)
--   [Get a list of interfaces, get the device exposing each interface, and get a property from the device](#get-a-list-of-interfaces--get-the-device-exposing-each-interface---and-get-a-property-from-the-device)
+-   [Get a list of interfaces, get the device exposing each interface, and get a property from the device](#get-a-list-of-interfaces-get-the-device-exposing-each-interface-and-get-a-property-from-the-device)
 -   [Get a property from a specific device](#get-a-property-from-a-specific-device)
 -   [Disable device](#disable-device)
 -   [Enable device](#enable-device)

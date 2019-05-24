@@ -54,7 +54,7 @@ function NotifyMobilePlans() { 
 }
 ```
 
-See [purchase metadata properties](#Purchase-Metadata-Properties-details) for details about the puchaseMetadata object.
+See [purchase metadata properties](#purchase-metadata-properties-details) for details about the puchaseMetadata object.
 
 ## Inline profile operations
 When the MO Direct portal wants to do operations without returning control to the Mobile Plans app, inline operations should be used.
@@ -310,7 +310,7 @@ function finishPurchaseWithDownload() {
 }
 ```
 
-See [purchase metadata properties](#Purchase-Metadata-Properties-details) for details about the puchaseMetadata object.
+See [purchase metadata properties](#purchase-metadata-properties-details) for details about the puchaseMetadata object.
 
 ## Adding balance
 
@@ -337,7 +337,7 @@ function finishPurchaseWithBalanceAddition() {
     }
 ```
 
-See [purchase metadata properties](#Purchase-Metadata-Properties-details) for details about the `puchaseMetadata` object.
+See [purchase metadata properties](#purchase-metadata-properties-details) for details about the `puchaseMetadata` object.
 
 ## Canceling purchase flow
 
@@ -363,7 +363,7 @@ function finishPurchaseWithCancellation() {
     }
 ```
 
-See [purchase metadata properties](#Purchase-Metadata-Properties-details) for details about the `puchaseMetadata` object.
+See [purchase metadata properties](#purchase-metadata-properties-details) for details about the `puchaseMetadata` object.
 
 ## Purchase Metadata Properties details
 

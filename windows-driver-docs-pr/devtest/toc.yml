@@ -3,11 +3,15 @@
 - name: "Index of Windows Driver Kit Tools"
   href: index-of-windows-driver-kit-tools.md
 - name: "Tools for Testing Drivers"
-  href: tools-for-testing-drivers.md
+# Auto-expanded node
   items: 
+  - name: "Tools for Testing Drivers"
+    href: tools-for-testing-drivers.md
   - name: "Device Fundamentals Tests"
-    href: device-fundamentals-tests.md
+# Auto-expanded node
     items: 
+    - name: "Device Fundamentals Tests"
+      href: device-fundamentals-tests.md
     - name: "How to run the DevFund Tests via the command-line"
       href: run-devfund-tests-via-the-command-line.md
     - name: "CHAOS Tests (Device Fundamentals)"
@@ -29,18 +33,24 @@
     - name: "Sleep Tests (Device Fundamentals)"
       href: sleep-tests--device-fundamentals-.md
   - name: "Data-Driven System Fundamentals Tests"
-    href: data-driven-system-fundamentals-tests.md
+# Auto-expanded node
     items: 
+    - name: "Data-Driven System Fundamentals Tests"
+      href: data-driven-system-fundamentals-tests.md
     - name: "Configure the Machine for Testing"
       href: configure-the-machine-for-testing.md
     - name: "Run the Tests"
       href: run-the-tests.md
   - name: "Windows Device Console (Devcon.exe)"
-    href: devcon.md
+# Auto-expanded node
     items: 
+    - name: "Windows Device Console (Devcon.exe)"
+      href: devcon.md
     - name: "Device Console (DevCon.exe) Commands"
-      href: devcon-general-commands.md
+# Auto-expanded node
       items: 
+      - name: "Device Console (DevCon.exe) Commands"
+        href: devcon-general-commands.md
       - name: "DevCon HwIDs"
         href: devcon-hwids.md
       - name: "DevCon Classes"
@@ -90,13 +100,17 @@
       - name: "DevCon Dp_delete"
         href: devcon-dp-delete.md
     - name: "Device Console (DevCon.exe) Examples"
-      href: devcon-examples.md
+# Auto-expanded node
       items: 
+      - name: "Device Console (DevCon.exe) Examples"
+        href: devcon-examples.md
       - name: "Example 45: Add and Remove Driver Packages"
         href: example-45--add-and-remove-driver-packages.md
   - name: "PnPUtil"
-    href: pnputil.md
+# Auto-expanded node
     items: 
+    - name: "PnPUtil"
+      href: pnputil.md
     - name: "PnPUtil Command Syntax"
       href: pnputil-command-syntax.md
     - name: "PnPUtil Examples"
@@ -104,18 +118,24 @@
     - name: "PnPUtil Return Values"
       href: pnputil-return-values.md
   - name: "Additional Test Tools"
-    href: 
+# Auto-expanded node
     items: 
+    - name: "Additional Test Tools"
+      href: 
     - name: "PoolMon"
-      href: poolmon.md
+# Auto-expanded node
       items: 
+      - name: "PoolMon"
+        href: poolmon.md
       - name: "PoolMon Overview"
         href: poolmon-overview.md
       - name: "PoolMon Requirements"
         href: poolmon-requirements.md
       - name: "PoolMon Commands"
-        href: poolmon-commands.md
+# Auto-expanded node
         items: 
+        - name: "PoolMon Commands"
+          href: poolmon-commands.md
         - name: "PoolMon Startup Command"
           href: poolmon-startup-command.md
         - name: "PoolMon Run-time Commands"
@@ -125,13 +145,17 @@
       - name: "PoolMon Examples"
         href: poolmon-examples.md
     - name: "PwrTest"
-      href: pwrtest.md
+# Auto-expanded node
       items: 
+      - name: "PwrTest"
+        href: pwrtest.md
       - name: "PwrTest Syntax"
         href: pwrtest-syntax.md
       - name: "PwrTest Log File"
-        href: pwrtest-log-file.md
+# Auto-expanded node
         items: 
+        - name: "PwrTest Log File"
+          href: pwrtest-log-file.md
         - name: "PwrTest Scenarios"
           href: pwrtest-scenarios.md
         - name: "PwrTest Battery Scenario"
@@ -140,6 +164,8 @@
           href: pwrtest-connected-standby--cs--scenario.md
         - name: "PwrTest Device Scenario"
           href: pwrtest-device-scenario.md
+        - name: "PwrTest DirectedFx Scenario"
+          href: pwrtest-directedfx-scenario.md
         - name: "PwrTest Disk Scenario"
           href: pwrtest-disk-scenario.md
         - name: "PwrTest Execution State Scenario"
@@ -165,8 +191,10 @@
         - name: "PwrTest Timer Scenario"
           href: pwrtest-timer-scenario.md
     - name: "PNPCPU"
-      href: pnpcpu.md
+# Auto-expanded node
       items: 
+      - name: "PNPCPU"
+        href: pnpcpu.md
       - name: "PNPCPU Overview"
         href: pnpcpu-overview.md
       - name: "PNPCPU General Commands"
@@ -178,8 +206,10 @@
       - name: "PNPCPU Limitations"
         href: pnpcpu-limitations.md
     - name: "WSDAPI Basic Interoperability Tool"
-      href: wsdapi-basic-interoperability-tool.md
+# Auto-expanded node
       items: 
+      - name: "WSDAPI Basic Interoperability Tool"
+        href: wsdapi-basic-interoperability-tool.md
       - name: "Introduction to WSDBIT"
         href: introduction-to-wsdbit.md
       - name: "Referenced Namespaces"
@@ -187,8 +217,10 @@
       - name: "WSDBIT Testing Environment"
         href: wsdbit-testing-environment.md
       - name: "Client Scenarios for WSDBIT"
-        href: client-scenarios-for-wsdbit.md
+# Auto-expanded node
         items: 
+        - name: "Client Scenarios for WSDBIT"
+          href: client-scenarios-for-wsdbit.md
         - name: "Device and Service Inspection Scenarios"
           href: device-and-service-inspection-scenarios.md
         - name: "Device Control Scenarios"
@@ -200,8 +232,10 @@
         - name: "Secure Communication Scenarios"
           href: secure-communication-scenarios.md
       - name: "WSDBIT Reference"
-        href: wsdbit-reference.md
+# Auto-expanded node
         items: 
+        - name: "WSDBIT Reference"
+          href: wsdbit-reference.md
         - name: "Sample Metadata Response Output"
           href: sample-metadata-response-output.md
         - name: "SimpleService WSDL"
@@ -211,8 +245,10 @@
         - name: "EventingService WSDL"
           href: eventingservice-wsdl.md
     - name: "XpsAnalyzer"
-      href: xpsanalyzer.md
+# Auto-expanded node
       items: 
+      - name: "XpsAnalyzer"
+        href: xpsanalyzer.md
       - name: "XpsAnalyzer Command Syntax"
         href: xpsanalyzer-command-syntax.md
       - name: "XpsAnalyzer Rules"
@@ -222,8 +258,10 @@
     - name: "XpsConverter"
       href: xpsconverter.md
     - name: "IoSpy and IoAttack"
-      href: iospy-and-ioattack.md
+# Auto-expanded node
       items: 
+      - name: "IoSpy and IoAttack"
+        href: iospy-and-ioattack.md
       - name: "IoSpy"
         href: iospy.md
       - name: "IoAttack"
@@ -231,8 +269,10 @@
       - name: "How to Perform Fuzz Tests with IoSpy and IoAttack"
         href: how-to-perform-fuzz-tests-with-iospy-and-ioattack.md
     - name: "Driver Coverage Toolkit"
-      href: driver-coverage-toolkit.md
+# Auto-expanded node
       items: 
+      - name: "Driver Coverage Toolkit"
+        href: driver-coverage-toolkit.md
       - name: "Overview of the Driver Coverage Toolkit"
         href: overview-of-the-driver-coverage-toolkit.md
       - name: "Driver Coverage Filter Driver"
@@ -242,14 +282,20 @@
       - name: "How to Analyze IRP Coverage Data"
         href: how-to-analyze-irp-coverage-data.md
     - name: "Enhanced Storage Certificate Management Tool"
-      href: enhanced-storage-certificate-management-tool.md
+# Auto-expanded node
       items: 
+      - name: "Enhanced Storage Certificate Management Tool"
+        href: enhanced-storage-certificate-management-tool.md
       - name: "Overview of the Enhanced Storage Certificate Management Tool"
-        href: overview-of-the-enhanced-storage-certificate-management-tool.md
+# Auto-expanded node
         items: 
+        - name: "Overview of the Enhanced Storage Certificate Management Tool"
+          href: overview-of-the-enhanced-storage-certificate-management-tool.md
         - name: "Importing Certificates by using the Enhanced Storage Certificate Management Tool"
-          href: importing-certificates-by-using-the-enhanced-storage-certificate-manag.md
+# Auto-expanded node
           items: 
+          - name: "Importing Certificates by using the Enhanced Storage Certificate Management Tool"
+            href: importing-certificates-by-using-the-enhanced-storage-certificate-manag.md
           - name: "Importing Certificates from a Windows Certificate Store"
             href: importing-certificates-from-a-windows-certificate-store.md
           - name: "Importing Certificates from a File"
@@ -259,8 +305,10 @@
       - name: "Installation of the Enhanced Storage Certificate Management Tool"
         href: installation-of-the-enhanced-storage-certificate-management-tool.md
       - name: "Enhanced Storage Certificate Management Tool Command Syntax"
-        href: enhanced-storage-certificate-management-tool-command-syntax.md
+# Auto-expanded node
         items: 
+        - name: "Enhanced Storage Certificate Management Tool Command Syntax"
+          href: enhanced-storage-certificate-management-tool-command-syntax.md
         - name: "/Add Switch"
           href: enhstor-add-switch.md
         - name: "/Clear Switch"
@@ -282,20 +330,26 @@
     - name: "Bluetooth Inquiry Record Verifier"
       href: bluetooth-inquiry-record-verifier.md
 - name: "Tools for Verifying Drivers"
-  href: tools-for-verifying-drivers.md
+# Auto-expanded node
   items: 
+  - name: "Tools for Verifying Drivers"
+    href: tools-for-verifying-drivers.md
   - name: "Static and Dynamic Verification Tools"
     href: static-and-dynamic-verification-tools.md
   - name: "Survey of Verification Tools"
     href: survey-of-verification-tools.md
   - name: "Checked Build of Windows"
-    href: checked-build-of-windows.md
+# Auto-expanded node
     items: 
+    - name: "Checked Build of Windows"
+      href: checked-build-of-windows.md
     - name: "Checked and Free Build Differences"
       href: checked-and-free-build-differences.md
     - name: "Using the Checked Build of Windows"
-      href: using-the-checked-build.md
+# Auto-expanded node
       items: 
+      - name: "Using the Checked Build of Windows"
+        href: using-the-checked-build.md
       - name: "What the Checked Build Checks"
         href: what-the-checked-build-checks.md
       - name: "How the Checked Build Indicates a Problem"
@@ -307,8 +361,10 @@
       - name: "The Checked Build and Driver Verifier"
         href: the-checked-build-and-driver-verifier.md
     - name: "Installing the Checked Build of Windows"
-      href: installing-the-checked-build.md
+# Auto-expanded node
       items: 
+      - name: "Installing the Checked Build of Windows"
+        href: installing-the-checked-build.md
       - name: "Installing the Complete Checked Build"
         href: installing-the-complete-checked-build.md
       - name: "Installing Just the Checked Operating System and HAL (For Windows Vista and Later)"
@@ -322,15 +378,19 @@
   - name: "Application Verifier"
     href: application-verifier.md
   - name: "Code Analysis for Drivers"
-    href: code-analysis-for-drivers.md
+# Auto-expanded node
     items: 
+    - name: "Code Analysis for Drivers"
+      href: code-analysis-for-drivers.md
     - name: "Code Analysis for drivers overview"
       href: code-analysis-for-drivers-overview.md
     - name: "How to run Code Analysis for drivers"
       href: how-to-run-code-analysis-for-drivers.md
     - name: "SAL 2 Annotations for Windows Drivers"
-      href: sal-2-annotations-for-windows-drivers.md
+# Auto-expanded node
       items: 
+      - name: "SAL 2 Annotations for Windows Drivers"
+        href: sal-2-annotations-for-windows-drivers.md
       - name: "IRQL annotations for drivers"
         href: irql-annotations-for-drivers.md
       - name: "Floating Point Annotations for drivers"
@@ -344,8 +404,10 @@
       - name: "_Flt_CompletionContext_Outptr_ Annotation"
         href: -flt-completioncontext-outptr--annotation.md
     - name: "Code Analysis for Drivers Warnings"
-      href: prefast-for-drivers-warnings.md
+# Auto-expanded node
       items: 
+      - name: "Code Analysis for Drivers Warnings"
+        href: prefast-for-drivers-warnings.md
       - name: "C28101"
         href: 28101-wrong-function-type.md
       - name: "C28110"
@@ -551,11 +613,15 @@
       - name: "C30035"
         href: 30035-function-call-must-be-made-inside-init-function.md
   - name: "Driver Verifier"
-    href: driver-verifier.md
+# Auto-expanded node
     items: 
+    - name: "Driver Verifier"
+      href: driver-verifier.md
     - name: "Driver Verifier: What's new"
-      href: driver-verifier--what-s-new.md
+# Auto-expanded node
       items: 
+      - name: "Driver Verifier: What's new"
+        href: driver-verifier--what-s-new.md
       - name: "Driver Verifier Command Syntax"
         href: verifier-command-line.md
       - name: "Driver Verifier Options"
@@ -617,18 +683,24 @@
       - name: "WDF verification"
         href: wdf-verification.md
     - name: "Using Driver Verifier"
-      href: using-driver-verifier.md
+# Auto-expanded node
       items: 
+      - name: "Using Driver Verifier"
+        href: using-driver-verifier.md
       - name: "The Verifier Utility"
-        href: the-verifier-utility.md
+# Auto-expanded node
         items: 
+        - name: "The Verifier Utility"
+          href: the-verifier-utility.md
         - name: "Driver Verifier Manager (Windows 2000)"
           href: driver-verifier-manager--windows-2000-.md
         - name: "Driver Verifier Manager (Windows XP and later)"
           href: driver-verifier-manager--windows-xp-and-later-.md
       - name: "Controlling Driver Verifier"
-        href: controlling-driver-verifier.md
+# Auto-expanded node
         items: 
+        - name: "Controlling Driver Verifier"
+          href: controlling-driver-verifier.md
         - name: "Selecting Driver Verifier Options"
           href: selecting-driver-verifier-options.md
         - name: "Selecting Drivers to be Verified"
@@ -640,8 +712,10 @@
         - name: "Using the Global Flags Utility"
           href: using-the-global-flags-utility.md
       - name: "Monitoring Driver Verifier"
-        href: monitoring-driver-verifier.md
+# Auto-expanded node
         items: 
+        - name: "Monitoring Driver Verifier"
+          href: monitoring-driver-verifier.md
         - name: "Monitoring Global Counters"
           href: monitoring-global-counters.md
         - name: "Monitoring Individual Counters"
@@ -649,8 +723,10 @@
         - name: "Creating Log Files"
           href: creating-log-files.md
     - name: "Debugging Bug Check 0xC4: DRIVER_VERIFIER_DETECTED_VIOLATION"
-      href: debugging-bug-check-0xc4--driver-verifier-detected-violation.md
+# Auto-expanded node
       items: 
+      - name: "Debugging Bug Check 0xC4: DRIVER_VERIFIER_DETECTED_VIOLATION"
+        href: debugging-bug-check-0xc4--driver-verifier-detected-violation.md
       - name: "Debugging memory leaks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4): 0x62"
         href: debugging-memory-leaks---driver-verifier-detected-violation--c4---0x62.md
       - name: "Debugging deadlocks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4): 0x1001"
@@ -660,11 +736,15 @@
       - name: "Debugging NDIS/WiFi time-out errors - DRIVER_VERIFIER_DETECTED_VIOLATION (C4)"
         href: debugging-ndis-wifi-timeouts---driver-verifier-detected-violation--c4---0x92003--etc-.md
   - name: "DDI Compliance Rules"
-    href: static-driver-verifier-rules.md
+# Auto-expanded node
     items: 
+    - name: "DDI Compliance Rules"
+      href: static-driver-verifier-rules.md
     - name: "Rules for Audio Drivers"
-      href: rules-for-audio-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Rules for Audio Drivers"
+        href: rules-for-audio-drivers.md
       - name: "PcAddAdapterDevice"
         href: audio-pcaddadapterdevice.md
       - name: "PcAllocateAndMapPages"
@@ -686,8 +766,10 @@
       - name: "PcUnmapAllocatedPages"
         href: audio-pcunmapallocatedpages.md
     - name: "Rules for AVStream Drivers"
-      href: rules-for-avstream-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Rules for AVStream Drivers"
+        href: rules-for-avstream-drivers.md
       - name: "KsCallbackReturn"
         href: ks-kscallbackreturn.md
       - name: "KsDeviceMutex"
@@ -723,13 +805,17 @@
       - name: "KsTimedProcessingMutex"
         href: ks-kstimedprocessingmutex.md
     - name: "Rules for WDM Drivers"
-      href: sdv-rules-for-wdm-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Rules for WDM Drivers"
+        href: sdv-rules-for-wdm-drivers.md
       - name: "Default rule set (WDM)"
         href: default-rule-set--wdm-.md
       - name: "DDI usage rule set (WDM)"
-        href: ddi-usage-rule-set--wdm-.md
+# Auto-expanded node
         items: 
+        - name: "DDI usage rule set (WDM)"
+          href: ddi-usage-rule-set--wdm-.md
         - name: "DebugBreakUsage"
           href: wdm-debugbreakusage.md
         - name: "NullCheck"
@@ -739,8 +825,10 @@
         - name: "ObsoleteDDIs"
           href: wdm-obsoleteddis.md
       - name: "IrpPending rule set (WDM)"
-        href: irppending-rule-set--wdm-.md
+# Auto-expanded node
         items: 
+        - name: "IrpPending rule set (WDM)"
+          href: irppending-rule-set--wdm-.md
         - name: "MarkDevicePower"
           href: wdm-markdevicepower.md
         - name: "MarkingInterlockedQueuedIrps"
@@ -776,8 +864,10 @@
         - name: "StartDeviceWait4"
           href: wdm-startdevicewait4.md
       - name: "IrpProcessing rule set (WDM)"
-        href: irpprocessing-rule-set--wdm-.md
+# Auto-expanded node
         items: 
+        - name: "IrpProcessing rule set (WDM)"
+          href: irpprocessing-rule-set--wdm-.md
         - name: "CompleteRequest"
           href: wdm-completerequest.md
         - name: "CompleteRequestStatusCheck"
@@ -833,8 +923,10 @@
         - name: "WmiForward"
           href: wdm-wmiforward.md
       - name: "IrpTracking rule set (WDM)"
-        href: irptracking-rule-set--wdm-.md
+# Auto-expanded node
         items: 
+        - name: "IrpTracking rule set (WDM)"
+          href: irptracking-rule-set--wdm-.md
         - name: "IoReleaseRemoveLockAndWaitOutsideRemoveDevice"
           href: wdm-ioreleaseremovelockandwaitoutsideremovedevice.md
         - name: "NsRemoveLockMnRemove"
@@ -900,8 +992,10 @@
         - name: "RemoveLockReleaseWrite"
           href: wdm-removelockreleasewrite.md
       - name: "Irql rule set (WDM)"
-        href: irql-rule-set--wdm-.md
+# Auto-expanded node
         items: 
+        - name: "Irql rule set (WDM)"
+          href: irql-rule-set--wdm-.md
         - name: "ForwardedAtBadIrql"
           href: wdm-forwardedatbadirql.md
         - name: "ForwardedAtBadIrqlAllocate"
@@ -979,8 +1073,10 @@
         - name: "IrqlZwPassive"
           href: wdm-irqlzwpassive.md
       - name: "LocalIrpProcessing rule set (WDM)"
-        href: localirpprocessing-rule-set--wdm-.md
+# Auto-expanded node
         items: 
+        - name: "LocalIrpProcessing rule set (WDM)"
+          href: localirpprocessing-rule-set--wdm-.md
         - name: "IoAllocateComplete"
           href: wdm-ioallocatecomplete.md
         - name: "IoAllocateFree"
@@ -1026,8 +1122,10 @@
         - name: "RequestedPowerIrp"
           href: wdm-requestedpowerirp.md
       - name: "Locking rule set (WDM)"
-        href: locking-rule-set--wdm-.md
+# Auto-expanded node
         items: 
+        - name: "Locking rule set (WDM)"
+          href: locking-rule-set--wdm-.md
         - name: "CancelSpinLock"
           href: wdm-cancelspinlock.md
         - name: "CancelSpinlockRelease"
@@ -1053,8 +1151,10 @@
         - name: "WithinCriticalRegion"
           href: wdm-withincriticalregion.md
       - name: "Miscellaneous rule set (WDM)"
-        href: miscellaneous-rule-set--wdm-.md
+# Auto-expanded node
         items: 
+        - name: "Miscellaneous rule set (WDM)"
+          href: miscellaneous-rule-set--wdm-.md
         - name: "AddDevice"
           href: wdm-adddevice.md
         - name: "DanglingDeviceObjectReference"
@@ -1068,8 +1168,10 @@
         - name: "ZwRegistryOpen"
           href: wdm-zwregistryopen.md
       - name: "Warning rule set (WDM)"
-        href: warning-rule-set--wdm-.md
+# Auto-expanded node
         items: 
+        - name: "Warning rule set (WDM)"
+          href: warning-rule-set--wdm-.md
         - name: "CheckDeviceObjectFlags"
           href: wdm-checkdeviceobjectflags.md
         - name: "CompletionEventChecking"
@@ -1085,13 +1187,17 @@
         - name: "ReservedDDIs"
           href: wdm-reservedddis.md
     - name: "Rules for KMDF Drivers"
-      href: sdv-rules-for-kmdf-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Rules for KMDF Drivers"
+        href: sdv-rules-for-kmdf-drivers.md
       - name: "Default rule set (KMDF)"
         href: default-rule-set--kmdf-.md
       - name: "DDI usage rule set (KMDF)"
-        href: ddi-usage-rule-set--kmdf-.md
+# Auto-expanded node
         items: 
+        - name: "DDI usage rule set (KMDF)"
+          href: ddi-usage-rule-set--kmdf-.md
         - name: "BufAfterReqCompletedIoctl"
           href: kmdf-bufafterreqcompletedioctl.md
         - name: "BufAfterReqCompletedIntIoctl"
@@ -1187,8 +1293,10 @@
         - name: "InputBufferAPI"
           href: kmdf-inputbufferapi.md
       - name: "IrpProcessing rule set (KMDF)"
-        href: irpprocessing-rule-set--kmdf-.md
+# Auto-expanded node
         items: 
+        - name: "IrpProcessing rule set (KMDF)"
+          href: irpprocessing-rule-set--kmdf-.md
         - name: "FwdIrpToIoQueueValid"
           href: kmdf-fwdirptoioqueuevalid.md
         - name: "SetCompletionRoutineFromDispatch"
@@ -1196,8 +1304,10 @@
         - name: "MiniportOnlyWdmDevice"
           href: kmdf-miniportonlywdmdevice.md
       - name: "Irql rule set (KMDF)"
-        href: irql-rule-set--kmdf-.md
+# Auto-expanded node
         items: 
+        - name: "Irql rule set (KMDF)"
+          href: irql-rule-set--kmdf-.md
         - name: "KmdfIrql"
           href: kmdf-kmdfirql.md
         - name: "KmdfIrql2"
@@ -1213,8 +1323,10 @@
         - name: "WdfRequestSendSyncAtDispatch2"
           href: wdfrequestsendsyncatdispatch2.md
       - name: "Locking rule set (KMDF)"
-        href: locking-rule-set--kmdf-.md
+# Auto-expanded node
         items: 
+        - name: "Locking rule set (KMDF)"
+          href: locking-rule-set--kmdf-.md
         - name: "ParentObjectCheckLock"
           href: kmdf-parentobjectchecklock.md
         - name: "ReqSendWhileSpinlock"
@@ -1238,8 +1350,10 @@
         - name: "WdfWaitlockRelease"
           href: kmdf-wdfwaitlockrelease.md
       - name: "Miscellaneous rule set (KMDF)"
-        href: miscellaneous-rule-set--kmdf-.md
+# Auto-expanded node
         items: 
+        - name: "Miscellaneous rule set (KMDF)"
+          href: miscellaneous-rule-set--kmdf-.md
         - name: "AccessHardwareKey"
           href: kmdf-accesshardwarekey.md
         - name: "AddPdotoStaticChildlist"
@@ -1253,8 +1367,10 @@
         - name: "NonPnPDrvPowerPolicyOwnerAPI"
           href: kmdf-nonpnpdrvpowerpolicyownerapi.md
       - name: "RequestProcessing rule set (KMDF)"
-        href: requestprocessing-rule-set--kmdf-.md
+# Auto-expanded node
         items: 
+        - name: "RequestProcessing rule set (KMDF)"
+          href: requestprocessing-rule-set--kmdf-.md
         - name: "ChangeQueueState"
           href: kmdf-changequeuestate.md
         - name: "CompleteCanceledReq"
@@ -1316,8 +1432,10 @@
         - name: "WriteReqs"
           href: kmdf-writereqs.md
       - name: "Usb rule set (KMDF)"
-        href: usb-rule-set--kmdf-.md
+# Auto-expanded node
         items: 
+        - name: "Usb rule set (KMDF)"
+          href: usb-rule-set--kmdf-.md
         - name: "FailD0EntryIoTargetState"
           href: kmdf-faild0entryiotargetstate.md
         - name: "UsbContReader"
@@ -1329,8 +1447,10 @@
         - name: "UsbDeviceCreateTarget"
           href: kmdf-usbdevicecreatetarget.md
       - name: "Warning rule set (KMDF)"
-        href: warning-rule-set--kmdf-.md
+# Auto-expanded node
         items: 
+        - name: "Warning rule set (KMDF)"
+          href: warning-rule-set--kmdf-.md
         - name: "DeferredRequestCompleted"
           href: kmdf-deferredrequestcompleted.md
         - name: "DriverAttributeChanged"
@@ -1366,13 +1486,17 @@
         - name: "SyncReqSend2"
           href: kmdf-syncreqsend2.md
     - name: "Rules for NDIS Drivers"
-      href: sdv-rules-for-ndis-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Rules for NDIS Drivers"
+        href: sdv-rules-for-ndis-drivers.md
       - name: "Default rule set (NDIS)"
         href: default-rule-set--ndis-.md
       - name: "DDI usage rule set (NDIS)"
-        href: ddi-usage-rule-set--ndis-.md
+# Auto-expanded node
         items: 
+        - name: "DDI usage rule set (NDIS)"
+          href: ddi-usage-rule-set--ndis-.md
         - name: "Init_DeRegisterInterrupt"
           href: ndis-init-deregisterinterrupt.md
         - name: "Init_NdisAllocateIoWorkItem"
@@ -1388,8 +1512,10 @@
         - name: "NullCheck"
           href: nullcheckn.md
       - name: "IRQL rule set (NDIS)"
-        href: irql-rule-set--ndis-.md
+# Auto-expanded node
         items: 
+        - name: "IRQL rule set (NDIS)"
+          href: irql-rule-set--ndis-.md
         - name: "Flags_Irql"
           href: ndis-flags-irql.md
         - name: "Irql_CallManager_Function"
@@ -1431,8 +1557,10 @@
         - name: "Irql_Timer_Function"
           href: ndis-irql-timer-function.md
       - name: "Locking rule set (NDIS)"
-        href: locking-rule-set--ndis-.md
+# Auto-expanded node
         items: 
+        - name: "Locking rule set (NDIS)"
+          href: locking-rule-set--ndis-.md
         - name: "SpinLock"
           href: ndis-spinlock.md
         - name: "SpinLockBalanced"
@@ -1444,8 +1572,10 @@
         - name: "SpinLockRelease"
           href: ndis-spinlockrelease.md
       - name: "Memory usage rule set (NDIS)"
-        href: memory-usage-rule-set--ndis-.md
+# Auto-expanded node
         items: 
+        - name: "Memory usage rule set (NDIS)"
+          href: memory-usage-rule-set--ndis-.md
         - name: "NdisAllocateGenericObject"
           href: ndis-ndisallocategenericobject.md
         - name: "NdisAllocateMdl"
@@ -1463,8 +1593,10 @@
         - name: "NdisMRegisterIoPortRange"
           href: ndis-ndismregisterioportrange.md
       - name: "Miscellaneous rule set (NDIS)"
-        href: miscellaneous-rule-set--ndis-.md
+# Auto-expanded node
         items: 
+        - name: "Miscellaneous rule set (NDIS)"
+          href: miscellaneous-rule-set--ndis-.md
         - name: "CancelTimerObject"
           href: ndis-canceltimerobject.md
         - name: "MiniportPause_Return"
@@ -1480,8 +1612,10 @@
         - name: "WriteErrorLog"
           href: ndis-writeerrorlog.md
       - name: "OidProcessing rule set (NDIS)"
-        href: oidprocessing-rule-set--ndis-.md
+# Auto-expanded node
         items: 
+        - name: "OidProcessing rule set (NDIS)"
+          href: oidprocessing-rule-set--ndis-.md
         - name: "DoubleComplete"
           href: ndis-doublecomplete.md
         - name: "DoubleCompleteWorkItem"
@@ -1489,13 +1623,17 @@
         - name: "NdisMNetPnPEventInOIDRequest"
           href: ndis-ndismnetpnpeventinoidrequest.md
       - name: "Warning rule set (NDIS)"
-        href: warning-rule-set--ndis-.md
+# Auto-expanded node
         items: 
+        - name: "Warning rule set (NDIS)"
+          href: warning-rule-set--ndis-.md
         - name: "NdisStallExecution_Delay"
           href: ndis-ndisstallexecution-delay.md
       - name: "NDIS/WIFI verification rule set"
-        href: ndis-wifi-verification-rule-set.md
+# Auto-expanded node
         items: 
+        - name: "NDIS/WIFI verification rule set"
+          href: ndis-wifi-verification-rule-set.md
         - name: "NdisFilterTimedDataReceive"
           href: ndisfiltertimeddatareceive.md
         - name: "NdisFilterTimedDataSend"
@@ -1531,13 +1669,17 @@
         - name: "WlanTimedLinkQuality"
           href: ndis-wlantimedlinkquality.md
     - name: "Rules for Storport Drivers"
-      href: sdv-rules-for-storport-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Rules for Storport Drivers"
+        href: sdv-rules-for-storport-drivers.md
       - name: "Default rule set (Storport)"
         href: default-rule-set--storport-.md
       - name: "DDI usage rule set (Storport)"
-        href: ddi-usage-rule-set--storport-.md
+# Auto-expanded node
         items: 
+        - name: "DDI usage rule set (Storport)"
+          href: ddi-usage-rule-set--storport-.md
         - name: "HwStorPortProhibitedDDIs"
           href: storport-hwstorportprohibitedddis.md
         - name: "NullCheck"
@@ -1547,8 +1689,10 @@
         - name: "StorPortDeprecated"
           href: storport-storportdeprecated.md
       - name: "Irql rule set (Storport)"
-        href: irql-rule-set--storport-.md
+# Auto-expanded node
         items: 
+        - name: "Irql rule set (Storport)"
+          href: irql-rule-set--storport-.md
         - name: "IrqlDispatch"
           href: storport-irqldispatch.md
         - name: "IrqlKeReleaseSpinLock"
@@ -1560,8 +1704,10 @@
         - name: "StorPortIrql"
           href: storport-storportirql.md
       - name: "Locking rule set (Storport)"
-        href: locking-rule-set--storport-.md
+# Auto-expanded node
         items: 
+        - name: "Locking rule set (Storport)"
+          href: locking-rule-set--storport-.md
         - name: "CancelSpinLock"
           href: storport-cancelspinlock.md
         - name: "QueuedSpinLock"
@@ -1585,8 +1731,10 @@
         - name: "StorPortSpinLock4"
           href: storport-storportspinlock4.md
       - name: "SrbProcessing rule set (Storport)"
-        href: srbprocessing-rule-set--storport-.md
+# Auto-expanded node
         items: 
+        - name: "SrbProcessing rule set (Storport)"
+          href: srbprocessing-rule-set--storport-.md
         - name: "SpDuplex"
           href: storport-spduplex.md
         - name: "SpNoWait"
@@ -1616,8 +1764,10 @@
         - name: "StorPortTimer"
           href: storport-storporttimer.md
       - name: "VirtualStorport rule set (Storport)"
-        href: virtualstorport-rule-set--storport-.md
+# Auto-expanded node
         items: 
+        - name: "VirtualStorport rule set (Storport)"
+          href: virtualstorport-rule-set--storport-.md
         - name: "DoubleExFreePool"
           href: storport-doubleexfreepool.md
         - name: "DoubleKeSetEvent"
@@ -1635,27 +1785,35 @@
         - name: "ZwRegistryOpen"
           href: storport-zwregistryopen.md
       - name: "Warning rule set (Storport)"
-        href: warning-rule-set--storport-.md
+# Auto-expanded node
         items: 
+        - name: "Warning rule set (Storport)"
+          href: warning-rule-set--storport-.md
         - name: "PagedCode"
           href: storport-pagedcode.md
         - name: "StorPortStatusPending"
           href: storport-storportstatuspending.md
   - name: "Static Driver Verifier"
-    href: static-driver-verifier.md
+# Auto-expanded node
     items: 
+    - name: "Static Driver Verifier"
+      href: static-driver-verifier.md
     - name: "Using Static Driver Verifier to Find Defects in Windows Drivers"
       href: using-static-driver-verifier-to-find-defects-in-drivers.md
     - name: "Static Driver Verifier commands (MSBuild)"
       href: -static-driver-verifier-commands--msbuild-.md
     - name: "Introducing Static Driver Verifier"
-      href: introducing-static-driver-verifier.md
+# Auto-expanded node
       items: 
+      - name: "Introducing Static Driver Verifier"
+        href: introducing-static-driver-verifier.md
       - name: "Understanding Static Driver Verifier"
         href: understanding-static-driver-verifier.md
       - name: "Static Driver Verifier Concepts"
-        href: static-driver-verifier-concepts.md
+# Auto-expanded node
         items: 
+        - name: "Static Driver Verifier Concepts"
+          href: static-driver-verifier-concepts.md
         - name: "Static Driver Verifier Rule"
           href: static-driver-verifier-rule.md
         - name: "Operating System Model"
@@ -1667,8 +1825,10 @@
         - name: "Passing and Failing a Verification"
           href: passing-and-failing-a-verification.md
         - name: "Library Processing in Static Driver Verifier"
-          href: library-processing-in-static-driver-verifier.md
+# Auto-expanded node
           items: 
+          - name: "Library Processing in Static Driver Verifier"
+            href: library-processing-in-static-driver-verifier.md
           - name: "Processing a Library"
             href: processing-a-library.md
           - name: "Reprocessing a Library"
@@ -1676,8 +1836,10 @@
       - name: "Supported Drivers"
         href: supported-drivers.md
       - name: "Static Driver Verifier Limitations"
-        href: static-driver-verifier-limitations.md
+# Auto-expanded node
         items: 
+        - name: "Static Driver Verifier Limitations"
+          href: static-driver-verifier-limitations.md
         - name: "Determining if Static Driver Verifier supports your driver or library"
           href: determining-if-static-driver-verifier-supports-your-driver-or-library.md
         - name: "Static Driver Verifier General Tool and Technical Limitations"
@@ -1689,11 +1851,15 @@
         - name: "Using __sdv_save_adapter_context to Track Adapter Context Fields"
           href: using---sdv-save-adapter-context-to-track-adapter-context-fields.md
     - name: "Using Static Driver Verifier"
-      href: using-static-driver-verifier.md
+# Auto-expanded node
       items: 
+      - name: "Using Static Driver Verifier"
+        href: using-static-driver-verifier.md
       - name: "Using Function Role Type Declarations"
-        href: using-function-role-type-declarations.md
+# Auto-expanded node
         items: 
+        - name: "Using Function Role Type Declarations"
+          href: using-function-role-type-declarations.md
         - name: "Declaring Functions by Using Function Role Types for KMDF Drivers"
           href: declaring-functions-by-using-function-role-types-for-kmdf-drivers.md
         - name: "Declaring Functions Using Function Role Types for WDM Drivers"
@@ -1713,11 +1879,15 @@
       - name: "Using SDV and the Sample Drivers"
         href: using-sdv-and-the-sample-drivers.md
     - name: "Static Driver Verifier Report"
-      href: static-driver-verifier-report.md
+# Auto-expanded node
       items: 
+      - name: "Static Driver Verifier Report"
+        href: static-driver-verifier-report.md
       - name: "Trace Viewer"
-        href: defect-viewer.md
+# Auto-expanded node
         items: 
+        - name: "Trace Viewer"
+          href: defect-viewer.md
         - name: "Understanding the Trace Viewer"
           href: understanding-the-defect-viewer.md
         - name: "Opening and Closing the Trace Viewer"
@@ -1727,11 +1897,15 @@
         - name: "Changing the Text Size in the Defect Viewer"
           href: changing-the-text-size-in-the-defect-viewer.md
       - name: "Static Driver Verifier Report Panes"
-        href: static-driver-verifier-report-panes.md
+# Auto-expanded node
         items: 
+        - name: "Static Driver Verifier Report Panes"
+          href: static-driver-verifier-report-panes.md
         - name: "Trace Tree Pane"
-          href: trace-tree-pane.md
+# Auto-expanded node
           items: 
+          - name: "Trace Tree Pane"
+            href: trace-tree-pane.md
           - name: "Understanding the Trace Tree Pane"
             href: understanding-the-trace-tree-pane.md
           - name: "Color Coding in the Trace Tree Pane"
@@ -1739,8 +1913,10 @@
           - name: "Trace Tree Pane Actions"
             href: trace-tree-pane-actions.md
         - name: "Source Code Pane"
-          href: source-code-pane.md
+# Auto-expanded node
           items: 
+          - name: "Source Code Pane"
+            href: source-code-pane.md
           - name: "Understanding the Source Code Pane"
             href: understanding-the-source-code-pane.md
           - name: "Using the Source Code Pane"
@@ -1754,20 +1930,26 @@
         - name: "State Pane"
           href: state-pane.md
     - name: "Static Driver Verifier Reference"
-      href: static-driver-verifier-reference.md
+# Auto-expanded node
       items: 
+      - name: "Static Driver Verifier Reference"
+        href: static-driver-verifier-reference.md
       - name: "Static Driver Verifier KMDF Function Declarations"
         href: static-driver-verifier-kmdf-function-declarations.md
       - name: "Static Driver Verifier NDIS Function Declarations"
         href: static-driver-verifier-ndis-function-declarations.md
       - name: "Static Driver Verifier Input Files"
-        href: static-driver-verifier-input-files.md
+# Auto-expanded node
         items: 
+        - name: "Static Driver Verifier Input Files"
+          href: static-driver-verifier-input-files.md
         - name: "Static Driver Verifier Rule List File"
           href: static-driver-verifier-rule-list-file.md
         - name: "Static Driver Verifier Options File"
-          href: static-driver-verifier-options-file.md
+# Auto-expanded node
           items: 
+          - name: "Static Driver Verifier Options File"
+            href: static-driver-verifier-options-file.md
           - name: "Global and Local Options Files"
             href: global-and-local-options-files.md
           - name: "Option File Fields"
@@ -1775,13 +1957,17 @@
           - name: "Option File Examples"
             href: option-file-examples.md
       - name: "Static Driver Verifier Output Files"
-        href: static-driver-verifier-output-files.md
+# Auto-expanded node
         items: 
+        - name: "Static Driver Verifier Output Files"
+          href: static-driver-verifier-output-files.md
         - name: "Command-Line Output"
           href: command-line-output.md
         - name: "Sdv-map.h"
-          href: sdv-map-h.md
+# Auto-expanded node
           items: 
+          - name: "Sdv-map.h"
+            href: sdv-map-h.md
           - name: "Understanding the Sdv-map.h File"
             href: understanding-the-sdv-map-h-file.md
           - name: "Format of the Sdv-map.h File"
@@ -1793,15 +1979,19 @@
       - name: "Static Driver Verifier Error Codes"
         href: static-driver-verifier-error-codes.md
       - name: "Static Driver Verifier Error Messages"
-        href: static-driver-verifier-error-messages.md
+# Auto-expanded node
         items: 
+        - name: "Static Driver Verifier Error Messages"
+          href: static-driver-verifier-error-messages.md
         - name: "The process cannot access the file &lt;Path&gt; because it is being used by another process"
           href: the-process-cannot-access-the-file---path---because-it-is-being-used-b.md
       - name: "Static Driver Verifier Diagnostics"
         href: static-driver-verifier-diagnostics.md
   - name: "WDF Verifier Control Application"
-    href: wdf-verifier-control-application.md
+# Auto-expanded node
     items: 
+    - name: "WDF Verifier Control Application"
+      href: wdf-verifier-control-application.md
     - name: "WDF Drivers Tab"
       href: wdf-drivers-tab.md
     - name: "Devices Using WDF Tab"
@@ -1813,11 +2003,15 @@
     - name: "My Preferences Tab"
       href: my-preferences-tab.md
   - name: "WdfTester: WDF Driver Testing Toolset"
-    href: wdftester--wdf-driver-testing-toolset.md
+# Auto-expanded node
     items: 
+    - name: "WdfTester: WDF Driver Testing Toolset"
+      href: wdftester--wdf-driver-testing-toolset.md
     - name: "WDF DDI Fault Injection Tester (WdfFiTester) "
-      href: wdf-ddi-fault-injection-tester--wdffitester-.md
+# Auto-expanded node
       items: 
+      - name: "WDF DDI Fault Injection Tester (WdfFiTester) "
+        href: wdf-ddi-fault-injection-tester--wdffitester-.md
       - name: "WdfFiTester Overview"
         href: wdffitester-overview.md
       - name: "WdfTester Installation"
@@ -1829,13 +2023,17 @@
     - name: "KMDF Functions that Return NSTATUS Codes"
       href: wdftester-functions-that-return-nstatus-codes.md
 - name: "Tools for Software Tracing"
-  href: tools-for-software-tracing.md
+# Auto-expanded node
   items: 
+  - name: "Tools for Software Tracing"
+    href: tools-for-software-tracing.md
   - name: "Survey of Software Tracing Tools"
     href: survey-of-software-tracing-tools.md
   - name: "Tracing Tool Concepts"
-    href: tracing-tool-concepts.md
+# Auto-expanded node
     items: 
+    - name: "Tracing Tool Concepts"
+      href: tracing-tool-concepts.md
     - name: "Trace Log"
       href: trace-log.md
     - name: "Trace Provider"
@@ -1873,28 +2071,38 @@
     - name: "Registered Provider"
       href: registered-provider.md
   - name: "TraceView"
-    href: traceview.md
+# Auto-expanded node
     items: 
+    - name: "TraceView"
+      href: traceview.md
     - name: "TraceView Overview"
-      href: traceview-overview.md
+# Auto-expanded node
       items: 
+      - name: "TraceView Overview"
+        href: traceview-overview.md
       - name: "TraceView Concepts"
         href: traceview-concepts.md
       - name: "TraceView Limitations"
         href: traceview-limitations.md
     - name: "Using TraceView"
-      href: using-traceview.md
+# Auto-expanded node
       items: 
+      - name: "Using TraceView"
+        href: using-traceview.md
       - name: "TraceView Basics"
-        href: traceview-basics.md
+# Auto-expanded node
         items: 
+        - name: "TraceView Basics"
+          href: traceview-basics.md
         - name: "Preparing to Use TraceView"
           href: preparing-to-use-traceview.md
         - name: "Starting and Exiting TraceView"
           href: starting-and-exiting-traceview.md
       - name: "Creating a Trace Session"
-        href: creating-a-trace-session.md
+# Auto-expanded node
         items: 
+        - name: "Creating a Trace Session"
+          href: creating-a-trace-session.md
         - name: "Creating a Trace Session with a PDB File"
           href: creating-a-trace-session-with-a-pdb-file.md
         - name: "Creating a Trace Session with a CTL File"
@@ -1910,22 +2118,28 @@
         - name: "Removing a Trace Provider"
           href: removing-a-trace-provider.md
         - name: "Setting Basic Trace Session Options"
-          href: setting-basic-trace-session-options.md
+# Auto-expanded node
           items: 
+          - name: "Setting Basic Trace Session Options"
+            href: setting-basic-trace-session-options.md
           - name: "How to Set Basic Trace Session Options"
             href: how-to-set-basic-trace-session-options.md
           - name: "Basic Trace Session Options"
             href: basic-trace-session-options.md
         - name: "Selecting Flags and Levels"
-          href: selecting-flags-and-levels.md
+# Auto-expanded node
           items: 
+          - name: "Selecting Flags and Levels"
+            href: selecting-flags-and-levels.md
           - name: "Opening the Tracing Flags and Level Selection dialog box"
             href: opening-the-tracing-flags-and-level-selection-dialog-box.md
           - name: "Using the Tracing Flags and Level Selection dialog box"
             href: using-the-tracing-flags-and-level-selection-dialog-box.md
         - name: "Setting Advanced Trace Session Options"
-          href: setting-advanced-trace-session-options.md
+# Auto-expanded node
           items: 
+          - name: "Setting Advanced Trace Session Options"
+            href: setting-advanced-trace-session-options.md
           - name: "How to set advanced trace session options"
             href: how-to-set-advanced-trace-session-options.md
           - name: "Output File Options"
@@ -1933,8 +2147,10 @@
           - name: "Log Session Parameter Options"
             href: log-session-parameter-options.md
       - name: "Displaying a Trace Log"
-        href: displaying-a-trace-log.md
+# Auto-expanded node
         items: 
+        - name: "Displaying a Trace Log"
+          href: displaying-a-trace-log.md
         - name: "Displaying a Trace Log with a PDB File"
           href: displaying-a-trace-log-with-a-pdb-file.md
         - name: "Displaying a Trace Log with a TMF File"
@@ -1950,20 +2166,26 @@
       - name: "Removing a Trace Session"
         href: removing-a-trace-session.md
       - name: "Using the TraceView Window"
-        href: using-the-traceview-window.md
+# Auto-expanded node
         items: 
+        - name: "Using the TraceView Window"
+          href: using-the-traceview-window.md
         - name: "Initial View"
           href: initial-view.md
         - name: "Trace Session List"
-          href: trace-session-list.md
+# Auto-expanded node
           items: 
+          - name: "Trace Session List"
+            href: trace-session-list.md
           - name: "Trace Session List Columns"
             href: trace-session-list-columns.md
           - name: "Trace Session List Features"
             href: trace-session-list-features.md
         - name: "Trace Message Lists"
-          href: trace-message-lists.md
+# Auto-expanded node
           items: 
+          - name: "Trace Message Lists"
+            href: trace-message-lists.md
           - name: "Trace Message List Columns"
             href: trace-message-list-columns.md
           - name: "Trace Message List Features"
@@ -1971,13 +2193,17 @@
       - name: "Resolving TraceView Errors"
         href: resolving-traceview-errors.md
       - name: "Advanced TraceView Features"
-        href: advanced-traceview-features.md
+# Auto-expanded node
         items: 
+        - name: "Advanced TraceView Features"
+          href: advanced-traceview-features.md
         - name: "Creating Text Versions of Trace Logs"
           href: creating-text-versions-of-trace-logs.md
         - name: "Grouping Trace Sessions"
-          href: grouping-trace-sessions.md
+# Auto-expanded node
           items: 
+          - name: "Grouping Trace Sessions"
+            href: grouping-trace-sessions.md
           - name: "Creating Trace Session Groups"
             href: creating-trace-session-groups.md
           - name: "Ungrouping Trace Sessions"
@@ -1987,8 +2213,10 @@
           - name: "Limitations of Grouping"
             href: limitations-of-grouping.md
         - name: "Filtering Trace Messages"
-          href: filtering-trace-messages.md
+# Auto-expanded node
           items: 
+          - name: "Filtering Trace Messages"
+            href: filtering-trace-messages.md
           - name: "Adding a Rule"
             href: adding-a-rule.md
           - name: "Deleting a Rule"
@@ -2002,8 +2230,10 @@
           - name: "Special Actions for Filter Rules"
             href: special-actions-for-filter-rules.md
         - name: "Using TraceView Workspaces"
-          href: using-traceview-workspaces.md
+# Auto-expanded node
           items: 
+          - name: "Using TraceView Workspaces"
+            href: using-traceview-workspaces.md
           - name: "Saving or Resaving a Workspace"
             href: saving-or-resaving-a-workspace.md
           - name: "Opening a Workspace"
@@ -2015,8 +2245,10 @@
           - name: "Limitations of TraceView Workspaces"
             href: limitations-of-traceview-workspaces.md
       - name: "TraceView Command-Line Interface"
-        href: traceview-command-line-interface.md
+# Auto-expanded node
         items: 
+        - name: "TraceView Command-Line Interface"
+          href: traceview-command-line-interface.md
         - name: "TraceView Control Commands"
           href: traceview-control-commands.md
         - name: "TraceView -process"
@@ -2024,20 +2256,26 @@
         - name: "TraceView -parsepdb"
           href: traceview--parsepdb.md
   - name: "Tracelog"
-    href: tracelog.md
+# Auto-expanded node
     items: 
+    - name: "Tracelog"
+      href: tracelog.md
     - name: "Tracelog Command Syntax"
       href: tracelog-command-syntax.md
     - name: "Tracelog Displays"
-      href: tracelog-displays.md
+# Auto-expanded node
       items: 
+      - name: "Tracelog Displays"
+        href: tracelog-displays.md
       - name: "Tracelog Properties Display"
         href: tracelog-properties-display.md
       - name: "Tracelog Enumguid Display"
         href: tracelog-enumguid-display.md
     - name: "Tracelog Examples"
-      href: tracelog-examples.md
+# Auto-expanded node
       items: 
+      - name: "Tracelog Examples"
+        href: tracelog-examples.md
       - name: "Example 1: Basic Start Command"
         href: example-1--basic-start-command.md
       - name: "Example 2: Basic Start Command with Provider"
@@ -2071,20 +2309,26 @@
       - name: "Example 16: Viewing Trace Messages in a Debugger"
         href: example-16--viewing-trace-messages-in-a-debugger.md
   - name: "Tracepdb"
-    href: tracepdb.md
+# Auto-expanded node
     items: 
+    - name: "Tracepdb"
+      href: tracepdb.md
     - name: "Tracepdb Overview"
       href: tracepdb-overview.md
     - name: "Tracepdb Commands"
       href: tracepdb-commands.md
   - name: "Tracefmt"
-    href: tracefmt.md
+# Auto-expanded node
     items: 
+    - name: "Tracefmt"
+      href: tracefmt.md
     - name: "Understanding Tracefmt"
       href: understanding-tracefmt.md
     - name: "Tracefmt Concepts"
-      href: tracefmt-concepts.md
+# Auto-expanded node
       items: 
+      - name: "Tracefmt Concepts"
+        href: tracefmt-concepts.md
       - name: "Tracefmt Output File"
         href: tracefmt-output-file.md
       - name: "Summary Message File"
@@ -2094,8 +2338,10 @@
     - name: "Tracefmt Commands"
       href: tracefmt-commands.md
     - name: "Tracefmt Examples"
-      href: tracefmt-examples.md
+# Auto-expanded node
       items: 
+      - name: "Tracefmt Examples"
+        href: tracefmt-examples.md
       - name: "Example 1: No Parameters"
         href: example-1--no-parameters.md
       - name: "Example 2: Basic Command"
@@ -2115,23 +2361,31 @@
       - name: "Example 9: Creating a TMF file"
         href: example-9--creating-a-tmf-file.md
   - name: "Tracing During Boot"
-    href: tracing-during-boot.md
+# Auto-expanded node
     items: 
+    - name: "Tracing During Boot"
+      href: tracing-during-boot.md
     - name: "Boot-Time Global Logger Session"
-      href: boot-time-global-logger-session.md
+# Auto-expanded node
       items: 
+      - name: "Boot-Time Global Logger Session"
+        href: boot-time-global-logger-session.md
       - name: "How to Create a Boot-Time Global Logger Session"
         href: how-to-create-a-boot-time-global-logger-session.md
     - name: "Logging to the Global Logger Session"
-      href: logging-to-the-global-logger-session.md
+# Auto-expanded node
       items: 
+      - name: "Logging to the Global Logger Session"
+        href: logging-to-the-global-logger-session.md
       - name: "How to Log to the Global Logger Session"
         href: how-to-log-to-the-global-logger-session.md
       - name: "Example: Global Logger Provider "
         href: example--global-logger-provider.md
   - name: "WPP Software Tracing"
-    href: wpp-software-tracing.md
+# Auto-expanded node
     items: 
+    - name: "WPP Software Tracing"
+      href: wpp-software-tracing.md
     - name: "Adding WPP Software Tracing to a Windows Driver"
       href: adding-wpp-software-tracing-to-a-windows-driver.md
     - name: "Inflight Trace Recorder for logging traces"
@@ -2145,11 +2399,15 @@
     - name: "Tracing and Diagnosability for WDF Drivers"
       href: tracing-and-diagnosability-for-wdf-drivers.md
   - name: "Software Tracing FAQ"
-    href: software-tracing-faq.md
+# Auto-expanded node
     items: 
+    - name: "Software Tracing FAQ"
+      href: software-tracing-faq.md
     - name: "Getting Started with Software Tracing"
-      href: getting-started-with-software-tracing.md
+# Auto-expanded node
       items: 
+      - name: "Getting Started with Software Tracing"
+        href: getting-started-with-software-tracing.md
       - name: "Where are the tracing tools?"
         href: where-are-the-tracing-tools-.md
       - name: "Where are the tracing samples?"
@@ -2161,8 +2419,10 @@
       - name: "What is an autologger?"
         href: what-is-an-autologger-.md
     - name: "Managing Trace Sessions"
-      href: managing-trace-sessions.md
+# Auto-expanded node
       items: 
+      - name: "Managing Trace Sessions"
+        href: managing-trace-sessions.md
       - name: "Can I see trace messages as they are generated?"
         href: can-i-see-trace-messages-as-they-are-generated-.md
       - name: "How do I update the flags in a running trace session?"
@@ -2170,8 +2430,10 @@
       - name: "How do I change the prefix output on every trace line?"
         href: how-do-i-change-the-prefix-output-on-every-trace-line-.md
     - name: "Basic Software Tracing"
-      href: basic-software-tracing.md
+# Auto-expanded node
       items: 
+      - name: "Basic Software Tracing"
+        href: basic-software-tracing.md
       - name: "What is the performance cost of software tracing?"
         href: what-is-the-performance-cost-of-software-tracing-.md
       - name: "Can I optimize the conditional checks that the WPP macros produce before the tracing?"
@@ -2187,8 +2449,10 @@
       - name: "How do I include the source line number in the trace message prefix?"
         href: how-do-i-include-the-source-line-number-in-the-trace-message-prefix-.md
     - name: "System and Language Support for Software Tracing"
-      href: system-and-language-support-for-software-tracing.md
+# Auto-expanded node
       items: 
+      - name: "System and Language Support for Software Tracing"
+        href: system-and-language-support-for-software-tracing.md
       - name: "How do I implement software tracing for Windows XP and later versions of Windows?"
         href: how-do-i-implement-software-tracing-for-windows-xp-and-later-versions-.md
       - name: "How do I add tracing to a driver or export driver written in C++?"
@@ -2202,8 +2466,10 @@
       - name: "How Do I Enable WPP Tracing Through the Windows Event Log Service?"
         href: enabling-wpp-tracing-through-windows-event-log.md
     - name: "Debugging Support for Software Tracing"
-      href: debugging-support-for-software-tracing.md
+# Auto-expanded node
       items: 
+      - name: "Debugging Support for Software Tracing"
+        href: debugging-support-for-software-tracing.md
       - name: "How do I send trace messages to a kernel debugger?"
         href: how-do-i-send-trace-messages-to-a-kernel-debugger-.md
       - name: "How do I send trace messages to a user-mode debugger?"
@@ -2213,8 +2479,10 @@
       - name: "How do I enable debugging without starting an ETW trace session?"
         href: how-do-i-enable-debugging-without-starting-an-etw-trace-session-.md
     - name: "Customizing Software Tracing"
-      href: customizing-software-tracing.md
+# Auto-expanded node
       items: 
+      - name: "Customizing Software Tracing"
+        href: customizing-software-tracing.md
       - name: "What is the Defaultwpp.ini file?"
         href: what-is-the-defaultwpp-ini-file-.md
       - name: "Can I customize DoTraceMessage?"
@@ -2232,8 +2500,10 @@
       - name: "Do I need to call WPP_CHECK_FOR_NULL_STRING?"
         href: do-i-need-to-call-wpp-check-for-null-string-.md
     - name: "Advanced Software Tracing"
-      href: advanced-software-tracing.md
+# Auto-expanded node
       items: 
+      - name: "Advanced Software Tracing"
+        href: advanced-software-tracing.md
       - name: "How do I generate trace messages from a header file?"
         href: how-do-i-generate-trace-messages-from-a-header-file-.md
       - name: "What happens to NULL strings in tracing code?"
@@ -2263,18 +2533,24 @@
       - name: "How do I use WPP in static libraries?"
         href: how-do-i-use-wpp-in-static-libraries-.md
   - name: "Event Tracing for Windows (ETW)"
-    href: event-tracing-for-windows--etw-.md
+# Auto-expanded node
     items: 
+    - name: "Event Tracing for Windows (ETW)"
+      href: event-tracing-for-windows--etw-.md
     - name: "About Event Tracing for Drivers"
       href: about-event-tracing-for-drivers.md
     - name: "Adding Event Tracing to Kernel-Mode Drivers"
       href: adding-event-tracing-to-kernel-mode-drivers.md
   - name: "TraceLogging API"
-    href: tracelogging-api.md
+# Auto-expanded node
     items: 
+    - name: "TraceLogging API"
+      href: tracelogging-api.md
     - name: "TraceLogging for kernel-mode drivers and components"
-      href: tracelogging-for-kernel-mode-drivers-and-components.md
+# Auto-expanded node
       items: 
+      - name: "TraceLogging for kernel-mode drivers and components"
+        href: tracelogging-for-kernel-mode-drivers-and-components.md
       - name: "Capture and view TraceLogging data"
         href: capture-and-view-tracelogging-data.md
     - name: "TraceLogging Examples"
@@ -2282,21 +2558,29 @@
     - name: "How to fix TraceLogging build errors"
       href: how-to-fix-tracelogging-build-errors.md
   - name: "Kernel Mode Performance Monitoring"
-    href: kernel-mode-performance-monitoring.md
+# Auto-expanded node
     items: 
+    - name: "Kernel Mode Performance Monitoring"
+      href: kernel-mode-performance-monitoring.md
     - name: "About Kernel Mode Performance Counters"
       href: about-kernel-mode-performance-counters.md
     - name: "Using Kernel Mode Performance Counters"
       href: using-kernel-mode-performance-counters.md
 - name: "Additional Driver Tools"
-  href: additional-driver-tools.md
+# Auto-expanded node
   items: 
+  - name: "Additional Driver Tools"
+    href: additional-driver-tools.md
   - name: "Tools for Building Drivers"
-    href: tools-for-building-drivers.md
+# Auto-expanded node
     items: 
+    - name: "Tools for Building Drivers"
+      href: tools-for-building-drivers.md
     - name: "WDK and Visual Studio build environment"
-      href: wdk-and-visual-studio-build-environment.md
+# Auto-expanded node
       items: 
+      - name: "WDK and Visual Studio build environment"
+        href: wdk-and-visual-studio-build-environment.md
       - name: "MSBuild primer for WDK developers"
         href: msbuild-primer-for-wdk-developers.md
       - name: "WDK and MSBuild overview"
@@ -2310,8 +2594,10 @@
       - name: "WDK build output"
         href: wdk-build-output.md
       - name: "WDK tasks for MSBuild"
-        href: wdk-tasks-for-msbuild.md
+# Auto-expanded node
         items: 
+        - name: "WDK tasks for MSBuild"
+          href: wdk-tasks-for-msbuild.md
         - name: "TraceWPP task"
           href: tracewpp-task.md
         - name: "Stampinf task"
@@ -2325,8 +2611,10 @@
         - name: "Ctrpp task"
           href: ctrpp-task.md
     - name: "BinPlace"
-      href: binplace.md
+# Auto-expanded node
       items: 
+      - name: "BinPlace"
+        href: binplace.md
       - name: "BinPlace Capabilities"
         href: binplace-capabilities.md
       - name: "Public Symbols and Private Symbols"
@@ -2336,8 +2624,10 @@
       - name: "BinPlace Destination Directories"
         href: binplace-destination-directories.md
       - name: "Using BinPlace"
-        href: using-binplace.md
+# Auto-expanded node
         items: 
+        - name: "Using BinPlace"
+          href: using-binplace.md
         - name: "BinPlace Command-Line Syntax"
           href: binplace-command-line-syntax.md
         - name: "BinPlace Macros and Environment Variables"
@@ -2345,20 +2635,26 @@
         - name: "Place File Syntax"
           href: place-file-syntax.md
       - name: "BinPlace Examples"
-        href: binplace-examples.md
+# Auto-expanded node
         items: 
+        - name: "BinPlace Examples"
+          href: binplace-examples.md
         - name: "Using BinPlace from the Command Line"
           href: using-binplace-from-the-command-line.md
     - name: "Nmake2MsBuild"
-      href: nmake2msbuild.md
+# Auto-expanded node
       items: 
+      - name: "Nmake2MsBuild"
+        href: nmake2msbuild.md
       - name: "Converting a WDK sources file to a Visual Studio project"
         href: converting-a-wdk-sources-file-to-a-visual-studio-project.md
     - name: "ProjectUpgradeTool"
       href: projectupgradetool.md
   - name: "Tools for Signing Drivers"
-    href: tools-for-signing-drivers.md
+# Auto-expanded node
     items: 
+    - name: "Tools for Signing Drivers"
+      href: tools-for-signing-drivers.md
     - name: "CertMgr"
       href: certmgr.md
     - name: "Inf2Cat"
@@ -2372,93 +2668,47 @@
     - name: "SignTool"
       href: signtool.md
   - name: "Tools for INF Files"
-    href: tools-for-inf-files.md
+# Auto-expanded node
     items: 
+    - name: "Tools for INF Files"
+      href: tools-for-inf-files.md
     - name: "Stampinf"
-      href: stampinf.md
+# Auto-expanded node
       items: 
+      - name: "Stampinf"
+        href: stampinf.md
       - name: "Stampinf Command Options"
         href: stampinf-command-options.md
     - name: "InfVerif"
-      href: infverif.md
+# Auto-expanded node
       items: 
+      - name: "InfVerif"
+        href: infverif.md
       - name: "Running InfVerif from the command line"
         href: running-infverif-from-the-command-line.md
       - name: "INF Validation Errors and Warnings"
-        href: inf-validation-errors-and-warnings.md
+# Auto-expanded node
         items: 
+        - name: "INF Validation Errors and Warnings"
+          href: inf-validation-errors-and-warnings.md
         - name: "InfVerif Error 1330" 
           href: inf-verif-error-1330.md
     - name: "Reg2inf"
       href: reg2inf.md
   - name: "Tools for Changing Boot Options for Driver Testing and Debugging"
-    href: boot-options-for-driver-testing-and-debugging.md
+# Auto-expanded node
     items: 
-    - name: "Introduction to Boot Options"
-      href: introduction-to-boot-options.md
-      items: 
-      - name: "Boot Options in a Boot.ini File"
-        href: boot-options-in-a-boot-ini-file.md
-        items: 
-        - name: "Overview of the Boot.ini File"
-          href: overview-of-the-boot-ini-file.md
-        - name: "Editing the Boot.ini File"
-          href: editing-the-boot-ini-file.md
-        - name: "Backing Up the Boot.ini File"
-          href: backing-up-the-boot-ini-file.md
-      - name: "Boot Options in EFI NVRAM"
-        href: boot-options-in-efi-nvram.md
-        items: 
-        - name: "Overview of Boot Options in EFI"
-          href: overview-of-boot-options-in-efi.md
-        - name: "Editing Boot Options in EFI"
-          href: editing-boot-options-in-efi.md
-        - name: "Backing up Boot Options in EFI"
-          href: backing-up-boot-options-in-efi.md
-          items: 
-          - name: "Exporting and Importing Boot Entries in EFI"
-            href: exporting-and-importing-boot-entries-in-efi.md
-          - name: "Identifying Backup Files for Existing Boot Entries"
-            href: identifying-backup-files-for-existing-boot-entries.md
-          - name: "Identifying Backup Files for Deleted Boot Entries"
-            href: identifying-backup-files-for-deleted-boot-entries.md
-          - name: "Recognizing Unusable Boot Entry Backup Files"
-            href: recognizing-unusable-boot-entry-backup-files.md
-      - name: "Overview of Boot Options in Windows Vista and Later"
-        href: boot-options-in-windows.md
-    - name: "Bypassing Boot Options"
-      href: bypassing-boot-options.md
-    - name: "Editing Boot Options"
-      href: editing-boot-options.md
-      items: 
-      - name: "Adding Boot Entries"
-        href: adding-boot-entries.md
-      - name: "Changing the Friendly Name of a Boot Entry"
-        href: changing-the-friendly-name-of-a-boot-entry.md
-      - name: "Changing Boot Parameters"
-        href: changing-boot-parameters.md
-      - name: "Changing the Default Boot Entry"
-        href: changing-the-default-boot-entry.md
-      - name: "Changing the Boot Menu Time-out"
-        href: changing-the-boot-menu-time-out.md
-    - name: "Using Boot Parameters"
-      href: using-boot-parameters.md
-      items: 
-      - name: "Boot Parameters to Enable Debugging"
-        href: boot-parameters-to-enable-debugging.md
-      - name: "Boot Parameters to Manipulate Memory"
-        href: boot-parameters-to-manipulate-memory.md
-      - name: "Boot Parameters to Load a Partial Checked Build"
-        href: boot-parameters-to-load-a-partial-checked-build.md
-      - name: "Boot Parameters to Enable EMS Redirection"
-        href: boot-parameters-to-enable-ems-redirection.md
-      - name: "Boot Parameters to Configure DEP and PAE"
-        href: boot-parameters-to-configure-dep-and-pae.md
-      - name: "Boot Parameters to Test Drivers for Multiple Processor Group Support"
-        href: boot-parameters-to-test-drivers-for-multiple-processor-group-support.md
+    - name: "Tools for Changing Boot Options for Driver Testing and Debugging"
+      href: boot-options-for-driver-testing-and-debugging.md
+    - name: "Overview of Boot Options in Windows"
+      href: boot-options-in-windows.md
+    - name: "Boot Options Identifiers"
+      href: boot-options-identifiers.md
     - name: "BCDEdit Options Reference"
-      href: bcd-boot-options-reference.md
+# Auto-expanded node
       items: 
+      - name: "BCDEdit Options Reference"
+        href: bcd-boot-options-reference.md
       - name: "BCDEdit /bootdebug"
         href: bcdedit--bootdebug.md
       - name: "BCDEdit /dbgsettings"
@@ -2473,15 +2723,91 @@
         href: bcdedit--emssettings.md
       - name: "BCDEdit /set"
         href: bcdedit--set.md
-  - name: "Tools for Debugging Drivers"
-    href: tools-for-debugging-drivers.md
-    items: 
-    - name: "Using Debugging Code in a Driver"
-      href: using-debugging-code-in-a-driver.md
+    - name: "Editing Boot Options"
+# Auto-expanded node
       items: 
-      - name: "Debugging Code Overview"
-        href: debugging-code-overview.md
+      - name: "Editing Boot Options"
+        href: editing-boot-options.md
+      - name: "Changing Boot Parameters"
+        href: changing-boot-parameters.md
+      - name: "Adding Boot Entries"
+        href: adding-boot-entries.md
+      - name: "Changing the Default Boot Entry"
+        href: changing-the-default-boot-entry.md
+      - name: "Changing the Boot Menu Time-out"
+        href: changing-the-boot-menu-time-out.md
+      - name: "Changing the Friendly Name of a Boot Entry"
+        href: changing-the-friendly-name-of-a-boot-entry.md
+    - name: "Using Boot Parameters"
+# Auto-expanded node
+      items: 
+      - name: "Using Boot Parameters"
+        href: using-boot-parameters.md
+      - name: "Boot Parameters to Enable Debugging"
+        href: boot-parameters-to-enable-debugging.md
+      - name: "Boot Parameters to Manipulate Memory"
+        href: boot-parameters-to-manipulate-memory.md
+      - name: "Boot Parameters to Load a Partial Checked Build"
+        href: boot-parameters-to-load-a-partial-checked-build.md
+      - name: "Boot Parameters to Test Drivers for Multiple Processor Group Support"
+        href: boot-parameters-to-test-drivers-for-multiple-processor-group-support.md
+      - name: "Boot Parameters to Configure DEP and PAE"
+        href: boot-parameters-to-configure-dep-and-pae.md
+      - name: "Boot Parameters to Enable EMS Redirection"
+        href: boot-parameters-to-enable-ems-redirection.md
+    - name: "Boot Options in Previous Versions of Windows"
+# Auto-expanded node
+      items: 
+      - name: "Boot Options in Previous Versions of Windows"
+        href: boot-options-in-previous-versions-of-windows.md
+      - name: "Boot Options in a Boot.ini File"
+# Auto-expanded node
         items: 
+        - name: "Boot Options in a Boot.ini File"
+          href: boot-options-in-a-boot-ini-file.md
+        - name: "Overview of the Boot.ini File"
+          href: overview-of-the-boot-ini-file.md
+        - name: "Editing the Boot.ini File"
+          href: editing-the-boot-ini-file.md
+        - name: "Backing Up the Boot.ini File"
+          href: backing-up-the-boot-ini-file.md
+      - name: "Boot Options in EFI NVRAM"
+# Auto-expanded node
+        items: 
+        - name: "Boot Options in EFI NVRAM"
+          href: boot-options-in-efi-nvram.md
+        - name: "Overview of Boot Options in EFI"
+          href: overview-of-boot-options-in-efi.md
+        - name: "Editing Boot Options in EFI"
+          href: editing-boot-options-in-efi.md
+        - name: "Backing up Boot Options in EFI"
+# Auto-expanded node
+          items: 
+          - name: "Backing up Boot Options in EFI"
+            href: backing-up-boot-options-in-efi.md
+          - name: "Exporting and Importing Boot Entries in EFI"
+            href: exporting-and-importing-boot-entries-in-efi.md
+          - name: "Identifying Backup Files for Existing Boot Entries"
+            href: identifying-backup-files-for-existing-boot-entries.md
+          - name: "Identifying Backup Files for Deleted Boot Entries"
+            href: identifying-backup-files-for-deleted-boot-entries.md
+          - name: "Recognizing Unusable Boot Entry Backup Files"
+            href: recognizing-unusable-boot-entry-backup-files.md
+  - name: "Tools for Debugging Drivers"
+# Auto-expanded node
+    items: 
+    - name: "Tools for Debugging Drivers"
+      href: tools-for-debugging-drivers.md
+    - name: "Using Debugging Code in a Driver"
+# Auto-expanded node
+      items: 
+      - name: "Using Debugging Code in a Driver"
+        href: using-debugging-code-in-a-driver.md
+      - name: "Debugging Code Overview"
+# Auto-expanded node
+        items: 
+        - name: "Debugging Code Overview"
+          href: debugging-code-overview.md
         - name: "Conditional Compilation and the Build Environment"
           href: conditional-compilation-and-the-build-environment.md
         - name: "Breaking Into the Debugger"
@@ -2497,23 +2823,31 @@
     - name: "Using a Debugger"
       href: using-a-debugger.md
   - name: "Tools for Device Metadata Packages"
-    href: tools-for-device-metadata-packages.md
+# Auto-expanded node
     items: 
+    - name: "Tools for Device Metadata Packages"
+      href: tools-for-device-metadata-packages.md
     - name: "ComputerHardwareIds"
-      href: computerhardwareids.md
+# Auto-expanded node
       items: 
+      - name: "ComputerHardwareIds"
+        href: computerhardwareids.md
       - name: "ComputerHardwareIds Overview"
         href: computerhardwareids-overview.md
       - name: "ComputerHardwareIds Output"
         href: computerhardwareids-output.md
     - name: "Device Metadata Authoring Wizard"
-      href: device-metadata-authoring-wizard-portal.md
+# Auto-expanded node
       items: 
+      - name: "Device Metadata Authoring Wizard"
+        href: device-metadata-authoring-wizard-portal.md
       - name: "Installing the Device Metadata Authoring Wizard"
         href: installing-the-device-metadata-authoring-wizard.md
       - name: "Using the Device Metadata Authoring Wizard"
-        href: using-the-authoring-tool.md
+# Auto-expanded node
         items: 
+        - name: "Using the Device Metadata Authoring Wizard"
+          href: using-the-authoring-tool.md
         - name: "Select locales and package type in the Device Metadata Authoring Wizard"
           href: select-locales-and-package-type.md
         - name: "Select device icon in the Device Metadata Authoring Wizard"
@@ -2533,8 +2867,10 @@
         - name: "Creating a device metadata submission package in Visual Studio"
           href: using-the-submission-tool.md
       - name: "Using the Mobile Broadband Metadata Authoring Wizard"
-        href: using-the-mobile-broadband-tool.md
+# Auto-expanded node
         items: 
+        - name: "Using the Mobile Broadband Metadata Authoring Wizard"
+          href: using-the-mobile-broadband-tool.md
         - name: "Select locales and package type in the Mobile Broadband Metadata Authoring Wizard"
           href: select-locales-and-package-type-mbb.md
         - name: "Select service icon in the Mobile Broadband Metadata Authoring Wizard"

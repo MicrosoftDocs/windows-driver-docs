@@ -46,9 +46,9 @@ Issues related to the Universal setting appear as warnings if:
 
 Error codes come in the following classifications:
 
-- [Syntax in the INF file (1100-1299)](#syntax-in-the-inf-file-(1100-1299))
-- [Universal INF (1300-1319)](#universal-inf-(1300-1319))
-- [Installation (2000-2999)](#installation-(2000-2999))
+- [Syntax in the INF file (1100-1299)](#syntax-in-the-inf-file-1100-1299)
+- [Universal INF (1300-1319)](#universal-inf-1300-1319)
+- [Installation (2000-2999)](#installation-2000-2999)
 
 Not all error codes are listed below, as many have self-evident meanings. Errors in the 1000-1099 range are considered self-evident, as they are basic syntax errors.
 
@@ -193,7 +193,23 @@ HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 </tr>
 <tr>
 <td><strong>1296: Specified service not associated with hardware</strong></td>
-<td>This warning appears starting in Windows 10, version 1809, and indicates that the hardware does not have an associated service using the specified install section.
+<td>Starting in Windows 10, version 1809, this has changed from a Warning to an Error.  The .Services sections are required for each defined target OS.  This is good practice and applies to all INFs and not just 1809.  
+
+If you were previously not including this section because you had no services, and were relying on Inbox driver services, then you may need to create a .Services section that references the Inbox INF’s service using a NEEDS and INCLUDES statement.  
+
+For example:  An INF file would have the following .Services section for each OS target to resolve this error.
+
+<pre>
+[XXXXXXXX.Install.NTx86.Services]
+Include=filename.inf
+Needs=inf-section-name.Services
+</pre>
+
+For devices that do not require a function driver, the NULL driver can be specified as follows:
+<pre>
+AddService = ,2.
+</pre>
+<b>Only use this in the case where the INF is installing a non-functional device to specify it does not need a driver.</b>
 </td>
 </tr>
 </tbody>
