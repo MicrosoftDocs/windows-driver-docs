@@ -37,7 +37,9 @@ When the driver receives an [**IRP\_MN\_STOP\_DEVICE**](https://msdn.microsoft.c
 
 The raw resource type indicates which HAL access routine a driver should call (<strong>READ_REGISTER_<em>XXX*</em></strong>, <strong>WRITE_REGISTER_<em>XXX</em></strong>, <strong>READ_PORT_<em>XXX</em></strong>, <strong>WRITE_PORT_<em>XXX</em></strong>). Most drivers do not have to check the raw resource list to determine which of these routines to use, because the driver itself requested the resource or the driver writer knows the required type given the nature of the device hardware.
 
-For a resource in I/O space (**CmResourceTypePort**, **CmResourceTypeInterrupt**, **CmResourceTypeDma**), the driver should use the low-order 32 bits of the returned physical address to access the device resource, for example, through the HAL's read and write <strong>READ_REGISTER_<em>XXX*</em></strong>, <strong>WRITE_REGISTER_<em>XXX</em></strong>, <strong>READ_PORT_<em>XXX</em></strong>, <strong>WRITE_PORT_<em>XXX</em></strong> routines.
+For a resource in I/O space (**CmResourceTypePort**, **CmResourceTypeInterrupt**, **CmResourceTypeDma**), the driver should use the low-order 32 bits of the returned physical address to access the device resource, for example, through the HAL's read and write **READ_REGISTER_*XXX***, **WRITE_REGISTER_*XXX***, **READ_PORT_*XXX***, **WRITE_PORT_*XXX*** routines.
+
+(Is this building?)
 
  
 
