@@ -39,7 +39,6 @@ The raw resource type indicates which HAL access routine a driver should call (<
 
 For a resource in I/O space (**CmResourceTypePort**, **CmResourceTypeInterrupt**, **CmResourceTypeDma**), the driver should use the low-order 32 bits of the returned physical address to access the device resource, for example, through the HAL's read and write **READ_REGISTER_*XXX***, **WRITE_REGISTER_*XXX***, **READ_PORT_*XXX***, **WRITE_PORT_*XXX*** routines.
 
-(Is this building?)
 
  
 
