@@ -84,7 +84,7 @@ Revoking a hardware ID from a shared shipping label will do the following.
 > [!NOTE]
 > If your partner has already published their shared shipping labels to Windows Update, revoking a hardware ID **does not remove** their existing item from the Windows Update Catalog.  It remains published until that partner expires it.
 >
-> Existing shipping lables created by your partner are only allowed to expire content on a deprecated shipping label.
+> Existing shipping labels created by your partner are only allowed to expire content on a deprecated shipping label.
 >
 > The signed driver and DUA Shell packages from a deprecated shipping label can still be downloaded by your partner.
 >
