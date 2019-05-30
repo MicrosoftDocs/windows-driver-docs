@@ -1,5 +1,5 @@
 ---
-title: Gradual rollout of driver distribution
+title: Gradual rollout for driver distribution
 description: Gradual rollout ensures the best driver experience for each system by monitoring telemetry during deployment, speeding and slowing release as indicated.
 author: sillykeith
 ms.author: keithke
