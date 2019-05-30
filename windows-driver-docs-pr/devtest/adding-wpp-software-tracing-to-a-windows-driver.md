@@ -394,6 +394,7 @@ You can use any trace message function you choose, provided the trace message fu
 
 
 <span id="using_dotracemessage"></span><span id="USING_DOTRACEMESSAGE"></span>
+
 **Using DoTraceMessage statements**
 
 1.  Add the [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) macro to your code like you would a debug print routine. The **DoTraceMessage** macro takes 3 parameters: the flag level (*TraceFlagName*), which defines the condition when the trace message is written, the *Message* string, and the optional variable list.
