@@ -34,7 +34,7 @@ Note that during this entire process, the status for your shipping label remains
 
  As you can see in the following chart, it may not take 30 days to reach a driver throttling percentage of 100%. But it will take *about* 30 days from start to finish for your driver's **Status** to progress past the Gradual Rollout phase.
 
- ![]()
+ ![Chart showing the progress of three sample drivers reaching 100% throttled at different rates: 1, 15, and 9 days. All are monitored throughout the 30 day period.](images/gradual-rollout-chart.png)
 
 ## Partner Dev Center UI and usability changes
 
