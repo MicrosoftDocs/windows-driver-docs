@@ -68,4 +68,4 @@ This test configuration is generated from projected traffic of 10,000 SIMs. The 
 | --- | --- | --- | --- |
 | GetBalance | 96% | 1 | 3 |
 
-During test runs, the expected success rate is: 99.9%. On achieving this success rate, the MO API will be ready to enable in the Mobile Plans production service.
+During test runs, the expected success rate is: **99.9%** and average latency: **400ms**. On achieving this success rate, the MO API will be ready to enable in the Mobile Plans production service.
