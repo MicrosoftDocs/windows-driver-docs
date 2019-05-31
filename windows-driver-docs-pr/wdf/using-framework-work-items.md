@@ -43,7 +43,9 @@ To set up a work item, your driver must:
 
     Your driver calls [**WdfWorkItemEnqueue**](https://msdn.microsoft.com/library/windows/hardware/ff551203), which adds the driver's work item to the work-item queue.
 
-When your driver calls [**WdfWorkItemCreate**](https://msdn.microsoft.com/library/windows/hardware/ff551201), it must supply a handle to either a framework device object or a framework queue object. When the system deletes that object, it also deletes any existing work items that are associated with the object.
+When your driver calls [**WdfWorkItemCreate**](https://msdn.microsoft.com/library/windows/hardware/ff551201), it must supply a handle to either a framework device object or a framework queue object. When the system deletes that object, it also deletes any existing work items that are associated with the object. The work item object will be disposed and its associated work-item callback will be cleaned up before the parent object's [*EvtCleanupCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) and [*EvtDestroyCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy) callbacks are invoked.
+
+For more info about the cleanup rules for a framework object hierarchy, see [Framework Object Life Cycle](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-life-cycle).
 
 ### <a href="" id="ddk-using-the-work-item-callback-function-df"></a>Using the Work-Item Callback Function
 
