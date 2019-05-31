@@ -20,10 +20,10 @@ The goal of gradual rollout is to ensure the Windows ecosystem has the best driv
 
 There are two distinct aspect of the Gradual Rollout process that partners should understand.  These are:
 
-- The 30-day **Monitoring** period
+- The 30-day **monitoring** period
   - The 30-day monitoring period begins on the very first day that the driver is throttled and ends roughly 30 days later. This monitoring period does not affect your drivers WU status.
 - The **driver throttling** period
-  - Throttling ranges from 1% to 100% of the Retail Windows population).
+  - Throttling ranges from 1% to 100% of the Retail Windows population.
   - Automation rules govern the percentage progression.
   - When the throttled percentage is at 100% it is completely live on WU to all systems running **Windows 10 version 1709 and later**.  Microsoft will continue to **monitor** the release for rest of the 30 day period.
 
@@ -86,7 +86,7 @@ For **Automatic/Critical** drivers, you can use Device Manager to manually trigg
 
 When your driver reaches 100%, that driver is considered live on WU for all eligible systems running Windows 10 version 1709 and later, even if the monitoring phase has not finished.
 
-### How will Microsoft notify and owner if a driver is paused or cancelled?
+### How will Microsoft notify an owner if a driver is paused or cancelled?
 
 Notification of a paused or cancelled driver is through the shipping label, only.
 
