@@ -410,10 +410,15 @@
       href: mobile-plans-launch.md
     - name: "Appendix"
       href: mobile-plans-appendix.md
+<<<<<<< HEAD
 # Auto-expanded node
       items:
       - name: "Legacy callback notifications"
         href: mobile-plans-legacy-callback-notifications.md
+=======
+  - name: "eSIM management on Windows for mobile operators and OEMs"
+    href: esim-management-on-windows-for-mobile-operators-and-oems.md
+>>>>>>> master
   - name: "Creating and configuring Internet Sharing experiences"
     href: creating-and-configuring-internet-sharing-experiences.md
   - name: "Developing apps using multiple PDP contexts"

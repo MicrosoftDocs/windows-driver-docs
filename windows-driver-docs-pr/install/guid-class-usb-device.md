@@ -45,6 +45,10 @@ Requirements
 </tbody>
 </table>
 
+## Remarks
+
+Previously, this identifier was dependent on `Usbioctl.h`.  Note that you now need to include `Usbiodef.h` instead.
+
 ## See also
 
 
