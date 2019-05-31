@@ -41,7 +41,7 @@ As you can see in the earlier images, **Gradual Rollout** now appears as a new S
 
  ![Screenshot of text below the Gradual Rollout status indicator. The text explains that the label is targeting 100% of its eligible population. Also, the Cancel button is now available to use.](images/gradual-rollout.png)
 
-While your driver is in **Approval** or **Gradual Rollout**, your Shipping Label is locked for any edits or modifications. You can, however, **Cancel** a Shipping Label at that time. The **Cancel** button ends an entire shipping label (expiration). Note that the **Cancel** button is only functional when your driver is in **Approval** or **Gradual Rollout**.
+While your driver is in the **Microsoft Approval** or **Gradual Rollout** phases, your Shipping Label is locked for any edits or modifications. You can, however, **Cancel** a Shipping Label at that time. The **Cancel** button ends an entire shipping label (expiration). Note that the **Cancel** button is only functional when your driver is in the **Microsoft Approval** or **Gradual Rollout** phases.
 
 ## Systems included in the throttled percentages
 
