@@ -96,7 +96,7 @@ For more information see the following topics:
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-If a driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use the debugger dx command to display this - `dx KiBugCheckDriver`.
+If a driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use the debugger [**dx (Display Debugger Object Model Expression)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) command to display this - `dx KiBugCheckDriver`.
 
 Use the [!error](-error.md) extension to display information about the exception code in parameter 1.
 
