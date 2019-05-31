@@ -32,7 +32,7 @@ Windows loads the USB 2.0 driver stack for devices that are attached to eHCI, oH
 
 The USB 3.0 stack is new in Windows 8. Microsoft created the new drivers by using Kernel Mode Driver Framework (KMDF) interfaces. The KMDF driver model reduces complexity and improves stability.
 
-### <a href="" id="usb-3-0-host-controller-driver-usbxhcisys"></a>USB 3.0 host controller driver (Usbxhci.sys)
+### <a href="" id="usb-30-host-controller-driver-usbxhcisys"></a>USB 3.0 host controller driver (Usbxhci.sys)
 
 The xHCI driver is the USB 3.0 host controller driver. The responsibilities of the xHCI driver include initializing MMIO registers and host memory-based data structures for xHCI controller hardware, mapping transfer requests from upper layer drivers to Transfer Request Blocks, and submitting the requests to the hardware. After completing a transfer, the driver handles transfer completion events from the hardware and propagates the events up the driver stack. It also controls the xHCI controller device slots and endpoint contexts.
 
