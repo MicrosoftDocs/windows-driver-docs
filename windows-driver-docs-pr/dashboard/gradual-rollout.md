@@ -16,7 +16,6 @@ The goal of gradual rollout is to ensure the Windows ecosystem has the best driv
 > - Drivers in gradual rollout are visible only to systems running Windows 10 verion 1709 and later.
 > - Eventually, all drivers submitted to Windows Update will go through gradual rollout.
 
-<!-- Get a new title -->
 ## Main concepts of gradual rollout
 
 There are two distinct aspect of the Gradual Rollout process that partners should understand.  These are:
@@ -28,7 +27,7 @@ There are two distinct aspect of the Gradual Rollout process that partners shoul
   - Automation rules govern the percentage progression.
   - When the throttled percentage is at 100% it is completely live on WU to all systems running **Windows 10 version 1709 and later**.  Microsoft will continue to **monitor** the release for rest of the 30 day period.
 
-Note that during this entire process, the status for your shipping label remains as **Gradual Rollout**. This is normal.
+Note that during this entire process, the status for your shipping label remains as **Gradual Rollout**. This is normal, and your driver is available on Windows Update.
 
  ![Screenshot of the stages of progression for driver submission: Created, Validation, Update Generation, Microsoft Approval, Gradual Rollout, Publishing, and Finalize](images/gradual-rollout-phases.png)
 
@@ -54,7 +53,9 @@ Microsoft completes a risk assessment for each eligible driver and assigns a rel
 
 ### Rules that define when a rollout should automatically pause
 
-Microsoft will pause the gradual rollout process if the process fails to meet either of two quality checks.  Microsoft also uses these same quality checks when deciding to progress the driver to the next throttle level.  When a driver is paused, the throttled percentage is set to **0%**.
+Microsoft will pause the gradual rollout process if your driver fails to meet the Microsoft quality checks.  Microsoft also uses these same quality checks when deciding to progress the driver to the next throttle level.  
+
+Paused drivers show a throttle percentage of **0%**.
 
 Microsoft will continue the rollout process after a pause when an investigation is completed by either the feature team or the OEM.
 
@@ -91,7 +92,9 @@ Notification of a paused or cancelled driver is through the shipping label, only
 
 ### How can we expedite this process if we have a critical business need?
 
-First, review your Shipping Label and check the UI text message to see if the throttled percentage it is at 100%.  Next, verify and test if you can receive the driver from Device Manager.
+Before you submit an expedite request, review your Shipping Label and check the UI text message to see if the throttled percentage it is at 100%. If it is at 100%, then the driver is live on WU for all systems running Windows 10 version 1709 and later.
+
+Next, verify and test if you can receive the driver from Device Manager.
 
 Only submit a request if you have a business-critical need or if you are trying to target machines running Windows 10 version 1703 or earlier.
 
