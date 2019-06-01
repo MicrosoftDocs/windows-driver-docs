@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Mobile Plans legacy callback notifications
 
 > [!NOTE]
-> This page documents the Mobile Plans legacy callback notifications. Please use this as reference only and do not implement these code going forward.
+> This page documents Mobile Plans legacy callback notifications. Please use this as reference only and do not implement this code going forward.
 
 ## Inline profile delivery
 

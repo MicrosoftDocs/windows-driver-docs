@@ -35,6 +35,8 @@ When you install Visual Studio, select the **Desktop development with C++** work
 
 For ARM/ARM64 driver development, choose **Individual components** and under **Compilers, build tools, and runtimes** select **Visual C++ compilers and libraries for ARM/ARM64**.
 
+For each architecture you intend to build drivers for, install the Spectre mitigated libraries thru Individual Components -> Compilers, build tools, and runtimes -> MSVC v142 - VS 2019 C+ x64/x86 Spectre-mitigated libs (v14.21). 
+
 ### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 1903
 
 * [Download WDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/?linkid=2085767)
