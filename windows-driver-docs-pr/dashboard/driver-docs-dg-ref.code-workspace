@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "C:\\repo\\drivers"
+		},
+		{
+			"path": "C:\\repo\\wdk-ddi"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"gitlens.advanced.fileHistoryFollowsRenames": false
+	}
+}
