@@ -31,13 +31,24 @@ The following editions of Visual Studio 2019 support driver development:
 * [Download Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16)
 * [Download Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16)
 
-When you install Visual Studio, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane.
+When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. However, for Visual Studio 2019 the version of the SDK that is compatible with the WDK for Windows 10, version 1903 is not currently the default SDK. To select the correct SDK:
+
+* In **Visual Studio Installer**, on the **Workloads** tab, under **Installation Details**, expand **Universal Windows Platform development**.
+* Under **Optional**, select **Windows 10 Preview SDK (10.0.18362.0)**.
+* Continue with the install.
+
+Note that you can install the Windows 10 Preview SDK (10.0.18362.0) after you have completed the Visual Studio install.
 
 For ARM/ARM64 driver development, choose **Individual components** and under **Compilers, build tools, and runtimes** select **Visual C++ compilers and libraries for ARM/ARM64**.
 
 For each architecture you intend to build drivers for, install the Spectre mitigated libraries thru Individual Components -> Compilers, build tools, and runtimes -> MSVC v142 - VS 2019 C+ x64/x86 Spectre-mitigated libs (v14.21). 
 
-### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 1903
+### ![download icon](images/download-install.png) Step 2: For Visual Studio 2017, install the correct SDK
+
+* [Download the Windows 10 SDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/p/?linkid=2083338)
+* [Get more info about the SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
+
+### ![download icon](images/download-install.png) Step 3: Install WDK for Windows 10, version 1903
 
 * [Download WDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/?linkid=2085767)
 
