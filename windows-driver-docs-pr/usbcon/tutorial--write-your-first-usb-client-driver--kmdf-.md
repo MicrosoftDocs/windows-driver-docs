@@ -103,7 +103,7 @@ To provide the hardware ID string:
 3.  From the **Configuration Manager**, select the **Active Solution Configuration** (for example, **Windows 8 Debug** or **Windows 8 Release**) and the **Active Solution Platform** (for example, Win32) that correspond to the type of build you're interested in.
 4.  From the **Build** menu, click **Build Solution**.
 
-For more information, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver).
+For more information, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
 
 ### <a href="" id="configure-a-computer-for-testing-and-debugging"></a>Step 4: Configure a computer for testing and debugging
 

@@ -489,7 +489,7 @@ The WDK provides support for the [WPP Preprocessor](wpp-preprocessor.md), so tha
 2.  In the project property page, click **Configuration Properties** and click **WPP Tracing**.
 3.  Under **General**, set the **Run WPP** option to **Yes**.
 4.  Under **Command Line**, add any additional options to customize tracing behavior. For info on what you can add, see [WPP Preprocessor](wpp-preprocessor.md).
-5.  Build the project or solution for your target configuration and platform. See [Building a Driver with the WDK](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver).
+5.  Build the project or solution for your target configuration and platform. See [Building a Driver with the WDK](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
 
 For information about the build process, see [TraceWPP task](tracewpp-task.md) and [WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md).
 
