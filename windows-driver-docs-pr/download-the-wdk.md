@@ -41,9 +41,9 @@ Note that you can install the Windows 10 Preview SDK (10.0.18362.0) after you ha
 
 For ARM/ARM64 driver development, choose **Individual components** and under **Compilers, build tools, and runtimes** select **Visual C++ compilers and libraries for ARM/ARM64**.
 
-For each architecture you intend to build drivers for, install the Spectre mitigated libraries thru Individual Components -> Compilers, build tools, and runtimes -> MSVC v142 - VS 2019 C+ x64/x86 Spectre-mitigated libs (v14.21). 
+For each architecture you intend to build drivers for, install the Spectre mitigated libraries thru Individual Components -> Compilers, build tools, and runtimes -> MSVC v142 - VS 2019 C+ x64/x86 Spectre-mitigated libs (v14.21).
 
-### ![download icon](images/download-install.png) Step 2: For Visual Studio 2017, install the correct SDK
+### ![download icon](images/download-install.png) Step 2: Install the correct SDK (Visual Studio 2017)
 
 * [Download the Windows 10 SDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/p/?linkid=2083338)
 * [Get more info about the SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
