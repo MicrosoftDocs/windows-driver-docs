@@ -147,7 +147,7 @@ All UMDF-based USB client drivers require two Microsoft-provided drivers: the re
 2.  Right-click the solution in the **Solution Explorer** and select **Configuration Manager**.
 3.  From the **Configuration Manager**, select your **Active Solution Configuration** (for example, **Debug** or **Release**) and your **Active Solution Platform** (for example, **Win32**) that correspond to the type of build you are interested in.
 4.  Verify that your device interface GUID is accurate throughout the project. 
-    - The device interface GUID is defined in Trace.h and is referenced from `MyUSBDriverUMDFCreateDevice` in Device.c. When your create your project with the name "MyUSBDriver\_UMDF\_", Visual Studio 2019 defines the device interface GUID with the name `GUID_DEVINTERFACE_MyUSBDriver_UMDF_` but calls `WdfDeviceCreateDeviceInterface` with the incorrect name "GUID_DEVINTERFACE_MyUSBDriverUMDF". Replace the incorrect name with the name defined in Trace.h to ensure that the driver builds properly. 
+    - The device interface GUID is defined in Trace.h and is referenced from `MyUSBDriverUMDFCreateDevice` in Device.c. When you create your project with the name "MyUSBDriver\_UMDF\_", Visual Studio 2019 defines the device interface GUID with the name `GUID_DEVINTERFACE_MyUSBDriver_UMDF_` but calls `WdfDeviceCreateDeviceInterface` with the incorrect parameter "GUID_DEVINTERFACE_MyUSBDriverUMDF". Replace the incorrect parameter with the name defined in Trace.h to ensure that the driver builds properly. 
 4.  From the **Build** menu, click **Build Solution**.
 
 For more information, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
