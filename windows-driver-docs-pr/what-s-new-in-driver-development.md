@@ -2,7 +2,7 @@
 title: What's new in driver development
 description: This section describes new features for driver development in Windows 10.
 ms.assetid: 5502AAF9-2400-4338-A646-C746B29F9A44
-ms.date: 04/10/2019
+ms.date: 06/04/2019
 ms.localizationpriority: medium
 ms.custom: 19H1
 ---
@@ -289,9 +289,13 @@ This section describes new features and updates for driver development in Window
 
 The following is a list of new and updated Audio features in Windows 10, version 1903:
 
-* New reference topics on the Audio OEM Adapter used for Voice Activation for the new eventdetectoroemadapter header
-* New Far Field Audio information
-* New jack description information in [USB Audio 2.0 Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/usb-2-0-audio-drivers)
+* New reference topics on the Audio OEM Adapter used for Voice Activation in the new [eventdetectoroemadapter.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/eventdetectoroemadapter/) header.
+* New Far Field Audio information: 
+    * [PKEY_Devices_AudioDevice_Microphone_IsFarField](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-devices-audiodevice-microphone-isfarfield)
+    * [KSPROPSETID_InterleavedAudio](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-interleavedaudio)
+    * [KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION](https://review.docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-interleavedaudio-formatinformation)
+    
+* New jack description information in [USB Audio 2.0 Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/usb-2-0-audio-drivers).
 
 ### <a name="camera-1903"></a>Camera
 
