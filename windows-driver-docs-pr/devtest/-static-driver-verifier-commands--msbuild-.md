@@ -17,7 +17,7 @@ You can run Static Driver Verifier (SDV) in a **Visual Studio Command Prompt** w
 msbuild /t:sdv /p:Inputs="Parameters" ProjectFile /p:Configuration=configuration /p:Platform=platform     
 ```
 
-You must select a Release configuration (for example, **/p:Configuration="Windows 7 Release"**). For the list of supported Release Configurations, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver). The Platform can be **Win32** (for x86) or **x64** (for example, **/p:Platform=Win32**).
+You must select a Release configuration (for example, **/p:Configuration="Windows 7 Release"**). For the list of supported Release Configurations, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver). The Platform can be **Win32** (for x86) or **x64** (for example, **/p:Platform=Win32**).
 
 **Note**  Be sure to check your computer's power management plan to ensure the computer will not go into a sleep state during the analysis.
 

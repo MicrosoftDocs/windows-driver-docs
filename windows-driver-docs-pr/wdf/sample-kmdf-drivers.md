@@ -20,7 +20,7 @@ This topic lists the Kernel-Mode Driver Framework (KMDF) sample drivers that you
 
 
 
-For information on building the samples, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver).
+For information on building the samples, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
 
 <a href="" id="echo"></a>ECHO
 Demonstrates how to use the framework's queue and request objects and automatic synchronization.
