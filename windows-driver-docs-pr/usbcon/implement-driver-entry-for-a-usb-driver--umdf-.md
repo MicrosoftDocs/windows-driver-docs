@@ -66,7 +66,7 @@ For instructions about generating UMDF driver code, see [Writing a UMDF driver b
 3.  Click **Next**.
 4.  Enter a project name, choose a save location, and click **Create**.
 
-The following screen shots show **New Project** dialog box for the **USB User-Mode Driver** template.
+The following screen shots show the **New Project** dialog box for the **USB User-Mode Driver** template.
 
 ![visual studio new project options](images/umdf-template-visual-studio-2019.png)
 

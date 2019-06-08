@@ -48,16 +48,18 @@ You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be 
 Instructions
 ------------
 
-### <a href="" id="generate-the-kmdf-driver-code-by-using-the--visual-studio-professional-2012---usb-driver-template"></a>Step 1: Generate the KMDF driver code by using the Visual Studio Professional 2019 USB driver template
+### <a href="" id="generate-the-kmdf-driver-code-by-using-the--visual-studio-professional-2019---usb-driver-template"></a>Step 1: Generate the KMDF driver code by using the Visual Studio Professional 2019 USB driver template
 
 For instructions about generating KMDF driver code, see the steps in [Writing a KMDF driver based on a template](https://msdn.microsoft.com/library/windows/hardware/hh439654).
 
 **For USB-specific code, select the following options in Visual Studio Professional 2019**
 
-1.  In the **New Project** dialog box, in the left pane, select **USB.**
-2.  In the middle pane, select **USB Kernel-Mode Driver**.
+1.  In the **New Project** dialog box, in the search box at the top, type **USB.**
+2.  In the middle pane, select **Kernel Mode Driver, USB (KMDF)**.
+3.  Click **Next**.
+4.  Enter a project name, choose a save location, and click **Create**.
 
-The following screen shot shows **New Project** dialog box for the **USB Kernel-Mode Driver** template.
+The following screen shots show the **New Project** dialog box for the **USB Kernel-Mode Driver** template.
 
 ![visual studio new project options](images/kmdf-template-visual-studio-2019.png)
 
@@ -142,7 +144,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
        The output resembles this:
 
-       `Trace Format search path is: 'C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE;c:\drivers\tmf'`
+       `Trace Format search path is: 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE;c:\drivers\tmf'`
 
 **To configure your target computer for WPP tracing**
 
@@ -154,7 +156,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
    The command starts a trace session named MyTrace.
 
-   The **guid** argument specifies the GUID of the trace provider, which is the client driver. You can get the GUID from Trace.h in the Visual Studio Professional 2012 project. As another option, you can type the following command and specify the GUID in a .guid file. The file contains the GUID in hyphen format:
+   The **guid** argument specifies the GUID of the trace provider, which is the client driver. You can get the GUID from Trace.h in the Visual Studio Professional 2019 project. As another option, you can type the following command and specify the GUID in a .guid file. The file contains the GUID in hyphen format:
 
    **tracelog -start MyTrace -guid c:\\drivers\\Provider.guid -flag 0xFFFF -level 7-rt -kd**
 
