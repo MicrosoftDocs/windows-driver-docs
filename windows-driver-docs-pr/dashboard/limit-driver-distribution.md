@@ -70,7 +70,7 @@ The minimum OS level is determined by the Products Certified OS level, or the At
 > Note the following when expanding your driver's distribution:
 > * Shared submission cannot be expanded. You can only expand drivers that you submit.
 > * Expansion can only be performed once per submission, and cannot be undone. Only expand your driver's distribution only when absolutely necessary.
-> * Expansion can only be be done to drivers where your [**INF Manufacturer section**](../install/inf-manufacturer-section.md) does use the [BuildNumber] *TargetOSVersion* decoration.
+> * Expansion can only be done to drivers where your [**INF Manufacturer section**](../install/inf-manufacturer-section.md) does use the [BuildNumber] *TargetOSVersion* decoration.
 > * All shipping labels associated with expanded submission will list new PNP HWIDs that can be used to target **Windows 10 Client versions 1506 and 1511 (TH1)**. 
 > * Your Certified level for these newly created items will show as “Extended”.
 > * Only Windows 8.1 drivers can be expanded upward to target Windows 10 systems.  

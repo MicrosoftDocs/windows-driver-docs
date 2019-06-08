@@ -60,12 +60,12 @@ The following example demonstrates the JSON response body returned by a successf
             "sharedProductId": 1152921504606971255,
             "links": [
                 {
-                    "href": "https://hardwareapi-int.microsoft.com/api/v1/hardware/products/9007199267351834",
+                    "href": "https://hardwareapi.microsoft.com/api/v1/hardware/products/9007199267351834",
                     "rel": "self",
                     "method": "GET"
                 },
                 {
-                    "href": "https://hardwareapi-int.microsoft.com/api/v1/hardware/products/9007199267351834/submissions",
+                    "href": "https://hardwareapi.microsoft.com/api/v1/hardware/products/9007199267351834/submissions",
                     "rel": "get_submissions",
                     "method": "GET"
                 }
@@ -96,12 +96,12 @@ The following example demonstrates the JSON response body returned by a successf
             "sharedProductId": 1152921504606971256,
             "links": [
                 {
-                    "href": "https://hardwareapi-int.microsoft.com/api/v1/hardware/products/9007199267351835",
+                    "href": "https://hardwareapi.microsoft.com/api/v1/hardware/products/9007199267351835",
                     "rel": "self",
                     "method": "GET"
                 },
                 {
-                    "href": "https://hardwareapi-int.microsoft.com/api/v1/hardware/products/9007199267351835/submissions",
+                    "href": "https://hardwareapi.microsoft.com/api/v1/hardware/products/9007199267351835/submissions",
                     "rel": "get_submissions",
                     "method": "GET"
                 }
