@@ -3,7 +3,7 @@ title: Debugging a Deadlock
 description: Debugging a Deadlock
 ms.assetid: ee7990d9-2d4e-4e48-9214-539eebd1d8db
 keywords: ["deadlocks", "thread, no ready threads"]
-ms.date: 05/23/2017
+ms.date: 06/10/2017
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +15,11 @@ When a thread needs exclusive access to code or some other resource, it requests
 
 A *deadlock* arises when two or more threads have requested locks on two or more resources, in an incompatible sequence. For instance, suppose that Thread One has acquired a lock on Resource A and then requests access to Resource B. Meanwhile, Thread Two has acquired a lock on Resource B and then requests access to Resource A. Neither thread can proceed until the other thread's lock is relinquished, and, therefore, neither thread can proceed.
 
-User-mode deadlocks arise when multiple threads have blocked each others' access to the same resources. Kernel-mode deadlocks arise when multiple threads (from the same process or from distinct processes) have blocked each others' access to the same kernel resource. The procedure used to debug a deadlock depends on whether the deadlock occurs in user mode or in kernel mode.
+User-mode deadlocks arise when multiple threads, usually of a single application, have blocked each other's access to the same resource. However, multiple threads of multiple applications can also block each other's access to a global/shared resource, such as a global event, or semaphore.
+
+Kernel-mode deadlocks arise when multiple threads (from the same process or from distinct processes) have blocked each others' access to the same kernel resource.
+
+The procedure used to debug a deadlock depends on whether the deadlock occurs in user mode or in kernel mode.
 
 ### <span id="debugging_a_user_mode_deadlock"></span><span id="DEBUGGING_A_USER_MODE_DEADLOCK"></span>Debugging a User-Mode Deadlock
 
@@ -40,7 +44,7 @@ OwningThread       a7
 EntryCount         0
 ContentionCount    0
 *** Locked
- 
+
 CritSec isatq!AtqActiveContextList+a8 at 68629100
 LockCount          2
 RecursionCount     1
@@ -48,14 +52,14 @@ OwningThread       a3
 EntryCount         2
 ContentionCount    2
 *** Locked
- 
+
 CritSec +24e750 at 24e750
 LockCount          6
 RecursionCount     1
 OwningThread       a9
 EntryCount         6
 ContentionCount    6
-*** Locked 
+*** Locked
 ```
 
 The first critical section displayed has no locks and, therefore, can be ignored.
@@ -65,7 +69,7 @@ The second critical section displayed has a lock count of 2 and is, therefore, a
 You can find this thread by listing all threads with the [**~ (Thread Status)**](---thread-status-.md) command, and looking for the thread with this ID:
 
 ```dbgcmd
-0:006>  ~ 
+0:006>  ~
    0  Id: 1364.1330 Suspend: 1 Teb: 7ffdf000 Unfrozen
    1  Id: 1364.17e0 Suspend: 1 Teb: 7ffde000 Unfrozen
    2  Id: 1364.135c Suspend: 1 Teb: 7ffdd000 Unfrozen
@@ -74,7 +78,7 @@ You can find this thread by listing all threads with the [**~ (Thread Status)**]
    5  Id: 1364.1278 Suspend: 1 Teb: 7ffda000 Unfrozen
 .  6  Id: 1364.a9 Suspend: 1 Teb: 7ffd9000 Unfrozen
    7  Id: 1364.111c Suspend: 1 Teb: 7ffd8000 Unfrozen
-   8  Id: 1364.1588 Suspend: 1 Teb: 7ffd7000 Unfrozen 
+   8  Id: 1364.1588 Suspend: 1 Teb: 7ffd7000 Unfrozen
 ```
 
 In this display, the first item is the debugger's internal thread number. The second item (the `Id` field) contains two hexadecimal numbers separated by a decimal point. The number before the decimal point is the process ID; the number after the decimal point is the thread ID. In this example, you see that thread ID 0xA3 corresponds to thread number 4.
@@ -82,7 +86,7 @@ In this display, the first item is the debugger's internal thread number. The se
 You then use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display the stack that corresponds to thread number 4:
 
 ```dbgcmd
-0:006>  ~4 kb 
+0:006>  ~4 kb
   4  id: 97.a3   Suspend: 0 Teb 7ffd9000 Unfrozen
 ChildEBP RetAddr  Args to Child
 014cfe64 77f6cc7b 00000460 00000000 00000000 ntdll!NtWaitForSingleObject+0xb
@@ -131,7 +135,7 @@ Having confirmed the nature of this deadlock, you can use the usual debugging te
 
 ### <span id="debugging_a_kernel_mode_deadlock"></span><span id="DEBUGGING_A_KERNEL_MODE_DEADLOCK"></span>Debugging a Kernel-Mode Deadlock
 
-There are several debugger extensions that are useful for debugging deadocks in kernel mode:
+There are several debugger extensions that are useful for debugging deadlocks in kernel mode:
 
 - The [**!kdexts.locks**](-locks---kdext--locks-.md) extension displays information about all locks held on kernel resources and the threads holding these locks. (In kernel mode, you can just type **!locks** at the debugger prompt; the **kdexts** prefix is assumed.)
 
