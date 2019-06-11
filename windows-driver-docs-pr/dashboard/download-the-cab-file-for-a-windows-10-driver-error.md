@@ -19,7 +19,6 @@ ms.localizationpriority: medium
 > - [Create new report template](create-a-new-report-template.md)
 > - [Schedule a new report](schedule-a-new-report.md)
 > - [Get Report Data](get-report-data.md)
-> - [Download Failure Cabs](download-failure-cabs.md)
 
 Use this method in the Microsoft Store analytics API to download the CAB file that is associated with a particular Windows 10 driver error. Before you can use this method, you must first use the [get details for a Windows 10 driver error](get-details-for-a-windows-10-driver-error.md) method to retrieve the ID of the CAB file you want to download.
 
