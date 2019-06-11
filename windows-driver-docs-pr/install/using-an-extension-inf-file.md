@@ -77,6 +77,9 @@ Note that an organization may only use an **ExtensionID** that it owns.  For inf
 
 3.  If you are updating an extension INF, keep the **ExtensionId** the same and increment the version or date (or both) specified by the [**DriverVer**](inf-driverver-directive.md) directive. For a given **ExtensionId** value, PnP selects the INF with the highest **DriverVer**.
 
+>[!NOTE]
+> If your extension INF targets Windows 10 S, see [Windows 10 in S mode Driver Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/windows10sdriverrequirements) for information about driver installation on that version of Windows.
+
 4.  In the [**INF Models section**](inf-models-section.md), specify one or more hardware and compatible IDs that match those of the target device.  Note that these hardware and compatible IDs do not need to match those of the base INF.  Typically, an extension INF lists a more specific hardware ID than the base INF, with the goal of further specializing a specific driver configuration.  For example, the base INF might use a two-part PCI hardware ID, while the extension INF specifies a four-part PCI hardware ID, like the following:
     
     ```cpp

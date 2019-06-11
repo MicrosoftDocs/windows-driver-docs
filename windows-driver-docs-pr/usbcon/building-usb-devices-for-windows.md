@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Building USB devices for Windows
 
-**Summary**:
+## Summary
 
 * Resources for USB device builders
 

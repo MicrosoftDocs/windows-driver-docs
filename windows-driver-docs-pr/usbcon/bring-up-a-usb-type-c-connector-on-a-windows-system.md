@@ -11,29 +11,29 @@ You need to write a USB Type-C connector driver in these scenarios:
 
 * If your USB Type-C hardware has the capability of handling the power delivery (PD) state machine. Otherwise, consider writing a USB Type-C port controller driver. For more information, see [Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md).
 
-* If your hardware does not have an embedded controller. Otherwise load the Microsoft provided in-box driver, UcmUcsi.sys. (See [UCSI driver](ucsi.md)) for ACPI transports or [write a UCSI client driver](write-a-ucsi-driver.md) for non-ACPI transports. 
+* If your hardware does not have an embedded controller. Otherwise load the Microsoft provided in-box driver, UcmUcsi.sys. (See [UCSI driver](ucsi.md)) for ACPI transports or [write a UCSI client driver](write-a-ucsi-driver.md) for non-ACPI transports.
 
-**Summary**:
+## Summary
 
 * UCM object used by the class extension and client driver
 * Services provided by the UCM class extension
 * Expected behavior of the client driver
 
-**Official specifications**:
+### Official specifications
 
 * [USB 3.1 and USB Type-C specifications](https://go.microsoft.com/fwlink/p/?LinkId=699515)
 * [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310)
 
-**Applies to:**:
+### Applies to
 
 * Windows 10
 
-**WDF version**:
+### WDF version
 
 * KMDF version 1.15
 * UMDF version 2.15
 
-**Important APIs**:
+## Important APIs
 
 * [USB Type-C connector driver programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
 
@@ -52,7 +52,7 @@ To enable a USB Type-C connector on a system, you must write the client driver.
   * The stub library, (UcmCxstub.lib). The library translates calls made by the client driver and pass them up to UcmCx.
   * The header file, UcmCx.h.
 
-  You can write a UCM client driver that runs in user mode or kernel mode. For user mode, it binds with the UMDF 2.x library; for kernel mode it's KMDF 1.15. Programming interfaces are identical for either mode.
+    You can write a UCM client driver that runs in user mode or kernel mode. For user mode, it binds with the UMDF 2.x library; for kernel mode it's KMDF 1.15. Programming interfaces are identical for either mode.
 
     ![visual studio configuration for ucm](images/ucm-vs.png)
 
@@ -112,20 +112,20 @@ Here is the summary of the sequence in which the client driver retrieves a UCMCO
 
 2. Specify the initialization parameters for the USB Type-C connector in a [**UCM\_CONNECTOR\_TYPEC\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/mt187930) structure. This includes the operating mode of the connector, whether it's a downstream-facing port, upstream-facing port, or is dual-role capable. It also specifies the USB Type-C current levels when the connector is a power source. A USB Type-C connector can be designed such that it can act a 3.5 mm audio jack. If the hardware supports the feature, the connector object must be initialized accordingly.
 
-    In the structure, you must also register the client driver's callback function for handling data roles.
+   In the structure, you must also register the client driver's callback function for handling data roles.
 
-    This callback function is associated with the connector object, which is invoked by UCM class extension. This function must be implemented by the client driver.
+   This callback function is associated with the connector object, which is invoked by UCM class extension. This function must be implemented by the client driver.
 
-    [*EVT\_UCM\_CONNECTOR\_SET\_DATA\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187818)  
+   [*EVT\_UCM\_CONNECTOR\_SET\_DATA\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187818)  
     Swaps the data role of the connector to the specified role when attached to a partner connector.
 
 3. If your client driver wants to be PD-capable, that is, handle the Power Delivery 2.0 hardware implementation of the connector, you must also initialize a [**UCM\_CONNECTOR\_PD\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/mt187924) structure that specifies the PD initialization parameters. This includes the flow of power, whether the connector is a power sink or source.
 
-    In structure, you must also register the client driver's callback function for handling power roles.
+   In structure, you must also register the client driver's callback function for handling power roles.
 
-    This callback function is associated with the connector object, which is invoked by UCM class extension. This function must be implemented by the client driver.
+   This callback function is associated with the connector object, which is invoked by UCM class extension. This function must be implemented by the client driver.
 
-    [*EVT\_UCM\_CONNECTOR\_SET\_POWER\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187819)  
+   [*EVT\_UCM\_CONNECTOR\_SET\_POWER\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187819)  
     Sets the power role of the connector to the specified role when attached to a partner connector.
 
 4. Call [**UcmConnectorCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187909) and retrieve a UCMCONNECTOR handle for the connector. Make sure you call this method after the client driver has created the framework device object by calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). An appropriate place for this call can be in driver's [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://msdn.microsoft.com/library/windows/hardware/ff540880) or [**EVT_WDF_DEVICE_D0_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff540848).
@@ -279,11 +279,11 @@ If the connector receives a power role (PR\_Swap) or data role (DR\_Swap) swap m
 
 * [**UcmConnectorDataDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187910)
 
-    Call this method after a PD DR\_Swap message has been processed. After this call, the operating system reports the new role to URS, which tears down the existing role drivers and loads drivers for the new role.
+  Call this method after a PD DR\_Swap message has been processed. After this call, the operating system reports the new role to URS, which tears down the existing role drivers and loads drivers for the new role.
 
 * [**UcmConnectorPowerDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187914)
 
-    Call this method after a PD PR\_Swap message has been processed. After a PR\_Swap, the PD contract needs to be renegotiated. The client driver must report that PD contract negotiation by calling the methods described in [step 4](#4-report-the-new-negotiated-pd-contract).
+  Call this method after a PD PR\_Swap message has been processed. After a PR\_Swap, the PD contract needs to be renegotiated. The client driver must report that PD contract negotiation by calling the methods described in [step 4](#4-report-the-new-negotiated-pd-contract).
 
 ## 7. Implement callback functions to handle power and data role swap requests
 
@@ -293,7 +293,7 @@ The client driver performs role swap operations by using hardware interfaces.
 
 * [*EVT\_UCM\_CONNECTOR\_SET\_DATA\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187818)
 
-    In the callback implementation, the client driver is expected to:
+  In the callback implementation, the client driver is expected to:
 
   1. Send a PD DR\_Swap message to the port-partner.
   2. Call [**UcmConnectorDataDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187910) to notify the class extension that the message sequence has completed successfully or unsuccessfully.
@@ -323,8 +323,8 @@ The client driver performs role swap operations by using hardware interfaces.
 
     In the callback implementation, the client driver is expected to:
 
-    1. Send a PD PR\_Swap message to the port-partner.
-    2. Call [**UcmConnectorPowerDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187914) to notify the class extension that the message sequence has completed successfully or unsuccessfully.
+  1. Send a PD PR\_Swap message to the port-partner.
+  2. Call [**UcmConnectorPowerDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187914) to notify the class extension that the message sequence has completed successfully or unsuccessfully.
 
     ```cpp
     EVT_UCM_CONNECTOR_SET_POWER_ROLE     EvtSetPowerRole;  

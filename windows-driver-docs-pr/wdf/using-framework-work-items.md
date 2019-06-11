@@ -43,7 +43,9 @@ To set up a work item, your driver must:
 
     Your driver calls [**WdfWorkItemEnqueue**](https://msdn.microsoft.com/library/windows/hardware/ff551203), which adds the driver's work item to the work-item queue.
 
-When your driver calls [**WdfWorkItemCreate**](https://msdn.microsoft.com/library/windows/hardware/ff551201), it must supply a handle to either a framework device object or a framework queue object. When the system deletes that object, it also deletes any existing work items that are associated with the object.
+When your driver calls [**WdfWorkItemCreate**](https://msdn.microsoft.com/library/windows/hardware/ff551201), it must supply a handle to either a framework device object or a framework queue object. When the system deletes that object, it also deletes any existing work items that are associated with the object. The work item object will be disposed and its associated work-item callback will be cleaned up before the parent object's [*EvtCleanupCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) callback is invoked.
+
+For more info about the cleanup rules for a framework object hierarchy, see [Framework Object Life Cycle](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-life-cycle).
 
 ### <a href="" id="ddk-using-the-work-item-callback-function-df"></a>Using the Work-Item Callback Function
 
@@ -89,7 +91,13 @@ Drivers can use one of the following two techniques to create and delete work it
 
 A few drivers might need to call [**WdfWorkItemFlush**](https://msdn.microsoft.com/library/windows/hardware/ff551204) to flush their work items from the work-item queue. For an example use of **WdfWorkItemFlush**, see the method's reference page.
 
- 
+If the driver calls [**WdfObjectDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectdelete) on an outstanding work item, the result depends on the state of the work item:
+
+|Work item state|Result|
+|-|-|
+|Created but not enqueued|Work item is cleaned up immediately.|
+|Enqueued|Call to [**WdfObjectDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectdelete) waits until work item finishes execution, then work item is cleaned up|
+|Executing|If the driver calls [**WdfObjectDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectdelete) from within [*EvtWorkItem*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfworkitem/nc-wdfworkitem-evt_wdf_workitem) (on same thread), [**WdfObjectDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectdelete) returns immediately. Once [*EvtWorkItem*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfworkitem/nc-wdfworkitem-evt_wdf_workitem) finishes, the work item will be cleaned up.  Otherwise, [**WdfObjectDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectdelete) waits for EvtWorkItem to finish.|
 
  
 

@@ -69,11 +69,11 @@ pwrtest /info:option [/p:{n|a|*}] [/w:n]  [/?]
 
  
 
-<span id="_p_na_"></span><span id="_P_NA_"></span>**/p:**{*n*|**a**|**\\***}  
+<span id="_p_na_"></span><span id="_P_NA_"></span>**/p:**{*n*\|**a**\|**\\**\*}  
 
 Specifies the logical processor number for **/info:ppm/info:ppmidle**, or **/info:ppmperf** options.
 
-<span id="a_or__"></span><span id="A_OR__"></span>**a** or **\\***  
+<span id="a_or__"></span><span id="A_OR__"></span>**a** or **\\**\*  
 Specifies all the logical processor(s) (default).
 
 <span id="_w_yn"></span><span id="_W_YN"></span>**/w:**{**y**|**n**}  
