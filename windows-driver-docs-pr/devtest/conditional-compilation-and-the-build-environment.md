@@ -31,7 +31,7 @@ The debugging routines [**ASSERT**](https://msdn.microsoft.com/library/windows/h
 
  
 
-For more information about using Visual Studio and MSBuild to create to release and debug versions of a driver, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver) and the [WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md).
+For more information about using Visual Studio and MSBuild to create to release and debug versions of a driver, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver) and the [WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md).
 
  
 

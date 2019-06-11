@@ -69,11 +69,11 @@ Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) suppor
 </tr>
 <tr class="even">
 <td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550772" data-raw-source="[&lt;strong&gt;IRP_MJ_PNP&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550772)"><strong>IRP_MJ_PNP</strong></a></td>
-<td align="left">Many; see <a href="#kmdf-callbacks-for-irp_mj_pnp" data-raw-source="[KMDF Callbacks for IRP_MJ_PNP](#kmdf-callbacks-for-irp_mj_pnp)">KMDF Callbacks for IRP_MJ_PNP</a>.</td>
+<td align="left">Many; see <a href="#kmdf-callbacks-for-irpmjpnp" data-raw-source="[KMDF Callbacks for IRP_MJ_PNP](#kmdf-callbacks-for-irp_mj_pnp)">KMDF Callbacks for IRP_MJ_PNP</a>.</td>
 </tr>
 <tr class="odd">
 <td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550784" data-raw-source="[&lt;strong&gt;IRP_MJ_POWER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550784)"><strong>IRP_MJ_POWER</strong></a></td>
-<td align="left">Many; see <a href="#kmdf-callbacks-for-irp_mj_power" data-raw-source="[KMDF Callbacks for IRP_MJ_POWER](#kmdf-callbacks-for-irp_mj_power)">KMDF Callbacks for IRP_MJ_POWER</a>.</td>
+<td align="left">Many; see <a href="#kmdf-callbacks-for-irpmjpower" data-raw-source="[KMDF Callbacks for IRP_MJ_POWER](#kmdf-callbacks-for-irp_mj_power)">KMDF Callbacks for IRP_MJ_POWER</a>.</td>
 </tr>
 <tr class="even">
 <td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549279" data-raw-source="[&lt;strong&gt;IRP_MJ_QUERY_EA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549279)"><strong>IRP_MJ_QUERY_EA</strong></a></td>
