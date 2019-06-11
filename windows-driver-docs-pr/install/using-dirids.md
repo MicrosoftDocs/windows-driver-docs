@@ -217,11 +217,11 @@ Don't use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-
 </tr>
 <tr class="even">
 <td align="left"><p><strong>16425</strong></p></td>
-<td align="left"><p><em>%SystemRoot%\system32</em> (valid for Microsoft Win32 user-mode applications that are running under Windows on Windows (WOW64))</p></td>
+<td align="left"><p><em>%SystemRoot%\SysWOW64</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>16426</strong></p></td>
-<td align="left"><p><em>Program Files</em> (valid for Win32 user-mode applications that are running under WOW64)</p></td>
+<td align="left"><p><em>%ProgramFiles(x86)%</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>16427</strong></p></td>
@@ -229,7 +229,7 @@ Don't use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>16428</strong></p></td>
-<td align="left"><p><em>Program Files\Common</em> (valid for Win32 user-mode applications that are running under WOW64)</p></td>
+<td align="left"><p><em>%ProgramFiles(x86)%\Common</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>16429</strong></p></td>

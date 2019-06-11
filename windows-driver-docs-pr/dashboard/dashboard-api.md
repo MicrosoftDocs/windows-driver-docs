@@ -83,12 +83,18 @@ After you have an Azure AD access token, you can call methods in the Microsoft H
 
 ## Code examples
 
-The following sample provides detailed code that demonstrate how to use the Microsoft Hardware API:
+The following sample provides detailed code that demonstrate how to use the Microsoft Hardware API along with a complete end to end prebuilt solution created by the Microsoft Surface and Devices team:
 
 * [C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
 
 [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
 
+[Surface Dev Center Manager tool (GitHub)](https://github.com/Microsoft/SDCM)
+
 ## Additional help
 
 If you have questions about the Microsoft Store submission API or need assistance managing your submissions with this API, visit the [support page](https://developer.microsoft.com/dashboard/account/help?returnUri=https://developer.microsoft.com/dashboard/hardware) and request help.
+
+## Related topics
+
+[What is Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)

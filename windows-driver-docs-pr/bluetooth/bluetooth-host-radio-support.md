@@ -88,31 +88,9 @@ The following table lists the profiles in Bth.inf that Windows supports.
 |{00001124-0000-1000-8000-00805f9b34fb}|HID|
 |{00001126-0000-1000-8000-00805f9b34fb}|HCRP|
 
-### Windows XP Bluetooth Profiles
+### Windows Bluetooth Profiles
 
-The following table lists the unsupported Bluetooth profiles and protocols. Note that, in this context, “unsupported” means that Windows does not automatically generate a PDO or devnode or display the Add New Hardware Wizard. Therefore, some in-box profiles and protocols are handled as if they are unsupported. For example, SDP is an in-box protocol that has a Bluetooth service ID but does not require a PDO. The SDP protocol is therefore marked as unsupported in Bth.inf to prevent the creation of a PDO
-
-|Service ID|In-box|Description|
-|----|----|----|
-|{0000110a-0000-1000-8000-00805f9b34fb}|No|Audio Source|
-|{0000110c-0000-1000-8000-00805f9b34fb}|No|AV Remote Target|
-|{00001001-0000-1000-8000-00805f9b34fb}|No|Browse Group Service|
-|{00001111-0000-1000-8000-00805f9b34fb}|No|Fax Service|
-|{0000111f-0000-1000-8000-00805f9b34fb}|No|Handsfree Audio Gateway|
-|{00001112-0000-1000-8000-00805f9b34fb}|No|Headset Audio Gateway|
-|{00001104-0000-1000-8000-00805f9b34fb}|No|Infrared Mobile Communication (IRMC) Sync Service|
-|{00001107-0000-1000-8000-00805f9b34fb}|No|IRMC Sync Commands|
-|{00001106-0000-1000-8000-00805f9b34fb}|Yes|Obex File Transfer|
-|{00001105-0000-1000-8000-00805f9b34fb}|Yes|Object Push|
-|{00001117-0000-1000-8000-00805f9b34fb}|No|PAN group ad hoc network (GN)|
-|{00001116-0000-1000-8000-00805f9b34fb}|No|PAN network access point (NAP)|
-|{00001115-0000-1000-8000-00805f9b34fb}|Yes|PAN U|
-|{0000112e-0000-1000-8000-00805f9b34fb}|No|Phone book client equipment (PCE) service|
-|{0000112f-0000-1000-8000-00805f9b34fb}|No|Phone book server equipment (PSE) service|
-|{00001200-0000-1000-8000-00805f9b34fb}|Yes|PnP service|
-|{00001002-0000-1000-8000-00805f9b34fb}|No|Public Browse Group Service|
-|{00001000-0000-1000-8000-00805f9b34fb}|Yes|SDP|
-|{0000112d-0000-1000-8000-00805f9b34fb}|No|Sim Access|
+For a Bluetooth-enabled device or accessory to work with your PC that’s running Windows 10, the device needs to use one of the supported Bluetooth profiles. See the most current list at [Supported Bluetooth profiles](https://support.microsoft.com/help/10568/windows-10-supported-bluetooth-profiles).
 
 If IHVs do not want Windows to automatically generate a PDO for their device, they can add the service GUID to the list of unsupported services. For examples, see Bth.inf.
 

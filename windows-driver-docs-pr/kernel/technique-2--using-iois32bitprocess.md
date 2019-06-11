@@ -27,7 +27,7 @@ BOOLEAN
 The following code sample shows how to use **IoIs32bitProcess**:
 
 ```cpp
-typedef void * POINTER_32 PVOID32;
+typedef UINT32 POINTER_32 PVOID32;
 
 typedef struct _IOCTL_PARAMETERS
 {

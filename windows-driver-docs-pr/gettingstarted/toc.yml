@@ -1,6 +1,8 @@
 - name: "Getting started with Windows drivers"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "Getting started with Windows drivers"
+    href: index.md
   - name: "What is a driver?"
     href: what-is-a-driver-.md
   - name: "Do you need to write a driver?"
@@ -8,8 +10,10 @@
   - name: "Choosing a driver model"
     href: choosing-a-driver-model.md
   - name: "Write your first driver"
-    href: writing-your-first-driver.md
+# Auto-expanded node
     items: 
+    - name: "Write your first driver"
+      href: writing-your-first-driver.md
     - name: "Write a Universal Windows driver (UMDF 2) based on a template"
       href: writing-a-umdf-driver-based-on-a-template.md
     - name: "Write a universal Hello World driver (KMDF)"
@@ -23,8 +27,10 @@
   - name: "Provision a  computer for driver deployment and testing (WDK 10)"
     href: provision-a-target-computer-wdk-8-1.md
   - name: "Concepts for all driver developers"
-    href: 
+# Auto-expanded node
     items: 
+    - name: "Concepts for all driver developers"
+      href: 
     - name: "User mode and kernel mode"
       href: user-mode-and-kernel-mode.md
     - name: "Virtual address spaces"

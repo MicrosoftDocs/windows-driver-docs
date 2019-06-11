@@ -47,11 +47,11 @@ The MBIM_BASE_STATIONS_INFO_REQ structure shall be used in the InformationBuffer
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
-| 0 | 4 | MaxGSMCount | SIZE | The maximum number of entries of GSM neighboring cells returned in the GSM network measurement reports of [MBIM_GSM_NMR](#mbimgsmnmr). Default capacity is 15. |
-| 4 | 4 | MaxUMTSCount | SIZE | The maximum number of entries of UMTS neighboring cells returned in the UMTS measured results list in [MBIM_UMTS_MRL](#mbimumtsmrl). Default capacity is 15. |
-| 8 | 4 | MaxTDSCDMACount | SIZE | The maximum number of entries of TDSCDMA neighboring cells returned in the TDSCDMA measured results list in [MBIM_TDSCDMA_MRL](#mbimtdscdmamrl). Default capacity is 15. |
-| 12 | 4 | MaxLTECount | SIZE | The maximum number of entries of LTE neighboring cells returned in the LTE measured results list of [MBIM_LTE_MRL](#mbimltemrl). Default capacity is 15. |
-| 16 | 4 | MaxCDMACount | SIZE | The maximum number of entries of CDMA cells returned in the CDMA measured results list in [MBIM_CDMA_MRL](#mbimcdmamrl). This list includes both serving and neighboring cells. Default capacity is 12. |
+| 0 | 4 | MaxGSMCount | SIZE | The maximum number of entries of GSM neighboring cells returned in the GSM network measurement reports of [MBIM_GSM_NMR](#mbim_gsm_nmr). Default capacity is 15. |
+| 4 | 4 | MaxUMTSCount | SIZE | The maximum number of entries of UMTS neighboring cells returned in the UMTS measured results list in [MBIM_UMTS_MRL](#mbim_umts_mrl). Default capacity is 15. |
+| 8 | 4 | MaxTDSCDMACount | SIZE | The maximum number of entries of TDSCDMA neighboring cells returned in the TDSCDMA measured results list in [MBIM_TDSCDMA_MRL](#mbim_tdscdma_mrl). Default capacity is 15. |
+| 12 | 4 | MaxLTECount | SIZE | The maximum number of entries of LTE neighboring cells returned in the LTE measured results list of [MBIM_LTE_MRL](#mbim_lte_mrl). Default capacity is 15. |
+| 16 | 4 | MaxCDMACount | SIZE | The maximum number of entries of CDMA cells returned in the CDMA measured results list in [MBIM_CDMA_MRL](#mbim_cdma_mrl). This list includes both serving and neighboring cells. Default capacity is 12. |
 
 ### Set
 
@@ -69,23 +69,23 @@ The MBIM_BASE_STATIONS_INFO structure contains information about both serving an
 | --- | --- | --- | --- | --- |
 | 0 | 4 | SystemType | MBIM_DATA_CLASS | Indicates the system type (or types) for which serving cell information is valid. This member is a bitmask of one or more system types as defined in the MBIM_DATA_CLASS. |
 | 4 | 4 | GSMServingCellOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to the buffer containing the GSM serving cell information. This member can be NULL when the technology of the serving cell is not GSM. |
-| 8 | 4 | GSMServingCellSize | SIZE(0-44) | The size, in bytes, used for [MBIM_GSM_SERVING_CELL_INFO](#mbimgsmservingcellinfo). |
+| 8 | 4 | GSMServingCellSize | SIZE(0-44) | The size, in bytes, used for [MBIM_GSM_SERVING_CELL_INFO](#mbim_gsm_serving_cell_info). |
 | 12 | 4 | UMTSServingCellOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to the buffer containing the UMTS serving cell information. This member can be NULL when the technology of serving cell is not UMTS. |
-| 16 | 4 | UMTSServingCellSize | SIZE(0-60) | The size, in bytes, used for [MBIM_UMTS_SERVING_CELL_INFO](#mbimumtsservingcellinfo). |
+| 16 | 4 | UMTSServingCellSize | SIZE(0-60) | The size, in bytes, used for [MBIM_UMTS_SERVING_CELL_INFO](#mbim_umts_serving_cell_info). |
 | 20 | 4 | TDSCDMAServingCellOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to the buffer containing the TDSCDMA serving cell information. This member can be NULL when the technology of serving cell is not TDSCDMA. |
-| 24 | 4 | TDSCDMAServingCellSize | SIZE(0-48) | The size, in bytes, used for [MBIM_TDSCDMA_SERVING_CELL_INFO](#mbimtdscdmaservingcellinfo). |
+| 24 | 4 | TDSCDMAServingCellSize | SIZE(0-48) | The size, in bytes, used for [MBIM_TDSCDMA_SERVING_CELL_INFO](#mbim_tdscdma_serving_cell_info). |
 | 28 | 4 | LTEServingCellOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to the buffer containing the LTE serving cell information. This member can be NULL when the technology of serving cell is not LTE. |
-| 32 | 4 | LTEServingCellSize | SIZE(0-48) | The size, in bytes, used for [MBIM_LTE_SERVING_CELL_INFO](#mbimlteservingcellinfo). |
+| 32 | 4 | LTEServingCellSize | SIZE(0-48) | The size, in bytes, used for [MBIM_LTE_SERVING_CELL_INFO](#mbim_lte_serving_cell_info). |
 | 36 | 4 | GSMNmrOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to the buffer containing the GSM Network Measurement report. This member can be NULL when no GSM neighboring network is returned in the measurement report. |
-| 40 | 4 | GSMNmrSize | SIZE | The total size, in bytes, of the buffer containing the GSM Network Measurement report in the format of [MBIM_GSM_NMR](#mbimgsmnmr). |
+| 40 | 4 | GSMNmrSize | SIZE | The total size, in bytes, of the buffer containing the GSM Network Measurement report in the format of [MBIM_GSM_NMR](#mbim_gsm_nmr). |
 | 44 | 4 | UMTSMrlOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to the buffer containing UMTS measured results list. This member can be NULL when no UMTS neighboring network is returned in the measurement report. |
-| 48 | 4 | UMTSMrlSize | SIZE | The total size, in bytes, of the buffer containing the UMTS measured results list in the format of [MBIM_UMTS_MRL](#mbimumtsmrl). |
+| 48 | 4 | UMTSMrlSize | SIZE | The total size, in bytes, of the buffer containing the UMTS measured results list in the format of [MBIM_UMTS_MRL](#mbim_umts_mrl). |
 | 52 | 4 | TDSCDMAMrlOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to the buffer containing TDSCDMA measured results list. This member can be NULL when no TDSCDMA neighboring network is returned in the measurement report. |
-| 56 | 4 | TDSCDMAMrlSize | SIZE | The total size, in bytes, of the buffer containing the TDSCDMA measured results list in the format of [MBIM_TDSCDMA_MRL](#mbimtdscdmamrl). |
+| 56 | 4 | TDSCDMAMrlSize | SIZE | The total size, in bytes, of the buffer containing the TDSCDMA measured results list in the format of [MBIM_TDSCDMA_MRL](#mbim_tdscdma_mrl). |
 | 60 | 4 | LTEMrlOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to the buffer containing the LTE measured results list. This member can be NULL when no LTE neighboring network is returned in the measurement report. |
-| 64 | 4 | LTEMrlSize | SIZE | The total size, in bytes, of the buffer containing the LTE measured results list in the format of [MBIM_LTE_MRL](#mbimltemrl). |
+| 64 | 4 | LTEMrlSize | SIZE | The total size, in bytes, of the buffer containing the LTE measured results list in the format of [MBIM_LTE_MRL](#mbim_lte_mrl). |
 | 68 | 4 | CDMAMrlOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to the buffer containing CDMA measured results list. This member can be NULL when no CDMA neighboring network is returned in the measurement report. |
-| 72 | 4 | CDMAMrlSize | SIZE | The total size, in bytes, of the buffer containing the CDMA measured results list in the format of [MBIM_CDMA_MRL](#mbimcdmamrl). |
+| 72 | 4 | CDMAMrlSize | SIZE | The total size, in bytes, of the buffer containing the CDMA measured results list in the format of [MBIM_CDMA_MRL](#mbim_cdma_mrl). |
 | 76 |   | DataBuffer | DATABUFFER | The data buffer containing *GSMServingCell*, *UMTSServingCell*, *TDSCDMAServingCell*, *LTEServingCell*, *GSMNmr*, *UMTSMrl*, *TDSCDMAMrl*, *LTEMrl*, and *CDMAMrl*. |
 
 #### GSM cell data structures
@@ -113,7 +113,7 @@ The MBIM_GSM_NMR structure contains the network measurement report (NMR) of neig
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ElementCount (EC) | UINT32 | The count of NMR entries following this element. |
-| 4 |   | DataBuffer | DATABUFFER | The array of NMR records, each specified as an [MBIM_GSM_NMR_INFO](#mbimgsmnmrinfo) structure. |
+| 4 |   | DataBuffer | DATABUFFER | The array of NMR records, each specified as an [MBIM_GSM_NMR_INFO](#mbim_gsm_nmr_info) structure. |
 
 ##### MBIM_GSM_NMR_INFO
 
@@ -159,7 +159,7 @@ The MBIM_UMTS_MRL structure contains the measured results list (MRL) of neighbor
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ElementCount (EC) | UINT32 | The count of MRL entries following this element. |
-| 4 |   | DataBuffer | DATABUFFER | The array of MRL records, each specified as an [MBIM_UMTS_MRL_INFO](#mbimumtsmrlinfo) structure. |
+| 4 |   | DataBuffer | DATABUFFER | The array of MRL records, each specified as an [MBIM_UMTS_MRL_INFO](#mbim_gsm_nmr_info) structure. |
 
 ##### MBIM_UMTS_MRL_INFO
 
@@ -204,7 +204,7 @@ The MBIM_TDSCDMA_MRL structure contains the measured results list (MRL) of neigh
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ElementCount (EC) | UINT32 | The count of MRL entries following this element. |
-| 4 |   | DataBuffer | DATABUFFER | The array of MRL records, each specified as an [MBIM_TDSCDMA_MRL_INFO](#mbimtdscdmamrlinfo) structure. |
+| 4 |   | DataBuffer | DATABUFFER | The array of MRL records, each specified as an [MBIM_TDSCDMA_MRL_INFO](#mbim_tdscdma_mrl_info) structure. |
 
 ##### MBIM_TDSCDMA_MRL_INFO
 
@@ -249,7 +249,7 @@ The MBIM_LTE_MRL structure contains the measured results list (MRL) of neighbori
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ElementCount (EC) | UINT32 | The count of MRL entries following this element. |
-| 4 |   | DataBuffer | DATABUFFER | The array of MRL records, each specified as an [MBIM_LTE_MRL_INFO](#mbimltemrlinfo) structure. |
+| 4 |   | DataBuffer | DATABUFFER | The array of MRL records, each specified as an [MBIM_LTE_MRL_INFO](#mbim_lte_mrl_info) structure. |
 
 ##### MBIM_LTE_MRL_INFO
 
@@ -276,7 +276,7 @@ The MBIM_CDMA_MRL structure contains the measured results list (MRL) of both ser
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ElementCount (EC) | UINT32 | The count of MRL entries following this element. |
-| 4 |   | DataBuffer | DATABUFFER | The array of MRL records, each specified as an [MBIM_CDMA_MRL_INFO](#mbimcdmamrlinfo) structure. |
+| 4 |   | DataBuffer | DATABUFFER | The array of MRL records, each specified as an [MBIM_CDMA_MRL_INFO](#mbim_cdma_mrl_info) structure. |
 
 ##### MBIM_CDMA_MRL_INFO
 
@@ -326,7 +326,7 @@ Service UUID: **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
 
 ### Query
 
-The InformationBuffer of the MBIM_COMMAND_MSG is not used. The InformationBuffer of the MBIM_COMMAND_DONE contains an [MBIM_LOCATION_INFO](#mbimlocationinfo) structure.
+The InformationBuffer of the MBIM_COMMAND_MSG is not used. The InformationBuffer of the MBIM_COMMAND_DONE contains an [MBIM_LOCATION_INFO](#mbim_location_info) structure.
 
 ### Set
 

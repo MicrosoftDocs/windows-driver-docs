@@ -50,7 +50,7 @@ The miniport driver follows these steps when it issues the [**NDIS\_STATUS\_QOS\
 
     For example, the miniport driver sets the appropriate **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags in the **Flags** member for those members which contain data that has changed since the miniport driver previously issued an [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](https://msdn.microsoft.com/library/windows/hardware/hh439812) status indication.
 
-    For more information on how to set the **Flags** member, see [Guidelines for Setting the **Flags** Member](#flags).
+    For more information on how to set the **Flags** member, see [Guidelines for Setting the **Flags** Member](#guidelines-for-setting-the-flags-member).
 
 3.  The miniport driver initializes an [**NDIS\_QOS\_CLASSIFICATION\_ELEMENT**](https://msdn.microsoft.com/library/windows/hardware/hh451631) structure for each traffic classification from the remote NDIS QoS parameters. The driver adds these elements past the end of the [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure in the buffer.
 

@@ -39,7 +39,7 @@ Parameter | Description
 *EndAddress*   | Specifies the end of the address range to search for critical sections.
 **-d**    | Displays critical sections that are associated with DebugInfo.
 *InfoAddress*   | Specifies the address of the DebugInfo.
-**-t**    | Displays a critical section tree. Before you can use the **-t** option, you must activate [Application Verifier](application-verifier.md) for the target process and select the **Check lock usage** option.
+**-t**    | Displays a critical section tree. Before you can use the **-t** option, you must activate [Application Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/application-verifier) for the target process and select the **Check lock usage** option.
 *TreeAddress*    | Specifies the address of the root of the critical section tree. If you omit this parameter or specify zero, the debugger displays the critical section tree for the current process.
 **-?**    | Displays some Help text for this extension in the [Debugger Command window](debugger-command-window.md).
 

@@ -22,7 +22,10 @@ ms.localizationpriority: medium
 
 To keep track of each device's state, the framework uses a PnP state machine, a power state machine, and a power policy state machine. The framework creates an instance of each state machine for each device that is plugged into a system.
 
-Very few drivers need to be aware of the state of a device's state machines. However, for the drivers that do need to know this information, the framework provides two sets of interfaces:
+>[!NOTE]
+>This functionality is for Microsoft-internal use only.
+
+For drivers that do need to know this information, the framework provides two sets of interfaces:
 
 -   A set of driver-supplied event callback functions.
 

@@ -37,7 +37,7 @@ ms.localizationpriority: medium
 
 7.  **Develop, build, test, and debug your storport miniport driver.**
 
-    See [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver), [Testing a Driver](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver), and [Debugging a Driver](https://msdn.microsoft.com/windows-drivers/develop/debugging_a_driver) for information about iterative building, testing, and debugging. This process will help ensure that you build a driver that works.
+    See [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver), [Testing a Driver](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver), and [Debugging a Driver](https://msdn.microsoft.com/windows-drivers/develop/debugging_a_driver) for information about iterative building, testing, and debugging. This process will help ensure that you build a driver that works.
 
 8.  **Create a driver package for your storport miniport driver.**
 

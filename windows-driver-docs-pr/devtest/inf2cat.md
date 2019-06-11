@@ -46,6 +46,25 @@ Configures Inf2Cat to verify that a [driver package's](https://docs.microsoft.co
 
 |Windows version|Version identifier|
 |--- |--- |
+|Windows 10 x86 19H1 Edition|10_19H1_X86|
+|Windows 10 x64 19H1 Edition|10_19H1_X64|
+|Windows 10 ARM64 19H1 Edition|10_19H1_ARM64|
+|Windows 10 x86 RS5 Edition|10_RS5_X86|
+|Windows 10 x64 RS5 Edition|10_RS5_X64|
+|Windows 10 ARM64 RS5 Edition|10_RS5_ARM64|
+|Windows Server RS5 x64 Edition|ServerRS5_X64|
+|Windows Server RS5 ARM64 Edition|ServerRS5_ARM64|
+|Windows 10 x86 RS4 Edition|10_RS4_X86|
+|Windows 10 x64 RS4 Edition|10_RS4_X64|
+|Windows 10 ARM64 RS4 Edition|10_RS4_ARM64|
+|Windows 10 x86 RS3 Edition|10_RS3_X86|
+|Windows 10 x64 RS3 Edition|10_RS3_X64|
+|Windows 10 ARM64 RS3 Edition|10_RS3_ARM64|
+|Windows 10 x86 RS2 Edition|10_RS2_X86|
+|Windows 10 x64 RS2 Edition|10_RS2_X64|
+|Windows 10 x86 RS1 Edition|10_AU_X86|
+|Windows 10 x64 RS1 Edition|10_AU_X64|
+|Windows Server 2016 x64 Edition|SERVER2016_X64|
 |Windows 10 x86 Edition|10_X86|
 |Windows 10 x64 Edition|10_X64|
 |Windows Server 2016|Server10_X64|
@@ -65,6 +84,13 @@ Configures Inf2Cat to verify that a [driver package's](https://docs.microsoft.co
 |Windows Server 2008 x64 Edition|Server2008_X64|
 |Windows Server 2008 Itanium Edition|Server2008_IA64|
 |Windows Server 2008 x86 Edition|Server2008_X86|
+|Windows Vista x64 Edition|Vista_X64|
+|Windows Vista x86 Edition|Vista_X86|
+|Windows XP x64 Edition|XP_X64|
+|Windows XP x86 Edition|XP_X86|
+|Windows Server 2003 x64 Edition|Server2003_X64|
+|Windows Server 2003 Itanium Edition|Server2003_IA64|
+|Windows Server 2003 x86 Edition|Server2003_X86|
 
 > [!NOTE]
 > Starting with Windows Server 2008 R2, Windows server operating systems will no longer support x86-based platforms.

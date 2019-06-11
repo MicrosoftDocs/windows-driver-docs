@@ -22,8 +22,8 @@ This topic uses the following terms:
 | EPC | Enhanced Packet Core. The term used in 3GPP when referring to the LTE core network. |
 | NGC | Next Generation Core. The term used in 3GPP when referring to the 5G core network. The NR-equivalent of EPC. |
 | DC | Dual Connectivity. The network can support both LTE and 5G NR, including dual connectivity with which devices have simultaneous connections to LTE and NR. |
-| SA | Standalone 5G. Refers to any NGC-based NR networks, the most common of which is Option 2, standalone NR. |
-| NSA | Non-standalone 5G. Refers to any EPC-based NR networks, the most common of which is Option 3, non-standalone NR. |
+| SA | Standalone 5G. Refers to any NGC-based NR networks. |
+| NSA | Non-standalone 5G. Refers to any EPC-based NR networks. |
 | gNB | An NR radio base station that supports the NR air interface as well as connectivity to NGC. |
 | RAT | Radio Access Technology. |
 
@@ -31,27 +31,27 @@ This topic uses the following terms:
 
 Windows 10, version 1903 is the first Windows release to support 5G mobile broadband drivers for IHV partners. The name *5G* is friendly name for New Radio (NR), which was introduced in the [3GPP Release 15 specification](http://www.3gpp.org/release-15). NR is a comprehensive set of standards that is envisioned to provide true long-term evolution to existing 4th generation LTE technologies, potentially covering all cellular communication needs from narrowband to ultra-broadband, and from nominal to mission-critical latency requirements. As a technology, 5G is expected to develop over a decade-long time frame. 
 
-This topic describes the first steps for Windows support of 5G in Windows 10, version 1903, starting with 5G enhanced mobile broadband (eMBB) over 5G nonstandalone EPC-based networks.
+This topic describes the MBIM extensions first released  in Windows 10 version 1903, which enable hardware partner to develop an MBB driver with data-class support for enhanced mobile broadband (eMBB) over 5G “non-standalone” EPC-based NR networks. The data-plane support and enablement for 5G throughput and commercialization requirements are not part of this Windows release and not described in this topic. 
 
 ## Windows 5G MBIM interface extension
 
 ### MBIM interface
 
-As of Windows 10, version 1903, 5G on the whole is still developing. The following table summarizes the different stages at which 5G networks will be deployed, characterized by different network architecture options (1-7). Option 1 represents existing LTE mobile broadband, which is well supported on the Windows platform.
+As of Windows 10, version 1903, 5G on the whole is still developing. From a network deployment perspective, 5G is expected to be deployed in two major phases: 
 
-![Mobile broadband 5G deployment options](images/mb-5g-deployment-options.png "Mobile broadband 5G deployment options")
+* In Phase 1, most mobile network operators are expected to deploy 5G with the addition of 5G radio to the existing LTE radio and EPC core deployments, commonly known “nonstandalone 5G” networks.  
 
-Option 3, or "nonstandalone" (NSA) 5G networks are expected to deployed by major mobile operators (MOs) around the world starting in 2019. NGC-based, or "standalone" (SA) Option 2/4/5/7 networks are expected to be deployed more widely starting in 2020 at the earliest.
+* In Phase 2, mobile network operators are expected to replace EPCs and NGCs and densify the 5G radio deployment in parallel to enable true “standalone”, or NR-NGC-based 5G networks. Phase 2 interface extensions are not in scope in this topic or Windows release. 
 
-Support for Option 3 (NSA) EPC-based 5G networks has been introduced in Windows 10, version 1903. However, NGC-based (SA) networks are still under development. Therefore, 5G support in Windows is easily extensible and, in parallel, is fully backward compatible with legacy modems. 
+Interface extensions to support basic Phase 1 network requirements, or ”nonstandalone”EPC-based5G networks, was introduced in Windows 10, version 1903. In order to be extensible and fully backward compatible with legacy modems, a new Microsoft MBIM extension version (2.0) is introduced. 
 
-The [MBIM 1.0 errata specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) has a mechanism to add and advertise optional CIDs, but it lacks a mechanism to change existing CIDs with new payloads or modified payloads, or introduce any changes that cannot be accommodated by optional CIDs. Each payload in the MBIM 1.0 errata specification might consist of fixed size members or dynamically sized offset/size pair members. If a dynamically-sized member exists, then the last member is a variable-sized buffer. Although breaking changes are avoided as much as possible, they are inevitable to support all 5G network requirements.
+The new Microsoft MBIM extesnion version is required because the [MBIM 1.0 errata specification](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) has a mechanism to add and advertise optional CIDs, but it lacks a mechanism to change the existing CIDs (new payloads or modified payload) or to introduce changes in any aspect that cannot be accommodated by optional CIDs. Each payload may consist of fixed sized members or dynamic sized (offset/size pairs) members. If one or more  dynamically sized members exist, then the last member has a variable size buffer.  
 
-Windows 10, version 1903 has updated the MBIM 1.0 specification by adding support for Option 3 (NSA) 5G networks, including breaking changes to existing CIDs. The new MBIM Extensions Release 2.0 has also been added in Windows 10, version 1903, along with a new CID to enable the host to advertise its MBIM release number and MBIM Extensions release number to MBIM devices.
+This spec also adds anew CID for the host to advertise its MBIM Release version and Extensions Release version to MBIM devices. For legacy drivers that are already in the field, this CID is optional so backward compatibility is fully maintained.  For more detail, see [MBIM Extensions Release 2.0](#mbim-extensions-release-20---5g-nonstandalone-epc-based-option-3-network-support) network support). 
 
 ### NDIS interface
 
-NDIS supports a revision number in the NDIS_HEADER. This permits adding new members to an OID message, although not all miniport drivers respect version numbering and cannot tolerate new revisions. In this case, the miniport driver version can be used to determine if the driver supports the newer version of the OID or not. However, because this adds a dependency to the IHV driver, instead NDIS uses the optional service caps table in [OID_WWAN_DEVICE_CAPS_EX](oid-wwan-device-caps-ex.md).
+NDIS supports a revision number in the NDIS_HEADER. This permits adding new members to an OID message, which NDIS uses the optional service caps table in [OID_WWAN_DEVICE_CAPS_EX](oid-wwan-device-caps-ex.md).
 
 The following NDIS OIDs and their data structures have been updated for 5G data class support.
 
@@ -91,7 +91,7 @@ A device that intends to work with older hosts should initially advertise MBIMEx
 
 The following table shows a compatibility matrix with three hypothetical hosts and three hypothetical devices, each with its native MBIMEx version stated. The devices advertise MBIMEx version 1.0 initially in the USB descriptor. The matrix shows how each of the devices behaves with each of the hosts.
 
-| Modem (below) / OS (right) | Windows 10, version 1809 or earlier (native MBIMEx version 1.0) | Windows 10, version 1903 and later (MBIMEx version 2.0) |
+| Device (below) / Host (right) | Windows 10, version 1809 or earlier (native MBIMEx version 1.0) | Windows 10, version 1903 and later (MBIMEx version 2.0) |
 | --- | --- | --- |
 | 4G device <p>Native MBIMEx version 1.0</p> | Device initially advertises MBIMEx 1.0. No MBIM_CID_VERSION exchange. Compatible device and host. Works by default with MBIMEx version 1.0. | Device initially advertises MBIMEx 1.0. No MBIM_CID_VERSION exchange. The host works with the device using MBIMEx 1.0. |
 | 5G NSA device <p>Native MBIMEx version 2.0</p> | Device initially advertises MBIMEx 1.0. No MBIM_CID_VERSION exchange. Device knows that the host has MBIMEx 1.0 and proceeds with MBIMEx 1.0. | Device initially advertises MBIMEx 1.0. Host sends MBIM_CID_VERSION to inform the device that the host supports MBIMEx 2.0. Device responds with MBIMEx 2.0. Both sides proceed with MBIMEx 2.0. |
@@ -112,7 +112,7 @@ The following table lists all existing CIDs that are modified in MBIMEx version 
 
 ## MBIM_CID_VERSION
 
-MBIM_CID_VERSION is an optional command for exchanging MBIM version information between the host and the device. If the device requires backward compatibility with older MBIM versions, it must support this command.
+For MBB drivers that support MBIM Microsoft extension 2.0 or above, MBIM_CID_VERSION is a mandatory command for exchanging MBIM version information between the host and the device. For in-market devices with drivers that do not recognize this CID, the host will assume and provide backward compatibility.
 
 The host sends this command as a query if it is supported by the device. The query contains the MBIM release number and MBIM Extensions release number that the host currently supports.
 
@@ -162,7 +162,7 @@ This CID is the same as defined on [MB Multi-SIM operations](mb-multi-sim-operat
 
 If the device supports both new data classes, then both bits shall be set.
 
-### MBIM_DATA_CLASS
+## MBIM_DATA_CLASS
 
 | Types | Mask |
 | --- | --- |
@@ -216,7 +216,7 @@ The InformationBuffer in MBIM_COMMAND_DONE contains the following MBIM_REGISTRAT
 | 0 | 4 | NwError | UINT32 | A network-specific error. Table 10-44 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) documents the cause codes for NwError. |
 | 4 | 4 | RegisterState | MBIM_REGISTER_STATE | See Table 10-46 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip). |
 | 8 | 4 | RegisterMode | MBIM_REGISTER_MODE | See Table 10-47 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip). |
-| 12 | 4 | AvailableDataClass | UINT32 | A bitmap of the values in [MBIM_DATA_CLASS](#mbimdataclass) that represents the supported data classes on the registered network, for the cell in which the device is registered. <p>This value is set to MBIMDataClassNone if the **RegisterState** is not **MBIMRegisterStateHome**, **MBIMRegisterStateRoaming**, or **MBIMRegisterStatePartner**. </p> |
+| 12 | 4 | AvailableDataClass | UINT32 | A bitmap of the values in [MBIM_DATA_CLASS](#mbim_data_class) that represents the supported data classes on the registered network, for the cell in which the device is registered. <p>This value is set to MBIMDataClassNone if the **RegisterState** is not **MBIMRegisterStateHome**, **MBIMRegisterStateRoaming**, or **MBIMRegisterStatePartner**. </p> |
 | 16 | 4 | CurrentCellularClass | MBIM_CELLULAR_CLASS | Indicates the current cellular class in use for a multi-mode function. See Table 10-8 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) for more information. <p>For a single-mode function, this is the same as the cellular class reported in MBIM_CID_DEVICE_CAPS. For multi-mode functions, a transition from CDMA to GSM or vice versa is indicated with an updated **CurrentCellularClass**. </p> |
 | 20 | 4 | ProviderIdOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a numeric (0-9) string called **ProviderId** that represents the network provider identity. <p>For GSM-based networks, this string is a concatenation of a three-digit Mobile Country Code (MCC) and a two- or three-digit Mobile Network Code (MNC). GSM-based carriers might have more than one MNC, and hence more than one **ProviderId**.</p><p>For CDMA-based networks, this string is a five-digit System ID (SID). Generally, a CDMA-based carrier has more than one SID. Typically, a carrier has one SID for each market that is usually divided geographically within a nation by regulations, such as Metropolitan Statistical Areas (MSA) in the United States. CDMA-based devices must specify MBIM_CDMA_DEFAULT_PROVIDER_ID if this information is not available.</p><p>When processing a query request and the registration state is in automatic register mode, this member contains the provider ID with which the device is currently associated (if applicable). When the registration state is in manual register mode, this member contains the provider ID to which the device is requested to register (even if the provider is unavailable).</p><p>When processing a set request and the registration state is in manual mode, this contains the provider ID selected by the host with which to register the device. When the registration state is in automatic register mode, this parameter is ignored.</p><p>CDMA 1xRTT providers must be set to MBIM_CDMA_DEFAULT_PROVIDER_ID if the provider ID is not available.</p> |
 | 24 | 4 | ProviderIdSize | SIZE(0..12) | The size, in bytes, for **ProviderId**. |
@@ -225,7 +225,7 @@ The InformationBuffer in MBIM_COMMAND_DONE contains the following MBIM_REGISTRAT
 | 36 | 4 | RoamingTextOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a string called **RoamingText** to inform a user that the device is roaming. This member is limited to, at most, 63 characters. This text should provide additional information to the user when the registration state is either MBIMRegisterStatePartner or MBIMRegisterStateRoaming. This member is optional. |
 | 40 | 4 | RoamingTextSize | SIZE(0..126) | The size, in bytes, for **RoamingText**. |
 | 44 | 4 | RegistrationFlag | MBIM_REGISTRATION_FLAGS | Flags set per Table 10-48 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip). |
-| 48 | 4 | PreferredDataClass | UINT32 | A bitmap of the values in [MBIM_DATA_CLASS](#mbimdataclass) that represent the enabled data classes on the device. The device can only operate using the data classes that are enabled. |
+| 48 | 4 | PreferredDataClass | UINT32 | A bitmap of the values in [MBIM_DATA_CLASS](#mbim_data_class) that represent the enabled data classes on the device. The device can only operate using the data classes that are enabled. |
 | Dynamic | 4 | DataBuffer | DATABUFFER | The data buffer that contains **ProviderId**, **ProviderName**, and **RoamingText**. |
 
 ### Unsolicited Events
@@ -242,7 +242,7 @@ This command is an extension for the existing MBIM_CID_PACKET_SERVICE defined in
 
 This extension adds a new member called **FrequencyRange** for the response structure and renamed the **HighestAvailableDataClass** member to **CurrentDataClass** to clarify its purpose.
 
-The **CurrentDataClass** indicates the Radio Access Technology (RAT) with which the device is currently registered. It contains a single value from [MBIM_DATA_CLASS](#mbimdataclass).
+The **CurrentDataClass** indicates the Radio Access Technology (RAT) with which the device is currently registered. It contains a single value from [MBIM_DATA_CLASS](#mbim_data_class).
 
 The **FrequencyRange** indicates the frequency range that the device is currently using. This is valid only if the **CurrentDataClass** field indicates that the MBIMDataClass5G_NSA or MBIMDataClass5G_SA bit is set.
 
@@ -271,10 +271,10 @@ The InformationBuffer in MBIM_COMMAND_DONE contains an MBIM_PACKET_SERVICE_INFO_
 | --- | --- | --- | --- | --- |
 | 0 | 4 | NwError | UINT32 | A network-specific error. Table 10-44 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip) documents the cause codes for NwError. |
 | 4 | 4 | PacketServiceState | MBIM_PACKET_SERVICE_STATE | See Table 10-53 in the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip). | 
-| 8 | 4 | CurrentDataClass | MBIM_DATA_CLASS | The current data class in the current cell, specified according to [MBIM_DATA_CLASS](#mbimdataclass). Functions must set this member to MBIMDataClassNone if the function is not in the attached packet service state. Except for HSPA (in other words, HSUPA and HSDPA) and 5G DC, the function sets this member to a single MBIM_DATA_CLASS value. For HSPA data services, functions specify a bitwise OR of MBIMDataClass HSDPA and MBIMDataClassHSUPA. For cells that support HSDPA but not HSUPA, only HSDPA is indicated (implying UMTS data class for uplink data). Whenever the current data class changes, functions send a notification indicating the new value of **CurrentDataClass**. |
+| 8 | 4 | CurrentDataClass | MBIM_DATA_CLASS | The current data class in the current cell, specified according to [MBIM_DATA_CLASS](#mbim_data_class). Functions must set this member to MBIMDataClassNone if the function is not in the attached packet service state. Except for HSPA (in other words, HSUPA and HSDPA) and 5G DC, the function sets this member to a single MBIM_DATA_CLASS value. For HSPA data services, functions specify a bitwise OR of MBIMDataClass HSDPA and MBIMDataClassHSUPA. For cells that support HSDPA but not HSUPA, only HSDPA is indicated (implying UMTS data class for uplink data). Whenever the current data class changes, functions send a notification indicating the new value of **CurrentDataClass**. |
 | 12 | 8 | UplinkSpeed | UINT64 | Contains the uplink bit rate, in bits per second. |
 | 20 | 8 | DownlinkSpeed | UINT64 | Contains the downlink bit rate, in bits per second. |
-| 38 | 4 | FrequencyRange | MBIM_FREQUENCY_RANGE | A bitmask of values in [MBIM_FREQUENCY_RANGE](#mbimfrequencyrange) that represents the frequency ranges that the device is currently using. This is only valid if the **CurrentDataClass** is either MBIMDataClass5G_NSA or MBIMDataClass5G_SA. |
+| 38 | 4 | FrequencyRange | MBIM_FREQUENCY_RANGE | A bitmask of values in [MBIM_FREQUENCY_RANGE](#mbim_frequency_range) that represents the frequency ranges that the device is currently using. This is only valid if the **CurrentDataClass** is either MBIMDataClass5G_NSA or MBIMDataClass5G_SA. |
 
 #### MBIM_FREQUENCY_RANGE
 
@@ -479,7 +479,7 @@ An array of the following MBIM_RSRP_SNR_INFO structures is used in the **DataBuf
         <td>4</td>
         <td>SystemType</td>
         <td>MBIM_DATA_CLASS</td>
-        <td>Indicates the system type for which signal state information is valid. This member is a bitmask of one type as defined in <a href="#mbimdataclass">MBIM_DATA_CLASS</a>.</td>
+        <td>Indicates the system type for which signal state information is valid. This member is a bitmask of one type as defined in <a href="#mbim_data_class">MBIM_DATA_CLASS</a>.</td>
     </tr>
 </table>
 

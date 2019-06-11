@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 
 This topic describes the USB client driver verifier feature of the USB 3.0 driver stack that enables the client driver to test certain failure cases.
 
--   [What is the USB client driver verifier](#what-is--the-usb-client-driver-verifier)
+-   [What is the USB client driver verifier](#what-is-the-usb-client-driver-verifier)
 -   [How to enable the USB client driver verifier](#how-to-enable-the-usb-client-driver-verifier)
--   [Configuration settings for the USB client driver verifier](#configuration--settings-for-the-usb-client-driver-verifier)
+-   [Configuration settings for the USB client driver verifier](#configuration-settings-for-the-usb-client-driver-verifier)
 
 ## What is the USB client driver verifier
 

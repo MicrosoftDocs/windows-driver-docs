@@ -1,18 +1,24 @@
 - name: "General-Purpose I/O (GPIO) Driver Design Guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "General-Purpose I/O (GPIO) Driver Design Guide"
+    href: index.md
   - name: "GPIO Driver Support Overview"
     href: gpio-driver-support-overview.md
   - name: "GpioClx I/O and Interrupt Interfaces"
     href: gpioclx-i-o-and-interrupt-interfaces.md
   - name: "GPIO-Based Hardware Resources"
-    href: gpio-based-hardware-resources.md
+# Auto-expanded node
     items: 
+    - name: "GPIO-Based Hardware Resources"
+      href: gpio-based-hardware-resources.md
     - name: "Connecting a KMDF Driver to GPIO I/O Pins"
       href: connecting-a-kmdf-driver-to-gpio-i-o-pins.md
   - name: "GPIO Interrupts"
-    href: gpio-interrupts.md
+# Auto-expanded node
     items: 
+    - name: "GPIO Interrupts"
+      href: gpio-interrupts.md
     - name: "Primary and Secondary Interrupts"
       href: primary-and-secondary-interrupts.md
     - name: "GPIO-Based Interrupt Resources"
@@ -28,8 +34,10 @@
     - name: "GPIO Interrupt Masks"
       href: gpio-interrupt-masks.md
   - name: "GpioClx DDI"
-    href: gpioclx-ddi.md
+# Auto-expanded node
     items: 
+    - name: "GpioClx DDI"
+      href: gpioclx-ddi.md
     - name: "Driver Support Methods in the GpioClx DDI"
       href: driver-support-methods-in-the-gpioclx-ddi.md
     - name: "Optional and Required GPIO Callback Functions"

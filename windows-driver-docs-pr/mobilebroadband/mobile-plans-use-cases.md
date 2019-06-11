@@ -4,7 +4,7 @@ description: This topic describes the basic user cases that Mobile Operators cou
 ms.assetid: 24050B13-4A1A-466F-974B-40B34EDB16DC
 keywords:
 - Windows Mobile Plans User cases, Mobile Plans implementation mobile operators
-ms.date: 03/25/2019
+ms.date: 05/31/2019
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +22,9 @@ Follow these steps:
 
 1. Implement the [Mobile Plans web portal](mobile-plans-web-portal.md#web-service-api-used-for-esim).
 2. Implement a way to give control back to the Mobile Plans app.
-   1. [Inline profile Delivery](mobile-plans-callback-notifications.md#inline-profile-delivery). Implement this callback if the eSIM profile is immediately available in the SM-DP+ server and the device can attach to the cellular network immediately.
+   1. [Immediate eSIM profile download](mobile-plans-callback-notifications.md#immediate-esim-profile-download-and-activation). Implement this callback if the eSIM profile is immediately available in the SM-DP+ server and the device can attach to the cellular network immediately.
    2. [Asynchronous Connectivity](mobile-plans-callback-notifications.md#asynchronous-connectivity). Implement this callback if the eSIM profile is immediately available in the SM-DP+ server, but the device needs to wait some time before attaching to the cellular network.
-   3. **Asynchronous Profile Download**. Implement this callback if the eSIM profile is available in your SM-DP+ server after a period of time and the device is able to attach to the cellular network immediately.
+   3. [Deferred eSIM profile download](mobile-plans-callback-notifications.md#deferred-esim-profile-download-and-activation). Implement this callback if the eSIM profile is available in your SM-DP+ server after a period of time and the device is able to attach to the cellular network immediately.
 3. [Handle eSIM download errors](mobile-plans-eSIM-error-handling.md). (Optional)
 4. Define the [basic device experience](mobile-plans-device-experience.md#basic-device-experience).
 5. Provide [Mobile Plans service configuration](mobile-plans-service-configuration.md) information.

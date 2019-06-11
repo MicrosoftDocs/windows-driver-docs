@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 
 The following standardized INF keywords are defined to enable, disable, and configure parameters for NDIS selective suspend on a miniport driver:
 
-[**\*SelectiveSuspend** INF Keyword](#selectivesuspend-keyword)
+[**\*SelectiveSuspend** INF Keyword](#selectivesuspend-inf-keyword)
 
-[**\*SSIdleTimeout** INF Keyword](#ssidletimeout-keyword)
+[**\*SSIdleTimeout** INF Keyword](#ssidletimeout-inf-keyword)
 
-[**\*SSIdleTimeoutScreenOff** INF Keyword](#ssidletimeoutscreenoff-keyword)
+[**\*SSIdleTimeoutScreenOff** INF Keyword](#ssidletimeoutscreenoff-inf-keyword)
 
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
