@@ -4,7 +4,7 @@ description: This topic describes how to configure the notification ins Mobile P
 ms.assetid: 20A59FB6-9EEF-4B55-940C-79B6FB2C99CA
 keywords:
 - Windows Mobile Plans notifications
-ms.date: 05/29/2019
+ms.date: 06/11/2019
 ms.localizationpriority: medium
 ---
 
@@ -26,6 +26,12 @@ This section describes the Mobile Plans notifications, that could be tailored fo
 * Mobile Operator logo: (not needed; this is part of the assets provided during onboarding)
 
 It is recommend that Mobile Operator use the [Notifications Visualizer app](https://www.microsoft.com/store/productId/9NBLGGH5XSL1) to test the overall notification and adjust it as needed.
+
+## Notification message recommendations
+
+* Emphasis on the end user value of the connectivity, e.g. “stay connected from anywhere, even when Wi-Fi isn’t available”
+* Highlight the offering, e.g. “3 month free trial”
+* Use lifestyle oriented photo with the PC as the centerpiece.
 
 ## Notification example
 
