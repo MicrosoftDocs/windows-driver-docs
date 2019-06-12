@@ -27,7 +27,7 @@ The following code example shows how to implement these callback functions.
 
 ```cpp
 //
-// The PSHED plug-in&#39;s GetInjectionCapabilities callback function
+// The PSHED plug-in's GetInjectionCapabilities callback function
 //
 NTSTATUS
   GetInjectionCapabilities(
@@ -45,7 +45,7 @@ NTSTATUS
 }
 
 //
-// The PSHED plug-in&#39;s InjectError callback function
+// The PSHED plug-in's InjectError callback function
 //
 NTSTATUS
   InjectError(

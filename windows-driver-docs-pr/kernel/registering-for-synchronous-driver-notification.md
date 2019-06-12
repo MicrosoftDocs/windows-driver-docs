@@ -29,7 +29,7 @@ A device driver registers for synchronous driver notification by calling the [**
 PVOID CallbackRegistrationHandle;
 NTSTATUS CallbackStatus = STATUS_SUCCESS;
 
-// The driver&#39;s DriverEntry routine
+// The driver's DriverEntry routine
 NTSTATUS  DriverEntry(
     PDRIVER_OBJECT DriverObject,
     PUNICODE_STRING RegistryPath
@@ -73,7 +73,7 @@ NTSTATUS  DriverEntry(
 When a device driver must stop receiving synchronous driver notifications, such as when it is being unloaded, it must unregister the callback function by calling the [**KeDeregisterProcessorChangeCallback**](https://msdn.microsoft.com/library/windows/hardware/ff552015) function. A device driver typically calls the **KeDeregisterProcessorChangeCallback** function from within its [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) function. The following code example shows how to unregister the callback function:
 
 ```cpp
-// The driver&#39;s Unload routine
+// The driver's Unload routine
 VOID
   Unload(
     IN PDRIVER_OBJECT DriverObject

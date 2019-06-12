@@ -55,7 +55,7 @@ The [**INF Manufacturer section**](https://msdn.microsoft.com/library/windows/ha
 
 ### <span id="Models"></span><span id="models"></span><span id="MODELS"></span>*Models*
 
-The [**INF *Models* section**](https://msdn.microsoft.com/library/windows/hardware/ff547456) specifies the PnP hardware ID of the battery (shown as *pnpid* in the example). If the device is enumerated through ACPI, this section must also specify the EISA-style ID (shown as *acpidevnum*). For information about creating these IDs, see the *Advanced Configuration and Power Interface Specification*, which is available through the [ACPI / Power Management](https://go.microsoft.com/fwlink/p/?linkid=8760) website.
+The [**INF *Models* section**](https://msdn.microsoft.com/library/windows/hardware/ff547456) specifies the PnP hardware ID of the battery (shown as *pnpid* in the example). If the device is enumerated through ACPI, this section must also specify the EISA-style ID (shown as *acpidevnum*). For information about creating these IDs, see the *Advanced Configuration and Power Interface Specification*, which is available through the [ACPI / Power Management](https://uefi.org/acpi/specs) website.
 
 ``` syntax
 [MyCompany]

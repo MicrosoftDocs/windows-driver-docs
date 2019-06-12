@@ -4,6 +4,7 @@ description: Describes DDIs that drivers can use to divide their device hardware
 keywords: [AcceptDeviceNotification]
 ms.date: 12/17/2018
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Device power management reference
@@ -62,7 +63,7 @@ The the power management framework (PoFx) defines these structures to support de
 |[PO_FX_COMPONENT_IDLE_STATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_component_idle_state)|The **PO_FX_COMPONENT_IDLE_STATE** structure specifies the attributes of an Fx power state of a component in a device.|
 |[PO_FX_COMPONENT_PERF_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_component_perf_info)|The **PO_FX_COMPONENT_PERF_INFO** structure describes all the sets of performance states for a single component within a device.|
 |[PO_FX_COMPONENT_PERF_SET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_component_perf_set)|The **PO_FX_COMPONENT_PERF_SET** structure represents a set of performance states for a single component within a device.|
-|[PO_FX_DEVICE_V1](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_device_v1)   [PO_FX_DEVICE_V2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_device_v2)|The **PO_FX_DEVICE** structure describes the power attributes of a device to the power management framework (PoFx).|
+|[PO_FX_DEVICE_V1](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_device_v1)   [PO_FX_DEVICE_V2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_device_v2)   [PO_FX_DEVICE_V3](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-po_fx_device_v3)|The **PO_FX_DEVICE** structure describes the power attributes of a device to the power management framework (PoFx).|
 |[PO_FX_PERF_STATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_perf_state)|The **PO_FX_PERF_STATE** structure represents a performance state for a single component within a device.|
 |[PO_FX_PERF_STATE_CHANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_perf_state_change)|The **PO_FX_PERF_STATE_CHANGE** structure contains information about a change to a performance state that is being requested by calling the [PoFxIssueComponentPerfStateChange](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxissuecomponentperfstatechange) or [PoFxIssueComponentPerfStateChangeMultiple](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxissuecomponentperfstatechangemultiple) routine.
 

@@ -47,7 +47,7 @@ typedef struct FILTER_CONTEXT_ {
 } FILTER_CONTEXT, *PFILTER_CONTEXT;
 
 // Memory pool tag for filter context structures
-#define FILTER_CONTEXT_POOL_TAG &#39;fcpt&#39;
+#define FILTER_CONTEXT_POOL_TAG 'fcpt'
 
 // notifyFn callout function
 NTSTATUS NTAPI

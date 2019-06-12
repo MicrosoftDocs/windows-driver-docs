@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The SOC\_SUBSYSTEM\_FAILURE bug check has a value of 0x0000014B. This indicates that an unrecoverable error was encountered in a System on a Chip (SoC) subsystem.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+
 
 ## Bug Check 0x14B SOC\_SUBSYSTEM\_FAILURE Parameters
 
@@ -59,7 +61,7 @@ The SOC\_SUBSYSTEM\_FAILURE bug check has a value of 0x0000014B. This indicates 
 Resolution
 ----------
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ```dbgcmd
 2: kd> !analyze -v

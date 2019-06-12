@@ -35,7 +35,7 @@ To create a biometric driver, follow these steps:
 
 -   Step 5: Learn about the Windows driver build, test, and debug processes and tools.
 
-    Building a driver differs from building a user-mode application. For information see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver). For information about how to build a framework-based driver, see [Building and Loading a Framework-based Driver](https://msdn.microsoft.com/library/windows/hardware/ff540730).
+    Building a driver differs from building a user-mode application. For information see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver). For information about how to build a framework-based driver, see [Building and Loading a Framework-based Driver](https://msdn.microsoft.com/library/windows/hardware/ff540730).
 
 -   Step 6: Make design decisions about your biometric driver.
 

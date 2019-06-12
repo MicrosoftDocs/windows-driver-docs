@@ -74,8 +74,8 @@ The following pseudocode example demonstrates how to set up an IRP\_MN\_QUERY\_I
 
 ...
 
-// Define a custom pool tag to identify your profile driver&#39;s dynamic memory allocations. You should change this tag to easily identify your driver&#39;s allocations from other drivers.
-#define PROFILE_DRIVER_POOL_TAG &#39;_htB&#39;
+// Define a custom pool tag to identify your profile driver's dynamic memory allocations. You should change this tag to easily identify your driver's allocations from other drivers.
+#define PROFILE_DRIVER_POOL_TAG '_htB'
 
 PIRP Irp;
 Irp = IoAllocateIrp( DeviceExtension->ParentDeviceObject->StackSize, FALSE );

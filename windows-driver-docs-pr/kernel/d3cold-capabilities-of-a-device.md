@@ -13,7 +13,7 @@ Before the driver that is the power policy owner (PPO) for a device enables the 
 
 For a Plug and Play (PnP) device, the operating system typically gets information about the D3cold capabilities of the device from the parent bus driver.
 
-For example, if a device is attached to a PCI or PCI Express bus, the device's PCI configuration space contains a Power Management Register Block that indicates the capabilities of the device. Capability flags in this block specify the device power states from which the device can signal a power management event, or PME (the PCI term for a wake event). These states might include D3hot and D3cold. For more information about PCI power management, see the [PCI Bus Power Management Interface Specification](http://www.pcisig.com/specifications/conventional/pci_bus_power_management_interface/).
+For example, if a device is attached to a PCI or PCI Express bus, the device's PCI configuration space contains a Power Management Register Block that indicates the capabilities of the device. Capability flags in this block specify the device power states from which the device can signal a power management event, or PME (the PCI term for a wake event). These states might include D3hot and D3cold. For more information about PCI power management, see the [PCI Bus Power Management Interface Specification](https://www.pcisig.com/specifications/conventional/pci_bus_power_management_interface/).
 
 If a device must be able to signal a wake event from any low-power Dx state that it enters, the device should not enter D3cold unless the device, parent bus controller, and hardware platform support signaling a wake event from D3cold.
 

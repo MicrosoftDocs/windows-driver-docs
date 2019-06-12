@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 <tbody>
 <tr class="odd">
 <td><p><strong>Purpose</strong></p>
-<p>This section describes support in the Windows operating system, for developing a Universal Serial Bus (USB) 3.0 function controller driver that communicates with the Microsoft-provided USB function controller extension (UFX).</p>
+<p>This section describes support in the Windows operating system, for developing a Universal Serial Bus (USB) function controller driver that communicates with the Microsoft-provided USB function controller extension (UFX).</p>
 <p><strong>Development tools and Microsoft-provided binaries</strong></p>
 <p>The Windows Driver Kit (WDK) contains resources that are required for driver development, such as headers, libraries, tools, and samples.</p>
 <p><a href="https://go.microsoft.com/fwlink/p/?linkid=617155" data-raw-source="[Download kits and tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=617155)">Download kits and tools for Windows</a></p>

@@ -126,7 +126,7 @@ hr = m_FxDevice->AssignS0IdleSettings( IdleUsbSelectiveSuspend,
                                 WdfUseDefault);                                                                                                   
 ```
 
-If the device hardware can generate a wake signal, the UMDF driver can also support system wake from S1, S2, or S3. For details, see [System Wake in a UMDF Driver](#systemwake).
+If the device hardware can generate a wake signal, the UMDF driver can also support system wake from S1, S2, or S3. For details, see [System Wake in a UMDF Driver](#system-wake-in-a-umdf-driver).
 
 ## Supporting USB selective suspend in a non-PPO UMDF driver
 
@@ -137,7 +137,7 @@ If a UMDF function driver enables selective suspend, the underlying WinUSB.sys d
 
 When WinUSB.sys determines that the device is idle, it sends a request to suspend the device down the kernel-mode device stack. The bus driver changes the state of the hardware as appropriate. If all device functions on the port have been suspended, the port enters the USB selective suspend state.
 
-If an I/O request arrives at WinUSB.sys while the device is suspended, WinUSB.sys resumes device operation if the device must be powered up to service the request. The UMDF driver does not require any code to resume the device while the system remains in S0. If the device hardware can generate a wake signal, the UMDF driver can also support system wake from S1, S2, or S3. For details, see [System Wake in a UMDF Driver](#systemwake).
+If an I/O request arrives at WinUSB.sys while the device is suspended, WinUSB.sys resumes device operation if the device must be powered up to service the request. The UMDF driver does not require any code to resume the device while the system remains in S0. If the device hardware can generate a wake signal, the UMDF driver can also support system wake from S1, S2, or S3. For details, see [System Wake in a UMDF Driver](#system-wake-in-a-umdf-driver).
 
 A UMDF driver that is not the PPO can support selective suspend by taking the following two steps:
 

@@ -3,7 +3,7 @@ title: Debug Universal Drivers - Step-by-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
 ms.assetid: 3FBC3693-4288-42BA-B1E8-84DC2A9AFFD9
 keywords: ["debug lab", "step-by-step", "ECHO"]
-ms.date: 10/11/2018
+ms.date: 03/28/2019
 ms.localizationpriority: medium
 ---
 
@@ -167,7 +167,7 @@ Enable kernel mode debugging on the target system by completing the following st
 **Note**  
 **Firewalls and debuggers**
 
-If you receive a pop-up message from the firewall, and you wish to use the debugger, uand you wish to use the debugger, check **all three** of the boxes.
+If you receive a pop-up message from the firewall, and you wish to use the debugger, check **all three** of the boxes.
 
 ![windows security alert - windows firewall has blocked some features of this app ](images/debuglab-image-firewall-dialog-box.png)
 
@@ -455,7 +455,7 @@ f. Reboot the target computer.
 
 Navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
 
-*C:\\Program Files (x86)\\Windows Kits\\10.0\\Tools\\x64\\devcon.exe*
+*C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\devcon.exe*
 Create a folder on the target for the built driver package (for example, *C:\\EchoDriver*). Copy all the files from the built driver described earlier on the host computer and save them to the folder that you created on the target computer.
 
 Locate the .cer certificate on the host system, it is in the same folder on the host computer in the folder that contains the built driver files. On the target computer, right-click the certificate file, and click **Install**, then follow the prompts to install the test certificate.

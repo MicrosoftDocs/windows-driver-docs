@@ -56,86 +56,84 @@ The following example demonstrates the JSON response body returned by a successf
 {
   "value": [
     {
-      "id": 9007199267351834,
-      "sharedProductId": 1152921504606971100,
-      "links": [
-        {
-          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/9007199267351834",
-          "rel": "self",
-          "method": "GET"
+            "id": 9007199267351834,
+            "sharedProductId": 1152921504606971255,
+            "links": [
+                {
+                    "href": "https://hardwareapi.microsoft.com/api/v1/hardware/products/9007199267351834",
+                    "rel": "self",
+                    "method": "GET"
+                },
+                {
+                    "href": "https://hardwareapi.microsoft.com/api/v1/hardware/products/9007199267351834/submissions",
+                    "rel": "get_submissions",
+                    "method": "GET"
+                }
+            ],
+            "isCommitted": true,
+            "isExtensionInf": false,
+            "originType": "author",
+            "sourceProductId": 0,
+            "sourcePublisherId": 0,
+            "isRetpolineCompiled": false,
+            "message": "",
+            "deviceMetadataIds": [],
+            "deviceType": "notSet",
+            "isTestSign": false,
+            "isFlightSign": false,
+            "marketingNames": [],
+            "productName": "NewDriverHacked",
+            "selectedProductTypes": {},
+            "requestedSignatures": [
+                "WINDOWS_v100_X64_TH1_FULL",
+                "WINDOWS_v63_X64"
+            ],
+            "additionalAttributes": {},
+            "testHarness": "hlk"
         },
         {
-          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/9007199267351834/submissions",
-          "rel": "get_submissions",
-          "method": "GET"
+            "id": 9007199267351835,
+            "sharedProductId": 1152921504606971256,
+            "links": [
+                {
+                    "href": "https://hardwareapi.microsoft.com/api/v1/hardware/products/9007199267351835",
+                    "rel": "self",
+                    "method": "GET"
+                },
+                {
+                    "href": "https://hardwareapi.microsoft.com/api/v1/hardware/products/9007199267351835/submissions",
+                    "rel": "get_submissions",
+                    "method": "GET"
+                }
+            ],
+            "isCommitted": true,
+            "isExtensionInf": false,
+            "originType": "author",
+            "sourceProductId": 0,
+            "sourcePublisherId": 0,
+            "isRetpolineCompiled": false,
+            "message": "",
+            "announcementDate": "2016-10-22T00:00:00Z",
+            "deviceMetadataCategory": "Input.Digitizer.Multitouch",
+            "deviceMetadataIds": [],
+            "deviceType": "internalExternal",
+            "isTestSign": false,
+            "isFlightSign": false,
+            "marketingNames": [
+                "MEU"
+            ],
+            "productName": "Mew2?",
+            "selectedProductTypes": {
+                "Windows_v100": "Touch",
+                "Windows81": "Unclassified"
+            },
+            "requestedSignatures": [
+                "WINDOWS_v100_X64_TH1_FULL",
+                "WINDOWS_v63_X64"
+            ],
+            "additionalAttributes": {},
+            "testHarness": "hlk"
         }
-      ],
-      "isCommitted": true,
-      "isExtensionInf": false, "_comment": "This field is deprecated and moved to submission resource",
-      "deviceMetadataIds": [],
-      "deviceType": "notSet",
-      "isTestSign": false,
-      "isFlightSign": false,
-      "marketingNames": [],
-      "productName": "NewDriverHacked",
-      "selectedProductTypes": {},
-      "requestedSignatures": [
-        "WINDOWS_v100_X64_TH1_FULL",
-        "WINDOWS_v63_X64"
-      ],
-      "additionalAttributes": {},
-      "testHarness": "hlk"
-    },
-    {
-      "id": 9007199267351836,
-      "sharedProductId": 1152921504606971100,
-      "links": [
-        {
-          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/9007199267351835",
-          "rel": "self",
-          "method": "GET"
-        },
-        {
-          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/9007199267351835/submissions",
-          "rel": "get_submissions",
-          "method": "GET"
-        }
-      ],
-      "isCommitted": true,
-      "isExtensionInf": false, "_comment": "This field is deprecated and moved to submission resource",
-      "announcementDate": "2016-10-22T00:00:00Z",
-      "deviceMetadataCategory": "Input.Digitizer.Multitouch",
-      "deviceMetadataIds": [],
-      "deviceType": "internalExternal",
-      "isTestSign": false,
-      "isFlightSign": false,  
-      "marketingNames": [
-        "MEU"
-      ],
-      "productName": "Mew2?",
-      "selectedProductTypes": {
-        "windows_v100": "Touch",
-        "windows81": "Unclassified"
-      },
-      "requestedSignatures": [
-        "WINDOWS_v100_X64_TH1_FULL",
-        "WINDOWS_v63_X64"
-      ],
-      "additionalAttributes": {},
-      "testHarness": "hlk"
-    }
-  ],
-  "links": [
-    {
-      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products?pageSize=50",
-      "rel": "self",
-      "method": "GET"
-    },
-    {
-      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products?pageSize=50&continuationToken=PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8%2BPENvbnRpbnVhdGlvblRva2VuPjxWZXJzaW9uPjIuMDwvVmVyc2lvbj48VHlwZT5UYWJsZTwvVHlwZT48TmV4dFBhcnRpdGlvbktleT4xITQ4IWNIVmliR2x6YUdWeWN5MHdNREF3TURBd01EQXdNREF3TURBd01ESTVPVFl6T1RJdzwvTmV4dFBhcnRpdGlvbktleT48TmV4dFJvd0tleT4xITk2IWRYTmxjaTFrWld4bGRHVmtMVEF0SUNBZ0lDQWdTR0Z5WkhkaGNtVkVjbWwyWlhJdGNISnZaSFZqZEhNdE1EQXdNREF3TURBd09UQXdOekU1T1RJMk56TTNNakUyTkEtLTwvTmV4dFJvd0tleT48VGFyZ2V0TG9jYXRpb24%2BUHJpbWFyeTwvVGFyZ2V0TG9jYXRpb24%2BPC9Db250aW51YXRpb25Ub2tlbj4%3D",
-      "rel": "next_link",
-      "method": "GET"
-    }
   ]
 }
 ```

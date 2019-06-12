@@ -116,7 +116,7 @@ If the value of ES policy is 0, the Device-Managed ES Identification field is va
 <td align="left"><strong>ES Health Check Frequency</strong></td>
 <td align="left">1</td>
 <td align="left">9</td>
-<td align="left"><p>The current frequency of the module&#39;s ES health assessment.</p>
+<td align="left"><p>The current frequency of the module's ES health assessment.</p>
 <p></em>Byte 0 – <em>AUTO_ES_HEALTH_CHECK_FREQUENCY</em> (0, 0xA9)</p></td>
 </tr>
 <tr class="even">
@@ -184,7 +184,7 @@ If the value of ES policy is 1, the Host-Managed ES Identification field is vali
 <td align="left"><strong>ES Health Check Frequency</strong></td>
 <td align="left">1</td>
 <td align="left">16</td>
-<td align="left"><p>The current frequency of the platform&#39;s ES health assessment.</p>
+<td align="left"><p>The current frequency of the platform's ES health assessment.</p>
 <p><em>Byte 0 – <em>AUTO_ES_HEALTH_FREQUENCY</em> (0, 0xA9).</p></td>
 </tr>
 <tr class="even">

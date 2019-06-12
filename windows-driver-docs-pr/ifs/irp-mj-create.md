@@ -121,7 +121,7 @@ One or more of the following:
 </tr>
 <tr class="even">
 <td align="left"><p>SL_OPEN_TARGET_DIRECTORY</p></td>
-<td align="left"><p>If this flag is set, the file&#39;s parent directory should be opened.</p></td>
+<td align="left"><p>If this flag is set, the file's parent directory should be opened.</p></td>
 </tr>
 </tbody>
 </table>

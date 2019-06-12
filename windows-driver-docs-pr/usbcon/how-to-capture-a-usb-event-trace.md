@@ -102,7 +102,7 @@ You can filter events based on keywords depending on your requirements. Here are
 </tr>
 <tr class="even">
 <td><p><strong>HeadersBusTrace</strong></p></td>
-<td><p>Shows all USB transfer events but doesn&#39;t save data packets.</p></td>
+<td><p>Shows all USB transfer events but doesn't save data packets.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PartialDataBusTrace</strong></p></td>

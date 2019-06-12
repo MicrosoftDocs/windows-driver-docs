@@ -42,7 +42,7 @@ Each column in the following table corresponds to a member of the [**AVCCONNECTI
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Not used because the source unit&#39;s device identifier is the unit that contains the subunit</p></td>
+<td><p>Not used because the source unit's device identifier is the unit that contains the subunit</p></td>
 <td><p>Subunit address</p></td>
 <td><p>Destination plug (0x0 to 0x1E, or 0xFF)</p></td>
 <td><p>N/A</p></td>
@@ -108,7 +108,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Not used because the source unit&#39;s device identifier is the unit that contains the subunit</p></td>
+<td><p>Not used because the source unit's device identifier is the unit that contains the subunit</p></td>
 <td><p>Self (same subunit)</p></td>
 <td><p>Source plug (0xFF)</p></td>
 <td><p>N/A</p></td>

@@ -3,7 +3,7 @@ title: Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a Vi
 description: Debugging Tools for Windows supports kernel debugging of a virtual machine using a Virtual COM Port.
 ms.assetid: e863e664-8338-4bbe-953b-e000a6843db9
 keywords: ["virtual machine debugging", "Virtual PC debugging", "VMware debugging"]
-ms.date: 05/30/2018
+ms.date: 04/23/2019
 ms.localizationpriority: medium
 ---
 
@@ -28,16 +28,16 @@ The computer that runs the debugger is called the *host computer*, and the virtu
 
    **bcdedit /dbgsettings serial debugport:**<em>n</em> **baudrate:115200**
 
-   where *n* is the number of a COM port on the virtual machine.
+   where *n* is the number of a COM port on the virtual machine. 
 
 2. In the virtual machine, configure the COM port to map to a named pipe. The debugger will connect through this pipe. For more information about how to create this pipe, see your virtual machine's documentation.
 
-3. Once the debugger is attached and running, reboot the target machine.
+3. Start the debugger in elevated mode, for example from an administrator command prompt. The debugger must be running in elevated mode when debugging a VM over a serial pipe.  Once the debugger is attached and running, reboot the target VM.
 
 
 ## <span id="starting_the_debugger"></span><span id="STARTING_THE_DEBUGGER"></span>Starting the Debugging Session Using WinDbg
 
-On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **COM** tab. Check the **Pipe** box, and check the **Reconnect** box. For **Baud Rate**, enter 115200. For **Resets**, enter 0.
+On the host computer, open WinDbg as an Administrator. The debugger must be running in elevated mode when debugging a VM over a serial pipe. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **COM** tab. Check the **Pipe** box, and check the **Reconnect** box. For **Baud Rate**, enter 115200. For **Resets**, enter 0.
 
 If the debugger is running on the same computer as the virtual machine, enter the following for **Port**.
 
@@ -60,7 +60,7 @@ If the debugger is running on a different physical computer from the virtual mac
 ## <span id="Starting_the_Debugging_Session_Using_KD"></span><span id="starting_the_debugging_session_using_kd"></span><span id="STARTING_THE_DEBUGGING_SESSION_USING_KD"></span>Starting the Debugging Session Using KD
 
 
-To debug a virtual machine that is running on the same physical computer as the debugger, enter the following command in a Command Prompt window.
+To debug a virtual machine that is running on the same physical computer as the debugger, enter the following command in an *elevated* Command Prompt window.
 
 **kd -k com:pipe,port=\\\\.\\pipe\\**<em>PipeName</em>**,resets=0,reconnect**
 

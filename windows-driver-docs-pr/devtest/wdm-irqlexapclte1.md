@@ -1,6 +1,6 @@
 ---
 title: IrqlExApcLte1 rule (wdm)
-description: The IrqlExApcLte1 rule specifies that the driver calls ExAcquireFastMutex and ExTryToAcquireFastMutex only at IRQL�  APC\_LEVEL.
+description: The IrqlExApcLte1 rule specifies that the driver calls ExAcquireFastMutex and ExTryToAcquireFastMutex only at IRQL APC_LEVEL.
 ms.assetid: c86aa593-03b5-4a65-9cef-3b64fcc3d5fd
 ms.date: 05/21/2018
 keywords: ["IrqlExApcLte1 rule (wdm)"]

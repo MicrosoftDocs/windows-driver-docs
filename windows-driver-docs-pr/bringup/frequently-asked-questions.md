@@ -5,9 +5,7 @@ ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---
 
-
 # Firmware WEG: Frequently asked questions (FAQ)
-
 
 The following FAQ came about due to the number of machines still using Windows 7.
 
@@ -27,7 +25,7 @@ Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
 >
 > If you boot to legacy boot mode and go through installation you will typically have 2 partitions (as listed with diskpart.exe "list partition"). The first partition being active and listed as ‘system partition’, file system type being NTFS with a hidden \\boot folder. The second partition is where \\Windows is installed on another NTFS partition.
 >
-> If Windows is installing in UEFI mode, installation will create the EFI System Partition (ESP) as file system type Fat32, the Microsoft Reserve Partition (MSR) as RAW, and an OS / data partition using NTFS. If you mount and look at the ESP, you should see a folder \\EFI boot folder (folder may be hidden). Also see [Method to verify system is booted in UEFI mode](#_Toc451181866).
+> If Windows is installing in UEFI mode, installation will create the EFI System Partition (ESP) as file system type Fat32, the Microsoft Reserve Partition (MSR) as RAW, and an OS / data partition using NTFS. If you mount and look at the ESP, you should see a folder \\EFI boot folder (folder may be hidden).
 >
 > Since you will need to leave CSM enabled in the system firmware for Windows 7, you may need to specifically select UEFI boot mode when booting to installation media (CD/DVD/USB) in order to install Windows 7 in UEFI boot mode.
 > Consult with PC manufacture for more information concerning boot options and BIOS configuration.
@@ -101,7 +99,7 @@ Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
 
 **Q:** What is dependency/impact on 32-bit vs. 64-bit OS going from Legacy boot to UEFI and vice versa if the firmware is 64-bit UEFI or 32-bit UEFI?
 
-> **A:** One limitation of Windows UEFI boot is that you can only boot an OS "bitness" that matches the UEFI that is installed (see Question 7).� If you have a 32-bit UEFI, you can only install a 32-bit Windows on it.� 64-bit Windows requires 64-bit UEFI or a CSM.� However, if�a system is missing a CSM, you cannot boot Win7 64-bit Windows OS.
+> **A:** One limitation of Windows UEFI boot is that you can only boot an OS "bitness" that matches the UEFI that is installed (see Question 7). If you have a 32-bit UEFI, you can only install a 32-bit Windows on it. 64-bit Windows requires 64-bit UEFI or a CSM. However, if a system is missing a CSM, you cannot boot Win7 64-bit Windows OS.
 
 **Q:** Can you convert a system booting using Legacy MBR boot to GPT boot on the fly without impacting data?
 
@@ -114,6 +112,3 @@ Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
 [Windows 10 Specifications - Microsoft](https://www.microsoft.com/windows/windows-10-specifications)
 
 [Update to add support for TPM 2.0 in Windows 7 and Windows Server 2008 R2](https://support.microsoft.com/kb/2920188)
-
-
-

@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_CONNECTION_QUALITY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_CONNECTION\_QUALITY
@@ -37,6 +38,7 @@ OID\_WDI\_SET\_CONNECTION\_QUALITY provides a hint to the IHV component to enfor
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 

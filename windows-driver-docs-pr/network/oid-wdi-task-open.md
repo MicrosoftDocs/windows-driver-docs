@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_OPEN Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_OPEN
@@ -29,6 +30,7 @@ None
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_OPEN\_COMPLETE](ndis-status-wdi-indication-open-complete.md)
+
 Requirements
 ------------
 

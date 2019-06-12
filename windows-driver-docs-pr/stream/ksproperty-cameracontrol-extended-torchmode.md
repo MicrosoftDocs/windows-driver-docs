@@ -65,7 +65,7 @@ The **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.micros
 
 This property control is synchronous and not cancelable.
 
-# Remarks
+## Remarks
 
 ### Getting the property
 

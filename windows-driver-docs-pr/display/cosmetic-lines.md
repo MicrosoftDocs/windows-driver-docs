@@ -49,7 +49,7 @@ or
 </div>
 Slope &gt; 1</td>
 <td align="left"><p>Horizontally</p></td>
-<td align="left"><p>Light the pixel at diamond&#39;s left vertex.</p></td>
+<td align="left"><p>Light the pixel at diamond's left vertex.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Slope &lt; 1</p>
@@ -62,17 +62,17 @@ or
 </div>
 Slope &gt; 1</td>
 <td align="left"><p>Vertically</p></td>
-<td align="left"><p>Light the pixel at diamond&#39;s top vertex.</p></td>
+<td align="left"><p>Light the pixel at diamond's top vertex.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Slope = 1</p></td>
 <td align="left"><p>Horizontally</p></td>
-<td align="left"><p>Light the pixel at diamond&#39;s top vertex.</p></td>
+<td align="left"><p>Light the pixel at diamond's top vertex.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Slope = 1</p></td>
 <td align="left"><p>Vertically</p></td>
-<td align="left"><p>Light the pixel at diamond&#39;s right vertex.</p></td>
+<td align="left"><p>Light the pixel at diamond's right vertex.</p></td>
 </tr>
 </tbody>
 </table>

@@ -54,13 +54,13 @@ DWORD Category = TXTLOG_VENDOR;
 DWORD Flags = TXTLOG_ERROR ;
 DWORD ErrorCode = 1056; // The corresponding Win32 error code
 
-SetupWriteTextLog(LogToken, Category, Flags, ErrorCode, TEXT("Start Service: Failed to start service &#39;SomeService&#39;"),);
+SetupWriteTextLog(LogToken, Category, Flags, ErrorCode, TEXT("Start Service: Failed to start service 'SomeService'"),);
 ```
 
 If the TXTLOG_VENDOR event category is enabled and the TXTLOG_ERROR event level is set for the text log, this code would create an entry in the text log that would be formatted as follows:
 
 ```cpp
-!!!     :  Start Service: Failed to start service &#39;SomeService&#39; 
+!!!     :  Start Service: Failed to start service 'SomeService' 
 !!!   :  Error 1056: An instance of the service is already running.
 ```
 

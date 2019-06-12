@@ -29,7 +29,7 @@ The following code example shows how to implement these callback functions.
 
 ```cpp
 //
-// The PSHED plug-in&#39;s RetrieveErrorInfo callback function
+// The PSHED plug-in's RetrieveErrorInfo callback function
 //
 NTSTATUS
   RetrieveErrorInfo(
@@ -80,7 +80,7 @@ NTSTATUS
 }
 
 //
-// The PSHED plug-in&#39;s FinalizeErrorRecord callback function
+// The PSHED plug-in's FinalizeErrorRecord callback function
 //
 NTSTATUS
   FinalizeErrorRecord(
@@ -131,7 +131,7 @@ NTSTATUS
 }
 
 //
-// The PSHED plug-in&#39;s ClearErrorStatus callback function
+// The PSHED plug-in's ClearErrorStatus callback function
 //
 NTSTATUS
   ClearErrorStatus(

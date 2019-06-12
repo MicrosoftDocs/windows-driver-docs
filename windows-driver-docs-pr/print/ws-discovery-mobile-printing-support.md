@@ -86,7 +86,7 @@ The following table provides additional information about the MobilePrinter cate
 <tbody>
 <tr class="odd">
 <td><p>PNPX_DEVICECATEGORY_PRINTER_MOBILE</p>
-<p>L&quot;MobilePrinter&quot;</p></td>
+<p>L"MobilePrinter"</p></td>
 <td><p>MobilePrinter category</p>
 <p>Keywords: Printer</p></td>
 </tr>

@@ -132,7 +132,7 @@ The first column displays the address of the control area structure that describ
 Remarks
 -------
 
-You can use the [**!vm**](-vm.md) extension command to analyze virtual memory use. This extension is typically more useful than **!memusage**. For more information about memory management, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. (This book may not be available in some languages and countries.)
+You can use the [**!vm**](-vm.md) extension command to analyze virtual memory use. This extension is typically more useful than **!memusage**. For more information about memory management, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
 The [**!pfn**](-pfn.md) extension command can be used to display a particular page frame entry in the PFN database.
 

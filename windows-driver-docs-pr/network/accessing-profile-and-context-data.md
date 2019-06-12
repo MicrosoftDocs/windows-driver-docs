@@ -40,7 +40,7 @@ The Native 802.11 IHV UI Extensions DLL accesses the [IPropertyBag COM interface
 
 As an alternative to the IPropertyBag COM interface, the Native 802.11 IHV UI Extensions DLL can access the **IHV\_PROFILE\_DATA** and **IHV\_NOTIFICATION\_DATA** properties through the [**GetProp**](https://msdn.microsoft.com/library/windows/desktop/ms633564) Win32 function. In this situation, the DLL must use the handle of the parent window, as shown in the following example:
 
-```
+```C++
 LPWSTR lpszBuffer = (LPWSTR) GetProp(GetParent(hwndDlg), L"IHV_PROFILE_DATA");
 ```
 

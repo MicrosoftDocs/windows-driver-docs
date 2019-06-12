@@ -241,7 +241,7 @@ The following audio effects are available for use in Windows 10.
 </tr>
 <tr class="even">
 <td align="left">Virtual Headphones</td>
-<td align="left"><p>Virtualized surround sound allows users who are wearing headphones to distinguish sound from front to back as well as from side to side. This is done by transmitting spatial cues that help the brain localize the sounds and integrate them into a sound field. This has the effect of making the sound feel like it transcends the headphones, creating an &quot;outside-the-head&quot; listening experience. This effect is achieved by using an advanced technology called Head Related Transfer Functions (HRTF). HRTF generates acoustic cues that are based on the shape of the human head. These cues not only help listeners to locate the direction and source of sound but it also enhances the type of acoustic environment that is surrounding the listener.</p></td>
+<td align="left"><p>Virtualized surround sound allows users who are wearing headphones to distinguish sound from front to back as well as from side to side. This is done by transmitting spatial cues that help the brain localize the sounds and integrate them into a sound field. This has the effect of making the sound feel like it transcends the headphones, creating an "outside-the-head" listening experience. This effect is achieved by using an advanced technology called Head Related Transfer Functions (HRTF). HRTF generates acoustic cues that are based on the shape of the human head. These cues not only help listeners to locate the direction and source of sound but it also enhances the type of acoustic environment that is surrounding the listener.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Speaker Fill</td>
@@ -251,7 +251,7 @@ The following audio effects are available for use in Windows 10.
 <td align="left">Room Correction</td>
 <td align="left"><p>Room correction optimizes the listening experience for a particular location in the room, for example, the center cushion of your couch, by automatically calculating the optimal combination of delay, frequency response, and gain adjustments.</p>
 <p>The room correction feature better matches sound to the image on the video screen and is also useful in cases where desktop speakers are placed in nonstandard locations. room correction processing is an improvement over similar features in high-end receivers because it better accounts for the way in which the human ear processes sound.</p>
-<p>Calibration is performed with the help of a microphone, and the procedure can be used with both stereo and multichannel systems. The user places the microphone where the user intends to sit and then activates a wizard that measures the room response. The wizard plays a set of specially designed tones from each loudspeaker in turn, and measures the distance, frequency response, and overall gain of each loudspeaker from the microphone&#39;s location.</p></td>
+<p>Calibration is performed with the help of a microphone, and the procedure can be used with both stereo and multichannel systems. The user places the microphone where the user intends to sit and then activates a wizard that measures the room response. The wizard plays a set of specially designed tones from each loudspeaker in turn, and measures the distance, frequency response, and overall gain of each loudspeaker from the microphone's location.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Bass Management</td>
@@ -261,11 +261,11 @@ The following audio effects are available for use in Windows 10.
 </tr>
 <tr class="even">
 <td align="left">Environmental Effects</td>
-<td align="left"><p>Environmental effects work to increase the reality of audio playback by more accurately simulating real-world audio environments. There are a number of different environments that you can select, for example &quot;stadium&quot; simulates the acoustics of a sports stadium.</p></td>
+<td align="left"><p>Environmental effects work to increase the reality of audio playback by more accurately simulating real-world audio environments. There are a number of different environments that you can select, for example "stadium" simulates the acoustics of a sports stadium.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Speaker Protection</td>
-<td align="left"><p>The purpose of speaker protection is to suppress resonant frequencies that would cause the speakers to do physical harm to any of the PCs&#39; system components. For example, some physical hard drives can be damaged by playing a loud sound at just the right frequency. Secondarily, speaker protection works to minimize damage to speakers, by attenuating the signal, when it exceeds certain values.</p></td>
+<td align="left"><p>The purpose of speaker protection is to suppress resonant frequencies that would cause the speakers to do physical harm to any of the PCs' system components. For example, some physical hard drives can be damaged by playing a loud sound at just the right frequency. Secondarily, speaker protection works to minimize damage to speakers, by attenuating the signal, when it exceeds certain values.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Speaker Compensation</td>
@@ -273,7 +273,7 @@ The following audio effects are available for use in Windows 10.
 </tr>
 <tr class="odd">
 <td align="left">Dynamic Range Compression</td>
-<td align="left"><p>Dynamic range compression amplifies quiet sounds by narrowing or &quot;compressing&quot; an audio signal&#39;s dynamic range. Audio compression amplifies quiet sounds which are below a certain threshold while loud sounds remain unaffected.</p></td>
+<td align="left"><p>Dynamic range compression amplifies quiet sounds by narrowing or "compressing" an audio signal's dynamic range. Audio compression amplifies quiet sounds which are below a certain threshold while loud sounds remain unaffected.</p></td>
 </tr>
 </tbody>
 </table>

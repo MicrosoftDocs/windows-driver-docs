@@ -3,7 +3,7 @@ title: dx (Display Debugger Object Model Expression)
 description: The dx command displays a C++ expression using the NatVis extension model. The dx command works with debugger objects.
 ms.assetid: 93047911-5195-4FB9-A015-5349084EDC0A
 keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
-ms.date: 12/22/2017
+ms.date: 05/28/2019
 topic_type:
 - apiref
 api_name:
@@ -67,7 +67,7 @@ Use any of the following format specifiers to modify the default rendering.
 | ,b                      | Display ordinals in binary                                                               |
 | ,en                     | Display enums by name only (no value)                                                    |
 | ,c                      | Display as single character (not a string)                                               |
-| .s                      | Display 8-bit strings as ASCII quoted                                                    |
+| ,s                      | Display 8-bit strings as ASCII quoted                                                    |
 | ,sb                     | Display 8-bit strings as ASCII unquoted                                                  |
 | ,s8                     | Display 8-bit strings as UTF-8 quoted                                                    |
 | ,s8b                    | Display 8-bit strings as UTF-8 unquoted                                                  |
@@ -78,13 +78,14 @@ Use any of the following format specifiers to modify the default rendering.
 | ,\[&lt;expression&gt;\] | Specify length of pointer/array/container as the expression &lt;expression&gt;           |
 | ,nd                     | Do not find the derived (runtype) type of the object. Display static value only          |
 
-
-
 <span id="_______dx_-_______"></span><span id="_______DX_-_______"></span> **dx** {**-?**}   
 Display command line help.
 
 <span id="_______dx_-h______"></span><span id="_______DX_-H______"></span> **dx** {**-h**}   
 Displays help for objects available in the debugger.
+
+<span id="_______dx_-id______"></span><span id="_______DX_-ID______"></span> **dx** {**-id**}   
+Microsoft internal use only. Used to follow data model links in command output.
 
 ## Command line usage example
 

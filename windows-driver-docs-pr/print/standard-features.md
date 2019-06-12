@@ -86,7 +86,7 @@ The following table lists all of the standard features, in alphabetical order, a
 <td><p>Types of printing media</p></td>
 <td><p>See <a href="standard-options.md" data-raw-source="[Standard Options](standard-options.md)">Standard Options</a>.</p>
 <p>Customized options are allowed.</p></td>
-<td><p>Optional. If not specified, the printer&#39;s default medium is always used.</p></td>
+<td><p>Optional. If not specified, the printer's default medium is always used.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Memory</strong></p></td>

@@ -272,7 +272,7 @@ DriverEntry(
         // Cleanup tracing here because DriverContextCleanup will not be called
         // as we have failed to create WDFDRIVER object itself.
         // Please note that if you return failure from DriverEntry after the
-        // WDFDRIVER object is created successfully, you don&#39;t have to
+        // WDFDRIVER object is created successfully, you don't have to
         // call WPP cleanup because in those cases DriverContextCleanup
         // will be executed when the framework deletes the DriverObject.
         //
@@ -394,6 +394,7 @@ You can use any trace message function you choose, provided the trace message fu
 
 
 <span id="using_dotracemessage"></span><span id="USING_DOTRACEMESSAGE"></span>
+
 **Using DoTraceMessage statements**
 
 1.  Add the [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) macro to your code like you would a debug print routine. The **DoTraceMessage** macro takes 3 parameters: the flag level (*TraceFlagName*), which defines the condition when the trace message is written, the *Message* string, and the optional variable list.
@@ -488,7 +489,7 @@ The WDK provides support for the [WPP Preprocessor](wpp-preprocessor.md), so tha
 2.  In the project property page, click **Configuration Properties** and click **WPP Tracing**.
 3.  Under **General**, set the **Run WPP** option to **Yes**.
 4.  Under **Command Line**, add any additional options to customize tracing behavior. For info on what you can add, see [WPP Preprocessor](wpp-preprocessor.md).
-5.  Build the project or solution for your target configuration and platform. See [Building a Driver with the WDK](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver).
+5.  Build the project or solution for your target configuration and platform. See [Building a Driver with the WDK](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
 
 For information about the build process, see [TraceWPP task](tracewpp-task.md) and [WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md).
 

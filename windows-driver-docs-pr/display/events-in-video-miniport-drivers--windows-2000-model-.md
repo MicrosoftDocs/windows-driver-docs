@@ -53,7 +53,7 @@ The following table lists the event-related functions that the video port driver
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570364" data-raw-source="[&lt;strong&gt;VideoPortSetEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570364)"><strong>VideoPortSetEvent</strong></a></p></td>
-<td align="left"><p>Sets an event object to the signaled state if it was not already in that state, and returns the event object&#39;s previous state.</p></td>
+<td align="left"><p>Sets an event object to the signaled state if it was not already in that state, and returns the event object's previous state.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570378" data-raw-source="[&lt;strong&gt;VideoPortWaitForSingleObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570378)"><strong>VideoPortWaitForSingleObject</strong></a></p></td>

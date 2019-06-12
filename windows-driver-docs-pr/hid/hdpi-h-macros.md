@@ -10,13 +10,13 @@ ms.date: 10/17/2018
 The Hdpi.h header file contains several macros. 
 This topic documents the following macros:
 
-* [**HidP\_GetButtons**](#HidPGetButtons)
-* [**HidP\_GetButtonsEx**](#HidPGetButtonsEx)
-* [**HidP\_SetButtons**](#HidPSetButtons)
-* [**HidP\_UnsetButtons**](#HidPUnsetButtons)
+* [**HidP\_GetButtons**](#hidp_getbuttons)
+* [**HidP\_GetButtonsEx**](#hidp_getbuttonsex)
+* [**HidP\_SetButtons**](#hidp_setbuttons)
+* [**HidP\_UnsetButtons**](#hidp_unsetbuttons)
 
 
-##  HidP\_GetButtons
+##  <a name="hidp_getbuttons"></a>HidP\_GetButtons
 
 
 The **HidP\_GetButtons** macro is a mnemonic alias for the [**HidP\_GetUsages**](https://msdn.microsoft.com/library/windows/hardware/ff539742) routine.
@@ -26,7 +26,7 @@ The **HidP\_GetButtons** macro is a mnemonic alias for the [**HidP\_GetUsages**]
         HidP_GetUsages(Rty, UPa, LCo, ULi, ULe, Ppd, Rep, RLe)
 ```
 
-##  HidP\_GetButtonsEx
+##  <a name="hidp_getbuttonsex"></a>HidP\_GetButtonsEx
 
 
 The **HidP\_GetButtonsEx** macro is an mnemonic alias for the [**HidP\_GetUsagesEx**](https://msdn.microsoft.com/library/windows/hardware/ff539745) routine.
@@ -37,7 +37,7 @@ The **HidP\_GetButtonsEx** macro is an mnemonic alias for the [**HidP\_GetUsages
 ```
 
 
-##  HidP\_SetButtons
+##  <a name="hidp_setbuttons"></a>HidP\_SetButtons
 
 
 The **HidP\_SetButtons** macro is a mnemonic alias for the [**HidP\_SetUsages**](https://msdn.microsoft.com/library/windows/hardware/ff539792) routine.
@@ -47,7 +47,7 @@ The **HidP\_SetButtons** macro is a mnemonic alias for the [**HidP\_SetUsages**]
         HidP_SetUsages(Rty, Up, Lco, ULi, ULe, Ppd, Rep, Rle)
 ```
 
-##  HidP\_UnsetButtons
+##  <a name="hidp_unsetbuttons"></a>HidP\_UnsetButtons
 
 
 The **HidP\_UnsetButtons** macro is a mnemonic alias for the [**HidP\_UnsetUsages**](https://msdn.microsoft.com/library/windows/hardware/ff539819) routine.

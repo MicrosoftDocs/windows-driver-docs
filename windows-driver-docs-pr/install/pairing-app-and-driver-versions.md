@@ -33,7 +33,7 @@ In addition to matching the most recent app and driver versions, the system also
 
 ## See Also
 
-* [uap5:DriverDependency](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverdependency?branch=lahugh-rs3)
+* [uap5:DriverDependency](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverdependency)
 * [uap5:DriverConstraint](https://review.docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint?branch=lahugh-rs3)
 * [INF AddSoftware Directive](inf-addsoftware-directive.md)
 * [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md)

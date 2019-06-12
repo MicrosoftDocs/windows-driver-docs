@@ -86,7 +86,7 @@ These restrictions add an additional configuration to the [minimal interoperabil
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>bConfigBlendType</strong></p></td>
-<td align="left"><p>Zero or 1 (at the accelerator&#39;s discretion).</p></td>
+<td align="left"><p>Zero or 1 (at the accelerator's discretion).</p></td>
 </tr>
 </tbody>
 </table>
@@ -109,7 +109,7 @@ These restrictions add an additional configuration to the [minimal interoperabil
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>bConfigDataType</strong></p></td>
-<td align="left"><p>Any value (at the accelerator&#39;s discretion).</p></td>
+<td align="left"><p>Any value (at the accelerator's discretion).</p></td>
 </tr>
 </tbody>
 </table>

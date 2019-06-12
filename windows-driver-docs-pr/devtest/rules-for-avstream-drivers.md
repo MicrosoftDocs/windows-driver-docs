@@ -93,7 +93,7 @@ The DDI compliance rules for AVStream miniport drivers verify the DDI interface 
 </tr>
 <tr class="even">
 <td align="left"><p><a href="ks-kstimedpinsetdevicestate.md" data-raw-source="[&lt;strong&gt;KsTimedPinSetDeviceState&lt;/strong&gt;](ks-kstimedpinsetdevicestate.md)"><strong>KsTimedPinSetDeviceState</strong></a></p></td>
-<td align="left"><p>The KsTimedPinSetDeviceState rule specifies that a AVStream (KS) miniport driver makes state transitions using the AVStream minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff556359" data-raw-source="[&lt;em&gt;AVStrMiniPinSetDeviceState&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556359)"><em>AVStrMiniPinSetDeviceState</em></a> routine within the required time.</p></td>
+<td align="left"><p>The KsTimedPinSetDeviceState rule specifies that a AVStream (KS) miniport driver makes state transitions using the AVStream minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556359" data-raw-source="[&lt;em&gt;AVStrMiniPinSetDeviceState&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556359)"><em>AVStrMiniPinSetDeviceState</em></a> routine within the required time.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="ks-kstimedprocessingmutex.md" data-raw-source="[&lt;strong&gt;KsTimedProcessingMutex&lt;/strong&gt;](ks-kstimedprocessingmutex.md)"><strong>KsTimedProcessingMutex</strong></a></p></td>

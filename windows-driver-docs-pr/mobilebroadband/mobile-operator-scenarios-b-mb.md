@@ -11,10 +11,9 @@ ms.localizationpriority: medium
 
 Use the docs in this section to help you learn about the different mobile operator scenarios.
 
--   Mobile Plans
+-   [Mobile Plans](mobile-plans.md)
 
-    - [Promotional content](mobile-plans-promotional-content.md)
-    - [Asynchronous fulfillment](mobile-plans-asynchronous-fulfillment.md)
+-   [eSIM management on Windows for mobile operators](esim-management-on-windows-for-mobile-operators-and-oems.md)
 
 -   [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
 

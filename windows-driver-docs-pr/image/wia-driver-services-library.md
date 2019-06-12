@@ -45,7 +45,7 @@ The driver services library provides the following functions.
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549224" data-raw-source="[&lt;strong&gt;wiasGetChildrenContexts&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549224)"><strong>wiasGetChildrenContexts</strong></a></p></td>
-<td><p>Retrieves an array of item contexts belonging to the current item&#39;s children.</p></td>
+<td><p>Retrieves an array of item contexts belonging to the current item's children.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549233" data-raw-source="[&lt;strong&gt;wiasGetContextFromName&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549233)"><strong>wiasGetContextFromName</strong></a></p></td>
@@ -123,7 +123,7 @@ The driver services library provides the following functions.
 <tbody>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549167" data-raw-source="[&lt;strong&gt;wiasCreatePropContext&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549167)"><strong>wiasCreatePropContext</strong></a></p></td>
-<td><p>Allocates a property context to indicate which of an item&#39;s properties are changing.</p></td>
+<td><p>Allocates a property context to indicate which of an item's properties are changing.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549195" data-raw-source="[&lt;strong&gt;wiasFreePropContext&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549195)"><strong>wiasFreePropContext</strong></a></p></td>
@@ -183,7 +183,7 @@ The driver services library provides the following functions.
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549358" data-raw-source="[&lt;strong&gt;wiasSetItemPropAttribs&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549358)"><strong>wiasSetItemPropAttribs</strong></a></p></td>
-<td><p>Sets the access flags and valid values for an item&#39;s set of properties.</p></td>
+<td><p>Sets the access flags and valid values for an item's set of properties.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549369" data-raw-source="[&lt;strong&gt;wiasSetItemPropNames&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549369)"><strong>wiasSetItemPropNames</strong></a></p></td>
@@ -195,7 +195,7 @@ The driver services library provides the following functions.
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549381" data-raw-source="[&lt;strong&gt;wiasSetPropertyAttributes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549381)"><strong>wiasSetPropertyAttributes</strong></a></p></td>
-<td><p>Sets the access flags and property values of an item&#39;s properties.</p></td>
+<td><p>Sets the access flags and property values of an item's properties.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549390" data-raw-source="[&lt;strong&gt;wiasSetValidFlag&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549390)"><strong>wiasSetValidFlag</strong></a></p></td>
