@@ -78,15 +78,3 @@ In addition to the debuggers, Debugging Tools for Windows includes a set of tool
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
 For additional information related to Debugging Tools for Windows, see [Debugging Resources](debugging-resources.md). For information on what's new in Windows 10, see [Debugging Tools for Windows: New for Windows 10](debugging-tools-for-windows--new-for-windows-10.md).
-
-
-## <span id="In_this_section"></span><span id="in_this_section"></span><span id="IN_THIS_SECTION"></span>In this section
-
--   [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md)
--   [Debugging Resources](debugging-resources.md)
--   [Debugger Operation](debugger-operation-win8.md)
--   [Debugging Techniques](debugging-techniques.md)
--   [Symbols](symbols.md)
--   [Crash Dump Analysis](crash-dump-files.md)
--   [Bug Checks (Blue Screens)](bug-checks--blue-screens-.md)
--   [Debugger Reference](debugger-reference.md)
