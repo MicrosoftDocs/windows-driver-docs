@@ -14,14 +14,17 @@ ms.localizationpriority: medium
 
 A miniport driver handles SRB_FUNCTION_PROTOCOL_COMMAND requests when the HBA is to provide dedicated support for a user-mode application. Supporting this request allows a set of driver-defined ("private") protocol commands to be sent directly to the miniport driver.
 
-For SRBs with the **Function** member set to SRB_FUNCTION_PROTOCOL_COMMAND, the **DataBuffer** member contains a pointer to a system-defined [STORAGE_PROTOCOL_COMMAND](https://docs.microsoft.com/windows/desktop/api/winioctl/ns-winioctl-_storage_protocol_command) structure.
+For SRBs with the **Function** member set to SRB_FUNCTION_PROTOCOL_COMMAND, the **DataBuffer** member contains a pointer to a system-defined [STORAGE_PROTOCOL_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_storage_protocol_command) structure.
 
-**VISHAL: WHAT DOES MINIPORT NEED TO DO WHEN IT RECEIVES SRB_FUNCTION_PROTOCOL_COMMAND???**
+The miniport should do the following:
 
-* **what error conditions does it look for? does it return error codes - which ones?**
-* **what else does it need to do?**
+* Translate the command information provided in the STORAGE_PROTOCOL_COMMAND structure into the appropriate protocol-specific bus command. The protocol is identified by **\*Data->Buffer.ProtocolType**.
 
-**VISHAL: Should I link to both SCSI and STOR versions of StartIo and SRB in See Also Section??**
+* For WRITE-type requests, transfer the data to which **DataToDeviceBufferOffset** points to the device.
+
+* For READ-type requests, transfer data from the device to the buffer that **DataFromDeviceBufferOffset** points to.
+
+* Set **ReturnStatus** to reflect the status of the request, and optionally set **ErrorCode**.
 
 ## See Also
 
@@ -29,12 +32,12 @@ For SRBs with the **Function** member set to SRB_FUNCTION_PROTOCOL_COMMAND, the 
 
 [IOCTL_STORAGE_PROTOCOL_COMMAND (*ntddstor.h*)](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_protocol_command)
 
-[HwScsiStartIo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nc-srb-phw_startio)
-
 [HwStorStartIo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_startio)
 
 [SRB_IO_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddscsi/ns-ntddscsi-_srb_io_control)
 
 [SCSI_REQUEST_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_scsi_request_block)
+
+[STORAGE_PROTOCOL_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_storage_protocol_command)
 
 [STORAGE_REQUEST_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_storage_request_block)
