@@ -14,7 +14,7 @@ ms.technology: windows-devices
 Start here for an overview of Debugging Tools for Windows. This tool set includes WinDbg and other debuggers.
 
 
-## <span id="3_ways_to_get_Debugging_Tools_for_Windows"></span><span id="3_ways_to_get_debugging_tools_for_windows"></span><span id="3_WAYS_TO_GET_DEBUGGING_TOOLS_FOR_WINDOWS"></span>How to get Debugging Tools for Windows
+## <span id="3_ways_to_get_Debugging_Tools_for_Windows"></span><span id="3_ways_to_get_debugging_tools_for_windows"></span><span id="3_WAYS_TO_GET_DEBUGGING_TOOLS_FOR_WINDOWS"></span>Install Debugging Tools for Windows
 
 You can get Debugging Tools for Windows as part of a development kit or as a standalone tool set:
 
@@ -33,7 +33,7 @@ You can get Debugging Tools for Windows as part of a development kit or as a sta
     You can install the Debugging Tools for Windows alone, without the Windows SDK or WDK, by starting installation of the Windows SDK and then selecting only **Debugging Tools for Windows** in the list of features to install (and clearing the selection of all other features). To download the installer or an ISO image, see [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) on Windows Dev Center.
 
 
-## <span id="Getting_Started_with_Windows_Debugging"></span><span id="getting_started_with_windows_debugging"></span><span id="GETTING_STARTED_WITH_WINDOWS_DEBUGGING"></span>Getting Started with Windows Debugging
+## <span id="Getting_Started_with_Windows_Debugging"></span><span id="getting_started_with_windows_debugging"></span><span id="GETTING_STARTED_WITH_WINDOWS_DEBUGGING"></span>Get started with Windows Debugging
 
 To get started with Windows debugging, see [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md).
 
@@ -55,11 +55,8 @@ All of these debugging environments provide user interfaces for the same underly
 The Windows debuggers can run on x86-based, x64-based, or ARM-based processors, and they can debug code that is running on those same architectures. Sometimes the debugger and the code being debugged run on the same computer, but other times the debugger and the code being debugged run on separate computers. In either case, the computer that is running the debugger is called the *host computer*, and the computer that is being debugged is called the *target computer*. The Windows debuggers support the following versions of Windows for both the host and target computers.
 
 -   Windows 10 and Windows Server 2016
-
 -   Windows 8.1 and Windows Server 2012 R2
-
 -   Windows 8 and Windows Server 2012
-
 -   Windows 7 and Windows Server 2008 R2
 
 
