@@ -30,7 +30,7 @@ Cross-signed drivers are still permitted if any of the following are true:
 * Secure Boot is off in the BIOS.
 * Drivers was signed with an end-entity certificate issued prior to July 29th 2015 that chains to a supported cross-signed CA.
 
-For more info, see [Driver Signing Changes in Windows 10, version 1607](https://blogs.msdn.microsoft.com/windows_hardware_certification/2016/07/26/driver-signing-changes-in-windows-10-version-1607/).
+To prevent systems from failing to boot properly, boot drivers will not be blocked, but they will be removed by the Program Compatibility Assistant.
 
 ## Signing a driver for client versions of Windows
 
