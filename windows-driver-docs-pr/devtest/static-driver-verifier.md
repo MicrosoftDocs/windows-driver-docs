@@ -57,8 +57,8 @@ SDV examines all possible paths through the driver code. It is designed to find 
 
 For specific information about the drivers that SDV can verify, see [Supported Drivers](supported-drivers.md)
 
-For more information and tips about using Static Driver Verifier, see
+For more information and tips about using Static Driver Verifier, see the following:
 
-* the [Windows Hardware Certification blog](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
-* the [Windows Kernel community](https://techcommunity.microsoft.com/t5/Windows-Kernel/ct-p/WindowsKernel)
-* the [Windows Hardware Testing and Certification](https://social.msdn.microsoft.com/Forums/home?forum=whck) forum.
+* [Windows Hardware Certification blog](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
+* [Windows Kernel community site](https://techcommunity.microsoft.com/t5/Windows-Kernel/ct-p/WindowsKernel)
+* [Windows Hardware Testing and Certification forum](https://social.msdn.microsoft.com/Forums/home?forum=whck)
