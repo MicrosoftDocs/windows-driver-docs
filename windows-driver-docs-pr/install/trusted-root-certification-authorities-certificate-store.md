@@ -31,13 +31,15 @@ The name of the Trusted Root Certification Authorities certificate store is *roo
 
 **Note**  The driver signing verification policy that is used by the PnP manager requires that the root certificate of a private CA has been previously installed in the local machine version of the Root Certification Authorities certificate store. For more information, see [Local Machine and Current User Certificate Stores](local-machine-and-current-user-certificate-stores.md).
 
- 
 
-For more information about certificate stores, see [Driver Signing Changes in Windows 10, version 1607](https://blogs.msdn.microsoft.com/windows_hardware_certification/2016/07/26/driver-signing-changes-in-windows-10-version-1607/) and [Driver Signing Policy](https://docs.microsoft.com/windows-hardware/drivers/install/kernel-mode-code-signing-policy--windows-vista-and-later-).
 
- 
+For more information about driver signing, see [Driver Signing Policy](https://docs.microsoft.com/windows-hardware/drivers/install/kernel-mode-code-signing-policy--windows-vista-and-later-).
 
  
+
+ 
+
+
 
 
 

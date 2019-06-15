@@ -93,7 +93,7 @@ Many of the previously mentioned methods and types are exclusively available in 
 which is used to build drivers.
 This is an unfortunate oversight in the organization of Microsoft's headers,
 as non-DX APIs previously could depend on just the Windows SDK.
-If it is too onerous for non-DX APIs to include the WDK or localize the WDK depedency to the runtime or loader component,
+If it is too onerous for non-DX APIs to include the WDK or localize the WDK dependency to the runtime or loader component,
 then Microsoft gives non-DX API projects permission to effectively sever the WDK dependency.
 The WDK dependency can be severed by using Microsoft's public documentation,
 and creating binary-compatible types and function declarations into their project.
