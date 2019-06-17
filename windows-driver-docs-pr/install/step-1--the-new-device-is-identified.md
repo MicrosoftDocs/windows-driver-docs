@@ -40,7 +40,19 @@ For example, when a user plugs a wireless local area network (WLAN) adapter into
 
     For more information about this process, see [Step 2: A Driver for the Device is Selected](step-2--a-driver-for-the-device-is-selected.md).
 
- 
+Each bus driver constructs hardware IDs in its own, bus-specific manner.
+
+For examples of standardized identifiers for other buses, see:
+
+*  [Identifiers for PCI Devices](identifiers-for-pci-devices.md)
+*  [Identifiers for SCSI Devices](identifiers-for-scsi-devices.md)
+*  [Identifiers for IDE Devices](identifiers-for-ide-devices.md)
+*  [Identifiers for PCMCIA Devices](identifiers-for-pcmcia-devices.md)
+*  [Identifiers for ISAPNP Devices](identifiers-for-isapnp-devices.md)
+*  [Identifiers for 1394 Devices](identifiers-for-1394-devices.md)
+*  [Identifiers for Secure Digital (SD) Devices](identifiers-for-secure-digital--sd--devices.md)
+*  [Identifiers for USB Devices](identifiers-for-usb-devices.md)
+
 
  
 
