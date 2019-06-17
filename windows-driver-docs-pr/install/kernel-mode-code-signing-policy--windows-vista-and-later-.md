@@ -58,12 +58,12 @@ The following table shows signing policies for client operating system versions.
 
 Note that Secure Boot does not apply to Windows Vista and Windows 7.
 
-|Applies to:|Windows Vista, Windows 7; Windows 8+ with Secure Boot off|Windows 8, Windows 8.1, Windows 10, versions 1507 and 1511 with Secure Boot on|Windows 10, version 1607+ with Secure Boot on|
-|--- |--- |--- |--- |
-|**Architectures:**|64-bit only, no signature required for 32-bit|64-bit, 32-bit|64-bit, 32-bit|
-|**Signature required:**|Embedded or catalog file|Embedded or catalog file|Embedded or catalog file|
-|**Signature algorithm:**|SHA1|SHA1|SHA2 or SHA1|
-|**Certificate:**|Standard roots trusted by Code Integrity|Standard roots trusted by Code Integrity|Microsoft Root Authority 2010, Microsoft Root Certificate Authority, Microsoft Root Authority|
+|Applies to:|Windows Vista, Windows 7; Windows 8+ with Secure Boot off|Windows 8, Windows 8.1, Windows 10, versions 1507 and 1511 with Secure Boot on|Windows 10, version 1607, 1703, 1709 with Secure Boot on|Windows 10, version 1803+ with Secure Boot on|
+|--- |--- |--- |--- |--- |
+|**Architectures:**|64-bit only, no signature required for 32-bit|64-bit, 32-bit|64-bit, 32-bit|64-bit, 32-bit|
+|**Signature required:**|Embedded or catalog file|Embedded or catalog file|Embedded or catalog file|Embedded or catalog file|
+|**Signature algorithm:**|SHA1|SHA1|SHA2 or SHA1|SHA1|
+|**Certificate:**|Standard roots trusted by Code Integrity|Standard roots trusted by Code Integrity|Microsoft Root Authority 2010, Microsoft Root Certificate Authority, Microsoft Root Authority|Microsoft Root Authority 2010, Microsoft Root Certificate Authority, Microsoft Root Authority|
 
 In addition to driver code signing, you also need to meet the PnP device installation signing requirements for installing a driver.  For more info, see [Plug and Play (PnP) device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md).
 
