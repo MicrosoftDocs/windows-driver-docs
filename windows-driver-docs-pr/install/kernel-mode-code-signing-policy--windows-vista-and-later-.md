@@ -58,7 +58,7 @@ The following table shows signing policies for client operating system versions.
 
 Note that Secure Boot does not apply to Windows Vista and Windows 7.
 
-|Applies to:|Windows Vista, Windows 7; Windows 8+ with Secure Boot off|Windows 8, Windows 8.1, Windows 10, versions 1507 and 1511 with Secure Boot on|Windows 10, version 1607, 1703, 1709 with Secure Boot on|Windows 10, version 1803+ with Secure Boot on|
+|Applies to:|Windows Vista, Windows 7; Windows 8+ with Secure Boot off|Windows 8, Windows 8.1, Windows 10, versions 1507 and 1511 with Secure Boot on|Windows 10, versions 1607, 1703, 1709 with Secure Boot on|Windows 10, version 1803+ with Secure Boot on|
 |--- |--- |--- |--- |--- |
 |**Architectures:**|64-bit only, no signature required for 32-bit|64-bit, 32-bit|64-bit, 32-bit|64-bit, 32-bit|
 |**Signature required:**|Embedded or catalog file|Embedded or catalog file|Embedded or catalog file|Embedded or catalog file|
