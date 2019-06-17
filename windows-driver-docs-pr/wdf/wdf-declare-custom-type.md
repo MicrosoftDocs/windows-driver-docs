@@ -57,12 +57,12 @@ The following code example creates a request object, and then it uses the [**Wdf
 WDFREQUEST Request;
 WDF_OBJECT_ATTRIBUTES MyRequestObjectAttributes;
 
-WDF_OBJECT_ATTRIBUTES_INIT(&amp;MyRequestObjectAttributes);
+WDF_OBJECT_ATTRIBUTES_INIT(&MyRequestObjectAttributes);
 
 status = WdfRequestCreate(
-                          &amp;MyRequestObjectAttributes
+                          &MyRequestObjectAttributes
                           NULL,
-                          &amp;Request
+                          &Request
                           );
 
 if (!NT_SUCCESS(status)) {

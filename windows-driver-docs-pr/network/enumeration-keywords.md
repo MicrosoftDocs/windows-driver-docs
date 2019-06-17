@@ -178,7 +178,7 @@ The following table lists all of the keywords and describes the values that a dr
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong><em>SpeedDuplex</strong></p></td>
-<td align="left"><p>Speed &amp; Duplex</p></td>
+<td align="left"><p>Speed & Duplex</p></td>
 <td align="left"><p>0 (Default)</p></td>
 <td align="left"><p>Auto Negotiation</p></td>
 </tr>
@@ -264,7 +264,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="even">
 <td align="left"></td>
@@ -274,9 +274,9 @@ The following table lists all of the keywords and describes the values that a dr
 </tr>
 <tr class="odd">
 <td align="left"><p><strong><em>PriorityVLANTag</strong></p></td>
-<td align="left"><p>Packet Priority &amp; VLAN</p></td>
+<td align="left"><p>Packet Priority & VLAN</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>Packet Priority &amp; VLAN Disabled</p></td>
+<td align="left"><p>Packet Priority & VLAN Disabled</p></td>
 </tr>
 <tr class="even">
 <td align="left"></td>
@@ -294,7 +294,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Packet Priority &amp; VLAN Enabled</p></td>
+<td align="left"><p>Packet Priority & VLAN Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>InterruptModeration</strong></p></td>
@@ -378,7 +378,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>TCPChecksumOffloadIPv4</strong></p></td>
@@ -402,7 +402,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong><em>TCPChecksumOffloadIPv6</strong></p></td>
@@ -426,7 +426,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>UDPChecksumOffloadIPv4</strong></p></td>
@@ -450,7 +450,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong><em>UDPChecksumOffloadIPv6</strong></p></td>
@@ -474,7 +474,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>LsoV1IPv4</strong></p></td>
@@ -534,7 +534,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header &amp; ESP Enabled</p></td>
+<td align="left"><p>Auth Header & ESP Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>IPsecOffloadV2</strong></p></td>
@@ -558,7 +558,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header &amp; ESP Enabled</p></td>
+<td align="left"><p>Auth Header & ESP Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong><em>IPsecOffloadV2IPv4</strong></p></td>
@@ -582,7 +582,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header &amp; ESP Enabled</p></td>
+<td align="left"><p>Auth Header & ESP Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>TCPUDPChecksumOffloadIPv4</strong></p></td>

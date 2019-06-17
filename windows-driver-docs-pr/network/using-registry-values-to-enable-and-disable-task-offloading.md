@@ -96,7 +96,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>TCPChecksumOffloadIPv4</strong></p></td>
@@ -120,7 +120,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong><em>TCPChecksumOffloadIPv6</strong></p></td>
@@ -144,7 +144,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>UDPChecksumOffloadIPv4</strong></p></td>
@@ -168,7 +168,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong><em>UDPChecksumOffloadIPv6</strong></p></td>
@@ -192,7 +192,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>LsoV1IPv4</strong></p></td>
@@ -252,7 +252,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header &amp; ESP Enabled</p></td>
+<td align="left"><p>Auth Header & ESP Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>IPsecOffloadV2</strong></p></td>
@@ -276,7 +276,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header &amp; ESP Enabled</p></td>
+<td align="left"><p>Auth Header & ESP Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>*IPsecOffloadV2IPv4</strong></p></td>
@@ -300,7 +300,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header &amp; ESP Enabled</p></td>
+<td align="left"><p>Auth Header & ESP Enabled</p></td>
 </tr>
 </tbody>
 </table>
@@ -359,7 +359,7 @@ The following table describes the grouped keywords that you can use to configure
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Tx &amp; Rx Enabled</p></td>
+<td align="left"><p>Tx & Rx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>TCPUDPChecksumOffloadIPv6</strong></p></td>
@@ -383,7 +383,7 @@ The following table describes the grouped keywords that you can use to configure
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Tx &amp; Rx Enabled</p></td>
+<td align="left"><p>Tx & Rx Enabled</p></td>
 </tr>
 </tbody>
 </table>

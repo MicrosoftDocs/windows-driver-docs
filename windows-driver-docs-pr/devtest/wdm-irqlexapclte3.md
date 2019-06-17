@@ -56,14 +56,14 @@ DispatchRequest (
     NTSTATUS Status;
     ...
 
-    KeInitializeSpinLock(&amp;SpinLock);
+    KeInitializeSpinLock(&SpinLock);
 
     //
     // KeAcquireSpinLock sets IRQL to DISPATCH_LEVEL and the previous IRQL is 
     // written to OldIrql after the lock is acquired.
     //
 
-    KeAcquireSpinLock(&amp;SpinLock, &amp;OldIrql);
+    KeAcquireSpinLock(&SpinLock, &OldIrql);
     ...
 
     Status = ProcessRequest(DeviceRequest);
@@ -72,7 +72,7 @@ DispatchRequest (
     // KeReleaseSpinLock sets IRQL to the OldIrql returned by KeAcquireSpinLock.
     //
 
-    KeReleaseSpinLock(&amp;SpinLock, &amp;OldIrql);
+    KeReleaseSpinLock(&SpinLock, &OldIrql);
     ...
 }
 
@@ -92,13 +92,13 @@ ProcessRequest (
     //                   IRQL <= APC_LEVEL. 
     //
 
-    if(!ExAcquireSharedStarveExclusive(&amp;Resource, FALSE)) {
+    if(!ExAcquireSharedStarveExclusive(&Resource, FALSE)) {
         return STATUS_UNSUCCESSFUL;
     }
 
     ...
 
-    ExReleaseResourceLite(&amp;Resource);
+    ExReleaseResourceLite(&Resource);
     ...
     return Status;
 }

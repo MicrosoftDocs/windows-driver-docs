@@ -36,23 +36,23 @@ You must use the IDs in the following table, depending on the protocol that the 
 </tr>
 <tr class="even">
 <td><p>Parallel</p></td>
-<td><p>The ID contains "LPTENUM&amp;quot; in the ID string.</p></td>
+<td><p>The ID contains "LPTENUM&quot; in the ID string.</p></td>
 </tr>
 <tr class="odd">
 <td><p>USB</p></td>
-<td><p>The ID contains "USBPRINT&amp;quot; in the ID string.</p></td>
+<td><p>The ID contains "USBPRINT&quot; in the ID string.</p></td>
 </tr>
 <tr class="even">
 <td><p>Dot4</p></td>
-<td><p>The ID contains "DOT4PRT&amp;quot; in the ID string. This ID applies to Dot4USB and parallel. .</p></td>
+<td><p>The ID contains "DOT4PRT&quot; in the ID string. This ID applies to Dot4USB and parallel. .</p></td>
 </tr>
 <tr class="odd">
 <td><p>Bluetooth</p></td>
-<td><p>The ID contains "BTHPRINT&amp;quot; in the ID string.</p></td>
+<td><p>The ID contains "BTHPRINT&quot; in the ID string.</p></td>
 </tr>
 <tr class="even">
 <td><p>WSD</p></td>
-<td><p>The ID contains "WSDPRINT&amp;quot; in the ID string.</p></td>
+<td><p>The ID contains "WSDPRINT&quot; in the ID string.</p></td>
 </tr>
 </tbody>
 </table>

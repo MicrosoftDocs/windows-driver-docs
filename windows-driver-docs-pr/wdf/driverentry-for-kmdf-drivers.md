@@ -128,20 +128,20 @@ DriverEntry(
     // the cleanup callback function when it deletes the driver object,
     // before the driver is unloaded.
     //
-    WDF_OBJECT_ATTRIBUTES_INIT(&amp;attributes);
+    WDF_OBJECT_ATTRIBUTES_INIT(&attributes);
     attributes.EvtCleanupCallback = SerialEvtDriverContextCleanup;
 
     WDF_DRIVER_CONFIG_INIT(
-                           &amp;config,
+                           &config,
                            SerialEvtDeviceAdd
                            );
 
     status = WdfDriverCreate(
                              DriverObject,
                              RegistryPath,
-                             &amp;attributes,
-                             &amp;config,
-                             &amp;hDriver
+                             &attributes,
+                             &config,
+                             &hDriver
                              );
     if (!NT_SUCCESS(status)) {
         SerialDbgPrintEx(
@@ -163,7 +163,7 @@ DriverEntry(
     // controls, including whether or not to break on entry.
     //
     SerialGetConfigDefaults(
-                            &amp;driverDefaults,
+                            &driverDefaults,
                             hDriver
                             );
 

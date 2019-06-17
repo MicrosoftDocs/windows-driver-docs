@@ -207,7 +207,7 @@ This is the XML from the WDTFTest.xml configuration file which generated the err
 ```
 This is the well-formed value for deviceid which fixes the error:
 ```
-    <Parameter Name="SDEL">IsDevice AND deviceid='PCI\VEN_11AB&amp;DEV_2B38&amp;SUBSYS_045E0003&amp;REV_00\4&amp;91A2562&amp;0&amp;00E8'</Parameter>
+    <Parameter Name="SDEL">IsDevice AND deviceid='PCI\VEN_11AB&DEV_2B38&SUBSYS_045E0003&REV_00\4&91A2562&0&00E8'</Parameter>
 ```
 
 ### Other Issues

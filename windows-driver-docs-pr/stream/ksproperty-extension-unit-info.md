@@ -99,11 +99,11 @@ ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
     ExtensionProp.NodeId = m_dwNodeId;
 
     hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &amp;ExtensionProp,
+        (PKSPROPERTY) &ExtensionProp,
         sizeof(ExtensionProp),
         NULL,
         0,
-        &amp;ulBytesReturned);
+        &ulBytesReturned);
 ```
 
 Requirements

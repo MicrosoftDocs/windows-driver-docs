@@ -67,15 +67,15 @@ WDFREQUEST Request;
 WDF_OBJECT_ATTRIBUTES MyRequestObjectAttributes;
 PMY_REQUEST_CONTEXT pMyContext;
 
-WDF_OBJECT_ATTRIBUTES_INIT(&amp;MyRequestObjectAttributes);
+WDF_OBJECT_ATTRIBUTES_INIT(&MyRequestObjectAttributes);
 WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE(
-                                       &amp;MyRequestObjectAttributes,
+                                       &MyRequestObjectAttributes,
                                        MY_REQUEST_CONTEXT
                                        );
 status = WdfRequestCreate(
-                          &amp;MyRequestObjectAttributes,
+                          &MyRequestObjectAttributes,
                           NULL,
-                          &amp;Request
+                          &Request
                           );
 
 if (!NT_SUCCESS(status)) {

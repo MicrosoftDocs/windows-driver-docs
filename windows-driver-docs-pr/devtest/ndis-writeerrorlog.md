@@ -29,7 +29,7 @@ Example
 
 ```
 // an example of how to log an error if memory allocation fails PVOID p;
-NdisMAllocateSharedMemory(par1, par2, par3, &amp;p, ...);
+NdisMAllocateSharedMemory(par1, par2, par3, &p, ...);
 if (p == NULL)
 {
  NdisWriteErrorLogEntry("Memory allocation failed");

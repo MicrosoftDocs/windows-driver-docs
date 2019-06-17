@@ -85,7 +85,7 @@ Windows 8 introduces an array of new features and capabilities that require gra
 <td align="left">WDDM 1.0
 <p>XDDM on Server and limited UMPC</p></td>
 <td align="left">D3D9, D3D10</td>
-<td align="left">Scheduling, Memory Management, Fault tolerance, D3D9 &amp; 10</td>
+<td align="left">Scheduling, Memory Management, Fault tolerance, D3D9 & 10</td>
 </tr>
 <tr class="even">
 <td align="left">Windows Vista SP1 / Windows 7 client pack</td>

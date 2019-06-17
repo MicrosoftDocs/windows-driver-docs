@@ -74,7 +74,7 @@ void PrintSerializedFormat(WAVEFORMATEX *pWfx)
 
     // Serialize the PROPVARIANT structure. The serialized byte stream
     // will eventually be written to the registry as REG_BINARY data.
-    hr = StgSerializePropVariant(&amp;var, &amp;pVal, &amp;cb);
+    hr = StgSerializePropVariant(&var, &pVal, &cb);
     if (SUCCEEDED(hr))
     {
         // Write the binary data to stdout. Format the output so you can
@@ -109,7 +109,7 @@ void main()
     wfx.dwChannelMask = 3;
     wfx.SubFormat = KSDATAFORMAT_SUBTYPE_PCM;
 
-    PrintSerializedFormat(&amp;wfx.Format);
+    PrintSerializedFormat(&wfx.Format);
 }
 ```
 

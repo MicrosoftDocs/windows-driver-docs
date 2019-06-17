@@ -89,13 +89,13 @@ NTSTATUS                status;
 WDF_IO_QUEUE_CONFIG     queueConfig;
 WDFQUEUE                queue;  
 
-WDF_IO_QUEUE_CONFIG_INIT(&amp;queueConfig,   
+WDF_IO_QUEUE_CONFIG_INIT(&queueConfig,   
                          WdfIoQueueDispatchParallel);  
 
 status = WdfIoQueueCreate(device,  
-                          &amp;queueConfig,  
+                          &queueConfig,  
                           WDF_NO_OBJECT_ATTRIBUTES,  
-                          &amp;queue);  
+                          &queue);  
  
 if (!NT_SUCCESS(status)) {  
      TraceEvents(TRACE_LEVEL_ERROR, DBG_INFO,
