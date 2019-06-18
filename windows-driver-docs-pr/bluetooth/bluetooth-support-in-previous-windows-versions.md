@@ -214,7 +214,7 @@ Windows Vista includes the following enhancements to the Bluetooth stack and re
 </tr>
 <tr class="odd">
 <td align="left"><p>03F0</p></td>
-<td align="left"><p>011D&amp;Rev_0017</p></td>
+<td align="left"><p>011D&Rev_0017</p></td>
 <td align="left"><p>Hewlett Packard nc4200</p></td>
 </tr>
 <tr class="even">
@@ -244,7 +244,7 @@ Windows Vista includes the following enhancements to the Bluetooth stack and re
 </tr>
 <tr class="odd">
 <td align="left"><p>049F</p></td>
-<td align="left"><p>0086&amp;Rev_1393</p></td>
+<td align="left"><p>0086&Rev_1393</p></td>
 <td align="left"><p>Hewlett Packard nx7000</p></td>
 </tr>
 <tr class="even">
@@ -274,7 +274,7 @@ Windows Vista includes the following enhancements to the Bluetooth stack and re
 </tr>
 <tr class="odd">
 <td align="left"><p>0DB0</p></td>
-<td align="left"><p>6855&amp;Rev_2000</p></td>
+<td align="left"><p>6855&Rev_2000</p></td>
 <td align="left"><p>Message signaled interrupt (MSI) Bluetooth device</p></td>
 </tr>
 <tr class="even">

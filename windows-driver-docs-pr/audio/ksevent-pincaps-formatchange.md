@@ -58,7 +58,7 @@ So, for example, a driver that supports the `KSEVENT_PINCAPS_FORMATCHANGE` event
 ```cpp
 static PCEVENT_ITEM FormatChangePinEvent[] = {
   {
-    &amp;KSEVENTSETID_PinCapsChange,
+    &KSEVENTSETID_PinCapsChange,
     KSEVENT_PINCAPS_FORMATCHANGE,
     KSEVENT_TYPE_ENABLE | KSEVENT_TYPE_BASICSUPPORT,
     MyEventHandler

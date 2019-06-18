@@ -50,7 +50,7 @@ Examples
 The following code example breaks into the debugger if an attempt to reuse a request object fails.
 
 ```cpp
-status = WdfRequestReuse(Request, &amp;params);
+status = WdfRequestReuse(Request, &params);
 WDFVERIFY(NT_SUCCESS(status));
 ```
 

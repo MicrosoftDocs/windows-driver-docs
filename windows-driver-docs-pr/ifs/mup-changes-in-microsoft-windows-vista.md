@@ -183,7 +183,7 @@ typedef struct _QUERY_PATH_REQUEST_EX {
 </tr>
 <tr class="even">
 <td align="left"><p><strong>PathName</strong></p></td>
-<td align="left"><p>A non-NULL terminated Unicode string of the form &amp;lt;server&gt;&amp;lt;share&gt;&amp;lt;path&gt;.</p></td>
+<td align="left"><p>A non-NULL terminated Unicode string of the form &lt;server&gt;&lt;share&gt;&lt;path&gt;.</p></td>
 </tr>
 </tbody>
 </table>

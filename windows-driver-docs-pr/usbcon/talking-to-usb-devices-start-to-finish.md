@@ -82,7 +82,7 @@ Follow the steps in this section or, skip directly to the [Custom USB device acc
 <td><p>You can obtain that information from the device manufacturer.</p>
 <ul>
 <li><p><strong>Vendor and product identifiers</strong></p>
-<p>In Device Manager, view the device properties. On the <strong>Details</strong> tab, view the <strong>Hardware Id</strong> property value. That value is a combination of those two identifiers. For example, for the SuperMUTT device, the <strong>Hardware Id</strong> is "USB\VID_045E&amp;PID_F001"; vendor ID is "0x045E" and product ID is "0xF001".</p></li>
+<p>In Device Manager, view the device properties. On the <strong>Details</strong> tab, view the <strong>Hardware Id</strong> property value. That value is a combination of those two identifiers. For example, for the SuperMUTT device, the <strong>Hardware Id</strong> is "USB\VID_045E&PID_F001"; vendor ID is "0x045E" and product ID is "0xF001".</p></li>
 <li><strong>Device class, subclass, and protocol codes</strong></li>
 <li><strong>Device interface GUID</strong></li>
 </ul>

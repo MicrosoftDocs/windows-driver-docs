@@ -30,7 +30,7 @@ If you just need the Debugging Tools for Windows 10, and not Windows Driver Kit 
 
 
 > [!TIP]
-> If the Windows SDK is already installed, open **Settings**, navigate to **Apps &amp; features**, select **Windows Software Development Kit**, and then click **Modify** to change the installation to add **Debugging Tools for Windows**.
+> If the Windows SDK is already installed, open **Settings**, navigate to **Apps & features**, select **Windows Software Development Kit**, and then click **Modify** to change the installation to add **Debugging Tools for Windows**.
 
 
 -------------------

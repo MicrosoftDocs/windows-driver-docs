@@ -149,7 +149,7 @@ WDTF_SYSTEM               : INFO  : Returning from Hibernate. Elapsed time (hh:m
 <td><p>WDTF_DRIVER_SETUP_DEVICE</p></td>
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh450938" data-raw-source="[&lt;strong&gt;IWDTFDriverSetupAction2&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh450938)"><strong>IWDTFDriverSetupAction2</strong></a></p></td>
 <td><pre class="syntax" space="preserve"><code>WDTF_DRIVER_SETUP_DEVICE  : INFO  :  - UpdateDriver()
-WDTF_DRIVER_SETUP_DEVICE  : INFO  :          Target: TI EHCI controller ACPI\TXI_USBEHCI\2&amp;DABA3FF&amp;2
+WDTF_DRIVER_SETUP_DEVICE  : INFO  :          Target: TI EHCI controller ACPI\TXI_USBEHCI\2&DABA3FF&2
 </code></pre></td>
 </tr>
 <tr class="odd">
@@ -165,7 +165,7 @@ WDTF_DRIVER_SETUP_DEVICE  : INFO  :          Target: TI EHCI controller ACPI\TXI
 <tr class="odd">
 <td><p>WDTF_EDT</p></td>
 <td><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh450969" data-raw-source="[&lt;strong&gt;IWDTFEnhancedDeviceTestSupportAction2&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh450969)"><strong>IWDTFEnhancedDeviceTestSupportAction2</strong></a></p></td>
-<td><pre class="syntax" space="preserve"><code>WDTF_EDT                  : INFO  :  - Enable()<br/>WDTF_EDT                  : INFO  :          Target: TI EHCI controller ACPI\TXI_USBEHCI\2&amp;DABA3FF&amp;2 
+<td><pre class="syntax" space="preserve"><code>WDTF_EDT                  : INFO  :  - Enable()<br/>WDTF_EDT                  : INFO  :          Target: TI EHCI controller ACPI\TXI_USBEHCI\2&DABA3FF&2 
 WDTF_EDT                  : INFO  :          Result: System reboot required as device is not disableable  ( 80004005 ).
 
 WDTF_EDT                  : INFO  :  - Disable()<br/>WDTF_EDT                  : INFO  :          Target: OMAP4 Dual-Core ARM Cortex A9 ACPI\TEXAS_INSTRUMENTS_INC._-_ARM_FAMILY_7_MODEL_C09_REVISION_102\0</code></pre></td>

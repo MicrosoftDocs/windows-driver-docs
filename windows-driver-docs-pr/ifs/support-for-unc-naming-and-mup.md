@@ -121,7 +121,7 @@ typedef struct _QUERY_PATH_REQUEST {
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FilePathName</strong></p></td>
-<td align="left"><p>A non-NULL terminated Unicode string of the form &amp;lt;server&gt;&amp;lt;share&gt;&amp;lt;path&gt;. The length of the string, in bytes, is specified by the <strong>PathNameLength</strong> member.</p></td>
+<td align="left"><p>A non-NULL terminated Unicode string of the form &lt;server&gt;&lt;share&gt;&lt;path&gt;. The length of the string, in bytes, is specified by the <strong>PathNameLength</strong> member.</p></td>
 </tr>
 </tbody>
 </table>

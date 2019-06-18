@@ -96,7 +96,7 @@ Specifies the stream context (handle) of the stream to close. If **AVCSTRM\_CLOS
 The following is an example of how to specify the stream to close:
 
 ```cpp
-    pAVCStrmReq = &amp;pStrmExt->AVCStrmReq;
+    pAVCStrmReq = &pStrmExt->AVCStrmReq;
     RtlZeroMemory(pAVCStrmReq, sizeof(AVC_STREAM_REQUEST_BLOCK));
     INIT_AVCSTRM_HEADER(pAVCStrmReq, AVCSTRM_CLOSE);
 

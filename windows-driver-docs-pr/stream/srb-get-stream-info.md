@@ -45,9 +45,9 @@ The class driver normally issues this request only once. The minidriver may forc
 
     ```cpp
      PHW_STREAM_HEADER pstrhdr =
-      (PHW_STREAM_HEADER)&amp;(pSrb->CommandData.StreamBuffer->StreamHeader);
+      (PHW_STREAM_HEADER)&(pSrb->CommandData.StreamBuffer->StreamHeader);
      PHW_STREAM_INFORMATION pstrinfo =
-      (PHW_STREAM_INFORMATION)&amp;(pSrb->CommandData.StreamBuffer->StreamInfo);
+      (PHW_STREAM_INFORMATION)&(pSrb->CommandData.StreamBuffer->StreamInfo);
      
     ```
 

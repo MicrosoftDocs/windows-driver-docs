@@ -59,8 +59,8 @@ Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In 
         status = WDF_WMI_BUFFER_APPEND_STRING(
             WDF_PTR_ADD_OFFSET(wnode, wnode->OffsetInstanceName),
             size,
-            &amp;deviceName,
-            &amp;length
+            &deviceName,
+            &length
             );
 
         //
@@ -76,8 +76,8 @@ Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In 
         WDF_WMI_BUFFER_APPEND_STRING(
             WDF_PTR_ADD_OFFSET(wnode,  wnode->DataBlockOffset),
             size,
-            &amp;modelName,
-            &amp;length
+            &modelName,
+            &length
             );
 ```
 
