@@ -7,7 +7,10 @@ ms.localizationpriority: medium
 
 # Net ring element management
 
-When testing your NetAdapterCx client driver with [Driver Verifier](../devtest/driver-verifier.md), follow the guidance in this topic to manage your [**NET_RING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ring/ns-ring-_net_ring) structures and their elements. The rules in this topic describe which members of the net ring elements client drivers can modify and when, depending on the data path scenario, as well as general information client drivers should keep in mind for these structures. If a client driver does not adhere to these directions, Driver Verifier reports a violation and triggers a bug check on the device under test.
+Follow the guidance in this topic to manage your [**NET_RING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ring/ns-ring-_net_ring) structures and their elements during network data transfer. The rules in this topic describe which members of the net ring elements client drivers can modify and when, depending on the data path scenario, as well as general information client drivers should keep in mind for these structures. 
+
+> [!IMPORTANT]
+> Client drivers should adhere to these directions during all phases of development. If a client driver does not adhere to these directions while testing with [Driver Verifier](../devtest/driver-verifier.md), Driver Verifier reports a violation and triggers a bug check on the device under test.
 
 ## NET_RING
 
@@ -15,26 +18,23 @@ When the [**NET_RING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/
 
 The following table describes which members of the net ring that client drivers can modify.
 
-| Field | Client driver is allowed to modify | Required or Optional to modify | 
-| --- | --- | --- |
-| OSReserved1 | No | N/A  |
-| ElementStride | No | N/A |
-| NumberOfElements | No | N/A |
-| ElementIndexMask | No | N/A |
-| EndIndex | No | N/A |
-| OSReserved0 | No | N/A |
-| OSReserved2 | No | N/A |
-| BeginIndex | Yes | Required |
-| NextIndex | Yes | Optional |
-| Scratch | Yes | Optional |
-| Buffer | No | N/A |
+| Field | Client driver is allowed to modify |
+| --- | --- |
+| OSReserved1 | No |
+| ElementStride | No |
+| NumberOfElements | No |
+| ElementIndexMask | No |
+| EndIndex | No |
+| OSReserved0 | No |
+| OSReserved2 | No |
+| BeginIndex | Yes (Required) |
+| NextIndex | Yes (Optional) **Note**: The framework never reads **NextIndex**. |
+| Scratch | Yes (Optional) **Note**: The framework never reads **Scratch**. |
+| Buffer | No |
 
-Driver Verifier reports a violation if any of the following occurs in the net ring:
+Client drivers must not modify any read only members of this structure, nor should they ever increment **BeginIndex** past **EndIndex** during a call to [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance).
 
-- If **BeginIndex** \> **EndIndex**
-- If any read only fields are modified
-
-The framework never reads **NextIndex** or **Scratch**.
+For more information about index ownership in net rings, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
 ## NET_PACKET
 
@@ -42,16 +42,14 @@ The fields in a [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/dri
 
 The following table provides directions for drivers in each scenario.
 
-| Rx or Tx | Ignore field set | Notes |
+| Rx or Tx | Ignore field is set by... | Notes |
 | --- | --- | --- |
-| Rx | Yes | <ul><li>There is no meaningful way for a client driver to read the **Ignore** field during Rx.</li><li>Client drivers must write to the **Ignore** field when canceling Rx operations.</li><li>If **Ignore** is set during Rx, the framework does not read any other fields. Therefore, client drivers must not associate resources with the packet because they will not be freed.</li></ul> |
-| Rx | No | <ul><li>Client drivers must populate **FragmentIndex**, **FragmentCount**, and all fields in **Layout**.</li><li>**FragmentIndex** must be between **BeginIndex** inclusive and **EndIndex** exclusive in the fragment ring.</li><li>**FragmentCount** cannot exceed the count of fragments between **BeginIndex** inclusive and **EndIndex** exclusive in the fragment ring.</li><li>Driver Verifier reports a violation if a client driver moves the fragment **BeginIndex** but not the packet **BeginIndex**.</li><li>After the call to [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance), if a client driver increments the packet ring **BeginIndex** then the driver must also increment the fragment ring **BeginIndex** past the fragments for that packet. In other words, the fragment ring **BeginIndex** should move to the **EndIndex** of the previous packet's fragments.</li></ul> |
-| Tx | Both | <ul><li>Client drivers must not modify any fields in any packet except for **Scratch**.</li></ul> |
-| Tx | Yes | <ul><li>Client drivers can read the value of **Ignore** but must never write to it.</li><li>If a Tx packet is ignored, the driver must not read any fields except possibly for **Scratch**, if necessary.</li></ul> |
+| Rx | Client driver | <ul><li>During Rx, client drivers set **Ignore** if necessary, and the framework reads it. Client drivers do not need to read **Ignore** at any point during Rx.</li><li>If a client driver sets the **Ignore** field during Rx, then:<ul><li>Client drivers must write to the **Ignore** field when canceling Rx operations for any packet that has not been successfully programmed to hardware. For more info, see [Canceling network data with net rings](canceling-network-data-with-net-rings.md).</li><li>Client drivers must not associate resources with the packet because they will not be freed.</li></ul></li><li>If a client driver does not set the **Ignore** field during Rx, then:<ul><li>Client drivers must populate **FragmentIndex**, **FragmentCount**, and all fields in **Layout**.</li><li>**FragmentIndex** must be between **BeginIndex** inclusive and **EndIndex** exclusive in the fragment ring.</li><li>**FragmentCount** cannot exceed the count of fragments between **BeginIndex** inclusive and **EndIndex** exclusive in the fragment ring.</li><li>Client drivers must move the packet ring **BeginIndex** if they move the corresponding fragment ring **BeginIndex**.</li><li>After the call to [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance), if a client driver increments the packet ring **BeginIndex** then the driver must also increment the fragment ring **BeginIndex** past the fragments for that packet. In other words, the fragment ring **BeginIndex** should move to the **EndIndex** of the previous packet's fragments.</li></ul></ul> |
+| Tx | NetAdapterCx | <ul><li>Client drivers must not modify any fields in any packet except for **Scratch**.</li><li>Client drivers can read the value of **Ignore** but must never write to it.</li><li>If a Tx packet is ignored, the driver must not read any fields except possibly for **Scratch**, if necessary.</li></ul> |
 
 ### NET_PACKET_LAYOUT
 
-The **Layout** field of the [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/packet/ns-packet-_net_packet) is subject to the following rules:
+During Rx operations, the **Layout** field of the [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/packet/ns-packet-_net_packet) is subject to the following rules:
 
 - All fields except for **Reserved0** must be initialized by the client driver.
 - If **Layer2Type** is set to **NetPacketLayer2TypeEthernet**, then **Layer2HeaderLength** must be **14** or greater.
@@ -62,11 +60,13 @@ The **Layout** field of the [**NET_PACKET**](https://docs.microsoft.com/windows-
 - If **Layer4Type** is set to **Udp**, then **Layer4HeaderLength** must be **8** or greater.
 - The layer type fields must be within the appropriate enum range.
 
+**Layout** is not used during Tx.
+
 ## NET_FRAGMENT
 
 [**NET_FRAGMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fragment/ns-fragment-_net_fragment) field rules depend on whether the driver is receiving or transmitting, and on whether the fragment buffers are attached to the packets by the driver or by the framework.
 
 | Rx or Tx | Notes |
 | --- | --- |
-| Rx | <ul><li>Client drivers cannot write to the **OsReserved_Bounced** field.</li><li>If the driver is *not* attaching, then **Capacity** must not be modified but **ValidLength** and **Offset** must be modified.</li><li>If the driver *is* attaching, then **Capacity**, **ValidLength**, and **Offset** must all be modified.</li><li>**Offset** must be less than **ValidLength**.</li><li>**ValidLength** must be less than **Capacity.**
+| Rx | <ul><li>Client drivers cannot write to the **OsReserved_Bounced** field.</li><li>If the driver is not attaching, then **Capacity** must not be modified but **ValidLength** and **Offset** must be modified.</li><li>If the driver is attaching, then **Capacity**, **ValidLength**, and **Offset** must all be modified.</li><li>**Offset** + **ValidLength** must be less than **Capacity**.</li></ul> |
 | Tx | <ul><li>Client drivers cannot modify any fields except for **Scratch**.</li></ul> |
