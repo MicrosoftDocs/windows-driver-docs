@@ -61,7 +61,13 @@ PnP uses policy and the classification provided by the AM driver to decide wheth
 
 ### Registry Callbacks
 
-The Early Launch drivers can use registry or boot driver callbacks to monitor and validate the configuration data used as input for each boot-start driver. The configuration data is stored in the System registry hive, which is loaded by Winload and is available at the time of boot driver initialization. These callbacks are valid through the lifetime of the ELAM driver and will be unregistered when the driver is unloaded. For more info, see:
+The Early Launch drivers can use registry or boot driver callbacks to monitor and validate the configuration data used as input for each boot-start driver. The configuration data is stored in the System registry hive, which is loaded by Winload and is available at the time of boot driver initialization.
+
+> [!NOTE]
+> Any changes to the ELAM registry hive are discarded before the system boots.
+> As a result, an ELAM driver should use standard Event Tracing for Windows (ETW) logging rather than writing to the registry.
+
+These callbacks are valid through the lifetime of the ELAM driver and will be unregistered when the driver is unloaded. For more info, see:
 
 * [**CmRegisterCallbackEx**](https://msdn.microsoft.com/library/windows/hardware/ff541921)
 * [**CmRegisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff541918)
