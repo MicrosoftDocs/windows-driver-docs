@@ -18,7 +18,7 @@ Storport forwards SRBs to Storport miniport drivers for asynchronous processing.
 
 * **QueueTag**: Storport assigns a count, or *"tag"* value, to the **QueuedTag** member of each SRB. This tag indicates the order in which the adapter should process the packets. The tag values also allow Storport to track which SRBs are still outstanding, which have completed successfully, and which have timed out.
 
-* **QueueAction**: indicates the tagged-queueing message to be used when the SRB_FLAGS_QUEUE_ACTION_ENABLE flag is set in **SRB.SrbFlags**. The miniport's use of **QueueAction** is miniport-specific. SCSI-based miniports can follow the SCSI specification if the HBA supports it, which describes **QueueAction** values as:
+* **QueueAction**: indicates the tagged-queueing message to be used when the SRB_FLAGS_QUEUE_ACTION_ENABLE flag is set in **SRB.SrbFlags**. The miniport's use of **QueueAction** is miniport-specific. SCSI-based miniports can follow the SCSI specification if the HBA supports it. **QueueAction** can be one of the following values:
 
 | Value | Meaning |
 | ----- | ------- |
