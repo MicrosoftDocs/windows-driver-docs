@@ -2,35 +2,28 @@
 title: Storport's Interface with Storport Miniport Drivers
 description: Storport's Interface with Storport Miniport Drivers
 ms.assetid: 8e09d6a6-7e4f-44fc-a2b0-5f21b4ac0593
-ms.date: 04/20/2017
+ms.date: 06/18/2019
 ms.localizationpriority: medium
 ---
 
 # Storport's Interface with Storport Miniport Drivers
 
+Communication between the Storport driver and the Storport miniport drivers takes place by means of SCSI request blocks (SRBs) and miniport driver callback routines. For a detailed discussion of the Storport miniport driver callback routines, see [Storport Driver Miniport Routines](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver-miniport-routines).
 
-Communication between the Storport driver and the Storport miniport drivers takes place by means of SCSI request blocks (SRBs) and miniport driver callback routines. For a detailed discussion of the Storport miniport driver callback routines, see [Storport Driver Miniport Routines](https://msdn.microsoft.com/library/windows/hardware/ff567543).
+For an overview and definition of the individual SRB functions, SRB flags, and SRB status values, see [**SCSI_REQUEST_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_scsi_request_block).
 
-For an overview and definition of the individual SRB functions, SRB flags, and SRB status values, see [**SCSI\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff565393).
+For discussions about how miniport drivers must respond to each individual SRB function, see [**HwStorStartIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_startio).
 
-For discussions about how miniport drivers must respond to each individual SRB function, see [**HwStorStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff557423).
+Storport forwards SRBs to Storport miniport drivers for asynchronous processing. Typically, the miniport driver will take some time to actually complete the request. Host bus adapters (HBAs) that support tagged queuing can queue requests internally and process them in the order that is indicated by the tags that Storport assigns to each request. The [**SCSI_REQUEST_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_startio) (SRB) structure contains two members that the Storport and miniport drivers use to specify how SRBs should be ordered in the host adapter's internal queue:
 
-Storport forwards SRBs to Storport miniport drivers for asynchronous processing. Typically, the miniport driver will take some time to actually complete the request. Host bus adapters that support tagged queuing can queue requests internally and process them in the order that is indicated by the tags that Storport assigns to each request. The [**SCSI\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff565393) (SRB) structure contains two members that the Storport driver uses to specify how SRBs should be ordered in the host adapter's internal queue: **QueuedTag** and **QueueAction**. Storport assigns a count, or *"tag"* value, to the **QueuedTag** member of each SRB that indicates the order in which the adapter should process the packets. The tag values also allow Storport to track which SRBs have completed successfully and which SRBs have timed out.
+* **QueueTag**: Storport assigns a count, or *"tag"* value, to the **QueuedTag** member of each SRB. This tag indicates the order in which the adapter should process the packets. The tag values also allow Storport to track which SRBs are still outstanding, which have completed successfully, and which have timed out.
 
-The **QueueAction** member is assigned one of the following values:
+* **QueueAction**: indicates the tagged-queueing message to be used when the SRB_FLAGS_QUEUE_ACTION_ENABLE flag is set in **SRB.SrbFlags**. The miniport's use of **QueueAction** is miniport-specific. SCSI-based miniports can follow the SCSI specification if the HBA supports it. **QueueAction** can be one of the following values:
 
-SRB\_SIMPLE\_TAG\_REQUEST
+| Value | Meaning |
+| ----- | ------- |
+| SRB_SIMPLE_TAG_REQUEST | Queue the request and execute it in any order once all older SRB_HEAD_OF_QUEUE_TAG_REQUEST and SRB_ORDERED_QUEUE_TAG_REQUEST requests have ended. |
+| SRB_ORDERED_QUEUE_TAG_REQUEST | Execute the request only after all older SRB_HEAD_OF_QUEUE_TAG_REQUEST and all older requests have been completed. |
+| SRB_HEAD_OF_QUEUE_TAG_REQUEST | Place the request at the front of the queue, and execute it ahead of all other requests in the queue, including all other SRB_HEAD_OF_QUEUE_TAG_REQUEST-tagged requests. |
 
-SRB\_HEAD\_OF\_QUEUE\_TAG\_REQUEST
-
-SRB\_ORDERED\_QUEUE\_TAG\_REQUEST
-
-For an explanation of these values, see the SCSI-3 specification.
-
- 
-
- 
-
-
-
-
+See the SCSI specification for details.
