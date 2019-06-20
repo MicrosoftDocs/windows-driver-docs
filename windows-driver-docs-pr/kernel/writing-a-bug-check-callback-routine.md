@@ -47,7 +47,7 @@ A bug check callback routine cannot:
 
 Bug check callback routines are guaranteed to run without interruption, so no synchronization is required. (If the bug check routine does use any synchronization mechanisms, the system will deadlock.)
 
-A driver's bug check callback routine can safely use the **READ_PORT_*XXX***, **READ_REGISTER_*XXX***, **WRITE_PORT_*XXX***, and **WRITE_REGISTER_*XXX*** routines to communicate with the driver's device. (For information about these routines, see [Hardware Abstraction Layer Routines](https://msdn.microsoft.com/library/windows/hardware/ff546644).)
+A driver's bug check callback routine can safely use the **READ\_PORT\_<em>XXX</em>**, **READ\_REGISTER\_<em>XXX</em>**, **WRITE\_PORT\_<em>XXX</em>**, and **WRITE\_REGISTER\_<em>XXX</em>** routines to communicate with the driver's device. (For information about these routines, see [Hardware Abstraction Layer Routines](https://msdn.microsoft.com/library/windows/hardware/ff546644).)
 
 ## Using BugCheckCallback
 
