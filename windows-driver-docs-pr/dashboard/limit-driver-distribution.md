@@ -60,14 +60,15 @@ This is especially important to remember when dealing with the OS and Hardware I
 * The minimum allowable OS Floor is initially determined by the submissions lowest Certified OS level, or the Attested OS level.  If you need to set an OS Floor that is below these automatically determined levels then you must perform a Driver Expansion prior to setting the OS Floor.
 
 The OS Floor describes the earliest Windows version that the driver could be distributed to.  Use this feature when you want to move the implied floor **UP** so that the driver will only be offered at and above the selected operating system.
-The most common use case is described in the Driver Expansion section, Use Case 2.  
-### To set the OS Floor:
+The most common use case is described in the Driver Expansion section, Use Case 2.
+
+### To set the OS Floor
 
 1. Create a shipping label and enter your details.  For more information, see [Publish a driver to Windows Update](publish-a-driver-to-windows-update.md).
 2. In the **Select PNPs** grid area, select *at least one* Hardware ID and operating system combination, and then click **Publish**.
 3. Scroll down to the **Restrict operating systems for driver distribution** section, and check **I want to restrict OS for driver distribution**.
 4. From the **Select Min OS Version (Floor)** drop down, pick the earliest OS version to distribute the driver to.
- 
+
 ![Dropdown menu listing OS versions](images/restrict_floor.png)
 
 If you select a value for the OS Floor that is earlier than the options listed in your PnP grid, you will receive the following error.
@@ -149,7 +150,7 @@ As the submission owner, you are the only one that can expand your submission.
 ![Screenshot showing driver not shared, but with OS selected](images/pending-share_example1.png)
 
 3. Scroll to the bottom of the page and click **Publish** to finalize your share actions.
-4. Inform your OEM to come to this page and read [Use Case 2](#use-case-2-publishing-an-expanded-submission-to-a-specific-os-level).  
+4. Inform your OEM to come to this page and read [Use Case 2](#use-case-2--publishing-an-expanded-submission-to-a-specific-os-level).  
 
 If you already shared a driver with your partner, you could expand it later and share the additional extended item.  Be aware though, that the original shared submission will be deprecated, and your partner will only be able to use the latest shared submission from you.
 
@@ -191,7 +192,7 @@ If the box is missing, it means one of two things.  You are not the initial subm
 
 ### How can I target a Windows version that is older than my driver’s certification?
 
-See [Use Case 2](#use-case-2-publishing-an-expanded-submission-to-a-specific-os-level).
+See [Use Case 2](#use-case-2--publishing-an-expanded-submission-to-a-specific-os-level).
 
 ### Why can't I expand my entire submission?
 
