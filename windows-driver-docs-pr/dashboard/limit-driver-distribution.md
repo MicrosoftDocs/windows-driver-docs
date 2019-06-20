@@ -66,4 +66,5 @@ The most common use case is described in the Driver Expansion section, Use Case 
 3. Scroll down to the **Restrict operating systems for driver distribution** section, and check **I want to restrict OS for driver distribution**.
 4. From the **Select Min OS Version (Floor)** drop down, pick the earliest OS version to distribute the driver to.
  
-![Dropdown menu listing OS versions](/images/Restrict_Floor.PNG)
+![Dropdown menu listing OS versions](images/Restrict_Floor.PNG)
+
