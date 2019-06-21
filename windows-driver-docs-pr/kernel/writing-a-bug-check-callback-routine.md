@@ -98,33 +98,6 @@ Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553110">KeReg
 A <i>KbCallbackSecondaryDumpData</i> routine is very restricted in the actions it can take. For more information, see "Bug Check Callback Routine Restrictions" in this topic.
 
 
-#### Callback Routine Examples
-
-To define the callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
-
-For example, to define a <i>KbCallbackAddPages</i> callback routine that is named <code>MyKbCallbackAddPages</code>, use the KBUGCHECK_REASON_CALLBACK_ROUTINE type as shown in this code example:
-
-```cpp
-KBUGCHECK_REASON_CALLBACK_ROUTINE MyBugCheckAddPagesCallback;
-```
-
-Then, implement your callback routine as follows:
-
-```cpp
-_Use_decl_annotations_
-VOID
-  MyBugCheckAddPagesCallback(
-    KBUGCHECK_CALLBACK_REASON  Reason,
-    struct _KBUGCHECK_REASON_CALLBACK_RECORD  *Record,
-    PVOID  ReasonSpecificData,
-    ULONG  ReasonSpecificDataLength 
-    )
-  {
-      // Function body
-  }
-  ```
-
-  The KBUGCHECK_REASON_CALLBACK_ROUTINE function type is defined in the Wdm.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the KBUGCHECK_REASON_CALLBACK_ROUTINE function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/3260b53e-82be-4dbc-8ac5-d0e52de77f9d">Declaring Functions by Using Function Role Types for WDM Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://go.microsoft.com/fwlink/p/?linkid=286697">Annotating Function Behavior</a>.
 
 
 
