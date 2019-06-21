@@ -89,11 +89,11 @@ which may vary based on the exact device being supported.
 
 ## WDK Dependency
 
-Many of the previously mentioned methods and types are exclusively available in the WDK,
-which is used to build drivers.
-This is an unfortunate oversight in the organization of Microsoft's headers,
-as non-DX APIs previously could depend on just the Windows SDK.
-If it is too onerous for non-DX APIs to include the WDK or localize the WDK dependency to the runtime or loader component,
+Many of the previously mentioned methods and types are exclusively available in the WDK.
+While the WDK is primarily used to build drivers,
+it also provides lower-level interfaces for components that are bundled with drivers.
+If it is too onerous for non-DX APIs to include the WDK
+or localize the WDK dependency to the non-DX runtime or driver-loader,
 then Microsoft gives non-DX API projects permission to effectively sever the WDK dependency.
 The WDK dependency can be severed by using Microsoft's public documentation,
 and creating binary-compatible types and function declarations into their project.
