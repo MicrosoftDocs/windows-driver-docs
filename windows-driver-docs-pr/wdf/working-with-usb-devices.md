@@ -15,7 +15,7 @@ keywords:
 - Unicode strings WDK KMDF
 - status information WDK KMDF , USB I/O targets
 - device objects WDK KMDF
-ms.date: 04/20/2017
+ms.date: 06/24/2019
 ms.localizationpriority: medium
 ---
 
@@ -152,7 +152,7 @@ Formats an I/O request that contains a URB. The driver must call [**WdfRequestSe
 <a href="" id="---------wdfusbtargetdevicewdmgetconfigurationhandle--kmdf-only-"></a>[**WdfUsbTargetDeviceWdmGetConfigurationHandle (KMDF only)**](https://msdn.microsoft.com/library/windows/hardware/ff551127)  
 Returns a device's USBD configuration handle. Some URBs require this handle.
 
-For general conceptual background on URBs, see [Allocating and Building URBs](https://msdn.microsoft.com/library/windows/hardware/hh450844).
+For general conceptual background on URBs, see [Allocating and Building URBs](https://docs.microsoft.com/windows-hardware/drivers/usbcon/how-to-add-xrb-support-for-client-drivers).
 
  
 
