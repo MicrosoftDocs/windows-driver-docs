@@ -152,7 +152,7 @@ As the submission owner, you are the only one that can expand your submission.
 3. Scroll to the bottom of the page and click **Publish** to finalize your share actions.
 4. Inform your OEM to come to this page and read [Use Case 2](#use-case-2--publishing-an-expanded-submission-to-a-specific-os-level).  
 
-If you already shared a driver with your partner, you could expand it later and share the additional extended item.  Be aware though, that the original shared submission will be deprecated, and your partner will only be able to use the latest shared submission from you (see the [Revoke/Revoke All](sharing-drivers-with-your-partners#revokerevoke-all.md) section for more information about deprecated items).
+If you already shared a driver with your partner, you could expand it later and share the additional extended item.  Be aware though, that the original shared submission will be deprecated, and your partner will only be able to use the latest shared submission from you (see the [Revoke/Revoke All](sharing-drivers-with-your-partners.md#revokerevoke-all) section for more information about deprecated items).
 
 ### Use Case 2:  Publishing an expanded submission to a specific OS level
 
