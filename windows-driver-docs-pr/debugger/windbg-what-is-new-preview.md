@@ -12,6 +12,21 @@ ms.localizationpriority: medium
 
 This topic provides information on what's new in the WinDbg Preview debugger.
 
+## 1.0.1905.12001
+**Improvements to SymSetDiaSession error mitigation** - Our fix last month to mitigate the error caused by applications injecting DbgHelp into our process was still not working in some scenarios. We've made improvements to it and will continue to monitor feedback on this error.
+
+**Accent color customization** - A of scenarios need a few instances of WinDbg open, and moving back and forth between them can be confusing and take some time to figure out which one is the “right” one. We’ve added the ability to change the blue accent color to help visually distinguish sessions and make swapping between them easier.
+
+Just hit the “View” ribbon and select an option for “Accent color” in the last section. When future sessions are launched from recent targets, the accent color will be persisted as part of the target’s workspace.
+
+**Source tokenization improvements** - The source window now has basic support for tokenizing Rust source files and C++ SEH __try/__except/__finally/__leave.
+
+**Coroutine improvements** - Improved support for coroutine local variables and certain optimized variables.
+
+**Default symbol and source cache setting** - Added an option to the settings menu under “Debugging settings” to change the cache location for symbols. **Note** - There’s a known issue that making this blank will cause source loading to fail, we’ll be adding validation to prevent this from happening in a future release.
+
+**-pv fixes** - Fixed a bug that may have prevented -pv (non-invasive attach) from working in some circumstances.
+
 ## 1.0.1904.18001
 
 **Fix for SymSetDiaSession error** - We've had reports for a while of an error that prevents WinDbg Preview from being launched in some situations. There are a few external applications that attempt to inject a version of DbgHelp into our process before we load it. Some of them are using a version of DbgHelp with missing functionality, which causes this error when we attempt to use those features. We've added a fix for this and will be tracking if there are still scenarios in which it occurs.
