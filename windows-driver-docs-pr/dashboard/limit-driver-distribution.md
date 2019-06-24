@@ -12,14 +12,14 @@ Partners may sometimes need to expand or limit the OS distribution of a driver s
 
 ## Important information
 
-Before you begin working with these features, you should be familiar with a few key terms and definitions.
+Before you begin working with these features, you should be familiar with and keep in mind a few key principles, terms and definitions.
 
-**Windows Update**: When you publish a driver to RS1 (Windows 10, version 1607), Windows Update will also offered the driver to devices running RS1, RS2, RS3, and so on (Windows 10, versions 1607, 1703, and 1709). But it would not be offered to TH1 or TH2 (Windows 10, version 1507 or 1511). In other words, drivers are always *offered forward*.
-This is especially important to remember when dealing with the OS and Hardware ID combinations within the PNP Grid. In practice, the offering drivers forward means that for the previous example, you need not publish the same Hardware ID to both RS4 and RS5. Windows Update will offer your RS4 posting to RS5 and later versions. You only need to publish the RS4 items in the PNP grid.
+**Windows Update**: When you publish a driver to a specific OS release, say RS1 (Windows 10, version 1607), Windows Update will also offer the driver to systems running RS2, RS3, and forward (Windows 10, versions 1607, 1703, and 1709). But it would not be offered to TH1 or TH2 (Windows 10, version 1507 or 1511). In other words, drivers are always *offered forward*.
+This is especially important to remember when dealing with the OS and Hardware ID combinations within the Shipping Label's PNP Grid. In practice, the offering drivers forward means that for the previous example, you need not publish the same Hardware ID to both RS2 and RS3. Windows Update will offer your RS1 posting to RS2 and later versions.  You only *need* to publish to the lowest OS release that you want to target in the PNP grid.
 
-**Windows Dynamic Updates and OS Floors**:  You use Windows Upgrade and Dynamic Update to deploy to a new version of Windows, so it overrides the OS version information reported by the client and sets it to the target feature update version. For instance, if the client is on 10.0.17763 (Windows 10, version 1809) and upgrading to 10.0.18362 (Windows 10, version 1903), Dynamic Update will offer drivers from within the 18362 OS boundary. This is especially important to understand when dealing with the Floor feature. For more info see [Understanding Windows Update Automatic and Optional Rules for Driver Distribution](understanding-windows-update-automatic-and-optional-rules-for-driver-distribution.md).
+**Dynamic Updates and OS Floors**:  When Windows Update is called during the Windows **Upgrade** process, it uses special logic to override the current OS version information reported by the client and sets it to the target feature update version. For instance, if the client is on 10.0.17763 (Windows 10, version 1809) and upgrading to 10.0.18362 (Windows 10, version 1903), Dynamic Update will offer drivers from within the 18362 OS boundary. This is especially important to understand when dealing with the Floor feature. For more info see [Understanding Windows Update Automatic and Optional Rules for Driver Distribution](understanding-windows-update-automatic-and-optional-rules-for-driver-distribution.md).
 
-**Submission Owner**:  The original submitter of the HLKx or .CAB driver package is granted the capability to use the Driver Expansion feature.  Customers with a Shared submission must work with their submission owner.
+**Submission Owner**:  The original submitter of the HLKx or .CAB driver package.  The originator is granted the capability to use the Driver Expansion feature.  The receivers of a *Shared submission* must work with their submission owner for some features.
 
 **Required Permissions**:  Only users designated as Administrators, Shipping Label Owners, and Shipping Label Promoters can set floors and ceilings for driver submissions.  Only Co-Engineering partners have access to the Ceiling and Build Number based features.
 
@@ -60,13 +60,13 @@ This is especially important to remember when dealing with the OS and Hardware I
 * The minimum allowable OS Floor is initially determined by the submissions lowest Certified OS level, or the Attested OS level.  If you need to set an OS Floor that is below these automatically determined levels then you must perform a Driver Expansion prior to setting the OS Floor.
 
 The OS Floor describes the earliest Windows version that the driver could be distributed to.  Use this feature when you want to move the implied floor **UP** so that the driver will only be offered at and above the selected operating system.
-The most common use case is described in the Driver Expansion section, Use Case 2.
+The most common use case is described in the Driver Expansion section, [Use Case 2](#use-case-2--publishing-an-expanded-submission-to-a-specific-os-level).
 
 ### To set the OS Floor
 
 1. Create a shipping label and enter your details.  For more information, see [Publish a driver to Windows Update](publish-a-driver-to-windows-update.md).
 2. In the **Select PNPs** grid area, select *at least one* Hardware ID and operating system combination, and then click **Publish**.
-3. Scroll down to the **Restrict operating systems for driver distribution** section, and check **I want to restrict OS for driver distribution**.
+3. Scroll down to the **Restrict operating systems for driver distribution** section, and check **I want to restrict OS for driver distribution**.  This selection only becomes available *after* you have clicked publish on at least one item in the PNP grid.
 4. From the **Select Min OS Version (Floor)** drop down, pick the earliest OS version to distribute the driver to.
 
 ![Dropdown menu listing OS versions](images/restrict_floor.png)
@@ -80,7 +80,7 @@ If you select a value for the OS Floor that is earlier than the options listed i
 >[!NOTE]
 > Access to the Ceiling feature is limited to select partner accounts with valid business need.  [Contact Support](https://go.microsoft.com/fwlink/?linkid=2038065) for questions.
 
-A ceiling describes the upper OS limit that the driver will be distributed to. Use this option when you want a driver to be offered at or below the listed operating system release only.
+A ceiling describes the upper OS limit that the driver will be distributed to. Use this option when you want a driver to be offered at or below the listed operating system release.
 
 For example, if you select a Ceiling value of **RS3** (Windows 10, version 1709) your driver would never be offered to systems running RS4 (Windows 10, version 1803) or later.
 
@@ -90,8 +90,8 @@ For example, if you select a Ceiling value of **RS3** (Windows 10, version 1709)
 ### To set the OS Ceiling
 
 1. Create a shipping label and enter your details.  For more information, see [Publish a driver to Windows Update](publish-a-driver-to-windows-update.md).
-2. In the **Select PNPs** grid area, select at least one Hardware ID and operating system combination, and then click **Publish**.
-3. Scroll down to the **Restrict operating systems for driver distribution** section and select **I want to restrict OS for driver distribution**.
+2. In the **Select PNPs** grid area, select at *least one* Hardware ID and operating system combination, and then click **Publish**.
+3. Scroll down to the **Restrict operating systems for driver distribution** section and select **I want to restrict OS for driver distribution**.  This selection only becomes available *after* you have clicked publish on at least one item in the PNP grid.
 4. From the **Select Max OS Version (Ceiling)** drop down, select the earliest OS version you wish the driver to be distributed to.
 
 ![Dialog showing selections to restrict the OS ceiling](images/restrict-ceiling.png)
@@ -125,7 +125,7 @@ For example, the following submission was certified for Windows 10 Client versio
 
 ![UI showing that a submission has extended grid entries](images/expansion-pnpgrid-outline.png)
 
-If more than one INF were present in this submission, each INF and Hardware ID in them would receive identical new **Extended** entries.  The exception is, if an [INF Manufacturer](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section) section uses the *\[BuildNumber] TargetOSVersion* decoration such as NTamd64.10.0...**14393**.  These INFs are skipped and cannot be expanded.  This means you could end up with only a partially expanded list of INFs in the PNP grid.  If all INF files must show up, you must edit the INF and remove the *BuildNumber*.  In addition, you might not see the **Expand** option box at all if no INFs are supported.
+If more than one INF were present in this submission, each INF and Hardware ID in them would receive identical new **Extended** entries.  The exception is, if an [INF Manufacturer](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section) section uses the *\[BuildNumber] TargetOSVersion* decoration such as NTamd64.10.0...**14393**.  These INFs are skipped and cannot be expanded.  This means you could end up with only a partially expanded list of INFs in the PNP grid.  If you want all INF files to be expanded, you must edit the INF and remove the *BuildNumber*.  In addition, you might not see the **Expand** option box at all if no INFs are supported.
 
 Once you have an **Extended** entry, you can then share or publish it.
 
@@ -152,7 +152,7 @@ As the submission owner, you are the only one that can expand your submission.
 3. Scroll to the bottom of the page and click **Publish** to finalize your share actions.
 4. Inform your OEM to come to this page and read [Use Case 2](#use-case-2--publishing-an-expanded-submission-to-a-specific-os-level).  
 
-If you already shared a driver with your partner, you could expand it later and share the additional extended item.  Be aware though, that the original shared submission will be deprecated, and your partner will only be able to use the latest shared submission from you.
+If you already shared a driver with your partner, you could expand it later and share the additional extended item.  Be aware though, that the original shared submission will be deprecated, and your partner will only be able to use the latest shared submission from you (see the [Revoke/Revoke All](sharing-drivers-with-your-partners#revokerevoke-all.md) section for more information about deprecated items).
 
 ### Use Case 2:  Publishing an expanded submission to a specific OS level
 
@@ -194,6 +194,6 @@ If the box is missing, it means one of two things.  You are not the initial subm
 
 See [Use Case 2](#use-case-2--publishing-an-expanded-submission-to-a-specific-os-level).
 
-### Why can't I expand my entire submission?
+### Some of my INFs are missing after expansion.  Why can't I expand my entire submission?
 
 Each INF in your submission is evaluated for expansion separately. If one or all your INFs' (see [INF Manufacturer](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section)) uses the *\[BuildNumber] TargetOSVersion* decoration, then we will fail to process that INF for expansion. If you need to expand your submission, then you must first edit your INF and remove the \[BuildNumber]. INFs that do not contain the \[BuildNumber] will process successfully.  For more info, see [Important Information](#important-information).
