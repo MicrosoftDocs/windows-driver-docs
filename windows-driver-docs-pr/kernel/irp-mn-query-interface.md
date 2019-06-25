@@ -32,12 +32,12 @@ A driver or system component sends this IRP to get information about an interfac
 
 A driver or system component sends this IRP at IRQL = PASSIVE\_LEVEL in an arbitrary thread context.
 
-A driver can receive this IRP at any time after the driver's [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine has been called for the device. The device might or might not be started when this IRP is sent (that is, you cannot assume that the driver has successfully completed an [**IRP\_MN\_START\_DEVICE**](irp-mn-start-device.md) request for the device).
+A driver can receive this IRP at any time after the driver's [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine has been called for the device. The device might or might not be started when this IRP is sent (that is, you cannot assume that the driver has successfully completed an [**IRP\_MN\_START\_DEVICE**](irp-mn-start-device.md) request for the device).
 
 ## Input Parameters
 
 
-The **Parameters.QueryInterface** member of the [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure is itself a structure, which describes the interface being requested. The structure contains the following information:
+The **Parameters.QueryInterface** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) structure is itself a structure, which describes the interface being requested. The structure contains the following information:
 
 ```cpp
 CONST GUID *InterfaceType;
@@ -53,7 +53,7 @@ The members of the structure are defined as follows:
 Points to a GUID that identifies the interface being requested. The GUID can be for a system-defined interface, such as GUID\_BUS\_INTERFACE\_STANDARD, or a custom interface. The GUIDs for system-defined interfaces are listed in Wdmguid.h. GUIDs for custom interfaces should be generated with Uuidgen.
 
 <a href="" id="size"></a>**Size**  
-Specifies the size of the interface being requested. Drivers that handle this IRP must not return an [**INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff547825) structure larger than **Size** bytes.
+Specifies the size of the interface being requested. Drivers that handle this IRP must not return an [**INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_interface) structure larger than **Size** bytes.
 
 <a href="" id="version"></a>**Version**  
 Specifies the version of the interface being requested.
@@ -61,7 +61,7 @@ Specifies the version of the interface being requested.
 If a driver supports more than one version of an interface, the driver returns the closest supported version without exceeding the requested version. The component that sent the IRP should examine the returned **Interface.Version** field and determine what to do based on that value.
 
 <a href="" id="interface"></a>**Interface**  
-Points to a structure in which to return the requested interface. This structure must contain an [**INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff547825) structure as its first member. The component sending the IRP allocates this structure from paged memory.
+Points to a structure in which to return the requested interface. This structure must contain an [**INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_interface) structure as its first member. The component sending the IRP allocates this structure from paged memory.
 
 A driver that exports an interface defines a new structure type containing the **INTERFACE** structure, plus members for routines and/or data in the interface. (The driver also defines a GUID for the interface, as described in the **InterfaceType** member, above.)
 
@@ -84,7 +84,7 @@ A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriat
 
 On success, a bus driver sets **Irp-&gt;IoStatus.Information** to zero.
 
-If a function or filter driver does not handle this IRP, it calls [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff550355) and passes the IRP down to the next driver. Such a driver must not modify **Irp-&gt;IoStatus.Status** and must not complete the IRP.
+If a function or filter driver does not handle this IRP, it calls [**IoSkipCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) and passes the IRP down to the next driver. Such a driver must not modify **Irp-&gt;IoStatus.Status** and must not complete the IRP.
 
 If a bus driver does not export the requested interface and therefore does not handle this IRP for a child PDO, the bus driver leaves **Irp-&gt;IoStatus.Status** as is and completes the IRP.
 
@@ -93,25 +93,25 @@ Operation
 
 A driver handles this IRP if the parameters specify an interface the driver supports.
 
-A driver must not queue this IRP if the IRP requests an interface that the driver does not support. A driver must check **Parameters.QueryInterface.InterfaceType** in its [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure. If the interface is not one the driver supports, the driver must pass the IRP to the next lower driver in the device stack without blocking.
+A driver must not queue this IRP if the IRP requests an interface that the driver does not support. A driver must check **Parameters.QueryInterface.InterfaceType** in its [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) structure. If the interface is not one the driver supports, the driver must pass the IRP to the next lower driver in the device stack without blocking.
 
-Each interface must provide **InterfaceReference** and **InterfaceDereference** routines, and the driver that exports the interface must supply the addresses of these routines in the [**INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff547825) structure. Before a driver returns an interface in response to the IRP, it must increment the interface's reference count by calling its **InterfaceReference** routine. When the driver that requested the interface has finished using it, that driver must decrement the reference count by calling the interface's **InterfaceDereference** routine.
+Each interface must provide **InterfaceReference** and **InterfaceDereference** routines, and the driver that exports the interface must supply the addresses of these routines in the [**INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_interface) structure. Before a driver returns an interface in response to the IRP, it must increment the interface's reference count by calling its **InterfaceReference** routine. When the driver that requested the interface has finished using it, that driver must decrement the reference count by calling the interface's **InterfaceDereference** routine.
 
 If the driver that sends the IRP (driver *x*) later passes the interface to another driver (driver *y*) then driver *x* must increment the interface's reference count and driver *y* must decrement it.
 
 A driver that handles this IRP should avoid passing the IRP to another device stack to get the requested interface. Such a design would create dependencies between the device stacks that are difficult to manage. For example, the device represented by the second device stack cannot be removed until the appropriate driver in the first stack dereferences the interface.
 
-Interfaces can be bus-specific or bus-independent. Bus-specific interfaces are defined in the header files for those buses. The system defines a bus-independent interface, [**BUS\_INTERFACE\_STANDARD**](https://msdn.microsoft.com/library/windows/hardware/ff540707), for exporting standard bus interfaces.
+Interfaces can be bus-specific or bus-independent. Bus-specific interfaces are defined in the header files for those buses. The system defines a bus-independent interface, [**BUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_bus_interface_standard), for exporting standard bus interfaces.
 
-See [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
-This IRP is used specifically to pass routine entry points between layered kernel-mode drivers for a device. Do not confuse the interfaces exposed by this IRP with *device interfaces*. A device interface is used primarily for exposing a path to a device for use by user-mode components or other kernel components. For more information about device interfaces, see [Device Interface Classes](https://msdn.microsoft.com/library/windows/hardware/ff541339).
+This IRP is used specifically to pass routine entry points between layered kernel-mode drivers for a device. Do not confuse the interfaces exposed by this IRP with *device interfaces*. A device interface is used primarily for exposing a path to a device for use by user-mode components or other kernel components. For more information about device interfaces, see [Device Interface Classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes).
 
 **Sending This IRP**
 
-See [Handling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff546847) for information about sending IRPs. The following steps apply specifically to this IRP:
+See [Handling IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-irps) for information about sending IRPs. The following steps apply specifically to this IRP:
 
--   Allocate an [**INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff547825) structure from paged pool and initialize it to zeros. If the interface will be called at IRQL &gt;= DISPATCH\_LEVEL, based on the interface contract, the caller can copy the contents to memory that is allocated from nonpaged pool.
+-   Allocate an [**INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_interface) structure from paged pool and initialize it to zeros. If the interface will be called at IRQL &gt;= DISPATCH\_LEVEL, based on the interface contract, the caller can copy the contents to memory that is allocated from nonpaged pool.
 
 -   Set the values in the next I/O stack location of the IRP: set **MajorFunction** to [**IRP\_MJ\_PNP**](irp-mj-pnp.md), set **MinorFunction** to **IRP\_MN\_QUERY\_INTERFACE**, and set the appropriate values in **Parameters.QueryInterface**.
 
@@ -121,9 +121,9 @@ See [Handling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff546847
 
 -   Use the interface routines and context parameter as described in the specification for the interface.
 
--   Decrement the reference count using the [*InterfaceDereference*](https://msdn.microsoft.com/library/windows/hardware/ff547829) routine when the interface is no longer needed. Do not call any interface routines after dereferencing the interface.
+-   Decrement the reference count using the [*InterfaceDereference*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-pinterface_dereference) routine when the interface is no longer needed. Do not call any interface routines after dereferencing the interface.
 
-A driver typically sends this IRP to the top of the device stack in which the driver is attached. If a driver sends this IRP to a different device stack, the driver must register for target device notification on the other device if the other device is not an ancestor of the device that the driver is servicing. Such a driver calls [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526) with an *EventCategory* of **EventCategoryTargetDeviceChange**. When the driver receives notification of type GUID\_TARGET\_DEVICE\_QUERY\_REMOVE, the driver must dereference the interface. The driver can requery for the interface if it receives a subsequent GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED notification.
+A driver typically sends this IRP to the top of the device stack in which the driver is attached. If a driver sends this IRP to a different device stack, the driver must register for target device notification on the other device if the other device is not an ancestor of the device that the driver is servicing. Such a driver calls [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification) with an *EventCategory* of **EventCategoryTargetDeviceChange**. When the driver receives notification of type GUID\_TARGET\_DEVICE\_QUERY\_REMOVE, the driver must dereference the interface. The driver can requery for the interface if it receives a subsequent GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED notification.
 
 Requirements
 ------------
@@ -144,11 +144,11 @@ Requirements
 ## See also
 
 
-[**BUS\_INTERFACE\_STANDARD**](https://msdn.microsoft.com/library/windows/hardware/ff540707)
+[**BUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_bus_interface_standard)
 
-[**INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff547825)
+[**INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_interface)
 
-[**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526)
+[**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification)
 
  
 

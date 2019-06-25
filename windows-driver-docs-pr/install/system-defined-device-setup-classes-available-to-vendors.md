@@ -69,7 +69,7 @@ This class includes hard disk controllers, including ATA/ATAPI controllers but n
 **Human Interface Devices (HID)**  
 Class = HIDClass  
 ClassGuid = {745a17a0-74d3-11d0-b6fe-00a0c90f57da}  
-This class includes interactive input devices that are operated by the system-supplied [HID class driver](https://msdn.microsoft.com/library/windows/hardware/jj126193). This includes USB devices that comply with the [USB HID Standard](../hid/hid-over-usb.md) and non-USB devices that use a HID minidriver. For more information, see [HIDClass Device Setup Class](../hid/minidriver-operations.md). (See also the Keyboard or Mouse classes later in this list.)  
+This class includes interactive input devices that are operated by the system-supplied [HID class driver](https://docs.microsoft.com/previous-versions/jj126193(v=vs.85)). This includes USB devices that comply with the [USB HID Standard](../hid/hid-over-usb.md) and non-USB devices that use a HID minidriver. For more information, see [HIDClass Device Setup Class](../hid/minidriver-operations.md). (See also the Keyboard or Mouse classes later in this list.)  
   
 **IEEE 1284.4 Devices**  
 Class = Dot4  
@@ -131,7 +131,7 @@ This class includes memory devices, such as flash memory cards.
 <a href="" id="modem-"></a>**Modem**  
 Class = Modem  
 ClassGuid = {4d36e96d-e325-11ce-bfc1-08002be10318}  
-This class includes modem devices or a *software modem*. These devices split the functionality between the modem device and the device driver. For more information about modem INF files and Microsoft Windows Driver Model (WDM) modem devices, see [Overview of Modem INF Files](https://msdn.microsoft.com/library/windows/hardware/ff542559) and [Adding WDM Modem Support](https://msdn.microsoft.com/library/windows/hardware/ff541218).  
+This class includes modem devices or a *software modem*. These devices split the functionality between the modem device and the device driver. For more information about modem INF files and Microsoft Windows Driver Model (WDM) modem devices, see [Overview of Modem INF Files](https://docs.microsoft.com/previous-versions/windows/hardware/modem/ff542559(v=vs.85)) and [Adding WDM Modem Support](https://docs.microsoft.com/previous-versions/windows/hardware/modem/ff541218(v=vs.85)).  
   
 <a href="" id="monitor-"></a>**Monitor**  
 Class = Monitor  

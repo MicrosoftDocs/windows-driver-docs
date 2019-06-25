@@ -15,7 +15,7 @@ The Windows Debugger (WinDbg) can be used to debug kernel-mode and user-mode cod
 
 WinDbg Preview is a new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows still work as they did before.
 
- - Download WinDbg Preview from the Microsoft Store: [WinDbg Preview](https://microsoft.com/store/p/windbg/9pgjgd53tn86).
+ - Download WinDbg Preview from the Microsoft Store: [WinDbg Preview](https://www.microsoft.com/store/p/windbg/9pgjgd53tn86).
 
  - Learn more about installation and configuration in [WinDbg Preview - Installation](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-install-preview).
 
@@ -44,12 +44,12 @@ To download the debugger tools for previous versions of Windows, download the Wi
 
 ## Looking for related downloads?
 
- - [Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit)
+ - [Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)
 
  - [Windows Debugger Symbols](debugger-download-symbols.md)  
 
- - [Windows HLK, HCK, or Logo Kit](https://developer.microsoft.com/windows/hardware/windows-hardware-lab-kit)
+ - [Windows HLK, HCK, or Logo Kit](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)
 
- - [Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+ - [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
 
  - [Windows Insider Preview builds](https://insider.windows.com/)

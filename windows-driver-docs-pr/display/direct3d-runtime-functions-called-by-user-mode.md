@@ -48,8 +48,8 @@ The **Microsoft Direct3D version 10** or later runtime supplies pointers to adap
 |[PFND3DDDI_UPDATEALLOCATIONPROPERTYCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_updateallocationpropertycb) |[PFND3DDDI_UPDATEOVERLAYCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_updateoverlaycb) |
 |[PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb) |[PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECT2CB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobject2cb) |
 |[PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectcb) |[PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPUCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectfromcpucb) |
-|[PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectfromgpucb) |[PFND3DWDDM2_0DDI_DECODEJPEG](https://msdn.microsoft.com/library/windows/hardware/dn937733.aspx) |
-|[PFND3DWDDM2_0DDI_ENCODEJPEG](https://msdn.microsoft.com/library/windows/hardware/dn937735.aspx) ||
+|[PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectfromgpucb) |[PFND3DWDDM2_0DDI_DECODEJPEG](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/dn937733(v=vs.85)) |
+|[PFND3DWDDM2_0DDI_ENCODEJPEG](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/dn937735(v=vs.85)) ||
 
 ### Direct3D Parameter Structures
 

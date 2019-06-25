@@ -24,10 +24,10 @@ KSPROPERTY\_RTAUDIO\_SETWRITEPACKET informs the driver that the OS has written v
 
 |Get|Set|Target|Property descriptor type|Property value type|
 |--- |--- |--- |--- |--- |
-|No|Yes|Pin|[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)|[KSRTAUDIO_SETWRITEPACKET_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info)|
+|No|Yes|Pin|[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))|[KSRTAUDIO_SETWRITEPACKET_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info)|
 
 
-The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values that include the packet number, packet length and other information.
+The property descriptor (instance data) is a [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)) structure. Before sending the request, the client loads the structure with values that include the packet number, packet length and other information.
 
 The property value is a structure of type [**KSRTAUDIO\_SETWRITEPACKET\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info).
 

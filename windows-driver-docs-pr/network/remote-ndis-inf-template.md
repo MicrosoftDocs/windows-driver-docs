@@ -176,7 +176,7 @@ Rndis_Property         = "Optional RNDIS Property"
 
 [Overview of Remote NDIS (RNDIS)](overview-of-remote-ndis--rndis-.md)
 
-[USB class drivers included in Windows](https://msdn.microsoft.com/library/windows/hardware/ff538820)
+[USB class drivers included in Windows](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
  
 

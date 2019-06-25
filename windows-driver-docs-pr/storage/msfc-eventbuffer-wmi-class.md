@@ -25,7 +25,7 @@ class MSFC_EventBuffer {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_EventBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff562480)
+[**MSFC\_EventBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_msfc_eventbuffer)
 
 There are no methods associated with this WMI class.
 

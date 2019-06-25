@@ -22,8 +22,8 @@ For a Wi-Fi Direct GO port, this must be indicated during [OID\_WDI\_TASK\_START
 
 | Type                                                                                         | Multiple TLV instances allowed | Optional | Description                                                        |
 |----------------------------------------------------------------------------------------------|--------------------------------|----------|--------------------------------------------------------------------|
-| [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](https://msdn.microsoft.com/library/windows/hardware/dn897869)                    |                                |          | The operating channel the given Wi-Fi Direct port is operating on. |
-| [**WDI\_TLV\_P2P\_CHANNEL\_INDICATE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/dn897867) |                                |          | The reason for sending the indication.                             |
+| [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-channel-number)                    |                                |          | The operating channel the given Wi-Fi Direct port is operating on. |
+| [**WDI\_TLV\_P2P\_CHANNEL\_INDICATE\_REASON**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-channel-indicate-reason) |                                |          | The reason for sending the indication.                             |
 
  
 

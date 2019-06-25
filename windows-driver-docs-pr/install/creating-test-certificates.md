@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Test-signing requires a test certificate. After a test certificate is generated, it can be used to test-sign multiple drivers or [driver packages](driver-packages.md). For more information, see [Test Certificates](test-certificates.md).
 
-This topic describes how to use the [**MakeCert**](https://msdn.microsoft.com/library/windows/hardware/ff548309) tool to create test certificates. In most development environments, test certificates generated through MakeCert should be sufficient to test the installation and loading of test-signed drivers or driver packages. For more information about this type of test certificate, see [MakeCert Test Certificate](makecert-test-certificate.md).
+This topic describes how to use the [**MakeCert**](https://docs.microsoft.com/windows-hardware/drivers/devtest/makecert) tool to create test certificates. In most development environments, test certificates generated through MakeCert should be sufficient to test the installation and loading of test-signed drivers or driver packages. For more information about this type of test certificate, see [MakeCert Test Certificate](makecert-test-certificate.md).
 
 The following command-line example uses MakeCert to complete the following tasks:
 
@@ -45,7 +45,7 @@ The certificate store that contains the test certificate is added to the list of
 
 A developer has to create only one MakeCert test certificate to sign all [driver packages](driver-packages.md) on a development computer.
 
-For more information about the MakeCert tool and its command-line arguments, see [**MakeCert**](https://msdn.microsoft.com/library/windows/hardware/ff548309).
+For more information about the MakeCert tool and its command-line arguments, see [**MakeCert**](https://docs.microsoft.com/windows-hardware/drivers/devtest/makecert).
 
 Also refer to the readme file *Selfsign_readme.htm* in the *bin\\selfsign* directory of the Windows Driver Kit (WDK).
 

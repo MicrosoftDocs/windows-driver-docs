@@ -20,9 +20,9 @@ NDIS does not guarantee that the packet filter has changed when NDIS generates t
 
 NDIS filter drivers can also generate the NDIS\_STATUS\_PACKET\_FILTER status indication.
 
-NDIS supplies a bitwise OR of the filter type flags in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure. For a list of the filter type flags, see the [OID\_GEN\_CURRENT\_PACKET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569575) OID. For additional information about packet filters, see [OID\_GEN\_SUPPORTED\_PACKET\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569643).
+NDIS supplies a bitwise OR of the filter type flags in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure. For a list of the filter type flags, see the [OID\_GEN\_CURRENT\_PACKET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-current-packet-filter) OID. For additional information about packet filters, see [OID\_GEN\_SUPPORTED\_PACKET\_FILTERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-supported-packet-filters).
 
-The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure is set to sizeof(ULONG).
+The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure is set to sizeof(ULONG).
 
 Requirements
 ------------
@@ -47,11 +47,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373)
+[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication)
 
-[OID\_GEN\_CURRENT\_PACKET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569575)
+[OID\_GEN\_CURRENT\_PACKET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-current-packet-filter)
 
-[OID\_GEN\_SUPPORTED\_PACKET\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569643)
+[OID\_GEN\_SUPPORTED\_PACKET\_FILTERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-supported-packet-filters)
 
  
 

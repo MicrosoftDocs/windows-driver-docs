@@ -56,7 +56,7 @@ This section includes the following additional topics:
 ## Related topics
 
 
-[USB class drivers included in Windows](https://msdn.microsoft.com/library/windows/hardware/ff538820)
+[USB class drivers included in Windows](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
  
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Any driver that uses an event object must call [**KeInitializeEvent**](https://msdn.microsoft.com/library/windows/hardware/ff552137), [**IoCreateNotificationEvent**](https://msdn.microsoft.com/library/windows/hardware/ff549039), or [**IoCreateSynchronizationEvent**](https://msdn.microsoft.com/library/windows/hardware/ff549045) before it waits on, sets, clears, or resets the event. The following figure illustrates how a driver with a thread can use an event object for synchronization.
+Any driver that uses an event object must call [**KeInitializeEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keinitializeevent), [**IoCreateNotificationEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatenotificationevent), or [**IoCreateSynchronizationEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatesynchronizationevent) before it waits on, sets, clears, or resets the event. The following figure illustrates how a driver with a thread can use an event object for synchronization.
 
 ![diagram illustrating waiting for an event object](images/3evntobj.png)
 
@@ -29,23 +29,23 @@ When the driver calls **KeInitializeEvent**, it must pass a pointer to the drive
 
 -   **NotificationEvent**
 
-    When a *notification event* is set to the Signaled state, all threads that were waiting for the event to be reset to Not-Signaled become eligible for execution and the event remains in the Signaled state until an explicit reset to Not-Signaled occurs: that is, there is a call to [**KeClearEvent**](https://msdn.microsoft.com/library/windows/hardware/ff551980) or [**KeResetEvent**](https://msdn.microsoft.com/library/windows/hardware/ff553176) with the given *Event* pointer.
+    When a *notification event* is set to the Signaled state, all threads that were waiting for the event to be reset to Not-Signaled become eligible for execution and the event remains in the Signaled state until an explicit reset to Not-Signaled occurs: that is, there is a call to [**KeClearEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keclearevent) or [**KeResetEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keresetevent) with the given *Event* pointer.
 
 Few device or intermediate drivers have a single driver-dedicated thread, let alone a set of threads that might synchronize their operations by waiting for an event that protects a shared resource.
 
-Most drivers that use event objects to wait for the completion of an I/O operation set the input *Type* to **NotificationEvent** when they call **KeInitializeEvent**. An event object set up for IRPs that a driver creates with [**IoBuildSynchronousFsdRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548330) or [**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318) is almost always initialized as a **NotificationEvent** because the caller will wait for the event for notification that its request has been satisfied by one or more lower-level drivers.
+Most drivers that use event objects to wait for the completion of an I/O operation set the input *Type* to **NotificationEvent** when they call **KeInitializeEvent**. An event object set up for IRPs that a driver creates with [**IoBuildSynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildsynchronousfsdrequest) or [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest) is almost always initialized as a **NotificationEvent** because the caller will wait for the event for notification that its request has been satisfied by one or more lower-level drivers.
 
 After the driver has initialized itself, its driver-dedicated thread, if any, and other routines can synchronize their operations on the event. For example, a driver with a thread that manages the queuing of IRPs, such as the system floppy controller driver, might synchronize IRP processing on an event, as shown in the previous figure:
 
-1.  The thread, which has dequeued an IRP for processing on the device, calls [**KeWaitForSingleObject**](https://msdn.microsoft.com/library/windows/hardware/ff553350) with a pointer to the driver-supplied storage for the initialized event object.
+1.  The thread, which has dequeued an IRP for processing on the device, calls [**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitforsingleobject) with a pointer to the driver-supplied storage for the initialized event object.
 
-2.  Other driver routines carry out device the I/O operations necessary to satisfy the IRP and, when these operations are complete, the driver's [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine calls [**KeSetEvent**](https://msdn.microsoft.com/library/windows/hardware/ff553253) with a pointer to the event object, a driver-determined priority boost for the thread (*Increment*, as shown in the previous figure), and a Boolean *Wait* set to **FALSE**. Calling **KeSetEvent** sets the event object to the Signaled state, thereby changing the waiting thread's state to ready.
+2.  Other driver routines carry out device the I/O operations necessary to satisfy the IRP and, when these operations are complete, the driver's [*DpcForIsr*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_dpc_routine) routine calls [**KeSetEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kesetevent) with a pointer to the event object, a driver-determined priority boost for the thread (*Increment*, as shown in the previous figure), and a Boolean *Wait* set to **FALSE**. Calling **KeSetEvent** sets the event object to the Signaled state, thereby changing the waiting thread's state to ready.
 
 3.  The kernel dispatches the thread for execution as soon as a processor is available: that is, no other thread with a higher priority is currently in the ready state and there are no kernel-mode routines to be run at a higher IRQL.
 
     The thread now can complete the IRP if the *DpcForIsr* has not called **IoCompleteRequest** with the IRP already, and can dequeue another IRP to be processed on the device.
 
-Calling **KeSetEvent** with the *Wait* parameter set to **TRUE** indicates the caller's intention to immediately call a [**KeWaitForSingleObject**](https://msdn.microsoft.com/library/windows/hardware/ff553350) or [**KeWaitForMultipleObjects**](https://msdn.microsoft.com/library/windows/hardware/ff553324) support routine on return from **KeSetEvent**.
+Calling **KeSetEvent** with the *Wait* parameter set to **TRUE** indicates the caller's intention to immediately call a [**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitforsingleobject) or [**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitformultipleobjects) support routine on return from **KeSetEvent**.
 
 **Consider the following guidelines for setting the***Wait***parameter toKeSetEvent:**
 

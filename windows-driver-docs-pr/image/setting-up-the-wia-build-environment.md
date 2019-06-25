@@ -18,7 +18,7 @@ This section describes the files required to build Microsoft WIA minidrivers and
 
 [Building a WIA Microdriver](building-a-wia-microdriver.md)
 
-For details about how to build a driver in the WDK environment, see [Tools for Building Drivers](https://msdn.microsoft.com/library/windows/hardware/ff552950).
+For details about how to build a driver in the WDK environment, see [Tools for Building Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-building-drivers).
 
  
 

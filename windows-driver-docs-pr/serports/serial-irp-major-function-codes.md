@@ -24,7 +24,7 @@ This topic documents the following serial IRP major function codes:
 Header: Wdm.h (include Wdm.h or Ntddk.h)
 
 ##  <a name="IRP_MJ_CREATE"></a> IRP_MJ_CREATE
-The [IRP_MJ_CREATE](https://msdn.microsoft.com/library/windows/hardware/ff550729) request opens a serial device.
+The [IRP_MJ_CREATE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create) request opens a serial device.
 
 ### When Sent
 A client must open a serial device before it can access the port or a device connected to the port.
@@ -97,7 +97,7 @@ Request specific
 Request specific
 
 ##  <a name="IRP_MJ_FLUSH_BUFFERS"></a> IRP_MJ_FLUSH_BUFFERS
-The [IRP_MJ_FLUSH_BUFFER](https://msdn.microsoft.com/library/windows/hardware/ff550760) request flushes the internal write buffer of a serial device.
+The [IRP_MJ_FLUSH_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-flush-buffers) request flushes the internal write buffer of a serial device.
 
 ### When Sent
 A client uses a flush request to determine when Serial has completed all write requests the client sent before the flush request.
@@ -135,7 +135,7 @@ Serial queues and starts processing write and flush requests in the order in whi
 
 
 ##  <a name="IRP_MJ_INTERNAL_DEVICE_CONTROL"></a> IRP_MJ_INTERNAL_DEVICE_CONTROL
-The [IRP_MJ_INTERNAL_DEVICE_CONTROL](https://msdn.microsoft.com/library/windows/hardware/ff550766) request sets internal operating modes on a serial device.
+The [IRP_MJ_INTERNAL_DEVICE_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) request sets internal operating modes on a serial device.
 
 ### When Sent
 A client uses internal device control requests to do the following:
@@ -159,7 +159,7 @@ Request specific
 
 
 ##  <a name="IRP_MJ_PNP"></a> IRP_MJ_PNP
-The [IRP_MJ_PNP](https://msdn.microsoft.com/library/windows/hardware/ff550772) request supports Plug and Play. 
+The [IRP_MJ_PNP](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp) request supports Plug and Play. 
 
 ### When Sent
 The PnP Manager sends IRP_MJ_PNP requests to query devices and to start, stop, and remove devices.
@@ -176,20 +176,20 @@ Request specific
 ### Operation
 Serial supports the following Plug and Play requests:
 
-* [IRP_MN_CANCEL_REMOVE_DEVICE](https://msdn.microsoft.com/library/windows/hardware/ff550823)
-* [IRP_MN_CANCEL_STOP_DEVICE](https://msdn.microsoft.com/library/windows/hardware/ff550826)
-* [IRP_MN_FILTER_RESOURCE_REQUIREMENTS](https://msdn.microsoft.com/library/windows/hardware/ff550874)
-* [IRP_MN_QUERY_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff551664)
-* [IRP_MN_QUERY_DEVICE_RELATIONS](https://msdn.microsoft.com/library/windows/hardware/ff551670)
-* [IRP_MN_QUERY_ID](https://msdn.microsoft.com/library/windows/hardware/ff551679)
-* [IRP_MN_QUERY_PNP_DEVICE_STATE](https://msdn.microsoft.com/library/windows/hardware/ff551698)
-* [IRP_MN_QUERY_REMOVE_DEVICE](https://msdn.microsoft.com/library/windows/hardware/ff551705)
-* [IRP_MN_QUERY_RESOURCE_REQUIREMENTS](https://msdn.microsoft.com/library/windows/hardware/ff551715)
-* [IRP_MN_QUERY_STOP_DEVICE](https://msdn.microsoft.com/library/windows/hardware/ff551725)
-* [IRP_MN_REMOVE_DEVICE](https://msdn.microsoft.com/library/windows/hardware/ff551738)
-* [IRP_MN_START_DEVICE](https://msdn.microsoft.com/library/windows/hardware/ff551749)
-* [IRP_MN_STOP_DEVICE](https://msdn.microsoft.com/library/windows/hardware/ff551755)
-* [IRP_MN_SURPRISE_REMOVAL](https://msdn.microsoft.com/library/windows/hardware/ff551760)
+* [IRP_MN_CANCEL_REMOVE_DEVICE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-cancel-remove-device)
+* [IRP_MN_CANCEL_STOP_DEVICE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-cancel-stop-device)
+* [IRP_MN_FILTER_RESOURCE_REQUIREMENTS](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-filter-resource-requirements)
+* [IRP_MN_QUERY_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities)
+* [IRP_MN_QUERY_DEVICE_RELATIONS](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations)
+* [IRP_MN_QUERY_ID](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-id)
+* [IRP_MN_QUERY_PNP_DEVICE_STATE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-pnp-device-state)
+* [IRP_MN_QUERY_REMOVE_DEVICE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-remove-device)
+* [IRP_MN_QUERY_RESOURCE_REQUIREMENTS](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-resource-requirements)
+* [IRP_MN_QUERY_STOP_DEVICE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-stop-device)
+* [IRP_MN_REMOVE_DEVICE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device)
+* [IRP_MN_START_DEVICE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device)
+* [IRP_MN_STOP_DEVICE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-stop-device)
+* [IRP_MN_SURPRISE_REMOVAL](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-surprise-removal)
 
 Serial sends all other Plug and Play requests down the device stack without further processing.
 
@@ -204,10 +204,10 @@ IRP_MN_FILTER_RESOURCE_REQUIREMENTS
 
 serial devices on a multiport ISA card share the same interrupt status register and the same interrupt.
 
-For a description of the generic operation of Plug and Play requests, see [Plug and Play Minor IRPs](https://msdn.microsoft.com/library/windows/hardware/ff558807).
+For a description of the generic operation of Plug and Play requests, see [Plug and Play Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/plug-and-play-minor-irps).
 
 ##  <a name="IRP_MJ_POWER"></a> IRP_MJ_POWER
-The [IRP_MJ_POWER](https://msdn.microsoft.com/library/windows/hardware/ff550784) request controls power management.
+The [IRP_MJ_POWER](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power) request controls power management.
 
 ### When Sent
 The power manager uses power requests to query and set power states.
@@ -224,18 +224,18 @@ Request specific
 ### Operation
 Serial supports the following power requests:
 
-* [IRP_MN_QUERY_POWER](https://msdn.microsoft.com/library/windows/hardware/ff551699)
-* [IRP_MN_SET_POWER](https://msdn.microsoft.com/library/windows/hardware/ff551744)
+* [IRP_MN_QUERY_POWER](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-power)
+* [IRP_MN_SET_POWER](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power)
 
 Serial sends all other power requests down the device stack to be completed by a lower-level driver.
 
 Serial is the default power policy owner for a serial device stack that uses Serial as a function driver or a lower-level filter driver.
 
-For more information about the generic operation of these requests, see [Rules for Handling Power IRPs](https://msdn.microsoft.com/library/windows/hardware/ff563629).
+For more information about the generic operation of these requests, see [Rules for Handling Power IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/rules-for-handling-power-irps).
 
 
 ##  <a name="IRP_MJ_QUERY_INFORMATION"></a> IRP_MJ_QUERY_INFORMATION
-The [IRP_MJ_QUERY_INFORMATION](https://msdn.microsoft.com/library/windows/hardware/ff550788) request queries the end-of-file information for a serial device. 
+The [IRP_MJ_QUERY_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-query-information) request queries the end-of-file information for a serial device. 
 
 ### When Sent
 A client uses a query information request to obtain standard information and position information about a file opened on a serial device.
@@ -284,7 +284,7 @@ The standard file information is always set to zero or **FALSE**, as appropriate
 
 
 ##  <a name="IRP_MJ_READ"></a> IRP_MJ_READ
-A [IRP_MJ_READ](https://msdn.microsoft.com/library/windows/hardware/ff550794) request transfers data from a serial device to a client.
+A [IRP_MJ_READ](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read) request transfers data from a serial device to a client.
 
 ### When Sent
 A client uses a read request whenever it reads data on a serial device.
@@ -322,13 +322,13 @@ STATUS_TIMEOUT
 The time to complete the request exceeded the total time-out value or the interval time-out value.
 
 ### Operation
-A client can use time-out events to terminate a read request. Note, however, that when a serial device is opened, the time-out settings for the device are undefined. A kernel-mode client can use an [IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS](https://msdn.microsoft.com/library/windows/hardware/ff546626) to set time-out parameters to zero (no time-out events are used). User-mode and kernel-mode clients can use an [IOCTL_SERIAL_SET_TIMEOUTS](https://msdn.microsoft.com/library/windows/hardware/ff546772) request to set time-out parameters. 
+A client can use time-out events to terminate a read request. Note, however, that when a serial device is opened, the time-out settings for the device are undefined. A kernel-mode client can use an [IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ni-ntddser-ioctl_serial_internal_basic_settings) to set time-out parameters to zero (no time-out events are used). User-mode and kernel-mode clients can use an [IOCTL_SERIAL_SET_TIMEOUTS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ni-ntddser-ioctl_serial_set_timeouts) request to set time-out parameters. 
 
-For more information about read and write time-outs, see [Setting Read and Write Timeouts for a Serial Device](https://msdn.microsoft.com/library/windows/hardware/ff547486).
+For more information about read and write time-outs, see [Setting Read and Write Timeouts for a Serial Device](https://docs.microsoft.com/previous-versions/ff547486(v=vs.85)).
 
 
 ##  <a name="IRP_MJ_SET_INFORMATION"></a> IRP_MJ_SET_INFORMATION
-The [IRP_MJ_SET_INFORMATION](https://msdn.microsoft.com/library/windows/hardware/ff550807) request sets the end-of-file information about a serial device.
+The [IRP_MJ_SET_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-shutdown) request sets the end-of-file information about a serial device.
 
 ### When Sent
 A client uses a set information request to change the current end-of-file position of a file opened on a serial device.
@@ -370,7 +370,7 @@ Serial supports requests of type **FileEndOfFileInformation** and **FileAllocati
 
 
 ##  <a name="IRP_MJ_SYSTEM_CONTROL"></a> IRP_MJ_SYSTEM_CONTROL
-The [IRP_MJ_SYSTEM_CONTROL](https://msdn.microsoft.com/library/windows/hardware/ff550813) request supports WMI requests.
+The [IRP_MJ_SYSTEM_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-system-control) request supports WMI requests.
 
 ### When Sent
 A WMI kernel-mode component can send an IRP_MJ_SYSTEM_CONTROL request any time after Serial registers as a WMI provider for a serial device. WMI IRPs typically are sent when a user-mode data consumer has requested WMI data.
@@ -405,12 +405,12 @@ STATUS_WMI_GUID_NOT_FOUND
 The WMI GUID is not supported.
 
 ### Operation
-Serial uses [WmiSystemControl](https://msdn.microsoft.com/library/windows/hardware/ff565834) to handle WMI system control requests. Serial registers the following types of WMI library callback routines, which **WmiSystemControl** calls to handle WMI requests sent to a device:
+Serial uses [WmiSystemControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol) to handle WMI system control requests. Serial registers the following types of WMI library callback routines, which **WmiSystemControl** calls to handle WMI requests sent to a device:
 
-* [DpWmiQueryReginfo](https://msdn.microsoft.com/library/windows/hardware/ff544097)
-* [DpWmiQueryDataBlock](https://msdn.microsoft.com/library/windows/hardware/ff544096)
-* [DpWmiSetDataBlock](https://msdn.microsoft.com/library/windows/hardware/ff544104)
-* [DpWmiSetDataItem](https://msdn.microsoft.com/library/windows/hardware/ff544108)
+* [DpWmiQueryReginfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_query_reginfo_callback)
+* [DpWmiQueryDataBlock](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_query_datablock_callback)
+* [DpWmiSetDataBlock](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_set_datablock_callback)
+* [DpWmiSetDataItem](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_set_dataitem_callback)
 
 Serial does not support any other system control requests. For non-WMI requests, Serial skips the current stack location, and sends the request down the device stack.
 
@@ -428,7 +428,7 @@ Serial WMI GUID Associated data structure
 The WMI name of a serial device is the value of the entry value **PortName** under the Plug and Play registry key for the device.
 
 ##  <a name="IRP_MJ_WRITE"></a> IRP_MJ_WRITE
-An [IRP_MJ_WRITE](https://msdn.microsoft.com/library/windows/hardware/ff550819) request transfers data from a client to a serial device.
+An [IRP_MJ_WRITE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write) request transfers data from a client to a serial device.
 
 ### When Sent
 A client uses a write request whenever it writes data to a serial device.
@@ -468,12 +468,12 @@ STATUS_TIMEOUT
 The total time allowed for the write request was exceeded.
 
 ### Operation
-A client can use time-out events to terminate a write request. Note, however, that when a serial device is opened, the time-out events set on a device are undefined. A kernel-mode client can use an [IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS](https://msdn.microsoft.com/library/windows/hardware/ff546626) to set time-out parameters to zero (no time-out events are used) and an [IOCTL_SERIAL_SET_TIMEOUTS](https://msdn.microsoft.com/library/windows/hardware/ff546772) request to set time-out parameters. For more information about read and write time-outs, see [Setting Read and Write Timeouts for a Serial Device](https://msdn.microsoft.com/library/windows/hardware/ff547486).
+A client can use time-out events to terminate a write request. Note, however, that when a serial device is opened, the time-out events set on a device are undefined. A kernel-mode client can use an [IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ni-ntddser-ioctl_serial_internal_basic_settings) to set time-out parameters to zero (no time-out events are used) and an [IOCTL_SERIAL_SET_TIMEOUTS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ni-ntddser-ioctl_serial_set_timeouts) request to set time-out parameters. For more information about read and write time-outs, see [Setting Read and Write Timeouts for a Serial Device](https://docs.microsoft.com/previous-versions/ff547486(v=vs.85)).
 
 ## Related topics
 
-[Plug and Play Minor IRPs](https://msdn.microsoft.com/library/windows/hardware/ff558807)
+[Plug and Play Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/plug-and-play-minor-irps)
 
-[Rules for Handling Power IRPs](https://msdn.microsoft.com/library/windows/hardware/ff563629)
+[Rules for Handling Power IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/rules-for-handling-power-irps)
 
 [Serial Controller Driver Design Guide](https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/)

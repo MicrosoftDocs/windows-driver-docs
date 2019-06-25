@@ -52,9 +52,9 @@ Remarks
 
 The value of DEVPKEY_Device_NoConnectSound is set to DEVPROP_TRUE to suppress playing sound. Otherwise, the value of the property is set to DEVPROP_FALSE.
 
-The DEVPKEY_Device_NoConnectSound property is typically set by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) in the INF file for a device.
+The DEVPKEY_Device_NoConnectSound property is typically set by an [**INF AddProperty directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive) in the INF file for a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) or [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163) to retrieve or set the value of DEVPKEY_Device_NoConnectSound.
+You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) or [**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to retrieve or set the value of DEVPKEY_Device_NoConnectSound.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
@@ -81,9 +81,9 @@ Requirements
 ## See also
 
 
-[**INF AddProperty Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318)
+[**INF AddProperty Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive)
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

@@ -32,27 +32,27 @@ The following table lists the functions that can be used to manipulate log files
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377397" data-raw-source="[&lt;strong&gt;SetupInitializeFileLog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377397)"><strong>SetupInitializeFileLog</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupinitializefileloga" data-raw-source="[&lt;strong&gt;SetupInitializeFileLog&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupinitializefileloga)"><strong>SetupInitializeFileLog</strong></a></p></td>
 <td align="left"><p>Initializes a log file for use.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377405" data-raw-source="[&lt;strong&gt;SetupLogError&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377405)"><strong>SetupLogError</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setuplogerrora" data-raw-source="[&lt;strong&gt;SetupLogError&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setuplogerrora)"><strong>SetupLogError</strong></a></p></td>
 <td align="left"><p>Writes an error message to a log file. (It should be used only during the installation of the operating system.)</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377406" data-raw-source="[&lt;strong&gt;SetupLogFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377406)"><strong>SetupLogFile</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setuplogfilea" data-raw-source="[&lt;strong&gt;SetupLogFile&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setuplogfilea)"><strong>SetupLogFile</strong></a></p></td>
 <td align="left"><p>Adds an entry to the log file.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377415" data-raw-source="[&lt;strong&gt;SetupQueryFileLog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377415)"><strong>SetupQueryFileLog</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupqueryfileloga" data-raw-source="[&lt;strong&gt;SetupQueryFileLog&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupqueryfileloga)"><strong>SetupQueryFileLog</strong></a></p></td>
 <td align="left"><p>Retrieves information from a log file.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377429" data-raw-source="[&lt;strong&gt;SetupRemoveFileLogEntry&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377429)"><strong>SetupRemoveFileLogEntry</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupremovefilelogentrya" data-raw-source="[&lt;strong&gt;SetupRemoveFileLogEntry&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupremovefilelogentrya)"><strong>SetupRemoveFileLogEntry</strong></a></p></td>
 <td align="left"><p>Removes an entry from a log file.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/desktop/aa377443" data-raw-source="[&lt;strong&gt;SetupTerminateFileLog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa377443)"><strong>SetupTerminateFileLog</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupterminatefilelog" data-raw-source="[&lt;strong&gt;SetupTerminateFileLog&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupterminatefilelog)"><strong>SetupTerminateFileLog</strong></a></p></td>
 <td align="left"><p>Releases resources allocated to a log file.</p></td>
 </tr>
 </tbody>

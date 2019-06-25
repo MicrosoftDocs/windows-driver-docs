@@ -31,9 +31,9 @@ warning C28144: Within a cancel routine, at the point of exit, the IRQL in Irp-&
 
  
 
-When the driver's [**Cancel**](https://msdn.microsoft.com/library/windows/hardware/ff540742) routine exits, the value of the **Irp-&gt;CancelIrql** member is not the current IRQL. Typically, this error occurs when the driver does not call [**IoReleaseCancelSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff549550) with the IRQL that was supplied by the most recent call to [**IoAcquireCancelSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff548196).
+When the driver's [**Cancel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_cancel) routine exits, the value of the **Irp-&gt;CancelIrql** member is not the current IRQL. Typically, this error occurs when the driver does not call [**IoReleaseCancelSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549550(v=vs.85)) with the IRQL that was supplied by the most recent call to [**IoAcquireCancelSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548196(v=vs.85)).
 
-For more information about *Cancel* routines, see [Canceling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff540748). For information specific to this warning, see [Points to Consider When Canceling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff559700).
+For more information about *Cancel* routines, see [Canceling IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/canceling-irps). For information specific to this warning, see [Points to Consider When Canceling IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/points-to-consider-when-canceling-irps).
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 

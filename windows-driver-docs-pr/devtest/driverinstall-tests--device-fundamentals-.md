@@ -31,7 +31,7 @@ The Driver Install test category includes tests that uninstall and reinstall a d
 <td align="left"><p>This test uninstalls and reinstalls the drivers for selected devices, and runs I/O testing on devices.</p>
 <p><strong>Test binary:</strong> Devfund_Reinstall_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Reinstall_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>IOPeriod</em></p></td>
 </tr>
@@ -46,15 +46,15 @@ The Driver Install test category includes tests that uninstall and reinstall a d
 This test does the following:
 
 1.  Verifies that the test device and its descendants are not reporting any device problem codes.
-2.  Tests I/O on the test device and its descendants using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/library/windows/hardware/hh781398) for more information.
-3.  Reinstalls the original driver on the test device using [**IWDTFDriverSetupAction2::UpdateDriver**](https://msdn.microsoft.com/library/windows/hardware/hh450945) method.
+2.  Tests I/O on the test device and its descendants using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins) for more information.
+3.  Reinstalls the original driver on the test device using [**IWDTFDriverSetupAction2::UpdateDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtfdriversetupdeviceaction/nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-updatedriver) method.
 4.  Verifies that the test device and its descendants are not reporting any device problem codes.
-5.  Tests I/O on the test device and its descendants using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/library/windows/hardware/hh781398) for more information.
+5.  Tests I/O on the test device and its descendants using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins) for more information.
 6.  Reboots the system if step \#3 requires a reboot.
-7.  Installs NULL driver on the test device using [**IWDTFDriverSetupAction2::UnInstallDriverPermanently**](https://msdn.microsoft.com/library/windows/hardware/hh450941) method Reboots the system if a reboot is required.
-8.  Reinstalls the original driver on device under test using [**IWDTFDriverSetupAction2::UpdateDriver**](https://msdn.microsoft.com/library/windows/hardware/hh450945) method.
+7.  Installs NULL driver on the test device using [**IWDTFDriverSetupAction2::UnInstallDriverPermanently**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtfdriversetupdeviceaction/nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-uninstalldriverpermanently) method Reboots the system if a reboot is required.
+8.  Reinstalls the original driver on device under test using [**IWDTFDriverSetupAction2::UpdateDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtfdriversetupdeviceaction/nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-updatedriver) method.
 9.  Verifies that the test device and its descendants are not reporting any device problem codes.
-10. Tests I/O on the test device and its descendants using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/library/windows/hardware/hh781398) for more information.
+10. Tests I/O on the test device and its descendants using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins) for more information.
 11. Repeats step 1 - 10 several times.
 
 ### <span id="Debug_installation_failures_using_the_Setup_API_logs"></span><span id="debug_installation_failures_using_the_setup_api_logs"></span><span id="DEBUG_INSTALLATION_FAILURES_USING_THE_SETUP_API_LOGS"></span>Debug installation failures using the Setup API logs
@@ -70,17 +70,17 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\LogLevel
 ## <span id="related_topics"></span>Related topics
 
 
-[How to How to test a driver at runtime using Visual Studio](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver_at_runtime)
+[How to How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers)
 
-[How to select and configure the Device Fundamentals tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)
+[How to select and configure the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers)
 
 [Device Fundamentals Tests](device-fundamentals-tests.md)
 
-[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)
+[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)
 
-[Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/library/windows/hardware/hh781398)
+[Provided WDTF Simple I/O plug-ins](https://docs.microsoft.com/windows-hardware/drivers/wdtf/provided-wdtf-simpleio-plug-ins)
 
-[How to test a driver at runtime from a Command Prompt](https://msdn.microsoft.com/windows-drivers/develop/how_to_test_a_driver_at_runtime_from_a_command_prompt)
+[How to test a driver at runtime from a Command Prompt](https://docs.microsoft.com/windows-hardware/drivers)
 
  
 

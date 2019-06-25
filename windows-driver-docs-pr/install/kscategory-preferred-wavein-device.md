@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_PREFERRED_WAVEIN_DEVICE
 
 
-The KSCATEGORY_PREFERRED_WAVEIN_DEVICE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for the preferred wave input device.
+The KSCATEGORY_PREFERRED_WAVEIN_DEVICE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for the preferred wave input device.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 A user selects the preferred wave input device in the Multimedia property pages in the Control Panel.
 
-This functional category is reserved for exclusive use by the system-supplied [WDM Audio Components](https://msdn.microsoft.com/library/windows/hardware/ff538905).
+This functional category is reserved for exclusive use by the system-supplied [WDM Audio Components](https://docs.microsoft.com/windows-hardware/drivers/audio/wdm-audio-components).
 
 Requirements
 ------------

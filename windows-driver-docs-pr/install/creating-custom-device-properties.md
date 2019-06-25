@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Creating Custom Device Properties
 
 
-In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) supports creation of custom device property categories for device instances, [device setup classes](device-setup-classes.md), device interface classes, and device interfaces. A custom property can be accessed by calling the appropriate [SetupAPI property function](https://msdn.microsoft.com/library/windows/hardware/ff541483). A custom device property can also be modified by using an [**INF AddProperty directive**](inf-addproperty-directive.md) or an [**INF DelProperty directive**](inf-delproperty-directive.md).
+In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) supports creation of custom device property categories for device instances, [device setup classes](device-setup-classes.md), device interface classes, and device interfaces. A custom property can be accessed by calling the appropriate [SetupAPI property function](https://docs.microsoft.com/previous-versions/ff541483(v=vs.85)). A custom device property can also be modified by using an [**INF AddProperty directive**](inf-addproperty-directive.md) or an [**INF DelProperty directive**](inf-delproperty-directive.md).
 
 For more information about custom device properties, see the following topics:
 
@@ -23,9 +23,9 @@ For more information about custom device properties, see the following topics:
 
 ### <a href="" id="creating-custom-device-property-categories"></a> Creating Custom Device Property Categories
 
-A custom device property category is a logically-related collection of custom device properties. To programmatically create a custom device property category, use the [**DEFINE_DEVPROPKEY**](https://msdn.microsoft.com/library/windows/hardware/ff541072) macro to create the property keys that represent the properties in the property category, as follows:
+A custom device property category is a logically-related collection of custom device properties. To programmatically create a custom device property category, use the [**DEFINE_DEVPROPKEY**](https://docs.microsoft.com/windows-hardware/drivers/install/define-devpropkey) macro to create the property keys that represent the properties in the property category, as follows:
 
--   Create a unique GUID value that represents the property category and set the GUID value of each property key to this unique GUID value. For information about how to create a new GUID value, see [Defining and Exporting New GUIDs](https://msdn.microsoft.com/library/windows/hardware/ff542998).
+-   Create a unique GUID value that represents the property category and set the GUID value of each property key to this unique GUID value. For information about how to create a new GUID value, see [Defining and Exporting New GUIDs](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-and-exporting-new-guids).
 
     **Note**  The system-defined property categories are reserved for operating system use only.
 

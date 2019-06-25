@@ -25,7 +25,7 @@ OID\_WDI\_TASK\_CHANGE\_OPERATION\_MODE configures the operation mode for the po
 
 | TLV                                                              | Multiple TLV instances allowed | Optional | Description                 |
 |------------------------------------------------------------------|--------------------------------|----------|-----------------------------|
-| [**WDI\_TLV\_OPERATION\_MODE**](https://msdn.microsoft.com/library/windows/hardware/dn897856) |                                |          | The desired operation mode. |
+| [**WDI\_TLV\_OPERATION\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-operation-mode) |                                |          | The desired operation mode. |
 
  
 

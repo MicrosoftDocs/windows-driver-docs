@@ -11,25 +11,25 @@ ms.localizationpriority: medium
 
 The routines in the two versions of the [HD Audio DDI](hd-audio-ddi-routines.md) use the following structure types:
 
-[**HDAUDIO\_BUFFER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff536411)
+[**HDAUDIO\_BUFFER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_buffer_descriptor)
 
-[**HDAUDIO\_BUS\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff536413)
+[**HDAUDIO\_BUS\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface)
 
-[**HDAUDIO\_BUS\_INTERFACE\_V2**](https://msdn.microsoft.com/library/windows/hardware/ff536418)
+[**HDAUDIO\_BUS\_INTERFACE\_V2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2)
 
-[**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://msdn.microsoft.com/library/windows/hardware/ff536416)
+[**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl)
 
-[**HDAUDIO\_CODEC\_COMMAND**](https://msdn.microsoft.com/library/windows/hardware/ff536420)
+[**HDAUDIO\_CODEC\_COMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_codec_command)
 
-[**HDAUDIO\_CODEC\_RESPONSE**](https://msdn.microsoft.com/library/windows/hardware/ff536422)
+[**HDAUDIO\_CODEC\_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_codec_response)
 
-[**HDAUDIO\_CODEC\_TRANSFER**](https://msdn.microsoft.com/library/windows/hardware/ff536424)
+[**HDAUDIO\_CODEC\_TRANSFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_codec_transfer)
 
-[**HDAUDIO\_CONVERTER\_FORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff536426)
+[**HDAUDIO\_CONVERTER\_FORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_converter_format)
 
-[**HDAUDIO\_DEVICE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff536428)
+[**HDAUDIO\_DEVICE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_device_information)
 
-[**HDAUDIO\_STREAM\_FORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff536430)
+[**HDAUDIO\_STREAM\_FORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_stream_format)
 
  
 

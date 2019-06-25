@@ -9,11 +9,11 @@ ms.localizationpriority: medium
 # Initializing an NDK Miniport Adapter
 
 
-A Network Direct kernel (NDK) miniport adapter is initialized in the same way as other miniport adapters: NDIS calls the miniport adapter's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function as described in [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md). This topic describes the NDK-specific requirements for the miniport adapter's *MiniportInitializeEx* function.
+A Network Direct kernel (NDK) miniport adapter is initialized in the same way as other miniport adapters: NDIS calls the miniport adapter's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function as described in [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md). This topic describes the NDK-specific requirements for the miniport adapter's *MiniportInitializeEx* function.
 
-In its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, the miniport driver must do the following:
+In its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function, the miniport driver must do the following:
 
-1.  Populate an [**NDIS\_MINIPORT\_ADAPTER\_NDK\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/hh451558) structure for the adapter as follows:
+1.  Populate an [**NDIS\_MINIPORT\_ADAPTER\_NDK\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_ndk_attributes) structure for the adapter as follows:
 
     - The miniport driver sets the **Header** member as described in the member description to identify the adapter as an NDK-capable miniport adapter.
 
@@ -22,9 +22,9 @@ In its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardw
         > [!NOTE]
         > For more information about querying and setting the current state of the miniport driver's NDK functionality, see [Enabling and Disabling NDK Functionality](enabling-and-disabling-ndk-functionality.md).         
 
-    - In the **NdkCapabilities** member, the miniport driver stores a pointer to an [**NDIS\_NDK\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/hh451560) structure that specifies the capabilities of the adapter.
+    - In the **NdkCapabilities** member, the miniport driver stores a pointer to an [**NDIS\_NDK\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_ndk_capabilities) structure that specifies the capabilities of the adapter.
 
-2.  Call [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) to set these attributes for the adapter.
+2.  Call [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsetminiportattributes) to set these attributes for the adapter.
 
 ## Related topics
 

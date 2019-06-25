@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Dropped Frame Properties
 
 
-The [PROPSETID\_VIDCAP\_DROPPEDFRAMES](https://msdn.microsoft.com/library/windows/hardware/ff567806) property set contains properties related to the dropping of video frames during a capture operation. The following table describes the properties that are part of the PROPSETID\_VIDCAP\_DROPPEDFRAMES property set.
+The [PROPSETID\_VIDCAP\_DROPPEDFRAMES](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-droppedframes) property set contains properties related to the dropping of video frames during a capture operation. The following table describes the properties that are part of the PROPSETID\_VIDCAP\_DROPPEDFRAMES property set.
 
 <table>
 <colgroup>
@@ -27,7 +27,7 @@ The [PROPSETID\_VIDCAP\_DROPPEDFRAMES](https://msdn.microsoft.com/library/window
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565135" data-raw-source="[&lt;strong&gt;KSPROPERTY_DROPPEDFRAMES_CURRENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565135)"><strong>KSPROPERTY_DROPPEDFRAMES_CURRENT</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-droppedframes-current" data-raw-source="[&lt;strong&gt;KSPROPERTY_DROPPEDFRAMES_CURRENT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-droppedframes-current)"><strong>KSPROPERTY_DROPPEDFRAMES_CURRENT</strong></a></p></td>
 <td><p>Returns the dropped frame information for a capture operation, including the current picture number and the average video frame size.</p></td>
 </tr>
 </tbody>

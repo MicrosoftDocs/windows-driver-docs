@@ -12,7 +12,7 @@ ms.technology: windows-devices
 
 Universal Serial Bus (USB) provides an expandable, hot-pluggable Plug and Play serial interface that ensures a standard, low-cost connection for peripheral devices such as keyboards, mice, joysticks, printers, scanners, storage devices, modems, and video conferencing cameras. Migration to USB is recommended for all peripheral devices that use legacy ports such as PS/2, serial, and parallel ports.
 
-The USB-IF is a Special Interest Groups (SIGs) that maintains the [Official USB Specification](http://www.usb.org/developers/docs/), test specifications and tools.
+The USB-IF is a Special Interest Groups (SIGs) that maintains the [Official USB Specification](https://www.usb.org/documents), test specifications and tools.
 
 Windows operating systems include native support for USB host controllers, hubs, and devices and systems that comply with the official USB specification. Windows also provides programming interfaces that you can use to develop [device drivers](usb-driver-development-guide.md) and [applications](developing-windows-applications-that-communicate-with-a-usb-device.md) that communicate with a USB device.
 
@@ -95,9 +95,9 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>Get information about the tools that you can use to test your USB hardware or software, capture traces of operations and other system events, and observe how the USB driver stack responds to a request sent by a client driver or an application.</p>
 <p>Read an overview of tests in the Hardware Certification Kit that enable hardware vendors and device manufacturers to prepare their USB devices and host controllers for Windows Hardware Certification submission.</p>
 <p><strong>Other Resources for USB</strong></p>
-<a href="http://www.usb.org/developers/docs/" data-raw-source="[Official USB Specification](http://www.usb.org/developers/docs/)">Official USB Specification</a>
+<a href="http://www.usb.org/developers/docs/" data-raw-source="[Official USB Specification](https://www.usb.org/documents)">Official USB Specification</a>
 <p>Provides complete technical details for the USB protocol.</p>
-<a href="https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog/" data-raw-source="[Microsoft Windows USB Core Team Blog](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog/)">Microsoft Windows USB Core Team Blog</a>
+<a href="https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog" data-raw-source="[Microsoft Windows USB Core Team Blog](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog)">Microsoft Windows USB Core Team Blog</a>
 <p>Check out posts written by the Microsoft USB Team. The blog focuses on the Windows USB driver stack that works with various USB Host controllers and USB hubs found in Windows PC. A useful resource for USB client driver developers and USB hardware designers understand the driver stack implementation, resolve common issues, and explain how to use tools for gathering traces and log files.</p>
 <a href="https://community.osr.com/categories/ntdev" data-raw-source="[OSR Online Lists - ntdev](https://community.osr.com/categories/ntdev)">OSR Online Lists - ntdev</a>
 <p>Discussion list managed by <a href="http://www.osronline.com/index.cfm" data-raw-source="[OSR Online](http://www.osronline.com/index.cfm)">OSR Online</a> for kernel-mode driver developers.</p>
@@ -105,10 +105,10 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>Miscellaneous resources based on frequently asked questions from developers who are new to developing USB devices and drivers that work with Windows operating systems.</p>
 <p></p>
 <p><strong>USB-related videos</strong></p>
-<a href="http://channel9.msdn.com/Events/Build/2013/3-924a" data-raw-source="[UWP apps for USB devices](http://channel9.msdn.com/Events/Build/2013/3-924a)">UWP apps for USB devices</a>
-<a href="http://channel9.msdn.com/events/BUILD/BUILD2011/HW-256T" data-raw-source="[Understanding USB 3.0 in Windows 8](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-256T)">Understanding USB 3.0 in Windows 8</a>
-<a href="http://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T" data-raw-source="[Building great USB 3.0 devices](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T)">Building great USB 3.0 devices</a>
-<a href="http://channel9.msdn.com/events/BUILD/BUILD2011/HW-258P" data-raw-source="[USB Debugging Innovations in Windows 8 (Part I, II, & III)](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-258P)">USB Debugging Innovations in Windows 8 (Part I, II, & III)</a>
+<a href="https://channel9.msdn.com/Events/Build/2013/3-924a" data-raw-source="[UWP apps for USB devices](https://channel9.msdn.com/Events/Build/2013/3-924a)">UWP apps for USB devices</a>
+<a href="https://channel9.msdn.com/events/BUILD/BUILD2011/HW-256T" data-raw-source="[Understanding USB 3.0 in Windows 8](https://channel9.msdn.com/events/BUILD/BUILD2011/HW-256T)">Understanding USB 3.0 in Windows 8</a>
+<a href="https://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T" data-raw-source="[Building great USB 3.0 devices](https://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T)">Building great USB 3.0 devices</a>
+<a href="https://channel9.msdn.com/events/BUILD/BUILD2011/HW-258P" data-raw-source="[USB Debugging Innovations in Windows 8 (Part I, II, & III)](https://channel9.msdn.com/events/BUILD/BUILD2011/HW-258P)">USB Debugging Innovations in Windows 8 (Part I, II, & III)</a>
 <p><strong>USB hardware for learning</strong></p>
 <a href="microsoft-usb-test-tool--mutt--devices.md" data-raw-source="[MUTT devices](microsoft-usb-test-tool--mutt--devices.md)">MUTT devices</a>
 <p>MUTT and SuperMUTT devices and the accompanying software package are integrated into the HCK suite of USB tests. They provide automated testing that can be used during the development cycle of USB controllers, devices and systems, especially stress testing.</p>

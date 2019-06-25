@@ -42,7 +42,7 @@ The Windows Sockets switch is an operating system-supplied component of Windows 
 
 -   Emulates TCP/IP semantics when using a native SAN service provider.
 
-The top and bottom interfaces of the switch conform to the Windows Sockets Service Provider Interface (SPI). The switch's bottom interface uses extensions to the Windows Sockets SPI to take advantage of a SAN's capabilities. Those extensions are described in [Windows Sockets SPI Extensions for SANs](windows-sockets-spi-extensions-for-sans.md) and fully documented in the [Windows Sockets Direct Reference](https://msdn.microsoft.com/library/windows/hardware/ff565857).
+The top and bottom interfaces of the switch conform to the Windows Sockets Service Provider Interface (SPI). The switch's bottom interface uses extensions to the Windows Sockets SPI to take advantage of a SAN's capabilities. Those extensions are described in [Windows Sockets SPI Extensions for SANs](windows-sockets-spi-extensions-for-sans.md) and fully documented in the [Windows Sockets Direct Reference](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565857(v=vs.85)).
 
 The switch manages application access to all networks. A computer can contain multiple SAN NICs from multiple vendors, as well as one or more LAN and WAN NICs, such as a LAN NIC that supports an Ethernet network. The switch manages application access to all networks associated with these NICs transparently.
 

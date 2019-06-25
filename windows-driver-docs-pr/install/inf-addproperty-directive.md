@@ -85,7 +85,7 @@ The GUID value can also be a custom GUID value that identifies a custom property
 The property identifier that indicates the specific property within the property category that is indicated by the *property-category-guid* value. For internal system reasons, a property identifier must be greater than or equal to two.
 
 <a href="" id="type"></a>type  
-The numeric value, in decimal or hexadecimal format, of the [property-data-type identifier](https://msdn.microsoft.com/library/windows/hardware/ff541476) for the property that is specified by the *property-category-guid* value and the *property-pid* value. Only the following [**base data types**](https://msdn.microsoft.com/library/windows/hardware/ff537793) are supported:
+The numeric value, in decimal or hexadecimal format, of the [property-data-type identifier](https://docs.microsoft.com/previous-versions/ff541476(v=vs.85)) for the property that is specified by the *property-category-guid* value and the *property-pid* value. Only the following [**base data types**](https://docs.microsoft.com/previous-versions/ff537793(v=vs.85)) are supported:
 
 -   DEVPROP_TYPE_STRING
 -   DEVPROP_TYPE_STRING_LIST

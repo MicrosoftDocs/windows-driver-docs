@@ -24,7 +24,7 @@ For more information on NIC switches, see [NIC Switches](nic-switches.md).
 ## Reporting NIC Switch Capabilities during *MiniportInitializeEx*
 
 
-When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, the driver provides the following NIC switch capabilities:
+When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function, the driver provides the following NIC switch capabilities:
 
 -   The complete set of hardware capabilities for a NIC switch that the network adapter can support.
 
@@ -46,9 +46,9 @@ The miniport driver reports the NIC switch hardware capabilities of the underlyi
 
      
 
-When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, the driver registers the NIC switch capabilities of the network adapter by following these steps:
+When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function, the driver registers the NIC switch capabilities of the network adapter by following these steps:
 
-1.  The miniport driver initializes an [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565924) structure.
+1.  The miniport driver initializes an [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure.
 
     The miniport driver sets the **HardwareNicSwitchCapabilities** member to a pointer to a previously initialized [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure.
 
@@ -58,7 +58,7 @@ When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.micr
 
     For more information about the **\*SRIOV** INF keyword, see [Standardized INF Keywords for SR-IOV](standardized-inf-keywords-for-sr-iov.md).
 
-2.  The driver calls [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) and sets the *MiniportAttributes* parameter to a pointer to the [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565924) structure.
+2.  The driver calls [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsetminiportattributes) and sets the *MiniportAttributes* parameter to a pointer to the [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure.
 
 For more information about the adapter initialization process, see [Initializing a Miniport Adapter](initializing-a-miniport-adapter.md).
 
@@ -80,11 +80,11 @@ To advertise that a NIC switch can be created without the use of SR-IOV, the min
 
 NDIS passes the network adapter's currently enabled NIC switch capabilities to overlying drivers that bind to the network adapter in the following way:
 
--   When NDIS calls an overlying filter driver's [*FilterAttach*](https://msdn.microsoft.com/library/windows/hardware/ff549905) function, NDIS passes the network adapter's NIC switch capabilities through the *AttachParameters* parameter. This parameter contains a pointer to an [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565481) structure. The **NicSwitchCapabilities** member of this structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure.
+-   When NDIS calls an overlying filter driver's [*FilterAttach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_attach) function, NDIS passes the network adapter's NIC switch capabilities through the *AttachParameters* parameter. This parameter contains a pointer to an [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_filter_attach_parameters) structure. The **NicSwitchCapabilities** member of this structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure.
 
--   When NDIS calls an overlying protocol driver's [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function, NDIS passes the network adapter's NIC switch capabilities through the *BindParameters* parameter. This parameter contains a pointer to an [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565481) structure. The **NicSwitchCapabilities** member of this structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure.
+-   When NDIS calls an overlying protocol driver's [*ProtocolBindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_bind_adapter_ex) function, NDIS passes the network adapter's NIC switch capabilities through the *BindParameters* parameter. This parameter contains a pointer to an [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_filter_attach_parameters) structure. The **NicSwitchCapabilities** member of this structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure.
 
-NDIS also returns the [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure when it handles object identifier (OID) query requests of [OID\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569761) and [OID\_NIC\_SWITCH\_CURRENT\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569760) that are issued by overlying protocol or filter drivers.
+NDIS also returns the [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure when it handles object identifier (OID) query requests of [OID\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-hardware-capabilities) and [OID\_NIC\_SWITCH\_CURRENT\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-current-capabilities) that are issued by overlying protocol or filter drivers.
 
  
 

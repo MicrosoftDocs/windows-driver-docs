@@ -26,7 +26,7 @@ Print notifications let your UWP device app inform the user of important printer
 
  
 
-When a DriverEvent occurs, and the background task of a UWP device app is started, the app has several options as to how it can proceed. For more details about the flow that leads to the launch of the task, see [Driver Support for Customized UI](https://msdn.microsoft.com/library/windows/hardware/jj659898).
+When a DriverEvent occurs, and the background task of a UWP device app is started, the app has several options as to how it can proceed. For more details about the flow that leads to the launch of the task, see [Driver Support for Customized UI](https://docs.microsoft.com/windows-hardware/drivers/print/driver-support-for-customized-ui).
 
 The background task can choose to:
 
@@ -396,7 +396,7 @@ If no default print notification appears when expected...
 
 -   **Possible cause:** Domain policies have disabled toast notifications. Leave the domain and try again.
 
--   **Possible cause:** The printer has not implemented DriverEvents. Check that your v4 driver supports Bidi and DriverEvents. For more info, see [Driver Support for Customized UI](https://msdn.microsoft.com/library/windows/hardware/jj659898).
+-   **Possible cause:** The printer has not implemented DriverEvents. Check that your v4 driver supports Bidi and DriverEvents. For more info, see [Driver Support for Customized UI](https://docs.microsoft.com/windows-hardware/drivers/print/driver-support-for-customized-ui).
 
 -   **Possible cause:** The machine has no recent job in the printer queue. Make sure the printer icon is shown in the lower right hand corner of your screen. If not, send another print job.
 
@@ -422,7 +422,7 @@ If no default print notification appears when expected...
 
 [Guidelines and checklist for toast notifications (UWP apps)](https://go.microsoft.com/fwlink/p/?LinkId=317193)
 
-[Driver Support for Customized UI](https://msdn.microsoft.com/library/windows/hardware/jj659898)
+[Driver Support for Customized UI](https://docs.microsoft.com/windows-hardware/drivers/print/driver-support-for-customized-ui)
 
 [Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231)
 

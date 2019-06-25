@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-A *DDInstall* section in a network INF file is based on the generic [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344).
+A *DDInstall* section in a network INF file is based on the generic [**INF DDInstall section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section).
 
 A *DDInstall* section in a network INF file has the following network-specific entries:
 

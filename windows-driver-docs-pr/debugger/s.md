@@ -26,7 +26,7 @@ An instance of the debugger engine acting as a host. The smart client is connect
 An event filter for an exception for which the engine has a built-in filter. Most specific exception filters refer to specific types of exceptions (identified by exception code), but the default exception filter also qualifies as a specific exception filter.
 
 <span id="specific_event_filter"></span><span id="SPECIFIC_EVENT_FILTER"></span>**specific event filter**  
-An event filter for an event which is not an exception. The specific event filters are listed in [**DEBUG\_FILTER\_XXX**](https://msdn.microsoft.com/library/windows/hardware/ff541490).
+An event filter for an event which is not an exception. The specific event filters are listed in [**DEBUG\_FILTER\_XXX**](https://docs.microsoft.com/windows-hardware/drivers/debugger/debug-filter-xxx).
 
 <span id="specific_filter"></span><span id="SPECIFIC_FILTER"></span>**specific filter**  
 An event filter for an event for which the engine has a built-in filter.

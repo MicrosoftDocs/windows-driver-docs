@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Using NMR for WSK Registration and Unregistration
 
 
-The [Registering a Winsock Kernel Application](registering-a-winsock-kernel-application.md) and [Unregistering a Winsock Kernel Application](unregistering-a-winsock-kernel-application.md) sections describe how a WSK application can attach to and detach from the WSK subsystem by using the [WSK registration functions](https://msdn.microsoft.com/library/windows/hardware/ff571179). However, WSK can also attach to the WSK subsystem by using the [Network Module Registrar (NMR)](network-module-registrar2.md).
+The [Registering a Winsock Kernel Application](registering-a-winsock-kernel-application.md) and [Unregistering a Winsock Kernel Application](unregistering-a-winsock-kernel-application.md) sections describe how a WSK application can attach to and detach from the WSK subsystem by using the [WSK registration functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/). However, WSK can also attach to the WSK subsystem by using the [Network Module Registrar (NMR)](network-module-registrar2.md).
 
 A WSK application can register itself with the NMR as a client of the WSK [Network Programming Interface (NPI)](network-programming-interface.md) by using the procedures in the following sections:
 
@@ -22,7 +22,7 @@ A WSK application can register itself with the NMR as a client of the WSK [Netwo
 -   [Attaching the WSK Client to the WSK Subsystem](attaching-the-wsk-client-to-the-wsk-subsystem.md)
 -   [Unregistering and Unloading the WSK Client](unregistering-and-unloading-the-wsk-client.md)
 
-Using the [**WskRegister**](https://msdn.microsoft.com/library/windows/hardware/ff571143) and [**WskDeregister**](https://msdn.microsoft.com/library/windows/hardware/ff571128) functions is the preferred method for registering and unregistering WSK applications. The [Network Module Registrar](network-module-registrar2.md) remains available for compatibility.
+Using the [**WskRegister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nf-wsk-wskregister) and [**WskDeregister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nf-wsk-wskderegister) functions is the preferred method for registering and unregistering WSK applications. The [Network Module Registrar](network-module-registrar2.md) remains available for compatibility.
 
  
 

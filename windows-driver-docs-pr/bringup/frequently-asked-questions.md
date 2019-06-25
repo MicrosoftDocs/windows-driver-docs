@@ -15,7 +15,7 @@ Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
 
 > **A:** Specifically, for Windows 7 it is recommended to use Config \#2. You will need to enable the CSM and set default to UEFI boot, falling back to legacy boot only if needed. Secure Boot will need to be disabled.
 >
-> Windows 7 is not able to support Config \# 1. Windows 7 has a dependency on Int10 support for basic display when the high-res graphics driver is not available (for example, Bugcheck, Sleep transitions, etc.), a dependency satisfied by the CSM. You can boot Win7 in UEFI mode if a partial CSM is in place (enabled) providing Int10 support. If firmware defaults to UEFI boot mode leaving Int10 CSM enabled, then Win7 will install successfully in UEFI mode. Microsoft has also backported TPM 2.0 support to Windows 7 for when it is installed in UEFI mode. For more information, see this KB article: [KB2920188](https://support.microsoft.com/kb/2920188).
+> Windows 7 is not able to support Config \# 1. Windows 7 has a dependency on Int10 support for basic display when the high-res graphics driver is not available (for example, Bugcheck, Sleep transitions, etc.), a dependency satisfied by the CSM. You can boot Win7 in UEFI mode if a partial CSM is in place (enabled) providing Int10 support. If firmware defaults to UEFI boot mode leaving Int10 CSM enabled, then Win7 will install successfully in UEFI mode. Microsoft has also backported TPM 2.0 support to Windows 7 for when it is installed in UEFI mode. For more information, see this KB article: [KB2920188](https://support.microsoft.com/help/2920188/update-to-add-support-for-tpm-2-0-in-windows-7-and-windows-server-2008).
 >
 > Microsoft recommends you should use Config \# 2; Legacy MBR Boot mode should not be used.
 
@@ -107,8 +107,8 @@ Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
 
 ## Related resources
 
-[UEFI Firmware](https://technet.microsoft.com/library/hh824898)
+[UEFI Firmware](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10))
 
 [Windows 10 Specifications - Microsoft](https://www.microsoft.com/windows/windows-10-specifications)
 
-[Update to add support for TPM 2.0 in Windows 7 and Windows Server 2008 R2](https://support.microsoft.com/kb/2920188)
+[Update to add support for TPM 2.0 in Windows 7 and Windows Server 2008 R2](https://support.microsoft.com/help/2920188/update-to-add-support-for-tpm-2-0-in-windows-7-and-windows-server-2008)

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The BAD\_SYSTEM\_CONFIG\_INFO bug check has a value of 0x00000074. This bug check indicates that there is an error in the registry.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
 
 
 ## BAD\_SYSTEM\_CONFIG\_INFO Parameters
@@ -151,7 +151,7 @@ Try booting into safe mode and then restart the OS normally. If the restart does
 -   Use installation media to restore or reset your PC.
 -   Use installation media to reinstall Windows.
 
-For more information, see [Recovery options in Windows 10](https://windows.microsoft.com/windows-10/windows-10-recovery-options#).
+For more information, see [Recovery options in Windows 10](https://support.microsoft.com/help/12415/windows-10-recovery-options#).
 
 This support article discusses this bug check code: [Error 0x74: Bad_system_config_info](https://support.microsoft.com/en-us/help/4028653/windows-error-0x74-badsystemconfiginfo)
 

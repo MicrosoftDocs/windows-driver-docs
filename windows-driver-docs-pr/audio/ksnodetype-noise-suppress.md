@@ -23,7 +23,7 @@ The KSNODETYPE\_NOISE\_SUPPRESS node represents a noise-suppression (NS) control
 
 When a filter containing an NS node is created or the node is reset, the node is initially configured to operate in pass-through mode.
 
-An NS node can be incorporated into an AEC (acoustic echo cancellation) filter to support full-duplex DirectSound applications. For more information, see [DirectSound Capture Effects](https://msdn.microsoft.com/library/windows/hardware/ff536327).
+An NS node can be incorporated into an AEC (acoustic echo cancellation) filter to support full-duplex DirectSound applications. For more information, see [DirectSound Capture Effects](https://docs.microsoft.com/windows-hardware/drivers/audio/directsound-capture-effects).
 
 A KSNODETYPE\_NOISE\_SUPPRESS node in an AEC filter should support the following properties in order to enable hardware acceleration:
 

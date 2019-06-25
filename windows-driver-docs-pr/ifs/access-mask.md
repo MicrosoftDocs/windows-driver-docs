@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_sec_access_mask_if"></span><span id="DDK_SEC_ACCESS_MASK_IF"></span>
 
 
-The function of the access mask is to describe access rights in a compact form. To simplify access management, the access mask contains a set of four bits, the *generic rights*, which are translated into a set of more detailed rights by using the function [**RtlMapGenericMask**](https://msdn.microsoft.com/library/windows/hardware/ff562027).
+The function of the access mask is to describe access rights in a compact form. To simplify access management, the access mask contains a set of four bits, the *generic rights*, which are translated into a set of more detailed rights by using the function [**RtlMapGenericMask**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlmapgenericmask).
 
 The following figure illustrates the access mask.
 
@@ -87,7 +87,7 @@ For directories, the same bit values are used, but their interpretation is diffe
 
 -   **FILE\_WRITE\_ATTRIBUTES**—the right to modify a directory's attribute information.
 
-The actual mapping of generic rights to standard and specific rights for file objects is defined by the I/O manager. This mapping can be retrieved by a file system using [**IoGetFileObjectGenericMapping**](https://msdn.microsoft.com/library/windows/hardware/ff549231). Normally, this mapping is done during IRP\_MJ\_CREATE processing by the I/O manager prior to calling the file system. But this might be done by a file system checking security on specific operations (specialized FSCTL operations, for example).
+The actual mapping of generic rights to standard and specific rights for file objects is defined by the I/O manager. This mapping can be retrieved by a file system using [**IoGetFileObjectGenericMapping**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iogetfileobjectgenericmapping). Normally, this mapping is done during IRP\_MJ\_CREATE processing by the I/O manager prior to calling the file system. But this might be done by a file system checking security on specific operations (specialized FSCTL operations, for example).
 
  
 

@@ -20,7 +20,7 @@ The power management capabilities that are supported in NDIS 6.20 and later vers
 
 -   Wake device on media connect
 
-For more information about the power management capabilities in previous versions of Windows, see [Power Management (NDIS 6.0 and Later)](https://msdn.microsoft.com/library/windows/hardware/hh205401).
+For more information about the power management capabilities in previous versions of Windows, see [Power Management (NDIS 6.0 and Later)](https://docs.microsoft.com/windows-hardware/drivers/network/power-management--ndis-6-20-).
 
 The *wake on magic packet* method wakes the computer when the network adapter receives a *magic packet*. A *magic packet* contains 16 contiguous copies of the receiving network adapter's Ethernet address.
 

@@ -24,7 +24,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_STOP\_AP to indicate that th
 
 | Type                                                                      | Multiple TLV instances allowed | Optional | Description                                                                       |
 |---------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------------------------------------------------------|
-| [**WDI\_TLV\_INDICATION\_STOP\_AP**](https://msdn.microsoft.com/library/windows/hardware/dn926318) |                                |          | The reason the adapter cannot sustain 802.11 AP functionality on any of the PHYs. |
+| [**WDI\_TLV\_INDICATION\_STOP\_AP**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-indication-stop-ap) |                                |          | The reason the adapter cannot sustain 802.11 AP functionality on any of the PHYs. |
 
  
 

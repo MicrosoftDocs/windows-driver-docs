@@ -93,9 +93,9 @@ The following keyboard combinations must be reported based on their completion, 
  
 
 **Note**  
--   For full guidance and implementation for the Power button, see [Power Button Behaviors and implementation](http://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=47452).
--   For Connected Standby guidance for buttons, see [Connected Standby Wake Sources](http://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=49891).
--   For additional guidance on ACPI implementation, see [ACPI Design Guide](http://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=48755).
+-   For full guidance and implementation for the Power button, see [Power Button Behaviors and implementation](https://aka.ms/connect-redirect?DownloadID=47452).
+-   For Connected Standby guidance for buttons, see [Connected Standby Wake Sources](https://aka.ms/connect-redirect?DownloadID=49891).
+-   For additional guidance on ACPI implementation, see [ACPI Design Guide](https://aka.ms/connect-redirect?DownloadID=48755).
 
  
 

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !ndiskd.ifprovider
 
 
-The **!ndiskd.ifprovider** extension displays information about an [NDIS interface provider](https://msdn.microsoft.com/windows/hardware/drivers/network/registering-as-an-interface-provider) (IfProvider). If you run this extension with no parameters, !ndiskd will display a list of all registered NDIS interface providers.
+The **!ndiskd.ifprovider** extension displays information about an [NDIS interface provider](https://docs.microsoft.com/windows-hardware/drivers/network/registering-as-an-interface-provider) (IfProvider). If you run this extension with no parameters, !ndiskd will display a list of all registered NDIS interface providers.
 
 ```console
 !ndiskd.ifprovider [-handle <x>] 
@@ -48,7 +48,7 @@ Run the **!ndiskd.ifprovider** extension with no parameters to get a list of all
 
 You can see from the previous example that the debugee machine has four interface providers registered. Two of them are NDIS interface providers.
 
-**Note**  Interface providers are a generic concept and aren't required to be miniport drivers. While a miniport driver may choose to register as an interface provider if desired, most miniport drivers do not do so because NDIS has a built-in interface provider. The NDIS built-in interface provider automatically provides interfaces for every miniport driver, every Light-Weight Filter (LWF) module, and the loopback interface. For more information, see [NDIS interface provider](https://msdn.microsoft.com/windows/hardware/drivers/network/registering-as-an-interface-provider).
+**Note**  Interface providers are a generic concept and aren't required to be miniport drivers. While a miniport driver may choose to register as an interface provider if desired, most miniport drivers do not do so because NDIS has a built-in interface provider. The NDIS built-in interface provider automatically provides interfaces for every miniport driver, every Light-Weight Filter (LWF) module, and the loopback interface. For more information, see [NDIS interface provider](https://docs.microsoft.com/windows-hardware/drivers/network/registering-as-an-interface-provider).
 
  
 
@@ -80,9 +80,9 @@ HANDLERS
 ## <span id="see_also"></span>See also
 
 
-[Network Driver Design Guide](https://msdn.microsoft.com/windows/hardware/drivers/network/index)
+[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
-[Windows Vista and Later Networking Reference](https://msdn.microsoft.com/library/windows/hardware/ff571081)
+[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
 
 [Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
 
@@ -90,7 +90,7 @@ HANDLERS
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Registering as an Interface Provider](https://msdn.microsoft.com/windows/hardware/drivers/network/registering-as-an-interface-provider)
+[Registering as an Interface Provider](https://docs.microsoft.com/windows-hardware/drivers/network/registering-as-an-interface-provider)
 
  
 

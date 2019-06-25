@@ -13,7 +13,7 @@ To you use Multiple Interface Test Tool (MITT), order you need a MITT board and 
 
 -   **MITT board**
 
-    For example, FPGA development board (Nexys2). See [FPGA board from Digilent](http://www.digilentinc.com/nexys2).
+    For example, FPGA development board (Nexys2). See [FPGA board from Digilent](http://www.digilentinc.com/Nexys2/).
 
     ![mitt board](images/g73a5707.jpg)
 
@@ -54,7 +54,7 @@ To you use Multiple Interface Test Tool (MITT), order you need a MITT board and 
     -   Distance between the touch points
 
 ## Related topics
-[Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
+[Testing with Multi Interface Test Tool (MITT)](https://docs.microsoft.com/windows-hardware/drivers/spb/testing-with-multi-interface-test-tool--mitt-)  
 
 
 

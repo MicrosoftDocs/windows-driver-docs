@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # FLT\_PARAMETERS for IRP\_MJ\_SYSTEM\_CONTROL union
 
 
-Union component used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638) structure for the operation is IRP\_MJ\_SYSTEM\_CONTROL.
+Union component used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is IRP\_MJ\_SYSTEM\_CONTROL.
 
 Syntax
 ------
@@ -57,31 +57,31 @@ The meaning of this parameter depends on the minor function code for the operati
 Remarks
 -------
 
-The [**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff544673) structure for IRP\_MJ\_SYSTEM\_CONTROL operations contains the parameters for a system-control operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
+The [**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_SYSTEM\_CONTROL operations contains the parameters for a system-control operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
 
-The meaning of the IRP\_MJ\_SYSTEM\_CONTROL parameters depends on the minor function code. (See the **MinorFunction** member of the [**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638) structure.) For more information, see the reference entries for the following minor function codes:
+The meaning of the IRP\_MJ\_SYSTEM\_CONTROL parameters depends on the minor function code. (See the **MinorFunction** member of the [**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.) For more information, see the reference entries for the following minor function codes:
 
-[**IRP\_MN\_CHANGE\_SINGLE\_INSTANCE**](https://msdn.microsoft.com/library/windows/hardware/ff550831)
+[**IRP\_MN\_CHANGE\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-change-single-instance)
 
-[**IRP\_MN\_CHANGE\_SINGLE\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff550836)
+[**IRP\_MN\_CHANGE\_SINGLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-change-single-item)
 
-[**IRP\_MN\_DISABLE\_COLLECTION**](https://msdn.microsoft.com/library/windows/hardware/ff550848)
+[**IRP\_MN\_DISABLE\_COLLECTION**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-disable-collection)
 
-[**IRP\_MN\_DISABLE\_EVENTS**](https://msdn.microsoft.com/library/windows/hardware/ff550851)
+[**IRP\_MN\_DISABLE\_EVENTS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-disable-events)
 
-[**IRP\_MN\_ENABLE\_COLLECTION**](https://msdn.microsoft.com/library/windows/hardware/ff550857)
+[**IRP\_MN\_ENABLE\_COLLECTION**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-enable-collection)
 
-[**IRP\_MN\_ENABLE\_EVENTS**](https://msdn.microsoft.com/library/windows/hardware/ff550859)
+[**IRP\_MN\_ENABLE\_EVENTS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-enable-events)
 
-[**IRP\_MN\_EXECUTE\_METHOD**](https://msdn.microsoft.com/library/windows/hardware/ff550868)
+[**IRP\_MN\_EXECUTE\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-execute-method)
 
-[**IRP\_MN\_QUERY\_ALL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff551650)
+[**IRP\_MN\_QUERY\_ALL\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-all-data)
 
-[**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](https://msdn.microsoft.com/library/windows/hardware/ff551718)
+[**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-single-instance)
 
-[**IRP\_MN\_REGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff551731)
+[**IRP\_MN\_REGINFO**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-reginfo)
 
-[**IRP\_MN\_REGINFO\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff551734)
+[**IRP\_MN\_REGINFO\_EX**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-reginfo-ex)
 
 IRP\_MJ\_SYSTEM\_CONTROL is an IRP-based operation.
 
@@ -104,39 +104,39 @@ Requirements
 ## See also
 
 
-[**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620)
+[**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638)
+[**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT\_IS\_FASTIO\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544645)
+[**FLT\_IS\_FASTIO\_OPERATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
-[**FLT\_IS\_FS\_FILTER\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544648)
+[**FLT\_IS\_FS\_FILTER\_OPERATION**](https://docs.microsoft.com/previous-versions/ff544648(v=vs.85))
 
-[**FLT\_IS\_IRP\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544654)
+[**FLT\_IS\_IRP\_OPERATION**](https://docs.microsoft.com/previous-versions/ff544654(v=vs.85))
 
-[**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff544673)
+[**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters)
 
-[**IRP\_MN\_CHANGE\_SINGLE\_INSTANCE**](https://msdn.microsoft.com/library/windows/hardware/ff550831)
+[**IRP\_MN\_CHANGE\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-change-single-instance)
 
-[**IRP\_MN\_CHANGE\_SINGLE\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff550836)
+[**IRP\_MN\_CHANGE\_SINGLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-change-single-item)
 
-[**IRP\_MN\_DISABLE\_COLLECTION**](https://msdn.microsoft.com/library/windows/hardware/ff550848)
+[**IRP\_MN\_DISABLE\_COLLECTION**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-disable-collection)
 
-[**IRP\_MN\_DISABLE\_EVENTS**](https://msdn.microsoft.com/library/windows/hardware/ff550851)
+[**IRP\_MN\_DISABLE\_EVENTS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-disable-events)
 
-[**IRP\_MN\_ENABLE\_COLLECTION**](https://msdn.microsoft.com/library/windows/hardware/ff550857)
+[**IRP\_MN\_ENABLE\_COLLECTION**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-enable-collection)
 
-[**IRP\_MN\_ENABLE\_EVENTS**](https://msdn.microsoft.com/library/windows/hardware/ff550859)
+[**IRP\_MN\_ENABLE\_EVENTS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-enable-events)
 
-[**IRP\_MN\_EXECUTE\_METHOD**](https://msdn.microsoft.com/library/windows/hardware/ff550868)
+[**IRP\_MN\_EXECUTE\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-execute-method)
 
-[**IRP\_MN\_QUERY\_ALL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff551650)
+[**IRP\_MN\_QUERY\_ALL\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-all-data)
 
-[**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](https://msdn.microsoft.com/library/windows/hardware/ff551718)
+[**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-single-instance)
 
-[**IRP\_MN\_REGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff551731)
+[**IRP\_MN\_REGINFO**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-reginfo)
 
-[**IRP\_MN\_REGINFO\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff551734)
+[**IRP\_MN\_REGINFO\_EX**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-reginfo-ex)
 
  
 

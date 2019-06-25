@@ -42,17 +42,17 @@ Reserved. Must be set to zero.
 Remarks
 -------
 
-For information about how to use ECPs to associate extra information with a file when the file is created, see [Using Extra Create Parameters with an IRP\_MJ\_CREATE Operation](https://msdn.microsoft.com/library/windows/hardware/ff557261).
+For information about how to use ECPs to associate extra information with a file when the file is created, see [Using Extra Create Parameters with an IRP\_MJ\_CREATE Operation](https://docs.microsoft.com/windows-hardware/drivers/ifs/using-extra-create-parameters-with-an-irp-mj-create-operation).
 
-The OPLOCK\_KEY\_ECP\_CONTEXT structure is read-only. You should use it to retrieve information about the oplock key ECP only. For more information about this issue, see [System-Defined ECPs](https://msdn.microsoft.com/library/windows/hardware/ff556779).
+The OPLOCK\_KEY\_ECP\_CONTEXT structure is read-only. You should use it to retrieve information about the oplock key ECP only. For more information about this issue, see [System-Defined ECPs](https://docs.microsoft.com/windows-hardware/drivers/ifs/system-defined-ecps).
 
 The oplock key enables an application to open multiple handles to the same stream without breaking the application's own oplock. The oplock break only occurs after the application receives a sharing violation (STATUS\_SHARING\_VIOLATION).
 
-Oplocks are granted on stream handles when a stream is opened. Such a stream handle can be associated with an oplock key. A caller can explicitly provide the oplock key to the [**IoCreateFileEx**](https://msdn.microsoft.com/library/windows/hardware/ff548283) routine to create the stream handle. If the caller does not explicitly specify an oplock key when the caller creates the handle, the operating system treats the handle as having a unique oplock key associated with the handle, so that the handle's key differs from any other key on any other handle. If a file operation is received on a handle other than the one on which the oplock was granted, and the oplock key that is associated with the oplock's handle differs from the key that is associated with the operation's handle, and that operation is incompatible with the currently granted oplock, then that oplock is broken. The oplock breaks even if it is the same process or thread performing the incompatible operation. For example, if a process opens a stream for which an exclusive oplock is granted and the same process then opens the same stream again, by using a different (or no) oplock key, the exclusive oplock is broken immediately.
+Oplocks are granted on stream handles when a stream is opened. Such a stream handle can be associated with an oplock key. A caller can explicitly provide the oplock key to the [**IoCreateFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefileex) routine to create the stream handle. If the caller does not explicitly specify an oplock key when the caller creates the handle, the operating system treats the handle as having a unique oplock key associated with the handle, so that the handle's key differs from any other key on any other handle. If a file operation is received on a handle other than the one on which the oplock was granted, and the oplock key that is associated with the oplock's handle differs from the key that is associated with the operation's handle, and that operation is incompatible with the currently granted oplock, then that oplock is broken. The oplock breaks even if it is the same process or thread performing the incompatible operation. For example, if a process opens a stream for which an exclusive oplock is granted and the same process then opens the same stream again, by using a different (or no) oplock key, the exclusive oplock is broken immediately.
 
 Oplock keys are associated with handles when the handles are created. You can associate a handle with an oplock key even if no oplocks are granted.
 
-For more information about oplocks and oplock keys, see [Oplock Semantics Overview](https://msdn.microsoft.com/library/windows/hardware/ff551011).
+For more information about oplocks and oplock keys, see [Oplock Semantics Overview](https://docs.microsoft.com/windows-hardware/drivers/ifs/overview).
 
 Requirements
 ------------
@@ -77,7 +77,7 @@ Requirements
 ## See also
 
 
-[**IoCreateFileEx**](https://msdn.microsoft.com/library/windows/hardware/ff548283)
+[**IoCreateFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefileex)
 
  
 

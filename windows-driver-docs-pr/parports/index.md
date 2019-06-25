@@ -24,7 +24,7 @@ This section includes:
 
 [Vendor-Supplied Parallel Drivers](vendor-supplied-parallel-drivers.md)
 
-[Parallel Devices Reference](https://msdn.microsoft.com/library/windows/hardware/ff544269)
+[Parallel Devices Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
  
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver registers for notification of device interface arrival and removal events by calling [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526).
+A driver registers for notification of device interface arrival and removal events by calling [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification).
 
 The following information applies to calling this routine for device interface change notification:
 
@@ -27,13 +27,13 @@ The following information applies to calling this routine for device interface c
 
     This flag directs the PnP manager to register the *CallbackRoutine* for future device interface arrivals and departures of the specified class and to call the *CallbackRoutine* immediately for any relevant device interfaces that are already active.
 
-    A driver can call [**IoGetDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff549186) to get a list of existing interfaces of a specific class and then register its callback routine without this flag, but using the flag is easier and avoids a potential timing issue.
+    A driver can call [**IoGetDeviceInterfaces**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceinterfaces) to get a list of existing interfaces of a specific class and then register its callback routine without this flag, but using the flag is easier and avoids a potential timing issue.
 
 -   Specify a driver-defined *Context*, if appropriate, that the PnP manager will pass to the callback routine.
 
 A driver that opens a handle to a device in response to a device interface arrival notification should register for **EventCategoryTargetDeviceChange** events on the device. (See [Using PnP Target Device Change Notification](using-pnp-target-device-change-notification.md).)
 
-A driver cancels notification registration by calling [**IoUnregisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff550398) with the *NotificationEntry* returned by **IoRegisterPlugPlayNotification**.
+A driver cancels notification registration by calling [**IoUnregisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iounregisterplugplaynotification) with the *NotificationEntry* returned by **IoRegisterPlugPlayNotification**.
 
  
 

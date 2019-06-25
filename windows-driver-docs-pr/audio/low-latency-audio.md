@@ -41,7 +41,7 @@ Windows 10 includes changes to reduce the audio latency. The goals of this docu
 1. Describe the sources of audio latency in Windows.
 2. Explain the changes that reduce audio latency in the Windows 10 audio stack.
 3. Provide a reference on how application developers and hardware manufacturers can take advantage of the new infrastructure, in order to develop applications and drivers with low audio latency. This topic covers these items:
-4. The new [**AudioGraph**](https://msdn.microsoft.com/library/windows/apps/dn914176) API for interactive and media creation scenarios.
+4. The new [**AudioGraph**](https://docs.microsoft.com/uwp/api/Windows.Media.Audio.AudioGraph) API for interactive and media creation scenarios.
 5. Changes in WASAPI to support low latency.
 6. Enhancements in the driver DDIs.
 
@@ -142,15 +142,15 @@ Windows 10 has been enhanced in three areas to reduce latency:
    b. All the threads and interrupts that have been registered by the driver (using the new DDIs that are described in the section about driver resource registration).
    c. Some or all of the audio threads from the applications that request small buffers, as well as from all applications that share the same audio device graph (e.g. same signal processing mode) with any application that requested small buffers:
 4. AudioGraph callbacks on the streaming path.
-5. If the application uses WASAPI, then only the work items that were submitted to the [Real-Time Work Queue API](https://msdn.microsoft.com/library/windows/desktop/dn271897) or [**MFCreateMFByteStreamOnStreamEx**](https://msdn.microsoft.com/library/windows/desktop/hh162754) and were tagged as "Audio" or "ProAudio".
+5. If the application uses WASAPI, then only the work items that were submitted to the [Real-Time Work Queue API](https://docs.microsoft.com/windows/desktop/ProcThread/platform-work-queue-api) or [**MFCreateMFByteStreamOnStreamEx**](https://docs.microsoft.com/windows/desktop/api/mfidl/nf-mfidl-mfcreatemfbytestreamonstreamex) and were tagged as "Audio" or "ProAudio".
 
 ## <span id="API_Improvements"></span><span id="api_improvements"></span><span id="API_IMPROVEMENTS"></span>API Improvements
 
 
 The following two Windows 10 APIs provide low latency capabilities:
 
--   [**AudioGraph**](https://msdn.microsoft.com/library/windows/apps/dn914176)
--   [Windows Audio Session API (WASAPI)](https://msdn.microsoft.com/library/windows/desktop/dd371455.aspx)
+-   [**AudioGraph**](https://docs.microsoft.com/uwp/api/Windows.Media.Audio.AudioGraph)
+-   [Windows Audio Session API (WASAPI)](https://docs.microsoft.com/windows/desktop/CoreAudio/wasapi)
 
 This is how an application developer can determine which of the two APIs to use:
 
@@ -167,7 +167,7 @@ The following sections will explain the low latency capabilities in each API. As
 
 AudioGraph is a new Universal Windows Platform API in Windows 10 that is aimed at realizing interactive and music creation scenarios with ease. AudioGraph is available in several programming languages (C++, C#, JavaScript) and has a simple and feature-rich programming model.
 
-In order to target low latency scenarios, AudioGraph provides the [AudioGraphSettings::QuantumSizeSelectionMode property](https://msdn.microsoft.com/library/windows/apps/windows.media.audio.audiographsettings.quantumsizeselectionmode.aspx). This property can any of the following values shown in the table below:
+In order to target low latency scenarios, AudioGraph provides the [AudioGraphSettings::QuantumSizeSelectionMode property](https://docs.microsoft.com/uwp/api/Windows.Media.Audio.AudioGraphSettings#Windows_Media_Audio_AudioGraphSettings_QuantumSizeSelectionMode). This property can any of the following values shown in the table below:
 
 <table>
 <colgroup>
@@ -214,9 +214,9 @@ Starting in Windows 10 , WASAPI has been enhanced to:
 
 The above features will be available on all Windows devices. However, certain devices with enough resources and updated drivers will provide a better user experience than others.
 
-The above functionality is provided by a new interface, called [**IAudioClient3**](https://msdn.microsoft.com/library/windows/desktop/dn911487), which derives from [**IAudioClient2**](https://msdn.microsoft.com/library/windows/desktop/hh404179).
+The above functionality is provided by a new interface, called [**IAudioClient3**](https://docs.microsoft.com/windows/desktop/api/audioclient/nn-audioclient-iaudioclient3), which derives from [**IAudioClient2**](https://docs.microsoft.com/windows/desktop/api/audioclient/nn-audioclient-iaudioclient2).
 
-[**IAudioClient3**](https://msdn.microsoft.com/library/windows/desktop/dn911487) defines the following 3 methods:
+[**IAudioClient3**](https://docs.microsoft.com/windows/desktop/api/audioclient/nn-audioclient-iaudioclient3) defines the following 3 methods:
 
 <table>
 <colgroup>
@@ -330,7 +330,7 @@ if (AUDCLNT_E_ENGINE_FORMAT_LOCKED == hr) {
 }
 ```
 
-Also, it is recommended for applications that use WASAPI to also use the [Real-Time Work Queue API](https://msdn.microsoft.com/library/windows/desktop/dn271897) or the [**MFCreateMFByteStreamOnStreamEx**](https://msdn.microsoft.com/library/windows/desktop/hh162754) to create work items and tag them as Audio or Pro Audio, instead of their own threads. This will allow the OS to manage them in a way that will avoid interference non-audio subsystems. In contrast, all AudioGraph threads are automatically managed correctly by the OS. The following code snippet from the WASAPIAudio sample shows how to use the MF Work Queue APIs.
+Also, it is recommended for applications that use WASAPI to also use the [Real-Time Work Queue API](https://docs.microsoft.com/windows/desktop/ProcThread/platform-work-queue-api) or the [**MFCreateMFByteStreamOnStreamEx**](https://docs.microsoft.com/windows/desktop/api/mfidl/nf-mfidl-mfcreatemfbytestreamonstreamex) to create work items and tag them as Audio or Pro Audio, instead of their own threads. This will allow the OS to manage them in a way that will avoid interference non-audio subsystems. In contrast, all AudioGraph threads are automatically managed correctly by the OS. The following code snippet from the WASAPIAudio sample shows how to use the MF Work Queue APIs.
 
 ```cpp
 // Specify Source Reader Attributes 
@@ -527,8 +527,8 @@ static struct
 
 See the following topics for more in-depth information regarding these structures:
 
--   [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS structure**](https://msdn.microsoft.com/library/windows/hardware/dn965561)
--   [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT structure**](https://msdn.microsoft.com/library/windows/hardware/dn965562)
+-   [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS structure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints)
+-   [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT structure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint)
 
 Also, the sysvad sample (<https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>) shows how to use these properties, in order for a driver to declare the minimum buffer for each mode.
 
@@ -543,8 +543,8 @@ The DDIs that are described in this section allow the driver to:
 
 This DDI is very useful in the case, where an DSP is used. However, a standard HD Audio driver or other simple circular DMA buffer designs might not find much benefit in these new DDIs listed here.
 
--   [IMiniportWaveRTInputStream](https://msdn.microsoft.com/library/windows/hardware/dn946532)
--   [IMiniportWaveRTOutputStream](https://msdn.microsoft.com/library/windows/hardware/dn946534)
+-   [IMiniportWaveRTInputStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavertinputstream)
+-   [IMiniportWaveRTOutputStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavertoutputstream)
 
 Several of the driver routines return Windows performance counter timestamps reflecting the time at which samples are captured or presented by the device.
 
@@ -581,15 +581,15 @@ Notes:
 -   HDAudio miniport function drivers that are enumerated by the inbox HDAudio bus driver hdaudbus.sys do not need to register the HDAudio interrupts, as this is already done by hdaudbus.sys. However, if the miniport driver creates its own threads, then it needs to register them.
 -   Drivers that link with Portcls only for the purpose of registering streaming resources must update their INFs to include/needs wdmaudio.inf and copy portcls.sys (and dependent files). A new INF copy section is defined in wdmaudio.inf to only copy those files.
 -   Audio drivers that only run in Windows 10 can hard-link to:
-    -   [**PcAddStreamResource**](https://msdn.microsoft.com/library/windows/hardware/mt298188)
-    -   [**PcRemoveStreamResource**](https://msdn.microsoft.com/library/windows/hardware/mt298189)
+    -   [**PcAddStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcaddstreamresource)
+    -   [**PcRemoveStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcremovestreamresource)
 -   Audio drivers that must run on a down-level OS can use the following interface (the miniport can call QueryInterface for the IID\_IPortClsStreamResourceManager interface and register its resources only when PortCls supports the interface).
-    -   [IPortClsStreamResourceManager](https://msdn.microsoft.com/library/windows/hardware/mt270106)
-        -   [**AddStreamResource**](https://msdn.microsoft.com/library/windows/hardware/mt270107)
-        -   [**RemoveStreamResource**](https://msdn.microsoft.com/library/windows/hardware/mt270108)
+    -   [IPortClsStreamResourceManager](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportclsstreamresourcemanager)
+        -   [**AddStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportclsstreamresourcemanager-addstreamresource)
+        -   [**RemoveStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportclsstreamresourcemanager-removestreamresource)
 -   These DDIs, use this enumeration and structure:
-    -   [**PcStreamResourceType**](https://msdn.microsoft.com/library/windows/hardware/mt298190)
-    -   [**PCSTREAMRESOURCE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/mt298191)
+    -   [**PcStreamResourceType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ne-portcls-_pcstreamresourcetype)
+    -   [**PCSTREAMRESOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-_pcstreamresource_descriptor)
 
 Finally, drivers that link-in PortCls for the sole purpose of registering resources must add the following two lines in their inf's DDInstall section. Audio miniport drivers do not need this because they already have include/needs in wdmaudio.inf.
 

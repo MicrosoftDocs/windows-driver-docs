@@ -81,7 +81,7 @@ Requirements
 
 [**KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED**](ksevent-bda-program-flow-status-changed.md)
 
-[**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
+[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
 
  
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_61883_CLASS
 
 
-The GUID_61883_CLASS [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for devices in the 61883 [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The GUID_61883_CLASS [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for devices in the 61883 [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The GUID_61883_CLASS [device interface class](https://msdn.microsoft.com/library
 Remarks
 -------
 
-Drivers for devices in the 61883 device setup class register instances of this device interface class to notify the operating system and applications of the presence of 61883 devices. The 61883 device interface class includes IEEE 1394 devices that support the IEC-61883 protocol. For information about 61883 devices and drivers, see [IEC-61883 Client Drivers](https://msdn.microsoft.com/library/windows/hardware/ff537188).
+Drivers for devices in the 61883 device setup class register instances of this device interface class to notify the operating system and applications of the presence of 61883 devices. The 61883 device interface class includes IEEE 1394 devices that support the IEC-61883 protocol. For information about 61883 devices and drivers, see [IEC-61883 Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ieee/iec-61883-client-drivers).
 
 For information about the device setup class for 1394 bus devices, see [**BUS1394_CLASS_GUID**](bus1394-class-guid.md).
 

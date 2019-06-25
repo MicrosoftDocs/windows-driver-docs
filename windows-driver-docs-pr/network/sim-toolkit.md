@@ -56,7 +56,7 @@ OEMs can modify the display period for certain dialogs or messages if the defaul
 
 -   GETINKEY: 60 seconds
 
-For information about these customizations, see [Customize the SIM toolkit](https://msdn.microsoft.com/library/windows/hardware/mt629102).
+For information about these customizations, see [Customize the SIM toolkit](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/customize-the-sim-toolkit).
 
 ### Example of processing a SIM toolkit command
 

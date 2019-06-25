@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # FLT\_PARAMETERS for IRP\_MJ\_DIRECTORY\_CONTROL union
 
 
-Union component used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638) structure for the operation is [**IRP\_MJ\_DIRECTORY\_CONTROL**](irp-mj-directory-control.md).
+Union component used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP\_MJ\_DIRECTORY\_CONTROL**](irp-mj-directory-control.md).
 
 Syntax
 ------
@@ -61,21 +61,21 @@ Union component used for IRP\_MN\_QUERY\_DIRECTORY operations.
 Length, in bytes, of the buffer that the **QueryDirectory.DirectoryBuffer** member points to.
 
 **FileName**  
-Pointer to a [**UNICODE\_STRING**](https://msdn.microsoft.com/library/windows/hardware/ff564879) structure that contains the name of a file within the specified directory.
+Pointer to a [**UNICODE\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_unicode_string) structure that contains the name of a file within the specified directory.
 
 **FileInformationClass**  
 Specifies one of the values described below.
 
 | Value                          | Meaning                                                                                                                   |
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| FileBothDirectoryInformation   | Return a [**FILE\_BOTH\_DIR\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540235) structure for each file.                      |
-| FileDirectoryInformation       | Return a [**FILE\_DIRECTORY\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540248) structure for each file.                     |
-| FileFullDirectoryInformation   | Return a [**FILE\_FULL\_DIR\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540289) structure for each file.                      |
-| FileIdBothDirectoryInformation | Return a [**FILE\_ID\_BOTH\_DIR\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540303) structure for each file.               |
-| FileIdFullDirectoryInformation | Return a [**FILE\_ID\_FULL\_DIR\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540310) structure for each file.               |
-| FileNamesInformation           | Return a [**FILE\_NAMES\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540329) structure for each file.                             |
-| FileObjectIdInformation        | Return a [**FILE\_OBJECTID\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540335) structure for each file.                       |
-| FileReparsePointInformation    | Return a single [**FILE\_REPARSE\_POINT\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540354) structure for the directory. |
+| FileBothDirectoryInformation   | Return a [**FILE\_BOTH\_DIR\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_both_dir_information) structure for each file.                      |
+| FileDirectoryInformation       | Return a [**FILE\_DIRECTORY\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_directory_information) structure for each file.                     |
+| FileFullDirectoryInformation   | Return a [**FILE\_FULL\_DIR\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_full_dir_information) structure for each file.                      |
+| FileIdBothDirectoryInformation | Return a [**FILE\_ID\_BOTH\_DIR\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_id_both_dir_information) structure for each file.               |
+| FileIdFullDirectoryInformation | Return a [**FILE\_ID\_FULL\_DIR\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_id_full_dir_information) structure for each file.               |
+| FileNamesInformation           | Return a [**FILE\_NAMES\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_names_information) structure for each file.                             |
+| FileObjectIdInformation        | Return a [**FILE\_OBJECTID\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_objectid_information) structure for each file.                       |
+| FileReparsePointInformation    | Return a single [**FILE\_REPARSE\_POINT\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_reparse_point_information) structure for the directory. |
 
  
 
@@ -130,7 +130,7 @@ Address of an MDL that describes the buffer that the **NotifyDirectory.Directory
 Remarks
 -------
 
-The [**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff544673) structure for IRP\_MJ\_DIRECTORY\_CONTROL operations contains the parameters for an IRP-based directory-control-information operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
+The [**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_DIRECTORY\_CONTROL operations contains the parameters for an IRP-based directory-control-information operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
 
 IRP\_MJ\_DIRECTORY\_CONTROL is an IRP-based operation.
 
@@ -153,43 +153,43 @@ Requirements
 ## See also
 
 
-[**FILE\_BOTH\_DIR\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540235)
+[**FILE\_BOTH\_DIR\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_both_dir_information)
 
-[**FILE\_DIRECTORY\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540248)
+[**FILE\_DIRECTORY\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_directory_information)
 
-[**FILE\_FULL\_DIR\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540289)
+[**FILE\_FULL\_DIR\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_full_dir_information)
 
-[**FILE\_ID\_BOTH\_DIR\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540303)
+[**FILE\_ID\_BOTH\_DIR\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_id_both_dir_information)
 
-[**FILE\_ID\_FULL\_DIR\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540310)
+[**FILE\_ID\_FULL\_DIR\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_id_full_dir_information)
 
-[**FILE\_NAMES\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540329)
+[**FILE\_NAMES\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_names_information)
 
-[**FILE\_OBJECTID\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540335)
+[**FILE\_OBJECTID\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_objectid_information)
 
-[**FILE\_REPARSE\_POINT\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540354)
+[**FILE\_REPARSE\_POINT\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_reparse_point_information)
 
-[**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620)
+[**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638)
+[**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT\_IS\_FASTIO\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544645)
+[**FLT\_IS\_FASTIO\_OPERATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
-[**FLT\_IS\_FS\_FILTER\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544648)
+[**FLT\_IS\_FS\_FILTER\_OPERATION**](https://docs.microsoft.com/previous-versions/ff544648(v=vs.85))
 
-[**FLT\_IS\_IRP\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544654)
+[**FLT\_IS\_IRP\_OPERATION**](https://docs.microsoft.com/previous-versions/ff544654(v=vs.85))
 
-[**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff544673)
+[**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters)
 
-[**FltNotifyFilterChangeDirectory**](https://msdn.microsoft.com/library/windows/hardware/ff543377)
+[**FltNotifyFilterChangeDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltnotifyfilterchangedirectory)
 
-[**FsRtlNotifyFilterChangeDirectory**](https://msdn.microsoft.com/library/windows/hardware/ff547010)
+[**FsRtlNotifyFilterChangeDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterchangedirectory)
 
-[**FsRtlNotifyFilterReportChange**](https://msdn.microsoft.com/library/windows/hardware/ff547018)
+[**FsRtlNotifyFilterReportChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterreportchange)
 
-[**FsRtlNotifyFullChangeDirectory**](https://msdn.microsoft.com/library/windows/hardware/ff547026)
+[**FsRtlNotifyFullChangeDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory)
 
-[**FsRtlNotifyFullReportChange**](https://msdn.microsoft.com/library/windows/hardware/ff547041)
+[**FsRtlNotifyFullReportChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullreportchange)
 
 [**IRP\_MJ\_DIRECTORY\_CONTROL**](irp-mj-directory-control.md)
 

@@ -19,9 +19,9 @@ Access to a device is controlled by a security descriptor (and the ACL it contai
 
 When a WDM driver (other than certain bus drivers) creates a device object, the Plug and Play manager determines a security descriptor for the device. The order of operations is as follows.
 
-1.  The PnP manager calls the driver's [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine.
+1.  The PnP manager calls the driver's [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine.
 
-2.  The driver's *AddDevice* routine calls [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) to create the device object and attach it to the device object stack.
+2.  The driver's *AddDevice* routine calls [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice) to create the device object and attach it to the device object stack.
 
 3.  The PnP manager updates the security descriptor for the newly-created device object.
 
@@ -41,7 +41,7 @@ If a device is operated in raw mode, then the PnP manager cannot determine a sec
 
 ### Controlling Device Access for WDM Bus Drivers
 
-A WDM bus driver must provide a security descriptor for the PDO of every device that can be operated in raw mode. Use [**IoCreateDeviceSecure**](https://msdn.microsoft.com/library/windows/hardware/ff548407) to create the device object with a security descriptor.
+A WDM bus driver must provide a security descriptor for the PDO of every device that can be operated in raw mode. Use [**IoCreateDeviceSecure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) to create the device object with a security descriptor.
 
 If the bus driver does not operate a device in raw mode, then it is not required to supply a security descriptor. The PnP manager determines the security descriptor, as described above. The bus driver can supply a security descriptor if it must ensure that its PDOs have stricter security settings than the default descriptor. Any descriptor specified by the bus driver is overridden by settings in the registry.
 

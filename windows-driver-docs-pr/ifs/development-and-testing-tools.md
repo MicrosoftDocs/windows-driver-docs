@@ -25,7 +25,7 @@ The Fltmc.exe control program is a command-line utility for common minifilter dr
 
 ### <span id="_fltkd_Debugger_Extension"></span><span id="_fltkd_debugger_extension"></span><span id="_FLTKD_DEBUGGER_EXTENSION"></span>!fltkd Debugger Extension
 
-The !fltkd debugger extension is provided in the [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) tools. Commonly used commands include the following:
+The !fltkd debugger extension is provided in the [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) tools. Commonly used commands include the following:
 
 <table>
 <colgroup>
@@ -76,7 +76,7 @@ For additional debugging help, test the minifilter driver with the debug version
 
 ### <span id="Filter_Verifier"></span><span id="filter_verifier"></span><span id="FILTER_VERIFIER"></span>Filter Verifier
 
-Filter Verifier is an [I/O Verification](https://msdn.microsoft.com/library/windows/hardware/ff548045) option in [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) that validates minifilter driver usage of filter manager functions. Filter Verifier is installed with the filter manager. Developers should always develop minifilter drivers with Driver Verifier and Filter Verifier enabled.
+Filter Verifier is an [I/O Verification](https://docs.microsoft.com/windows-hardware/drivers/devtest/i-o-verification) option in [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) that validates minifilter driver usage of filter manager functions. Filter Verifier is installed with the filter manager. Developers should always develop minifilter drivers with Driver Verifier and Filter Verifier enabled.
 
 To use Filter Verifier, specify the minifilter driver's name and enable the I/O Verification option in Driver Verifier (Verifier.exe). Verification starts when the minifilter driver registers with the filter manager.
 

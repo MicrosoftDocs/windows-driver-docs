@@ -80,7 +80,7 @@ The user’s language preference is sent using the Accept-Language header, descr
 
 ## Web portal design policies
 
-To ensure the best user experience on Windows, you should adhere to the policies in this section when developing the MO Direct experience. These policies are supplementary to the terms and conditions of the *Mobile Plans* Partner Addendum, [Windows App Developer Agreement](https://msdn.microsoft.com/library/windows/apps/hh694058) and [Microsoft Store Policies](https://msdn.microsoft.com/library/windows/apps/dn764944).
+To ensure the best user experience on Windows, you should adhere to the policies in this section when developing the MO Direct experience. These policies are supplementary to the terms and conditions of the *Mobile Plans* Partner Addendum, [Windows App Developer Agreement](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement) and [Microsoft Store Policies](https://docs.microsoft.com/legal/windows/agreements/store-policies).
 
 ### Business functions
 

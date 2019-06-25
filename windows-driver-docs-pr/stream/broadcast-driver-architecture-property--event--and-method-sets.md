@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_broadcast_driver_architecture_property_event_and_method_sets_ks"></span><span id="DDK_BROADCAST_DRIVER_ARCHITECTURE_PROPERTY_EVENT_AND_METHOD_SETS_KS"></span>
 
 
-This section documents the property, event, and method sets that a BDA minidriver implements. These sets are defined in *bdamedia.h*. The BDA minidriver can dispatch some of the properties and methods in these sets to default implementations in the BDA support library. For more information, see [Broadcast Driver Architecture Minidrivers](https://msdn.microsoft.com/library/windows/hardware/ff556588) on how the minidriver can use the BDA support library of functions to provide default handling of these sets.
+This section documents the property, event, and method sets that a BDA minidriver implements. These sets are defined in *bdamedia.h*. The BDA minidriver can dispatch some of the properties and methods in these sets to default implementations in the BDA support library. For more information, see [Broadcast Driver Architecture Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/stream/broadcast-driver-architecture-minidrivers) on how the minidriver can use the BDA support library of functions to provide default handling of these sets.
 
 The following sections provide more information about the BDA property, event, and method sets:
 

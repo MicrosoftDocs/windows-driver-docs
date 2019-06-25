@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 # INF AddEventProvider Directive
 
-An **AddEventProvider** directive is used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). It specifies characteristics of the [Event Tracing for Windows](https://msdn.microsoft.com/library/windows/desktop/aa363668) (ETW) providers associated with drivers. This directive is supported for Windows 10 version 1809 and later.
+An **AddEventProvider** directive is used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). It specifies characteristics of the [Event Tracing for Windows](https://docs.microsoft.com/windows/desktop/ETW/about-event-tracing) (ETW) providers associated with drivers. This directive is supported for Windows 10 version 1809 and later.
 
 ```ini
 [DDInstall.Events] 
@@ -56,12 +56,12 @@ ResourceFile=path-to-file
 ...
 ```
 
-Each *event-provider-install-section* must provide **ProviderName** and **ResourceFile**. Optionally, specify a list of channels for the provider using any combination of **ImportChannel(s)** and **AddChannel(s)**, each on a separate line. For more information about channel lists in an INF file, see [**Specifying a Channel List**](#specifying-a-channel-list) below. For more information about [Windows Event Log](https://msdn.microsoft.com/library/windows/desktop/aa385780) channels, see [Defining Channels](https://msdn.microsoft.com/library/windows/desktop/dd996911).
+Each *event-provider-install-section* must provide **ProviderName** and **ResourceFile**. Optionally, specify a list of channels for the provider using any combination of **ImportChannel(s)** and **AddChannel(s)**, each on a separate line. For more information about channel lists in an INF file, see [**Specifying a Channel List**](#specifying-a-channel-list) below. For more information about [Windows Event Log](https://docs.microsoft.com/windows/desktop/WES/windows-event-log) channels, see [Defining Channels](https://docs.microsoft.com/windows/desktop/WES/defining-channels).
 
 ### Event-Provider-Install Section Entries and Values
 
 <a href="" id="providername-name"></a>**ProviderName**=*name*  
-Specifies the name of the provider. The name cannot be longer than 255 characters, and cannot contain the characters: '>', '<', '&', '"', '|', '\', ':', ''', '?', '*', or characters with ASCII values less than 31. In addition, the name must follow the general constraints on file and registry key names. These constraints can be found at [Naming a File](https://msdn.microsoft.com/library/windows/desktop/aa365247) and [Registry Element Size Limits](https://msdn.microsoft.com/library/windows/desktop/ms724872).
+Specifies the name of the provider. The name cannot be longer than 255 characters, and cannot contain the characters: '>', '<', '&', '"', '|', '\', ':', ''', '?', '*', or characters with ASCII values less than 31. In addition, the name must follow the general constraints on file and registry key names. These constraints can be found at [Naming a File](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file) and [Registry Element Size Limits](https://docs.microsoft.com/windows/desktop/SysInfo/registry-element-size-limits).
 
 <a href="" id="resourcefile-path-to-file"></a>**ResourceFile**=*path-to-file*  
 Specifies the path to the exe or dll that contains the provider's metadata resources, expressed as %dirid%\filename.
@@ -82,7 +82,7 @@ Optionally specifies a channel with a sub-directive that optionally references a
 
 ### Specifying a Channel List
 
-You can specify a list of channels for the provider within its *event-provider-install-section*. You can import a channel or add a channel to the list and the order of these channels is preserved. For more information, see [Defining Channels](https://msdn.microsoft.com/library/windows/desktop/dd996911).
+You can specify a list of channels for the provider within its *event-provider-install-section*. You can import a channel or add a channel to the list and the order of these channels is preserved. For more information, see [Defining Channels](https://docs.microsoft.com/windows/desktop/WES/defining-channels).
 
 The *channel-name* must be unique within the list of channels that the provider uses. The *channel-name* must be less than 255 characters and cannot contain the following characters: '>', '<', '&', '"', '|', '\', ':', '`', '?', '*', or characters with ASCII values less than 31.
 
@@ -114,7 +114,7 @@ An **AddChannel** sub-directive can also reference a *channel-install-section* e
 [LoggingAutoBackup=0|1]
 ```
 
-For more information about channel attributes, see [ChannelType](https://msdn.microsoft.com/library/windows/desktop/aa382741) defined within [EventManifest Schema](https://msdn.microsoft.com/library/windows/desktop/aa384043).
+For more information about channel attributes, see [ChannelType](https://docs.microsoft.com/windows/desktop/WES/eventmanifestschema-channeltype-complextype) defined within [EventManifest Schema](https://docs.microsoft.com/windows/desktop/WES/eventmanifestschema-schema).
 
 ### Channel-Install Section Entries and Values
 
@@ -128,7 +128,7 @@ Optionally specifies the default access permissions for the channel as one of th
 <a href="" id="0x3--Custom-"></a>**0x3** (Custom)  
 
 <a href="" id="access-access-string"></a>**Access**=*access-string*  
-Optionally specifies a [Security Descriptor Definition Language](https://msdn.microsoft.com/library/windows/desktop/aa379567) (SDDL) access descriptor that controls access to the log file that backs the channel.
+Optionally specifies a [Security Descriptor Definition Language](https://docs.microsoft.com/windows/desktop/SecAuthZ/security-descriptor-definition-language) (SDDL) access descriptor that controls access to the log file that backs the channel.
 
 This string controls read access to the file (the write permissions are ignored) if the **Isolation** is set to **0x1** (Application) or **0x2** (System), while it controls write access to the channel and read access to the file if the isolation attribute is set to **0x3** (Custom).
 

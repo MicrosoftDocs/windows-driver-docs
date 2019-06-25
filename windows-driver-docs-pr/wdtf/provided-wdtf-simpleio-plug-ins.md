@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Provided WDTF Simple I/O plug-ins
 
-Simple I/O plug-ins are extensions to the Windows Driver Test Framework (WDTF) that implement generic device-specific I/O functionality. If a plug-in exists for the type of device being tested, the [Device Fundamental tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests) use the WDTF Simple I/O interfaces to test I/O.
+Simple I/O plug-ins are extensions to the Windows Driver Test Framework (WDTF) that implement generic device-specific I/O functionality. If a plug-in exists for the type of device being tested, the [Device Fundamental tests](https://docs.microsoft.com/windows-hardware/drivers) use the WDTF Simple I/O interfaces to test I/O.
 
 The following table shows the device types that have Simple I/O plug-ins. The table also indicates if there are specific requirements for testing the device. These are the same requirements you need to follow when you use the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893).
 
@@ -88,7 +88,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 #### Type of I/O plug-in performs
 
-* Uses [**BluetoothFindFirstDevice function**](https://msdn.microsoft.com/library/windows/desktop/aa362784) to find a Bluetooth device.
+* Uses [**BluetoothFindFirstDevice function**](https://docs.microsoft.com/windows/desktop/api/bluetoothapis/nf-bluetoothapis-bluetoothfindfirstdevice) to find a Bluetooth device.
 
 ### CDROM
 
@@ -100,13 +100,13 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 #### Type of I/O plug-in performs
 
-* Finds files on the CD-ROM and performs read operation using the Win32 [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) API.
+* Finds files on the CD-ROM and performs read operation using the Win32 [**ReadFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-readfile) API.
 
 #### How to triage test failures
 
 * On the test computer, navigate to the CD/DVD drive in question and confirm you can access the contents of the drives.
 * The CD-Rom Simple I/O plug-in searches for files on CD/DVD to use to perform reads from. Ensure the CD/DVD has files encoded on disk.
-* This Simple I/O plug uses the Win32 [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858), [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747), [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) functions. Error returned are most likely Win32 error codes from these APIs.
+* This Simple I/O plug uses the Win32 [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WriteFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-writefile), [**ReadFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-readfile) functions. Error returned are most likely Win32 error codes from these APIs.
 
 ### Disk
 
@@ -172,7 +172,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 #### Type of I/O plug-in performs
 
-* Uses [**IMbnInterface interface**](https://msdn.microsoft.com/library/windows/desktop/dd430406) and calls GetHomeProvider, [**IMbnInterface::GetInterfaceCapability method**](https://msdn.microsoft.com/library/windows/desktop/dd323100), and [**IMbnInterface::GetReadyState method**](https://msdn.microsoft.com/library/windows/desktop/dd323102) APIs to exercise the device.
+* Uses [**IMbnInterface interface**](https://docs.microsoft.com/windows/desktop/api/mbnapi/nn-mbnapi-imbninterface) and calls GetHomeProvider, [**IMbnInterface::GetInterfaceCapability method**](https://docs.microsoft.com/windows/desktop/api/mbnapi/nf-mbnapi-imbninterface-getinterfacecapability), and [**IMbnInterface::GetReadyState method**](https://docs.microsoft.com/windows/desktop/api/mbnapi/nf-mbnapi-imbninterface-getreadystate) APIs to exercise the device.
 
 #### How to triage test failures
 
@@ -227,13 +227,13 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 #### Type of I/O plug-in performs
 
-* Creates a directory called WDTF\_Volume\_IO and creates a file called SimpleIO.tmp. The I/O is performed by calling [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**WriteFile**](https://msdn.microsoft.com/library/aa365747) APIs to this file.
+* Creates a directory called WDTF\_Volume\_IO and creates a file called SimpleIO.tmp. The I/O is performed by calling [**ReadFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-readfile) and [**WriteFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-writefile) APIs to this file.
 
 #### How to triage test failures
 
 * On the test computer, navigate to the drive in question and confirm you can access the contents of the drive.
 * Attempt to save a file to the drive. Ensure you can save and access it readily.
-* This Simple I/O plug uses the Win32 [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858), [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747), [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) functions. Error returned are most likely Win32 error codes from these APIs.
+* This Simple I/O plug uses the Win32 [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WriteFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-writefile), [**ReadFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-readfile) functions. Error returned are most likely Win32 error codes from these APIs.
 
 ### Webcam
 
@@ -283,7 +283,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 ## Device Fundamental tests that have specific device configuration requirements
 
-Before you run the following [Device Fundamental tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests), the devices on the test computer must be configured according to the requirements described for the specific device types. See the list of [the provided Simple I/O plug-ins and device requirements.](#provided-simple-io-plugins-and-device-requirements-for-testing-and-tips-for-troubleshooting)
+Before you run the following [Device Fundamental tests](https://docs.microsoft.com/windows-hardware/drivers), the devices on the test computer must be configured according to the requirements described for the specific device types. See the list of [the provided Simple I/O plug-ins and device requirements.](#provided-simple-io-plugins-and-device-requirements-for-testing-and-tips-for-troubleshooting)
 
 * PCI Root Port Surprise Remove Test (PCI devices only)
 * Device Path Exerciser Test (Certification)
@@ -296,8 +296,8 @@ Before you run the following [Device Fundamental tests](https://msdn.microsoft.c
 
 ## Related topics
 
-[Device Fundamentals Tests](https://msdn.microsoft.com/library/windows/hardware/jj673011)  
-[How to How to test a driver at runtime using Visual Studio](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver_at_runtime)  
-[How to How to test a driver at runtime from a Command Prompt](https://msdn.microsoft.com/windows-drivers/develop/how_to_test_a_driver_at_runtime_from_a_command_prompt)  
-[How to select and configure the Device Fundamentals tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)  
-[Troubleshooting the Device Fundamentals tests](https://msdn.microsoft.com/windows-drivers/develop/troubleshooting_the_device_fundamental_tests)  
+[Device Fundamentals Tests](https://docs.microsoft.com/windows-hardware/drivers/devtest/device-fundamentals-tests)  
+[How to How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers)  
+[How to How to test a driver at runtime from a Command Prompt](https://docs.microsoft.com/windows-hardware/drivers)  
+[How to select and configure the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers)  
+[Troubleshooting the Device Fundamentals tests](https://docs.microsoft.com/windows-hardware/drivers)  

@@ -70,7 +70,7 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_RemoveLink\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566265)
+[**SM\_RemoveLink\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_removelink_out)
 
  
 

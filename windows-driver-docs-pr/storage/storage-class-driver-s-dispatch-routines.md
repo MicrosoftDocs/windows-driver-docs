@@ -24,7 +24,7 @@ A storage class driver must also have a [**DispatchPower**](https://docs.microso
 
 A storage class driver must have a [**DispatchShutdown**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine and possibly a [**DispatchFlushBuffers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine if its device caches data internally, if its device might be attached to a bus driven by an HBA that caches data internally, or if a file system is layered above the class driver. To maintain data integrity, such a cache should be flushed to the device before the system is shut down.
 
-See also [Writing Dispatch Routines](https://msdn.microsoft.com/library/windows/hardware/ff566407) for more information about general requirements for dispatch routines.
+See also [Writing Dispatch Routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-dispatch-routines) for more information about general requirements for dispatch routines.
 
  
 

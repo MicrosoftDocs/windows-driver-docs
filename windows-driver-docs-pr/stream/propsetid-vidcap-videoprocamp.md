@@ -40,7 +40,7 @@ Prior to USB video class, this enumeration contained the following property item
 
 [**KSPROPERTY\_VIDEOPROCAMP\_GAIN**](ksproperty-videoprocamp-gain.md)
 
-With the introduction of the [USB Video Class Driver](https://msdn.microsoft.com/library/windows/hardware/ff568649), the following properties were added to the KSPROPERTY\_VIDCAP\_VIDEOPROCAMP enumeration:
+With the introduction of the [USB Video Class Driver](https://docs.microsoft.com/windows-hardware/drivers/stream/usb-video-class-driver), the following properties were added to the KSPROPERTY\_VIDCAP\_VIDEOPROCAMP enumeration:
 
 [**KSPROPERTY\_VIDEOPROCAMP\_DIGITAL\_MULTIPLIER**](ksproperty-videoprocamp-digital-multiplier.md)
 

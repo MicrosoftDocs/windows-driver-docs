@@ -110,7 +110,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
     </tbody>
     </table>
 
-    This statement defines a structure that is used to save the length and address of a variable-length buffer. This structure is initialized in the LOG\_LENSTR macro, and is local to each invocation of [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) in which the HEXDUMP complex type is used within the *FormatString* parameter.
+    This statement defines a structure that is used to save the length and address of a variable-length buffer. This structure is initialized in the LOG\_LENSTR macro, and is local to each invocation of [**DoTraceMessage**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) in which the HEXDUMP complex type is used within the *FormatString* parameter.
 
 3.  <span codelanguage=""></span>
     <table>
@@ -124,7 +124,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
     </tbody>
     </table>
 
-    This statement defines the macro that is used to initialize an xstr\_t structure for the variable-length buffer. You must use this macro to pass the variable-length buffer in the *VariableList* parameter of [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918).
+    This statement defines the macro that is used to initialize an xstr\_t structure for the variable-length buffer. You must use this macro to pass the variable-length buffer in the *VariableList* parameter of [**DoTraceMessage**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)).
 
 4.  <span codelanguage=""></span>
     <table>
@@ -145,7 +145,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
     -   The first call to WPP\_LOGPAIR passes the size of the variable-length buffer.
     -   The second call to WPP\_LOGPAIR passes the address of the buffer itself.
 
-    **Note**  This macro requires that an xstr\_t structure has been initialized for the variable-length buffer by a call to LOG\_LENSTR. As a result, you must pass the variable-length buffer to [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) through the LOG\_LENSTR macro.
+    **Note**  This macro requires that an xstr\_t structure has been initialized for the variable-length buffer by a call to LOG\_LENSTR. As a result, you must pass the variable-length buffer to [**DoTraceMessage**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) through the LOG\_LENSTR macro.
 
      
 
