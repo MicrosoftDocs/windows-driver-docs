@@ -40,7 +40,7 @@ The NDIS\_LINK\_PARAMETERS structure is defined as follows:
 This structure contains the following members:
 
 <a href="" id="header"></a>**Header**  
-The [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588) structure for the NDIS\_LINK\_PARAMETERS structure. Set the **Type** member of the structure that **Header** specifies to NDIS\_OBJECT\_TYPE\_DEFAULT, the **Revision** member to NDIS\_LINK\_PARAMETERS\_REVISION\_1, and the **Size** member to NDIS\_SIZEOF\_LINK\_PARAMETERS\_REVISION\_1.
+The [**NDIS\_OBJECT\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_object_header) structure for the NDIS\_LINK\_PARAMETERS structure. Set the **Type** member of the structure that **Header** specifies to NDIS\_OBJECT\_TYPE\_DEFAULT, the **Revision** member to NDIS\_LINK\_PARAMETERS\_REVISION\_1, and the **Size** member to NDIS\_SIZEOF\_LINK\_PARAMETERS\_REVISION\_1.
 
 <a href="" id="mediaduplexstate"></a>**MediaDuplexState**  
 The media duplex state. This value is the same as the value that is returned by the [OID\_GEN\_MEDIA\_DUPLEX\_STATE](oid-gen-media-duplex-state.md) OID.
@@ -88,7 +88,7 @@ Remarks
 
 
 
-If the link state of the miniport adapter changes because of the OID\_GEN\_LINK\_PARAMETERS set request, the miniport driver should generate an [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391) status indication to notify NDIS and overlying drivers of the new link state.
+If the link state of the miniport adapter changes because of the OID\_GEN\_LINK\_PARAMETERS set request, the miniport driver should generate an [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) status indication to notify NDIS and overlying drivers of the new link state.
 
 Requirements
 ------------
@@ -109,9 +109,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588)
+[**NDIS\_OBJECT\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_object_header)
 
-[**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391)
+[**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state)
 
 [OID\_GEN\_MEDIA\_DUPLEX\_STATE](oid-gen-media-duplex-state.md)
 

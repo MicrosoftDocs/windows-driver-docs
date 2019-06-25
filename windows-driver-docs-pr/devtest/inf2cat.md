@@ -130,7 +130,7 @@ The Inf2Cat tool checks [driver package's](https://docs.microsoft.com/windows-ha
 
 Inf2Cat generates a [catalog file](https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files) only if the catalog file is specified in the driver package's INF file and the catalog file applies to one or more of the specified Windows versions. If the [**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) of an INF file supplies only a **CatalogFile=**<em>filename.cat</em> directive, that catalog file applies to the entire driver package. To support [cross-platform installations](https://docs.microsoft.com/windows-hardware/drivers/install/creating-inf-files-for-multiple-platforms-and-operating-systems), the INF file should include **CatalogFile.**<em>PlatformExtension</em>**=**<em>unique-filename.cat</em> directives.
 
-For more information about signing a driver package, see [Driver Signing](https://msdn.microsoft.com/library/windows/hardware/ff544865) and [Device and Driver Installation Fundamental Topics](https://msdn.microsoft.com/library/windows/hardware/ff541165).
+For more information about signing a driver package, see [Driver Signing](https://docs.microsoft.com/windows-hardware/drivers/install/driver-signing) and [Device and Driver Installation Fundamental Topics](https://docs.microsoft.com/windows-hardware/drivers/install/device-and-driver-installation-fundamental-topics).
 
 ## Examples
 

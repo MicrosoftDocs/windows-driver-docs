@@ -23,7 +23,7 @@ Starting at the bottom of this figure:
 
 -   A bus driver creates a PDO for each device that it enumerates on its bus.
 
-    A bus driver creates a PDO for a child device when it enumerates the device. A bus driver enumerates a device in response to an [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://msdn.microsoft.com/library/windows/hardware/ff551670) request for **BusRelations** from the PnP manager. The bus driver creates a PDO for a child device if the device has been added to the bus since the last time the bus driver responded to a query-relations request for **BusRelations** (or if this is the first query-relations request since the machine was booted).
+    A bus driver creates a PDO for a child device when it enumerates the device. A bus driver enumerates a device in response to an [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations) request for **BusRelations** from the PnP manager. The bus driver creates a PDO for a child device if the device has been added to the bus since the last time the bus driver responded to a query-relations request for **BusRelations** (or if this is the first query-relations request since the machine was booted).
 
     A PDO represents the device to the bus driver, as well as to other kernel-mode system components such as the power manager, the PnP manager, and the I/O manager.
 
@@ -31,7 +31,7 @@ Starting at the bottom of this figure:
 
 -   Optional bus filter drivers create filter DOs for each device they filter.
 
-    When the PnP manager detects a new device in a **BusRelations** list, it determines whether there are any bus filter drivers for the device. If so, for each such driver the PnP manager ensures it is loaded (calls [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) if necessary) and calls the driver's [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine. If the bus filter driver filters operations for this device, the filter driver creates a device object and attaches it to the device stack in its *AddDevice* routine. If more than one bus filter driver exists and is relevant to this device, each such filter driver creates and attaches its own device object.
+    When the PnP manager detects a new device in a **BusRelations** list, it determines whether there are any bus filter drivers for the device. If so, for each such driver the PnP manager ensures it is loaded (calls [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) if necessary) and calls the driver's [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine. If the bus filter driver filters operations for this device, the filter driver creates a device object and attaches it to the device stack in its *AddDevice* routine. If more than one bus filter driver exists and is relevant to this device, each such filter driver creates and attaches its own device object.
 
 -   Optional, lower-level filter drivers create filter DOs for each device they filter.
 

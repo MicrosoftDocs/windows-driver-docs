@@ -124,7 +124,7 @@ Starting with Windows 7, the operating system logs the following error codes wit
 <td align="left"><p>50000022</p></td>
 <td align="left"><p><em>PackageInfo.xml</em> is not well-formed and cannot be parsed.</p>
 <div class="alert">
-<strong>Note</strong>   This error code includes the cases where either the <em>PackageInfo.xml</em> document is missing required elements, or one or more of its elements are not valid based on the syntax of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549614" data-raw-source="[PackageInfo XML Schema](https://msdn.microsoft.com/library/windows/hardware/ff549614)">PackageInfo XML Schema</a>.
+<strong>Note</strong>   This error code includes the cases where either the <em>PackageInfo.xml</em> document is missing required elements, or one or more of its elements are not valid based on the syntax of the <a href="https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff549614(v=vs.85)" data-raw-source="[PackageInfo XML Schema](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff549614(v=vs.85))">PackageInfo XML Schema</a>.
 </div>
 <div>
  

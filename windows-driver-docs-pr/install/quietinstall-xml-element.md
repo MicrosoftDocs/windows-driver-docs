@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # quietInstall XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
 
 The **quietInstall** XML element is an empty element that sets the **quietInstall** flag to ON, which configures DPInst to suppress the display of wizard pages and most other user messages.
 

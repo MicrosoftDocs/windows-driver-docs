@@ -37,7 +37,7 @@ The following example shows the **Manufacturer** directive, and the section that
 [ATI.Mfg.NTamd64...1]
 ```
 
-For more information about the **Manufacturer** section, see [**INF Manufacturer Section**](https://msdn.microsoft.com/library/windows/hardware/ff547454).
+For more information about the **Manufacturer** section, see [**INF Manufacturer Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section).
 
  
 

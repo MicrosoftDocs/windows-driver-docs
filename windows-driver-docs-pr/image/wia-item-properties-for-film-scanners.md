@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-This section lists the required and optional WIA item properties for a scanner film item and for scanner film child items (frames). For a complete list of WIA common, camera-specific, and scanner-specific properties, see [WIA Properties](https://msdn.microsoft.com/library/windows/hardware/ff552739).
+This section lists the required and optional WIA item properties for a scanner film item and for scanner film child items (frames). For a complete list of WIA common, camera-specific, and scanner-specific properties, see [WIA Properties](https://docs.microsoft.com/windows-hardware/drivers/image/wia-properties).
 
 This section includes:
 

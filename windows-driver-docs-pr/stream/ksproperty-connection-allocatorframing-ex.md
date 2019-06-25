@@ -48,7 +48,7 @@ AVStream clients use the KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING\_EX property t
 <td><p>No</p></td>
 <td><p>Pin</p></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560982" data-raw-source="[&lt;strong&gt;KSALLOCATOR_FRAMING_EX&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560982)"><strong>KSALLOCATOR_FRAMING_EX</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksallocator_framing_ex" data-raw-source="[&lt;strong&gt;KSALLOCATOR_FRAMING_EX&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksallocator_framing_ex)"><strong>KSALLOCATOR_FRAMING_EX</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -58,11 +58,11 @@ AVStream clients use the KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING\_EX property t
 Remarks
 -------
 
-This property returns a [**KSALLOCATOR\_FRAMING\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff560982), which describes the framing requirements for an AVStream pin.
+This property returns a [**KSALLOCATOR\_FRAMING\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksallocator_framing_ex), which describes the framing requirements for an AVStream pin.
 
 Minidrivers running under stream class should use [**KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING**](ksproperty-connection-allocatorframing.md).
 
-See [KS Allocators](https://msdn.microsoft.com/library/windows/hardware/ff567257). and [AVStream Allocators](https://msdn.microsoft.com/library/windows/hardware/ff554202).
+See [KS Allocators](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-allocators). and [AVStream Allocators](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-allocators).
 
 Requirements
 ------------
@@ -83,7 +83,7 @@ Requirements
 ## See also
 
 
-[**KSALLOCATOR\_FRAMING\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff560982)
+[**KSALLOCATOR\_FRAMING\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksallocator_framing_ex)
 
  
 

@@ -25,7 +25,7 @@ In response to device-independent application calls routed through the Graphics 
 
 Graphics DDI function names are in the *DrvXxx* form. GDI calls these *DrvXxx* functions to pass data to the driver. When an application makes a request of GDI, and GDI determines that the driver supports the relevant function, GDI calls that function. It is the responsibility of the driver to provide the function and return to GDI upon the function's completion.
 
-This section describes the graphics DDI functions that writers of display and printer drivers must be aware of. Graphics DDI function declarations, structure definitions, and constants can be found in *winddi.h*. For more information about the graphics DDI functions, see [GDI Functions Implemented by Printer and Display Drivers](https://msdn.microsoft.com/library/windows/hardware/ff566549).
+This section describes the graphics DDI functions that writers of display and printer drivers must be aware of. Graphics DDI function declarations, structure definitions, and constants can be found in *winddi.h*. For more information about the graphics DDI functions, see [GDI Functions Implemented by Printer and Display Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
 The topics contained in this section are as follows:
 

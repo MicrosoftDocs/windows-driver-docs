@@ -22,9 +22,9 @@ On Windows XP, the Plug and Play manager loads drivers in this order (listed fro
 
 3.  unsigned IHV drivers
 
-On Windows 2000, there is no difference between in-box and signed IHV drivers: either type of driver is loaded in preference to an unsigned IHV driver. To learn more about applications designed to install drivers and INF files that replace "in-box" drivers, see [Writing a Device Installation Application](https://msdn.microsoft.com/library/windows/hardware/ff554015).
+On Windows 2000, there is no difference between in-box and signed IHV drivers: either type of driver is loaded in preference to an unsigned IHV driver. To learn more about applications designed to install drivers and INF files that replace "in-box" drivers, see [Writing a Device Installation Application](https://docs.microsoft.com/windows-hardware/drivers/install/writing-a-device-installation-application).
 
-If you are developing a driver that replaces a Windows 2000 in-box driver, make sure that the *hardware IDs* in the [**INF Models section**](https://msdn.microsoft.com/library/windows/hardware/ff547456) of your INF file include the appropriate port enumerator. The Windows 2000 version of Ntprint.inf includes port enumerators in its entries in the INF Models section. If the same entries in your INF file omit port enumerators, Plug and Play selects the in-box Windows 2000 driver in preference to yours. If your driver replaces a Windows XP in-box driver, you do not have to include the port enumerator in a hardware ID.
+If you are developing a driver that replaces a Windows 2000 in-box driver, make sure that the *hardware IDs* in the [**INF Models section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-models-section) of your INF file include the appropriate port enumerator. The Windows 2000 version of Ntprint.inf includes port enumerators in its entries in the INF Models section. If the same entries in your INF file omit port enumerators, Plug and Play selects the in-box Windows 2000 driver in preference to yours. If your driver replaces a Windows XP in-box driver, you do not have to include the port enumerator in a hardware ID.
 
 An IHV can avoid a dialog box asking for user interaction in client-side installations by providing two lines in the INF Models section for each model, as in the following example.
 

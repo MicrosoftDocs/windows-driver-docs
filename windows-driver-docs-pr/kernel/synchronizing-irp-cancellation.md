@@ -17,13 +17,13 @@ From a driver's perspective, an IRP can be canceled at any time. IRP cancellatio
 
 -   After a driver routine is called, but before it queues an IRP.
 
--   After a driver routine is called, but before it tries to process an IRP. For example, an IRP might be canceled after a driver's [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine is called, but before the *StartIo* routine removes the IRP from the device queue.
+-   After a driver routine is called, but before it tries to process an IRP. For example, an IRP might be canceled after a driver's [*StartIo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_startio) routine is called, but before the *StartIo* routine removes the IRP from the device queue.
 
 -   After the driver routine dequeues the IRP, but before it starts the requested I/O.
 
 Note that after a driver queues an IRP and releases any spin locks that protect the queue, another thread can access and change the IRP. When the original thread resumes—even as soon as the next line of code—the IRP might have already been canceled or otherwise changed.
 
-Driver can use the cancel-safe IRP queue framework to implement IRP queuing. The system then registers a [*Cancel*](https://msdn.microsoft.com/library/windows/hardware/ff540742) routine for the driver that automatically handles synchronization to safely cancel IRPs. See [Cancel-Safe IRP Queues](cancel-safe-irp-queues.md) for more information. Otherwise, drivers must implement their own synchronization.
+Driver can use the cancel-safe IRP queue framework to implement IRP queuing. The system then registers a [*Cancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_cancel) routine for the driver that automatically handles synchronization to safely cancel IRPs. See [Cancel-Safe IRP Queues](cancel-safe-irp-queues.md) for more information. Otherwise, drivers must implement their own synchronization.
 
 The following members of an IRP contain information about cancellation:
 

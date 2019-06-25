@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 
 The WSK subsystem supports the following socket options at the SOL\_SOCKET level:
 
-[**SO\_BROADCAST**](https://msdn.microsoft.com/library/windows/hardware/ff570828)
+[**SO\_BROADCAST**](https://docs.microsoft.com/windows-hardware/drivers/network/so-broadcast)
 
-[**SO\_CONDITIONAL\_ACCEPT**](https://msdn.microsoft.com/library/windows/hardware/ff570829)
+[**SO\_CONDITIONAL\_ACCEPT**](https://docs.microsoft.com/windows-hardware/drivers/network/so-conditional-accept)
 
-[**SO\_EXCLUSIVEADDRUSE**](https://msdn.microsoft.com/library/windows/hardware/ff570830)
+[**SO\_EXCLUSIVEADDRUSE**](https://docs.microsoft.com/windows-hardware/drivers/network/so-exclusiveaddruse)
 
-[**SO\_KEEPALIVE**](https://msdn.microsoft.com/library/windows/hardware/ff570831)
+[**SO\_KEEPALIVE**](https://docs.microsoft.com/windows-hardware/drivers/network/so-keepalive)
 
-[**SO\_RCVBUF**](https://msdn.microsoft.com/library/windows/hardware/ff570832)
+[**SO\_RCVBUF**](https://docs.microsoft.com/windows-hardware/drivers/network/so-rcvbuf)
 
-[**SO\_REUSEADDR**](https://msdn.microsoft.com/library/windows/hardware/ff570833)
+[**SO\_REUSEADDR**](https://docs.microsoft.com/windows-hardware/drivers/network/so-reuseaddr)
 
 [**SO\_WSK\_EVENT\_CALLBACK**](so-wsk-event-callback.md)
 

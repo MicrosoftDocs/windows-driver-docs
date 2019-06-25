@@ -78,11 +78,11 @@ DevCon is a command-line tool that performs device management functions on local
 Devcon features include:
 
 -   **Display driver and device info** DevCon can display the following properties of drivers and devices on local computers, and remote computers (running Windows XP and earlier):
-    -   Hardware IDs, compatible IDs, and device instance IDs. These identifiers are described in detail in [Device Identification Strings](https://msdn.microsoft.com/library/windows/hardware/ff541224).
-    -   [Device setup classes](https://msdn.microsoft.com/library/windows/hardware/ff541509)
+    -   Hardware IDs, compatible IDs, and device instance IDs. These identifiers are described in detail in [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings).
+    -   [Device setup classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes)
     -   The devices in a device setup class
     -   INF files and device driver files
-    -   Details of [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff539954)
+    -   Details of [driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/components-of-a-driver-package)
     -   Hardware resources
     -   Device status
     -   Expected driver stack
@@ -104,7 +104,7 @@ Devcon features include:
 ## <span id="DevCon_source_code"></span><span id="devcon_source_code"></span><span id="DEVCON_SOURCE_CODE"></span>DevCon source code
 
 
-The DevCon source code is also available so that you can examine the methods that DevCon uses to retrieve and change setup and configuration data. DevCon illustrates the use of [general setup functions](https://msdn.microsoft.com/library/windows/hardware/ff544985), [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299), and [PnP Configuration Manager functions](https://msdn.microsoft.com/library/windows/hardware/ff549713). The source code for the [Device Console (DevCon) Tool](https://go.microsoft.com/fwlink/p/?LinkId=617966) is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+The DevCon source code is also available so that you can examine the methods that DevCon uses to retrieve and change setup and configuration data. DevCon illustrates the use of [general setup functions](https://docs.microsoft.com/previous-versions/ff544985(v=vs.85)), [device installation functions](https://docs.microsoft.com/previous-versions/ff541299(v=vs.85)), and [PnP Configuration Manager functions](https://docs.microsoft.com/previous-versions/ff549713(v=vs.85)). The source code for the [Device Console (DevCon) Tool](https://go.microsoft.com/fwlink/p/?LinkId=617966) is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
 ## <span id="related_topics"></span>Related topics
 

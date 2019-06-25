@@ -14,14 +14,14 @@ ms.custom: 19H1
 
 OID\_WWAN\_SIGNAL\_STATE returns or sets the current signal state.
 
-Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_SIGNAL\_STATE**](ndis-status-wwan-signal-state.md) status notification containing an [**NDIS\_WWAN\_SIGNAL\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567931) structure to provide information about the current signal state indication shown to the end-user regardless of completing set or query requests.
+Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_SIGNAL\_STATE**](ndis-status-wwan-signal-state.md) status notification containing an [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) structure to provide information about the current signal state indication shown to the end-user regardless of completing set or query requests.
 
-Callers requesting to set the current signal state indication to the end user provide an [**NDIS\_WWAN\_SET\_SIGNAL\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567928) structure to the miniport driver with the appropriate information.
+Callers requesting to set the current signal state indication to the end user provide an [**NDIS\_WWAN\_SET\_SIGNAL\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_signal_indication) structure to the miniport driver with the appropriate information.
 
 Remarks
 -------
 
-For more information about using this OID, see [WWAN Signal Strength Operations](https://msdn.microsoft.com/library/windows/hardware/ff559125).
+For more information about using this OID, see [WWAN Signal Strength Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-signal-strength-operations).
 
 Miniport drivers should not access the provider network, or the Subscriber Identity Module (SIM card), when processing query or set operations.
 
@@ -99,9 +99,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_SET\_SIGNAL\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567928)
+[**NDIS\_WWAN\_SET\_SIGNAL\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_signal_indication)
 
-[WWAN Signal Strength Operations](https://msdn.microsoft.com/library/windows/hardware/ff559125)
+[WWAN Signal Strength Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-signal-strength-operations)
 
  
 

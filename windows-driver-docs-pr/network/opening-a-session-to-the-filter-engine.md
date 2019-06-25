@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Opening a Session to the Filter Engine
 
 
-A callout driver must open a session to the filter engine to perform management tasks such as adding filters to the filter engine. A callout driver opens a session to the filter engine by calling the [**FwpmEngineOpen0**](https://msdn.microsoft.com/library/windows/hardware/ff550075) function. For example:
+A callout driver must open a session to the filter engine to perform management tasks such as adding filters to the filter engine. A callout driver opens a session to the filter engine by calling the [**FwpmEngineOpen0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpmk/nf-fwpmk-fwpmengineopen0) function. For example:
 
 ```cpp
 HANDLE engineHandle;

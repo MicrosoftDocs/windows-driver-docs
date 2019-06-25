@@ -44,4 +44,4 @@ For additional guidance in creating INF files for still image devices, you can l
 
 ## Remarks
 
-When you're developing an INF file for scanners, you can use [Microsoft OS descriptors](https://msdn.microsoft.com/library/windows/hardware/gg463179.aspx) to enable compatibility ID functionality. When you do this, you allow one scanner driver to be compatible with multiple scanner models.
+When you're developing an INF file for scanners, you can use [Microsoft OS descriptors](https://docs.microsoft.com/previous-versions/gg463179(v=msdn.10)) to enable compatibility ID functionality. When you do this, you allow one scanner driver to be compatible with multiple scanner models.

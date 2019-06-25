@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # ValidatePrintTicket print ticket support
 
 
-The [**IPrintTicketProvider::ValidatePrintTicket**](https://msdn.microsoft.com/library/windows/hardware/ff554382) method is called by the print subsystem to validate the contents and format of a PrintTicket object.
+The [**IPrintTicketProvider::ValidatePrintTicket**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff554382(v=vs.85)) method is called by the print subsystem to validate the contents and format of a PrintTicket object.
 
  
 

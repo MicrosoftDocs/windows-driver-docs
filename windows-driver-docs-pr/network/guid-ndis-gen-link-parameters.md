@@ -14,5 +14,5 @@ WMI clients can use the GUID_NDIS_GEN_LINK_PARAMETERS set GUID to set the link p
 
 NDIS translates this GUID to the [OID_GEN_LINK_PARAMETERS](oid-gen-link-parameters.md) OID to set the current link parameters of a miniport adapter. This OID is mandatory for miniport drivers that support NDIS 6.0 and later versions.
 
-The WMI input buffer specifies the data that NDIS should set. The input buffer contains an [NDIS_WMI_SET_HEADER](https://msdn.microsoft.com/library/windows/hardware/ff567904) structure that is followed by an [NDIS_LINK_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569592) structure.
+The WMI input buffer specifies the data that NDIS should set. The input buffer contains an [NDIS_WMI_SET_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_wmi_set_header) structure that is followed by an [NDIS_LINK_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-link-parameters) structure.
 

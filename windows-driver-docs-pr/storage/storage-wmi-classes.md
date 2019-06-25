@@ -12,13 +12,13 @@ ms.date: 10/17/2018
 ## <span id="ddk_storage_wmi_classes_kr"></span><span id="DDK_STORAGE_WMI_CLASSES_KR"></span>
 
 
-This section describes the Storage Management Initiative Specification (SMI-S) requirements and the system-supplied Windows Management Instrumentation (WMI) classes used in the Windows storage architecture. For a discussion of how storage miniport drivers handle WMI classes, see [Handling WMI SRBs in Storage Miniport Drivers](https://msdn.microsoft.com/library/windows/hardware/ff556028).
+This section describes the Storage Management Initiative Specification (SMI-S) requirements and the system-supplied Windows Management Instrumentation (WMI) classes used in the Windows storage architecture. For a discussion of how storage miniport drivers handle WMI classes, see [Handling WMI SRBs in Storage Miniport Drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/handling-wmi-srbs-in-storage-miniport-drivers).
 
 Storage Management Providers, SMI-S requirements, and system-supplied WMI classes are in the following categories:
 
--   [Storage Managemement Providers](https://msdn.microsoft.com/library/windows/hardware/dn342891)
+-   [Storage Managemement Providers](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/dn342891(v=vs.85))
 
--   [SMI-S Requirements](https://msdn.microsoft.com/library/windows/hardware/dn265461)
+-   [SMI-S Requirements](https://docs.microsoft.com/previous-versions/windows/desktop/smi-s/dn265461(v=vs.85))
 
 -   [HBA WMI Classes](hba-wmi-classes.md)
 

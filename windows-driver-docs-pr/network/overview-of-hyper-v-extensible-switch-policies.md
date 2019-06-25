@@ -118,7 +118,7 @@ This example highlights the following points that occur when a MOF class is seri
 
     When a custom policy property is issued to an underlying extension, the **PropertyVersion** member of the structures that define policy properties contains the serialized version value.
 
-    For example, when the extensible switch interface issues an object identifier (OID) request of [OID\_SWITCH\_PORT\_PROPERTY\_ADD](https://msdn.microsoft.com/library/windows/hardware/hh598275), the OID is associated with an [**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598238) structure. The **PropertyVersion** member of that structure contains the serialized version value.
+    For example, when the extensible switch interface issues an object identifier (OID) request of [OID\_SWITCH\_PORT\_PROPERTY\_ADD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-add), the OID is associated with an [**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters) structure. The **PropertyVersion** member of that structure contains the serialized version value.
 
 -   All variable-length strings are serialized into offsets within the buffer that contains the serialized C structure. Each variable-length string is formatted as a **VARIABLE\_LENGTH\_STRING** structure within this buffer offset.
 

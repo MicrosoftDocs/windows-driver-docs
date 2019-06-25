@@ -35,8 +35,8 @@ For more information about NVGRE, see the following Internet Draft:
 
 NVGRE is based on Generic Routing Encapsulation (GRE). For more information about GRE, see the following resources:
 
--   [RFC 2784: Generic Routing Encapsulation (GRE)](http://tools.ietf.org/html/rfc2784)
--   [RFC 2890: Key and Sequence Number Extensions to GRE](http://tools.ietf.org/html/rfc2890)
+-   [RFC 2784: Generic Routing Encapsulation (GRE)](https://tools.ietf.org/html/rfc2784)
+-   [RFC 2890: Key and Sequence Number Extensions to GRE](https://tools.ietf.org/html/rfc2890)
 
 This section includes:
 

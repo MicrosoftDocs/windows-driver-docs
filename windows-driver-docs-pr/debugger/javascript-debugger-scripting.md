@@ -1221,13 +1221,13 @@ With that reference in your JavaScript file, VS Code will automatically give you
 
 The following are JavaScript resources that may be useful as you develop JavaScript debugging extensions.
 
--   [Writing JavaScript Code](https://msdn.microsoft.com/library/cte3c772.aspx)
+-   [Writing JavaScript Code](https://docs.microsoft.com/scripting/javascript/writing-javascript-code)
 
--   [JScript Language Tour](https://msdn.microsoft.com/library/t895bwkh.aspx)
+-   [JScript Language Tour](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/t895bwkh(v=vs.100))
 
 -   [Mozilla JavaScript Reference](https://developer.mozilla.org/docs/Web/JavaScript)
 
--   [WinJS: The Windows library for JavaScript](https://developer.microsoft.com/windows/develop/winjs)
+-   [WinJS: The Windows library for JavaScript](https://github.com/winjs/winjs)
 
 -   [ECMAScript 6 — New Features: Overview & Comparison](https://es6-features.org/)
 

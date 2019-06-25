@@ -29,7 +29,7 @@ This section introduces UWP device apps for cameras. Device apps can highlight t
 
 -   The [driver MFT](https://go.microsoft.com/fwlink/p/?LinkID=251566) sample provides a driver MFT for use with a camera's UWP device app. A driver MFT is a Media Foundation Transform that's used with a specific camera when capturing video. The driver MFT is also known as MFT0 because it is the first MFT applied to the video stream captured from the camera. This MFT can provide a video effect or other processing when capturing photos or video from the camera. It can be distributed along with the driver package for a camera.
 
--   The [Camera Capture UI](https://go.microsoft.com/fwlink/p/?linkid=228589) sample demonstrates how to use the [Windows.Media.Capture.CameraCaptureUI](https://msdn.microsoft.com/library/windows/apps/br241030) API, which displays a full-screen UI for capturing photos or videos. The Camera Capture UI provides controls for switching from photo to video, a timer for taking time-delayed photos, and a Camera options control for adjusting camera settings.
+-   The [Camera Capture UI](https://go.microsoft.com/fwlink/p/?linkid=228589) sample demonstrates how to use the [Windows.Media.Capture.CameraCaptureUI](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.CameraCaptureUI) API, which displays a full-screen UI for capturing photos or videos. The Camera Capture UI provides controls for switching from photo to video, a timer for taking time-delayed photos, and a Camera options control for adjusting camera settings.
 
     You can use this sample to invoke the [UWP device app for camera](https://go.microsoft.com/fwlink/p/?LinkID=227865) sample.
 

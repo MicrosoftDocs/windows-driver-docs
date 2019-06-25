@@ -26,7 +26,7 @@ UserModeDriverName1.dll  = 3426
 UserModeDriverName2.dll  = 3426
 ```
 
-For more information about the **SourceDisksNames** and **SourceDisksFiles** sections, see [**INF SourceDisksNames Section**](https://msdn.microsoft.com/library/windows/hardware/ff547478) and [**INF SourceDisksFiles Section**](https://msdn.microsoft.com/library/windows/hardware/ff547472).
+For more information about the **SourceDisksNames** and **SourceDisksFiles** sections, see [**INF SourceDisksNames Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksnames-section) and [**INF SourceDisksFiles Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section).
 
  
 

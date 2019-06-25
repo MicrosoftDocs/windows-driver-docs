@@ -20,11 +20,11 @@ ms.localizationpriority: medium
 
 
 
-A [**KSSTREAM\_POINTER**](https://msdn.microsoft.com/library/windows/hardware/ff567139) structure contains two [**KSSTREAM\_POINTER\_OFFSET**](https://msdn.microsoft.com/library/windows/hardware/ff567140) structures that index input and output positions within a frame. A minidriver can either manipulate these offsets or access the data at frame resolution.
+A [**KSSTREAM\_POINTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksstream_pointer) structure contains two [**KSSTREAM\_POINTER\_OFFSET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksstream_pointer_offset) structures that index input and output positions within a frame. A minidriver can either manipulate these offsets or access the data at frame resolution.
 
-To advance a stream pointer within a frame, the minidriver calls [**KsStreamPointerAdvanceOffsets**](https://msdn.microsoft.com/library/windows/hardware/ff567126) and [**KsStreamPointerAdvanceOffsetsAndUnlock**](https://msdn.microsoft.com/library/windows/hardware/ff567127).
+To advance a stream pointer within a frame, the minidriver calls [**KsStreamPointerAdvanceOffsets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointeradvanceoffsets) and [**KsStreamPointerAdvanceOffsetsAndUnlock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointeradvanceoffsetsandunlock).
 
-Minidrivers that access stream data with virtual addresses can use these offsets to specify a stream position at byte resolution. Minidrivers that use scatter/gather physical mappings can specify stream position at the granularity of a [**KSMAPPING**](https://msdn.microsoft.com/library/windows/hardware/ff563394) structure.
+Minidrivers that access stream data with virtual addresses can use these offsets to specify a stream position at byte resolution. Minidrivers that use scatter/gather physical mappings can specify stream position at the granularity of a [**KSMAPPING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksmapping) structure.
 
  
 

@@ -27,7 +27,7 @@ For nearly all PCI audio adapters that require vendor-supplied custom drivers, v
 
 The AVStream class system driver (Ks.sys) lacks most of the audio-specific support functions that exist in PortCls.
 
-For more information about PortCls, see [Introduction to Port Class](introduction-to-port-class.md). For more information about AVStream, see [AVStream Overview](https://msdn.microsoft.com/library/windows/hardware/ff554240).
+For more information about PortCls, see [Introduction to Port Class](introduction-to-port-class.md). For more information about AVStream, see [AVStream Overview](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-overview).
 
  
 

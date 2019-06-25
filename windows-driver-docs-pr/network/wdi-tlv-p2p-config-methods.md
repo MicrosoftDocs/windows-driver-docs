@@ -28,7 +28,7 @@ The size (in bytes) of a UINT16.
 
 | Type   | Description                                                                                                                                                              |
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| UINT16 | Configuration methods as defined in [**WDI\_WPS\_CONFIGURATION\_METHOD**](https://msdn.microsoft.com/library/windows/hardware/dn898198). Only PIN display, PIN keypad, and WFDS are applicable. |
+| UINT16 | Configuration methods as defined in [**WDI\_WPS\_CONFIGURATION\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_wps_configuration_method). Only PIN display, PIN keypad, and WFDS are applicable. |
 
  
 

@@ -38,7 +38,7 @@ The IHV can define certain Microsoft operating system (OS) feature descriptors t
 
 ## Setting a container ID
 
-[Container IDs for USB Devices](https://msdn.microsoft.com/library/windows/hardware/ff540084)  
+[Container IDs for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/install/container-ids-for-usb-devices)  
 Describes how Container IDs for Universal Serial Bus (USB) devices are generated.
 
 [USB ContainerIDs in Windows](usb-containerids-in-windows.md)  
@@ -60,15 +60,15 @@ This blog post describes how the USB driver stack handles function and selective
 [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
 Event Tracing for Windows (ETW) is a general-purpose, high-speed tracing facility that is provided by the operating system. It includes information on how to install the tools, create trace files, and analyze the events in a USB trace file.
 
-[WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204)  
+[WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing)  
 How to use the default operation of the Windows software trace preprocessor (WPP) to trace the operation of a software component (trace provider).
 
-[USB 3.0 Extensions](https://msdn.microsoft.com/library/windows/hardware/hh869258) (usb3kd.dll)  
+[USB 3.0 Extensions](https://docs.microsoft.com/windows-hardware/drivers/debugger/usb-3-extensions) (usb3kd.dll)  
 These commands display information from data structures maintained by three drivers in the USB 3.0 stack: the USB 3.0 hub driver, the USB host controller extension driver, and the USB 3.0 host controller driver.
 
-[USB 2.0 Extensions](https://msdn.microsoft.com/library/windows/hardware/dn367056) (usb2kd.dll)  
+[USB 2.0 Extensions](https://docs.microsoft.com/windows-hardware/drivers/debugger/usb-2-0-extensions) (usb2kd.dll)  
 These commands display information from data structures maintained by drivers in the USB 2.0 stack: the USB 2.0 hub driver and the USB 2.0 host controller driver.
 
 ## Related topics
 
-[Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  

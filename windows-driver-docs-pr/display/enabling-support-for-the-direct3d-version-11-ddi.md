@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This section applies only to Windows 7 and later, and Windows Server 2008 R2 and later versions of Windows operating system.
 
-To enable support for a user-mode display driver DLL's version 11 DDI, the INF file that installs the display drivers for a graphics device must list the name of the DLL regardless of whether the Direct3D version 11 DDI exists in the same DLL as the [Direct3D version 9 DDI](https://msdn.microsoft.com/library/windows/hardware/ff552927) and [Direct3D version 10 DDI](https://msdn.microsoft.com/library/windows/hardware/ff552909) or in a separate DLL.
+To enable support for a user-mode display driver DLL's version 11 DDI, the INF file that installs the display drivers for a graphics device must list the name of the DLL regardless of whether the Direct3D version 11 DDI exists in the same DLL as the [Direct3D version 9 DDI](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/index) and [Direct3D version 10 DDI](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) or in a separate DLL.
 
 The [Installation Requirements for Display Miniport and User-Mode Display Drivers](installing-display-miniport-and-user-mode-display-drivers.md) section describes how a user-mode display driver is installed and used according to the Windows Vista display driver model. To also enable support for the Direct3D version 11 DDI, you must specify the name of the DLL that contains the version 11 DDI as the third entry in the list of user-mode display driver names even if the version 11 DDI exists in the same DLL as the version 9 and 10 DDIs.
 

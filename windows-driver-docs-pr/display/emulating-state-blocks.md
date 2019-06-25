@@ -21,7 +21,7 @@ ValueType : REG_DWORD
 ValueData : 1 for D3D runtime emulation of stateblocks, 0 for driver implementation (default).
 ```
 
-**Note**   After the registry is configured to turn on emulation of state blocks by the Direct3D runtime, the runtime does not call the user-mode display driver's [**StateSet**](https://msdn.microsoft.com/library/windows/hardware/ff569730) function to set any state-block information.
+**Note**   After the registry is configured to turn on emulation of state blocks by the Direct3D runtime, the runtime does not call the user-mode display driver's [**StateSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_stateset) function to set any state-block information.
 
  
 

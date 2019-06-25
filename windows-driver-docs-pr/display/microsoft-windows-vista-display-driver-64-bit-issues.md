@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Windows Display Driver Model (WDDM) 64-Bit Issues
 
 
-To allow 32-bit applications to run on a 64-bit operating system, a 32-bit user-mode display driver must be provided in addition to the 64-bit user-mode display driver that 64-bit applications require. However, only the 64-bit version of a display miniport driver is required on a 64-bit operating system. Windows on Windows (WOW64) enables 32-bit applications to run on a 64-bit operating system. For more information, see [Supporting 32-Bit I/O in Your 64-Bit Driver](https://msdn.microsoft.com/library/windows/hardware/ff563897).
+To allow 32-bit applications to run on a 64-bit operating system, a 32-bit user-mode display driver must be provided in addition to the 64-bit user-mode display driver that 64-bit applications require. However, only the 64-bit version of a display miniport driver is required on a 64-bit operating system. Windows on Windows (WOW64) enables 32-bit applications to run on a 64-bit operating system. For more information, see [Supporting 32-Bit I/O in Your 64-Bit Driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/supporting-32-bit-i-o-in-your-64-bit-driver).
 
 To install a 32-bit user-mode display driver on a 64-bit operating system, the following entry must be set in an add-registry section of the INF file for the graphics device's display miniport driver. This must happen so that the 32-bit user-mode display driver's DLL name is added to the registry during driver installation:
 
@@ -24,9 +24,9 @@ To install a 32-bit user-mode display driver on a 64-bit operating system, the f
 ...
 ```
 
-The INF file must contain information to direct the operating system to copy the 32-bit user-mode display driver into the system's %systemroot%\\SysWOW64 directory. For more information, see [**INF CopyFiles Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546346) and [**INF DestinationDirs Section**](https://msdn.microsoft.com/library/windows/hardware/ff547383).
+The INF file must contain information to direct the operating system to copy the 32-bit user-mode display driver into the system's %systemroot%\\SysWOW64 directory. For more information, see [**INF CopyFiles Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) and [**INF DestinationDirs Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section).
 
-Because WOW64 cannot process opaque or untyped data structures such as the [**D3DDDICB\_ALLOCATE**](https://msdn.microsoft.com/library/windows/hardware/ff544137) structure passed via the [**pfnAllocateCb**](https://msdn.microsoft.com/library/windows/hardware/ff568893) function, it cannot perform an automatic conversion from 32 bit to 64 bit. Therefore, for WOW64 to work correctly, you must consider the following items when writing a 32-bit user-mode display driver to run on a 64-bit operating system:
+Because WOW64 cannot process opaque or untyped data structures such as the [**D3DDDICB\_ALLOCATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddicb_allocate) structure passed via the [**pfnAllocateCb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_allocatecb) function, it cannot perform an automatic conversion from 32 bit to 64 bit. Therefore, for WOW64 to work correctly, you must consider the following items when writing a 32-bit user-mode display driver to run on a 64-bit operating system:
 
 -   Avoid pointers or data types that are sensitive to multiple operating systems, such as, SIZE\_T or HANDLE. Along with making the size of the entire structure variable, these variable-width data types make the alignment and position of individual members different. If variable width members are unavoidable, you can add another member to indicate that the data structure originates from a 32-bit user-mode display driver. The 64-bit display miniport driver can then properly perform the conversion.
 

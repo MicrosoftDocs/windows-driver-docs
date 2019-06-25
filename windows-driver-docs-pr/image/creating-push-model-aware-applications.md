@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 A push-model aware application is one that has registered itself with Microsoft STI so that it can be automatically activated when a still image device event has occurred. An application can be made push-model aware by either of the following two methods:
 
--   Calling [**IStillImage::RegisterLaunchApplication**](https://msdn.microsoft.com/library/windows/hardware/ff543798). The call can be made by the application or by its installation program.
+-   Calling [**IStillImage::RegisterLaunchApplication**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543798(v=vs.85)). The call can be made by the application or by its installation program.
 
--   Including an entry in the application's setup information (INF) file. The entry should be referenced by an [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) in the INF file. The syntax of the entry is illustrated in the following example:
+-   Including an entry in the application's setup information (INF) file. The entry should be referenced by an [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) in the INF file. The syntax of the entry is illustrated in the following example:
 
     ```INF
     ; Register Application "Imaging" as a push-model aware application for use with the still image event monitor
@@ -31,7 +31,7 @@ If an application is registered as push-model aware, a user can assign [Still Im
 
 After device events have been assigned to an application, the event monitor will start the application when it detects an occurrence of an assigned device event.
 
-When a push-model aware application is activated, it should call [**IStillImage::GetSTILaunchInformation**](https://msdn.microsoft.com/library/windows/hardware/ff543790) to determine the event and the device for which it was started. It can then call [**IStillImage::GetDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff543782) to obtain more information about the device.
+When a push-model aware application is activated, it should call [**IStillImage::GetSTILaunchInformation**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543790(v=vs.85)) to determine the event and the device for which it was started. It can then call [**IStillImage::GetDeviceInfo**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543782(v=vs.85)) to obtain more information about the device.
 
 The application must handle the event, or it must create a user display explaining why it cannot handle the event. Presumably, the user will then use Control Panel to associate the device event with some other application.
 

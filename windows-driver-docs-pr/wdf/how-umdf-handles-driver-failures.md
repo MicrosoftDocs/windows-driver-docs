@@ -24,7 +24,7 @@ The following events occur in the order presented:
     -   The reflector completes outstanding I/O with the STATUS\_DRIVER\_PROCESS\_TERMINATED error code.
     -   Microsoft Win32 applications receive the ERROR\_DRIVER\_PROCESS\_TERMINATED error code for the outstanding I/O.
 
-    **Note**   The reflector that runs on Microsoft Windows XP completes outstanding I/O with STATUS\_DRIVER\_INTERNAL\_ERROR, and Win32 applications, in turn, receive the ERROR\_IO\_DEVICE error code for the outstanding I/O. Therefore, applications that run on Windows XP should not use ERROR\_IO\_DEVICE to detect a driver failure because they cannot determine any difference from the status that is returned from a typical I/O request (for example, the status that is returned from a call to the Win32 [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216) function).
+    **Note**   The reflector that runs on Microsoft Windows XP completes outstanding I/O with STATUS\_DRIVER\_INTERNAL\_ERROR, and Win32 applications, in turn, receive the ERROR\_IO\_DEVICE error code for the outstanding I/O. Therefore, applications that run on Windows XP should not use ERROR\_IO\_DEVICE to detect a driver failure because they cannot determine any difference from the status that is returned from a typical I/O request (for example, the status that is returned from a call to the Win32 [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) function).
 
      
 

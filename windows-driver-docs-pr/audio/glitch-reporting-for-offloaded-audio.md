@@ -29,7 +29,7 @@ typedef enum
 } EPcMiniportEngineEvent;
 ```
 
-For more information about this enum, see [**EPcMiniportEngineEvent**](https://msdn.microsoft.com/library/windows/hardware/dn302036).
+For more information about this enum, see [**EPcMiniportEngineEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ne-portcls-epcminiportengineevent).
 
 And for more information about how to develop a driver that can handle hardware-offloaded audio streams, see [Driver Implementation Details](driver-implementation-details.md).
 

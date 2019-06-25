@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 A client accesses an audio device through a set of *device interfaces* that a vendor specifies in the adapter's INF file. The device interfaces specified in the INF file have a one-to-one correspondence with the subdevices that the adapter driver creates when it initializes the device (see [Subdevice Creation](subdevice-creation.md)). For each device interface, the INF file specifies a **FriendlyName** entry value, which is accessible in user mode, under the interface's registry key.
 
-In the kernel-streaming architecture, topology categories (see [**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)) represent device interface classes.
+In the kernel-streaming architecture, topology categories (see [**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories)) represent device interface classes.
 
 The following table lists the topology categories that audio adapters are most likely to use to describe the capabilities of their subdevices.
 
@@ -56,7 +56,7 @@ The following example installs four common system-defined device interfaces that
 
 ### <span id="example__installing_audio_device_interfaces"></span><span id="EXAMPLE__INSTALLING_AUDIO_DEVICE_INTERFACES"></span>Example: Installing Audio Device Interfaces
 
-In this example, the device-install section for the XYZ Audio Device uses the [**INF AddInterface directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310) to install four audio adapter interfaces. In the following, each of the four directives assigns a unique reference string to an interface, which the adapter driver can use to distinguish between instances of each interface class.
+In this example, the device-install section for the XYZ Audio Device uses the [**INF AddInterface directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addinterface-directive) to install four audio adapter interfaces. In the following, each of the four directives assigns a unique reference string to an interface, which the adapter driver can use to distinguish between instances of each interface class.
 
 ```inf
   [XYZ-Audio-Device.Interfaces]
@@ -88,7 +88,7 @@ The two add-interface sections appear in the following example, which contains I
   HKR,,CLSID,,%Proxy.CLSID%
 ```
 
-The keyword HKR in this example denotes the system-supplied registry path for the device. For more information, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
+The keyword HKR in this example denotes the system-supplied registry path for the device. For more information, see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
 
 The following is the Strings section for this example.
 

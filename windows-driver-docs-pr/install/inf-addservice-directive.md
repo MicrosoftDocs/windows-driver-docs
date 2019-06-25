@@ -158,7 +158,7 @@ Indicates a driver started during operating system initialization.
 
 This value should be used by PnP drivers that do device detection during initialization but are not required to load the system.
 
-For example, a PnP driver that can also detect a legacy device should specify this value in its INF so that its [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine is called to find the legacy device, even if that device cannot be enumerated by the PnP manager.
+For example, a PnP driver that can also detect a legacy device should specify this value in its INF so that its [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine is called to find the legacy device, even if that device cannot be enumerated by the PnP manager.
 
 <a href="" id="0x2--service-auto-start-"></a>**0x2** (SERVICE_AUTO_START)  
 Indicates a driver started by the service control manager during system startup.
@@ -232,7 +232,7 @@ A *depend-on-item-name* can specify a load order group on which this device/driv
 <a href="" id="security--security-descriptor-string-"></a>**Security**="*security-descriptor-string*"  
 Specifies a security descriptor, to be applied to the service. This security descriptor specifies the permissions that are required to perform such operations as starting, stopping, and configuring the service. The *security-descriptor-string* value is a string with tokens to indicate the DACL (**D:**) security component.
 
-For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](https://msdn.microsoft.com/library/windows/desktop/aa379567). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
+For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](https://docs.microsoft.com/windows/desktop/SecAuthZ/security-descriptor-definition-language). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
 
 For more information about how to specify security descriptors, see [Creating Secure Device Installations](creating-secure-device-installations.md).
 

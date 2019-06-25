@@ -19,7 +19,7 @@ Use the following best practices regarding connectivity to the mobile broadband 
 
 -   Keep the connection lifetime to a minimum.
 
--   Use connectivity through Internet-connected interfaces whenever they are available. You can observe availability by using the [**NetworkInformation**](https://msdn.microsoft.com/library/windows/apps/br207293) API.
+-   Use connectivity through Internet-connected interfaces whenever they are available. You can observe availability by using the [**NetworkInformation**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.NetworkInformation) API.
 
 ## <span id="related_topics"></span>Related topics
 

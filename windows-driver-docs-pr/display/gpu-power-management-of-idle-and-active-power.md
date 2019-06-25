@@ -25,22 +25,22 @@ Starting with Windows 8, an optional GPU power management infrastructure is avai
 
 These new and updated functions and structures are available starting with Windows 8 for the display miniport driver to transition the state of power components and to communicate power events with the Microsoft DirectX graphics kernel subsystem.
 
--   [*DxgkCbCompleteFStateTransition*](https://msdn.microsoft.com/library/windows/hardware/jj128349)
--   [*DxgkCbPowerRuntimeControlRequest*](https://msdn.microsoft.com/library/windows/hardware/hh451323)
--   [*DxgkCbSetPowerComponentActive*](https://msdn.microsoft.com/library/windows/hardware/hh451331)
--   [*DxgkCbSetPowerComponentIdle*](https://msdn.microsoft.com/library/windows/hardware/hh451336)
--   [*DxgkCbSetPowerComponentLatency*](https://msdn.microsoft.com/library/windows/hardware/hh698278)
--   [*DxgkCbSetPowerComponentResidency*](https://msdn.microsoft.com/library/windows/hardware/hh698279)
--   [*DxgkDdiPowerRuntimeControlRequest*](https://msdn.microsoft.com/library/windows/hardware/hh451396)
--   [*DxgkDdiSetPowerComponentFState*](https://msdn.microsoft.com/library/windows/hardware/hh451422)
--   [**DXGK\_DRIVERCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff561062)
--   [**DXGK\_POWER\_COMPONENT\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/hh464063)
--   [**DXGK\_POWER\_COMPONENT\_MAPPING**](https://msdn.microsoft.com/library/windows/hardware/hh464067)
--   [**DXGK\_POWER\_COMPONENT\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/hh464070)
--   [**DXGK\_POWER\_RUNTIME\_COMPONENT**](https://msdn.microsoft.com/library/windows/hardware/hh464073)
--   [**DXGK\_QUERYADAPTERINFOTYPE**](https://msdn.microsoft.com/library/windows/hardware/ff562010)
--   [**DXGKARG\_QUERYADAPTERINFO**](https://msdn.microsoft.com/library/windows/hardware/ff557621)
--   [**DXGK\_QUERYSEGMENTOUT3**](https://msdn.microsoft.com/library/windows/hardware/hh464082)
+-   [*DxgkCbCompleteFStateTransition*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkcb_completefstatetransition)
+-   [*DxgkCbPowerRuntimeControlRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkcb_powerruntimecontrolrequest)
+-   [*DxgkCbSetPowerComponentActive*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkcb_setpowercomponentactive)
+-   [*DxgkCbSetPowerComponentIdle*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkcb_setpowercomponentidle)
+-   [*DxgkCbSetPowerComponentLatency*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkcb_setpowercomponentlatency)
+-   [*DxgkCbSetPowerComponentResidency*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkcb_setpowercomponentresidency)
+-   [*DxgkDdiPowerRuntimeControlRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddipowerruntimecontrolrequest)
+-   [*DxgkDdiSetPowerComponentFState*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddisetpowercomponentfstate)
+-   [**DXGK\_DRIVERCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps)
+-   [**DXGK\_POWER\_COMPONENT\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_power_component_flags)
+-   [**DXGK\_POWER\_COMPONENT\_MAPPING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_power_component_mapping)
+-   [**DXGK\_POWER\_COMPONENT\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ne-d3dkmddi-_dxgk_power_component_type)
+-   [**DXGK\_POWER\_RUNTIME\_COMPONENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_power_runtime_component)
+-   [**DXGK\_QUERYADAPTERINFOTYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype)
+-   [**DXGKARG\_QUERYADAPTERINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgkarg_queryadapterinfo)
+-   [**DXGK\_QUERYSEGMENTOUT3**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_querysegmentout3)
 
 ## <span id="GPU_power_management_scenarios"></span><span id="gpu_power_management_scenarios"></span><span id="GPU_POWER_MANAGEMENT_SCENARIOS"></span>GPU power management scenarios
 

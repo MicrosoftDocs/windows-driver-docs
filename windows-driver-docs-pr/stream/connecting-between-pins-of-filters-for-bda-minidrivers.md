@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 To let pins of BDA filters connect to each other, BDA minidrivers for those filters must provide lists of data ranges for the pins as described in [Data Range Intersections in AVStream](data-range-intersections-in-avstream.md). In other words, pins of filters specify the data ranges they support to enable stream connections to pins of other filters that also support those data ranges.
 
-For example, to let pins of BDA tuner and capture filters connect, the output pin of the tuner filter and the input pin of the capture filter must have the following data formats set in the [**KSDATARANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561658) structures for the pins:
+For example, to let pins of BDA tuner and capture filters connect, the output pin of the tuner filter and the input pin of the capture filter must have the following data formats set in the [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structures for the pins:
 
 -   **MajorFormat** set to STATIC\_KSDATAFORMAT\_TYPE\_STREAM
 
@@ -31,7 +31,7 @@ For example, to let pins of BDA tuner and capture filters connect, the output pi
 
 -   **Specifier** set to STATIC\_KSDATAFORMAT\_SPECIFIER\_BDA\_TRANSPORT
 
-To let pins of BDA capture and demultiplex filters connect, the output pin of the capture filter and the input pin of the demultiplex filter must have the following data formats set in the [**KSDATARANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561658) structures for the pins:
+To let pins of BDA capture and demultiplex filters connect, the output pin of the capture filter and the input pin of the demultiplex filter must have the following data formats set in the [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structures for the pins:
 
 -   **MajorFormat** set to STATIC\_KSDATAFORMAT\_TYPE\_STREAM
 

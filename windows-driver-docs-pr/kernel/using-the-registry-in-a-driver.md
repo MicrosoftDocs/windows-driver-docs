@@ -25,9 +25,9 @@ The Microsoft Windows executive provides the following two sets of routines for 
 
 For additional information about the registry, see:
 
-[**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320)
+[**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive)
 
-[Registry Keys for Drivers](https://msdn.microsoft.com/library/windows/hardware/ff549538)
+[Registry Keys for Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-registry-trees-and-keys)
 
  
 

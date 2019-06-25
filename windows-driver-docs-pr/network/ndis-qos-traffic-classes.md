@@ -25,9 +25,9 @@ For more information, see [Transmission Selection Algorithms (TSAs)](transmissio
 
  
 
-Traffic classes are specified through object identifier (OID) method requests of [OID\_QOS\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451835). This OID request contains an [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure that specifies the following NDIS QoS parameters:
+Traffic classes are specified through object identifier (OID) method requests of [OID\_QOS\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-qos-parameters). This OID request contains an [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure that specifies the following NDIS QoS parameters:
 
--   The number of traffic classes to be configured on the network adapter. Each traffic class is identified by a value in the range from zero to (**NumTrafficClasses**–1), where **NumTrafficClasses** is a member of the [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure.
+-   The number of traffic classes to be configured on the network adapter. Each traffic class is identified by a value in the range from zero to (**NumTrafficClasses**–1), where **NumTrafficClasses** is a member of the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure.
 
     **Note**  Starting with NDIS 6.30, NDIS QoS supports a maximum of NDIS\_QOS\_MAXIMUM\_TRAFFIC\_CLASSES (8) traffic classes. The network adapter must support a minimum of three traffic classes.
 
@@ -39,7 +39,7 @@ Traffic classes are specified through object identifier (OID) method requests of
 
 -   The transmit bandwidth allocated to each traffic class that uses the ETS TSA.
 
-OID method requests of [OID\_QOS\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451835) also specify traffic classifications. These classifications define the relationship between egress packets and IEEE 802.1p priority levels. For more information, see [NDIS QoS Traffic Classifications](ndis-qos-traffic-classifications.md).
+OID method requests of [OID\_QOS\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-qos-parameters) also specify traffic classifications. These classifications define the relationship between egress packets and IEEE 802.1p priority levels. For more information, see [NDIS QoS Traffic Classifications](ndis-qos-traffic-classifications.md).
 
  
 

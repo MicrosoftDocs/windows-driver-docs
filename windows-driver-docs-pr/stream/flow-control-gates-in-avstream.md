@@ -20,25 +20,25 @@ ms.localizationpriority: medium
 
 
 
-AVStream uses logic gates as a control flow mechanism. Each logic gate is represented by a [**KSGATE**](https://msdn.microsoft.com/library/windows/hardware/ff562566) structure.
+AVStream uses logic gates as a control flow mechanism. Each logic gate is represented by a [**KSGATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksgate) structure.
 
-AVStream initializes each filter or pin with a single AND gate. A minidriver can then use this mechanism to determine when that specific object can process data. To retrieve the processing control gate for a pin, the minidriver calls [**KsPinGetAndGate**](https://msdn.microsoft.com/library/windows/hardware/ff563502). To retrieve the processing control gate for a filter, call [**KsFilterGetAndGate**](https://msdn.microsoft.com/library/windows/hardware/ff562542).
+AVStream initializes each filter or pin with a single AND gate. A minidriver can then use this mechanism to determine when that specific object can process data. To retrieve the processing control gate for a pin, the minidriver calls [**KsPinGetAndGate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspingetandgate). To retrieve the processing control gate for a filter, call [**KsFilterGetAndGate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksfiltergetandgate).
 
-To create new logic gates, the minidriver calls [**KsGateInitializeAnd**](https://msdn.microsoft.com/library/windows/hardware/ff562574) or [**KsGateInitializeOr**](https://msdn.microsoft.com/library/windows/hardware/ff562576). You can use the output of one gate as an input to another gate, thereby forwarding state transitions. To do this, supply a *NextOrGate* or *NextAndGate* parameter in these calls.
+To create new logic gates, the minidriver calls [**KsGateInitializeAnd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksgateinitializeand) or [**KsGateInitializeOr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksgateinitializeor). You can use the output of one gate as an input to another gate, thereby forwarding state transitions. To do this, supply a *NextOrGate* or *NextAndGate* parameter in these calls.
 
-To close an existing input to a logic gate, you can call [**KsGateTurnInputOff**](https://msdn.microsoft.com/library/windows/hardware/ff562589). The minidriver might make this call to stop and close an active pin, or to suspend processing for an indefinite period of time.
+To close an existing input to a logic gate, you can call [**KsGateTurnInputOff**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksgateturninputoff). The minidriver might make this call to stop and close an active pin, or to suspend processing for an indefinite period of time.
 
-Similarly, call [**KsGateTurnInputOn**](https://msdn.microsoft.com/library/windows/hardware/ff562591) to open an existing input to a specific gate.
+Similarly, call [**KsGateTurnInputOn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksgateturninputon) to open an existing input to a specific gate.
 
-When a thread is ready to process, it attempts to capture the *on* input of the AND gate that controls processing for the processing object. To do this, the minidriver calls [**KsGateCaptureThreshold**](https://msdn.microsoft.com/library/windows/hardware/ff562571).
+When a thread is ready to process, it attempts to capture the *on* input of the AND gate that controls processing for the processing object. To do this, the minidriver calls [**KsGateCaptureThreshold**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksgatecapturethreshold).
 
 If the AND gate is open, AVStream turns off an input to the gate, and processing begins. Since the gate is now closed during processing, no other thread can capture the *on* input of the gate. Only one thread can process data at a time.
 
-To check the status of a gate without modifying it, the minidriver can call [**KsGateGetStateUnsafe**](https://msdn.microsoft.com/library/windows/hardware/ff562572). Note, however, that this function does not handle synchronization.
+To check the status of a gate without modifying it, the minidriver can call [**KsGateGetStateUnsafe**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksgategetstateunsafe). Note, however, that this function does not handle synchronization.
 
-To delete a logic gate, call [**KsGateTerminateAnd**](https://msdn.microsoft.com/library/windows/hardware/ff562586) or [**KsGateTerminateOr**](https://msdn.microsoft.com/library/windows/hardware/ff562588). The gate that you are deleting must be at the beginning of a gate chain.
+To delete a logic gate, call [**KsGateTerminateAnd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksgateterminateand) or [**KsGateTerminateOr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksgateterminateor). The gate that you are deleting must be at the beginning of a gate chain.
 
-To attach a pin as an input to a logic gate, and then to connect the same logic gate as input to a filter's AND gate, call [**KsPinAttachAndGate**](https://msdn.microsoft.com/library/windows/hardware/ff563491) or [**KsPinAttachOrGate**](https://msdn.microsoft.com/library/windows/hardware/ff563492).
+To attach a pin as an input to a logic gate, and then to connect the same logic gate as input to a filter's AND gate, call [**KsPinAttachAndGate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspinattachandgate) or [**KsPinAttachOrGate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspinattachorgate).
 
 ### Determining Gate Status
 

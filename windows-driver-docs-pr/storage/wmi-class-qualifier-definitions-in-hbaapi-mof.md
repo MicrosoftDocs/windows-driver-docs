@@ -24,7 +24,7 @@ When one of the qualifiers that are described in this section is applied to a da
 
 However, by including *Hbaapi.h* your driver or application can use a set of symbolic constants that were defined with a view to providing an easy-to-remember name for each value associated with the WMI class qualifiers that are defined in *Hbaapi.mof*.
 
-For a general discussion of WMI class qualifiers, see [WMI Class Qualifiers](https://msdn.microsoft.com/library/windows/hardware/ff566348).
+For a general discussion of WMI class qualifiers, see [WMI Class Qualifiers](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-class-qualifiers).
 
  
 

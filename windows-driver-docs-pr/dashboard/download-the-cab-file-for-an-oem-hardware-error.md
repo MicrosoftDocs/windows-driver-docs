@@ -26,7 +26,7 @@ Use this method in the Microsoft Store analytics API to download the CAB file th
 You can get other info about OEM hardware errors by using the [get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md) and [get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md) methods in the Microsoft Store analytics API.
 
 > [!NOTE]
-> This method can only be used by developer accounts that belong to the [Partner Center program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
+> This method can only be used by developer accounts that belong to the [Partner Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
 
 ## Prerequisites
 

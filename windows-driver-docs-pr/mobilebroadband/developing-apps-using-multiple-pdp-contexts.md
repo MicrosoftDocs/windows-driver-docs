@@ -41,7 +41,7 @@ You can use multiple PDP contexts to enable premium services.
 
 UWP mobile broadband apps can take advantage of multiple PDP contexts to activate a special PDP context and specify rules to route data traffic. These apps can create rules for specific destinations or for all data traffic.
 
-When the mobile broadband app needs to exchange data with the network, it checks the available and connected networks. If the mobile broadband app has a special rule for any of these networks, it uses the Connection Manager API to open a special PDP context. If this connection is successful, the PDP context provides routing rules for this connection and transfers the data using networking APIs. The mobile broadband app should repeat this if it receives the [**NetworkStatusChanged**](https://msdn.microsoft.com/library/windows/apps/br207299) event to see whether any connections have changed and whether it needs to open a PDP context for the new connection.
+When the mobile broadband app needs to exchange data with the network, it checks the available and connected networks. If the mobile broadband app has a special rule for any of these networks, it uses the Connection Manager API to open a special PDP context. If this connection is successful, the PDP context provides routing rules for this connection and transfers the data using networking APIs. The mobile broadband app should repeat this if it receives the [**NetworkStatusChanged**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.NetworkInformation#Windows_Networking_Connectivity_NetworkInformation_NetworkStatusChanged) event to see whether any connections have changed and whether it needs to open a PDP context for the new connection.
 
 ![figure 2](images/mb-pdp-fig2.jpg)
 
@@ -51,10 +51,10 @@ For sending data by using a special PDP context, the Microsoft Store app must us
 
 ### <span id="HTTP-based_APIs"></span><span id="http-based_apis"></span><span id="HTTP-BASED_APIS"></span>HTTP-based APIs
 
-HTTP-based APIs, such as [**XMLHTTPRequest**](https://msdn.microsoft.com/library/windows/apps/br229787), [IXHR2](https://msdn.microsoft.com/library/windows/desktop/hh831163), [**Windows.Web.Syndication**](https://msdn.microsoft.com/library/windows/apps/br243632), and [**Windows.Web.AtomPub**](https://msdn.microsoft.com/library/windows/apps/br210609), and APIs based on the Windows HTTP protocol, such as JQuery and [**Windows.Web.Http**](https://msdn.microsoft.com/library/windows/apps/dn279692), do not have the ability to bind to a specific interface. For these APIs, Windows handles the routing of data to a special PDP context by using policies. Once the special PDP context is activated, the app can specify routing rules based on destination and special PDP context. The destination can be domain name or IP address, such as video.fabrikam.com, .contoso.com, or 123.23.34.333. After specifying the routing rules, if the app uses any of the above HTTP APIs to transfer the data, Windows will send the data to the special PDP context based on routing rules. Once the app has finished transferring data, it should disconnect the special PDP context and remove the route policy.
+HTTP-based APIs, such as [**XMLHTTPRequest**](https://docs.microsoft.com/previous-versions/windows/apps/br229787(v=win.10)), [IXHR2](https://docs.microsoft.com/previous-versions/windows/desktop/ixhr2/ixmlhttprequest2-portal), [**Windows.Web.Syndication**](https://docs.microsoft.com/uwp/api/Windows.Web.Syndication), and [**Windows.Web.AtomPub**](https://docs.microsoft.com/uwp/api/Windows.Web.AtomPub), and APIs based on the Windows HTTP protocol, such as JQuery and [**Windows.Web.Http**](https://docs.microsoft.com/uwp/api/Windows.Web.Http), do not have the ability to bind to a specific interface. For these APIs, Windows handles the routing of data to a special PDP context by using policies. Once the special PDP context is activated, the app can specify routing rules based on destination and special PDP context. The destination can be domain name or IP address, such as video.fabrikam.com, .contoso.com, or 123.23.34.333. After specifying the routing rules, if the app uses any of the above HTTP APIs to transfer the data, Windows will send the data to the special PDP context based on routing rules. Once the app has finished transferring data, it should disconnect the special PDP context and remove the route policy.
 
 **Note**  
-[**Background Transfer APIs**](https://msdn.microsoft.com/library/windows/apps/br207242) and [HTTP Client(C#) APIs](https://msdn.microsoft.com/library/windows/apps/system.net.http.httpclient.aspx) cannot use a route policy.
+[**Background Transfer APIs**](https://docs.microsoft.com/uwp/api/Windows.Networking.BackgroundTransfer) and [HTTP Client(C#) APIs](https://docs.microsoft.com/previous-versions/visualstudio/hh193681(v=vs.118)) cannot use a route policy.
 
  
 
@@ -62,7 +62,7 @@ HTTP-based APIs, such as [**XMLHTTPRequest**](https://msdn.microsoft.com/library
 
 ### <span id="Socket-based_APIs"></span><span id="socket-based_apis"></span><span id="SOCKET-BASED_APIS"></span>Socket-based APIs
 
-Socket-based APIs available in the [**Windows.Networking.Sockets**](https://msdn.microsoft.com/library/windows/apps/br226960) namespace, such as TCP, UDP, and stream sockets, provide a mechanism to bind to a specific interface. When an app uses the socket APIs, it should bind to specific interface for routing data to the special PDP context. Once the special PDP context is activated, the [**AcquireConnectionAsync**](https://msdn.microsoft.com/library/windows/apps/dn266103) API provides the interface information to the app. It can use this information to bind to a specific interface and start transferring the data.
+Socket-based APIs available in the [**Windows.Networking.Sockets**](https://docs.microsoft.com/uwp/api/Windows.Networking.Sockets) namespace, such as TCP, UDP, and stream sockets, provide a mechanism to bind to a specific interface. When an app uses the socket APIs, it should bind to specific interface for routing data to the special PDP context. Once the special PDP context is activated, the [**AcquireConnectionAsync**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AcquireConnectionAsync_Windows_Networking_Connectivity_CellularApnContext_) API provides the interface information to the app. It can use this information to bind to a specific interface and start transferring the data.
 
 ![figure 4](images/mb-pdp-fig3.jpg)
 
@@ -70,13 +70,13 @@ Socket-based APIs available in the [**Windows.Networking.Sockets**](https://msdn
 
 Windows 8.1 and Windows 10 have added the following APIs to support multiple PDP contexts:
 
--   [**CellularApnContext**](https://msdn.microsoft.com/library/windows/apps/dn266056) This class contains properties used to specify an access point on a network. An **CellularApnContext** object is passed with an [**AcquireConnectionAsync**](https://msdn.microsoft.com/library/windows/apps/dn266103) call to establish a connection to a specific access point.
+-   [**CellularApnContext**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.CellularApnContext) This class contains properties used to specify an access point on a network. An **CellularApnContext** object is passed with an [**AcquireConnectionAsync**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AcquireConnectionAsync_Windows_Networking_Connectivity_CellularApnContext_) call to establish a connection to a specific access point.
 
--   [**ConnectivityManager::AcquireConnectionAsync**](https://msdn.microsoft.com/library/windows/apps/dn266103) This API activates a new connection for a specified Access Point Name (APN) or PDP context. This asynchronous method allows an app to request a connection to a specific APN or PDP context with the appropriate configuration information. After the special APN is activated, it appears as a new virtual interface to Windows and apps.
+-   [**ConnectivityManager::AcquireConnectionAsync**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AcquireConnectionAsync_Windows_Networking_Connectivity_CellularApnContext_) This API activates a new connection for a specified Access Point Name (APN) or PDP context. This asynchronous method allows an app to request a connection to a specific APN or PDP context with the appropriate configuration information. After the special APN is activated, it appears as a new virtual interface to Windows and apps.
 
--   [**ConnectivityManager::AddHttpRoutePolicy**](https://msdn.microsoft.com/library/windows/apps/dn266105) This method adds a policy to be used by the HTTP stack traffic for routing data to a special PDP context. The app can specify the policy based on destinations, such as domain name and IP address, and special PDP context profile. The Windows HTTP stack uses the policy for routing the data to the special PDP context once the app has created the policy.
+-   [**ConnectivityManager::AddHttpRoutePolicy**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_AddHttpRoutePolicy_Windows_Networking_Connectivity_RoutePolicy_) This method adds a policy to be used by the HTTP stack traffic for routing data to a special PDP context. The app can specify the policy based on destinations, such as domain name and IP address, and special PDP context profile. The Windows HTTP stack uses the policy for routing the data to the special PDP context once the app has created the policy.
 
--   [**ConnectivityManager::RemoveHttpRoutePolicy**](https://msdn.microsoft.com/library/windows/apps/dn266106) This method removes a previously added HTTP route policy.
+-   [**ConnectivityManager::RemoveHttpRoutePolicy**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectivityManager#Windows_Networking_Connectivity_ConnectivityManager_RemoveHttpRoutePolicy_Windows_Networking_Connectivity_RoutePolicy_) This method removes a previously added HTTP route policy.
 
 The following code shows how to use these APIs for an HTTP-based data transfer:
 
@@ -170,7 +170,7 @@ socket.close();
 currentConnectionSession.close();
 ```
 
-Your app must handle [**NetworkStatusChanged**](https://msdn.microsoft.com/library/windows/apps/br207299) event to handle any network transitions on the special PDP context connection.
+Your app must handle [**NetworkStatusChanged**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.NetworkInformation#Windows_Networking_Connectivity_NetworkInformation_NetworkStatusChanged) event to handle any network transitions on the special PDP context connection.
 
 ### <span id="Scenario__Premium_mobile_broadband_app_provides_free_data_access_using_special_APN"></span><span id="scenario__premium_mobile_broadband_app_provides_free_data_access_using_special_apn"></span><span id="SCENARIO__PREMIUM_MOBILE_BROADBAND_APP_PROVIDES_FREE_DATA_ACCESS_USING_SPECIAL_APN"></span>Scenario: Premium mobile broadband app provides free data access using special APN
 
@@ -527,7 +527,7 @@ Audio streaming apps can play audio or video streams using a special PDP context
 
 ![streaming app workflow](images/mb-pdp-fig6.jpg)
 
-You can use [Player Framework](http://playerframework.codeplex.com/) or other video frameworks based on the [WinInet](https://msdn.microsoft.com/library/windows/desktop/aa385331) APIs.
+You can use [Player Framework](https://archive.codeplex.com/?p=playerframework) or other video frameworks based on the [WinInet](https://docs.microsoft.com/windows/desktop/WinInet/portal) APIs.
 
 ## <span id="InstantGo"></span><span id="instantgo"></span><span id="INSTANTGO"></span>InstantGo
 
@@ -552,23 +552,23 @@ The following scenarios are supported in InstantGo:
 
 -   Playing background audio and music
 
-For more info on InstantGo, see [Introduction to InstantGo](https://msdn.microsoft.com/library/windows/hardware/mt282515).
+For more info on InstantGo, see [Introduction to InstantGo](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby).
 
 Your mobile broadband app can use a special PDP context for enabling some of these InstantGo scenarios. You need to use following logic to reconnect to the special PDP context if it is disconnected because it is out of coverage. When the device enters the Connected Standby power state, Windows will disconnect all the connections to special PDP contexts after 10 minutes and your app has to request the connection again.
 
-For more info on how you can enable background networking in your mobile broadband apps, see [Introduction to Background Tasks](http://www.microsoft.com/download/details.aspx?id=27411) and [Background Networking](http://www.microsoft.com/download/details.aspx?id=28999).
+For more info on how you can enable background networking in your mobile broadband apps, see [Introduction to Background Tasks](https://www.microsoft.com/download/details.aspx?id=27411) and [Background Networking](https://www.microsoft.com/download/details.aspx?id=28999).
 
 ![instantgo with pdp context](images/mb-pdp-fig5.jpg)
 
 ### <span id="Audio_streaming_in_background"></span><span id="audio_streaming_in_background"></span><span id="AUDIO_STREAMING_IN_BACKGROUND"></span>Audio streaming in background
 
-Audio streaming apps can audio in background and in the Connected Standby power state by using a special PDP context. For more info on how to play audio in the background, see [How to How to play audio in the background](https://msdn.microsoft.com/library/windows/apps/hh700367).
+Audio streaming apps can audio in background and in the Connected Standby power state by using a special PDP context. For more info on how to play audio in the background, see [How to How to play audio in the background](https://docs.microsoft.com/previous-versions/windows/apps/hh700367(v=win.10)).
 
 ### <span id="Real-time_communication_apps"></span><span id="real-time_communication_apps"></span><span id="REAL-TIME_COMMUNICATION_APPS"></span>Real-time communication apps
 
-Real-time communication apps, such as VoIP or chat apps, can receive a wake up trigger on a special PDP context. The wake up trigger allows your app to be triggered at all times including when the system is in the Connected Standby power state. For more info on how to enable the wake up trigger, see [Background Networking](http://www.microsoft.com/download/details.aspx?id=28999).
+Real-time communication apps, such as VoIP or chat apps, can receive a wake up trigger on a special PDP context. The wake up trigger allows your app to be triggered at all times including when the system is in the Connected Standby power state. For more info on how to enable the wake up trigger, see [Background Networking](https://www.microsoft.com/download/details.aspx?id=28999).
 
-To enable this scenario, the mobile broadband device should support wake up filters on special PDP context, as stated in the [Mobile Broadband Interface Model (MBIM) specification](https://msdn.microsoft.com/library/windows/hardware/dn265427).
+To enable this scenario, the mobile broadband device should support wake up filters on special PDP context, as stated in the [Mobile Broadband Interface Model (MBIM) specification](https://docs.microsoft.com/windows-hardware/drivers/network/mb-interface-model).
 
 ## Mobile broadband devices
 

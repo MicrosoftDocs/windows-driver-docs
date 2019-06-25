@@ -77,7 +77,7 @@ Remarks
 
 **WdfObjectAddCustomType** is a simplified version of [**WdfObjectAddCustomTypeWithData**](wdfobjectaddcustomtypewithdata.md).
 
-For more information about object driver types, see [Framework Object Custom Types](https://msdn.microsoft.com/library/windows/hardware/hh406457).
+For more information about object driver types, see [Framework Object Custom Types](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-custom-types).
 
 Examples
 --------

@@ -18,11 +18,11 @@ ms.localizationpriority: medium
 ## <span id="ddk_file_system_filter_driver_classes_and_class_guids_if"></span><span id="DDK_FILE_SYSTEM_FILTER_DRIVER_CLASSES_AND_CLASS_GUIDS_IF"></span>
 
 
-Microsoft Windows XP and later operating systems provide setup classes for file system filter drivers. These classes provide a subset of the functionality that system-supplied device setup classes provide for hardware devices. (For more information about setup classes for hardware devices, see [Device Setup Classes](https://msdn.microsoft.com/library/windows/hardware/ff541509).)
+Microsoft Windows XP and later operating systems provide setup classes for file system filter drivers. These classes provide a subset of the functionality that system-supplied device setup classes provide for hardware devices. (For more information about setup classes for hardware devices, see [Device Setup Classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).)
 
 Each setup class is associated with a class GUID. The system-defined class GUIDs are defined in devguid.h.
 
-This topic lists the setup classes for file system filter drivers. In the definition for each class, the **Class** and **ClassGuid** entries contain the values that you should specify in the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of a filter's INF file. Your filter driver should use the class and GUID that match the load order group that is specified in your driver's INF file.
+This topic lists the setup classes for file system filter drivers. In the definition for each class, the **Class** and **ClassGuid** entries contain the values that you should specify in the [**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) of a filter's INF file. Your filter driver should use the class and GUID that match the load order group that is specified in your driver's INF file.
 
 Supplying the appropriate class GUID value in the INF file for a device, rather than, or in addition to, the **Class** = *class-name* entry, significantly improves the performance of searching system INF files.
 

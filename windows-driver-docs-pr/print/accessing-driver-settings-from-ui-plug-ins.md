@@ -16,13 +16,13 @@ ms.localizationpriority: medium
 
 
 
-A UI plug-in can obtain the current status of printer features and other internal information. The [**IPrintOemDriverUI::DrvGetDriverSetting**](https://msdn.microsoft.com/library/windows/hardware/ff553114) COM interface method is implemented within the printer interface DLL for Microsoft's printer drivers and can be called by UI plug-ins.
+A UI plug-in can obtain the current status of printer features and other internal information. The [**IPrintOemDriverUI::DrvGetDriverSetting**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriverui-drvgetdriversetting) COM interface method is implemented within the printer interface DLL for Microsoft's printer drivers and can be called by UI plug-ins.
 
 Additionally, the following methods allow UI plug-ins to modify driver information:
 
-[**IPrintOemDriverUI::DrvUpdateUISetting**](https://msdn.microsoft.com/library/windows/hardware/ff553115) allows a UI plug-in to notify the driver when a user has modified driver settings.
+[**IPrintOemDriverUI::DrvUpdateUISetting**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriverui-drvupdateuisetting) allows a UI plug-in to notify the driver when a user has modified driver settings.
 
-[**IPrintOemDriverUI::DrvUpgradeRegistrySetting**](https://msdn.microsoft.com/library/windows/hardware/ff553118) allows a UI plug-in to modify device settings in the registry, so that registry settings used by older driver versions can be updated.
+[**IPrintOemDriverUI::DrvUpgradeRegistrySetting**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriverui-drvupgraderegistrysetting) allows a UI plug-in to modify device settings in the registry, so that registry settings used by older driver versions can be updated.
 
  
 

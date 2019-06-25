@@ -15,7 +15,7 @@ The **SIO\_WSK\_SET\_TCP\_SILENT\_MODE** socket I/O control operation allows a W
 
 A TCP connection in silent mode will not send any data or control packets on the wire. This socket I/O control operation applies only to connected TCP sockets. It is not supported on loopback.
 
-To perform this operation, call the [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) function with the following parameters.
+To perform this operation, call the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 Parameters
 ----------
@@ -47,13 +47,13 @@ Use **NULL** for this operation.
 Remarks
 -------
 
-A WSK application must specify a pointer to an IRP when calling the [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) function to enable silent mode.
+A WSK application must specify a pointer to an IRP when calling the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function to enable silent mode.
 
-The WSK application before calling [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) to enable silent mode must ensure that there are no pending send or disconnect requests.
+The WSK application before calling [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) to enable silent mode must ensure that there are no pending send or disconnect requests.
 
-[**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) will return **STATUS\_SUCCESS** when silent mode is enabled. Once silent mode is enabled, send and disconnect requests will be failed with **STATUS\_INVALID\_DEVICE\_STATE** and all received control or data packets will be discarded silently.
+[**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) will return **STATUS\_SUCCESS** when silent mode is enabled. Once silent mode is enabled, send and disconnect requests will be failed with **STATUS\_INVALID\_DEVICE\_STATE** and all received control or data packets will be discarded silently.
 
-The only valid operation on this socket is [**WskCloseSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571124).
+The only valid operation on this socket is [**WskCloseSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_close_socket).
 
 Requirements
 ------------
@@ -78,9 +78,9 @@ Requirements
 ## See also
 
 
-[**WskCloseSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571124)
+[**WskCloseSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_close_socket)
 
-[**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127)
+[**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket)
 
  
 

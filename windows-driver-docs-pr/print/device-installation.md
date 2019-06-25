@@ -46,7 +46,7 @@ Initial installation of your port-connected device can occur in many ways, and t
 
  
 
-For more information, see [System Power States](https://msdn.microsoft.com/library/windows/hardware/ff564571) in the WDK documentation and [System Power States](https://go.microsoft.com/fwlink/p/?linkid=51899) in the Microsoft Windows SDK documentation.
+For more information, see [System Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/system-power-states) in the WDK documentation and [System Power States](https://go.microsoft.com/fwlink/p/?linkid=51899) in the Microsoft Windows SDK documentation.
 
 The most common system power state at which initial installation of your device will occur is System Working State S0. Most of your device installation testing should initially be focused here, but it is important to verify installation during other system power states as well.
 

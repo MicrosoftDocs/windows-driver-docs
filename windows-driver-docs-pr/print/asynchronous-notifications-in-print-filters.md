@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Asynchronous Notifications in Print Filters
 
 
-The print filter pipeline has an asynchronous notification feature that is very similar to the asynchronous notification that is supported in the print spooler for applications. The [**RouterCreatePrintAsyncNotificationChannel**](https://msdn.microsoft.com/library/windows/hardware/ff562009) function that is available in the print spooler is not available to print filters. Print filters must use the [IPrintClassObjectFactory](https://msdn.microsoft.com/library/windows/hardware/ff551955) interface to create IPrintAsyncNotify objects.
+The print filter pipeline has an asynchronous notification feature that is very similar to the asynchronous notification that is supported in the print spooler for applications. The [**RouterCreatePrintAsyncNotificationChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prnasntp/nf-prnasntp-routercreateprintasyncnotificationchannel) function that is available in the print spooler is not available to print filters. Print filters must use the [IPrintClassObjectFactory](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintclassobjectfactory) interface to create IPrintAsyncNotify objects.
 
 This topic describes how to use the asynchronous notification feature in a print filter.
 
@@ -24,7 +24,7 @@ This topic describes how to use the asynchronous notification feature in a print
 
 ### IPrintClassObjectFactory
 
-The [IPrintClassObjectFactory](https://msdn.microsoft.com/library/windows/hardware/ff551955) interface provides access to the notification interfaces. The following code example illustrates how a filter can obtain this interface from the property bag.
+The [IPrintClassObjectFactory](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintclassobjectfactory) interface provides access to the notification interfaces. The following code example illustrates how a filter can obtain this interface from the property bag.
 
 ```cpp
 // This interface is defined as a private member variable in the filter class

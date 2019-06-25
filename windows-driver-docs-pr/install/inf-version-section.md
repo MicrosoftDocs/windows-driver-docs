@@ -64,7 +64,7 @@ Some class installers put additional requirements on how the signature value mus
 An INF must supply OS-specific installation information by appending system-defined extensions to its *DDInstall* sections, whether the *signature-name* is <strong>$Windows NT$</strong>or **$Chicago$**. (See [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md) for a discussion of these extensions.)
 
 <a href="" id="class-class-name"></a>**Class=**<em>class-name</em>  
-For any standard type of device, this specifies the name of the [device setup class](device-setup-classes.md) for the type of device that is installed by using this INF file. This name is usually one of the system-defined class names, such as **Net** or **Display,** which are listed in *Devguid.h*. For more information, see [System-Supplied Device Setup Classes](https://msdn.microsoft.com/library/windows/hardware/ff553419).
+For any standard type of device, this specifies the name of the [device setup class](device-setup-classes.md) for the type of device that is installed by using this INF file. This name is usually one of the system-defined class names, such as **Net** or **Display,** which are listed in *Devguid.h*. For more information, see [System-Supplied Device Setup Classes](https://docs.microsoft.com/previous-versions/ff553419(v=vs.85)).
 
 If an INF specifies a **Class,** it should also specify the corresponding system-defined GUID value for its **ClassGUID** entry. Specifying the matching GUID value for a device of any predefined device setup class can install the device and its drivers faster because this helps the system setup code to optimize its INF searching.
 
@@ -81,7 +81,7 @@ Specifies the [device setup class](device-setup-classes.md) GUID. The GUID value
 
 This GUID value specifies the device setup class subkey in the registry **...\\Class** tree under which to write registry information for the drivers of devices that are installed from this INF file. This class-specific GUID value also identifies the device class installer for the type of device and class-specific property page provider, if any.
 
-For a new [device setup class](device-setup-classes.md), the INF must specify a newly generated **ClassGUID** value. For more information about how to create GUIDs, see [Using GUIDs in Drivers](https://msdn.microsoft.com/library/windows/hardware/ff565392). Also see Device Setup Classes.
+For a new [device setup class](device-setup-classes.md), the INF must specify a newly generated **ClassGUID** value. For more information about how to create GUIDs, see [Using GUIDs in Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-guids-in-drivers). Also see Device Setup Classes.
 
 **Note**  This entry is required for device drivers that are installed through the PnP manager.
 

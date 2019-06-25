@@ -36,7 +36,7 @@ Indicates that a hardware failure occurred.
 
 ### Comments
 
-The value of *pSrb*-&gt;**CommandData**.**DataBufferArray** points to an array of [**KSSTREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567138) structures, which together describe the data buffer. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure. *pSrb*-&gt;**CommandData**.**NumberOfBuffers** specifies the size of the array.
+The value of *pSrb*-&gt;**CommandData**.**DataBufferArray** points to an array of [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksstream_header) structures, which together describe the data buffer. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_request_block) structure. *pSrb*-&gt;**CommandData**.**NumberOfBuffers** specifies the size of the array.
 
 **When the SRB\_READ\_DATA command is received by the minidriver, the responding minidriver routine should:**
 

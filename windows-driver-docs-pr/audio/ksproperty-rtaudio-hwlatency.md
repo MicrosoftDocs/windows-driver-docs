@@ -46,7 +46,7 @@ The following table summarizes the features of this property.
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p><a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_hwlatency"><strong>KSRTAUDIO_HWLATENCY</strong></a></p></td>
 </tr>
 </tbody>
@@ -61,7 +61,7 @@ A KSPROPERTY\_RTAUDIO\_HWLATENCY property request returns STATUS\_SUCCESS to ind
 Remarks
 -------
 
-After the [WaveRT miniport driver](https://msdn.microsoft.com/library/windows/hardware/ff538845) has allocated the cyclic buffer (see [**KSPROPERTY\_RTAUDIO\_BUFFER**](ksproperty-rtaudio-buffer.md)) the client can send a KSPROPERTY\_RTAUDIO\_HWLATENCY property request to the driver for hardware-latency information.
+After the [WaveRT miniport driver](https://docs.microsoft.com/windows-hardware/drivers/audio/wavert-miniport-driver) has allocated the cyclic buffer (see [**KSPROPERTY\_RTAUDIO\_BUFFER**](ksproperty-rtaudio-buffer.md)) the client can send a KSPROPERTY\_RTAUDIO\_HWLATENCY property request to the driver for hardware-latency information.
 
 Requirements
 ------------
@@ -86,13 +86,13 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
 
-[**KSRTAUDIO\_HWLATENCY**](https://msdn.microsoft.com/library/windows/hardware/ff537496)
+[**KSRTAUDIO\_HWLATENCY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_hwlatency)
 
 [**KSPROPERTY\_RTAUDIO\_BUFFER**](ksproperty-rtaudio-buffer.md)
 
-[WaveRT miniport driver](https://msdn.microsoft.com/library/windows/hardware/ff538845)
+[WaveRT miniport driver](https://docs.microsoft.com/windows-hardware/drivers/audio/wavert-miniport-driver)
 
  
 

@@ -81,7 +81,7 @@ Requirements
 ## See also
 
 
-[**BdaPropertyNodeMethods**](https://msdn.microsoft.com/library/windows/hardware/ff556491)
+[**BdaPropertyNodeMethods**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdapropertynodemethods)
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 

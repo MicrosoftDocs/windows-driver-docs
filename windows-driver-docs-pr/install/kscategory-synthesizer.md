@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_SYNTHESIZER
 
 
-The KSCATEGORY_SYNTHESIZER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that converts MIDI data to either wave audio samples or an analog output signal.
+The KSCATEGORY_SYNTHESIZER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that converts MIDI data to either wave audio samples or an analog output signal.
 
 <table>
 <colgroup>
@@ -52,9 +52,9 @@ Drivers for KS audio adapter devices register instances of KSCATEGORY_SYNTHESIZE
 
 For an example of how to register this functional category in an INF file, see the *Ddksynth.inf* INF file that is included with the software synthesizer sample in the *src\\audio\\ddksynth* directory of the WDK.
 
-For general information about synthesizers, see [MIDI and DirectMusic Filters](https://msdn.microsoft.com/library/windows/hardware/ff537520).
+For general information about synthesizers, see [MIDI and DirectMusic Filters](https://docs.microsoft.com/windows-hardware/drivers/audio/midi-and-directmusic-filters).
 
-For general information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813).
+For general information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://docs.microsoft.com/windows-hardware/drivers/audio/installing-device-interfaces-for-an-audio-adapter).
 
 Requirements
 ------------

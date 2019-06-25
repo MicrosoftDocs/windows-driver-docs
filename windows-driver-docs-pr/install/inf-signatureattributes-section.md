@@ -116,7 +116,7 @@ WindowsHello=true
 ## See also
 
 
-[Dashboard Help](https://msdn.microsoft.com/library/windows/hardware/br230803)
+[Dashboard Help](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
  
 

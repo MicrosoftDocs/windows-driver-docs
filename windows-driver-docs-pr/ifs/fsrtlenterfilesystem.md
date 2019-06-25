@@ -47,15 +47,15 @@ Every file system driver entry point routine must call **FsRtlEnterFileSystem** 
 
 Every successful call to **FsRtlEnterFileSystem** must be matched by a subsequent call to [**FsRtlExitFileSystem**](fsrtlexitfilesystem.md).
 
-Note that, unlike local file systems and network redirectors, file system filter drivers should never disable delivery of normal kernel APCs (by calling **FsRtlEnterFileSystem** or [**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021) or by raising to IRQL APC\_LEVEL) across a call to [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336).
+Note that, unlike local file systems and network redirectors, file system filter drivers should never disable delivery of normal kernel APCs (by calling **FsRtlEnterFileSystem** or [**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keentercriticalregion) or by raising to IRQL APC\_LEVEL) across a call to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver).
 
 File system filter drivers should disable normal kernel APCs before acquiring any resource. File system filter drivers acquire resources with the following routines:
 
--   [**ExAcquireResourceExclusive**](https://msdn.microsoft.com/library/windows/hardware/ff544345)
+-   [**ExAcquireResourceExclusive**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mmcreatemdl)
 
 -   [**ExAcquireResourceExclusiveLite**](https://msdn.microsoft.com/library/windows/hardware/ff544351)
 
--   [**ExAcquireResourceShared**](https://msdn.microsoft.com/library/windows/hardware/ff544359)
+-   [**ExAcquireResourceShared**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mmcreatemdl)
 
 -   [**ExAcquireResourceSharedLite**](https://msdn.microsoft.com/library/windows/hardware/ff544363)
 
@@ -92,11 +92,11 @@ Requirements
 ## See also
 
 
-[**ExAcquireResourceExclusive**](https://msdn.microsoft.com/library/windows/hardware/ff544345)
+[**ExAcquireResourceExclusive**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mmcreatemdl)
 
 [**ExAcquireResourceExclusiveLite**](https://msdn.microsoft.com/library/windows/hardware/ff544351)
 
-[**ExAcquireResourceShared**](https://msdn.microsoft.com/library/windows/hardware/ff544359)
+[**ExAcquireResourceShared**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mmcreatemdl)
 
 [**ExAcquireResourceSharedLite**](https://msdn.microsoft.com/library/windows/hardware/ff544363)
 
@@ -104,11 +104,11 @@ Requirements
 
 [**ExAcquireSharedStarveExclusive**](https://msdn.microsoft.com/library/windows/hardware/ff544367)
 
-[**ExReleaseResource**](https://msdn.microsoft.com/library/windows/hardware/ff545571)
+[**ExReleaseResource**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mmcreatemdl)
 
-[**ExReleaseResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545597)
+[**ExReleaseResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreleaseresourcelite)
 
-[**ExTryToAcquireFastMutex**](https://msdn.microsoft.com/library/windows/hardware/ff545647)
+[**ExTryToAcquireFastMutex**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545647(v=vs.85))
 
 [**FltAcquireResourceExclusive**](fltacquireresourceexclusive.md)
 
@@ -118,11 +118,11 @@ Requirements
 
 [**FsRtlExitFileSystem**](fsrtlexitfilesystem.md)
 
-[**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336)
+[**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver)
 
-[**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021)
+[**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keentercriticalregion)
 
-[**KeRaiseIrqlToDpcLevel**](https://msdn.microsoft.com/library/windows/hardware/ff553084)
+[**KeRaiseIrqlToDpcLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keraiseirqltodpclevel)
 
  
 

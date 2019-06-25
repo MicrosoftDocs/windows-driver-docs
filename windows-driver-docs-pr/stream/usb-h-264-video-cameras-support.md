@@ -29,9 +29,9 @@ The UVC class driver Usbvideo.sys queries the video camera directly to obtain it
  
 
 ## Related topics
-[**KS\_DATAFORMAT\_H264VIDEOINFO**](https://msdn.microsoft.com/library/windows/hardware/hh463996)  
-[**KS\_DATARANGE\_H264\_VIDEO**](https://msdn.microsoft.com/library/windows/hardware/hh464002)  
-[**KS\_H264VIDEOINFO**](https://msdn.microsoft.com/library/windows/hardware/hh464008)  
+[**KS\_DATAFORMAT\_H264VIDEOINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_dataformat_h264videoinfo)  
+[**KS\_DATARANGE\_H264\_VIDEO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_datarange_h264_video)  
+[**KS\_H264VIDEOINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_h264videoinfo)  
 
 
 

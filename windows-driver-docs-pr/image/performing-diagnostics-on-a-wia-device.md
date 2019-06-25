@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-The WIA service can test a device's functionality status by calling the [**IStiUSD::Diagnostic**](https://msdn.microsoft.com/library/windows/hardware/ff543814) method. The WIA minidriver should check the hardware's current functional state and report the results. The **IStiUSD::Diagnostic** method is also called when the "Test Device" button is pressed on the WIA device's default property page (the Microsoft-provided property page).
+The WIA service can test a device's functionality status by calling the [**IStiUSD::Diagnostic**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-diagnostic) method. The WIA minidriver should check the hardware's current functional state and report the results. The **IStiUSD::Diagnostic** method is also called when the "Test Device" button is pressed on the WIA device's default property page (the Microsoft-provided property page).
 
 The following example shows an implementation of the **IStiUSD::Diagnostic** method.
 

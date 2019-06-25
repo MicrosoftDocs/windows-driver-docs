@@ -32,7 +32,7 @@ The interface plug-in is a vendor-supplied COM interface that aggregates with th
 
 Specifically, the **CreateInstance** method of the plug-in receives a pointer to KS proxy as an outer unknown.
 
-You can then query this outer object for a pointer to the MS-provided [IKsPropertySet](https://msdn.microsoft.com/library/windows/hardware/ff560718) interface:
+You can then query this outer object for a pointer to the MS-provided [IKsPropertySet](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dsound/nn-dsound-ikspropertyset) interface:
 
 ```cpp
 hResult = piOuterUnknown->QueryInterface(
@@ -44,9 +44,9 @@ Then, from **CreateInstance**, invoke the constructor of your interface to creat
 
 Provide the pointer to **IKsPropertySet** as a parameter in the invocation of the constructor. The constructor then retains the pointer to iKsPropertySet as the m\_piKsPropertySet member in the previous declaration.
 
-Now you can implement Get and Set methods in your class that call [**IKsPropertySet::Get**](https://msdn.microsoft.com/library/windows/hardware/ff560719) and [**IKsPropertySet::Set**](https://msdn.microsoft.com/library/windows/hardware/ff560721) respectively to manipulate properties that are exposed by the driver.
+Now you can implement Get and Set methods in your class that call [**IKsPropertySet::Get**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nf-ksproxy-ikspropertyset-get) and [**IKsPropertySet::Set**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dsound/nf-dsound-ikspropertyset-set) respectively to manipulate properties that are exposed by the driver.
 
-Alternatively, you can query the outer unknown for a pointer to its **IKsObject** interface. Then call [**IKsObject::KsGetObjectHandle**](https://msdn.microsoft.com/library/windows/hardware/ff559890) to obtain a file handle. Now you manipulate device properties by calling [**KsSynchronousIoControlDevice**](https://msdn.microsoft.com/library/windows/hardware/ff567143) with this file handle.
+Alternatively, you can query the outer unknown for a pointer to its **IKsObject** interface. Then call [**IKsObject::KsGetObjectHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nf-ksproxy-iksobject-ksgetobjecthandle) to obtain a file handle. Now you manipulate device properties by calling [**KsSynchronousIoControlDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kssynchronousiocontroldevice) with this file handle.
 
  
 

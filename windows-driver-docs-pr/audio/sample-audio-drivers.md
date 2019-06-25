@@ -103,7 +103,7 @@ These audio samples support previous versions of the Microsoft Windows Driver Ki
 
 For details, see the readme documentation that accompanies each of these samples in the WDK.
 
-For information on the WDK samples, see [Windows Driver Kit Samples Pack (Windows Drivers).](https://msdn.microsoft.com/library/windows/hardware/ff554118)
+For information on the WDK samples, see [Windows Driver Kit Samples Pack (Windows Drivers).](https://docs.microsoft.com/windows-hardware/drivers/samples/index)
 
  
 

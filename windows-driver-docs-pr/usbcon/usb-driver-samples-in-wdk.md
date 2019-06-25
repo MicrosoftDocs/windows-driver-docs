@@ -53,7 +53,7 @@ The topic contains basic information about the USB samples that are available fo
 ## Building a Sample
 
 
-For information about building the sample drivers, see [Developing, Testing, and Deploying Drivers](https://msdn.microsoft.com/windows-drivers/develop/visual_studio_driver_development_environment).
+For information about building the sample drivers, see [Developing, Testing, and Deploying Drivers](https://docs.microsoft.com/windows-hardware/drivers).
 
 ## Related topics
 [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)  

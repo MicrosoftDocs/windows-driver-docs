@@ -20,7 +20,7 @@ The C# version of the [Print job management and printer maintenance](https://go.
 ## <span id="Printer_maintenance"></span><span id="printer_maintenance"></span><span id="PRINTER_MAINTENANCE"></span>Printer maintenance
 
 
-Windows 8.1 introduces new printer extension interfaces in the v4 printer driver that you can use for implementing device maintenance: [**IPrinterBidiSetRequestCallback**](https://msdn.microsoft.com/library/windows/hardware/dn265385), [**IPrinterExtensionAsyncOperation**](https://msdn.microsoft.com/library/windows/hardware/dn265387) , and [**IPrinterQueue2**](https://msdn.microsoft.com/library/windows/hardware/dn265389). These interfaces make it possible to asynchronously send Bidi requests to the port monitor so that they can be translated into device and protocol-specific commands, and then sent to the printer. For more info, see [Device Maintenance (v4 Printer Driver)](https://msdn.microsoft.com/library/windows/hardware/dn265274).
+Windows 8.1 introduces new printer extension interfaces in the v4 printer driver that you can use for implementing device maintenance: [**IPrinterBidiSetRequestCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterbidisetrequestcallback), [**IPrinterExtensionAsyncOperation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterextensionasyncoperation) , and [**IPrinterQueue2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterqueue2). These interfaces make it possible to asynchronously send Bidi requests to the port monitor so that they can be translated into device and protocol-specific commands, and then sent to the printer. For more info, see [Device Maintenance (v4 Printer Driver)](https://docs.microsoft.com/windows-hardware/drivers/print/device-maintenance).
 
 **Tip**  C# and JavaScript apps can't work with COM APIs directly. If you're writing a C# or JavaScript UWP device app, use the printer extension library to access these interfaces (as shown in this topic).
 
@@ -232,7 +232,7 @@ The following steps build your app and install the device metadata.
 ## <span id="related_topics"></span>Related topics
 
 
-[Device Maintenance (v4 Printer Driver)](https://msdn.microsoft.com/library/windows/hardware/dn265274)
+[Device Maintenance (v4 Printer Driver)](https://docs.microsoft.com/windows-hardware/drivers/print/device-maintenance)
 
 [Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231)
 

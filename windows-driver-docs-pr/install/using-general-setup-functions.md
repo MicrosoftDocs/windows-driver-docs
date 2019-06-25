@@ -27,7 +27,7 @@ This section summarizes the general Setup functions. *Device installation applic
 
 -   Write log entries to the [SetupAPI text logs](setupapi-text-logs.md).
 
-Installation software typically uses these functions together with [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299) and [PnP configuration manager functions](https://msdn.microsoft.com/library/windows/hardware/ff549713).
+Installation software typically uses these functions together with [device installation functions](https://docs.microsoft.com/previous-versions/ff541299(v=vs.85)) and [PnP configuration manager functions](https://docs.microsoft.com/previous-versions/ff549713(v=vs.85)).
 
 The general Setup functions listed in this section are described in detail in the Microsoft Windows SDK documentation.
 

@@ -14,20 +14,20 @@ ms.custom: 19H1
 
 OID\_WWAN\_REGISTER\_STATE selects a network provider to register with.
 
-Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_REGISTER\_STATE**](ndis-status-wwan-register-state.md) status notification containing an [**NDIS\_WWAN\_REGISTRATION\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567917) structure to provide information about the registered network provider regardless of completing set or query requests.
+Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_REGISTER\_STATE**](ndis-status-wwan-register-state.md) status notification containing an [**NDIS\_WWAN\_REGISTRATION\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_registration_state) structure to provide information about the registered network provider regardless of completing set or query requests.
 
-Callers requesting to set the network provider to register with provide an [**NDIS\_WWAN\_SET\_REGISTER\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567926) structure to the miniport driver with the appropriate information.
+Callers requesting to set the network provider to register with provide an [**NDIS\_WWAN\_SET\_REGISTER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_register_state) structure to the miniport driver with the appropriate information.
 
 Remarks
 -------
 
-For more information about using this OID, see [WWAN Registration Operations](https://msdn.microsoft.com/library/windows/hardware/ff559116).
+For more information about using this OID, see [WWAN Registration Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-registration-operations).
 
 Miniport drivers can access the provider network when processing query or set operations, but should not access the Subscriber Identity Module (SIM card).
 
 The MB driver model supports two registration methods--automatic and manual. For CDMA-based networks, the MB driver model supports only automatic registration.
 
-Devices supporting manual registration must set the **WwanControlCaps** member in [**WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff571204) structure to WWAN\_CTRL\_CAPS\_REG\_MANUAL. Be aware that GSM-based devices must support manual registration.
+Devices supporting manual registration must set the **WwanControlCaps** member in [**WWAN\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_device_caps) structure to WWAN\_CTRL\_CAPS\_REG\_MANUAL. Be aware that GSM-based devices must support manual registration.
 
 If the registration state is automatic, miniport drivers must instruct their device to select a network provider based on the selection algorithm specific to the cellular technology and proceed with registration.
 
@@ -74,11 +74,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_SET\_REGISTER\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567926)
+[**NDIS\_WWAN\_SET\_REGISTER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_register_state)
 
 [**NDIS\_STATUS\_WWAN\_REGISTER\_STATE**](ndis-status-wwan-register-state.md)
 
-[WWAN Registration Operations](https://msdn.microsoft.com/library/windows/hardware/ff559116)
+[WWAN Registration Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-registration-operations)
 
  
 

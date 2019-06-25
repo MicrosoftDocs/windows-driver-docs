@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_specifying_nonlocal_display_memory_heaps_gg"></span><span id="DDK_SPECIFYING_NONLOCAL_DISPLAY_MEMORY_HEAPS_GG"></span>
 
 
-A DirectDraw driver controls how much AGP memory is available and to which surfaces by returning heaps in the [**DD\_HALINFO**](https://msdn.microsoft.com/library/windows/hardware/ff551627) structure that is passed back to DirectDraw. The driver identifies nonlocal heaps by specifying the VIDMEM\_ISNONLOCAL flag in the **dwFlags** member of the [**VIDEOMEMORY**](https://msdn.microsoft.com/library/windows/hardware/ff570171) data structure that describes the heap. Furthermore, a driver can choose to enable combining of memory writes on a nonlocal heap by specifying the VIDMEM\_ISWC flag in addition to VIDMEM\_ISNONLOCAL.
+A DirectDraw driver controls how much AGP memory is available and to which surfaces by returning heaps in the [**DD\_HALINFO**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_halinfo) structure that is passed back to DirectDraw. The driver identifies nonlocal heaps by specifying the VIDMEM\_ISNONLOCAL flag in the **dwFlags** member of the [**VIDEOMEMORY**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_videomemory) data structure that describes the heap. Furthermore, a driver can choose to enable combining of memory writes on a nonlocal heap by specifying the VIDMEM\_ISWC flag in addition to VIDMEM\_ISNONLOCAL.
 
 It is the responsibility of an AGP-compatible DirectDraw driver to describe to DirectDraw the size (linear or rectangular), attributes (write combining), and surface types the heap should not and cannot be used for. However, it is not the driver's responsibility to actually reserve address space for the heap or commit memory to it. This is handled by DirectDraw on the driver's behalf. DirectDraw hides the details of managing AGP memory from the driver.
 
@@ -36,7 +36,7 @@ It is also important to note that DirectDraw and the Windows operating system im
 
 When DirectDraw has determined the correct addresses (linear and physical) of the heap, it stores them in its heap descriptors. DirectDraw also provides a mechanism to notify a driver at initialization time of these addresses. How this is done is platform specific:
 
--   On Microsoft Windows 2000 and later, this is done with a [**DdGetDriverInfo**](https://msdn.microsoft.com/library/windows/hardware/ff549404) call using the GUID\_UpdateNonLocalHeap GUID. When this GUID is passed to *DDGetDriverInfo*, the heap data is passed in the [**DD\_UPDATENONLOCALHEAPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551748) data structure.
+-   On Microsoft Windows 2000 and later, this is done with a [**DdGetDriverInfo**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) call using the GUID\_UpdateNonLocalHeap GUID. When this GUID is passed to *DDGetDriverInfo*, the heap data is passed in the [**DD\_UPDATENONLOCALHEAPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_updatenonlocalheapdata) data structure.
 
  
 

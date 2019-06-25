@@ -75,7 +75,7 @@ Each directive in a <em>DDInstall</em>**.HW** section can reference more than on
 
 Each such section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
-For more information about how to install multifunction devices, see [Supporting Multifunction Devices](https://msdn.microsoft.com/library/windows/hardware/ff542743).
+For more information about how to install multifunction devices, see [Supporting Multifunction Devices](https://docs.microsoft.com/windows-hardware/drivers/multifunction/index).
 
 Examples
 --------

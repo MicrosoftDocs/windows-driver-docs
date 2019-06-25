@@ -43,11 +43,11 @@ A full-duplex DirectSound application can use the **IDirectSoundCaptureFXAec** a
 <tbody>
 <tr class="odd">
 <td align="left"><p>GUID_DSCFX_CLASS_AEC</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537150" data-raw-source="[&lt;strong&gt;KSNODETYPE_ACOUSTIC_ECHO_CANCEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537150)"><strong>KSNODETYPE_ACOUSTIC_ECHO_CANCEL</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-acoustic-echo-cancel" data-raw-source="[&lt;strong&gt;KSNODETYPE_ACOUSTIC_ECHO_CANCEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-acoustic-echo-cancel)"><strong>KSNODETYPE_ACOUSTIC_ECHO_CANCEL</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>GUID_DSCFX_CLASS_NS</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537182" data-raw-source="[&lt;strong&gt;KSNODETYPE_NOISE_SUPPRESS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537182)"><strong>KSNODETYPE_NOISE_SUPPRESS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-noise-suppress" data-raw-source="[&lt;strong&gt;KSNODETYPE_NOISE_SUPPRESS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-noise-suppress)"><strong>KSNODETYPE_NOISE_SUPPRESS</strong></a></p></td>
 </tr>
 </tbody>
 </table>

@@ -14,7 +14,7 @@ WMI clients can use the GUID_NDIS_GEN_PORT_AUTHENTICATION_PARAMETERS set GUID to
 
 NDIS translates this GUID to the [OID_GEN_PORT_AUTHENTICATION_PARAMETERS](oid-gen-port-authentication-parameters.md) OID to set the current authentication configuration of an NDIS port. Miniport drivers that support NDIS ports must support this OID.
 
-The WMI input buffer specifies an [NDIS_WMI_SET_HEADER](https://msdn.microsoft.com/library/windows/hardware/ff567904) structure that is followed by an NDIS_PORT_AUTHENTICATION_PARAMETERS structure.
+The WMI input buffer specifies an [NDIS_WMI_SET_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_wmi_set_header) structure that is followed by an NDIS_PORT_AUTHENTICATION_PARAMETERS structure.
 
 For more information about port parameters, see [OID_GEN_PORT_AUTHENTICATION_PARAMETERS](oid-gen-port-authentication-parameters.md).
 

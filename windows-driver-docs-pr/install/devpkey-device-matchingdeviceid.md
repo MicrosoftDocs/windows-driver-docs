@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_MatchingDeviceId
 
 
-The DEVPKEY_Device_MatchingDeviceId device property represents the [hardware ID](https://msdn.microsoft.com/library/windows/hardware/ff546152) or [compatible ID](https://msdn.microsoft.com/library/windows/hardware/ff539950) that Windows uses to install a device instance.
+The DEVPKEY_Device_MatchingDeviceId device property represents the [hardware ID](https://docs.microsoft.com/windows-hardware/drivers/install/hardware-ids) or [compatible ID](https://docs.microsoft.com/windows-hardware/drivers/install/compatible-ids) that Windows uses to install a device instance.
 
 <table>
 <colgroup>
@@ -55,11 +55,11 @@ The DEVPKEY_Device_MatchingDeviceId device property represents the [hardware ID]
 Remarks
 -------
 
-Windows sets the value of DEVPKEY_Device_MatchingDeviceId. The hardware IDs and compatible IDs for a device are supplied by the *device-description* entries that are included in the [**INF *Models* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs a device.
+Windows sets the value of DEVPKEY_Device_MatchingDeviceId. The hardware IDs and compatible IDs for a device are supplied by the *device-description* entries that are included in the [**INF *Models* section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of PKEY_Device_MatchingDeviceId.
+You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of PKEY_Device_MatchingDeviceId.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_MatchingDeviceId property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **MatchingDeviceId** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_MatchingDeviceId property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **MatchingDeviceId** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-driver-properties).
 
 Requirements
 ------------
@@ -84,9 +84,9 @@ Requirements
 ## See also
 
 
-[**INF *Models* Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344)
+[**INF *Models* Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section)
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

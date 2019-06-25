@@ -33,7 +33,7 @@ To exit all tests, press **Ctrl-C** in the command window. If the system does no
 3.  Run the script that is named **FX3Perf.bat** to start a test run.
 
 ## Related topics
-[USB](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
 [Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
 
 

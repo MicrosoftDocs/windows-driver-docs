@@ -124,7 +124,7 @@ This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
 ### See Also
 
-[**AVC\_FUNCTION\_SEND\_RESPONSE**](avc-function-send-response.md), [**AvcResponseCode**](https://msdn.microsoft.com/library/windows/hardware/ff554105), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**RtlZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff563610)
+[**AVC\_FUNCTION\_SEND\_RESPONSE**](avc-function-send-response.md), [**AvcResponseCode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavcresponsecode), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavc_function), [**RtlZeroMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlzeromemory)
 
  
 

@@ -22,7 +22,7 @@ The **KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION** property provides additio
 
  |Get|Set|Target|Property descriptor type|Property value type|
 |--- |--- |--- |--- |--- |
-|Yes|No|Pin|[KS_PIN](https://msdn.microsoft.com/library/windows/hardware/ff566722(v=vs.85).aspx)|[INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-interleaved-audio-format-information)|
+|Yes|No|Pin|[KS_PIN](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)|[INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-interleaved-audio-format-information)|
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -51,7 +51,7 @@ Requirements
 
 [KSPROPSETID\_INTERLEAVEDAUDIO](kspropsetid-interleavedaudio.md)
 
-[KS_PIN](https://msdn.microsoft.com/library/windows/hardware/ff566722(v=vs.85).aspx)
+[KS_PIN](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)
 
 
 

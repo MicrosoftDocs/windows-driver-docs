@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Crash Dump and Hibernation Support
 
 
-A Storport virtual miniport driver must support the [**SCSI\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff565393) (SRB) function code SRB\_FUNCTION\_DUMP\_POINTERS. When a miniport driver receives this type of SRB, the DataBuffer SRB member points to a [**MINIPORT\_DUMP\_POINTERS**](https://msdn.microsoft.com/library/windows/hardware/ff562247) structure. This SRB is sent to a virtual miniport driver that is used to control the disk that holds the crash dump data after the SRB returns from the miniport driver's [**HwStorInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff557396) routine.
+A Storport virtual miniport driver must support the [**SCSI\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_scsi_request_block) (SRB) function code SRB\_FUNCTION\_DUMP\_POINTERS. When a miniport driver receives this type of SRB, the DataBuffer SRB member points to a [**MINIPORT\_DUMP\_POINTERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/ns-storport-_miniport_dump_pointers) structure. This SRB is sent to a virtual miniport driver that is used to control the disk that holds the crash dump data after the SRB returns from the miniport driver's [**HwStorInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_initialize) routine.
 
  
 

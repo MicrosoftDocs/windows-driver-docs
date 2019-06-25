@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Step 2: A Driver for the Device is Selected
 
 
-After a new device is detected and identified, Windows and its [device installation components](https://msdn.microsoft.com/library/windows/hardware/ff541277) follow these steps:
+After a new device is detected and identified, Windows and its [device installation components](https://docs.microsoft.com/previous-versions/ff541277(v=vs.85)) follow these steps:
 
 1.  Windows searches for an appropriate [driver package](driver-packages.md) for the device. For more information about this step, see [Searching for the Driver Package](#searching-for-the-driver).
 2.  Windows selects the most appropriate driver for the device from one or more driver packages. For more information about this step, see [Selecting the Driver](#selecting-the-driver).

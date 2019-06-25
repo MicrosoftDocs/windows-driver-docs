@@ -36,7 +36,7 @@ BOOL DeviceIoControl(
 );
 ```
 
-If the call to [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216) is successful, it returns a nonzero value. If the call fails or is pending (not processed immediately), **DeviceIoControl** returns a zero value. The class driver can call [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) for a more detailed error message.
+If the call to [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) is successful, it returns a nonzero value. If the call fails or is pending (not processed immediately), **DeviceIoControl** returns a zero value. The class driver can call [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) for a more detailed error message.
 
 When the audio driver must change pin configuration defaults, it can use IOCTL\_AZALIABUS\_SENDVERBS to send and receive Set and Get verbs from the audio codec. If communication with the audio codec is not about pin configuration, the audio codec only responds to the Get verb.
 

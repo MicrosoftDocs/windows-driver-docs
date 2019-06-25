@@ -19,11 +19,11 @@ NDIS restarts a driver stack after operations such as inserting a filter module 
 
 1.  NDIS restarts the miniport adapter.
 
-    After NDIS calls the miniport driver's [**MiniportRestart**](https://msdn.microsoft.com/library/windows/hardware/ff559435) function, the miniport adapter enters the Restarting state. The miniport driver prepares to resume send and receive operations. If the preparation fails, the miniport adapter returns to the Paused state. After the driver is ready to resume send and receive operations, the miniport adapter enters the Running state.
+    After NDIS calls the miniport driver's [**MiniportRestart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_restart) function, the miniport adapter enters the Restarting state. The miniport driver prepares to resume send and receive operations. If the preparation fails, the miniport adapter returns to the Paused state. After the driver is ready to resume send and receive operations, the miniport adapter enters the Running state.
 
 2.  NDIS restarts the filter modules, beginning at the bottom of the driver stack and progressing up to the protocol driver.
 
-    After NDIS calls a filter driver's [**FilterRestart**](https://msdn.microsoft.com/library/windows/hardware/ff549962) function, the filter module enters the Restarting state. The filter driver prepares to resume send and receive operations. If the preparation fails, the module returns to the Paused state. After the driver is ready to resume send and receive operations, the filter module enters the Running state.
+    After NDIS calls a filter driver's [**FilterRestart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_restart) function, the filter module enters the Restarting state. The filter driver prepares to resume send and receive operations. If the preparation fails, the module returns to the Paused state. After the driver is ready to resume send and receive operations, the filter module enters the Running state.
 
 3.  NDIS sends a PnP restart event to the protocol driver.
 

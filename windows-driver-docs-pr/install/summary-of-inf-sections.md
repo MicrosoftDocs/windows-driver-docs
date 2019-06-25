@@ -85,7 +85,7 @@ This section should be included in the INF file of any manually installed non-Pn
 
  
 
-This section is used to create an [override configuration](https://msdn.microsoft.com/library/windows/hardware/ff547012#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
+This section is used to create an [override configuration](https://docs.microsoft.com/windows-hardware/drivers/kernel/hardware-resources#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
 
 <a href="" id="ddinstall-interfaces-section"></a>[***DDInstall*.Interfaces Section**](inf-ddinstall-interfaces-section.md)  
 If a driver exports the functionality of a device interface class, therefore creating a new instance of the interface class, such as kernel-streaming still-image capture or data decompression, its INF file can have this section.

@@ -16,29 +16,29 @@ This section describes the audio port object interfaces. These include the follo
 
 -   **IPort**, which is the base type from which all other audio port object interfaces are derived
 
--   The audio port object provides an interface for the DMus, MIDI, Topology, WaveCyclic, WavePci and WaveRT port drivers (see [Supporting a Device](https://msdn.microsoft.com/library/windows/hardware/ff538398)), which are derived from **IPort**
+-   The audio port object provides an interface for the DMus, MIDI, Topology, WaveCyclic, WavePci and WaveRT port drivers (see [Supporting a Device](https://docs.microsoft.com/windows-hardware/drivers/audio/supporting-a-device)), which are derived from **IPort**
 
-The audio port object interface is the primary interface that a port driver presents to a miniport driver. An adapter driver forms a KS filter for an audio device by binding together the port and miniport drivers for that device. The binding is accomplished by calling the audio port object's [**IPort::Init**](https://msdn.microsoft.com/library/windows/hardware/ff536943) method and passing a reference to the audio miniport object as a call parameter. The code example in [Subdevice Creation](https://msdn.microsoft.com/library/windows/hardware/ff538390) illustrates this process.
+The audio port object interface is the primary interface that a port driver presents to a miniport driver. An adapter driver forms a KS filter for an audio device by binding together the port and miniport drivers for that device. The binding is accomplished by calling the audio port object's [**IPort::Init**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iport-init) method and passing a reference to the audio miniport object as a call parameter. The code example in [Subdevice Creation](https://docs.microsoft.com/windows-hardware/drivers/audio/subdevice-creation) illustrates this process.
 
 This section describes the following audio port object interfaces:
 
-[IPort](https://msdn.microsoft.com/library/windows/hardware/ff536842)
+[IPort](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iport)
 
-[IPortClsPower](https://msdn.microsoft.com/library/windows/hardware/ff536844)
+[IPortClsPower](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportclspower)
 
-[IPortDMus](https://msdn.microsoft.com/library/windows/hardware/ff536879)
+[IPortDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iportdmus)
 
-[IPortMidi](https://msdn.microsoft.com/library/windows/hardware/ff536891)
+[IPortMidi](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportmidi)
 
-[IPortTopology](https://msdn.microsoft.com/library/windows/hardware/ff536896)
+[IPortTopology](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iporttopology)
 
-[IPortWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536899)
+[IPortWaveCyclic](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportwavecyclic)
 
-[IPortWavePci](https://msdn.microsoft.com/library/windows/hardware/ff536905)
+[IPortWavePci](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536905(v=vs.85))
 
-[IPortWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536920)
+[IPortWaveRT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportwavert)
 
-[IPortWMIRegistration](https://msdn.microsoft.com/library/windows/hardware/ff536935)
+[IPortWMIRegistration](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportwmiregistration)
 
  
 

@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 An INF add-registry section creates or modifies driver-specific information in the system registry. The add-registry section for a PortCls audio adapter contains information that makes the adapter accessible to the Windows multimedia system components.
 
-The following example presents the add-registry section, XYZ-Audio-Device.AddReg, that was named in an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) in a previous example (see [Installing a Port Class Audio Adapter](installing-a-port-class-audio-adapter.md)):
+The following example presents the add-registry section, XYZ-Audio-Device.AddReg, that was named in an [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) in a previous example (see [Installing a Port Class Audio Adapter](installing-a-port-class-audio-adapter.md)):
 
 ```cpp
   [XYZ-Audio-Device.AddReg]

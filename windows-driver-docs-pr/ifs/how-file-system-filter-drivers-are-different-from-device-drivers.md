@@ -20,15 +20,15 @@ The following subsections describe some of the differences between file system f
 
 ### <span id="No_Power_Management"></span><span id="no_power_management"></span><span id="NO_POWER_MANAGEMENT"></span>No Power Management
 
-Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they do not receive [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784) requests. Instead, power IRPs are sent directly to the storage device stack. In rare circumstances, however, file system filter drivers might interfere with power management. For this reason, file system filter drivers should not register dispatch routines for IRP\_MJ\_POWER in the **DriverEntry** routine, and they should not call [PoXxx](https://msdn.microsoft.com/library/windows/hardware/ff559835) routines.
+Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they do not receive [**IRP\_MJ\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power) requests. Instead, power IRPs are sent directly to the storage device stack. In rare circumstances, however, file system filter drivers might interfere with power management. For this reason, file system filter drivers should not register dispatch routines for IRP\_MJ\_POWER in the **DriverEntry** routine, and they should not call [PoXxx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) routines.
 
 ### <span id="No_WDM"></span><span id="no_wdm"></span><span id="NO_WDM"></span>No WDM
 
-File system filter drivers cannot be Windows Driver Model (WDM) drivers. The Microsoft [Windows Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff565698) is only for device drivers. For more information about file system driver development in Windows Me, Windows 98, and Windows 95, see the Windows Me Driver Development Kit (DDK).
+File system filter drivers cannot be Windows Driver Model (WDM) drivers. The Microsoft [Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) is only for device drivers. For more information about file system driver development in Windows Me, Windows 98, and Windows 95, see the Windows Me Driver Development Kit (DDK).
 
 ### <span id="No_AddDevice_or_StartIo"></span><span id="no_adddevice_or_startio"></span><span id="NO_ADDDEVICE_OR_STARTIO"></span>No AddDevice or StartIo
 
-Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they should not have [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) or [**StartIo**](https://msdn.microsoft.com/library/windows/hardware/ff563858) routines.
+Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they should not have [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) or [**StartIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_startio) routines.
 
 ### <span id="Different_Device_Objects_Created"></span><span id="different_device_objects_created"></span><span id="DIFFERENT_DEVICE_OBJECTS_CREATED"></span>Different Device Objects Created
 
@@ -40,7 +40,7 @@ File system filter drivers do not create physical or functional device objects. 
 
 ### <span id="Other_Differences"></span><span id="other_differences"></span><span id="OTHER_DIFFERENCES"></span>Other Differences
 
-Because file system filter drivers are not device drivers, they do not perform [direct memory access (DMA)](https://msdn.microsoft.com/library/windows/hardware/ff565374).
+Because file system filter drivers are not device drivers, they do not perform [direct memory access (DMA)](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-direct-i-o-with-dma).
 
 Unlike device filter drivers, which can attach above or below a target device's function driver, file system filter drivers can attach only above a target file system driver. Thus, in device-driver terms, a file system filter driver can be only an upper filter, never a lower filter.
 

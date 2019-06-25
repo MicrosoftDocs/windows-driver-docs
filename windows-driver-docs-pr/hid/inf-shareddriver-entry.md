@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 **\[ControlFlags\]**
 
 <em>SharedDriver</em>**=**<em>install-section-name</em>***,***<em>warning-text-string</em>
-Before the keyboard or mouse class installer installs a PS/2 device, it checks for a *SharedDriver* entry in the [INF **ControlFlags** section](https://msdn.microsoft.com/library/windows/hardware/ff546342) for the device. If such an entry value exists, the class installer notifies the user by displaying the warning text string, and provides the user the option to cancel changing the PS/2 port driver.
+Before the keyboard or mouse class installer installs a PS/2 device, it checks for a *SharedDriver* entry in the [INF **ControlFlags** section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-controlflags-section) for the device. If such an entry value exists, the class installer notifies the user by displaying the warning text string, and provides the user the option to cancel changing the PS/2 port driver.
 
 ### Entries and Values
 

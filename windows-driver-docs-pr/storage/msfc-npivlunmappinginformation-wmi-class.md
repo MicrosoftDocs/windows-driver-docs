@@ -38,7 +38,7 @@ class MSFC_NPIVLUNMappingInformation
 
 When compiled by the WMI tool suite, this class definition produces the following data structure:
 
-[**MSFC\_NPIVLUNMappingInformation**](https://msdn.microsoft.com/library/windows/hardware/hh127626)
+[**MSFC\_NPIVLUNMappingInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/npivwmi/ns-npivwmi-_msfc_npivlunmappinginformation)
 
 There are no methods associated with this WMI class.
 

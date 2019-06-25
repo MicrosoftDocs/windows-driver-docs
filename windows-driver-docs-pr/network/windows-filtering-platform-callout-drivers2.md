@@ -29,9 +29,9 @@ This section discusses Windows Filtering Platform (WFP) callout drivers and incl
 -   [Windows Filtering Platform constants](windows-filtering-platform-constants.md)
 -   [Other Windows Filtering Platform functions](other-windows-filtering-platform-functions.md)
 
-For an overview of WFP, see [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510).
+For an overview of WFP, see [Windows Filtering Platform](https://docs.microsoft.com/windows/desktop/FWP/windows-filtering-platform-start-page).
 
-For WFP reference information, see [Windows Filtering Platform Callout Drivers](https://msdn.microsoft.com/library/windows/hardware/ff571067).
+For WFP reference information, see [Windows Filtering Platform Callout Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/).
 
  
 

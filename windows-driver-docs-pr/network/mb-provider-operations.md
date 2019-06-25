@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic describes the operations related to *home*, *preferred*, *multicarrier*, and *visible* network providers.
 
-For more information about provider operations, see [OID\_WWAN\_HOME\_PROVIDER](https://msdn.microsoft.com/library/windows/hardware/ff569826), [OID\_WWAN\_PREFERRED\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569830), [OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/hh831868), and [OID\_WWAN\_VISIBLE\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569843).
+For more information about provider operations, see [OID\_WWAN\_HOME\_PROVIDER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-home-provider), [OID\_WWAN\_PREFERRED\_PROVIDERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-preferred-providers), [OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-preferred-multicarrier-providers), and [OID\_WWAN\_VISIBLE\_PROVIDERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-visible-providers).
 
  
 

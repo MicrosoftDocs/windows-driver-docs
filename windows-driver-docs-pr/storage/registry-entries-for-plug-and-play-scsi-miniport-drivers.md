@@ -24,7 +24,7 @@ To support Plug and Play, a SCSI miniport driver must:
 
 -   Have a **PnPInterface** entry in the registry that indicates the interfaces for that the miniport driver supports Plug and Play.
 
-Installing a miniport driver as a service for a SCSI HBA is customarily done by providing an setup information (INF) file that matches the Plug and Play hardware ID for a given HBA to the correct driver to control that device. For details about setting up an INF file, see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125)*.*
+Installing a miniport driver as a service for a SCSI HBA is customarily done by providing an setup information (INF) file that matches the Plug and Play hardware ID for a given HBA to the correct driver to control that device. For details about setting up an INF file, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play)*.*
 
 Unless a miniport driver is installed as a service for an HBA, the **PnPInterface** registry entry will *prevent* the miniport driver from initializing. The specified interfaces are initialized only when Plug and Play locates an appropriate HBA. If no service is properly assigned to the HBA, Plug and Play will never determine which driver to notify when it detects the device. This behavior is by design and a miniport driver should not attempt to circumvent it.
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Consider the following design guidelines when writing an [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine:
+Consider the following design guidelines when writing an [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine:
 
 -   If a filter driver determines its *AddDevice* routine was called for a device it does not need to service, the filter driver must return STATUS\_SUCCESS to allow the rest of the device stack to be loaded for the device. The filter driver does not create a device object nor attach it to the device stack; the filter driver just returns success and allows the rest of the drivers to be added to the stack.
 
@@ -21,15 +21,15 @@ Consider the following design guidelines when writing an [*AddDevice*](https://m
 
     You might decide to allocate additional system-space memory for the driver's needs, such as for long-term I/O buffers or a lookaside list. If so, an *AddDevice* routine can call the following routines:
 
-    [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) for paged or nonpaged system-space memory
+    [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag) for paged or nonpaged system-space memory
 
-    [**ExInitializePagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff545309) or [**ExInitializeNPagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff545301) to initialize a paged or nonpaged lookaside list
+    [**ExInitializePagedLookasideList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializepagedlookasidelist) or [**ExInitializeNPagedLookasideList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializenpagedlookasidelist) to initialize a paged or nonpaged lookaside list
 
 -   If the driver has a device-dedicated thread or waits on any kernel-defined dispatcher objects, the *AddDevice* routine might initialize [kernel dispatcher objects](kernel-dispatcher-objects.md).
 
 -   If the driver uses any executive spin locks or provides the storage for an interrupt spin lock, the *AddDevice* routine might initialize these spin locks. See [Spin Locks](spin-locks.md) for more information.
 
--   Tighten file-open security when calling [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397).
+-   Tighten file-open security when calling [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice).
 
     Specify the FILE\_DEVICE\_SECURE\_OPEN characteristic on the call to **IoCreateDevice**. This characteristic is supported on Windows NT 4.0 SP5 and later. It directs the I/O manager to perform security checks against the device object for all open requests. Vendors should specify this characteristic on calls to **IoCreateDevice** if the FILE\_DEVICE\_SECURE\_OPEN characteristic is not set in the device's class-installer INF or the device's INF and the drivers do not perform their own security checks on opens. (For more information, see [Controlling Device Namespace Access](controlling-device-namespace-access.md).)
 

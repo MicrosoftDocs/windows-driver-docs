@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Extended Camera Control Payloads
 
 
-The control properties within the [KSPROPERTYSETID\_ExtendedCameraControl](https://msdn.microsoft.com/library/windows/hardware/dn567570) property set use a common payload format for getting and setting the property data.
+The control properties within the [KSPROPERTYSETID\_ExtendedCameraControl](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropertysetid-extendedcameracontrol) property set use a common payload format for getting and setting the property data.
 
 ## Extended camera property header
 
@@ -27,7 +27,7 @@ The payload size is set in the Size member. The value for **Size** is the entire
 
 Some property controls use an additional structure to hold additional data. Where single data values are used, the property data will contain an [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) structure after [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header). The **KSCAMERA\_EXTENDEDPROP\_VALUE** structure allows the property to express a single value as one of several data types.
 
-To get or set additional data, a property will have its own special data structure following the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header). The following example shows a driver code fragment setting the property specific data for a KSPROPERTY\_TYPE\_GET request of the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FIELDOFVIEW**](https://msdn.microsoft.com/library/windows/hardware/dn567574) property.
+To get or set additional data, a property will have its own special data structure following the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header). The following example shows a driver code fragment setting the property specific data for a KSPROPERTY\_TYPE\_GET request of the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FIELDOFVIEW**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-fieldofview) property.
 
 ```cpp
 #define FL_WIDE_ANGLE 35

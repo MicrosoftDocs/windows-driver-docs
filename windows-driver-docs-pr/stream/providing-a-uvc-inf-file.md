@@ -153,7 +153,7 @@ If you are using the UVC driver on Windows Server 2003 and Windows Vista or late
 
 In low frame rate conditions, the EOF bit might report completion faster than the FID bit of the following frame. The EOF bit can be used to reduce latency in the delivery of MPEG-2 frames.
 
-For more information about the positional syntax of AddReg directives, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
+For more information about the positional syntax of AddReg directives, see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
 
 ```INF
 [MyDevice.NT.Services]

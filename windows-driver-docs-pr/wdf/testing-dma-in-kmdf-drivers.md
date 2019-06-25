@@ -13,22 +13,22 @@ ms.localizationpriority: medium
 
 The following tools can help debug framework-based drivers that support DMA:
 
--   [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) includes specific verification tests that detect improper use of various DMA operations. For more information about DMA-specific verification, see [DMA Verification](https://msdn.microsoft.com/library/windows/hardware/ff544915).
+-   [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) includes specific verification tests that detect improper use of various DMA operations. For more information about DMA-specific verification, see [DMA Verification](https://docs.microsoft.com/windows-hardware/drivers/devtest/dma-verification).
 
--   The [**!dma**](https://msdn.microsoft.com/library/windows/hardware/ff562369) kernel debugger extension displays information about the DMA subsystem and DMA device drivers that are being verified by [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448).
+-   The [**!dma**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-dma) kernel debugger extension displays information about the DMA subsystem and DMA device drivers that are being verified by [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
 
--   The [Kernel-Mode Driver Framework Extensions](https://msdn.microsoft.com/library/windows/hardware/ff551876) include the following DMA-specific commands:
+-   The [Kernel-Mode Driver Framework Extensions](https://docs.microsoft.com/windows-hardware/drivers/debugger/kernel-mode-driver-framework-extensions--wdfkd-dll-) include the following DMA-specific commands:
 
-    <a href="" id="-wdfcommonbuffer"></a>[**!wdfcommonbuffer**](https://msdn.microsoft.com/library/windows/hardware/ff565679)  
+    <a href="" id="-wdfcommonbuffer"></a>[**!wdfcommonbuffer**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfcommonbuffer)  
     Dumps information about a given common buffer object.
 
-    <a href="" id="-wdfdmaenabler"></a>[**!wdfdmaenabler**](https://msdn.microsoft.com/library/windows/hardware/ff565717)  
+    <a href="" id="-wdfdmaenabler"></a>[**!wdfdmaenabler**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdmaenabler)  
     Dumps information about a specific DMA enabler object and its transactions and common buffer objects.
 
-    <a href="" id="-wdfdmaenablers"></a>[**!wdfdmaenablers**](https://msdn.microsoft.com/library/windows/hardware/ff565719)  
+    <a href="" id="-wdfdmaenablers"></a>[**!wdfdmaenablers**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdmaenablers)  
     Lists all of the DMA enablers and their transactions and common buffer objects.
 
-    <a href="" id="-wdfdmatransaction"></a>[**!wdfdmatransaction**](https://msdn.microsoft.com/library/windows/hardware/ff565721)  
+    <a href="" id="-wdfdmatransaction"></a>[**!wdfdmatransaction**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdmatransaction)  
     Dumps information about a given transaction object.
 
  

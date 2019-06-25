@@ -27,7 +27,7 @@ The PnP manager sends this IRP at IRQL PASSIVE\_LEVEL in an arbitrary thread con
 ## Input Parameters
 
 
-The **Parameters.SetLock.Lock** member of the [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure is a BOOLEAN value specifying whether to lock (TRUE) or unlock (FALSE) the device.
+The **Parameters.SetLock.Lock** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) structure is a BOOLEAN value specifying whether to lock (TRUE) or unlock (FALSE) the device.
 
 ## Output Parameters
 
@@ -43,14 +43,14 @@ On success, a driver sets **Irp-&gt;IoStatus.Information** to zero.
 
 If a bus driver does not handle this IRP, it leaves **Irp-&gt;IoStatus.Status** as is and completes the IRP.
 
-Function and filter drivers do not handle this IRP. Such drivers call [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff550355) and pass the IRP down to the next driver. Function and filter drivers do not set an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine, do not modify **Irp-&gt;IoStatus**, and must not complete the IRP.
+Function and filter drivers do not handle this IRP. Such drivers call [**IoSkipCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) and pass the IRP down to the next driver. Function and filter drivers do not set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine, do not modify **Irp-&gt;IoStatus**, and must not complete the IRP.
 
 Operation
 ---------
 
 If a driver returns success for this IRP, it ensures that the device has been locked or unlocked before completing the IRP.
 
-See [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

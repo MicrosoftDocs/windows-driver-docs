@@ -79,9 +79,9 @@ Requirements
 ## See also
 
 
-[**BdaPropertyNodeTypes**](https://msdn.microsoft.com/library/windows/hardware/ff556497)
+[**BdaPropertyNodeTypes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdapropertynodetypes)
 
-[**KSNODE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff563473)
+[**KSNODE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksnode_descriptor)
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 

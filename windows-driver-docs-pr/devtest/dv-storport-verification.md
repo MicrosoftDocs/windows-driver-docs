@@ -24,21 +24,21 @@ The Storport Verification feature can detect several misuses of Storport routine
 
 The Storport Verification feature issues bug check 0xF1 or bug check 0xC4 if a Storport miniport driver commits one of the following violations:
 
--   The miniport driver passes a bad argument (a NULL pointer) to the [**StorPortInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff567108) routine.
+-   The miniport driver passes a bad argument (a NULL pointer) to the [**StorPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportinitialize) routine.
 
--   The miniport driver calls [**StorPortStallExecution**](https://msdn.microsoft.com/library/windows/hardware/ff567508) and specifies a delay longer than 0.1 second, stalling the processor for an excessive length of time.
+-   The miniport driver calls [**StorPortStallExecution**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportstallexecution) and specifies a delay longer than 0.1 second, stalling the processor for an excessive length of time.
 
--   [**StorPortFreeDeviceBase**](https://msdn.microsoft.com/library/windows/hardware/ff567061) can be called only from the miniport driver's **HwStorFindAdapter** routine.
+-   [**StorPortFreeDeviceBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportfreedevicebase) can be called only from the miniport driver's **HwStorFindAdapter** routine.
 
--   [**StorPortGetUncachedExtension**](https://msdn.microsoft.com/library/windows/hardware/ff567103) can be called only from the miniport driver's **HwStorFindAdapter** routine and can be called only for a bus-master adapter. A miniport must set the **SrbExtensionSize** of the [**HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff557459) (Storport) structure before calling **StorPortGetUncachedExtension**.
+-   [**StorPortGetUncachedExtension**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetuncachedextension) can be called only from the miniport driver's **HwStorFindAdapter** routine and can be called only for a bus-master adapter. A miniport must set the **SrbExtensionSize** of the [**HW\_INITIALIZATION\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/ns-storport-_hw_initialization_data) (Storport) structure before calling **StorPortGetUncachedExtension**.
 
--   The [**StorPortGetDeviceBase**](https://msdn.microsoft.com/library/windows/hardware/ff567080) routine supports only those addresses that were assigned to the driver by the system Plug and Play (PnP) manager.
+-   The [**StorPortGetDeviceBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetdevicebase) routine supports only those addresses that were assigned to the driver by the system Plug and Play (PnP) manager.
 
--   The miniport driver passes an invalid virtual address to one of the **StorPortRead***xxx* or **StorPortWrite***xxx* routines (for example, [**StorPortReadRegisterUchar**](https://msdn.microsoft.com/library/windows/hardware/ff567483) or [**StorPortWritePortBufferUlong**](https://msdn.microsoft.com/library/windows/hardware/ff567517)). This usually means that the address supplied doesn't map to the common buffer area. The specified *Register* or *Port* must be in mapped memory-space range returned by [**StorPortGetDeviceBase**](https://msdn.microsoft.com/library/windows/hardware/ff567080) routine. This check is supported only on x86-based systems.
+-   The miniport driver passes an invalid virtual address to one of the **StorPortRead***xxx* or **StorPortWrite***xxx* routines (for example, [**StorPortReadRegisterUchar**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportreadregisteruchar) or [**StorPortWritePortBufferUlong**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportwriteportbufferulong)). This usually means that the address supplied doesn't map to the common buffer area. The specified *Register* or *Port* must be in mapped memory-space range returned by [**StorPortGetDeviceBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetdevicebase) routine. This check is supported only on x86-based systems.
 
-For a list of the bug check parameters that Storport Verification uses, see [**Bug Check 0xF1**](https://msdn.microsoft.com/library/windows/hardware/ff560365) (SCSI\_VERIFIER\_DETECTED\_VIOLATION). In addition to Bug Check 0xF1, Storport Verification also makes use of [**Bug Check 0xC4**](https://msdn.microsoft.com/library/windows/hardware/ff560187) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION).
+For a list of the bug check parameters that Storport Verification uses, see [**Bug Check 0xF1**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xf1--scsi-verifier-detected-violation) (SCSI\_VERIFIER\_DETECTED\_VIOLATION). In addition to Bug Check 0xF1, Storport Verification also makes use of [**Bug Check 0xC4**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION).
 
-**Note**  [**Bug Check 0xF1**](https://msdn.microsoft.com/library/windows/hardware/ff560365) is used for both SCSI Verification and Storport Verification.
+**Note**  [**Bug Check 0xF1**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xf1--scsi-verifier-detected-violation) is used for both SCSI Verification and Storport Verification.
 
  
 

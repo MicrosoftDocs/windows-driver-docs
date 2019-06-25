@@ -10,5 +10,5 @@ ms.localizationpriority: medium
 
 The following sections provide information about Web Services for these technologies:
 
--   [Scan Service (WS-Scan) Schema](https://msdn.microsoft.com/library/windows/hardware/ff547963)
+-   [Scan Service (WS-Scan) Schema](https://docs.microsoft.com/windows-hardware/drivers/image/scan-service--ws-scan--schema)
 

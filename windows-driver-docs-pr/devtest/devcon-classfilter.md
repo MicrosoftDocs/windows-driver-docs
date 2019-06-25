@@ -64,7 +64,7 @@ Without subcommands, a **DevCon ClassFilter** command displays the upper or lowe
 
 The **DevCon ClassFilter** operation uses a virtual cursor to move through the list of filter drivers for a class. The cursor starts at the beginning of the list of filter drivers, before the first driver in the list. Unless returned to the starting position, the cursor always moves forward through the filter driver list as DevCon executes the subcommands.
 
-DevCon does not add a filter driver to a class unless the driver is installed as a service, that is, there must be a registry subkey for the driver in the [HKLM\\SYSTEM\\CurrentControlSet\\Services](https://msdn.microsoft.com/library/windows/hardware/ff546188) registry key. This safeguard prevents you from accidentally adding a filter driver that does not exist and thereby rendering the system unbootable.
+DevCon does not add a filter driver to a class unless the driver is installed as a service, that is, there must be a registry subkey for the driver in the [HKLM\\SYSTEM\\CurrentControlSet\\Services](https://docs.microsoft.com/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree) registry key. This safeguard prevents you from accidentally adding a filter driver that does not exist and thereby rendering the system unbootable.
 
 Because filter driver changes require that the devices be restarted, use a [**DevCon Restart**](devcon-restart.md) command or include the **/r** (conditional reboot) parameter in the **DevCon ClassFilter** command.
 

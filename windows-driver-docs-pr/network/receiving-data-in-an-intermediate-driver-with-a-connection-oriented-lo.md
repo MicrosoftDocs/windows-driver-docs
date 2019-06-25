@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 
 
-If an intermediate driver is layered above a connection-oriented miniport driver, NDIS then calls the intermediate driver's [**ProtocolCoReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff570256) function to indicate received data.
+If an intermediate driver is layered above a connection-oriented miniport driver, NDIS then calls the intermediate driver's [**ProtocolCoReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_co_receive_net_buffer_lists) function to indicate received data.
 
-An underlying connection-oriented miniport driver indicates network data by calling [**NdisMCoIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563561), passing a linked list of one or more [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures.
+An underlying connection-oriented miniport driver indicates network data by calling [**NdisMCoIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismcoindicatereceivenetbufferlists), passing a linked list of one or more [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structures.
 
 For more information about receiving data in an intermediate driver with a connection-oriented lower edge, see [Connection-Oriented Operations](connection-oriented-operations.md).
 

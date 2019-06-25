@@ -36,9 +36,9 @@ Indicates that a hardware failure occurred.
 
 ### Comments
 
-The class driver sets the **CommandData**.**MasterClockHandle** member pointed to by *pSrb* to the handle for the clock object that represents the master clock. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure.
+The class driver sets the **CommandData**.**MasterClockHandle** member pointed to by *pSrb* to the handle for the clock object that represents the master clock. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_request_block) structure.
 
-A stream may query the time value of the master clock by passing the master clock handle to [**StreamClassQueryMasterClock**](https://msdn.microsoft.com/library/windows/hardware/ff568249) or [**StreamClassQueryMasterClockSync**](https://msdn.microsoft.com/library/windows/hardware/ff568251).
+A stream may query the time value of the master clock by passing the master clock handle to [**StreamClassQueryMasterClock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclassquerymasterclock) or [**StreamClassQueryMasterClockSync**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclassquerymasterclocksync).
 
 Until the minidriver receives a SRB\_INDICATE\_MASTER\_CLOCK for a particular stream, it can assume that the stream is free running. If the handle passed in this SRB for a subordinate pin is the same as the handle passed to the minidriver in [**SRB\_OPEN\_MASTER\_CLOCK**](srb-open-master-clock.md), the minidriver can read the time directly from the master clock because it controls the master and the subordinate.
 

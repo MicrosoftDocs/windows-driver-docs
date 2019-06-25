@@ -56,9 +56,9 @@ Remarks
 
 The value of DEVPKEY_Device_RemovalPolicyOverride is one of the CM_REMOVAL_POLICY_*Xxx* values that are defined in Cfgmgr32.h.
 
-You can retrieve the value of DEVPKEY_Device_RemovalPolicyOverride by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) or you can also set this value by calling [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163).
+You can retrieve the value of DEVPKEY_Device_RemovalPolicyOverride by calling [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) or you can also set this value by calling [**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_Device_RemovalPolicyOverride property key. Instead, you can use the corresponding SPDRP_REMOVAL_POLICY_OVERRIDE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_Device_RemovalPolicyOverride property key. Instead, you can use the corresponding SPDRP_REMOVAL_POLICY_OVERRIDE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-instance-spdrp-xxx-properties).
 
 Requirements
 ------------
@@ -83,9 +83,9 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163)
+[**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
 
  
 

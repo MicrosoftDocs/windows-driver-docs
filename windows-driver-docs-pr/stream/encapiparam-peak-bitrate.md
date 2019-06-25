@@ -44,7 +44,7 @@ The ENCAPIPARAM\_BITRATE property is used to describe the supported peak bit rat
 
  
 
-The property value (operation data) is a VT\_UI4 stepped range of peak bit rates of the device, specified in the **PropertyItem.Values** member of [**KSPROPERTY\_SET**](https://msdn.microsoft.com/library/windows/hardware/ff565617) structure.
+The property value (operation data) is a VT\_UI4 stepped range of peak bit rates of the device, specified in the **PropertyItem.Values** member of [**KSPROPERTY\_SET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_set) structure.
 
 ### Comments
 
@@ -56,7 +56,7 @@ The minidriver is required to either provide a static **PropertyItem.Values** de
 
 ### See Also
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier), [**VIDEOENCODER\_BITRATE\_MODE**](https://msdn.microsoft.com/library/windows/hardware/ff568695)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier), [**VIDEOENCODER\_BITRATE\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-videoencoder_bitrate_mode)
 
  
 
