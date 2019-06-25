@@ -15,15 +15,15 @@ This topic provides information on what's new in the WinDbg Preview debugger.
 ## 1.0.1905.12001
 **Improvements to SymSetDiaSession error mitigation** - Our fix last month to mitigate the error caused by applications injecting DbgHelp into our process was still not working in some scenarios. We've made improvements to it and will continue to monitor feedback on this error.
 
-**Accent color customization** - A of scenarios need a few instances of WinDbg open, and moving back and forth between them can be confusing and take some time to figure out which one is the “right” one. We’ve added the ability to change the blue accent color to help visually distinguish sessions and make swapping between them easier.
+**Accent color customization** - A lot of scenarios need several instances of WinDbg open, and moving back and forth between them can be confusing and take some time to figure out which one is the “right” one. We’ve added the ability to change the blue accent color to help visually distinguish sessions and make swapping between them easier.
 
-Just hit the “View” ribbon and select an option for “Accent color” in the last section. When future sessions are launched from recent targets, the accent color will be persisted as part of the target’s workspace.
+Just click the **View** ribbon and select an option for **Accent color** in the last section. When future sessions are launched from recent targets, the accent color will be persisted as part of the target’s workspace.
 
 **Source tokenization improvements** - The source window now has basic support for tokenizing Rust source files and C++ SEH __try/__except/__finally/__leave.
 
 **Coroutine improvements** - Improved support for coroutine local variables and certain optimized variables.
 
-**Default symbol and source cache setting** - Added an option to the settings menu under “Debugging settings” to change the cache location for symbols. **Note** - There’s a known issue that making this blank will cause source loading to fail, we’ll be adding validation to prevent this from happening in a future release.
+**Default symbol and source cache setting** - Added an option to the settings menu under **Debugging settings** to change the cache location for symbols. **Note** - There’s a known issue that making this blank will cause source loading to fail. We’ll be adding validation to prevent this from happening in a future release.
 
 **-pv fixes** - Fixed a bug that may have prevented -pv (non-invasive attach) from working in some circumstances.
 
