@@ -23,7 +23,7 @@ This topic documents the following serial IRP major function codes:
 
 Header: Wdm.h (include Wdm.h or Ntddk.h)
 
-##  <a name="IRP_MJ_CREATE"></a> IRP_MJ_CREATE
+##  <a name="irp_mj_create"></a> IRP_MJ_CREATE
 The [IRP_MJ_CREATE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create) request opens a serial device.
 
 ### When Sent
