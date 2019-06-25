@@ -255,7 +255,7 @@ For more information, see <a href="https://docs.microsoft.com/previous-versions/
 <tr class="even">
 <td><a href="" id="step14"></a>
 <p><strong>Step 14</strong>—Create a device metadata package for the app.</p></td>
-<td><strong>Tool:</strong> <a href="https://msdn.microsoft.com/library/windows/hardware/hh454213" data-raw-source="[Device Metadata Authoring Wizard](https://docs.microsoft.com/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal)">Device Metadata Authoring Wizard</a>
+<td><strong>Tool:</strong> <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal" data-raw-source="[Device Metadata Authoring Wizard](https://docs.microsoft.com/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal)">Device Metadata Authoring Wizard</a>
 <ul>
 <li>If you have the Windows Driver Kit (WDK) installed, open <strong>Driver</strong> &gt; <strong>Device Metadata</strong> &gt; <strong>Authoring</strong>.</li>
 <li>If you have the Standalone SDK installed, the tool is located at <em>&lt;install_path&gt;</em>\bin\x86\DeviceMetadataWizardexe.</li>

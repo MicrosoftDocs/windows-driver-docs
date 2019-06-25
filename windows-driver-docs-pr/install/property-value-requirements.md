@@ -26,7 +26,7 @@ Windows enforces the device property value size requirements that are listed in 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>A fixed-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff537793" data-raw-source="[&lt;strong&gt;base-data-type&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff537793(v=vs.85))"><strong>base-data-type</strong></a> value</p></td>
+<td align="left"><p>A fixed-length <a href="https://docs.microsoft.com/previous-versions/ff537793(v=vs.85)" data-raw-source="[&lt;strong&gt;base-data-type&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff537793(v=vs.85))"><strong>base-data-type</strong></a> value</p></td>
 <td align="left"><p>The specified size of the supplied data must be the number of bytes in the base data type.</p></td>
 </tr>
 <tr class="even">

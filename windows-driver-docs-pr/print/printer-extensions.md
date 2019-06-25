@@ -300,7 +300,7 @@ For more information on how to marshal these legacy APIs into .NET, see [How to 
 
 ## Printer extension performance best practices
 
-In order to ensure the best user experience, printer extensions should be designed to load as fast as possible. The Printer Extension Sample project is a .NET application, which means that it gets built into an intermediate language (IL) that must be compiled at runtime into the appropriate format for the native processor architecture. During installation, Microsoft recommends that printer extensions are installed according to best practices, to ensure that the app has been compiled for the native system architecture. For more information about code compilation and installation best practices, see [Improving Launch Performance for Your Desktop Applications](https://blogs.msdn.microsoft.com/dotnet/2012/03/20/improving-launch-performance-for-your-desktop-applications/).
+In order to ensure the best user experience, printer extensions should be designed to load as fast as possible. The Printer Extension Sample project is a .NET application, which means that it gets built into an intermediate language (IL) that must be compiled at runtime into the appropriate format for the native processor architecture. During installation, Microsoft recommends that printer extensions are installed according to best practices, to ensure that the app has been compiled for the native system architecture. For more information about code compilation and installation best practices, see [Improving Launch Performance for Your Desktop Applications](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/).
 
 Microsoft also recommends that printer extensions postpone initialization tasks such as loading resources until after the EnableEvents method has been called. This minimizes the likelihood of the app calling EnableEvents prior to the 5 second timeout for printer extensions.
 
@@ -325,7 +325,7 @@ The Printer Extension Sample demonstrates how to create a UI that is generally l
 
 [How to send raw data to a printer by using Visual C# .NET](https://support.microsoft.com/help/322091)
 
-[Improving Launch Performance for Your Desktop Applications](https://blogs.msdn.microsoft.com/dotnet/2012/03/20/improving-launch-performance-for-your-desktop-applications/)
+[Improving Launch Performance for Your Desktop Applications](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/)
 
 [Native Image Generator](https://docs.microsoft.com/dotnet/framework/tools/ngen-exe-native-image-generator)
 

@@ -72,7 +72,7 @@ When you set the driver package properties for production signing, remember to a
 ## <span id="related_topics"></span>Related topics
 
 
-* [Driver Signing changes in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/04/01/driver-signing-changes-in-windows-10/)
+* [Driver Signing changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 * [Availability of SHA-2 Code Signing Support for Windows 7 and Windows Server 2008 R2](https://docs.microsoft.com/security-updates/SecurityAdvisories/2015/3033929)
 * [Signing a Driver](signing-a-driver.md)
 * [Windows Hardware Certification](https://go.microsoft.com/fwlink/p/?LinkID=248337)

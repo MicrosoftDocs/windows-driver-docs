@@ -89,11 +89,11 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="even">
 <td><p>NtCurrentProcess</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566431" data-raw-source="[&lt;strong&gt;ZwCurrentProcess&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)"><strong>ZwCurrentProcess</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;ZwCurrentProcess&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)"><strong>ZwCurrentProcess</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtCurrentThread</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566434" data-raw-source="[&lt;strong&gt;ZwCurrentThread&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)"><strong>ZwCurrentThread</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;ZwCurrentThread&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)"><strong>ZwCurrentThread</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtDeleteFile</p></td>

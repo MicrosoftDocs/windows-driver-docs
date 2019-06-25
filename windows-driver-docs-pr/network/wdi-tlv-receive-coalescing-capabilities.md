@@ -75,8 +75,8 @@ The sum (in bytes) of the sizes of all contained elements.
 </dd>
 <dt>NDIS_RECEIVE_FILTER_VM_QUEUE_SUPPORTED</dt>
 <dd><p>The network adapter provides the minimum requirements to support VM queue packet filtering. The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV interface.</p>
-<p>For more information about VMQ requirements for VM queue packet filtering, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff570780" data-raw-source="[Setting and Clearing VMQ Filters](https://docs.microsoft.com/windows-hardware/drivers/network/setting-and-clearing-vmq-filters)">Setting and Clearing VMQ Filters</a>.</p>
-<p>For more information about SR-IOV requirements for VM queue packet filtering, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh440224" data-raw-source="[Setting a Receive Filter on a Virtual Port](https://docs.microsoft.com/windows-hardware/drivers/network/setting-a-receive-filter-on-a-virtual-port)">Setting a Receive Filter on a Virtual Port</a>.</p>
+<p>For more information about VMQ requirements for VM queue packet filtering, see <a href="https://docs.microsoft.com/windows-hardware/drivers/network/setting-and-clearing-vmq-filters" data-raw-source="[Setting and Clearing VMQ Filters](https://docs.microsoft.com/windows-hardware/drivers/network/setting-and-clearing-vmq-filters)">Setting and Clearing VMQ Filters</a>.</p>
+<p>For more information about SR-IOV requirements for VM queue packet filtering, see <a href="https://docs.microsoft.com/windows-hardware/drivers/network/setting-a-receive-filter-on-a-virtual-port" data-raw-source="[Setting a Receive Filter on a Virtual Port](https://docs.microsoft.com/windows-hardware/drivers/network/setting-a-receive-filter-on-a-virtual-port)">Setting a Receive Filter on a Virtual Port</a>.</p>
 </dd>
 <dt>NDIS_RECEIVE_FILTER_LOOKAHEAD_SPLIT_SUPPORTED</dt>
 <dd><p>The network adapter supports VM queues that split an incoming received packet at the lookahead offset. This offset is equal to or greater than the requested lookahead size. The network adapter uses DMA to transfer the lookahead and post-lookahead data to separate shared memory segments.</p>
@@ -274,7 +274,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tr>
 <tr class="odd">
 <td>UINT32</td>
-<td>The maximum number of tests on packet header fields that can be specified for a single packet coalescing filter. For more information about packet coalescing, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh451601" data-raw-source="[NDIS Packet Coalescing](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-packet-coalescing)">NDIS Packet Coalescing</a>.
+<td>The maximum number of tests on packet header fields that can be specified for a single packet coalescing filter. For more information about packet coalescing, see <a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-packet-coalescing" data-raw-source="[NDIS Packet Coalescing](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-packet-coalescing)">NDIS Packet Coalescing</a>.
 <div class="alert">
 <strong>Note</strong>  Network adapters that support packet coalescing must support five or more packet header fields that can be specified for a single packet coalescing filter. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.
 </div>

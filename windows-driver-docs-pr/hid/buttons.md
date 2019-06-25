@@ -77,8 +77,8 @@ Here are some general pointers to help you decide which implementation you shoul
 <p><img src="images/hid-umdf.png" alt="HID Transport Minidriver" /></p></td>
 <td><p>If you are implementing a non-GPIO button, instead of using preceding model of writing a HID source driver, you can write a HID transport minidriver in user mode. These drivers are easier to develop than kernel-mode drivers and errors in this driver do not bug check the whole system.</p>
 <ul>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh439579" data-raw-source="[Creating UMDF HID Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/creating-umdf-hid-minidrivers)">Creating UMDF HID Minidrivers</a></li>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh463977" data-raw-source="[UMDF HID Minidriver IOCTLs](https://docs.microsoft.com/previous-versions/hh463977(v=vs.85))">UMDF HID Minidriver IOCTLs</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/creating-umdf-hid-minidrivers" data-raw-source="[Creating UMDF HID Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/creating-umdf-hid-minidrivers)">Creating UMDF HID Minidrivers</a></li>
+<li><a href="https://docs.microsoft.com/previous-versions/hh463977(v=vs.85)" data-raw-source="[UMDF HID Minidriver IOCTLs](https://docs.microsoft.com/previous-versions/hh463977(v=vs.85))">UMDF HID Minidriver IOCTLs</a></li>
 </ul></td>
 </tr>
 </tbody>

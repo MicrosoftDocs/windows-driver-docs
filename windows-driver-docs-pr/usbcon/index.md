@@ -95,7 +95,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>Get information about the tools that you can use to test your USB hardware or software, capture traces of operations and other system events, and observe how the USB driver stack responds to a request sent by a client driver or an application.</p>
 <p>Read an overview of tests in the Hardware Certification Kit that enable hardware vendors and device manufacturers to prepare their USB devices and host controllers for Windows Hardware Certification submission.</p>
 <p><strong>Other Resources for USB</strong></p>
-<a href="http://www.usb.org/developers/docs/" data-raw-source="[Official USB Specification](https://www.usb.org/documents)">Official USB Specification</a>
+<a href="https://www.usb.org/documents" data-raw-source="[Official USB Specification](https://www.usb.org/documents)">Official USB Specification</a>
 <p>Provides complete technical details for the USB protocol.</p>
 <a href="https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog" data-raw-source="[Microsoft Windows USB Core Team Blog](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog)">Microsoft Windows USB Core Team Blog</a>
 <p>Check out posts written by the Microsoft USB Team. The blog focuses on the Windows USB driver stack that works with various USB Host controllers and USB hubs found in Windows PC. A useful resource for USB client driver developers and USB hardware designers understand the driver stack implementation, resolve common issues, and explain how to use tools for gathering traces and log files.</p>

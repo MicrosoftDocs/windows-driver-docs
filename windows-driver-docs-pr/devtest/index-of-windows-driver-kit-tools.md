@@ -98,7 +98,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>This tool can construct a graphical representation of a filter graph that shows the pin-to-pin connections between filters and the filters' internal nodes.</p>
 <p>%WindowsSdkDir%\tools\x86\KsStudio.chm</p>
 <p>%WindowsSdkDir%\tools\x64\KsStudio.chm</p>
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff554257" data-raw-source="[AVStream Testing and Debugging](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-testing-and-debugging)">AVStream Testing and Debugging</a> for more information.</p></td>
+<p>See <a href="https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-testing-and-debugging" data-raw-source="[AVStream Testing and Debugging](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-testing-and-debugging)">AVStream Testing and Debugging</a> for more information.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>USB Device Viewer (Usbview.exe)</p>
@@ -258,7 +258,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>Displays trace information from WPD components. This tool replaces WpdMon.exe which had shipped in previous versions of the WDK.</p>
 <p>WDK Documentation:</p>
 <p><a href="https://go.microsoft.com/fwlink/p/?linkid=106527" data-raw-source="[Windows Portable Devices](https://go.microsoft.com/fwlink/p/?linkid=106527)">Windows Portable Devices</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=262664" data-raw-source="[WPD Driver Development Tools](https://go.microsoft.com/fwlink/p/?linkid=262664)">WPD Driver Development Tools</a>, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh451296" data-raw-source="[Using the Network Monitor Tool](https://docs.microsoft.com/previous-versions/hh451296(v=vs.85))">Using the Network Monitor Tool</a>.</p></td>
+<p><a href="https://go.microsoft.com/fwlink/p/?linkid=262664" data-raw-source="[WPD Driver Development Tools](https://go.microsoft.com/fwlink/p/?linkid=262664)">WPD Driver Development Tools</a>, see <a href="https://docs.microsoft.com/previous-versions/hh451296(v=vs.85)" data-raw-source="[Using the Network Monitor Tool](https://docs.microsoft.com/previous-versions/hh451296(v=vs.85))">Using the Network Monitor Tool</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -325,8 +325,8 @@ The information in the following tables describes the tools that are useful for 
 <p>%WindowsSdkDir%\tools\x86\makentf.exe</p></td>
 <td align="left"><p>Converts Adobe Font Metrics (AFM) files and East Asian font AFM files to Windows font files (.ntf).</p>
 <p>WDK Documentation:</p>
-<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546364" data-raw-source="[Converting AFM Files to NTF Files](https://docs.microsoft.com/windows-hardware/drivers/print/converting-afm-files-to-ntf-files)">Converting AFM Files to NTF Files</a></p>
-<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546366" data-raw-source="[Converting East Asian AFM Files to NTF Files](https://docs.microsoft.com/windows-hardware/drivers/print/converting-east-asian-afm-files-to-ntf-files)">Converting East Asian AFM Files to NTF Files</a></p></td>
+<p><a href="https://docs.microsoft.com/windows-hardware/drivers/print/converting-afm-files-to-ntf-files" data-raw-source="[Converting AFM Files to NTF Files](https://docs.microsoft.com/windows-hardware/drivers/print/converting-afm-files-to-ntf-files)">Converting AFM Files to NTF Files</a></p>
+<p><a href="https://docs.microsoft.com/windows-hardware/drivers/print/converting-east-asian-afm-files-to-ntf-files" data-raw-source="[Converting East Asian AFM Files to NTF Files](https://docs.microsoft.com/windows-hardware/drivers/print/converting-east-asian-afm-files-to-ntf-files)">Converting East Asian AFM Files to NTF Files</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>PPDCheck (Ppdcheck.exe)</p>
@@ -383,7 +383,7 @@ The information in the following tables describes the tools that are useful for 
 <p>%WindowsSdkDir%\tools\x86&lt;/p&gt;</td>
 <td align="left"><p>Tests the driver, firmware, and hardware for sensor and location functionality. The tool invokes the sensor and location API to test data retrieval, event handling, report intervals, change sensitivity, property retrieval.</p>
 <p>WDK Documentation:</p>
-<p><a href="https://msdn.microsoft.com/library/windows/hardware/hh780319" data-raw-source="[Testing sensor functionality with the Sensor Diagnostic Tool](https://docs.microsoft.com/windows-hardware/drivers/sensors/the-sensor-diagnostic-tool)">Testing sensor functionality with the Sensor Diagnostic Tool</a></p></td>
+<p><a href="https://docs.microsoft.com/windows-hardware/drivers/sensors/the-sensor-diagnostic-tool" data-raw-source="[Testing sensor functionality with the Sensor Diagnostic Tool](https://docs.microsoft.com/windows-hardware/drivers/sensors/the-sensor-diagnostic-tool)">Testing sensor functionality with the Sensor Diagnostic Tool</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -433,7 +433,7 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WDK tool:</strong> Yes</p></td>
 <td align="left"><p>%WindowsSdkDir%\bin\x64\CertMgr.exe</p>
 <p>%WindowsSdkDir%\bin\x86\CertMgr.exe</p></td>
-<td align="left"><p>Manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs) that are used to sign drivers and <a href="https://msdn.microsoft.com/library/windows/hardware/ff544840" data-raw-source="[driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages)">driver packages</a>.</p>
+<td align="left"><p>Manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs) that are used to sign drivers and <a href="https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages" data-raw-source="[driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages)">driver packages</a>.</p>
 <p>WDK Documentation:</p>
 <p><a href="certmgr.md" data-raw-source="[&lt;strong&gt;CertMgr&lt;/strong&gt;](certmgr.md)"><strong>CertMgr</strong></a></p></td>
 </tr>
@@ -539,7 +539,7 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WDK tool:</strong> Yes</p></td>
 <td align="left"><p>%WindowsSdkDir%\bin\x64\inf2cat.exe</p>
 <p>%WindowsSdkDir%\bin\x86\inf2cat.exe</p></td>
-<td align="left"><p>Determines whether a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544840" data-raw-source="[driver package's](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages)">driver package's</a> INF file can be digitally-signed for a specified list of Windows versions, and, if so, generates the unsigned <a href="https://msdn.microsoft.com/library/windows/hardware/ff537872" data-raw-source="[catalog files](https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files)">catalog files</a> that apply to the specified Windows versions.</p>
+<td align="left"><p>Determines whether a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages" data-raw-source="[driver package's](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages)">driver package's</a> INF file can be digitally-signed for a specified list of Windows versions, and, if so, generates the unsigned <a href="https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files" data-raw-source="[catalog files](https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files)">catalog files</a> that apply to the specified Windows versions.</p>
 <p>WDK Documentation:</p>
 <p><a href="inf2cat.md" data-raw-source="[&lt;strong&gt;Inf2Cat&lt;/strong&gt;](inf2cat.md)"><strong>Inf2Cat</strong></a></p></td>
 </tr>
@@ -561,7 +561,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>WDKPath\bin\amd64\MakeCat.exe</p>
 <p>WDKPath\bin\ia64\MakeCat.exe</p>
 <p>WDKPath\bin\x86\MakeCat.exe</p></td>
-<td align="left"><p>Creates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537872" data-raw-source="[catalog file](https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files)">catalog file</a> for a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544840" data-raw-source="[driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages)">driver package</a>.</p>
+<td align="left"><p>Creates a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files" data-raw-source="[catalog file](https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files)">catalog file</a> for a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages" data-raw-source="[driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages)">driver package</a>.</p>
 <p>WDK Documentation:</p>
 <p><a href="makecat.md" data-raw-source="[MakeCat](makecat.md)">MakeCat</a></p></td>
 </tr>
@@ -594,7 +594,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>PnPUtil (PnPUtil.exe)</p>
 <p><strong>WDK tool:</strong> No</p></td>
 <td align="left"><p>%Windir%\system32\pnputil.exe</p></td>
-<td align="left"><p>A command-line tool that installs or deletes <a href="https://msdn.microsoft.com/library/windows/hardware/ff544840" data-raw-source="[driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages)">driver packages</a> from the Windows driver store.</p>
+<td align="left"><p>A command-line tool that installs or deletes <a href="https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages" data-raw-source="[driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages)">driver packages</a> from the Windows driver store.</p>
 <p>This tool is available in Windows 7 and later versions of Windows.</p>
 <p>WDK Documentation:</p>
 <p><a href="pnputil.md" data-raw-source="[PnPUtil](pnputil.md)">PnPUtil</a></p></td>

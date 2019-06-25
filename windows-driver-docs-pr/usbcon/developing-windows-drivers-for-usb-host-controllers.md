@@ -42,7 +42,7 @@ ms.localizationpriority: medium
 <a href="usb-3-0-driver-stack-architecture.md" data-raw-source="[USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md)">USB host-side drivers in Windows</a>
 <a href="get-started-with-host-controller-driver-development.md" data-raw-source="[Architecture: USB host controller extension (UCX)](get-started-with-host-controller-driver-development.md)">Architecture: USB host controller extension (UCX)</a>
 <p><strong>Familiarize yourself with UCX objects and handles</strong></p>
-<p>UCX extends the WDF object functionality to define its own USB-specific UCX objects. For more details on WDF objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544249" data-raw-source="[Introduction to Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects)">Introduction to Framework Objects</a>.</p>
+<p>UCX extends the WDF object functionality to define its own USB-specific UCX objects. For more details on WDF objects, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects" data-raw-source="[Introduction to Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects)">Introduction to Framework Objects</a>.</p>
 <p>For queuing requests to any underlying host controller driver, UCX uses these objects. For more information, see <a href="ucx-objects-and-handles-used-by-host-controller-driver.md" data-raw-source="[UCX objects and handles used by a host controller driver](ucx-objects-and-handles-used-by-host-controller-driver.md)">UCX objects and handles used by a host controller driver</a>.</p>
 <p></p>
 <dl>

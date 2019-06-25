@@ -83,7 +83,7 @@ HKR, EDID_OVERRIDE, 5, 1, 24, 5C, ..., 2D
 ...
 ```
 
-For more info on INFs in general, and **AddReg** and **DDInstall** in particular, see [Creating an INF File](https://msdn.microsoft.com/windows/hardware/drivers/hid/creating-an-inf-file).
+For more info on INFs in general, and **AddReg** and **DDInstall** in particular, see [Creating an INF File](https://docs.microsoft.com/windows-hardware/drivers/hid/creating-an-inf-file).
 
 ```inf
 ; monsamp.INF

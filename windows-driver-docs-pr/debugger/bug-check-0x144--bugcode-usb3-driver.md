@@ -101,7 +101,7 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 </tr>
 <tr class="odd">
 <td align="left"><p>0x805</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff542962" data-raw-source="[WDFREQUEST](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-request-objects)">WDFREQUEST</a> handle for the Close Static Streams URB</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-request-objects" data-raw-source="[WDFREQUEST](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-request-objects)">WDFREQUEST</a> handle for the Close Static Streams URB</p></td>
 <td align="left"><p>Pointer to the Close Static Streams URB</p></td>
 <td align="left"><p>Pointer to the client driver's device object</p></td>
 <td align="left"><p>A client driver sent a Close Static Streams URB in an invalid state (for example, after processing D0 Exit).</p></td>
