@@ -42,7 +42,7 @@ Specifies the INF or INX file to process.
 Specifies the INF section in which to put the [**INF DriverVer directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive). The default location for this directive is the [**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section).
 
 <span id="_______-d_________date_____"></span><span id="_______-D_________DATE_____"></span> **-d** \[ *date* | **\\**<em>\]  
-Specifies the date that is written in the [</em>*INF DriverVer directive*<em>](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive). The format for the date is *month</em>/*date*/*year* (for example, **-d 10/20/2011**).
+Specifies the date that is written in the [INF DriverVer directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive). The format for the date is *month</em>/*date*/*year* (for example, **-d 10/20/2011**).
 
 To use the current date, specify an asterisk (\*) with this parameter.
 
