@@ -23,7 +23,7 @@ Use the following steps to prepare your code for analysis.
 
 1.  **Declare driver-supplied functions by using function role types**
 
-    SDV requires that the functions be declared by using function role type declarations. For example, a [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine must be declared by using the DRIVER\_INITIALIZE function role type:
+    SDV requires that the functions be declared by using function role type declarations. For example, a [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine must be declared by using the DRIVER\_INITIALIZE function role type:
 
     ```
     DRIVER_INITIALIZE DriverEntry;
@@ -117,7 +117,7 @@ Use the following steps to prepare your code for analysis.
 
     Static Driver Verifier detects the type of driver you are analyzing (WDF, WDM, NDIS, or Storport) and selects the default set of rules for your driver type. If this is the first time you are running SDV on your driver, you should run the default rule set.
 
-    For information about the rules, see [DDI Compliance Rules](https://msdn.microsoft.com/library/windows/hardware/ff552840).
+    For information about the rules, see [DDI Compliance Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
 5.  Start the static analysis. Click the **Main** tab, and click **Start**. When you click **Start**, a message is displayed to let you know that static analysis is scheduled and that the analysis can take a long time to run. Click **OK** to continue. The analysis begins at the time you scheduled.
 
@@ -150,7 +150,7 @@ If SDV reports timeouts or fails to return useful results, you might need to cha
 
 [Using Function Role Type Declarations](using-function-role-type-declarations.md)
 
-[Static Driver Verifier Rules](https://msdn.microsoft.com/library/windows/hardware/ff552840)
+[Static Driver Verifier Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
 [Code Analysis tool](https://go.microsoft.com/fwlink/p/?linkid=226836)
 

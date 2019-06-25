@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # Participating in Error Recovery
 
 
-To participate in error recovery, a PSHED plug-in must implement an [*AttemptRecovery*](https://msdn.microsoft.com/library/windows/hardware/ff559257) callback function.
+To participate in error recovery, a PSHED plug-in must implement an [*AttemptRecovery*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pshed_pi_attempt_error_recovery) callback function.
 
 The following code example shows how to implement this callback function.
 

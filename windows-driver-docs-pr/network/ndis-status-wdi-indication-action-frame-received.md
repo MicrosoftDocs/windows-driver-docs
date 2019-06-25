@@ -24,9 +24,9 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED to i
 
 | Type                                                                               | Multiple TLV instances allowed | Optional | Description                                               |
 |------------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------------------------------|
-| [**WDI\_TLV\_BSSID**](https://msdn.microsoft.com/library/windows/hardware/dn926153)                                      |                                |          | The BSSID of the source.                                  |
-| [**WDI\_TLV\_BSS\_ENTRY\_CHANNEL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn926155) |                                |          | The logical channel number and band ID for the BSS entry. |
-| [**WDI\_TLV\_ACTION\_FRAME\_BODY**](https://msdn.microsoft.com/library/windows/hardware/dn926118)            |                                |          | The incoming Action Frame body.                           |
+| [**WDI\_TLV\_BSSID**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-bssid)                                      |                                |          | The BSSID of the source.                                  |
+| [**WDI\_TLV\_BSS\_ENTRY\_CHANNEL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-bss-entry-channel-info) |                                |          | The logical channel number and band ID for the BSS entry. |
+| [**WDI\_TLV\_ACTION\_FRAME\_BODY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-action-frame-body)            |                                |          | The incoming Action Frame body.                           |
 
  
 

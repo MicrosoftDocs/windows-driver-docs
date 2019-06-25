@@ -20,11 +20,11 @@ The following subsections describe some of the similarities between file system 
 
 ### <span id="Similar_Structure"></span><span id="similar_structure"></span><span id="SIMILAR_STRUCTURE"></span>Similar Structure
 
-Like device drivers, file system filter drivers have [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113), [dispatch](https://msdn.microsoft.com/library/windows/hardware/ff566407), and [I/O completion](https://msdn.microsoft.com/library/windows/hardware/ff565398) routines. They call many of the same kernel-mode routines that device drivers call, and they filter I/O requests for devices (that is, file system volumes) with which they are associated.
+Like device drivers, file system filter drivers have [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize), [dispatch](https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-dispatch-routines), and [I/O completion](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-iocompletion-routines) routines. They call many of the same kernel-mode routines that device drivers call, and they filter I/O requests for devices (that is, file system volumes) with which they are associated.
 
 ### <span id="Similar_Functionality"></span><span id="similar_functionality"></span><span id="SIMILAR_FUNCTIONALITY"></span>Similar Functionality
 
-Because file system filter drivers and device drivers are part of the I/O system, they both receive [I/O request packets](https://msdn.microsoft.com/library/windows/hardware/ff558771) (IRPs) and act on them.
+Because file system filter drivers and device drivers are part of the I/O system, they both receive [I/O request packets](https://docs.microsoft.com/windows-hardware/drivers/kernel/packet-driven-i-o-with-reusable-irps) (IRPs) and act on them.
 
 Like device drivers, file system filter drivers can also create their own IRPs and send them to lower-level drivers.
 
@@ -32,7 +32,7 @@ Both kinds of drivers can register for notification (by using callback functions
 
 ### <span id="Other_Similarities"></span><span id="other_similarities"></span><span id="OTHER_SIMILARITIES"></span>Other Similarities
 
-Like device drivers, file system filter drivers can receive [Introduction to I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff548059) (IOCTLs). However, file system filter drivers can also receive--and define--[file system control codes](https://msdn.microsoft.com/library/windows/hardware/ff540367) (FSCTLs).
+Like device drivers, file system filter drivers can receive [Introduction to I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-i-o-control-codes) (IOCTLs). However, file system filter drivers can also receive--and define--[file system control codes](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) (FSCTLs).
 
 Like device drivers, file system filter drivers can be configured to be loaded at system startup time or to be loaded later, after the system startup process is complete.
 

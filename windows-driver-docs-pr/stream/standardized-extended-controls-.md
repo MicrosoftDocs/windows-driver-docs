@@ -48,17 +48,17 @@ DEFINE_GUIDSTRUCT("1CB79112-C0D2-4213-9CA6-CD4FDB927972", KSPROPERTYSETID_Extend
 
 To retrieve metadata, the user mode component (DevProxy) must query the driver for the metadata buffer requirement. Once the user mode component has this information, it allocates the appropriate metadata buffer for the driver to fill and return back to the user mode component.
 
-The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA**](https://msdn.microsoft.com/library/windows/hardware/dn917952) property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn917962) enumeration is used by the client to query for the metadata buffer requirements, such as required metadata size, memory alignment requirements, and desired memory allocation type, for metadata buffer allocation.
+The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-metadata) property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration is used by the client to query for the metadata buffer requirements, such as required metadata size, memory alignment requirements, and desired memory allocation type, for metadata buffer allocation.
 
 Once user mode component has obtained the metadata buffer requirements from the driver, it allocates the appropriately sized metadata buffer with the desired memory alignment from the desired memory pool. This metadata buffer, along with the actual frame buffer, will be sent to the driver to fulfill and then returned back to the user mode component when filled. For multishot scenarios, a corresponding metadata buffer is allocated and delivered to the camera driver for each frame buffer allocated.
 
-The [**KSSTREAM\_METADATA\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn936959) structure, along with the following flag, is used to send the metadata buffer to the driver.
+The [**KSSTREAM\_METADATA\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksstream_metadata_info) structure, along with the following flag, is used to send the metadata buffer to the driver.
 
 ```cpp
 #define KSSTREAM_HEADER_OPTIONSF_METADATA           0x00001000
 ```
 
-Once the buffer (metadata + frame) is queued to the driver, DevProxy sends a standard [**KSSTREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567138) structure, followed by a [**KS\_FRAME\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567645) structure, and followed by a **KSSTREAM\_METADATA\_INFO** structure. DevProxy will further mask **KSSTREAM\_HEADER.OptionFlags** with **KSSTREAM\_HEADER\_OPTIONSF\_METADATA** before it passes the buffer down to the driver.
+Once the buffer (metadata + frame) is queued to the driver, DevProxy sends a standard [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksstream_header) structure, followed by a [**KS\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_frame_info) structure, and followed by a **KSSTREAM\_METADATA\_INFO** structure. DevProxy will further mask **KSSTREAM\_HEADER.OptionFlags** with **KSSTREAM\_HEADER\_OPTIONSF\_METADATA** before it passes the buffer down to the driver.
 
 If the driver does not support metadata, or if **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA** is not implemented, the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA** property control will fail. In this case, DevProxy will not allocate a metadata buffer and the payload that is passed down to the driver from DevProxy will not contain the **KSSTREAM\_METADATA\_INFO** structure.
 
@@ -66,15 +66,15 @@ If the driver supports metadata and the client does not want any metadata, DevPr
 
 The following structures describe the layout of the metadata items to be filled by the camera driver in the metadata buffer.
 
--   [**KSCAMERA\_MetadataId**](https://msdn.microsoft.com/library/windows/hardware/dn925181)
+-   [**KSCAMERA\_MetadataId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-kscamera_metadataid)
 
--   [**KSCAMERA\_METADATA\_ITEMHEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925184)
+-   [**KSCAMERA\_METADATA\_ITEMHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_metadata_itemheader)
 
--   [**KSCAMERA\_METADATA\_PHOTOCONFIRMATION**](https://msdn.microsoft.com/library/windows/hardware/dn925187)
+-   [**KSCAMERA\_METADATA\_PHOTOCONFIRMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_metadata_photoconfirmation)
 
 The list below contains the layout of a metadata item. This must be 8-byte aligned.
 
--   [**KSCAMERA\_METADATA\_ITEMHEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925184)
+-   [**KSCAMERA\_METADATA\_ITEMHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_metadata_itemheader)
 
 -   Metadata
 
@@ -111,31 +111,31 @@ To add the required IMFAttributes to the **MFSampleExtension\_CaptureMetadata** 
 ## Focus priority
 
 
-The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY**](https://msdn.microsoft.com/library/windows/hardware/dn917942) property ID is the only control that is associated with the focus priority DDI.
+The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-focuspriority) property ID is the only control that is associated with the focus priority DDI.
 
 ## Focus state
 
 
-The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSSTATE**](https://msdn.microsoft.com/library/windows/hardware/dn917944) property ID is the only control that is associated with the focus state DDI.
+The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSSTATE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-focusstate) property ID is the only control that is associated with the focus state DDI.
 
 ## Extended region of interest ROI
 
 
 The following property IDs are the controls that are associated with the ROI DDI:
 
--   [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_CONFIGCAPS**](https://msdn.microsoft.com/library/windows/hardware/dn917964)
+-   [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_CONFIGCAPS**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-roi-configcaps)
 
--   [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_ISPCONTROL**](https://msdn.microsoft.com/library/windows/hardware/dn917966)
+-   [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_ISPCONTROL**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-roi-ispcontrol)
 
 ## Photo confirmation
 
 
-The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION**](https://msdn.microsoft.com/library/windows/hardware/dn917957) property ID is the only control that is associated with the photo confirmation DDI.
+The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-photoconfirmation) property ID is the only control that is associated with the photo confirmation DDI.
 
 ## Photo sequence submode
 
 
-The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE**](https://msdn.microsoft.com/library/windows/hardware/dn567582) property ID is the only control associated with the photo sequence DDI.
+The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-photomode) property ID is the only control associated with the photo sequence DDI.
 
 ## Photo capture feedback applied device settings
 
@@ -182,7 +182,7 @@ The MFT0 parses the metadata buffer provided by the driver and attaches the requ
 <tr class="odd">
 <td><strong>MF_CAPTURE_METADATA_EXPOSURE_COMPENSATION</strong></td>
 <td><strong>Blob</strong></td>
-<td>This attribute contains an EV compensation step flag and an EV compensation value in units of the step that was applied to the driver when the photo was captured. The <a href="https://msdn.microsoft.com/library/windows/hardware/dn897242" data-raw-source="[&lt;strong&gt;CapturedMetadataExposureCompensation&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn897242)"><strong>CapturedMetadataExposureCompensation</strong></a> data structure describes the blob format for this attribute only. The metadata item structure format for EV compensation (<strong>KSCAMERA_METADATA_ITEMHEADER</strong> + EV compensation metadata payload) is provided by the driver and must be 8 byte aligned.</td>
+<td>This attribute contains an EV compensation step flag and an EV compensation value in units of the step that was applied to the driver when the photo was captured. The <a href="https://docs.microsoft.com/windows/desktop/api/mfapi/ns-mfapi-tagcapturedmetadataexposurecompensation" data-raw-source="[&lt;strong&gt;CapturedMetadataExposureCompensation&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/mfapi/ns-mfapi-tagcapturedmetadataexposurecompensation)"><strong>CapturedMetadataExposureCompensation</strong></a> data structure describes the blob format for this attribute only. The metadata item structure format for EV compensation (<strong>KSCAMERA_METADATA_ITEMHEADER</strong> + EV compensation metadata payload) is provided by the driver and must be 8 byte aligned.</td>
 </tr>
 <tr class="even">
 <td><strong>MF_CAPTURE_METADATA_ISO_SPEED</strong></td>
@@ -220,7 +220,7 @@ The MFT0 parses the metadata buffer provided by the driver and attaches the requ
 <td><strong>MF_CAPTURE_METADATA_ZOOMFACTOR</strong></td>
 <td><p><strong>UINT32</strong></p>
 <p>(Q16)</p></td>
-<td>This attribute contains the zoom value applied and is the same value that can be queried from <a href="https://msdn.microsoft.com/library/windows/hardware/dn936756" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn936756)"><strong>KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM</strong></a> in a GET call. The value must be in Q16.</td>
+<td>This attribute contains the zoom value applied and is the same value that can be queried from <a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-zoom" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-zoom)"><strong>KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM</strong></a> in a GET call. The value must be in Q16.</td>
 </tr>
 <tr class="odd">
 <td><strong>MF_CAPTURE_METADATA_FRAME_ILLUMINATION</strong></td>
@@ -275,27 +275,27 @@ MFT0 is not required to produce any thumbnail for the camera driver. The camera 
 ## Integer ISO
 
 
-The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED**](https://msdn.microsoft.com/library/windows/hardware/dn917947) property ID is the only control associated with the integer ISO DDI.
+The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-iso-advanced) property ID is the only control associated with the integer ISO DDI.
 
 ## Advanced focus
 
 
-The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE**](https://msdn.microsoft.com/library/windows/hardware/dn567576) property ID is the only control associated with the integer ISO DDI.
+The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-focusmode) property ID is the only control associated with the integer ISO DDI.
 
 ## Flash
 
 
-The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE**](https://msdn.microsoft.com/library/windows/hardware/dn567575) property ID is the only control that is associated with the flash DDI.
+The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-flashmode) property ID is the only control that is associated with the flash DDI.
 
 ## Zoom
 
 
-The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM**](https://msdn.microsoft.com/library/windows/hardware/dn936756) property ID is the only control that is associated with the zoom DDI.
+The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-zoom) property ID is the only control that is associated with the zoom DDI.
 
 ## Scene mode
 
 
-The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE**](https://msdn.microsoft.com/library/windows/hardware/dn567585) property ID is the only control associated with the scene mode DDI.
+The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-scenemode) property ID is the only control associated with the scene mode DDI.
 
  
 

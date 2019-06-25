@@ -293,7 +293,7 @@ The following sample application manifest uses the **windows.aboveLockScreen**UW
 ## <span id="Appendix_2__troubleshooting"></span><span id="appendix_2__troubleshooting"></span><span id="APPENDIX_2__TROUBLESHOOTING"></span>Appendix 2: troubleshooting
 
 
-Normally, if a Kiosk app fails to activate above the lock screen app, you can find the activation error code in the lockdown screen. Use the error code to discover the issue by looking up Windows [System Error Codes](https://msdn.microsoft.com/library/windows/desktop/ms681381). In addition Event Viewer contains more information about activation failures. To do so:
+Normally, if a Kiosk app fails to activate above the lock screen app, you can find the activation error code in the lockdown screen. Use the error code to discover the issue by looking up Windows [System Error Codes](https://docs.microsoft.com/windows/desktop/Debug/system-error-codes). In addition Event Viewer contains more information about activation failures. To do so:
 
 1.  Open **Event Viewer**. There are two likely places to find activation errors.
 2.  In the **Event Viewer (Local)** pane, expand **Windows Logs**, and then click **Application**.
@@ -304,7 +304,7 @@ Note that because kiosk apps with assigned access do not run in full-screen mode
 ## <span id="related_topics"></span>Related topics
 
 
-[Assigned access](https://msdn.microsoft.com/library/windows/hardware/mt620040)
+[Assigned access](https://docs.microsoft.com/windows-hardware/customize/enterprise/assigned-access)
 
 [Show multiple views for an app]( https://go.microsoft.com/fwlink/?LinkId=708251)
 

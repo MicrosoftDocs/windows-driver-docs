@@ -41,28 +41,28 @@ Parameters
 ----------
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SendLIRR\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565439) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SendLIRR\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendlirr_out) structure.
 
 *SourceWWN*   
-A worldwide name for the local port through which the LIRR command is sent. This information is delivered to the miniport driver in the **SourceWWN** member of a [**SendLIRR\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565435) structure.
+A worldwide name for the local port through which the LIRR command is sent. This information is delivered to the miniport driver in the **SourceWWN** member of a [**SendLIRR\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendlirr_in) structure.
 
 *DestWWN*   
-A worldwide name for the destination port. This information is delivered to the miniport driver in the **DestWWN** member of a [**SendLIRR\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565435) structure.
+A worldwide name for the destination port. This information is delivered to the miniport driver in the **DestWWN** member of a [**SendLIRR\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendlirr_in) structure.
 
 *Function*   
-The code that identifies which registration function is to be performed. For an explanation of which values can be assigned to this member, see the T11 committee's *Fibre Channel Framing and Signaling* specification. This information is delivered to the miniport driver in the **Function** member of a [**SendLIRR\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565435) structure.
+The code that identifies which registration function is to be performed. For an explanation of which values can be assigned to this member, see the T11 committee's *Fibre Channel Framing and Signaling* specification. This information is delivered to the miniport driver in the **Function** member of a [**SendLIRR\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendlirr_in) structure.
 
 *Type*   
-The device type for which link information is requested. For an explanation of which values can be assigned to this member, see the T11 committee's *Fibre Channel Framing and Signaling* specification. This information is delivered to the miniport driver in the **Function** member of a [**SendLIRR\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565435) structure.
+The device type for which link information is requested. For an explanation of which values can be assigned to this member, see the T11 committee's *Fibre Channel Framing and Signaling* specification. This information is delivered to the miniport driver in the **Function** member of a [**SendLIRR\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendlirr_in) structure.
 
 *TotalRspBufferSize*   
-The size in bytes of the results of the LIRR command. The miniport driver returns this information in the **TotalRspBufferSize** member of a [**SendLIRR\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565439) structure.
+The size in bytes of the results of the LIRR command. The miniport driver returns this information in the **TotalRspBufferSize** member of a [**SendLIRR\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendlirr_out) structure.
 
 *ActualRspBufferSize*   
-The size in bytes of the data that was actually retrieved. The miniport driver returns this information in the **ActualRspBufferSize** member of a [**SendLIRR\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565439) structure.
+The size in bytes of the data that was actually retrieved. The miniport driver returns this information in the **ActualRspBufferSize** member of a [**SendLIRR\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendlirr_out) structure.
 
 *RspBuffer*   
-The results of the LIRR command. The miniport driver returns this information in the **RspBuffer** member of a [**SendLIRR\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565439) structure.
+The results of the LIRR command. The miniport driver returns this information in the **RspBuffer** member of a [**SendLIRR\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendlirr_out) structure.
 
 Return value
 ------------
@@ -103,9 +103,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SendLIRR\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565435)
+[**SendLIRR\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendlirr_in)
 
-[**SendLIRR\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565439)
+[**SendLIRR\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendlirr_out)
 
  
 

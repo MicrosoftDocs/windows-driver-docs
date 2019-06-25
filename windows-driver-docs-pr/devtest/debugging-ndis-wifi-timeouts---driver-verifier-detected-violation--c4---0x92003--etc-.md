@@ -9,9 +9,9 @@ ms.localizationpriority: medium
 # Debugging NDIS/WiFi time-out errors - DRIVER\_VERIFIER\_DETECTED\_VIOLATION (C4)
 
 
-When you have the [NDIS/WIFI verification](ndis-wifi-verification.md) option selected, and Driver Verifier detects that the driver violates one of the NDIS/WiFi time-out rules, [Driver Verifier](driver-verifier.md) generates [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://msdn.microsoft.com/library/windows/hardware/ff560187) (with Parameter 1 equal to the identifier of the specific NDIS/WiFi time-out rule).
+When you have the [NDIS/WIFI verification](ndis-wifi-verification.md) option selected, and Driver Verifier detects that the driver violates one of the NDIS/WiFi time-out rules, [Driver Verifier](driver-verifier.md) generates [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (with Parameter 1 equal to the identifier of the specific NDIS/WiFi time-out rule).
 
-When Driver Verifier is testing a NDIS/WIFI time-out rule, such as [**NdisTimedOidComplete**](https://msdn.microsoft.com/library/windows/hardware/dn305120), Driver Verifier’s polling mechanism expects a response from the miniport driver within a number of cycles. Each timed rule has defined its own maximum cycle allowed. When the maximum is exceeded, Driver Verifier generates a bug check. This section describes some example strategies for debugging these violations.
+When Driver Verifier is testing a NDIS/WIFI time-out rule, such as [**NdisTimedOidComplete**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndistimedoidcomplete), Driver Verifier’s polling mechanism expects a response from the miniport driver within a number of cycles. Each timed rule has defined its own maximum cycle allowed. When the maximum is exceeded, Driver Verifier generates a bug check. This section describes some example strategies for debugging these violations.
 
 ## Debugging NDIS/WIFI timeout errors
 
@@ -23,7 +23,7 @@ When Driver Verifier is testing a NDIS/WIFI time-out rule, such as [**NdisTimedO
 
 ### Use !analyze to display information about the bug check
 
-As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](https://msdn.microsoft.com/library/windows/hardware/ff562112) command.
+As with any bug check that occurs, once you have control of the debugger, the best first step is to run the [**!analyze -v**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) command.
 
 ```
 DRIVER_VERIFIER_DETECTED_VIOLATION (c4)
@@ -97,7 +97,7 @@ STACK_TEXT:
 
 ### Use the !ruleinfo extension command
 
-The **DV\_RULE\_INFO:** field of the **!analyze** output shows a link to the command you can use to find more information about this rule violation. For this example, if you click the link, it runs the [**!ruleinfo**](https://msdn.microsoft.com/library/windows/hardware/dn265374) command with the RULE\_ID (0x92003) the Arg3 and Arg 4 bug check values.
+The **DV\_RULE\_INFO:** field of the **!analyze** output shows a link to the command you can use to find more information about this rule violation. For this example, if you click the link, it runs the [**!ruleinfo**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-ruleinfo) command with the RULE\_ID (0x92003) the Arg3 and Arg 4 bug check values.
 
 ```
 kd> !ruleinfo 0x92003 0xffffffff9c17b860 0xffffffff9c1f3480
@@ -125,7 +125,7 @@ RULE_STATE: 0x9C1F3480
 
 ### Identify the location of the violation
 
-In the example we are using here, the miniport driver, NdisTimedOidComplete.sys, has a sleep cycle injected into its *MPOidRequest* function. We can check by clicking on the LAST\_CALL\_STACK link in the [**!ruleinfo**](https://msdn.microsoft.com/library/windows/hardware/dn265374) output. This is the last call stack seen by Driver Verifier, where we see that NDIS called *ndisMInvokeOidRequest* before the time out occurred.
+In the example we are using here, the miniport driver, NdisTimedOidComplete.sys, has a sleep cycle injected into its *MPOidRequest* function. We can check by clicking on the LAST\_CALL\_STACK link in the [**!ruleinfo**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-ruleinfo) output. This is the last call stack seen by Driver Verifier, where we see that NDIS called *ndisMInvokeOidRequest* before the time out occurred.
 
 ```
 kd> dps 0x9C1F3480 + 0x10
@@ -141,12 +141,12 @@ kd> dps 0x9C1F3480 + 0x10
 
 ### Fixing the cause of the NDIS WIFI timeout violation
 
-When the crash dump has been generated for a timed rule, there is a possibility that the root cause can be found at the time of the crash dump. To debug further, consider starting with the NdisKd debugger extension commands, see [NDIS Extensions (Ndiskd.dll)](https://msdn.microsoft.com/library/windows/hardware/ff552270) and [Getting started with NDISKD](https://go.microsoft.com/fwlink/p/?linkid=327569). You may also need to look at [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) logs, if your driver has implemented ETW. If this rule were not enabled, this error will manifest itself as user application hang at best, or a [**Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE**](https://msdn.microsoft.com/library/windows/hardware/ff559329) at the worst.
+When the crash dump has been generated for a timed rule, there is a possibility that the root cause can be found at the time of the crash dump. To debug further, consider starting with the NdisKd debugger extension commands, see [NDIS Extensions (Ndiskd.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/ndis-extensions--ndiskd-dll-) and [Getting started with NDISKD](https://go.microsoft.com/fwlink/p/?linkid=327569). You may also need to look at [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) logs, if your driver has implemented ETW. If this rule were not enabled, this error will manifest itself as user application hang at best, or a [**Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x9f--driver-power-state-failure) at the worst.
 
 ## <span id="related_topics"></span>Related topics
 
 
-[NDIS Extensions (Ndiskd.dll)](https://msdn.microsoft.com/library/windows/hardware/ff552270)
+[NDIS Extensions (Ndiskd.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/ndis-extensions--ndiskd-dll-)
 
 [Getting started with NDISKD (part 1)](https://go.microsoft.com/fwlink/p/?linkid=327569)
 

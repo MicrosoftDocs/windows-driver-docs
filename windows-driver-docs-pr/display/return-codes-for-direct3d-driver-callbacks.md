@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_return_codes_for_direct3d_driver_callbacks_gg"></span><span id="DDK_RETURN_CODES_FOR_DIRECT3D_DRIVER_CALLBACKS_GG"></span>
 
 
-The following table lists values that can be returned by the [Direct3D Driver-Supplied Functions](https://msdn.microsoft.com/library/windows/hardware/ff552859). The DDHAL\_DRIVER\_*Xxx* values actually are returned in the DWORD return value. The D3D\_OK value, D3DHAL\_*Xxx* values, and D3DERR\_*Xxx* error codes are returned in the **ddrval** member of the structure to which the particular function's parameter points.
+The following table lists values that can be returned by the [Direct3D Driver-Supplied Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index). The DDHAL\_DRIVER\_*Xxx* values actually are returned in the DWORD return value. The D3D\_OK value, D3DHAL\_*Xxx* values, and D3DERR\_*Xxx* error codes are returned in the **ddrval** member of the structure to which the particular function's parameter points.
 
 For specific error codes that each function can return, see the function and structure descriptions in the reference section. Refer to Direct3D header files *d3d.h* and *d3dhal.h* for a complete listing of error codes and return values (also, *d3d8.h* and *d3d9.h* for DirectX versions 8.0 and 9.0). Note that error codes are represented by negative values and cannot be combined.
 

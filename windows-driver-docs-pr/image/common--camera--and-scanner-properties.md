@@ -68,7 +68,7 @@ The three-letter acronym in the middle of a WIA property name contains informati
 
  
 
-See [WIA Properties](https://msdn.microsoft.com/library/windows/hardware/ff552739) for a complete list of WIA common, camera-specific, and scanner-specific properties.
+See [WIA Properties](https://docs.microsoft.com/windows-hardware/drivers/image/wia-properties) for a complete list of WIA common, camera-specific, and scanner-specific properties.
 
  
 

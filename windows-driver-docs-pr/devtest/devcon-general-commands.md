@@ -114,7 +114,7 @@ The parameters must appear in the specified order. For example, to display help 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-Many DevCon operations require the hardware ID of the device. To create a list of the hardware IDs of all devices on the computer for use in subsequent DevCon operations, begin with a [**DevCon HwIDs**](devcon-hwids.md) command. For more information, see [Hardware IDs](https://msdn.microsoft.com/library/windows/hardware/ff546152) and [Device Identification Strings](https://msdn.microsoft.com/library/windows/hardware/ff541224).
+Many DevCon operations require the hardware ID of the device. To create a list of the hardware IDs of all devices on the computer for use in subsequent DevCon operations, begin with a [**DevCon HwIDs**](devcon-hwids.md) command. For more information, see [Hardware IDs](https://docs.microsoft.com/windows-hardware/drivers/install/hardware-ids) and [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings).
 
 ### <span id="ddk_devcon_search_logic_tools"></span><span id="DDK_DEVCON_SEARCH_LOGIC_TOOLS"></span>How DevCon searches for devices
 

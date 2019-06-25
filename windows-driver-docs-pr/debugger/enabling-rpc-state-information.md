@@ -21,7 +21,7 @@ Gathering **Server** state information is very lightweight. It costs about 100 m
 
 Gathering **Full** state information is more heavyweight. It includes all the information gathered at the **Server** level and, in addition, includes Client Call (CCALL) objects. **Full** state information is usually not needed.
 
-To enable state information to be gathered on an individual machine, run the Group Policy Editor (Gpedit.msc). Under the Local Computer Policy, navigate to **Computer Configuration/Administrative Templates/System/Remote Procedure Call**. Under this node you will see the **RPC Troubleshooting State Information** item. When you edit its properties, you will see five possible states:
+To enable state information to be gathered on an individual machine, run the Group Policy Editor (Gpedit.msc). Under the Local Computer Policy, navigate to **Computer Configuration/Administrative Templates/System/Remote Procedure Call**. Under this node you will see the **Maintain RPC Troubleshooting State Information** item. When you edit its properties, you will see five possible states:
 
 <span id="None"></span><span id="none"></span><span id="NONE"></span>**None**  
 No state information will be maintained. Unless your machine is experiencing memory pressure, this is not recommended.

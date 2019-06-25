@@ -24,7 +24,7 @@ const PROPERTYKEY g_SettableGeolocationProperties[] =
 };
 ```
 
-For more information about change sensitivity and the report interval, refer to the [Filtering data](https://msdn.microsoft.com/library/windows/hardware/hh706201) topic.
+For more information about change sensitivity and the report interval, refer to the [Filtering data](https://docs.microsoft.com/windows-hardware/drivers/sensors/filtering-data) topic.
 
 A data-field key is a **PROPERTYKEY** that the driver uses to identify each unique data field that it supports. In the case of the pseudo geolocation-sensor there are eight supported data fields that include data such as the timestamp of the reading, current latitude (in degrees), current longitude (in degrees), and so on. These keys are also defined in the file geolocation.cpp.
 
@@ -48,7 +48,7 @@ The **Initialize** method, in turn, invokes an **InitializeGeolocation** method.
 
 ## Related topics
 [Defining the geolocation object](defining-the-geolocation-object.md)  
-[Filtering data](https://msdn.microsoft.com/library/windows/hardware/hh706201)  
+[Filtering data](https://docs.microsoft.com/windows-hardware/drivers/sensors/filtering-data)  
 
 
 

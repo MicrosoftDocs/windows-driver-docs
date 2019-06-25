@@ -13,15 +13,15 @@ ms.localizationpriority: medium
 
 
 
-If a device driver has a [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine, its dispatch routines can register a [*Cancel*](https://msdn.microsoft.com/library/windows/hardware/ff540742) routine by supplying its address as input to [**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370).
+If a device driver has a [*StartIo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_startio) routine, its dispatch routines can register a [*Cancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_cancel) routine by supplying its address as input to [**IoStartPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iostartpacket).
 
 If a driver does not have a *StartIo* routine, its dispatch routines must do the following before queuing an IRP for further processing by other driver routines:
 
-1.  Call [**IoAcquireCancelSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff548196).
+1.  Call [**IoAcquireCancelSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548196(v=vs.85)).
 
-2.  Call [**IoSetCancelRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549674) with the input IRP and the entry point for a driver-supplied *Cancel* routine.
+2.  Call [**IoSetCancelRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcancelroutine) with the input IRP and the entry point for a driver-supplied *Cancel* routine.
 
-3.  Call [**IoReleaseCancelSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff549550).
+3.  Call [**IoReleaseCancelSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549550(v=vs.85)).
 
 For information about the cancel spin lock, see [Using the System's Cancel Spin Lock](using-the-system-s-cancel-spin-lock.md).
 

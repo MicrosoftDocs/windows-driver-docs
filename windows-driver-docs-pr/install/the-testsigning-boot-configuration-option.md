@@ -50,6 +50,9 @@ The following figure shows the result of using the BCDEdit command line to enabl
 
 When loading test-signed code is enabled, Windows does the following:
 
+-   Displays a watermark with the text "Test Mode" in all four corners of the desktop, to remind users the system has test-signing enabled.
+    **Note**  Starting with Windows 7, Windows displays this watermark only in the lower right-hand corner of the desktop.
+
 -   Displays a watermark with the text "Test Mode" in the lower-left corner of the desktop to remind users that the system has test-signing enabled.
 
 -   The operating system loader and the kernel load drivers that are signed by any certificate. The certificate validation is not required to chain up to a trusted root certification authority. However, each driver image file must have a digital signature.

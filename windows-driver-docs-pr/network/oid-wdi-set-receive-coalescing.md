@@ -27,7 +27,7 @@ When the host receives a request from the OS to set packet coalescing filters, i
 
 | TLV                                                                               | Multiple TLV instances allowed | Optional | Description                                 |
 |-----------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------|
-| [**WDI\_TLV\_SET\_RECEIVE\_COALESCING**](https://msdn.microsoft.com/library/windows/hardware/dn898061) |                                |          | The packet coalescing parameters to be set. |
+| [**WDI\_TLV\_SET\_RECEIVE\_COALESCING**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-receive-coalescing) |                                |          | The packet coalescing parameters to be set. |
 
  
 

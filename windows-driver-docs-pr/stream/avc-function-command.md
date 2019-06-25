@@ -159,7 +159,7 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 ### See Also
 
-[**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**AvcCommandType**](https://msdn.microsoft.com/library/windows/hardware/ff554099), [**AvcResponseCode**](https://msdn.microsoft.com/library/windows/hardware/ff554105), [**AVC\_FUNCTION\_FIND\_PEER\_DO**](avc-function-find-peer-do.md), [**AVC\_FUNCTION\_PEER\_DO\_LIST**](avc-function-peer-do-list.md), [**AVC\_FUNCTION\_GET\_SUBUNIT\_INFO**](avc-function-get-subunit-info.md)
+[**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavc_function), [**AvcCommandType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavccommandtype), [**AvcResponseCode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavcresponsecode), [**AVC\_FUNCTION\_FIND\_PEER\_DO**](avc-function-find-peer-do.md), [**AVC\_FUNCTION\_PEER\_DO\_LIST**](avc-function-peer-do-list.md), [**AVC\_FUNCTION\_GET\_SUBUNIT\_INFO**](avc-function-get-subunit-info.md)
 
  
 

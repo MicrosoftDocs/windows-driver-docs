@@ -21,13 +21,13 @@ NDIS 6.0 and later versions of NDIS provide some standardized keywords for minip
 These general keywords are described in the following list. For more information about a particular keyword, search for the keyword in the WDK documentation.
 
 <a href="" id="-iftype"></a>**\*IfType**  
-The NDIS interface type for a device. For more information about the NDIS interface type, see [NDIS Interface Types](https://msdn.microsoft.com/library/windows/hardware/ff565767).
+The NDIS interface type for a device. For more information about the NDIS interface type, see [NDIS Interface Types](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-interface-types).
 
 <a href="" id="-mediatype"></a>**\*MediaType**  
-The media type for a device. For more information about the media type of the miniport adapter, see [OID\_GEN\_MEDIA\_SUPPORTED](https://msdn.microsoft.com/library/windows/hardware/ff569609).
+The media type for a device. For more information about the media type of the miniport adapter, see [OID\_GEN\_MEDIA\_SUPPORTED](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-media-supported).
 
 <a href="" id="-physicalmediatype"></a>**\*PhysicalMediaType**  
-The physical media type for a device. For more information about the physical media type of the miniport adapter, see [OID\_GEN\_PHYSICAL\_MEDIUM](https://msdn.microsoft.com/library/windows/hardware/ff569621).
+The physical media type for a device. For more information about the physical media type of the miniport adapter, see [OID\_GEN\_PHYSICAL\_MEDIUM](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-physical-medium).
 
 <a href="" id="-ndisdevicetype-------"></a>**\*NdisDeviceType**   
 The type of the device. The default value is zero, which indicates a standard networking device that connects to a network. Set **\*NdisDeviceType** to NDIS\_DEVICE\_TYPE\_ENDPOINT (1) if this device is an endpoint device and is not a true network interface that connects to a network. For example, you must specify NDIS\_DEVICE\_TYPE\_ENDPOINT for devices such as smart phones that use a networking infrastructure to communicate to the local computer system but do not provide connectivity to an external network. However, you must **\*not\*** set this keyword to NDIS_DEVICE_TYPE_ENDPOINT for virtual adapters such as VPN interfaces, because they provide connectivity to an external network.

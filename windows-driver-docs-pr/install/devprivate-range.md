@@ -20,7 +20,7 @@ ms.date: 10/17/2018
 
  
 
-The DEVPRIVATE_RANGE structure specifies a resource requirements list that describes private device-specific resource usage for a device instance. For more information about resource requirements list, see [Hardware Resources](https://msdn.microsoft.com/library/windows/hardware/ff547012).
+The DEVPRIVATE_RANGE structure specifies a resource requirements list that describes private device-specific resource usage for a device instance. For more information about resource requirements list, see [Hardware Resources](https://docs.microsoft.com/windows-hardware/drivers/kernel/hardware-resources).
 
  
 

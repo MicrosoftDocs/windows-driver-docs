@@ -58,7 +58,7 @@ For those devices whose cameras and displays share the same housing or *enclosur
 
 Consequently, an application needs a mechanism to describe the spatial relationship between the two peripherals such that a captured frame can be transposed onto the rendering surface in the correct orientation.
 
-One way to solve the problem is to use the ACPI \_PLD structure which already has the concepts of *surface* and *degrees of rotation* defined. See the [ACPI specification](https://www.uefi.org/specifications) and [ACPI support documents](https://www.uefi.org/acpi) for the full specification. For example, the \_PLD structure already has *panel* field which specifies the surface on which a peripheral reside:
+One way to solve the problem is to use the ACPI \_PLD structure which already has the concepts of *surface* and *degrees of rotation* defined. See the [ACPI specification](https://uefi.org/specifications) and [ACPI support documents](https://uefi.org/acpi) for the full specification. For example, the \_PLD structure already has *panel* field which specifies the surface on which a peripheral reside:
 
 ![ACPI PLD panel field](images/acpi-pld-panel-field.png)
 

@@ -12,7 +12,7 @@ Write a filter driver that supports detection of chargers, if the function contr
 
 The USB function stack allows the device, such as a phone or tablet, to charge when connected to a host and USB charger as defined by the USB Battery Charging (BC) 1.2 specification. 
 
-- There are two types of ports that the device can use for charging. The device can charge from a dedicated charging port (DCP) on a charger that shipped with the device. Alternately, the device can from standard downstream ports or charging downstream ports when the device is connected to a PC. Both of those cases are compliant with the [USB BC 1.2 specification](http://www.usb.org/developers/docs/devclass_docs/USB_Battery_Charging_1.2.pdf). 
+- There are two types of ports that the device can use for charging. The device can charge from a dedicated charging port (DCP) on a charger that shipped with the device. Alternately, the device can from standard downstream ports or charging downstream ports when the device is connected to a PC. Both of those cases are compliant with the [USB BC 1.2 specification](https://www.usb.org/developers/docs/devclass_docs/USB_Battery_Charging_1.2.pdf). 
 - Certain chargers do not follow the specification. USB function stack allows the device to charge from those proprietary USB chargers. 
 
 To support spec-compliant and proprietary chargers, these operations are required. 

@@ -30,7 +30,7 @@ There are two new face authentication DDI constructs available in Windows 10, v
 
     -   **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_BACKGROUND\_SUBTRACTION**
 
-    For more information about this control and how to use the bit flags to set the face authentication mode, see the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](https://msdn.microsoft.com/library/windows/hardware/mt742028) topic.
+    For more information about this control and how to use the bit flags to set the face authentication mode, see the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-faceauth-mode) topic.
 
 -   **MF\_CAPTURE\_METADATA\_FRAME\_ILLUMINATION**
 
@@ -148,6 +148,6 @@ If the HLK tests listed above are not passed, Microsoft will not issue a signed 
 
 ## Related topics
 
-[Capture photos and video with MediaCapture](https://msdn.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-mediacapture)  
+[Capture photos and video with MediaCapture](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-mediacapture)  
 
-[Windows.Media.Capture namespace](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.aspx)  
+[Windows.Media.Capture namespace](https://docs.microsoft.com/uwp/api/Windows.Media.Capture)  

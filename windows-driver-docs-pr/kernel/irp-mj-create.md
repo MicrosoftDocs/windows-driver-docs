@@ -16,18 +16,18 @@ Every kernel-mode driver must handle **IRP\_MJ\_CREATE** requests in a [*DRIVER_
 When Sent
 ---------
 
-The operating system sends an **IRP\_MJ\_CREATE** request to open a handle to a file object or device object. For example, when a driver calls [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424), the operating system sends an **IRP\_MJ\_CREATE** request to perform the actual open operation.
+The operating system sends an **IRP\_MJ\_CREATE** request to open a handle to a file object or device object. For example, when a driver calls [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile), the operating system sends an **IRP\_MJ\_CREATE** request to perform the actual open operation.
 
 ## Input Parameters
 
 
-The **Parameters.Create.SecurityContext** member points to an [**IO\_SECURITY\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff550613) structure that describes the security context for the request. The **Parameters.Create.SecurityContext-&gt;DesiredAccess** member is an access mask that specifies the access rights that are being requested by the caller.
+The **Parameters.Create.SecurityContext** member points to an [**IO\_SECURITY\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_security_context) structure that describes the security context for the request. The **Parameters.Create.SecurityContext-&gt;DesiredAccess** member is an access mask that specifies the access rights that are being requested by the caller.
 
 The **Parameters.Create.Options** member is a ULONG value that describes the options that are used when opening the handle. The high 8 bits correspond to the value of the *CreateDisposition* parameter of **ZwCreateFile**, and the low 24 bits correspond to the value of the *CreateOptions* parameter of **ZwCreateFile**.
 
 The **Parameters.Create.ShareAccess** member is a USHORT value that describes the type of share access. This value corresponds to the value of the *ShareAccess* parameter of **ZwCreateFile**.
 
-The **Parameters.Create.FileAttributes** and **Parameters.Create.EaLength** members are reserved for use by file systems and file system filter drivers. For more information, see the [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff548630) topic in the Installable File System (IFS) documentation.
+The **Parameters.Create.FileAttributes** and **Parameters.Create.EaLength** members are reserved for use by file systems and file system filter drivers. For more information, see the [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) topic in the Installable File System (IFS) documentation.
 
 ## Output Parameters
 
@@ -62,9 +62,9 @@ Requirements
 
 [*DispatchCreateClose*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[**IO\_SECURITY\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff550613)
+[**IO\_SECURITY\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_security_context)
 
-[**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424)
+[**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile)
 
  
 

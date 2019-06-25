@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Writing a sensor device driver
 
 
-Because you build sensor device drivers on User-Mode Driver Framework (UMDF), you should first become familiar with this framework. For more information about UMDF, see [Introduction to UMDF](https://msdn.microsoft.com/library/windows/hardware/ff554928).
+Because you build sensor device drivers on User-Mode Driver Framework (UMDF), you should first become familiar with this framework. For more information about UMDF, see [Introduction to UMDF](https://docs.microsoft.com/previous-versions/ff554928(v=vs.85)).
 
 In this section:
 

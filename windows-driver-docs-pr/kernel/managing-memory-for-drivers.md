@@ -17,9 +17,9 @@ Kernel-mode drivers allocate memory for purposes such as storing internal data, 
 
 The *memory manager* is the kernel component that performs the memory management operations in Windows. For more information, see [Windows Kernel-Mode Memory Manager](windows-kernel-mode-memory-manager.md).
 
-The memory manager implements a number of kernel-mode support routines that drivers call to allocate and manage memory. For more information, see [Memory Allocation and Buffer Management](https://msdn.microsoft.com/library/windows/hardware/ff554422).
+The memory manager implements a number of kernel-mode support routines that drivers call to allocate and manage memory. For more information, see [Memory Allocation and Buffer Management](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
-The memory-management capabilities of kernel-mode drivers are different from those of user-mode applications. For more information about memory management for applications, see [Memory Management](https://msdn.microsoft.com/library/windows/desktop/aa366779).
+The memory-management capabilities of kernel-mode drivers are different from those of user-mode applications. For more information about memory management for applications, see [Memory Management](https://docs.microsoft.com/windows/desktop/Memory/memory-management).
 
 ## In this section
 

@@ -18,7 +18,7 @@ In other words, this topic explains what Microsoft has done (starting with Windo
 
 If an audio adapter is capable of processing offloaded audio streams, the adapter’s audio driver exposes this capability by using a newly introduced node in the KS-filter for the adapter.
 
-Each node in the path of the audio stream has a node descriptor, so for this new node the driver must set the *Type* GUID to [**KSNODETYPE\_AUDIO\_ENGINE**](https://msdn.microsoft.com/library/windows/hardware/hh450866). Here’s an example of how the driver could configure the node descriptor for this new node:
+Each node in the path of the audio stream has a node descriptor, so for this new node the driver must set the *Type* GUID to [**KSNODETYPE\_AUDIO\_ENGINE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-audio-engine). Here’s an example of how the driver could configure the node descriptor for this new node:
 
 ```ManagedCPlusPlus
 typedef struct _KSNODE_DESCRIPTOR {
@@ -60,7 +60,7 @@ PCNODE_DESCRIPTOR MiniportNodes[] =
 ## <span id="A_new_KS_property_set_for_audio_engines"></span><span id="a_new_ks_property_set_for_audio_engines"></span><span id="A_NEW_KS_PROPERTY_SET_FOR_AUDIO_ENGINES"></span>A new KS property set for audio engines
 
 
-Starting with Windows 8, the [KSPROPSETID\_AudioEngine](https://msdn.microsoft.com/library/windows/hardware/hh450902) property set has been introduced to support hardware audio engines and hardware-offloaded audio processing. So the driver for an adapter that can process offloaded audio streams must support the properties in this new property set.
+Starting with Windows 8, the [KSPROPSETID\_AudioEngine](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audioengine) property set has been introduced to support hardware audio engines and hardware-offloaded audio processing. So the driver for an adapter that can process offloaded audio streams must support the properties in this new property set.
 
 The new property set, **KSPROPSETID\_AudioEngine**, is defined as follows:
 
@@ -71,48 +71,48 @@ DEFINE_GUIDSTRUCT("3A2F82DC-886F-4BAA-9EB4-082B9025C536", KSPROPSETID_AudioEngin
 #define KSPROPSETID_AudioEngine DEFINE_GUIDNAMED(KSPROPSETID_AudioEngine)
 ```
 
-The names of the properties in this new property set are defined in the [**KSPROPERTY\_AUDIOENGINE**](https://msdn.microsoft.com/library/windows/hardware/hh450867) enum, and the driver must support these names.
+The names of the properties in this new property set are defined in the [**KSPROPERTY\_AUDIOENGINE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audioengine) enum, and the driver must support these names.
 
 Here are the new properties in the **KSPROPSETID\_AudioEngine** property set:
 
-[**KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/hh450868)
+[**KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audioengine-buffer-size-limits)
 
-[**KSPROPERTY\_AUDIOENGINE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/hh450870)
+[**KSPROPERTY\_AUDIOENGINE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audioengine-descriptor)
 
-[**KSPROPERTY\_AUDIOENGINE\_DEVICEFORMAT**](https://msdn.microsoft.com/library/windows/hardware/hh450872)
+[**KSPROPERTY\_AUDIOENGINE\_DEVICEFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audioengine-deviceformat)
 
-[**KSPROPERTY\_AUDIOENGINE\_GFXENABLE**](https://msdn.microsoft.com/library/windows/hardware/hh450874)
+[**KSPROPERTY\_AUDIOENGINE\_GFXENABLE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audioengine-gfx-enable)
 
-[**KSPROPERTY\_AUDIOENGINE\_LFXENABLE**](https://msdn.microsoft.com/library/windows/hardware/hh450876)
+[**KSPROPERTY\_AUDIOENGINE\_LFXENABLE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audioengine-lfx-enable)
 
-[**KSPROPERTY\_AUDIOENGINE\_LOOPBACK\_PROTECTION**](https://msdn.microsoft.com/library/windows/hardware/hh450878)
+[**KSPROPERTY\_AUDIOENGINE\_LOOPBACK\_PROTECTION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audioengine-loopback-protection)
 
-[**KSPROPERTY\_AUDIOENGINE\_MIXFORMAT**](https://msdn.microsoft.com/library/windows/hardware/hh450880)
+[**KSPROPERTY\_AUDIOENGINE\_MIXFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audioengine-mixformat)
 
-[**KSPROPERTY\_AUDIOENGINE\_SUPPORTEDDEVICEFORMATS**](https://msdn.microsoft.com/library/windows/hardware/hh450884)
+[**KSPROPERTY\_AUDIOENGINE\_SUPPORTEDDEVICEFORMATS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audioengine-supporteddeviceformats)
 
-[**KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL**](https://msdn.microsoft.com/library/windows/hardware/hh831855)
+[**KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audioengine-volumelevel)
 
 ## <span id="Updates_to_the_KSPROPSETID__Audio_property_set"></span><span id="updates_to_the_kspropsetid__audio_property_set"></span><span id="UPDATES_TO_THE_KSPROPSETID__AUDIO_PROPERTY_SET"></span>Updates to the KSPROPSETID\_ Audio property set
 
 
-In addition to supporting the properties in the new **KSPROPSETID\_AudioEngine** property set, the driver must also support the following existing properties in the [KSPROPSETID\_Audio](https://msdn.microsoft.com/library/windows/hardware/ff537440) property set:
+In addition to supporting the properties in the new **KSPROPSETID\_AudioEngine** property set, the driver must also support the following existing properties in the [KSPROPSETID\_Audio](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audio) property set:
 
-[**KSPROPERTY\_AUDIO\_MUTE**](https://msdn.microsoft.com/library/windows/hardware/ff537293)
+[**KSPROPERTY\_AUDIO\_MUTE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-mute)
 
-[**KSPROPERTY\_AUDIO\_PEAKMETER**](https://msdn.microsoft.com/library/windows/hardware/ff537296)
+[**KSPROPERTY\_AUDIO\_PEAKMETER**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-peakmeter)
 
-[**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://msdn.microsoft.com/library/windows/hardware/ff537309)
+[**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-volumelevel)
 
 And to complete the implementation of driver support for hardware-offloaded audio processing, new properties have been added to the **KSPROPSETID\_ Audio** property set.
 
 Here are the new **KSPROPSETID\_ Audio** properties:
 
-[**KSPROPERTY\_AUDIO\_LINEAR\_BUFFER\_POSITION**](https://msdn.microsoft.com/library/windows/hardware/hh450894)
+[**KSPROPERTY\_AUDIO\_LINEAR\_BUFFER\_POSITION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-linear-buffer-position)
 
-[**KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION**](https://msdn.microsoft.com/library/windows/hardware/hh450895)
+[**KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-presentation-position)
 
-[**KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_POSITION**](https://msdn.microsoft.com/library/windows/hardware/hh450896)
+[**KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_POSITION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-wavert-current-write-position)
 
 ## <span id="Port-class_driver_updates_and_glitch_reporting"></span><span id="port-class_driver_updates_and_glitch_reporting"></span><span id="PORT-CLASS_DRIVER_UPDATES_AND_GLITCH_REPORTING"></span>Port-class driver updates and glitch reporting
 

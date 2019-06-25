@@ -35,7 +35,7 @@ The tape class driver:
 
 -   Allocates driver context areas for tape miniclass drivers (minitape extension and command extension).
 
-See [Tape Class Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff567959) for descriptions of the **TapeClass***Xxx* routines that can be called by a tape miniclass driver.
+See [Tape Class Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) for descriptions of the **TapeClass***Xxx* routines that can be called by a tape miniclass driver.
 
  
 

@@ -27,7 +27,7 @@ Before you begin, make sure that you meet the following requirements:
 -   Your host computer has the latest Windows Driver Kit (WDK) for Windows 8. The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a KMDF driver. To get the latest version of the WDK, see [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 -   Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](https://msdn.microsoft.com/windows/hardware/gg463009.aspx).
 -   Your target computer is running Windows Vista or a later version of Windows.
--   Your host and target computers are configured for kernel debugging. For more information, see [Setting Up a Network Connection in Visual Studio](https://msdn.microsoft.com/library/windows/hardware/hh439353).
+-   Your host and target computers are configured for kernel debugging. For more information, see [Setting Up a Network Connection in Visual Studio](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-in-visual-studio).
 
 **Hardware requirements**
 
@@ -39,9 +39,9 @@ You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be 
 
 **Recommended reading**
 
--   [Concepts for All Driver Developers](https://msdn.microsoft.com/library/windows/hardware/ff554731)
--   [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721)
--   [Getting started with Windows drivers](https://msdn.microsoft.com/library/windows/hardware/ff554690)
+-   [Concepts for All Driver Developers](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers)
+-   [Device nodes and device stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks)
+-   [Getting started with Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/index)
 -   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
 -   *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](https://msdn.microsoft.com/windows/hardware/gg463318).
 
@@ -50,7 +50,7 @@ Instructions
 
 ### <a href="" id="generate-the-kmdf-driver-code-by-using-the--visual-studio-professional-2019---usb-driver-template"></a>Step 1: Generate the KMDF driver code by using the Visual Studio Professional 2019 USB driver template
 
-For instructions about generating KMDF driver code, see the steps in [Writing a KMDF driver based on a template](https://msdn.microsoft.com/library/windows/hardware/hh439654).
+For instructions about generating KMDF driver code, see the steps in [Writing a KMDF driver based on a template](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-a-kmdf-driver-based-on-a-template).
 
 **For USB-specific code, select the following options in Visual Studio Professional 2019**
 
@@ -111,7 +111,7 @@ For more information, see [Building a Driver](https://docs.microsoft.com/windows
 
 ### <a href="" id="configure-a-computer-for-testing-and-debugging"></a>Step 4: Configure a computer for testing and debugging
 
-To test and debug a driver, you run the debugger on the host computer and the driver on the target computer. So far, you have used Visual Studio on the host computer to build a driver. Next you need to configure a target computer. To configure a target computer, follow the instructions in [Provision a computer for driver deployment and testing](https://msdn.microsoft.com/library/windows/hardware/dn745909).
+To test and debug a driver, you run the debugger on the host computer and the driver on the target computer. So far, you have used Visual Studio on the host computer to build a driver. Next you need to configure a target computer. To configure a target computer, follow the instructions in [Provision a computer for driver deployment and testing](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
 
 ### <a href="" id="enable-tracing-for-kernel-debugging"></a>Step 5: Enable tracing for kernel debugging
 
@@ -125,7 +125,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
    **tracepdb -f \[PDBFiles\] -p \[TMFDirectory\]**
 
-   The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](https://msdn.microsoft.com/library/windows/hardware/ff553043).
+   The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracepdb-commands).
 
    At the specified location you'll see three files (one per .c file in the project). They are given GUID file names.
 
@@ -148,7 +148,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
 **To configure your target computer for WPP tracing**
 
-1. Make sure you have the Tracelog tool on your target computer. The tool is located in the <em>&lt;install\_folder&gt;</em>Windows Kits\\8.0\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see [**Tracelog Command Syntax**](https://msdn.microsoft.com/library/windows/hardware/ff553012).
+1. Make sure you have the Tracelog tool on your target computer. The tool is located in the <em>&lt;install\_folder&gt;</em>Windows Kits\\8.0\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see [**Tracelog Command Syntax**](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracelog-command-syntax).
 2. Open a **Command Window** and run as administrator.
 3. Type the following command:
 
@@ -178,11 +178,11 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
  
 
-For more information about deploying the driver to the target system in Visual Studio Professional 2019, see [Deploying a Driver to a Test Computer](https://msdn.microsoft.com/windows-drivers/develop/deploying_a_driver_to_a_test_computer).
+For more information about deploying the driver to the target system in Visual Studio Professional 2019, see [Deploying a Driver to a Test Computer](https://docs.microsoft.com/windows-hardware/drivers).
 
 You can also manually install the driver on the target computer by using Device Manager. If you want to install the driver from a command prompt, these utilities are available:
 
--   [PnPUtil](https://msdn.microsoft.com/library/windows/hardware/ff550419)
+-   [PnPUtil](https://docs.microsoft.com/windows-hardware/drivers/devtest/pnputil)
 
     This tool comes with the Windows. It is in Windows\\System32. You can use this utility to add the driver to the driver store.
 
@@ -195,9 +195,9 @@ You can also manually install the driver on the target computer by using Device 
     Published name : oem22.inf
     ```
 
-    For more information, see [PnPUtil Examples](https://msdn.microsoft.com/library/windows/hardware/ff550428).
+    For more information, see [PnPUtil Examples](https://docs.microsoft.com/windows-hardware/drivers/devtest/pnputil-examples).
 
--   [**DevCon Update**](https://msdn.microsoft.com/library/windows/hardware/ff544832)
+-   [**DevCon Update**](https://docs.microsoft.com/windows-hardware/drivers/devtest/devcon-update)
 
     This tool comes with the WDK. You can use it to install and update drivers.
 

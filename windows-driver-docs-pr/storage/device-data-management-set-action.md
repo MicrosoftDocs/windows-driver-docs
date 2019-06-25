@@ -31,7 +31,7 @@ ms.date: 10/17/2018
 
 A **DEVICE\_DATA\_MANAGEMENT\_SET\_ACTION** constant specifies a type of management action that is performed by the driver on the data-set attributes for a device.
 
-The management action is specified in the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552527) structure contained in the system buffer of an [**IOCTL\_STORAGE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff560573) request.
+The management action is specified in the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure contained in the system buffer of an [**IOCTL\_STORAGE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_manage_data_set_attributes) request.
 
 <span id="DeviceDsmAction_None"></span><span id="devicedsmaction_none"></span><span id="DEVICEDSMACTION_NONE"></span>**DeviceDsmAction\_None**
 0
@@ -45,7 +45,7 @@ The driver will perform a trim operation.
 (2 | DeviceDsmActionFlag\_NonDestructive)
 The driver will perform a notification operation.
 
-For this action, the **ParameterBlockOffset** and **ParameterBlockLength** members of the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552527) structure specify the parameters of the notification operation. These parameters are formatted as a [**DEVICE\_DSM\_NOTIFICATION\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff819207) structure.
+For this action, the **ParameterBlockOffset** and **ParameterBlockLength** members of the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure specify the parameters of the notification operation. These parameters are formatted as a [**DEVICE\_DSM\_NOTIFICATION\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_dsm_notification_parameters) structure.
 
 &gt; \[!Note\]
 &gt;  Supported in Windows 7 and later versions of Windows.
@@ -56,7 +56,7 @@ For this action, the **ParameterBlockOffset** and **ParameterBlockLength** membe
 (3 | DeviceDsmActionFlag\_NonDestructive)
 The driver performs an offload read operation.
 
-For this action, the **ParameterBlockOffset** and **ParameterBlockLength** members of the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552527) structure specify the parameters of the offload read operation. These parameters are formatted as a [**DEVICE\_DSM\_OFFLOAD\_READ\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh439639) structure.
+For this action, the **ParameterBlockOffset** and **ParameterBlockLength** members of the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure specify the parameters of the offload read operation. These parameters are formatted as a [**DEVICE\_DSM\_OFFLOAD\_READ\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_dsm_offload_read_parameters) structure.
 
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
@@ -67,7 +67,7 @@ For this action, the **ParameterBlockOffset** and **ParameterBlockLength** membe
 4
 The driver will perform an offload write operation.
 
-For this action, the **ParameterBlockOffset** and **ParameterBlockLength** members of the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552527) structure specify the parameters of the offload write operation. These parameters are formatted as a [**DEVICE\_DSM\_OFFLOAD\_WRITE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh439644) structure.
+For this action, the **ParameterBlockOffset** and **ParameterBlockLength** members of the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure specify the parameters of the offload write operation. These parameters are formatted as a [**DEVICE\_DSM\_OFFLOAD\_WRITE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_dsm_offload_write_parameters) structure.
 
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
@@ -78,7 +78,7 @@ For this action, the **ParameterBlockOffset** and **ParameterBlockLength** membe
 (5 | DeviceDsmActionFlag\_NonDestructive)
 The driver will perform a logical block provisioning operation.
 
-The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/ff552523) structure.
+The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structure.
 
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
@@ -89,7 +89,7 @@ The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](
 (6 | DeviceDsmActionFlag\_NonDestructive)
 The driver will perform a storage spaces repair operation.
 
-The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/ff552523) structure. The number of repair copies is specified in a **DEVICE\_DATA\_SET\_REPAIR\_PARAMETERS** structure located in the input buffer as specified by the **ParameterBlockOffset** member of the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552527) structure.
+The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structure. The number of repair copies is specified in a **DEVICE\_DATA\_SET\_REPAIR\_PARAMETERS** structure located in the input buffer as specified by the **ParameterBlockOffset** member of the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure.
 
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
@@ -100,7 +100,7 @@ The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](
 (7 | DeviceDsmActionFlag\_NonDestructive)
 The driver will perform a storage spaces scrub operation.
 
-The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/ff552523) structure.
+The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structure.
 
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
@@ -109,9 +109,9 @@ The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](
 
 <span id="DeviceDsmAction_DrtQuery"></span><span id="devicedsmaction_drtquery"></span><span id="DEVICEDSMACTION_DRTQUERY"></span>**DeviceDsmAction\_DrtQuery**
 (8 | DeviceDsmActionFlag\_NonDestructive)
-The driver will perform a query for the logical block range specified and checks if it is included in storage spaces dirty range tracking. The synchronization status of the range is returned in the **OperationStatus** member of the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES\_OUTPUT**](https://msdn.microsoft.com/library/windows/hardware/hh439656) structure.
+The driver will perform a query for the logical block range specified and checks if it is included in storage spaces dirty range tracking. The synchronization status of the range is returned in the **OperationStatus** member of the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes_output) structure.
 
-The logical block range is specified, on input, in a single [**DEVICE\_DATA\_SET\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/ff552523) structure.
+The logical block range is specified, on input, in a single [**DEVICE\_DATA\_SET\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structure.
 
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
@@ -122,7 +122,7 @@ The logical block range is specified, on input, in a single [**DEVICE\_DATA\_SET
 (9 | DeviceDsmActionFlag\_NonDestructive)
 The driver will clear dirty range status for the for the logical block range specified.
 
-The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/ff552523) structure.
+The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structure.
 
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
@@ -133,7 +133,7 @@ The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](
 (10 | DeviceDsmActionFlag\_NonDestructive)
 The driver will disable dirty range tracking for the logical block range specified.
 
-The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/ff552523) structure.
+The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structure.
 
 &gt; \[!Note\]
 &gt;  Supported in Windows 8 and later versions of Windows.
@@ -144,7 +144,7 @@ The logical block range is specified in a single [**DEVICE\_DATA\_SET\_RANGE**](
 (14 | DeviceDsmActionFlag\_NonDestructive)
 The driver will change the caching priority of specified ranges of logical blocks.
 
-The new target priority is set in a **DEVICE\_DSM\_NVCACHE\_CHANGE\_PRIORITY\_PARAMETERS** structure which is located at **ParameterBlockOffset** in [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552527). The logical block ranges to change priority for are given in one or more [**DEVICE\_DATA\_SET\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/ff552523) structures.
+The new target priority is set in a **DEVICE\_DSM\_NVCACHE\_CHANGE\_PRIORITY\_PARAMETERS** structure which is located at **ParameterBlockOffset** in [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes). The logical block ranges to change priority for are given in one or more [**DEVICE\_DATA\_SET\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structures.
 
 The **DEVICE\_DSM\_NVCACHE\_CHANGE\_PRIORITY\_PARAMETERS** is defined in *ntddstor.h* and has the following members:
 
@@ -164,9 +164,9 @@ Reserved bytes.
 
 <span id="DeviceDsmAction_NvCache_Evict"></span><span id="devicedsmaction_nvcache_evict"></span><span id="DEVICEDSMACTION_NVCACHE_EVICT"></span>**DeviceDsmAction\_NvCache\_Evict**
 (15 | DeviceDsmActionFlag\_NonDestructive)
-The driver will evict data from the caching medium. To evict all data, set the DEVICE\_DSM\_FLAG\_ENTIRE\_DATA\_SET\_RANGE flag in the **Flags** member of [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552527) and do not include any [**DEVICE\_DATA\_SET\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/ff552523) structures.
+The driver will evict data from the caching medium. To evict all data, set the DEVICE\_DSM\_FLAG\_ENTIRE\_DATA\_SET\_RANGE flag in the **Flags** member of [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) and do not include any [**DEVICE\_DATA\_SET\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structures.
 
-Specific logical block ranges to evict are given in one or more [**DEVICE\_DATA\_SET\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/ff552523) structures.
+Specific logical block ranges to evict are given in one or more [**DEVICE\_DATA\_SET\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structures.
 
 The **DeviceDsmAction\_NvCache\_Evict** action is executed synchronously. No other actions are serviced until the evict action has either succeeded or failed. In order to limit its impact on applications using the device, each **DeviceDsmAction\_NvCache\_Evict** action issued should include relatively small data ranges. They should not exceed 10 MB and ideally be smaller than 2 MB. This will minimize the chance that user level applications will experience noticeable delays when accessing data on the device.
 
@@ -178,10 +178,10 @@ The **DeviceDsmAction\_NvCache\_Evict** action is executed synchronously. No oth
 Remarks
 -------
 
-If a bitwise **OR** of the **DEVICE\_DATA\_MANAGEMENT\_SET\_ACTION** constant value and the **DeviceDsmActionFlag\_NonDestructive** flag is performed, the specified action is nondestructive. If this flag is set, the driver can safely forward the [**IOCTL\_STORAGE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff560573) request to the next lower driver in the stack even if the driver does not handle the specified action.
+If a bitwise **OR** of the **DEVICE\_DATA\_MANAGEMENT\_SET\_ACTION** constant value and the **DeviceDsmActionFlag\_NonDestructive** flag is performed, the specified action is nondestructive. If this flag is set, the driver can safely forward the [**IOCTL\_STORAGE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_manage_data_set_attributes) request to the next lower driver in the stack even if the driver does not handle the specified action.
 
 &gt; \[!Note\]
-&gt;  Before it forwards the [**IOCTL\_STORAGE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff560573) request, the driver still performs the normal processing of the block of data set ranges that are specified in the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552527) structure. This block is located at **DataSetRangesOffset** and consists of one or more contiguous entries formatted as [**DEVICE\_DATA\_SET\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/ff552523) structures. The length, in bytes, of the data set ranges is set in the **DataSetRangesLength** member of **DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**.
+&gt;  Before it forwards the [**IOCTL\_STORAGE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_manage_data_set_attributes) request, the driver still performs the normal processing of the block of data set ranges that are specified in the [**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure. This block is located at **DataSetRangesOffset** and consists of one or more contiguous entries formatted as [**DEVICE\_DATA\_SET\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structures. The length, in bytes, of the data set ranges is set in the **DataSetRangesLength** member of **DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**.
 
  
 
@@ -208,11 +208,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**DEVICE\_DSM\_NOTIFICATION\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff819207)
+[**DEVICE\_DSM\_NOTIFICATION\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_dsm_notification_parameters)
 
-[**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552527)
+[**DEVICE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes)
 
-[**IOCTL\_STORAGE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff560573)
+[**IOCTL\_STORAGE\_MANAGE\_DATA\_SET\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_manage_data_set_attributes)
 
  
 

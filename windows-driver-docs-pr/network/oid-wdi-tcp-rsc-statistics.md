@@ -28,7 +28,7 @@ No additional parameters. The data in the header is sufficient.
 
 | TLV                                                                                              | Multiple TLV instances allowed | Optional | Description                         |
 |--------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------|
-| [**WDI\_TLV\_TCP\_RSC\_STATISTICS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898070) |                                |          | TCP RSC statistics of the hardware. |
+| [**WDI\_TLV\_TCP\_RSC\_STATISTICS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-tcp-rsc-statistics-parameters) |                                |          | TCP RSC statistics of the hardware. |
 
  
 

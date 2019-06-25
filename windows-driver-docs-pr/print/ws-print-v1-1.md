@@ -235,7 +235,7 @@ This schema provides device-specific GPD or PPD configuration files for this dev
 ## Device model ID
 
 
-The following schema describes a ModelID for the device, and is used for device metadata retrieval. For more information on ModelIDs, see [ModelID element](https://msdn.microsoft.com/library/windows/hardware/ff549295.aspx).
+The following schema describes a ModelID for the device, and is used for device metadata retrieval. For more information on ModelIDs, see [ModelID element](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff549295(v=vs.85)).
 
 ```xml
     <xs:annotation>

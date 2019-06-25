@@ -17,11 +17,11 @@ ms.localizationpriority: medium
 ## <span id="ddk_writing_a_filterunloadcallback_routine_for_a_minifilter_driver_if"></span><span id="DDK_WRITING_A_FILTERUNLOADCALLBACK_ROUTINE_FOR_A_MINIFILTER_DRIVER_IF"></span>
 
 
-A file system minifilter driver can optionally register a [**PFLT\_FILTER\_UNLOAD\_CALLBACK**](https://msdn.microsoft.com/library/windows/hardware/ff551085)-typed routine as the minifilter driver's *FilterUnloadCallback* routine. This callback routine is also referred to as the minifilter driver's *unload routine*.
+A file system minifilter driver can optionally register a [**PFLT\_FILTER\_UNLOAD\_CALLBACK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nc-fltkernel-pflt_filter_unload_callback)-typed routine as the minifilter driver's *FilterUnloadCallback* routine. This callback routine is also referred to as the minifilter driver's *unload routine*.
 
 Minifilter drivers are not required to register a *FilterUnloadCallback* routine. However, we strongly recommend that a minifilter driver registers this callback routine, because if a minifilter driver does not register a *FilterUnloadCallback* routine, the driver cannot be unloaded.
 
-To register this callback routine, the minifilter driver stores the address of a PFLT\_FILTER\_UNLOAD\_CALLBACK-typed routine in the **FilterUnloadCallback** member of the [**FLT\_REGISTRATION**](https://msdn.microsoft.com/library/windows/hardware/ff544811) structure that the minifilter driver passes as a parameter to [**FltRegisterFilter**](https://msdn.microsoft.com/library/windows/hardware/ff544305) in its **DriverEntry** routine.
+To register this callback routine, the minifilter driver stores the address of a PFLT\_FILTER\_UNLOAD\_CALLBACK-typed routine in the **FilterUnloadCallback** member of the [**FLT\_REGISTRATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_registration) structure that the minifilter driver passes as a parameter to [**FltRegisterFilter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltregisterfilter) in its **DriverEntry** routine.
 
 This section includes:
 

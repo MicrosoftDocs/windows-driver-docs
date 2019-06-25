@@ -96,4 +96,4 @@ This error is caused when the uploaded archive's filetype is .zip64 instead of .
 
 ### The DUA package error shows "Failed to open package" with the error “Not compatible with a version (3.2.0.0) with this instance package manager”
 
-* Use [HLK studio](https://msdn.microsoft.com/library/windows/hardware/dn939927) to open the downloaded DUA shell package and to create DUA submission.
+* Use [HLK studio](https://docs.microsoft.com/windows-hardware/test/hlk/user/install-standalone-hlk-studio) to open the downloaded DUA shell package and to create DUA submission.

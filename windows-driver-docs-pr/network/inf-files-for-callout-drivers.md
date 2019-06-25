@@ -16,19 +16,19 @@ ms.localizationpriority: medium
 
 A Windows Filtering Platform callout driver is installed by a setup information file (INF) file. INF files for callout drivers contain only the following INF file sections:
 
-[**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502)
+[**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section)
 
-[**INF SourceDisksNames Section**](https://msdn.microsoft.com/library/windows/hardware/ff547478)
+[**INF SourceDisksNames Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksnames-section)
 
-[**INF SourceDisksFiles Section**](https://msdn.microsoft.com/library/windows/hardware/ff547472)
+[**INF SourceDisksFiles Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section)
 
-[**INF DestinationDirs Section**](https://msdn.microsoft.com/library/windows/hardware/ff547383)
+[**INF DestinationDirs Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section)
 
-[**INF DefaultInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547356)
+[**INF DefaultInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-defaultinstall-section)
 
-[**INF DefaultInstall.Services Section**](https://msdn.microsoft.com/library/windows/hardware/ff547360)
+[**INF DefaultInstall.Services Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-defaultinstall-services-section)
 
-[**INF Strings Section**](https://msdn.microsoft.com/library/windows/hardware/ff547485)
+[**INF Strings Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section)
 
 For example:
 

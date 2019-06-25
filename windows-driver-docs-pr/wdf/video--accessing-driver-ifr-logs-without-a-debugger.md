@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic contains a video tutorial that shows how a driver can access IFR logs without a debugger attached.
 
-To learn how to configure your driver to use Inflight Recorder (IFR), see [Inflight Trace Recorder for logging traces](https://msdn.microsoft.com/library/windows/hardware/dn914610).
+To learn how to configure your driver to use Inflight Recorder (IFR), see [Inflight Trace Recorder for logging traces](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-wpp-recorder).
 
 You can find the GetIfr.ps1 script described in the video in the [WDF GitHub repository](https://github.com/Microsoft/Windows-Driver-Frameworks/tree/master/Tools).
 

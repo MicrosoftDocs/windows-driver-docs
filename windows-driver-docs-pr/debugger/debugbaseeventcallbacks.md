@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # DebugBaseEventCallbacks class 
 
-The DebugBaseEventCallbacks class provides a base implementation of the [IDebugEventCallbacks](https://msdn.microsoft.com/library/windows/hardware/ff550550.aspx) interface. 
+The DebugBaseEventCallbacks class provides a base implementation of the [IDebugEventCallbacks](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugeventcallbacks) interface. 
 
 A program can derive an event callbacks class from DebugBaseEventCallbacks and implement only the methods needed. 
 

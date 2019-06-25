@@ -42,7 +42,7 @@ A pointer to a caller-supplied variable in which this macro returns the base vir
 A pointer to a caller-supplied variable in which this macro returns the length, in bytes, of the virtual address range that is described by the MDL.
 
 *\_Priority*   
-A page priority value. For a list of the possible values for this parameter, see the *Priority* parameter of the [**MmGetSystemAddressForMdlSafe**](https://msdn.microsoft.com/library/windows/hardware/ff554559) macro.
+A page priority value. For a list of the possible values for this parameter, see the *Priority* parameter of the [**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) macro.
 
 Return value
 ------------
@@ -52,7 +52,7 @@ None
 Remarks
 -------
 
-The **NdisQueryMdl** macro provides an MDL-based version of the [**NdisQueryBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff554407) function.
+The **NdisQueryMdl** macro provides an MDL-based version of the [**NdisQueryBuffer**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff554407(v=vs.85)) function.
 
 Requirements
 ------------
@@ -81,7 +81,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td><p>DDI compliance rules</p></td>
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff547985" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547985)"><strong>Irql_NetBuffer_Function</strong></a></td>
+<td><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function)"><strong>Irql_NetBuffer_Function</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -89,9 +89,9 @@ Requirements
 ## See also
 
 
-[**MmGetSystemAddressForMdlSafe**](https://msdn.microsoft.com/library/windows/hardware/ff554559)
+[**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)
 
-[**NdisQueryBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff554407)
+[**NdisQueryBuffer**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff554407(v=vs.85))
 
  
 

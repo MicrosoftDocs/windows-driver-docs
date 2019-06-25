@@ -8,9 +8,9 @@ ms.localizationpriority: medium
 
 # What happens when you provision a computer (WDK 8.0)
 
-Using Microsoft Visual Studio to configure and set up driver deployment and driver testing is called *provisioning a target computer* or *provisioning a test computer*. For information about provisioning with Windows Driver Kit (WDK) 8 , see [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/Library/Windows/Hardware/Hh698272). Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.
+Using Microsoft Visual Studio to configure and set up driver deployment and driver testing is called *provisioning a target computer* or *provisioning a test computer*. For information about provisioning with Windows Driver Kit (WDK) 8 , see [Provision a computer for driver deployment and testing (WDK 8)](https://docs.microsoft.com/previous-versions/hh698272(v=vs.85)). Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.
 
-**Note**  WDK 8 is not the most current version of the WDK. We recommend that you get the current version of the WDK and provision your target computer according to the [provisioning instructions here](https://msdn.microsoft.com/Library/Windows/Hardware/Hh698272).
+**Note**  WDK 8 is not the most current version of the WDK. We recommend that you get the current version of the WDK and provision your target computer according to the [provisioning instructions here](https://docs.microsoft.com/previous-versions/hh698272(v=vs.85)).
 
  
 
@@ -23,9 +23,9 @@ Provisioning a computer performs the following tasks:
 -   Creates a user named WDKRemoteUser and switches to that user
 -   Installs .NET 4.0 if it is not already installed
 -   Installs Microsoft Visual C++ Redistributable
--   Installs [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439725) (WDK Client)
+-   Installs [Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/windows-hardware/drivers/taef/index) (WDK Client)
 -   Installs debuggers
--   Installs [Windows Device Testing Framework](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539547) (WDTF)
+-   Installs [Windows Device Testing Framework](https://docs.microsoft.com/windows-hardware/drivers/wdtf/index) (WDTF)
 -   Turns off AutoReboot
 -   Enables kernel memory crash dumps
 -   Disables Screen Saver

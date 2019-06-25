@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # MakeCert Test Certificate
 
 
-A MakeCert test certificate is an [X.509 digital certificate](digital-certificates.md) that is created by using the [**MakeCert**](https://msdn.microsoft.com/library/windows/hardware/ff548309) tool. A MakeCert test certificate is a self-signed root certificate that can be used to test-sign a [driver package's](driver-packages.md) [catalog file](catalog-files.md) or to test-sign a driver file by embedding a signature in the driver file.
+A MakeCert test certificate is an [X.509 digital certificate](digital-certificates.md) that is created by using the [**MakeCert**](https://docs.microsoft.com/windows-hardware/drivers/devtest/makecert) tool. A MakeCert test certificate is a self-signed root certificate that can be used to test-sign a [driver package's](driver-packages.md) [catalog file](catalog-files.md) or to test-sign a driver file by embedding a signature in the driver file.
 
 To learn more about creating a MakeCert test certificate, see [**Creating Test Certificates**](creating-test-certificates.md).
 

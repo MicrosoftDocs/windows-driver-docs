@@ -33,7 +33,7 @@ Optional.
 Remarks
 -------
 
-The OID\_GEN\_RNDIS\_CONFIG\_PARAMETER is used with RNDIS devices. The host uses it to set device-specific parameters. It is not used by miniport drivers. For more information about this OID, see [Setting Device-Specific Parameters](https://msdn.microsoft.com/library/windows/hardware/ff570784).
+The OID\_GEN\_RNDIS\_CONFIG\_PARAMETER is used with RNDIS devices. The host uses it to set device-specific parameters. It is not used by miniport drivers. For more information about this OID, see [Setting Device-Specific Parameters](https://docs.microsoft.com/windows-hardware/drivers/network/setting-device-specific-parameters).
 
 Requirements
 ------------

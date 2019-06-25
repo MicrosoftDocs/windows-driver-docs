@@ -25,7 +25,7 @@ Scenarios 5 and 6 represent connections between a subunit in one unit to a subun
 
 Scenario 5 describes a connection where the local pin's **DataFlow** member is KSPIN\_DATAFLOW\_IN.
 
-Each column in the following table corresponds to a member of the [**AVCCONNECTINFO**](https://msdn.microsoft.com/library/windows/hardware/ff554101) structure and specifies values for these members for the source subunit plug.
+Each column in the following table corresponds to a member of the [**AVCCONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avcconnectinfo) structure and specifies values for these members for the source subunit plug.
 
 <table>
 <colgroup>

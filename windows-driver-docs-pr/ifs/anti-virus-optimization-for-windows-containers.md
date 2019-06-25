@@ -19,7 +19,7 @@ This topic describes optimizations that anti-virus products can utilize to avoid
 ## <span id="Container_overview"></span><span id="container_overview"></span><span id="CONTAINER_OVERVIEW"></span>Container overview
 
 
-The Windows Container feature is designed to simplify the distribution and deployment of applications. For more information, see the introduction to [Windows Containers](https://msdn.microsoft.com/virtualization/windowscontainers/about/about_overview).
+The Windows Container feature is designed to simplify the distribution and deployment of applications. For more information, see the introduction to [Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/about_overview).
 
 Containers are constructed from any number of package layers. The Windows base OS package forms the first layer.
 

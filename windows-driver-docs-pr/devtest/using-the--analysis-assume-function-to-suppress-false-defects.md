@@ -27,7 +27,7 @@ You should add the **\_\_analysis\_assume** function as needed, whenever you fin
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-In the following code example, the KMDF rule [RequestCompletedLocal](https://msdn.microsoft.com/library/windows/hardware/ff551609) reports a defect. This is a false defect because SDV cannot correctly interpret the **switch** statement and consequently does not enter the branch where the request is completed.
+In the following code example, the KMDF rule [RequestCompletedLocal](https://docs.microsoft.com/windows-hardware/drivers/devtest/kmdf-requestcompletedlocal) reports a defect. This is a false defect because SDV cannot correctly interpret the **switch** statement and consequently does not enter the branch where the request is completed.
 
 In this **switch** statement, there are six possible cases. The driver has defined six IOCTL codes, so the driver will definitely take one of the branches. If one of the branches is taken, the request is completed successfully.
 

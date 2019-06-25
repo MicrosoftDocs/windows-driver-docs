@@ -13,15 +13,15 @@ ms.localizationpriority: medium
 
 
 
-Any higher-level driver can have a [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine. However, such a driver is unlikely to be interoperable with existing lower-level drivers and is likely to exhibit poor performance characteristics.
+Any higher-level driver can have a [*StartIo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_startio) routine. However, such a driver is unlikely to be interoperable with existing lower-level drivers and is likely to exhibit poor performance characteristics.
 
 A *StartIo* routine in a higher-level driver has the following effects:
 
--   Incoming IRPs can be queued by calling [**IoStartPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550370) from the driver's *Dispatch*Xxx routine(s) and [**IoStartNextPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550358) from its [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine(s), thereby causing IRPs to be processed one at a time through the *StartIo* routine.
+-   Incoming IRPs can be queued by calling [**IoStartPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iostartpacket) from the driver's *Dispatch*Xxx routine(s) and [**IoStartNextPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iostartnextpacket) from its [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine(s), thereby causing IRPs to be processed one at a time through the *StartIo* routine.
 
 -   The driver's I/O throughput could become noticeably slower during periods of heavy I/O demand, because its *StartIo* routine can become a bottleneck.
 
--   The driver's *StartIo* routine calls [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) with each IRP at IRQL = DISPATCH\_LEVEL, thereby causing all lower-level drivers' dispatch routines also to run at IRQL = DISPATCH\_LEVEL. This restricts the set of support routines that lower drivers can call in their dispatch routines. Because most driver writers assume their drivers' dispatch routines run at IRQL &lt; DISPATCH\_LEVEL, the higher-level driver is unlikely to be interoperable with many existing lower-level drivers.
+-   The driver's *StartIo* routine calls [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) with each IRP at IRQL = DISPATCH\_LEVEL, thereby causing all lower-level drivers' dispatch routines also to run at IRQL = DISPATCH\_LEVEL. This restricts the set of support routines that lower drivers can call in their dispatch routines. Because most driver writers assume their drivers' dispatch routines run at IRQL &lt; DISPATCH\_LEVEL, the higher-level driver is unlikely to be interoperable with many existing lower-level drivers.
 
 -   The *StartIo* routine reduces overall system throughput because it and the dispatch routines of all lower-level drivers in its chain are run at IRQL = DISPATCH\_LEVEL.
 

@@ -30,11 +30,11 @@ Indicates that a match was found.
 
 ### Comments
 
-*pSrb*-&gt;**CommandData**.**IntersectInfo** specifies both the data range to search for a match and the buffer to return the format. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure. (The **IntersectInfo** member is of type pointer to a [**STREAM\_DATA\_INTERSECT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff568299) structure.)
+*pSrb*-&gt;**CommandData**.**IntersectInfo** specifies both the data range to search for a match and the buffer to return the format. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_request_block) structure. (The **IntersectInfo** member is of type pointer to a [**STREAM\_DATA\_INTERSECT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_stream_data_intersect_info) structure.)
 
-The class driver uses this request to satisfy [**KSPROPERTY\_PIN\_DATAINTERSECTION**](ksproperty-pin-dataintersection.md) property requests. The class drivers feeds one [**KSDATARANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561658) at a time to the minidriver until the minidriver returns the request with a *pSrb*-&gt;**Status** value of STATUS\_SUCCESS. The minidriver checks for a match in DataRange.Specifier values.
+The class driver uses this request to satisfy [**KSPROPERTY\_PIN\_DATAINTERSECTION**](ksproperty-pin-dataintersection.md) property requests. The class drivers feeds one [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) at a time to the minidriver until the minidriver returns the request with a *pSrb*-&gt;**Status** value of STATUS\_SUCCESS. The minidriver checks for a match in DataRange.Specifier values.
 
-Generally, the resulting data format is immediately used to open a stream in that format. For more information about data formats and data ranges, see [Data Range Intersections in AVStream](https://msdn.microsoft.com/library/windows/hardware/ff558680).
+Generally, the resulting data format is immediately used to open a stream in that format. For more information about data formats and data ranges, see [Data Range Intersections in AVStream](https://docs.microsoft.com/windows-hardware/drivers/stream/data-range-intersections-in-avstream).
 
  
 

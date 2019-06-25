@@ -15,7 +15,7 @@ ms.technology: windows-devices
 
 -   [WPD Design Guide](wpd-design-guide.md)
 -   [WPD Programming Guide](wpd-programming-guide.md)
--   [WPD Reference](https://msdn.microsoft.com/library/windows/hardware/ff597901)
+-   [WPD Reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff597901(v=vs.85))
 
  
 

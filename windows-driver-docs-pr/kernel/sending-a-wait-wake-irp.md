@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-The minor power IRP code [**IRP\_MN\_WAIT\_WAKE**](https://msdn.microsoft.com/library/windows/hardware/ff551766) provides for waking a device or waking the system. Drivers of devices that can wake themselves or the system send **IRP\_MN\_WAIT\_WAKE** requests. The system sends **IRP\_MN\_WAIT\_WAKE** requests only to devices that always wake the system, such as the power-on switch.
+The minor power IRP code [**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake) provides for waking a device or waking the system. Drivers of devices that can wake themselves or the system send **IRP\_MN\_WAIT\_WAKE** requests. The system sends **IRP\_MN\_WAIT\_WAKE** requests only to devices that always wake the system, such as the power-on switch.
 
 A driver sends an **IRP\_MN\_WAIT\_WAKE** request for one of two reasons:
 

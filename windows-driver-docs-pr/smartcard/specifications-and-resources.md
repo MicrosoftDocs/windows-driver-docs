@@ -14,21 +14,21 @@ To work with the smart card support in Microsoft Windows operating systems, smar
 ## <span id="Smart_Card_Reader"></span><span id="smart_card_reader"></span><span id="SMART_CARD_READER"></span>Smart Card Reader
 
 
--   [Specifications: Hardware and Firmware Standards](https://msdn.microsoft.com/library/windows/hardware/gg463441)
+-   [Specifications: Hardware and Firmware Standards](https://msdn.microsoft.com/en-US/library/windows/hardware/dn550976)
 
--   [Microsoft Class Drivers for USB CCID Smart Cards](https://msdn.microsoft.com/library/windows/hardware/gg487509)
+-   [Microsoft Class Drivers for USB CCID Smart Cards](https://msdn.microsoft.com/library/windows/hardware/dn653571(v=vs.85).aspx)
 
 ## <span id="Smart_Card"></span><span id="smart_card"></span><span id="SMART_CARD"></span>Smart Card
 
 
--   [Smart Card Minidriver Certification Requirements](https://msdn.microsoft.com/library/windows/hardware/gg487504)
+-   [Smart Card Minidriver Certification Requirements](https://msdn.microsoft.com/library/windows/hardware/dn653312(v=vs.85).aspx)
 
 ## <span id="Smart_Card_Specifications"></span><span id="smart_card_specifications"></span><span id="SMART_CARD_SPECIFICATIONS"></span>Smart Card Specifications
 
 
--   [Generic Identity Device Specification: Version 1.0 / 2.0](https://msdn.microsoft.com/library/windows/hardware/gg487496)
+-   [Generic Identity Device Specification: Version 1.0 / 2.0](https://msdn.microsoft.com/library/windows/hardware/Dn642100.aspx)
 
--   [Smart Card Minidriver Specification](https://msdn.microsoft.com/library/windows/hardware/dn631754)
+-   [Smart Card Minidriver Specification](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn631754(v=vs.85))
 
  
 

@@ -83,7 +83,7 @@ For more information about how to design these pages, see the following topics:
 ## <span id="resources"></span><span id="RESOURCES"></span>Additional resources
 
 
--   [Index of UX guidelines for UWP apps](https://msdn.microsoft.com/library/windows/apps/hh465424)
+-   [Index of UX guidelines for UWP apps](https://developer.microsoft.com/windows/apps/design)
 
 -   [Overview of mobile broadband](overview-of-mobile-broadband.md)
 

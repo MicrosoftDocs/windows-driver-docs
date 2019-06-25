@@ -13,13 +13,13 @@ Applications can receive information from sensors in two ways: synchronously, by
 
 Sensor drivers can raise **state change events**, which notify applications about a transition in the device to a new operational condition, and other kinds of event notifications. Your driver should raise separate events for each sensor that your device provides.
 
-**Note**  Do not use [**IWDFDevice::PostEvent**](https://msdn.microsoft.com/library/windows/hardware/ff558835) to raise sensor events. The sensor platform will not forward such events to the connected client programs.
+**Note**  Do not use [**IWDFDevice::PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice-postevent) to raise sensor events. The sensor platform will not forward such events to the connected client programs.
 
  
 
 ## State Change Events
 
-Sensor drivers raise state change events by calling the sensor class extension's [**ISensorClassExtension::PostStateChange**](https://msdn.microsoft.com/library/windows/hardware/ff545523) method. For example, a driver that has finished initializing a sensor will call this method to signal the new [**SensorState**](https://msdn.microsoft.com/library/windows/hardware/ff545708) value named SENSOR\_STATE\_READY.
+Sensor drivers raise state change events by calling the sensor class extension's [**ISensorClassExtension::PostStateChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange) method. For example, a driver that has finished initializing a sensor will call this method to signal the new [**SensorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001) value named SENSOR\_STATE\_READY.
 
 ## Event Constants
 

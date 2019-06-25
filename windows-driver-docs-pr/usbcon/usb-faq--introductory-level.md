@@ -47,7 +47,7 @@ This topic presents frequently asked questions for driver developers who are new
 
 Say you see something like, *"Thanks to USB 3.0, I can connect a SuperSpeed USB thumb drive to my PC's xHCI host controller and copy files faster."*
 
-Let's understand the USB terms in that sentence. USB 3.0, USB 2.0, and USB 1.0 refer to the USB specification revision number from the [USB Implementers Forum](http://www.usb.org/home). The USB specifications define how the host PC and USB device communicate with each another.
+Let's understand the USB terms in that sentence. USB 3.0, USB 2.0, and USB 1.0 refer to the USB specification revision number from the [USB Implementers Forum](https://www.usb.org/). The USB specifications define how the host PC and USB device communicate with each another.
 
 The version number also indicates the maximum transmission speed. The newest specification revision is USB 3.0, which specifies a maximum transmission speed up to 5 Gbps. USB 1.0 defines two different data rates, low speed USB (up to 1.5 Mbps) and full speed USB (up to 12 Mbps). USB 2.0 defines a new data rate, high-speed USB (480 Mbps), while maintaining support for low and full speed devices. USB 3.0 continues to work with all of the previously defined data rates. If you look at product packaging, SuperSpeed USB references the newest USB 3.0 devices. Hi-Speed USB is used to describe high-speed USB 2.0 devices. USB, with no descriptor, refers to low speed and full speed devices.
 
@@ -205,7 +205,7 @@ The USB-IF has worked with Microsoft and other USB-IF member companies to develo
 
 More information is available on the USB Web site.
 
-For USB and Hi-Speed USB refer to: [http://www.usb.org/developers/packaging](http://www.usb.org/developers/packaging/)/.
+For USB and Hi-Speed USB refer to: [http://www.usb.org/developers/packaging](https://www.usb.org/developers/packaging/)/.
 
 For SuperSpeed USB refer to: <http://www.usb.org/channel/>.
 
@@ -482,7 +482,7 @@ Because Windows 2000 and Windows XP were released before USB 2.0 hardware was av
 
 4. In the Add New Hardware Wizard, select **Install the software automatically (Recommended)**, and then click **Next**. Continue with the wizard, accepting all default options, until you reach the last page of the wizard, and then click **Finish**. You might be required to restart your computer to finish the installation.
 
-For additional information about the availability of USB 2.0 in Windows XP Service Pack 1, see Microsoft Knowledge Base article 329632, "How to obtain and to install USB 2.0 drivers in Windows XP Service Pack 1" at [http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q329632&](https://support.microsoft.com/kb/329632).
+For additional information about the availability of USB 2.0 in Windows XP Service Pack 1, see Microsoft Knowledge Base article 329632, "How to obtain and to install USB 2.0 drivers in Windows XP Service Pack 1" at [http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q329632&](https://support.microsoft.com/help/329632).
 
 **Note**  
 To ensure that you have the latest updates installed on your machine, visit Windows Update regularly.
@@ -500,7 +500,7 @@ To disable the notice, follow these steps:
 **Note**  
 The preceding procedure disables all USB notices, not just "HI-SPEED USB Device plugged into non-HI-SPEED port".
 
-For additional information about USB 2.0 support in Windows XP Service Pack 1, see Microsoft Knowledge Base article 329632, "How to obtain and to install USB 2.0 drivers in Windows XP Service Pack 1, at [http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q329632](https://support.microsoft.com/kb/329632).
+For additional information about USB 2.0 support in Windows XP Service Pack 1, see Microsoft Knowledge Base article 329632, "How to obtain and to install USB 2.0 drivers in Windows XP Service Pack 1, at [http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q329632](https://support.microsoft.com/help/329632).
 
 ## Is my USB 2.0 hub single-TT or multi-TT?
 
@@ -511,7 +511,7 @@ The value of the **bDeviceProtocol** field of the USB device descriptor and the 
 - Single-TT. **bDeviceProtocol** == 0x01
 - Multi-TT. **bDeviceProtocol** == 0x02
 
-**Usbhub.sys** uses this setting to enable multi-TT mode or single-TT mode. On Windows XP and later, Usbhub.sys always enables multi-TT mode on a multi-TT hub. For additional details about TT layout, see sections 11.14.1.3 and 11.23.1 of the [USB 2.0 Specification](http://www.usb.org/developers/docs).
+**Usbhub.sys** uses this setting to enable multi-TT mode or single-TT mode. On Windows XP and later, Usbhub.sys always enables multi-TT mode on a multi-TT hub. For additional details about TT layout, see sections 11.14.1.3 and 11.23.1 of the [USB 2.0 Specification](https://www.usb.org/documents).
 
 ## What characters or bytes are valid in a USB serial number?
 
@@ -530,7 +530,7 @@ Plug and Play requires that every byte in a USB serial number be valid. If a sin
 - Values less than 0x20.
 - Values greater than 0x7F.
 
-For additional details on the **iSerialNumber** value, see section 9.6.1 of the [USB 2.0 Specification](http://www.usb.org/developers/docs).
+For additional details on the **iSerialNumber** value, see section 9.6.1 of the [USB 2.0 Specification](https://www.usb.org/documents).
 
 ## What LANGID is used in a string request on localized builds of Windows?
 
@@ -542,7 +542,7 @@ A USB device indicates the presence of a serial number by setting the iSerialNum
 
 ## What is the maximum USB transfer size for different Windows versions?
 
-See [Maximum size of USB transfers on various operating systems](https://support.microsoft.com/kb/832430).
+See [Maximum size of USB transfers on various operating systems](https://support.microsoft.com/help/832430/maximum-size-of-usb-transfers-on-various-operating-systems).
 
 ## How should numbers be assigned to multiple interfaces on a composite device?
 
@@ -555,14 +555,14 @@ For Windows XP Service Pack 1 and earlier versions of Windows:
 
 For Windows XP Service Pack 2 and later versions of Windows, interface numbers are only required to be increasing, not consecutive.
 
-For additional information about interface numbers, see [Composite USB devices whose interfaces are not sequentially numbered do not work in Windows XP](https://support.microsoft.com/kb/814560).
+For additional information about interface numbers, see [Composite USB devices whose interfaces are not sequentially numbered do not work in Windows XP](https://support.microsoft.com/help/814560).
 
 Alternate settings for an interface should be assigned as follows for all versions of Windows:
 
 - The default value for an interface is always alternate setting zero.
 - Additional alternate setting numbers must be consecutive and increasing.
 
-For additional information on alternate settings, see Section 9.6.5 of the [USB 2.0 Specification](http://www.usb.org/developers/docs).
+For additional information on alternate settings, see Section 9.6.5 of the [USB 2.0 Specification](https://www.usb.org/documents).
 
 ## What are the major restrictions imposed by Usbccgp.sys?
 
@@ -597,7 +597,7 @@ The major restrictions imposed on hardware devices and drivers by **Usbccgp.sys*
 
 See the blog post about [How to include and view WPP trace messages in a driver’s public PDB files](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog/archive/2013/06/29/wpp-blog-post.aspx).
 
-For additional information about USB core stack debugging, see [How to enable verbose debug tracing in various drivers and subsystems](https://support.microsoft.com/kb/314743).
+For additional information about USB core stack debugging, see [How to enable verbose debug tracing in various drivers and subsystems](https://support.microsoft.com/help/314743).
 
 ## Does Windows support Interface Association Descriptors?
 
@@ -630,4 +630,4 @@ See the USB-IF FAQ page at <http://www.usb.org/developers/usbfaq/>.
 ## Related topics
 
 [USB concepts for all developers](usb-concepts-for-all-developers.md)  
-[Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  

@@ -39,10 +39,10 @@ Each line in an add-property-section specifies one property. The following shows
 The entry values supply the following:
 
 <a href="" id="property-name"></a>*property-name*  
-The name that identifies a DEVPKEY_DrvPkg_*Xxx* property. For example, **DeviceModel**, which represents the [**DEVPKEY_DrvPkg_Model**](https://msdn.microsoft.com/library/windows/hardware/ff543523) property, or **DeviceVendorWebSite**, which represents the [**DEVPKEY_DrvPkg_VendorWebSite**](https://msdn.microsoft.com/library/windows/hardware/ff543527) property.
+The name that identifies a DEVPKEY_DrvPkg_*Xxx* property. For example, **DeviceModel**, which represents the [**DEVPKEY_DrvPkg_Model**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-drvpkg-model) property, or **DeviceVendorWebSite**, which represents the [**DEVPKEY_DrvPkg_VendorWebSite**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-drvpkg-vendorwebsite) property.
 
 <a href="" id="property-category-guid"></a>*property-category-guid*  
-The GUID value of the property category to which the property belongs. For example, the system-defined [**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) property. The GUID value can also specify a custom device category.
+The GUID value of the property category to which the property belongs. For example, the system-defined [**DEVPKEY_Device_FriendlyName**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-friendlyname) property. The GUID value can also specify a custom device category.
 
 <a href="" id="property-pid"></a>*property-pid*  
 The property identifier that identifies a property within a property category. For example, the value of the property identifier for the DEVPKEY_Device_FriendlyName property is 14.
@@ -85,16 +85,16 @@ Each line in a *del-property-section* specifies one property. The following show
 The entry values supply the following:
 
 <a href="" id="property-name"></a>*property-name*  
-The name that identifies a DEVPKEY_DrvPkg_*Xxx* property. For example, **DeviceModel**, which represents the [**DEVPKEY_DrvPkg_Model**](https://msdn.microsoft.com/library/windows/hardware/ff543523) property, or **DeviceVendorWebSite**, which represents the [**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) property.
+The name that identifies a DEVPKEY_DrvPkg_*Xxx* property. For example, **DeviceModel**, which represents the [**DEVPKEY_DrvPkg_Model**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-drvpkg-model) property, or **DeviceVendorWebSite**, which represents the [**DEVPKEY_Device_FriendlyName**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-friendlyname) property.
 
 <a href="" id="property-category-guid"></a>*property-category-guid*  
-The GUID value of the property category to which the property belongs. For example, the system-defined [**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) property. The GUID value can also specify a custom device category.
+The GUID value of the property category to which the property belongs. For example, the system-defined [**DEVPKEY_Device_FriendlyName**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-friendlyname) property. The GUID value can also specify a custom device category.
 
 <a href="" id="property-pid"></a>*property-pid*  
 The property identifier that identifies a property within a property category. For example, the value of the property identifier for the DEVPKEY_Device_FriendlyName property is 14.
 
 <a href="" id="flags"></a>*Flags*  
-An optional flag that is valid for use only with a property whose data type is [**DEVPROP_TYPE_STRING_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff543614). If the flag is set, the delete operation deletes the string that is specified by *value* from the property string list.
+An optional flag that is valid for use only with a property whose data type is [**DEVPROP_TYPE_STRING_LIST**](https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-string-list). If the flag is set, the delete operation deletes the string that is specified by *value* from the property string list.
 
 <a href="" id="value"></a>*value*  
 The string to delete from a property string list.

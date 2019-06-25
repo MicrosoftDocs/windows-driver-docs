@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Using Computer Hardware IDs (CHIDs)
 
 
-Computer Hardware IDs (CHIDs) are defined in the [Specifying Hardware IDs for a Computer](https://msdn.microsoft.com/windows/hardware/drivers/install/specifying-hardware-ids-for-a-computer).
+Computer Hardware IDs (CHIDs) are defined in the [Specifying Hardware IDs for a Computer](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-hardware-ids-for-a-computer).
 
 Windows 10 adds several new CHIDs that incorporate Baseboard Manufacturer and Baseboard Product information. These new CHIDs are included in the CHID hierarchy as shown in the table below. The table shows the hierarchy in descending order of specificity. CHIDs that are new to Windows 10 are highlighted in bold.
 
@@ -91,7 +91,7 @@ Windows 10 adds several new CHIDs that incorporate Baseboard Manufacturer and B
 
  
 
-OEMs must provide the correct CHID information to the driver publisher. The [ComputerHardwareIds](https://msdn.microsoft.com/library/windows/hardware/ff543505) tool, included in the Windows Desktop Tools SDK, can help with reporting CHIDs from a known set of System Management BIOS (SMBIOS) values. ComputerHardwareIds performs two different tasks.
+OEMs must provide the correct CHID information to the driver publisher. The [ComputerHardwareIds](https://docs.microsoft.com/windows-hardware/drivers/devtest/computerhardwareids) tool, included in the Windows Desktop Tools SDK, can help with reporting CHIDs from a known set of System Management BIOS (SMBIOS) values. ComputerHardwareIds performs two different tasks.
 
 1.  Default behavior: The tool reports the system's SMBIOS values and generated CHIDs.
 

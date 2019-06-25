@@ -58,7 +58,7 @@ The KSPROPERTY\_STREAMINTERFACE\_HEADERSIZE property queries a pin for the size 
 Remarks
 -------
 
-See the **StreamHeaderSize** member of [**KSPIN**](https://msdn.microsoft.com/library/windows/hardware/ff563483) for more information.
+See the **StreamHeaderSize** member of [**KSPIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_kspin) for more information.
 
 Requirements
 ------------
@@ -81,7 +81,7 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
-[**KSPIN**](https://msdn.microsoft.com/library/windows/hardware/ff563483)
+[**KSPIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_kspin)
 
  
 

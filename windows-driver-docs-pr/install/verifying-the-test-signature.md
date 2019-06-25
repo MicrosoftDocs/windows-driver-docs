@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Verifying the Test Signature
 
 
-After the test certificate is copied to the Trusted Root Certification Authorities certificate store on the test computer, [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) can be used to do the following:
+After the test certificate is copied to the Trusted Root Certification Authorities certificate store on the test computer, [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) can be used to do the following:
 
 -   Verify the signature of a specified file in a [driver package's](driver-packages.md) [catalog files](catalog-files.md).
 
@@ -43,7 +43,7 @@ The following example verifies the signature of the *Toastpkg* sample's signed c
 Signtool verify /pa /v tstamd64.cat
 ```
 
-For more information about how to use [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) to verify a digital signature of a catalog file, see [Verifying the Signature of a Test-Signed Catalog File](verifying-the-signature-of-a-test-signed-catalog-file.md).
+For more information about how to use [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) to verify a digital signature of a catalog file, see [Verifying the Signature of a Test-Signed Catalog File](verifying-the-signature-of-a-test-signed-catalog-file.md).
 
  
 

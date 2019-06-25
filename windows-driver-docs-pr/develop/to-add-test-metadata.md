@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # How to add test metadata
 
-For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439725) for creating test content. A TAEF test is an object implemented as a dynamic-link library (DLL) that contains multiple methods, where each method maps to a specific test scenario. The TAEF object combines related methods into a group of tests. For each test, there is a set of metadata that describes the test. To improve test portability and encapsulation, TAEF stores test metadata within the test object itself. When you create your own driver tests using the Driver Test templates, you need to add this metadata so that your driver tests are available and can be deployed using Visual Studio.
+For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/windows-hardware/drivers/taef/index) for creating test content. A TAEF test is an object implemented as a dynamic-link library (DLL) that contains multiple methods, where each method maps to a specific test scenario. The TAEF object combines related methods into a group of tests. For each test, there is a set of metadata that describes the test. To improve test portability and encapsulation, TAEF stores test metadata within the test object itself. When you create your own driver tests using the Driver Test templates, you need to add this metadata so that your driver tests are available and can be deployed using Visual Studio.
 
 ### <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
@@ -370,7 +370,7 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </table>
 
     <span id="Deploymentitem"></span><span id="deploymentitem"></span><span id="DEPLOYMENTITEM"></span>**Deploymentitem**  
-    Identifies files and/or folders as test dependencies. These may contain any resources needed to run the tests. For more information about using this metadata, see [DeploymentItem Metadata](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439604).
+    Identifies files and/or folders as test dependencies. These may contain any resources needed to run the tests. For more information about using this metadata, see [DeploymentItem Metadata](https://docs.microsoft.com/windows-hardware/drivers/taef/deploymentitem-metadata).
 
 ## <span id="related_topics"></span>Related topics
 

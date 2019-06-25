@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_handling_scsi_pass_through_requests_kg"></span><span id="DDK_HANDLING_SCSI_PASS_THROUGH_REQUESTS_KG"></span>
 
 
-A class driver that generates an [**IOCTL\_SCSI\_PASS\_THROUGH**](https://msdn.microsoft.com/library/windows/hardware/ff560519) request or an [**IOCTL\_SCSI\_PASS\_THROUGH\_DIRECT**](https://msdn.microsoft.com/library/windows/hardware/ff560521) request is responsible for the following:
+A class driver that generates an [**IOCTL\_SCSI\_PASS\_THROUGH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) request or an [**IOCTL\_SCSI\_PASS\_THROUGH\_DIRECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through_direct) request is responsible for the following:
 
 -   Setting the length of the user buffer at **Parameters.DeviceIoControl.InputBufferLength** to at least **sizeof**(SCSI\_PASS\_THROUGH) or **sizeof**(SCSI\_PASS\_THROUGH\_DIRECT)
 

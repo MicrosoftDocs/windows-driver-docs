@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_srb_surprise_removal_ks"></span><span id="DDK_SRB_SURPRISE_REMOVAL_KS"></span>
 
 
-The class driver sends this request when a device has been unexpectedly removed (surprise removal) from the computer. For more information, see [Removing a Device](https://msdn.microsoft.com/library/windows/hardware/ff561046).
+The class driver sends this request when a device has been unexpectedly removed (surprise removal) from the computer. For more information, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device).
 
  
 

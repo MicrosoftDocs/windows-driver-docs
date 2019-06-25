@@ -15,7 +15,7 @@ MB miniport drivers that support Raw IP packet frames in their send/receive data
 
 -   For IPv4 packets:
 
-    The **NblFlags** member of the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure must be set to NDIS\_NBL\_FLAGS\_IS\_IPV4.
+    The **NblFlags** member of the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure must be set to NDIS\_NBL\_FLAGS\_IS\_IPV4.
 
     The **NetBufferListFrameType** member of the NET\_BUFFER\_LIST structure must be set to 0x0800 (Ethertype IPv4) in network byte order.
 
@@ -25,13 +25,13 @@ MB miniport drivers that support Raw IP packet frames in their send/receive data
 
     The **NetBufferListFrameType** member of the NET\_BUFFER\_LIST structure must be set to 0x86dd (Ethertype IPv6) in network byte order.
 
-Miniport drivers can use the [**NdisSetNblFlag**](https://msdn.microsoft.com/library/windows/hardware/ff564542) macro to set flags in the net buffer list. The following line demonstrates how to set IPv4 packet flag in the net buffer list:
+Miniport drivers can use the [**NdisSetNblFlag**](https://docs.microsoft.com/windows-hardware/drivers/network/ndissetnblflag) macro to set flags in the net buffer list. The following line demonstrates how to set IPv4 packet flag in the net buffer list:
 
 ```C++
 NdisSetNblFlag(pNbl, NDIS_NBL_FLAGS_IS_IPV4);
 ```
 
-Miniport drivers can use the [**NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff568401) to get and set information in a net buffer list. The following line demonstrates how to modify the **NetBufferListFrameType** OOB in the network buffer list for IPV4 packets:
+Miniport drivers can use the [**NET\_BUFFER\_LIST\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-info) to get and set information in a net buffer list. The following line demonstrates how to modify the **NetBufferListFrameType** OOB in the network buffer list for IPV4 packets:
 
 ```C++
 Value = ConvertToNetworkByteOrder(0x0800);

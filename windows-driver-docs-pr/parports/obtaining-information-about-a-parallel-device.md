@@ -16,25 +16,25 @@ ms.localizationpriority: medium
 
 In addition to [connecting to a parallel device](connecting-to-a-parallel-device.md), a client can use the following device control requests to obtain additional information about a parallel device:
 
-[**IOCTL\_IEEE1284\_GET\_MODE**](https://msdn.microsoft.com/library/windows/hardware/ff543975)
+[**IOCTL\_IEEE1284\_GET\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_ieee1284_get_mode)
 
-[**IOCTL\_PAR\_GET\_DEFAULT\_MODES**](https://msdn.microsoft.com/library/windows/hardware/ff544061)
+[**IOCTL\_PAR\_GET\_DEFAULT\_MODES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_par_get_default_modes)
 
-[**IOCTL\_PAR\_GET\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff544067)
+[**IOCTL\_PAR\_GET\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_par_get_device_caps)
 
-[**IOCTL\_PAR\_IS\_PORT\_FREE**](https://msdn.microsoft.com/library/windows/hardware/ff544073)
+[**IOCTL\_PAR\_IS\_PORT\_FREE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_par_is_port_free)
 
-[**IOCTL\_PAR\_QUERY\_DEVICE\_ID\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff544080)
+[**IOCTL\_PAR\_QUERY\_DEVICE\_ID\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_par_query_device_id_size)
 
-[**IOCTL\_PAR\_QUERY\_DEVICE\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff544076)
+[**IOCTL\_PAR\_QUERY\_DEVICE\_ID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_par_query_device_id)
 
-[**IOCTL\_PAR\_QUERY\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff544086)
+[**IOCTL\_PAR\_QUERY\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_par_query_information)
 
-[**IOCTL\_PAR\_QUERY\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff544091)
+[**IOCTL\_PAR\_QUERY\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_par_query_location)
 
-[**IOCTL\_PAR\_QUERY\_RAW\_DEVICE\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff544100)
+[**IOCTL\_PAR\_QUERY\_RAW\_DEVICE\_ID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_par_query_raw_device_id)
 
-[**IOCTL\_SERIAL\_GET\_TIMEOUTS**](https://msdn.microsoft.com/library/windows/hardware/ff544120)
+[**IOCTL\_SERIAL\_GET\_TIMEOUTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ni-ntddser-ioctl_serial_get_timeouts)
 
  
 

@@ -15,9 +15,9 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 ### Upper driver (Render filter)
 
-- Implements the slicer. The driver takes [3MF](http://www.3mf.io) as input and produces G-Code or other similar machine level data.
+- Implements the slicer. The driver takes [3MF](https://3mf.io/) as input and produces G-Code or other similar machine level data.
 
-- Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing applications](https://developer.microsoft.com/windows/hardware/3d-software-partners).
+- Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing applications](https://developer.microsoft.com/windows/hardware/3d-print/software-partners).
 
 ### Lower driver (USB driver)
 
@@ -39,7 +39,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 1. Obtain and verify the device USB hardware ID
 
-    - Ensure the device firmware has a unique Vendor ID and Product ID (VID/PID) allocated by the [USB Implementers Forum (USB-IF)](http://www.usb.org). For USBSER devices, we strongly recommended that you use a unique serial number to prevent conflicts on a USB port changes.
+    - Ensure the device firmware has a unique Vendor ID and Product ID (VID/PID) allocated by the [USB Implementers Forum (USB-IF)](https://www.usb.org/). For USBSER devices, we strongly recommended that you use a unique serial number to prevent conflicts on a USB port changes.
 
 2. Install Microsoft tools and SDKs
 

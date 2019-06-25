@@ -19,7 +19,7 @@ The WDK for Windows 8 supports header versioning. Header versioning makes sure 
 
 For information on building a driver with the Windows 8 release of the WDK, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
 
-For information on converting an driver's build files to a Visual Studio project , see [Creating a Driver From Existing Source Files](https://msdn.microsoft.com/windows-drivers/develop/creating_a_driver_from_existing_source_files).
+For information on converting an driver's build files to a Visual Studio project , see [Creating a Driver From Existing Source Files](https://docs.microsoft.com/windows-hardware/drivers).
 
  
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 For error handling on Windows Vista and later operating systems, see [WIA Driver Error Recovery for Windows Vista](wia-driver-error-recovery-for-windows-vista.md).
 
-The [Diagnostic Log Macros](https://msdn.microsoft.com/library/windows/hardware/ff540599) enable minidrivers to log trace, error, and warning messages to the *Wiaservc.log* diagnostic log file.
+The [Diagnostic Log Macros](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image/index) enable minidrivers to log trace, error, and warning messages to the *Wiaservc.log* diagnostic log file.
 
 For more information about error handling on Windows Vista and later operating systems, see [WIA Driver Error Recovery for Windows Vista](wia-driver-error-recovery-for-windows-vista.md).
 
@@ -33,19 +33,19 @@ The first three macros can be used to write a logging statement with a specified
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549580" data-raw-source="[&lt;strong&gt;WIAS_LERROR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549580)"><strong>WIAS_LERROR</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_lerror" data-raw-source="[&lt;strong&gt;WIAS_LERROR&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_lerror)"><strong>WIAS_LERROR</strong></a></p></td>
 <td><p>Writes a log statement of type ERROR to the <em>Wiaservc.log</em> diagnostic log file..</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549589" data-raw-source="[&lt;strong&gt;WIAS_LHRESULT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549589)"><strong>WIAS_LHRESULT</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_lhresult" data-raw-source="[&lt;strong&gt;WIAS_LHRESULT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_lhresult)"><strong>WIAS_LHRESULT</strong></a></p></td>
 <td><p>Translates an HRESULT value into a string and writes the string to the <em>Wiaservc.log</em> diagnostic log file.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549600" data-raw-source="[&lt;strong&gt;WIAS_LTRACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549600)"><strong>WIAS_LTRACE</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_ltrace" data-raw-source="[&lt;strong&gt;WIAS_LTRACE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_ltrace)"><strong>WIAS_LTRACE</strong></a></p></td>
 <td><p>Writes a log statement of type TRACE to the <em>Wiaservc.log</em> diagnostic log file..</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549610" data-raw-source="[&lt;strong&gt;WIAS_LWARNING&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549610)"><strong>WIAS_LWARNING</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_lwarning" data-raw-source="[&lt;strong&gt;WIAS_LWARNING&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_lwarning)"><strong>WIAS_LWARNING</strong></a></p></td>
 <td><p>Writes a log statement of type WARNING to the <em>Wiaservc.log</em> diagnostic log file..</p></td>
 </tr>
 <tr class="odd">
@@ -63,7 +63,7 @@ The first three macros can be used to write a logging statement with a specified
 
  
 
-For more information about these macros, see [IWiaLog Interface and Diagnostic Log Macros](https://msdn.microsoft.com/library/windows/hardware/ff543937).
+For more information about these macros, see [IWiaLog Interface and Diagnostic Log Macros](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image/index).
 
  
 

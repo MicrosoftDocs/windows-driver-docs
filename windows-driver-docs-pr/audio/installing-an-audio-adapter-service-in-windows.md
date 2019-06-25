@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Installing an Audio Adapter Service in Windows
 
-The following [**INF AddService directive**](https://msdn.microsoft.com/library/windows/hardware/ff546326) installs the adapter driver Xyzaud.sys for the XYZ Audio Device:
+The following [**INF AddService directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) installs the adapter driver Xyzaud.sys for the XYZ Audio Device:
 
 ```cpp
   [XYZ-Audio-Device.Services.NTX86]

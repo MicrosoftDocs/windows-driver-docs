@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 
 
 
-Before the PnP manager sends an [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) IRP to the drivers for a device, the PnP manager calls any kernel-mode notification callback routines that registered for **EventCategoryTargetDeviceChange** on the device. The PnP manager specifies a *NotificationStructure*.**Event** of GUID\_TARGET\_DEVICE\_REMOVE\_COMPLETE.
+Before the PnP manager sends an [**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device) IRP to the drivers for a device, the PnP manager calls any kernel-mode notification callback routines that registered for **EventCategoryTargetDeviceChange** on the device. The PnP manager specifies a *NotificationStructure*.**Event** of GUID\_TARGET\_DEVICE\_REMOVE\_COMPLETE.
 
 When handling a GUID\_TARGET\_DEVICE\_REMOVE\_COMPLETE event, a notification callback routine should:
 
 -   Remove notification registration on the device.
 
-    The device has been removed, so the driver calls [**IoUnregisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff550398) to remove the notification registration.
+    The device has been removed, so the driver calls [**IoUnregisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iounregisterplugplaynotification) to remove the notification registration.
 
     The device may still be physically present on the machine, but all device objects have been deleted and the device is not available for use.
 

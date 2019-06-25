@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_CROSSBAR
 
 
-The KSCATEGORY_CROSSBAR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a crossbar device that routes video and audio streams.
+The KSCATEGORY_CROSSBAR [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for a crossbar device that routes video and audio streams.
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Drivers for KS devices register instances of KSCATEGORY_CROSSBAR to indicate to 
 
 For an example of how to register this functional category in an INF file, see the *Bdan.inf* INF file that is included with the software tuner sample in the *src\\swtuner\\algtuner* directory of the WDK.
 
-For information about crossbar devices for audio and video, see [Filters Used with the Video Capture Devices](https://msdn.microsoft.com/library/windows/hardware/ff559598) and [Analog Video Category](https://msdn.microsoft.com/library/windows/hardware/ff554095).
+For information about crossbar devices for audio and video, see [Filters Used with the Video Capture Devices](https://docs.microsoft.com/windows-hardware/drivers/stream/filters-used-with-the-video-capture-devices) and [Analog Video Category](https://docs.microsoft.com/windows-hardware/drivers/stream/analog-video-category).
 
 Requirements
 ------------

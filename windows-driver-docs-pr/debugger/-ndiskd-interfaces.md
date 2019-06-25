@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.interfaces** extension displays information about a network interface. If you run this extension with no parameters, !ndiskd will display a list of all network interfaces.
 
-For more information about network interfaces, see [NDIS Network Interfaces](https://msdn.microsoft.com/windows/hardware/drivers/network/ndis-network-interfaces2).
+For more information about network interfaces, see [NDIS Network Interfaces](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2).
 
 ```console
 !ndiskd.interfaces [-handle <x>] [-luid <x>] 
@@ -31,7 +31,7 @@ For more information about network interfaces, see [NDIS Network Interfaces](htt
 Handle of a network interface.
 
 <span id="_______-luid______"></span><span id="_______-LUID______"></span> *-luid*   
-[NetLuid](https://msdn.microsoft.com/windows/hardware/drivers/network/net-luid-value) (Net Locally Unique Identifier) of a network interface.
+[NetLuid](https://docs.microsoft.com/windows-hardware/drivers/network/net-luid-value) (Net Locally Unique Identifier) of a network interface.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -117,9 +117,9 @@ STATE
 ## <span id="see_also"></span>See also
 
 
-[Network Driver Design Guide](https://msdn.microsoft.com/windows/hardware/drivers/network/index)
+[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
-[Windows Vista and Later Networking Reference](https://msdn.microsoft.com/library/windows/hardware/ff571081)
+[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
 
 [Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
 
@@ -127,9 +127,9 @@ STATE
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[NDIS Network Interfaces](https://msdn.microsoft.com/windows/hardware/drivers/network/ndis-network-interfaces2)
+[NDIS Network Interfaces](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2)
 
-[NET\_LUID Value](https://msdn.microsoft.com/windows/hardware/drivers/network/net-luid-value)
+[NET\_LUID Value](https://docs.microsoft.com/windows-hardware/drivers/network/net-luid-value)
 
  
 

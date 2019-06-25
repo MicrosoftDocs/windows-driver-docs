@@ -14,11 +14,11 @@ ms.localizationpriority: medium
 
 Some WIA drivers for Microsoft Windows Me and Windows XP used the following three WIA properties to store audio data:
 
-[**WIA\_IPC\_AUDIO\_AVAILABLE**](https://msdn.microsoft.com/library/windows/hardware/ff552530)
+[**WIA\_IPC\_AUDIO\_AVAILABLE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipc-audio-available)
 
-[**WIA\_IPC\_AUDIO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552534)
+[**WIA\_IPC\_AUDIO\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipc-audio-data)
 
-[**WIA\_IPC\_AUDIO\_DATA\_FORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff552538)
+[**WIA\_IPC\_AUDIO\_DATA\_FORMAT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipc-audio-data-format)
 
 These properties are obsolete and should no longer be used.
 

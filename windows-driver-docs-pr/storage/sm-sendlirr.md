@@ -102,7 +102,7 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendLIRR\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566302)
+[**SM\_SendLIRR\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_sendlirr_out)
 
  
 

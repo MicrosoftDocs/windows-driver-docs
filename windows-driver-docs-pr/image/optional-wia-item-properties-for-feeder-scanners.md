@@ -14,35 +14,35 @@ ms.localizationpriority: medium
 
 The WIA feeder scanner item can optionally support the following WIA properties:
 
-[**WIA\_IPA\_FILENAME\_EXTENSION**](https://msdn.microsoft.com/library/windows/hardware/ff551549)
+[**WIA\_IPA\_FILENAME\_EXTENSION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-filename-extension)
 
-[**WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL**](https://msdn.microsoft.com/library/windows/hardware/ff551641)
+[**WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-raw-bits-per-channel)
 
-[**WIA\_IPS\_AUTO\_DESKEW**](https://msdn.microsoft.com/library/windows/hardware/ff552564)
+[**WIA\_IPS\_AUTO\_DESKEW**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-auto-deskew)
 
-[**WIA\_IPS\_DESKEW\_X**](https://msdn.microsoft.com/library/windows/hardware/ff552581)
+[**WIA\_IPS\_DESKEW\_X**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-deskew-x)
 
-[**WIA\_IPS\_DESKEW\_Y**](https://msdn.microsoft.com/library/windows/hardware/ff552587)
+[**WIA\_IPS\_DESKEW\_Y**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-deskew-y)
 
-[**WIA\_IPS\_ORIENTATION**](https://msdn.microsoft.com/library/windows/hardware/ff552625)
+[**WIA\_IPS\_ORIENTATION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-orientation)
 
-[**WIA\_IPS\_PREVIEW**](https://msdn.microsoft.com/library/windows/hardware/ff552643)
+[**WIA\_IPS\_PREVIEW**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-preview)
 
-[**WIA\_IPS\_PREVIEW\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff552646)
+[**WIA\_IPS\_PREVIEW\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-preview-type)
 
-[**WIA\_IPS\_ROTATION**](https://msdn.microsoft.com/library/windows/hardware/ff552648)
+[**WIA\_IPS\_ROTATION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-rotation)
 
-[**WIA\_IPS\_SHOW\_PREVIEW\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff552652)
+[**WIA\_IPS\_SHOW\_PREVIEW\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-show-preview-control)
 
-[**WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION**](https://msdn.microsoft.com/library/windows/hardware/ff552653)
+[**WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-supports-child-item-creation)
 
-[**WIA\_IPS\_THRESHOLD**](https://msdn.microsoft.com/library/windows/hardware/ff552655)
+[**WIA\_IPS\_THRESHOLD**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-threshold)
 
-[**WIA\_IPS\_WARM\_UP\_TIME**](https://msdn.microsoft.com/library/windows/hardware/ff552660)
+[**WIA\_IPS\_WARM\_UP\_TIME**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-warm-up-time)
 
-[**WIA\_IPS\_XSCALING**](https://msdn.microsoft.com/library/windows/hardware/ff552667)
+[**WIA\_IPS\_XSCALING**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-xscaling)
 
-[**WIA\_IPS\_YSCALING**](https://msdn.microsoft.com/library/windows/hardware/ff552676)
+[**WIA\_IPS\_YSCALING**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-yscaling)
 
  
 

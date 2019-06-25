@@ -201,7 +201,7 @@ NOTE that you can use "/select" in conjuction with other command options like "/
 ## <span id="Smart_Quotes"></span><span id="smart_quotes"></span><span id="SMART_QUOTES"></span>Smart Quotes
 
 
-You may encounter smart quotes in your selection criteria if you are copying over a selection criteria from Outlook or Word document back over to your command prompt. You can find more information about what smart quotes are on: <http://en.wikipedia.org/wiki/Smart_quotes> and [Smart quotes: The hidden scourge of text meant for computer consumption](https://blogs.msdn.microsoft.com/oldnewthing/20090225-00/?p=19033/)
+You may encounter smart quotes in your selection criteria if you are copying over a selection criteria from Outlook or Word document back over to your command prompt. You can find more information about what smart quotes are on: <http://en.wikipedia.org/wiki/Smart_quotes> and [Smart quotes: The hidden scourge of text meant for computer consumption](https://devblogs.microsoft.com/oldnewthing/?p=19033)
 
 There is no easy way to avoid smart quotes - best approach is to delete all of the " double quotes and ' single quotes in the selection criteria after you have copied it over to the command prompt and retype the quotes part of the query.
 

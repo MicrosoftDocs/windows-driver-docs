@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 Use this method in the Microsoft Store analytics API to get detailed data for a specific OEM hardware error in JSON format. Before you can use this method, you must first use the [get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md) method to retrieve the ID of the error for which you want to get detailed info.
 
 > [!NOTE]
-> This method can only be used by developer accounts that belong to the [Windows Hardware Dev Center program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
+> This method can only be used by developer accounts that belong to the [Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
 
 ## Prerequisites
 

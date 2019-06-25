@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ## <span id="ddk_synchronization_in_the_ata_port_i_o_model_kg"></span><span id="DDK_SYNCHRONIZATION_IN_THE_ATA_PORT_I_O_MODEL_KG"></span>
 
 
-**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
+**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver) and [Storport miniport](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 
 The ATA port driver can be configured to synchronize access to critical data structures, such as the device extension, by ATA miniport driver routines. It is especially important that accesses by the interrupt handler are synchronized with accesses by other miniport driver routines, because these accesses might occur within different thread contexts.
 
-The ATA port driver can operate in either of two synchronization modes. In one mode the miniport driver is synchronized with the interrupt service routine. In the other mode it is not synchronized. An ATA miniport driver can specify the synchronization mode by setting the **SyncWithIsr** member of the [**IDE\_CHANNEL\_CONFIGURATION**](https://msdn.microsoft.com/library/windows/hardware/ff559029) structure. If the miniport driver sets **SyncWithIsr** to **TRUE**, the ATA port driver raises the IRQL to DIRQL before it calls any of the following miniport driver routines: [**IdeHwInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff557467), [**IdeHwStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff559003), or [**IdeHwReset**](https://msdn.microsoft.com/library/windows/hardware/ff558998). The following table indicates how the value assigned to **SyncWithIsr** affects the IRQL at which the ATA port driver calls ATA miniport driver routines.
+The ATA port driver can operate in either of two synchronization modes. In one mode the miniport driver is synchronized with the interrupt service routine. In the other mode it is not synchronized. An ATA miniport driver can specify the synchronization mode by setting the **SyncWithIsr** member of the [**IDE\_CHANNEL\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/ns-irb-_ide_channel_configuration) structure. If the miniport driver sets **SyncWithIsr** to **TRUE**, the ATA port driver raises the IRQL to DIRQL before it calls any of the following miniport driver routines: [**IdeHwInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nc-irb-ide_hw_initialize), [**IdeHwStartIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nc-irb-ide_hw_startio), or [**IdeHwReset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nc-irb-ide_hw_reset). The following table indicates how the value assigned to **SyncWithIsr** affects the IRQL at which the ATA port driver calls ATA miniport driver routines.
 
 **Miniport driver routines in channel interface**
 
@@ -98,7 +98,7 @@ DIRQL
 
 DISPATCH\_LEVEL
 
-Synchronization Routine (callback routine specified by [**AtaPortRequestSynchronizedRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff550223))
+Synchronization Routine (callback routine specified by [**AtaPortRequestSynchronizedRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nf-irb-ataportrequestsynchronizedroutine))
 
 DIRQL
 
@@ -112,7 +112,7 @@ DIRQL
 
  
 
-Even when **SyncWithIsr** is set to **FALSE**, the miniport driver can synchronize a callback routine with the interrupt handler by calling [**AtaPortRequestSynchronizedRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff550223) and passing it a pointer to the callback routine.
+Even when **SyncWithIsr** is set to **FALSE**, the miniport driver can synchronize a callback routine with the interrupt handler by calling [**AtaPortRequestSynchronizedRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nf-irb-ataportrequestsynchronizedroutine) and passing it a pointer to the callback routine.
 
 Synchronization is on a per channel basis. Therefore, on a synchronized channel, no two miniport driver routines will execute at the same time, but routines running on separate synchronized channels can execute concurrently.
 

@@ -30,12 +30,12 @@ Method.Flags = KSMETHOD_TYPE_READ;
 DeviceIoControl(
     AllocatorHandle,
     IOCTL_KS_METHOD,
-    &amp;Method,
+    &Method,
     sizeof(KSMETHOD),
-    &amp;Frame,
+    &Frame,
     sizeof( PVOID ),
-    &amp;BytesReturned,
-    &amp;Overlapped);
+    &BytesReturned,
+    &Overlapped);
 ```
 
  
