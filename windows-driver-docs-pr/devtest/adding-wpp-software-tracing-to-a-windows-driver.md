@@ -367,6 +367,7 @@ You can use any trace message function you choose, provided the trace message fu
 <table>
 <colgroup>
 <col width="50%" />
+
 <col width="50%" />
 </colgroup>
 <thead>
