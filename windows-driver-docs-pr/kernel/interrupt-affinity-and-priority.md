@@ -16,12 +16,12 @@ Starting with Windows Vista, administrators can use the registry to set an affi
 
 Administrators can set the following entries under the **\\Interrupt Management\\Affinity Policy** registry key:
 
--   **DevicePolicy** is a REG\_DWORD value that specifies an affinity policy. Each possible setting corresponds to a [**IRQ\_DEVICE\_POLICY**](https://msdn.microsoft.com/library/windows/hardware/ff551783) value.
+-   **DevicePolicy** is a REG\_DWORD value that specifies an affinity policy. Each possible setting corresponds to a [**IRQ\_DEVICE\_POLICY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_irq_device_policy) value.
 
 
 -   **AssignmentSetOverride** is a REG\_BINARY value that specifies a [**KAFFINITY**](#about-kaffinity) mask. If **DevicePolicy** is 0x04 (**IrqPolicySpecifiedProcessors**), then this mask specifies a set of processors to assign the device's interrupts to.
 
-The following table lists the [**IRQ\_DEVICE\_POLICY**](https://msdn.microsoft.com/library/windows/hardware/ff551783) values, and the corresponding registry setting for **DevicePolicy**. For more information about the meaning of each value, see [**IRQ\_DEVICE\_POLICY**](https://msdn.microsoft.com/library/windows/hardware/ff551783).
+The following table lists the [**IRQ\_DEVICE\_POLICY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_irq_device_policy) values, and the corresponding registry setting for **DevicePolicy**. For more information about the meaning of each value, see [**IRQ\_DEVICE\_POLICY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_irq_device_policy).
 
 <table>
 <colgroup>
@@ -64,7 +64,7 @@ The following table lists the [**IRQ\_DEVICE\_POLICY**](https://msdn.microsoft.c
 
  
 
-A driver's INF file can provide default settings for the registry values. Here is an example of how to set the **DevicePolicy** value to **IrqPolicyOneCloseProcessor** in the INF file. For more information, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
+A driver's INF file can provide default settings for the registry values. Here is an example of how to set the **DevicePolicy** value to **IrqPolicyOneCloseProcessor** in the INF file. For more information, see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
 
 ```cpp
 [install-section-name.HW]
@@ -74,7 +74,7 @@ AddReg=add-registry-section
 HKR, "Interrupt Management\Affinity Policy", DevicePolicy, 0x00010001, 2
 ```
 
-The system makes the registry settings available to the device's driver when it sends the [**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](https://msdn.microsoft.com/library/windows/hardware/ff550874) IRP to the driver. The operating system provides an [**IO\_RESOURCE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff550598) structure for each interrupt with the **Type** member set to **CmResourceTypeInterrupt**. For a message-signaled interrupt, the CM\_RESOURCE\_INTERRUPT\_MESSAGE bit of the **Flags** member is set; otherwise, it is clear. The **u.Interrupt** member describes the settings for the interrupt.
+The system makes the registry settings available to the device's driver when it sends the [**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-filter-resource-requirements) IRP to the driver. The operating system provides an [**IO\_RESOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_resource_descriptor) structure for each interrupt with the **Type** member set to **CmResourceTypeInterrupt**. For a message-signaled interrupt, the CM\_RESOURCE\_INTERRUPT\_MESSAGE bit of the **Flags** member is set; otherwise, it is clear. The **u.Interrupt** member describes the settings for the interrupt.
 
 The following table gives the correspondence between registry settings and members of **u.Interrupt**.
 

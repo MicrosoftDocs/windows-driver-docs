@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 
 
-NDIS calls a filter driver's [*FilterSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff549972) function to configure optional filter driver services. NDIS calls *FilterSetOptions* within the context of the filter driver's call to the [**NdisFRegisterFilterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff562608) function
+NDIS calls a filter driver's [*FilterSetOptions*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-set_options) function to configure optional filter driver services. NDIS calls *FilterSetOptions* within the context of the filter driver's call to the [**NdisFRegisterFilterDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfregisterfilterdriver) function
 
-*FilterSetOptions* registers the default entry points for optional *FilterXxx* functions that are required for optional services, and can allocate other driver resources. To register optional services, the filter driver calls the [**NdisSetOptionalHandlers**](https://msdn.microsoft.com/library/windows/hardware/ff564550) function and passes a characteristics structure at the *OptionalHandlers* parameter.
+*FilterSetOptions* registers the default entry points for optional *FilterXxx* functions that are required for optional services, and can allocate other driver resources. To register optional services, the filter driver calls the [**NdisSetOptionalHandlers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissetoptionalhandlers) function and passes a characteristics structure at the *OptionalHandlers* parameter.
 
 There are no optional filter driver services in the current Windows version.
 

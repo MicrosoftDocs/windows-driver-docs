@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_TCP\_RSC\_STATISTICS\_PARAMETERS
 
 
-WDI\_TLV\_TCP\_RSC\_STATISTICS\_PARAMETERS is a TLV that contains TCP RSC statistics for [OID\_WDI\_TCP\_RSC\_STATISTICS](https://msdn.microsoft.com/library/windows/hardware/dn925966).
+WDI\_TLV\_TCP\_RSC\_STATISTICS\_PARAMETERS is a TLV that contains TCP RSC statistics for [OID\_WDI\_TCP\_RSC\_STATISTICS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-tcp-rsc-statistics).
 
 ## TLV Type
 

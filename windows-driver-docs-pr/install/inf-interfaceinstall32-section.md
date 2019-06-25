@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # INF InterfaceInstall32 Section
 
 
-This section creates one or more new [device interface classes](device-interface-classes.md). After a new class is created, subsequently installed devices/drivers can be registered to support the new device interface class by using [**INF *DDInstall*.Interfaces sections**](inf-ddinstall-interfaces-section.md) in their respective INF files, or by calling [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506).
+This section creates one or more new [device interface classes](device-interface-classes.md). After a new class is created, subsequently installed devices/drivers can be registered to support the new device interface class by using [**INF *DDInstall*.Interfaces sections**](inf-ddinstall-interfaces-section.md) in their respective INF files, or by calling [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface).
 
 ```ini
 [InterfaceInstall32]
@@ -32,9 +32,9 @@ This section creates one or more new [device interface classes](device-interface
 <a href="" id="interfaceclassguid"></a>*InterfaceClassGUID*  
 Specifies a GUID value identifying the newly exported [device interface class](device-interface-classes.md).
 
-To register an instance of the interface class, a specified GUID value in this section must be referenced by an [**INF AddInterface directive**](inf-addinterface-directive.md) in an [**INF *DDInstall*.Interfaces section**](inf-ddinstall-interfaces-section.md), or else the newly installed device's driver must call [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) with this GUID.
+To register an instance of the interface class, a specified GUID value in this section must be referenced by an [**INF AddInterface directive**](inf-addinterface-directive.md) in an [**INF *DDInstall*.Interfaces section**](inf-ddinstall-interfaces-section.md), or else the newly installed device's driver must call [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) with this GUID.
 
-For more information about how to create a GUID, see [Using GUIDs in Drivers](https://msdn.microsoft.com/library/windows/hardware/ff565392). For the system-defined interface class GUIDS, see the appropriate headers, such as *Ks.h* for the kernel-streaming interfaces.
+For more information about how to create a GUID, see [Using GUIDs in Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-guids-in-drivers). For the system-defined interface class GUIDS, see the appropriate headers, such as *Ks.h* for the kernel-streaming interfaces.
 
 <a href="" id="install-interface-section"></a>*install-interface-section*  
 References an INF-writer-defined section, possibly with any of the system-defined extensions, elsewhere in this INF.
@@ -113,7 +113,7 @@ For more information about how to use the system-defined **.nt**, **.ntx86**, **
 
 [**Ini2Reg**](inf-ini2reg-directive.md)
 
-[**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506)
+[**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface)
 
 [**RenFiles**](inf-renfiles-directive.md)
 

@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_translating_8_bit_per_pixel_halftone_indexes_to_ink_levels_gg"></span><span id="DDK_TRANSLATING_8_BIT_PER_PIXEL_HALFTONE_INDEXES_TO_INK_LEVELS_GG"></span>
 
 
-The **GenerateInkLevels** function shown here provides an example of how to translate 8-bit-per-pixel halftone indexes to ink levels. These indexes are contained in CMY mode and CMY\_INVERTED mode palettes that GDI's [**HT\_Get8BPPMaskPalette**](https://msdn.microsoft.com/library/windows/hardware/ff567320) function returns in its *pPaletteEntry* parameter. **GenerateInkLevels** generates a 256-element array of INKLEVELS structures.
+The **GenerateInkLevels** function shown here provides an example of how to translate 8-bit-per-pixel halftone indexes to ink levels. These indexes are contained in CMY mode and CMY\_INVERTED mode palettes that GDI's [**HT\_Get8BPPMaskPalette**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette) function returns in its *pPaletteEntry* parameter. **GenerateInkLevels** generates a 256-element array of INKLEVELS structures.
 
 This function can be used to generate either a Windows 2000 CMY mode or a post-Windows 2000 CMY\_INVERTED mode translation table. This function can also be used to generate a Windows 2000 CMY mode CMY332 reverse-mapping index table. (CMY332 uses three bits each for cyan and magenta, and two bits for yellow.) When *CMYMask* value is in the range 3 to 255, the function's caller can use this table to map post-Windows 2000 CMY\_INVERTED indexes to Windows 2000 CMY indexes for currently existing drivers.
 

@@ -82,6 +82,6 @@ More than one Hardware ID can be used to specify a service. For example, you can
 
 4. Click **OK** to return to the **Associations** tab.
 
-For detailed information about the Hardware ID for each service style, see [Service Metadata Package Schema Reference for Windows 8](https://msdn.microsoft.com/library/windows/hardware/dn973175).
+For detailed information about the Hardware ID for each service style, see [Service Metadata Package Schema Reference for Windows 8](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/service-metadata-package-schema-reference).
 
-For more information about matching, see [Delivering experiences for MVNOs](https://msdn.microsoft.com/library/windows/hardware/dn973075).
+For more information about matching, see [Delivering experiences for MVNOs](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/delivering-experiences-for-mvnos).

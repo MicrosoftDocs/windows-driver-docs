@@ -23,7 +23,7 @@ int __cdecl InjectButtonPress(
     HWND hwnd;
     MSG msg;
 
-    DevicePath = GetDevicePath((LPGUID)&amp;GUID_GPIOBUTTONS_NOTIFY_INTERFACE);
+    DevicePath = GetDevicePath((LPGUID)&GUID_GPIOBUTTONS_NOTIFY_INTERFACE);
 
     FileHandle = CreateFile(DevicePath,
                             GENERIC_WRITE,
@@ -34,9 +34,9 @@ int __cdecl InjectButtonPress(
                             NULL);
    
     buffer = GPIO_BUTTON_WINDOWS; //using GPIOBUTTONS_BUTTON_TYPE enum defined above
-    WriteFile(FileHandle, &amp;buffer, sizeof(buffer), NULL, NULL); // send button down
+    WriteFile(FileHandle, &buffer, sizeof(buffer), NULL, NULL); // send button down
     buffer = GPIO_BUTTON_WINDOWS;
-    WriteFile(FileHandle, &amp;buffer, sizeof(buffer), NULL, NULL); // send button up
+    WriteFile(FileHandle, &buffer, sizeof(buffer), NULL, NULL); // send button up
 
     return 0;
 }

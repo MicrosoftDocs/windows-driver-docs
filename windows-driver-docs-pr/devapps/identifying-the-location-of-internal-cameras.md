@@ -160,12 +160,12 @@ The InternalDeviceModification registry key indicates that at least one camera u
 </tr>
 <tr class="even">
 <td align="left">Format requirements</td>
-<td align="left">Must include the bus prefix of the Hardware ID. All "&amp;quot; characters must be replaced with a "#".</td>
+<td align="left">Must include the bus prefix of the Hardware ID. All "&quot; characters must be replaced with a "#".</td>
 </tr>
 <tr class="odd">
 <td align="left">Examples</td>
-<td align="left"><p><code>USB#VID_1234&amp;PID_ABCD&amp;REV_0001</code></p>
-<p><code>PCI#VEN_ABCD&amp;DEV_1234&amp;SUBSYS_000</code></p></td>
+<td align="left"><p><code>USB#VID_1234&PID_ABCD&REV_0001</code></p>
+<p><code>PCI#VEN_ABCD&DEV_1234&SUBSYS_000</code></p></td>
 </tr>
 <tr class="even">
 <td align="left">Comment</td>

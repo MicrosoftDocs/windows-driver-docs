@@ -24,7 +24,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_TKIP\_MIC\_FAILURE to indica
 
 | Type                                                                             | Multiple TLV instances allowed | Optional | Description                       |
 |----------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------|
-| [**WDI\_TLV\_TKIP\_MIC\_FAILURE\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn898072) |                                |          | The TKIP MIC failure information. |
+| [**WDI\_TLV\_TKIP\_MIC\_FAILURE\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-tkip-mic-failure-info) |                                |          | The TKIP MIC failure information. |
 
  
 

@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 
 
 
-The drivers for a device must pause the device when its resources are being rebalanced. During resource rebalancing, some drivers pause the device in response to an [**IRP\_MN\_QUERY\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551725) request and other drivers delay pausing the device until they receive the [**IRP\_MN\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551755) request. In either case, the device must be paused when the **IRP\_MN\_STOP\_DEVICE** succeeds.
+The drivers for a device must pause the device when its resources are being rebalanced. During resource rebalancing, some drivers pause the device in response to an [**IRP\_MN\_QUERY\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-stop-device) request and other drivers delay pausing the device until they receive the [**IRP\_MN\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-stop-device) request. In either case, the device must be paused when the **IRP\_MN\_STOP\_DEVICE** succeeds.
 
 The drivers must finish any IRPs in progress on the device and refrain from starting any new IRPs that require access to the device.
 
 To hold IRPs while a device is paused, a driver implements a procedure such as the following:
 
-1.  In its [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, define a flag in the device extension with a name like HOLD\_NEW\_REQUESTS. Clear the flag.
+1.  In its [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine, define a flag in the device extension with a name like HOLD\_NEW\_REQUESTS. Clear the flag.
 
 2.  Create a FIFO queue for holding IRPs.
 

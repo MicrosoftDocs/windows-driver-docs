@@ -42,7 +42,7 @@ A property page extension DLL is installed by using the following directives in 
 
 3.  If the device is a network adapter, you must specify NCF_HAS_UI as one of the **Characteristics** values in the [**INF DDInstall section**](inf-ddinstall-section.md). This value indicates that the adapter supports a user interface.
 
-    For more information, see [Specifying Custom Property Pages for Network Adapters](https://msdn.microsoft.com/library/windows/hardware/ff570843).
+    For more information, see [Specifying Custom Property Pages for Network Adapters](https://docs.microsoft.com/windows-hardware/drivers/network/specifying-custom-property-pages-for-network-adapters).
 
  
 

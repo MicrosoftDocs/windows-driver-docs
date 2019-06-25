@@ -9,15 +9,15 @@ ms.localizationpriority: medium
 # SendDownStreamIrp Function
 
 
-The code example for the `SendDownStreamIrp` function that is provided in this topic shows how to implement a driver-supplied function that sends synchronous IOCTL requests to the ACPI driver. The `SendDownStreamIrp` function can be used to send an [**IOCTL\_ACPI\_EVAL\_METHOD**](https://msdn.microsoft.com/library/windows/hardware/ff536148) request, an [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff536149) request, or an [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://msdn.microsoft.com/library/windows/hardware/ff536147) request.
+The code example for the `SendDownStreamIrp` function that is provided in this topic shows how to implement a driver-supplied function that sends synchronous IOCTL requests to the ACPI driver. The `SendDownStreamIrp` function can be used to send an [**IOCTL\_ACPI\_EVAL\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_eval_method) request, an [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_eval_method_ex) request, or an [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) request.
 
 The example code for the `SendDownStreamIrp` function that is included in this section performs the following sequence of operations:
 
 -   Creates an event object.
 
--   Calls [**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318) to create the IOCTL request.
+-   Calls [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest) to create the IOCTL request.
 
--   Calls [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) to send the IOCTL request.
+-   Calls [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) to send the IOCTL request.
 
 -   Waits until the ACPI driver signals the event object, which indicates that the request has completed.
 

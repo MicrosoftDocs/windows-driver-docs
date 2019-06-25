@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-A client uses the [**IOCTL\_INTERNAL\_PARCLASS\_CONNECT**](https://msdn.microsoft.com/library/windows/hardware/ff544040) request to obtain a [**PARCLASS\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff544334) structure that contains:
+A client uses the [**IOCTL\_INTERNAL\_PARCLASS\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/parallel/ni-parallel-ioctl_internal_parclass_connect) request to obtain a [**PARCLASS\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/parallel/ns-parallel-_parclass_information) structure that contains:
 
 -   I/O resources allocated to the parallel port
 
@@ -26,7 +26,7 @@ A client uses the [**IOCTL\_INTERNAL\_PARCLASS\_CONNECT**](https://msdn.microsof
 
 The callback routines provide functionality that a typical function driver needs. Using the callback routines is more efficient than using equivalent device control requests.
 
-A client disconnects from a device by using a [**IOCTL\_INTERNAL\_PARCLASS\_DISCONNECT**](https://msdn.microsoft.com/library/windows/hardware/ff544046) request.
+A client disconnects from a device by using a [**IOCTL\_INTERNAL\_PARCLASS\_DISCONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/parallel/ni-parallel-ioctl_internal_parclass_disconnect) request.
 
  
 

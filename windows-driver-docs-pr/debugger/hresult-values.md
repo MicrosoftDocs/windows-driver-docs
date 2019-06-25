@@ -55,7 +55,7 @@ The target was not accessible, or the engine was not in a state where the functi
 Not implemented.
 
 <span id="HRESULT_FROM_WIN32_ERROR_ACCESS_DENIED_"></span><span id="hresult_from_win32_error_access_denied_"></span>HRESULT\_FROM\_WIN32(ERROR\_ACCESS\_DENIED)  
-The operation was denied because the debugger is in [Secure Mode](https://msdn.microsoft.com/library/windows/hardware/ff554760).
+The operation was denied because the debugger is in [Secure Mode](https://docs.microsoft.com/windows-hardware/drivers/debugger/secure-mode).
 
 **NT error results.** Other error codes, such as STATUS\_CONTROL\_C\_EXIT and STATUS\_NO\_MORE\_ENTRIES, can sometimes occur. These results are passed to the HRESULT\_FROM\_NT macro that is defined in WinError.h before being returned.
 

@@ -108,4 +108,4 @@ N .\ManifestFiles\ GUID.devicemanifest-ms
 
 ## Creating LocaleInfo.xml
 
-For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](https://msdn.microsoft.com/library/windows/hardware/hh801885.aspx).
+For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).

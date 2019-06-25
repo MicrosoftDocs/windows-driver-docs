@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A user-friendly driver allows users to control its settings through its **Device Manager** property sheet. See [Using Device Manager](https://msdn.microsoft.com/library/windows/hardware/ff553570) for a description of Device Manager.
+A user-friendly driver allows users to control its settings through its **Device Manager** property sheet. See [Using Device Manager](https://docs.microsoft.com/windows-hardware/drivers/install/using-device-manager) for a description of Device Manager.
 
 Drivers can automatically expose any WMI classes they implement on their property sheet by using the [WMI generic property page provider](wmi-generic-property-page-provider.md).
 

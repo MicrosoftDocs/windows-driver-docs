@@ -35,7 +35,7 @@ class MS_SMHBA_SAS_Port
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SMHBA\_SAS\_Port**](https://msdn.microsoft.com/library/windows/hardware/ff563186)
+[**MS\_SMHBA\_SAS\_Port**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_ms_smhba_sas_port)
 
 There are no methods associated with this WMI class.
 

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 To develop an AVStream minidriver that uses direct memory access (DMA), you can perform standard DMA directly into user-mode capture buffers or you can implement common buffer DMA.
 
-Both methods require that your driver obtain a DMA adapter by calling [**IoGetDmaAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff549220).
+Both methods require that your driver obtain a DMA adapter by calling [**IoGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdmaadapter).
 
  
 

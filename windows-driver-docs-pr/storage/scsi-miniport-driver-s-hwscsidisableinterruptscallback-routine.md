@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_scsi_miniport_drivers_hwscsidisableinterruptscallback_routine_kg"></span><span id="DDK_SCSI_MINIPORT_DRIVERS_HWSCSIDISABLEINTERRUPTSCALLBACK_ROUTINE_KG"></span>
 
 
-An [**HwScsiDisableInterruptsCallback**](https://msdn.microsoft.com/library/windows/hardware/ff557288) routine should do the following:
+An [**HwScsiDisableInterruptsCallback**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557288(v=vs.85)) routine should do the following:
 
 -   Reenable interrupts from the HBA
 

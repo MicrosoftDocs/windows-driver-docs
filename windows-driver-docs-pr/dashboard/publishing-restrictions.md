@@ -58,7 +58,7 @@ Examples of these restrictions include, but are not limited to the list in the f
 <td><p>Classcode declarations</p></td>
 <td><p>\CLASS</p>
 <p>\CC</p>
-<p>&amp;</p></td>
+<p>&</p></td>
 </tr>
 <tr class="even">
 <td><p>Two-part HWIDs</p></td>

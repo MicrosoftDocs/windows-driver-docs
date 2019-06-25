@@ -22,11 +22,11 @@ ms.technology: windows-devices
 
 This section includes:
 
-[Access Attribute Memory of a PCMCIA Device](https://msdn.microsoft.com/library/windows/hardware/ff536892)
+[Access Attribute Memory of a PCMCIA Device](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/access-attribute-memory-of-a-pcmcia-device)
 
-[PCMCIA\_INTERFACE\_STANDARD Interface for Memory Cards](https://msdn.microsoft.com/library/windows/hardware/ff537606)
+[PCMCIA\_INTERFACE\_STANDARD Interface for Memory Cards](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/pcmcia-interface-standard-interface-for-memory-cards)
 
-[PCMCIA IRQ Routing on Windows XP](https://msdn.microsoft.com/library/windows/hardware/ff537608)
+[PCMCIA IRQ Routing on Windows XP](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/pcmcia-irq-routing-on-windows-xp)
 
  
 

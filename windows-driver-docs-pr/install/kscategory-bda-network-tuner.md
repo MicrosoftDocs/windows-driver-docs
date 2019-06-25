@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_BDA_NETWORK_TUNER
 
 
-The KSCATEGORY_BDA_NETWORK_TUNER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a network tuner in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
+The KSCATEGORY_BDA_NETWORK_TUNER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for a network tuner in the [broadcast driver architecture](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index) (BDA).
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Drivers for BDA devices register instances of KSCATEGORY_BDA_NETWORK_TUNER to in
 
 For an example of how to register this functional category in an INF file, see the INF file *BDASwTunerATSC.inf*. *BDASwTunerATSC.inf* is included with the BDA sample generic tuner in the *src\\swtuner\\BDAtuner\\gentuner* subdirectory of the WDK.
 
-For more information about the KS functional category for the network tuner filters, see [Common Control Nodes and Filters](https://msdn.microsoft.com/library/windows/hardware/ff557718) and [BDA Filter Category GUIDs](https://msdn.microsoft.com/library/windows/hardware/ff556521).
+For more information about the KS functional category for the network tuner filters, see [Common Control Nodes and Filters](https://docs.microsoft.com/windows-hardware/drivers/stream/common-control-nodes-and-filters) and [BDA Filter Category GUIDs](https://docs.microsoft.com/windows-hardware/drivers/stream/bda-filter-category-guids).
 
 Requirements
 ------------

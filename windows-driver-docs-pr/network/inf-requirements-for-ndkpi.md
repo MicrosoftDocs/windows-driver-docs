@@ -37,7 +37,7 @@ The INF file for a miniport driver that supports Network Direct kernel (NDK) mus
 
     ```INF
     HKR, Ndi\Params\*NetworkDirectTechnology,        ParamDesc,  0,  "NetworkDirect Technology"
-    HKR, Ndi\Params\*NetworkDirectTechnology,        Default,    0,  "0"
+    HKR, Ndi\Params\*NetworkDirectTechnology,        Default,    0,  "1"
     HKR, Ndi\Params\*NetworkDirectTechnology,        Type,       0,  "enum"
     HKR, Ndi\Params\*NetworkDirectTechnology\enum,   1,          0,  "iWARP"
     HKR, Ndi\Params\*NetworkDirectTechnology\enum,   2,          0,  "InfiniBand"

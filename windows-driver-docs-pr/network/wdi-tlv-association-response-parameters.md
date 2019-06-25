@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_ASSOCIATION\_RESPONSE\_PARAMETERS
 
 
-WDI\_TLV\_ASSOCIATION\_RESPONSE\_PARAMETERS is a TLV that contains association response parameters for [OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE](https://msdn.microsoft.com/library/windows/hardware/dn925960).
+WDI\_TLV\_ASSOCIATION\_RESPONSE\_PARAMETERS is a TLV that contains association response parameters for [OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-send-ap-association-response).
 
 ## TLV Type
 

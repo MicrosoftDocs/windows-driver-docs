@@ -24,19 +24,19 @@ Possible values are:
 
 * **WDM** (including all miniport/port drivers such as NDIS or StorPort).
 * **KMDF** A KMDF driver.
-* **Export driver (WDM)** A WDM driver that exports functions which other drivers can call. For more information, see [Creating Export Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Ff542891).
+* **Export driver (WDM)** A WDM driver that exports functions which other drivers can call. For more information, see [Creating Export Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/creating-export-drivers).
 
 **KMDF Version Major**  
 When the type of driver is KMDF, this option specifies the major version of KMDF that will be used when compiling your driver.
 
 The KMDF\_VERSION\_MAJOR entry informs the MSBuild utility that it must link the driver to the KMDF library.
 
-For more information, see [Framework Library Versioning](https://msdn.microsoft.com/Library/Windows/Hardware/Ff542842).
+For more information, see [Framework Library Versioning](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-library-versioning).
 
 **KMDF Version Minor (Target Version)** (was **KMDF Version Minor** prior to Windows 10, version 1803)
 When the type of driver is KMDF, this option specifies the minor version of KMDF that will be used when compiling your driver.
 
-For more information, see [Framework Library Versioning](https://msdn.microsoft.com/Library/Windows/Hardware/Ff542842). If you do not specify **KMDF Version Minor (Target Version)**, Visual Studio uses the following defaults:
+For more information, see [Framework Library Versioning](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-library-versioning). If you do not specify **KMDF Version Minor (Target Version)**, Visual Studio uses the following defaults:
 * Windows 10: 1.15
 * Windows 8 / Windows 8.1: 1.11
 * Windows 7: 1.9
@@ -47,7 +47,7 @@ Starting in KMDF version 1.25 and UMDF version 2.25 on Windows 10 version 1803 (
 For details, see [Building a WDF driver for multiple versions of Windows](../wdf/building-a-wdf-driver-for-multiple-versions-of-windows.md).
 
 **UMDF Version Major**  
-When you have a UMDF driver, this option specifies the major version of UMDF that will be used when compiling your driver. See [UMDF Version History](https://msdn.microsoft.com/Library/Windows/Hardware/Ff561356). When you have a UMDF driver, the **Configuration type** is **Dynamic Library (.dll)**.
+When you have a UMDF driver, this option specifies the major version of UMDF that will be used when compiling your driver. See [UMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/umdf-version-history). When you have a UMDF driver, the **Configuration type** is **Dynamic Library (.dll)**.
 
 **UMDF Version Minor (Target Version)** (was **UMDF Version Minor** prior to Windows 10, version 1803)
 When you have a UMDF driver, this option specifies the minor version of UMDF that will be used when compiling your driver. If you do not specify **UMDF Version Minor (Target Version)**, Visual Studio uses the following defaults:
@@ -75,11 +75,11 @@ Overrides the default values for preprocessing symbols: \_WIN32\_WINNT, WINVER, 
 ## Related topics
 
 
-* [Framework Library Versioning](https://msdn.microsoft.com/Library/Windows/Hardware/Ff542842)
-* [Building and Loading a Framework-based Driver](https://msdn.microsoft.com/Library/Windows/Hardware/Ff540730)
-* [UMDF Version History](https://msdn.microsoft.com/Library/Windows/Hardware/Ff561356)
-* [Building UMDF Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Ff540730)
-* [Creating Export Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Ff542891)
+* [Framework Library Versioning](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-library-versioning)
+* [Building and Loading a Framework-based Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/building-and-loading-a-kmdf-driver)
+* [UMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/umdf-version-history)
+* [Building UMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/building-and-loading-a-kmdf-driver)
+* [Creating Export Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/creating-export-drivers)
  
 
  

@@ -26,7 +26,7 @@ Remarks
 
 NDIS handles this OID and miniport drivers do not receive this OID query.
 
-If the query succeeds, NDIS returns NDIS\_STATUS\_SUCCESS and provides the results of the query in an [**NDIS\_PORT\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/ff566786) structure. The **NumberOfPorts** member of NDIS\_PORT\_ARRAY contains the number of active ports that are associated with the miniport adapter. The **Ports** member of NDIS\_PORT\_ARRAY contains a list of pointers to [**NDIS\_PORT\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566791) structures. Each NDIS\_PORT\_CHARACTERISTICS structure defines the characteristics of a single NDIDS port.
+If the query succeeds, NDIS returns NDIS\_STATUS\_SUCCESS and provides the results of the query in an [**NDIS\_PORT\_ARRAY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_port_array) structure. The **NumberOfPorts** member of NDIS\_PORT\_ARRAY contains the number of active ports that are associated with the miniport adapter. The **Ports** member of NDIS\_PORT\_ARRAY contains a list of pointers to [**NDIS\_PORT\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_port_characteristics) structures. Each NDIS\_PORT\_CHARACTERISTICS structure defines the characteristics of a single NDIDS port.
 
 Requirements
 ------------
@@ -47,9 +47,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_PORT\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/ff566786)
+[**NDIS\_PORT\_ARRAY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_port_array)
 
-[**NDIS\_PORT\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566791)
+[**NDIS\_PORT\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_port_characteristics)
 
  
 

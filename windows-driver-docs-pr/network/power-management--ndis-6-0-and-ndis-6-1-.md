@@ -52,7 +52,7 @@ This section includes the following topics:
 
 [Avoiding NDIS Power Management Problems](avoiding-ndis-power-management-problems.md)
 
-**Note**  Starting with NDIS 6.20, the NDIS power management interface has been revised and extended. If you are developing NDIS 6.20 miniport drivers that support power management, please review the information in [Power Management (NDIS 6.20 and Later)](https://msdn.microsoft.com/library/windows/hardware/hh205401). If you are developing NDIS 6.30 miniport drivers that support power management, please review the information in [Power Management (NDIS 6.30 and Later)](https://msdn.microsoft.com/library/windows/hardware/hh440160).
+**Note**  Starting with NDIS 6.20, the NDIS power management interface has been revised and extended. If you are developing NDIS 6.20 miniport drivers that support power management, please review the information in [Power Management (NDIS 6.20 and Later)](https://docs.microsoft.com/windows-hardware/drivers/network/power-management--ndis-6-20-). If you are developing NDIS 6.30 miniport drivers that support power management, please review the information in [Power Management (NDIS 6.30 and Later)](https://docs.microsoft.com/windows-hardware/drivers/network/power-management--ndis-6-30-).
 
  
 

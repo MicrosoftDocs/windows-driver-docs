@@ -20,7 +20,7 @@ In these IDs:
 -   *p(4)* is the four-digit product code that the vendor assigns to the device.
 -   *z(2)* is the interface number that is extracted from the **bInterfaceNumber** field of the interface descriptor.
 
-The generic parent driver also generates the following compatible IDs by using the information from the interface descriptor ([**USB\_INTERFACE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff540065)):
+The generic parent driver also generates the following compatible IDs by using the information from the interface descriptor ([**USB\_INTERFACE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_interface_descriptor)):
 
 `USB\CLASS_d(2)&SUBCLASS_s(2)&PROT_p(2)`
 

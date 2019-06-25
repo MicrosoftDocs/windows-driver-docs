@@ -31,7 +31,7 @@ Typically, drivers register for only one interface class. However, drivers for d
 
 When a driver registers an instance of a device interface class, the I/O manager associates the device and the device interface class GUID with a symbolic link name. The link name is stored in the registry and persists across system starts. An application that uses the interface can query for instances of the interface and receive a symbolic link name representing a device that supports the interface. The application can then use the symbolic link name as a target for I/O requests.
 
-Do not confuse device interfaces with the interfaces that drivers can export in response to an [**IRP_MN_QUERY_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff551687) request. That IRP is used to pass routine entry points between kernel-mode drivers.
+Do not confuse device interfaces with the interfaces that drivers can export in response to an [**IRP_MN_QUERY_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) request. That IRP is used to pass routine entry points between kernel-mode drivers.
 
  
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 The Windows audio engine runs at predetermined intervals that are referred to as the *periodicity* of the audio engine. In Windows 7 and later versions of Windows, the audio engine runs with a periodicity of 10ms by default. In Windows 7, you can use an INF file and a new registry key, **PKEY\_AudioEngine\_OEMPeriod**, to customize the periodicity for your audio device driver. This is a per endpoint setting.
 
-The following excerpt from an INF file shows how to use the [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) to customize the periodicity for an audio device driver.
+The following excerpt from an INF file shows how to use the [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) to customize the periodicity for an audio device driver.
 
 ```inf
 [Version]

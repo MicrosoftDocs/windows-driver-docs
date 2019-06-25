@@ -30,7 +30,7 @@ typedef ULONG FLT_FILE_NAME_OPTIONS;
     #define FLT_FILE_NAME_DO_NOT_CACHE                  0x02000000
 ```
 
-Bits 0 through 7 indicate the file format, which can be queried by using the [**FltGetFileNameFormat**](https://msdn.microsoft.com/library/windows/hardware/ff543030) macro. For an explanation of these formats, see [**FLT\_FILE\_NAME\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff544633). The following values are currently defined.
+Bits 0 through 7 indicate the file format, which can be queried by using the [**FltGetFileNameFormat**](https://docs.microsoft.com/previous-versions/ff543030(v=vs.85)) macro. For an explanation of these formats, see [**FLT\_FILE\_NAME\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_file_name_information). The following values are currently defined.
 
 <table>
 <colgroup>
@@ -61,7 +61,7 @@ Bits 0 through 7 indicate the file format, which can be queried by using the [**
 
  
 
-Bits 8 through 15 specify the file name query method to be used by the Filter Manager, which can be queried by using the [**FltGetFileNameQueryMethod**](https://msdn.microsoft.com/library/windows/hardware/ff543040) macro. For an explanation of these values, see [**FltGetFileNameInformation**](https://msdn.microsoft.com/library/windows/hardware/ff543032). The following values are currently defined.
+Bits 8 through 15 specify the file name query method to be used by the Filter Manager, which can be queried by using the [**FltGetFileNameQueryMethod**](https://docs.microsoft.com/previous-versions/ff543040(v=vs.85)) macro. For an explanation of these values, see [**FltGetFileNameInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltgetfilenameinformation). The following values are currently defined.
 
 <table>
 <colgroup>
@@ -135,17 +135,17 @@ Requirements: fltkernel.h (include fltkernel.h)
 ## Related topics
 
 
-[**FLT\_FILE\_NAME\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff544633)
+[**FLT\_FILE\_NAME\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_file_name_information)
 
-[**FltGetDestinationFileNameInformation**](https://msdn.microsoft.com/library/windows/hardware/ff543003)
+[**FltGetDestinationFileNameInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltgetdestinationfilenameinformation)
 
-[**FltGetFileNameFormat**](https://msdn.microsoft.com/library/windows/hardware/ff543030)
+[**FltGetFileNameFormat**](https://docs.microsoft.com/previous-versions/ff543030(v=vs.85))
 
-[**FltGetFileNameInformation**](https://msdn.microsoft.com/library/windows/hardware/ff543032)
+[**FltGetFileNameInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltgetfilenameinformation)
 
-[**FltGetFileNameInformationUnsafe**](https://msdn.microsoft.com/library/windows/hardware/ff543035)
+[**FltGetFileNameInformationUnsafe**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltgetfilenameinformationunsafe)
 
-[**FltGetFileNameQueryMethod**](https://msdn.microsoft.com/library/windows/hardware/ff543040)
+[**FltGetFileNameQueryMethod**](https://docs.microsoft.com/previous-versions/ff543040(v=vs.85))
 
  
 

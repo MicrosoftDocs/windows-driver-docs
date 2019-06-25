@@ -16,13 +16,13 @@ ms.localizationpriority: medium
 # Verifying the Signature of a Test-Signed Catalog File
 
 
-To verify that a [driver package's](driver-packages.md) [catalog file](catalog-files.md) was signed by a valid [test certificate](test-certificates.md), use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command:
+To verify that a [driver package's](driver-packages.md) [catalog file](catalog-files.md) was signed by a valid [test certificate](test-certificates.md), use the following [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) command:
 
 ```cpp
 SignTool verify /v /pa CatalogFileName.cat
 ```
 
-To verify that a file, listed in a [driver package's](driver-packages.md) catalog file, is signed by a test certificate, use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command:
+To verify that a file, listed in a [driver package's](driver-packages.md) catalog file, is signed by a test certificate, use the following [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) command:
 
 ```cpp
 SignTool verify /v /pa /c CatalogFileName.cat DriverFileName

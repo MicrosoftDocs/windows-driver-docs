@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # search XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
 
 The **search** XML element directs DPInst to search recursively for INF files in specified subdirectories under the DPInst working directory. Subdirectories are specified by one or more [**subDirectory child elements**](subdirectory-xml-element.md).
 
@@ -61,7 +61,7 @@ None
 
 ### <a href="" id="comments"></a>Remarks
 
-The following code example demonstrates a **search** element that contains one **subDirectory** XML element that specifies the *i386* subdirectory. DPInst will recursively search for [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff544840) in the *i386* subdirectory of the DPInst working directory. The text that specifies the custom subdirectory is shown in bold font style.
+The following code example demonstrates a **search** element that contains one **subDirectory** XML element that specifies the *i386* subdirectory. DPInst will recursively search for [driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) in the *i386* subdirectory of the DPInst working directory. The text that specifies the custom subdirectory is shown in bold font style.
 
 ```cpp
 <dpinst>

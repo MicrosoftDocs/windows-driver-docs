@@ -28,7 +28,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                        | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
-| [**WDI\_PHY\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn926105) | Specifies the PHY types.                           |
+| [**WDI\_PHY\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_phy_type) | Specifies the PHY types.                           |
 | UINT8                                       | Specifies whether or not the PHY supports CF Poll. |
 | UINT32                                      | Specifies the MPDU maximum length.                 |
 | UINT32                                      | Specifies the operating temperature class.         |

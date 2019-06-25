@@ -24,11 +24,11 @@ In Windows Vista and Windows XP, Enhanced I/O Verification is activated independ
 
 Driver Verifier adds the following checks when you activate Enhanced I/O Verification.
 
--   Monitors all IRPs to ensure that the driver returns STATUS\_PENDING if and only if it has called [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422).
+-   Monitors all IRPs to ensure that the driver returns STATUS\_PENDING if and only if it has called [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iomarkirppending).
 
--   Monitors the use of [**IoDeleteDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549083) to verify that the driver is not deleting the same device more that once and to detect inappropriate detaching and deleting of device objects.
+-   Monitors the use of [**IoDeleteDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iodeletedevice) to verify that the driver is not deleting the same device more that once and to detect inappropriate detaching and deleting of device objects.
 
--   Verifies that the driver correctly unwinds all [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff550355) calls.
+-   Verifies that the driver correctly unwinds all [**IoSkipCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) calls.
 
 New stresses and tests include:
 
@@ -52,7 +52,7 @@ In a crash dump file, these errors are noted by the message **BugCheck 0xC9 (DRI
 
 In a kernel debugger (KD or WinDbg), these errors are noted by the message **WDM DRIVER ERROR** and a descriptive text string. When the kernel debugger is active, it is possible to ignore the Level 2 errors and resume system operation. (This is not possible with any other bug checks.)
 
-The blue screen, the crash dump file, and the kernel debugger each display additional information as well. For a full description of all I/O Verification Level 2 error messages, see [**Bug Check 0xC9**](https://msdn.microsoft.com/library/windows/hardware/ff560205).
+The blue screen, the crash dump file, and the kernel debugger each display additional information as well. For a full description of all I/O Verification Level 2 error messages, see [**Bug Check 0xC9**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc9--driver-verifier-iomanager-violation).
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 

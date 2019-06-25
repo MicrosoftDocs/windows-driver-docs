@@ -42,17 +42,17 @@ Following is a summary of selected portions of the system boot process that are 
 
 2.  The I/O Manager creates a global file system queue with four segments: one each for CD-ROM, disk, tape devices, and network file systems. Later, when each file system is registered, its control device objects are added to the appropriate segments of this queue. At this point, however, no file systems have yet been registered, so the queue is empty.
 
-3.  The PnP Manager calls the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routines of the RAW file system and all SERVICE\_BOOT\_START drivers.
+3.  The PnP Manager calls the [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routines of the RAW file system and all SERVICE\_BOOT\_START drivers.
 
     If a SERVICE\_BOOT\_START driver is dependent on other drivers, those drivers are loaded and started as well.
 
-    The PnP Manager starts the boot devices by calling the [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) routines of the boot device drivers. If a boot device has child devices, those devices are enumerated. The child devices are also configured and started if their drivers are boot-start drivers. If a device's drivers are not all boot-start drivers, the PnP Manager creates a devnode for the device but does not start the device.
+    The PnP Manager starts the boot devices by calling the [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routines of the boot device drivers. If a boot device has child devices, those devices are enumerated. The child devices are also configured and started if their drivers are boot-start drivers. If a device's drivers are not all boot-start drivers, the PnP Manager creates a devnode for the device but does not start the device.
 
     At this point, all boot drivers are loaded and the boot devices are started.
 
 4.  The PnP Manager traverses the PnP device tree, locating and loading the drivers that are associated with each devnode but not already running.
 
-    (For more information about the PnP device tree, see [Device Tree](https://msdn.microsoft.com/library/windows/hardware/ff543194).) When each PnP device starts, the PnP Manager enumerates the children of the device, if any. The PnP Manager configures the child devices, loads their device drivers, and starts the devices.
+    (For more information about the PnP device tree, see [Device Tree](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-tree).) When each PnP device starts, the PnP Manager enumerates the children of the device, if any. The PnP Manager configures the child devices, loads their device drivers, and starts the devices.
 
     The PnP Manager loads each device's drivers *regardless* of the drivers' **StartType**, **LoadOrderGroup**, or **Dependencies** values.
 
@@ -66,13 +66,13 @@ Following is a summary of selected portions of the system boot process that are 
 
     Network file systems, which are in the "Network" load order group, are also loaded during this phase.
 
-6.  After all drivers that load at boot time have been initialized, the I/O Manager calls the reinitialization routines of any drivers that have them. A *reinitialization routine* is a callback routine that is registered by a boot driver that needs to be given additional processing time at this point in the boot process. Reinitialization routines are registered by calling [**IoRegisterBootDriverReinitialization**](https://msdn.microsoft.com/library/windows/hardware/ff549494) or [**IoRegisterDriverReinitialization**](https://msdn.microsoft.com/library/windows/hardware/ff549511).
+6.  After all drivers that load at boot time have been initialized, the I/O Manager calls the reinitialization routines of any drivers that have them. A *reinitialization routine* is a callback routine that is registered by a boot driver that needs to be given additional processing time at this point in the boot process. Reinitialization routines are registered by calling [**IoRegisterBootDriverReinitialization**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioregisterbootdriverreinitialization) or [**IoRegisterDriverReinitialization**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioregisterdriverreinitialization).
 
 7.  The Service Control Manager loads drivers of type SERVICE\_AUTO\_START that are not already loaded.
 
 ### <span id="ddk_file_system_recognizer_if"></span><span id="DDK_FILE_SYSTEM_RECOGNIZER_IF"></span>File System Recognizer
 
-After system boot, the storage device drivers for all volumes attached to the system are loaded and started. However, not all built-in file systems are loaded, and not all file system volumes are mounted. The File System Recognizer (FsRec) performs these tasks as needed to process [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff548630) requests.
+After system boot, the storage device drivers for all volumes attached to the system are loaded and started. However, not all built-in file systems are loaded, and not all file system volumes are mounted. The File System Recognizer (FsRec) performs these tasks as needed to process [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) requests.
 
 FsRec is loaded in the SERVICE\_SYSTEM\_START phase of system startup. Note that, although it is in the "Boot File System" load order group, FsRec is not the boot file system. The actual boot file system − that is, the file system that mounted the boot volume − is loaded at the start of the boot process.
 

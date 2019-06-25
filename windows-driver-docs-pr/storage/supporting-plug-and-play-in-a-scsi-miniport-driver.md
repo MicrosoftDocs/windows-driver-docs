@@ -20,7 +20,7 @@ Although Microsoft Windows 2000 and later operating systems are Plug and Play op
 
 A Plug and Play miniport driver must implement an *HwScsiAdapterControl* routine to stop and manage power to the HBA. No additional routines are required of a Plug and Play miniport driver to accommodate changes in driver initialization.
 
-The SCSI port driver creates PDOs for target devices and the FDO for the miniport driver, and handles requests to add, start or unload the device on behalf of the miniport driver. For general information about Plug and Play drivers, see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125).
+The SCSI port driver creates PDOs for target devices and the FDO for the miniport driver, and handles requests to add, start or unload the device on behalf of the miniport driver. For general information about Plug and Play drivers, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
 
  
 

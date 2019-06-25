@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The FVF codes originally defined in DirectX 6.0 now support the specifications for texture coordinate sets in DirectX 7.0.
 
-In addition to the normal 2D textures, supported in DirectX 6.0, DirectX 7.0 supports 1D, 3D, and 4D textures. In addition, the textures may be projected. The **dwVertexType** member of [**D3DHAL\_DRAWPRIMITIVES2DATA**](https://msdn.microsoft.com/library/windows/hardware/ff545957) can be examined when [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704) is called, to determine the dimensions of each texture coordinate set.
+In addition to the normal 2D textures, supported in DirectX 6.0, DirectX 7.0 supports 1D, 3D, and 4D textures. In addition, the textures may be projected. The **dwVertexType** member of [**D3DHAL\_DRAWPRIMITIVES2DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/ns-d3dhal-_d3dhal_drawprimitives2data) can be examined when [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) is called, to determine the dimensions of each texture coordinate set.
 
 For example, if there is a vertex with five texture coordinate sets, each one of these textures can be 1D, 2D, 3D, or 4D and they may be projected textures. Each texture stage is independent, so the dimensions can be different for each set of coordinates. The upper 16 bits of the FVF flag contained in **dwVertexType** can be examined to determine the dimensions of the texture coordinates.
 

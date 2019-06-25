@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 A display driver whose display device does not support rendering to z and color buffers with differing pixel depths must transparently promote a 16 bits per pixel (bpp) z buffer to 32 bpp in order to render both the z buffer and a 32 bpp color buffer at the same time. Note, however, that the z buffer cannot also have stencil bits. Therefore, applications are not required to correct this mismatch in buffer pixel depth.
 
-If the driver's display device can render to z and color buffers of differing pixel depth, the driver sets the D3DFORMAT\_OP\_ZSTENCIL\_WITH\_ARBITRARY\_COLOR\_DEPTH flag in the **dwOperations** member of the [**DDPIXELFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff550274) structure for z-buffer formats. The Direct3D runtime then lets applications render to any mismatch of z- and color-pixel depths.
+If the driver's display device can render to z and color buffers of differing pixel depth, the driver sets the D3DFORMAT\_OP\_ZSTENCIL\_WITH\_ARBITRARY\_COLOR\_DEPTH flag in the **dwOperations** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat) structure for z-buffer formats. The Direct3D runtime then lets applications render to any mismatch of z- and color-pixel depths.
 
 If the driver does not set D3DFORMAT\_OP\_ZSTENCIL\_WITH\_ARBITRARY\_COLOR\_DEPTH for z-buffer formats, the runtime only lets applications render to a mismatch of 32 bpp color buffer and 16 bpp z buffer with no stencil bits as described in the introductory paragraph. In this case, the driver allocates a 32 bpp z buffer in place of the requested 16 bpp z buffer.
 

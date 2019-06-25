@@ -19,5 +19,5 @@ Windows Server 2003, Windows XP, and Windows 2000 require that an ACPI BIOS be d
 
 Device Manager shows whether an individual computer supports ACPI. Check the driver information for the **Computer** device category.
 
-For more information about ACPI, see the [ACPI 5.0 specification](https://www.uefi.org/specifications).
+For more information about ACPI, see the [ACPI 5.0 specification](https://uefi.org/specifications).
 

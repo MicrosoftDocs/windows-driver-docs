@@ -29,7 +29,7 @@ Drivers use REQUEST\_ASYNC\_READ, REQUEST\_ASYNC\_WRITE, and REQUEST\_ASYNC\_LOC
 
 ### Types of Addressing
 
-Drivers that make asynchronous I/O requests must specify a destination address of type [**IO\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff537346) in the **DestinationAddress** member of the IRB. The destination address consists of two values: the node address and the address offset. The interpretation that the bus driver gives to these two values depends on the mode of addressing used by the driver that initiates the request.
+Drivers that make asynchronous I/O requests must specify a destination address of type [**IO\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/1394/ns-1394-_io_address) in the **DestinationAddress** member of the IRB. The destination address consists of two values: the node address and the address offset. The interpretation that the bus driver gives to these two values depends on the mode of addressing used by the driver that initiates the request.
 
 Three modes of addressing are available to send asynchronous 1394 packets: *normal*, *raw*, and *virtual*.
 

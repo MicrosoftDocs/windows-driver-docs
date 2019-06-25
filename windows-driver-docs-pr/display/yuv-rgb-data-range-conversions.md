@@ -152,7 +152,7 @@ If you want to convert from RGB or YUV inputs to YUV or RGB outputs, the expecte
 
  
 
-In this case the "nominal range" is the constant value from the [**DXVAHDDDI\_NOMINAL\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/dn265432) enumeration.
+In this case the "nominal range" is the constant value from the [**DXVAHDDDI\_NOMINAL\_RANGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ne-d3dumddi-_dxvahdddi_nominal_range) enumeration.
 
 See [YUV format ranges in Windows 8.1](yuv-format-ranges.md) for definitions of YUV format ranges.
 

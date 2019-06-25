@@ -2,15 +2,15 @@ windows-driver-docs-pr/3dprint/ @barrygolden
 windows-driver-docs-pr/acpi/ @barrygolden
 windows-driver-docs-pr/audio/ @DOMARS
 windows-driver-docs-pr/battery/ @DOMARS
-windows-driver-docs-pr/biometric/ @mimisasouvanh
-windows-driver-docs-pr/bluetooth/ @EliotSeattle
+windows-driver-docs-pr/biometric/ @EliotSeattle
+windows-driver-docs-pr/bluetooth/ @billlattimer
 windows-driver-docs-pr/bringup/ @barrygolden
 windows-driver-docs-pr/dashboard/ @EliotSeattle
 windows-driver-docs-pr/debugger/ @DOMARS
 windows-driver-docs-pr/devapps/ @EliotSeattle
 windows-driver-docs-pr/develop/ @tedhudek
 windows-driver-docs-pr/devtest/ @EliotSeattle
-windows-driver-docs-pr/display/ @mimisasouvanh
+windows-driver-docs-pr/display/ @lorihollasch
 windows-driver-docs-pr/driversecurity/ @DOMARS
 windows-driver-docs-pr/gettingstarted/ @EliotSeattle
 windows-driver-docs-pr/gnss/ @barrygolden
@@ -37,7 +37,7 @@ windows-driver-docs-pr/powermeter/ @DOMARS
 windows-driver-docs-pr/print/ @barrygolden
 windows-driver-docs-pr/samples/ @barrygolden
 windows-driver-docs-pr/sd/ @EliotSeattle
-windows-driver-docs-pr/sensors/ @mimisasouvanh
+windows-driver-docs-pr/sensors/ @billlattimer
 windows-driver-docs-pr/serports/ @DOMARS
 windows-driver-docs-pr/smartcard/ @EliotSeattle
 windows-driver-docs-pr/spb/ @EliotSeattle

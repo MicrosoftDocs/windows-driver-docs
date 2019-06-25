@@ -26,7 +26,7 @@ The GUID for the GPIO controller \_DSM method is defined to be:
 ## Function 0
 
 
-Function 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For the definition of Function 0, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://www.uefi.org/specifications).
+Function 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For the definition of Function 0, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 ## Function 1
 

@@ -25,73 +25,73 @@ When this option is active and Driver Verifier detects that the driver violates 
 
 When you select the DDI compliance checking option, the following rules are included.
 
-[**GuardedRegions**](https://msdn.microsoft.com/library/windows/hardware/hh975150) (Starting in Windows 8.1)
+[**GuardedRegions**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-guardedregions) (Starting in Windows 8.1)
 
-[**IoSetCompletionExCompleteIrp**](https://msdn.microsoft.com/library/windows/hardware/hh975178) (Starting in Windows 8.1)
+[**IoSetCompletionExCompleteIrp**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-iosetcompletionexcompleteirp) (Starting in Windows 8.1)
 
-[**IrqlApcLte**](https://msdn.microsoft.com/library/windows/hardware/ff547740)
+[**IrqlApcLte**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlapclte)
 
-[**IrqlDispatch**](https://msdn.microsoft.com/library/windows/hardware/ff547743)
+[**IrqlDispatch**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqldispatch)
 
-[**IrqlExAllocatePool**](https://msdn.microsoft.com/library/windows/hardware/ff547747)
+[**IrqlExAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexallocatepool)
 
-[**IrqlExApcLte1**](https://msdn.microsoft.com/library/windows/hardware/ff547748)
+[**IrqlExApcLte1**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexapclte1)
 
-[**IrqlExApcLte2**](https://msdn.microsoft.com/library/windows/hardware/ff547751)
+[**IrqlExApcLte2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
-[**IrqlExApcLte3**](https://msdn.microsoft.com/library/windows/hardware/ff547753)
+[**IrqlExApcLte3**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexapclte3)
 
-[**IrqlExPassive**](https://msdn.microsoft.com/library/windows/hardware/ff547756)
+[**IrqlExPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexpassive)
 
-[**IrqlIoApcLte**](https://msdn.microsoft.com/library/windows/hardware/ff547759)
+[**IrqlIoApcLte**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlioapclte)
 
-[**IrqlIoDispatch**](https://msdn.microsoft.com/library/windows/hardware/jj157234)
+[**IrqlIoDispatch**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliodispatch)
 
-[**IrqlIoPassive1**](https://msdn.microsoft.com/library/windows/hardware/ff547763)
+[**IrqlIoPassive1**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliopassive1)
 
-[**IrqlIoPassive2**](https://msdn.microsoft.com/library/windows/hardware/ff547766)
+[**IrqlIoPassive2**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliopassive2)
 
-[**IrqlIoPassive3**](https://msdn.microsoft.com/library/windows/hardware/ff547780)
+[**IrqlIoPassive3**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliopassive3)
 
-[**IrqlIoPassive4**](https://msdn.microsoft.com/library/windows/hardware/ff547787)
+[**IrqlIoPassive4**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliopassive4)
 
-[**IrqlIoPassive5**](https://msdn.microsoft.com/library/windows/hardware/ff547796)
+[**IrqlIoPassive5**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliopassive5)
 
-[**IrqlKeApcLte1**](https://msdn.microsoft.com/library/windows/hardware/ff547803)
+[**IrqlKeApcLte1**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlkeapclte1)
 
-[**IrqlKeApcLte2**](https://msdn.microsoft.com/library/windows/hardware/ff547806)
+[**IrqlKeApcLte2**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlkeapclte2)
 
-[**IrqlKeDispatchLte**](https://msdn.microsoft.com/library/windows/hardware/ff547812)
+[**IrqlKeDispatchLte**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlkedispatchlte)
 
-[**IrqlKeReleaseSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff547830)
+[**IrqlKeReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlkereleasespinlock)
 
-[**IrqlKeSetEvent**](https://msdn.microsoft.com/library/windows/hardware/ff547835)
+[**IrqlKeSetEvent**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlkesetevent)
 
-[**IrqlMmApcLte**](https://msdn.microsoft.com/library/windows/hardware/ff547855)
+[**IrqlMmApcLte**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlmmapclte)
 
-[**IrqlMmDispatch**](https://msdn.microsoft.com/library/windows/hardware/hh975186)
+[**IrqlMmDispatch**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlmmdispatch)
 
-[**IrqlObPassive**](https://msdn.microsoft.com/library/windows/hardware/ff547873)
+[**IrqlObPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlobpassive)
 
-[**IrqlPsPassive**](https://msdn.microsoft.com/library/windows/hardware/ff547882)
+[**IrqlPsPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlpspassive)
 
-[**IrqlReturn**](https://msdn.microsoft.com/library/windows/hardware/ff547886) (Starting in Windows 8.1)
+[**IrqlReturn**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlreturn) (Starting in Windows 8.1)
 
-[**IrqlRtlPassive**](https://msdn.microsoft.com/library/windows/hardware/ff547893)
+[**IrqlRtlPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlrtlpassive)
 
-[**IrqlZwPassive**](https://msdn.microsoft.com/library/windows/hardware/ff547897)
+[**IrqlZwPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlzwpassive)
 
-[**NdisOidComplete**](https://msdn.microsoft.com/library/windows/hardware/dn305115) (Starting in Windows 8.1)
+[**NdisOidComplete**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndisoidcomplete) (Starting in Windows 8.1)
 
-[**NdisOidDoubleComplete**](https://msdn.microsoft.com/library/windows/hardware/dn305116) (Starting in Windows 8.1)
+[**NdisOidDoubleComplete**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndisoiddoublecomplete) (Starting in Windows 8.1)
 
-[**PnpRemove**](https://msdn.microsoft.com/library/windows/hardware/dn322052) (Starting in Windows 8.1)
+[**PnpRemove**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-pnpremove) (Starting in Windows 8.1)
 
-[**RequestedPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff551613) (Starting in Windows 8.1)
+[**RequestedPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-requestedpowerirp) (Starting in Windows 8.1)
 
-[**QueuedSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551494) (Starting in Windows 8.1)
+[**QueuedSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-queuedspinlock) (Starting in Windows 8.1)
 
-[**SpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551861) (Starting in Windows 8.1)
+[**SpinLock**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-spinlock) (Starting in Windows 8.1)
 
 ## <span id="Activating_the_DDI_compliance_checking_option"></span><span id="activating_the_ddi_compliance_checking_option"></span><span id="ACTIVATING_THE_DDI_COMPLIANCE_CHECKING_OPTION"></span>Activating the DDI compliance checking option
 
@@ -125,11 +125,11 @@ You can activate the DDI compliance checking feature for one or more drivers by 
 
 Starting in Windows 8.1, the **DDI compliance checking (additional) option** option provides additional rules to determine whether the driver correctly interacts with the Windows operating system kernel. When you select the **DDI compliance checking (additional) option**, the following rules are tested:
 
--   [**CriticalRegions**](https://msdn.microsoft.com/library/windows/hardware/ff543603)
+-   [**CriticalRegions**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-criticalregions)
 
--   [**QueuedSpinLockRelease**](https://msdn.microsoft.com/library/windows/hardware/ff551496)
+-   [**QueuedSpinLockRelease**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-queuedspinlockrelease)
 
--   [**SpinlockRelease**](https://msdn.microsoft.com/library/windows/hardware/ff552780)
+-   [**SpinlockRelease**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-spinlockrelease)
 
 ## Activating the DDI compliance checking (additional) option
 

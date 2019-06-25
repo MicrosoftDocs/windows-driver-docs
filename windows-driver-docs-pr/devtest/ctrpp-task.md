@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Ctrpp task
 
 
-The Windows Driver Kit (WDK) provides the Ctrpp task so that you can run the ctrpp.exe tool when you build your driver using MSBuild. For information about using ctrpp.exe, see [**CTRPP**](https://msdn.microsoft.com/library/windows/desktop/aa372128).
+The Windows Driver Kit (WDK) provides the Ctrpp task so that you can run the ctrpp.exe tool when you build your driver using MSBuild. For information about using ctrpp.exe, see [**CTRPP**](https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp).
 
 MSBuild uses the Ctrpp Item to send the parameters for the Ctrpp task to ctrpp.exe. The Ctrpp item in the project files accesses the item metadata for ctrpp.exe.
 
@@ -140,4 +140,4 @@ In the example above, MSBuild invokes ctrpp.exe on the file a.manifest, with the
 ## <span id="related_topics"></span>Related topics
 
 
-[**CTRPP**](https://msdn.microsoft.com/library/windows/desktop/aa372128)
+[**CTRPP**](https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp)

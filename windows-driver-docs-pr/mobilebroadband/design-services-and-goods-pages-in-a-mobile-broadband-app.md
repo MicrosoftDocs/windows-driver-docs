@@ -33,7 +33,7 @@ Inappropriate design for the services page:
 ## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
 
 
-[Quickstart: Adding a ListView](https://msdn.microsoft.com/library/windows/apps/hh465496)
+[Quickstart: Adding a ListView](https://docs.microsoft.com/previous-versions/windows/apps/hh465496(v=win.10))
 
 ## <span id="related_topics"></span>Related topics
 

@@ -92,11 +92,11 @@ All user-mode structures and enumerations that are used with Miracast display de
 
 These additional user-mode structures and enumerations support Miracast displays and are new or updated for Windows 8.1:
 
--   [**DISPLAYCONFIG\_TARGET\_BASE\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn362043) (new)
--   [**DISPLAYCONFIG\_VIDEO\_SIGNAL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff554007) (**AdditionalSignalInfo** child structure added)
--   [**DISPLAYCONFIG\_DEVICE\_INFO\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff553924) (**DISPLAYCONFIG\_DEVICE\_INFO\_GET\_TARGET\_BASE\_TYPE** constant added)
--   [**D3DKMDT\_VIDEO\_SIGNAL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff546625) (**AdditionalSignalInfo** child structure added)
--   [**DISPLAYCONFIG\_DEVICE\_INFO\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff553924) (**DISPLAYCONFIG\_DEVICE\_INFO\_GET\_TARGET\_BASE\_TYPE** constant added)
+-   [**DISPLAYCONFIG\_TARGET\_BASE\_TYPE**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-displayconfig_target_base_type) (new)
+-   [**DISPLAYCONFIG\_VIDEO\_SIGNAL\_INFO**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-displayconfig_video_signal_info) (**AdditionalSignalInfo** child structure added)
+-   [**DISPLAYCONFIG\_DEVICE\_INFO\_TYPE**](https://docs.microsoft.com/windows/desktop/api/wingdi/ne-wingdi-displayconfig_device_info_type) (**DISPLAYCONFIG\_DEVICE\_INFO\_GET\_TARGET\_BASE\_TYPE** constant added)
+-   [**D3DKMDT\_VIDEO\_SIGNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_d3dkmdt_video_signal_info) (**AdditionalSignalInfo** child structure added)
+-   [**DISPLAYCONFIG\_DEVICE\_INFO\_TYPE**](https://docs.microsoft.com/windows/desktop/api/wingdi/ne-wingdi-displayconfig_device_info_type) (**DISPLAYCONFIG\_DEVICE\_INFO\_GET\_TARGET\_BASE\_TYPE** constant added)
 
 ### Kernel-mode DDIs
 
@@ -131,12 +131,12 @@ Pointers to the Miracast interface functions are returned in a [DXGK_MIRACAST_IN
 
 These additional kernel-mode structures and enumerations support Miracast displays and are new or updated for Windows 8.1:
 
--   [**DXGK\_MIRACAST\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/dn322054)
--   [**D3DKMDT\_VIDEO\_OUTPUT\_TECHNOLOGY**](https://msdn.microsoft.com/library/windows/hardware/ff546605) (**D3DKMDT\_VOT\_MIRACAST** constant added)
--   [**D3DKMDT\_VIDEO\_SIGNAL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff546625) (**AdditionalSignalInfo** child structure added)
--   [**DXGK\_CHILD\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff561010) (**Miracast** child structure added)
--   [**DXGK\_CHILD\_STATUS\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff561015) (**StatusMiracast** constant added)
--   [**DXGKARGCB\_NOTIFY\_INTERRUPT\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff557538) (**MiracastEncodeChunkCompleted** child structure added)
+-   [**DXGK\_MIRACAST\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/ns-dispmprt-_dxgk_miracast_caps)
+-   [**D3DKMDT\_VIDEO\_OUTPUT\_TECHNOLOGY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ne-d3dkmdt-_d3dkmdt_video_output_technology) (**D3DKMDT\_VOT\_MIRACAST** constant added)
+-   [**D3DKMDT\_VIDEO\_SIGNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_d3dkmdt_video_signal_info) (**AdditionalSignalInfo** child structure added)
+-   [**DXGK\_CHILD\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/ns-dispmprt-_dxgk_child_status) (**Miracast** child structure added)
+-   [**DXGK\_CHILD\_STATUS\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/ne-dispmprt-_dxgk_child_status_type) (**StatusMiracast** constant added)
+-   [**DXGKARGCB\_NOTIFY\_INTERRUPT\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgkargcb_notify_interrupt_data) (**MiracastEncodeChunkCompleted** child structure added)
 
  
 

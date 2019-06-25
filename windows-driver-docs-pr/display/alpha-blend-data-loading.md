@@ -23,7 +23,7 @@ When the [bDXVA\_Func variable](bdxva-func-variable.md) is equal to 2, the opera
 
 -   An AYUV graphic surface
 
-The [**DXVA\_ConfigAlphaLoad**](https://msdn.microsoft.com/library/windows/hardware/ff563129) structure determines which of these methods is used.
+The [**DXVA\_ConfigAlphaLoad**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configalphaload) structure determines which of these methods is used.
 
  
 

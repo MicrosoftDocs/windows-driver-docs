@@ -22,7 +22,7 @@ The Device Stage General Development Kit contains the following information:
 -   **Windows 7 Device Stage Development Samples** - A collection of sample graphics and tools to help with developing Device Stage experiences.
 
 ## Related topics
-[Microsoft Device Experience Development Kit](https://msdn.microsoft.com/library/windows/hardware/gg463154)  
+[Microsoft Device Experience Development Kit](https://msdn.microsoft.com/library/windows/hardware/dn629504(v=vs.85).aspx)  
 
 
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) includes the following:
 
--   [Device setup class properties](https://msdn.microsoft.com/library/windows/hardware/ff542239) that correspond to the SPCRP_*Xxx* identifiers that are defined in *Setupapi.h.*
+-   [Device setup class properties](https://docs.microsoft.com/previous-versions/ff542239(v=vs.85)) that correspond to the SPCRP_*Xxx* identifiers that are defined in *Setupapi.h.*
 
 -   Properties that do not have SPCRP_*Xxx* identifiers, but do have corresponding system-defined registry entry values.
 

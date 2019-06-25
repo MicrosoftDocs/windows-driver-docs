@@ -15,21 +15,21 @@ Unidrv and PScript5 print drivers validate the Print Ticket by using the sequenc
 
 ![diagram illustrating how the unidrv and pscript5 print drivers validate the print ticket](images/ptpcvalpt-uml.gif)
 
-1.  For each plug-in, call the [**IPrintOemPrintTicketProvider::ExpandIntentOptions**](https://msdn.microsoft.com/library/windows/hardware/ff553168) method.
+1.  For each plug-in, call the [**IPrintOemPrintTicketProvider::ExpandIntentOptions**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemprintticketprovider-expandintentoptions) method.
 
-2.  Call the [**IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode**](https://msdn.microsoft.com/library/windows/hardware/ff553167) method.
+2.  Call the [**IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemprintticketprovider-convertprinttickettodevmode) method.
 
-3.  For each plug-in, call **IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode** to convert the private portions of the [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure.
+3.  For each plug-in, call **IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode** to convert the private portions of the [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure.
 
 4.  Validate public and private parts of the DEVMODEW structure that the Unidrv or PScript5 print driver supports.
 
 5.  For each plug-in, validate the private parts of the DEVMODEW structure.
 
-6.  Call the [**IPrintTicketProvider::ConvertPrintTicketToDevMode**](https://msdn.microsoft.com/library/windows/hardware/ff554363) method.
+6.  Call the [**IPrintTicketProvider::ConvertPrintTicketToDevMode**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff554363(v=vs.85)) method.
 
-7.  For each plug-in, call the [**IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket**](https://msdn.microsoft.com/library/windows/hardware/ff553161) method to convert the private portions of the DEVMODEW structure.
+7.  For each plug-in, call the [**IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff553161(v=vs.85)) method to convert the private portions of the DEVMODEW structure.
 
-8.  For each plug-in, call the [**IPrintOemPrintTicketProvider::ValidatePrintTicket**](https://msdn.microsoft.com/library/windows/hardware/ff553184) method to validate the PrintTicket.
+8.  For each plug-in, call the [**IPrintOemPrintTicketProvider::ValidatePrintTicket**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff553184(v=vs.85)) method to validate the PrintTicket.
 
  
 

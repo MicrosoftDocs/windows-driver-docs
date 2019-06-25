@@ -20,7 +20,7 @@ To use Function Discovery COM interfaces, the minidriver code must include the *
 #include <FunctionDiscovery.h>
 ```
 
-During initialization, as might happen in the [**IStiUSD::Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff543824) method, the minidriver should query Function Discovery to obtain the appropriate Function Instance object that represents the hardware device. To complete this query, use the following procedure (and the associated code examples):
+During initialization, as might happen in the [**IStiUSD::Initialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-initialize) method, the minidriver should query Function Discovery to obtain the appropriate Function Instance object that represents the hardware device. To complete this query, use the following procedure (and the associated code examples):
 
 ### Step 1: Create the Function Discovery object
 

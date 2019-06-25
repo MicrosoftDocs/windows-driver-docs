@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-The system will not load the driver because it is listed in the [Windows Driver Protection](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8) database supplied by [Windows Update](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8)*.*
+The system will not load the driver because it is listed in the [Windows Driver Protection](https://docs.microsoft.com/windows-hardware/drivers) database supplied by [Windows Update](https://docs.microsoft.com/windows-hardware/drivers)*.*
 
 ## Error Code
 

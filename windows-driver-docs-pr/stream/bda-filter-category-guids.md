@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_bda_filter_category_guids_ks"></span><span id="DDK_BDA_FILTER_CATEGORY_GUIDS_KS"></span>
 
 
-A BDA minidriver uses the BDA filter category GUIDs to specify the types of BDA filters to create. A BDA minidriver assigns these GUIDs in the array to which the **Categories** member of a [**KSFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562553) structure points. The *Bdamedia.h* header file defines these GUIDs.
+A BDA minidriver uses the BDA filter category GUIDs to specify the types of BDA filters to create. A BDA minidriver assigns these GUIDs in the array to which the **Categories** member of a [**KSFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksfilter_descriptor) structure points. The *Bdamedia.h* header file defines these GUIDs.
 
 The following filter category GUIDs are available in BDA:
 

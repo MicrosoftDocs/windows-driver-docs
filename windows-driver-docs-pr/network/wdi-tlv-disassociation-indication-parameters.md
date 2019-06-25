@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_DISASSOCIATION\_INDICATION\_PARAMETERS
 
 
-WDI\_TLV\_DISASSOCIATION\_INDICATION\_PARAMETERS is a TLV that contains disassociation indication parameters for [NDIS\_STATUS\_WDI\_INDICATION\_DISASSOCIATION](https://msdn.microsoft.com/library/windows/hardware/dn925631).
+WDI\_TLV\_DISASSOCIATION\_INDICATION\_PARAMETERS is a TLV that contains disassociation indication parameters for [NDIS\_STATUS\_WDI\_INDICATION\_DISASSOCIATION](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-disassociation).
 
 ## TLV Type
 
@@ -28,8 +28,8 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                                         | Description                                                                |
 |--------------------------------------------------------------|----------------------------------------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071)            | The MAC address of the peer associated with the disassociation indication. |
-| [**WDI\_ASSOC\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/dn897725) (UINT32) | The trigger for the disassociation indication.                             |
+| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address)            | The MAC address of the peer associated with the disassociation indication. |
+| [**WDI\_ASSOC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_assoc_status) (UINT32) | The trigger for the disassociation indication.                             |
 
  
 

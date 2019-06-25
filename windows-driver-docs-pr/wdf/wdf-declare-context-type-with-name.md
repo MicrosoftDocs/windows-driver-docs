@@ -42,7 +42,7 @@ This macro does not return a value.
 Remarks
 -------
 
-For more information about using this macro, see [Framework Object Context Space](https://msdn.microsoft.com/library/windows/hardware/ff542873).
+For more information about using this macro, see [Framework Object Context Space](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-context-space).
 
 Examples
 --------
@@ -65,15 +65,15 @@ WDFREQUEST Request;
 WDF_OBJECT_ATTRIBUTES MyRequestObjectAttributes;
 PMY_REQUEST_CONTEXT pMyContext;
 
-WDF_OBJECT_ATTRIBUTES_INIT(&amp;MyRequestObjectAttributes);
+WDF_OBJECT_ATTRIBUTES_INIT(&MyRequestObjectAttributes);
 WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE(
-                                       &amp;MyRequestObjectAttributes,
+                                       &MyRequestObjectAttributes,
                                        MY_REQUEST_CONTEXT
                                        );
 status = WdfRequestCreate(
-                          &amp;MyRequestObjectAttributes
+                          &MyRequestObjectAttributes
                           NULL,
-                          &amp;Request
+                          &Request
                           );
 
 if (!NT_SUCCESS(status)) {

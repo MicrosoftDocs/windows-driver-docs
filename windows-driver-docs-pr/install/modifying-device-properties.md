@@ -13,47 +13,47 @@ ms.localizationpriority: medium
 # Rules for Modifying Device Properties
 
 
-Many [device properties](device-properties.md) have complex dependencies on other properties or device state. For example, the values of [**DEVPKEY_Device_Class**](https://msdn.microsoft.com/library/windows/hardware/ff542385) and [**DEVPKEY_Device_ClassGuid**](https://msdn.microsoft.com/library/windows/hardware/ff542388) must be consistent with one another.
+Many [device properties](device-properties.md) have complex dependencies on other properties or device state. For example, the values of [**DEVPKEY_Device_Class**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-class) and [**DEVPKEY_Device_ClassGuid**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-classguid) must be consistent with one another.
 
-Direct modification of reserved properties could invalidate device installation state. For example, if the [**DEVPKEY_Device_DeviceDesc**](https://msdn.microsoft.com/library/windows/hardware/ff542407) is changed, system functionality (such as backup, driver rollback, and Windows Update) could break.
+Direct modification of reserved properties could invalidate device installation state. For example, if the [**DEVPKEY_Device_DeviceDesc**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-devicedesc) is changed, system functionality (such as backup, driver rollback, and Windows Update) could break.
 
-The following properties are read-only and can never be set with [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163):
+The following properties are read-only and can never be set with [**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw):
 
--   [**DEVPKEY_Device_Address**](https://msdn.microsoft.com/library/windows/hardware/ff542359)
+-   [**DEVPKEY_Device_Address**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-address)
 
--   [**DEVPKEY_Device_BusNumber**](https://msdn.microsoft.com/library/windows/hardware/ff542364)
+-   [**DEVPKEY_Device_BusNumber**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-busnumber)
 
--   [**DEVPKEY_Device_BusTypeGuid**](https://msdn.microsoft.com/library/windows/hardware/ff542371)
+-   [**DEVPKEY_Device_BusTypeGuid**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-bustypeguid)
 
--   [**DEVPKEY_Device_Capabilities**](https://msdn.microsoft.com/library/windows/hardware/ff542373)
+-   [**DEVPKEY_Device_Capabilities**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-capabilities)
 
--   [**DEVPKEY_Device_EnumeratorName**](https://msdn.microsoft.com/library/windows/hardware/ff542489)
+-   [**DEVPKEY_Device_EnumeratorName**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-enumeratorname)
 
--   [**DEVPKEY_Device_LegacyBusType**](https://msdn.microsoft.com/library/windows/hardware/ff542541)
+-   [**DEVPKEY_Device_LegacyBusType**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-legacybustype)
 
--   [**DEVPKEY_Device_PDOName**](https://msdn.microsoft.com/library/windows/hardware/ff542580)
+-   [**DEVPKEY_Device_PDOName**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-pdoname)
 
--   [**DEVPKEY_Device_PowerData**](https://msdn.microsoft.com/library/windows/hardware/ff542586)
+-   [**DEVPKEY_Device_PowerData**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-powerdata)
 
--   [**DEVPKEY_Device_RemovalPolicy**](https://msdn.microsoft.com/library/windows/hardware/ff542597)
+-   [**DEVPKEY_Device_RemovalPolicy**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-removalpolicy)
 
--   [**DEVPKEY_Device_RemovalPolicyDefault**](https://msdn.microsoft.com/library/windows/hardware/ff542603)
+-   [**DEVPKEY_Device_RemovalPolicyDefault**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-removalpolicydefault)
 
--   [**DEVPKEY_Device_UINumber**](https://msdn.microsoft.com/library/windows/hardware/ff542660)
+-   [**DEVPKEY_Device_UINumber**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-uinumber)
 
 The following properties are writable. However, they are reserved for use by the operating system and must not be set directly:
 
--   [**DEVPKEY_Device_Class**](https://msdn.microsoft.com/library/windows/hardware/ff542385)
+-   [**DEVPKEY_Device_Class**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-class)
 
--   [**DEVPKEY_Device_ClassGuid**](https://msdn.microsoft.com/library/windows/hardware/ff542388)
+-   [**DEVPKEY_Device_ClassGuid**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-classguid)
 
--   [**DEVPKEY_Device_Driver**](https://msdn.microsoft.com/library/windows/hardware/ff542427)
+-   [**DEVPKEY_Device_Driver**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-driver)
 
--   [**DEVPKEY_Device_DriverDesc**](https://msdn.microsoft.com/library/windows/hardware/ff542436)
+-   [**DEVPKEY_Device_DriverDesc**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-driverdesc)
 
--   [**DEVPKEY_Device_Manufacturer**](https://msdn.microsoft.com/library/windows/hardware/ff542558)
+-   [**DEVPKEY_Device_Manufacturer**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-manufacturer)
 
-**Note**  *Class installers* and *co-installers* must not change device properties except for the friendly name ([**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502)) and the upper and lower filter drivers for the device ([**DEVPKEY_Device_UpperFilters**](https://msdn.microsoft.com/library/windows/hardware/ff542667) and [**DEVPKEY_Device_LowerFilters**](https://msdn.microsoft.com/library/windows/hardware/ff542554)). For more information, see [Accessing Device Instance Properties](accessing-device-instance-properties--windows-vista-and-later-.md).
+**Note**  *Class installers* and *co-installers* must not change device properties except for the friendly name ([**DEVPKEY_Device_FriendlyName**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-friendlyname)) and the upper and lower filter drivers for the device ([**DEVPKEY_Device_UpperFilters**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-upperfilters) and [**DEVPKEY_Device_LowerFilters**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-lowerfilters)). For more information, see [Accessing Device Instance Properties](accessing-device-instance-properties--windows-vista-and-later-.md).
 
  
 

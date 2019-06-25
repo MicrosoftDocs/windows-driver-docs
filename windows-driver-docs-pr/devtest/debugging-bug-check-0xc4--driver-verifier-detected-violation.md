@@ -9,9 +9,9 @@ ms.localizationpriority: medium
 # Debugging Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION
 
 
-If [Driver Verifier](driver-verifier.md) detects a violation, it generates a bug check to stop the computer. This is to provide you with the most information possible for debugging the issue. One of the more frequent bug checks Driver Verifier generates is [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://msdn.microsoft.com/library/windows/hardware/ff560187). This section describes some example strategies for debugging these violations.
+If [Driver Verifier](driver-verifier.md) detects a violation, it generates a bug check to stop the computer. This is to provide you with the most information possible for debugging the issue. One of the more frequent bug checks Driver Verifier generates is [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation). This section describes some example strategies for debugging these violations.
 
-When [Driver Verifier](driver-verifier.md) issues a [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://msdn.microsoft.com/library/windows/hardware/ff560187), it uses the parameter 1 value (or subcode) to specify the specific cause of the violation. **Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION** detects over 200 violations.
+When [Driver Verifier](driver-verifier.md) issues a [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation), it uses the parameter 1 value (or subcode) to specify the specific cause of the violation. **Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION** detects over 200 violations.
 
 ## <span id="in_this_section"></span>In this section
 
@@ -27,7 +27,7 @@ When [Driver Verifier](driver-verifier.md) issues a [**Bug Check 0xC4: DRIVER\_V
 -   Run [Driver Verifier](driver-verifier.md) on a computer reserved for testing.
 -   Enable kernel-debugging on the test computer.
 
-For more information see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) and [Handling a Bug Check When Driver Verifier is Enabled](https://msdn.microsoft.com/library/windows/hardware/hh450984).
+For more information see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) and [Handling a Bug Check When Driver Verifier is Enabled](https://docs.microsoft.com/windows-hardware/drivers/debugger/handling-a-bug-check-when-driver-verifier-is-enabled).
 
  
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 OID\_WWAN\_CREATE\_MAC requests the miniport driver to create a new NDIS port. Context activation requests for the additional PDP context will be sent on this new NDIS port.
 
-Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later completing the request with the [**NDIS\_WWAN\_MAC\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn449747) structure that indicates the NDIS port number and MAC address associated with the port.
+Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later completing the request with the [**NDIS\_WWAN\_MAC\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_mac_info) structure that indicates the NDIS port number and MAC address associated with the port.
 
 Query requests are not supported.
 
@@ -45,7 +45,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_MAC\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn449747)
+[**NDIS\_WWAN\_MAC\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_mac_info)
 
 [OID\_WWAN\_DELETE\_MAC](oid-wwan-delete-mac.md)
 

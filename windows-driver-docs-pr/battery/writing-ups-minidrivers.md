@@ -42,7 +42,7 @@ For more information about UPS minidrivers, see the following topics:
 
 [Installing UPS Minidrivers](installing-ups-minidrivers.md)
 
-**Note**   Windows Vista and later versions of Windows do not support UPS units that are connected to COM ports. These Windows versions continue to support UPS units connected over [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930).
+**Note**   Windows Vista and later versions of Windows do not support UPS units that are connected to COM ports. These Windows versions continue to support UPS units connected over [USB](https://docs.microsoft.com/windows-hardware/drivers/).
 
  
 

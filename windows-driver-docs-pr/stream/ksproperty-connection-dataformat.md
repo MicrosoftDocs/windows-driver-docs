@@ -48,7 +48,7 @@ Clients use the KSPROPERTY\_CONNECTION\_DATAFORMAT property to set the current d
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561656" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561656)"><strong>KSDATAFORMAT</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat)"><strong>KSDATAFORMAT</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -58,11 +58,11 @@ Clients use the KSPROPERTY\_CONNECTION\_DATAFORMAT property to set the current d
 Remarks
 -------
 
-This property takes a [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656) structure specifying the requested data format.
+This property takes a [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat) structure specifying the requested data format.
 
 KS filters only need to support this property if they allow clients to reset the current property, or if connections can be made with the data format incompletely specified.
 
-For more information about the KSPROPERTY\_CONNECTION\_DATAFORMAT property, see [KS Data Formats and Data Ranges](https://msdn.microsoft.com/library/windows/hardware/ff567632) and [Data Range Intersections in AVStream](https://msdn.microsoft.com/library/windows/hardware/ff558680).
+For more information about the KSPROPERTY\_CONNECTION\_DATAFORMAT property, see [KS Data Formats and Data Ranges](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-data-formats-and-data-ranges) and [Data Range Intersections in AVStream](https://docs.microsoft.com/windows-hardware/drivers/stream/data-range-intersections-in-avstream).
 
 Requirements
 ------------
@@ -83,7 +83,7 @@ Requirements
 ## See also
 
 
-[**KSSTREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567138)
+[**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksstream_header)
 
 [**KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT**](ksproperty-connection-proposedataformat.md)
 

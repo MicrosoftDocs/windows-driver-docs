@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION
 
-The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn917962) enumeration is used to set and get the photo confirmation settings in the driver.
+The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration is used to set and get the photo confirmation settings in the driver.
 
 ## Usage summary table
 
@@ -50,7 +50,7 @@ For the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-
 #define KSCAMERA_EXTENDEDPROP_PHOTOCONFIRMATION_ON      0x0000000000000001
 ```
 
-If the photo confirmation is set to **KSCAMERA\_EXTENDEDPROP\_PHOTOCONFIRMATION\_OFF**, the driver preview pin must not produce a photo frame or produce the [**KSCAMERA\_METADATA\_PHOTOCONFIRMATION**](https://msdn.microsoft.com/library/windows/hardware/dn925187) structure that contains photo confirmation metadata. If the photo confirmation is set to **KSCAMERA\_EXTENDEDPROP\_PHOTOCONFIRMATION\_ON**, the driver preview pin must produce a photo frame and produce the **KSCAMERA\_METADATA\_PHOTOCONFIRMATION** structure that contains photo confirmation metadata.
+If the photo confirmation is set to **KSCAMERA\_EXTENDEDPROP\_PHOTOCONFIRMATION\_OFF**, the driver preview pin must not produce a photo frame or produce the [**KSCAMERA\_METADATA\_PHOTOCONFIRMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_metadata_photoconfirmation) structure that contains photo confirmation metadata. If the photo confirmation is set to **KSCAMERA\_EXTENDEDPROP\_PHOTOCONFIRMATION\_ON**, the driver preview pin must produce a photo frame and produce the **KSCAMERA\_METADATA\_PHOTOCONFIRMATION** structure that contains photo confirmation metadata.
 
 The table below contains the descriptions and requirements for the **KSCAMERA\_EXTENDEDPROP\_HEADER** structure fields when using the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION** property.
 
