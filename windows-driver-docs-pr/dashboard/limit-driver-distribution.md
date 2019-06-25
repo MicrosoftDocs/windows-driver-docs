@@ -69,7 +69,7 @@ The most common use case is described in the Driver Expansion section, [Use Case
 3. Scroll down to the **Restrict operating systems for driver distribution** section, and check **I want to restrict OS for driver distribution**.  This selection only becomes available *after* you have clicked publish on at least one item in the PNP grid.
 4. From the **Select Min OS Version (Floor)** drop down, pick the earliest OS version to distribute the driver to.
 
-![Dropdown menu listing OS versions](images/restrict_floor.png)
+![Dropdown menu listing OS versions](images/restrict-floor.png)
 
 If you select a value for the OS Floor that is earlier than the options listed in your PnP grid, you will receive the following error.
 
