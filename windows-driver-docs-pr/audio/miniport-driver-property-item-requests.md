@@ -15,15 +15,15 @@ ms.localizationpriority: medium
 ## <span id="miniport_driver_property_item_requests"></span><span id="MINIPORT_DRIVER_PROPERTY_ITEM_REQUESTS"></span>
 
 
-This section is a brief introduction to DirectMusic property item requests. A complete overview of this and other kernel-streaming concepts can be found in [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842).
+This section is a brief introduction to DirectMusic property item requests. A complete overview of this and other kernel-streaming concepts can be found in [Kernel Streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/kernel-streaming).
 
-DirectMusic miniport drivers must handle [audio drivers property sets](https://msdn.microsoft.com/library/windows/hardware/ff536197). A property request comes in two parts. The first part is the property set that is defined by the [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. The second is a data buffer that contains instance data that is specific to the property item.
+DirectMusic miniport drivers must handle [audio drivers property sets](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-drivers-property-sets). A property request comes in two parts. The first part is the property set that is defined by the [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)) structure. The second is a data buffer that contains instance data that is specific to the property item.
 
 The KSPROPERTY structure contains the following:
 
--   A predefined GUID specifying the set (such as [KSPROPSETID\_Synth\_Dls](https://msdn.microsoft.com/library/windows/hardware/ff537488)).
+-   A predefined GUID specifying the set (such as [KSPROPSETID\_Synth\_Dls](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-synth-dls)).
 
--   An item ID specifying the property item within the set (such as [**KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff537396)).
+-   An item ID specifying the property item within the set (such as [**KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD**](https://docs.microsoft.com/previous-versions/ff537396(v=vs.85))).
 
 -   Flags specifying the requested operation.
 
@@ -46,7 +46,7 @@ The second part of the property item request is the instance data, which is a bu
 
 A property item request can be directed to a particular node in the miniport driver topology. The miniport driver topology describes the layout of the driver and the underlying hardware. Within the topology can be nodes where property items can be sent, whether there are pin instances available at the time of the request.
 
-A pin instance must be created for DirectMusic playback. DirectMusic data is sent to the node of type [**KSNODETYPE\_DMSYNTH**](https://msdn.microsoft.com/library/windows/hardware/ff537167). The following is an example of a miniport driver connection:
+A pin instance must be created for DirectMusic playback. DirectMusic data is sent to the node of type [**KSNODETYPE\_DMSYNTH**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-dmsynth). The following is an example of a miniport driver connection:
 
 -   Connect stream in to synth:
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # GUID\_DEVINTERFACE\_IMAGE Device Interface Class
 
 
-The image [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [still image devices](https://msdn.microsoft.com/library/windows/hardware/ff542729), including digital cameras and scanners.
+The image [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [still image devices](https://docs.microsoft.com/windows-hardware/drivers/image/index), including digital cameras and scanners.
 
 <table>
 <colgroup>
@@ -42,7 +42,7 @@ Defined in *Wiaintfc.h*. Include *Wiaintfc.h.*
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-The system-supplied kernel-mode drivers for still image devices register an instance of this device interface class for still image devices. You can access an instance of this device interface class by using the I/O interface that still image drivers support. For more information about still image devices and drivers, see [Windows Image Acquisition Drivers](https://msdn.microsoft.com/library/windows/hardware/ff553346).
+The system-supplied kernel-mode drivers for still image devices register an instance of this device interface class for still image devices. You can access an instance of this device interface class by using the I/O interface that still image drivers support. For more information about still image devices and drivers, see [Windows Image Acquisition Drivers](https://docs.microsoft.com/windows-hardware/drivers/image/windows-image-acquisition-drivers).
 
 This interface is applicable to both still image drivers and WIA drivers and is available for Microsoft Windows XP and later versions of Windows.
 

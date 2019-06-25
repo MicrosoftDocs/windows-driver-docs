@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-IEC-61883 is a standard communications and control interface used by IEEE 1394 audio and video devices. In Windows 98 SE, Windows 2000 and earlier operating systems, 61883 functionality was implemented as part of the Microsoft Digital Video (MSDV) camcorder driver, *msdv.sys*. In Windows Me, Windows XP, and later operating systems, 61883 functionality has been moved to a separate driver dedicated to 61883 support. Vendor-supplied IEC-61883 client drivers send requests to the system-supplied [IEC-61883 Protocol Driver](https://msdn.microsoft.com/library/windows/hardware/ff537191) (*61883.sys*) to communicate with their devices.
+IEC-61883 is a standard communications and control interface used by IEEE 1394 audio and video devices. In Windows 98 SE, Windows 2000 and earlier operating systems, 61883 functionality was implemented as part of the Microsoft Digital Video (MSDV) camcorder driver, *msdv.sys*. In Windows Me, Windows XP, and later operating systems, 61883 functionality has been moved to a separate driver dedicated to 61883 support. Vendor-supplied IEC-61883 client drivers send requests to the system-supplied [IEC-61883 Protocol Driver](https://docs.microsoft.com/windows-hardware/drivers/ieee/iec-61883-protocol-driver) (*61883.sys*) to communicate with their devices.
 
 IEC-61883 specifications define the protocol by which numerous consumer electronic audio and video devices can interconnect. These specifications include definitions for general data format, data flow, and connection schemes for audiovisual information. The IEC-61883 protocol driver supports devices that conform to the following ratified IEC-61883 specifications:
 
@@ -36,8 +36,8 @@ IEC-61883 specifications define the protocol by which numerous consumer electron
 
 This section includes:
 
-[IEC-61883 Protocol Driver](https://msdn.microsoft.com/library/windows/hardware/ff537191)
-[IEC-61883 Protocol Driver in a Client Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff537193)
+[IEC-61883 Protocol Driver](https://docs.microsoft.com/windows-hardware/drivers/ieee/iec-61883-protocol-driver)
+[IEC-61883 Protocol Driver in a Client Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/ieee/iec-61883-protocol-driver-in-a-client-driver-stack)
  
 
  

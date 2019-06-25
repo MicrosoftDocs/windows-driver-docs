@@ -13,25 +13,25 @@ In Windows Vista and later Windows operating systems, digital signal processing 
 
 The following topics provide information about the interfaces and the methods that are exposed by the sAPOs.
 
-[IAudioMediaType](https://msdn.microsoft.com/library/windows/hardware/ff536496)
+[IAudioMediaType](https://docs.microsoft.com/windows/desktop/api/audiomediatype/nn-audiomediatype-iaudiomediatype)
 
-[IAudioProcessingObject](https://msdn.microsoft.com/library/windows/hardware/ff536501)
+[IAudioProcessingObject](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject)
 
-[IAudioProcessingObjectConfiguration](https://msdn.microsoft.com/library/windows/hardware/ff536502)
+[IAudioProcessingObjectConfiguration](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration)
 
-[IAudioProcessingObjectRT](https://msdn.microsoft.com/library/windows/hardware/ff536505)
+[IAudioProcessingObjectRT](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt)
 
 [IAudioSystemEffects2](iaudiosystemeffects2.md)
 
 [IAudioSystemEffects](iaudiosystemeffects.md)
 
-[IAudioSystemEffectsCustomFormats](https://msdn.microsoft.com/library/windows/hardware/ff536515)
+[IAudioSystemEffectsCustomFormats](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffectscustomformats)
 
 [IKeywordDetectorOemAdapter](ikeyworddetectoroemadapter.md)
 
-[IPropertyStore](https://msdn.microsoft.com/library/windows/hardware/ff536954)
+[IPropertyStore](https://docs.microsoft.com/windows/desktop/api/propsys/nn-propsys-ipropertystore)
 
-[Audio Processing Objects Utility Functions](https://msdn.microsoft.com/library/windows/hardware/ff536213)
+[Audio Processing Objects Utility Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536213(v=vs.85))
 
  
 

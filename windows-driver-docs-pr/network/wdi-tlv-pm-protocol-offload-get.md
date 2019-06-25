@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_GET
 
 
-WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_GET is a TLV that contains a protocol offload ID for [OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/dn925846).
+WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_GET is a TLV that contains a protocol offload ID for [OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-get-pm-protocol-offload).
 
 ## TLV Type
 

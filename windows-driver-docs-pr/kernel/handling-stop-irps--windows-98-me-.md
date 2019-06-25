@@ -19,7 +19,7 @@ On Windows 98/Me, the PnP manager can send stop IRPs for the following reasons:
 
 -   To stop the device when Device Manager disables it
 
--   To stop the device after a failed [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request
+-   To stop the device after a failed [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) request
 
 A driver cannot determine from the IRP why it was sent. Consequently, WDM drivers that run on Windows 98/Me must handle all stop IRPs as if the device were being disabled. In short, this means that such drivers fail incoming I/O requests rather than queuing them (as on Windows 2000 and later).
 

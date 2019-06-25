@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Avoiding Reboot when Updating a UMDF Driver
 
 
-To avoid a required reboot when you update a UMDF driver, specify the **COPYFLG\_IN\_USE\_RENAME** flag in the [**CopyFiles Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546346) in your driver's INF file, as shown in this example:
+To avoid a required reboot when you update a UMDF driver, specify the **COPYFLG\_IN\_USE\_RENAME** flag in the [**CopyFiles Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) in your driver's INF file, as shown in this example:
 
 ```cpp
 [VirtualSerial_Install.NT]

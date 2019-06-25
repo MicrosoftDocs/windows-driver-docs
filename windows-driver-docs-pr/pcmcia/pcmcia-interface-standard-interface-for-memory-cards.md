@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 
 This section describes the PCMCIA\_INTERFACE\_STANDARD interface that Microsoft Windows 2000 and later operating systems provide for PCMCIA memory cards and linear flash memory cards:
 
-[Functionality of the PCMCIA\_INTERFACE\_STANDARD Interface](https://msdn.microsoft.com/library/windows/hardware/ff537117)
+[Functionality of the PCMCIA\_INTERFACE\_STANDARD Interface](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/functionality-of-the-pcmcia-interface-standard-interface)
 
-[Obtaining a PCMCIA\_INTERFACE\_STANDARD Interface](https://msdn.microsoft.com/library/windows/hardware/ff537439)
+[Obtaining a PCMCIA\_INTERFACE\_STANDARD Interface](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/obtaining-a-pcmcia-interface-standard-interface)
 
-[Calling a PCMCIA\_INTERFACE\_STANDARD Interface Routine](https://msdn.microsoft.com/library/windows/hardware/ff537023)
+[Calling a PCMCIA\_INTERFACE\_STANDARD Interface Routine](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/calling-a-pcmcia-interface-standard-interface-routine)
 
-[Special Considerations for PCMCIA Memory Card Drivers](https://msdn.microsoft.com/library/windows/hardware/ff538196)
+[Special Considerations for PCMCIA Memory Card Drivers](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/special-considerations-for-pcmcia-memory-card-drivers)
 
  
 

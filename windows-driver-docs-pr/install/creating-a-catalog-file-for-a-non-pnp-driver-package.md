@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 You can use the [MakeCat](https://go.microsoft.com/fwlink/p/?linkid=104922) tool to create a [catalog file](catalog-files.md) for a non-PnP [driver package](driver-packages.md).
 
-**Note**  You must use the MakeCat tool only to create catalog files for driver packages that are not installed by using an INF file. If the driver package is installed by using an INF file, use the [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) tool to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md).
+**Note**  You must use the MakeCat tool only to create catalog files for driver packages that are not installed by using an INF file. If the driver package is installed by using an INF file, use the [**Inf2Cat**](https://docs.microsoft.com/windows-hardware/drivers/devtest/inf2cat) tool to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md).
 
  
 

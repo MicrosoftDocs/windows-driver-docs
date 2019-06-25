@@ -20,7 +20,7 @@ Some of these devices can also trigger a wake-up signal on the bus when they det
 
 If your device can be powered down when it is idle, the [power policy owner](power-policy-ownership-in-umdf.md) must perform the following two steps:
 
-1.  Call [**IWDFDevice2::AssignS0IdleSettings**](https://msdn.microsoft.com/library/windows/hardware/ff556920) or [**IWDFDevice3::AssignS0IdleSettingsEx**](https://msdn.microsoft.com/library/windows/hardware/hh451202) to specify:
+1.  Call [**IWDFDevice2::AssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings) or [**IWDFDevice3::AssignS0IdleSettingsEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice3-assigns0idlesettingsex) to specify:
     -   The low-power state that the device will enter
     -   The amount of time that the device must remain idle before its power state is lowered
     -   Whether the device can detect an external event and trigger a wake-up signal on the bus
@@ -31,10 +31,10 @@ If your device can be powered down when it is idle, the [power policy owner](pow
     -   Whether the device's idle power-down capability is enabled or disabled
     -   Whether the device will return to its working (D0) state when the system returns to its working (S0) state
 
-2.  Implement the [IPowerPolicyCallbackWakeFromS0](https://msdn.microsoft.com/library/windows/hardware/ff556815) interface and the following event callback functions, if you need them for your device:
-    -   [**IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0**](https://msdn.microsoft.com/library/windows/hardware/ff556817), which enables the device hardware (not the bus) to respond to an external wake-up event.
-    -   [**IPowerPolicyCallbackWakeFromS0::OnDisarmWakeFromS0**](https://msdn.microsoft.com/library/windows/hardware/ff556819), which disables the device's ability (not the bus's ability) to respond to an external wake-up event.
-    -   [**IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered**](https://msdn.microsoft.com/library/windows/hardware/ff556822), which informs the driver that the bus detected a wake signal.
+2.  Implement the [IPowerPolicyCallbackWakeFromS0](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-ipowerpolicycallbackwakefroms0) interface and the following event callback functions, if you need them for your device:
+    -   [**IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-ipowerpolicycallbackwakefroms0-onarmwakefroms0), which enables the device hardware (not the bus) to respond to an external wake-up event.
+    -   [**IPowerPolicyCallbackWakeFromS0::OnDisarmWakeFromS0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-ipowerpolicycallbackwakefroms0-ondisarmwakefroms0), which disables the device's ability (not the bus's ability) to respond to an external wake-up event.
+    -   [**IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-ipowerpolicycallbackwakefroms0-onwakefroms0triggered), which informs the driver that the bus detected a wake signal.
 
 
 
@@ -42,10 +42,10 @@ If your device can be powered down when it is idle, the [power policy owner](pow
 The framework considers the device to be idle, and starts counting idle time, when all of the following conditions are met:
 
 -   None of the power-managed queues created for this device instance have any requests waiting in queue or dispatched to the driver. If a request was dispatched to the driver and the driver sent it to an I/O target, the request is still related to the queue and the device will not be considered idle. Requests in non-power–managed queues are not counted toward device idle.
--   If the driver previously called [**IWDFDevice2::StopIdle**](https://msdn.microsoft.com/library/windows/hardware/ff556948), the driver has subsequently called [**IWDFDevice2::ResumeIdle**](https://msdn.microsoft.com/library/windows/hardware/ff556943).
+-   If the driver previously called [**IWDFDevice2::StopIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-stopidle), the driver has subsequently called [**IWDFDevice2::ResumeIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-resumeidle).
 -   If the power policy owner is a bus driver, none of the child devices of the bus driver are in D0.
 
-If your driver (or a user) enables idle power-down for your device, you might have to use the [**IWDFDevice2::StopIdle**](https://msdn.microsoft.com/library/windows/hardware/ff556948) method. If the device is in its working (D0) state, this method prevents the device from idling until the driver calls [**IWDFDevice2::ResumeIdle**](https://msdn.microsoft.com/library/windows/hardware/ff556943). If the device is in a low-power state when the driver calls **IWDFDevice2::StopIdle**, and if the system is in its working (S0) state, the framework requests the bus driver to restore the device to its working (D0) state. For more information about when your driver might have to call **IWDFDevice2::StopIdle**, see the method's reference page.
+If your driver (or a user) enables idle power-down for your device, you might have to use the [**IWDFDevice2::StopIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-stopidle) method. If the device is in its working (D0) state, this method prevents the device from idling until the driver calls [**IWDFDevice2::ResumeIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-resumeidle). If the device is in a low-power state when the driver calls **IWDFDevice2::StopIdle**, and if the system is in its working (S0) state, the framework requests the bus driver to restore the device to its working (D0) state. For more information about when your driver might have to call **IWDFDevice2::StopIdle**, see the method's reference page.
 
 If the device can wake itself from a low-power state, the driver for the device's bus participates in waking the device. The kernel-mode bus driver does whatever is necessary on the bus adapter to enable and disable a device's ability to wake from a low-power state.
 

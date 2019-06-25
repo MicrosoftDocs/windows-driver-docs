@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPROPKEY structure
 
 
-In Windows Vista and later versions of Windows, the DEVPROPKEY structure represents a device property key for a device property in the [unified device property model](https://msdn.microsoft.com/library/windows/hardware/ff553515).
+In Windows Vista and later versions of Windows, the DEVPROPKEY structure represents a device property key for a device property in the [unified device property model](https://docs.microsoft.com/windows-hardware/drivers/install/unified-device-property-model--windows-vista-and-later-).
 
 Syntax
 ------
@@ -54,11 +54,11 @@ typedef ULONG DEVPROPID, *PDEVPROPID;
 Remarks
 -------
 
-The DEVPROPKEY structure is part of the [unified device property model](https://msdn.microsoft.com/library/windows/hardware/ff553515).
+The DEVPROPKEY structure is part of the [unified device property model](https://docs.microsoft.com/windows-hardware/drivers/install/unified-device-property-model--windows-vista-and-later-).
 
 The basic set of system-supplied device property keys are defined in *Devpkey.h*.
 
-The [**DEFINE\_DEVPROPKEY**](https://msdn.microsoft.com/library/windows/hardware/ff541072) macro creates an instance of a DEVPROPKEY structure that represents a device property key.
+The [**DEFINE\_DEVPROPKEY**](https://docs.microsoft.com/windows-hardware/drivers/install/define-devpropkey) macro creates an instance of a DEVPROPKEY structure that represents a device property key.
 
 Requirements
 ------------
@@ -79,7 +79,7 @@ Requirements
 ## See also
 
 
-[**DEFINE\_DEVPROPKEY**](https://msdn.microsoft.com/library/windows/hardware/ff541072)
+[**DEFINE\_DEVPROPKEY**](https://docs.microsoft.com/windows-hardware/drivers/install/define-devpropkey)
 
  
 

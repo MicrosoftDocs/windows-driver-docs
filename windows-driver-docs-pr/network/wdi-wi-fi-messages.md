@@ -9,9 +9,9 @@ ms.localizationpriority: medium
 # WDI message structure
 
 
-All WDI command messages must start with a [**WDI\_MESSAGE\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn926074) structure. The command header is followed by zero or more type-length-value (TLV) structures.
+All WDI command messages must start with a [**WDI\_MESSAGE\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_message_header) structure. The command header is followed by zero or more type-length-value (TLV) structures.
 
-The command message IDs defined for messages sent from the host to the Wi-Fi device are documented in [WDI Task OIDs](https://msdn.microsoft.com/library/windows/hardware/dn926082), [WDI Property OIDs](https://msdn.microsoft.com/library/windows/hardware/dn926079), and [WDI Status Indications](https://msdn.microsoft.com/library/windows/hardware/dn926080).
+The command message IDs defined for messages sent from the host to the Wi-Fi device are documented in [WDI Task OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-task-oids), [WDI Property OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-property-oids), and [WDI Status Indications](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-status-indications).
 
 ## TLVs
 
@@ -33,7 +33,7 @@ There are two types of TLV groupings: statically sized TLV lists, and multi-TLV 
 
 Statically-sized TLV lists contain several statically sized members. They are analogous to standard C-style arrays.
 
-In this example, [**WDI\_TLV\_UNICAST\_ALGORITHM\_LIST**](https://msdn.microsoft.com/library/windows/hardware/dn898073) is defined as a list of WDI\_ALGO\_PAIRS.
+In this example, [**WDI\_TLV\_UNICAST\_ALGORITHM\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-unicast-algorithm-list) is defined as a list of WDI\_ALGO\_PAIRS.
 
 |        |                                    |
 |--------|------------------------------------|
@@ -50,7 +50,7 @@ This usage is specified in the TLV reference topics with array notation.
 
 When the size of a given object is not known ahead of time, multi-TLV groups are used. This usage pattern specifies that N different variably sized TLVs are expected within a given buffer. The number of entries (N) is not known ahead of time, and is inferred by the number of matching TLVs in the given buffer.
 
-In this example, the parent buffer is a [**WDI\_MESSAGE\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn926074), which defines the end of the TLV buffer. Note that [**WDI\_TLV\_BSS\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn926162) may be interspersed between other different TLV types in the parent buffer.
+In this example, the parent buffer is a [**WDI\_MESSAGE\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_message_header), which defines the end of the TLV buffer. Note that [**WDI\_TLV\_BSS\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-bss-entry) may be interspersed between other different TLV types in the parent buffer.
 
 | Offset                         | Field                       | Type                |
 |--------------------------------|-----------------------------|---------------------|
@@ -63,7 +63,7 @@ In this example, the parent buffer is a [**WDI\_MESSAGE\_HEADER**](https://msdn.
 
  
 
-For TLVs that contain other TLVs, the TLV reference topics have a *Multiple TLV instances allowed* column. If this column is checked, the specified TLV is allowed to appear multiple times. For an example of this, see [**WDI\_TLV\_CONNECT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926266).
+For TLVs that contain other TLVs, the TLV reference topics have a *Multiple TLV instances allowed* column. If this column is checked, the specified TLV is allowed to appear multiple times. For an example of this, see [**WDI\_TLV\_CONNECT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-connect-parameters).
 
  
 

@@ -25,7 +25,7 @@ This section includes general concepts to help you understand kernel-mode progra
 
 -   [Driver Programming Techniques](driver-programming-techniques.md) describes techniques that you can use to program Windows kernel-mode device drivers.
 
-    **Note**  For information about programming interfaces that your driver can implement or call, see [Kernel-Mode Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff553217).
+    **Note**  For information about programming interfaces that your driver can implement or call, see [Kernel-Mode Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
      
 

@@ -59,7 +59,7 @@ class MSiSCSI_TCPIPConfig {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_TCPIPConfig**](https://msdn.microsoft.com/library/windows/hardware/ff563149) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_TCPIPConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsicfg/ns-iscsicfg-_msiscsi_tcpipconfig) data structure.
 
  
 

@@ -48,7 +48,7 @@ User-mode clients use this property to get or set a camera's region of interest 
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/jj151592" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/jj151592)"><strong>KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_region_of_interest_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_region_of_interest_s)"><strong>KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -81,7 +81,7 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
-[**KSPROPERTY\_CAMERACONTROL\_REGION\_OF\_INTEREST\_S**](https://msdn.microsoft.com/library/windows/hardware/jj151592)
+[**KSPROPERTY\_CAMERACONTROL\_REGION\_OF\_INTEREST\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_region_of_interest_s)
 
  
 

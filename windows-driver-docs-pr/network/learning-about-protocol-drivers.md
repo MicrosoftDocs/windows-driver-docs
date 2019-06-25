@@ -40,7 +40,7 @@ If you are writing a protocol that provides Winsock support, read:
 
 -   [NDIS Protocol Drivers](ndis-protocol-drivers.md)
 
--   [Transport Helper DLLs for Windows Sockets](https://msdn.microsoft.com/library/windows/hardware/ff565691)
+-   [Transport Helper DLLs for Windows Sockets](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565691(v=vs.85))
 
  
 

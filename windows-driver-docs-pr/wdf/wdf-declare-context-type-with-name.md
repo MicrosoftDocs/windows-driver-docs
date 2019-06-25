@@ -42,7 +42,7 @@ This macro does not return a value.
 Remarks
 -------
 
-For more information about using this macro, see [Framework Object Context Space](https://msdn.microsoft.com/library/windows/hardware/ff542873).
+For more information about using this macro, see [Framework Object Context Space](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-context-space).
 
 Examples
 --------

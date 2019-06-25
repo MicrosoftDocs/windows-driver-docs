@@ -62,7 +62,7 @@ Specifies the lower 16 bits of the DWORD parameter. This parameter is a flag and
 
  
 
-For more information about dynamic format change, see [Dynamic Format Change](https://msdn.microsoft.com/library/windows/hardware/ff536371).
+For more information about dynamic format change, see [Dynamic Format Change](https://docs.microsoft.com/windows-hardware/drivers/audio/dynamic-format-change).
 
 Remarks
 -------

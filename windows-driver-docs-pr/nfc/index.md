@@ -28,8 +28,8 @@ To enable NFC support, Microsoft relies on IHVs to provide device drivers that i
 Use the User-Mode Driver Framework (UMDF) 2.0 to write NFC drivers for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
 
 ## Related topics
- [Getting Started with UMDF](https://msdn.microsoft.com/library/windows/hardware/dn384105)  
- [NFC device driver interface (DDI) reference](https://msdn.microsoft.com/library/windows/hardware/mt715815)    
+ [Getting Started with UMDF](https://docs.microsoft.com/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2)  
+ [NFC device driver interface (DDI) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)    
 
 
 ----------

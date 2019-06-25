@@ -19,15 +19,15 @@ ms.localizationpriority: medium
 
 Clustering of print servers is a new feature of Windows 2000. Any printer port monitor that is intended to run on Windows 2000 (or later) clusters must be modified so it can be called from multiple spooler instances (the node's spooler and a cluster spooler). The following steps must be taken:
 
--   The monitor's [**InitializePrintMonitor**](https://msdn.microsoft.com/library/windows/hardware/ff551600) function must be replaced with an [**InitializePrintMonitor2**](https://msdn.microsoft.com/library/windows/hardware/ff551605) function. The latter function returns a monitor instance handle.
+-   The monitor's [**InitializePrintMonitor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-initializeprintmonitor) function must be replaced with an [**InitializePrintMonitor2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-initializeprintmonitor2) function. The latter function returns a monitor instance handle.
 
--   Globally stored variables must be moved to locally allocated memory, and this memory must be associated with the monitor handle returned by [**InitializePrintMonitor2**](https://msdn.microsoft.com/library/windows/hardware/ff551605).
+-   Globally stored variables must be moved to locally allocated memory, and this memory must be associated with the monitor handle returned by [**InitializePrintMonitor2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-initializeprintmonitor2).
 
--   Calls to the Win32 registry API must be replaced with calls to the spooler's registry functions, addresses of which are passed to the monitor in a [**MONITORREG**](https://msdn.microsoft.com/library/windows/hardware/ff557537) structure. (See [Storing Port Configuration Information](storing-port-configuration-information.md).)
+-   Calls to the Win32 registry API must be replaced with calls to the spooler's registry functions, addresses of which are passed to the monitor in a [**MONITORREG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/ns-winsplp-_monitorreg) structure. (See [Storing Port Configuration Information](storing-port-configuration-information.md).)
 
--   Port monitors must be divided into a port monitor UI DLL and a port monitor server DLL. The UI DLL must communicate with the server DLL by calling the spooler's [**XcvData**](https://msdn.microsoft.com/library/windows/hardware/ff564255) function.
+-   Port monitors must be divided into a port monitor UI DLL and a port monitor server DLL. The UI DLL must communicate with the server DLL by calling the spooler's [**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) function.
 
--   A [**Shutdown**](https://msdn.microsoft.com/library/windows/hardware/ff562646) function must be added.
+-   A [**Shutdown**](https://docs.microsoft.com/previous-versions/ff562646(v=vs.85)) function must be added.
 
 Print monitors that are not converted can be used only in a nonclustered environment. They cannot be used with clustered servers.
 

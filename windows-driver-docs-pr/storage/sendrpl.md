@@ -41,28 +41,28 @@ Parameters
 ----------
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SendRPL\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565503) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SendRPL\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrpl_out) structure.
 
 *PortWWN*   
-A worldwide name for the local port through which the read port list (RPL) command is sent. This information is delivered to the miniport driver in the **PortWWN** member of a [**SendRPL\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565496) structure.
+A worldwide name for the local port through which the read port list (RPL) command is sent. This information is delivered to the miniport driver in the **PortWWN** member of a [**SendRPL\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrpl_in) structure.
 
 *AgentWWN*   
-A worldwide name for the port that is to be queried for a list of ports of type FC\_Port. For a definition of FC\_Port, see the T11 committee's *Fibre Channel HBA API* specification. This information is delivered to the miniport driver in the **AgentWWN** member of a [**SendRPL\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565496) structure.
+A worldwide name for the port that is to be queried for a list of ports of type FC\_Port. For a definition of FC\_Port, see the T11 committee's *Fibre Channel HBA API* specification. This information is delivered to the miniport driver in the **AgentWWN** member of a [**SendRPL\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrpl_in) structure.
 
 *agent\_domain*   
-The domain number for the domain controller that is to be queried for a list of ports of type FC\_Port. For a definition of FC\_Port, see the T11 committee's *Fibre Channel HBA API* specification. This information is delivered to the miniport driver in the **agent\_domain** member of a [**SendRPL\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565496) structure.
+The domain number for the domain controller that is to be queried for a list of ports of type FC\_Port. For a definition of FC\_Port, see the T11 committee's *Fibre Channel HBA API* specification. This information is delivered to the miniport driver in the **agent\_domain** member of a [**SendRPL\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrpl_in) structure.
 
 *portIndex*   
-The port index of the first port in the list of ports of type FC\_Port to be returned. This information is delivered to the miniport driver in the **portIndex** member of a [**SendRPL\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565496) structure.
+The port index of the first port in the list of ports of type FC\_Port to be returned. This information is delivered to the miniport driver in the **portIndex** member of a [**SendRPL\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrpl_in) structure.
 
 *TotalRspBufferSize*   
-The size in bytes of the results of the read port list (RPL) command. The miniport driver returns this information in the **TotalRspBufferSize** member of a [**SendRPL\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565503) structure.
+The size in bytes of the results of the read port list (RPL) command. The miniport driver returns this information in the **TotalRspBufferSize** member of a [**SendRPL\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrpl_out) structure.
 
 *ActualRspBufferSize*   
-The size in bytes of the data that was actually retrieved. The miniport driver returns this information in the **ActualRspBufferSize** member of a [**SendRPL\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565503) structure.
+The size in bytes of the data that was actually retrieved. The miniport driver returns this information in the **ActualRspBufferSize** member of a [**SendRPL\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrpl_out) structure.
 
 *RspBuffer*   
-The results of the read port list (RPL) command. The miniport driver returns this information in the **RspBuffer** member of a [**SendRPL\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565503) structure.
+The results of the read port list (RPL) command. The miniport driver returns this information in the **RspBuffer** member of a [**SendRPL\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrpl_out) structure.
 
 Return value
 ------------
@@ -103,9 +103,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SendRPL\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565496)
+[**SendRPL\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrpl_in)
 
-[**SendRPL\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565503)
+[**SendRPL\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sendrpl_out)
 
  
 

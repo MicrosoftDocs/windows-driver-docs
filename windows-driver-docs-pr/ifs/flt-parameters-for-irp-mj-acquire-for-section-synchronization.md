@@ -62,7 +62,7 @@ IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION is a file system (FSFilter) callback 
 
 If the enumerated value of the **SyncType** member is set to **SyncTypeOther**, a file system minifilter or legacy filter driver cannot fail this operation. If **SyncType** is set to **SyncTypeCreateSection**, a file system minifilter or legacy filter driver is allowed to fail with a STATUS_INSUFFICIENT_RESOURCES error if there is not enough memory to create the section.
 
-For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff547172).
+For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks).
 
 ## Requirements
 

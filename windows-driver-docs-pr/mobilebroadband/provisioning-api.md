@@ -13,7 +13,7 @@ By using the Provisioning API, you can provision the Windows-based computer with
 
 You can also call the Provisioning API at any time to update the information that is provided to Windows. This is usually done when the mobile broadband app retrieves updated cost and plan status from the operator’s server, but it can also be done when Wi-Fi hotspot networks or the mobile broadband network configuration must be updated.
 
-For more information about the Provisioning API, see [**ProvisioningAgent class**](https://msdn.microsoft.com/library/windows/apps/br207397).
+For more information about the Provisioning API, see [**ProvisioningAgent class**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent).
 
 ## <span id="related_topics"></span>Related topics
 

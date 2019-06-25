@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # INF AddPowerSetting Directive
 
 
-An **AddPowerSetting** directive references one or more sections that are used to modify or create power setting information. Each *add-power-setting-section* defines a power setting, the allowed values for the power setting, the friendly name of the power setting, and the description of the power setting. An *add-power-setting-section* also specifies the default value for each power scheme personality. For more information about power settings and power scheme personalities, see [Managing Device Performance States](https://msdn.microsoft.com/library/windows/hardware/ff554353).
+An **AddPowerSetting** directive references one or more sections that are used to modify or create power setting information. Each *add-power-setting-section* defines a power setting, the allowed values for the power setting, the friendly name of the power setting, and the description of the power setting. An *add-power-setting-section* also specifies the default value for each power scheme personality. For more information about power settings and power scheme personalities, see [Managing Device Performance States](https://docs.microsoft.com/windows-hardware/drivers/kernel/managing-device-performance-states).
 
 ```ini
 [DDInstall] | 

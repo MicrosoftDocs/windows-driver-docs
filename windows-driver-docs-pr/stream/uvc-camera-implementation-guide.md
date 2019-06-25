@@ -331,7 +331,7 @@ In Windows 10, version 1703, if a device opts in to use PDMFT then all features 
 
 ## BOS and MS OS 2.0 descriptor
 
-UVC compliant camera can specify Windows specific device configuration values in a platform capability BOS descriptor in its firmware. Please refer the documentation on [MS OS 2.0 descriptor](https://msdn.microsoft.com/library/windows/hardware/dn385747) to understand how to specify a valid BOS descriptor that conveys the device configuration to the OS. When a valid MS OS 2.0 descriptor is specified in the firmware, the USB stack copies the configuration values into the device HW registry key show below:
+UVC compliant camera can specify Windows specific device configuration values in a platform capability BOS descriptor in its firmware. Please refer the documentation on [MS OS 2.0 descriptor](https://docs.microsoft.com/previous-versions/dn385747(v=msdn.10)) to understand how to specify a valid BOS descriptor that conveys the device configuration to the OS. When a valid MS OS 2.0 descriptor is specified in the firmware, the USB stack copies the configuration values into the device HW registry key show below:
 
 ```Registry
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\<Device ID>\<Instance ID>\Device Parameters

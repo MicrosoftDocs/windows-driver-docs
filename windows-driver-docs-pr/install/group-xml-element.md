@@ -16,9 +16,9 @@ ms.date: 10/17/2018
 # group XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
 
-The **group** XML element specifies an ordered collection of [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff544840) that DPInst handles as a driver package group.
+The **group** XML element specifies an ordered collection of [driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) that DPInst handles as a driver package group.
 
 ### Element Tag
 
@@ -63,7 +63,7 @@ None
 
 ### <a href="" id="comments"></a>Remarks
 
-The following code example demonstrates a **group** element that includes two [**package XML elements**](package-xml-element.md) and an [**installAllOrNone XML element**](installallornone-xml-element.md). The example **group** element configures DPInst to handle the "Abc" [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) and the "Def" driver package as a group. The **installAllOrNone** XML element configures DPInst to install the driver packages in the driver package group only if both drivers can be installed.
+The following code example demonstrates a **group** element that includes two [**package XML elements**](package-xml-element.md) and an [**installAllOrNone XML element**](installallornone-xml-element.md). The example **group** element configures DPInst to handle the "Abc" [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) and the "Def" driver package as a group. The **installAllOrNone** XML element configures DPInst to install the driver packages in the driver package group only if both drivers can be installed.
 
 ```cpp
 <dpinst>

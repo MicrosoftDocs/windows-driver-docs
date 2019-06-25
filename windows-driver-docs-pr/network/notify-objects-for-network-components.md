@@ -35,7 +35,7 @@ The following sections describe notify objects and explain how to develop them:
 
 [Creating a Notify Object](creating-a-notify-object.md)
 
-For reference information for the interface methods that support notify objects, see [Notify Objects](https://msdn.microsoft.com/library/windows/hardware/ff559161).
+For reference information for the interface methods that support notify objects, see [Notify Objects](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559161(v=vs.85)).
 
  
 

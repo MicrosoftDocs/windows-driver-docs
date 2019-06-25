@@ -19,7 +19,7 @@ Windows device installation uses [digital signatures](digital-signatures.md) to 
 
 All drivers for Windows 10 (starting with version 1507, Threshold 1) signed by the Hardware Dev Center are SHA2 signed.  For details specific to operating system versions, see [Signing requirements by version](kernel-mode-code-signing-policy--windows-vista-and-later-.md#signing-requirements-by-version).
 
-Kernel-mode driver binaries embed signed with dual (SHA1 and SHA2) certificates from a third party certificate vendor for operating systems earlier than Windows 10 may not load, or may cause a system crash on Windows 10. To fix this problem, install [KB 3081436](https://support.microsoft.com/kb/3081436).
+Kernel-mode driver binaries embed signed with dual (SHA1 and SHA2) certificates from a third party certificate vendor for operating systems earlier than Windows 10 may not load, or may cause a system crash on Windows 10. To fix this problem, install [KB 3081436](https://support.microsoft.com/help/3081436/cumulative-update-for-windows-10-august-11-2015).
 
 ## In this section
 
@@ -32,7 +32,7 @@ Kernel-mode driver binaries embed signed with dual (SHA1 and SHA2) certificates 
 -   [Troubleshooting Install and Load Problems with Signed Driver Packages](troubleshooting-install-and-load-problems-with-signed-driver-packages.md)
 -   [Microsoft Security Advisory 2880823](https://docs.microsoft.com/security-updates/SecurityAdvisories/2016/2880823)
 
-For general information about driver signing on Windows Vista and later versions of Windows, see the white paper [Digital Signatures for Kernel Modules on Systems Running Windows Vista](https://msdn.microsoft.com/library/bb530195).
+For general information about driver signing on Windows Vista and later versions of Windows, see the white paper [Digital Signatures for Kernel Modules on Systems Running Windows Vista](https://docs.microsoft.com/previous-versions/dotnet/articles/bb530195(v=msdn.10)).
 
 
  

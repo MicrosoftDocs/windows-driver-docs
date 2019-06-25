@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_patching_a_dma_buffer_gg"></span><span id="DDK_PATCHING_A_DMA_BUFFER_GG"></span>
 
 
-After the video memory manager is informed where every memory resource for the DMA buffer is located, the GPU scheduler calls the display miniport driver's [**DxgkDdiPatch**](https://msdn.microsoft.com/library/windows/hardware/ff559737) function to patch the resource with a physical address (that is, assign a physical address to the resource).
+After the video memory manager is informed where every memory resource for the DMA buffer is located, the GPU scheduler calls the display miniport driver's [**DxgkDdiPatch**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_patch) function to patch the resource with a physical address (that is, assign a physical address to the resource).
 
  
 

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Crossbar Properties
 
 
-The [PROPSETID\_VIDCAP\_CROSSBAR](https://msdn.microsoft.com/library/windows/hardware/ff567804) property set contains properties related to the routing of data from video input pins (with corresponding audio, if present) to output pins. The following table describes the properties that are part of the PROPSETID\_VIDCAP\_CROSSBAR property set.
+The [PROPSETID\_VIDCAP\_CROSSBAR](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-crossbar) property set contains properties related to the routing of data from video input pins (with corresponding audio, if present) to output pins. The following table describes the properties that are part of the PROPSETID\_VIDCAP\_CROSSBAR property set.
 
 <table>
 <colgroup>
@@ -27,19 +27,19 @@ The [PROPSETID\_VIDCAP\_CROSSBAR](https://msdn.microsoft.com/library/windows/har
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565117" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_CAN_ROUTE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565117)"><strong>KSPROPERTY_CROSSBAR_CAN_ROUTE</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-crossbar-can-route" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_CAN_ROUTE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-crossbar-can-route)"><strong>KSPROPERTY_CROSSBAR_CAN_ROUTE</strong></a></p></td>
 <td><p>Returns information on whether a specific routing is possible.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565118" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_CAPS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565118)"><strong>KSPROPERTY_CROSSBAR_CAPS</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-crossbar-caps" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_CAPS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-crossbar-caps)"><strong>KSPROPERTY_CROSSBAR_CAPS</strong></a></p></td>
 <td><p>Returns the capabilities of the crossbar, including the number of input pins and the number of output pins.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565121" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_PININFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565121)"><strong>KSPROPERTY_CROSSBAR_PININFO</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-crossbar-pininfo" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_PININFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-crossbar-pininfo)"><strong>KSPROPERTY_CROSSBAR_PININFO</strong></a></p></td>
 <td><p>Returns the pin information, such as the direction of dataflow, pin medium GUIDs, and pin type.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565126" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_ROUTE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565126)"><strong>KSPROPERTY_CROSSBAR_ROUTE</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-crossbar-route" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_ROUTE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-crossbar-route)"><strong>KSPROPERTY_CROSSBAR_ROUTE</strong></a></p></td>
 <td><p>Controls a specific routing, including which input pin to route to which output pin.</p></td>
 </tr>
 </tbody>

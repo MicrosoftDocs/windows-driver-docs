@@ -31,9 +31,9 @@ Microsoft provides a driver library that contains a set of routines that standar
 
 -   To synchronize access to the driver
 
-The [WDM Smart Card Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff549046) section, lists the driver library routines and identifies which routine performs each action.
+The [WDM Smart Card Driver Routines](https://docs.microsoft.com/previous-versions/ff549046(v=vs.85)) section, lists the driver library routines and identifies which routine performs each action.
 
-The driver library processes most of the IOCTL requests that the resource manager sends to the reader driver. The [Smart Card Driver IOCTLs](https://msdn.microsoft.com/library/windows/hardware/ff548988) section, lists the IOCTLs that the driver library processes on behalf of the reader driver.
+The driver library processes most of the IOCTL requests that the resource manager sends to the reader driver. The [Smart Card Driver IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) section, lists the IOCTLs that the driver library processes on behalf of the reader driver.
 
 The following files are used by the smart card driver library and by drivers that call smart card driver library routines.
 

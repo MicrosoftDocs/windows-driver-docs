@@ -35,7 +35,7 @@ For related information about the Print Ticket and Print Capabilities technologi
 
 [Print Ticket Support in the XPSDrv Render Module](print-ticket-support-in-the-xpsdrv-render-module.md)
 
-[Methods for Print Ticket Providers and Consumers](https://msdn.microsoft.com/library/windows/hardware/ff556547)
+[Methods for Print Ticket Providers and Consumers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index)
 
  
 

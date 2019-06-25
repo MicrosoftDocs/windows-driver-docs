@@ -38,7 +38,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_EXTRA\_ASSOCIATION\_REQUEST\_IES**](wdi-tlv-extra-association-request-ies.md) |                                | X        | The IE to be included in the (re)association request frame for this BSSID. If present, this should be included in addition to the common IE.                  |
 | [**WDI\_TLV\_FT\_INITIAL\_ASSOC\_PARAMETERS**](wdi-tlv-ft-initial-assoc-parameters.md)     |                                | X        | The initial Mobility Domain association parameters.                                                                                                           |
 | [**WDI\_TLV\_FT\_REASSOC\_PARAMETERS**](wdi-tlv-ft-reassoc-parameters.md)                  |                                | X        | The fast transition parameters (MDIE, R0KH-ID, PMKR0Name, SNonce). This is only present for Fast Transition (not during initial mobility domain association). |
-| [**WDI\_TLV\_BSS\_SELECTION\_PARAMETERS**](wdi-tlv-bss-selection-parameters.md)            |                                | X        | [**WDI\_BSS\_SELECTION\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/mt297629) that provide information used by the host for BSS selection.                               |
+| [**WDI\_TLV\_BSS\_SELECTION\_PARAMETERS**](wdi-tlv-bss-selection-parameters.md)            |                                | X        | [**WDI\_BSS\_SELECTION\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_bss_selection_flags) that provide information used by the host for BSS selection.                               |
 
  
 

@@ -30,7 +30,7 @@ The V\_NET\_ROOT structure provides a mechanism for mapping into a share (for ex
 \;m:\server\share\d1\d2
 ```
 
-The format of the name depends on whether there is a local device ("X:", for example) associated with this V\_NET\_ROOT structure. In the case of a local drive mapping (d1\\d2, for example), the local drive mapping gets prefixed onto each [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) that is opened on this V\_NET\_ROOT structure.
+The format of the name depends on whether there is a local device ("X:", for example) associated with this V\_NET\_ROOT structure. In the case of a local drive mapping (d1\\d2, for example), the local drive mapping gets prefixed onto each [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) that is opened on this V\_NET\_ROOT structure.
 
 V\_NET\_ROOT structures are also used to supply alternate credentials. The purpose for this kind of a V\_NET\_ROOT structure is to propagate the alternate credentials into the NET\_ROOT as the default. For this to work, there must be no other references.
 

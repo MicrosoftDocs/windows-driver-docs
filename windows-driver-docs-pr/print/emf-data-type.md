@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-Enhanced Metafile (EMF) data consists of instructions to call GDI functions. The print processor must call the GDI functions to render printable images. The GDI functions make calls to the printer driver's [printer graphics DLL](printer-graphics-dll.md), which renders the image and sends it to the spooler as RAW data (by calling [**EngWritePrinter**](https://msdn.microsoft.com/library/windows/hardware/ff565467)).
+Enhanced Metafile (EMF) data consists of instructions to call GDI functions. The print processor must call the GDI functions to render printable images. The GDI functions make calls to the printer driver's [printer graphics DLL](printer-graphics-dll.md), which renders the image and sends it to the spooler as RAW data (by calling [**EngWritePrinter**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engwriteprinter)).
 
 NT-based operating system clients send EMF data to NT-based operating system print servers. EMF data is device independent and can be sent to a server more quickly than RAW data. A print job is also spooled as EMF data when the requesting application is local to the server, allowing a quick return to the application while the EMF data is subsequently rendered by a background spooler thread.
 

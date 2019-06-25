@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 A legacy file system filter driver can record context information for a file by associating a [**FSRTL\_PER\_FILE\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff547352) object with a user-defined context information structure.
 
 <div class="alert">
-<strong>Note</strong>   Not all file systems support per-file context objects. To find out whether a file is associated with a file system that supports them, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547274" data-raw-source="[**FsRtlSupportsPerFileContexts**](https://msdn.microsoft.com/library/windows/hardware/ff547274)"><strong>FsRtlSupportsPerFileContexts</strong></a> macro.
+<strong>Note</strong>   Not all file systems support per-file context objects. To find out whether a file is associated with a file system that supports them, use the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-fsrtlsupportsperfilecontexts" data-raw-source="[**FsRtlSupportsPerFileContexts**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-fsrtlsupportsperfilecontexts)"><strong>FsRtlSupportsPerFileContexts</strong></a> macro.
 </div>
  
 
-Use the [**FsRtlInitPerFileContext**](https://msdn.microsoft.com/library/windows/hardware/ff546161) macro to initialize the FSRTL\_PER\_FILE\_CONTEXT object. Then use the [**FsRtlInsertPerFileContext**](https://msdn.microsoft.com/library/windows/hardware/ff546184) routine to associate the file with an arbitrary context object.
+Use the [**FsRtlInitPerFileContext**](https://docs.microsoft.com/previous-versions/ff546161(v=vs.85)) macro to initialize the FSRTL\_PER\_FILE\_CONTEXT object. Then use the [**FsRtlInsertPerFileContext**](https://msdn.microsoft.com/library/windows/hardware/ff546184) routine to associate the file with an arbitrary context object.
 
-Use the [**FsRtlGetPerFileContextPointer**](https://msdn.microsoft.com/library/windows/hardware/ff546051) macro to get a pointer that is used by the file system runtime library (FSRTL) package to track file contexts.
+Use the [**FsRtlGetPerFileContextPointer**](https://docs.microsoft.com/previous-versions/ff546051(v=vs.85)) macro to get a pointer that is used by the file system runtime library (FSRTL) package to track file contexts.
 
 A filter driver can use the [**FsRtlLookupPerFileContext**](https://msdn.microsoft.com/library/windows/hardware/ff546930) routine to find a file context object that is associated with a file. The routine can specify the owner of a structure or an instance of a structure to narrow the search.
 
@@ -34,7 +34,7 @@ The filter driver can remove a context object by using [**FsRtlRemovePerFileCont
 </div>
  
 
-File systems call [**FsRtlTeardownPerFileContexts**](https://msdn.microsoft.com/library/windows/hardware/ff547290) to free any filter contexts that are still associated with a per-file control block structure (FCB) that they are tearing down. The **FsRtlTeardownPerFileContexts** routine calls the [**FreeCallback**](https://msdn.microsoft.com/library/windows/hardware/ff551123) routine that is specified in the FSRTL\_PER\_FILE\_CONTEXT object for each filter context.
+File systems call [**FsRtlTeardownPerFileContexts**](https://msdn.microsoft.com/library/windows/hardware/ff547290) to free any filter contexts that are still associated with a per-file control block structure (FCB) that they are tearing down. The **FsRtlTeardownPerFileContexts** routine calls the [**FreeCallback**](https://docs.microsoft.com/windows-hardware/drivers/ifs/pfree-function) routine that is specified in the FSRTL\_PER\_FILE\_CONTEXT object for each filter context.
 
  
 

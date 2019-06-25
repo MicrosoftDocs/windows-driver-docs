@@ -9,13 +9,13 @@ ms.localizationpriority: medium
 # Writing an Information Log Entry
 
 
-The following example shows how an application might typically call [**SetupWriteTextLog**](https://msdn.microsoft.com/library/windows/hardware/ff552218) to write an information entry in a [SetupAPI text log](setupapi-text-logs.md) that is not a warning message or an error message.
+The following example shows how an application might typically call [**SetupWriteTextLog**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog) to write an information entry in a [SetupAPI text log](setupapi-text-logs.md) that is not a warning message or an error message.
 
 For information about calling **SetupWriteTextLog** to log an error message, see [Calling SetupWriteTextLog to Log an Error or Warning Entry](writing-an-error-or-warning-log-entry.md).
 
-The application calls [**SetupWriteTextLog**](https://msdn.microsoft.com/library/windows/hardware/ff552218), supplying the following parameter values:
+The application calls [**SetupWriteTextLog**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog), supplying the following parameter values:
 
--   *LogToken* is set to a log token value that either was obtained by calling [**SetupGetThreadLogToken**](https://msdn.microsoft.com/library/windows/hardware/ff552211) or is one of the system-defined log token values that are described in the [Log Tokens](log-tokens.md).
+-   *LogToken* is set to a log token value that either was obtained by calling [**SetupGetThreadLogToken**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupgetthreadlogtoken) or is one of the system-defined log token values that are described in the [Log Tokens](log-tokens.md).
 
 -   *Category* is set to TXTLOG_VENDOR, which indicates that the log entry is made by a vendor-supplied application. Event categories are described in [Enabling Event Categories for a Text Log](enabling-event-categories-for-a-text-log.md).
 

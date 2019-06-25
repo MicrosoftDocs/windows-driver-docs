@@ -89,7 +89,7 @@ In Windows 8.1, the user default PrintTicket is merged with the Job-level PrintT
 #define XPS_FP_JOB_LEVEL_PRINTTICKET    "JobPrintTicket"
 ```
 
-During InitializeFilter, the MTI Filters will add an implementation of [IPrintReadStreamFactory](https://msdn.microsoft.com/library/windows/hardware/ff554338) into the property bag. This interface’s one method, **GetStream**, will block until the PrintTicket stream is available. This provides a means of synchronizing access to the property.
+During InitializeFilter, the MTI Filters will add an implementation of [IPrintReadStreamFactory](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintreadstreamfactory) into the property bag. This interface’s one method, **GetStream**, will block until the PrintTicket stream is available. This provides a means of synchronizing access to the property.
 
 **Important**  : If **GetStream** is called from InitializeFilter, it WILL cause a deadlock.
 

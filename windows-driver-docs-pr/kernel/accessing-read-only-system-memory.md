@@ -17,7 +17,7 @@ The Windows [memory manager](windows-kernel-mode-memory-manager.md) enforces rea
 
 Read-only memory has always been protected in user mode. However, in Windows NT 4.0 and earlier versions, read-only memory was not protected in kernel mode.
 
-If a Windows kernel-mode driver or application tries to write to a read-only memory segment, the system issues a bug check. For more information, see [**Bug Check 0xBE: ATTEMPTED\_WRITE\_TO\_READONLY\_MEMORY**](https://msdn.microsoft.com/library/windows/hardware/ff560161).
+If a Windows kernel-mode driver or application tries to write to a read-only memory segment, the system issues a bug check. For more information, see [**Bug Check 0xBE: ATTEMPTED\_WRITE\_TO\_READONLY\_MEMORY**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xbe--attempted-write-to-readonly-memory).
 
 ### Intercepting System Calls
 

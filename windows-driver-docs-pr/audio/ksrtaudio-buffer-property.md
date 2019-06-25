@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # KSRTAUDIO\_BUFFER\_PROPERTY structure
 
 
-The KSRTAUDIO\_BUFFER\_PROPERTY structure appends a buffer base address and requested buffer size to a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. This structure is used by the client to request allocation of the audio buffer via [**KSPROPERTY\_RTAUDIO\_BUFFER**](ksproperty-rtaudio-buffer.md).
+The KSRTAUDIO\_BUFFER\_PROPERTY structure appends a buffer base address and requested buffer size to a [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)) structure. This structure is used by the client to request allocation of the audio buffer via [**KSPROPERTY\_RTAUDIO\_BUFFER**](ksproperty-rtaudio-buffer.md).
 
 Syntax
 ------
@@ -41,7 +41,7 @@ A KSPROPERTY structure that the client initializes appropriately prior to callin
 Specifies the desired buffer base address. Unless the client specifies a base address, this parameter is set to **NULL**.
 
 **RequestedBufferSize**  
-Specifies the desired buffer size in bytes. The driver returns the actual size of the allocated buffer in the [**KSRTAUDIO\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff537493) structure that it returns.
+Specifies the desired buffer size in bytes. The driver returns the actual size of the allocated buffer in the [**KSRTAUDIO\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_buffer) structure that it returns.
 
 Remarks
 -------

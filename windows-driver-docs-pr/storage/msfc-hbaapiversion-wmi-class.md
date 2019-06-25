@@ -24,7 +24,7 @@ class MSFC_HbaApiVersion
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MSFC\_HbaApiVersion**](https://msdn.microsoft.com/library/windows/hardware/ff562507)
+[**MSFC\_HbaApiVersion**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff562507(v=vs.85))
 
 There are no methods associated with this WMI class.
 

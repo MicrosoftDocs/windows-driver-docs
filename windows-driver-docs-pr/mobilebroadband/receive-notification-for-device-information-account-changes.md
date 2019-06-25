@@ -9,17 +9,17 @@ ms.localizationpriority: medium
 # Receive notification for device information account changes
 
 
-To receive a notification for device information account changes, use the [**AccountUpdated**](https://msdn.microsoft.com/library/windows/apps/hh770601) event of [**MobileBroadbandAccountWatcher**](https://msdn.microsoft.com/library/windows/apps/hh770597) as described here:
+To receive a notification for device information account changes, use the [**AccountUpdated**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_AccountUpdated) event of [**MobileBroadbandAccountWatcher**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher) as described here:
 
-1.  Instantiate a [**MobileBroadbandAccountWatcher**](https://msdn.microsoft.com/library/windows/apps/hh770597) object.
+1.  Instantiate a [**MobileBroadbandAccountWatcher**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher) object.
 
-2.  Add an [**AccountUpdated**](https://msdn.microsoft.com/library/windows/apps/hh770601) event handler.
+2.  Add an [**AccountUpdated**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_AccountUpdated) event handler.
 
-3.  Invoke [**Start**](https://msdn.microsoft.com/library/windows/apps/hh770604) on the watcher.
+3.  Invoke [**Start**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_Start) on the watcher.
 
-4.  Query the [**HasDeviceInformationChanged**](https://msdn.microsoft.com/library/windows/apps/hh770594) property of the [**MobileBroadbandAccountUpdatedEventArgs**](https://msdn.microsoft.com/library/windows/apps/hh770593) object in the [**AccountUpdated**](https://msdn.microsoft.com/library/windows/apps/hh770601) event handler.
+4.  Query the [**HasDeviceInformationChanged**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountUpdatedEventArgs#Windows_Networking_NetworkOperators_MobileBroadbandAccountUpdatedEventArgs_HasDeviceInformationChanged) property of the [**MobileBroadbandAccountUpdatedEventArgs**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountUpdatedEventArgs) object in the [**AccountUpdated**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher#Windows_Networking_NetworkOperators_MobileBroadbandAccountWatcher_AccountUpdated) event handler.
 
-5.  If the device information has changed, query the account [**CurrentDeviceInformation.TelephoneNumbers**](https://msdn.microsoft.com/library/windows/apps/br207373) property for the telephone number.
+5.  If the device information has changed, query the account [**CurrentDeviceInformation.TelephoneNumbers**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandDeviceInformation#Windows_Networking_NetworkOperators_MobileBroadbandDeviceInformation_TelephoneNumbers) property for the telephone number.
 
     For example:
 

@@ -15,10 +15,10 @@ ms.date: 10/17/2018
 
 An application or driver can set the state of buttons in a properly-initialized HID report by calling one of the following HID support routines:
 
-<a href="" id="hidp-setbuttons--or-hidp-setusages-"></a>[**HidP\_SetButtons**](https://msdn.microsoft.com/library/windows/hardware/ff539779) (or [**HidP\_SetUsages**](https://msdn.microsoft.com/library/windows/hardware/ff539792))  
+<a href="" id="hidp-setbuttons--or-hidp-setusages-"></a>[**HidP\_SetButtons**](https://docs.microsoft.com/windows-hardware/drivers/hid/hdpi-h-macros) (or [**HidP\_SetUsages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/nf-hidpi-hidp_setusages))  
 Sets a specified set of buttons to ON (1).
 
-<a href="" id="hidp-unsetbuttons--or-hidp-unsetusages-"></a>[**HidP\_UnsetButtons**](https://msdn.microsoft.com/library/windows/hardware/ff539812) (or [**HidP\_UnsetUsages**](https://msdn.microsoft.com/library/windows/hardware/ff539819))  
+<a href="" id="hidp-unsetbuttons--or-hidp-unsetusages-"></a>[**HidP\_UnsetButtons**](https://docs.microsoft.com/windows-hardware/drivers/hid/hdpi-h-macros) (or [**HidP\_UnsetUsages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/nf-hidpi-hidp_unsetusages))  
 Sets a specified set of buttons to OFF (zero).
 
 <a href="" id="see-also-initializing-hid-reports-"></a>See also [Initializing HID Reports](initializing-hid-reports.md).  

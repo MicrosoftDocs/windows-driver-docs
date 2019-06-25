@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) of 64-bit versions of Windows, you can sign a kernel-mode driver by using a Software Publisher Certificate (SPC). The SPC is obtained from a third-party certificate authority (CA) that is authorized by Microsoft to issue such certificates. Signatures generated with this type of SPC also comply with the [PnP driver signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md) for 64-bit and 32-bit versions of Windows.
 
-**Note**  Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 kernel-mode drivers must be signed by the Windows Hardware Dev Center Dashboard and the Windows Hardware Dev Center Dashboard requires an EV certificate. For more info about these changes, see [Driver Signing Changes in Windows 10](http://blogs.msdn.com/b/windows_hardware_certification/archive/2015/04/01/driver-signing-changes-in-windows-10.aspx).
+**Note**  Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 kernel-mode drivers must be signed by the Windows Hardware Dev Center Dashboard and the Windows Hardware Dev Center Dashboard requires an EV certificate. For more info about these changes, see [Driver Signing Changes in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/04/01/driver-signing-changes-in-windows-10/).
 
  
 
@@ -46,7 +46,7 @@ In this case, the pair of files (a *.pvk* and an *.spc,* or a *.pvk* and a *.cer
 
 To create a .*pfx* file from the pair of files issued by the CA, follow these instructions:
 
--   To convert a *.pvk* file and an *.spc* file to a *.pfx* file, use the following [**Pvk2Pfx**](https://msdn.microsoft.com/library/windows/hardware/ff550672) command at a command prompt:
+-   To convert a *.pvk* file and an *.spc* file to a *.pfx* file, use the following [**Pvk2Pfx**](https://docs.microsoft.com/windows-hardware/drivers/devtest/pvk2pfx) command at a command prompt:
 
     ```cpp
     Pvk2Pfx -pvk mypvkfile.pvk -pi mypvkpassword -spc myspcfile.spc -pfx mypfxfile.pfx -po pfxpassword -f
@@ -58,7 +58,7 @@ To create a .*pfx* file from the pair of files issued by the CA, follow these in
     Pvk2Pfx -pvk mypvkfile.pvk -pi mypvkpassword -spc mycerfile.cer -pfx mypfxfile.pfx -po pfxpassword -f
     ```
 
-The following describes the parameters that are used in the [**Pvk2Pfx**](https://msdn.microsoft.com/library/windows/hardware/ff550672) command:
+The following describes the parameters that are used in the [**Pvk2Pfx**](https://docs.microsoft.com/windows-hardware/drivers/devtest/pvk2pfx) command:
 
 -   The **-pvk**  *mypvkfile.pvk* parameter specifies a *.pvk* file.
 

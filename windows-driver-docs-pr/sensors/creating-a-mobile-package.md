@@ -73,12 +73,12 @@ After creating the *adxl345acc.pkg.xml* file as shown in the preceding steps, yo
 If you installed the WDK to the default location, then you can find **pkggen.exe** in the following location:
 
 *%SystemRoot%\\Program Files (x86)\\Windows Kits\\10\\Tools\\bin\\i386*
-Refer to [Run the pkggen.exe tool](https://msdn.microsoft.com/windows/hardware/dn756642.aspx#run-pkg), for instructions on how to create a package for your mobile device. And see [Creating mobile packages](https://msdn.microsoft.com/windows/hardware/dn756642.aspx) for a more comprehensive introduction.
+Refer to [Run the pkggen.exe tool](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)#run-pkg), for instructions on how to create a package for your mobile device. And see [Creating mobile packages](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)) for a more comprehensive introduction.
 
 ## Related topics
-[Creating mobile packages](https://msdn.microsoft.com/windows/hardware/dn756642.aspx)
+[Creating mobile packages](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85))
 [Review the INX file](review-and-revise-the-inf-file.md)
-[Run the pkggen.exe tool](https://msdn.microsoft.com/windows/hardware/dn756642.aspx#run-pkg)
+[Run the pkggen.exe tool](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)#run-pkg)
 
 
 

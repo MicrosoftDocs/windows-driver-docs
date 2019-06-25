@@ -331,7 +331,7 @@ kd> dx -r1 @$curprocess.Threads
 
 ## User Defined Variables - Anonymous Types
 
-This creation of dynamic objects is done using the C# anonymous type syntax (new { ... }). For more information see about anonymous types, see [Anonymous Types (C# Programming Guide)](https://msdn.microsoft.com/library/bb397696.aspx). This example create an anonymous type with an integer and string value.
+This creation of dynamic objects is done using the C# anonymous type syntax (new { ... }). For more information see about anonymous types, see [Anonymous Types (C# Programming Guide)](https://docs.microsoft.com/dotnet/articles/csharp/programming-guide/classes-and-structs/anonymous-types). This example create an anonymous type with an integer and string value.
 
 ```dbgcmd
 kd> dx -r1 new { MyInt = 42, MyString = "Hello World" }
@@ -837,7 +837,7 @@ This table summarizes the use of the dx command with common device capability fl
 </table>
 
 
-For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095).
+For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities).
 
 
 ## <span id="see_also"></span>See also

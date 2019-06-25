@@ -64,7 +64,7 @@ The instructions in this document are based on the following assumptions:
 Go to https://aka.ms/usbtrace for instructions and to download a script for capturing ETW traces from the USB drivers.
 
 ## Related topics
-[USB](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
 [Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
 
 

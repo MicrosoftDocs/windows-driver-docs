@@ -30,9 +30,9 @@ All WDM drivers must do the following:
 
 ### Should You Write a WDM Driver?
 
-If you are writing a new driver, consider using the [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/dn265580) (KMDF). KMDF provides interfaces that are simpler to use than WDM interfaces.
+If you are writing a new driver, consider using the [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/design-guide) (KMDF). KMDF provides interfaces that are simpler to use than WDM interfaces.
 
-Do not write a WDM driver if the driver will be inserted into a stack of non-WDM drivers. Please read the documentation for device type-specific Microsoft-supplied drivers to determine how new drivers must interface with Microsoft-supplied drivers. For more device type-specific information, see [Device and Driver Technologies](https://msdn.microsoft.com/library/windows/hardware/ff557557).)
+Do not write a WDM driver if the driver will be inserted into a stack of non-WDM drivers. Please read the documentation for device type-specific Microsoft-supplied drivers to determine how new drivers must interface with Microsoft-supplied drivers. For more device type-specific information, see [Device and Driver Technologies](https://docs.microsoft.com/windows-hardware/drivers/).)
 
 
 

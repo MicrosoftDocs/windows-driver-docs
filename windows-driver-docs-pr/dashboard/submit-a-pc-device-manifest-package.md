@@ -909,7 +909,7 @@ The following XML document uses the PcMetadataSubmission XML schema to specify t
 ## <span id="creating_localeinfo.xml"></span><span id="CREATING_LOCALEINFO.XML"></span>Creating LocaleInfo.xml
 
 
-For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](https://msdn.microsoft.com/library/windows/hardware/hh801885.aspx).
+For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
 
  
 

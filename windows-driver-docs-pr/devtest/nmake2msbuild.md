@@ -107,7 +107,7 @@ nmake2msbuild.exe  .\myDriver\sources
 
 [Converting a WDK sources file to a Visual Studio project](converting-a-wdk-sources-file-to-a-visual-studio-project.md)
 
-[Creating a Driver From Existing Source Files](https://msdn.microsoft.com/windows-drivers/develop/creating_a_driver_from_existing_source_files)
+[Creating a Driver From Existing Source Files](https://docs.microsoft.com/windows-hardware/drivers)
 
 
 

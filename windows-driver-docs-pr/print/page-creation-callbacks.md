@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 
 
-When an application makes an initial call into CPSUI's entry point function ([**CommonPropertySheetUI**](https://msdn.microsoft.com/library/windows/hardware/ff546148)), it must include the address of a [**PFNPROPSHEETUI**](https://msdn.microsoft.com/library/windows/hardware/ff559812)-typed callback function. This callback function is responsible for describing property sheet pages and sending these descriptions to CPSUI for creation.
+When an application makes an initial call into CPSUI's entry point function ([**CommonPropertySheetUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/nf-compstui-commonpropertysheetuia)), it must include the address of a [**PFNPROPSHEETUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/nc-compstui-pfnpropsheetui)-typed callback function. This callback function is responsible for describing property sheet pages and sending these descriptions to CPSUI for creation.
 
-CPSUI's **CommonPropertySheetUI** function immediately calls back to the PFNPROPSHEETUI-typed function, supplying the address of a [**PROPSHEETUI\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff561767) structure. The application can then call CPSUI's [**ComPropSheet**](https://msdn.microsoft.com/library/windows/hardware/ff546207) function, supplying page descriptions that CPSUI can use to create the pages, as illustrated in the following diagram:
+CPSUI's **CommonPropertySheetUI** function immediately calls back to the PFNPROPSHEETUI-typed function, supplying the address of a [**PROPSHEETUI\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/ns-compstui-_propsheetui_info) structure. The application can then call CPSUI's [**ComPropSheet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/nc-compstui-pfncompropsheet) function, supplying page descriptions that CPSUI can use to create the pages, as illustrated in the following diagram:
 
 ![diagram illustrating application-cpsui communication](images/comprop.png)
 

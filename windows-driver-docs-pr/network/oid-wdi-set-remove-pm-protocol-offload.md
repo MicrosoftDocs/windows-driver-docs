@@ -25,7 +25,7 @@ OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD removes the protocol offload specif
 
 | TLV                                                                                        | Multiple TLV instances allowed | Optional | Description          |
 |--------------------------------------------------------------------------------------------|--------------------------------|----------|----------------------|
-| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE**](https://msdn.microsoft.com/library/windows/hardware/dn898037) |                                |          | Protocol offload ID. |
+| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-pm-protocol-offload-remove) |                                |          | Protocol offload ID. |
 
  
 

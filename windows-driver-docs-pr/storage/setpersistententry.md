@@ -38,10 +38,10 @@ Parameters
 A worldwide name that indicates the port whose persistent bindings will be changed.
 
 *Binding*   
-A structure of type [**HBAFCPBindingEntry2**](https://msdn.microsoft.com/library/windows/hardware/ff556035) that indicates the binding to be removed from the indicated port's list of bindings.
+A structure of type [**HBAFCPBindingEntry2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry2) that indicates the binding to be removed from the indicated port's list of bindings.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetPersistentEntry\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565795) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetPersistentEntry\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_setpersistententry_out) structure.
 
 Return value
 ------------
@@ -76,9 +76,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**SetPersistentEntry\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565790)
+[**SetPersistentEntry\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_setpersistententry_in)
 
-[**SetPersistentEntry\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565795)
+[**SetPersistentEntry\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_setpersistententry_out)
 
  
 

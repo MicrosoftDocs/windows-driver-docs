@@ -30,8 +30,8 @@ No additional parameters. The data in the header is sufficient.
 
 | TLV                                                              | Multiple TLV instances allowed | Optional | Description              |
 |------------------------------------------------------------------|--------------------------------|----------|--------------------------|
-| [**WDI\_TLV\_MAC\_STATISTICS**](https://msdn.microsoft.com/library/windows/hardware/dn897846) | X                              |          | Per-peer MAC statistics. |
-| [**WDI\_TLV\_PHY\_STATISTICS**](https://msdn.microsoft.com/library/windows/hardware/dn898025) | X                              |          | Per-port PHY statistics. |
+| [**WDI\_TLV\_MAC\_STATISTICS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-mac-statistics) | X                              |          | Per-peer MAC statistics. |
+| [**WDI\_TLV\_PHY\_STATISTICS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-phy-statistics) | X                              |          | Per-port PHY statistics. |
 
  
 

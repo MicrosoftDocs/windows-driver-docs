@@ -23,13 +23,13 @@ In Windows Vista and later versions of Windows, the unified device property mode
 
 For information about the correspondence between the system-defined items that are associated with the device properties, see the following topics:
 
-[Device Instance Properties](https://msdn.microsoft.com/library/windows/hardware/ff541334)
+[Device Instance Properties](https://docs.microsoft.com/previous-versions/ff541334(v=vs.85))
 
-[Device Setup Class Properties](https://msdn.microsoft.com/library/windows/hardware/ff542239)
+[Device Setup Class Properties](https://docs.microsoft.com/previous-versions/ff542239(v=vs.85))
 
-[Device Interface Class Properties](https://msdn.microsoft.com/library/windows/hardware/ff541406)
+[Device Interface Class Properties](https://docs.microsoft.com/previous-versions/ff541406(v=vs.85))
 
-[Device Interface Properties](https://msdn.microsoft.com/library/windows/hardware/ff541409)
+[Device Interface Properties](https://docs.microsoft.com/previous-versions/ff541409(v=vs.85))
 
  
 

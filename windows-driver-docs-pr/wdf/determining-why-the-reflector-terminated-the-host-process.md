@@ -40,11 +40,11 @@ For many crashes, dump file details are sufficient to determine why the terminat
 
 In other cases, you might need to attach to a live kernel-mode target to determine why the reflector terminated the host process. To set up your debugging session, follow the steps described in [How to Enable Debugging of a UMDF Driver](enabling-a-debugger.md#kd).
 
-Once you have established a connection, display the outstanding IRPs by using the [**!wdfkd.wdfumirps**](https://msdn.microsoft.com/library/windows/hardware/dn265384) UMDF debugger extension ([**!wudfext.umirps**](https://msdn.microsoft.com/library/windows/hardware/ff566197) for UMDF version 1).
+Once you have established a connection, display the outstanding IRPs by using the [**!wdfkd.wdfumirps**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumirps) UMDF debugger extension ([**!wudfext.umirps**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umirps) for UMDF version 1).
 
 -   If a PnP IRP or a power IRP is pending, determine why the driver causes the IRP to hang by examining threads in the host process.
 
-    You can use the [**!process**](https://msdn.microsoft.com/library/windows/hardware/ff564717) extension to examine the threads running in the host process. The **0x1f** flags value shows you the stack trace for each thread.
+    You can use the [**!process**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-process) extension to examine the threads running in the host process. The **0x1f** flags value shows you the stack trace for each thread.
 
     **!process** *&lt;process addr&gt;* **0x1f**
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Other WDI data types
 
-In addition to the structure and enumeration data types listed on [WDI Miniport Driver Data Types](https://msdn.microsoft.com/library/windows/hardware/dn926077), WDI miniport drivers can also use the following types:
+In addition to the structure and enumeration data types listed on [WDI Miniport Driver Data Types](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/), WDI miniport drivers can also use the following types:
 
 [WDI_BAND_ID](wdi-band-id.md)
 

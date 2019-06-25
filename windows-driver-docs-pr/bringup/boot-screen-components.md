@@ -53,7 +53,7 @@ You should minimize padding in the logo resource and use only what's necessary f
 > [!NOTE]
 > The OEM logo does not appear on any screens in OOBE.
 
-For additional details on the BGRT, please see section 5.2.22 of the [Advanced Configuration and Power Interface (ACPI) Specification](https://www.uefi.org/specifications).
+For additional details on the BGRT, please see section 5.2.22 of the [Advanced Configuration and Power Interface (ACPI) Specification](https://uefi.org/specifications).
 
 ## Update text
 

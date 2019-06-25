@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 
 
 
-When a driver that creates an FDO or filter DO receives an [**IRP\_MN\_WAIT\_WAKE**](https://msdn.microsoft.com/library/windows/hardware/ff551766) request for the associated PDO, it can either simply pass the IRP down to the next-lower driver or take certain actions before passing down the IRP.
+When a driver that creates an FDO or filter DO receives an [**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake) request for the associated PDO, it can either simply pass the IRP down to the next-lower driver or take certain actions before passing down the IRP.
 
 ### For Devices That Support Wake-Up
 
 Upon receiving a wait/wake IRP, a function or filter driver should take the following steps:
 
-1.  Call [**IoAcquireRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff548204), passing the current IRP, to ensure that the driver does not receive a PnP [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) request while handling the wait/wake IRP.
+1.  Call [**IoAcquireRemoveLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioacquireremovelock), passing the current IRP, to ensure that the driver does not receive a PnP [**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device) request while handling the wait/wake IRP.
 
-    If [**IoAcquireRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff548204) returns a failure status, the driver should not continue processing the IRP. Instead, it completes the IRP ([**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343)), and return the failure status.
+    If [**IoAcquireRemoveLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioacquireremovelock) returns a failure status, the driver should not continue processing the IRP. Instead, it completes the IRP ([**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest)), and return the failure status.
 
-2.  Inspect the value at **Irp-&gt;Parameters.WaitWake.PowerState** and compare the current device power state with **DeviceState**\[SystemWake\] in the [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure.
+2.  Inspect the value at **Irp-&gt;Parameters.WaitWake.PowerState** and compare the current device power state with **DeviceState**\[SystemWake\] in the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure.
 
     If the device supports wake-up, but not from the specified [SystemWake](systemwake.md) state or not from the current device power state, the driver should fail the IRP as follows:
 
@@ -31,15 +31,15 @@ Upon receiving a wait/wake IRP, a function or filter driver should take the foll
     -   Complete the IRP (**IoCompleteRequest**), specifying a priority boost of IO\_NO\_INCREMENT.
     -   Return the status set in **Irp-&gt;IoStatus.Status** from the [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
-3.  Otherwise, set an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine for the IRP using [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679). The *IoCompletion* routine should perform whatever tasks the driver requires to return the device to the working state.
+3.  Otherwise, set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine for the IRP using [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutine). The *IoCompletion* routine should perform whatever tasks the driver requires to return the device to the working state.
 
     The *IoCompletion* routine will also be called if the IRP is canceled.
 
 4.  Save any information the driver might need in its *IoCompletion* routine.
 
-5.  Call [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) (in Windows 7 and Windows Vista) or [**PoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff559654) (in Windows Server 003, Windows XP, and Windows 2000), to pass the wait/wake IRP to the next-lower driver.
+5.  Call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) (in Windows 7 and Windows Vista) or [**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-pocalldriver) (in Windows Server 003, Windows XP, and Windows 2000), to pass the wait/wake IRP to the next-lower driver.
 
-6.  Call [**IoReleaseRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff549560) to release the previously acquired lock.
+6.  Call [**IoReleaseRemoveLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreleaseremovelock) to release the previously acquired lock.
 
 7.  Return STATUS\_PENDING from the [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. The driver must not change the value in **Irp-&gt;IoStatus.Status** while it holds the IRP.
 

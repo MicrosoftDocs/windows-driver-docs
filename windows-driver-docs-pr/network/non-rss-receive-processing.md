@@ -34,13 +34,13 @@ The following process repeats for each non-RSS interrupt cycle:
 
     The received buffers that the system handles in one interrupt cycle can be associated with many different network connections.
 
-3.  NDIS calls the miniport driver's [*MiniportInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559395) function (ISR) on a system-determined CPU.
+3.  NDIS calls the miniport driver's [*MiniportInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_isr) function (ISR) on a system-determined CPU.
 
     Ideally, the ISR should go to the least busy CPU. However, in some systems, the system assigns the ISR to an available CPU or to a CPU that is associated with the NIC.
 
 4.  The ISR disables the interrupts and requests NDIS to queue a deferred procedure call (DPC) to process the received data.
 
-5.  NDIS calls the [*MiniportInterruptDPC*](https://msdn.microsoft.com/library/windows/hardware/ff559398) function (the DPC) on the current CPU.
+5.  NDIS calls the [*MiniportInterruptDPC*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_interrupt_dpc) function (the DPC) on the current CPU.
 
 6.  The DPC builds receive descriptors for all of the received buffers and indicates the data up the driver stack. For more information, see [Receiving Network Data](receiving-network-data.md).
 

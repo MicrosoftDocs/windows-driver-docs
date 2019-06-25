@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_CANCEL\_PARAMETERS
 
 
-WDI\_TLV\_CANCEL\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_ABORT\_TASK](https://msdn.microsoft.com/library/windows/hardware/dn925835).
+WDI\_TLV\_CANCEL\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_ABORT\_TASK](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-abort-task).
 
 ## TLV Type
 

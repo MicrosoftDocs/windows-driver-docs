@@ -17,7 +17,7 @@ Drivers that use a controller object must supply a [*ControllerControl*](https:/
 
 A lowest-level device driver that must synchronize operations through a physical controller, such as an "AT" disk controller, to similar devices can have a *ControllerControl* routine.
 
-When a driver calls [**IoAllocateController**](https://msdn.microsoft.com/library/windows/hardware/ff548224), its *ControllerControl* routine is run immediately if the hardware represented by the controller object is available for an I/O operation. Otherwise, the *ControllerControl* routine is queued until the controller is free.
+When a driver calls [**IoAllocateController**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioallocatecontroller), its *ControllerControl* routine is run immediately if the hardware represented by the controller object is available for an I/O operation. Otherwise, the *ControllerControl* routine is queued until the controller is free.
 
 **Note**  WDM drivers cannot use controller objects and *ControllerControl* routines.
 

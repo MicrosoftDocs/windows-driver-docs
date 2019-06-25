@@ -42,7 +42,7 @@ class MSiSCSI_InitiatorSessionInfo {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorSessionInfo**](https://msdn.microsoft.com/library/windows/hardware/ff563054) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorSessionInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsimgt/ns-iscsimgt-_msiscsi_initiatorsessioninfo) data structure.
 
  
 

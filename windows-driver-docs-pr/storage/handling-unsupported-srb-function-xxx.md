@@ -21,7 +21,7 @@ Every *HwScsiStartIo* routine must handle the receipt of an unsupported SRB\_FUN
 
 1.  Set the input SRB's **SrbStatus** to SRB\_STATUS\_INVALID\_REQUEST.
 
-2.  Call [**ScsiPortNotification**](https://msdn.microsoft.com/library/windows/hardware/ff564657) with the *NotificationType***RequestComplete** and with the input SRB.
+2.  Call [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportnotification) with the *NotificationType***RequestComplete** and with the input SRB.
 
 3.  Call **ScsiPortNotification** again with the *NotificationType***NextRequest**, or with **NextLuRequest** if the HBA supports tagged queuing or multiple requests per logical unit.
 

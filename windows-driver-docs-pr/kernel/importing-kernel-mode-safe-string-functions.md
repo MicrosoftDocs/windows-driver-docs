@@ -43,7 +43,7 @@ Include the following line in your code before including the Ntstrsafe.h header 
 
 You can define either NTSTRSAFE\_NO\_CB\_FUNCTIONS or NTSTRSAFE\_NO\_CCH\_FUNCTIONS, but not both.
 
-You can make the [**UNICODE\_STRING**](https://msdn.microsoft.com/library/windows/hardware/ff564879) structure functions unavailable.
+You can make the [**UNICODE\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_unicode_string) structure functions unavailable.
 
 ### <a href="" id="to-make-unicode-string-structure-functions-unavailable"></a>To make UNICODE\_STRING structure functions unavailable
 

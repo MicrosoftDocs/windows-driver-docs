@@ -126,7 +126,7 @@ The **tracelog -stop** command both disables the trace providers and stops the t
 If you start a [Boot-Time Global Logger session](boot-time-global-logger-session.md) which traces kernel events, you need to use the command **tracelog -stop "NT Kernel Logger"** or **tracelog -stop GlobalLogger** to stop it. When you use either of commands to stop a [Global Logger trace session](global-logger-trace-session.md) trace session, Tracelog stops the provider, but it does not reset the values of the registry entries. To reset the values of the Global Logger registry entries, use **tracelog -remove**.
 
 <span id="-systemrundown__LoggerName_"></span><span id="-systemrundown__loggername_"></span><span id="-SYSTEMRUNDOWN__LOGGERNAME_"></span>**-systemrundown** \[*LoggerName*\]  
-Requests the SystemTraceProvider to log rundown events directed at *LoggerName* session. See [Configuring and Starting a SystemTraceProvider Session](https://msdn.microsoft.com/library/windows/desktop/jj883720) for information about starting a trace session.
+Requests the SystemTraceProvider to log rundown events directed at *LoggerName* session. See [Configuring and Starting a SystemTraceProvider Session](https://docs.microsoft.com/windows/desktop/ETW/configuring-and-starting-a-systemtraceprovider-session) for information about starting a trace session.
 
 This command is only available on Windows 8 and later versions of Windows.
 
@@ -432,7 +432,7 @@ Specifies kernel events to collect stacks on. Use **-eflag Help** for a list of 
 Specifies an event ID filter with *n* event IDs (maximum 64 event IDs allowed). This option is available starting in Windows 8.1.
 
 <span id="-systemlogger"></span><span id="-SYSTEMLOGGER"></span>**-systemlogger**  
-Logger can receive SystemTraceProvider events. See [Configuring and Starting a SystemTraceProvider Session](https://msdn.microsoft.com/library/windows/desktop/jj883720). This option is available starting in Windows 8.
+Logger can receive SystemTraceProvider events. See [Configuring and Starting a SystemTraceProvider Session](https://docs.microsoft.com/windows/desktop/ETW/configuring-and-starting-a-systemtraceprovider-session). This option is available starting in Windows 8.
 
 <span id="_______-um______"></span><span id="_______-UM______"></span> **-um**   
 Specifies a private trace session This parameter is required for a private trace session.

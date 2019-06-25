@@ -30,7 +30,7 @@ All Bluetooth Hands-Free devices support both capture and render. So the audio d
 
 The DAC and ADC nodes represent the analog/digital conversions, but do not support any KS properties.
 
-The volume nodes support [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://msdn.microsoft.com/library/windows/hardware/ff537309) and [**KSEVENT\_CONTROL\_CHANGE**](https://msdn.microsoft.com/library/windows/hardware/ff537128) by sending the SETVOLUME and GETVOLUMESTATUSUPDATE IOCTLs to the HFP driver.
+The volume nodes support [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-volumelevel) and [**KSEVENT\_CONTROL\_CHANGE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksevent-control-change) by sending the SETVOLUME and GETVOLUMESTATUSUPDATE IOCTLs to the HFP driver.
 
 The volume node should be implemented as follows:
 
@@ -40,7 +40,7 @@ The volume node should be implemented as follows:
 
 -   If the Bluetooth headset and the audio device do not have hardware volume controls, no volume node should be presented and Windows will insert a software volume control node.
 
-The mute node is optional. The audio driver should implement the mute node, if and only if the DSP or audio codec provides the capability to mute the bypass PCM signal before passing it to the Bluetooth controller. The mute nodes support [**KSPROPERTY\_AUDIO\_MUTE**](https://msdn.microsoft.com/library/windows/hardware/ff537293).
+The mute node is optional. The audio driver should implement the mute node, if and only if the DSP or audio codec provides the capability to mute the bypass PCM signal before passing it to the Bluetooth controller. The mute nodes support [**KSPROPERTY\_AUDIO\_MUTE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-mute).
 
 ## <span id="Property_requests"></span><span id="property_requests"></span><span id="PROPERTY_REQUESTS"></span>Property requests
 
@@ -49,7 +49,7 @@ The audio driver uses the following KS properties to obtain information about an
 
 **KSPROPERTY\_JACK\_DESCRIPTION**
 
-This property returns a [**KSJACK\_DESCRIPTION**](https://msdn.microsoft.com/library/windows/hardware/ff537136) structure. The audio driver should set the [**KSPROPERTY\_JACK\_DESCRIPTION**](https://msdn.microsoft.com/library/windows/hardware/ff537364) fields as follows.
+This property returns a [**KSJACK\_DESCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description) structure. The audio driver should set the [**KSPROPERTY\_JACK\_DESCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-jack-description) fields as follows.
 ChannelMapping = KSAUDIO\_SPEAKER\_MONO
 Color = 0
 ConnectionType = eConnTypeOtherDigital
@@ -59,15 +59,15 @@ PortConnection = ePortConnUnknown
 IsConnected = &lt;*BOOL for current connection status*&gt;
 **KSPROPERTY\_JACK\_DESCRIPTION2**
 
-This property returns a [**KSJACK\_DESCRIPTION2**](https://msdn.microsoft.com/library/windows/hardware/ff537138) structure. The audio driver should set the [**KSPROPERTY\_JACK\_DESCRIPTION2**](https://msdn.microsoft.com/library/windows/hardware/ff537365) fields as follows.
+This property returns a [**KSJACK\_DESCRIPTION2**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description2) structure. The audio driver should set the [**KSPROPERTY\_JACK\_DESCRIPTION2**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-jack-description2) fields as follows.
 DeviceStateInfo = 0
 JackCapabilities = JACKDESC2\_PRESENCE\_DETECT\_CAPABILITY
 **KSPROPERTY\_ONESHOT\_RECONNECT**
 
-The audio driver’s filter should support [**KSPROPERTY\_ONESHOT\_RECONNECT**](https://msdn.microsoft.com/library/windows/hardware/ff537369). To create and initialize this structure, the audio driver sends [**IOCTL\_BTHHFP\_DEVICE\_REQUEST\_CONNECT**](https://msdn.microsoft.com/library/windows/hardware/dn265114) to the HFP driver. The HFP driver completes this request, and then attempts to connect to the Bluetooth audio device asynchronously.
+The audio driver’s filter should support [**KSPROPERTY\_ONESHOT\_RECONNECT**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-oneshot-reconnect). To create and initialize this structure, the audio driver sends [**IOCTL\_BTHHFP\_DEVICE\_REQUEST\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_request_connect) to the HFP driver. The HFP driver completes this request, and then attempts to connect to the Bluetooth audio device asynchronously.
 **KSPROPERTY\_ONESHOT\_DISCONNECT**
 
-The audio driver’s filter should support [**KSPROPERTY\_ONESHOT\_DISCONNECT**](https://msdn.microsoft.com/library/windows/hardware/hh706181). To create and initialize this structure, the audio driver sends [**IOCTL\_BTHHFP\_DEVICE\_REQUEST\_DISCONNECT**](https://msdn.microsoft.com/library/windows/hardware/dn265115) to the HFP driver. The HFP driver completes this request, and then attempts to disconnect from the Bluetooth audio device asynchronously.
+The audio driver’s filter should support [**KSPROPERTY\_ONESHOT\_DISCONNECT**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-oneshot-disconnect). To create and initialize this structure, the audio driver sends [**IOCTL\_BTHHFP\_DEVICE\_REQUEST\_DISCONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_request_disconnect) to the HFP driver. The HFP driver completes this request, and then attempts to disconnect from the Bluetooth audio device asynchronously.
 When an audio driver supports these properties, the Sound dialog box in the Control Panel exposes Connect and Disconnect commands for the HFP endpoint.
 
 ## <span id="related_topics"></span>Related topics

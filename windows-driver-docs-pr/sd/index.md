@@ -17,19 +17,19 @@ ms.technology: windows-devices
 
 
 ## In this section
-[SD Card Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff537964)
+[SD Card Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/sd/sd-card-driver-stack)
 
-[Opening, Initializing and Closing an SD Card Bus Interface](https://msdn.microsoft.com/library/windows/hardware/ff537442)
+[Opening, Initializing and Closing an SD Card Bus Interface](https://docs.microsoft.com/windows-hardware/drivers/sd/opening--initializing-and-closing-an-sd-card-bus-interface)
 
-[Handling SD Card Interrupts](https://msdn.microsoft.com/library/windows/hardware/ff537177)
+[Handling SD Card Interrupts](https://docs.microsoft.com/windows-hardware/drivers/sd/handling-sd-card-interrupts)
 
-[SD Card Requests](https://msdn.microsoft.com/library/windows/hardware/ff537983)
+[SD Card Requests](https://docs.microsoft.com/windows-hardware/drivers/sd/sd-card-requests)
  
 
 ## SD Card Hardware Identifiers
 
 
-For information about Secure Digital (SD) device identification strings, see [Identifiers for Secure Digital (SD) Devices](https://msdn.microsoft.com/library/windows/hardware/ff546279).
+For information about Secure Digital (SD) device identification strings, see [Identifiers for Secure Digital (SD) Devices](https://docs.microsoft.com/windows-hardware/drivers/install/identifiers-for-secure-digital--sd--devices).
 
 ## Restrictions on SD Card Drivers
 
@@ -42,7 +42,7 @@ Certain restrictions apply to Secure Digital (SD) card device drivers that manag
 
 -   SD I/O commands that specify a function number of a different device stack.
 
-SD device drivers can manage the host controller's common register set and the state of the device by calling [**SdBusSubmitRequest**](https://msdn.microsoft.com/library/windows/hardware/ff537909) with function requests of type SDRF\_GET\_PROPERTY and SDRF\_SET\_PROPERTY. For a description of these function request types, see [**SD\_REQUEST\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff538012).
+SD device drivers can manage the host controller's common register set and the state of the device by calling [**SdBusSubmitRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddsd/nf-ntddsd-sdbussubmitrequest) with function requests of type SDRF\_GET\_PROPERTY and SDRF\_SET\_PROPERTY. For a description of these function request types, see [**SD\_REQUEST\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddsd/ne-ntddsd-sd_request_function).
 
 ## SD Bus Sample
 

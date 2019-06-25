@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # MRxQueryEaInfo routine
 
 
-The *MRxQueryEaInfo* routine is called by [RDBSS](https://msdn.microsoft.com/library/windows/hardware/ff556810) to request that a network mini-redirector query extended attribute information on a file system object.
+The *MRxQueryEaInfo* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that a network mini-redirector query extended attribute information on a file system object.
 
 Syntax
 ------
@@ -154,7 +154,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://msdn.microsoft.com/library/windows/hardware/ff550696)
+[**MRxIsValidDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryDirectory**](mrxquerydirectory.md)
 

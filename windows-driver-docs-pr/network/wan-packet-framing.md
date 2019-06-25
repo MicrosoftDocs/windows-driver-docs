@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 This section provides information about WAN packet framing.
 
-The NDISWAN intermediate driver retrieves information about the WAN packet framing performed by a WAN miniport driver from the miniport driver's response to the [OID\_WAN\_MEDIUM\_SUBTYPE](https://msdn.microsoft.com/library/windows/hardware/ff561216) query information request.
+The NDISWAN intermediate driver retrieves information about the WAN packet framing performed by a WAN miniport driver from the miniport driver's response to the [OID\_WAN\_MEDIUM\_SUBTYPE](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff561216(v=vs.85)) query information request.
 
 NDISWAN converts an out-going packet from LAN to PPP format. NDISWAN uses simple HDLC framing. Most of the media-specific framing must be done by the miniport driver.
 

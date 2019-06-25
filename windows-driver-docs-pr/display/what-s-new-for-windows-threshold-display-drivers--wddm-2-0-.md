@@ -113,8 +113,8 @@ New Direct3D DDI's were created in parallel of Direct3D API's, in order to suppo
 
 For more info about raytracing, see:
 
-* [Announcing Microsoft DirectX Raytracing](https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/)
-* [DirectX Raytracing and the Windows 10 October 2018 Update](https://blogs.msdn.microsoft.com/directx/2018/10/02/directx-raytracing-and-the-windows-10-october-2018-update/)
+* [Announcing Microsoft DirectX Raytracing](https://devblogs.microsoft.com/directx/announcing-microsoft-directx-raytracing/)
+* [DirectX Raytracing and the Windows 10 October 2018 Update](https://devblogs.microsoft.com/directx/directx-raytracing-and-the-windows-10-october-2018-update/)
 * [DirectX Forums](https://forums.directxtech.com/index.php?topic=5985.0)
 
 ### Display Synchronization
@@ -162,7 +162,7 @@ For more details, see [GPU virtual memory in WDDM 2.0](gpu-virtual-memory-in-wdd
 
 ### Driver residency
 
--   The video memory manager makes sure that allocations are resident in memory before submitting command buffers to the driver. To facilitate this functionality, new user mode driver device driver interfaces (DDIs) have been added ([*MakeResident*](https://msdn.microsoft.com/library/windows/hardware/dn906357), [*TrimResidency*](https://msdn.microsoft.com/library/windows/hardware/dn906364), [*Evict*](https://msdn.microsoft.com/library/windows/hardware/dn906355)).
+-   The video memory manager makes sure that allocations are resident in memory before submitting command buffers to the driver. To facilitate this functionality, new user mode driver device driver interfaces (DDIs) have been added ([*MakeResident*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb), [*TrimResidency*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_trimresidencyset), [*Evict*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb)).
 -   The allocation and patch location list is being phased out because it is not necessary in the new model.
 -   User mode drivers are now responsible for handling allocation tracking and several new DDIs have been added to enable this.
 -   Drivers are given memory budgets and expected to adapt under memory pressure. This allows Universal Windows drivers to function across application platforms.

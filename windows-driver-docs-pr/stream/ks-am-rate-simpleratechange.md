@@ -48,7 +48,7 @@ The KS\_AM\_RATE\_SimpleDataRate property sets the time stamp rate on a filter.
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567291" data-raw-source="[&lt;strong&gt;KS_AM_SimpleRateChange&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567291)"><strong>KS_AM_SimpleRateChange</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ks_am_simpleratechange" data-raw-source="[&lt;strong&gt;KS_AM_SimpleRateChange&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ks_am_simpleratechange)"><strong>KS_AM_SimpleRateChange</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -76,7 +76,7 @@ Requirements
 ## See also
 
 
-[**KS\_AM\_SimpleRateChange**](https://msdn.microsoft.com/library/windows/hardware/ff567291)
+[**KS\_AM\_SimpleRateChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ks_am_simpleratechange)
 
  
 

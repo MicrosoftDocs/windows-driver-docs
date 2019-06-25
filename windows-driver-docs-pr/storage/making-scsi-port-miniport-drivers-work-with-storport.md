@@ -25,7 +25,7 @@ The Storport-miniport driver interface is designed to be as similar to the SCSI 
 
 3.  Make certain that all expanded structures are properly initialized.
 
-    The sizes of both the [**HW\_INITIALIZATION\_DATA (SCSI)**](https://msdn.microsoft.com/library/windows/hardware/ff557456) structure and the [**PORT\_CONFIGURATION\_INFORMATION (SCSI)**](https://msdn.microsoft.com/library/windows/hardware/ff563900) structure have changed, so make certain the new members are properly initialized.
+    The sizes of both the [**HW\_INITIALIZATION\_DATA (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_hw_initialization_data) structure and the [**PORT\_CONFIGURATION\_INFORMATION (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_port_configuration_information) structure have changed, so make certain the new members are properly initialized.
 
 The Storport header file, *storport.h,* currently retains both SCSI Port-prefixed commands and StorPort-prefixed commands to facilitate porting from the SCSI Port.
 

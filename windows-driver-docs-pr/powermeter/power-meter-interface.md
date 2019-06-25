@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Power Meter Interface
 
 
-The Power Meter Interface (PMI) is provided through a WDM driver that services I/O request packets (IRPs) from the [Power Manager](https://msdn.microsoft.com/library/windows/hardware/ff559829) and the Power WMI Provider component of the [User-Mode Power Service](user-mode-power-service.md) (UMPS).
+The Power Meter Interface (PMI) is provided through a WDM driver that services I/O request packets (IRPs) from the [Power Manager](https://docs.microsoft.com/windows-hardware/drivers/kernel/power-manager) and the Power WMI Provider component of the [User-Mode Power Service](user-mode-power-service.md) (UMPS).
 
 PMI provides support for various I/O control (IOCTL) request packets that are issued by user-mode services or applications. This IOCTL interface provides information about the following items:
 
@@ -29,7 +29,7 @@ PMI also provides support for the notification of power metering events, such as
 
 The power metering information that is accessed from PMI is generally read-only. However, depending on the capabilities of the power meter, its budgeting configuration could have read-only or read/write permission.
 
-For more information about the PMI IOCTL interface, see [PMI IOCTLs](https://msdn.microsoft.com/library/windows/hardware/ff543884).
+For more information about the PMI IOCTL interface, see [PMI IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pmi/index).
 
  
 **Note**   The PMB infrastructure is supported on Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.

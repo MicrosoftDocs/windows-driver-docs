@@ -22,19 +22,19 @@ A connection-oriented miniport driver provides an interface between connection-o
 
 A connection-oriented miniport driver must register the following *MiniportXxx* functions that are specific to connection-oriented operations:
 
--   [**MiniportCoCreateVc**](https://msdn.microsoft.com/library/windows/hardware/ff559354)
+-   [**MiniportCoCreateVc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_create_vc)
 
--   [**MiniportCoDeleteVc**](https://msdn.microsoft.com/library/windows/hardware/ff559358)
+-   [**MiniportCoDeleteVc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_delete_vc)
 
--   [**MiniportCoActivateVc**](https://msdn.microsoft.com/library/windows/hardware/ff559351)
+-   [**MiniportCoActivateVc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_activate_vc)
 
--   [**MiniportCoDeactivateVc**](https://msdn.microsoft.com/library/windows/hardware/ff559356)
+-   [**MiniportCoDeactivateVc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_deactivate_vc)
 
--   [**MiniportCoSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff559365)
+-   [**MiniportCoSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_send_net_buffer_lists)
 
--   [**MiniportCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559362)
+-   [**MiniportCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_oid_request)
 
-For more information about registering these functions, see [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654).
+For more information about registering these functions, see [**NdisMRegisterMiniportDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterminiportdriver).
 
  
 

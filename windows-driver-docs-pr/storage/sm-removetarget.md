@@ -82,9 +82,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_RemoveTarget\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff566280)
+[**SM\_RemoveTarget\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_removetarget_in)
 
-[**SM\_RemoveTarget\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566283)
+[**SM\_RemoveTarget\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_removetarget_out)
 
  
 

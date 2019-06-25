@@ -32,7 +32,7 @@ This section includes the following topics:
 -   [Low Power for Wake on LAN](low-power-for-wake-on-lan.md)
 -   [Low Power on Media Disconnect](low-power-on-media-disconnect.md)
 
-**Note**  Starting with NDIS 6.30, the NDIS power management interface has been extended. For more information about the NDIS 6.30 extensions for power management, please review the information at [Power Management (NDIS 6.30 and Later)](https://msdn.microsoft.com/library/windows/hardware/hh440160).
+**Note**  Starting with NDIS 6.30, the NDIS power management interface has been extended. For more information about the NDIS 6.30 extensions for power management, please review the information at [Power Management (NDIS 6.30 and Later)](https://docs.microsoft.com/windows-hardware/drivers/network/power-management--ndis-6-30-).
 
  
 

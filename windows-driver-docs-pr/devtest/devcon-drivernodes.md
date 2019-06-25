@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # DevCon DriverNodes
 
 
-Lists all [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff539954) that are compatible with the device, along with their version and ranking. Valid only on the local computer.
+Lists all [driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/components-of-a-driver-package) that are compatible with the device, along with their version and ranking. Valid only on the local computer.
 
 ```
     devcon drivernodes {* | ID [ID ...] | =class [ID [ID ...]]} 

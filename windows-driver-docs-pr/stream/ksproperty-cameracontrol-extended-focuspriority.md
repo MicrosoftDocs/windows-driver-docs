@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY
 
 
-The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY** property ID defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn917962) enumeration is used to configure the focus priority. When focus priority is set, focusing will take priority over the picture taken to ensure that the picture taken is always in focus. Otherwise, the picture will be taken immediately regardless of whether the picture is in focus . The behavior in handling a failed focus and whether timeout is required is internal to the driver and up to the OEM.
+The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY** property ID defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration is used to configure the focus priority. When focus priority is set, focusing will take priority over the picture taken to ensure that the picture taken is always in focus. Otherwise, the picture will be taken immediately regardless of whether the picture is in focus . The behavior in handling a failed focus and whether timeout is required is internal to the driver and up to the OEM.
 
 ## Usage summary table
 

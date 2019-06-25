@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 >
 
 
-The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](https://msdn.microsoft.com/library/windows/hardware/ff557573).
+The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](https://docs.microsoft.com/windows-hardware/drivers/).
 
 Visual Studio provides several windows that you can use to view local variables, global variables, registers, and arbitrary memory buffers. To open any of the following windows, from the **Debug** menu, choose **Windows**.
 

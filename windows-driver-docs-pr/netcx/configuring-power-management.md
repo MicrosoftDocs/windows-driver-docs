@@ -49,7 +49,7 @@ The client can register [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](https://doc
 
 ## Programming Protocol Offload and Wake Patterns
 
-In its [*EvtDeviceArmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and [*EvtDeviceArmWakeFromSx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_sx) callback functions, the driver iterates through the enabled wake patterns and protocol offloads and programs them into the hardware.
+In its [*EvtDeviceArmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_s0) and [*EvtDeviceArmWakeFromSx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_sx) callback functions, the driver iterates through the enabled wake patterns and protocol offloads and programs them into the hardware.
 
 First retrieve a handle to the NETPOWERSETTINGS object that is associated with the adapter by calling [**NetAdapterGetPowerSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptergetpowersettings) from [*EvtDeviceArmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_s0) or a related callback function.  The following example shows how to iterate through the wake patterns:
 

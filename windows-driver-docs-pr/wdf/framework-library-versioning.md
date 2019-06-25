@@ -34,7 +34,7 @@ If you built your driver using a version of the KMDF library that is more recent
 
 When you build your driver, the MSBuild utility links the driver with a stub file that contains the version number of the library that the MSBuild utility used. When the operating system loads your driver, the framework's loader checks the version information in your driver's stub to determine if the driver will run with the version of the framework library that is on the system.
 
-To determine the version of the library that your driver is running with, the driver can call [**WdfDriverIsVersionAvailable**](https://msdn.microsoft.com/library/windows/hardware/ff547190) or [**WdfDriverRetrieveVersionString**](https://msdn.microsoft.com/library/windows/hardware/ff547211).
+To determine the version of the library that your driver is running with, the driver can call [**WdfDriverIsVersionAvailable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverisversionavailable) or [**WdfDriverRetrieveVersionString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrieveversionstring).
 
 For information about the release history of the KMDF library, see [KMDF Version History](kmdf-version-history.md).
 

@@ -58,7 +58,7 @@ Note that extension INF files are always applied after the base INF, but that th
 
 Here are the entries you need to define an INF as an extension INF.
 
-1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section. For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://msdn.microsoft.com/library/windows/hardware/ff553426).
+1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section. For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
 
     ```cpp
     [Version]
@@ -95,7 +95,7 @@ Note that an organization may only use an **ExtensionID** that it owns.  For inf
 
 In most cases, you'll submit an extension INF package to the Hardware Dev Center separately from the base driver package.  For examples on how to package extension INFs, as well as links to sample code, see [Universal Driver Scenarios](../develop/universal-driver-scenarios.md).
 
-The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn915002).
+The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
 ## Uninstalling an extension driver
 

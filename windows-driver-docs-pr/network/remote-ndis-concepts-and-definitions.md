@@ -34,7 +34,7 @@ This section presents an overview of the Remote NDIS requirements on the communi
 
 -   **Control Channel**
 
-    The control channel must be reliable and ensure sequenced delivery. It is used for all communication except for the transmission of network data packets. All required control messages, except [REMOTE\_NDIS\_HALT\_MSG](https://msdn.microsoft.com/library/windows/hardware/ff570613) and [REMOTE\_NDIS\_INDICATE\_STATUS\_MSG](https://msdn.microsoft.com/library/windows/hardware/ff570617), are request and response exchanges initiated by the host. The device must respond within the time-out period as specified for each bus.
+    The control channel must be reliable and ensure sequenced delivery. It is used for all communication except for the transmission of network data packets. All required control messages, except [REMOTE\_NDIS\_HALT\_MSG](https://docs.microsoft.com/previous-versions/ff570613(v=vs.85)) and [REMOTE\_NDIS\_INDICATE\_STATUS\_MSG](https://docs.microsoft.com/previous-versions/ff570617(v=vs.85)), are request and response exchanges initiated by the host. The device must respond within the time-out period as specified for each bus.
 
 -   **Data Channel**
 
@@ -42,13 +42,13 @@ This section presents an overview of the Remote NDIS requirements on the communi
 
 -   **Initialization and Teardown**
 
-    The control and data channels are initialized and set up as specified for the appropriate bus. The host sends a [REMOTE\_NDIS\_INITIALIZE\_MSG](https://msdn.microsoft.com/library/windows/hardware/ff570624) message to the Remote NDIS device. The Remote NDIS device provides information about its type (connectionless or connection-oriented), supported medium, and version in the response message [REMOTE\_NDIS\_INITIALIZE\_CMPLT](https://msdn.microsoft.com/library/windows/hardware/ff570621).
+    The control and data channels are initialized and set up as specified for the appropriate bus. The host sends a [REMOTE\_NDIS\_INITIALIZE\_MSG](https://docs.microsoft.com/previous-versions/ff570624(v=vs.85)) message to the Remote NDIS device. The Remote NDIS device provides information about its type (connectionless or connection-oriented), supported medium, and version in the response message [REMOTE\_NDIS\_INITIALIZE\_CMPLT](https://docs.microsoft.com/previous-versions/ff570621(v=vs.85)).
 
-    Either the host or the Remote NDIS device can tear down the communication channel through the [REMOTE\_NDIS\_HALT\_MSG](https://msdn.microsoft.com/library/windows/hardware/ff570613) message. All outstanding requests and packets are discarded on receipt of this message.
+    Either the host or the Remote NDIS device can tear down the communication channel through the [REMOTE\_NDIS\_HALT\_MSG](https://docs.microsoft.com/previous-versions/ff570613(v=vs.85)) message. All outstanding requests and packets are discarded on receipt of this message.
 
 -   **Device State Definitions**
 
-    Following bus-level initialization, the device is said to be in the RNDIS-uninitialized state. Upon receiving a [REMOTE\_NDIS\_INITIALIZE\_MSG](https://msdn.microsoft.com/library/windows/hardware/ff570624) and responding with a REMOTE\_NDIS\_INITIALIZE\_CMPLT with a status of RNDIS\_STATUS\_SUCCESS, the device enters the RNDIS-initialized state.
+    Following bus-level initialization, the device is said to be in the RNDIS-uninitialized state. Upon receiving a [REMOTE\_NDIS\_INITIALIZE\_MSG](https://docs.microsoft.com/previous-versions/ff570624(v=vs.85)) and responding with a REMOTE\_NDIS\_INITIALIZE\_CMPLT with a status of RNDIS\_STATUS\_SUCCESS, the device enters the RNDIS-initialized state.
 
     Upon receiving REMOTE\_NDIS\_SET\_MSG specifying a nonzero filter value for OID\_GEN\_CURRENT\_PACKET\_FILTER, the device enters the RNDIS-data-initialized state.
 
@@ -62,7 +62,7 @@ This section presents an overview of the Remote NDIS requirements on the communi
 
 -   **Resetting the Communication Channel**
 
-    The communication channel is reset when an error, such as message time-out, occurs. The host may initiate a reset at any time when the device is in the RNDIS-initialized state by sending the message [REMOTE\_NDIS\_RESET\_MSG](https://msdn.microsoft.com/library/windows/hardware/ff570648) to the device and the device must send a response message when it has completed the reset. For example, the host may initiate a reset when an error, such as a message time-out, has occurred.
+    The communication channel is reset when an error, such as message time-out, occurs. The host may initiate a reset at any time when the device is in the RNDIS-initialized state by sending the message [REMOTE\_NDIS\_RESET\_MSG](https://docs.microsoft.com/previous-versions/ff570648(v=vs.85)) to the device and the device must send a response message when it has completed the reset. For example, the host may initiate a reset when an error, such as a message time-out, has occurred.
 
     Note that this is a soft reset in the sense that any handles (for example, VCs for connection-oriented devices) continue to be valid after the reset. The Remote NDIS device discards all outstanding requests and packets as part of the reset process. The remote device might reset some of its hardware components, but keeps the communication channel intact.
 

@@ -82,7 +82,7 @@ This section describes tools that you can use to test your USB hardware or softw
  
 
 ## Related topics
-[Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
 
 
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_CLASS_USBHUB
 
 
-GUID_CLASS_USBHUB is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930) hub devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_USB_HUB**](guid-devinterface-usb-hub.md) class identifier for new instances of this class.
+GUID_CLASS_USBHUB is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for [USB](https://docs.microsoft.com/windows-hardware/drivers/) hub devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_USB_HUB**](guid-devinterface-usb-hub.md) class identifier for new instances of this class.
 
 Remarks
 -------

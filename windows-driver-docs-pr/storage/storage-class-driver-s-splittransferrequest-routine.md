@@ -67,7 +67,7 @@ To carry out the original transfer request, the driver's *SplitTransferRequest* 
 
 -   Sets the **DataBuffer** in the SRB to an offset in bytes into the MDL for this piece of the transfer
 
--   Sets up its *IoCompletion* routine before sending the IRP on to the port driver with [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336)
+-   Sets up its *IoCompletion* routine before sending the IRP on to the port driver with [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver)
 
 To track each piece of the transfer, *SplitTransferRequest* registers an *IoCompletion* routine for each driver-allocated IRP it sends to the next-lower driver. The *IoCompletion* routine maintains a count of completed partial transfer requests in the original IRP, using **InterlockedIncrement** and **InterlockedDecrement** to ensure that the count is accurate.
 

@@ -103,7 +103,7 @@ The following table lists all of the standard features, in alphabetical order, a
 <td><p>See <a href="standard-options.md" data-raw-source="[Standard Options](standard-options.md)">Standard Options</a>.</p>
 <p>Customized options are not allowed.</p></td>
 <td><p>Optional. If not specified, the default orientation is PORTRAIT.</p>
-<p>For Windows 7, the <strong>MxdcGetPDEVAdjustment</strong> function has new parameters for landscape rotation. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557558" data-raw-source="[&lt;strong&gt;MxdcXDCGetPDEVAdjustment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557558)"><strong>MxdcXDCGetPDEVAdjustment</strong></a>.</p></td>
+<p>For Windows 7, the <strong>MxdcGetPDEVAdjustment</strong> function has new parameters for landscape rotation. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mxdc/nf-mxdc-mxdcgetpdevadjustment" data-raw-source="[&lt;strong&gt;MxdcXDCGetPDEVAdjustment&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mxdc/nf-mxdc-mxdcgetpdevadjustment)"><strong>MxdcXDCGetPDEVAdjustment</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>OutputBin</strong></p></td>

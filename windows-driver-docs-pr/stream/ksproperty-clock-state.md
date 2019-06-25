@@ -48,7 +48,7 @@ Clients use the KSPROPERTY\_CLOCK\_STATE property to determine the streaming sta
 <td><p>No</p></td>
 <td><p>Pin</p></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566856" data-raw-source="[&lt;strong&gt;KSSTATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566856)"><strong>KSSTATE</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ne-ks-ksstate" data-raw-source="[&lt;strong&gt;KSSTATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ne-ks-ksstate)"><strong>KSSTATE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -58,7 +58,7 @@ Clients use the KSPROPERTY\_CLOCK\_STATE property to determine the streaming sta
 Remarks
 -------
 
-Also see [KS Properties](https://msdn.microsoft.com/library/windows/hardware/ff567671).
+Also see [KS Properties](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-properties).
 
 Requirements
 ------------
@@ -79,7 +79,7 @@ Requirements
 ## See also
 
 
-[**KSSTATE**](https://msdn.microsoft.com/library/windows/hardware/ff566856)
+[**KSSTATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ne-ks-ksstate)
 
  
 

@@ -30,7 +30,7 @@ You can use the latter two configurations together, running both a user-mode deb
 
 We recommend doing all UMDF driver testing with a kernel debugger attached.
 
-The following are recommended settings. You can set these manually, or use the [WDF Verifier Control Application](https://msdn.microsoft.com/library/windows/hardware/ff556129) (WDFVerifier.exe) tool in the WDK to view or change these settings.
+The following are recommended settings. You can set these manually, or use the [WDF Verifier Control Application](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdf-verifier-control-application) (WDFVerifier.exe) tool in the WDK to view or change these settings.
 
 -   Enable Application Verifier on WUDFHost.exe:
 
@@ -40,7 +40,7 @@ The following are recommended settings. You can set these manually, or use the [
 
     If exceptions occur, Application Verifier sends diagnostic messages to the debugger and breaks in.
 
--   Enable [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448). Open a **Command Prompt** window (**Run as administrator**). Type verifier to open the Driver Verifier Manager.
+-   Enable [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier). Open a **Command Prompt** window (**Run as administrator**). Type verifier to open the Driver Verifier Manager.
 -   If you are using a kernel-mode debugging session, set **HostFailKdDebugBreak** so that the reflector breaks into the kernel-mode debugger before terminating the driver host process. This setting is enabled by default starting in UMDF version 1.11.
 
 -   Disable pooling by setting **UmdfHostProcessSharing** to **ProcessSharingDisabled**. For info, see [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
@@ -50,7 +50,7 @@ The following are recommended settings. You can set these manually, or use the [
 ## Using Visual Studio with F5 to attach automatically (user-mode debugging)
 
 
-Before you can use Visual Studio with the WDK to debug a driver on a test computer, you must first set up and configure your test machine. For information on how to do this, see [Deploying a Driver to a Test Computer](https://msdn.microsoft.com/windows-drivers/develop/deploying_a_driver_to_a_test_computer).
+Before you can use Visual Studio with the WDK to debug a driver on a test computer, you must first set up and configure your test machine. For information on how to do this, see [Deploying a Driver to a Test Computer](https://docs.microsoft.com/windows-hardware/drivers).
 
 After you have configured your test computer, use Visual Studio on the host computer to set breakpoints in your driver. When you press F5, Visual Studio builds the driver, deploys it to the target computer, and starts a user-mode debugging session.
 
@@ -89,7 +89,7 @@ For detailed information about UMDF registry values, see [Registry Values for De
 
 From a remote host, establish a kernel-mode debugging session and then set current process to the instance of Wudfhost that is hosting your driver. If you are debugging from a remote kernel debugger, you can set **HostProcessDbgBreakOnDriverStart** or **HostProcessDbgBreakOnDriverLoad** to 0x80000000 to specify no timeout, but break into the kernel debugger.
 
-In UMDF 1.11 or later, before breaking into the kernel debugger, the reflector automatically switches the process context to that of the host process. As a result, you can use UMDF debugger extension commands immediately, without first issuing the [**.process**](https://msdn.microsoft.com/library/windows/hardware/ff564723) command to change the process context.
+In UMDF 1.11 or later, before breaking into the kernel debugger, the reflector automatically switches the process context to that of the host process. As a result, you can use UMDF debugger extension commands immediately, without first issuing the [**.process**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-process--set-process-context-) command to change the process context.
 
 Use these steps:
 

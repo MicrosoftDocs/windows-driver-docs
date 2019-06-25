@@ -64,7 +64,7 @@ When specifying **PINNAME\_VIDEO\_VIDEOPORT** pins, use the information listed i
 </tr>
 <tr class="even">
 <td><p><strong>Required Event Sets</strong></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561780" data-raw-source="[KSEVENTSETID_VPNotify](https://msdn.microsoft.com/library/windows/hardware/ff561780)">KSEVENTSETID_VPNotify</a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/kseventsetid-vpnotify" data-raw-source="[KSEVENTSETID_VPNotify](https://docs.microsoft.com/windows-hardware/drivers/stream/kseventsetid-vpnotify)">KSEVENTSETID_VPNotify</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DirectShow majortype</strong></p></td>

@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS initiates the transition to the working power state (D0) by sending the miniport driver an [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request that specifies state D0. The miniport driver must then perform any device-dependent operations needed to restore the network adapter to a working state. The miniport driver must also restore any hardware context--packet filters, multicast addresses, the current media access control (MAC) address, or wake-up patterns--that the network adapter might have lost.
+NDIS initiates the transition to the working power state (D0) by sending the miniport driver an [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power) request that specifies state D0. The miniport driver must then perform any device-dependent operations needed to restore the network adapter to a working state. The miniport driver must also restore any hardware context--packet filters, multicast addresses, the current media access control (MAC) address, or wake-up patterns--that the network adapter might have lost.
 
 **Note**  Starting with NDIS 6.30, the miniport driver that support [NDIS packet coalescing](ndis-packet-coalescing.md) must clear its coalesced packet counter. The driver must also configure the network adapter to flush any packets that it coalesced before the low-power transition. For more information, see [Handling Packet Coalescing Receive Filters](handling-packet-coalescing-receive-filters.md).
 

@@ -25,7 +25,7 @@ OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS deletes cipher keys from the device's cipher
 
 | TLV                                                                                | Multiple TLV instances allowed | Optional | Description                                                |
 |------------------------------------------------------------------------------------|--------------------------------|----------|------------------------------------------------------------|
-| [**WDI\_TLV\_DELETE\_CIPHER\_KEY\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn926283) | X                              |          | The cipher keys to be deleted from the device's key table. |
+| [**WDI\_TLV\_DELETE\_CIPHER\_KEY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-delete-cipher-key-info) | X                              |          | The cipher keys to be deleted from the device's key table. |
 
  
 
