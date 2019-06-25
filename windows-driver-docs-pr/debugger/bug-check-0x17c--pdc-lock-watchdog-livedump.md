@@ -47,7 +47,7 @@ Use the debugger [!thread](-thread.md) command to display the thread holding the
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
-[!thread](-thread.md)
+[\!thread](-thread.md)
 
 
  
