@@ -180,7 +180,7 @@ The client driver must perform the following tasks in the driver's asynchronous 
 
 ## Asynchronous receive in the pre-notification case
 
-The legacy 1394 bus driver fails to complete asynchronous receive transactions by using the pre-notification mechanism. For more information, see [Knowledge Base: IEEE 1394 Async Receive Response not sent using Pre-Notification (2635883)](https://support.microsoft.com/help/2635883).
+The legacy 1394 bus driver fails to complete asynchronous receive transactions by using the pre-notification mechanism. For more information, see [Knowledge Base: IEEE 1394 Async Receive Response not sent using Pre-Notification (2635883)](https://support.microsoft.com/help/2635883/ieee-1394-async-receive-response-not-sent-using-pre-notification).
 
 For the new 1394 bus driver, the expected behavior of the client driver's notification callback routine in the pre-notification case is as follows:
 

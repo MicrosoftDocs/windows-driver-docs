@@ -128,7 +128,7 @@ The following additional driver models are available to use particular hardware 
 <td align="left"><p>A type of network connection that uses Windows Sockets Direct to support a high-performance, connection-oriented network.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570659" data-raw-source="[Remote NDIS (RNDIS)](https://docs.microsoft.com/previous-versions/ff570659(v=vs.85))">Remote NDIS (RNDIS)</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff570659(v=vs.85)" data-raw-source="[Remote NDIS (RNDIS)](https://docs.microsoft.com/previous-versions/ff570659(v=vs.85))">Remote NDIS (RNDIS)</a></p></td>
 <td align="left"><p>A class specification that defines a system-provided, bus-independent message set over a USB bus.</p></td>
 </tr>
 </tbody>

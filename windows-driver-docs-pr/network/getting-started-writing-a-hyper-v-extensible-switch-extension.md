@@ -35,7 +35,7 @@ To create a Hyper-V Extensible Switch extension, follow these steps:
 
 2.  Set up your development environment.
     -   Install Microsoft Visual Studio Professional 2012.
-    -   Download and install [Windows Driver Kit 8](https://msdn.microsoft.com/en-US/windows/hardware/gg454513).
+    -   Download and install [Windows Driver Kit 8](https://developer.microsoft.com/windows/hardware).
 
 3.  Study the sample extensions.
     -   Download the [NDIS forwarding extension sample](https://go.microsoft.com/fwlink/p/?LinkId=618935).

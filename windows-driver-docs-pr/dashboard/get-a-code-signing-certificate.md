@@ -56,8 +56,8 @@ Once the certificate authority has verified your contact information and your ce
 
 This section provides answers to frequently asked questions about code signing for Windows 10. Additional code signing information is available on the Windows Hardware Certification blog.
 
-- [Driver Signing Changes in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/04/01/driver-signing-changes-in-windows-10/)
-- [Update on Sysdev EV Certificate requirement](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/10/20/update-on-sysdev-ev-certificate-requirement/)
+- [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
+- [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 
 ### HLK Tested and Dashboard Signed Drivers
 

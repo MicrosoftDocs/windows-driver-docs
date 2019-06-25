@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_HID
 
 
-The GUID_DEVINTERFACE_HID [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [HID collections](https://msdn.microsoft.com/windows/hardware/drivers/hid/hid-collections).
+The GUID_DEVINTERFACE_HID [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [HID collections](https://docs.microsoft.com/windows-hardware/drivers/hid/hid-collections).
 
 <table>
 <colgroup>

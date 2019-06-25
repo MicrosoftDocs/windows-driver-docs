@@ -290,7 +290,7 @@ The following table shows the WIA grouped categories and their WIA properties an
 </tr>
 <tr class="odd">
 <td><p>WIA_CATEGORY_AUTO</p></td>
-<td><p>Properties include those for auto-configured scanning. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552744" data-raw-source="[WIA Properties Supported by an Auto Item](https://docs.microsoft.com/windows-hardware/drivers/image/wia-properties-supported-by-an-auto-item)">WIA Properties Supported by an Auto Item</a>.</p></td>
+<td><p>Properties include those for auto-configured scanning. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/image/wia-properties-supported-by-an-auto-item" data-raw-source="[WIA Properties Supported by an Auto Item](https://docs.microsoft.com/windows-hardware/drivers/image/wia-properties-supported-by-an-auto-item)">WIA Properties Supported by an Auto Item</a>.</p></td>
 <td><p>WIA auto item that represents the scanner's auto-configured scanning settings.</p></td>
 </tr>
 </tbody>

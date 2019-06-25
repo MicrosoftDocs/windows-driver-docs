@@ -130,7 +130,7 @@ Other Functions
 <td><p>Enables caller access to a specified print queue.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561930" data-raw-source="[&lt;strong&gt;RefreshPrinterChangeNotification&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff561930(v=vs.85))"><strong>RefreshPrinterChangeNotification</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/ff561930(v=vs.85)" data-raw-source="[&lt;strong&gt;RefreshPrinterChangeNotification&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff561930(v=vs.85))"><strong>RefreshPrinterChangeNotification</strong></a></p></td>
 <td><p>Called by router if client calls <strong>FindNextPrinterChangeNotification</strong> (see the Microsoft Windows SDK documentation) with the PRINTER_NOTIFY_OPTIONS_REFRESH flag set.</p></td>
 </tr>
 <tr class="even">
@@ -528,7 +528,7 @@ Returns the directory path in which print processor files must be stored.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564255" data-raw-source="[&lt;strong&gt;XcvData&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85))"><strong>XcvData</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)" data-raw-source="[&lt;strong&gt;XcvData&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85))"><strong>XcvData</strong></a></p></td>
 <td><p>Provides a communication path between a port monitor UI DLL and a port monitor server DLL.</p></td>
 </tr>
 </tbody>

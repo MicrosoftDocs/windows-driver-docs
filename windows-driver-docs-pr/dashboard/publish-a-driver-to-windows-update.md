@@ -46,7 +46,7 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
    </tr>
    <tr class="even">
    <td><p><strong>Specify the partner (if any) that is allowed visibility into this request</strong></p></td>
-   <td><p>Enter a partner that you want to have read-only permissions to your driver and shipping label. Use this field when you want a partner to be aware of this shipping label request, such as when you publish a driver on their behalf. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt786462" data-raw-source="[Publish a driver on behalf of a partner](https://docs.microsoft.com/previous-versions/mt786462(v=vs.85))">Publish a driver on behalf of a partner</a>.</p></td>
+   <td><p>Enter a partner that you want to have read-only permissions to your driver and shipping label. Use this field when you want a partner to be aware of this shipping label request, such as when you publish a driver on their behalf. For more information, see <a href="https://docs.microsoft.com/previous-versions/mt786462(v=vs.85)" data-raw-source="[Publish a driver on behalf of a partner](https://docs.microsoft.com/previous-versions/mt786462(v=vs.85))">Publish a driver on behalf of a partner</a>.</p></td>
    </tr>
    <tr class="odd">
    <td><p><strong>Driver promotions</strong></p></td>

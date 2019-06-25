@@ -245,7 +245,7 @@ Use the following table to interpret the output and determine what driver code c
 <tr class="even">
 <td align="left"><p>Execute Page Mapping</p></td>
 <td align="left"><p>The caller specified an executable memory descriptor list (MDL) mapping.</p>
-<p> Make sure that the mask that is used contains MdlMappingNoExecute. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554559.aspx" data-raw-source="[MmGetSystemAddressForMdlSafe](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)">MmGetSystemAddressForMdlSafe</a></p>
+<p> Make sure that the mask that is used contains MdlMappingNoExecute. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[MmGetSystemAddressForMdlSafe](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)">MmGetSystemAddressForMdlSafe</a></p>
 </td>
 </tr>
 

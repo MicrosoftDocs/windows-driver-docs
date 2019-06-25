@@ -40,7 +40,7 @@ Many of the [Windows driver support routines](https://docs.microsoft.com/windows
 <tr class="odd">
 <td><p><strong>Hal</strong></p></td>
 <td><p>Hardware abstraction layer</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546596" data-raw-source="[&lt;strong&gt;HalGetAdapter&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff546644(v=vs.85))"><strong>HalGetAdapter</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)" data-raw-source="[&lt;strong&gt;HalGetAdapter&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff546644(v=vs.85))"><strong>HalGetAdapter</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Io</strong></p></td>

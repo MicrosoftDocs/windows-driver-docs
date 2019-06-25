@@ -13,7 +13,7 @@ Windows 8 introduces support for the Bluetooth Low Energy technology.
 
 Bluetooth Low Energy introduces a new physical layer that shares the same frequency space as Bluetooth Basic Rate. Profiles that are developed on this technology are organized into the Generic Attribute Profile (or GATT).
 
-Each profile defines the use of one or more services to create a use case or scenario. Compliant service implementations are constructed from characteristics organized in a way that conforms to the established schema defined on the Bluetooth Special Interest Group [developer website](https://www.bluetooth.com/specifications/gatt/services).
+Each profile defines the use of one or more services to create a use case or scenario. Compliant service implementations are constructed from characteristics organized in a way that conforms to the established schema defined on the Bluetooth Special Interest Group [developer website](https://www.bluetooth.com/specifications/gatt/services/).
 
 The diagram below illustrates the way objects are structured inside a typical GATT service.
 
