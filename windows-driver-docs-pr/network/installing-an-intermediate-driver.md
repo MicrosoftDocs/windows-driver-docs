@@ -20,7 +20,7 @@ Intermediate drivers require two INF files. One of the INF files defines the ins
 
 The protocol INF file is the primary INF file. After the protocol lower edge is installed, the virtual miniport upper edge is installed, based on references to the miniport driver INF file that are defined in the protocol INF file.
 
-On Windows Vista, you can use a notify object or a custom setup application to copy the miniport driver INF file to the system INF directory. For Windows Vista and later operating system versions, you should use the [**INF CopyINF directive**](https://msdn.microsoft.com/library/windows/hardware/ff547317) in the protocol INF file to copy the miniport driver INF file. For more information about the notify object and copying INF files, see [Intermediate Driver Notify Object](intermediate-driver-notify-object.md).
+On Windows Vista, you can use a notify object or a custom setup application to copy the miniport driver INF file to the system INF directory. For Windows Vista and later operating system versions, you should use the [**INF CopyINF directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyinf-directive) in the protocol INF file to copy the miniport driver INF file. For more information about the notify object and copying INF files, see [Intermediate Driver Notify Object](intermediate-driver-notify-object.md).
 
 The system-supplied device setup class for the protocol lower edge is **NetService** for filter intermediate drivers and **NetTrans** for MUX intermediate drivers. The driver class for the virtual miniport is always **Net**.
 

@@ -19,7 +19,7 @@ The Windows driver development environment and the Windows debuggers are integra
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/9673727b-89ef-4a54-8228-dad41dbd8201]
 
-To set up the integrated development environment, first install Visual Studio and then install the WDK. You can find information about how to get Visual Studio and the WDK [here](https://go.microsoft.com/fwlink/p/?linkid=239721). [Debugging Tools for Windows](https://msdn.microsoft.com/Library/Windows/Hardware/Ff551063) is included when you install the WDK.
+To set up the integrated development environment, first install Visual Studio and then install the WDK. You can find information about how to get Visual Studio and the WDK [here](https://go.microsoft.com/fwlink/p/?linkid=239721). [Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) is included when you install the WDK.
 
 The WDK uses MSBuild.exe, which is available both in the Visual Studio user interface and as a command-line tool. Drivers created in the Visual Studio environment use Project and Solution files to describe a project or group of projects. The Visual Studio environment provides a tool for converting legacy Sources and Dirs files to Project and Solution files.
 
@@ -35,5 +35,16 @@ In the Visual Studio environment, you can configure the build process so that it
 
 The topics in this section show you how to use Visual Studio to perform several of the tasks involved in driver development, deployment, and testing.
 
+## Additional Videos
+
+In addition to the video above, you'll find videos on the following pages in the Windows driver docs:
+
+* [Debugging a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/debugging-a-driver)
+* [What's New in HID](https://docs.microsoft.com/windows-hardware/drivers/hid/what-s-new-in-hid)
+* [Capture and view USB traces with Microsoft Message Analyzer](https://docs.microsoft.com/windows-hardware/drivers/usbcon/capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-)
+* [Using the Windows Performance Toolkit (WPT) with WDF](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-the-windows-performance-toolkit--wpt--with-wdf)
+* [Video: Accessing driver IFR logs without a debugger](https://docs.microsoft.com/windows-hardware/drivers/wdf/video--accessing-driver-ifr-logs-without-a-debugger)
+* [Video: Debugging your driver with WDF source code](https://docs.microsoft.com/windows-hardware/drivers/wdf/video--debugging-your-driver-with-wdf-source-code)
+* [Videos: Debugging UMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/videos--debugging-umdf-drivers)
 
 

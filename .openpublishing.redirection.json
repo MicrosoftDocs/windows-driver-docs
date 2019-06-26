@@ -1,6 +1,36 @@
 {
   "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-objects.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/introduction-to-framework-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-general-object-macros.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/wdf-declare-context-type",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/synchronization-techniques-for-wdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/using-automatic-synchronization",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-support-objects.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/using-memory-buffers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/using-the-registry-in-wdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/introduction-to-registry-keys-for-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/security-issues-for-kmdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/dashboard/administration.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
       "redirect_document_id": true
@@ -7533,6 +7563,16 @@
       "source_path": "windows-driver-docs-pr/wdf/wdfdevicestopidlewithtag.md",
       "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidlewithtag",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/bypassing-boot-options.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-for-driver-testing-and-debugging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/introduction-to-boot-options.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-for-driver-testing-and-debugging",
+      "redirect_document_id": true
     }
   ]
 }

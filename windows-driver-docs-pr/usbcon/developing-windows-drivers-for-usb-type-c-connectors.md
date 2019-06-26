@@ -89,11 +89,11 @@ To implementation the proposed solutions in the preceding table, read these topi
 
 [Write a USB role-switch (URS) client driver ](usb-dual-role-driver-stack-architecture.md)
 
-[USB dual-role controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt628026)
+[USB dual-role controller driver programming reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt628026(v=vs.85))
 
 [Write a USB function client driver](developing-windows-drivers-for-usb-function-controllers.md)  
 
-[USB function controller programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188013)
+[USB function controller programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
 ## Related topics
 

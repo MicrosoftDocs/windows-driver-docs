@@ -42,7 +42,7 @@ Returns TRUE if the specified object is of the specified custom type. Otherwise,
 Remarks
 -------
 
-For more information about object custom types, see [Framework Object Custom Types](https://msdn.microsoft.com/library/windows/hardware/hh406457).
+For more information about object custom types, see [Framework Object Custom Types](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-custom-types).
 
 Requirements
 ------------

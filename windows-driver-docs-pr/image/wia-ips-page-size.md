@@ -93,7 +93,7 @@ Requirements
 ## See also
 
 
-[**IWiaMiniDrv::drvValidateItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545017)
+[**IWiaMiniDrv::drvValidateItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties)
 
 [**WIA\_DPS\_PAGE\_SIZE**](wia-dps-page-size.md)
 

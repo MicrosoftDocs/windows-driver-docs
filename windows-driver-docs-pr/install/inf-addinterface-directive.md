@@ -33,7 +33,7 @@ An exported device interface class can be one of the system-defined device inter
 <a href="" id="interfaceclassguid"></a>*InterfaceClassGUID*  
 Specifies the GUID value that identifies the device interface class. This can be expressed as an explicit GUID value of the form **{**<em>nnnnnnnn</em>**-***nnnn***-***nnnn*-*nnnn***-**<em>nnnnnnnnnnnn</em>**}** or as a %*strkey*% token defined to **"{**<em>nnnnnnnn</em>**-***nnnn***-***nnnn*-*nnnn***-**<em>nnnnnnnnnnnn</em>**}"** in a [**Strings**](inf-strings-section.md) section of the INF file.
 
-For more information about how to create a GUID, see [Using GUIDs in Drivers](https://msdn.microsoft.com/library/windows/hardware/ff565392). For the system-defined interface class GUIDS, see the appropriate header, such as *Ks.h* for the kernel-streaming interface GUIDs.
+For more information about how to create a GUID, see [Using GUIDs in Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-guids-in-drivers). For the system-defined interface class GUIDS, see the appropriate header, such as *Ks.h* for the kernel-streaming interface GUIDs.
 
 <a href="" id="reference-string"></a>*reference-string*  
 This optional value, associated with the device-specific instance of the specified interface class, can be expressed either as a **"**<em>quoted string</em>**"** or as a %*strkey*% token defined in an [**INF Strings section**](inf-strings-section.md).
@@ -51,7 +51,7 @@ Remarks
 
 If the [device interface class](device-interface-classes.md) identified by a specified **{**<em>InterfaceClassGUID</em>**}** is not installed already, the system setup code installs that class in the system. Any INF file that installs a new class also has an [**INF InterfaceInstall32 section**](inf-interfaceinstall32-section.md). This section contains the specified **{**<em>InterfaceClassGUID</em>**}** and references an *interface-install-section* that sets up interface-specific installation operations for that class.
 
-To enable an instance of a device interface class for run-time use by higher level components, a device driver must first call [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) to retrieve the symbolic link name of the device interface instance to enable.  Usually, a PnP function or filter driver makes this call from its [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine.  To enable instances of device interfaces provisioned in the INF, the device driver must provide the **{**<em>InterfaceClassGUID</em>**}** and *reference-string* specified in the INF when it calls [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506).  The driver then calls [**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700) to enable the interface using the symbolic link name returned by [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506). 
+To enable an instance of a device interface class for run-time use by higher level components, a device driver must first call [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) to retrieve the symbolic link name of the device interface instance to enable.  Usually, a PnP function or filter driver makes this call from its [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine.  To enable instances of device interfaces provisioned in the INF, the device driver must provide the **{**<em>InterfaceClassGUID</em>**}** and *reference-string* specified in the INF when it calls [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface).  The driver then calls [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate) to enable the interface using the symbolic link name returned by [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface). 
 
 Each **AddInterface** directive in an [**INF DDInstall.Interfaces section**](inf-ddinstall-interfaces-section.md) can reference an INF-writer-defined *add-interface-section* elsewhere in the INF file. Each INF-writer-defined section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -79,7 +79,7 @@ Typically, an *add-interface-section* contains only an [**INF AddReg directive**
 
 An *add-registry-section* referenced within an *add-interface-section* is specific to the instances for the device, driver, and interface. It might have a value entry defining a friendly name for the exported device interface instance so that still higher level components can refer to that interface by its friendly name in the user interface.
 
-An **HKR** specified in such an *add-registry-section* section designates the run-time accessible state registry key for a device interface.  The driver can access state stored in this registry key at runtime by calling [**IoOpenDeviceInterfaceRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff549433) to retrieve a HANDLE to the state registry key.  User mode components can query the state by calling [**CM_Open_Device_Interface_Key**](https://msdn.microsoft.com/library/windows/hardware/hh780223).
+An **HKR** specified in such an *add-registry-section* section designates the run-time accessible state registry key for a device interface.  The driver can access state stored in this registry key at runtime by calling [**IoOpenDeviceInterfaceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) to retrieve a HANDLE to the state registry key.  User mode components can query the state by calling [**CM_Open_Device_Interface_Key**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_open_device_interface_keyw).
 
 Examples
 --------
@@ -152,9 +152,9 @@ ESSAud.Wave.szPname="ESS AudioDrive"
 
 [**InterfaceInstall32**](inf-interfaceinstall32-section.md)
 
-[**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506)
+[**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface)
 
-[**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700)
+[**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate)
 
 [**RenFiles**](inf-renfiles-directive.md)
 

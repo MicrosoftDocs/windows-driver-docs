@@ -16,14 +16,14 @@ As a set request, NDIS and overlying drivers use the OID_TCP_CONNECTION_OFFLOAD_
 
 ## Remarks
 
-The **InformationBuffer** member of the [NDIS_OID_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains an [NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff567876) structure.
+The **InformationBuffer** member of the [NDIS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains an [NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndischimney/ns-ndischimney-_ndis_tcp_connection_offload_parameters) structure.
 
 > [!NOTE]
 > Do not confuse OID_TCP_CONNECTION_OFFLOAD_PARAMETERS with the [OID_TCP_OFFLOAD_PARAMETERS](oid-tcp-offload-parameters.md) OID that administrative applications use to enable or disable TCP offload features.
 
 ### See also
 
-[NDIS_OID_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff566710)  
+[NDIS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)  
 [OID_TCP_OFFLOAD_PARAMETERS](oid-tcp-offload-parameters.md)
 
 ## Requirements

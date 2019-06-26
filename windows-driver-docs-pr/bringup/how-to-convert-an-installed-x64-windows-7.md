@@ -124,8 +124,8 @@ You may need to consult with the OEM for configuration details on your specific 
 
 ## Related resources
 
-[Recommended UEFI-Based Disk-Partition Configurations](https://technet.microsoft.com/library/dd744301)
+[Recommended UEFI-Based Disk-Partition Configurations](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744301(v=ws.10))
 
-[Win7 Back up your programs, system settings, and files](http://windows.microsoft.com/windows/back-up-programs-system-settings-files#1TC=windows-7)
+[Win7 Back up your programs, system settings, and files](https://support.microsoft.com/help/17127/windows-back-up-restore#1TC=windows-7)
 
-[Win7 Protect your files and PC with Windows 7 Backup](https://blogs.technet.microsoft.com/filecab/2009/10/23/protect-your-files-and-pc-with-windows-7-backup/)
+[Win7 Protect your files and PC with Windows 7 Backup](https://techcommunity.microsoft.com/t5/Storage-at-Microsoft/bg-p/FileCAB)

@@ -33,7 +33,7 @@ Where:
 
 -   The **-importPFX** option specifies name of the *.pfx* file (*abc.pfx*).
 
-Once the *.pfx* file is imported into the Personal certificate store on the signing computer, you can use [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) to release-sign [driver packages](driver-packages.md).
+Once the *.pfx* file is imported into the Personal certificate store on the signing computer, you can use [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) to release-sign [driver packages](driver-packages.md).
 
  
 

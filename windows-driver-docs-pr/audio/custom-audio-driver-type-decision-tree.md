@@ -22,7 +22,7 @@ For information about how to develop custom audio drivers and how to choose a po
 <span id="Custom_Audio_Drivers"></span><span id="custom_audio_drivers"></span><span id="CUSTOM_AUDIO_DRIVERS"></span>[Custom Audio Drivers](custom-audio-drivers.md)  
 Provides an overview of PortCls and AVStream audio drivers and discusses the pros and cons of each type.
 
-<span id="AVStream_Overview"></span><span id="avstream_overview"></span><span id="AVSTREAM_OVERVIEW"></span>[AVStream Overview](https://msdn.microsoft.com/library/windows/hardware/ff554240)  
+<span id="AVStream_Overview"></span><span id="avstream_overview"></span><span id="AVSTREAM_OVERVIEW"></span>[AVStream Overview](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-overview)  
 Provides an architectural overview of AVStream-based drivers and highlights the cases where this type of driver is the best choice.
 
 You must also decide about the data format that your audio driver will use and the range of formats it will support. For more information about data formats and ranges, see [Audio Data Formats and Data Ranges](audio-data-formats-and-data-ranges.md).

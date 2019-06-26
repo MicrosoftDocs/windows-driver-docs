@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-If a scanner device supports flatbed platen scanning, it should implement a flatbed scanner item as the first child item, directly off of the root item in its WIA item tree; also, the [**WIA\_IPA\_ITEM\_CATEGORY**](https://msdn.microsoft.com/library/windows/hardware/ff551581) property must be set to WIA\_CATEGORY\_FLATBED. This flatbed item represents a programmable data source and produces an image from the document that is currently placed on the scanner's flatbed platen when a data transfer is requested from this item.
+If a scanner device supports flatbed platen scanning, it should implement a flatbed scanner item as the first child item, directly off of the root item in its WIA item tree; also, the [**WIA\_IPA\_ITEM\_CATEGORY**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-category) property must be set to WIA\_CATEGORY\_FLATBED. This flatbed item represents a programmable data source and produces an image from the document that is currently placed on the scanner's flatbed platen when a data transfer is requested from this item.
 
 A scanner that supports only flatbed platen scanning has the WIA item tree that the following figure shows.
 

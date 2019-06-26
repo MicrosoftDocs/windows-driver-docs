@@ -58,17 +58,17 @@ The operating system supplies service providers that NDIS WAN or CoNDIS WAN mini
 
 KMDDSP (Kmddsp.tsp) is a service provider DLL that runs in the context of the TAPI service process. KMDDSP provides a TSPI interface that the TAPI service presents to [TAPI-aware applications](#ddk-tapi-aware-applications-ng) so that [NDISTAPI](#ddk-ndistapi-ng) can communicate with user-mode applications.
 
-KMDDSP works with NDISTAPI to convert user-mode requests to corresponding TAPI OIDs (OID\_TAPI\_*Xxx*). For more information about TAPI OIDs, see [TAPI Objects](https://msdn.microsoft.com/library/windows/hardware/ff564235).
+KMDDSP works with NDISTAPI to convert user-mode requests to corresponding TAPI OIDs (OID\_TAPI\_*Xxx*). For more information about TAPI OIDs, see [TAPI Objects](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff564235(v=vs.85)).
 
 ### <a href="" id="ddk-ndptsp-ng"></a>NDPTSP
 
 NDPTSP (Ndptsp.tsp) is a service provider DLL that runs in the context of the TAPI service process. NDPTSP provides a TSPI interface that the TAPI service presents to TAPI-aware applications so that [NDPROXY](#ddk-ndproxy-ng) can communicate with user-mode applications.
 
-NDPTSP works with NDPROXY to convert user-mode requests to TAPI connection-oriented OIDs (OID\_CO\_TAPI\_*Xxx*). For more information about TAPI connection-oriented OIDs, see [TAPI Extensions for Connection-Oriented NDIS](https://msdn.microsoft.com/library/windows/hardware/ff570924).
+NDPTSP works with NDPROXY to convert user-mode requests to TAPI connection-oriented OIDs (OID\_CO\_TAPI\_*Xxx*). For more information about TAPI connection-oriented OIDs, see [TAPI Extensions for Connection-Oriented NDIS](https://docs.microsoft.com/windows-hardware/drivers/network/tapi-extension-oids-for-connection-oriented-ndis).
 
 ### <a href="" id="ddk-ndistapi-ng"></a>NDISTAPI
 
-NDISTAPI (Ndistapi.sys) receives TAPI requests from [KMDDSP](#ddk-kmddsp-ng) and then calls [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710) to route the corresponding TAPI OIDs to NDIS WAN miniport drivers. For more information about NDISTAPI, see [NDISTAPI Overview](ndistapi-overview.md).
+NDISTAPI (Ndistapi.sys) receives TAPI requests from [KMDDSP](#ddk-kmddsp-ng) and then calls [**NdisOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisoidrequest) to route the corresponding TAPI OIDs to NDIS WAN miniport drivers. For more information about NDISTAPI, see [NDISTAPI Overview](ndistapi-overview.md).
 
 ### <a href="" id="ddk-ndproxy-ng"></a>NDPROXY
 

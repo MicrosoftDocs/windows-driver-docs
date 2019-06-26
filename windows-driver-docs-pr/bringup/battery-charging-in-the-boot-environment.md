@@ -166,7 +166,7 @@ The left side of the diagram shows all thresholds that affect the user experienc
 <tr class="even">
 <td><p>Main OS shut down threshold</p></td>
 <td><p>This is the threshold at which the software safely shuts the device off. It is required to prevent system memory corruption.</p></td>
-<td><p>The OEM must set this threshold to be lower than the <em>Boot to Main OS threshold</em> and lower than the <em>Main OS warning threshold</em>. In addition, this threshold must be greater than or equal to 2%. This threshold is defined by the <strong>DefaultAlert1</strong> member of the <a href="https://msdn.microsoft.com/library/windows/desktop/aa372661.aspx" data-raw-source="[BATTERY_INFORMATION](https://msdn.microsoft.com/library/windows/desktop/aa372661.aspx)">BATTERY_INFORMATION</a> struct. Contact the SoC vendor for details on how to modify this threshold.</p></td>
+<td><p>The OEM must set this threshold to be lower than the <em>Boot to Main OS threshold</em> and lower than the <em>Main OS warning threshold</em>. In addition, this threshold must be greater than or equal to 2%. This threshold is defined by the <strong>DefaultAlert1</strong> member of the <a href="https://docs.microsoft.com/windows/desktop/Power/battery-information-str" data-raw-source="[BATTERY_INFORMATION](https://docs.microsoft.com/windows/desktop/Power/battery-information-str)">BATTERY_INFORMATION</a> struct. Contact the SoC vendor for details on how to modify this threshold.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Hardware shut down threshold</p></td>

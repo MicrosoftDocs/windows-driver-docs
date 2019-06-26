@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE
 
-The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn917962) enumeration provides OEMs with capabilities to fine tune the scene mode along with any other ISP control parameters as needed.
+The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration provides OEMs with capabilities to fine tune the scene mode along with any other ISP control parameters as needed.
 
 ## Usage summary table
 

@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 The IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers.
 
-Unlike [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md) requests, IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL requests are used only for communication among kernel-mode components. While an IRP\_MJ\_DEVICE\_CONTROL request usually originates with a call to **DeviceIoControl** or [**ZwDeviceIoControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566441), these routines cannot create IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL requests. However, both types of IRP can be created by calling [**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318).
+Unlike [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md) requests, IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL requests are used only for communication among kernel-mode components. While an IRP\_MJ\_DEVICE\_CONTROL request usually originates with a call to **DeviceIoControl** or [**ZwDeviceIoControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566441), these routines cannot create IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL requests. However, both types of IRP can be created by calling [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest).
 
 ## Operation: File System Drivers
 
@@ -36,7 +36,7 @@ The filter driver should perform any needed processing and, depending on the nat
 ## Parameters
 
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174) with the given IRP to get a pointer to its own [**stack location**](https://msdn.microsoft.com/library/windows/hardware/ff550659) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a device control request:
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a device control request:
 
 <a href="" id="deviceobject"></a>*DeviceObject*  
 Pointer to the target device object.
@@ -45,7 +45,7 @@ Pointer to the target device object.
 Pointer to a system-supplied input buffer to be passed to the device driver for the target device. Used for METHOD\_BUFFERED or METHOD\_DIRECT I/O. Whether this parameter is required depends on the specific I/O control code.
 
 <a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*  
-Pointer to an [**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671) structure that receives the final completion status and information about the requested operation. For more information, see the description of the *IoStatusBlock* parameter to [**ZwDeviceIoControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566441).
+Pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation. For more information, see the description of the *IoStatusBlock* parameter to [**ZwDeviceIoControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566441).
 
 <a href="" id="irp--mdladdress"></a>*Irp-&gt;MdlAddress*  
 Address of a memory descriptor list (MDL) that describes an output buffer to be passed to the device driver for the target device. Used for METHOD\_DIRECT I/O. Whether this parameter is required depends on the specific I/O control code.
@@ -70,7 +70,7 @@ Size in bytes of the buffer pointed to by *Irp-&gt;AssociatedIrp.SystemBuffer*.
 <a href="" id="irpsp--parameters-deviceiocontrol-iocontrolcode"></a>*IrpSp-&gt;Parameters.DeviceIoControl.IoControlCode*  
 IOCTL function code to be passed to the device driver for the target device.
 
-For detailed information about IOCTL requests, see [Using I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff565406) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation.
+For detailed information about IOCTL requests, see [Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation.
 
 <a href="" id="irpsp--parameters-deviceiocontrol-outputbufferlength"></a>*IrpSp-&gt;Parameters.DeviceIoControl.OutputBufferLength*  
 Size in bytes of the buffer pointed to by *Irp-&gt;UserBuffer*.
@@ -81,23 +81,23 @@ Input buffer for kernel-mode requests using METHOD\_NEITHER.
 ## See also
 
 
-[**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659)
+[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671)
+[**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block)
 
-[**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318)
+[**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest)
 
-[**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174)
+[**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
-[**IoGetFunctionCodeFromCtlCode**](https://msdn.microsoft.com/library/windows/hardware/ff549236)
+[**IoGetFunctionCodeFromCtlCode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetfunctioncodefromctlcode)
 
-[**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694)
+[**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp)
 
 [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md)
 
-[**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL (WDK Kernel Reference)**](https://msdn.microsoft.com/library/windows/hardware/ff550766)
+[**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL (WDK Kernel Reference)**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
-[Using I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff565406)
+[Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes)
 
 [**ZwDeviceIoControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566441)
 

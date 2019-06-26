@@ -21,14 +21,14 @@ WDI\_TLV\_BSSID is a TLV that contains the BSSID of a BSS.
 ## Length
 
 
-The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) structure.
+The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) structure.
 
 ## Values
 
 
 | Type                                              | Description                                 |
 |---------------------------------------------------|---------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) | A Wi-Fi MAC address that specifies a BSSID. |
+| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) | A Wi-Fi MAC address that specifies a BSSID. |
 
  
 

@@ -129,7 +129,7 @@ PCIe will support snooping. It will now be possible to map such shared memory as
 You cannot plug an x16 graphics card into an x8 slot. You can however, if you wish, plug an x8 card PCIe card into an x16 slot. A p-lane PCIe card will work at some speed in an n-lane PCIe slot, where n &gt; p. This is not true if n &lt; p.
 
 ## Related topics
-[PCI-SIG](http://www.pcisig.com)  
+[PCI-SIG](http://pcisig.com/)  
 
 
 

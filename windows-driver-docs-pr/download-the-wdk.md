@@ -31,9 +31,17 @@ The following editions of Visual Studio 2019 support driver development:
 * [Download Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16)
 * [Download Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16)
 
-When you install Visual Studio, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane.
+When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. However, the version of the SDK that is compatible with the WDK for Windows 10, version 1903 is not currently the default SDK. To select the correct SDK:
+
+* In **Visual Studio Installer**, on the **Workloads** tab, under **Installation Details**, expand **Universal Windows Platform development**.
+* Under **Optional**, select **Windows 10 Preview SDK (10.0.18362.0)**.
+* Continue with the install.
+
+If you already have Visual Studio 2019 installed, you can install the Windows 10 Preview SDK (10.0.18362.0) by using the **Modify** button in Visual Studio install.
 
 For ARM/ARM64 driver development, choose **Individual components** and under **Compilers, build tools, and runtimes** select **Visual C++ compilers and libraries for ARM/ARM64**.
+
+For each architecture you intend to build drivers for, install the Spectre mitigated libraries thru Individual Components -> Compilers, build tools, and runtimes -> MSVC v142 - VS 2019 C+ x64/x86 Spectre-mitigated libs (v14.21).
 
 ### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 1903
 
@@ -78,7 +86,7 @@ To get universal Windows driver samples, do one of the following:
 
 * [Download the WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
 * [Download previous versions of the WDK](other-wdk-downloads.md)
-* [Download the Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
-* [Download the Windows HLK, HCK, or Logo Kit](https://developer.microsoft.com/windows/hardware/windows-hardware-lab-kit)
-* [Download the debugging Tools for Windows (WinDbg)](https://developer.microsoft.com/windows/hardware/download-windbg)
-* [Download Windows Symbol Packages](https://developer.microsoft.com/windows/hardware/download-symbols)
+* [Download the Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+* [Download the Windows HLK, HCK, or Logo Kit](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)
+* [Download the debugging Tools for Windows (WinDbg)](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)
+* [Download Windows Symbol Packages](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-symbols)

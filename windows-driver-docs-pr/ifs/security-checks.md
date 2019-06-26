@@ -30,9 +30,9 @@ This section includes the following topics:
 
 [IRP\_MJ\_DIRECTORY\_CONTROL](irp-mj-directory-control2.md)
 
-[IRP\_MJ\_FILE\_SYSTEM\_CONTROL](https://msdn.microsoft.com/library/windows/hardware/ff548670)
+[IRP\_MJ\_FILE\_SYSTEM\_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-file-system-control)
 
-[IRP\_MJ\_SET\_INFORMATION](https://msdn.microsoft.com/library/windows/hardware/ff549366)
+[IRP\_MJ\_SET\_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-set-information)
 
 [Impersonation](impersonation.md)
 

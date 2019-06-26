@@ -41,7 +41,7 @@ The SCSI Port driver provides the following capabilities:
 
 -   Providing class drivers with information about host adapter limitations.
 
-    It is the responsibility of the class driver to regulate the size of data transfers to suit the limits of the host bus adapters (HBA). However, SCSI Port provides the class driver with the information it needs to accomplish this task. SCSI Port furnishes this information in an adapter descriptor ([**STORAGE\_ADAPTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff566346)) in response to an [**IOCTL\_STORAGE\_QUERY\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff560590) IOCTL request. The class driver is responsible for breaking requests up into chunks of the appropriate size based on the information reported in this descriptor.
+    It is the responsibility of the class driver to regulate the size of data transfers to suit the limits of the host bus adapters (HBA). However, SCSI Port provides the class driver with the information it needs to accomplish this task. SCSI Port furnishes this information in an adapter descriptor ([**STORAGE\_ADAPTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_storage_adapter_descriptor)) in response to an [**IOCTL\_STORAGE\_QUERY\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_query_property) IOCTL request. The class driver is responsible for breaking requests up into chunks of the appropriate size based on the information reported in this descriptor.
 
 -   Translating bus relative addresses to logical addresses.
 
@@ -63,15 +63,15 @@ The SCSI Port driver provides the following capabilities:
 
 SCSI Port provides services to the miniport driver by means of the SCSI Port library routines. Miniport driver writers can call these routines rather than coding the functionality that they provide into a single monolithic port driver. Some of the most important services afforded by using these routines are as follows:
 
--   A SCSI Port miniport driver can delegate many OS-dependent initialization operations to SCSI Port's [**ScsiPortInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff564645) library routine. This makes a SCSI Port miniport driver more portable across different versions of the operating system. For an explanation of the initialization duties of a SCSI Port miniport driver, see [SCSI Miniport Driver's DriverEntry Routine](scsi-miniport-driver-s-driverentry-routine.md).
+-   A SCSI Port miniport driver can delegate many OS-dependent initialization operations to SCSI Port's [**ScsiPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportinitialize) library routine. This makes a SCSI Port miniport driver more portable across different versions of the operating system. For an explanation of the initialization duties of a SCSI Port miniport driver, see [SCSI Miniport Driver's DriverEntry Routine](scsi-miniport-driver-s-driverentry-routine.md).
 
--   SCSI Port miniport drivers for non-PnP devices are spared the task of locating adapters and reporting their resources to the PnP manager. This is done in [**ScsiPortInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff564645).
+-   SCSI Port miniport drivers for non-PnP devices are spared the task of locating adapters and reporting their resources to the PnP manager. This is done in [**ScsiPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportinitialize).
 
--   SCSI Port miniport drivers do not initialize dispatch entry points in the driver object. The SCSI Port driver does this on behalf of the miniport driver when the miniport driver calls [**ScsiPortInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff564645).
+-   SCSI Port miniport drivers do not initialize dispatch entry points in the driver object. The SCSI Port driver does this on behalf of the miniport driver when the miniport driver calls [**ScsiPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportinitialize).
 
--   SCSI Port miniport drivers do not convert bus-relative addresses to logical addresses using [**HalTranslateBusAddress**](https://msdn.microsoft.com/library/windows/hardware/ff546637). SCSI Port miniport drivers do this by a call to [**ScsiPortGetDeviceBase**](https://msdn.microsoft.com/library/windows/hardware/ff564629).
+-   SCSI Port miniport drivers do not convert bus-relative addresses to logical addresses using [**HalTranslateBusAddress**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)). SCSI Port miniport drivers do this by a call to [**ScsiPortGetDeviceBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportgetdevicebase).
 
-For a complete list of the library routines that SCSI Port makes available to SCSI Port miniport drivers, see [SCSI Port Library Routines](https://msdn.microsoft.com/library/windows/hardware/ff565375).
+For a complete list of the library routines that SCSI Port makes available to SCSI Port miniport drivers, see [SCSI Port Library Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
  
 

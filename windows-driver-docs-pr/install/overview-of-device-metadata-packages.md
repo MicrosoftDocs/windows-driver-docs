@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 
 # Overview of Device Metadata Packages
 
+Starting with Windows 7, device metadata packages contain XML documents that represent the properties of the device and its hardware functions. The Devices and Printers user interface displays device-specific information to the user based on the XML documents from the device's metadata package.
 
 A device metadata package consists of multiple XML documents, and each document specifies various components of the device's attributes.
 
@@ -28,12 +29,12 @@ Each device metadata package consists of the following components:
 <a href="" id="packageinfo-xml-document"></a>[PackageInfo XML document](packageinfo-xml-document.md)  
 This document contains data that specifies the contents of the device metadata package. The operating system uses this data to install the package and reference its contents.
 
-This data is formatted based on the [PackageInfo XML schema](https://msdn.microsoft.com/library/windows/hardware/ff549614).
+This data is formatted based on the [PackageInfo XML schema](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff549614(v=vs.85)).
 
 <a href="" id="deviceinfo-xml-document"></a>[DeviceInfo XML document](deviceinfo-xml-document.md)  
 This document contains data that specifies the device's properties, such as device category and model name. The Devices and Printers user interface uses this data to show detailed information about the device.
 
-This data is formatted based on the [DeviceInfo XML schema](https://msdn.microsoft.com/library/windows/hardware/ff541135).
+This data is formatted based on the [DeviceInfo XML schema](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff541135(v=vs.85)).
 
 <a href="" id="device-icon-file"></a>[Device icon file](device-icon-file.md)  
 This file contains a photo-realistic image that represents the device in the Devices and Printers user interface.
@@ -41,7 +42,7 @@ This file contains a photo-realistic image that represents the device in the Dev
 <a href="" id="windowsinfo-xml-document"></a>[WindowsInfo XML document](windowsinfo-xml-document.md)  
 This document contains data that specifies the display actions that the Devices and Printers user interface performs for the specified device in the device metadata package.
 
-This data is formatted based on the [WindowsInfo XML Schema](https://msdn.microsoft.com/library/windows/hardware/ff553992).
+This data is formatted based on the [WindowsInfo XML Schema](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff553992(v=vs.85)).
 
 Each device metadata package has its components compressed into a single file by using the Cabarc (*Cabarc.exe*) tool. For more information about this tool, see to the [Cabarc Overview](https://go.microsoft.com/fwlink/p/?linkid=145395) website.
 

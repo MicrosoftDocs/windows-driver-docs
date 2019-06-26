@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # headerPath XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
 
 The **headerPath** XML element specifies the source file name for a custom header bitmap that DPInst displays in the upper-right corner of the DPInst EULA page and DPInst installation page.
 

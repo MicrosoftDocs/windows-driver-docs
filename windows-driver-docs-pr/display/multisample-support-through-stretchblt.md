@@ -25,7 +25,7 @@ When the driver sets the D3DPRASTERCAPS\_STRETCHBLTMULTISAMPLE bit, it indicates
 
 -   Is nonresponsive to requests from applications to modify samples in a multisample render target. That is, it does not respond to setting the bitmask of the D3DRS\_MULTISAMPLEMASK device render state (D3DRENDERSTATETYPE).
 
-It is important to note that if the driver uses a stretch blt to perform a page flip in fullscreen mode, the driver should specify the supported sample counts in the **wFlipMSTypes** member of the [**DDPIXELFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff550274)'s **MultiSampleCaps** structure and not the **wBltMSTypes** member as a flip is being performed.
+It is important to note that if the driver uses a stretch blt to perform a page flip in fullscreen mode, the driver should specify the supported sample counts in the **wFlipMSTypes** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat)'s **MultiSampleCaps** structure and not the **wBltMSTypes** member as a flip is being performed.
 
  
 

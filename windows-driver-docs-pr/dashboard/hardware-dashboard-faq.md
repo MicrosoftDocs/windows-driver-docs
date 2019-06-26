@@ -13,7 +13,7 @@ This article provides answers to frequently asked questions about the Partner Ce
 
 ## How do I contact Partner Center Support?
 
-If you are having problems accessing the Dashboard or need Dashboard Support please open a support ticket here: https://developer.microsoft.com/windows/support.  Select **Contact us**,  **Dashboard issue**, and then **Hardware submissions & signing (all OS version)** from the dropdown.
+If you are having problems accessing the Dashboard or need Dashboard Support please open a support ticket here: https://developer.microsoft.com/windows/support.  Select **Contact us**,  **Dashboard issue**, and then **Hardware submissions & signing (all OS version)** from the dropdown.  Live Chat and Email support hours are 8am-8pm CST Monday-Friday.  SLA for an initial response is 24-48 hours for email support.
 
 ## Can I associate multiple certificates with a dashboard account?
 
@@ -96,4 +96,4 @@ This error is caused when the uploaded archive's filetype is .zip64 instead of .
 
 ### The DUA package error shows "Failed to open package" with the error “Not compatible with a version (3.2.0.0) with this instance package manager”
 
-* Use [HLK studio](https://msdn.microsoft.com/library/windows/hardware/dn939927) to open the downloaded DUA shell package and to create DUA submission.
+* Use [HLK studio](https://docs.microsoft.com/windows-hardware/test/hlk/user/install-standalone-hlk-studio) to open the downloaded DUA shell package and to create DUA submission.

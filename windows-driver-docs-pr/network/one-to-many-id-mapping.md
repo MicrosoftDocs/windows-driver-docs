@@ -84,7 +84,7 @@ If the registry keys or values for an adapter instance are identical for differe
 
 The most effective way of handling this situation is as follows:
 
-1.  The network migration DLL's [**PreUpgradeInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff562439) function modifies the registry so that the registry contains unique values for each instance of the network adapter. These unique values should indicate the adapter type.
+1.  The network migration DLL's [**PreUpgradeInitialize**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff562439(v=vs.85)) function modifies the registry so that the registry contains unique values for each instance of the network adapter. These unique values should indicate the adapter type.
 
 2.  The **PreUpgradeInitialize** function sets the NUA\_REQUEST\_ABORT\_UPGRADE flag, which causes NetSetup to display a message that prompts the user to restart winnt32.exe and abort the upgrade.
 

@@ -111,7 +111,7 @@ For more information about notification filtering, see [Enabling mobile operator
 ## <span id="DevelopSMSApp"></span><span id="developsmsapp"></span><span id="DEVELOPSMSAPP"></span>Developing your SMS app
 
 
-You can write JavaScript, C#, or C++ apps that use the [**Windows.Devices.Sms**](https://msdn.microsoft.com/library/windows/apps/br206567) API to send, read, and delete messages.
+You can write JavaScript, C#, or C++ apps that use the [**Windows.Devices.Sms**](https://docs.microsoft.com/uwp/api/Windows.Devices.Sms) API to send, read, and delete messages.
 
 **Note**  
 The Windows 7 Mobile Broadband SMS API provided only a low-level modem interface for SMS. Windows 8, Windows 8.1, and Windows 10 provide an alternate text-mode interface that is suitable for general app development.

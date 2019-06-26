@@ -1,6 +1,8 @@
 - name: "Network Adapter WDF Class Extension (NetAdapterCx)"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "Network Adapter WDF Class Extension (NetAdapterCx)"
+    href: index.md
   - name: "Porting NDIS miniport drivers to NetAdapterCx"
     href: porting-ndis-miniport-drivers-to-netadaptercx.md
   - name: "Building a NetAdapterCx client driver"
@@ -8,8 +10,10 @@
   - name: "INF files for NetAdapterCx client drivers"
     href: inf-files-for-netadaptercx-client-drivers.md
   - name: "Managing the lifetime of objects in NetAdapterCx"
-    href: managing-the-lifetime-of-objects-in-netadaptercx.md
+# Auto-expanded node
     items: 
+    - name: "Managing the lifetime of objects in NetAdapterCx"
+      href: managing-the-lifetime-of-objects-in-netadaptercx.md
     - name: "Summary of NetAdapterCx objects"
       href: summary-of-netadaptercx-objects.md
     - name: "Device and adapter initialization"
@@ -25,8 +29,10 @@
   - name: "Debugging a NetAdapterCx client driver"
     href: debugging-a-netadaptercx-client-driver.md
   - name: "Transferring network data"
-    href: transferring-network-data.md
+# Auto-expanded node
     items: 
+    - name: "Transferring network data"
+      href: transferring-network-data.md
     - name: "Packet descriptors and extensions"
       href: packet-descriptors-and-extensions.md
     - name: "NetAdapterCx hardware offloads"
@@ -36,14 +42,18 @@
     - name: "Network data buffer management"
       href: network-data-buffer-management.md
     - name: "Net rings and net ring iterators"
-      href: net-rings-and-net-ring-iterators.md
+# Auto-expanded node
       items:
+      - name: "Net rings and net ring iterators"
+        href: net-rings-and-net-ring-iterators.md
       - name: "Sending network data with net rings"
         href: sending-network-data-with-net-rings.md
       - name: "Receiving network data with net rings"
         href: receiving-network-data-with-net-rings.md
       - name: "Canceling network data with net rings"
         href: canceling-network-data-with-net-rings.md
+      - name: "Net ring element management"
+        href: "net-ring-element-management.md"
   - name: "NetAdapterCx receive side scaling (RSS)"
     href: netadaptercx-receive-side-scaling-rss-.md
   - name: "Configuring power management"
@@ -53,7 +63,9 @@
   - name: "NetAdapterCx limitations"
     href: netadaptercx-limitations.md
   - name: "Mobile Broadband (MBB) WDF class extension (MBBCx)"
-    href: mobile-broadband-mbb-wdf-class-extension-mbbcx.md
+# Auto-expanded node
     items: 
+    - name: "Mobile Broadband (MBB) WDF class extension (MBBCx)"
+      href: mobile-broadband-mbb-wdf-class-extension-mbbcx.md
     - name: "Writing an MBBCx client driver"
       href: writing-an-MBBcx-client-driver.md

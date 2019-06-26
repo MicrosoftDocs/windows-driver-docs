@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-An intermediate driver must support dynamic binding to underlying miniport adapters by providing both a [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) and a [*ProtocolUnbindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570278) function.
+An intermediate driver must support dynamic binding to underlying miniport adapters by providing both a [*ProtocolBindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_bind_adapter_ex) and a [*ProtocolUnbindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_unbind_adapter_ex) function.
 
 When a miniport adapter becomes available, NDIS calls the *ProtocolBindAdapterEx* function of any intermediate driver that can bind to that miniport adapter. As part of the binding operation, the intermediate driver should initialize a virtual miniport that is associated with that miniport adapter. When a miniport adapter is removed, NDIS calls the *ProtocolUnbindAdapterEx* function of any intermediate driver that is bound to that miniport adapter.
 

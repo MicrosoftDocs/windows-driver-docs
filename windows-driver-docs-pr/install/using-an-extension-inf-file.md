@@ -58,7 +58,7 @@ Note that extension INF files are always applied after the base INF, but that th
 
 Here are the entries you need to define an INF as an extension INF.
 
-1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section. For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://msdn.microsoft.com/library/windows/hardware/ff553426).
+1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section. For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
 
     ```cpp
     [Version]
@@ -77,6 +77,9 @@ Note that an organization may only use an **ExtensionID** that it owns.  For inf
 
 3.  If you are updating an extension INF, keep the **ExtensionId** the same and increment the version or date (or both) specified by the [**DriverVer**](inf-driverver-directive.md) directive. For a given **ExtensionId** value, PnP selects the INF with the highest **DriverVer**.
 
+>[!NOTE]
+> If your extension INF targets Windows 10 S, see [Windows 10 in S mode Driver Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/windows10sdriverrequirements) for information about driver installation on that version of Windows.
+
 4.  In the [**INF Models section**](inf-models-section.md), specify one or more hardware and compatible IDs that match those of the target device.  Note that these hardware and compatible IDs do not need to match those of the base INF.  Typically, an extension INF lists a more specific hardware ID than the base INF, with the goal of further specializing a specific driver configuration.  For example, the base INF might use a two-part PCI hardware ID, while the extension INF specifies a four-part PCI hardware ID, like the following:
     
     ```cpp
@@ -92,7 +95,7 @@ Note that an organization may only use an **ExtensionID** that it owns.  For inf
 
 In most cases, you'll submit an extension INF package to the Hardware Dev Center separately from the base driver package.  For examples on how to package extension INFs, as well as links to sample code, see [Universal Driver Scenarios](../develop/universal-driver-scenarios.md).
 
-The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn915002).
+The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
 ## Uninstalling an extension driver
 
@@ -222,65 +225,7 @@ OsrFx2.ExtensionDesc = "OsrFx2 DCHU Device Extension"
 REG_EXPAND_SZ = 0x00020000
 FLG_ADDREG_KEYONLY = 0x00000010
 ```
-
-## Example 3: Using an extension INF to install a filter driver
-
-You can also use an extension INF to install a filter driver for a device that uses system-supplied device drivers. The extension INF specifies the hardware ID of the device, and provides the service and filter driver settings.
-
-The following code snippet shows how to use an extension INF to install a filter driver.
-
-```cpp
-[Version]
-Signature   = "$WINDOWS NT$"
-Class       = Extension
-ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
-Provider    = %CONTOSO%
-ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUID
-DriverVer   = 05/28/2013,1.0.0.0
-CatalogFile = delta.cat
-
-[Manufacturer]
-%CONTOSO% = DeviceExtensions,NTx86
-
-[DeviceExtensions.NTx86]
-%Device.ExtensionDesc% = DeviceExtension_Install,PCI\VEN_XXXX&DEV_XXXX&SUBSYS_XXXXXXXX&REV_XXXX
-
-[DeviceExtension_Install]
-CopyFiles = Filter_CopyFiles
-
-[DeviceExtension_Install.HW]
-AddReg = DeviceExtensionFilter_AddReg
-
-[DeviceExtensionFilter_AddReg]
-HKR,,"UpperFilters",0x00010008,"fltsample" 
-
-[DeviceExtension_Install.Services]
-AddService = fltsample,,FilterService_Install
-
-[FilterService_Install]
-DisplayName   = %FilterSample.ServiceDesc%
-ServiceType   = 1   ; SERVICE_KERNEL_DRIVER
-StartType     = 3   ; SERVICE_DEMAND_START
-ErrorControl  = 1   ; SERVICE_ERROR_NORMAL
-ServiceBinary = %12%\fltsample.sys
-
-[Filter_CopyFiles]
-fltsample.sys
-
-[SourceDisksFiles]
-fltsample.sys = 1
-
-[SourceDisksNames]
-1 = Disk
-
-[DestinationDirs]
-Filter_CopyFiles = 12
-
-[Strings]
-CONTOSO                  = "Contoso"
-Device.ExtensionDesc     = "Sample Extension Device"
-FilterSample.ServiceDesc = "Sample Upper Filter"
-```
+To use an Extension INF to install a filter driver, please see [this page](https://docs.microsoft.com/windows-hardware/drivers/develop/device-filter-driver-ordering) that details how to properly register a filter driver using Extension INF's.
 
 ##  Submitting an extension INF for certification
 

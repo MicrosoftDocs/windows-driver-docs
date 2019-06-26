@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to respond t
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_PIN\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567911) structure.
+This notification uses the [**NDIS\_WWAN\_PIN\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info) structure.
 
 Remarks
 -------

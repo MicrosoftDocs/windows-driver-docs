@@ -22,9 +22,9 @@ The audio module on the MITT board is used to detect errors that occur at the tr
 ## Before you begin...
 
 
--   Get a MITT board and an audio adapter. See [Buy hardware for using MITT](https://msdn.microsoft.com/library/windows/hardware/dn919811).
--   [Download the MITT software package](https://msdn.microsoft.com/library/windows/hardware/dn919810). Install it on the system under test.
--   Install MITT firmware on the MITT board. See [Get started with MITT](https://msdn.microsoft.com/library/windows/hardware/dn919779).
+-   Get a MITT board and an audio adapter. See [Buy hardware for using MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/multi-interface-test-tool--mitt--).
+-   [Download the MITT software package](https://docs.microsoft.com/previous-versions/dn919810(v=vs.85)). Install it on the system under test.
+-   Install MITT firmware on the MITT board. See [Get started with MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/get-started-with-mitt---).
 
 ## Hardware setup
 

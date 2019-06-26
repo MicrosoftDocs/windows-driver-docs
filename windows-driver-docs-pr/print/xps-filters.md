@@ -22,9 +22,9 @@ An XPS filter is a DLL that exports [DllGetClassObject](https://go.microsoft.com
 
 -   Calls **DllGetClassObject** to obtain a reference to the filter object's [IClassFactory](https://go.microsoft.com/fwlink/p/?linkid=123420) interface.
 
--   Calls the [IClassFactory::CreateInstance](https://go.microsoft.com/fwlink/p/?linkid=123421) method to obtain a reference to the filter object's [IPrintPipelineFilter](https://msdn.microsoft.com/library/windows/hardware/ff554286) interface.
+-   Calls the [IClassFactory::CreateInstance](https://go.microsoft.com/fwlink/p/?linkid=123421) method to obtain a reference to the filter object's [IPrintPipelineFilter](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-iprintpipelinefilter) interface.
 
--   Calls the [**IPrintPipelineFilter::InitializeFilter**](https://msdn.microsoft.com/library/windows/hardware/ff554291) method to initialize the filter object.
+-   Calls the [**IPrintPipelineFilter::InitializeFilter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-iprintpipelinefilter-initializefilter) method to initialize the filter object.
 
 Before unloading the filter DLL, the filter pipeline manager calls **DllCanUnloadNow**.
 

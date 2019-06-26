@@ -19,7 +19,7 @@ This section discusses the following topics:
 
 [V4 Printer Driver Security Considerations](v4-printer-driver-security-considerations.md)
 
-For more information about printer driver development best practices, see [Best Practices Guide for Developing Printer Drivers](https://msdn.microsoft.com/library/windows/hardware/gg463348.aspx).
+For more information about printer driver development best practices, see [Best Practices Guide for Developing Printer Drivers](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn653553(v=vs.85)).
 
  
 

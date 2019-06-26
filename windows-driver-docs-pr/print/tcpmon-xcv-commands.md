@@ -27,7 +27,7 @@ ms.localizationpriority: medium
 
 
 
-This section describes the commands that can be specified in a call to the [**XcvData**](https://msdn.microsoft.com/library/windows/hardware/ff564255) or [**XcvDataPort**](https://msdn.microsoft.com/library/windows/hardware/ff564258) function, when it is communicating with the standard TCP/IP port monitor (TCPMON). Each command is specified by the *pszDataName* string in the call to these functions. Certain commands require an input buffer, or an output buffer, or both. The *pInputData* and *pOutputData* parameters of these functions hold the addresses of these buffers.
+This section describes the commands that can be specified in a call to the [**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) or [**XcvDataPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-xcvdataport) function, when it is communicating with the standard TCP/IP port monitor (TCPMON). Each command is specified by the *pszDataName* string in the call to these functions. Certain commands require an input buffer, or an output buffer, or both. The *pInputData* and *pOutputData* parameters of these functions hold the addresses of these buffers.
 
 The table that appears in the description of each of the following commands lists the **XcvData** and **XcvDataPort** parameters that are used with the commands. Note that the *hXcv* parameter (common to both functions) is not listed, nor is the **XcvData** function's *pdwStatus* parameter.
 
@@ -53,7 +53,7 @@ The **AddPort** command adds a standard TCP/IP port, which can be either an LPR 
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559892" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559892)"><strong>PORT_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbInputData</em></p></td>
@@ -76,7 +76,7 @@ The **AddPort** command adds a standard TCP/IP port, which can be either an LPR 
 
  
 
-[**XcvData**](https://msdn.microsoft.com/library/windows/hardware/ff564255) returns NO\_ERROR if it can add the port. In addition to the normal error codes, **XcvData** returns ERROR\_ACCESS\_DENIED if the user has insufficient privileges to create a port on the server. This command requires SERVER\_ACCESS\_ADMINISTER privilege. If the *pInputData* parameter is **NULL**, the function returns ERROR\_INVALID\_DATA. If *pInputData*--&gt;*dwVersion* is not equal to 1, the function returns ERROR\_INVALID\_LEVEL.
+[**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it can add the port. In addition to the normal error codes, **XcvData** returns ERROR\_ACCESS\_DENIED if the user has insufficient privileges to create a port on the server. This command requires SERVER\_ACCESS\_ADMINISTER privilege. If the *pInputData* parameter is **NULL**, the function returns ERROR\_INVALID\_DATA. If *pInputData*--&gt;*dwVersion* is not equal to 1, the function returns ERROR\_INVALID\_LEVEL.
 
 ### ConfigPort Command
 
@@ -100,7 +100,7 @@ The **ConfigPort** command configures an existing standard TCP/IP port monitor p
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559892" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559892)"><strong>PORT_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbInputData</em></p></td>
@@ -123,7 +123,7 @@ The **ConfigPort** command configures an existing standard TCP/IP port monitor p
 
  
 
-[**XcvData**](https://msdn.microsoft.com/library/windows/hardware/ff564255) returns NO\_ERROR if it can configure the port. In addition to the normal error codes, **XcvData** returns ERROR\_ACCESS\_DENIED if the caller has insufficient privileges to perform the request. This command requires SERVER\_ACCESS\_ADMINISTER privilege. If the *pInputData* parameter is **NULL**, or the value in *cbInputData* is smaller than required, the function returns ERROR\_INVALID\_DATA. If *pInputData*--&gt;*dwVersion* is not equal to 1, the function returns ERROR\_INVALID\_LEVEL.
+[**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it can configure the port. In addition to the normal error codes, **XcvData** returns ERROR\_ACCESS\_DENIED if the caller has insufficient privileges to perform the request. This command requires SERVER\_ACCESS\_ADMINISTER privilege. If the *pInputData* parameter is **NULL**, or the value in *cbInputData* is smaller than required, the function returns ERROR\_INVALID\_DATA. If *pInputData*--&gt;*dwVersion* is not equal to 1, the function returns ERROR\_INVALID\_LEVEL.
 
 ### DeletePort Command
 
@@ -147,7 +147,7 @@ The **DeletePort** command deletes a port from the standard TCP/IP port monitor.
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547436" data-raw-source="[&lt;strong&gt;DELETE_PORT_DATA_1&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547436)"><strong>DELETE_PORT_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_delete_port_data_1" data-raw-source="[&lt;strong&gt;DELETE_PORT_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_delete_port_data_1)"><strong>DELETE_PORT_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbInputData</em></p></td>
@@ -194,7 +194,7 @@ The **GetConfigInfo** command obtains the configuration information of a particu
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546300" data-raw-source="[&lt;strong&gt;CONFIG_INFO_DATA_1&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546300)"><strong>CONFIG_INFO_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_config_info_data_1" data-raw-source="[&lt;strong&gt;CONFIG_INFO_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_config_info_data_1)"><strong>CONFIG_INFO_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbInputData</em></p></td>
@@ -202,7 +202,7 @@ The **GetConfigInfo** command obtains the configuration information of a particu
 </tr>
 <tr class="even">
 <td><p><em>pOutputData</em></p></td>
-<td><p>Address of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559892" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559892)"><strong>PORT_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbOutputData</em></p></td>
@@ -264,7 +264,7 @@ The **HostAddress** command gets the printer's host name.
 
  
 
-[**XcvData**](https://msdn.microsoft.com/library/windows/hardware/ff564255) returns NO\_ERROR if it can obtain the name of the printer's host. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
+[**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it can obtain the name of the printer's host. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
 
 ### IPAddress Command
 
@@ -311,7 +311,7 @@ The **IPAddress** command gets the printer's IP address.
 
  
 
-[**XcvData**](https://msdn.microsoft.com/library/windows/hardware/ff564255) returns NO\_ERROR if it can obtain the printer's IP address. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
+[**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it can obtain the printer's IP address. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
 
 ### MonitorUI Command
 
@@ -358,7 +358,7 @@ The **MonitorUI** command gets the name of the port monitor UI DLL that provides
 
  
 
-[**XcvData**](https://msdn.microsoft.com/library/windows/hardware/ff564255) returns NO\_ERROR if it is able to obtain the name of the user interface DLL. In addition to the normal error codes, **XcvData** returns ERROR\_ACCESS\_DENIED if the caller has insufficient privileges on the server. This command requires SERVER\_ACCESS\_ADMINISTER privilege. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
+[**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it is able to obtain the name of the user interface DLL. In addition to the normal error codes, **XcvData** returns ERROR\_ACCESS\_DENIED if the caller has insufficient privileges on the server. This command requires SERVER\_ACCESS\_ADMINISTER privilege. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
 
 ### SNMPCommunity
 
@@ -405,7 +405,7 @@ The **SNMPCommunity** command gets the Simple Network Management Protocol (SNMP)
 
  
 
-[**XcvData**](https://msdn.microsoft.com/library/windows/hardware/ff564255) returns NO\_ERROR if it can get the printer's SNMP community name. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
+[**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it can get the printer's SNMP community name. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
 
 ### SNMPDeviceIndex
 
@@ -452,7 +452,7 @@ The **SNMPDeviceIndex** command gets the Simple Network Management Protocol (SNM
 
  
 
-[**XcvData**](https://msdn.microsoft.com/library/windows/hardware/ff564255) returns NO\_ERROR if it can get the printer's SNMP device index. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
+[**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it can get the printer's SNMP device index. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
 
 ### SNMPEnabled
 

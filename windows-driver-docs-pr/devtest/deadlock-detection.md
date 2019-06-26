@@ -104,7 +104,7 @@ When Deadlock Detection finds a violation, it will issue bug check 0xC4. The fir
 -   Starting in Windows 7, Driver Verifier can predict possible deadlocks. For example, trying to use the same KSPIN\_LOCK data structure both as a regular spin lock and as a stack queued spin lock.
 
 
-See [**Bug Check 0xC4**](https://msdn.microsoft.com/library/windows/hardware/ff560187) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION) for a list of the bug check parameters.
+See [**Bug Check 0xC4**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION) for a list of the bug check parameters.
 
 ### <span id="monitoring_deadlock_detection"></span><span id="MONITORING_DEADLOCK_DETECTION"></span>Monitoring Deadlock Detection
 
@@ -112,7 +112,7 @@ Once Deadlock Detection finds a violation, the **!deadlock** kernel debugger ext
 
 For best results, the driver in question should be running on a checked build of Windows, since that allows the kernel to obtain more complete run-time stack traces.
 
-There is a detailed example of the [**!deadlock**](https://msdn.microsoft.com/library/windows/hardware/ff562326) extension, as well as general information about debugger extensions, in the documentation in the Debugging Tools for Windows package. See [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) for details.
+There is a detailed example of the [**!deadlock**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-deadlock) extension, as well as general information about debugger extensions, in the documentation in the Debugging Tools for Windows package. See [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) for details.
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 

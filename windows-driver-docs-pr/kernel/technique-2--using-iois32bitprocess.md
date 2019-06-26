@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-In cases where it is not practical to define separate IOCTL or FSCTL control codes for I/O requests from 32-bit and 64-bit applications, it is left to the driver to determine which type of application sent the I/O request. The 64-bit version of Microsoft Windows introduces a new kernel-mode routine, [**IoIs32bitProcess**](https://msdn.microsoft.com/library/windows/hardware/ff549372), that detects whether the current I/O request originated in a 32-bit user-mode process. Its prototype is:
+In cases where it is not practical to define separate IOCTL or FSCTL control codes for I/O requests from 32-bit and 64-bit applications, it is left to the driver to determine which type of application sent the I/O request. The 64-bit version of Microsoft Windows introduces a new kernel-mode routine, [**IoIs32bitProcess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iois32bitprocess), that detects whether the current I/O request originated in a 32-bit user-mode process. Its prototype is:
 
 ```cpp
 BOOLEAN
@@ -27,7 +27,7 @@ BOOLEAN
 The following code sample shows how to use **IoIs32bitProcess**:
 
 ```cpp
-typedef void * POINTER_32 PVOID32;
+typedef UINT32 POINTER_32 PVOID32;
 
 typedef struct _IOCTL_PARAMETERS
 {

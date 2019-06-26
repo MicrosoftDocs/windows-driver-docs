@@ -24,10 +24,10 @@ A Microsoft Windows system connected to the 1394 bus exposes a Configuration ROM
 
 2.  Drivers can use virtual physical device objects (PDOs) to emulate hardware in ways that facilitate the testing of device drivers.
 
-    Device emulation allows developers to test drivers for devices that they have not yet received. Hardware emulation drivers can expose a virtual 1394 device on the 1394 bus. Developers can then debug a driver for the new hardware on another system. For more information about device emulations, see [IEEE 1394 Hardware Emulation Drivers](https://msdn.microsoft.com/library/windows/hardware/ff537214).
+    Device emulation allows developers to test drivers for devices that they have not yet received. Hardware emulation drivers can expose a virtual 1394 device on the 1394 bus. Developers can then debug a driver for the new hardware on another system. For more information about device emulations, see [IEEE 1394 Hardware Emulation Drivers](https://docs.microsoft.com/windows-hardware/drivers/ieee/ieee-1394-hardware-emulation-drivers).
 
 ## Related topics
-[Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](https://msdn.microsoft.com/library/windows/hardware/gg266408)  
+[Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](https://docs.microsoft.com/windows-hardware/drivers/ieee/retrieving-the-contents-of-a-ieee-1394-node-s-configuration-rom)  
 
 
 

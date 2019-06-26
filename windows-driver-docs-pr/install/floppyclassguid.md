@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # FloppyClassGuid
 
 
-FloppyClassGuid is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for floppy disk [storage devices](https://msdn.microsoft.com/library/windows/hardware/ff566969). Starting Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_FLOPPY**](guid-devinterface-floppy.md) class identifier for new instances of this class.
+FloppyClassGuid is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for floppy disk [storage devices](https://docs.microsoft.com/windows-hardware/drivers/storage/index). Starting Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_FLOPPY**](guid-devinterface-floppy.md) class identifier for new instances of this class.
 
 Remarks
 -------

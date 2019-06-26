@@ -20,7 +20,7 @@ Miniport drivers must process set requests asynchronously, initially returning N
 Remarks
 -------
 
-For more information about using this OID, see [WWAN Vendor Specific Operations](https://msdn.microsoft.com/library/windows/hardware/ff559138).
+For more information about using this OID, see [WWAN Vendor Specific Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-vendor-specific-operations).
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support vendor-specific operations.
 
@@ -47,7 +47,7 @@ Requirements
 ## See also
 
 
-[WWAN Vendor Specific Operations](https://msdn.microsoft.com/library/windows/hardware/ff559138)
+[WWAN Vendor Specific Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-vendor-specific-operations)
 
 [**NDIS\_STATUS\_WWAN\_VENDOR\_SPECIFIC**](ndis-status-wwan-vendor-specific.md)
 

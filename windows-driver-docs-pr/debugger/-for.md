@@ -52,7 +52,7 @@ Here is an example of a **.for** statement with multiple increment commands:
 0:000> .for (r eax=0; @eax < 7; r eax=@eax+1; r ebx=@ebx+1) { .... }
 ```
 
-The [**.break**](https://msdn.microsoft.com/library/windows/hardware/ff556242) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
+The [**.break**](https://docs.microsoft.com/windows-hardware/drivers/devtest/-break) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
 
  
 

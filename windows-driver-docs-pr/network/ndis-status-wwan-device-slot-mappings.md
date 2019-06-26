@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 # NDIS\_STATUS\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO
 
 
-Miniport drivers use the **NDIS\_STATUS\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO** notification to inform the MB service about the completion of a previous [OID\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO](https://msdn.microsoft.com/library/windows/hardware/mt799831) query or set request.
+Miniport drivers use the **NDIS\_STATUS\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO** notification to inform the MB service about the completion of a previous [OID\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-device-slot-mappings) query or set request.
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO**](https://msdn.microsoft.com/library/windows/hardware/mt782403) structure.
+This notification uses the [**NDIS\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_slot_mapping_info) structure.
 
 Requirements
 ------------
@@ -40,9 +40,9 @@ Requirements
 ## See also
 
 
-[OID\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO](https://msdn.microsoft.com/library/windows/hardware/mt799831)
+[OID\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-device-slot-mappings)
 
-[**NDIS\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO**](https://msdn.microsoft.com/library/windows/hardware/mt782403)
+[**NDIS\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_slot_mapping_info)
 
  
 

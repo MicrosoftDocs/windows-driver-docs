@@ -18,8 +18,8 @@ ms.localizationpriority: medium
 
 A *registered provider* is a [trace provider](trace-provider.md) that registers with [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md). Users can enumerate registered providers and refer to them by name.
 
-Trace providers must register with ETW when they start, either by calling **EventRegister** or by using register macros or functions provided by a tracing framework, such as the [WPP\_INIT\_TRACING](https://msdn.microsoft.com/library/windows/hardware/ff556191) macro provided by WPP. They unregister just before they stop, either by calling **EventUnregister** or by using the framework unregister macro or function. Trace providers that do not register themselves cannot be enabled, and no events will be collected from them.
+Trace providers must register with ETW when they start, either by calling **EventRegister** or by using register macros or functions provided by a tracing framework, such as the [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) macro provided by WPP. They unregister just before they stop, either by calling **EventUnregister** or by using the framework unregister macro or function. Trace providers that do not register themselves cannot be enabled, and no events will be collected from them.
 
 To display events from a registered provider, use [TraceView](traceview.md). For instructions, see [Creating a trace session for a registered provider](creating-a-trace-session-for-a-registered-provider.md).
 
-For more information about registered providers, see [Event Tracing](https://msdn.microsoft.com/library/windows/desktop/bb968803) in the Microsoft Windows SDK.
+For more information about registered providers, see [Event Tracing](https://docs.microsoft.com/windows/desktop/ETW/event-tracing-portal) in the Microsoft Windows SDK.

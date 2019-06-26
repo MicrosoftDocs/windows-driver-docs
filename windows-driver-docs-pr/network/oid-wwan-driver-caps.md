@@ -15,12 +15,12 @@ OID\_WWAN\_DRIVER\_CAPS returns the version of the MB driver model supported by 
 
 Set requests are not supported.
 
-Miniport drivers process OID\_WWAN\_DRIVER\_CAPS synchronously and should immediately return with the response buffer containing an [**NDIS\_WWAN\_DRIVER\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567908) structure that describes the version of the MB driver model implemented by the miniport driver when completing query requests.
+Miniport drivers process OID\_WWAN\_DRIVER\_CAPS synchronously and should immediately return with the response buffer containing an [**NDIS\_WWAN\_DRIVER\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_driver_caps) structure that describes the version of the MB driver model implemented by the miniport driver when completing query requests.
 
 Remarks
 -------
 
-For more information about using this OID, see [MB Miniport Driver Initialization](https://msdn.microsoft.com/library/windows/hardware/ff557186).
+For more information about using this OID, see [MB Miniport Driver Initialization](https://docs.microsoft.com/windows-hardware/drivers/network/mb-miniport-driver-initialization).
 
 Miniport drivers should not access the provider network, or the Subscriber Identity Module (SIM card), when processing query operations.
 
@@ -53,9 +53,9 @@ Requirements
 ## See also
 
 
-[MB Miniport Driver Initialization](https://msdn.microsoft.com/library/windows/hardware/ff557186)
+[MB Miniport Driver Initialization](https://docs.microsoft.com/windows-hardware/drivers/network/mb-miniport-driver-initialization)
 
-[**NDIS\_WWAN\_DRIVER\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567908)
+[**NDIS\_WWAN\_DRIVER\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_driver_caps)
 
  
 

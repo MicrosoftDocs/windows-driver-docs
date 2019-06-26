@@ -29,9 +29,9 @@ The two techniques to create a customized font installer are as follows:
 
     This plug-in must implement the following COM interface methods:
 
-    [**IPrintOemUI::FontInstallerDlgProc**](https://msdn.microsoft.com/library/windows/hardware/ff554176)
+    [**IPrintOemUI::FontInstallerDlgProc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui-fontinstallerdlgproc)
 
-    [**IPrintOemUI::UpdateExternalFonts**](https://msdn.microsoft.com/library/windows/hardware/ff554188)
+    [**IPrintOemUI::UpdateExternalFonts**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui-updateexternalfonts)
 
 -   Supply a separate executable file
 

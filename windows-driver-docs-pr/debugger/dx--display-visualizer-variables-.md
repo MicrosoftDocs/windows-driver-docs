@@ -3,7 +3,7 @@ title: dx (Display Debugger Object Model Expression)
 description: The dx command displays a C++ expression using the NatVis extension model. The dx command works with debugger objects.
 ms.assetid: 93047911-5195-4FB9-A015-5349084EDC0A
 keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
-ms.date: 01/18/2019
+ms.date: 05/28/2019
 topic_type:
 - apiref
 api_name:
@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # dx (Display Debugger Object Model Expression)
 
 
-The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](https://msdn.microsoft.com/library/jj620914.aspx).
+The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
 
 ```dbgcmd
 dx [-g|-gc #][-c #][-n|-v]-r[#] Expression[,<FormatSpecifier> ]
@@ -78,13 +78,14 @@ Use any of the following format specifiers to modify the default rendering.
 | ,\[&lt;expression&gt;\] | Specify length of pointer/array/container as the expression &lt;expression&gt;           |
 | ,nd                     | Do not find the derived (runtype) type of the object. Display static value only          |
 
-
-
 <span id="_______dx_-_______"></span><span id="_______DX_-_______"></span> **dx** {**-?**}   
 Display command line help.
 
 <span id="_______dx_-h______"></span><span id="_______DX_-H______"></span> **dx** {**-h**}   
 Displays help for objects available in the debugger.
+
+<span id="_______dx_-id______"></span><span id="_______DX_-ID______"></span> **dx** {**-id**}   
+Microsoft internal use only. Used to follow data model links in command output.
 
 ## Command line usage example
 

@@ -19,11 +19,11 @@ INF files have many common parts and follow a single set of syntax rules. Howeve
 
 -   The documentation for your class of device.
 
-    For example, if your device is a printer, see [Installing and Configuring Printer Drivers](https://msdn.microsoft.com/library/windows/hardware/ff551648).
+    For example, if your device is a printer, see [Installing and Configuring Printer Drivers](https://docs.microsoft.com/windows-hardware/drivers/print/installing-and-configuring-printer-drivers).
 
 -   WDK tools for INF files.
 
-    For more information, see [Tools for INF Files](https://msdn.microsoft.com/library/windows/hardware/ff552956). These tools are included in the \\Tools subdirectory of the WDK.
+    For more information, see [Tools for INF Files](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-inf-files). These tools are included in the \\Tools subdirectory of the WDK.
 
 -   Sample INF files and INF files for similar devices.
 

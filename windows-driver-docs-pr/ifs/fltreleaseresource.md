@@ -45,19 +45,19 @@ Remarks
 
 **FltReleaseResource** releases a resource that was previously acquired by calling [**FltAcquireResourceExclusive**](fltacquireresourceexclusive.md) or [**FltAcquireResourceShared**](fltacquireresourceshared.md).
 
-**FltReleaseResource** is a wrapper for [**ExReleaseResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545597) that reenables normal kernel APC delivery.
+**FltReleaseResource** is a wrapper for [**ExReleaseResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreleaseresourcelite) that reenables normal kernel APC delivery.
 
-Because **FltReleaseResource** reenables normal kernel APC delivery, it is not necessary to call [**KeLeaveCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552964) or [**FsRtlExitFileSystem**](fsrtlexitfilesystem.md) after calling **FltReleaseResource**.
+Because **FltReleaseResource** reenables normal kernel APC delivery, it is not necessary to call [**KeLeaveCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keleavecriticalregion) or [**FsRtlExitFileSystem**](fsrtlexitfilesystem.md) after calling **FltReleaseResource**.
 
 To acquire a resource for exclusive access, call [**FltAcquireResourceExclusive**](fltacquireresourceexclusive.md).
 
 To acquire a resource for shared access, call [**FltAcquireResourceShared**](fltacquireresourceshared.md).
 
-To delete a resource from the system's resource list, call [**ExDeleteResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff544578).
+To delete a resource from the system's resource list, call [**ExDeleteResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exdeleteresourcelite).
 
-To initialize a resource for reuse, call [**ExReinitializeResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545542).
+To initialize a resource for reuse, call [**ExReinitializeResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreinitializeresourcelite).
 
-For more information about ERESOURCE structures, see [Introduction to ERESOURCE Routines](https://msdn.microsoft.com/library/windows/hardware/ff548046) in the Kernel Architecture Design Guide.
+For more information about ERESOURCE structures, see [Introduction to ERESOURCE Routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-eresource-routines) in the Kernel Architecture Design Guide.
 
 Requirements
 ------------
@@ -98,13 +98,13 @@ Requirements
 ## See also
 
 
-[**ExDeleteResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff544578)
+[**ExDeleteResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exdeleteresourcelite)
 
-[**ExInitializeResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545317)
+[**ExInitializeResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializeresourcelite)
 
-[**ExReinitializeResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545542)
+[**ExReinitializeResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreinitializeresourcelite)
 
-[**ExReleaseResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545597)
+[**ExReleaseResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreleaseresourcelite)
 
 [**FltAcquireResourceExclusive**](fltacquireresourceexclusive.md)
 
@@ -112,7 +112,7 @@ Requirements
 
 [**FsRtlExitFileSystem**](fsrtlexitfilesystem.md)
 
-[**KeLeaveCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552964)
+[**KeLeaveCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keleavecriticalregion)
 
  
 

@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # FLT\_PARAMETERS for IRP\_MJ\_QUERY\_SECURITY union
 
 
-Union component used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638) structure for the operation is [**IRP\_MJ\_QUERY\_SECURITY**](irp-mj-query-security.md).
+Union component used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP\_MJ\_QUERY\_SECURITY**](irp-mj-query-security.md).
 
 Syntax
 ------
@@ -82,7 +82,7 @@ Pointer to a caller-supplied [**SECURITY\_INFORMATION**](security-information.md
 Length, in bytes, of the buffer that **SecurityBuffer** points to.
 
 **SecurityBuffer**  
-Pointer to a caller-supplied output buffer that receives a copy of the security descriptor of the specified object. The calling process must have the right to view the specified aspects of the object's security status. The [**SECURITY\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff556610) structure is returned in self-relative format.
+Pointer to a caller-supplied output buffer that receives a copy of the security descriptor of the specified object. The calling process must have the right to view the specified aspects of the object's security status. The [**SECURITY\_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556610(v=vs.85)) structure is returned in self-relative format.
 
 **MdlAddress**  
 Address of a memory descriptor list (MDL) that describes the buffer that **SecurityBuffer** points to. This member is optional and can be **NULL**.
@@ -90,9 +90,9 @@ Address of a memory descriptor list (MDL) that describes the buffer that **Secur
 Remarks
 -------
 
-The [**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff544673) structure for [**IRP\_MJ\_QUERY\_SECURITY**](irp-mj-query-security.md) operations contains the parameters for an IRP-based query-security-information operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620)) structure. It is contained in an [**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638) structure.
+The [**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters) structure for [**IRP\_MJ\_QUERY\_SECURITY**](irp-mj-query-security.md) operations contains the parameters for an IRP-based query-security-information operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an [**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
 
-On Windows XP and later, the object that the **TargetFileObject** member of the FLT\_IO\_PARAMETER\_BLOCK structure points to can represent a named data stream. For more information about named data streams, see [**FILE\_STREAM\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540364).
+On Windows XP and later, the object that the **TargetFileObject** member of the FLT\_IO\_PARAMETER\_BLOCK structure points to can represent a named data stream. For more information about named data streams, see [**FILE\_STREAM\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_stream_information).
 
 IRP\_MJ\_QUERY\_SECURITY is an IRP-based operation.
 
@@ -115,17 +115,17 @@ Requirements
 ## See also
 
 
-[**FILE\_STREAM\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540364)
+[**FILE\_STREAM\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_file_stream_information)
 
-[**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620)
+[**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638)
+[**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff544673)
+[**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters)
 
 [**IRP\_MJ\_QUERY\_SECURITY**](irp-mj-query-security.md)
 
-[**SECURITY\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff556610)
+[**SECURITY\_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556610(v=vs.85))
 
 [**SECURITY\_INFORMATION**](security-information.md)
 

@@ -29,7 +29,7 @@ This section describes the Windows Hardware Error Architecture (WHEA), which pro
 
 For more detailed information about WHEA and how to implement WHEA on a hardware platform, see the WHEA Platform Design Guide. Platform vendors can obtain this design guide by sending email to <wheafb@microsoft.com>.
 
-**Note**   WHEA is supported in Windows Vista, Windows Server 2008, and later versions of the Windows operating system. For hardware error reporting that is supported on versions of Microsoft Windows prior to Windows Vista, see [Machine Check Architecture (MCA)](https://msdn.microsoft.com/library/windows/hardware/ff540685).
+**Note**   WHEA is supported in Windows Vista, Windows Server 2008, and later versions of the Windows operating system. For hardware error reporting that is supported on versions of Microsoft Windows prior to Windows Vista, see [Machine Check Architecture (MCA)](https://docs.microsoft.com/previous-versions/windows/hardware/mca/ff540685(v=vs.85)).
 
  
 
@@ -53,9 +53,9 @@ This section includes the following topics:
 [Windows Hardware Error Architecture Debugger Extensions](windows-hardware-error-architecture-debugger-extensions.md)
 
 ## Related topics
-[Windows Hardware Error Architecture ACPI Table Specification](https://msdn.microsoft.com/windows/hardware/gg463511)  
-[Hardware Management and Security](https://msdn.microsoft.com/library/windows/hardware/dn614601)  
-[**Bug Check 0x124: WHEA\_UNCORRECTABLE\_ERROR (Windows Debuggers)**](https://msdn.microsoft.com/library/windows/hardware/ff557321)  
+[Windows Hardware Error Architecture ACPI Table Specification](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/WHEA_ACPI-tables.docx)  
+[Hardware Management and Security](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn614601(v=vs.85))  
+[**Bug Check 0x124: WHEA\_UNCORRECTABLE\_ERROR (Windows Debuggers)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x124---whea-uncorrectable-error)  
 
 
 

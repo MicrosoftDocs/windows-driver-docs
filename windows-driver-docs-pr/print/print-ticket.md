@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 A PrintTicket document is an XML document that describes how a document or document part is to be printed. A PrintTicket document can be associated with a print job, a document, or a page within a document. The PrintTicket document can be added to an XPS Document as a PrintTicket part and saved with document contents in a file. A PrintTicket document can also be added to a document as the application spools the document for printing.
 
-Conversion functions enable you to Print Tickets use in Microsoft Win32 applications. Functions are available to convert Print Tickets to [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structures and DEVMODEW structures back to Print Tickets.
+Conversion functions enable you to Print Tickets use in Microsoft Win32 applications. Functions are available to convert Print Tickets to [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structures and DEVMODEW structures back to Print Tickets.
 
 This section contains the following topics:
 

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Writing a location sensor driver for Windows 8.1
 
-This section provides specific guidance for writing drivers for devices that provide location data. In addition to the information that is contained in this section, location driver authors must also understand and apply the information that is provided in [Writing a Sensor Device Driver](https://msdn.microsoft.com/library/windows/hardware/ff545927).
+This section provides specific guidance for writing drivers for devices that provide location data. In addition to the information that is contained in this section, location driver authors must also understand and apply the information that is provided in [Writing a Sensor Device Driver](https://docs.microsoft.com/windows-hardware/drivers/sensors/writing-a-sensor-device-driver).
 
 The Sensor and Location Platform provides the Windows Location API to enable software developers to add location features to their programs easily. If you are writing a driver for a location sensor, you must understand how to make the driver compatible with the Location API and follow the guidelines in [Location Driver Guidelines for Power and Performance](location-driver-guidelines-for-power-and-performance.md).
 
@@ -44,7 +44,7 @@ The rest of this section describes these minimum requirements
 
 ## Identifying the category
 
-When it is called through [**ISensorDriver::OnGetProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545610), set the **WPD\_FUNCTIONAL\_OBJECT\_CATEGORY** property value to **SENSOR\_CATEGORY\_LOCATION**. The following code example shows how to set this constant through a pointer to [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) named pValues.
+When it is called through [**ISensorDriver::OnGetProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **WPD\_FUNCTIONAL\_OBJECT\_CATEGORY** property value to **SENSOR\_CATEGORY\_LOCATION**. The following code example shows how to set this constant through a pointer to [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) named pValues.
 
 ```cpp
 hr = pValues->SetGuidValue(WPD_FUNCTIONAL_OBJECT_CATEGORY, SENSOR_CATEGORY_LOCATION);
@@ -52,7 +52,7 @@ hr = pValues->SetGuidValue(WPD_FUNCTIONAL_OBJECT_CATEGORY, SENSOR_CATEGORY_LOCAT
 
 ## Setting the location sensor type
 
-When it is called through [**ISensorDriver::OnGetProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545610), set the **SENSOR\_PROPERTY\_TYPE** property value to the correct value. The following code example shows how to set the sensor type by using the **SENSOR\_TYPE\_LOCATION\_GPS** constant through a pointer to [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) named pValues.
+When it is called through [**ISensorDriver::OnGetProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **SENSOR\_PROPERTY\_TYPE** property value to the correct value. The following code example shows how to set the sensor type by using the **SENSOR\_TYPE\_LOCATION\_GPS** constant through a pointer to [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) named pValues.
 
 ```cpp
 hr = pValues->SetGuidValue(SENSOR_PROPERTY_TYPE, SENSOR_TYPE_LOCATION_GPS);
@@ -72,9 +72,9 @@ To support a civic address report, at least one of the following data fields is 
 
 -   SENSOR\_DATA\_TYPE\_COUNTRY\_REGION
 
-(To view the complete set of platform-defined location data fields, see [**SENSOR\_CATEGORY\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/dn265186) in the [Windows Sensor Reference](https://msdn.microsoft.com/library/windows/hardware/ff545907) section.)
+(To view the complete set of platform-defined location data fields, see [**SENSOR\_CATEGORY\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/sensors/sensor-category-loc) in the [Windows Sensor Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) section.)
 
-When they are called through [**ISensorDriver::OnGetSupportedDataFields**](https://msdn.microsoft.com/library/windows/hardware/ff545620), add the supported data field property key constants to the [IPortableDeviceKeyCollection](https://go.microsoft.com/fwlink/p/?linkid=131484) that you return through the *ppSupportedDataFields* parameter. The following code example shows how to add the postal code data field to [IPortableDeviceKeyCollection](https://go.microsoft.com/fwlink/p/?linkid=131484) through a variable named pKeyCollection.
+When they are called through [**ISensorDriver::OnGetSupportedDataFields**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupporteddatafields), add the supported data field property key constants to the [IPortableDeviceKeyCollection](https://go.microsoft.com/fwlink/p/?linkid=131484) that you return through the *ppSupportedDataFields* parameter. The following code example shows how to add the postal code data field to [IPortableDeviceKeyCollection](https://go.microsoft.com/fwlink/p/?linkid=131484) through a variable named pKeyCollection.
 
 ```cpp
 pKeyCollection->Add(SENSOR_DATA_TYPE_POSTALCODE);
@@ -82,7 +82,7 @@ pKeyCollection->Add(SENSOR_DATA_TYPE_POSTALCODE);
 
 ## Support the required properties
 
-Like other sensor drivers, location drivers provide information about the sensor itself through a set of properties. The Windows Hardware Certification Program specifies the minimum required set of properties that a location sensor must support. For more information about sensor properties, their meanings, and which properties are required for sensor drivers, see [**Sensor Properties**](https://msdn.microsoft.com/library/windows/hardware/ff545859). The following list contains the required properties:
+Like other sensor drivers, location drivers provide information about the sensor itself through a set of properties. The Windows Hardware Certification Program specifies the minimum required set of properties that a location sensor must support. For more information about sensor properties, their meanings, and which properties are required for sensor drivers, see [**Sensor Properties**](https://docs.microsoft.com/windows-hardware/drivers/sensors/sensor-properties). The following list contains the required properties:
 
 -   WPD\_FUNCTIONAL\_OBJECT\_CATEGORY
 
@@ -108,11 +108,11 @@ Like other sensor drivers, location drivers provide information about the sensor
 
 ## Providing data
 
-Location drivers provide data through the same mechanisms as other sensor drivers. That is, the sensor class extension calls the driver through [**ISensorDriver::OnGetDataFields**](https://msdn.microsoft.com/library/windows/hardware/ff545607) and the driver returns the values through the *ppDataValues* parameter.
+Location drivers provide data through the same mechanisms as other sensor drivers. That is, the sensor class extension calls the driver through [**ISensorDriver::OnGetDataFields**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetdatafields) and the driver returns the values through the *ppDataValues* parameter.
 
 The following requirements apply to providing data from a location sensor:
 
--   Provide data both through synchronous requests and by [raising events](https://msdn.microsoft.com/library/windows/hardware/ff545695).
+-   Provide data both through synchronous requests and by [raising events](https://docs.microsoft.com/windows-hardware/drivers/sensors/raising-events).
 
 -   Maintain a copy of your most recent data report. If new data is not available when you request it, return the cached report. Do not update the time stamp.
 
@@ -124,7 +124,7 @@ The following requirements apply to providing data from a location sensor:
 
 -   If your driver supports both latitude/longitude and civic address reports, the location data in these reports should correspond to the same physical location.
 
-The following table describes the [sensor data fields](https://msdn.microsoft.com/library/windows/hardware/ff545718) that correspond to Location API data report fields. Use these data field constants when you provide data reports for a location.
+The following table describes the [sensor data fields](https://docs.microsoft.com/windows-hardware/drivers/sensors/sensor-categories--types--and-data-fields) that correspond to Location API data report fields. Use these data field constants when you provide data reports for a location.
 
 <table>
 <colgroup>
@@ -162,7 +162,7 @@ The following table describes the [sensor data fields](https://msdn.microsoft.co
 <td><p><strong>SENSOR_DATA_TYPE_CITY</strong></p></td>
 <td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=157828" data-raw-source="[ICivicAddressReport::GetCity](https://go.microsoft.com/fwlink/p/?linkid=157828)">ICivicAddressReport::GetCity</a></p>
 <p><a href="https://go.microsoft.com/fwlink/p/?linkid=157830" data-raw-source="[LocationDisp.DispCivicAddressReport.City](https://go.microsoft.com/fwlink/p/?linkid=157830)">LocationDisp.DispCivicAddressReport.City</a></p>
-<p><a href="https://msdn.microsoft.com/library/windows/apps/windows.devices.geolocation.civicaddress.city.aspx" data-raw-source="[Windows.Devices. Geolocation.CivicAddress](https://msdn.microsoft.com/library/windows/apps/windows.devices.geolocation.civicaddress.city.aspx)">Windows.Devices. Geolocation.CivicAddress</a></p></td>
+<p><a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Geolocation.CivicAddress#Windows_Devices_Geolocation_CivicAddress_City" data-raw-source="[Windows.Devices. Geolocation.CivicAddress](https://docs.microsoft.com/uwp/api/Windows.Devices.Geolocation.CivicAddress#Windows_Devices_Geolocation_CivicAddress_City)">Windows.Devices. Geolocation.CivicAddress</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SENSOR_DATA_TYPE_COUNTRY_REGION</strong></p></td>
@@ -199,7 +199,7 @@ The following table describes the [sensor data fields](https://msdn.microsoft.co
 
 ## Managing state transitions
 
-At any time, a sensor driver can be in one of a number of states. Sensor states are defined by the [**SensorState**](https://msdn.microsoft.com/library/windows/hardware/ff545708) enumeration. To work correctly with the Location API, location sensors must follow these rules for handling state transitions.
+At any time, a sensor driver can be in one of a number of states. Sensor states are defined by the [**SensorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001) enumeration. To work correctly with the Location API, location sensors must follow these rules for handling state transitions.
 
 -   Always start in the SENSOR\_STATE\_INITIALIZING state, but do not raise a state-changed event at startup.
 
@@ -267,13 +267,13 @@ The following diagram shows how state transitions may occur in a location sensor
 
 ## Raising data-updated and state-changed events
 
-The Location API, requires location sensors, such as GPS sensors, to raise events that provide data and state-change information. For more information about raising sensor events, see [About Sensor Driver Events](https://msdn.microsoft.com/library/windows/hardware/ff545385).
+The Location API, requires location sensors, such as GPS sensors, to raise events that provide data and state-change information. For more information about raising sensor events, see [About Sensor Driver Events](https://docs.microsoft.com/windows-hardware/drivers/sensors/about-sensor-driver-events).
 
 When raising these events, location drivers must follow these rules:
 
--   Raise state change events by calling the sensor class extension's [**ISensorClassExtension::PostStateChange**](https://msdn.microsoft.com/library/windows/hardware/ff545523) method. Do not call [**PostEvent**](https://msdn.microsoft.com/library/windows/hardware/ff545519) to raise state change events.
+-   Raise state change events by calling the sensor class extension's [**ISensorClassExtension::PostStateChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange) method. Do not call [**PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent) to raise state change events.
 
--   Raise data-updated events by calling [**PostEvent**](https://msdn.microsoft.com/library/windows/hardware/ff545519).
+-   Raise data-updated events by calling [**PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent).
 -   Raise a data-updated event only if the data is up to date and accurate.
 
 -   Do not raise a data-updated event twice. This means that you should not raise a data-updated event by using cached data. You can provide cached data in response to a synchronous request for data.
@@ -286,7 +286,7 @@ When raising these events, location drivers must follow these rules:
 
 -   Do not provide incomplete data reports.
 
--   You might not have current data for the required data fields, such as when a GPS sensor has lost its fix. In this case, you might still want to provide notifications about updates to extended data fields, such as SENSOR\_DATA\_TYPE\_NMEA\_SENTENCE. To provide such notifications, you must use a custom event type and raise only the custom event until data for the required data fields becomes available. For information about how to define custom types, see [Defining Custom Values for Constants](https://msdn.microsoft.com/library/windows/hardware/ff545437).
+-   You might not have current data for the required data fields, such as when a GPS sensor has lost its fix. In this case, you might still want to provide notifications about updates to extended data fields, such as SENSOR\_DATA\_TYPE\_NMEA\_SENTENCE. To provide such notifications, you must use a custom event type and raise only the custom event until data for the required data fields becomes available. For information about how to define custom types, see [Defining Custom Values for Constants](https://docs.microsoft.com/windows-hardware/drivers/sensors/defining-custom-values-for-constants).
 
 ## Related topics
 

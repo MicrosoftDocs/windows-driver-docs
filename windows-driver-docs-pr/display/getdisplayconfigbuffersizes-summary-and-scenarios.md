@@ -20,15 +20,15 @@ ms.localizationpriority: medium
 
 This section applies only to Windows 7 and later, and Windows Server 2008 R2 and later versions of Windows operating system.
 
-The following sections summarize how a caller uses [**GetDisplayConfigBufferSizes**](https://msdn.microsoft.com/library/windows/hardware/ff566772) CCD function and provide scenarios for using **GetDisplayConfigBufferSizes**.
+The following sections summarize how a caller uses [**GetDisplayConfigBufferSizes**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getdisplayconfigbuffersizes) CCD function and provide scenarios for using **GetDisplayConfigBufferSizes**.
 
 ### <span id="getdisplayconfigbuffersizes_summary"></span><span id="GETDISPLAYCONFIGBUFFERSIZES_SUMMARY"></span>GetDisplayConfigBufferSizes Summary
 
-The caller can use [**GetDisplayConfigBufferSizes**](https://msdn.microsoft.com/library/windows/hardware/ff566772) to obtain information that the caller requires for the [**QueryDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware/ff569215) CCD function.
+The caller can use [**GetDisplayConfigBufferSizes**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getdisplayconfigbuffersizes) to obtain information that the caller requires for the [**QueryDisplayConfig**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-querydisplayconfig) CCD function.
 
 ### <span id="getdisplayconfigbuffersizes_scenarios"></span><span id="GETDISPLAYCONFIGBUFFERSIZES_SCENARIOS"></span>GetDisplayConfigBufferSizes Scenarios
 
-[**GetDisplayConfigBufferSizes**](https://msdn.microsoft.com/library/windows/hardware/ff566772) is always called before calling [**QueryDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware/ff569215).
+[**GetDisplayConfigBufferSizes**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getdisplayconfigbuffersizes) is always called before calling [**QueryDisplayConfig**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-querydisplayconfig).
 
  
 

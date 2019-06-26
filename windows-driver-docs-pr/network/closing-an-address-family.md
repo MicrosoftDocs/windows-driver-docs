@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-A connection-oriented client calls [**NdisClCloseAddressFamily**](https://msdn.microsoft.com/library/windows/hardware/ff561626) to delete the association between itself, a call manager, and a particular underlying NIC.
+A connection-oriented client calls [**NdisClCloseAddressFamily**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclcloseaddressfamily) to delete the association between itself, a call manager, and a particular underlying NIC.
 
 When a CoNDIS stand-alone call manager is closing a binding to an underlying miniport adapter, or a miniport call manager (MCM) is halting a miniport adapter, the call manager or the MCM must notify NDIS if an associated address family (AF) should be closed. NDIS then notifies each CoNDIS client that has the AF open that the client should close the AF.
 

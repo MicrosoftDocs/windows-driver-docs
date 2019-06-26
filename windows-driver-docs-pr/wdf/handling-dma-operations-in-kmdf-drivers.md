@@ -37,7 +37,7 @@ This section describes how a Kernel-Mode Driver Framework (KMDF) driver converts
 -   [Reserving DMA Resources](reserving-dma-resources.md)
 -   [Testing DMA in KMDF Drivers](testing-dma-in-kmdf-drivers.md)
 
-For information on how support DMA operations in WDM drivers, see [DMA Programming Techniques](https://msdn.microsoft.com/library/windows/hardware/ff544074).
+For information on how support DMA operations in WDM drivers, see [DMA Programming Techniques](https://docs.microsoft.com/windows-hardware/drivers/kernel/dma-programming-techniques).
 
  
 

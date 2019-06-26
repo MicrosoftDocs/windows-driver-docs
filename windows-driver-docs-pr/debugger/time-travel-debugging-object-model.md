@@ -297,9 +297,9 @@ The address of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 
 
 
-### Querying for all of the errors in the trace
+### Querying for all of the error checks in the trace
 
-Use this command to sort by all of the errors in the trace by error count.
+Use this command to sort by all of the error checks in the trace by error count.
 
 ```dbgcmd
 0:000> dx -g @$cursession.TTD.Calls("kernelbase!GetLastError").Where( x=> x.ReturnValue != 0).GroupBy(x => x.ReturnValue).Select(x => new { ErrorNumber = x.First().ReturnValue, ErrorCount = x.Count()}).OrderByDescending(p => p.ErrorCount),d

@@ -21,33 +21,33 @@ When this option is active and Driver Verifier detects that the driver violates 
 
 The list of verification rules includes the following:
 
-[**NdisOidComplete**](https://msdn.microsoft.com/library/windows/hardware/dn305115)
+[**NdisOidComplete**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndisoidcomplete)
 
-[**NdisOidDoubleComplete**](https://msdn.microsoft.com/library/windows/hardware/dn305116)
+[**NdisOidDoubleComplete**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndisoiddoublecomplete)
 
-[**NdisOidDoubleRequest**](https://msdn.microsoft.com/library/windows/hardware/dn305117)
+[**NdisOidDoubleRequest**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndisoiddoublerequest)
 
-[**NdisTimedDataHang**](https://msdn.microsoft.com/library/windows/hardware/dn305118)
+[**NdisTimedDataHang**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndistimeddatahang)
 
-[**NdisTimedDataSend**](https://msdn.microsoft.com/library/windows/hardware/dn305119)
+[**NdisTimedDataSend**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndistimeddatasend)
 
-[**NdisTimedOidComplete**](https://msdn.microsoft.com/library/windows/hardware/dn305120)
+[**NdisTimedOidComplete**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndistimedoidcomplete)
 
-[**WlanAssociation**](https://msdn.microsoft.com/library/windows/hardware/dn305122)
+[**WlanAssociation**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wlanassociation)
 
-[**WlanConnectionRoaming**](https://msdn.microsoft.com/library/windows/hardware/dn305123)
+[**WlanConnectionRoaming**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wlanconnectionroaming)
 
-[**WlanDisassociation**](https://msdn.microsoft.com/library/windows/hardware/dn305124)
+[**WlanDisassociation**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wlandisassociation)
 
-[**WlanTimedAssociation**](https://msdn.microsoft.com/library/windows/hardware/dn305125)
+[**WlanTimedAssociation**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wlantimedassociation)
 
-[**WlanTimedConnectionRoaming**](https://msdn.microsoft.com/library/windows/hardware/dn305126)
+[**WlanTimedConnectionRoaming**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wlantimedconnectionroaming)
 
-[**WlanTimedConnectRequest**](https://msdn.microsoft.com/library/windows/hardware/dn305127)
+[**WlanTimedConnectRequest**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wlantimedconnectrequest)
 
-[**WlanTimedScan**](https://msdn.microsoft.com/library/windows/hardware/dn305129)
+[**WlanTimedScan**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wlantimedscan)
 
-[**WlanTimedLinkQuality**](https://msdn.microsoft.com/library/windows/hardware/dn305128)
+[**WlanTimedLinkQuality**](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wlantimedlinkquality)
 
 ## <span id="Activating_this_option"></span><span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating this option
 

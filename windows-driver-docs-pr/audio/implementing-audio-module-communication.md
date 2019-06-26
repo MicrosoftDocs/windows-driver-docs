@@ -62,7 +62,7 @@ The Audio Module API provides access to the modules through two different target
 
 HSAs and other applications will only be able to access the modules available through the filter handle. The individual APOs loaded on a stream are the only objects that will have access to the stream targeted audio modules.
 
-For more information about APOs, see [Windows Audio Processing Objects](https://msdn.microsoft.com/windows/hardware/drivers/audio/windows-audio-processing-objects).
+For more information about APOs, see [Windows Audio Processing Objects](https://docs.microsoft.com/windows-hardware/drivers/audio/windows-audio-processing-objects).
 
 ### Sending Commands
 
@@ -83,7 +83,7 @@ The recommended approach is exposing a global driver module. The global driver m
  
 **Kernel Streaming Audio Module Properties** 
 
-A new KS Property Set, identified by [KSPROPSETID_AudioModule](https://msdn.microsoft.com/library/windows/hardware/mt808144(v=vs.85).aspx), has been defined for three properties specific to audio modules. 
+A new KS Property Set, identified by [KSPROPSETID_AudioModule](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audiomodule), has been defined for three properties specific to audio modules. 
 
 A PortCls miniport driver needs to directly handle the response for each property as no helper interface is provided.
 
@@ -104,7 +104,7 @@ typedef enum {
 
 ### Audio Module Descriptors
 
-Support for the [KSPROPERTY_AUDIOMODULE_DESCRIPTORS](https://msdn.microsoft.com/library/windows/hardware/mt808142(v=vs.85).aspx) property identifies the driver as being Audio Module aware. The property will be queried through the filter or pin handle and a KSPROPERTY is passed as the input buffer for the DeviceIoControl call. [KSAUDIOMODULE_DESCRIPTOR](https://msdn.microsoft.com/library/windows/hardware/mt808137(v=vs.85).aspx) has been defined to describe each module within the audio hardware. An array of these descriptors is returned in response to this request
+Support for the [KSPROPERTY_AUDIOMODULE_DESCRIPTORS](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-descriptors) property identifies the driver as being Audio Module aware. The property will be queried through the filter or pin handle and a KSPROPERTY is passed as the input buffer for the DeviceIoControl call. [KSAUDIOMODULE_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor) has been defined to describe each module within the audio hardware. An array of these descriptors is returned in response to this request
 
 #### ksmedia.h:
 
@@ -120,11 +120,11 @@ typedef struct _KSAUDIOMODULE_DESCRIPTOR
     WCHAR   Name[AUDIOMODULE_MAX_NAME_SIZE];
 } KSAUDIOMODULE_DESCRIPTOR, *PKSAUDIOMODULE_DESCRIPTOR;
 ```
-For more information, see [KSAUDIOMODULE_DESCRIPTOR](https://msdn.microsoft.com/library/windows/hardware/mt808137(v=vs.85).aspx).
+For more information, see [KSAUDIOMODULE_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor).
 
 ### Audio Module Command
 
-Support for the [KSPROPERTY_AUDIOMODULE_COMMAND](https://msdn.microsoft.com/library/windows/hardware/mt808141(v=vs.85).aspx) property allows Audio Module clients to send custom commands to query and set parameters on Audio Modules. The property can be sent through the filter or pin handle and a [KSAUDIOMODULE_PROPERTY](https://msdn.microsoft.com/library/windows/hardware/mt808139(v=vs.85).aspx) is passed as the input buffer for the DeviceIoControl call. A client can optionally send additional information immediately adjacent to the [KSAUDIOMODULE_PROPERTY](https://msdn.microsoft.com/library/windows/hardware/mt808139(v=vs.85).aspx) in the input buffer to send custom commands.
+Support for the [KSPROPERTY_AUDIOMODULE_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-command) property allows Audio Module clients to send custom commands to query and set parameters on Audio Modules. The property can be sent through the filter or pin handle and a [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_property) is passed as the input buffer for the DeviceIoControl call. A client can optionally send additional information immediately adjacent to the [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_property) in the input buffer to send custom commands.
 
 #### ksmedia.h:
 
@@ -139,14 +139,14 @@ typedef struct _KSPAUDIOMODULE_PROPERTY
 } KSAUDIOMODULE_PROPERTY, *PKSPAUDIOMODULE_PROPERTY;
 
 ```
-For more information, see [KSAUDIOMODULE_PROPERTY](https://msdn.microsoft.com/library/windows/hardware/mt808139(v=vs.85).aspx).
+For more information, see [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_property).
 
 
 ### Audio Module Notification Device ID
 
-Support for the [KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID](https://msdn.microsoft.com/library/windows/hardware/mt808143(v=vs.85).aspx) is required to enable the miniport to signal notifications and pass information to Audio Module clients. The lifetime of this ID is tied to the lifetime of the audio device being exposed and active to the Windows Audio stack. The property can be sent through the filter or pin handle and a KSPROPERTY is passed as the input buffer for the DeviceIoControl call.
+Support for the [KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-notification-device-id) is required to enable the miniport to signal notifications and pass information to Audio Module clients. The lifetime of this ID is tied to the lifetime of the audio device being exposed and active to the Windows Audio stack. The property can be sent through the filter or pin handle and a KSPROPERTY is passed as the input buffer for the DeviceIoControl call.
 
-For more information, see [KSAUDIOMODULE_PROPERTY](https://msdn.microsoft.com/library/windows/hardware/mt808139(v=vs.85).aspx).
+For more information, see [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_property).
 
 
 <span id="PortCls_Helper"></span>PortCls Helper - Audio Module Notifications
@@ -208,13 +208,13 @@ typedef struct _KSAUDIOMODULE_NOTIFICATION {
 ```
 For more information, see:
 
- [IPortClsNotifications](https://msdn.microsoft.com/library/windows/hardware/mt808133(v=vs.85).aspx)
+ [IPortClsNotifications](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportclsnotifications)
 	
- [IPortClsNotifications::AllocNotificationBuffer](https://msdn.microsoft.com/library/windows/hardware/mt808134(v=vs.85).aspx)
+ [IPortClsNotifications::AllocNotificationBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportclsnotifications-allocnotificationbuffer)
 
- [IPortClsNotifications::FreeNotificationBuffer](https://msdn.microsoft.com/library/windows/hardware/mt808135(v=vs.85).aspx)	
+ [IPortClsNotifications::FreeNotificationBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportclsnotifications-freenotificationbuffer)	
 	
- [IPortClsNotifications::SendNotificationBuffer](https://msdn.microsoft.com/library/windows/hardware/mt808136(v=vs.85).aspx)	
+ [IPortClsNotifications::SendNotificationBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportclsnotifications-sendnotification)	
 
 ### Calling Sequence
 

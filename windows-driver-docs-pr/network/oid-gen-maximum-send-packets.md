@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # OID\_GEN\_MAXIMUM\_SEND\_PACKETS
 
 
-As a query, the OID\_GEN\_MAXIMUM\_SEND\_PACKETS OID specifies the maximum number of send packet descriptors that a miniport driver's [*MiniportSendPackets*](https://msdn.microsoft.com/library/windows/hardware/ff550524) function can accept.
+As a query, the OID\_GEN\_MAXIMUM\_SEND\_PACKETS OID specifies the maximum number of send packet descriptors that a miniport driver's [*MiniportSendPackets*](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff550524(v=vs.85)) function can accept.
 
 **Version Information**
 
@@ -54,7 +54,7 @@ Requirements
 ## See also
 
 
-[*MiniportSendPackets*](https://msdn.microsoft.com/library/windows/hardware/ff550524)
+[*MiniportSendPackets*](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff550524(v=vs.85))
 
  
 

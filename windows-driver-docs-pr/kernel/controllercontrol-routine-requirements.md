@@ -19,35 +19,35 @@ Usually, a *ControllerControl* routine does at least the following:
 
 1.  Updates or initializes whatever context the driver maintains in the device extension of the target device object and in the controller extension
 
-    If the driver uses DMA, its *ControllerControl* routine usually is responsible for determining whether a given transfer request must be split up into partial transfers due to any system-imposed or device-imposed limitations on the size of each DMA transfer. In these circumstances, the *ControllerControl* routine also is responsible for calling [**AllocateAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff540573) if the driver has an *AdapterControl* routine.
+    If the driver uses DMA, its *ControllerControl* routine usually is responsible for determining whether a given transfer request must be split up into partial transfers due to any system-imposed or device-imposed limitations on the size of each DMA transfer. In these circumstances, the *ControllerControl* routine also is responsible for calling [**AllocateAdapterChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-pallocate_adapter_channel) if the driver has an *AdapterControl* routine.
 
-    If the driver uses PIO, its *ControllerControl* routine also is responsible for [splitting transfer requests](splitting-dma-transfer-requests.md), if its hardware requires it, into partial-transfer ranges and for calling [**MmGetSystemAddressForMdlSafe**](https://msdn.microsoft.com/library/windows/hardware/ff554559) with the MDL at **Irp-&gt;MdlAddress**.
+    If the driver uses PIO, its *ControllerControl* routine also is responsible for [splitting transfer requests](splitting-dma-transfer-requests.md), if its hardware requires it, into partial-transfer ranges and for calling [**MmGetSystemAddressForMdlSafe**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) with the MDL at **Irp-&gt;MdlAddress**.
 
 2.  Programs its hardware for the requested I/O operation
 
-    If the device or controller extension can be accessed from the ISR, the *ControllerControl* routine must use a [*SynchCritSection*](https://msdn.microsoft.com/library/windows/hardware/ff563928) routine that is invoked by calling [**KeSynchronizeExecution**](https://msdn.microsoft.com/library/windows/hardware/ff553302). For more information, see [Using Critical Sections](using-critical-sections.md).
+    If the device or controller extension can be accessed from the ISR, the *ControllerControl* routine must use a [*SynchCritSection*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-ksynchronize_routine) routine that is invoked by calling [**KeSynchronizeExecution**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kesynchronizeexecution). For more information, see [Using Critical Sections](using-critical-sections.md).
 
-If the driver has a [*Cancel*](https://msdn.microsoft.com/library/windows/hardware/ff540742) routine, its *ControllerControl* routine also must check the **Irp-&gt;Cancel** field to determine whether the current IRP should be canceled, and do either of the following:
+If the driver has a [*Cancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_cancel) routine, its *ControllerControl* routine also must check the **Irp-&gt;Cancel** field to determine whether the current IRP should be canceled, and do either of the following:
 
 If **Irp-&gt;Cancel** is set to **TRUE**, the *ControllerControl* routine must do the following:
 
 1.  Set STATUS\_CANCELLED for **Status** and zero for **Information** in the I/O status block of the IRP.
 
-2.  Call [**IoFreeController**](https://msdn.microsoft.com/library/windows/hardware/ff549104) to release the controller object so the next device operation can be started promptly.
+2.  Call [**IoFreeController**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iofreecontroller) to release the controller object so the next device operation can be started promptly.
 
-3.  Call [**IoStartNextPacket**](https://msdn.microsoft.com/library/windows/hardware/ff550358) or dequeue the next IRP if the driver manages its own queuing.
+3.  Call [**IoStartNextPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iostartnextpacket) or dequeue the next IRP if the driver manages its own queuing.
 
-4.  Complete the canceled IRP with [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) and return control.
+4.  Complete the canceled IRP with [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) and return control.
 
 If **Irp-&gt;Cancel** is not set to **TRUE**, the *ControllerControl* routine instead must do the following:
 
-1.  Call [**IoSetCancelRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549674) to reset the *Cancel* routine entry point for the IRP to **NULL**. Acquire the cancel spin lock for this call if the driver uses the I/O manager-supplied device queue in the device object.
+1.  Call [**IoSetCancelRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcancelroutine) to reset the *Cancel* routine entry point for the IRP to **NULL**. Acquire the cancel spin lock for this call if the driver uses the I/O manager-supplied device queue in the device object.
 
-2.  Program the hardware for the requested I/O operation, using a [*SynchCritSection*](https://msdn.microsoft.com/library/windows/hardware/ff563928) routine that is invoked by calling [**KeSynchronizeExecution**](https://msdn.microsoft.com/library/windows/hardware/ff553302). For more information, see [Using Critical Sections](using-critical-sections.md)
+2.  Program the hardware for the requested I/O operation, using a [*SynchCritSection*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-ksynchronize_routine) routine that is invoked by calling [**KeSynchronizeExecution**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kesynchronizeexecution). For more information, see [Using Critical Sections](using-critical-sections.md)
 
 For more information about handling cancelable IRPs, see [Canceling IRPs](canceling-irps.md).
 
-For most interrupt-driven I/O operations except overlapped operations on different devices attached to the physical controller/adapter, a *ControllerControl* routine should return **KeepObject** because the [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) or [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine completes the operation and the IRP.
+For most interrupt-driven I/O operations except overlapped operations on different devices attached to the physical controller/adapter, a *ControllerControl* routine should return **KeepObject** because the [*DpcForIsr*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_dpc_routine) or [*CustomDpc*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kdeferred_routine) routine completes the operation and the IRP.
 
 As soon as the I/O operation(s) to satisfy the current request are done, the routine that will complete the IRP should call **IoFreeController** and **IoStartNextPacket** so that the next request can be processed as quickly as possible.
 

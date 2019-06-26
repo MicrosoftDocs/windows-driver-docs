@@ -51,7 +51,7 @@ If you use an application to uninstall your driver, observe the following guidel
 
 -   Some filter driver files cannot safely be removed when the application is uninstalled. These files should not be listed in the **DefaultUninstall.Services** section of the INF file.
 
-For more information about uninstall applications, see [Writing a Device Installation Application](https://msdn.microsoft.com/library/windows/hardware/ff554015).
+For more information about uninstall applications, see [Writing a Device Installation Application](https://docs.microsoft.com/windows-hardware/drivers/install/writing-a-device-installation-application).
 
  
 

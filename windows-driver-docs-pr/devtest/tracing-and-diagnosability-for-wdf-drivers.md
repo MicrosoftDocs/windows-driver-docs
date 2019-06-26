@@ -29,7 +29,7 @@ File name: WPP\_intro.docx
 
 Microsoft Word file
 
-[Get Office File Viewers](http://www.microsoft.com/download/office.aspx)
+[Get Office File Viewers](https://www.microsoft.com/download/office.aspx)
 
 [![click here to download](./images/download.png)](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/WPP_intro.docx)
 

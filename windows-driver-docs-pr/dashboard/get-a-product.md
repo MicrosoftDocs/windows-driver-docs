@@ -55,35 +55,40 @@ The following example demonstrates the JSON response body returned by a successf
 
 ```json
 {
-  "id": 9007199267351834,
-  "sharedProductId": 1152921504606971100,
-  "links": [
-    {
-      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/9007199267351834",
-      "rel": "self",
-      "method": "GET"
-    },
-    {
-      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/9007199267351834/submissions",
-      "rel": "get_submissions",
-      "method": "GET"
-    }
-  ],
-  "isCommitted": true,
-  "isExtensionInf": false, "_comment": "This field is deprecated and moved to submission resource",
-  "deviceMetadataIds": [],
-  "deviceType": "notSet",
-  "isTestSign": false,
-  "isFlightSign": false,  
-  "marketingNames": [],
-  "productName": "NewDriverHacked",
-  "selectedProductTypes": {},
-  "requestedSignatures": [
-    "WINDOWS_v100_X64_TH1_FULL",
-    "WINDOWS_v63_X64"
-  ],
-  "additionalAttributes": {},
-  "testHarness": "hlk"
+    "id": 9007199267351834,
+    "sharedProductId": 1152921504606971255,
+    "links": [
+        {
+            "href": "https://hardwareapi.microsoft.com/api/v1/hardware/products/9007199267351834",
+            "rel": "self",
+            "method": "GET"
+        },
+        {
+            "href": "https://hardwareapi.microsoft.com/api/v1/hardware/products/9007199267351834/submissions",
+            "rel": "get_submissions",
+            "method": "GET"
+        }
+    ],
+    "isCommitted": true,
+    "isExtensionInf": false,
+    "originType": "author",
+    "sourceProductId": 0,
+    "sourcePublisherId": 0,
+    "isRetpolineCompiled": false,
+    "message": "",
+    "deviceMetadataIds": [],
+    "deviceType": "notSet",
+    "isTestSign": false,
+    "isFlightSign": false,
+    "marketingNames": [],
+    "productName": "NewDriverHacked",
+    "selectedProductTypes": {},
+    "requestedSignatures": [
+        "WINDOWS_v100_X64_TH1_FULL",
+        "WINDOWS_v63_X64"
+    ],
+    "additionalAttributes": {},
+    "testHarness": "hlk"
 }
 ```
 

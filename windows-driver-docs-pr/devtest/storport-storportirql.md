@@ -36,14 +36,14 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff552808" data-raw-source="[Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808)">Static Driver Verifier</a> and specify the <strong>StorPortIrql</strong> rule.</p>
+<td align="left"><p>Run <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier" data-raw-source="[Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier)">Static Driver Verifier</a> and specify the <strong>StorPortIrql</strong> rule.</p>
 Use the following steps to run an analysis of your code:
 <ol>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code" data-raw-source="[Prepare your code (use role type declarations).](https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code)">Prepare your code (use role type declarations).</a></li>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier" data-raw-source="[Run Static Driver Verifier.](https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier)">Run Static Driver Verifier.</a></li>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results" data-raw-source="[View and analyze the results.](https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results)">View and analyze the results.</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#preparing-your-source-code" data-raw-source="[Prepare your code (use role type declarations).](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#preparing-your-source-code)">Prepare your code (use role type declarations).</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#running-static-driver-verifier" data-raw-source="[Run Static Driver Verifier.](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#running-static-driver-verifier)">Run Static Driver Verifier.</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#viewing-and-analyzing-the-results" data-raw-source="[View and analyze the results.](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#viewing-and-analyzing-the-results)">View and analyze the results.</a></li>
 </ol>
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh454281" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281)">Using Static Driver Verifier to Find Defects in Drivers</a>.</p></td>
+<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers)">Using Static Driver Verifier to Find Defects in Drivers</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -51,25 +51,25 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**StorPortAllocateContiguousMemorySpecifyCacheNode**](https://msdn.microsoft.com/library/windows/hardware/ff567027)
-[**StorPortAllocateMdl**](https://msdn.microsoft.com/library/windows/hardware/ff567028)
-[**StorPortAllocatePool**](https://msdn.microsoft.com/library/windows/hardware/ff567031)
-[**StorPortBuildMdlForNonPagedPool**](https://msdn.microsoft.com/library/windows/hardware/ff567036)
-[**StorPortFreeContiguousMemorySpecifyCache**](https://msdn.microsoft.com/library/windows/hardware/ff567059)
-[**StorPortFreeMdl**](https://msdn.microsoft.com/library/windows/hardware/ff567063)
-[**StorPortFreePool**](https://msdn.microsoft.com/library/windows/hardware/ff567065)
-[**StorPortGetActiveGroupCount**](https://msdn.microsoft.com/library/windows/hardware/ff567071)
-[**StorPortGetActiveNodeCount**](https://msdn.microsoft.com/library/windows/hardware/ff567073)
-[**StorPortGetCurrentProcessorNumber**](https://msdn.microsoft.com/library/windows/hardware/ff567077)
-[**StorPortGetGroupAffinity**](https://msdn.microsoft.com/library/windows/hardware/ff567084)
-[**StorPortGetHighestNodeNumber**](https://msdn.microsoft.com/library/windows/hardware/ff567085)
-[**StorPortGetLogicalProcessorRelationship**](https://msdn.microsoft.com/library/windows/hardware/ff567087)
-[**StorPortGetNodeAffinity**](https://msdn.microsoft.com/library/windows/hardware/ff567091)
-[**StorPortGetSystemAddress**](https://msdn.microsoft.com/library/windows/hardware/ff567100)
-[**StorPortLogSystemEvent**](https://msdn.microsoft.com/library/windows/hardware/ff567428)
-[**StorPortPutScatterGatherList**](https://msdn.microsoft.com/library/windows/hardware/ff567463)
-[**StorPortRegistryRead**](https://msdn.microsoft.com/library/windows/hardware/ff567491)
-[**StorPortRegistryWrite**](https://msdn.microsoft.com/library/windows/hardware/ff567492)
+[**StorPortAllocateContiguousMemorySpecifyCacheNode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportallocatecontiguousmemoryspecifycachenode)
+[**StorPortAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportallocatemdl)
+[**StorPortAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportallocatepool)
+[**StorPortBuildMdlForNonPagedPool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportbuildmdlfornonpagedpool)
+[**StorPortFreeContiguousMemorySpecifyCache**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportfreecontiguousmemoryspecifycache)
+[**StorPortFreeMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportfreemdl)
+[**StorPortFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportfreepool)
+[**StorPortGetActiveGroupCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetactivegroupcount)
+[**StorPortGetActiveNodeCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetactivenodecount)
+[**StorPortGetCurrentProcessorNumber**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetcurrentprocessornumber)
+[**StorPortGetGroupAffinity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetgroupaffinity)
+[**StorPortGetHighestNodeNumber**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgethighestnodenumber)
+[**StorPortGetLogicalProcessorRelationship**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetlogicalprocessorrelationship)
+[**StorPortGetNodeAffinity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetnodeaffinity)
+[**StorPortGetSystemAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetsystemaddress)
+[**StorPortLogSystemEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportlogsystemevent)
+[**StorPortPutScatterGatherList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportputscattergatherlist)
+[**StorPortRegistryRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportregistryread)
+[**StorPortRegistryWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportregistrywrite)
  
 
  

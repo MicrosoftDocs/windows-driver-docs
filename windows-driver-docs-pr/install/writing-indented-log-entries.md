@@ -55,7 +55,7 @@ To change the indentation depth for a section, call a SetupAPI logging function 
 
  
 
-For example, the following sequence of calls to [**SetupWriteTextLog**](https://msdn.microsoft.com/library/windows/hardware/ff552218) writes a sequence of indented log entries after the section header whose *section_title* field is "Indentation Example" and whose *instance_identifier* field is "Instance 0".
+For example, the following sequence of calls to [**SetupWriteTextLog**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog) writes a sequence of indented log entries after the section header whose *section_title* field is "Indentation Example" and whose *instance_identifier* field is "Instance 0".
 
 ```cpp
 // The LogToken value was previously returned by a call to 

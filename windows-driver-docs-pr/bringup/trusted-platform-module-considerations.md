@@ -18,9 +18,9 @@ After you upgrade to later operating system (Win8 and later), depending on the f
 
 [TPM recommendations](https://docs.microsoft.com/windows/security/hardware-protection/tpm/tpm-recommendations)
 
-[Trusted Platform Module 2.0: A Brief Introduction](http://www.trustedcomputinggroup.org/trusted-platform-module-2-0-brief-introduction/)
+[Trusted Platform Module 2.0: A Brief Introduction](https://trustedcomputinggroup.org/resource/trusted-platform-module-2-0-a-brief-introduction/)
 
-[Trusted Platform Module (TPM)](http://www.trustedcomputinggroup.org/work-groups/trusted-platform-module/)
+[Trusted Platform Module (TPM)](https://trustedcomputinggroup.org/work-groups/trusted-platform-module/)
 
 
 

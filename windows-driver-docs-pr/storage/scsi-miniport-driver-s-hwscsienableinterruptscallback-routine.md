@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 ## <span id="ddk_scsi_miniport_drivers_hwscsienableinterruptscallback_routine_kg"></span><span id="DDK_SCSI_MINIPORT_DRIVERS_HWSCSIENABLEINTERRUPTSCALLBACK_ROUTINE_KG"></span>
 
 
-An [**HwScsiEnableInterruptsCallback**](https://msdn.microsoft.com/library/windows/hardware/ff557295) routine finishes processing an interrupt-driven I/O operation without inhibiting I/O operations for other devices in the machine.
+An [**HwScsiEnableInterruptsCallback**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557295(v=vs.85)) routine finishes processing an interrupt-driven I/O operation without inhibiting I/O operations for other devices in the machine.
 
-When the *HwScsiEnableInterruptsCallback* routine gets control, all system device interrupts are enabled except from the HBA because the *HwScsiInterrupt* routine disabled interrupts on the HBA before it called [**ScsiPortNotification**](https://msdn.microsoft.com/library/windows/hardware/ff564657). Thus, the miniport driver's *HwScsiInterrupt* routine cannot be called and cannot disturb the context data it set up about the current operation while the *HwScsiEnableInterruptsCallback* routine is running.
+When the *HwScsiEnableInterruptsCallback* routine gets control, all system device interrupts are enabled except from the HBA because the *HwScsiInterrupt* routine disabled interrupts on the HBA before it called [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportnotification). Thus, the miniport driver's *HwScsiInterrupt* routine cannot be called and cannot disturb the context data it set up about the current operation while the *HwScsiEnableInterruptsCallback* routine is running.
 
 A *HwScsiEnableInterruptsCallback* routine should do the following:
 
@@ -34,7 +34,7 @@ A *HwScsiEnableInterruptsCallback* routine should do the following:
 
 The NT-based operating system **ScsiPortNotification** routine calls the *HwScsiDisableInterruptsCallback* routine with a subset of the system device interrupts disabled. No device interrupt with a system-assigned hardware priority (IRQL) less than or equal to the HBA's can occur.
 
-See [IRQL](https://msdn.microsoft.com/library/windows/hardware/ff551779) for more information.
+See [IRQL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) for more information.
 
  
 

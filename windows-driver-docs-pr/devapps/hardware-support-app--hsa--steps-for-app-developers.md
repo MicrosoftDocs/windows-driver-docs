@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Hardware Support App (HSA): Steps for App Developers
 
-This topic describes how to associate a device-specific app with a driver or [RPC (Remote Procedure Call)](https://msdn.microsoft.com/library/windows/desktop/aa378651) endpoint.  When paired in this fashion, the app is referred to as a Hardware Support App (HSA).  You can distribute and update a Hardware Support App through the Microsoft Store.
+This topic describes how to associate a device-specific app with a driver or [RPC (Remote Procedure Call)](https://docs.microsoft.com/windows/desktop/Rpc/rpc-start-page) endpoint.  When paired in this fashion, the app is referred to as a Hardware Support App (HSA).  You can distribute and update a Hardware Support App through the Microsoft Store.
 
 Start with either a [Universal Windows Platform (UWP) app](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) or a desktop (Win32) app.  If you would like to use a desktop app, use the [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) to create a Windows App Package that you can upload to the Store.
 
@@ -74,7 +74,7 @@ The app developer can continue developing an app with custom capabilities in dev
 
 ## Add a custom capability to the App Package Manifest
 
-Next, modify your [app package manifest](https://msdn.microsoft.com/library/windows/apps/BR211474) source file (`Package.appxmanifest`) to include a capabilities attribute.
+Next, modify your [app package manifest](https://docs.microsoft.com/uwp/schemas/appxpackage/appx-package-manifest) source file (`Package.appxmanifest`) to include a capabilities attribute.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

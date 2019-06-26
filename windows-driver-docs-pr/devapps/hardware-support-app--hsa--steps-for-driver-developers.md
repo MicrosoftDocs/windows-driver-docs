@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Hardware Support App (HSA): Steps for Driver Developers
 
-A Hardware Support App (HSA) is a device-specific app that is paired with a specific driver or [RPC (Remote Procedure Call)](https://msdn.microsoft.com/library/windows/desktop/aa378651) endpoint.
+A Hardware Support App (HSA) is a device-specific app that is paired with a specific driver or [RPC (Remote Procedure Call)](https://docs.microsoft.com/windows/desktop/Rpc/rpc-start-page) endpoint.
 
 To associate a Store app with a driver, first reserve a special value called a custom capability. Then permit access to apps that advertise the capability and provide the capability to the app developer.  This page describes these steps for the driver developer.
 
@@ -32,8 +32,12 @@ First, reserve a custom capability:
     * Name of the capability (must be unique and reference the owner)
     * What resources does capability need to access?
     * Any security or privacy concerns
+    * What data events will be processed to the partner?
+      * Would the events include personal identifiers such as  precise user locations, passwords, IP address, PUID, device ID , CID, username and contact data)?
+      * Do the data events stay on the users device, or is it sent  to partner?
     * What data does your capability provide access to?
-    * Include the Microsoft Store App Publisher ID.  To get one, create a skeleton app entry on the Microsoft Store page. For more info on reserving your App PFN, see [Create your app by reserving a name](https://msdn.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name).
+    * What is the benefit to the end user of this capability?
+    * Include the Microsoft Store App Publisher ID.  To get one, create a skeleton app entry on the Microsoft Store page. For more info on reserving your App PFN, see [Create your app by reserving a name](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name).
 
 2.  If the request is approved, Microsoft emails back a unique custom capability string name in the format **CompanyName.capabilityName\_PublisherID**.
 
@@ -43,7 +47,7 @@ Now you can use the custom capability to allow access to either an RPC endpoint 
 
 To allow access to an RPC endpoint to a UWP app that has the custom capability, follow these steps:
 
-1.  Call [**DeriveCapabilitySidsFromName**](https://msdn.microsoft.com/library/windows/desktop/mt803273) to convert the custom capability name to a security ID (SID).
+1.  Call [**DeriveCapabilitySidsFromName**](https://docs.microsoft.com/windows/desktop/api/securitybaseapi/nf-securitybaseapi-derivecapabilitysidsfromname) to convert the custom capability name to a security ID (SID).
 2.  Add the SID to your access allowed ACE along with any other SIDs that are needed for the security descriptor of your RPC endpoint.
 3.  Create an RPC endpoint using the information from the Security Descriptor.
 
@@ -173,13 +177,13 @@ The following diagram summarizes the sequence described above:
 * [Intro to the Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide)
 * [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro)
 * [App capabilities](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations)
-* [Develop UWP apps using Visual Studio](https://developer.microsoft.com/windows/apps/develop)
+* [Develop UWP apps using Visual Studio](https://docs.microsoft.com/windows/uwp/develop/)
 * [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
-* [Develop UWP apps](https://developer.microsoft.com/windows/apps/develop)
+* [Develop UWP apps](https://docs.microsoft.com/windows/uwp/develop/)
 * [Package an app using the Desktop App Converter (Desktop Bridge)](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter)
 * [Custom Capability Sample App](https://go.microsoft.com/fwlink/p/?LinkId=846904)
 * [Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
-* [Sideload apps in Windows 10](https://technet.microsoft.com/library/mt269549.aspx)
+* [Sideload apps in Windows 10](https://docs.microsoft.com/windows/deploy/sideload-apps-in-windows-10)
 * [FAQ on Custom Capabilities](FAQ-on-custom-capabilities.md)
 
 ## SCCD XML Schema

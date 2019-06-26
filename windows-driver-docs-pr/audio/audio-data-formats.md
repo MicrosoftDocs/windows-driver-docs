@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 ## <span id="audio_data_formats"></span><span id="AUDIO_DATA_FORMATS"></span>
 
 
-To specify the data format for a wave audio stream, the [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656) structure is followed immediately by either a [**WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff538799) or [**KSDSOUND\_BUFFERDESC**](https://msdn.microsoft.com/library/windows/hardware/ff537121) structure, and the **Specifier** member of KSDATAFORMAT is accordingly set to one of the following two values:
+To specify the data format for a wave audio stream, the [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat) structure is followed immediately by either a [**WAVEFORMATEX**](https://docs.microsoft.com/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) or [**KSDSOUND\_BUFFERDESC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdsound_bufferdesc) structure, and the **Specifier** member of KSDATAFORMAT is accordingly set to one of the following two values:
 
 -   KSDATAFORMAT\_SPECIFIER\_WAVEFORMATEX
 
@@ -34,9 +34,9 @@ To specify the data format for a wave audio stream, the [**KSDATAFORMAT**](https
 
     Indicates that the data format belongs to a wave stream that is being used by a DirectSound application. In this case, the data-format specifier following the KSDATAFORMAT structure is a KSDSOUND\_BUFFERDESC structure, which contains an embedded WAVEFORMATEX structure.
 
-The [**KSDATAFORMAT\_WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff537095) structure encapsulates both a KSDATAFORMAT structure and the WAVEFORMATEX structure that follows it. Similarly, the [**KSDATAFORMAT\_DSOUND**](https://msdn.microsoft.com/library/windows/hardware/ff537094) structure encapsulates both a KSDATAFORMAT structure and the DSOUND\_BUFFERDESC structure that follows it.
+The [**KSDATAFORMAT\_WAVEFORMATEX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structure encapsulates both a KSDATAFORMAT structure and the WAVEFORMATEX structure that follows it. Similarly, the [**KSDATAFORMAT\_DSOUND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdataformat_dsound) structure encapsulates both a KSDATAFORMAT structure and the DSOUND\_BUFFERDESC structure that follows it.
 
-For either KSDATAFORMAT\_WAVEFORMATEX or KSDATAFORMAT\_DSOUND, the last item in the structure is an embedded WAVEFORMATEX structure; in the case of KSDATAFORMAT\_DSOUND, the WAVEFORMATEX structure is contained in the embedded DSOUND\_BUFFERDESC structure. In either case, the WAVEFORMATEX structure might be the beginning of a [**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802) structure, in which case the **wFormatTag** member of WAVEFORMATEX is set to the value WAVE\_FORMAT\_EXTENSIBLE. For more information, see [Extensible Wave-Format Descriptors](extensible-wave-format-descriptors.md).
+For either KSDATAFORMAT\_WAVEFORMATEX or KSDATAFORMAT\_DSOUND, the last item in the structure is an embedded WAVEFORMATEX structure; in the case of KSDATAFORMAT\_DSOUND, the WAVEFORMATEX structure is contained in the embedded DSOUND\_BUFFERDESC structure. In either case, the WAVEFORMATEX structure might be the beginning of a [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-waveformatextensible) structure, in which case the **wFormatTag** member of WAVEFORMATEX is set to the value WAVE\_FORMAT\_EXTENSIBLE. For more information, see [Extensible Wave-Format Descriptors](extensible-wave-format-descriptors.md).
 
 To specify the data format for a MIDI stream or DirectMusic stream, the KSDATAFORMAT structure is sufficient; it is not followed by any additional information.
 

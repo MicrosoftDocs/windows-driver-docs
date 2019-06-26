@@ -103,19 +103,19 @@ As mentioned previously, the driver is installed and operates in a drawing layer
 
 -   It is recommended that a user-mode service be used to maintain the mirror driver's settings. This application can ensure that the driver is loaded correctly at boot time and it can respond appropriately to changes to the desktop by getting notifications of display changes via the WM\_DISPLAYCHANGE message.
 
--   GDI calls the mirror driver for any 2D graphics DDI drawing operation that intersects the driver's bounding rectangle. Note that GDI does not perform a bounding rectangle check if the surface is a device format bitmap; that is, if the [**SURFOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff569901) has an **iType** of STYPE\_DEVBITMAP.
+-   GDI calls the mirror driver for any 2D graphics DDI drawing operation that intersects the driver's bounding rectangle. Note that GDI does not perform a bounding rectangle check if the surface is a device format bitmap; that is, if the [**SURFOBJ**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_surfobj) has an **iType** of STYPE\_DEVBITMAP.
 
--   As always, the mirror driver must be implemented without the use of global variables. All state must exist in the *PDEV* for that particular driver. GDI will call [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) for every hardware device extension created by the video miniport driver.
+-   As always, the mirror driver must be implemented without the use of global variables. All state must exist in the *PDEV* for that particular driver. GDI will call [**DrvEnablePDEV**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenablepdev) for every hardware device extension created by the video miniport driver.
 
 -   The mirror driver should not support DirectDraw.
 
--   A mirror driver must set the GCAPS\_LAYERED flag to **TRUE** in the **flGraphicsCaps** member of the [**DEVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff552835) structure.
+-   A mirror driver must set the GCAPS\_LAYERED flag to **TRUE** in the **flGraphicsCaps** member of the [**DEVINFO**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-tagdevinfo) structure.
 
--   An accessibility mirror driver must set the GCAPS2\_EXCLUDELAYERED and GCAPS2\_INCLUDEAPIBITMAPS flags to **TRUE** in the **flGraphicsCaps2** member of the [**DEVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff552835) structure.
+-   An accessibility mirror driver must set the GCAPS2\_EXCLUDELAYERED and GCAPS2\_INCLUDEAPIBITMAPS flags to **TRUE** in the **flGraphicsCaps2** member of the [**DEVINFO**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-tagdevinfo) structure.
 
--   A mirror driver can optionally support brush realizations by implementing [**DrvRealizeBrush**](https://msdn.microsoft.com/library/windows/hardware/ff556273).
+-   A mirror driver can optionally support brush realizations by implementing [**DrvRealizeBrush**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvrealizebrush).
 
-GDI allows the same driver to run on both a single and multiple-monitor system. A driver in a multiple-monitor system need only track its position within the global desktop. GDI provides this position to the driver whenever a Win32 **ChangeDisplaySettings** call occurs, such as when a user dynamically changes the monitor's position in the desktop by using the Display program in Control Panel. GDI updates the **dmPosition** member of the [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure accordingly when such a change occurs. A driver can receive notification of such a change by implementing [**DrvNotify**](https://msdn.microsoft.com/library/windows/hardware/ff556252). See [Mirror Driver Installation](mirror-driver-installation.md) for more information.
+GDI allows the same driver to run on both a single and multiple-monitor system. A driver in a multiple-monitor system need only track its position within the global desktop. GDI provides this position to the driver whenever a Win32 **ChangeDisplaySettings** call occurs, such as when a user dynamically changes the monitor's position in the desktop by using the Display program in Control Panel. GDI updates the **dmPosition** member of the [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure accordingly when such a change occurs. A driver can receive notification of such a change by implementing [**DrvNotify**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvnotify). See [Mirror Driver Installation](mirror-driver-installation.md) for more information.
 
 **Note**   Mirror drivers are not required to render with pixel-perfect accuracy when rendering on the client side with such accuracy may be difficult. For example, the adapter/monitor receiving the mirrored image is not required to render [Grid Intersect Quantization](cosmetic-lines.md) (GIQ) line drawing and polygon fills with the same precision as the adapter/monitor being mirrored.
 

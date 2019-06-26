@@ -89,7 +89,7 @@ If *Address* is specified, only entries associated with the specified thread add
 If *Address* is specified, only the IRP with the specified address is displayed.
 
 <span id="Bit_11__0x800_"></span><span id="bit_11__0x800_"></span><span id="BIT_11__0X800_"></span>Bit 11 (0x800)  
-(Windows 8.1 and later) Display entries from the fault injection log that is created when you select the [Systematic low resource simulation](https://msdn.microsoft.com/library/windows/hardware/dn312130) option.
+(Windows 8.1 and later) Display entries from the fault injection log that is created when you select the [Systematic low resource simulation](https://docs.microsoft.com/windows-hardware/drivers/devtest/systematic-low-resource-simulation) option.
 
 <span id="_______Image______"></span><span id="_______image______"></span><span id="_______IMAGE______"></span> *Image*   
 If *Flags* is used and is not equal to 4, 8, or 0x10, *Image* specifies the name of a driver. *Image* is used to filter the information displayed by *Flags* values of 0x1 and 0x2: only the specified driver is considered. This driver must be currently verified.

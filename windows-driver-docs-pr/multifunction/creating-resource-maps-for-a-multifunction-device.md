@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-A *resource map* identifies the resources of a multifunction device that are used by a child function. Resource maps are specified using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320). If a multifunction device requires resource maps, the INF for the device typically contains a resource map for each function of the device.
+A *resource map* identifies the resources of a multifunction device that are used by a child function. Resource maps are specified using an [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive). If a multifunction device requires resource maps, the INF for the device typically contains a resource map for each function of the device.
 
 There are two types of resource maps − *standard* resource maps and *varying* resource maps. This section describes how to construct resource maps and includes the following topics:
 

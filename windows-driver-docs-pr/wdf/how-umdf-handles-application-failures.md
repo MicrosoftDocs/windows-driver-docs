@@ -18,7 +18,7 @@ This topic describes actions that User-Mode Driver Framework (UMDF) and the oper
 
 When an application fails, the following events occur:
 
--   The reflector receives [**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff550718).
+-   The reflector receives [**IRP\_MJ\_CLEANUP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-cleanup).
 
 -   The cleanup request is sent to the host process on the "cancel" IPC channel.
 

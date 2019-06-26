@@ -35,9 +35,9 @@ Ndiskd.dll
 Remarks
 -------
 
-For more information about CoNDIS, see [Connection-Oriented NDIS](https://msdn.microsoft.com/windows/hardware/drivers/network/connection-oriented-ndis).
+For more information about CoNDIS, see [Connection-Oriented NDIS](https://docs.microsoft.com/windows-hardware/drivers/network/connection-oriented-ndis).
 
-For more information about CoNDIS virtual connections, see [Virtual Connections](https://msdn.microsoft.com/windows/hardware/drivers/network/virtual-connections).
+For more information about CoNDIS virtual connections, see [Virtual Connections](https://docs.microsoft.com/windows-hardware/drivers/network/virtual-connections).
 
 Examples
 --------
@@ -92,9 +92,9 @@ VIRTUAL CALL
 ## <span id="see_also"></span>See also
 
 
-[Network Driver Design Guide](https://msdn.microsoft.com/windows/hardware/drivers/network/index)
+[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
-[Windows Vista and Later Networking Reference](https://msdn.microsoft.com/library/windows/hardware/ff571081)
+[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
 
 [Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
 
@@ -102,9 +102,9 @@ VIRTUAL CALL
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Connection-Oriented NDIS](https://msdn.microsoft.com/windows/hardware/drivers/network/connection-oriented-ndis)
+[Connection-Oriented NDIS](https://docs.microsoft.com/windows-hardware/drivers/network/connection-oriented-ndis)
 
-[Virtual Connections](https://msdn.microsoft.com/windows/hardware/drivers/network/virtual-connections)
+[Virtual Connections](https://docs.microsoft.com/windows-hardware/drivers/network/virtual-connections)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 

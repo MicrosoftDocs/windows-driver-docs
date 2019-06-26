@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## Installation
 
 
-When you install the [Windows Driver Kit](https://developer.microsoft.com/windows/hardware/windows-driver-kit), the TAEF files are placed in the Testing\\Runtimes\\TAEF subdirectory of the WDK. When you set up a test computer for deployment, following the instructions to [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/library/windows/hardware/dn745909) or [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/library/windows/hardware/hh698272), the TAEF files are installed on the test computer.
+When you install the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk), the TAEF files are placed in the Testing\\Runtimes\\TAEF subdirectory of the WDK. When you set up a test computer for deployment, following the instructions to [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1) or [Provision a computer for driver deployment and testing (WDK 8)](https://docs.microsoft.com/previous-versions/hh698272(v=vs.85)), the TAEF files are installed on the test computer.
 
 You can also install the TAEF files manually, see [Manually installing and uninstalling TAEF on a test computer](#manually-installing-and-uninstalling-taef-on-a-test-computer).
 

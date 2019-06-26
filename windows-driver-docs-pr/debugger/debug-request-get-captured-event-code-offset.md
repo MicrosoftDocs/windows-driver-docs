@@ -34,7 +34,7 @@ The method was successful.
 <span id="E_NOINTERFACE"></span><span id="e_nointerface"></span>E\_NOINTERFACE  
 The memory at the instruction pointer for the current event is not valid.
 
-This method may also return error values. See [**Return Values**](https://msdn.microsoft.com/library/windows/hardware/ff549771) for more details.
+This method may also return error values. See [**Return Values**](https://docs.microsoft.com/windows-hardware/drivers/debugger/hresult-values) for more details.
 
 Remarks
 -------

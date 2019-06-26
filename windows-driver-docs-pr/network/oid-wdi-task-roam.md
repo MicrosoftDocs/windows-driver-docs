@@ -33,8 +33,8 @@ The scan and AP selection requirements for this task are same as for [OID\_WDI\_
 
 | TLV  | Multiple TLV instances allowed | Optional | Description |
 | --- | --- | --- | --- |
-| [**WDI\_TLV\_CONNECT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926266) |   |   | Connection parameters. |  
-| [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn926264)  | X  |   | The preferred list of candidate connect BSS entries. The port should attempt to connect to these BSS entries until the list is exhausted, or the connection completed successfully. The port can reprioritize the entries if needed. If the adapter has set the Connect BSS Selection Override bit, then it can pick a BSS that is not in this list as long as it follows the Allowed/Disallowed list requirements. | 
+| [**WDI\_TLV\_CONNECT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-connect-parameters) |   |   | Connection parameters. |  
+| [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-connect-bss-entry)  | X  |   | The preferred list of candidate connect BSS entries. The port should attempt to connect to these BSS entries until the list is exhausted, or the connection completed successfully. The port can reprioritize the entries if needed. If the adapter has set the Connect BSS Selection Override bit, then it can pick a BSS that is not in this list as long as it follows the Allowed/Disallowed list requirements. | 
 
 ## Task completion indication
 

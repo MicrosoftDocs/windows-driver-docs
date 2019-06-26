@@ -9,5 +9,5 @@ ms.localizationpriority: medium
 # Plug and Play ID - PNPID Request
 
 
-Plug and Play ID are now requested through the UEFI.org website. To request an ID, see [PNP ID and ACPI ID Registry](https://www.uefi.org/PNP_ACPI_Registry).
+Plug and Play ID are now requested through the UEFI.org website. To request an ID, see [PNP ID and ACPI ID Registry](https://uefi.org/PNP_ACPI_Registry).
 

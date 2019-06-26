@@ -26,9 +26,9 @@ ms.localizationpriority: medium
 
 Windows 2000 and later operating system versions support the following special effects:
 
--   If the display hardware supports alpha blending, the display driver can implement [**DrvAlphaBlend**](https://msdn.microsoft.com/library/windows/hardware/ff556176).
+-   If the display hardware supports alpha blending, the display driver can implement [**DrvAlphaBlend**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvalphablend).
 
--   If the display hardware supports gradient fills, the display driver should implement [**DrvGradientFill**](https://msdn.microsoft.com/library/windows/hardware/ff556236).
+-   If the display hardware supports gradient fills, the display driver should implement [**DrvGradientFill**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgradientfill).
 
 ### <span id="Alpha_Blending"></span><span id="alpha_blending"></span><span id="ALPHA_BLENDING"></span>Alpha Blending
 
@@ -54,7 +54,7 @@ The worst-case stretching error is the largest difference in color value between
 
 The Windows 2000 (and later) Shell uses *gradient fills* on all caption bars.
 
-The results produced by [**DrvGradientFill**](https://msdn.microsoft.com/library/windows/hardware/ff556236) depend on the number of bits per pixel, and must satisfy the following guidelines:
+The results produced by [**DrvGradientFill**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgradientfill) depend on the number of bits per pixel, and must satisfy the following guidelines:
 
 ### <span id="_24_bpp_or_32_bpp_surfaces"></span><span id="_24_BPP_OR_32_BPP_SURFACES"></span>24-bpp or 32-bpp surfaces
 

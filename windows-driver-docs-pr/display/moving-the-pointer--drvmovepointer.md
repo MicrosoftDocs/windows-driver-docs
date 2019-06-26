@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 ## <span id="ddk_moving_the_pointer_drvmovepointer_gg"></span><span id="DDK_MOVING_THE_POINTER_DRVMOVEPOINTER_GG"></span>
 
 
-If [**DrvSetPointerShape**](https://msdn.microsoft.com/library/windows/hardware/ff556289) is included in the driver, then [**DrvMovePointer**](https://msdn.microsoft.com/library/windows/hardware/ff556248) must also be supported. This function moves a driver-managed pointer to a new position. Because GDI serializes calls to pointer functions, *DrvMovePointer* is not be called while any thread is drawing in the display driver, unless the GCAPS\_ASYNCMOVE flag has been set in the [**DEVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff552835) structure.
+If [**DrvSetPointerShape**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvsetpointershape) is included in the driver, then [**DrvMovePointer**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvmovepointer) must also be supported. This function moves a driver-managed pointer to a new position. Because GDI serializes calls to pointer functions, *DrvMovePointer* is not be called while any thread is drawing in the display driver, unless the GCAPS\_ASYNCMOVE flag has been set in the [**DEVINFO**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-tagdevinfo) structure.
 
-The driver should call [**EngMovePointer**](https://msdn.microsoft.com/library/windows/hardware/ff564977) to have GDI move an engine-managed pointer on the device. The driver requests that GDI manage the cursor by calling [**EngSetPointerShape**](https://msdn.microsoft.com/library/windows/hardware/ff565017).
+The driver should call [**EngMovePointer**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engmovepointer) to have GDI move an engine-managed pointer on the device. The driver requests that GDI manage the cursor by calling [**EngSetPointerShape**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engsetpointershape).
 
  
 

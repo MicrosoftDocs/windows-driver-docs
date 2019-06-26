@@ -9,14 +9,14 @@ ms.localizationpriority: medium
 # Step 2: A Driver for the Device is Selected
 
 
-After a new device is detected and identified, Windows and its [device installation components](https://msdn.microsoft.com/library/windows/hardware/ff541277) follow these steps:
+After a new device is detected and identified, Windows and its [device installation components](https://docs.microsoft.com/previous-versions/ff541277(v=vs.85)) follow these steps:
 
 1.  Windows searches for an appropriate [driver package](driver-packages.md) for the device. For more information about this step, see [Searching for the Driver Package](#searching-for-the-driver).
 2.  Windows selects the most appropriate driver for the device from one or more driver packages. For more information about this step, see [Selecting the Driver](#selecting-the-driver).
 
 ### <a href="" id="searching-for-the-driver"></a>Searching for the Driver Package
 
-Using the [hardware identifier (ID)](hardware-ids.md) that is reported by the bus or hub driver, Windows searches for [driver packages](driver-packages.md) that match a device. A driver package matches a device if the hardware ID matches a hardware ID or [compatible ID](compatible-ids.md) in an [**INF *Models* section**](inf-models-section.md) entry of the driver package's [INF file](inf-files.md).
+Using the [hardware identifier (ID)](hardware-ids.md) that is reported by the bus or hub driver, Windows searches for [driver packages](driver-packages.md) that match a device. A driver package matches a device if the hardware ID matches a hardware ID or [compatible ID](compatible-ids.md) in an [**INF *Models* section**](inf-models-section.md) entry of the driver package's [INF file](overview-of-inf-files.md).
 
 Depending on the operating system version, Windows searches for matching driver packages in various locations as described in the following table.
 
@@ -92,7 +92,7 @@ As soon as Windows has found one or more matching [driver packages](driver-packa
 
     -   Whether the driver is digitally signed. Starting with Windows Vista, Windows always selects a signed driver instead of an unsigned driver regardless of other selection criteria. For more information about digital signatures for drivers, see [Driver Signing](driver-signing.md).
 
-    -   The driver date and version, where the date and version are specified by the [**INF DriverVer directive**](inf-driverver-directive.md) that is contained in the driver package's [INF file](inf-files.md).
+    -   The driver date and version, where the date and version are specified by the [**INF DriverVer directive**](inf-driverver-directive.md) that is contained in the driver package's [INF file](overview-of-inf-files.md).
 
 Once Windows has selected a driver for the device, Windows installs the driver as described in [Step 3: The Driver for the Device is Installed](step-3--the-driver-for-the-device-is-installed.md).
 

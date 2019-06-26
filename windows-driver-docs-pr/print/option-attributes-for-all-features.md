@@ -65,7 +65,7 @@ The following table lists, in alphabetic order, the [option attributes](option-a
 </tr>
 <tr class="odd">
 <td><p></em><strong>OptionID</strong></p></td>
-<td><p>Numeric value representing a unique option identifier that Unidrv stores in the printer's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552837)"><strong>DEVMODEW</strong></a> structure. For use only with the PaperSize, InputSlot, Halftoning, and MediaType features. Value is stored in the DEVMODE structure's <strong>dmPaperSize</strong>, <strong>dmDefaultSource</strong>, <strong>dmDitherType</strong>, or <strong>dmMediaType</strong> member, respectively.</p></td>
+<td><p>Numeric value representing a unique option identifier that Unidrv stores in the printer's <a href="https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew)"><strong>DEVMODEW</strong></a> structure. For use only with the PaperSize, InputSlot, Halftoning, and MediaType features. Value is stored in the DEVMODE structure's <strong>dmPaperSize</strong>, <strong>dmDefaultSource</strong>, <strong>dmDitherType</strong>, or <strong>dmMediaType</strong> member, respectively.</p></td>
 <td><p>Optional. If not specified, Unidrv assigns an identifier value (&gt;256). To avoid conflicts with Unidrv-assigned identifiers, the specified value must be greater than 512.</p></td>
 </tr>
 <tr class="even">

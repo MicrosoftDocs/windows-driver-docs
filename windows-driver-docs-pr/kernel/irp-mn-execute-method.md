@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 # IRP\_MN\_EXECUTE\_METHOD
 
 
-All drivers that support methods within data blocks must handle this IRP. A driver can handle WMI IRPs either by calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834) or by handling the IRP itself, as described in [Handling WMI Requests](https://msdn.microsoft.com/library/windows/hardware/ff546968).
+All drivers that support methods within data blocks must handle this IRP. A driver can handle WMI IRPs either by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests).
 
-If a driver calls [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834) to handle an **IRP\_MN\_EXECUTE\_METHOD** request, WMI in turn calls that driver's [*DpWmiExecuteMethod*](https://msdn.microsoft.com/library/windows/hardware/ff544090) routine.
+If a driver calls [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol) to handle an **IRP\_MN\_EXECUTE\_METHOD** request, WMI in turn calls that driver's [*DpWmiExecuteMethod*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_execute_method_callback) routine.
 
 Major Code
 ----------
@@ -37,12 +37,12 @@ WMI will send an [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](irp-mn-query-single-inst
 
 **Parameters.WMI.BufferSize** indicates the size of the nonpaged buffer at **Parameters.WMI.Buffer** which must be &gt;= **sizeof**(**WNODE\_METHOD\_ITEM**) plus the size of any output data for the method.
 
-**Parameters.WMI.Buffer** points to a [**WNODE\_METHOD\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff566376) structure in which **MethodID** indicates the identifier of the method to execute and **DataBlockOffset** indicates the offset in bytes from the beginning of the structure to the first byte of input data, if any. **Parameters.WMI.Buffer-&gt;SizeDataBlock** indicates the size in bytes of the input **WNODE\_METHOD\_ITEM** including input data, or zero if there is no input.
+**Parameters.WMI.Buffer** points to a [**WNODE\_METHOD\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-tagwnode_method_item) structure in which **MethodID** indicates the identifier of the method to execute and **DataBlockOffset** indicates the offset in bytes from the beginning of the structure to the first byte of input data, if any. **Parameters.WMI.Buffer-&gt;SizeDataBlock** indicates the size in bytes of the input **WNODE\_METHOD\_ITEM** including input data, or zero if there is no input.
 
 ## Output Parameters
 
 
-If the driver handles WMI IRPs by calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834), WMI fills in the [**WNODE\_METHOD\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff566376) with data returned by the driver's [*DpWmiExecuteMethod*](https://msdn.microsoft.com/library/windows/hardware/ff544090) routine.
+If the driver handles WMI IRPs by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol), WMI fills in the [**WNODE\_METHOD\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-tagwnode_method_item) with data returned by the driver's [*DpWmiExecuteMethod*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_execute_method_callback) routine.
 
 Otherwise, the driver fills in the **WNODE\_METHOD\_ITEM** structure that **Parameters.WMI.Buffer** points to as follows:
 
@@ -50,14 +50,14 @@ Otherwise, the driver fills in the **WNODE\_METHOD\_ITEM** structure that **Para
 
 -   Updates **SizeDataBlock** with the size of the output data, or zero if there is no output data.
 
--   Checks **Parameters.WMI.Buffersize** to determine whether the buffer is large enough to receive the output **WNODE\_METHOD\_ITEM** including any output data. If the buffer is not large enough, the driver fills in the needed size in a [**WNODE\_TOO\_SMALL**](https://msdn.microsoft.com/library/windows/hardware/ff566379) structure pointed to by **Parameters.WMI.Buffer**. If the buffer is smaller than **sizeof**(**WNODE\_TOO\_SMALL**), the driver fails the IRP and returns STATUS\_BUFFER\_TOO\_SMALL.
+-   Checks **Parameters.WMI.Buffersize** to determine whether the buffer is large enough to receive the output **WNODE\_METHOD\_ITEM** including any output data. If the buffer is not large enough, the driver fills in the needed size in a [**WNODE\_TOO\_SMALL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-tagwnode_too_small) structure pointed to by **Parameters.WMI.Buffer**. If the buffer is smaller than **sizeof**(**WNODE\_TOO\_SMALL**), the driver fails the IRP and returns STATUS\_BUFFER\_TOO\_SMALL.
 
 -   Writes output data, if any, over input data starting at **DataBlockOffset**. The driver must not change the input value of **DataBlockOffset**.
 
 ## I/O Status Block
 
 
-If the driver handles the IRP by calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834), WMI sets **Irp-&gt;IoStatus.Status** and **Irp-&gt;IoStatus.Information** in the I/O status block.
+If the driver handles the IRP by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol), WMI sets **Irp-&gt;IoStatus.Status** and **Irp-&gt;IoStatus.Information** in the I/O status block.
 
 Otherwise, the driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate error status such as the following:
 
@@ -74,21 +74,21 @@ On success, a driver sets **Irp-&gt;IoStatus.Information** to the number of byte
 Operation
 ---------
 
-A driver can handle WMI IRPs either by calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834) or by handling the IRP itself, as described in [Handling WMI Requests](https://msdn.microsoft.com/library/windows/hardware/ff546968).
+A driver can handle WMI IRPs either by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests).
 
-If a driver handles WMI IRPs by calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834), that routine calls the driver's [*DpWmiExecuteMethod*](https://msdn.microsoft.com/library/windows/hardware/ff544090) routine, or returns STATUS\_INVALID\_DEVICE\_REQUEST if the driver does not define the routine.
+If a driver handles WMI IRPs by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol), that routine calls the driver's [*DpWmiExecuteMethod*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_execute_method_callback) routine, or returns STATUS\_INVALID\_DEVICE\_REQUEST if the driver does not define the routine.
 
-If a driver handles an **IRP\_MN\_EXECUTE\_METHOD** request itself, it must do so only if **Parameters.WMI.ProviderId** points to the same device object as the pointer that the driver passed to [**IoWMIRegistrationControl**](https://msdn.microsoft.com/library/windows/hardware/ff550480). Otherwise, the driver must forward the request to the next-lower driver.
+If a driver handles an **IRP\_MN\_EXECUTE\_METHOD** request itself, it must do so only if **Parameters.WMI.ProviderId** points to the same device object as the pointer that the driver passed to [**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iowmiregistrationcontrol). Otherwise, the driver must forward the request to the next-lower driver.
 
 The driver is responsible for validating all input values. Specifically, the driver must do the following if it handles the IRP request itself:
 
--   For static names, verify that the **InstanceIndex** member of the [**WNODE\_METHOD\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff566376) structure is within the range of instance indexes supported by the driver for the data block.
+-   For static names, verify that the **InstanceIndex** member of the [**WNODE\_METHOD\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-tagwnode_method_item) structure is within the range of instance indexes supported by the driver for the data block.
 
 -   For dynamic names, verify that the instance name string identifies a data block instance supported by the driver.
 
--   Verify that the **MethodId** member of the [**WNODE\_METHOD\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff566376) structure is within the range of method identifiers supported by the driver for the data block, and that the caller is allowed to execute the method.
+-   Verify that the **MethodId** member of the [**WNODE\_METHOD\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-tagwnode_method_item) structure is within the range of method identifiers supported by the driver for the data block, and that the caller is allowed to execute the method.
 
--   Verify that the **DataBlockOffset** and **SizeDataBlock** members of the [**WNODE\_METHOD\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff566376) structure describe a buffer that is large enough to contain the specified method's parameters, and that the parameters are valid for the method.
+-   Verify that the **DataBlockOffset** and **SizeDataBlock** members of the [**WNODE\_METHOD\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-tagwnode_method_item) structure describe a buffer that is large enough to contain the specified method's parameters, and that the parameters are valid for the method.
 
 -   Verify that **Parameters.WMI.Buffersize** specifies a buffer that is large enough to receive the **WNODE\_METHOD\_ITEM** structure after it has been updated with output data.
 
@@ -96,7 +96,7 @@ Do not assume the thread context is that of the initiating user-mode application
 
 Before handling the request, the driver must determine whether **Parameters.WMI.DataPath** points to a GUID supported by the driver. If not, the driver must fail the IRP and return STATUS\_WMI\_GUID\_NOT\_FOUND.
 
-If the driver supports the data block, it checks the input [**WNODE\_METHOD\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff566376) at **Parameters.WMI.Buffer** for the instance name, as follows:
+If the driver supports the data block, it checks the input [**WNODE\_METHOD\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-tagwnode_method_item) at **Parameters.WMI.Buffer** for the instance name, as follows:
 
 -   If WNODE\_FLAG\_STATIC\_INSTANCE\_NAMES is set in **WnodeHeader.Flags**, the driver uses **InstanceIndex** as an index into the driver's list of static instance names for that block. WMI obtains the index from registration data that was provided by the driver when it registered the block.
 
@@ -133,15 +133,15 @@ Requirements
 ## See also
 
 
-[*DpWmiExecuteMethod*](https://msdn.microsoft.com/library/windows/hardware/ff544090)
+[*DpWmiExecuteMethod*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_execute_method_callback)
 
-[**IoWMIRegistrationControl**](https://msdn.microsoft.com/library/windows/hardware/ff550480)
+[**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iowmiregistrationcontrol)
 
-[**WMILIB\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff565813)
+[**WMILIB\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/ns-wmilib-_wmilib_context)
 
-[**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834)
+[**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol)
 
-[**WNODE\_METHOD\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff566376)
+[**WNODE\_METHOD\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-tagwnode_method_item)
 
  
 

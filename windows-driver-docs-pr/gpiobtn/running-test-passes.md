@@ -13,7 +13,7 @@ The MITT platform can test GPIO buttons by offering both test automation and the
 
 For more information on the MITT testing tool, contact MittSupport@microsoft.com.
 
-To get started, see [GPIO tests in MITT](https://msdn.microsoft.com/library/windows/hardware/dn919780). Download the installer, unpack its contents, and read the **ReadMe** file for a general overview of the tool.
+To get started, see [GPIO tests in MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/gpio-tests-in-mitt). Download the installer, unpack its contents, and read the **ReadMe** file for a general overview of the tool.
 
 ## <span id="End-to-end_indicator_testing_for_convertibles"></span><span id="end-to-end_indicator_testing_for_convertibles"></span><span id="END-TO-END_INDICATOR_TESTING_FOR_CONVERTIBLES"></span>End-to-end indicator testing for convertibles
 

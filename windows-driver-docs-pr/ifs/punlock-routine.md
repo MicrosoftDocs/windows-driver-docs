@@ -34,7 +34,7 @@ Parameters
 ----------
 
 *Context* \[in\]  
-Context pointer that was passed to [**FltProcessFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff543427) or [**FsRtlProcessFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff547166).
+Context pointer that was passed to [**FltProcessFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltprocessfilelock) or [**FsRtlProcessFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprocessfilelock).
 
 *FileLockInfo* \[in\]  
 Opaque pointer to the FILE\_LOCK\_INFO structure for the byte-range lock.
@@ -51,9 +51,9 @@ A filter (legacy filter or minifilter) can optionally specify a PUNLOCK\_ROUTINE
 
 If the filter specifies a *UnlockRoutine* routine for a FILE\_LOCK structure, this routine is called when the lock is removed from a locked byte range in a file.
 
-A minifilter specifies this routine by passing a pointer to the routine as the *UnlockRoutine* parameter for [**FltAllocateFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff541743).
+A minifilter specifies this routine by passing a pointer to the routine as the *UnlockRoutine* parameter for [**FltAllocateFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltallocatefilelock).
 
-A legacy filter specifies this routine by passing a pointer to the routine as the *UnlockRoutine* parameter for [**FsRtlAllocateFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff545640) or [**FsRtlInitializeFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff546122).
+A legacy filter specifies this routine by passing a pointer to the routine as the *UnlockRoutine* parameter for [**FsRtlAllocateFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock) or [**FsRtlInitializeFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock).
 
 Requirements
 ------------
@@ -82,39 +82,39 @@ Requirements
 ## See also
 
 
-[**FltAllocateFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff541743)
+[**FltAllocateFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltallocatefilelock)
 
-[**FltCheckLockForReadAccess**](https://msdn.microsoft.com/library/windows/hardware/ff541834)
+[**FltCheckLockForReadAccess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltchecklockforreadaccess)
 
-[**FltCheckLockForWriteAccess**](https://msdn.microsoft.com/library/windows/hardware/ff541837)
+[**FltCheckLockForWriteAccess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltchecklockforwriteaccess)
 
-[**FltFreeFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff542969)
+[**FltFreeFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfreefilelock)
 
-[**FltInitializeFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff543273)
+[**FltInitializeFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltinitializefilelock)
 
-[**FltProcessFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff543427)
+[**FltProcessFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltprocessfilelock)
 
-[**FltUninitializeFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff544595)
+[**FltUninitializeFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltuninitializefilelock)
 
-[**FsRtlAllocateFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff545640)
+[**FsRtlAllocateFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock)
 
-[**FsRtlCheckLockForReadAccess**](https://msdn.microsoft.com/library/windows/hardware/ff545758)
+[**FsRtlCheckLockForReadAccess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlchecklockforreadaccess)
 
-[**FsRtlCheckLockForWriteAccess**](https://msdn.microsoft.com/library/windows/hardware/ff545760)
+[**FsRtlCheckLockForWriteAccess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlchecklockforwriteaccess)
 
-[**FsRtlFreeFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff546011)
+[**FsRtlFreeFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfreefilelock)
 
-[**FsRtlInitializeFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff546122)
+[**FsRtlInitializeFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock)
 
-[**FsRtlProcessFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff547166)
+[**FsRtlProcessFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprocessfilelock)
 
-[**FsRtlUninitializeFileLock**](https://msdn.microsoft.com/library/windows/hardware/ff547313)
+[**FsRtlUninitializeFileLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtluninitializefilelock)
 
 [**IRP\_MJ\_LOCK\_CONTROL**](irp-mj-lock-control.md)
 
 [**PCOMPLETE\_LOCK\_IRP\_ROUTINE**](pcomplete-lock-irp-routine.md)
 
-[**PFLT\_COMPLETE\_LOCK\_CALLBACK\_DATA\_ROUTINE**](https://msdn.microsoft.com/library/windows/hardware/ff551073)
+[**PFLT\_COMPLETE\_LOCK\_CALLBACK\_DATA\_ROUTINE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nc-fltkernel-pflt_complete_lock_callback_data_routine)
 
  
 

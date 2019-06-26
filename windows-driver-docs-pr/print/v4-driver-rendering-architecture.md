@@ -55,11 +55,11 @@ For manufacturers with multiple IHV Feature Filters, we recommend that these fil
 ## Color Management
 
 
-Color management is supported in v4 print drivers. Drivers should include [Windows Color System](https://msdn.microsoft.com/library/windows/hardware/ff563783) (WCS) compliant color profiles or International Color Consortium (ICC) color profiles. V4 print drivers may also use the driver property bag for device-specific color tables.
+Color management is supported in v4 print drivers. Drivers should include [Windows Color System](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index) (WCS) compliant color profiles or International Color Consortium (ICC) color profiles. V4 print drivers may also use the driver property bag for device-specific color tables.
 
 ## Related topics
 [V4 Printer Driver Rendering](v4-driver-rendering.md)  
-[Windows Color System](https://msdn.microsoft.com/library/windows/hardware/ff563783)  
+[Windows Color System](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index)  
 
 
 

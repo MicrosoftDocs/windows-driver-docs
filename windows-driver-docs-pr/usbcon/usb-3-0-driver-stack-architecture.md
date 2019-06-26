@@ -16,13 +16,13 @@ Windows loads the USB 2.0 driver stack for devices that are attached to eHCI, oH
 
 ![architectural block diagram for usb 2.0 and 3.0 driver stacks](images/usb-driver-stack-3.png)
 
--   [USB 3.0 driver stack](#usb-3-0-driver-stack)
-    -   [USB 3.0 host controller driver (Usbxhci.sys)](#usb-3-0-host-controller-driver--usbxhci-sys)
-    -   [USB host controller extension (Ucx01000.sys)](#usb-host-controller-extension--ucx01000-sys)
-    -   [USB hub driver (Usbhub3.sys)](#usb-hub-driver-usbhub3-sys)
--   [USB 2.0 driver stack](#usb-2-0-driver-stack)
--   [USB common class generic parent driver (Usbccgp.sys)](#usb-common-class-generic-parent-driver--usbccgp-sys--)
--   [WinUSB (Winusb.sys)](#winusb-winusb-sys)
+-   [USB 3.0 driver stack](#usb-30-driver-stack)
+    -   [USB 3.0 host controller driver (Usbxhci.sys)](#usb-30-host-controller-driver-usbxhcisys)
+    -   [USB host controller extension (Ucx01000.sys)](#-usb-host-controller-extension-ucx01000sys)
+    -   [USB hub driver (Usbhub3.sys)](#usb-hub-driver-usbhub3sys)
+-   [USB 2.0 driver stack](#usb-20-driver-stack)
+-   [USB common class generic parent driver (Usbccgp.sys)](#usb-common-class-generic-parent-driver-usbccgpsys)
+-   [WinUSB (Winusb.sys)](#winusb-winusbsys)
 -   [USB client driver](#usb-client-driver)
 -   [Helper libraries for client drivers](#helper-libraries-for-client-drivers)
 -   [Related topics](#related-topics)
@@ -32,13 +32,13 @@ Windows loads the USB 2.0 driver stack for devices that are attached to eHCI, oH
 
 The USB 3.0 stack is new in Windows 8. Microsoft created the new drivers by using Kernel Mode Driver Framework (KMDF) interfaces. The KMDF driver model reduces complexity and improves stability.
 
-### <a href="" id="usb-3-0-host-controller-driver--usbxhci-sys"></a>USB 3.0 host controller driver (Usbxhci.sys)
+### <a href="" id="usb-30-host-controller-driver-usbxhcisys"></a>USB 3.0 host controller driver (Usbxhci.sys)
 
 The xHCI driver is the USB 3.0 host controller driver. The responsibilities of the xHCI driver include initializing MMIO registers and host memory-based data structures for xHCI controller hardware, mapping transfer requests from upper layer drivers to Transfer Request Blocks, and submitting the requests to the hardware. After completing a transfer, the driver handles transfer completion events from the hardware and propagates the events up the driver stack. It also controls the xHCI controller device slots and endpoint contexts.
 
 The xHCI driver is new in Windows 8 and is not an extension of the eHCI miniport driver that was available in earlier versions of the operating system. The new driver was written by using Kernel Mode Driver Framework (KMDF) interfaces and uses KMDF for all controller power management and PnP events. Windows loads the xHCI driver as the function device object (FDO) in the device stack for the host controller.
 
-### <a href="" id="-usb-host-controller-extension--ucx01000-sys--"></a> USB host controller extension (Ucx01000.sys)
+### <a href="" id="-usb-host-controller-extension-ucx01000sys"></a> USB host controller extension (Ucx01000.sys)
 
 The USB host controller extension driver (an extension to KMDF) is the new extension to the underlying class-specific host controller driver, such as the xHCI driver. The new driver is extensible and is designed to support other types of host controller drivers that are expected to be developed in the future. The USB host controller extension serves as a common abstracted interface to the hub driver, provides a generic mechanism for queuing requests to the host controller driver, and overrides certain selected functions. All I/O requests initiated by upper drivers reach the host controller extension driver before the xHCI driver. Upon receiving an I/O request, the host controller extension validates the request and then forwards the request to the proper KMDF queue associated with the target endpoint. The xHCI driver, when ready for processing, retrieves the request from the queue. The responsibilities of the USB host controller extension driver are:
 
@@ -47,7 +47,7 @@ The USB host controller extension driver (an extension to KMDF) is the new exten
 -   Manages and control the operations of the root hub associated with the host controller.
 -   Implements features that are configurable by the client driver, like chained MDLs, streams, and so on.
 
-### <a href="" id="usb-hub-driver-usbhub3-sys"></a>USB hub driver (Usbhub3.sys)
+### <a href="" id="usb-hub-driver-usbhub3sys"></a>USB hub driver (Usbhub3.sys)
 
 The new hub driver, in the USB driver stack for 3.0 devices, uses the KMDF driver model. The hub driver primarily performs these tasks:
 
@@ -116,10 +116,10 @@ Microsoft provides the following helper libraries to help kernel-mode drivers an
 
 -   Winusb.dll
 
-    Winusb.dll is a user-mode DLL that exposes [WinUSB functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb) for communicating with Winusb.sys, which is loaded as a device's function driver in kernel mode. Applications use these functions to configure the device, retrieve information about the device, and perform I/O operations. For information about using these functions, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
+    Winusb.dll is a user-mode DLL that exposes [WinUSB functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) for communicating with Winusb.sys, which is loaded as a device's function driver in kernel mode. Applications use these functions to configure the device, retrieve information about the device, and perform I/O operations. For information about using these functions, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 ## Related topics
-[Universal Serial Bus (USB) Drivers](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/)  
 [USB Driver Development Guide](usb-driver-development-guide.md)  
 
 

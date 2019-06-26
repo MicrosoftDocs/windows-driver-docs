@@ -8,9 +8,9 @@ ms.localizationpriority: medium
 
 # Creating a New Device Function Driver
 
-In this topic we explain how to use Visual Studio to start writing a new device function driver. Device function drivers are different from filter drivers, software drivers, and file system drivers, which we cover in other topics. To learn about device function drivers and how they differ from other types of drivers, see [What is a Driver?](https://msdn.microsoft.com/Library/Windows/Hardware/Ff554678), [Choosing a Driver Model](https://msdn.microsoft.com/Library/Windows/Hardware/Ff554652), and [Device Nodes and Device Stacks](https://msdn.microsoft.com/Library/Windows/Hardware/Ff554721).
+In this topic we explain how to use Visual Studio to start writing a new device function driver. Device function drivers are different from filter drivers, software drivers, and file system drivers, which we cover in other topics. To learn about device function drivers and how they differ from other types of drivers, see [What is a Driver?](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/what-is-a-driver-), [Choosing a Driver Model](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/choosing-a-driver-model), and [Device Nodes and Device Stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks).
 
-To begin, first determine where your device fits in the list of technologies described in [Device and Driver Technologies](https://msdn.microsoft.com/Library/Windows/Hardware/Ff557557). To learn about which driver models are available for your device, see the documentation for that particular technology. The recommended driver model varies from one technology to the next. For some technologies, the documentation recommends using the User Mode Driver Framework (UMDF) or the Kernel Mode Driver Framework (KMDF). For other technologies, the documentation explains how to create a minidriver that is part of a driver pair. Minidrivers go by a variety of names, including miniport and miniclass.
+To begin, first determine where your device fits in the list of technologies described in [Device and Driver Technologies](https://docs.microsoft.com/windows-hardware/drivers/). To learn about which driver models are available for your device, see the documentation for that particular technology. The recommended driver model varies from one technology to the next. For some technologies, the documentation recommends using the User Mode Driver Framework (UMDF) or the Kernel Mode Driver Framework (KMDF). For other technologies, the documentation explains how to create a minidriver that is part of a driver pair. Minidrivers go by a variety of names, including miniport and miniclass.
 
 Next, determine which of the following cases describes your driver model recommendation and follow the steps:
 
@@ -19,7 +19,7 @@ Next, determine which of the following cases describes your driver model recomme
 1.  In Visual Studio, on the **File** menu, choose **New | Project**.
 2.  In the New Project dialog box, in the left pane, locate and select **Visual C++ | Windows Driver | WDF**.
 3.  In the middle pane, select **User Mode Driver (UMDF)**.
-4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more details, see [Writing a UMDF Driver Based on a Template](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439659).
+4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more details, see [Writing a UMDF Driver Based on a Template](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-a-umdf-driver-based-on-a-template).
     **Note**  When you create a new UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 5.  At this point, you have a driver project that implements the general code required by most UMDF drivers. Now you can supply the code that is specific to your device. Refer to the documentation for your technology to learn about the interfaces that you need to implement.
 
@@ -28,7 +28,7 @@ Next, determine which of the following cases describes your driver model recomme
 1.  In Visual Studio, on the **File** menu, choose **New | Project**.
 2.  In the New Project dialog box, in the left pane, locate and select **WDF**.
 3.  In the middle pane, select **Kernel Mode Driver (KMDF)**.
-4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more details, see [Writing a KMDF Driver Based on a Template](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439654).
+4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more details, see [Writing a KMDF Driver Based on a Template](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-a-kmdf-driver-based-on-a-template).
     **Note**  When you create a new KMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 5.  At this point, you have a driver project that implements the general code required by most KMDF drivers. Now you can supply the code that is specific to your device. Refer to the documentation for your technology to learn about the methods that you need to implement.
 
