@@ -56,7 +56,7 @@
       href: using-chids.md
     - name: "Working with extension INF files"
       href: submit-dashboard-extension-inf-files.md
-    - name: "Limiting driver distribution by Windows version"
+    - name: "How to limit or expand a driver’s distribution based on Windows version"
       href: limit-driver-distribution.md
     - name: "Publishing for test distribution"
       href: publishing-for-test-distribution.md
