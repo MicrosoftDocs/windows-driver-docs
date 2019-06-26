@@ -21,7 +21,7 @@ This section describes new debugging tools in Windows 10, version 1703.
 -   Updates to the [**dx (Display Debugger Object Model Expression)**](dx--display-visualizer-variables-.md) command, to include new command capabilities.
 -   New [**dtx (Display Type - Extended Debugger Object Model Information)**](dtx--display-type---extended-debugger-object-model-information-.md) command.
 -   New [**!ioctldecode**](-ioctldecode.md) command.
--   Updated [Debugger Engine Reference](https://msdn.microsoft.com/library/windows/hardware/ff540540) to include additional interfaces and structures.
+-   Updated [Debugger Engine Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-engine-reference) to include additional interfaces and structures.
 -   Updates to [Configuring tools.ini](configuring-tools-ini.md) to document additional options for the command line debuggers.
 -   Published 75 previously undocumented stop codes in [Bug Check Code Reference](bug-check-code-reference2.md).
 -   New [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md) topic.

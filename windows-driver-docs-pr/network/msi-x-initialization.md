@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 
 
-To support MSI-X, MSI initialization requires a pre-registration phase in which the miniport driver establishes a function that filters resource-requirements. This function can change the interrupt affinity for each MSI-X message or remove message interrupt resources if the driver will register for line-based interrupts in the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function.
+To support MSI-X, MSI initialization requires a pre-registration phase in which the miniport driver establishes a function that filters resource-requirements. This function can change the interrupt affinity for each MSI-X message or remove message interrupt resources if the driver will register for line-based interrupts in the [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function.
 
-The pre-registration phase occurs before NDIS calls the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function. As with line-based interrupts, miniport drivers also register MSI interrupts while initializing miniport adapters in *MiniportInitializeEx*.
+The pre-registration phase occurs before NDIS calls the [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function. As with line-based interrupts, miniport drivers also register MSI interrupts while initializing miniport adapters in *MiniportInitializeEx*.
 
 This section includes:
 

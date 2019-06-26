@@ -16,7 +16,7 @@ The NDIS\_STATUS\_MEDIA\_BUSY status indicates that the IRDA media is busy.
 Remarks
 -------
 
-For more information about NDIS\_STATUS\_MEDIA\_BUSY, see [OID\_IRDA\_MEDIA\_BUSY](https://msdn.microsoft.com/library/windows/hardware/ff560284).
+For more information about NDIS\_STATUS\_MEDIA\_BUSY, see [OID\_IRDA\_MEDIA\_BUSY](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff560284(v=vs.85)).
 
 Requirements
 ------------
@@ -41,7 +41,7 @@ Requirements
 ## See also
 
 
-[OID\_IRDA\_MEDIA\_BUSY](https://msdn.microsoft.com/library/windows/hardware/ff560284)
+[OID\_IRDA\_MEDIA\_BUSY](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff560284(v=vs.85))
 
  
 

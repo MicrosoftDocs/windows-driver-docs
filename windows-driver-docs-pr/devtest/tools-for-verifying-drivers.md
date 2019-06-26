@@ -13,7 +13,6 @@ ms.localizationpriority: medium
 
 # Tools for Verifying Drivers
 
-
 The Windows Driver Kit (WDK) includes several very comprehensive tools that are designed to help you detect and correct errors in driver code during the development process. Many of these tools can be used very early in the development process where they are most critical and can save you the most time and effort.
 
 These verification tools are described in the WDK documentation and recommended for your use because each tool detects different types of driver errors in different ways. These tools are much more efficient than manual checks. These tools can detect errors that are not typically found in standard driver tests, and they embody the expertise of seasoned driver developers and Windows driver interface designers.
@@ -28,7 +27,7 @@ This section includes:
 
 [Survey of Verification Tools](survey-of-verification-tools.md)
 
-[DDI Compliance Rules](https://msdn.microsoft.com/library/windows/hardware/ff552840)
+[DDI Compliance Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
 [Checked Build of Windows](checked-build-of-windows.md)
 
@@ -47,12 +46,3 @@ This section includes:
 ### <span id="other_tools"></span><span id="OTHER_TOOLS"></span>Other Tools
 
 If you have access to other code or driver verification tools (from other sources), we encourage you to use them in addition to the tools in the WDK. Be sure to use [Code Analysis for Drivers](code-analysis-for-drivers.md), [Static Driver Verifier](static-driver-verifier.md), and [Driver Verifier](driver-verifier.md) because of their specific knowledge of Windows drivers, but every tool looks at the code in different ways and can therefore help you find and fix different types of problems.
-
- 
-
- 
-
-
-
-
-

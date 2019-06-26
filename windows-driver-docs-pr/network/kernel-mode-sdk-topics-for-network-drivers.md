@@ -15,7 +15,7 @@ This section lists header files and topics for kernel mode Windows network drive
 > [!IMPORTANT]
 > This section's header topics contains pages for definitions, OIDs, status indications, and other data structures that are not part of network driver reference. Reference topics include structures, enumerations, functions, and callbacks. 
 >
-> For more information about network driver reference for these headers, see [Network driver reference in SDK header files](https://msdn.microsoft.com/library/windows/hardware/mt808525).
+> For more information about network driver reference for these headers, see [Network driver reference in SDK header files](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt808525(v=vs.85)).
 
 This section contains:
 

@@ -23,7 +23,7 @@ In particular, if the effect driver DLL creates a worker thread, the effect driv
 
 All magnitude and gain values used by DirectInput are uniform and linear across the range. Any nonlinearity in the physical device must be handled by the device driver so that the application sees a linear device.
 
-The user-mode force feedback functions that are exposed by the [IDirectInputEffectDriver](https://msdn.microsoft.com/library/windows/hardware/ff540050)interface must be implemented by a force-feedback effect driver DLL. For more information about these functions, see IDirectInputEffectDriver.
+The user-mode force feedback functions that are exposed by the [IDirectInputEffectDriver](https://docs.microsoft.com/windows/desktop/api/dinputd/nn-dinputd-idirectinputeffectdriver)interface must be implemented by a force-feedback effect driver DLL. For more information about these functions, see IDirectInputEffectDriver.
 
  
 

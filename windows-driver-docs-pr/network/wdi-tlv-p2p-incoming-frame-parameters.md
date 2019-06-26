@@ -28,8 +28,8 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                                                    | Description                                        |
 |-------------------------------------------------------------------------|----------------------------------------------------|
-| [**WDI\_P2P\_ACTION\_FRAME\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn926086) | The type of the incoming action frame.             |
-| [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071)                       | The MAC address of the remote peer.                |
+| [**WDI\_P2P\_ACTION\_FRAME\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_p2p_action_frame_type) | The type of the incoming action frame.             |
+| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address)                       | The MAC address of the remote peer.                |
 | UINT8                                                                   | The Wi-Fi Direct Dialog Token for the transaction. |
 
  

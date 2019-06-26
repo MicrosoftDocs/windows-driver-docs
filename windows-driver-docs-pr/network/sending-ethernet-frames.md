@@ -25,7 +25,7 @@ The Windows TCP/IP transport supports a set of requirements for sending Ethernet
 
 For Ethernet send requests, drivers must support these requirements:
 
--   If a driver originates a send request, the driver should allocate a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure for the Ethernet frames. The **NetBufferListInfo** member in each NET\_BUFFER\_LIST structure must include the out-of-band (OOB) data that is required for the particular use. The OOB data applies to all of the [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures that are associated with a NET\_BUFFER\_LIST structure.
+-   If a driver originates a send request, the driver should allocate a [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure for the Ethernet frames. The **NetBufferListInfo** member in each NET\_BUFFER\_LIST structure must include the out-of-band (OOB) data that is required for the particular use. The OOB data applies to all of the [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structures that are associated with a NET\_BUFFER\_LIST structure.
 
 -   If a driver originates a send request, the driver should allocate one or more NET\_BUFFER structures for the Ethernet frames and link these structures to the NET\_BUFFER\_LIST structure. Each NET\_BUFFER structure that is linked to a NET\_BUFFER\_LIST structure describes a single Ethernet frame. The driver may chain multiple NET\_BUFFER\_LIST structures in a send request. 
 

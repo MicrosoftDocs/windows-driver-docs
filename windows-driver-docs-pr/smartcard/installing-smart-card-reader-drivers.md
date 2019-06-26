@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 This section provides installation information that is specific to smart card reader drivers for Microsoft Windows 2000 and later versions of the operating system.
 
-Vendors that supply their own reader drivers should make each driver a member of the **SmartCardReader** setup class in the [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of the driver's INF file. Vendors must also add a section to properly configure the smartcard services. For example:
+Vendors that supply their own reader drivers should make each driver a member of the **SmartCardReader** setup class in the [**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) of the driver's INF file. Vendors must also add a section to properly configure the smartcard services. For example:
 
 ```cpp
 [Version]
@@ -42,7 +42,7 @@ UmdfKernelModeClientPolicy=AllowKernelModeClients
 
 There are no other special requirements that are associated with installing smart card reader drivers.
 
-For general information about device installation in Windows 2000 and later versions of the operating system, see [Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455).
+For general information about device installation in Windows 2000 and later versions of the operating system, see [Device Installation Overview](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-and-driver-installation).
 
 
 

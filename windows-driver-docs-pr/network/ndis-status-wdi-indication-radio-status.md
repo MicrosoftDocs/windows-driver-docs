@@ -24,7 +24,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_RADIO\_STATUS to indicate ch
 
 | Type                                                                  | Multiple TLV instances allowed | Optional | Description                                              |
 |-----------------------------------------------------------------------|--------------------------------|----------|----------------------------------------------------------|
-| [**WDI\_TLV\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/dn898043) |                                |          | The current state of the radio in hardware and software. |
+| [**WDI\_TLV\_RADIO\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-radio-state-parameters) |                                |          | The current state of the radio in hardware and software. |
 
  
 

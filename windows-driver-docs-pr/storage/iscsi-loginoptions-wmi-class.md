@@ -68,7 +68,7 @@ class ISCSI_LoginOptions {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_LoginOptions**](https://msdn.microsoft.com/library/windows/hardware/ff561541) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_LoginOptions**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsidef/ns-iscsidef-_iscsi_loginoptions) data structure.
 
  
 

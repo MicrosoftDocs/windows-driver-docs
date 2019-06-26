@@ -32,6 +32,6 @@ SerCx2 manages the following tasks on behalf of the controller driver:
 - Transitions to and from low-power device states
 - Cancellations of I/O requests (except during custom I/O transactions)
 
-To manage read and write operations, SerCx2 transforms [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff546883) and [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff546904) requests from clients into relatively simple I/O transactions for the serial controller driver to process. For more information, see [SerCx2 I/O Transactions](sercx2-i-o-transactions.md).
+To manage read and write operations, SerCx2 transforms [**IRP\_MJ\_READ**](https://docs.microsoft.com/previous-versions/ff546883(v=vs.85)) and [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/previous-versions/ff546904(v=vs.85)) requests from clients into relatively simple I/O transactions for the serial controller driver to process. For more information, see [SerCx2 I/O Transactions](sercx2-i-o-transactions.md).
 
 SerCx2 is included in Windows as a component named Sercx2.sys. The serial controller driver statically links to the SerCx2 library, Sercxstubs.lib (version 2.0), and, at run time, communicates with Sercx2.sys. The SerCx2 DDI is defined in the 2.0\\Sercx.h header file. Sercxstubs.lib and Sercx.h are available in the Windows Driver Kit for Windows 8.1.

@@ -55,10 +55,10 @@ You can use any INF directive in a universal INF file except for the following:
 The following directives are valid with some caveats:
 
 -   The [**INF AddReg Directive**](inf-addreg-directive.md) is valid if entries in the specified *add-registry-section* have a *reg-root* value of **HKR**, or in the following cases:
-	-	For registration of [Component Object Model](https://msdn.microsoft.com/library/ee663262(v=vs.85).aspx) (COM) objects, a key may be written under:
+	-	For registration of [Component Object Model](https://docs.microsoft.com/windows/desktop/com) (COM) objects, a key may be written under:
 		-	HKCR
 		-	HKLM\SOFTWARE\Classes
-	-	For creation of [Hardware Media Foundation Transforms](https://msdn.microsoft.com/library/windows/desktop/ms703138.aspx) (MFTs), a key may be written under:
+	-	For creation of [Hardware Media Foundation Transforms](https://docs.microsoft.com/windows/desktop/medfound/media-foundation-transforms) (MFTs), a key may be written under:
 		-	HKLM\SOFTWARE\Microsoft\Windows Media Foundation
 		-	HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows Media Foundation
 		-	HKLM\SOFTWARE\WOW3232Node\Microsoft\Windows Media Foundation
@@ -75,5 +75,5 @@ The following directives are valid with some caveats:
 
 ## See Also
 
-* [Installing a Universal Windows driver](https://msdn.microsoft.com/windows-drivers/develop/installing_a_universal_driver)
-* [InfVerif](https://msdn.microsoft.com/library/windows/hardware/dn929319)
+* [Installing a Universal Windows driver](https://docs.microsoft.com/windows-hardware/drivers)
+* [InfVerif](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif)

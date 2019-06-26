@@ -24,7 +24,7 @@ int __cdecl ToggleConversionIndicator(
     MSG msg;
 
 //assuming our GetDevicePath method is creating a device path using use SetupDi API
-    DevicePath = GetDevicePath((LPGUID)&amp;GUID_GPIOBUTTONS_LAPTOPSLATE_INTERFACE);
+    DevicePath = GetDevicePath((LPGUID)&GUID_GPIOBUTTONS_LAPTOPSLATE_INTERFACE);
    
     FileHandle = CreateFile(DevicePath,
                             GENERIC_WRITE,
@@ -35,7 +35,7 @@ int __cdecl ToggleConversionIndicator(
                             NULL);
    
     buffer = 0;
-    WriteFile(FileHandle, &amp;buffer, sizeof(buffer), NULL, NULL);
+    WriteFile(FileHandle, &buffer, sizeof(buffer), NULL, NULL);
 
     return 0;
 }

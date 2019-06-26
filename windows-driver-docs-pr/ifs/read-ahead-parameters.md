@@ -95,6 +95,6 @@ Requirements
 
 [**CcSetReadAheadGranularityEx**](CcSetReadAheadGranularityEx.md)
 
-[**CcReadAhead**](https://msdn.microsoft.com/library/windows/hardware/ff539191)
+[**CcReadAhead**](https://docs.microsoft.com/previous-versions/ff539191(v=vs.85))
 
 [**CcScheduleReadAhead**](https://msdn.microsoft.com/library/windows/hardware/ff539200)

@@ -33,9 +33,9 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Miniport scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device</p>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device</p>
 <p>Adapter scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -43,7 +43,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 </tr>
 <tr class="odd">
 <td align="left">Description</td>
-<td align="left"><p>Storport retrieves this registry data, and passes the buffer to the miniport as <em>Parameter</em> when it calls the miniport’s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390" data-raw-source="[&lt;strong&gt;HwStorFindAdapter&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557390)"><strong>HwStorFindAdapter</strong></a> routine.</p></td>
+<td align="left"><p>Storport retrieves this registry data, and passes the buffer to the miniport as <em>Parameter</em> when it calls the miniport’s <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_find_adapter" data-raw-source="[&lt;strong&gt;HwStorFindAdapter&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_find_adapter)"><strong>HwStorFindAdapter</strong></a> routine.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Applies</td>
@@ -71,9 +71,9 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Miniport scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device</p>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device</p>
 <p>Adapter scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -111,9 +111,9 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Miniport scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device</p>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device</p>
 <p>Adapter scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -150,9 +150,9 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Miniport scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device</p>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device</p>
 <p>Adapter scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -189,9 +189,9 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Miniport scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device</p>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device</p>
 <p>Adapter scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -228,9 +228,9 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Miniport scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device</p>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device</p>
 <p>Adapter scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -268,9 +268,9 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Miniport scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device</p>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device</p>
 <p>Adapter scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters\Device&lt;adapter#&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -304,7 +304,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Miniport scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters</p></td>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -341,7 +341,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Miniport scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters</p></td>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -379,7 +379,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Miniport scope:</p>
-<p>HKLM\System\CurrentControlSet\Services&amp;lt;miniport name&gt;\Parameters</p></td>
+<p>HKLM\System\CurrentControlSet\Services&lt;miniport name&gt;\Parameters</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -419,7 +419,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Adapter scope:</p>
-<p>HKLM\System\CurrentControlSet\Enum&amp;lt;instance path&gt;\Device Parameters\StorPort</p></td>
+<p>HKLM\System\CurrentControlSet\Enum&lt;instance path&gt;\Device Parameters\StorPort</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -458,7 +458,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Logical unit scope:</p>
-<p>HKLM\CurrentControlSet\Enum\SCSI&amp;lt;HardwareId&gt;&amp;lt;InstanceId&gt;\Device Parameters\StorPort</p></td>
+<p>HKLM\CurrentControlSet\Enum\SCSI&lt;HardwareId&gt;&lt;InstanceId&gt;\Device Parameters\StorPort</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -496,7 +496,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Logical unit scope:</p>
-<p>HKLM\CurrentControlSet\Enum\SCSI&amp;lt;HardwareId&gt;&amp;lt;InstanceId&gt;\Device Parameters\StorPort</p></td>
+<p>HKLM\CurrentControlSet\Enum\SCSI&lt;HardwareId&gt;&lt;InstanceId&gt;\Device Parameters\StorPort</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -533,7 +533,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Logical unit scope:</p>
-<p>HKLM\CurrentControlSet\Enum\SCSI&amp;lt;HardwareId&gt;&amp;lt;InstanceId&gt;\Device Parameters\StorPort</p></td>
+<p>HKLM\CurrentControlSet\Enum\SCSI&lt;HardwareId&gt;&lt;InstanceId&gt;\Device Parameters\StorPort</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -570,7 +570,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Logical unit scope:</p>
-<p>HKLM\CurrentControlSet\Enum\SCSI&amp;lt;HardwareId&gt;&amp;lt;InstanceId&gt;\Device Parameters\StorPort</p></td>
+<p>HKLM\CurrentControlSet\Enum\SCSI&lt;HardwareId&gt;&lt;InstanceId&gt;\Device Parameters\StorPort</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -606,7 +606,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Adapter scope:</p>
-<p>HKLM\System\CurrentControlSet\Enum&amp;lt;instance path&gt;\Device Parameters\StorPort</p></td>
+<p>HKLM\System\CurrentControlSet\Enum&lt;instance path&gt;\Device Parameters\StorPort</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -642,7 +642,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Logical unit scope:</p>
-<p>HKLM\CurrentControlSet\Enum\SCSI&amp;lt;HardwareId&gt;&amp;lt;InstanceId&gt;\Device Parameters\StorPort</p></td>
+<p>HKLM\CurrentControlSet\Enum\SCSI&lt;HardwareId&gt;&lt;InstanceId&gt;\Device Parameters\StorPort</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -678,7 +678,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Logical unit scope:</p>
-<p>HKLM\CurrentControlSet\Enum\SCSI&amp;lt;HardwareId&gt;&amp;lt;InstanceId&gt;\Device Parameters\StorPort</p></td>
+<p>HKLM\CurrentControlSet\Enum\SCSI&lt;HardwareId&gt;&lt;InstanceId&gt;\Device Parameters\StorPort</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -715,7 +715,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Adapter scope:</p>
-<p>HKLM\System\CurrentControlSet\Enum&amp;lt;instance path&gt;\Device Parameters\StorPort</p></td>
+<p>HKLM\System\CurrentControlSet\Enum&lt;instance path&gt;\Device Parameters\StorPort</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -757,7 +757,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Adapter scope:</p>
-<p>HKLM\System\CurrentControlSet\Enum&amp;lt;instance path&gt;\Device Parameters\StorPort</p></td>
+<p>HKLM\System\CurrentControlSet\Enum&lt;instance path&gt;\Device Parameters\StorPort</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>
@@ -794,7 +794,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 <tr class="odd">
 <td align="left">Path</td>
 <td align="left"><p>Adapter scope:</p>
-<p>HKLM\System\CurrentControlSet\Enum&amp;lt;instance path&gt;\Device Parameters\StorPort</p></td>
+<p>HKLM\System\CurrentControlSet\Enum&lt;instance path&gt;\Device Parameters\StorPort</p></td>
 </tr>
 <tr class="even">
 <td align="left">Value</td>

@@ -27,9 +27,9 @@ In addition, the miniport driver itself must support the following for NDIS QoS:
 
 -   The miniport driver must support NDIS 6.30 or later versions of NDIS.
 
--   The miniport driver must support object identifier (OID) method requests of [OID\_QOS\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451835) for setting NDIS QoS parameters. For more information, see [Setting Local NDIS QoS Parameters](setting-local-ndis-qos-parameters.md).
+-   The miniport driver must support object identifier (OID) method requests of [OID\_QOS\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-qos-parameters) for setting NDIS QoS parameters. For more information, see [Setting Local NDIS QoS Parameters](setting-local-ndis-qos-parameters.md).
 
-    **Note**  NDIS handles most of the NDIS QoS OID requests for the miniport driver with the exception of [OID\_QOS\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451835).
+    **Note**  NDIS handles most of the NDIS QoS OID requests for the miniport driver with the exception of [OID\_QOS\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-qos-parameters).
 
      
 

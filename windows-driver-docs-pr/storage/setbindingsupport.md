@@ -42,7 +42,7 @@ A worldwide name that indicates the port whose persistent bindings will be retri
 A bitmap that indicates the ability of an HBA and its miniport driver to provide a specific set of features related to persistent binding. For a list of values that this parameter can have, see the description of the [HBA\_BIND\_TYPE](hba-bind-type.md) WMI class qualifier.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetBindingSupport\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565575) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetBindingSupport\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_setbindingsupport_out) structure.
 
 Return value
 ------------
@@ -83,9 +83,9 @@ Requirements
 
 [**SetBindingSupport**](setbindingsupport.md)
 
-[**SetBindingSupport\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565566)
+[**SetBindingSupport\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_setbindingsupport_in)
 
-[**SetBindingSupport\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565575)
+[**SetBindingSupport\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_setbindingsupport_out)
 
  
 

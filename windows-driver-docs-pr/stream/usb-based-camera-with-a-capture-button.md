@@ -29,7 +29,7 @@ The following diagram demonstrates a possible filter graph configuration for a U
 
 In the diagram, the still pin streams only a single image when the user pushes the button on the camera. Alternatively, the still pin can be triggered by programmatic control.
 
-The Windows Image Acquisition (WIA) technology built on the Still Image Architecture (STI) complements the functionality provided by USBCAMD. See [Windows Image Acquisition Drivers](https://msdn.microsoft.com/library/windows/hardware/ff553346) and [Still Image Drivers](https://msdn.microsoft.com/library/windows/hardware/ff548278) for more information.
+The Windows Image Acquisition (WIA) technology built on the Still Image Architecture (STI) complements the functionality provided by USBCAMD. See [Windows Image Acquisition Drivers](https://docs.microsoft.com/windows-hardware/drivers/image/windows-image-acquisition-drivers) and [Still Image Drivers](https://docs.microsoft.com/windows-hardware/drivers/image/still-image-drivers) for more information.
 
 The WIA Video Snapshot filter is an addition to WIA that is shipped with Microsoft Windows XP and later operating systems. The WIA Video Snapshot filter enables still frames to be captured from the video stream.
 

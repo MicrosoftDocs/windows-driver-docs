@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 To use the default form of WPP software tracing in a [trace provider](trace-provider.md), such as a kernel-mode driver or a user-mode application, do the following:
 
--   Define a control GUID that uniquely identifies the [trace provider](trace-provider.md). The provider specifies this GUID in its definition of the [WPP\_CONTROL\_GUIDS](https://msdn.microsoft.com/library/windows/hardware/ff556186) macro and in a related control file used by [Tracelog](tracelog.md).
+-   Define a control GUID that uniquely identifies the [trace provider](trace-provider.md). The provider specifies this GUID in its definition of the [WPP\_CONTROL\_GUIDS](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro and in a related control file used by [Tracelog](tracelog.md).
 
--   Add the required WPP-related C preprocessor directives and WPP macro calls to the provider's source files, as described in [Adding WPP Macros to a Trace Provider](adding-wpp-macros-to-a-trace-provider.md) and in [WPP Software Tracing Reference](https://msdn.microsoft.com/library/windows/hardware/ff556205).
+-   Add the required WPP-related C preprocessor directives and WPP macro calls to the provider's source files, as described in [Adding WPP Macros to a Trace Provider](adding-wpp-macros-to-a-trace-provider.md) and in [WPP Software Tracing Reference](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556205(v=vs.85)).
 
 -   Build the driver, as described in [WPP Preprocessor](wpp-preprocessor.md).
 

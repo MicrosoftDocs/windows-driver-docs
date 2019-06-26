@@ -61,7 +61,7 @@ Remarks
 
 By default, all of the type formatting options are turned off.
 
-For more information about types, see [Types](https://msdn.microsoft.com/library/windows/hardware/ff558931).
+For more information about types, see [Types](https://docs.microsoft.com/windows-hardware/drivers/debugger/types).
 
 Requirements
 ------------

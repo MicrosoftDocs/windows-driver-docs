@@ -17,13 +17,13 @@ You can install the test-signed [driver package](driver-packages.md) on the test
 
 You can install the test-signed [driver package](driver-packages.md) on the computer through:
 
--   The [DevCon](https://msdn.microsoft.com/library/windows/hardware/ff544707) tool, which is a WDK command line tool for installing drivers.
+-   The [DevCon](https://docs.microsoft.com/windows-hardware/drivers/devtest/devcon) tool, which is a WDK command line tool for installing drivers.
 
 This topic will first review the process of test-signing a driver package, and then describe how you can install the driver package on the test computer. This topic uses the *ToastPkg* sample driver package. Within the WDK installation directory, the package's source files are located in the *src\\general\\toaster\\toastpkg* directory.
 
 Follow these steps to build and test-sign the *ToastPkg* sample driver package:
 
-1.  On the signing computer, build the *ToastPkg* sample driver package's kernel-mode binaries. For more information about how to build drivers, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver).
+1.  On the signing computer, build the *ToastPkg* sample driver package's kernel-mode binaries. For more information about how to build drivers, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
 
 2.  On the signing computer, create the *Contoso.com(Test)* certificate as described in [Creating Test Certificates](creating-test-certificates.md).
 

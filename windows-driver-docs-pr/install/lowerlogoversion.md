@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # LowerLogoVersion
 
 
-**LowerLogoVersion** is a [device setup class property](https://msdn.microsoft.com/library/windows/hardware/ff542239) that affects the signature score of a driver as follows:
+**LowerLogoVersion** is a [device setup class property](https://docs.microsoft.com/previous-versions/ff542239(v=vs.85)) that affects the signature score of a driver as follows:
 
 -   Windows assigns the best signature score to drivers that have a WHQL signature for a Windows version that is the same or later than the **LowerLogoVersion** value.
 

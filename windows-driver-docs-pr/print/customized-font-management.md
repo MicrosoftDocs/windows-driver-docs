@@ -29,25 +29,25 @@ ms.localizationpriority: medium
 
 For *PCL* printers, Unidrv supports downloading soft fonts as bitmaps or TrueType outlines. For device fonts, Unidrv supports PCL, CAPSL, and PPDS printer command formats. For other formats, customized font management code must be provided in a rendering plug-in. The following set of IPrintOemUni methods can be implemented:
 
-<a href="" id="iprintoemuni--downloadfontheader"></a>[**IPrintOemUni::DownloadFontHeader**](https://msdn.microsoft.com/library/windows/hardware/ff554242)  
+<a href="" id="iprintoemuni--downloadfontheader"></a>[**IPrintOemUni::DownloadFontHeader**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-downloadfontheader)  
 Used to obtain a soft font's header information from Unidrv and then download the information to the printer.
 
-<a href="" id="iprintoemuni--downloadcharglyph"></a>[**IPrintOemUni::DownloadCharGlyph**](https://msdn.microsoft.com/library/windows/hardware/ff554241)  
+<a href="" id="iprintoemuni--downloadcharglyph"></a>[**IPrintOemUni::DownloadCharGlyph**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-downloadcharglyph)  
 Used to download a soft font's character glyphs to the printer.
 
-<a href="" id="iprintoemuni--outputcharstr"></a>[**IPrintOemUni::OutputCharStr**](https://msdn.microsoft.com/library/windows/hardware/ff554267)  
+<a href="" id="iprintoemuni--outputcharstr"></a>[**IPrintOemUni::OutputCharStr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-outputcharstr)  
 Used to control the printing of characters.
 
-<a href="" id="iprintoemuni--sendfontcmd"></a>[**IPrintOemUni::SendFontCmd**](https://msdn.microsoft.com/library/windows/hardware/ff554274)  
+<a href="" id="iprintoemuni--sendfontcmd"></a>[**IPrintOemUni::SendFontCmd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-sendfontcmd)  
 Used to modify a printer's device font selection command, and if necessary, send it to the printer.
 
-<a href="" id="iprintoemuni--textoutasbitmap"></a>[**IPrintOemUni::TextOutAsBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff554277)  
+<a href="" id="iprintoemuni--textoutasbitmap"></a>[**IPrintOemUni::TextOutAsBitmap**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-textoutasbitmap)  
 Used to create a bitmap image of a text string.
 
-<a href="" id="iprintoemuni--ttdownloadmethod"></a>[**IPrintOemUni::TTDownloadMethod**](https://msdn.microsoft.com/library/windows/hardware/ff554279)  
+<a href="" id="iprintoemuni--ttdownloadmethod"></a>[**IPrintOemUni::TTDownloadMethod**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-ttdownloadmethod)  
 Used to specify the glyph format that the Unidrv should use when it sends a specified soft font to the printer.
 
-Unidrv provides a callback function, [*UNIFONTOBJ\_GetInfo*](https://msdn.microsoft.com/library/windows/hardware/ff563594), that rendering plug-ins can call to obtain font or glyph information.
+Unidrv provides a callback function, [*UNIFONTOBJ\_GetInfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printoem/nc-printoem-pfngetinfo), that rendering plug-ins can call to obtain font or glyph information.
 
 For device fonts, font descriptions must be provided as explained in the **Unidrv font metrics files** section and the **Glyph translation table files** section.
 
@@ -57,7 +57,7 @@ For downloadable PCL soft fonts, font descriptions must be provided as explained
 
 ### <a href="" id="ddk-unidrv-font-metrics-files-gg"></a>Unidrv Font Metrics Files
 
-Each device font that a printer supports must be represented by a Unidrv Font Metrics (.ufm) file. A .ufm file is a binary file that is constructed using the structures described in [Unidrv Font Metrics Structures](https://msdn.microsoft.com/library/windows/hardware/ff563547). The first structure in a .ufm file is [**UNIFM\_HDR**](https://msdn.microsoft.com/library/windows/hardware/ff563587), which contains offsets to the file's other structures. The following figure shows the layout of a Unidrv Font Metrics file.
+Each device font that a printer supports must be represented by a Unidrv Font Metrics (.ufm) file. A .ufm file is a binary file that is constructed using the structures described in [Unidrv Font Metrics Structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index). The first structure in a .ufm file is [**UNIFM\_HDR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prntfont/ns-prntfont-_unifm_hdr), which contains offsets to the file's other structures. The following figure shows the layout of a Unidrv Font Metrics file.
 
 ![diagram illustrating the layout of a unidrv font metrics file](images/ufm.png)
 
@@ -65,13 +65,13 @@ Unidrv also supports .ifi files, the font metrics files created for Windows NT 4
 
 ### <a href="" id="ddk-glyph-translation-table-files-gg"></a>Glyph Translation Table Files
 
-Each device font that a printer supports must be represented by a Glyph Translation Table (.gtt) file. A .gtt file is a binary file that is constructed using the structures described in [Unidrv Glyph Translation Table Structures](https://msdn.microsoft.com/library/windows/hardware/ff563549). The first structure in a .gtt file is a [**UNI\_GLYPHSETDATA**](https://msdn.microsoft.com/library/windows/hardware/ff563597) structure, which contains offsets to the file's other structures.
+Each device font that a printer supports must be represented by a Glyph Translation Table (.gtt) file. A .gtt file is a binary file that is constructed using the structures described in [Unidrv Glyph Translation Table Structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index). The first structure in a .gtt file is a [**UNI\_GLYPHSETDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prntfont/ns-prntfont-_uni_glyphsetdata) structure, which contains offsets to the file's other structures.
 
 The following figure shows the layout of a glyph translation table file.
 
 ![diagram illustrating the layout of a glyph translation table file](images/gtt.png)
 
-In the preceding figure, the UNI\_GLYPHSETDATA structure contains the offsets from the beginning of the file to the first [**GLYPHRUN**](https://msdn.microsoft.com/library/windows/hardware/ff550544) structure, to the first [**UNI\_CODEPAGEINFO**](https://msdn.microsoft.com/library/windows/hardware/ff563596) structure, and to the [**MAPTABLE**](https://msdn.microsoft.com/library/windows/hardware/ff556509) structure.
+In the preceding figure, the UNI\_GLYPHSETDATA structure contains the offsets from the beginning of the file to the first [**GLYPHRUN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prntfont/ns-prntfont-_glyphrun) structure, to the first [**UNI\_CODEPAGEINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prntfont/ns-prntfont-_uni_codepageinfo) structure, and to the [**MAPTABLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prntfont/ns-prntfont-_maptable) structure.
 
 Unidrv also supports glyph translation files created for Windows NT 4.0, which use run-length encoding (RLE) compression and have an .rle extension.
 
@@ -81,17 +81,17 @@ For cartridge fonts that are not specified using font cartridges soft fonts must
 
 A .uff file is a binary file that is constructed using the following sets of structures:
 
--   [Unidrv font format structures](https://msdn.microsoft.com/library/windows/hardware/ff562892), which define the contents and structure of a .uff file.
+-   [Unidrv font format structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index), which define the contents and structure of a .uff file.
 
--   [Unidrv font metrics structures](https://msdn.microsoft.com/library/windows/hardware/ff563547), which define the metrics for each font.
+-   [Unidrv font metrics structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index), which define the metrics for each font.
 
--   [Unidrv glyph translation table structures](https://msdn.microsoft.com/library/windows/hardware/ff563549), which define the glyph sets used by the fonts.
+-   [Unidrv glyph translation table structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index), which define the glyph sets used by the fonts.
 
 The following figure shows the layout of a Unidrv Font Format file.
 
 ![diagram illustrating the layout of a unidrv font format file](images/uff.png)
 
-A Unidrv Font Format file consists of a [**UFF\_FILEHEADER**](https://msdn.microsoft.com/library/windows/hardware/ff562862) structure, and one or more [**UFF\_FONTDIRECTORY**](https://msdn.microsoft.com/library/windows/hardware/ff562866) and [**DATA\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff547364) structure pairs. Each DATA\_HEADER structure is associated with a block of font data. The UFF\_FILEHEADER structure contains the offset from the beginning of the file to the first UFF\_FONTDIRECTORY structure. Each UFF\_FONTDRECTORY structure contains the offset from the beginning of the file to a DATA\_HEADER structure that contains font data.
+A Unidrv Font Format file consists of a [**UFF\_FILEHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prntfont/ns-prntfont-_uff_fileheader) structure, and one or more [**UFF\_FONTDIRECTORY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prntfont/ns-prntfont-_uff_fontdirectory) and [**DATA\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prntfont/ns-prntfont-_data_header) structure pairs. Each DATA\_HEADER structure is associated with a block of font data. The UFF\_FILEHEADER structure contains the offset from the beginning of the file to the first UFF\_FONTDIRECTORY structure. Each UFF\_FONTDRECTORY structure contains the offset from the beginning of the file to a DATA\_HEADER structure that contains font data.
 
 Additionally, for downloadable *PCL* soft fonts, the binary data to be downloaded is stored in a .uff file.
 

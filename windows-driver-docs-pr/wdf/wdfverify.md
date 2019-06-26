@@ -40,9 +40,9 @@ Remarks
 
 The code for the **WDFVERIFY** macro is included in your driver's binary when you build your driver in a release configuration or a debug configuration. If your driver's binary includes **WDFVERIFY** code, the code will run when your driver runs with checked builds or free builds of the Microsoft Windows operating system.
 
-The **WDFVERIFY** code breaks into a kernel debugger only if the **VerifyOn** value is set in the registry. For more information about registry entries that you can use to debug your driver, see [Registry Entries for Debugging Framework-Based Drivers](https://msdn.microsoft.com/library/windows/hardware/ff544573).
+The **WDFVERIFY** code breaks into a kernel debugger only if the **VerifyOn** value is set in the registry. For more information about registry entries that you can use to debug your driver, see [Registry Entries for Debugging Framework-Based Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/registry-values-for-debugging-kmdf-drivers).
 
-For more information about debugging your driver, see [Debugging a KMDF Driver](https://msdn.microsoft.com/library/windows/hardware/ff540790).
+For more information about debugging your driver, see [Debugging a KMDF Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/debugging-a-wdf-driver).
 
 Examples
 --------
@@ -50,7 +50,7 @@ Examples
 The following code example breaks into the debugger if an attempt to reuse a request object fails.
 
 ```cpp
-status = WdfRequestReuse(Request, &amp;params);
+status = WdfRequestReuse(Request, &params);
 WDFVERIFY(NT_SUCCESS(status));
 ```
 

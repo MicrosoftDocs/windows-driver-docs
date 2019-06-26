@@ -101,7 +101,7 @@ The following table summarizes the places where the WDK installs files to enable
 <tbody>
 <tr class="odd">
 <td align="left"><p>$(VCTargetsPath)</p></td>
-<td align="left"><p>By default, $(VCTargetsPath) is defined in the registry as $(MSBuildExtensionsPath)&lt;em&gt;&lt;FOLDER&gt;</em>&amp;lt;MSBUILDSYNTAXVERSION&gt;)</p>
+<td align="left"><p>By default, $(VCTargetsPath) is defined in the registry as $(MSBuildExtensionsPath)&lt;em&gt;&lt;FOLDER&gt;</em>&lt;MSBUILDSYNTAXVERSION&gt;)</p>
 <p>The version number is included in case a new build process is used for the same platform, which has new syntax and requires a later MSBuild.</p>
 <p>The <em>&lt;FOLDER&gt;</em> is the <strong>Microsoft.Cpp</strong> folder - $(MSBuildExtensionsPath)\Microsoft.Cpp\4.0\v120.</p>
 <p>This is called <em>syntax version</em> rather than <em>tools version</em>. It is the assembly version of the first <strong>Microsoft.Build.Engine</strong> that supports all of the necessary syntax. <strong>Microsoft.Cpp</strong> indicates the only folder where Visual Studio will look for platforms.</p></td>

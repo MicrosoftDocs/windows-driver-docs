@@ -45,7 +45,7 @@ To write a filter driver that handles charging through proprietary chargers, you
 <p>Familiarize yourself with the Microsoft-provided USB driver stack:</p>
 <a href="usb-device-side-drivers-in-windows.md" data-raw-source="[USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md)">USB device-side drivers in Windows</a>
 <p><strong>Familiarize yourself with UFX objects and handles</strong></p>
-<p>UFX extends the WDF object functionality to define its own USB-specific UCX objects. For more details on WDF objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544249" data-raw-source="[Introduction to Framework Objects](https://msdn.microsoft.com/library/windows/hardware/ff544249)">Introduction to Framework Objects</a>.</p>
+<p>UFX extends the WDF object functionality to define its own USB-specific UCX objects. For more details on WDF objects, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects" data-raw-source="[Introduction to Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects)">Introduction to Framework Objects</a>.</p>
 <p>For queuing requests, UFX uses USB-specific objects. For more information, <a href="ufx-objects-and-handles-used-by-a-usb-function-controller.md" data-raw-source="[UFX objects and handles used by a USB function client driver](ufx-objects-and-handles-used-by-a-usb-function-controller.md)">UFX objects and handles used by a USB function client driver</a>.</p>
 <p><strong>Writing a function controller client driver</strong></p>
 <p>Understand the behavior of UFX, how it interacts with the client driver, and the features that the client driver is expected to implement.</p>
@@ -61,7 +61,7 @@ To write a filter driver that handles charging through proprietary chargers, you
  
 
 ## Related topics
-[Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
 
 
 

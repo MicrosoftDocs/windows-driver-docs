@@ -15,13 +15,13 @@ ms.localizationpriority: medium
 
 Properties of device objects can be set in the registry as follows:
 
--   For WDM drivers, properties can be set for each model of a device, or for a whole device setup class. (For more information about device setup classes, see [Device Setup Classes](https://msdn.microsoft.com/library/windows/hardware/ff541509).)
+-   For WDM drivers, properties can be set for each model of a device, or for a whole device setup class. (For more information about device setup classes, see [Device Setup Classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).)
 
--   For non-WDM drivers, properties can be set for a named device object's device setup class. The driver specifies the device setup class when it creates the device object with **IoCreateDeviceSecure**. For more information about how to specify a device setup class, see [**IoCreateDeviceSecure**](https://msdn.microsoft.com/library/windows/hardware/ff548407).
+-   For non-WDM drivers, properties can be set for a named device object's device setup class. The driver specifies the device setup class when it creates the device object with **IoCreateDeviceSecure**. For more information about how to specify a device setup class, see [**IoCreateDeviceSecure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure).
 
 Any settings in the registry override the properties supplied when the driver created the device object.
 
-Registry settings are specified by an INF file that is used during device installation, or they can be specified after installation by an application that calls the [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299).
+Registry settings are specified by an INF file that is used during device installation, or they can be specified after installation by an application that calls the [device installation functions](https://docs.microsoft.com/previous-versions/ff541299(v=vs.85)).
 
 This section contains the following subsections:
 

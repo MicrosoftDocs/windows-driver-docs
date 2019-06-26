@@ -23,45 +23,45 @@ ms.localizationpriority: medium
 
 [DirectX Video Acceleration](directx-video-acceleration.md) makes use of the following motion compensation callback functions provided in DirectDraw drivers for acceleration of digital video decoding processing, with support of alpha blending for such purposes as DVD subpicture support:
 
-[*DdMoCompBeginFrame*](https://msdn.microsoft.com/library/windows/hardware/ff549648)
+[*DdMoCompBeginFrame*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_beginframe)
 
-[*DdMoCompCreate*](https://msdn.microsoft.com/library/windows/hardware/ff549656)
+[*DdMoCompCreate*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_create)
 
-[*DdMoCompDestroy*](https://msdn.microsoft.com/library/windows/hardware/ff549664)
+[*DdMoCompDestroy*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_destroy)
 
-[*DdMoCompEndFrame*](https://msdn.microsoft.com/library/windows/hardware/ff549669)
+[*DdMoCompEndFrame*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_endframe)
 
-[*DdMoCompGetBuffInfo*](https://msdn.microsoft.com/library/windows/hardware/ff549683)
+[*DdMoCompGetBuffInfo*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_getcompbuffinfo)
 
-[*DdMoCompGetFormats*](https://msdn.microsoft.com/library/windows/hardware/ff549691)
+[*DdMoCompGetFormats*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_getformats)
 
-[*DdMoCompGetGuids*](https://msdn.microsoft.com/library/windows/hardware/ff550236)
+[*DdMoCompGetGuids*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_getguids)
 
-[*DdMoCompGetInternalInfo*](https://msdn.microsoft.com/library/windows/hardware/ff550240)
+[*DdMoCompGetInternalInfo*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_getinternalinfo)
 
-[*DdMoCompQueryStatus*](https://msdn.microsoft.com/library/windows/hardware/ff550243)
+[*DdMoCompQueryStatus*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_querystatus)
 
-[*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248)
+[*DdMoCompRender*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render)
 
-The motion compensation callback functions comprise the device driver side of the DirectX Video Acceleration interface. The motion compensation callback functions are specified by members of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure. The following steps show how motion compensation callback functions are accessed:
+The motion compensation callback functions comprise the device driver side of the DirectX Video Acceleration interface. The motion compensation callback functions are specified by members of the [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The following steps show how motion compensation callback functions are accessed:
 
-1.  GUIDs received from **IAMVideoAccelerator::GetVideoAcceleratorGUIDs** originate from the device driver's [*DdMoCompGetGuids*](https://msdn.microsoft.com/library/windows/hardware/ff550236).
+1.  GUIDs received from **IAMVideoAccelerator::GetVideoAcceleratorGUIDs** originate from the device driver's [*DdMoCompGetGuids*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_getguids).
 
-2.  A call to the downstream input pin's **IAMVideoAccelerator::GetUncompFormatsSupported** returns data from the device driver's [*DdMoCompGetFormats*](https://msdn.microsoft.com/library/windows/hardware/ff549691).
+2.  A call to the downstream input pin's **IAMVideoAccelerator::GetUncompFormatsSupported** returns data from the device driver's [*DdMoCompGetFormats*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_getformats).
 
-3.  At the start of the relevant processing, the [**DXVA\_ConnectMode**](https://msdn.microsoft.com/library/windows/hardware/ff563138) data structure from the output pin of the decoder's **IAMVideoAcceleratorNotify::GetCreateVideoAcceleratorData** is passed to the device driver's [*DdMoCompCreate*](https://msdn.microsoft.com/library/windows/hardware/ff549656), which notifies the decoder about the video acceleration object.
+3.  At the start of the relevant processing, the [**DXVA\_ConnectMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_connectmode) data structure from the output pin of the decoder's **IAMVideoAcceleratorNotify::GetCreateVideoAcceleratorData** is passed to the device driver's [*DdMoCompCreate*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_create), which notifies the decoder about the video acceleration object.
 
-4.  Data returned from **IAMVideoAccelerator::GetCompBufferInfo** originates from the device driver's [*DdMoCompGetBuffInfo*](https://msdn.microsoft.com/library/windows/hardware/ff549683).
+4.  Data returned from **IAMVideoAccelerator::GetCompBufferInfo** originates from the device driver's [*DdMoCompGetBuffInfo*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_getcompbuffinfo).
 
-5.  Buffers sent using **IAMVideoAccelerator::Execute** are received by the device driver's [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248).
+5.  Buffers sent using **IAMVideoAccelerator::Execute** are received by the device driver's [*DdMoCompRender*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render).
 
-6.  Use of **IAMVideoAccelerator::QueryRenderStatus** calls the device driver's [*DdMoCompQueryStatus*](https://msdn.microsoft.com/library/windows/hardware/ff550243). A return code of DDERR\_WASSTILLDRAWING from *DdMoCompQueryStatus* will be seen by the host decoder as a return code of E\_PENDING from **IAMVideoAccelerator::QueryRenderStatus**.
+6.  Use of **IAMVideoAccelerator::QueryRenderStatus** calls the device driver's [*DdMoCompQueryStatus*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_querystatus). A return code of DDERR\_WASSTILLDRAWING from *DdMoCompQueryStatus* will be seen by the host decoder as a return code of E\_PENDING from **IAMVideoAccelerator::QueryRenderStatus**.
 
-7.  Data sent to **IAMVideoAccelerator::BeginFrame** is received by the device driver's [*DdMoCompBeginFrame*](https://msdn.microsoft.com/library/windows/hardware/ff549648). A return code of DDERR\_WASSTILLDRAWING is needed from *DdMoCompBeginFrame* in order for E\_PENDING to be seen by the host decoder in response to **IAMVideoAccelerator::BeginFrame**.
+7.  Data sent to **IAMVideoAccelerator::BeginFrame** is received by the device driver's [*DdMoCompBeginFrame*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_beginframe). A return code of DDERR\_WASSTILLDRAWING is needed from *DdMoCompBeginFrame* in order for E\_PENDING to be seen by the host decoder in response to **IAMVideoAccelerator::BeginFrame**.
 
-8.  Data sent to **IAMVideoAccelerator::EndFrame** is received by the device driver's [*DdMoCompEndFrame*](https://msdn.microsoft.com/library/windows/hardware/ff549669).
+8.  Data sent to **IAMVideoAccelerator::EndFrame** is received by the device driver's [*DdMoCompEndFrame*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_endframe).
 
-9.  At the end of the relevant processing, the device driver's [*DdMoCompDestroy*](https://msdn.microsoft.com/library/windows/hardware/ff549664) is used to notify the driver that the current video acceleration object will no longer be used, so that the driver can perform any necessary cleanup.
+9.  At the end of the relevant processing, the device driver's [*DdMoCompDestroy*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_destroy) is used to notify the driver that the current video acceleration object will no longer be used, so that the driver can perform any necessary cleanup.
 
  
 

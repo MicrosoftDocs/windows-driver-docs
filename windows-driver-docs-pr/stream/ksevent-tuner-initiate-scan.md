@@ -42,8 +42,8 @@ The KSEVENT\_TUNER\_INITIATE\_SCAN event requests that the driver initiate a sca
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561901" data-raw-source="[&lt;strong&gt;KSEVENT_TUNER_INITIATE_SCAN_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561901)"><strong>KSEVENT_TUNER_INITIATE_SCAN_S</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561750" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561750)"><strong>KSEVENTDATA</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksevent_tuner_initiate_scan_s" data-raw-source="[&lt;strong&gt;KSEVENT_TUNER_INITIATE_SCAN_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksevent_tuner_initiate_scan_s)"><strong>KSEVENT_TUNER_INITIATE_SCAN_S</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -55,13 +55,13 @@ Remarks
 
 Every scan request should be non-blocking. That is, the driver should not wait for the scan operation to complete before it returns control. In fact, the driver should use a separate thread to perform the scan operation.
 
-While the KSEVENT\_TUNER\_INITIATE\_SCAN event is independent of [**KSPROPERTY\_TUNER\_FREQUENCY**](ksproperty-tuner-frequency.md), KSEVENT\_TUNER\_INITIATE\_SCAN corresponds to the **KS\_TUNER\_TUNING\_EXACT** tuning flag in the **TuningFlags** member of the [**KSPROPERTY\_TUNER\_FREQUENCY\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565839) structure. This means that the scan always attempts to determine the exact frequency of the next channel. Also, the tuning strategy that the tuning device follows is controlled by the driver (KS\_TUNER\_STRATEGY\_DRIVER\_TUNES from the **Strategy** member of the [**KSPROPERTY\_TUNER\_MODE\_CAPS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565872) structure). These fixed flags and strategy are always followed even if a different flag and strategy are used to control **KSPROPERTY\_TUNER\_FREQUENCY**.
+While the KSEVENT\_TUNER\_INITIATE\_SCAN event is independent of [**KSPROPERTY\_TUNER\_FREQUENCY**](ksproperty-tuner-frequency.md), KSEVENT\_TUNER\_INITIATE\_SCAN corresponds to the **KS\_TUNER\_TUNING\_EXACT** tuning flag in the **TuningFlags** member of the [**KSPROPERTY\_TUNER\_FREQUENCY\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_tuner_frequency_s) structure. This means that the scan always attempts to determine the exact frequency of the next channel. Also, the tuning strategy that the tuning device follows is controlled by the driver (KS\_TUNER\_STRATEGY\_DRIVER\_TUNES from the **Strategy** member of the [**KSPROPERTY\_TUNER\_MODE\_CAPS\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_tuner_mode_caps_s) structure). These fixed flags and strategy are always followed even if a different flag and strategy are used to control **KSPROPERTY\_TUNER\_FREQUENCY**.
 
 In other words, KSTUNER\_TUNING\_FLAGS and KSTUNER\_STRATEGY values do not affect the behavior of KSEVENT\_TUNER\_INITIATE\_SCAN.
 
 ***<em>Completion and Status</em>***
 
-The scan status property [**KSPROPERTY\_TUNER\_SCAN\_STATUS**](ksproperty-tuner-scan-status.md) provides information about the current frequency and the status of the signal lock. The application queries the lock status from the KSPROPERTY\_TUNER\_SCAN\_STATUS property. The application also queries [**KSPROPERTY\_TUNER\_STANDARD\_MODE**](ksproperty-tuner-standard-mode.md) property for information about automatic-signal-standard detection. If no signal was found in the requested range, the KSPROPERTY\_TUNER\_SCAN\_STATUS property returns the **Tuner\_LockType\_None** value in the **LockStatus** member of the [**KSPROPERTY\_TUNER\_SCAN\_STATUS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565898) structure. If the tuning device can automatically detect the tuner standard from the signal and a signal in an alternate standard was found, the tuning device itself can process any requests to the [**KSPROPERTY\_TUNER\_STANDARD**](ksproperty-tuner-standard.md) property. The tuning device is possibly unable to proceed beyond a phased-lock-loop (PLL) lock, and it might specify that the standard is not known. Or, the tuning device might automatically adjust to a different signal standard. Also, the tuning device might even obtain a full lock on that signal standard and determine the alternate standard. Such situations might arise when there are multiple signal standards in the frequency spectrum.
+The scan status property [**KSPROPERTY\_TUNER\_SCAN\_STATUS**](ksproperty-tuner-scan-status.md) provides information about the current frequency and the status of the signal lock. The application queries the lock status from the KSPROPERTY\_TUNER\_SCAN\_STATUS property. The application also queries [**KSPROPERTY\_TUNER\_STANDARD\_MODE**](ksproperty-tuner-standard-mode.md) property for information about automatic-signal-standard detection. If no signal was found in the requested range, the KSPROPERTY\_TUNER\_SCAN\_STATUS property returns the **Tuner\_LockType\_None** value in the **LockStatus** member of the [**KSPROPERTY\_TUNER\_SCAN\_STATUS\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_tuner_scan_status_s) structure. If the tuning device can automatically detect the tuner standard from the signal and a signal in an alternate standard was found, the tuning device itself can process any requests to the [**KSPROPERTY\_TUNER\_STANDARD**](ksproperty-tuner-standard.md) property. The tuning device is possibly unable to proceed beyond a phased-lock-loop (PLL) lock, and it might specify that the standard is not known. Or, the tuning device might automatically adjust to a different signal standard. Also, the tuning device might even obtain a full lock on that signal standard and determine the alternate standard. Such situations might arise when there are multiple signal standards in the frequency spectrum.
 
 ***<em>Boundary Conditions</em>***
 
@@ -76,9 +76,9 @@ The scan operation must complete whenever a new channel or signal is found. The 
 ## See also
 
 
-[**KSEVENT\_TUNER\_INITIATE\_SCAN\_S**](https://msdn.microsoft.com/library/windows/hardware/ff561901)
+[**KSEVENT\_TUNER\_INITIATE\_SCAN\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksevent_tuner_initiate_scan_s)
 
-[**KSEVENTDATA**](https://msdn.microsoft.com/library/windows/hardware/ff561750)
+[**KSEVENTDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)
 
 [**KSPROPERTY\_TUNER\_SCAN\_STATUS**](ksproperty-tuner-scan-status.md)
 

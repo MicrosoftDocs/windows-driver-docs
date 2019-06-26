@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 </div>
  
 
-File system filter drivers use completion routines that are similar to those used by device drivers. A *completion routine* performs completion processing on an IRP. Any driver routine that passes an IRP down to the next-lower-level driver can optionally register a completion routine for the IRP by calling [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679) before calling [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336).
+File system filter drivers use completion routines that are similar to those used by device drivers. A *completion routine* performs completion processing on an IRP. Any driver routine that passes an IRP down to the next-lower-level driver can optionally register a completion routine for the IRP by calling [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutine) before calling [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver).
 
 Every IRP completion routine is defined as follows:
 
@@ -39,7 +39,7 @@ NTSTATUS
 
 Completion routines are called at IRQL &lt;= DISPATCH\_LEVEL, in an arbitrary thread context.
 
-Because they can be called at IRQL DISPATCH\_LEVEL, completion routines cannot call kernel-mode routines that must be called at a lower IRQL, such as [**IoDeleteDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549083). For the same reason, any data structures that are used in a completion routine must be allocated from nonpaged pool.
+Because they can be called at IRQL DISPATCH\_LEVEL, completion routines cannot call kernel-mode routines that must be called at a lower IRQL, such as [**IoDeleteDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iodeletedevice). For the same reason, any data structures that are used in a completion routine must be allocated from nonpaged pool.
 
 This section discusses the following topics:
 

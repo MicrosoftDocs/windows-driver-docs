@@ -23,7 +23,7 @@ The primary requirements from the USB device firmware update process are:
 
 USB devices like UVC cameras are released with in-field updatable firmware. There is no standard way to update the firmware today. One thing that is common to all existing update mechanism is that some custom software suite runs on the client and downloads the firmware to the device. Typically, as part of the device installation process, the firmware updating software suite is installed. The co-installer kick starts the firmware update process. The absence of co-installers on Windows 10 prevents device vendors from updating the firmware on these devices in the field.
 
-The recommended way to circumvent the absence of a co-installer for the USB device firmware update scenario is to use a lower filter driver to the USB device that will kick start the firmware update process. During the [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) call, the filter driver will check the device firmware version and update the firmware if necessary.
+The recommended way to circumvent the absence of a co-installer for the USB device firmware update scenario is to use a lower filter driver to the USB device that will kick start the firmware update process. During the [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) call, the filter driver will check the device firmware version and update the firmware if necessary.
 
 ## Firmware update overview
 
@@ -57,13 +57,13 @@ The driver update package on the Windows Update server will contain:
 
 ![Firmware update UMDF lower filter driver method](images/fw-update-umdf-lower-filter-driver-method.png)
 
-While installing the driver update package, the firmware update WDF filter driver’s [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine will be called. From this routine, the WDF filter driver will get for the device firmware version from the device HW registry key. The device firmware should have placed the firmware version using the MSOS descriptor onto the device HW registry key.
+While installing the driver update package, the firmware update WDF filter driver’s [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine will be called. From this routine, the WDF filter driver will get for the device firmware version from the device HW registry key. The device firmware should have placed the firmware version using the MSOS descriptor onto the device HW registry key.
 
 1. If the device firmware version and the filter driver expected firmware version are different, or
 
 1. The firmware version is not available in the device HW registry key
 
-    1. Then, the filter driver will insert itself into the device stack by returning success to [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) callback.
+    1. Then, the filter driver will insert itself into the device stack by returning success to [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) callback.
 
 1. Else, the filter driver will not insert itself into the device stack
 

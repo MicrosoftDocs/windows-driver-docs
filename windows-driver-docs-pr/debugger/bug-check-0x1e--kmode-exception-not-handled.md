@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The KMODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000001E. This indicates that a kernel-mode program generated an exception which the error handler did not catch.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
 
 
 ## KMODE\_EXCEPTION\_NOT\_HANDLED Parameters
@@ -77,7 +77,7 @@ Common exception codes include:
 
     A memory access violation occurred. (Parameter 4 of the bug check is the address that the driver attempted to access.)
 
-For a complete list of exception codes, see [NTSTATUS Values](https://msdn.microsoft.com/library/cc704588.aspx). The exception codes are also listed in the ntstatus.h file located in the inc directory of the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/).
+For a complete list of exception codes, see [NTSTATUS Values](https://docs.microsoft.com/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are also listed in the ntstatus.h file located in the inc directory of the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/).
 
 
 Remarks

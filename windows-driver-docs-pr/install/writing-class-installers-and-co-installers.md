@@ -33,7 +33,7 @@ For more information about how to write a co-installer, see [Writing a Co-instal
 ## Displaying a user interface
 
 
-Device installation mostly runs in a system (noninteractive) service. Therefore, a user cannot see or respond to any user interface that appears in this context. Any dialog box that is provided in *co-installer* during the processing of a [device installation function (DIF) code](https://msdn.microsoft.com/library/windows/hardware/ff541307) causes the device installation to stop responding.
+Device installation mostly runs in a system (noninteractive) service. Therefore, a user cannot see or respond to any user interface that appears in this context. Any dialog box that is provided in *co-installer* during the processing of a [device installation function (DIF) code](https://docs.microsoft.com/previous-versions/ff541307(v=vs.85)) causes the device installation to stop responding.
 
 In most cases, co-installers should not interact with the user except during the processing of a [finish-install action](finish-install-actions--windows-vista-and-later-.md). Finish-install actions run in an interactive context.
 
@@ -48,11 +48,11 @@ Do not save device installation state within the *co-installer* dynamic-link lib
 
 To safely preserve device installer state, class installers or co-installers should save the state information as properties within the device's *driver key* in the registry. To do this, follow these steps:
 
-1.  To retrieve a registry handle to the driver key for a *device instance*, use [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079) with the *KeyType* parameter set to DIREG_DRV.
+1.  To retrieve a registry handle to the driver key for a *device instance*, use [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey) with the *KeyType* parameter set to DIREG_DRV.
 
-2.  Use [**SetupDiGetDevicePropertyKeys**](https://msdn.microsoft.com/library/windows/hardware/ff551965) (to retrieve all the property keys for a device instance) or [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) (to retrieve a specified device instance property key).
+2.  Use [**SetupDiGetDevicePropertyKeys**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertykeys) (to retrieve all the property keys for a device instance) or [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) (to retrieve a specified device instance property key).
 
-3.  Use [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163) to save the device instance property key.
+3.  Use [**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to save the device instance property key.
 
 ## Loading executable or DLL files
 

@@ -16,24 +16,24 @@ Starting with Windows 8.1, the Microsoft Direct3D runtime handles internal swap
 
 These reference topics describe how to implement this capability in your display miniport driver and user-mode display driver:
 
--   [*pfnPresent1(D3D)*](https://msdn.microsoft.com/library/windows/hardware/dn458010)
--   [*pfnPresent1(DXGI)*](https://msdn.microsoft.com/library/windows/hardware/dn469267)
--   [**D3DDDIARG\_PRESENT1**](https://msdn.microsoft.com/library/windows/hardware/dn457997)
--   [**D3DDDIARG\_PRESENTSURFACE**](https://msdn.microsoft.com/library/windows/hardware/dn457998)
--   [**D3DKMT\_COMPOSITION\_PRESENTHISTORYTOKEN**](https://msdn.microsoft.com/library/windows/hardware/dn458001)
--   [**DXGI\_DDI\_ARG\_PRESENT1**](https://msdn.microsoft.com/library/windows/hardware/dn457714)
--   [**DXGI\_DDI\_ARG\_PRESENTSURFACE**](https://msdn.microsoft.com/library/windows/hardware/dn457715)
--   [**D3DDDI\_DEVICEFUNCS**](https://msdn.microsoft.com/library/windows/hardware/ff544519) (new **pfnPresent1** function pointer)
--   [**D3DDDIFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff544312) (new **D3DDDIFMT\_G8R8** and **D3DDDIFMT\_R8** constant values)
--   [**D3DKMT\_PRESENT\_MODEL**](https://msdn.microsoft.com/library/windows/hardware/ff548197) (new **D3DKMT\_PM\_REDIRECTED\_COMPOSITION** constant value)
--   [**D3DKMT\_PRESENTHISTORYTOKEN**](https://msdn.microsoft.com/library/windows/hardware/ff548188) (new **Composition** member)
--   [**DXGI\_DDI\_BASE\_ARGS**](https://msdn.microsoft.com/library/windows/hardware/ff557485) (new **pDXGIDDIBaseFunctions4** member)
--   [**DXGI1\_3\_DDI\_BASE\_FUNCTIONS**](https://msdn.microsoft.com/library/windows/hardware/dn465883) (new **pfnPresent1** function pointer)
+-   [*pfnPresent1(D3D)*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_present1)
+-   [*pfnPresent1(DXGI)*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxgiddi/ns-dxgiddi-dxgi1_3_ddi_base_functions)
+-   [**D3DDDIARG\_PRESENT1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_present1)
+-   [**D3DDDIARG\_PRESENTSURFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-d3dddiarg_presentsurface)
+-   [**D3DKMT\_COMPOSITION\_PRESENTHISTORYTOKEN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_composition_presenthistorytoken)
+-   [**DXGI\_DDI\_ARG\_PRESENT1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxgiddi/ns-dxgiddi-dxgi_ddi_arg_present1)
+-   [**DXGI\_DDI\_ARG\_PRESENTSURFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxgiddi/ns-dxgiddi-dxgi_ddi_arg_presentsurface)
+-   [**D3DDDI\_DEVICEFUNCS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs) (new **pfnPresent1** function pointer)
+-   [**D3DDDIFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ne-d3dukmdt-_d3dddiformat) (new **D3DDDIFMT\_G8R8** and **D3DDDIFMT\_R8** constant values)
+-   [**D3DKMT\_PRESENT\_MODEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ne-d3dkmthk-_d3dkmt_present_model) (new **D3DKMT\_PM\_REDIRECTED\_COMPOSITION** constant value)
+-   [**D3DKMT\_PRESENTHISTORYTOKEN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_presenthistorytoken) (new **Composition** member)
+-   [**DXGI\_DDI\_BASE\_ARGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxgiddi/ns-dxgiddi-dxgi_ddi_base_args) (new **pDXGIDDIBaseFunctions4** member)
+-   [**DXGI1\_3\_DDI\_BASE\_FUNCTIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxgiddi/ns-dxgiddi-dxgi1_3_ddi_base_functions) (new **pfnPresent1** function pointer)
 
 ## <span id="Texture_format_support_for_shared_surfaces"></span><span id="texture_format_support_for_shared_surfaces"></span><span id="TEXTURE_FORMAT_SUPPORT_FOR_SHARED_SURFACES"></span>Texture format support for shared surfaces
 
 
-Drivers should support both sharing resources and shareable backbuffers for these additional texture formats from the [**DXGI\_FORMAT**](https://msdn.microsoft.com/library/windows/desktop/bb173059) enumeration:
+Drivers should support both sharing resources and shareable backbuffers for these additional texture formats from the [**DXGI\_FORMAT**](https://docs.microsoft.com/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) enumeration:
 
 - **DXGI\_FORMAT\_A8\_UNORM**
 - **DXGI\_FORMAT\_R8\_UNORM**
@@ -50,7 +50,7 @@ Drivers should support both sharing resources and shareable backbuffers for thes
 
 In addition, drivers should support the **DXGI\_FORMAT\_L8\_UNORM** placeholder format if they support Microsoft Direct3D 11 and later on Direct3D feature level 9 hardware. **DXGI\_FORMAT\_L8\_UNORM** is functionally equivalent to the **D3DDDIFMT\_L8** format.
 
-Drivers should also support additional texture formats from the [**D3DDDIFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff544312) enumeration:
+Drivers should also support additional texture formats from the [**D3DDDIFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ne-d3dukmdt-_d3dddiformat) enumeration:
 
 -   **D3DDDIFMT\_G8R8**
 -   **D3DDDIFMT\_R8**

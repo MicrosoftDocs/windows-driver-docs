@@ -17,7 +17,7 @@ This section includes:
 
 [EngExtCpp Extension Design Guide](engextcpp-extension-design-guide.md)
 
-[EngExtCpp Extension Reference](https://msdn.microsoft.com/library/windows/hardware/ff543033)
+[EngExtCpp Extension Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/index)
 
  
 

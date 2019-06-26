@@ -32,7 +32,7 @@ SUM and MUX nodes are the *classic terminators* of the destination line. A SUM n
 
 If multiple parents are discovered, parsing is immediately terminated. The mixer-line driver interprets this condition as a "virtual sum" that is formed by tying multiple inputs together.
 
-The name of the destination line comes from the name returned from the [**KSPROPERTY\_PIN\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff565203) property on that pin.
+The name of the destination line comes from the name returned from the [**KSPROPERTY\_PIN\_NAME**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-name) property on that pin.
 
 After all destination line controls have been translated, WDMAud begins translating the source lines. Again, the order in which WDMAud parses these lines is the reverse of the order in which SysAudio queries them. Also, the direction in which source lines are parsed is opposite to that in which destination lines are parsed. WDMAud parses each line starting from the pin and proceeding in the downstream direction until it detects one of the following terminating conditions:
 

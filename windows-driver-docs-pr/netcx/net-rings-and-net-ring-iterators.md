@@ -49,6 +49,8 @@ Elements with index values between **NextIndex** and **EndIndex - 1** inclusive 
 
 Because the net ring is circular, eventually the index values wrap around the end of the buffer and come back to the beginning. NetAdapterCx automatically handles wrapping the index values around the ring when the client driver calls the appropriate method, as described in the following section.
 
+For specific information about managing the elements in net rings, see [Net ring element management](net-ring-element-management.md).
+
 ## Net Ring Iterator Interface overview
 
 NIC client drivers perform post and drain operations on net rings by calling into the *Net Ring Iterator Interface*. A [**NET_RING_ITERATOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/ns-netringiterator-_net-ring-iterator) is a small structure that contains references to the post and drain indices of a **NET_RING** to which it belongs. 

@@ -40,7 +40,7 @@ ServiceBinary = %12%\subunit.sys
 Dependencies  = AVCSTRM   ; loaded before subunit.sys
 ```
 
-For more information about device installation files, see [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433).
+For more information about device installation files, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
 
  
 

@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # FLT\_PARAMETERS for IRP\_MJ\_CREATE union
 
 
-The following union component is used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638) structure for the operation is [**IRP\_MJ\_CREATE**](irp-mj-create.md).
+The following union component is used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP\_MJ\_CREATE**](irp-mj-create.md).
 
 Syntax
 ------
@@ -48,34 +48,34 @@ Structure containing the following members.
 **SecurityContext**  
 SecurityContext-&gt;AccessState
 
-Pointer to an [**ACCESS\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff538840) structure that contains the object's subject context, granted access types, and remaining desired access types.
+Pointer to an [**ACCESS\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_access_state) structure that contains the object's subject context, granted access types, and remaining desired access types.
 
 SecurityContext-&gt;DesiredAccess
 
-[**ACCESS\_MASK**](https://msdn.microsoft.com/library/windows/hardware/ff540466) structure that specifies access rights requested for the file. For more information, see the *DesiredAccess* parameter to [**FltCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff541935).
+[**ACCESS\_MASK**](https://docs.microsoft.com/windows-hardware/drivers/kernel/access-mask) structure that specifies access rights requested for the file. For more information, see the *DesiredAccess* parameter to [**FltCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefile).
 
 **Options**  
-Bitmask of flags that specify the options to be applied when creating or opening the file, as well as the action to be taken if the file already exists. The low 24 bits of this member correspond to the *CreateOptions* parameter to [**FltCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff541935). The high 8 bits correspond to the *CreateDisposition* parameter to **FltCreateFile**.
+Bitmask of flags that specify the options to be applied when creating or opening the file, as well as the action to be taken if the file already exists. The low 24 bits of this member correspond to the *CreateOptions* parameter to [**FltCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefile). The high 8 bits correspond to the *CreateDisposition* parameter to **FltCreateFile**.
 
 **FileAttributes**  
-Bitmask of attributes to be applied when creating or opening the file. For more information, see the *FileAttributes* parameter to [**FltCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff541935).
+Bitmask of attributes to be applied when creating or opening the file. For more information, see the *FileAttributes* parameter to [**FltCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefile).
 
 **ShareAccess**  
-Bitmask of share access rights requested for the file. If this parameter is zero, exclusive access is being requested. For more information, see the *ShareAccess* parameter to [**FltCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff541935).
+Bitmask of share access rights requested for the file. If this parameter is zero, exclusive access is being requested. For more information, see the *ShareAccess* parameter to [**FltCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefile).
 
 **EaLength**  
-Length, in bytes, of the buffer that the **EaBuffer** member points to. For more information, see the *EaLength* parameter to [**FltCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff541935).
+Length, in bytes, of the buffer that the **EaBuffer** member points to. For more information, see the *EaLength* parameter to [**FltCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefile).
 
 **EaBuffer**  
-Pointer to a caller-supplied, [**FILE\_FULL\_EA\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff545793)-structured buffer that contains extended attribute (EA) information to be applied to the file. For more information, see the *EaBuffer* parameter to [**FltCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff541935).
+Pointer to a caller-supplied, [**FILE\_FULL\_EA\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_full_ea_information)-structured buffer that contains extended attribute (EA) information to be applied to the file. For more information, see the *EaBuffer* parameter to [**FltCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefile).
 
 **AllocationSize**  
-Optionally specifies the initial allocation size, in bytes, for the file. A nonzero value has no effect unless the file is being created, overwritten, or superseded. For more information, see the *AllocationSize* parameter to [**FltCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff541935).
+Optionally specifies the initial allocation size, in bytes, for the file. A nonzero value has no effect unless the file is being created, overwritten, or superseded. For more information, see the *AllocationSize* parameter to [**FltCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefile).
 
 Remarks
 -------
 
-The [**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff544673) structure for the [**IRP\_MJ\_CREATE**](irp-mj-create.md) operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620)) structure. It is contained in an [**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638) structure.
+The [**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters) structure for the [**IRP\_MJ\_CREATE**](irp-mj-create.md) operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an [**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
 
 IRP\_MJ\_CREATE is an IRP-based operation.
 
@@ -98,25 +98,25 @@ Requirements
 ## See also
 
 
-[**ACCESS\_MASK**](https://msdn.microsoft.com/library/windows/hardware/ff540466)
+[**ACCESS\_MASK**](https://docs.microsoft.com/windows-hardware/drivers/kernel/access-mask)
 
-[**ACCESS\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff538840)
+[**ACCESS\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_access_state)
 
-[**FILE\_FULL\_EA\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff545793)
+[**FILE\_FULL\_EA\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_full_ea_information)
 
-[**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620)
+[**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638)
+[**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT\_IS\_FASTIO\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544645)
+[**FLT\_IS\_FASTIO\_OPERATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
-[**FLT\_IS\_FS\_FILTER\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544648)
+[**FLT\_IS\_FS\_FILTER\_OPERATION**](https://docs.microsoft.com/previous-versions/ff544648(v=vs.85))
 
-[**FLT\_IS\_IRP\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544654)
+[**FLT\_IS\_IRP\_OPERATION**](https://docs.microsoft.com/previous-versions/ff544654(v=vs.85))
 
-[**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff544673)
+[**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_parameters)
 
-[**FltCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff541935)
+[**FltCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefile)
 
 [**IRP\_MJ\_CREATE**](irp-mj-create.md)
 

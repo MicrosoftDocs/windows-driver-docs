@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_DrvPkg_Model
 
 
-The DEVPKEY_DrvPkg_Model device [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) property represents the model name for a device instance.
+The DEVPKEY_DrvPkg_Model device [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) property represents the model name for a device instance.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ The DEVPKEY_DrvPkg_Model device [driver package](https://msdn.microsoft.com/libr
 Remarks
 -------
 
-You can set the value of DEVPKEY_DrvPkg_Model by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of the DEVPKEY_DrvPkg_Model property by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
+You can set the value of DEVPKEY_DrvPkg_Model by an [**INF AddProperty directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive) that is included in the [**INF *DDInstall* section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) of the INF file that installs the device. You can retrieve the value of the DEVPKEY_DrvPkg_Model property by calling [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_Model for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
@@ -88,11 +88,11 @@ Requirements
 ## See also
 
 
-[**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318)
+[**INF AddProperty directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive)
 
-[**INF *DDInstall* Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344)
+[**INF *DDInstall* Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section)
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

@@ -27,6 +27,6 @@ The NFC driver shall intelligently manage the power state of the device. The fol
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
+[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
 
 

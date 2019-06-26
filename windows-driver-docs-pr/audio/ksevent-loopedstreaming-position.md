@@ -38,8 +38,8 @@ The KSEVENT\_LOOPEDSTREAMING\_POSITION event indicates that the audio stream has
 <tbody>
 <tr class="odd">
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561744" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561744)"><strong>KSEVENT</strong></a></p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537505" data-raw-source="[&lt;strong&gt;LOOPEDSTREAMING_POSITION_EVENT_DATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537505)"><strong>LOOPEDSTREAMING_POSITION_EVENT_DATA</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-loopedstreaming_position_event_data" data-raw-source="[&lt;strong&gt;LOOPEDSTREAMING_POSITION_EVENT_DATA&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-loopedstreaming_position_event_data)"><strong>LOOPEDSTREAMING_POSITION_EVENT_DATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -61,9 +61,9 @@ In Windows Server 2003, Windows XP, Windows 2000, Windows Me, and Windows 98, th
 
 In Windows Vista, none of the Wave*Xxx* port drivers implement event handlers or other support for KSEVENT\_LOOPEDSTREAMING\_POSITION events.
 
-A looped buffer is a data buffer for an audio stream of type [**KSINTERFACE\_STANDARD\_LOOPED\_STREAMING**](https://msdn.microsoft.com/library/windows/hardware/ff563381). When a play or record cursor reaches the end of a looped buffer, the cursor wraps around to the start of the buffer.
+A looped buffer is a data buffer for an audio stream of type [**KSINTERFACE\_STANDARD\_LOOPED\_STREAMING**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksinterface-standard-looped-streaming). When a play or record cursor reaches the end of a looped buffer, the cursor wraps around to the start of the buffer.
 
-For more information about looped buffers, buffer positions, and play and record cursors, see [Audio Position Property](https://msdn.microsoft.com/library/windows/hardware/ff536211).
+For more information about looped buffers, buffer positions, and play and record cursors, see [Audio Position Property](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-position-property).
 
 Requirements
 ------------
@@ -84,11 +84,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSEVENT**](https://msdn.microsoft.com/library/windows/hardware/ff561744)
+[**KSEVENT**](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))
 
-[**KSINTERFACE\_STANDARD\_LOOPED\_STREAMING**](https://msdn.microsoft.com/library/windows/hardware/ff563381)
+[**KSINTERFACE\_STANDARD\_LOOPED\_STREAMING**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksinterface-standard-looped-streaming)
 
-[**LOOPEDSTREAMING\_POSITION\_EVENT\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff537505)
+[**LOOPEDSTREAMING\_POSITION\_EVENT\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-loopedstreaming_position_event_data)
 
  
 

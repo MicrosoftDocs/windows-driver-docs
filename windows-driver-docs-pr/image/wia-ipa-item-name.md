@@ -32,7 +32,7 @@ Access Rights: Read-only
 Remarks
 -------
 
-The *item name* is the same as the item name that is specified in a call to the [**wiasCreateDrvItem**](https://msdn.microsoft.com/library/windows/hardware/ff549160) service utility function.
+The *item name* is the same as the item name that is specified in a call to the [**wiasCreateDrvItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiascreatedrvitem) service utility function.
 
 An application reads the WIA\_IPA\_ITEM\_NAME property to determine which item it is currently using. Each item must have a unique name. The WIA service creates and maintains WIA\_IPA\_ITEM\_NAME.
 
@@ -55,9 +55,9 @@ Requirements
 ## See also
 
 
-[**IWiaMiniDrvTransferCallback::GetNextStream**](https://msdn.microsoft.com/library/windows/hardware/jj151551)
+[**IWiaMiniDrvTransferCallback::GetNextStream**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvtransfercallback-getnextstream)
 
-[**wiasCreateDrvItem**](https://msdn.microsoft.com/library/windows/hardware/ff549160)
+[**wiasCreateDrvItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiascreatedrvitem)
 
  
 

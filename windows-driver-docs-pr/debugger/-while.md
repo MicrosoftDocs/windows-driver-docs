@@ -38,7 +38,7 @@ For information about other control flow tokens and their use in debugger comman
 Remarks
 -------
 
-The [**.break**](https://msdn.microsoft.com/library/windows/hardware/ff556242) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
+The [**.break**](https://docs.microsoft.com/windows-hardware/drivers/devtest/-break) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
 
  
 

@@ -16,15 +16,15 @@ ms.localizationpriority: medium
 
 
 
-A miniport driver indicates received data by calling the [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598) function from its [*MiniportInterruptDPC*](https://msdn.microsoft.com/library/windows/hardware/ff559398) function.
+A miniport driver indicates received data by calling the [**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function from its [*MiniportInterruptDPC*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_interrupt_dpc) function.
 
-After the NIC computes the RSS hash value successfully, the driver should store the hash type, hashing function, and hash value in the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure with the following macros:
+After the NIC computes the RSS hash value successfully, the driver should store the hash type, hashing function, and hash value in the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure with the following macros:
 
-[**NET\_BUFFER\_LIST\_SET\_HASH\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff568409)
+[**NET\_BUFFER\_LIST\_SET\_HASH\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-set-hash-type)
 
-[**NET\_BUFFER\_LIST\_SET\_HASH\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff568408)
+[**NET\_BUFFER\_LIST\_SET\_HASH\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-set-hash-function)
 
-[**NET\_BUFFER\_LIST\_SET\_HASH\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/ff568410)
+[**NET\_BUFFER\_LIST\_SET\_HASH\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-set-hash-value)
 
 The hash type identifies the area of the received packet that the hash should be calculated over. For more information about the hash type, see [RSS Hashing Types](rss-hashing-types.md). The hashing function identifies the function that is used to calculate the hash value. For more information about hashing functions, see [RSS Hashing Functions](rss-hashing-functions.md). The protocol driver selects the hash type and function at initialization. For more information, see [RSS Configuration](rss-configuration.md).
 

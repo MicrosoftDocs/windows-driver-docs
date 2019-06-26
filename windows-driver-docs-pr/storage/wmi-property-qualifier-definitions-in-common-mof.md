@@ -24,7 +24,7 @@ If you apply one of the preceding qualifiers to a data field in a WMI class defi
 
 Thus, a WMI property qualifier resembles an enumeration because the qualifier represents a set of integer values. But the WMI tool suite does not generate an enumeration declaration in *Iscsidef.h* that corresponds to the qualifiers in *Common.mof*, neither does it generate a set of symbolic constant definitions that correspond to the qualifier values.
 
-For a general discussion of WMI property qualifiers, see [WMI Property Qualifiers](https://msdn.microsoft.com/library/windows/hardware/ff566365).
+For a general discussion of WMI property qualifiers, see [WMI Property Qualifiers](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-property-qualifiers).
 
  
 

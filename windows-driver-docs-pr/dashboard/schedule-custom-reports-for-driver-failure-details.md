@@ -13,7 +13,7 @@ Use these asynchronous methods to access reporting data for your Win10/ Win 8.x 
 
 >[!NOTE]
 >
-> - These methods can only be used by developer accounts that belong to the [Windows Hardware Dev Center program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
+> - These methods can only be used by developer accounts that belong to the [Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
 > - These methods can be used in place of the existing methods to determine [Windows 10 driver errors](https://docs.microsoft.com/windows/uwp/monetize/get-error-reporting-data-for-windows-10-drivers),  [Windows 7 and Windows 8.x driver errors](https://docs.microsoft.com/windows/uwp/monetize/get-error-reporting-data-for-windows-7-and-windows-8.x-drivers) (for IHVs), and [hardware errors](https://docs.microsoft.com/windows/uwp/monetize/get-oem-hardware-error-reporting-data) (for OEMs).
 > - These methods expose a rich set of new dimensions and supports look back for as much as 90 days in the past.
 > - The API documentation is also available in [Swagger](https://apidocs.microsoft.com/services/analyticsreportingapis)

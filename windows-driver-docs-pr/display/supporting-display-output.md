@@ -20,7 +20,7 @@ A comprehensive approach to system configuration and device power control is bui
 ## <span id="BIOS_Requirements_to_Support_Display_Output_Devices"></span><span id="bios_requirements_to_support_display_output_devices"></span><span id="BIOS_REQUIREMENTS_TO_SUPPORT_DISPLAY_OUTPUT_DEVICES"></span>BIOS Requirements to Support Display Output Devices
 
 
-The display miniport driver or ACPI methods that are exposed by the system BIOS support display output devices configuration. The [**DxgkDdiNotifyAcpiEvent**](https://msdn.microsoft.com/library/windows/hardware/ff559695) function is called to notify the display miniport driver about ACPI events. For example, when the user presses the keyboard shortcut for the output device switch, the **DxgkDdiNotifyAcpiEvent** function is called with ACPI\_NOTIFY\_CYCLE\_DISPLAY\_HOTKEY notification and a request type of DXGK\_ACPI\_CHANGE\_DISPLAY\_MODE. As a result, the operating system calls the [**DxgkDdiRecommendFunctionalVidPn**](https://msdn.microsoft.com/library/windows/hardware/ff559775) function to query the selected display output device.
+The display miniport driver or ACPI methods that are exposed by the system BIOS support display output devices configuration. The [**DxgkDdiNotifyAcpiEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_notify_acpi_event) function is called to notify the display miniport driver about ACPI events. For example, when the user presses the keyboard shortcut for the output device switch, the **DxgkDdiNotifyAcpiEvent** function is called with ACPI\_NOTIFY\_CYCLE\_DISPLAY\_HOTKEY notification and a request type of DXGK\_ACPI\_CHANGE\_DISPLAY\_MODE. As a result, the operating system calls the [**DxgkDdiRecommendFunctionalVidPn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn) function to query the selected display output device.
 
 The following aliases for the ACPI display output are defined in Dispmprt.h:
 
@@ -39,7 +39,7 @@ The following aliases for the ACPI display output are defined in Dispmprt.h:
 ## <span id="External_Asynchronous_Events"></span><span id="external_asynchronous_events"></span><span id="EXTERNAL_ASYNCHRONOUS_EVENTS"></span>External Asynchronous Events
 
 
-The operating system must be notified about external, asynchronous events that affect the display output devices. The following notifications and related request types are defined in Dispmprt.h and used in the [**DxgkDdiNotifyAcpiEvent**](https://msdn.microsoft.com/library/windows/hardware/ff559695) function.
+The operating system must be notified about external, asynchronous events that affect the display output devices. The following notifications and related request types are defined in Dispmprt.h and used in the [**DxgkDdiNotifyAcpiEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_notify_acpi_event) function.
 
 -   ACPI\_NOTIFY\_CYCLE\_DISPLAY\_HOTKEY - Notifies the operating system that the user has pressed the cycle display keyboard shortcut.
 -   ACPI\_NOTIFY\_NEXT\_DISPLAY\_HOTKEY - Notifies the operating system that the user has pressed the next display keyboard shortcut.
@@ -54,7 +54,7 @@ The following are the types of requests that the display miniport driver can mak
 -   DXGK\_ACPI\_CHANGE\_DISPLAY\_MODE - Requests to initiate a mode change to the new recommended active video present network (VidPN).
 -   DXGK\_ACPI\_POLL\_DISPLAY\_CHILDREN - Requests to poll the connectivity of the children of the display adapter.
 
-**Note**  The previous requests are the values of the *AcpiFlags* parameter returned by the [**DxgkDdiNotifyAcpiEvent**](https://msdn.microsoft.com/library/windows/hardware/ff559695) function.
+**Note**  The previous requests are the values of the *AcpiFlags* parameter returned by the [**DxgkDdiNotifyAcpiEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_notify_acpi_event) function.
 
  
 

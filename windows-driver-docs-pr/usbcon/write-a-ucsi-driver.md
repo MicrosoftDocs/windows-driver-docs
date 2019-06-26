@@ -94,7 +94,7 @@ If the client driver enters a Dx state because of S0-Idle, WDF brings the driver
 
 -   Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
 
--   [Install](https://developer.microsoft.com/windows/hardware/windows-driver-kit) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing the client driver, specifically, you'll need:
+-   [Install](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing the client driver, specifically, you'll need:
 
     -   The stub library, (UcmUcsiCxStub.lib). The library translates calls made by the client driver and pass them up to the class extension.
     -   The header file, Ucmucsicx.h.

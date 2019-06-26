@@ -26,7 +26,7 @@ This command is not serialized with any tasks. It is serialized with other prope
 
 | TLV                                                  | Multiple TLV instances allowed | Optional | Description                                        |
 |------------------------------------------------------|--------------------------------|----------|----------------------------------------------------|
-| [**WDI\_TLV\_IHV\_DATA**](https://msdn.microsoft.com/library/windows/hardware/dn926312) |                                | X        | The information from the IHV extensibility module. |
+| [**WDI\_TLV\_IHV\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ihv-data) |                                | X        | The information from the IHV extensibility module. |
 
  
 
@@ -35,7 +35,7 @@ This command is not serialized with any tasks. It is serialized with other prope
 
 | TLV                                                  | Multiple TLV instances allowed | Optional | Description                                                                                                                 |
 |------------------------------------------------------|--------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_IHV\_DATA**](https://msdn.microsoft.com/library/windows/hardware/dn926312) |                                | X        | The response to be sent to the IHV extensibility module. The data value is forwarded as-is to the IHV extensibility module. |
+| [**WDI\_TLV\_IHV\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ihv-data) |                                | X        | The response to be sent to the IHV extensibility module. The data value is forwarded as-is to the IHV extensibility module. |
 
  
 

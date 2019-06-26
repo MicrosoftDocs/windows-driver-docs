@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 Miniport drivers provide status indications to overlying drivers. The CoNDIS status indication functions are similar to the connectionless status indication functions.
 
-To report a change in the status of a connection-oriented NIC or a change in the status of a particular VC active on the NIC, a connection-oriented miniport driver calls [**NdisMCoIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563562). If the miniport driver is reporting a change in the status of a particular VC, it supplies an *NdisVcHandle* that identifies the VC.
+To report a change in the status of a connection-oriented NIC or a change in the status of a particular VC active on the NIC, a connection-oriented miniport driver calls [**NdisMCoIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismcoindicatestatusex). If the miniport driver is reporting a change in the status of a particular VC, it supplies an *NdisVcHandle* that identifies the VC.
 
 This section includes the following topics:
 

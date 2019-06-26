@@ -25,53 +25,53 @@ A DMus miniport driver for a MIDI hardware device should support two interfaces:
 
 -   The stream interface manages a MIDI stream and exposes most of the miniport driver's functionality.
 
-The miniport interface, [IMiniportDMus](https://msdn.microsoft.com/library/windows/hardware/ff536699), inherits the methods in the [IMiniport](https://msdn.microsoft.com/library/windows/hardware/ff536698) interface. **IMiniportDMus** provides the following additional methods:
+The miniport interface, [IMiniportDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iminiportdmus), inherits the methods in the [IMiniport](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiport) interface. **IMiniportDMus** provides the following additional methods:
 
-[**IMiniportDMus::Init**](https://msdn.microsoft.com/library/windows/hardware/ff536700)
+[**IMiniportDMus::Init**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-iminiportdmus-init)
 
 Initializes the miniport object.
 
-[**IMiniportDMus::NewStream**](https://msdn.microsoft.com/library/windows/hardware/ff536701)
+[**IMiniportDMus::NewStream**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-iminiportdmus-newstream)
 
 Creates a new stream object.
 
-[**IMiniportDMus::Service**](https://msdn.microsoft.com/library/windows/hardware/ff536702)
+[**IMiniportDMus::Service**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-iminiportdmus-service)
 
 Notifies the miniport driver of a request for service.
 
-The stream interface, [IMXF](https://msdn.microsoft.com/library/windows/hardware/ff536782), inherits the methods in the **IUnknown** interface. **IMXF** provides the following additional methods:
+The stream interface, [IMXF](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-imxf), inherits the methods in the **IUnknown** interface. **IMXF** provides the following additional methods:
 
-[**IMXF::ConnectOutput**](https://msdn.microsoft.com/library/windows/hardware/ff536785)
+[**IMXF::ConnectOutput**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-imxf-connectoutput)
 
 Connects this stream object, which is a data source, to the **IMXF** interface of another stream object, which is a data sink.
 
-[**IMXF::DisconnectOutput**](https://msdn.microsoft.com/library/windows/hardware/ff536787)
+[**IMXF::DisconnectOutput**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-imxf-disconnectoutput)
 
 Disconnects this stream object from the **IMXF** interface of another stream object that is a data sink.
 
-[**IMXF::PutMessage**](https://msdn.microsoft.com/library/windows/hardware/ff536791)
+[**IMXF::PutMessage**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-imxf-putmessage)
 
-Passes a [**DMUS\_KERNEL\_EVENT**](https://msdn.microsoft.com/library/windows/hardware/ff536340) structure to the data sink.
+Passes a [**DMUS\_KERNEL\_EVENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/ns-dmusicks-_dmus_kernel_event) structure to the data sink.
 
-[**IMXF::SetState**](https://msdn.microsoft.com/library/windows/hardware/ff536792)
+[**IMXF::SetState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-imxf-setstate)
 
 Sets the state of the stream.
 
-In addition, the DMus miniport driver's [ISynthSinkDMus](https://msdn.microsoft.com/library/windows/hardware/ff537011) interface provides DLS functionality for software synthesizers. **ISynthSinkDMus** inherits the methods in base interface **IMXF**. **ISynthSinkDMus** provides the following additional methods:
+In addition, the DMus miniport driver's [ISynthSinkDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-isynthsinkdmus) interface provides DLS functionality for software synthesizers. **ISynthSinkDMus** inherits the methods in base interface **IMXF**. **ISynthSinkDMus** provides the following additional methods:
 
-[**ISynthSinkDMus::RefTimeToSample**](https://msdn.microsoft.com/library/windows/hardware/ff537013)
+[**ISynthSinkDMus::RefTimeToSample**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-isynthsinkdmus-reftimetosample)
 
 Converts a reference time to a sample time.
 
-[**ISynthSinkDMus::Render**](https://msdn.microsoft.com/library/windows/hardware/ff537015)
+[**ISynthSinkDMus::Render**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-isynthsinkdmus-render)
 
 Renders wave data into a buffer for the wave sink.
 
-[**ISynthSinkDMus::SampleToRefTime**](https://msdn.microsoft.com/library/windows/hardware/ff537018)
+[**ISynthSinkDMus::SampleToRefTime**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-isynthsinkdmus-sampletoreftime)
 
 Converts a sample time to a reference time.
 
-[**ISynthSinkDMus::SyncToMaster**](https://msdn.microsoft.com/library/windows/hardware/ff537019)
+[**ISynthSinkDMus::SyncToMaster**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-isynthsinkdmus-synctomaster)
 
 Synchronizes the sample clock to the master clock.
 
@@ -79,13 +79,13 @@ The port driver's wave sink calls **ISynthSinkDMus::Render** to read the wave PC
 
 The miniport driver calls the following interfaces on the DMus port driver:
 
-[IPortDMus](https://msdn.microsoft.com/library/windows/hardware/ff536879)
+[IPortDMus](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iportdmus)
 
-[IAllocatorMXF](https://msdn.microsoft.com/library/windows/hardware/ff536491)
+[IAllocatorMXF](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iallocatormxf)
 
-[IMasterClock](https://msdn.microsoft.com/library/windows/hardware/ff536696)
+[IMasterClock](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-imasterclock)
 
-PortCls contains a built-in DMus miniport driver for a MIDI device with a UART function. For more information, see [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714).
+PortCls contains a built-in DMus miniport driver for a MIDI device with a UART function. For more information, see [**PcNewMiniport**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewminiport).
 
  
 

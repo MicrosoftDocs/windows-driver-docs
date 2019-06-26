@@ -18,15 +18,15 @@ NDIS 6.30 and later miniport drivers that provide NDK services must support this
 Remarks
 -------
 
-NDIS issues this OID with the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure pointing to a **BOOLEAN** and **InformationBufferLength** member equal to sizeof(**BOOLEAN**).
+NDIS issues this OID with the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure pointing to a **BOOLEAN** and **InformationBufferLength** member equal to sizeof(**BOOLEAN**).
 
 -   If the **BOOLEAN** value is **TRUE** and the **\*NetworkDirect** keyword value is nonzero, the miniport adapter's NDK functionality must be enabled.
 
     The miniport driver can read the **\*NetworkDirect** keyword value by doing the following:
 
-    1.  Call [**NdisOpenConfigurationEx**](https://msdn.microsoft.com/library/windows/hardware/ff563717) with the NDIS handle that the [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654) function returned when the miniport driver was initialized. For more information about calling **NdisOpenConfigurationEx**, see [Reading the Registry in an NDIS 6.0 Miniport Driver](https://msdn.microsoft.com/library/windows/hardware/ff570429).
+    1.  Call [**NdisOpenConfigurationEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisopenconfigurationex) with the NDIS handle that the [**NdisMRegisterMiniportDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterminiportdriver) function returned when the miniport driver was initialized. For more information about calling **NdisOpenConfigurationEx**, see [Reading the Registry in an NDIS 6.0 Miniport Driver](https://docs.microsoft.com/windows-hardware/drivers/network/reading-the-registry-in-an-ndis-6-0-miniport-driver).
 
-    2.  Call [**NdisReadConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff564511), passing:
+    2.  Call [**NdisReadConfiguration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisreadconfiguration), passing:
 
         -   "\*NetworkDirect" for the *Keyword* parameter
 
@@ -34,13 +34,13 @@ NDIS issues this OID with the **InformationBuffer** member of the [**NDIS\_OID\_
 
 -   If the **BOOLEAN** value is **FALSE**, the NDK functionality of the miniport adapter must be disabled.
 
-To enable or disable its NDK functionality, the miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) callback function should follow the steps in [Enabling and Disabling NDK Functionality](https://msdn.microsoft.com/library/windows/hardware/dn163547).
+To enable or disable its NDK functionality, the miniport driver's [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) callback function should follow the steps in [Enabling and Disabling NDK Functionality](https://docs.microsoft.com/windows-hardware/drivers/network/enabling-and-disabling-ndk-functionality).
 
-**Note**  An NDK-capable miniport driver must never call [**NdisMNetPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff563616) from the context of its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function, because doing so could cause a deadlock. Instead, it should call **NdisMNetPnPEvent** from some other context or queue a work item.
+**Note**  An NDK-capable miniport driver must never call [**NdisMNetPnPEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismnetpnpevent) from the context of its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) function, because doing so could cause a deadlock. Instead, it should call **NdisMNetPnPEvent** from some other context or queue a work item.
 
  
 
-An NDK-capable miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function must return **STATUS\_SUCCESS** for an OID\_NDK\_SET\_STATE OID request unless a failure occurs. The driver must not return **NDIS\_STATUS\_PENDING**.
+An NDK-capable miniport driver's [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) function must return **STATUS\_SUCCESS** for an OID\_NDK\_SET\_STATE OID request unless a failure occurs. The driver must not return **NDIS\_STATUS\_PENDING**.
 
 Requirements
 ------------
@@ -73,15 +73,15 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
+[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)
 
-[**NdisMNetPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff563616)
+[**NdisMNetPnPEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismnetpnpevent)
 
-[**NdisQueueIoWorkItem**](https://msdn.microsoft.com/library/windows/hardware/ff563775)
+[**NdisQueueIoWorkItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisqueueioworkitem)
 
-[**NdisReadConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff564511)
+[**NdisReadConfiguration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisreadconfiguration)
 
-[**NDK\_ADAPTER**](https://msdn.microsoft.com/library/windows/hardware/hh439848)
+[**NDK\_ADAPTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndkpi/ns-ndkpi-_ndk_adapter)
 
 [OID\_NDK\_SET\_STATE](oid-ndk-set-state.md)
 

@@ -35,7 +35,7 @@ Code Analysis can detect several types of errors, including errors in the follow
 
 -   **Kernel-mode coding practices:** Coding practices that can cause errors, such as modifying an opaque memory descriptor list (MDL) structure, failing to examine the value of a variable set by a called function, and using C/C++ string manipulation functions rather than the safe string functions defined in Ntstrsafe.h.
 
--   **Driver-specific coding practices:** Specific operations that are often a source of errors in kernel-mode drivers. For example, copying a whole I/O request packet (IRP) without modifying members and saving a pointer to a string or structure argument instead of copying an argument in a [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine.
+-   **Driver-specific coding practices:** Specific operations that are often a source of errors in kernel-mode drivers. For example, copying a whole I/O request packet (IRP) without modifying members and saving a pointer to a string or structure argument instead of copying an argument in a [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine.
 
 ## <span id="Code_Analysis_warnings"></span><span id="code_analysis_warnings"></span><span id="CODE_ANALYSIS_WARNINGS"></span>Code Analysis warnings
 

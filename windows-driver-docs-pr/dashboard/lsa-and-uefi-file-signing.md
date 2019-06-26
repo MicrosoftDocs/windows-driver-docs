@@ -18,7 +18,7 @@ Use the Partner Center to digitally sign [Local Security Authority (LSA)](https:
 > * All LSA and UEFI submissions must be a single, signed CAB library file, and contain all files required for signing.
 >   * This file should contain no folders and only the binaries or .efi files to be signed.
 > * **UEFI FIRMWARE ONLY** - The CAB file signature must match the [Authenticode certificate](https://docs.microsoft.com/windows-hardware/drivers/install/authenticode) for your organization.
->   * Depending on your certificate provider, you may need to use [SignTool](https://msdn.microsoft.com/library/windows/desktop/aa387764) or an external process.
+>   * Depending on your certificate provider, you may need to use [SignTool](https://docs.microsoft.com/windows/desktop/SecCrypto/signtool) or an external process.
 >   * EFI ByteCode (EBC) files must be compiled using the /ALIGN:32 flag for processing to succeed.
 > * **UEFI FIRMWARE ONLY** - If your submission is a shim, you must submit a completed template for review to the shim review board. The shim review process is described at [https://github.com/rhboot/shim-review/](https://github.com/rhboot/shim-review/).
 > **LSA PLUGINS ONLY** - The CAB file signature must match the EV code signing certificate for your organization.
@@ -41,6 +41,6 @@ After signing in to the Partner Center, you can [manage your firmware submission
 
 ## Related topics
 
-* [Microsoft UEFI CA Signing Policy Updates](http://blogs.msdn.com/b/windows_hardware_certification/archive/2013/12/03/microsoft-uefi-ca-signing-policy-updates.aspx)
+* [Microsoft UEFI CA Signing Policy Updates](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 
-* [Pre-Submission Testing for UEFI Submissions](http://blogs.msdn.com/b/windows_hardware_certification/archive/2013/12/03/pre-submission-testing-for-uefi-submissions.aspx)
+* [Pre-Submission Testing for UEFI Submissions](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)

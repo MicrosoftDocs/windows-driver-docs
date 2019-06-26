@@ -2,7 +2,7 @@
 title: What's new in driver development
 description: This section describes new features for driver development in Windows 10.
 ms.assetid: 5502AAF9-2400-4338-A646-C746B29F9A44
-ms.date: 04/10/2019
+ms.date: 06/04/2019
 ms.localizationpriority: medium
 ms.custom: 19H1
 ---
@@ -289,9 +289,13 @@ This section describes new features and updates for driver development in Window
 
 The following is a list of new and updated Audio features in Windows 10, version 1903:
 
-* New reference topics on the Audio OEM Adapter used for Voice Activation for the new eventdetectoroemadapter header
-* New Far Field Audio information
-* New jack description information in [USB Audio 2.0 Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/usb-2-0-audio-drivers)
+* New reference topics on the Audio OEM Adapter used for Voice Activation in the new [eventdetectoroemadapter.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/eventdetectoroemadapter/) header.
+* New Far Field Audio information: 
+    * [PKEY_Devices_AudioDevice_Microphone_IsFarField](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-devices-audiodevice-microphone-isfarfield)
+    * [KSPROPSETID_InterleavedAudio](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-interleavedaudio)
+    * [KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION](https://review.docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-interleavedaudio-formatinformation)
+    
+* New jack description information in [USB Audio 2.0 Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/usb-2-0-audio-drivers).
 
 ### <a name="camera-1903"></a>Camera
 
@@ -447,7 +451,7 @@ Documentation on the new [sidebandaudio](https://docs.microsoft.com/windows-hard
 
 Updates to Display driver development in Windows 10, version 1809 include the following:
 
-* **Raytracing** New Direct3D DDI's were created in parallel of Direct3D API's, in order to support hardware-accelerated raytracing. Example DDIs include: [PFND3D12DDI_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_build_raytracing_acceleration_structure_0054), [PFND3D12DDI_COPY_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_copy_raytracing_acceleration_structure_0054). For more info about raytracing, see [Announcing Microsoft DirectX Raytracing](https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/).
+* **Raytracing** New Direct3D DDI's were created in parallel of Direct3D API's, in order to support hardware-accelerated raytracing. Example DDIs include: [PFND3D12DDI_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_build_raytracing_acceleration_structure_0054), [PFND3D12DDI_COPY_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_copy_raytracing_acceleration_structure_0054). For more info about raytracing, see [Announcing Microsoft DirectX Raytracing](https://devblogs.microsoft.com/directx/announcing-microsoft-directx-raytracing/).
 
 * **Universal Driver Requirements** WDDM 2.5 drivers will need to ensure their DirectX11 UMD, DirectX12 UMD, KMDs, and any other DLL loaded by these components, adhere to the Universal API.
 
@@ -566,7 +570,7 @@ If  your hardware is UCSI compliant and requires communication over a non-ACPI t
 
 For example, control their device’s charging based on thermal conditions, so that the device won’t be overheated.
 
-* [Write a USB Type-C Policy Manager client driver](https://microsoft.com/windows-hardware/drivers/usbcon/policy-manager-client)
+* [Write a USB Type-C Policy Manager client driver](https://www.microsoft.com/windows-hardware/drivers/usbcon/policy-manager-client)
 * New APIs are available in [Usbpmapi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbpmapi/)
 
 **New versions of the class extensions available for emulated USB devices (UDE) -- 1.1 and USB host controller (Ucx) 1.5:**
@@ -1015,7 +1019,7 @@ There is a new Gs1DWCode symbology to the [BarcodeSymbology enumeration](https:/
 
 ### <a name="usb-1703"></a>USB
 
-Windows 10 version 1703 provides a new class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state. The complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines is handled by the system. You only need to write a client driver that communicates hardware events to the system through the class extension. For more information, see [USB Type-C Controller Interface driver class extensions reference](https://msdn.microsoft.com/library/windows/hardware/mt805826).
+Windows 10 version 1703 provides a new class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state. The complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines is handled by the system. You only need to write a client driver that communicates hardware events to the system through the class extension. For more information, see [USB Type-C Controller Interface driver class extensions reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt805826(v=vs.85)).
 
 ## What's new in Windows 10, version 1607
 
@@ -1138,8 +1142,8 @@ The print driver is updated with v4 Print driver improvements and changes to sup
 
 In Windows 10, there is a new class extension module, Wudfsmcclassext.dll, which handles complex driver operations. Smart card hardware-specific tasks are handled by your client driver. There are new programming interfaces that your client driver can use to send information about the card to the class extension so that it can process requests. Those driver programming interfaces are part of OneCoreUAP-based editions of Windows.
 
-* [Smart card client driver event callback functions](https://msdn.microsoft.com/library/windows/hardware/dn946583)
-* [Smart card client driver support methods](https://msdn.microsoft.com/library/windows/hardware/dn946584)
+* [Smart card client driver event callback functions](https://docs.microsoft.com/previous-versions/dn946583(v=vs.85))
+* [Smart card client driver support methods](https://docs.microsoft.com/previous-versions/dn946584(v=vs.85))
 
 ### <a name="storage-1507"></a>Storage
 

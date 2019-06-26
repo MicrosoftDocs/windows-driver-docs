@@ -61,7 +61,7 @@ Requirements
 ## See also
 
 
-[OID\_WDI\_SET\_RECEIVE\_COALESCING](https://msdn.microsoft.com/library/windows/hardware/dn925941)
+[OID\_WDI\_SET\_RECEIVE\_COALESCING](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-receive-coalescing)
 
  
 

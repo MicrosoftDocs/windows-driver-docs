@@ -18,11 +18,11 @@ ms.localizationpriority: medium
 
 To implement finish-install actions, an installer:
 
-1.  Sets the DI_FLAGSEX_FINISHINSTALL_ACTION flag when the installer processes a [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](https://msdn.microsoft.com/library/windows/hardware/ff543702) DIF code and returns one of the following error codes:
+1.  Sets the DI_FLAGSEX_FINISHINSTALL_ACTION flag when the installer processes a [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-newdevicewizard-finishinstall) DIF code and returns one of the following error codes:
     -   ERROR_DI_DO_DEFAULT if it is a class installer without finish-install wizard pages.
     -   NO_ERROR if it is a class installer with finish-install wizard pages or a co-installer with or without finish-install wizard pages.
 
-2.  Performs the finish-install actions when it processes a [**DIF_FINISHINSTALL_ACTION**](https://msdn.microsoft.com/library/windows/hardware/ff543684) request.
+2.  Performs the finish-install actions when it processes a [**DIF_FINISHINSTALL_ACTION**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-finishinstall-action) request.
 
     An installer returns one of the error codes in the following table.
 

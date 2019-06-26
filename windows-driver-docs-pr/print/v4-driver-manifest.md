@@ -151,7 +151,7 @@ PrintFax.Printer.Virtual</td>
 <p>Specifies a URL for the user to obtain a copy of the Printer extension app. Used in printer sharing.</p></td>
 <td><p>None.</p></td>
 <td><p>PrinterExtensionUrl=</p>
-<p>"<a href="http://www.fabrikam.com/files/setup.exe&amp;quot" data-raw-source="http://www.fabrikam.com/files/setup.exe&amp;quot">http://www.fabrikam.com/files/setup.exe&quot</a>;</p></td>
+<p>"<a href="http://www.fabrikam.com/files/setup.exe&quot" data-raw-source="http://www.fabrikam.com/files/setup.exe&quot">http://www.fabrikam.com/files/setup.exe&quot</a>;</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DevModeMap</strong></p>
@@ -179,8 +179,8 @@ PrintFax.Printer.Virtual</td>
 <p>Specifies a list of hardware IDs that match one or more device interfaces to be used for USB Bidi communications.</p></td>
 <td><p>None, but should only be supported if status is done over a USB interface that is not the print interface.</p></td>
 <td><p>BidiUSBStatusInterface=</p>
-<p>”USB\vid_1234&amp;pid_1234”,</p>
-<p>”USB\vid_1234&amp;pid_4567”</p></td>
+<p>”USB\vid_1234&pid_1234”,</p>
+<p>”USB\vid_1234&pid_4567”</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>UserPropertyBagScope</strong></p>

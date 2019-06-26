@@ -27,7 +27,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_surface_negotiation_gg"></span><span id="DDK_SURFACE_NEGOTIATION_GG"></span>
 
 
-Drawing and text output require a surface on which to draw. This surface is created by the **DrvEnableSurface** although a driver can support several PDEVs. Drivers that support the [**DrvCreateDeviceBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff556185) function can create and use additional surfaces. These bitmap surfaces are referred to as *secondary surfaces* or *off-screen surfaces*. For either type of surface, the driver is responsible for determining the type of drawing operations it supports.
+Drawing and text output require a surface on which to draw. This surface is created by the **DrvEnableSurface** although a driver can support several PDEVs. Drivers that support the [**DrvCreateDeviceBitmap**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvcreatedevicebitmap) function can create and use additional surfaces. These bitmap surfaces are referred to as *secondary surfaces* or *off-screen surfaces*. For either type of surface, the driver is responsible for determining the type of drawing operations it supports.
 
  
 

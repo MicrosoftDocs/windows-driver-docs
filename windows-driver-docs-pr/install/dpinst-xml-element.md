@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # dpinst XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
 
 The **dpinst** XML element is the root XML element in a DPInst descriptor file that contains the child elements that customize driver installation.
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_TVAUDIO
 
 
-The KSCATEGORY_TVAUDIO [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a TV audio device.
+The KSCATEGORY_TVAUDIO [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for a TV audio device.
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Drivers for KS devices register instances of this KSCATEGORY_TVAUDIO to indicate
 
 For an example of how to register this functional category in an INF file, see the *Bdan.inf* INF file that is included with the software tuner sample in the *src/swtuner/algtuner* directory of the WDK.
 
-For information about video devices, see [Video Capture Devices](https://msdn.microsoft.com/library/windows/hardware/ff568699), [Filter Graph Examples](https://msdn.microsoft.com/library/windows/hardware/ff559605), and [Encoder Devices](https://msdn.microsoft.com/library/windows/hardware/ff559535).
+For information about video devices, see [Video Capture Devices](https://docs.microsoft.com/windows-hardware/drivers/stream/video-capture-devices), [Filter Graph Examples](https://docs.microsoft.com/windows-hardware/drivers/stream/filter-graph-examples), and [Encoder Devices](https://docs.microsoft.com/windows-hardware/drivers/stream/encoder-devices).
 
 Requirements
 ------------

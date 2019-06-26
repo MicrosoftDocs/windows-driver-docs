@@ -33,9 +33,9 @@ For more detailed information about power management, see [Power Management for 
 
 The power manager is considered a subcomponent of the I/O manager. For more information, see [Windows I/O Manager](windows-kernel-mode-i-o-manager.md).
 
-Routines that provide a direct interface to the power manager are usually prefixed with "**Po**"; for example, **PoSetPowerState**. For a list of power manager routines, see [Power Manager Routines](https://msdn.microsoft.com/library/windows/hardware/ff559835).
+Routines that provide a direct interface to the power manager are usually prefixed with "**Po**"; for example, **PoSetPowerState**. For a list of power manager routines, see [Power Manager Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
-The Windows Driver Frameworks (WDF) provides a set of libraries to make power management much easier. For more information about WDF, see [Kernel-Mode Driver Framework Overview](https://msdn.microsoft.com/library/windows/hardware/ff544296).
+The Windows Driver Frameworks (WDF) provides a set of libraries to make power management much easier. For more information about WDF, see [Kernel-Mode Driver Framework Overview](https://docs.microsoft.com/windows-hardware/drivers/wdf/what-s-new-for-wdf-drivers).
 
  
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 When the [bDXVA\_Func variable](bdxva-func-variable.md) is equal to 3, the operation specified is an alpha-blend combination. An alpha-blend combination takes the last loaded alpha-blend source information and combines it with a reference picture to create a blended picture for display.
 
-The alpha-blend combination buffer specified by the **dwTypeIndex** member of the [**DXVA\_BufferDescription**](https://msdn.microsoft.com/library/windows/hardware/ff563122) structure is used to generate a blended picture from a source picture and alpha-blending information. In the event that the source and destination pictures are not in 4:4:4 format, every second sample (for example, the first, third, fifth, and so on) of the graphic blending information in an AYUV alpha-blending surface or equivalent is applied to the (lower resolution) source chrominance information in the vertical or horizontal direction, as applicable, to produce the blended result.
+The alpha-blend combination buffer specified by the **dwTypeIndex** member of the [**DXVA\_BufferDescription**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_bufferdescription) structure is used to generate a blended picture from a source picture and alpha-blending information. In the event that the source and destination pictures are not in 4:4:4 format, every second sample (for example, the first, third, fifth, and so on) of the graphic blending information in an AYUV alpha-blending surface or equivalent is applied to the (lower resolution) source chrominance information in the vertical or horizontal direction, as applicable, to produce the blended result.
 
 The following structures are used to implement alpha-blend combination.
 
@@ -36,15 +36,15 @@ The following structures are used to implement alpha-blend combination.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563122" data-raw-source="[&lt;strong&gt;DXVA_BufferDescription&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563122)"><strong>DXVA_BufferDescription</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_bufferdescription" data-raw-source="[&lt;strong&gt;DXVA_BufferDescription&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_bufferdescription)"><strong>DXVA_BufferDescription</strong></a></p></td>
 <td align="left"><p>Specifies the alpha-blend combination buffer to be used. This buffer governs the generation of a blended picture from a source picture and alpha-blending information.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563120" data-raw-source="[&lt;strong&gt;DXVA_BlendCombination&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563120)"><strong>DXVA_BlendCombination</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_blendcombination" data-raw-source="[&lt;strong&gt;DXVA_BlendCombination&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_blendcombination)"><strong>DXVA_BlendCombination</strong></a></p></td>
 <td align="left"><p>Specifies how a blended picture is generated from an alpha-blend combination buffer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563126" data-raw-source="[&lt;strong&gt;DXVA_ConfigAlphaCombine&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563126)"><strong>DXVA_ConfigAlphaCombine</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configalphacombine" data-raw-source="[&lt;strong&gt;DXVA_ConfigAlphaCombine&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configalphacombine)"><strong>DXVA_ConfigAlphaCombine</strong></a></p></td>
 <td align="left"><p>Establishes the configuration for how alpha-blending combination operations are to be performed.</p></td>
 </tr>
 </tbody>

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_srb_change_power_state_ks"></span><span id="DDK_SRB_CHANGE_POWER_STATE_KS"></span>
 
 
-The class driver sends this request to signal to the minidriver that it should reset its power state. *pSrb*-&gt;**DeviceState** specifies the new power state. See [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702).
+The class driver sends this request to signal to the minidriver that it should reset its power state. *pSrb*-&gt;**DeviceState** specifies the new power state. See [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_request_block).
 
 ### <span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -38,7 +38,7 @@ Indicates that a hardware failure occurred and low power cannot be invoked.
 
 If the minidriver needs to save or restore device-specific data it should do so when processing an SRB\_CHANGE\_POWER\_STATE request.
 
-For more information about power states, see [Managing Power for Individual Devices](https://msdn.microsoft.com/library/windows/hardware/ff554397).
+For more information about power states, see [Managing Power for Individual Devices](https://docs.microsoft.com/windows-hardware/drivers/kernel/managing-power-for-individual-devices).
 
  
 

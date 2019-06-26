@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # ConvertDevModeToPrintTicket overview
 
 
-Unidrv and PScript5 print drivers create the Print Ticket by using the elements from the public and private parts of the [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure that the drivers support. The [**IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket**](https://msdn.microsoft.com/library/windows/hardware/ff553161) method is called for each print driver plug-in that was installed.
+Unidrv and PScript5 print drivers create the Print Ticket by using the elements from the public and private parts of the [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure that the drivers support. The [**IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff553161(v=vs.85)) method is called for each print driver plug-in that was installed.
 
 The following illustration shows the order of the calls to IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket when the driver call ConvertDevModeToPrintTicket.
 

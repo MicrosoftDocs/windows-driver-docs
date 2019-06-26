@@ -82,7 +82,7 @@ This section includes the following topics:
 ## Related topics
 
 
-[Mobile Broadband Reference](https://msdn.microsoft.com/library/windows/hardware/ff560545)
+[Mobile Broadband Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
 
  
 

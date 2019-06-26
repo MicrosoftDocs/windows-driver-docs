@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !usbkd.usbhcdlog
 
 
-The [**!usbkd.usbhcdlog**](https://msdn.microsoft.com/library/windows/hardware/dn367076) command displays a portion of the debug log for a USB host controller.
+The [**!usbkd.usbhcdlog**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-usbkd-usbhcdlog) command displays a portion of the debug log for a USB host controller.
 
 ```dbgcmd
 !usbkd.usbhcdlog DeviceExtension[, NumberOfEntries]

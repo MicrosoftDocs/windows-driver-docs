@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-To improve system performance, some NDIS functions (for example, the [*MiniportSendNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff559440) function) include a dispatch level flag that indicates the current IRQL. The proper use of the dispatch level flag can help to avoid unnecessary attempts to set the IRQL.
+To improve system performance, some NDIS functions (for example, the [*MiniportSendNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_send_net_buffer_lists) function) include a dispatch level flag that indicates the current IRQL. The proper use of the dispatch level flag can help to avoid unnecessary attempts to set the IRQL.
 
 There are other flags that control other attributes, but the names for the dispatch level flags are:
 

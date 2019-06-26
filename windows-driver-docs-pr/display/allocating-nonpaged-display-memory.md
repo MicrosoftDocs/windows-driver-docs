@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 **This topic applies only to Microsoft Windows XP and later.**
 
-A DirectX 9.0 version display driver can call the [**EngAllocMem**](https://msdn.microsoft.com/library/windows/hardware/ff564176) graphics device interface (GDI) function to not only allocate memory from the system's paged pool but also from nonpaged pool. To allocate nonpaged memory, the driver must specify the FL\_NONPAGED\_MEMORY flag in the *Flags* parameter of the **EngAllocMem** call. If this flag is not specified, the memory is allocated from the system's paged pool.
+A DirectX 9.0 version display driver can call the [**EngAllocMem**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocmem) graphics device interface (GDI) function to not only allocate memory from the system's paged pool but also from nonpaged pool. To allocate nonpaged memory, the driver must specify the FL\_NONPAGED\_MEMORY flag in the *Flags* parameter of the **EngAllocMem** call. If this flag is not specified, the memory is allocated from the system's paged pool.
 
 Windows 2000 and earlier only permitted allocations from the system's paged pool.
 

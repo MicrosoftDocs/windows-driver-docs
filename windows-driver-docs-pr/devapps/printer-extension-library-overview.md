@@ -56,9 +56,9 @@ In order to convert the C# interfaces, classes and methods to something supporte
 
 [Printer Extension Interfaces (v4 Print Driver)](https://go.microsoft.com/fwlink/p/?LinkID=299887)
 
-[Job Management (v4 Printer Driver)](https://msdn.microsoft.com/library/windows/hardware/dn265419)
+[Job Management (v4 Printer Driver)](https://docs.microsoft.com/windows-hardware/drivers/print/job-management)
 
-[Device Maintenance (v4 Printer Driver)](https://msdn.microsoft.com/library/windows/hardware/dn265274)
+[Device Maintenance (v4 Printer Driver)](https://docs.microsoft.com/windows-hardware/drivers/print/device-maintenance)
 
 [Bidirectional Communications](https://go.microsoft.com/fwlink/p/?LinkId=317192)
 
