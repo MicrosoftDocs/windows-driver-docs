@@ -97,7 +97,7 @@ DRIVER_DISPATCH</td>
 <tr class="even">
 <td align="left"><p>WORKER_THREAD_ROUTINE</p></td>
 <td align="left"><p><em>Routine</em></p>
-<p><em>Routine</em> is the callback routine that is specified in the second parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545327" data-raw-source="[&lt;strong&gt;ExInitializeWorkItem&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/kernel/mmcreatemdl)"><strong>ExInitializeWorkItem</strong></a> function.</p>
+<p><em>Routine</em> is the callback routine that is specified in the second parameter to the <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mmcreatemdl" data-raw-source="[&lt;strong&gt;ExInitializeWorkItem&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/kernel/mmcreatemdl)"><strong>ExInitializeWorkItem</strong></a> function.</p>
 <p>The <em>Routine</em> should only be declared this way if the driver calls <strong>ExQueueWorkItem</strong> to add the work item to a system queue.</p></td>
 </tr>
 </tbody>

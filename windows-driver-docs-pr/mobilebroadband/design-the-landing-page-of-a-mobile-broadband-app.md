@@ -94,7 +94,7 @@ You can customize your mobile broadband app to suit your individual branding sty
 ## <span id="res"></span><span id="RES"></span>Additional resources
 
 
--   [Index of UX guidelines for UWP apps](https://developer.microsoft.com/windows/design)
+-   [Index of UX guidelines for UWP apps](https://developer.microsoft.com/windows/apps/design)
 
 -   [Adding controls and content](https://docs.microsoft.com/previous-versions/windows/apps/hh465393(v=win.10))
 

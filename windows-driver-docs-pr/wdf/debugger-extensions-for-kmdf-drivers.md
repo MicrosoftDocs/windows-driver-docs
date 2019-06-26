@@ -165,7 +165,7 @@ The extension commands that the *Wdfkd.dll* extension library provides include:
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdflogsave" data-raw-source="[&lt;strong&gt;!wdfkd.wdflogsave&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdflogsave)"><strong>!wdfkd.wdflogsave</strong></a></p></td>
-<td align="left"><p>Saves the framework's event log records in an event trace log (.<em>etl</em>) file that you can view by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff553872" data-raw-source="[TraceView](https://docs.microsoft.com/windows-hardware/drivers/devtest/traceview)">TraceView</a>.</p></td>
+<td align="left"><p>Saves the framework's event log records in an event trace log (.<em>etl</em>) file that you can view by using <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/traceview" data-raw-source="[TraceView](https://docs.microsoft.com/windows-hardware/drivers/devtest/traceview)">TraceView</a>.</p></td>
 <td align="left"><p>KMDF</p>
 <p>UMDF 2</p></td>
 </tr>

@@ -39,7 +39,7 @@ ms.localizationpriority: medium
 <a href="usb-emulated-device--ude--architecture.md" data-raw-source="[Architecture: USB Device Emulation (UDE)](usb-emulated-device--ude--architecture.md)">Architecture: USB Device Emulation (UDE)</a>
 <a href="usb-3-0-driver-stack-architecture.md" data-raw-source="[USB host-side drivers](usb-3-0-driver-stack-architecture.md)">USB host-side drivers</a> in Windows
 <p><strong>Writing drivers for emulated host controller and devices</strong></p>
-<p>Familiarize yourself with UDE objects and handles. For details on WDF objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544249" data-raw-source="[Introduction to Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects)">Introduction to Framework Objects</a>.</p>
+<p>Familiarize yourself with UDE objects and handles. For details on WDF objects, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects" data-raw-source="[Introduction to Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects)">Introduction to Framework Objects</a>.</p>
 <p>Understand the behavior of UDE, how it interacts with the client driver, and the features that the client driver is expected to implement.</p>
 <p><a href="writing-a-ude-client-driver.md" data-raw-source="[Write a UDE client driver](writing-a-ude-client-driver.md)">Write a UDE client driver</a></p>
 <p><strong>Programming reference sections</strong></p>

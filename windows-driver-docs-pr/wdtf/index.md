@@ -38,7 +38,7 @@ The Microsoft Windows Device Testing Framework (WDTF) enables you to create, man
 </tr>
 <tr class="odd">
 <td><p><a href="triaging-wdtf-based-tests.md" data-raw-source="[Triaging WDTF-based tests](triaging-wdtf-based-tests.md)">Triaging WDTF-based tests</a></p></td>
-<td><p>To help you better understand what is going on in your WDTF-based tests, you can use the built-in support for <a href="logging-and-tracing.md" data-raw-source="[WDTF Object Logging](logging-and-tracing.md)">WDTF Object Logging</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556204" data-raw-source="[WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing)">WPP Software Tracing</a>.</p></td>
+<td><p>To help you better understand what is going on in your WDTF-based tests, you can use the built-in support for <a href="logging-and-tracing.md" data-raw-source="[WDTF Object Logging](logging-and-tracing.md)">WDTF Object Logging</a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing" data-raw-source="[WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing)">WPP Software Tracing</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="wdtf-overview.md" data-raw-source="[WDTF Architecture and Overview](wdtf-overview.md)">WDTF Architecture and Overview</a></p></td>

@@ -104,11 +104,11 @@ The following table shows the values that file system minifilter drivers should 
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>DriverVer</strong></p></td>
-<td align="left"><p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff547394" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive)"><strong>INF DriverVer directive</strong></a>.</p></td>
+<td align="left"><p>See <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive)"><strong>INF DriverVer directive</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CatalogFile</strong></p></td>
-<td align="left"><p>For antivirus minifilter drivers that are signed, this entry contains the name of a WHQL-supplied catalog file. All other minifilter drivers should leave this entry blank. For more information, see the description of the <strong>CatalogFile</strong> entry in <a href="https://msdn.microsoft.com/library/windows/hardware/ff547502" data-raw-source="[&lt;strong&gt;INF Version Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section)"><strong>INF Version Section</strong></a>.</p></td>
+<td align="left"><p>For antivirus minifilter drivers that are signed, this entry contains the name of a WHQL-supplied catalog file. All other minifilter drivers should leave this entry blank. For more information, see the description of the <strong>CatalogFile</strong> entry in <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section" data-raw-source="[&lt;strong&gt;INF Version Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section)"><strong>INF Version Section</strong></a>.</p></td>
 </tr>
 </tbody>
 </table>

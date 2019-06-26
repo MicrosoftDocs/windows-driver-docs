@@ -89,7 +89,7 @@ The following table shows the callback function role types and the NDIS callback
 <td align="left"><p>MINIPORT_ENABLE_MESSAGE_INTERRUPT</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559384" data-raw-source="[&lt;em&gt;MiniportFilterResourceRequirements&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_pnp_irp)"><em>MiniportFilterResourceRequirements</em></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_pnp_irp" data-raw-source="[&lt;em&gt;MiniportFilterResourceRequirements&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_pnp_irp)"><em>MiniportFilterResourceRequirements</em></a></p></td>
 <td align="left"><p>MINIPORT_FILTER_RESOURCE_REQUIREMENTS</p></td>
 </tr>
 <tr class="even">
@@ -149,7 +149,7 @@ The following table shows the callback function role types and the NDIS callback
 <td align="left"><p>MINIPORT_SEND_NET_BUFFER_LISTS</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559443" data-raw-source="[&lt;em&gt;MiniportSetOptions&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-set_options)"><em>MiniportSetOptions</em></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-set_options" data-raw-source="[&lt;em&gt;MiniportSetOptions&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-set_options)"><em>MiniportSetOptions</em></a></p></td>
 <td align="left"><p>MINIPORT_SET_OPTIONS</p></td>
 </tr>
 <tr class="odd">
@@ -169,7 +169,7 @@ The following table shows the callback function role types and the NDIS callback
 <td align="left"><p>MINIPORT_SYNCHRONIZE_INTERRUPT</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559455" data-raw-source="[&lt;em&gt;MiniportSynchronizeMessageInterrupt&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_synchronize_interrupt)"><em>MiniportSynchronizeMessageInterrupt</em></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_synchronize_interrupt" data-raw-source="[&lt;em&gt;MiniportSynchronizeMessageInterrupt&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_synchronize_interrupt)"><em>MiniportSynchronizeMessageInterrupt</em></a></p></td>
 <td align="left"><p>MINIPORT_SYNCHRONIZE_MESSAGE_INTERRUPT</p></td>
 </tr>
 </tbody>
@@ -297,7 +297,7 @@ The following function role types are not currently used in SDV rules for NDIS d
 <td align="left"><p>FILTER_SET_MODULE_OPTIONS</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549972" data-raw-source="[&lt;em&gt;FilterSetOptions&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-set_options)"><em>FilterSetOptions</em></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-set_options" data-raw-source="[&lt;em&gt;FilterSetOptions&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-set_options)"><em>FilterSetOptions</em></a></p></td>
 <td align="left"><p>FILTER_SET_OPTIONS</p></td>
 </tr>
 <tr class="odd">

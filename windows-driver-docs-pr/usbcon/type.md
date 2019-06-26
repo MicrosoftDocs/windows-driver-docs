@@ -170,7 +170,7 @@ Applies to: Dock, device
 Additional information of selective suspend can be found from the following sources:
 
 -   [Enabling selective suspend for HID](https://go.microsoft.com/fwlink/p/?LinkId=623307)
--   [Selective suspend for HID over USB devices](https://msdn.microsoft.com/windows/hardware/drivers/hid/selective-suspend-for-hid-over-usb-devices)
+-   [Selective suspend for HID over USB devices](https://docs.microsoft.com/windows-hardware/drivers/hid/selective-suspend-for-hid-over-usb-devices)
 -   [Demystifying selective suspend]( https://go.microsoft.com/fwlink/p/?LinkId=623308)
 
 ## <a href="" id="ft5"></a>FT Case 5: Dock Identification
