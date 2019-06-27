@@ -60,7 +60,7 @@ Before the operating system calls a <i>KbCallbackAddPages</i> routine, it fills 
 
 A <i>KbCallbackAddPages</i> routine is very restricted in the actions it can take. For more information, see "Bug Check Callback Routine Restrictions" in this topic.
 
-## Implementing a KbCallbackDumpIo callback routine
+## Implementing a KbCallbackDumpIo Callback Routine
 
 A kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type <i>KbCallbackDumpIo</i> to perform work each time data is written to the crash dump file. The system passes, in the <i>ReasonSpecificData</i> parameter, a description of the data being written. The <b>Buffer</b> member points to the current data, and the <b>BufferLength</b> member specifies its length. The <b>Type</b> member indicates the type of data currently being written, such as dump file header information, memory state, or data provided by a driver. For a description of the possible types of information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_kbugcheck_dump_io_type">KBUGCHECK_DUMP_IO_TYPE</a>.
 
@@ -74,7 +74,7 @@ Use <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm
 
 A <i>KbCallbackDumpIo</i> routine is strongly restricted in the actions it can take. For more information, see "Bug Check Callback Routine Restrictions" in this topic.
 
-## Implementing a KbCallbackSecondaryDumpData routine
+## Implementing a KbCallbackSecondaryDumpData Callback Routine
 
 A kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type <i>KbCallbackSecondaryDumpData</i> to provide data to append to the crash dump file.
 
@@ -97,7 +97,7 @@ Use <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm
 
 A <i>KbCallbackSecondaryDumpData</i> routine is very restricted in the actions it can take. For more information, see "Bug Check Callback Routine Restrictions" in this topic.
 
-## Implementing a KbCallbackTriageDumpData routine
+## Implementing a KbCallbackTriageDumpData Callback Routine
 
 Starting in Windows 10, version 1809 and Windows Server 2019, a kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type *KbCallbackTriageDumpData* to add virtual memory ranges to a carved minidump file.  The dump data is described in a [**KBUGCHECK_TRIAGE_DUMP_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_kbugcheck_triage_dump_data) structure.
 
