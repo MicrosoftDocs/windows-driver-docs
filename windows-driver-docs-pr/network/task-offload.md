@@ -64,6 +64,10 @@ Receive segment coalescing (RSC) enables network card miniport drivers to coales
 -   Receive Side Scaling (RSS)
 -   Virtual Machine Queue (VMQ)
 
+### UDP Segmentation Offload (USO)
+
+Beginning with Windows 10, version 1912, Windows supports [UDP Segmentation Offload (USO)](udp-segmentation-offload-uso-.md). USO enables network cards to offload the segmentation of UDP datagrams that are larger than the maximum transmission unit (MTU) size of the network medium.
+
 This section includes:
 
 -   [Determining Task Offload Capabilities](determining-task-offload-capabilities.md)
@@ -75,6 +79,7 @@ This section includes:
 -   [Offloading IPsec Tasks](offloading-ipsec-tasks.md)
     - \[The IPsec Task Offload feature is deprecated and should not be used.\]
 -   [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md)
+-   [UDP Segmentation Offload (USO)](udp-segmentation-offload-uso-.md)
 
  
 
