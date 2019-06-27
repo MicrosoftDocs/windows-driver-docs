@@ -1356,7 +1356,7 @@
     href: defining-custom-error-types.md
   - name: "Registering as a Source of Error Messages"
     href: registering-as-a-source-of-error-messages.md
-  - name: "Writing a Bug Check Callback Routine"
+  - name: "Writing a Bug Check Reason Callback Routine"
     href: writing-a-bug-check-callback-routine.md
   - name: "Using Safe String Functions"
     href: using-safe-string-functions.md
