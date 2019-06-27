@@ -140,7 +140,7 @@ If an app does not call EnableEvents within 5 seconds, Windows will timeout and 
 
 - Use ngen to generate a native image during installation. For more information, see [Native Image Generator](https://docs.microsoft.com/dotnet/framework/tools/ngen-exe-native-image-generator).
 
-- Use performance measurement tools to find performance issues on loading. For more information, see [Windows Performance Analysis Tools](https://msdn.microsoft.com/).
+- Use performance measurement tools to find performance issues on loading. For more information, see [Windows Performance Analysis Tools](https://docs.microsoft.com/windows-hardware/test/wpt/).
 
 ### DriverEvent handler
 
@@ -333,4 +333,4 @@ The Printer Extension Sample demonstrates how to create a UI that is generally l
 
 [Printer Extension Sample](https://go.microsoft.com/fwlink/p/?LinkId=617945)
 
-[Windows Performance Analysis Tools](https://msdn.microsoft.com/)
+[Windows Performance Analysis Tools](https://docs.microsoft.com/windows-hardware/test/wpt/)
