@@ -43,7 +43,7 @@ Bug check callback routines are guaranteed to run without interruption, so no sy
 
 A driver's bug check callback routine can safely use the **READ\_PORT\_<em>XXX</em>**, **READ\_REGISTER\_<em>XXX</em>**, **WRITE\_PORT\_<em>XXX</em>**, and **WRITE\_REGISTER\_<em>XXX</em>** routines to communicate with the driver's device. (For information about these routines, see [Hardware Abstraction Layer Routines](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)).)
 
-## Implementing KbCallbackAddPages Callback Routine
+## Implementing a KbCallbackAddPages Callback Routine
 
 A kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type 
 <i>KbCallbackAddPages</i> to add one or more pages of data to a crash dump file when a bug check occurs. To register this routine with the operating system, the driver calls the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keregisterbugcheckreasoncallback">KeRegisterBugCheckReasonCallback</a> routine. Before the driver unloads, it must call the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kederegisterbugcheckreasoncallback">KeDeregisterBugCheckReasonCallback</a> routine to remove the registration.
@@ -74,7 +74,7 @@ Use <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm
 
 A <i>KbCallbackDumpIo</i> routine is strongly restricted in the actions it can take. For more information, see "Bug Check Callback Routine Restrictions" in this topic.
 
-## Implementing KbCallbackSecondaryDumpData
+## Implementing a KbCallbackSecondaryDumpData routine
 
 A kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type <i>KbCallbackSecondaryDumpData</i> to provide data to append to the crash dump file.
 
@@ -97,7 +97,71 @@ Use <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm
 
 A <i>KbCallbackSecondaryDumpData</i> routine is very restricted in the actions it can take. For more information, see "Bug Check Callback Routine Restrictions" in this topic.
 
+## Implementing a KbCallbackTriageDumpData routine
 
+Starting in Windows 10, version 1809 and Windows Server 2019, a kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type *KbCallbackTriageDumpData* callback routine to add virtual memory ranges to a carved minidump file.  The dump data is described in a [**KBUGCHECK_TRIAGE_DUMP_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_kbugcheck_triage_dump_data) structure.
 
+In the following example, the driver configures a triage dump array and then registers a minimal implementation of the callback:
+
+```cpp
+// Globals 
+ 
+KBUGCHECK_REASON_CALLBACK_RECORD ExampleBugcheckCallbackRecord; 
+PKTRIAGE_DUMP_DATA_ARRAY gTriageDumpDataArray; 
+ 
+//  call this register function from DriverInit, etc.
+ 
+VOID ExampleRegisterTriageDataCallbacks() 
+{ 
+ 
+    // 
+    // Allocate a triage dump array in the non-paged pool. 
+    // 
+ 
+gTriageDumpDataArray = 
+    (PKTRIAGE_DUMP_DATA_ARRAY)ExAllocatePoolWithTag(NonPagedPoolNx, 2*PAGE_SIZE, "Xmpl"); 
+ 
+    // 
+    // Initialize the dump data block array. 
+    // 
+ 
+    KeInitializeTriageDumpDataArray( gTriageDumpDataArray, 2*PAGE_SIZE, "Example"); 
+ 
+    KeInitializeCallbackRecord( &ExampleBugcheckCallbackRecord ); 
+ 
+    KeRegisterBugCheckReasonCallback( 
+        &ExampleBugCheckCallbackRecord, 
+        ExampleBugCheckCallbackRoutine, 
+        KbCallbackTriageDumpData, 
+        "Example" 
+        ); 
+} 
+ 
+// Callback function 
+ 
+VOID 
+ExampleBugCheckCallbackRoutine( 
+    KBUGCHECK_CALLBACK_REASON Reason, 
+    PKBUGCHECK_REASON_CALLBACK_RECORD Record, 
+    PVOID Data, 
+    ULONG Length 
+    ) 
+{ 
+    PKBUGCHECK_TRIAGE_DUMP_DATA DumpData; 
+    NTSTATUS Status; 
+ 
+    DumpData = (PKBUGCHECK_TRIAGE_DUMP_DATA) Data; 
+ 
+    Status = KeAddTriageDumpDataBlock(gTriageDumpDataArray, gImportant, SizeofGImportant); 
+ 
+    // Pass our arrays back 
+ 
+    if (NT_SUCCESS(Status)) { 
+        DumpData->RequiredDataArray = gTriageDumpDataArray; 
+    } 
+ 
+    return; 
+}
+```
 
 
