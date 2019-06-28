@@ -28,7 +28,7 @@
   href: devapps/index.md
 - name: "Driver Technologies"
   items: 
-  - name: "Device and Driver Technologies"
+  - name: "Overview of Driver Technologies"
     href: device-and-driver-technologies.md
   - name: "3D print devices"
     href: 3dprint/index.md
