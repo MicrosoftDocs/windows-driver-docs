@@ -54,11 +54,11 @@ The miniport driver obtains the total length of the large packet from the length
 
 The miniport driver affixes MAC, IP, and UDP headers to each segment that is derived from the large packet. The miniport driver must calculate the IP and UDP checksums for these derived packets. To calculate the UDP checksum for each packet that was derived from the large UDP packet, the NIC calculates the variable part of the UDP checksum (for the UDP header and UDP payload), adds this checksum to the one's complement sum for the pseudoheader that was calculated by the TCP/IP transport, then calculates the 16-bit one's complement for the checksum. For more information about calculating such checksums, see [RFC 768](https://tools.ietf.org/html/rfc768) and [RFC 2460](https://tools.ietf.org/html/rfc2460). 
 
-The length of the UDP user data in the large UDP packet must be less than or equal to the value that the miniport driver assigns to the **MaxOffloadSize** value.
+The length of the UDP user data in the large UDP packet must be less than or equal to the value that the miniport driver assigns to the **MaxOffLoadSize** value.
 
-After a driver issues a status indication to indicate a change to the **MaxOffloadSize** value, the driver must not cause a bug check if it receives an LSO send request that uses the previous **MaxOffloadSize** value. Instead, the driver must fail the send request. Drivers **must** fail any send request they can't perform, for any reason (including size, minimum segment count, IP options, etc.). Drivers must send a status indication as soon as possible if their capabilities change.
+After a driver issues a status indication to indicate a change to the **MaxOffLoadSize** value, the driver must not cause a bug check if it receives an LSO send request that uses the previous **MaxOffLoadSize** value. Instead, the driver must fail the send request. Drivers **must** fail any send request they can't perform, for any reason (including size, minimum segment count, IP options, etc.). Drivers must send a status indication as soon as possible if their capabilities change.
 
-An intermediate driver that independently issues status indications that report a change in the **MaxOffloadSize** value must ensure that the underlying miniport adapter that has not issued a status indication does not get any packets that are larger than the **MaxOffloadSize** value that the miniport adapter reported.
+An intermediate driver that independently issues status indications that report a change in the **MaxOffLoadSize** value must ensure that the underlying miniport adapter that has not issued a status indication does not get any packets that are larger than the **MaxOffLoadSize** value that the miniport adapter reported.
 
 A miniport-intermediate driver that responds to [OID_TCP_OFFLOAD_PARAMETERS](oid-tcp-offload-parameters.md) to turn off USO services must be prepared for a small window of time where USO requests could still reach the miniport driver.
 
@@ -75,3 +75,41 @@ USO-capable miniport drivers must also do the following:
 - If the large UDP packet contains IP options, the miniport driver copies these options, unaltered, to each packet that is derived from the large UDP packet.
 - Use the byte offset in the **UdpHeaderOffset** member of **NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO** to determine the location of the UDP header, starting from the first byte of the packet.
 - Increment transmit statistics based on the segmented packets. For example, include the count of Ethernet, IP, and UDP header bytes for each packet segment, and the packet count is the number of **MSS**-sized segments, not **1**.
+
+## NDIS interface changes
+
+This section describes the changes in NDIS 6.83 that enable the host TCP/IP driver stack to harness the USO capabilities exposed by miniport drivers.
+
+NDIS and the miniport driver perform the following:
+
+- Advertise that the NIC supports USO capability
+- Enable or disable USO
+- Get the current USO functionality state
+
+### Advertising USO capability
+
+Miniport drivers advertise USO capability by filling in the **UdpSegmentation** field of the [**NDIS_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_offload) structure, which is passed in the parameters of [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsetminiportattributes). The **Header.Revision** field in the **NDIS_OFFLOAD** structure must be set to **NDIS_OFFLOAD_REVISION_6** and the **Header.Size** field must be set to **NDIS_SIZEOF_NDIS_OFFLOAD_REVISION_6**.
+
+### Querying USO state
+
+The current USO state can be queried with [OID_TCP_OFFLOAD_CURRENT_CONFIG](oid-tcp-offload-current-config.md). NDIS handles this OID and does not pass it down to the miniport driver.
+
+### Changing USO state
+
+USO can be enabled or disabled using [OID_TCP_OFFLOAD_PARAMETERS](oid-tcp-offload-parameters.md). After the miniport driver processes the OID, it must send an [NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG](ndis-status-task-offload-current-config.md) status indication with the updated offload state.
+
+## USO keywords
+
+The USO enumeration keywords are as follows:
+
+- **\*UsoIPv4**
+- **\*UsoIPv6**
+
+These values describe whether USO is enabled or disabled for that particular IP protocol. The USO settings are not dependent on the [**NDIS_TCP_IP_CHECKSUM_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload) configuration. For example, disabling **\*UDPChecksumOffloadIPv4** does not implicitly disable **\*USOIPv4**.
+
+| Subkey name | Parameter description | Value | Enum description |
+| --- | --- | --- | --- |
+| **\*UsoIPv4** | UDP Segmentation Offload (IPv4) | 0 | Disabled |
+|   |   | 1 | Enabled |
+| **\*UsoIPv6** | UDP Segmentation Offload (IPV6) | 0 | Disabled |
+|   |   | 1 | Enabled |
