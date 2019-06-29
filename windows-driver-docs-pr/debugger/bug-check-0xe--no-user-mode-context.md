@@ -20,4 +20,4 @@ The NO\_USER\_MODE\_CONTEXT bug check has a value of 0x0000000E.
 In the process of starting a system thread, if control returns from the initial thread procedure, a bug check will occur.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
