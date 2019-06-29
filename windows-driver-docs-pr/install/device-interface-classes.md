@@ -24,7 +24,7 @@ This section contains the following topics:
 
 [Using a Device Interface](using-a-device-interface.md)
 
-For information about the system-defined device interface classes, see [System-Defined Device Interface Classes](https://msdn.microsoft.com/library/windows/hardware/ff553412).
+For information about the system-defined device interface classes, see [System-Defined Device Interface Classes](https://docs.microsoft.com/previous-versions/ff553412(v=vs.85)).
 
  
 

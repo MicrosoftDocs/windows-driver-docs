@@ -22,7 +22,7 @@ Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers must
 
 Especially in mobile scenarios, graphics-intensive apps that need hardware acceleration can make heavy use of GPU resources. Also, in many mobile devices the GPU is integrated into the CPU chipset and the GPU uses portions of system memory as video memory. To ensure reasonable system performance when multiple apps make heavy use of a GPU that in turn makes heavy demand on system memory, the memory footprint of display drivers should be minimized. The offer/reclaim device driver interfaces (DDIs) provide a mechanism to do this.
 
-An API is available for apps to offer unneeded memory that the system can later reclaim for other uses, as well as to reclaim memory that was recently discarded. See the Microsoft DirectX Graphics Infrastructure (DXGI) app programming topic, [DXGI 1.2 Improvements](https://msdn.microsoft.com/library/windows/desktop/hh404490).
+An API is available for apps to offer unneeded memory that the system can later reclaim for other uses, as well as to reclaim memory that was recently discarded. See the Microsoft DirectX Graphics Infrastructure (DXGI) app programming topic, [DXGI 1.2 Improvements](https://docs.microsoft.com/windows/desktop/direct3ddxgi/dxgi-1-2-improvements).
 
 ## <span id="Offer_and_reclaim_DDI"></span><span id="offer_and_reclaim_ddi"></span><span id="OFFER_AND_RECLAIM_DDI"></span>Offer and reclaim DDI
 
@@ -31,33 +31,33 @@ New functions are available starting with Windows 8 for the user-mode driver to
 
 The driver calls these system-provided functions to offer or reclaim memory allocations:
 
--   [**pfnOfferAllocationsCb**](https://msdn.microsoft.com/library/windows/hardware/hh451693)
--   [**pfnReclaimAllocationsCb**](https://msdn.microsoft.com/library/windows/hardware/hh451695)
+-   [**pfnOfferAllocationsCb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_offerallocationscb)
+-   [**pfnReclaimAllocationsCb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_reclaimallocationscb)
 
 The driver implements these functions if it supports Microsoft Direct3D 10 hardware:
 
--   [*pfnOfferResources*](https://msdn.microsoft.com/library/windows/hardware/jj128409)
--   [*pfnReclaimResources*](https://msdn.microsoft.com/library/windows/hardware/hh439828)
+-   [*pfnOfferResources*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_offerresources)
+-   [*pfnReclaimResources*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxgiddi/ns-dxgiddi-dxgi1_2_ddi_base_functions)
 
 The driver implements the following functions if it supports Microsoft Direct3D 9 hardware. Also, if apps offer or reclaim their allocations while using the Direct3D 11 API running on Direct3D 9 hardware, the Direct3D runtime calls these functions:
 
--   [*OfferResources*](https://msdn.microsoft.com/library/windows/hardware/hh451576)
--   [*ReclaimResources*](https://msdn.microsoft.com/library/windows/hardware/hh439826)
+-   [*OfferResources*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_offerresources)
+-   [*ReclaimResources*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_reclaimresources)
 
 Use these associated structures and enumerations:
 
--   [**D3DDDI\_OFFER\_PRIORITY**](https://msdn.microsoft.com/library/windows/hardware/hh439275)
--   [**D3DDDIARG\_OFFERRESOURCES**](https://msdn.microsoft.com/library/windows/hardware/hh451078)
--   [**D3DDDIARG\_RECLAIMRESOURCES**](https://msdn.microsoft.com/library/windows/hardware/hh451080)
--   [**D3DDDICB\_OFFERALLOCATIONS**](https://msdn.microsoft.com/library/windows/hardware/hh451158)
--   [**D3DDDICB\_RECLAIMALLOCATIONS**](https://msdn.microsoft.com/library/windows/hardware/hh451159)
--   [**DXGI\_DDI\_ARG\_OFFERRESOURCES**](https://msdn.microsoft.com/library/windows/hardware/hh451228)
--   [**DXGI\_DDI\_ARG\_RECLAIMRESOURCES**](https://msdn.microsoft.com/library/windows/hardware/hh451235)
--   [**DXGI1\_2\_DDI\_BASE\_FUNCTIONS**](https://msdn.microsoft.com/library/windows/hardware/hh451215)
+-   [**D3DDDI\_OFFER\_PRIORITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ne-d3dukmdt-_d3dddi_offer_priority)
+-   [**D3DDDIARG\_OFFERRESOURCES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_offerresources)
+-   [**D3DDDIARG\_RECLAIMRESOURCES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_reclaimresources)
+-   [**D3DDDICB\_OFFERALLOCATIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddicb_offerallocations)
+-   [**D3DDDICB\_RECLAIMALLOCATIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddicb_reclaimallocations)
+-   [**DXGI\_DDI\_ARG\_OFFERRESOURCES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxgiddi/ns-dxgiddi-_dxgi_ddi_arg_offerresources)
+-   [**DXGI\_DDI\_ARG\_RECLAIMRESOURCES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxgiddi/ns-dxgiddi-_dxgi_ddi_arg_reclaimresources)
+-   [**DXGI1\_2\_DDI\_BASE\_FUNCTIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxgiddi/ns-dxgiddi-dxgi1_2_ddi_base_functions)
 
 To support the offer/reclaim feature, starting with Windows 8 this structure has two new members:
 
--   [**D3DDDI\_ALLOCATIONLIST**](https://msdn.microsoft.com/library/windows/hardware/ff544375)
+-   [**D3DDDI\_ALLOCATIONLIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ns-d3dukmdt-_d3dddi_allocationlist)
 
 You should carefully test that your driver handles this feature correctly because after an allocation is discarded, all data in it is lost.
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Starting with Windows 8, a standardized solution has been added to allow keyboards (external or embedded on laptops), to control a laptop’s or tablet’s screen brightness through HID.
 
-This solution is described in the HID committee's recently approved [HID Review Request 41](http://www.usb.org/developers/hidpage#approved-usage-table-review-requests).
+This solution is described in the HID committee's recently approved [HID Review Request 41](https://www.usb.org/developers/hidpage#approved-usage-table-review-requests).
 
 ## Architecture and overview
 

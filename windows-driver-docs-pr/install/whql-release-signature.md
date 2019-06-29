@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # WHQL Release Signature
 
 
-[Driver packages](driver-packages.md) that pass [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893) testing can be digitally-signed by WHQL. If your driver package is digitally-signed by WHQL, it can be distributed through the [Windows Update](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8) program or other Microsoft-supported distribution mechanisms.
+[Driver packages](driver-packages.md) that pass [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893) testing can be digitally-signed by WHQL. If your driver package is digitally-signed by WHQL, it can be distributed through the [Windows Update](https://docs.microsoft.com/windows-hardware/drivers) program or other Microsoft-supported distribution mechanisms.
 
 Obtaining a WHQL release signature is part of the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893). A WHQL release signature consists of a digitally-signed [catalog file](catalog-files.md). The digital signature does not change the driver binary files or the INF file that you submit for testing.
 

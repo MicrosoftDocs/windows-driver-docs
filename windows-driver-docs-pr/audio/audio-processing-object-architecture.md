@@ -35,7 +35,7 @@ Software based effects are inserted in the software device pipe on stream initia
 Any effects applied in hardware DSP need to be advertised via a proxy APO. Microsoft provides a default proxy APO (MsApoFxProxy.dll). To use the Microsoft provided APO, this property set and property must be supported.
 
 -   [KSPROPSETID\_AudioEffectsDiscovery](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audioeffectsdiscovery)
--   [KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST](https://msdn.microsoft.com/library/windows/hardware/dn457706)
+-   [KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/dn457706(v=vs.85))
 
 Optionally, you can implement your own proxy APO.
 
@@ -67,15 +67,15 @@ For more information on adding APO dialog panels see, [Implementing a UI for Con
 
 **Custom APO Tests and Requirements**
 
-The Microsoft HLK provides tests that can be used with APOs. For more information about audio tests see, [Device.Audio Testing](https://msdn.microsoft.com/library/windows/hardware/jj123955.aspx) and [Device.Audio Tests](https://msdn.microsoft.com/library/windows/hardware/jj124726.aspx).
+The Microsoft HLK provides tests that can be used with APOs. For more information about audio tests see, [Device.Audio Testing](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj123955(v=vs.85)) and [Device.Audio Tests](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124726(v=vs.85)).
 
 These two tests can be particularly useful when working with APOs.
 
-[Verify Audio EffectsDiscovery (Manual) - Certification](https://msdn.microsoft.com/library/windows/hardware/dn456312.aspx)
+[Verify Audio EffectsDiscovery (Manual) - Certification](https://docs.microsoft.com/previous-versions/windows/hardware/hck/dn456312(v=vs.85))
 
-[SysFX Test](https://msdn.microsoft.com/library/windows/hardware/jj124017.aspx)
+[SysFX Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124017(v=vs.85))
 
-For information on audio requirements to support APOs, see [Device.Audio Requirements](https://msdn.microsoft.com/library/windows/hardware/jj134354.aspx).
+For information on audio requirements to support APOs, see [Device.Audio Requirements](https://docs.microsoft.com/previous-versions/windows/hardware/cert-program/deviceaudio-requirements).
 
 **Custom APO Tools and Utilities**
 
@@ -85,7 +85,7 @@ You can use the "Audio Effects Discovery Sample" to explore the available audio 
 
 **Application Audio Effect Awareness**
 
-Applications have the ability to call APIs to determine which audio effects are currently active on the system. For more information on the audio effects awareness APIs, see [AudioRenderEffectsManager class](https://msdn.microsoft.com/library/windows/apps/windows.media.effects.audiorendereffectsmanager.aspx).
+Applications have the ability to call APIs to determine which audio effects are currently active on the system. For more information on the audio effects awareness APIs, see [AudioRenderEffectsManager class](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.AudioRenderEffectsManager).
 
 ## <span id="Audio_Processing_Objects_Architecture"></span><span id="audio_processing_objects_architecture"></span><span id="AUDIO_PROCESSING_OBJECTS_ARCHITECTURE"></span>Audio Processing Objects Architecture
 

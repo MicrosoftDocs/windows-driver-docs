@@ -24,7 +24,7 @@ The **WlanTimedScan** rule verifies that a WLAN scan operation is completed with
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://msdn.microsoft.com/library/windows/hardware/ff560187) (0x0009400C) |
+| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x0009400C) |
 
 How to test
 -----------
@@ -40,7 +40,7 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)">Driver Verifier</a> and select the <a href="https://msdn.microsoft.com/library/windows/hardware/dn312128" data-raw-source="[NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/dn312128)">NDIS/WIFI verification</a> option.</p></td>
+<td align="left"><p>Run <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier)">Driver Verifier</a> and select the <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wifi-verification" data-raw-source="[NDIS/WIFI verification](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-wifi-verification)">NDIS/WIFI verification</a> option.</p></td>
 </tr>
 </tbody>
 </table>
@@ -50,16 +50,16 @@ How to test
 Applies to
 ----------
 
-[**MiniportHaltEx**](https://msdn.microsoft.com/library/windows/hardware/ff559388)
-[**MiniportOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559416)
-[**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600)
-[**NdisMOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563622)
+[**MiniportHaltEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_halt)
+[**MiniportOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request)
+[**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex)
+[**NdisMOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismoidrequestcomplete)
 See also
 --------
 
-[General Connection Operation Guidelines](https://msdn.microsoft.com/library/windows/hardware/ff552458)
-[OID\_DOT11\_CONNECT\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff569122)
-[NDIS\_STATUS\_DOT11\_CONNECTION\_START](https://msdn.microsoft.com/library/windows/hardware/ff567328)
+[General Connection Operation Guidelines](https://docs.microsoft.com/windows-hardware/drivers/network/general-connection-operation-guidelines)
+[OID\_DOT11\_CONNECT\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-dot11-connect-request)
+[NDIS\_STATUS\_DOT11\_CONNECTION\_START](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-dot11-connection-start)
  
 
  

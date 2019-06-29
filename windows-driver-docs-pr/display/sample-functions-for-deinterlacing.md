@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_sample_functions_for_deinterlacing_gg"></span><span id="DDK_SAMPLE_FUNCTIONS_FOR_DEINTERLACING_GG"></span>
 
 
-The sample deinterlacing functions in this section show how to implement deinterlacing and frame-rate conversion functionality. The sample functions map to the [motion compensation callback functions](motion-compensation-callbacks.md) defined in the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure. You can implement each sample function and then use the motion-compensation code template to complete the implementation. For more information, see [Example Code for DirectX VA Devices](example-code-for-directx-va-devices.md).
+The sample deinterlacing functions in this section show how to implement deinterlacing and frame-rate conversion functionality. The sample functions map to the [motion compensation callback functions](motion-compensation-callbacks.md) defined in the [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. You can implement each sample function and then use the motion-compensation code template to complete the implementation. For more information, see [Example Code for DirectX VA Devices](example-code-for-directx-va-devices.md).
 
 ### <span id="Deinterlace_Container_Device_Class_Sample_Functions"></span><span id="deinterlace_container_device_class_sample_functions"></span><span id="DEINTERLACE_CONTAINER_DEVICE_CLASS_SAMPLE_FUNCTIONS"></span>Deinterlace Container Device Class Sample Functions
 
@@ -33,11 +33,11 @@ The sample deinterlacing functions in the following table are member functions o
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563943" data-raw-source="[&lt;strong&gt;DeinterlaceQueryAvailableModes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563943)"><strong>DeinterlaceQueryAvailableModes</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequeryavailablemodes" data-raw-source="[&lt;strong&gt;DeinterlaceQueryAvailableModes&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequeryavailablemodes)"><strong>DeinterlaceQueryAvailableModes</strong></a></p></td>
 <td align="left"><p>Queries for available deinterlacing and frame-rate conversion modes.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563946" data-raw-source="[&lt;strong&gt;DeinterlaceQueryModeCaps&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563946)"><strong>DeinterlaceQueryModeCaps</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps" data-raw-source="[&lt;strong&gt;DeinterlaceQueryModeCaps&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps)"><strong>DeinterlaceQueryModeCaps</strong></a></p></td>
 <td align="left"><p>Queries for the capabilities of a given deinterlacing and frame-rate conversion mode.</p></td>
 </tr>
 </tbody>
@@ -62,15 +62,15 @@ The sample deinterlacing functions in the following table are member functions o
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563935" data-raw-source="[&lt;strong&gt;DeinterlaceOpenStream&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563935)"><strong>DeinterlaceOpenStream</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceopenstream" data-raw-source="[&lt;strong&gt;DeinterlaceOpenStream&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceopenstream)"><strong>DeinterlaceOpenStream</strong></a></p></td>
 <td align="left"><p>Opens a video stream object.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563924" data-raw-source="[&lt;strong&gt;DeinterlaceBlt&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563924)"><strong>DeinterlaceBlt</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceblt" data-raw-source="[&lt;strong&gt;DeinterlaceBlt&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceblt)"><strong>DeinterlaceBlt</strong></a></p></td>
 <td align="left"><p>Provides bit-block deinterlacing of video stream objects.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563927" data-raw-source="[&lt;strong&gt;DeinterlaceBltEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563927)"><strong>DeinterlaceBltEx</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlacebltex" data-raw-source="[&lt;strong&gt;DeinterlaceBltEx&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlacebltex)"><strong>DeinterlaceBltEx</strong></a></p></td>
 <td align="left"><p><strong>Windows Server 2003 SP1 and later and Windows XP SP2 and later only.</strong></p>
 <div>
  
@@ -78,7 +78,7 @@ The sample deinterlacing functions in the following table are member functions o
 Deinterlaces video and composites video substreams over the top of the video stream.</td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563931" data-raw-source="[&lt;strong&gt;DeinterlaceCloseStream&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563931)"><strong>DeinterlaceCloseStream</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceclosestream" data-raw-source="[&lt;strong&gt;DeinterlaceCloseStream&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceclosestream)"><strong>DeinterlaceCloseStream</strong></a></p></td>
 <td align="left"><p>Closes a video stream object.</p></td>
 </tr>
 </tbody>
@@ -103,27 +103,27 @@ The sample functions in this section map to the motion compensation callback fun
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563943" data-raw-source="[&lt;strong&gt;DeinterlaceQueryAvailableModes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563943)"><strong>DeinterlaceQueryAvailableModes</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequeryavailablemodes" data-raw-source="[&lt;strong&gt;DeinterlaceQueryAvailableModes&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequeryavailablemodes)"><strong>DeinterlaceQueryAvailableModes</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563946" data-raw-source="[&lt;strong&gt;DeinterlaceQueryModeCaps&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563946)"><strong>DeinterlaceQueryModeCaps</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps" data-raw-source="[&lt;strong&gt;DeinterlaceQueryModeCaps&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps)"><strong>DeinterlaceQueryModeCaps</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563935" data-raw-source="[&lt;strong&gt;DeinterlaceOpenStream&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563935)"><strong>DeinterlaceOpenStream</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceopenstream" data-raw-source="[&lt;strong&gt;DeinterlaceOpenStream&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceopenstream)"><strong>DeinterlaceOpenStream</strong></a></p></td>
 <td align="left"><p><strong>CreateMoComp</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563924" data-raw-source="[&lt;strong&gt;DeinterlaceBlt&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563924)"><strong>DeinterlaceBlt</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceblt" data-raw-source="[&lt;strong&gt;DeinterlaceBlt&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceblt)"><strong>DeinterlaceBlt</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563927" data-raw-source="[&lt;strong&gt;DeinterlaceBltEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563927)"><strong>DeinterlaceBltEx</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlacebltex" data-raw-source="[&lt;strong&gt;DeinterlaceBltEx&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlacebltex)"><strong>DeinterlaceBltEx</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563931" data-raw-source="[&lt;strong&gt;DeinterlaceCloseStream&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563931)"><strong>DeinterlaceCloseStream</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceclosestream" data-raw-source="[&lt;strong&gt;DeinterlaceCloseStream&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceclosestream)"><strong>DeinterlaceCloseStream</strong></a></p></td>
 <td align="left"><p><strong>DestroyMoComp</strong></p></td>
 </tr>
 </tbody>

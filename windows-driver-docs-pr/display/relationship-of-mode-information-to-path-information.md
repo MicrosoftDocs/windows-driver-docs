@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 This section applies only to Windows 7 and later, and Windows Server 2008 R2 and later versions of Windows operating system.
 
-The [**QueryDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware/ff569215) CCD function always returns path information and source and target mode information for a particular display configuration. The following figure shows an example of how the source and target mode information relates to the path information. In this example, the QDC\_ALL\_PATHS flag was passed to the *Flags* parameter in the call to **QueryDisplayConfig**.
+The [**QueryDisplayConfig**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-querydisplayconfig) CCD function always returns path information and source and target mode information for a particular display configuration. The following figure shows an example of how the source and target mode information relates to the path information. In this example, the QDC\_ALL\_PATHS flag was passed to the *Flags* parameter in the call to **QueryDisplayConfig**.
 
 ![diagram illustrating the relationship of mode information to path information](images/displayconfigpathandmode.png)
 

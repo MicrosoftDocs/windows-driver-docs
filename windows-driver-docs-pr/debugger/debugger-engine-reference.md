@@ -15,17 +15,17 @@ ms.localizationpriority: medium
 
 This section includes:
 
-[Client Functions](https://msdn.microsoft.com/library/windows/hardware/ff539137)
+[Client Functions](https://docs.microsoft.com/windows-hardware/drivers/debugger/client-com-interfaces)
 
 [Debug Engine Interfaces](client-com-interfaces.md)
 
-[Callback Debug Engine Interfaces](https://msdn.microsoft.com/library/windows/hardware/ff539018)
+[Callback Debug Engine Interfaces](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugbaseeventcallbacks)
 
-[Other Debug Engine Interfaces](https://msdn.microsoft.com/library/windows/hardware/ff553166)
+[Other Debug Engine Interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/index)
 
-[Structures and Constants](https://msdn.microsoft.com/library/windows/hardware/ff558820)
+[Structures and Constants](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/)
 
-Certain common methods are supported by all COM interfaces on Microsoft Windows. These methods are not listed individually in this reference section. For details, see [Using Client Objects](https://msdn.microsoft.com/library/windows/hardware/ff560088).
+Certain common methods are supported by all COM interfaces on Microsoft Windows. These methods are not listed individually in this reference section. For details, see [Using Client Objects](https://docs.microsoft.com/windows-hardware/drivers/debugger/using-client-objects).
 
  
 

@@ -17,4 +17,4 @@ ms.date: 10/17/2018
 
 This function is reserved for system use.
 
-This function is obsolete and no longer supported in Windows. Use [**CM_Query_Resource_Conflict_List**](https://msdn.microsoft.com/library/windows/hardware/ff539760) instead.
+This function is obsolete and no longer supported in Windows. Use [**CM_Query_Resource_Conflict_List**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_query_resource_conflict_list) instead.

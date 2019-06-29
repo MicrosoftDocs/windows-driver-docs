@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_RADIO\_STATE\_PARAMETERS
 
 
-WDI\_TLV\_RADIO\_STATE\_PARAMETERS is a TLV that contains radio state parameters for [OID\_WDI\_TASK\_SET\_RADIO\_STATE](https://msdn.microsoft.com/library/windows/hardware/dn925963).
+WDI\_TLV\_RADIO\_STATE\_PARAMETERS is a TLV that contains radio state parameters for [OID\_WDI\_TASK\_SET\_RADIO\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-set-radio-state).
 
 ## TLV Type
 

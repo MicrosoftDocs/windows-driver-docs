@@ -25,7 +25,7 @@ OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING is used by the host to remove a packet
 
 | TLV                                                                                            | Multiple TLV instances allowed | Optional | Description                         |
 |------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------|
-| [**WDI\_TLV\_SET\_CLEAR\_RECEIVE\_COALESCING**](https://msdn.microsoft.com/library/windows/hardware/dn898057) |                                |          | The packet filter ID to be removed. |
+| [**WDI\_TLV\_SET\_CLEAR\_RECEIVE\_COALESCING**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-clear-receive-coalescing) |                                |          | The packet filter ID to be removed. |
 
  
 

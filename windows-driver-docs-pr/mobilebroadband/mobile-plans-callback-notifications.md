@@ -201,7 +201,7 @@ See [listening for profile activation](#listening-for-profile-activation) sectio
 
 ## Cancel eSIM profile download
 
-As of today, this applies for the [deferred eSIM profile download](#deferred-eSIM-profile-download-and-activation) scenario, but it could be used for future user cases.
+As of today, this applies for the deferred eSIM profile download scenario, but it could be used for future user cases.
 
 The following diagram shows the high level flow for how the Mobile Plans program supports a cancellation of an eSIM profile download without control leaving the MODirect portal.
 

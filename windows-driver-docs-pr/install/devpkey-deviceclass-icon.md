@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_DeviceClass_Icon
 
 
-The DEVPKEY_DeviceClass_Icon device property represents the icon for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_Icon device property represents the icon for a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
 
 <table>
 <colgroup>
@@ -50,13 +50,13 @@ The DEVPKEY_DeviceClass_Icon device property represents the icon for a [device s
 Remarks
 -------
 
-The value of DEVPKEY_DeviceClass_Icon is set by an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF ClassInstall32 section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) that installs the class. To set the value of DEVPKEY_DeviceClass_Icon, use an **AddReg** directive to set the **Icon** registry entry value for the class.
+The value of DEVPKEY_DeviceClass_Icon is set by an [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) that is included in the [**INF ClassInstall32 section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section) that installs the class. To set the value of DEVPKEY_DeviceClass_Icon, use an **AddReg** directive to set the **Icon** registry entry value for the class.
 
 The **Icon** entry value is an integer number in string format. If the number is negative, the absolute value of the number is the resource identifier of the icon in setupapi.dll. If the number is positive, the number is the resource identifier of the icon in the class installer DLL, if there is a class installer, or the class property page provider, if there is no class installer and there is a property page provider. A value of zero is not valid.
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_Icon.
+You can call [**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_Icon.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_Icon property key. For information about how to access the mini-icon for a device setup class on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing Icon Properties of a Device Setup Class](https://msdn.microsoft.com/library/windows/hardware/ff537746).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_Icon property key. For information about how to access the mini-icon for a device setup class on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing Icon Properties of a Device Setup Class](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-icon-properties-of-a-device-setup-class).
 
 Requirements
 ------------
@@ -81,17 +81,17 @@ Requirements
 ## See also
 
 
-[**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320)
+[**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive)
 
-[**INF ClassInstall32 Section**](https://msdn.microsoft.com/library/windows/hardware/ff546335)
+[**INF ClassInstall32 Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section)
 
-[**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086)
+[**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090)
+[**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
-[**SetupDiDrawMiniIcon**](https://msdn.microsoft.com/library/windows/hardware/ff551005)
+[**SetupDiDrawMiniIcon**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdidrawminiicon)
 
-[**SetupDiLoadClassIcon**](https://msdn.microsoft.com/library/windows/hardware/ff552053)
+[**SetupDiLoadClassIcon**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiloadclassicon)
 
  
 

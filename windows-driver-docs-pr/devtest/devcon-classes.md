@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # DevCon Classes
 
 
-Lists all [device setup classes](https://msdn.microsoft.com/library/windows/hardware/ff541509), including classes that devices on the system do not use. Valid on local and remote computers.
+Lists all [device setup classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes), including classes that devices on the system do not use. Valid on local and remote computers.
 
 ```
     devcon [/m:\\computer] classes 

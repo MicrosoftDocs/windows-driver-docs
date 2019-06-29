@@ -55,7 +55,7 @@ MNOs specify custom filtering rules for administrative SMS and USSD notification
 
 Windows 8, Windows 8.1, and Windows 10 provide a USSD API, which is an abstraction of the underlying USSD protocol that hides most of the details to simplify app development. Upon receiving a network-initiated USSD that matches the provisioned filtering rules, the [MobileOperatorNotification](mobile-operator-notification-event-technical-details.md) event is trigged and the corresponding background work item can communicate over the USSD session by using the USSD API.
 
-For more information about USSD APIs, see [**Windows.Networking.NetworkOperators**](https://msdn.microsoft.com/library/windows/apps/br241148) namespace.
+For more information about USSD APIs, see [**Windows.Networking.NetworkOperators**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators) namespace.
 
 ## <span id="trigloc"></span><span id="TRIGLOC"></span>Triggering data usage and roaming notifications
 

@@ -22,13 +22,13 @@ Supported.
 Not requested.
 
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
-Mandatory. See [OID\_GEN\_SUPPORTED\_LIST (NDIS 5.1)](https://msdn.microsoft.com/library/windows/hardware/ff560258).
+Mandatory. See [OID\_GEN\_SUPPORTED\_LIST (NDIS 5.1)](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff560258(v=vs.85)).
 
 <a href="" id="windows-xp"></a>Windows XP  
 Supported.
 
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
-Mandatory. See [OID\_GEN\_SUPPORTED\_LIST (NDIS 5.1)](https://msdn.microsoft.com/library/windows/hardware/ff560258).
+Mandatory. See [OID\_GEN\_SUPPORTED\_LIST (NDIS 5.1)](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff560258(v=vs.85)).
 
 Remarks
 -------

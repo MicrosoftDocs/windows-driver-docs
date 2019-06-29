@@ -20,13 +20,13 @@ Device Guard and Credential Guard are optional features, that when implemented a
 
 [Device Guard deployment guide](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
 
-[Driver compatibility requirements](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
+[Driver compatibility requirements](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 
 [What's new in Credential Guard?](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1507-and-1511)
 
 [Hypervisor Code Integrity Readiness Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86)
 
-[Driver compatibility with Device Guard in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
+[Driver compatibility with Device Guard in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 
 
 

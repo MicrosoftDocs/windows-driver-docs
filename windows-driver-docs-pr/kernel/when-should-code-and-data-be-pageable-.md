@@ -21,7 +21,7 @@ Driver code that does any of the following must be memory-resident. That is, thi
 
 -   Acquires spin locks.
 
--   Calls any of the kernel's object support routines, such as [**KeReleaseMutex**](https://msdn.microsoft.com/library/windows/hardware/ff553140) or [**KeReleaseSemaphore**](https://msdn.microsoft.com/library/windows/hardware/ff553143), in which the *Wait* parameter is set to **TRUE**. If the kernel is called with *Wait* set to **TRUE**, the call returns with IRQL at DISPATCH\_LEVEL.
+-   Calls any of the kernel's object support routines, such as [**KeReleaseMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kereleasemutex) or [**KeReleaseSemaphore**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kereleasesemaphore), in which the *Wait* parameter is set to **TRUE**. If the kernel is called with *Wait* set to **TRUE**, the call returns with IRQL at DISPATCH\_LEVEL.
 
 Driver code must be running at IRQL &lt; DISPATCH\_LEVEL when the code does anything that might cause a page fault. Code can cause a page fault if it does any of the following:
 

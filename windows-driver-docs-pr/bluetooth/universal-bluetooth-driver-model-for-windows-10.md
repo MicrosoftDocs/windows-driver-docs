@@ -19,7 +19,7 @@ The Bluetooth audio driver surface area is diverged for Windows 10 and allows t
 ## <span id="How_to_write_a_Bluetooth_Universal_Windows_driver"></span><span id="how_to_write_a_bluetooth_universal_windows_driver"></span><span id="HOW_TO_WRITE_A_BLUETOOTH_UNIVERSAL_WINDOWS_DRIVER"></span>How to write a Bluetooth Universal Windows driver
 
 
-To write a Bluetooth Universal Windows driver, see [Getting Started with Universal Windows drivers](https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers), and follow the steps in the section titled *Building a Universal Windows driver* to build a Universal Windows driver using the Kernel Mode Driver (KMDF) template.
+To write a Bluetooth Universal Windows driver, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers), and follow the steps in the section titled *Building a Universal Windows driver* to build a Universal Windows driver using the Kernel Mode Driver (KMDF) template.
 
 Then, see the Bluetooth design and reference sections for implementation guidance.
 

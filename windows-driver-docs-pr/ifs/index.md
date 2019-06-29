@@ -2,21 +2,21 @@
 title: Introduction to File System Filters
 description: The file systems in Windows are implemented as file system drivers working above the storage system.
 ms.assetid: 62DE75F7-0211-4173-AF45-84B2DDFDC95C
-ms.date: 04/20/2017
+ms.date: 05/31/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Installable file systems driver design guide
+# File systems driver design guide
 
+This section of the WDK provides conceptual information related to file systems and filter drivers (minifilters). For information about programming interfaces that your driver can implement or call, see the [File System Programming Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_ifsk/).
 
-The file systems in Windows are implemented as file system drivers working above the storage system. Each of the file systems in Windows are designed to provide reliable data storage with varying features to meet the user’s requirements. A comparison of features for each of the standard file systems in Windows is shown in [File System Functionality Comparison](https://msdn.microsoft.com/library/windows/desktop/ee681827). New for Windows Server 2012 is ReFS. ReFS is a file system with scalable large volume support and the ability detect and correct data corruption on disk.
+The file systems in Windows are implemented as file system drivers working above the storage system. Each of the file systems in Windows are designed to provide reliable data storage with varying features to meet the user’s requirements. A comparison of features for each of the standard file systems in Windows is shown in [File System Functionality Comparison](https://docs.microsoft.com/windows/desktop/FileIO/filesystem-functionality-comparison). New for Windows Server 2012 is ReFS. ReFS is a file system with scalable large volume support and the ability detect and correct data corruption on disk.
 
 Creating a new file system driver in addition to those supplied in Windows is likely unnecessary. File Systems and File System Filter Drivers can provide any customized behavior required to modify the operation of existing file systems.
 
 ## <span id="File_System_Filter_Driver_Development"></span><span id="file_system_filter_driver_development"></span><span id="FILE_SYSTEM_FILTER_DRIVER_DEVELOPMENT"></span>File System Filter Driver Development
-
 
 A file system filter driver intercepts requests targeted at a file system or another file system filter driver. By intercepting the request before it reaches its intended target, the filter driver can extend or replace functionality provided by the original target of the request. Examples of File Systems and File System Filter Drivers include anti-virus filters, backup agents, and encryption products.
 
@@ -24,11 +24,9 @@ File system filtering services are available through the [Filter Manager](filter
 
 ## <span id="File_System_Filter_Driver_Certification"></span><span id="file_system_filter_driver_certification"></span><span id="FILE_SYSTEM_FILTER_DRIVER_CERTIFICATION"></span>File System Filter Driver Certification
 
-
-Certification information for File Systems and File System Filter Drivers is found in the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613). Tests for File Systems and File System Filter Drivers are found in the [Filter.Driver](https://msdn.microsoft.com/library/windows/hardware/jj124779) category of the HCK.
+Certification information for File Systems and File System Filter Drivers is found in the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613). Tests for File Systems and File System Filter Drivers are found in the [Filter.Driver](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124779(v=vs.85)) category of the HCK.
 
 ## <span id="File_System_Filter_Driver_Developer_Resources"></span><span id="file_system_filter_driver_developer_resources"></span><span id="FILE_SYSTEM_FILTER_DRIVER_DEVELOPER_RESOURCES"></span>File System Filter Driver Developer Resources
-
 
 To request an altitude allocation from Microsoft, send an e-mail asking for an altitude assignment for your minifilter. Follow the instructions in [Minifilter Altitude Request](minifilter-altitude-request.md) to submit a request.
 
@@ -37,18 +35,3 @@ To obtain an ID for a filter driver that uses reparse points follow the steps in
 You can subscribe to the NTFSD newsgroup for details about developing file systems and filter drivers. The group is found at [NT File System Drivers Newsgroup](https://go.microsoft.com/fwlink/p/?LinkId=620898).
 
 OSR's "Developing File Systems for Windows" seminar explores developing file systems and File Systems and File System Filter Drivers. See [Training for IFS Developers](https://go.microsoft.com/fwlink/p/?linkid=50692).
-
-
-
-## In this section
-This design guide includes the following sections:  
-
-* [File System Drivers](file-system-drivers.md)  
-* [File System Filter Drivers](file-system-filter-drivers.md)  
-* [File System Minifilter Drivers](file-system-minifilter-drivers.md)  
-* [Network Redirector Drivers](network-redirector-drivers.md)  
-* [Security Considerations for File Systems](security-considerations-for-file-systems.md)  
-* [Miscellaneous Information](miscellaneous-information.md)
-
-
-

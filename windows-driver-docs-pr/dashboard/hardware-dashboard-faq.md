@@ -26,15 +26,19 @@ There is no restriction on the number of certificates (both EV and Standard) ass
 The following agreements can be signed as part of the registration process.
 
 > [!NOTE]
-> Signing the Windows Hardware Compatibility Program Test Agreement is a requirement for all registrations. All other agreements are optional unless you are using features or assets in the other associated agreements. 
+> Signing the Windows Compatibility Program and Driver Quality Attestment Testing Agreement is a requirement for all registrations. All other agreements are optional unless you are using features or assets in the other associated agreements. 
 
-* Windows Hardware Compatibility Program Test Agreement (ver 2.0)
+* Windows Compatibility Program and Driver Quality Attestment Testing Agreement (ver 2.0)
 
-* Logo License Agreement for Hardware (ver 2017)
+* Windows Logo License Agreement (ver 2018)
 
-* UEFI Addendum
+* UEFI (Unified Extensible Firmware Interface) Firmware Agreement (ver 1.0)
 
-* Windows Error Reporting (WER) Agreement (ver 1.3)
+* Windows Analytics Agreement (ver 2.0)
+
+* Microsoft Collaborate Program Agreement (ver 1.0)
+
+* Windows Desktop Applications Program Agreement (ver 1.0)
 
 ## How do I add additional users or grant additional roles to users in my company?
 
@@ -96,4 +100,4 @@ This error is caused when the uploaded archive's filetype is .zip64 instead of .
 
 ### The DUA package error shows "Failed to open package" with the error “Not compatible with a version (3.2.0.0) with this instance package manager”
 
-* Use [HLK studio](https://msdn.microsoft.com/library/windows/hardware/dn939927) to open the downloaded DUA shell package and to create DUA submission.
+* Use [HLK studio](https://docs.microsoft.com/windows-hardware/test/hlk/user/install-standalone-hlk-studio) to open the downloaded DUA shell package and to create DUA submission.

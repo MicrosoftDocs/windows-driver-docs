@@ -18,9 +18,9 @@ The following diagram illustrates the WIA item tree of a flatbed scanner that su
 
 ![diagram illustrating the item tree of a flatbed scanner that supports advanced duplex and document feeder scanning](images/wia-feeder-tree3.png)
 
-Note that the front and back of the page that is being scanned are represented by separate child items in the item tree. This differentiation includes separate categories in the [**WIA\_IPA\_ITEM\_CATEGORY**](https://msdn.microsoft.com/library/windows/hardware/ff551581) property: WIA\_CATEGORY\_FRONT and WIA\_CATEGORY\_BACK. In a scanner that performs advanced duplex scanning, the front and back items are set separately; they may be set to different values. However, even on a scanner that is capable of advanced duplex scanning, there cannot be only a front or back item; if there is either a front or back item, the other item must also be present.
+Note that the front and back of the page that is being scanned are represented by separate child items in the item tree. This differentiation includes separate categories in the [**WIA\_IPA\_ITEM\_CATEGORY**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-category) property: WIA\_CATEGORY\_FRONT and WIA\_CATEGORY\_BACK. In a scanner that performs advanced duplex scanning, the front and back items are set separately; they may be set to different values. However, even on a scanner that is capable of advanced duplex scanning, there cannot be only a front or back item; if there is either a front or back item, the other item must also be present.
 
-The driver indicates that there are independent settings for the front and back items (that is, an advanced duplex scan is to be performed) by setting the ADVANCED\_DUP flag in the feeder's [**WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551379) property.
+The driver indicates that there are independent settings for the front and back items (that is, an advanced duplex scan is to be performed) by setting the ADVANCED\_DUP flag in the feeder's [**WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-document-handling-capabilities) property.
 
 ### Scanning
 

@@ -13,8 +13,8 @@ Starting with Windows 8, kernel-mode driver framework (KMDF) and user-mode driv
 
 For more information about passive-level ISRs for KMDF and UMDF drivers, see the following topics:
 
--   [Supporting Passive-Level Interrupts](https://msdn.microsoft.com/library/windows/hardware/hh451035)
--   [Accessing Hardware and Handling Interrupts](https://msdn.microsoft.com/library/windows/hardware/hh439560)
+-   [Supporting Passive-Level Interrupts](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-passive-level-interrupts)
+-   [Accessing Hardware and Handling Interrupts](https://docs.microsoft.com/windows-hardware/drivers/wdf/accessing-hardware-and-handling-interrupts)
 
 If a peripheral device uses a general-purpose I/O (GPIO) pin to relay an interrupt request to the processor, the Windows interrupt abstraction conveniently enables the driver for this device to ignore the hardware-specific details of the GPIO controller to which this pin belongs. When the kernel trap handler runs in response to a GPIO-relayed interrupt request from the device, this handler automatically clears or masks, as required, the interrupt in the GPIO hardware registers. Additionally, the kernel trap handler either directly calls the device's ISR, or schedules this ISR to run in another thread.
 

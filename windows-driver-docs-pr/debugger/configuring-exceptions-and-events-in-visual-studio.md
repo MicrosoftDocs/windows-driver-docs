@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 You can configure the Windows Debugger to react to specified exceptions and events in a pre-determined way. For each exception, you can set the break status and the handling status. For each event, you can set the break status.
 
-The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](https://msdn.microsoft.com/library/windows/hardware/ff557573).
+The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](https://docs.microsoft.com/windows-hardware/drivers/).
 
 You can configure the break status or the handling status by entering the following commands in the Debugger Immediate Window. If the Debugger Immediate Window is not already open, from the **Debug** menu, choose **Windows&gt;Immediate**.
 

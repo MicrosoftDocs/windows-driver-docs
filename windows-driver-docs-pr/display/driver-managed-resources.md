@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 In addition to supporting texture management as described in [Driver-Managed Textures](driver-managed-textures.md), a DirectX 8.1 driver can also manage resources in general, such as textures, volume textures, cube-map textures, vertex buffers, and index buffers.
 
-The driver supports driver-managed resources by setting the **dwCaps2** member of the [**DDCORECAPS**](https://msdn.microsoft.com/library/windows/hardware/ff549248) structure to the DDCAPS2\_CANMANAGERESOURCE bit. The driver specifies this DDCORECAPS structure in the **ddCaps** member of a [**DD\_HALINFO**](https://msdn.microsoft.com/library/windows/hardware/ff551627) structure. DD\_HALINFO is returned by [**DrvGetDirectDrawInfo**](https://msdn.microsoft.com/library/windows/hardware/ff556229) in response to the initialization of the DirectDraw component of the driver.
+The driver supports driver-managed resources by setting the **dwCaps2** member of the [**DDCORECAPS**](https://docs.microsoft.com/windows/desktop/api/ddrawi/ns-ddrawi-_ddcorecaps) structure to the DDCAPS2\_CANMANAGERESOURCE bit. The driver specifies this DDCORECAPS structure in the **ddCaps** member of a [**DD\_HALINFO**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_halinfo) structure. DD\_HALINFO is returned by [**DrvGetDirectDrawInfo**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgetdirectdrawinfo) in response to the initialization of the DirectDraw component of the driver.
 
  
 

@@ -22,19 +22,19 @@ ms.localizationpriority: medium
 
 
 
-NDIS serves as the device power policy owner for each network device. As such, NDIS sets and administers the power policy for each network device. For more information about managing device power policy, see [Managing Device Power Policy](https://msdn.microsoft.com/library/windows/hardware/ff554355).
+NDIS serves as the device power policy owner for each network device. As such, NDIS sets and administers the power policy for each network device. For more information about managing device power policy, see [Managing Device Power Policy](https://docs.microsoft.com/windows-hardware/drivers/kernel/managing-device-power-policy).
 
 NDIS uses the following information to set the power policy for a NIC:
 
--   The [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure that the bus driver returns in response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551664) request that NDIS issued.
+-   The [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure that the bus driver returns in response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) request that NDIS issued.
 
--   The miniport driver's response to an [OID\_PNP\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569774) request issued by NDIS.
+-   The miniport driver's response to an [OID\_PNP\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-capabilities) request issued by NDIS.
 
 -   User input from the user interface (UI).
 
 ### <a href="" id="using-the-device-capabilities-structure"></a>Using the DEVICE\_CAPABILITIES Structure
 
-When a NIC is enumerated, NDIS queries the NIC's capabilities by issuing, in addition to other requests, an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551664) request. In response to this request, the bus driver returns a [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure. NDIS copies this structure and uses the following information from this structure when setting the power policy for the NIC.
+When a NIC is enumerated, NDIS queries the NIC's capabilities by issuing, in addition to other requests, an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) request. In response to this request, the bus driver returns a [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure. NDIS copies this structure and uses the following information from this structure when setting the power policy for the NIC.
 
 <table>
 <colgroup>
@@ -49,39 +49,39 @@ When a NIC is enumerated, NDIS queries the NIC's capabilities by issuing, in add
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543085" data-raw-source="[DeviceD1 and DeviceD2](https://msdn.microsoft.com/library/windows/hardware/ff543085)">DeviceD1 and DeviceD2</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/deviced1-and-deviced2" data-raw-source="[DeviceD1 and DeviceD2](https://docs.microsoft.com/windows-hardware/drivers/kernel/deviced1-and-deviced2)">DeviceD1 and DeviceD2</a></p></td>
 <td align="left"><p>TRUE if the device supports the D1 power state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543085" data-raw-source="[DeviceD1 and DeviceD2](https://msdn.microsoft.com/library/windows/hardware/ff543085)">DeviceD1 and DeviceD2</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/deviced1-and-deviced2" data-raw-source="[DeviceD1 and DeviceD2](https://docs.microsoft.com/windows-hardware/drivers/kernel/deviced1-and-deviced2)">DeviceD1 and DeviceD2</a></p></td>
 <td align="left"><p>TRUE if the device supports the D2 power state.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565609" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://msdn.microsoft.com/library/windows/hardware/ff565609)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://docs.microsoft.com/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
 <td align="left"><p>TRUE if the device can respond to an external wake signal while in the D0 power state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565609" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://msdn.microsoft.com/library/windows/hardware/ff565609)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://docs.microsoft.com/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
 <td align="left"><p>TRUE if the device can respond to an external wake signal while in the D1 power state.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565609" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://msdn.microsoft.com/library/windows/hardware/ff565609)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://docs.microsoft.com/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
 <td align="left"><p>TRUE if the device can respond to an external wake signal while in the D2 power state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565609" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://msdn.microsoft.com/library/windows/hardware/ff565609)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://docs.microsoft.com/windows-hardware/drivers/kernel/wakefromd0--wakefromd1--wakefromd2--and-wakefromd3)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
 <td align="left"><p>TRUE if the device can respond to an external wake signal while in the D3 power state.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543087" data-raw-source="[DeviceState](https://msdn.microsoft.com/library/windows/hardware/ff543087)">DeviceState</a><strong>[PowerSystemMaximum]</strong></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/devicestate" data-raw-source="[DeviceState](https://docs.microsoft.com/windows-hardware/drivers/kernel/devicestate)">DeviceState</a><strong>[PowerSystemMaximum]</strong></p></td>
 <td align="left"><p>Specifies the highest-powered device state that this device can maintain for each system power state, from <strong>PowerSystemUnspecified</strong> to <strong>PowerSystemShutdown</strong>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564538" data-raw-source="[SystemWake](https://msdn.microsoft.com/library/windows/hardware/ff564538)">SystemWake</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/systemwake" data-raw-source="[SystemWake](https://docs.microsoft.com/windows-hardware/drivers/kernel/systemwake)">SystemWake</a></p></td>
 <td align="left"><p>Specifies lowest-powered system power state (S0 through S4) from which the device can signal a wake event.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543091" data-raw-source="[DeviceWake](https://msdn.microsoft.com/library/windows/hardware/ff543091)">DeviceWake</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/devicewake" data-raw-source="[DeviceWake](https://docs.microsoft.com/windows-hardware/drivers/kernel/devicewake)">DeviceWake</a></p></td>
 <td align="left"><p>Specifies lowest-powered device power state (D0 through D3) from which the device can signal a wake event.</p></td>
 </tr>
 </tbody>
@@ -110,19 +110,19 @@ DeviceState[PowerSystemShutdown] PowerDeviceD3
 
 As indicated by the preceding array of sample values, when the system is in system power state S1, the NIC can be in device power state D1, D2, or D3. When the system is in system power state S2 or S3, the NIC can be in device power state D2 or D3.
 
-To determine whether both the system and NIC support wake-on-LAN, NDIS examines both the **SystemWake** and **DeviceWake** members. If both **SystemWake** and **DeviceWake** are set to **PowerSystemUnspecified**, NDIS treats the NIC as capable of power management. In this case, or if the miniport driver set the NDIS\_ATTRIBUTE\_NO\_HALT\_ON\_SUSPEND flag during initialization, NDIS subsequently issues the miniport driver an [OID\_PNP\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569774) request to obtain more information about the NIC's wake-up capabilities.
+To determine whether both the system and NIC support wake-on-LAN, NDIS examines both the **SystemWake** and **DeviceWake** members. If both **SystemWake** and **DeviceWake** are set to **PowerSystemUnspecified**, NDIS treats the NIC as capable of power management. In this case, or if the miniport driver set the NDIS\_ATTRIBUTE\_NO\_HALT\_ON\_SUSPEND flag during initialization, NDIS subsequently issues the miniport driver an [OID\_PNP\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-capabilities) request to obtain more information about the NIC's wake-up capabilities.
 
 ### <a href="" id="using-oid-pnp-capabilities"></a>Using OID\_PNP\_CAPABILITIES
 
-After a miniport driver successfully returns from its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, NDIS sends an OID\_PNP\_CAPABILITIES request to the driver if either of the following is true:
+After a miniport driver successfully returns from its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function, NDIS sends an OID\_PNP\_CAPABILITIES request to the driver if either of the following is true:
 
--   Both the **SystemWake** and **DeviceWake** members of the [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure that is returned by the bus driver are *not* set to **PowerSystemUnspecified**.
+-   Both the **SystemWake** and **DeviceWake** members of the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure that is returned by the bus driver are *not* set to **PowerSystemUnspecified**.
 
--   The miniport driver set the NDIS\_ATTRIBUTE\_NO\_HALT\_ON\_SUSPEND flag when it called [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) during initialization.
+-   The miniport driver set the NDIS\_ATTRIBUTE\_NO\_HALT\_ON\_SUSPEND flag when it called [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsetminiportattributes) during initialization.
 
 Note that NDIS issues an OID\_PNP\_CAPABILITIES request regardless of whether the user has enabled wake-on-LAN in the user interface.
 
-If the miniport driver returns NDIS\_STATUS\_SUCCESS in response to a query of [OID\_PNP\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569774), NDIS treats the miniport driver as power management-capable. If the miniport driver returns NDIS\_STATUS\_NOT\_SUPPORTED, NDIS treats the miniport driver as an old miniport driver that is not power management-capable. For more information about power management for such drivers, see [Power Management for Old Miniport Drivers](power-management-for-old-miniport-drivers.md).
+If the miniport driver returns NDIS\_STATUS\_SUCCESS in response to a query of [OID\_PNP\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-capabilities), NDIS treats the miniport driver as power management-capable. If the miniport driver returns NDIS\_STATUS\_NOT\_SUPPORTED, NDIS treats the miniport driver as an old miniport driver that is not power management-capable. For more information about power management for such drivers, see [Power Management for Old Miniport Drivers](power-management-for-old-miniport-drivers.md).
 
 A miniport driver that succeeds an OID\_PNP\_CAPABILITIES request returns the following information to NDIS in response to the request:
 
@@ -156,7 +156,7 @@ This option, which is subordinate to the second option that is described earlier
 
 -   The user selected the second option to enable wake-on-LAN.
 
--   The miniport driver, in responding to the [OID\_PNP\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569774), indicated that the NIC could wake the system on receipt of a Magic Packet.
+-   The miniport driver, in responding to the [OID\_PNP\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-capabilities), indicated that the NIC could wake the system on receipt of a Magic Packet.
 
 The **Only allow management stations to bring the computer out of standby** option is clear by default. The user can select this option to specify that only the receipt of a Magic Packet will cause the NIC to generate a wake-up signal to the system.
 

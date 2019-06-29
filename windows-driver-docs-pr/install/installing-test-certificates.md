@@ -13,7 +13,7 @@ To successfully install a test-signed [driver package](driver-packages.md) on a 
 
 The CA certificate must be added to the Trusted Root Certification Authorities certificate store only once. Once added, it can then be used to verify the signature of all drivers or driver packages, which were digitally signed with the certificate, before the driver package is installed on the computer.
 
-The simplest way to add a test certificate to the Trusted Root Certification Authorities certificate store is through the [**CertMgr**](https://msdn.microsoft.com/library/windows/hardware/ff543411) tool. This topic will describe the procedure for installing the test certificate, Contoso.com(test). This certificate is stored within the *ContosoTest.cer* file. For more information about how this certificate was created, see [Creating Test Certificates](creating-test-certificates.md).
+The simplest way to add a test certificate to the Trusted Root Certification Authorities certificate store is through the [**CertMgr**](https://docs.microsoft.com/windows-hardware/drivers/devtest/certmgr) tool. This topic will describe the procedure for installing the test certificate, Contoso.com(test). This certificate is stored within the *ContosoTest.cer* file. For more information about how this certificate was created, see [Creating Test Certificates](creating-test-certificates.md).
 
 The following command-line uses Certmgr.exe to install, or add, the Contoso.com(test) certificate to the test computer's Trusted Root Certification Authorities certificate store:
 
@@ -37,7 +37,7 @@ The following screen shot shows the Contoso.com(Test) certificate in the Trusted
 
 ![screen shot of the trusted root certification authorities certificate store in the mmc certificates snap-in](images/certstore2.png)
 
-For more information about CertMgr and its command-line arguments, see [**CertMgr**](https://msdn.microsoft.com/library/windows/hardware/ff543411).
+For more information about CertMgr and its command-line arguments, see [**CertMgr**](https://docs.microsoft.com/windows-hardware/drivers/devtest/certmgr).
 
 For more information about how to install test certificates, see [Installing a Test Certificate on a Test Computer](installing-a-test-certificate-on-a-test-computer.md).
 

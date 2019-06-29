@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 
 
 
-Simple duplex scanning uses the same page settings for both front and back pages. Scanners that support duplexing should set the DUPLEX flag in the [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](https://msdn.microsoft.com/library/windows/hardware/ff551384) property.
+Simple duplex scanning uses the same page settings for both front and back pages. Scanners that support duplexing should set the DUPLEX flag in the [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-document-handling-select) property.
 
 The following figure illustrates the WIA item tree of a flatbed scanner that supports simple duplex-capable document feeder scanning.
 
 ![diagram illustrating the item tree of a flatbed scanner that supports simple duplex-capable document feeder scanning](images/wia-feeder-tree3.png)
 
-Note that the front and back of the page that is being scanned are represented by separate child items in the item tree. This differentiation includes separate categories in the [**WIA\_IPA\_ITEM\_CATEGORY**](https://msdn.microsoft.com/library/windows/hardware/ff551581) property: WIA\_CATEGORY\_FRONT and WIA\_CATEGORY\_BACK. In a scanner that performs basic duplex scanning, the front and back items will not be set separately; they will be set to the exact same values.
+Note that the front and back of the page that is being scanned are represented by separate child items in the item tree. This differentiation includes separate categories in the [**WIA\_IPA\_ITEM\_CATEGORY**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-category) property: WIA\_CATEGORY\_FRONT and WIA\_CATEGORY\_BACK. In a scanner that performs basic duplex scanning, the front and back items will not be set separately; they will be set to the exact same values.
 
 ### Scanning
 
-Applications navigate to the feeder item to perform document feeder scans. This item is where they will configure the number of pages to scan and the settings of each page and set [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](https://msdn.microsoft.com/library/windows/hardware/ff551384) to the DUPLEX setting. A page corresponds to a single side of a document. Notice that scanning two documents results in four pages.
+Applications navigate to the feeder item to perform document feeder scans. This item is where they will configure the number of pages to scan and the settings of each page and set [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-document-handling-select) to the DUPLEX setting. A page corresponds to a single side of a document. Notice that scanning two documents results in four pages.
 
 ### Image Acquisition
 

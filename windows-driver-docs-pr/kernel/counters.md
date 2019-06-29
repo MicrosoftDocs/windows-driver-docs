@@ -15,17 +15,17 @@ ms.localizationpriority: medium
 
 The system provides several driver support routines that return various count values.
 
-[**KeQuerySystemTime**](https://msdn.microsoft.com/library/windows/hardware/ff553068)
+[**KeQuerySystemTime**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kequerysystemtime)
 
-[**KeQueryInterruptTime**](https://msdn.microsoft.com/library/windows/hardware/ff553025)
+[**KeQueryInterruptTime**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kequeryinterrupttime)
 
-[**KeQueryInterruptTimePrecise**](https://msdn.microsoft.com/library/windows/hardware/dn903729)
+[**KeQueryInterruptTimePrecise**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kequeryinterrupttimeprecise)
 
-[**KeQueryTickCount**](https://msdn.microsoft.com/library/windows/hardware/ff553071)
+[**KeQueryTickCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequerytickcount)
 
-[**KeQueryPerformanceCounter**](https://msdn.microsoft.com/library/windows/hardware/ff553053)
+[**KeQueryPerformanceCounter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-kequeryperformancecounter)
 
-[**KeQueryTimeIncrement**](https://msdn.microsoft.com/library/windows/hardware/ff553075)
+[**KeQueryTimeIncrement**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kequerytimeincrement)
 
  
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="analog_audio_stream_data_range"></span><span id="ANALOG_AUDIO_STREAM_DATA_RANGE"></span>
 
 
-This example uses a [**KSDATARANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561658) structure to describe the data range for an analog audio stream.
+This example uses a [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structure to describe the data range for an analog audio stream.
 
 ```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE);

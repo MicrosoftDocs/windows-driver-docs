@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 Use this method in the Microsoft Store analytics API to get aggregate reporting data for Windows 7/Windows 8.x driver errors for a given date range and other optional filters. You can retrieve additional error information by using the [get details for a Windows 7 or Windows 8.x driver error](get-details-for-a-windows-7-or-windows-8.x-driver-error.md) method.
 
 > [!NOTE]
-> This method can only be used by developer accounts that belong to the [Windows Hardware Dev Center program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
+> This method can only be used by developer accounts that belong to the [Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
 
 ## Prerequisites
 

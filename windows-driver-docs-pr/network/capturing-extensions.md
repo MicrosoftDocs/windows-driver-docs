@@ -27,7 +27,7 @@ A capturing extension has the following requirements and restrictions:
 
     For more information about the INF requirements for modifying filter drivers, see [Configuring an INF File for a Modifying Filter Driver](configuring-an-inf-file-for-a-modifying-filter-driver.md).
 
--   A capturing extension can monitor packets over the ingress and egress extensible switch data path. However, this type of extension must always call [**NdisFSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff562616) to forward the packets to underlying drivers in the extensible switch driver stack and not complete them.
+-   A capturing extension can monitor packets over the ingress and egress extensible switch data path. However, this type of extension must always call [**NdisFSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfsendnetbufferlists) to forward the packets to underlying drivers in the extensible switch driver stack and not complete them.
 
 -   A capturing extension must not modify the data within the packets nor add port destinations to the out-of-band (OOB) data of the packet. The extension must not exempt the delivery of the packet to any extensible switch port.
 

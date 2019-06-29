@@ -16,7 +16,7 @@ You can use any edition of Microsoft Visual Studio 2015, including Microsoft Vi
 -   Windows 8.1
 -   Windows 7
 
-**Important**  Starting in Windows Driver Kit (WDK) 8, MSBuild replaced the Windows Build Utility (Build.exe). The WDK now uses the same compiler and build tools that you use to build Visual Studio projects. Driver projects that were built with previous versions of the WDK must be converted to work in the Visual Studio environment. You can run a conversion utility from the command line, or you can convert an existing driver by creating new Visual Studio project from existing sources. For more info, see [Creating a Driver From Existing Source Files](creating-a-driver-from-existing-source-files.md) and [WDK and the Visual Studio build environment](https://msdn.microsoft.com/library/windows/hardware/hh454286).
+**Important**  Starting in Windows Driver Kit (WDK) 8, MSBuild replaced the Windows Build Utility (Build.exe). The WDK now uses the same compiler and build tools that you use to build Visual Studio projects. Driver projects that were built with previous versions of the WDK must be converted to work in the Visual Studio environment. You can run a conversion utility from the command line, or you can convert an existing driver by creating new Visual Studio project from existing sources. For more info, see [Creating a Driver From Existing Source Files](creating-a-driver-from-existing-source-files.md) and [WDK and the Visual Studio build environment](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdk-and-visual-studio-build-environment).
 
  
 
@@ -25,7 +25,7 @@ You can use any edition of Microsoft Visual Studio 2015, including Microsoft Vi
 
 You build a driver the same way you build any project or solution in Visual Studio. When you create a new driver project using a Windows driver template, the template defines a default (active) project configuration and a default (active) solution build configuration.
 
-**Note**  You can convert projects and solutions that you created with WDK 8 or Windows Driver Kit (WDK) 8.1 to work with Windows Driver Kit (WDK) 10 and Visual Studio 2015. Before you open the projects or solutions, run the [ProjectUpgradeTool](https://msdn.microsoft.com/Library/Windows/Hardware/Dn265174). The ProjectUpgradeTool converts the projects and solutions so that they can be built using WDK 10.
+**Note**  You can convert projects and solutions that you created with WDK 8 or Windows Driver Kit (WDK) 8.1 to work with Windows Driver Kit (WDK) 10 and Visual Studio 2015. Before you open the projects or solutions, run the [ProjectUpgradeTool](https://docs.microsoft.com/windows-hardware/drivers/devtest/projectupgradetool). The ProjectUpgradeTool converts the projects and solutions so that they can be built using WDK 10.
 
  
 
@@ -81,7 +81,7 @@ You can build a driver from the command line using the **Visual Studio Command P
 
 You use **property pages** to configure and set options for your driver and driver package. You can choose to configure your driver so that it is automatically signed when you build your solution, or automatically deployed to a remote test computer.
 
-The WDK provides a number of command-line tools, such as [Stampinf](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552786) and [WPP Preprocessor (WPP Tracing)](https://msdn.microsoft.com/Library/Windows/Hardware/Ff556201), that are commonly included in the build process. These tools are not distributed with Visual Studio. To combine these tools with the Visual Studio build environment they are wrapped as [WDK tasks for MSBuild](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454288). If you use one of the driver templates or have an existing driver that you have converted, these property pages might already exist for your project. If not, the property pages are automatically added to your project as you add the related file types to the project or solution (for example, .mc or .man files for the message compiler). For more information, see [WDK and the Visual Studio build environment](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454286)
+The WDK provides a number of command-line tools, such as [Stampinf](https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf) and [WPP Preprocessor (WPP Tracing)](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-preprocessor), that are commonly included in the build process. These tools are not distributed with Visual Studio. To combine these tools with the Visual Studio build environment they are wrapped as [WDK tasks for MSBuild](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdk-tasks-for-msbuild). If you use one of the driver templates or have an existing driver that you have converted, these property pages might already exist for your project. If not, the property pages are automatically added to your project as you add the related file types to the project or solution (for example, .mc or .man files for the message compiler). For more information, see [WDK and the Visual Studio build environment](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdk-and-visual-studio-build-environment)
 
 You can set properties for an individual driver or for an entire driver package. The following table shows some of the available properties that you can configure specifically for drivers and driver packages.
 
@@ -102,7 +102,7 @@ You can set properties for an individual driver or for an entire driver package.
 <td align="left"><p>Signing properties for driver packages (see <a href="signing-a-driver.md" data-raw-source="[Signing a Driver](signing-a-driver.md)">Signing a Driver</a>)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="counters-manifest-preprocessor-properties-for-driver-projects.md" data-raw-source="[Counters Manifest Preprocessor Properties for Driver Projects](counters-manifest-preprocessor-properties-for-driver-projects.md)">Counters Manifest Preprocessor Properties for Driver Projects</a> (for <a href="https://msdn.microsoft.com/library/windows/desktop/aa372128" data-raw-source="[CTRPP](https://msdn.microsoft.com/library/windows/desktop/aa372128)">CTRPP</a>)</td>
+<td align="left"><a href="counters-manifest-preprocessor-properties-for-driver-projects.md" data-raw-source="[Counters Manifest Preprocessor Properties for Driver Projects](counters-manifest-preprocessor-properties-for-driver-projects.md)">Counters Manifest Preprocessor Properties for Driver Projects</a> (for <a href="https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp" data-raw-source="[CTRPP](https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp)">CTRPP</a>)</td>
 <td align="left"><p><a href="deployment-properties-for-driver-projects.md" data-raw-source="[Deployment Properties for Driver Package Projects](deployment-properties-for-driver-projects.md)">Deployment Properties for Driver Package Projects</a> (see <a href="deploying-a-driver-to-a-test-computer.md" data-raw-source="[Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)">Deploying a Driver to a Test Computer</a>)</p></td>
 </tr>
 <tr class="odd">
@@ -118,7 +118,7 @@ You can set properties for an individual driver or for an entire driver package.
 <td align="left"><p><a href="umdf-verifier-properties-for-driver-package-projects.md" data-raw-source="[UMDF Verifier Properties for Driver Package Projects](umdf-verifier-properties-for-driver-package-projects.md)">UMDF Verifier Properties for Driver Package Projects</a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://msdn.microsoft.com/Library/Windows/Hardware/Ff556201" data-raw-source="[WPP Preprocessor (WPP Tracing)](https://msdn.microsoft.com/Library/Windows/Hardware/Ff556201)">WPP Preprocessor (WPP Tracing)</a></td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-preprocessor" data-raw-source="[WPP Preprocessor (WPP Tracing)](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-preprocessor)">WPP Preprocessor (WPP Tracing)</a></td>
 <td align="left"><p><a href="inf2cat-properties-for-driver-package-projects.md" data-raw-source="[Inf2Cat Properties for Driver Package Projects](inf2cat-properties-for-driver-package-projects.md)">Inf2Cat Properties for Driver Package Projects</a> (see the <a href="../devtest/inf2cat.md" data-raw-source="[&lt;strong&gt;Inf2Cat&lt;/strong&gt;](../devtest/inf2cat.md)"><strong>Inf2Cat</strong></a> tool)</p></td>
 </tr>
 </tbody>
@@ -143,10 +143,10 @@ The following tip can help you troubleshoot problems when you use the WDK and Vi
 * [Building in Visual Studio](https://go.microsoft.com/fwlink/p/?linkid=227872)
 * [Building Drivers for Different Versions of Windows](building-drivers-for-different-versions-of-windows.md)
 * [Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps](using-the-microsoft-c-runtime-with-user-mode-drivers-and-apps.md)
-* [ProjectUpgradeTool](https://msdn.microsoft.com/Library/Windows/Hardware/Dn265174)
+* [ProjectUpgradeTool](https://docs.microsoft.com/windows-hardware/drivers/devtest/projectupgradetool)
 * [MSBuild](https://go.microsoft.com/fwlink/p/?linkid=262804)
 * [Creating a Driver From Existing Source Files](creating-a-driver-from-existing-source-files.md)
-* [WDK and the Visual Studio build environment](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454286)
+* [WDK and the Visual Studio build environment](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdk-and-visual-studio-build-environment)
 * [Signing a Driver](signing-a-driver.md)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
 

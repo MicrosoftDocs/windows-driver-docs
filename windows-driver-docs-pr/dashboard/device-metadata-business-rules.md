@@ -166,11 +166,11 @@ Different types of device metadata packages must follow different rules. Additio
 
 ### <span id="bkmk-unique"></span>Unique Device Stage Metadata Submissions
 
-To submit a PC metadata package, see, [Submit a PC device manifest package](https://msdn.microsoft.com/library/windows/hardware/hh801890.aspx).
+To submit a PC metadata package, see, [Submit a PC device manifest package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
 
-To submit a mobile broadband metadata package, see [Submit a mobile broadband device manifest package](https://msdn.microsoft.com/library/windows/hardware/hh801891.aspx).
+To submit a mobile broadband metadata package, see [Submit a mobile broadband device manifest package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
 
-To submit a multiple-locale metadata package, see [Submit a Multiple-locale device manifest package](https://msdn.microsoft.com/library/windows/hardware/hh801889.aspx).
+To submit a multiple-locale metadata package, see [Submit a Multiple-locale device manifest package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
 
 ### <span id="Windows_Store_device_app_limits"></span><span id="windows_store_device_app_limits"></span><span id="WINDOWS_STORE_DEVICE_APP_LIMITS"></span>UWP device app limits
 
@@ -222,11 +222,11 @@ In each device metadata package, the following limits apply:
 ## <span id="related_topics"></span>Related topics
 
 
-- [Create a Device Metadata Experience](https://msdn.microsoft.com/library/windows/hardware/br230794.aspx)
+- [Create a Device Metadata Experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
-- [Manage Device Metadata Experiences](https://msdn.microsoft.com/library/windows/hardware/br230797.aspx)
+- [Manage Device Metadata Experiences](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
-- [Submit a Device Metadata Package (Dashboard help)](https://msdn.microsoft.com/library/windows/hardware/br230807.aspx)
+- [Submit a Device Metadata Package (Dashboard help)](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
  
 

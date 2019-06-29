@@ -17,11 +17,11 @@ ms.localizationpriority: medium
 
 
 
-A *Medium* defines a type of communication bus. The minidriver indicates which mediums a pin supports by providing a pointer to an array of [**KSPIN\_MEDIUM**](https://msdn.microsoft.com/library/windows/hardware/ff563538) structures in the relevant [**KSPIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff563533) structure. A KSPIN\_MEDIUM identifies a specific connection on a communication bus.
+A *Medium* defines a type of communication bus. The minidriver indicates which mediums a pin supports by providing a pointer to an array of [**KSPIN\_MEDIUM**](https://docs.microsoft.com/previous-versions/ff563538(v=vs.85)) structures in the relevant [**KSPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kspin_descriptor) structure. A KSPIN\_MEDIUM identifies a specific connection on a communication bus.
 
-Clients specify the medium to use for a connection by setting the **Medium** member in the [**KSPIN\_CONNECT**](https://msdn.microsoft.com/library/windows/hardware/ff563531) structure that they provide in a call to [**KsCreatePin**](https://msdn.microsoft.com/library/windows/hardware/ff561652).
+Clients specify the medium to use for a connection by setting the **Medium** member in the [**KSPIN\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kspin_connect) structure that they provide in a call to [**KsCreatePin**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kscreatepin).
 
-Clients request a list of mediums supported by a filter or pin by using the [**KSPROPERTY\_PIN\_MEDIUMS**](https://msdn.microsoft.com/library/windows/hardware/ff565202) property.
+Clients request a list of mediums supported by a filter or pin by using the [**KSPROPERTY\_PIN\_MEDIUMS**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-mediums) property.
 
  
 

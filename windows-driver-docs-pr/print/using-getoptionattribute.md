@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 This function is supported only for PPD features. If a certain attribute is not available, **GetOptionAttribute** returns E\_INVALIDARG.
 
-In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](https://msdn.microsoft.com/library/windows/hardware/ff548692) enumerated type.
+In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printoem/ne-printoem-_eattribute_datatype) enumerated type.
 
 ### Output Parameters for General Option Attributes
 
@@ -155,7 +155,7 @@ This option attribute is available only to the "CustomPageSize" option of the "P
 
 *\*pdwDataType*: kADT\_CUSTOMSIZEPARAMS
 
-*pbData*: an array of CUSTOMPARAM\_MAX elements, where each element is a [**CUSTOMSIZEPARAM**](https://msdn.microsoft.com/library/windows/hardware/ff547337) structure. Each element of this array stores values specified in the PPD's \*ParamCustomPageSize keyword's paramOption entry. For paramOption other than "Orientation", lMinVal and lMaxVal values are in microns. For "Orientation", lMinVal and lMaxVal values are in the range of \[0, 3\].
+*pbData*: an array of CUSTOMPARAM\_MAX elements, where each element is a [**CUSTOMSIZEPARAM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printoem/ns-printoem-_customsizeparam) structure. Each element of this array stores values specified in the PPD's \*ParamCustomPageSize keyword's paramOption entry. For paramOption other than "Orientation", lMinVal and lMaxVal values are in microns. For "Orientation", lMinVal and lMaxVal values are in the range of \[0, 3\].
 
 *\*pcbNeeded*: **sizeof**(CUSTOMSIZEPARAM) \* CUSTOMPARAM\_MAX
 
@@ -189,7 +189,7 @@ This option attribute is available to any option of the "InstalledMemory" PPD fe
 
 ### Note on ParamCustomPageSize
 
-Here is some sample code that shows how to obtain the PPD file's original order, min, and max values of the "\*ParamCustomPageSize Width" entry. The CUSTOMPARAM\_WIDTH constant, which is defined in printoem.h, indicates the offset of the [**CUSTOMSIZEPARAM**](https://msdn.microsoft.com/library/windows/hardware/ff547337) structure that contains the information related to the Width entry. This structure is one of CUSTOMPARAM\_MAX CUSTOMSIZEPARAM structures that form an array of such structures. The printoem.h header defines a set of constants named CUSTOMPARAM\_XXX listing the offsets of the structures in this array (Width, Height, WidthOffset, HeightOffset, and Orientation).
+Here is some sample code that shows how to obtain the PPD file's original order, min, and max values of the "\*ParamCustomPageSize Width" entry. The CUSTOMPARAM\_WIDTH constant, which is defined in printoem.h, indicates the offset of the [**CUSTOMSIZEPARAM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printoem/ns-printoem-_customsizeparam) structure that contains the information related to the Width entry. This structure is one of CUSTOMPARAM\_MAX CUSTOMSIZEPARAM structures that form an array of such structures. The printoem.h header defines a set of constants named CUSTOMPARAM\_XXX listing the offsets of the structures in this array (Width, Height, WidthOffset, HeightOffset, and Orientation).
 
 ```cpp
 PCUSTOMSIZEPARAM  pCSParam;

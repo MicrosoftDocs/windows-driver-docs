@@ -167,7 +167,7 @@ C:\Echo> SignTool sign /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /fd sha256 
 
 ## Submit the EV signed Cab file using the Partner Center
 
-1. Submit the EV signed CAB file using the Partner Center. See [Driver Signing Properties](https://msdn.microsoft.com/windows/hardware/drivers/develop/driver-signing-properties) for more information.
+1. Submit the EV signed CAB file using the Partner Center. See [Driver Signing Properties](https://docs.microsoft.com/windows-hardware/drivers/develop/driver-signing-properties) for more information.
 
    * As part of the Attestation submission process, do not check any of the Test Signing boxes highlighted below.  Leave those unchecked.
 

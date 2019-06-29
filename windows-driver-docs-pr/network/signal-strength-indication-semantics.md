@@ -15,23 +15,23 @@ The following diagram shows the process that miniport drivers should follow to p
 
 To update signal strength indications, use the following procedure:
 
-1.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567931) to the MB Service.
+1.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
 
-2.  The MB Service sends [OID\_WWAN\_SIGNAL\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569836) to the miniport driver. The miniport driver responds with a provisional acknowledgement (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and it will send a notification with the requested information in the future.
+2.  The MB Service sends [OID\_WWAN\_SIGNAL\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-signal-state) to the miniport driver. The miniport driver responds with a provisional acknowledgement (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and it will send a notification with the requested information in the future.
 
 3.  The miniport driver sends NDIS\_STATUS\_WWAN\_SUCCESS to the MB Service.
 
-4.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567931) to the MB Service.
+4.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
 
-5.  The MB Service sends [OID\_WWAN\_SIGNAL\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569836) to the miniport driver. The miniport driver responds with a provisional acknowledgement (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and it will send a notification with the requested information in the future.
+5.  The MB Service sends [OID\_WWAN\_SIGNAL\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-signal-state) to the miniport driver. The miniport driver responds with a provisional acknowledgement (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and it will send a notification with the requested information in the future.
 
 6.  The miniport driver sends NDIS\_STATUS\_WWAN\_SUCCESS to the MB Service.
 
-7.  The MB Service sends [OID\_WWAN\_SIGNAL\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569836) to the miniport driver. The miniport driver responds with a provisional acknowledgement (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and it will send a notification with the requested information in the future.
+7.  The MB Service sends [OID\_WWAN\_SIGNAL\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-signal-state) to the miniport driver. The miniport driver responds with a provisional acknowledgement (NDIS\_STATUS\_INDICATION\_REQUIRED) that it has received the request, and it will send a notification with the requested information in the future.
 
 8.  The miniport driver sends NDIS\_STATUS\_WWAN\_SUCCESS to the MB Service.
 
-9.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567931) to the MB Service.
+9.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
 
  
 

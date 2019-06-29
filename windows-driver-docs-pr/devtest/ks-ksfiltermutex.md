@@ -27,7 +27,7 @@ The KsFilterMutex rule specifies that a KS miniport driver acquires and releases
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://msdn.microsoft.com/library/windows/hardware/ff560187) (0x0008100A) |
+| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x0008100A) |
 
 How to test
 -----------
@@ -46,7 +46,7 @@ How to test
 <td align="left"><p>To verify this rule, open a Command Prompt window. Enter a Driver Verifier command and specify <strong>/domain ks</strong>.</p>
 <p>For example:</p>
 <p></p>
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)">Driver Verifier</a>.</p></td>
+<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier)">Driver Verifier</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -57,7 +57,7 @@ How to test
 See also
 --------
 
-[Filter Control Mutex in AVStream](https://msdn.microsoft.com/library/windows/hardware/ff559603)
+[Filter Control Mutex in AVStream](https://docs.microsoft.com/windows-hardware/drivers/stream/filter-control-mutex-in-avstream)
  
 
  

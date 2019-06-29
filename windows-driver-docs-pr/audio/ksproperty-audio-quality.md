@@ -47,7 +47,7 @@ The KSPROPERTY\_AUDIO\_QUALITY property specifies the quality level of a node's 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -76,7 +76,7 @@ A KSPROPERTY\_AUDIO\_QUALITY property request returns STATUS\_SUCCESS to indicat
 Remarks
 -------
 
-For information about the types of sample-rate conversion that the [KMixer system driver](https://msdn.microsoft.com/library/windows/hardware/ff537039#kmixer-system-driver) performs, see [KMixer Driver Sample Rate Conversion and Mixing Policy](https://msdn.microsoft.com/library/windows/hardware/ff537047).
+For information about the types of sample-rate conversion that the [KMixer system driver](https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components#kmixer-system-driver) performs, see [KMixer Driver Sample Rate Conversion and Mixing Policy](https://docs.microsoft.com/windows-hardware/drivers/audio/kmixer-driver-sample-rate-conversion-and-mixing-policy).
 
 Requirements
 ------------
@@ -99,7 +99,7 @@ Requirements
 
 [**KSNODETYPE\_SRC**](ksnodetype-src.md)
 
-[**KSNODEPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff537143)
+[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty)
 
  
 

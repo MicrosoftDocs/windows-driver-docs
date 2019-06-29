@@ -13,7 +13,7 @@ This topic describes the operations related to access control of subscription in
 
 ## MB PIN Operations for Device Hibernation
 
-Per the [3GPP](http://www.3gpp.org/about-3gpp) standard, there are different types of SIM PINs.  Information on this page applies only to SIM PIN1, also known as the universal PIN of a given SIM card.  
+Per the [3GPP](https://www.3gpp.org/about-3gpp) standard, there are different types of SIM PINs.  Information on this page applies only to SIM PIN1, also known as the universal PIN of a given SIM card.  
 
 Each time the cellular modem resumes from a low power state, the 3GPP standard requires that SIM credentials be refreshed before connecting to the cellular network.  
 
@@ -27,7 +27,7 @@ If a cellular modem device does not support D3 cold, Windows does not automatica
 
 For information on how to enable D3 cold in your USB modem device, please see:
 
-* [Supporting D3Cold for USB Devices](https://blogs.msdn.microsoft.com/usbcoreblog/2013/02/18/supporting-d3cold-for-usb-devices).
-* [Supporting D3cold in a Driver](https://msdn.microsoft.com/library/windows/hardware/hh967717)
+* [Supporting D3Cold for USB Devices](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog).
+* [Supporting D3cold in a Driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/supporting-d3cold-in-a-driver)
 
-For additional information about PIN operations, see [OID\_WWAN\_PIN](https://msdn.microsoft.com/library/windows/hardware/ff569828).
+For additional information about PIN operations, see [OID\_WWAN\_PIN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-pin).

@@ -23,7 +23,7 @@ A tape miniclass, medium changer miniclass, or SCSI miniport driver is not requi
 
 Storage port drivers create physical device objects (PDOs) of type FILE\_DEVICE\_MASS\_STORAGE. The disk class, CD-ROM class, tape class and changer class drivers create FDOs of types FILE\_DEVICE\_DISK, FILE\_DEVICE\_CD\_ROM, FILE\_DEVICE\_TAPE, and FILE\_DEVICE\_CHANGER respectively.
 
-For information about designing PnP drivers, see the [PnP Driver Design Guidelines](https://msdn.microsoft.com/library/windows/hardware/ff559623). For information about PnP-related **Io***Xxx* routines, see the [Plug and Play Routines](https://msdn.microsoft.com/library/windows/hardware/ff558809).
+For information about designing PnP drivers, see the [PnP Driver Design Guidelines](https://docs.microsoft.com/windows-hardware/drivers/kernel/pnp-driver-design-guidelines). For information about PnP-related **Io***Xxx* routines, see the [Plug and Play Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
  
 

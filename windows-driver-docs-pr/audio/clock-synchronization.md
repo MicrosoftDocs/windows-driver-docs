@@ -38,13 +38,13 @@ For example, if the master clock is currently at time 420 and the application ha
 
 Suppose an event is marked to play at time 520 in reference time. The synthesizer does its work by rendering notes down into samples and performing all its calculations in sample time. Therefore, it needs to know what a reference time of 520 converts to in sample time. In user mode, the wave sink provides two functions that the synth uses:
 
-[**IDirectMusicSynthSink::SampleToRefTime**](https://msdn.microsoft.com/library/windows/hardware/ff536526)
+[**IDirectMusicSynthSink::SampleToRefTime**](https://docs.microsoft.com/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynthsink-sampletoreftime)
 
-[**IDirectMusicSynthSink::RefTimeToSample**](https://msdn.microsoft.com/library/windows/hardware/ff536525)
+[**IDirectMusicSynthSink::RefTimeToSample**](https://docs.microsoft.com/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynthsink-reftimetosample)
 
 To do the conversion in this case, the synth calls **IDirectMusicSynthSink::RefTimeToSample** on the wave sink.
 
-The wave sink then gives back a sample time (for example, 600). The note in question gets rendered at sample time 600. Then, when the synth [**IDirectMusicSynth::Render**](https://msdn.microsoft.com/library/windows/hardware/ff536541) method gets called by the wave sink to render the next portion of the stream (for example, from sample time 600 to 800), the note is rendered into the buffer at sample time 600.
+The wave sink then gives back a sample time (for example, 600). The note in question gets rendered at sample time 600. Then, when the synth [**IDirectMusicSynth::Render**](https://docs.microsoft.com/windows/desktop/api/dmusics/nf-dmusics-idirectmusicsynth-render) method gets called by the wave sink to render the next portion of the stream (for example, from sample time 600 to 800), the note is rendered into the buffer at sample time 600.
 
 **Note**   The sample time is kept as a 64-bit number to avoid rollover. (A DWORD value rolls over in 27 hours.)
 

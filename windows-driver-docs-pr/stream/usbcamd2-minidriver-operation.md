@@ -89,7 +89,7 @@ The following list of procedures illustrates the general flow of processing for 
 
 | Component | Action |
 | --- | --- |
-| Camera minidriver | Return a [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat) structure from a [**KSDATARANGE**](https://docs.microsoft.com/previous-versions//ff561658(v=vs.85)) structure. |
+| Camera minidriver | Return a [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat) structure from a [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structure. |
 | Camera minidriver | Check that the frame rate requested (**VideoInfoHeader.AvgTimePerFrame**) is within the upper and lower limits for the video format requested. If it exceeds the limits, the minidriver should correct the following values in pSrb->CommandData.IntersectInfo->Datarange: VideoInfoHeader.AvgTimePerFrame, VideoInfoHeader.dwBitRate. |
 
 ## Minidriver's SRB\_OPEN\_STREAM handler
@@ -126,7 +126,7 @@ The following list of procedures illustrates the general flow of processing for 
 | --- | --- |
 | Camera minidriver | Call [**USBCAMD_AdapterReceivePacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nf-usbcamdi-usbcamd_adapterreceivepacket). |
 | USBCAMD2 | If any streams are still open, close them by calling the minidriver's [**CamStopCaptureEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nc-usbcamdi-pcam_stop_capture_routine_ex) and [**CamFreeBandwidthEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nc-usbcamdi-pcam_free_bw_routine_ex) callback functions for each stream. |
-| USBCAMD2 | Call the minidriver's [**CamUnInitialize**](https://docs.microsoft.com/previous-versions//ff557646(v=vs.85)) callback function. |
+| USBCAMD2 | Call the minidriver's [**CamUnInitialize**](https://docs.microsoft.com/previous-versions/ff557646(v=vs.85)) callback function. |
 | Camera minidriver | Clean up and free resources. |
 
 ## Minidriver's SRB\_SURPRISE\_REMOVAL handler

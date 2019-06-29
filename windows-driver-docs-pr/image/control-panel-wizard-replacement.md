@@ -20,7 +20,7 @@ To display your Vendor UI from the Control Panel you will have to:
 
 -   Write a custom wizard.
 
-There is no relationship at all between the custom wizard and the dialog you replaced using the [**IWiaUIExtension::DeviceDialog**](https://msdn.microsoft.com/library/windows/hardware/ff545069) interface. But, please be careful. The icon in control panel will always default to the wizard in Windows Me and Windows XP. The user would have to right click and choose Scan explicitly to show the default WIA\_EVENT\_SCAN\_IMAGE event handler. In My Computer the opposite is true; whatever default handler you select will be the one used when the user double clicks on the device icon.
+There is no relationship at all between the custom wizard and the dialog you replaced using the [**IWiaUIExtension::DeviceDialog**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545069(v=vs.85)) interface. But, please be careful. The icon in control panel will always default to the wizard in Windows Me and Windows XP. The user would have to right click and choose Scan explicitly to show the default WIA\_EVENT\_SCAN\_IMAGE event handler. In My Computer the opposite is true; whatever default handler you select will be the one used when the user double clicks on the device icon.
 
  
 

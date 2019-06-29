@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_creating_the_filter_device_object_if"></span><span id="DDK_CREATING_THE_FILTER_DEVICE_OBJECT_IF"></span>
 
 
-Call [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) to create a filter device object to attach to a volume or file system stack, as in the following example:
+Call [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice) to create a filter device object to attach to a volume or file system stack, as in the following example:
 
 ```cpp
 status = IoCreateDevice(
@@ -40,7 +40,7 @@ Setting the *DeviceExtensionSize* parameter to **sizeof**(MYLEGACYFILTER\_DEVICE
 PDEVICE_OBJECT AttachedToDeviceObject;
 ```
 
-In the above call to [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397), setting the *DeviceName* parameter to **NULL** specifies that the filter device object will not be named. Filter device objects are never named. Because a filter device object is attached to a file system or volume driver stack, assigning a name to the filter device object would create a system security hole.
+In the above call to [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice), setting the *DeviceName* parameter to **NULL** specifies that the filter device object will not be named. Filter device objects are never named. Because a filter device object is attached to a file system or volume driver stack, assigning a name to the filter device object would create a system security hole.
 
 The *DeviceType* parameter must always be set to the same device type as that of the target (file system or filter) device object to which the filter device object is being attached. It is important to propagate the device type in this way, because it is used by the I/O Manager and can be reported back to applications.
 

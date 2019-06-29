@@ -17,7 +17,7 @@ This topic describes the steps for a NetAdapterCx client driver to initialize an
 
 ## EVT_WDF_DRIVER_DEVICE_ADD
 
-A NetAdapterCx client driver registers its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function when it calls [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175) from its [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff540807) routine.
+A NetAdapterCx client driver registers its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function when it calls [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate) from its [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) routine.
 
 In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add), a NetAdapterCx client driver should do the following in order:
 
@@ -31,7 +31,7 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/dri
     }
     ```
 
-2. Call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). 
+2. Call [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate). 
 
     > [!TIP]
     > If your device supports more than one NETADAPTER, we recommend storing pointers to each adapter in your device context.

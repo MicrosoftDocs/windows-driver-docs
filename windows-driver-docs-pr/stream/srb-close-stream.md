@@ -36,7 +36,7 @@ Indicates that a hardware failure occurred.
 
 ### Comments
 
-The class driver provides a [**HW\_STREAM\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff559697) buffer in *pSrb*-&gt;**StreamObject**, with *pSrb*-&gt;**StreamObject**-&gt;**StreamNumber** set to the number of the stream to be closed. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure. **StreamNumber** corresponds to the offset of the stream within the [**HW\_STREAM\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff559686) structure that the minidriver provides in response to a [**SRB\_GET\_STREAM\_INFO**](srb-get-stream-info.md) request.
+The class driver provides a [**HW\_STREAM\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_object) buffer in *pSrb*-&gt;**StreamObject**, with *pSrb*-&gt;**StreamObject**-&gt;**StreamNumber** set to the number of the stream to be closed. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_request_block) structure. **StreamNumber** corresponds to the offset of the stream within the [**HW\_STREAM\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_descriptor) structure that the minidriver provides in response to a [**SRB\_GET\_STREAM\_INFO**](srb-get-stream-info.md) request.
 
 If the minidriver successfully closes the stream, the minidriver returns STATUS\_SUCCESS. Otherwise, it returns an appropriate error status.
 

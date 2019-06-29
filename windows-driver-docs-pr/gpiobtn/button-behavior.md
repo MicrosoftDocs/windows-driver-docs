@@ -70,8 +70,8 @@ This topic describes the expected behavior of hardware buttons.
 
 For more information about button requirements:
 
--   For Windows 10 Mobile, see section 2.6 in the [Minimum Hardware Requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx).
--   For Windows 10 for desktop editions, see section 3.6 in the [Minimum Hardware Requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx).
+-   For Windows 10 Mobile, see section 2.6 in the [Minimum Hardware Requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
+-   For Windows 10 for desktop editions, see section 3.6 in the [Minimum Hardware Requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
 ## <span id="Button_behavior_in_Windows_10"></span><span id="button_behavior_in_windows_10"></span><span id="BUTTON_BEHAVIOR_IN_WINDOWS_10"></span>Button behavior in Windows 10
 
@@ -135,7 +135,7 @@ Launch Camera app / take picture
 
 ### <span id="Button_combination_behavior_in_Windows_10"></span><span id="button_combination_behavior_in_windows_10"></span><span id="BUTTON_COMBINATION_BEHAVIOR_IN_WINDOWS_10"></span>Button combination behavior in Windows 10
 
-As noted, some button combinations in Windows 10 apply to the [Windows 10 button architecture](https://msdn.microsoft.com/library/windows/hardware/dn957423%28v=vs.85%29.aspx) or the Windows 8.1 button architecture. All other button combinations in Windows 10 apply to either button architecture. It is recommended to describe hardware buttons using the Windows 10 architecture.
+As noted, some button combinations in Windows 10 apply to the [Windows 10 button architecture](https://docs.microsoft.com/windows-hardware/drivers/hid/buttons) or the Windows 8.1 button architecture. All other button combinations in Windows 10 apply to either button architecture. It is recommended to describe hardware buttons using the Windows 10 architecture.
 
 <table>
 <colgroup>
@@ -250,8 +250,8 @@ Not applicable
  
 
 ## <span id="related_topics"></span>Related topics
-[Windows 10 button architecture](https://msdn.microsoft.com/library/windows/hardware/dn957423%28v=vs.85%29.aspx)  
-[Minimum Hardware Requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx)  
+[Windows 10 button architecture](https://docs.microsoft.com/windows-hardware/drivers/hid/buttons)  
+[Minimum Hardware Requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview)  
 
 
 

@@ -15,7 +15,7 @@ If a level-triggered interrupt from a peripheral device is enabled and active, b
 
 Masking an interrupt does not clear or disable the interrupt. If a GPIO interrupt is enabled, active, and masked, unmasking this interrupt causes the GPIO controller device to signal an interrupt request to the processor.
 
-A GPIO interrupt mask bit has no effect while the GPIO interrupt is disabled. The [*CLIENT\_EnableInterrupt*](https://msdn.microsoft.com/library/windows/hardware/hh439377) callback function sets the mask bit for the interrupt to zero; that is, the interrupt is initially unmasked after it is enabled.
+A GPIO interrupt mask bit has no effect while the GPIO interrupt is disabled. The [*CLIENT\_EnableInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpioclx/nc-gpioclx-gpio_client_enable_interrupt) callback function sets the mask bit for the interrupt to zero; that is, the interrupt is initially unmasked after it is enabled.
 
 An important distinction between masking and disabling a GPIO interrupt pin is that masking preserves the pin's interrupt-configuration settings, whereas disabling the pin does not. While a GPIO interrupt pin is masked, it retains its previously programmed interrupt mode (edge-triggered or level-triggered), polarity (active-high, active-low, or active-both), and debounce settings. These settings take effect again as soon as the interrupt is unmasked. However, when an interrupt is disabled, all of the pin's interrupt-configuration settings are lost. After the pin is enabled, it must be programmed again with the required interrupt-configuration settings.
 

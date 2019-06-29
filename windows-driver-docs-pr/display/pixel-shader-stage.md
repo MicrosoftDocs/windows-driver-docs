@@ -15,19 +15,19 @@ Outputs are one or more 4-vectors of output data for the current pixel location,
 
 The Direct3D runtime calls the following driver functions to create, set up, and destroy the pixel shader:
 
-[**CalcPrivateShaderSize**](https://msdn.microsoft.com/library/windows/hardware/ff538315)
+[**CalcPrivateShaderSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivateshadersize)
 
-[**CreatePixelShader(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff540670)
+[**CreatePixelShader(D3D10)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createpixelshader)
 
-[**DestroyShader**](https://msdn.microsoft.com/library/windows/hardware/ff552805)
+[**DestroyShader**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_destroyshader)
 
-[**PsSetConstantBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff569207)
+[**PsSetConstantBuffers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setconstantbuffers)
 
-[**PsSetSamplers**](https://msdn.microsoft.com/library/windows/hardware/ff569208)
+[**PsSetSamplers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setsamplers)
 
-[**PsSetShader**](https://msdn.microsoft.com/library/windows/hardware/ff569209)
+[**PsSetShader**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshader)
 
-[**PsSetShaderResources**](https://msdn.microsoft.com/library/windows/hardware/ff569210)
+[**PsSetShaderResources**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshaderresources)
 
  
 

@@ -59,7 +59,7 @@ The SDV [verification engine](verification-engine.md) has technical limitations 
 
     If a function role type is not detected by SDV, SDV will not verify the traces that originate from this function.
 
-    For example, if a driver defines (or implements) an [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) function in the file mydriver.c. This compilation unit (or any .h files that mydriver.c includes) must contain the function role type declaration for the *EvtDriverDeviceAdd* function.
+    For example, if a driver defines (or implements) an [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) function in the file mydriver.c. This compilation unit (or any .h files that mydriver.c includes) must contain the function role type declaration for the *EvtDriverDeviceAdd* function.
 
 -   Does not interpret structured exception handling. For **try/except** statements, SDV analyzes the guarded section as if no exception is thrown. Does not analyze the expression or the exception handler code.
 

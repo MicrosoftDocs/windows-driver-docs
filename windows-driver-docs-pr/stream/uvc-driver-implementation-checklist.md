@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Use these links to get acquainted with UVC:
 
-- Access the [USB class](http://www.usb.org/developers/docs/devclass_docs/) documentation (non-UVC specific) at USB.org
+- Access the [USB class](https://www.usb.org/documents?search=&type%5B0%5D=55&items_per_page=50) documentation (non-UVC specific) at USB.org
 
 - Download the [USB Video Class 1.5](https://go.microsoft.com/fwlink/p/?linkid=2085170) documentation from USB.org
 
@@ -53,8 +53,8 @@ Use these links to get acquainted with UVC:
 
 ## Step 5: Test your UVC implementation to ensure it passes HLK tests and meets required functionality and performance
 
-- Run [Windows HLK tests](https://msdn.microsoft.com/library/windows/hardware/dn930814)
+- Run [Windows HLK tests](https://docs.microsoft.com/windows-hardware/drivers/)
 
-- Run camera-specific [Device.Streaming HLK tests](https://msdn.microsoft.com/library/windows/hardware/dn941930)
+- Run camera-specific [Device.Streaming HLK tests](https://docs.microsoft.com/windows-hardware/test/hlk/testref/device-streaming)
 
 - Ensure the camera meets any requirements and passes HLK tests for other products that the camera must also be compliant with (for example, Skype, Windows Hello, and so on).

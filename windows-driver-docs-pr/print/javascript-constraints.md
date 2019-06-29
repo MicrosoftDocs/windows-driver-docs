@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # JavaScript Constraints
 
 
-The v4 printer driver model supports a new model for extended constraint and PrintTicket handling that is derived from the v3 [IPrintOemPrintTicketProvider](https://msdn.microsoft.com/library/windows/hardware/ff553174) interface.
+The v4 printer driver model supports a new model for extended constraint and PrintTicket handling that is derived from the v3 [IPrintOemPrintTicketProvider](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintoemprintticketprovider) interface.
 
 Instead of using a compiled configuration plug-in however, v4 printer drivers use JavaScript to implement APIs called JavaScript constraints, and the printer driver can implement one or more of them as needed. For more information, see the functions in the **JavaScript Constraint APIs** section at the end of this topic.
 
@@ -42,17 +42,17 @@ Interactive debugging can be enabled by creating the following registry key:
 
 **Value:** 1
 
-However, since *PrintConfig.dll* is loaded and unloaded frequently, debugging an app that prints is not a recommended testing/debugging strategy. Instead, Microsoft recommends that manufacturers build a test app that calls each of the relevant entry points for JavaScript constraints using these public APIs: [PTGetPrintCapabilities](https://msdn.microsoft.com/library/windows/desktop/dd162881.aspx), [PTConvertDevModeToPrintTicket](https://msdn.microsoft.com/library/windows/desktop/dd162879.aspx), [PTConvertPrintTicketToDevMode](https://msdn.microsoft.com/library/windows/desktop/dd162880.aspx), and [PTMergeAndValidatePrintTicket](https://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).
+However, since *PrintConfig.dll* is loaded and unloaded frequently, debugging an app that prints is not a recommended testing/debugging strategy. Instead, Microsoft recommends that manufacturers build a test app that calls each of the relevant entry points for JavaScript constraints using these public APIs: [PTGetPrintCapabilities](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptgetprintcapabilities), [PTConvertDevModeToPrintTicket](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertdevmodetoprintticket), [PTConvertPrintTicketToDevMode](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertprinttickettodevmode), and [PTMergeAndValidatePrintTicket](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket).
 
 The test app alone is sufficient to enable debugging, but it is also beneficial to add unit tests to ensure that the whole driver is handling PrintTicket, PrintCapabilities and constraints as expected. For more information on how to build Unit tests in Visual Studio, please see the following topics:
 
-[A Unit Testing Walkthrough with Visual Studio Team Test](https://msdn.microsoft.com/library/ms379625.aspx)
+[A Unit Testing Walkthrough with Visual Studio Team Test](https://docs.microsoft.com/previous-versions/ms379625(v=vs.80))
 
-[Unit Testing with Microsoft Visual Studio 2010 and Team Foundation Server](http://channel9.msdn.com/Events/TechEd/Australia/2010/DEV362)
+[Unit Testing with Microsoft Visual Studio 2010 and Team Foundation Server](https://channel9.msdn.com/Events/TechEd/Australia/2010/DEV362)
 
 After the registry key shown in the preceding text is created, and the hosting process has been restarted, you can debug your JavaScript source file.
 
-It is important to note that if the source file fails to parse, then the debugger is not invoked and it will seem as if the debug environment has failed. If the source file fails to parse, see [Windows Script Host](https://msdn.microsoft.com/library/9bbdkx3k.aspx) for more information about how to proceed.
+It is important to note that if the source file fails to parse, then the debugger is not invoked and it will seem as if the debug environment has failed. If the source file fails to parse, see [Windows Script Host](https://docs.microsoft.com/previous-versions/9bbdkx3k(v=vs.85)) for more information about how to proceed.
 
 If there are no errors and your source file is parsed successfully, debug your source file as follows:
 
@@ -93,7 +93,7 @@ This section specifies the functions that serve as API entry points for use in t
 ## validatePrintTicket function
 
 
-This API is called in order to validate that a PrintTicket object is valid for a particular printer. This is analogous in function to the [**IPrintOemPrintTicketProvider::ValidatePrintTicket**](https://msdn.microsoft.com/library/windows/hardware/ff553184) API.
+This API is called in order to validate that a PrintTicket object is valid for a particular printer. This is analogous in function to the [**IPrintOemPrintTicketProvider::ValidatePrintTicket**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff553184(v=vs.85)) API.
 
 Syntax
 
@@ -105,24 +105,24 @@ Parameters
 
 *printTicket*
 
-\[in\]\[out\] The [**IPrintSchemaTicket**](https://msdn.microsoft.com/library/windows/hardware/hh451398) object to be validated.
+\[in\]\[out\] The [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschematicket) object to be validated.
 *scriptContext*
 
-\[in\] The [**IPrinterScriptContext**](https://msdn.microsoft.com/library/windows/hardware/hh768279) object that provides access to the driver property bag, the queue property bag and the user property bag.
+\[in\] The [**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptcontext) object that provides access to the driver property bag, the queue property bag and the user property bag.
 Return value
 
 | Return value | Description                                                                                                                                                                                                |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0            | Indicates that the *printTicket* parameter was invalid and could not be corrected. Equivalent to [E\_PRINTTICKET\_FORMAT](https://msdn.microsoft.com/library/windows/desktop/dd162884.aspx). |
-| 1            | Indicates that the *printTicket* parameter is a valid PrintTicket for this printer. Equivalent to [S\_PT\_NO\_CONFLICT](https://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).   |
-| 2            | Indicates that the *printTicket* parameter was modified to make it valid. Equivalent to [S\_PT\_CONFLICT\_RESOLVED](https://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).       |
+| 0            | Indicates that the *printTicket* parameter was invalid and could not be corrected. Equivalent to [E\_PRINTTICKET\_FORMAT](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket). |
+| 1            | Indicates that the *printTicket* parameter is a valid PrintTicket for this printer. Equivalent to [S\_PT\_NO\_CONFLICT](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket).   |
+| 2            | Indicates that the *printTicket* parameter was modified to make it valid. Equivalent to [S\_PT\_CONFLICT\_RESOLVED](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket).       |
 
  
 
 ## completePrintCapabilities function
 
 
-This API is called to allow the PrintCapabilities object to be modified. This should be used for conditional features (for example, borderless is only supported on photo paper) or to represent features that could not otherwise be generated by a GPD or PPD file (for example, nested feature definitions). This is analogous in function to the [**IPrintOemPrintTicketProvider::CompletePrintCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff553158) API.
+This API is called to allow the PrintCapabilities object to be modified. This should be used for conditional features (for example, borderless is only supported on photo paper) or to represent features that could not otherwise be generated by a GPD or PPD file (for example, nested feature definitions). This is analogous in function to the [**IPrintOemPrintTicketProvider::CompletePrintCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemprintticketprovider-completeprintcapabilities) API.
 
 Syntax
 
@@ -134,13 +134,13 @@ Parameters
 
 *printTicket*
 
-\[in\] The [**IPrintSchemaTicket**](https://msdn.microsoft.com/library/windows/hardware/hh451398) object input to constrain the generated PrintCapabilities document to.
+\[in\] The [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschematicket) object input to constrain the generated PrintCapabilities document to.
 *scriptContext*
 
-\[in\] The [**IPrinterScriptContext**](https://msdn.microsoft.com/library/windows/hardware/hh768279) object that provides access to the driver property bag, the queue property bag and the user property bag.
+\[in\] The [**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptcontext) object that provides access to the driver property bag, the queue property bag and the user property bag.
 *printCapabilities*
 
-\[in\]\[out\] The [**IPrintSchemaCapabilities**](https://msdn.microsoft.com/library/windows/hardware/hh451256) object representing the base PrintCapabilities object that was generated by the configuration module.
+\[in\]\[out\] The [**IPrintSchemaCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemacapabilities) object representing the base PrintCapabilities object that was generated by the configuration module.
 Return value
 
 None.
@@ -148,7 +148,7 @@ None.
 ## convertDevModeToPrintTicket function
 
 
-This API is called to convert values from the DEVMODE property bag into a PrintTicket. This is analogous in function to the [**IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket**](https://msdn.microsoft.com/library/windows/hardware/ff553161) API, except that this implementation encapsulates the private section of the DEVMODE into an [**IPrinterScriptablePropertyBag**](https://msdn.microsoft.com/library/windows/hardware/hh973217) object and allows no access to the public section of the DEVMODE.
+This API is called to convert values from the DEVMODE property bag into a PrintTicket. This is analogous in function to the [**IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff553161(v=vs.85)) API, except that this implementation encapsulates the private section of the DEVMODE into an [**IPrinterScriptablePropertyBag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptablepropertybag) object and allows no access to the public section of the DEVMODE.
 
 Syntax
 
@@ -163,10 +163,10 @@ Parameters
 \[in\] The **IPrinterScriptablePropertyBag** object representing the DEVMODE Property Bag.
 *scriptContext*
 
-\[in\] The [**IPrinterScriptContext**](https://msdn.microsoft.com/library/windows/hardware/hh768279) object that provides access to the driver property bag, the queue property bag and the user property bag.
+\[in\] The [**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptcontext) object that provides access to the driver property bag, the queue property bag and the user property bag.
 *printTicket*
 
-\[in\]\[out\] The [**IPrintSchemaTicket**](https://msdn.microsoft.com/library/windows/hardware/hh451398) object representing the PrintTicket.
+\[in\]\[out\] The [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschematicket) object representing the PrintTicket.
 Return value
 
 None.
@@ -174,7 +174,7 @@ None.
 ## convertPrintTicketToDevMode function
 
 
-This API is called to convert values from a PrintTicket into the DEVMODE property bag. This is analogous in function to the [**IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode**](https://msdn.microsoft.com/library/windows/hardware/ff553167) API, except that this implementation encapsulates the private section of the DEVMODE into an **IPrinterScriptablePropertyBag** object and allows no access to the public section of the DEVMODE.
+This API is called to convert values from a PrintTicket into the DEVMODE property bag. This is analogous in function to the [**IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemprintticketprovider-convertprinttickettodevmode) API, except that this implementation encapsulates the private section of the DEVMODE into an **IPrinterScriptablePropertyBag** object and allows no access to the public section of the DEVMODE.
 
 Syntax
 

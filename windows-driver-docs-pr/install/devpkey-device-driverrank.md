@@ -52,11 +52,11 @@ Remarks
 
 Windows sets the value of DEVPKEY_Device_DriverRank.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_DriverRank.
+You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverRank.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverRank property key. For information about how to access this property on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverRank property key. For information about how to access this property on these earlier versions of Windows, see [Accessing Device Driver Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-driver-properties).
 
-For information about driver rank, see [How Windows Ranks Drivers](https://msdn.microsoft.com/library/windows/hardware/ff686700) .
+For information about driver rank, see [How Windows Ranks Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/how-setup-ranks-drivers) .
 
 Requirements
 ------------
@@ -81,11 +81,11 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiGetDriverInstallParams**](https://msdn.microsoft.com/library/windows/hardware/ff551978)
+[**SetupDiGetDriverInstallParams**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdriverinstallparamsa)
 
-[**SP_DRVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553290)
+[**SP_DRVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_drvinstall_params)
 
  
 

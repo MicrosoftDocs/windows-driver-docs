@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-**Note**  If you are reading this page because of the 27 November 2013 [Microsoft Security Advisory (2914486)](https://technet.microsoft.com/security/advisory/2914486) affecting Windows XP and Windows Server 2003, you may find this Trustworthy Computing [blog post](http://blogs.technet.com/b/msrc/archive/2013/11/27/microsoft-releases-security-advisory-2914486.aspx) helpful.
+**Note**  If you are reading this page because of the 27 November 2013 [Microsoft Security Advisory (2914486)](https://docs.microsoft.com/security-updates/SecurityAdvisories/2014/2914486) affecting Windows XP and Windows Server 2003, you may find this Trustworthy Computing [blog post](https://blogs.technet.microsoft.com/msrc/2013/11/27/microsoft-releases-security-advisory-2914486/) helpful.
 
  
 
@@ -52,7 +52,7 @@ The following list summarizes the interfaces that exist between NDPROXY and the 
 
 For more information about connection-oriented clients, call managers, miniport drivers, and MCMs, see [Connection-Oriented Environment](connection-oriented-environment.md).
 
-NDPROXY calls the [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) function with connection-oriented TAPI OIDs to determine the capabilities of a CoNDIS WAN miniport driver. NDPROXY also registers the TAPI-specific address family, creates virtual connections (VCs), makes and accepts calls, and activates VCs so that data can be sent and received on those VCs. For more information about handling OID requests in the CoNDIS WAN miniport driver, see [Handling Queries in a CoNDIS WAN Miniport Driver](handling-queries-in-a-condis-wan-miniport-driver.md) and [Setting CoNDIS WAN Miniport Driver Information](setting-condis-wan-miniport-driver-information.md).
+NDPROXY calls the [**NdisCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscooidrequest) function with connection-oriented TAPI OIDs to determine the capabilities of a CoNDIS WAN miniport driver. NDPROXY also registers the TAPI-specific address family, creates virtual connections (VCs), makes and accepts calls, and activates VCs so that data can be sent and received on those VCs. For more information about handling OID requests in the CoNDIS WAN miniport driver, see [Handling Queries in a CoNDIS WAN Miniport Driver](handling-queries-in-a-condis-wan-miniport-driver.md) and [Setting CoNDIS WAN Miniport Driver Information](setting-condis-wan-miniport-driver-information.md).
 
  
 

@@ -9,7 +9,7 @@ ms.date: 10/17/2018
 # NtXxx Routines
 
 
-This section describes the **Nt*Xxx*** versions of the Windows Native System Services routines. Most native system services routines have two versions, one of which has a name begins with the prefix **Nt**; the other version has a name that begins with the prefix **Zw**. For example, calls to [**NtCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff556465) and [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424) perform similar operations and are, in fact, serviced by the same kernel-mode system routine.
+This section describes the **Nt*Xxx*** versions of the Windows Native System Services routines. Most native system services routines have two versions, one of which has a name begins with the prefix **Nt**; the other version has a name that begins with the prefix **Zw**. For example, calls to [**NtCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile) and [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile) perform similar operations and are, in fact, serviced by the same kernel-mode system routine.
 
 For calls from kernel-mode drivers, the **Nt*Xxx*** and **Zw*Xxx*** versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the **Nt*Xxx*** and **Zw*Xxx*** versions of a routine, see [Using Nt and Zw Versions of the Native System Services Routines](using-nt-and-zw-versions-of-the-native-system-services-routines.md).
 
@@ -29,7 +29,7 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 <tbody>
 <tr class="odd">
 <td><p>NtAllocateLocallyUniqueId</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566415" data-raw-source="[&lt;strong&gt;ZwAllocateLocallyUniqueId&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566415)"><strong>ZwAllocateLocallyUniqueId</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-zwallocatelocallyuniqueid" data-raw-source="[&lt;strong&gt;ZwAllocateLocallyUniqueId&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-zwallocatelocallyuniqueid)"><strong>ZwAllocateLocallyUniqueId</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtAllocateVirtualMemory</p></td>
@@ -37,27 +37,27 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="odd">
 <td><p>NtClose</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566417" data-raw-source="[&lt;strong&gt;ZwClose&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566417)"><strong>ZwClose</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntclose" data-raw-source="[&lt;strong&gt;ZwClose&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntclose)"><strong>ZwClose</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtCommitComplete</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566418" data-raw-source="[&lt;strong&gt;ZwCommitComplete&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566418)"><strong>ZwCommitComplete</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcommitcomplete" data-raw-source="[&lt;strong&gt;ZwCommitComplete&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcommitcomplete)"><strong>ZwCommitComplete</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtCommitEnlistment</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566419" data-raw-source="[&lt;strong&gt;ZwCommitEnlistment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566419)"><strong>ZwCommitEnlistment</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcommitenlistment" data-raw-source="[&lt;strong&gt;ZwCommitEnlistment&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcommitenlistment)"><strong>ZwCommitEnlistment</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtCommitTransaction</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566420" data-raw-source="[&lt;strong&gt;ZwCommitTransaction&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566420)"><strong>ZwCommitTransaction</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcommittransaction" data-raw-source="[&lt;strong&gt;ZwCommitTransaction&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcommittransaction)"><strong>ZwCommitTransaction</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtCreateDirectoryObject</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566421" data-raw-source="[&lt;strong&gt;ZwCreateDirectoryObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566421)"><strong>ZwCreateDirectoryObject</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwcreatedirectoryobject" data-raw-source="[&lt;strong&gt;ZwCreateDirectoryObject&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwcreatedirectoryobject)"><strong>ZwCreateDirectoryObject</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtCreateEnlistment</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566422" data-raw-source="[&lt;strong&gt;ZwCreateEnlistment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566422)"><strong>ZwCreateEnlistment</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcreateenlistment" data-raw-source="[&lt;strong&gt;ZwCreateEnlistment&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcreateenlistment)"><strong>ZwCreateEnlistment</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtCreateEvent</p></td>
@@ -65,35 +65,35 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="even">
 <td><p>NtCreateFile</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566424" data-raw-source="[&lt;strong&gt;ZwCreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566424)"><strong>ZwCreateFile</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile" data-raw-source="[&lt;strong&gt;ZwCreateFile&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile)"><strong>ZwCreateFile</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtCreateKey</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566425" data-raw-source="[&lt;strong&gt;ZwCreateKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566425)"><strong>ZwCreateKey</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwcreatekey" data-raw-source="[&lt;strong&gt;ZwCreateKey&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwcreatekey)"><strong>ZwCreateKey</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtCreateResourceManager</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566427" data-raw-source="[&lt;strong&gt;ZwCreateResourceManager&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566427)"><strong>ZwCreateResourceManager</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcreateresourcemanager" data-raw-source="[&lt;strong&gt;ZwCreateResourceManager&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcreateresourcemanager)"><strong>ZwCreateResourceManager</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtCreateSection</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566428" data-raw-source="[&lt;strong&gt;ZwCreateSection&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566428)"><strong>ZwCreateSection</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwcreatesection" data-raw-source="[&lt;strong&gt;ZwCreateSection&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwcreatesection)"><strong>ZwCreateSection</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtCreateTransaction</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566429" data-raw-source="[&lt;strong&gt;ZwCreateTransaction&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566429)"><strong>ZwCreateTransaction</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcreatetransaction" data-raw-source="[&lt;strong&gt;ZwCreateTransaction&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcreatetransaction)"><strong>ZwCreateTransaction</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtCreateTransactionManager</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566430" data-raw-source="[&lt;strong&gt;ZwCreateTransactionManager&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566430)"><strong>ZwCreateTransactionManager</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcreatetransactionmanager" data-raw-source="[&lt;strong&gt;ZwCreateTransactionManager&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntcreatetransactionmanager)"><strong>ZwCreateTransactionManager</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtCurrentProcess</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566431" data-raw-source="[&lt;strong&gt;ZwCurrentProcess&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566431)"><strong>ZwCurrentProcess</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;ZwCurrentProcess&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)"><strong>ZwCurrentProcess</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtCurrentThread</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566434" data-raw-source="[&lt;strong&gt;ZwCurrentThread&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566434)"><strong>ZwCurrentThread</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;ZwCurrentThread&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)"><strong>ZwCurrentThread</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtDeleteFile</p></td>
@@ -101,11 +101,11 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="odd">
 <td><p>NtDeleteKey</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566437" data-raw-source="[&lt;strong&gt;ZwDeleteKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566437)"><strong>ZwDeleteKey</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwdeletekey" data-raw-source="[&lt;strong&gt;ZwDeleteKey&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwdeletekey)"><strong>ZwDeleteKey</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtDeleteValueKey</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566439" data-raw-source="[&lt;strong&gt;ZwDeleteValueKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566439)"><strong>ZwDeleteValueKey</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwdeletevaluekey" data-raw-source="[&lt;strong&gt;ZwDeleteValueKey&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwdeletevaluekey)"><strong>ZwDeleteValueKey</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtDeviceIoControlFile</p></td>
@@ -121,15 +121,15 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="even">
 <td><p>NtEnumerateKey</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566447" data-raw-source="[&lt;strong&gt;ZwEnumerateKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566447)"><strong>ZwEnumerateKey</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwenumeratekey" data-raw-source="[&lt;strong&gt;ZwEnumerateKey&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwenumeratekey)"><strong>ZwEnumerateKey</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtEnumerateTransactionObject</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566450" data-raw-source="[&lt;strong&gt;ZwEnumerateTransactionObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566450)"><strong>ZwEnumerateTransactionObject</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntenumeratetransactionobject" data-raw-source="[&lt;strong&gt;ZwEnumerateTransactionObject&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntenumeratetransactionobject)"><strong>ZwEnumerateTransactionObject</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtEnumerateValueKey</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566453" data-raw-source="[&lt;strong&gt;ZwEnumerateValueKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566453)"><strong>ZwEnumerateValueKey</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwenumeratevaluekey" data-raw-source="[&lt;strong&gt;ZwEnumerateValueKey&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwenumeratevaluekey)"><strong>ZwEnumerateValueKey</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtFlushBuffersFile</p></td>
@@ -141,7 +141,7 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="odd">
 <td><p>NtFlushKey</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566457" data-raw-source="[&lt;strong&gt;ZwFlushKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566457)"><strong>ZwFlushKey</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwflushkey" data-raw-source="[&lt;strong&gt;ZwFlushKey&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwflushkey)"><strong>ZwFlushKey</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtFlushVirtualMemory</p></td>
@@ -157,11 +157,11 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="odd">
 <td><p>NtGetNotificationResourceManager</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566467" data-raw-source="[&lt;strong&gt;ZwGetNotificationResourceManager&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566467)"><strong>ZwGetNotificationResourceManager</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntgetnotificationresourcemanager" data-raw-source="[&lt;strong&gt;ZwGetNotificationResourceManager&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntgetnotificationresourcemanager)"><strong>ZwGetNotificationResourceManager</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtLoadDriver</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566470" data-raw-source="[&lt;strong&gt;ZwLoadDriver&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566470)"><strong>ZwLoadDriver</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwloaddriver" data-raw-source="[&lt;strong&gt;ZwLoadDriver&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwloaddriver)"><strong>ZwLoadDriver</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtLockFile</p></td>
@@ -169,11 +169,11 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="even">
 <td><p>NtMakeTemporaryObject</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566477" data-raw-source="[&lt;strong&gt;ZwMakeTemporaryObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566477)"><strong>ZwMakeTemporaryObject</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwmaketemporaryobject" data-raw-source="[&lt;strong&gt;ZwMakeTemporaryObject&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwmaketemporaryobject)"><strong>ZwMakeTemporaryObject</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtMapViewOfSection</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566481" data-raw-source="[&lt;strong&gt;ZwMapViewOfSection&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566481)"><strong>ZwMapViewOfSection</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwmapviewofsection" data-raw-source="[&lt;strong&gt;ZwMapViewOfSection&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwmapviewofsection)"><strong>ZwMapViewOfSection</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtNotifyChangeKey</p></td>
@@ -185,23 +185,23 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="even">
 <td><p>NtOpenEnlistment</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567008" data-raw-source="[&lt;strong&gt;ZwOpenEnlistment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567008)"><strong>ZwOpenEnlistment</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntopenenlistment" data-raw-source="[&lt;strong&gt;ZwOpenEnlistment&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntopenenlistment)"><strong>ZwOpenEnlistment</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtOpenEvent</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567009" data-raw-source="[&lt;strong&gt;ZwOpenEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567009)"><strong>ZwOpenEvent</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwopenevent" data-raw-source="[&lt;strong&gt;ZwOpenEvent&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwopenevent)"><strong>ZwOpenEvent</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtOpenFile</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567011" data-raw-source="[&lt;strong&gt;ZwOpenFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567011)"><strong>ZwOpenFile</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntopenfile" data-raw-source="[&lt;strong&gt;ZwOpenFile&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntopenfile)"><strong>ZwOpenFile</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtOpenKey</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567014" data-raw-source="[&lt;strong&gt;ZwOpenKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567014)"><strong>ZwOpenKey</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwopenkey" data-raw-source="[&lt;strong&gt;ZwOpenKey&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwopenkey)"><strong>ZwOpenKey</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtOpenProcess</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567022" data-raw-source="[&lt;strong&gt;ZwOpenProcess&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567022)"><strong>ZwOpenProcess</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ntopenprocess" data-raw-source="[&lt;strong&gt;ZwOpenProcess&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ntopenprocess)"><strong>ZwOpenProcess</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtOpenProcessTokenEx</p></td>
@@ -209,15 +209,15 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="even">
 <td><p>NtOpenResourceManager</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567026" data-raw-source="[&lt;strong&gt;ZwOpenResourceManager&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567026)"><strong>ZwOpenResourceManager</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntopenresourcemanager" data-raw-source="[&lt;strong&gt;ZwOpenResourceManager&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntopenresourcemanager)"><strong>ZwOpenResourceManager</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtOpenSection</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567029" data-raw-source="[&lt;strong&gt;ZwOpenSection&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567029)"><strong>ZwOpenSection</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwopensection" data-raw-source="[&lt;strong&gt;ZwOpenSection&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwopensection)"><strong>ZwOpenSection</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtOpenSymbolicLinkObject</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567030" data-raw-source="[&lt;strong&gt;ZwOpenSymbolicLinkObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567030)"><strong>ZwOpenSymbolicLinkObject</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwopensymboliclinkobject" data-raw-source="[&lt;strong&gt;ZwOpenSymbolicLinkObject&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwopensymboliclinkobject)"><strong>ZwOpenSymbolicLinkObject</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtOpenThreadTokenEx</p></td>
@@ -225,31 +225,31 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="even">
 <td><p>NtOpenTransaction</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567033" data-raw-source="[&lt;strong&gt;ZwOpenTransaction&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567033)"><strong>ZwOpenTransaction</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntopentransaction" data-raw-source="[&lt;strong&gt;ZwOpenTransaction&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntopentransaction)"><strong>ZwOpenTransaction</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtOpenTransactionManager</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567035" data-raw-source="[&lt;strong&gt;ZwOpenTransactionManager&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567035)"><strong>ZwOpenTransactionManager</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntopentransactionmanager" data-raw-source="[&lt;strong&gt;ZwOpenTransactionManager&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntopentransactionmanager)"><strong>ZwOpenTransactionManager</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtPowerInformation</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/dn957454" data-raw-source="[&lt;strong&gt;ZwPowerInformation&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn957454)"><strong>ZwPowerInformation</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntpowerinformation" data-raw-source="[&lt;strong&gt;ZwPowerInformation&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntpowerinformation)"><strong>ZwPowerInformation</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtPrepareComplete</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567037" data-raw-source="[&lt;strong&gt;ZwPrepareComplete&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567037)"><strong>ZwPrepareComplete</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntpreparecomplete" data-raw-source="[&lt;strong&gt;ZwPrepareComplete&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntpreparecomplete)"><strong>ZwPrepareComplete</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtPrepareEnlistment</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567039" data-raw-source="[&lt;strong&gt;ZwPrepareEnlistment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567039)"><strong>ZwPrepareEnlistment</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntprepareenlistment" data-raw-source="[&lt;strong&gt;ZwPrepareEnlistment&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntprepareenlistment)"><strong>ZwPrepareEnlistment</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtPrePrepareComplete</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567040" data-raw-source="[&lt;strong&gt;ZwPrePrepareComplete&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567040)"><strong>ZwPrePrepareComplete</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntprepreparecomplete" data-raw-source="[&lt;strong&gt;ZwPrePrepareComplete&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntprepreparecomplete)"><strong>ZwPrePrepareComplete</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtPrePrepareEnlistment</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567044" data-raw-source="[&lt;strong&gt;ZwPrePrepareEnlistment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567044)"><strong>ZwPrePrepareEnlistment</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntpreprepareenlistment" data-raw-source="[&lt;strong&gt;ZwPrePrepareEnlistment&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntpreprepareenlistment)"><strong>ZwPrePrepareEnlistment</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtQueryDirectoryFile</p></td>
@@ -257,19 +257,19 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="even">
 <td><p>NtQueryFullAttributesFile</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567049" data-raw-source="[&lt;strong&gt;ZwQueryFullAttributesFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567049)"><strong>ZwQueryFullAttributesFile</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwqueryfullattributesfile" data-raw-source="[&lt;strong&gt;ZwQueryFullAttributesFile&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwqueryfullattributesfile)"><strong>ZwQueryFullAttributesFile</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtQueryInformationEnlistment</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567051" data-raw-source="[&lt;strong&gt;ZwQueryInformationEnlistment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567051)"><strong>ZwQueryInformationEnlistment</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntqueryinformationenlistment" data-raw-source="[&lt;strong&gt;ZwQueryInformationEnlistment&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntqueryinformationenlistment)"><strong>ZwQueryInformationEnlistment</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtQueryInformationFile</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567052" data-raw-source="[&lt;strong&gt;ZwQueryInformationFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567052)"><strong>ZwQueryInformationFile</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntqueryinformationfile" data-raw-source="[&lt;strong&gt;ZwQueryInformationFile&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntqueryinformationfile)"><strong>ZwQueryInformationFile</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtQueryInformationResourceManager</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567054" data-raw-source="[&lt;strong&gt;ZwQueryInformationResourceManager&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567054)"><strong>ZwQueryInformationResourceManager</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntqueryinformationresourcemanager" data-raw-source="[&lt;strong&gt;ZwQueryInformationResourceManager&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntqueryinformationresourcemanager)"><strong>ZwQueryInformationResourceManager</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtQueryInformationToken</p></td>
@@ -277,15 +277,15 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="odd">
 <td><p>NtQueryInformationTransaction</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567057" data-raw-source="[&lt;strong&gt;ZwQueryInformationTransaction&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567057)"><strong>ZwQueryInformationTransaction</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntqueryinformationtransaction" data-raw-source="[&lt;strong&gt;ZwQueryInformationTransaction&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntqueryinformationtransaction)"><strong>ZwQueryInformationTransaction</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtQueryInformationTransactionManager</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567058" data-raw-source="[&lt;strong&gt;ZwQueryInformationTransactionManager&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567058)"><strong>ZwQueryInformationTransactionManager</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntqueryinformationtransactionmanager" data-raw-source="[&lt;strong&gt;ZwQueryInformationTransactionManager&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntqueryinformationtransactionmanager)"><strong>ZwQueryInformationTransactionManager</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtQueryKey</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567060" data-raw-source="[&lt;strong&gt;ZwQueryKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567060)"><strong>ZwQueryKey</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwquerykey" data-raw-source="[&lt;strong&gt;ZwQueryKey&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwquerykey)"><strong>ZwQueryKey</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtQueryObject</p></td>
@@ -301,11 +301,11 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="odd">
 <td><p>NtQuerySecurityObject</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567068" data-raw-source="[&lt;strong&gt;ZwQuerySymbolicLinkObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567068)"><strong>ZwQuerySymbolicLinkObject</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwquerysymboliclinkobject" data-raw-source="[&lt;strong&gt;ZwQuerySymbolicLinkObject&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwquerysymboliclinkobject)"><strong>ZwQuerySymbolicLinkObject</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtQueryValueKey</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567069" data-raw-source="[&lt;strong&gt;ZwQueryValueKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567069)"><strong>ZwQueryValueKey</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwqueryvaluekey" data-raw-source="[&lt;strong&gt;ZwQueryValueKey&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwqueryvaluekey)"><strong>ZwQueryValueKey</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtQueryVirtualMemory</p></td>
@@ -317,39 +317,39 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="odd">
 <td><p>NtReadFile</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567072" data-raw-source="[&lt;strong&gt;ZwReadFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567072)"><strong>ZwReadFile</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntreadfile" data-raw-source="[&lt;strong&gt;ZwReadFile&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntreadfile)"><strong>ZwReadFile</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtReadOnlyEnlistment</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567074" data-raw-source="[&lt;strong&gt;ZwReadOnlyEnlistment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567074)"><strong>ZwReadOnlyEnlistment</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntreadonlyenlistment" data-raw-source="[&lt;strong&gt;ZwReadOnlyEnlistment&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntreadonlyenlistment)"><strong>ZwReadOnlyEnlistment</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtReadOnlyEnlistment</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567075" data-raw-source="[&lt;strong&gt;ZwRecoverEnlistment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567075)"><strong>ZwRecoverEnlistment</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrecoverenlistment" data-raw-source="[&lt;strong&gt;ZwRecoverEnlistment&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrecoverenlistment)"><strong>ZwRecoverEnlistment</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtRecoverResourceManager</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567078" data-raw-source="[&lt;strong&gt;ZwRecoverResourceManager&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567078)"><strong>ZwRecoverResourceManager</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrecoverresourcemanager" data-raw-source="[&lt;strong&gt;ZwRecoverResourceManager&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrecoverresourcemanager)"><strong>ZwRecoverResourceManager</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtRecoverTransactionManager</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567079" data-raw-source="[&lt;strong&gt;ZwRecoverTransactionManager&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567079)"><strong>ZwRecoverTransactionManager</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrecovertransactionmanager" data-raw-source="[&lt;strong&gt;ZwRecoverTransactionManager&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrecovertransactionmanager)"><strong>ZwRecoverTransactionManager</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtRollbackComplete</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567081" data-raw-source="[&lt;strong&gt;ZwRollbackComplete&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567081)"><strong>ZwRollbackComplete</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollbackcomplete" data-raw-source="[&lt;strong&gt;ZwRollbackComplete&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollbackcomplete)"><strong>ZwRollbackComplete</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtRollbackEnlistment</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567083" data-raw-source="[&lt;strong&gt;ZwRollbackEnlistment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567083)"><strong>ZwRollbackEnlistment</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollbackenlistment" data-raw-source="[&lt;strong&gt;ZwRollbackEnlistment&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollbackenlistment)"><strong>ZwRollbackEnlistment</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtRollbackTransaction</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567086" data-raw-source="[&lt;strong&gt;ZwRollbackTransaction&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567086)"><strong>ZwRollbackTransaction</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollbacktransaction" data-raw-source="[&lt;strong&gt;ZwRollbackTransaction&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollbacktransaction)"><strong>ZwRollbackTransaction</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtRollforwardTransactionManager</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567089" data-raw-source="[&lt;strong&gt;ZwRollforwardTransactionManager&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567089)"><strong>ZwRollforwardTransactionManager</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollforwardtransactionmanager" data-raw-source="[&lt;strong&gt;ZwRollforwardTransactionManager&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntrollforwardtransactionmanager)"><strong>ZwRollforwardTransactionManager</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtSetEvent</p></td>
@@ -357,19 +357,19 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="odd">
 <td><p>NtSetInformationEnlistment</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567094" data-raw-source="[&lt;strong&gt;ZwSetInformationEnlistment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567094)"><strong>ZwSetInformationEnlistment</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntsetinformationenlistment" data-raw-source="[&lt;strong&gt;ZwSetInformationEnlistment&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntsetinformationenlistment)"><strong>ZwSetInformationEnlistment</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtSetInformationFile</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567096" data-raw-source="[&lt;strong&gt;ZwSetInformationFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567096)"><strong>ZwSetInformationFile</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntsetinformationfile" data-raw-source="[&lt;strong&gt;ZwSetInformationFile&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntsetinformationfile)"><strong>ZwSetInformationFile</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtSetInformationResourceManager</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567098" data-raw-source="[&lt;strong&gt;ZwSetInformationResourceManager&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567098)"><strong>ZwSetInformationResourceManager</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntsetinformationresourcemanager" data-raw-source="[&lt;strong&gt;ZwSetInformationResourceManager&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntsetinformationresourcemanager)"><strong>ZwSetInformationResourceManager</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtSetInformationThread</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567101" data-raw-source="[&lt;strong&gt;ZwSetInformationThread&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567101)"><strong>ZwSetInformationThread</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-zwsetinformationthread" data-raw-source="[&lt;strong&gt;ZwSetInformationThread&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-zwsetinformationthread)"><strong>ZwSetInformationThread</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtSetInformationToken</p></td>
@@ -377,7 +377,7 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="even">
 <td><p>NtSetInformationTransaction</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567104" data-raw-source="[&lt;strong&gt;ZwSetInformationTransaction&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567104)"><strong>ZwSetInformationTransaction</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntsetinformationtransaction" data-raw-source="[&lt;strong&gt;ZwSetInformationTransaction&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntsetinformationtransaction)"><strong>ZwSetInformationTransaction</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtSetQuotaInformationFile</p></td>
@@ -389,7 +389,7 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="odd">
 <td><p>NtSetValueKey</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567109" data-raw-source="[&lt;strong&gt;ZwSetValueKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567109)"><strong>ZwSetValueKey</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwsetvaluekey" data-raw-source="[&lt;strong&gt;ZwSetValueKey&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwsetvaluekey)"><strong>ZwSetValueKey</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtSetVolumeInformationFile</p></td>
@@ -397,15 +397,15 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="odd">
 <td><p>NtSinglePhaseReject</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567113" data-raw-source="[&lt;strong&gt;ZwSinglePhaseReject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567113)"><strong>ZwSinglePhaseReject</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntsinglephasereject" data-raw-source="[&lt;strong&gt;ZwSinglePhaseReject&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ntsinglephasereject)"><strong>ZwSinglePhaseReject</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtTerminateProcess</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567115" data-raw-source="[&lt;strong&gt;ZwTerminateProcess&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567115)"><strong>ZwTerminateProcess</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-zwterminateprocess" data-raw-source="[&lt;strong&gt;ZwTerminateProcess&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-zwterminateprocess)"><strong>ZwTerminateProcess</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtUnloadDriver</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567117" data-raw-source="[&lt;strong&gt;ZwUnloadDriver&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567117)"><strong>ZwUnloadDriver</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwunloaddriver" data-raw-source="[&lt;strong&gt;ZwUnloadDriver&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwunloaddriver)"><strong>ZwUnloadDriver</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtUnlockFile</p></td>
@@ -413,7 +413,7 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="odd">
 <td><p>NtUnmapViewOfSection</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567119" data-raw-source="[&lt;strong&gt;ZwUnmapViewOfSection&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567119)"><strong>ZwUnmapViewOfSection</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwunmapviewofsection" data-raw-source="[&lt;strong&gt;ZwUnmapViewOfSection&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwunmapviewofsection)"><strong>ZwUnmapViewOfSection</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtWaitForSingleObject</p></td>
@@ -421,7 +421,7 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="odd">
 <td><p>NtWriteFile</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567121" data-raw-source="[&lt;strong&gt;ZwWriteFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567121)"><strong>ZwWriteFile</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntwritefile" data-raw-source="[&lt;strong&gt;ZwWriteFile&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntwritefile)"><strong>ZwWriteFile</strong></a></p></td>
 </tr>
 </tbody>
 </table>

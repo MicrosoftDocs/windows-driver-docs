@@ -24,7 +24,7 @@ Filter modules are stacked over a miniport adapter. For more information about t
 
 The filter modules in the driver stack can filter all send requests and receive indications that are associated with the underlying adapter. This is true for all protocol bindings to an adapter. For more information about NDIS 6.0 send and receive operations, see [Send and Receive Operations](send-and-receive-operations.md).
 
-Filter drivers do not provide direct support for legacy send and receive operations that are based on the [**NDIS\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff557086) structure. Instead, NDIS converts receive indications from legacy miniport drivers to [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures. Also, NDIS handles the required conversions from send requests that are based on NET\_BUFFER structures to legacy send requests that are based on NDIS\_PACKET structures.
+Filter drivers do not provide direct support for legacy send and receive operations that are based on the [**NDIS\_PACKET**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structure. Instead, NDIS converts receive indications from legacy miniport drivers to [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structures. Also, NDIS handles the required conversions from send requests that are based on NET\_BUFFER structures to legacy send requests that are based on NDIS\_PACKET structures.
 
 **Note**  A filter driver can change the send and receive *FliterXxx* functions for a filter module dynamically. For more information, see [Data Bypass Mode](data-bypass-mode.md).
 

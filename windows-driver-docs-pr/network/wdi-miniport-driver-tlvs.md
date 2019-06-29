@@ -343,7 +343,7 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI\_TLV\_WFD\_ASSOCIATION\_STATUS**](wdi-tlv-wfd-association-status.md)
 
 ## Related topics
-[WDI message structure](https://msdn.microsoft.com/library/windows/hardware/mt269163)  
+[WDI message structure](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-wi-fi-messages)  
 
 
 

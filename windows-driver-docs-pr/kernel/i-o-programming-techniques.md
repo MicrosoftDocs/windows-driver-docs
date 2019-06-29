@@ -25,7 +25,7 @@ This section describes programming techniques that can be used to work with obje
 
 [Legacy I/O Programming](legacy-i-o-programming.md)
 
-For architectural information on the I/O manager, see [Windows I/O Manager](windows-kernel-mode-i-o-manager.md). For reference information on I/O manager, see [I/O Manager Routines](https://msdn.microsoft.com/library/windows/hardware/ff551797).
+For architectural information on the I/O manager, see [Windows I/O Manager](windows-kernel-mode-i-o-manager.md). For reference information on I/O manager, see [I/O Manager Routines](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551797(v=vs.85)).
 
  
 

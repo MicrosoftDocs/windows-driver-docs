@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_dbg_dump_xxx_dbx"></span><span id="DDK_DBG_DUMP_XXX_DBX"></span>
 
 
-The DBG\_DUMP\_FIELD\_*XXX* bit flags are used by the **fOptions** member of the [**FIELD\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff545316) structure to control the behavior of the [**IG\_DUMP\_SYMBOL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff550906)[**Ioctl**](https://msdn.microsoft.com/library/windows/hardware/ff551084) operation.
+The DBG\_DUMP\_FIELD\_*XXX* bit flags are used by the **fOptions** member of the [**FIELD\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_field_info) structure to control the behavior of the [**IG\_DUMP\_SYMBOL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_sym_dump_param)[**Ioctl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nc-wdbgexts-pwindbg_ioctl_routine) operation.
 
 The following flags can be present.
 
@@ -104,11 +104,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**IG\_DUMP\_SYMBOL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff550906)
+[**IG\_DUMP\_SYMBOL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_sym_dump_param)
 
-[**Ioctl**](https://msdn.microsoft.com/library/windows/hardware/ff551084)
+[**Ioctl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nc-wdbgexts-pwindbg_ioctl_routine)
 
-[**FIELD\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff545316)
+[**FIELD\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_field_info)
 
  
 

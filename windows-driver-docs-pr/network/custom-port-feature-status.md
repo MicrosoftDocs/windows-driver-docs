@@ -55,7 +55,7 @@ mofcomp -N:root\virtualization\v2 Fabrikam_CustomPortData.mof
 net start vmms
 ```
 
-For more information about how to use the MOF compiler, see [Compiling a Driver's MOF File](https://msdn.microsoft.com/library/windows/hardware/ff542012).
+For more information about how to use the MOF compiler, see [Compiling a Driver's MOF File](https://docs.microsoft.com/windows-hardware/drivers/kernel/compiling-a-driver-s-mof-file).
 
 The following example shows how you can use the custom port feature status definition to obtain port data. In this example, the Fabrikam\_CustomPortData MOF class is used to obtain port status from a Hyper-V partition named "TestVm". The Fabrikam, Inc. extension is enabled on the vSwitch “TestSwitch”, and is returning 123 for the status.
 

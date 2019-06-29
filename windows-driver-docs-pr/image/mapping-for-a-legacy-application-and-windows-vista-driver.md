@@ -35,7 +35,7 @@ This table shows the mapping of a Windows Vista driver's callback transfer messa
 </tr>
 <tr class="even">
 <td><p>WIA_TRANSFER_MSG_END_OF_STREAM</p></td>
-<td><p>Ignored. This message always goes along with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545039" data-raw-source="[&lt;strong&gt;IWiaTransferCallback::GetNextStream&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545039)"><strong>IWiaTransferCallback::GetNextStream</strong></a>. Not duplicate any messages, this is implemented in the <strong>GetNextStream</strong> implementation instead.</p></td>
+<td><p>Ignored. This message always goes along with a call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wia_lh/nf-wia_lh-iwiatransfercallback-getnextstream" data-raw-source="[&lt;strong&gt;IWiaTransferCallback::GetNextStream&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wia_lh/nf-wia_lh-iwiatransfercallback-getnextstream)"><strong>IWiaTransferCallback::GetNextStream</strong></a>. Not duplicate any messages, this is implemented in the <strong>GetNextStream</strong> implementation instead.</p></td>
 </tr>
 <tr class="odd">
 <td><p>WIA_TRANSFER_MSG_END_OF_TRANSFER</p></td>
@@ -87,7 +87,7 @@ This table shows the mapping of a Windows Vista driver's file transfer messages 
 </tr>
 <tr class="even">
 <td><p>WIA_TRANSFER_MSG_END_OF_STREAM</p></td>
-<td><p>Ignored. This message always goes along with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545039" data-raw-source="[&lt;strong&gt;IWiaTransferCallback::GetNextStream&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545039)"><strong>IWiaTransferCallback::GetNextStream</strong></a>. To avoid duplicate messages, this message is implemented in the <strong>GetNextStream</strong> implementation instead.</p></td>
+<td><p>Ignored. This message always goes along with a call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wia_lh/nf-wia_lh-iwiatransfercallback-getnextstream" data-raw-source="[&lt;strong&gt;IWiaTransferCallback::GetNextStream&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wia_lh/nf-wia_lh-iwiatransfercallback-getnextstream)"><strong>IWiaTransferCallback::GetNextStream</strong></a>. To avoid duplicate messages, this message is implemented in the <strong>GetNextStream</strong> implementation instead.</p></td>
 </tr>
 <tr class="odd">
 <td><p>WIA_TRANSFER_MSG_END_OF_TRANSFER</p></td>
@@ -116,7 +116,7 @@ This table shows the mapping of a Windows Vista driver's file transfer messages 
 
  
 
-For more information on the legacy transfer messages see the [IWiaMiniDrvCallBack Interface](https://msdn.microsoft.com/library/windows/hardware/ff543943).
+For more information on the legacy transfer messages see the [IWiaMiniDrvCallBack Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nn-wiamindr_lh-iwiaminidrvcallback).
 
 For more information on the TYMED constants, see [Understanding TYMED](understanding-tymed.md).
 

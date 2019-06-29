@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 Use the *Microsoft Hardware APIs* to programmatically query and create submissions for hardware products within your organization's Partner Center account. These APIs are useful if your account manages many products, and you want to automate and optimize the submission process for these assets. These APIs use Azure Active Directory (Azure AD) to authenticate the calls from your app or service.
 The following steps describe the end-to-end process of using the Microsoft Hardware API:
 
-1. These APIs can only be used by developer accounts that belong to the [Partner Center program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
+1. These APIs can only be used by developer accounts that belong to the [Partner Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
 
 2. Make sure that you have completed the prerequisites below.
 
@@ -93,7 +93,7 @@ The following sample provides detailed code that demonstrate how to use the Micr
 
 ## Additional help
 
-If you have questions about the Microsoft Store submission API or need assistance managing your submissions with this API, visit the [support page](https://developer.microsoft.com/dashboard/account/help?returnUri=https://developer.microsoft.com/dashboard/hardware) and request help.
+If you have questions about the Microsoft Store submission API or need assistance managing your submissions with this API, visit the [support page](https://partner.microsoft.com/dashboard/account/help?returnUri=https://developer.microsoft.com/dashboard/hardware) and request help.
 
 ## Related topics
 

@@ -33,7 +33,7 @@ warning C28147: The use of a default pool tag (' kdD' or ' mdW') for calls to th
 
 The driver is specifying a default pool tag. Because the system tracks pool use by pool tag, only those drivers that use a unique pool tag can identify and distinguish their pool use.
 
-**ExAllocatePool** and **ExAllocatePoolWithQuota** are obsolete and should be replaced by [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) and [**ExAllocatePoolWithQuotaTag**](https://msdn.microsoft.com/library/windows/hardware/ff544513), which let you specify a unique pool tag.
+**ExAllocatePool** and **ExAllocatePoolWithQuota** are obsolete and should be replaced by [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag) and [**ExAllocatePoolWithQuotaTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithquotatag), which let you specify a unique pool tag.
 
  
 

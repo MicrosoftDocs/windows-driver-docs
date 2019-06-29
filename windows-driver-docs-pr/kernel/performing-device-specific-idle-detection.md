@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Instead of using the power manager's idle detection routines, a driver can perform its own idle detection based on device-specific criteria.
 
-Such a driver should put its idle device in the lowest possible sleep state that is valid for the current system power state. To do so, the driver requests a power IRP ([**PoRequestPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559734)) with minor IRP code [**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744), specifying the device power state to which the device should transition.
+Such a driver should put its idle device in the lowest possible sleep state that is valid for the current system power state. To do so, the driver requests a power IRP ([**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp)) with minor IRP code [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power), specifying the device power state to which the device should transition.
 
  
 

@@ -19,15 +19,15 @@ For UMDF version 1, you'll use extension commands implemented in wudfext.dll. St
 
 To determine why UMDF indicates outstanding files, use the following steps:
 
-1.  Use [**!wudfext.umdevstack**](https://msdn.microsoft.com/library/windows/hardware/ff566189) (UMDF 1) or [**!wdfkd.wdfumdevstack**](https://msdn.microsoft.com/library/windows/hardware/dn265379) (UMDF 2) to dump the device stack. The dump includes outstanding UMDF intra-stack files (that is, file objects that a driver in the stack created as opposed to file objects that were created by an application or by a driver in another stack).
+1.  Use [**!wudfext.umdevstack**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umdevstack) (UMDF 1) or [**!wdfkd.wdfumdevstack**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumdevstack) (UMDF 2) to dump the device stack. The dump includes outstanding UMDF intra-stack files (that is, file objects that a driver in the stack created as opposed to file objects that were created by an application or by a driver in another stack).
 
-2.  For each intra-stack file, run [**!wudfext.umfile**](https://msdn.microsoft.com/library/windows/hardware/ff566193) (UMDF 1) or [**!wdfkd.wdfumfile**](https://msdn.microsoft.com/library/windows/hardware/dn265382) (UMDF 2) to obtain information about the file.
+2.  For each intra-stack file, run [**!wudfext.umfile**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umfile) (UMDF 1) or [**!wdfkd.wdfumfile**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumfile) (UMDF 2) to obtain information about the file.
 
     The output includes the list of IRPs that are pending.
 
-3.  Determine why each IRP is outstanding by using [**!wudfext.umirp**](https://msdn.microsoft.com/library/windows/hardware/ff566195) (UMDF 1) or [**!wdfkd.wdfumirp**](https://msdn.microsoft.com/library/windows/hardware/dn265383) (UMDF 2) to obtain information about the IRP.
+3.  Determine why each IRP is outstanding by using [**!wudfext.umirp**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umirp) (UMDF 1) or [**!wdfkd.wdfumirp**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumirp) (UMDF 2) to obtain information about the IRP.
 
-    From the output of each [**!wudfext.umirp**](https://msdn.microsoft.com/library/windows/hardware/ff566195) or [**!wdfkd.wdfumirp**](https://msdn.microsoft.com/library/windows/hardware/dn265383):
+    From the output of each [**!wudfext.umirp**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umirp) or [**!wdfkd.wdfumirp**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumirp):
 
     -   Determine if the IRP completed.
     -   Determine if a driver-created request was not deleted either explicitly by the driver or implicitly by the object tree.

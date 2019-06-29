@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-The format of an object is exposed through the [**WIA\_IPA\_FORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff551553) property as a GUID. The mapping between PTP format codes and WIA GUIDs is shown in the following table:
+The format of an object is exposed through the [**WIA\_IPA\_FORMAT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-format) property as a GUID. The mapping between PTP format codes and WIA GUIDs is shown in the following table:
 
 <table>
 <colgroup>

@@ -68,10 +68,10 @@ The filtering condition identifiers are each represented by a GUID. These identi
 <p>FWPM_CONDITION_ARRIVAL_TUNNEL_TYPE</p>
 </td>
 <td>
-<p>The encapsulation method used by a tunnel if the IfType member of the <a href="https://msdn.microsoft.com/library/windows/hardware/aa366058"><b>IP_ADAPTER_ADDRESSES</b></a> structure is
+<p>The encapsulation method used by a tunnel if the IfType member of the <a href="https://docs.microsoft.com/windows/desktop/api/iptypes/ns-iptypes-_ip_adapter_addresses_lh"><b>IP_ADAPTER_ADDRESSES</b></a> structure is
        IF_TYPE_TUNNEL. The tunnel type is defined by the IANA. For more information, see 
        <a href="http://www.iana.org/assignments/ianaiftype-mib/ianaiftype-mib">IANAifType-MIB Definitions</a>and the Windows
-       SDK <a href="https://msdn.microsoft.com/library/windows/hardware/ff557015">IP Helper</a> documentation.</p>
+       SDK <a href="https://docs.microsoft.com/windows-hardware/drivers/network/ip-helper">IP Helper</a> documentation.</p>
 <p>WFP uses the Arrival interface to match this condition. The Arrival Interface is the first interface the
        packet sees before entering the IP stack inbound from the network, before weak-host or forwarding are
        performed.</p>
@@ -94,7 +94,7 @@ The filtering condition identifiers are each represented by a GUID. These identi
 </td>
 <td>
 <p>The 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff557080"><b>LUID</b></a> for the network interface that is associated with the
+       <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/igpupvdev/ns-igpupvdev-_luid"><b>LUID</b></a> for the network interface that is associated with the
        arrival IP address.</p>
 <p>WFP uses the Arrival interface to match this condition. The Arrival Interface is the first interface the
        packet sees before entering the IP stack inbound from the network, before weak-host or forwarding are
@@ -163,10 +163,10 @@ The filtering condition identifiers are each represented by a GUID. These identi
 <p>FWPM_CONDITION_NEXTHOP_TUNNEL_TYPE</p>
 </td>
 <td>
-<p>The encapsulation method used by a tunnel if the <b>IfType</b> member of the  <a href="https://msdn.microsoft.com/library/windows/hardware/aa366058"><b>IP_ADAPTER_ADDRESSES</b></a> structure is
+<p>The encapsulation method used by a tunnel if the <b>IfType</b> member of the  <a href="https://docs.microsoft.com/windows/desktop/api/iptypes/ns-iptypes-_ip_adapter_addresses_lh"><b>IP_ADAPTER_ADDRESSES</b></a> structure is
        IF_TYPE_TUNNEL. The tunnel type is defined by the IANA. For more information, see 
        <a href="http://www.iana.org/assignments/ianaiftype-mib/ianaiftype-mib">IANAifType-MIB Definitions</a> and the Windows
-       SDK <a href="https://msdn.microsoft.com/library/windows/hardware/ff557015">IP Helper</a> documentation.</p>
+       SDK <a href="https://docs.microsoft.com/windows-hardware/drivers/network/ip-helper">IP Helper</a> documentation.</p>
 <p>WFP uses the Next Hop interface to match this condition. The Next Hop Interface is the last interface the
        packet sees before leaving the IP stack outbound towards the network, after weak-host or forwarding are
        performed.</p>
@@ -189,7 +189,7 @@ The filtering condition identifiers are each represented by a GUID. These identi
 </td>
 <td>
 <p>The 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff557080"><b>LUID</b></a>for the network interface that is associated with the
+       <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/igpupvdev/ns-igpupvdev-_luid"><b>LUID</b></a>for the network interface that is associated with the
        arrival IP address.</p>
 <p>WFP uses the Next Hop interface to match this condition. The Next Hop Interface is the last interface the
        packet sees before leaving the IP stack outbound towards the network, after weak-host or forwarding are
@@ -322,7 +322,7 @@ NlatBroadcast
 <p>FWPM_CONDITION_IP_PROTOCOL</p>
 </td>
 <td>
-<p>The IP protocol number, as specified in <a href="http://tools.ietf.org/html/rfc1700">RFC 1700</a>.</p>
+<p>The IP protocol number, as specified in <a href="https://tools.ietf.org/html/rfc1700">RFC 1700</a>.</p>
 </td>
 </tr>
 <tr>
@@ -346,7 +346,7 @@ NlatBroadcast
 <p>FWPM_CONDITION_ICMP_TYPE</p>
 </td>
 <td>
-<p>The ICMP type field, as specified in <a href="http://tools.ietf.org/html/rfc792">RFC 792</a>.</p>
+<p>The ICMP type field, as specified in <a href="https://tools.ietf.org/html/rfc792">RFC 792</a>.</p>
 </td>
 </tr>
 <tr>
@@ -354,7 +354,7 @@ NlatBroadcast
 <p>FWPM_CONDITION_ICMP_CODE</p>
 </td>
 <td>
-<p>The ICMP code field, as specified in <a href="http://tools.ietf.org/html/rfc792">RFC 792</a>.</p>
+<p>The ICMP code field, as specified in <a href="https://tools.ietf.org/html/rfc792">RFC 792</a>.</p>
 </td>
 </tr>
 <tr>
@@ -401,7 +401,7 @@ NlatBroadcast
 <p>FWPM_CONDITION_EMBEDDED_PROTOCOL</p>
 </td>
 <td>
-<p>The IP protocol number that is embedded in the ICMP packet, as specified in <a href="http://tools.ietf.org/html/rfc1700">RFC 1700</a>.</p>
+<p>The IP protocol number that is embedded in the ICMP packet, as specified in <a href="https://tools.ietf.org/html/rfc1700">RFC 1700</a>.</p>
 </td>
 </tr>
 <tr>
@@ -565,7 +565,7 @@ SIO_RCVALL_MCAST
 </dd>
 </dl>
 </p>
-<p>For a description of these raw socket modes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ms741621"><b>WSAIoctl</b></a> in the Microsoft Windows SDK documentation.</p>
+<p>For a description of these raw socket modes, see <a href="https://docs.microsoft.com/windows/desktop/api/winsock2/nf-winsock2-wsaioctl"><b>WSAIoctl</b></a> in the Microsoft Windows SDK documentation.</p>
 </td>
 </tr>
 <tr>
@@ -661,7 +661,7 @@ RPC_PROTSEQ_NMP
 </td>
 <td>
 <p>The authentication service type. For more information about authentication service types, see
-       <a href="https://msdn.microsoft.com/library/windows/hardware/aa373556"><b>Authentication-Service Constants</b></a> in the RPC section of the Windows SDK documentation.</p>
+       <a href="https://docs.microsoft.com/windows/desktop/Rpc/authentication-service-constants"><b>Authentication-Service Constants</b></a> in the RPC section of the Windows SDK documentation.</p>
 </td>
 </tr>
 <tr>
@@ -670,7 +670,7 @@ RPC_PROTSEQ_NMP
 </td>
 <td>
 <p>The authentication service level. For more information about authentication service levels, see
-       <a href="https://msdn.microsoft.com/library/windows/hardware/aa373553"><b>Authentication-Level Constants</b></a> in the RPC section of the Windows SDK documentation.</p>
+       <a href="https://docs.microsoft.com/windows/desktop/Rpc/authentication-level-constants"><b>Authentication-Level Constants</b></a> in the RPC section of the Windows SDK documentation.</p>
 </td>
 </tr>
 <tr>
@@ -783,7 +783,7 @@ RPC_PROTSEQ_NMP
 </td>
 <td>
 <p>The RPC proxy authentication service type. For more information about authentication service types, see
-       <a href="https://msdn.microsoft.com/library/windows/hardware/aa373556"><b>Authentication-Service Constants</b></a> in the RPC section of the Windows SDK documentation.</p>
+       <a href="https://docs.microsoft.com/windows/desktop/Rpc/authentication-service-constants"><b>Authentication-Service Constants</b></a> in the RPC section of the Windows SDK documentation.</p>
 </td>
 </tr>
 <tr>
@@ -883,7 +883,7 @@ If the frame is ETHERNET II, this value is 0.
 <p>FWPM_CONDITION_NDIS_MEDIA_TYPE</p>
 </td>
 <td>
-<p>The type of the NDIS medium specified as one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565910"><b>NDIS_MEDIUM</b></a> enumeration values.</p>
+<p>The type of the NDIS medium specified as one of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_medium"><b>NDIS_MEDIUM</b></a> enumeration values.</p>
 <div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
 <div> </div>
 </td>
@@ -915,7 +915,7 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 <p>FWPM_CONDITION_MAC_LOCAL_ADDRESS_TYPE</p>
 </td>
 <td>
-<p>The Datalink type of the local MAC address. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/dd744934"><b>DL_ADDRESS_TYPE</b></a> enumeration in FwpmTypes.h.</p>
+<p>The Datalink type of the local MAC address. This is one of the values that are defined in the <a href="https://docs.microsoft.com/windows/desktop/api/fwpmtypes/ne-fwpmtypes-__midl___midl_itf_fwpmtypes_0000_0000_0001"><b>DL_ADDRESS_TYPE</b></a> enumeration in FwpmTypes.h.</p>
 <div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
 <div> </div>
 </td>
@@ -925,7 +925,7 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 <p>FWPM_CONDITION_MAC_REMOTE_ADDRESS_TYPE</p>
 </td>
 <td>
-<p>The Datalink type of the remote MAC address. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/dd744934"><b>DL_ADDRESS_TYPE</b></a> enumeration in FwpmTypes.h.</p>
+<p>The Datalink type of the remote MAC address. This is one of the values that are defined in the <a href="https://docs.microsoft.com/windows/desktop/api/fwpmtypes/ne-fwpmtypes-__midl___midl_itf_fwpmtypes_0000_0000_0001"><b>DL_ADDRESS_TYPE</b></a> enumeration in FwpmTypes.h.</p>
 <div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
 <div> </div>
 </td>
@@ -975,7 +975,7 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 <p>FWPM_CONDITION_MAC_SOURCE_ADDRESS_TYPE</p>
 </td>
 <td>
-<p>The Datalink type of the MAC Address for the interface that created the frame. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/dd744934"><b>DL_ADDRESS_TYPE</b></a> enumeration in FwpmTypes.h.</p>
+<p>The Datalink type of the MAC Address for the interface that created the frame. This is one of the values that are defined in the <a href="https://docs.microsoft.com/windows/desktop/api/fwpmtypes/ne-fwpmtypes-__midl___midl_itf_fwpmtypes_0000_0000_0001"><b>DL_ADDRESS_TYPE</b></a> enumeration in FwpmTypes.h.</p>
 <div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
 <div> </div>
 </td>
@@ -985,7 +985,7 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 <p>FWPM_CONDITION_MAC_DESTINATION_ADDRESS_TYPE</p>
 </td>
 <td>
-<p>The Datalink type of the MAC Address for the interface to which the frame is destined. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/dd744934"><b>DL_ADDRESS_TYPE</b></a> enumeration in FwpmTypes.h.</p>
+<p>The Datalink type of the MAC Address for the interface to which the frame is destined. This is one of the values that are defined in the <a href="https://docs.microsoft.com/windows/desktop/api/fwpmtypes/ne-fwpmtypes-__midl___midl_itf_fwpmtypes_0000_0000_0001"><b>DL_ADDRESS_TYPE</b></a> enumeration in FwpmTypes.h.</p>
 <div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
 <div> </div>
 </td>
@@ -1025,7 +1025,7 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 <p>FWPM_CONDITION_VSWITCH_NETWORK_TYPE</p>
 </td>
 <td>
-<p>The type of network that is associated with the virtual switch. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh447394"><b>FWP_VSWITCH_NETWORK_TYPE</b></a> enumeration in FwpTypes.h.</p>
+<p>The type of network that is associated with the virtual switch. This is one of the values that are defined in the <a href="https://docs.microsoft.com/windows/desktop/api/fwptypes/ne-fwptypes-fwp_vswitch_network_type_"><b>FWP_VSWITCH_NETWORK_TYPE</b></a> enumeration in FwpTypes.h.</p>
 <div class="alert"><b>Note</b>  Supported in <i>Windows 8</i> and later versions of Windows.</div>
 <div> </div>
 </td>
@@ -1055,7 +1055,7 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 <p>FWPM_CONDITION_VSWITCH_SOURCE_INTERFACE_TYPE</p>
 </td>
 <td>
-<p>The type of the virtual switch interface that created the frame. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451589"><b>NDIS_NIC_SWITCH_TYPE</b></a> enumeration in Ntddndis.h.</p>
+<p>The type of the virtual switch interface that created the frame. This is one of the values that are defined in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_nic_switch_type"><b>NDIS_NIC_SWITCH_TYPE</b></a> enumeration in Ntddndis.h.</p>
 <div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
 <div> </div>
 </td>
@@ -1065,7 +1065,7 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 <p>FWPM_CONDITION_VSWITCH_DESTINATION_INTERFACE_TYPE</p>
 </td>
 <td>
-<p>The type of the virtual switch interface to which the frame is destined. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451589"><b>NDIS_NIC_SWITCH_TYPE</b></a> enumeration in Ntddndis.h.</p>
+<p>The type of the virtual switch interface to which the frame is destined. This is one of the values that are defined in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_nic_switch_type"><b>NDIS_NIC_SWITCH_TYPE</b></a> enumeration in Ntddndis.h.</p>
 <div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
 <div> </div>
 </td>

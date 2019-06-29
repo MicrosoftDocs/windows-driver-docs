@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Resources for HID over I2C
 
 
-For additional information, refer to the [HID over I²C Protocol Specification](https://msdn.microsoft.com/library/windows/hardware/dn642101) on MSDN.
+For additional information, refer to the [HID over I²C Protocol Specification](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn642101(v=vs.85)) on MSDN.
 
  
 

@@ -15,9 +15,9 @@ NDIS issues an object identifier (OID) query request of OID\_SRIOV\_PROBED\_BARS
 
 NDIS issues OID query requests of OID\_SRIOV\_PROBED\_BARS to the miniport driver for the network adapter's PCIe Physical Function (PF). This OID query request is required for PF miniport drivers that support the single root I/O virtualization (SR-IOV) interface.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to a buffer. This buffer is formatted to contain the following:
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a buffer. This buffer is formatted to contain the following:
 
--   An [**NDIS\_SRIOV\_PROBED\_BARS\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451679) structure that contains the parameters for a read operation on the PCI BARs of a network adapter.
+-   An [**NDIS\_SRIOV\_PROBED\_BARS\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_sriov_probed_bars_info) structure that contains the parameters for a read operation on the PCI BARs of a network adapter.
 
 -   An array of ULONG values for each BAR of the PCIe network adapter. The maximum number of elements within this array is PCI\_TYPE0\_ADDRESSES.
 
@@ -40,13 +40,13 @@ Because access to the PCI configuration space is a privileged operation, it can 
 
  
 
-The OID\_SRIOV\_PROBED\_BARS query request contains an [**NDIS\_SRIOV\_PROBED\_BARS\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451679) structure. When the PF miniport driver handles this OID, the driver must return the PCI BAR values within the array referenced by the **BaseRegisterValuesOffset** member of the **NDIS\_SRIOV\_PROBED\_BARS\_INFO** structure. For each offset within the array, the PF miniport driver must set the array element to the ULONG value of the BAR at the same offset within the physical adapter's PCI configuration space.
+The OID\_SRIOV\_PROBED\_BARS query request contains an [**NDIS\_SRIOV\_PROBED\_BARS\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_sriov_probed_bars_info) structure. When the PF miniport driver handles this OID, the driver must return the PCI BAR values within the array referenced by the **BaseRegisterValuesOffset** member of the **NDIS\_SRIOV\_PROBED\_BARS\_INFO** structure. For each offset within the array, the PF miniport driver must set the array element to the ULONG value of the BAR at the same offset within the physical adapter's PCI configuration space.
 
-Each BAR value returned by the driver must be the same value that would follow a PCI BAR query as performed by the PCI driver that runs in the management operating system. The PF miniport driver can call [**NdisMQueryProbedBars**](https://msdn.microsoft.com/library/windows/hardware/hh451520) to determine this information.
+Each BAR value returned by the driver must be the same value that would follow a PCI BAR query as performed by the PCI driver that runs in the management operating system. The PF miniport driver can call [**NdisMQueryProbedBars**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismqueryprobedbars) to determine this information.
 
 For more information about the BARs of a PCI device, see the *PCI Local Bus Specification*.
 
-For more information on how to query PCI BAR registers for a VF, see the [Querying the PCI Base Address Registers of a Virtual Function](https://msdn.microsoft.com/library/windows/hardware/hh440182).
+For more information on how to query PCI BAR registers for a VF, see the [Querying the PCI Base Address Registers of a Virtual Function](https://docs.microsoft.com/windows-hardware/drivers/network/querying-the-pci-base-address-registers-of-a-virtual-function).
 
 ### Return Status Codes
 
@@ -74,11 +74,11 @@ The PF miniport driver returns one of the following status codes for the query r
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451679" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_PROBED_BARS_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451679)"><strong>NDIS_SRIOV_PROBED_BARS_INFO</strong></a> structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_sriov_probed_bars_info" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_PROBED_BARS_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_sriov_probed_bars_info)"><strong>NDIS_SRIOV_PROBED_BARS_INFO</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer is less than (sizeof(<a href="https://msdn.microsoft.com/library/windows/hardware/hh451679" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_PROBED_BARS_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451679)"><strong>NDIS_SRIOV_PROBED_BARS_INFO</strong></a>) + PCI_TYPE0_ADDRESSES). The PF miniport driver must set the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer is less than (sizeof(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_sriov_probed_bars_info" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_PROBED_BARS_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_sriov_probed_bars_info)"><strong>NDIS_SRIOV_PROBED_BARS_INFO</strong></a>) + PCI_TYPE0_ADDRESSES). The PF miniport driver must set the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -113,11 +113,11 @@ Requirements
 
 
 ****
-[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
+[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)
 
-[**NDIS\_SRIOV\_PROBED\_BARS\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451679)
+[**NDIS\_SRIOV\_PROBED\_BARS\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_sriov_probed_bars_info)
 
-[**NdisMQueryProbedBars**](https://msdn.microsoft.com/library/windows/hardware/hh451520)
+[**NdisMQueryProbedBars**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismqueryprobedbars)
 
  
 

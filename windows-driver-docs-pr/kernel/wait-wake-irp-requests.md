@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 
 
 
-To send an [**IRP\_MN\_WAIT\_WAKE**](https://msdn.microsoft.com/library/windows/hardware/ff551766), a driver calls [**PoRequestPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559734), passing (among other parameters) a pointer to the target PDO, a system power state, and a pointer to a callback routine.
+To send an [**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake), a driver calls [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp), passing (among other parameters) a pointer to the target PDO, a system power state, and a pointer to a callback routine.
 
-The system power state specifies the least-powered state from which this IRP can wake the system. The value must be equal to or more powered than the [**SystemWake**](systemwake.md) state in the [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure. For example, if a driver passes **PowerSystemSleeping2** in the IRP, the associated IRP could cause the system to wake from states S0, S1, and S2. In such a case, the system must support S0 and S2 (the highest- and lowest-powered states in the range) but need not support S1.
+The system power state specifies the least-powered state from which this IRP can wake the system. The value must be equal to or more powered than the [**SystemWake**](systemwake.md) state in the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure. For example, if a driver passes **PowerSystemSleeping2** in the IRP, the associated IRP could cause the system to wake from states S0, S1, and S2. In such a case, the system must support S0 and S2 (the highest- and lowest-powered states in the range) but need not support S1.
 
 Every driver that requests a wait/wake IRP should specify a [callback routine](wait-wake-callback-routines.md), which is invoked after all other drivers have completed the IRP. In this routine, the driver can do whatever is necessary to return its device to the working state.
 

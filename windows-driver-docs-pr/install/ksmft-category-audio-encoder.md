@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSMFT_CATEGORY_AUDIO_ENCODER
 
 
-The KSMFT_CATEGORY_AUDIO_ENCODER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842) (KS) functional category for an audio device.
+The KSMFT_CATEGORY_AUDIO_ENCODER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [Kernel Streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/kernel-streaming) (KS) functional category for an audio device.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT_CATEGORY_AUDIO_ENCODER functional category.
 
-For more information about device interface classes for AVStream devices with hardware codec support, see [Getting Started with Hardware Codec Support in AVStream](https://msdn.microsoft.com/library/windows/hardware/gg299325).
+For more information about device interface classes for AVStream devices with hardware codec support, see [Getting Started with Hardware Codec Support in AVStream](https://docs.microsoft.com/windows-hardware/drivers/stream/getting-started-with-hardware-codec-support-in-avstream).
 
 For more information about how to register this functional category in an INF file, see the *Hiddigi.inf* file, which is included with the *src\\input\\hiddigi* sample drivers in the WDK.
 

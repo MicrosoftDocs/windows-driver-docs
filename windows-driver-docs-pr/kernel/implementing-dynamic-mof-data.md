@@ -23,7 +23,7 @@ A driver's schema can be published dynamically by including binary MOF data in t
 
 4.  Register as supporting MSWmi\_MofData\_GUID, which is a GUID defined in wmidata.h.
 
-5.  Return selected binary data to WMI in response to both the [**IRP\_MN\_QUERY\_ALL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff551650) or [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](https://msdn.microsoft.com/library/windows/hardware/ff551718) requests for MSWmi\_MofData\_GUID.
+5.  Return selected binary data to WMI in response to both the [**IRP\_MN\_QUERY\_ALL\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-all-data) or [**IRP\_MN\_QUERY\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-single-instance) requests for MSWmi\_MofData\_GUID.
 
 For more information about the wmimofck utility see [Using wmimofck.exe](using-wmimofck-exe.md).
 

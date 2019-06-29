@@ -22,12 +22,12 @@ The **FSCTL\_IS\_VOLUME\_DIRTY** control code determines whether the specified v
 
 If the volume information file is corrupted, NTFS will return STATUS\_FILE\_CORRUPT\_ERROR.
 
-To perform this operation, minifilter drivers call [**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) with the following parameters, and file systems, redirectors, and legacy file system filter drivers call [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, minifilter drivers call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) with the following parameters, and file systems, redirectors, and legacy file system filter drivers call [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
 
 **Parameters**
 
 <a href="" id="fileobject"></a>*FileObject*  
-[**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) only. File object pointer for the volume. This parameter must represent a user volume open of a mounted file system volume. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) only. File object pointer for the volume. This parameter must represent a user volume open of a mounted file system volume. This parameter is required and cannot be **NULL**.
 
 <a href="" id="filehandle"></a>*FileHandle*  
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. Handle for the volume. This parameter must be a handle for a user volume open of a mounted file system volume. This parameter is required and cannot be **NULL**.
@@ -79,7 +79,7 @@ Size, in bytes, of the buffer that is pointed to by the *OutputBuffer* parameter
 Status block
 ------------
 
-[**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values:
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values:
 
 <table>
 <colgroup>
@@ -133,11 +133,11 @@ Requirements
 ## See also
 
 
-[**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620)
+[**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_callback_data)
 
 [**FLT\_PARAMETERS for IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](flt-parameters-for-irp-mj-file-system-control.md)
 
-[**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988)
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile)
 
 [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
 

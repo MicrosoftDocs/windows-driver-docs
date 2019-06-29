@@ -62,9 +62,9 @@ The *DDInstall* section name must be referenced by a device/models-specific entr
 
 If a specified **{**<em>InterfaceClassGUID</em>**}** is not installed already, the operating system's setup code installs that device interface class in the system. If an INF file installs one or more new device interface classes, it also has an **\[InterfaceInstall32\]** section identifying the GUID for the new class..
 
-For more information about how to create a GUID, see [Using GUIDs in Drivers](https://msdn.microsoft.com/library/windows/hardware/ff565392). For the system-defined interface class GUIDs, see the appropriate system-supplied header, such as *Ks.h* for the kernel-streaming interface class GUIDS.
+For more information about how to create a GUID, see [Using GUIDs in Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-guids-in-drivers). For the system-defined interface class GUIDs, see the appropriate system-supplied header, such as *Ks.h* for the kernel-streaming interface class GUIDS.
 
-When a driver is loaded, it must call [**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700) once for each **{**<em>InterfaceClassGUID</em>**}** value specified in the INF's <em>DDInstall</em>**.Interfaces** section that the driver supports on the underlying device, to enable the interface for run-time use by higher level components. Instead of registering support for a device interface in an INF, a device driver can call [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) before making its initial call to **IoSetDeviceInterfaceState**. Usually, a PnP function or filter driver makes this call from its [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine.
+When a driver is loaded, it must call [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate) once for each **{**<em>InterfaceClassGUID</em>**}** value specified in the INF's <em>DDInstall</em>**.Interfaces** section that the driver supports on the underlying device, to enable the interface for run-time use by higher level components. Instead of registering support for a device interface in an INF, a device driver can call [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) before making its initial call to **IoSetDeviceInterfaceState**. Usually, a PnP function or filter driver makes this call from its [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine.
 
 Examples
 --------
@@ -105,9 +105,9 @@ KSNAME_Topology = "Topology"
 
 [**InterfaceInstall32**](inf-interfaceinstall32-section.md)
 
-[**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506)
+[**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface)
 
-[**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700)
+[**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate)
 
 [***Models***](inf-models-section.md)
 

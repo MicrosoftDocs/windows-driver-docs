@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # JSConstraintsDebug
 
 
-JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides debugging support for [JavaScript Constraints](https://msdn.microsoft.com/library/windows/hardware/jj218731) while developing a [V4 printer driver](https://msdn.microsoft.com/library/windows/hardware/hh706306).
+JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides debugging support for [JavaScript Constraints](https://docs.microsoft.com/windows-hardware/drivers/print/javascript-constraints) while developing a [V4 printer driver](https://docs.microsoft.com/windows-hardware/drivers/print/v4-printer-driver).
 
 <table>
 <colgroup>
@@ -31,13 +31,13 @@ JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides
 
 The tool executes each of the following relevant entry point APIs on the JavaScript constraints of the targeted driver against the user provided print ticket:
 
-[**PTGetPrintCapabilities**](https://msdn.microsoft.com/library/windows/desktop/dd162881)
+[**PTGetPrintCapabilities**](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptgetprintcapabilities)
 
-[**PTConvertDevModeToPrintTicket**](https://msdn.microsoft.com/library/windows/desktop/dd162879)
+[**PTConvertDevModeToPrintTicket**](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertdevmodetoprintticket)
 
-[**TConvertPrintTicketToDevMode**](https://msdn.microsoft.com/library/windows/desktop/dd162880)
+[**TConvertPrintTicketToDevMode**](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertprinttickettodevmode)
 
-[**PTMergeAndValidatePrintTicket**](https://msdn.microsoft.com/library/windows/desktop/dd162884)
+[**PTMergeAndValidatePrintTicket**](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket)
 
 During execution the tool will prompt for an appropriate IDE debugger such as Visual Studio. Upon selection, the constraints source code will be opened and stopped at a JavaScript debugger statement.
 

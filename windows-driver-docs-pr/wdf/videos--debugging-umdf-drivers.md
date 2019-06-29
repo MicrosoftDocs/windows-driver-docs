@@ -42,12 +42,12 @@ In this video, you'll learn about UMDF debugging basics, including preparing you
 
 In this part, you'll learn how to start debugging a UMDF driver. The video describes how to set up the OSR USB-FX2 driver sample and application sample so that three instances of the app send read, write, and device I/O control requests to the driver. You'll see how the requests flow first to the reflector, and then to the user mode driver host process. This video introduces the WDF object hierarchy for the FX2 driver sample, and discusses how to use the following UMDF debugger extensions to traverse the UMDF object hierarchy:
 
--   [**!wudfext.umdevstacks**](https://msdn.microsoft.com/library/windows/hardware/ff566191)
--   [**!wudfext.wudfdriverinfo**](https://msdn.microsoft.com/library/windows/hardware/ff566207)
--   [**!wudfext.wudfdevice**](https://msdn.microsoft.com/library/windows/hardware/ff566199)
--   [**!wudfext.wudfdevicequeues**](https://msdn.microsoft.com/library/windows/hardware/ff566203)
+-   [**!wudfext.umdevstacks**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umdevstacks)
+-   [**!wudfext.wudfdriverinfo**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-wudfdriverinfo)
+-   [**!wudfext.wudfdevice**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-wudfdevice)
+-   [**!wudfext.wudfdevicequeues**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-wudfdevicequeues)
 
-For UMDF 2, see [Summary of Debugger Extensions in Wdfkd.dll](debugger-extensions-for-kmdf-drivers.md), for example [**!wdfkd.wdfumdevstacks**](https://msdn.microsoft.com/library/windows/hardware/dn265380).
+For UMDF 2, see [Summary of Debugger Extensions in Wdfkd.dll](debugger-extensions-for-kmdf-drivers.md), for example [**!wdfkd.wdfumdevstacks**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumdevstacks).
 
 ## Accessing framework USB objects
 

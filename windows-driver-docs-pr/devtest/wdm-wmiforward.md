@@ -16,15 +16,15 @@ ms.localizationpriority: medium
 # WmiForward rule (wdm)
 
 
-The **WmiForward** rule specifies that the driver must forward [**WMI minor IRPs**](https://msdn.microsoft.com/library/windows/hardware/ff566361) when forwarding is required.
+The **WmiForward** rule specifies that the driver must forward [**WMI minor IRPs**](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-minor-irps) when forwarding is required.
 
-Specifically, when the driver calls [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834) and the value of the *IrpDisposition* parameter is **IrpForward**, the driver must call [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) or [**PoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff559654) to forward the IRP before returning from the dispatch routine.
+Specifically, when the driver calls [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol) and the value of the *IrpDisposition* parameter is **IrpForward**, the driver must call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) or [**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-pocalldriver) to forward the IRP before returning from the dispatch routine.
 
 This rule does not apply to bus drivers.
 
-A *WMI minor IRP* is an [**IRP\_MJ\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550813) request with a WMI minor function code.
+A *WMI minor IRP* is an [**IRP\_MJ\_SYSTEM\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-system-control) request with a WMI minor function code.
 
-For more information about processing WMI minor IRPs, see [**WMI Requirements for WDM Drivers**](https://msdn.microsoft.com/library/windows/hardware/ff566370), [**Handling WMI Requests**](https://msdn.microsoft.com/library/windows/hardware/ff546968), [**Windows Management Instrumentation Routines**](https://msdn.microsoft.com/library/windows/hardware/ff565794), and [**WMI Library Support Routines**](https://msdn.microsoft.com/library/windows/hardware/ff566359).
+For more information about processing WMI minor IRPs, see [**WMI Requirements for WDM Drivers**](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-requirements-for-wdm-drivers), [**Handling WMI Requests**](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests), [**Windows Management Instrumentation Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index), and [**WMI Library Support Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
 |              |     |
 |--------------|-----|
@@ -44,14 +44,14 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff552808" data-raw-source="[Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808)">Static Driver Verifier</a> and specify the <strong>WmiForward</strong> rule.</p>
+<td align="left"><p>Run <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier" data-raw-source="[Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier)">Static Driver Verifier</a> and specify the <strong>WmiForward</strong> rule.</p>
 Use the following steps to run an analysis of your code:
 <ol>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code" data-raw-source="[Prepare your code (use role type declarations).](https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code)">Prepare your code (use role type declarations).</a></li>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier" data-raw-source="[Run Static Driver Verifier.](https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier)">Run Static Driver Verifier.</a></li>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results" data-raw-source="[View and analyze the results.](https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results)">View and analyze the results.</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#preparing-your-source-code" data-raw-source="[Prepare your code (use role type declarations).](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#preparing-your-source-code)">Prepare your code (use role type declarations).</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#running-static-driver-verifier" data-raw-source="[Run Static Driver Verifier.](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#running-static-driver-verifier)">Run Static Driver Verifier.</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#viewing-and-analyzing-the-results" data-raw-source="[View and analyze the results.](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#viewing-and-analyzing-the-results)">View and analyze the results.</a></li>
 </ol>
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh454281" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281)">Using Static Driver Verifier to Find Defects in Drivers</a>.</p></td>
+<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers)">Using Static Driver Verifier to Find Defects in Drivers</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -59,15 +59,15 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**IoAcquireRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff548204)
-[**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336)
-[**PoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff559654)
+[**IoAcquireRemoveLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioacquireremovelock)
+[**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver)
+[**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-pocalldriver)
 See also
 --------
 
-[**WMI Requirements for WDM Drivers**](https://msdn.microsoft.com/library/windows/hardware/ff566370)
-[**Handling WMI Requests**](https://msdn.microsoft.com/library/windows/hardware/ff546968)
-[**WMI Library Support Routines**](https://msdn.microsoft.com/library/windows/hardware/ff566359)
+[**WMI Requirements for WDM Drivers**](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-requirements-for-wdm-drivers)
+[**Handling WMI Requests**](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests)
+[**WMI Library Support Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
  
 
  

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !ndiskd.pktpools
 
 
-**Warning**  This extension is for legacy NDIS 5.x drivers. The [NDIS\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff557086) structure and its associated architecture have been deprecated.
+**Warning**  This extension is for legacy NDIS 5.x drivers. The [NDIS\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structure and its associated architecture have been deprecated.
 
  
 
@@ -48,11 +48,11 @@ ffffdf80131d5940  fffff80f1fbe3e71   0x1          0x1000     0xa           0x180
 ## <span id="see_also"></span>See also
 
 
-[Windows 2000 and Windows XP Networking Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff565849)
+[Windows 2000 and Windows XP Networking Design Guide](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565849(v=vs.85))
 
-[Windows 2000 and Windows XP Networking Reference](https://msdn.microsoft.com/library/windows/hardware/ff565850)
+[Windows 2000 and Windows XP Networking Reference](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565850(v=vs.85))
 
-[NDIS\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff557086)
+[NDIS\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff557086(v=vs.85))
 
  
 

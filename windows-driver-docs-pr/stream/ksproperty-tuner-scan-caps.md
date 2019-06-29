@@ -44,7 +44,7 @@ The KSPROPERTY\_TUNER\_SCAN\_CAPS property describes the scanning capabilities o
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565892" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_SCAN_CAPS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565892)"><strong>KSPROPERTY_TUNER_SCAN_CAPS_S</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_tuner_scan_caps_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_SCAN_CAPS_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_tuner_scan_caps_s)"><strong>KSPROPERTY_TUNER_SCAN_CAPS_S</strong></a></p></td>
 <td><p>KSPROPERTY_TUNER_SCAN_CAPS_S</p></td>
 </tr>
 </tbody>
@@ -90,7 +90,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_TUNER\_SCAN\_CAPS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565892)
+[**KSPROPERTY\_TUNER\_SCAN\_CAPS\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_tuner_scan_caps_s)
 
  
 

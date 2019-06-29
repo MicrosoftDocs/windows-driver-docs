@@ -66,7 +66,7 @@ When the clock is set on a pin, the pin references the underlying file object an
 
 A filter does not need to support the property when it neither produces a master clock nor needs to reference one, such as a converter filter placed in the middle of a graph with no need to synchronize with other streams. The property can also be used as read-only when a filter produces a master clock but does not synchronize to an external master clock.
 
-Also see [KS Clocks](https://msdn.microsoft.com/library/windows/hardware/ff567307) and [AVStream Clocks](https://msdn.microsoft.com/library/windows/hardware/ff554208).
+Also see [KS Clocks](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-clocks) and [AVStream Clocks](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-clocks).
 
 Requirements
 ------------
