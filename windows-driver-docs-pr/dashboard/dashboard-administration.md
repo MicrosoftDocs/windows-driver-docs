@@ -13,6 +13,5 @@ ms.localizationpriority: medium
 
 - [Get started with the Hardware Program](get-started-with-the-hardware-dashboard.md)
 - [Register for the Hardware Program](register-for-the-hardware-program.md)
-- [Driver failure reporting](driver-failure-reporting.md)
 - [Adding or Removing Users](adding-or-removing-users.md)
 - [Managing User Roles](managing-user-roles.md)

@@ -69,7 +69,7 @@ The following special characters modify the ID parameter.
 <td align="left"><p>Matches the string literally (exactly as it appears). Precede a string with a single quote to indicate that an asterisk is part of the ID name and is not a wildcard character, for example, <strong>'*PNP0600</strong>, where *PNP0600 (including the asterisk) is the hardware ID.</p></td>
 </tr>
 </tbody>
-</table>
+</table>  
 
 
 

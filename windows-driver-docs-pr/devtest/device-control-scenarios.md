@@ -31,9 +31,9 @@ Pass-Fail criteria
 
 Calls the **OneWay** method of the SimpleService with:
 
--   **wsa:Action == http://schemas.example.org/SimpleService/OneWay**
+-   **wsa:Action == http:\//schemas.example.org/SimpleService/OneWay**
 
--   The http://testdevice.interop/SimpleService1 service will be used.
+-   The http:\//testdevice.interop/SimpleService1 service will be used.
 
 -   The integer input is provided.
 
@@ -49,15 +49,15 @@ The integer that was sent is the integer that was displayed.
 
 Calls the **TwoWay** method of the SimpleService with:
 
--   **wsa:Action == http://schemas.example.org/SimpleService/TwoWayRequest**
+-   **wsa:Action == http:\//schemas.example.org/SimpleService/TwoWayRequest**
 
--   The http://testdevice.interop/SimpleService1 service will be used.
+-   The http:\//testdevice.interop/SimpleService1 service will be used.
 
 -   The two integer inputs are provided.
 
 Responds to the client by using the **TwoWayResponse** method with:
 
--   **wsa:Action == http://schemas.example.org/SimpleService/TwoWayResponse**
+-   **wsa:Action == http:\//schemas.example.org/SimpleService/TwoWayResponse**
 
 -   The sum parameter is calculated from the sum of the two input parameters.
 
@@ -71,15 +71,15 @@ The sum parameter that is received by the client is indeed the sum of the intege
 
 Calls the **TypeCheck** method of the SimpleService with:
 
--   **wsa:Action == http://schemas.example.org/SimpleService/TypeCheckRequest**
+-   **wsa:Action == http:\//schemas.example.org/SimpleService/TypeCheckRequest**
 
--   The http://testdevice.interop/SimpleService1 service will be used.
+-   The http:\//testdevice.interop/SimpleService1 service will be used.
 
 -   The boolean, decimal, float, and list of **xs:anyURI** parameters are provided.
 
 Responds to the client by using the **TypeCheckResponse** method with:
 
--   **wsa:Action == http://schemas.example.org/SimpleService/TypeCheckResponse**
+-   **wsa:Action == http:\//schemas.example.org/SimpleService/TypeCheckResponse**
 
 -   The boolean, decimal, float, and list of **xs:anyURI** parameters are returned and echoed back to the client.
 
@@ -93,15 +93,15 @@ The boolean, decimal, float, and list of **xs:anyURI** parameters are displayed 
 
 Calls the **AnyCheck** method of the SimpleService with:
 
--   **wsa:Action == http://schemas.example.org/SimpleService/AnyCheckRequest**
+-   **wsa:Action == http:\//schemas.example.org/SimpleService/AnyCheckRequest**
 
--   The http://testdevice.interop/SimpleService1 service will be used
+-   The http:\//testdevice.interop/SimpleService1 service will be used
 
 -   An arbitrary XML fragment is used as a parameter.
 
 Responds to the client by using the **TypeCheckResponse** method with:
 
--   **wsa:Action == http://schemas.example.org/SimpleService/AnyCheckResponse**
+-   **wsa:Action == http:\//schemas.example.org/SimpleService/AnyCheckResponse**
 
 -   The arbitrary XML fragment is returned and echoed back to the client.
 
