@@ -80,9 +80,9 @@ MBIM devices must follow these guidelines when responding to **MBIMPinOperationE
 
 MBIM devices that support Auto Packet Service Attach manage the attachment and detachment of packet service from the mobile network at their discretion. The host may still send an attach request to such a device on user request. When the device receives the attach request from the host it should handle as follows:
 
--   • If the device is not attached and not in the middle of an attach operation and is capable of attaching then it should initiate a new attach procedure with the mobile network.
--   • If the device is not attached but in the middle of an auto attach operation then it should wait for the auto attach operation to complete and complete the attach request from the host with the status of the auto attach operation.
--   • If the device is already attached then it should complete the attach request from the host successfully.
+- If the device is not attached and not in the middle of an attach operation and is capable of attaching then it should initiate a new attach procedure with the mobile network.
+- If the device is not attached but in the middle of an auto attach operation then it should wait for the auto attach operation to complete and complete the attach request from the host with the status of the auto attach operation.
+- If the device is already attached then it should complete the attach request from the host successfully.
 
 ## Signal Strength Loss and Data Connection Loss
 
