@@ -37,7 +37,7 @@ Calls the **OneWay** method of the AttachmentService with
 
 -   **wsa:Action == http://schemas.example.org/AttachmentService/OneWayAttachment**
 
--   The http://testdevice.interop/AttachmentService1 service will be used.
+-   The http:\//testdevice.interop/AttachmentService1 service will be used.
 
 -   See [AttachmentService WSDL](attachmentservice-wsdl.md).
 
@@ -57,7 +57,7 @@ Calls the **TwoWay** method of the AttachmentService with:
 
 -   **wsa:Action == http://schemas.example.org/AttachmentService/TwoWayAttachmentRequest**
 
--   The http://testdevice.interop/AttachmentService1 service will be used.
+-   The http:\//testdevice.interop/AttachmentService1 service will be used.
 
 -   See [AttachmentService WSDL](attachmentservice-wsdl.md).
 
