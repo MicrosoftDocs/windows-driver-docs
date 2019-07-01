@@ -89,7 +89,7 @@ The device setup classes are different from USB device classes discussed earlier
         <td><strong>HIDClass</strong></br>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</td>
         <td>Hidclass.sys</br>Hidusb.sys</br>Input.inf</td>
         <td>Windows 10 for desktop editions</br>Windows 10 Mobile</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
-        <td>Microsoft provides the HID class driver (Hidclass.sys) and the miniclass driver (Hidusb.sys) to operate devices that comply with the <a href="https://go.microsoft.com/fwlink/p/?LinkId=761243">USB HID Standard</a>. For more information, see <a href="https://docs.microsoft.com/previous-versions/jj126193(v=vs.85)">HID Architecture</a> and <a href="https://msdn.microsoft.com/windows/hardware/drivers/hid/minidriver-operations">Minidrivers and the HID class driver</a>. For further information about Windows support for input hardware, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8709">Input and HID - Architecture and Driver Support</a> website.</td>
+        <td>Microsoft provides the HID class driver (Hidclass.sys) and the miniclass driver (Hidusb.sys) to operate devices that comply with the <a href="https://go.microsoft.com/fwlink/p/?LinkId=761243">USB HID Standard</a>. For more information, see <a href="https://docs.microsoft.com/previous-versions/jj126193(v=vs.85)">HID Architecture</a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/hid/minidriver-operations">Minidrivers and the HID class driver</a>. For further information about Windows support for input hardware, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8709">Input and HID - Architecture and Driver Support</a> website.</td>
       </tr>
       <tr>
         <td>Physical (05h)</td>
@@ -127,7 +127,7 @@ The device setup classes are different from USB device classes discussed earlier
          <td>Windows 10 for desktop editions</br>Windows 10 Mobile</br>Windows 8.1</br>Windows 8</td>
          <td>Uaspstor.sys is the class driver for SuperSpeed USB devices that support bulk stream endpoints. For more information see:
           <ul>
-           <li><a href="https://msdn.microsoft.com/library/windows/hardware/Dn642103.aspx">Loading a UASP Storage Driver as a Class Driver on xHCI</a></li><li><a href="https://msdn.microsoft.com/library/windows/hardware/Dn642113.aspx">USB Attached SCSI (UAS) Best Practices for Windows 8</li></ul></td>
+           <li><a href="https://docs.microsoft.com/previous-versions/windows/hardware/design/dn642103(v=vs.85)">Loading a UASP Storage Driver as a Class Driver on xHCI</a></li><li><a href="https://docs.microsoft.com/previous-versions/windows/hardware/design/dn642113(v=vs.85)">USB Attached SCSI (UAS) Best Practices for Windows 8</li></ul></td>
         </tr>
     </tr>
     <tr>

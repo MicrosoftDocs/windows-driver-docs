@@ -41,6 +41,6 @@ After signing in to the Partner Center, you can [manage your firmware submission
 
 ## Related topics
 
-* [Microsoft UEFI CA Signing Policy Updates](https://blogs.msdn.microsoft.com/windows_hardware_certification/2013/12/03/microsoft-uefi-ca-signing-policy-updates/)
+* [Microsoft UEFI CA Signing Policy Updates](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 
-* [Pre-Submission Testing for UEFI Submissions](https://blogs.msdn.microsoft.com/windows_hardware_certification/2013/12/03/pre-submission-testing-for-uefi-submissions/)
+* [Pre-Submission Testing for UEFI Submissions](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)

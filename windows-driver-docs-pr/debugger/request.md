@@ -82,7 +82,7 @@ Specifies which operation to perform. **Request** can be one of the values in th
 <td align="left"><p>Return the version of Windows that is currently running on the target.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff541575" data-raw-source="[&lt;strong&gt;DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff541575(v=vs.85))"><strong>DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff541575(v=vs.85)" data-raw-source="[&lt;strong&gt;DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff541575(v=vs.85))"><strong>DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM</strong></a></p></td>
 <td align="left"><p>Read a stream from a user-mode minidump target.</p></td>
 </tr>
 <tr class="odd">

@@ -13,7 +13,7 @@ To you use Multiple Interface Test Tool (MITT), order you need a MITT board and 
 
 -   **MITT board**
 
-    For example, FPGA development board (Nexys2). See [FPGA board from Digilent](http://www.digilentinc.com/Nexys2/).
+    For example, FPGA development board (Nexys2). See [FPGA board from Digilent](https://store.digilentinc.com/nexys-2-spartan-3e-fpga-trainer-board-retired-see-nexys-4-ddr/).
 
     ![mitt board](images/g73a5707.jpg)
 

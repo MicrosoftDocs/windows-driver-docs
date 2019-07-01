@@ -135,7 +135,7 @@ Launch Camera app / take picture
 
 ### <span id="Button_combination_behavior_in_Windows_10"></span><span id="button_combination_behavior_in_windows_10"></span><span id="BUTTON_COMBINATION_BEHAVIOR_IN_WINDOWS_10"></span>Button combination behavior in Windows 10
 
-As noted, some button combinations in Windows 10 apply to the [Windows 10 button architecture](https://msdn.microsoft.com/windows/hardware/drivers/hid/buttons) or the Windows 8.1 button architecture. All other button combinations in Windows 10 apply to either button architecture. It is recommended to describe hardware buttons using the Windows 10 architecture.
+As noted, some button combinations in Windows 10 apply to the [Windows 10 button architecture](https://docs.microsoft.com/windows-hardware/drivers/hid/buttons) or the Windows 8.1 button architecture. All other button combinations in Windows 10 apply to either button architecture. It is recommended to describe hardware buttons using the Windows 10 architecture.
 
 <table>
 <colgroup>
@@ -250,7 +250,7 @@ Not applicable
  
 
 ## <span id="related_topics"></span>Related topics
-[Windows 10 button architecture](https://msdn.microsoft.com/windows/hardware/drivers/hid/buttons)  
+[Windows 10 button architecture](https://docs.microsoft.com/windows-hardware/drivers/hid/buttons)  
 [Minimum Hardware Requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview)  
 
 

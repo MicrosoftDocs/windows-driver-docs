@@ -92,7 +92,7 @@ The following table summarizes the PCIe features that are supported by different
 </tr>
 <tr class="even">
 <td><p>Single Root I/O Virtualization (SR-IOV)</p>
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/hh440235" data-raw-source="[Single Root I/O Virtualization (SR-IOV)](https://docs.microsoft.com/windows-hardware/drivers/network/single-root-i-o-virtualization--sr-iov-)">Single Root I/O Virtualization (SR-IOV)</a>.</p></td>
+<p>See <a href="https://docs.microsoft.com/windows-hardware/drivers/network/single-root-i-o-virtualization--sr-iov-" data-raw-source="[Single Root I/O Virtualization (SR-IOV)](https://docs.microsoft.com/windows-hardware/drivers/network/single-root-i-o-virtualization--sr-iov-)">Single Root I/O Virtualization (SR-IOV)</a>.</p></td>
 <td><p>Windows 8</p>
 <p>Windows Server 2012</p></td>
 </tr>

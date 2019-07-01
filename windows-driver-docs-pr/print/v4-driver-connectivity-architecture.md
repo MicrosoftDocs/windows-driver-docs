@@ -53,7 +53,7 @@ The following table shows the files and the information that you must provide, d
 </tr>
 <tr class="even">
 <td>WSD</td>
-<td>The standard properties from the <a href="https://msdn.microsoft.com/library/windows/hardware/gg463146.aspx" data-raw-source="[WS-Print Specification](https://msdn.microsoft.com/library/windows/hardware/dn641604(v=vs.85).aspx)">WS-Print Specification</a> or WS-Print v1.1 Specification are populated into the Bidi Schema by the port monitor.</td>
+<td>The standard properties from the <a href="https://docs.microsoft.com/windows-hardware/design/whitepapers/implementing-web-services-on-devices-for-printing" data-raw-source="[WS-Print Specification](https://docs.microsoft.com/windows-hardware/design/whitepapers/implementing-web-services-on-devices-for-printing)">WS-Print Specification</a> or WS-Print v1.1 Specification are populated into the Bidi Schema by the port monitor.</td>
 <td><p>You must provide the following file:</p>
 XML Bidi extension file</td>
 <td>Print device must support the WS-Print v1.1 protocol.</td>

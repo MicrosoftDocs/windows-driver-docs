@@ -118,7 +118,7 @@ You can set properties for an individual driver or for an entire driver package.
 <td align="left"><p><a href="umdf-verifier-properties-for-driver-package-projects.md" data-raw-source="[UMDF Verifier Properties for Driver Package Projects](umdf-verifier-properties-for-driver-package-projects.md)">UMDF Verifier Properties for Driver Package Projects</a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://msdn.microsoft.com/Library/Windows/Hardware/Ff556201" data-raw-source="[WPP Preprocessor (WPP Tracing)](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-preprocessor)">WPP Preprocessor (WPP Tracing)</a></td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-preprocessor" data-raw-source="[WPP Preprocessor (WPP Tracing)](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-preprocessor)">WPP Preprocessor (WPP Tracing)</a></td>
 <td align="left"><p><a href="inf2cat-properties-for-driver-package-projects.md" data-raw-source="[Inf2Cat Properties for Driver Package Projects](inf2cat-properties-for-driver-package-projects.md)">Inf2Cat Properties for Driver Package Projects</a> (see the <a href="../devtest/inf2cat.md" data-raw-source="[&lt;strong&gt;Inf2Cat&lt;/strong&gt;](../devtest/inf2cat.md)"><strong>Inf2Cat</strong></a> tool)</p></td>
 </tr>
 </tbody>

@@ -118,7 +118,7 @@ The following table shows the values that file system filter drivers should spec
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>DriverVer</strong></p></td>
-<td align="left"><p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff547394" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive)"><strong>INF DriverVer directive</strong></a>.</p></td>
+<td align="left"><p>See <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive" data-raw-source="[&lt;strong&gt;INF DriverVer directive&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive)"><strong>INF DriverVer directive</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>CatalogFile</strong></p></td>

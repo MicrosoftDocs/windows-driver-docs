@@ -26,8 +26,8 @@ Use Debugging Tools for Windows to debug drivers, applications, and services on 
 
 -   [Advanced Driver Debugging: Part 1 \[media file\]](https://download.microsoft.com/download/B/1/6/B161948D-EDE1-4AEF-8776-AD485CDDCD9E/TDDR05003.wvx)
 -   [Advanced Driver Debugging: Part 2 \[media file\]](https://download.microsoft.com/download/B/1/6/B161948D-EDE1-4AEF-8776-AD485CDDCD9E/TDDR05004.wvx)
--   [Avoiding debugger searches for unneeded symbols](https://msdn.microsoft.com/library/windows/hardware/dn640532(v=vs.85).aspx)
--   [Debugging Kernel-Mode Driver Framework Drivers](https://msdn.microsoft.com/library/windows/hardware/dn653303(v=vs.85).aspx)
+-   [Avoiding debugger searches for unneeded symbols](https://docs.microsoft.com/windows-hardware/drivers/debugger/avoiding-debugger-searches-for-unneeded-symbols)
+-   [Debugging Kernel-Mode Driver Framework Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/debugging-kernel-mode-driver-framework-drivers)
 -   [Debugging WDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/debugging-a-wdf-driver)
 -   [How to Enable Verbose Debug Tracing in Various Drivers and Subsystems](https://support.microsoft.com/en-us)
 -   [Debugging a Driver](https://docs.microsoft.com/windows-hardware/drivers)
@@ -66,7 +66,7 @@ A number of [Knowledge Base articles](https://support.microsoft.com/en-us) are a
 
 [Driver Developer Community Resources](https://msdn.microsoft.com/windows/hardware/gg454517)
 
-[Driver Signing Requirements for Windows](https://msdn.microsoft.com/en-US/library/windows/hardware/dn653563)
+[Driver Signing Requirements for Windows](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn653563(v=vs.85))
 
 [Support for Developer Kits and Tools](https://docs.microsoft.com/previous-versions/gg454528(v=msdn.10))
 

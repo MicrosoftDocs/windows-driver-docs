@@ -56,7 +56,7 @@
       href: using-chids.md
     - name: "Working with extension INF files"
       href: submit-dashboard-extension-inf-files.md
-    - name: "Limiting driver distribution by Windows version"
+    - name: "How to limit or expand a driver’s distribution based on Windows version"
       href: limit-driver-distribution.md
     - name: "Publishing for test distribution"
       href: publishing-for-test-distribution.md
@@ -179,8 +179,6 @@
       href: get-started-with-the-hardware-dashboard.md
     - name: "Register for the Hardware Program"
       href: register-for-the-hardware-program.md
-    - name: "Driver failure reporting"
-      href: driver-failure-reporting.md
     - name: "Adding or Removing Users"
       href: adding-or-removing-users.md
     - name: "Managing User Roles"

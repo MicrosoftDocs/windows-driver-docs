@@ -14,7 +14,7 @@ This topic describes device installation components that are provided by an IHV 
 <a href="" id="driver-package"></a>Driver Package  
 A [driver package](driver-packages.md) consists of all the software components that you must supply for your device to be supported under Windows. These components include the following:
 
--   An [INF file](overview-of-inf-files.md), which provides information about the devices and drivers to be installed. For more information, see [Creating an INF File](https://msdn.microsoft.com/windows/hardware/drivers/hid/creating-an-inf-file).
+-   An [INF file](overview-of-inf-files.md), which provides information about the devices and drivers to be installed. For more information, see [Creating an INF File](https://docs.microsoft.com/windows-hardware/drivers/hid/creating-an-inf-file).
 
 -   A [catalog file](catalog-files.md), which contains the digital signature of the [driver package](driver-packages.md). For more information, see [Digital Signatures](digital-signatures.md).
 

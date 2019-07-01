@@ -325,7 +325,7 @@ Use this table to determine the best way to send control requests to the USB dri
 <li>Send the request by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest-send" data-raw-source="[&lt;strong&gt;IWDFIoRequest::Send&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest-send)"><strong>IWDFIoRequest::Send</strong></a> method.</li>
 </ol></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb_control_feature_request" data-raw-source="[&lt;strong&gt;_URB_CONTROL_FEATURE_REQUEST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb_control_feature_request)"><strong>_URB_CONTROL_FEATURE_REQUEST</strong></a></p>
-<p>(<a href="https://msdn.microsoft.com/library/windows/hardware/ff538932" data-raw-source="[&lt;strong&gt;UsbBuildFeatureRequest&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff538932(v=vs.85))"><strong>UsbBuildFeatureRequest</strong></a>)</p>
+<p>(<a href="https://docs.microsoft.com/previous-versions/ff538932(v=vs.85)" data-raw-source="[&lt;strong&gt;UsbBuildFeatureRequest&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff538932(v=vs.85))"><strong>UsbBuildFeatureRequest</strong></a>)</p>
 <p>URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE</p>
 <p>URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE</p>
 <p>URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT</p>
@@ -366,7 +366,7 @@ Use this table to determine the best way to send control requests to the USB dri
 <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfusb/nf-wudfusb-iwdfusbtargetpipe-getinformation" data-raw-source="[&lt;strong&gt;IWDFUsbTargetPipe::GetInformation&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfusb/nf-wudfusb-iwdfusbtargetpipe-getinformation)"><strong>IWDFUsbTargetPipe::GetInformation</strong></a>. This method returns endpoint descriptor fields in a <a href="https://docs.microsoft.com/windows/desktop/api/winusbio/ns-winusbio-_winusb_pipe_information" data-raw-source="[&lt;strong&gt;WINUSB_PIPE_INFORMATION&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winusbio/ns-winusbio-_winusb_pipe_information)"><strong>WINUSB_PIPE_INFORMATION</strong></a> structure.</li>
 </ul></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb_control_descriptor_request" data-raw-source="[&lt;strong&gt;_URB_CONTROL_DESCRIPTOR_REQUEST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb_control_descriptor_request)"><strong>_URB_CONTROL_DESCRIPTOR_REQUEST</strong></a></p>
-<p>(<a href="https://msdn.microsoft.com/library/windows/hardware/ff538943" data-raw-source="[&lt;strong&gt;UsbBuildGetDescriptorRequest&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff538943(v=vs.85))"><strong>UsbBuildGetDescriptorRequest</strong></a>)</p>
+<p>(<a href="https://docs.microsoft.com/previous-versions/ff538943(v=vs.85)" data-raw-source="[&lt;strong&gt;UsbBuildGetDescriptorRequest&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff538943(v=vs.85))"><strong>UsbBuildGetDescriptorRequest</strong></a>)</p>
 <p>URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE</p>
 <p>URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT</p>
 <p>URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE</p></td>
@@ -465,7 +465,7 @@ Use this table to determine the best way to send control requests to the USB dri
 <li>Send the request by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest-send" data-raw-source="[&lt;strong&gt;IWDFIoRequest::Send&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest-send)"><strong>IWDFIoRequest::Send</strong></a> method.</li>
 </ol></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb_control_feature_request" data-raw-source="[&lt;strong&gt;_URB_CONTROL_FEATURE_REQUEST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb_control_feature_request)"><strong>_URB_CONTROL_FEATURE_REQUEST</strong></a></p>
-<p>(<a href="https://msdn.microsoft.com/library/windows/hardware/ff538932" data-raw-source="[&lt;strong&gt;UsbBuildFeatureRequest&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff538932(v=vs.85))"><strong>UsbBuildFeatureRequest</strong></a>)</p>
+<p>(<a href="https://docs.microsoft.com/previous-versions/ff538932(v=vs.85)" data-raw-source="[&lt;strong&gt;UsbBuildFeatureRequest&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff538932(v=vs.85))"><strong>UsbBuildFeatureRequest</strong></a>)</p>
 <p>URB_FUNCTION_SET_FEATURE_TO_DEVICE</p>
 <p>URB_FUNCTION_SET_FEATURE_TO_INTERFACE</p>
 <p>URB_FUNCTION_SET_FEATURE_TO_ENDPOINT</p>
@@ -511,7 +511,7 @@ Use this table to determine the best way to send control requests to the USB dri
 <li>Receive the information from the device in the transfer buffer. Access that buffer by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdfmemory" data-raw-source="[&lt;strong&gt;IWDFMemory&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdfmemory)"><strong>IWDFMemory</strong></a> methods.</li>
 </ol></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb_control_vendor_or_class_request" data-raw-source="[&lt;strong&gt;_URB_CONTROL_VENDOR_OR_CLASS_REQUEST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb_control_vendor_or_class_request)"><strong>_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</strong></a></p>
-<p>(<a href="https://msdn.microsoft.com/library/windows/hardware/ff538986" data-raw-source="[&lt;strong&gt;UsbBuildVendorRequest&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff538986(v=vs.85))"><strong>UsbBuildVendorRequest</strong></a>)</p>
+<p>(<a href="https://docs.microsoft.com/previous-versions/ff538986(v=vs.85)" data-raw-source="[&lt;strong&gt;UsbBuildVendorRequest&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff538986(v=vs.85))"><strong>UsbBuildVendorRequest</strong></a>)</p>
 <p>URB_FUNCTION_VENDOR_DEVICE</p>
 <p>URB_FUNCTION_VENDOR_INTERFACE</p>
 <p>URB_FUNCTION_VENDOR_ENDPOINT</p>
