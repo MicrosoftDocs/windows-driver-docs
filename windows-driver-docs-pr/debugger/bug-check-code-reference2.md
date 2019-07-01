@@ -347,11 +347,11 @@ The following table shows the code and name of each bug check code.
 | 0x00000168 | [**CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP**](bug-check-0x168--cluster-csv-state-transition-timeout-livedump.md)                       |   
 | 0x00000169 | [**CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP**](bug-check-0x169--cluster-csv-volume-arival-livedump.md)                                             |      
 | 0x0000016A | [**CLUSTER\_CSV\_VOLUME\_REMOVAL\_LIVEDUMP**](bug-check-0x16a--cluster-csv-volume-removal-livedump.md)                                            |    
-| 0x0000016B | [**CLUSTER\_CSV_\_CLUSTER\_WATCHDOG_\LIVEDUMP**](bug-check-0x16b--cluster-csv-cluster-watchdog-livedump.md)                                       |   
+| 0x0000016B | [**CLUSTER\_CSV\_CLUSTER\_WATCHDOG\_LIVEDUMP**](bug-check-0x16b--cluster-csv-cluster-watchdog-livedump.md)                                       |   
 | 0x0000016C | [**INVALID\_RUNDOWN\_PROTECTION\_FLAGS**](bug-check-0x16c--invalid-rundown-protection-flags.md)                                                   |
 | 0x0000016D | [**INVALID\_SLOT\_ALLOCATOR\_FLAGS**](bug-check-0x16d--invalid-slot-allocator-flags.md)                                                           |
 | 0x0000016E | [**ERESOURCE\_INVALID\_RELEASE**](bug-check-0x16e--eresource-invalid-release.md)                                                                  |
-| 0x0000016F | [**CLUSTER\_CSV_\STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP**](bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md)           |
+| 0x0000016F | [**CLUSTER\_CSV\_STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP**](bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md)           |
 | 0x00000170 | [**CRYPTO\_LIBRARY\_INTERNAL\_ERROR**](bug-check-0x170--crypto-library-internal-error.md)                                                         |
 | 0x00000171 | [**CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG**](bug-check-0x171--cluster-csv-clussvc-disconnect-watchdog.md)                                    |
 | 0x00000173 | [**COREMSGCALL\_INTERNAL\_ERROR**](bug-check-0x173--coremsgcall-internal-error.md)                                                                |
