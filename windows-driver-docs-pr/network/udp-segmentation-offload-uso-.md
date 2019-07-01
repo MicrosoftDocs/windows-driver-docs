@@ -24,7 +24,7 @@ Miniport drivers can offload the segmentation of large UDP packets that are larg
 - Calculate IP checksums for sent packets that contain IPv4 options
 - Calculate UDP checksums for sent packets
 
-A miniport driver that supports USO must determine the offload type from the [**NET_BUFFER_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure's OOB information. If the value of the **NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO** structure is non-zero, then the miniport driver must perform USO. Any **NET_BUFFER_LIST** that contains USO OOB data also contains a single [**NET_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structure. However, in the case where the miniport driver has received [OID_TCP_OFFLOAD_PARAMETERS](oid-tcp-offload-parameters.md) to turn off USO, after the miniport driver has completed the OID successfully it should reject and return any **NET_BUFFER_LIST** that has the USO out of band (OOB) field set.
+A miniport driver that supports USO must determine the offload type from the [**NET_BUFFER_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure's out of band (OOB) information. If the value of the [**NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_udp_segmentation_offload_net_buffer_list_info) structure is non-zero, then the miniport driver must perform USO. Any **NET_BUFFER_LIST** that contains USO OOB data also contains a single [**NET_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structure. However, in the case where the miniport driver has received [OID_TCP_OFFLOAD_PARAMETERS](oid-tcp-offload-parameters.md) to turn off USO, after the miniport driver has completed the OID successfully it should reject and return any **NET_BUFFER_LIST** that has the USO OOB field set.
 
 The TCP/IP transport offloads only those UDP packets that meet the following criteria:
 
@@ -36,7 +36,7 @@ The TCP/IP transport offloads only those UDP packets that meet the following cri
 
 Before offloading a large UDP packet for segmentation, the TCP/IP transport does the following:
 
-- Updates the large packet segmentation information that is associated with the [**NET_BUFFER_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure. This information is an **NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO** structure that is part of the **NET_BUFFER_LIST** structure's OOB information. The TCP/IP transport sets the MSS value to the desired MSS.
+- Updates the large packet segmentation information that is associated with the [**NET_BUFFER_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure. This information is an [**NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_udp_segmentation_offload_net_buffer_list_info) structure that is part of the **NET_BUFFER_LIST** structure's OOB information. The TCP/IP transport sets the MSS value to the desired MSS.
 - Calculates a one's complement sum for the UDP pseudoheader and writes this sum to the **Checksum** field of the UDP header. The TCP/IP transport calculates the one's complements sum over the following fields in the pseudoheader: Source IP Address, Destination IP Address, and Protocol.  
 
 The one's complement sum for the pseudoheader provided by the TCP/IP transport gives the NIC an early start in calculating the real UDP checksum for each packet that the NIC derives from the large UDP packet, without having to examine the IP header. 
@@ -73,7 +73,7 @@ USO-capable miniport drivers must also do the following:
 - Use the IP and UDP header in the [**NET_BUFFER_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure as a template to generate UDP and IP headers for each segmented packet.
 - Use IP identification (IP ID) values in the range from **0x0000** to **0xFFFF**. For example, if the template IP header starts with an Identification field value of **0xFFFE**, the first UDP datagram packet must have a value of **0xFFFE**, followed by **0xFFFF**, **0x0000**, **0x0001**, and so on.
 - If the large UDP packet contains IP options, the miniport driver copies these options, unaltered, to each packet that is derived from the large UDP packet.
-- Use the byte offset in the **UdpHeaderOffset** member of **NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO** to determine the location of the UDP header, starting from the first byte of the packet.
+- Use the byte offset in the **UdpHeaderOffset** member of [**NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_udp_segmentation_offload_net_buffer_list_info) to determine the location of the UDP header, starting from the first byte of the packet.
 - Increment transmit statistics based on the segmented packets. For example, include the count of Ethernet, IP, and UDP header bytes for each packet segment, and the packet count is the number of **MSS**-sized segments, not **1**.
 
 ## NDIS interface changes
@@ -105,7 +105,7 @@ The USO enumeration keywords are as follows:
 - **\*UsoIPv4**
 - **\*UsoIPv6**
 
-These values describe whether USO is enabled or disabled for that particular IP protocol. The USO settings are not dependent on the [**NDIS_TCP_IP_CHECKSUM_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload) configuration. For example, disabling **\*UDPChecksumOffloadIPv4** does not implicitly disable **\*USOIPv4**.
+These values describe whether USO is enabled or disabled for that particular IP protocol. The USO settings are not dependent on the [**NDIS_TCP_IP_CHECKSUM_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload) configuration. For example, disabling **\*UDPChecksumOffloadIPv4** does not implicitly disable **\*UsoIPv4**.
 
 | Subkey name | Parameter description | Value | Enum description |
 | --- | --- | --- | --- |
