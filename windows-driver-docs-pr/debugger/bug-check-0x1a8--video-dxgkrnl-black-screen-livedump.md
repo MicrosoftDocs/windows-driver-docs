@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 The VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP bug check has a value of 0x000001A8. It indicates that a user initiated DXGKRNL live dump for black screen scenarios has occurred.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP Parameters
