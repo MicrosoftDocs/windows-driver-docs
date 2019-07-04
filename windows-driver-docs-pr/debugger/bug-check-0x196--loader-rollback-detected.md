@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The LOADER\_ROLLBACK\_DETECTED bug check has a value of 0x00000196. This indicates that the version of the OS loader does not match the operating system.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## LOADER\_ROLLBACK\_DETECTED Parameters

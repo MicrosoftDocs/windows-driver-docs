@@ -2,14 +2,13 @@
 title: Download Debugging Tools for Windows - WinDbg
 description: This page provides downloads for the Windows Debugging tools, such as WinDbg.
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download"]
-ms.date: 01/24/2019
+ms.date: 07/02/2019
 ms.localizationpriority: medium
 ---
 
 # Download Debugging Tools for Windows
 
 The Windows Debugger (WinDbg) can be used to debug kernel-mode and user-mode code, to analyze crash dumps, and to examine the CPU registers while the code executes.
-
 
 ## ![Small windbg preview logo](images/windbgx-preview-logo.png) Download WinDbg Preview
 
@@ -19,7 +18,6 @@ WinDbg Preview is a new version of WinDbg with more modern visuals, faster windo
 
  - Learn more about installation and configuration in [WinDbg Preview - Installation](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-install-preview).
 
-
 ## ![Small classic windbg preview logo](images/windbg-classic-logo.png) Debugging Tools for Windows 10 (WinDbg)
 
 If you just need the Debugging Tools for Windows 10, and not Windows Driver Kit (WDK) for Windows 10 or Visual Studio 2017, you can install the debugging tools as a standalone component from the Windows SDK. In the SDK installation wizard, select **Debugging Tools for Windows**, and deselect all other components.
@@ -28,19 +26,15 @@ If you just need the Debugging Tools for Windows 10, and not Windows Driver Kit 
 
  - Learn more about WinDbg and other debuggers in [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://docs.microsoft.com/windows-hardware/drivers/debugger/).
 
-
 > [!TIP]
 > If the Windows SDK is already installed, open **Settings**, navigate to **Apps & features**, select **Windows Software Development Kit**, and then click **Modify** to change the installation to add **Debugging Tools for Windows**.
 
-
 -------------------
-
 
 ## Looking for the debugging tools for earlier version of Windows?
 
-To download the debugger tools for previous versions of Windows, download the Windows SDK from the
-[Windows SDK and emulator archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive). In the installation wizard, select **Debugging Tools for Windows**, and deselect all other components.
-
+To download the debugger tools for previous versions of Windows, you need to download the Windows SDK for the version you are debugging from the
+[Windows SDK and emulator archive](https://developer.microsoft.com/windows/downloads/sdk-archive). In the installation wizard of the SDK, select **Debugging Tools for Windows**, and deselect all other components.
 
 ## Looking for related downloads?
 
