@@ -1,21 +1,14 @@
 - name: "Mobile broadband"
   href: index.md
 - name: "Overview"
-# Auto-expanded node
   items: 
-  - name: "Overview"
-    href: overview-b-mb.md
   - name: "Overview of mobile broadband"
     href: overview-of-mobile-broadband.md
   - name: "Mobile broadband WinRT API overview"
-# Auto-expanded node
     items: 
-    - name: "Mobile broadband WinRT API overview"
-      href: mobile-broadband-winrt-api-overview.md
-    - name: "List of mobile broadband Windows Runtime APIs"
-# Auto-expanded node
+    - name: "Overview of mobile broadband Windows Runtime APIs"
       items: 
-      - name: "List of mobile broadband Windows Runtime APIs"
+      - name: "Overview of mobile broadband Windows Runtime APIs"
         href: list-of-mobile-broadband-windows-runtime-apis.md
       - name: "Connection Profile API"
         href: connection-profile-api.md
@@ -32,10 +25,7 @@
       - name: "USSD API"
         href: ussd-api.md
     - name: "Common tasks for mobile broadband Windows Runtime APIs"
-# Auto-expanded node
       items: 
-      - name: "Common tasks for mobile broadband Windows Runtime APIs"
-        href: common-tasks-for-mobile-broadband-windows-runtime-apis.md
       - name: "Create a MobileBroadbandAccount object"
         href: create-a-mobilebroadbandaccount-object.md
       - name: "Create a MobileBroadbandDeviceInformation object"
@@ -71,10 +61,7 @@
       - name: "Unlock a device"
         href: unlock-a-device.md
     - name: "Best practices for using Mobile Broadband Windows Runtime API"
-# Auto-expanded node
       items: 
-      - name: "Best practices for using Mobile Broadband Windows Runtime API"
-        href: best-practices-for-using-mobile-broadband-windows-runtime-api.md
       - name: "Best practices for handling account arrival and removal events"
         href: best-practices-for-handling-account-arrival-and-removal-events.md
       - name: "Best practices for connecting to the mobile broadband network"
@@ -82,9 +69,8 @@
   - name: "Mobile operator hardware overview"
     href: mobile-operator-hardware-overview.md
 - name: "Using metadata to configure mobile broadband experiences"
-# Auto-expanded node
   items: 
-  - name: "Using metadata to configure mobile broadband experiences"
+  - name: "Overview of using metadata to configure mobile broadband experiences"
     href: using-metadata-to-configure-mobile-broadband-experiences.md
   - name: "Account provisioning"
     href: account-provisioning.md
