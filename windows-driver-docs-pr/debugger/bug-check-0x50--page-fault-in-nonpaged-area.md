@@ -116,7 +116,7 @@ Resolution
 
 Typically, the referenced address is in freed memory or is simply invalid. This cannot be protected by a **try - except** handler -- it can only be protected by a probe or similar programming techniques.
 
-Use the [**!analyze**](-analyze.md) debug extension with teh -v verbose option to display information about the bug check to work to determine the root cause.
+Use the [**!analyze**](-analyze.md) debug extension with the -v verbose option to display information about the bug check to work to determine the root cause.
 
 ```dbgcmd
 2: kd> !analyze -v
