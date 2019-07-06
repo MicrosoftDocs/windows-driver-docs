@@ -1,12 +1,12 @@
 ---
-title: Developing SMS apps
-description: Developing SMS apps
+title: Introduction to developing SMS apps
+description: Introduction to developing SMS apps
 ms.assetid: 052eb3cc-4a39-4667-8678-b18650f3b5c9
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# Developing SMS apps
+# Introduction to developing SMS apps
 
 
 Windows 8, Windows 8.1, and Windows 10 provide a Short Message Service (SMS) text messaging platform for mobile network operators, mobile broadband adapter IHVs, OEMs, and their partnered software vendor’s app with SMS access into a UWP app.

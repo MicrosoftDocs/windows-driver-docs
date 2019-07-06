@@ -1,12 +1,12 @@
 ---
-title: ServiceInfo XML Elements
-description: ServiceInfo XML Elements
+title: ServiceInfo XML elements list
+description: ServiceInfo XML elements list
 ms.assetid: 807a2741-a515-468f-9188-0cc4e43b4485
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# ServiceInfo XML Elements
+# ServiceInfo XML elements list
 
 [!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 

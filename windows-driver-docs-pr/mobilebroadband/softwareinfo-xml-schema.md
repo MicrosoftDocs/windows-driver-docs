@@ -1,12 +1,12 @@
 ---
-title: SoftwareInfo XML schema
-description: SoftwareInfo XML schema
+title: SoftwareInfo XML schema overview
+description: SoftwareInfo XML schema overview
 ms.assetid: 6e2e2b5a-c04e-4dfd-adbd-158b391aea3e
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# SoftwareInfo XML schema
+# SoftwareInfo XML schema overview
 
 [!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 

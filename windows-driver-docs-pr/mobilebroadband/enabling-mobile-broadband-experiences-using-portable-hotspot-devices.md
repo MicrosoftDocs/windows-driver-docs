@@ -1,12 +1,12 @@
 ---
-title: Enabling MB experiences using portable hotspot devices
-description: Enabling mobile broadband (MB) experiences using portable hotspot devices
+title: Introduction to enabling MB experiences using portable hotspot devices
+description: Introduction to enabling mobile broadband (MB) experiences using portable hotspot devices
 ms.assetid: bfd53d0d-d9cb-4b6a-bbad-549139c5a1ae
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# Enabling mobile broadband (MB) experiences using portable hotspot devices
+# Introduction to enabling mobile broadband (MB) experiences using portable hotspot devices
 
 The topics in this section provide information about portable Wi-Fi hotspots for Windows 8, Windows 8.1, and Windows 10. It provides guidelines for device manufacturers to offer experiences on a Wi-Fi hotspot that is backed by mobile broadband (including a mobile phone), that are similar to experiences that Windows offers on a native mobile broadband connection.
 

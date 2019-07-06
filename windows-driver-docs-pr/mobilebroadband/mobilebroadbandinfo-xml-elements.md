@@ -1,12 +1,12 @@
 ---
-title: MobileBroadbandInfo XML elements
-description: MobileBroadbandInfo XML elements
+title: MobileBroadbandInfo XML elements list
+description: MobileBroadbandInfo XML elements list
 ms.assetid: 399a0d58-5464-49b2-a6da-8c645016cc1e
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# MobileBroadbandInfo XML elements
+# MobileBroadbandInfo XML elements list
 
 [!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 

@@ -1,12 +1,12 @@
 ---
-title: WindowsInfo XML schema
-description: WindowsInfo XML schema
+title: WindowsInfo XML schema overview
+description: WindowsInfo XML schema overview
 ms.assetid: a9c440ec-189c-4148-8f76-d6476aa708c0
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# WindowsInfo XML schema
+# WindowsInfo XML schema overview
 
 [!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 

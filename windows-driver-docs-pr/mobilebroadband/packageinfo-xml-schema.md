@@ -1,12 +1,12 @@
 ---
-title: PackageInfo XML schema
-description: PackageInfo XML schema
+title: PackageInfo XML schema overview
+description: PackageInfo XML schema overview
 ms.assetid: 5873604e-564e-4c8e-bfc7-526aac5767fa
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# PackageInfo XML schema
+# PackageInfo XML schema overview
 
 [!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
