@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
  
 
-An entry in an **Oem*Xxx*** section of a netmap.inf file that specifies one-to-one ID mapping has the following format:
+An entry in an **Oem_Xxx_** section of a netmap.inf file that specifies one-to-one ID mapping has the following format:
 
 *preupgrade-ID* = *postupgrade-ID*
 
