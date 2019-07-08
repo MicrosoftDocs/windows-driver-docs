@@ -120,9 +120,6 @@ After you have installed the debugging tools, locate the installation directorie
     The output is similar to this:
 
     ```dbgcmd
-    Breakpoint 0 hit
-    notepad!WinMain:
-    00007ff6`32825f64 488bc4          mov     rax,rsp
     0:000> k
     Child-SP          RetAddr           Call Site
     00000048`4e0cf6a8 00007ff6`3282122f notepad!WinMain
