@@ -34,6 +34,9 @@
       href: building-usb-devices-for-windows.md
     - name: "Microsoft OS Descriptors for USB Devices"
       href: microsoft-defined-usb-descriptors.md
+      items:
+      - name: "Microsoft OS Descriptors"
+        href: microsoft-os-descriptors.md
     - name: "USB ContainerIDs in Windows"
       href: usb-containerids-in-windows.md
     - name: "Link Power Management in USB 3.0 Hardware"
