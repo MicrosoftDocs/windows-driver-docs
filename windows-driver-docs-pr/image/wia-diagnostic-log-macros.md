@@ -8,19 +8,16 @@ ms.localizationpriority: medium
 
 # WIA Diagnostic Log Macros
 
-For error handling on modern Windows operating systems, see [WIA Driver Error Recovery](wia-driver-error-recovery-for-windows-vista.md).
+> [!NOTE]
+> For WIA error handling on modern Windows operating systems, see [WIA Driver Error Recovery](wia-driver-error-recovery-for-windows-vista.md).
 
-The [Diagnostic Log Macros](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image/index) enable minidrivers to log trace, error, and warning messages to the *Wiaservc.log* diagnostic log file.
-
-The first three macros can be used to write a logging statement with a specified type of error, trace, or warning, respectively. The fourth macro can be used to translate an HRESULT into a descriptive string.
+The Diagnostic Log Macros enable minidrivers to log trace, error, and warning messages to the *Wiaservc.log* diagnostic log file.
 
 | Macro | Description |
 | --- | --- |
-|[WIAS_LERROR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_lerror) |Writes a log statement of type ERROR to the Wiaservc.log diagnostic log file. |
-| [WIAS_LHRESULT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_lhresult) |Translates an HRESULT value into a string and writes the string to the Wiaservc.log diagnostic log file. |
-| [WIAS_LTRACE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_ltrace) |Writes a log statement of type TRACE to the Wiaservc.log diagnostic log file. |
+|[WIAS_LERROR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_lerror) | Writes a log statement of type ERROR to the Wiaservc.log diagnostic log file. |
+| [WIAS_LHRESULT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_lhresult) | Translates an HRESULT value into a string and writes the string to the Wiaservc.log diagnostic log file. |
+| [WIAS_LTRACE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_ltrace) | Writes a log statement of type TRACE to the Wiaservc.log diagnostic log file. |
 | [WIAS_LWARNING](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_lwarning) | Writes a log statement of type WARNING to the Wiaservc.log diagnostic log file. |
-| [WIAS_ERROR](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_error) | This macro is available in Windows Vista and later operating systems. Writes a log statement of type ERROR to the Wiatrace.log diagnostic log file. |
+| [WIAS_ERROR](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_error) | Writes a log statement of type ERROR to the Wiatrace.log diagnostic log file. |
 | [WIAS_TRACE](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wias_trace) | Writes a log statement of type TRACE to the Wiatrace.log diagnostic log file. |
-
-For more information, see the [Wiadef.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wiamdef/#functions) macros.
