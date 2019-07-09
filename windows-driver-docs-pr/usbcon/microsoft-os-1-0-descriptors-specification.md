@@ -154,7 +154,7 @@ function downloadFunction()
     }
 }
 </script>
-<input type="checkbox" id="acceptBox" onclick="downloadFunction()" />I accept <p id="downloadLink" style="display:none"><a href="http://download.microsoft.com/download/9/C/5/9C5B2167-8017-4BAE-9FDE-D599BAC8184A/OS_Desc_Ext_Prop.zip​​">Download</a></p></td>
+<input type="checkbox" id="acceptBox" onclick="downloadFunction()">I accept <p id="downloadLink" style="display:none"><a href="http://download.microsoft.com/download/9/C/5/9C5B2167-8017-4BAE-9FDE-D599BAC8184A/OS_Desc_Ext_Prop.zip">Download</a></p></td>
 </tr>
 </tbody>
 </table>
