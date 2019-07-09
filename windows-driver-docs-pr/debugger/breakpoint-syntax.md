@@ -80,7 +80,7 @@ b?[@$t0]
 
 ### <span id="breakpoint_pseudo_registers"></span><span id="BREAKPOINT_PSEUDO_REGISTERS"></span>Breakpoint Pseudo-Registers
 
-If you want to refer to a breakpoint address in an expression, you can use a [pseudo-register](pseudo-register-syntax.md) with the **$bp***Number* syntax, where *Number* is the breakpoint ID. For more information about this syntax, see Pseudo-Register Syntax.
+If you want to refer to a breakpoint address in an expression, you can use a [pseudo-register](pseudo-register-syntax.md) with the **$bp**_Number_ syntax, where *Number* is the breakpoint ID. For more information about this syntax, see Pseudo-Register Syntax.
 
  
 

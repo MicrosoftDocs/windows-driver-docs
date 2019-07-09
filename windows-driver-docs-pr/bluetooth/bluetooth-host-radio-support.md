@@ -34,7 +34,7 @@ For a detailed description of this procedure, see [Appendix A: How to Install an
 
 IHVs should take the following steps to ensure that their Bluetooth radios have in box support on Windows:
 
-* Ensure that the radio supports the extended compat ID OS feature descriptor. For details, see [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=617154).
+* Ensure that the radio supports the extended compat ID OS feature descriptor. For details, see [Microsoft OS Descriptors](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-os-1-0-descriptors-specification).
 * Obtain Windows Certification Program approval for the Bluetooth radio hardware and the associated INF file. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
 * Use the Partner Center to make the INF file available through Windows Update
 

@@ -18,7 +18,7 @@ The **IWiaMiniDrv::drvReadItemProperties** method should perform the following t
 
 1.  Determine whether the properties being read need run-time updates. To determine which WIA properties are being read, the WIA minidriver can use the PROPSPEC array (defined in the Microsoft Windows SDK documentation). It is recommended that the WIA minidriver determine the item type before processing the PROPSPEC array. This reduces the need to traverse the array on every **IWiaMiniDrv::drvReadItemProperties** call. If you have no run-time properties on the child items of this device, only root item property read requests will be processed.
 
-2.  Update the current value by calling the [**wiasWriteMultiple**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiaswritemultiple) or **wiasWriteProp***Xxx* service functions, using the WIA property's ID. This updates the WIA property set that is stored in the driver item, and the WIA service returns the new value to the application.
+2.  Update the current value by calling the [**wiasWriteMultiple**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiaswritemultiple) or **wiasWriteProp**_Xxx_ service functions, using the WIA property's ID. This updates the WIA property set that is stored in the driver item, and the WIA service returns the new value to the application.
 
 If the WIA minidriver does not perform any run-time adjustments to WIA properties in this function, the WIA service automatically returns only the current WIA property value to the application. This function should be used only for properties such as device clocks, or WIA properties that require hardware-specific checks, such as document feeder status.
 

@@ -36,6 +36,18 @@
   - name: "Link Power Management in USB 3.0 Hardware"
 # Auto-expanded node
     items: 
+    - name: "Building USB devices for Windows"
+      href: building-usb-devices-for-windows.md
+    - name: "Microsoft OS Descriptors for USB Devices"
+      href: microsoft-defined-usb-descriptors.md
+    - name: "OS Descriptors Specifications"
+      items:
+      - name: "Microsoft OS 1.0 Descriptors Specification"
+        href: microsoft-os-1-0-descriptors-specification.md
+      - name: "Microsoft OS 2.0 Descriptors Specification"
+        href: microsoft-os-2-0-descriptors-specification.md
+    - name: "USB ContainerIDs in Windows"
+      href: usb-containerids-in-windows.md
     - name: "Link Power Management in USB 3.0 Hardware"
       href: link-power-management-in-usb-3-0-hardware.md
     - name: "Limitations of USB 2.0 Mechanism"
