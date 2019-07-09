@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)
 
 
-The **k\*\\**\*\* commands display the stack frame of the given thread, together with related information..
+The **k\*** commands display the stack frame of the given thread, together with related information..
 
 User-Mode, x86 Processor
 
