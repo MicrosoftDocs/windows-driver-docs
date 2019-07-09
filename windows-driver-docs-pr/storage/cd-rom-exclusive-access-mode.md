@@ -29,7 +29,7 @@ To use the exclusive access mechanism, applications must send an [**IOCTL\_CDROM
 
 Applications should query for the current state of the device before attempting to lock it. If the device is already locked, the class driver returns the identification string of the current owner of the device. Before locking the device, the caller must open it in read/write access mode. Therefore, the caller must have administrator privileges or permission to open the CD-ROM device in write access mode.
 
-Callers that request exclusive access should not open the CD-ROM device by simply sending a create request to the file system driver, because there is no guarantee that the CD-ROM class driver will receive the request. Instead, applications should use the **SetupDi***Xxx* routines to enumerate the interfaces for all CD-ROM devices in the system and then open the appropriate device interface.
+Callers that request exclusive access should not open the CD-ROM device by simply sending a create request to the file system driver, because there is no guarantee that the CD-ROM class driver will receive the request. Instead, applications should use the **SetupDi**_Xxx_ routines to enumerate the interfaces for all CD-ROM devices in the system and then open the appropriate device interface.
 
 When a caller opens a device by using the drive letter or names like *CdRom0* with the access mode set to 0, the file system driver is guaranteed to pass the create request to the CD-ROM class driver. But this guarantee is still not sufficient because the handle that the application obtains by this procedure does not give the caller read/write access to the device.
 

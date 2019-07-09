@@ -36,7 +36,7 @@ dpu [Options] [Range]
 <span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
 Specifies one or more display options. Any of the following options can be included, except that no more than one **/p**\* option can be indicated:
 
-<span id="_cWidth"></span><span id="_cwidth"></span><span id="_CWIDTH"></span>**/c***Width*  
+<span id="_cWidth"></span><span id="_cwidth"></span><span id="_CWIDTH"></span>**/c**_Width_  
 Specifies the number of columns to use in the display. If this is omitted, the default number of columns depends on the display type. Because of the way pointers are displayed by these commands, it is usually best to use the default of only one data column.
 
 <span id="_p"></span><span id="_P"></span>**/p**  

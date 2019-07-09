@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Usually, drivers do not complete IRPs in their dispatch routines unless the parameters for the given request are invalid or, in a device driver, unless the particular **IRP\_MJ\_*XXX*** requires no device I/O operations.
+Usually, drivers do not complete IRPs in their dispatch routines unless the parameters for the given request are invalid or, in a device driver, unless the particular **IRP\_MJ\_<em>XXX</em>** requires no device I/O operations.
 
 Every driver in a chain of layered drivers can check the validity of parameters in its own I/O stack location, for each IRP received by the driver's dispatch routines. Completing IRPs with invalid parameters in the dispatch routine of the highest possible driver improves I/O throughput for any chain of drivers and for the system overall.
 
