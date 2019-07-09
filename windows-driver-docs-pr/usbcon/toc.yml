@@ -37,7 +37,7 @@
     - name: "OS Descriptors Specifications"
       items:
       - name: "Microsoft OS 1.0 Descriptors Specification"
-        href: microsoft-os-1-0-descriptors-specifications.md
+        href: microsoft-os-1-0-descriptors-specification.md
     - name: "USB ContainerIDs in Windows"
       href: usb-containerids-in-windows.md
     - name: "Link Power Management in USB 3.0 Hardware"
