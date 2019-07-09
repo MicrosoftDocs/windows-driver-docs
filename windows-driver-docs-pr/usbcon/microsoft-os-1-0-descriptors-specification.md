@@ -100,6 +100,22 @@ To help IHVs address this issue, Microsoft has defined Microsoft OS descriptors.
 
 This information applies to Windows XP and later versions of Windows.
 
+<script>
+function downloadFunction()
+{
+    var checkBox = document.getElementById("acceptBox");
+    var downloadLink = document.getElementById("downloadLink");
+    if(acceptBox.checked == true)
+    {
+        downloadLink.style.display = "block";
+    }
+    else
+    {
+        downloadLink.style.display = "none";
+    }
+}
+</script>
+
 **Please read the license agreement before continuing.**
 
 <table>
@@ -139,22 +155,7 @@ Microsoft OS Descriptors Specification</strong><br />
 <p>Neither party may assign this Agreement without prior written approval of the other party.</p>
 </div>
 <p><br />
-<script>
-function downloadFunction()
-{
-    var checkBox = document.getElementById("acceptBox");
-    var downloadLink = document.getElementById("downloadLink");
-    if(acceptBox.checked == true)
-    {
-        downloadLink.style.display = "block";
-    }
-    else
-    {
-        downloadLink.style.display = "none";
-    }
-}
-</script>
-<input type="checkbox" id="acceptBox" onclick="downloadFunction()">I accept <p id="downloadLink" style="display:none"><a href="http://download.microsoft.com/download/9/C/5/9C5B2167-8017-4BAE-9FDE-D599BAC8184A/OS_Desc_Ext_Prop.zip">Download</a></p></td>
+<input type="checkbox" id="acceptBox" onclick="downloadFunction()">I accept <p id="downloadLink" style="display:blocked"><a href="http://download.microsoft.com/download/9/C/5/9C5B2167-8017-4BAE-9FDE-D599BAC8184A/OS_Desc_Ext_Prop.zip">Download</a></p></td>
 </tr>
 </tbody>
 </table>
