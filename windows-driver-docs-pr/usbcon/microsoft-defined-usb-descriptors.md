@@ -10,8 +10,8 @@ ms.localizationpriority: medium
 
 **Summary**
 
--   [Microsoft OS 1.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=617154)
--   [Microsoft OS 2.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=306681)
+-   [Microsoft OS 1.0 Descriptors Specification](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-os-1-0-descriptors-specification)
+-   [Microsoft OS 2.0 Descriptors Specification](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-os-2-0-descriptors-specification)
 
 Microsoft provides a set of proprietary device classes and USB descriptors, which are called Microsoft OS Descriptors (MODs).
 
@@ -65,7 +65,7 @@ The operating system creates a registry entry, named **osvc**, under this regist
 
 For registry entries under that key, see [USB Device Registry Entries](usb-device-specific-registry-settings.md).
 
-For additional information, see [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=617154).
+For additional information, see [Microsoft OS Descriptors](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-os-1-0-descriptors-specification).
 
 ## What types of OS feature descriptors are supported by Windows?
 
@@ -76,8 +76,8 @@ Any information to be stored as a feature descriptor must comply with one of the
 -   **Extended Properties**. Currently, there are two levels at which properties can be declared for a USB device: class level or devnode level. The extended properties OS feature descriptor allows a vendor to store additional properties- such as help pages, URLs, and icons-in device firmware.
 
 ## Related topics
-[Microsoft OS 1.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=617154)  
-[Microsoft OS 2.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=306681)  
+[Microsoft OS 1.0 Descriptors Specification](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-os-1-0-descriptors-specification)  
+[Microsoft OS 2.0 Descriptors Specification](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-os-2-0-descriptors-specification)  
 [Building USB devices for Windows](building-usb-devices-for-windows.md)  
 
 

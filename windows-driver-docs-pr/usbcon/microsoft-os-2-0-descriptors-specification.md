@@ -6,6 +6,8 @@ ms.date: 07/08/2019
 ms.localizationpriority: medium
 ---
 
+# Microsoft OS 2.0 Descriptors Specification
+
 This document defines and describes the implementation of version 2.0 of the Microsoft OS Descriptors. The goal of Microsoft OS 2.0 Descriptors is to address the limitations and reliability problems with version 1.0 of OS descriptors and enable new Windows-specific functionality for USB devices.
 
 This information applies to the following operating systems:
