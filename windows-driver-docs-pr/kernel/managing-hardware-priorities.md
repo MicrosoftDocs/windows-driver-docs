@@ -85,7 +85,7 @@ When calling driver support routines, be aware of the following.
 
   A driver must not call **KeAcquireSpinLockAtDpcLevel**, **KeReleaseSpinLockFromDpcLevel**, **KeAcquireSpinLock**, or **KeReleaseSpinLock** while running at IRQL &gt; DISPATCH\_LEVEL.
 
-- Calling a support routine that uses a spin lock, such as an **ExInterlocked*Xxx*** routine, raises IRQL on the current processor either to DISPATCH\_LEVEL or to DIRQL if the caller is not already running at a raised IRQL.
+- Calling a support routine that uses a spin lock, such as an **ExInterlocked<em>Xxx</em>** routine, raises IRQL on the current processor either to DISPATCH\_LEVEL or to DIRQL if the caller is not already running at a raised IRQL.
 
 - Driver code that runs at IRQL &gt; PASSIVE\_LEVEL should execute as quickly as possible. The higher the IRQL at which a routine runs, the more important it is for good overall performance to tune that routine to execute as quickly as possible. For example, any driver that calls **KeRaiseIrql** should make the reciprocal call to **KeLowerIrql** as soon as it can.
 

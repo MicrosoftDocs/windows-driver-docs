@@ -23,7 +23,7 @@ To isolate the pageable code into a named section, mark it with the following co
 
 **\#pragma alloc\_text(PAGE*Xxx**<em>, *RoutineName</em>**)**
 
-The name of a pageable code section must start with the four letters "PAGE" and can be followed by up to four characters (represented here as ***Xxx***) to uniquely identify the section. The first four letters of the section name (that is, "PAGE") must be capitalized. The *RoutineName* identifies an entry point to be included in the pageable section.
+The name of a pageable code section must start with the four letters "PAGE" and can be followed by up to four characters (represented here as **_Xxx_**) to uniquely identify the section. The first four letters of the section name (that is, "PAGE") must be capitalized. The *RoutineName* identifies an entry point to be included in the pageable section.
 
 The shortest valid name for a pageable code section in a driver file is simply PAGE. For example, the pragma directive in the following code example identifies `RdrCreateConnection` as an entry point in a pageable code section named PAGE.
 
@@ -71,11 +71,11 @@ Locking a section is an expensive operation because the memory manager must sear
 
 The handle passed to **MmLockPagableSectionByHandle** is the handle returned by the earlier call to **MmLockPagableCodeSection** or **MmLockPagableDataSection**.
 
-The memory manager maintains a count for each section handle and increments this count every time that a driver calls **MmLockPagable*Xxx*** for that section. A call to **MmUnlockPagableImageSection** decrements the count. While the counter for any section handle is nonzero, that section remains locked in memory.
+The memory manager maintains a count for each section handle and increments this count every time that a driver calls **MmLockPagable<em>Xxx</em>** for that section. A call to **MmUnlockPagableImageSection** decrements the count. While the counter for any section handle is nonzero, that section remains locked in memory.
 
 The handle to a section is valid as long as its driver is loaded. Therefore, a driver should call **MmLockPagable*Xxx*Section** only one time. If the driver requires additional locking calls, it should use **MmLockPagableSectionByHandle**.
 
-If a driver calls any **MmLockPagable*Xxx*** routine for a section that is already locked, the memory manager increments the reference count for the section. If the section is paged out when the lock routine is called, the memory manager pages in the section and sets its reference count to one.
+If a driver calls any **MmLockPagable<em>Xxx</em>** routine for a section that is already locked, the memory manager increments the reference count for the section. If the section is paged out when the lock routine is called, the memory manager pages in the section and sets its reference count to one.
 
 Using this technique minimizes the driver's effect on system resources. When the driver runs, it can lock into memory the code and data that must be resident. When there are no outstanding I/O requests for its device, (that is, when the device is closed or if the device was never opened), the driver can unlock the same code or data, making it available to be paged out.
 
@@ -83,7 +83,7 @@ However, after a driver has connected interrupts, any driver code that can be ca
 
 Consider the following implementation guidelines for locking a code or data section.
 
-- The primary use of the **Mm(Un)Lock*Xxx*** routines is to enable normally nonpaged code or data to be made pageable and brought in as nonpaged code or data. Drivers such as the serial driver and the parallel driver are good examples: if there are no open handles to a device such a driver manages, parts of code are not needed and can remain paged out. The redirector and server are also good examples of drivers that can use this technique. When there are no active connections, both of these components can be paged out.
+- The primary use of the **Mm(Un)Lock<em>Xxx</em>** routines is to enable normally nonpaged code or data to be made pageable and brought in as nonpaged code or data. Drivers such as the serial driver and the parallel driver are good examples: if there are no open handles to a device such a driver manages, parts of code are not needed and can remain paged out. The redirector and server are also good examples of drivers that can use this technique. When there are no active connections, both of these components can be paged out.
 
 - The whole pageable section is locked into memory.
 
