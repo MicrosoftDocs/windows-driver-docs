@@ -1,12 +1,12 @@
 ---
-title: Microsoft OS Descriptors
-description: Microsoft OS Descriptors
+title: Microsoft OS 1.0 Descriptors Specification
+description: Microsoft OS 1.0 Descriptors Specification
 ms.assetid: A2B00584-DDD5-42D2-BDBF-116637ABD192
 ms.date: 07/08/2019
 ms.localizationpriority: medium
 ---
 
-# Microsoft OS Descriptors
+# Microsoft OS 1.0 Descriptors Specification
 
 
 USB devices store standard descriptors in firmware for the device, and its interfaces and endpoints. Independent hardware vendors (IHVs) can also store class and vendor-specific descriptors. However, the types of information that these descriptors can contain is limited. IHVs typically must use Windows Update or media such as a CD to provide their users with a variety of device-specific information such as pictures, icons, custom drivers and so on.
