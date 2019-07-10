@@ -22,7 +22,7 @@
     href: usb-faq--introductory-level.md
 - name: "Building USB devices for Windows"
   items:
-  - name: "Getting started with building USB devices for Windows"
+  - name: "Overview of building USB devices for Windows"
     href: building-usb-devices-for-windows.md
   - name: "Microsoft OS Descriptors for USB Devices"
     href: microsoft-defined-usb-descriptors.md
@@ -54,7 +54,7 @@
   href: usb-device-side-drivers-in-windows.md
 - name: "Developing Windows applications for USB devices"
   items: 
-  - name: "Getting started developing Windows applications for USB devices"
+  - name: "Overview of developing Windows applications for USB devices"
     href: developing-windows-applications-that-communicate-with-a-usb-device.md
   - name: "Writing a UWP app for a USB device"
     items: 
