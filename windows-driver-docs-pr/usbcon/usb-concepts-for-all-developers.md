@@ -1,17 +1,15 @@
 ---
 Description: A Universal Serial Bus (USB) device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints.
-title: Concepts for all USB developers
+title: Getting started with USB development
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-#  Concepts for all USB developers
-
+# Getting started with USB development
 
 A Universal Serial Bus (USB) device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints. This topic provides a high-level overview of those concepts. For details, see the USB specifications at [Universal Serial Bus Documents]( https://go.microsoft.com/fwlink/p/?linkid=224892).
 
 ## In this section
-
 
 <table>
 <colgroup>
@@ -46,7 +44,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 
  
 
-## **Common USB scenarios**
+## Common USB scenarios
 
 
 **1—Get the device handle** for communication and use the retrieved handle or object to send data transfers.

@@ -79,7 +79,7 @@ After the USB driver stack completes the IRP for the request, the stack returns 
 
 The following example code shows how to create an array of [**USBD\_INTERFACE\_LIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/ns-usbdlib-_usbd_interface_list_entry) structures and call [**USBD\_SelectConfigUrbAllocateAndBuild**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_selectconfigurballocateandbuild). The example sends the request synchronously by calling SubmitUrbSync. To see the code example for SubmitUrbSync, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
 
-```ManagedCPlusPlus
+```C++
 /*++
 
 Routine Description:
@@ -269,11 +269,11 @@ NTSTATUS CompletionRoutine ( PDEVICE_OBJECT DeviceObject,
 Remarks
 -------
 
-**Disabling a Configuration for a USB Device:  **
+**Disabling a Configuration for a USB Device:**
 
 To disable a USB device, create and submit a select-configuration request with a NULL configuration descriptor. For that type of request, you can reuse the URB that you created for request that selected a configuration in the device. Alternately, you can allocate a new URB by calling [**USBD\_UrbAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_urballocate). Before submitting the request you must format the URB by using the [**UsbBuildSelectConfigurationRequest**](https://docs.microsoft.com/previous-versions/ff538968(v=vs.85)) macro as shown in the following example code.
 
-```ManagedCPlusPlus
+```C++
 URB Urb;
 UsbBuildSelectConfigurationRequest(
   &Urb,

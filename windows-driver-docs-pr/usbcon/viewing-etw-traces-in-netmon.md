@@ -1,11 +1,11 @@
 ---
 Description: You can view USB ETW event traces using Microsoft Network Monitor, also referred to as Netmon.
-title: USB ETW traces in Netmon
+title: Overview of USB ETW traces in Netmon
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# USB ETW traces in Netmon
+# Overview of USB ETW traces in Netmon
 
 
 You can view USB ETW event traces using Microsoft Network Monitor, also referred to as Netmon. Netmon does not parse the trace automatically. It requires USB ETW parsers. USB ETW parsers are text files, written in Network Monitor Parser Language (NPL), that describe the structure of USB ETW event traces. The parsers also define USB-specific columns and filters. These parsers make Netmon the best tool for analyzing USB ETW traces.

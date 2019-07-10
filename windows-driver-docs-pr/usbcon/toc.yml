@@ -1,10 +1,7 @@
 - name: "Universal Serial Bus (USB)"
   href: index.md
 - name: "New for USB in different versions of Windows"
-# Auto-expanded node
   items: 
-  - name: "New for USB in different versions of Windows"
-    href: new-for-usb-in-different-versions-of-windows.md
   - name: "Windows 10: What's new for USB"
     href: windows-10--what-s-new-for-usb.md
   - name: "Windows 8.1: What's new for USB"
@@ -12,9 +9,8 @@
   - name: "Windows 8: What's new for USB"
     href: what-s-new-in-usb-in-windows-8.md
 - name: "Concepts for all USB developers"
-# Auto-expanded node
   items: 
-  - name: "Concepts for all USB developers"
+  - name: "Getting started with USB development"
     href: usb-concepts-for-all-developers.md
   - name: "USB device layout"
     href: usb-device-layout.md
@@ -25,31 +21,21 @@
   - name: "USB in Windows - FAQ"
     href: usb-faq--introductory-level.md
 - name: "Building USB devices for Windows"
-# Auto-expanded node
-  items: 
-  - name: "Building USB devices for Windows"
+  items:
+  - name: "Getting started with building USB devices for Windows"
     href: building-usb-devices-for-windows.md
   - name: "Microsoft OS Descriptors for USB Devices"
     href: microsoft-defined-usb-descriptors.md
+  - name: "OS Descriptors Specifications"
+    items:
+    - name: "Microsoft OS 1.0 Descriptors Specification"
+      href: microsoft-os-1-0-descriptors-specification.md
+    - name: "Microsoft OS 2.0 Descriptors Specification"
+      href: microsoft-os-2-0-descriptors-specification.md
   - name: "USB ContainerIDs in Windows"
     href: usb-containerids-in-windows.md
   - name: "Link Power Management in USB 3.0 Hardware"
-# Auto-expanded node
-    items: 
-    - name: "Building USB devices for Windows"
-      href: building-usb-devices-for-windows.md
-    - name: "Microsoft OS Descriptors for USB Devices"
-      href: microsoft-defined-usb-descriptors.md
-    - name: "OS Descriptors Specifications"
-      items:
-      - name: "Microsoft OS 1.0 Descriptors Specification"
-        href: microsoft-os-1-0-descriptors-specification.md
-      - name: "Microsoft OS 2.0 Descriptors Specification"
-        href: microsoft-os-2-0-descriptors-specification.md
-    - name: "USB ContainerIDs in Windows"
-      href: usb-containerids-in-windows.md
-    - name: "Link Power Management in USB 3.0 Hardware"
-      href: link-power-management-in-usb-3-0-hardware.md
+    items:
     - name: "Limitations of USB 2.0 Mechanism"
       href: limitations-of-usb-2-0-mechanism.md
     - name: "USB 3.0 LPM Mechanism"
@@ -58,8 +44,8 @@
       href: u1-and-u2-transitions.md
     - name: "Common Hardware Problems with U1 or U2 Implementation"
       href: common-hardware-problems-with-u1-or-u2-implementation.md
-  - name: "Configuring USB Devices that Require Firmware Downloads"
-    href: configuring-usb-devices-that-require-firmware-downloads.md
+    - name: "Configuring USB Devices that Require Firmware Downloads"
+      href: configuring-usb-devices-that-require-firmware-downloads.md
 - name: "USB Dual Role Driver Stack Architecture"
   href: usb-dual-role-driver-stack-architecture.md
 - name: "USB host-side drivers in Windows"
@@ -67,12 +53,10 @@
 - name: "USB device-side drivers in Windows"
   href: usb-device-side-drivers-in-windows.md
 - name: "Developing Windows applications for USB devices"
-# Auto-expanded node
   items: 
-  - name: "Developing Windows applications for USB devices"
+  - name: "Getting started developing Windows applications for USB devices"
     href: developing-windows-applications-that-communicate-with-a-usb-device.md
-  - name: "UWP app for a USB device"
-# Auto-expanded node
+  - name: "Writing a UWP app for a USB device"
     items: 
     - name: "UWP app for a USB device"
       href: writing-usb-device-companion-apps-for-microsoft-store.md
@@ -92,8 +76,7 @@
       href: how-to-get-usb-descriptors--UWP-app-.md
     - name: "How to select a USB interface setting (UWP app)"
       href: how-to-select-a-usb-interface-setting--UWP-app-.md
-  - name: "Windows desktop app for a USB device"
-# Auto-expanded node
+  - name: "Writing a Windows desktop app for a USB device"
     items: 
     - name: "Windows desktop app for a USB device"
       href: windows-desktop-app-for-a-usb-device.md
@@ -108,14 +91,12 @@
     - name: "WinUSB Power Management"
       href: winusb-power-management.md
 - name: "Developing Windows client drivers for USB devices"
-# Auto-expanded node
   items: 
-  - name: "Developing Windows client drivers for USB devices"
+  - name: "Overview of developing Windows client drivers for USB devices"
     href: usb-driver-development-guide.md
   - name: "Getting started with USB client driver development"
-# Auto-expanded node
     items: 
-    - name: "Getting started with USB client driver development"
+    - name: "First steps for USB client driver development"
       href: getting-started-with-usb-client-driver-development.md
     - name: "Choosing a driver model for developing a USB client driver"
       href: winusb-considerations.md
@@ -125,24 +106,21 @@
       href: headers-and-libraries-for-a-usb-client-driver.md
     - name: "USB driver samples"
       href: usb-driver-samples-in-wdk.md
-  - name: "How to write your first USB client driver (KMDF)"
-# Auto-expanded node
+  - name: "Writing your first USB client driver (KMDF)"
     items: 
     - name: "How to write your first USB client driver (KMDF)"
       href: tutorial--write-your-first-usb-client-driver--kmdf-.md
     - name: "Understanding the USB client driver code structure (KMDF)"
       href: understanding-the-kmdf-template-code-for-usb.md
-  - name: "How to write your first USB client driver (UMDF)"
-# Auto-expanded node
+  - name: "Writing your first USB client driver (UMDF)"
     items: 
     - name: "How to write your first USB client driver (UMDF)"
       href: implement-driver-entry-for-a-usb-driver--umdf-.md
     - name: "Understanding the  USB client driver code structure (UMDF)"
       href: understanding-the-umdf-template-code-for-usb.md
   - name: "About USB Requests Block (URBs)"
-# Auto-expanded node
     items: 
-    - name: "About USB Requests Block (URBs)"
+    - name: "USB Requests Block (URBs)"
       href: communicating-with-a-usb-device.md
     - name: "Allocating and Building URBs"
       href: how-to-add-xrb-support-for-client-drivers.md
@@ -150,8 +128,7 @@
       href: send-requests-to-the-usb-driver-stack.md
     - name: "Best Practices: Using URBs"
       href: usb-client-driver-contract-in-windows-8.md
-  - name: "USB descriptors"
-# Auto-expanded node
+  - name: "About USB descriptors"
     items: 
     - name: "USB descriptors"
       href: usb-descriptors.md
@@ -164,9 +141,8 @@
     - name: "USB Interface Association Descriptor"
       href: usb-interface-association-descriptor.md
   - name: "Selecting a USB configuration in USB drivers"
-# Auto-expanded node
     items: 
-    - name: "Selecting a USB configuration in USB drivers"
+    - name: "Overview of selecting a USB configuration in USB drivers"
       href: configuring-usb-devices.md
     - name: "How to select a configuration for a USB device"
       href: how-to-select-a-configuration-for-a-usb-device.md
@@ -175,9 +151,8 @@
     - name: "Configuring Usbccgp.sys to Select a Non-Default USB Configuration"
       href: selecting-the-configuration-for-a-multiple-interface--composite--usb-d.md
   - name: "Sending USB data transfers in USB client drivers"
-# Auto-expanded node
     items: 
-    - name: "Sending USB data transfers in USB client drivers"
+    - name: "Overview of sending USB data transfers in USB client drivers"
       href: usb-device-i-o.md
     - name: "How to send a USB control transfer"
       href: usb-control-transfer.md
@@ -200,14 +175,12 @@
     - name: "USB Bandwidth Allocation"
       href: usb-bandwidth-allocation.md
   - name: "Implementing power management in USB client drivers"
-# Auto-expanded node
     items: 
-    - name: "Implementing power management in USB client drivers"
+    - name: "Overview of implementing power management in USB client drivers"
       href: usb-power-management.md
     - name: "USB Device Power States"
       href: comparing-usb-device-states-to-wdm-device-states.md
-    - name: "Selective suspend in USB drivers (WDF)"
-# Auto-expanded node
+    - name: "Selective suspend in WDF USB drivers"
       items: 
       - name: "Selective suspend in USB drivers (WDF)"
         href: selective-suspend-in-usb-drivers-wdf.md
@@ -226,9 +199,8 @@
   - name: "Querying for Bus Driver Interfaces"
     href: querying-for-usb-interfaces.md
 - name: "Developing Windows drivers for USB host controllers"
-# Auto-expanded node
   items: 
-  - name: "Developing Windows drivers for USB host controllers"
+  - name: "Overview of developing Windows drivers for USB host controllers"
     href: developing-windows-drivers-for-usb-host-controllers.md
   - name: "Architecture: USB host controller extension (UCX)"
     href: get-started-with-host-controller-driver-development.md
@@ -241,18 +213,16 @@
   - name: "Configure USB endpoints in a USB host controller driver"
     href: configuring-usb-endpoints-in-a-host-controller-driver.md
 - name: "Developing Windows drivers for emulated USB devices (UDE)"
-# Auto-expanded node
   items: 
-  - name: "Developing Windows drivers for emulated USB devices (UDE)"
+  - name: "Overview of developing Windows drivers for emulated USB devices (UDE)"
     href: developing-windows-drivers-for-emulated-usb-host-controllers-and-devices.md
   - name: "Architecture: USB Device Emulation (UDE)"
     href: usb-emulated-device--ude--architecture.md
   - name: "Write a UDE client driver"
     href: writing-a-ude-client-driver.md
 - name: "Developing Windows drivers for USB function controllers"
-# Auto-expanded node
   items: 
-  - name: "Developing Windows drivers for USB function controllers"
+  - name: "Overview of developing Windows drivers for USB function controllers"
     href: developing-windows-drivers-for-usb-function-controllers.md
   - name: "USB registry settings for a function controller driver"
     href: usb-registry-settings-for-a-function-controller-driver.md
@@ -264,8 +234,7 @@
     href: usb-filter-driver-for-supporting-chargers.md
   - name: "Communicating with GenericUSBFn.sys from a user-mode service"
     href: user-mode-services-ufx.md
-- name: "Windows support for USB Type-C connectors"
-# Auto-expanded node
+- name: "USB Type-C connectors in Windows"
   items: 
   - name: "Windows support for USB Type-C connectors"
     href: oem-tasks-for-bringing-up-a-usb-typec.md
@@ -278,9 +247,8 @@
   - name: "FAQ: USB Type-C connector on a Windows system"
     href: faq--usb-type-c-connector-on-a-windows-system.md
   - name: "Developing Windows drivers for USB Type-C connectors"
-# Auto-expanded node
     items: 
-    - name: "Developing Windows drivers for USB Type-C connectors"
+    - name: "Overview of developing Windows drivers for USB Type-C connectors"
       href: developing-windows-drivers-for-usb-type-c-connectors.md
     - name: "Architecture: USB Type-C design for a Windows system"
       href: architecture--usb-type-c-in-a-windows-system.md
@@ -297,9 +265,8 @@
     - name: "Write a UCSI client driver"
       href: write-a-ucsi-driver.md
 - name: "USB Event Tracing for Windows"
-# Auto-expanded node
   items: 
-  - name: "USB Event Tracing for Windows"
+  - name: "Overview of USB Event Tracing for Windows"
     href: usb-event-tracing-for-windows.md
   - name: "Capture and view USB traces with Microsoft Message Analyzer"
     href: capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md
@@ -308,9 +275,8 @@
   - name: "Using activity ID GUIDs in USB ETW traces"
     href: using-usb-etw.md
   - name: "USB ETW traces in Netmon"
-# Auto-expanded node
     items: 
-    - name: "USB ETW traces in Netmon"
+    - name: "Overview of USB ETW traces in Netmon"
       href: viewing-etw-traces-in-netmon.md
     - name: "How to install Netmon and USB ETW Parsers"
       href: how-to-install-netmon-and-the-netmon-usb-parser.md
@@ -321,9 +287,8 @@
     - name: "Case Study: Troubleshooting an unknown USB device by using ETW and Netmon"
       href: case-study--troubleshooting-an-unknown-usb-device-by-using-etw-and-netmon.md
   - name: "Using Xperf with USB ETW"
-# Auto-expanded node
     items: 
-    - name: "Using Xperf with USB ETW"
+    - name: "Overview of using Xperf with USB ETW"
       href: using-xperf-with-usb-etw.md
     - name: "Viewing a USB Event Trace in Xperf"
       href: viewing-a-usb-event-trace-in-xperf.md
@@ -332,22 +297,15 @@
   - name: "USB ETW and Power Management"
     href: usb-etw-and-power-management.md
 - name: "Testing USB hardware, drivers, and apps in Windows"
-# Auto-expanded node
   items: 
-  - name: "Testing USB hardware, drivers, and apps in Windows"
-    href: usb-driver-testing-guide.md
   - name: "Microsoft USB Test Tool (MUTT) devices"
-# Auto-expanded node
     items: 
-    - name: "Microsoft USB Test Tool (MUTT) devices"
+    - name: "Overview of Microsoft USB Test Tool (MUTT) devices"
       href: microsoft-usb-test-tool--mutt--devices.md
     - name: "Tools in the MUTT software package"
       href: mutt-software-package.md
   - name: "USB test tools"
-# Auto-expanded node
     items: 
-    - name: "USB test tools"
-      href: usb-test-tools.md
     - name: "MuttUtil"
       href: muttutil.md
     - name: "USB client driver verifier"
@@ -381,9 +339,8 @@
   - name: "Test USB devices with MUTT devices"
     href: tools-in-the-package.md
   - name: "Windows Hardware Certification Kit Tests for USB"
-# Auto-expanded node
     items: 
-    - name: "Windows Hardware Certification Kit Tests for USB"
+    - name: "Windows Hardware Lab Kit (HLK) Tests for USB"
       href: windows-hardware-certification-kit-tests-for-usb.md
     - name: "Recommended USB tests for system development"
       href: usb-tests-for-system-development.md
@@ -392,9 +349,8 @@
     - name: "Common failures for USB tests in the Windows HCK"
       href: common-failures-for-usb-tests-in-the-windows-hck.md
 - name: "Microsoft-provided USB drivers"
-# Auto-expanded node
   items: 
-  - name: "Microsoft-provided USB drivers"
+  - name: "Overview of Microsoft-provided USB drivers"
     href: system-supplied-usb-drivers.md
   - name: "USB device class drivers included in Windows"
     href: supported-usb-classes.md
@@ -404,8 +360,7 @@
     href: microsoft-defined-usb-frameworks.md
   - name: "USB Device Registry Entries"
     href: usb-device-specific-registry-settings.md
-  - name: "USB Generic Parent Driver (Usbccgp.sys)"
-# Auto-expanded node
+  - name: "Usbccgp.sys"
     items: 
     - name: "USB Generic Parent Driver (Usbccgp.sys)"
       href: usb-common-class-generic-parent-driver.md
@@ -416,16 +371,14 @@
     - name: "Enumeration of Interfaces on USB Composite Devices"
       href: enumeration-of-interfaces-not-grouped-in-collections.md
     - name: "Enumeration of Interface Collections on USB Composite Devices"
-# Auto-expanded node
       items: 
-      - name: "Enumeration of Interface Collections on USB Composite Devices"
+      - name: "Overview of Enumeration of Interface Collections on USB Composite Devices"
         href: support-for-interface-collections.md
       - name: "Support for the Wireless Mobile Communication Device Class"
         href: support-for-the-wireless-mobile-communication-device-class--wmcdc-.md
     - name: "Content Security Features in Usbccgp.sys"
       href: content-security-features-in-the-composite-client-generic-parent-drive.md
-  - name: "WinUSB (Winusb.sys)"
-# Auto-expanded node
+  - name: "Winusb.sys"
     items: 
     - name: "WinUSB (Winusb.sys)"
       href: winusb.md

@@ -1,11 +1,11 @@
 ---
 Description: This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB).
-title: USB Event Tracing for Windows
+title: Overview of USB Event Tracing for Windows
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# USB Event Tracing for Windows
+# Overview of USB Event Tracing for Windows
 
 
 This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB). This information is provided for the benefit of those who develop and debug USB devices. It includes information on how to install the tools, create trace files, and analyze the events in a USB trace file. The topic assumes that you have a comprehensive understanding of the USB ecosystem and hardware that is required to successfully use the USB tracing and logging features.

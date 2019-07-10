@@ -1,11 +1,11 @@
 ---
 Description: This section provides links for manufacturers of USB peripheral devices.
-title: Building USB devices for Windows
+title: Getting started with building USB devices for Windows
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Building USB devices for Windows
+# Getting started with building USB devices for Windows
 
 ## Summary
 
