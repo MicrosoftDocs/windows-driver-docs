@@ -381,6 +381,6 @@ This feature allows for the device to be always listening for the user’s voice
 The audio stack is responsible for communicating the wake data (speaker ID, keyword trigger, confidence level) as well as notifying interested clients that the keyword has been detected.
 
 
-## <span id="WOV_Validation"></span><span id="wov_validation"></span><span id="WOV_VALIDATION"></span> Validation on Modern Standby Systems
+**Validation on Modern Standby Systems**
 
 WoV from a system idle state can be validated on [Modern Standby](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) systems using the [Modern Standby Wake on Voice Basic Test on AC-power Source](https://docs.microsoft.com/windows-hardware/test/hlk/testref/69df7cf2-6024-4eee-92ee-1506480614ee) and the [Modern Standby Wake on Voice Basic Test on DC-power Source](https://docs.microsoft.com/windows-hardware/test/hlk/testref/614ffb93-eced-45ab-bf7b-e09291a97fd2) in the [HLK](https://docs.microsoft.com/windows-hardware/test/hlk/). These tests check that the system has a hardware keyword spotter (HW-KWS), is able to enter the Deepest Runtime Idle Platform State (DRIPS) and is able to wake from Modern Standby on voice command with system resume latency of less than or equal to one second. 
