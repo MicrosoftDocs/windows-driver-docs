@@ -1,16 +1,16 @@
 ---
-title: Bluetooth Profile Drivers Overview
-description: Bluetooth Profile Drivers Overview
+title: Introduction to Bluetooth Profile Drivers
+description: Introduction to Bluetooth Profile Drivers
 ms.assetid: 86806113-28b6-470c-883c-506ac1205f85
 keywords:
 - Bluetooth WDK , about Bluetooth
 - remote connections WDK Bluetooth
 - connections WDK Bluetooth
-ms.date: 04/20/2017
+ms.date: 07/01/2019
 ms.localizationpriority: medium
 ---
 
-# Bluetooth Profile Drivers Overview
+# Introduction to Bluetooth Profile Drivers
 
 
 This section describes the support that Microsoft provides for the wireless Bluetooth protocol. Bluetooth is an industry standard protocol that enables wireless connectivity for a variety of devices including computers, mobile phones, handheld devices, mouse devices, keyboards, and printers. This section also provides guidelines on how to develop Bluetooth profile drivers for your Bluetooth-enabled device. Details of the Bluetooth protocol are available on the [Bluetooth](https://go.microsoft.com/fwlink/p/?linkid=26268) website.

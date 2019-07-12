@@ -1,12 +1,12 @@
 ---
-title: WISPr authentication
-description: WISPr authentication
+title: WISPr authentication overview
+description: WISPr authentication overview
 ms.assetid: 49782d7f-c2f9-408d-971c-1af4d93d4d8d
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# WISPr authentication
+# WISPr authentication overview
 
 
 A Wireless Internet Service Provider roaming (WISPr)-capable hotspot includes a payload in its captive portal page that is similar to the following:

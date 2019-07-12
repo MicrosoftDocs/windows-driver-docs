@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 In general, data is moved downstream only by triggering events, the minidriver's processing, and buffer completions. To isolate the cause of a hang or stall:
 
-- Check for mismatched **KsGate*Xxx*** calls.
+- Check for mismatched **KsGate<em>Xxx</em>** calls.
 
 - Check for omitted **Ks*Xxx*AttemptProcessing** calls.
 

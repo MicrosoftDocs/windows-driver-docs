@@ -37,7 +37,7 @@ The following examples illustrate what a minidriver needs to do regarding synchr
 
     If stream class synchronization is turned on, the minidriver's entry points are all called at DISPATCH\_LEVEL. The minidriver can do processing of up to around 1/2 to 1 millisecond duration without needing to adjust priority. If the minidriver only occasionally needs to run code that takes more than 1/2 millisecond, or occasionally needs to call services at PASSIVE\_LEVEL (such as at initialization time), then [**StreamClassCallAtNewPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclasscallatnewpriority) with LOW priority can be used to acquire a PASSIVE\_LEVEL worker thread. Note that a low-priority callback is not synchronized with anything and the minidriver could receive new requests (assuming **ReadyForNextRequest** NotificationType parameter is pending) when running a low-priority callback.
 
--   **When Stream Class Synchronization Should** ***Not*** **Be Used**
+-   **When Stream Class Synchronization Should** **_Not_** **Be Used**
 
     The following are examples of situations where stream class synchronization should not be used. These include:
 

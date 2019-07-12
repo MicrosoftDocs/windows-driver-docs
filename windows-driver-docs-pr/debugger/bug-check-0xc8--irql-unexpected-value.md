@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The IRQL\_UNEXPECTED\_VALUE bug check has a value of 0x000000C8. This indicates that the processor's IRQL is not what it should be at this time.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## IRQL\_UNEXPECTED\_VALUE Parameters
