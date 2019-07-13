@@ -1,6 +1,6 @@
 ---
-title: NDIS Processing of Plug and Play Events
-description: NDIS Processing of Plug and Play Events
+title: Overview of NDIS Processing of Plug and Play Events
+description: Overview of NDIS Processing of Plug and Play Events
 ms.assetid: 3e9ae945-4241-4c66-bdb1-b9e3466167be
 keywords:
 - Plug and Play WDK NDIS miniport , IRP processing for NIC
@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# NDIS Processing of Plug and Play Events
+# Overview of NDIS Processing of Plug and Play Events
 
 
 

@@ -1,16 +1,14 @@
 - name: "Network Driver Design Guide"
   href: index.md
 - name: "Introduction to Network Drivers"
-# Auto-expanded node
   items: 
   - name: "Introduction to Network Drivers"
     href: introduction-to-network-drivers.md
   - name: "Roadmap for Developing NDIS Drivers"
     href: roadmap-for-developing-ndis-drivers.md
   - name: "Using the Network Driver Design Guide"
-# Auto-expanded node
     items: 
-    - name: "Using the Network Driver Design Guide"
+    - name: "Navigating the Network Driver Design Guide"
       href: using-the-network-driver-design-guide.md
     - name: "Learning About Miniport Drivers"
       href: learning-about-miniport-drivers.md
@@ -21,14 +19,10 @@
     - name: "Learning About Intermediate Drivers"
       href: learning-about-intermediate-drivers.md
   - name: "Network Architecture for Kernel-Mode Drivers"
-# Auto-expanded node
     items: 
-    - name: "Network Architecture for Kernel-Mode Drivers"
-      href: network-architecture-for-kernel-mode-drivers.md
     - name: "Windows Network Architecture and the OSI Model"
       href: windows-network-architecture-and-the-osi-model.md
-    - name: "NDIS driver types"
-# Auto-expanded node
+    - name: "NDIS drivers"
       items: 
       - name: "NDIS driver types"
         href: ndis-drivers.md
@@ -41,16 +35,12 @@
       - name: "Intermediate drivers"
         href: ndis-intermediate-drivers.md
     - name: "Network Driver Environments"
-# Auto-expanded node
       items: 
-      - name: "Network Driver Environments"
-        href: network-driver-environments.md
       - name: "Connectionless Environment for Network Drivers"
         href: connectionless-environment-for-network-drivers.md
       - name: "Connection-Oriented Environment for Network Drivers"
         href: connection-oriented-environment-for-network-drivers.md
-  - name: "Network Driver Programming Considerations"
-# Auto-expanded node
+  - name: "Network Driver Programming Guidelines"
     items: 
     - name: "Network Driver Programming Considerations"
       href: network-driver-programming-considerations.md
@@ -74,8 +64,7 @@
       href: asynchronous-i-o-and-completion-functions-in-network-drivers.md
     - name: "Security Issues for Network Drivers"
       href: security-issues-for-network-drivers.md
-  - name: "Driver Stack Management"
-# Auto-expanded node
+  - name: "NDIS Driver Stack Overview"
     items: 
     - name: "Driver Stack Management"
       href: driver-stack-management.md
@@ -88,10 +77,7 @@
     - name: "Module States of a Filter Driver"
       href: module-states-of-a-filter-driver.md
     - name: "NDIS Stack Operations"
-# Auto-expanded node
       items: 
-      - name: "NDIS Stack Operations"
-        href: ndis-stack-operations.md
       - name: "Starting a Driver Stack"
         href: starting-a-driver-stack.md
       - name: "Stopping a Driver Stack"
@@ -102,13 +88,11 @@
         href: restarting-a-driver-stack.md
       - name: "Modifying a Running Driver Stack"
         href: modifying-a-running-driver-stack.md
-  - name: "NET_BUFFER Architecture"
-# Auto-expanded node
+  - name: "NET_BUFFER Design Concepts"
     items: 
     - name: "NET_BUFFER Architecture"
       href: net-buffer-architecture.md
-    - name: "Network Data Structures"
-# Auto-expanded node
+    - name: "Network Data Structures in NDIS"
       items: 
       - name: "Network Data Structures"
         href: network-data-structures.md
@@ -118,8 +102,7 @@
         href: net-buffer-list-structure.md
       - name: "NET_BUFFER_LIST_CONTEXT Structure"
         href: net-buffer-list-context-structure.md
-    - name: "Retreat and Advance Operations"
-# Auto-expanded node
+    - name: "NET_BUFFER Retreat and Advance Operations"
       items: 
       - name: "Retreat and Advance Operations"
         href: retreat-and-advance-operations.md
@@ -131,8 +114,7 @@
       href: obtaining-pool-handles.md
     - name: "Dispatch IRQL Tracking"
       href: dispatch-irql-tracking.md
-    - name: "Send and Receive Operations"
-# Auto-expanded node
+    - name: "Transferring Network Data"
       items: 
       - name: "Send and Receive Operations"
         href: send-and-receive-operations.md
@@ -144,8 +126,7 @@
         href: receiving-network-data.md
       - name: "Looping Back NDIS Packets"
         href: looping-back-ndis-packets.md
-    - name: "Ethernet Send and Receive Operations"
-# Auto-expanded node
+    - name: "Transferring Network Data with Ethernet"
       items: 
       - name: "Ethernet Send and Receive Operations"
         href: ethernet-send-and-receive-operations.md
@@ -153,8 +134,7 @@
         href: sending-ethernet-frames.md
       - name: "Indicating Received Ethernet Frames"
         href: indicating-received-ethernet-frames.md
-    - name: "Derived NET_BUFFER_LIST Structures"
-# Auto-expanded node
+    - name: "Overview of Derived NET_BUFFER_LIST Structures"
       items: 
       - name: "Derived NET_BUFFER_LIST Structures"
         href: derived-net-buffer-list-structures.md
@@ -168,31 +148,25 @@
         href: reassembled-net-buffer-list-structures.md
   - name: "Introduction to NDIS PDPI"
     href: introduction-to-ndis-pdpi.md
-- name: "NDIS version guide"
-# Auto-expanded node
+- name: "NDIS versions"
   items: 
   - name: "NDIS version guide"
     href: ndis-version-guide.md
   - name: "Overview of NDIS versions"
     href: overview-of-ndis-versions.md
   - name: "Introductions to NDIS 6.0 and later"
-# Auto-expanded node
     items: 
-    - name: "Introductions to NDIS 6.0 and later"
-      href: introductions-to-ndis-6-0-and-later.md
     - name: "Introduction to NDIS 6.83"
       href: introduction-to-ndis-6-83.md
     - name: "Introduction to NDIS 6.82"
       href: introduction-to-ndis-6-82.md
     - name: "Introduction to NDIS 6.81"
       href: introduction-to-ndis-6-81.md
-    - name: "Introduction to NDIS 6.80"
-# Auto-expanded node
+    - name: "Changes in NDIS 6.80"
       items: 
       - name: "Introduction to NDIS 6.80"
         href: introduction-to-ndis-6-80.md
-      - name: "Synchronous OID Request Interface in NDIS 6.80"
-# Auto-expanded node
+      - name: "Synchronous OID Request Interface"
         items: 
         - name: "Synchronous OID Request Interface in NDIS 6.80"
           href: synchronous-oid-request-interface-in-ndis-6-80.md
@@ -208,8 +182,7 @@
       href: introduction-to-ndis-6-60.md
     - name: "Introduction to NDIS 6.50"
       href: introduction-to-ndis-6-50.md
-    - name: "Introduction to NDIS 6.40"
-# Auto-expanded node
+    - name: "Changes in NDIS 6.40"
       items: 
       - name: "Introduction to NDIS 6.40"
         href: introduction-to-ndis-6-40.md
@@ -219,8 +192,7 @@
         href: using-ndis-6-40-data-structures.md
       - name: "Compiling an NDIS 6.40 Driver"
         href: compiling-an-ndis-6-40-driver.md
-    - name: "Introduction to NDIS 6.30"
-# Auto-expanded node
+    - name: "Changes in NDIS 6.30"
       items: 
       - name: "Introduction to NDIS 6.30"
         href: introduction-to-ndis-6-30.md
@@ -240,8 +212,7 @@
         href: using-ndis-6-30-data-structures.md
       - name: "Compiling an NDIS 6.30 Driver"
         href: compiling-an-ndis-6-30-driver.md
-    - name: "Introduction to NDIS 6.20"
-# Auto-expanded node
+    - name: "Changes in NDIS 6.20"
       items: 
       - name: "Introduction to NDIS 6.20"
         href: introduction-to-ndis-6-20.md
@@ -261,8 +232,7 @@
         href: using-ndis-6-20-data-structures.md
       - name: "Compiling an NDIS 6.20 Driver"
         href: compiling-an-ndis-6-20-driver.md
-    - name: "Introduction to NDIS 6.1"
-# Auto-expanded node
+    - name: "Changes in NDIS 6.1"
       items: 
       - name: "Introduction to NDIS 6.1"
         href: introduction-to-ndis-6-1.md
@@ -280,15 +250,13 @@
         href: using-ndis-6-1-data-structures.md
       - name: "Compiling an NDIS 6.1 Driver"
         href: compiling-an-ndis-6-1-driver.md
-    - name: "Introduction to NDIS 6.0"
-# Auto-expanded node
+    - name: "Changes in NDIS 6.0"
       items: 
       - name: "Introduction to NDIS 6.0"
         href: introduction-to-ndis-6-0.md
       - name: "NDIS 6.0 Design Objectives"
         href: ndis-6-0-design-objectives.md
-      - name: "Enhanced Performance and Scalability"
-# Auto-expanded node
+      - name: "Enhanced Performance and Scalability in NDIS 6.0"
         items: 
         - name: "Enhanced Performance and Scalability"
           href: enhanced-performance-and-scalability.md
@@ -306,8 +274,7 @@
           href: filter-drivers.md
         - name: "Full TCP Offload"
           href: full-tcp-offload.md
-      - name: "Simplified Driver Model"
-# Auto-expanded node
+      - name: "Simplified Driver Model in NDIS 6.0"
         items: 
         - name: "Simplified Driver Model"
           href: simplified-driver-model.md
@@ -321,8 +288,7 @@
           href: ndis-interface-information.md
         - name: "Easier-to-Write Filter Drivers"
           href: easier-to-write-filter-drivers.md
-  - name: "Specifying NDIS Version Information"
-# Auto-expanded node
+  - name: "Specifying and Obtaining NDIS Version Information"
     items: 
     - name: "Specifying NDIS Version Information"
       href: specifying-ndis-version-information.md
@@ -337,10 +303,7 @@
     - name: "NDIS Object Version Issues for WMI"
       href: ndis-object-version-issues-for-wmi.md
   - name: "Porting NDIS Drivers to Newer NDIS Versions"
-# Auto-expanded node
     items: 
-    - name: "Porting NDIS Drivers to Newer NDIS Versions"
-      href: porting-ndis-drivers-to-newer-ndis-versions.md
     - name: "Porting NDIS 6.x drivers to NDIS 6.83"
       href: porting-ndis-6-x-drivers-to-ndis-6-83.md
     - name: "Porting NDIS 6.x drivers to NDIS 6.82"
@@ -357,8 +320,7 @@
       href: porting-ndis-6-x-drivers-to-ndis-6-50.md
     - name: "Porting NDIS 6.x Drivers to NDIS 6.40"
       href: porting-ndis-6-x-drivers-to-ndis-6-40.md
-    - name: "Porting NDIS 6.x Drivers to NDIS 6.30"
-# Auto-expanded node
+    - name: "Porting to NDIS 6.30"
       items: 
       - name: "Porting NDIS 6.x Drivers to NDIS 6.30"
         href: porting-ndis-6-x-drivers-to-ndis-6-30.md
@@ -370,8 +332,7 @@
         href: summary-of-changes-required-to-port-a-protocol-or-filter-driver-to-ndis-6-30.md
       - name: "Summary of Changes Required to Port an Intermediate Driver to NDIS 6.30"
         href: summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-30.md
-    - name: "Porting NDIS 6.x Drivers to NDIS 6.20"
-# Auto-expanded node
+    - name: "Porting to NDIS 6.20"
       items: 
       - name: "Porting NDIS 6.x Drivers to NDIS 6.20"
         href: porting-ndis-6-x-drivers-to-ndis-6-20.md
@@ -390,27 +351,17 @@
       - name: "Summary of Changes Required to Port an Intermediate Driver to NDIS 6.20"
         href: summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-2.md    
 - name: "NDIS Core Functionality"
-# Auto-expanded node
   items: 
-  - name: "NDIS Core Functionality"
+  - name: "NDIS Drivers and Services"
     href: ndis-core-functionality2.md
   - name: "NDIS Miniport Drivers"
-# Auto-expanded node
     items: 
-    - name: "NDIS Miniport Drivers"
-      href: ndis-miniport-drivers.md
     - name: "Roadmap for Developing NDIS Miniport Drivers"
       href: roadmap-for-developing-ndis-miniport-drivers.md
     - name: "Introduction to NDIS Miniport Drivers"
-# Auto-expanded node
       items: 
-      - name: "Introduction to NDIS Miniport Drivers"
-        href: introduction-to-ndis-miniport-drivers.md
       - name: "Types of NDIS Miniport Drivers"
-# Auto-expanded node
         items: 
-        - name: "Types of NDIS Miniport Drivers"
-          href: types-of-ndis-miniport-drivers.md
         - name: "Deserialized NDIS Miniport Drivers"
           href: deserialized-ndis-miniport-drivers.md
         - name: "Serialized NDIS Miniport Drivers"
@@ -422,10 +373,7 @@
       - name: "Network Interface Card Support"
         href: network-interface-card-support.md
       - name: "Important Features of Miniport Driver Code"
-# Auto-expanded node
         items: 
-        - name: "Important Features of Miniport Driver Code"
-          href: important-features-of-miniport-driver-code.md
         - name: "MiniportXxx Functions"
           href: miniportxxx-functions.md
         - name: "Linking to the NDIS Library"
@@ -439,10 +387,7 @@
       - name: "Sample NDIS Miniport Drivers"
         href: sample-ndis-miniport-drivers.md
     - name: "Writing NDIS Miniport Drivers"
-# Auto-expanded node
       items: 
-      - name: "Writing NDIS Miniport Drivers"
-        href: writing-ndis-miniport-drivers.md
       - name: "Initializing a Miniport Driver"
         href: initializing-a-miniport-driver.md
       - name: "Unloading a Miniport Driver"
@@ -454,9 +399,8 @@
       - name: "Halting a Miniport Adapter"
         href: halting-a-miniport-adapter.md
       - name: "Starting and Pausing a Miniport Adapter"
-# Auto-expanded node
         items: 
-        - name: "Starting and Pausing a Miniport Adapter"
+        - name: "Starting and Pausing a Miniport Adapter Overview"
           href: starting-and-pausing-a-miniport-adapter.md
         - name: "Starting an Adapter"
           href: starting-an-adapter.md
@@ -464,8 +408,7 @@
           href: pausing-an-adapter.md
       - name: "Configuring Optional Miniport Driver Services"
         href: configuring-optional-miniport-driver-services.md
-      - name: "Miniport Driver Send and Receive Operations"
-# Auto-expanded node
+      - name: "Transferring network data in a miniport driver"
         items: 
         - name: "Miniport Driver Send and Receive Operations"
           href: miniport-driver-send-and-receive-operations.md
@@ -478,10 +421,7 @@
         - name: "Indicating Received Data from a Miniport Driver"
           href: indicating-received-data-from-a-miniport-driver.md
       - name: "Managing Interrupts"
-# Auto-expanded node
         items: 
-        - name: "Managing Interrupts"
-          href: managing-interrupts.md
         - name: "Registering and Deregistering Interrupts"
           href: registering-and-deregistering-interrupts.md
         - name: "Handling Interrupts"
@@ -490,8 +430,7 @@
           href: synchronizing-with-interrupts.md
         - name: "Interrupt Moderation"
           href: interrupt-moderation.md
-      - name: "Miniport Adapter OID Requests"
-# Auto-expanded node
+      - name: "Miniport Adapter OIDs"
         items: 
         - name: "Miniport Adapter OID Requests"
           href: miniport-adapter-oid-requests.md
@@ -512,17 +451,11 @@
       - name: "Miniport Adapter Shutdown"
         href: miniport-adapter-shutdown.md
     - name: "Obtaining and Setting Miniport Driver Information and NDIS Support for WMI"
-# Auto-expanded node
       items: 
-      - name: "Obtaining and Setting Miniport Driver Information and NDIS Support for WMI"
-        href: obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md
       - name: "NDIS Management Information and OIDs"
         href: ndis-management-information-and-oids.md
       - name: "Querying Miniport Driver Information"
-# Auto-expanded node
         items: 
-        - name: "Querying Miniport Driver Information"
-          href: querying-miniport-driver-information.md
         - name: "Querying a Connectionless Miniport Driver"
           href: querying-a-connectionless-miniport-driver.md
         - name: "Querying a Connection-Oriented Miniport Driver"
@@ -532,10 +465,7 @@
         - name: "Querying 64-Bit Statistics OIDs"
           href: querying-64-bit-statistics-oids.md
       - name: "Setting Miniport Driver Information"
-# Auto-expanded node
         items: 
-        - name: "Setting Miniport Driver Information"
-          href: setting-miniport-driver-information.md
         - name: "Setting Information for a Connectionless Miniport Driver"
           href: setting-information-for-a-connectionless-miniport-driver.md
         - name: "Setting Information for a Connection-Oriented Miniport Driver"
@@ -546,8 +476,7 @@
         href: reporting-hardware-status.md
       - name: "Indicating Connection Status"
         href: indicating-connection-status.md
-      - name: "NDIS Support for WMI"
-# Auto-expanded node
+      - name: "Working with WMI in NDIS Drivers"
         items: 
         - name: "NDIS Support for WMI"
           href: ndis-support-for-wmi.md
@@ -560,16 +489,12 @@
         - name: "NDIS-Supported WMI Operations"
           href: ndis-supported-wmi-operations.md
         - name: "Standard WMI OIDs and Status Indications"
-# Auto-expanded node
           items: 
-          - name: "Standard WMI OIDs and Status Indications"
-            href: standard-wmi-oids-and-status-indications.md
           - name: "Standard Miniport Driver OIDs Registered with WMI"
             href: standard-miniport-driver-oids-registered-with-wmi.md
           - name: "Standard Miniport Driver Status Indications Registered with WMI"
             href: standard-miniport-driver-status-indications-registered-with-wmi.md
-        - name: "Customized OIDs and Status Indications"
-# Auto-expanded node
+        - name: "Creating Custom OIDs and Status Indications"
           items: 
           - name: "Customized OIDs and Status Indications"
             href: customized-oids-and-status-indications.md
@@ -578,10 +503,7 @@
           - name: "Including a MOF File"
             href: including-a-mof-file.md
         - name: "NDIS WMI GUIDs"
-# Auto-expanded node
           items: 
-          - name: "NDIS WMI GUIDs"
-            href: ndis-wmi-guids.md
           - name: "GUID_NDIS_STATUS_LINK_STATE"
             href: guid-ndis-status-link-state.md
           - name: "GUID_NDIS_STATUS_OPER_STATUS"
@@ -623,12 +545,10 @@
           - name: "GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES"
             href: guid-ndis-status-offload-hw-capabilities.md
     - name: "NDIS MSI-X"
-# Auto-expanded node
       items: 
-      - name: "NDIS MSI-X"
+      - name: "Overview of NDIS MSI-X"
         href: ndis-msi-x.md
-      - name: "MSI-X Initialization"
-# Auto-expanded node
+      - name: "Preparing for MSI-X"
         items: 
         - name: "MSI-X Initialization"
           href: msi-x-initialization.md
@@ -647,10 +567,7 @@
     - name: "NDIS Scatter/Gather DMA"
       href: ndis-scatter-gather-dma.md
     - name: "Plug and Play for NDIS Miniport Drivers"
-# Auto-expanded node
       items: 
-      - name: "Plug and Play for NDIS Miniport Drivers"
-        href: plug-and-play-for-ndis-miniport-drivers.md
       - name: "Exporting a MiniportDevicePnPEventNotify Function"
         href: exporting-a-miniportdevicepnpeventnotify-function.md
       - name: "Handling the Surprise Removal of a NIC"
@@ -658,9 +575,8 @@
       - name: "Handling a Change in the System's Power Source"
         href: handling-a-change-in-the-system-s-power-source.md
       - name: "NDIS Processing of Plug and Play Events"
-# Auto-expanded node
         items: 
-        - name: "NDIS Processing of Plug and Play Events"
+        - name: "Overview of NDIS Processing of Plug and Play Events"
           href: ndis-processing-of-plug-and-play-events.md
         - name: "Adding a NIC"
           href: adding-a-nic.md
@@ -671,27 +587,20 @@
         - name: "Removing a NIC"
           href: removing-a-nic.md
         - name: "Processing the Surprise Removal of a NIC"
-# Auto-expanded node
           items: 
-          - name: "Processing the Surprise Removal of a NIC"
-            href: processing-the-surprise-removal-of-a-nic.md
           - name: "Processing the Surprise Removal of a NIC (Windows Vista)"
             href: processing-the-surprise-removal-of-a-nic--windows-vista-.md
           - name: "Processing the Surprise Removal of a NIC (Windows 7 and Later Versions)"
             href: processing-the-surprise-removal-of-a-nic--windows-7-and-later-versions-.md
     - name: "Miniport Driver Reset and Halt Functions"
-# Auto-expanded node
       items: 
-      - name: "Miniport Driver Reset and Halt Functions"
-        href: reset--halt--and-shutdown-functions.md
       - name: "Miniport Driver Hardware Reset"
         href: hardware-reset.md
       - name: "Miniport Driver Halt Handler"
         href: halt-handler.md
     - name: "Miniport Drivers with a WDM Lower Interface"
-# Auto-expanded node
       items: 
-      - name: "Miniport Drivers with a WDM Lower Interface"
+      - name: "Overview of Miniport Drivers with a WDM Lower Interface"
         href: miniport-drivers-with-a-wdm-lower-interface.md
       - name: "Miniport Driver with a WDM Lower Edge"
         href: miniport-driver-with-a-wdm-lower-edge.md
@@ -710,14 +619,12 @@
       - name: "Installing NDIS-WDM Miniport Drivers"
         href: installing-ndis-wdm-miniport-drivers.md
     - name: "WAN Miniport Drivers"
-# Auto-expanded node
       items: 
-      - name: "WAN Miniport Drivers"
+      - name: "Overview of WAN Miniport Drivers"
         href: wan-miniport-drivers.md
       - name: "Choosing a WAN Driver Model"
-# Auto-expanded node
         items: 
-        - name: "Choosing a WAN Driver Model"
+        - name: "Introduction to Choosing a WAN Driver Model"
           href: choosing-a-wan-driver-model.md
         - name: "CoNDIS WAN Is More Flexible"
           href: condis-wan-is-more-flexible.md
@@ -727,8 +634,7 @@
           href: other-benefits-of-condis-wan.md
         - name: "Other NDIS Features Available to CoNDIS WAN Drivers"
           href: other-ndis-features-available-to-condis-wan-drivers.md
-      - name: "Overview of the WAN Architecture"
-# Auto-expanded node
+      - name: "WAN Architecture"
         items: 
         - name: "Overview of the WAN Architecture"
           href: overview-of-the-wan-architecture.md
@@ -742,8 +648,7 @@
           href: ndistapi-overview.md
         - name: "NDPROXY Overview"
           href: ndproxy-overview.md
-      - name: "Implementing CoNDIS WAN Miniport Drivers"
-# Auto-expanded node
+      - name: "Writing CoNDIS WAN Miniport Drivers"
         items: 
         - name: "Implementing CoNDIS WAN Miniport Drivers"
           href: implementing-condis-wan-miniport-drivers.md
@@ -763,8 +668,7 @@
           href: indicating-received-data-from-a-condis-wan-miniport-driver.md
         - name: "Indicating CoNDIS WAN Miniport Driver Status"
           href: indicating-condis-wan-miniport-driver-status.md
-      - name: "CoNDIS WAN Operations that Support Telephonic Services"
-# Auto-expanded node
+      - name: "Telephonic Services in CoNDIS WAN Miniport Drivers"
         items: 
         - name: "CoNDIS WAN Operations that Support Telephonic Services"
           href: condis-wan-operations-that-support-telephonic-services.md
@@ -779,10 +683,7 @@
         - name: "CoNDIS TAPI Shutdown"
           href: condis-tapi-shutdown.md
         - name: "Call Manager Requirements for Voice Streaming"
-# Auto-expanded node
           items: 
-          - name: "Call Manager Requirements for Voice Streaming"
-            href: call-manager-requirements-for-voice-streaming.md
           - name: "Responding to an OID_CO_TAPI_LINE_CAPS Query"
             href: responding-to-an-oid-co-tapi-line-caps-query.md
           - name: "Specifying Parameters for an Outgoing Call"
@@ -792,9 +693,8 @@
         - name: "Non-WAN-Specific Extensions to Support Telephonic Services Over Connection-Oriented NDIS"
           href: non-wan-specific-extensions-to-support-telephonic-services-over-connec.md
       - name: "WAN Packet Framing"
-# Auto-expanded node
         items: 
-        - name: "WAN Packet Framing"
+        - name: "WAN Packet Framing Overview"
           href: wan-packet-framing.md
         - name: "Asynchronous Framing"
           href: asynchronous-framing.md
@@ -802,8 +702,7 @@
           href: isdn-and-switched-56k-framing.md
       - name: "WAN Miniport Driver Build Parameters"
         href: wan-miniport-driver-build-parameters.md
-    - name: "Standardized INF Keywords for Network Devices"
-# Auto-expanded node
+    - name: "INF Keywords for Network Devices"
       items: 
       - name: "Standardized INF Keywords for Network Devices"
         href: standardized-inf-keywords-for-network-devices.md
