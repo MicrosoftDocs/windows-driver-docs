@@ -107,14 +107,13 @@ This bug check indicates that a single-bit error was found in this page. This is
 
 This bugcheck can only occur by memory corruption due to physical memory access. The causes for physical memory corruption include:
 
-1.	Defective RAM hardware
-2.	A driver or device incorrectly modifying physical pages via an incorrect DMA operation or associated MDL.
-3.	Corruption caused by a hardware device or firmware corrupting memory, such as firmware illegally modifying physical pages across a power transition.
+1. Defective RAM hardware
+2. A driver or device incorrectly modifying physical pages via an incorrect DMA operation or associated MDL.
+3. Corruption caused by a hardware device or firmware corrupting memory, such as firmware illegally modifying physical pages across a power transition.
 
 NOTE:  Compressed Store Manager can detect if the corruption was caused by a single-bit error, and automatically corrects this condition without raising a bug check. This bugcheck is reported by the Compressed Store Manager if the corruption was not caused by a single bit error.
 
-For more information on Windows memory manager and memory compression, see [Windows Internals 7th Edition Part 1](https://docs.microsoft.com/en-us/sysinternals/learn/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
-
+For more information on Windows memory manager and memory compression, see [Windows Internals 7th Edition Part 1](https://docs.microsoft.com/sysinternals/learn/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
 ## Resolution
 -----
@@ -123,20 +122,11 @@ For more information on Windows memory manager and memory compression, see [Wind
 
 To investigate if this bug check is caused by defective RAM hardware, run the Windows Memory Diagnostics tool. In the control panel search box, type Memory, and then click *Diagnose your computer's memory problems*.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
-
 ## See Also
 ----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
-[Windows Kernel-Mode Memory Manager](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/windows-kernel-mode-memory-manager)
+[Windows Kernel-Mode Memory Manager](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-kernel-mode-memory-manager)
 
 [Channel 9 video on memory compression](https://channel9.msdn.com/Blogs/Seth-Juarez/Memory-Compression-in-Windows-10-RTM)
-
- 
-
- 
-
-
-
-

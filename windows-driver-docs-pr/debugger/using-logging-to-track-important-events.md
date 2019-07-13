@@ -43,7 +43,7 @@ LOGENTRY g_Log [LOGSIZE];
     g_Log [i].Arg [1] = (ULONG)(arg2); \
     g_Log [i].Arg [2] = (ULONG)(arg3); \
 } while (0)
-```dbgcmd
+```
 
 Then, use a simple "dc g\_Log" to view the contents of the **g\_Log** array in the debugger.
 

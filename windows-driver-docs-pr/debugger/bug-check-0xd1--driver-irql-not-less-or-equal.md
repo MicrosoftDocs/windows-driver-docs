@@ -60,8 +60,6 @@ The DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x000000D1. This
 </tbody>
 </table>
 
- 
-
 Cause
 -----
 
@@ -92,7 +90,7 @@ If the problem is caused by the driver that you are developing, make sure that t
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
-```
+```dbgcmd
 DRIVER_IRQL_NOT_LESS_OR_EQUAL (d1)
 An attempt was made to access a pageable (or completely invalid) address at an
 interrupt request level (IRQL) that is too high.  This is usually
@@ -111,7 +109,7 @@ To start, examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Displa
 
 Use the `!IRQL` command to display information about the interrupt request level (IRQL) of a processor on the target computer before the debugger break.
 
-```
+```dbgcmd
 0: kd> !irql
 Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 ```

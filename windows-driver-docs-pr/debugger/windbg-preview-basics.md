@@ -28,7 +28,7 @@ ms.localizationpriority: medium
 | [JavaScript Debugger Scripting](https://docs.microsoft.com/windows-hardware/drivers/debugger/javascript-debugger-scripting) | How to use JavaScript to create scripts that understand debugger objects  |
 | [WinDbg Preview - Scripting](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-scripting-preview) |Using the WinDbg Preview built in scripting  |
 | https://github.com/Microsoft/WinDbg-Samples |The debugger team GitHub site where they share the latest JavaScript (and C++) sample code. |
-|[Native Debugger Objects in JavaScript Extensions](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/native-objects-in-javascript-extensions) | Describes how to work with common objects and provides reference information on their attributes and behaviors.|
+|[Native Debugger Objects in JavaScript Extensions](https://docs.microsoft.com/windows-hardware/drivers/debugger/native-objects-in-javascript-extensions) | Describes how to work with common objects and provides reference information on their attributes and behaviors.|
 
 
 ## TTD Basics
@@ -41,7 +41,7 @@ ms.localizationpriority: medium
 ## TTD queries
 | Title               | Description        |
 | ------------------- | -------------------|
-| [Introduction to Time Travel Debugging objects](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/time-travel-debugging-object-model). |You can use the data model to query time travel traces.  
+| [Introduction to Time Travel Debugging objects](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-object-model). |You can use the data model to query time travel traces.  
 |  https://github.com/Microsoft/WinDbg-Samples/blob/master/TTDQueries/tutorial-instructions.md |A tutorial on how to debug C++ code using TTD queries to find the problematic code |
 | https://github.com/Microsoft/WinDbg-Samples/tree/master/TTDQueries/app-sample | All of the code used in the lab is available here.
 
