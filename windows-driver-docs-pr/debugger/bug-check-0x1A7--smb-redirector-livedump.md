@@ -49,7 +49,7 @@ The SMB redirector has detected a problem and has captured a kernel dump to coll
 
 A live dump with this bugcheck code will be generated only if the following registry value is set.
 
-```
+```registry
 HKLM\System\CurrentControlSet\Services\Lanmanworkstation\Parameters [DWORD] LiveDumpFilter = 1
 ```
 

@@ -29,20 +29,19 @@ Parameter | Description
 3 | Reserved
 4 | Reserved
 
-
 **Parameter 1 Values**
 
  0x1 : Callout injected an NBL with multiple NET_BUFFERS inbound.
 
-  2 - Reserved.
+ 2 - Reserved.
 
-  3 - Pointer to NBL.
+ 3 - Pointer to NBL.
 
-  4 - Reserved.
+ 4 - Reserved.
 
 
 ## Resolution
-The [**!analyze**](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
  
 

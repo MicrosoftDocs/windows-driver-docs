@@ -32,7 +32,7 @@ The FAST\_ERESOURCE\_PRECONDITION\_VIOLATION bug check has a value of 0x000001C6
 
 **Violation type**
 
-```
+```text
             0x0 : The Irql of the caller was greater than the maximum allowed
                   Irql for the routine.
                 2 - Irql of the caller.
