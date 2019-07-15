@@ -64,7 +64,7 @@ In this example, the code 15 (or  0x0000000F) is defined as SERVICE_CONTROL_PRES
 
 When multiple services are listed,  only the first service that is listed is typically of interest for failure analysis.  This is because the SCM (Service Control Manager) waits serially for completion of these requests, so only the first service has actually received a control request.
 
-For more information about SCM, see [Service Control Manager](https://docs.microsoft.com/en-us/windows/desktop/Services/service-control-manager).
+For more information about SCM, see [Service Control Manager](https://docs.microsoft.com/windows/desktop/Services/service-control-manager).
 
 
 ### <span id="Additional_Information"></span>Additional Information

@@ -67,25 +67,25 @@ The exception information returned in parameter one is listed in [NTSTATUS Value
 
 Common exception codes include:
 
--   0x80000003: STATUS\_BREAKPOINT
+- 0x80000003: STATUS\_BREAKPOINT
 
-    A breakpoint or ASSERT was encountered when no kernel debugger was attached to the system.
+A breakpoint or ASSERT was encountered when no kernel debugger was attached to the system.
 
--   0xC0000005: STATUS\_ACCESS\_VIOLATION
+- 0xC0000005: STATUS\_ACCESS\_VIOLATION
 
-    A memory access violation occurred. (Parameter 4 of the bug check is the address that the driver attempted to access.)
+A memory access violation occurred. (Parameter 4 of the bug check is the address that the driver attempted to access.)
 
 Resolution
 ----------
 
 **To debug this problem:** 
 
-Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md). You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code. Use the [u, ub, uu (Unassemble)]() command to see the assembly program code.
+Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md). You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code. Use the [u, ub, uu (Unassemble)](u--unassemble-.md) command to see the assembly program code.
 
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
-```
+```dbgcmd
 SYSTEM_SERVICE_EXCEPTION (3b)
 An exception happened while executing a system service routine.
 Arguments:
@@ -106,7 +106,7 @@ If a driver responsible for the error can be identified, its name is printed on 
 
 Use the [!error](-error.md) extension to display information about the exception code in parameter 1.
 
-```
+```dbgcmd
 2: kd> !error 00000000c0000005
 Error code: (NTSTATUS) 0xc0000005 (3221225477) - The instruction at 0x%p referenced memory at 0x%p. The memory could not be %s.
 ```

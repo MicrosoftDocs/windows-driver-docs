@@ -40,7 +40,8 @@ For example, to preload a driver package for a network adapter in the shared dir
 ```cpp
 %SystemRoot%\inf;...;\\DriverPackageServer\ShareName\Drivers\NIC
 ```
-
+> [NOTE]
+> Specifying network share in DevicePath in a machine with point and print client connection can result in excessive network share access and printing delays. This is because each time printerdata is changed in the server, the client will iterate through DevicePath directories checking for availability of newer print drivers.
  
 
  

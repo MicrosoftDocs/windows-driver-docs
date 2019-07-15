@@ -229,11 +229,11 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 2.  On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to C:\\MyApp\\x64\\Debug. For **File name**, enter MyApp.exe. Click **Open**.
 3.  Enter these commands:
 
-    [.symfix](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-symfix--set-symbol-store-path-)
+    [.symfix](https://docs.microsoft.com/windows-hardware/drivers/debugger/-symfix--set-symbol-store-path-)
 
-    [.sympath](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-sympath--set-symbol-path-)+ C:\\MyApp\\x64\\Debug
+    [.sympath](https://docs.microsoft.com/windows-hardware/drivers/debugger/-sympath--set-symbol-path-)+ C:\\MyApp\\x64\\Debug
 
-    Now WinDbg knows where to find symbols and source code for your application. In this case, the source code location doesn't need to be set with [.srcpath](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-srcpath---lsrcpath--set-source-path-) because the symbols have fully qualified paths to the source files.
+    Now WinDbg knows where to find symbols and source code for your application. In this case, the source code location doesn't need to be set with [.srcpath](https://docs.microsoft.com/windows-hardware/drivers/debugger/-srcpath---lsrcpath--set-source-path-) because the symbols have fully qualified paths to the source files.
 
 4.  Enter these commands:
 
