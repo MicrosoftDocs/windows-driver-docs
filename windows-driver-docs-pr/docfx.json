@@ -20,6 +20,7 @@
           "CONTRIBUTING"
         ],
         "exclude": [
+          "docfx.json",
           "**/obj/**",
           "**/README.md"
         ]
