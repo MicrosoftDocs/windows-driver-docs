@@ -109,7 +109,7 @@ You can deploy, install, load, and debug your application and the driver by foll
     6.  In the **USB Application1 Package Property Pages** window, in the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown in the following screen shot.
     7.  Check **Remove previous driver versions before deployment**.
     8.  For **Remote Computer Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named dbg-target.
-    9.  Select **Install and Verify**. Click **Apply**.
+    9.  Select **Install/Reinstall and Verify**. Click **Apply**.
 
         ![winusb template deployment](images/winusb-template-deployment.png)
 
