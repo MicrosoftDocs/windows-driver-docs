@@ -74,7 +74,7 @@ To create an application from the template:
 11.  Replace VID\_vvvv&PID\_pppp with the hardware ID for your device. Get the hardware ID from Device Manager. In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Ids** property value.
 12.  In the **Solution Explorer** window, right-click **Solution 'USB Application1' (2  of 2 projects)**, and choose **Configuration Manager**. Choose a configuration and platform for both the application project and the package project. In this exercise, we choose Debug and x64, as shown in the following screen shot.
 
-    ![winusb application template](images/winusb-template-configuration-manager.png)
+![winusb application template](images/winusb-template-configuration-manager.png)
 
 ## Building, deploying and debugging the project
 
@@ -91,8 +91,7 @@ You can deploy, install, load, and debug your application and the driver by foll
 -   **Two computer setup**
 
     1.  Provision your target computer by following the instructions in [Provision a computer for driver deployment and testing](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
-        **Note**  
-        Provisioning creates a user on the target machine named, WDKRemoteUser. After provisioning is complete you will see the user switch to WDKRemoteUser. 
+        **Note:**  Provisioning creates a user on the target machine named, WDKRemoteUser. After provisioning is complete you will see the user switch to WDKRemoteUser. 
     2.  On the host computer, open your solution in Visual Studio.
     3.  In main.cpp add this line before the OpenDevice call.
 
