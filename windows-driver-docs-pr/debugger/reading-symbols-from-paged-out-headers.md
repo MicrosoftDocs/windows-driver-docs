@@ -9,25 +9,21 @@ ms.localizationpriority: medium
 
 # Reading Symbols from Paged-Out Headers
 
-
-## <span id="ddk_reading_symbols_from_paged_out_headers_dbg"></span><span id="DDK_READING_SYMBOLS_FROM_PAGED_OUT_HEADERS_DBG"></span>
-
-
 The kernel debugger must read the header for each loaded module's image in order to know which symbols correspond to that module.
 
 If a module's header is paged out to disk, the debugger will not load symbols for this module. If this happens with a module that is essential to the debugging process, it can be a critical problem.
 
 The following procedure can be used to solve this problem.
 
-**To acquire symbols for paged-out headers**
+## To acquire symbols for paged-out headers
 
-1.  Make a second copy of the kernel itself. It is probably easiest to put this on a network share.
+1. Make a second copy of the kernel itself. It is probably easiest to put this on a network share.
 
-2.  Append the root directory of this share to the symbol path. See [Symbol Path](symbol-path.md) for the ways to change the symbol path.
+2. Append the root directory of this share to the symbol path. See [Symbol Path](symbol-path.md) for the ways to change the symbol path.
 
-3.  Use the [**.reload (Reload Module)**](-reload--reload-module-.md) command.
+3. Use the [**.reload (Reload Module)**](-reload--reload-module-.md) command.
 
-4.  Use the [**!sym noisy**](-sym.md) extension command to see more verbose output. If this is used, you will be able to see which symbols are loaded from the module images on the target computer, and which are loaded from the copy of the kernel modules.
+4. Use the [**!sym noisy**](-sym.md) extension command to see more verbose output. If this is used, you will be able to see which symbols are loaded from the module images on the target computer, and which are loaded from the copy of the kernel modules.
 
 This technique must be used with care, since the debugger has no way of verifying whether the file copies actually match the originals. So it is crucial that the version of Windows used on the network share matches the version used on the target computer.
 
@@ -103,12 +99,3 @@ fe0c8360  Fs_Rec!ntoskrnl_NULL_THUNK_DATA
 fe0c832c  Fs_Rec!_imp__KeSetEvent
 fe0c9570  Fs_Rec!_NULL_IMPORT_DESCRIPTOR
 ```
-
- 
-
- 
-
-
-
-
-
