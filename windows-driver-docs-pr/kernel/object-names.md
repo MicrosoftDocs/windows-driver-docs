@@ -56,11 +56,11 @@ For example, the components of the object name can be described as follows.
 <td><p>Device object representing the C: drive.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>\DosDevices\C:&lt;/strong&gt; <em>Directory</em></p></td>
+<td><p><strong>\DosDevices\C:\</strong><em>Directory</em></p></td>
 <td><p>File object representing the directory named C:\Directory.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>\DosDevices\C:&lt;/strong&gt; <em>Directory</em> \ <em>File</em></p></td>
+ <td><p><strong>\DosDevices\C:\</strong><em>Directory</em>\<em>File</em></p></td>
 <td><p>File object representing the file named C:\Directory\File.</p></td>
 </tr>
 </tbody>
