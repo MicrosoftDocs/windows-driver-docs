@@ -17,15 +17,15 @@ ms.localizationpriority: medium
 # Reporting Device Failures
 
 
-There are two ways to report device failures:
+There are three ways to report device failures:
 
--   When returning from [device object callback functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/#device-callbacks), the driver can supply a return value for which [NT\_SUCCESS](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatus-values)(*status*) equals **FALSE**.
+-  When returning from [device object callback functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/#device-callbacks), the driver can supply a return value for which [NT\_SUCCESS](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatus-values)(*status*) equals **FALSE**.
 
--   The driver can call [**WdfDeviceSetFailed**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetfailed). 
+-  The driver can call [**WdfDeviceSetFailed**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetfailed).
 
--  When returning from EvtDriverDeviceAdd routine, a function driver can supply a return value for which [NT\_SUCCESS](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatus-values)(*status*) equals **FALSE**. If a filter driver fails EvtDriverDeviceAdd, the filter device object is just skipped and it doesn't result in any pnp error. 
+-  When returning from its [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback routine, a function driver can supply a return value for which [NT\_SUCCESS](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatus-values)(*status*) equals **FALSE**. If a driver that is installed as a [filter]( https://docs.microsoft.com/en-us/windows-hardware/drivers/install/installing-a-filter-driver) fails [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add), the operating system skips the filter device object and does not indicate a PnP error.
 
-For aforementioned methods, the framework effectively removes the device. If the device's drivers are not supporting other devices on the system, the I/O manager unloads the drivers.
+Each of the above methods results in the framework effectively removing the device. If the device's drivers are not supporting other devices on the system, the I/O manager unloads the drivers.
 
 If a driver's device object callback function returns a value for which NT\_SUCCESS(*status*) equals **FALSE**, the framework notifies the PnP manager, which then attempts to restart the device by requesting the bus driver to reenumerate its devices. Your driver will be reloaded, if it was unloaded.
 
