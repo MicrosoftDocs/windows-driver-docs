@@ -31,7 +31,9 @@ If a driver's device object callback function returns a value for which NT\_SUCC
 
 If your driver calls [**WdfDeviceSetFailed**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetfailed), it supplies an input argument that determines whether the device will be restarted. The argument values are **WdfDeviceFailedAttemptRestart** and **WdfDeviceFailedNoRestart**.
 
-**UMDF** A UMDF driver must set this value to **WdfDeviceFailedNoRestart**.
+**UMDF** Before UMDF 2.15 a UMDF driver must set this value to **WdfDeviceFailedNoRestart**. Starting in UMDF version 2.15, a UMDF driver can request that the underlying bus driver re-enumerate it by calling [**WdfDeviceSetFailed**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetfailed) with *FailedAction* set to **WdfDeviceFailedAttemptRestart**. For more information, see [**WdfDeviceSetFailed**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetfailed). 
+
+A UMDF driver must set this value to **WdfDeviceFailedNoRestart**.
 
 For more information about these argument values, see [**WDF\_DEVICE\_FAILED\_ACTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ne-wdfdevice-_wdf_device_failed_action).
 Before a driver's device object callback function returns with a value for which NT\_SUCCESS(*status*) equals **FALSE**, the callback function can prevent restarts by calling [**WdfDeviceSetFailed**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetfailed) with an input argument of **WdfDeviceFailedNoRestart**. Otherwise, these callback functions do not have to call **WdfDeviceSetFailed**.
