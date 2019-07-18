@@ -21,9 +21,11 @@ There are two ways to report device failures:
 
 -   When returning from [device object callback functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/#device-callbacks), the driver can supply a return value for which [NT\_SUCCESS](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatus-values)(*status*) equals **FALSE**.
 
--   The driver can call [**WdfDeviceSetFailed**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetfailed).
+-   The driver can call [**WdfDeviceSetFailed**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetfailed). 
 
-For both methods, the framework effectively removes the device. If the device's drivers are not supporting other devices on the system, the I/O manager unloads the drivers.
+-  When returning from EvtDriverDeviceAdd routine, a function driver can supply a return value for which [NT\_SUCCESS](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatus-values)(*status*) equals **FALSE**. If a filter driver fails EvtDriverDeviceAdd, the filter device object is just skipped and it doesn't result in any pnp error. 
+
+For aforementioned methods, the framework effectively removes the device. If the device's drivers are not supporting other devices on the system, the I/O manager unloads the drivers.
 
 If a driver's device object callback function returns a value for which NT\_SUCCESS(*status*) equals **FALSE**, the framework notifies the PnP manager, which then attempts to restart the device by requesting the bus driver to reenumerate its devices. Your driver will be reloaded, if it was unloaded.
 
