@@ -1,12 +1,12 @@
 ---
-title: PackageInfo XML elements
-description: PackageInfo XML elements
+title: PackageInfo XML elements list
+description: PackageInfo XML elements list
 ms.assetid: eb08c164-d901-4806-a9f1-f538f3ff00e3
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# PackageInfo XML elements
+# PackageInfo XML elements list
 
 [!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 

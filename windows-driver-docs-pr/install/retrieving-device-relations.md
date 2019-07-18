@@ -88,7 +88,7 @@ To retrieve the device instance identifiers of the sibling devices of device ins
 
 4.  Call [**CM_Get_Device_ID**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) to retrieve the device instance identifiers that are associated with the device instance handles that were returned by the previous calls to **CM_Get_Sibling**. Remove the handle to device instance *Abc* from the list of sibling devices of the first child device of the parent device.
 
-The information retrieved by using this procedure is the same as that represented by the DEVPKEY_Device_Siblings property in the unified device property model of Windows Vista and later versions. If a **CM_*Xxx*** function call listed in this section succeeds, the **CM_*Xxx*** function retrieves the requested information and returns CR_SUCCESS. Otherwise, the **CM_*Xxx*** function returns one of the error codes with prefix "CR_" that are defined in *Cfgmgr32.h*.
+The information retrieved by using this procedure is the same as that represented by the DEVPKEY_Device_Siblings property in the unified device property model of Windows Vista and later versions. If a **CM_<em>Xxx</em>** function call listed in this section succeeds, the **CM_<em>Xxx</em>** function retrieves the requested information and returns CR_SUCCESS. Otherwise, the **CM_<em>Xxx</em>** function returns one of the error codes with prefix "CR_" that are defined in *Cfgmgr32.h*.
 
  
 

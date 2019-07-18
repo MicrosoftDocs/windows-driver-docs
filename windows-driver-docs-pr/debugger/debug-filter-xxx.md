@@ -138,7 +138,7 @@ The following constants are used to specify the handling status of an exception 
 <tbody>
 <tr class="odd">
 <td align="left"><p>DEBUG_FILTER_GO_HANDLED</p></td>
-<td align="left"><p>The <a href="https://docs.microsoft.com/windows-hardware/drivers/#wdkgloss-exception" data-raw-source="&lt;em&gt;exception&lt;/em&gt;"><em>exception</em></a> has been handled.</p></td>
+<td align="left"><p>The exception has been handled.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DEBUG_FILTER_GO_NOT_HANDLED</p></td>

@@ -1,11 +1,11 @@
 ---
 Description: PurposeThis section describes Universal Serial Bus (USB) support in the Windows operating system, so that you can develop USB device drivers that are interoperable with Windows.
-title: Developing Windows client drivers for USB devices
+title: Overview of developing Windows client drivers for USB devices
 ms.date: 01/07/2019
 ms.localizationpriority: medium
 ---
 
-# Developing Windows client drivers for USB devices
+# Overview of developing Windows client drivers for USB devices
 
 
 <table>

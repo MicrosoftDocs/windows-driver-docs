@@ -1,12 +1,12 @@
 ---
-title: Bluetooth LE Proximity Profile Devices and Apps
+title: Bluetooth LE Proximity Profile Overview
 description: Proximity detection is a common use of Bluetooth Low Energy (LE).
 ms.assetid: 4BF27CBE-C89A-48DC-8536-1A5111CDB0C4
-ms.date: 04/20/2017
+ms.date: 07/01/2019
 ms.localizationpriority: medium
 ---
 
-# Bluetooth LE Proximity Profile Devices and Apps
+# Bluetooth LE Proximity Profile Overview
 
 
 Proximity detection is a common use of Bluetooth Low Energy (LE). Windows 8.1 expands on the Bluetooth LE support introduced in Windows 8. This section provides guidelines to create a device implementation of the Proximity Profile that you can use to develop a UWP device app that's compatible with Windows 8.1.

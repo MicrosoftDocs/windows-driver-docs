@@ -18,7 +18,7 @@ The SMB\_REDIRECTOR\_LIVEDUMP bug check has a value of 0x000001A7. It indicates 
 
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 
@@ -49,7 +49,7 @@ The SMB redirector has detected a problem and has captured a kernel dump to coll
 
 A live dump with this bugcheck code will be generated only if the following registry value is set.
 
-```
+```registry
 HKLM\System\CurrentControlSet\Services\Lanmanworkstation\Parameters [DWORD] LiveDumpFilter = 1
 ```
 

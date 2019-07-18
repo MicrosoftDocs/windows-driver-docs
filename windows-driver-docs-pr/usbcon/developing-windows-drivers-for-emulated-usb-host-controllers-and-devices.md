@@ -1,11 +1,11 @@
 ---
-Description: Developing Windows drivers for emulated USB devices (UDE)
-title: Developing Windows drivers for emulated USB devices (UDE)
+Description: Overview of developing Windows drivers for emulated USB devices (UDE)
+title: Overview of developing Windows drivers for emulated USB devices (UDE)
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Developing Windows drivers for emulated USB devices (UDE)
+# Overview of developing Windows drivers for emulated USB devices (UDE)
 
 
 <table>

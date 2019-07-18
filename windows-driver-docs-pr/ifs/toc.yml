@@ -1,7 +1,7 @@
-- name: "Installable file system driver design guide"
+- name: "File system driver design guide"
 # Auto-expanded node
   items: 
-  - name: "Installable file system driver design guide"
+  - name: "File system driver design guide"
     href: index.md
   - name: "File System Drivers"
 # Auto-expanded node
@@ -723,7 +723,7 @@
   - name: "Reference"
 # Auto-expanded node
     items: 
-    - name: "Reference"
+    - name: "Additional Reference"
       href: ifs-reference.md
     - name: "CcIsThereDirtyLoggedPages"
       href: ccistheredirtyloggedpages.md

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 To control a peripheral device that is connected to a port on a serial controller, a client application or peripheral device driver sends I/O requests to the port. A client uses [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/previous-versions/ff546904(v=vs.85)) and [**IRP\_MJ\_READ**](https://docs.microsoft.com/previous-versions/ff546883(v=vs.85)) requests to transmit data to and receive data from a serial port. In addition, Windows defines a set of serial I/O control requests (IOCTLs) that a client can use to configure a serial port.
 
-The serial **IRP\_MJ\_*XXX*** requests and serial IOCTLs together form a serial I/O request interface that is supported across a range of serial controller devices. This interface is supported by the Serial.sys driver, and by the combination of SerCx2 or SerCx and an extension-based serial controller driver.
+The serial **IRP\_MJ\_<em>XXX</em>** requests and serial IOCTLs together form a serial I/O request interface that is supported across a range of serial controller devices. This interface is supported by the Serial.sys driver, and by the combination of SerCx2 or SerCx and an extension-based serial controller driver.
 
 SerCx2, SerCx, and Serial.sys support many of the same serial IOCTLs. However, SerCx2, SerCx, and Serial.sys support different subsets of the IOCTLs specified in *Serial Device Control Requests*. The following table summarizes the subsets of IOCTLs that are supported by SerCx2, SerCx, and Serial.sys. A **Yes** entry in the table indicates that the serial framework extension or driver supports the corresponding IOCTL, and a **No** entry indicates that it does not.
 
@@ -274,4 +274,4 @@ SerCx2, SerCx, and Serial.sys support many of the same serial IOCTLs. However, S
 
 5. The Serial.sys driver always completes an **IOCTL\_SERIAL\_RESET\_DEVICE** request with STATUS\_SUCCESS, but performs no operation in response to this request. SerCx2 and SerCx do not support **IOCTL\_SERIAL\_RESET\_DEVICE** requests and always complete these requests with STATUS\_NOT\_IMPLEMENTED.
 
-For more information about **IOCTL\_SERIAL\_*XXX*** requests and read and write requests for serial controllers, see the [ntddser.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddser/) header.
+For more information about **IOCTL\_SERIAL\_<em>XXX</em>** requests and read and write requests for serial controllers, see the [ntddser.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddser/) header.

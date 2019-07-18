@@ -18,7 +18,7 @@ To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](https
 After you develop and test your product, you can submit the results with a hardware submission.
 
 > [!NOTE]
-> We strongly encourage you to include public driver symbols as part your HLK package. Including symbols will improve the data returned in your [driver reliability report](driver-failure-reporting.md) and are never shared externally.  See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published.
+> We strongly encourage you to include public driver symbols as part your HLK package. See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published.
 
 - To submit an HLK or HCK package, see [Create a new hardware submission](create-a-new-hardware-submission.md).
 

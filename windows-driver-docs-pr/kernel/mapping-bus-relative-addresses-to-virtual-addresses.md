@@ -35,9 +35,9 @@ If a driver is assigned a translated memory resource (**CmResourceTypeMemory**),
 
 When the driver receives an [**IRP\_MN\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-stop-device) or [**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device) request from the PnP manager, it must release the mappings by calling [**MmUnmapIoSpace**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmunmapiospace) in a similar loop. The driver should also call **MmUnmapIoSpace** if it must fail the **IRP\_MN\_START\_DEVICE** request.
 
-The raw resource type indicates which HAL access routine a driver should call (**READ_REGISTER_*XXX***, **WRITE_REGISTER_*XXX***, **READ_PORT_*XXX***, **WRITE_PORT_*XXX***). Most drivers do not have to check the raw resource list to determine which of these routines to use, because the driver itself requested the resource or the driver writer knows the required type given the nature of the device hardware.
+The raw resource type indicates which HAL access routine a driver should call (**READ\_REGISTER\__XXX_**, **WRITE\_REGISTER\__XXX_**, **READ\_PORT\__XXX_**, **WRITE\_PORT\__XXX_**). Most drivers do not have to check the raw resource list to determine which of these routines to use, because the driver itself requested the resource or the driver writer knows the required type given the nature of the device hardware.
 
- For a resource in I/O space (**CmResourceTypePort**, **CmResourceTypeInterrupt**, **CmResourceTypeDma**), the driver should use the low-order 32 bits of the returned physical address to access the device resource, for example, through the HAL's read and write **READ_REGISTER_*XXX***, **WRITE_REGISTER_*XXX***, **READ_PORT_*XXX***, **WRITE_PORT_*XXX*** routines.
+ For a resource in I/O space (**CmResourceTypePort**, **CmResourceTypeInterrupt**, **CmResourceTypeDma**), the driver should use the low-order 32 bits of the returned physical address to access the device resource, for example, through the HAL's read and write **READ\_REGISTER\__XXX_**, **WRITE\_REGISTER\__XXX_**, **READ\_PORT\__XXX_**, **WRITE\_PORT\__XXX_** routines.
  
  
 

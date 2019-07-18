@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The SPECIAL\_POOL\_DETECTED\_MEMORY\_CORRUPTION bug check has a value of 0x000000C1. This indicates that the driver wrote to an invalid section of the special pool.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SPECIAL\_POOL\_DETECTED\_MEMORY\_CORRUPTION Parameters
