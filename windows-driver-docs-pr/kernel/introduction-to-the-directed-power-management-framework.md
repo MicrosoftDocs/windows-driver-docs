@@ -40,7 +40,7 @@ If your driver does not use the system-managed idle support provided by WDF (the
 
 Provide pointers to these callbacks in a [PO_FX_DEVICE_V3](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-po_fx_device_v3) structure that is input to the [**PoFxRegisterDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxregisterdevice) function.
 
-To get DFx support only, a device can provide only the `PO_FX_DIRECTED_POWER*` callbacks when registering for PoFx.  It does not need to implement the rest of the PoFx callbacks.
+To get DFx support only, a device can provide only the `PO_FX_DIRECTED_POWER*` callbacks when registering for PoFx.  It does not need to implement the rest of the PoFx callbacks. Note that devices that do not support full PoFx still need to call [PoFxReportDevicePoweredOn](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxreportdevicepoweredon) upon resume from Sx transitions.
 
 ## Example
 
@@ -85,6 +85,8 @@ For information about HLK tests, please see the following pages:
 - [Directed FX Single Device Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
 - [Directed FX System Verification Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
 
+Testing DFx after an S4 transition is recommended, in order to catch any cases where a driver may not be correctly calling [PoFxReportDevicePoweredOn](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxreportdevicepoweredon) after resume from S4.
+
 ## DFx and S-state transitions
 
 - The target D-state for DFx transitions should match that for Runtime D3 (RTD3), which may be different than the target D-state for S3/S4 transitions.  Consider a scenario in which a device enters D2 for RTD3, but enters D3 for S3/S4.  In this case, the target D-state for DFx should be D2.
@@ -101,7 +103,7 @@ For information about HLK tests, please see the following pages:
 - [PO_FX_DEVICE_V3 structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-po_fx_device_v3)
 - [PO_FX_DIRECTED_POWER_DOWN_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_directed_power_down_callback)
 - [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_directed_power_up_callback)
-- [PoFxCompleteDirectedPowerDown](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxcompletedirectedpowerdown) function
+- [PoFxCompleteDirectedPowerDown function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxcompletedirectedpowerdown) 
 - [PwrTest DirectedFx Scenario](../devtest/pwrtest-directedfx-scenario.md)
 - [Directed FX Single Device Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
 - [Directed FX System Verification Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
