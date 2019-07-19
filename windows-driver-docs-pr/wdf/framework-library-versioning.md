@@ -36,6 +36,8 @@ When you build your driver, the MSBuild utility links the driver with a stub fil
 
 To determine the version of the library that your driver is running with, the driver can call [**WdfDriverIsVersionAvailable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverisversionavailable) or [**WdfDriverRetrieveVersionString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrieveversionstring).
 
+WDF allows you to build a driver using a different version of Windows than the one that the driver will run on.  For more info, see [Building a WDF driver for multiple versions of Windows](https://docs.microsoft.com/windows-hardware/drivers/wdf/building-a-wdf-driver-for-multiple-versions-of-windows).
+
 For information about the release history of the KMDF library, see [KMDF Version History](kmdf-version-history.md).
 
 ## UMDF
@@ -48,11 +50,5 @@ For UMDF version 2.0, the file name of the UMDF library is *Wudfx02000.dll*.
 For UMDF version 1.*x*, the file name of the UMDF library is *Wudfx.dll*.
 
 For information about the release history of the KMDF library, see [UMDF Version History](umdf-version-history.md).
-
-
- 
-
-
-
 
 
