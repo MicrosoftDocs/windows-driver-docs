@@ -42,8 +42,8 @@ Provide pointers to these callbacks in a [PO_FX_DEVICE_V3](https://docs.microsof
 
 To get DFx support only, a device:
 
-* Provides only the `PO_FX_DIRECTED_POWER*` callbacks when registering for PoFx
-* Must call [PoFxReportDevicePoweredOn](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxreportdevicepoweredon) from [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_directed_power_up_callback) for resume from Sx transitions
+* Provides at a minimum the `PO_FX_DIRECTED_POWER*` callbacks when registering for PoFx
+* Must call [**PoFxReportDevicePoweredOn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxreportdevicepoweredon) from [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_directed_power_up_callback) for resume from Sx transitions
 
 ## Example
 
