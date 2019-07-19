@@ -19,25 +19,25 @@ To you use Multiple Interface Test Tool (MITT), order you need a MITT board and 
 
 -   **UART/SPI adapter board**
 
-    See [UART/SPI adapter board from JJG Technologies.](http://www.jjgtechnologies.com/UART-SPI.md)
+    See [UART/SPI adapter board from JJG Technologies.](http://www.jjgtechnologies.com/UART-SPI)
 
     ![uart adapter board](images/uart1.png)
 
 -   **GPIO adapter board**
 
-    See [GPIO adapter board from JJG Technologies.](http://www.jjgtechnologies.com/GPIO.md)
+    See [GPIO adapter board from JJG Technologies.](http://www.jjgtechnologies.com/GPIO)
 
     ![gpio adapter for mitt](images/gpioadapter.jpg)
 
 -   **I2C adapter board**
 
-    See [I2C adapter board from JJG Technologies.](http://www.jjgtechnologies.com/I2C.md)
+    See [I2C adapter board from JJG Technologies.](http://www.jjgtechnologies.com/I2C)
 
     ![i2c adapter for mitt](images/i2cadapter.jpg)
 
 -   **MCATT expansion board**
 
-    See [MCATT expansion board from JJG Technologies.](http://www.jjgtechnologies.com/mcatt.md)
+    See [MCATT expansion board from JJG Technologies.](http://www.jjgtechnologies.com/mcatt)
 
     ![mcatt expansion board](images/mcatt-exp.jpg)
 
