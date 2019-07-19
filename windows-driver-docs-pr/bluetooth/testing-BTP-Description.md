@@ -1,10 +1,8 @@
 ---
 title: Microsoft Bluetooth Test Platform
 description: The Bluetooth Test Platform (BTP) is a an end-to-end solution for testing interoperability of your Bluetooth hardware with the Microsoft Bluetooth driver stack.
-author: NO VALUE SET
-ms.author: Michelle Vogel
+ms.author: mivogel
 ms.date: 4/17/2019
-ms.topic: article-type-from-white-list
 ms.localizationpriority: medium
 
 ---
@@ -24,7 +22,7 @@ Traduci board
 
 RN42 Radio Sled
 [**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
-![Photo of the RN42 Radio on a Digilent sled](images/DigilentRN42Radio.jpg)
+![Photo of the RN42 Radio on a Digilent sled](images/Traduci_and_DigilentRN42.jpg)
 
 ### Setting up Traduci Hardware ###
 
