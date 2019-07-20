@@ -10,8 +10,8 @@ ms.localizationpriority: medium
 # Microsoft public symbol server
 
 
-**Server Status:** No known issues :white_check_mark: <br> 
-The Microsoft public symbol server is fully operational. <br>
+**Server Status:** Server Status: MSDL Service Disruption <br> 
+Symbol server is currently not accessible. The team is actively investigating and working on a resolution. <br>
 Please report any known issues to [windbgfb@microsoft.com](mailto:windbgfb@microsoft.com). 
 
 ---
