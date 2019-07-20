@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Microsoft public symbol server
 
 
-**Server Status:** No known issues :white_check_mark: <br> 
+**Server Status:** Issue accessing public symbol server and is being investigated <br> 
 The Microsoft public symbol server is fully operational. <br>
 Please report any known issues to [windbgfb@microsoft.com](mailto:windbgfb@microsoft.com). 
 
