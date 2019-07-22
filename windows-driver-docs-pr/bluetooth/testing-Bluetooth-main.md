@@ -13,4 +13,5 @@ This section provides handy links to content relevant to Bluetooth testing.
 
 - [Bluetooth Certification](bluetooth-certification.md)
 - [Tracing and logging scripts](https://github.com/microsoft/busiotools/tree/master/bluetooth/tracing/readme.md)
+- [Bluetooth Test Platform (BTP)](testing-BTP-Overview.md)
 

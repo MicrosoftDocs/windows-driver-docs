@@ -86,10 +86,10 @@
     - name: "Proximity Profile Implementation Details"
       href: proximity-profile-implementation-details.md
   
-  - name: "Bluetooth testing resources"
+  - name: "Bluetooth Testing Resources"
     href: testing-Bluetooth-main.md
     items: 
-    - name: "Bluetooth Proximity Profile"
+    - name: "Bluetooth Test Platform (BTP)"
       href: bluetooth-proximity-profile.md
     - name: "Proximity Profile Implementation Details"
       href: proximity-profile-implementation-details.md
