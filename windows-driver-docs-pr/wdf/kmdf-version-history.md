@@ -9,7 +9,6 @@ keywords:
 ms.date: 10/02/2018
 ms.localizationpriority: medium
 ms.custom: 19H1
-ms.viewership: high
 ---
 
 # KMDF Version History
