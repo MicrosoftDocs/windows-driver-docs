@@ -40,10 +40,10 @@ If your driver does not use the system-managed idle support provided by WDF (the
 
 Provide pointers to these callbacks in a [PO_FX_DEVICE_V3](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-po_fx_device_v3) structure that is input to the [**PoFxRegisterDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxregisterdevice) function.
 
-To get DFx support only, a device:
+To get DFx support, a driver must:
 
-* Provides at a minimum the `PO_FX_DIRECTED_POWER*` callbacks when registering for PoFx
-* Must call [**PoFxReportDevicePoweredOn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxreportdevicepoweredon) from [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_directed_power_up_callback) for resume from Sx transitions
+* Provide the `PO_FX_DIRECTED_POWER*` callbacks when registering for PoFx
+* Call [**PoFxReportDevicePoweredOn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxreportdevicepoweredon) from its [PO_FX_DIRECTED_POWER_UP_CALLBACK](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_directed_power_up_callback) callback function on resume from Sx transitions
 
 ## Example
 
