@@ -85,12 +85,14 @@
       href: bluetooth-proximity-profile.md
     - name: "Proximity Profile Implementation Details"
       href: proximity-profile-implementation-details.md
-  
   - name: "Bluetooth Testing Resources"
     href: testing-Bluetooth-main.md
     items: 
     - name: "Bluetooth Test Platform (BTP)"
       href: testing-BTP-Overview.md
       items:
-      - name: "BTP Overview"
-      href: testing-BTP-Overview.md.md
+      - name: "BTP Pairing tests"
+      href: testing-BTP-tests-pairing.md
+      - name: "BTP HID tests"
+      href: testing-BTP-tests-hid.md
+
