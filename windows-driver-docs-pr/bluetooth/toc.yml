@@ -91,6 +91,8 @@
     - name: "Bluetooth Test Platform (BTP)"
       href: testing-BTP-Overview.md
       items:
+      - name: "BTP Setup"
+      href: testing-BTP-setup.md
       - name: "BTP Pairing tests"
       href: testing-BTP-tests-pairing.md
       - name: "BTP HID tests"
