@@ -42,7 +42,7 @@ UmdfKernelModeClientPolicy=AllowKernelModeClients
 
 There are no other special requirements that are associated with installing smart card reader drivers.
 
-For general information about device installation in Windows 2000 and later versions of the operating system, see [Device Installation Overview](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-and-driver-installation).
+For general information about device installation in Windows, see [Device Installation Overview](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-and-driver-installation).
 
 
 
