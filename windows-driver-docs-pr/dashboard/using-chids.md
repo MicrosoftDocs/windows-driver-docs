@@ -111,8 +111,85 @@ The ComputerHardwareIds tool only computes CHIDs that have the necessary SMBIOS 
 For more information about CHIDs, see [Specifying Hardware IDs for a Computer](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-hardware-ids-for-a-computer).
 
  
+# How the Windows Update Service uses CHID
 
- 
+
+The Windows Update service uses CHID to "reduce the number of systems that a driver is applicable to".  This reduction is the first thing that happens before PnP ranking is done.
+
+The Windows Update service treats CHID differently depending on which Windows OS level is installed.  
+
+<table>
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Windows 10 version</th>
+<th>Windows Update behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>1507 through 1703</p></td>
+<td><p>Windows Update ranks each CHID from CHID-0 to CHID-14 where CHID-0 outranks CHID-14</p></td>
+</tr>
+<tr class="even">
+<td><p>1709 and above</p></td>
+<td><p>CHID level is no longer ranked. All applicable CHID targeted drivers from CHID-0 through CHID-14 are grouped together then PnP ranking occurs on the entire group.</p></td>
+</tr> 
+</tbody>
+</table>
+
+
+Consider the following example:
+
+
+Contoso has the following two drivers published as Automatic that target the same HWID but with different CHID.  
+
+    Distribution 1 - targeting CHID-4 (Manufacturer + Family + Product Name + SKU Number)
+
+    Distribution 2 - targeting CHID-5 (Manufacturer + Family + Product Name)
+
+Which one will be selected by the Windows Update Service for systems that match CHID-5?
+
+<table>
+<colgroup>
+<col width="40%" />
+<col width="30%" />
+<col width="30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Contoso System</th>
+<th>Windows OS level</th>
+<th>Offered Driver</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>CHID-5 match but not a CHID-4 match</p></td>
+<td><p>Windows 10 1703 or lower</p></td>
+<td><p>Distribution 2</p></td>
+</tr>
+<tr class="even">
+<td><p>CHID-5 match but not a CHID-4 match</p></td>
+<td><p>Windows 10 1709 or greater</p></td>
+<td><p>Distribution 2</p></td>
+</tr>
+<tr class="odd">
+<td><p>CHID-5 match <strong>and</strong> a CHID-4 match</p></td>
+<td><p>Windows 10 1703 or lower</p></td>
+<td><p>Distribution 1</p></td>
+</tr>
+<tr class="even">
+<td><p>CHID-5 match <strong>and</strong> a CHID-4 match</p></td>
+<td><p>Windows 10 1709 or greater</p></td>
+<td><p>Both are offered.   PnP ranking would then select the best match of these two for installation.</p></td>
+</tr>
+</tbody>
+</table>
+
 
 
 
