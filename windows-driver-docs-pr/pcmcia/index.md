@@ -12,13 +12,10 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+author: EliotSeattle
 ---
 
 # PCMCIA Bus Driver Design Guide
-
-
-
-
 
 This section includes:
 
@@ -27,12 +24,3 @@ This section includes:
 [PCMCIA\_INTERFACE\_STANDARD Interface for Memory Cards](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/pcmcia-interface-standard-interface-for-memory-cards)
 
 [PCMCIA IRQ Routing on Windows XP](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/pcmcia-irq-routing-on-windows-xp)
-
- 
-
- 
-
-
-
-
-
