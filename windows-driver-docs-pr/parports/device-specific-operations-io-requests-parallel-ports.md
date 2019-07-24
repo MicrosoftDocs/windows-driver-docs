@@ -13,7 +13,7 @@ This topic documents the following device-specific operations for I/O requests f
 * [IRP_MJ_INTERNAL_DEVICE_CONTROL](#irp_mj_internal_device_control)
 
 
-##  IRP_MJ_CREATE 
+## <a name="irp_mj_create"></a> IRP_MJ_CREATE
 The [IRP_MJ_CREATE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create) request opens a parallel port.
 
 ### When Sent
@@ -43,7 +43,7 @@ The device is in the process of being removed by the Plug and Play manager.
 A parallel port is a shared device. When the system-supplied function driver for parallel ports receives an open request for an parallel port, it simply increments the count of open files on the parallel port.
 
 
-##   IRP_MJ_INTERNAL_DEVICE_CONTROL
+## <a name="irp_mj_internal_device_control"></a> IRP_MJ_INTERNAL_DEVICE_CONTROL
 The [IRP_MJ_INTERNAL_DEVICE_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) request sets internal operating modes on a parallel port.
 
 ### When Sent

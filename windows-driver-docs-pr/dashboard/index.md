@@ -7,6 +7,7 @@ ms.date: 05/17/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+author: EliotSeattle
 ---
 
 # Partner Center for Windows Hardware

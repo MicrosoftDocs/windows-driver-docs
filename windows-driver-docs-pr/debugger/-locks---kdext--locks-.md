@@ -92,7 +92,7 @@ Resource @ 0x80d8b0b0    Shared 1 owning threads
 
 Note that the address for each thread displayed is followed by its thread count (for example, "-01"). If a thread is followed by "&lt;\*&gt;", that thread is one of the owners of the lock. In some instances, the initial thread address contains an offset. In that case, the actual thread address is displayed as well.
 
-If you want to find more information about one of these resource objects, use the address that follows "Resource @" as an argument for future commands. To investigate the second resource shown in the preceding example, you could use [**dt ERESOURCE 80d8b0b0**](dt--display-type-.md) or [**!thread 80ed0020**](-thread.md). Or you could use the **!locks** extension again with the **-v** option:
+If you want to find more information about one of these resource objects, use the address that follows "Resource \@" as an argument for future commands. To investigate the second resource shown in the preceding example, you could use [**dt ERESOURCE 80d8b0b0**](dt--display-type-.md) or [**!thread 80ed0020**](-thread.md). Or you could use the **!locks** extension again with the **-v** option:
 
 ```dbgcmd
 kd> !locks -v 80d8b0b0

@@ -11,7 +11,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 06/14/2019
+ms.date: 07/17/2019
 ms.localizationpriority: medium
 ---
 
@@ -41,14 +41,7 @@ The type of synchronization requested for the section. This parameter is set to 
 
 ### PageProtection
 
-The type of page protection requested for the section. Must be zero if **SyncType** is SyncTypeOther. Otherwise, this parameter can be one of the following flags, possibly combined with PAGE_NOCACHE:
-
-| Value | Meaning |
-| ----- | ------- |
-| PAGE_READONLY | For read-only or copy-on-write access. |
-| PAGE_READWRITE | For read-only, copy-on-write, or read/write access. |
-| PAGE_WRITECOPY | For read-only or copy-on-write access. Equivalent to PAGE_READONLY. |
-| PAGE_EXECUTE | For execute access. |
+The type of page protection requested for the section. Must be zero if **SyncType** is SyncTypeOther. Otherwise, this parameter must be one of the defined [memory protection constant values](https://docs.microsoft.com/windows/win32/memory/memory-protection-constants).
 
 ### OutputInformation
 
