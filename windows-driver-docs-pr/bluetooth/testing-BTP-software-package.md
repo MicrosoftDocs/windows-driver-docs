@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform
 description: Bluetooth Test Platform (BTP) overview.
-ms.author: robbieh
+ms.assetid: a6beeecb-5967-4e08-bfe2-b8aae26861ad
 ms.date: 4/17/2019
 ms.localizationpriority: medium
 

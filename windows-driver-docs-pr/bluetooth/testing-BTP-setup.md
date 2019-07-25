@@ -2,6 +2,7 @@
 title: Microsoft Bluetooth Test Platform Setup
 description: BTP setup
 ms.date: 4/17/2019
+ms.assetid: 85ac7c5b-b5f7-49e0-85f8-72e191c00974
 ms.localizationpriority: medium
 
 ---

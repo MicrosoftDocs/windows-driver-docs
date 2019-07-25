@@ -1,8 +1,8 @@
 ---
 title: Microsoft Bluetooth Test Platform
 description: The Bluetooth Test Platform (BTP) is a an end-to-end solution for testing interoperability of your Bluetooth hardware with the Microsoft Bluetooth driver stack.
-ms.author: mivogel
 ms.date: 4/17/2019
+ms.assetid: cf739d15-c0df-49db-a99a-3bf5248d5862
 ms.localizationpriority: medium
 
 ---
