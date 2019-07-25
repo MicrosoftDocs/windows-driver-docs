@@ -9,46 +9,24 @@ ms.localizationpriority: medium
 
 # Errors and Solutions When Submitting Device Metadata Experiences
 
-
 When you submit device metadata experiences for validation and publication, you may see errors that can affect the release of your experience.
 
-## <span id="Common_errors"></span><span id="common_errors"></span><span id="COMMON_ERRORS"></span>Common errors
-
+## Common errors
 
 Here are some of the most common errors, listed in alphabetical order, and including solutions if available.
 
-### <span id="To_solve_common_errors"></span><span id="to_solve_common_errors"></span><span id="TO_SOLVE_COMMON_ERRORS"></span>To solve common errors
+### To solve common errors
+
+|Error|Suggested solution|
+|----|----|
+|:::no-loc text="\[CategoryName] Category id is incorrect in Behavior.xml. Correct Category id is \[CategoryId]"::: | For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658). |
+|:::no-loc text="\[CategoryName] Guid \[CategoryId] is required for your device in Behavior.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="\[FolderName] folder is missing.":::|One of your folders is missing. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="\[FolderName] folder name is required in <PackageStructure> element in PackageInfo.xml.":::|You must include the correct folder name reference in PackageInfo.xml. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).
+
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Error</th>
-<th>Suggested solution</th>
-</tr>
-</thead>
 <tbody>
-<tr class="odd">
-<td><p>:::no-loc text="[CategoryName] Category id is incorrect in Behavior.xml. Correct Category id is [CategoryId]":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="[CategoryName] Guid [CategoryId] is required for your device in Behavior.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="[FolderName] folder is missing.":::</p></td>
-<td><p>One of your folders is missing.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="[FolderName] folder name is required in &lt;PackageStructure&gt; element in PackageInfo.xml.":::</p></td>
-<td><p>You must include the correct folder name reference in PackageInfo.xml.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
 <tr class="odd">
 <td><p>:::no-loc text="[ImageType] Image – [FileName] size for [SplitType] split is invalid. Valid size(s) are: [ListOfAllowedSizes]":::</p></td>
 <td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
@@ -477,23 +455,10 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 </tbody>
 </table>
 
-
-
-## <span id="related_topics"></span>Related topics
-
+## Related topics
 
 [Create a Device Metadata Experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-device-metadata-experience)
 
 [Submit a Device Metadata Package (Dashboard help)](https://docs.microsoft.com/windows-hardware/drivers/dashboard/submit-a-device-metadata-package--dashboard-help-)
 
 [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules)
-
-
-
-
-
-
-
-
-
-
