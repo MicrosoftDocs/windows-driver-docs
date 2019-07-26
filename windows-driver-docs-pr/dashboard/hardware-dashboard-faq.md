@@ -13,7 +13,11 @@ This article provides answers to frequently asked questions about the Partner Ce
 
 ## How do I contact Partner Center Support?
 
-If you are having problems accessing the Dashboard or need Dashboard Support please open a support ticket here: https://developer.microsoft.com/windows/support.  Select **Contact us**,  **Dashboard issue**, and then **Hardware submissions & signing (all OS version)** from the dropdown.  Live Chat and Email support hours are 8am-8pm CST Monday-Friday.  SLA for an initial response is 24-48 hours for email support.
+If you are having problems accessing the Dashboard or need Dashboard Support please open a support ticket here: https://developer.microsoft.com/windows/support.  
+
+You must Sign-in using your Partner Center Hardware dashboard username and password for any account or submission specific questions.
+
+Select **Contact us**,  **Dashboard issue**, and then **Hardware submissions & signing (all OS version)** from the dropdown.  Live Chat and Email support hours are 8am-8pm CST Monday-Friday.  SLA for an initial response is 24-48 hours for email support.
 
 ## Can I associate multiple certificates with a dashboard account?
 
