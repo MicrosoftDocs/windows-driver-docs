@@ -45,8 +45,8 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 |:::no-loc text="All device metadata .cab files in an experience must support the same Hardware IDs. Please correct the .cab.":::|This package does not have the same list of model IDs that the other packages in the experience have. Correct the model ID list in the package and upload the package again. For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).|
 |:::no-loc text="Allowed Domain should not be empty for task [TaskID] in Tasks.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
 |:::no-loc text="An unexpected file was found:'\[ExtraFile]'. Please ensure you follow the architecture or reference all root files in PackageInfo.xml.":::|There are extra files at the root of your package. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
-|:::no-loc text="An unexpected folder was found: ‘[ExtraFolder]'. Please ensure you follow the architecture or reference all root folders in PackageInfo.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
-|:::no-loc text="CommandLine URL should not be null for task [TaskID] in Tasks.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="An unexpected folder was found: ‘\[ExtraFolder]'. Please ensure you follow the architecture or reference all root folders in PackageInfo.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="CommandLine URL should not be null for task \[TaskID] in Tasks.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
 |:::no-loc text="Device Category not found in DeviceInfo.xml .":::|You must set a primary device category that is one of the pre-defined options. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
 |:::no-loc text="Device folder not found in \DeviceStage\ folder":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
 |:::no-loc text="Device icon information not found in DeviceInfo.xml":::|If you include a device icon in the DeviceInfo.xml file, you must also include the device icon information. Device icons are required for Device Stage packages. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
@@ -54,275 +54,58 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 |:::no-loc text="Device Metadata Submission Type for this submission needs to match the existing experience category.":::| The device metadata submission type is defined as either Device Stage or Devices and Printers. Only Device Stage packages can be included in a Device Stage experience. Similarly, only Devices and Printers packages can be included in a Devices and Printers experience.|
 |:::no-loc text="Device Stage inbox submissions are not allowed for the computer device class.":::|If your package and experience are for Device Stage and a computer device, you must have already certified them for a logo, or you must certify them for a logo within 90 days.|
 |:::no-loc text="Device Stage is not supported for this device.":::|The device category you have chosen is not supported in Device Stage.|
-|:::no-loc text="Device Stage metadata cannot be submitted for your device \[DeviceCategory]":::|Device Stage submissions are allowed only for the following devices:<br/>\- Portable media players<br/>\- Digital still cameras<br/>\- Cellular phones<br/>\- Printers or fax machines<br/>\- Scanners<br/>Computer systems|
+|:::no-loc text="Device Stage metadata cannot be submitted for your device \[DeviceCategory]":::|Device Stage submissions are allowed only for the following devices:<br/>\- Portable media players<br/>\- Digital still cameras<br/>\- Cellular phones<br/>\- Printers or fax machines<br/>\- Scanners<br/>\-Computer systems|
 |:::no-loc text="Device Stage requires either Marketing Bullets or Status Items to be present in Behavior.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
 |:::no-loc text="Device Stage requires LaunchDeviceStageFromExplorer to be set to true for your device in WindowsInfo.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
-|<!-- Eliot -->
-
-
-:::no-loc text="Device Stage requires LaunchDeviceStageOnDeviceConnect to be set to True for your device in WindowsInfo.xml":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Device Stage requires ShowDeviceInDisconnectedState to be set to True for your device in WindowsInfo.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Devices and Printers requires LaunchDeviceStageFromExplorer to be set to False for your device in WindowsInfo.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Devices and Printers requires LaunchDeviceStageOnDeviceConnect to be set to False for your device in WindowsInfo.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Error in xml file [FileName] : [Error]":::</p></td>
-<td><p>The specified .xml file has failed because it contains one or more errors. Verify that the file is compliant with its corresponding schema and that the namespace is correct.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="File [FileName] is different in \DeviceStage\Device[Locale]\ and \DeviceStage\Device\ folders.":::</p></td>
-<td><p>If you have set this package as the default locale, the locale directory and the language-neutral directory must contain the same files.</p>
-<p>One of the following errors has occurred:</p>
-<ul>
-<li><p>Files that have the same specified name exist in both directories but the files are different.</p></li>
-<li><p>The specified file exists in only one directory.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="File Name PackageInfo.xml is expected in &lt;PackageStructure&gt; element in PackageInfo.xml.":::</p></td>
-<td><p>Your PackageInfo.xml file isn't correctly authored for your package. Each root object in the package must be referenced in the PackageInfo.xml file by using a &lt;PackageStructure&gt; node.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Filename [FileReference] is incorrect in &lt;PackageStructure&gt; element in PackageInfo.xml. Correct filename: PackageInfo.xml":::</p></td>
-<td><p>The file name that you referenced by using the &lt;PackageStructure&gt; node in the PackageInfo.xml file is misspelled. Correct the error and resubmit your package.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="For Printing and Scanning Devices, LaunchDeviceStageOnDeviceConnect needs to be set to False in WindowsInfo.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="HardwareIDs in this submission: [list of Hardware ID(s)] are not owned by your company.":::</p></td>
-<td><p>The hardware IDs listed use VIDs that your company does not own according to the respective SIGs. If this is incorrect, email Dashboard Support at sysdev@microsoft.com.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Hardware IDs in this submission: [list of Hardware ID(s)] do not match the expected list of Hardware IDs from SMBIOS.":::</p></td>
-<td><p>The hardware IDs you have submitted are not generated from the SMBIOS information that you submitted together with the SMBIOSFields.xml file.</p>
-<p>Try one of the following solutions:</p>
-<ul>
-<li><p>Regenerate the hardware IDs and include the correct hardware IDs in your package.</p></li>
-<li><p>Update the SMBIOSFields.xml file to include the fields that are used to generate the correct hardware IDs.</p></li>
-</ul>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Hardware IDs in this submission: [list of Hardware ID(s)] fail the Inbox Driver Distribution Agreement (IDDA) list validation.":::</p></td>
-<td><p>The hardware IDs you have included in your package are not listed in the Inbox Driver Distribution Agreement (IDDA) with Microsoft. Remove these hardware IDs and resubmit.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Invalid scheme [Scheme] in Allowed Domain for task [TaskID] in Tasks.xml":::</p></td>
-<td><p>URLs must begin with HTTP or HTTPs.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Locale not found or is incorrect in PackageInfo.xml":::</p></td>
-<td><p>The locale tag in the PackageInfo.xml file must exist, be formatted correctly, and comply with RFC 4646.</p>
-<p>Correct the locale, and then resubmit your package.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Missing resource reference for [Id] in Resource.xml file in \DeviceStage\Task[TaskID][Locale] folder":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Model IDs are not allowed for [Device Class] submissions.":::</p></td>
-<td><p>You can't use model IDs when you submit device metadata for this type of device class. Instead, use only the hardware IDs for your device. To find the hardware IDs for a computer device, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Model Name not found in DeviceInfo.xml":::</p></td>
-<td><p>Your DeviceInfo.xml file isn't correctly authored.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="No preview key can be found for this organization.":::</p></td>
-<td><p>You must set your PreviewKey before you upload a preview package.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules" data-raw-source="[Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules)">Device Metadata Business Rules</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="PackageStructure node in PackageInfo.xml is invalid.":::</p></td>
-<td><p>Make sure that your PackageInfo.xml file is correct.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Task [TaskGUID] is required for your device in Behavior.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Task [TaskID] should not use taskGroupGuid [TaskGroupGuid]":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="TaskGroupGuid [TaskGroupGuid] should not be used by your device for task [TaskId]":::</p></td>
-<td><p>You are trying to use a reserved GUID that doesn't apply to your device.</p>
-<p>Try one of the following solutions:</p>
-<ul>
-<li><p>Do not use GUIDs for tasks that your device can't support.</p></li>
-<li><p>If you are trying to create a task, generate a new GUID for the task.</p></li>
-</ul>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="TaskGroupGuid incorrect for taskId [TaskId] in Behavior.xml":::</p></td>
-<td><p>Correct the task GUID, and then resubmit the package.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="The [FileName] icon file in [FolderName] folder is missing image <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">MissingImageSize</a>.":::</p></td>
-<td><p>Verify that the image size is present. If not, add the image size to the icon, and then resubmit the package.</p>
-<div class="alert">
-**Note**<br/><p>256x256 image layers must be in the PNG compressed format. BMP format for this size is not allowed. If this size is present but in the BMP format, create the image in a PNG format for the size, add this image to the icon, and then resubmit the package.</p>
-</div>
-<div>
-
-</div>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="The [FileName] icon file in [FolderName] folder is missing image [MissingImageSize].":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="The cab Friendly Name is not unique to the Experience. Please choose another name.":::</p></td>
-<td><p>Create a new friendly name for the experience, and then resubmit it.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="The CommandLine argument should point to a valid URL beginning with HTTP or HTTPS for task [TaskID] in Tasks.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="The device category reported in your Device Metadata package and Logo Submission don't match. If the device category in the package is incorrect, please fix and upload again. If the device category in Logo Submission is incorrect, please fix in Submission Manager and try uploading your package again: [list of links per offending logo submission to SubmissionManager]":::</p></td>
-<td><p>Device categories between bound logo submissions and device metadata must be identical for a submission to pass. Verify that your logo submissions all have the same device category, and that the device category is the same as the device category for your package.</p>
-<p>The links provided point to the Submission Manager, which will allow you to change the device category in the logo submission, if the category is incorrect.</p>
-<p>After all issues are resolved, resubmit your package.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="The Device Metadata Category for this submission does not exist.":::</p></td>
-<td><p>The device metadata category that you have used isn't valid. You must choose from the pre-defined device metadata categories outlined in the Windows Hardware Certification Kit (HCK).</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="The Experience name already exists for this organization.":::</p></td>
-<td><p>Create a new experience that has a different name.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="The provided Logo submissions do not share Hardware IDs or Model IDs with the Device Metadata submission.":::</p></td>
-<td><p>The bound logo submissions must contain the hardware IDs in the device metadata packages in the experience.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="The reference in PackageInfo.xml, DeviceInformation, was not found in the package.":::</p></td>
-<td><p>The DeviceInformation folder reference is missing from the PackageInfo.xml file.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="The reference in PackageInfo.xml, DeviceStage, was not found in the package.":::</p></td>
-<td><p>The reference in the &lt;PackageStructure&gt; element in the PackageInfo.xml file is either misspelled or isn't located in the root in the package. Remove the reference, or add the correct file or directory.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="The reference in PackageInfo.xml, WindowsInformation, was not found in the package.":::</p></td>
-<td><p>The WindowsInformation folder reference is missing from the PackageInfo.xml file.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="The submission contains [list of Hardware ID(s) and/or Model ID(s)] that are not covered via a logo submission.":::</p></td>
-<td><p>Your package contains hardware IDs or model IDs that your logo submissions don't cover.</p>
-<p>Try one of the following solutions:</p>
-<ul>
-<li><p>Correct the hardware IDs or model IDs in your device metadata package.</p></li>
-<li><p>Create a new experience and bind only the associated logo submissions.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="The system manufacturer for this computer submission does not match the organization of the submitting user.":::</p></td>
-<td><p>The system manufacturer in the SMBIOSFields.xml file you submitted doesn't match the manufacturer in our records.</p>
-<p>Try one of the following solutions:</p>
-<ul>
-<li><p>Correct the name of the system manufacturer, and then resubmit the package.</p></li>
-<li><p>If the system manufacturer field is correct and your file doesn't pass, email board Support at sysdev@microsoft.com.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="The TaskID [TaskID] cannot be used with multiple TaskGroups.":::</p></td>
-<td><p>Your Device Stage package contains a TaskID that is used with different TaskGroups. TaskIDs must be unique per TaskGroup and per task.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="This preview key has been rejected. Please choose another value.":::</p></td>
-<td><p>The PreviewKey you set by using the Dashboard isn't accepted. Submit a new PreviewKey.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Unexpected file found in [FolderName] folder- [ExtraFile]":::</p></td>
-<td><p>There is an issue with your package structure.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Unexpected file found in [Path] folder – [ExtraFile]":::</p></td>
-<td><p>There is an issue with your package structure.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Unexpected file found in the [locale] subfolder of task [TaskGroupGuid] folder – [FileName]":::</p></td>
-<td><p>Remove the specified file, and then resubmit the package.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Unexpected folder found in [FolderName] folder- [ExtraFolder]":::</p></td>
-<td><p>There is an issue with your package structure.</p>
-<div class="alert">
-**Note**<br/><p>This error may occur if the device category in the DeviceInfo.xml file isn't set correctly.</p>
-</div>
-<div>
-
-</div>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Unexpected folder found in [Path] folder – [ExtraFolder]":::</p></td>
-<td><p>There is an issue with your package structure.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="URL should not be a localhost for task [TaskID] in Tasks.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="URL specified in the commandLine is not valid for task [TaskID] in Tasks.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Valid logo submission(s) are needed for [SubmissionType] metadata for [DeviceClass]":::</p></td>
-<td><p>Digital still cameras and portable media players must have one or more Windows 7 or Windows Vista® logo submissions.</p>
-<p>Cellular phones must have one or more Windows 7 logo submissions.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="You already have a preview submission for this Operating System Version. Remove the current Live submission.":::</p></td>
-<td><p>You are trying to promote a preview package for a locale, but there is already a released package for that locale.</p>
-<p>If you want to promote this preview package, delete the released package first, and then try again.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="You do not have access to this experience.":::</p></td>
-<td><p>You are trying to gain access to an experience that doesn't belong to your company.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Your device cannot have the command value set to HostedSiteWithDevice for task [TaskID] in Tasks.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Your submission is blocked due to a Dashboard error. Please email Dashboard Support at sysdev@microsoft.com for a resolution.":::</p></td>
-<td><p>Email Dashboard Support at sysdev@microsoft.com.</p></td>
-</tr>
-</tbody>
-</table>
+|:::no-loc text="Device Stage requires LaunchDeviceStageOnDeviceConnect to be set to True for your device in WindowsInfo.xml":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Device Stage requires ShowDeviceInDisconnectedState to be set to True for your device in WindowsInfo.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Devices and Printers requires LaunchDeviceStageFromExplorer to be set to False for your device in WindowsInfo.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Devices and Printers requires LaunchDeviceStageOnDeviceConnect to be set to False for your device in WindowsInfo.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Error in xml file \[FileName] : \[Error]":::|The specified .xml file has failed because it contains one or more errors. Verify that the file is compliant with its corresponding schema and that the namespace is correct. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="File \[FileName] is different in \DeviceStage\Device\[Locale]\ and \DeviceStage\Device\ folders.":::|If you have set this package as the default locale, the locale directory and the language-neutral directory must contain the same files. One of the following errors has occurred: <br/>\- Files that have the same specified name exist in both directories but the files are different.<br/>\- The specified file exists in only one directory.|
+|:::no-loc text="File Name PackageInfo.xml is expected in &lt;PackageStructure&gt; element in PackageInfo.xml.":::|Your PackageInfo.xml file isn't correctly authored for your package. Each root object in the package must be referenced in the PackageInfo.xml file by using a <PackageStructure> node. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Filename \[FileReference] is incorrect in <PackageStructure> element in PackageInfo.xml. Correct filename: PackageInfo.xml":::|The file name that you referenced by using the <PackageStructure> node in the PackageInfo.xml file is misspelled. Correct the error and resubmit your package. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="For Printing and Scanning Devices, LaunchDeviceStageOnDeviceConnect needs to be set to False in WindowsInfo.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="HardwareIDs in this submission: [list of Hardware ID(s)] are not owned by your company.":::|The hardware IDs listed use VIDs that your company does not own according to the respective SIGs. If this is incorrect, cpmtact Dashboard Support.|
+|:::no-loc text="Hardware IDs in this submission: \[list of Hardware ID(s)] do not match the expected list of Hardware IDs from SMBIOS.":::|The hardware IDs you have submitted are not generated from the SMBIOS information that you submitted together with the SMBIOSFields.xml file. Try one of the following solutions:<br>\- Regenerate the hardware IDs and include the correct hardware IDs in your package.<br/>\- Update the SMBIOSFields.xml file to include the fields that are used to generate the correct hardware IDs.<br/>For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Hardware IDs in this submission: [list of Hardware ID(s)] fail the Inbox Driver Distribution Agreement (IDDA) list validation.":::|The hardware IDs you have included in your package are not listed in the Inbox Driver Distribution Agreement (IDDA) with Microsoft. Remove these hardware IDs and resubmit.|
+|:::no-loc text="Invalid scheme \[Scheme] in Allowed Domain for task \[TaskID] in Tasks.xml":::|URLs must begin with HTTP or HTTPs. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Locale not found or is incorrect in PackageInfo.xml":::|The locale tag in the PackageInfo.xml file must exist, be formatted correctly, and comply with RFC 4646. Correct the locale, and then resubmit your package.|
+|:::no-loc text="Missing resource reference for \[Id] in Resource.xml file in \DeviceStage\Task\[TaskID]\[Locale] folder":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Model IDs are not allowed for [Device Class] submissions.":::|You can't use model IDs when you submit device metadata for this type of device class. Instead, use only the hardware IDs for your device. To find the hardware IDs for a computer device, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Model Name not found in DeviceInfo.xml":::|Your DeviceInfo.xml file isn't correctly authored. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="No preview key can be found for this organization.":::|You must set your PreviewKey before you upload a preview package. For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).|
+|:::no-loc text="PackageStructure node in PackageInfo.xml is invalid.":::|Make sure that your PackageInfo.xml file is correct. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Task \[TaskGUID] is required for your device in Behavior.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Task \[TaskID] should not use taskGroupGuid \[TaskGroupGuid]":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="TaskGroupGuid \[TaskGroupGuid] should not be used by your device for task \[TaskId]":::|You are trying to use a reserved GUID that doesn't apply to your device. Try one of the following solutions:<br/>\- Do not use GUIDs for tasks that your device can't support.<br/>\- If you are trying to create a task, generate a new GUID for the task.<br/>For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="TaskGroupGuid incorrect for taskId \[TaskId] in Behavior.xml":::|Correct the task GUID, and then resubmit the package. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="The \[FileName] icon file in \[FolderName] folder is missing image MissingImageSize.":::|Verify that the image size is present. If not, add the image size to the icon, and then resubmit the package.<br/><br/>**Note**   256x256 image layers must be in the PNG compressed format. BMP format for this size is not allowed. If this size is present but in the BMP format, create the image in a PNG format for the size, add this image to the icon, and then resubmit the package. <br/><br/>For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="The cab Friendly Name is not unique to the Experience. Please choose another name.":::|Create a new friendly name for the experience, and then resubmit it.|
+|:::no-loc text="The CommandLine argument should point to a valid URL beginning with HTTP or HTTPS for task \[TaskID] in Tasks.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="The device category reported in your Device Metadata package and Logo Submission don't match. If the device category in the package is incorrect, please fix and upload again. If the device category in Logo Submission is incorrect, please fix in Submission Manager and try uploading your package again: [list of links per offending logo submission to SubmissionManager]":::|Device categories between bound logo submissions and device metadata must be identical for a submission to pass. Verify that your logo submissions all have the same device category, and that the device category is the same as the device category for your package. The links provided point to the Submission Manager, which will allow you to change the device category in the logo submission, if the category is incorrect. After all issues are resolved, resubmit your package.|
+|:::no-loc text="The Device Metadata Category for this submission does not exist.":::|The device metadata category that you have used isn't valid. You must choose from the pre-defined device metadata categories outlined in the Windows Hardware Certification Kit (HCK).|
+|:::no-loc text="The Experience name already exists for this organization.":::|Create a new experience that has a different name.|
+|:::no-loc text="The provided Logo submissions do not share Hardware IDs or Model IDs with the Device Metadata submission.":::|The bound logo submissions must contain the hardware IDs in the device metadata packages in the experience.|
+|:::no-loc text="The reference in PackageInfo.xml, DeviceInformation, was not found in the package.":::|The DeviceInformation folder reference is missing from the PackageInfo.xml file. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="The reference in PackageInfo.xml, DeviceStage, was not found in the package.":::|The reference in the &lt;PackageStructure&gt; element in the PackageInfo.xml file is either misspelled or isn't located in the root in the package. Remove the reference, or add the correct file or directory. <p>For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="The reference in PackageInfo.xml, WindowsInformation, was not found in the package.":::|The WindowsInformation folder reference is missing from the PackageInfo.xml file. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="The submission contains [list of Hardware ID(s) and/or Model ID(s)] that are not covered via a logo submission.":::|Your package contains hardware IDs or model IDs that your logo submissions don't cover. Try one of the following solutions:<br/>\- Correct the hardware IDs or model IDs in your device metadata package.<br/>\- Create a new experience and bind only the associated logo submissions.|
+|:::no-loc text="The system manufacturer for this computer submission does not match the organization of the submitting user.":::|The system manufacturer in the SMBIOSFields.xml file you submitted doesn't match the manufacturer in our records. Try one of the following solutions:<br/>\- Correct the name of the system manufacturer, and then resubmit the package.<br/>\- If the system manufacturer field is correct and your file doesn't pass, email board Support at sysdev@microsoft.com.|
+|:::no-loc text="The TaskID \[TaskID] cannot be used with multiple TaskGroups.":::|Your Device Stage package contains a TaskID that is used with different TaskGroups. TaskIDs must be unique per TaskGroup and per task. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="This preview key has been rejected. Please choose another value.":::|The PreviewKey you set by using the Dashboard isn't accepted. Submit a new PreviewKey.|
+|:::no-loc text="Unexpected file found in \[FolderName] folder- \[ExtraFile]":::|There is an issue with your package structure. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Unexpected file found in \[Path] folder – \[ExtraFile]":::|There is an issue with your package structure. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Unexpected file found in the \[locale] subfolder of task \[TaskGroupGuid] folder – \[FileName]":::|Remove the specified file, and then resubmit the package. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Unexpected folder found in \[FolderName] folder- \[ExtraFolder]":::|There is an issue with your package structure. <br/><br/>**Note**   This error may occur if the device category in the DeviceInfo.xml file isn't set correctly. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Unexpected folder found in \[Path] folder – \[ExtraFolder]":::|There is an issue with your package structure. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="URL should not be a localhost for task \[TaskID] in Tasks.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="URL specified in the commandLine is not valid for task \[TaskID] in Tasks.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Valid logo submission(s) are needed for \[SubmissionType] metadata for \[DeviceClass]":::|Digital still cameras and portable media players must have one or more Windows 7 or Windows Vista® logo submissions. Cellular phones must have one or more Windows 7 logo submissions.|
+|:::no-loc text="You already have a preview submission for this Operating System Version. Remove the current Live submission.":::|You are trying to promote a preview package for a locale, but there is already a released package for that locale. If you want to promote this preview package, delete the released package first, and then try again.|
+|:::no-loc text="You do not have access to this experience.":::|You are trying to gain access to an experience that doesn't belong to your company.|
+|:::no-loc text="Your device cannot have the command value set to HostedSiteWithDevice for task \[TaskID] in Tasks.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Your submission is blocked due to a Dashboard error. Please email Dashboard Support at sysdev@microsoft.com for a resolution.":::|Contact Dashboard Support.|
 
 ## Related topics
 
