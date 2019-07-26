@@ -390,6 +390,7 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows_v100Server_RS5 | Windows Server 2019 |
 | Windows_v100_RS5 | Windows 10 RS5 x86 |
 | Windows_v100_RS5 | Windows 10 RS5 x64 |
+| Windows_v100_19H1 | Windows 10 19H1 Update |
 
 ### List of Operating System Codes
 
@@ -444,9 +445,12 @@ The following table lists Operating System Codes and their descriptions.
 |WINDOWS_v100_RS4_FULL|Windows 10 RS4 Client|
 |WINDOWS_v100_X64_RS4_FULL|Windows 10 RS4 Client x64|
 |WINDOWS_v100_ARM64_RS4_FULL|Windows 10 RS4 Client ARM64|
-| WINDOWS_v100_SERVER_X64_RS5_FULL | Windows Server 2019 |
-| WINDOWS_v100_RS5_FULL | Windows 10 RS5 x86 |
-| WINDOWS_v100_X64_RS5_FULL | Windows 10 RS5 x64 |
+|WINDOWS_v100_SERVER_X64_RS5_FULL | Windows Server 2019 |
+|WINDOWS_v100_RS5_FULL | Windows 10 RS5 x86 |
+|WINDOWS_v100_X64_RS5_FULL | Windows 10 RS5 Client x64 |
+|WINDOWS_v100_19H1_FULL |Windows 19H1 Client x86 |
+|WINDOWS_v100_X64_19H1_FULL |Windows 19H1 Client x64 |
+|WINDOWS_v100_ARM64_19H1_FULL | Windows 19H1 Client ARM64 |
 
 ## Error codes
 
