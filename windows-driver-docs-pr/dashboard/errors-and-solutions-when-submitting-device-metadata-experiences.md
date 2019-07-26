@@ -22,176 +22,45 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 |:::no-loc text="\[CategoryName] Category id is incorrect in Behavior.xml. Correct Category id is \[CategoryId]"::: | For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658). |
 |:::no-loc text="\[CategoryName] Guid \[CategoryId] is required for your device in Behavior.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
 |:::no-loc text="\[FolderName] folder is missing.":::|One of your folders is missing. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
-|:::no-loc text="\[FolderName] folder name is required in <PackageStructure> element in PackageInfo.xml.":::|You must include the correct folder name reference in PackageInfo.xml. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).
+|:::no-loc text="\[FolderName] folder name is required in <PackageStructure> element in PackageInfo.xml.":::|You must include the correct folder name reference in PackageInfo.xml. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="\[ImageType] Image – \[FileName] size for \[SplitType] split is invalid. Valid size(s) are: \[ListOfAllowedSizes]":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="\[ImageType] Image – \[FileName] size is invalid. Valid size(s) are: \[ListOfAllowedSizes]":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="\[TaskGroupName] Guid \[TaskGroupGuid] is not referenced for the task \[TaskId] in Behavior.xml":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="\[TaskName] Task – \[TaskId] is required for your device within the System Settings category in Behavior.xml.":::|The Action Center task and System Settings task must appear under the System Settings category in Device Stage for your device. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="\[TaskName] Task – \[TaskId] should reference taskGroupGuid \[TaskGroupGuid] for your device in Behavior.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="\[TaskName] task \[TaskId] is required to exist at root for your device in Behavior.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="\DeviceStage\Device\[Locale]\ and \DeviceStage\Device\ folders should have same files.":::|If this package is set to be the default locale, the locale directory and the language-neutral directory must have the same files. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">.|
+|:::no-loc text="A .cab submission needs to contain either Hardware and/or Model information. Please correct the .cab or modify the existing .cabs.":::|Your package must contain at least one hardware ID or model ID. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="A Hardware ID in this .cab is in conflict and the .cab cannot be uploaded. Please ensure no other experience you have created uses this Hardware ID.":::|Your hardware ID has been used in another one of your experiences. On the dashboard, under **Device metadata**, open the **Manage experiences** page. In the filter, enter the hardware ID to find the other experience. You can then resolve any conflicts. For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).|
+|:::no-loc text="A Hardware ID in this. cab is in use by another company and the .cab cannot be uploaded. Please verify this Hardware ID.":::|The hardware ID you have included in your package is in use by another company. You can't submit a hardware ID for another company. Make sure that your hardware IDs are not misspelled. If you still receive an error message, contact Dashboard Support.|
+|:::no-loc text="A live submission already exists for this locale in this experience.":::|Delete the existing live package for the locale before you upload a new package for the same locale.|
+|:::no-loc text="A live submission already exists with default locale set to true in this experience.":::|Only one live package in an experience can be set as the default package. For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).|
+|:::no-loc text="A logo submission for a MultiPurpose device does not match the submission category.":::|The device category listed in your logo submission doesn't match the primary device category of your device metadata package. To resolve this problem, follow these steps:<br/> \- Correct the device category for your logo submission.<br/>\- Create a new experience and only bind the correct logo submissions.|
+|:::no-loc text="A Model ID in this cab is in conflict and the cab cannot be uploaded. Please ensure no other experience you have created uses this Model ID.":::|Your model ID has been used in another one of your experiences. On the dashboard, under **Device metadata**, open the **Manage experiences** page. In the filter, enter the model ID to find the other experience. You can then resolve any conflicts. For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).|
+|:::no-loc text="A Model ID in this cab is in use by another company and the cab cannot be uploaded. Please verify this Model ID.":::|The model ID you have included in your package is in use by another company. You can't submit a model ID for another company. Make sure that your model IDs are not misspelled. If you still receive an error message, email Dashboard Support at sysdev@microsoft.com for a resolution.|
+|:::no-loc text="A non-preview live package cannot be promoted to live.":::|You can't promote a live package to Live status.|
+|:::no-loc text="A package with a status of error cannot be promoted to live.":::|You can't promote a package that contains errors to Live status.|
+|:::no-loc text="A preview submission already exists for this locale in this experience.":::|To resolve this problem, try the following:<br/> \- Delete the existing preview package for the locale, and then upload a new preview package for the same locale.<br/>\- Promote the current preview package for the locale to Release status, and then upload a new preview package for the same locale.|
+|:::no-loc text="A preview submission already exists with default locale set to true in this experience.":::|Only one preview package in an experience can be set as the default package. For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).|
+|:::no-loc text="All device metadata .cab files in an experience must support the same Hardware IDs. Please correct the .cab.":::|This package does not have the same list of model IDs that the other packages in the experience have. Correct the model ID list in the package and upload the package again. For more information, see [Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules).|
+|:::no-loc text="Allowed Domain should not be empty for task [TaskID] in Tasks.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="An unexpected file was found:'\[ExtraFile]'. Please ensure you follow the architecture or reference all root files in PackageInfo.xml.":::|There are extra files at the root of your package. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="An unexpected folder was found: ‘[ExtraFolder]'. Please ensure you follow the architecture or reference all root folders in PackageInfo.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="CommandLine URL should not be null for task [TaskID] in Tasks.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Device Category not found in DeviceInfo.xml .":::|You must set a primary device category that is one of the pre-defined options. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Device folder not found in \DeviceStage\ folder":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Device icon information not found in DeviceInfo.xml":::|If you include a device icon in the DeviceInfo.xml file, you must also include the device icon information. Device icons are required for Device Stage packages. For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Device Metadata Category for this submission needs to match the existing experience category.":::|The category for the device in this package doesn't match the category in the other packages in this experience. Revise your device category and resubmit the package.|
+|:::no-loc text="Device Metadata Submission Type for this submission needs to match the existing experience category.":::| The device metadata submission type is defined as either Device Stage or Devices and Printers. Only Device Stage packages can be included in a Device Stage experience. Similarly, only Devices and Printers packages can be included in a Devices and Printers experience.|
+|:::no-loc text="Device Stage inbox submissions are not allowed for the computer device class.":::|If your package and experience are for Device Stage and a computer device, you must have already certified them for a logo, or you must certify them for a logo within 90 days.|
+|:::no-loc text="Device Stage is not supported for this device.":::|The device category you have chosen is not supported in Device Stage.|
+|:::no-loc text="Device Stage metadata cannot be submitted for your device \[DeviceCategory]":::|Device Stage submissions are allowed only for the following devices:<br/>\- Portable media players<br/>\- Digital still cameras<br/>\- Cellular phones<br/>\- Printers or fax machines<br/>\- Scanners<br/>Computer systems|
+|:::no-loc text="Device Stage requires either Marketing Bullets or Status Items to be present in Behavior.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|:::no-loc text="Device Stage requires LaunchDeviceStageFromExplorer to be set to true for your device in WindowsInfo.xml.":::|For more information, see the [Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658).|
+|<!-- Eliot -->
 
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>:::no-loc text="[ImageType] Image – [FileName] size for [SplitType] split is invalid. Valid size(s) are: [ListOfAllowedSizes]":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="[ImageType] Image – [FileName] size is invalid. Valid size(s) are: [ListOfAllowedSizes]":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="[TaskGroupName] Guid [TaskGroupGuid] is not referenced for the task [TaskId] in Behavior.xml":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="[TaskName] Task – [TaskId] is required for your device within the System Settings category in Behavior.xml.":::</p></td>
-<td><p>The Action Center task and System Settings task must appear under the System Settings category in Device Stage for your device.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="[TaskName] Task – [TaskId] should reference taskGroupGuid [TaskGroupGuid] for your device in Behavior.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="[TaskName] task [TaskId] is required to exist at root for your device in Behavior.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="\DeviceStage\Device[Locale]\ and \DeviceStage\Device\ folders should have same files.":::</p></td>
-<td><p>If this package is set to be the default locale, the locale directory and the language-neutral directory must have the same files.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="A .cab submission needs to contain either Hardware and/or Model information. Please correct the .cab or modify the existing .cabs.":::</p></td>
-<td><p>Your package must contain at least one hardware ID or model ID.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="A Hardware ID in this .cab is in conflict and the .cab cannot be uploaded. Please ensure no other experience you have created uses this Hardware ID.":::</p></td>
-<td><p>Your hardware ID has been used in another one of your experiences. On the dashboard, under <strong>Device metadata</strong>, open the <strong>Manage experiences</strong> page. In the filter, enter the hardware ID to find the other experience. You can then resolve any conflicts.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules" data-raw-source="[Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules)">Device Metadata Business Rules</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="A Hardware ID in this. cab is in use by another company and the .cab cannot be uploaded. Please verify this Hardware ID.":::</p></td>
-<td><p>The hardware ID you have included in your package is in use by another company. You can't submit a hardware ID for another company. Make sure that your hardware IDs are not misspelled. If you still receive an error message, email Dashboard Support at sysdev@microsoft.com for a resolution.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="A live submission already exists for this locale in this experience.":::</p></td>
-<td><p>Delete the existing live package for the locale before you upload a new package for the same locale.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="A live submission already exists with default locale set to true in this experience.":::</p></td>
-<td><p>Only one live package in an experience can be set as the default package.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules" data-raw-source="[Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules)">Device Metadata Business Rules</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="A logo submission for a MultiPurpose device does not match the submission category.":::</p></td>
-<td><p>The device category listed in your logo submission doesn't match the primary device category of your device metadata package. To resolve this problem, follow these steps:</p>
-<ul>
-<li><p>Correct the device category for your logo submission.</p></li>
-<li><p>Create a new experience and only bind the correct logo submissions.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="A Model ID in this cab is in conflict and the cab cannot be uploaded. Please ensure no other experience you have created uses this Model ID.":::</p></td>
-<td><p>Your model ID has been used in another one of your experiences. On the dashboard, under <strong>Device metadata</strong>, open the <strong>Manage experiences</strong> page. In the filter, enter the model ID to find the other experience. You can then resolve any conflicts.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules" data-raw-source="[Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules)">Device Metadata Business Rules</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="A Model ID in this cab is in use by another company and the cab cannot be uploaded. Please verify this Model ID.":::</p></td>
-<td><p>The model ID you have included in your package is in use by another company. You can't submit a model ID for another company. Make sure that your model IDs are not misspelled. If you still receive an error message, email Dashboard Support at sysdev@microsoft.com for a resolution.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="A non-preview live package cannot be promoted to live.":::</p></td>
-<td><p>You can't promote a live package to Live status.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="A package with a status of error cannot be promoted to live.":::</p></td>
-<td><p>You can't promote a package that contains errors to Live status.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="A preview submission already exists for this locale in this experience.":::</p></td>
-<td><p>To resolve this problem, try the following:</p>
-<ul>
-<li><p>Delete the existing preview package for the locale, and then upload a new preview package for the same locale.</p></li>
-<li><p>Promote the current preview package for the locale to Release status, and then upload a new preview package for the same locale.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="A preview submission already exists with default locale set to true in this experience.":::</p></td>
-<td><p>Only one preview package in an experience can be set as the default package.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules" data-raw-source="[Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules)">Device Metadata Business Rules</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="All device metadata .cab files in an experience must support the same Hardware IDs. Please correct the .cab.":::</p></td>
-<td><p>This package does not have the same list of model IDs that the other packages in the experience have. Correct the model ID list in the package and upload the package again.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules" data-raw-source="[Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/device-metadata-business-rules)">Device Metadata Business Rules</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Allowed Domain should not be empty for task [TaskID] in Tasks.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="An unexpected file was found:'[ExtraFile]'. Please ensure you follow the architecture or reference all root files in PackageInfo.xml.":::</p></td>
-<td><p>There are extra files at the root of your package.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="An unexpected folder was found: ‘[ExtraFolder]'. Please ensure you follow the architecture or reference all root folders in PackageInfo.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="CommandLine URL should not be null for task [TaskID] in Tasks.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Device Category not found in DeviceInfo.xml .":::</p></td>
-<td><p>You must set a primary device category that is one of the pre-defined options.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Device folder not found in \DeviceStage\ folder":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Device icon information not found in DeviceInfo.xml":::</p></td>
-<td><p>If you include a device icon in the DeviceInfo.xml file, you must also include the device icon information. Device icons are required for Device Stage packages.</p>
-<p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Device Metadata Category for this submission needs to match the existing experience category.":::</p></td>
-<td><p>The category for the device in this package doesn't match the category in the other packages in this experience. Revise your device category and resubmit the package.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Device Metadata Submission Type for this submission needs to match the existing experience category.":::</p></td>
-<td><p>The device metadata submission type is defined as either Device Stage or Devices and Printers. Only Device Stage packages can be included in a Device Stage experience. Similarly, only Devices and Printers packages can be included in a Devices and Printers experience.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Device Stage inbox submissions are not allowed for the computer device class.":::</p></td>
-<td><p>If your package and experience are for Device Stage and a computer device, you must have already certified them for a logo, or you must certify them for a logo within 90 days.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Device Stage is not supported for this device.":::</p></td>
-<td><p>The device category you have chosen is not supported in Device Stage.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Device Stage metadata cannot be submitted for your device [DeviceCategory]":::</p></td>
-<td><p>Device Stage submissions are allowed only for the following devices:</p>
-<ul>
-<li><p>Portable media players</p></li>
-<li><p>Digital still cameras</p></li>
-<li><p>Cellular phones</p></li>
-<li><p>Printers or fax machines</p></li>
-<li><p>Scanners</p></li>
-<li><p>Computer systems</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Device Stage requires either Marketing Bullets or Status Items to be present in Behavior.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>:::no-loc text="Device Stage requires LaunchDeviceStageFromExplorer to be set to true for your device in WindowsInfo.xml.":::</p></td>
-<td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>:::no-loc text="Device Stage requires LaunchDeviceStageOnDeviceConnect to be set to True for your device in WindowsInfo.xml":::</p></td>
+:::no-loc text="Device Stage requires LaunchDeviceStageOnDeviceConnect to be set to True for your device in WindowsInfo.xml":::</p></td>
 <td><p>For more information, see the <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">Microsoft Device Experience Development Kit</a>.</p></td>
 </tr>
 <tr class="even">
@@ -312,7 +181,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <td><p>:::no-loc text="The [FileName] icon file in [FolderName] folder is missing image <a href="https://go.microsoft.com/fwlink/p/?LinkId=241658" data-raw-source="[Microsoft Device Experience Development Kit](https://go.microsoft.com/fwlink/p/?LinkId=241658)">MissingImageSize</a>.":::</p></td>
 <td><p>Verify that the image size is present. If not, add the image size to the icon, and then resubmit the package.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>256x256 image layers must be in the PNG compressed format. BMP format for this size is not allowed. If this size is present but in the BMP format, create the image in a PNG format for the size, add this image to the icon, and then resubmit the package.</p>
+**Note**<br/><p>256x256 image layers must be in the PNG compressed format. BMP format for this size is not allowed. If this size is present but in the BMP format, create the image in a PNG format for the size, add this image to the icon, and then resubmit the package.</p>
 </div>
 <div>
 
@@ -410,7 +279,7 @@ Here are some of the most common errors, listed in alphabetical order, and inclu
 <td><p>:::no-loc text="Unexpected folder found in [FolderName] folder- [ExtraFolder]":::</p></td>
 <td><p>There is an issue with your package structure.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>This error may occur if the device category in the DeviceInfo.xml file isn't set correctly.</p>
+**Note**<br/><p>This error may occur if the device category in the DeviceInfo.xml file isn't set correctly.</p>
 </div>
 <div>
 
