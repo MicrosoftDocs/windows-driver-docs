@@ -20,7 +20,7 @@ To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-po
 
 **Note**  Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 kernel-mode drivers must be signed by the Windows Hardware Dev Center Dashboard and the Windows Hardware Dev Center Dashboard requires an EV certificate. For more info about these changes, see [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification).
 
- 
+ [!CAUTION] Starting in 2021, the majority of cross-certificates will begin to expire. Once these cross-certificates expire, code signing certificates that chain to these cross-certificates will no longer be able to create new kernel mode digital signatures. This will affect all versions of Windows. For more information, see [Deprecation of software publisher certificates and commercial release certificates](deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md)
 
 ## Cross-Certificates
 
