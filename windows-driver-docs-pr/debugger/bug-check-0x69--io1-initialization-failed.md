@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The IO1\_INITIALIZATION\_FAILED bug check has a value of 0x00000069. This bug check indicates that the initialization of the I/O system failed for some reason.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## IO1\_INITIALIZATION\_FAILED Parameters

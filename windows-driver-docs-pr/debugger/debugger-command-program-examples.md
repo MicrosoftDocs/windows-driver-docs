@@ -100,7 +100,7 @@ This example illustrates the following features:
 
 - This program uses the MASM expression evaluator. However, in two places, the **@@c++( )** token appears. This token causes the program to use the C++ expression evaluator to parse the expression within the parentheses. This usage enables the program to use C++ structure tokens directly.
 
-- The **?** flag is used with the [**r (Registers)**](r--registers-.md) command. This flag assigns typed values to the pseudo-registers **$t0** and **$t1**. In the body of the loop, **$t1** has the type **ntdll!\_LDR\_DATA\_TABLE\_ENTRY\\***, so the program can make direct member references.
+- The **?** flag is used with the [**r (Registers)**](r--registers-.md) command. This flag assigns typed values to the pseudo-registers **$t0** and **$t1**. In the body of the loop, **$t1** has the type **ntdll!\_LDR\_DATA\_TABLE\_ENTRY\\\***, so the program can make direct member references.
 
 - The user-named aliases **$Base** and **$Mod** are used in this program. The dollar signs reduce the possibility that these aliases have been used previously in the current debugger session. The dollar signs are not necessary. The [**${/v: }**](-------alias-interpreter-.md) token interprets the alias literally, preventing it from being replaced if it was defined before the script is run. You can also use this token together with any block to prevent alias definitions before the block from being used.
 

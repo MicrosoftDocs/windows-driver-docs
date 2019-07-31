@@ -1,21 +1,14 @@
 - name: "Mobile broadband"
   href: index.md
 - name: "Overview"
-# Auto-expanded node
   items: 
-  - name: "Overview"
-    href: overview-b-mb.md
   - name: "Overview of mobile broadband"
     href: overview-of-mobile-broadband.md
   - name: "Mobile broadband WinRT API overview"
-# Auto-expanded node
     items: 
-    - name: "Mobile broadband WinRT API overview"
-      href: mobile-broadband-winrt-api-overview.md
-    - name: "List of mobile broadband Windows Runtime APIs"
-# Auto-expanded node
+    - name: "Overview of mobile broadband Windows Runtime APIs"
       items: 
-      - name: "List of mobile broadband Windows Runtime APIs"
+      - name: "Overview of mobile broadband Windows Runtime APIs"
         href: list-of-mobile-broadband-windows-runtime-apis.md
       - name: "Connection Profile API"
         href: connection-profile-api.md
@@ -32,10 +25,7 @@
       - name: "USSD API"
         href: ussd-api.md
     - name: "Common tasks for mobile broadband Windows Runtime APIs"
-# Auto-expanded node
       items: 
-      - name: "Common tasks for mobile broadband Windows Runtime APIs"
-        href: common-tasks-for-mobile-broadband-windows-runtime-apis.md
       - name: "Create a MobileBroadbandAccount object"
         href: create-a-mobilebroadbandaccount-object.md
       - name: "Create a MobileBroadbandDeviceInformation object"
@@ -71,10 +61,7 @@
       - name: "Unlock a device"
         href: unlock-a-device.md
     - name: "Best practices for using Mobile Broadband Windows Runtime API"
-# Auto-expanded node
       items: 
-      - name: "Best practices for using Mobile Broadband Windows Runtime API"
-        href: best-practices-for-using-mobile-broadband-windows-runtime-api.md
       - name: "Best practices for handling account arrival and removal events"
         href: best-practices-for-handling-account-arrival-and-removal-events.md
       - name: "Best practices for connecting to the mobile broadband network"
@@ -82,48 +69,34 @@
   - name: "Mobile operator hardware overview"
     href: mobile-operator-hardware-overview.md
 - name: "Using metadata to configure mobile broadband experiences"
-# Auto-expanded node
   items: 
-  - name: "Using metadata to configure mobile broadband experiences"
+  - name: "Overview of using metadata to configure mobile broadband experiences"
     href: using-metadata-to-configure-mobile-broadband-experiences.md
   - name: "Account provisioning"
     href: account-provisioning.md
   - name: "COSA/APN database"
-# Auto-expanded node
     items: 
-    - name: "COSA/APN database"
+    - name: "Introduction to COSA/APN database"
       href: cosa-apn-database.md
     - name: "APN schema definition"
       href: apn-schema-definition.md
     - name: "APN elements"
-# Auto-expanded node
       items: 
-      - name: "APN elements"
+      - name: "APN elements overview"
         href: apn-elements.md
-      - name: "OperatorList"
-# Auto-expanded node
-        items: 
+        items:
         - name: "OperatorList"
           href: operatorlist.md
         - name: "Operator"
           href: operator.md
-      - name: "HardwareIdList (APN element)"
-# Auto-expanded node
-        items: 
         - name: "HardwareIdList (APN element)"
           href: hardwareidlist-apnxml.md
         - name: "HardwareId (APN element)"
           href: hardwareid-apnxml.md
-      - name: "ConnectionInfoList"
-# Auto-expanded node
-        items: 
         - name: "ConnectionInfoList"
           href: connectioninfolist.md
         - name: "ConnectionInfo"
           href: connectioninfo.md
-      - name: "TrustedCertificateList"
-# Auto-expanded node
-        items: 
         - name: "TrustedCertificateList"
           href: trustedcertificatelist.md
         - name: "TrustedCertificate (APN element)"
@@ -135,25 +108,18 @@
     - name: "APN database overview"
       href: apn-database-overview.md
     - name: "COSA/APN database submission"
-# Auto-expanded node
       items: 
-      - name: "COSA/APN database submission"
-        href: cosa-apn-database-submission.md
       - name: "Planning your desktop COSA/APN database submission"
-# Auto-expanded node
-        items: 
-        - name: "Planning your desktop COSA/APN database submission"
-          href: planning-your-desktop-cosa-apn-database-submission.md
-        - name: "Desktop COSA/APN database settings"
-          href: desktop-cosa-apn-database-settings.md
+        href: planning-your-desktop-cosa-apn-database-submission.md
+      - name: "Desktop COSA/APN database settings"
+        href: desktop-cosa-apn-database-settings.md
       - name: "Testing your desktop COSA/APN database submission"
         href: testing-your-desktop-cosa-apn-database-submission.md
       - name: "Submitting the desktop COSA/APN database update"
         href: submitting-the-desktop-cosa-apn-database-update.md
   - name: "Service metadata"
-# Auto-expanded node
     items: 
-    - name: "Service metadata"
+    - name: "Service metadata overview"
       href: service-metadata.md
     - name: "Delivering experiences for MVNOs"
       href: delivering-experiences-for-mvnos.md
@@ -162,21 +128,16 @@
     - name: "Service identifier ownership updates"
       href: service-identifier-ownership-updates.md
     - name: "Service metadata package schema reference"
-# Auto-expanded node
       items: 
-      - name: "Service metadata package schema reference"
-        href: service-metadata-package-schema-reference.md
       - name: "MobileBroadbandInfo XML schema"
-# Auto-expanded node
         items: 
-        - name: "MobileBroadbandInfo XML schema"
+        - name: "MobileBroadbandInfo XML schema overview"
           href: mobilebroadbandinfo-xml-schema.md
         - name: "MobileBroadbandInfo XML schema definition"
           href: mobilebroadbandinfo-xml-schema-definition.md
         - name: "MobileBroadbandInfo XML elements"
-# Auto-expanded node
           items: 
-          - name: "MobileBroadbandInfo XML elements"
+          - name: "MobileBroadbandInfo XML elements list"
             href: mobilebroadbandinfo-xml-elements.md
           - name: "MobileBroadbandInfo"
             href: mobilebroadbandinfo.md
@@ -192,8 +153,7 @@
             href: allowstandarduserpinunlock.md
           - name: "AllowTethering"
             href: allowtethering.md
-        - name: "ProvisioningEngine"
-# Auto-expanded node
+        - name: "ProvisioningEngine element"
           items: 
           - name: "ProvisioningEngine"
             href: provisioningengine.md
@@ -208,16 +168,14 @@
         - name: "MobileBroadbandInfo XML example"
           href: mobilebroadbandinfo-xml-example.md
       - name: "PackageInfo XML schema"
-# Auto-expanded node
         items: 
-        - name: "PackageInfo XML schema"
+        - name: "PackageInfo XML schema overview"
           href: packageinfo-xml-schema.md
         - name: "PackageInfo XML schema definition"
           href: packageinfo-xml-schema-definition.md
         - name: "PackageInfo XML elements"
-# Auto-expanded node
           items: 
-          - name: "PackageInfo XML elements"
+          - name: "PackageInfo XML elements list"
             href: packageinfo-xml-elements.md
           - name: "PackageInfo"
             href: packageinfo.md
@@ -254,25 +212,20 @@
           - name: "Version"
             href: version.md
         - name: "PackageInfo XML data types"
-# Auto-expanded node
           items: 
-          - name: "PackageInfo XML data types"
-            href: packageinfo-xml-data-types.md
           - name: "GUIDType"
             href: guidtype-packageinfo.md
         - name: "PackageInfo XML Example"
           href: packageinfo-xml-example.md
       - name: "ServiceInfo XML schema"
-# Auto-expanded node
         items: 
-        - name: "ServiceInfo XML schema"
+        - name: "ServiceInfo XML schema overview"
           href: serviceinfo-xml-schema.md
         - name: "ServiceInfo XML Schema Definition"
           href: serviceinfo-xml-schema-definition.md
-        - name: "ServiceInfo XML Elements"
-# Auto-expanded node
+        - name: "ServiceInfo XML elements"
           items: 
-          - name: "ServiceInfo XML Elements"
+          - name: "ServiceInfo XML elements list"
             href: serviceinfo-xml-elements.md
           - name: "ServiceInfo"
             href: serviceinfo.md
@@ -295,25 +248,20 @@
           - name: "ServiceSpecificExtension"
             href: servicespecificextension.md
         - name: "ServiceInfo XML Data Types"
-# Auto-expanded node
           items: 
-          - name: "ServiceInfo XML Data Types"
-            href: serviceinfo-xml-data-types.md
           - name: "GUIDType"
             href: guidtype-serviceinfo.md
         - name: "ServiceInfo XML Example"
           href: serviceinfo-xml-example.md
       - name: "SoftwareInfo XML schema"
-# Auto-expanded node
         items: 
-        - name: "SoftwareInfo XML schema"
+        - name: "SoftwareInfo XML schema overview"
           href: softwareinfo-xml-schema.md
         - name: "SoftwareInfo XML Schema Definition"
           href: softwareinfo-xml-schema-definition.md
-        - name: "SoftwareInfo XML Elements"
-# Auto-expanded node
+        - name: "SoftwareInfo XML elements"
           items: 
-          - name: "SoftwareInfo XML Elements"
+          - name: "SoftwareInfo XML elements list"
             href: softwareinfo-xml-elements.md
           - name: "SoftwareInfo"
             href: softwareinfo.md
@@ -340,16 +288,14 @@
         - name: "SoftwareInfo XML Example"
           href: softwareinfo-xml-example.md
       - name: "WindowsInfo XML schema"
-# Auto-expanded node
         items: 
-        - name: "WindowsInfo XML schema"
+        - name: "WindowsInfo XML schema overview"
           href: windowsinfo-xml-schema.md
         - name: "WindowsInfo XML Schema Definition"
           href: windowsinfo-xml-schema-definition.md
-        - name: "WindowsInfo XML Elements"
-# Auto-expanded node
+        - name: "WindowsInfo XML elements"
           items: 
-          - name: "WindowsInfo XML Elements"
+          - name: "WindowsInfo XML elements list"
             href: windowsinfo-xml-elements.md
           - name: "WindowsInfo"
             href: windowsinfo.md
@@ -380,17 +326,12 @@
     - name: "Using mbidgenerator.exe to generate hardware IDs"
       href: using-mbidgeneratorexe-to-generate-hardware-ids.md
 - name: "Mobile operator scenarios"
-# Auto-expanded node
   items: 
-  - name: "Mobile operator scenarios"
-    href: mobile-operator-scenarios-b-mb.md
   - name: "Mobile Plans"
-# Auto-expanded node
     items:
-    - name: "Mobile Plans"
+    - name: "Mobile Plans overview"
       href: mobile-plans.md
-    - name: "Mobile Plans use cases"
-# Auto-expanded node
+    - name: "Mobile Plans scenarios"
       items:
       - name: "Mobile Plans use cases"
         href: mobile-plans-use-cases.md
@@ -409,9 +350,9 @@
     - name: "Launch"
       href: mobile-plans-launch.md
     - name: "Appendix"
-      href: mobile-plans-appendix.md
-# Auto-expanded node
       items:
+      - name: "General appendix"
+        href: mobile-plans-appendix.md
       - name: "Legacy callback notifications"
         href: mobile-plans-legacy-callback-notifications.md
   - name: "eSIM management on Windows for mobile operators and OEMs"
@@ -421,9 +362,8 @@
   - name: "Developing apps using multiple PDP contexts"
     href: developing-apps-using-multiple-pdp-contexts.md
   - name: "Developing SMS apps"
-# Auto-expanded node
     items: 
-    - name: "Developing SMS apps"
+    - name: "Introduction to developing SMS apps"
       href: developing-sms-apps.md
     - name: "SMS device storage limits"
       href: sms-device-storage-limits.md
@@ -438,10 +378,7 @@
     - name: "Send SMS by using custom character sets"
       href: send-sms-by-using-custom-character-sets.md
     - name: "Send SMS by using the text-mode interface"
-# Auto-expanded node
       items: 
-      - name: "Send SMS by using the text-mode interface"
-        href: send-sms-by-using-the-text-mode-interface.md
       - name: "Calculate characters and segments of a draft SMS"
         href: calculate-characters-and-segments-of-a-draft-sms.md
       - name: "Specify mobile telephone numbers"
@@ -453,23 +390,20 @@
     - name: "Set SMS declarations"
       href: set-sms-declarations.md
   - name: "Enabling mobile broadband experiences using portable hotspot devices"
-# Auto-expanded node
     items: 
-    - name: "Enabling mobile broadband experiences using portable hotspot devices"
+    - name: "Introduction to enabling mobile broadband experiences using portable hotspot devices"
       href: enabling-mobile-broadband-experiences-using-portable-hotspot-devices.md
     - name: "Communication channels"
-# Auto-expanded node
       items: 
-      - name: "Communication channels"
+      - name: "Peronal hotspot communication channels"
         href: communication-channels.md
       - name: "Network cost information element"
         href: network-cost-information-element.md
       - name: "PnP-X for mobile broadband apps"
         href: pnp-x-for-mobile-broadband-apps.md
   - name: "Enabling mobile operator notifications and system events"
-# Auto-expanded node
     items: 
-    - name: "Enabling mobile operator notifications and system events"
+    - name: "Introduction to enabling mobile operator notifications and system events"
       href: enabling-mobile-operator-notifications-and-system-events.md
     - name: "Develop an app to handle the MobileOperatorNotification event"
       href: develop-an-app-to-handle-the-mobileoperatornotification-event.md
@@ -478,15 +412,11 @@
     - name: "Mobile operator notification scenarios"
       href: mobile-operator-notification-scenarios.md
   - name: "Integrating Windows with wireless hotspots"
-# Auto-expanded node
     items: 
-    - name: "Integrating Windows with wireless hotspots"
+    - name: "Introduction to integrating Windows with wireless hotspots"
       href: integrating-windows-with-wireless-hotspots.md
     - name: "Get started with a hotspot authentication app"
-# Auto-expanded node
       items: 
-      - name: "Get started with a hotspot authentication app"
-        href: get-started-with-a-hotspot-authentication-app.md
       - name: "Review the hotspot authentication sample"
         href: review-the-hotspot-authentication-sample.md
       - name: "Update the hotspot authentication sample"
@@ -494,16 +424,12 @@
       - name: "Verify background events"
         href: verify-background-events.md
     - name: "Hotspot authentication methods"
-# Auto-expanded node
       items: 
-      - name: "Hotspot authentication methods"
-        href: hotspot-authentication-methods.md
       - name: "Captive portals"
         href: captive-portals.md
       - name: "WISPr authentication"
-# Auto-expanded node
         items: 
-        - name: "WISPr authentication"
+        - name: "WISPr authentication overview"
           href: wispr-authentication.md
         - name: "Provisioning for hotspot authentication"
           href: provisioning-for-hotspot-authentication.md
@@ -518,15 +444,11 @@
   - name: "Understanding and configuring Windows Connection Manager"
     href: understanding-and-configuring-windows-connection-manager.md
   - name: "UWP mobile broadband apps"
-# Auto-expanded node
     items: 
-    - name: "UWP mobile broadband apps"
+    - name: "UWP mobile broadband apps overview"
       href: UWP-mobile-broadband-apps.md
     - name: "Mobile broadband app scenarios"
-# Auto-expanded node
       items: 
-      - name: "Mobile broadband app scenarios"
-        href: mobile-broadband-app-scenarios.md
       - name: "Account management"
         href: account-management.md
       - name: "App startup"
@@ -544,9 +466,8 @@
       - name: "Premium services"
         href: premium-services.md
     - name: "Designing the user experience of a mobile broadband app"
-# Auto-expanded node
       items: 
-      - name: "Designing the user experience of a mobile broadband app"
+      - name: "Introduction to designing the user experience of a mobile broadband app"
         href: designing-the-user-experience-of-a-mobile-broadband-app.md
       - name: "Design the landing page of a mobile broadband app"
         href: design-the-landing-page-of-a-mobile-broadband-app.md

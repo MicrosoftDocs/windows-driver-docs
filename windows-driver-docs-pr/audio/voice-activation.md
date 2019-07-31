@@ -2,7 +2,7 @@
 title: Voice Activation
 description: Cortana, the Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation.
 ms.assetid: 0684EF32-AA76-418B-9027-1C067A8140E3
-ms.date: 12/21/2018
+ms.date: 07/02/2018
 ms.localizationpriority: medium
 ---
 
@@ -381,7 +381,6 @@ This feature allows for the device to be always listening for the user’s voice
 The audio stack is responsible for communicating the wake data (speaker ID, keyword trigger, confidence level) as well as notifying interested clients that the keyword has been detected.
 
 
+**Validation on Modern Standby Systems**
 
-
-
-
+WoV from a system idle state can be validated on [Modern Standby](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) systems using the [Modern Standby Wake on Voice Basic Test on AC-power Source](https://docs.microsoft.com/windows-hardware/test/hlk/testref/69df7cf2-6024-4eee-92ee-1506480614ee) and the [Modern Standby Wake on Voice Basic Test on DC-power Source](https://docs.microsoft.com/windows-hardware/test/hlk/testref/614ffb93-eced-45ab-bf7b-e09291a97fd2) in the [HLK](https://docs.microsoft.com/windows-hardware/test/hlk/). These tests check that the system has a hardware keyword spotter (HW-KWS), is able to enter the Deepest Runtime Idle Platform State (DRIPS) and is able to wake from Modern Standby on voice command with system resume latency of less than or equal to one second. 

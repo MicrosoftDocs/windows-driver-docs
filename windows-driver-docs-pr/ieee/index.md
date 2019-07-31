@@ -10,13 +10,10 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+author: EliotSeattle
 ---
 
 # IEEE 1394 bus driver design guide
-
-
-
-
 
 This section includes:
 
@@ -35,11 +32,3 @@ This section includes:
 [1394 Samples and Diagnostic Tools](https://docs.microsoft.com/windows-hardware/drivers/ieee/1394-samples-and-diagnostic-tools)
 
 [IEC-61883 Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ieee/iec-61883-client-drivers)
-
- 
-
- 
-
-
-
-

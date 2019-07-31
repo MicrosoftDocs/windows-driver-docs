@@ -43,23 +43,23 @@ All custom APOs must have the following general characteristics:
 -   An APO can modify only the audio data that is passed to it through its [**IAudioProcessingObjectRT::APOProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) routine. The APO cannot change the settings of the underlying logical device, including its KS topology.
 -   In addition to IUnknown, APOs must expose the following interfaces:
 
-    • [IAudioProcessingObject](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject). An interface that handles setup tasks such as initialization and format negotiation.
+    - [IAudioProcessingObject](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject). An interface that handles setup tasks such as initialization and format negotiation.
 
-    • [IAudioProcessingObjectConfiguration](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration). The configuration interface.
+    - [IAudioProcessingObjectConfiguration](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration). The configuration interface.
 
-    • [IAudioProcessingObjectRT](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). A real-time interface that handles audio processing. It can be called from a real-time processing thread.
+    - [IAudioProcessingObjectRT](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). A real-time interface that handles audio processing. It can be called from a real-time processing thread.
 
-    • [IAudioSystemEffects](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). The interface that makes the audio engine recognize a DLL as a systems effects APO.
+    - [IAudioSystemEffects](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). The interface that makes the audio engine recognize a DLL as a systems effects APO.
 
--   All APOs must have real-time system compatibility. This means that:
+- All APOs must have real-time system compatibility. This means that:
 
-    • All methods that are members of real-time interfaces must be implemented as nonblocking members. They must not block, use paged memory, or call any blocking system routines.
+  - All methods that are members of real-time interfaces must be implemented as nonblocking members. They must not block, use paged memory, or call any blocking system routines.
 
-    • All buffers that are processed by the APO must be nonpageable. All code and data in the process path must be nonpageable.
+  - All buffers that are processed by the APO must be nonpageable. All code and data in the process path must be nonpageable.
 
-    • APOs should not introduce significant latency into the audio processing chain.
+  - APOs should not introduce significant latency into the audio processing chain.
 
--   Custom APOs must not expose the IAudioProcessingObjectVBR interface.
+- Custom APOs must not expose the IAudioProcessingObjectVBR interface.
 
 **Note**  For detailed information about the required interfaces, see the Audioenginebaseapo.h and Audioenginebaseapo.idl files in the Windows Kits\\&lt;build number&gt;\\Include\\um folder.
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The DRIVER\_RETURNED\_STATUS\_REPARSE\_FOR\_VOLUME\_OPEN bug check has a value of 0x000000F9. This indicates that a driver returned STATUS\_REPARSE to an IRP\_MJ\_CREATE request with no trailing names.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## DRIVER\_RETURNED\_STATUS\_REPARSE\_FOR\_VOLUME\_OPEN Parameters
