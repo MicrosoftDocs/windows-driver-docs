@@ -329,12 +329,16 @@
   items: 
   - name: "Mobile Plans"
     items:
-    - name: "Mobile Plans overview"
-      href: mobile-plans.md
-    - name: "Mobile Plans scenarios"
+    - name: "Mobile Plans description"
       items:
-      - name: "Mobile Plans use cases"
+      - name: "Mobile Plans overview"
+        href: mobile-plans.md
+      - name: "Mobile Plans sytem architecture"
+        href: mobile-plans-system-architecture.md
+      - name: "Mobile Plans scenarios"
         href: mobile-plans-use-cases.md
+    - name: "Mobile Plans features"
+      items:
       - name: "Mobile operator web portal"
         href: mobile-plans-web-portal.md
       - name: "Callback notifications"
