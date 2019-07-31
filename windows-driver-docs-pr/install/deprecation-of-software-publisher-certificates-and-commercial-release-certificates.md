@@ -71,7 +71,7 @@ The cross certificate chain can be viewed (if present) by running the command "s
 #### How can we automate Microsoft Test Signing to work with our build processes?
 Hardware Dev Center provides an API that you can call through your build processes. Below is documentation, and some examples how to call into the API
 
-[Hardware Dev Center API](/dashboard/dashboard-api.md)
+[Hardware Dev Center API](../dashboard/dashboard-api.md)
 
 [GitHub Examples](https://github.com/Microsoft/SDCM)
 
