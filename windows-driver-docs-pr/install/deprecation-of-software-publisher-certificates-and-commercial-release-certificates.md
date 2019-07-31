@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Reason for Deprecating Software Publisher Certificates and Commercial Release Certificates
+## Reason for Deprecating Software Publisher Certificates and Commercial Release Certificates
 The Microsoft Trusted Root Program has changed their policies to no longer give roots the ability to issue certificates with the ability to kernel mode code sign. You can view the policy here. Existing roots that had kernel mode code signing capabilities will continue working until they expire. However, the majority of these will expire in 2021. Below is a list of roots that will be expiring in 2021. 
 
 |Common Name| Expiration date|
@@ -40,7 +40,7 @@ The Microsoft Trusted Root Program has changed their policies to no longer give 
 |COMODO ECC Certification Authority		                            |4/11/2021|
 
 
-# Frequently Asked Questions
+## Frequently Asked Questions
 #### What alternatives to cross signed certificates are available for testing drivers?
 For all options below [TESTSIGNING boot option must be enabled](the-testsigning-boot-configuration-option.md)
 
