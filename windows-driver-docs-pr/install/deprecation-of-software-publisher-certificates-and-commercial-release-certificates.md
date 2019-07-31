@@ -9,6 +9,7 @@ keywords:
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
+# Deprecation of Software Publisher Certificates and Commercial Release Certificates
 
 ## Reason for Deprecating Software Publisher Certificates and Commercial Release Certificates
 The Microsoft Trusted Root Program has changed their policies to no longer give roots the ability to issue certificates with the ability to kernel mode code sign. You can view the policy here. Existing roots that had kernel mode code signing capabilities will continue working until they expire. However, the majority of these will expire in 2021. Below is a list of roots that will be expiring in 2021. 
@@ -71,7 +72,7 @@ The cross certificate chain can be viewed (if present) by running the command "s
 #### How can we automate Microsoft Test Signing to work with our build processes?
 Hardware Dev Center provides an API that you can call through your build processes. Below is documentation, and some examples how to call into the API
 
-[Hardware Dev Center API](/dashboard/dashboard-api.md)
+[Hardware Dev Center API](../dashboard/dashboard-api.md)
 
 [GitHub Examples](https://github.com/Microsoft/SDCM)
 
