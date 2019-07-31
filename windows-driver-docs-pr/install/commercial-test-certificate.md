@@ -10,7 +10,8 @@ ms.localizationpriority: medium
 
 # Commercial Test Certificate
 
- [!CAUTION] Starting in 2021, the majority of cross-certificates will begin to expire. Once these cross-certificates expire, code signing certificates that chain to these cross-certificates will no longer be able to create new kernel mode digital signatures. This will affect all versions of Windows. For more information, see [Deprecation of software publisher certificates and commercial release certificates](deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md)
+ > [!CAUTION] 
+ > Starting in 2021, the majority of cross-certificates will begin to expire. Once these cross-certificates expire, code signing certificates that chain to these cross-certificates will no longer be able to create new kernel mode digital signatures. This will affect all versions of Windows. For more information, see [Deprecation of software publisher certificates and commercial release certificates](deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md)
  
 A *commercial test certificate* refers to a digital certificate that a publisher obtains from a trusted, third-party, commercial certification authority (CA) that is a member of the Microsoft Root Certificate Program. GTE and VeriSign, Inc. are two examples of such a CA.
 

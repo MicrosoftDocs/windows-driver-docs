@@ -44,27 +44,30 @@ The Microsoft Trusted Root Program has changed their policies to no longer give 
 #### What alternatives to cross signed certificates are available for testing drivers?
 For all options below [TESTSIGNING boot option must be enabled](the-testsigning-boot-configuration-option.md)
 
-#### What will happen to my existing signed drivers? 
-As long as these drivers are timestamped before the expiration date of the intermediate, they will continue working.
+#### What will happen to my existing signed driver packages? 
+As long as these driver packages are timestamped before the expiration date of the intermediate, they will continue working.
 - [MakeCert Process](makecert-test-certificate.md)
 - [WHQL Test Signature Program](whql-test-signature-program.md)
 - [Enterprise CA Process](enterprise-ca-test-certificate.md)
 
-#### Is there a way to run production drivers without exposing it to Microsoft? 
-No, all production drivers must be submitted to, and signed by Microsoft. 
+#### Is there a way to run production driver packages without exposing it to Microsoft? 
+No, all production driver packages must be submitted to, and signed by Microsoft. 
 
-#### Does every new version of my driver need to be resubmitted to hardware dev center?
-Yes, every time a driver is rebuilt, it must be re-signed by Microsoft
+#### Does every new version of my driver package need to be resubmitted to hardware dev center?
+Yes, every time a driver package is rebuilt, it must be re-signed by Microsoft
 
-#### Will we continue to be able to sign code with our existing 3rd party issued certificates after 2021? 
+#### Will we continue to be able to sign non-driver code with our existing 3rd party issued certificates after 2021?
 Yes, these certificates will continue to work until they expire. Code signed by these certificates will only be able to run in user mode, and will not be allowed to run in the kernel, unless it has a valid Microsoft signature.
 
 #### Will I be able to continue using my EV certificate for signing submissions to Hardware Dev Center?  
-Yes, EV certificates will continue to work until they expire. Only new kernel mode code signed by these EV certificates will no longer validate after the expiration. 
+Yes, EV certificates will continue to be able to sign submission packages for Hardware Dev Center, until they expire. Only driver packages signed by these EV certificates will no longer validate after the expiration. 
 
 #### How do I know if my signing certificate will be impacted by these expirations? 
+If your Cross Certificate Chain ends in the "Microsoft Code Verification Root", then your signing certificate will be affected. 
 
+The cross certificate chain can be viewed (if present) by running the command "signtool verify /v /kp "mydriver.sys"
 
+![[Finding Cross Certificate Chain]](../images/signtoolcrosssigexample.png)
 #### How can we automate Microsoft Test Signing to work with our build processes?
 Hardware Dev Center provides an API that you can call through your build processes. Below is documentation, and some examples how to call into the API
 
