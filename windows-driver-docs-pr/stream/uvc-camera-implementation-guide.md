@@ -433,7 +433,7 @@ If the first media type is used for Face Auth, the value must be: 0xFFFF0000.
 
 ### Microsoft OS Extended Descriptor 2.0 Specification
 
-MSOS Extended Descriptor 2.0 can be used to define the registry values to add Face Auth Profile support. This is done using the [Microsoft OS 2.0 Registry Property Descriptor](#microsoft-os-2.0-registry-property-descriptor).
+MSOS Extended Descriptor 2.0 can be used to define the registry values to add Face Auth Profile support. This is done using the [Microsoft OS 2.0 Registry Property Descriptor](#microsoft-os-20-registry-property-descriptor).
 
 For the UVC-CPV2FaceAuth registry entry, the following shows a sample MSOS 2.0 descriptor set:
 
@@ -706,7 +706,7 @@ The Header Section describes a single custom property (Face Auth Profile).
 
 #### MS OS Descriptor 2.0
 
-MSOS Extended Descriptor 2.0 can be used to define the registry values to add FSSensorOrientation support. This is done using the [Microsoft OS 2.0 Registry Property Descriptor](#microsoft-os-2.0-registry-property-descriptor).
+MSOS Extended Descriptor 2.0 can be used to define the registry values to add FSSensorOrientation support. This is done using the [Microsoft OS 2.0 Registry Property Descriptor](#microsoft-os-20-registry-property-descriptor).
 
 For the UVC-FSSensorOrientation registry entry, the following shows a sample MSOS 2.0 descriptor set:
 
