@@ -13,73 +13,60 @@ ms.technology: windows-devices
 
 # Mobile Plans overview
 
-## Introduction
+## Purpose
 
-Mobile Plans is the program in Windows 10, version 1803 and later that enables mobile operators (MOs) and other service providers to sell plans to end users.
+Mobile Plans is an application in Windows 10 that helps end users to connect their Windows device to cellular networks through mobile operators. The purpose of Mobile Plans is to:
 
-Mobile Plans enables end users to perform the following:
+- Streamline the user experience for activation of cellular-enabled PCs sold in all channels.
+- Simplify the provisioning process through the seamless installation of eSIM profiles.
+- Enable a direct relationship between the customer and the mobile operator.
 
-- Install and activate an eSIM profile.
-- Activate a device on a mobile operator subscription with either prepaid (PAYG) or postpaid plans.
-- Top up subscriptions when out of data and the only connectivity available is mobile connectivity.
+Mobile Plans is supported in Windows 10, version 1803 and later.
 
-## Definition of terms
+## User experience
 
-| Term | Description |
-| --- | --- |
-| Contoso Cellular | A fictional mobile operator used for explanatory purposes in these topics. |
-| COSA database | Country and Operator Settings Asset. This is a database that contains mobile operator connectivity settings to be used in Windows devices. For more info about COSA, see [COSA Overview](cosa-overview.md). |
-| Mobile Plans | The name of this project. |
-| Mobile Plans app | The Microsoft app to enable Mobile Plans on Windows 10 devices. |
-| Mobile Plans service | The cloud service that enables the Mobile Plans solution. |
-| RPS | Requests Per Second. |
+The following sections illustrate a typical customer journey using the Mobile Plans app.
 
-## Project overview
+###Discovery and Launch
 
-Mobile Plans project integration is composed of four stages, each of which has [high-level tasks](mobile-plans-appendix.md#high-level-integration-schedule). Some of these high-level tasks are for mobile operators, while others are joint tasks where Microsoft works in coordination with mobile operators.
+The Mobile Plans app can be launched from a number of different entry points. The most common entry point is the network flyout, as this is where users typically manage their active network interfaces in Windows 10. The cellular interface can be expanded to show status of the cellular network. In the example below, the device has no SIM profile activated, so the user can see a call to action to “Connect with a data plan.” Clicking this link will launch the Mobile Plans app.
 
-| Stage | Description |
-| --- | --- |
-| **Feasiblity** | The mobile operator assesses the Mobile Plans solution, digests this documentation, and reaches out to their Microsoft representative with questions as needed. |
-| **Implementation** | The mobile operator develops their solution according to their user cases and requests Mobile Plans configurations and Windows configurations as needed. |
-| **Integration** | The mobile operator is enabled in Mobile Plans to run end-to-end validation. |
-| **Launch** | The mobile operator is commercially launched to the market through Mobile Plans. |
+See this section for more details on behavior of the network flyout.
 
-## Functional overview
+<img src="images/network_flyout_get_connected.png" alt="Network flyout get connected" title="Network flyout get connected" />
 
-The following diagram shows a high-level view of how a Windows 10 device uses Mobile Plans to interact with different services and solutions to successfully activate a subscription and install an eSIM profile.
+The app can also be launched from a toast notification. Clicking the “Get connected” button will launch the Mobile Plans app.
 
-The following table describes each component of the diagram.
+See this section for more details on the behavior of toast notifications.
 
-| Component | Description |
-| --- | --- |
-| Windows 10 device | An eSIM-capable “Always Connected PC” running the latest version of Windows 10. |
-| Microsoft Mobile Plans Service | A service endpoint responsible for providing mobile operator information, such as an MO web portal URL and visual assets, to the Windows 10 device. |
-| Mobile Plans Web API & Web Portal | The endpoint in the mobile operator network that is responsible for hosting the web service API and web portal that allow Windows 10 devices to access the Mobile Plans experience. |
-| SM-DP+ server | Responsible for creating, generating, and managing eSIM profiles that belong to a mobile operator. |
+<img src="images/toast_notification_promotion.png" alt="Toast notification promotion" title="Toast notification promotion" />
 
-<img src="images/mobile_plans_functional_overview.png" alt="Mobile Plans functional overview" title="Mobile Plans functional overview" width="400" />
+The Mobile Plans app can also be launched from the Settings app, or from the Start menu.
 
-A typical functional flow for the preceding diagram is as follows:
+###Select provider page
 
-1. The Mobile Plans app is launched on the Windows 10 device and retrieves basic functionality information from the Mobile Plans Service.
-   - The Mobile Plans app reaches out to the Mobile Plans service to retrieve MO-specific information.
-2. The Mobile Plans app launches the MO Web portal and passes relevant parameters to the MO portal.
-3. The mobile operator requests an eSIM profile from the SM-DP+ server. The eSIM activation code is returned to the Mobile Plans mobile operator web portal.
-4. Once control is returned to the Mobile Plans app on the Windows 10 device, the eSIM activation code is provided to the Windows device.
-5. The Windows 10 device uses the activation code and contacts the SM-DP+ server to retrieve the eSIM profile. The eSIM profile is now installed and activated on the Windows 10 device.
-6. The Windows 10 device is connected to the mobile operator network.
+Once the app has launched, the user has the option to choose their mobile operator. The app displays a list of available mobile operators based on the user’s current location.
 
-Windows uses the Mobile Plans app as a client to consume the overall Mobile Plans experience. This application contacts the MO Web portal and handles all interactions with it. Additionally, once the activation code has been returned, the Mobile Plans app is responsible for downloading, installing, and activating the eSIM profile.
+<img src="images/select_provider_page.png" alt="Select provider page" title="Select provider page" />
 
-## Get started
+###Mobile operator gateway page
 
-To get started with the Mobile Plans experience, please reach your Microsoft representative to discuss the project implementation. Follow the steps below for a guide to understand the solution in technical detail.
+If the user has chosen a mobile operator, the app shows that operator’s gateway page. This page is hosted by the app. The user can click the button to continue.
 
-1. [Mobile operator use cases](mobile-plans-use-cases.md)
-2. [Integration](mobile-plans-integration.md)
-3. [Launch](mobile-plans-launch.md)
+See this section for more details on the behavior and customization of the gateway page.
 
-See these topics for additional information about Mobile Plans:
+<img src="images/mobile_operator_gateway_page.png" alt="Mobile operator gateway page" title="mobile operator gateway page" />
 
-- [Appendix](mobile-plans-appendix.md)
+###Mobile operator web portal
+
+Once the user has clicked the button to continue, the app will load the mobile operator’s web portal. The web content is displayed in a browser control hosted by the app, and the user can use web navigation to browse the portal.
+
+See this section for a description of the mobile operator web portal.
+
+<img src="images/mobile_operator_web_portal.png" alt="Mobile operator web portal" title="mobile operator web portal" />
+
+###Activation
+
+After completing the signup flow on the web portal, the mobile operator can trigger activation based upon the type of type of signup. This could include download and installation of a new eSIM profile, or it could be the addition of new balance to an active account. Once the activation is complete, the web portal can invoke a popup to let the user know the process is complete.
+
+<img src="images/mobile_operator_activation.png" alt="Mobile operator activation" title="mobile operator activation" />
