@@ -6,7 +6,7 @@ keywords:
 - Trusted Root Certification Authorities certificate store WDK
 - Trusted Publishers certificate store WDK
 
-ms.date: 04/20/2017
+ms.date: 07/31/2019
 ms.localizationpriority: medium
 ---
 # Deprecation of Software Publisher Certificates and Commercial Release Certificates
@@ -68,7 +68,8 @@ If your Cross Certificate Chain ends in the "Microsoft Code Verification Root", 
 
 The cross certificate chain can be viewed (if present) by running the command "signtool verify /v /kp "mydriver.sys"
 
-![[Finding Cross Certificate Chain]](../images/signtoolcrosssigexample.png)
+![[Finding Cross Certificate Chain]](images/signtoolcrosssigexample.png)
+
 #### How can we automate Microsoft Test Signing to work with our build processes?
 Hardware Dev Center provides an API that you can call through your build processes. Below is documentation, and some examples how to call into the API
 
