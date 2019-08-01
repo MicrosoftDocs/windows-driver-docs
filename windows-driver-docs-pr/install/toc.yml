@@ -274,6 +274,8 @@
       href: software-publisher-certificate.md
     - name: "Commercial Release Certificate"
       href: commercial-release-certificate.md
+    - name: "Deprecation of Software Publisher Certificates and Commercial Release Certificates"
+      href: deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md  
     - name: "Release-Signing Driver Packages"
       href: release-signing-driver-packages.md
     - name: "Release-Signing a Driver File"
