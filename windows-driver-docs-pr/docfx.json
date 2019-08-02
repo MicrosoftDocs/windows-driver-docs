@@ -45,6 +45,7 @@
       "titleSuffix": "Windows drivers",
       "ms.prod": "windows-hardware",
       "ms.technology": "windows-devices",
+      "author": "windows-driver-content",
       "ms.author": "windowsdriverdev",
       "ms.topic": "article",
       "_op_documentIdPathDepotMapping": {
