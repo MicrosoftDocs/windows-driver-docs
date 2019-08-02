@@ -73,10 +73,10 @@ dc2wmiparser [/f File] [/t Time]
 
 The parameters have the following meanings:
 
-<span id="_________fFile"></span><span id="_________ffile"></span><span id="_________FFILE"></span> **/f***File*  
+<span id="_________fFile"></span><span id="_________ffile"></span><span id="_________FFILE"></span> **/f**_File_  
 Specifies the full path and filename of the log file to be written. Relative paths will be taken relative to the current directory. If this is omitted, the file name dc2verifier.act in the current directory will be used.
 
-<span id="_tTime"></span><span id="_ttime"></span><span id="_TTIME"></span>**/t***Time*  
+<span id="_tTime"></span><span id="_ttime"></span><span id="_TTIME"></span>**/t**_Time_  
 Specifies the length of time, in minutes, that DC2WMIParser will continue to run. If *Time* equals zero, DC2WMIParser will record all the WMI IRP information that has already been stored by Driver Verifier and then exit. If *Time* is set to a positive value, DC2WMIParser will continue to run for the specified length of time, storing new information as it arrives. The default is zero.
 
 ### <span id="format_of_dc2wmiparser_log_files"></span><span id="FORMAT_OF_DC2WMIPARSER_LOG_FILES"></span>Format of DC2WMIParser Log Files
