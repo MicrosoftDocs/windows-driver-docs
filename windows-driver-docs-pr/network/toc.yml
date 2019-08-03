@@ -713,19 +713,13 @@
       - name: "Keywords Not Displayed in the User Interface"
         href: keywords-not-displayed-in-the-user-interface.md
   - name: "NDIS Protocol Drivers"
-# Auto-expanded node
     items: 
-    - name: "NDIS Protocol Drivers"
-      href: ndis-protocol-drivers.md
     - name: "Roadmap for Developing NDIS Protocol Drivers"
       href: roadmap-for-developing-ndis-protocol-drivers.md
     - name: "Introduction to NDIS Protocol Drivers"
       href: introduction-to-ndis-protocol-drivers.md
     - name: "Writing NDIS Protocol Drivers"
-# Auto-expanded node
       items: 
-      - name: "Writing NDIS Protocol Drivers"
-        href: writing-ndis-protocol-drivers.md
       - name: "Initializing a Protocol Driver"
         href: initializing-a-protocol-driver.md
       - name: "Protocol Binding States and Operations"
@@ -734,8 +728,7 @@
         href: binding-to-an-adapter.md
       - name: "Unbinding from an Adapter"
         href: unbinding-from-an-adapter.md
-      - name: "Starting and Pausing a Binding"
-# Auto-expanded node
+      - name: "Starting and Pausing a Protocol Binding"
         items: 
         - name: "Starting and Pausing a Binding"
           href: starting-and-pausing-a-binding.md
@@ -745,8 +738,7 @@
           href: pausing-a-binding.md
       - name: "Configuring Optional Protocol Driver Services"
         href: configuring-optional-protocol-driver-services.md
-      - name: "Protocol Driver Send and Receive Operations"
-# Auto-expanded node
+      - name: "Transferring network data in a protocol driver"
         items: 
         - name: "Protocol Driver Send and Receive Operations"
           href: protocol-driver-send-and-receive-operations.md
@@ -756,8 +748,7 @@
           href: sending-data-from-a-protocol-driver.md
         - name: "Receiving Data in Protocol Drivers"
           href: receiving-data-in-protocol-drivers.md
-      - name: "Protocol Driver OID Requests"
-# Auto-expanded node
+      - name: "Protocol Driver OIDs"
         items: 
         - name: "Protocol Driver OID Requests"
           href: protocol-driver-oid-requests.md
@@ -774,10 +765,7 @@
     - name: "NDIS protocol driver installation"
       href: ndis-protocol-driver-installation.md
     - name: "Protocol Driver Design Concepts"
-# Auto-expanded node
       items: 
-      - name: "Protocol Driver Design Concepts"
-        href: protocol-driver-design-concepts.md
       - name: "Pageable and Discardable Code in a Protocol Driver"
         href: pageable-and-discardable-code-in-a-protocol-driver.md
       - name: "Protocol Driver Reset Operations"
@@ -791,16 +779,12 @@
       - name: "Status Indications in a Protocol Driver"
         href: status-indications-in-a-protocol-driver.md
   - name: "NDIS Filter Drivers"
-# Auto-expanded node
     items: 
-    - name: "NDIS Filter Drivers"
-      href: ndis-filter-drivers2.md
     - name: "Roadmap for Developing NDIS Filter Drivers"
       href: roadmap-for-developing-ndis-filter-drivers.md
     - name: "Introduction to NDIS Filter Drivers"
-# Auto-expanded node
       items: 
-      - name: "Introduction to NDIS Filter Drivers"
+      - name: "Getting started with NDIS Filter Drivers"
         href: introduction-to-ndis-filter-drivers.md
       - name: "Filter Driver Characteristics"
         href: filter-driver-characteristics.md
@@ -811,10 +795,7 @@
       - name: "Mandatory Filter Drivers"
         href: mandatory-filter-drivers.md
     - name: "Writing NDIS Filter Drivers"
-# Auto-expanded node
       items: 
-      - name: "Writing NDIS Filter Drivers"
-        href: writing-ndis-filter-drivers.md
       - name: "Initializing a Filter Driver"
         href: initializing-a-filter-driver.md
       - name: "Unloading a Filter Driver"
@@ -825,8 +806,7 @@
         href: attaching-a-filter-module.md
       - name: "Detaching a Filter Module"
         href: detaching-a-filter-module.md
-      - name: "Starting and Pausing a Filter Module"
-# Auto-expanded node
+      - name: "Starting and Pausing Filter Modules"
         items: 
         - name: "Starting and Pausing a Filter Module"
           href: starting-and-pausing-a-filter-module.md
@@ -838,8 +818,7 @@
         href: data-bypass-mode.md
       - name: "Configuring Optional Filter Driver Services"
         href: configuring-optional-filter-driver-services.md
-      - name: "Filter Module Send and Receive Operations"
-# Auto-expanded node
+      - name: "Transferring network data in a filter module"
         items: 
         - name: "Filter Module Send and Receive Operations"
           href: filter-module-send-and-receive-operations.md
@@ -851,8 +830,7 @@
           href: canceling-a-send-request-in-a-filter-driver.md
         - name: "Receiving Data in a Filter Driver"
           href: receiving-data-in-a-filter-driver.md
-      - name: "Filter Module OID Requests"
-# Auto-expanded node
+      - name: "Filter Module OIDs"
         items: 
         - name: "Filter Module OID Requests"
           href: filter-module-oid-requests.md
@@ -868,15 +846,13 @@
         href: filter-module-pnp-event-notifications.md
       - name: "Filter Module Status Indications"
         href: filter-module-status-indications.md
-    - name: "NDIS Filter Driver Installation"
-# Auto-expanded node
+    - name: "Installing NDIS filter drivers"
       items: 
       - name: "NDIS Filter Driver Installation"
         href: ndis-filter-driver-installation.md
       - name: "Specifying Filter Driver Binding Relationships"
         href: specifying-filter-driver-binding-relationships.md
-      - name: "INF File Settings for Filter Drivers"
-# Auto-expanded node
+      - name: "Filter Drivers INF file settings"
         items: 
         - name: "INF File Settings for Filter Drivers"
           href: inf-file-settings-for-filter-drivers.md
