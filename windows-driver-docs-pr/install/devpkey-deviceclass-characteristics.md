@@ -54,9 +54,7 @@ The DEVPKEY_DeviceClass_Characteristics device property represents the default d
 Remarks
 -------
 
-You can set the value of DEVPKEY_DeviceClass_Characteristics when an installation application installs a device setup class. For information about how to install a device setup class and setting this property, see [**INF ClassInstall32 Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section) and the information about the registry entry value **DeviceCharacteristics** that is provided in the "Special *value-entry-name* Keywords" section of [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
-
-The value of DEVPKEY_DeviceClass_Characteristics is a bitwise OR of the FILE_DEVICE_*Xxx* flags that are defined in *Wdm.h* and *Ntddk.h*. For more information about device characteristics, see the *DeviceCharacteristics* parameter of the [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice) function.
+DEVPKEY_DeviceClass_Characteristics should only be set when a device setup class is installed and not modified later. For information about how to install a device setup class and setting this property, see [**INF ClassInstall32 Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section) and the information about the registry entry value **DeviceCharacteristics** that is provided in the "Special *value-entry-name* Keywords" section of [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
 
 You can call [**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_Characteristics.
 

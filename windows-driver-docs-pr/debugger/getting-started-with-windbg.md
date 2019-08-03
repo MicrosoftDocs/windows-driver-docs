@@ -80,6 +80,11 @@ After you have installed the debugging tools, locate the installation directorie
     [g](https://go.microsoft.com/fwlink/p?linkid=399388)
 
     Notepad runs until it comes to the **WinMain** function, and then breaks in to the debugger.
+    ```dbgcmd
+    Breakpoint 0 hit
+    notepad!WinMain:
+    00007ff6`32825f64 488bc4          mov     rax,rsp
+    ```
 
     To see a list of code modules that are loaded in the Notepad process, enter this command:
 
@@ -120,9 +125,6 @@ After you have installed the debugging tools, locate the installation directorie
     The output is similar to this:
 
     ```dbgcmd
-    Breakpoint 0 hit
-    notepad!WinMain:
-    00007ff6`32825f64 488bc4          mov     rax,rsp
     0:000> k
     Child-SP          RetAddr           Call Site
     00000048`4e0cf6a8 00007ff6`3282122f notepad!WinMain
