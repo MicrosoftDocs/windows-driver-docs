@@ -15,7 +15,24 @@ The [Microsoft Trusted Root Program](https://docs.microsoft.com/security/trusted
 
 For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](https://docs.microsoft.com/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
 
-Existing root certificates with kernel mode code signing capabilities will continue working until expiration. Specifically, these include software publisher certificates, commercial release certificates, and commercial test certificates. The majority of these will expire in 2021, according to the following schedule:
+Existing root certificates with kernel mode code signing capabilities will continue working until expiration. Specifically, these include software publisher certificates, commercial release certificates, and commercial test certificates.
+
+## Frequently asked questions
+* [What is the expiration schedule?](#what-is-the-expiration-schedule)
+* [What alternatives to cross signed certificates are available for testing drivers?](#what-alternatives-to-cross-signed-certificates-are-available-for-testing-drivers)
+* [What will happen to my existing signed driver packages?](#what-will-happen-to-my-existing-signed-driver-packages)
+* [Is there a way to run production driver packages without exposing it to Microsoft?](#is-there-a-way-to-run-production-driver-packages-without-exposing-it-to-microsoft)
+* [Does every new version of my driver package need to be resubmitted to Hardware Dev Center?](#does-every-new-version-of-my-driver-package-need-to-be-resubmitted-to-hardware-dev-center)
+* [Will we continue to be able to sign non-driver code with our existing 3rd party issued certificates after 2021?](#will-we-continue-to-be-able-to-sign-non-driver-code-with-our-existing-3rd-party-issued-certificates-after-2021)
+* [Will I be able to continue using my EV certificate for signing submissions to Hardware Dev Center?](#will-i-be-able-to-continue-using-my-ev-certificate-for-signing-submissions-to-hardware-dev-center)
+* [How do I know if my signing certificate will be impacted by these expirations?](#how-do-i-know-if-my-signing-certificate-will-be-impacted-by-these-expirations)
+* [How can we automate Microsoft Test Signing to work with our build processes?](#how-can-we-automate-microsoft-test-signing-to-work-with-our-build-processes)
+* [Starting in 2021, will Microsoft be the sole provider of production kernel mode code signatures?](#starting-in-2021-will-microsoft-be-the-sole-provider-of-production-kernel-mode-code-signatures)
+* [Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?](#hardware-dev-center-doesnt-provide-driver-signing-for-windows-xp-how-can-i-have-my-drivers-run-in-xp)
+
+### What is the expiration schedule?
+
+The majority of certificates will expire in 2021, according to the following schedule:
 
 |Common Name| Expiration date|
 |-----------|---------------|
@@ -42,18 +59,6 @@ Existing root certificates with kernel mode code signing capabilities will conti
 |StartCom Certification Authority		                            |4/15/2021|
 |Certum Trusted Network CA		                                    |4/15/2021|
 |COMODO ECC Certification Authority		                            |4/11/2021|
-
-## Frequently asked questions
-* [What alternatives to cross signed certificates are available for testing drivers?](#what-alternatives-to-cross-signed-certificates-are-available-for-testing-drivers)
-* [What will happen to my existing signed driver packages?](#what-will-happen-to-my-existing-signed-driver-packages)
-* [Is there a way to run production driver packages without exposing it to Microsoft?](#is-there-a-way-to-run-production-driver-packages-without-exposing-it-to-microsoft)
-* [Does every new version of my driver package need to be resubmitted to Hardware Dev Center?](#does-every-new-version-of-my-driver-package-need-to-be-resubmitted-to-hardware-dev-center)
-* [Will we continue to be able to sign non-driver code with our existing 3rd party issued certificates after 2021?](#will-we-continue-to-be-able-to-sign-non-driver-code-with-our-existing-3rd-party-issued-certificates-after-2021)
-* [Will I be able to continue using my EV certificate for signing submissions to Hardware Dev Center?](#will-i-be-able-to-continue-using-my-ev-certificate-for-signing-submissions-to-hardware-dev-center)
-* [How do I know if my signing certificate will be impacted by these expirations?](#how-do-i-know-if-my-signing-certificate-will-be-impacted-by-these-expirations)
-* [How can we automate Microsoft Test Signing to work with our build processes?](#how-can-we-automate-microsoft-test-signing-to-work-with-our-build-processes)
-* [Starting in 2021, will Microsoft be the sole provider of production kernel mode code signatures?](#starting-in-2021-will-microsoft-be-the-sole-provider-of-production-kernel-mode-code-signatures)
-* [Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?](#hardware-dev-center-doesnt-provide-driver-signing-for-windows-xp-how-can-i-have-my-drivers-run-in-xp)
 
 ### What alternatives to cross signed certificates are available for testing drivers?
 
