@@ -19,114 +19,144 @@ Like any set of guidelines, there will be legitimate exceptions and alternative 
 
 ### Handling I/O
 
-- Accessing buffers retrieved from IOCTLs without validating the length. See Failure to Check the Size of Buffers.
-- Performing blocking I/O in the context of a user thread or random thread context. See Introduction to Kernel Dispatcher Objects.
-- Sending synchronous I/O to another driver without timeout. See Sending I/O Requests Synchronously
-- Using neither-io IOCTLs without understanding security implications. See Using Neither Buffered Nor Direct I/O.
-- Not checking the return status of WdfRequestForwardToIoQueue or not handling failure correctly and resulting in abandoned WDFREQUESTs.
-- Keeping the WDFREQUEST outside the queue in a non-cancelable state. See Managing I/O Queues, Completing I/O Requests and Canceling I/O Requests
-- Trying to manage cancelation using Mark/UnmarkCancelable function instead of using IoQueues. See Framework Queue Objects
-- Not knowing the difference between file handle Cleanup and Close operations. See Errors in Handling Cleanup and Close Operations.
-- Overlooking potential recursions with I/O completion and resubmission from the completion routine.
-- Not being explicit about the power management attributes of WDFQUEUEs. Not documenting the power management choice clearly. This is the primary cause of Bug Check 0x9F: DRIVER_POWER_STATE_FAILURE in WDF drivers. When the device is removed, the framework purges IO from the power managed queue and non-power managed queue in different stages of removal process. Non power managed queues are purged when the final IRP_MN_REMOVE_DEVICE is received. So if you are holding I/O in an non-power managed queue, it’s a good practice to explicitly purges the I/O in the context of EvtDeviceSelfManagedIoFlush to avoid deadlock.
-- Not following the rules of handling IRPs. See Different ways of handling IRPs - Cheat sheet. Review mistake 7 in the Synchronization section.
-- Assuming EvtIo callbacks will be called in the usermode process context.
+1. Accessing buffers retrieved from IOCTLs without validating the length. See [Failure to Check the Size of Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/failure-to-check-the-size-of-buffers).
+2. Performing blocking I/O in the context of a user thread or random thread context. See [Introduction to Kernel Dispatcher Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-kernel-dispatcher-objects).
+3. Sending synchronous I/O to another driver without timeout. See [Sending I/O Requests Synchronously](https://docs.microsoft.com/windows-hardware/drivers/wdf/sending-i-o-requests-synchronously).
+4. Using neither-io IOCTLs without understanding security implications. See [Using Neither Buffered Nor Direct I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-neither-buffered-nor-direct-i-o).
+5. Not checking the return status of [WdfRequestForwardToIoQueue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestforwardtoioqueue) or not handling failure correctly and resulting in abandoned WDFREQUESTs.
+6. Keeping the WDFREQUEST outside the queue in a non-cancelable state. See [Managing I/O Queues](https://docs.microsoft.com/windows-hardware/drivers/wdf/managing-i-o-queues), [Completing I/O Requests](https://docs.microsoft.com/windows-hardware/drivers/wdf/completing-i-o-requests) and [Canceling I/O Requests](https://docs.microsoft.com/windows-hardware/drivers/wdf/canceling-i-o-requests).
+7. Trying to manage cancelation using Mark/UnmarkCancelable function instead of using IoQueues. See [Framework Queue Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-queue-objects)
+8. Not knowing the difference between file handle Cleanup and Close operations. See [Errors in Handling Cleanup and Close Operations](https://docs.microsoft.com/windows-hardware/drivers/kernel/errors-in-handling-cleanup-and-close-operations).
+9. Overlooking potential recursions with I/O completion and resubmission from the completion routine.
+10. Not being explicit about the power management attributes of WDFQUEUEs. Not documenting the power management choice clearly. This is the primary cause of [Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x9f--driver-power-state-failure) in WDF drivers. When the device is removed, the framework purges IO from the power managed queue and non-power managed queue in different stages of removal process. Non power managed queues are purged when the final IRP\_MN\_REMOVE\_DEVICE is received. So if you are holding I/O in an non-power managed queue, it’s a good practice to explicitly purges the I/O in the context of [EvtDeviceSelfManagedIoFlush](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_flush) to avoid deadlock.
+11. Not following the rules of handling IRPs. See [Errors in Handling Cleanup and Close Operations](https://docs.microsoft.com/windows-hardware/drivers/kernel/errors-in-handling-cleanup-and-close-operations).
 
 ### Synchronization
-
-Holding locks for code that doesn't need protection. Do not hold a lock for an entire function when only a small number of operations needs to be protected.
-Calling out of drivers with locks held. Primary causes of deadlocks.
-Using interlocked primitives to create a locking scheme instead of using appropriate system provided locking primitives such as mutex, semaphore and spinlocks. See Introduction to Mutex Objects, Semaphore Objects and Introduction to Spin Locks.
-Using a spinlock where some type of passive lock would be more appropriate. See Fast Mutexes and Guarded Mutexes and Event Objects.For additional perspective on locks review the OSR Article - The State of Synchronization.
-Opting into WDF synchronization and execution level model without full understanding of implications. See Using Framework Locks. Unless your driver is monolithic top-level driver directly interacting with the hardware, avoid opting into WDF synchronization as it can lead to deadlocks due to recursion.
-Acquiring KEVENT, Semaphore, ERESOURCE, UnsafeFastMutex in the context of multiple threads without entering critical region. Doing this can lead to DOS attack because a thread holding one of these locks can be suspended. See Synchronization Techniques.
-Allocating KEVENT on thread stack and returning to the caller while the EVENT is still in use. Typically done when used with IoBuildSyncronousFsdRequest or IoBuildDeviceIoControlRequest. Caller of these calls should make sure that they don't unwind from the stack until I/O manager has signaled the event when the IRP is completed.
-Indefinitely waiting in dispatch routines. In general, any kind of wait in dispatch routine is a bad practice.
-Inappropriately checking the validity of an object (if blah == NULL) before deleting it. This typically means the author doesn't have full understanding of the code that controls the lifetime of the object.
+ 
+1. Holding locks for code that doesn't need protection. Do not hold a lock for an entire function when only a small number of operations
+ needs to be protected.
+2. Calling out of drivers with locks held. Primary causes of deadlocks.
+3. Using interlocked primitives to create a locking scheme instead of using appropriate system provided locking primitives such as mutex,
+ semaphore and spinlocks. See [Introduction to Mutex Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-mutex-objects), [Semaphore Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/semaphore-objects)
+and [Introduction to Spin Locks](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-spin-locks).
+4. Using a spinlock where some type of passive lock would be more appropriate. See [Fast Mutexes and Guarded Mutexes](https://docs.microsoft.com/windows-hardware/drivers/kernel/fast-mutexes-and-guarded-mutexes) and [Event Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/event-objects). For additional perspective on locks review the OSR Article - [The State of Synchronization](https://www.osr.com/nt-insider/2015-issue3/the-state-of-synchronization/).
+5. Opting into WDF synchronization and execution level model without full understanding of implications. See [Using Framework Locks](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-framework-locks). Unless your driver is monolithic top-level driver directly
+interacting with the hardware, avoid opting into WDF synchronization as it can lead to deadlocks due to recursion.
+6. Acquiring KEVENT, Semaphore, ERESOURCE, UnsafeFastMutex in the context of multiple threads without entering critical region. Doing
+this can lead to DOS attack because a thread holding one of these locks can be suspended. See [Synchronization Techniques](https://docs.microsoft.com/windows-hardware/drivers/kernel/synchronization-techniques).
+7. Allocating KEVENT on thread stack and returning to the caller while the EVENT is still in use. Typically done when used with
+[IoBuildSyncronousFsdRequest](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildsynchronousfsdrequest)
+or [IoBuildDeviceIoControlRequest](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest). Caller of these calls should make sure that they don't unwind from the stack until I/O manager has signaled the event when the IRP is
+completed.
+8. Indefinitely waiting in dispatch routines. In general, any kind of wait in dispatch routine is a bad practice.
+9. Inappropriately checking the validity of an object (if blah == NULL) before deleting it. This typically means the author doesn't have
+full understanding of the code that controls the lifetime of the object.
 
 ### Object Management
 
-Not explicitly parenting WDF objects. See Introduction to Framework Objects.
-Parenting WDF object to WDFDRIVER instead of parenting to an object that provides better lifetime management and optimizes memory usage. For example, parenting WDFREQUEST to a WDFDEVICE instead of IOTARGET. See Using General Framework Objects, Framework Object Life Cycle and Summary of Framework Objects.
-Not doing rundown protection of shared memory resources accessed across drivers. See ExInitializeRundownProtection function.
-Mistakenly queuing the same work item while the previous one is already in the queue or already running. This is can be a problem if the client makes an assumption that every work item queued is going to get executed. See Using Framework Work Items. For more information about queuing WorkItems, see the DMF_QueuedWorkitem module in the Driver Module Framework (DMF) project - https://github.com/Microsoft/DMF.
-Queuing timer before posting the message the timer is expected to process. See Using Timers.
-Performing an operation in a workitem that can block or take indefinitely long time to complete.
-Designing a solution that results in a flood of work items to be queued. It can lead to unresponsive system or DOS attack if the bad guy can control the action (e.g. pumping I/O in to a driver that queues a new work item for every I/O). See Using Framework Work Items.
-Not ensuing that work item DPC callbacks have run to completion before deleting the object. See Guidelines for Writing DPC Routines and the WdfDpcCancel function.
-Creating threads instead of using work items for short duration/non-polling tasks. See System Worker Threads
-Not ensuring threads have run to completion before deleting or unload driver. For more information about thread rundown synchronization, look at the code associated with DMF_Thread module in the Driver Module Framework (DMF) project - https://github.com/Microsoft/DMF. 
-Using a single driver to manage devices that are different but interdependent and using global variables to share information.
+1. Not explicitly parenting WDF objects. See [Introduction to Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects).
+2. Parenting WDF object to WDFDRIVER instead of parenting to an object that provides better lifetime management and optimizes memory usage.
+For example, parenting WDFREQUEST to a WDFDEVICE instead of IOTARGET. See [Using General Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-general-framework-objects), [Framework Object Life Cycle](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-life-cycle) and [Summary of Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/summary-of-framework-objects).
+3. Not doing rundown protection of shared memory resources accessed across drivers. See [ExInitializeRundownProtection function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializerundownprotection).
+4. Mistakenly queuing the same work item while the previous one is already in the queue or already running. This is can be a problem if
+the client makes an assumption that every work item queued is going to get executed. See [Using Framework WorkItems](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-framework-work-items). For more information about queuing WorkItems, see the
+[DMF\_QueuedWorkitem](https://github.com/Microsoft/DMF/blob/master/Dmf/Modules.Library/Dmf_QueuedWorkItem.md)
+module in the Driver Module Framework (DMF) project - <https://github.com/Microsoft/DMF>.
+5. Queuing timer before posting the message the timer is expected to process. See [Using Timers](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-timers).
+6. Performing an operation in a workitem that can block or take indefinitely long time to complete.
+7. Designing a solution that results in a flood of work items to be queued. It can lead to unresponsive system or DOS attack if the bad
+guy can control the action (e.g. pumping I/O in to a driver that queues a new work item for every I/O). See [Using Framework Work
+Items](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-framework-work-items).
+8. Not ensuing that work item DPC callbacks have run to completion before deleting the object. See [Guidelines for Writing DPC Routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/guidelines-for-writing-dpc-routines)
+and the [WdfDpcCancel function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdpc/nf-wdfdpc-wdfdpccancel).
+9. Creating threads instead of using work items for short duration/non-polling tasks. See [System Worker Threads](https://docs.microsoft.com/windows-hardware/drivers/kernel/system-worker-threads).
+10. Not ensuring threads have run to completion before deleting or unload driver. For more information about thread rundown
+synchronization, look at the code associated with look at the code associated with [DMF_Thread](https://github.com/Microsoft/DMF/blob/master/Dmf/Modules.Library/Dmf_Thread.md) module in the Driver Module Framework (DMF) project - https://github.com/Microsoft/DMF. 
+11. Using a single driver to manage devices that are different but interdependent and using global variables to share information.
 
 ### Memory
 
-Not marking passive-execution code as PAGEABLE, when possible. Paging driver code can reduce the size of the driver's code footprint, thus freeing system space for other uses. Be cautious marking code pageable that raises IRQL >= DISPATCH_LEVEL or could be called at raised IRQL. See When Should Code and Data Be Pageable  and Making Drivers Pageable and Detecting Code That Can Be Pageable.
-Declaring large structures on the stack, Should use the heap/pool instead. See Using the Kernel Stack and Allocating System-Space Memory.
-Unnecessarily zeroing WDF Object context. This can indicate a lack of clarity on when memory will be zeroed out automatically.
+1. Not marking passive-execution code as PAGEABLE, when possible. Paging driver code can reduce the size of the driver's code
+footprint, thus freeing system space for other uses. Be cautious marking code pageable that raises IRQL \>= DISPATCH\_LEVEL or could
+be called at raised IRQL. See [When Should Code and Data Be Pageable](https://docs.microsoft.com/windows-hardware/drivers/kernel/when-should-code-and-data-be-pageable-) and [Making Drivers Pageable](https://docs.microsoft.com/windows-hardware/drivers/kernel/making-drivers-pageable) and [Detecting Code That Can Be Pageable](https://docs.microsoft.com/windows-hardware/drivers/kernel/detecting-code-that-can-be-pageable).
+2. Declaring large structures on the stack, Should use the heap/poolinstead. See [Using the KernelStack](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-the-kernel-stack)and [Allocating System-Space Memory](https://docs.microsoft.com/windows-hardware/drivers/kernel/allocating-system-space-memory).
+3. Unnecessarily zeroing WDF Object context. This can indicate a lack of clarity on when memory will be zeroed out automatically.
 
 ### General Driver Guidelines
 
-Mixing WDM and WDF primitives. Using WDM primitives where WDF primitives can be used. Using WDF primitives protects you from gotchas, improves debugging and more importantly makes your driver portable to usermode.
-Naming FDOs and creating symbolic links when not needed. See Manage driver access control.
-Copy pasting and using GUIDs and other constant values from sample drivers.
-Consider the use of the Driver Module Framework (DMF) open source code in your driver project. DMF is an extension to WDF that enables extra functionality for a WDF driver developer.  See Introducing Driver Module Framework.
-Using registry as an inter-process notification mechanism or as a mailbox. For an alternative, see DMF_NotifyUserWithEvent and DMF_NotifyUserWithRequest modules available in the DMF project - https://github.com/Microsoft/DMF.
-Assuming all parts of registry will be available for access during the early boot phase of the system.
-Taking dependency on the load order of another driver or service. As the load order can be changed outside of the control of your driver, this can result in a driver that works initially, but later fails in an unpredictable pattern.
-Recreating driver libraries that are already available, such as WDF provides for PnP described in Supporting PnP and Power Management in Your Driver or those provided in the bus interface as described in the OSR article Using Bus Interfaces for Driver to Driver Communication.
+1. Mixing WDM and WDF primitives. Using WDM primitives where WDF primitives can be used. Using WDF primitives protects you from
+gotchas, improves debugging and more importantly makes your driver portable to usermode.
+2. Naming FDOs and creating symbolic links when not needed. See [Manage
+driver access control](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/driver-security-checklist#manage-driver-access-control).
+3. Copy pasting and using GUIDs and other constant values from sample drivers.
+4. Consider the use of the Driver Module Framework (DMF) open source code in your driver project. DMF is an extension to WDF that enables extra functionality for a WDF driver developer. See [Introducing Driver Module Framework](https://blogs.windows.com/windowsdeveloper/2018/08/15/introducing-driver-module-framework/).
+5. Using registry as an inter-process notification mechanism or as a mailbox. For an alternative, see
+[DMF\_NotifyUserWithEvent](https://github.com/Microsoft/DMF/blob/master/Dmf/Modules.Library/Dmf_NotifyUserWithEvent.md)
+and [DMF\_NotifyUserWithRequest](https://github.com/Microsoft/DMF/blob/master/Dmf/Modules.Library/Dmf_NotifyUserWithRequest.md)
+modules available in the DMF project - <https://github.com/Microsoft/DMF>.
+6. Assuming all parts of registry will be available for access during the early boot phase of the system.
+7. Taking dependency on the load order of another driver or service. As the load order can be changed outside of the control of your driver, this can result in a driver that works initially, but later fails in an unpredictable pattern.
+8. Recreating driver libraries that are already available, such as WDF provides for PnP described in [Supporting PnP and Power Management in Your Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-pnp-and-power-management-in-your-driver) or those provided in the bus interface as described in the OSR
+article [Using Bus Interfaces for Driver to Driver Communication](https://www.osr.com/nt-insider/2014-issue2/using-bus-interfaces-driver-driver-communication/).
 
 ### PnP/Power
 
-Interfacing with another driver in a non-pnp friendly way - not registering for pnp device change notifications. See Registering for Device Interface Change Notification
-Creating ACPI nodes to enumerate devices and creating power dependencies among them instead of using bus driver or system provided software device creation interfaces to PNP and power dependencies in an elegant way. See Supporting PnP and Power Management in Function Drivers.
-Marking the device not-disableable - forcing a reboot on driver update.
-Hiding the device in the device manager. See Hiding Devices from Device Manager.
-Making assumptions that driver will be used for only one instance of the device.
-Making assumptions that driver will never get unloaded. See PnP Driver's Unload Routine.
-Not handling spurious interface arrival notification. This can happen and drivers are expected to handle this condition safely.
-Not implementing a S0 Idle power policy, which is important for devices that are DRIPS constraints or children thereof. See Supporting Idle Power-Down.
-Not checking WdfDeviceStopIdle return status leads to power reference leak due to WdfDeviceStopIdle/ResumeIdle imbalance and eventually 9F bug check.
-Not knowing that PrepareHardware/ReleaseHardware can be called more than once due to resource rebalancing. These callbacks should be restricted to initializing hardware resources. See EVT_WDF_DEVICE_PREPARE_HARDWARE.
-Using PrepareHardware/ReleaseHardware for allocating software resources. Software resource allocation static to the device should be done either in AddDevice or in SelfManagedIoInit if the allocation of resources required interacting with hardware. See EVT_WDF_DEVICE_SELF_MANAGED_IO_INIT..
+1. Interfacing with another driver in a non-pnp friendly way - not registering for pnp device change notifications. See [Registering for Device Interface Change Notification](https://docs.microsoft.com/windows-hardware/drivers/kernel/registering-for-device-interface-change-notification).
+2. Creating ACPI nodes to enumerate devices and creating power dependencies among them instead of using bus driver or system
+provided software device creation interfaces to PNP and power dependencies in an elegant way. See [Supporting PnP and Power Management in Function Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-pnp-and-power-management-in-function-drivers).
+3. Marking the device not-disableable - forcing a reboot on driver update.
+4. Hiding the device in the device manager. See [Hiding Devices from Device Manager](https://docs.microsoft.com/windows-hardware/drivers/kernel/hiding-devices-from-device-manager).
+5. Making assumptions that driver will be used for only one instance of the device.
+6. Making assumptions that driver will never get unloaded. See [PnP Driver's Unload Routine](https://docs.microsoft.com/windows-hardware/drivers/kernel/pnp-driver-s-unload-routine).
+7. Not handling spurious interface arrival notification. This can happen and drivers are expected to handle this condition safely.
+8. Not implementing a S0 Idle power policy, which is important for devices that are DRIPS constraints or children thereof. See
+[Supporting Idle Power-Down](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-idle-power-down).
+9. Not checking [WdfDeviceStopIdle](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidle) return status leads to power reference leak due to WdfDeviceStopIdle/ResumeIdle imbalance and eventually 9F bug check.
+10. Not knowing that PrepareHardware/ReleaseHardware can be called more than once due to resource rebalancing. These callbacks should be restricted to initializing hardware resources. See [EVT\_WDF\_DEVICE\_PREPARE\_HARDWARE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware).
+11. Using PrepareHardware/ReleaseHardware for allocating software resources. Software resource allocation static to the device should be done either in AddDevice or in SelfManagedIoInit if the allocation of resources required interacting with hardware. See [EVT\_WDF\_DEVICE\_SELF\_MANAGED\_IO\_INIT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_init).
 
 ### Coding Guidelines
 
-Not using safe string and integer functions. See Using Safe String Functions and Using Safe Integer Functions.
-Not using typedefs for defining constants.
-Using globals and static variables. Avoid storing per device context in globals. Globals are meant for sharing information across multiple instances of devices. As an alternative, consider using WDFDRIVER object context for sharing information across multiple instances of devices.
-Not using descriptive names for variables.
-Not being consistent in naming variables - case consistency. Not following the existing style of coding when making updates to existing code. For example, using different variable names for common structures in different functions. 
-Not commenting important design choices - power management, locks, state management, use of workitems, DPCs, timers, global resource usage, resource pre-allocation, complex expressions/conditional statements.
-Commenting about things that are obvious from the name of the API being called. Making your comment the English language equivalent of the function name (such as writing the comment “Create the Device Object” when calling WdfDeviceCreate).
-Don’t create macros that have a return call. See Functions (C++).
-No or incomplete Source Code Annotations (SAL). See SAL 2.0 Annotations for Windows Drivers.
-Using macros instead of inline functions.
-Using macros for constants in place of constexpr  when using C++
-Compiling your driver with the C compiler, instead of the C++ compiler to ensure you get strong type checking.
+1. Not using safe string and integer functions. See [Using Safe String Functions](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-safe-string-functions) and [Using Safe Integer Functions](https://docs.microsoft.com/windows-hardware/drivers/kernel/ntintsafe-design-guide).
+2. Not using typedefs for defining constants.
+3. Using globals and static variables. Avoid storing per device context in globals. Globals are meant for sharing information across multiple instances of devices. As an alternative, consider using WDFDRIVER object context for sharing information across multiple instances of devices.
+4. Not using descriptive names for variables.
+5. Not being consistent in naming variables - case consistency. Not following the existing style of coding when making updates to existing code. For example, using different variable names for common structures in different functions.
+6. Not commenting important design choices - power management, locks, state management, use of workitems, DPCs, timers, global resource usage, resource pre-allocation, complex expressions/conditional statements.
+7. Commenting about things that are obvious from the name of the API being called. Making your comment the English language equivalent of the function name (such as writing the comment “Create the Device Object” when calling WdfDeviceCreate).
+8. Don’t create macros that have a return call. See [Functions (C++)](https://docs.microsoft.com/cpp/cpp/functions-cpp).
+9. No or incomplete Source Code Annotations (SAL). See [SAL 2.0 Annotations for Windows Drivers](https://msdn.microsoft.com/windows/hardware/drivers/devtest/sal-2-annotations-for-windows-drivers).
+10. Using macros instead of inline functions.
+11. Using macros for constants in place of [constexpr](https://docs.microsoft.com/cpp/cpp/constexpr-cpp?view=vs-2019)
+when using C++
+12. Compiling your driver with the C compiler, instead of the C++ compiler to ensure you get strong type checking.
 
 ### Error Handling
 
-Not reporting critical driver errors and gracefully marking the device non-functional.
-Not returning appropriate NT error status that translates to meaningful WIN32 error status. See Using NTSTATUS Values.
-Not using NTSTATUS macros to check the returned status of system functions.
-Not asserting on state variables or flags where needed.
-Checking to see if the pointer is valid before accessing it to work around race conditions.
-ASSERTING on NULL pointers. If you attempt to use a NULL pointer to access memory Windows will bug check. The parameters of the bug check will provide the necessary information to fix the null pointer. Overtime, when many unneeded ASSERT statements are added to the code, they consume memory, slow the system and make checked build binaries unusable. Note that asserts are not included in the free retail build.
-ASSERTING on object context pointer. The driver framework guarantees that object will always get allocated with context.
+1. Not reporting critical driver errors and gracefully marking the device non-functional.
+2.Not returning appropriate NT error status that translates to meaningful WIN32 error status. See [Using NTSTATUS
+Values](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatus-values).
+3.Not using NTSTATUS macros to check the returned status of system functions.
+4.Not asserting on state variables or flags where needed.
+5.Checking to see if the pointer is valid before accessing it to work around race conditions.
+6.ASSERTING on NULL pointers. If you attempt to use a NULL pointer to access memory Windows will bug check. The parameters of the bug check will provide the necessary information to fix the null pointer. Overtime, when many unneeded ASSERT statements are added to the code, they consume memory, slow the system and make checked build binaries unusable. Note that asserts are not included in the free retail build.
+7.ASSERTING on object context pointer. The driver framework guarantees that object will always get allocated with context.
 
 ### Tracing
 
-Not defining WPP custom types and using it in trace calls to get human readable traces messages. See Adding WPP Software Tracing to a Windows Driver.
-Not using IFR tracing. See Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers.
-Calling out function names in WPP trace calls. WPP already tracks function names and line numbers.
-Not using ETW events to measure performance and other critical user experience impacting events. See Adding Event Tracing to Kernel-Mode Drivers
-Not reporting critical errors in eventlog and gracefully marking the device non-functional.
+1. Not defining WPP custom types and using it in trace calls to get human readable traces messages. See [Adding WPP Software Tracing to a Windows Driver](https://docs.microsoft.com/windows-hardware/drivers/devtest/adding-wpp-software-tracing-to-a-windows-driver).
+2. Not using IFR tracing. See [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers).
+3. Calling out function names in WPP trace calls. WPP already tracks function names and line numbers.
+4. Not using ETW events to measure performance and other critical user experience impacting events. See [Adding Event Tracing to Kernel-Mode Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/adding-event-tracing-to-kernel-mode-drivers)
+5. Not reporting critical errors in eventlog and gracefully marking the device non-functional.
 
-### Verification
+#### Verification
 
-Not running driver verifier with both standard and advanced settings during development and testing. See Driver Verifier. In the advanced settings, it is recommended to enable all rules, except those rules that are related to low resource simulation. It is preferable to run the low resource simulation tests in isolation to make it easier to debug issues.
-Not running DevFund test on the driver or the device class the driver is part of with advanced verifier settings enabled. See How to run the DevFund Tests via the command-line.
-Not verifying to make sure the driver is HVCI compliant. See Evaluate HVCI driver compatibility.
-Not running AppVerifier on WUDFhost.exe during development and testing of user mode drivers. See Application Verifier.
-Not checking usage of memory using the !wdfpoolusage debugger extension at runtime to make sure WDF objects are not abandoned. Memory, requests and workitems are common victims of these issues.
-Not using the !wdfkd debugger extension to inspect the object tree to make sure objects are parented correctly and checking the attributes of major objects such WDFDRIVER, WDFDEVICE, IOTARGETs to make sure the properties set on them are as expected.
+1. Not running driver verifier with both standard and advanced settings during development and testing. See [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier). In the advanced settings, it is recommended to enable all rules, except those rules that are related to low resource simulation. It is preferable to run the low resource simulation tests in isolation to make it easier to debug issues.
+2. Not running DevFund test on the driver or the device class the driver is part of with advanced verifier settings enabled. See [How to run the DevFund Tests via the command-line.](https://docs.microsoft.com/windows-hardware/drivers/devtest/run-devfund-tests-via-the-command-line)
+3. Not verifying that the driver is HVCI compliant. See [Evaluate HVCI driver compatibility](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/use-device-guard-readiness-tool).
+4. Not running AppVerifier on WUDFhost.exe during development and testing of user mode drivers. See [Application Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/application-verifier).
+5. Not checking usage of memory using the [\!wdfpoolusage](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfpoolusage)
+ debugger extension at runtime to make sure WDF objects are not abandoned. Memory, requests and workitems are common victims of these issues.
+6. Not using the [\!wdfkd](https://docs.microsoft.com/windows-hardware/drivers/debugger/kernel-mode-driver-framework-extensions--wdfkd-dll-)
+ debugger extension to inspect the object tree to make sure objects are parented correctly and checking the attributes of major objects such WDFDRIVER, WDFDEVICE, IO.
