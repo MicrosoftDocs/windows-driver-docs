@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_TENDED\_RELATIVEPANELOPTIMIZATION
+title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_RELATIVEPANELOPTIMIZATION
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_RELATIVEPANELOPTIMIZATION is a property ID used to inform the driver of whether the camera is facing front or not, relative to the active display of the application.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION Streaming Media Devices"]
 topic_type:
@@ -37,7 +37,7 @@ The property request contains a [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.micr
 The total property data size is `sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE)`.
 The **Size** member of [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) is set to this total property data size.
 
-The following are flags that can be placed in the **KSCAMERA_EXTENDEDPROP_HEADER.Flags** and **KSCAMERA_EXTENDEDPROP_HEADER.Capability** fields.  They define the IR torch's operating mode(s).
+The following are flags that can be placed in the **KSCAMERA_EXTENDEDPROP_HEADER.Flags** and **KSCAMERA_EXTENDEDPROP_HEADER.Capability** fields.
 
 | Relative Panel Optimization mode                                 | Description                                                                        |
 |------------------------------------------------------------------|----------------------------------------------------------------------------------- |
@@ -55,7 +55,7 @@ the application using PanelBasedOptimizationControl will set the Panel value,
 which Windows will internally use to program the KSCAMERA_EXTENDEDPROP_VALUE field of the payload.
 The Capability and Flags field will be controlled by Windows.
 
-When the camera device is streaming and the flag KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_DYNAMIC is not set,
+If the driver receives a SET operation while the camera device is streaming and the flag KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_DYNAMIC is not set,
 the driver will return a state-based error.
 
 The table below contains the descriptions and requirements for the [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the metadata control.
