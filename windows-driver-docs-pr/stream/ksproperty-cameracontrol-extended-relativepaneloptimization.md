@@ -39,11 +39,11 @@ The **Size** member of [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com
 
 The following are flags that can be placed in the **KSCAMERA_EXTENDEDPROP_HEADER.Flags** and **KSCAMERA_EXTENDEDPROP_HEADER.Capability** fields.
 
-| Relative Panel Optimization mode                                 | Description                                                                        |
-|------------------------------------------------------------------|----------------------------------------------------------------------------------- |
-| KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_OFF           | Camera will use normal mode of operation                                           |
-| KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_ON            | Camera will use optimization relative to a position described in the value field   |
-| KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_DYNAMIC       | Camera location hint can be dynamically adjusted while streaming                   |
+| Relative Panel Optimization mode                           | Description                                                                      |
+|------------------------------------------------------------|----------------------------------------------------------------------------------|
+| KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_OFF     | Camera will use normal mode of operation                                         |
+| KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_ON      | Camera will use optimization relative to a position described in the value field |
+| KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_DYNAMIC | Camera location hint can be dynamically adjusted while streaming without glitching the stream |
 
 **KSCAMERA_EXTENDEDPROP_RELATIVEPANELOPTIMIZATION** is always a synchronous control.
 
@@ -52,10 +52,10 @@ A suitable error code will be returned if attempts are made to write the propert
 
 In regards to mapping this DDI to the PanelBasedOptimizationControl,
 the application using PanelBasedOptimizationControl will set the Panel value,
-which Windows will internally use to program the KSCAMERA_EXTENDEDPROP_VALUE field of the payload.
-The Capability and Flags field will be controlled by Windows.
+which Windows will internally use to program the [**KSCAMERA_EXTENDEDPROP_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) field of the payload.
+The **Capability** and **Flags** field will be controlled by Windows.
 
-If the driver receives a SET operation while the camera device is streaming and the flag KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_DYNAMIC is not set,
+If the driver receives a SET operation while the camera device is streaming and the flag **KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_DYNAMIC** is not set,
 the driver will return a state-based error.
 
 The table below contains the descriptions and requirements for the [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the metadata control.
@@ -123,7 +123,7 @@ the most recently set value must be returned.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Header</p></td>
+<td>Header</td>
 <td>Ksmedia.h</td>
 </tr>
 </tbody>
