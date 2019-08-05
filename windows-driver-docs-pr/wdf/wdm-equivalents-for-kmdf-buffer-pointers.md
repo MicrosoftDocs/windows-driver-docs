@@ -6,7 +6,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# WDM Equivalents for WDF Buffer Pointers
+# WDM Equivalents for WDF Buffer PointersF
 
 
 A Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) driver uses the following methods for retrieving I/O buffers for buffered and direct I/O. Unless otherwise specified, the methods apply to both KMDF and UMDF.
@@ -23,7 +23,7 @@ The following tables describe what the retrieval methods return for IRP\_MJ\_REA
 ## <a href="" id="read"></a>Buffers for IRP\_MJ\_READ Requests
 
 
-To retrieve a buffer for a read request, a KMDF driver calls one of the **WdfRequestRetrieveOutput***Xxx* methods. The buffer that each of these methods returns varies, depending on whether the driver performs buffered or direct I/O. The following table describes the pointer that is returned by each method in WDM terms.
+To retrieve a buffer for a read request, a KMDF driver calls one of the **WdfRequestRetrieveOutput**_Xxx_ methods. The buffer that each of these methods returns varies, depending on whether the driver performs buffered or direct I/O. The following table describes the pointer that is returned by each method in WDM terms.
 
 | Function                                                                             | Buffered I/O                                                                                                                                    | Direct I/O                                                                                                                                                                                                |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -36,7 +36,7 @@ To retrieve a buffer for a read request, a KMDF driver calls one of the **WdfReq
 ## <a href="" id="write"></a>Buffers for IRP\_MJ\_WRITE Requests
 
 
-To retrieve a buffer for a write request, a KMDF driver calls one of the **WdfRequestRetrieveInput***Xxx* methods. The buffer that each of these methods returns varies, depending on whether the driver performs buffered or direct I/O. The following table describes the pointer that is returned by each method in WDM terms.
+To retrieve a buffer for a write request, a KMDF driver calls one of the **WdfRequestRetrieveInput**_Xxx_ methods. The buffer that each of these methods returns varies, depending on whether the driver performs buffered or direct I/O. The following table describes the pointer that is returned by each method in WDM terms.
 
 | Function                                                                           | Buffered I/O                                                                                                                                    | Direct I/O                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
