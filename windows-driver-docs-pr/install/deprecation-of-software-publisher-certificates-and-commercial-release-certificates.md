@@ -15,7 +15,7 @@ The [Microsoft Trusted Root Program](https://docs.microsoft.com/security/trusted
 
 For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](https://docs.microsoft.com/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
 
-Existing root certificates with kernel mode code signing capabilities will continue working until expiration. The majority of these will expire in 2021, according to the following schedule:
+Existing root certificates with kernel mode code signing capabilities will continue working until expiration. Specifically, these include software publisher certificates, commercial release certificates, and commercial test certificates. The majority of these will expire in 2021, according to the following schedule:
 
 |Common Name| Expiration date|
 |-----------|---------------|
@@ -52,7 +52,7 @@ Existing root certificates with kernel mode code signing capabilities will conti
 * [Will I be able to continue using my EV certificate for signing submissions to Hardware Dev Center?](#will-i-be-able-to-continue-using-my-ev-certificate-for-signing-submissions-to-hardware-dev-center)
 * [How do I know if my signing certificate will be impacted by these expirations?](#how-do-i-know-if-my-signing-certificate-will-be-impacted-by-these-expirations)
 * [How can we automate Microsoft Test Signing to work with our build processes?](#how-can-we-automate-microsoft-test-signing-to-work-with-our-build-processes)
-* [Starting in 2021, will Microsoft be the sole provider of production kernel mode code signatures?](#starting-in-2021,-will-microsoft-be-the-sole-provider-of-production-kernel-mode-code-signatures)
+* [Starting in 2021, will Microsoft be the sole provider of production kernel mode code signatures?](#starting-in-2021-will-microsoft-be-the-sole-provider-of-production-kernel-mode-code-signatures)
 * [Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?](#hardware-dev-center-doesnt-provide-driver-signing-for-windows-xp-how-can-i-have-my-drivers-run-in-xp)
 
 ### What alternatives to cross signed certificates are available for testing drivers?
