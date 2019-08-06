@@ -13,22 +13,28 @@ ms.technology: windows-devices
 
 # Mobile Plans system architecture
 
-This page provides an overview of the different parts of the Mobile Plans program.
+This page provides an overview of the components of the Mobile Plans system architecture. Together, these comprise the Mobile Plans program. Not every mobile operator deployment will require every component listed here.
+
+The Mobile Plans system architecture made up of the following 5 elements:
 
 ## Mobile Plans App
 
-Blah
+This is the Windows 10 UWP app that is preinstalled on all cellular-enabled Windows 10 devices. The Mobile Plans app is the client environment running on the user's device which hosts the user experience. The Mobile Plans app can also run in the background to trigger certain events (e.g. showing a toast notification).
 
 ## Mobile Plans Service
 
-Blah
+The Mobile Plans service is the cloud-based service layer which provides data to the Mobile Plans app. It also provides an authenticated interface to the Mobile Operator API.
 
 ## Mobile Operator Web Portal
 
-Blah
+This is the web-based runtime environment hosted by the mobile operator. The mobile operator web portal is experienced by the user via web navigation, and is rendered in situ within the Mobile Plans app.
+
+## Mobile Operator API
+
+This is the programmatic interfaced hosted by the mobile operator for exposing data to the Mobile Plans, which can be fetched at runtime to update  content presented to the user. An example would be a user's prepaid balance.
 
 ## Mobile Operator SM-DP+
 
-Blah
+This is responsible for creation and delivery of eSIM profiles that belong to a mobile operator.
 
-## Mobile Operator API
+
