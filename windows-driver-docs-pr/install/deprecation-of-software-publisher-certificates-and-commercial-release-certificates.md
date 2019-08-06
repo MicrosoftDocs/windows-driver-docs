@@ -15,7 +15,8 @@ The [Microsoft Trusted Root Program](https://docs.microsoft.com/security/trusted
 
 For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](https://docs.microsoft.com/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
 
-Existing root certificates with kernel mode code signing capabilities will continue working until expiration. Specifically, these include software publisher certificates, commercial release certificates, and commercial test certificates.
+Existing cross-signed root certificates with kernel mode code signing capabilities will continue working until expiration.
+<!--Specifically, these include software publisher certificates, commercial release certificates, and commercial test certificates.-->
 
 ## Frequently asked questions
 * [What is the expiration schedule?](#what-is-the-expiration-schedule)
@@ -32,7 +33,7 @@ Existing root certificates with kernel mode code signing capabilities will conti
 
 ### What is the expiration schedule?
 
-The majority of certificates will expire in 2021, according to the following schedule:
+The majority of cross-signed root certificates will expire in 2021, according to the following schedule:
 
 |Common Name| Expiration date|
 |-----------|---------------|
@@ -60,7 +61,7 @@ The majority of certificates will expire in 2021, according to the following sch
 |Certum Trusted Network CA		                                    |4/15/2021|
 |COMODO ECC Certification Authority		                            |4/11/2021|
 
-### What alternatives to cross signed certificates are available for testing drivers?
+### What alternatives to cross-signed certificates are available for testing drivers?
 
 The following alternatives can be used:
 
