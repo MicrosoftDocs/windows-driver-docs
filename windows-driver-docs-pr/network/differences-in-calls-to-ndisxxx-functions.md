@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 
 
 
-A call manager calls a different set of call manager functions than an MCM driver. A call manager calls **NdisCm*Xxx*** functions, and an MCM driver calls **NdisMCm*Xxx*** functions.
+A call manager calls a different set of call manager functions than an MCM driver. A call manager calls **NdisCm_Xxx_** functions, and an MCM driver calls **NdisMCm_Xxx_** functions.
 
-An MCM driver does not call the **NdisCo*Xxx*** functions that both connection-oriented clients and call managers call. Instead, an MCM driver calls the following comparable **NdisMCm*Xxx*** functions:
+An MCM driver does not call the **NdisCo_Xxx_** functions that both connection-oriented clients and call managers call. Instead, an MCM driver calls the following comparable **NdisMCm_Xxx_** functions:
 
 -   [**NdisMCmCreateVc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismcmcreatevc) instead of [**NdisCoCreateVc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscocreatevc)
 
