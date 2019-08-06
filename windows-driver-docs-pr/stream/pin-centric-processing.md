@@ -37,13 +37,13 @@ If the minidriver does not modify flag settings in the KSPIN\_DESCRIPTOR\_EX str
 
 By default, pause is the minimum processing state.
 
-In addition, AVStream does not call the pin process dispatch if the pin's AND gate is closed. If you use the **KSGATE***Xxx* routines to add additional off inputs to the pin's AND gate, for instance, your process dispatch will not be called.
+In addition, AVStream does not call the pin process dispatch if the pin's AND gate is closed. If you use the **KSGATE**_Xxx_ routines to add additional off inputs to the pin's AND gate, for instance, your process dispatch will not be called.
 
 When AVStream calls *AVStrMiniPinProcess*, it provides a pointer to the pin object that has available data. The minidriver's processing dispatch can then acquire a [leading edge pointer](leading-and-trailing-edge-stream-pointers.md) by calling [**KsPinGetLeadingEdgeStreamPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspingetleadingedgestreampointer). Minidrivers then manipulate stream data using the [stream pointer](stream-pointers.md) API.
 
 Minidrivers that use pin-centric processing can modify when AVStream calls the *AVStrMiniPinProcess* dispatch by setting flags in the relevant [**KSPIN\_DESCRIPTOR\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_kspin_descriptor_ex) structure. Flag descriptions on the KSPIN\_DESCRIPTOR\_EX reference page are particularly relevant to vendors who are implementing pin-centric filters.
 
-Processing attempts may fail if the minidriver is holding the [processing mutex](processing-mutex-in-avstream.md) through [**KsPinAcquireProcessingMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspinacquireprocessingmutex). Problems may also arise if the minidriver directly manipulates a gate by using the **KSGATE***\** calls.
+Processing attempts may fail if the minidriver is holding the [processing mutex](processing-mutex-in-avstream.md) through [**KsPinAcquireProcessingMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspinacquireprocessingmutex). Problems may also arise if the minidriver directly manipulates a gate by using the **KSGATE**_\*_ calls.
 
 The [AVStream Simulated Hardware Sample Driver (AVSHwS)](https://go.microsoft.com/fwlink/p/?linkid=256083) in the Windows Driver Kit samples is a pin-centric capture driver for a simulated piece of hardware. The Avshws sample shows how to implement [DMA through AVStream](avstream-dma-services.md).
 

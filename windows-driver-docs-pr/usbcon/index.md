@@ -219,7 +219,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p><a href="https://github.com/Microsoft/Windows-universal-samples" data-raw-source="[UWP app samples for USB](https://github.com/Microsoft/Windows-universal-samples)">UWP app samples for USB</a></p>
 <p><a href="https://go.microsoft.com/fwlink/p/?linkid=618021" data-raw-source="[Windows driver samples for USB](https://go.microsoft.com/fwlink/p/?linkid=618021)">Windows driver samples for USB</a></p>
 <p><strong>Development tools</strong></p>
-<a href="https://go.microsoft.com/fwlink/p/?linkid=619491" data-raw-source="[Download kits and tools for Windows]( https://go.microsoft.com/fwlink/p/?linkid=619491)">Download kits and tools for Windows</a></td>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Download kits and tools for Windows]( https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)">Download kits and tools for Windows</a></td>
 </tr>
 </tbody>
 </table>
