@@ -3,7 +3,7 @@ title: Surface Team Driver Development Best Practices
 description: Surface Team Driver Development Best Practices - Common mistakes made by driver developers to avoid.
 ms.assetid: f4847954-8e29-48bb-b9ae-873fc7c29b2d
 keywords: ["driver development best practices"]
-ms.date: 08/05/2019
+ms.date: 08/06/2019
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## Introduction
 
 These driver development guidelines were developed over many years by driver developers at Microsoft. Over time when drivers misbehaved and lessons were learned, those lessons were captured and evolved to be this set of guidance. These best practices are used by the Microsoft Surface Hardware team to develop and maintain the device driver code that support the unique Surface hardware experiences.
- 
+
 Like any set of guidelines, there will be legitimate exceptions and alternative approaches that will be equally valid. Consider incorporating these guidelines into your development standards or using them to start your domain specific guidelines for your development environment and your unique requirements. 
 
 ## Common mistakes made by driver developers
@@ -32,10 +32,10 @@ Like any set of guidelines, there will be legitimate exceptions and alternative 
 11. Not following the rules of handling IRPs. See [Errors in Handling Cleanup and Close Operations](https://docs.microsoft.com/windows-hardware/drivers/kernel/errors-in-handling-cleanup-and-close-operations).
 
 ### Synchronization
- 
+
 1. Holding locks for code that doesn't need protection. Do not hold a lock for an entire function when only a small number of operations
  needs to be protected.
-2. Calling out of drivers with locks held. Primary causes of deadlocks.
+2. Calling out of drivers with locks held. This is the primary causes of deadlocks.
 3. Using interlocked primitives to create a locking scheme instead of using appropriate system provided locking primitives such as mutex,
  semaphore and spinlocks. See [Introduction to Mutex Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-mutex-objects), [Semaphore Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/semaphore-objects)
 and [Introduction to Spin Locks](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-spin-locks).
@@ -134,26 +134,26 @@ when using C++
 ### Error Handling
 
 1. Not reporting critical driver errors and gracefully marking the device non-functional.
-2.Not returning appropriate NT error status that translates to meaningful WIN32 error status. See [Using NTSTATUS
+2. Not returning appropriate NT error status that translates to meaningful WIN32 error status. See [Using NTSTATUS
 Values](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatus-values).
-3.Not using NTSTATUS macros to check the returned status of system functions.
-4.Not asserting on state variables or flags where needed.
-5.Checking to see if the pointer is valid before accessing it to work around race conditions.
-6.ASSERTING on NULL pointers. If you attempt to use a NULL pointer to access memory Windows will bug check. The parameters of the bug check will provide the necessary information to fix the null pointer. Overtime, when many unneeded ASSERT statements are added to the code, they consume memory, slow the system and make checked build binaries unusable. Note that asserts are not included in the free retail build.
-7.ASSERTING on object context pointer. The driver framework guarantees that object will always get allocated with context.
+3. Not using NTSTATUS macros to check the returned status of system functions.
+4. Not asserting on state variables or flags where needed.
+5. Checking to see if the pointer is valid before accessing it to work around race conditions.
+6. ASSERTING on NULL pointers. If you attempt to use a NULL pointer to access memory Windows will bug check. The parameters of the bug check will provide the necessary information to fix the null pointer. Overtime, when many unneeded ASSERT statements are added to the code, they consume memory, slow the system and make checked build binaries unusable. Note that asserts are not included in the free retail build.
+7. ASSERTING on object context pointer. The driver framework guarantees that object will always get allocated with context.
 
 ### Tracing
 
 1. Not defining WPP custom types and using it in trace calls to get human readable traces messages. See [Adding WPP Software Tracing to a Windows Driver](https://docs.microsoft.com/windows-hardware/drivers/devtest/adding-wpp-software-tracing-to-a-windows-driver).
 2. Not using IFR tracing. See [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers).
 3. Calling out function names in WPP trace calls. WPP already tracks function names and line numbers.
-4. Not using ETW events to measure performance and other critical user experience impacting events. See [Adding Event Tracing to Kernel-Mode Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/adding-event-tracing-to-kernel-mode-drivers)
+4. Not using ETW events to measure performance and other critical user experience impacting events. See [Adding Event Tracing to Kernel-Mode Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/adding-event-tracing-to-kernel-mode-drivers).
 5. Not reporting critical errors in eventlog and gracefully marking the device non-functional.
 
-#### Verification
+### Verification
 
 1. Not running driver verifier with both standard and advanced settings during development and testing. See [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier). In the advanced settings, it is recommended to enable all rules, except those rules that are related to low resource simulation. It is preferable to run the low resource simulation tests in isolation to make it easier to debug issues.
-2. Not running DevFund test on the driver or the device class the driver is part of with advanced verifier settings enabled. See [How to run the DevFund Tests via the command-line.](https://docs.microsoft.com/windows-hardware/drivers/devtest/run-devfund-tests-via-the-command-line)
+2. Not running DevFund test on the driver or the device class the driver is part of with advanced verifier settings enabled. See [How to run the DevFund Tests via the command-line.](https://docs.microsoft.com/windows-hardware/drivers/devtest/run-devfund-tests-via-the-command-line).
 3. Not verifying that the driver is HVCI compliant. See [Evaluate HVCI driver compatibility](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/use-device-guard-readiness-tool).
 4. Not running AppVerifier on WUDFhost.exe during development and testing of user mode drivers. See [Application Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/application-verifier).
 5. Not checking usage of memory using the [\!wdfpoolusage](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfpoolusage)
