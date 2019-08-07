@@ -78,7 +78,7 @@ The following table describes each JSON element in the previous example.
 |   | buttonFontColor | Color for the text on the "Continue" button. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, white is used as the default. | 0xFFFFFFFF |
 |   | buttonText | The localized text for the "Continue" button. | Get started |
 |   | hyperlinkFontColor | Color of the hyperlinks. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, the user-selected system highlight color is used as the default. | 0x00B0F0FF |
-|   | images | Images to use for the template. Different sizes are supported. If multiple sizes are included, the Mobile Plans app uses the optimum size for the screen resolution. Maximum image size is 1200 x 600 pixels, file format *png*.| ![Enhanced Gateway page thumbnail](images/enhanced_gateway_page_thumbnail.png) |
+|   | images | Images to use for the template. Different sizes are supported. If multiple sizes are included, the Mobile Plans app uses the optimum size for the screen resolution. Maximum image size is 1200 x 600 pixels, file format *png*.| gateway740x480.png |
 
 ![Mobile operator gateway page](images/mobile_operator_gateway_page.png)
 
