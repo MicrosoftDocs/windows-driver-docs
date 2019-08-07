@@ -23,7 +23,7 @@ The standard Gateway page is shown to the end when there is no enhanced Gateway 
 
 The standard Gateway page uses a basic template which cannot be customized by the mobile operator.
 
-<img src="images/standard_gateway_page.png" alt="Standard gateway page" title="Standard gateway page" />
+![Standard gateway page](images/standard_gateway_page.png)
 
 ## Enhanced Gateway page
 
