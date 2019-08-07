@@ -41,7 +41,7 @@ This is the service responsible for creation and delivery of a mobile operator's
 
 The following diagram shows a high-level overview of how the components described above are used in a typical flow to successfully activate a subscription and install an eSIM profile. Note that other flows are possible as well.
 
-<img src="images/mobile_plans_system_architecture.png" alt="Mobile Plans system architecture" title="Mobile Plans system architecture" />
+![Mobile Plans system architecture](images/mobile_plans_system_architecture.png)
 
 1. The Mobile Plans app is launched on the Windows 10 device, and retrieves basic functional data from the Mobile Plans service.
 2. The Mobile Plans app invokes the mobile operator web portal, and passes relevant parameters which can be used by the portal to determine which user experience to present.
