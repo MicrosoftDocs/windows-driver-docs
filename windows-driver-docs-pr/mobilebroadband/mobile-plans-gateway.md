@@ -39,7 +39,7 @@ The enhanced Gateway page is specified using a template with predefined elements
 
 ### Enhanced Gateway page content
 
-Content shown on the enhanced Gateway page is defined using a JSON file with the following elements:
+Custom content shown on the enhanced Gateway page is defined using a JSON file with the following elements:
 
 ```JSON
 { // Root object
@@ -48,19 +48,34 @@ Content shown on the enhanced Gateway page is defined using a JSON file with the
       "id": 0,
       "backgroundColor": "0x000000FF", // Black
       "bodyFontColor": "0xFFFFFFFF", // White
-      "buttonColor": "0x414243FF", // Grey
+      "buttonColor": "0x00B0F0FF", // Light Blue
       "buttonFontColor": "0xFFFFFFFF", // White
-      "bodyText": "We’ll help you find a plan so you can get connected when W-Fi isn’t available",
+      "bodyText": "Stay connected from virtually anywhere.",
       "buttonText": "Get started",
-      "hyperlinkColor": "0xBB8CF9FF", //Purple
+      "hyperlinkColor": "0x00B0F0FF", //Light Blue
       "images": [
         { // Image
-          "height": 480,
-          "uri": "https://content.windows.com/MO1/landing740x480.png",
+          "uri": "https://content.windows.com/MO1/gateway740x480.png",
           "width": 740,
+          "height": 480,
         }
       ]
     }
   ]
 }
 ```
+
+The following table describes each JSON element in the previous example.
+
+| JSON element | Field name | Description | Example |
+| --- | --- | --- | --- |
+| Root object | promotionTemplates | List of templates to be used for the enhanced Gateway page. One or more templates can be defined for each mobile operator. | N/A |
+| PromotionTemplate | id | Unique string identifier for each template. The default value when only one template is defined should be "0" | 123 |
+|   | backgroundColor | Color of the Gateway page background. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, white is used as the default. | 0x000000FF |
+|   | bodyFontColor | Color for the body text. This is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, black is used as the default. | 0xFFFFFFFF |
+|   | buttonColor | Color of the "Continue" button that launches the mobile operator web portal. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, the user-selected system highlight color is used as the default. | 0x00B0F0FF |
+|   | buttonFontColor | Color for the text on the "Continue" button. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, white is used as the default. | 0xFFFFFFFF |
+|   | bodyText | The localized body text for the client's language. Note that the Disclaimer text cannot be changed.| Stay connected from virtually anywhere. |
+|   | buttonText | The localized text for the "Continue" button. | Get started |
+|   | hyperlinkColor | Color of the hyperlinks. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, the user-selected system highlight color is used as the default. | 0x00B0F0FF |
+|   | images | Images to use for the template. Different sizes are supported. If multiple sizes are included, the Mobile Plans app uses the optimum size for the screen resolution. Maximum image size is 1200 x 600 pixels, file format *png*.|   |
