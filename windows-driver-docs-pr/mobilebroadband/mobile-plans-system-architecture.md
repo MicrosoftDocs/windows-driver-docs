@@ -49,4 +49,3 @@ The following diagram shows a high-level overview of how the components describe
 4. The mobile operator web portal returns the eSIM profile activation code to the Mobile Plans app
 5. The Mobile Plans app passes the activation code to the Windows LPA, which contacts the SM-DP+ server to retrieve the eSIM profile
 6. The eSIM profile is downloaded and installed to the Windows 10 device eSIM, and is activated. Upon activation, the Windows 10 device registers on the mobile operator network
-3. 
