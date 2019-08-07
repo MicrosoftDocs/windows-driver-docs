@@ -33,8 +33,34 @@ The Gateway page can be customized by the mobile operator by specifying the cont
 
 ### Enhanced Gateway page layout
 
-The enhanced Gateway page is specified using a template with the following elements.
+The enhanced Gateway page is specified using a template with predefined elements. The highlighted elements are definable by the mobile operator.
 
-<img src="images/enhanced_gateway_page_template.png" alt="Enhanced gateway page template" title="Enhanced gateway page template" />
+![Enhanced gateway page template](images/enhanced_gateway_page_template.png)
 
+### Enhanced Gateway page content
 
+Content shown on the enhanced Gateway page is defined using a JSON file with the following elements:
+
+```JSON
+{ // Root object
+  "promotionTemplates": [
+    { // PromotionTemplate
+      "id": 0,
+      "backgroundColor": "0x000000FF", // Black
+      "bodyFontColor": "0xFFFFFFFF", // White
+      "buttonColor": "0x414243FF", // Grey
+      "buttonFontColor": "0xFFFFFFFF", // White
+      "bodyText": "We’ll help you find a plan so you can get connected when W-Fi isn’t available",
+      "buttonText": "Get started",
+      "hyperlinkColor": "0xBB8CF9FF", //Purple
+      "images": [
+        { // Image
+          "height": 480,
+          "uri": "https://content.windows.com/MO1/landing740x480.png",
+          "width": 740,
+        }
+      ]
+    }
+  ]
+}
+```
