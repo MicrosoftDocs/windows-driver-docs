@@ -1,7 +1,7 @@
 ---
 title: Mobile Plans gateway page
 description: Mobile Plans gateway page
-ms.assetid: AA432EAE-A89B-4C4C-9539-BC2763091055
+ms.assetid: de4c7ae1-c0fc-4e6c-996c-e10f16b62d7e
 keywords:
 - Windows Mobile Plans mobile operators
 ms.author: windowsdriverdev
