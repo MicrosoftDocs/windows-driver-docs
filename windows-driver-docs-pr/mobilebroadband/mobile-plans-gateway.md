@@ -17,14 +17,6 @@ ms.technology: windows-devices
 
 The Mobile Plans app hosts a Gateway page for every mobile operator enabled in the catalog. The Gateway page is shown to the end user as part of the Welcome step. It contains basic brand elements for the mobile operator, as well as several links and a privacy disclaimer. The Gateway page also includes a button to invoke the mobile operator web portal.
 
-## Standard Gateway page
-
-The standard Gateway page is shown to the end when there is no enhanced Gateway page defined. The standard Gateway page can also be shown as a downgraded experiend when there is a problem loading content for a mobile operator's enhanced Gateway page.
-
-The standard Gateway page uses a basic template which cannot be customized by the mobile operator.
-
-![Standard gateway page](images/standard_gateway_page.png)
-
 ## Enhanced Gateway page
 
 This is an optional feature supported in Mobile Plans app version **5.1902.331.0** or above.
@@ -80,6 +72,8 @@ The following table describes each JSON element in the previous example.
 |   | hyperlinkFontColor | Color of the hyperlinks. This field is a hexadecimal string in the format of `0xRRGGBBAA`. If undefined, the user-selected system highlight color is used as the default. | 0x00B0F0FF |
 |   | images | Images to use for the template. Different sizes are supported. If multiple sizes are included, the Mobile Plans app uses the optimum size for the screen resolution. Maximum image size is 1200 x 600 pixels, file format *png*.| gateway740x480.png |
 
+### Sample enhanced Gateway page
+
 ![Mobile operator gateway page](images/mobile_operator_gateway_page.png)
 
 ### Using multiple Gateway page templates
@@ -94,3 +88,11 @@ Since the request includes identifiers for the profile and device, the mobile op
 The Get Offers request returns the template ID to be shown to the user.
 
 ![Mobile Plans Get Offers Callflow](images/mobile_plans_get_offers_callflow.png)
+
+## Standard Gateway page
+
+The standard Gateway page is shown to the end when there is no enhanced Gateway page defined. The standard Gateway page can also be shown as a downgraded experiend when there is a problem loading content for a mobile operator's enhanced Gateway page.
+
+The standard Gateway page uses a basic template which cannot be customized by the mobile operator.
+
+![Standard gateway page](images/standard_gateway_page.png)
