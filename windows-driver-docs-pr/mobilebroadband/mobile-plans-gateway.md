@@ -23,10 +23,18 @@ The standard Gateway page is shown to the end when there is no enhanced Gateway 
 
 The standard Gateway page uses a basic template which cannot be customized by the mobile operator.
 
-<img src="images/standard-gateway-page.png" alt="Standard gateway page" title="Standard gateway page" />
+<img src="images/standard_gateway_page.png" alt="Standard gateway page" title="Standard gateway page" />
 
 ## Enhanced Gateway page
 
 This is an optional feature supported in Mobile Plans app version **5.1902.331.0** or above.
 
-The standard landing page can be enhanced with mobile operator branding look and feel to highlight their offerings and unique brand value.
+The Gateway page can be customized by the mobile operator by specifying the content and style of the page. This ensures they can highlight their offerings and unique brand value.
+
+### Enhanced Gateway page layout
+
+The enhanced Gateway page is specified using a template with the following elements.
+
+<img src="images/enhanced_gateway_page_template.png" alt="Enhanced gateway page template" title="Enhanced gateway page template" />
+
+
