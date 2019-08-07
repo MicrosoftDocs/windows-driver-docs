@@ -1,5 +1,5 @@
 ---
-title: Mobile Plans eSIM download error handling
+title: Mobile Plans eSIM profile download error handling
 description: This topic describes the eSIM download error handling in Mobile Plans.
 ms.assetid: ADBE885A-76E9-4C1E-A729-40ABE58B77E1
 keywords:
@@ -8,7 +8,7 @@ ms.date: 03/25/2019
 ms.localizationpriority: medium
 ---
 
-# Mobile Plans eSIM download error handling
+# Mobile Plans eSIM profile download error handling
 
 ## Overview
 
