@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 
 ## Overview
 
-This topic describes the mobile operator web service API for a web portal that enables mobile operators to provide connectivity solutions directly to Windows users through a curated web experience hosted in the Mobile Plans app. You need to create your web experiences following these design policies and implement the web service API to make it reachable. This portal is used for all scenarios supported in the Mobile Plans solution.
+This topic describes the web portal that enables mobile operators to provide connectivity solutions directly to Windows users through a curated web experience hosted in the Mobile Plans app. Mobile operators must create their web experiences following these design principles to ensure users have a high quality experience while navigating their portal. The mobile operator web portal is used for all scenarios supported in the Mobile Plans solution and is hence one of the most important components in the program.
 
-For more info about Web portal flow and reference design, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design).
+For more info about web portal flow and reference design, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design).
 
-## Web Service API used for eSIM
+## Web Portal interface for eSIM-enabled devices
 
-The Mobile Plans app uses the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host the MO Direct experience. The app only trusts content returned by the Mobile Plans service.
+The Mobile Plans app uses the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host and present the mobile operator web portal experience. The portal is invoked by the app calling the mobile operator-hosted service endpoints directly, and returned content is rendered directly within the control
 
-When starting the `WebView`, the *eid*, *market*, *location*, *imei*, and *transactionId* parameters are passed to the MO web portal. If there is at least one eSIM profile matching the Mobile Operator that Mobile Plans is reaching, the *iccids* are passed to the portal as well.
+When starting the `WebView`, several parameters are passed to the portal as part of the invocation. If there is at least one eSIM profile associated with the mobile operator, the *iccids* are passed to the portal as well.
 
-The following example shows these launch parameters for eSIM, embedded in the call to `MyWebView.Navigate()`.
+The following example shows these launch parameters for eSIM-enabled devices, embedded in the call to `MyWebView.Navigate()`.
 
 ```C#
 MyWebView.ScriptNotify += MyWebView_ScriptNotify;
@@ -36,7 +36,7 @@ MyWebView.AllowedScriptNotifyUris = allowedUris;
 MyWebView.Navigate(“https://moportal.com?market=US&location=US&transactionId=%2F7RBTuSJt02OZbX8.4&eid=89033023422130000000000199055797&imei=001102000315468&iccids=8988247000101867183,8988247000103824828”);
 ```
 
-The Web Service API must disregard any additional parameters it might receive from the Mobile Plans app. This provides flexibility for introducing new features without breaking the Mobile Plans experience. Please check the documentation frequently to learn about new features.
+In order to provide backwards compatibility with app updates, the portal must disregard any additional parameters that might also be passed in the requst. This ensures flexibility and ability to introduce new features in the app without disrupting the mobile operator's integration.
 
 The following table describes the launch parameters available for eSIM.
 
@@ -55,9 +55,9 @@ The user’s language preference is sent using the Accept-Language header, descr
 | --- | --- | --- |
 | Accept-Language | The user’s current language settings. The MO portal should render the contents in the specified language if possible. For more information, see [RFC 7231, section 5.3.5: Accept-Language](https://tools.ietf.org/html/rfc7231#section-5.3.5). | `Accept-Language: en-us` |
 
-## Web Service API used for a physical SIM
+## Web Portal interface for physical SIMs
 
-The mobile operator portal for a physical SIM is the same as for eSIM. However, there is a difference in which parameters are passed to the portal. The parameters passed are: *market*, *location*, *imei*, *iccid*, and *transactionId*.
+The interface for invoking the mobile operator portal using legacy physical UICC is the same as for eSIM. However, the parameters passed to the portal are different.
 
 ```C#
 MyWebView.Navigate(“https://moportal.com?iccid=8988247000100003319&imei=001102000311608&market=us&transactionId=waoigFfX00yGH3Vb.1&location=us”);
@@ -80,19 +80,20 @@ The user’s language preference is sent using the Accept-Language header, descr
 
 ## Web portal design policies
 
-To ensure the best user experience on Windows, you should adhere to the policies in this section when developing the MO Direct experience. These policies are supplementary to the terms and conditions of the *Mobile Plans* Partner Addendum, [Windows App Developer Agreement](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement) and [Microsoft Store Policies](https://docs.microsoft.com/legal/windows/agreements/store-policies).
+To ensure the best user experience on Windows, mobile operators are encouraged to follow the policies and guidelines in this section when developing their web portal.
 
 ### Business functions
 
 | Policy                                                                                                                                                                                                                                                                           | Required or Recommended |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| The MO Direct experience must meet all applicable legal and regulatory requirements in the countries offered. Any content displayed in the MO Direct portal must comply with all applicable laws.                                                                                | Required                |
-| Products offered through the MO Direct experience must be an offer for network connectivity.                                                                                                                                                                                     | Required                |
-| Network connectivity products offered through the MO Direct experience must have clear information on service details. Any specific terms of service must be available for users to review before purchase in the MO Direct experience.                                          | Required                |
-| Customer support contact information must be accessible to users in the MO Direct experience.                                                                                                                                                                                    | Required                |
-| The privacy policy must be available for users to review in the MO Direct experience.                                                                                                                                                                                            | Required                |
-| The account management experience provided by an MO, which can be within the MO Direct experience, a separate and dedicated account management portal, or a dedicated MO app, should enable users to take actions on their current data plans, such as canceling a subscription. | Required                |
-| Users will receive an order confirmation after purchasing a data plan from the MO Direct experience successfully.                                                                                                                                                                | Recommended             |
+| The web portal experience must meet all applicable legal and regulatory requirements in the countries offered. Any content displayed in the web portal must comply with all applicable laws. | Required |
+| Products offered through the web portal experience must be an offer for network connectivity. | Required |
+| Network connectivity products offered through the web portal experience must include clear descriptions of the offering and terms. Any specific terms of service must be available for users to review from within the web portal experience. | Required |
+| Customer support contact information must be accessible to users from within the web portal experience. | Required |
+| The mobile operator's privacy policy must be available for users to review from within the web portal experience. | Required |
+| The account management experience provided by the mobile operator must enable users to take actions on their current data plans, such as canceling a subscription. | Required |
+| Users must receive an order confirmation after successfully completing a plan purchase or activation from within the web portal experience. | Recommended |
+
 
 ### Security
 
