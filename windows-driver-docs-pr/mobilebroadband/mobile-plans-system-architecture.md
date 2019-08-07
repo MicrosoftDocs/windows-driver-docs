@@ -43,9 +43,11 @@ The following diagram shows a high-level overview of how the components describe
 
 <img src="images/mobile_plans_system_architecture.png" alt="Mobile Plans system architecture" title="Mobile Plans system architecture" />
 
-1. The Mobile Plans app is launched on the Windows 10 device, and retrieves basic functional data from the Mobile Plans service
-2. The Mobile Plans app invokes the mobile operator web portal, and passes relevant parameters which can be used by the portal to determine which user experience to present
-3. Upon completion of the activation flow within the mobile operator web portal, the mobile operator requests an eSIM profile from the SM-DP+ server. The corresponding eSIM activation code is returned to the mobile operator web portal
-4. The mobile operator web portal returns the eSIM profile activation code to the Mobile Plans app
-5. The Mobile Plans app passes the activation code to the Windows LPA, which contacts the SM-DP+ server to retrieve the eSIM profile
-6. The eSIM profile is downloaded and installed to the Windows 10 device eSIM, and is activated. Upon activation, the Windows 10 device registers on the mobile operator network
+1. The Mobile Plans app is launched on the Windows 10 device, and retrieves basic functional data from the Mobile Plans service.
+2. The Mobile Plans app invokes the mobile operator web portal, and passes relevant parameters which can be used by the portal to determine which user experience to present.
+3. Upon completion of the activation flow within the mobile operator web portal, the mobile operator requests an eSIM profile from the SM-DP+ server. The corresponding eSIM activation code is returned to the mobile operator web portal.
+4. The mobile operator web portal returns the eSIM profile activation code to the Mobile Plans app.
+5. The Mobile Plans app passes the activation code to the Windows LPA, which contacts the SM-DP+ server to retrieve the eSIM profile.
+6. The eSIM profile is downloaded and installed to the Windows 10 device eSIM, and is activated. Upon activation, the Windows 10 device registers on the mobile operator network.
+7. The user opens the Windows network flyout, which invokes a request to the Mobile Plans service to fetch the available balance.
+8. The Mobile Plans service makes a Get Balance request to the Mobile Operator API, which returns the available balance to be displayed to the user.
