@@ -1,25 +1,25 @@
 ---
-title: Mobile Plans Windows 10 device experience
-description: This topic describes the Windows device experience after Mobile Plans activates.
+title: Mobile Plans account management
+description: This topic describes the expeirence for account management with Mobile Plans.
 ms.assetid: E97AD441-86F7-439C-9800-7DD93AAC0545
 keywords:
-- Windows Mobile Plans device experience, Mobile Plans mobile operators
+- Windows Mobile Plans account management, Mobile Plans mobile operators
 ms.date: 03/15/2019
 ms.localizationpriority: medium
 ---
 
-# Mobile Plans Windows 10 device experience
+# Mobile Operator account management in Windows 10
 
-This topic describes the capabilities that the Mobile Plans program offers to ensure that mobile operator customers' experiences align with the mobile operator offerings.
+This topic describes the mobile operator account management experience provided by Windows, which can be extended with Mobile Plans.
 
-## Basic device experience
+## Basic account management experience
 
 This section describes the options to configure what the *View my account* link shows in the Windows Connection Manager, also known as also known as the network flyout.
 
 The *View my account* link could be configured to:
 
 - Launch a web browser and open a defined web page.
-- Launch the Mobile Plans app and open the Mobile Plans Web Portal.
+- Launch the Mobile Plans app and open the mobile operator web portal.
 
  Once you have decided on one of these options, please request a COSA database update to implement the right behavior. For more info, please see [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
@@ -32,15 +32,15 @@ The following image shows an example of the network flyout:
 
 <img src="images/mobile_plans_network_flyout_basic.png" alt="Windows Connection Manager showing basic MO" title="Windows Connection Manager showing basic MO" width="250" />
 
-## Enhanced device experience
+## Enhanced account management experience
 
-By implementing the enhanced device experience, you can offer these benefits to your customers:
+By implementing the enhanced account management experience, you can offer these benefits to your customers:
 
-- Customers can see how much data is available, and the amount of time left until their subscriptions expire, in the network flyout.
+- Customers can see how much data is available, and the amount of time left until their subscriptions expires, in the network flyout.
 - Customers can top up their prepaid subscriptions over mobile connectivity, even when they run out of prepaid balance or their subscriptions has expired.
 - You can manage your network flyout offering based on customer's subscription status.
 
-These experiences build on top of the [basic device experience](#basic-device-experience), which is the default experience in the device network flyout.
+These experiences build on top of the [basic account management experience](#Basic-account-management-experience), which is the default experience in the device network flyout.
 
 ### Network flyout user experience
 
@@ -49,7 +49,7 @@ Depending on the information that is received from `GetBalance` API calls, the n
 The network flyout has the following elements:
 
 1. Connect with a data plan. This launches the Mobile Plans app.
-2. View my account. Behaves based on the [basic device experience](#basic-device-experience).
+2. View my account. Behaves based on the [basic account management experience](#Basic-account-management-experience).
 3. Balance information. Shows the balance available, which is provided in your `GetBalance` response.
 
 The following image shows these network flyout elements. Connect with a data plan corresponds with A, View my account corresponds with B, and Balance information corresponds with C.
@@ -78,7 +78,7 @@ The `GetBalance` API queries current subscription status, controls whether the M
 
 ### Resource model
 
-Communication between the Mobile Plans service and the MO service involves manipulating the resources in the following diagram. Explanations for each resource are in the tables following the diagram.
+Communication between the Mobile Plans service and the Mobile Operator API involves manipulating the resources in the following diagram. Explanations for each resource are in the tables following the diagram.
 
 <img src="images/mobile_plans_get_balance_resource.png" alt="GetBalance API resource model diagram" title="GetBalance API resource model diagram" width="600" />
 
@@ -209,7 +209,7 @@ X-MS-DM-TransactionId: “12345”
 
 ### Authentication
 
-Communication between the Mobile Plans service and the mobile operator service must be authenticated using the Mutual Transport Layer Security (MTLS). Microsoft provides a certificate for you to use to validate the identity of the requester to **moBaseUrl**.
+Communication between the Mobile Plans service and the Mobile Operator API must be authenticated using the Mutual Transport Layer Security (MTLS). Microsoft provides a certificate for you to use to validate the identity of the requester to **moBaseUrl**.
 
 Microsoft provides the certificate during the onboarding process.
 
@@ -226,38 +226,3 @@ The following COSA settings are required:
 For more info about all supported fields, see the Desktop COSA-only settings on [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
 
 To download the COSA/APN update spreadsheet, click [here](https://go.microsoft.com/fwlink/p/?linkid=851213).
-
-## Walled Garden
-
-*Walled Garden* is key to supporting your customers when they run out of data. It enables them to reach the MO Direct portal even when there is no alternative internet connection such as Wi-Fi. This will enable consumers to purchase additional data plans and manage their subscriptions.
-
-> [!NOTE]
-> The Mobile Plans architecture does not support IP ranges for Walled Garden endpoints. Host names must be used for whitelisting.
-
-The MO Direct web portal and `GetBalance` API endpoint must also be part of this Walled Garden.
-
-### Walled Garden endpoints
-
-There are only a small number of required endpoints that are always accessible to end users. The following table defines the endpoints required for Walled Garden.
-
-| URL | HTTP/HTTPS |
-| --- | --- |
-| service.datamart.windows<span></span>.com | https |
-| dogfood.datamart.windows<span></span>.com | https |
-| windows.policies.live<span></span>.net | https |
-| ctldl.windowsupdate<span></span>.com | http |
-| cdp1.public-trust<span></span>.com | http |
-| ocsp.omniroot<span></span>.com | http |
-| vassg142.ocsp.omniroot<span></span>.com | http |
-| vassg142.crl.omniroot<span></span>.com | http |
-| mscrl.microsoft<span></span>.com | http |
-| crl.microsoft<span></span>.com | http |
-| www.msftconnecttest<span></span>.com | http |
-| crl3.digicert<span></span>.com | http |
-| Ocsp.digicert<span></span>.com | http |
-| login.live<span></span>.com | http + https |
-| storagetos.datamart.windows<span></span>.com | http + https |
-| mps.datamart.windows<span></span>.com | http + https |
-| mps-service.datamart.windows<span></span>.com | http + https |
-| staging.datamart.windows<span></span>.com | http + https |
-| mps-staging.datamart.windows<span></span>.com | http + https |
