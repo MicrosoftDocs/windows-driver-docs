@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Sensor PropVariant helpers
 
-The PropVariant helper functions are used by the v2 sensor drivers for manipulating the [PROPVARIANT](https://docs.microsoft.com/windows/win32/api/propidlbase/ns-propidlbase-propvariant) structures associated with sensors. All of these are used by the sensor Device Driver Software Interface (DDSI). 
+The PropVariant helper functions are used by the v2 sensor drivers for manipulating the [PROPVARIANT](https://docs.microsoft.com/windows/win32/api/propidlbase/ns-propidlbase-propvariant) structures associated with sensors.
 
 The helper functions are used along with the sensor device driver software interface (DDSI).
 
