@@ -8,7 +8,7 @@ ms.date: 03/25/2019
 ms.localizationpriority: medium
 ---
 
-# Mobile Plans Mobile Operator web portal
+# Mobile operator web portal
 
 ## Overview
 
