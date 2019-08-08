@@ -24,7 +24,7 @@ This section describes the steps a mobile operator should take to download, inst
    2. [Asynchronous connectivity](mobile-plans-callback-notifications.md#asynchronous-connectivity). This callback method should be used when the eSIM profile is already available for release by the SM-DP+ server, however the device needs to wait some time before attempting to register on the cellular network.
    3. [Delayed profile download](mobile-plans-callback-notifications.md#delayed-esim-profile-download-and-activation). This callback method should be used when the profile is not available to be released by the SM-DP+ server, and can only be downloaded after a period of time. It is expected that the device will be able to register on the cellular network once the profile is downloaded and installed.
 3. Ensure proper [handling of profile download errors](mobile-plans-eSIM-error-handling.md).
-4. Implement the [basic account management experience] for users to manage and maintain their account (mobile-plans-device-experience.md#basic-device-experience).
+4. Implement the [basic account management experience](mobile-plans-device-experience.md#basic-device-experience) for users to manage and maintain their account.
 
 ## Activate a warm SIM in a Windows device
 
