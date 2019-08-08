@@ -93,6 +93,8 @@
       items:
       - name: "Tools in the BTP software package"
         href: testing-BTP-software-package.md
+      - name: "Supported BTP hardware configurations"
+        href: testing-BTP-supported-hardware.md
       - name: "Setting up BTP"
         href: testing-BTP-setup.md
       - name: "Testing Bluetooth Pairing"
