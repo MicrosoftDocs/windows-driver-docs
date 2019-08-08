@@ -40,7 +40,7 @@ By implementing the enhanced account management experience, you can offer these 
 - Customers can top up their prepaid subscriptions over mobile connectivity, even when they run out of prepaid balance or their subscriptions has expired.
 - You can manage your network flyout offering based on customer's subscription status.
 
-These experiences build on top of the [basic account management experience](#Basic-account-management-experience), which is the default experience in the device network flyout.
+These experiences build on top of the [basic account management experience](#basic-account-management-experience), which is the default experience in the device network flyout.
 
 ### Network flyout user experience
 
@@ -49,7 +49,7 @@ Depending on the information that is received from `GetBalance` API calls, the n
 The network flyout has the following elements:
 
 1. Connect with a data plan. This launches the Mobile Plans app.
-2. View my account. Behaves based on the [basic account management experience](#Basic-account-management-experience).
+2. View my account. Behaves based on the [basic account management experience](#basic-account-management-experience).
 3. Balance information. Shows the balance available, which is provided in your `GetBalance` response.
 
 The following image shows these network flyout elements. Connect with a data plan corresponds with A, View my account corresponds with B, and Balance information corresponds with C.
