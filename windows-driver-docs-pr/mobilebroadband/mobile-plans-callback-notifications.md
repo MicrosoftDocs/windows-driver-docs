@@ -25,13 +25,16 @@ Transactions that the web portal supports include, but are not limited to, the f
 > [!NOTE]
 > The callback notification must be returned from the host defined in the mobile operator's [Service configuration](mobile-plans-service-configuration.md).
 
-## Immediate eSIM profile download and activation
+## Inline profile download and connectivity
 
-The following diagram shows the call flow for downloading an eSIM profile in the background, while remaining in the mobile operator web portal. This enables the portal to show additional content, such as an account management page.
+The callback method should be used when performing an eSIM profile download in the background while keeping the user in the mobile operator web portal. This enables the portal to show additional content, such as an account management page, after the profile download is completed. Additionally, it is expected that the profile will enable the device to register on the cellular network immediately upon activation, with no time delay required.
+
+
+The following diagram shows the call flow for an inline profile download callback:
 
 ![Mobile Plans inline profile download sequence diagram](images/mobile_plans_inline_profile_flow.png)
 
-This is a revised version of the [Inline profile delivery](mobile-plans-legacy-callback-notifications.md#inline-profile-delivery) callback, which can be found in the Appendix documentation.
+This is a revised version of the legacy [Inline profile delivery](mobile-plans-legacy-callback-notifications.md#inline-profile-delivery) callback, which can be found in the Appendix for documentation purposes. It is recommended that mobile operators use the revised callback method above.
 
 ### MobilePlansInlineOperations.notifyProfileDownload(purchaseMetaData, activationCode)
 
