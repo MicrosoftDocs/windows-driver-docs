@@ -20,7 +20,7 @@ This section describes the steps a mobile operator should take to download, inst
 
 1. Develop the [mobile operator web portal](mobile-plans-web-portal.md#web-service-api-used-for-esim) that will take the user through the sign in and activation steps.
 2. Implement one of the supported callback methods to return control back to the Mobile Plans app for download of the eSIM profile:
-   1. [Inline profile download and connectivity](mobile-plans-callback-notifications.md#inline-esim-profile-download-and-activation) - This callback method should be used when the profile is already available to be released by the SM-DP+ server, AND the profile will enable the device to register on the cellular network immediately upon profile activation. This method enables profile delivery and network connection as part of the same end user flow.
+   1. [Inline profile download and connectivity](mobile-plans-callback-notifications.md#inline-profile-download-and-connectivity) - This callback method should be used when the profile is already available to be released by the SM-DP+ server, AND the profile will enable the device to register on the cellular network immediately upon profile activation. This method enables profile delivery and network connection as part of the same end user flow.
    2. [Asynchronous connectivity](mobile-plans-callback-notifications.md#asynchronous-connectivity). This callback method should be used when the eSIM profile is already available for release by the SM-DP+ server, however the device needs to wait some time before attempting to register on the cellular network.
    3. [Delayed profile download](mobile-plans-callback-notifications.md#deferred-esim-profile-download-and-activation). This callback method should be used when the profile is not available to be released by the SM-DP+ server, and can only be downloaded after a period of time. It is expected that the device will be able to register on the cellular network once the profile is downloaded and installed.
 3. Ensure proper [handling of profile download errors](mobile-plans-eSIM-error-handling.md).
@@ -28,7 +28,7 @@ This section describes the steps a mobile operator should take to download, inst
 
 ## Activate a warm SIM in a Windows device
 
-This section describes the steps involved to allow users to activate a warm phsycial SIM in a Windows device. The term 'warm' refers to a SIM which has been preactivated and can connect to the mobile operator network, but has not been associated with an active subscription.
+This section describes the steps to allow users to activate a warm phsycial SIM in a Windows device. The term 'warm' refers to a SIM which has been preactivated and can connect to the mobile operator network, but has not been associated with an active subscription.
 
 1. Implement the [mobile operator web portal](mobile-plans-web-portal.md#web-service-api-used-for-a-physical-sim) that will walk the user through the sign in and activation steps.
 2. Implement the callback method for [adding balance](mobile-plans-callback-notifications.md#adding-balance).
