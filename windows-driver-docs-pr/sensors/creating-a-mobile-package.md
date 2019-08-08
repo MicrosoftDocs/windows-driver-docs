@@ -8,7 +8,6 @@ ms.localizationpriority: medium
 
 # Creating a mobile package
 
-
 This topic provides information about creating a package for installing the sample driver on a mobile device.
 
 Perform the following tasks to create a package for the sample driver.
@@ -59,8 +58,6 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
 >[!NOTE]
 > The value of the **Security InfSectionName** element must be exactly the same as the value of the **AddReg** field discussed in this topic: [Review the INX file](review-and-revise-the-inf-file.md).
 
- 
-
 2. In the main menu in Notepad, click **File** &gt; **Save As**, then in the **Save As** dialog window, use the dropdown box to set the **Save as type** field to **All Files**.****
 
 3. In the **File name** text box, type the following:
@@ -70,15 +67,14 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
 
 After creating the *adxl345acc.pkg.xml* file as shown in the preceding steps, you can also use the **pkggen.exe** tool that's included with the Windows Driver Kit (WDK), to package the file.
 
-If you installed the WDK to the default location, then you can find **pkggen.exe** in the following location:
+If you installed the WDK to the default location, then you can find **pkggen.exe** in the following location: *%WPDKCONTENTROOT%\Tools\bin\i386*
 
-*%SystemRoot%\\Program Files (x86)\\Windows Kits\\10\\Tools\\bin\\i386*
-Refer to [Run the pkggen.exe tool](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)#run-pkg), for instructions on how to create a package for your mobile device. And see [Creating mobile packages](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)) for a more comprehensive introduction.
+Refer to [Command-line arguments for package generator](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/command-line-arguments-for-package-generator) for instructions on how to create a package for your mobile device. See [Creating Mobile Pacakages](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)) for a more comprehensive introduction.
 
 ## Related topics
+
 [Creating mobile packages](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85))
+
 [Review the INX file](review-and-revise-the-inf-file.md)
-[Run the pkggen.exe tool](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)#run-pkg)
 
-
-
+[Command-line arguments for package generator](https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile/command-line-arguments-for-package-generator)
