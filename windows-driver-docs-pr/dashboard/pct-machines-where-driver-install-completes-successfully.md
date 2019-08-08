@@ -18,7 +18,7 @@ When a driver fails to install correctly, the targeted component can lose functi
 
 |Attribute|Value|
 |----|----|
-|**Audience**|PNP measures capture data from any machine that conforms to CHID/HWID targeting, even if they got the driver outside of a flight|
+|**Audience**|Expanded|
 |**Time period**|30 day sliding window|
 |**Measurement criteria**|Percentage of Machines|
 |**Minimum population**|100 machines|

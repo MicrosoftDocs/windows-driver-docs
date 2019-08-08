@@ -14,16 +14,18 @@ ms.localizationpriority: medium
 
 During a user’s session, a crash in the graphics driver binary can cause the machine’s screen to hang or appear completely frozen. A Timeout Detection and Recovery (TDR) event attempts to detect these hangs and dynamically recover to unfreeze the display. Users that have encountered a TDR will be unable to use their computer until the TDR is successful, which causes the screen to flicker. This measure is evaluating what percent of machines with the driver encounter a TDR.
 
+There are two versions of this measure, one with a standard audience and the other with an expanded audience. 
+
 ## Measure attributes
 
 |Attribute|Value|
 |----|----|
-|**Audience**|Standard|
+|**Audience**|Standard, Expanded|
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|5,000|
 |**Passing criteria**|<= 130/10,000 machines experience a TDR|
-|**Measure ID**|7802921|
+|**Measure ID**|7802921, 20574707|
 
 ## Calculation
 

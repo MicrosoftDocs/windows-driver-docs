@@ -18,7 +18,7 @@ After a successful install, machines can experience post-install PnP errors that
 
 |Attribute|Value|
 |----|----|
-|**Audience**|PNP measures capture data from any machine that conforms to CHID/HWID targeting, even if the driver came from outside of Windows Update|
+|**Audience**|Expanded|
 |**Time period**|30 day sliding window|
 |**Measurement criteria**|Percentage of Machines|
 |**Minimum population**|100 machines|

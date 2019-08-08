@@ -15,15 +15,19 @@ Each measure definition has a section, *Measure attributes*, listing the values 
 
 ## Audience types
 
-There are two types of flighting audiences: the **standard audience** and the **ecosystem audience**.
+Microsoft defines an audience as the set of machines that can download a flighted, gradually rolled-out, or released driver. These drivers can be delivered to machines by Windows Update (WU) or a 3rd party downloader. There are 3 types of audiences: **standard audiences**, **expanded audiences**, and **ecosystem audiences**.
 
 ### Standard audience
 
-The HWIDs, CHIDs, OS Floors & Ceilings, and other targeting constraints defined during a driver’s submission determine what machines are eligible to download the driver. Microsoft calls the set of machines in WIP defined by the driver’s targeting the Flighting Audience and calls the set of targeted machines in the retail market the Retail Audience; these audiences are considered **standard audiences**.
+Measures with standard audiences only collect telemetry from machines that received the driver directly from WU and align with the driver’s targeting constraints set during submission, like HWID, CHID, OS Floors and Ceilings. 
+
+### Expanded audience
+
+Measures with expanded audiences collect telemetry from machines that align with a driver’s targeting constraints and received the driver from any source, including 3rd party downloaders.
 
 ### Ecosystem audience
 
-Some measures expand data collection beyond the driver’s submitted HWID, CHID, and OS targets, to reduce sampling noise and increase the measure’s statistical significance. These measures collect additional telemetry from machines that received an identical driver from a different source than the flight. A driver is considered identical to the flighted driver when it has the same Driver INF Version, Driver INF Date, and Architecture. Measures that expand telemetry collection have an **ecosystem audience**.
+Measures with ecosystem audiences expand data collection beyond a driver’s targeting constraints to reduce sampling noise and increase the measures’ statistical significance. These measures collect telemetry from any machine that downloaded the driver from any source, including untargeted machines that downloaded an identical version of the driver. 
 
 ## Time period
 

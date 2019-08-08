@@ -14,16 +14,18 @@ ms.localizationpriority: medium
 
 During a user’s session, a crash in the graphics driver binary causes a blue screen, which restarts the machines and can interrupt a user’s workflow. This measure is evaluating how many machines with the driver are encountering blue screens due to a crash in the graphics driver binary.
 
+There are two versions of this measure, one with a standard audience and the other with an expanded audience. 
+
 ## Measure attributes
 
 |Attribute|Value|
 |----|----|
-|**Audience**|Standard|
+|**Audience**|Standard, Expanded|
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|<= 30 / 10,000 machines experience a blue screen|
 |**Passing criteria**|5,000|
-|**Measure ID**|7802933|
+|**Measure ID**|7802933, 20574588|
 
 ## Calculation
 
