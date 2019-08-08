@@ -32,9 +32,9 @@ This section describes the steps invovled in adding balance for an existing cust
 
 1. Develop the [mobile operator web portal](mobile-plans-web-portal.md).
 2. Implement the callback method for [adding balance](mobile-plans-callback-notifications.md#adding-balance).
-3. Implement the [enhanced account management experience](mobile-plans-device-experience.md#enhanced-device-experience).
-   1. Implement the [GetBalance method](mobile-plans-device-experience.md#getbalance-api) as part of the mobile operator API, allowing the user's balance to be shown in the Windows network flyout.
-   2. Implement the [Walled Garden](mobile-plans-device-experience.md#walled-garden) so users can navigate to the mobile operator web portal even if they don't have balance remaining.
+3. Implement the [enhanced account management experience](mobile-plans-account-management.md#enhanced-account-management-experience).
+   1. Implement the [GetBalance method](mobile-plans-account-management.md#getbalance-api) as part of the mobile operator API, allowing the user's balance to be shown in the Windows network flyout.
+   2. Implement the [Walled Garden](mobile-plans-walled-garden.md) so users can navigate to the mobile operator web portal even if they don't have balance remaining.
 
 ## Activate a warm SIM in a Windows device
 
@@ -42,9 +42,9 @@ This section describes the steps involved to allow users to activate a warm SIM 
 
 1. Implement the [mobile operator web portal](mobile-plans-web-portal.md#web-service-api-used-for-a-physical-sim).
 2. Implement callback method for [adding balance](mobile-plans-callback-notifications.md#adding-balance).
-3. Implement the [enhanced account management experience](mobile-plans-device-experience.md#enhanced-device-experience).
-   1. Implement the [GetBalance method](mobile-plans-device-experience.md#getbalance-api) as part of the mobile operator API.
-   2. Implement the [Walled Garden](mobile-plans-device-experience.md#walled-garden).
+3. Implement the [enhanced account management experience](mobile-plans-account-management.md#enhanced-account-management-experience).
+   1. Implement the [GetBalance method](mobile-plans-account-management.md#getbalance-api) as part of the mobile operator API.
+   2. Implement the [Walled Garden](mobile-plans-account-management.md#walled-garden).
 
 ## Cancelling a transaction
 
