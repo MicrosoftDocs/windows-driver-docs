@@ -863,25 +863,22 @@
       - name: "Accessing Configuration Information for a Filter Driver"
         href: accessing-configuration-information-for-a-filter-driver.md
   - name: "NDIS Intermediate Drivers"
-# Auto-expanded node
     items: 
-    - name: "NDIS Intermediate Drivers"
+    - name: "NDIS Intermediate Drivers Guide"
       href: ndis-intermediate-drivers2.md
     - name: "Roadmap for Developing NDIS Intermediate Drivers"
       href: roadmap-for-developing-ndis-intermediate-drivers.md
     - name: "Introduction to NDIS Intermediate Drivers"
-# Auto-expanded node
       items: 
-      - name: "Introduction to NDIS Intermediate Drivers"
+      - name: "NDIS Intermediate Drivers Overview"
         href: introduction-to-ndis-intermediate-drivers.md
       - name: "NDIS Filter Intermediate Drivers"
         href: ndis-filter-intermediate-drivers.md
       - name: "NDIS MUX Intermediate Drivers"
         href: ndis-mux-intermediate-drivers.md
     - name: "Writing NDIS Intermediate Drivers"
-# Auto-expanded node
       items: 
-      - name: "Writing NDIS Intermediate Drivers"
+      - name: "Getting started writing NDIS Intermediate Drivers"
         href: writing-ndis-intermediate-drivers.md
       - name: "Initializing an Intermediate Driver"
         href: initializing-an-intermediate-driver.md
@@ -893,13 +890,11 @@
         href: initializing-a-virtual-miniport.md
       - name: "Halting a Virtual Miniport"
         href: halting-a-virtual-miniport.md
-    - name: "Intermediate Driver Design Concepts"
-# Auto-expanded node
+    - name: "Designing an NDIS Intermediate Driver"
       items: 
       - name: "Intermediate Driver Design Concepts"
         href: intermediate-driver-design-concepts.md
-      - name: "Intermediate Driver DriverEntry Function"
-# Auto-expanded node
+      - name: "Intermediate Driver Entry and Registration"
         items: 
         - name: "Intermediate Driver DriverEntry Function"
           href: intermediate-driver-driverentry-function.md
@@ -909,8 +904,7 @@
           href: registering-an-intermediate-driver-as-a-miniport-driver.md
         - name: "Registering an Intermediate Driver as a Protocol"
           href: registering-an-intermediate-driver-as-a-protocol.md
-      - name: "Dynamic Binding in an Intermediate Driver"
-# Auto-expanded node
+      - name: "Intermediate Driver Dynamic Bindings"
         items: 
         - name: "Dynamic Binding in an Intermediate Driver"
           href: dynamic-binding-in-an-intermediate-driver.md
@@ -922,8 +916,7 @@
           href: initializing-virtual-miniports.md
         - name: "Intermediate Driver Unbinding Operations"
           href: intermediate-driver-unbinding-operations.md
-      - name: "Intermediate Driver Query and Set Operations"
-# Auto-expanded node
+      - name: "Query and Set Operations in an Intermediate Driver"
         items: 
         - name: "Intermediate Driver Query and Set Operations"
           href: intermediate-driver-query-and-set-operations.md
@@ -934,10 +927,7 @@
       - name: "Intermediate Driver Network Data Management"
         href: intermediate-driver-network-data-management.md
       - name: "Receiving Data in an Intermediate Driver"
-# Auto-expanded node
         items: 
-        - name: "Receiving Data in an Intermediate Driver"
-          href: receiving-data-in-an-intermediate-driver.md
         - name: "Receiving Data in an Intermediate Driver with a Connectionless Lower Edge"
           href: receiving-data-in-an-intermediate-driver-with-a-connectionless-lower-e.md
         - name: "Receiving Data in an Intermediate Driver with a Connection-Oriented Lower Edge"
@@ -946,8 +936,7 @@
           href: indicating-receive-network-data-to-higher-level-drivers.md
       - name: "Transmitting Network Data Through an Intermediate Driver"
         href: transmitting-network-data-through-an-intermediate-driver.md
-      - name: "Handling PnP Events and Power Management Events in an Intermediate Driver"
-# Auto-expanded node
+      - name: "Intermediate Driver PnP Events and Power Management Events"
         items: 
         - name: "Handling PnP Events and Power Management Events in an Intermediate Driver"
           href: handling-pnp-events-and-power-management-events-in-an-intermediate-dri.md
@@ -963,8 +952,7 @@
         href: intermediate-driver-reset-operations.md
       - name: "Status Indications in an Intermediate Driver"
         href: status-indications-in-an-intermediate-driver.md
-    - name: "Installing an Intermediate Driver"
-# Auto-expanded node
+    - name: "Intermediate Driver Installation"
       items: 
       - name: "Installing an Intermediate Driver"
         href: installing-an-intermediate-driver.md
@@ -975,14 +963,12 @@
       - name: "Intermediate Driver Notify Object"
         href: intermediate-driver-notify-object.md
   - name: "Connection-Oriented NDIS"
-# Auto-expanded node
     items: 
-    - name: "Connection-Oriented NDIS"
+    - name: "Introduction to Connection-Oriented NDIS"
       href: connection-oriented-ndis.md
     - name: "Connection-Oriented Environment"
       href: connection-oriented-environment.md
-    - name: "Using AFs, VCs, SAPs, and Parties"
-# Auto-expanded node
+    - name: "AFs, VCs, SAPs, and Parties in CoNDIS"
       items: 
       - name: "Using AFs, VCs, SAPs, and Parties"
         href: using-afs--vcs--saps--and-parties.md
@@ -996,8 +982,7 @@
         href: parties.md
     - name: "Quality of Service"
       href: quality-of-service.md
-    - name: "MCM Drivers vs. Call Managers"
-# Auto-expanded node
+    - name: "Differences between MCM Drivers and Call Managers"
       items: 
       - name: "MCM Drivers vs. Call Managers"
         href: mcm-drivers-vs--call-managers.md
@@ -1010,10 +995,7 @@
     - name: "Connection-Oriented Timing Features"
       href: connection-oriented-timing-features.md
     - name: "CoNDIS Registration"
-# Auto-expanded node
       items: 
-      - name: "CoNDIS Registration"
-        href: condis-registration.md
       - name: "CoNDIS Miniport Driver Registration"
         href: condis-miniport-driver-registration.md
       - name: "CoNDIS Client Registration"
@@ -1023,23 +1005,16 @@
       - name: "CoNDIS MCM Registration"
         href: condis-mcm-registration.md
     - name: "Connection-Oriented Operations"
-# Auto-expanded node
       items: 
-      - name: "Connection-Oriented Operations"
-        href: connection-oriented-operations.md
       - name: "Summary of Connection-Oriented Operations"
-# Auto-expanded node
         items: 
-        - name: "Summary of Connection-Oriented Operations"
-          href: summary-of-connection-oriented-operations.md
         - name: "Connection-Oriented Operations Performed by Clients"
           href: connection-oriented-operations-performed-by-clients.md
         - name: "Connection-Oriented Operations Performed by Call Managers"
           href: connection-oriented-operations-performed-by-call-managers.md
         - name: "Connection-Oriented Operations Performed by Miniport Drivers"
           href: connection-oriented-operations-performed-by-miniport-drivers.md
-      - name: "Operations on Address Families and SAPs"
-# Auto-expanded node
+      - name: "Address Families and SAP operations"
         items: 
         - name: "Operations on Address Families and SAPs"
           href: operations-on-address-families-and-saps.md
@@ -1050,19 +1025,15 @@
         - name: "Deregistering a SAP"
           href: deregistering-a-sap.md
         - name: "Closing an Address Family"
-# Auto-expanded node
           items: 
-          - name: "Closing an Address Family"
+          - name: "Closing an Address Family Overview"
             href: closing-an-address-family.md
           - name: "Closing a CoNDIS Call Manager or MCM"
             href: closing-a-condis-call-manager-or-mcm.md
           - name: "Closing an Address Family in a CoNDIS Client"
             href: closing-an-address-family-in-a-condis-client.md
       - name: "Operations on VCs"
-# Auto-expanded node
         items: 
-        - name: "Operations on VCs"
-          href: operations-on-vcs.md
         - name: "Creating a VC"
           href: creating-a-vc.md
         - name: "Activating a VC"
@@ -1072,36 +1043,26 @@
         - name: "Deleting a VC"
           href: deleting-a-vc.md
       - name: "Setting Up a Call"
-# Auto-expanded node
         items: 
-        - name: "Setting Up a Call"
-          href: setting-up-a-call.md
         - name: "Making a Call"
           href: making-a-call.md
         - name: "Indicating an Incoming Call"
           href: indicating-an-incoming-call.md
       - name: "Changing the QoS of an Active VC"
-# Auto-expanded node
         items: 
-        - name: "Changing the QoS of an Active VC"
-          href: changing-the-qos-of-an-active-vc.md
         - name: "Client-Initiated Request to Change Call Parameters"
           href: client-initiated-request-to-change-call-parameters.md
         - name: "Incoming Request to Change Call Parameters"
           href: incoming-request-to-change-call-parameters.md
       - name: "Adding and Dropping Parties"
-# Auto-expanded node
         items: 
-        - name: "Adding and Dropping Parties"
-          href: adding-and-dropping-parties.md
         - name: "Adding a Party to a Multipoint Call"
           href: adding-a-party-to-a-multipoint-call.md
         - name: "Dropping a Party from a Multipoint Call"
           href: dropping-a-party-from-a-multipoint-call.md
         - name: "Incoming Request to Drop a Party from a Multipoint Call"
           href: incoming-request-to-drop-a-party-from-a-multipoint-call.md
-      - name: "Sending and receiving data in CoNDIS"
-# Auto-expanded node
+      - name: "Transferring network data in CoNDIS"
         items: 
         - name: "Sending and receiving data in CoNDIS"
           href: sending-and-receiving-data2.md
@@ -1110,21 +1071,14 @@
         - name: "Receiving NET_BUFFER Structures in CoNDIS Drivers"
           href: receiving-net-buffer-structures-in-condis-drivers.md
       - name: "Tearing Down a Call"
-# Auto-expanded node
         items: 
-        - name: "Tearing Down a Call"
-          href: tearing-down-a-call.md
         - name: "Client-Initiated Request to Close a Call"
           href: client-initiated-request-to-close-a-call.md
         - name: "Incoming Request to Close a Call"
           href: incoming-request-to-close-a-call.md
       - name: "Obtaining and Setting Information"
-# Auto-expanded node
         items: 
-        - name: "Obtaining and Setting Information"
-          href: obtaining-and-setting-information.md
-        - name: "Querying or Setting Information"
-# Auto-expanded node
+        - name: "Query and Set OID requests"
           items: 
           - name: "Querying or Setting Information"
             href: querying-or-setting-information.md
@@ -1134,8 +1088,7 @@
             href: condis-protocol-driver-oid-requests.md
           - name: "CoNDIS MCM OID Requests"
             href: condis-mcm-oid-requests.md
-        - name: "Indicating Miniport Driver Status"
-# Auto-expanded node
+        - name: "Indicating Status in CoNDIS"
           items: 
           - name: "Indicating Miniport Driver Status"
             href: indicating-miniport-driver-status.md
@@ -1146,12 +1099,10 @@
       - name: "Reset"
         href: reset.md
   - name: "NDIS Network Interfaces"
-# Auto-expanded node
     items: 
-    - name: "NDIS Network Interfaces"
+    - name: "Introduction to NDIS Network Interfaces"
       href: ndis-network-interfaces2.md
-    - name: "Overview of NDIS Network Interfaces"
-# Auto-expanded node
+    - name: "About NDIS Network Interfaces"
       items: 
       - name: "Overview of NDIS Network Interfaces"
         href: overview-of-ndis-network-interfaces.md
@@ -1165,8 +1116,7 @@
         href: ndis-interface-types.md
     - name: "Registering as an Interface Provider"
       href: registering-as-an-interface-provider.md
-    - name: "Managing NDIS Network Interfaces"
-# Auto-expanded node
+    - name: "NDIS Network Interface management"
       items: 
       - name: "Managing NDIS Network Interfaces"
         href: managing-ndis-network-interfaces.md
@@ -1174,8 +1124,7 @@
         href: net-luid-value.md
       - name: "Using a NET_LUID Index"
         href: using-a-net-luid-index.md
-      - name: "Registering a Network Interface"
-# Auto-expanded node
+      - name: "Network Interface Registration"
         items: 
         - name: "Registering a Network Interface"
           href: registering-a-network-interface.md
@@ -1191,8 +1140,7 @@
         href: net-luid-values-for-miniport-adapters-and-filter-modules.md
       - name: "Maintaining a Network Interface Stack"
         href: maintaining-a-network-interface-stack.md
-    - name: "Handling OID Query and Set Requests in an NDIS Interface Provider"
-# Auto-expanded node
+    - name: "NDIS Interface Provider OID Query and Set Requests"
       items: 
       - name: "Handling OID Query and Set Requests in an NDIS Interface Provider"
         href: handling-oid-query-and-set-requests-in-an-ndis-interface-provider.md
@@ -1203,10 +1151,7 @@
     - name: "Mapping of NDIS Network Interfaces to NDIS OIDs"
       href: mapping-of-ndis-network-interfaces-to-ndis-oids.md
     - name: "NDIS MDL Interface"
-# Auto-expanded node
       items: 
-      - name: "NDIS MDL Interface"
-        href: ndis-mdl-interface.md
       - name: "NDIS_MDL_LINKAGE"
         href: ndis-mdl-linkage.md
       - name: "NDIS_MDL_TO_SPAN_PAGES"
@@ -1220,12 +1165,8 @@
       - name: "NdisQueryMdlOffset"
         href: ndisquerymdloffset.md
   - name: "NDIS Ports"
-# Auto-expanded node
     items: 
-    - name: "NDIS Ports"
-      href: ndis-ports.md
-    - name: "Overview of NDIS Ports"
-# Auto-expanded node
+    - name: "Introduction to NDIS Ports"
       items: 
       - name: "Overview of NDIS Ports"
         href: overview-of-ndis-ports.md
@@ -1243,15 +1184,13 @@
       href: freeing-an-ndis-port.md
     - name: "Activating an NDIS Port"
       href: activating-an-ndis-port.md
-    - name: "Managing an NDIS Port"
-# Auto-expanded node
+    - name: "NDIS Port management"
       items: 
       - name: "Managing an NDIS Port"
         href: managing-an-ndis-port.md
       - name: "NDIS Port Send and Receive Operations"
         href: ndis-port-send-and-receive-operations.md
-      - name: "NDIS Port OID Requests"
-# Auto-expanded node
+      - name: "Handling NDIS Ports OID Requests"
         items: 
         - name: "NDIS Port OID Requests"
           href: ndis-port-oid-requests.md
@@ -1264,9 +1203,8 @@
       - name: "Handling NDIS Ports Status Indications"
         href: handling-ndis-ports-status-indications.md
       - name: "Handling NDIS Ports PnP Event Notifications"
-# Auto-expanded node
         items: 
-        - name: "Handling NDIS Ports PnP Event Notifications"
+        - name: "NDIS Ports PnP Event Notifications"
           href: handling-ndis-ports-pnp-event-notifications.md
         - name: "Handling the Port Activation PnP Event"
           href: handling-the-port-activation-pnp-event.md
@@ -1277,36 +1215,25 @@
     - name: "Creating NDIS Interfaces for NDIS Ports"
       href: creating-ndis-interfaces-for-ndis-ports.md
   - name: "NDIS Power Management"
-# Auto-expanded node
     items: 
-    - name: "NDIS Power Management"
-      href: ndis-power-management.md
-    - name: "Power Management (NDIS 6.30)"
-# Auto-expanded node
+    - name: "Power Management for NDIS 6.30"
       items: 
       - name: "Power Management (NDIS 6.30)"
         href: power-management--ndis-6-30-.md
       - name: "NDIS Packet Coalescing"
-# Auto-expanded node
         items: 
-        - name: "NDIS Packet Coalescing"
+        - name: "Introduction to NDIS Packet Coalescing"
           href: ndis-packet-coalescing.md
         - name: "Overview of Packet Coalescing"
-# Auto-expanded node
-          items: 
-          - name: "Overview of Packet Coalescing"
-            href: overview-of-packet-coalescing.md
-          - name: "Packet Coalescing Receive Filters"
-            href: packet-coalescing-receive-filters.md
+          href: overview-of-packet-coalescing.md
+        - name: "Packet Coalescing Receive Filters"
+          href: packet-coalescing-receive-filters.md
         - name: "Reporting Packet Coalescing Capabilities"
           href: reporting-packet-coalescing-capabilities.md
         - name: "Querying Packet Coalescing Capabilities"
           href: querying-packet-coalescing-capabilities.md
         - name: "Managing Packet Coalescing Receive Filters"
-# Auto-expanded node
           items: 
-          - name: "Managing Packet Coalescing Receive Filters"
-            href: managing-packet-coalescing-receive-filters.md
           - name: "Guidelines for Managing Packet Coalescing Receive Filters"
             href: guidelines-for-managing-packet-coalescing-receive-filters.md
           - name: "Specifying a Packet Coalescing Receive Filter"
@@ -1326,9 +1253,8 @@
         - name: "Standardized INF Keywords for Packet Coalescing"
           href: standardized-inf-keywords-for-packet-coalescing.md
       - name: "NDIS Selective Suspend"
-# Auto-expanded node
         items: 
-        - name: "NDIS Selective Suspend"
+        - name: "Introduction to NDIS Selective Suspend"
           href: ndis-selective-suspend.md
         - name: "Overview of NDIS Selective Suspend"
           href: overview-of-ndis-selective-suspend.md
@@ -1337,9 +1263,8 @@
         - name: "Registering NDIS Selective Suspend Handler Functions"
           href: registering-ndis-selective-suspend-handler-functions.md
         - name: "NDIS Selective Suspend Idle Notifications"
-# Auto-expanded node
           items: 
-          - name: "NDIS Selective Suspend Idle Notifications"
+          - name: "Overview of NDIS Selective Suspend Idle Notifications"
             href: ndis-selective-suspend-idle-notifications.md
           - name: "How NDIS Detects Idle Network Adapters"
             href: how-ndis-detects-idle-network-adapters.md
@@ -1352,10 +1277,7 @@
         - name: "Standardized INF Keywords for NDIS Selective Suspend"
           href: standardized-inf-keywords-for-ndis-selective-suspend.md
         - name: "NDIS Selective Suspend Implementation Guidelines"
-# Auto-expanded node
           items: 
-          - name: "NDIS Selective Suspend Implementation Guidelines"
-            href: ndis-selective-suspend-implementation-guidelines.md
           - name: "Managing IRP Resources for NDIS Selective Suspend"
             href: managing-irp-resources-for-ndis-selective-suspend.md
           - name: "Implementing a MiniportIdleNotification Handler Function"
@@ -1367,23 +1289,16 @@
           - name: "Implementing a USB Idle Request IRP Completion Routine"
             href: implementing-a-usb-idle-request-irp-completion-routine.md
       - name: "NDIS Wake Reason Status Indications"
-# Auto-expanded node
         items: 
-        - name: "NDIS Wake Reason Status Indications"
-          href: ndis-wake-reason-status-indications.md
         - name: "Overview of NDIS Wake Reason Status Indications"
           href: overview-of-ndis-wake-reason-statue-indications.md
         - name: "Reporting Wake Reason Status Indication Capabilities"
           href: reporting-wake-reason-status-indication-capabilities.md
         - name: "Issuing NDIS Wake Reason Status Indications"
           href: issuing-ndis-wake-reason-indications.md
-    - name: "Power Management (NDIS 6.20)"
-# Auto-expanded node
+    - name: "Power Management for NDIS 6.20"
       items: 
-      - name: "Power Management (NDIS 6.20)"
-        href: power-management--ndis-6-20-.md
-      - name: "NDIS Power Management Overview"
-# Auto-expanded node
+      - name: "NDIS Power Management Overview for NDIS 6.20 and later"
         items: 
         - name: "NDIS Power Management Overview"
           href: ndis-power-management-overview.md
@@ -1414,10 +1329,7 @@
       - name: "Low Power on Media Disconnect"
         href: low-power-on-media-disconnect.md
       - name: "Power Management Status Indications"
-# Auto-expanded node
         items: 
-        - name: "Power Management Status Indications"
-          href: power-management-status-indications.md
         - name: "NDIS_STATUS_PM_CAPABILITIES_CHANGE"
           href: ndis-status-pm-capabilities-change.md
         - name: "NDIS_STATUS_PM_HARDWARE_CAPABILITIES"
@@ -1426,19 +1338,15 @@
           href: ndis-status-pm-offload-rejected.md
         - name: "NDIS_STATUS_PM_WOL_PATTERN_REJECTED"
           href: ndis-status-pm-wol-pattern-rejected.md
-    - name: "Power Management (NDIS 6.0 and NDIS 6.1)"
-# Auto-expanded node
+    - name: "Power Management for NDIS 6.0 and NDIS 6.1"
       items: 
-      - name: "Power Management (NDIS 6.0 and NDIS 6.1)"
-        href: power-management--ndis-6-0-and-ndis-6-1-.md
       - name: "Required and Optional OIDs for Power Management"
         href: required-and-optional-oids-for-power-management.md
       - name: "Device Power States for Network Adapters"
         href: device-power-states-for-network-adapters.md
       - name: "Network Wake-Up Events"
-# Auto-expanded node
         items: 
-        - name: "Network Wake-Up Events"
+        - name: "About Network Wake-Up Events"
           href: network-wake-up-events.md
         - name: "Enabling Wake-Up Events"
           href: enabling-wake-up-events.md
@@ -1447,10 +1355,7 @@
       - name: "Handling an OID_PNP_QUERY_POWER OID"
         href: handling-an-oid-pnp-query-power-oid.md
       - name: "Handling an OID_PNP_SET_POWER OID"
-# Auto-expanded node
         items: 
-        - name: "Handling an OID_PNP_SET_POWER OID"
-          href: handling-an-oid-pnp-set-power-oid.md
         - name: "Transitioning to a Sleeping State"
           href: transitioning-to-a-sleeping-state.md
         - name: "Transitioning to the Working State"
@@ -1464,19 +1369,14 @@
       - name: "Avoiding NDIS Power Management Problems"
         href: avoiding-ndis-power-management-problems.md
   - name: "NDIS QoS for Data Center Bridging"
-# Auto-expanded node
     items: 
-    - name: "NDIS QoS for Data Center Bridging"
+    - name: "Introduction to NDIS QoS for Data Center Bridging"
       href: ndis-qos-for-data-center-bridging.md
     - name: "Overview of Data Center Bridging"
       href: overview-of-data-center-bridging.md
     - name: "Overview of NDIS QoS for Data Center Bridging"
-# Auto-expanded node
       items: 
-      - name: "Overview of NDIS QoS for Data Center Bridging"
-        href: overview-of-ndis-qos-for-data-center-bridging.md
-      - name: "NDIS QoS Architecture for Data Center Bridging"
-# Auto-expanded node
+      - name: "Architecture of NDIS QoS for Data Center Bridging"
         items: 
         - name: "NDIS QoS Architecture for Data Center Bridging"
           href: ndis-qos-architecture-for-data-center-bridging.md
@@ -1486,16 +1386,12 @@
           href: vendor-provided-dcb-components.md
       - name: "NDIS QoS Requirements for Data Center Bridging"
         href: ndis-qos-requirements-for-data-center-bridging.md
-      - name: "NDIS QoS Traffic Classes"
-# Auto-expanded node
+      - name: "Traffic Classes"
         items: 
         - name: "NDIS QoS Traffic Classes"
           href: ndis-qos-traffic-classes.md
         - name: "Priority Levels and Flow Control"
-# Auto-expanded node
           items: 
-          - name: "Priority Levels and Flow Control"
-            href: priority-levels-and-flow-control.md
           - name: "IEEE 802.1p Priority Levels"
             href: ieee-802-1p-priority-levels.md
           - name: "Priority-based Flow Control (PFC)"
@@ -1504,8 +1400,7 @@
           href: transmission-selection-algorithms--tsas-.md
         - name: "Strict Priority Algorithm"
           href: strict-priority-algorithm.md
-        - name: "Enhanced Transmission Selection (ETS) Algorithm"
-# Auto-expanded node
+        - name: "Enhanced Transmission Selection (ETS)"
           items: 
           - name: "Enhanced Transmission Selection (ETS) Algorithm"
             href: enhanced-transmission-selection--ets--algorithm.md
@@ -1516,19 +1411,13 @@
       - name: "NDIS QoS Traffic Classifications"
         href: ndis-qos-traffic-classifications.md
     - name: "Managing NDIS QoS Capabilities"
-# Auto-expanded node
       items: 
-      - name: "Managing NDIS QoS Capabilities"
-        href: managing-ndis-qos-capabilities.md
       - name: "Registering NDIS QoS Capabilities"
         href: registering-ndis-qos-capabilities.md
       - name: "Querying NDIS QoS Capabilities"
         href: querying-ndis-qos-capabilities.md
     - name: "Managing NDIS QoS Parameters"
-# Auto-expanded node
       items: 
-      - name: "Managing NDIS QoS Parameters"
-        href: managing-ndis-qos--parameters.md
       - name: "Overview of NDIS QoS Parameters"
         href: overview-of-ndis-qos-parameters.md
       - name: "Managing the Local DCBX Willing State"
@@ -1541,8 +1430,7 @@
         href: resolving-operational-ndis-qos-parameters.md
       - name: "Querying NDIS QoS Parameters"
         href: querying-ndis-qos-parameters.md
-      - name: "Indicating NDIS QoS Parameter Status"
-# Auto-expanded node
+      - name: "NDIS QoS Parameter Status Indication"
         items: 
         - name: "Indicating NDIS QoS Parameter Status"
           href: indicating-ndis-qos-parameter-status.md
@@ -1553,10 +1441,7 @@
     - name: "Standardized INF Keywords for NDIS QoS"
       href: standardized-inf-keywords-for-ndis-qos.md
   - name: "NDIS Timer Services"
-# Auto-expanded node
     items: 
-    - name: "NDIS Timer Services"
-      href: ndis-timer-services2.md
     - name: "Initializing NDIS Timers"
       href: initializing-ndis-timers.md
     - name: "Setting and Clearing Timers"
@@ -1564,10 +1449,7 @@
     - name: "Servicing Timers"
       href: servicing-timers.md
   - name: "Miscellaneous NDIS Functions"
-# Auto-expanded node
     items: 
-    - name: "Miscellaneous NDIS Functions"
-      href: miscellaneous-ndis-functions.md
     - name: "NDIS Configuration Functions"
       href: ndis-configuration-functions.md
     - name: "NDIS Objects"
@@ -1575,24 +1457,15 @@
     - name: "NDIS I/O Work Items"
       href: ndis-i-o-work-items.md
   - name: "Installing and Upgrading Network Components"
-# Auto-expanded node
     items: 
-    - name: "Installing and Upgrading Network Components"
-      href: installing-and-upgrading-network-components.md
     - name: "Process for installing network components"
-# Auto-expanded node
       items: 
-      - name: "Process for installing network components"
-        href: installing-network-components2.md
       - name: "Components and Files Used for Network Component Installation"
         href: components-and-files-used-for-network-component-installation.md
       - name: "Creating Network INF Files"
         href: creating-network-inf-files.md
       - name: "Sections in a Network INF File"
-# Auto-expanded node
         items: 
-        - name: "Sections in a Network INF File"
-          href: sections-in-a-network-inf-file.md
         - name: "Version Section in a Network INF File"
           href: version-section-in-a-network-inf-file.md
         - name: "Models Section in a Network INF File"
@@ -1603,8 +1476,7 @@
           href: remove-section-in-a-network-inf-file.md
         - name: "ControlFlags Section in a Network INF File"
           href: controlflags-section-in-a-network-inf-file.md
-        - name: "Add-registry-sections in a Network INF File"
-# Auto-expanded node
+        - name: "Network INF File Add-registry-sections"
           items: 
           - name: "Add-registry-sections in a Network INF File"
             href: add-registry-sections-in-a-network-inf-file.md
@@ -1638,8 +1510,7 @@
             href: ndi-values-and-keys-not-used-in-windows-2000-and-later-versions.md
         - name: "DDInstall.Services Section in a Network INF File"
           href: ddinstall-services-section-in-a-network-inf-file.md
-        - name: "NetworkProvider and PrintProvider Sections in a Network INF File"
-# Auto-expanded node
+        - name: "Network INF File NetworkProvider and PrintProvider Sections"
           items: 
           - name: "NetworkProvider and PrintProvider Sections in a Network INF File"
             href: networkprovider-and-printprovider-sections-in-a-network-inf-file.md
@@ -1650,10 +1521,7 @@
         - name: "Winsock Sections in a Network INF File"
           href: winsock-sections-in-a-network-inf-file.md
       - name: "Installation Requirements for Network Components"
-# Auto-expanded node
         items: 
-        - name: "Installation Requirements for Network Components"
-          href: installation-requirements-for-network-components.md
         - name: "Installation Requirements for Network Adapters"
           href: installation-requirements-for-network-adapters.md
         - name: "Installation Requirements for Network Protocols"
@@ -1668,13 +1536,11 @@
           href: installation-requirements-for-network-clients.md
         - name: "Installation Requirements for Network Services"
           href: installation-requirements-for-network-services.md
-    - name: "Notify Objects for Network Components"
-# Auto-expanded node
+    - name: "Network Component Notify Objects"
       items: 
       - name: "Notify Objects for Network Components"
         href: notify-objects-for-network-components.md
-      - name: "About Notify Objects"
-# Auto-expanded node
+      - name: "Notify Objects Overview"
         items: 
         - name: "About Notify Objects"
           href: about-notify-objects.md
@@ -1692,8 +1558,7 @@
           href: displaying-and-changing-properties.md
         - name: "Configuring the Network"
           href: configuring-the-network.md
-      - name: "Creating a Notify Object"
-# Auto-expanded node
+      - name: "Notify Object Creation"
         items: 
         - name: "Creating a Notify Object"
           href: creating-a-notify-object.md
@@ -1709,8 +1574,7 @@
           href: creating-property-pages-for-the-component.md
         - name: "Setting Context to Display Properties"
           href: setting-context-to-display-properties.md
-        - name: "Evaluating Changes to Network Configuration"
-# Auto-expanded node
+        - name: "Network Configuration Changes"
           items: 
           - name: "Evaluating Changes to Network Configuration"
             href: evaluating-changes-to-network-configuration.md
@@ -1724,20 +1588,17 @@
           href: configuring-the-component-s-driver.md
         - name: "Retrieving Network Configuration Interface Pointers"
           href: retrieving-network-configuration-interface-pointers.md
-    - name: "Process for upgrading network components"
-# Auto-expanded node
+    - name: "Upgrading network components"
       items: 
       - name: "Process for upgrading network components"
         href: upgrading-network-components.md
-      - name: "Customizing the Network Upgrade Process"
-# Auto-expanded node
+      - name: "Network Upgrade Process Customization"
         items: 
         - name: "Customizing the Network Upgrade Process"
           href: customizing-the-network-upgrade-process.md
         - name: "Creating a Netupg.inf File"
           href: creating-a-netupg-inf-file.md
-      - name: "The Network Upgrade Process"
-# Auto-expanded node
+      - name: "Network Upgrade Process Overview"
         items: 
         - name: "The Network Upgrade Process"
           href: the-network-upgrade-process.md
@@ -1749,13 +1610,11 @@
           href: gui-mode-phase-of-the-network-upgrade-process.md
       - name: "Writing a Network Migration DLL"
         href: writing-a-network-migration-dll.md
-      - name: "Creating a Netmap.inf File"
-# Auto-expanded node
+      - name: "Netmap.inf File Creation"
         items: 
         - name: "Creating a Netmap.inf File"
           href: creating-a-netmap-inf-file.md
-        - name: "Mapping IDs in a Netmap.inf File"
-# Auto-expanded node
+        - name: "Netmap.inf File ID Mapping"
           items: 
           - name: "Mapping IDs in a Netmap.inf File"
             href: mapping-ids-in-a-netmap-inf-file.md
@@ -1768,24 +1627,15 @@
         - name: "Specifying Alternative Help Message Files in a Netmap.inf File"
           href: specifying-alternative-help-message-files-in-a-netmap-inf-file.md
       - name: "Testing the Upgrade of Network Components"
-# Auto-expanded node
         items: 
-        - name: "Testing the Upgrade of Network Components"
-          href: testing-the-upgrade-of-network-components.md
         - name: "Setting Up the Test System"
           href: setting-up-the-test-system.md
         - name: "Running the Upgrade Test and Examining the Results"
-# Auto-expanded node
-          items: 
-          - name: "Running the Upgrade Test and Examining the Results"
-            href: running-the-upgrade-test-and-examining-the-results.md
-          - name: "Examining the AnswerFile"
-            href: examining-the-answerfile.md
+          href: running-the-upgrade-test-and-examining-the-results.md
+        - name: "Examining the AnswerFile"
+          href: examining-the-answerfile.md
   - name: "NDIS core functionality OIDs"
-# Auto-expanded node
     items: 
-    - name: "NDIS core functionality OIDs"
-      href: ndis-core-functionality-oids.md
     - name: "NDIS general statistics OIDs"
       href: ndis-general-statistics-oids.md
     - name: "NDIS network interface OIDs"
@@ -1795,10 +1645,7 @@
     - name: "Ethernet statistics OIDs"
       href: ethernet-statistics-oids.md
     - name: "Connection-oriented OIDs"
-# Auto-expanded node
       items: 
-      - name: "Connection-oriented OIDs"
-        href: connection-oriented-oids.md
       - name: "General operational OIDs for connection-oriented miniport drivers"
         href: general-operational-oids-for-connection-oriented-miniport-drivers.md
       - name: "General statistics OIDs for connection-oriented miniport drivers"
@@ -1808,15 +1655,9 @@
       - name: "TAPI extension OIDs for connection-oriented NDIS"
         href: tapi-extension-oids-for-connection-oriented-ndis.md
   - name: "NDIS core functionality status indications"
-# Auto-expanded node
     items: 
-    - name: "NDIS core functionality status indications"
-      href: ndis-core-functionality-status-indications.md
     - name: "NDIS General Status Indications"
-# Auto-expanded node
       items: 
-      - name: "NDIS General Status Indications"
-        href: ndis-general-status-indications.md
       - name: "NDIS_STATUS_MEDIA_CONNECT"
         href: ndis-status-media-connect.md
       - name: "NDIS_STATUS_MEDIA_DISCONNECT"
@@ -1842,35 +1683,23 @@
       - name: "NDIS_STATUS_PACKET_FILTER"
         href: ndis-status-packet-filter.md
     - name: "Receive Filter Status Indications"
-# Auto-expanded node
       items: 
-      - name: "Receive Filter Status Indications"
-        href: receive-filter-status-indications.md
       - name: "NDIS_STATUS_RECEIVE_FILTER_CURRENT_CAPABILITIES"
         href: ndis-status-receive-filter-current-capabilities.md
       - name: "NDIS_STATUS_RECEIVE_FILTER_HARDWARE_CAPABILITIES"
         href: ndis-status-receive-filter-hardware-capabilities.md
     - name: "NDIS QoS Status Indications"
-# Auto-expanded node
       items: 
-      - name: "NDIS QoS Status Indications"
-        href: ndis-qos-status-indications.md
       - name: "NDIS_STATUS_QOS_OPERATIONAL_PARAMETERS_CHANGE"
         href: ndis-status-qos-operational-parameters-change.md
       - name: "NDIS_STATUS_QOS_REMOTE_PARAMETERS_CHANGE"
         href: ndis-status-qos-remote-parameters-change.md
     - name: "NDIS Wake Reason Status Indications"
-# Auto-expanded node
       items: 
-      - name: "NDIS Wake Reason Status Indications"
-        href: ndis-wake-reason-status-indications-ref.md
       - name: "NDIS_STATUS_PM_WAKE_REASON"
         href: ndis-status-pm-wake-reason.md
     - name: "NDIS WAN Status Indications"
-# Auto-expanded node
       items: 
-      - name: "NDIS WAN Status Indications"
-        href: ndis-wan-status-indications.md
       - name: "NDIS_STATUS_WAN_LINE_UP"
         href: ndis-status-wan-line-up.md
       - name: "NDIS_STATUS_WAN_LINE_DOWN"
