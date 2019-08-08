@@ -163,9 +163,9 @@ function onActivationComplete(activationArgs) {
 }
 ```
 
-## Deferred eSIM profile download and activation
+## Delayed eSIM profile download and activation
 
-The following diagram shows the call flow for how the Mobile Plans app supports a deferred download of an eSIM profile without control leaving the MODirect portal. This should be used when the eSIM profile is not available to be released by the SM-DP+ server, and can only be downloaded after a period of time. It is expected that the device will be able to register on the cellular network once the profile is downloaded and installed.
+The following diagram shows the call flow for how the Mobile Plans app supports the delayed download and activation of an eSIM profile. This should be used when the eSIM profile is not available to be released by the SM-DP+ server, and can only be downloaded after a period of time. It is expected that the device will be able to register on the cellular network once the profile is downloaded and activated.
 
 ![Mobile Plans deferred profile download sequence diagram](images/mobile_plans_delay_profile_flow.png)
 
@@ -181,7 +181,7 @@ The following diagram shows the call flow for how the Mobile Plans app supports 
 | --- | --- |
 | MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
 
-Control is returned to the MO Portal immediately after the call. UI will be displayed to inform the user that a profile will be installed later. After the `downloadDelay` minutes has occurred, a notification will be shown to the user, inviting them to begin the process of downloading the profile.
+Control is returned to the mobile operator Portal immediately after the call. UI will be displayed to inform the user that a profile will be installed later. After the `downloadDelay` minutes has occurred, a notification will be shown to the user, inviting them to begin the process of downloading the profile.
 
 The following Javascript function shows an example of the API to inform the application that a profile download with delay should begin
 
