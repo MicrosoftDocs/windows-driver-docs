@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This topic describes the web portal that enables mobile operators to provide connectivity solutions directly to Windows users through a curated web experience hosted in the Mobile Plans app. Mobile operators must create their web experiences following these design principles to ensure users have a high quality experience while navigating their portal. The mobile operator web portal is used for all scenarios supported in the Mobile Plans solution and is hence one of the most important components in the program.
 
-For more info about web portal flow and reference design, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design).
+For more information about web portal flow and reference design, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design).
 
 ## Web Portal interface for eSIM-enabled devices
 
