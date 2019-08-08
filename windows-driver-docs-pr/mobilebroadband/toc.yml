@@ -355,10 +355,6 @@
         href: mobile-plans-walled-garden.md
       - name: "Toast notifications"
         href: mobile-plans-notifications.md
-      - name: "Windows 10 device experience"
-        href: mobile-plans-device-experience.md
-      - name: "Service configuration"
-        href: mobile-plans-service-configuration.md
     - name: "Mobile Plans onboarding"
       items:
       - name: "Onboarding overview"
