@@ -107,6 +107,8 @@
               href: pct-machines-that-had-blue-screen-caused-by-crash-in-graphics-kernel.md
             - name: "Percent of machines that had a TDR caused by a crash in the graphics driver binary"
               href: pct-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary.md
+            - name: "Percent of machines that had an LKE caused by a crash in the graphics driver binary"
+              href: pct-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-expanded.md
             # - name: "Percent of machines with video HWDRM failures"
             #   href: pct-machines-with-video-hwdrm-failures.md
             - name: "YouTube video playback failure rate in Microsoft Edge and Internet Explorer"
