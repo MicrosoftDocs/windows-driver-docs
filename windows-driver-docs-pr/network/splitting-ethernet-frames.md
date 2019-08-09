@@ -1,6 +1,6 @@
 ---
-title: Splitting Ethernet Frames
-description: Splitting Ethernet Frames
+title: Splitting Ethernet Frames Overview
+description: Splitting Ethernet Frames Overview
 ms.assetid: 7b857dee-2805-4004-8f31-452f0cff0e0c
 keywords:
 - header-data split WDK , Ethernet frame splitting
@@ -12,11 +12,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Splitting Ethernet Frames
-
-
-
-
+# Splitting Ethernet Frames Overview
 
 This section describes the specific header-data split requirements that apply to header-data split providers, depending on the type of Ethernet frame that the provider is splitting.
 

@@ -1719,20 +1719,13 @@
       - name: "NDIS_STATUS_WAN_CO_MTULINKPARAMS"
         href: ndis-status-wan-co-mtulinkparams.md
 - name: "Scalable Networking"
-# Auto-expanded node
   items: 
-  - name: "Scalable Networking"
-    href: scalable-networking2.md
   - name: "Header-Data Split"
-# Auto-expanded node
     items: 
-    - name: "Header-Data Split"
+    - name: "Introduction to Header-Data Split"
       href: header-data-split.md
     - name: "Header-Data Split Overview"
-# Auto-expanded node
       items: 
-      - name: "Header-Data Split Overview"
-        href: header-data-split-overview.md
       - name: "Header-Data Split Architecture"
         href: header-data-split-architecture.md
       - name: "Where to Split Header and Data"
@@ -1742,18 +1735,14 @@
       - name: "Minimum Requirements for Supporting Header-Data Split"
         href: minimum-requirements-for-supporting-header-data-split.md
       - name: "Header-Data Split Status Indications"
-# Auto-expanded node
         items: 
-        - name: "Header-Data Split Status Indications"
-          href: header-data-split-status-indications.md
         - name: "NDIS_STATUS_HD_SPLIT_CURRENT_CONFIG"
           href: ndis-status-hd-split-current-config.md
     - name: "Initializing a Header-Data Split Provider"
       href: initializing-a-header-data-split-provider.md
     - name: "Splitting Ethernet Frames"
-# Auto-expanded node
       items: 
-      - name: "Splitting Ethernet Frames"
+      - name: "Splitting Ethernet Frames Overview"
         href: splitting-ethernet-frames.md
       - name: "Splitting IPv4 Frames"
         href: splitting-ipv4-frames.md
@@ -1768,16 +1757,12 @@
       - name: "Splitting Frames at the UDP Payload"
         href: splitting-frames-at-the-udp-payload.md
       - name: "Splitting Frames Other Than TCP and UDP"
-# Auto-expanded node
         items: 
-        - name: "Splitting Frames Other Than TCP and UDP"
-          href: splitting-frames-other-than-tcp-and-udp.md
         - name: "Splitting ICMP Frames and Other Upper-Layer-Protocol Frames"
           href: splitting-icmp-frames-and-other-upper-layer-protocol-frames.md
         - name: "Splitting IPsec Frames"
           href: splitting-ipsec-frames.md
-    - name: "Receive Indications with Header-Data Split"
-# Auto-expanded node
+    - name: "Header-Data Split Receive Indication"
       items: 
       - name: "Receive Indications with Header-Data Split"
         href: receive-indications-with-header-data-split.md
@@ -1788,10 +1773,7 @@
       - name: "Setting NET_BUFFER_LIST Information"
         href: setting-net-buffer-list-information.md
     - name: "Header-Data Split Administration and Configuration"
-# Auto-expanded node
       items: 
-      - name: "Header-Data Split Administration and Configuration"
-        href: header-data-split-administration-and-configuration.md
       - name: "Setting the Current Header-Data Split Configuration"
         href: setting-the-current-header-data-split-configuration.md
       - name: "Getting the Current Header-Data Split Configuration"
@@ -1803,10 +1785,7 @@
     - name: "Supporting Header-Data Split in Protocol Driver and Filter Drivers"
       href: supporting-header-data-split-in-protocol-driver-and-filter-drivers.md
   - name: "Network Direct Kernel Provider Interface (NDKPI)"
-# Auto-expanded node
     items: 
-    - name: "Network Direct Kernel Provider Interface (NDKPI)"
-      href: network-direct-kernel-programming-interface--ndkpi-.md
     - name: "Overview of Network Direct Kernel Provider Interface (NDKPI)"
       href: overview-of-network-direct-kernel-provider-interface--ndkpi-.md
     - name: "NDKPI Terminology"
@@ -1836,9 +1815,8 @@
     - name: "NDKPI Deferred Processing Scheme"
       href: ndkpi-deferred-processing-scheme.md
   - name: "Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload"
-# Auto-expanded node
     items: 
-    - name: "Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload"
+    - name: "About Network Virtualization using Generic Routing Encapsulation (NVGRE)"
       href: network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md
     - name: "Overview of Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload"
       href: overview-of-network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md
@@ -1857,12 +1835,8 @@
     - name: "Standardized INF Keywords for NVGRE Task Offload"
       href: standardized-inf-keywords-for-nvgre-task-offload.md
   - name: "Receive Segment Coalescing (RSC)"
-# Auto-expanded node
     items: 
-    - name: "Receive Segment Coalescing (RSC)"
-      href: receive-segment-coalescing--rsc-.md
-    - name: "Overview of Receive Segment Coalescing"
-# Auto-expanded node
+    - name: "About Receive Segment Coalescing (RSC)"
       items: 
       - name: "Overview of Receive Segment Coalescing"
         href: overview-of-receive-segment-coalescing.md
@@ -1877,10 +1851,7 @@
       - name: "Exception Conditions that Terminate Coalescing"
         href: exception-conditions-that-terminate-coalescing.md
     - name: "Writing RSC Drivers"
-# Auto-expanded node
       items: 
-      - name: "Writing RSC Drivers"
-        href: writing-rsc-drivers.md
       - name: "Determining the RSC Capabilities of a Network Adapter"
         href: determining-the-rsc-capabilities-of-a-network-adapter.md
       - name: "Querying and Changing RSC State"
@@ -1890,10 +1861,7 @@
       - name: "Programming Considerations for RSC Drivers"
         href: programming-considerations-for-rsc-drivers.md
   - name: "Receive Side Scaling"
-# Auto-expanded node
     items: 
-    - name: "Receive Side Scaling"
-      href: ndis-receive-side-scaling2.md
     - name: "Introduction to Receive Side Scaling"
       href: introduction-to-receive-side-scaling.md
     - name: "Receive Side Scaling Version 2 (RSSv2)"
@@ -1915,10 +1883,7 @@
     - name: "RSS Configuration"
       href: rss-configuration.md
     - name: "Setting the RSS CPU Configuration"
-# Auto-expanded node
       items: 
-      - name: "Setting the RSS CPU Configuration"
-        href: setting-the-rss-cpu-configuration.md
       - name: "Reserving Processors for Applications"
         href: reserving-processors-for-applications.md
       - name: "Setting the Number of RSS Processors"
@@ -1930,18 +1895,16 @@
     - name: "Supporting RSS in Intermediate Drivers or Filter Drivers"
       href: supporting-rss-in-intermediate-drivers-or-filter-drivers.md
   - name: "TCP/IP Offload"
-# Auto-expanded node
     items: 
-    - name: "TCP/IP Offload"
+    - name: "TCP/IP Offload Overview"
       href: tcp-ip-offload.md
     - name: "Accessing TCP/IP Offload NET_BUFFER_LIST Information"
       href: accessing-tcp-ip-offload-net-buffer-list-information.md
     - name: "Using the TCP/IP Offload Administrator Interface"
       href: using-the-tcp-ip-offload-administrator-interface.md
     - name: "Security Guidelines for Offload-Capable Miniport Drivers"
-# Auto-expanded node
       items: 
-      - name: "Security Guidelines for Offload-Capable Miniport Drivers"
+      - name: "Security Guidelines for Offload-Capable Miniport Drivers Overview"
         href: security-guidelines-for-offload-capable-miniport-drivers.md
       - name: "Vulnerability to Security Attacks in NDIS Drivers"
         href: vulnerability-to-security-attacks-in-ndis-drivers.md
@@ -1952,12 +1915,10 @@
       - name: "Security Checklist for NDIS Drivers"
         href: security-checklist-for-ndis-drivers.md
     - name: "TCP/IP Task Offload"
-# Auto-expanded node
       items: 
-      - name: "TCP/IP Task Offload"
+      - name: "TCP/IP Task Offload Overview"
         href: task-offload.md
-      - name: "Determining Task Offload Capabilities"
-# Auto-expanded node
+      - name: "Reporting Task Offload Capabilities"
         items: 
         - name: "Determining Task Offload Capabilities"
           href: determining-task-offload-capabilities.md
@@ -1980,15 +1941,9 @@
       - name: "Offloading Checksum Tasks"
         href: offloading-checksum-tasks.md
       - name: "IPsec Offload Version 1"
-# Auto-expanded node
         items: 
-        - name: "IPsec Offload Version 1"
-          href: ipsec-offload-version-1.md
         - name: "Offloading the Processing of ESP-Protected and AH-Protected Packets"
-# Auto-expanded node
           items: 
-          - name: "Offloading the Processing of ESP-Protected and AH-Protected Packets"
-            href: offloading-the-processing-of-esp-protected-and-ah-protected-packets.md
           - name: "Background Reading on IPsec"
             href: background-reading-on-ipsec.md
           - name: "Requirements and Restrictions That Apply to IPsec Offloads"
@@ -2004,10 +1959,7 @@
           - name: "Impact of Network Interface Changes on IPsec Offloads"
             href: impact-of-network-interface-changes-on-ipsec-offloads.md
         - name: "Offloading the Processing of UDP-Encapsulated ESP Packets"
-# Auto-expanded node
           items: 
-          - name: "Offloading the Processing of UDP-Encapsulated ESP Packets"
-            href: offloading-the-processing-of-udp-encapsulated-esp-packets.md
           - name: "Background Reading on UDP Encapsulation of ESP Packets"
             href: background-reading-on-udp-encapsulation-of-esp-packets.md
           - name: "Traversing NATs and NAPTs with UDP-Encapsulated ESP Packets"
@@ -2021,10 +1973,7 @@
           - name: "Processing UDP-Encapsulated ESP Packets"
             href: processing-udp-encapsulated-esp-packets.md
       - name: "IPsec Offload Version 2"
-# Auto-expanded node
         items: 
-        - name: "IPsec Offload Version 2"
-          href: ipsec-offload-version-2.md
         - name: "Introduction to IPsec Offload Version 2"
           href: introduction-to-ipsec-offload-version-2.md
         - name: "Reporting a NIC's IPsec Offload Version 2 Capabilities"
@@ -2040,9 +1989,8 @@
       - name: "Offloading the Segmentation of Large TCP Packets"
         href: offloading-the-segmentation-of-large-tcp-packets.md
     - name: "Connection Offload"
-# Auto-expanded node
       items: 
-      - name: "Connection Offload"
+      - name: "Connection Offload Overview"
         href: connection-offload.md
       - name: "Determining Connection Offload Capabilities"
         href: determining-connection-offload-capabilities.md
@@ -2059,10 +2007,7 @@
     - name: "Task offload OIDs"
       href: task-offload-oids.md
     - name: "NDIS TCP/IP Offload Status Indications"
-# Auto-expanded node
       items: 
-      - name: "NDIS TCP/IP Offload Status Indications"
-        href: ndis-tcp-ip-offload-status-indications.md
       - name: "NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG"
         href: ndis-status-task-offload-current-config.md
       - name: "NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES"
@@ -2072,10 +2017,7 @@
       - name: "NDIS_STATUS_TCP_CONNECTION_OFFLOAD_HARDWARE_CAPABILITIES"
         href: ndis-status-tcp-connection-offload-hardware-capabilities.md
     - name: "PacketDirect Provider Interface (PDPI) Status Indications"
-# Auto-expanded node
       items: 
-      - name: "PacketDirect Provider Interface (PDPI) Status Indications"
-        href: packetdirect-provider-interface--pdpi--status-indications.md
       - name: "NDIS_STATUS_PD_CURRENT_CONFIG"
         href: ndis-status-pd-current-config.md
 - name: "Virtualized Networking"
@@ -5016,15 +4958,9 @@
       - name: "Data Out Endpoint Descriptor"
         href: data-out-endpoint-descriptor.md
 - name: "Kernel Mode SDK Topics for Network Drivers"
-# Auto-expanded node
   items: 
-  - name: "Kernel Mode SDK Topics for Network Drivers"
-    href: kernel-mode-sdk-topics-for-network-drivers.md
   - name: "Mstcpip.h"
-# Auto-expanded node
     items: 
-    - name: "Mstcpip.h"
-      href: mstcpip-h.md
     - name: "SIO_LOOPBACK_FAST_PATH control code"
       href: sio-loopback-fast-path.md
     - name: "SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT control code"
@@ -5034,10 +4970,7 @@
     - name: "SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS control code"
       href: sio-set-wfp-connection-redirect-records.md
   - name: "Ntddndis.h"
-# Auto-expanded node
     items: 
-    - name: "Ntddndis.h"
-      href: ntddndis-h.md
     - name: "GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES"
       href: guid-ndis-gen-pci-device-custom-properties.md
     - name: "OID_802_3_ADD_MULTICAST_ADDRESS"
@@ -5719,10 +5652,7 @@
     - name: "OID_WWAN_VISIBLE_PROVIDERS"
       href: oid-wwan-visible-providers.md
   - name: "Ws2def.h"
-# Auto-expanded node
     items: 
-    - name: "Ws2def.h"
-      href: ws2def-h.md
     - name: "AF_INET"
       href: af-inet.md
     - name: "AF_INET6"
@@ -5744,10 +5674,7 @@
     - name: "SO_REUSEADDR"
       href: so-reuseaddr.md
 - name: "Previous Versions of Network Drivers"
-# Auto-expanded node
   items: 
-  - name: "Previous Versions of Network Drivers"
-    href: previous-versions-of-network-drivers.md
   - name: "Network Drivers Prior to Windows Vista"
     href: network-drivers-prior-to-windows-vista.md
   - name: "Native 802.11 Wireless LAN Drivers"
