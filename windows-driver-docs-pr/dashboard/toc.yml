@@ -122,7 +122,7 @@
             - name: "User mode crashes in Microsoft Edge"
               href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale-expanded.md
             - name: "User mode crashes in Windows Components"
-              href: user-mode-reliability-for-crashes-in-windows-components-expanded.md
+              href: user-mode-reliability-for-crashes-in-windows-components.md
           - name: "Ecosystem audience measures"
             items:
             - name: "Percent of machines with a blue screen caused by a crash in graphics driver binary" 
@@ -138,7 +138,7 @@
             - name: "User mode reliability for crashes in Microsoft Photos app"
               href: user-mode-reliability-for-crashes-in-microsoft-photos-app.md
             - name: "User mode crashes in Windows Components"
-              href: user-mode-reliability-for-crashes-in-windows-components.md
+              href: user-mode-reliability-for-crashes-in-windows-components-ecosystem.md
             - name: "Number of crashes and hangs in UWP games"
               href: number-crashes-and-hangs-in-uwp-games.md
             - name: "Number of crashes and hangs in Win32 games"
