@@ -89,6 +89,41 @@ The Get Offers request returns the template ID to be shown to the user.
 
 ![Mobile Plans Get Offers Callflow](images/mobile_plans_get_offers_callflow.png)
 
+### GetOffers API specification
+
+The `GetOffers` API is called prior to showing the mobile operator Gateway page. The Mobile Plans service is a proxy for this request.
+
+```HTTP
+GET https://{offerUri}sims/{simmri}/offers?limit=1&imei=1234
+```
+
+- *{offerUri}* is the OfferUri value onboarded as part of the mobile operator's service configuration.
+
+The endpoint has two query parameters:
+- *limit*, which is required and specifies the number of offers to return.
+- *imei*, which is optional and specifies the client’s IMEI.
+
+The response is a JSON object with a single property named *offers* that contains a list of offers. The number of offers in this list is at most limit from the request. Each offer in this list is an object with a single property *gatewayId*, which must identify an existing gateway in the mobile operator’s service configuration.
+
+The following is an example interaction using this endpoint:
+
+```HTTP
+GET https://moendpoint.com/v1/sims/iccid:8988247000100003319/offers?limit=1&imei=1234
+X-MS-DM-TransactionId: "MSFT-12345678-1234-1234-1234-123456789abc"
+
+HTTP/1.1 200 OK
+Content-type: application/json
+X-MS-DM-TransactionId: "MSFT-12345678-1234-1234-1234-123456789abc"
+{
+  "offers" : [
+   {
+      "gatewayId": "0"
+    }
+  ]
+}
+
+```
+
 ## Standard Gateway page
 
 The standard Gateway page is shown to the end when there is no enhanced Gateway page defined. The standard Gateway page can also be shown as a downgraded experiend when there is a problem loading content for a mobile operator's enhanced Gateway page.
