@@ -53,6 +53,42 @@ The Get Notifications request returns the template ID to be used for the notific
 
 ![Mobile Plans Get Notifications Callflow](images/mobile_plans_get_notifications_callflow.png)
 
+
+### GetNotifications API specification
+The `GetOffers` API is called upon receipt of the SMS message by the Mobile Plans application. The Mobile Plans service is a proxy for this request.
+
+```HTTP
+GET https://{notificationUri}sims/{simmri}/notifications
+```
+
+- *{notificationUri}* is the NotificationUri value onboarded as part of the mobile operator's service configuration.
+
+The endpoint has three query parameters:
+- *limit*, which is required and specifies the number of notifications to return.
+- *imei*, which is optional and specifies the client’s IMEI.
+- *notificationType*, which is required and specifies the type of notifications to return. The *notificationType* parameter is always one of the enumerated strings accepted by the Mobile Plans’ GET Notifications Request.
+
+The response is a JSON object with a single property named *notifications* that contains a list of notifications. The number of notifications in this list is at most *limit* from the request. Each notification in this list is an object with a single property, *notificationId*, which must identify an existing notification in the mobile operator’s service configuration.
+
+The following is an example interaction using this endpoint:
+
+```HTTP
+GET https://moendpoint.com/v1/sims/iccid:8988247000100003319/notifications?notificationType=lowBalance&limit=1&imei=1234
+X-MS-DM-TransactionId: "MSFT-12345678-1234-1234-1234-123456789abc"
+
+HTTP/1.1 200 OK
+Content-type: application/json
+X-MS-DM-TransactionId: "MSFT-12345678-1234-1234-1234-123456789abc"
+{
+  "notifications": [
+    {
+      "notificationId": 1,
+      "notificationType": "lowBalance"
+    }
+  ]
+}
+```
+
 ## App-triggered notifications
 
 Mobile operators in some markets also have the ability to show a promotional notification on eSIM-enabled Windows 10 PCs that do not have an eSIM profile installed. The promotional notification is triggered by the app shortly after the user completes setup of the device in the out of box experience. Clicking on the <accept> button will launch the Mobile Plans app and show the mobile operator's [Gateway page](mobile-plans-gateway.md).
