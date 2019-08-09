@@ -16,7 +16,7 @@ The [Microsoft Trusted Root Program](https://docs.microsoft.com/security/trusted
 For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](https://docs.microsoft.com/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
 
 Existing cross-signed root certificates with kernel mode code signing capabilities will continue working until expiration.
-As a result, all software publisher certificates, commercial release certificates, and commercial test certificates that chain back to these root certificates also become invalid on the same schedule.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program).
+As a result, all [software publisher certificates](software-publisher-certificate.md), [commercial release certificates](commercial-release-certificate.md), and [commercial test certificates](commercial-test-certificate.md) that chain back to these root certificates also become invalid on the same schedule.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program).
 
 ## Frequently asked questions
 * [What is the expiration schedule?](#what-is-the-expiration-schedule)
@@ -112,3 +112,10 @@ Yes.
 ### Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?
 
 Drivers can still be signed with a 3rd party issued code signing certificate. However, the certificate that signed the driver must be imported into the `Local Computer Trusted Publishers` folder on the target computer. 
+
+## Related information
+
+* [Register for the Hardware Program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program)
+* [Software Publisher Certificate](software-publisher-certificate.md)
+* [Commercial Release Certificate](commercial-release-certificate.md)
+* [Commercial Test Certificate](commercial-test-certificate.md)
