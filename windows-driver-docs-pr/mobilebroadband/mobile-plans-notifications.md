@@ -21,7 +21,7 @@ The Mobile Plans app supports the showing of 2 different types of toast notifica
 
 ## SMS-triggered notifications
 
-Mobile operators can trigger a notification to be shown on a user's device by sending an SMS to the device. The body of the SMS includes a string identifier which will route the message to the Mobile Plans app, and trigger showing of the notification. Clicking on the <accept> button will launch the Mobile Plans app and show the mobile operator's ![Gateway page](mobile-plans-gateway.md).
+Mobile operators can trigger a notification to be shown on a user's device by sending an SMS to the device. The body of the SMS includes a string identifier which will route the message to the Mobile Plans app, and trigger showing of the notification. Clicking on the <accept> button will launch the Mobile Plans app and show the mobile operator's [Gateway page](mobile-plans-gateway).
 
 Because the mobile operator triggers the notification via SMS, the device must have the active profile and be registered on the cellular network with ability to receive the SMS. The device must also have data access to the Mobile Plans service for requesting the notification content.
 
@@ -47,7 +47,7 @@ Logo | This is part of the assets that are provided during onboarding |
 
 Mobile operators have the option to define more than one SMS-notification template. If this is done, the Mobile Plans service will call the Mobile Operator API at runtime to request an ID for the template which should be used for the notification.
 
-Since the request includes identifiers for the active profile on the device, the mobile operator can define multiple templates for different user segments, or for A/B testing. SMS-notifications can also be combined with ![enhanced Gateway pages](mobile-plans-gateway.md#enhanced-gateway-page) shown in the Mobile Plans app to create highly targeted campaings.
+Since the request includes identifiers for the active profile on the device, the mobile operator can define multiple templates for different user segments, or for A/B testing. SMS-notifications can also be combined with [enhanced Gateway pages](mobile-plans-gateway.md#enhanced-gateway-page) shown in the Mobile Plans app to create highly targeted campaings.
 
 The Get Notifications request returns the template ID to be used for the notification shown to the user.
 
@@ -55,7 +55,7 @@ The Get Notifications request returns the template ID to be used for the notific
 
 ## App-triggered notifications
 
-Mobile operators in some markets also have the ability to show a promotional notification on eSIM-enabled Windows 10 PCs that do not have an eSIM profile installed. The promotional notification is triggered by the app shortly after the user completes setup of the device in the out of box experience. Clicking on the <accept> button will launch the Mobile Plans app and show the mobile operator's ![Gateway page](mobile-plans-gateway.md).
+Mobile operators in some markets also have the ability to show a promotional notification on eSIM-enabled Windows 10 PCs that do not have an eSIM profile installed. The promotional notification is triggered by the app shortly after the user completes setup of the device in the out of box experience. Clicking on the <accept> button will launch the Mobile Plans app and show the mobile operator's [Gateway page](mobile-plans-gateway.md).
 
 ### App-triggered notification content
 
@@ -70,7 +70,7 @@ Body | Short message highlighting the offering value to the end user | "Get 30GB
 Image | A lifestyle oriented photo with the PC as the centerpiece. Image dimensions are 360x243 pixels at 100% scaling. | https://picsum.photos/id/1/360/234
 Logo | This is part of the assets that are provided during onboarding | 
 
-The [Notifications Visualizer app](https://www.microsoft.com/store/productId/9NBLGGH5XSL1) can be used to mockup and notification content.
+The [Notifications Visualizer app](https://www.microsoft.com/store/productId/9NBLGGH5XSL1) can be used to mockup and test notification content.
 
 ### Sample App-triggered notification
 
