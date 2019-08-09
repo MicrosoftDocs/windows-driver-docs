@@ -16,14 +16,14 @@ The [Microsoft Trusted Root Program](https://docs.microsoft.com/security/trusted
 For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](https://docs.microsoft.com/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
 
 Existing cross-signed root certificates with kernel mode code signing capabilities will continue working until expiration.
-<!--Specifically, these include software publisher certificates, commercial release certificates, and commercial test certificates.-->
+As a result, all software publisher certificates, commercial release certificates, and commercial test certificates that chain back to these root certificates also become invalid on the same schedule.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program).
 
 ## Frequently asked questions
 * [What is the expiration schedule?](#what-is-the-expiration-schedule)
 * [What alternatives to cross signed certificates are available for testing drivers?](#what-alternatives-to-cross-signed-certificates-are-available-for-testing-drivers)
 * [What will happen to my existing signed driver packages?](#what-will-happen-to-my-existing-signed-driver-packages)
 * [Is there a way to run production driver packages without exposing it to Microsoft?](#is-there-a-way-to-run-production-driver-packages-without-exposing-it-to-microsoft)
-* [Does every new version of my driver package need to be resubmitted to Hardware Dev Center?](#does-every-new-version-of-my-driver-package-need-to-be-resubmitted-to-hardware-dev-center)
+* [Does every new version of my driver package need to be resubmitted to Hardware Dev Center?](#does-every-new-production-version-of-a-driver-package-need-to-be-signed-by-microsoft)
 * [Will we continue to be able to sign non-driver code with our existing 3rd party issued certificates after 2021?](#will-we-continue-to-be-able-to-sign-non-driver-code-with-our-existing-3rd-party-issued-certificates-after-2021)
 * [Will I be able to continue using my EV certificate for signing submissions to Hardware Dev Center?](#will-i-be-able-to-continue-using-my-ev-certificate-for-signing-submissions-to-hardware-dev-center)
 * [How do I know if my signing certificate will be impacted by these expirations?](#how-do-i-know-if-my-signing-certificate-will-be-impacted-by-these-expirations)
@@ -79,13 +79,13 @@ As long as driver packages are timestamped before the expiration date of the int
 
 No, all production driver packages must be submitted to, and signed by Microsoft. 
 
-### Does every new version of my driver package need to be resubmitted to Hardware Dev Center?
+### Does every new production version of a driver package need to be signed by Microsoft?
 
-Yes, every time a driver package is rebuilt, it must be re-signed by Microsoft
+Yes, every time a production version of a driver package is rebuilt, it must be signed by Microsoft
 
 ### Will we continue to be able to sign non-driver code with our existing 3rd party issued certificates after 2021?
 
-Yes, these certificates will continue to work until they expire. Code signed by these certificates will only be able to run in user mode, and will not be allowed to run in the kernel, unless it has a valid Microsoft signature.
+Yes, these certificates will continue to work until they expire. Code which is signed using these certificates will only be able to run in user mode, and will not be allowed to run in the kernel, unless it has a valid Microsoft signature.
 
 ### Will I be able to continue using my EV certificate for signing submissions to Hardware Dev Center?  
 
@@ -111,4 +111,4 @@ Yes.
 
 ### Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?
 
-Drivers can still be signed with a 3rd party issued code signing certificate. However, the certificate that signed the driver must be installed in the `Trusted Publisher` folder on the target computer. 
+Drivers can still be signed with a 3rd party issued code signing certificate. However, the certificate that signed the driver must be imported into the `Local Computer Trusted Publishers` folder on the target computer. 
