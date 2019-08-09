@@ -9,17 +9,17 @@ ms.date: 08/01/2019
 ms.localizationpriority: medium
 ---
 
-# Deprecation of Software Publisher Certificates and Commercial Release Certificates
+# Deprecation of Software Publisher Certificates and Commercial Release/Test Certificates
 
-The [Microsoft Trusted Root Program](https://docs.microsoft.com/security/trusted-root/program-requirements) no longer provides root certificates that have kernel mode signing capabilities.
+The [Microsoft Trusted Root Program](https://docs.microsoft.com/security/trusted-root/program-requirements) no longer supports root certificates that have kernel mode signing capabilities.
 
 For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](https://docs.microsoft.com/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
 
-Existing cross-signed root certificates with kernel mode code signing capabilities will continue working until expiration.
+Existing [cross-signed root certificates](cross-certificates-for-kernel-mode-code-signing.md) with kernel mode code signing capabilities will continue working until expiration.
 As a result, all [software publisher certificates](software-publisher-certificate.md), [commercial release certificates](commercial-release-certificate.md), and [commercial test certificates](commercial-test-certificate.md) that chain back to these root certificates also become invalid on the same schedule.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program).
 
 ## Frequently asked questions
-* [What is the expiration schedule?](#what-is-the-expiration-schedule)
+* [What is the expiration schedule of the trusted cross-certificates?](#what-is-the-expiration-schedule)
 * [What alternatives to cross signed certificates are available for testing drivers?](#what-alternatives-to-cross-signed-certificates-are-available-for-testing-drivers)
 * [What will happen to my existing signed driver packages?](#what-will-happen-to-my-existing-signed-driver-packages)
 * [Is there a way to run production driver packages without exposing it to Microsoft?](#is-there-a-way-to-run-production-driver-packages-without-exposing-it-to-microsoft)
@@ -69,7 +69,7 @@ The following alternatives can be used:
 - [WHQL Test Signature Program](whql-test-signature-program.md)
 - [Enterprise CA Process](enterprise-ca-test-certificate.md)
 
-To use these options, you must enable [TESTSIGNING](the-testsigning-boot-configuration-option.md).
+To use these options, you must enable [TESTSIGNING](the-testsigning-boot-configuration-option.md). See [Signing drivers during development and test](signing-drivers-during-development-and-test.md) for more information.
 
 ### What will happen to my existing signed driver packages? 
 
@@ -79,9 +79,9 @@ As long as driver packages are timestamped before the expiration date of the int
 
 No, all production driver packages must be submitted to, and signed by Microsoft. 
 
-### Does every new production version of a driver package need to be signed by Microsoft?
+### Does every new Production version of a driver package need to be signed by Microsoft?
 
-Yes, every time a production version of a driver package is rebuilt, it must be signed by Microsoft
+Yes, every time a Production level driver package is rebuilt, it must be signed by Microsoft
 
 ### Will we continue to be able to sign non-driver code with our existing 3rd party issued certificates after 2021?
 
@@ -111,7 +111,7 @@ Yes.
 
 ### Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?
 
-Drivers can still be signed with a 3rd party issued code signing certificate. However, the certificate that signed the driver must be imported into the `Local Computer Trusted Publishers` folder on the target computer. 
+Drivers can still be signed with a 3rd party issued code signing certificate. However, the certificate that signed the driver must be imported into the `Local Computer Trusted Publishers` certificate store on the target computer. See [Trusted Publishers Certificate Store](trusted-publishers-certificate-store.md) for more information
 
 ## Related information
 
