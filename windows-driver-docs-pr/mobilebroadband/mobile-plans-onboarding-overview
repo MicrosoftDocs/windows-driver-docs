@@ -22,7 +22,7 @@ Mobile Plans onboarding is a project composed of four phases:
 | **Feasibility** | The mobile operator assesses the Mobile Plans solution to determine feasibility and scope of the project. There are several approaches and [scenarios](mobile-plans-scenarios.md) available which should be evaluated against business needs. The operator will review available documentation, work with their designated Microsoft contact to address questions as needed, align on the timeframe, and commit to begin the work. |
 | **Development** | The mobile operator implements the component parts of their solution, according to the scenarios defined above. Windows and Mobile Plans configurations are also enabled as needed during this phase. |
 | **Integration** | The mobile operator is enabled in Mobile Plans to run end-to-end validation in a staging environment. The [integration](mobile-plans-integration.md) topic provides more details on this phase. |
-| **Launch** | The mobile operator is enabled commercially and made available to end users in the production environment. The [launch](mobile-plans-launch.md) topic provides more details on this phase. |
+| **Rollout & Launch** | The mobile operator is enabled commercially and made available to end users in the production environment. The [launch](mobile-plans-launch.md) topic provides more details on this phase. |
 
 ## Project schedule
 coming
