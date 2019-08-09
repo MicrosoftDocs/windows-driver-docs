@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-#Mobile Plans onboarding overview
+# Mobile Plans onboarding overview
 
 ## Project overview
 
