@@ -41,7 +41,7 @@ Usage | The user enjoys the benefits of an always connected PC, and is able to s
 
 The following sections illustrate the Mobile Plans user experience.
 
-### Launchin the app
+### Launching the app
 
 The Mobile Plans app can be launched from a number of different entry points. The most common entry point is the network flyout, as this is where users typically manage their active network interfaces in Windows 10. The cellular interface can be expanded to show status of the cellular network. In the example below, the device has no SIM profile activated, so the user sees a call to action to “Connect with a data plan.” Clicking this link will launch the Mobile Plans app.
 
