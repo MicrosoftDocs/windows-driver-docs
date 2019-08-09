@@ -25,7 +25,11 @@ Mobile Plans onboarding is a project composed of four phases:
 | **Rollout & Launch** | The mobile operator is enabled commercially and made available to end users in the production environment. The [launch](mobile-plans-launch.md) topic provides more details on this phase. |
 
 ## Project schedule
-coming
+
+A typical project schedule is divided into the following phases, with milestones defining the exit/entrance criteria for each phase. The actual length of the devlopment phase will depend on multiple factors including the scope of the project.
+
+![Mobile Plans project schedule](images/mobile_plans_project_schedule.png)
 
 ## Project plan
+
 This [sample project plan](mobile-plans-appendix.md#high-level-integration-schedule) has been developed to illustrate the tasks required for each phase of work. Some tasks are for mobile operators, while others are joint tasks to be done in coordination with Microsoft.
