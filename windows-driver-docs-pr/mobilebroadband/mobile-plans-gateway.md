@@ -103,7 +103,7 @@ The endpoint has two query parameters:
 - *limit*, which is required and specifies the number of offers to return.
 - *imei*, which is optional and specifies the client’s IMEI.
 
-The response is a JSON object with a single property named *offers* that contains a list of offers. The number of offers in this list is at most limit from the request. Each offer in this list is an object with a single property *gatewayId*, which must identify an existing gateway in the mobile operator’s service configuration.
+The response is a JSON object with a single property named *offers* that contains a list of offers. The number of offers in this list is at most *limit* from the request. Each offer in this list is an object with a single property *gatewayId*, which must identify an existing gateway in the mobile operator’s service configuration.
 
 The following is an example interaction using this endpoint:
 
@@ -121,7 +121,6 @@ X-MS-DM-TransactionId: "MSFT-12345678-1234-1234-1234-123456789abc"
     }
   ]
 }
-
 ```
 
 ## Standard Gateway page
