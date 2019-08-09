@@ -37,27 +37,12 @@ Changes for version xx.yy
     </thead>
     <tbody>
     <tr class="odd">
-        <td><a href="usbtcd.md" data-raw-source="[USBTCD](usbtcd.md)">USBTCD</a></td>
-        <td><ul>
-            <li>USBTCD is an application (USBTCD.exe) that communicates with a kernel-mode driver (USBTCD.sys) and performs common USB data transfer scenarios with various length transfer sizes.</li>
-            <li>The driver installation files are USBTCD .sys, and USBTCD.inf.</li>
-            <li>FX3Perf.bat measures the read performance of a USB controller to which a SuperMUTT device is attached.</li>
-        </ul></td>
-        <td><p>USBTCD.exe</p>
-            <p>USBTCD.sys</p>
-            <p>USBTCD.inf</p>
-            <p>FX3Perf.bat</p>
-            <p>UsbTCDTransferTest.bat</p></td>
+        <td>TraduciCmd</td>
+        <td>
+            <ul><li>TraduciCmd is an application (TraduciCmd.exe) that communicates with BTP hardware to update firware.</li></ul>
+        </td>
     </tr>
     <tr class="even">
-    <td></td>
-    <td><ul>
-    <li>Gathers information about the USB 3.0 host controllers and USB 3.0 hubs on the system to identify problematic firmware revisions and suggest updates.</li>
-    <li>We recommend that you run this test before any other test to filter known issues. Runs only on Windows 8.</li>
-    </ul></td>
-    <td>xhciwmi.exe</td>
-    </tr>
-    <tr class="odd">
     <td><a href="usb-xhciwmi.md" data-raw-source="[XHCIWMI](usb-xhciwmi.md)">XHCIWMI</a><a href="usblpm-tool.md" data-raw-source="[USBLPM](usblpm-tool.md)">USBLPM</a></td>
     <td><ul>
     <li>Monitors the U0/U1/U2/U3 power states of USB 3.0 ports.</li>
