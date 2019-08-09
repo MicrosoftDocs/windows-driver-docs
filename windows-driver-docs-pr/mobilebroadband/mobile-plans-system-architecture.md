@@ -17,27 +17,27 @@ This page provides an overview of the major components of the Mobile Plans syste
 
 The Mobile Plans system architecture made up of the following 5 major components:
 
-## Mobile Plans App
+### Mobile Plans App
 
 This is the Universal Windows Platform (UWP) app that is preinstalled by Microsoft on all cellular-enabled Windows 10 devices. The Mobile Plans app is the primary client environment running on the user's device for hosting the end user experience. The Mobile Plans app can also run in the background to trigger certain events (e.g. showing a toast notification).
 
-## Mobile Plans Service
+### Mobile Plans Service
 
 The Mobile Plans service is the cloud-based service layer which provides data to the Mobile Plans app. It also provides an authenticated interface to the Mobile Operator API.
 
-## Mobile Operator Web Portal
+### Mobile Operator Web Portal
 
 This is the web-based runtime environment hosted by the mobile operator. The mobile operator web portal is experienced by the user via web navigation, and is rendered in situ within the Mobile Plans app.
 
-## Mobile Operator API
+### Mobile Operator API
 
 This is the programmatic interface hosted by the mobile operator for exposing user data to the Mobile Plans, which can be fetched at runtime to update content presented to the user. An example of user data fetched at runtime would be a user's prepaid balance.
 
-## Mobile Operator SM-DP+
+### Mobile Operator SM-DP+
 
 This is the service responsible for creation and delivery of a mobile operator's eSIM profile to the Windows 10 device.
 
-# Functional overview
+## Functional overview
 
 The following diagram shows a high-level overview of how the components described above are used in a typical flow to successfully activate a subscription and install an eSIM profile. Note that other flows are possible as well.
 
