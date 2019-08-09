@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-This topic describes toast notifications in Mobile Plans that can be customized by the mobile operator with text and images to communicate with end users. Mobile Plans notifications are based on the [toast notifications framework in Windows 10](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts).
+This topic describes toast notifications in Mobile Plans that can be customized by the mobile operator with text and images to communicate with end users. Mobile Plans notifications are based on the [toast notifications framework in Windows 10](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts).
 
 > [!Note]
 > Please reach out your Microsoft contact before planning to use this feature.
@@ -21,7 +21,7 @@ The Mobile Plans app supports the showing of 2 different types of toast notifica
 
 ## SMS-triggered notifications
 
-Mobile operators can trigger a notification to be shown on a user's device by sending an SMS to the device. The body of the SMS includes a string identifier which will route the message to the Mobile Plans app, and trigger showing of the notification. Clicking on the <accept> button will launch the Mobile Plans app and show the mobile operator's [Gateway page](mobile-plans-gateway).
+Mobile operators can trigger a notification to be shown on a user's device by sending an SMS to the device. The body of the SMS includes a string identifier which will route the message to the Mobile Plans app, and trigger showing of the notification. Clicking on the <accept> button will launch the Mobile Plans app and show the mobile operator's [Gateway page](mobile-plans-gateway.md).
 
 Because the mobile operator triggers the notification via SMS, the device must have the active profile and be registered on the cellular network with ability to receive the SMS. The device must also have data access to the Mobile Plans service for requesting the notification content.
 
