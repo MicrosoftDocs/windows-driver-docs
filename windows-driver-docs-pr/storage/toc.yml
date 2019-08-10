@@ -260,8 +260,13 @@
           href: hardware-initialization-with-storport.md
         - name: "Setting Port Configuration Information with Storport"
           href: setting-port-configuration-information-with-storport.md
-      - name: "Data Set Management (DSM) Actions"
-        href: storage-data-set-management-actions.md
+      - name: "Storage Data Set Management (DSM)"
+# Auto-expanded node
+        items: 
+        - name: "Data Set Management Overview"
+          href: data-set-management-overview.md
+        - name: "DEVICE_DSM_ACTION Descriptions"
+          href: device-dsm-action-descriptions.md
     - name: "ATA Port Driver"
 # Auto-expanded node
       items: 
