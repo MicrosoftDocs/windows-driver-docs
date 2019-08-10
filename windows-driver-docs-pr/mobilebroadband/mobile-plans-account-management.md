@@ -1,6 +1,6 @@
 ---
 title: Mobile Plans account management
-description: This topic describes the expeirence for account management with Mobile Plans.
+description: This topic describes the Windows account management experience with Mobile Plans.
 ms.assetid: E97AD441-86F7-439C-9800-7DD93AAC0545
 keywords:
 - Windows Mobile Plans account management, Mobile Plans mobile operators
@@ -36,7 +36,7 @@ The following image shows an example of the network flyout:
 
 By implementing the enhanced account management experience, you can offer these benefits to your customers:
 
-- Customers can see how much data is available, and the amount of time left until their subscriptions expires, in the network flyout.
+- Customers can see how much data is available, and the amount of time left until their subscription expires, in the network flyout.
 - Customers can top up their prepaid subscriptions over mobile connectivity, even when they run out of prepaid balance or their subscriptions has expired.
 - You can manage your network flyout offering based on customer's subscription status.
 
