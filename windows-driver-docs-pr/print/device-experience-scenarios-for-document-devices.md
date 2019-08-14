@@ -20,7 +20,7 @@ When you select a device in Devices and Printers, Device Stage shows the details
 
 ## Document devices in Devices and Printers
 
-The Devices and Printers folder include the following items:
+The Devices and Printers folder includes the following items:
 
 - Locally connected printers
 - Networked printers connected through TCP/IP
