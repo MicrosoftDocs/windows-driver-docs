@@ -24,14 +24,14 @@ If you're looking for info about UWP mobile broadband apps, see [Mobile Broadban
 ## <span id="in_this_section"></span>In this section
 
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
+<table>  
+<colgroup>  
+<col width="50%" />  
+<col width="50%" />  
+</colgroup>  
+<thead>  
+<tr class="header">  
+<th align="left">Topic</th>  
 <th align="left">Description</th>
 </tr>
 </thead>

@@ -68,6 +68,7 @@ The following special characters modify the ID parameter.
 
 
 <span id="________class______"></span><span id="________CLASS______"></span>  
+
 **=**_class_   
 Specifies the device setup class of the devices. The equal sign (**=**) identifies the string as a class name.
 
