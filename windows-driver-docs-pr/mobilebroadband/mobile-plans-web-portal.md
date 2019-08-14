@@ -8,21 +8,21 @@ ms.date: 03/25/2019
 ms.localizationpriority: medium
 ---
 
-# Mobile Plans Mobile Operator web portal
+# Mobile operator web portal
 
 ## Overview
 
-This topic describes the mobile operator web service API for a web portal that enables mobile operators to provide connectivity solutions directly to Windows users through a curated web experience hosted in the Mobile Plans app. You need to create your web experiences following these design policies and implement the web service API to make it reachable. This portal is used for all scenarios supported in the Mobile Plans solution.
+This topic describes the web portal that enables mobile operators to provide connectivity solutions directly to Windows users through a curated web experience hosted in the Mobile Plans app. Mobile operators must create their web experiences following these design principles to ensure users have a high quality experience while navigating their portal. The mobile operator web portal is used for all scenarios supported in the Mobile Plans solution and is hence one of the most important components in the program.
 
-For more info about Web portal flow and reference design, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design).
+For more information about web portal flow and reference design, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design).
 
-## Web Service API used for eSIM
+## Web Portal interface for eSIM-enabled devices
 
-The Mobile Plans app uses the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host the MO Direct experience. The app only trusts content returned by the Mobile Plans service.
+The Mobile Plans app uses the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host and present the mobile operator web portal experience. The portal is invoked by the app calling the mobile operator-hosted service endpoints directly, and returned content is rendered directly within the control
 
-When starting the `WebView`, the *eid*, *market*, *location*, *imei*, and *transactionId* parameters are passed to the MO web portal. If there is at least one eSIM profile matching the Mobile Operator that Mobile Plans is reaching, the *iccids* are passed to the portal as well.
+When starting the `WebView`, several parameters are passed to the portal as part of the invocation. If there is at least one eSIM profile associated with the mobile operator, the *iccids* are passed to the portal as well.
 
-The following example shows these launch parameters for eSIM, embedded in the call to `MyWebView.Navigate()`.
+The following example shows these launch parameters for eSIM-enabled devices, embedded in the call to `MyWebView.Navigate()`.
 
 ```C#
 MyWebView.ScriptNotify += MyWebView_ScriptNotify;
@@ -36,7 +36,7 @@ MyWebView.AllowedScriptNotifyUris = allowedUris;
 MyWebView.Navigate(“https://moportal.com?market=US&location=US&transactionId=%2F7RBTuSJt02OZbX8.4&eid=89033023422130000000000199055797&imei=001102000315468&iccids=8988247000101867183,8988247000103824828”);
 ```
 
-The Web Service API must disregard any additional parameters it might receive from the Mobile Plans app. This provides flexibility for introducing new features without breaking the Mobile Plans experience. Please check the documentation frequently to learn about new features.
+In order to provide backwards compatibility with app updates, the portal must disregard any additional parameters that might also be passed in the requst. This ensures flexibility and ability to introduce new features in the app without disrupting the mobile operator's integration.
 
 The following table describes the launch parameters available for eSIM.
 
@@ -55,9 +55,9 @@ The user’s language preference is sent using the Accept-Language header, descr
 | --- | --- | --- |
 | Accept-Language | The user’s current language settings. The MO portal should render the contents in the specified language if possible. For more information, see [RFC 7231, section 5.3.5: Accept-Language](https://tools.ietf.org/html/rfc7231#section-5.3.5). | `Accept-Language: en-us` |
 
-## Web Service API used for a physical SIM
+## Web Portal interface for physical SIMs
 
-The mobile operator portal for a physical SIM is the same as for eSIM. However, there is a difference in which parameters are passed to the portal. The parameters passed are: *market*, *location*, *imei*, *iccid*, and *transactionId*.
+The interface for invoking the mobile operator portal using legacy physical UICC is the same as for eSIM. However, the parameters passed to the portal are different.
 
 ```C#
 MyWebView.Navigate(“https://moportal.com?iccid=8988247000100003319&imei=001102000311608&market=us&transactionId=waoigFfX00yGH3Vb.1&location=us”);
@@ -80,70 +80,70 @@ The user’s language preference is sent using the Accept-Language header, descr
 
 ## Web portal design policies
 
-To ensure the best user experience on Windows, you should adhere to the policies in this section when developing the MO Direct experience. These policies are supplementary to the terms and conditions of the *Mobile Plans* Partner Addendum, [Windows App Developer Agreement](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement) and [Microsoft Store Policies](https://docs.microsoft.com/legal/windows/agreements/store-policies).
+To ensure the best user experience on Windows, mobile operators are encouraged to follow the policies and guidelines in this section when developing their web portal.
 
 ### Business functions
 
 | Policy                                                                                                                                                                                                                                                                           | Required or Recommended |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| The MO Direct experience must meet all applicable legal and regulatory requirements in the countries offered. Any content displayed in the MO Direct portal must comply with all applicable laws.                                                                                | Required                |
-| Products offered through the MO Direct experience must be an offer for network connectivity.                                                                                                                                                                                     | Required                |
-| Network connectivity products offered through the MO Direct experience must have clear information on service details. Any specific terms of service must be available for users to review before purchase in the MO Direct experience.                                          | Required                |
-| Customer support contact information must be accessible to users in the MO Direct experience.                                                                                                                                                                                    | Required                |
-| The privacy policy must be available for users to review in the MO Direct experience.                                                                                                                                                                                            | Required                |
-| The account management experience provided by an MO, which can be within the MO Direct experience, a separate and dedicated account management portal, or a dedicated MO app, should enable users to take actions on their current data plans, such as canceling a subscription. | Required                |
-| Users will receive an order confirmation after purchasing a data plan from the MO Direct experience successfully.                                                                                                                                                                | Recommended             |
+| The web portal experience must meet all applicable legal and regulatory requirements in the countries offered. Any content displayed in the web portal must comply with all applicable laws. | Required |
+| Products offered through the web portal experience must be an offer for network connectivity. | Required |
+| Network connectivity products offered through the web portal experience must include clear descriptions of the offering and terms. Any specific terms of service must be available for users to review from within the web portal experience. | Required |
+| Customer support contact information must be accessible to users from within the web portal experience. | Required |
+| The mobile operator's privacy policy must be available for users to review from within the web portal experience. | Required |
+| The account management experience provided by the mobile operator must enable users to take actions on their current data plans, such as canceling a subscription. | Required |
+| Users must receive an order confirmation after successfully completing a plan purchase or activation from within the web portal experience. | Recommended |
 
 ### Security
 
-| Policy                                                                                                                               | Required or Recommended |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------- |
-| The MO Direct experience must not deliver or install any 3rd party-owned or branded apps or modules.                                 | Required                |
-| Before users exit the MO Direct experience, users must be securely logged out from the MO Direct portal.                             | Required                |
-| The MO Direct portal URI and all requests or notifications sent to and from the MO Direct portal must use the secure HTTPS protocol. | Required                |
-| All MO portal resources and references must use the secure HTTPS protocol.                                                           | Required                |
+| Policy                                                                                                                                                                                                                                                                           | Required or Recommended |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| The web portal experience must not deliver or install any 3rd party-owned or branded apps or modules. | Required |
+| Before users exit the mobile operator’s web portal experience, users must be securely logged out from the web portal.  | Required |
+| The portal URI and all requests or notifications sent to and from the web portal must use the secure HTTPS protocol. | Required |
+| All web portal resources and references must use the secure HTTPS protocol. | Required |
 
 ### Advertising
 
-| Policy                                                                                                                  | Required or Recommended |
-| ----------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| The MO Direct portal must not display any advertisements, sponsored content, videos, large images, animations, or maps. | Required                |
+| Policy                                                                                                                                                                                                                                                                           | Required or Recommended |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| The web portal must not display, or make available for download, any advertisements, sponsored content, videos, sound files, animations, or otherwise large media files or images. | Required |
 
 ### Capabilities
 
-| Policy                                                                                                                                                                                                                                                                                    | Required or Recommended |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| The required minimum functionality for the MO Direct experience is to enable a user to purchase a data plan with an account registered with a mobile operator.                                                                                                                            | Required                |
-| The MO Direct portal must start up promptly and remain responsive to user input until the user exits the MO Direct experience.                                                                                                                                                            | Required                |
-| Once invoked, the MO Direct portal must have and retain user focus until either: <ul><li>The MO Direct flow has completed and the focus has been returned by Mobile Operator back to the Mobile Plans app,</li></ul><p>OR</p><ul><li>The user has cancelled the MO Direct flow.</li></ul> | Required                |
-| The MO Direct portal must not display any pop-up windows, open any additional windows, or redirect the user to any other websites or apps, except as required to complete the purchase flow.                                                                                              | Required                |
-| The MO Direct portal must handle all legitimate errors and exceptions, such as rejection of payment method, backend failure etc. After the error or exception is handled, the MO Direct portal must remain responsive for users to exit and return to the Microsoft Store.                | Required                |
-| If users run into an error that can be fixed with user actions, it is recommended to display mobile operator customer support information with the error message.                                                                                                                         | Recommended             |
+| Policy                                                                                                                                                                                                                                                                           | Required or Recommended |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| The required minimum functionality for the web portal experience is to enable a user to purchase a data plan using an account registered with the mobile operator. | Required |
+| The web portal must start up promptly and remain responsive to user input until the user exits the web portal experience. | Required |
+| Once invoked, the web portal must have and retain user focus until either: <ul><li>The activation flow has completed and the focus has been returned by the web portal back to the Mobile Plans app,</li></ul><p>OR</p><ul><li>The user has cancelled the flow and returned to the Mobile Plans app.</li></ul> | Required |
+| The web portal must not display any pop-up windows, open any additional windows, or redirect the user to any other websites or apps, except as required to complete the activation flow. | Required |
+| The web portal must handle all legitimate errors and exceptions, such as rejection of payment method, backend failure, etc. After the error or exception is handled, the web portal must remain responsive for users to exit and return to the Mobile Plans app. | Required |
+| If users run into an error that can be fixed with user actions, it is recommended to display mobile operator customer support information with the error message. | Recommended |
 
 ### Usability
 
-| Policy                                                                                                                                                                                                                                                                                                                                      | Required or Recommended |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| The default frame size for the MO Direct portal is 800x600. Adopt responsive web design so that content on the MO Direct portal can be auto-adjusted to fit into the web control frame when users resize the Mobile Plans app.                                                                                                              | Required                |
-| Load times and data consumption for loading the MO Direct experience should be optimized.                                                                                                                                                                                                                                                   | Required                |
-| The MO Direct experience should be simple and easy navigate with necessary on-screen guidelines.                                                                                                                                                                                                                                            | Required                |
-| UI elements on the MO Direct portal should provide a cohesive experience integrated with the Mobile Plans app, not confusing users or reminding the users that this is an embedded web control. For example, there should be no close/max/min button within the MO Direct portal.                                                           | Required                |
-| Layout of web pages in the MO Direct portal should be clean and easy to navigate. Users can navigate backward and forward through web pages in the MO Direct portal with UI elements within MO Direct experience. For more info, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design). | Required                |
-| The MO Direct portal must be functional within the Web Control frame and, once invoked, it must not interfere with users’ interaction with the Mobile Plans app at any time.                                                                                                                                                               | Required                |
-| The MO Direct portal must not be cluttered with too many images, banners, lengthy text, external links, etc.                                                                                                                                                                                                                                | Required                |
-| An on-screen cancel button within the MO Direct experience should be available for users to exit the flow when applicable.                                                                                                                                                                                                                  | Recommended             |
-| Mobile operators can choose the color scheme and fonts that represents the brand the best. Ensure that all visual elements work well together and reinforce the brand.                                                                                                                                                                      | Recommended             |
+| Policy                                                                                                                                                                                                                                                                           | Required or Recommended |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| The default frame size for the web portal is 800x600. Mobile operators should adopt responsive web design so that content on their web portal can be auto-adjusted to fit into the web control frame when users resize the Mobile Plans app for larger and smaller screens. | Required |
+| Load times and data consumption for loading the web portal experience should be optimized. | Required |
+| The web portal experience should be simple and easy navigate with necessary on-screen guidelines. | Required |
+| User interface elements on the web portal should provide a cohesive experience integrated with the Mobile Plans app, not confusing users or reminding the users that this is an embedded web control. For example, there should be no close/max/min button within the web portal. | Required |
+| Layout of pages within the web portal should be clean and easy to navigate. Users can navigate backward and forward through pages in the web portal with UI elements within the portal experience. For more information, see [Web portal flow and reference design](mobile-plans-appendix.md#web-portal-flow-and-reference-design). |Required |
+| The web portal must be functional within the WebView Control frame and, once invoked, it must not interfere with users’ interaction with the Mobile Plans app at any time. | Required |
+| The web portal must not be cluttered with too many images, banners, lengthy text, external links, etc. | Required |
+| An on-screen cancel button within the web experience should be available for users to exit the flow when applicable. | Recommended |
+| Mobile operators can choose the color scheme and fonts that best represent their brand. Care should be taken to ensure all visual elements work well together and reinforce the brand. | Recommended |
 
 ### Localization
 
-| Policy                                                                                                                                                                          | Required or Recommended |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| The MO Direct portal should be able to receive and understand users’ locale setting passed by the Mobile Plans service to display content in the proper language.              | Required                |
-| Mobile operators may localize the MO Direct portal in the languages they want to support.                                                                                       | Recommended             |
-| The experience provided by the MO Direct portal should be reasonably similar in all languages that it supports, although data plan availability can vary from region to region. | Recommended             |
+| Policy                                                                                                                                                                                                                                                                           | Required or Recommended |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| The web portal should be able to receive and understand users’ locale setting passed by the Mobile Plans app to display content in the user's preferred language. | Required |
+| Mobile operators may localize their web portal in the languages they wish to support. | Recommended |
+| The experience provided by the web portal should be reasonably similar in all languages that it supports, although data plan availability may vary from region to region. | Recommended |
 
 ### Accessibility
 
-| Policy                                                                                                                                                                                                                    | Required or Recommended |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| The MO Direct portal should provide accessibility to disabled users and adhere to the accessibility guidelines applicable in the jurisdictions where the mobile operator implements and enables the MO Direct experience. | Recommended             |
+| Policy                                                                                                                                                                                                                                                                           | Required or Recommended |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| The web portal should provide accessibility to disabled users and adhere to the accessibility guidelines applicable in the jurisdictions where the mobile operator provides service. | Recommended |

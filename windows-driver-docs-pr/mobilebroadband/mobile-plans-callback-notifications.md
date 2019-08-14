@@ -12,40 +12,44 @@ ms.localizationpriority: medium
 
 ## Overview
 
-After the user completes the MO portal flow, the MO portal must return control to the Mobile Plans app. This is done by issuing a notification to the app with the result of the user interaction with the MO portal.
+Once a user finishes the activation flow in the mobile operator web portal, the portal must provide a signal to let the Mobile Plans app know that the flow has completed. This is done by issuing a notification to the app that includes the result of the user interaction with the web portal.
 
-Transactions that the MO portal supports include, but are not limited to, the following:
+Transactions that the web portal supports include, but are not limited to, the following:
 
-- Selling a new eSIM profile (issuing an activation code).
-- Activating a subscription.
+- Issuing a new eSIM profile (using an activation code).
+- Associating the device with a new or existing subscription.
 - Purchasing a new data plan (either postpaid or prepaid).
+- Purchasing additional data for to an prepaid plan.
 - Canceling a subscription.
 
 > [!NOTE]
-> This callback should be returned from the host defined in [Service configuration](mobile-plans-service-configuration.md).
+> The callback notification must be returned from the host defined in the mobile operator's [Service configuration](mobile-plans-service-configuration.md).
 
-## Immediate eSIM profile download and activation
+## Inline profile download and connectivity
 
-The following diagram shows the high level flow for how the Mobile Plans program supports downloading a profile without control leaving the MODirect portal.
+The callback method should be used when performing an eSIM profile download in the background while keeping the user in the mobile operator web portal. This enables the portal to show additional content, such as an account management page, after the profile download is completed. Additionally, it is expected that the profile will enable the device to register on the cellular network immediately upon activation, with no time delay required.
+
+
+The following diagram shows the call flow for an inline profile download callback:
 
 ![Mobile Plans inline profile download sequence diagram](images/mobile_plans_inline_profile_flow.png)
 
-This is the evolution of [Inline profile delivery](mobile-plans-legacy-callback-notifications.md#inline-profile-delivery), which is now documented in the legacy documentation page.
+This is a revised version of the legacy [Inline profile delivery](mobile-plans-legacy-callback-notifications.md#inline-profile-delivery) callback, which can be found in the Appendix for documentation purposes. It is recommended that mobile operators use the revised callback method above.
 
 ### MobilePlansInlineOperations.notifyProfileDownload(purchaseMetaData, activationCode)
 
 | Parameter name | Type | Description |
 | --- | --- | -- |
-| purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. All these are used for reporting. |
+| purchaseMetadata | Object | This object contains metadata about the user's purchase. This includes details about the user account, the purchase method or instrument, details if the user is adding a new line, and the name of the plan that the user purchased. These are used for business reporting. |
 | activationCode | String | The activation code to be used to download an eSIM profile
 
 | Return value type | Description |
 | --- | --- |
 | MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
 
-Begins the process of downloading an eSIM profile. Control is returned to the MO Portal immediately after the call. UI will be displayed to show the progress of the profile download over top of the MO Portal in the form of a notification. The MO Portal can continue to be navigated during this process
+The eSIM profile download will begin upon receipt of the callback notificaiton. Control is returned to the web portal immediately after the call. UI will be displayed to show the profile download progress as popup element rendered on top of the web portal. The web portal can continue to be navigated during this process.
 
-The following Javascript function shows an example of the API to inform the application that a profile download should begin
+The following Javascript function shows an example of the API to inform the application that a profile download should begin:
 
 ```Javascript
 var purchaseMetaData = MobilePlans.createPurchaseMetaData();
@@ -159,9 +163,9 @@ function onActivationComplete(activationArgs) {
 }
 ```
 
-## Deferred eSIM profile download and activation
+## Delayed eSIM profile download and activation
 
-The following diagram shows the high level flow for how the Mobile Plans program supports a deferred download of an eSIM profile without control leaving the MODirect portal.
+The following diagram shows the call flow for how the Mobile Plans app supports the delayed download and activation of an eSIM profile. This should be used when the eSIM profile is not available to be released by the SM-DP+ server, and can only be downloaded after a period of time. It is expected that the device will be able to register on the cellular network once the profile is downloaded and activated.
 
 ![Mobile Plans deferred profile download sequence diagram](images/mobile_plans_delay_profile_flow.png)
 
@@ -177,7 +181,7 @@ The following diagram shows the high level flow for how the Mobile Plans program
 | --- | --- |
 | MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
 
-Control is returned to the MO Portal immediately after the call. UI will be displayed to inform the user that a profile will be installed. After the `downloadDelay` minutes has occurred, a notification will be shown to the user, inviting them to begin the process of downloading the profile.
+Control is returned to the mobile operator Portal immediately after the call. UI will be displayed to inform the user that a profile will be installed later. After the `downloadDelay` minutes has occurred, a notification will be shown to the user, inviting them to begin the process of downloading the profile.
 
 The following Javascript function shows an example of the API to inform the application that a profile download with delay should begin
 
@@ -201,7 +205,7 @@ See [listening for profile activation](#listening-for-profile-activation) sectio
 
 ## Cancel eSIM profile download
 
-As of today, this applies for the deferred eSIM profile download scenario, but it could be used for future user cases.
+This applies for the deferred eSIM profile download scenario, but it could be used for future use cases as well.
 
 The following diagram shows the high level flow for how the Mobile Plans program supports a cancellation of an eSIM profile download without control leaving the MODirect portal.
 
@@ -232,11 +236,11 @@ var purchaseMetaData = MobilePlans.createPurchaseMetaData();
 
 ## Asynchronous connectivity
 
-The following diagram shows the high level flow for how the Mobile Plans program supports delayed connectivity.
+The following diagram shows the high level flow for how the Mobile Plans app supports delayed connectivity. This callback method should be used when the eSIM profile is already available for release by the SM-DP+ server, however the device needs to wait some time before attempting to register on the cellular network.
 
 ![Mobile Plans delayed connectivity sequence diagram](images/dynamo_async_connectivity_flow.png)
 
-After the user successfully completes a purchase that requires a profile download from the mobile operator's MO Direct portal, the portal informs the Mobile Plans application that it should trigger the delayed connectivity flow using the `MobilePlans.notifyPurchaseWithProfileDownload` API.
+After the user successfully completes the activation flow, the web portal informs the Mobile Plans app that it should trigger the delayed connectivity flow using the `MobilePlans.notifyPurchaseWithProfileDownload` API.
 
 ### MobilePlans.notifyPurchaseWithProfileDownload
 
@@ -264,9 +268,9 @@ See [purchase metadata properties](#purchase-metadata-properties-details) for de
 
 ## Adding balance
 
-When a user completes a purchase in the MO Direct portal by adding more data to their account, the MO portal should invoke the `MobilePlansInlineOperations.notifyBalanceAddition` API return control back to the Mobile Plans app. This could be used for *physical SIM* or *eSIM profile* which are already installed in the device.
+When a user completes a purchase in the web portal by adding more balance to an existing account, the web portal should invoke the `MobilePlansInlineOperations.notifyBalanceAddition` API return control back to the Mobile Plans app. This could be used for *physical SIM* or *eSIM profile* which are already installed in the device.
 
-The following diagram shows the high level flow for how the Mobile Plans program supports adding balance.
+The following diagram shows the high level flow for how the Mobile Plans app supports adding balance.
 
 ![Mobile Plans add balancesequence diagram](images/mobile_plans_add_balance_flow.png)
 
@@ -280,7 +284,7 @@ The following diagram shows the high level flow for how the Mobile Plans program
 | --- | --- |
 | MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
 
-When the MO would like to add balance to a given account, the MO should call the `MobilePlansInlineOperations.notifyBalanceAddition` API.
+When the mobile operator would like to add balance to a given account, the web portal should call the `MobilePlansInlineOperations.notifyBalanceAddition` API.
 
 The following Javascript function shows an example of the API to inform the application that a balance addition has been made.
 
@@ -300,9 +304,9 @@ See [purchase metadata properties](#purchase-metadata-properties-details) for de
 
 ## Adding balance and activate eSIM profile
 
-When a user completes a purchase in the MO Direct portal by adding more data to their account, the MO portal should invoke the `MobilePlansInlineOperations.notifyBalanceAddition` API return control back to the Mobile Plans app. This could be used for *eSIM profile*which are already installed in the device. The ICCID parameter indicates which eSIM profile should be activated.
+When a user completes a purcahse in the web portal by adding more data to an existing account, the web portal should invoke the `MobilePlansInlineOperations.notifyBalanceAddition` API return control back to the Mobile Plans app. This could be used for an *eSIM profile* which is already installed on the device. The ICCID parameter indicates which eSIM profile should be activated.
 
-The following diagram shows the high level flow for how the Mobile Plans program supports adding balance with iccid information.
+The following diagram shows the call flow for how the Mobile Plans app supports adding balance with iccid information.
 
 ![Mobile Plans add balancesequence diagram](images/mobile_plans_add_balance_iccid_flow.png)
 
@@ -317,7 +321,7 @@ The following diagram shows the high level flow for how the Mobile Plans program
 | --- | --- |
 | MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
 
-Balance addition can also be made to a non active profile if the ICCID of the profile is known. Using the `MobilePlansInlineOperations.notifyBalanceAddition` with an ICCID will inform Mobile Plans of the balance addition as well as make Mobile Plans switch the active profile to the profile corresponding to the provided ICCID.
+Balance addition can also be made to a non active profile if the ICCID of the profile is known. Using the `MobilePlansInlineOperations.notifyBalanceAddition` with an ICCID will inform the app of the balance addition as well as switch the active profile to the profile corresponding to the provided ICCID.
 
 The following Javascript function shows an example of the API to inform the application that a balance addition has been made.
 
@@ -337,7 +341,7 @@ See [purchase metadata properties](#purchase-metadata-properties-details) for de
 
 ## Canceling purchase flow
 
-If a user cancels the purchase flow at the MO portal, then the portal must invoke the `MobilePlans.notifyCancelledPurchase` API to return control back to the Mobile Plans app.
+If a user cancels the activation flow in the web portal, the portal must invoke the `MobilePlans.notifyCancelledPurchase` API to return control back to the Mobile Plans app.
 
 ### MobilePlans.notifyCancelledPurchase
 
