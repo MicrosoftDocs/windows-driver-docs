@@ -11,6 +11,8 @@
     href: camera-intrinsics.md
   - name: "Camera Device Orientation"
     href: camera-device-orientation.md
+  - name: "Camera Profiles"
+    href: camera-profiles.md
   - name: "DShow Bridge implementation guidance for UVC devices"
     href: dshow-bridge-implementation-guidance-for-usb-video-class-devices.md
   - name: "USB Video Class (UVC) driver implementation checklist"
@@ -27,10 +29,14 @@
   href: windows-hello-camera-driver-bring-up-guide.md
 - name: "Extended camera controls"
   href: standardized-extended-controls-.md
+- name: "Camera capture metadata"
+  href: mf-capture-metadata.md
 - name: "Frame Server Custom Media Source"
   href: frame-server-custom-media-source.md
 - name: "360 camera video capture"
   href: 360-camera-video-capture.md
+- name: "Flashlight (Lamp) Support"
+  href: flashlight-support.md
 - name: "Streaming Media Samples"
   href: streaming-media-samples.md
 - name: "OEM guidance on settings for the Windows 10 in-box camera app"
