@@ -4,8 +4,7 @@ The table below summarizes the available capture stats IMFAttributes for
 the MFT0's **MFSampleExtension\_CaptureMetaData** metadata attribute bag for preview, video, and still capture.
 
 The capture stats listed for still is mandatory for every photo captured
-except MF\_CAPTURE\_METADATA\_FLASH\_POWER which is dependent on
-driver’s capability. The capture stats listed for preview and video
+unless otherwise indicated. The capture stats listed for preview and video
 should be delivered as the best effort and the driver may or may not
 deliver all capture stats on all frames based on the availability and
 performance considerations.
@@ -23,10 +22,11 @@ performance considerations.
 | [MF\_CAPTURE\_METADATA\_LENS\_POSITION](#MF_CAPTURE_METADATA_LENS\_POSITION)                      | UINT32           | Preview, Still        | This attribute contains the logical lens position when focus was applied to the photo captured. This value does not have a specific unit. |
 | [MF\_CAPTURE\_METADATA\_SCENE\_MODE](#MF_CAPTURE_METADATA_SCENE\_MODE)                            | UINT64           | Still                 | This attribute contains the scene mode applied as a **UINT64KSCAMERA_EXTENDEDPROP_SCENEMODE_XXX** flag. |
 | [MF\_CAPTURE\_METADATA\_FLASH](#MF_CAPTURE_METADATA_FLASH)                                        | UINT32 (Boolean) | Preview, Still        | This attribute contains a Boolean value that contains the flash state. A value of 1 specifies that the flash is on and a value of 0 specifies that the flash is off for the photo captured. |
-| [MF\_CAPTURE\_METADATA\_FLASH\_POWER](#MF_CAPTURE_METADATA_FLASH\_POWER)                          | UINT32           | Still                 | This attribute contains the flash power applied as a percentage value between 0 and 100. |
+| [MF\_CAPTURE\_METADATA\_FLASH\_POWER](#MF_CAPTURE_METADATA_FLASH\_POWER)                          | UINT32           | Still                 | \[Optional\] This attribute contains the flash power applied as a percentage value between 0 and 100. |
 | [MF\_CAPTURE\_METADATA\_WHITEBALANCE](#MF_CAPTURE_METADATA_WHITEBALANCE)                          | UINT32 (Kelvin)  | Preview, Still        | This attribute contains the white balance applied as a value in Kelvin. |
 | [MF\_CAPTURE\_METADATA\_ZOOMFACTOR](#MF_CAPTURE_METADATA_ZOOMFACTOR)                              | UINT32 (Q16)     | Still                 | This attribute contains the zoom value applied and is the same value that can be queried from [**KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-zoom) in a GET call. The value must be in Q16. |
-| [MF\_CAPTURE\_METADATA\_REQUESTED\_FRAME\_SETTING\_ID](#MF_CAPTURE_METADATA_REQUESTED_FRAME_SETTING_ID) | UINT32           | Still                | This attribute contains the frame ID for the corresponding frame in the variable photo sequence. This attribute is only set for a variable photo sequence capture. |
+| [MF\_CAPTURE\_METADATA\_EXIF](#MF_CAPTURE_METADATA_EXIF)                                          | Blob             | Still                 | \[Optional\] This attribute contains EXIF metadata as specified in the [blob definition section](#Blob-Definition) |
+| [MF\_CAPTURE\_METADATA\_REQUESTED\_FRAME\_SETTING\_ID](#MF_CAPTURE_METADATA_REQUESTED_FRAME_SETTING_ID) | UINT32           | Still                | \[Optional\] This attribute contains the frame ID for the corresponding frame in the variable photo sequence. This attribute is only set for a variable photo sequence capture. |
 | [MF\_CAPTURE\_METADATA\_ISO\_GAINS](#MF_CAPTURE_METADATA_ISO_GAINS)                               | Blob             | Preview               | This attribute contains the analog and digital gains applied to the senor when the preview frame was captured. This is unitless. |
 | [MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS](#MF_CAPTURE_METADATA_WHITEBALANCE\_GAINS)            | Blob             | Preview               | This attribute contains the white balance gains applied to R, G, B by the sensor and\\or ISP when the preview frame was captured. This is a unitless. |
 | [MF\_CAPTURE\_METADATA\_HISTOGRAM](#MF_CAPTURE_METADATA_HISTOGRAM)                                | Blob             | Preview               | This attribute contains the histogram when apreview frame is captured. |
@@ -300,6 +300,110 @@ applied to the photo captured which is the same value that can be
 queried from KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM in a GET call.
 This should be in Q16.
 
+## MF_CAPTURE_METADATA_EXIF
+
+MF\_CAPTURE\_METADATA\_EXIF contains EXIF metadata as specified in
+Section 3.1 (Blob definition). MFT0 shall extract the raw EXIF metadata,
+which is identified as a custom metadata item (MetadataId \>=
+MetadataId\_Custom\_Start), from the
+MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM buffer provided by the driver.
+MFT0 shall then convert the raw data into a MF\_CAPTURE\_METADATA\_EXIF
+attribute.
+
+### Blob definition
+
+The blob shall consist of a complete TIFF header, 0th IFD and EXIF
+sub-IFD as defined by the EXIF 2.3 and TIFF 6.0 specifications. The blob
+shall not contain any data before the TIFF header. The blob shall not
+contain any data after the end of the 0th IFD. For example, it is not
+valid to include an IFD containing thumbnail data.
+
+The following diagram, copied from the TIFF specification, illustrates
+the expected memory layout:
+
+![EXIF blob definition](images/exif-blob-definition.png)
+
+The following are requirements that are consistent with the EXIF and
+TIFF specifications but are called out for emphasis:
+
+- The byte order shall be either little endian (“II”) or big endian(“MM”).
+- Pointers (“byte offsets” in the TIFF specification) shall be relative to
+  the beginning of the TIFF header.
+
+The following are requirements that are more restrictive than the EXIF
+and TIFF specifications:
+
+- The offset to the next IFD shall be 0, i.e. no additional IFDs are pointed to.
+- The TIFF header and 0th IFD shall be contiguous, i.e. the offset to the 0th
+  IFD as stored in bytes 4-7 shall be 0x8.
+
+### Mandatory EXIF metadata
+
+The section below describes EXIF metadata that must be included in
+MF\_CAPTURE\_METADATA\_EXIF .
+
+| Name                  | EXIF Tag  | Description                                                           |
+| --------------------- | --------- | --------------------------------------------------------------------- |
+| Orientation           | 274       | Image orientation viewed in terms of rows and columns. See EXIF spec for complete description |
+| Make                  | 271       | The manufacturer of the recording equipment                           |
+| Model                 | 272       | The model name or the model number of the device                      |
+| XResolution           | 282       | The number of pixels per resolution unit in the ImageWidth direction  |
+| YResolution           | 283       | The number of pixels per resolution unit in the ImageLength direction |
+| ResolutionUnit        | 296       | The unit for measuring XResolution and YResolution                    |
+| Software              | 305       | Name and version of the firmware                                      |
+| ColorSpace            | 40961     | The color space information, typically sRGB                           |
+| SubsSecTimeOriginal   | 37521     | Records fractions of seconds associated with DateTimeOriginal tag     |
+| SubSecTimeDigitized   | 37522     | Records fractions of seconds associated with DateTimeDigitized tag    |
+| ExposureTime          | 33434     | Exposure time in seconds (accurate to 0.001s)                         |
+| FNumber               | 33437     | The F number used for capture                                         |
+| ISOSpeedRatings       | 34855     | ISO speed value as defined in ISO 12322, saturation based             |
+| DateTimeOriginal      | 36867     | Date and time when the original image data was generated              |
+| DateTimeDIgitized     | 36868     | The date and time when theimage as stored as digital data             |
+| Shutter SpeedValue    | 37377     | Shutter speed in Additive System of Photographic Exposure (APEX) units|
+| Aperture Value        | 37378     | The lens aperture in APEX units                                       |
+| ExposureBias Value    | 37380     | Exposure Bias value in APEX units                                     |
+| MeteringMode          | 37383     | AE metering mode (see EXIF spec)                                      |
+| LightSource           | 37384     | The kind of light source (see EXIF spec)                              |
+| Flash                 | 37385     | Status of the flash during image capture                              |
+| FocalLength           | 37386     | The actual focal length of the lens                                   |
+| ExposureMode          | 41986     | Exposure Mode during capture                                          |
+| WhiteBalance          | 41987     | White balance mode during capture                                     |
+| DigitalZoomRatio      | 41988     | Digital zoom ratio during image capture                               |
+| FocalLengthIn35mmFilm | 41989     | 35 mm equivalent focal length                                         |
+| SceneCaptureType      | 41990     | Type of scene that was shot                                           |
+
+### Optional/OEM-defined metadata
+
+The camera driver may include any additional metadata in the form of
+custom EXIF tags as long as it conforms to the EXIF specification and is
+stored in either the 0th TIFF IFD or the EXIF sub-IFD.
+
+### MakerNote requirements and binary layout expectations
+
+The camera driver may include manufacturer-proprietary information in
+the form of a maker note (tag 37500). The maker note must not contain
+any pointers to, or otherwise rely on, data that is outside of the maker
+note itself, including the start of the file and the position of the
+TIFF header. In addition, it must not make assumptions about the
+endianness of the file as specified in the TIFF header.
+
+In general, the operating system makes no guarantees that the binary
+layout of the metadata blob is preserved when it is written to the
+output JPEG stream. It only guarantees that the metadata is written out
+in conformance with the EXIF specification. For example, it only
+guarantees that the maker note is copied as a contiguous block and is
+identified by the correct IFD tag, type, and offset.
+
+### Usage with WIC JPEG encoder
+
+The intended usage of MF\_CAPTURE\_METADATA\_EXIF is with the
+OS-provided Windows Imaging Component (WIC) JPEG encoder. Windows Camera
+pipeline uses the Windows WIC JPEG encoder to consume EXIF metadata
+obtained from MF\_CAPTURE\_METADATA\_EXIF and muxes this with image
+pixel data into a JPEG file when the application is not capturing a JPEG
+directly from camera, but configured pipeline to capture to NV12/YUY2
+and get encoded by the OS
+
 ## MF_CAPTURE_METADATA_REQUESTED_FRAME_SETTING_ID
 
 MF\_CAPTURE\_METADATA\_REQUESTED\_FRAME\_SETTING_ID attribute contains the
@@ -370,23 +474,20 @@ indicate the available channels in the histogram.
 
 Notes:
 
-1.  Each blob can contain multiple histograms collected from different
-    regions or different color spaces of the same frame
-
-2.  Each histogram in the blob is identified by its own HistogramHeader
-
-3.  Each histogram has its own region and sensor output size associated.
-    For full frame histogram, the region will match the sensor output
-    size specified in HistogramGrid.
-
-4.  Histogram data for all available channels are grouped under one
-    histogram. Histogram data for each channel is identified by a
-    HistogramDataHeader immediate above the data. ChannelMasks indicate
-    how many and what channels are having the histogram data, which is
-    the bitwise OR of the supported MF\_HISTOGRAM\_CHANNEL\_XXX bitmasks
-    as defined above. ChannelMask indicates what channel the data is
-    for, which is identified by any one of the
-    MF\_HISTOGRAM\_CHANNEL\_XXX bitmasks defined above.
+1. Each blob can contain multiple histograms collected from different
+   regions or different color spaces of the same frame
+2. Each histogram in the blob is identified by its own HistogramHeader
+3. Each histogram has its own region and sensor output size associated.
+   For full frame histogram, the region will match the sensor output
+   size specified in HistogramGrid.
+4. Histogram data for all available channels are grouped under one
+   histogram. Histogram data for each channel is identified by a
+   HistogramDataHeader immediate above the data. ChannelMasks indicate
+   how many and what channels are having the histogram data, which is
+   the bitwise OR of the supported MF\_HISTOGRAM\_CHANNEL\_XXX bitmasks
+   as defined above. ChannelMask indicates what channel the data is
+   for, which is identified by any one of the
+   MF\_HISTOGRAM\_CHANNEL\_XXX bitmasks defined above.
 
 The figure below illustrates the layout of a histogram blob with a full
 frame Y-only histogram.
