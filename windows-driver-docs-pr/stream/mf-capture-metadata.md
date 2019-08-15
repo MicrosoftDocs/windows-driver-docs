@@ -1,7 +1,7 @@
 # Capture Stats Metadata Attributes
 
 The table below summarizes the available capture stats IMFAttributes for
-MFT0 for preview, video, and still capture.
+the MFT0's **MFSampleExtension\_CaptureMetaData** metadata attribute bag for preview, video, and still capture.
 
 The capture stats listed for still is mandatory for every photo captured
 except MF\_CAPTURE\_METADATA\_FLASH\_POWER which is dependent on
@@ -10,26 +10,28 @@ should be delivered as the best effort and the driver may or may not
 deliver all capture stats on all frames based on the availability and
 performance considerations.
 
-| Name                                                                                              | Type             | Pin                   |
-| ------------------------------------------------------------------------------------------------- | ---------------- | --------------------- |
-| [MF\_CAPTURE\_METADATA\_FOCUSSTATE](#MF_CAPTURE_METADATA_FOCUSSTATE)                              | UINT32           | Preview               |
-| [MF\_CAPTURE\_METADATA\_FACEROIS](#MF_CAPTURE_METADATA_FACEROIS)                                  | Blob             | Preview, Video        |
-| [MF\_CAPTURE\_METADATA\_EXPOSURE\_TIME](#MF_CAPTURE_METADATA_EXPOSURE\_TIME)                      | UINT64           | Preview, Still        |
-| [MF\_CAPTURE\_METADATA\_EXPOSURE\_COMPENSATION](#MF_CAPTURE_METADATA_EXPOSURE\_COMPENSATION)      | Blob             | Preview, Still        |
-| [MF\_CAPTURE\_METADATA\_ISO\_SPEED](#MF_CAPTURE_METADATA_ISO\_SPEED)                              | UINT32           | Preview, Still        |
-| [MF\_CAPTURE\_METADATA\_LENS\_POSITION](#MF_CAPTURE_METADATA_LENS\_POSITION)                      | UINT32           | Preview, Still        |
-| [MF\_CAPTURE\_METADATA\_SCENE\_MODE](#MF_CAPTURE_METADATA_SCENE\_MODE)                            | UINT64           | Still                 |
-| [MF\_CAPTURE\_METADATA\_FLASH](#MF_CAPTURE_METADATA_FLASH)                                        | UINT32 (Boolean) | Preview, Still        |
-| [MF\_CAPTURE\_METADATA\_FLASH\_POWER](#MF_CAPTURE_METADATA_FLASH\_POWER)                          | UINT32           | Still                 |
-| [MF\_CAPTURE\_METADATA\_WHITEBALANCE](#MF_CAPTURE_METADATA_WHITEBALANCE)                          | UINT32 (Kelvin)  | Preview, Still        |
-| [MF\_CAPTURE\_METADATA\_ZOOMFACTOR](#MF_CAPTURE_METADATA_ZOOMFACTOR)                              | UINT32 (Q16)     | Still                 |
-| [MF\_CAPTURE\_METADATA\_ISO\_GAINS](#MF_CAPTURE_METADATA_ISO_GAINS)                               | Blob             | Preview               |
-| [MF\_CAPTURE\_METADATA\_SENSORFRAMERATE](#MF_CAPTURE_METADATA_SENSORFRAMERATE)                    | UINT64           | Preview               |
-| [MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS](#MF_CAPTURE_METADATA_WHITEBALANCE\_GAINS)            | Blob             | Preview               |
-| [MF\_CAPTURE\_METADATA\_FACEROITIMESTAMPS](#MF_CAPTURE_METADATA_FACEROITIMESTAMPS)                | Blob             | Preview, Video        |
-| [MF\_CAPTURE\_METADATA\_FACEROICHARACTERIZATIONS](#MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS)  | Blob             | Preview, Video        |
-| [MF\_CAPTURE\_METADATA\_HISTOGRAM](#MF_CAPTURE_METADATA_HISTOGRAM)                                | Blob             | Preview               |
-| [MF\_CAPTURE\_METADATA\_FRAME\_ILLUMINATION](#MF_CAPTURE_METADATA_FRAME_ILLUMINATION)             | UINT64           | IR Pin used for Hello |
+| Name                                                                                              | Type             | Pin                   | Description            |
+| ------------------------------------------------------------------------------------------------- | ---------------- | --------------------- | ---------------------- |
+| [MF\_CAPTURE\_METADATA\_FOCUSSTATE](#MF_CAPTURE_METADATA_FOCUSSTATE)                              | UINT32           | Preview               | This attribute contains the current focus state which can take one of the following values. |
+| [MF\_CAPTURE\_METADATA\_SENSORFRAMERATE](#MF_CAPTURE_METADATA_SENSORFRAMERATE)                    | UINT64           | Preview               | This attribute contains the measured sensor readout rate in hertz when a preview frame is captured, which consists of a numerator value in the upper 32 bit and a denominator value in the lower 32 bit. |
+| [MF\_CAPTURE\_METADATA\_FACEROIS](#MF_CAPTURE_METADATA_FACEROIS)                                  | Blob             | Preview, Video        | This attribute contains the face rectangle info detected by the driver. |
+| [MF\_CAPTURE\_METADATA\_FACEROITIMESTAMPS](#MF_CAPTURE_METADATA_FACEROITIMESTAMPS)                | Blob             | Preview, Video        | This attribute contains the time stamp info for the face ROIs identified in **MF\_CAPTURE\_METADATA\_FACEROIS**. |
+| [MF\_CAPTURE\_METADATA\_FACEROICHARACTERIZATIONS](#MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS)  | Blob             | Preview, Video        | This attribute contains the blink and\\or facial expression state for the face ROIs identified in **MF\_CAPTURE\_METADATA\_FACEROIS**. |
+| [MF\_CAPTURE\_METADATA\_EXPOSURE\_TIME](#MF_CAPTURE_METADATA_EXPOSURE\_TIME)                      | UINT64           | Preview, Still        | This attribute contains the exposure time applied in 100 nanoseconds |
+| [MF\_CAPTURE\_METADATA\_EXPOSURE\_COMPENSATION](#MF_CAPTURE_METADATA_EXPOSURE\_COMPENSATION)      | Blob             | Preview, Still        | This attribute contains an EV compensation step flag and an EV compensation value in units of the step that was applied to the driver when the photo was captured. |
+| [MF\_CAPTURE\_METADATA\_ISO\_SPEED](#MF_CAPTURE_METADATA_ISO\_SPEED)                              | UINT32           | Preview, Still        | This attribute contains the ISO speed value applied as an integer. |
+| [MF\_CAPTURE\_METADATA\_LENS\_POSITION](#MF_CAPTURE_METADATA_LENS\_POSITION)                      | UINT32           | Preview, Still        | This attribute contains the logical lens position when focus was applied to the photo captured. This value does not have a specific unit. |
+| [MF\_CAPTURE\_METADATA\_SCENE\_MODE](#MF_CAPTURE_METADATA_SCENE\_MODE)                            | UINT64           | Still                 | This attribute contains the scene mode applied as a **UINT64KSCAMERA_EXTENDEDPROP_SCENEMODE_XXX** flag. |
+| [MF\_CAPTURE\_METADATA\_FLASH](#MF_CAPTURE_METADATA_FLASH)                                        | UINT32 (Boolean) | Preview, Still        | This attribute contains a Boolean value that contains the flash state. A value of 1 specifies that the flash is on and a value of 0 specifies that the flash is off for the photo captured. |
+| [MF\_CAPTURE\_METADATA\_FLASH\_POWER](#MF_CAPTURE_METADATA_FLASH\_POWER)                          | UINT32           | Still                 | This attribute contains the flash power applied as a percentage value between 0 and 100. |
+| [MF\_CAPTURE\_METADATA\_WHITEBALANCE](#MF_CAPTURE_METADATA_WHITEBALANCE)                          | UINT32 (Kelvin)  | Preview, Still        | This attribute contains the white balance applied as a value in Kelvin. |
+| [MF\_CAPTURE\_METADATA\_ZOOMFACTOR](#MF_CAPTURE_METADATA_ZOOMFACTOR)                              | UINT32 (Q16)     | Still                 | This attribute contains the zoom value applied and is the same value that can be queried from [**KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-zoom) in a GET call. The value must be in Q16. |
+| [MF\_CAPTURE\_METADATA\_REQUESTED\_FRAME\_SETTING\_ID](#MF_CAPTURE_METADATA_REQUESTED_FRAME_SETTING_ID) | UINT32           | Still                | This attribute contains the frame ID for the corresponding frame in the variable photo sequence. This attribute is only set for a variable photo sequence capture. |
+| [MF\_CAPTURE\_METADATA\_ISO\_GAINS](#MF_CAPTURE_METADATA_ISO_GAINS)                               | Blob             | Preview               | This attribute contains the analog and digital gains applied to the senor when the preview frame was captured. This is unitless. |
+| [MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS](#MF_CAPTURE_METADATA_WHITEBALANCE\_GAINS)            | Blob             | Preview               | This attribute contains the white balance gains applied to R, G, B by the sensor and\\or ISP when the preview frame was captured. This is a unitless. |
+| [MF\_CAPTURE\_METADATA\_HISTOGRAM](#MF_CAPTURE_METADATA_HISTOGRAM)                                | Blob             | Preview               | This attribute contains the histogram when apreview frame is captured. |
+| [MF\_CAPTURE\_METADATA\_FRAME\_ILLUMINATION](#MF_CAPTURE_METADATA_FRAME_ILLUMINATION)             | UINT64           | IR Pin used for Hello | This attribute for IR cameras specifies whether the frames are using active IR illumination and should be used in conjunction with **FACEAUTH_MODE_ALTERNATIVE_FRAME_ILLUMINATION**. |
+| Any Custom GUID                                                                                   | Any variant type |                       | This attribute contains the custom data associated with the custom GUID |
 
 ## MF_CAPTURE_METADATA_FOCUSSTATE
 
@@ -46,6 +48,13 @@ typedef enum
     KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FAILED,
 } KSCAMERA_EXTENDEDPROP_FOCUSSTATE;
 ```
+
+## MF_CAPTURE_METADATA_SENSORFRAMERATE
+
+MF\_CAPTURE\_METADATA\_SENSORFRAMERATE attribute contains the measured
+sensor readout rate in hertz when a preview frame is captured, which
+consists of a numerator value in the upper 32 bit and a denominator
+value in the lower 32 bit.
 
 ## MF_CAPTURE_METADATA_FACEROIS
 
@@ -84,133 +93,6 @@ is still required to attach a “dummy” MF\_CAPTURE\_METADATA\_FACEROIS
 attribute to each sample which has no face information associated with
 it. (A “dummy” face ROI attribute has the *Count* field of the
 *FaceRectInfoBlobHeader* structure set to zero.)
-
-## MF_CAPTURE_METADATA_EXPOSURE_TIME
-
-MF\_CAPTURE\_METADATA\_EXPOSURE\_TIME attribute contains the exposure
-time applied to the sensor when preview and\\or photo frame was captured
-which is a UINT64 and is in 100ns.
-
-## MF_CAPTURE_METADATA_EXPOSURE_COMPENSATION
-
-MF\_CAPTURE\_METADATA\_EXPOSURE\_COMPENSATION attribute contains an EV
-compensation step flag and an EV Compensation value in units of the step
-applied to the sensor when preview and\\or photo frame was captured.
-
-The data structure below describes the blob format for
-MF\_CAPTURE\_METADATA\_EXPOSURE\_COMPENSATION.
-
-```cpp
-typedef struct tagCapturedMetadataExposureCompensation
-{
-    UINT64 Flags;   // KSCAMERA_EXTENDEDPROP_EVCOMP_XXX step flag
-    INT32 Value;    // EV Compensation value in units of the step
-} CapturedMetadataExposureCompensation;
-```
-
-Note that CapturedMetadataExposureCompensation struct only describes the
-blob format for the MF\_CAPTURE\_METADATA\_EXPOSURE\_COMPENSATION
-attribute. The metadata item structure for EV compensation
-(KSCAMERA\_METADATA\_ITEMHEADER + EV compensation metadata payload) is
-up to driver and must be 8-byte aligned.
-
-## MF_CAPTURE_METADATA_ISO_SPEED
-
-MF\_CAPTURE\_METADATA\_ISO\_SPEED attributes contains the ISO speed
-value applied to the sensor when preview and\\or photo frame was
-captured. This is unitless.
-
-## MF_CAPTURE_METADATA_LENS_POSITION
-
-MF\_CAPTURE\_METADATA\_LENS\_POSITION attribute contains the logical
-lens position when preview and\\or photo frame was captured, which is
-unitless. This is the same value that can be queried from
-KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUS in a GET call.
-
-## MF_CAPTURE_METADATA_FLASH
-
-MF\_CAPTURE\_METADATA\_FLASH attribute contains a boolean value when
-preview and\\or photo frame was captured, with 1 meaning flash on and 0
-meaning flash off.
-
-## MF_CAPTURE_METADATA_SCENE_MODE
-
-MF\_CAPTURE\_METADATA\_SCENE\_MODE attribute contains the scene mode
-applied to the photo captured which is a 64bit
-KSCAMERA\_EXTENDEDPROP\_SCENEMODE\_XXX flag.
-
-## MF_CAPTURE_METADATA_FLASH_POWER
-
-MF\_CAPTURE\_METADATA\_FLASH\_POWER attribute contains the flash power
-applied to the photo captured which is a value in the range of \[0,
-100\]. This attribute should be omitted if the driver does not support
-adjustable power for flash.
-
-## MF_CAPTURE_METADATA_WHITEBALANCE
-
-MF\_CAPTURE\_METADATA\_WHITEBALANCE attribute contains the white balance
-applied to the sensor when preview and\\or photo frame was captured,
-which is a value in Kevin.
-
-## MF_CAPTURE_METADATA_ZOOMFACTOR
-
-MF\_CAPTURE\_METADATA\_ZOOMFACTOR attribute contains the zoom value
-applied to the photo captured which is the same value that can be
-queried from KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM in a GET call.
-This should be in Q16.
-
-## MF_CAPTURE_METADATA_ISO_GAINS
-
-MF\_CAPTURE\_METADATA\_ISO\_GAINS attribute contains the analog and
-digital gains applied to the senor when the preview frame was captured.
-This is unitless.
-
-The data structure below describes the blob format for
-MF\_CAPTURE\_METADATA\_ISO\_GAINS.
-
-```cpp
-typedef struct tagCapturedMetadataISOGains
-{
-    FLOAT AnalogGain;
-    FLOAT DigitalGain;
-} CapturedMetadataISOGains;
-```
-
-Note that CapturedMetadataISOGains struct only describes the blob format
-for the MF\_CAPTURE\_METADATA\_ISO\_GAINS attribute. The metadata item
-structure for ISO gains (KSCAMERA\_METADATA\_ITEMHEADER + ISO gains
-metadata payload) is up to driver and must be 8-byte aligned.
-
-## MF_CAPTURE_METADATA_SENSORFRAMERATE
-
-MF\_CAPTURE\_METADATA\_SENSORFRAMERATE attribute contains the measured
-sensor readout rate in hertz when a preview frame is captured, which
-consists of a numerator value in the upper 32 bit and a denominator
-value in the lower 32 bit.
-
-## MF_CAPTURE_METADATA_WHITEBALANCE_GAINS
-
-MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS attribute contains the white
-balance gains applied to R, G, B by the sensor and\\or ISP when the
-preview frame was captured. This is a unitless.
-
-The data structure below describes the blob format for
-MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS.
-
-```cpp
-typedef struct tagCapturedMetadataWhiteBalanceGains
-{
-    FLOAT R;
-    FLOAT G;
-    FLOAT B;
-} CapturedMetadataWhiteBalanceGains;
-```
-
-Note that CapturedMetadataWhiteBalanceGains struct only describes the
-blob format for the MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS
-attribute. The metadata item structure for white balance gains
-(KSCAMERA\_METADATA\_ITEMHEADER + white balance gains metadata payload)
-is up to driver and must be 8-byte aligned.
 
 ## MF_CAPTURE_METADATA_FACEROITIMESTAMPS
 
@@ -254,7 +136,7 @@ blink and\\or facial expression detection, this attribute should be
 omitted.
 
 The data structure below describes the blob format for
-MF\_CAPTURE\_METADATA\_FACEROICHARACTERIZATIONS. 
+MF\_CAPTURE\_METADATA\_FACEROICHARACTERIZATIONS.
 
 Note that FaceCharacterizationBlobHeader and FaceCharacterization
 structs only describe the blob format for the
@@ -298,6 +180,132 @@ blob and a face ROIs blob of four faces with the first one neither
 blinking nor smiling, the second one blinking left eye, the third one
 smiling, and the fourth one both blinking (both eyes) and smiling.
 
+## MF_CAPTURE_METADATA_EXPOSURE_TIME
+
+MF\_CAPTURE\_METADATA\_EXPOSURE\_TIME attribute contains the exposure
+time applied to the sensor when preview and\\or photo frame was captured
+which is a UINT64 and is in 100ns.
+
+## MF_CAPTURE_METADATA_EXPOSURE_COMPENSATION
+
+MF\_CAPTURE\_METADATA\_EXPOSURE\_COMPENSATION attribute contains an EV
+compensation step flag and an EV Compensation value in units of the step
+applied to the sensor when preview and\\or photo frame was captured.
+
+The data structure below describes the blob format for
+MF\_CAPTURE\_METADATA\_EXPOSURE\_COMPENSATION.
+
+```cpp
+typedef struct tagCapturedMetadataExposureCompensation
+{
+    UINT64 Flags;   // KSCAMERA_EXTENDEDPROP_EVCOMP_XXX step flag
+    INT32 Value;    // EV Compensation value in units of the step
+} CapturedMetadataExposureCompensation;
+```
+
+Note that CapturedMetadataExposureCompensation struct only describes the
+blob format for the MF\_CAPTURE\_METADATA\_EXPOSURE\_COMPENSATION
+attribute. The metadata item structure for EV compensation
+(KSCAMERA\_METADATA\_ITEMHEADER + EV compensation metadata payload) is
+up to driver and must be 8-byte aligned.
+
+## MF_CAPTURE_METADATA_ISO_SPEED
+
+MF\_CAPTURE\_METADATA\_ISO\_SPEED attributes contains the ISO speed
+value applied to the sensor when preview and\\or photo frame was
+captured. This is unitless.
+
+## MF_CAPTURE_METADATA_ISO_GAINS
+
+MF\_CAPTURE\_METADATA\_ISO\_GAINS attribute contains the analog and
+digital gains applied to the senor when the preview frame was captured.
+This is unitless.
+
+The data structure below describes the blob format for
+MF\_CAPTURE\_METADATA\_ISO\_GAINS.
+
+```cpp
+typedef struct tagCapturedMetadataISOGains
+{
+    FLOAT AnalogGain;
+    FLOAT DigitalGain;
+} CapturedMetadataISOGains;
+```
+
+Note that CapturedMetadataISOGains struct only describes the blob format
+for the MF\_CAPTURE\_METADATA\_ISO\_GAINS attribute. The metadata item
+structure for ISO gains (KSCAMERA\_METADATA\_ITEMHEADER + ISO gains
+metadata payload) is up to driver and must be 8-byte aligned.
+
+## MF_CAPTURE_METADATA_LENS_POSITION
+
+MF\_CAPTURE\_METADATA\_LENS\_POSITION attribute contains the logical
+lens position when preview and\\or photo frame was captured, which is
+unitless. This is the same value that can be queried from
+KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUS in a GET call.
+
+## MF_CAPTURE_METADATA_SCENE_MODE
+
+MF\_CAPTURE\_METADATA\_SCENE\_MODE attribute contains the scene mode
+applied to the photo captured which is a 64bit
+KSCAMERA\_EXTENDEDPROP\_SCENEMODE\_XXX flag.
+
+## MF_CAPTURE_METADATA_FLASH
+
+MF\_CAPTURE\_METADATA\_FLASH attribute contains a boolean value when
+preview and\\or photo frame was captured, with 1 meaning flash on and 0
+meaning flash off.
+
+## MF_CAPTURE_METADATA_FLASH_POWER
+
+MF\_CAPTURE\_METADATA\_FLASH\_POWER attribute contains the flash power
+applied to the photo captured which is a value in the range of \[0,
+100\]. This attribute should be omitted if the driver does not support
+adjustable power for flash.
+
+## MF_CAPTURE_METADATA_WHITEBALANCE
+
+MF\_CAPTURE\_METADATA\_WHITEBALANCE attribute contains the white balance
+applied to the sensor when preview and\\or photo frame was captured,
+which is a value in Kevin.
+
+## MF_CAPTURE_METADATA_WHITEBALANCE_GAINS
+
+MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS attribute contains the white
+balance gains applied to R, G, B by the sensor and\\or ISP when the
+preview frame was captured. This is a unitless.
+
+The data structure below describes the blob format for
+MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS.
+
+```cpp
+typedef struct tagCapturedMetadataWhiteBalanceGains
+{
+    FLOAT R;
+    FLOAT G;
+    FLOAT B;
+} CapturedMetadataWhiteBalanceGains;
+```
+
+Note that CapturedMetadataWhiteBalanceGains struct only describes the
+blob format for the MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS
+attribute. The metadata item structure for white balance gains
+(KSCAMERA\_METADATA\_ITEMHEADER + white balance gains metadata payload)
+is up to driver and must be 8-byte aligned.
+
+## MF_CAPTURE_METADATA_ZOOMFACTOR
+
+MF\_CAPTURE\_METADATA\_ZOOMFACTOR attribute contains the zoom value
+applied to the photo captured which is the same value that can be
+queried from KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM in a GET call.
+This should be in Q16.
+
+## MF_CAPTURE_METADATA_REQUESTED_FRAME_SETTING_ID
+
+MF\_CAPTURE\_METADATA\_REQUESTED\_FRAME\_SETTING_ID attribute contains the
+frame ID for the corresponding frame in the variable photo sequence. This
+attribute is only set for a variable photo sequence capture.
+
 ## MF_CAPTURE_METADATA_FRAME_ILLUMINATION
 
 MF\_CAPTURE\_METADATA\_FRAME\_ILLUMINATION attribute for IR cameras
@@ -313,9 +321,9 @@ illumination was present when capturing the frame.
 
 ## MF_CAPTURE_METADATA_HISTOGRAM
 
-MF\_CAPTURE\_METADATA\_HISTOGRAM attribute contains the histogram when a
-preview frame is captured. The data structures below describe the blob
-format for MF\_CAPTURE\_METADATA\_HISTOGRAM.
+MF\_CAPTURE\_METADATA\_HISTOGRAM attribute contains the histogram when apreview frame is captured.
+
+The data structures below describe the blob format for MF\_CAPTURE\_METADATA\_HISTOGRAM.
 
 ```cpp
 typedef struct tagHistogramGrid
@@ -407,7 +415,7 @@ MF\_CAPTURE\_METADATA\_HISTOGRAM attribute. The metadata item structure
 for the histogram (KSCAMERA\_METADATA\_ITEMHEADER + all histogram
 metadata payload) is up to driver and must be 8-byte aligned.
 
-## Histogram Metadata Control 
+## Histogram Metadata Control
 
 KSPROPERTY\_CAMERACONTROL\_EXTENDED\_HISTOGRAM is a property ID that
 will be used to control the histogram metadata produced by the driver.
