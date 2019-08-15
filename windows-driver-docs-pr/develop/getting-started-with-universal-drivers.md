@@ -1,4 +1,4 @@
----
+﻿---
 ms.assetid: E109BD80-F9CB-4F1F-A6FD-1142E27EC6AD
 title: Getting Started with Universal Windows drivers
 description: Universal Windows drivers allow you to create one driver that runs on multiple device types, from embedded systems to tablets and PCs.
@@ -47,6 +47,10 @@ The following are required when writing a universal driver package:
 *  Use the [ApiValidator tool](validating-universal-drivers.md) to verify that the APIs your binaries call are valid for a universal driver package.
 
 ## Best Practices
+
+* Driver Isolation:
+
+  * We are introducing a new concept called driver isolation.  
 
 *  If you are using the WDK with Visual Studio, set the **Target Platform** value in the driver project properties to `Universal`.  This will automatically add the correct libraries, as well as running the Universal INF validation and APIValidator as a part of build.  To do this:
 
