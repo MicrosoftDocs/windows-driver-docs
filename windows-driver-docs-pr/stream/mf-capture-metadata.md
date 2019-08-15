@@ -36,21 +36,16 @@ performance considerations.
 MF\_CAPTURE\_METADATA\_FOCUSSTATE attribute contains the current focus
 state which can take one of the following values.
 
+```cpp
 typedef enum
-
 {
-
-KSCAMERA\_EXTENDEDPROP\_FOCUSSTATE\_UNINITIALIZED = 0,
-
-KSCAMERA\_EXTENDEDPROP\_FOCUSSTATE\_LOST,
-
-KSCAMERA\_EXTENDEDPROP\_FOCUSSTATE\_SEARCHING,
-
-KSCAMERA\_EXTENDEDPROP\_FOCUSSTATE\_FOCUSED,
-
-KSCAMERA\_EXTENDEDPROP\_FOCUSSTATE\_FAILED,
-
-} KSCAMERA\_EXTENDEDPROP\_FOCUSSTATE;
+    KSCAMERA_EXTENDEDPROP_FOCUSSTATE_UNINITIALIZED = 0,
+    KSCAMERA_EXTENDEDPROP_FOCUSSTATE_LOST,
+    KSCAMERA_EXTENDEDPROP_FOCUSSTATE_SEARCHING,
+    KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FOCUSED,
+    KSCAMERA_EXTENDEDPROP_FOCUSSTATE_FAILED,
+} KSCAMERA_EXTENDEDPROP_FOCUSSTATE;
+```
 
 ## MF_CAPTURE_METADATA_FACEROIS
 
@@ -64,27 +59,19 @@ should be provided post the video stabilization. The data structures
 below describe the blob format for MF\_CAPTURE\_METADATA\_FACEROIS. The
 dominate face must be the first FaceRectInfo in the blob.
 
+```cpp
 typedef struct tagFaceRectInfoBlobHeader
-
 {
-
-ULONG Size; // Size of this header + all FaceRectInfo following
-
-ULONG Count; // Number of FaceRectInfo’s in the blob
-
+    ULONG Size;             // Size of this header + all FaceRectInfo following
+    ULONG Count;            // Number of FaceRectInfo’s in the blob
 } FaceRectInfoBlobHeader;
 
 typedef struct tagFaceRectInfo
-
 {
-
-RECT Region; // Relative coordinates on the frame that face detection is
-running (Q31 format)
-
-LONG ConfidenceLevel; // Confidence level of the region being a face
-(\[0, 100\])
-
+    RECT Region;            // Relative coordinates on the frame that face detection is running (Q31 format)
+    LONG ConfidenceLevel;   // Confidence level of the region being a face ([0, 100])
 } FaceRectInfo;
+```
 
 Note that FaceRectinfoBlobHeader and FaceRectInfo structs only describe
 the blob format for the MF\_CAPTURE\_METADATA\_FACEROIS attribute. The
@@ -113,15 +100,13 @@ applied to the sensor when preview and\\or photo frame was captured.
 The data structure below describes the blob format for
 MF\_CAPTURE\_METADATA\_EXPOSURE\_COMPENSATION.
 
+```cpp
 typedef struct tagCapturedMetadataExposureCompensation
-
 {
-
-UINT64 Flags; // KSCAMERA\_EXTENDEDPROP\_EVCOMP\_XXX step flag
-
-INT32 Value; // EV Compensation value in units of the step
-
+    UINT64 Flags;   // KSCAMERA_EXTENDEDPROP_EVCOMP_XXX step flag
+    INT32 Value;    // EV Compensation value in units of the step
 } CapturedMetadataExposureCompensation;
+```
 
 Note that CapturedMetadataExposureCompensation struct only describes the
 blob format for the MF\_CAPTURE\_METADATA\_EXPOSURE\_COMPENSATION
@@ -183,15 +168,13 @@ This is unitless.
 The data structure below describes the blob format for
 MF\_CAPTURE\_METADATA\_ISO\_GAINS.
 
+```cpp
 typedef struct tagCapturedMetadataISOGains
-
 {
-
-FLOAT AnalogGain;
-
-FLOAT DigitalGain;
-
+    FLOAT AnalogGain;
+    FLOAT DigitalGain;
 } CapturedMetadataISOGains;
+```
 
 Note that CapturedMetadataISOGains struct only describes the blob format
 for the MF\_CAPTURE\_METADATA\_ISO\_GAINS attribute. The metadata item
@@ -214,17 +197,14 @@ preview frame was captured. This is a unitless.
 The data structure below describes the blob format for
 MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS.
 
+```cpp
 typedef struct tagCapturedMetadataWhiteBalanceGains
-
 {
-
-FLOAT R;
-
-FLOAT G;
-
-FLOAT B;
-
+    FLOAT R;
+    FLOAT G;
+    FLOAT B;
 } CapturedMetadataWhiteBalanceGains;
+```
 
 Note that CapturedMetadataWhiteBalanceGains struct only describes the
 blob format for the MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS
@@ -242,19 +222,14 @@ time stamp for face ROIs, this attribute should be omitted.
 The data structure below describes the blob format for
 MF\_CAPTURE\_METADATA\_FACEROITIMESTAMPS.
 
+```cpp
 typedef struct tagMetadataTimeStamps
-
 {
-
-    ULONG Flags; // Bitwise OR of MF\_METADATATIMESTAMPS\_XXX flags
-
-    LONGLONG Device; // QPC time for the sample where the face rect is
-derived from (in 100ns)
-
-    LONGLONG Presentation; // PTS for the sample where the face rect is
-derived from (in 100ns)
-
+    ULONG Flags;            // Bitwise OR of MF_METADATATIMESTAMPS_XXX flags
+    LONGLONG Device;        // QPC time for the sample where the face rect is derived from (in 100ns)
+    LONGLONG Presentation;  // PTS for the sample where the face rect is derived from (in 100ns)
 } MetadataTimeStamps;
+```
 
 For Flags field, we will define the following bit flags to indicate
 which time stamp is valid. MFT0 must set Flags to
@@ -288,41 +263,28 @@ item structure for the face characterizations
 (KSCAMERA\_METADATA\_ITEMHEADER + face characterizations metadata
 payload) is up to driver and must be 8-byte aligned.
 
+```cpp
 typedef struct tagFaceCharacterizationBlobHeader
-
 {
-
-    ULONG Size; // Size of this header + all FaceCharacterization
-following
-
-    ULONG Count; // Number of FaceCharacterization’s in the blob. Must
-match the number of FaceRectInfo’s in FaceRectInfoBlobHeader
-
+    ULONG Size;     // Size of this header + all FaceCharacterization following
+    ULONG Count;    // Number of FaceCharacterization’s in the blob. Must match the number of FaceRectInfo’s in FaceRectInfoBlobHeader
 } FaceCharacterizationBlobHeader;
 
 typedef struct tagFaceCharacterization
-
 {
-
-    ULONG BlinkScoreLeft; // \[0, 100\]. 0 indicates no blink for the
-left eye. 100 indicates definite blink for the left eye
-
-    ULONG BlinkScoreRight; // \[0, 100\]. 0 indicates no blink for the
-right eye. 100 indicates definite blink for the right eye
-
-    ULONG FacialExpression; // Any one of the
-MF\_METADATAFACIALEXPRESSION\_XXX defined
-
-    ULONG FacialExpressionScore; // \[0, 100\]. 0 indicates no such
-facial expression as identified. 100 indicates definite such facial
-expression as defined
-
+    ULONG BlinkScoreLeft;   // [0, 100]. 0 indicates no blink for the left eye. 100 indicates definite blink for the left eye
+    ULONG BlinkScoreRight;  // [0, 100]. 0 indicates no blink for the right eye. 100 indicates definite blink for the right eye
+    ULONG FacialExpression; // Any one of the MF_METADATAFACIALEXPRESSION_XXX defined
+    ULONG FacialExpressionScore; // [0, 100]. 0 indicates no such facial expression as identified. 100 indicates definite such facial expression as defined
 } FaceCharacterization;
+```
 
 The following defines the possible facial expression that can be
 detected.  
 
-\#define MF\_METADATAFACIALEXPRESSION\_SMILE             0x00000001
+```cpp
+#define MF_METADATAFACIALEXPRESSION_SMILE             0x00000001
+```
 
 If MF\_CAPTURE\_METADATA\_FACEROICHARACTERIZATIONS attribute presents,
 the number and the order of FaceCharacterization entries in its blob
@@ -355,76 +317,48 @@ MF\_CAPTURE\_METADATA\_HISTOGRAM attribute contains the histogram when a
 preview frame is captured. The data structures below describe the blob
 format for MF\_CAPTURE\_METADATA\_HISTOGRAM.
 
+```cpp
 typedef struct tagHistogramGrid
-
 {
-
-ULONG Width; // Width of the sensor output that histogram is collected
-from
-
-ULONG Height; // Height of the sensor output that histogram is collected
-from
-
-RECT Region; // Absolute coordinates of the region on the sensor output
-that the histogram is collected for
-
+    ULONG Width;    // Width of the sensor output that histogram is collected from
+    ULONG Height;   // Height of the sensor output that histogram is collected from
+    RECT Region;    // Absolute coordinates of the region on the sensor output that the histogram is collected for
 } HistogramGrid;
 
 typedef struct tagHistogramBlobHeader
-
 {
-
-ULONG Size; // Size of the entire histogram blob in bytes
-
-ULONG Histograms; // Number of histograms in the blob. Each histogram is
-identified by a HistogramHeader
-
+    ULONG Size;         // Size of the entire histogram blob in bytes
+    ULONG Histograms;   // Number of histograms in the blob. Each histogram is identified by a HistogramHeader
 } HistogramBlobHeader;
 
 typedef struct tagHistogramHeader
-
 {
-
-ULONG Size; // Size of this header + (HistogramDataHeader + histogram
-data following)\*number of channels available
-
-ULONG Bins; // Number of bins in the histogram
-
-ULONG FourCC; // Color space that the histogram is collected from
-
-ULONG ChannelMasks; // Masks of the color channels that the histogram is
-collected for
-
-HistogramGrid Grid; // Grid that the histogram is collected from
-
+    ULONG Size;         // Size of this header + (HistogramDataHeader + histogram data following) * number of channels available
+    ULONG Bins;         // Number of bins in the histogram
+    ULONG FourCC;       // Color space that the histogram is collected from
+    ULONG ChannelMasks; // Masks of the color channels that the histogram is collected for
+    HistogramGrid Grid; // Grid that the histogram is collected from
 } HistogramHeader;
 
 typedef struct tagHistogramDataHeader
-
 {
-
-ULONG Size; // Size in bytes of this header + histogram data following
-
-ULONG ChannelMask; // Mask of the color channel for the histogram data
-
-ULONG Linear; // 1, if linear; 0 nonlinear
-
+    ULONG Size;         // Size in bytes of this header + histogram data following
+    ULONG ChannelMask;  // Mask of the color channel for the histogram data
+    ULONG Linear;       // 1, if linear; 0 nonlinear
 } HistogramDataHeader;
+```
 
 For ChannelMasks field, we will define the following bitmasks to
 indicate the available channels in the histogram.
 
-\#define MF\_HISTOGRAM\_CHANNEL\_Y 0x00000001
-
-\#define MF\_HISTOGRAM\_CHANNEL\_R 0x00000002
-
-\#define MF\_HISTOGRAM\_CHANNEL\_G 0x00000004
-
-\#define MF\_HISTOGRAM\_CHANNEL\_B 0x00000008
-
-\#define MF\_HISTOGRAM\_CHANNEL\_Cb 0x00000010
-
-\#define MF\_HISTOGRAM\_CHANNEL\_Cr 0x00000020
+```cpp
+#define MF_HISTOGRAM_CHANNEL_Y  0x00000001
+#define MF_HISTOGRAM_CHANNEL_R  0x00000002
+#define MF_HISTOGRAM_CHANNEL_G  0x00000004
+#define MF_HISTOGRAM_CHANNEL_B  0x00000008
+#define MF_HISTOGRAM_CHANNEL_Cb 0x00000010
+#define MF_HISTOGRAM_CHANNEL_Cr 0x00000020
+```
 
 Notes:
 
@@ -473,29 +407,29 @@ MF\_CAPTURE\_METADATA\_HISTOGRAM attribute. The metadata item structure
 for the histogram (KSCAMERA\_METADATA\_ITEMHEADER + all histogram
 metadata payload) is up to driver and must be 8-byte aligned.
 
-# Histogram Metadata Control 
+## Histogram Metadata Control 
 
 KSPROPERTY\_CAMERACONTROL\_EXTENDED\_HISTOGRAM is a property ID that
 will be used to control the histogram metadata produced by the driver.
 This is a pin level control for preview pin only and is defined as
 following:
 
-\#if (NTDDI\_VERSION \>= NTDDI\_WIN8)
-
+```cpp
 typedef enum {
-
-…
-
-KSPROPERTY\_CAMERACONTROL\_EXTENDED\_HISTOGRAM
-
-} KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY;
+    …
+#if (NTDDI_VERSION >= NTDDI_WIN8)
+    KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM
+#endif
+} KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY;
+```
 
 For KSCAMERA\_EXTENDEDPROP\_HEADER, we will define the following bit
 flags to control the histogram metadata in driver. The default is OFF.
 
-\#define KSCAMERA\_EXTENDEDPROP\_HISTOGRAM\_OFF 0x0000000000000000
-
-\#define KSCAMERA\_EXTENDEDPROP\_HISTOGRAM\_ON 0x0000000000000001
+```cpp
+#define KSCAMERA_EXTENDEDPROP_HISTOGRAM_OFF 0x0000000000000000
+#define KSCAMERA_EXTENDEDPROP_HISTOGRAM_ON  0x0000000000000001
+```
 
 This control must be used before the
 KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA control to ensure the
@@ -523,35 +457,32 @@ current settings in Flags field.
 This is a synchronous control. There are no capabilities defined for
 this control.
 
-## KSCAMERA_EXTENDEDPROP_HEADER
+### KSCAMERA_EXTENDEDPROP_HEADER
 
-**Version**
+#### Version
 
-> Must be 1.
+Must be 1.
 
-**PinId**
+#### PinId
 
-> Must be the Pin ID associated with the preview pin.
+Must be the Pin ID associated with the preview pin.
 
-**Size**
+#### Size
 
-> Must be sizeof(KSCAMERA\_EXTENDEDPROP\_HEADER)+
-> sizeof(KSCAMERA\_EXTENDEDPROP\_VALUE)
+Must be `sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE)`
 
-**Result**
+#### Result
 
-> Indicates the error results of the last SET operation. If no SET
-> operation has taken place, this must be 0.
+Indicates the error results of the last SET operation. If no SET operation has taken place, this must be 0.
 
-**Capability**
+#### Capability
 
-> Must be 0.
+Must be 0.
 
-**Flags**
+#### Flags
 
-> This is a read/write field. This can be any one of the
-> KSCAMERA\_EXTENDEDPROP\_HISTOGRAM\_XXX flags defined above.
+This is a read/write field. This can be any one of the `KSCAMERA_EXTENDEDPROP_HISTOGRAM_XXX` flags defined above.
 
-## KSCAMERA\_EXTENDEDPROP\_VALUE
+### KSCAMERA_EXTENDEDPROP_VALUE
 
 Not used
