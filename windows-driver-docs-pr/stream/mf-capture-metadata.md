@@ -10,26 +10,26 @@ should be delivered as the best effort and the driver may or may not
 deliver all capture stats on all frames based on the availability and
 performance considerations.
 
-| Name                                            | Type             | Pin                   |
-| ----------------------------------------------- | ---------------- | --------------------- |
-| MF\_CAPTURE\_METADATA\_FOCUSSTATE               | UINT32           | Preview               |
-| MF\_CAPTURE\_METADATA\_FACEROIS                 | Blob             | Preview, Video        |
-| MF\_CAPTURE\_METADATA\_EXPOSURE\_TIME           | UINT64           | Preview, Still        |
-| MF\_CAPTURE\_METADATA\_EXPOSURE\_COMPENSATION   | Blob             | Preview, Still        |
-| MF\_CAPTURE\_METADATA\_ISO\_SPEED               | UINT32           | Preview, Still        |
-| MF\_CAPTURE\_METADATA\_LENS\_POSITION           | UINT32           | Preview, Still        |
-| MF\_CAPTURE\_METADATA\_SCENE\_MODE              | UINT64           | Still                 |
-| MF\_CAPTURE\_METADATA\_FLASH                    | UINT32 (Boolean) | Preview, Still        |
-| MF\_CAPTURE\_METADATA\_FLASH\_POWER             | UINT32           | Still                 |
-| MF\_CAPTURE\_METADATA\_WHITEBALANCE             | UINT32 (Kelvin)  | Preview, Still        |
-| MF\_CAPTURE\_METADATA\_ZOOMFACTOR               | UINT32 (Q16)     | Still                 |
-| MF\_CAPTURE\_METADATA\_ISO\_GAINS               | Blob             | Preview               |
-| MF\_CAPTURE\_METADATA\_SENSORFRAMERATE          | UINT64           | Preview               |
-| MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS      | Blob             | Preview               |
-| MF\_CAPTURE\_METADATA\_FACEROITIMESTAMPS        | Blob             | Preview, Video        |
-| MF\_CAPTURE\_METADATA\_FACEROICHARACTERIZATIONS | Blob             | Preview, Video        |
-| MF\_CAPTURE\_METADATA\_HISTOGRAM                | Blob             | Preview               |
-| MF\_CAPTURE\_METADATA\_FRAME\_ILLUMINATION      | UINT64           | IR Pin used for Hello |
+| Name                                                                                              | Type             | Pin                   |
+| ------------------------------------------------------------------------------------------------- | ---------------- | --------------------- |
+| [MF\_CAPTURE\_METADATA\_FOCUSSTATE](#MF_CAPTURE_METADATA_FOCUSSTATE)                              | UINT32           | Preview               |
+| [MF\_CAPTURE\_METADATA\_FACEROIS](#MF_CAPTURE_METADATA_FACEROIS)                                  | Blob             | Preview, Video        |
+| [MF\_CAPTURE\_METADATA\_EXPOSURE\_TIME](#MF_CAPTURE_METADATA_EXPOSURE\_TIME)                      | UINT64           | Preview, Still        |
+| [MF\_CAPTURE\_METADATA\_EXPOSURE\_COMPENSATION](#MF_CAPTURE_METADATA_EXPOSURE\_COMPENSATION)      | Blob             | Preview, Still        |
+| [MF\_CAPTURE\_METADATA\_ISO\_SPEED](#MF_CAPTURE_METADATA_ISO\_SPEED)                              | UINT32           | Preview, Still        |
+| [MF\_CAPTURE\_METADATA\_LENS\_POSITION](#MF_CAPTURE_METADATA_LENS\_POSITION)                      | UINT32           | Preview, Still        |
+| [MF\_CAPTURE\_METADATA\_SCENE\_MODE](#MF_CAPTURE_METADATA_SCENE\_MODE)                            | UINT64           | Still                 |
+| [MF\_CAPTURE\_METADATA\_FLASH](#MF_CAPTURE_METADATA_FLASH)                                        | UINT32 (Boolean) | Preview, Still        |
+| [MF\_CAPTURE\_METADATA\_FLASH\_POWER](#MF_CAPTURE_METADATA_FLASH\_POWER)                          | UINT32           | Still                 |
+| [MF\_CAPTURE\_METADATA\_WHITEBALANCE](#MF_CAPTURE_METADATA_WHITEBALANCE)                          | UINT32 (Kelvin)  | Preview, Still        |
+| [MF\_CAPTURE\_METADATA\_ZOOMFACTOR](#MF_CAPTURE_METADATA_ZOOMFACTOR)                              | UINT32 (Q16)     | Still                 |
+| [MF\_CAPTURE\_METADATA\_ISO\_GAINS](#MF_CAPTURE_METADATA_ISO_GAINS)                               | Blob             | Preview               |
+| [MF\_CAPTURE\_METADATA\_SENSORFRAMERATE](#MF_CAPTURE_METADATA_SENSORFRAMERATE)                    | UINT64           | Preview               |
+| [MF\_CAPTURE\_METADATA\_WHITEBALANCE\_GAINS](#MF_CAPTURE_METADATA_WHITEBALANCE\_GAINS)            | Blob             | Preview               |
+| [MF\_CAPTURE\_METADATA\_FACEROITIMESTAMPS](#MF_CAPTURE_METADATA_FACEROITIMESTAMPS)                | Blob             | Preview, Video        |
+| [MF\_CAPTURE\_METADATA\_FACEROICHARACTERIZATIONS](#MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS)  | Blob             | Preview, Video        |
+| [MF\_CAPTURE\_METADATA\_HISTOGRAM](#MF_CAPTURE_METADATA_HISTOGRAM)                                | Blob             | Preview               |
+| [MF\_CAPTURE\_METADATA\_FRAME\_ILLUMINATION](#MF_CAPTURE_METADATA_FRAME_ILLUMINATION)             | UINT64           | IR Pin used for Hello |
 
 ## MF_CAPTURE_METADATA_FOCUSSTATE
 
