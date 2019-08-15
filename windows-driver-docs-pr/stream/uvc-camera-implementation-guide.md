@@ -572,11 +572,8 @@ This section provides a BOS descriptor and a MS OS 2.0 descriptor for an example
 The sample descriptors are as follows:
 
 1. Register the color camera function under KSCATEGORY\_VIDEO\_CAMERA
-
 1. Register the IR camera function under KSCATEGORY\_SENSOR\_CAMERA
-
 1. Enable color camera function still image capture
-
 1. Associates the color and IR camera functions as a group
 
 Upon device enumeration, the USB stack retrieves the BOS descriptor from the device. Following the BOS descriptor is a platform specific device capability.
@@ -612,9 +609,7 @@ const BYTE USBVideoBOSDescriptor[0x21] =
 The BOS platform capability descriptor specifies:
 
 1. MS OS 2.0 descriptor platform capability GUID
-
 1. A vendor control code bMS\_VendorCode (here is it set to 1. It can take any value the vendor prefers) to retrieve the MS OS 2.0 descriptor.
-
 1. This BOS descriptor is applicable for OS version Windows 10 and later.
 
 After seeing the BOS descriptor, the USB stack will issue the vendor specific control request to retrieve the MS OS 2.0 descriptor.
@@ -628,9 +623,7 @@ Format of the control request to retrieve MS OS 2.0 vendor-specific descriptor:
 _**bmRequestType**_
 
 - Data Transfer Direction – Device to Host
-
 - Type – Vendor
-
 - Recipient - Device
 
 _**bRequest**_
@@ -654,25 +647,15 @@ The device is expected to return the MS OS 2.0 descriptor like the one specified
 The USBVideoMSOS20DescriptorSet describes the color and IR functions. It specifies the following MS OS 2.0 Descriptor values:
 
 1. Set Header
-
 1. Configuration Subset Header
-
 1. Color Camera Function Subset Header
-
 1. Registry Value Feature Descriptor for sensor group ID
-
 1. Registry Value Feature Descriptor for sensor group name
-
 1. Registry Value Feature Descriptor for enabling still image capture
-
 1. Registry Value Feature Descriptor for enabling Platform DMFT
-
 1. IR Camera Function Subset Header
-
 1. Registry Value Feature Descriptor for sensor group ID
-
 1. Registry Value Feature Descriptor for sensor group name
-
 1. Registry Value Feature Descriptor for registering the camera as a sensor camera
 
 The firmware will have a handler for the vendor request that will return the following MS OS 2.0 descriptor for the imaginary device described at the beginning of this section.
