@@ -50,7 +50,11 @@ The following are required when writing a universal driver package:
 
 * Driver Isolation:
 
-  * We are introducing a new concept called driver isolation.  
+  * To maximize reliability and serviceability of your Universal driver, ensure your driver follows the principles of *driver isolation*
+  * An isolated driver is one that uses relative locations provided by OS API's to access and write registry and file state
+  * An isolated driver runs from the driver store
+  * An isolated driver interacts with other drivers via OS API's or device interfaces
+  * See more details on the [Driver Isolation](driver-isolation.md) page
 
 *  If you are using the WDK with Visual Studio, set the **Target Platform** value in the driver project properties to `Universal`.  This will automatically add the correct libraries, as well as running the Universal INF validation and APIValidator as a part of build.  To do this:
 
