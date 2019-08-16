@@ -3,30 +3,64 @@
 - name: "Device firmware update for USB devices without using a co-installer"
   href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
 - name: "USB Video Class (UVC) camera implementation guide"
-  href: uvc-camera-implementation-guide.md
-- name: "Frame Server Custom Media Source"
-  href: frame-server-custom-media-source.md
-- name: "360 camera video capture"
-  href: 360-camera-video-capture.md
-- name: "Camera intrinsics"
-  href: camera-intrinsics.md
-- name: "DShow Bridge implementation guidance for UVC devices"
-  href: dshow-bridge-implementation-guidance-for-usb-video-class-devices.md
-- name: "Camera class INF file setting for Universal camera drivers"
-  href: camera-driver-inf-file-class-setting.md
-- name: "USB Video Class (UVC) driver implementation checklist"
 # Auto-expanded node
   items: 
+  - name: "USB Video Class (UVC) camera implementation guide"
+    href: uvc-camera-implementation-guide.md
+  - name: "Camera Intrinsics"
+    href: camera-intrinsics.md
+  - name: "Camera Capture Metadata"
+    href: mf-capture-metadata.md
+  - name: "Camera Device Orientation"
+    href: camera-device-orientation.md
+  - name: "Camera Profiles"
+    href: camera-profiles.md
+  - name: "DShow Bridge implementation guidance for UVC devices"
+    href: dshow-bridge-implementation-guidance-for-usb-video-class-devices.md
   - name: "USB Video Class (UVC) driver implementation checklist"
     href: uvc-driver-implementation-checklist.md
   - name: "Device MFT design guide"
     href: dmft-design.md
   - name: "Infrared stream support in UVC"
     href: infrared-stream-support-in-uvc.md
+  - name: "Camera class INF file setting for Universal camera drivers"
+    href: camera-driver-inf-file-class-setting.md
   - name: "Microsoft extensions to USB Video Class 1.5 specification"
     href: uvc-extensions-1-5.md
-- name: "Camera Device Orientation"
-  href: camera-device-orientation.md
+- name: "Windows Hello Camera driver bring up guide"
+  href: windows-hello-camera-driver-bring-up-guide.md
+- name: "Extended camera controls"
+  href: standardized-extended-controls-.md
+- name: "Frame Server Custom Media Source"
+  href: frame-server-custom-media-source.md
+- name: "360 camera video capture"
+  href: 360-camera-video-capture.md
+- name: "Flashlight (Lamp) Support"
+  href: flashlight-support.md
+- name: "Streaming Media Samples"
+  href: streaming-media-samples.md
+- name: "OEM guidance on settings for the Windows 10 in-box camera app"
+  href: oem-guidance-on-settings-for-the-windows-10-in-box-camera-app.md
+- name: "Video stabilization registry settings"
+  href: oem-guidance-on-registry-keys-for-video-stabilization.md
+- name: "Universal camera driver model for Windows 10"
+# Auto-expanded node
+  items: 
+  - name: "Universal camera driver model for Windows 10"
+    href: windows-10-technical-preview-camera-drivers-design-guide.md
+  - name: "New camera driver interfaces for Windows 10"
+# Auto-expanded node
+    items: 
+    - name: "New camera driver interfaces for Windows 10"
+      href: windows-10-technical-preview-camera-drivers-reference.md
+    - name: "New camera driver controls for Windows 10"
+      href: camera-driver-controls.md
+    - name: "New camera driver enumerations for Windows 10"
+      href: camera-driver-enumerations.md
+    - name: "New camera driver functions for Windows 10"
+      href: camera-driver-functions.md
+    - name: "New camera driver structures for Windows 10"
+      href: camera-driver-structures.md
 - name: "AVStream Minidrivers Design Guide"
 # Auto-expanded node
   items: 
@@ -766,34 +800,6 @@
     href: interface-handler-plug-in.md
   - name: "Property Page Plug-in"
     href: property-page-plug-in.md
-- name: "Streaming Media Samples"
-  href: streaming-media-samples.md
-- name: "OEM guidance on settings for the Windows 10 in-box camera app"
-  href: oem-guidance-on-settings-for-the-windows-10-in-box-camera-app.md
-- name: "Video stabilization registry settings"
-  href: oem-guidance-on-registry-keys-for-video-stabilization.md
-- name: "Extended camera controls"
-  href: standardized-extended-controls-.md
-- name: "Camera driver bring up guide"
-  href: windows-hello-camera-driver-bring-up-guide.md
-- name: "Universal camera driver model for Windows 10"
-# Auto-expanded node
-  items: 
-  - name: "Universal camera driver model for Windows 10"
-    href: windows-10-technical-preview-camera-drivers-design-guide.md
-  - name: "New camera driver interfaces for Windows 10"
-# Auto-expanded node
-    items: 
-    - name: "New camera driver interfaces for Windows 10"
-      href: windows-10-technical-preview-camera-drivers-reference.md
-    - name: "New camera driver controls for Windows 10"
-      href: camera-driver-controls.md
-    - name: "New camera driver enumerations for Windows 10"
-      href: camera-driver-enumerations.md
-    - name: "New camera driver functions for Windows 10"
-      href: camera-driver-functions.md
-    - name: "New camera driver structures for Windows 10"
-      href: camera-driver-structures.md
 - name: "AVStream Property Sets"
 # Auto-expanded node
   items: 
