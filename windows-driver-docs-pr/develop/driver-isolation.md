@@ -16,17 +16,17 @@ Access to various state should be done using OS API's that provide a caller with
 
 ## PnP Device State
 
-There is a need for isolated drivers and user mode components to read, and sometimes write, device state.  There are already two locations that can be used to store device state in the registry. They are called the “hardware key” (aka “device key”) for the device and the “software key” (aka “driver key”) for the device. These registry locations are already accessible via API's that give a caller a handle to the location.
+There is a need for isolated drivers and user mode components to read, and sometimes write, device state.  There are already two locations that can be used to store device state in the registry. They are called the **"hardware key"** (aka "device key") for the device and the **"software key"** (aka "driver key") for the device. These registry locations are already accessible via API's that give a caller a handle to the location.
 
 The following API's should be used to ensure your driver is isolated:
 
 * WDM:
-  * IoOpenDeviceRegistryKey
+  * [IoOpenDeviceRegistryKey]()
 * WDF:
-  * WdfDeviceOpenRegistryKey
-  * WdfFdoInitOpenRegistryKey
+  * [WdfDeviceOpenRegistryKey]()
+  * [WdfFdoInitOpenRegistryKey]()
 * Other UserMode Code:
-  * CM_Open_DevNode_Key
+  * [CM_Open_DevNode_Key]()
 * Provision Values via INF:
-  * INF AddReg directive using HKR reg-root entries in an add-registry-section referenced from an INF DDInstall section or DDInstall.HW section
+  * [INF AddReg]() directive using HKR *reg-root* entries in an **add-registry-section** referenced from an [INF DDInstall]() section or [DDInstall.HW]() section
 
