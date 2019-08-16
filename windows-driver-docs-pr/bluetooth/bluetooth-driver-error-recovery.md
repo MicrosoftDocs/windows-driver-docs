@@ -15,7 +15,7 @@ Bluetooth Driver Error Recovery is a capability added to Windows 10 1803 to allo
 
 ## Bluetooth Driver Error Recovery Scenarios
 
-There are three broad catagories of issues where Bluetooth Driver Error Recovery is initiated:
+There are three broad categories of issues where Bluetooth Driver Error Recovery is initiated:
 
 - **Bus enumeration failures:** The device fails enumeration or re-enumeration by the bus as indicated by a _visible failed state_ in Device Manager. This is typically symptomatic of hardware errors.
 
@@ -47,7 +47,7 @@ The [GUID_DEVICE_RESET_INTERFACE_STANDARD](https://docs.microsoft.com/windows-ha
 
 While the Bluetooth stack supports both these mechanisms, **PLDR** is usually the most effective approach.
 
-### ACPI reset interface
+## ACPI reset interface
 
 Building on the process detailed in [Working with the GUID_DEVICE_RESET_INTERFACE_STANDARD](https://docs.microsoft.com/windows-hardware/drivers/kernel/working-with-guid-device-reset-interface-standard) specific steps must be taken:
 
@@ -70,3 +70,8 @@ Building on the process detailed in [Working with the GUID_DEVICE_RESET_INTERFAC
 | D2 | _PR2 | Any power or clocks required for the class-defined reduced-functionality of this state. |  
 | D3 Hot (reqd.) | _PR2 | The same resources as the next higher state that is supported (D2, D1, or D0). |  
 | D3cold | _PR3 | Only the power or clocks required for the device to appear on its bus and respond to a bus-specific command.|  
+
+### Related links
+[Device power management](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/device-power-management)
+
+[Supporting D3cold in a Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/supporting-d3cold-in-a-driver)
