@@ -1,3 +1,10 @@
+---
+title: Camera Profiles
+description: This topic discusses the format of camera profiles and various ways to define them
+ms.date: 08/16/2019
+ms.localizationpriority: medium
+---
+
 # Camera Profiles
 
 ## KS API Profile

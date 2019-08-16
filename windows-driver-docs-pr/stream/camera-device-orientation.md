@@ -1,7 +1,7 @@
 ---
 title: Driver support for camera orientation
 description: Provides information about how to explicitly specify the camera orientation on a device.
-ms.date: 08/06/2018
+ms.date: 08/16/2019
 ms.localizationpriority: medium
 ---
 
