@@ -336,7 +336,7 @@ If a MediaCapture session is streaming data at the time of which this
 request is made, the driver should return an error
 (STATUS\_RESOURCE\_IN\_USE) via Irp-\>IoStatus.Status.
 
-## IOCTL_LAMP_GET_ INTENSITY\_WHITE
+## IOCTL_LAMP_GET_INTENSITY_WHITE
 
 The IOCTL\_LAMP\_GET\_INTENSITY\_WHITE I/O request queries the light
 intensity when the flash is configured to emit white light.

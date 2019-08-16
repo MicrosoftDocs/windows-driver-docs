@@ -34,7 +34,7 @@ There are two new face authentication DDI constructs available in Windows 10, v
 
 -   **MF\_CAPTURE\_METADATA\_FRAME\_ILLUMINATION**
 
-    This metadata attribute for IR cameras specifies that frames are using active IR illumination. For more information, see the mandatory metadata attributes table in the [Capture Stats Metadata Attributes](#mf-capture-metadata.md) topic.
+    This metadata attribute for IR cameras specifies that frames are using active IR illumination. For more information, see the mandatory metadata attributes table in the [Capture Stats Metadata Attributes](mf-capture-metadata.md) topic.
 
 ## USB camera support
 
