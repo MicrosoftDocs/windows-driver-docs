@@ -197,7 +197,7 @@ The Header Section describes a single custom property (Face Auth Profile).
 
 ### MS OS Descriptor 2.0
 
-MSOS Extended Descriptor 2.0 can be used to define the registry values to add FSSensorOrientation support. This is done using the [Microsoft OS 2.0 Registry Property Descriptor](#microsoft-os-20-registry-property-descriptor).
+MSOS Extended Descriptor 2.0 can be used to define the registry values to add FSSensorOrientation support. This is done using the [Microsoft OS 2.0 Registry Property Descriptor](uvc-camera-implementation-guide.md#microsoft-os-20-registry-property-descriptor).
 
 For the UVC-FSSensorOrientation registry entry, the following shows a sample MSOS 2.0 descriptor set:
 

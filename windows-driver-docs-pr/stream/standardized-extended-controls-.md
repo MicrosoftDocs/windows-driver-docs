@@ -18,7 +18,7 @@ The following list of standardized extended controls (defined by Media Foundatio
 - [Extended region of interest (ROI)](#extended-region-of-interest-roi)
 - [Photo confirmation](#photo-confirmation)
 - [Photo sequence submode](#photo-sequence-submode)
-- [Photo capture feedback applied device settings](#photo-capture-feedback-applied-device-settings)
+- [EXIF and HW JPEG encoder](#exif-and-hw-jpeg-encoder)
 - [Integer ISO](#integer-iso)
 - [Advanced focus](#advanced-focus)
 - [Flash](#flash)

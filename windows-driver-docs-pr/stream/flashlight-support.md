@@ -401,7 +401,7 @@ specified light intensity.
 ### Input Parameters
 
 Irp-\>AssociatedIrp.SystemBuffer points to a LAMP\_INTENSITY\_WHITE
-structure (see [IOCTL_LAMP_GET_INTENSITY_WHITE](#IOCTL_LAMP_GET_INTENSITY_WHITE) for details).
+structure (see [IOCTL_LAMP_GET_INTENSITY_WHITE](#ioctl_lamp_get_intensity_white) for details).
 
 ### Output Parameters
 
@@ -481,7 +481,7 @@ specified light intensity.
 ### Input Parameters
 
 Irp-\>AssociatedIrp.SystemBuffer points to a LAMP\_INTENSITY\_COLOR
-structure (see [IOCTL_LAMP_GET_INTENSITY_COLOR](#IOCTL_LAMP_GET_INTENSITY_COLOR) for details).
+structure (see [IOCTL_LAMP_GET_INTENSITY_COLOR](#ioctl_lamp_get_intensity_color) for details).
 
 ### Output Parameters
 
