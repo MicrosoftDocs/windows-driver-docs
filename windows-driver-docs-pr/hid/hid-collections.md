@@ -1,5 +1,5 @@
 ---
-title: HID Collections
+title: HID Collections Overview
 description: A HID collection is a meaningful grouping of HID controls and their respective HID usages.
 ms.assetid: 2d3efb38-4eba-43db-8cff-9fac30209952
 keywords:
@@ -21,7 +21,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# HID Collections
+# HID Collections Overview
 
 
 A *HID collection* is a meaningful grouping of HID controls and their respective [HID usages](hid-usages.md).

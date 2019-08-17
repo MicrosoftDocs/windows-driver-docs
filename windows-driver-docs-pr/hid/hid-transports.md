@@ -1,6 +1,6 @@
 ---
-title: HID Transports
-description: HID Transports
+title: HID Transport Overview
+description: HID Transport Overview
 ms.assetid: E442CB87-992B-475A-A97F-9C22468BA877
 keywords:
 - HID Transports
@@ -14,7 +14,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# HID Transports
+# HID Transport Overview
 
 
 HID transports supported in current and previous versions of Windows.

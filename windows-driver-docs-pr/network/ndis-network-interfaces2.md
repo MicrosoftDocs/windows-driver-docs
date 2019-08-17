@@ -1,6 +1,6 @@
 ---
-title: NDIS Network Interfaces
-description: NDIS Network Interfaces
+title: Introduction to NDIS Network Interfaces
+description: Introduction to NDIS Network Interfaces
 ms.assetid: a1d062d4-3d4b-4244-b851-667d708810db
 keywords:
 - NDIS WDK , network interfaces
@@ -11,11 +11,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# NDIS Network Interfaces
-
-
-
-
+# Introduction to NDIS Network Interfaces
 
 To support the management information base (MIB), NDIS manages a collection of network interface information for the local computer. NDIS interface providers provide information about some network interfaces to NDIS. NDIS provides a proxy interface provider that registers interfaces and handles interface provider requests for miniport adapters and filter modules. Therefore, no NDIS drivers are required to be network interface providers.
 

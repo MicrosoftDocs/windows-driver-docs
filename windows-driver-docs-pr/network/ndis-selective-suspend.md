@@ -1,12 +1,12 @@
 ---
-title: NDIS Selective Suspend
-description: NDIS Selective Suspend
+title: Introduction to NDIS Selective Suspend
+description: Introduction to NDIS Selective Suspend
 ms.assetid: B0D44AE3-5197-4264-9838-83FB5EFEB0B0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# NDIS Selective Suspend
+# Introduction to NDIS Selective Suspend
 
 
 Starting with NDIS 6.30, the NDIS selective suspend interface allows NDIS to suspend an idle network adapter by transitioning the adapter to a low-power state. This enables the system to reduce the power overhead on the CPU and network adapter.

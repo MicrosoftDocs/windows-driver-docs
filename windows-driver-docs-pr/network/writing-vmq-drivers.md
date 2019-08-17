@@ -1,22 +1,17 @@
 ---
-title: Writing VMQ Drivers
+title: Getting Started Writing VMQ Drivers
 description: This section provides information about writing NDIS virtual machine queue (VMQ) drivers. You should already understand the Virtual Machine Queue Architecture before you read this section.
 ms.assetid: 877d3d95-2ec5-4d2e-9bcc-cd2adfc2a667
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Writing VMQ Drivers
+# Getting Started Writing VMQ Drivers
 
 
 This section provides information about writing NDIS virtual machine queue (VMQ) drivers. You should already understand the [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md) before you read this section.
 
 **Note**  Be sure to study the [NDIS Virtual Miniport Driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617918), especially the vmq.c and vmq.h source files.
-
- 
-
-
-
 
 A miniport driver that supports VMQ manages NICs that provide the VMQ hardware support. Such a NIC provides hardware services to filter incoming network data, and assign it to VM receive queues.
 
