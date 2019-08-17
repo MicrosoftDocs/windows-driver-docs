@@ -1,12 +1,12 @@
 ---
-title: Mobile Broadband (MB) Design Guide
-description: Mobile Broadband (MB) Design Guide
+title: Mobile Broadband (MB) Design Guide Topics
+description: Mobile Broadband (MB) Design Guide Topics
 ms.assetid: d5db6b69-c5a9-41d5-88c9-7c4d1e7c9c03
 ms.date: 08/09/2018
 ms.localizationpriority: medium
 ---
 
-# Mobile Broadband (MB) Design Guide
+# Mobile Broadband (MB) Design Guide Topics
 
 
 The Mobile Broadband (MB) Design Guide sections describe the operations and tasks that Mobile Broadband miniport drivers must perform.

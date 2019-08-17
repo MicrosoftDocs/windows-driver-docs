@@ -2,7 +2,7 @@
   href: index.md
 - name: "Introduction to Network Drivers"
   items: 
-  - name: "Introduction to Network Drivers"
+  - name: "Introduction to Network Drivers Topics"
     href: introduction-to-network-drivers.md
   - name: "Roadmap for Developing NDIS Drivers"
     href: roadmap-for-developing-ndis-drivers.md
@@ -2021,24 +2021,17 @@
       - name: "NDIS_STATUS_PD_CURRENT_CONFIG"
         href: ndis-status-pd-current-config.md
 - name: "Virtualized Networking"
-# Auto-expanded node
   items: 
-  - name: "Virtualized Networking"
+  - name: "Virtualized Networking Topics"
     href: virtualized-networking.md
   - name: "Virtualized Networking Concepts and Terms"
     href: virtualized-networking-concepts-and-terms.md
   - name: "Overview of Virtualized Networking"
-# Auto-expanded node
     items: 
-    - name: "Overview of Virtualized Networking"
-      href: overview-of-virtualized-networking.md
     - name: "Overview of Hyper-V"
       href: overview-of-hyper-v.md
     - name: "Virtualized Networking Interfaces in Hyper-V"
-# Auto-expanded node
       items: 
-      - name: "Virtualized Networking Interfaces in Hyper-V"
-        href: virtualized-networking-interfaces-in-hyper-v.md
       - name: "Single Root I/O Virtualization (SR-IOV) Interface"
         href: single-root-i-o-virtualization--sr-iov--interface.md
       - name: "Virtual Machine Queue (VMQ) Interface"
@@ -2048,17 +2041,14 @@
     - name: "Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment"
       href: potential-performance-bottlenecks-in-an-ndis-virtualized-networking-environment.md
   - name: "Single Root I/O Virtualization (SR-IOV)"
-# Auto-expanded node
     items: 
-    - name: "Single Root I/O Virtualization (SR-IOV)"
+    - name: "Introduction to Single Root I/O Virtualization (SR-IOV)"
       href: single-root-i-o-virtualization--sr-iov-.md
-    - name: "Overview of Single Root I/O Virtualization (SR-IOV)"
-# Auto-expanded node
+    - name: "SR-IOV Overview"
       items: 
       - name: "Overview of Single Root I/O Virtualization (SR-IOV)"
         href: overview-of-single-root-i-o-virtualization--sr-iov-.md
-      - name: "SR-IOV Architecture"
-# Auto-expanded node
+      - name: "SR-IOV Architecture and Components"
         items: 
         - name: "SR-IOV Architecture"
           href: sr-iov-architecture.md
@@ -2070,8 +2060,7 @@
           href: nic-switches.md
         - name: "Virtual Ports (VPorts)"
           href: virtual-ports--vports-.md
-      - name: "SR-IOV Data Paths"
-# Auto-expanded node
+      - name: "SR-IOV Data Paths and Failover"
         items: 
         - name: "SR-IOV Data Paths"
           href: sr-iov-data-paths.md
@@ -2084,14 +2073,12 @@
         - name: "SR-IOV VF Failover and Live Migration Support"
           href: sr-iov-vf-failover-and-live-migration-support.md
     - name: "Writing SR-IOV PF Miniport Drivers"
-# Auto-expanded node
       items: 
-      - name: "Writing SR-IOV PF Miniport Drivers"
+      - name: "Writing SR-IOV PF Miniport Drivers Overview"
         href: writing-sr-iov-pf-miniport-drivers.md
-      - name: "Initializing a PF Miniport Driver"
-# Auto-expanded node
+      - name: "PF Miniport Driver Initialization"
         items: 
-        - name: "Initializing a PF Miniport Driver"
+        - name: "Initializing a PF Miniport Driver Topics"
           href: initializing-a-pf-miniport-driver.md
         - name: "Determining SR-IOV Capabilities"
           href: determining-sr-iov-capabilities.md
@@ -2099,8 +2086,7 @@
           href: determining-nic-switch-capabilities.md
         - name: "Determining Receive Filtering Capabilities"
           href: determining-receive-filtering-capabilities.md
-        - name: "Initialization Sequence for PF Miniport Drivers"
-# Auto-expanded node
+        - name: "PF Miniport Drivers Initialization Sequence"
           items: 
           - name: "Initialization Sequence for PF Miniport Drivers"
             href: initialization-sequence-for-pf-miniport-drivers.md
@@ -2110,13 +2096,11 @@
             href: miniportadddevice-guidelines-for-pf-miniport-drivers.md
           - name: "MiniportInitializeEx Guidelines for PF Miniport Drivers"
             href: miniportinitializeex-guidelines-for-pf-miniport-drivers.md
-      - name: "Managing NIC Switches"
-# Auto-expanded node
+      - name: "NIC Switch Management"
         items: 
         - name: "Managing NIC Switches"
           href: managing-nic-switches.md
-        - name: "Creating a NIC Switch"
-# Auto-expanded node
+        - name: "NIC Switch Creation"
           items: 
           - name: "Creating a NIC Switch"
             href: creating-a-nic-switch.md
@@ -2134,8 +2118,7 @@
           href: querying-the-parameters-of-a-nic-switch.md
         - name: "Setting the Parameters of a NIC Switch"
           href: setting-the-parameters-of-a-nic-switch.md
-      - name: "Managing Virtual Ports"
-# Auto-expanded node
+      - name: "Virtual Port Management"
         items: 
         - name: "Managing Virtual Ports"
           href: managing-virtual-ports.md
@@ -2149,8 +2132,7 @@
           href: querying-the-parameters-of-a-virtual-port.md
         - name: "Setting the Parameters of a Virtual Port"
           href: setting-the-parameters-of-a-virtual-port.md
-        - name: "Managing the Receive Filters for a Virtual Port"
-# Auto-expanded node
+        - name: "Virtual Port Receive Filter Management"
           items: 
           - name: "Managing the Receive Filters for a Virtual Port"
             href: managing-receive-filters-for-a-virtual-port.md
@@ -2168,13 +2150,11 @@
           href: packet-flow-over-a-virtual-port.md
         - name: "Nondefault Virtual Ports and VMQ"
           href: nondefault-virtual-ports-and-vmq.md
-      - name: "Managing Virtual Functions"
-# Auto-expanded node
+      - name: "Virtual Function Management"
         items: 
         - name: "Managing Virtual Functions"
           href: managing-virtual-functions.md
-        - name: "Overview of Virtual Function Initialization and Teardown"
-# Auto-expanded node
+        - name: "Virtual Function Initialization and Teardown"
           items: 
           - name: "Overview of Virtual Function Initialization and Teardown"
             href: overview-of-virtual-function-initialization-and-teardown.md
@@ -2182,8 +2162,7 @@
             href: virtual-function-initialization-sequence.md
           - name: "Virtual Function Teardown Sequence"
             href: virtual-function-teardown-sequence.md
-        - name: "Allocating Resources for a Virtual Function"
-# Auto-expanded node
+        - name: "Virtual Function Resource Allocation"
           items: 
           - name: "Allocating Resources for a Virtual Function"
             href: allocating-resources-for-a-virtual-function.md
@@ -2191,8 +2170,7 @@
             href: issuing-oid-nic-switch-allocate-vf-requests.md
           - name: "Handling OID_NIC_SWITCH_ALLOCATE_VF Requests"
             href: handling-oid-nic-switch-allocate-vf-requests.md
-        - name: "Freeing Resources for a Virtual Function"
-# Auto-expanded node
+        - name: "Virtual Function Resource Freeing"
           items: 
           - name: "Freeing Resources for a Virtual Function"
             href: freeing-resources-for-a-virtual-function.md
@@ -2204,8 +2182,7 @@
           href: enumerating-virtual-functions-on-a-network-adapter.md
         - name: "Querying the Parameters of a Virtual Function"
           href: querying-the-parameters-of-a-virtual-function.md
-        - name: "Accessing the PCI Configuration Space of a Virtual Function"
-# Auto-expanded node
+        - name: "Querying and Setting the PCI Configuration Space of a Virtual Function"
           items: 
           - name: "Accessing the PCI Configuration Space of a Virtual Function"
             href: accessing-the-pci-configuration-space-of-a-virtual-function.md
@@ -2223,8 +2200,7 @@
           href: resetting-a-virtual-function.md
       - name: "Halting a PF Miniport Driver"
         href: halting-a-pf-miniport-driver.md
-      - name: "INF Requirements for PF Miniport Drivers"
-# Auto-expanded node
+      - name: "PF Miniport Drivers INF Files"
         items: 
         - name: "INF Requirements for PF Miniport Drivers"
           href: inf-requirements-for-pf-miniport-drivers.md
@@ -2235,9 +2211,8 @@
         - name: "Handling SR-IOV, VMQ, and RSS Standardized INF Keywords"
           href: handling-sr-iov--vmq--and-rss-standardized-inf-keywords.md
     - name: "Writing SR-IOV VF Miniport Drivers"
-# Auto-expanded node
       items: 
-      - name: "Writing SR-IOV VF Miniport Drivers"
+      - name: "Writing SR-IOV VF Miniport Drivers Overview"
         href: writing-sr-iov-vf-miniport-drivers.md
       - name: "Initializing a VF Miniport Driver"
         href: initializing-a-vf-miniport-driver.md
@@ -2246,9 +2221,8 @@
       - name: "INF Requirements for VF Miniport Drivers"
         href: inf-requirements-for-vf-miniport-drivers.md
     - name: "SR-IOV PF/VF Backchannel Communication"
-# Auto-expanded node
       items: 
-      - name: "SR-IOV PF/VF Backchannel Communication"
+      - name: "SR-IOV PF/VF Backchannel Communication Overview"
         href: sr-iov-pf-vf-backchannel-communication.md
       - name: "Backchannel Communication from a VF Miniport Driver"
         href: backchannel-communication-from-a-vf-miniport-driver.md
@@ -2257,26 +2231,20 @@
     - name: "SR-IOV OIDs"
       href: sr-iov-oids.md
     - name: "SR-IOV Status Indications"
-# Auto-expanded node
       items: 
-      - name: "SR-IOV Status Indications"
-        href: sr-iov-status-indications.md
       - name: "NDIS_STATUS_NIC_SWITCH_CURRENT_CAPABILITIES"
         href: ndis-status-nic-switch-current-capabilities.md
       - name: "NDIS_STATUS_NIC_SWITCH_HARDWARE_CAPABILITIES"
         href: ndis-status-nic-switch-hardware-capabilities.md
   - name: "Virtual Machine Queue (VMQ)"
-# Auto-expanded node
     items: 
-    - name: "Virtual Machine Queue (VMQ)"
+    - name: "Virtual Machine Queue (VMQ) Overview"
       href: virtual-machine-queue--vmq-.md
-    - name: "Virtual Machine Queue Architecture"
-# Auto-expanded node
+    - name: "VVMQ Architecture"
       items: 
       - name: "Virtual Machine Queue Architecture"
         href: virtual-machine-queue-architecture.md
-      - name: "Introduction to NDIS Virtual Machine Queue (VMQ)"
-# Auto-expanded node
+      - name: "About NDIS Virtual Machine Queue (VMQ)"
         items: 
         - name: "Introduction to NDIS Virtual Machine Queue (VMQ)"
           href: introduction-to-ndis-virtual-machine-queue--vmq-.md
@@ -2293,12 +2261,10 @@
       - name: "NDIS Virtual Machine Queue States"
         href: ndis-virtual-machine-queue-states.md
     - name: "Writing VMQ Drivers"
-# Auto-expanded node
       items: 
-      - name: "Writing VMQ Drivers"
+      - name: "Getting Started Writing VMQ Drivers"
         href: writing-vmq-drivers.md
-      - name: "VMQ Driver Configuration"
-# Auto-expanded node
+      - name: "Configuring VMQ Drivers"
         items: 
         - name: "VMQ Driver Configuration"
           href: vmq-driver-configuration.md
@@ -2310,8 +2276,7 @@
         href: queue-states-and-operations.md
       - name: "VMQ Interrupt Requirements"
         href: vmq-interrupt-requirements.md
-      - name: "Allocating and Freeing VM Queues"
-# Auto-expanded node
+      - name: "VM Queue Allocation and Freeing"
         items: 
         - name: "Allocating and Freeing VM Queues"
           href: allocating-and-freeing-vm-queues.md
@@ -2323,8 +2288,7 @@
           href: shared-memory-resource-allocation.md
         - name: "Enumerating the Allocated Queues"
           href: enumerating-the-allocated-queues.md
-      - name: "Setting and Clearing VMQ Filters"
-# Auto-expanded node
+      - name: "VMQ Filters"
         items: 
         - name: "Setting and Clearing VMQ Filters"
           href: setting-and-clearing-vmq-filters.md
@@ -2336,8 +2300,7 @@
           href: enumerating-filters-on-a-vmq.md
       - name: "Obtaining and Updating VM Queue Parameters"
         href: obtaining-and-updating-vm-queue-parameters.md
-      - name: "VMQ Send and Receive Operations"
-# Auto-expanded node
+      - name: "Transferring network data with VMQ"
         items: 
         - name: "VMQ Send and Receive Operations"
           href: vmq-send-and-receive-operations.md
@@ -2352,28 +2315,24 @@
       - name: "Obtaining VMQ Information"
         href: obtaining-vmq-information.md
   - name: "Hyper-V Extensible Switch"
-# Auto-expanded node
     items: 
-    - name: "Hyper-V Extensible Switch"
+    - name: "Introduction to Hyper-V Extensible Switch"
       href: hyper-v-extensible-switch.md
     - name: "Getting Started Writing a Hyper-V Extensible Switch Extension"
       href: getting-started-writing-a-hyper-v-extensible-switch-extension.md
     - name: "Overview of the Hyper-V Extensible Switch"
       href: overview-of-the-hyper-v-extensible-switch.md
     - name: "Hyper-V Extensible Switch Architecture"
-# Auto-expanded node
       items: 
-      - name: "Hyper-V Extensible Switch Architecture"
+      - name: "Hyper-V Extensible Switch Architecture Topics"
         href: hyper-v-extensible-switch-architecture.md
       - name: "Hyper-V Extensible Switch Components"
-# Auto-expanded node
         items: 
-        - name: "Hyper-V Extensible Switch Components"
+        - name: "Hyper-V Extensible Switch Components Overview"
           href: hyper-v-extensible-switch-components.md
         - name: "Hyper-V Extensible Switch Extensions"
-# Auto-expanded node
           items: 
-          - name: "Hyper-V Extensible Switch Extensions"
+          - name: "Hyper-V Extensible Switch Extensions Overview"
             href: hyper-v-extensible-switch-extensions.md
           - name: "Capturing Extensions"
             href: capturing-extensions.md
@@ -2386,9 +2345,8 @@
           - name: "Hybrid Forwarding"
             href: hybrid-forwarding.md
         - name: "Hyper-V Extensible Switch Ports"
-# Auto-expanded node
           items: 
-          - name: "Hyper-V Extensible Switch Ports"
+          - name: "Hyper-V Extensible Switch Ports Topics"
             href: hyper-v-extensible-switch-ports.md
           - name: "Overview of Hyper-V Extensible Switch Ports"
             href: overview-of-hyper-v-extensible-switch-ports.md
@@ -2396,8 +2354,7 @@
             href: validation-ports.md
           - name: "Operational Ports"
             href: operational-ports.md
-        - name: "Hyper-V Extensible Switch Network Adapters"
-# Auto-expanded node
+        - name: "Hyper-V Extensible Switch Network Adapters Topics"
           items: 
           - name: "Hyper-V Extensible Switch Network Adapters"
             href: hyper-v-extensible-switch-network-adapters.md
@@ -2416,12 +2373,10 @@
         - name: "Hyper-V Extensible Switch Port and Network Adapter States"
           href: hyper-v-extensible-switch-port-and-network-adapter-states.md
       - name: "Hyper-V Extensible Switch Data Path"
-# Auto-expanded node
         items: 
-        - name: "Hyper-V Extensible Switch Data Path"
+        - name: "Hyper-V Extensible Switch Data Path Topics"
           href: hyper-v-extensible-switch-data-path.md
         - name: "Overview of the Hyper-V Extensible Switch Data Path"
-# Auto-expanded node
           items: 
           - name: "Overview of the Hyper-V Extensible Switch Data Path"
             href: overview-of-the-hyper-v-extensible-switch-data-path.md
@@ -2430,9 +2385,8 @@
           - name: "Packet Management Guidelines for the Extensible Switch Data Path"
             href: packet-management-guidelines-for-the-extensible-switch-data-path.md
         - name: "Hyper-V Extensible Switch Forwarding Context"
-# Auto-expanded node
           items: 
-          - name: "Hyper-V Extensible Switch Forwarding Context"
+          - name: "Hyper-V Extensible Switch Forwarding Context Overview"
             href: hyper-v-extensible-switch-forwarding-context.md
           - name: "Hyper-V Extensible Switch Forwarding Context Data Types"
             href: hyper-v-extensible-switch-forwarding-context-data-types.md
@@ -2441,23 +2395,20 @@
         - name: "Hyper-V Extensible Switch Send and Receive Flags"
           href: hyper-v-extensible-switch-send-and-receive-flags.md
       - name: "Hyper-V Extensible Switch Control Path"
-# Auto-expanded node
         items: 
-        - name: "Hyper-V Extensible Switch Control Path"
+        - name: "Hyper-V Extensible Switch Control Path Topics"
           href: hyper-v-extensible-switch-control-path.md
         - name: "Hyper-V Extensible Switch Control Path for OID Requests"
           href: hyper-v-extensible-switch-control-path-for-oid-requests.md
         - name: "Hyper-V Extensible Switch Control Path for NDIS Status Indications"
           href: hyper-v-extensible-switch-control-path-for-ndis-status-indications.md
       - name: "Hyper-V Extensible Switch Policies"
-# Auto-expanded node
         items: 
-        - name: "Hyper-V Extensible Switch Policies"
+        - name: "Hyper-V Extensible Switch Policies Topics"
           href: hyper-v-extensible-switch-policies.md
         - name: "Overview of Hyper-V Extensible Switch Policies"
           href: overview-of-hyper-v-extensible-switch-policies.md
-        - name: "Port Policies"
-# Auto-expanded node
+        - name: "Hyper-V Extensible Switch Policies for Ports"
           items: 
           - name: "Port Policies"
             href: port-policies.md
@@ -2465,8 +2416,7 @@
             href: overview-of-port-policies.md
           - name: "Custom Port Property Definition and Registration"
             href: custom-port-property-definition-and-registration.md
-        - name: "Switch Policies"
-# Auto-expanded node
+        - name: "Hyper-V Extensible Switch Policies for Switches"
           items: 
           - name: "Switch Policies"
             href: switch-policies.md
@@ -2475,18 +2425,16 @@
           - name: "Custom Switch Property Definition and Registration"
             href: custom-switch-property-definition-and-registration.md
       - name: "Hyper-V Extensible Switch Feature Status Information"
-# Auto-expanded node
         items: 
-        - name: "Hyper-V Extensible Switch Feature Status Information"
+        - name: "Hyper-V Extensible Switch Feature Status Information Overview"
           href: hyper-v-extensible-switch-feature-status-information.md
         - name: "Custom Port Feature Status"
           href: custom-port-feature-status.md
         - name: "Custom Switch Feature Status"
           href: custom-switch-feature-status.md
       - name: "Hyper-V Extensible Switch Save and Restore Operations"
-# Auto-expanded node
         items: 
-        - name: "Hyper-V Extensible Switch Save and Restore Operations"
+        - name: "Hyper-V Extensible Switch Save and Restore Operations Overview"
           href: hyper-v-extensible-switch-save-and-restore-operations.md
         - name: "Hyper-V Extensible Switch Save Operations"
           href: hyper-v-extensible-switch-save-operations.md
@@ -2495,12 +2443,10 @@
         - name: "Hyper-V Extensible Switch Live Migration Support"
           href: hyper-v-extensible-switch-live-migration-support.md
     - name: "Writing Hyper-V Extensible Switch Extensions"
-# Auto-expanded node
       items: 
-      - name: "Writing Hyper-V Extensible Switch Extensions"
+      - name: "Writing Hyper-V Extensible Switch Extensions Topics"
         href: writing-hyper-v-extensible-switch-extensions.md
-      - name: "Hyper-V Extensible Switch Send and Receive Operations"
-# Auto-expanded node
+      - name: "Transferring Network Data with Hyper-V Extensible Switch"
         items: 
         - name: "Hyper-V Extensible Switch Send and Receive Operations"
           href: hyper-v-extensible-switch-send-and-receive-operations.md
@@ -2510,8 +2456,7 @@
           href: cloning-or-duplicating-packet-traffic.md
         - name: "Forwarding Packets to Hyper-V Extensible Switch Ports"
           href: forwarding-packets-to-hyper-v-extensible-switch-ports.md
-      - name: "Hyper-V Extensible Switch OID Requests"
-# Auto-expanded node
+      - name: "Handling Hyper-V Extensible Switch OIDs"
         items: 
         - name: "Hyper-V Extensible Switch OID Requests"
           href: hyper-v-extensible-switch-oid-requests.md
@@ -2521,13 +2466,11 @@
           href: receiving-oid-requests-about-hyper-v-extensible-switch-configuration-changes.md
         - name: "Forwarding OID Requests from a Hyper-V Child Partition"
           href: forwarding-oid-requests-from-a-hyper-v-child-partition.md
-      - name: "Managing Hyper-V Extensible Switch Source and Destination Port Data"
-# Auto-expanded node
+      - name: "Hyper-V Extensible Switch Source and Destination Port Data Management"
         items: 
         - name: "Managing Hyper-V Extensible Switch Source and Destination Port Data"
           href: managing-hyper-v-extensible-switch-source-and-destination-port-data.md
-        - name: "Managing Hyper-V Extensible Switch Source Port Data"
-# Auto-expanded node
+        - name: "Hyper-V Extensible Switch Source Port Data Management"
           items: 
           - name: "Managing Hyper-V Extensible Switch Source Port Data"
             href: managing-hyper-v-extensible-switch-source-port-data.md
@@ -2535,8 +2478,7 @@
             href: querying-a-packet-s-extensible-switch-source-port-data.md
           - name: "Modifying a Packet's Extensible Switch Source Port Data"
             href: modifying-a-packet-s-extensible-switch-source-port-data.md
-        - name: "Managing Hyper-V Extensible Switch Destination Port Data"
-# Auto-expanded node
+        - name: "Hyper-V Extensible Switch Destination Port Data Management"
           items: 
           - name: "Managing Hyper-V Extensible Switch Destination Port Data"
             href: managing-hyper-v-extensible-switch-destination-port-data.md
@@ -2546,8 +2488,7 @@
             href: adding-extensible-switch-destination-port-data-to-a-packet.md
           - name: "Excluding Packet Delivery to Extensible Switch Destination Ports"
             href: excluding-packet-delivery-to-extensible-switch-destination-ports.md
-      - name: "Managing Hyper-V Extensible Switch Policies"
-# Auto-expanded node
+      - name: "Hyper-V Extensible Switch Policy Management"
         items: 
         - name: "Managing Hyper-V Extensible Switch Policies"
           href: managing-hyper-v-extensible-switch-extensibility-policies.md
@@ -2555,8 +2496,7 @@
           href: managing-port-policies.md
         - name: "Managing Switch Policies"
           href: managing-switch-policies.md
-      - name: "Managing Hyper-V Extensible Switch Feature Status Information"
-# Auto-expanded node
+      - name: "Hyper-V Extensible Switch Feature Status Information Management"
         items: 
         - name: "Managing Hyper-V Extensible Switch Feature Status Information"
           href: managing-hyper-v-extensible-switch-feature-status-information.md
@@ -2566,8 +2506,7 @@
           href: managing-custom-switch-feature-status-information.md
       - name: "Managing Hyper-V Extensible Switch Run-Time Data"
         href: managing-hyper-v-extensible-switch-run-time-data.md
-      - name: "Managing Physical Network Adapters"
-# Auto-expanded node
+      - name: "Physical Network Adapter Management"
         items: 
         - name: "Managing Physical Network Adapters"
           href: managing-physical-network-adapters.md
@@ -2575,8 +2514,7 @@
           href: managing-physical-network-adapter-connection-status.md
         - name: "Forwarding Packets to Physical Network Adapters"
           href: forwarding-packets-to-physical-network-adapters.md
-        - name: "Managing OID Requests to Physical Network Adapters"
-# Auto-expanded node
+        - name: "OID Requests to Physical Network Adapters"
           items: 
           - name: "Managing OID Requests to Physical Network Adapters"
             href: managing-oid-requests-to-physical-network-adapters.md
@@ -2584,8 +2522,7 @@
             href: forwarding-oid-requests-to-physical-network-adapters.md
           - name: "Managing Hardware Offload OID Requests to Physical Network Adapters"
             href: managing-hardware-offload-oid-requests-to-physical-network-adapters.md
-        - name: "Managing NDIS Status Indications from Physical Network Adapters"
-# Auto-expanded node
+        - name: "NDIS Status Indications from Physical Network Adapters"
           items: 
           - name: "Managing NDIS Status Indications from Physical Network Adapters"
             href: managing-ndis-status-indications-from-physical-network-adapters.md
@@ -2593,8 +2530,7 @@
             href: forwarding-ndis-status-indications-from-physical-network-adapters.md
           - name: "Originating NDIS Status Indications from Physical Network Adapters"
             href: originating-ndis-status-indications-from-physical-network-adapters.md
-    - name: "Installing Hyper-V Extensible Switch Extensions"
-# Auto-expanded node
+    - name: "Hyper-V Extensible Switch Extensions Installation"
       items: 
       - name: "Installing Hyper-V Extensible Switch Extensions"
         href: installing-hyper-v-extensible-switch-extensions.md
@@ -2602,8 +2538,7 @@
         href: inf-requirements-for-hyper-v-extensions.md
       - name: "Extension Driver MSI Packaging Requirements"
         href: extension-driver-msi-packaging-requirements.md
-      - name: "Managing Installed Hyper-V Extensible Switch Extensions"
-# Auto-expanded node
+      - name: "Management of Installed Hyper-V Extensible Switch Extensions"
         items: 
         - name: "Managing Installed Hyper-V Extensible Switch Extensions"
           href: managing-installed-hyper-v-extensions.md
@@ -2620,19 +2555,13 @@
     - name: "Hyper-V Extensible Switch OIDs"
       href: hyper-v-extensible-switch-oids.md
     - name: "Hyper-V Extensible Switch Status Indications"
-# Auto-expanded node
       items: 
-      - name: "Hyper-V Extensible Switch Status Indications"
-        href: hyper-v-extensible-switch-status-indications.md
       - name: "NDIS_STATUS_SWITCH_NIC_STATUS"
         href: ndis-status-switch-nic-status.md
       - name: "NDIS_STATUS_SWITCH_PORT_REMOVE_VF"
         href: ndis-status-switch-port-remove-vf.md
     - name: "VMQ Status Indications"
-# Auto-expanded node
       items: 
-      - name: "VMQ Status Indications"
-        href: virtual-machine-queue-status-indications.md
       - name: "NDIS_STATUS_ISOLATION_PARAMETERS_CHANGE"
         href: ndis-status-isolation-parameters-change.md
       - name: "NDIS_STATUS_RECEIVE_FILTER_QUEUE_PARAMETERS"
@@ -2640,14 +2569,12 @@
       - name: "NDIS_STATUS_RECEIVE_QUEUE_STATE"
         href: ndis-status-receive-queue-state.md
 - name: "Wireless Networking"
-# Auto-expanded node
   items: 
-  - name: "Wireless Networking"
+  - name: "Wireless Networking Topics"
     href: wireless-networking2.md
   - name: "WLAN Universal Windows driver model"
     href: wifi-universal-driver-model.md
-  - name: "Cellular architecture and implementation"
-# Auto-expanded node
+  - name: "Cellular architecture and overview"
     items: 
     - name: "Cellular architecture and implementation"
       href: cellular-architecture-and-driver-model.md
@@ -2656,16 +2583,14 @@
     - name: "SIM locking"
       href: sim-lock.md
     - name: "SIM toolkit"
-# Auto-expanded node
       items: 
-      - name: "SIM toolkit"
+      - name: "SIM toolkit Overview"
         href: sim-toolkit.md
       - name: "SIM toolkit commands"
         href: sim-toolkit-commands.md
       - name: "Reserved URI to launch SIM toolkit"
         href: reserved-uri-to-launch-sim-toolkit.md
-    - name: "Cellular COM API design guide"
-# Auto-expanded node
+    - name: "Cellular COM API"
       items: 
       - name: "Cellular COM API design guide"
         href: cellular-com-api-design-guide.md
@@ -2674,25 +2599,22 @@
       - name: "Communicate with the RIL driver by using IOemCellularModem interface"
         href: communicate-with-the-ril-driver-by-using-the-ioemcellularmodem-interface.md
   - name: "Mobile Broadband (MB) Design Guide"
-# Auto-expanded node
     items: 
-    - name: "Mobile Broadband (MB) Design Guide"
+    - name: "Mobile Broadband (MB) Design Guide Topics"
       href: mobile-broadband--mb--design-guide.md
     - name: "Roadmap to Develop MB Miniport Drivers"
       href: roadmap-to-develop-mb-miniport-drivers.md
     - name: "MB Interface Model"
-# Auto-expanded node
       items: 
-      - name: "MB Interface Model"
+      - name: "MB Interface Model Overview"
         href: mb-interface-model.md
       - name: "MB Interface Terms"
         href: mb-interface-terms.md
       - name: "MB Union Function Descriptors"
         href: mb-union-function-descriptors.md
       - name: "MB Identity Morphing"
-# Auto-expanded node
         items: 
-        - name: "MB Identity Morphing"
+        - name: "Introduction to MB Identity Morphing"
           href: mb-identity-morphing.md
         - name: "MB Identity Morphing Solution Overview"
           href: mb-identity-morphing-solution-overview.md
@@ -2700,8 +2622,7 @@
           href: mb-identity-morphing-solution-details.md
       - name: "MB Interface Model Supplement"
         href: mb-interface-model-supplement.md
-    - name: "MB Interface Overview"
-# Auto-expanded node
+    - name: "MB Driver Model"
       items: 
       - name: "MB Interface Overview"
         href: mb-interface-overview.md
@@ -2728,9 +2649,8 @@
       - name: "MB Miniport Driver Performance Requirements"
         href: mb-miniport-driver-performance-requirements.md
     - name: "MB Operation Flowcharts"
-# Auto-expanded node
       items: 
-      - name: "MB Operation Flowcharts"
+      - name: "MB Operation Flowchart Topics"
         href: mb-operation-flowcharts.md
       - name: "MB Miniport Driver Initialization"
         href: mb-miniport-driver-initialization.md
@@ -2796,8 +2716,7 @@
         href: mb-uicc-application-and-file-system-access.md
     - name: "MB reset and recovery"
       items:
-      - name: "MB Device-based Reset and Recovery"
-# Auto-expanded node
+      - name: "MB Device-based Reset and Recovery and Hang Detection"
         items: 
         - name: "MB Device-based Reset and Recovery"
           href: mb-device-based-reset-and-recovery.md
@@ -2820,10 +2739,7 @@
     - name: "MB eSIM MBIM ready state guidance"
       href: mb-esim-mbim-ready-state-guidance.md
     - name: "MB NDIS Status Notifications"
-# Auto-expanded node
       items: 
-      - name: "MB NDIS Status Notifications"
-        href: mb-ndis-status-notifications.md
       - name: "NDIS_STATUS_WWAN_AUTH_RESPONSE"
         href: ndis-status-wwan-auth-response.md
       - name: "NDIS_STATUS_WWAN_BASE_STATIONS_INFO"
@@ -2937,9 +2853,8 @@
       - name: "NDIS_STATUS_WWAN_VISIBLE_PROVIDERS"
         href: ndis-status-wwan-visible-providers.md
     - name: "Supplemental MB Documentation"
-# Auto-expanded node
       items: 
-      - name: "Supplemental MB Documentation"
+      - name: "Supplemental MB Documentation Topics"
         href: supplemental-mb-documentation.md
       - name: "HOST Shutdown Device Service"
         href: host-shutdown-device-service.md
@@ -2951,24 +2866,21 @@
         href: mobile-broadband-class-driver-logs--event-trace-log-tracing.md
       - name: "Mobile Broadband Implementation Guidelines for USB Devices"
         href: mobile-broadband-implementation-guidelines-for-usb-devices.md
-  - name: "WLAN feature information"
-# Auto-expanded node
+  - name: "WLAN network preference and roaming"
     items: 
     - name: "WLAN feature information"
       href: wlan-feature-information.md
     - name: "Fast Roaming with 802.11k, 802.11v, and 802.11r"
       href: fast-roaming-with-802-11k--802-11v--and-802-11r.md
-  - name: "WDI Miniport Driver Design Guide"
-# Auto-expanded node
+  - name: "WLAN Device Driver Interface (WDI) Miniport Driver Design Guide"
     items: 
     - name: "WDI Miniport Driver Design Guide"
       href: wdi-miniport-driver-design-guide.md
     - name: "WDI communication model, synchronization, and abort"
       href: wdi-communication-model.md
     - name: "WDI hang detection and recovery"
-# Auto-expanded node
       items: 
-      - name: "WDI hang detection and recovery"
+      - name: "Hang detection and recovery"
         href: wdi-hang-detection-and-recovery.md
       - name: "WDI UE hang detection and recovery flow"
         href: wdi-ue-hang-detection-and-recovery-flow.md
@@ -2990,8 +2902,7 @@
       href: wdi-initialization.md
     - name: "WDI task command priority and existing state"
       href: wdi-task-command-priority-and-existing-state.md
-    - name: "WDI data transfer"
-# Auto-expanded node
+    - name: "Transferring network data with WDI"
       items: 
       - name: "WDI data transfer"
         href: wdi-data-transfer.md
@@ -3009,8 +2920,7 @@
         href: wdi-tx-path.md
       - name: "WDI datapath operation sequence diagrams"
         href: wdi-datapath-operation-sequence-diagrams.md
-    - name: "IHV component for WDI model"
-# Auto-expanded node
+    - name: "IHV component in the WDI model"
       items: 
       - name: "IHV component for WDI model"
         href: wdi-ihv-component-model.md
@@ -3027,9 +2937,8 @@
       - name: "WDI non-TLV versioning"
         href: wdi-non-tlv-versioning.md
       - name: "User-initiated feedback with IHV trace logging"
-# Auto-expanded node
         items: 
-        - name: "User-initiated feedback with IHV trace logging"
+        - name: "User-initiated feedback with IHV trace logging overview"
           href: user-initiated-feedback-with-ihv-trace-logging.md
         - name: "Logging scenarios"
           href: logging-scenarios.md
@@ -3038,9 +2947,8 @@
         - name: "User-initiated feedback - repro mode"
           href: user-initiated-feedback-repro-mode.md
     - name: "WDI TLV generator/parser"
-# Auto-expanded node
       items: 
-      - name: "WDI TLV generator/parser"
+      - name: "WDI TLV generator/parser topics"
         href: wdi-tlv-generator-parser.md
       - name: "WDI TLV parser interface overview"
         href: wdi-tlv-parser-interface-overview.md
@@ -3059,10 +2967,7 @@
       - name: "WDI TLV dumpers"
         href: wdi-tlv-dumpers.md
     - name: "WDI TLVs"
-# Auto-expanded node
       items: 
-      - name: "WDI TLVs"
-        href: wdi-miniport-driver-tlvs.md
       - name: "WDI_TLV_ACCESS_NETWORK_TYPE"
         href: wdi-tlv-access-network-type.md
       - name: "WDI_TLV_ACTION_FRAME_BODY"
@@ -3716,9 +3621,8 @@
       - name: "WDI_TLV_WFD_ASSOCIATION_STATUS"
         href: wdi-tlv-wfd-association-status.md
     - name: "WDI USB Selective Suspend"
-# Auto-expanded node
       items: 
-      - name: "WDI USB Selective Suspend"
+      - name: "WDI USB Selective Suspend Topics"
         href: wdi-usb-selective-suspend.md
       - name: "WDI NDIS idle detection"
         href: wdi-ndis-idle-detection.md
@@ -3733,9 +3637,8 @@
       - name: "WDI USB remote wake sequence"
         href: wdi-usb-remote-wake-sequence.md
     - name: "WDI design guide"
-# Auto-expanded node
       items: 
-      - name: "WDI design guide"
+      - name: "WDI design guide topics"
         href: wdi-design-guide.md
       - name: "WDI low latency connection quality"
         href: wdi-low-latency-connection-quality.md
@@ -3746,10 +3649,7 @@
       - name: "Develop and validate WDI drivers for Reset Recovery"
         href: wdi-develop-and-validate-wdi-drivers-for-reset-recovery.md
     - name: "WDI Task OIDs"
-# Auto-expanded node
       items: 
-      - name: "WDI Task OIDs"
-        href: wdi-miniport-driver-task-oids.md
       - name: "OID_WDI_TASK_CHANGE_OPERATION_MODE"
         href: oid-wdi-task-change-operation-mode.md
       - name: "OID_WDI_TASK_CLOSE"
@@ -3793,10 +3693,7 @@
       - name: "OID_WDI_TASK_STOP_AP"
         href: oid-wdi-task-stop-ap.md
     - name: "WDI Property OIDs"
-# Auto-expanded node
       items: 
-      - name: "WDI Property OIDs"
-        href: wdi-miniport-driver-property-oids.md
       - name: "OID_WDI_ABORT_TASK"
         href: oid-wdi-abort-task.md
       - name: "OID_WDI_GET_ADAPTER_CAPABILITIES"
@@ -3876,10 +3773,7 @@
       - name: "OID_WDI_TCP_RSC_STATISTICS"
         href: oid-wdi-tcp-rsc-statistics.md
     - name: "WDI Status Indications"
-# Auto-expanded node
       items: 
-      - name: "WDI Status Indications"
-        href: wdi-miniport-driver-status-indications.md
       - name: "NDIS_STATUS_WDI_INDICATION_ACTION_FRAME_RECEIVED"
         href: ndis-status-wdi-indication-action-frame-received.md
       - name: "NDIS_STATUS_WDI_INDICATION_AP_ASSOCIATION_REQUEST_RECEIVED"
@@ -3973,10 +3867,7 @@
       - name: "NDIS_STATUS_WDI_INDICATION_WAKE_REASON"
         href: ndis-status-wdi-indication-wake-reason.md
     - name: "Other WDI Data Types"
-# Auto-expanded node
       items: 
-      - name: "Other WDI Data Types"
-        href: other-wdi-data-types.md
       - name: "WDI_BAND_ID"
         href: wdi-band-id.md
       - name: "WDI_CHANNEL_NUMBER"
@@ -3998,18 +3889,16 @@
     - name: "WDI doc change history"
       href: wdi-doc-change-history.md
   - name: Native 802.11 IHV Extensions
-# Auto-expanded node
     items:
-    - name: Native 802.11 IHV Extensions
+    - name: Native 802.11 IHV Extensions Topics
       href: native-802-11-ihv-extensions.md
     - name: Overview of IHV Extensibility
       href: overview-of-ihv-extensibility.md
     - name: Installing Native 802.11 IHV Extensions
       href: installing-native-802-11-ihv-extensions.md
     - name: Native 802.11 IHV Extensions DLL
-# Auto-expanded node
       items:
-      - name: Native 802.11 IHV Extensions DLL
+      - name: Native 802.11 IHV Extensions DLL Topics
         href: native-802-11-ihv-extensions-dll4.md
       - name: Native 802.11 IHV Extensions DLL Overview
         href: native-802-11-ihv-extensions-dll-overview.md
@@ -4020,18 +3909,16 @@
       - name: Native 802.11 IHV Extensions DLL Implementation Guidelines
         href: native-802-11-ihv-extensions-dll-implementation-guidelines.md
       - name: DLL Start/Stop Operations
-# Auto-expanded node
         items: 
-        - name: DLL Start/Stop Operations
+        - name: DLL Start/Stop Operations Topics
           href: dll-start-stop-operations.md
         - name: DLL Start Operations
           href: dll-start-operations.md
         - name: DLL Stop Operations
           href: dll-stop-operations.md
       - name: 802.11 WLAN Adapter Management
-# Auto-expanded node
         items:
-        - name: 802.11 WLAN Adapter Management
+        - name: 802.11 WLAN Adapter Management Topics
           href: 802-11-wlan-adapter-management.md
         - name: 802.11 WLAN Adapter Arrival
           href: 802-11-wlan-adapter-arrival.md
@@ -4041,8 +3928,7 @@
           href: 802-11-wlan-adapter-reset.md
         - name: 802.11 WLAN Adapter Communication Channel
           href: 802-11-wlan-adapter-communication-channel.md
-      - name: Network Profile Management
-# Auto-expanded node
+      - name: Managing Network Profiles
         items:
         - name: Network Profile Management
           href: network-profile-management.md
@@ -4052,8 +3938,7 @@
           href: creating-network-profile-extensions.md
         - name: Validating Network Profile Extensions
           href: validating-network-profile-extensions.md
-      - name: Interaction with the User
-# Auto-expanded node
+      - name: User Interaction
         items:
         - name: Interaction with the User
           href: interaction-with-the-user.md
@@ -4062,18 +3947,16 @@
         - name: Processing Session Changes
           href: processing-session-changes.md
       - name: Pre-Association Operations
-# Auto-expanded node
         items:
-        - name: Pre-Association Operations
+        - name: Pre-Association Operations Topics
           href: pre-association-operations.md
         - name: Pre-Association Operation Overview
           href: pre-association-operation-overview.md
         - name: Pre-Association Operation Guidelines
           href: pre-association-operation-guidelines.md
       - name: Post-Association Operations
-# Auto-expanded node
         items:
-        - name: Post-Association Operations
+        - name: Post-Association Operations Overview
           href: post-association-operations.md
         - name: Performing a Post-Association Operation
           href: performing-a-post-association-operation.md
@@ -4081,8 +3964,7 @@
           href: stopping-a-post-association-operation.md
         - name: Interface to the Native 802.11 802.1X Module
           href: interface-to-the-native-802-11-802-1x-module.md
-      - name: Native 802.11 IHV extension send and receive operations
-# Auto-expanded node
+      - name: Transferring Network Data in Native 802.11 IHV extensions
         items:
         - name: Native 802.11 IHV extension send and receive operations
           href: send-and-receive-operations3.md
@@ -4092,8 +3974,7 @@
           href: send-operations.md
         - name: Receive Operations
           href: receive-operations.md
-      - name: Notification Operations
-# Auto-expanded node
+      - name: Sending and Receiving Notifications
         items:
         - name: Notification Operations
           href: notification-operations.md
@@ -4104,9 +3985,8 @@
       - name: Virtual Station
         href: virtual-station.md
     - name: Native 802.11 IHV UI Extensions DLL
-# Auto-expanded node
       items:
-      - name: Native 802.11 IHV UI Extensions DLL
+      - name: Native 802.11 IHV UI Extensions DLL Topics
         href: native-802-11-ihv-ui-extensions-dll2.md
       - name: Windows SDK References
         href: windows-sdk-references.md
@@ -4114,28 +3994,23 @@
         href: native-802-11-ihv-ui-extensions-dll-overview.md
       - name: Native 802.11 IHV UI Extensions COM Interfaces
         href: native-802-11-ihv-ui-extensions-com-interfaces.md
-      - name: Extending the Properties for Wireless Network Profiles
-# Auto-expanded node
+      - name: Wireless Network Profile Property Extension
         items:
         - name: Extending the Properties for Wireless Network Profiles
           href: extending-the-properties-for-wireless-network-profiles.md
         - name: Extending Wireless Connection Properties
-# Auto-expanded node
-          items:
-          - name: Extending Wireless Connection Properties
-            href: extending-wireless-connection-properties.md
-          - name: Extending Wireless Security Properties
-            href: extending-wireless-security-properties.md
-          - name: Extending Microsoft 802.1X Security Settings
-            href: extending-microsoft-802-1x-security-settings.md
-          - name: Extending the UI for Proprietary 802.1X Security Methods
-            href: extending-the-ui-for-proprietary-802-1x-security-methods.md
-          - name: Extending the UI for Standard 802.1X Security Methods
-            href: extending-the-ui-for-standard-802-1x-security-methods.md
+          href: extending-wireless-connection-properties.md
+        - name: Extending Wireless Security Properties
+          href: extending-wireless-security-properties.md
+        - name: Extending Microsoft 802.1X Security Settings
+          href: extending-microsoft-802-1x-security-settings.md
+        - name: Extending the UI for Proprietary 802.1X Security Methods
+          href: extending-the-ui-for-proprietary-802-1x-security-methods.md
+        - name: Extending the UI for Standard 802.1X Security Methods
+          href: extending-the-ui-for-standard-802-1x-security-methods.md
       - name: Extending the Advanced Properties for Wireless Network Adapters
         href: extending-the-advanced-properties-for-wireless-network-adapters.md
-      - name: Handling Requests for the Display of a Custom UI
-# Auto-expanded node
+      - name: Custom UI Display Requests
         items:
         - name: Handling Requests for the Display of a Custom UI
           href: handling-requests-for-the-display-of-a-custom-ui.md
@@ -4150,33 +4025,27 @@
         - name: Accessing Profile and Context Data
           href: accessing-profile-and-context-data.md    
   - name: "Wi-Fi Hotspot Offloading Guide"
-# Auto-expanded node
     items: 
-    - name: "Wi-Fi Hotspot Offloading Guide"
+    - name: "Wi-Fi Hotspot Offloading Overview"
       href: wi-fi-hotspot-offloading-guide.md
     - name: "Wi-Fi Hotspot Offloading Architecture"
       href: wi-fi-hotspot-offloading-architecture.md
     - name: "Wi-Fi Hotspot Offloading Plugin"
       href: wi-fi-hotspot-offloading-plugin.md
     - name: "Wi-Fi Discovery Service"
-# Auto-expanded node
       items: 
-      - name: "Wi-Fi Discovery Service"
+      - name: "Wi-Fi Discovery Service Overview"
         href: wi-fi-discovery-service.md
       - name: "Wi-Fi Hotspot Data Submission Format"
         href: wi-fi-hotspot-data-submission-format.md
-    - name: "Wi-Fi Hotspot Offloading Reference"
-# Auto-expanded node
+    - name: "Wi-Fi Hotspot Offloading API Reference"
       items: 
       - name: "Wi-Fi Hotspot Offloading Reference"
         href: wi-fi-hotspot-offloading-reference.md
       - name: "Wi-Fi Hotspot Offloading Constants"
         href: wi-fi-hotspot-offloading-constants.md
       - name: "Wi-Fi Hotspot Offloading Structures"
-# Auto-expanded node
         items: 
-        - name: "Wi-Fi Hotspot Offloading Structures"
-          href: wi-fi-hotspot-offloading-structures.md
         - name: "HOTSPOT_HOST_HANDLERS"
           href: hotspot-host-handlers.md
         - name: "HOTSPOT_PLUGIN_APIS"
@@ -4206,10 +4075,7 @@
         - name: "HS_SIM_IDENTITY"
           href: hs-sim-identity.md
       - name: "Wi-Fi Hotspot Offloading Functions"
-# Auto-expanded node
         items: 
-        - name: "Wi-Fi Hotspot Offloading Functions"
-          href: wi-fi-hotspot-offloading-functions.md
         - name: "HSPluginGetVersion"
           href: hsplugingetversion.md
         - name: "HSPluginInitPlugin"
@@ -4251,10 +4117,7 @@
         - name: "HS_HOST_UPDATE_CONFIGURATION_COMPLETION"
           href: hs-host-update-configuration-completion.md
       - name: "Wi-Fi Hotspot Offloading Enumerations"
-# Auto-expanded node
         items: 
-        - name: "Wi-Fi Hotspot Offloading Enumerations"
-          href: wi-fi-hotspot-offloading-enumerations.md
         - name: "eHS_AUTHENTICATION_RESULT"
           href: ehs-authentication-result.md
         - name: "eHS_NETWORK_STATE"
@@ -4264,17 +4127,13 @@
         - name: "eHS_UPDATE_RESULT"
           href: ehs-update-result.md
 - name: "Network Module Registrar"
-# Auto-expanded node
   items: 
-  - name: "Network Module Registrar"
+  - name: "Network Module Registrar Topics"
     href: network-module-registrar2.md
   - name: "Introduction to the Network Module Registrar"
     href: introduction-to-the-network-module-registrar.md
   - name: "Network Module Registrar Definitions"
-# Auto-expanded node
     items: 
-    - name: "Network Module Registrar Definitions"
-      href: nmr-definitions.md
     - name: "Network Module"
       href: network-module.md
     - name: "Provider Module"
@@ -4284,19 +4143,15 @@
     - name: "Network Programming Interface"
       href: network-programming-interface.md
   - name: "Architecture Overview"
-# Auto-expanded node
     items: 
-    - name: "Architecture Overview"
+    - name: "Architecture overview for the Network Module Registrar"
       href: architecture-overview.md
     - name: "Network Module Attachment"
       href: network-module-attachment.md
     - name: "Network Module Detachment"
       href: network-module-detachment.md
   - name: "Client Module Operations"
-# Auto-expanded node
     items: 
-    - name: "Client Module Operations"
-      href: client-module-operations.md
     - name: "Initializing and Registering a Client Module"
       href: initializing-and-registering-a-client-module.md
     - name: "Attaching a Client Module to a Provider Module"
@@ -4308,10 +4163,7 @@
     - name: "Unloading a Client Module"
       href: unloading-a-client-module.md
   - name: "Provider Module Operations"
-# Auto-expanded node
     items: 
-    - name: "Provider Module Operations"
-      href: provider-module-operations.md
     - name: "Initializing and Registering a Provider Module"
       href: initializing-and-registering-a-provider-module.md
     - name: "Attaching a Provider Module to a Client Module"
@@ -4325,18 +4177,16 @@
   - name: "Programming Considerations"
     href: programming-considerations.md
 - name: "Winsock Kernel"
-# Auto-expanded node
   items: 
-  - name: "Winsock Kernel"
+  - name: "Winsock Kernel Topics"
     href: winsock-kernel4.md
   - name: "Roadmap for Developing Network Drivers with Winsock Kernel"
     href: roadmap-for-developing-network-drivers-with-winsock-kernel.md
   - name: "Introduction to Winsock Kernel"
     href: introduction-to-winsock-kernel.md
   - name: "Winsock Kernel Overview"
-# Auto-expanded node
     items: 
-    - name: "Winsock Kernel Overview"
+    - name: "Winsock Kernel Overview Topics"
       href: winsock-kernel-overview.md
     - name: "Winsock Kernel Architecture"
       href: winsock-kernel-architecture.md
@@ -4355,9 +4205,8 @@
     - name: "Using IRPs with Winsock Kernel Functions"
       href: using-irps-with-winsock-kernel-functions.md
   - name: "Winsock Kernel Operations"
-# Auto-expanded node
     items: 
-    - name: "Winsock Kernel Operations"
+    - name: "Winsock Kernel Operations Topics"
       href: winsock-kernel-operations.md
     - name: "Registering a Winsock Kernel Application"
       href: registering-a-winsock-kernel-application.md
@@ -4375,8 +4224,7 @@
       href: listening-for-and-accepting-incoming-connections.md
     - name: "Establishing a Connection with a Destination"
       href: establishing-a-connection-with-a-destination.md
-    - name: "Sending and receiving data over WSK sockets"
-# Auto-expanded node
+    - name: "Transferring network data over WSK sockets"
       items: 
       - name: "Sending and receiving data over WSK sockets"
         href: sending-and-receiving-data.md
@@ -4399,10 +4247,7 @@
     - name: "Resolving Host Names and IP Addresses"
       href: resolving-host-names-and-ip-addresses.md
     - name: "WSK Client Control Operations"
-# Auto-expanded node
       items: 
-      - name: "WSK Client Control Operations"
-        href: wsk-client-control-operations.md
       - name: "WSK_CACHE_SD"
         href: wsk-cache-sd.md
       - name: "WSK_RELEASE_SD"
@@ -4418,10 +4263,7 @@
       - name: "WSK_TRANSPORT_LIST_QUERY"
         href: wsk-transport-list-query.md
     - name: "WSK Socket IOCTL Operations"
-# Auto-expanded node
       items: 
-      - name: "WSK Socket IOCTL Operations"
-        href: wsk-socket-ioctl-operations.md
       - name: "SIO_WSK_QUERY_IDEAL_SEND_BACKLOG"
         href: sio-wsk-query-ideal-send-backlog.md
       - name: "SIO_WSK_QUERY_INSPECT_ID"
@@ -4437,34 +4279,24 @@
       - name: "SIO_WSK_SET_TCP_SILENT_MODE"
         href: sio-wsk-set-tcp-silent-mode.md
     - name: "WSK Socket Options"
-# Auto-expanded node
       items: 
-      - name: "WSK Socket Options"
-        href: wsk-socket-options.md
       - name: "SO_WSK_EVENT_CALLBACK"
         href: so-wsk-event-callback.md
       - name: "SO_WSK_SECURITY"
         href: so-wsk-security.md
     - name: "WSK data types"
-# Auto-expanded node
       items: 
-      - name: "WSK data types"
-        href: wsk-data-types.md
       - name: "WSK_CLIENT"
         href: wsk-client.md
   - name: "Winsock Kernel Programming Considerations"
-# Auto-expanded node
     items: 
-    - name: "Winsock Kernel Programming Considerations"
-      href: winsock-kernel-programming-considerations.md
     - name: "Porting TDI Drivers to Winsock Kernel"
       href: porting-tdi-drivers-to-winsock-kernel.md
     - name: "Sharing Transport Addresses"
       href: sharing-transport-addresses.md
     - name: "Using TDI Transports"
       href: using-tdi-transports.md
-    - name: "Using NMR for WSK Registration and Unregistration"
-# Auto-expanded node
+    - name: "Using Network Module Registrar (NMR) for WSK Registration and Unregistration"
       items: 
       - name: "Using NMR for WSK Registration and Unregistration"
         href: using-nmr-for-wsk-registration-and-unregistration.md
@@ -4475,26 +4307,21 @@
       - name: "Unregistering and Unloading the WSK Client"
         href: unregistering-and-unloading-the-wsk-client.md
 - name: "IP Helper"
-# Auto-expanded node
   items: 
-  - name: "IP Helper"
+  - name: "IP Helper Overview"
     href: ip-helper.md
   - name: "Including Header Files for IP Helper"
     href: including-header-files-for-ip-helper.md
 - name: "Windows Filtering Platform Callout Drivers"
-# Auto-expanded node
   items: 
-  - name: "Windows Filtering Platform Callout Drivers"
+  - name: "Windows Filtering Platform Callout Driver Topics"
     href: windows-filtering-platform-callout-drivers2.md
   - name: "Roadmap for Developing WFP Callout Drivers"
     href: roadmap-for-developing-wfp-callout-drivers.md
   - name: "Introduction to Windows Filtering Platform Callout Drivers"
     href: introduction-to-windows-filtering-platform-callout-drivers.md
   - name: "New Information for WFP"
-# Auto-expanded node
     items: 
-    - name: "New Information for WFP"
-      href: new-information-for-wfp.md
     - name: "WFP Changes for Windows 8"
       href: wfp-changes-for-windows-8.md
     - name: "WFP Changes for Windows 7"
@@ -4502,10 +4329,7 @@
     - name: "WFP Changes for Windows Vista SP1 and Windows Server 2008"
       href: wfp-changes-for-windows-vista-sp1-and-windows-server-2008.md
   - name: "Windows Filtering Platform Callout Drivers Definitions"
-# Auto-expanded node
     items: 
-    - name: "Windows Filtering Platform Callout Drivers Definitions"
-      href: wfp-callout-drivers-definitions.md
     - name: "Callout"
       href: callout.md
     - name: "Callout Driver"
@@ -4521,12 +4345,10 @@
   - name: "Windows Filtering Platform Architecture Overview"
     href: windows-filtering-platform-architecture-overview.md
   - name: "Callout Driver Operations"
-# Auto-expanded node
     items: 
-    - name: "Callout Driver Operations"
+    - name: "Callout Driver Operation Topics"
       href: callout-driver-operations.md
-    - name: "Initializing a Callout Driver"
-# Auto-expanded node
+    - name: "Callout Driver Initialization"
       items: 
       - name: "Initializing a Callout Driver"
         href: initializing-a-callout-driver.md
@@ -4538,8 +4360,7 @@
         href: registering-callouts-with-the-filter-engine.md
     - name: "Processing Notify Callouts"
       href: processing-notify-callouts.md
-    - name: "Processing Classify Callouts"
-# Auto-expanded node
+    - name: "Classify Callout Processing"
       items: 
       - name: "Processing Classify Callouts"
         href: processing-classify-callouts.md
@@ -4548,10 +4369,7 @@
       - name: "Using a Callout for Deep Inspection of Stream Data"
         href: using-a-callout-for-deep-inspection-of-stream-data.md
       - name: "Inspecting Packet and Stream Data"
-# Auto-expanded node
         items: 
-        - name: "Inspecting Packet and Stream Data"
-          href: inspecting-packet-and-stream-data.md
         - name: "Packet Inspection Points"
           href: packet-inspection-points.md
         - name: "WFP Layer Requirements and Restrictions"
@@ -4590,8 +4408,7 @@
       href: using-virtual-switch-filtering.md
     - name: "Unloading a Callout Driver"
       href: unloading-a-callout-driver.md
-  - name: "Callout Driver Installation"
-# Auto-expanded node
+  - name: "Installing Callout Drivers"
     items: 
     - name: "Callout Driver Installation"
       href: callout-driver-installation.md
@@ -4607,8 +4424,7 @@
     href: porting-packet-processing-drivers-and-apps-to-wfp.md
   - name: "Developing IPsec-Compatible Callout Drivers"
     href: developing-ipsec-compatible-callout-drivers.md
-  - name: "Calling Other Windows Filtering Platform Functions"
-# Auto-expanded node
+  - name: "Windows Filtering Platform Management Functions"
     items: 
     - name: "Calling Other Windows Filtering Platform Functions"
       href: calling-other-windows-filtering-platform-functions.md
@@ -4616,27 +4432,20 @@
       href: opening-a-session-to-the-filter-engine.md
     - name: "Closing a Session to the Filter Engine"
       href: closing-a-session-to-the-filter-engine.md
-  - name: "Windows Filtering Platform constants"
-# Auto-expanded node
+  - name: "Windows Filtering Platform identifiers"
     items: 
     - name: "Windows Filtering Platform constants"
       href: windows-filtering-platform-constants.md
     - name: "Built-in callout identifiers"
       href: built-in-callout-identifiers.md
     - name: "Filtering layer identifiers"
-# Auto-expanded node
       items: 
-      - name: "Filtering layer identifiers"
-        href: filtering-layer-identifiers.md
       - name: "Management filtering layer identifiers"
         href: management-filtering-layer-identifiers.md
       - name: "Run-time filtering layer identifiers"
         href: run-time-filtering-layer-identifiers.md
     - name: "Filtering conditions"
-# Auto-expanded node
       items: 
-      - name: "Filtering conditions"
-        href: filtering-conditions.md
       - name: "Filtering condition identifiers"
         href: filtering-condition-identifiers.md
       - name: "Filtering condition flags"
@@ -4648,10 +4457,7 @@
       - name: "Filtering conditions available at each filtering layer"
         href: filtering-conditions-available-at-each-filtering-layer.md
     - name: "Metadata fields"
-# Auto-expanded node
       items: 
-      - name: "Metadata fields"
-        href: metadata-fields.md
       - name: "Metadata field identifiers"
         href: metadata-field-identifiers.md
       - name: "Metadata field L2 identifiers"
@@ -4663,10 +4469,7 @@
     - name: "Data offset positions"
       href: data-offset-positions.md
     - name: "Discard reason identifiers"
-# Auto-expanded node
       items: 
-      - name: "Discard reason identifiers"
-        href: discard-reason-identifiers.md
       - name: "General discard reasons"
         href: general-discard-reasons.md
       - name: "Network layer discard reasons"
@@ -4674,10 +4477,7 @@
       - name: "Transport layer discard reasons"
         href: transport-layer-discard-reasons.md
   - name: "Other Windows Filtering Platform functions"
-# Auto-expanded node
     items: 
-    - name: "Other Windows Filtering Platform functions"
-      href: other-windows-filtering-platform-functions.md
     - name: "WFP user mode management functions"
       href: wfp-user-mode-management-functions.md
     - name: "Internet Key Exchange functions"
@@ -4685,14 +4485,12 @@
     - name: "IPsec functions"
       href: ipsec-functions.md
 - name: "System Area Networks"
-# Auto-expanded node
   items: 
-  - name: "System Area Networks"
+  - name: "System Area Networks Overview"
     href: system-area-networks.md
   - name: "Supporting System Area Networks"
-# Auto-expanded node
     items: 
-    - name: "Supporting System Area Networks"
+    - name: "Supporting System Area Networks Topics"
       href: supporting-system-area-networks.md
     - name: "Introduction to System Area Networks"
       href: introduction-to-system-area-networks.md
@@ -4703,19 +4501,16 @@
     - name: "Virtual Interface Architecture and Support for SAN"
       href: virtual-interface-architecture-and-support-for-san.md
   - name: "Windows Sockets Direct"
-# Auto-expanded node
     items: 
-    - name: "Windows Sockets Direct"
+    - name: "Windows Sockets Direct Overview"
       href: windows-sockets-direct.md
     - name: "Windows Sockets Direct Architecture"
       href: windows-sockets-direct-architecture.md
     - name: "Windows Sockets Direct Component Operation"
-# Auto-expanded node
       items: 
-      - name: "Windows Sockets Direct Component Operation"
+      - name: "Windows Sockets Direct Component Operation Topics"
         href: windows-sockets-direct-component-operation.md
-      - name: "Installing Windows Sockets Direct Components"
-# Auto-expanded node
+      - name: "Windows Sockets Direct Component Installation"
         items: 
         - name: "Installing Windows Sockets Direct Components"
           href: installing-windows-sockets-direct-components.md
@@ -4723,8 +4518,7 @@
           href: installing-the-windows-sockets-switch.md
         - name: "Installing a SAN Service Provider"
           href: installing-a-san-service-provider.md
-      - name: "Initializing the Use of a SAN"
-# Auto-expanded node
+      - name: "Preparing a SAN for use"
         items: 
         - name: "Initializing the Use of a SAN"
           href: initializing-the-use-of-a-san.md
@@ -4732,8 +4526,7 @@
           href: initializing-a-san-service-provider.md
         - name: "Receiving and Translating NIC Addresses"
           href: receiving-and-translating-nic-addresses.md
-      - name: "Setting Up a SAN Connection"
-# Auto-expanded node
+      - name: "SAN Connection Setup"
         items: 
         - name: "Setting Up a SAN Connection"
           href: setting-up-a-san-connection.md
@@ -4749,8 +4542,7 @@
           href: registering-memory-for-operations-on-a-san.md
         - name: "Caching Registered Memory"
           href: caching-registered-memory.md
-      - name: "Transferring Data on a SAN"
-# Auto-expanded node
+      - name: "Transferring Network Data on a SAN"
         items: 
         - name: "Transferring Data on a SAN"
           href: transferring-data-on-a-san.md
@@ -4762,8 +4554,7 @@
           href: completing-data-transfer-requests.md
       - name: "Synchronizing Operations on a SAN"
         href: synchronizing-operations-on-a-san.md
-      - name: "Shutting Down the Use of a SAN"
-# Auto-expanded node
+      - name: "Shutting Down SAN use"
         items: 
         - name: "Shutting Down the Use of a SAN"
           href: shutting-down-the-use-of-a-san.md
@@ -4781,8 +4572,7 @@
         href: handling-socket-options-and-control-codes-for-a-san.md
       - name: "Handling Microsoft Extensions to Windows Sockets"
         href: handling-microsoft-extensions-to-windows-sockets.md
-    - name: "Creating a Service Provider for a SAN"
-# Auto-expanded node
+    - name: "SAN Service Provider Creation"
       items: 
       - name: "Creating a Service Provider for a SAN"
         href: creating-a-service-provider-for-a-san.md
@@ -4792,8 +4582,7 @@
         href: windows-sockets-spi-functions-not-required-for-sans.md
       - name: "Windows Sockets SPI Extensions for SANs"
         href: windows-sockets-spi-extensions-for-sans.md
-    - name: "Creating a Proxy Driver for a SAN Service Provider"
-# Auto-expanded node
+    - name: "SAN Service Provider Proxy Driver Creation"
       items: 
       - name: "Creating a Proxy Driver for a SAN Service Provider"
         href: creating-a-proxy-driver-for-a-san-service-provider.md
@@ -4810,12 +4599,10 @@
       - name: "Implementing IOCTLs for a SAN Service Provider"
         href: implementing-ioctls-for-a-san-service-provider.md
 - name: "Remote NDIS (RNDIS)"
-# Auto-expanded node
   items: 
-  - name: "Remote NDIS (RNDIS)"
+  - name: "Introduction to Remote NDIS (RNDIS)"
     href: remote-ndis--rndis-2.md
-  - name: "Overview of Remote NDIS (RNDIS)"
-# Auto-expanded node
+  - name: "RNDIS Overview"
     items: 
     - name: "Overview of Remote NDIS (RNDIS)"
       href: overview-of-remote-ndis--rndis-.md
@@ -4833,16 +4620,12 @@
       href: remote-ndis-inf-template.md
     - name: "Types of Remote NDIS Devices"
       href: types-of-remote-ndis-devices.md
-  - name: "Remote NDIS Communication"
-# Auto-expanded node
+  - name: "RNDIS Communication"
     items: 
     - name: "Remote NDIS Communication"
       href: remote-ndis-communication.md
-    - name: "Remote NDIS Control Messages"
-# Auto-expanded node
+    - name: "RNDIS Control Messages"
       items: 
-      - name: "Remote NDIS Control Messages"
-        href: remote-ndis-control-messages.md
       - name: "REMOTE_NDIS_INITIALIZE_MSG"
         href: remote-ndis-initialize-msg.md
       - name: "REMOTE_NDIS_INITIALIZE_CMPLT"
@@ -4867,8 +4650,7 @@
         href: remote-ndis-keepalive-msg.md
       - name: "REMOTE_NDIS_KEEPALIVE_CMPLT"
         href: remote-ndis-keepalive-cmplt.md
-    - name: "Remote NDIS Data Message"
-# Auto-expanded node
+    - name: "RNDIS Data Messages"
       items: 
       - name: "Remote NDIS Data Message"
         href: remote-ndis-data-message.md
@@ -4880,8 +4662,7 @@
       href: setting-device-specific-parameters.md
     - name: "Example Connectionless (802.3) Initialization Sequence"
       href: example-connectionless--802-3--initialization-sequence.md
-    - name: "Remote NDIS OIDs"
-# Auto-expanded node
+    - name: "RNDIS OIDs"
       items: 
       - name: "Remote NDIS OIDs"
         href: remote-ndis-oids.md
@@ -4901,15 +4682,13 @@
       href: remote-ndis-version.md
     - name: "Status Values"
       href: status-values.md
-  - name: "Remote NDIS To USB Mapping"
-# Auto-expanded node
+  - name: "RNDIS To USB Mapping"
     items: 
     - name: "Remote NDIS To USB Mapping"
       href: remote-ndis-to-usb-mapping.md
     - name: "Overview"
       href: overview.md
-    - name: "USB-Level Initialization"
-# Auto-expanded node
+    - name: "RNDIS USB-Level Initialization"
       items: 
       - name: "USB-Level Initialization"
         href: usb-level-initialization.md
@@ -4925,8 +4704,7 @@
       href: usb-level-termination.md
     - name: "Control Channel Characteristics "
       href: control-channel-characteristics.md
-    - name: "Data Channel Characteristics"
-# Auto-expanded node
+    - name: "RNDIS Data Channel Characteristics"
       items: 
       - name: "Data Channel Characteristics"
         href: data-channel-characteristics.md
@@ -4938,8 +4716,7 @@
       href: power-management.md
     - name: "Timer Constants"
       href: timer-constants.md
-    - name: "USB 802.3 Device Sample"
-# Auto-expanded node
+    - name: "USB 802.3 Device Sample for RNDIS"
       items: 
       - name: "USB 802.3 Device Sample"
         href: usb-802-3-device-sample.md

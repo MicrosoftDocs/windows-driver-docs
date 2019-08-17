@@ -1,12 +1,12 @@
 ---
-title: Single Root I/O Virtualization (SR-IOV)
-description: Single Root I/O Virtualization (SR-IOV)
+title: Introduction to Single Root I/O Virtualization (SR-IOV)
+description: Introduction to Single Root I/O Virtualization (SR-IOV)
 ms.assetid: E64DD4F0-D5F8-4FFF-931B-C04C5C42D000
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Single Root I/O Virtualization (SR-IOV)
+# Introduction to Single Root I/O Virtualization (SR-IOV)
 
 
 This section describes the NDIS single root I/O virtualization (SR-IOV) interface. Starting with NDIS 6.30, the SR-IOV interface supports Microsoft Hyper-V performance improvements for virtualized networks on Windows Server 2012 and later versions of Windows Server.
