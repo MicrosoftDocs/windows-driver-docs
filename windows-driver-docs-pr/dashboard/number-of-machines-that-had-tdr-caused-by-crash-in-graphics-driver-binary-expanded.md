@@ -1,5 +1,5 @@
 ---
-title: Percent of machines that had a TDR caused by a crash in the graphics driver binary
+title: Number of machines that had a TDR caused by a crash in the graphics driver binary
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines that experienced a TDR caused by a crash in the graphics driver binary
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,24 +8,22 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Percent of machines that had a TDR caused by a crash in the graphics driver binary
+# Number of machines that had a TDR caused by a crash in the graphics driver binary
 
 ## Description
 
 During a user’s session, a crash in the graphics driver binary can cause the machine’s screen to hang or appear completely frozen. A Timeout Detection and Recovery (TDR) event attempts to detect these hangs and dynamically recover to unfreeze the display. Users that have encountered a TDR will be unable to use their computer until the TDR is successful, which causes the screen to flicker. This measure is evaluating what percent of machines with the driver encounter a TDR.
 
-There are two versions of this measure, one with a standard audience and the other with an expanded audience. 
-
 ## Measure attributes
 
 |Attribute|Value|
 |----|----|
-|**Audience**|Standard, Expanded|
+|**Audience**|Expanded|
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of machines|
-|**Minimum population**|5,000|
+|**Minimum population**|10,000|
 |**Passing criteria**|<= 130/10,000 machines experience a TDR|
-|**Measure ID**|7802921, 20574707|
+|**Measure ID**|20574707|
 
 ## Calculation
 

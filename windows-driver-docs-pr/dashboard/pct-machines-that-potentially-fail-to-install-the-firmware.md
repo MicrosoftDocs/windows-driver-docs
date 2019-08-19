@@ -20,7 +20,7 @@ After downloading new firmware, a machine gracefully reboots to install the firm
 |----|----|
 |**Audience**|Standard|
 |**Time period**|14 day sliding window|
-|**Measurement criteria**|Percent of machines|
+|**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|100 machines|
 |**Passing criteria**|<=10% of machines successfully install and apply firmware after reboot|
 |**Measure ID**|16745886|

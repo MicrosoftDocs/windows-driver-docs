@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Graphics drivers' health: User mode reliability for crashes in Microsoft Photos app, normalized by usage, less than or equal to the baseline goal
+# User mode reliability for crashes in Microsoft Photos app, normalized by usage, is less than or equal to the baseline goal
 
 ## Description
 

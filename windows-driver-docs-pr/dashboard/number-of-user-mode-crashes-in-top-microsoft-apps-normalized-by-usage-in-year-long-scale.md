@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Number of user mode crashes in top Microsoft apps
+# Number of user mode crashes in top Microsoft apps, normalized by usage, is less than or equal to the baseline goal
 
 ## Description
 

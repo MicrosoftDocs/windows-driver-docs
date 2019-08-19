@@ -20,7 +20,7 @@ This measure monitors two services – *Windows Audio Service (AudioSrv.dll)* an
 |----|----|
 |**Audience**|Standard|
 |**Time period**|7 days|
-|**Measurement criteria**|Percent of machines|
+|**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|50 machines|
 |**Passing criteria**|<=1.3 % of machines with at least 1 hang in either audio service|
 |**Measure ID**|11458540|

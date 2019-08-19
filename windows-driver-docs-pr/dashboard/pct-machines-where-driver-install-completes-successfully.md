@@ -20,7 +20,7 @@ When a driver fails to install correctly, the targeted component can lose functi
 |----|----|
 |**Audience**|Expanded|
 |**Time period**|30 day sliding window|
-|**Measurement criteria**|Percentage of Machines|
+|**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|100 machines|
 |**Passing criteria**|>= 95% of machines install the driver successfully|
 |**Measure ID**|10042840|

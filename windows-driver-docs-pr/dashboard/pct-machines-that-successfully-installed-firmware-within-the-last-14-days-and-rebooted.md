@@ -20,7 +20,7 @@ During the firmware installation process, the package must be delivered, and the
 |----|----|
 |**Audience**|Standard|
 |**Time period**|14 day sliding window|
-|**Measurement criteria**|Percent of machines|
+|**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|100 machines|
 |**Passing criteria**|>= 90% of machines successfully install firmware after a reboot|
 |**Measure ID**|15421173|

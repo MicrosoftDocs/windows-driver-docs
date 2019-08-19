@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# User mode reliability for crashes in creative applications
+# User mode reliability for crashes in creative applications, normalized by usage, is less than or equal to the baseline goal
 
 ## Description
 

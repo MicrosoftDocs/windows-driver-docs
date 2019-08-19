@@ -20,7 +20,7 @@ During the firmware installation process, a machine reboots to apply the firmwar
 |----|----|
 |**Audience**|Standard|
 |**Time period**|7 day sliding window|
-|**Measurement criteria**|Percent of machines|
+|**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|100 machines|
 |**Passing criteria**|<= 20% of machines encounter a firmware related ABS|
 |**Measure ID**|16745838|

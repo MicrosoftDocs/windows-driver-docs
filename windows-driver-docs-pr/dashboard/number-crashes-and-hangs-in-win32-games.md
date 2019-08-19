@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Number of crashes and hangs in Win32 games
+# Number of crashes and hangs in Win32 games, normalized by usage, is less than or equal to the baseline goal
 
 ## Description
 

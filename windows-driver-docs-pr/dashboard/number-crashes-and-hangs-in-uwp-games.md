@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Number of crashes and hangs in UWP games, normalized by usage, in a year-long scale
+# Number of crashes and hangs in UWP games, normalized by usage, is less than or equal to the baseline goal
 
 ## Description
 

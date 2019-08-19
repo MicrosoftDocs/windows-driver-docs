@@ -20,7 +20,7 @@ After a successful install, machines can experience post-install PnP errors that
 |----|----|
 |**Audience**|Expanded|
 |**Time period**|30 day sliding window|
-|**Measurement criteria**|Percentage of Machines|
+|**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|100 machines|
 |**Passing criteria**|<=5% machines encounter a post-install PNP error|
 |**Measure ID**|10042784|

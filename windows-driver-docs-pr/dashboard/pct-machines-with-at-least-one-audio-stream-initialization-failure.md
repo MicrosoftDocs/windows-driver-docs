@@ -20,7 +20,7 @@ If a device is unable to initialize an audio stream, the user cannot access the 
 |----|----|
 |**Audience**|Standard|
 |**Time period**|7 day sliding window|
-|**Measurement criteria**|Percent of Machines|
+|**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|50 machines|
 |**Passing criteria**|<=8 % of machines with at least 1 audio steam initialization failure|
 |**Measure ID**|12111510|

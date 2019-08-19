@@ -20,7 +20,7 @@ This measure determines an *initialization success rate* for each machine and ca
 |----|----|
 |**Audience**|Standard|
 |**Time period**|7 days|
-|**Measurement criteria**|Percent of machines|
+|**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|50 machines|
 |**Passing criteria**|<=1 % of machines an Initialization Success Rate below 90% |
 |**Measure ID**|11458866|

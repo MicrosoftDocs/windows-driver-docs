@@ -83,72 +83,58 @@
             href: camera-photo-failure-rate.md
           - name: "Camera video and stream failure rate"
             href: camera-video-and-stream-failure-rate.md
-        # - name: "Firmware"
-        #   items:
-        #   - name: "Firmware measures"
-        #     href: firmware-measures.md 
-        #   - name: "Percent of machines that successfully installed firmware within the last 14 days and rebooted"
-        #     href: pct-machines-that-successfully-installed-firmware-within-the-last-14-days-and-rebooted.md
-        #   - name: "Percent of machines hitting an abnormal shutdown with a reported firmware error"
-        #     href: pct-machines-hitting-an-abnormal-shutdown-with-a-reported-firmware-error.md
-        #   - name: "Percent of abnormal shutdowns not related to a bug-check"
-        #     href: pct-abnormal-shutdowns-not-related-to-a-bug-check.md
-        #   - name: "Percent of machines that potentially fail to install the firmware"
-        #     href: pct-machines-that-potentially-fail-to-install-the-firmware.md
         - name: "Graphics"
           items:
           - name: "Graphics measures"
             href: graphics-measures.md
           - name: "Standard and Expanded audience measures"
             items:
-            - name: "Percent of machines with a blue screen caused by a crash in the graphics driver binary"
-              href: pct-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-standard.md
-            - name: "Percent of machines that had a blue screen caused by a crash in the graphics kernel"
-              href: pct-machines-that-had-blue-screen-caused-by-crash-in-graphics-kernel.md
-            - name: "Percent of machines that had a TDR caused by a crash in the graphics driver binary"
-              href: pct-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary.md
-            - name: "Percent of machines that had an LKE caused by a crash in the graphics driver binary"
-              href: pct-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-expanded.md
-            # - name: "Percent of machines with video HWDRM failures"
-            #   href: pct-machines-with-video-hwdrm-failures.md
+            - name: "Number of machines with a blue screen caused by a crash in the graphics driver binary"
+              href: number-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-expanded.md
+            - name: "Number of machines that had a blue screen caused by a crash in the graphics kernel"
+              href: number-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-kernel.md
+            - name: "Number of machines that had a TDR caused by a crash in the graphics driver binary"
+              href: number-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-expanded.md
+            - name: "Number of machines that had an LKE caused by a crash in the graphics driver binary"
+              href: number-of-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-expanded.md
             - name: "YouTube video playback failure rate in Microsoft Edge and Internet Explorer"
               href: youtube-video-playback-failure-rate-in-microsoft-edge-and-internet-explorer.md
-            - name: "User mode reliability for crashes in Microsoft Photos app"
+            - name: "Number ser mode crashes in Microsoft Photos app"
               href: user-mode-reliability-for-crashes-in-microsoft-photos-app-expanded.md
-            - name: "User mode reliability for crashes in creative applications"
+            - name: "Number of user mode for crashes in creative applications"
               href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps-expanded.md
             - name: "Number of user mode crashes in top Microsoft apps"
               href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale-expanded.md
-            - name: "User mode crashes in Microsoft Edge"
+            - name: "Number of user mode crashes in Microsoft Edge"
               href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale-expanded.md
-            - name: "User mode crashes in Windows Components"
+            - name: "Number of user mode crashes in Windows Components"
               href: user-mode-reliability-for-crashes-in-windows-components.md
           - name: "Ecosystem audience measures"
             items:
-            - name: "Percent of machines with a blue screen caused by a crash in graphics driver binary" 
-              href: pct-machines-with-bluescreen-caused-by-crash-in-graphics-driver-binary-ecosystem.md
-            - name: "Percent of machines that had an LKE caused by a crash in the graphics driver binary"
-              href: pct-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary.md
-            - name: "User mode crashes in Microsoft Edge"
+            - name: "Number of machines with a blue screen caused by a crash in graphics driver binary" 
+              href: number-of-machines-with-bluescreen-caused-by-crash-in-graphics-driver-binary-ecosystem.md
+            - name: "Number of machines that had an LKE caused by a crash in the graphics driver binary"
+              href: number-of-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-ecosystem.md
+            - name: "Numbe of user mode crashes in Microsoft Edge"
               href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
             - name: "Number of user mode crashes in top Microsoft apps"
               href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale.md
-            - name: "User mode reliability for crashes in creative applications"
+            - name: "Number of user mode crashes in creative applications"
               href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps.md
-            - name: "User mode reliability for crashes in Microsoft Photos app"
+            - name: "Number of user mode crashes in Microsoft Photos app"
               href: user-mode-reliability-for-crashes-in-microsoft-photos-app.md
-            - name: "User mode crashes in Windows Components"
+            - name: "Number of user mode crashes in Windows Components"
               href: user-mode-reliability-for-crashes-in-windows-components-ecosystem.md
             - name: "Number of crashes and hangs in UWP games"
               href: number-crashes-and-hangs-in-uwp-games.md
             - name: "Number of crashes and hangs in Win32 games"
               href: number-crashes-and-hangs-in-win32-games.md
-            - name: "Percent of HWDRM playback failures on Netflix"
-              href: pct-hwdrm-playback-failures-on-netflix.md
             - name: "Percent of SWDRM playback failures on Netflix"
               href: pct-swdrm-playback-failures-on-netflix.md
-            - name: "Percent of devices with display issues when resume from low power state"
+            - name: "Percent of machines with display issues when resume from low power state"
               href: graphics-display-health-percent-devices-with-display-issues-resume-from-low-power.md
+            - name: "Ecosystem Netflix HWDRM Quality Comparison"
+              href: ecosystem-netflix-hwdrm-quality-comparison.md
         - name: "Wi-Fi"
           items:
           - name: "Wi-Fi Measures"

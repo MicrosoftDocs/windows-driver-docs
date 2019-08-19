@@ -1,5 +1,5 @@
 ---
-title: Percent of machines that had a blue screen caused by a crash in the graphics kernel
+title: Number of machines that had a blue screen caused by a crash in the graphics kernel
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines that experienced a blue screen caused crash in the graphics kernel
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Percent of machines that had a blue screen caused by a crash in the graphics kernel
+# Number of machines that had a blue screen caused by a crash in the graphics kernel
 
 ## Description
 
@@ -21,7 +21,7 @@ During a user’s session, a crash in the display kernel causes a blue screen, w
 |**Audience**|Standard|
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of machines|
-|**Minimum population**|5,000|
+|**Minimum population**|5,000 machines|
 |**Passing criteria**|<=10/10,000 machines have a crash in the display kernel|
 |**Measure ID**|7533022|
 

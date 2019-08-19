@@ -1,5 +1,5 @@
 ---
-title:  Percent of machines that had an LKE caused by a crash in the graphics driver binary
+title:  Number of machines that had an LKE caused by a crash in the graphics driver binary
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines that experienced an LKE due to a crash in the graphics driver binary 
 ms.topic: article
 ms.date: 08/08/2019
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Percent of machines that had an LKE caused by a crash in the graphics driver binary
+# Number of machines that had an LKE caused by a crash in the graphics driver binary
 
 ## Description
 
@@ -21,7 +21,7 @@ During a user’s session, a crash in the driver binary causes a live kernel eve
 |**Audience**|Expanded|
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of machines|
-|**Minimum population**|10,000|
+|**Minimum population**|10,000 machines|
 |**Passing criteria**|<=130/10,000 machines experience an LKE event|
 |**Measure ID**|20574653|
 

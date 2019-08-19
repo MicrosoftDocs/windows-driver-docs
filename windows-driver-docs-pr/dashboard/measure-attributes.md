@@ -29,6 +29,8 @@ Measures with expanded audiences collect telemetry from machines that align with
 
 Measures with ecosystem audiences expand data collection beyond a driver’s targeting constraints to reduce sampling noise and increase the measures’ statistical significance. These measures collect telemetry from any machine that downloaded the driver from any source, including untargeted machines that downloaded an identical version of the driver. 
 
+A driver is considered identical to another driver when they share the same Driver INF Version, Driver INF Date, and Architecture. 
+
 ## Time period
 
 When aggregating telemetry, most measures collect data from a 7-day sliding window; when a driver is in flight for less than 7 days, the sliding window is scoped down to duration of the flight. By scoping data to 7 days, Microsoft can account for differences in a machine’s use between weekdays and the weekend.

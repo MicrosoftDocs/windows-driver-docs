@@ -1,5 +1,5 @@
 ---
-title: User mode crashes in Microsoft Edge
+title: Number of user mode crashes in Microsoft Edge
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in Microsoft Edge, caused by the graphics drivers, over total runtime in years 
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# User mode crashes in Microsoft Edge
+# User mode reliability for crashes in Microsoft Edge, normalized by usage, is less than or equal to the baseline goal
 
 ## Description
 

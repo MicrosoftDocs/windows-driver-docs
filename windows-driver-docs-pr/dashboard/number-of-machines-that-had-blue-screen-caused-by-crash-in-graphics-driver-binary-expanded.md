@@ -1,5 +1,5 @@
 ---
-title: Percent of machines that had a blue screen caused by a crash in the graphics driver binary
+title: Number of machines that had a blue screen caused by a crash in the graphics driver binary
 description: The measure aggregates telemetry from a 14-day sliding window into a percentage of machines that haven’t experienced a kernel mode crash 
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,24 +8,22 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Percent of machines that had a blue screen caused by a crash in the graphics driver binary
+# Number of machines experiencing a blue screen caused by a crash in the graphics driver binary
 
 ## Description
 
-During a user’s session, a crash in the graphics driver binary causes a blue screen, which restarts the machines and can interrupt a user’s workflow. This measure is evaluating how many machines with the driver are encountering blue screens due to a crash in the graphics driver binary.
-
-There are two versions of this measure, one with a standard audience and the other with an expanded audience. 
+During a user’s session, a crash in the graphics driver binary causes a blue screen, which restarts the machines and can interrupt a user’s workflow. This measure is evaluating how many machines with the driver are encountering blue screens due to a crash in the graphics driver binary. 
 
 ## Measure attributes
 
 |Attribute|Value|
 |----|----|
-|**Audience**|Standard, Expanded|
+|**Audience**|Expanded|
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of machines|
-|**Minimum population**|<= 30 / 10,000 machines experience a blue screen|
-|**Passing criteria**|5,000|
-|**Measure ID**|7802933, 20574588|
+|**Minimum population**|10,000 machines|
+|**Passing criteria**|<= 30 / 10,000 machines experience a blue screen|
+|**Measure ID**|20574588|
 
 ## Calculation
 

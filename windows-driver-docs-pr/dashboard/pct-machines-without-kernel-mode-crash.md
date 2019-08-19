@@ -20,7 +20,7 @@ A Kernel Mode Crash (KMC) is caused by a kernel error which halts the Operating 
 |----|----|
 |**Audience**|Standard|
 |**Time period**|14 day sliding window|
-|**Measurement criteria**|Percent of Machines|
+|**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|100 machines|
 |**Passing criteria**|>= 96% machines did not encounter a kernel mode crash|
 |**Measure ID**|19888712|
