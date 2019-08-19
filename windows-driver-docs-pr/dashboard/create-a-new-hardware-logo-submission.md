@@ -20,7 +20,7 @@ To prepare your Windows Server 2008 (and below) hardware for certification, you 
 
 3.  Browse to the **.cpk** file (WLK test results) and click **Load**.
 
-4.  If the device isn't inbox, enter the **Driver Package**, **Driver Locales**, and **Symbols (optional)**.
+4.  If the device isn't inbox, enter the **Driver Package**, **Driver Locales**, and **Symbols (optional)**. **Note**: The relative path plus filenames for your driver package must be less than 160 characters. Submissions will fail to process if this is exceeded.
 
 5.  Close the **Add DTM Results** dialog box.
 
