@@ -1,35 +1,51 @@
 ---
-title: Data Set Management Overview
+title: Data Set Management (DSM) Overview
 description: Management actions can be performed on a device's data-set attributes as data set management (DSM) actions.:"?ASQ
 ms.assetid: cc64c7ad-7d1c-45c7-b236-a43e57086f8d
 keywords: Storage Data Set Management Actions, Data Set Management Actions, DSM Actions
 ms.localizationpriority: medium
-ms.date: 08/15/2019
+ms.date: 08/20/2019
 ---
 
-# Data Set Management Overview
+# Data Set Management (DSM) Overview
 
-Management actions can be performed on a device's data-set attributes as data set management (DSM) actions. DSM actions are defined by Microsoft. This functionality is available starting with Windows 7.
+Starting with Windows 7, drivers can perform management actions on a device's data set. DSM actions are defined by Microsoft.
 
-Specifically, a DEVICE_DSM_ACTION constant, defined in *ntddstor.h*, is used to specify the action to perform along with any action-specific flags. See [DEVICE_DSM_ACTION Descriptions](device-dsm-action-descriptions.md) for descriptions of all DEVICE_DSM_ACTION constants.
-
-A DEVICE_DSM_ACTION constant is passed in the **Action** member of the [DEVICE_DSM_INPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure contained in the system buffer of an [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_manage_data_set_attributes) request. If the action requires additional parameters, a parameter block will immediately follow the DEVICE_DSM_INPUT structure. Data set ranges, if any, will immediately follow the parameter block. The system buffer structure is shown in the following diagram.
+A [DEVICE_DSM_ACTION](device-dsm-action-descriptions.md) constant specifies the action. This constant is passed in the **Action** member of the [DEVICE_DSM_INPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure contained in the system buffer of an [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_manage_data_set_attributes) request. If the action requires additional parameters, a parameter block will immediately follow the DEVICE_DSM_INPUT structure, and **ParameterBlockOffset** will specify the offset from the start of the DEVICE_DSM_INPUT structure at which the parameter block starts. Data set ranges, if any, will immediately follow the parameter block, and **DataSetRangesOffset** will specify the offset from the start of the DEVICE_DSM_INPUT structure at which the range(s) starts. The system buffer structure is shown in the following diagram.
 
 ![DSM IOCTL Input Buffer](images/dsm_ioctl_inputbuffer.jpg)
 
-Currently, the only defined action-specific flag is **DeviceDsmActionFlag_NonDestructive**. If this flag is bitwise **OR**'d with a DEVICE_DSM_ACTION constant, the specified action is nondestructive (no data will be altered). When **DeviceDsmActionFlag_NonDestructive** is set, the driver can safely forward the [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_manage_data_set_attributes) request to the next lower driver in the stack even if the driver does not handle the specified action.
+If the management action will return output, a pointer to a [DEVICE_DSM_OUTPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes_output) structure is passed in the IOCTL's *OutputBuffer*. If the action will return additional action-specific output, an output block will immediately follow the DEVICE_DSM_OUTPUT structure, and **OutputBlockOffset** will specify the offset from the start of the DEVICE_DSM_OUTPUT structure at which the parameter block starts. The output buffer structure is shown in the following diagram.
 
-> [!NOTE]
-> Before it forwards the [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_manage_data_set_attributes) request, the driver still performs the normal processing of the block of data set ranges that are specified in the [DEVICE_DSM_INPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure. This block is located at **DataSetRangesOffset** and consists of one or more contiguous entries formatted as [DEVICE_DATA_SET_RANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structures. The length, in bytes, of the data set ranges is set in the **DataSetRangesLength** member of DEVICE_DSM_INPUT.
+![DSM IOCTL Output Buffer](images/dsm_ioctl_outputbuffer.jpg)
 
-The process flow of a DSM action is shown in the following diagram, where *Sender* is the action requestor and *Handler* processes the requested action (there can be more than one *Handler* in the stack):
+The process flow of a DSM is described below, where *Sender* is the action requestor and *Handler* processes the requested action. Note that there can be more than one *Handler* in the stack.
 
 ![DSM Action Flow](images/dsm_action_flow.jpg)
 
-1) *Sender* allocates a [DEVICE_DSM_INPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure, initializes it with the [DEVICE_DSM_ACTION](device-dsm-action-definitions/) to be performed, and provides any additional action-specific information as needed in the parameter block and ranges block.
-2) *Sender* sends an IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES request, passing the initialized input data in the IOCTL's *InputBuffer*.
-3) *Handler* validates the input by calling [**DeviceDsmValidateInput**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/nf-ntddstor-devicedsmvalidateinput).
-4) If the input is valid, *Handler* unpacks the input and handles the DSM action.
-5) If the action requires output, *Handler* creates output and returns it.
-6) *Sender* validates the output by calling [**DeviceDsmValidateOutput**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/nf-ntddstor-devicedsmvalidateoutput).
-7) If the output is valid, *Sender* unpacks the output.
+1) *Sender* initializes the DSM and sends it to the first *Handler* in the stack by doing the following:
+
+   - Call [**DeviceDsmGetInputLength**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/nf-ntddstor-devicedsmgetinputlength) to determine the size of the entire input buffer, and then allocate memory for this buffer.
+   - Allocate and initialize a [DEVICE_DSM_DEFINITION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_dsm_definition) structure with the definition associated with the action.
+   - Call [**DeviceDsmInitializeInput**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddstor/nf-ntddstor-devicedsminitializeinput) to initialize the [DSM_DEVICE_INPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes) structure and, if the action has parameters, the parameter block.
+   - If the action has ranges, call [**DeviceDsmAddDataSetRange**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddstor/nf-ntddstor-devicedsmadddatasetrange) for each range to add [DEVICE_DSM_RANGE](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structure(s) to the input buffer.
+   - If the DSM has output, call [**DeviceDsmGetOutputLength**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddstor/nf-ntddstor-devicedsmgetoutputlength) to determine the size of the entire output buffer, and then allocate memory for this buffer.
+   - Send an [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_manage_data_set_attributes) request, passing the initialized input data in the IOCTL's system buffer, along with the allocated output buffer, if any.
+
+2) *Handler* handles the DSM IOCTL request in one of three ways:
+   1) Handle the request and return with output, if any.
+   2) Handle the request and forward it to the next lower driver in the stack.
+   3) Forward the request to the next lower driver in the stack without handling the DSM.
+
+   > [!NOTE]
+   > Regardless of whether the driver handles the DSM, it can safely forward the request *only if* DEVICE_DSM_ACTION's most significant bit (**DeviceDsmActionFlag_NonDestructive**) is set. If **DeviceDsmActionFlag_NonDestructive** is *not* set, the driver should instead return with an error.
+  
+   If *Handler* does handle the DSM, it performs the following steps:
+
+   - Validate the input by calling [**DeviceDsmValidateInput**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/nf-ntddstor-devicedsmvalidateinput).
+   - If the input is valid, *Handler* extracts the input to get the action. If the action has a parameter block, *Handler* calls [**DeviceDsmParameterBlock**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddstor/nf-ntddstor-devicedsmparameterblock) to get the parameter block. If the action has range data, *Handler* calls [**DeviceDsmDataSetRanges**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddstor/nf-ntddstor-devicedsmdatasetranges) to get a pointer to the block of data set ranges, and then performs the normal processing on the block. This block is located at **DataSetRangesOffset** and consists of one or more contiguous entries formatted as [DEVICE_DATA_SET_RANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_data_set_range) structures. The length, in bytes, of the data set ranges is set in the **DataSetRangesLength** member of [DEVICE_DSM_INPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes).
+   - If the action requires output, *Handler* initializes the [DEVICE_DSM_OUTPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_device_manage_data_set_attributes_output) portion of the output buffer by calling [**DeviceDsmInitializeOutput**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/nf-ntddstor-devicedsminitializeoutput), and populates the output block with action-specific output, if any. The *Handler* then completes the IOCTL and either returns or forwards the IOCTL to the next driver in the stack.
+
+3) Once the DSM is handled and returned to the *Sender*, the *Sender* validates the output, if any, by calling [**DeviceDsmValidateOutput**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/nf-ntddstor-devicedsmvalidateoutput). If the output is valid, *Sender* extracts the output block, if any, by calling [**DeviceDsmOutputBlock**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddstor/nf-ntddstor-devicedsmoutputblock).
+
+For details on each specific DSM action, see [Device DSM Action Descriptions](device-dsm-action-descriptions.md).
