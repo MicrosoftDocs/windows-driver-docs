@@ -55,7 +55,7 @@ When you write a universal driver package, make sure that you follow these steps
 
 ## Best practices
 
-*  If you're using the Windows Driver Kit (WDK) with Visual Studio, set the **Target Platform** value in the driver project properties to `Universal`.  This automatically adds the correct libraries, and it runs the Universal INF validation and APIValidator as a part of build.  To do this:
+*  If you're using the Windows Driver Kit (WDK) with Visual Studio, set the **Target Platform** value in the driver project properties to `Universal`.  This automatically adds the correct libraries, and it runs the Universal INF validation and APiValidator as a part of build.  To do this:
 
     1. Open the driver project properties.
     2. Select **Driver Settings**.
