@@ -1,11 +1,11 @@
 ---
-title: Wi-Fi Discovery Service
-description: Wi-Fi Discovery Service
+title: Wi-Fi Discovery Service Overview
+description: Wi-Fi Discovery Service Overview
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Wi-Fi Discovery Service
+# Wi-Fi Discovery Service Overview
 
 [!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
 

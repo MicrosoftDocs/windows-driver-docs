@@ -329,26 +329,42 @@
   items: 
   - name: "Mobile Plans"
     items:
-    - name: "Mobile Plans overview"
-      href: mobile-plans.md
-    - name: "Mobile Plans scenarios"
+    - name: "Mobile Plans description"
       items:
-      - name: "Mobile Plans use cases"
-        href: mobile-plans-use-cases.md
+      - name: "Mobile Plans overview"
+        href: mobile-plans.md
+      - name: "Mobile Plans sytem architecture"
+        href: mobile-plans-system-architecture.md
+      - name: "Mobile Plans scenarios"
+        href: mobile-plans-scenarios.md
+    - name: "Mobile Plans features"
+      items:
+      - name: "Mobile Plans catalog"
+        href: mobile-plans-catalog.md
+      - name: "Mobile operator gateway page"
+        href: mobile-plans-gateway.md
       - name: "Mobile operator web portal"
         href: mobile-plans-web-portal.md
       - name: "Callback notifications"
         href: mobile-plans-callback-notifications.md
-      - name: "Service configuration"
-        href: mobile-plans-service-configuration.md
       - name: "eSIM download error handling"
         href: mobile-plans-eSIM-error-handling.md
-      - name: "Windows 10 device experience"
-        href: mobile-plans-device-experience.md
-    - name: "Integration"
-      href: mobile-plans-integration.md
-    - name: "Launch"
-      href: mobile-plans-launch.md
+      - name: "Account management"
+        href: mobile-plans-account-management.md
+      - name: "Walled garden"
+        href: mobile-plans-walled-garden.md
+      - name: "Toast notifications"
+        href: mobile-plans-notifications.md
+    - name: "Mobile Plans onboarding"
+      items:
+      - name: "Onboarding overview"
+        href: mobile-plans-onboarding-overview.md
+      - name: "Development"
+        href: mobile-plans-service-configuration.md
+      - name: "Integration"
+        href: mobile-plans-integration.md
+      - name: "Launch"
+        href: mobile-plans-launch.md
     - name: "Appendix"
       items:
       - name: "General appendix"
