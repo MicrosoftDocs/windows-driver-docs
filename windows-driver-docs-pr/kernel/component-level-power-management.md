@@ -22,7 +22,7 @@ PoFx provides a device driver interface (DDI) through which a driver can supply 
 
 Based on this information, PoFx makes intelligent decisions about when a component should enter a low-power state and which low-power state to enter. The decision process involves information from other components and other devices, and takes into account the dependencies between the devices and components in the various power and clock domains.
 
-## Introduction to the PoFX API for Component-Level Power Management
+## Introduction to the PoFx API for Component-Level Power Management
 
 
 To register a device to be managed by PoFx, the driver calls the [**PoFxRegisterDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxregisterdevice) routine. The driver passes this routine a [**PO\_FX\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_device_v1) structure that, among other data, contains an array of [**PO\_FX\_COMPONENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_component_v1) structures. Each element in this array describes the Fx power states of a component in the device and the attributes of each Fx state. (At minimum, a component that does not support component-level power management implements only the F0 state.) The attributes of a particular Fx power state in a particular component are described by a [**PO\_FX\_COMPONENT\_IDLE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_component_idle_state) structure, which contains the following values:

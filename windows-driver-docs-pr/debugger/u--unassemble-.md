@@ -30,13 +30,13 @@ u[u|b]
 
 
 <span id="_______Range______"></span><span id="_______range______"></span><span id="_______RANGE______"></span> *Range*   
-Specifies the memory range that contains the instructions to disassemble. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md). If you use the **b** flag, you must specify *Range* by using the "*Address* **L***Length*" syntax, not the "*Address1 Address2*" syntax.
+Specifies the memory range that contains the instructions to disassemble. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md). If you use the **b** flag, you must specify *Range* by using the "*Address* **L**_Length_" syntax, not the "*Address1 Address2*" syntax.
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the beginning of the memory range to disassemble. Eight instructions (on an x86-based processor) or nine instructions (on an Itanium-based processor) are unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
 <span id="_______b______"></span><span id="_______B______"></span> **b**   
-Determines the memory range to disassemble by counting backward. If **ub** *Address* is used, the disassembled range will be the eight or nine byte range ending with *Address*. If a range is specified using the syntax **ub** *Address* **L***Length*, the disassembled range will be the range of the specified length ending at *Address*.
+Determines the memory range to disassemble by counting backward. If **ub** *Address* is used, the disassembled range will be the eight or nine byte range ending with *Address*. If a range is specified using the syntax **ub** *Address* **L**_Length_, the disassembled range will be the range of the specified length ending at *Address*.
 
 <span id="_______u______"></span><span id="_______U______"></span> **u**   
 Specifies that the disassembly will continue even if there is a memory read error.

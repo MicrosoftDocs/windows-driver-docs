@@ -1,12 +1,12 @@
 ---
-title: Hyper-V Extensible Switch Data Path
-description: Hyper-V Extensible Switch Data Path
+title: Hyper-V Extensible Switch Data Path Topics
+description: Hyper-V Extensible Switch Data Path Topics
 ms.assetid: 5E7F135B-3086-415F-8D39-98CDBED8EBB4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Hyper-V Extensible Switch Data Path
+# Hyper-V Extensible Switch Data Path Topics
 
 
 This section discusses the Hyper-V extensible switch data path that packets move across. This section includes the following topics:

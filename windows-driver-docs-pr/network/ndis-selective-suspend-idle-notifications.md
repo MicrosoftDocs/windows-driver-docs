@@ -1,12 +1,12 @@
 ---
-title: NDIS Selective Suspend Idle Notifications
-description: NDIS Selective Suspend Idle Notifications
+title: Overview of NDIS Selective Suspend Idle Notifications
+description: Overview of NDIS Selective Suspend Idle Notifications
 ms.assetid: 958A2588-A847-4699-9906-95FB47CA1CDC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# NDIS Selective Suspend Idle Notifications
+# Overview of NDIS Selective Suspend Idle Notifications
 
 
 When the miniport driver has enabled and registered support for NDIS selective suspend, NDIS monitors the I/O activity of the underlying network adapter. If NDIS determines that the driver and adapter are idle, NDIS performs a selective suspend operation. This operation suspends the network adapter by transitioning the adapter to a low-power state.

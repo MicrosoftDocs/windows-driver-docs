@@ -1,6 +1,6 @@
 ---
-title: Windows Filtering Platform Callout Drivers
-description: Windows Filtering Platform Callout Drivers
+title: Windows Filtering Platform Callout Driver Topics
+description: Windows Filtering Platform Callout Driver Topics
 ms.assetid: 494dd2be-ac1b-432b-8966-278534eca162
 keywords:
 - Windows Filtering Platform callout drivers WDK
@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Windows Filtering Platform Callout Drivers
+# Windows Filtering Platform Callout Driver Topics
 
 
 This section discusses Windows Filtering Platform (WFP) callout drivers and includes the following topics:
