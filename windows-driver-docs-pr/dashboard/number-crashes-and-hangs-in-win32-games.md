@@ -24,7 +24,7 @@ This measure is normalized by usage, in a year-long scale.
 |**Time period**|7 day sliding window|
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum instances**|100 hours of Win32 games runtime|
-|**Passing criteria**|<= 5 crashes per year|
+|**Passing criteria**|<= 5 crashes per year of runtime|
 |**Measure ID**|14842479|
 
 ## Calculation

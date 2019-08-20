@@ -1,5 +1,5 @@
 ---
-title: Camera preview failure rate
+title: Percent of Camera preview failures
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a camera device failed to use the preview feature
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Camera preview failure rate
+# Percent of Camera preview failures
 
 ## Description
 

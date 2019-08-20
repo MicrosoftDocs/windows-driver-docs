@@ -22,7 +22,7 @@ Once a device successfully connects to Wi-Fi, it must maintain that connection, 
 |**Time period**|7 days|
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum instances**|1,000 instances|
-|**Passing criteria**|<= 20% of Instances don’t end in an unexpected disconnect|
+|**Passing criteria**|<= 25% of Instances don’t end in an unexpected disconnect|
 |**Measure ID**|7844359|
 
 ## Calculation

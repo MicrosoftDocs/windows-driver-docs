@@ -1,5 +1,5 @@
 ---
-title: Bluetooth pairing failure rate per machine
+title: Percent of Bluetooth pairing failures
 description: 
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Bluetooth pairing failure rate per machine
+# Percent of Bluetooth pairing failures
 
 ## Description
 

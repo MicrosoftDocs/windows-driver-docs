@@ -22,7 +22,7 @@ When users are playing UWP games, their graphics components process visual data 
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum instances**|100 hours of UWP games runtime|
-|**Passing criteria**|<= 5 crashes per year|
+|**Passing criteria**|<= 5 crashes per year of runtime|
 |**Measure ID**|14842478|
 
 ## Calculation

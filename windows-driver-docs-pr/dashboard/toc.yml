@@ -67,21 +67,21 @@
           items:
           - name: "Bluetooth measures"
             href: bluetooth-measures.md
-          - name: "Bluetooth pairing failure rate per machine"
+          - name: "Percent of Bluetooth pairing failures"
             href: bluetooth-pairing-failure-rate-per-machine.md
-          - name: "Bluetooth connect failure rate for machines with the driver"
+          - name: "Percent of Bluetooth connection failures"
             href: bluetooth-connect-failure-rate-for-machines-with-the-driver.md
         - name: "Camera"
           items:
           - name: "Camera measures"
             href: camera-measures.md
-          - name: "Camera initialization failure rate"
+          - name: "Percent of Camera initialization failures"
             href: camera-initialization-failure-rate.md
-          - name: "Camera preview failure rate"
+          - name: "Percent of Camera preview failures"
             href: camera-preview-failure-rate.md
-          - name: "Camera photo failure rate"
+          - name: "Percent of Camera photo capture failures"
             href: camera-photo-failure-rate.md
-          - name: "Camera video and stream failure rate"
+          - name: "Percent of Camera video and stream failures"
             href: camera-video-and-stream-failure-rate.md
         - name: "Graphics"
           items:
@@ -97,9 +97,7 @@
               href: number-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-expanded.md
             - name: "Number of machines that had an LKE caused by a crash in the graphics driver binary"
               href: number-of-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-expanded.md
-            - name: "YouTube video playback failure rate in Microsoft Edge and Internet Explorer"
-              href: youtube-video-playback-failure-rate-in-microsoft-edge-and-internet-explorer.md
-            - name: "Number ser mode crashes in Microsoft Photos app"
+            - name: "Number of user mode crashes in Microsoft Photos app"
               href: user-mode-reliability-for-crashes-in-microsoft-photos-app-expanded.md
             - name: "Number of user mode for crashes in creative applications"
               href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps-expanded.md
@@ -109,13 +107,15 @@
               href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale-expanded.md
             - name: "Number of user mode crashes in Windows Components"
               href: user-mode-reliability-for-crashes-in-windows-components.md
+            - name: "Percent of YouTube video playback failures in Microsoft Edge and Internet Explorer"
+              href: percent-of-youtube-video-playback-failures-in-microsoft-edge-and-internet-explorer.md
           - name: "Ecosystem audience measures"
             items:
             - name: "Number of machines with a blue screen caused by a crash in graphics driver binary" 
               href: number-of-machines-with-bluescreen-caused-by-crash-in-graphics-driver-binary-ecosystem.md
             - name: "Number of machines that had an LKE caused by a crash in the graphics driver binary"
               href: number-of-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-ecosystem.md
-            - name: "Numbe of user mode crashes in Microsoft Edge"
+            - name: "Number  f user mode crashes in Microsoft Edge"
               href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
             - name: "Number of user mode crashes in top Microsoft apps"
               href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale.md
@@ -139,10 +139,10 @@
           items:
           - name: "Wi-Fi Measures"
             href: wi-fi-measures.md
-          - name: "Connection failure rate of top 95 percent of device / AP pairs – All"
-            href: connection-failure-rate-top-95-pct-device--ap-pairs.md
-          - name: "Internet connection failure rate of top 95 percent of device / AP pairs with greater than 50 percent signal quality"
-            href: internet-connection-failure-rate-top-95-pct-device--a-pairs-with-greater-than-50-pct-signal.md
+          - name: "Percent of wi-fi connection failures, from the top 95 percent of device and access-point pairs "
+            href: percent-of-wifi-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
+          - name: "Percent of internet connection failures, from the top 95 percent of device and access-point pairs that have greater than 50 percent signal quality"
+            href: percent-of-internet-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
           - name: "Percent of Wi-Fi sessions ending in an unexpected disconnect"
             href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
       - name: "Appendix"

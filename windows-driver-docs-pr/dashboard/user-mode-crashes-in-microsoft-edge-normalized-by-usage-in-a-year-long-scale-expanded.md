@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# User mode reliability for crashes in Microsoft Edge, normalized by usage, is less than or equal to the baseline goal
+# Number of user mode reliability for crashes in Microsoft Edge, normalized by usage, is less than or equal to the baseline goal
 
 ## Description
 
@@ -24,7 +24,7 @@ This measure is normalized, by usage, in a year-long scale.
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum population**|30,000 hours of Microsoft Edge runtime|
-|**Passing criteria**|<= 1 crash per year|
+|**Passing criteria**|<= 1 crash per year of runtime|
 |**Measure ID**|22728062|
 
 ## Calculation

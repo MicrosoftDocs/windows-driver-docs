@@ -1,5 +1,5 @@
 ---
-title: User mode reliability for crashes in Microsoft Photos app, less than or equal to the baseline goal
+title: Number of user mode reliability for crashes in Microsoft Photos app, less than or equal to the baseline goal
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in Microsoft Photos, caused by the graphics drivers, over total runtime in years 
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# User mode reliability for crashes in Microsoft Photos app, normalized by usage, is less than or equal to the baseline goal
+# Number of user mode reliability for crashes in Microsoft Photos app, normalized by usage, is less than or equal to the baseline goal
 
 ## Description
 
@@ -22,7 +22,7 @@ This measure counts the number of crashes in display drivers that happen in the 
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum instances**|10,000 hours of Microsoft Photos runtime |
-|**Passing criteria**|<= 1.5 crashes per year|
+|**Passing criteria**|<= 1.5 crashes per year of runtime|
 |**Measure ID**|20240794|
 
 ## Calculation

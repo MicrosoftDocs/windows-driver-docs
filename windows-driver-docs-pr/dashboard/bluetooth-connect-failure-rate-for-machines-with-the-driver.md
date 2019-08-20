@@ -1,5 +1,5 @@
 ---
-title: Bluetooth connect failure rate for machines with the driver
+title: Percent of Bluetooth connection failures
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a Bluetooth device failed to connect with another device.
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Bluetooth connect failure rate for machines with the driver
+# Percent of Bluetooth connection failures
 
 ## Description
 
@@ -22,7 +22,7 @@ If two devices are unable to connect with Bluetooth, the user will not be able t
 |**Time period**|7 day sliding window|
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum population**|10 instances|
-|**Passing criteria**|<= 10 % of Instances are connection failures|
+|**Passing criteria**|< 10 % of Instances are connection failures|
 |**Measure ID**|13897278|
 
 ## Calculation

@@ -1,5 +1,5 @@
 ---
-title: Internet connection failure rate of top 95 percent of device / AP pairs with greater than 50 percent signal quality
+title: Internet connection failure rate of top 95 percent of device and access-point, that have greater than 50 percent signal quality
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a device Fails to connect to the Internet via Wi-Fi.
 ms.topic: article
 ms.date: 05/20/2019
@@ -8,7 +8,7 @@ author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
-# Internet connection failure rate of top 95 percent of device / AP pairs with greater than 50 percent signal quality
+# Percent of internet connection failures, from the top 95 percent of device and access-point pairs that have greater than 50 percent signal quality
 
 ## Description
 
@@ -22,7 +22,7 @@ After a device connects to an access point (AP), it can use that connection to a
 |**Time period**|7 days|
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum instances**|3,000|
-|**Passing criteria**|<= 2% of Instances have connection failures to Internet via Wi-Fi|
+|**Passing criteria**|<= 5% of Instances have connection failures to Internet via Wi-Fi|
 |**Measure ID**|14649243|
 
 ## Calculation
