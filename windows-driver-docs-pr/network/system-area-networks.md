@@ -1,6 +1,6 @@
 ---
-title: System Area Networks
-description: System Area Networks
+title: System Area Networks Overview
+description: System Area Networks Overview
 ms.assetid: 6fbcc1d5-151d-4f17-8df9-79a463e3c149
 keywords:
 - system area networks WDK
@@ -12,11 +12,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# System Area Networks
-
-
-
-
+# System Area Networks Overview
 
 A *system area network* (SAN) is a group of devices that are linked by a high-speed, high-performance connection. A SAN connection uses Internet Protocol (IP) addresses, which are assigned by TCP/IP to each SAN network interface controller (NIC), to determine data routing. It also uses a reliable transport, which is built into the SAN, to perform data delivery. A SAN can include, for example, clusters of client and server computers.
 

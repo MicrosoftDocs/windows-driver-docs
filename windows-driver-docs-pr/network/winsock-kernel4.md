@@ -1,6 +1,6 @@
 ---
-title: Winsock Kernel
-description: Winsock Kernel
+title: Winsock Kernel Topics
+description: Winsock Kernel Topics
 ms.assetid: 89d389ff-1a5e-4889-8009-c0fe3b6273f9
 keywords:
 - Winsock Kernel WDK networking
@@ -12,7 +12,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Winsock Kernel
+# Winsock Kernel Topics
 
 
 This section discusses Winsock Kernel (WSK) and includes the following topics:

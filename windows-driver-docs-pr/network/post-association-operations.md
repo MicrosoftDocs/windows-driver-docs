@@ -1,6 +1,6 @@
 ---
-title: Post-Association Operations
-description: Post-Association Operations
+title: Post-Association Operations Overview
+description: Post-Association Operations Overview
 ms.assetid: e4c7ea7a-53ad-41b2-bf3f-03c770e58043
 keywords:
 - IHV Extensions DLL WDK Native 802.11 , post-association operations
@@ -10,12 +10,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Post-Association Operations
-
-
-
-
- 
+# Post-Association Operations Overview
 
 When the wireless LAN (WLAN) adapter successfully completes an association operation with an access point (AP), the operating system creates a data port for the association. The operating system then initiates a post-association operation on the data port by calling the [*Dot11ExtIhvPerformPostAssociate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/nc-wlanihv-dot11extihv_perform_post_associate) function.
 

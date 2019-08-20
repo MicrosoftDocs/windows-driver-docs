@@ -1,5 +1,5 @@
 ---
-title: Handling HID Reports
+title: Handling HID Reports Topics
 description: This section describes the mechanisms that user-mode applications and kernel-mode drivers use for handling HID reports.
 ms.assetid: 5bd43bd3-3c7a-40a3-97cd-2c43c168e721
 keywords:
@@ -14,7 +14,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Handling HID Reports
+# Handling HID Reports Topics
 
 
 This section describes the mechanisms that user-mode applications and kernel-mode drivers use for handling [HID reports](introduction-to-hid-concepts.md).

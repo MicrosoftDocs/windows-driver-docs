@@ -1,12 +1,12 @@
 ---
-title: MB Operation Flowcharts
-description: MB Operation Flowcharts
+title: MB Operation Flowchart Topics
+description: MB Operation Flowchart Topics
 ms.assetid: 0d450af1-6e39-4492-b112-9db7b6597539
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# MB Operation Flowcharts
+# MB Operation Flowchart Topics
 
 
 All the scenarios described in this section assume that the miniport driver and MB Service have completed initialization described in [MB Miniport Driver Initialization](mb-miniport-driver-initialization.md).

@@ -1,6 +1,6 @@
 ---
-title: Connection-Oriented NDIS
-description: Connection-Oriented NDIS
+title: Introduction to Connection-Oriented NDIS
+description: Introduction to Connection-Oriented NDIS
 ms.assetid: c74f8e60-c041-48e9-8aa1-98a9cb9eb869
 keywords:
 - connection-oriented NDIS WDK
@@ -12,10 +12,6 @@ ms.localizationpriority: medium
 ---
 
 # Connection-Oriented NDIS
-
-
-
-
 
 This section describes connection-oriented NDIS (CoNDIS). Most CoNDIS 6.0 and later driver operations have not changed from their CoNDIS 5.*x* versions. For more information about the differences between CoNDIS 5.x and CoNDIS 6.0, see [Porting CoNDIS 5.x Drivers to CoNDIS 6.0](https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-a-condis-5-x-driver-to-condis-6-0).
 

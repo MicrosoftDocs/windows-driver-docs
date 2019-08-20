@@ -1,12 +1,12 @@
 ---
-title: Hyper-V Extensible Switch Save and Restore Operations
-description: Hyper-V Extensible Switch Save and Restore Operations
+title: Hyper-V Extensible Switch Save and Restore Operations Overview
+description: Hyper-V Extensible Switch Save and Restore Operations Overview
 ms.assetid: 7F3A77E0-F1E9-49E4-8C78-62B8F412353D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Hyper-V Extensible Switch Save and Restore Operations
+# Hyper-V Extensible Switch Save and Restore Operations Overview
 
 
 When a Hyper-V child partition is stopped, saved, or live migrated, the run-time state of the partition is saved. When the partition is restarted or has completed the live migration to another host computer, the run-time state is restored. During the transition between saved and restored states, the settings of the network interfaces for the child partition are unchanged and network connections to the Hyper-V extensible switch are not torn down.
