@@ -24,6 +24,8 @@
     href: supporting-asynchronous-i-o.md
   - name: "Sample Kernel-Mode Drivers"
     href: sample-kernel-mode-drivers.md
+  - name: "Surface Team Driver Development Best Practices"
+    href: surface-team-driver-development-best-practices.md  
 - name: "Components"
   items: 
   - name: "Windows Kernel-Mode Object Manager"
