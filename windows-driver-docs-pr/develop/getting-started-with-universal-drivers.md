@@ -33,9 +33,9 @@ Universal drivers are distributed through Windows Update, and hardware support a
 
 When you write a universal driver package, there are four design principles to consider:
 
-* Declarative **(D)**: Install the driver by using only declarative INF directives. Don't include any co-installers, RegisterDll functions, and the like.
+* Declarative **(D)**: Install the driver by using only declarative INF directives. Don't include co-installers or RegisterDll functions.
 
-* Componentized **(C)**: Edition-specific, OEM-specific, and optional customizations to the driver are separate from the base driver package. Therefore, the base driver, which provides only core device functionality, can be targeted, flighted, and serviced independently from the customizations.
+* Componentized **(C)**: Edition-specific, OEM-specific, and optional customizations to the driver are separate from the base driver package. As a result, the base driver, which provides only core device functionality, can be targeted, flighted, and serviced independently from the customizations.
 
 * Hardware Support App **(H)**: Any user interface (UI) component associated with a universal driver must be packaged as a Hardware Support App (HSA) or preinstalled on the OEM device.  An HSA is an optional device-specific app that's paired with a driver. The application can be a [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) or [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) app.  You must distribute and update an HSA through the Microsoft Store.  For details, see [Hardware Support App (HSA): Steps for driver developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md) and [Hardware Support App (HSA): Steps for app developers](../devapps/hardware-support-app--hsa--steps-for-app-developers.md).
 
@@ -46,7 +46,7 @@ Also check out [Universal driver scenarios](universal-driver-scenarios.md), whic
 
 ## Requirements
 
-When you write a universal driver package, make sure that you follow these steps:
+When you write a universal driver package, follow these steps:
 
 *  Create a [universal INF file](../install/using-an-extension-inf-file.md) for your driver:
     1.  Review the [list of INF sections and directives that are valid in universal driver packages](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
