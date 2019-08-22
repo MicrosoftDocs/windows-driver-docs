@@ -28,7 +28,7 @@ A live kernel dump (LKD) is the product of a kernel error, where the machine can
 ## Calculation
 
 1. The measure aggregates telemetry from a 14-day sliding window into a **percentage of machines that haven’t experienced an LKD**
-2. *Machines Without LKD = Count(devices that have installed the flighted driver without an LKD)*
+2. *Machines Without LKD = Count(devices that have installed the driver without an LKD)*
 3. *Total Machines = Count(devices that successfully installed the driver)*
 
 ### Final calculation

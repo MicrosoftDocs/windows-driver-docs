@@ -37,7 +37,7 @@ When aggregating telemetry, most measures collect data from a 7-day sliding wind
 
 Furthermore, when viewing multiple measures, Microsoft knows the failures occurred in the same the period.  
 
-## Machine count and instance count
+## Measurement Criteria - Machine count and instance count
 
 Measures either determine the percentage of distinct machines experiencing an error or aggregate instances of all errors observed – where a single machine can have multiple instances counted over the flight.
 

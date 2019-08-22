@@ -28,7 +28,7 @@ A Kernel Mode Crash (KMC) is caused by a kernel error which halts the Operating 
 ## Calculation
 
 1. The measure aggregates telemetry from a 14-day sliding window into a **percentage of machines that haven’t experienced a KMC.**
-2. *Non Crashing Machines = Count(devices that have installed the flighted driver without a KMC)*
+2. *Non Crashing Machines = Count(devices that have installed the driver without a KMC)*
 3. *Total Machines = Count(devices that successfully installed the driver)*
 
 ### Final calculation

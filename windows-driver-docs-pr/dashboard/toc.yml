@@ -115,7 +115,7 @@
               href: number-of-machines-with-bluescreen-caused-by-crash-in-graphics-driver-binary-ecosystem.md
             - name: "Number of machines that had an LKE caused by a crash in the graphics driver binary"
               href: number-of-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-ecosystem.md
-            - name: "Number  f user mode crashes in Microsoft Edge"
+            - name: "Number of user mode crashes in Microsoft Edge"
               href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
             - name: "Number of user mode crashes in top Microsoft apps"
               href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale.md
