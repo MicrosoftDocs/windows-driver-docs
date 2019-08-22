@@ -27,8 +27,8 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="10%" />
+<col width="90%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -38,31 +38,34 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>1</p></td>
+<td><p>1</p></td>
 <td align="left"><p>The virtual memory address that could not be accessed.</p>
-<p>Use <strong><a href="-pool.md" data-raw-source="[!pool](-pool.md)">!pool</a></strong> on this address to see whether it's Paged pool. These commands, may also be useful in gathering information about the failure: <strong><a href="-pte.md" data-raw-source="[!pte](-pte.md)">!pte</a></strong>, <strong><a href="-address.md" data-raw-source="[!address](-address.md)">!address</a></strong>, and <strong><a href="ln--list-nearest-symbols-.md" data-raw-source="[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)">ln (List Nearest Symbols)</a></strong>.</p></td>
+<p>Use <strong><a href="-pool.md" data-raw-source="[!pool](-pool.md)">!pool</a></strong> on this address to see whether it's Paged pool. These commands, may also be useful in gathering information about the failure: <strong><a href="-pte.md" data-raw-source="[!pte](-pte.md)">!pte</a></strong>, <strong><a href="-address.md" data-raw-source="[!address](-address.md)">!address</a></strong>, and <strong><a href="ln--list-nearest-symbols-.md" data-raw-source="[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)">ln</strong></a> (list nearest symbols).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>2</p></td>
+<td><p>2</p></td>
 <td align="left"><p>IRQL at time of the fault.</p>
 <p>VALUES:</p>
-<p>2 : The IRQL was DISPATCH_LEVEL at the time of the fault.</p></td>
+<ul><li><p><strong>2</strong>: The IRQL was DISPATCH_LEVEL at the time of the fault.</p></li></ul></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>3</p></td>
-<td align="left"><p>Bitfield describing the operation that caused the fault.</p>
-<p><strong>Bit 0:</strong></p>
-<p>VALUES:</p>
-<p>0: Read operation</p>
-<p>1: Write operation</p>
-<p><strong>Bit 3:</strong> (Only available on chipsets that support this level of reporting.)</p>
-<p>VALUES:</p>
-<p>0: Not an execute operation</p>
-<p>1: Execute operation</p>
-<strong>Bit 0 and Bit 3 combined values:</strong>
-<p>0x0 : Fault trying to READ from the address in parameter 1.</p>
-<p>0x1 : Fault trying to WRITE to the address in parameter 1.</p>
-<p>0x8 : Fault trying to EXECUTE code from the address in parameter 1.</p>
+<td><p>3</p></td>
+<td align="left"><p>Bit field that describes the operation that caused the fault.</p>
+<p><strong>Bit 0 values:</strong></p>
+<ul><li><p><strong>0</strong>: Read operation</p></li><li><p><strong>1</strong>: Write operation</p></li></ul>
+<p><strong>Bit 3 values:</strong></p>
+<ul>
+<li><p><strong>0</strong>: Not an execute operation</p></li>
+<li><p><strong>1</strong>: Execute operation</p></li>
+</ul>
+> [!NOTE]
+> Bit 3 is only available on chipsets that support this level of reporting.
+<p><strong>Bit 0 and Bit 3 combined values:</strong></p>
+<ul>
+<li><p>0x0 : Fault trying to READ from the address in parameter 1.</p></li>
+<li><p>0x1 : Fault trying to WRITE to the address in parameter 1.</p></li>
+<li><p>0x8 : Fault trying to EXECUTE code from the address in parameter 1.</p></li>
+</ul>
 <p>This value is usually caused by:</p>
 <ul>
 <li>Calling a function that cannot be called at DISPATCH_LEVEL while at DISPATCH_LEVEL</li>
@@ -71,12 +74,13 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p>4</p></td>
+<td><p>4</p></td>
 <td align="left"><p>The instruction pointer at the time of the fault.</p>
-<p>Use the <strong><a href="ln--list-nearest-symbols-.md" data-raw-source="[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)">ln (List Nearest Symbols)</a></strong> command on this address to see the name of the function.</p></td>
+<p>Use the <strong><a href="ln--list-nearest-symbols-.md" data-raw-source="[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)">ln</strong></a> (list nearest symbols) command on this address to see the name of the function.</p></td>
 </tr>
 </tbody>
 </table>
+
 
 Cause
 -----
