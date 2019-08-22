@@ -12,23 +12,6 @@ ms.localizationpriority: medium
 This article covers how to get started with Windows Debugging. If your goal is to use the debugger to analyze a crash dump, see [Analyze crash dump files by using WinDbg](crash-dump-files.md).
 
 To get started with Windows Debugging, complete the tasks that are described in this article.
-<!--
-To get started with Windows Debugging, complete the following tasks:
-
- 1. [Determine the host and the target](#determine-the-host-and-the-target).
- 1. [Determine the type: kernel-mode or user-mode](#determine-the-type-kernel-mode-or-user-mode).
- 1. [Choose your debugger environment](#choose-your-debugger-environment).
- 1. [Determine how to connect the target and host](#determine-how-to-connect-the-target-and-host).
- 1. [Choose either the 32-bit or 64-bit debugging tools](#choose-either-the-32-bit-or-64-bit-debugging-tools).
- 1. [Configure symbols](#configure-symbols).
- 1. [Configure source code](#configure-source-code).
- 1. [Become familiar with debugger operation](#become-familiar-with-debugger-operation).
- 1. [Become familiar with debugging techniques](#become-familiar-with-debugging-techniques).
- 1. [Use the debugger reference commands](#use-the-debugger-reference-commands).
- 1. [Use debugging extensions for specific technologies](#use-debugging-extensions-for-specific-technologies).
- 1. [Learn about related Windows internals](#learn-about-related-windows-internals).
- 1. [Review additional debugging resources](#review-additional-debugging-resources).
--->
 
 ## 1. Determine the host and the target 
 
