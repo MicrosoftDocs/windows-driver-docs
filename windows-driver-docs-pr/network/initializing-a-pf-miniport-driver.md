@@ -1,12 +1,12 @@
 ---
-title: Initializing a PF Miniport Driver
-description: Initializing a PF Miniport Driver
+title: Initializing a PF Miniport Driver Topics
+description: Initializing a PF Miniport Driver Topics
 ms.assetid: 8673966D-DE84-4667-A426-CBDE85F42198
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Initializing a PF Miniport Driver
+# Initializing a PF Miniport Driver Topics
 
 
 This section discusses the requirements and guidelines for initializing an NDIS miniport driver for the PCI Express (PCIe) Physical Function (PF) of a single root I/O virtualization (SR-IOV) network adapter.

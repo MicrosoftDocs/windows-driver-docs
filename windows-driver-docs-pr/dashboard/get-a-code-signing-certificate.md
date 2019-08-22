@@ -21,6 +21,8 @@ If you don’t have an approved EV code signing certificate, you can buy one fro
 
 ### Extended validation code signing certificates
 
+- [Buy an SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
+
 - [Buy a Symantec EV code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393248)
 
 - [Buy a Certum EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843061)

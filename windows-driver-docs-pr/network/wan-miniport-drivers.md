@@ -1,6 +1,6 @@
 ---
-title: WAN Miniport Drivers
-description: WAN Miniport Drivers
+title: Overview of WAN Miniport Drivers
+description: Overview of WAN Miniport Drivers
 ms.assetid: be247ac2-afce-42ce-a840-12f77c921c57
 keywords:
 - miniport drivers WDK networking , WAN miniport drivers
@@ -11,7 +11,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# WAN Miniport Drivers
+# Overview of WAN Miniport Drivers
 
 
 

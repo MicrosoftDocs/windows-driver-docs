@@ -1,6 +1,6 @@
 ---
-title: Starting and Pausing a Miniport Adapter
-description: Starting and Pausing a Miniport Adapter
+title: Starting and Pausing a Miniport Adapter Overview
+description: Starting and Pausing a Miniport Adapter Overview
 ms.assetid: d278b331-90d9-4d19-bf00-732981962522
 keywords:
 - miniport adapters WDK networking , starting
@@ -11,7 +11,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Starting and Pausing a Miniport Adapter
+# Starting and Pausing a Miniport Adapter Overview
 
 
 

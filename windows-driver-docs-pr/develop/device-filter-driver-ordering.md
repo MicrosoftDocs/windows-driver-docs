@@ -138,7 +138,7 @@ specific place for third-party filters to be inserted.
 [DDInstall.HW]
 AddReg = FilterLevel_Definition
 
-[FilterLevel\_Definition]
+[FilterLevel_Definition]
 HKR,,UpperFilterLevels,%REG_MULTI_SZ%,"LevelA","LevelB","LevelC"
 HKR,,UpperFilterDefaultLevel,,"LevelC"
 
@@ -151,8 +151,8 @@ This can only be done by a **base** driver.
 The full declarative list of filters for a specific device can be retrieved by querying the following properties:
 
 ```INF
-DEVPKEY\_Device\_CompoundUpperFilters
-DEVPKEY\_Device\_CompoundLowerFilters
+DEVPKEY_Device_CompoundUpperFilters
+DEVPKEY_Device_CompoundLowerFilters
 ```
 
 ### Legacy-equivalent filter registration
