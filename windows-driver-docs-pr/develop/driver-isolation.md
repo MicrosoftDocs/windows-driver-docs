@@ -46,7 +46,7 @@ The following API's should be used to ensure your driver is isolated:
 * Provision Values via INF:
   * [INF AddReg]() directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [INF DDInstall]() section or [DDInstall.HW]() section
 
-Below is an example of an INF privisioning through its INF device registry state:
+Below is an example of an INF provisioning device registry state through its INF:
 
 ```
 [ExampleDDInstall.HW]
@@ -57,5 +57,10 @@ HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
 
 ### Device Interface Registry State
+
+Isolated drivers leverage device interfaces to share state with other drivers and components. Below is an example of how isolated drivers should think about communicating with other drivers via device interfaces as opposed to hardcoding paths to global registry locations:
+
+![screen shot of the output window](images/device-interface-communication.png)
+
 
 ### Service Registry State
