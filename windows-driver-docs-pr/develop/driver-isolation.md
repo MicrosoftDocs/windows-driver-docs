@@ -10,6 +10,14 @@ This enables a driver to be self-contained and sandboxed which makes it more rob
 
 ![screen shot of the output window](images/non-isolated-vs-isolated.png)
 
+## Benefits of Driver Isolation
+
+Drivers that follow driver isolation principles are more robust to servicing operations as they do not rely on implicit assumptions of global locations existing.  Instead, they use OS API's to get relative handles to locations.
+
+Isolated drivers have the added benefit of being more resilient to changes in the OS.  Additionally, because isolated drivers leave all driver package files in the driver store, the likelihood of an issue arising during install of the driver is much lower.
+
+Additionally, by leveraging device interfaces, isolated drivers are more robust to changes in other drivers as they do not take dependencies on other drivers modifying state in a global location.  Instead, an appropriately versioned interaction between drivers occurs using a device interface to commumicate state between components. 
+  
 ## Run From Driver Store
 
 All isolated drivers leave their driver package files in the driver store. This means that they leverage **DIRID 13** in their INF to specify the location for driver package files on install.
