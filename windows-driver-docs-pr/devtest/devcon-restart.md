@@ -37,13 +37,13 @@ Specifies all or part of a hardware ID, compatible ID, or device instance ID of 
 
 The following special characters modify the ID parameter.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
+<table>  
+<colgroup>  
+<col width="50%" />  
+<col width="50%" />  
+</colgroup>  
+<thead>  
+<tr class="header">  
 <th align="left">Character</th>
 <th align="left">Description</th>
 </tr>
