@@ -2,7 +2,7 @@
 
 ## Driver Isolation Overview
 
-An isolated driver is one that does not copy files and registry settings among OS state. All registry and file state is stored relative to a location provided by OS API's and functionality.
+An isolated stores registry and file state using a relative handle to a location provided by OS API's and functionality as opposed to hardcoding global location paths.
 
 Drivers should interact with other drivers and their state through OS API's or interfaces exposed by the drivers and not through hardcoding paths to drivers or their state and manually modifying it through registry or file API's.  Additionally, all isolated drivers are run from the driver store.
 
@@ -30,7 +30,7 @@ More information on how to find and load files from the driver store can be foun
 
 Access to various state should be done using OS API's that provide a caller with the location of the state and then the state is read/written relative to that location. Hardcoded absolute registry paths and file paths **should not be used** except for some limited exceptions noted in the File State and Registry Exceptions section.
 
-## PnP Device Registry State
+### PnP Device Registry State
 
 There is a need for isolated drivers and user mode components to read, and sometimes write, device state.  There are already two locations that can be used to store device state in the registry. They are called the **"hardware key"** (aka "device key") for the device and the **"software key"** (aka "driver key") for the device. These registry locations are already accessible via API's that give a caller a handle to the location.
 
@@ -56,6 +56,6 @@ AddReg = Example_DDInstall.AddReg
 HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
 
-## Device Interface Registry State
+### Device Interface Registry State
 
-## Service Registry State
+### Service Registry State
