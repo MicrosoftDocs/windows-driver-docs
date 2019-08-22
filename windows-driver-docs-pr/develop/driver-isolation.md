@@ -62,5 +62,35 @@ Isolated drivers leverage device interfaces to share state with other drivers an
 
 ![screen shot of the output window](images/device-interface-communication.png)
 
+In order to read and write device interface registry state, use the following API's:
+
+* WDM:
+  * [IoOpenDeviceInterfaceRegistryKey]()
+* Other UserMode Code:
+  * [CM_Open_Device_Interface_Key]()
+* Provision Values via INF:
+  * [INF AddReg]() directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [add-interface-section]() section.
+
+When state needs to be shared between drivers, there should be a **single driver** that owns the shared state, and it should expose a way for other drivers to *read* and *modify* that state.
+
+Typically, this would be accomplished by the driver that owns the state exposing a **device interface** in a custom device interface class and enabling that interface when the driver is ready for other drivers to have access to the state. Drivers that want access to this state can **register for [device interface arrival notifications]()**. To access the state, the custom device interface class can define one of two contracts:
+
+	1. An *IO contract* can be associated with that device interface class that provides a mechanism for accessing the state. Other drivers can use the enabled device interface to send IO that conforms to that contract to the owning driver.
+	2. A *direct-call interface* that gets returned via a query interface. Other drivers could send [IRP_MN_QUERY_INTERFACE]() to retrieve function pointers from the driver to call.
+
+Alternatively, If the driver that owns the state is robust to allowing direct access to the state, the other drivers could access state by using the OS API’s for programmatic access to device interface state.
+
+These interfaces or state (depending on sharing method used) need to be **properly versioned** so the driver owning the state can be serviced independently of other drivers that want to access that state. Driver vendors cannot rely on both drivers being serviced at the same time and staying at the same version in lockstep.  
+
+For simplicity, it may be tempting to have an application or driver get a list of enabled interfaces at a single point in time, such as during startup of the component, through functions such as [IoGetDeviceInterfaces](). However, this method is not advised as it leads to problems.
+
+Devices and the drivers controlling interfaces can start up asynchronously of other devices and UserMode applications and may have their device stack torn down, such as when the device is disabled or restarted, leading to device interfaces exposed from that device being disabled.
+
+The driver may also want to disable interfaces at any point in time for its own internal reasons. Without a registration for notifications of device interface arrival and removal, a component that would like to send IO to that device and driver would miss any device interfaces that are enabled after the request for the list of interfaces and would not know when one of the interfaces is disabled (meaning IO can no longer be sent to that interface).
+
+The typical pattern is to **register for notifications** of device interface arrival/removal and then use an **API to get the list of existing enabled interfaces** on the machine.
+
+You can find more information on device interfaces on the [docs page](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces).   Information on how to register for device interface arrival and removal can be found [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal).  Additionally, information on registering for device interface change notifications can be found [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/registering-for-device-interface-change-notification).
+
 
 ### Service Registry State
