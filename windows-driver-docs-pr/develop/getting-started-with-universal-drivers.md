@@ -63,7 +63,7 @@ The following are required when writing a universal driver package:
     2. Select **Driver Settings**.
     3. Use the drop-down menu to set **Target Platform** to `Universal`.
 
-* **Driver Isolation**:
+* Driver Isolation:
 
   * To maximize reliability and serviceability of your Universal driver, ensure your driver follows the principles of **driver isolation**
   * Driver isolation is a new concept that allows your driver to be self-contained and robust to OS changes
