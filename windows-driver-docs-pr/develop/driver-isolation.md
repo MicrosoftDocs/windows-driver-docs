@@ -90,8 +90,64 @@ The driver may also want to disable interfaces at any point in time for its own 
 
 The typical pattern is to **register for notifications** of device interface arrival/removal and then use an **API to get the list of existing enabled interfaces** on the machine.
 
-You can find more information on device interfaces on the [docs page](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces).   Information on how to register for device interface arrival and removal can be found [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal).  Additionally, information on registering for device interface change notifications can be found [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/registering-for-device-interface-change-notification).
+You can find more information on device interfaces on the [Microsoft Docs page](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces).   Information on how to register for device interface arrival and removal can be found [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal).  Additionally, information on registering for device interface change notifications can be found [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/registering-for-device-interface-change-notification).
 
 
 ### Service Registry State
-test
+
+Registry state for driver and Win32 services should be stored under the "Parameters" subkey of the service using an HKR line in an [AddReg]() section referenced by the service install section in the INF.  Below is an example:
+
+```
+[ExampleDDInstall.Services]
+Addservice = ExampleService, 0x2, Example_Service_Inst
+
+[Example_Service_Inst]
+DisplayName    = %ExampleService.SvcDesc%
+ServiceType    = 1
+StartType      = 3
+ErrorControl   = 1
+ServiceBinary  = %13%\ExampleService.sys
+AddReg=Example_Service_Inst.AddReg
+
+[Example_Service_Inst.AddReg]
+HKR, Parameters, ExampleValue, 0x00010001, 1
+```
+
+Use the appropriate API's to access this state:
+
+* WDM 
+  * [IoOpenDriverRegistryKey]()
+* WDF
+  * [WdfDriverOpenParamatersRegistryKey]()
+* Win32 Services
+  * GetServiceRegistryStateKey
+
+## Provisioning and Accessing File State
+
+### Device File State
+
+If files related to a device need to be written, those files should be stored relative to a handle provided via OS API’s. Some examples of these types of files include: configuration files specific to that device, log files of operations that have happened to the device, etc.
+
+* WDM
+  * [IoGetDeviceDirectory]()
+* WDF
+  * [WdfDeviceRetrieveDeviceDirectoryString]()
+
+### Service File State
+
+There is a need for services (both Win32 services and driver services) to read, and sometimes write, state about themselves. This is state that is owned by the service and accessed only by the service.
+
+If that internal state of the service needs to be shared with other components, it should be done through a controlled, versioned, interface and not through direct registry or file reads of the internal service state.
+
+The OS provides API’s for services to get storage locations for their internal state, but those storage locations are intended to be accessed only by the service itself. 
+
+* WDM
+  * IoGetDriverDirectory
+* WDF
+  * KMDF Drivers
+    * Use WDM API [IoGetDriverDirectory]()
+  * UMDF Drivers
+    * [WdfDriverRetrieveDriverDataDirectoryString]()
+  * Win32 Services
+    * [GetServiceDirectory]()
+
