@@ -9,8 +9,10 @@ ms.localizationpriority: medium
 # Getting Started with Windows Debugging
 
 
-This section covers how to get started with Windows Debugging. If your goal is to use the debugger to analyze a crash dump, see [Analyze crash dump files by using WinDbg](crash-dump-files.md).
+This article covers how to get started with Windows Debugging. If your goal is to use the debugger to analyze a crash dump, see [Analyze crash dump files by using WinDbg](crash-dump-files.md).
 
+To get started with Windows Debugging, complete the tasks that are described in this article.
+<!--
 To get started with Windows Debugging, complete the following tasks:
 
  1. [Determine the host and the target](#determine-the-host-and-the-target).
@@ -26,8 +28,9 @@ To get started with Windows Debugging, complete the following tasks:
  1. [Use debugging extensions for specific technologies](#use-debugging-extensions-for-specific-technologies).
  1. [Learn about related Windows internals](#learn-about-related-windows-internals).
  1. [Review additional debugging resources](#review-additional-debugging-resources).
+-->
 
-## Determine the host and the target 
+## 1. Determine the host and the target 
 
 The debugger runs on the *host* system, and the code that you want to debug runs on the *target* system.
 
@@ -37,7 +40,7 @@ The debugger runs on the *host* system, and the code that you want to debug runs
 
 Because it is common to stop instruction execution on the processor during debugging, two computer systems are typically used. In some situations, you might be able to use a virtual machine as the second system. For example, you might be able to use a virtual PC that is running on the same PC as the code that you need to debug. However, if your code is communicating to low-level hardware, using a virtual PC may not be the best approach. For more information, see [Setting up network debugging of a virtual machine - KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md).
 
-## Determine the type: kernel-mode or user-mode
+## 2. Determine the type: kernel-mode or user-mode
 
 Next, you need to determine whether you will do kernel-mode or user-mode debugging.
 
@@ -58,11 +61,11 @@ For information about using the debugger in kernel mode, see the following artic
     
 For information about using the debugger in user mode, see [Getting started with WinDbg (user-mode)](getting-started-with-windbg.md).
 
-## Choose your debugger environment
+## 3. Choose your debugger environment
 
 WinDbg works well in most situations, but there are times when you may want to use another debugger, such as console debuggers for automation or Visual Studio. For more information, see [Debugging environments](debuggers-in-the-debugging-tools-for-windows-package.md).
 
-## Determine how to connect the target and host
+## 4. Determine how to connect the target and host
 
 Typically, target and host systems are connected by an Ethernet network. If you are doing early bring-up work, or you don't have an Ethernet connection on a device, other network connection options are available. For more information, see these articles:
    -   [Setting up KDNET network kernel debugging automatically](setting-up-a-network-debugging-connection-automatically.md)
@@ -70,39 +73,39 @@ Typically, target and host systems are connected by an Ethernet network. If you 
    -   [Setting up KDNET network kernel debugging manually](setting-up-a-network-debugging-connection.md)
    -   [Setting up network debugging of a virtual machine - KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md)
 
-## Choose either the 32-bit or 64-bit debugging tools
+## 5. Choose either the 32-bit or 64-bit debugging tools
 
 Which debugging tools to choose—32-bit or 64-bit—depends on the version of Windows that is running on the target and host systems and on whether you are debugging 32-bit or 64-bit code. For more information, see [Choosing the 32-Bit or 64-Bit debugging tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
 
-## Configure symbols
+## 6. Configure symbols
 
 To use all of the advanced functionality that WinDbg provides, you must load the proper symbols. If you do not have symbols properly configured, you will receive messages indicating that symbols are not available when you attempt to use functionality that is dependent on symbols. For more information, see [Symbols for Windows debugging (WinDbg, KD, CDB, NTSD)](symbols.md).
 
-## Configure source code
+## 7. Configure source code
 
 If your goal is to debug your own source code, you will need to configure a path to your source code. For more information, see [Source path](source-path.md).
 
-## Become familiar with debugger operation
+## 8. Become familiar with debugger operation
 
 The [Debugger operation](debugger-operation-win8.md) section of this documentation describes debugger operation for various tasks. For example, [Loading debugger extension DLLs](loading-debugger-extension-dlls.md) explains how to load debugger extensions. To learn more about working with WinDbg, see [Debugging using WinDbg](debugging-using-windbg.md).
 
-## Become familiar with debugging techniques
+## 9. Become familiar with debugging techniques
 
 [Standard debugging techniques](standard-debugging-techniques.md) apply to most debugging scenarios, and examples include setting breakpoints, inspecting the call stack, and finding a memory leak. [Specialized debugging techniques](specialized-debugging-techniques.md) apply to particular technologies or types of code. Examples include Plug and Play debugging, KMDF debugging, and RPC debugging.
 
-## Use the debugger reference commands
+## 10. Use the debugger reference commands
 
 Over time, you will use different debugging commands as you work in the debugger. Use the [.hh (Open HTML Help File)](-hh--open-html-help-file-.md) command in the debugger to display help information about any debugging command. For more information about the available commands, see [Debugger reference](debugger-reference.md).
 
-## Use debugging extensions for specific technologies
+## 11. Use debugging extensions for specific technologies
 
 There are multiple debugging extensions that provide parsing of domain-specific data structures. For more information, see [Specialized extensions](specialized-extensions.md).
 
-## Learn about related Windows internals
+## 12. Learn about related Windows internals
 
 This documentation assumes a knowledge of Windows internals. To learn more about Windows internals (including memory usage, context, threads, and processes), review additional resources, such as [*Windows Internals*](https://docs.microsoft.com/en-us/sysinternals/learn/windows-internals) by Mark Russinovich, David Solomon, and Alex Ionescu.
 
-## Review additional debugging resources
+## 13. Review additional debugging resources
 
 Additional resources include the following books and videos:
 -  *Inside Windows Debugging: Practical Debugging and Tracing Strategies* by Tarik Soulami
