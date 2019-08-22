@@ -8,8 +8,9 @@ ms.localizationpriority: medium
 
 # Getting Started with Universal Windows drivers
 
-> [!New: 09/2019 Updates] 
-> We are introducing a new concept called **"Driver Isolation"** for Universal drivers.  Keep reading to learn more!
+> [!NOTE]
+> New: 09/2019 Updates
+> We are introducing a new concept called **"Driver Isolation"** for Universal drivers. 
 
 Universal Windows drivers enable developers to create a single driver package that runs across multiple different device types, from embedded systems to tablets and desktop PCs.
 
