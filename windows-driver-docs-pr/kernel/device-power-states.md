@@ -84,4 +84,4 @@ The table below enumerates the power state mapping of PCI Root Ports and its att
 </tbody>
 </table>
 
-*PCI D3cold power state requires BIOS and device driver support. If support is missing, the PCI endpoint will only be able to achieve D3Hot. For more information, see [Supporting D3Cold in a driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/supporting-d3cold-in-a-driver).
+*PCI D3cold power state requires BIOS and device driver support. If support is missing, the PCI endpoint will only be able to achieve D3Hot. For more information, see [Supporting D3Cold in a driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/supporting-d3cold-in-a-driver).
