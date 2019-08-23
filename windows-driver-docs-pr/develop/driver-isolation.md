@@ -2,9 +2,9 @@
 
 ## Driver Isolation Overview
 
-An isolated driver stores registry and file state using a relative handle to a location provided by OS API's and functionality as opposed to hardcoding global location paths.
+An isolated driver stores registry and file state using a handle to a relative location provided by OS API's as opposed to hardcoding global location paths.
 
-Isolated drivers interact with other drivers and their state through OS API's or interfaces exposed by the drivers and not through hardcoding paths to drivers or their state and manually modifying it through registry or file API's.  Additionally, all isolated drivers are run from the driver store.
+Isolated drivers interact with other drivers and their state through OS API's or interfaces exposed by the driver.  They do not use hardcoded paths manually modify and interact with other drivers' state.  Additionally, all isolated drivers are run from the driver store.
 
 These principles enable an isolated driver to be self-contained and sandboxed which makes it more robust to multiple versions existing or running on a system simultaneously. Additionally, this enables the OS to move drivers to different locations based on new servicing or security features without risking driver functionality.  Below is a diagram of the four main principles that isolated drivers use:
 
@@ -15,7 +15,7 @@ Drivers that follow driver isolation principles are more robust to servicing ope
 
 Isolated drivers have the added benefit of being more resilient to changes in the OS.  Additionally, because isolated drivers leave all driver package files in the driver store, the likelihood of an issue arising during install of the driver is much lower.
 
-Additionally, by leveraging device interfaces, isolated drivers are more robust to changes in other drivers as they do not take dependencies on other drivers modifying state in a global location.  Instead, an appropriately versioned interaction between drivers occurs using a device interface to commumicate state between components. 
+By leveraging device interfaces, isolated drivers are more robust to changes in other drivers as they do not take dependencies on other drivers modifying state in a global location.  Instead, an appropriately versioned interaction between drivers occurs using a device interface to commumicate state between components. 
   
 ## Run From Driver Store
 
@@ -25,7 +25,7 @@ A WDM or KMDF driver that is running from the DriverStore and needs to access ot
 
 Alternatively, on Windows 10 Verison 1803 and later, [IoGetDriverDirectory]() with *DriverDirectoryImage* as the directory type could be used to get the directory path that the driver was loaded from.
 
-For a file payloaded by an INF, the *subdir* listed in the [SourceDisksFiles]() entry for the file in the INF must match the subdir listed in the [DestinationDirs entry for the file in the INF.
+For a file payloaded by an INF, the *subdir* listed in the [SourceDisksFiles]() entry for the file in the INF must match the subdir listed in the [DestinationDirs]() entry for the file in the INF.
 
 Additionally, a [CopyFiles]() directive cannot be used to rename a file. These restrictions are required so that the installation of an INF on a device does not result in the creation of new files in the DriverStore directory.
 
@@ -35,8 +35,7 @@ More information on how to find and load files from the driver store can be foun
 
 ## Provisioning and Accessing Registry State
 
-Access to various state should be done using OS API's that provide a caller with the location of the state and then the state is read/written relative to that location. Hardcoded absolute registry paths and file paths **should not be used** except for some limited exceptions noted in the File State and Registry Exceptions section.
-
+Access to various state should be done using OS API's that provide a caller with the location of the state and then the state is read/written relative to that location. Hardcoded absolute registry paths and file paths **should not be used**.
 ### PnP Device Registry State
 
 There is a need for isolated drivers and user mode components to read, and sometimes write, device state.  There are already two locations that can be used to store device state in the registry. They are called the **"hardware key"** (aka "device key") for the device and the **"software key"** (aka "driver key") for the device. These registry locations are already accessible via API's that give a caller a handle to the location.
@@ -127,7 +126,7 @@ Use the appropriate API's to access this state:
 * WDF
   * [WdfDriverOpenParamatersRegistryKey]()
 * Win32 Services
-  * GetServiceRegistryStateKey
+  * [GetServiceRegistryStateKey]()
 
 ## Provisioning and Accessing File State
 
@@ -149,10 +148,10 @@ If that internal state of the service needs to be shared with other components, 
 The OS provides API’s for services to get storage locations for their internal state, but those storage locations are intended to be accessed only by the service itself. 
 
 * WDM
-  * IoGetDriverDirectory
+  * [IoGetDriverDirectory]()
 * WDF
   * KMDF Drivers
-    * Use WDM API [IoGetDriverDirectory]()
+    * [IoGetDriverDirectory]()
   * UMDF Drivers
     * [WdfDriverRetrieveDriverDataDirectoryString]()
   * Win32 Services
