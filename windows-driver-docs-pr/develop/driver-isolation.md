@@ -2,14 +2,13 @@
 
 ## Driver Isolation Overview
 
-An isolated stores registry and file state using a relative handle to a location provided by OS API's and functionality as opposed to hardcoding global location paths.
+An isolated driver stores registry and file state using a relative handle to a location provided by OS API's and functionality as opposed to hardcoding global location paths.
 
-Drivers should interact with other drivers and their state through OS API's or interfaces exposed by the drivers and not through hardcoding paths to drivers or their state and manually modifying it through registry or file API's.  Additionally, all isolated drivers are run from the driver store.
+Isolated drivers interact with other drivers and their state through OS API's or interfaces exposed by the drivers and not through hardcoding paths to drivers or their state and manually modifying it through registry or file API's.  Additionally, all isolated drivers are run from the driver store.
 
-This enables a driver to be self-contained and sandboxed which makes it more robust to multiple versions existing or running on a system simultaneously. Additionally, this enables the OS to move drivers to different locations based on new servicing or security features without risking driver functionality.  Below is a diagram of the four main principles that isolated drivers use:
+These principles enable an isolated driver to be self-contained and sandboxed which makes it more robust to multiple versions existing or running on a system simultaneously. Additionally, this enables the OS to move drivers to different locations based on new servicing or security features without risking driver functionality.  Below is a diagram of the four main principles that isolated drivers use:
 
 ![screen shot of the output window](images/non-isolated-vs-isolated.png)
-
 ## Benefits of Driver Isolation
 
 Drivers that follow driver isolation principles are more robust to servicing operations as they do not rely on implicit assumptions of global locations existing.  Instead, they use OS API's to get relative handles to locations.
