@@ -4,12 +4,12 @@ description: This page describes the DEVICE_DSM_ACTION constants that can be use
 ms.assetid: cc64c7ad-7d1c-45c7-b236-a43e57086f8d
 keywords: Storage Data Set Management Actions, Data Set Management Actions, DSM Actions
 ms.localizationpriority: medium
-ms.date: 08/232019
+ms.date: 08/23/2019
 ---
 
 # DEVICE_DSM_ACTION Descriptions
 
-This page describes the DEVICE_DSM_ACTION constants that can be used to perform a data set management (DSM) action on a device's data set. These constants are defined in *ntddstor.h*. The nondestructive actions are identified. These actions will not alter any data. See [Data Set Management Overview](data-set-management-overview.md) for information on how a DSM action is processed.
+This page describes the DEVICE_DSM_ACTION constants that can be used to perform a data set management (DSM) action on a device's data set. These constants are defined in *ntddstor.h*. Actions identified as nondestructive will not alter any data. See [Data Set Management Overview](data-set-management-overview.md) for information on how a DSM action is processed.
 
 | DEVICE_DSM_ACTION Constant | Description |
 | -------------------------- | ----------- |
