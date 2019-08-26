@@ -40,7 +40,7 @@ signtool.exe sign /ac <cross-certificate_from_ms> /sha1 <sha1_hash> /t <timestam
 For example:
 
 ```cpp
-signtool.exe sign /ac certificate.cer /sha1 553e39af9e0ea8c9edcd802abbf103166f81fa50 /t "http://timestamp.verisign.com/scripts/timstamp.dll" /d "My Cryptographic Service Provider" csp.dll
+signtool.exe sign /ac certificate.cer /sha1 553e39af9e0ea8c9edcd802abbf103166f81fa50 /t "http://timestamp.digicert.com" /d "My Cryptographic Service Provider" csp.dll
 ```
 
 **Note**  It is unnecessary to include resource ID \#666 in the CSP DLL, or the signature in the registry, as was required for older CSP signatures.
