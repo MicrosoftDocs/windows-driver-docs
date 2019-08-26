@@ -114,7 +114,7 @@ The directory base is the physical address of the first table that is used in vi
 
 For 64-bit Windows, the directory base is the physical address of the Page Map Level 4 (PML4) table. For 32-bit Windows with PAE enabled, the directory base is the physical address of the Page Directory Pointers (PDP) table. For 32-bit Windows with PAE disabled, the directory bas is the physical address of the Page Directory (PD) table.
 
-For related topics, see [**!vtop**](-vtop.md) and [Converting Virtual Addresses to Physical Addresses](converting-virtual-addresses-to-physical-addresses.md). For information about virtual address translation, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
+For related topics, see [**!vtop**](-vtop.md) and [Converting Virtual Addresses to Physical Addresses](converting-virtual-addresses-to-physical-addresses.md). For information about virtual address translation, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
  
 
