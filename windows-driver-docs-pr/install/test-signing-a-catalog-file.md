@@ -37,7 +37,7 @@ Where:
 
 -   The **/n** *TestCertName* option supplies the name of the test certificate that is installed in the certificate store named *TestCertStoreName*. The test certificate can be either a MakeCert test certificate or a commercial test certificate.
 
--   The **/t** *http://timestamp.digicert.com* option supplies the URL to the publicly-available time-stamp server that VeriSign provides.
+-   The **/t** *http://timestamp.digicert.com* option supplies the URL to the publicly-available time-stamp server that DigiCert provides.
 
 -   *CatalogFileName.cat* is the name of the [catalog file](catalog-files.md).
 
