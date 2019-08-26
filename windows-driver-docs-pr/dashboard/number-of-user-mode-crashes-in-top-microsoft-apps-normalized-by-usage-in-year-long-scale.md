@@ -31,9 +31,9 @@ This measure is normalized by usage, in a year-long scale.
 
 1. The measure aggregates telemetry from a 7-day sliding window into a **ratio of crashes in top Microsoft apps, caused by the graphics drivers, over total runtime in years**.
 2. *Total crashes in top Microsoft apps = count(top Microsoft app crashes on machines that have the driver)*
-3. *Total Microsoft Edge runtime = sum(runtime of top Microsoft apps, for each machine that has the driver)*
-4. *Runtime in years = total runtime of top Microsoft apps \* 60 (minute) \* 60 (hour) \* 24 (day) \* 365 (year)*
+3. *Total runtime of top Microsoft apps = sum(runtime of top Microsoft apps, for each machine that has the driver)*
+4. *Runtime in years = Total runtime of top Microsoft apps \* 60 (minute) \* 60 (hour) \* 24 (day) \* 365 (year)*
 
 ### Final calculation
 
-*Crashes in Microsoft Edge normalized by usage = total Microsoft Edge crashes / runtime in years*
+*Crashes in top Microsoft apps normalized by usage = Total crashes in top Microsoft / Runtime in years*

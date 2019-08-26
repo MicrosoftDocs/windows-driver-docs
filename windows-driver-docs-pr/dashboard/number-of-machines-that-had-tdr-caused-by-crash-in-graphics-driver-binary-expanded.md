@@ -34,7 +34,7 @@ During a user’s session, a crash in the graphics driver binary can cause the m
 
 ### Final calculation
 
-5. *Percent of machines with TDR hits = Ratio of machines with TDR * 10,000*
+5. *Number of machines with TDR hits = Ratio of machines with TDR * 10,000*
 6. The result is normalized to 10,000 machines and the final calculation can be read as:  
 
-   i. [Percent of machines with TDR hits] distinct machines out of 10,000 machines hit a bluescreen due to a crash in the graphics driver binary
+   i. [Number of machines with TDR hits] distinct machines out of 10,000 machines hit a bluescreen due to a crash in the graphics driver binary

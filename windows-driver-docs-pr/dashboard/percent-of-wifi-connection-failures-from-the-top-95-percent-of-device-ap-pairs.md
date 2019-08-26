@@ -39,4 +39,4 @@ A Wi-Fi Access Point (AP) is a networking hardware that allows other Wi-Fi enabl
 
 ### Final calculation
 
-*Connection failure rate of device–AP pairs = average(all occurrences)*
+*Connection failure rate of device–AP pairs = average(all instances)*

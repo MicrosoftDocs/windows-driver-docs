@@ -33,4 +33,4 @@ This measure monitors two services - *Windows Audio Service (AudioSrv.dll)* and 
 
 ### Final calculation
 
-*Percent of devices with at least one audio crash = crashing machines/ total machines*
+*Percent of devices with at least one audio crash = Crashing Machines / Total Machines*

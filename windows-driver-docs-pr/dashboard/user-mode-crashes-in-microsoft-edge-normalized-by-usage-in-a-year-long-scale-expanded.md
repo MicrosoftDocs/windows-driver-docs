@@ -36,4 +36,4 @@ This measure is normalized, by usage, in a year-long scale.
 
 ### Final calculation
 
-*Crashes in Microsoft Edge normalized by usage = total Microsoft Edge crashes / runtime in years*
+*Crashes in Microsoft Edge normalized by usage = Total Microsoft Edge crashes / Runtime in years*

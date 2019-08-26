@@ -39,4 +39,4 @@ After a device connects to an access point (AP), it can use that connection to a
 
 ### Final calculation
 
-*Connection failure rate of device–AP pairs to Internet failure = average(all occurrences)*
+*Connection failure rate of device–AP pairs to Internet failure = average(all instances)*

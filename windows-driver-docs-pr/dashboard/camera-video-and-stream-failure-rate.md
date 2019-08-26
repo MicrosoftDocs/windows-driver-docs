@@ -47,4 +47,4 @@ To capture a camera’s video stream, the machine must continuously store the ma
 
 ### Final calculation
 
-*Camera video and stream failure rate = average(all occurrences)*
+*Camera video and stream failure rate = average(all instances)*

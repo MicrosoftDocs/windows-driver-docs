@@ -43,4 +43,4 @@ On a successful Bluetooth pairing, the authentication information is saved local
 
 ### Final calculation
 
-*Bluetooth pairing failure rate = average (all occurrences)*
+*Bluetooth pairing failure rate = average (all instances)*

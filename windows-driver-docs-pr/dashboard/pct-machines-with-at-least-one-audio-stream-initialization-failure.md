@@ -28,10 +28,9 @@ If a device is unable to initialize an audio stream, the user cannot access the 
 ## Calculation
 
 1. The measure aggregates telemetry from a 7-day sliding window into a **percentage of machines that have at least one unexpected initialization failure**
-2. *Machines With Initialization Failure = Count(Unique Machines with at least 1 unexpected initialization failure)*
-3. *Total Machines = Count(Unique Machines that attempted to initalizate an audio stream)*
+2. *Machines With nitialization failure = Count(machines with at least 1 unexpected initialization failure)*
+3. *Total machines = Count(machines that attempted to initalizate an audio stream)*
 
 ### Final calculation
 
-*Percent of machines with at least 1 stream initialization failure =
-machines with initialization failure / total machines*
+*Percent of machines with at least 1 stream initialization failure = Machines with initialization failure / Total machines*

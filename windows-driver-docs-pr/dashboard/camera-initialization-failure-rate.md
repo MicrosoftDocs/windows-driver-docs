@@ -45,4 +45,4 @@ When a someone tries to use an application that accesses the machine’s camera 
 
 ### Final calculation
 
-*Camera initialization failure rate = average (all occurrences)*
+*Camera initialization failure rate = average (all instances)*

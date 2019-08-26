@@ -30,8 +30,8 @@ When users are playing UWP games, their graphics components process visual data 
 1. The measure aggregates telemetry from a 7-day sliding window into a **ratio crashes and hangs in UWP games over runtime normalized to years**
 2. *Total UWP game crashes and hangs = count(crashes and hangs in UWP gaming applications for each machine that has the driver)*
 3. *Total UWP gaming runtime = sum(runtime of all UWP games on each machine that has the driver)*
-4. *Runtime in years = total UWP gaming runtime \* 60 (minute) \* (hour) \* 24 (day) \* 365 (year)*
+4. *Runtime in years = Total UWP gaming runtime \* 60 (minute) \* (hour) \* 24 (day) \* 365 (year)*
 
 ### Final calculation
 
-*Crashes in UWP games normalized by usage = total UWP game crashes and hangs / runtime in years*  
+*Crashes in UWP games normalized by usage = Total UWP game crashes and hangs / Runtime in years*  

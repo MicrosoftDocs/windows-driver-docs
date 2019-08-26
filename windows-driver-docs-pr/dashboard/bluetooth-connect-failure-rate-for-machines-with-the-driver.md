@@ -29,9 +29,9 @@ If two devices are unable to connect with Bluetooth, the user will not be able t
 
 1. The measure aggregates telemetry from a 7-day sliding window into a **percentage of instances where a Bluetooth device failed to connect with another device**.
 
-   a. A single device can have multiple pairing Instances counted by the measure
+   a. A single device can have multiple pairing instances counted by the measure
 
-2. Types of Instances:
+2. Types of instances:
 
    a. *Successful connect or disconnect event = 0% failure*
 
@@ -39,4 +39,4 @@ If two devices are unable to connect with Bluetooth, the user will not be able t
 
 ### Final calculation
 
-*Bluetooth connect failure rate = average (all occurrences)*
+*Bluetooth connect failure rate = average (all instances)*

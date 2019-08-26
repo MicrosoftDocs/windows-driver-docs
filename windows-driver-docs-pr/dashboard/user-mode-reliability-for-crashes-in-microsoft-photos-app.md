@@ -34,4 +34,4 @@ This measure counts the number of crashes in display drivers that happen in the 
 
 ### Final calculation
 
-*Crashes in Microsoft Photos normalized by usage in years = total crashes in Microsoft Photos / runtime in years*
+*Crashes in Microsoft Photos normalized by usage in years = Total crashes in Microsoft Photos / Runtime in years*

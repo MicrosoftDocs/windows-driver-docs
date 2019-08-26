@@ -33,4 +33,4 @@ This measure is monitoring how often Windows Components (e.g. dwm.exe, shell, lo
 
 ### Final Calculation 
 
-4. *Crashes in Windows Components Normalized by device count = Total Windows Component Crashes * 10000 / TotalDevices*
+4. *Crashes in Windows Components Normalized by device count = Total Windows Component Crashes * 10,000 / Total Devices*

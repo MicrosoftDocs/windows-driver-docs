@@ -33,4 +33,4 @@ This measure monitors two services – *Windows Audio Service (AudioSrv.dll)* an
 
 ### Final calculation
 
-*Percent of machines with at least one audio hang = hanging machines / total machines*
+*Percent of machines with at least one audio hang = Hanging machines / Total machines*

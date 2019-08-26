@@ -49,4 +49,4 @@ When attempting to capture an image, the device previews the image that is about
 
 ### Final calculation
 
-*Camera preview failure rate = average(all occurrences)*
+*Camera preview failure rate = average(all instances)*

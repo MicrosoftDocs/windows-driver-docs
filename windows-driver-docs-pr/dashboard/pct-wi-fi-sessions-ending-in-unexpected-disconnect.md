@@ -29,7 +29,7 @@ Once a device successfully connects to Wi-Fi, it must maintain that connection, 
 
 1. The measure aggregates telemetry from a 7-day sliding window into a **percentage of instances where a device unexpectedly disconnects from Wi-Fi**.
 
-   a. The measure aggregates multiple Instances from the same Device-AP pair into a single data point.
+   a. The measure aggregates multiple instances from the same Device-AP pair into a single data point.
 
    b. The measure does not aggregate any Device–AP pairs if their signal strength is below 50%.
 
@@ -41,4 +41,4 @@ Once a device successfully connects to Wi-Fi, it must maintain that connection, 
 
 ### Final calculation
 
-*Percent of Wi-Fi sessions ending in an unexpected connect = average(all occurrences)*
+*Percent of Wi-Fi sessions ending in an unexpected connect = average(all instances)*

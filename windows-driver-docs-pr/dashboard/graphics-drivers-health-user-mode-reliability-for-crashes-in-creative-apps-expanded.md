@@ -29,11 +29,11 @@ This measure is normalized by usage, less than or equal to the baseline goal.
 
 ## Calculation
 
-1. The measure aggregates telemetry from a 7-day sliding window into a **ratio of crashes in creative applications, caused by the graphics drivers, over total runtime in years**.
+1. The measure aggregates telemetry from a 7-day sliding window into a **ratio of crashes in creative applications, caused by the graphics driver, over total runtime in years**.
 2. *Total crashes in creative applications = count(crashes in creative applications on machines that have the driver)*
 3. *Total creative applications runtime = sum(runtime of creative applications, for each machine that has the driver)*
-4. *Runtime in years = total runtime of creative applications \* 60 (minute) \* 60 (hour) \* 24 (day) \* 365 (year)*
+4. *Runtime in years = Total creative applications runtime \* 60 (minute) \* 60 (hour) \* 24 (day) \* 365 (year)*
 
 ### Final calculation
 
-*Crashes in creative applications normalized by usage in years = total crashes in creative applications / runtime in years*
+*Crashes in creative applications normalized by usage in years = Total crashes in creative applications / Runtime in years*

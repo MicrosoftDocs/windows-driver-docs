@@ -33,4 +33,4 @@ When a machine is booting from a low power state, an error in the graphics compo
 
 ### Final calculation
 
-Percent of machines that experienced display issues when resuming from low power = number of machines with display issues / total machines
+*Percent of machines that experienced display issues when resuming from low power = Number of machines with display issues / Total machines*

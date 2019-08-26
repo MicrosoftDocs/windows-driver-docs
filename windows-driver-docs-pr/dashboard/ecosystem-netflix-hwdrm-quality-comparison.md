@@ -37,7 +37,7 @@ Hardware Digital Rights Management (HWDRM) is a feature that enable secure playb
 6.	*Standard Deviation 2 Upper Bound = Mean + (Retail Driver Failure Rate Standard Deviation * 2)*
 
 ### Final Calculation
-8.	Netflix HWDRM Retail Comparison = 
+8.	*Netflix HWDRM Retail Comparison = 
 	i.	0, if Evaluated Driver Standard Failure Rate  =< Standard Deviation 2 Upper Bound
-	ii.	Else, Netflix HWDRM Retail Comparison = 1 
+	ii.	Else, Netflix HWDRM Retail Comparison = 1* 
 

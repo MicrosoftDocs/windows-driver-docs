@@ -32,8 +32,8 @@ This measure is normalized by usage, in a year-long scale.
 1. The measure aggregates telemetry from a 7-day sliding window into a **ratio of crashes and hangs over runtime in Win32 games**.
 2. *Total Win32 game crashes and hangs = count(crashes and hangs in Win32 gaming applications for each machine that has the driver)*
 3. *Total Win32 gaming runtime = sum(runtime of all Win32 games on each machine that has the driver)*
-4. *Runtime in years = total Win32 gaming runtime \* 60 (minute) \* 60 (hour) \* 24 (day) \* 365 (year)*
+4. *Runtime in years = Total Win32 gaming runtime \* 60 (minute) \* 60 (hour) \* 24 (day) \* 365 (year)*
 
 ### Final calculation
 
-*Crashes in Win32 games normalized by usage = total Win32 game crashes and hangs / runtime in years*
+*Crashes in Win32 games normalized by usage = Total Win32 game crashes and hangs / Runtime in years*

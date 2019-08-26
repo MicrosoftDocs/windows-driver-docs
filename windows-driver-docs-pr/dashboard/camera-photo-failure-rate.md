@@ -30,6 +30,7 @@ To capture the camera’s preview into memory, the user can take a photo and sto
 1. The measure aggregates telemetry from a 7-day sliding window in a **percentage of instances where a camera device failed to use the photo feature**.
 
      a. A single device can have multiple Photo Instances counted by the measure
+     
 2. Types of Instances:
 
     a. *Successful photo event = 0% failure* 
@@ -45,4 +46,4 @@ To capture the camera’s preview into memory, the user can take a photo and sto
 
 ### Final calculation
 
-*Camera photo failure rate = average (all occurrences)*
+*Camera photo failure rate = average (all instances)*

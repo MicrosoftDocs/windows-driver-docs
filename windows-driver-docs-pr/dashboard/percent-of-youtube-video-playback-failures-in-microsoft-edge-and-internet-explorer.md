@@ -32,8 +32,8 @@ When users watch YouTube videos with Microsoft Edge or Internet Explorer, their 
 
    a. A single machine can have multiple sessions.
 
-1. Playback failures = count(YouTube \<video>.error elements encountered in Microsoft Edge or Internet Explorer)
+3. Playback failures = count(YouTube \<video>.error elements encountered in Microsoft Edge or Internet Explorer)
 
 ### Final calculation
 
-*Percent of Microsoft Edge or Internet Explorer YouTube HTML5 playback failures = playback failures / count(sessions)*
+*Percent of Microsoft Edge or Internet Explorer YouTube HTML5 playback failures = Playback failures / count(sessions)*

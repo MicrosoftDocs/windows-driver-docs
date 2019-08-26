@@ -39,4 +39,4 @@ This measure determines an *initialization success rate* for each machine and ca
 
 ### Final calculation
 
-*Percent of machines with supbar initialization rates = machines with subpar initialization / total machines*
+*Percent of machines with supbar initialization rates = Machines with subpar initialization / Total machines*
