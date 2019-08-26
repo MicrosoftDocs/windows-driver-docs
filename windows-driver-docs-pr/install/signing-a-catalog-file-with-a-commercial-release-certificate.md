@@ -16,7 +16,7 @@ Use the following [**SignTool**](https://docs.microsoft.com/windows-hardware/dri
  
 
 ```cpp
-SignTool sign /v /s CertificateStore /n CertificateName /t http://timestamp.verisign.com/scripts/timstamp.dll CatalogFileName.cat
+SignTool sign /v /s CertificateStore /n CertificateName /t http://timestamp.digicert.com CatalogFileName.cat
 ```
 
 Where:
@@ -29,7 +29,7 @@ Where:
 
 -   The **/n** *CertificateName* option specifies the name of the certificate in the *CertificateStore* certificate store.
 
--   The **/t**  *http://timestamp.verisign.com/scripts/timstamp.dll* option supplies the URL to the publicly-available time-stamp server that VeriSign provides.
+-   The **/t**  *http://timestamp.digicert.com* option supplies the URL to the publicly-available time-stamp server that VeriSign provides.
 
 -   *CatalogFileName.cat* is the name of the catalog file.
 
