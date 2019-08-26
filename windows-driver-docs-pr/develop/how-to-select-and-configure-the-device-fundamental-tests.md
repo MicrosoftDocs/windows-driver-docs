@@ -68,7 +68,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <dt><span id="To_test_all_devices_that_were_installed_with_a_specific_INF_File_"></span><span id="to_test_all_devices_that_were_installed_with_a_specific_inf_file_"></span><span id="TO_TEST_ALL_DEVICES_THAT_WERE_INSTALLED_WITH_A_SPECIFIC_INF_FILE_"></span>To test all devices that were installed with a specific INF File:</dt>
 <dd><p><strong>INF::FileName=</strong><em>INF_File_Name</em></p>
 <p>For example, <strong>INF::OriginalInfFileName='KMDFTest.inf'</strong></p>
- <p><strong>Inf::OrigionalInFileName can be used with any inf.</strong></p>
+ <p><strong>Inf::OriginalInFileName can be used with any INF.</strong></p>
 
 </dd>
 <dt><span id="To_test_a_device_with_a_specific_Device_Id__"></span><span id="to_test_a_device_with_a_specific_device_id__"></span><span id="TO_TEST_A_DEVICE_WITH_A_SPECIFIC_DEVICE_ID__"></span>To test a device with a specific Device Id: </dt>
