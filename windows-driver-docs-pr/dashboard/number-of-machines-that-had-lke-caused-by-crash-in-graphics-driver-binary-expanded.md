@@ -30,11 +30,11 @@ During a user’s session, a crash in the driver binary causes a live kernel eve
 1. The measure aggregates telemetry from a 7-day sliding window into a **myriad** of **distinct machines that experienced an LKE due to a crash in the graphics driver binary, over the population**.
 2. *Machines with a LKE = count(machines with the driver that had a LKE)*
 3. *Total machines = count(machines with the driver)*
-4. *Ratio of machines that had a LKE = machines with a LKE / total machines*
+4. *Ratio of machines that had a LKE = Machines with a LKE / Total machines*
 
 ### Final calculation
 
-5. *LKE machine hits over population = ratio of machines that had a LKE * 10,000*
+5. *LKE machine hits over population = Ratio of machines that had a LKE * 10,000*
 6. The result is normalized to 10,000 machines and the Final Calculation is read as:
 
-   i. [Final calculation] distinct machines out of 10,000 machines encountered an LKE due to a crash in the graphics driver binary
+   i. [LKE machine hits over population] distinct machines out of 10,000 machines encountered an LKE due to a crash in the graphics driver binary

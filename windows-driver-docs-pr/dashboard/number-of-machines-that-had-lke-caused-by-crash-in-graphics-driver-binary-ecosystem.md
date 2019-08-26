@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-During a user’s session, a crash in the driver binary causes a live kernel event (LKE), which can restart the machine and can interrupt a user’s workflow. This measure is evaluating how many machines with the driver are encountering LKEs due to a crash in the graphics binary.
+During a user’s session, a crash in the driver binary causes a live kernel event (LKE), which can restart the machine and can interrupt a user’s workflow. This measure is evaluating how many machines with the given driver version are encountering LKEs due to a crash in the graphics binary, over the population.
 
 ## Measure attributes
 
@@ -28,13 +28,13 @@ During a user’s session, a crash in the driver binary causes a live kernel eve
 ## Calculation
 
 1. The measure aggregates telemetry from a 7-day sliding window into a **myriad** of **distinct machines that experienced an LKE due to a crash in the graphics driver binary, over the population**.
-2. *Machines with a LKE = count(machines with the driver that had a LKE)*
-3. *Total machines = count(machines with the driver)*
-4. *Ratio of machines that had a LKE = machines with a LKE / total machines*
+2. *Machines with a LKE = count(machines with the given driver version that had a LKE)*
+3. *Total machines = count(machines with the given driver version)*
+4. *Ratio of machines that had a LKE = Machines with a LKE / Total machines*
 
 ### Final calculation
 
-5. *LKE machine hits over population = ratio of machines that had a LKE * 10,000*
+5. *LKE machine hits over population = Ratio of machines that had a LKE * 10,000*
 6. The result is normalized to 10,000 machines and the Final Calculation is read as:
 
-   i. [Final calculation] distinct machines out of 10,000 machines encountered an LKE due to a crash in the graphics driver binary
+   i. [LKE machine hits over population] distinct machines out of 10,000 machines encountered an LKE due to a crash in the graphics driver binary

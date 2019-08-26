@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-During a user’s session, a crash in the graphics driver binary causes a blue screen, which restarts the machines and can interrupt a user’s workflow. This measure is evaluating how many machines with the driver are encountering blue screens due to a crash in the graphics driver binary.
+During a user’s session, a crash in the graphics driver binary causes a blue screen, which restarts the machines and can interrupt a user’s workflow. This measure is evaluating how many machines with the given driver version are encountering blue screens due to a crash in the graphics driver binary, over the population.
 
 ## Measure attributes
 
@@ -28,13 +28,13 @@ During a user’s session, a crash in the graphics driver binary causes a blue s
 ## Calculation
 
 1. The measure aggregates telemetry from a 7-day sliding window into a **myriad** of **distinct machines that experienced a blue screen caused by a crash in the graphics driver binary, over the population**.
-2. *Machines that blue screened = count(machines with the driver that had a blue screen)*
-3. *Total machines = count(machines with the driver)*
-4. *Ratio of blue screened machines = machines that blue screened / total machines*
+2. *Machines that blue screened = count(machines with the given driver version that had a blue screen)*
+3. *Total machines = count(machines with the given driver version)*
+4. *Ratio of blue screened machines = Machines that blue screened / Total machines*
 
 ### Final calculation
 
-5. *Blue screen machine hits over population = ratio of blue screened machines * 10,000*
+5. *Blue screen machine hits over population = Ratio of blue screened machines * 10,000*
 6. The result is normalized to 10,000 machines and the Final Calculation can be read as: 
 	
-	i. [Final Calculation] distinct machines out of 10,000 machines hit a blue screen due to a crash in the graphics driver binary
+	i. [Blue screen machine hits over population] distinct machines out of 10,000 machines hit a blue screen due to a crash in the graphics driver binary

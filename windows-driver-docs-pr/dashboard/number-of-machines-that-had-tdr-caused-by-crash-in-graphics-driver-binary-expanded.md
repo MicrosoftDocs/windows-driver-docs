@@ -30,11 +30,11 @@ During a user’s session, a crash in the graphics driver binary can cause the m
 1. The measure aggregates telemetry from a 7-day sliding window into a **myriad** of **distinct machines that experienced a TDR caused by a crash in the graphics driver binary, over the population**.
 2. *Machines with a TDR = count(machines with the driver that had a TDR)*
 3. *Total machines = count(machines with the driver)*
-4. *Ratio of machines with a TDR = machines with a TDR / total machines*
+4. *Ratio of machines with a TDR = Machines with a TDR / Total machines*
 
 ### Final calculation
 
-5. *Percent of machines with TDR hits = ratio of machines with TDR * 10,000*
+5. *Percent of machines with TDR hits = Ratio of machines with TDR * 10,000*
 6. The result is normalized to 10,000 machines and the final calculation can be read as:  
 
-   i. [Final calculation] distinct machines out of 10,000 machines hit a bluescreen due to a crash in the graphics driver binary
+   i. [Percent of machines with TDR hits] distinct machines out of 10,000 machines hit a bluescreen due to a crash in the graphics driver binary
