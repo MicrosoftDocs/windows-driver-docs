@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 Use the following **SignTool** for 64-bit versions of Windows Vista and later versions of Windows must have an embedded SPC signature.
 
 ```cpp
-SignTool sign /v /ac CrossCertificateFile /s SPCCertificateStore /n SPCCertificateName /t http://timestamp.verisign.com/scripts/timstamp.dll DriverFileName.sys
+SignTool sign /v /ac CrossCertificateFile /s SPCCertificateStore /n SPCCertificateName /t http://timestamp.digicert.com DriverFileName.sys
 ```
 
 Where:
@@ -30,14 +30,14 @@ Where:
 
 -   The **/n** *SPCCertificateName* option specifies the name of the certificate in the *SPCCertificateStore* certificate store.
 
--   The **/t** *http://timestamp.verisign.com/scripts/timstamp.dll* option supplies the URL to the publicly-available time-stamp server that VeriSign provides.
+-   The **/t** *http://timestamp.digicert.com option supplies the URL to the publicly-available time-stamp server that VeriSign provides.
 
 -   *DriverFileName.sys* is the name of the driver file.
 
-The following command embeds a signature in *Toaster.sys* that is generated from a certificate named "contoso.com" in the Personal "my" certificate store and the corresponding cross-certificate *Rsacertsvrcross.cer*. In addition, the signature is time-stamped by the time stamp service http://timestamp.verisign.com/scripts/timstamp.dll. In this example, *Toaster.sys* is in the *amd64* subdirectory under the directory in which the command is run.
+The following command embeds a signature in *Toaster.sys* that is generated from a certificate named "contoso.com" in the Personal "my" certificate store and the corresponding cross-certificate *Rsacertsvrcross.cer*. In addition, the signature is time-stamped by the time stamp service http://timestamp.digicert.com. In this example, *Toaster.sys* is in the *amd64* subdirectory under the directory in which the command is run.
 
 ```cpp
-SignTool sign /v /ac c:\lab\rsacertsrvcross.cer /s my /n contoso.com /t http://timestamp.verisign.com/scripts/timstamp.dll amd64\toaster.sys
+SignTool sign /v /ac c:\lab\rsacertsrvcross.cer /s my /n contoso.com /t http://timestamp.digicert.com amd64\toaster.sys
 ```
 
  
