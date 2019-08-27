@@ -30,7 +30,7 @@ Where:
 
 -   The **/n** *SPCCertificateName* option specifies the name of the certificate in the *SPCCertificateStore* certificate store.
 
--   The **/t** *http://timestamp.digicert.com option supplies the URL to the publicly-available time-stamp server that VeriSign provides.
+-   The **/t** *http://timestamp.digicert.com option supplies the URL to the publicly-available time-stamp server that DigiCert provides.
 
 -   *DriverFileName.sys* is the name of the driver file.
 
