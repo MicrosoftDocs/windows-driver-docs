@@ -43,7 +43,7 @@ The [**.bugcheck (Display Bug Check Data)**](-bugcheck--display-bug-check-data-.
 
 The following debugger extensions are especially useful for analyzing a kernel-mode crash dump:
 
-[**!drivers**](-drivers.md)
+[**lm**](lm--list-loaded-modules-.md)
 
 [**!kdext\*.locks**](-locks---kdext--locks-.md)
 
