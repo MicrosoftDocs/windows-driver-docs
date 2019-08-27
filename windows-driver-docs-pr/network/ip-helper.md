@@ -28,13 +28,13 @@ Your driver can use the following kernel-mode functions, MIB structures, and MIB
 
 ### Interface Conversion Functions
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
+<table>  
+<colgroup>  
+<col width="50%" />  
+<col width="50%" />  
+</colgroup>  
+<thead>  
+<tr class="header">  
 <th align="left">Function</th>
 <th align="left">Description</th>
 </tr>
