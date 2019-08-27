@@ -14,9 +14,9 @@ You can browse and download individual Windows 10 driver samples on the [Microso
 
 Earlier versions of Windows driver samples are archived here:
 
-- [Windows 8 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616509)
-
 - [Windows 8.1 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=618052)
+
+- [Windows 8 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616509)
 
 For Windows 7, samples were included in the Windows Driver Kit (WDK).
 
