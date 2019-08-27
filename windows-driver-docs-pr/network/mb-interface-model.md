@@ -23,14 +23,14 @@ These scenarios are discussed in more detail throughout the MB Interface Model t
 
 *Microsoft OS compatible IDs*
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
+<table>  
+<colgroup>  
+<col width="33%" />  
+<col width="33%" />  
+<col width="33%" />  
+</colgroup>  
+<thead>  
+<tr class="header">  
 <th align="left">Microsoft OS Compatible ID</th>
 <th align="left">Microsoft OS Sub Compatible ID</th>
 <th align="left">Required for Scenario</th>
