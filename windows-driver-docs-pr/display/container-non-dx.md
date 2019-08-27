@@ -38,11 +38,11 @@ If the second name is empty, the file name is the same as in the driver store (e
 This allows the driver to have different names in the host driver store and in the guest. 
 
 ### Example 1:
-INF [service-install-section] section  
+INF [DDInstall] section  
 HKR, "softgpukmd\CopyToVmOverwrite", SoftGpuFiles, %REG_MULTI_SZ%, "CopyToVm\softgpu1.dll", "softgpu2.dll"  
 
-The directive will create the registry key in the service key:
-"HKLM\SYSTEM\CurrentControlSet\Services\softgpukmd\CopyToVmOverwrite", SoftGpuFiles = REG_MULTI_SZ, "CopyToVm\softgpu1.dll", "softgpu2.dll"
+The directive will create the registry key in the software (adapter) key:
+"HKLM\SYSTEM\CurrentControlSet\Control\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}\\\<number>\CopyToVmOverwrite", SoftGpuFiles = REG_MULTI_SZ, "CopyToVm\softgpu1.dll", "softgpu2.dll"
 
 The OS will copy \<DriverStorePath>\CopyToVm\softgpu1.dll to %windir%\system32\softgpu2.dll
 
