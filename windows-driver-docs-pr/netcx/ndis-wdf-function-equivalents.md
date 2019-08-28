@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 # NDIS-WDF function equivalents
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 The following table lists NDIS functions and their WDF equivalents:
 
 |NDIS API Family|WDF Equivalent|

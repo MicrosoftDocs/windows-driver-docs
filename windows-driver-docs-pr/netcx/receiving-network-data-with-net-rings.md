@@ -11,8 +11,6 @@ ms.custom: 19H1
 
 # Receiving network data with net rings
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 NetAdapterCx client drivers receive network data when the framework invokes their [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback function for a receive queue. During this callback, client drivers indicate receives by draining received fragments and packets to the OS, then post new buffers to hardware.
 
 ## Receive (Rx) post and drain operation overview

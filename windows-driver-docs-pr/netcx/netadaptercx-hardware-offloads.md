@@ -10,8 +10,6 @@ ms.custom: 19H1
 
 # NetAdapterCx hardware offloads
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 To increase its performance, the Windows TCP/IP stack can offload some tasks to a network interface card (NIC) that has the appropriate task offload capabilities.
 
 ## Overview of offloads in NetAdapterCx

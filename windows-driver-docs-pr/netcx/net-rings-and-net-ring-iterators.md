@@ -11,8 +11,6 @@ ms.custom: 19H1
 
 # Introduction to net rings and net ring iterators
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 ## NET_RING overview
 
 A **NET_RING** is a circular buffer of network data that is shared between NetAdapterCx and a client driver. Every packet queue in a client driver has two rings: a *packet ring* for core packet descriptors, and a *fragment ring* for each packet's fragment descriptors.

@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 # Configuring power management
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 This topic describes how to configure power management capabilities in a NetAdapterCx client driver.
 
 Because the client driver is a WDF driver, much of the implementation is the same as any other WDF driver, and then there are a few options specific to NetAdapterCx that you can add in.

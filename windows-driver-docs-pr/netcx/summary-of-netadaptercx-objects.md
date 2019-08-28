@@ -11,8 +11,6 @@ ms.custom: 19H1
 
 # Summary of NetAdapterCx objects
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 The following figure shows the default parent-child relationships for NetAdapterCx objects. Parent objects are at the top of the figure, so for example the NETADAPTER object is, by default, a child of the WDFDEVICE object. Objects that can have multiple instances are denoted by a double box.
 
 ![Summary of NetAdapterCx objects for a NetAdapterCx client driver](images/netcx-adapter-object-model.png "Summary of NetAdapterCx objects for a NetAdapterCx client driver")

@@ -11,8 +11,6 @@ ms.custom: 19H1
 
 # Canceling network data with net rings
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 NetAdapterCx client drivers cancel network data when the framework invokes their [*EvtPacketQueueCancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_cancel) callback function for a packet queue. This callback is where client drivers perform any processing needed before the framework deletes the packet queues.
 
 ### Canceling a transmit queue

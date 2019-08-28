@@ -11,8 +11,6 @@ ms.custom: 19H1
 
 # Sending network data with net rings
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 NetAdapterCx client drivers send network data when the framework invokes their [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback function for a transmit queue. During this callback, client drivers post buffers from the queue's fragment ring to hardware, then drain completed packets and fragments back to the OS.
 
 ## Transmit (Tx) post and drain operation overview

@@ -11,8 +11,6 @@ ms.custom: 19H1
 
 # Network data buffer management
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 Buffer management is a feature that enables Network Interface Card (NIC) client drivers and the operating system to work together when allocating packet data buffers from system memory for the transmit (Tx) and receive (Rx) data paths. This can result in faster performance for the NIC, easier memory lifetime management for the NIC's client driver, and more control for the system over the memory.
 
 ## The benefits of buffer management in NetAdapterCx

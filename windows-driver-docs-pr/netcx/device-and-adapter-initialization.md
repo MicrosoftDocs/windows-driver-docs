@@ -11,8 +11,6 @@ ms.custom: 19H1
 
 # Device and adapter initialization
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 This topic describes the steps for a NetAdapterCx client driver to initialize and start WDFDEVICE and NETADAPTER objects. For more info about these objects and their relationship, see [Summary of NetAdapterCx objects](summary-of-netadaptercx-objects.md).
 
 ## EVT_WDF_DRIVER_DEVICE_ADD

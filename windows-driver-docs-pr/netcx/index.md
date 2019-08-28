@@ -4,7 +4,7 @@ description: Network Adapter WDF Class Extension (NetAdapterCx)
 ms.assetid: 74719A80-AE66-410F-85B7-31B6F455A818
 keywords:
 - Network Adapter Class Extension, Network Adapter WDF Class Extension, NetAdapterCx, NetCx
-ms.date: 03/21/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,7 +13,8 @@ ms.custom: 19H1
 
 # Network Adapter WDF Class Extension (NetAdapterCx)
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+> [!NOTE]
+> The first official release of NetAdapterCx is version 2.0. All versions before 2.0 are prerelease versions and are no longer supported. Any NetAdapterCx client driver written for a prerelease version of the framework must be rebuilt for 2.0. For more info, see [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md).
 
 ## Overview
 

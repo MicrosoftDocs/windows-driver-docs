@@ -11,8 +11,6 @@ ms.custom: 19H1
 
 # Debugging a NetAdapterCx client driver
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 You can use [Windows Driver Framework Extensions (Wdfkd.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/kernel-mode-driver-framework-extensions--wdfkd-dll-) commands to debug your client driver.  In addition, [!ndiskd.netadapter](https://docs.microsoft.com/windows-hardware/drivers/debugger/-ndiskd-netadapter) will show networking-specific properties of your adapter.
 
 Also, you can use the `!ndiskd.netrb` debugger extension with the address of a [**NET_RING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringbuffer/ns-netringbuffer-_NET_RING) structure to examine packets and fragments in a ring buffer.  This command gives you additional information, such as the number of elements in the ring buffer, along with the number of packets owned by the OS and the number of packets owned by the client.

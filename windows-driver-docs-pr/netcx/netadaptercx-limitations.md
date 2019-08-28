@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 # NetAdapterCx limitations
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 This topic describes caveats you should be aware of when calling WDF functions from a NetAdapterCx client driver.
 
 |Function | Description |
