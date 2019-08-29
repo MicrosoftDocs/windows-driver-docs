@@ -31,7 +31,7 @@ Next, you need to determine whether you will do kernel-mode or user-mode debuggi
 
 *User mode* is the mode that applications and subsystems on the computer run in. Processes that run in user mode do so within their own virtual address spaces. They are restricted from gaining direct access to many parts of the system, including system hardware, memory that was not allocated for their use, and other portions of the system that might compromise system integrity. Because processes that run in user mode are effectively isolated from the system and other user-mode processes, they cannot interfere with these resources.
 
-If your goal is to debug a driver, determine if the driver is a kernel-mode driver or a user-mode driver. Kernel-mode drivers are often identified as Windows Driver Model (WDM) drivers or as Kernel-Mode Driver Framework (KMDF) drivers. User-mode drivers are typically identified as User-Mode Driver Framework (UMDF) drivers.
+If your goal is to debug a driver, determine if the driver is a kernel-mode driver or a user-mode driver. Windows Driver Model (WDM) drivers and Kernel-Mode Driver Framework (KMDF) are both kernel-mode drivers. As the name sugests, User-Mode Driver Framework (UMDF) drivers are user-mode drivers.
 
 For some issues, it can be difficult to determine which mode the code executes in. In that case, you may need to pick one mode and look to see what information is available in that mode. Some issues require using the debugger in both user mode and kernel mode.
 
