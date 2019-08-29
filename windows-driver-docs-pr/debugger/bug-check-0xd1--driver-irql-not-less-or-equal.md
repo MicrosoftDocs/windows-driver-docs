@@ -64,9 +64,7 @@ The DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x000000D1. This
 
 ## Cause
 
-Typically, when this error occurs, a driver has tried to access an address that is pageable (or that is completely invalid) while the interrupt request level (IRQL) was too high.
-
-This can be caused by:
+Typically, when this error occurs, a driver has tried to access an address that is pageable (or that is completely invalid) while the interrupt request level (IRQL) was too high. This can be caused by:
 
  - Dereferencing a bad pointer (such as a NULL or freed pointer) while executing at or above DISPATCH_LEVEL.
 
@@ -78,7 +76,7 @@ If a driver that is responsible for the error can be identified, its name is pri
 
 This bug check is usually caused by drivers that have used improper memory addresses.
 
-Possible causes for the page fault include the following:
+Possible causes for the page fault include the following events:
 
 - The function was marked as pageable and was running at an elevated IRQL (which includes obtaining a lock).
 
@@ -149,4 +147,4 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 - Confirm that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).
 
-For additional general troubleshooting information, see [Blue Screen Data](blue-screen-data.md).
+For additional general troubleshooting information, see [Blue screen data](blue-screen-data.md).

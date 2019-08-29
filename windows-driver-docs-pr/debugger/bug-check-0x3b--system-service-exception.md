@@ -73,7 +73,7 @@ Common exception codes include:
 
 ## Resolution
 
-To debug this problem, use the [**.cxr** (display context record)](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md). You can also set a breakpoint in the code that precedes this stop code and attempt to single step forward into the faulting code. Use the [**u**, **ub**, **uu** (unassemble)](u--unassemble-.md) commands to see the assembly program code.
+To debug this problem, use the [**.cxr** (display context record)](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md). You can also set a breakpoint in the code that precedes this stop code and attempt to single-step forward into the faulting code. Use the [**u**, **ub**, **uu** (unassemble)](u--unassemble-.md) commands to see the assembly program code.
 
 
 The [**!analyze**](-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause. The following example is output from **!analyze**.

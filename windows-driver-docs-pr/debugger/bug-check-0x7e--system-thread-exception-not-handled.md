@@ -74,7 +74,7 @@ For a complete list of exception codes, see [NTSTATUS values](https://docs.micro
 
 If you plan to debug this problem, the exception address (parameter 2) should identify the driver or function that caused this problem.
 
-If a driver is listed by name within the bug check message, disable or remove that driver. If the issue is narrowed down to a single driver, set breakpoints and single-step in code to locate the failure and gain insight into events leading up to the crash.
+If a driver is listed by name within the bug check message, disable or remove that driver. If the issue is narrowed down to a single driver, set breakpoints and single-step forward in code to locate the failure and gain insight into events leading up to the crash.
 
 The [**!analyze**](-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause. 
 
@@ -103,7 +103,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   Check with your hardware vendor for any ACPI or other firmware updates. Hardware issues, such as system incompatibilities, memory conflicts, and IRQ conflicts can also generate this error.
 
--   You can also disable memory caching/shadowing of the BIOS to try to resolve the error. You should also run hardware diagnostics that the system manufacturer supplies.
+-   You can also disable memory caching/shadowing of the BIOS to try to resolve the error. Also run hardware diagnostics that the system manufacturer supplies.
 
 -   Confirm that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).
 
