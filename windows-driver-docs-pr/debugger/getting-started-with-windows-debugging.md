@@ -78,7 +78,7 @@ The [Debugger operation](debugger-operation-win8.md) section of this documentati
 
 ## 10. Use the debugger reference commands
 
-Over time, you will use different debugging commands as you work in the debugger. Use the [.hh (Open HTML Help File)](-hh--open-html-help-file-.md) command in the debugger to display help information about any debugging command. For more information about the available commands, see [Debugger reference](debugger-reference.md).
+Over time, you will use different debugging commands as you work in the debugger. Use the [**.hh** (open HTML help file)](-hh--open-html-help-file-.md) command in the debugger to display help information about any debugging command. For more information about the available commands, see [Debugger reference](debugger-reference.md).
 
 ## 11. Use debugging extensions for specific technologies
 
