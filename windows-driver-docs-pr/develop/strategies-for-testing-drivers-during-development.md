@@ -43,7 +43,8 @@ Use the following suggestions for testing your driver code and driver package.
 
 -   Run the Device Fundamental tests that are included in the WDK. See [How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md) and [How to select and configure the Device Fundamental Tests](how-to-select-and-configure-the-device-fundamental-tests.md).
 
--   Set up a debugger so that you can troubleshoot and debug the test results. For more information, see [Setting Up Kernel-Mode Debugging in Visual Studio](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-kernel-mode-debugging-in-visual-studio).
+-   Set up a debugger so that you can troubleshoot and debug the test results. For more information, see [Getting Started with Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windows-debugging).
+ 
 -   Enable Driver Verifier on the test computers you use for deployment, see [Driver Verifier Properties for Driver Projects](driver-verifier-properties-for--driver-projects.md). Select the [DDI Compliance checking](https://docs.microsoft.com/windows-hardware/drivers/devtest/ddi-compliance-checking) option. If your driver fails DDI Compliance checking, run [Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier) and specify the rule or rules that caused the failure. The Static Driver Verifier can help you locate the cause of the bug in your source files.
 -   Test your driver and device on as many different hardware configurations as you possibly can. Varying the hardware can help you find conflicts between devices and other errors in device interactions. For example, you should test your driver and device on computers that have different processor architectures and on computers that are running 32-bit and 64-bit versions of Windows.
 
@@ -51,12 +52,3 @@ Use the following suggestions for testing your driver code and driver package.
 -   Test your driver and device on multiprocessor systems. Race conditions and other timing problems appear on multiprocessor systems that would not otherwise be found. See [How to select and configure the Device Fundamental Tests](how-to-select-and-configure-the-device-fundamental-tests.md) and [Boot Parameters to Test Drivers for Multiple Processor Group Support](https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-parameters-to-test-drivers-for-multiple-processor-group-support).
 
 -   Test your driver and device for specific system and hardware conditions, particularly edge conditions. For example, these conditions might include "D3 hot" and "D3 cold." Make sure your driver and device can return correctly from device power state "D3 hot" (without losing power) and "D3 cold" (when power is removed from the device). For more information, see [How to select and configure the Device Fundamental Tests](how-to-select-and-configure-the-device-fundamental-tests.md).
-
- 
-
- 
-
-
-
-
-

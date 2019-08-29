@@ -55,15 +55,15 @@ The display text that is associated with each value that appears in the menu.
 
 The following table describes the possible INF entries for the Power Management keywords.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
+<table>  
+<colgroup>  
+<col width="25%" />  
+<col width="25%" />  
+<col width="25%" />  
+<col width="25%" />  
+</colgroup>  
+<thead>  
+<tr class="header">  
 <th align="left">SubkeyName</th>
 <th align="left">ParamDesc</th>
 <th align="left">Value</th>

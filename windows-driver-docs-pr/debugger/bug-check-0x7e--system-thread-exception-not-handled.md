@@ -24,7 +24,6 @@ The SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000007E.
 
 ## SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED parameters
 
-
 <table>
 <colgroup>
 <col width="20%" />
@@ -56,18 +55,17 @@ The SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000007E.
 </tbody>
 </table>
 
- 
 ## Cause
 
-This bug check indicates that a system thread generated an exception that the error handler did not catch. To interpret it, you must identify which exception was generated, as identified by parameter 1.
+This bug check indicates that a system thread generated an exception that the error handler did not catch. To interpret it, you must identify which exception was generated.
 
 Common exception codes include the following:
 
--   0x80000002: STATUS\_DATATYPE\_MISALIGNMENT indicates an unaligned data reference was encountered.
+- 0x80000002: STATUS\_DATATYPE\_MISALIGNMENT indicates an unaligned data reference was encountered.
 
--   0x80000003: STATUS\_BREAKPOINT indicates a breakpoint or ASSERT was encountered when no kernel debugger was attached to the system.
+- 0x80000003: STATUS\_BREAKPOINT indicates a breakpoint or ASSERT was encountered when no kernel debugger was attached to the system.
 
--   0xC0000005: STATUS\_ACCESS\_VIOLATION indicates a memory access violation occurred.
+- 0xC0000005: STATUS\_ACCESS\_VIOLATION indicates a memory access violation occurred.
 
 For a complete list of exception codes, see [NTSTATUS values](https://docs.microsoft.com/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are defined in *ntstatus.h*, a header file provided by the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/). (For more info, see [Header files in the Windows Driver Kit](../gettingstarted/header-files-in-the-windows-driver-kit.md)). 
 
@@ -93,11 +91,6 @@ For more information about WinDbg and **!analyze**, see the following topics:
  - [Analyzing a kernel-mode dump file with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
  - [Using the !analyze extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
-
-
-### Time Travel Trace
-
-If the bug check can be reproduced on demand, investigate the possibility of taking a time-travel trace by using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 
 
 ## Remarks

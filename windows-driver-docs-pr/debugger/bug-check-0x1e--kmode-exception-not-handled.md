@@ -186,7 +186,3 @@ fe40cf30 fe43a4f5 ff6cd008 ffb6c820 00000000 QIC117!_cqd_ProcessFRB@8+0x134
 fe40cf4c 80133184 ff6ce388 00000000 00000000 QIC117!_kdi_ThreadRun@4+0xa9
 fe40cf7c 8013cb8e fe43a44c ff6ce388 00000000 NT!_PspSystemThreadStartup@8+0x40
 ```
-
-### Time Travel Trace
-
-If the bug check can be reproduced on demand, investigate the possibility of taking a time-travel trace by using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).

@@ -30,7 +30,7 @@ Use [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/s
 Use the following SignTool command to embed a signature in a driver file by using a [MakeCert test certificate](makecert-test-certificate.md) or a [commercial test certificate](commercial-test-certificate.md).
 
 ```cpp
-SignTool sign /v /s TestCertStoreName /n TestCertName /t http://timestamp.verisign.com/scripts/timstamp.dll DriverFileName.sys
+SignTool sign /v /s TestCertStoreName /n TestCertName /t http://timestamp.digicert.com DriverFileName.sys
 ```
 
 Where:
@@ -43,14 +43,14 @@ Where:
 
 -   The **/n** *TestCertName* option supplies the name of the test certificate that is installed in the certificate store named *TestCertStoreName*. The test certificate can be either a MakeCert test certificate or a commercial test certificate.
 
--   The **/t** *http://timestamp.verisign.com/scripts/timstamp.dll* option supplies the URL to the publicly-available time-stamp server that VeriSign provides.
+-   The **/t** *http://timestamp.digicert.com* option supplies the URL to the publicly-available time-stamp server that DigiCert provides.
 
 -   *DriverFileName.sys* is the name of the driver file.
 
 The following command shows how to use SignTool to test-sign a driver file. This example embeds a signature in *Toaster.sys*, which is in the *amd64* subdirectory under the directory in which the command is run. The test certificate is named "contoso.com(test)" and it is installed in the certificate store named "PrivateCertStore."
 
 ```cpp
-SignTool sign /v /s PrivateCertStore /n contoso.com(test) /t http://timestamp.verisign.com/scripts/timstamp.dll amd64\toaster.sys
+SignTool sign /v /s PrivateCertStore /n contoso.com(test) /t http://timestamp.digicert.com amd64\toaster.sys
 ```
 
 ### <a href="" id="using-an-enterprise-ca-test-certificate-to-embed-a-test-signature-in-a"></a>**Using an Enterprise CA Test Certificate to Embed a Test Signature in a Driver File**
@@ -60,7 +60,7 @@ The following SignTool command assumes that an Enterprise CA issues the test cer
 If you have created or obtained other test certificates in addition to an Enterprise CA test certificate, you must use the SignTool options **/s** and **/n** to specify the name of the test certificate store and the name of the test certificate that is installed in the test certificate store.
 
 ```cpp
-SignTool sign /v /a /t http://timestamp.verisign.com/scripts/timstamp.dll DriverFileName.sys
+SignTool sign /v /a /t http://timestamp.digicert.com DriverFileName.sys
 ```
 
  

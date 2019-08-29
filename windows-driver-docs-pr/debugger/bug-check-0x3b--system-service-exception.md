@@ -108,7 +108,7 @@ Error code: (NTSTATUS) 0xc0000005 (3221225477) - The instruction at 0x%p referen
 
 Look at the **STACK TEXT** output from WinDbg for clues about what was running when the failure occurred. If multiple dump files are available, compare their information to look for common code that is in the stack. Use debugger commands like [**kb** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
 
-Use the command `lm t n` to list modules that are loaded in memory. 
+Use the following command to list modules that are loaded in memory: **lm t n**
 
 Use **!memusage** to examine the general state of the system memory. You can also use the commands **!pte** and **!pool** to examine specific areas of memory. 
 
@@ -119,11 +119,6 @@ In the past, this error has been linked to excessive use of the paged pool, whic
 Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it identifies errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. Driver Verifier Manager is built into Windows and is available on all Windows PCs. 
 
 To start Driver Verifier Manager, enter **verifier** at a command prompt. You can configure which drivers to verify. The code that verifies drivers adds overhead as it runs, so try to verify the smallest number of drivers possible. For more information, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
-
-
-### Time Travel Trace
-
-If the bug check can be reproduced on demand, investigate the possibility of taking a time-travel trace by using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 
 
 ## Remarks

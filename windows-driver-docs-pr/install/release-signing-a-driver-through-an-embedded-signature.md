@@ -30,7 +30,7 @@ As with [catalog files](catalog-files.md), the [**SignTool**](https://docs.micro
 To test-sign the *toaster.sys* file, run the following command line:
 
 ```cpp
-Signtool sign /v /fd sha256 /ac MSCV-VSClass3.cer /s MyPersonalStore /n contoso.com /t http://timestamp.verisign.com/scripts/timstamp.dll amd64\toaster.sys
+Signtool sign /v /fd sha256 /ac MSCV-VSClass3.cer /s MyPersonalStore /n contoso.com /t http://timestamp.digicert.com amd64\toaster.sys
 ```
 
 Where:
@@ -47,7 +47,7 @@ Where:
 
 -   The **/n** option specifies the name of the certificate (*Contoso.com)* that is installed in the specified certificate store.
 
--   The **/t** option specifies URL of the TSA (*http://timestamp.verisign.com/scripts/timstamp.dll*) which will timestamp the digital signature.
+-   The **/t** option specifies URL of the TSA (*http://timestamp.digicert.com*) which will timestamp the digital signature.
 
     **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
 
