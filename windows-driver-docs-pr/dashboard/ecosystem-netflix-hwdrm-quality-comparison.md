@@ -28,16 +28,22 @@ Hardware Digital Rights Management (HWDRM) is a feature that enable secure playb
 ## Calculation
 
 1.	The measure aggregates telemetry from a 28 day sliding window into a **binary value (0 or 1)**, indicating if the driver performance is within 2 standard deviations of the aggregate performance of all drivers from the same IHV in the retail market
+
 	i.	A measure result of 0 is successful, meaning the driver’s performance is within the 95% of all retail drivers’ performance 
+
 2.	*Evaluated Driver Session Failure Rate = Count(Failed Sessions) / Count(Total Sessions)*
 3.	*Retail Driver Session Failure Rates = Count(Failed Sessions) / Count(Total Sessions)*
+
 	i.	Calculated once for all other graphics drivers from the same IHV in the retail market
+
 4.	*Retail Driver Failure Rate Mean = Mean(Retail Driver Session Failure Rates)*
 5.	*Retail Driver Failure Rate Standard Deviation = Standard-Deviation(Retail Driver Session Failure Rate)*
 6.	*Standard Deviation 2 Upper Bound = Mean + (Retail Driver Failure Rate Standard Deviation * 2)*
 
 ### Final Calculation
-8.	*Netflix HWDRM Retail Comparison = 
-	i.	0, if Evaluated Driver Standard Failure Rate  =< Standard Deviation 2 Upper Bound
-	ii.	Else, Netflix HWDRM Retail Comparison = 1* 
+8.	*Netflix HWDRM Retail Comparison =* 
+	
+	i.	*0, if Evaluated Driver Standard Failure Rate  =< Standard Deviation 2 Upper Bound*
+
+	ii.	*Else, Netflix HWDRM Retail Comparison = 1* 
 
