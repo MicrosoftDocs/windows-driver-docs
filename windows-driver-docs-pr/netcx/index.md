@@ -14,7 +14,7 @@ ms.custom: 19H1
 # Network Adapter WDF Class Extension (NetAdapterCx)
 
 > [!NOTE]
-> The first official release of NetAdapterCx is version 2.0. All versions before 2.0 are prerelease versions and are no longer supported. Any NetAdapterCx client driver written for a prerelease version of the framework must be rebuilt for 2.0. For more info, see [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md).
+> The first official release of NetAdapterCx is version 2.0. All versions before 2.0 are prerelease versions and are no longer supported. Any NetAdapterCx client driver written for a prerelease version of the framework must be rebuilt for 2.0. For more info, see [Introduction to NetAdapterCx 2.0](introduction-to-netadaptercx-2-0.md) and [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md).
 
 ## Overview
 

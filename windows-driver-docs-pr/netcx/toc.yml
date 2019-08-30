@@ -1,5 +1,9 @@
 - name: "Network Adapter WDF Class Extension (NetAdapterCx)"
   href: index.md
+- name: "What's new in NetAdapterCx"
+  items:
+  - name: "Introduction to NetAdapterCx 2.0"
+    href: introduction-to-netadaptercx-2-0.md
 - name: "Porting NDIS miniport drivers to NetAdapterCx"
   href: porting-ndis-miniport-drivers-to-netadaptercx.md
 - name: "Building a NetAdapterCx client driver"
