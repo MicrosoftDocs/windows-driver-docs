@@ -23,7 +23,7 @@ This measure is normalized by usage, less than or equal to the baseline goal.
 |**Audience**|Ecosystem|
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of instances|
-|**Minimum population**|1,000 hours of Create Application runtime|
+|**Minimum population**|1,000 hours of creative application runtime|
 |**Passing criteria**|<= 10 crashes per year of runtime|
 |**Measure ID**|20240835|
 
