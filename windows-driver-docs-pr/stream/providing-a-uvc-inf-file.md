@@ -165,6 +165,8 @@ In low frame rate conditions, the EOF bit might report completion faster than th
 
 For more information about the positional syntax of AddReg directives, see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
 
+This final section supplies missing definitions for the INF.
+
 ```INF
 [Strings]
 ; Non-localizable
@@ -174,15 +176,11 @@ XU_GUID="{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}"
 KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
 KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
 KSCATEGORY_VIDEO="{6994AD05-93EF-11D0-A3CC-00A0C9223196}"
-SERVICE_KERNEL_DRIVER=1
-SERVICE_DEMAND_START=3
-SERVICE_ERROR_NORMAL=1
 
 ; Localizable
 CompanyName="CompanyName"
 Package="Installation Package"
 MyDevice.DeviceDesc="CompanyName Camera"
-USBVideo.SvcDesc="USB Video Device (WDM)"
 
 PlugIn_IMyExtensionUnit="CompanyName Extension Unit Interface"
 ```
