@@ -42,8 +42,7 @@ MyPlugin.ax=1
 ExcludeFromSelect=*
 
 [DestinationDirs]
-MyDevice.CopyList=11    ; %systemroot%\system32 on 
-   NT-based systems
+MyDevice.CopyList=11    ; %systemroot%\system32 on NT-based systems
 
 [Manufacturer]
 %CompanyName%=CompanyName
@@ -57,13 +56,18 @@ The device-specific INF file is matched with the device based on the VID/PID ide
 
 [MyDevice.NT]
 Include=usbvideo.inf, ks.inf, kscaptur.inf, dshowext.inf
-Needs=USBVideo.NT, KS.Registration, KSCAPTUR.Registration.NT,
-DSHOWEXT.Registration
+Needs=USBVideo.NT, KS.Registration, KSCAPTUR.Registration.NT, DSHOWEXT.Registration
 AddReg=MyDevice.Plugins
 CopyFiles=MyDevice.CopyList
 ```
 
-The following portion of the INF file shows the registry entries for a node-based Extension Unit plug-in. Refer to *Usbvideo.inf* for similar examples.
+The INF also needs a CopyFiles section to copy the plug-in into the system folder.
+```INF
+[MyDevice.CopyList]
+MyPlugin.ax
+```
+
+The first part of the following INF AddReg section registers the plug-in.  The remainder of this section shows the registry entries for a node-based Extension Unit plug-in. Refer to *Usbvideo.inf* for similar examples.
 
 ```INF
 [MyDevice.PlugIns]
@@ -82,6 +86,8 @@ HKLM,System\CurrentControlSet\Control\NodeInterfaces\%XU_GUID%,
    CLSID,1,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz
 ```
 
+The following INF section shows how to populate interface-specific registry entries.
+
 ```INF
 [MyDevice.NT.Interfaces]
 AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,MyDevice.Interface
@@ -97,7 +103,11 @@ HKR,,FriendlyName,,%MyDevice.DeviceDesc%
 HKR,,RTCFlags,0x00010001,0x00000010
 ```
 
-For USB Cameras, if the device interface registry key location contains a DWORD registry entry **EnableDependentStillPinCapture** with a non-zero value, the dependent pin on such cameras will be used for photo capture. If the registry entry is not present or set to zero, the dependent pin will not be used. Instead, the photo capture will be done using a frame taken from the preview pin.
+For USB Cameras, if the device interface registry key location contains a DWORD registry entry **EnableDependentStillPinCapture** with a non-zero value, the dependent pin on such cameras will be used for photo capture. If the registry entry is not present or set to zero, the dependent pin will not be used. Instead, the photo capture will be done using a frame taken from the preview pin.  The following enables dependent still pin capture:
+
+```INF
+HKR,,EnableDependentStillPinCapture,0x00010001,1
+```
 
 You can also define an optional registry value called **UvcFlags**. **UvcFlags** should be a DWORD value. When the device is plugged in, the UVC driver receives a Plug and Play (PnP) Start request. The driver then searches for **UvcFlags** in the device registry key. The DWORD value is a bitmask and can contain the values in the following table.
 
@@ -154,21 +164,6 @@ If you are using the UVC driver on Windows Server 2003 and Windows Vista or late
 In low frame rate conditions, the EOF bit might report completion faster than the FID bit of the following frame. The EOF bit can be used to reduce latency in the delivery of MPEG-2 frames.
 
 For more information about the positional syntax of AddReg directives, see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
-
-```INF
-[MyDevice.NT.Services]
-AddService = usbvideo,0x00000002,MyDevice.ServiceInstall
-
-[MyDevice.ServiceInstall]
-DisplayName   = %USBVideo.SvcDesc%
-ServiceType   = %SERVICE_KERNEL_DRIVER%
-StartType     = %SERVICE_DEMAND_START%
-ErrorControl  = %SERVICE_ERROR_NORMAL%
-ServiceBinary = %10%\System32\Drivers\usbvideo.sys
-
-[MyDevice.CopyList]
-MyPlugin.ax
-```
 
 ```INF
 [Strings]
