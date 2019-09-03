@@ -1,6 +1,6 @@
 ---
-title: Callout Driver Operations
-description: Callout Driver Operations
+title: Callout Driver Operations Topics
+description: Callout Driver Operations Topics
 ms.assetid: 24940254-c9ed-45f7-8a67-20978a8efd3f
 keywords:
 - Windows Filtering Platform callout drivers WDK , operations
@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Callout Driver Operations
+# Callout Driver Operations Topics
 
 
 This section discusses typical callout driver operations and includes the following topics:

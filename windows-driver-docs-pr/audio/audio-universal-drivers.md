@@ -141,9 +141,9 @@ APO Hardware IDs incorporate both standard information and vendor-defined string
 They are constructed as follows:
 
 ```syntax
-APO\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4) &REV_r(4)
-APO\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4)
-APO\VEN_v(4)&AID_a(4)
+SWC\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4) &REV_r(4)
+SWC\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4)
+SWC\VEN_v(4)&AID_a(4)
 ```
 
 Where:
@@ -161,7 +161,7 @@ To allow the latest driver to be used, be sure and update the date and version, 
 
 ### APO driver registry key
 
-For third party-defined audio driver/APO registry keys, use the HKR with the exception of HKLM\System\CurrentControlSet.
+For third party-defined audio driver/APO registry keys, use HKR with the exception of HKLM\System\CurrentControlSet.
 
 ### Use a Windows Service to facilitate UWP <-> APO communication
 

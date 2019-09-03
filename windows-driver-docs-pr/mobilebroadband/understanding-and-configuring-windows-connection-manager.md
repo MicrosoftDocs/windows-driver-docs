@@ -64,7 +64,7 @@ If this policy is set to **1**, any new automatic Internet connection is blocked
 
 Ethernet is always preferred when connected. Users can still manually connect to any network. This was previously the *Enabled* state for this policy setting in builds of Windows before Windows 10, version 1809, build 17763.404. This option was first available in Windows 8.
 
-If this policy setting is set to **2**, the behavior is similar to when it it set to **1**. However, if a cellular data connection is available, that connection will always stay connected for services that require a cellular connection. When the user is connected to a VLAN or Ethernet connection, no Internet traffic is routed over the cellular connection. This option was first available in Windows 10, version 1703.
+If this policy setting is set to **2**, the behavior is similar to when it it set to **1**. However, if a cellular data connection is available, that connection will always stay connected for services that require a cellular connection. When the user is connected to a WLAN or Ethernet connection, no Internet traffic is routed over the cellular connection. This option was first available in Windows 10, version 1703.
 
 If this policy setting is set to **3**, the behavior is similar to when it is set to **2**. However, if there is an Ethernet connection, Windows does not permit users to connect to a WLAN manually. A WLAN can only be connected (automatically or manually) when there is no Ethernet connection.
 

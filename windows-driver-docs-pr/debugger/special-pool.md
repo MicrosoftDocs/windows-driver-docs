@@ -132,7 +132,7 @@ On a computer with an AMD x86-64 processor, PAGE\_SIZE is 0x1000 and the allocat
 
  
 
-On a computer with any processor, you can use an asterisk ( **\\*** ) or 0x2A (decimal 42) to configure the Special Pool feature for all memory allocations on the system.
+On a computer with any processor, you can use an asterisk ( **\*** ) or 0x2A (decimal 42) to configure the Special Pool feature for all memory allocations on the system.
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 

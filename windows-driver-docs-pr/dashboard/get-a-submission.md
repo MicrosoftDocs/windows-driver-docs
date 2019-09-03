@@ -1,8 +1,6 @@
 ---
-title: 
-description: 
-author: balapv
-ms.author: balapv
+title: Get a submission
+description: Retrieves data for a specific submission of a product to the hardware dashboard in the Microsoft Partner Center.
 ms.topic: article
 ms.date: 04/05/2018
 ms.localizationpriority: medium

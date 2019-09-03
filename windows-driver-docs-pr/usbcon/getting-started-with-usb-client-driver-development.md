@@ -1,11 +1,11 @@
 ---
 Description: This section introduces you to USB driver development.
-title: Getting started with USB client driver development
+title: First steps for USB client driver development
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Getting started with USB client driver development
+# First steps for USB client driver development
 
 
 This section introduces you to USB driver development. The section applies to you if you are new to driver development; want to implement a driver for a USB device, for which Microsoft does not provide an in-box driver. Such a driver is termed as a *USB client driver* in this documentation set. The topics in this section describe high-level USB concepts and provide step-by-step instructions about performing common tasks of a USB client driver. For detailed information about those concepts, see USB specifications at [USB Documents](https://go.microsoft.com/fwlink/p/?linkid=617552).

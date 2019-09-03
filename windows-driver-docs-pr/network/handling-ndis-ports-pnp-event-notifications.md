@@ -1,6 +1,6 @@
 ---
-title: Handling NDIS Ports PnP Event Notifications
-description: Handling NDIS Ports PnP Event Notifications
+title: NDIS Ports PnP Event Notifications
+description: NDIS Ports PnP Event Notifications
 ms.assetid: 2f542b62-43a0-42fa-b72d-f789e029d3f0
 keywords:
 - ports WDK NDIS , PnP event notifications
@@ -14,11 +14,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Handling NDIS Ports PnP Event Notifications
-
-
-
-
+# NDIS Ports PnP Event Notifications
 
 NDIS forwards PnP events to notify overlying drivers when ports are activated or deactivated. NDIS and miniport drivers do not generate a PnP event when a port is allocated. Miniport drivers notify NDIS that ports have been activated with the **NetEventPortActivation** PnP event and miniport drivers generate a **NetEventPortDeactivation** PnP event to notify NDIS that some ports have been deactivated.
 

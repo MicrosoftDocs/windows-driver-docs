@@ -1,6 +1,6 @@
 ---
-title: Joystick Support
-description: Joystick Support
+title: Joystick Support Overview
+description: Joystick Support Overview
 ms.assetid: 09fcbdf0-4e70-4144-9afc-4b085a2b4ba7
 keywords:
 - joysticks WDK HID
@@ -14,7 +14,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Joystick Support
+# Joystick Support Overview
 
 
 

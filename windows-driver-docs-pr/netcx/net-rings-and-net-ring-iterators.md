@@ -1,15 +1,15 @@
 ---
-title: Net rings and net ring iterators
+title: Introduction to net rings and net ring iterators
 description: This topic describes net rings and net ring iterators.
 ms.assetid: 8A56AA21-264C-4C1A-887E-92C9071E8AB8
 keywords:
-- NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
-ms.date: 03/21/2019
+- NetAdapterCx Introduction to net rings and net ring iterators, NetCx Introduction to net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
+ms.date: 07/01/2019
 ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
-# Net rings and net ring iterators
+# Introduction to net rings and net ring iterators
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 

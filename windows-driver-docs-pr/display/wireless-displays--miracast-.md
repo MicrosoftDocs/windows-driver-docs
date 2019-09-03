@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 Wireless (Miracast) displays can optionally be supported by Windows Display Driver Model (WDDM) 1.3 and later drivers. This capability is new starting with Windows 8.1.
 
-For more information on the requirements of drivers and hardware to support Miracast displays, refer to the [Building best-in-class Miracast solutions with Windows 10](https://download.microsoft.com/download/3/F/9/3F9F0453-04AE-4E4B-87EF-729FF931C1F9/Building%20best-in-class%20Miracast%20solutions%20with%20Windows%2010%20.docx) guide and the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) at **Device.Graphics.WDDM13.DisplayRender.WirelessDisplay**.
+For more information on the requirements of drivers and hardware to support Miracast displays, refer to the [Building best-in-class Wireless Projection solutions with Windows 10](https://docs.microsoft.com/windows-hardware/design/device-experiences/wireless-projection) guide and the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) at **Device.Graphics.WDDM13.DisplayRender.WirelessDisplay**.
 
 ## <span id="Miracast_design_guide"></span><span id="miracast_design_guide"></span><span id="MIRACAST_DESIGN_GUIDE"></span>Miracast design guide
 

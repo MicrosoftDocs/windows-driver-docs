@@ -70,7 +70,9 @@ Now you're ready to provision the target computer from the host computer in Visu
 4.  The provisioning process takes several minutes and might automatically reboot the target computer once or twice. When provisioning is complete, click **Finish**.
 
  
+## See Also
 
+[Deploying a Driver to a Test Computer](https://docs.microsoft.com/windows-hardware/drivers/develop/deploying-a-driver-to-a-test-computer)
  
 
 

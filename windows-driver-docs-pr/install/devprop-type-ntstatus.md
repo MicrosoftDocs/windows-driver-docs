@@ -29,7 +29,7 @@ You can combine DEVPROP_TYPE_NTSTATUS only with the [**DEVPROP_TYPEMOD_ARRAY**](
 
 ### Setting a Property of This Type
 
-To set a property whose base data type is DEVPROP_TYPE_NTSTATUS, call the corresponding **SetupDiSet***Xxx* property function and set the function input parameters as follows:
+To set a property whose base data type is DEVPROP_TYPE_NTSTATUS, call the corresponding **SetupDiSet**_Xxx_ property function and set the function input parameters as follows:
 
 - Set the *PropertyType* parameter to DEVPROP_TYPE_NTSTATUS.
 

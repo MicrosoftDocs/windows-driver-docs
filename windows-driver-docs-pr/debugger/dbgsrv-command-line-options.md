@@ -48,7 +48,7 @@ Specifies the full command line of the process to be created. *AppCmdLine* can b
 Causes the remainder of the command line to be ignored. This option is useful if you are launching DbgSrv from an application that may append unwanted text to its command line.
 
 <span id="_______-pc______"></span><span id="_______-PC______"></span> **-pc**   
-Causes the remainder of the command line to be ignored. This option is useful if you are launching DbgSrv from an application that may append unwanted text to its command line. A syntax error results if -pc is the final element on the DbgSrv command line. Aside from this restriction, -pc is identical to -x.
+Causes the remainder of the command line to be used as the "implicit command line" as a pending process creation. This command line will be used if a debugger is connected to this process server with the "-cimp". For instance, running ```dbgsrv -t <ServerTransport> -pc notepad.exe```, and then running ```ntsd -premote <Transport> -cimp``` will cause ntsd to connect to dbgsrv and launch notepad.exe
 
 <span id="_______-_______"></span> **-?**   
 Displays a message box with help text for the DbgSrv command line.

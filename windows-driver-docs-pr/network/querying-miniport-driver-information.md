@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-The **Ndis*Xxx*** function that a protocol driver calls to query miniport driver information and the *MiniportXxx* function that is used to satisfy such a query depend on whether the miniport driver is connectionless or connection-oriented.
+The **Ndis<em>Xxx</em>** function that a protocol driver calls to query miniport driver information and the *MiniportXxx* function that is used to satisfy such a query depend on whether the miniport driver is connectionless or connection-oriented.
 
 A miniport driver can be queried directly from user mode.
 

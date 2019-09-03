@@ -1,12 +1,12 @@
 ---
-title: SoftwareInfo XML Elements
-description: SoftwareInfo XML Elements
+title: SoftwareInfo XML elements list
+description: SoftwareInfo XML elements list
 ms.assetid: a8e8401d-456a-4c0a-976c-3802061a2bf6
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# SoftwareInfo XML Elements
+# SoftwareInfo XML elements list
 
 [!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 

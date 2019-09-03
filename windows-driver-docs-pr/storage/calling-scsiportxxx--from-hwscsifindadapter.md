@@ -17,11 +17,11 @@ ms.localizationpriority: medium
 ## <span id="ddk_calling_scsiportxxx_from_hwscsifindadapter_kg"></span><span id="DDK_CALLING_SCSIPORTXXX_FROM_HWSCSIFINDADAPTER_KG"></span>
 
 
-Certain **ScsiPort***Xxx* routines can be called *only* from the miniport driver's *HwScsiFindAdapter* routine(s), in particular, the following:
+Certain **ScsiPort**_Xxx_ routines can be called *only* from the miniport driver's *HwScsiFindAdapter* routine(s), in particular, the following:
 
 -   [**ScsiPortValidateRange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportvalidaterange) to verify that a miniport driver-supplied, bus-relative access range has not already been claimed in the registry by another driver for its device.
 
--   [**ScsiPortGetDeviceBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportgetdevicebase) to map the (bus-relative) "physical" address range for an HBA to a system-assigned logical address range that the driver can use to communicate with the HBA by calling the **ScsiPortRead***Xxx* and **ScsiPortWrite***Xxx* routines with the mapped logical range addresses.
+-   [**ScsiPortGetDeviceBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportgetdevicebase) to map the (bus-relative) "physical" address range for an HBA to a system-assigned logical address range that the driver can use to communicate with the HBA by calling the **ScsiPortRead**_Xxx_ and **ScsiPortWrite**_Xxx_ routines with the mapped logical range addresses.
 
 -   [**ScsiPortFreeDeviceBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportfreedevicebase) to release such a mapped range if *HwScsiFindAdapter* does not find an HBA it can support on a given I/O bus, as indicated by the PORT\_CONFIGURATION\_INFORMATION **SystemIoBusNumber** value.
 
@@ -31,7 +31,7 @@ In addition to these four routines, there is one routine that can only be called
 
 -   [**ScsiPortGetBusData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportgetbusdata) to get BUS\_DATA\_TYPE-specific configuration information, such as bus-relative device memory (access) ranges, interrupt vector or IRQL, and DMA channel or port.
 
-For more information about these **ScsiPort***Xxx* routines, see [SCSI Port Library Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+For more information about these **ScsiPort**_Xxx_ routines, see [SCSI Port Library Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
  
 

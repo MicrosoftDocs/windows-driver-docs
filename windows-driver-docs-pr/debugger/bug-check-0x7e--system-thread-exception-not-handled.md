@@ -19,11 +19,9 @@ ms.localizationpriority: medium
 The SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000007E. This bug check indicates that a system thread generated an exception that the error handler did not catch.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
-
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED Parameters
-
 
 <table>
 <colgroup>
@@ -56,8 +54,6 @@ The SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000007E.
 </tbody>
 </table>
 
- 
-
 Cause
 -----
 
@@ -65,11 +61,11 @@ The SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED bug check indicates that a system th
 
 Common exception codes include the following:
 
--   0x80000002: STATUS\_DATATYPE\_MISALIGNMENT indicates an unaligned data reference was encountered.
+- 0x80000002: STATUS\_DATATYPE\_MISALIGNMENT indicates an unaligned data reference was encountered.
 
--   0x80000003: STATUS\_BREAKPOINT indicates a breakpoint or ASSERT was encountered when no kernel debugger was attached to the system.
+- 0x80000003: STATUS\_BREAKPOINT indicates a breakpoint or ASSERT was encountered when no kernel debugger was attached to the system.
 
--   0xC0000005: STATUS\_ACCESS\_VIOLATION indicates a memory access violation occurred.
+- 0xC0000005: STATUS\_ACCESS\_VIOLATION indicates a memory access violation occurred.
 
 For a complete list of exception codes, see the Ntstatus.h file that is located in the inc directory of the Microsoft Windows Driver Kit (WDK).
 
@@ -88,7 +84,6 @@ If exception code 0x80000003 occurs, a hard-coded breakpoint or assertion was hi
 
 If exception code 0x80000002 occurs, the trap frame supplies additional information.
 
-
 For more information see the following topics:
 
 [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
@@ -97,32 +92,19 @@ For more information see the following topics:
 
 [Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
 
-
-**Time Travel Trace**
-
-If the bug check can be reproduced on demand, investigate the possibility of taking a time travel trace using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
-
-
 Remarks
 ----------
 
 If you are not equipped to use the Windows debugger to work on this problem, you should use some basic troubleshooting techniques.
 
--   Check the System Log in Event Viewer for additional error messages that might help identify the device or driver that is causing bug check 0x7E.
+- Check the System Log in Event Viewer for additional error messages that might help identify the device or driver that is causing bug check 0x7E.
 
--   If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
+- If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
 
--   Check with your hardware vendor for any ACPI or other firmware updates. Hardware issues, such as system incompatibilities, memory conflicts, and IRQ conflicts can also generate this error.
+- Check with your hardware vendor for any ACPI or other firmware updates. Hardware issues, such as system incompatibilities, memory conflicts, and IRQ conflicts can also generate this error.
 
--   You can also disable memory caching/shadowing of the BIOS to try to resolve the error. You should also run hardware diagnostics, that the system manufacturer supplies.
+- You can also disable memory caching/shadowing of the BIOS to try to resolve the error. You should also run hardware diagnostics, that the system manufacturer supplies.
 
--   Confirm that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).
+- Confirm that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).
 
--   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
-
-
- 
-
-
-
-
+- For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).

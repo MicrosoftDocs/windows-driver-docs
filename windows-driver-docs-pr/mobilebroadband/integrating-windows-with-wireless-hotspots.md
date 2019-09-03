@@ -1,12 +1,12 @@
 ---
-title: Integrating Windows with wireless hotspots
-description: Integrating Windows with wireless hotspots
+title: Introduction to integrating Windows with wireless hotspots
+description: Introduction to integrating Windows with wireless hotspots
 ms.assetid: 948660a2-7ecf-4860-9092-1cfb332cfd04
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# Integrating Windows with wireless hotspots
+# Introduction to integrating Windows with wireless hotspots
 
 
 Wi-Fi hotspots have proliferated in public areas such as airports, coffee shops, and hotels. Operators of such networks generally offer Internet access, either as a complimentary service to their clients that is funded by the venue owner, or as a paid offering.

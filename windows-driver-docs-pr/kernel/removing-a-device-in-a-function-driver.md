@@ -37,7 +37,7 @@ A function driver removes a device using a procedure such as the following in it
 
    If the device is not already inactive in response to a prior **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, the driver must mark the device as not accepting new requests and must complete any requests queued in this driver. The driver must fail any outstanding requests that require access to the device.
 
-   A driver can use the **Io*Xxx*RemoveLock*Xxx*** routines to count outstanding I/O and to set an event indicating that remove processing can continue.
+   A driver can use the **Io*Xxx*RemoveLock<em>Xxx</em>** routines to count outstanding I/O and to set an event indicating that remove processing can continue.
 
 5. Perform any power-down operations.
 
