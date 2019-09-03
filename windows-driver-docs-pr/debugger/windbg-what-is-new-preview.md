@@ -12,6 +12,26 @@ ms.localizationpriority: medium
 
 This topic provides information on what's new in the WinDbg Preview debugger.
 
+## 1.0.1908.30002
+**Improvements to TTD Calls objects** - [Calls queries](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/time-travel-debugging-calls-objects) now include parameter names, types, and values. When querying across traces for function calls you can get fully typed parameters and their values making it easy to filter down results by parameters.
+
+**Support for Open Enclave** - WinDbg Preview can now debug Open Enclave (OE) applications, you can find directions for how to do this in the [Open Enclave documentation](https://github.com/openenclave/openenclave/blob/master/docs/GettingStartedDocs/GettingStarted.Windows.md).
+
+**VS Code Extension** - To make it easier to develop for Open Enclave, we’ve released a basic VS Code extension to enable a quicker inner loop. Variables, Watch, and Call Stack windows all work as well as breakpoints and source windows, any deeper debugging will need to use the console window. 
+ 
+You can find the extension in the [VS Code Marketplace](https://aka.ms/CDBVSCode) and report any issues to our  [WinDbg Feedback GitHub](https://aka.ms/dexex). Note that while the extension may work for other scenarios, we’re only intending on fixing issues related to OE scenarios at this point.
+
+**ELF Core Dumps** - As part of supporting Open Enclave, WinDbg can open ELF core dumps and binaries as well as DWARF symbols (DWARF 5 is not currently supported) from both Enclaves and Linux applications. When opening a core dump from a non-Windows application, basic windows and commands should all work properly, but most extensions and Windows-specific commands will not work. ELF and DWARF files will be downloaded from symbol servers following the [key conventions defined here](https://github.com/dotnet/symstore/blob/master/docs/specs/SSQP_Key_Conventions.md). Enclaves are the only supported scenario, but we’re open to feedback on opening other Linux core dumps. 
+
+**TTD File format change** - We’ve made a major update to the file format for TTD traces that breaks forward compatibility. Previous versions of WinDbg Preview will not be able to open traces recorded with this (and future) versions of WinDbg Preview, but this (and future) versions will be able to open both new and old traces.
+
+**Other changes**
+* TTD will now use the 64-bit engine for indexing and the appropriate debugger engine bitness for replays to minimize potential memory issues when indexing and SOS issues when replaying.
+* Running 'dx' without any parameters will now show the root namespace for easier browsability.
+* You can now modify the default symbol and source cache location via the settings menu.
+* Improved support for recording AVX-512 (recording of AVX-512 will cause a larger than normal slow-down)
+* We've enabled [offline licensing](https://docs.microsoft.com/en-us/windows/uwp/publish/organizational-licensing#allowing-disconnected-offline-licensing)
+
 ## 1.0.1905.12001
 **Improvements to SymSetDiaSession error mitigation** - Our fix last month to mitigate the error caused by applications injecting DbgHelp into our process was still not working in some scenarios. We've made improvements to it and will continue to monitor feedback on this error.
 
