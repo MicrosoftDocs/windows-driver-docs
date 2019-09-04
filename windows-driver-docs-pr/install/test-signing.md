@@ -232,7 +232,7 @@ tstamd64.cat specifies the name of the catalog file, which will be digitally-sig
     Below is the command to embed sign a kernel mode driver binary file.
 
     ```cpp
-    signtool sign  /v  /s  PrivateCertStore  /n  Contoso.com(Test)  /t http://timestamp.verisign.com/scripts/timestamp.dll   amd64\toaster.sys
+    signtool sign  /v  /s  PrivateCertStore  /n  Contoso.com(Test)  /t http://timestamp.digicert.com   amd64\toaster.sys
     ```
 
     amd64\\toaster.sys specifies the name of the kernel-mode binary file which will be embed-signed.
