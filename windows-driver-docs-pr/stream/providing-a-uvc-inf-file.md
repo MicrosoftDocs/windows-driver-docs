@@ -27,7 +27,7 @@ To do so, include the following code in the INF file, here arbitrarily named *Xu
 ; Copyright (c) CompanyName. All rights reserved.
 
 [Version]
-Signature="$CHICAGO$"
+Signature="$Windows NT$"
 Class=Image
 ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
 Provider=%CompanyName%
@@ -45,16 +45,16 @@ ExcludeFromSelect=*
 MyDevice.CopyList=11    ; %systemroot%\system32 on NT-based systems
 
 [Manufacturer]
-%CompanyName%=CompanyName
+%CompanyName%=CompanyName,NT$ARCH$
 ```
 
 The device-specific INF file is matched with the device based on the VID/PID identifier. In this case, the device-specific INF file takes precedence over *Usbvideo.inf*.
 
 ```INF
-[CompanyName]
+[CompanyName.NT$ARCH$]
 %MyDevice.DeviceDesc%=MyDevice,USB\Vid_XXXX&Pid_XXXX&MI_XX
 
-[MyDevice.NT]
+[MyDevice]
 Include=usbvideo.inf, ks.inf, kscaptur.inf, dshowext.inf
 Needs=USBVideo.NT, KS.Registration, KSCAPTUR.Registration.NT, DSHOWEXT.Registration
 AddReg=MyDevice.Plugins
