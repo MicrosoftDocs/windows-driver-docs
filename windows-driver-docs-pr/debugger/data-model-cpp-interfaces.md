@@ -23,17 +23,6 @@ debugger extension, and how to make use of other data model constructs (e.g.: Ja
 
 [Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
 
----
-
-## Topic Sections
-
-This topic includes the following sections.
-
-[Debugger Data Model C++ Host Interfaces](#hostinterface)
-
-[Accessing the Data Model](#accessdatamodel)
-
-[Debugger Data Model System Interfaces](#systeminterfaces)
 
 ---
 

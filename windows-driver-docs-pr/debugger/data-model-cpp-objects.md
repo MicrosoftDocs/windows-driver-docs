@@ -26,17 +26,7 @@ debugger extension, and how to make use of other data model constructs (e.g.: Ja
 
 ---
 
-## Topic Sections
 
-This topic includes the following sections.
-
-[The Core Debugger Object Model](#core)
-
-[Debugger Data Model Core Object Types](#objecttypes)
-
-[Debugger Data Model Manager](#modelmanager)
-
----
 
 ## <span id="core">  The Core Debugger Object Model
 

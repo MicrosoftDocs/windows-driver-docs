@@ -27,16 +27,6 @@ debugger extension, and how to make use of other data model constructs (e.g.: Ja
 
 ---
 
-## Topic Sections
-
-This topic includes the following sections.
-
-[Debugger Data Model Metadata Interfaces](#metadatainterfaces)
-
-[Object Enumeration in the Data Model](#object)
-
----
-
 ## <span id="metadatainterfaces"></span> Debugger Data Model Metadata Interfaces
 
 One of the core notions in the data model is that an object (particularly a synthetic one) is a dictionary of key/value/metadata tuples. Each key can have an entire store of metadata associated with it that describes a variety of things surrounding the key and its potential value. Note that the metadata does not, in any way, change the value of the key. It is only ancillary information associated with the key and its value which may affect the presentation or other associated attributes of the key and its value. 

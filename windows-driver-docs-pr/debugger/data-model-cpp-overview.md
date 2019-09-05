@@ -25,19 +25,6 @@ debugger extension, and how to make use of other data model constructs (e.g.: Ja
 
 ---
 
-## Topic Sections
-
-This topic includes the following sections.
-
-[Overview of Debugger Data Model C++ Interfaces](#overview)
-
-[Summary of Debugger Data Model Interfaces](#summary)
-
-[Using the DbgModelClientEx Library](#dbgmodelclientex)
-
-
----
-
 ## <span id="overview"> Overview of the Debugger Data Model C++ Interface
 
 The debugger data model is an extensible object model that is central to the way in which new debugger extensions (including those in JavaScript, NatVis, and C++) both consume information from the debugger and produce information that can be accessed from the debugger as well as other extensions. Constructs which are written to the data model APIs are available in the debugger's newer (dx) expression evaluator as well as from JavaScript extensions or C++ extensions. 

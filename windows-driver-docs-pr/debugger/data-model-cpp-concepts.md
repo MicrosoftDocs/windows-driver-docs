@@ -26,14 +26,6 @@ debugger extension, and how to make use of other data model constructs (e.g.: Ja
 
 ---
 
-## Topic Sections
-
-This topic includes the following sections.
-
-[Concepts in the Data Model](#concepts) 
-
----
-
 
 ## <span id="concepts"> Concepts in the Data Model 
 
