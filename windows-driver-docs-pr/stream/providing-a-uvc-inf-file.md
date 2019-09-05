@@ -35,7 +35,7 @@ Provider=%CompanyName%
 [SourceDisksNames]
 1=%Package%
 
-[SourceDisksFiles.x86]
+[SourceDisksFiles]
 MyPlugin.ax=1
 
 [ControlFlags]
@@ -89,7 +89,7 @@ HKLM,System\CurrentControlSet\Control\NodeInterfaces\%XU_GUID%,
 The following INF section shows how to populate interface-specific registry entries.
 
 ```INF
-[MyDevice.NT.Interfaces]
+[MyDevice.Interfaces]
 AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,MyDevice.Interface
 AddInterface=%KSCATEGORY_RENDER%,GLOBAL,MyDevice.Interface
 AddInterface=%KSCATEGORY_VIDEO%,GLOBAL,MyDevice.Interface
