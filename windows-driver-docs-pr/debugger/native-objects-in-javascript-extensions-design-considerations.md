@@ -93,6 +93,9 @@ Investigate the use of test automation that can verify the functionality of your
 
 ## <span id="related_topics"></span>Related topics
 
+[Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
+
+ [Native Debugger Objects in JavaScript Extensions - Debugger Object Details](native-objects-in-javascript-extensions-debugger-objects.md).
 
 [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
 

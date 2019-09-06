@@ -550,9 +550,9 @@ class myNativeModel
 
 ## <span id="related_topics"></span>Related topics
 
- [Native Debugger Objects in JavaScript Extensions - Debugger Object Details](native-objects-in-javascript-extensions-debugger-objects.md).
+[Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
 
- [Native Debugger Objects in JavaScript Extensions - Design and Testing Considerations](native-objects-in-javascript-extensions-design-considerations.md).
+[Native Debugger Objects in JavaScript Extensions - Design and Testing Considerations](native-objects-in-javascript-extensions-design-considerations.md)
 
 [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
 

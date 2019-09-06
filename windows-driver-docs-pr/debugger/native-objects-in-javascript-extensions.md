@@ -74,10 +74,9 @@ The debugger data model allows for the creation of an interface to information a
 
 ## <span id="Extending-Debugger-Object"></span><span id="extending-debugger-object"></span><span id="EXTENDING-DEBUGGER-OBJECT"></span>Extending a Debugger Object in JavaScript
 
-
 In addition to being able to create a visualizer in JavaScript, script extensions can also modify the core concepts of the debugger - sessions, processes, threads, stacks, stack frames, local variables - and even publish themselves as extension points that other extensions can consume.
 
-This section describes how to extend a core concept within the debugger. Extensions which are built to be shared should conform to the guidelines presented in [Debugger Data Model Design Considerations](#design-considerations).
+This section describes how to extend a core concept within the debugger. Extensions which are built to be shared should conform to the guidelines presented in [Native Debugger Objects in JavaScript Extensions - Design and Testing Considerations](native-objects-in-javascript-extensions-design-considerations.md).
 
 **Registering an Extension**
 
@@ -144,9 +143,7 @@ The debugger and the debugger objects have different behavior in user and kernel
 
 Going back to our example, we can define a prototype or ES6 class, *comProcessExtension* which contains the set of things we want to add to a process object.
 
-**Important**   The intent with the sub-namespace is to create a logically structured and naturally explorable paradigm. For example, avoid dumping unrelated items into the same sub-namespace. Carefully review the information discussed in [Debugger Data Model Design Considerations](#design-considerations) before creating a sub-namespace.
-
- 
+**Important**   The intent with the sub-namespace is to create a logically structured and naturally explorable paradigm. For example, avoid dumping unrelated items into the same sub-namespace. Carefully review the information discussed in [Native Debugger Objects in JavaScript Extensions - Design and Testing Considerations](native-objects-in-javascript-extensions-design-considerations.md) before creating a sub-namespace.
 
 In this code snippet, we create add a sub-namespace called 'COM' on to the existing process debugger object.
 
@@ -442,10 +439,11 @@ Debugger.Sessions.First().Processes.First().Threads.Duplicate(2),d              
 …
 ```
 
-
-
 ## <span id="related_topics"></span>Related topics
 
+[Native Debugger Objects in JavaScript Extensions - Debugger Object Details](native-objects-in-javascript-extensions-debugger-objects.md)
+
+[Native Debugger Objects in JavaScript Extensions - Design and Testing Considerations](native-objects-in-javascript-extensions-design-considerations.md)
 
 [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
 
