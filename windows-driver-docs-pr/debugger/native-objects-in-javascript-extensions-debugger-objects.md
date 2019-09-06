@@ -1,6 +1,6 @@
 ---
 title: Native Debugger Objects in JavaScript Extensions - Debugger Object Details
-description: Native debugger objects represent various constructs and behaviors of the debugger environment. The objects can be passed into (or acquired in) JavaScript extensions.
+description: Native debugger objects represent various constructs of the debugger environment. This topic describes additional details about the native debugger objects in JavaScript extensions.
 ms.assetid: A8E12564-D083-43A7-920E-22C4D627FEE9
 ms.date: 09/07/2019
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Native Debugger Objects in JavaScript Extensions - Debugger Object Details
 
-This topic describes additional details about the native debugger objects in JavaScript extensions.
+This topic describes additional details about using the native debugger objects in JavaScript extensions.
 
 Native debugger objects represent various constructs and behaviors of the debugger environment. The objects can be passed into (or acquired in) JavaScript extensions to manipulate the state of the debugger.
 
@@ -16,9 +16,7 @@ For information about Debugger object JavaScript extensions, see [Native Debugge
 
 For general information about working with JavaScript, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md).
 
-
 ## <span id="Debugger-Objects"></span><span id="debugger-objects"></span><span id="DEBUGGER-OBJECTS"></span>Debugger Objects in JavaScript Extensions
-
 
 **Passing Native Objects**
 
@@ -130,7 +128,6 @@ function stringifyNative(nativeObject)
 ```
 
 ## <span id="Creating_Native_Debugger_Objects"></span><span id="creating_native_debugger_objects"></span><span id="CREATING_NATIVE_DEBUGGER_OBJECTS"></span>Creating Native Debugger Objects
-
 
 As mentioned, a JavaScript script can get access to native objects by having them passed into JavaScript in one of several ways or it can create them through calls to the host library. Use the following functions to create native debugger objects.
 
@@ -354,8 +351,6 @@ Directly within the host object, the following properties, methods, and construc
 </tbody>
 </table>
 
- 
-
 **Diagnostics Functionality**
 
 The diagnostics sub-namespace of the host object contains the following.
@@ -555,6 +550,9 @@ class myNativeModel
 
 ## <span id="related_topics"></span>Related topics
 
+ [Native Debugger Objects in JavaScript Extensions - Debugger Object Details](native-objects-in-javascript-extensions-debugger-objects.md).
+
+ [Native Debugger Objects in JavaScript Extensions - Design and Testing Considerations](native-objects-in-javascript-extensions-design-considerations.md).
 
 [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
 
