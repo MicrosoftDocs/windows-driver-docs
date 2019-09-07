@@ -27,7 +27,7 @@ The INVALID\_KERNEL\_HANDLE bug check has a value of 0x00000093. This bug check 
 
 |Parameter 1|Parameter 2|Parameter 3|Parameter 4|Cause of Error|
 |--- |--- |--- |--- |--- |
-|The handle that NtClose was called with |0                |0   | 0  | The error occurred closing an invalid kernel handle.|
+|The handle that NtClose was called with |0                |0   | 0  | A protected handle was closed.|
 |The handle that NtClose was called with |1                |0   | 0  | An invalid handle was closed or referenced.|
 |The handle that was referenced          |The handle table |0   | 1  | The error occurred referencing an invalid kernel handle and bad handle detection was enabled.|
 
