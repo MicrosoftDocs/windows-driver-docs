@@ -3,7 +3,7 @@ title: Bug Check 0x93 INVALID_KERNEL_HANDLE
 description: The INVALID_KERNEL_HANDLE bug check has a value of 0x00000093. This bug check indicates that an invalid or protected handle was passed to NtClose.
 ms.assetid: c8564da7-cdbf-40f5-94f4-b1fac23b8b42
 keywords: ["Bug Check 0x93 INVALID_KERNEL_HANDLE", "INVALID_KERNEL_HANDLE"]
-ms.date: 05/23/2017
+ms.date: 09/06/2019
 topic_type:
 - apiref
 api_name:
@@ -25,49 +25,13 @@ The INVALID\_KERNEL\_HANDLE bug check has a value of 0x00000093. This bug check 
 ## INVALID\_KERNEL\_HANDLE Parameters
 
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>1</p></td>
-<td align="left"><p>The handle that is passed to <strong>NtClose</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>2</p></td>
-<td align="left"><p><strong>0:</strong> The caller tried to close a protected handle</p>
-<p><strong>1:</strong> The caller tried to close an invalid handle</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>3</p></td>
-<td align="left"><p>Reserved</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4</p></td>
-<td align="left"><p>Reserved</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Cause of Error|
+|--- |--- |--- |--- |--- |
+|The handle that NtClose was called with |0                |0   | 0  | The error occurred closing an invalid kernel handle.|
+|The handle that NtClose was called with |1                |0   | 0  | An invalid handle was closed or referenced.|
+|The handle that was referenced          |The handle table |0   | 1  | The error occurred referencing an invalid kernel handle and bad handle detection was enabled.|
 
 Cause
 -----
 
-The INVALID\_KERNEL\_HANDLE bug check indicates that some kernel code (for example, a server, redirector, or another driver) tried to close an invalid handle or a protected handle.
-
- 
-
- 
-
-
-
-
+The INVALID\_KERNEL\_HANDLE bug check indicates that some kernel code (for example, a server, redirector, or another driver) tried to close an invalid handle or a protected handle. If parameter 4 has a value of 1, this indicates that the error occurred referencing an invalid kernel handle and bad handle detection was enabled.
