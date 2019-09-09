@@ -13,4 +13,4 @@ Functions are defined for logical, assignment, comparison, and arthimetic operat
 
 For more information about interlocked operations, see [Interlocked Variable Access](https://docs.microsoft.com/windows/desktop/Sync/interlocked-variable-access).
 
-**Note**  The **Interlocked*Xxx*** functions are declared in *miniport.h* or, for 32-bit (x86) drivers, in *storport.h*.
+**Note**  The **Interlocked*Xxx*** functions are declared in *miniport.h* or, for 32-bit (x86) drivers, in *storport.h*.
