@@ -16,17 +16,17 @@ Universal Windows drivers enable developers to create a single driver package th
 
 A Universal Windows driver package contains an INF file and binaries that install and run on [Universal Windows Platform (UWP) based editions of Windows 10](windows-10-editions-for-universal-drivers.md) as well as other Windows 10 editions that share a common set of interfaces.
 
-The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
+Any driver binaries in the driver package can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
 
-A universal driver consists of the following parts: a base driver, optional component packages, and an optional hardware support app. The base driver contains all core functionality and shared code. Separately, optional component packages can contain customizations and additional settings.
+A universal driver contains all of the following parts: a base driver package and optional extension driver packages.  Additionally, it can leverage an optional hardware support app. The base driver package contains all core functionality and shared code. Separately, optional extension driver packages can contain customizations and additional settings.
 
-Typically, a device manufacturer (IHV) writes the base driver, and a system builder (OEM) provides any optional component packages.
+Typically, a device manufacturer (IHV) writes the base driver package, and a system builder (OEM) provides any optional component packages.
 
 An IHV follows the design best practices of *driver isolation* to ensure the driver is reliable and robust to servicing operations.
 
-After IHV has certified the base driver, it can be deployed on all OEM systems. Because a base driver can be used across all systems that share a hardware part, Microsoft can test the base driver broadly via Windows Insider flighting, rather than limiting distribution to specific machines. 
+After IHV has certified the base driver package, it can be deployed on all OEM systems. Because a base driver package can be used across all systems that share a hardware part, Microsoft can test the base driver package broadly via Windows Insider flighting, rather than limiting distribution to specific machines. 
 
-The OEM validates only the optional customizations that it provides for the OEM device.
+The OEM validates only the optional customizations that it provides for the OEM system.
 
 Universal drivers are distributed through Windows Update, and hardware support apps are distributed through the Store.
 
@@ -36,7 +36,7 @@ When you write a universal driver package, there are four design principles to c
 
 * Declarative **("D")**: Install the driver using only declarative INF directives and do not include any co-installers, RegisterDlls, etc.
 * Componentized **("C")**: Edition-specific, OEM-specific and optional customizations to the driver are separate from the base driver package, so that the base driver, which provides only core device functionality, can be targeted, flighted and serviced independently from the customizations.
-* Hardware Support Apps **("H")**: Any user interface (UI) component associated with a universal driver must be packaged as a Hardware Support App (HSA) or preinstalled on the OEM device.  An HSA is an optional device-specific app that is paired with a driver.  The application can be a [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) or a [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) app.  You must distribute and update an HSA through the Microsoft Store.  For details, see [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md) and [Hardware Support App (HSA): Steps for App Developers](../devapps/hardware-support-app--hsa--steps-for-app-developers.md).
+* Hardware Support Apps **("H")**: Any user interface (UI) component associated with a universal driver must be packaged as a Hardware Support App (HSA) or preinstalled on the OEM system.  An HSA is an optional device-specific app that is paired with a driver.  The application can be a [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) or a [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) app.  You must distribute and update an HSA through the Microsoft Store.  For details, see [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md) and [Hardware Support App (HSA): Steps for App Developers](../devapps/hardware-support-app--hsa--steps-for-app-developers.md).
 * Universal API compliance **("U")**: Binaries in the universal driver package only call APIs and DDIs that are included in UWP-based editions of Windows 10. These DDIs are marked as **Universal** on the corresponding documentation reference pages. INF files use only universal INF syntax.
 
 In the documentation, we use the acronym **DCHU** to refer to the above principles.
