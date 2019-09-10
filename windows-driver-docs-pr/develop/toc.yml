@@ -4,7 +4,7 @@
   items:
   - name: "Getting Started with Universal Drivers"
     href: getting-started-with-universal-drivers.md
-  - name: "Driver Isolation and Universal Drivers"
+  - name: "Driver Package Isolation"
     href: driver-isolation.md
   - name: "Building a Universal Windows driver"
     href: building-a-universal-driver.md
