@@ -1,25 +1,25 @@
-# Driver Isolation and Universal Drivers
+# Driver Package Isolation
 
-## Driver Isolation Overview
+## Driver Package Isolation Overview
 
-An isolated driver stores registry and file state using a handle to a relative location provided by OS API's as opposed to hardcoding global location paths.
+Binaries in an isolated driver packagem store registry and file state using a handle to a relative location provided by OS API's as opposed to hardcoding global location paths.
 
-Isolated drivers interact with other drivers and their state through OS API's or interfaces exposed by the driver.  They do not use hardcoded paths manually modify and interact with other drivers' state.  Additionally, all isolated drivers are run from the driver store.
+Binaries in isolated driver packages interact with other components and their state through OS API's or interfaces exposed by those components. They do not use hardcoded paths to manually modify and interact with other drivers' state.  Additionally, all isolated driver packages are run from the driver store.
 
-These principles enable an isolated driver to be self-contained and sandboxed which makes it more robust to multiple versions existing or running on a system simultaneously. Additionally, this enables the OS to move drivers to different locations based on new servicing or security features without risking driver functionality.  Below is a diagram of the four main principles that isolated drivers use:
+These principles enable an isolated driver package to be self-contained and sandboxed which makes it more robust to multiple versions existing or running on a system simultaneously. Additionally, this enables the OS to move driver packages to different locations based on new servicing or security features without risking driver package functionality.  Below is a diagram of the four main principles that isolated driver packages use:
 
 ![screen shot of the output window](images/non-isolated-vs-isolated.png)
-## Benefits of Driver Isolation
+## Benefits of Driver Package Isolation
 
-Drivers that follow driver isolation principles are more robust to servicing operations as they do not rely on implicit assumptions of global locations existing.  Instead, they use OS API's to get relative handles to locations.
+Drivers that follow driver package isolation principles are more robust to servicing operations as they do not rely on implicit assumptions of global locations existing.  Instead, they use OS API's to get relative handles to locations.
 
-Isolated drivers have the added benefit of being more resilient to changes in the OS.  Additionally, because isolated drivers leave all driver package files in the driver store, the likelihood of an issue arising during install of the driver is much lower.
+Isolated driver packages have the added benefit of being more resilient to changes in the OS.  Additionally, because isolated driver packages leave all driver package files in the driver store, the likelihood of an issue arising during install of the driver is much lower.
 
-By leveraging device interfaces, isolated drivers are more robust to changes in other drivers as they do not take dependencies on other drivers modifying state in a global location.  Instead, an appropriately versioned interaction between drivers occurs using a device interface to commumicate state between components. 
+By leveraging device interfaces, isolated driver packages are more robust to changes in other drivers as they do not take dependencies on other drivers modifying state in a global location.  Instead, an appropriately versioned interaction between drivers occurs using a device interface to communicate state between components. 
   
 ## Run From Driver Store
 
-All isolated drivers leave their driver package files in the driver store. This means that they leverage **DIRID 13** in their INF to specify the location for driver package files on install.
+All isolated driver packages leave their driver package files in the driver store. This means that they leverage **DIRID 13** in their INF to specify the location for driver package files on install.
 
 A WDM or KMDF driver that is running from the DriverStore and needs to access other files from its driver package could use [IoQueryFullDriverPath]() to find its path, get the directory path it was loaded from, and look for configuration files relative to that path.
 
@@ -38,7 +38,7 @@ More information on how to find and load files from the driver store can be foun
 Access to various state should be done using OS API's that provide a caller with the location of the state and then the state is read/written relative to that location. Hardcoded absolute registry paths and file paths **should not be used**.
 ### PnP Device Registry State
 
-There is a need for isolated drivers and user mode components to read, and sometimes write, device state.  There are already two locations that can be used to store device state in the registry. They are called the **"hardware key"** (aka "device key") for the device and the **"software key"** (aka "driver key") for the device. These registry locations are already accessible via API's that give a caller a handle to the location.
+There is a need for isolated driver packages and user mode components to read, and sometimes write, device state.  There are already two locations that can be used to store device state in the registry. They are called the **"hardware key"** (aka "device key") for the device and the **"software key"** (aka "driver key") for the device. These registry locations are already accessible via API's that give a caller a handle to the location.
 
 The following API's should be used to ensure your driver is isolated:
 
@@ -64,19 +64,6 @@ HKR,,ExampleValue,,%13%\ExampleFile.dll
 
 ### Device Interface Registry State
 
-Isolated drivers leverage device interfaces to share state with other drivers and components. Below is an example of how isolated drivers should think about communicating with other drivers via device interfaces as opposed to hardcoding paths to global registry locations:
-
-![screen shot of the output window](images/device-interface-communication.png)
-
-In order to read and write device interface registry state, use the following API's:
-
-* WDM:
-  * [IoOpenDeviceInterfaceRegistryKey]()
-* Other UserMode Code:
-  * [CM_Open_Device_Interface_Key]()
-* Provision Values via INF:
-  * [INF AddReg]() directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [add-interface-section]() section.
-
 When state needs to be shared between drivers, there should be a **single driver** that owns the shared state, and it should expose a way for other drivers to *read* and *modify* that state.
 
 Typically, this would be accomplished by the driver that owns the state exposing a **device interface** in a custom device interface class and enabling that interface when the driver is ready for other drivers to have access to the state. Drivers that want access to this state can **register for [device interface arrival notifications]()**. To access the state, the custom device interface class can define one of two contracts:
@@ -98,6 +85,18 @@ The typical pattern is to **register for notifications** of device interface arr
 
 You can find more information on device interfaces on the [Microsoft Docs page](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces).   Information on how to register for device interface arrival and removal can be found [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal).  Additionally, information on registering for device interface change notifications can be found [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/registering-for-device-interface-change-notification).
 
+Isolated driver packages leverage device interfaces to share state with other drivers and components. Below is an example of how isolated driver packages should think about communicating with other drivers via device interfaces as opposed to hardcoding paths to global registry locations:
+
+![screen shot of the output window](images/device-interface-communication.png)
+
+In order to read and write device interface registry state, use the following API's:
+
+* WDM:
+  * [IoOpenDeviceInterfaceRegistryKey]()
+* Other UserMode Code:
+  * [CM_Open_Device_Interface_Key]()
+* Provision Values via INF:
+  * [INF AddReg]() directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [add-interface-section]() section.
 
 ### Service Registry State
 
@@ -154,6 +153,6 @@ The OS provides API’s for services to get storage locations for their internal
     * [IoGetDriverDirectory]()
   * UMDF Drivers
     * [WdfDriverRetrieveDriverDataDirectoryString]()
-  * Win32 Services
-    * [GetServiceDirectory]()
+* Win32 Services
+  * [GetServiceDirectory]()
 
