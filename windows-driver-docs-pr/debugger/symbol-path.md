@@ -3,7 +3,7 @@ title: Symbol path for Windows debuggers
 description: The symbol path specifies locations where the Windows debuggers (WinDbg, KD, CDB, NTST) look for symbol files. 
 ms.assetid: 705df98f-717f-40ad-a424-101826970691
 keywords: symbol files and paths, symbols, lazy symbol loading, deferred symbol loading, symbol path
-ms.date: 05/23/2017
+ms.date: 09/09/2019
 ms.localizationpriority: medium
 ---
 
@@ -98,13 +98,11 @@ For example, the following command tells the debugger to use a symbol server to 
 
 ## <span id="using_agestore_to_reduce_the_cache_size"></span><span id="USING_AGESTORE_TO_REDUCE_THE_CACHE_SIZE"></span>Using AgeStore to Reduce the Cache Size
 
-
 You can use the AgeStore tool to delete cached files that are older than a specified date, or to delete enough old files that the resulting size of the cache is less than a specified amount. This can be useful if your downstream store is too large. For details, see [AgeStore](agestore.md).
 
 For more information about symbol servers and symbol stores, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
 
 ## <span id="lazy_symbol_loading"></span><span id="LAZY_SYMBOL_LOADING"></span>Lazy Symbol Loading
-
 
 The debugger's default behavior is to use *lazy symbol loading* (also known as *deferred symbol loading*). This kind of loading means that symbols are not loaded until they are required.
 
@@ -116,10 +114,12 @@ For more information about lazy symbol loading, see [Deferred Symbol Loading](de
 
 You can turn off lazy symbol loading in CDB and KD by using the `-s` [command-line option](command-line-options.md). You can also force symbol loading by using the `ld` [**(Load Symbols)**](ld--load-symbols-.md) command or by using the `.reload` [**(Reload Module)**](-reload--reload-module-.md) command together with the `/f` option.
 
-## <span id="ddk_symbol_path_dbg"></span><span id="DDK_SYMBOL_PATH_DBG"></span>
+## <span id="azure"></span><span id="AZURE"></span>Azure DevOps Services Artifacts
+
+A symbol server is available with Azure Artifacts in Azure DevOps Services. For information on working with Azure Artifacts in WinDbg, see [Debug with symbols in WinDbg](https://docs.microsoft.com/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio). For general information about Azure generated symbols, see [Symbol files (PDBs)](https://docs.microsoft.com/azure/devops/artifacts/concepts/symbols).
 
 
-### <span id="controlling-the-symbol-path"></span><span id="CONTROLLING-THE-SYMBOL-PATH"></span>Controlling the Symbol Path
+## <span id="controlling-the-symbol-path"></span><span id="CONTROLLING-THE-SYMBOL-PATH"></span>Controlling the Symbol Path
 
 To control the symbol path, you can do one of the following:
 
