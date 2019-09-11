@@ -35,6 +35,9 @@ More information on how to find and load files from the driver store can be foun
 
 ## Provisioning and Accessing Registry State
 
+> [!NOTE]
+> If your component is using device or device interface *properties* to store state, continue to use that method and the appropriate OS API's to store and access state. The following guidance is for *custom state* that needs to be stored by a component.
+
 Access to various state should be done using OS API's that provide a caller with the location of the state and then the state is read/written relative to that location. Hardcoded absolute registry paths and file paths **should not be used**.
 ### PnP Device Registry State
 
