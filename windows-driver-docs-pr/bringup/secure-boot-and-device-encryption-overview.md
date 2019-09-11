@@ -13,7 +13,7 @@ This topic provides an overview of secure boot and device encryption functionali
 
 **Applies to**
 
-- Windows 10 Mobile
+- Windows 10
 
 ## Secure boot
 
