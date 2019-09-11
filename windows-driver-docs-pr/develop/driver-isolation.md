@@ -159,19 +159,19 @@ The OS provides API’s for services to get storage locations for their internal
 * Win32 Services
   * [GetServiceDirectory]()
 
-### DriverData and ProgramData
+## DriverData and ProgramData
 
 Temporary files that are to be used as part of intermediate operations that can be shared with other components should be written to either **DriverData** or **ProgramData** locations.
 
 These locations offer components a location to write temporary state or state that is meant to be consumed by other components and potentially collected and copied from a system to be processed by another system.  For example, custom log files or crash dumps fit this description.
 
-#### DriverData
+### DriverData
 
 The “DriverData” directory is available in Windows 10 Version 1803 and later. This directory is accessible by both UserMode and KernelMode components through different mechanisms.
 KernelMode drivers should access the “DriverData” directory via an operating system provided symbolic link called “\DriverData”.
 UserMode programs should access the “DriverData” directory via the environment variable %DriverData%.
 
-#### ProgramData
+### ProgramData
 
 The %ProgramData% UserMode environment variable is available for UserMode components to use when storing data. 
 
