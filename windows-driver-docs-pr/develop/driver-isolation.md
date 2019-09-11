@@ -100,7 +100,7 @@ In order to read and write device interface registry state, use the following AP
 
 ### Service Registry State
 
-Registry state for driver and Win32 services should be stored under the "Parameters" subkey of the service using an HKR line in an [AddReg]() section referenced by the service install section in the INF.  Below is an example:
+Registry state that is provisioned by the INF for driver and Win32 services should be stored under the "Parameters" subkey of the service using an HKR line in an [AddReg]() section referenced by the service install section in the INF.  Below is an example:
 
 ```
 [ExampleDDInstall.Services]
@@ -118,7 +118,7 @@ AddReg=Example_Service_Inst.AddReg
 HKR, Parameters, ExampleValue, 0x00010001, 1
 ```
 
-Use the appropriate API's to access this state:
+Use the appropriate API's to access the location of this state:
 
 * WDM 
   * [IoOpenDriverRegistryKey]()
@@ -131,7 +131,7 @@ Use the appropriate API's to access this state:
 
 ### Device File State
 
-If files related to a device need to be written, those files should be stored relative to a handle provided via OS API’s. Some examples of these types of files include: configuration files specific to that device, log files of operations that have happened to the device, etc.
+If files related to a device need to be written, those files should be stored relative to a handle or file path provided via OS API’s. Configuration files specific to that device is one example of what types of files to be stored here.
 
 * WDM
   * [IoGetDeviceDirectory]()
@@ -155,4 +155,24 @@ The OS provides API’s for services to get storage locations for their internal
     * [WdfDriverRetrieveDriverDataDirectoryString]()
 * Win32 Services
   * [GetServiceDirectory]()
+
+### DriverData and ProgramData
+
+Temporary files that are to be used as part of intermediate operations that can be shared with other components should be written to either **DriverData** or **ProgramData** locations.
+
+These locations offer components a location to write temporary state or state that is meant to be consumed by other components and potentially collected and copied from a system to be processed by another system.  For example, custom log files or crash dumps fit this description.
+
+#### DriverData
+
+The “DriverData” directory is available in Windows 10 Version 1803 and later. This directory is accessible by both UserMode and KernelMode components through different mechanisms.
+KernelMode drivers should access the “DriverData” directory via an operating system provided symbolic link called “\DriverData”.
+UserMode programs should access the “DriverData” directory via the environment variable %DriverData%.
+
+#### ProgramData
+
+The %ProgramData% UserMode environment variable is available for UserMode components to use when storing data. 
+
+Files should not be written in the root of neither the DriverData nor the ProgramData directories. A sub-directory must be created with your company name and then files and further sub-directories should be written within that directory.
+
+For example, for a company name of Contoso, a KernelMode driver could write a custom log to “\DriverData\Contoso\Logs” and a UserMode application could collect or analyze the log files from “%DriverData%\Contoso\Logs”.
 
