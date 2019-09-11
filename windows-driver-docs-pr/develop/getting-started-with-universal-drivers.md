@@ -18,9 +18,9 @@ A Universal Windows driver package contains an INF file and binaries that instal
 
 Any driver binaries in the driver package can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md) or the Windows Driver Model (WDM).
 
-A universal driver contains a base driver package and optional extension driver packages.  Additionally, it can leverage an optional hardware support app. The base driver package contains all core functionality and shared code. Separately, optional extension driver packages can contain customizations and additional settings.
+A universal driver contains all of the following parts: a base driver package and optional extension driver packages.  Additionally, it can leverage an optional hardware support app. The base driver package contains all core functionality and shared code. Separately, optional extension driver packages can contain customizations and additional settings.
 
-Typically, a device manufacturer (IHV) writes the base driver package, and a system builder (OEM) provides any optional extension driver packages.
+Typically, a device manufacturer (IHV) writes the base driver package, and a system builder (OEM) provides any optional component packages.
 
 An IHV follows the design best practices of *driver isolation* to ensure the driver is reliable and robust to servicing operations.
 
