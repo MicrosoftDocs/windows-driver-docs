@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > New 09/2019:
-> We are introducing a new concept called **["Driver Isolation"](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/develop/driver-isolation)** for Universal drivers. 
+> We are introducing a new concept called **["Driver Package Isolation"](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/develop/driver-isolation)** for Universal drivers. 
 
 Universal Windows drivers enable developers to create a single driver package that runs across multiple different device types, from embedded systems to tablets and desktop PCs.
 
@@ -22,7 +22,7 @@ A universal driver contains all of the following parts: a base driver package an
 
 Typically, a device manufacturer (IHV) writes the base driver package, and a system builder (OEM) provides any optional component packages.
 
-An IHV follows the design best practices of *driver isolation* to ensure the driver is reliable and robust to servicing operations.
+An IHV follows the design best practices of *driver package isolation* to ensure the driver is reliable and robust to servicing operations.
 
 After IHV has certified the base driver package, it can be deployed on all OEM systems. Because a base driver package can be used across all systems that share a hardware part, Microsoft can test the base driver package broadly via Windows Insider flighting, rather than limiting distribution to specific machines. 
 
@@ -42,7 +42,7 @@ When you write a universal driver package, there are four design principles to c
 In the documentation, we use the acronym **DCHU** to refer to the above principles.
 Below, you'll find guidance on how to make your driver package DCHU-compliant.
 
-Additionally, Universal drivers also benefit from the principles of driver isolation.  You'll find detailed guidance on how to follow these best practices in the ["Driver Isolation and Universal Drivers"](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/develop/driver-isolation) page.
+Additionally, Universal drivers also benefit from the principles of driver package isolation.  You'll find detailed guidance on how to follow these best practices in the ["Driver Package Isolation"](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/develop/driver-isolation) page.
 
 Also check out [Universal Driver Scenarios](universal-driver-scenarios.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles.
 
@@ -63,11 +63,11 @@ The following are required when writing a universal driver package:
     2. Select **Driver Settings**.
     3. Use the drop-down menu to set **Target Platform** to `Universal`.
 
-* Driver Isolation:
+* Driver Package Isolation:
 
-  * To maximize reliability and serviceability of your Universal driver, ensure your driver follows the principles of **driver isolation**
-  * Driver isolation is a new concept that allows your driver to be self-contained and robust to OS changes
-  * See more details on the [Driver Isolation](driver-isolation.md) page
+  * To maximize reliability and serviceability of your Universal driver, ensure your driver follows the principles of **driver package isolation**
+  * Driver package isolation is a new concept that allows your driver to be self-contained and robust to OS changes
+  * See more details on the [Driver Package Isolation](driver-isolation.md) page
     
 *  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF.  You can update an extension INF independently from the base driver package to improve robustness and servicing.  See [Using an Extension INF File](../install/using-an-extension-inf-file.md).
 *  If you would like to provide an application that works with your device, please provide a UWP app.  For details, see [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).  An OEM can pre-load such an app using [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).  Alternatively, users can manually download the app from the Microsoft Store.

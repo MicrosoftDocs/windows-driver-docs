@@ -173,7 +173,7 @@ These locations offer components a location to write temporary state or state th
 
 The “DriverData” directory is available in Windows 10 Version 1803 and later. This directory is accessible by both UserMode and KernelMode components through different mechanisms.
 KernelMode drivers should access the “DriverData” directory via an operating system provided symbolic link called “\DriverData”.
-UserMode programs should access the “DriverData” directory via the environment variable %DriverData%.
+UserMode programs should access the “DriverData” directory via the environment variable "%DriverData%".
 
 ### ProgramData
 
