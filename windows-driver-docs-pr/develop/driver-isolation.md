@@ -6,7 +6,7 @@ ms.date: 09/12/2019
 
 ## Driver Package Isolation Overview
 
-Binaries in an isolated driver packagem store registry and file state using a handle to a relative location provided by OS API's as opposed to hardcoding global location paths.
+Binaries in an isolated driver package store registry and file state using a handle to a relative location provided by OS API's as opposed to hardcoding global location paths.
 
 Binaries in isolated driver packages interact with other components and their state through OS API's or interfaces exposed by those components. They do not use hardcoded paths to manually modify and interact with other drivers' state.  Additionally, all isolated driver packages are run from the driver store.
 
