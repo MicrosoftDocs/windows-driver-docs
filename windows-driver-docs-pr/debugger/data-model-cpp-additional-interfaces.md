@@ -1,31 +1,12 @@
 ---
 title: Debugger Data Model C++ Additional Interfaces
 description: This topic describes  addtional interfaces associated with the Debugger C++ Data Model, such as metadata, concepts and object enumeration.
-ms.date: 10/05/2018
+ms.date: 09/12/2018
 ---
 
 # Debugger Data Model C++ Additional Interfaces
 
-This topic describes some addtional interfaces associated with the Debugger C++ Data Model, such as metadata, concepts and object enumeration.
-
-This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based
-debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
-
----
-
-[Debugger Data Model C++ Overview](data-model-cpp-overview.md)
-
-[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
-
-[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
-
-[Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
-
-[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
-
-[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
-
----
+This topic describes some additional interfaces associated with the Debugger C++ Data Model, such as metadata, concepts and object enumeration.
 
 ## <span id="metadatainterfaces"></span> Debugger Data Model Metadata Interfaces
 
@@ -142,10 +123,11 @@ The Reset method resets the enumerator to the position it was at when it was fir
 
 The GetNext method both moves the enumerator forward and returns the native/language construct at that position in the enumeration. 
 
-
 ---
 
 ## <span id="related_topics"></span>Related topics
+
+This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 
 [Debugger Data Model C++ Overview](data-model-cpp-overview.md)
 
@@ -158,4 +140,3 @@ The GetNext method both moves the enumerator forward and returns the native/lang
 [Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
 
 [Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
-

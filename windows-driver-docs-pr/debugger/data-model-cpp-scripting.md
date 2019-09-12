@@ -1,29 +1,12 @@
 ---
 title: Debugger Data Model C++ Scripting
 description: This topic describes how to use Debugger Data Model C++ scripting to support automation with the debugger engine.
-ms.date: 10/08/2018
+ms.date: 09/12/2019
 ---
 
 # Debugger Data Model C++ Scripting
 
 This topic describes how to use Debugger Data Model C++ Debugger Data Model C++ scripting to support automation with the debugger engine using scripting.
-
-This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based
-debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
-
-[Debugger Data Model C++ Overview](data-model-cpp-overview.md)
-
-[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
-
-[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
-
-[Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
-
-[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
-
-[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
-
----
 
 ## <span id="scriptmanangement"> Script Management in the Debugger Data Model 
 
@@ -644,13 +627,11 @@ The Reset method resets the position of the enumerator to where it was just afte
 
 The GetNext method moves the enumerator forward to the next breakpoint to be enumerated and returns the IDataModelScriptDebugBreakpoint interface for that breakpoint. If the enumerator has reached the end of the enumeration, it returns E_BOUNDS. Once the E_BOUNDS error has been produced, subsequent calls to the GetNext method will continue to produce E_BOUNDS unless an intervening call to the Reset method has been made. 
 
-
-
-
-
 ---
 
 ## <span id="related_topics"></span>Related topics
+
+This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 
 [Debugger Data Model C++ Overview](data-model-cpp-overview.md)
 
@@ -661,5 +642,3 @@ The GetNext method moves the enumerator forward to the next breakpoint to be enu
 [Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
 
 [Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
-
-[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
