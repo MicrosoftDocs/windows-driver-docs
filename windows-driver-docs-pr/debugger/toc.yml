@@ -894,6 +894,10 @@
       href: javascript-debugger-example-scripts.md
     - name: "Native Debugger Objects in JavaScript Extensions"
       href: native-objects-in-javascript-extensions.md
+    - name: "Native Debugger Objects in JavaScript Extensions - Debugger Object Details"
+      href: native-objects-in-javascript-extensions-debugger-objects.md
+    - name: "Native Debugger Objects in JavaScript Extensions - Design Considerations"
+      href: native-objects-in-javascript-extensions-design-considerations.md   
   - name: "Native Debugger Objects in NatVis"
     href: native-debugger-objects-in-natvis.md
   - name: "Using LINQ With the debugger objects"
