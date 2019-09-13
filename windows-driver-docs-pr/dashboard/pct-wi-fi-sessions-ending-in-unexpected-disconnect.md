@@ -41,4 +41,4 @@ Once a device successfully connects to Wi-Fi, it must maintain that connection, 
 
 ### Final calculation
 
-*Percent of Wi-Fi sessions ending in an unexpected connect = average(all instances)*
+*Percent of Wi-Fi sessions ending in an unexpected disconnect = average(all instances)*
