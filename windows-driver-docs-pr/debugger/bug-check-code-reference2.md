@@ -425,17 +425,6 @@ The following table shows the code and name of each bug check code.
 | 0x100000EA | [**THREAD\_STUCK\_IN\_DEVICE\_DRIVER\_M**](bug-check-0x100000ea--thread-stuck-in-device-driver-m.md)                                              |
 | 0x4000008A | [**THREAD\_TERMINATE\_HELD\_MUTEX**](bug-check-0x4000008a--thread-terminate-held-mutex.md)                                                        |
 | 0xC0000218 | [**STATUS\_CANNOT\_LOAD\_REGISTRY\_FILE**](bug-check-0xc0000218--status-cannot-load-registry-file.md)                                             |
-| 0xC000021A | [**STATUS\_SYSTEM\_PROCESS\_TERMINATED**](bug-check-0xc000021a--status-system-process-terminated.md)                                              |
+| 0xC000021A | [**WINLOGON\_FATAL\_ERROR**](bug-check-0xc000021a--winlogin-fatal-error.md)                                              |
 | 0xC0000221 | [**STATUS\_IMAGE\_CHECKSUM\_MISMATCH**](bug-check-0xc0000221--status-image-checksum-mismatch.md)                                                  |
 | 0xDEADDEAD | [**MANUALLY\_INITIATED\_CRASH1**](bug-check-0xdeaddead--manually-initiated-crash1.md)                                                             |
-
- 
-
- 
-
- 
-
-
-
-
-
