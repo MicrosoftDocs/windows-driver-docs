@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This measure counts the number of crashes in display drivers that happen in the context of the creative applications and calculating the runtime of [creative applications](measure-appendix.md#creative-applications-example) on all machines that have the updated driver. The measure then normalizes the total runtime to years, indicating the number of crashes a user would experience if they used the creative applications for a year.
 
-This measure is normalized by usage, less than or equal to the baseline goal.
+This measure is normalized by usage, which is less than or equal to the baseline goal.
 
 ## Measure attributes
 
