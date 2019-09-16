@@ -3,8 +3,6 @@ title: Percent of Bluetooth connection failures
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a Bluetooth device failed to connect with another device.
 ms.topic: article
 ms.date: 05/20/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
