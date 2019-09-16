@@ -3,8 +3,6 @@ title: Firmware measures
 description: Firmware measures filter out benign initialization errors during firmware driver flighting
 ms.topic: article
 ms.date: 05/20/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 

@@ -3,8 +3,6 @@ title: Percent of Bluetooth pairing failures
 description: 
 ms.topic: article
 ms.date: 05/20/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 

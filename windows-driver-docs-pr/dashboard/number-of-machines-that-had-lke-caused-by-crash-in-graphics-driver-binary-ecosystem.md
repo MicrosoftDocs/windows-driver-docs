@@ -3,8 +3,6 @@ title:  Number of machines that had an LKE caused by a crash in the graphics dri
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines that experienced an LKE due to a crash in the graphics driver binary 
 ms.topic: article
 ms.date: 05/20/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
