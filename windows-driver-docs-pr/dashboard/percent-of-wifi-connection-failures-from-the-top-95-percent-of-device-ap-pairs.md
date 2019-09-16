@@ -3,8 +3,6 @@ title: Percent of wi-fi connection failures, from the top 95 percent of device a
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a device fails to connect to an access point
 ms.topic: article
 ms.date: 05/20/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
