@@ -5,7 +5,7 @@ ms.assetid: e9cd2bc7-99c1-4aca-91b0-9faefa4a856d
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , extended format
 - extended format WDK Windows 7 display
-ms.date: 04/20/2017
+ms.date: 09/10/2017
 ms.localizationpriority: medium
 ---
 
@@ -17,45 +17,19 @@ In the following table, the XR part of a format name can be considered a new sha
 
 ## Table of extended formats
 
-The following table shows resources with particular attributes that use the extended formats if the hardware supports these extended formats for the resource with those attributes or if extended formats for those resources are optional.
+The following table shows resources with particular attributes that use the extended formats (DXGI_FORMAT_*) if the hardware supports these extended formats for the resource with those attributes or if extended formats for those resources are optional. See [DXGI_FORMAT](https://docs.microsoft.com/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) for a description of each format.
 
 <table>
 <head>
     <tr>
-        <th colspan="9">Formats (DXGI_FORMAT_*)</th>
-    </tr>
-    <tr>
-        <th></th>
-        <th></th>
-        <th>B8G8R8A8</th>
-        <th>B8G8R8A8</th>
-        <th></th>
-        <th>B8G8R8X8</th>
-        <th>B8G8R8X8</th>
-        <th></th>
-        <th>R10G10B10</th>
-    </tr>
-    <tr>
-        <th>Resource</th>
-        <th>B8G8R8A8</th>
-        <th>_UNORM</th>
-        <th>_UNORM</th>
-        <th>B8G8R8X8</th>
-        <th>_UNORM</th>
-        <th>_UNORM</th>
-        <th>R10G10B10A2</th>
-        <th>_XR_BIAS</th>
-    </tr>
-    <tr>
-        <th>attribute</th>
-        <th>_TYPELESS</th>
-        <th>(existing)</th>
-        <th>_SRGB</th>
-        <th>_TYPELESS</th>
-        <th>(existing)</th>
-        <th>_SRGB</th>
-        <th>_TYPELESS</th>
-        <th>_A2_UNORM</th>
+        <th>Resource Attribute</th>
+        <th>B8G8R8A8_TYPELESS</th>
+        <th>B8G8R8A8_UNORM (existing)</th>
+        <th>B8G8R8A8_UNORM_SRGB</th>
+        <th>B8G8R8X8_TYPELESS</th>
+        <th>B8G8R8X8_UNORM (existing)</th>
+        <th>B8G8R8X8_UNORM_SRGB</th>
+        <th>R10G10B10_XR_BIAS_A2_UNORM</th>
     </tr>
 </head>
 <body>
