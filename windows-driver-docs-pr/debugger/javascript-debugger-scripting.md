@@ -20,26 +20,6 @@ When a JavaScript is loaded via the .scriptload command, the root code of the sc
 
 This topic describes some of what you can do with JavaScript debugger scripting.
 
-[Load The Debugger JavaScript Provider](#provider)
-
-[Use the JavaScript Scripting Meta Commands](#commands)
-
-[Get Started with JavaScript Debugger Scripting](#started)
-
-[Automate Debugger Commands](#automate)
-
-[Set Conditional Breakpoints with JavaScript](#breakpoints)
-
-[Create a Debugger Visualizer in JavaScript](#visualizer)
-
-[Work With 64-Bit Values in JavaScript Extensions](#bitvalues)
-
-[JavaScript Debugging](#debugging)
-
-[JavaScript in VSCode - Adding IntelliSense](#vscode)
-
-[JavaScript Resources](#resources)
-
 These two topics provide additional information about working with JavaScript in the debugger.
 
 [JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md)

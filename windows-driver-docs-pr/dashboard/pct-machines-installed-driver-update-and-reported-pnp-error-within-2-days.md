@@ -3,8 +3,6 @@ title: Percent of machines that installed a driver update and reported a PnP err
 description: The measure aggregates telemetry from a 30-day sliding window into a percentage of machines that successfully installed the driver and then Encountered a PNP error within two days of install
 ms.topic: article
 ms.date: 05/20/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 

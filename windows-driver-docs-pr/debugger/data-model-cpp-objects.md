@@ -1,42 +1,12 @@
 ---
 title: Debugger Data Model C++ Objects
 description: This topic describes how to use Debugger Data Model C++ Objects and how they can extend the capabilities of the debugger.
-ms.date: 10/08/2018
+ms.date: 09/12/2019
 ---
 
 # Debugger Data Model C++ Objects
 
 This topic describes how to use Debugger Data Model C++ Objects and how they can extend the capabilities of the debugger.
-
-This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based
-debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
-
-
-[Debugger Data Model C++ Overview](data-model-cpp-overview.md)
-
-[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
-
-[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
-
-[Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
-
-[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
-
-[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
-
----
-
-## Topic Sections
-
-This topic includes the following sections.
-
-[The Core Debugger Object Model](#core)
-
-[Debugger Data Model Core Object Types](#objecttypes)
-
-[Debugger Data Model Manager](#modelmanager)
-
----
 
 ## <span id="core">  The Core Debugger Object Model
 
@@ -717,21 +687,15 @@ STDMETHOD(AcquireSubNamespace)(_In_ PCWSTR modelName, _In_ PCWSTR subNamespaceMo
 
 [AcquireSubNamespace](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-idatamodelmanager2-acquiresubnamespace)
 
-The AcquireSubNamespace method helps in the construction of something which might more traditionally look like a language namespace than a new object in a dynamic language. If, for instance, a caller wishes to categorize properties on a process object to make the process object more organized and the properties easier to discover, one method of doing this would be to create a sub-object for each category on the process object and placing those properties inside that object. 
-
-
-
-
----
+The AcquireSubNamespace method helps in the construction of something which might more traditionally look like a language namespace than a new object in a dynamic language. If, for instance, a caller wishes to categorize properties on a process object to make the process object more organized and the properties easier to discover, one method of doing this would be to create a sub-object for each category on the process object and placing those properties inside that object.
 
 ## <span id="related_topics"></span>Related topics
 
+This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 
 [Debugger Data Model C++ Overview](data-model-cpp-overview.md)
 
 [Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
-
-[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
 
 [Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
 
