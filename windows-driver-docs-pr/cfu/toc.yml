@@ -1,0 +1,21 @@
+- name: "Component Firmware Update (CFU)"
+# Auto-expanded node
+  items: 
+  - name: "Component Firmware Update (CFU)"
+    href: index.md
+  - name: "Component Firmware Update (CFU) overview"
+    href: cfu-overview.md
+  - name: "Component Firmware Update (CFU) driver"
+    href: cfu-driver.md
+  - name: "Component Firmware Update (CFU) engineering guide"
+    href: cfu-engineering guide.md
+  - name: "Component Firmware Update (CFU) host"
+    href: cfu-host.md
+  - name: "Component Firmware Update (CFU) host driver"
+    href: cfu-host-driver.md
+  - name: "Component Firmware Update (CFU) tools"
+    href: cfu-tools.md
+  - name: "Component Firmware Update (CFU) standalone tool sample"
+    href: cfu-standalone-tool-sample.md
+  - name: "Component Firmware Update (CFU) specification"
+    href: cfu-specification.md
