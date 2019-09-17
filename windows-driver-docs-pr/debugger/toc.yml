@@ -894,6 +894,10 @@
       href: javascript-debugger-example-scripts.md
     - name: "Native Debugger Objects in JavaScript Extensions"
       href: native-objects-in-javascript-extensions.md
+    - name: "Native Debugger Objects in JavaScript Extensions - Debugger Object Details"
+      href: native-objects-in-javascript-extensions-debugger-objects.md
+    - name: "Native Debugger Objects in JavaScript Extensions - Design Considerations"
+      href: native-objects-in-javascript-extensions-design-considerations.md   
   - name: "Native Debugger Objects in NatVis"
     href: native-debugger-objects-in-natvis.md
   - name: "Using LINQ With the debugger objects"
@@ -2795,8 +2799,8 @@
       href: bug-check-0x4000008a--thread-terminate-held-mutex.md
     - name: "Bug Check 0xC0000218: STATUS_CANNOT_LOAD_REGISTRY_FILE"
       href: bug-check-0xc0000218--status-cannot-load-registry-file.md
-    - name: "Bug Check 0xC000021A: STATUS_SYSTEM_PROCESS_TERMINATED"
-      href: bug-check-0xc000021a--status-system-process-terminated.md
+    - name: "Bug Check 0xC000021A: WINLOGON_FATAL_ERROR"
+      href: bug-check-0xc000021a--winlogin-fatal-error.md
     - name: "Bug Check 0xC0000221: STATUS_IMAGE_CHECKSUM_MISMATCH"
       href: bug-check-0xc0000221--status-image-checksum-mismatch.md
     - name: "Bug Check 0xDEADDEAD: MANUALLY_INITIATED_CRASH1"
