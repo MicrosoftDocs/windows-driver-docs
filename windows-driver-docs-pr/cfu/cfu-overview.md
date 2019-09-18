@@ -70,13 +70,15 @@ In CFU, a *primary* *component* is a device that understands the CFU protocol. T
 
 A CFU-compatible system uses a hierarchical concept of a primary component and sub-components.  A primary component is a device that implements the device side of the CFU protocol and can receive updates for itself or its sub-components directly from the CFU driver. A primary component and sub-components can be internal or detachable.  A device may have multiple primary components, with or without sub-components, each with its own CFU driver.
 
-![Flow chart describing CFU Driver.](media/image1.png)
+![Flow chart describing CFU driver](images/overview.png)
 
 Sub-components are updated by the component after receiving a CFU firmware image that is targeted for the sub-component. The mechanism that the component uses to update its sub-components is implementation specific between the sub-component and the primary component and is beyond the scope of the CFU specification.
 
 **Offers and Payloads**
 
-A CFU driver (host) may contain multiple firmware images for a primary component and sub-components associated with the component.![Chart showing firmware images.](media/image2.png)
+A CFU driver (host) may contain multiple firmware images for a primary component and sub-components associated with the component.
+
+![Chart showing firmware images](images/offer-payload.png)
 
 A package within the host comprises an *offer* and a *payload* or image and other information necessary for the driver to load. The offer contains enough information about the payload to allow the primary component to decide if it is an acceptable payload.  Offer information includes a CFU protocol version, component ID (and sub-component ID if applicable), firmware version, release vs. debug status, and other information. For some devices, downloading and flashing new firmware is expensive for battery life and other reasons. By issuing an offer, the CFU protocol avoids downloading or flashing firmware that would be rejected based on versioning and other platform policies.
 
@@ -100,25 +102,25 @@ An offer can also be rejected if the primary component has accepted a download b
 
 Consider an example of a device that has four components: one primary component and three sub components. <span class="underline">Offers are made in no specific order</span> within a cycle. Here is a representation of a possible host offer cycle:
 
-![Flow chart showing sub components. ](media/image3.png)
+![Flow chart showing sub components](images/sub-component-offer.png)
 
 In an example, in the first round, all offers are skipped to see all the Offers.
 
-![Second flow chart showing sub-components. ](media/image4.png)
+![Second flow chart showing sub-components](images/sub-component-skip.png)
 
 After seeing all the offers, the primary component determines that sub-component 1 must be updated before sub-component 3, and that the order of the primary component and sub-component 2 does not matter. The component sets sub-component 3 as lower priority than sub-component 1.
 
 In the next offer cycle, the sub-component 3 offer is skipped again because sub-component 1 has not yet been updated and is higher priority.  Each of the other offers is accepted and updated.
 
-![Third flow chart showing sub-components. ](media/image5.png)
+![Third flow chart showing sub-components](images/sub-component-skip-accept.png)
 
 In the next round, the sub-component 3 offer is accepted because the requirement to first update sub-component 2 has been met. All other offers are rejected because they are up to date.
 
-![Fourth flow chart showing sub-components.](media/image6.png)
+![Fourth flow chart showing sub-components](images/sub-component-accept-reject.png)
 
 Finally, in the last round, all offers are Rejected because the primary component and all sub-components are up to date.
 
-![Final flow chart showing sub-components.](media/image7.png)
+![Final flow chart showing sub-components](images/sub-component-all-rejected.png)
 
 At this time, the host has done all it can do. It ends the update process and updates its status in **Device Manager** according to the update results.
 
@@ -140,7 +142,7 @@ The Payload, in simplest terms, is a set of addresses and fixed-size arrays of b
 
 The first write request is flagged so that the Component can do any preparations that it did not do when the Offer was first accepted, such as erase memory.  After the first write request, the Driver sends more Address + Data write commands until the final write.  The final write is flagged such that the Component knows that the download is complete and that it should validate the download and invoke or forward the new firmware.
 
-![Chart showing download.](media/image8.png)
+![Chart showing download](images/chevron-six-states.png)
 
 The CFU Protocol specification defines several other result codes to assist in troubleshooting failures. See the complete specification for details. There is also room for implementers to add other codes for their own specific purposes, such as requesting immediate resets.
 

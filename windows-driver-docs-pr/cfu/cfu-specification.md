@@ -10,19 +10,12 @@ ms.localizationpriority: medium
 
 # Component Firmware Update (CPU) specification
 
-October 2018
-
-Abstract
-
 This specification describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download. The specification supports configurations where the component accepting the firmware might have sub-components, which require separate firmware images. The specification allows component in-charge to decide whether to accept the firmware. It also acts as an optimization because the firmware image is only sent to the component if it is able or ready to accept it.
 
 The current version of this paper is maintained on the Web at:  
 <https://aka.ms/cfu-spec>
 
 References and resources discussed here are listed at the end of this paper.
-
-**  
-**
 
 **MIT License**
 
@@ -442,15 +435,11 @@ The multi-component device is visible to the operating system as single unit. Th
 
 On a PC, there might be many different devices (where a device may have one or more components in there). In the context of this protocol, the communication to each device is independent. Each device has a corresponding instance of the host.  
 
- 
-
-> ![C:\\Users\\prwilk.REDMOND\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO\\1159679F.tmp](media/image1.png)
-
-<span id="_Toc526696419" class="anchor"></span>Figure ‑Device Firmware, Primary Component and its Sub-components
+![Device Firmware, Primary Component and its Sub-components](images/primary-component.png)
 
 # Protocol Prerequisites
 
-This section lists the perquisites and best practices that must be implemented to leverage this protocol: 
+This section lists the perquisites and best practices that must be implemented to leverage this protocol:
 
   - Atomic image usage
 
@@ -472,7 +461,7 @@ This section lists the perquisites and best practices that must be implemented t
 
   - Rollback protection
 
-> Rollback policies are enforced by the primary component and are implementation specific.  The current firmware on the component validates incoming firmware images against internal policies such as the version number must be newer, or release type cannot be switched from release to debug, and so on. The protocol permits messaging to indicate that an update is accepted even if it is violating rollback policies. 
+> Rollback policies are enforced by the primary component and are implementation specific.  The current firmware on the component validates incoming firmware images against internal policies such as the version number must be newer, or release type cannot be switched from release to debug, and so on. The protocol permits messaging to indicate that an update is accepted even if it is violating rollback policies.
 
 # CFU Protocol Overview 
 
@@ -486,15 +475,13 @@ To support cases where a device update order has dependencies, the device may no
 
 Here is the CFU command sequence for updating firmware image.
 
-![](media/image2.png)
+![Firmware Update Programming Command Sequence](images/firmware-update-command-sequence.png)
 
-<span id="_Toc526696420" class="anchor"></span>Figure ‑ Firmware Update Programming Command Sequence
-
-### State: Host Initialized Notification 
+### State: Host Initialized Notification
 
 After the host initializes itself and has identified a set of offers it needs to send to the device, the host issues an OFFER\_INFO\_START\_ENTIRE\_TRANSACTION command to indicate to the component that the host is now initialized. The purpose of this command is to notify the current device firmware that a new instance of the host is available. This notification is useful when a prior instance of the host gets terminated unexpectedly. The device must complete this command with success.
 
-### State: OFFER\_INFO\_START\_OFFER\_LIST Notification 
+### State: OFFER\_INFO\_START\_OFFER\_LIST Notification
 
 In this state, host issues the OFFER\_INFO\_START\_OFFER\_LIST command to indicate that it is ready to send the offer(s) to the current device firmware. The primary component of the device must complete this command with success.
 
