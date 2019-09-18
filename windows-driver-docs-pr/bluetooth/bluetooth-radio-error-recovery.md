@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Bluetooth Radio Reset and Recovery
 
-Bluetooth Radio Reset and Recovery is a technology in Windows 10, version 1803 and later that introduces a robust reset and gitrecovery mechanism for Bluetooth radios. This mechanism enables Bluetooth radios to recover from hardware failures that lead to malfunction, loss of connectivity, or unresponsiveness to operational commands. The goal is to automatically recover the radio, making the user experience seamless and reducing the likelihood of requiring a system restart.
+Bluetooth Radio Reset and Recovery is a technology in Windows 10, version 1803 and later that introduces a robust reset and recovery mechanism for Bluetooth radios. This mechanism enables Bluetooth radios to recover from hardware failures that lead to malfunction, loss of connectivity, or unresponsiveness to operational commands. The goal is to automatically recover the radio, making the user experience seamless and reducing the likelihood of requiring a system restart.
 
 Bluetooth radio reset and recovery can be implemented with or without firmware dependencies. IHV or OEM partners can extend the software-based reset mechanisms available on all Windows PCs with supported device- or firmware-level reset mechanisms to increase the likelihood of successful recovery.
 
