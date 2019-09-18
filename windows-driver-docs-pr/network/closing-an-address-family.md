@@ -1,6 +1,6 @@
 ---
-title: Closing an Address Family
-description: Closing an Address Family
+title: Closing an Address Family Overview
+description: Closing an Address Family Overview
 ms.assetid: 0533bc31-dd4c-42c4-8170-8201e32e1026
 keywords:
 - address families WDK networking
@@ -10,11 +10,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Closing an Address Family
-
-
-
-
+# Closing an Address Family Overview
 
 A connection-oriented client calls [**NdisClCloseAddressFamily**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclcloseaddressfamily) to delete the association between itself, a call manager, and a particular underlying NIC.
 

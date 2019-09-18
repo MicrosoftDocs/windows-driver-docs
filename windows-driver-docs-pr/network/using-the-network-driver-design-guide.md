@@ -1,6 +1,6 @@
 ---
-title: Using the Network Driver Design Guide
-description: Using the Network Driver Design Guide
+title: Navigating the Network Driver Design Guide
+description: Navigating the Network Driver Design Guide
 ms.assetid: 8d9cbf3c-5eec-4409-ab4c-595bb921832d
 keywords:
 - network drivers WDK , documentation
@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Using the Network Driver Design Guide
+# Navigating the Network Driver Design Guide
 
 
 
@@ -64,13 +64,13 @@ For more information about network INF files, which are used to install network 
 
 The following additional driver models are available to use particular hardware technologies and architectures.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
+<table>  
+<colgroup>  
+<col width="50%" />  
+<col width="50%" />  
+</colgroup>  
+<thead>  
+<tr class="header">  
 <th align="left">Technology</th>
 <th align="left">Description</th>
 </tr>

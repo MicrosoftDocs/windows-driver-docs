@@ -37,13 +37,13 @@ Specifies all or part of a hardware ID, compatible ID, or device instance ID of 
 
 The following special characters modify the ID parameter.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
+<table>  
+<colgroup>  
+<col width="50%" />  
+<col width="50%" />  
+</colgroup>  
+<thead>  
+<tr class="header">  
 <th align="left">Character</th>
 <th align="left">Description</th>
 </tr>
@@ -68,6 +68,7 @@ The following special characters modify the ID parameter.
 
 
 <span id="________class______"></span><span id="________CLASS______"></span>  
+
 **=**_class_   
 Specifies the device setup class of the devices. The equal sign (**=**) identifies the string as a class name.
 

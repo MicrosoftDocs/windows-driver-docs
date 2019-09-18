@@ -1,12 +1,12 @@
 ---
-title: Hyper-V Extensible Switch Feature Status Information
-description: Hyper-V Extensible Switch Feature Status Information
+title: Hyper-V Extensible Switch Feature Status Information Overview
+description: Hyper-V Extensible Switch Feature Status Information Overview
 ms.assetid: FB10029B-2887-4C8E-A428-B979442B52F7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Hyper-V Extensible Switch Feature Status Information
+# Hyper-V Extensible Switch Feature Status Information Overview
 
 
 The Hyper-V extensible switch interface supports the ability to obtain custom status information for an extensible switch or one of its ports. This status information is known as *feature status* information.

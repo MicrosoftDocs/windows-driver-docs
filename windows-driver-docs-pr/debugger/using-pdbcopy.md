@@ -3,14 +3,15 @@ title: Using PDBCopy
 description: Using PDBCopy
 ms.assetid: f8207b09-5a1b-4ff3-b99d-20daa88cfe10
 keywords: ["PDBCopy, using"]
-ms.date: 05/23/2017
+ms.date: 09/11/2019
 ms.localizationpriority: medium
 ---
 
 # Using PDBCopy
 
-
 PDBCopy is a command-line tool that creates a stripped symbol file from a full symbol file. In other words, it takes a symbol file that contains both private symbol data and a public symbol table, and creates a copy of that file that contains only the public symbol table. Depending on which PDBCopy options are used, the stripped symbol file contains either the entire public symbol table or a specified subset of the public symbol table.
+
+For the location of PDBCopy in the WDK, see **Installation directory** in [Tools Included in Debugging Tools for Windows](extra-tools.md#installation-directory).
 
 PDBCopy works with any PDB-format symbol file (with file name extension .pdb), but not with the older format (.dbg) symbol files.
 

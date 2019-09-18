@@ -89,7 +89,7 @@ Device queue is not busy.
 ```
 
 [**!drivers**](-drivers.md)  
-The [**!drivers**](-drivers.md) command is no longer supported. Please use the [**lm t n**](lm--list-loaded-modules-.md) command instead.
+The [**!drivers**](-drivers.md) command is no longer supported. Use the [**lm t n**](lm--list-loaded-modules-.md) command instead.
 
 [**!drvobj**](-drvobj.md)  
 Displays detailed information about a DRIVER\_OBJECT.

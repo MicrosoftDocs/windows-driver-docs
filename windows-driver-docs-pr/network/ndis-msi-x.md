@@ -1,6 +1,6 @@
 ---
-title: NDIS MSI-X
-description: NDIS MSI-X
+title: Overview of NDIS MSI-X
+description: Overview of NDIS MSI-X
 ms.assetid: 5bb374c8-9354-42d3-9754-42e8ff42bdb9
 keywords:
 - miniport drivers WDK networking , MSI-X
@@ -15,7 +15,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# NDIS MSI-X
+# Overview of NDIS MSI-X
 
 
 

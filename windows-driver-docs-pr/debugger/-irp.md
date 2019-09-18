@@ -50,7 +50,7 @@ If this parameter is included with any value, such as 1, the output includes the
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-See [Plug and Play Debugging](plug-and-play-debugging.md) and [Debugging Interrupt Storms](debugging-an-interrupt-storm.md) for applications of this extension command. For information about IRPs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. For further information on the major and minor function codes, see the Windows Driver Kit (WDK) documentation. (These resources may not be available in some languages and countries.)
+See [Plug and Play Debugging](plug-and-play-debugging.md) and [Debugging Interrupt Storms](debugging-an-interrupt-storm.md) for applications of this extension command. For information about IRPs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. For further information on the major and minor function codes, see the Windows Driver Kit (WDK) documentation.
 
 This topic describes the IRP structure, [**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp).
 
