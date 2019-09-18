@@ -72,7 +72,7 @@ Trying to extract TMF information from - C:\ProgramData\dbg\sym\usbxhci.pdb\D4C8
 ---- end of log ----
 ```
 
-The preceding output contains messages from several log buffers. To see mesages from a single log buffer, use the **-a** parameter, and specify the address of the log buffer. The following example shows how to display the messages from the log buffer at address fffffa8005ff2b60.
+The preceding output contains messages from several log buffers. To see messages from a single log buffer, use the **-a** parameter, and specify the address of the log buffer. The following example shows how to display the messages from the log buffer at address fffffa8005ff2b60.
 
 ```dbgcmd
 3: kd> !rcdrlogdump  usbxhci -a fffffa8005ff2b60
