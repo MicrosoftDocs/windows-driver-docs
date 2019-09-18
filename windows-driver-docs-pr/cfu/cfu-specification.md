@@ -12,34 +12,17 @@ ms.localizationpriority: medium
 
 This specification describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download. The specification supports configurations where the component accepting the firmware might have sub-components, which require separate firmware images. The specification allows component in-charge to decide whether to accept the firmware. It also acts as an optimization because the firmware image is only sent to the component if it is able or ready to accept it.
 
-The current version of this paper is maintained on the Web at:  
-<https://aka.ms/cfu-spec>
+## Contents
 
-References and resources discussed here are listed at the end of this paper.
+[Introduction](#introduction)
 
-**MIT License**
+[1.1 Glossary](#glossary)
 
-Copyright (c) Microsoft Corporation. All rights reserved.
+[Scope](#scope)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+[1.1.1 Goals](#goals)
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
-Contents
-
-[Revision History 10](#revision-history)
-
-[Introduction 11](#introduction)
-
-[1.1 Glossary 12](#glossary)
-
-[Scope 14](#scope)
-
-[1.1.1 Goals 14](#goals)
-
-[1.1.2 Non-Goals 14](#non-goals)
+[1.1.2 Non-Goals](#non-goals)
 
 [2 Supported Hardware Architecture 15](#supported-hardware-architecture)
 
@@ -73,29 +56,29 @@ Contents
 
 [5.1.2 Response 22](#response)
 
-[5.1.2.1 Header 22](#header)
+[5.1.2.1 Header](#header)
 
-[5.1.2.2 Component Version and Properties 23](#component-version-and-properties)
+[5.1.2.2 Component Version and Properties](#component-version-and-properties)
 
-[5.1.3 Mapping to HID 24](#mapping-to-hid)
+[5.1.3 Mapping to HID](#mapping-to-hid)
 
-[5.2 FIRMWARE\_UPDATE\_OFFER 24](#firmware_update_offer)
+[5.2 FIRMWARE\_UPDATE\_OFFER](#firmware_update_offer)
 
-[5.2.1 Command 24](#command-1)
+[5.2.1 Command](#command-1)
 
-[5.2.1.1 Component Information 25](#component-information)
+[5.2.1.1 Component Information](#component-information)
 
-[5.2.1.2 Firmware Version 26](#firmware-version)
+[5.2.1.2 Firmware Version](#firmware-version)
 
-[5.2.1.3 Vendor Specific 27](#vendor-specific)
+[5.2.1.3 Vendor Specific](#vendor-specific)
 
-[5.2.1.4 Misc. and Protocol version 27](#misc.-and-protocol-version)
+[5.2.1.4 Misc and Protocol version](#misc-and-protocol-version)
 
 [5.2.2 Response 27](#response-1)
 
 [5.2.2.1 Token 27](#token)
 
-[5.2.2.2 Reserved (B7 – B4) 28](#reserved-b7-b4)
+[5.2.2.2 Reserved B7 – B4)](#reserved-b7-b4)
 
 [5.2.2.3 Reject Reason (RR) 28](#reject-reason-rr)
 
@@ -115,9 +98,9 @@ Contents
 
 [5.3.1.4 Reserved B15 – B12 32](#reserved-b15-b12)
 
-[5.3.2 Response 32](#response-2)
+[5.3.2 Response](#response-2)
 
-[5.3.2.1 Token 32](#token-1)
+[5.3.2.1 Token](#token-1)
 
 [5.3.2.2 Reserved (B7 – B4) 32](#reserved-b7-b4-2)
 
@@ -151,27 +134,27 @@ Contents
 
 [5.5.1 Command 37](#command-4)
 
-[5.5.1.1 Header (B7 – B0) 38](#header-b7-b0)
+[5.5.1.1 Header (B7 – B0)](#header-b7-b0)
 
-[5.5.1.2 Data 39](#data)
+[5.5.1.2 Data](#data)
 
-[5.5.2 Response 39](#response-4)
+[5.5.2 Response](#response-4)
 
-[5.5.2.1 Sequence Number 39](#sequence-number)
+[5.5.2.1 Sequence Number](#sequence-number)
 
-[5.5.2.2 Status 40](#status-3)
+[5.5.2.2 Status](#status-3)
 
-[5.5.2.3 Reserved B8 – B11 41](#reserved-b8-b11)
+[5.5.2.3 Reserved B8 – B11](#reserved-b8-b11)
 
-[5.5.2.4 Reserved B12 – B15 41](#reserved-b12-b15)
+[5.5.2.4 Reserved B12 – B15](#reserved-b12-b15)
 
-[6 Appendix 1: Example Firmware Update Programming Command Sequence 41](#appendix-1-example-firmware-update-programming-command-sequence)
+[6 Appendix 1: Example Firmware Update Programming Command Sequence](#appendix-1-example-firmware-update-programming-command-sequence)
 
-[6.1 Example 1 41](#example-1)
+[6.1 Example 1](#example-1)
 
-[6.2 Example2 42](#example2)
+[6.2 Example 2](#example2)
 
-Tables
+## Tables
 
 [Table 5.1‑1 GET\_FIRMWARE\_VERSION Response Layout 22](#_Toc527459997)
 
@@ -293,23 +276,13 @@ Tables
 
 [Table 5.5‑11 FIRMWARE\_UPDATE\_OFFER- Response - Status Code Values 41](#_Toc527460056)
 
-Figures
+## Figures
 
-[Figure 2‑1Device Firmware, Primary Component and its Sub-components 13](#_Toc526696419)
+[Figure 2‑1Device Firmware, Primary Component and its Sub-components]()
 
-[Figure 4‑1 Firmware Update Programming Command Sequence 15](#_Toc526696420)
+[Figure 4‑1 Firmware Update Programming Command Sequence]()
 
-Contributors
-
-Microsoft Device Team
-
-# Revision History
-
-| Revision | Date            | Description              |
-| -------- | --------------- | ------------------------ |
-| 1.0      | 18 October 2018 | First published version. |
-
-# Introduction
+## Introduction
 
 Today’s PCs and accessories have internal components that perform complex operations. To ensure a quality product, there is a need to frequently update the behavior of these devices in later stages of development or after they have shipped to the customers. The update might fix identified functional or security issues, or a need to add new features. A large portion of the complex logic is in the firmware running on the device, which is updatable.
 
@@ -427,7 +400,7 @@ Some of the features of the protocol are:
 
   - Define a mechanism about how the component interacts with the sub-components. The host interacts with the device as single unit, typically the primary component. The component must act as a bridge for communication related to the sub-component firmware.
 
-# Supported Hardware Architecture
+## Supported Hardware Architecture
 
 To support a flexible hardware design, the protocol supports a multi-component device where each component requires its own firmware image. In the design, one component is the primary component and the dependent sub-components are connected to that primary component. Each component is uniquely described by a component ID.  
 
@@ -437,7 +410,7 @@ On a PC, there might be many different devices (where a device may have one or m
 
 ![Device Firmware, Primary Component and its Sub-components](images/primary-component.png)
 
-# Protocol Prerequisites
+## Protocol Prerequisites
 
 This section lists the perquisites and best practices that must be implemented to leverage this protocol:
 
@@ -645,7 +618,7 @@ For each component, two DWORDs are used to describe the properties of the compon
 
 Table GET\_FIRMWARE\_VERSION Response - Component Version and Properties Layout
 
-Each component specific information is described in two DWORDs as follows:   
+Each component specific information is described in two DWORDs as follows:
 
 <table>
 <thead>
@@ -849,11 +822,11 @@ The format for the firmware version is not mandated by this specification, howev
 
 <span id="_Toc527460005" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER **Command -** Firmware Version Bits
 
-#### Vendor Specific 
+#### Vendor Specific
 
 These four bytes may be used to encode any custom information in the offer that is specific to vendor implementation.
 
-#### Misc. and Protocol version 
+#### Misc and Protocol version
 
 These four bytes may be used to encode any custom information in the offer that is specific to vendor implementation.
 
@@ -1260,7 +1233,7 @@ The bits of the Token byte are described in this table.
 
 FIRMWARE\_UPDATE\_OFFER - Offer Command Response - Token Bits
 
-#### Reserved (B7 – B4)
+#### Reserved B7 – B4
 
 Reserved. Do not use.
 
@@ -1639,7 +1612,7 @@ The sequence will be: 
 
 6.  Component rejects. 
 
-## Example2 
+## Example 2
 
 Consider the following device firmware: 
 

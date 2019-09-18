@@ -42,6 +42,8 @@
     href: biometric/index.md
   - name: "Bluetooth Drivers"
     href: bluetooth/index.md
+  - name: "Component Firmware Update (CFU)"
+    href: cfu/index.md
   - name: "Display drivers"
     href: display/index.md
   - name: "Driver Development Tools"

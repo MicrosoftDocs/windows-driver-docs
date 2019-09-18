@@ -8,7 +8,7 @@
   - name: "Component Firmware Update (CFU) driver"
     href: cfu-driver.md
   - name: "Component Firmware Update (CFU) engineering guide"
-    href: cfu-engineering guide.md
+    href: cfu-engineering-guide.md
   - name: "Component Firmware Update (CFU) host"
     href: cfu-host.md
   - name: "Component Firmware Update (CFU) host driver"
