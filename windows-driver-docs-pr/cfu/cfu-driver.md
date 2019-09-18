@@ -74,7 +74,7 @@ To update the firmware image for your device by using the CFU model, you are exp
 
 This allows you to service your in-market devices through Windows Update. To update the firmware for a component, you deploy the CFU driver through the Windows update, and the driver gets installed on a Windows host. When the driver detects the presence of a component, it performs the necessary actions on the host and transmits the firmware image to the primary component on the device.
 
-![CFU firmware update](images/Transfer.png)
+![CFU firmware update](images/transfer-flowchart.png)
 
 ## Customize the CFU driver sample
 
