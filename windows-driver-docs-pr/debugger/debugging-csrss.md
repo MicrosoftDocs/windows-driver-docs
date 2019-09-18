@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The Client Server Run-Time Subsystem (CSRSS) is the user-mode process that controls the underlying layer for the Windows environment. There are a number of problems that make it necessary to debug CSRSS itself.
 
-Debugging CSRSS is also useful when the Windows subsystem terminates unexpectedly with a [**Bug Check 0xC000021A**](bug-check-0xc000021a--status-system-process-terminated.md) (STATUS\_SYSTEM\_PROCESS\_TERMINATED). In this case, debugging CSRSS will catch the failure before it gets to an "unexpected" point.
+Debugging CSRSS is also useful when the Windows subsystem terminates unexpectedly with a [**Bug Check 0xC000021A**](bug-check-0xc000021a--winlogin-fatal-error.md) (WINLOGON\_FATAL\_ERROR). In this case, debugging CSRSS will catch the failure before it gets to an "unexpected" point.
 
 ### <span id="controlling_ntsd_from_the_kernel_debugger"></span><span id="CONTROLLING_NTSD_FROM_THE_KERNEL_DEBUGGER"></span>Controlling NTSD from the Kernel Debugger
 

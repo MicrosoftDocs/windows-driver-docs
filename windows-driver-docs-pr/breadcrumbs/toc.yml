@@ -2,9 +2,9 @@
   tocHref: /
   topicHref: /
   items:
-  - name: Windows Hardware
+  - name: Windows
     tocHref: /windows-hardware/
-    topicHref: "https://docs.microsoft.com/windows/#pivot=hardware-dev"
+    topicHref: "https://docs.microsoft.com/windows"
     items:
     - name: Windows Drivers
       tocHref: /windows-hardware/drivers/
