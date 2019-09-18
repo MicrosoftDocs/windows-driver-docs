@@ -1,16 +1,16 @@
 ---
-title: Bluetooth Driver Error Recovery
-description: Bluetooth driver automated error recovery mechanisms with diagnostic telemetry.
-keywords: ["Bluetooth Driver Error Recovery", "Bluetooth PLDR"]
-ms.date: 08/16/2019
+title: Bluetooth Radio Reset and Recovery
+description: Bluetooth radio automated error recovery mechanisms
+keywords: ["Bluetooth Radio Error Recovery", "Bluetooth PLDR"]
+ms.date: 09/18/2019
 ms.localizationpriority: medium
 ---
 
-# Bluetooth Device-based Reset and Recovery
+# Bluetooth Radio Reset and Recovery
 
-Bluetooth Device-based Reset and Recovery is a technology in Windows 10, version 1803 and later that introduces a robust reset recovery mechanism for Bluetooth devices and drivers. This mechanism enables Bluetooth devices to recover from failures that cause malfunction, loss of connectivity, or unresponsiveness to operational commands, making the user experience seamless and reducing the likelihood of requiring a system restart.
+Bluetooth Device-based Reset and Recovery is a technology in Windows 10, version 1803 and later that introduces a robust reset recovery mechanism for Bluetooth radios. This mechanism enables Bluetooth radios to recover from hardware failures that lead to malfunction, loss of connectivity, or unresponsiveness to operational commands. The goal is to automatically recover the radio, making the user experience seamless and reducing the likelihood of requiring a system restart.
 
-Device-based Reset and Recovery can be implemented with or without firmware dependencies. IHV or OEM partners can extend the software-based reset mechanisms available on all Windows PCs with supported device- or firmware-level reset mechanisms to increase the likelihood of successful recovery.
+Bluetooth radio reset and recovery can be implemented with or without firmware dependencies. IHV or OEM partners can extend the software-based reset mechanisms available on all Windows PCs with supported device- or firmware-level reset mechanisms to increase the likelihood of successful recovery.
 
 > [!IMPORTANT]
 > **This topic is for developers.** If you are a customer experiencing bluetooth problems see [Fix Bluetooth problems in Windows 10](https://support.microsoft.com/help/14169/windows-10-fix-bluetooth-problems).
@@ -19,13 +19,15 @@ Device-based Reset and Recovery can be implemented with or without firmware depe
 
 There are three broad categories of issues where Bluetooth Reset and Recovery is initiated:
 
-- **Bus enumeration failures:** The device fails enumeration or re-enumeration by the bus as indicated by a _visible failed state_ in Device Manager, which is typically symptomatic of hardware errors.
+- **Bus enumeration failures:** The radio fails enumeration or re-enumeration by the underlying bus (for Bluetooth, this is typically USB or UART) as indicated by a _visible failed state_ (yellow bang) in Device Manager, which may be symptomatic of underlying hardware errors.
 
-- **Client driver enumeration failures:** The device is in a failed state _after_ after successful enumeration during normal use. If the device has been successfully enumerated by the bus, then the next step involves the driver stack of the USB client e.g. filter or function driver installed on the Bluetooth device node (devnode). Failures could occur if the client driver encounters an error during one or more start operations and thus reporting PnP failure. An example of such an operation could be a firmware download to the device.
+- **Driver enumeration failures:** The Bluetooth radio is in a failed state _after_ after successful enumeration by the underlying bus. This typically involves building up the driver stack for the radio e.g. a filter or function driver installed on the Bluetooth radio device node (devnode). Failures could occur if a driver encounters an error during one or more start operations and thus reporting PnP failure. An example of such an operation could be a firmware download to the device.
 
-- **Non-enumeration failures:** The device is not in a failed state but is otherwise non-operational as seen by the driver stack. These are failures outside of the enumeration pathway and could be general critical USB transfer failures or device-specific failures such as a non-recoverable firmware error. The Bluetooth Reset and Recovery mechanisms described below is used in these cases.
+- **Non-enumeration failures:** The device is not in a failed state but is otherwise non-operational as seen by the driver stack. These are failures outside of the enumeration pathway and could be general critical transport-specific failures or device-specific failures such as a catastrophic firmware error. The Bluetooth Reset and Recovery mechanisms described below is used in these cases.
 
 ## Reset and Recovery Mechanisms
+
+While there are different approaches to recover from a failed state, Bluetooth uses a standardized ACPI-based recovery mechanism to attempt to restore the radio to a working state.
 
 [GUID_DEVICE_RESET_INTERFACE_STANDARD](https://docs.microsoft.com/windows-hardware/drivers/kernel/working-with-guid-device-reset-interface-standard) defines two levels of reset. Note that:
 
