@@ -64,13 +64,13 @@ For more information about network INF files, which are used to install network 
 
 The following additional driver models are available to use particular hardware technologies and architectures.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
+<table>  
+<colgroup>  
+<col width="50%" />  
+<col width="50%" />  
+</colgroup>  
+<thead>  
+<tr class="header">  
 <th align="left">Technology</th>
 <th align="left">Description</th>
 </tr>

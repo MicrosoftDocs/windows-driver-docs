@@ -511,6 +511,10 @@ Each device declaring a matching FSSensorGroupId, must declare the same FSSensor
 
 See [Camera Device Orientation](camera-device-orientation.md)
 
+## UVC Control Cache
+
+See [UVC Control Cache](camera-device-uvc-control-cache.md)
+
 ## BOS and MS OS 2.0 descriptor
 
 UVC compliant camera can specify Windows specific device configuration values in a platform capability BOS descriptor in its firmware using [Microsoft OS 2.0 Descriptors](https://msdn.microsoft.com/en-us/library/windows/hardware/dn385747.aspx). Please refer the documentation on MS OS 2.0 descriptor to understand how to specify a valid BOS descriptor that conveys the device configuration to the OS.
