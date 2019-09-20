@@ -17,7 +17,7 @@ The action interfaces control an instance of the [IWDTFTarget2](https://docs.mic
 
 You can retrieve an action interface for a target by calling the IWDTFTarget2::GetInterface method.
 
-There are two sets of action interfaces: device action interfaces and system actoin interfaces.
+There are two sets of action interfaces: device action interfaces and system action interfaces.
 
 ### Device Action Interfaces
 
