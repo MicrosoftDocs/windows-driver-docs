@@ -83,7 +83,7 @@ There are no attributes.
 Remarks
 -------
 
-See [**button**](button.md) for a code exapmle that shows how to use the **buttons** element to enclose two **button** elements that display an **OK** and a **CANCEL** button.
+See [**button**](button.md) for a code example that shows how to use the **buttons** element to enclose two **button** elements that display an **OK** and a **CANCEL** button.
 
 ## See also
 
