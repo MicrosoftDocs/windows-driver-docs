@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 The following FAQ came about due to the number of machines still using Windows 7.
 
-Please send aditional questions or comments to <SAUEFI@Microsoft.com>.
+Please send additional questions or comments to <SAUEFI@Microsoft.com>.
 
 **Q:** If I am installing Windows 7 on Skylake, which configuration should be chosen? Should the firmware CSM be enabled with UEFI boot (Config \#2) or legacy boot MBR (Config \#3)? If Legacy boot mode, why?
 
