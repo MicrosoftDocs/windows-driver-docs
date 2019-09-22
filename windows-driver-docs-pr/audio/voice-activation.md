@@ -54,7 +54,7 @@ The "Learn my voice" feature allows the user to train Cortana to recognize their
 
 ![cortana desktop settings for hw keyword spotter wake on voice](images/audio-voice-activation-settings-2017.png)
 
-When voice activation is paired with "Learn my voice", the two algorithms will work together to reduce false activations. This is especially valuable for the meeting room scenario, where one person says "Hey Cortana" in a room full of devices.
+When voice activation is paired with "Learn my voice", the two algorithms will work together to reduce false activations. This is especially valuable for the meeting room scenario, where one person says "Hey Cortana" in a room full of devices. This feature is only available for RS5 and below.
 
 Voice activation is powered by a keyword spotter (KWS) which reacts if the key phrase is detected. If the KWS is to wake the device from a low powered state, the solution is known as Wake on Voice (WoV). For more information, see [Wake on Voice](#wake_on_voice).
 
